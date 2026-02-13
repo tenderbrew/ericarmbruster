@@ -1,0 +1,508 @@
+/* ── Reset & Base ──────────────────────────────────── */
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Lora", "Georgia", "Times New Roman", serif;
+  background-color: #12100e;
+  color: #c4b5a0;
+  line-height: 1.7;
+  font-size: 17px;
+}
+
+/* ── Typography ───────────────────────────────────── */
+h1, h2, h3 {
+  font-family: "Playfair Display", "Georgia", serif;
+  color: #e0d2be;
+  font-weight: 700;
+}
+
+h1 {
+  font-size: 3rem;
+  letter-spacing: -0.5px;
+}
+
+h2 {
+  font-size: 1.75rem;
+  margin-bottom: 1rem;
+}
+
+h3 {
+  font-size: 1.15rem;
+  color: #9a8b78;
+  font-weight: 400;
+  margin-top: 0.5rem;
+}
+
+p {
+  margin-bottom: 1rem;
+  color: #a89880;
+}
+
+a {
+  color: #c9a55a;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+a:hover {
+  color: #e8c96d;
+}
+
+/* ── Layout ───────────────────────────────────────── */
+.container {
+  max-width: 820px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+/* ── Navigation ───────────────────────────────────── */
+nav {
+  position: sticky;
+  top: 0;
+  background-color: #12100eee;
+  backdrop-filter: blur(12px);
+  border-bottom: 1px solid #2a2118;
+  padding: 1rem 0;
+  z-index: 100;
+}
+
+nav .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav .site-name {
+  font-family: "Playfair Display", "Georgia", serif;
+  font-size: 1.1rem;
+  color: #e0d2be;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 2rem;
+}
+
+nav ul li a {
+  color: #7a6d5e;
+  font-size: 0.9rem;
+  text-transform: lowercase;
+  letter-spacing: 0.5px;
+  transition: color 0.2s ease;
+}
+
+nav ul li a:hover {
+  color: #d4b896;
+}
+
+.nav-divider {
+  width: 1px;
+  background-color: #2a2118;
+  align-self: stretch;
+}
+
+/* ── Hero ─────────────────────────────────────────── */
+.hero {
+  padding: 3rem 0 2.5rem;
+  border-bottom: 1px solid #2a2118;
+}
+
+.hero-layout {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+.hero-image {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  overflow: hidden;
+  border: 3px solid #2a2118;
+  flex-shrink: 0;
+}
+
+.hero-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center 35%;
+}
+
+.hero-text {
+  flex: 1;
+  min-width: 0;
+}
+
+.hero h1 {
+  margin-bottom: 0.25rem;
+}
+
+.hero h3 {
+  margin-bottom: 1rem;
+}
+
+.hero .intro {
+  max-width: 600px;
+  font-size: 1.05rem;
+  line-height: 1.8;
+  font-style: italic;
+}
+
+.hero .intro small {
+  font-style: normal;
+  font-size: 0.8rem;
+  color: #7a6d5e;
+  display: inline-block;
+  margin-top: 0.25rem;
+}
+
+/* ── Sections ─────────────────────────────────────── */
+section {
+  padding: 1rem 0 2.5rem;
+  border-bottom: 1px solid #2a2118;
+}
+
+section:last-of-type {
+  border-bottom: none;
+}
+
+/* ── Content + Sidebar split ──────────────────────── */
+.split-layout {
+  display: flex;
+  gap: 2rem;
+  align-items: stretch;
+  padding-top: 2.5rem;
+  padding-bottom: 1rem;
+}
+
+.split-main {
+  flex: 1;
+  min-width: 0;
+}
+
+.split-main section {
+  padding-top: 0;
+  border-bottom: 1px solid #2a2118;
+}
+
+.split-main section:last-child {
+  border-bottom: none;
+}
+
+.split-sidebar {
+  width: 220px;
+  flex-shrink: 0;
+  border-left: 1px solid #2a2118;
+  padding-left: 1.5rem;
+  padding-bottom: 20rem;
+  position: sticky;
+  top: 4rem;
+  align-self: flex-start;
+}
+
+.split-sidebar h2 {
+  font-family: "Playfair Display", "Georgia", serif;
+  text-transform: uppercase;
+  letter-spacing: 2.5px;
+  color: #6b5d4e;
+  margin-bottom: 1rem;
+  font-size: 0.6rem;
+  text-align: center;
+  position: relative;
+  padding-bottom: 0.6rem;
+}
+
+.split-sidebar h2::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 15%;
+  right: 15%;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, #4a3828, transparent);
+}
+
+/* ── Sidebar items (brass plaque style) ────────────── */
+.sidebar-item {
+  display: block;
+  padding: 0.75rem 0.6rem;
+  border: 1px solid #33281c;
+  border-radius: 2px;
+  background: linear-gradient(170deg, #1e1914, #16120f);
+  text-decoration: none;
+  color: inherit;
+  position: relative;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: inset 0 1px 0 rgba(201, 165, 90, 0.04),
+              0 2px 8px rgba(0, 0, 0, 0.3);
+}
+
+.sidebar-item::before {
+  content: "\2767";
+  display: block;
+  text-align: center;
+  color: #4a3828;
+  font-size: 0.7rem;
+  margin-bottom: 0.4rem;
+  letter-spacing: 4px;
+  transition: color 0.3s ease;
+}
+
+.sidebar-item:hover {
+  border-color: #4a3828;
+  box-shadow: inset 0 1px 0 rgba(201, 165, 90, 0.08),
+              0 3px 12px rgba(0, 0, 0, 0.4);
+}
+
+.sidebar-item:hover::before {
+  color: #6b5540;
+}
+
+.sidebar-item-title {
+  display: block;
+  font-family: "Playfair Display", "Georgia", serif;
+  font-weight: 700;
+  font-size: 0.8rem;
+  color: #c9a55a;
+  letter-spacing: 0.3px;
+  margin-bottom: 0.35rem;
+  transition: color 0.3s ease;
+}
+
+.sidebar-item:hover .sidebar-item-title {
+  color: #e0bc6a;
+}
+
+.sidebar-item-desc {
+  display: block;
+  font-size: 0.7rem;
+  line-height: 1.5;
+  color: #7a6d5e;
+}
+
+/* ── Section labels (matching sidebar heading style) ── */
+.section-label {
+  font-family: "Playfair Display", "Georgia", serif;
+  text-transform: uppercase;
+  letter-spacing: 2.5px;
+  color: #6b5d4e;
+  font-size: 0.6rem;
+  position: relative;
+  padding-bottom: 0.6rem;
+  margin-bottom: 1rem;
+}
+
+.section-label::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 70px;
+  height: 1px;
+  background: linear-gradient(90deg, #4a3828, transparent);
+}
+
+/* ── Subsection cards ─────────────────────────────── */
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+}
+
+.card {
+  display: block;
+  background: linear-gradient(160deg, #1c1714, #151210);
+  border: 1px solid #2a2118;
+  border-radius: 4px;
+  padding: 1.25rem;
+  transition: border-color 0.2s ease, transform 0.2s ease, box-shadow 0.2s ease;
+  text-decoration: none;
+  color: inherit;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+.card--has-image {
+  padding: 0.4rem 0.4rem 0;
+  overflow: hidden;
+}
+
+.card--has-image h3,
+.card--has-image p {
+  padding: 0 1rem;
+}
+
+.card--has-image p:last-child {
+  padding-bottom: 1rem;
+}
+
+.card-image {
+  width: 100%;
+  height: 120px;
+  object-fit: cover;
+  display: block;
+}
+
+.card-image--logo {
+  object-fit: contain;
+}
+
+.card:hover {
+  border-color: #4a3828;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.5);
+}
+
+.card h3 {
+  font-family: "Playfair Display", "Georgia", serif;
+  font-weight: 700;
+  color: #d4b896;
+  font-size: 1.1rem;
+  margin-bottom: 0.5rem;
+}
+
+.card p {
+  font-size: 0.9rem;
+  color: #8a7a6a;
+  margin-bottom: 0;
+  line-height: 1.6;
+}
+
+/* ── Shelf cards (interests) ──────────────────────── */
+.card--shelf {
+  border-bottom: 3px solid #3d2e1e;
+}
+
+.card--shelf:hover {
+  border-bottom-color: #5a4530;
+}
+
+.card--shelf h3 {
+  letter-spacing: 0.5px;
+}
+
+.card-image-wrap {
+  position: relative;
+  overflow: hidden;
+}
+
+.card-image-wrap::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  box-shadow: inset 0 0 30px rgba(0, 0, 0, 0.5);
+  pointer-events: none;
+}
+
+.card--shelf .card-image {
+  filter: sepia(15%) brightness(0.9) contrast(1.05);
+  transition: filter 0.3s ease;
+}
+
+.card--shelf:hover .card-image {
+  filter: sepia(5%) brightness(1) contrast(1.05);
+}
+
+/* ── Contact ──────────────────────────────────────── */
+.contact-links {
+  display: flex;
+  gap: 2rem;
+  margin-top: 1rem;
+  flex-wrap: wrap;
+}
+
+.contact-links a {
+  font-size: 0.95rem;
+}
+
+/* ── Footer ───────────────────────────────────────── */
+footer {
+  padding: 2rem 0 1.5rem;
+  text-align: right;
+  color: #4a3d30;
+  font-size: 0.7rem;
+  font-family: "Playfair Display", "Georgia", serif;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  position: relative;
+}
+
+footer .container {
+  border-top: 1px solid #2a2118;
+  padding-top: 1.25rem;
+  position: relative;
+}
+
+footer .container::before {
+  content: "\2767";
+  position: absolute;
+  top: -0.5em;
+  right: 2rem;
+  background: #12100e;
+  padding: 0 0.5rem;
+  color: #3d2e1e;
+  font-size: 0.75rem;
+  letter-spacing: 4px;
+}
+
+/* ── Responsive ───────────────────────────────────── */
+@media (max-width: 600px) {
+  h1 {
+    font-size: 2.2rem;
+  }
+
+  nav ul {
+    gap: 1.25rem;
+  }
+
+  nav ul li a {
+    font-size: 0.8rem;
+  }
+
+  .hero {
+    padding: 2.5rem 0 2rem;
+  }
+
+  .hero-layout {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .hero-image {
+    margin-bottom: 0.5rem;
+  }
+
+  .split-layout {
+    flex-direction: column;
+  }
+
+  .split-sidebar {
+    width: 100%;
+    border-left: none;
+    border-top: 1px solid #2a2118;
+    padding-left: 0;
+    padding-top: 1.5rem;
+    position: static;
+  }
+
+  .sidebar-item {
+    max-width: 280px;
+  }
+
+  .card-grid {
+    grid-template-columns: 1fr;
+  }
+}
