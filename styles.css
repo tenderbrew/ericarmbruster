@@ -403,16 +403,93 @@ footer .container {
 }
 
 .brand-mark {
+  position: relative;
   display: inline-block;
-  font-family: "Libre Caslon Display", "Libre Caslon Text", "Georgia", serif;
-  font-size: 0.92rem;
-  letter-spacing: 1.3px;
-  text-transform: uppercase;
-  color: #e1c39b;
-  padding: 0.12rem 0.22rem;
+  isolation: isolate;
+  overflow: visible;
+  font-family: "Herr Von Muellerhoff", "IM Fell English", "Georgia", cursive;
+  font-size: clamp(2.24rem, 2.7vw, 2.9rem);
+  font-weight: 400;
+  line-height: 1.02;
+  letter-spacing: 0.56px;
+  text-transform: none;
+  color: #6b1a1a;
+  padding: 0.34rem 1.08rem 0.42rem;
+  transform: rotate(-0.52deg);
   text-shadow:
-    0 1px 0 rgba(0, 0, 0, 0.7),
-    0 0 6px rgba(204, 156, 90, 0.12);
+    0 1px 0 rgba(255, 230, 200, 0.3),
+    0 2px 8px rgba(80, 20, 20, 0.22);
+}
+
+.brand-mark::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  pointer-events: none;
+  background:
+    radial-gradient(circle at 16% 14%, rgba(255, 247, 224, 0.56), transparent 44%),
+    radial-gradient(circle at 84% 84%, rgba(173, 124, 73, 0.34), transparent 60%),
+    repeating-linear-gradient(
+      0deg,
+      rgba(93, 63, 36, 0.09) 0,
+      rgba(93, 63, 36, 0.09) 1px,
+      transparent 1px,
+      transparent 3px
+    ),
+    repeating-linear-gradient(
+      90deg,
+      rgba(84, 57, 33, 0.08) 0,
+      rgba(84, 57, 33, 0.08) 1px,
+      transparent 1px,
+      transparent 5px
+    ),
+    linear-gradient(152deg, rgba(236, 210, 168, 0.96), rgba(210, 174, 122, 0.94) 60%, rgba(178, 132, 77, 0.94) 100%);
+  box-shadow:
+    inset 0 0 0 1px rgba(96, 64, 38, 0.28),
+    inset 0 1px 0 rgba(255, 241, 212, 0.46),
+    0 4px 9px rgba(0, 0, 0, 0.36);
+  clip-path: polygon(
+    2% 8%,
+    9% 2%,
+    19% 5%,
+    33% 1%,
+    47% 4%,
+    61% 2%,
+    75% 5%,
+    89% 1%,
+    98% 9%,
+    99% 21%,
+    96% 34%,
+    99% 48%,
+    97% 62%,
+    100% 78%,
+    95% 93%,
+    83% 98%,
+    68% 96%,
+    53% 99%,
+    38% 97%,
+    24% 99%,
+    11% 96%,
+    2% 90%,
+    0 75%,
+    3% 61%,
+    1% 46%,
+    4% 31%,
+    1% 16%
+  );
+}
+
+.brand-mark::after {
+  content: "";
+  position: absolute;
+  left: 0.5rem;
+  right: 0.5rem;
+  bottom: 0.18rem;
+  height: 1px;
+  background: linear-gradient(90deg, rgba(120, 55, 44, 0.52), rgba(120, 55, 44, 0.12));
+  transform: rotate(0.24deg);
+  opacity: 0.72;
 }
 
 .nav-links-desktop {
@@ -426,18 +503,19 @@ footer .container {
 .drawer-toggle {
   border: none;
   background:
-    linear-gradient(180deg, rgba(174, 118, 64, 0.2), rgba(112, 68, 36, 0.16));
+    radial-gradient(circle at 22% 18%, rgba(230, 193, 132, 0.2), transparent 48%),
+    linear-gradient(180deg, rgba(174, 118, 64, 0.24), rgba(112, 68, 36, 0.2));
   box-shadow:
-    inset 0 0 0 1px rgba(168, 114, 62, 0.28),
-    inset 0 1px 0 rgba(216, 170, 108, 0.14),
-    inset 0 -1px 0 rgba(14, 10, 7, 0.2),
-    0 2px 4px rgba(0, 0, 0, 0.22);
+    inset 0 0 0 1px rgba(168, 114, 62, 0.34),
+    inset 0 0 0 2px rgba(64, 38, 22, 0.28),
+    inset 0 1px 0 rgba(216, 170, 108, 0.2),
+    inset 0 -1px 0 rgba(14, 10, 7, 0.24),
+    0 3px 6px rgba(0, 0, 0, 0.28);
   color: #d7b58c;
   font-family: "Libre Caslon Display", "Libre Caslon Text", "Georgia", serif;
-  font-size: 0.72rem;
+  font-size: 0.74rem;
   text-transform: uppercase;
   letter-spacing: 1.2px;
-  padding: 0.36rem 0.72rem;
   cursor: pointer;
   text-shadow: 0 1px 0 rgba(0, 0, 0, 0.5);
 }
@@ -445,54 +523,107 @@ footer .container {
 .nav-links-desktop a:hover,
 .drawer-toggle:hover {
   background:
-    linear-gradient(180deg, rgba(192, 134, 76, 0.28), rgba(126, 78, 42, 0.22));
+    radial-gradient(circle at 22% 18%, rgba(236, 203, 150, 0.26), transparent 48%),
+    linear-gradient(180deg, rgba(192, 134, 76, 0.3), rgba(126, 78, 42, 0.26));
   box-shadow:
-    inset 0 0 0 1px rgba(194, 138, 76, 0.36),
-    inset 0 1px 0 rgba(228, 186, 126, 0.2),
+    inset 0 0 0 1px rgba(194, 138, 76, 0.42),
+    inset 0 0 0 2px rgba(72, 43, 25, 0.32),
+    inset 0 1px 0 rgba(228, 186, 126, 0.24),
     inset 0 -1px 0 rgba(14, 10, 7, 0.24),
-    0 2px 6px rgba(0, 0, 0, 0.28);
+    0 4px 8px rgba(0, 0, 0, 0.34);
   color: #efcca0;
+}
+
+.nav-links-desktop a,
+.nav-links-desktop .drawer-toggle {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 7.45rem;
+  width: 7.45rem;
+  height: 2.08rem;
+  padding: 0.34rem 0.56rem;
+  clip-path: polygon(7% 0, 93% 0, 100% 26%, 100% 74%, 93% 100%, 7% 100%, 0 74%, 0 26%);
+  transform: translateY(0);
+  transition: color 0.2s ease, background 0.2s ease, box-shadow 0.2s ease, transform 0.2s ease;
+}
+
+.nav-links-desktop a:hover,
+.nav-links-desktop .drawer-toggle:hover {
+  background:
+    radial-gradient(circle at 22% 18%, rgba(236, 203, 150, 0.26), transparent 48%),
+    linear-gradient(180deg, rgba(192, 134, 76, 0.3), rgba(126, 78, 42, 0.26));
+  box-shadow:
+    inset 0 0 0 1px rgba(194, 138, 76, 0.42),
+    inset 0 0 0 2px rgba(72, 43, 25, 0.32),
+    inset 0 1px 0 rgba(228, 186, 126, 0.24),
+    inset 0 -1px 0 rgba(14, 10, 7, 0.24),
+    0 4px 8px rgba(0, 0, 0, 0.34);
+  color: #efcca0;
+  transform: translateY(-1px);
 }
 
 .nav-icons {
   display: flex;
   align-items: center;
-  gap: 0.42rem;
+  gap: 0.46rem;
 }
 
 .nav-icons a {
-  width: 2rem;
-  height: 2rem;
+  position: relative;
+  width: 2.12rem;
+  height: 2.12rem;
   display: grid;
   place-items: center;
   background:
-    radial-gradient(circle at 36% 32%, rgba(218, 174, 108, 0.36), transparent 52%),
-    linear-gradient(155deg, rgba(168, 114, 62, 0.28), rgba(92, 58, 32, 0.22));
+    radial-gradient(circle at 34% 28%, rgba(236, 204, 146, 0.36), transparent 52%),
+    radial-gradient(circle at 72% 72%, rgba(114, 63, 31, 0.32), transparent 62%),
+    linear-gradient(152deg, rgba(172, 115, 62, 0.4), rgba(97, 58, 32, 0.34));
   box-shadow:
-    inset 0 0 0 1px rgba(194, 138, 76, 0.32),
-    inset 0 1px 0 rgba(228, 186, 126, 0.18),
-    inset 0 -1px 0 rgba(18, 12, 8, 0.34),
-    0 2px 4px rgba(0, 0, 0, 0.36);
+    inset 0 0 0 1px rgba(194, 138, 76, 0.42),
+    inset 0 0 0 2px rgba(58, 34, 20, 0.34),
+    inset 0 1px 0 rgba(228, 186, 126, 0.22),
+    inset 0 -1px 0 rgba(18, 12, 8, 0.42),
+    0 3px 6px rgba(0, 0, 0, 0.44);
   color: #d4ac7a;
-  clip-path: circle(50% at 50% 50%);
-  transition: color 0.2s ease, background 0.2s ease, box-shadow 0.2s ease;
+  clip-path: polygon(20% 0, 80% 0, 100% 20%, 100% 80%, 80% 100%, 20% 100%, 0 80%, 0 20%);
+  transition: color 0.2s ease, background 0.2s ease, box-shadow 0.2s ease, transform 0.2s ease;
+}
+
+.nav-icons a::before {
+  content: "";
+  position: absolute;
+  inset: 0.24rem;
+  background:
+    linear-gradient(145deg, rgba(216, 174, 114, 0.18), rgba(109, 67, 37, 0.16));
+  box-shadow:
+    inset 0 0 0 1px rgba(205, 155, 91, 0.4),
+    inset 0 0 0 2px rgba(41, 25, 16, 0.34);
+  clip-path: inherit;
+  opacity: 0.74;
+  pointer-events: none;
 }
 
 .nav-icons a svg {
-  width: 14px;
-  height: 14px;
+  width: 13px;
+  height: 13px;
+  position: relative;
+  z-index: 1;
 }
 
 .nav-icons a:hover {
   background:
-    radial-gradient(circle at 36% 32%, rgba(232, 192, 126, 0.46), transparent 52%),
-    linear-gradient(155deg, rgba(186, 128, 72, 0.36), rgba(108, 68, 38, 0.28));
+    radial-gradient(circle at 34% 28%, rgba(246, 214, 162, 0.44), transparent 52%),
+    radial-gradient(circle at 72% 72%, rgba(132, 74, 40, 0.38), transparent 62%),
+    linear-gradient(152deg, rgba(188, 130, 74, 0.46), rgba(109, 68, 38, 0.36));
   color: #efd4a6;
   box-shadow:
-    inset 0 0 0 1px rgba(214, 162, 96, 0.42),
-    inset 0 1px 0 rgba(238, 200, 142, 0.24),
-    inset 0 -1px 0 rgba(18, 12, 8, 0.38),
-    0 2px 6px rgba(0, 0, 0, 0.42);
+    inset 0 0 0 1px rgba(214, 162, 96, 0.52),
+    inset 0 0 0 2px rgba(73, 44, 25, 0.38),
+    inset 0 1px 0 rgba(238, 200, 142, 0.28),
+    inset 0 -1px 0 rgba(18, 12, 8, 0.42),
+    0 4px 8px rgba(0, 0, 0, 0.5);
+  transform: translateY(-1px);
 }
 
 .nav-mobile-toggle {
@@ -579,7 +710,16 @@ footer .container {
 .portrait-card {
   grid-area: portrait;
   position: relative;
-  clip-path: none;
+  clip-path: polygon(
+    var(--notch) 0,
+    calc(100% - var(--notch)) 0,
+    100% var(--notch),
+    100% calc(100% - var(--notch)),
+    calc(100% - var(--notch)) 100%,
+    var(--notch) 100%,
+    0 calc(100% - var(--notch)),
+    0 var(--notch)
+  );
   overflow: hidden;
   background:
     radial-gradient(circle at 18% 14%, rgba(132, 70, 36, 0.24), transparent 42%),
@@ -798,7 +938,16 @@ footer .container {
   justify-content: center;
   min-height: 0;
   overflow: hidden;
-  clip-path: none;
+  clip-path: polygon(
+    var(--notch) 0,
+    calc(100% - var(--notch)) 0,
+    100% var(--notch),
+    100% calc(100% - var(--notch)),
+    calc(100% - var(--notch)) 100%,
+    var(--notch) 100%,
+    0 calc(100% - var(--notch)),
+    0 var(--notch)
+  );
   background:
     radial-gradient(circle at 18% 14%, rgba(166, 104, 57, 0.3), transparent 42%),
     radial-gradient(circle at 82% 86%, rgba(94, 56, 33, 0.34), transparent 58%),
@@ -1182,10 +1331,11 @@ footer .container {
   margin: 0 auto;
   max-width: 20ch;
   color: #b2f7a2;
-  font-family: "IM Fell English", "Libre Caslon Display", "Libre Caslon Text", "Georgia", serif;
-  font-size: clamp(1.12rem, 1.78vw, 1.44rem);
-  line-height: 1.22;
-  letter-spacing: 0.22px;
+  font-family: "Silkscreen", "Share Tech Mono", "Courier New", monospace;
+  font-size: clamp(0.98rem, 1.56vw, 1.2rem);
+  font-weight: 400;
+  line-height: 1.28;
+  letter-spacing: 0.5px;
   text-align: center;
   text-shadow:
     0 0 4px rgba(130, 228, 116, 0.48),
@@ -1196,10 +1346,10 @@ footer .container {
   display: inline-block;
   margin-top: 0.36rem;
   color: #96df88;
-  font-family: "IM Fell English SC", "IM Fell English", "Libre Caslon Text", "Georgia", serif;
-  font-size: 0.86rem;
-  line-height: 1.1;
-  letter-spacing: 0.3px;
+  font-family: "Silkscreen", "Share Tech Mono", "Courier New", monospace;
+  font-size: 0.7rem;
+  line-height: 1.24;
+  letter-spacing: 0.42px;
 }
 
 .quote-crt #random-quote em {
@@ -1350,10 +1500,10 @@ footer .container {
   display: inline-block;
   margin-bottom: 0.62rem;
   margin-left: 0.06rem;
-  font-family: "Tangerine", "Libre Caslon Display", "Libre Caslon Text", "Georgia", serif;
+  font-family: "Herr Von Muellerhoff", "IM Fell English", "Georgia", cursive;
   font-size: clamp(2.28rem, 3.6vw, 2.96rem);
-  font-weight: 700;
-  letter-spacing: 0.35px;
+  font-weight: 400;
+  letter-spacing: 0.52px;
   line-height: 0.9;
   text-transform: none;
   color: #3b2315;
@@ -1406,10 +1556,10 @@ footer .container {
   transform: translateX(var(--sheet-shift)) rotate(var(--sheet-tilt));
   transform-origin: left top;
   color: #4a311c;
-  font-family: "Libre Caslon Display", "Libre Caslon Text", "Georgia", serif;
-  font-size: 0.88rem;
+  font-family: "IM Fell English SC", "IM Fell English", "Libre Caslon Text", "Georgia", serif;
+  font-size: 0.96rem;
   text-transform: uppercase;
-  letter-spacing: 1.14px;
+  letter-spacing: 0.72px;
   line-height: 1.15;
   background:
     radial-gradient(circle at 15% 14%, rgba(255, 244, 222, 0.5), transparent 44%),
@@ -3119,10 +3269,10 @@ footer .container {
   margin-bottom: 0.44rem;
   margin-left: 0;
   text-align: center;
-  font-family: "IM Fell English SC", "Libre Caslon Display", "Libre Caslon Text", "Georgia", serif;
-  font-size: clamp(1.82rem, 2.8vw, 2.38rem);
+  font-family: "Herr Von Muellerhoff", "IM Fell English", "Georgia", cursive;
+  font-size: clamp(2.28rem, 3.6vw, 2.96rem);
   font-weight: 400;
-  letter-spacing: 0.7px;
+  letter-spacing: 0.52px;
   line-height: 0.95;
   color: #8b2f2b;
   text-transform: none;
@@ -3221,10 +3371,10 @@ footer .container {
 .ledger-title {
   display: block;
   color: #3b2a1c;
-  font-family: "IM Fell English", "Libre Caslon Display", "Libre Caslon Text", "Georgia", serif;
+  font-family: "IM Fell English", "Libre Caslon Text", "Georgia", serif;
   font-style: normal;
-  font-size: 1rem;
-  letter-spacing: 0.08px;
+  font-size: 1.02rem;
+  letter-spacing: 0.1px;
   line-height: 1;
   margin-bottom: 0;
   white-space: nowrap;
@@ -3237,8 +3387,8 @@ footer .container {
 }
 
 .ledger-item:first-child .ledger-title {
-  font-size: 0.84rem;
-  letter-spacing: 0.02px;
+  font-size: 0.88rem;
+  letter-spacing: 0.06px;
 }
 
 .ledger-item--scribble {
@@ -3591,8 +3741,20 @@ footer .container {
   }
 
   .brand-mark {
-    font-size: 0.78rem;
-    letter-spacing: 1.1px;
+    font-size: 1.74rem;
+    letter-spacing: 0.28px;
+    line-height: 1;
+    padding: 0.14rem 0.5rem 0.22rem;
+  }
+
+  .brand-mark::before {
+    inset: 0;
+  }
+
+  .brand-mark::after {
+    left: 0.3rem;
+    right: 0.3rem;
+    bottom: 0.1rem;
   }
 
   .nav-mobile-toggle {
@@ -3658,7 +3820,9 @@ footer .container {
   }
 
   .portrait-frame--front::after {
-    opacity: 0.72;
+    content: none;
+    display: none;
+    opacity: 0;
   }
 
   .portrait-frame--back {
@@ -3713,13 +3877,15 @@ footer .container {
   }
 
   .quote-crt #random-quote {
-    font-size: clamp(1.24rem, 5.2vw, 1.68rem);
-    line-height: 1.2;
+    font-size: clamp(1rem, 4.4vw, 1.3rem);
+    line-height: 1.26;
+    letter-spacing: 0.42px;
   }
 
   .quote-crt #random-quote small {
     margin-top: 0.48rem;
-    font-size: 0.96rem;
+    font-size: 0.74rem;
+    letter-spacing: 0.36px;
   }
 
   .crt-controls {
@@ -4143,8 +4309,20 @@ footer .container {
   }
 
   .brand-mark {
-    font-size: 0.7rem;
-    letter-spacing: 0.9px;
+    font-size: 1.56rem;
+    letter-spacing: 0.2px;
+    line-height: 1;
+    padding: 0.12rem 0.42rem 0.18rem;
+  }
+
+  .brand-mark::before {
+    inset: 0;
+  }
+
+  .brand-mark::after {
+    left: 0.24rem;
+    right: 0.24rem;
+    bottom: 0.08rem;
   }
 
   .nav-mobile-toggle {
@@ -4176,10 +4354,9 @@ footer .container {
   }
 
   .portrait-frame--front::after {
-    inset: -0.08rem;
-    transform: scale(0.84);
-    transform-origin: center;
-    opacity: 0.62;
+    content: none;
+    display: none;
+    opacity: 0;
   }
 
   .portrait-plaque {
@@ -4245,15 +4422,15 @@ footer .container {
   }
 
   .quote-crt #random-quote {
-    font-size: clamp(1.04rem, 6.2vw, 1.34rem);
-    line-height: 1.18;
-    letter-spacing: 0.16px;
+    font-size: clamp(0.88rem, 5.2vw, 1.08rem);
+    line-height: 1.24;
+    letter-spacing: 0.34px;
   }
 
   .quote-crt #random-quote small {
     margin-top: 0.4rem;
-    font-size: 0.84rem;
-    letter-spacing: 0.22px;
+    font-size: 0.64rem;
+    letter-spacing: 0.28px;
   }
 
   .crt-controls {
@@ -4612,5 +4789,25 @@ footer .container {
   footer .container {
     text-align: center;
     letter-spacing: 1.3px;
+  }
+}
+
+@media (min-width: 761px) {
+  .site-drawer {
+    width: min(540px, calc(100% - 2.8rem));
+  }
+
+  .drawer-inner {
+    grid-template-columns: 1fr;
+    gap: 0.72rem;
+    padding: 0.84rem 0.92rem 0.88rem;
+  }
+
+  .drawer-group {
+    display: none;
+  }
+
+  .drawer-group:nth-child(2) {
+    display: block;
   }
 }
