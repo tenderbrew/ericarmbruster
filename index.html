@@ -5,99 +5,259 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Eric Armbruster</title>
   <meta name="description" content="Personal website of Eric M. Armbruster">
+  <meta name="theme-color" content="#070503">
+  <link rel="canonical" href="https://www.ericarmbruster.com/">
+  <meta property="og:title" content="Eric Armbruster">
+  <meta property="og:description" content="Personal website of Eric M. Armbruster">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://www.ericarmbruster.com/">
+  <meta property="og:image" content="https://www.ericarmbruster.com/images/hector-0001.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Eric Armbruster">
+  <meta name="twitter:description" content="Personal website of Eric M. Armbruster">
+  <meta name="twitter:image" content="https://www.ericarmbruster.com/images/hector-0001.png">
+  <link rel="icon" href="images/hector-favicon.png" type="image/png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,700;1,400&family=Playfair+Display:wght@700;900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Almendra+SC&family=Cinzel+Decorative:wght@700&family=IM+Fell+English&family=IM+Fell+English+SC&family=Libre+Caslon+Display&family=Libre+Caslon+Text:ital,wght@0,400;0,700;1,400&family=Pirata+One&family=Share+Tech+Mono&family=Herr+Von+Muellerhoff&family=Tangerine:wght@700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
-</head>
-<body>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-5ZTHJXDR9V"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
 
-  <!-- Navigation -->
-  <nav>
-    <div class="container">
-      <span class="site-name">Eric Armbruster</span>
-      <ul>
-        <li><a href="about.html">about</a></li>
-        <li><a href="#work">projects</a></li>
-        <li><a href="#interests">interests</a></li>
-        <li class="nav-divider"></li>
-        <li><a href="mailto:eric.m.armbruster@gmail.com">&#9993;</a></li>
-        <li><a href="https://github.com/tenderbrew" target="_blank" rel="noopener">&#128736;</a></li>
-        <li><a href="https://www.linkedin.com/in/ericmarmbruster/" target="_blank" rel="noopener">&#128188;</a></li>
-      </ul>
+    gtag('config', 'G-5ZTHJXDR9V');
+  </script>
+</head>
+<body class="home-page">
+
+  <nav class="study-nav" aria-label="Primary">
+    <div class="container nav-shell">
+      <a href="index.html" class="brand-mark" aria-label="Eric Armbruster home">Eric M. Armbruster</a>
+
+      <div class="nav-links-desktop" aria-label="Primary links">
+        <a href="about.html">about</a>
+        <a href="projects.html">projects</a>
+        <button class="drawer-toggle" type="button" aria-expanded="false" aria-controls="site-drawer" data-drawer-toggle>interests</button>
+      </div>
+
+      <div class="nav-icons" aria-label="Contact links">
+        <a href="mailto:eric.m.armbruster@gmail.com" aria-label="Email Eric"><svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"><rect x="1.5" y="3.5" width="13" height="9"/><path d="M1.5 3.5L8 9l6.5-5.5"/></svg></a>
+        <a href="https://github.com/tenderbrew" target="_blank" rel="noopener" aria-label="Eric on GitHub"><svg width="16" height="16" viewBox="0 0 16 16" fill="currentColor"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0016 8c0-4.42-3.58-8-8-8z"/></svg></a>
+        <a href="https://www.linkedin.com/in/ericmarmbruster/" target="_blank" rel="noopener" aria-label="Eric on LinkedIn"><svg width="16" height="16" viewBox="0 0 16 16" fill="currentColor"><path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.016-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.52 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.174-.431.569-.878 1.232-.878.87 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016l.016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z"/></svg></a>
+      </div>
+
+      <button class="drawer-toggle nav-mobile-toggle" type="button" aria-expanded="false" aria-controls="site-drawer" data-drawer-toggle>menu</button>
+    </div>
+
+    <div class="site-drawer" id="site-drawer">
+      <div class="container drawer-inner">
+        <section class="drawer-group">
+          <h2>Main Rooms</h2>
+          <a href="about.html">About</a>
+          <a href="projects.html">Projects</a>
+        </section>
+        <section class="drawer-group">
+          <h2>Interests</h2>
+          <a href="video-games.html">Video Games</a>
+          <a href="film.html">Film</a>
+          <a href="self-hosting.html">Self-Hosting</a>
+          <a href="economics.html">Economics</a>
+          <a href="dog-training.html">Seymour</a>
+        </section>
+        <section class="drawer-group drawer-group--compact">
+          <h2>Elsewhere</h2>
+          <a href="mailto:eric.m.armbruster@gmail.com">Email</a>
+          <a href="https://github.com/tenderbrew" target="_blank" rel="noopener">GitHub</a>
+          <a href="https://www.linkedin.com/in/ericmarmbruster/" target="_blank" rel="noopener">LinkedIn</a>
+        </section>
+      </div>
     </div>
   </nav>
 
-  <!-- Hero -->
-  <header class="hero">
-    <div class="container hero-layout">
-      <div class="hero-image">
-        <img src="images/hector-0001.png" alt="Hector the dog in the snow">
-      </div>
-      <div class="hero-text">
-        <h1>Eric M. Armbruster</h1>
-        <p class="intro" id="random-quote"></p>
-      </div>
+  <header class="home-stage">
+    <div class="container stage-layout">
+      <figure class="portrait-card">
+        <div class="portrait-ornament" aria-hidden="true">* * *</div>
+        <div class="portrait-stack">
+          <div class="portrait-frame portrait-frame--back" aria-hidden="true">
+            <img src="images/hector-0001.webp" alt="" width="1515" height="2013" loading="lazy" decoding="async">
+          </div>
+          <div class="portrait-frame portrait-frame--front">
+            <img src="images/hector-0001.webp" alt="Hector the dog in the snow" width="1515" height="2013" fetchpriority="high" decoding="async">
+          </div>
+        </div>
+        <figcaption class="portrait-plaque">Hector, Winter Sentinel</figcaption>
+      </figure>
+
+      <article class="stage-copy" aria-label="Personal archive journal">
+        <h1>
+          <span class="archive-line archive-line--top">The Personal Archive of</span>
+          <span class="archive-line archive-line--bottom">Eric M. Armbruster</span>
+        </h1>
+      </article>
     </div>
   </header>
 
-  <!-- Content + Sidebar -->
-  <div class="container split-layout">
-    <div class="split-main">
-      <!-- Interests -->
-      <section id="interests">
-        <h2 class="section-label">Interests</h2>
-        <div class="card-grid">
-          <a href="video-games.html" class="card card--has-image card--shelf">
-            <div class="card-image-wrap">
-              <img src="images/chrono-trigger-sfc-cart.png" alt="Chrono Trigger Super Famicom cartridge" class="card-image">
-            </div>
-            <h3>Video Games</h3>
-            <p>Retro and modern gaming, game clubs, and exploring what makes games great.</p>
-          </a>
-          <a href="film.html" class="card card--has-image card--shelf">
-            <div class="card-image-wrap">
-              <img src="images/the-thing-film.png" alt="Still from The Thing (1982)" class="card-image">
-            </div>
-            <h3>Film</h3>
-            <p>Watching, discussing, and digging into what makes a good movie tick.</p>
-          </a>
-          <a href="self-hosting.html" class="card card--has-image card--shelf">
-            <div class="card-image-wrap">
-              <img src="images/synology-nas.png" alt="Synology NAS" class="card-image">
-            </div>
-            <h3>Self-Hosting</h3>
-            <p>Running my own services and infrastructure&mdash;owning my data and learning by doing.</p>
-          </a>
-          <a href="economics.html" class="card card--has-image card--shelf">
-            <div class="card-image-wrap">
-              <img src="images/bohm-bawerk.png" alt="Eugen von Böhm-Bawerk" class="card-image">
-            </div>
-            <h3>Economics</h3>
-            <p>Markets, incentives, and understanding how the world works at scale.</p>
-          </a>
+  <main class="container home-rooms">
+    <section class="room room-intro">
+      <article class="room-card register-card">
+        <h2>House Register</h2>
+        <div class="register-links">
+          <a href="about.html">About the Author</a>
+          <a href="projects.html">Project Ledger</a>
+          <a href="mailto:eric.m.armbruster@gmail.com">Correspondence</a>
         </div>
-      </section>
-    </div>
+      </article>
+    </section>
 
-    <aside id="work" class="split-sidebar">
-      <h2>Projects</h2>
-      <a href="https://nintendopipeline.club" target="_blank" rel="noopener" class="sidebar-item">
-        <span class="sidebar-item-title">Nintendo Pipeline Club</span>
-        <span class="sidebar-item-desc">A retro game club dedicated to playing through and discussing classic games together.</span>
-      </a>
-    </aside>
-  </div>
+    <section class="room room-ledger">
+      <article class="room-card ledger-card">
+        <h2><a href="projects.html" class="ledger-heading-link">Project Ledger</a></h2>
+        <ul class="ledger-list">
+          <li>
+            <a href="https://nintendopipeline.club" target="_blank" rel="noopener" class="ledger-item is-complete">
+              <span class="ledger-title">nintendo pipeline - retro game club</span>
+            </a>
+          </li>
+          <li>
+            <span class="ledger-item">
+              <span class="ledger-title">secret project</span>
+            </span>
+          </li>
+          <li aria-hidden="true">
+            <span class="ledger-item ledger-item--scribble">
+              <span class="ledger-scribble"></span>
+            </span>
+          </li>
+          <li aria-hidden="true">
+            <span class="ledger-item ledger-item--scribble">
+              <span class="ledger-scribble"></span>
+            </span>
+          </li>
+          <li aria-hidden="true">
+            <span class="ledger-item ledger-item--scribble">
+              <span class="ledger-scribble"></span>
+            </span>
+          </li>
+          <li aria-hidden="true">
+            <span class="ledger-item ledger-item--scribble">
+              <span class="ledger-scribble"></span>
+            </span>
+          </li>
+        </ul>
+      </article>
+    </section>
 
-  <!-- Suggested Subsections (not built out yet) -->
-  <!-- Future pages to consider:
-    - /resume    — Detailed resume or CV
-    - /blog      — Writing, notes, and thoughts
-    - /uses      — Tools, hardware, and software you use
-    - /bookshelf — Books you've read or recommend
-    - /links     — Curated links and resources
-    - /gallery   — Photos or creative work
-  -->
+    <section class="room room-quote">
+      <article class="quote-crt" aria-label="Quoted reflection on CRT display">
+        <div class="quote-crt-shell">
+          <div class="crt-badge" aria-hidden="true">
+            <span class="crt-badge-mark">Trinitron</span>
+            <span class="crt-badge-light"></span>
+          </div>
+          <div class="crt-screen">
+            <div class="crt-screen-surface">
+              <p id="random-quote"></p>
+            </div>
+          </div>
+          <div class="crt-controls" aria-hidden="true">
+            <div class="crt-switches">
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+            <div class="crt-knobs">
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+          </div>
+        </div>
+      </article>
+    </section>
+
+    <section id="interests" class="room room-shelves">
+      <div class="bookshelf-top" aria-hidden="true"></div>
+
+      <div class="bookshelf" aria-label="Interests bookshelf">
+        <div class="bookshelf-row bookshelf-row--triple">
+          <a href="video-games.html" class="shelf-book shelf-book--umber">
+            <span class="book-index" aria-hidden="true">VG-01</span>
+            <span class="book-spine-title">Video Games</span>
+            <div class="book-cover">
+              <div class="shelf-body">
+                <h3>Video Games</h3>
+              </div>
+            </div>
+            <span class="book-slip">enter shelf</span>
+          </a>
+          <div class="shelf-plank shelf-plank--mobile" aria-hidden="true"></div>
+
+          <a href="film.html" class="shelf-book shelf-book--copper shelf-book--lean">
+            <span class="book-index" aria-hidden="true">FL-02</span>
+            <span class="book-spine-title">Film</span>
+            <div class="book-cover">
+              <div class="shelf-body">
+                <h3>Film</h3>
+              </div>
+            </div>
+            <span class="book-slip">enter shelf</span>
+          </a>
+          <div class="shelf-plank shelf-plank--mobile" aria-hidden="true"></div>
+
+          <a href="economics.html" class="shelf-book shelf-book--claret">
+            <span class="book-index" aria-hidden="true">EC-04</span>
+            <span class="book-spine-title">Economics</span>
+            <div class="book-cover">
+              <div class="shelf-body">
+                <h3>Economics</h3>
+              </div>
+            </div>
+            <span class="book-slip">enter shelf</span>
+          </a>
+          <div class="shelf-plank shelf-plank--mobile" aria-hidden="true"></div>
+        </div>
+
+        <div class="shelf-plank" aria-hidden="true"></div>
+
+        <div class="bookshelf-row bookshelf-row--single">
+          <a href="self-hosting.html" class="shelf-book shelf-book--olive shelf-book--tall">
+            <span class="book-index" aria-hidden="true">SH-03</span>
+            <span class="book-spine-title">Self-Hosting</span>
+            <div class="book-cover">
+              <div class="shelf-body">
+                <h3>Self-Hosting</h3>
+              </div>
+            </div>
+            <span class="book-slip">enter shelf</span>
+          </a>
+          <div class="shelf-plank shelf-plank--mobile" aria-hidden="true"></div>
+
+          <a href="dog-training.html" class="shelf-book shelf-book--azure shelf-book--tall">
+            <span class="book-index" aria-hidden="true">DG-05</span>
+            <span class="book-spine-title">Seymour</span>
+            <div class="book-cover">
+              <div class="shelf-body">
+                <h3>Seymour</h3>
+              </div>
+            </div>
+            <span class="book-slip">enter shelf</span>
+          </a>
+          <div class="shelf-plank shelf-plank--mobile" aria-hidden="true"></div>
+        </div>
+
+        <div class="shelf-plank" aria-hidden="true"></div>
+      </div>
+    </section>
+
+  </main>
 
   <footer>
     <div class="container">
@@ -106,60 +266,66 @@
   </footer>
 
   <script>
+    (function () {
+      const toggles = Array.from(document.querySelectorAll('[data-drawer-toggle]'));
+      const drawer = document.getElementById('site-drawer');
+      if (!drawer || toggles.length === 0) return;
+
+      function setOpen(isOpen) {
+        drawer.classList.toggle('open', isOpen);
+        toggles.forEach(function (btn) {
+          btn.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
+        });
+      }
+
+      toggles.forEach(function (toggle) {
+        toggle.addEventListener('click', function (event) {
+          event.stopPropagation();
+          setOpen(!drawer.classList.contains('open'));
+        });
+      });
+
+      drawer.querySelectorAll('a').forEach(function (link) {
+        link.addEventListener('click', function () {
+          setOpen(false);
+        });
+      });
+
+      document.addEventListener('click', function (event) {
+        if (!drawer.contains(event.target) && !toggles.some(function (btn) { return btn.contains(event.target); })) {
+          setOpen(false);
+        }
+      });
+
+      document.addEventListener('keydown', function (event) {
+        if (event.key === 'Escape') {
+          setOpen(false);
+          if (toggles[0]) toggles[0].focus();
+        }
+      });
+    })();
+  </script>
+
+  <script>
     const quotes = [
-      // The Fellowship of the Ring
       { text: "There is some good in this world, and it is worth fighting for.", source: "The Fellowship of the Ring" },
       { text: "It's the job that's never started as takes longest to finish.", source: "The Fellowship of the Ring" },
-      { text: "Rosie Cotton dancing. She had ribbons in her hair. If ever I was to marry someone, it would have been her.", source: "The Fellowship of the Ring" },
-      { text: "I made a promise, Mr. Frodo. A promise. Don't you leave him, Samwise Gamgee. And I don't mean to.", source: "The Fellowship of the Ring" },
-      { text: "If I take one more step, it'll be the farthest away from home I've ever been.", source: "The Fellowship of the Ring" },
-      { text: "I ain't been droppin' no eaves, sir, honest!", source: "The Fellowship of the Ring" },
-      { text: "Mr. Frodo's not going anywhere without me.", source: "The Fellowship of the Ring" },
-      { text: "Trust a Brandybuck and a Took!", source: "The Fellowship of the Ring" },
       { text: "By rights we shouldn't even be here. But we are.", source: "The Fellowship of the Ring" },
-      { text: "That there's some good in this world, Mr. Frodo. And it's worth fighting for.", source: "The Fellowship of the Ring" },
-      { text: "A little late for trimming the verge, don't you think?", source: "The Fellowship of the Ring" },
-      { text: "You can trust us to stick to you through thick and thin.", source: "The Fellowship of the Ring" },
-      // The Two Towers
-      { text: "Those were the stories that stayed with you, that meant something, even if you were too small to understand why.", source: "The Two Towers" },
-      { text: "But in the end, it's only a passing thing, this shadow. Even darkness must pass.", source: "The Two Towers" },
-      { text: "There's some good in this world, Mr. Frodo, and it's worth fighting for.", source: "The Two Towers" },
-      { text: "I wonder if we shall ever be put into songs or tales.", source: "The Two Towers" },
-      { text: "Folk in those stories had lots of chances of turning back, only they didn't.", source: "The Two Towers" },
-      { text: "It's like in the great stories, Mr. Frodo. The ones that really mattered.", source: "The Two Towers" },
-      { text: "I wonder if people will ever say, 'Let's hear about Frodo and the Ring.'", source: "The Two Towers" },
+      { text: "Those were the stories that stayed with you, that meant something.", source: "The Two Towers" },
+      { text: "Even darkness must pass.", source: "The Two Towers" },
       { text: "A new day will come. And when the sun shines, it will shine out the clearer.", source: "The Two Towers" },
-      { text: "We shouldn't be here at all, if we'd known more about it before we started.", source: "The Two Towers" },
-      { text: "Po-ta-toes! Boil 'em, mash 'em, stick 'em in a stew.", source: "The Two Towers" },
-      { text: "There is light and beauty up there that no shadow can touch.", source: "The Two Towers" },
-      { text: "What are we holding onto, Sam? That there's some good in this world, Mr. Frodo.", source: "The Two Towers" },
-      { text: "Even the weariest river winds somewhere safe to sea.", source: "The Two Towers" },
-      { text: "I can see the Shire. The Brandywine River. Bag End. The lights in the Party Tree.", source: "The Two Towers" },
-      { text: "We have no songs for great halls and evil times.", source: "The Two Towers" },
-      { text: "Where there's life there's hope, and need of vittles.", source: "The Two Towers" },
-      // The Return of the King
-      { text: "I can't carry it for you, but I can carry you!", source: "The Return of the King" },
-      { text: "Come, Mr. Frodo! I can't carry it for you, but I can carry you and it as well.", source: "The Return of the King" },
+      { text: "I can't carry it for you, but I can carry you.", source: "The Return of the King" },
       { text: "Well, I'm back.", source: "The Return of the King" },
-      { text: "Don't go where I can't follow!", source: "The Return of the King" },
-      { text: "I'm glad to be with you, Samwise Gamgee, here at the end of all things.", source: "The Return of the King" },
-      { text: "Do you remember the Shire, Mr. Frodo? It'll be spring soon.", source: "The Return of the King" },
-      { text: "And Rosie Cotton. I'm going to marry her.", source: "The Return of the King" },
-      { text: "My dear Sam. You cannot always be torn in two. You will have to be one and whole for many years.", source: "The Return of the King" },
-      { text: "I feel that as long as the Shire lies behind, safe and comfortable, I shall find wandering more bearable.", source: "The Return of the King" },
-      { text: "It must often be so, Sam, when things are in danger: someone has to give them up, lose them, so that others may keep them.", source: "The Return of the King" },
-      { text: "I tried to save the Shire, and it has been saved, but not for me.", source: "The Return of the King" },
-      { text: "I thought I'd lost you, like I lost the light of the stars.", source: "The Return of the King" },
-      { text: "Mordor. The one place in Middle-earth we don't want to see any closer. And the one place we're trying to get to.", source: "The Return of the King" },
-      { text: "The last pages are for you, Sam.", source: "The Return of the King" },
-      { text: "There and back again. A hobbit's tale by Bilbo Baggins. And The Lord of the Rings by Frodo Baggins.", source: "The Return of the King" },
-      { text: "I do understand. I just never thought it would end this way.", source: "The Return of the King" },
-      { text: "I can see the light ahead, Mr. Frodo. It's coming to us.", source: "The Return of the King" },
-      { text: "We set out to save the Shire, Sam, and it has been saved. But not for me.", source: "The Return of the King" },
+      { text: "I can see the light ahead, Mr. Frodo. It's coming to us.", source: "The Return of the King" }
     ];
+
     const q = quotes[Math.floor(Math.random() * quotes.length)];
     document.getElementById("random-quote").innerHTML =
       "&ldquo;" + q.text + "&rdquo;<br><small>&mdash; Samwise Gamgee, <em>" + q.source + "</em></small>";
   </script>
 </body>
 </html>
+
+
+
+
