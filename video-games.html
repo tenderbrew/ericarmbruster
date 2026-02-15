@@ -1,11 +1,11 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Video Games - Eric Armbruster</title>
   <meta name="description" content="What Eric is playing, all-time favorites, and updates from Nintendo Pipeline Club.">
-  <meta name="theme-color" content="#070503">
+  <meta name="theme-color" content="#08080f">
   <link rel="canonical" href="https://www.ericarmbruster.com/video-games.html">
   <meta property="og:title" content="Video Games - Eric Armbruster">
   <meta property="og:description" content="What Eric is playing, all-time favorites, and updates from Nintendo Pipeline Club.">
@@ -19,8 +19,9 @@
   <link rel="icon" href="images/hector-favicon.png" type="image/png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Libre+Caslon+Display&family=Libre+Caslon+Text:ital,wght@0,400;0,700;1,400&family=Herr+Von+Muellerhoff&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Libre+Caslon+Display&family=Libre+Caslon+Text:ital,wght@0,400;0,700;1,400&family=Herr+Von+Muellerhoff&family=Press+Start+2P&family=Share+Tech+Mono&family=Silkscreen:wght@400;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="vg-styles.css">
   <!-- Google tag (gtag.js) -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-5ZTHJXDR9V"></script>
   <script>
@@ -31,7 +32,7 @@
     gtag('config', 'G-5ZTHJXDR9V');
   </script>
 </head>
-<body>
+<body class="vg-page">
 
   <nav class="study-nav" aria-label="Primary">
     <div class="container nav-shell">
@@ -77,35 +78,347 @@
     </div>
   </nav>
 
-  <header class="hero">
-    <div class="container">
-      <h1>Video Games</h1>
-      <p class="hero-subtitle">What I am playing, what I value in games, and what we discuss at Nintendo Pipeline Club.</p>
+  <!-- ==================== HERO â€” Arcade Marquee ==================== -->
+  <header class="hero vg-hero">
+    <div class="vg-hero-grid" aria-hidden="true"></div>
+    <div class="container vg-hero-inner">
+      <h1 class="vg-hero-title">Video Games</h1>
+      <p class="vg-hero-subtitle">Player 1 <span class="vg-blink">_</span> Eric Armbruster</p>
     </div>
   </header>
 
   <main>
-    <section>
+
+    <!-- ==================== NOW PLAYING — Modern + Retro ==================== -->
+    <section aria-label="Now Playing">
       <div class="container">
-        <h2>What I Am Playing</h2>
-        <p>I keep a focused rotation instead of a giant backlog: one long game, one shorter title, and one drop-in multiplayer game.</p>
-        <p>I write short notes on pacing, mechanics, and onboarding. That habit makes it easier to identify what actually works.</p>
+        <div class="vg-now-grid">
+          <article class="vg-now-column" aria-labelledby="now-playing-modern-heading">
+            <div class="vg-tv">
+              <div class="vg-tv-shell">
+                <div class="vg-tv-badge">
+                  <span class="vg-tv-brand">Player One</span>
+                  <span class="vg-tv-led"></span>
+                </div>
+                <div class="vg-tv-screen">
+                  <div class="vg-tv-screen-surface">
+                    <div class="vg-tv-channel" aria-hidden="true">CH-01</div>
+                    <h2 id="now-playing-modern-heading" class="vg-screen-heading">Now Playing // Modern</h2>
+                    <ul class="vg-now-list">
+                      <li class="vg-now-item">
+                        <span class="vg-now-rank">01</span>
+                        <span class="vg-now-title">Nioh 3</span>
+                        <span class="vg-now-meta">PS5 / PC &middot; Team Ninja &middot; Action RPG</span>
+                        <span class="vg-now-hltb">
+                          <span><em>M</em> 23h</span>
+                          <span><em>M+</em> 70h</span>
+                          <span><em>100%</em> 95h</span>
+                        </span>
+                      </li>
+                      <li class="vg-now-item">
+                        <span class="vg-now-rank">02</span>
+                        <span class="vg-now-title">Mewgenics!</span>
+                        <span class="vg-now-meta">PC &middot; Tactical Roguelite &middot; Edmund McMillen</span>
+                        <span class="vg-now-hltb">
+                          <span><em>M</em> 200h</span>
+                          <span><em>M+</em> 300h</span>
+                          <span><em>100%</em> 500h</span>
+                        </span>
+                      </li>
+                      <li class="vg-now-item">
+                        <span class="vg-now-rank">03</span>
+                        <span class="vg-now-title">Romeo is a Dead Man</span>
+                        <span class="vg-now-meta">PS5 &middot; Grasshopper Manufacture &middot; Action</span>
+                        <span class="vg-now-hltb">
+                          <span><em>M</em> 15h</span>
+                          <span><em>M+</em> 20h</span>
+                          <span><em>100%</em> 30h</span>
+                        </span>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="vg-tv-controls">
+                  <div class="vg-tv-knob" aria-hidden="true"></div>
+                  <div class="vg-tv-knob" aria-hidden="true"></div>
+                </div>
+              </div>
+              <div class="vg-tv-stand" aria-hidden="true"></div>
+            </div>
+          </article>
+
+          <article class="vg-now-column" aria-labelledby="now-playing-retro-heading">
+            <div class="vg-console-unit">
+              <div class="vg-cartridge">
+                <div class="vg-cartridge-label">
+                  <img src="images/chrono-trigger-sfc-cart.webp" alt="Chrono Trigger SFC cartridge" width="300" height="200" loading="lazy">
+                </div>
+                <div class="vg-cartridge-grip" aria-hidden="true"></div>
+              </div>
+              <div class="vg-console">
+                <div class="vg-console-slot" aria-hidden="true"></div>
+                <div class="vg-console-face">
+                  <h2 id="now-playing-retro-heading" class="vg-console-lcd-heading">Now Playing // Retro</h2>
+                  <div class="vg-console-lcd vg-console-lcd--list">
+                    <ul class="vg-now-list vg-now-list--retro">
+                      <li class="vg-now-item">
+                        <span class="vg-now-rank">01</span>
+                        <span class="vg-now-title">Mega Man Legends</span>
+                        <span class="vg-now-meta">PlayStation 1 &middot; Action Adventure</span>
+                        <span class="vg-now-hltb">
+                          <span><em>M</em> 13h</span>
+                          <span><em>M+</em> 17h</span>
+                          <span><em>100%</em> 25h</span>
+                        </span>
+                      </li>
+                      <li class="vg-now-item">
+                        <span class="vg-now-rank">02</span>
+                        <span class="vg-now-title">Legend of the River King</span>
+                        <span class="vg-now-meta">Game Boy Color &middot; RPG / Adventure</span>
+                        <span class="vg-now-hltb">
+                          <span><em>M</em> 12h</span>
+                          <span><em>M+</em> 15h</span>
+                          <span><em>100%</em> 20h</span>
+                        </span>
+                      </li>
+                      <li class="vg-now-item">
+                        <span class="vg-now-rank">03</span>
+                        <span class="vg-now-title">Pilotwings 64</span>
+                        <span class="vg-now-meta">Nintendo 64 &middot; Flight Sim</span>
+                        <span class="vg-now-hltb">
+                          <span><em>M</em> 4h</span>
+                          <span><em>M+</em> 8h</span>
+                          <span><em>100%</em> 14h</span>
+                        </span>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="vg-console-controls" aria-hidden="true">
+                    <span class="vg-console-led"></span>
+                    <span class="vg-console-power-label">Power</span>
+                    <span class="vg-console-eject"></span>
+                    <span class="vg-console-reset-label">Reset</span>
+                  </div>
+                </div>
+                <div class="vg-console-ports" aria-hidden="true">
+                  <span></span>
+                  <span></span>
+                </div>
+              </div>
+            </div>
+          </article>
+        </div>
       </div>
     </section>
 
-    <section>
+    <!-- ==================== NINTENDO PIPELINE CLUB + TOP 10 ==================== -->
+    <section class="vg-feature-row" aria-label="Nintendo Pipeline Club and Top 10">
       <div class="container">
-        <h2>All-Time Favorites</h2>
-        <p>Chrono Trigger remains a favorite for its pacing, tone, and soundtrack. I also return to games that combine strong systems with distinct atmosphere.</p>
-        <p>I care less about platform or release date and more about whether a game has a clear point of view.</p>
-      </div>
-    </section>
+        <div class="vg-feature-grid">
+          <article class="vg-feature-col vg-feature-col--pipeline" aria-labelledby="pipeline-heading">
+            <div class="vg-arcade-cabinet">
+          <div class="vg-arcade-marquee">
+            <img src="images/nintendopipeline.png" alt="Nintendo Pipeline Club logo" class="vg-pipeline-logo" width="200" height="60" loading="lazy">
+          </div>
+          <div class="vg-arcade-screen">
+            <div class="vg-arcade-screen-surface">
+              <h2 id="pipeline-heading" class="vg-arcade-title">Nintendo Pipeline Club</h2>
+              <p class="vg-arcade-desc">Monthly retro game playthroughs with discussion.</p>
+              <div class="vg-arcade-covers">
+                <img src="images/vg-covers/super-punch-out.png" alt="Super Punch-Out!!" class="vg-cover is-active" loading="lazy">
+                <img src="images/vg-covers/snatcher.png" alt="Snatcher" class="vg-cover" loading="lazy">
+                <img src="images/vg-covers/resident-evil-2.png" alt="Resident Evil 2" class="vg-cover" loading="lazy">
+                <img src="images/vg-covers/kirby-64.png" alt="Kirby 64" class="vg-cover" loading="lazy">
+                <img src="images/vg-covers/mega-man-legends.png" alt="Mega Man Legends" class="vg-cover" loading="lazy">
+              </div>
+            </div>
+          </div>
+          <div class="vg-arcade-controls">
+            <div class="vg-arcade-joystick" aria-hidden="true"></div>
+            <a href="https://nintendopipeline.club" target="_blank" rel="noopener" class="vg-arcade-start-btn">
+              Visit Club
+            </a>
+            <div class="vg-arcade-joystick" aria-hidden="true"></div>
+          </div>
+          <div class="vg-arcade-coin" aria-hidden="true">
+            <span>INSERT COIN</span>
+          </div>
+            </div>
+          </article>
+          <article class="vg-feature-col vg-feature-col--top10" aria-labelledby="top10-heading">
+            <div class="vg-console-tv">
+          <div class="vg-console-tv-frame">
+            <div class="vg-console-tv-screen-area">
+              <div class="vg-console-tv-screen">
+                <h2 id="top10-heading" class="vg-top10-heading">Top 10</h2>
+                <div class="vg-top10-static" aria-hidden="true"></div>
 
-    <section>
-      <div class="container">
-        <h2>Retro Game Club</h2>
-        <p>Nintendo Pipeline Club is a structured playthrough group: we choose a game, set a timeline, and discuss progress week by week.</p>
-        <p>The format makes long classics easier to finish and more rewarding to discuss. Learn more at <a href="https://nintendopipeline.club" target="_blank" rel="noopener">nintendopipeline.club</a>.</p>
+                <div role="tabpanel" id="panel-2025" aria-labelledby="tab-2025" class="vg-top10-panel">
+                  <h3 class="vg-top10-year">2025</h3>
+                  <ol class="vg-top10-list">
+                    <li><span class="vg-rank">01</span> <span class="vg-game-name">Donkey Kong Bananza</span></li>
+                    <li><span class="vg-rank">02</span> <span class="vg-game-name">Sektori</span></li>
+                    <li><span class="vg-rank">03</span> <span class="vg-game-name">Fantasy Life i: The Girl Who Steals Time</span></li>
+                    <li><span class="vg-rank">04</span> <span class="vg-game-name">Ninja Gaiden: Ragebound</span></li>
+                    <li><span class="vg-rank">05</span> <span class="vg-game-name">Dynasty Warrior Origins</span></li>
+                    <li><span class="vg-rank">06</span> <span class="vg-game-name">Kirby Air Riders</span></li>
+                    <li><span class="vg-rank">07</span> <span class="vg-game-name">Pokemon Legends Z-A</span></li>
+                    <li><span class="vg-rank">08</span> <span class="vg-game-name">Mario Kart World</span></li>
+                    <li><span class="vg-rank">09</span> <span class="vg-game-name">Hyrule Warriors: Age of Imprisonment</span></li>
+                    <li><span class="vg-rank">10</span> <span class="vg-game-name">Avowed</span></li>
+                  </ol>
+                </div>
+
+                <div role="tabpanel" id="panel-2024" aria-labelledby="tab-2024" class="vg-top10-panel" hidden>
+                  <h3 class="vg-top10-year">2024</h3>
+                  <ol class="vg-top10-list">
+                    <li><span class="vg-rank">01</span> <span class="vg-game-name">Shin Megami Tensei V: Vengeance</span></li>
+                    <li><span class="vg-rank">02</span> <span class="vg-game-name">UFO 50</span></li>
+                    <li><span class="vg-rank">03</span> <span class="vg-game-name">Robocop: Rogue City</span></li>
+                    <li><span class="vg-rank">04</span> <span class="vg-game-name">Super Monkey Ball Banana Rumble</span></li>
+                    <li><span class="vg-rank">05</span> <span class="vg-game-name">Unicorn Overlord</span></li>
+                    <li><span class="vg-rank">06</span> <span class="vg-game-name">Balatro</span></li>
+                    <li><span class="vg-rank">07</span> <span class="vg-game-name">Persona 3 Reload</span></li>
+                    <li><span class="vg-rank">08</span> <span class="vg-game-name">Emio - The Smiling Man: Famicom Detective Club</span></li>
+                    <li><span class="vg-rank">09</span> <span class="vg-game-name">The Legend of Zelda: Echoes of Wisdom</span></li>
+                    <li><span class="vg-rank">10</span> <span class="vg-game-name">Animal Well</span></li>
+                  </ol>
+                </div>
+
+                <div role="tabpanel" id="panel-2023" aria-labelledby="tab-2023" class="vg-top10-panel" hidden>
+                  <h3 class="vg-top10-year">2023</h3>
+                  <ol class="vg-top10-list">
+                    <li><span class="vg-rank">01</span> <span class="vg-game-name">The Legend of Zelda: Tears of the Kingdom</span></li>
+                    <li><span class="vg-rank">02</span> <span class="vg-game-name">Cyberpunk 2077: Phantom Liberty</span></li>
+                    <li><span class="vg-rank">03</span> <span class="vg-game-name">Pokemon Scarlet/Violet DLC</span></li>
+                    <li><span class="vg-rank">04</span> <span class="vg-game-name">Pikmin 4</span></li>
+                    <li><span class="vg-rank">05</span> <span class="vg-game-name">Hi-Fi Rush</span></li>
+                    <li><span class="vg-rank">06</span> <span class="vg-game-name">Super Mario Wonder</span></li>
+                    <li><span class="vg-rank">07</span> <span class="vg-game-name">Wario Ware: Move It!</span></li>
+                    <li><span class="vg-rank">08</span> <span class="vg-game-name">Baldur's Gate 3</span></li>
+                    <li><span class="vg-rank">09</span> <span class="vg-game-name">Theatrhythm Final Bar Line</span></li>
+                    <li><span class="vg-rank">10</span> <span class="vg-game-name">Forza Motorsport</span></li>
+                  </ol>
+                </div>
+
+                <div role="tabpanel" id="panel-2022" aria-labelledby="tab-2022" class="vg-top10-panel" hidden>
+                  <h3 class="vg-top10-year">2022</h3>
+                  <ol class="vg-top10-list">
+                    <li><span class="vg-rank">01</span> <span class="vg-game-name">Elden Ring</span></li>
+                    <li><span class="vg-rank">02</span> <span class="vg-game-name">Splatoon 3</span></li>
+                    <li><span class="vg-rank">03</span> <span class="vg-game-name">Fire Emblem: Three Hopes</span></li>
+                    <li><span class="vg-rank">04</span> <span class="vg-game-name">Vampire Survivors</span></li>
+                    <li><span class="vg-rank">05</span> <span class="vg-game-name">Pokemon Legends Arceus</span></li>
+                    <li><span class="vg-rank">06</span> <span class="vg-game-name">Xenoblade Chronicles 3</span></li>
+                    <li><span class="vg-rank">07</span> <span class="vg-game-name">Marvel Snap</span></li>
+                    <li><span class="vg-rank">08</span> <span class="vg-game-name">Midnight Suns</span></li>
+                  </ol>
+                </div>
+
+                <div role="tabpanel" id="panel-2021" aria-labelledby="tab-2021" class="vg-top10-panel" hidden>
+                  <h3 class="vg-top10-year">2021</h3>
+                  <ol class="vg-top10-list">
+                    <li><span class="vg-rank">01</span> <span class="vg-game-name">Monster Hunter Rise</span></li>
+                    <li><span class="vg-rank">02</span> <span class="vg-game-name">No More Heroes 3</span></li>
+                    <li><span class="vg-rank">03</span> <span class="vg-game-name">Metroid Dread</span></li>
+                    <li><span class="vg-rank">04</span> <span class="vg-game-name">WarioWare: Get it Together</span></li>
+                    <li><span class="vg-rank">05</span> <span class="vg-game-name">The Great Ace Attorney Chronicles</span></li>
+                    <li><span class="vg-rank">06</span> <span class="vg-game-name">Forza Horizon 5</span></li>
+                    <li><span class="vg-rank">07</span> <span class="vg-game-name">Pokemon Unite</span></li>
+                    <li><span class="vg-rank">08</span> <span class="vg-game-name">Shin Megami Tensei 5</span></li>
+                    <li><span class="vg-rank">09</span> <span class="vg-game-name">New Pokemon Snap</span></li>
+                    <li><span class="vg-rank">10</span> <span class="vg-game-name">Pikmin Bloom</span></li>
+                  </ol>
+                </div>
+
+                <div role="tabpanel" id="panel-2020" aria-labelledby="tab-2020" class="vg-top10-panel" hidden>
+                  <h3 class="vg-top10-year">2020</h3>
+                  <ol class="vg-top10-list">
+                    <li><span class="vg-rank">01</span> <span class="vg-game-name">Crusader Kings III</span></li>
+                    <li><span class="vg-rank">02</span> <span class="vg-game-name">Hades</span></li>
+                    <li><span class="vg-rank">03</span> <span class="vg-game-name">Hyrule Warriors: Age of Calamity</span></li>
+                    <li><span class="vg-rank">04</span> <span class="vg-game-name">Microsoft Flight Simulator</span></li>
+                    <li><span class="vg-rank">05</span> <span class="vg-game-name">Animal Crossing: New Horizons</span></li>
+                    <li><span class="vg-rank">06</span> <span class="vg-game-name">Super Mario Bros. 35</span></li>
+                    <li><span class="vg-rank">07</span> <span class="vg-game-name">Part Time UFO</span></li>
+                    <li><span class="vg-rank">08</span> <span class="vg-game-name">Streets of Rage 4</span></li>
+                    <li><span class="vg-rank">09</span> <span class="vg-game-name">Xenoblade Chronicles: DE</span></li>
+                    <li><span class="vg-rank">10</span> <span class="vg-game-name">Cyberpunk 2077</span></li>
+                  </ol>
+                </div>
+
+                <div role="tabpanel" id="panel-2019" aria-labelledby="tab-2019" class="vg-top10-panel" hidden>
+                  <h3 class="vg-top10-year">2019</h3>
+                  <ol class="vg-top10-list">
+                    <li><span class="vg-rank">01</span> <span class="vg-game-name">Bloodstained: Ritual of the NIght</span></li>
+                    <li><span class="vg-rank">02</span> <span class="vg-game-name">Marvel Ultimate Alliance 3</span></li>
+                    <li><span class="vg-rank">03</span> <span class="vg-game-name">Dragon Quest XI</span></li>
+                    <li><span class="vg-rank">04</span> <span class="vg-game-name">Fire Emblem: Three Houses</span></li>
+                    <li><span class="vg-rank">05</span> <span class="vg-game-name">Tetris 99</span></li>
+                    <li><span class="vg-rank">06</span> <span class="vg-game-name">Super Mario Maker 2</span></li>
+                    <li><span class="vg-rank">07</span> <span class="vg-game-name">Pokemon Shield</span></li>
+                    <li><span class="vg-rank">08</span> <span class="vg-game-name">The Legend of Zelda: Link's Awakening</span></li>
+                    <li><span class="vg-rank">09</span> <span class="vg-game-name">Boxboy! + Boxgirl!</span></li>
+                    <li><span class="vg-rank">10</span> <span class="vg-game-name">Yoshi's Crafted World</span></li>
+                  </ol>
+                </div>
+
+                <div role="tabpanel" id="panel-2018" aria-labelledby="tab-2018" class="vg-top10-panel" hidden>
+                  <h3 class="vg-top10-year">2018</h3>
+                  <ol class="vg-top10-list">
+                    <li><span class="vg-rank">01</span> <span class="vg-game-name">Celeste</span></li>
+                    <li><span class="vg-rank">02</span> <span class="vg-game-name">Monster Hunter Generations Ultimate</span></li>
+                    <li><span class="vg-rank">03</span> <span class="vg-game-name">Forza Horizon 4</span></li>
+                    <li><span class="vg-rank">04</span> <span class="vg-game-name">Super Smash Bros. Ultimate</span></li>
+                    <li><span class="vg-rank">05</span> <span class="vg-game-name">Dead Cells</span></li>
+                    <li><span class="vg-rank">06</span> <span class="vg-game-name">Into the Breach</span></li>
+                    <li><span class="vg-rank">07</span> <span class="vg-game-name">Taiko no Tatsujin: Drum 'n' Fun</span></li>
+                    <li><span class="vg-rank">08</span> <span class="vg-game-name">Octopath Traveler</span></li>
+                    <li><span class="vg-rank">09</span> <span class="vg-game-name">Pokemon Let's Go Pikachu / Eevee</span></li>
+                    <li><span class="vg-rank">10</span> <span class="vg-game-name">Marvel's Spider-Man</span></li>
+                  </ol>
+                </div>
+
+                <div role="tabpanel" id="panel-2017" aria-labelledby="tab-2017" class="vg-top10-panel" hidden>
+                  <h3 class="vg-top10-year">2017</h3>
+                  <ol class="vg-top10-list">
+                    <li><span class="vg-rank">01</span> <span class="vg-game-name">The Legend of Zelda: Breath of the Wild</span></li>
+                    <li><span class="vg-rank">02</span> <span class="vg-game-name">Persona 5</span></li>
+                    <li><span class="vg-rank">03</span> <span class="vg-game-name">Nier: Automata</span></li>
+                    <li><span class="vg-rank">04</span> <span class="vg-game-name">Super Mario Odyssey</span></li>
+                    <li><span class="vg-rank">05</span> <span class="vg-game-name">Arms</span></li>
+                    <li><span class="vg-rank">06</span> <span class="vg-game-name">Steamworld Dig 2</span></li>
+                    <li><span class="vg-rank">07</span> <span class="vg-game-name">Xenoblade Chronicles 2</span></li>
+                    <li><span class="vg-rank">08</span> <span class="vg-game-name">Splatoon 2</span></li>
+                    <li><span class="vg-rank">09</span> <span class="vg-game-name">Fire Emblem: Heroes</span></li>
+                    <li><span class="vg-rank">10</span> <span class="vg-game-name">Binding of Isaac: Afterbirth+</span></li>
+                  </ol>
+                </div>
+
+              </div>
+            </div>
+            <div class="vg-console-tv-controls">
+              <div class="vg-speaker-grille" aria-hidden="true"></div>
+              <div class="vg-channel-dial" role="tablist" aria-label="Select year">
+                <button role="tab" id="tab-2025" aria-selected="true" aria-controls="panel-2025" class="vg-dial-year is-active">2025</button>
+                <button role="tab" id="tab-2024" aria-selected="false" aria-controls="panel-2024" class="vg-dial-year" tabindex="-1">2024</button>
+                <button role="tab" id="tab-2023" aria-selected="false" aria-controls="panel-2023" class="vg-dial-year" tabindex="-1">2023</button>
+                <button role="tab" id="tab-2022" aria-selected="false" aria-controls="panel-2022" class="vg-dial-year" tabindex="-1">2022</button>
+                <button role="tab" id="tab-2021" aria-selected="false" aria-controls="panel-2021" class="vg-dial-year" tabindex="-1">2021</button>
+                <button role="tab" id="tab-2020" aria-selected="false" aria-controls="panel-2020" class="vg-dial-year" tabindex="-1">2020</button>
+                <button role="tab" id="tab-2019" aria-selected="false" aria-controls="panel-2019" class="vg-dial-year" tabindex="-1">2019</button>
+                <button role="tab" id="tab-2018" aria-selected="false" aria-controls="panel-2018" class="vg-dial-year" tabindex="-1">2018</button>
+                <button role="tab" id="tab-2017" aria-selected="false" aria-controls="panel-2017" class="vg-dial-year" tabindex="-1">2017</button>
+              </div>
+            </div>
+          </div>
+          <div class="vg-console-tv-legs" aria-hidden="true">
+            <span></span>
+            <span></span>
+          </div>
+            </div>
+          </article>
+        </div>
       </div>
     </section>
   </main>
@@ -117,9 +430,10 @@
   </footer>
 
   <script>
+    /* Drawer toggle (shared across all pages) */
     (function () {
-      const toggles = Array.from(document.querySelectorAll('[data-drawer-toggle]'));
-      const drawer = document.getElementById('site-drawer');
+      var toggles = Array.from(document.querySelectorAll('[data-drawer-toggle]'));
+      var drawer = document.getElementById('site-drawer');
       if (!drawer || toggles.length === 0) return;
 
       function setOpen(isOpen) {
@@ -155,13 +469,90 @@
         }
       });
     })();
+
+    /* Top-10 year tab switching */
+    (function () {
+      var tablist = document.querySelector('.vg-channel-dial');
+      if (!tablist) return;
+
+      var tabs = Array.from(tablist.querySelectorAll('[role="tab"]'));
+      var panels = tabs.map(function (tab) {
+        return document.getElementById(tab.getAttribute('aria-controls'));
+      });
+      var staticOverlay = document.querySelector('.vg-top10-static');
+
+      function switchTab(newTab) {
+        var oldTab = tablist.querySelector('[aria-selected="true"]');
+        if (oldTab === newTab) return;
+
+        if (staticOverlay) {
+          staticOverlay.classList.add('is-active');
+          setTimeout(function () {
+            staticOverlay.classList.remove('is-active');
+          }, 200);
+        }
+
+        tabs.forEach(function (tab) {
+          var isNew = tab === newTab;
+          tab.setAttribute('aria-selected', isNew ? 'true' : 'false');
+          tab.setAttribute('tabindex', isNew ? '0' : '-1');
+          tab.classList.toggle('is-active', isNew);
+        });
+
+        panels.forEach(function (panel) {
+          if (!panel) return;
+          var isVisible = panel.id === newTab.getAttribute('aria-controls');
+          panel.hidden = !isVisible;
+          panel.classList.toggle('is-active', isVisible);
+        });
+      }
+
+      tabs.forEach(function (tab) {
+        tab.addEventListener('click', function () {
+          switchTab(tab);
+        });
+      });
+
+      tablist.addEventListener('keydown', function (e) {
+        var currentIndex = tabs.indexOf(document.activeElement);
+        if (currentIndex === -1) return;
+
+        var newIndex;
+        if (e.key === 'ArrowDown' || e.key === 'ArrowRight') {
+          e.preventDefault();
+          newIndex = (currentIndex + 1) % tabs.length;
+        } else if (e.key === 'ArrowUp' || e.key === 'ArrowLeft') {
+          e.preventDefault();
+          newIndex = (currentIndex - 1 + tabs.length) % tabs.length;
+        } else if (e.key === 'Home') {
+          e.preventDefault();
+          newIndex = 0;
+        } else if (e.key === 'End') {
+          e.preventDefault();
+          newIndex = tabs.length - 1;
+        }
+
+        if (newIndex !== undefined) {
+          tabs[newIndex].focus();
+          switchTab(tabs[newIndex]);
+        }
+      });
+    })();
+
+    /* Cover image carousel for Pipeline section */
+    (function () {
+      var covers = document.querySelectorAll('.vg-arcade-covers .vg-cover');
+      if (covers.length < 2) return;
+
+      var current = 0;
+      setInterval(function () {
+        covers[current].classList.remove('is-active');
+        current = (current + 1) % covers.length;
+        covers[current].classList.add('is-active');
+      }, 4000);
+    })();
   </script>
 
 </body>
 </html>
-
-
-
-
-
 

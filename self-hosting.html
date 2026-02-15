@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Self-Hosting - Eric Armbruster</title>
   <meta name="description" content="Eric's home setup, services, and lessons from running self-hosted infrastructure.">
-  <meta name="theme-color" content="#070503">
+  <meta name="theme-color" content="#0c1117">
   <link rel="canonical" href="https://www.ericarmbruster.com/self-hosting.html">
   <meta property="og:title" content="Self-Hosting - Eric Armbruster">
   <meta property="og:description" content="Eric's home setup, services, and lessons from running self-hosted infrastructure.">
@@ -19,8 +19,9 @@
   <link rel="icon" href="images/hector-favicon.png" type="image/png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Libre+Caslon+Display&family=Libre+Caslon+Text:ital,wght@0,400;0,700;1,400&family=Herr+Von+Muellerhoff&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Libre+Caslon+Display&family=Libre+Caslon+Text:ital,wght@0,400;0,700;1,400&family=Herr+Von+Muellerhoff&family=JetBrains+Mono:wght@400;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="sh-styles.css">
   <!-- Google tag (gtag.js) -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-5ZTHJXDR9V"></script>
   <script>
@@ -31,7 +32,7 @@
     gtag('config', 'G-5ZTHJXDR9V');
   </script>
 </head>
-<body>
+<body class="sh-page">
 
   <nav class="study-nav" aria-label="Primary">
     <div class="container nav-shell">
@@ -77,37 +78,272 @@
     </div>
   </nav>
 
-  <header class="hero">
-    <div class="container">
-      <h1>Self-Hosting</h1>
-      <p class="hero-subtitle">Operating my own infrastructure to retain control of data and improve operational discipline.</p>
+  <!-- ==================== HERO — Terminal Prompt ==================== -->
+  <header class="hero sh-hero">
+    <div class="container sh-hero-inner">
+      <h1 class="sh-hero-prompt">
+        <span class="sh-user">eric</span>@<span class="sh-host">homelab</span>:<span class="sh-path">~</span>$ <span class="sh-cmd">cat self-hosting</span><span class="sh-blink">_</span>
+      </h1>
+      <p class="sh-hero-output">Running my own infrastructure. Monitoring, services, and hardware.</p>
     </div>
   </header>
 
   <main>
-    <section>
+
+    <!-- ==================== HARDWARE — Server Rack Panel ==================== -->
+    <section aria-labelledby="hardware-heading">
       <div class="container">
-        <h2>My Setup</h2>
-        <p>My homelab is intentionally small and predictable. I prioritize recoverability over novelty.</p>
-        <p>Core rules: automated backups, clear service boundaries, and documented recovery steps.</p>
+        <div class="sh-hardware-grid">
+          <div class="sh-rack-panel">
+            <div class="sh-rack-label" id="hardware-heading">Synology DS920+</div>
+            <div class="sh-ventilation" aria-hidden="true"></div>
+            <div class="sh-drive-bays" aria-label="Drive bay status">
+              <span class="sh-led sh-led--green" aria-label="Bay 1: active"></span>
+              <span class="sh-led sh-led--green" aria-label="Bay 2: active"></span>
+              <span class="sh-led sh-led--green" aria-label="Bay 3: active"></span>
+              <span class="sh-led sh-led--amber" aria-label="Bay 4: standby"></span>
+            </div>
+            <div class="sh-ventilation" aria-hidden="true"></div>
+            <div class="sh-rack-lcd">
+              <span>HOST homelab</span>
+              <span>IP   192.168.1.--</span>
+              <span>UP   ---d --h --m</span>
+            </div>
+          </div>
+          <div class="sh-nas-photo">
+            <img src="images/synology-nas.webp" alt="Synology NAS" width="400" height="300" loading="lazy">
+          </div>
+        </div>
       </div>
     </section>
 
-    <section>
+    <!-- ==================== SERVICES — Container Cards ==================== -->
+    <section aria-labelledby="services-heading">
       <div class="container">
-        <h2>Services I Run</h2>
-        <p>I self-host the tools I use most: file sync, media, dashboards, and utility services that reduce vendor lock-in.</p>
-        <p>I add new services only when they solve a clear problem, because every container is ongoing maintenance.</p>
+        <h2 id="services-heading" class="sh-services-heading">Services</h2>
+        <div class="sh-services-grid">
+
+          <div class="sh-service-card">
+            <div class="sh-service-stripe"></div>
+            <div class="sh-service-body">
+              <div class="sh-service-header">
+                <span class="sh-service-name">Plex</span>
+              </div>
+              <div class="sh-service-status">
+                <span class="sh-led sh-led--green"></span>
+                <span class="sh-service-status-text">Running</span>
+              </div>
+              <span class="sh-service-port">:32400</span>
+              <p class="sh-service-desc">Media server</p>
+            </div>
+          </div>
+
+          <div class="sh-service-card">
+            <div class="sh-service-stripe"></div>
+            <div class="sh-service-body">
+              <div class="sh-service-header">
+                <span class="sh-service-name">Syncthing</span>
+              </div>
+              <div class="sh-service-status">
+                <span class="sh-led sh-led--green"></span>
+                <span class="sh-service-status-text">Running</span>
+              </div>
+              <span class="sh-service-port">:8384</span>
+              <p class="sh-service-desc">File sync</p>
+            </div>
+          </div>
+
+          <div class="sh-service-card">
+            <div class="sh-service-stripe sh-service-stripe--blue"></div>
+            <div class="sh-service-body">
+              <div class="sh-service-header">
+                <span class="sh-service-name">Home Assistant</span>
+              </div>
+              <div class="sh-service-status">
+                <span class="sh-led sh-led--green"></span>
+                <span class="sh-service-status-text">Running</span>
+              </div>
+              <span class="sh-service-port">:8123</span>
+              <p class="sh-service-desc">Automation</p>
+            </div>
+          </div>
+
+          <div class="sh-service-card">
+            <div class="sh-service-stripe"></div>
+            <div class="sh-service-body">
+              <div class="sh-service-header">
+                <span class="sh-service-name">Pi-hole</span>
+              </div>
+              <div class="sh-service-status">
+                <span class="sh-led sh-led--green"></span>
+                <span class="sh-service-status-text">Running</span>
+              </div>
+              <span class="sh-service-port">:80</span>
+              <p class="sh-service-desc">DNS ad-blocking</p>
+            </div>
+          </div>
+
+          <div class="sh-service-card">
+            <div class="sh-service-stripe sh-service-stripe--amber"></div>
+            <div class="sh-service-body">
+              <div class="sh-service-header">
+                <span class="sh-service-name">Nginx Proxy Manager</span>
+              </div>
+              <div class="sh-service-status">
+                <span class="sh-led sh-led--green"></span>
+                <span class="sh-service-status-text">Running</span>
+              </div>
+              <span class="sh-service-port">:81</span>
+              <p class="sh-service-desc">Reverse proxy</p>
+            </div>
+          </div>
+
+          <div class="sh-service-card">
+            <div class="sh-service-stripe sh-service-stripe--amber"></div>
+            <div class="sh-service-body">
+              <div class="sh-service-header">
+                <span class="sh-service-name">Grafana</span>
+              </div>
+              <div class="sh-service-status">
+                <span class="sh-led sh-led--green"></span>
+                <span class="sh-service-status-text">Running</span>
+              </div>
+              <span class="sh-service-port">:3000</span>
+              <p class="sh-service-desc">Dashboards</p>
+            </div>
+          </div>
+
+          <div class="sh-service-card">
+            <div class="sh-service-stripe"></div>
+            <div class="sh-service-body">
+              <div class="sh-service-header">
+                <span class="sh-service-name">Uptime Kuma</span>
+              </div>
+              <div class="sh-service-status">
+                <span class="sh-led sh-led--green"></span>
+                <span class="sh-service-status-text">Running</span>
+              </div>
+              <span class="sh-service-port">:3001</span>
+              <p class="sh-service-desc">Status monitoring</p>
+            </div>
+          </div>
+
+          <div class="sh-service-card">
+            <div class="sh-service-stripe sh-service-stripe--blue"></div>
+            <div class="sh-service-body">
+              <div class="sh-service-header">
+                <span class="sh-service-name">Portainer</span>
+              </div>
+              <div class="sh-service-status">
+                <span class="sh-led sh-led--green"></span>
+                <span class="sh-service-status-text">Running</span>
+              </div>
+              <span class="sh-service-port">:9443</span>
+              <p class="sh-service-desc">Container management</p>
+            </div>
+          </div>
+
+          <div class="sh-service-card">
+            <div class="sh-service-stripe"></div>
+            <div class="sh-service-body">
+              <div class="sh-service-header">
+                <span class="sh-service-name">Vaultwarden</span>
+              </div>
+              <div class="sh-service-status">
+                <span class="sh-led sh-led--green"></span>
+                <span class="sh-service-status-text">Running</span>
+              </div>
+              <span class="sh-service-port">:8000</span>
+              <p class="sh-service-desc">Password manager</p>
+            </div>
+          </div>
+
+        </div>
       </div>
     </section>
 
-    <section>
+    <!-- ==================== MONITORING — Dashboard ==================== -->
+    <section aria-labelledby="monitoring-heading">
       <div class="container">
-        <h2>Lessons Learned</h2>
-        <p>Monitoring and backups beat clever architecture every time. Visibility and restore confidence are the true quality-of-life features.</p>
-        <p>Documentation is part of the system. A concise runbook saves hours when something breaks under pressure.</p>
+        <div class="sh-dashboard">
+          <h2 id="monitoring-heading" class="sh-dashboard-heading">System Monitor</h2>
+
+          <div class="sh-uptime">
+            <div class="sh-uptime-label">Uptime</div>
+            <div class="sh-uptime-value" id="sh-uptime-display">000d 00h 00m</div>
+          </div>
+
+          <div class="sh-gauges">
+            <div class="sh-gauge">
+              <div class="sh-gauge-label">
+                <span>CPU</span>
+                <span class="sh-gauge-value">--%</span>
+              </div>
+              <div class="sh-gauge-track">
+                <div class="sh-gauge-fill" style="width: 0%"></div>
+              </div>
+            </div>
+            <div class="sh-gauge">
+              <div class="sh-gauge-label">
+                <span>Memory</span>
+                <span class="sh-gauge-value">--%</span>
+              </div>
+              <div class="sh-gauge-track">
+                <div class="sh-gauge-fill" style="width: 0%"></div>
+              </div>
+            </div>
+            <div class="sh-gauge">
+              <div class="sh-gauge-label">
+                <span>Disk</span>
+                <span class="sh-gauge-value">--%</span>
+              </div>
+              <div class="sh-gauge-track">
+                <div class="sh-gauge-fill" style="width: 0%"></div>
+              </div>
+            </div>
+            <div class="sh-gauge">
+              <div class="sh-gauge-label">
+                <span>Network</span>
+                <span class="sh-gauge-value">-- Mbps</span>
+              </div>
+              <div class="sh-gauge-track">
+                <div class="sh-gauge-fill" style="width: 0%"></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="sh-dashboard-footer">Last updated: --</div>
+        </div>
       </div>
     </section>
+
+    <!-- ==================== LOGS — Terminal Output ==================== -->
+    <section aria-labelledby="logs-heading">
+      <div class="container">
+        <div class="sh-terminal">
+          <div class="sh-term-titlebar">
+            <div class="sh-term-dots" aria-hidden="true">
+              <span class="sh-term-dot sh-term-dot--red"></span>
+              <span class="sh-term-dot sh-term-dot--amber"></span>
+              <span class="sh-term-dot sh-term-dot--green"></span>
+            </div>
+            <span class="sh-term-title" id="logs-heading">eric@homelab:~$ tail -f /var/log/syslog</span>
+          </div>
+          <div class="sh-term-body">
+            <span class="sh-term-line"><span class="sh-ts">Feb 14 08:00:01</span> homelab CRON[1842]: <span class="sh-log-ok">(root) CMD (/usr/local/bin/backup.sh)</span></span>
+            <span class="sh-term-line"><span class="sh-ts">Feb 14 08:00:03</span> homelab backup: <span class="sh-log-ok">snapshot completed — 3 volumes, 12.4 GB total</span></span>
+            <span class="sh-term-line"><span class="sh-ts">Feb 14 08:15:22</span> homelab dockerd: <span class="sh-log-info">container plex health check passed</span></span>
+            <span class="sh-term-line"><span class="sh-ts">Feb 14 08:15:22</span> homelab dockerd: <span class="sh-log-info">container pihole health check passed</span></span>
+            <span class="sh-term-line"><span class="sh-ts">Feb 14 08:30:00</span> homelab CRON[2104]: <span class="sh-log-ok">(root) CMD (/usr/local/bin/cert-renew.sh)</span></span>
+            <span class="sh-term-line"><span class="sh-ts">Feb 14 09:00:01</span> homelab syncthing[984]: <span class="sh-log-info">Completed pull of "documents" (4 items, ~2.1 MiB)</span></span>
+            <span class="sh-term-line"><span class="sh-ts">Feb 14 09:12:44</span> homelab kernel: <span class="sh-log-warn">[UFW BLOCK] IN=eth0 SRC=192.168.1.254 DST=192.168.1.50</span></span>
+            <span class="sh-term-line"><span class="sh-ts">Feb 14 09:30:00</span> homelab uptimekuma: <span class="sh-log-ok">All 9 monitors operational</span></span>
+            <span class="sh-term-prompt"><span class="sh-user">eric</span>@<span class="sh-host">homelab</span>:~$ <span class="sh-blink">_</span></span>
+          </div>
+        </div>
+      </div>
+    </section>
+
   </main>
 
   <footer>
@@ -117,9 +353,10 @@
   </footer>
 
   <script>
+    /* Drawer toggle */
     (function () {
-      const toggles = Array.from(document.querySelectorAll('[data-drawer-toggle]'));
-      const drawer = document.getElementById('site-drawer');
+      var toggles = Array.from(document.querySelectorAll('[data-drawer-toggle]'));
+      var drawer = document.getElementById('site-drawer');
       if (!drawer || toggles.length === 0) return;
 
       function setOpen(isOpen) {
@@ -159,9 +396,3 @@
 
 </body>
 </html>
-
-
-
-
-
-

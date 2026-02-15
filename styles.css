@@ -421,6 +421,10 @@ footer .container {
     0 2px 8px rgba(80, 20, 20, 0.22);
 }
 
+.brand-mark:hover {
+  color: #6b1a1a;
+}
+
 .brand-mark::before {
   content: "";
   position: absolute;

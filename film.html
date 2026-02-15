@@ -4,34 +4,34 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Film - Eric Armbruster</title>
-  <meta name="description" content="Recent watches, favorites, and recommendations from Eric's film notebook.">
-  <meta name="theme-color" content="#070503">
+  <meta name="description" content="A cinema-inspired film log with live activity from Eric's Letterboxd.">
+  <meta name="theme-color" content="#130d0c">
   <link rel="canonical" href="https://www.ericarmbruster.com/film.html">
   <meta property="og:title" content="Film - Eric Armbruster">
-  <meta property="og:description" content="Recent watches, favorites, and recommendations from Eric's film notebook.">
+  <meta property="og:description" content="A cinema-inspired film log with live activity from Eric's Letterboxd.">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://www.ericarmbruster.com/film.html">
   <meta property="og:image" content="https://www.ericarmbruster.com/images/the-thing-film.png">
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="Film - Eric Armbruster">
-  <meta name="twitter:description" content="Recent watches, favorites, and recommendations from Eric's film notebook.">
+  <meta name="twitter:description" content="A cinema-inspired film log with live activity from Eric's Letterboxd.">
   <meta name="twitter:image" content="https://www.ericarmbruster.com/images/the-thing-film.png">
   <link rel="icon" href="images/hector-favicon.png" type="image/png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Libre+Caslon+Display&family=Libre+Caslon+Text:ital,wght@0,400;0,700;1,400&family=Herr+Von+Muellerhoff&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Libre+Caslon+Display&family=Libre+Caslon+Text:ital,wght@0,400;0,700;1,400&family=Herr+Von+Muellerhoff&family=Bebas+Neue&family=IBM+Plex+Sans+Condensed:wght@400;500;700&family=Special+Elite&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="film-styles.css">
   <!-- Google tag (gtag.js) -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-5ZTHJXDR9V"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
     function gtag(){dataLayer.push(arguments);}
     gtag('js', new Date());
-
     gtag('config', 'G-5ZTHJXDR9V');
   </script>
 </head>
-<body>
+<body class="film-page">
 
   <nav class="study-nav" aria-label="Primary">
     <div class="container nav-shell">
@@ -77,35 +77,78 @@
     </div>
   </nav>
 
-  <header class="hero">
-    <div class="container">
-      <h1>Film</h1>
-      <p class="hero-subtitle">Recent watches, long-term favorites, and recommendation notes.</p>
+  <header class="film-hero" aria-labelledby="film-title">
+    <div class="film-curtain" aria-hidden="true"></div>
+    <div class="container film-hero-inner">
+      <div class="film-marquee">
+        <p class="film-kicker">Projection Booth</p>
+        <h1 id="film-title">Film Room</h1>
+        <p class="film-subtitle">Skeuomorphic watch log with live updates from Letterboxd.</p>
+        <a class="film-ticket" href="https://letterboxd.com/tenderbrew/" target="_blank" rel="noopener">Open Letterboxd</a>
+      </div>
+
+      <div class="film-projector" aria-hidden="true">
+        <div class="film-reel film-reel-left"></div>
+        <div class="film-reel film-reel-right"></div>
+        <div class="film-projector-body"></div>
+        <div class="film-projector-lens"></div>
+        <div class="film-projector-beam"></div>
+      </div>
     </div>
   </header>
 
   <main>
-    <section>
+    <section class="film-section film-dashboard" aria-label="Live Letterboxd activity">
       <div class="container">
-        <h2>Recently Watched</h2>
-        <p>I keep a simple rhythm: one newer release and one older film each week. It keeps my watchlist broad and avoids getting stuck in one era.</p>
-        <p>After each movie, I log one strength and one weakness. It keeps my viewing active instead of passive.</p>
+        <div class="film-grid film-grid-top">
+          <article class="film-panel film-panel-list" aria-labelledby="recent-title">
+            <div class="film-panel-head">
+              <h2 id="recent-title">Now Screening</h2>
+              <p id="film-feed-status" class="film-feed-status" role="status">Loading Letterboxd feed...</p>
+            </div>
+            <ul id="film-recent-watches" class="film-strip-list" aria-live="polite"></ul>
+          </article>
+
+          <article class="film-panel film-panel-stats" aria-labelledby="stats-title">
+            <h2 id="stats-title">Booth Stats</h2>
+            <dl class="film-stats-grid">
+              <div>
+                <dt>Logs In Feed</dt>
+                <dd id="stat-logs">--</dd>
+              </div>
+              <div>
+                <dt>Average Rating</dt>
+                <dd id="stat-average">--</dd>
+              </div>
+              <div>
+                <dt>Five Star Logs</dt>
+                <dd id="stat-fives">--</dd>
+              </div>
+              <div>
+                <dt>Most Recent Log</dt>
+                <dd id="stat-last">--</dd>
+              </div>
+            </dl>
+            <p class="film-note">Data source: <a href="https://letterboxd.com/tenderbrew/rss/" target="_blank" rel="noopener">letterboxd.com/tenderbrew/rss/</a></p>
+          </article>
+        </div>
       </div>
     </section>
 
-    <section>
+    <section class="film-section" aria-label="Featured review and list activity">
       <div class="container">
-        <h2>Favorites</h2>
-        <p>I am drawn to films with strong atmosphere, practical effects, and deliberate visual storytelling. The Thing is a favorite because every craft decision reinforces tension.</p>
-        <p>I also value films that take stylistic risks while still delivering a coherent ending.</p>
-      </div>
-    </section>
+        <hr class="film-divider" aria-hidden="true">
+        <div class="film-grid film-grid-bottom" style="margin-top: 1.2rem;">
+          <article class="film-panel film-panel-featured" aria-labelledby="featured-title">
+            <h2 id="featured-title">Featured Log</h2>
+            <div id="film-featured"></div>
+          </article>
 
-    <section>
-      <div class="container">
-        <h2>Recommendations</h2>
-        <p>When I make recommendations, I usually pair one accessible pick with one less obvious choice, then refine from your feedback.</p>
-        <p>Goal: less algorithmic sameness, more films that actually stick.</p>
+          <article class="film-panel film-panel-lists" aria-labelledby="lists-title">
+            <h2 id="lists-title">Recent Lists</h2>
+            <ul id="film-list-activity" class="film-list-activity"></ul>
+          </article>
+        </div>
       </div>
     </section>
   </main>
@@ -118,8 +161,8 @@
 
   <script>
     (function () {
-      const toggles = Array.from(document.querySelectorAll('[data-drawer-toggle]'));
-      const drawer = document.getElementById('site-drawer');
+      var toggles = Array.from(document.querySelectorAll('[data-drawer-toggle]'));
+      var drawer = document.getElementById('site-drawer');
       if (!drawer || toggles.length === 0) return;
 
       function setOpen(isOpen) {
@@ -155,13 +198,338 @@
         }
       });
     })();
-  </script>
 
+    (function () {
+      var feedStatus = document.getElementById('film-feed-status');
+      var recentList = document.getElementById('film-recent-watches');
+      var featured = document.getElementById('film-featured');
+      var listActivity = document.getElementById('film-list-activity');
+      var statLogs = document.getElementById('stat-logs');
+      var statAverage = document.getElementById('stat-average');
+      var statFives = document.getElementById('stat-fives');
+      var statLast = document.getElementById('stat-last');
+      var feedUrl = 'https://letterboxd.com/tenderbrew/rss/';
+      var rssToJsonUrl = 'https://api.rss2json.com/v1/api.json?rss_url=' + encodeURIComponent(feedUrl);
+
+      var fallbackWatches = [
+        {
+          title: 'Late Spring',
+          year: '1949',
+          rating: 4,
+          link: 'https://letterboxd.com/tenderbrew/film/late-spring/',
+          date: '2026-02-06 17:28:57',
+          thumbnail: 'https://a.ltrbxd.com/resized/film-poster/3/8/9/5/3/38953-late-spring-0-600-0-900-crop.jpg?v=fa023efefc',
+          description: 'Very neat personal story of sacrifice and what it means to be happy.'
+        },
+        {
+          title: 'Dawn of the Planet of the Apes',
+          year: '2014',
+          rating: 5,
+          link: 'https://letterboxd.com/tenderbrew/film/dawn-of-the-planet-of-the-apes/1/',
+          date: '2026-01-02 02:11:05',
+          thumbnail: 'https://a.ltrbxd.com/resized/film-poster/9/4/3/9/4/94394-dawn-of-the-planet-of-the-apes-0-600-0-900-crop.jpg?v=29a00ba752',
+          description: 'Watched on Thursday January 1, 2026.'
+        },
+        {
+          title: 'The Royal Tenenbaums',
+          year: '2001',
+          rating: 5,
+          link: 'https://letterboxd.com/tenderbrew/film/the-royal-tenenbaums/',
+          date: '2025-12-29 21:27:30',
+          thumbnail: 'https://a.ltrbxd.com/resized/sm/upload/sf/k0/qu/5o/5xw30y0pSaMtTcuZW5VaQPiR8qb-0-600-0-900-crop.jpg?v=b945b566a6',
+          description: 'My favorite Wes Anderson and an immaculate entry into his filmography.'
+        },
+        {
+          title: 'Gremlins 2: The New Batch',
+          year: '1990',
+          rating: 5,
+          link: 'https://letterboxd.com/tenderbrew/film/gremlins-2-the-new-batch/1/',
+          date: '2025-12-24 00:37:03',
+          thumbnail: 'https://a.ltrbxd.com/resized/sm/upload/ou/eh/1p/rv/eKBIXDGTRMZS4aA9KS71Fyz8Yeq-0-600-0-900-crop.jpg?v=3d924e45ac',
+          description: 'Watched on Tuesday December 23, 2025.'
+        }
+      ];
+
+      function formatDate(dateValue) {
+        var date = new Date(dateValue);
+        if (Number.isNaN(date.getTime())) return 'Unknown date';
+        return new Intl.DateTimeFormat('en-US', { month: 'short', day: 'numeric', year: 'numeric' }).format(date);
+      }
+
+      function parseRatingFromTitle(rawTitle) {
+        var match = rawTitle.match(/\s-\s([\u2605\u00BD]+)$/);
+        if (!match) return null;
+
+        var rating = 0;
+        var symbols = match[1];
+        for (var i = 0; i < symbols.length; i += 1) {
+          if (symbols[i] === '\u2605') rating += 1;
+          if (symbols[i] === '\u00BD') rating += 0.5;
+        }
+        return rating;
+      }
+
+      function parseFilmTitle(rawTitle) {
+        var cleaned = rawTitle.replace(/\s-\s[\u2605\u00BD]+$/, '').trim();
+        var match = cleaned.match(/^(.*),\s(\d{4})$/);
+        if (!match) {
+          return { title: cleaned, year: '' };
+        }
+        return { title: match[1], year: match[2] };
+      }
+
+      function extractReviewText(htmlSnippet) {
+        if (!htmlSnippet) return 'Logged on Letterboxd.';
+
+        var parsed = new DOMParser().parseFromString(htmlSnippet, 'text/html');
+        var paragraphs = Array.from(parsed.querySelectorAll('p'))
+          .map(function (p) { return p.textContent.trim(); })
+          .filter(Boolean);
+
+        for (var i = 0; i < paragraphs.length; i += 1) {
+          if (paragraphs[i].length > 25) {
+            return paragraphs[i];
+          }
+        }
+
+        return paragraphs[0] || 'Logged on Letterboxd.';
+      }
+
+      function extractThumbnailFromDescription(htmlSnippet) {
+        if (!htmlSnippet) return 'images/the-thing-film.webp';
+
+        var parsed = new DOMParser().parseFromString(htmlSnippet, 'text/html');
+        var image = parsed.querySelector('img');
+        if (!image) return 'images/the-thing-film.webp';
+
+        return image.getAttribute('src') || 'images/the-thing-film.webp';
+      }
+
+      function escapeHtml(value) {
+        return String(value || '')
+          .replace(/&/g, '&amp;')
+          .replace(/</g, '&lt;')
+          .replace(/>/g, '&gt;')
+          .replace(/"/g, '&quot;')
+          .replace(/'/g, '&#39;');
+      }
+
+      function renderRecentWatches(entries) {
+        recentList.innerHTML = '';
+        entries.slice(0, 8).forEach(function (entry) {
+          var item = document.createElement('li');
+          item.className = 'film-strip-item';
+
+          var link = document.createElement('a');
+          link.href = entry.link;
+          link.target = '_blank';
+          link.rel = 'noopener';
+          link.textContent = entry.title;
+
+          var meta = document.createElement('span');
+          meta.className = 'film-strip-meta';
+          var ratingLabel = typeof entry.rating === 'number' ? (entry.rating.toFixed(1) + '/5') : 'No rating';
+          var yearLabel = entry.year ? ('(' + entry.year + ')') : '';
+          meta.textContent = yearLabel + '  |  ' + ratingLabel + '  |  ' + formatDate(entry.date);
+
+          item.appendChild(link);
+          item.appendChild(meta);
+          recentList.appendChild(item);
+        });
+      }
+
+      function renderFeatured(entry) {
+        if (!entry) {
+          featured.innerHTML = '<p class="film-fallback">No featured entry available.</p>';
+          return;
+        }
+
+        var poster = entry.thumbnail || extractThumbnailFromDescription(entry.description);
+        var text = extractReviewText(entry.description);
+        var ratingText = typeof entry.rating === 'number' ? (entry.rating.toFixed(1) + '/5') : 'No rating';
+        var yearText = entry.year ? ('(' + entry.year + ')') : '';
+        var safeTitle = escapeHtml(entry.title || 'Untitled');
+        var safeText = escapeHtml(text);
+        var safePoster = escapeHtml(poster);
+        var safeLink = escapeHtml(entry.link || '#');
+
+        featured.innerHTML =
+          '<article class="film-featured-card">' +
+            '<img src="' + safePoster + '" alt="Poster for ' + safeTitle + '" loading="lazy">' +
+            '<div class="film-featured-copy">' +
+              '<h3>' + safeTitle + ' ' + escapeHtml(yearText) + '</h3>' +
+              '<p class="film-featured-meta">' + escapeHtml(ratingText) + '  |  ' + escapeHtml(formatDate(entry.date)) + '</p>' +
+              '<p>' + safeText + '</p>' +
+              '<a href="' + safeLink + '" target="_blank" rel="noopener">Read on Letterboxd</a>' +
+            '</div>' +
+          '</article>';
+      }
+
+      function renderListActivity(entries) {
+        listActivity.innerHTML = '';
+        if (!entries.length) {
+          listActivity.innerHTML = '<li class="film-fallback">No list activity in the current feed window.</li>';
+          return;
+        }
+
+        entries.slice(0, 6).forEach(function (entry) {
+          var item = document.createElement('li');
+          var link = document.createElement('a');
+          link.href = entry.link;
+          link.target = '_blank';
+          link.rel = 'noopener';
+          link.textContent = entry.title;
+
+          var date = document.createElement('span');
+          date.textContent = formatDate(entry.date);
+
+          item.appendChild(link);
+          item.appendChild(date);
+          listActivity.appendChild(item);
+        });
+      }
+
+      function renderStats(entries) {
+        var rated = entries.filter(function (entry) { return typeof entry.rating === 'number'; });
+        var average = rated.length
+          ? rated.reduce(function (sum, entry) { return sum + entry.rating; }, 0) / rated.length
+          : null;
+        var fives = entries.filter(function (entry) { return entry.rating === 5; }).length;
+
+        statLogs.textContent = String(entries.length);
+        statAverage.textContent = average ? average.toFixed(2) + '/5' : '--';
+        statFives.textContent = String(fives);
+        statLast.textContent = entries[0] ? formatDate(entries[0].date) : '--';
+      }
+
+      function normalizeItems(items) {
+        return items.map(function (item) {
+          var parsedTitle = parseFilmTitle(item.title || 'Untitled');
+          var description = item.description || '';
+          return {
+            rawTitle: item.title || 'Untitled',
+            title: parsedTitle.title,
+            year: parsedTitle.year,
+            rating: parseRatingFromTitle(item.title || ''),
+            date: item.pubDate || '',
+            link: item.link || '#',
+            guid: item.guid || '',
+            description: description,
+            thumbnail: item.thumbnail || extractThumbnailFromDescription(description)
+          };
+        });
+      }
+
+      function parseXmlItems(xmlText) {
+        var parsed = new DOMParser().parseFromString(xmlText, 'application/xml');
+        if (parsed.querySelector('parsererror')) {
+          throw new Error('Malformed XML');
+        }
+
+        return Array.from(parsed.querySelectorAll('item')).map(function (node) {
+          function read(tagName) {
+            var found = node.querySelector(tagName);
+            return found ? found.textContent.trim() : '';
+          }
+
+          var rawTitle = read('title') || 'Untitled';
+          var parsedTitle = parseFilmTitle(rawTitle);
+          var description = read('description');
+
+          return {
+            rawTitle: rawTitle,
+            title: parsedTitle.title,
+            year: parsedTitle.year,
+            rating: parseRatingFromTitle(rawTitle),
+            date: read('pubDate'),
+            link: read('link') || '#',
+            guid: read('guid'),
+            description: description,
+            thumbnail: extractThumbnailFromDescription(description)
+          };
+        });
+      }
+
+      function decodeDataPayload(contents) {
+        if (!contents) return '';
+        if (contents.indexOf('data:') !== 0) return contents;
+
+        var comma = contents.indexOf(',');
+        if (comma === -1) return contents;
+
+        var metadata = contents.slice(0, comma);
+        var payload = contents.slice(comma + 1);
+        if (metadata.indexOf(';base64') !== -1) {
+          return atob(payload);
+        }
+        return decodeURIComponent(payload);
+      }
+
+      function renderWithFallback(reason) {
+        renderRecentWatches(fallbackWatches);
+        renderFeatured(fallbackWatches[0]);
+        renderListActivity([]);
+        renderStats(fallbackWatches);
+        feedStatus.textContent = 'Live feed unavailable (' + reason + '). Showing cached samples.';
+      }
+
+      async function loadFeedViaRssToJson() {
+        var response = await fetch(rssToJsonUrl, { cache: 'no-store' });
+        if (!response.ok) {
+          throw new Error('HTTP ' + response.status);
+        }
+
+        var payload = await response.json();
+        if (payload.status !== 'ok' || !Array.isArray(payload.items)) {
+          throw new Error('Invalid payload');
+        }
+
+        return normalizeItems(payload.items);
+      }
+
+      async function loadFeedViaAllOrigins() {
+        var allOriginsUrl = 'https://api.allorigins.win/get?url=' + encodeURIComponent(feedUrl);
+        var response = await fetch(allOriginsUrl, { cache: 'no-store' });
+        if (!response.ok) {
+          throw new Error('Fallback HTTP ' + response.status);
+        }
+
+        var payload = await response.json();
+        var decoded = decodeDataPayload(payload.contents || '');
+        if (!decoded) {
+          throw new Error('Empty fallback payload');
+        }
+
+        return parseXmlItems(decoded);
+      }
+
+      async function loadFeed() {
+        try {
+          return await loadFeedViaRssToJson();
+        } catch (rssError) {
+          return await loadFeedViaAllOrigins();
+        }
+      }
+
+      loadFeed()
+        .then(function (entries) {
+          var filmEntries = entries.filter(function (entry) { return entry.link.indexOf('/film/') !== -1; });
+          var listEntries = entries.filter(function (entry) { return entry.link.indexOf('/list/') !== -1; });
+
+          if (!filmEntries.length) {
+            throw new Error('No film entries');
+          }
+
+          renderRecentWatches(filmEntries);
+          renderFeatured(filmEntries[0]);
+          renderListActivity(listEntries);
+          renderStats(filmEntries);
+          feedStatus.textContent = 'Live from Letterboxd.';
+        })
+        .catch(function (error) {
+          renderWithFallback(error && error.message ? error.message : 'feed error');
+        });
+    })();
+  </script>
 </body>
 </html>
-
-
-
-
-
-

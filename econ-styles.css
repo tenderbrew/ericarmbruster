@@ -1,0 +1,558 @@
+/* ============================================================
+   ECONOMICS PAGE - Skeuomorphic Dashboard
+   Scoped under .econ-page
+   ============================================================ */
+
+.econ-page {
+  --econ-bg-0: #080f0c;
+  --econ-bg-1: #0f1a14;
+  --econ-bg-2: #172a20;
+  --econ-bg-3: #203528;
+  --econ-brass: #c89c55;
+  --econ-brass-dark: #6a4f2a;
+  --econ-steel: #9ba5b4;
+  --econ-steel-dark: #424d5e;
+  --econ-ledger: #e8ddc4;
+  --econ-ink: #2f2a20;
+  --econ-green: #64d77b;
+  --econ-red: #ef6e68;
+  --econ-panel-shadow: rgba(0, 0, 0, 0.56);
+  --econ-gap: 1.2rem;
+
+  color: #e8dfca;
+  font-family: "IBM Plex Sans Condensed", "Trebuchet MS", sans-serif;
+  background:
+    radial-gradient(1300px 540px at 50% -10%, rgba(50, 92, 72, 0.35), transparent 70%),
+    radial-gradient(920px 700px at -10% 100%, rgba(25, 56, 44, 0.25), transparent 70%),
+    radial-gradient(900px 680px at 110% 98%, rgba(35, 65, 45, 0.2), transparent 72%),
+    repeating-linear-gradient(
+      90deg,
+      rgba(80, 134, 108, 0.05) 0,
+      rgba(80, 134, 108, 0.05) 1px,
+      transparent 1px,
+      transparent 34px
+    ),
+    linear-gradient(180deg, var(--econ-bg-0), var(--econ-bg-1) 34%, var(--econ-bg-2) 70%, var(--econ-bg-3));
+}
+
+.econ-page::before,
+.econ-page::after {
+  display: none;
+}
+
+.econ-page main:not(.home-rooms) > section .container {
+  background: none;
+  box-shadow: none;
+  clip-path: none;
+  padding: 0;
+}
+
+.econ-page main:not(.home-rooms) > .econ-section {
+  padding: 1.2rem 0 0;
+}
+
+.econ-hero {
+  padding: 1.8rem 0 1.1rem;
+}
+
+.econ-hero .container {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.econ-hero-inner {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+  gap: var(--econ-gap);
+  align-items: stretch;
+}
+
+.econ-ledger {
+  position: relative;
+  padding: 1.25rem 1.2rem;
+  background:
+    radial-gradient(circle at 16% 8%, rgba(255, 243, 200, 0.2), transparent 46%),
+    repeating-linear-gradient(
+      0deg,
+      rgba(194, 156, 91, 0.08) 0,
+      rgba(194, 156, 91, 0.08) 1px,
+      transparent 1px,
+      transparent 4px
+    ),
+    linear-gradient(145deg, rgba(42, 60, 50, 0.94), rgba(18, 30, 24, 0.96) 60%, rgba(12, 20, 16, 0.98));
+  box-shadow:
+    0 18px 28px var(--econ-panel-shadow),
+    inset 0 0 0 1px rgba(219, 177, 107, 0.34),
+    inset 0 0 0 9px rgba(30, 28, 18, 0.55);
+}
+
+.econ-ledger::before {
+  content: "";
+  position: absolute;
+  inset: 8px;
+  border: 1px solid rgba(216, 177, 109, 0.28);
+  pointer-events: none;
+}
+
+.econ-kicker {
+  margin: 0;
+  font-family: "Special Elite", "Courier New", monospace;
+  font-size: 0.56rem;
+  letter-spacing: 1.8px;
+  color: #e6ca96;
+  text-transform: uppercase;
+}
+
+.econ-ledger h1 {
+  margin: 0.55rem 0 0.4rem;
+  font-family: "Libre Caslon Display", "Libre Caslon Text", serif;
+  font-size: clamp(1.9rem, 4.6vw, 3rem);
+  font-weight: 700;
+  letter-spacing: 1px;
+  color: #f2d5a0;
+  text-transform: uppercase;
+  line-height: 1.1;
+}
+
+.econ-subtitle {
+  margin: 0;
+  max-width: 50ch;
+  font-size: 0.89rem;
+  color: rgba(236, 229, 213, 0.88);
+}
+
+.econ-source-strip {
+  margin-top: 1rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem 0.6rem;
+  align-items: center;
+}
+
+.econ-source-strip a,
+.econ-source-strip span {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 1.6rem;
+  padding: 0.2rem 0.62rem;
+  border: 1px solid rgba(210, 167, 92, 0.38);
+  background: linear-gradient(180deg, rgba(42, 56, 46, 0.92), rgba(24, 32, 26, 0.94));
+  font-family: "Special Elite", "Courier New", monospace;
+  font-size: 0.52rem;
+  color: #e6c88f;
+  letter-spacing: 0.7px;
+  text-transform: uppercase;
+}
+
+.econ-source-strip a:hover {
+  color: #ffdfac;
+}
+
+.econ-gauge-bank {
+  display: grid;
+  gap: 0.78rem;
+}
+
+.econ-gauge {
+  position: relative;
+  min-height: 96px;
+  background:
+    radial-gradient(circle at 50% 42%, rgba(233, 202, 137, 0.16), rgba(30, 44, 36, 0.94) 65%),
+    linear-gradient(180deg, rgba(48, 58, 48, 0.9), rgba(22, 32, 26, 0.96));
+  box-shadow:
+    0 14px 20px rgba(0, 0, 0, 0.42),
+    inset 0 0 0 1px rgba(211, 175, 106, 0.32),
+    inset 0 0 0 8px rgba(28, 21, 14, 0.45);
+}
+
+/* dial face with tick marks */
+.econ-gauge::before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: 46%;
+  width: 56px;
+  height: 56px;
+  transform: translate(-50%, -50%);
+  border-radius: 50% !important;
+  background:
+    /* tick marks around the edge */
+    conic-gradient(
+      from 210deg,
+      transparent 0deg, transparent 3deg,
+      rgba(200, 170, 110, 0.6) 3deg, rgba(200, 170, 110, 0.6) 5deg,
+      transparent 5deg, transparent 27deg,
+      rgba(200, 170, 110, 0.35) 27deg, rgba(200, 170, 110, 0.35) 29deg,
+      transparent 29deg, transparent 51deg,
+      rgba(200, 170, 110, 0.6) 51deg, rgba(200, 170, 110, 0.6) 53deg,
+      transparent 53deg, transparent 75deg,
+      rgba(200, 170, 110, 0.35) 75deg, rgba(200, 170, 110, 0.35) 77deg,
+      transparent 77deg, transparent 99deg,
+      rgba(200, 170, 110, 0.6) 99deg, rgba(200, 170, 110, 0.6) 101deg,
+      transparent 101deg, transparent 123deg,
+      rgba(200, 170, 110, 0.35) 123deg, rgba(200, 170, 110, 0.35) 125deg,
+      transparent 125deg, transparent 147deg,
+      rgba(200, 170, 110, 0.6) 147deg, rgba(200, 170, 110, 0.6) 149deg,
+      transparent 149deg, transparent 171deg,
+      rgba(200, 170, 110, 0.35) 171deg, rgba(200, 170, 110, 0.35) 173deg,
+      transparent 173deg, transparent 195deg,
+      rgba(200, 170, 110, 0.6) 195deg, rgba(200, 170, 110, 0.6) 197deg,
+      transparent 197deg, transparent 240deg,
+      transparent 240deg
+    ),
+    /* dial face */
+    radial-gradient(circle at 30% 28%, rgba(245, 233, 208, 0.92), rgba(179, 147, 92, 0.88) 60%, rgba(85, 63, 34, 0.92));
+  box-shadow: 0 0 0 6px rgba(51, 59, 50, 0.9), 0 0 0 8px rgba(205, 166, 99, 0.34);
+}
+
+/* needle */
+.econ-gauge::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: 46%;
+  width: 2px;
+  height: 22px;
+  transform-origin: bottom center;
+  transform: translate(-50%, -100%) rotate(25deg);
+  background: linear-gradient(180deg, #c0392b, #8b2020 60%, #2a2a2a);
+  box-shadow: 0 0 2px rgba(0, 0, 0, 0.4);
+}
+
+/* each gauge gets a slightly different needle angle */
+.econ-gauge:nth-child(2)::after {
+  transform: translate(-50%, -100%) rotate(-15deg);
+}
+
+.econ-gauge:nth-child(3)::after {
+  transform: translate(-50%, -100%) rotate(40deg);
+}
+
+.econ-gauge span {
+  position: absolute;
+  left: 0.8rem;
+  bottom: 0.7rem;
+  font-family: "Special Elite", "Courier New", monospace;
+  font-size: 0.54rem;
+  color: #e2c48f;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.econ-panel {
+  position: relative;
+  padding: 0.95rem;
+  background:
+    repeating-linear-gradient(
+      90deg,
+      rgba(198, 159, 93, 0.07) 0,
+      rgba(198, 159, 93, 0.07) 1px,
+      transparent 1px,
+      transparent 8px
+    ),
+    linear-gradient(180deg, rgba(30, 48, 38, 0.95), rgba(16, 26, 20, 0.98));
+  box-shadow:
+    0 18px 28px var(--econ-panel-shadow),
+    inset 0 0 0 1px rgba(200, 163, 96, 0.27),
+    inset 0 1px 0 rgba(255, 222, 163, 0.13);
+}
+
+/* brass corner brackets */
+.econ-panel::before,
+.econ-panel::after {
+  content: "";
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  pointer-events: none;
+}
+
+.econ-panel::before {
+  top: 5px;
+  left: 5px;
+  border-top: 2px solid rgba(200, 156, 85, 0.35);
+  border-left: 2px solid rgba(200, 156, 85, 0.35);
+}
+
+.econ-panel::after {
+  bottom: 5px;
+  right: 5px;
+  border-bottom: 2px solid rgba(200, 156, 85, 0.35);
+  border-right: 2px solid rgba(200, 156, 85, 0.35);
+}
+
+.econ-panel-head {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 0.8rem;
+  margin-bottom: 0.78rem;
+}
+
+.econ-panel h2 {
+  margin: 0;
+  font-family: "Libre Caslon Display", "Libre Caslon Text", serif;
+  font-size: clamp(1rem, 2vw, 1.4rem);
+  letter-spacing: 0.6px;
+  color: #f0d4a4;
+  text-transform: uppercase;
+}
+
+.econ-status {
+  margin: 0;
+  font-family: "Special Elite", "Courier New", monospace;
+  font-size: 0.52rem;
+  text-transform: uppercase;
+  letter-spacing: 0.8px;
+  color: #d8be8f;
+}
+
+.econ-indicator-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 0.72rem;
+}
+
+.econ-indicator-card {
+  padding: 0.64rem 0.66rem;
+  background:
+    radial-gradient(circle at 12% 8%, rgba(247, 229, 191, 0.08), transparent 42%),
+    linear-gradient(180deg, rgba(12, 20, 16, 0.95), rgba(8, 14, 10, 0.98));
+  border: 1px solid rgba(198, 159, 93, 0.22);
+  transition: border-color 0.2s;
+}
+
+.econ-indicator-card:hover {
+  border-color: rgba(200, 163, 96, 0.4);
+}
+
+.econ-indicator-card h3 {
+  margin: 0;
+  font-family: "Libre Caslon Text", serif;
+  font-size: 0.82rem;
+  font-weight: 700;
+  color: #f2dfbc;
+  line-height: 1.3;
+}
+
+.econ-series-code {
+  margin: 0.12rem 0 0;
+  font-family: "Special Elite", monospace;
+  font-size: 0.5rem;
+  color: rgba(218, 188, 141, 0.8);
+  letter-spacing: 0.6px;
+  text-transform: uppercase;
+}
+
+.econ-indicator-value {
+  margin: 0.45rem 0 0.18rem;
+  font-family: "Libre Caslon Display", serif;
+  font-size: 1.1rem;
+  color: #ffe1ae;
+  line-height: 1.1;
+}
+
+.econ-indicator-meta {
+  margin: 0;
+  font-family: "Special Elite", monospace;
+  font-size: 0.49rem;
+  color: rgba(230, 211, 178, 0.7);
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.econ-indicator-card.is-up .econ-indicator-value {
+  color: #93f1a5;
+}
+
+.econ-indicator-card.is-down .econ-indicator-value {
+  color: #ff9c96;
+}
+
+.econ-indicator-card.is-error .econ-indicator-value {
+  color: #d7d2c9;
+}
+
+.econ-two-col {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+  gap: var(--econ-gap);
+}
+
+.econ-news-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  gap: 0.54rem;
+}
+
+.econ-news-list li {
+  display: grid;
+  gap: 0.2rem;
+  padding: 0.58rem 0.66rem;
+  border: 1px solid rgba(195, 159, 94, 0.22);
+  background: linear-gradient(180deg, rgba(12, 20, 16, 0.92), rgba(8, 14, 10, 0.96));
+  transition: border-color 0.2s;
+}
+
+.econ-news-list li:hover {
+  border-color: rgba(200, 163, 96, 0.4);
+}
+
+.econ-news-list a {
+  font-size: 0.82rem;
+  color: #e8d3ab;
+  line-height: 1.28;
+}
+
+.econ-news-list a:hover {
+  color: #fde5bb;
+}
+
+.econ-news-list span {
+  font-family: "Special Elite", monospace;
+  font-size: 0.48rem;
+  text-transform: uppercase;
+  letter-spacing: 0.6px;
+  color: rgba(221, 198, 158, 0.74);
+}
+
+.econ-reading-note {
+  margin: 0 0 0.7rem;
+  font-size: 0.8rem;
+  color: rgba(229, 214, 186, 0.85);
+}
+
+.econ-reading-columns {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 0.7rem;
+}
+
+.econ-reading-columns section {
+  padding: 0.58rem;
+  border: 1px solid rgba(188, 150, 88, 0.22);
+  background: linear-gradient(180deg, rgba(12, 20, 16, 0.9), rgba(8, 14, 10, 0.94));
+}
+
+.econ-reading-columns h3 {
+  margin: 0 0 0.4rem;
+  font-family: "Special Elite", monospace;
+  font-size: 0.57rem;
+  letter-spacing: 1px;
+  color: #dcc292;
+  text-transform: uppercase;
+}
+
+.econ-reading-columns ul {
+  margin: 0;
+  padding-left: 1rem;
+  color: rgba(232, 216, 186, 0.88);
+}
+
+.econ-reading-columns li {
+  margin: 0 0 0.34rem;
+  font-size: 0.74rem;
+}
+
+/* brass section divider */
+.econ-divider {
+  height: 2px;
+  margin: 1.4rem 0 0;
+  border: none;
+  background:
+    linear-gradient(90deg,
+      transparent,
+      rgba(200, 156, 85, 0.15) 10%,
+      rgba(200, 156, 85, 0.4) 50%,
+      rgba(200, 156, 85, 0.15) 90%,
+      transparent
+    );
+  position: relative;
+}
+
+/* center ornament on divider */
+.econ-divider::before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: 8px;
+  height: 8px;
+  transform: translate(-50%, -50%) rotate(45deg);
+  background: rgba(200, 156, 85, 0.4);
+  border: 1px solid rgba(200, 156, 85, 0.2);
+}
+
+.econ-page footer {
+  margin-top: 1.8rem;
+  border-top: 1px solid rgba(194, 154, 88, 0.2);
+  background: none;
+}
+
+.econ-page footer .container {
+  color: rgba(223, 202, 167, 0.45);
+}
+
+@media (max-width: 1080px) {
+  .econ-hero .container {
+    padding-left: 1.4rem;
+    padding-right: 1.4rem;
+  }
+
+  .econ-hero-inner,
+  .econ-two-col {
+    grid-template-columns: 1fr;
+  }
+
+  .econ-gauge-bank {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  .econ-indicator-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 760px) {
+  .econ-hero {
+    padding-top: 1.2rem;
+  }
+
+  .econ-ledger {
+    padding: 0.95rem 0.84rem;
+  }
+
+  .econ-subtitle {
+    font-size: 0.78rem;
+  }
+
+  .econ-source-strip {
+    gap: 0.36rem;
+  }
+
+  .econ-gauge-bank {
+    grid-template-columns: 1fr;
+  }
+
+  .econ-indicator-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .econ-reading-columns {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 440px) {
+  .econ-indicator-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .econ-panel-head {
+    display: grid;
+    gap: 0.3rem;
+  }
+}

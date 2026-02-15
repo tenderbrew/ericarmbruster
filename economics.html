@@ -4,34 +4,34 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Economics - Eric Armbruster</title>
-  <meta name="description" content="Books, topics, and notes Eric follows to think about economics and incentives.">
-  <meta name="theme-color" content="#070503">
+  <meta name="description" content="Live macro indicators, Austrian economics headlines, and a reading queue.">
+  <meta name="theme-color" content="#080f0c">
   <link rel="canonical" href="https://www.ericarmbruster.com/economics.html">
   <meta property="og:title" content="Economics - Eric Armbruster">
-  <meta property="og:description" content="Books, topics, and notes Eric follows to think about economics and incentives.">
+  <meta property="og:description" content="Live macro indicators, Austrian economics headlines, and a reading queue.">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://www.ericarmbruster.com/economics.html">
   <meta property="og:image" content="https://www.ericarmbruster.com/images/bohm-bawerk.png">
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="Economics - Eric Armbruster">
-  <meta name="twitter:description" content="Books, topics, and notes Eric follows to think about economics and incentives.">
+  <meta name="twitter:description" content="Live macro indicators, Austrian economics headlines, and a reading queue.">
   <meta name="twitter:image" content="https://www.ericarmbruster.com/images/bohm-bawerk.png">
   <link rel="icon" href="images/hector-favicon.png" type="image/png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Libre+Caslon+Display&family=Libre+Caslon+Text:ital,wght@0,400;0,700;1,400&family=Herr+Von+Muellerhoff&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Libre+Caslon+Display&family=Libre+Caslon+Text:ital,wght@0,400;0,700;1,400&family=Herr+Von+Muellerhoff&family=IBM+Plex+Sans+Condensed:wght@400;500;700&family=Special+Elite&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="econ-styles.css">
   <!-- Google tag (gtag.js) -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-5ZTHJXDR9V"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
     function gtag(){dataLayer.push(arguments);}
     gtag('js', new Date());
-
     gtag('config', 'G-5ZTHJXDR9V');
   </script>
 </head>
-<body>
+<body class="econ-page">
 
   <nav class="study-nav" aria-label="Primary">
     <div class="container nav-shell">
@@ -77,35 +77,90 @@
     </div>
   </nav>
 
-  <header class="hero">
-    <div class="container">
-      <h1>Economics</h1>
-      <p class="hero-subtitle">What I am reading and the economic ideas I return to most.</p>
+  <header class="econ-hero" aria-labelledby="econ-page-title">
+    <div class="container econ-hero-inner">
+      <div class="econ-ledger">
+        <p class="econ-kicker">Economic Observatory</p>
+        <h1 id="econ-page-title">Macro Monitor</h1>
+        <p class="econ-subtitle">Live indicators from FRED, Austrian-leaning news flow, and a dedicated reading queue.</p>
+        <div class="econ-source-strip">
+          <a href="https://fred.stlouisfed.org/" target="_blank" rel="noopener">FRED Data</a>
+          <a href="https://mises.org/" target="_blank" rel="noopener">Mises Feed</a>
+          <span id="econ-last-refresh">Refreshing...</span>
+        </div>
+      </div>
+
+      <aside class="econ-gauge-bank" aria-hidden="true">
+        <div class="econ-gauge">
+          <span>Inflation</span>
+        </div>
+        <div class="econ-gauge">
+          <span>Labor</span>
+        </div>
+        <div class="econ-gauge">
+          <span>Liquidity</span>
+        </div>
+      </aside>
     </div>
   </header>
 
   <main>
-    <section>
+    <section class="econ-section" aria-labelledby="indicators-title">
       <div class="container">
-        <h2>What I Am Reading</h2>
-        <p>I rotate between books, essays, and occasional papers. I favor sources that explain incentives clearly and distinguish first-order from second-order effects.</p>
-        <p>When a source is worth keeping, I summarize it in plain language so I can apply the idea later.</p>
+        <div class="econ-panel">
+          <div class="econ-panel-head">
+            <h2 id="indicators-title">Live Indicators</h2>
+            <p id="econ-indicator-status" class="econ-status" role="status">Loading data feeds...</p>
+          </div>
+          <div id="econ-indicator-grid" class="econ-indicator-grid" aria-live="polite"></div>
+        </div>
       </div>
     </section>
 
-    <section>
+    <section class="econ-section" aria-labelledby="news-title">
       <div class="container">
-        <h2>Topics I Follow</h2>
-        <p>I focus on incentives, market structure, institutions, and decision-making under uncertainty.</p>
-        <p>These themes map directly to engineering: constraints, tradeoffs, and how people respond to systems.</p>
+        <hr class="econ-divider" aria-hidden="true">
       </div>
-    </section>
+      <div class="container econ-two-col">
+        <article class="econ-panel" aria-labelledby="news-title">
+          <div class="econ-panel-head">
+            <h2 id="news-title">Economics News Feed</h2>
+            <p id="econ-news-status" class="econ-status" role="status">Loading Mises feed...</p>
+          </div>
+          <ul id="econ-news-list" class="econ-news-list"></ul>
+        </article>
 
-    <section>
-      <div class="container">
-        <h2>Thoughts and Notes</h2>
-        <p>This section is my working notebook: concise takeaways, links, and questions worth revisiting.</p>
-        <p>It is not intended to be comprehensive. It is intended to stay useful.</p>
+        <article class="econ-panel" aria-labelledby="reading-title">
+          <h2 id="reading-title">Reading List</h2>
+          <p class="econ-reading-note">Placeholder section. Add titles whenever you are ready.</p>
+
+          <div class="econ-reading-columns">
+            <section>
+              <h3>In Queue</h3>
+              <ul>
+                <li>[Add book/article]</li>
+                <li>[Add book/article]</li>
+                <li>[Add book/article]</li>
+              </ul>
+            </section>
+
+            <section>
+              <h3>Currently Reading</h3>
+              <ul>
+                <li>[Add active read]</li>
+                <li>[Add active read]</li>
+              </ul>
+            </section>
+
+            <section>
+              <h3>Finished + Notes</h3>
+              <ul>
+                <li>[Add completed read + takeaway]</li>
+                <li>[Add completed read + takeaway]</li>
+              </ul>
+            </section>
+          </div>
+        </article>
       </div>
     </section>
   </main>
@@ -118,8 +173,8 @@
 
   <script>
     (function () {
-      const toggles = Array.from(document.querySelectorAll('[data-drawer-toggle]'));
-      const drawer = document.getElementById('site-drawer');
+      var toggles = Array.from(document.querySelectorAll('[data-drawer-toggle]'));
+      var drawer = document.getElementById('site-drawer');
       if (!drawer || toggles.length === 0) return;
 
       function setOpen(isOpen) {
@@ -155,13 +210,373 @@
         }
       });
     })();
-  </script>
 
+    (function () {
+      var indicatorGrid = document.getElementById('econ-indicator-grid');
+      var indicatorStatus = document.getElementById('econ-indicator-status');
+      var newsList = document.getElementById('econ-news-list');
+      var newsStatus = document.getElementById('econ-news-status');
+      var refreshText = document.getElementById('econ-last-refresh');
+
+      var indicatorDefinitions = [
+        { id: 'UNRATE', name: 'Unemployment Rate', unit: '%', decimals: 1 },
+        { id: 'CPIAUCSL', name: 'CPI (All Urban)', unit: 'index', decimals: 1 },
+        { id: 'CPI_YOY', name: 'CPI YoY Inflation', unit: '%', decimals: 2, derived: true },
+        { id: 'M2SL', name: 'Money Supply (M2)', unit: '$T', decimals: 2, transform: function (v) { return v / 1000; } },
+        { id: 'FEDFUNDS', name: 'Fed Funds Rate', unit: '%', decimals: 2 },
+        { id: 'PAYEMS', name: 'Payroll Employment', unit: 'M jobs', decimals: 1, transform: function (v) { return v / 1000; } },
+        { id: 'GDPC1', name: 'Real GDP', unit: '$T', decimals: 2, transform: function (v) { return v / 1000; } },
+        { id: 'DGS10', name: '10Y Treasury Yield', unit: '%', decimals: 2 },
+        { id: 'T10Y2Y', name: '10Y-2Y Spread', unit: 'pp', decimals: 2 },
+        { id: 'PCE', name: 'Personal Consumption', unit: '$T', decimals: 2, transform: function (v) { return v / 1000; } },
+        { id: 'UMCSENT', name: 'Consumer Sentiment', unit: 'index', decimals: 1 }
+      ];
+
+      var indicatorCards = {};
+
+      function formatDate(dateString) {
+        var date = new Date(dateString);
+        if (Number.isNaN(date.getTime())) return 'Unknown date';
+        return new Intl.DateTimeFormat('en-US', { month: 'short', day: 'numeric', year: 'numeric' }).format(date);
+      }
+
+      function decodeDataPayload(contents) {
+        if (!contents) return '';
+        if (contents.indexOf('data:') !== 0) return contents;
+
+        var comma = contents.indexOf(',');
+        if (comma === -1) return contents;
+
+        var metadata = contents.slice(0, comma);
+        var payload = contents.slice(comma + 1);
+
+        if (metadata.indexOf(';base64') !== -1) {
+          return atob(payload);
+        }
+
+        return decodeURIComponent(payload);
+      }
+
+      function parseFredCsv(csvText) {
+        var lines = csvText.split(/\r?\n/).filter(Boolean);
+        if (lines.length < 2) return [];
+
+        return lines.slice(1).map(function (line) {
+          var parts = line.split(',');
+          if (parts.length < 2) return null;
+
+          var value = Number(parts[1]);
+          if (!Number.isFinite(value)) return null;
+
+          return {
+            date: parts[0],
+            value: value
+          };
+        }).filter(Boolean);
+      }
+
+      function createIndicatorCard(definition) {
+        var card = document.createElement('article');
+        card.className = 'econ-indicator-card';
+        card.setAttribute('data-series', definition.id);
+        card.innerHTML =
+          '<h3>' + definition.name + '</h3>' +
+          '<p class="econ-series-code">' + definition.id + '</p>' +
+          '<p class="econ-indicator-value">--</p>' +
+          '<p class="econ-indicator-meta">Awaiting update...</p>';
+
+        indicatorGrid.appendChild(card);
+        indicatorCards[definition.id] = card;
+      }
+
+      function setCardError(seriesId, message) {
+        var card = indicatorCards[seriesId];
+        if (!card) return;
+
+        card.classList.add('is-error');
+        card.querySelector('.econ-indicator-value').textContent = '--';
+        card.querySelector('.econ-indicator-meta').textContent = message;
+      }
+
+      function updateCard(definition, latest, previous) {
+        var card = indicatorCards[definition.id];
+        if (!card) return;
+
+        var value = definition.transform ? definition.transform(latest.value) : latest.value;
+        var previousValue = previous ? (definition.transform ? definition.transform(previous.value) : previous.value) : null;
+        var delta = previousValue !== null ? value - previousValue : null;
+
+        card.classList.remove('is-error');
+        card.querySelector('.econ-indicator-value').textContent = value.toLocaleString(undefined, {
+          minimumFractionDigits: definition.decimals,
+          maximumFractionDigits: definition.decimals
+        }) + ' ' + definition.unit;
+
+        if (delta === null) {
+          card.querySelector('.econ-indicator-meta').textContent = formatDate(latest.date);
+          return;
+        }
+
+        var sign = delta > 0 ? '+' : '';
+        var deltaText = sign + delta.toLocaleString(undefined, {
+          minimumFractionDigits: definition.decimals,
+          maximumFractionDigits: definition.decimals
+        });
+
+        card.querySelector('.econ-indicator-meta').textContent = formatDate(latest.date) + ' | change: ' + deltaText;
+        card.classList.toggle('is-up', delta > 0);
+        card.classList.toggle('is-down', delta < 0);
+      }
+
+      async function fetchTextViaCodetabs(sourceUrl) {
+        var proxyUrl = 'https://api.codetabs.com/v1/proxy/?quest=' + encodeURIComponent(sourceUrl);
+        var response = await fetch(proxyUrl, { cache: 'no-store' });
+        if (!response.ok) {
+          throw new Error('Codetabs HTTP ' + response.status);
+        }
+        return response.text();
+      }
+
+      async function fetchTextViaAllOriginsGet(sourceUrl) {
+        var proxyUrl = 'https://api.allorigins.win/get?url=' + encodeURIComponent(sourceUrl);
+        var response = await fetch(proxyUrl, { cache: 'no-store' });
+        if (!response.ok) {
+          throw new Error('AllOrigins/get HTTP ' + response.status);
+        }
+
+        var payload = await response.json();
+        var decoded = decodeDataPayload(payload.contents || '');
+        if (!decoded) {
+          throw new Error('AllOrigins/get empty payload');
+        }
+        return decoded;
+      }
+
+      async function fetchTextViaAllOriginsRaw(sourceUrl) {
+        var proxyUrl = 'https://api.allorigins.win/raw?url=' + encodeURIComponent(sourceUrl);
+        var response = await fetch(proxyUrl, { cache: 'no-store' });
+        if (!response.ok) {
+          throw new Error('AllOrigins/raw HTTP ' + response.status);
+        }
+
+        return response.text();
+      }
+
+      async function fetchTextWithFallbacks(sourceUrl) {
+        try {
+          return await fetchTextViaCodetabs(sourceUrl);
+        } catch (codetabsError) {
+          try {
+            return await fetchTextViaAllOriginsGet(sourceUrl);
+          } catch (allOriginsGetError) {
+            return fetchTextViaAllOriginsRaw(sourceUrl);
+          }
+        }
+      }
+
+      async function fetchFredSeries(seriesId) {
+        var sourceUrl = 'https://fred.stlouisfed.org/graph/fredgraph.csv?id=' + encodeURIComponent(seriesId);
+        var csv = await fetchTextWithFallbacks(sourceUrl);
+        var points = parseFredCsv(csv);
+        if (!points.length) {
+          throw new Error('No data points');
+        }
+
+        return points;
+      }
+
+      function findLatestAndPrevious(points) {
+        if (!points.length) return { latest: null, previous: null };
+        var latest = points[points.length - 1];
+        var previous = points.length > 1 ? points[points.length - 2] : null;
+        return { latest: latest, previous: previous };
+      }
+
+      function findCpiYoY(points) {
+        if (!points.length) return null;
+        var latest = points[points.length - 1];
+        var latestDate = new Date(latest.date + 'T00:00:00');
+        var target = new Date(latestDate);
+        target.setFullYear(target.getFullYear() - 1);
+
+        var prior = null;
+        for (var i = points.length - 2; i >= 0; i -= 1) {
+          var pointDate = new Date(points[i].date + 'T00:00:00');
+          if (pointDate <= target) {
+            prior = points[i];
+            break;
+          }
+        }
+
+        if (!prior) return null;
+
+        return {
+          latest: {
+            date: latest.date,
+            value: ((latest.value / prior.value) - 1) * 100
+          },
+          previous: null
+        };
+      }
+
+      async function loadIndicators() {
+        indicatorDefinitions.forEach(createIndicatorCard);
+
+        var nonDerived = indicatorDefinitions.filter(function (def) { return !def.derived; });
+        var results = await Promise.allSettled(nonDerived.map(function (definition) {
+          return fetchFredSeries(definition.id).then(function (points) {
+            return { definition: definition, points: points };
+          });
+        }));
+
+        var loaded = 0;
+        var cpiPoints = null;
+
+        results.forEach(function (result, index) {
+          var definition = nonDerived[index];
+          if (result.status !== 'fulfilled') {
+            setCardError(definition.id, 'Feed unavailable');
+            return;
+          }
+
+          var payload = result.value;
+          if (definition.id === 'CPIAUCSL') {
+            cpiPoints = payload.points;
+          }
+
+          var pair = findLatestAndPrevious(payload.points);
+          if (!pair.latest) {
+            setCardError(definition.id, 'No data available');
+            return;
+          }
+
+          updateCard(definition, pair.latest, pair.previous);
+          loaded += 1;
+        });
+
+        var cpiYoyDefinition = indicatorDefinitions.find(function (def) { return def.id === 'CPI_YOY'; });
+        if (cpiYoyDefinition) {
+          if (cpiPoints) {
+            var yoy = findCpiYoY(cpiPoints);
+            if (yoy && yoy.latest) {
+              updateCard(cpiYoyDefinition, yoy.latest, yoy.previous);
+              loaded += 1;
+            } else {
+              setCardError('CPI_YOY', 'Unable to compute YoY');
+            }
+          } else {
+            setCardError('CPI_YOY', 'Missing CPI source');
+          }
+        }
+
+        indicatorStatus.textContent = loaded + ' / ' + indicatorDefinitions.length + ' indicators updated.';
+      }
+
+      function stripHtml(html) {
+        var parsed = new DOMParser().parseFromString(html || '', 'text/html');
+        return (parsed.body.textContent || '').trim();
+      }
+
+      function classifyNewsItem(link) {
+        if (!link) return 'Update';
+        if (link.indexOf('/mises-wire/') !== -1) return 'Mises Wire';
+        if (link.indexOf('/podcasts/') !== -1) return 'Podcast';
+        return 'Article';
+      }
+
+      function renderFallbackNews() {
+        newsList.innerHTML = [
+          '<li><a href="https://mises.org/mises-wire" target="_blank" rel="noopener">Open Mises Wire</a><span>Live feed unavailable</span></li>',
+          '<li><a href="https://mises.org/library" target="_blank" rel="noopener">Browse Mises Library</a><span>Live feed unavailable</span></li>'
+        ].join('');
+      }
+
+      function parseRssItems(xmlText) {
+        var parsed = new DOMParser().parseFromString(xmlText, 'application/xml');
+        if (parsed.querySelector('parsererror')) {
+          throw new Error('Malformed RSS XML');
+        }
+
+        return Array.from(parsed.querySelectorAll('item')).map(function (item) {
+          function read(tagName) {
+            var node = item.querySelector(tagName);
+            return node ? node.textContent.trim() : '';
+          }
+
+          return {
+            title: read('title'),
+            link: read('link'),
+            pubDate: read('pubDate')
+          };
+        }).filter(function (item) {
+          return item.title && item.link;
+        });
+      }
+
+      function renderNewsItems(items) {
+        newsList.innerHTML = '';
+        items.slice(0, 8).forEach(function (item) {
+          var li = document.createElement('li');
+          var a = document.createElement('a');
+          a.href = item.link;
+          a.target = '_blank';
+          a.rel = 'noopener';
+          a.textContent = stripHtml(item.title || 'Untitled');
+
+          var meta = document.createElement('span');
+          meta.textContent = classifyNewsItem(item.link) + ' | ' + formatDate(item.pubDate);
+
+          li.appendChild(a);
+          li.appendChild(meta);
+          newsList.appendChild(li);
+        });
+      }
+
+      async function loadNewsViaRss2Json(feedUrl) {
+        var rss2jsonUrl = 'https://api.rss2json.com/v1/api.json?rss_url=' + encodeURIComponent(feedUrl);
+        var response = await fetch(rss2jsonUrl, { cache: 'no-store' });
+        if (!response.ok) {
+          throw new Error('HTTP ' + response.status);
+        }
+
+        var payload = await response.json();
+        if (payload.status !== 'ok' || !Array.isArray(payload.items)) {
+          throw new Error('Invalid feed payload');
+        }
+
+        renderNewsItems(payload.items);
+      }
+
+      async function loadNews() {
+        var feedUrl = 'https://mises.org/feed';
+        try {
+          var xmlText = await fetchTextWithFallbacks(feedUrl);
+          var xmlItems = parseRssItems(xmlText);
+          if (!xmlItems.length) {
+            throw new Error('No RSS items');
+          }
+          renderNewsItems(xmlItems);
+          newsStatus.textContent = 'Latest headlines from Mises.';
+        } catch (rssXmlError) {
+          await loadNewsViaRss2Json(feedUrl);
+          newsStatus.textContent = 'Latest headlines from Mises.';
+        }
+      }
+
+      Promise.allSettled([
+        loadIndicators(),
+        loadNews()
+      ]).then(function (results) {
+        if (results[1].status !== 'fulfilled') {
+          newsStatus.textContent = 'News feed unavailable.';
+          renderFallbackNews();
+        }
+
+        refreshText.textContent = 'Updated ' + new Date().toLocaleTimeString([], { hour: 'numeric', minute: '2-digit' });
+      }).catch(function () {
+        refreshText.textContent = 'Update failed';
+      });
+    })();
+  </script>
 </body>
 </html>
-
-
-
-
-
-

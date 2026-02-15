@@ -1,0 +1,1616 @@
+/* ============================================================
+   VIDEO GAMES PAGE — Retro Gaming Skeuomorphism
+   Scoped entirely under .vg-page body class
+   ============================================================ */
+
+/* ----- Custom Properties ----- */
+.vg-page {
+  --vg-void: #08080f;
+  --vg-dark: #0e0e1a;
+  --vg-panel: #1a1a2e;
+  --vg-border: #2a2a44;
+
+  --vg-green: #33ff33;
+  --vg-green-dim: #1a8c1a;
+  --vg-green-glow: rgba(51, 255, 51, 0.3);
+  --vg-amber: #ffb300;
+  --vg-amber-dim: #8c6200;
+  --vg-amber-glow: rgba(255, 179, 0, 0.3);
+  --vg-cyan: #00ffff;
+  --vg-cyan-glow: rgba(0, 255, 255, 0.35);
+  --vg-red: #ff3333;
+  --vg-red-glow: rgba(255, 51, 51, 0.4);
+
+  --vg-plastic-light: #686a70;
+  --vg-plastic-mid: #4d4f55;
+  --vg-plastic-dark: #303239;
+  --vg-wood-light: #6b4226;
+  --vg-wood-mid: #4a2d18;
+  --vg-wood-dark: #2e1a0e;
+
+  --vg-font-pixel: "Press Start 2P", "Silkscreen", monospace;
+  --vg-font-mono: "Share Tech Mono", "Courier New", monospace;
+  --vg-font-pixel-sm: "Silkscreen", "Share Tech Mono", monospace;
+
+  --vg-section-gap: 2.5rem;
+  --vg-card-max-desktop: 560px;
+  --vg-grid-gap-desktop: 1.6rem;
+}
+
+/* ----- Body Override ----- */
+.vg-page {
+  background:
+    radial-gradient(ellipse at 50% 0%, rgba(20, 0, 60, 0.4), transparent 50%),
+    radial-gradient(ellipse at 0% 100%, rgba(0, 40, 60, 0.2), transparent 40%),
+    linear-gradient(180deg, var(--vg-void), #0a0a16 40%, var(--vg-void) 100%);
+}
+
+.vg-page::before,
+.vg-page::after {
+  display: none;
+}
+
+/* ----- Global Style Overrides ----- */
+.vg-page .hero .container {
+  background: none;
+  box-shadow: none;
+  clip-path: none;
+  padding: 0;
+}
+
+.vg-page main:not(.home-rooms) > section .container {
+  background: none;
+  box-shadow: none;
+  clip-path: none;
+  padding: 1.4rem 1.2rem;
+}
+
+.vg-page main:not(.home-rooms) > section .container p:first-of-type::first-letter {
+  float: none;
+  font-size: inherit;
+  line-height: inherit;
+  padding-right: 0;
+  color: inherit;
+  font-family: inherit;
+}
+
+/* Border-radius overrides for skeuomorphic elements */
+.vg-page .vg-tv-knob,
+.vg-page .vg-tv-led,
+.vg-page .vg-console-led,
+.vg-page .vg-arcade-start-btn,
+.vg-page .vg-arcade-joystick,
+.vg-page .vg-dial-year,
+.vg-page .vg-tv-stand,
+.vg-page .vg-console-tv-leg {
+  border-radius: initial !important;
+}
+
+/* ----- Animations ----- */
+@keyframes vg-blink {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0; }
+}
+
+@keyframes vg-ticker-scroll {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+
+@keyframes vg-static {
+  0% { opacity: 1; background-position: 0 0; }
+  25% { background-position: -30px 20px; }
+  50% { background-position: 15px -10px; }
+  75% { background-position: -20px 30px; }
+  100% { opacity: 0; background-position: 10px -20px; }
+}
+
+@keyframes vg-pulse-glow {
+  0%, 100% { box-shadow: 0 0 8px var(--vg-red-glow), 0 0 24px var(--vg-red-glow); }
+  50% { box-shadow: 0 0 14px var(--vg-red-glow), 0 0 40px var(--vg-red-glow), 0 0 60px rgba(255, 51, 51, 0.15); }
+}
+
+/* ----- Reusable Utilities ----- */
+.vg-scanlines {
+  position: relative;
+}
+
+.vg-scanlines::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  z-index: 2;
+  background: repeating-linear-gradient(
+    0deg,
+    rgba(255, 255, 255, 0.04) 0,
+    rgba(255, 255, 255, 0.04) 1px,
+    transparent 1px,
+    transparent 3px
+  );
+}
+
+.vg-blink {
+  animation: vg-blink 1s step-end infinite;
+}
+
+/* ----- Section spacing ----- */
+.vg-page main:not(.home-rooms) > section {
+  padding: var(--vg-section-gap) 0 0;
+}
+
+.vg-page main:not(.home-rooms) {
+  padding-bottom: var(--vg-section-gap);
+}
+
+/* ============================================================
+   1. HERO — Arcade Marquee
+   ============================================================ */
+.vg-hero {
+  position: relative;
+  overflow: hidden;
+  padding: 3rem 0 0;
+  text-align: center;
+}
+
+.vg-hero-grid {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  background:
+    linear-gradient(180deg, transparent 40%, rgba(8, 8, 15, 0.95) 100%),
+    repeating-linear-gradient(
+      90deg,
+      rgba(0, 255, 255, 0.04) 0,
+      rgba(0, 255, 255, 0.04) 1px,
+      transparent 1px,
+      transparent 60px
+    ),
+    repeating-linear-gradient(
+      0deg,
+      rgba(0, 255, 255, 0.04) 0,
+      rgba(0, 255, 255, 0.04) 1px,
+      transparent 1px,
+      transparent 60px
+    );
+  opacity: 0.6;
+}
+
+.vg-hero-inner {
+  position: relative;
+  z-index: 1;
+  padding: 2rem 1.2rem 1.6rem;
+}
+
+.vg-hero-title {
+  font-family: var(--vg-font-pixel);
+  font-size: clamp(1.6rem, 4.5vw, 3.2rem);
+  font-weight: 400;
+  line-height: 1.3;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: var(--vg-cyan);
+  text-shadow:
+    0 0 6px var(--vg-cyan-glow),
+    0 0 20px var(--vg-cyan-glow),
+    0 0 40px rgba(0, 255, 255, 0.15);
+}
+
+.vg-hero-subtitle {
+  margin-top: 1rem;
+  font-family: var(--vg-font-mono);
+  font-size: clamp(0.82rem, 1.6vw, 1.1rem);
+  color: rgba(255, 255, 255, 0.6);
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+.vg-ticker {
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+  margin-top: 1.6rem;
+  padding: 0.5rem 0;
+  background: linear-gradient(90deg, var(--vg-void), var(--vg-dark), var(--vg-void));
+  border-top: 1px solid var(--vg-border);
+  border-bottom: 1px solid var(--vg-border);
+}
+
+.vg-ticker-text {
+  display: inline-block;
+  white-space: nowrap;
+  font-family: var(--vg-font-pixel-sm);
+  font-size: 0.66rem;
+  color: var(--vg-green);
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  text-shadow: 0 0 4px var(--vg-green-glow);
+  animation: vg-ticker-scroll 20s linear infinite;
+}
+
+/* ============================================================
+   2. CURRENTLY PLAYING — Modern (CRT TV)
+   ============================================================ */
+.vg-now-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1.6rem;
+  align-items: start;
+}
+
+.vg-now-column {
+  min-width: 0;
+}
+
+.vg-now-column .vg-tv,
+.vg-now-column .vg-console-unit {
+  max-width: 640px;
+  margin: 0 auto;
+}
+
+.vg-tv {
+  max-width: 640px;
+  margin: 0 auto;
+}
+
+.vg-tv-shell {
+  position: relative;
+  padding: 0.8rem;
+  background: linear-gradient(152deg, var(--vg-plastic-light), var(--vg-plastic-mid) 38%, var(--vg-plastic-dark) 100%);
+  box-shadow:
+    0 14px 28px rgba(0, 0, 0, 0.6),
+    inset 0 0 0 1px rgba(159, 165, 177, 0.15),
+    inset 0 0 0 2px rgba(37, 39, 44, 0.7),
+    inset 0 -14px 18px rgba(0, 0, 0, 0.25);
+}
+
+.vg-tv-badge {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 0.4rem 0.4rem;
+  min-height: 1.2rem;
+}
+
+.vg-tv-brand {
+  font-family: var(--vg-font-mono);
+  font-size: 0.62rem;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  color: #b8bcc6;
+}
+
+.vg-tv-led {
+  width: 8px;
+  height: 8px;
+  border-radius: 50% !important;
+  background: radial-gradient(circle at 40% 35%, #ff6644, #cc2200 60%, #880000);
+  box-shadow: 0 0 6px rgba(255, 50, 20, 0.5);
+}
+
+.vg-tv-led--green {
+  background: radial-gradient(circle at 40% 35%, #66ff44, #22cc00 60%, #008800);
+  box-shadow: 0 0 6px rgba(50, 255, 20, 0.5);
+}
+
+.vg-tv-screen {
+  position: relative;
+  padding: 0.5rem;
+  background: linear-gradient(145deg, rgba(16, 19, 24, 0.98), rgba(3, 4, 7, 0.98));
+  box-shadow:
+    inset 0 0 0 1px rgba(90, 95, 106, 0.2),
+    inset 0 0 0 2px rgba(7, 8, 12, 0.85),
+    inset 0 10px 14px rgba(0, 0, 0, 0.35);
+}
+
+.vg-tv-screen-surface {
+  position: relative;
+  min-height: 260px;
+  padding: 1.4rem 1.2rem;
+  background:
+    radial-gradient(circle at 50% 42%, rgba(180, 130, 40, 0.15), rgba(50, 35, 10, 0.12) 44%, rgba(10, 8, 4, 0.98) 100%),
+    linear-gradient(180deg, rgba(20, 16, 8, 0.94), rgba(8, 6, 3, 0.98));
+  box-shadow:
+    inset 0 0 0 1px rgba(180, 140, 60, 0.15),
+    inset 0 0 28px rgba(0, 0, 0, 0.5);
+  overflow: hidden;
+}
+
+/* Amber scanlines */
+.vg-tv-screen-surface::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  z-index: 2;
+  background:
+    linear-gradient(180deg, rgba(255, 200, 80, 0.08), transparent 24%),
+    repeating-linear-gradient(
+      0deg,
+      rgba(255, 179, 0, 0.07) 0,
+      rgba(255, 179, 0, 0.07) 1px,
+      transparent 1px,
+      transparent 3px
+    ),
+    linear-gradient(90deg, rgba(10, 8, 4, 0.3), transparent 16%, transparent 84%, rgba(10, 8, 4, 0.3));
+}
+
+/* Screen reflection */
+.vg-tv-screen-surface::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  z-index: 3;
+  background:
+    radial-gradient(circle at 22% 14%, rgba(255, 240, 180, 0.12), transparent 28%),
+    linear-gradient(180deg, transparent 72%, rgba(6, 5, 3, 0.4) 100%);
+}
+
+.vg-tv-channel {
+  position: absolute;
+  top: 0.6rem;
+  right: 0.8rem;
+  z-index: 4;
+  font-family: var(--vg-font-pixel-sm);
+  font-size: 0.6rem;
+  color: var(--vg-amber);
+  opacity: 0.5;
+  text-shadow: 0 0 4px var(--vg-amber-glow);
+}
+
+.vg-screen-heading {
+  position: relative;
+  z-index: 4;
+  font-family: var(--vg-font-pixel);
+  font-size: clamp(0.7rem, 1.8vw, 0.9rem);
+  color: var(--vg-amber);
+  text-shadow: 0 0 6px var(--vg-amber-glow), 0 0 14px var(--vg-amber-glow);
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  margin-bottom: 1.2rem;
+}
+
+.vg-now-list {
+  position: relative;
+  z-index: 4;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.vg-now-item {
+  display: grid;
+  grid-template-columns: 2.4rem minmax(0, 1fr) auto;
+  grid-template-areas:
+    "rank title hltb"
+    "rank meta hltb";
+  gap: 0.6rem;
+  align-items: center;
+  padding: 0.4rem 0;
+  border-bottom: 1px solid rgba(255, 179, 0, 0.1);
+  font-family: var(--vg-font-mono);
+  font-size: 0.82rem;
+  color: var(--vg-amber);
+  text-shadow: 0 0 3px var(--vg-amber-glow);
+}
+
+.vg-now-item:last-child {
+  border-bottom: none;
+}
+
+.vg-now-rank {
+  grid-area: rank;
+  font-family: var(--vg-font-pixel-sm);
+  font-size: 0.72rem;
+  opacity: 0.6;
+}
+
+.vg-now-title {
+  grid-area: title;
+  font-weight: 700;
+  min-width: 0;
+}
+
+.vg-now-meta {
+  grid-area: meta;
+  font-size: 0.72rem;
+  opacity: 0.5;
+  text-align: left;
+  white-space: normal;
+  line-height: 1.35;
+}
+
+.vg-now-hltb {
+  grid-area: hltb;
+  font-family: var(--vg-font-pixel-sm);
+  font-size: 0.56rem;
+  color: #ffd689;
+  opacity: 0.82;
+  text-shadow: 0 0 3px rgba(255, 214, 137, 0.25);
+  display: grid;
+  grid-template-columns: repeat(3, minmax(6ch, auto));
+  justify-content: end;
+  gap: 0.45rem;
+  text-align: right;
+  font-variant-numeric: tabular-nums;
+}
+
+.vg-now-hltb > span {
+  display: inline-flex;
+  align-items: baseline;
+  justify-content: flex-end;
+  gap: 0.2rem;
+  min-width: 6ch;
+  white-space: nowrap;
+}
+
+.vg-now-hltb > span:nth-child(3) {
+  min-width: 8ch;
+}
+
+.vg-now-hltb > span em {
+  font-style: normal;
+  opacity: 0.7;
+}
+
+.vg-console-lcd--list {
+  padding: 0.7rem 0.75rem;
+  line-height: 1.45;
+}
+
+.vg-now-list--retro .vg-now-item {
+  color: var(--vg-green);
+  text-shadow: 0 0 3px var(--vg-green-glow);
+  border-bottom: 1px solid rgba(51, 255, 51, 0.12);
+}
+
+.vg-now-list--retro .vg-now-meta {
+  color: rgba(190, 255, 180, 0.72);
+}
+
+.vg-now-list--retro .vg-now-hltb {
+  color: rgba(180, 255, 170, 0.92);
+  text-shadow: 0 0 3px rgba(120, 240, 120, 0.25);
+  font-size: 0.5rem;
+  grid-template-columns: repeat(3, minmax(5ch, auto));
+  gap: 0.32rem;
+}
+
+.vg-now-list--retro .vg-now-hltb > span {
+  min-width: 5ch;
+}
+
+.vg-now-list--retro .vg-now-hltb > span:nth-child(3) {
+  min-width: 6.6ch;
+}
+
+.vg-tv-controls {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 0.6rem;
+  padding: 0.5rem 0.4rem 0.2rem;
+}
+
+.vg-tv-knob {
+  width: 24px;
+  height: 24px;
+  border-radius: 50% !important;
+  background:
+    radial-gradient(circle at 40% 35%, rgba(110, 115, 125, 0.9), rgba(50, 53, 60, 0.95) 70%);
+  box-shadow:
+    inset 0 0 0 1px rgba(0, 0, 0, 0.4),
+    inset 0 -2px 3px rgba(0, 0, 0, 0.3),
+    0 2px 4px rgba(0, 0, 0, 0.4);
+}
+
+.vg-tv-stand {
+  width: 60%;
+  height: 12px;
+  margin: 0 auto;
+  background: linear-gradient(180deg, var(--vg-plastic-dark), #1a1c22);
+  border-radius: 0 0 4px 4px !important;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+}
+
+/* ============================================================
+   3. CURRENTLY PLAYING — Retro (Console + Cartridge)
+   ============================================================ */
+.vg-console-unit {
+  max-width: 480px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.vg-cartridge {
+  position: relative;
+  z-index: 1;
+  width: 200px;
+  margin-bottom: -20px;
+}
+
+.vg-cartridge-label {
+  background: linear-gradient(180deg, #c8c4bf, #a8a4a0);
+  padding: 0.5rem;
+  box-shadow:
+    inset 0 0 0 1px rgba(0, 0, 0, 0.15),
+    0 4px 12px rgba(0, 0, 0, 0.4);
+}
+
+.vg-cartridge-label img {
+  display: block;
+  width: 100%;
+  height: auto;
+  image-rendering: auto;
+}
+
+.vg-cartridge-grip {
+  height: 16px;
+  background:
+    repeating-linear-gradient(
+      90deg,
+      rgba(0, 0, 0, 0.1) 0,
+      rgba(0, 0, 0, 0.1) 2px,
+      transparent 2px,
+      transparent 6px
+    ),
+    linear-gradient(180deg, #b0aca8, #8a8682);
+  box-shadow: inset 0 -2px 3px rgba(0, 0, 0, 0.2);
+}
+
+.vg-console {
+  position: relative;
+  z-index: 2;
+  width: 100%;
+  background:
+    linear-gradient(180deg, #d4d0cc, #c0bcb8 30%, #b0aca8 100%);
+  padding: 1.6rem 1.2rem 1rem;
+  box-shadow:
+    inset 0 0 0 1px rgba(0, 0, 0, 0.1),
+    inset 0 2px 0 rgba(255, 255, 255, 0.3),
+    0 12px 24px rgba(0, 0, 0, 0.5);
+}
+
+.vg-console-slot {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 210px;
+  height: 8px;
+  background: linear-gradient(180deg, #2a2826, #1a1816);
+  box-shadow:
+    inset 0 2px 4px rgba(0, 0, 0, 0.6),
+    0 1px 0 rgba(255, 255, 255, 0.15);
+}
+
+.vg-console-face {
+  padding-top: 0.8rem;
+}
+
+.vg-console-lcd-heading {
+  font-family: var(--vg-font-pixel);
+  font-size: 0.56rem;
+  color: #4a4644;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  margin-bottom: 0.6rem;
+  text-align: center;
+}
+
+.vg-console-lcd {
+  background:
+    radial-gradient(circle at 50% 42%, rgba(80, 160, 70, 0.15), rgba(20, 40, 18, 0.9) 100%),
+    linear-gradient(180deg, #0a1a08, #061008);
+  padding: 0.7rem 0.8rem;
+  box-shadow:
+    inset 0 0 0 1px rgba(80, 140, 70, 0.2),
+    inset 0 0 12px rgba(0, 0, 0, 0.5);
+  font-family: var(--vg-font-pixel-sm);
+  font-size: 0.68rem;
+  color: var(--vg-green);
+  text-shadow: 0 0 4px var(--vg-green-glow);
+  text-align: center;
+  line-height: 1.6;
+}
+
+.vg-lcd-title {
+  display: block;
+  font-size: 0.74rem;
+  margin-bottom: 0.2rem;
+}
+
+.vg-lcd-platform,
+.vg-lcd-status {
+  display: inline-block;
+  font-size: 0.56rem;
+  opacity: 0.6;
+  margin: 0 0.3rem;
+}
+
+.vg-console-controls {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+  margin-top: 0.8rem;
+  padding: 0 0.2rem;
+}
+
+.vg-console-led {
+  width: 6px;
+  height: 6px;
+  border-radius: 50% !important;
+  background: radial-gradient(circle at 40% 35%, #66ff44, #22cc00 60%, #008800);
+  box-shadow: 0 0 6px rgba(50, 255, 20, 0.5);
+}
+
+.vg-console-power-label,
+.vg-console-reset-label {
+  font-family: var(--vg-font-mono);
+  font-size: 0.48rem;
+  color: #6a6662;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+.vg-console-eject {
+  flex: 1;
+  height: 6px;
+  background: linear-gradient(180deg, #9a9692, #7a7672);
+  box-shadow:
+    inset 0 1px 0 rgba(255, 255, 255, 0.2),
+    inset 0 -1px 2px rgba(0, 0, 0, 0.2);
+}
+
+.vg-console-ports {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  margin-top: 0.8rem;
+}
+
+.vg-console-ports span {
+  width: 50px;
+  height: 14px;
+  background: linear-gradient(180deg, #2a2826, #1a1816);
+  box-shadow:
+    inset 0 2px 4px rgba(0, 0, 0, 0.5),
+    0 1px 0 rgba(255, 255, 255, 0.1);
+}
+
+/* ============================================================
+   4. NINTENDO PIPELINE CLUB (Arcade Cabinet Panel)
+   ============================================================ */
+.vg-arcade-cabinet {
+  max-width: 520px;
+  margin: 0 auto;
+  background:
+    repeating-linear-gradient(
+      90deg,
+      rgba(80, 50, 25, 0.06) 0,
+      rgba(80, 50, 25, 0.06) 1px,
+      transparent 1px,
+      transparent 8px
+    ),
+    linear-gradient(180deg, #1a1a2e, #12121e);
+  box-shadow:
+    0 16px 32px rgba(0, 0, 0, 0.6),
+    inset 0 0 0 1px rgba(255, 255, 255, 0.05);
+  padding: 0;
+  overflow: hidden;
+}
+
+.vg-arcade-marquee {
+  padding: 1rem;
+  text-align: center;
+  background:
+    linear-gradient(180deg, rgba(255, 200, 50, 0.08), transparent 60%),
+    linear-gradient(180deg, var(--vg-panel), var(--vg-dark));
+  border-bottom: 2px solid var(--vg-border);
+}
+
+.vg-pipeline-logo {
+  max-width: 220px;
+  height: auto;
+  filter: brightness(1.1);
+}
+
+.vg-arcade-screen {
+  padding: 0.8rem;
+}
+
+.vg-arcade-screen-surface {
+  position: relative;
+  min-height: 220px;
+  padding: 1.2rem 1rem;
+  background:
+    radial-gradient(circle at 50% 42%, rgba(110, 190, 92, 0.15), rgba(32, 55, 28, 0.15) 44%, rgba(8, 13, 9, 0.98) 100%),
+    linear-gradient(180deg, rgba(18, 35, 15, 0.94), rgba(7, 13, 9, 0.98));
+  box-shadow:
+    inset 0 0 0 1px rgba(125, 160, 111, 0.15),
+    inset 0 0 28px rgba(0, 0, 0, 0.5);
+  overflow: hidden;
+}
+
+/* Green scanlines for arcade screen */
+.vg-arcade-screen-surface::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  z-index: 2;
+  background:
+    repeating-linear-gradient(
+      0deg,
+      rgba(152, 230, 138, 0.08) 0,
+      rgba(152, 230, 138, 0.08) 1px,
+      transparent 1px,
+      transparent 3px
+    );
+}
+
+.vg-arcade-title {
+  position: relative;
+  z-index: 3;
+  font-family: var(--vg-font-pixel);
+  font-size: clamp(0.6rem, 1.6vw, 0.78rem);
+  color: var(--vg-green);
+  text-shadow: 0 0 6px var(--vg-green-glow);
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  text-align: center;
+  margin-bottom: 0.6rem;
+}
+
+.vg-arcade-desc {
+  position: relative;
+  z-index: 3;
+  font-family: var(--vg-font-mono);
+  font-size: 0.72rem;
+  color: rgba(178, 247, 162, 0.6);
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.vg-arcade-covers {
+  position: relative;
+  z-index: 3;
+  width: 160px;
+  height: 160px;
+  margin: 0 auto;
+}
+
+.vg-arcade-covers .vg-cover {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  opacity: 0;
+  transition: opacity 0.8s ease;
+}
+
+.vg-arcade-covers .vg-cover.is-active {
+  opacity: 1;
+}
+
+.vg-arcade-controls {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1.4rem;
+  padding: 1rem 1rem 0.6rem;
+  background: linear-gradient(180deg, var(--vg-dark), var(--vg-panel));
+  border-top: 1px solid var(--vg-border);
+}
+
+.vg-arcade-joystick {
+  width: 32px;
+  height: 32px;
+  border-radius: 50% !important;
+  background:
+    radial-gradient(circle at 40% 35%, #3a3a4e, #1a1a2e 70%);
+  box-shadow:
+    inset 0 0 0 2px rgba(255, 255, 255, 0.08),
+    0 4px 8px rgba(0, 0, 0, 0.5);
+}
+
+.vg-arcade-start-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 120px;
+  height: 42px;
+  border-radius: 21px !important;
+  border: none;
+  background:
+    radial-gradient(circle at 45% 40%, #ff5544, #cc2200 60%, #880000);
+  color: #fff;
+  font-family: var(--vg-font-pixel);
+  font-size: 0.5rem;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  text-decoration: none;
+  cursor: pointer;
+  box-shadow:
+    inset 0 0 0 2px rgba(255, 100, 80, 0.3),
+    0 0 8px var(--vg-red-glow),
+    0 0 24px var(--vg-red-glow);
+  animation: vg-pulse-glow 2s ease-in-out infinite;
+  transition: transform 0.15s ease;
+}
+
+.vg-arcade-start-btn:hover {
+  transform: scale(1.05);
+  color: #fff;
+}
+
+.vg-arcade-coin {
+  padding: 0.5rem 1rem 0.8rem;
+  text-align: center;
+  font-family: var(--vg-font-pixel-sm);
+  font-size: 0.52rem;
+  color: rgba(255, 255, 255, 0.2);
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+/* ============================================================
+   4.5 FEATURE ROW (Pipeline + Top 10)
+   ============================================================ */
+.vg-feature-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  gap: var(--vg-section-gap);
+}
+
+.vg-feature-col {
+  min-width: 0;
+}
+
+.vg-feature-col .vg-arcade-cabinet,
+.vg-feature-col .vg-console-tv {
+  margin: 0 auto;
+}
+
+/* ============================================================
+   5. TOP 10 PER YEAR (Console TV + Channel Dial)
+   ============================================================ */
+.vg-console-tv {
+  max-width: 820px;
+  margin: 0 auto;
+}
+
+.vg-console-tv-frame {
+  display: grid;
+  grid-template-columns: 1fr 200px;
+  background:
+    repeating-linear-gradient(
+      2deg,
+      rgba(107, 66, 38, 0.06) 0,
+      rgba(107, 66, 38, 0.06) 1px,
+      transparent 1px,
+      transparent 4px
+    ),
+    repeating-linear-gradient(
+      90deg,
+      rgba(80, 50, 30, 0.04) 0,
+      rgba(80, 50, 30, 0.04) 1px,
+      transparent 1px,
+      transparent 6px
+    ),
+    linear-gradient(170deg, #5a3820, #3e2612 50%, #2e1a0e 100%);
+  box-shadow:
+    0 16px 32px rgba(0, 0, 0, 0.6),
+    inset 0 0 0 1px rgba(120, 80, 40, 0.2),
+    inset 0 1px 0 rgba(200, 150, 80, 0.15);
+  padding: 1.2rem;
+}
+
+.vg-console-tv-screen-area {
+  padding: 0.5rem;
+  background: linear-gradient(145deg, rgba(16, 19, 24, 0.98), rgba(3, 4, 7, 0.98));
+  box-shadow:
+    inset 0 0 0 1px rgba(90, 95, 106, 0.18),
+    inset 0 0 0 2px rgba(7, 8, 12, 0.8);
+}
+
+.vg-console-tv-screen {
+  position: relative;
+  min-height: 380px;
+  padding: 1.4rem 1.2rem;
+  background:
+    radial-gradient(circle at 50% 42%, rgba(110, 190, 92, 0.15), rgba(32, 55, 28, 0.12) 44%, rgba(8, 13, 9, 0.98) 100%),
+    linear-gradient(180deg, rgba(18, 35, 15, 0.94), rgba(7, 13, 9, 0.98));
+  box-shadow:
+    inset 0 0 0 1px rgba(125, 160, 111, 0.15),
+    inset 0 0 28px rgba(0, 0, 0, 0.5);
+  overflow: hidden;
+}
+
+/* Green scanlines */
+.vg-console-tv-screen::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  z-index: 2;
+  background:
+    linear-gradient(180deg, rgba(214, 255, 194, 0.06), transparent 24%),
+    repeating-linear-gradient(
+      0deg,
+      rgba(152, 230, 138, 0.08) 0,
+      rgba(152, 230, 138, 0.08) 1px,
+      transparent 1px,
+      transparent 3px
+    );
+}
+
+/* Screen reflection */
+.vg-console-tv-screen::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  z-index: 3;
+  background:
+    radial-gradient(circle at 20% 12%, rgba(244, 255, 220, 0.1), transparent 28%);
+}
+
+.vg-top10-heading {
+  position: relative;
+  z-index: 4;
+  font-family: var(--vg-font-pixel);
+  font-size: clamp(0.8rem, 2vw, 1.1rem);
+  color: var(--vg-green);
+  text-shadow: 0 0 6px var(--vg-green-glow), 0 0 14px var(--vg-green-glow);
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+/* Static overlay */
+.vg-top10-static {
+  display: none;
+  position: absolute;
+  inset: 0;
+  z-index: 10;
+  pointer-events: none;
+  background:
+    repeating-linear-gradient(
+      0deg,
+      rgba(255, 255, 255, 0.05) 0,
+      rgba(255, 255, 255, 0.05) 1px,
+      transparent 1px,
+      transparent 2px
+    ),
+    repeating-linear-gradient(
+      90deg,
+      rgba(255, 255, 255, 0.03) 0,
+      rgba(255, 255, 255, 0.03) 2px,
+      transparent 2px,
+      transparent 4px
+    );
+}
+
+.vg-top10-static.is-active {
+  display: block;
+  animation: vg-static 0.2s steps(3) forwards;
+}
+
+/* Tab panels */
+.vg-top10-panel {
+  position: relative;
+  z-index: 4;
+}
+
+.vg-top10-panel[hidden] {
+  display: none;
+}
+
+.vg-top10-year {
+  font-family: var(--vg-font-pixel);
+  font-size: clamp(0.6rem, 1.4vw, 0.82rem);
+  color: var(--vg-green);
+  text-shadow: 0 0 4px var(--vg-green-glow);
+  letter-spacing: 2px;
+  text-align: center;
+  margin-bottom: 0.8rem;
+  opacity: 0.7;
+}
+
+.vg-top10-list {
+  --vg-top10-row-min-height: 1.5rem;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  counter-reset: top10rank;
+  min-height: calc(var(--vg-top10-row-min-height) * 10);
+}
+
+.vg-top10-list li {
+  counter-increment: top10rank;
+  display: flex;
+  align-items: baseline;
+  gap: 0.6rem;
+  min-height: var(--vg-top10-row-min-height);
+  padding: 0.3rem 0;
+  border-bottom: 1px solid rgba(51, 255, 51, 0.06);
+  font-family: var(--vg-font-mono);
+  font-size: 0.78rem;
+  color: var(--vg-green);
+  text-shadow: 0 0 3px var(--vg-green-glow);
+}
+
+.vg-top10-list li:last-child {
+  border-bottom: none;
+}
+
+.vg-rank {
+  font-family: var(--vg-font-pixel-sm);
+  font-size: 0.62rem;
+  min-width: 2rem;
+  opacity: 0.5;
+}
+
+.vg-game-name {
+  flex: 1;
+}
+
+/* Controls panel (right side) */
+.vg-console-tv-controls {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  padding: 0.8rem 0.4rem;
+}
+
+.vg-speaker-grille {
+  width: 100%;
+  height: 80px;
+  background:
+    repeating-linear-gradient(
+      0deg,
+      rgba(160, 120, 70, 0.3) 0,
+      rgba(160, 120, 70, 0.3) 2px,
+      rgba(60, 38, 22, 0.6) 2px,
+      rgba(60, 38, 22, 0.6) 6px
+    );
+  box-shadow: inset 0 0 8px rgba(0, 0, 0, 0.4);
+}
+
+.vg-channel-dial {
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+  width: 100%;
+  max-height: 280px;
+  overflow-y: auto;
+  padding: 0.4rem;
+  scrollbar-width: thin;
+  scrollbar-color: rgba(160, 120, 70, 0.4) transparent;
+}
+
+.vg-dial-year {
+  display: block;
+  width: 100%;
+  padding: 0.32rem 0.4rem;
+  border: 1px solid rgba(160, 120, 70, 0.2);
+  border-radius: 2px !important;
+  background: linear-gradient(180deg, rgba(80, 50, 30, 0.4), rgba(50, 30, 18, 0.6));
+  color: rgba(220, 180, 120, 0.6);
+  font-family: var(--vg-font-pixel-sm);
+  font-size: 0.52rem;
+  letter-spacing: 1px;
+  text-align: center;
+  cursor: pointer;
+  transition: all 0.15s ease;
+}
+
+.vg-dial-year:hover {
+  background: linear-gradient(180deg, rgba(100, 65, 35, 0.5), rgba(70, 42, 24, 0.7));
+  color: rgba(220, 180, 120, 0.9);
+  border-color: rgba(160, 120, 70, 0.4);
+}
+
+.vg-dial-year.is-active {
+  background: linear-gradient(180deg, rgba(180, 130, 60, 0.5), rgba(120, 80, 35, 0.6));
+  color: #e8c87a;
+  border-color: rgba(200, 150, 70, 0.6);
+  box-shadow: 0 0 6px rgba(200, 150, 70, 0.2);
+}
+
+.vg-console-tv-legs {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 2rem;
+}
+
+.vg-console-tv-leg {
+  display: inline-block;
+}
+
+.vg-console-tv-legs span {
+  display: block;
+  width: 16px;
+  height: 28px;
+  background: linear-gradient(180deg, var(--vg-wood-mid), var(--vg-wood-dark));
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.4);
+}
+
+/* ============================================================
+   6. HALL OF CARTRIDGES (Gallery)
+   ============================================================ */
+.vg-shelf-heading {
+  font-family: var(--vg-font-pixel);
+  font-size: clamp(0.8rem, 2vw, 1.1rem);
+  color: var(--vg-cyan);
+  text-shadow: 0 0 6px var(--vg-cyan-glow);
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  text-align: center;
+  margin-bottom: 1.4rem;
+}
+
+.vg-shelf {
+  max-width: 780px;
+  margin: 0 auto;
+}
+
+.vg-shelf-row {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 0.8rem;
+  padding: 0 0.4rem 0.6rem;
+}
+
+.vg-shelf-plank {
+  height: 14px;
+  background:
+    repeating-linear-gradient(
+      90deg,
+      rgba(107, 66, 38, 0.08) 0,
+      rgba(107, 66, 38, 0.08) 1px,
+      transparent 1px,
+      transparent 4px
+    ),
+    linear-gradient(180deg, #5a3820, #3e2612);
+  box-shadow:
+    0 4px 8px rgba(0, 0, 0, 0.4),
+    inset 0 1px 0 rgba(200, 150, 80, 0.15),
+    inset 0 -2px 4px rgba(0, 0, 0, 0.3);
+  margin-bottom: 0.6rem;
+}
+
+.vg-cart {
+  position: relative;
+  cursor: default;
+  transition: transform 0.2s ease;
+}
+
+.vg-cart:hover {
+  transform: translateY(-8px);
+}
+
+.vg-cart-grip {
+  height: 10px;
+  background:
+    repeating-linear-gradient(
+      90deg,
+      rgba(0, 0, 0, 0.15) 0,
+      rgba(0, 0, 0, 0.15) 2px,
+      transparent 2px,
+      transparent 5px
+    ),
+    linear-gradient(180deg, #908c88, #7a7672);
+  box-shadow: inset 0 -1px 2px rgba(0, 0, 0, 0.2);
+}
+
+.vg-cart-label {
+  padding: 0.5rem 0.35rem;
+  min-height: 80px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background:
+    linear-gradient(180deg, #c8c4bf, #b0aca8);
+  box-shadow:
+    inset 0 0 0 1px rgba(0, 0, 0, 0.1),
+    0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.vg-cart-title {
+  display: block;
+  font-family: var(--vg-font-pixel-sm);
+  font-size: 0.44rem;
+  color: #2a2826;
+  line-height: 1.4;
+  letter-spacing: 0.3px;
+  word-break: break-word;
+}
+
+.vg-cart-platform {
+  display: block;
+  margin-top: 0.3rem;
+  font-family: var(--vg-font-mono);
+  font-size: 0.4rem;
+  color: #6a6662;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+.vg-cart-pins {
+  height: 6px;
+  background:
+    repeating-linear-gradient(
+      90deg,
+      rgba(200, 170, 80, 0.6) 0,
+      rgba(200, 170, 80, 0.6) 2px,
+      transparent 2px,
+      transparent 4px
+    ),
+    linear-gradient(180deg, #3a3836, #2a2826);
+}
+
+.vg-cart-tooltip {
+  position: absolute;
+  bottom: -2.4rem;
+  left: 50%;
+  transform: translateX(-50%);
+  white-space: nowrap;
+  padding: 0.3rem 0.6rem;
+  background: var(--vg-panel);
+  border: 1px solid var(--vg-border);
+  color: var(--vg-cyan);
+  font-family: var(--vg-font-mono);
+  font-size: 0.58rem;
+  letter-spacing: 0.5px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+  z-index: 10;
+  pointer-events: none;
+}
+
+/* ----- Focus Styles ----- */
+.vg-page .vg-cart:focus-visible {
+  outline: 2px solid var(--vg-cyan);
+  outline-offset: 2px;
+  transform: translateY(-8px);
+}
+
+.vg-page .vg-dial-year:focus-visible {
+  outline: 2px solid var(--vg-amber);
+  outline-offset: 1px;
+}
+
+.vg-page .vg-arcade-start-btn:focus-visible {
+  outline: 2px solid #fff;
+  outline-offset: 3px;
+}
+
+/* ============================================================
+   7. FOOTER override
+   ============================================================ */
+.vg-page footer {
+  background: none;
+  border-top: 1px solid var(--vg-border);
+}
+
+.vg-page footer .container {
+  color: rgba(255, 255, 255, 0.3);
+}
+
+@media (min-width: 1081px) {
+  .vg-now-grid,
+  .vg-feature-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: var(--vg-grid-gap-desktop);
+    align-items: stretch;
+  }
+
+  .vg-now-column,
+  .vg-feature-col {
+    display: flex;
+  }
+
+  .vg-now-column .vg-tv,
+  .vg-now-column .vg-console-unit,
+  .vg-feature-col--pipeline .vg-arcade-cabinet,
+  .vg-feature-col--top10 .vg-console-tv {
+    width: 100%;
+    max-width: var(--vg-card-max-desktop);
+    margin: 0 auto;
+  }
+
+  .vg-feature-col--pipeline .vg-arcade-screen-surface {
+    min-height: 220px;
+  }
+
+  .vg-feature-col--pipeline .vg-arcade-covers {
+    width: 160px;
+    height: 160px;
+  }
+
+  .vg-feature-col--top10 .vg-console-tv-frame {
+    grid-template-columns: 1fr 160px;
+    padding: 0.95rem;
+  }
+
+  .vg-feature-col--top10 .vg-console-tv-screen {
+    min-height: 340px;
+    padding: 1.2rem 1rem;
+  }
+
+  .vg-feature-col--top10 .vg-channel-dial {
+    max-height: 240px;
+  }
+
+  .vg-feature-col--top10 .vg-top10-list li {
+    font-size: 0.72rem;
+  }
+
+  .vg-page {
+    --vg-cartridge-lift: 4.5rem;
+    --vg-cartridge-protrusion: 4rem;
+    --vg-now-row-shift: 1rem;
+  }
+
+  .vg-now-grid {
+    align-items: stretch;
+    margin-top: calc(var(--vg-cartridge-lift) + var(--vg-now-row-shift));
+  }
+
+  .vg-tv,
+  .vg-console-unit {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .vg-tv-shell,
+  .vg-console {
+    flex: 1;
+  }
+
+  .vg-console-unit {
+    position: relative;
+    justify-content: flex-start;
+  }
+
+  .vg-cartridge {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-top: calc(-1 * (var(--vg-cartridge-lift) + var(--vg-cartridge-protrusion)));
+    margin-bottom: 0;
+  }
+}
+
+/* ============================================================
+   RESPONSIVE
+   ============================================================ */
+@media (max-width: 1080px) {
+  .vg-now-grid {
+    grid-template-columns: 1fr;
+    gap: 1.2rem;
+  }
+
+  .vg-console-tv-frame {
+    grid-template-columns: 1fr;
+  }
+
+  .vg-console-tv-controls {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 1rem;
+  }
+
+  .vg-speaker-grille {
+    display: none;
+  }
+
+  .vg-channel-dial {
+    flex-direction: row;
+    flex-wrap: wrap;
+    max-height: none;
+    overflow-y: visible;
+    justify-content: center;
+    gap: 0.3rem;
+  }
+
+  .vg-dial-year {
+    width: auto;
+    padding: 0.3rem 0.5rem;
+  }
+}
+
+@media (max-width: 760px) {
+  .vg-now-column .vg-tv,
+  .vg-now-column .vg-console-unit {
+    max-width: 100%;
+  }
+
+  .vg-hero-inner {
+    padding: 1.4rem 1rem 1.2rem;
+  }
+
+  .vg-ticker-text {
+    font-size: 0.52rem;
+  }
+
+  .vg-tv {
+    max-width: 100%;
+  }
+
+  .vg-tv-screen-surface {
+    min-height: 200px;
+    padding: 1rem 0.8rem;
+  }
+
+  .vg-now-item {
+    grid-template-columns: 2rem minmax(0, 1fr) auto;
+    grid-template-areas:
+      "rank title hltb"
+      "rank meta hltb";
+    font-size: 0.74rem;
+    gap: 0.4rem;
+  }
+
+  .vg-now-meta {
+    text-align: left;
+    white-space: normal;
+    line-height: 1.35;
+  }
+
+  .vg-now-hltb {
+    font-size: 0.5rem;
+    grid-template-columns: repeat(3, minmax(5.2ch, auto));
+    gap: 0.3rem;
+    align-self: center;
+  }
+
+  .vg-now-hltb > span {
+    min-width: 5.2ch;
+  }
+
+  .vg-now-hltb > span:nth-child(3) {
+    min-width: 7ch;
+  }
+
+  .vg-console-unit {
+    max-width: 100%;
+  }
+
+  .vg-cartridge {
+    width: 160px;
+  }
+
+  .vg-arcade-cabinet {
+    max-width: 100%;
+  }
+
+  .vg-console-tv {
+    max-width: 100%;
+  }
+
+  .vg-console-tv-screen {
+    min-height: 300px;
+  }
+
+  .vg-top10-list li {
+    font-size: 0.7rem;
+  }
+
+  .vg-shelf-row {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .vg-cart-tooltip {
+    white-space: normal;
+    max-width: 180px;
+    text-align: center;
+  }
+}
+
+@media (max-width: 420px) {
+  .vg-hero-title {
+    font-size: clamp(1.1rem, 6vw, 1.6rem);
+  }
+
+  .vg-hero-subtitle {
+    font-size: 0.68rem;
+  }
+
+  .vg-ticker {
+    display: none;
+  }
+
+  .vg-tv-knob {
+    width: 18px;
+    height: 18px;
+  }
+
+  .vg-screen-heading {
+    font-size: 0.58rem;
+  }
+
+  .vg-now-item {
+    grid-template-columns: 1.8rem minmax(0, 1fr) auto;
+    grid-template-areas: "rank title hltb";
+    font-size: 0.68rem;
+    gap: 0.35rem;
+  }
+
+  .vg-now-meta {
+    display: none;
+  }
+
+  .vg-now-hltb {
+    font-size: 0.5rem;
+    grid-template-columns: repeat(3, minmax(3.8ch, auto));
+    gap: 0.24rem;
+  }
+
+  .vg-now-hltb > span {
+    min-width: 3.8ch;
+    gap: 0;
+  }
+
+  .vg-now-hltb > span:nth-child(3) {
+    min-width: 4.2ch;
+  }
+
+  .vg-now-hltb > span em {
+    display: none;
+  }
+
+  .vg-cartridge {
+    width: 130px;
+  }
+
+  .vg-console-ports {
+    display: none;
+  }
+
+  .vg-arcade-joystick {
+    display: none;
+  }
+
+  .vg-console-tv-screen {
+    min-height: 260px;
+    padding: 1rem 0.8rem;
+  }
+
+  .vg-top10-list li {
+    font-size: 0.64rem;
+  }
+
+  .vg-channel-dial {
+    gap: 0.2rem;
+  }
+
+  .vg-dial-year {
+    font-size: 0.44rem;
+    padding: 0.25rem 0.35rem;
+  }
+
+  .vg-shelf-row {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .vg-cart-label {
+    min-height: 60px;
+    padding: 0.35rem 0.25rem;
+  }
+
+  .vg-cart-title {
+    font-size: 0.38rem;
+  }
+}

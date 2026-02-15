@@ -1,0 +1,696 @@
+/* ============================================================
+   SELF-HOSTING PAGE — Server Rack / Ops Center Skeuomorphism
+   Scoped entirely under .sh-page body class
+   ============================================================ */
+
+/* ----- Custom Properties ----- */
+.sh-page {
+  --sh-void: #0c1117;
+  --sh-dark: #161b22;
+  --sh-panel: #1c2128;
+  --sh-border: #30363d;
+  --sh-text: #c9d1d9;
+  --sh-text-dim: #8b949e;
+  --sh-green: #3fb950;
+  --sh-green-glow: rgba(63, 185, 80, 0.35);
+  --sh-amber: #d29922;
+  --sh-amber-glow: rgba(210, 153, 34, 0.35);
+  --sh-red: #f85149;
+  --sh-blue: #58a6ff;
+  --sh-blue-glow: rgba(88, 166, 255, 0.2);
+  --sh-metal-light: #8a8f98;
+  --sh-metal-mid: #4a4f58;
+  --sh-metal-dark: #2a2f38;
+  --sh-font-mono: "JetBrains Mono", "Courier New", monospace;
+  --sh-font-sans: "Inter", "system-ui", sans-serif;
+  --sh-section-gap: 2rem;
+}
+
+/* ----- Body Override ----- */
+.sh-page {
+  background:
+    radial-gradient(ellipse at 50% 0%, rgba(20, 30, 50, 0.5), transparent 55%),
+    radial-gradient(ellipse at 100% 100%, rgba(10, 20, 40, 0.3), transparent 45%),
+    linear-gradient(180deg, var(--sh-void), #0d1218 40%, var(--sh-void) 100%);
+}
+
+.sh-page::before,
+.sh-page::after {
+  display: none;
+}
+
+/* ----- Global Style Overrides ----- */
+.sh-page .hero .container {
+  background: none;
+  box-shadow: none;
+  clip-path: none;
+  padding: 0;
+}
+
+.sh-page main:not(.home-rooms) > section .container {
+  background: none;
+  box-shadow: none;
+  clip-path: none;
+  padding: 1.4rem 1.2rem;
+}
+
+.sh-page main:not(.home-rooms) > section .container p:first-of-type::first-letter {
+  float: none;
+  font-size: inherit;
+  line-height: inherit;
+  padding-right: 0;
+  color: inherit;
+  font-family: inherit;
+}
+
+/* Border-radius overrides (global reset sets * to 0) */
+.sh-page .sh-led,
+.sh-page .sh-term-dot {
+  border-radius: 50% !important;
+}
+
+.sh-page .sh-gauge-fill {
+  border-radius: 0 !important;
+}
+
+.sh-page .sh-rack-panel::before,
+.sh-page .sh-rack-panel::after {
+  border-radius: 50% !important;
+}
+
+/* ----- Animations ----- */
+@keyframes sh-blink {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0; }
+}
+
+@keyframes sh-pulse-led {
+  0%, 100% { box-shadow: 0 0 4px var(--sh-green-glow); }
+  50% { box-shadow: 0 0 8px var(--sh-green-glow), 0 0 14px var(--sh-green-glow); }
+}
+
+.sh-blink {
+  animation: sh-blink 1s step-end infinite;
+}
+
+/* ----- Section spacing ----- */
+.sh-page main:not(.home-rooms) > section {
+  padding: var(--sh-section-gap) 0 0;
+}
+
+.sh-page main:not(.home-rooms) {
+  padding-bottom: var(--sh-section-gap);
+}
+
+/* ============================================================
+   1. HERO — Terminal Prompt
+   ============================================================ */
+.sh-hero {
+  position: relative;
+  padding: 3rem 0 0;
+}
+
+.sh-hero-inner {
+  position: relative;
+  padding: 2.5rem 1.2rem 2rem;
+}
+
+.sh-hero-prompt {
+  font-family: var(--sh-font-mono);
+  font-size: clamp(0.82rem, 2.2vw, 1.2rem);
+  font-weight: 400;
+  line-height: 1.5;
+  color: var(--sh-text);
+  letter-spacing: 0.2px;
+}
+
+.sh-hero-prompt .sh-user {
+  color: var(--sh-green);
+}
+
+.sh-hero-prompt .sh-host {
+  color: var(--sh-blue);
+}
+
+.sh-hero-prompt .sh-path {
+  color: var(--sh-amber);
+}
+
+.sh-hero-prompt .sh-cmd {
+  color: var(--sh-text);
+}
+
+.sh-hero-output {
+  margin-top: 0.4rem;
+  font-family: var(--sh-font-mono);
+  font-size: clamp(0.72rem, 1.6vw, 0.92rem);
+  color: var(--sh-text-dim);
+  letter-spacing: 0.2px;
+  line-height: 1.5;
+}
+
+/* ============================================================
+   2. HARDWARE — Server Rack Panel
+   ============================================================ */
+.sh-hardware-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.6rem;
+  align-items: stretch;
+}
+
+.sh-rack-panel {
+  position: relative;
+  padding: 1.2rem;
+  background:
+    repeating-linear-gradient(
+      0deg,
+      rgba(138, 143, 152, 0.03) 0,
+      rgba(138, 143, 152, 0.03) 1px,
+      transparent 1px,
+      transparent 3px
+    ),
+    linear-gradient(180deg, var(--sh-metal-mid), var(--sh-metal-dark));
+  box-shadow:
+    0 8px 24px rgba(0, 0, 0, 0.5),
+    inset 0 1px 0 rgba(255, 255, 255, 0.08),
+    inset 0 -1px 0 rgba(0, 0, 0, 0.3);
+}
+
+/* Rack screw holes */
+.sh-rack-panel::before,
+.sh-rack-panel::after {
+  content: "";
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  border-radius: 50% !important;
+  background:
+    radial-gradient(circle at 45% 40%, rgba(160, 165, 175, 0.4), rgba(40, 44, 52, 0.9) 70%);
+  box-shadow:
+    inset 0 0 0 1px rgba(0, 0, 0, 0.5),
+    inset 0 1px 2px rgba(0, 0, 0, 0.4);
+}
+
+.sh-rack-panel::before {
+  top: 0.6rem;
+  left: 0.5rem;
+}
+
+.sh-rack-panel::after {
+  bottom: 0.6rem;
+  left: 0.5rem;
+}
+
+.sh-rack-label {
+  font-family: var(--sh-font-sans);
+  font-size: 0.56rem;
+  font-weight: 600;
+  color: var(--sh-metal-light);
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  margin-bottom: 0.8rem;
+  padding-left: 1.4rem;
+}
+
+.sh-ventilation {
+  height: 28px;
+  margin: 0.6rem 0;
+  background:
+    repeating-linear-gradient(
+      0deg,
+      rgba(0, 0, 0, 0.35) 0,
+      rgba(0, 0, 0, 0.35) 2px,
+      rgba(100, 105, 115, 0.15) 2px,
+      rgba(100, 105, 115, 0.15) 5px
+    );
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+}
+
+.sh-drive-bays {
+  display: flex;
+  gap: 0.5rem;
+  padding: 0.4rem 0;
+  margin-left: 1.4rem;
+}
+
+.sh-led {
+  width: 6px;
+  height: 6px;
+  border-radius: 50% !important;
+}
+
+.sh-led--green {
+  background: radial-gradient(circle at 40% 35%, #66ff66, var(--sh-green) 60%, #1a7a1a);
+  box-shadow: 0 0 4px var(--sh-green-glow);
+  animation: sh-pulse-led 3s ease-in-out infinite;
+}
+
+.sh-led--amber {
+  background: radial-gradient(circle at 40% 35%, #ffdd44, var(--sh-amber) 60%, #8a6600);
+  box-shadow: 0 0 4px var(--sh-amber-glow);
+}
+
+.sh-led--off {
+  background: radial-gradient(circle at 40% 35%, #4a4f58, #2a2f38 60%);
+  box-shadow: none;
+}
+
+.sh-rack-lcd {
+  margin-top: 0.8rem;
+  margin-left: 1.4rem;
+  padding: 0.5rem 0.7rem;
+  background: linear-gradient(180deg, #0a1a0a, #061008);
+  box-shadow:
+    inset 0 0 0 1px rgba(63, 185, 80, 0.15),
+    inset 0 0 8px rgba(0, 0, 0, 0.5);
+  max-width: 260px;
+}
+
+.sh-rack-lcd span {
+  display: block;
+  font-family: var(--sh-font-mono);
+  font-size: 0.58rem;
+  color: var(--sh-green);
+  text-shadow: 0 0 4px var(--sh-green-glow);
+  line-height: 1.6;
+  letter-spacing: 0.5px;
+}
+
+.sh-nas-photo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--sh-dark);
+  border: 1px solid var(--sh-border);
+  padding: 1rem;
+}
+
+.sh-nas-photo img {
+  display: block;
+  width: 100%;
+  max-width: 320px;
+  height: auto;
+  object-fit: contain;
+}
+
+/* ============================================================
+   3. SERVICES — Container Cards Grid
+   ============================================================ */
+.sh-services-heading {
+  font-family: var(--sh-font-mono);
+  font-size: clamp(0.72rem, 1.6vw, 0.92rem);
+  font-weight: 700;
+  color: var(--sh-text);
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  margin-bottom: 1.2rem;
+}
+
+.sh-services-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 0.8rem;
+}
+
+.sh-service-card {
+  position: relative;
+  background: var(--sh-panel);
+  border: 1px solid var(--sh-border);
+  padding: 0;
+  overflow: hidden;
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+
+.sh-service-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.4);
+}
+
+.sh-service-stripe {
+  height: 3px;
+  background: var(--sh-green);
+}
+
+.sh-service-stripe--amber {
+  background: var(--sh-amber);
+}
+
+.sh-service-stripe--red {
+  background: var(--sh-red);
+}
+
+.sh-service-stripe--blue {
+  background: var(--sh-blue);
+}
+
+.sh-service-body {
+  padding: 0.7rem 0.8rem;
+}
+
+.sh-service-header {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-bottom: 0.3rem;
+}
+
+.sh-service-name {
+  font-family: var(--sh-font-mono);
+  font-size: 0.74rem;
+  font-weight: 700;
+  color: var(--sh-text);
+  letter-spacing: 0.3px;
+}
+
+.sh-service-status {
+  display: flex;
+  align-items: center;
+  gap: 0.3rem;
+  margin-bottom: 0.3rem;
+}
+
+.sh-service-status-text {
+  font-family: var(--sh-font-mono);
+  font-size: 0.5rem;
+  color: var(--sh-green);
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+.sh-service-status-text--down {
+  color: var(--sh-red);
+}
+
+.sh-service-port {
+  font-family: var(--sh-font-mono);
+  font-size: 0.52rem;
+  color: var(--sh-text-dim);
+  letter-spacing: 0.5px;
+}
+
+.sh-service-desc {
+  margin-top: 0.3rem;
+  font-family: var(--sh-font-sans);
+  font-size: 0.64rem;
+  color: var(--sh-text-dim);
+  line-height: 1.4;
+}
+
+/* ============================================================
+   4. MONITORING — Dashboard Gauges
+   ============================================================ */
+.sh-dashboard {
+  background: var(--sh-panel);
+  border: 1px solid var(--sh-border);
+  padding: 1.2rem;
+}
+
+.sh-dashboard-heading {
+  font-family: var(--sh-font-mono);
+  font-size: 0.72rem;
+  font-weight: 700;
+  color: var(--sh-text);
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  margin-bottom: 1rem;
+}
+
+.sh-uptime {
+  text-align: center;
+  margin-bottom: 1.2rem;
+  padding: 0.8rem;
+  background: var(--sh-dark);
+  border: 1px solid var(--sh-border);
+}
+
+.sh-uptime-label {
+  font-family: var(--sh-font-sans);
+  font-size: 0.52rem;
+  font-weight: 600;
+  color: var(--sh-text-dim);
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  margin-bottom: 0.3rem;
+}
+
+.sh-uptime-value {
+  font-family: var(--sh-font-mono);
+  font-size: clamp(1.2rem, 3vw, 1.8rem);
+  font-weight: 700;
+  color: var(--sh-green);
+  text-shadow: 0 0 8px var(--sh-green-glow);
+  letter-spacing: 2px;
+}
+
+.sh-gauges {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1rem;
+}
+
+.sh-gauge {
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+}
+
+.sh-gauge-label {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  font-family: var(--sh-font-sans);
+  font-size: 0.56rem;
+  font-weight: 600;
+  color: var(--sh-text-dim);
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+.sh-gauge-value {
+  font-family: var(--sh-font-mono);
+  font-size: 0.56rem;
+  color: var(--sh-text);
+}
+
+.sh-gauge-track {
+  height: 8px;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid var(--sh-border);
+  overflow: hidden;
+}
+
+.sh-gauge-fill {
+  height: 100%;
+  background: var(--sh-green);
+  box-shadow: 0 0 6px var(--sh-green-glow);
+  transition: width 0.6s ease;
+}
+
+.sh-gauge-fill--amber {
+  background: var(--sh-amber);
+  box-shadow: 0 0 6px var(--sh-amber-glow);
+}
+
+.sh-gauge-fill--red {
+  background: var(--sh-red);
+  box-shadow: 0 0 6px rgba(248, 81, 73, 0.35);
+}
+
+.sh-dashboard-footer {
+  margin-top: 1rem;
+  text-align: right;
+  font-family: var(--sh-font-mono);
+  font-size: 0.48rem;
+  color: var(--sh-text-dim);
+  letter-spacing: 0.5px;
+}
+
+/* ============================================================
+   5. LOGS — Terminal Output
+   ============================================================ */
+.sh-terminal {
+  background: #0d1117;
+  border: 1px solid var(--sh-border);
+  overflow: hidden;
+}
+
+.sh-term-titlebar {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.4rem 0.7rem;
+  background: linear-gradient(180deg, #2d333b, #22272e);
+  border-bottom: 1px solid var(--sh-border);
+}
+
+.sh-term-dots {
+  display: flex;
+  gap: 0.35rem;
+}
+
+.sh-term-dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50% !important;
+}
+
+.sh-term-dot--red {
+  background: radial-gradient(circle at 40% 35%, #ff6b6b, #e5534b 60%, #b33a3a);
+}
+
+.sh-term-dot--amber {
+  background: radial-gradient(circle at 40% 35%, #ffd666, #d4a72c 60%, #a58020);
+}
+
+.sh-term-dot--green {
+  background: radial-gradient(circle at 40% 35%, #6bff6b, #3fb950 60%, #2a8a38);
+}
+
+.sh-term-title {
+  font-family: var(--sh-font-mono);
+  font-size: 0.54rem;
+  color: var(--sh-text-dim);
+  letter-spacing: 0.3px;
+}
+
+.sh-term-body {
+  padding: 0.8rem 1rem;
+  max-height: 280px;
+  overflow-y: auto;
+  scrollbar-width: thin;
+  scrollbar-color: var(--sh-border) transparent;
+  -webkit-overflow-scrolling: touch;
+}
+
+.sh-term-line {
+  display: block;
+  font-family: var(--sh-font-mono);
+  font-size: 0.62rem;
+  color: var(--sh-text-dim);
+  line-height: 1.7;
+  letter-spacing: 0.2px;
+  white-space: pre-wrap;
+  word-break: break-all;
+}
+
+.sh-term-line .sh-ts {
+  color: var(--sh-text-dim);
+  opacity: 0.6;
+}
+
+.sh-term-line .sh-log-ok {
+  color: var(--sh-green);
+}
+
+.sh-term-line .sh-log-warn {
+  color: var(--sh-amber);
+}
+
+.sh-term-line .sh-log-err {
+  color: var(--sh-red);
+}
+
+.sh-term-line .sh-log-info {
+  color: var(--sh-blue);
+}
+
+.sh-term-prompt {
+  display: block;
+  font-family: var(--sh-font-mono);
+  font-size: 0.62rem;
+  color: var(--sh-text);
+  line-height: 1.7;
+  margin-top: 0.2rem;
+}
+
+.sh-term-prompt .sh-user {
+  color: var(--sh-green);
+}
+
+.sh-term-prompt .sh-host {
+  color: var(--sh-blue);
+}
+
+/* ----- Focus Styles ----- */
+.sh-page .sh-service-card:focus-visible {
+  outline: 2px solid var(--sh-blue);
+  outline-offset: 2px;
+}
+
+/* ============================================================
+   FOOTER
+   ============================================================ */
+.sh-page footer {
+  background: none;
+  border-top: 1px solid var(--sh-border);
+}
+
+.sh-page footer .container {
+  color: var(--sh-text-dim);
+}
+
+/* ============================================================
+   RESPONSIVE
+   ============================================================ */
+@media (max-width: 1080px) {
+  .sh-services-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .sh-gauges {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 760px) {
+  .sh-hero-inner {
+    padding: 1.6rem 1rem 1.2rem;
+  }
+
+  .sh-hardware-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .sh-services-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .sh-gauges {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .sh-term-body {
+    max-height: 220px;
+  }
+}
+
+@media (max-width: 420px) {
+  .sh-hero-prompt {
+    font-size: 0.72rem;
+  }
+
+  .sh-hero-output {
+    font-size: 0.64rem;
+  }
+
+  .sh-services-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .sh-gauges {
+    grid-template-columns: 1fr;
+  }
+
+  .sh-service-name {
+    font-size: 0.66rem;
+  }
+
+  .sh-term-line {
+    font-size: 0.54rem;
+  }
+
+  .sh-rack-lcd {
+    max-width: 100%;
+  }
+}
