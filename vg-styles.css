@@ -421,6 +421,38 @@
   line-height: 1.35;
 }
 
+.vg-now-hltb-header {
+  position: relative;
+  z-index: 4;
+  display: grid;
+  grid-template-columns: 5ch 5ch 5ch;
+  gap: 0.45rem;
+  width: 18ch;
+  margin-left: auto;
+  text-align: right;
+  font-family: var(--vg-font-pixel-sm);
+  font-size: 0.5rem;
+  color: var(--vg-amber);
+  opacity: 0.5;
+  text-shadow: 0 0 3px var(--vg-amber-glow);
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  padding-bottom: 0.3rem;
+  margin-bottom: 0.2rem;
+  border-bottom: 1px solid rgba(255, 179, 0, 0.15);
+}
+
+.vg-now-hltb-header--retro {
+  color: var(--vg-green);
+  text-shadow: 0 0 3px var(--vg-green-glow);
+  font-size: 0.44rem;
+  grid-template-columns: 4.5ch 4.5ch 4.5ch;
+  gap: 0.32rem;
+  width: 16ch;
+  text-align: right;
+  border-bottom-color: rgba(51, 255, 51, 0.15);
+}
+
 .vg-now-hltb {
   grid-area: hltb;
   font-family: var(--vg-font-pixel-sm);
@@ -429,40 +461,32 @@
   opacity: 0.82;
   text-shadow: 0 0 3px rgba(255, 214, 137, 0.25);
   display: grid;
-  grid-template-columns: repeat(3, minmax(6ch, auto));
-  justify-content: end;
+  grid-template-columns: 5ch 5ch 5ch;
   gap: 0.45rem;
   text-align: right;
   font-variant-numeric: tabular-nums;
+  width: 18ch;
+  flex-shrink: 0;
 }
 
 .vg-now-hltb > span {
   display: inline-flex;
   align-items: baseline;
   justify-content: flex-end;
-  gap: 0.2rem;
-  min-width: 6ch;
   white-space: nowrap;
-}
-
-.vg-now-hltb > span:nth-child(3) {
-  min-width: 8ch;
-}
-
-.vg-now-hltb > span em {
-  font-style: normal;
-  opacity: 0.7;
 }
 
 .vg-console-lcd--list {
   padding: 0.7rem 0.75rem;
   line-height: 1.45;
+  text-align: left;
 }
 
 .vg-now-list--retro .vg-now-item {
   color: var(--vg-green);
   text-shadow: 0 0 3px var(--vg-green-glow);
   border-bottom: 1px solid rgba(51, 255, 51, 0.12);
+  text-align: left;
 }
 
 .vg-now-list--retro .vg-now-meta {
@@ -473,16 +497,9 @@
   color: rgba(180, 255, 170, 0.92);
   text-shadow: 0 0 3px rgba(120, 240, 120, 0.25);
   font-size: 0.5rem;
-  grid-template-columns: repeat(3, minmax(5ch, auto));
+  grid-template-columns: 4.5ch 4.5ch 4.5ch;
   gap: 0.32rem;
-}
-
-.vg-now-list--retro .vg-now-hltb > span {
-  min-width: 5ch;
-}
-
-.vg-now-list--retro .vg-now-hltb > span:nth-child(3) {
-  min-width: 6.6ch;
+  width: 16ch;
 }
 
 .vg-tv-controls {
@@ -1870,8 +1887,23 @@
     margin: 0 auto;
   }
 
+  .vg-feature-col--pipeline {
+    flex-direction: column;
+  }
+
+  .vg-feature-col--pipeline .vg-arcade-cabinet {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .vg-feature-col--pipeline .vg-arcade-screen {
+    flex: 1;
+  }
+
   .vg-feature-col--pipeline .vg-arcade-screen-surface {
     min-height: 220px;
+    height: 100%;
   }
 
   .vg-feature-col--pipeline .vg-arcade-covers {
@@ -2043,17 +2075,17 @@
 
   .vg-now-hltb {
     font-size: 0.5rem;
-    grid-template-columns: repeat(3, minmax(5.2ch, auto));
+    grid-template-columns: 4.5ch 4.5ch 4.5ch;
     gap: 0.3rem;
+    width: 16ch;
     align-self: center;
   }
 
-  .vg-now-hltb > span {
-    min-width: 5.2ch;
-  }
-
-  .vg-now-hltb > span:nth-child(3) {
-    min-width: 7ch;
+  .vg-now-hltb-header {
+    font-size: 0.44rem;
+    grid-template-columns: 4.5ch 4.5ch 4.5ch;
+    gap: 0.3rem;
+    width: 16ch;
   }
 
   .vg-console-unit {
@@ -2150,23 +2182,15 @@
     display: none;
   }
 
+  .vg-now-hltb-header {
+    display: none;
+  }
+
   .vg-now-hltb {
     font-size: 0.5rem;
-    grid-template-columns: repeat(3, minmax(3.8ch, auto));
+    grid-template-columns: 4ch 4ch 4ch;
     gap: 0.24rem;
-  }
-
-  .vg-now-hltb > span {
-    min-width: 3.8ch;
-    gap: 0;
-  }
-
-  .vg-now-hltb > span:nth-child(3) {
-    min-width: 4.2ch;
-  }
-
-  .vg-now-hltb > span em {
-    display: none;
+    width: 14ch;
   }
 
   .vg-cartridge {
