@@ -1585,6 +1585,258 @@
 }
 
 /* ============================================================
+   6.75 STEAM LIBRARY — Retro PC Monitor
+   ============================================================ */
+.vg-monitor {
+  position: relative;
+  background:
+    linear-gradient(180deg, #d8d4c8, #cac6ba 30%, #bab6aa 70%, #b0ac9e 100%);
+  padding: 0.6rem 1rem 0;
+  box-shadow:
+    inset 0 0 0 1px rgba(0, 0, 0, 0.1),
+    inset 0 2px 0 rgba(255, 255, 255, 0.25),
+    inset 0 -1px 0 rgba(0, 0, 0, 0.12),
+    0 16px 32px rgba(0, 0, 0, 0.55);
+}
+
+.vg-monitor-bezel {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.4rem 0.3rem;
+}
+
+.vg-monitor-label {
+  font-family: var(--vg-font-pixel);
+  font-size: 0.72rem;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #5a564e;
+  text-shadow: 0 1px 0 rgba(255, 255, 255, 0.25);
+}
+
+.vg-monitor-led {
+  width: 8px;
+  height: 8px;
+  border-radius: 50% !important;
+  background: radial-gradient(circle at 40% 35%, #44ccff, #1188aa 60%, #006688);
+  box-shadow:
+    0 0 4px rgba(0, 200, 255, 0.5),
+    0 0 10px rgba(0, 200, 255, 0.25),
+    inset 0 0 2px rgba(0, 0, 0, 0.2);
+}
+
+.vg-monitor-screen {
+  padding: 0.5rem;
+  background: linear-gradient(145deg, rgba(12, 14, 22, 0.98), rgba(3, 4, 8, 0.98));
+  box-shadow:
+    inset 0 0 0 1px rgba(70, 90, 110, 0.2),
+    inset 0 0 0 2px rgba(5, 6, 10, 0.85),
+    inset 0 10px 14px rgba(0, 0, 0, 0.35);
+}
+
+.vg-monitor-screen-surface {
+  position: relative;
+  min-height: 300px;
+  padding: 1.2rem 1rem;
+  background:
+    radial-gradient(circle at 50% 42%, rgba(40, 120, 160, 0.12), rgba(10, 25, 40, 0.1) 44%, rgba(4, 8, 14, 0.98) 100%),
+    linear-gradient(180deg, rgba(8, 14, 22, 0.94), rgba(3, 6, 12, 0.98));
+  box-shadow:
+    inset 0 0 0 1px rgba(60, 140, 180, 0.12),
+    inset 0 0 28px rgba(0, 0, 0, 0.5);
+  overflow: hidden;
+}
+
+/* Cyan scanlines */
+.vg-monitor-screen-surface::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  z-index: 2;
+  background:
+    linear-gradient(180deg, rgba(0, 200, 255, 0.06), transparent 24%),
+    repeating-linear-gradient(
+      0deg,
+      rgba(0, 180, 220, 0.06) 0,
+      rgba(0, 180, 220, 0.06) 1px,
+      transparent 1px,
+      transparent 3px
+    ),
+    linear-gradient(90deg, rgba(4, 8, 14, 0.3), transparent 16%, transparent 84%, rgba(4, 8, 14, 0.3));
+}
+
+/* Screen reflection */
+.vg-monitor-screen-surface::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  z-index: 3;
+  background:
+    radial-gradient(circle at 22% 14%, rgba(180, 230, 255, 0.08), transparent 28%),
+    linear-gradient(180deg, transparent 72%, rgba(2, 4, 8, 0.4) 100%);
+}
+
+/* ---- Stats bar ---- */
+.vg-steam-stats {
+  position: relative;
+  z-index: 4;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6rem;
+  justify-content: center;
+  margin-bottom: 1rem;
+  padding-bottom: 0.8rem;
+  border-bottom: 1px solid rgba(0, 255, 255, 0.1);
+}
+
+.vg-steam-stats span {
+  font-family: var(--vg-font-pixel-sm);
+  font-size: 0.56rem;
+  color: var(--vg-cyan);
+  text-shadow: 0 0 4px var(--vg-cyan-glow);
+  letter-spacing: 0.5px;
+  opacity: 0.85;
+}
+
+/* ---- Two-column layout ---- */
+.vg-steam-columns {
+  position: relative;
+  z-index: 4;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.2rem;
+}
+
+.vg-steam-heading {
+  font-family: var(--vg-font-pixel);
+  font-size: 0.52rem;
+  color: var(--vg-cyan);
+  letter-spacing: 1.2px;
+  text-transform: uppercase;
+  text-shadow: 0 0 6px var(--vg-cyan-glow);
+  margin-bottom: 0.6rem;
+  padding-bottom: 0.4rem;
+  border-bottom: 1px solid rgba(0, 255, 255, 0.15);
+}
+
+/* ---- Game lists ---- */
+.vg-steam-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.vg-steam-list li {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 0.4rem;
+  padding: 0.28rem 0;
+  border-bottom: 1px solid rgba(0, 255, 255, 0.06);
+  font-family: var(--vg-font-mono);
+  font-size: 0.72rem;
+  color: var(--vg-cyan);
+  text-shadow: 0 0 3px var(--vg-cyan-glow);
+}
+
+.vg-steam-list li:last-child {
+  border-bottom: none;
+}
+
+.vg-steam-game {
+  flex: 1;
+  min-width: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.vg-steam-hours {
+  font-family: var(--vg-font-pixel-sm);
+  font-size: 0.5rem;
+  color: rgba(140, 230, 255, 0.7);
+  text-shadow: 0 0 3px rgba(0, 200, 255, 0.2);
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+
+.vg-steam-list--ranked {
+  counter-reset: steamrank;
+}
+
+.vg-steam-list--ranked li {
+  counter-increment: steamrank;
+}
+
+.vg-steam-list--ranked li::before {
+  content: counter(steamrank, decimal-leading-zero);
+  font-family: var(--vg-font-pixel-sm);
+  font-size: 0.56rem;
+  opacity: 0.45;
+  min-width: 2rem;
+  flex-shrink: 0;
+}
+
+.vg-steam-loading {
+  font-family: var(--vg-font-pixel-sm);
+  font-size: 0.56rem;
+  color: rgba(0, 255, 255, 0.4);
+  text-align: center;
+  padding: 1rem 0;
+}
+
+/* ---- Controls bar ---- */
+.vg-monitor-controls {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.8rem 0.6rem;
+}
+
+.vg-monitor-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.5rem 1.4rem;
+  border-radius: 21px !important;
+  border: none;
+  background:
+    radial-gradient(circle at 45% 40%, #ff5544, #cc2200 60%, #880000);
+  color: #fff;
+  font-family: var(--vg-font-pixel);
+  font-size: 0.44rem;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  text-decoration: none;
+  cursor: pointer;
+  box-shadow:
+    inset 0 0 0 2px rgba(255, 100, 80, 0.3),
+    0 0 8px var(--vg-red-glow),
+    0 0 20px var(--vg-red-glow);
+  animation: vg-pulse-glow 2s ease-in-out infinite;
+  transition: transform 0.15s ease;
+}
+
+.vg-monitor-btn:hover {
+  transform: scale(1.05);
+  color: #fff;
+}
+
+/* ---- Monitor stand ---- */
+.vg-monitor-stand {
+  width: 50%;
+  height: 14px;
+  margin: 0 auto;
+  background: linear-gradient(180deg, #b0ac9e, #8a8678);
+  box-shadow:
+    inset 0 1px 0 rgba(255, 255, 255, 0.15),
+    0 4px 8px rgba(0, 0, 0, 0.4);
+}
+
+/* ============================================================
    7. FOOTER override
    ============================================================ */
 .vg-page footer {
@@ -1664,6 +1916,28 @@
 
   .vg-tv-shell,
   .vg-console {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .vg-tv-shell .vg-tv-screen {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .vg-tv-shell .vg-tv-screen-surface {
+    flex: 1;
+  }
+
+  .vg-console .vg-console-face {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .vg-console .vg-console-lcd {
     flex: 1;
   }
 
@@ -1833,6 +2107,14 @@
     width: 24px;
     height: 24px;
   }
+
+  .vg-steam-columns {
+    grid-template-columns: 1fr;
+  }
+
+  .vg-monitor-screen-surface {
+    min-height: auto;
+  }
 }
 
 @media (max-width: 420px) {
@@ -1969,5 +2251,44 @@
   .vg-handheld-buttons span {
     width: 22px;
     height: 22px;
+  }
+
+  .vg-monitor {
+    padding: 0.4rem 0.7rem 0;
+  }
+
+  .vg-monitor-label {
+    font-size: 0.56rem;
+    letter-spacing: 1.5px;
+  }
+
+  .vg-monitor-screen-surface {
+    padding: 0.8rem 0.7rem;
+  }
+
+  .vg-steam-stats span {
+    font-size: 0.46rem;
+  }
+
+  .vg-steam-heading {
+    font-size: 0.44rem;
+  }
+
+  .vg-steam-list li {
+    font-size: 0.64rem;
+  }
+
+  .vg-steam-hours {
+    font-size: 0.44rem;
+  }
+
+  .vg-steam-list--ranked li::before {
+    font-size: 0.48rem;
+    min-width: 1.6rem;
+  }
+
+  .vg-monitor-btn {
+    font-size: 0.38rem;
+    padding: 0.4rem 1rem;
   }
 }

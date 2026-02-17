@@ -171,46 +171,8 @@
     </div>
   </footer>
 
+  <script src="drawer.js"></script>
   <script>
-    (function () {
-      var toggles = Array.from(document.querySelectorAll('[data-drawer-toggle]'));
-      var drawer = document.getElementById('site-drawer');
-      if (!drawer || toggles.length === 0) return;
-
-      function setOpen(isOpen) {
-        drawer.classList.toggle('open', isOpen);
-        toggles.forEach(function (btn) {
-          btn.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
-        });
-      }
-
-      toggles.forEach(function (toggle) {
-        toggle.addEventListener('click', function (event) {
-          event.stopPropagation();
-          setOpen(!drawer.classList.contains('open'));
-        });
-      });
-
-      drawer.querySelectorAll('a').forEach(function (link) {
-        link.addEventListener('click', function () {
-          setOpen(false);
-        });
-      });
-
-      document.addEventListener('click', function (event) {
-        if (!drawer.contains(event.target) && !toggles.some(function (btn) { return btn.contains(event.target); })) {
-          setOpen(false);
-        }
-      });
-
-      document.addEventListener('keydown', function (event) {
-        if (event.key === 'Escape') {
-          setOpen(false);
-          if (toggles[0]) toggles[0].focus();
-        }
-      });
-    })();
-
     (function () {
       var indicatorGrid = document.getElementById('econ-indicator-grid');
       var indicatorStatus = document.getElementById('econ-indicator-status');
@@ -279,11 +241,19 @@
         var card = document.createElement('article');
         card.className = 'econ-indicator-card';
         card.setAttribute('data-series', definition.id);
-        card.innerHTML =
-          '<h3>' + definition.name + '</h3>' +
-          '<p class="econ-series-code">' + definition.id + '</p>' +
-          '<p class="econ-indicator-value">--</p>' +
-          '<p class="econ-indicator-meta">Awaiting update...</p>';
+
+        var h3 = document.createElement('h3');
+        h3.textContent = definition.name;
+        var code = document.createElement('p');
+        code.className = 'econ-series-code';
+        code.textContent = definition.id;
+        var value = document.createElement('p');
+        value.className = 'econ-indicator-value';
+        value.textContent = '--';
+        var meta = document.createElement('p');
+        meta.className = 'econ-indicator-meta';
+        meta.textContent = 'Awaiting update...';
+        card.append(h3, code, value, meta);
 
         indicatorGrid.appendChild(card);
         indicatorCards[definition.id] = card;
@@ -485,10 +455,23 @@
       }
 
       function renderFallbackNews() {
-        newsList.innerHTML = [
-          '<li><a href="https://mises.org/mises-wire" target="_blank" rel="noopener">Open Mises Wire</a><span>Live feed unavailable</span></li>',
-          '<li><a href="https://mises.org/library" target="_blank" rel="noopener">Browse Mises Library</a><span>Live feed unavailable</span></li>'
-        ].join('');
+        newsList.textContent = '';
+        var fallbacks = [
+          { href: 'https://mises.org/mises-wire', text: 'Open Mises Wire' },
+          { href: 'https://mises.org/library', text: 'Browse Mises Library' }
+        ];
+        fallbacks.forEach(function (item) {
+          var li = document.createElement('li');
+          var a = document.createElement('a');
+          a.href = item.href;
+          a.target = '_blank';
+          a.rel = 'noopener';
+          a.textContent = item.text;
+          var span = document.createElement('span');
+          span.textContent = 'Live feed unavailable';
+          li.append(a, span);
+          newsList.appendChild(li);
+        });
       }
 
       function parseRssItems(xmlText) {
@@ -514,7 +497,7 @@
       }
 
       function renderNewsItems(items) {
-        newsList.innerHTML = '';
+        newsList.textContent = '';
         items.slice(0, 8).forEach(function (item) {
           var li = document.createElement('li');
           var a = document.createElement('a');

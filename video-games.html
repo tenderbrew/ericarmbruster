@@ -481,6 +481,45 @@
       </div>
     </section>
 
+    <section class="vg-steam-section" aria-label="Steam Library">
+      <div class="container">
+        <div class="vg-monitor">
+          <div class="vg-monitor-bezel">
+            <span class="vg-monitor-label">Steam</span>
+            <span class="vg-monitor-led"></span>
+          </div>
+          <div class="vg-monitor-screen">
+            <div class="vg-monitor-screen-surface">
+              <div class="vg-steam-stats" id="steam-stats">
+                <span>-- games</span>
+                <span>-- hours</span>
+                <span>-- played</span>
+                <span>-- unplayed</span>
+              </div>
+              <div class="vg-steam-columns">
+                <div class="vg-steam-col">
+                  <h2 class="vg-steam-heading">Recently Played</h2>
+                  <ul class="vg-steam-list" id="steam-recent">
+                    <li class="vg-steam-loading">Loading&hellip;</li>
+                  </ul>
+                </div>
+                <div class="vg-steam-col">
+                  <h2 class="vg-steam-heading">Top by Playtime</h2>
+                  <ol class="vg-steam-list vg-steam-list--ranked" id="steam-top">
+                    <li class="vg-steam-loading">Loading&hellip;</li>
+                  </ol>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="vg-monitor-controls">
+            <a href="https://steamcommunity.com/profiles/76561198028507840/" target="_blank" rel="noopener" class="vg-monitor-btn">View Profile</a>
+          </div>
+          <div class="vg-monitor-stand" aria-hidden="true"></div>
+        </div>
+      </div>
+    </section>
+
   </main>
 
   <footer>
@@ -489,47 +528,8 @@
     </div>
   </footer>
 
+  <script src="drawer.js"></script>
   <script>
-    /* Drawer toggle (shared across all pages) */
-    (function () {
-      var toggles = Array.from(document.querySelectorAll('[data-drawer-toggle]'));
-      var drawer = document.getElementById('site-drawer');
-      if (!drawer || toggles.length === 0) return;
-
-      function setOpen(isOpen) {
-        drawer.classList.toggle('open', isOpen);
-        toggles.forEach(function (btn) {
-          btn.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
-        });
-      }
-
-      toggles.forEach(function (toggle) {
-        toggle.addEventListener('click', function (event) {
-          event.stopPropagation();
-          setOpen(!drawer.classList.contains('open'));
-        });
-      });
-
-      drawer.querySelectorAll('a').forEach(function (link) {
-        link.addEventListener('click', function () {
-          setOpen(false);
-        });
-      });
-
-      document.addEventListener('click', function (event) {
-        if (!drawer.contains(event.target) && !toggles.some(function (btn) { return btn.contains(event.target); })) {
-          setOpen(false);
-        }
-      });
-
-      document.addEventListener('keydown', function (event) {
-        if (event.key === 'Escape') {
-          setOpen(false);
-          if (toggles[0]) toggles[0].focus();
-        }
-      });
-    })();
-
     /* Top-10 year tab switching */
     (function () {
       var tablist = document.querySelector('.vg-channel-dial');
@@ -610,6 +610,85 @@
         current = (current + 1) % covers.length;
         covers[current].classList.add('is-active');
       }, 4000);
+    })();
+  </script>
+
+  <script>
+    /* Steam data loader */
+    (function () {
+      var statsEl = document.getElementById('steam-stats');
+      var recentEl = document.getElementById('steam-recent');
+      var topEl = document.getElementById('steam-top');
+      if (!statsEl || !recentEl || !topEl) return;
+
+      function showError(msg) {
+        recentEl.textContent = '';
+        topEl.textContent = '';
+        var li1 = document.createElement('li');
+        li1.className = 'vg-steam-loading';
+        li1.textContent = msg;
+        var li2 = li1.cloneNode(true);
+        recentEl.appendChild(li1);
+        topEl.appendChild(li2);
+      }
+
+      function buildGameRow(name, hoursLabel) {
+        var li = document.createElement('li');
+        var nameSpan = document.createElement('span');
+        nameSpan.className = 'vg-steam-game';
+        nameSpan.textContent = name;
+        var hoursSpan = document.createElement('span');
+        hoursSpan.className = 'vg-steam-hours';
+        hoursSpan.textContent = hoursLabel;
+        li.append(nameSpan, hoursSpan);
+        return li;
+      }
+
+      fetch('steam-data.json')
+        .then(function (res) {
+          if (!res.ok) throw new Error('Failed to load');
+          return res.json();
+        })
+        .then(function (data) {
+          /* Stats bar */
+          statsEl.textContent = '';
+          var statItems = [
+            data.stats.totalGames + ' games',
+            data.stats.totalHours.toLocaleString() + ' hours',
+            data.stats.playedCount + ' played',
+            data.stats.neverPlayed + ' unplayed'
+          ];
+          statItems.forEach(function (text) {
+            var span = document.createElement('span');
+            span.textContent = text;
+            statsEl.appendChild(span);
+          });
+
+          /* Recently played */
+          recentEl.textContent = '';
+          if (data.recentlyPlayed.length === 0) {
+            var empty = document.createElement('li');
+            empty.className = 'vg-steam-loading';
+            empty.textContent = 'No recent activity';
+            recentEl.appendChild(empty);
+          } else {
+            data.recentlyPlayed.forEach(function (game) {
+              var label = game.hours_2weeks > 0
+                ? game.hours_2weeks + 'h (2wk)'
+                : game.hours_total + 'h total';
+              recentEl.appendChild(buildGameRow(game.name, label));
+            });
+          }
+
+          /* Top by playtime */
+          topEl.textContent = '';
+          data.topByPlaytime.forEach(function (game) {
+            topEl.appendChild(buildGameRow(game.name, game.hours + 'h'));
+          });
+        })
+        .catch(function () {
+          showError('Data unavailable');
+        });
     })();
   </script>
 
