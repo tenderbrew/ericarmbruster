@@ -71,6 +71,7 @@
           <a href="film.html">Film</a>
           <a href="self-hosting.html">Self-Hosting</a>
           <a href="economics.html">Economics</a>
+          <a href="bitcoin.html">Bitcoin</a>
           <a href="dog-training.html">Seymour</a>
         </section>
         <section class="drawer-group drawer-group--compact">
@@ -105,10 +106,28 @@
   <!-- Main page content. Most route-specific structure lives here. -->
   <main>
     
+    <!-- Secondary dashboard: featured log card and list activity feed. -->
+    <section class="film-section" aria-label="Featured review and list activity">
+      <div class="container">
+        <div class="film-grid film-grid-bottom">
+          <article class="film-panel film-panel-featured" aria-labelledby="featured-title">
+            <h2 id="featured-title">Featured Log</h2>
+            <div id="film-featured"></div>
+          </article>
+
+          <article class="film-panel film-panel-lists" aria-labelledby="lists-title">
+            <h2 id="lists-title">Recent Lists</h2>
+            <ul id="film-list-activity" class="film-list-activity"></ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
     <!-- Live activity dashboard: recent watches and computed booth stats. -->
     <section class="film-section film-dashboard" aria-label="Live Letterboxd activity">
       <div class="container">
-        <div class="film-grid film-grid-top">
+        <hr class="film-divider" aria-hidden="true">
+        <div class="film-grid film-grid-top" style="margin-top: 1.2rem;">
           <article class="film-panel film-panel-list" aria-labelledby="recent-title">
             <div class="film-panel-head">
               <h2 id="recent-title">Now Screening</h2>
@@ -121,42 +140,27 @@
             <h2 id="stats-title">Booth Stats</h2>
             <dl class="film-stats-grid">
               <div>
-                <dt>Logs In Feed</dt>
-                <dd id="stat-logs">--</dd>
+                <dt>Films Watched</dt>
+                <dd id="stat-films">--</dd>
               </div>
               <div>
-                <dt>Average Rating</dt>
-                <dd id="stat-average">--</dd>
+                <dt>This Year</dt>
+                <dd id="stat-this-year">--</dd>
               </div>
               <div>
-                <dt>Five Star Logs</dt>
-                <dd id="stat-fives">--</dd>
+                <dt>Lists</dt>
+                <dd id="stat-lists">--</dd>
               </div>
               <div>
-                <dt>Most Recent Log</dt>
-                <dd id="stat-last">--</dd>
+                <dt>Following</dt>
+                <dd id="stat-following">--</dd>
+              </div>
+              <div>
+                <dt>Followers</dt>
+                <dd id="stat-followers">--</dd>
               </div>
             </dl>
-            <p class="film-note">Data source: <a href="https://letterboxd.com/tenderbrew/rss/" target="_blank" rel="noopener">letterboxd.com/tenderbrew/rss/</a></p>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    
-    <!-- Secondary dashboard: featured log card and list activity feed. -->
-    <section class="film-section" aria-label="Featured review and list activity">
-      <div class="container">
-        <hr class="film-divider" aria-hidden="true">
-        <div class="film-grid film-grid-bottom" style="margin-top: 1.2rem;">
-          <article class="film-panel film-panel-featured" aria-labelledby="featured-title">
-            <h2 id="featured-title">Featured Log</h2>
-            <div id="film-featured"></div>
-          </article>
-
-          <article class="film-panel film-panel-lists" aria-labelledby="lists-title">
-            <h2 id="lists-title">Recent Lists</h2>
-            <ul id="film-list-activity" class="film-list-activity"></ul>
+            <p class="film-note">Data source: <a href="https://letterboxd.com/tenderbrew/" target="_blank" rel="noopener">letterboxd.com/tenderbrew/</a></p>
           </article>
         </div>
       </div>
@@ -178,10 +182,22 @@
       var recentList = document.getElementById('film-recent-watches');
       var featured = document.getElementById('film-featured');
       var listActivity = document.getElementById('film-list-activity');
-      var statLogs = document.getElementById('stat-logs');
-      var statAverage = document.getElementById('stat-average');
-      var statFives = document.getElementById('stat-fives');
-      var statLast = document.getElementById('stat-last');
+      var statFilms = document.getElementById('stat-films');
+      var statThisYear = document.getElementById('stat-this-year');
+      var statLists = document.getElementById('stat-lists');
+      var statFollowing = document.getElementById('stat-following');
+      var statFollowers = document.getElementById('stat-followers');
+      var profileUrl = 'https://letterboxd.com/tenderbrew/';
+      var profileProxyUrl = 'https://api.codetabs.com/v1/proxy?quest=' + encodeURIComponent(profileUrl);
+      var listsUrl = 'https://letterboxd.com/tenderbrew/lists/';
+      var listsProxyUrl = 'https://api.codetabs.com/v1/proxy?quest=' + encodeURIComponent(listsUrl);
+      var fallbackProfileTotals = {
+        films: 256,
+        'this year': 2,
+        lists: 10,
+        following: 19,
+        followers: 15
+      };
       var feedUrl = 'https://letterboxd.com/tenderbrew/rss/';
       var rssToJsonUrl = 'https://api.rss2json.com/v1/api.json?rss_url=' + encodeURIComponent(feedUrl);
 
@@ -223,6 +239,58 @@
           description: 'Watched on Tuesday December 23, 2025.'
         }
       ];
+      var fallbackListActivity = [
+        {
+          title: 'Halloween 2025 - monster movie watch',
+          link: 'https://letterboxd.com/tenderbrew/list/halloween-2025-monster-movie-watch/',
+          metaLabel: '31 films'
+        },
+        {
+          title: 'Alien/Predators',
+          link: 'https://letterboxd.com/tenderbrew/list/alien-predators/',
+          metaLabel: '15 films'
+        },
+        {
+          title: 'Godzilla: The Showa Films',
+          link: 'https://letterboxd.com/tenderbrew/list/godzilla-the-showa-films/',
+          metaLabel: '15 films'
+        },
+        {
+          title: 'Jurassic Park/World',
+          link: 'https://letterboxd.com/tenderbrew/list/jurassic-park-world/',
+          metaLabel: 'Letterboxd list'
+        },
+        {
+          title: 'List of the Planet of the Apes',
+          link: 'https://letterboxd.com/tenderbrew/list/list-of-the-planet-of-the-apes/',
+          metaLabel: 'Letterboxd list'
+        },
+        {
+          title: '2024 Best Picture Nominees',
+          link: 'https://letterboxd.com/tenderbrew/list/2024-best-picture-nominees/',
+          metaLabel: 'Letterboxd list'
+        },
+        {
+          title: 'John Carpenter films',
+          link: 'https://letterboxd.com/tenderbrew/list/john-carpenter-films/',
+          metaLabel: 'Letterboxd list'
+        },
+        {
+          title: 'Scream',
+          link: 'https://letterboxd.com/tenderbrew/list/scream/',
+          metaLabel: 'Letterboxd list'
+        },
+        {
+          title: 'Favorites',
+          link: 'https://letterboxd.com/tenderbrew/list/favorites/',
+          metaLabel: 'Letterboxd list'
+        },
+        {
+          title: 'Denis Movis',
+          link: 'https://letterboxd.com/tenderbrew/list/denis-movis/',
+          metaLabel: 'Letterboxd list'
+        }
+      ];
 
       function formatDate(dateValue) {
         var date = new Date(dateValue);
@@ -243,6 +311,16 @@
         return rating;
       }
 
+      function formatRatingStars(ratingValue) {
+        if (typeof ratingValue !== 'number') return 'Unrated';
+
+        var fullStars = Math.floor(ratingValue);
+        var hasHalf = Math.abs(ratingValue - fullStars - 0.5) < 0.001;
+        var stars = '\u2605'.repeat(fullStars);
+        if (hasHalf) stars += '\u00BD';
+        return stars || 'Unrated';
+      }
+
       function parseFilmTitle(rawTitle) {
         var cleaned = rawTitle.replace(/\s-\s[\u2605\u00BD]+$/, '').trim();
         var match = cleaned.match(/^(.*),\s(\d{4})$/);
@@ -252,21 +330,54 @@
         return { title: match[1], year: match[2] };
       }
 
-      function extractReviewText(htmlSnippet) {
-        if (!htmlSnippet) return 'Logged on Letterboxd.';
+      function isBoilerplateReviewLine(line) {
+        return /^(re)?watched on\b/i.test(line) || /^this review may contain spoilers\.?$/i.test(line);
+      }
+
+      function extractParagraphText(htmlSnippet) {
+        if (!htmlSnippet) return [];
 
         var parsed = new DOMParser().parseFromString(htmlSnippet, 'text/html');
         var paragraphs = Array.from(parsed.querySelectorAll('p'))
           .map(function (p) { return p.textContent.trim(); })
           .filter(Boolean);
+        if (paragraphs.length) return paragraphs;
+
+        var plain = String(htmlSnippet)
+          .replace(/<[^>]*>/g, ' ')
+          .replace(/\s+/g, ' ')
+          .trim();
+        return plain ? [plain] : [];
+      }
+
+      function extractWrittenReviewText(htmlSnippet) {
+        var paragraphs = extractParagraphText(htmlSnippet);
 
         for (var i = 0; i < paragraphs.length; i += 1) {
-          if (paragraphs[i].length > 25) {
+          if (!isBoilerplateReviewLine(paragraphs[i])) {
             return paragraphs[i];
           }
         }
 
-        return paragraphs[0] || 'Logged on Letterboxd.';
+        return '';
+      }
+
+      function extractReviewText(htmlSnippet) {
+        var writtenReview = extractWrittenReviewText(htmlSnippet);
+        if (writtenReview) {
+          return writtenReview;
+        }
+        if (!htmlSnippet) return 'Logged on Letterboxd.';
+
+        var parsed = new DOMParser().parseFromString(htmlSnippet, 'text/html');
+        var firstParagraph = parsed.querySelector('p');
+        if (!firstParagraph) return 'Logged on Letterboxd.';
+        return firstParagraph.textContent.trim() || 'Logged on Letterboxd.';
+      }
+
+      function filmKeyFromLink(link) {
+        var match = String(link || '').match(/\/film\/([^\/?#]+)/i);
+        return match ? match[1].toLowerCase() : '';
       }
 
       function extractThumbnailFromDescription(htmlSnippet) {
@@ -290,7 +401,7 @@
 
       function renderRecentWatches(entries) {
         recentList.innerHTML = '';
-        entries.slice(0, 8).forEach(function (entry) {
+        entries.slice(0, 5).forEach(function (entry) {
           var item = document.createElement('li');
           item.className = 'film-strip-item';
 
@@ -302,12 +413,18 @@
 
           var meta = document.createElement('span');
           meta.className = 'film-strip-meta';
-          var ratingLabel = typeof entry.rating === 'number' ? (entry.rating.toFixed(1) + '/5') : 'No rating';
+          var ratingLabel = formatRatingStars(entry.rating);
           var yearLabel = entry.year ? ('(' + entry.year + ')') : '';
           meta.textContent = yearLabel + '  |  ' + ratingLabel + '  |  ' + formatDate(entry.date);
 
           item.appendChild(link);
           item.appendChild(meta);
+          if (entry.latestWrittenReview) {
+            var review = document.createElement('p');
+            review.className = 'film-strip-review';
+            review.textContent = entry.latestWrittenReview;
+            item.appendChild(review);
+          }
           recentList.appendChild(item);
         });
       }
@@ -319,8 +436,8 @@
         }
 
         var poster = entry.thumbnail || extractThumbnailFromDescription(entry.description);
-        var text = extractReviewText(entry.description);
-        var ratingText = typeof entry.rating === 'number' ? (entry.rating.toFixed(1) + '/5') : 'No rating';
+        var text = entry.latestWrittenReview || extractReviewText(entry.description);
+        var ratingText = formatRatingStars(entry.rating);
         var yearText = entry.year ? ('(' + entry.year + ')') : '';
         var safeTitle = escapeHtml(entry.title || 'Untitled');
         var safeText = escapeHtml(text);
@@ -346,7 +463,7 @@
           return;
         }
 
-        entries.slice(0, 6).forEach(function (entry) {
+        entries.slice(0, 10).forEach(function (entry) {
           var item = document.createElement('li');
           var link = document.createElement('a');
           link.href = entry.link;
@@ -355,7 +472,11 @@
           link.textContent = entry.title;
 
           var date = document.createElement('span');
-          date.textContent = formatDate(entry.date);
+          if (entry.metaLabel) {
+            date.textContent = entry.metaLabel;
+          } else {
+            date.textContent = formatDate(entry.date);
+          }
 
           item.appendChild(link);
           item.appendChild(date);
@@ -363,17 +484,268 @@
         });
       }
 
-      function renderStats(entries) {
-        var rated = entries.filter(function (entry) { return typeof entry.rating === 'number'; });
-        var average = rated.length
-          ? rated.reduce(function (sum, entry) { return sum + entry.rating; }, 0) / rated.length
-          : null;
-        var fives = entries.filter(function (entry) { return entry.rating === 5; }).length;
+      function parseStatCount(rawValue) {
+        var text = String(rawValue || '').trim().replace(/,/g, '');
+        if (!text) return null;
 
-        statLogs.textContent = String(entries.length);
-        statAverage.textContent = average ? average.toFixed(2) + '/5' : '--';
-        statFives.textContent = String(fives);
-        statLast.textContent = entries[0] ? formatDate(entries[0].date) : '--';
+        var match = text.match(/^([\d.]+)\s*([kmb])?$/i);
+        if (!match) return null;
+
+        var base = parseFloat(match[1]);
+        if (Number.isNaN(base)) return null;
+
+        var suffix = (match[2] || '').toLowerCase();
+        if (suffix === 'k') base *= 1000;
+        if (suffix === 'm') base *= 1000000;
+        if (suffix === 'b') base *= 1000000000;
+
+        return Math.round(base);
+      }
+
+      function parseProfileTotals(htmlText) {
+        var parsed = new DOMParser().parseFromString(htmlText, 'text/html');
+        var stats = {};
+        Array.from(parsed.querySelectorAll('.profile-stats .profile-statistic')).forEach(function (node) {
+          var definition = node.querySelector('.definition');
+          var value = node.querySelector('.value');
+          if (!definition || !value) return;
+
+          var key = definition.textContent.trim().toLowerCase();
+          var count = parseStatCount(value.textContent);
+          if (count === null) return;
+          stats[key] = count;
+        });
+
+        if (!Object.keys(stats).length) {
+          var regex = /<span class="value">\s*([^<]+)\s*<\/span>\s*<span class="definition">\s*([^<]+)\s*<\/span>/gi;
+          var match;
+          while ((match = regex.exec(htmlText)) !== null) {
+            var fallbackCount = parseStatCount(match[1]);
+            if (fallbackCount === null) continue;
+            var fallbackKey = String(match[2] || '').trim().toLowerCase();
+            if (!fallbackKey) continue;
+            stats[fallbackKey] = fallbackCount;
+          }
+        }
+
+        if (!Object.keys(stats).length) {
+          throw new Error('No profile totals available');
+        }
+        return stats;
+      }
+
+      function toAbsoluteLetterboxdLink(link) {
+        if (!link) return '#';
+        if (link.indexOf('http://') === 0 || link.indexOf('https://') === 0) return link;
+        if (link[0] !== '/') return 'https://letterboxd.com/' + link;
+        return 'https://letterboxd.com' + link;
+      }
+
+      function parseProfileLists(htmlText) {
+        var parsed = new DOMParser().parseFromString(htmlText, 'text/html');
+        var seen = {};
+        var parsedLists = [];
+
+        Array.from(parsed.querySelectorAll('h3.title-3 a[href*="/list/"]')).forEach(function (anchor) {
+          if (parsedLists.length >= 10) return;
+
+          var title = (anchor.textContent || '').trim();
+          var link = toAbsoluteLetterboxdLink(anchor.getAttribute('href') || '');
+          if (!title || !link || seen[link]) return;
+          seen[link] = true;
+
+          var heading = anchor.closest('h3');
+          var countNode = heading ? heading.querySelector('small.value') : null;
+          var countLabel = countNode
+            ? countNode.textContent.replace(/\s+/g, ' ').trim()
+            : 'Profile list';
+
+          parsedLists.push({
+            title: title,
+            link: link,
+            metaLabel: countLabel
+          });
+        });
+
+        if (!parsedLists.length) {
+          throw new Error('No profile lists available');
+        }
+        return parsedLists;
+      }
+
+      function mergeListEntries(primaryEntries, secondaryEntries, maxCount) {
+        var merged = [];
+        var seen = {};
+        var limit = typeof maxCount === 'number' ? maxCount : 10;
+
+        function appendEntries(entries) {
+          (entries || []).forEach(function (entry) {
+            if (merged.length >= limit) return;
+            if (!entry || !entry.link) return;
+            var key = entry.link.toLowerCase();
+            if (seen[key]) return;
+            seen[key] = true;
+            merged.push(entry);
+          });
+        }
+
+        appendEntries(primaryEntries);
+        appendEntries(secondaryEntries);
+        return merged;
+      }
+
+      function formatCount(value) {
+        if (typeof value !== 'number') return '--';
+        return new Intl.NumberFormat('en-US').format(value);
+      }
+
+      function renderProfileTotals(stats) {
+        var merged = Object.assign({}, fallbackProfileTotals, stats || {});
+        statFilms.textContent = formatCount(merged.films);
+        statThisYear.textContent = formatCount(merged['this year']);
+        statLists.textContent = formatCount(merged.lists);
+        statFollowing.textContent = formatCount(merged.following);
+        statFollowers.textContent = formatCount(merged.followers);
+      }
+
+      async function fetchWithTimeout(url, options, timeoutMs) {
+        if (typeof AbortController !== 'function') {
+          return fetch(url, options);
+        }
+
+        var controller = new AbortController();
+        var timer = setTimeout(function () { controller.abort(); }, timeoutMs || 7000);
+        try {
+          var requestOptions = Object.assign({}, options || {}, { signal: controller.signal });
+          return await fetch(url, requestOptions);
+        } finally {
+          clearTimeout(timer);
+        }
+      }
+
+      async function loadProfileHtmlViaCodeTabs() {
+        var response = await fetchWithTimeout(profileProxyUrl, { cache: 'no-store' }, 7000);
+        if (!response.ok) {
+          throw new Error('Profile HTTP ' + response.status);
+        }
+
+        return await response.text();
+      }
+
+      async function loadListsHtmlViaCodeTabs() {
+        var response = await fetchWithTimeout(listsProxyUrl, { cache: 'no-store' }, 7000);
+        if (!response.ok) {
+          throw new Error('Lists HTTP ' + response.status);
+        }
+
+        var html = await response.text();
+        if (!html || html.indexOf('error code: 1015') !== -1) {
+          throw new Error('Lists proxy blocked');
+        }
+        return html;
+      }
+
+      async function loadListsHtmlViaAllOrigins() {
+        var allOriginsUrl = 'https://api.allorigins.win/get?url=' + encodeURIComponent(listsUrl);
+        var response = await fetchWithTimeout(allOriginsUrl, { cache: 'no-store' }, 7000);
+        if (!response.ok) {
+          throw new Error('Lists fallback HTTP ' + response.status);
+        }
+
+        var payload = await response.json();
+        var decoded = decodeDataPayload(payload.contents || '');
+        if (!decoded) {
+          throw new Error('Empty lists fallback payload');
+        }
+        return decoded;
+      }
+
+      async function loadProfileHtmlViaAllOrigins() {
+        var allOriginsUrl = 'https://api.allorigins.win/get?url=' + encodeURIComponent(profileUrl);
+        var response = await fetchWithTimeout(allOriginsUrl, { cache: 'no-store' }, 7000);
+        if (!response.ok) {
+          throw new Error('Profile fallback HTTP ' + response.status);
+        }
+
+        var payload = await response.json();
+        var decoded = decodeDataPayload(payload.contents || '');
+        if (!decoded) {
+          throw new Error('Empty profile fallback payload');
+        }
+
+        return decoded;
+      }
+
+      var profileHtmlPromise = null;
+
+      async function loadProfileHtml() {
+        if (!profileHtmlPromise) {
+          profileHtmlPromise = (async function () {
+            try {
+              return await loadProfileHtmlViaCodeTabs();
+            } catch (profileError) {
+              return await loadProfileHtmlViaAllOrigins();
+            }
+          })();
+        }
+        return await profileHtmlPromise;
+      }
+
+      async function loadProfileTotals() {
+        var html = await loadProfileHtml();
+        return parseProfileTotals(html);
+      }
+
+      async function loadProfileLists() {
+        try {
+          var listsHtml = await loadListsHtmlViaCodeTabs();
+          return mergeListEntries(parseProfileLists(listsHtml), fallbackListActivity, 10);
+        } catch (listsError) {
+          try {
+            var listsFallbackHtml = await loadListsHtmlViaAllOrigins();
+            return mergeListEntries(parseProfileLists(listsFallbackHtml), fallbackListActivity, 10);
+          } catch (listsFallbackError) {
+            var profileHtml = await loadProfileHtml();
+            return mergeListEntries(parseProfileLists(profileHtml), fallbackListActivity, 10);
+          }
+        }
+      }
+
+      function attachLatestWrittenReviews(entries) {
+        var latestByFilm = {};
+
+        entries.forEach(function (entry) {
+          var filmKey = entry.filmKey || filmKeyFromLink(entry.link);
+          var writtenReview = entry.writtenReview || extractWrittenReviewText(entry.description || '');
+          if (!filmKey || !writtenReview) return;
+
+          var timestamp = new Date(entry.date || '').getTime();
+          if (Number.isNaN(timestamp)) timestamp = -Infinity;
+
+          if (!latestByFilm[filmKey] || timestamp > latestByFilm[filmKey].timestamp) {
+            latestByFilm[filmKey] = {
+              text: writtenReview,
+              timestamp: timestamp
+            };
+          }
+        });
+
+        return entries.map(function (entry) {
+          var filmKey = entry.filmKey || filmKeyFromLink(entry.link);
+          var writtenReview = entry.writtenReview || extractWrittenReviewText(entry.description || '');
+          var latestWrittenReview = '';
+          if (writtenReview) {
+            latestWrittenReview = writtenReview;
+          } else if (filmKey && latestByFilm[filmKey]) {
+            latestWrittenReview = latestByFilm[filmKey].text;
+          }
+
+          return Object.assign({}, entry, {
+            filmKey: filmKey,
+            writtenReview: writtenReview,
+            latestWrittenReview: latestWrittenReview
+          });
+        });
       }
 
       // Normalize proxy responses so render functions can use one consistent shape.
@@ -390,6 +762,8 @@
             link: item.link || '#',
             guid: item.guid || '',
             description: description,
+            filmKey: filmKeyFromLink(item.link || ''),
+            writtenReview: extractWrittenReviewText(description),
             thumbnail: item.thumbnail || extractThumbnailFromDescription(description)
           };
         });
@@ -420,6 +794,8 @@
             link: read('link') || '#',
             guid: read('guid'),
             description: description,
+            filmKey: filmKeyFromLink(read('link') || '#'),
+            writtenReview: extractWrittenReviewText(description),
             thumbnail: extractThumbnailFromDescription(description)
           };
         });
@@ -441,10 +817,10 @@
       }
 
       function renderWithFallback(reason) {
-        renderRecentWatches(fallbackWatches);
-        renderFeatured(fallbackWatches[0]);
-        renderListActivity([]);
-        renderStats(fallbackWatches);
+        var fallbackEntries = attachLatestWrittenReviews(fallbackWatches);
+        renderRecentWatches(fallbackEntries);
+        renderFeatured(fallbackEntries[0]);
+        renderListActivity(fallbackListActivity);
         feedStatus.textContent = 'Live feed unavailable (' + reason + '). Showing cached samples.';
       }
 
@@ -486,7 +862,18 @@
         }
       }
 
-      // Render order: recent list, featured card, list activity, then summary stats.
+      // Render order: profile totals, recent list, featured card, list activity.
+      renderProfileTotals(fallbackProfileTotals);
+      renderListActivity(fallbackListActivity);
+
+      loadProfileTotals()
+        .then(function (profileTotals) {
+          renderProfileTotals(profileTotals);
+        })
+        .catch(function () {
+          renderProfileTotals(fallbackProfileTotals);
+        });
+
       loadFeed()
         .then(function (entries) {
           var filmEntries = entries.filter(function (entry) { return entry.link.indexOf('/film/') !== -1; });
@@ -496,10 +883,20 @@
             throw new Error('No film entries');
           }
 
-          renderRecentWatches(filmEntries);
-          renderFeatured(filmEntries[0]);
-          renderListActivity(listEntries);
-          renderStats(filmEntries);
+          var filmEntriesWithReviews = attachLatestWrittenReviews(filmEntries);
+          renderRecentWatches(filmEntriesWithReviews);
+          renderFeatured(filmEntriesWithReviews[0]);
+          if (listEntries.length >= 10) {
+            renderListActivity(listEntries);
+          } else {
+            loadProfileLists()
+              .then(function (profileLists) {
+                renderListActivity(mergeListEntries(listEntries, profileLists, 10));
+              })
+              .catch(function () {
+                renderListActivity(mergeListEntries(listEntries, fallbackListActivity, 10));
+              });
+          }
           feedStatus.textContent = 'Live from Letterboxd.';
         })
         .catch(function (error) {
@@ -509,3 +906,5 @@
   </script>
 </body>
 </html>
+
+

@@ -1,0 +1,729 @@
+/*
+  bitcoin-styles.css
+  Bitcoin route theme: asymmetrical desk-and-instruments layout.
+*/
+
+.bitcoin-page {
+  --btc-bg-0: #130c09;
+  --btc-bg-1: #20130f;
+  --btc-bg-2: #2e1b14;
+  --btc-ink: #f6e7cb;
+  --btc-muted: rgba(246, 227, 194, 0.76);
+  --btc-gold: #f3c27d;
+  --btc-copper: #9d5138;
+  --btc-copper-deep: #6d301f;
+  --btc-shadow: rgba(0, 0, 0, 0.56);
+  --btc-panel-edge: rgba(244, 199, 128, 0.28);
+
+  color: var(--btc-ink);
+  font-family: "IBM Plex Sans Condensed", "Trebuchet MS", sans-serif;
+  background:
+    radial-gradient(1250px 540px at 14% -8%, rgba(153, 64, 35, 0.32), transparent 68%),
+    radial-gradient(900px 620px at 110% 6%, rgba(102, 39, 26, 0.3), transparent 70%),
+    radial-gradient(980px 640px at 50% 114%, rgba(91, 34, 22, 0.26), transparent 72%),
+    repeating-linear-gradient(
+      90deg,
+      rgba(197, 144, 86, 0.04) 0,
+      rgba(197, 144, 86, 0.04) 1px,
+      transparent 1px,
+      transparent 26px
+    ),
+    linear-gradient(180deg, var(--btc-bg-0), var(--btc-bg-1) 44%, var(--btc-bg-2) 100%);
+}
+
+.bitcoin-page p {
+  color: rgba(246, 232, 210, 0.88);
+}
+
+.btc-rail {
+  padding: 1.2rem 0 0.35rem;
+}
+
+.btc-rail-inner {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  gap: 0.7rem 1rem;
+  padding: 0.58rem 0.84rem;
+  background:
+    radial-gradient(circle at 14% 18%, rgba(255, 227, 177, 0.2), transparent 38%),
+    repeating-linear-gradient(
+      90deg,
+      rgba(115, 64, 41, 0.17) 0,
+      rgba(115, 64, 41, 0.17) 2px,
+      rgba(89, 48, 31, 0.16) 2px,
+      rgba(89, 48, 31, 0.16) 6px
+    ),
+    linear-gradient(180deg, #7f3f2b, #5c2b1e 82%, #4f2418 100%);
+  border: 1px solid rgba(251, 211, 143, 0.34);
+  box-shadow:
+    inset 0 1px 0 rgba(255, 232, 191, 0.4),
+    0 14px 24px var(--btc-shadow);
+}
+
+.btc-rail-label {
+  margin: 0;
+  color: #f9dfb4;
+  font-family: "Cinzel", "Libre Caslon Text", serif;
+  font-size: 0.95rem;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+.btc-rail-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.btc-rail-links a {
+  color: #2a160f;
+  text-decoration: none;
+  font-family: "Cinzel", "Libre Caslon Text", serif;
+  font-size: 0.7rem;
+  letter-spacing: 0.7px;
+  text-transform: uppercase;
+  padding: 0.3rem 0.55rem;
+  border: 1px solid rgba(101, 58, 37, 0.6);
+  background: linear-gradient(180deg, #f4d19b, #d89f5f);
+  box-shadow:
+    inset 0 1px 0 rgba(255, 239, 211, 0.66),
+    0 3px 8px rgba(0, 0, 0, 0.28);
+}
+
+.btc-rail-links a:hover {
+  filter: brightness(1.05);
+}
+
+.btc-desk {
+  padding: 0.5rem 0 1.35rem;
+}
+
+.btc-desk-grid {
+  display: grid;
+  grid-template-columns: minmax(250px, 0.92fr) minmax(0, 1.54fr) minmax(255px, 1fr);
+  grid-template-areas:
+    "codex chart price"
+    "news reading blocks";
+  gap: 0.98rem;
+  align-items: stretch;
+}
+
+.btc-codex {
+  grid-area: codex;
+  position: relative;
+  transform: none;
+  padding: 0.62rem;
+  background: linear-gradient(148deg, #9f5035, #783424 66%, #662b1d 100%);
+  box-shadow:
+    0 22px 30px var(--btc-shadow),
+    inset 0 0 0 1px rgba(255, 223, 167, 0.2),
+    inset 0 0 0 4px rgba(66, 26, 18, 0.36);
+}
+
+.btc-codex::after {
+  content: "";
+  position: absolute;
+  left: -0.25rem;
+  top: 42%;
+  width: 0.28rem;
+  height: 3.6rem;
+  border-radius: 1px;
+  background: linear-gradient(180deg, #ad5639, #7f3725);
+  box-shadow: inset 0 0 0 1px rgba(70, 28, 19, 0.48);
+}
+
+.btc-codex-frame {
+  position: relative;
+  padding: 0.62rem;
+  border: 1px solid rgba(250, 214, 152, 0.36);
+  background:
+    repeating-conic-gradient(
+      from 0deg,
+      rgba(243, 216, 166, 0.9) 0deg 10deg,
+      rgba(141, 74, 54, 0.94) 10deg 20deg
+    );
+  background-size: 17px 17px;
+}
+
+.btc-codex-core {
+  position: relative;
+  min-height: 418px;
+  padding: 1rem 0.95rem 1.08rem;
+  text-align: center;
+  background:
+    radial-gradient(circle at 24% 12%, rgba(255, 219, 166, 0.16), transparent 48%),
+    linear-gradient(180deg, #b15a3c, #8a3c29 69%, #753120 100%);
+  border: 1px solid rgba(255, 225, 177, 0.52);
+  box-shadow:
+    inset 0 0 0 1px rgba(79, 32, 22, 0.56),
+    inset 0 1px 0 rgba(255, 229, 184, 0.24);
+}
+
+.btc-kicker {
+  margin: 0.2rem 0 0;
+  color: rgba(252, 225, 183, 0.9);
+  font-family: "Special Elite", "Courier New", monospace;
+  font-size: 0.64rem;
+  letter-spacing: 1.25px;
+  text-transform: uppercase;
+}
+
+.btc-codex h1 {
+  margin: 0.52rem 0 0;
+  color: #fce3bb;
+  font-family: "Cinzel", "Libre Caslon Text", serif;
+  font-size: clamp(2rem, 4.4vw, 3rem);
+  letter-spacing: 1.1px;
+  line-height: 1;
+  text-transform: uppercase;
+}
+
+.btc-symbol {
+  margin: 0.45rem 0 0;
+  color: #fce3ba;
+  font-family: "IM Fell English SC", "Cinzel", serif;
+  font-size: clamp(4.2rem, 8.4vw, 5.8rem);
+  line-height: 0.86;
+  text-shadow:
+    0 1px 0 rgba(54, 23, 16, 0.78),
+    0 0 16px rgba(255, 211, 140, 0.24);
+}
+
+.btc-subtitle {
+  margin: 0.56rem auto 0;
+  max-width: 28ch;
+  font-size: 0.94rem;
+  line-height: 1.34;
+}
+
+.btc-hero-links {
+  margin-top: 0.95rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.56rem;
+}
+
+.btc-hero-links a {
+  color: #2b170f;
+  text-decoration: none;
+  font-family: "Cinzel", "Libre Caslon Text", serif;
+  font-size: 0.74rem;
+  letter-spacing: 0.62px;
+  text-transform: uppercase;
+  padding: 0.34rem 0.62rem;
+  border: 1px solid rgba(110, 61, 39, 0.56);
+  background: linear-gradient(180deg, #f6d3a0, #daa464);
+  box-shadow:
+    inset 0 1px 0 rgba(255, 237, 207, 0.68),
+    0 4px 9px rgba(0, 0, 0, 0.28);
+}
+
+.btc-hero-links a:hover {
+  filter: brightness(1.06);
+}
+
+.btc-panel {
+  position: relative;
+  padding: 1.02rem 0.98rem;
+  border: 1px solid var(--btc-panel-edge);
+  background:
+    radial-gradient(circle at 12% 8%, rgba(255, 223, 170, 0.08), transparent 38%),
+    linear-gradient(180deg, #351e15, #24150f);
+  box-shadow:
+    0 16px 26px var(--btc-shadow),
+    inset 0 1px 0 rgba(255, 225, 176, 0.12);
+}
+
+.btc-panel::before {
+  content: "";
+  position: absolute;
+  width: 8px;
+  height: 8px;
+  top: 0.45rem;
+  right: 0.45rem;
+  border-radius: 50%;
+  background: linear-gradient(180deg, #e6bf84, #a8793d);
+  box-shadow:
+    inset 0 1px 0 rgba(255, 240, 213, 0.65),
+    0 0 0 1px rgba(98, 61, 34, 0.62);
+}
+
+.btc-panel h2 {
+  margin: 0;
+  color: #ffdeab;
+  font-family: "Cinzel", "Libre Caslon Text", serif;
+  font-size: clamp(1.16rem, 2vw, 1.66rem);
+  line-height: 1.06;
+  letter-spacing: 0.78px;
+  text-transform: uppercase;
+}
+
+.btc-panel-head {
+  display: flex;
+  justify-content: space-between;
+  gap: 0.8rem;
+  align-items: flex-start;
+  margin-bottom: 0.8rem;
+  padding-bottom: 0.48rem;
+  border-bottom: 1px solid rgba(247, 205, 138, 0.2);
+}
+
+.btc-status {
+  margin: 0.14rem 0 0;
+  color: rgba(247, 218, 170, 0.84);
+  font-family: "Special Elite", "Courier New", monospace;
+  font-size: 0.56rem;
+  letter-spacing: 0.68px;
+  line-height: 1.2;
+  text-align: right;
+  text-transform: uppercase;
+}
+
+.btc-price-panel {
+  grid-area: price;
+  display: flex;
+  flex-direction: column;
+  background:
+    radial-gradient(circle at 70% 18%, rgba(255, 222, 168, 0.15), transparent 48%),
+    repeating-linear-gradient(
+      0deg,
+      rgba(196, 139, 76, 0.1) 0,
+      rgba(196, 139, 76, 0.1) 1px,
+      rgba(91, 47, 30, 0.08) 1px,
+      rgba(91, 47, 30, 0.08) 5px
+    ),
+    linear-gradient(180deg, #643527, #4b261c 100%);
+}
+
+.btc-price-grid {
+  margin: 0;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  grid-auto-rows: 1fr;
+  gap: 0.6rem;
+}
+
+.btc-price-grid > div {
+  padding: 0.56rem 0.62rem;
+  border: 1px solid rgba(244, 186, 109, 0.34);
+  background: linear-gradient(180deg, rgba(40, 22, 17, 0.72), rgba(22, 13, 11, 0.72));
+}
+
+.btc-price-grid dt {
+  margin: 0;
+  color: rgba(246, 214, 166, 0.84);
+  font-family: "Special Elite", "Courier New", monospace;
+  font-size: 0.56rem;
+  letter-spacing: 0.7px;
+  text-transform: uppercase;
+}
+
+.btc-price-grid dd {
+  margin: 0.26rem 0 0;
+  color: #ffe6bd;
+  font-family: "IM Fell English SC", "Cinzel", serif;
+  font-size: 1.34rem;
+  letter-spacing: 0.24px;
+}
+
+.btc-price-grid .btc-price-grid-wide {
+  grid-column: 1 / -1;
+}
+
+#btc-price-value {
+  font-size: clamp(1.72rem, 2.8vw, 2.26rem);
+}
+
+#btc-change-24h.is-up,
+#btc-change-7d.is-up,
+#btc-change-30d.is-up {
+  color: #9de9ba;
+}
+
+#btc-change-24h.is-down,
+#btc-change-7d.is-down,
+#btc-change-30d.is-down {
+  color: #ffb29d;
+}
+
+.btc-chart-panel {
+  grid-area: chart;
+  display: flex;
+  flex-direction: column;
+  background:
+    radial-gradient(circle at 20% 8%, rgba(103, 147, 171, 0.11), transparent 44%),
+    linear-gradient(180deg, #2a1f1b, #181311);
+}
+
+.btc-chart-shell {
+  margin-top: 0.32rem;
+  padding: 0.6rem;
+  border: 1px solid rgba(118, 150, 167, 0.34);
+  background:
+    repeating-linear-gradient(
+      0deg,
+      rgba(95, 129, 148, 0.12) 0,
+      rgba(95, 129, 148, 0.12) 1px,
+      rgba(29, 37, 43, 0.22) 1px,
+      rgba(29, 37, 43, 0.22) 4px
+    ),
+    linear-gradient(180deg, #171f26, #12171d);
+  box-shadow:
+    inset 0 0 0 1px rgba(165, 190, 205, 0.18),
+    inset 0 0 20px rgba(0, 0, 0, 0.35);
+}
+
+.btc-chart-svg {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.btc-chart-meta {
+  margin: 0.68rem 0 0;
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 0.55rem;
+}
+
+.btc-chart-meta div {
+  padding: 0.52rem 0.56rem;
+  border: 1px solid rgba(236, 185, 111, 0.26);
+  background: rgba(22, 15, 12, 0.8);
+}
+
+.btc-chart-meta dt {
+  margin: 0;
+  color: rgba(243, 208, 160, 0.78);
+  font-family: "Special Elite", "Courier New", monospace;
+  font-size: 0.54rem;
+  letter-spacing: 0.62px;
+  text-transform: uppercase;
+}
+
+.btc-chart-meta dd {
+  margin: 0.2rem 0 0;
+  color: #fce0b4;
+  font-family: "IM Fell English SC", "Cinzel", serif;
+  font-size: 1.06rem;
+}
+
+.btc-block-panel {
+  grid-area: blocks;
+  height: 100%;
+  background:
+    radial-gradient(circle at 84% 10%, rgba(172, 232, 177, 0.09), transparent 48%),
+    linear-gradient(180deg, #1d1f1c, #111412 100%);
+}
+
+.btc-news-panel {
+  grid-area: news;
+  transform: none;
+  height: 100%;
+  background:
+    radial-gradient(circle at 14% 16%, rgba(255, 236, 202, 0.14), transparent 52%),
+    linear-gradient(180deg, #4b3222, #352116 100%);
+}
+
+.btc-reading-panel {
+  grid-area: reading;
+  transform: none;
+  height: 100%;
+  background:
+    radial-gradient(circle at 74% 16%, rgba(255, 230, 182, 0.13), transparent 50%),
+    linear-gradient(180deg, #453125, #2f2118 100%);
+}
+
+.btc-note {
+  margin: 0.64rem 0 0;
+  color: var(--btc-muted);
+  font-size: 0.82rem;
+  line-height: 1.3;
+}
+
+.btc-note a {
+  color: #ffdca7;
+}
+
+.btc-button {
+  display: inline-block;
+  margin-top: 0.72rem;
+  color: #2f160f;
+  text-decoration: none;
+  font-family: "Cinzel", "Libre Caslon Text", serif;
+  font-size: 0.72rem;
+  letter-spacing: 0.64px;
+  text-transform: uppercase;
+  padding: 0.34rem 0.62rem;
+  border: 1px solid rgba(113, 64, 40, 0.58);
+  background: linear-gradient(180deg, #f5d39f, #d9a261);
+  box-shadow:
+    inset 0 1px 0 rgba(255, 237, 210, 0.66),
+    0 4px 9px rgba(0, 0, 0, 0.26);
+}
+
+.btc-button:hover {
+  filter: brightness(1.05);
+}
+
+.btc-block-list,
+.btc-news-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: grid;
+  gap: 0.42rem;
+}
+
+.btc-block-list li,
+.btc-news-list li {
+  padding: 0.48rem 0.56rem;
+  border: 1px solid rgba(244, 190, 112, 0.24);
+  background: rgba(18, 13, 11, 0.54);
+}
+
+.btc-block-list a,
+.btc-news-list a {
+  color: #ffe2b1;
+  text-decoration: none;
+  font-family: "Libre Caslon Text", "Georgia", serif;
+  font-size: 0.94rem;
+  line-height: 1.2;
+}
+
+.btc-block-list a:hover,
+.btc-news-list a:hover {
+  color: #ffeecf;
+  text-decoration: underline;
+}
+
+.btc-block-list span,
+.btc-news-list span {
+  display: block;
+  margin-top: 0.26rem;
+  color: var(--btc-muted);
+  font-size: 0.72rem;
+}
+
+@media (min-width: 1181px) {
+  .btc-block-list {
+    max-height: 31rem;
+    overflow-y: auto;
+    padding-right: 0.22rem;
+    scrollbar-width: thin;
+    scrollbar-color: rgba(233, 188, 115, 0.45) rgba(20, 13, 10, 0.52);
+  }
+
+  .btc-news-list li:nth-child(n + 5) {
+    display: none;
+  }
+}
+
+.btc-block-list::-webkit-scrollbar {
+  width: 8px;
+}
+
+.btc-block-list::-webkit-scrollbar-track {
+  background: rgba(20, 13, 10, 0.52);
+}
+
+.btc-block-list::-webkit-scrollbar-thumb {
+  background: linear-gradient(180deg, rgba(239, 198, 130, 0.56), rgba(132, 91, 46, 0.56));
+  border: 1px solid rgba(72, 47, 24, 0.5);
+}
+
+.btc-fallback {
+  color: rgba(245, 220, 179, 0.82);
+  font-size: 0.9rem;
+}
+
+.btc-reading-columns {
+  margin-top: 0.56rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.54rem;
+}
+
+.btc-reading-columns section {
+  display: grid;
+  grid-template-columns: minmax(8.2rem, 10rem) minmax(0, 1fr);
+  align-items: start;
+  gap: 0.58rem;
+  padding: 0.48rem 0.54rem;
+  border: 1px solid rgba(246, 197, 124, 0.24);
+  background: rgba(18, 13, 11, 0.46);
+}
+
+.btc-reading-columns h3 {
+  margin: 0;
+  color: #fddda9;
+  font-family: "Cinzel", "Libre Caslon Text", serif;
+  font-size: 0.8rem;
+  letter-spacing: 0.46px;
+  text-transform: uppercase;
+}
+
+.btc-reading-columns ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.3rem 0.36rem;
+}
+
+.btc-reading-columns li {
+  margin: 0;
+  color: rgba(247, 226, 194, 0.86);
+  line-height: 1.2;
+}
+
+.btc-reading-columns a {
+  display: inline-flex;
+  align-items: center;
+  min-height: 1.36rem;
+  padding: 0.16rem 0.36rem;
+  border: 1px solid rgba(242, 188, 111, 0.26);
+  background: rgba(22, 14, 11, 0.58);
+  color: #ffe4b7;
+  font-size: 0.88rem;
+  line-height: 1.2;
+  text-decoration: none;
+}
+
+.btc-reading-columns a:hover {
+  color: #fff0d3;
+  border-color: rgba(245, 205, 145, 0.4);
+  background: rgba(28, 18, 13, 0.72);
+  text-decoration: none;
+}
+
+.bitcoin-page footer {
+  position: relative;
+  z-index: 2;
+}
+
+.bitcoin-page footer .container {
+  color: rgba(247, 225, 193, 0.76);
+}
+
+@media (max-width: 1180px) {
+  .btc-desk-grid {
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+    grid-template-areas:
+      "codex price"
+      "chart chart"
+      "news blocks"
+      "reading reading";
+  }
+
+  .btc-codex,
+  .btc-news-panel,
+  .btc-reading-panel {
+    transform: none;
+  }
+
+  .btc-codex-core {
+    min-height: 408px;
+  }
+}
+
+@media (max-width: 760px) {
+  .btc-rail {
+    padding-top: 1rem;
+  }
+
+  .btc-rail-inner {
+    padding: 0.52rem 0.62rem;
+  }
+
+  .btc-rail-label {
+    font-size: 0.82rem;
+  }
+
+  .btc-rail-links a {
+    font-size: 0.62rem;
+    letter-spacing: 0.52px;
+    padding: 0.26rem 0.48rem;
+  }
+
+  .btc-desk {
+    padding-top: 0.24rem;
+  }
+
+  .btc-desk-grid {
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "codex"
+      "price"
+      "chart"
+      "blocks"
+      "news"
+      "reading";
+    gap: 0.82rem;
+  }
+
+  .btc-codex {
+    padding: 0.5rem;
+  }
+
+  .btc-codex-frame {
+    padding: 0.5rem;
+  }
+
+  .btc-codex-core {
+    min-height: 356px;
+    padding: 0.84rem 0.76rem 0.92rem;
+  }
+
+  .btc-kicker {
+    font-size: 0.56rem;
+    letter-spacing: 1px;
+  }
+
+  .btc-subtitle {
+    font-size: 0.9rem;
+  }
+
+  .btc-panel {
+    padding: 0.78rem;
+  }
+
+  .btc-panel h2 {
+    font-size: clamp(1.08rem, 5.6vw, 1.42rem);
+    letter-spacing: 0.62px;
+  }
+
+  .btc-status {
+    font-size: 0.54rem;
+  }
+
+  .btc-price-grid dd {
+    font-size: 1.12rem;
+  }
+
+  #btc-price-value {
+    font-size: clamp(1.38rem, 6.3vw, 1.86rem);
+  }
+
+  .btc-chart-meta {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .btc-reading-columns {
+    gap: 0.5rem;
+  }
+
+  .btc-reading-columns section {
+    grid-template-columns: 1fr;
+    gap: 0.36rem;
+  }
+
+  .btc-block-list a,
+  .btc-news-list a {
+    font-size: 0.92rem;
+  }
+}

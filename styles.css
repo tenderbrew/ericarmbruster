@@ -2958,6 +2958,187 @@ footer .container {
   text-transform: none;
 }
 
+.shelf-book--bitcoin {
+  --spine-main: #9f4f35;
+  --spine-dark: #6a2d1f;
+  --spine-emboss: rgba(255, 218, 166, 0.22);
+  --cover-main: #a95338;
+  --cover-dark: #7a3725;
+  --book-rib: repeating-linear-gradient(
+    90deg,
+    rgba(255, 223, 174, 0.08) 0,
+    rgba(255, 223, 174, 0.08) 1px,
+    rgba(79, 33, 23, 0.14) 1px,
+    rgba(79, 33, 23, 0.14) 6px
+  );
+  --book-grain: repeating-linear-gradient(
+    0deg,
+    rgba(255, 224, 178, 0.08) 0,
+    rgba(255, 224, 178, 0.08) 1px,
+    rgba(94, 40, 27, 0.08) 1px,
+    rgba(94, 40, 27, 0.08) 4px
+  );
+  --book-title-font: "Libre Caslon Display";
+  --title-spine-size: 1.18rem;
+  --title-spine-spacing: 0.92px;
+}
+
+.shelf-book--bitcoin::after {
+  content: none;
+}
+
+.shelf-book--bitcoin .book-spine-title {
+  color: #ffe8c0;
+  font-family: "Libre Caslon Display", "Libre Caslon Text", "Georgia", serif;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.58px;
+  background:
+    radial-gradient(circle at 50% 12%, rgba(255, 228, 181, 0.2), transparent 32%),
+    var(--book-grain),
+    var(--book-rib),
+    linear-gradient(180deg, #b15a3c, #873b28 78%, #6f2f20 100%);
+  box-shadow:
+    inset 0 0 0 1px rgba(255, 218, 163, 0.22),
+    inset -2px 0 0 rgba(52, 20, 14, 0.5),
+    inset 2px 0 0 rgba(247, 201, 132, 0.2);
+  text-shadow:
+    0 1px 0 rgba(55, 23, 16, 0.84),
+    0 0 6px rgba(255, 214, 148, 0.2);
+}
+
+.shelf-book--bitcoin .book-spine-title::before,
+.shelf-book--bitcoin .book-spine-title::after {
+  left: 9px;
+  right: 9px;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, rgba(250, 213, 152, 0.62), transparent);
+  box-shadow: none;
+}
+
+.shelf-book--bitcoin .book-cover {
+  background:
+    radial-gradient(circle at 18% 12%, rgba(255, 223, 172, 0.2), transparent 42%),
+    radial-gradient(circle at 82% 90%, rgba(95, 41, 28, 0.24), transparent 56%),
+    linear-gradient(152deg, #ba6241, #8f412b 66%, #793523 100%);
+  box-shadow:
+    inset 0 0 0 1px rgba(255, 218, 161, 0.24),
+    inset 0 0 0 4px rgba(56, 22, 15, 0.38),
+    inset 0 -1px 0 rgba(0, 0, 0, 0.26);
+}
+
+.shelf-book--bitcoin .book-cover::before {
+  content: "";
+  left: 0.56rem;
+  right: 0.56rem;
+  top: 0.56rem;
+  bottom: 0.56rem;
+  border: 1px solid rgba(245, 203, 141, 0.5);
+  background:
+    repeating-conic-gradient(
+      from 0deg,
+      rgba(247, 217, 164, 0.84) 0deg 10deg,
+      rgba(148, 76, 56, 0.92) 10deg 20deg
+    );
+  background-size: 13px 13px;
+  box-shadow:
+    inset 0 0 0 1px rgba(65, 26, 18, 0.54);
+}
+
+.shelf-book--bitcoin .book-cover::after {
+  content: "";
+  left: 1.04rem;
+  right: 1.04rem;
+  top: 1.04rem;
+  bottom: 1.04rem;
+  border: 1px solid rgba(250, 219, 171, 0.56);
+  background:
+    radial-gradient(circle at 26% 14%, rgba(255, 227, 183, 0.18), transparent 46%),
+    linear-gradient(180deg, #b25c3d, #873b29 100%);
+  box-shadow: inset 0 0 0 1px rgba(77, 31, 21, 0.54);
+}
+
+.shelf-book--bitcoin .shelf-body {
+  min-height: 100%;
+  padding: 0.95rem 0.56rem 0.66rem;
+  justify-content: flex-start;
+  z-index: 4;
+}
+
+.shelf-book--bitcoin .shelf-body::before {
+  content: "SATOSHI SCRIPT";
+  left: 0.86rem;
+  right: 0.86rem;
+  top: 0.9rem;
+  width: auto;
+  height: auto;
+  color: rgba(253, 225, 178, 0.88);
+  font-family: "Libre Caslon Text", "Georgia", serif;
+  font-size: 0.48rem;
+  letter-spacing: 0.82px;
+  text-transform: uppercase;
+  background: none;
+  box-shadow: none;
+  clip-path: none;
+}
+
+.shelf-book--bitcoin .shelf-body::after {
+  content: "";
+  left: 0.86rem;
+  right: 0.86rem;
+  top: 1.42rem;
+  width: auto;
+  height: 1px;
+  background: rgba(250, 221, 175, 0.38);
+  box-shadow: none;
+  clip-path: none;
+  opacity: 1;
+}
+
+.shelf-book--bitcoin .shelf-body h3 {
+  width: min(84%, 196px);
+  margin-top: 1.66rem;
+  min-height: 4.58rem;
+  position: relative;
+  color: transparent;
+  background: none;
+  border: none;
+  box-shadow: none;
+  font-size: 0;
+  line-height: 1;
+  padding: 0;
+  text-shadow: none;
+}
+
+.shelf-book--bitcoin .shelf-body h3::before {
+  content: "\20BF";
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  color: #fce2b8;
+  font-family: "IM Fell English SC", "Cinzel", serif;
+  font-size: 3.5rem;
+  line-height: 0.9;
+  text-transform: none;
+  text-shadow:
+    0 1px 0 rgba(61, 25, 17, 0.8),
+    0 0 8px rgba(255, 211, 139, 0.24);
+}
+
+.shelf-book--bitcoin .shelf-body h3::after {
+  content: "The Bitcoin Standard";
+  display: block;
+  margin-top: 3.3rem;
+  color: #f9ddb0;
+  font-family: "Cinzel", "Libre Caslon Text", serif;
+  font-size: 0.9rem;
+  font-weight: 700;
+  letter-spacing: 0.8px;
+  line-height: 1.05;
+  text-transform: uppercase;
+}
+
 .book-index {
   position: absolute;
   left: 0.5rem;
@@ -4085,6 +4266,11 @@ footer .container {
     --title-spine-spacing: 0.78px;
   }
 
+  .shelf-book--bitcoin {
+    --title-spine-size: 1.08rem;
+    --title-spine-spacing: 0.78px;
+  }
+
   .book-index {
     width: 1.82rem;
     min-height: 1.5rem;
@@ -4201,6 +4387,32 @@ footer .container {
     height: 16px;
     font-size: 0.36rem;
     letter-spacing: 0.56px;
+  }
+
+  .shelf-book--bitcoin .shelf-body h3 {
+    width: min(82%, 176px);
+    margin-top: 1.48rem;
+    min-height: 3.98rem;
+  }
+
+  .shelf-book--bitcoin .shelf-body h3::before {
+    font-size: 2.94rem;
+  }
+
+  .shelf-book--bitcoin .shelf-body h3::after {
+    margin-top: 2.82rem;
+    font-size: 0.76rem;
+    letter-spacing: 0.66px;
+  }
+
+  .shelf-book--bitcoin .shelf-body::before {
+    top: 0.78rem;
+    font-size: 0.42rem;
+    letter-spacing: 0.72px;
+  }
+
+  .shelf-book--bitcoin .shelf-body::after {
+    top: 1.24rem;
   }
 
   .book-pages::before {
@@ -4650,6 +4862,11 @@ footer .container {
     --title-spine-spacing: 0.66px;
   }
 
+  .shelf-book--bitcoin {
+    --title-spine-size: 0.94rem;
+    --title-spine-spacing: 0.66px;
+  }
+
   .book-index {
     width: 1.68rem;
     min-height: 1.38rem;
@@ -4766,6 +4983,32 @@ footer .container {
     height: 14px;
     font-size: 0.32rem;
     letter-spacing: 0.5px;
+  }
+
+  .shelf-book--bitcoin .shelf-body h3 {
+    width: min(82%, 154px);
+    margin-top: 1.26rem;
+    min-height: 3.42rem;
+  }
+
+  .shelf-book--bitcoin .shelf-body h3::before {
+    font-size: 2.44rem;
+  }
+
+  .shelf-book--bitcoin .shelf-body h3::after {
+    margin-top: 2.36rem;
+    font-size: 0.66rem;
+    letter-spacing: 0.56px;
+  }
+
+  .shelf-book--bitcoin .shelf-body::before {
+    top: 0.68rem;
+    font-size: 0.36rem;
+    letter-spacing: 0.6px;
+  }
+
+  .shelf-book--bitcoin .shelf-body::after {
+    top: 1.08rem;
   }
 
   .book-cover {

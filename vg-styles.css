@@ -1461,6 +1461,30 @@
   color: rgba(160, 180, 155, 0.6);
 }
 
+.vg-status-endless {
+  color: #a884ff;
+  text-shadow: 0 0 4px rgba(168, 132, 255, 0.34);
+}
+
+.vg-status-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 0.9rem;
+  height: 0.9rem;
+  margin-right: 0.22rem;
+  border: 1px solid currentColor;
+  border-radius: 999px !important;
+  font-family: var(--vg-font-pixel-sm);
+  font-size: 0.44rem;
+  line-height: 1;
+  vertical-align: text-bottom;
+}
+
+.vg-status-icon--endless {
+  background: rgba(168, 132, 255, 0.12);
+}
+
 
 .vg-platform-list {
   list-style: none;

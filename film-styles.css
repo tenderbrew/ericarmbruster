@@ -25,6 +25,7 @@
 
   color: #f6e7cc;
   font-family: "IBM Plex Sans Condensed", "Trebuchet MS", sans-serif;
+  font-size: 38px;
   background:
     radial-gradient(1200px 560px at 50% -12%, rgba(130, 45, 30, 0.35), transparent 72%),
     radial-gradient(1000px 700px at -10% 100%, rgba(95, 20, 25, 0.26), transparent 70%),
@@ -371,7 +372,7 @@
 
 .film-panel h2 {
   margin: 0 0 0.75rem;
-  font-size: clamp(1rem, 2vw, 1.45rem);
+  font-size: clamp(1.15rem, 2.2vw, 1.65rem);
 }
 
 .film-panel-head {
@@ -385,7 +386,7 @@
 .film-feed-status {
   margin: 0;
   font-family: "Special Elite", "Courier New", monospace;
-  font-size: 0.52rem;
+  font-size: 0.6rem;
   letter-spacing: 1px;
   color: #f6c97f;
   text-transform: uppercase;
@@ -431,7 +432,7 @@
 
 .film-strip-item a {
   color: #ffe2b2;
-  font-size: 0.9rem;
+  font-size: 1rem;
   line-height: 1.25;
 }
 
@@ -445,9 +446,16 @@
 .film-strip-meta {
   color: rgba(232, 210, 178, 0.7);
   font-family: "Special Elite", "Courier New", monospace;
-  font-size: 0.53rem;
-  letter-spacing: 0.5px;
+  font-size: 0.66rem;
+  letter-spacing: 0.35px;
   text-transform: uppercase;
+}
+
+.film-strip-review {
+  margin: 0.08rem 0 0;
+  color: rgba(239, 225, 201, 0.84);
+  font-size: 0.84rem;
+  line-height: 1.35;
 }
 
 .film-stats-grid {
@@ -466,7 +474,7 @@
 .film-stats-grid dt {
   margin: 0;
   font-family: "Special Elite", "Courier New", monospace;
-  font-size: 0.5rem;
+  font-size: 0.58rem;
   letter-spacing: 1px;
   color: rgba(241, 205, 146, 0.78);
   text-transform: uppercase;
@@ -474,7 +482,7 @@
 
 .film-stats-grid dd {
   margin: 0.2rem 0 0;
-  font-size: 1.15rem;
+  font-size: 1.3rem;
   color: #ffe4b6;
   font-family: "Bebas Neue", "Impact", sans-serif;
   letter-spacing: 1px;
@@ -482,7 +490,7 @@
 
 .film-note {
   margin: 0.8rem 0 0;
-  font-size: 0.68rem;
+  font-size: 0.76rem;
   color: rgba(236, 215, 180, 0.72);
 }
 
@@ -509,13 +517,13 @@
 
 .film-featured-copy h3 {
   margin: 0;
-  font-size: 1.2rem;
+  font-size: 1.35rem;
 }
 
 .film-featured-meta {
   margin: 0.25rem 0 0.45rem;
   font-family: "Special Elite", "Courier New", monospace;
-  font-size: 0.52rem;
+  font-size: 0.64rem;
   color: rgba(240, 204, 137, 0.78);
   text-transform: uppercase;
   letter-spacing: 0.8px;
@@ -523,13 +531,13 @@
 
 .film-featured-copy p {
   margin: 0 0 0.5rem;
-  font-size: 0.82rem;
+  font-size: 0.92rem;
   color: rgba(255, 233, 198, 0.84);
 }
 
 .film-featured-copy a {
   font-family: "Special Elite", "Courier New", monospace;
-  font-size: 0.62rem;
+  font-size: 0.7rem;
   text-transform: uppercase;
   letter-spacing: 0.8px;
   color: #f6cb84;
@@ -559,14 +567,14 @@
 
 .film-list-activity a {
   color: #f2d3a1;
-  font-size: 0.78rem;
+  font-size: 0.88rem;
   line-height: 1.2;
 }
 
 .film-list-activity span {
   color: rgba(229, 208, 173, 0.7);
   font-family: "Special Elite", "Courier New", monospace;
-  font-size: 0.54rem;
+  font-size: 0.62rem;
   text-transform: uppercase;
   white-space: nowrap;
 }
@@ -657,6 +665,10 @@
 }
 
 @media (max-width: 720px) {
+  .film-page {
+    font-size: 36px;
+  }
+
   .film-hero {
     padding-top: 1.2rem;
   }
@@ -666,11 +678,11 @@
   }
 
   .film-kicker {
-    font-size: 0.5rem;
+    font-size: 0.56rem;
   }
 
   .film-subtitle {
-    font-size: 0.78rem;
+    font-size: 0.86rem;
   }
 
   .film-featured-card {
@@ -686,6 +698,10 @@
   }
 
   .film-strip-item a {
-    font-size: 0.82rem;
+    font-size: 0.92rem;
+  }
+
+  .film-strip-review {
+    font-size: 0.76rem;
   }
 }
