@@ -331,6 +331,7 @@
                 <span>-- played</span>
                 <span>-- unplayed</span>
               </div>
+              <p class="vg-steam-updated" id="steam-updated">Last Steam refresh: --</p>
               <div class="vg-steam-columns">
                 <div class="vg-steam-col">
                   <h2 class="vg-steam-heading">Recently Played</h2>
@@ -667,11 +668,26 @@
     // Script 2: fetch generated Steam snapshot and populate stats/lists.
     (function () {
       var statsEl = document.getElementById('steam-stats');
+      var updatedEl = document.getElementById('steam-updated');
       var recentEl = document.getElementById('steam-recent');
       var topEl = document.getElementById('steam-top');
-      if (!statsEl || !recentEl || !topEl) return;
+      if (!statsEl || !updatedEl || !recentEl || !topEl) return;
+
+      function formatFetchedAt(isoString) {
+        var d = new Date(isoString);
+        if (Number.isNaN(d.getTime())) return 'Unavailable';
+        return new Intl.DateTimeFormat('en-US', {
+          weekday: 'short',
+          month: 'short',
+          day: 'numeric',
+          year: 'numeric',
+          hour: 'numeric',
+          minute: '2-digit'
+        }).format(d);
+      }
 
       function showError(msg) {
+        updatedEl.textContent = 'Last Steam refresh: unavailable';
         recentEl.textContent = '';
         topEl.textContent = '';
         var li1 = document.createElement('li');
@@ -714,6 +730,8 @@
             span.textContent = text;
             statsEl.appendChild(span);
           });
+
+          updatedEl.textContent = 'Last Steam refresh: ' + formatFetchedAt(data.fetchedAt);
 
           
           recentEl.textContent = '';
