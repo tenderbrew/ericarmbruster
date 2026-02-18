@@ -1,8 +1,9 @@
-/* ============================================================
-   FILM PAGE - Cinema Skeuomorphism
-   Scoped under .film-page
-   ============================================================ */
+/*
+  film-styles.css
+  Film route theme. Scoped to body.film-page for cinema-style visuals.
+*/
 
+/* Route-local palette and typography tokens. */
 .film-page {
   --film-bg-0: #090707;
   --film-bg-1: #140d0c;
@@ -68,6 +69,7 @@
   padding: 1.6rem 0 0;
 }
 
+/* Hero composition: marquee + projector motif. */
 .film-hero {
   position: relative;
   padding: 2.1rem 0 1.2rem;
@@ -100,7 +102,7 @@
     );
 }
 
-/* film-grain overlay */
+
 .film-hero::after {
   content: "";
   position: absolute;
@@ -142,7 +144,7 @@
   pointer-events: none;
   border: 1px solid rgba(210, 168, 95, 0.22);
   background:
-    /* top row of bulbs */
+    
     radial-gradient(circle at 8% 0%, rgba(255, 215, 150, 0.92) 0 2.5px, transparent 3.5px),
     radial-gradient(circle at 20% 0%, rgba(255, 215, 150, 0.92) 0 2.5px, transparent 3.5px),
     radial-gradient(circle at 32% 0%, rgba(255, 215, 150, 0.92) 0 2.5px, transparent 3.5px),
@@ -151,7 +153,7 @@
     radial-gradient(circle at 68% 0%, rgba(255, 215, 150, 0.92) 0 2.5px, transparent 3.5px),
     radial-gradient(circle at 80% 0%, rgba(255, 215, 150, 0.92) 0 2.5px, transparent 3.5px),
     radial-gradient(circle at 92% 0%, rgba(255, 215, 150, 0.92) 0 2.5px, transparent 3.5px),
-    /* bottom row of bulbs */
+    
     radial-gradient(circle at 8% 100%, rgba(255, 215, 150, 0.92) 0 2.5px, transparent 3.5px),
     radial-gradient(circle at 20% 100%, rgba(255, 215, 150, 0.92) 0 2.5px, transparent 3.5px),
     radial-gradient(circle at 32% 100%, rgba(255, 215, 150, 0.92) 0 2.5px, transparent 3.5px),
@@ -160,11 +162,11 @@
     radial-gradient(circle at 68% 100%, rgba(255, 215, 150, 0.92) 0 2.5px, transparent 3.5px),
     radial-gradient(circle at 80% 100%, rgba(255, 215, 150, 0.92) 0 2.5px, transparent 3.5px),
     radial-gradient(circle at 92% 100%, rgba(255, 215, 150, 0.92) 0 2.5px, transparent 3.5px),
-    /* left column of bulbs */
+    
     radial-gradient(circle at 0% 25%, rgba(255, 215, 150, 0.92) 0 2.5px, transparent 3.5px),
     radial-gradient(circle at 0% 50%, rgba(255, 215, 150, 0.92) 0 2.5px, transparent 3.5px),
     radial-gradient(circle at 0% 75%, rgba(255, 215, 150, 0.92) 0 2.5px, transparent 3.5px),
-    /* right column of bulbs */
+    
     radial-gradient(circle at 100% 25%, rgba(255, 215, 150, 0.92) 0 2.5px, transparent 3.5px),
     radial-gradient(circle at 100% 50%, rgba(255, 215, 150, 0.92) 0 2.5px, transparent 3.5px),
     radial-gradient(circle at 100% 75%, rgba(255, 215, 150, 0.92) 0 2.5px, transparent 3.5px);
@@ -203,7 +205,7 @@
   padding: 0.45rem 0.9rem;
   border: 1px solid rgba(241, 194, 115, 0.52);
   background:
-    /* perforated edge on right side */
+    
     radial-gradient(circle at 100% 20%, #26160e 3px, transparent 3.5px),
     radial-gradient(circle at 100% 50%, #26160e 3px, transparent 3.5px),
     radial-gradient(circle at 100% 80%, #26160e 3px, transparent 3.5px),
@@ -235,14 +237,14 @@
   top: 78px;
   height: 86px;
   background:
-    /* ventilation slots */
+    
     repeating-linear-gradient(
       90deg,
       transparent 0, transparent 10px,
       rgba(0, 0, 0, 0.08) 10px, rgba(0, 0, 0, 0.08) 11px,
       transparent 11px, transparent 21px
     ),
-    /* base metal */
+    
     linear-gradient(165deg, #a8adb4, #626a72 52%, #41464d 100%);
   box-shadow:
     0 12px 16px rgba(0, 0, 0, 0.45),
@@ -250,7 +252,7 @@
     inset 0 1px 0 rgba(255, 255, 255, 0.15);
 }
 
-/* rivets on projector body */
+
 .film-projector-body::before,
 .film-projector-body::after {
   content: "";
@@ -299,7 +301,7 @@
   height: 92px;
   border-radius: 50% !important;
   background:
-    /* spokes */
+    
     conic-gradient(
       from 0deg,
       transparent 0deg, transparent 4deg,
@@ -348,6 +350,7 @@
   align-items: stretch;
 }
 
+/* Reusable panel shell for feed, stats, featured, and list modules. */
 .film-panel {
   position: relative;
   padding: 1rem;
@@ -576,7 +579,7 @@
   color: rgba(244, 221, 184, 0.84);
 }
 
-/* gold section divider */
+
 .film-divider {
   height: 1px;
   margin: 1.2rem 0 0;
@@ -591,7 +594,7 @@
     );
 }
 
-/* panel corner brackets */
+
 .film-panel::before,
 .film-panel::after {
   content: "";
@@ -630,6 +633,7 @@
   50% { opacity: 0.72; }
 }
 
+/* Responsive panel stacking for narrower viewports. */
 @media (max-width: 1080px) {
   .film-hero .container {
     padding-left: 1.4rem;
@@ -685,4 +689,3 @@
     font-size: 0.82rem;
   }
 }
-

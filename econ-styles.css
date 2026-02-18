@@ -1,8 +1,9 @@
-/* ============================================================
-   ECONOMICS PAGE - Skeuomorphic Dashboard
-   Scoped under .econ-page
-   ============================================================ */
+/*
+  econ-styles.css
+  Economics route theme. Scoped to body.econ-page with dashboard styling.
+*/
 
+/* Route-local palette, typography, and background tokens. */
 .econ-page {
   --econ-bg-0: #080f0c;
   --econ-bg-1: #0f1a14;
@@ -51,6 +52,7 @@
   padding: 1.2rem 0 0;
 }
 
+/* Hero region with source chips and decorative gauges. */
 .econ-hero {
   padding: 1.8rem 0 1.1rem;
 }
@@ -166,7 +168,7 @@
     inset 0 0 0 8px rgba(28, 21, 14, 0.45);
 }
 
-/* dial face with tick marks */
+
 .econ-gauge::before {
   content: "";
   position: absolute;
@@ -177,7 +179,7 @@
   transform: translate(-50%, -50%);
   border-radius: 50% !important;
   background:
-    /* tick marks around the edge */
+    
     conic-gradient(
       from 210deg,
       transparent 0deg, transparent 3deg,
@@ -201,12 +203,12 @@
       transparent 197deg, transparent 240deg,
       transparent 240deg
     ),
-    /* dial face */
+    
     radial-gradient(circle at 30% 28%, rgba(245, 233, 208, 0.92), rgba(179, 147, 92, 0.88) 60%, rgba(85, 63, 34, 0.92));
   box-shadow: 0 0 0 6px rgba(51, 59, 50, 0.9), 0 0 0 8px rgba(205, 166, 99, 0.34);
 }
 
-/* needle */
+
 .econ-gauge::after {
   content: "";
   position: absolute;
@@ -220,7 +222,7 @@
   box-shadow: 0 0 2px rgba(0, 0, 0, 0.4);
 }
 
-/* each gauge gets a slightly different needle angle */
+
 .econ-gauge:nth-child(2)::after {
   transform: translate(-50%, -100%) rotate(-15deg);
 }
@@ -240,6 +242,7 @@
   letter-spacing: 1px;
 }
 
+/* Reusable content panel for indicators, feed, and reading queue. */
 .econ-panel {
   position: relative;
   padding: 0.95rem;
@@ -258,7 +261,7 @@
     inset 0 1px 0 rgba(255, 222, 163, 0.13);
 }
 
-/* brass corner brackets */
+
 .econ-panel::before,
 .econ-panel::after {
   content: "";
@@ -457,7 +460,7 @@
   font-size: 0.74rem;
 }
 
-/* brass section divider */
+
 .econ-divider {
   height: 2px;
   margin: 1.4rem 0 0;
@@ -473,7 +476,7 @@
   position: relative;
 }
 
-/* center ornament on divider */
+
 .econ-divider::before {
   content: "";
   position: absolute;
@@ -496,6 +499,7 @@
   color: rgba(223, 202, 167, 0.45);
 }
 
+/* Responsive collapse from wide two-column layouts to stacked blocks. */
 @media (max-width: 1080px) {
   .econ-hero .container {
     padding-left: 1.4rem;

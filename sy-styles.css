@@ -1,9 +1,9 @@
-/* ============================================================
-   SEYMOUR: A REMEMBRANCE — Vintage Photo Album Skeuomorphism
-   Scoped entirely under .sy-page body class
-   ============================================================ */
+/*
+  sy-styles.css
+  Seymour memorial route theme. Scoped to body.sy-page with scrapbook motifs.
+*/
 
-/* ----- Custom Properties ----- */
+/* Route-local palette and typography tokens. */
 .sy-page {
   --sy-leather: #1e2a3a;
   --sy-leather-dark: #0e1520;
@@ -25,7 +25,7 @@
   --sy-font-serif: "Playfair Display", "Georgia", serif;
   --sy-font-body: "Lora", "Libre Caslon Text", serif;
   --sy-font-script: "Herr Von Muellerhoff", cursive;
-  /* Dog-themed colors */
+  
   --sy-collar-red: #8b2020;
   --sy-collar-red-dark: #5c1414;
   --sy-collar-buckle: #c4a44a;
@@ -38,7 +38,7 @@
   --sy-paw: rgba(201, 162, 78, 0.08);
 }
 
-/* ----- Body Override — Midnight Navy Leather Texture ----- */
+
 .sy-page {
   background:
     repeating-linear-gradient(
@@ -64,7 +64,7 @@
   display: none;
 }
 
-/* ----- Global Style Overrides ----- */
+
 .sy-page .hero .container {
   background: none;
   box-shadow: none;
@@ -88,7 +88,7 @@
   font-family: inherit;
 }
 
-/* Border-radius overrides (global reset sets * to 0) */
+
 .sy-page .sy-timeline-marker {
   border-radius: 50% !important;
 }
@@ -121,7 +121,7 @@
   border-radius: 2px !important;
 }
 
-/* ----- Section Spacing ----- */
+
 .sy-page main:not(.home-rooms) > section {
   padding: var(--sy-section-gap) 0 0;
 }
@@ -130,11 +130,10 @@
   padding-bottom: var(--sy-section-gap);
 }
 
-/* ============================================================
-   REUSABLE COMPONENTS
-   ============================================================ */
 
-/* Album Page Panel — cream content area */
+
+
+/* Reusable paper-card surface used across memorial sections. */
 .sy-album-page {
   position: relative;
   background:
@@ -154,7 +153,7 @@
   color: var(--sy-text-on-cream);
 }
 
-/* Gilt Rule — decorative gold separator */
+
 .sy-gilt-rule {
   border: none;
   height: 2px;
@@ -170,7 +169,7 @@
   max-width: 60%;
 }
 
-/* Embossed Gilt Typography */
+
 .sy-embossed {
   font-family: var(--sy-font-serif);
   color: var(--sy-gilt);
@@ -180,7 +179,7 @@
     0 2px 6px rgba(0, 0, 0, 0.2);
 }
 
-/* Section Heading (on cream) */
+
 .sy-section-heading {
   font-family: var(--sy-font-serif);
   color: var(--sy-sepia);
@@ -189,7 +188,7 @@
   margin-bottom: 0.3rem;
 }
 
-/* Photo Mount — corner brackets */
+
 .sy-photo-mount {
   position: relative;
   padding: 8px;
@@ -208,7 +207,7 @@
   z-index: 2;
 }
 
-/* Top-left */
+
 .sy-photo-mount::before {
   top: 0;
   left: 0;
@@ -216,7 +215,7 @@
   border-bottom: none;
 }
 
-/* Top-right */
+
 .sy-photo-mount::after {
   top: 0;
   right: 0;
@@ -224,7 +223,7 @@
   border-bottom: none;
 }
 
-/* Bottom-left */
+
 .sy-photo-mount .sy-corner-bl {
   bottom: 0;
   left: 0;
@@ -232,7 +231,7 @@
   border-top: none;
 }
 
-/* Bottom-right */
+
 .sy-photo-mount .sy-corner-br {
   bottom: 0;
   right: 0;
@@ -240,11 +239,9 @@
   border-top: none;
 }
 
-/* ============================================================
-   DOG-THEMED SKEUOMORPHIC ELEMENTS
-   ============================================================ */
 
-/* Bone Divider — replaces gilt rule with a bone shape */
+
+
 .sy-bone-divider {
   position: relative;
   height: 14px;
@@ -254,7 +251,7 @@
   border: none;
 }
 
-/* Bone shaft */
+
 .sy-bone-divider::before {
   content: "";
   position: absolute;
@@ -266,7 +263,7 @@
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
 }
 
-/* Bone knobs — left and right ends */
+
 .sy-bone-divider::after {
   content: "";
   position: absolute;
@@ -275,17 +272,17 @@
   width: 100%;
   height: 100%;
   background:
-    /* left top knob */
+    
     radial-gradient(circle 7px at 7px 3px, var(--sy-gilt-bright), var(--sy-gilt) 60%, transparent 62%),
-    /* left bottom knob */
+    
     radial-gradient(circle 7px at 7px 11px, var(--sy-gilt-bright), var(--sy-gilt) 60%, transparent 62%),
-    /* right top knob */
+    
     radial-gradient(circle 7px at calc(100% - 7px) 3px, var(--sy-gilt-bright), var(--sy-gilt) 60%, transparent 62%),
-    /* right bottom knob */
+    
     radial-gradient(circle 7px at calc(100% - 7px) 11px, var(--sy-gilt-bright), var(--sy-gilt) 60%, transparent 62%);
 }
 
-/* Collar Band — stitched leather strip below hero portrait */
+
 .sy-collar {
   position: relative;
   width: 100%;
@@ -305,12 +302,12 @@
     0 3px 8px rgba(0, 0, 0, 0.5),
     inset 0 1px 0 rgba(255, 255, 255, 0.15),
     inset 0 -1px 0 rgba(0, 0, 0, 0.3);
-  /* Stitching */
+  
   border-top: 2px dashed rgba(220, 180, 140, 0.35);
   border-bottom: 2px dashed rgba(220, 180, 140, 0.35);
 }
 
-/* Collar buckle */
+
 .sy-collar::before {
   content: "";
   position: absolute;
@@ -325,7 +322,7 @@
   border-radius: 2px !important;
 }
 
-/* Collar tag — bone-shaped hanging tag */
+
 .sy-collar-tag {
   position: absolute;
   bottom: -20px;
@@ -355,7 +352,7 @@
   border-radius: 3px 3px 0 0 !important;
 }
 
-/* Paw Print — decorative accent */
+
 .sy-paw {
   position: absolute;
   width: 32px;
@@ -364,7 +361,7 @@
   pointer-events: none;
 }
 
-/* Main pad */
+
 .sy-paw::before {
   content: "";
   position: absolute;
@@ -377,7 +374,7 @@
   border-radius: 50% 50% 50% 50% / 40% 40% 60% 60% !important;
 }
 
-/* Toe pads */
+
 .sy-paw::after {
   content: "";
   position: absolute;
@@ -392,7 +389,7 @@
     radial-gradient(circle 5px at 30px 12px, var(--sy-gilt) 90%, transparent 91%);
 }
 
-/* Paw placements — scattered across page */
+
 .sy-paw--hero-l {
   top: 30%;
   left: 6%;
@@ -423,13 +420,13 @@
   transform: rotate(-10deg);
 }
 
-/* Dog Bowl — profile card top */
+
 .sy-bowl {
   position: relative;
   overflow: visible;
 }
 
-/* Bowl rim — curved top edge */
+
 .sy-bowl::before {
   content: "";
   position: absolute;
@@ -450,7 +447,7 @@
   border-radius: 4px 4px 0 0 !important;
 }
 
-/* Bowl body shape — slightly tapered sides */
+
 .sy-bowl::after {
   content: "";
   position: absolute;
@@ -463,13 +460,13 @@
   pointer-events: none;
 }
 
-/* Doghouse Frame — peaked roof around stories section */
+
 .sy-doghouse {
   position: relative;
   padding-top: 2.4rem;
 }
 
-/* Roof peak */
+
 .sy-doghouse-roof {
   position: relative;
   height: 48px;
@@ -486,7 +483,7 @@
   width: 120%;
   height: 100%;
   background:
-    /* Shingle texture */
+    
     repeating-linear-gradient(
       90deg,
       rgba(0, 0, 0, 0.1) 0,
@@ -499,7 +496,7 @@
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
 }
 
-/* Roof overhang shadow */
+
 .sy-doghouse-roof::after {
   content: "";
   position: absolute;
@@ -510,7 +507,7 @@
   background: linear-gradient(180deg, rgba(0, 0, 0, 0.3), transparent);
 }
 
-/* Doghouse walls — wood plank texture */
+
 .sy-doghouse-body {
   position: relative;
   background:
@@ -538,7 +535,7 @@
     inset 0 2px 0 rgba(255, 255, 255, 0.05);
 }
 
-/* Nameplate on doghouse */
+
 .sy-doghouse-nameplate {
   display: block;
   text-align: center;
@@ -555,7 +552,7 @@
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
 }
 
-/* Override timeline text color for dark wood background */
+
 .sy-doghouse-body .sy-timeline-title {
   color: var(--sy-cream);
 }
@@ -585,14 +582,14 @@
   color: var(--sy-text-on-cream);
 }
 
-/* Dog Bed / Cushion — footer quote wrapper */
+
 .sy-cushion-wrap {
   position: relative;
   max-width: 480px;
   margin: 0 auto 1.2rem;
   padding: 1.4rem 2rem;
   background:
-    /* Fabric texture */
+    
     repeating-linear-gradient(
       45deg,
       rgba(255, 255, 255, 0.02) 0,
@@ -615,7 +612,7 @@
     inset 0 -4px 12px rgba(0, 0, 0, 0.15);
 }
 
-/* Cushion indent/seam */
+
 .sy-cushion-wrap::before {
   content: "";
   position: absolute;
@@ -628,9 +625,8 @@
   pointer-events: none;
 }
 
-/* ============================================================
-   1. HERO — Album Cover
-   ============================================================ */
+
+/* Hero composition (portrait mount, title, dates, epitaph). */
 .sy-hero {
   position: relative;
   padding: 3rem 0 1.5rem;
@@ -681,9 +677,7 @@
   margin: 0;
 }
 
-/* ============================================================
-   2. NARRATIVE — Obituary + Profile Card
-   ============================================================ */
+
 .sy-narrative-grid {
   display: grid;
   grid-template-columns: 1.4fr 1fr;
@@ -723,16 +717,15 @@
   margin: 0;
 }
 
-/* ============================================================
-   3. PHOTO GALLERY — Masonry with Tabs
-   ============================================================ */
+
 .sy-gallery-heading {
   text-align: center;
   font-size: clamp(1.6rem, 3vw, 2.4rem);
   margin-bottom: 0.3rem;
 }
 
-/* Tab bar */
+
+/* Tab controls for client-side gallery category filtering. */
 .sy-gallery-tabs {
   display: flex;
   justify-content: center;
@@ -764,7 +757,7 @@
   border-color: var(--sy-gilt);
 }
 
-/* Masonry grid */
+
 .sy-gallery-grid {
   column-count: 3;
   column-gap: 1rem;
@@ -783,7 +776,7 @@
   display: none;
 }
 
-/* Placeholder boxes */
+
 .sy-photo-placeholder {
   display: flex;
   align-items: center;
@@ -804,7 +797,7 @@
   min-height: 120px;
 }
 
-/* Hover caption overlay */
+
 .sy-photo-caption {
   position: absolute;
   bottom: 8px;
@@ -835,9 +828,7 @@
   color: var(--sy-gilt-bright);
 }
 
-/* ============================================================
-   4. BEST STORIES — Vertical Timeline
-   ============================================================ */
+
 .sy-stories-heading {
   text-align: center;
   font-size: clamp(1.6rem, 3vw, 2.4rem);
@@ -849,7 +840,7 @@
   padding-left: 2rem;
 }
 
-/* Vertical gold line */
+
 .sy-timeline::before {
   content: "";
   position: absolute;
@@ -874,7 +865,7 @@
   margin-bottom: 0;
 }
 
-/* Gilt dot marker */
+
 .sy-timeline-marker {
   position: absolute;
   left: -1.65rem;
@@ -912,9 +903,7 @@
   margin: 0;
 }
 
-/* ============================================================
-   5. MULTIMEDIA — Video + Audio
-   ============================================================ */
+
 .sy-media-heading {
   text-align: center;
   font-size: clamp(1.6rem, 3vw, 2.4rem);
@@ -975,18 +964,14 @@
   filter: brightness(1.1);
 }
 
-/* ============================================================
-   FOCUS STYLES
-   ============================================================ */
+
 .sy-page .sy-tab:focus-visible,
 .sy-page .sy-audio-btn:focus-visible {
   outline: 2px solid var(--sy-gilt-bright);
   outline-offset: 2px;
 }
 
-/* ============================================================
-   FOOTER
-   ============================================================ */
+
 .sy-page footer {
   background: none;
   border-top: 1px solid var(--sy-gilt-dim);
@@ -1038,9 +1023,8 @@
   color: var(--sy-warm-gray-dark);
 }
 
-/* ============================================================
-   RESPONSIVE
-   ============================================================ */
+
+/* Responsive layout adjustments for smaller viewports. */
 @media (max-width: 1080px) {
   .sy-narrative-grid {
     grid-template-columns: 1fr;

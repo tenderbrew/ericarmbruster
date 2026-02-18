@@ -1,9 +1,9 @@
-/* ============================================================
-   SELF-HOSTING PAGE — Server Rack / Ops Center Skeuomorphism
-   Scoped entirely under .sh-page body class
-   ============================================================ */
+/*
+  sh-styles.css
+  Self-hosting route theme. Scoped to body.sh-page for terminal/rack styling.
+*/
 
-/* ----- Custom Properties ----- */
+/* Route-local tokens for dark dashboard palette and component styling. */
 .sh-page {
   --sh-void: #0c1117;
   --sh-dark: #161b22;
@@ -26,7 +26,7 @@
   --sh-section-gap: 2rem;
 }
 
-/* ----- Body Override ----- */
+
 .sh-page {
   background:
     radial-gradient(ellipse at 50% 0%, rgba(20, 30, 50, 0.5), transparent 55%),
@@ -39,7 +39,7 @@
   display: none;
 }
 
-/* ----- Global Style Overrides ----- */
+
 .sh-page .hero .container {
   background: none;
   box-shadow: none;
@@ -63,7 +63,7 @@
   font-family: inherit;
 }
 
-/* Border-radius overrides (global reset sets * to 0) */
+
 .sh-page .sh-led,
 .sh-page .sh-term-dot {
   border-radius: 50% !important;
@@ -78,7 +78,8 @@
   border-radius: 50% !important;
 }
 
-/* ----- Animations ----- */
+
+/* Terminal cursor and status LED micro-animations. */
 @keyframes sh-blink {
   0%, 100% { opacity: 1; }
   50% { opacity: 0; }
@@ -93,7 +94,7 @@
   animation: sh-blink 1s step-end infinite;
 }
 
-/* ----- Section spacing ----- */
+
 .sh-page main:not(.home-rooms) > section {
   padding: var(--sh-section-gap) 0 0;
 }
@@ -102,9 +103,8 @@
   padding-bottom: var(--sh-section-gap);
 }
 
-/* ============================================================
-   1. HERO — Terminal Prompt
-   ============================================================ */
+
+/* CLI-style hero prompt and subtitle region. */
 .sh-hero {
   position: relative;
   padding: 3rem 0 0;
@@ -149,9 +149,7 @@
   line-height: 1.5;
 }
 
-/* ============================================================
-   2. HARDWARE — Server Rack Panel
-   ============================================================ */
+
 .sh-hardware-grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -177,7 +175,7 @@
     inset 0 -1px 0 rgba(0, 0, 0, 0.3);
 }
 
-/* Rack screw holes */
+
 .sh-rack-panel::before,
 .sh-rack-panel::after {
   content: "";
@@ -294,9 +292,7 @@
   object-fit: contain;
 }
 
-/* ============================================================
-   3. SERVICES — Container Cards Grid
-   ============================================================ */
+
 .sh-services-heading {
   font-family: var(--sh-font-mono);
   font-size: clamp(0.72rem, 1.6vw, 0.92rem);
@@ -307,6 +303,7 @@
   margin-bottom: 1.2rem;
 }
 
+/* Card grid listing services/containers and status signals. */
 .sh-services-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -397,9 +394,7 @@
   line-height: 1.4;
 }
 
-/* ============================================================
-   4. MONITORING — Dashboard Gauges
-   ============================================================ */
+
 .sh-dashboard {
   background: var(--sh-panel);
   border: 1px solid var(--sh-border);
@@ -506,9 +501,7 @@
   letter-spacing: 0.5px;
 }
 
-/* ============================================================
-   5. LOGS — Terminal Output
-   ============================================================ */
+
 .sh-terminal {
   background: #0d1117;
   border: 1px solid var(--sh-border);
@@ -612,15 +605,13 @@
   color: var(--sh-blue);
 }
 
-/* ----- Focus Styles ----- */
+
 .sh-page .sh-service-card:focus-visible {
   outline: 2px solid var(--sh-blue);
   outline-offset: 2px;
 }
 
-/* ============================================================
-   FOOTER
-   ============================================================ */
+
 .sh-page footer {
   background: none;
   border-top: 1px solid var(--sh-border);
@@ -630,9 +621,8 @@
   color: var(--sh-text-dim);
 }
 
-/* ============================================================
-   RESPONSIVE
-   ============================================================ */
+
+/* Responsive adjustments for dense dashboard sections. */
 @media (max-width: 1080px) {
   .sh-services-grid {
     grid-template-columns: repeat(2, 1fr);

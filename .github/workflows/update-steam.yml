@@ -1,26 +1,35 @@
+# update-steam.yml
+# Nightly and manual workflow that refreshes steam-data.json using steam-fetch.js,
+# then commits the JSON only when it changes.
 name: Update Steam Data
 
 on:
   schedule:
-    - cron: '0 8 * * *'   # every day at 8:00 UTC
-  workflow_dispatch:        # manual trigger from Actions tab
+    # Runs daily at 08:00 UTC.
+    - cron: '0 8 * * *'
+  # Lets you trigger a refresh manually from the Actions tab.
+  workflow_dispatch:
 
 jobs:
   fetch:
     runs-on: ubuntu-latest
     steps:
+      # Pull current repository state onto the runner.
       - uses: actions/checkout@v4
 
+      # Ensure a modern Node runtime for built-in fetch support.
       - uses: actions/setup-node@v4
         with:
           node-version: '20'
 
+      # Generate fresh Steam snapshot JSON from secrets-backed credentials.
       - name: Fetch Steam data
         env:
           STEAM_API_KEY: ${{ secrets.STEAM_API_KEY }}
           STEAM_ID: ${{ secrets.STEAM_ID }}
         run: node steam-fetch.js
 
+      # Commit only when steam-data.json changed, so history stays clean.
       - name: Commit and push if changed
         run: |
           git diff --quiet steam-data.json && exit 0

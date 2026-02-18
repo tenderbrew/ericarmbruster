@@ -1,9 +1,15 @@
+<!-- File Guide: projects.html. Project summary page with featured work, focus notes, and related links. -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <!-- Head section: metadata, social tags, fonts, stylesheets, and analytics bootstrapping. -->
+  
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+
   <title>Projects - Eric Armbruster</title>
+
+  
   <meta name="description" content="Selected projects by Eric Armbruster, with context, goals, and links.">
   <meta name="theme-color" content="#070503">
   <link rel="canonical" href="https://www.ericarmbruster.com/projects.html">
@@ -17,11 +23,14 @@
   <meta name="twitter:description" content="Selected projects by Eric Armbruster, with context, goals, and links.">
   <meta name="twitter:image" content="https://www.ericarmbruster.com/images/chrono-trigger-sfc-cart.png">
   <link rel="icon" href="images/hector-favicon.png" type="image/png">
+
+  
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Libre+Caslon+Display&family=Libre+Caslon+Text:ital,wght@0,400;0,700;1,400&family=Herr+Von+Muellerhoff&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css">
-  <!-- Google tag (gtag.js) -->
+
+  <link rel="stylesheet" href="styles.css">
+  <!-- Analytics library: loaded async so it does not block rendering. -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-5ZTHJXDR9V"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
@@ -33,6 +42,9 @@
 </head>
 <body>
 
+  <!-- Shared primary navigation. Drawer behavior is provided by drawer.js. -->
+
+  
   <nav class="study-nav" aria-label="Primary">
     <div class="container nav-shell">
       <a href="index.html" class="brand-mark" aria-label="Eric Armbruster home">Eric M. Armbruster</a>
@@ -75,16 +87,18 @@
         </section>
       </div>
     </div>
-  </nav>
-
+  </nav>
+  <!-- Page hero / introductory banner section. -->
   <header class="hero">
     <div class="container">
       <h1>Projects</h1>
       <p class="hero-subtitle">Selected work, current focus, and links to explore in more detail.</p>
     </div>
-  </header>
-
+  </header>
+  <!-- Main page content. Most route-specific structure lives here. -->
   <main>
+    
+    <!-- Primary project highlight with external link. -->
     <section>
       <div class="container">
         <h2>Featured Project</h2>
@@ -93,6 +107,7 @@
       </div>
     </section>
 
+    <!-- Current direction and operating principles. -->
     <section>
       <div class="container">
         <h2>Current Focus</h2>
@@ -101,6 +116,7 @@
       </div>
     </section>
 
+    <!-- Cross-links to other topic pages in the site. -->
     <section>
       <div class="container">
         <h2>Related Pages</h2>
@@ -113,14 +129,14 @@
         </p>
       </div>
     </section>
-  </main>
-
+  </main>
+  <!-- Shared footer. -->
   <footer>
     <div class="container">
       &copy; 2026 Eric Armbruster
     </div>
-  </footer>
-
+  </footer>
+  <!-- Shared drawer controller for desktop/mobile navigation. -->
   <script src="drawer.js"></script>
 
 </body>

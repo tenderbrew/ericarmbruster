@@ -1,6 +1,8 @@
+<!-- File Guide: economics.html. Data-driven macro dashboard fetching FRED indicators and Mises feed headlines. -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <!-- Head section: metadata, social tags, fonts, stylesheets, and analytics bootstrapping. -->
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Economics - Eric Armbruster</title>
@@ -22,7 +24,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Libre+Caslon+Display&family=Libre+Caslon+Text:ital,wght@0,400;0,700;1,400&family=Herr+Von+Muellerhoff&family=IBM+Plex+Sans+Condensed:wght@400;500;700&family=Special+Elite&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
   <link rel="stylesheet" href="econ-styles.css">
-  <!-- Google tag (gtag.js) -->
+  <!-- Analytics library: loaded async so it does not block rendering. -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-5ZTHJXDR9V"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
@@ -33,6 +35,9 @@
 </head>
 <body class="econ-page">
 
+  <!-- Shared primary navigation. Drawer behavior is provided by drawer.js. -->
+
+  
   <nav class="study-nav" aria-label="Primary">
     <div class="container nav-shell">
       <a href="index.html" class="brand-mark" aria-label="Eric Armbruster home">Eric M. Armbruster</a>
@@ -76,7 +81,7 @@
       </div>
     </div>
   </nav>
-
+  <!-- Page hero / introductory banner section. -->
   <header class="econ-hero" aria-labelledby="econ-page-title">
     <div class="container econ-hero-inner">
       <div class="econ-ledger">
@@ -103,8 +108,9 @@
       </aside>
     </div>
   </header>
-
+  <!-- Main page content. Most route-specific structure lives here. -->
   <main>
+    <!-- Indicator grid: each card maps to one FRED series definition in script. -->
     <section class="econ-section" aria-labelledby="indicators-title">
       <div class="container">
         <div class="econ-panel">
@@ -117,6 +123,7 @@
       </div>
     </section>
 
+    <!-- News and reading queue: live headlines plus manually curated reading slots. -->
     <section class="econ-section" aria-labelledby="news-title">
       <div class="container">
         <hr class="econ-divider" aria-hidden="true">
@@ -164,15 +171,16 @@
       </div>
     </section>
   </main>
-
+  <!-- Shared footer. -->
   <footer>
     <div class="container">
       &copy; 2026 Eric Armbruster
     </div>
   </footer>
-
+  <!-- Shared drawer controller for desktop/mobile navigation. -->
   <script src="drawer.js"></script>
   <script>
+    // Economics data pipeline: fetch FRED + Mises feeds, then render cards and headlines.
     (function () {
       var indicatorGrid = document.getElementById('econ-indicator-grid');
       var indicatorStatus = document.getElementById('econ-indicator-status');
@@ -180,6 +188,7 @@
       var newsStatus = document.getElementById('econ-news-status');
       var refreshText = document.getElementById('econ-last-refresh');
 
+      // Per-series metadata controls label, unit, decimals, and optional transforms.
       var indicatorDefinitions = [
         { id: 'UNRATE', name: 'Unemployment Rate', unit: '%', decimals: 1 },
         { id: 'CPIAUCSL', name: 'CPI (All Urban)', unit: 'index', decimals: 1 },
@@ -332,6 +341,7 @@
         return response.text();
       }
 
+      // Proxy fallback chain for feeds without permissive CORS headers.
       async function fetchTextWithFallbacks(sourceUrl) {
         try {
           return await fetchTextViaCodetabs(sourceUrl);
@@ -389,6 +399,7 @@
         };
       }
 
+      // Build placeholder cards first, then hydrate each card asynchronously.
       async function loadIndicators() {
         indicatorDefinitions.forEach(createIndicatorCard);
 
@@ -530,6 +541,7 @@
         renderNewsItems(payload.items);
       }
 
+      // Prefer direct RSS parse; fall back to rss2json when raw parsing fails.
       async function loadNews() {
         var feedUrl = 'https://mises.org/feed';
         try {

@@ -1,6 +1,8 @@
+<!-- File Guide: self-hosting.html. Terminal-themed showcase page for homelab hardware and service status visuals. -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <!-- Head section: metadata, social tags, fonts, stylesheets, and analytics bootstrapping. -->
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Self-Hosting - Eric Armbruster</title>
@@ -20,9 +22,11 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Libre+Caslon+Display&family=Libre+Caslon+Text:ital,wght@0,400;0,700;1,400&family=Herr+Von+Muellerhoff&family=JetBrains+Mono:wght@400;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  
   <link rel="stylesheet" href="styles.css">
-  <link rel="stylesheet" href="sh-styles.css">
-  <!-- Google tag (gtag.js) -->
+  
+  <link rel="stylesheet" href="sh-styles.css">
+  <!-- Analytics library: loaded async so it does not block rendering. -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-5ZTHJXDR9V"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
@@ -34,6 +38,9 @@
 </head>
 <body class="sh-page">
 
+  <!-- Shared primary navigation. Drawer behavior is provided by drawer.js. -->
+
+  
   <nav class="study-nav" aria-label="Primary">
     <div class="container nav-shell">
       <a href="index.html" class="brand-mark" aria-label="Eric Armbruster home">Eric M. Armbruster</a>
@@ -76,9 +83,8 @@
         </section>
       </div>
     </div>
-  </nav>
-
-  <!-- ==================== HERO — Terminal Prompt ==================== -->
+  </nav>
+  <!-- Page hero / introductory banner section. -->
   <header class="hero sh-hero">
     <div class="container sh-hero-inner">
       <h1 class="sh-hero-prompt">
@@ -86,11 +92,13 @@
       </h1>
       <p class="sh-hero-output">Running my own infrastructure. Monitoring, services, and hardware.</p>
     </div>
-  </header>
-
+  </header>
+  <!-- Main page content. Most route-specific structure lives here. -->
   <main>
 
-    <!-- ==================== HARDWARE — Server Rack Panel ==================== -->
+    
+    
+    <!-- Hardware snapshot panel and physical NAS photo. -->
     <section aria-labelledby="hardware-heading">
       <div class="container">
         <div class="sh-hardware-grid">
@@ -117,7 +125,9 @@
       </div>
     </section>
 
-    <!-- ==================== SERVICES — Container Cards ==================== -->
+    
+    
+    <!-- Service inventory cards (static status labels for presentation). -->
     <section aria-labelledby="services-heading">
       <div class="container">
         <h2 id="services-heading" class="sh-services-heading">Services</h2>
@@ -262,7 +272,9 @@
       </div>
     </section>
 
-    <!-- ==================== MONITORING — Dashboard ==================== -->
+    
+    
+    <!-- Decorative monitor gauges and uptime placeholders (no live polling). -->
     <section aria-labelledby="monitoring-heading">
       <div class="container">
         <div class="sh-dashboard">
@@ -317,7 +329,9 @@
       </div>
     </section>
 
-    <!-- ==================== LOGS — Terminal Output ==================== -->
+    
+    
+    <!-- Faux terminal log stream to visualize operations activity. -->
     <section aria-labelledby="logs-heading">
       <div class="container">
         <div class="sh-terminal">
@@ -344,14 +358,14 @@
       </div>
     </section>
 
-  </main>
-
+  </main>
+  <!-- Shared footer. -->
   <footer>
     <div class="container">
       &copy; 2026 Eric Armbruster
     </div>
-  </footer>
-
+  </footer>
+  <!-- Shared drawer controller for desktop/mobile navigation. -->
   <script src="drawer.js"></script>
 
 </body>

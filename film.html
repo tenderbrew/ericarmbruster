@@ -1,6 +1,9 @@
+<!-- File Guide: film.html. Cinema-styled dashboard that fetches and renders Letterboxd activity with fallbacks. -->
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
+  <!-- Head section: metadata, social tags, fonts, stylesheets, and analytics bootstrapping. -->
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Film - Eric Armbruster</title>
@@ -22,7 +25,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Libre+Caslon+Display&family=Libre+Caslon+Text:ital,wght@0,400;0,700;1,400&family=Herr+Von+Muellerhoff&family=Bebas+Neue&family=IBM+Plex+Sans+Condensed:wght@400;500;700&family=Special+Elite&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
   <link rel="stylesheet" href="film-styles.css">
-  <!-- Google tag (gtag.js) -->
+  <!-- Analytics library: loaded async so it does not block rendering. -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-5ZTHJXDR9V"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
@@ -33,6 +36,9 @@
 </head>
 <body class="film-page">
 
+  <!-- Shared primary navigation. Drawer behavior is provided by drawer.js. -->
+
+  
   <nav class="study-nav" aria-label="Primary">
     <div class="container nav-shell">
       <a href="index.html" class="brand-mark" aria-label="Eric Armbruster home">Eric M. Armbruster</a>
@@ -76,7 +82,7 @@
       </div>
     </div>
   </nav>
-
+  <!-- Page hero / introductory banner section. -->
   <header class="film-hero" aria-labelledby="film-title">
     <div class="film-curtain" aria-hidden="true"></div>
     <div class="container film-hero-inner">
@@ -96,8 +102,10 @@
       </div>
     </div>
   </header>
-
+  <!-- Main page content. Most route-specific structure lives here. -->
   <main>
+    
+    <!-- Live activity dashboard: recent watches and computed booth stats. -->
     <section class="film-section film-dashboard" aria-label="Live Letterboxd activity">
       <div class="container">
         <div class="film-grid film-grid-top">
@@ -135,6 +143,8 @@
       </div>
     </section>
 
+    
+    <!-- Secondary dashboard: featured log card and list activity feed. -->
     <section class="film-section" aria-label="Featured review and list activity">
       <div class="container">
         <hr class="film-divider" aria-hidden="true">
@@ -152,15 +162,17 @@
       </div>
     </section>
   </main>
-
+  <!-- Shared footer. -->
   <footer>
     <div class="container">
       &copy; 2026 Eric Armbruster
     </div>
   </footer>
-
+  <!-- Shared drawer controller for desktop/mobile navigation. -->
   <script src="drawer.js"></script>
+  
   <script>
+    // Feed pipeline: rss2json primary -> AllOrigins fallback -> local sample fallback.
     (function () {
       var feedStatus = document.getElementById('film-feed-status');
       var recentList = document.getElementById('film-recent-watches');
@@ -364,6 +376,7 @@
         statLast.textContent = entries[0] ? formatDate(entries[0].date) : '--';
       }
 
+      // Normalize proxy responses so render functions can use one consistent shape.
       function normalizeItems(items) {
         return items.map(function (item) {
           var parsedTitle = parseFilmTitle(item.title || 'Untitled');
@@ -473,6 +486,7 @@
         }
       }
 
+      // Render order: recent list, featured card, list activity, then summary stats.
       loadFeed()
         .then(function (entries) {
           var filmEntries = entries.filter(function (entry) { return entry.link.indexOf('/film/') !== -1; });

@@ -1,9 +1,15 @@
+<!-- File Guide: about.html. Simple profile page using shared layout components and shared navigation. -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <!-- Head section: metadata, social tags, fonts, stylesheets, and analytics bootstrapping. -->
+  
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+
   <title>About - Eric Armbruster</title>
+
+  
   <meta name="description" content="Background, work, and interests of Eric Armbruster.">
   <meta name="theme-color" content="#070503">
   <link rel="canonical" href="https://www.ericarmbruster.com/about.html">
@@ -17,11 +23,15 @@
   <meta name="twitter:description" content="Background, work, and interests of Eric Armbruster.">
   <meta name="twitter:image" content="https://www.ericarmbruster.com/images/hector-0001.png">
   <link rel="icon" href="images/hector-favicon.png" type="image/png">
+
+  
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Libre+Caslon+Display&family=Libre+Caslon+Text:ital,wght@0,400;0,700;1,400&family=Herr+Von+Muellerhoff&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css">
-  <!-- Google tag (gtag.js) -->
+
+  
+  <link rel="stylesheet" href="styles.css">
+  <!-- Analytics library: loaded async so it does not block rendering. -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-5ZTHJXDR9V"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
@@ -31,8 +41,12 @@
     gtag('config', 'G-5ZTHJXDR9V');
   </script>
 </head>
+
 <body>
 
+  <!-- Shared primary navigation. Drawer behavior is provided by drawer.js. -->
+
+  
   <nav class="study-nav" aria-label="Primary">
     <div class="container nav-shell">
       <a href="index.html" class="brand-mark" aria-label="Eric Armbruster home">Eric M. Armbruster</a>
@@ -75,16 +89,17 @@
         </section>
       </div>
     </div>
-  </nav>
-
+  </nav>
+  <!-- Page hero / introductory banner section. -->
   <header class="hero">
     <div class="container">
       <h1>About</h1>
       <p class="hero-subtitle">Engineer focused on reliable systems, clear tooling, and practical execution.</p>
     </div>
-  </header>
-
+  </header>
+  <!-- Main page content. Most route-specific structure lives here. -->
   <main>
+    <!-- Background and working philosophy. -->
     <section>
       <div class="container">
         <h2>Background</h2>
@@ -93,6 +108,7 @@
       </div>
     </section>
 
+    <!-- Day-to-day engineering focus and approach. -->
     <section>
       <div class="container">
         <h2>What I Do</h2>
@@ -101,6 +117,7 @@
       </div>
     </section>
 
+    <!-- Personal interests that connect to the rest of this site. -->
     <section>
       <div class="container">
         <h2>Outside of Work</h2>
@@ -108,14 +125,14 @@
         <p>I also read economics because it sharpens how I think about incentives, risk, and long-term tradeoffs.</p>
       </div>
     </section>
-  </main>
-
+  </main>
+  <!-- Shared footer. -->
   <footer>
     <div class="container">
       &copy; 2026 Eric Armbruster
     </div>
-  </footer>
-
+  </footer>
+  <!-- Shared drawer controller for desktop/mobile navigation. -->
   <script src="drawer.js"></script>
 
 </body>

@@ -1,17 +1,14 @@
 #!/usr/bin/env node
 /**
  * steam-fetch.js
- * Build-time script that pulls data from the Steam Web API
- * and writes steam-data.json for the video games page.
- *
- * Usage:  node steam-fetch.js
- * Requires: .env with STEAM_API_KEY and STEAM_ID
+ * Build-time script: pulls Steam Web API data and writes steam-data.json.
+ * The website reads that JSON at runtime, so API credentials stay server-side.
  */
-
+// Node core modules for reading local config and writing output JSON.
 const fs = require('fs');
 const path = require('path');
 
-// ── Load .env ──────────────────────────────────────────────
+// Local .env support for manual runs. CI injects these through workflow secrets.
 const envPath = path.join(__dirname, '.env');
 if (fs.existsSync(envPath)) {
   fs.readFileSync(envPath, 'utf-8').split('\n').forEach(function (line) {
@@ -19,18 +16,16 @@ if (fs.existsSync(envPath)) {
     if (match) process.env[match[1]] = match[2];
   });
 }
-
 const API_KEY = process.env.STEAM_API_KEY;
 const STEAM_ID = process.env.STEAM_ID;
-
 if (!API_KEY || !STEAM_ID) {
   console.error('Missing STEAM_API_KEY or STEAM_ID in .env');
   process.exit(1);
 }
-
 const BASE = 'https://api.steampowered.com';
 
-// ── API helpers ────────────────────────────────────────────
+
+// Generic Steam API helper used by endpoint-specific fetch functions below.
 async function steamGet(iface, method, version, params) {
   const qs = new URLSearchParams({ key: API_KEY, steamid: STEAM_ID, format: 'json', ...params });
   const url = `${BASE}/${iface}/${method}/v${version}/?${qs}`;
@@ -39,6 +34,8 @@ async function steamGet(iface, method, version, params) {
   return res.json();
 }
 
+
+// Full library snapshot with app metadata and total playtime minutes.
 async function getOwnedGames() {
   const data = await steamGet('IPlayerService', 'GetOwnedGames', '0001', {
     include_appinfo: '1',
@@ -47,6 +44,8 @@ async function getOwnedGames() {
   return data.response;
 }
 
+
+// Recent activity window used for the "recently played" list.
 async function getRecentlyPlayed() {
   const data = await steamGet('IPlayerService', 'GetRecentlyPlayedGames', '0001', {
     count: '10'
@@ -54,6 +53,8 @@ async function getRecentlyPlayed() {
   return data.response;
 }
 
+
+// Public profile info for display name, avatar, and profile link.
 async function getPlayerSummary() {
   const qs = new URLSearchParams({ key: API_KEY, steamids: STEAM_ID, format: 'json' });
   const url = `${BASE}/ISteamUser/GetPlayerSummaries/v0002/?${qs}`;
@@ -63,10 +64,11 @@ async function getPlayerSummary() {
   return data.response.players[0] || {};
 }
 
-// ── Main ───────────────────────────────────────────────────
+// Main pipeline: fetch, normalize, aggregate, write JSON, and print run summary.
 (async function () {
   console.log('Fetching Steam data...');
 
+  // Run API requests in parallel to reduce total execution time.
   const [owned, recent, profile] = await Promise.all([
     getOwnedGames(),
     getRecentlyPlayed(),
@@ -78,10 +80,12 @@ async function getPlayerSummary() {
   const totalMinutes = games.reduce(function (sum, g) { return sum + (g.playtime_forever || 0); }, 0);
   const totalHours = Math.round(totalMinutes / 60);
 
-  // Top 10 by playtime
+  // Top 10 by total playtime across the account lifetime.
   const topByPlaytime = games
     .slice()
-    .sort(function (a, b) { return (b.playtime_forever || 0) - (a.playtime_forever || 0); })
+    .sort(function (a, b) {
+      return (b.playtime_forever || 0) - (a.playtime_forever || 0);
+    })
     .slice(0, 10)
     .map(function (g) {
       return {
@@ -92,7 +96,7 @@ async function getPlayerSummary() {
       };
     });
 
-  // Recently played
+  // Recently played list keeps both short-window and lifetime hour totals.
   const recentGames = (recent.games || []).map(function (g) {
     return {
       appid: g.appid,
@@ -102,12 +106,10 @@ async function getPlayerSummary() {
       img_icon_url: g.img_icon_url || ''
     };
   });
-
-  // Games with any playtime vs never played
   const playedCount = games.filter(function (g) { return (g.playtime_forever || 0) > 0; }).length;
   const neverPlayed = totalGames - playedCount;
 
-  // Playtime distribution buckets
+  // Distribution buckets support quick "library shape" summaries in UI.
   const buckets = { '100h+': 0, '50-100h': 0, '10-50h': 0, '1-10h': 0, '<1h': 0 };
   games.forEach(function (g) {
     var h = (g.playtime_forever || 0) / 60;
@@ -118,6 +120,7 @@ async function getPlayerSummary() {
     else if (h > 0) buckets['<1h']++;
   });
 
+  // Contract consumed by video-games.html (fetch('steam-data.json')).
   var output = {
     fetchedAt: new Date().toISOString(),
     profile: {
@@ -136,6 +139,7 @@ async function getPlayerSummary() {
     topByPlaytime: topByPlaytime
   };
 
+  // Pretty-printed output keeps git diffs readable.
   var outPath = path.join(__dirname, 'steam-data.json');
   fs.writeFileSync(outPath, JSON.stringify(output, null, 2));
   console.log('Wrote ' + outPath);
@@ -144,6 +148,7 @@ async function getPlayerSummary() {
   console.log('  Recently played: ' + recentGames.length + ' games');
   console.log('  Top game: ' + (topByPlaytime[0] ? topByPlaytime[0].name + ' (' + topByPlaytime[0].hours + 'h)' : 'N/A'));
 })().catch(function (err) {
+  // Non-zero exit signals failure in CI and local scripts.
   console.error('Error:', err.message);
   process.exit(1);
 });

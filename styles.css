@@ -1,3 +1,10 @@
+/*
+  styles.css
+  Shared stylesheet for global tokens, typography, navigation, homepage layout,
+  reusable content containers, and responsive behavior across all pages.
+*/
+
+/* Design tokens used site-wide. */
 :root {
   --ink: #ead8b7;
   --ink-soft: #c8ad85;
@@ -20,6 +27,7 @@
   --notch: 14px;
 }
 
+/* Global reset and predictable box model baseline. */
 *,
 *::before,
 *::after {
@@ -148,7 +156,7 @@ button:focus-visible {
   color: #c4a074;
 }
 
-/* Rugged geometry */
+
 .study-nav .nav-shell,
 .site-drawer,
 .portrait-card,
@@ -172,7 +180,7 @@ nav:not(.study-nav) .container {
   );
 }
 
-/* Parchment language */
+
 .parchment-card {
   position: relative;
   color: var(--paper-ink);
@@ -250,7 +258,8 @@ nav:not(.study-nav) .container {
   color: #442b18;
 }
 
-/* Default nav for secondary pages */
+
+/* Default sticky nav used by simpler secondary pages. */
 nav:not(.study-nav) {
   position: sticky;
   top: 0;
@@ -372,7 +381,8 @@ footer .container {
   color: var(--ink-faint);
 }
 
-/* Home navigation */
+
+/* Primary nav and drawer shell shared across all routes. */
 .study-nav {
   position: sticky;
   top: 0;
@@ -698,7 +708,8 @@ footer .container {
   color: #ebcda5;
 }
 
-/* Home hero */
+
+/* Homepage hero: portrait stack + archive title composition. */
 .home-stage {
   padding: 0.9rem 0 0.62rem;
 }
@@ -1123,7 +1134,8 @@ footer .container {
   }
 }
 
-/* Home rooms */
+
+/* Homepage grid of themed "rooms". */
 .home-rooms {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
@@ -3094,7 +3106,7 @@ footer .container {
   z-index: 2;
 }
 
-/* ── 3-D page edges (right + bottom) ── */
+
 .book-pages {
   position: absolute;
   inset: 0;
@@ -3114,7 +3126,7 @@ footer .container {
     );
 }
 
-/* shadow cast by cover onto right page edge */
+
 .book-pages::after {
   content: "";
   position: absolute;
@@ -3127,7 +3139,7 @@ footer .container {
   border-left: 1px solid rgba(80, 60, 35, 0.3);
 }
 
-/* shadow cast by cover onto bottom page edge */
+
 .book-pages::before {
   content: "";
   position: absolute;
@@ -3659,6 +3671,7 @@ footer .container {
   gap: 1rem;
 }
 
+/* Tablet-and-down layout adjustments. */
 @media (max-width: 1080px) {
   .stage-layout {
     grid-template-columns: minmax(140px, 180px) minmax(0, 1fr);
@@ -3793,6 +3806,7 @@ footer .container {
   }
 }
 
+/* Mobile layout adjustments. */
 @media (max-width: 760px) {
   :root {
     --notch: 10px;

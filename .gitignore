@@ -1,2 +1,3 @@
+# Ignore local secrets and installed dependencies.
 .env
 node_modules/

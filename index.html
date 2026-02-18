@@ -1,9 +1,15 @@
+<!-- File Guide: index.html. Homepage layout: shared navigation, hero stage, room cards, bookshelf links, and a random quote script. -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <!-- Head section: metadata, social tags, fonts, stylesheets, and analytics bootstrapping. -->
+  
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+
   <title>Eric Armbruster</title>
+
+  
   <meta name="description" content="Personal website of Eric M. Armbruster">
   <meta name="theme-color" content="#070503">
   <link rel="canonical" href="https://www.ericarmbruster.com/">
@@ -16,12 +22,18 @@
   <meta name="twitter:title" content="Eric Armbruster">
   <meta name="twitter:description" content="Personal website of Eric M. Armbruster">
   <meta name="twitter:image" content="https://www.ericarmbruster.com/images/hector-0001.png">
+
+  
   <link rel="icon" href="images/hector-favicon.png" type="image/png">
+
+  
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Almendra+SC&family=Cinzel+Decorative:wght@700&family=IM+Fell+English&family=IM+Fell+English+SC&family=Libre+Caslon+Display&family=Libre+Caslon+Text:ital,wght@0,400;0,700;1,400&family=Pirata+One&family=Share+Tech+Mono&family=Herr+Von+Muellerhoff&family=Silkscreen:wght@400;700&family=Tangerine:wght@700&display=swap" rel="stylesheet">
+
+  
   <link rel="stylesheet" href="styles.css">
-  <!-- Google tag (gtag.js) -->
+  <!-- Analytics library: loaded async so it does not block rendering. -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-5ZTHJXDR9V"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
@@ -31,8 +43,12 @@
     gtag('config', 'G-5ZTHJXDR9V');
   </script>
 </head>
+
 <body class="home-page">
 
+  <!-- Shared primary navigation. Drawer behavior is provided by drawer.js. -->
+
+  
   <nav class="study-nav" aria-label="Primary">
     <div class="container nav-shell">
       <a href="index.html" class="brand-mark" aria-label="Eric Armbruster home">Eric M. Armbruster</a>
@@ -76,7 +92,7 @@
       </div>
     </div>
   </nav>
-
+  <!-- Page hero / introductory banner section. -->
   <header class="home-stage">
     <div class="container stage-layout">
       <figure class="portrait-card">
@@ -100,8 +116,10 @@
       </article>
     </div>
   </header>
-
+  <!-- Main page content. Most route-specific structure lives here. -->
   <main class="container home-rooms">
+    
+    <!-- Room 1: quick profile/utility links. -->
     <section class="room room-intro">
       <article class="room-card register-card">
         <h2>House Register</h2>
@@ -113,6 +131,8 @@
       </article>
     </section>
 
+    
+    <!-- Room 2: project status ledger with visual completion states. -->
     <section class="room room-ledger">
       <article class="room-card ledger-card">
         <h2><a href="projects.html" class="ledger-heading-link">Project Ledger</a></h2>
@@ -151,6 +171,8 @@
       </article>
     </section>
 
+    
+    <!-- Room 3: CRT component that receives a random quote at runtime. -->
     <section class="room room-quote">
       <article class="quote-crt" aria-label="Quoted reflection on CRT display">
         <div class="quote-crt-shell">
@@ -183,6 +205,8 @@
       </article>
     </section>
 
+    
+    <!-- Room 4: bookshelf links into themed interest pages. -->
     <section id="interests" class="room room-shelves">
       <div class="bookshelf-top" aria-hidden="true"></div>
 
@@ -263,16 +287,18 @@
     </section>
 
   </main>
-
+  <!-- Shared footer. -->
   <footer>
     <div class="container">
       &copy; 2026 Eric Armbruster
     </div>
   </footer>
-
+  <!-- Shared drawer controller for desktop/mobile navigation. -->
   <script src="drawer.js"></script>
 
+  
   <script>
+    // Home CRT quote pool. Keeping this inline avoids an extra network request.
     const quotes = [
       { text: "There is some good in this world, and it is worth fighting for.", source: "The Fellowship of the Ring" },
       { text: "It's the job that's never started as takes longest to finish.", source: "The Fellowship of the Ring" },
@@ -285,12 +311,12 @@
       { text: "I can see the light ahead, Mr. Frodo. It's coming to us.", source: "The Return of the King" }
     ];
 
+    // Choose one quote each page load and render it into the CRT display.
     const q = quotes[Math.floor(Math.random() * quotes.length)];
     document.getElementById("random-quote").innerHTML =
       "&ldquo;" + q.text + "&rdquo;<br><small>&mdash; Samwise Gamgee, <em>" + q.source + "</em></small>";
   </script>
 </body>
 </html>
-
 
 

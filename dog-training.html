@@ -1,6 +1,8 @@
+<!-- File Guide: dog-training.html. Memorial scrapbook page with gallery filtering and simple media controls. -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <!-- Head section: metadata, social tags, fonts, stylesheets, and analytics bootstrapping. -->
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Seymour: A Remembrance - Eric Armbruster</title>
@@ -21,8 +23,8 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Libre+Caslon+Display&family=Libre+Caslon+Text:ital,wght@0,400;0,700;1,400&family=Herr+Von+Muellerhoff&family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Lora:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
-  <link rel="stylesheet" href="sy-styles.css">
-  <!-- Google tag (gtag.js) -->
+  <link rel="stylesheet" href="sy-styles.css">
+  <!-- Analytics library: loaded async so it does not block rendering. -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-5ZTHJXDR9V"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
@@ -34,6 +36,9 @@
 </head>
 <body class="sy-page">
 
+  <!-- Shared primary navigation. Drawer behavior is provided by drawer.js. -->
+
+  
   <nav class="study-nav" aria-label="Primary">
     <div class="container nav-shell">
       <a href="index.html" class="brand-mark" aria-label="Eric Armbruster home">Eric M. Armbruster</a>
@@ -76,9 +81,8 @@
         </section>
       </div>
     </div>
-  </nav>
-
-  <!-- ==================== HERO — Album Cover ==================== -->
+  </nav>
+  <!-- Page hero / introductory banner section. -->
   <header class="hero sy-hero">
     <div class="container sy-hero-inner">
       <span class="sy-paw sy-paw--hero-l" aria-hidden="true"></span>
@@ -97,11 +101,12 @@
       <p class="sy-hero-dates">20XX &ndash; 20XX</p>
       <p class="sy-hero-epitaph">A faithful companion. A good boy.</p>
     </div>
-  </header>
-
+  </header>
+  <!-- Main page content. Most route-specific structure lives here. -->
   <main>
 
-    <!-- ==================== NARRATIVE — Obituary + Profile Card ==================== -->
+    
+    <!-- Narrative and profile card pair: main remembrance copy + quick facts. -->
     <section aria-labelledby="narrative-heading">
       <div class="container">
         <div class="sy-narrative-grid">
@@ -130,7 +135,8 @@
       </div>
     </section>
 
-    <!-- ==================== PHOTO GALLERY — Masonry with Tabs ==================== -->
+    
+    <!-- Category-filtered gallery. Buttons toggle visibility of matching items. -->
     <section aria-labelledby="gallery-heading" style="position: relative;">
       <span class="sy-paw sy-paw--gallery-l" aria-hidden="true"></span>
       <span class="sy-paw sy-paw--gallery-r" aria-hidden="true"></span>
@@ -212,7 +218,8 @@
       </div>
     </section>
 
-    <!-- ==================== BEST STORIES — Doghouse Timeline ==================== -->
+    
+    <!-- Timeline of stories presented in scrapbook card format. -->
     <section aria-labelledby="stories-heading" style="position: relative;">
       <span class="sy-paw sy-paw--stories-l" aria-hidden="true"></span>
       <div class="container">
@@ -268,7 +275,8 @@
       </div>
     </section>
 
-    <!-- ==================== MULTIMEDIA — Video + Audio ==================== -->
+    
+    <!-- Media area: video placeholder + optional memorial audio clip controls. -->
     <section aria-labelledby="media-heading">
       <div class="container">
         <h2 id="media-heading" class="sy-embossed sy-media-heading">Memories in Motion</h2>
@@ -290,15 +298,15 @@
               <span>Play Clip</span>
             </button>
             <audio id="sy-audio-player" preload="none">
-              <!-- <source src="audio/seymour-clip.mp3" type="audio/mpeg"> -->
+              
             </audio>
           </div>
         </div>
       </div>
     </section>
 
-  </main>
-
+  </main>
+  <!-- Shared footer. -->
   <footer>
     <div class="container sy-footer-inner">
       <div class="sy-cushion-wrap">
@@ -312,11 +320,11 @@
       </div>
       <p class="sy-footer-copy">&copy; 2026 Eric Armbruster</p>
     </div>
-  </footer>
-
+  </footer>
+  <!-- Shared drawer controller for desktop/mobile navigation. -->
   <script src="drawer.js"></script>
   <script>
-    /* Gallery tab filtering */
+    // Script 1: filter gallery cards by category tab.
     (function () {
       var tabs = Array.from(document.querySelectorAll('[data-sy-tab]'));
       var items = Array.from(document.querySelectorAll('[data-sy-category]'));
@@ -344,7 +352,7 @@
       });
     })();
 
-    /* Audio play/pause */
+    // Script 2: minimal play/pause toggle for the memorial audio element.
     (function () {
       var btn = document.querySelector('[data-sy-audio]');
       var audio = document.getElementById('sy-audio-player');

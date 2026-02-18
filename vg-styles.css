@@ -1,9 +1,9 @@
-/* ============================================================
-   VIDEO GAMES PAGE — Retro Gaming Skeuomorphism
-   Scoped entirely under .vg-page body class
-   ============================================================ */
+/*
+  vg-styles.css
+  Video Games route theme. Scoped to body.vg-page to prevent style leakage.
+*/
 
-/* ----- Custom Properties ----- */
+/* Route-local design tokens: palette, fonts, spacing, and component sizes. */
 .vg-page {
   --vg-void: #08080f;
   --vg-dark: #0e0e1a;
@@ -37,7 +37,7 @@
   --vg-grid-gap-desktop: 1.6rem;
 }
 
-/* ----- Body Override ----- */
+
 .vg-page {
   background:
     radial-gradient(ellipse at 50% 0%, rgba(20, 0, 60, 0.4), transparent 50%),
@@ -50,7 +50,7 @@
   display: none;
 }
 
-/* ----- Global Style Overrides ----- */
+
 .vg-page .hero .container {
   background: none;
   box-shadow: none;
@@ -74,7 +74,7 @@
   font-family: inherit;
 }
 
-/* Border-radius overrides for skeuomorphic elements */
+
 .vg-page .vg-tv-knob,
 .vg-page .vg-tv-led,
 .vg-page .vg-console-led,
@@ -86,7 +86,8 @@
   border-radius: initial !important;
 }
 
-/* ----- Animations ----- */
+
+/* Shared animation primitives for CRT/arcade effects. */
 @keyframes vg-blink {
   0%, 100% { opacity: 1; }
   50% { opacity: 0; }
@@ -110,7 +111,7 @@
   50% { box-shadow: 0 0 14px var(--vg-red-glow), 0 0 40px var(--vg-red-glow), 0 0 60px rgba(255, 51, 51, 0.15); }
 }
 
-/* ----- Reusable Utilities ----- */
+
 .vg-scanlines {
   position: relative;
 }
@@ -134,7 +135,7 @@
   animation: vg-blink 1s step-end infinite;
 }
 
-/* ----- Section spacing ----- */
+
 .vg-page main:not(.home-rooms) > section {
   padding: var(--vg-section-gap) 0 0;
 }
@@ -143,9 +144,8 @@
   padding-bottom: var(--vg-section-gap);
 }
 
-/* ============================================================
-   1. HERO — Arcade Marquee
-   ============================================================ */
+
+/* Hero marquee shell and title treatment. */
 .vg-hero {
   position: relative;
   overflow: hidden;
@@ -228,9 +228,8 @@
   animation: vg-ticker-scroll 20s linear infinite;
 }
 
-/* ============================================================
-   2. CURRENTLY PLAYING — Modern (CRT TV)
-   ============================================================ */
+
+/* Two-column "Now Playing" layout (modern + retro devices). */
 .vg-now-grid {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -316,7 +315,7 @@
   overflow: hidden;
 }
 
-/* Amber scanlines */
+
 .vg-tv-screen-surface::before {
   content: "";
   position: absolute;
@@ -335,7 +334,7 @@
     linear-gradient(90deg, rgba(10, 8, 4, 0.3), transparent 16%, transparent 84%, rgba(10, 8, 4, 0.3));
 }
 
-/* Screen reflection */
+
 .vg-tv-screen-surface::after {
   content: "";
   position: absolute;
@@ -531,9 +530,7 @@
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
 }
 
-/* ============================================================
-   3. CURRENTLY PLAYING — Retro (Console + Cartridge)
-   ============================================================ */
+
 .vg-console-unit {
   max-width: 480px;
   margin: 0 auto;
@@ -698,9 +695,7 @@
     0 1px 0 rgba(255, 255, 255, 0.1);
 }
 
-/* ============================================================
-   4. NINTENDO PIPELINE CLUB (Arcade Cabinet Panel)
-   ============================================================ */
+
 .vg-arcade-cabinet {
   max-width: 520px;
   margin: 0 auto;
@@ -752,7 +747,7 @@
   overflow: hidden;
 }
 
-/* Green scanlines for arcade screen */
+
 .vg-arcade-screen-surface::before {
   content: "";
   position: absolute;
@@ -875,9 +870,7 @@
   text-transform: uppercase;
 }
 
-/* ============================================================
-   4.5 FEATURE ROW (Pipeline + Top 10)
-   ============================================================ */
+
 .vg-feature-grid {
   display: grid;
   grid-template-columns: minmax(0, 1fr);
@@ -893,9 +886,7 @@
   margin: 0 auto;
 }
 
-/* ============================================================
-   5. TOP 10 PER YEAR (Console TV + Channel Dial)
-   ============================================================ */
+
 .vg-console-tv {
   max-width: 820px;
   margin: 0 auto;
@@ -948,7 +939,7 @@
   overflow: hidden;
 }
 
-/* Green scanlines */
+
 .vg-console-tv-screen::before {
   content: "";
   position: absolute;
@@ -966,7 +957,7 @@
     );
 }
 
-/* Screen reflection */
+
 .vg-console-tv-screen::after {
   content: "";
   position: absolute;
@@ -990,7 +981,7 @@
   text-align: center;
 }
 
-/* Static overlay */
+
 .vg-top10-static {
   display: none;
   position: absolute;
@@ -1019,7 +1010,7 @@
   animation: vg-static 0.2s steps(3) forwards;
 }
 
-/* Tab panels */
+
 .vg-top10-panel {
   position: relative;
   z-index: 4;
@@ -1078,7 +1069,7 @@
   flex: 1;
 }
 
-/* Controls panel (right side) */
+
 .vg-console-tv-controls {
   display: flex;
   flex-direction: column;
@@ -1160,9 +1151,7 @@
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.4);
 }
 
-/* ============================================================
-   6. HALL OF CARTRIDGES (Gallery)
-   ============================================================ */
+
 .vg-shelf-heading {
   font-family: var(--vg-font-pixel);
   font-size: clamp(0.8rem, 2vw, 1.1rem);
@@ -1294,7 +1283,7 @@
   pointer-events: none;
 }
 
-/* ----- Focus Styles ----- */
+
 .vg-page .vg-cart:focus-visible {
   outline: 2px solid var(--vg-cyan);
   outline-offset: 2px;
@@ -1311,14 +1300,12 @@
   outline-offset: 3px;
 }
 
-/* ---- No-cartridge modifier ---- */
+
 .vg-console-unit--no-cart .vg-console-slot {
   display: none;
 }
 
-/* ============================================================
-   6.5 BACKLOGGERY — Handheld Console
-   ============================================================ */
+
 .vg-handheld {
   position: relative;
   background:
@@ -1387,7 +1374,7 @@
   min-height: 260px;
 }
 
-/* scanlines on handheld screens */
+
 .vg-handheld-screen-surface::after {
   content: "";
   position: absolute;
@@ -1416,7 +1403,7 @@
   text-align: center;
 }
 
-/* ---- Recent Completions list ---- */
+
 .vg-backlog-list {
   list-style: none;
   padding: 0;
@@ -1474,7 +1461,7 @@
   color: rgba(160, 180, 155, 0.6);
 }
 
-/* ---- Platform Breakdown list ---- */
+
 .vg-platform-list {
   list-style: none;
   padding: 0;
@@ -1511,7 +1498,7 @@
   text-align: right;
 }
 
-/* ---- Controls bar ---- */
+
 .vg-handheld-controls {
   display: flex;
   align-items: center;
@@ -1525,7 +1512,7 @@
   position: relative;
 }
 
-/* d-pad cross */
+
 .vg-handheld-dpad::before,
 .vg-handheld-dpad::after {
   content: "";
@@ -1601,9 +1588,7 @@
     0 2px 4px rgba(0, 0, 0, 0.35);
 }
 
-/* ============================================================
-   6.75 STEAM LIBRARY — Retro PC Monitor
-   ============================================================ */
+
 .vg-monitor {
   position: relative;
   background:
@@ -1665,7 +1650,7 @@
   overflow: hidden;
 }
 
-/* Cyan scanlines */
+
 .vg-monitor-screen-surface::before {
   content: "";
   position: absolute;
@@ -1684,7 +1669,7 @@
     linear-gradient(90deg, rgba(4, 8, 14, 0.3), transparent 16%, transparent 84%, rgba(4, 8, 14, 0.3));
 }
 
-/* Screen reflection */
+
 .vg-monitor-screen-surface::after {
   content: "";
   position: absolute;
@@ -1696,7 +1681,7 @@
     linear-gradient(180deg, transparent 72%, rgba(2, 4, 8, 0.4) 100%);
 }
 
-/* ---- Stats bar ---- */
+
 .vg-steam-stats {
   position: relative;
   z-index: 4;
@@ -1718,7 +1703,7 @@
   opacity: 0.85;
 }
 
-/* ---- Two-column layout ---- */
+
 .vg-steam-columns {
   position: relative;
   z-index: 4;
@@ -1739,7 +1724,7 @@
   border-bottom: 1px solid rgba(0, 255, 255, 0.15);
 }
 
-/* ---- Game lists ---- */
+
 .vg-steam-list {
   list-style: none;
   padding: 0;
@@ -1805,7 +1790,7 @@
   padding: 1rem 0;
 }
 
-/* ---- Controls bar ---- */
+
 .vg-monitor-controls {
   display: flex;
   align-items: center;
@@ -1842,7 +1827,7 @@
   color: #fff;
 }
 
-/* ---- Monitor stand ---- */
+
 .vg-monitor-stand {
   width: 50%;
   height: 14px;
@@ -1853,9 +1838,7 @@
     0 4px 8px rgba(0, 0, 0, 0.4);
 }
 
-/* ============================================================
-   7. FOOTER override
-   ============================================================ */
+
 .vg-page footer {
   background: none;
   border-top: 1px solid var(--vg-border);
@@ -1996,9 +1979,8 @@
   }
 }
 
-/* ============================================================
-   RESPONSIVE
-   ============================================================ */
+
+/* Tablet-and-down responsive adjustments. */
 @media (max-width: 1080px) {
   .vg-now-grid {
     grid-template-columns: 1fr;
