@@ -1,62 +1,82 @@
 /*
   film-styles.css
-  Film route theme. Scoped to body.film-page for cinema-style visuals.
+  Film route theme. Scoped to body.film-page.
+  Identity: deep crimson velvet, chrome silver, neon accents, animated light effects.
 */
 
-/* Route-local palette and typography tokens. */
+/* ─── Palette & base tokens ─────────────────────────────────────────────── */
+
 .film-page {
-  --film-bg-0: #090707;
-  --film-bg-1: #140d0c;
-  --film-bg-2: #231111;
-  --film-bg-3: #311818;
-  --film-velvet: #4d1d1f;
-  --film-gold: #d8a85a;
-  --film-gold-dark: #7d4f23;
-  --film-brass: #b88f46;
-  --film-brass-dark: #624824;
-  --film-steel: #8f959d;
-  --film-steel-dark: #4d535a;
-  --film-paper: #eee4ca;
-  --film-ink: #2d2418;
-  --film-neon: #f3c77b;
-  --film-panel-shadow: rgba(0, 0, 0, 0.62);
-  --film-edge: rgba(255, 225, 160, 0.22);
+  --film-velvet-0: #060203;
+  --film-velvet-1: #100406;
+  --film-velvet-2: #1e0808;
+  --film-velvet-3: #2a0a0c;
+  --film-chrome: #b8c0c8;
+  --film-chrome-dim: #6a727a;
+  --film-chrome-dark: #3a4048;
+  --film-bulb: #ffe088;
+  --film-bulb-glow: rgba(255, 220, 100, 0.55);
+  --film-neon-red: #ff3344;
+  --film-neon-blue: #44aaff;
+  --film-neon-amber: #ffcc55;
+  --film-panel-shadow: rgba(0, 0, 0, 0.72);
+  --film-edge: rgba(180, 190, 200, 0.2);
   --film-gap: 1.5rem;
 
-  color: #f6e7cc;
-  font-family: "IBM Plex Sans Condensed", "Trebuchet MS", sans-serif;
+  color: #e8dcd0;
+  font-family: "Libre Caslon Text", Georgia, "Times New Roman", serif;
   font-size: 38px;
+
+  /* Deep crimson velvet base with pronounced curtain folds + vignette */
   background:
-    radial-gradient(1200px 560px at 50% -12%, rgba(130, 45, 30, 0.35), transparent 72%),
-    radial-gradient(1000px 700px at -10% 100%, rgba(95, 20, 25, 0.26), transparent 70%),
-    radial-gradient(900px 680px at 108% 100%, rgba(58, 20, 30, 0.24), transparent 72%),
     repeating-linear-gradient(
       90deg,
-      rgba(90, 15, 20, 0.08) 0,
-      rgba(90, 15, 20, 0.08) 2px,
-      transparent 2px,
-      transparent 44px
+      rgba(130, 12, 18, 0.24) 0,
+      rgba(170, 22, 28, 0.10) 18px,
+      rgba(60, 4, 8, 0.30) 36px,
+      rgba(140, 16, 22, 0.08) 54px,
+      rgba(130, 12, 18, 0.24) 72px
     ),
-    linear-gradient(180deg, var(--film-bg-0), var(--film-bg-1) 30%, var(--film-bg-2) 62%, var(--film-bg-3) 100%);
+    radial-gradient(ellipse 120% 60% at 50% 0%, rgba(140, 20, 28, 0.28), transparent 55%),
+    radial-gradient(ellipse 100% 80% at 0% 100%, rgba(0, 0, 0, 0.65), transparent 50%),
+    radial-gradient(ellipse 100% 80% at 100% 100%, rgba(0, 0, 0, 0.65), transparent 50%),
+    radial-gradient(ellipse 60% 50% at 50% 50%, transparent 30%, rgba(0, 0, 0, 0.5) 100%),
+    linear-gradient(180deg, var(--film-velvet-0), var(--film-velvet-1) 25%, var(--film-velvet-2) 55%, var(--film-velvet-3) 100%);
 }
 
-.film-page::before,
+/* Animated film-grain overlay — unique to the film page */
+.film-page::before {
+  content: "";
+  display: block;
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  z-index: 9999;
+  opacity: 0.045;
+  clip-path: none;
+  border: none;
+  background: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='g'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23g)'/%3E%3C/svg%3E") repeat;
+  background-size: 256px 256px;
+  mix-blend-mode: overlay;
+  animation: grainShift 0.4s steps(4) infinite;
+}
+
 .film-page::after {
   display: none;
 }
 
-.film-page .film-marquee h1,
+/* All headings: Bebas Neue — the marquee typeface. No other page uses it */
 .film-page .film-panel h2,
-.film-page .film-panel h3 {
+.film-page .film-panel h3,
+.film-page .film-lightbox-title {
   font-family: "Bebas Neue", "Impact", sans-serif;
-  letter-spacing: 1.2px;
-  color: #ffe1ab;
   text-transform: uppercase;
+  letter-spacing: 1.5px;
   line-height: 1.1;
 }
 
 .film-page p {
-  color: rgba(255, 240, 212, 0.86);
+  color: rgba(230, 218, 200, 0.84);
 }
 
 .film-page main:not(.home-rooms) > section .container {
@@ -70,309 +90,405 @@
   padding: 1.6rem 0 0;
 }
 
-/* Hero composition: marquee + projector motif. */
+/* ─── Hero ───────────────────────────────────────────────────────────────── */
+
 .film-hero {
   position: relative;
-  padding: 2.1rem 0 1.2rem;
-  overflow: hidden;
+  padding: 1.2rem 0 0;
+  text-align: center;
 }
 
 .film-hero .container {
-  padding-left: 0;
-  padding-right: 0;
-}
-
-.film-curtain {
-  position: absolute;
-  inset: 0;
-  pointer-events: none;
-  background:
-    repeating-linear-gradient(
-      90deg,
-      rgba(120, 14, 18, 0.32) 0,
-      rgba(180, 28, 34, 0.14) 14px,
-      rgba(60, 6, 10, 0.36) 28px,
-      rgba(150, 20, 26, 0.12) 42px,
-      rgba(120, 14, 18, 0.32) 56px
-    ),
-    linear-gradient(180deg,
-      rgba(80, 12, 16, 0.5) 0%,
-      transparent 18%,
-      transparent 80%,
-      rgba(50, 8, 12, 0.6) 100%
-    );
-}
-
-
-.film-hero::after {
-  content: "";
-  position: absolute;
-  inset: 0;
-  pointer-events: none;
-  opacity: 0.04;
-  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
-  background-size: 200px 200px;
-  mix-blend-mode: overlay;
+  padding: 0;
 }
 
 .film-hero-inner {
   position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+}
+
+/* ─── Cinema Crown — decorative blade above the marquee ──────────────────── */
+
+.film-marquee-crown {
+  position: relative;
+  z-index: 3;
+  align-self: center;
+  width: clamp(140px, 18vw, 260px);
+  margin: 0 0 -1px;
+  padding: 0.6rem 1.2rem 0.45rem;
+  font-family: "Bebas Neue", "Impact", sans-serif;
+  font-size: clamp(1.2rem, 2.8vw, 2rem);
+  letter-spacing: 6px;
+  text-transform: uppercase;
+  text-align: center;
+  color: #ffeab0;
+  text-shadow:
+    0 0 12px rgba(255, 210, 80, 0.7),
+    0 0 30px rgba(255, 180, 60, 0.3);
+  background:
+    radial-gradient(ellipse 80% 90% at 50% 80%, rgba(255, 200, 100, 0.12), transparent 60%),
+    linear-gradient(180deg, #1c1008, #140c06);
+  border: 2px solid rgba(200, 170, 110, 0.35);
+  border-bottom: none;
+  border-radius: 6px 6px 0 0;
+  box-shadow:
+    0 -4px 20px rgba(255, 200, 80, 0.12),
+    inset 0 2px 8px rgba(0, 0, 0, 0.3);
+}
+
+/* Bulb outline around the crown */
+.film-marquee-crown::before {
+  content: "";
+  position: absolute;
+  inset: 4px 6px;
+  pointer-events: none;
+  border-radius: 4px 4px 0 0;
+  background:
+    /* Top row */
+    radial-gradient(circle at 10% 0%, var(--film-bulb) 0 2.5px, rgba(255, 210, 80, 0.35) 3px, transparent 5px),
+    radial-gradient(circle at 25% 0%, var(--film-bulb) 0 2.5px, rgba(255, 210, 80, 0.35) 3px, transparent 5px),
+    radial-gradient(circle at 40% 0%, var(--film-bulb) 0 2.5px, rgba(255, 210, 80, 0.35) 3px, transparent 5px),
+    radial-gradient(circle at 55% 0%, var(--film-bulb) 0 2.5px, rgba(255, 210, 80, 0.35) 3px, transparent 5px),
+    radial-gradient(circle at 70% 0%, var(--film-bulb) 0 2.5px, rgba(255, 210, 80, 0.35) 3px, transparent 5px),
+    radial-gradient(circle at 85% 0%, var(--film-bulb) 0 2.5px, rgba(255, 210, 80, 0.35) 3px, transparent 5px),
+    /* Left column */
+    radial-gradient(circle at 0% 20%, var(--film-bulb) 0 2.5px, rgba(255, 210, 80, 0.35) 3px, transparent 5px),
+    radial-gradient(circle at 0% 50%, var(--film-bulb) 0 2.5px, rgba(255, 210, 80, 0.35) 3px, transparent 5px),
+    radial-gradient(circle at 0% 80%, var(--film-bulb) 0 2.5px, rgba(255, 210, 80, 0.35) 3px, transparent 5px),
+    /* Right column */
+    radial-gradient(circle at 100% 20%, var(--film-bulb) 0 2.5px, rgba(255, 210, 80, 0.35) 3px, transparent 5px),
+    radial-gradient(circle at 100% 50%, var(--film-bulb) 0 2.5px, rgba(255, 210, 80, 0.35) 3px, transparent 5px),
+    radial-gradient(circle at 100% 80%, var(--film-bulb) 0 2.5px, rgba(255, 210, 80, 0.35) 3px, transparent 5px);
+  animation: bulbPulse 2.5s ease-in-out infinite;
+}
+
+/* ─── Ornate wing swoops flanking the crown ──────────────────────────────── */
+
+.film-marquee-wings {
+  position: absolute;
+  top: -6px;
+  left: 0;
+  width: 100%;
+  height: auto;
+  z-index: 2;
+  pointer-events: none;
+  overflow: visible;
+}
+
+.film-wing-outer,
+.film-wing-inner {
+  fill: none;
+  stroke: #ffe088;
+  stroke-linecap: round;
+  filter: url(#wing-glow);
+  animation: bulbPulse 2.5s ease-in-out infinite;
+}
+
+.film-wing-outer {
+  stroke-width: 6;
+  stroke-dasharray: 0.01 14;
+}
+
+.film-wing-inner {
+  stroke-width: 4.5;
+  stroke-dasharray: 0.01 11;
+  opacity: 0.75;
+}
+
+.film-wing-trim {
+  fill: none;
+  stroke: rgba(200, 170, 110, 0.3);
+  stroke-width: 1.5;
+  stroke-linecap: round;
+}
+
+/* ─── Cinema Marquee Sign — full-width theater facade ────────────────────── */
+
+.film-marquee {
+  position: relative;
+  padding: 0.5rem 3rem 1.2rem;
+  text-align: center;
+  overflow: hidden;
+  /* Dark mahogany/walnut frame — like a real theater facade */
+  background:
+    /* Subtle wood grain texture */
+    repeating-linear-gradient(
+      92deg,
+      rgba(100, 50, 20, 0.06) 0,
+      rgba(60, 30, 10, 0.04) 2px,
+      transparent 2px,
+      transparent 8px
+    ),
+    radial-gradient(ellipse 80% 60% at 50% 100%, rgba(255, 200, 100, 0.10), transparent 60%),
+    linear-gradient(180deg, #1c1008, #140c06 40%, #100804 100%);
+  /* Double metallic trim border */
+  border-top: 3px solid rgba(200, 170, 110, 0.35);
+  border-bottom: 3px solid rgba(200, 170, 110, 0.25);
+  border-left: 3px solid rgba(200, 170, 110, 0.25);
+  border-right: 3px solid rgba(200, 170, 110, 0.25);
+  box-shadow:
+    /* Warm amber glow spilling down from the sign */
+    0 0 80px rgba(255, 200, 80, 0.14),
+    0 0 160px rgba(255, 180, 60, 0.06),
+    0 20px 60px rgba(0, 0, 0, 0.65),
+    /* Inner metallic trim */
+    inset 0 3px 0 rgba(200, 170, 110, 0.12),
+    inset 0 -3px 0 rgba(200, 170, 110, 0.08),
+    inset 0 8px 20px rgba(0, 0, 0, 0.3);
+}
+
+/* Dense chase-light bulbs — top and bottom rows */
+.film-marquee::before {
+  content: "";
+  position: absolute;
+  inset: 6px 12px;
+  pointer-events: none;
+  z-index: 2;
+  background:
+    /* ── Top row ── */
+    radial-gradient(circle at 5%  0%, var(--film-bulb) 0 4px, rgba(255, 210, 80, 0.4) 5px, transparent 7px),
+    radial-gradient(circle at 8%  0%, var(--film-bulb) 0 4px, rgba(255, 210, 80, 0.4) 5px, transparent 7px),
+    radial-gradient(circle at 11% 0%, var(--film-bulb) 0 4px, rgba(255, 210, 80, 0.4) 5px, transparent 7px),
+    radial-gradient(circle at 14% 0%, var(--film-bulb) 0 4px, rgba(255, 210, 80, 0.4) 5px, transparent 7px),
+    radial-gradient(circle at 17% 0%, var(--film-bulb) 0 4px, rgba(255, 210, 80, 0.4) 5px, transparent 7px),
+    radial-gradient(circle at 20% 0%, var(--film-bulb) 0 4px, rgba(255, 210, 80, 0.4) 5px, transparent 7px),
+    radial-gradient(circle at 23% 0%, var(--film-bulb) 0 4px, rgba(255, 210, 80, 0.4) 5px, transparent 7px),
+    radial-gradient(circle at 26% 0%, var(--film-bulb) 0 4px, rgba(255, 210, 80, 0.4) 5px, transparent 7px),
+    radial-gradient(circle at 29% 0%, var(--film-bulb) 0 4px, rgba(255, 210, 80, 0.4) 5px, transparent 7px),
+    radial-gradient(circle at 32% 0%, var(--film-bulb) 0 4px, rgba(255, 210, 80, 0.4) 5px, transparent 7px),
+    radial-gradient(circle at 35% 0%, var(--film-bulb) 0 4px, rgba(255, 210, 80, 0.4) 5px, transparent 7px),
+    radial-gradient(circle at 38% 0%, var(--film-bulb) 0 4px, rgba(255, 210, 80, 0.4) 5px, transparent 7px),
+    radial-gradient(circle at 41% 0%, var(--film-bulb) 0 4px, rgba(255, 210, 80, 0.4) 5px, transparent 7px),
+    radial-gradient(circle at 44% 0%, var(--film-bulb) 0 4px, rgba(255, 210, 80, 0.4) 5px, transparent 7px),
+    radial-gradient(circle at 47% 0%, var(--film-bulb) 0 4px, rgba(255, 210, 80, 0.4) 5px, transparent 7px),
+    radial-gradient(circle at 50% 0%, var(--film-bulb) 0 4px, rgba(255, 210, 80, 0.4) 5px, transparent 7px),
+    radial-gradient(circle at 53% 0%, var(--film-bulb) 0 4px, rgba(255, 210, 80, 0.4) 5px, transparent 7px),
+    radial-gradient(circle at 56% 0%, var(--film-bulb) 0 4px, rgba(255, 210, 80, 0.4) 5px, transparent 7px),
+    radial-gradient(circle at 59% 0%, var(--film-bulb) 0 4px, rgba(255, 210, 80, 0.4) 5px, transparent 7px),
+    radial-gradient(circle at 62% 0%, var(--film-bulb) 0 4px, rgba(255, 210, 80, 0.4) 5px, transparent 7px),
+    radial-gradient(circle at 65% 0%, var(--film-bulb) 0 4px, rgba(255, 210, 80, 0.4) 5px, transparent 7px),
+    radial-gradient(circle at 68% 0%, var(--film-bulb) 0 4px, rgba(255, 210, 80, 0.4) 5px, transparent 7px),
+    radial-gradient(circle at 71% 0%, var(--film-bulb) 0 4px, rgba(255, 210, 80, 0.4) 5px, transparent 7px),
+    radial-gradient(circle at 74% 0%, var(--film-bulb) 0 4px, rgba(255, 210, 80, 0.4) 5px, transparent 7px),
+    radial-gradient(circle at 77% 0%, var(--film-bulb) 0 4px, rgba(255, 210, 80, 0.4) 5px, transparent 7px),
+    radial-gradient(circle at 80% 0%, var(--film-bulb) 0 4px, rgba(255, 210, 80, 0.4) 5px, transparent 7px),
+    radial-gradient(circle at 83% 0%, var(--film-bulb) 0 4px, rgba(255, 210, 80, 0.4) 5px, transparent 7px),
+    radial-gradient(circle at 86% 0%, var(--film-bulb) 0 4px, rgba(255, 210, 80, 0.4) 5px, transparent 7px),
+    radial-gradient(circle at 89% 0%, var(--film-bulb) 0 4px, rgba(255, 210, 80, 0.4) 5px, transparent 7px),
+    radial-gradient(circle at 92% 0%, var(--film-bulb) 0 4px, rgba(255, 210, 80, 0.4) 5px, transparent 7px),
+    radial-gradient(circle at 95% 0%, var(--film-bulb) 0 4px, rgba(255, 210, 80, 0.4) 5px, transparent 7px),
+    /* ── Bottom row ── */
+    radial-gradient(circle at 5%  100%, var(--film-bulb) 0 4px, rgba(255, 210, 80, 0.4) 5px, transparent 7px),
+    radial-gradient(circle at 8%  100%, var(--film-bulb) 0 4px, rgba(255, 210, 80, 0.4) 5px, transparent 7px),
+    radial-gradient(circle at 11% 100%, var(--film-bulb) 0 4px, rgba(255, 210, 80, 0.4) 5px, transparent 7px),
+    radial-gradient(circle at 14% 100%, var(--film-bulb) 0 4px, rgba(255, 210, 80, 0.4) 5px, transparent 7px),
+    radial-gradient(circle at 17% 100%, var(--film-bulb) 0 4px, rgba(255, 210, 80, 0.4) 5px, transparent 7px),
+    radial-gradient(circle at 20% 100%, var(--film-bulb) 0 4px, rgba(255, 210, 80, 0.4) 5px, transparent 7px),
+    radial-gradient(circle at 23% 100%, var(--film-bulb) 0 4px, rgba(255, 210, 80, 0.4) 5px, transparent 7px),
+    radial-gradient(circle at 26% 100%, var(--film-bulb) 0 4px, rgba(255, 210, 80, 0.4) 5px, transparent 7px),
+    radial-gradient(circle at 29% 100%, var(--film-bulb) 0 4px, rgba(255, 210, 80, 0.4) 5px, transparent 7px),
+    radial-gradient(circle at 32% 100%, var(--film-bulb) 0 4px, rgba(255, 210, 80, 0.4) 5px, transparent 7px),
+    radial-gradient(circle at 35% 100%, var(--film-bulb) 0 4px, rgba(255, 210, 80, 0.4) 5px, transparent 7px),
+    radial-gradient(circle at 38% 100%, var(--film-bulb) 0 4px, rgba(255, 210, 80, 0.4) 5px, transparent 7px),
+    radial-gradient(circle at 41% 100%, var(--film-bulb) 0 4px, rgba(255, 210, 80, 0.4) 5px, transparent 7px),
+    radial-gradient(circle at 44% 100%, var(--film-bulb) 0 4px, rgba(255, 210, 80, 0.4) 5px, transparent 7px),
+    radial-gradient(circle at 47% 100%, var(--film-bulb) 0 4px, rgba(255, 210, 80, 0.4) 5px, transparent 7px),
+    radial-gradient(circle at 50% 100%, var(--film-bulb) 0 4px, rgba(255, 210, 80, 0.4) 5px, transparent 7px),
+    radial-gradient(circle at 53% 100%, var(--film-bulb) 0 4px, rgba(255, 210, 80, 0.4) 5px, transparent 7px),
+    radial-gradient(circle at 56% 100%, var(--film-bulb) 0 4px, rgba(255, 210, 80, 0.4) 5px, transparent 7px),
+    radial-gradient(circle at 59% 100%, var(--film-bulb) 0 4px, rgba(255, 210, 80, 0.4) 5px, transparent 7px),
+    radial-gradient(circle at 62% 100%, var(--film-bulb) 0 4px, rgba(255, 210, 80, 0.4) 5px, transparent 7px),
+    radial-gradient(circle at 65% 100%, var(--film-bulb) 0 4px, rgba(255, 210, 80, 0.4) 5px, transparent 7px),
+    radial-gradient(circle at 68% 100%, var(--film-bulb) 0 4px, rgba(255, 210, 80, 0.4) 5px, transparent 7px),
+    radial-gradient(circle at 71% 100%, var(--film-bulb) 0 4px, rgba(255, 210, 80, 0.4) 5px, transparent 7px),
+    radial-gradient(circle at 74% 100%, var(--film-bulb) 0 4px, rgba(255, 210, 80, 0.4) 5px, transparent 7px),
+    radial-gradient(circle at 77% 100%, var(--film-bulb) 0 4px, rgba(255, 210, 80, 0.4) 5px, transparent 7px),
+    radial-gradient(circle at 80% 100%, var(--film-bulb) 0 4px, rgba(255, 210, 80, 0.4) 5px, transparent 7px),
+    radial-gradient(circle at 83% 100%, var(--film-bulb) 0 4px, rgba(255, 210, 80, 0.4) 5px, transparent 7px),
+    radial-gradient(circle at 86% 100%, var(--film-bulb) 0 4px, rgba(255, 210, 80, 0.4) 5px, transparent 7px),
+    radial-gradient(circle at 89% 100%, var(--film-bulb) 0 4px, rgba(255, 210, 80, 0.4) 5px, transparent 7px),
+    radial-gradient(circle at 92% 100%, var(--film-bulb) 0 4px, rgba(255, 210, 80, 0.4) 5px, transparent 7px),
+    radial-gradient(circle at 95% 100%, var(--film-bulb) 0 4px, rgba(255, 210, 80, 0.4) 5px, transparent 7px),
+    /* ── Left column (full height) ── */
+    radial-gradient(circle at 0% 8%,  var(--film-bulb) 0 4px, rgba(255, 210, 80, 0.4) 5px, transparent 7px),
+    radial-gradient(circle at 0% 15%, var(--film-bulb) 0 4px, rgba(255, 210, 80, 0.4) 5px, transparent 7px),
+    radial-gradient(circle at 0% 22%, var(--film-bulb) 0 4px, rgba(255, 210, 80, 0.4) 5px, transparent 7px),
+    radial-gradient(circle at 0% 29%, var(--film-bulb) 0 4px, rgba(255, 210, 80, 0.4) 5px, transparent 7px),
+    radial-gradient(circle at 0% 36%, var(--film-bulb) 0 4px, rgba(255, 210, 80, 0.4) 5px, transparent 7px),
+    radial-gradient(circle at 0% 43%, var(--film-bulb) 0 4px, rgba(255, 210, 80, 0.4) 5px, transparent 7px),
+    radial-gradient(circle at 0% 50%, var(--film-bulb) 0 4px, rgba(255, 210, 80, 0.4) 5px, transparent 7px),
+    radial-gradient(circle at 0% 57%, var(--film-bulb) 0 4px, rgba(255, 210, 80, 0.4) 5px, transparent 7px),
+    radial-gradient(circle at 0% 64%, var(--film-bulb) 0 4px, rgba(255, 210, 80, 0.4) 5px, transparent 7px),
+    radial-gradient(circle at 0% 71%, var(--film-bulb) 0 4px, rgba(255, 210, 80, 0.4) 5px, transparent 7px),
+    radial-gradient(circle at 0% 78%, var(--film-bulb) 0 4px, rgba(255, 210, 80, 0.4) 5px, transparent 7px),
+    radial-gradient(circle at 0% 85%, var(--film-bulb) 0 4px, rgba(255, 210, 80, 0.4) 5px, transparent 7px),
+    radial-gradient(circle at 0% 92%, var(--film-bulb) 0 4px, rgba(255, 210, 80, 0.4) 5px, transparent 7px),
+    /* ── Right column (full height) ── */
+    radial-gradient(circle at 100% 8%,  var(--film-bulb) 0 4px, rgba(255, 210, 80, 0.4) 5px, transparent 7px),
+    radial-gradient(circle at 100% 15%, var(--film-bulb) 0 4px, rgba(255, 210, 80, 0.4) 5px, transparent 7px),
+    radial-gradient(circle at 100% 22%, var(--film-bulb) 0 4px, rgba(255, 210, 80, 0.4) 5px, transparent 7px),
+    radial-gradient(circle at 100% 29%, var(--film-bulb) 0 4px, rgba(255, 210, 80, 0.4) 5px, transparent 7px),
+    radial-gradient(circle at 100% 36%, var(--film-bulb) 0 4px, rgba(255, 210, 80, 0.4) 5px, transparent 7px),
+    radial-gradient(circle at 100% 43%, var(--film-bulb) 0 4px, rgba(255, 210, 80, 0.4) 5px, transparent 7px),
+    radial-gradient(circle at 100% 50%, var(--film-bulb) 0 4px, rgba(255, 210, 80, 0.4) 5px, transparent 7px),
+    radial-gradient(circle at 100% 57%, var(--film-bulb) 0 4px, rgba(255, 210, 80, 0.4) 5px, transparent 7px),
+    radial-gradient(circle at 100% 64%, var(--film-bulb) 0 4px, rgba(255, 210, 80, 0.4) 5px, transparent 7px),
+    radial-gradient(circle at 100% 71%, var(--film-bulb) 0 4px, rgba(255, 210, 80, 0.4) 5px, transparent 7px),
+    radial-gradient(circle at 100% 78%, var(--film-bulb) 0 4px, rgba(255, 210, 80, 0.4) 5px, transparent 7px),
+    radial-gradient(circle at 100% 85%, var(--film-bulb) 0 4px, rgba(255, 210, 80, 0.4) 5px, transparent 7px),
+    radial-gradient(circle at 100% 92%, var(--film-bulb) 0 4px, rgba(255, 210, 80, 0.4) 5px, transparent 7px);
+  animation: bulbPulse 2.5s ease-in-out infinite;
+}
+
+/* Bright letterboard panel with horizontal letter-channel grooves */
+.film-marquee::after {
+  content: "";
+  position: absolute;
+  top: 10px;
+  left: 24px;
+  right: 24px;
+  bottom: 16px;
+  pointer-events: none;
+  z-index: 0;
+  background:
+    /* Horizontal letter-channel grooves */
+    repeating-linear-gradient(
+      0deg,
+      transparent,
+      transparent 22px,
+      rgba(0, 0, 0, 0.04) 22px,
+      rgba(0, 0, 0, 0.06) 23px,
+      transparent 23px,
+      transparent 24px
+    ),
+    /* Warm center hotspot from overhead bulbs */
+    radial-gradient(ellipse 60% 70% at 50% 30%, rgba(255, 252, 240, 0.30), transparent 60%),
+    /* Bright cream letterboard surface */
+    linear-gradient(180deg, #f8f4e8, #f0eadb 40%, #ebe4d2 100%);
+  border: 2px solid rgba(80, 55, 25, 0.25);
+  box-shadow:
+    inset 0 2px 10px rgba(0, 0, 0, 0.06),
+    inset 0 0 30px rgba(0, 0, 0, 0.02),
+    0 0 20px rgba(255, 240, 200, 0.08);
+}
+
+/* Kicker — small "NOW SHOWING" label on the letterboard */
+.film-kicker {
+  position: relative;
+  z-index: 1;
+  display: inline-block;
+  margin: 0 0 0.15rem;
+  padding: 0;
+  font-family: "Special Elite", "Courier New", monospace;
+  font-size: 0.5rem;
+  letter-spacing: 4px;
+  color: rgba(60, 35, 15, 0.45);
+  text-transform: uppercase;
+  background: none;
+  border: none;
+  text-shadow: none;
+  box-shadow: none;
+}
+
+/* Marquee title list — movie titles displayed on the letterboard */
+.film-marquee-titles {
+  position: relative;
+  z-index: 1;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.15rem;
+}
+
+.film-marquee-titles li {
+  font-family: "Bebas Neue", "Impact", sans-serif;
+  font-size: clamp(1.1rem, 2.8vw, 1.6rem);
+  color: #1a0e06;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  text-shadow: 0 1px 0 rgba(255, 255, 255, 0.3);
+  line-height: 1.15;
+}
+
+.film-marquee-featured {
+  font-size: clamp(1.8rem, 4.5vw, 3.2rem) !important;
+  letter-spacing: 5px;
+  margin-bottom: 0.1rem;
+}
+
+
+/* ─── Page layout ────────────────────────────────────────────────────────── */
+
+.film-layout {
   display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
+  grid-template-columns: minmax(0, 1fr) 290px;
   gap: var(--film-gap);
   align-items: start;
 }
 
-.film-marquee {
-  position: relative;
-  padding: 1.5rem 1.3rem;
-  background:
-    radial-gradient(circle at 50% 0%, rgba(255, 233, 175, 0.12), transparent 52%),
-    linear-gradient(180deg, #4a2a14, #26160f 65%, #1a110c 100%);
-  box-shadow:
-    0 0 60px rgba(255, 200, 100, 0.08),
-    0 0 120px rgba(255, 180, 80, 0.04),
-    0 20px 28px var(--film-panel-shadow),
-    inset 0 0 0 1px rgba(255, 217, 156, 0.22),
-    inset 0 0 0 8px rgba(83, 52, 23, 0.72),
-    inset 0 0 0 11px rgba(221, 172, 97, 0.15);
-}
-
-.film-marquee::before {
-  content: "";
-  position: absolute;
-  inset: 8px;
-  pointer-events: none;
-  border: 1px solid rgba(210, 168, 95, 0.22);
-  background:
-    
-    radial-gradient(circle at 8% 0%, rgba(255, 215, 150, 0.92) 0 2.5px, transparent 3.5px),
-    radial-gradient(circle at 20% 0%, rgba(255, 215, 150, 0.92) 0 2.5px, transparent 3.5px),
-    radial-gradient(circle at 32% 0%, rgba(255, 215, 150, 0.92) 0 2.5px, transparent 3.5px),
-    radial-gradient(circle at 44% 0%, rgba(255, 215, 150, 0.92) 0 2.5px, transparent 3.5px),
-    radial-gradient(circle at 56% 0%, rgba(255, 215, 150, 0.92) 0 2.5px, transparent 3.5px),
-    radial-gradient(circle at 68% 0%, rgba(255, 215, 150, 0.92) 0 2.5px, transparent 3.5px),
-    radial-gradient(circle at 80% 0%, rgba(255, 215, 150, 0.92) 0 2.5px, transparent 3.5px),
-    radial-gradient(circle at 92% 0%, rgba(255, 215, 150, 0.92) 0 2.5px, transparent 3.5px),
-    
-    radial-gradient(circle at 8% 100%, rgba(255, 215, 150, 0.92) 0 2.5px, transparent 3.5px),
-    radial-gradient(circle at 20% 100%, rgba(255, 215, 150, 0.92) 0 2.5px, transparent 3.5px),
-    radial-gradient(circle at 32% 100%, rgba(255, 215, 150, 0.92) 0 2.5px, transparent 3.5px),
-    radial-gradient(circle at 44% 100%, rgba(255, 215, 150, 0.92) 0 2.5px, transparent 3.5px),
-    radial-gradient(circle at 56% 100%, rgba(255, 215, 150, 0.92) 0 2.5px, transparent 3.5px),
-    radial-gradient(circle at 68% 100%, rgba(255, 215, 150, 0.92) 0 2.5px, transparent 3.5px),
-    radial-gradient(circle at 80% 100%, rgba(255, 215, 150, 0.92) 0 2.5px, transparent 3.5px),
-    radial-gradient(circle at 92% 100%, rgba(255, 215, 150, 0.92) 0 2.5px, transparent 3.5px),
-    
-    radial-gradient(circle at 0% 25%, rgba(255, 215, 150, 0.92) 0 2.5px, transparent 3.5px),
-    radial-gradient(circle at 0% 50%, rgba(255, 215, 150, 0.92) 0 2.5px, transparent 3.5px),
-    radial-gradient(circle at 0% 75%, rgba(255, 215, 150, 0.92) 0 2.5px, transparent 3.5px),
-    
-    radial-gradient(circle at 100% 25%, rgba(255, 215, 150, 0.92) 0 2.5px, transparent 3.5px),
-    radial-gradient(circle at 100% 50%, rgba(255, 215, 150, 0.92) 0 2.5px, transparent 3.5px),
-    radial-gradient(circle at 100% 75%, rgba(255, 215, 150, 0.92) 0 2.5px, transparent 3.5px);
-  filter: drop-shadow(0 0 5px rgba(255, 214, 142, 0.35));
-}
-
-.film-kicker {
-  margin: 0;
-  font-family: "Special Elite", "Courier New", monospace;
-  font-size: 0.58rem;
-  letter-spacing: 2px;
-  color: #f1c57c;
-  text-transform: uppercase;
-}
-
-.film-marquee h1 {
-  margin: 0.45rem 0 0.4rem;
-  font-size: clamp(2rem, 5vw, 3.7rem);
-  color: var(--film-neon);
-  text-shadow:
-    0 0 6px rgba(252, 214, 143, 0.4),
-    0 0 16px rgba(250, 180, 80, 0.26);
-}
-
-.film-subtitle {
-  margin: 0 0 1.1rem;
-  font-size: 0.92rem;
-  max-width: 36ch;
-}
-
-.film-ticket {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  min-width: 160px;
-  padding: 0.45rem 0.9rem;
-  border: 1px solid rgba(241, 194, 115, 0.52);
-  background:
-    
-    radial-gradient(circle at 100% 20%, #26160e 3px, transparent 3.5px),
-    radial-gradient(circle at 100% 50%, #26160e 3px, transparent 3.5px),
-    radial-gradient(circle at 100% 80%, #26160e 3px, transparent 3.5px),
-    linear-gradient(180deg, #f0cf9f, #cda063);
-  color: #26160e;
-  font-family: "Bebas Neue", "Impact", sans-serif;
-  font-size: 0.78rem;
-  letter-spacing: 1px;
-  text-transform: uppercase;
-  box-shadow:
-    inset 0 1px 0 rgba(255, 236, 194, 0.6),
-    0 6px 10px rgba(0, 0, 0, 0.38);
-}
-
-.film-ticket:hover {
-  color: #140d08;
-  filter: brightness(1.06);
-}
-
-.film-projector {
-  position: relative;
-  min-height: 220px;
-}
-
-.film-projector-body {
-  position: absolute;
-  left: 34px;
-  right: 20px;
-  top: 78px;
-  height: 86px;
-  background:
-    
-    repeating-linear-gradient(
-      90deg,
-      transparent 0, transparent 10px,
-      rgba(0, 0, 0, 0.08) 10px, rgba(0, 0, 0, 0.08) 11px,
-      transparent 11px, transparent 21px
-    ),
-    
-    linear-gradient(165deg, #a8adb4, #626a72 52%, #41464d 100%);
-  box-shadow:
-    0 12px 16px rgba(0, 0, 0, 0.45),
-    inset 0 0 0 1px rgba(230, 235, 240, 0.18),
-    inset 0 1px 0 rgba(255, 255, 255, 0.15);
-}
-
-
-.film-projector-body::before,
-.film-projector-body::after {
-  content: "";
-  position: absolute;
-  width: 8px;
-  height: 8px;
-  top: 8px;
-  border-radius: 50% !important;
-  background: radial-gradient(circle at 35% 30%, #cdd2d8, #6a7078 70%);
-  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.3), 0 0 0 1px rgba(0, 0, 0, 0.2);
-}
-
-.film-projector-body::before { left: 12px; }
-.film-projector-body::after { right: 12px; }
-
-.film-projector-lens {
-  position: absolute;
-  right: 0;
-  top: 103px;
-  width: 46px;
-  height: 46px;
-  background:
-    radial-gradient(circle at 35% 30%, #e8f0ff, #8ba7d0 40%, #2d3d50 72%, #111a24 100%);
-  box-shadow:
-    0 0 0 6px #3a4148,
-    0 0 0 8px #717881,
-    0 0 18px rgba(120, 170, 255, 0.25);
-}
-
-.film-projector-beam {
-  position: absolute;
-  right: -50px;
-  top: 92px;
-  width: 230px;
-  height: 110px;
-  background:
-    linear-gradient(90deg, rgba(165, 206, 255, 0.22), rgba(165, 206, 255, 0));
-  clip-path: polygon(0 28%, 100% 0, 100% 100%, 0 72%);
-  animation: filmBeam 2.6s ease-in-out infinite;
-}
-
-.film-reel {
-  position: absolute;
-  top: 8px;
-  width: 92px;
-  height: 92px;
-  border-radius: 50% !important;
-  background:
-    
-    conic-gradient(
-      from 0deg,
-      transparent 0deg, transparent 4deg,
-      rgba(60, 65, 72, 0.7) 4deg, rgba(60, 65, 72, 0.7) 6deg,
-      transparent 6deg, transparent 54deg,
-      rgba(60, 65, 72, 0.7) 54deg, rgba(60, 65, 72, 0.7) 56deg,
-      transparent 56deg, transparent 114deg,
-      rgba(60, 65, 72, 0.7) 114deg, rgba(60, 65, 72, 0.7) 116deg,
-      transparent 116deg, transparent 174deg,
-      rgba(60, 65, 72, 0.7) 174deg, rgba(60, 65, 72, 0.7) 176deg,
-      transparent 176deg, transparent 234deg,
-      rgba(60, 65, 72, 0.7) 234deg, rgba(60, 65, 72, 0.7) 236deg,
-      transparent 236deg, transparent 294deg,
-      rgba(60, 65, 72, 0.7) 294deg, rgba(60, 65, 72, 0.7) 296deg,
-      transparent 296deg, transparent 360deg
-    ),
-    radial-gradient(circle at 45% 40%, #b0b6bd, #686f78 50%, #2f343a 100%);
-  box-shadow:
-    inset 0 0 0 5px #434a52,
-    inset 0 0 0 18px rgba(14, 16, 19, 0.48),
-    0 10px 14px rgba(0, 0, 0, 0.42);
-}
-
-.film-reel::before {
-  content: "";
-  position: absolute;
-  inset: 26px;
-  border-radius: 50% !important;
-  background:
-    radial-gradient(circle at 50% 50%, transparent 4px, rgba(55, 60, 68, 0.9) 5px, rgba(55, 60, 68, 0.9) 6px, transparent 7px),
-    radial-gradient(circle at 30% 30%, #aeb6c0, #49505a 80%);
-  box-shadow: inset 0 0 3px rgba(0, 0, 0, 0.4);
-}
-
-.film-reel-left { left: 16px; }
-.film-reel-right { left: 124px; }
-
-.film-grid {
+.film-main-col {
   display: grid;
   gap: var(--film-gap);
 }
 
-.film-grid-top,
-.film-grid-bottom {
-  grid-template-columns: repeat(2, minmax(0, 1fr));
-  align-items: stretch;
+.film-sidebar {
+  display: grid;
+  gap: var(--film-gap);
 }
 
-/* Reusable panel shell for feed, stats, featured, and list modules. */
+/* ─── Panel base — Art Deco chrome ───────────────────────────────────────── */
+
 .film-panel {
   position: relative;
-  padding: 1rem;
+  padding: 1.1rem;
   background:
     repeating-linear-gradient(
       90deg,
-      rgba(180, 130, 70, 0.055) 0,
-      rgba(180, 130, 70, 0.055) 1px,
+      rgba(120, 10, 20, 0.04) 0,
+      rgba(120, 10, 20, 0.04) 1px,
       transparent 1px,
       transparent 9px
     ),
-    linear-gradient(180deg, #2a1b16, #1a1210 62%, #130f0d 100%);
+    linear-gradient(180deg, #1a0808, #100505 60%, #0a0303 100%);
+  border: 1px solid rgba(180, 190, 200, 0.18);
   box-shadow:
-    0 18px 28px var(--film-panel-shadow),
-    inset 0 0 0 1px var(--film-edge),
-    inset 0 1px 0 rgba(255, 227, 170, 0.1);
+    inset 0 0 0 3px rgba(6, 2, 3, 0.5),
+    inset 0 0 0 4px rgba(180, 190, 200, 0.1),
+    0 20px 36px var(--film-panel-shadow);
+}
+
+/* Art Deco chrome corner brackets */
+.film-panel::before,
+.film-panel::after {
+  content: "";
+  position: absolute;
+  width: 24px;
+  height: 24px;
+  pointer-events: none;
+}
+
+.film-panel::before {
+  top: 5px;
+  left: 5px;
+  border-top: 2px solid var(--film-chrome-dim);
+  border-left: 2px solid var(--film-chrome-dim);
+}
+
+.film-panel::after {
+  bottom: 5px;
+  right: 5px;
+  border-bottom: 2px solid var(--film-chrome-dim);
+  border-right: 2px solid var(--film-chrome-dim);
 }
 
 .film-panel h2 {
   margin: 0 0 0.75rem;
-  font-size: clamp(1.15rem, 2.2vw, 1.65rem);
+  font-size: clamp(1.05rem, 2.2vw, 1.55rem);
+  color: var(--film-chrome);
 }
 
 .film-panel-head {
@@ -388,9 +504,396 @@
   font-family: "Special Elite", "Courier New", monospace;
   font-size: 0.6rem;
   letter-spacing: 1px;
-  color: #f6c97f;
+  color: var(--film-neon-amber);
   text-transform: uppercase;
 }
+
+/* ─── Featured Log — lightbox with animated glow ─────────────────────────── */
+
+.film-lightbox {
+  display: grid;
+  grid-template-columns: 320px minmax(0, 1fr);
+  gap: 1.4rem;
+  align-items: start;
+}
+
+/* Chrome + amber lightbulb frame — glow breathes */
+.film-lightbox-frame {
+  position: relative;
+  width: 320px;
+  flex-shrink: 0;
+  padding: 14px;
+  background:
+    /* Top-row bulbs */
+    radial-gradient(circle at 5%  1.5%, var(--film-bulb) 0 3px, rgba(255, 200, 60, 0.35) 3.5px, transparent 5.5px),
+    radial-gradient(circle at 16% 1.5%, var(--film-bulb) 0 3px, rgba(255, 200, 60, 0.35) 3.5px, transparent 5.5px),
+    radial-gradient(circle at 27% 1.5%, var(--film-bulb) 0 3px, rgba(255, 200, 60, 0.35) 3.5px, transparent 5.5px),
+    radial-gradient(circle at 38% 1.5%, var(--film-bulb) 0 3px, rgba(255, 200, 60, 0.35) 3.5px, transparent 5.5px),
+    radial-gradient(circle at 50% 1.5%, var(--film-bulb) 0 3px, rgba(255, 200, 60, 0.35) 3.5px, transparent 5.5px),
+    radial-gradient(circle at 62% 1.5%, var(--film-bulb) 0 3px, rgba(255, 200, 60, 0.35) 3.5px, transparent 5.5px),
+    radial-gradient(circle at 73% 1.5%, var(--film-bulb) 0 3px, rgba(255, 200, 60, 0.35) 3.5px, transparent 5.5px),
+    radial-gradient(circle at 84% 1.5%, var(--film-bulb) 0 3px, rgba(255, 200, 60, 0.35) 3.5px, transparent 5.5px),
+    radial-gradient(circle at 95% 1.5%, var(--film-bulb) 0 3px, rgba(255, 200, 60, 0.35) 3.5px, transparent 5.5px),
+    /* Bottom-row bulbs */
+    radial-gradient(circle at 5%  98.5%, var(--film-bulb) 0 3px, rgba(255, 200, 60, 0.35) 3.5px, transparent 5.5px),
+    radial-gradient(circle at 16% 98.5%, var(--film-bulb) 0 3px, rgba(255, 200, 60, 0.35) 3.5px, transparent 5.5px),
+    radial-gradient(circle at 27% 98.5%, var(--film-bulb) 0 3px, rgba(255, 200, 60, 0.35) 3.5px, transparent 5.5px),
+    radial-gradient(circle at 38% 98.5%, var(--film-bulb) 0 3px, rgba(255, 200, 60, 0.35) 3.5px, transparent 5.5px),
+    radial-gradient(circle at 50% 98.5%, var(--film-bulb) 0 3px, rgba(255, 200, 60, 0.35) 3.5px, transparent 5.5px),
+    radial-gradient(circle at 62% 98.5%, var(--film-bulb) 0 3px, rgba(255, 200, 60, 0.35) 3.5px, transparent 5.5px),
+    radial-gradient(circle at 73% 98.5%, var(--film-bulb) 0 3px, rgba(255, 200, 60, 0.35) 3.5px, transparent 5.5px),
+    radial-gradient(circle at 84% 98.5%, var(--film-bulb) 0 3px, rgba(255, 200, 60, 0.35) 3.5px, transparent 5.5px),
+    radial-gradient(circle at 95% 98.5%, var(--film-bulb) 0 3px, rgba(255, 200, 60, 0.35) 3.5px, transparent 5.5px),
+    /* Left-column bulbs */
+    radial-gradient(circle at 3% 6%,  var(--film-bulb) 0 3px, rgba(255, 200, 60, 0.35) 3.5px, transparent 5.5px),
+    radial-gradient(circle at 3% 14%, var(--film-bulb) 0 3px, rgba(255, 200, 60, 0.35) 3.5px, transparent 5.5px),
+    radial-gradient(circle at 3% 22%, var(--film-bulb) 0 3px, rgba(255, 200, 60, 0.35) 3.5px, transparent 5.5px),
+    radial-gradient(circle at 3% 30%, var(--film-bulb) 0 3px, rgba(255, 200, 60, 0.35) 3.5px, transparent 5.5px),
+    radial-gradient(circle at 3% 38%, var(--film-bulb) 0 3px, rgba(255, 200, 60, 0.35) 3.5px, transparent 5.5px),
+    radial-gradient(circle at 3% 46%, var(--film-bulb) 0 3px, rgba(255, 200, 60, 0.35) 3.5px, transparent 5.5px),
+    radial-gradient(circle at 3% 54%, var(--film-bulb) 0 3px, rgba(255, 200, 60, 0.35) 3.5px, transparent 5.5px),
+    radial-gradient(circle at 3% 62%, var(--film-bulb) 0 3px, rgba(255, 200, 60, 0.35) 3.5px, transparent 5.5px),
+    radial-gradient(circle at 3% 70%, var(--film-bulb) 0 3px, rgba(255, 200, 60, 0.35) 3.5px, transparent 5.5px),
+    radial-gradient(circle at 3% 78%, var(--film-bulb) 0 3px, rgba(255, 200, 60, 0.35) 3.5px, transparent 5.5px),
+    radial-gradient(circle at 3% 86%, var(--film-bulb) 0 3px, rgba(255, 200, 60, 0.35) 3.5px, transparent 5.5px),
+    radial-gradient(circle at 3% 94%, var(--film-bulb) 0 3px, rgba(255, 200, 60, 0.35) 3.5px, transparent 5.5px),
+    /* Right-column bulbs */
+    radial-gradient(circle at 97% 6%,  var(--film-bulb) 0 3px, rgba(255, 200, 60, 0.35) 3.5px, transparent 5.5px),
+    radial-gradient(circle at 97% 14%, var(--film-bulb) 0 3px, rgba(255, 200, 60, 0.35) 3.5px, transparent 5.5px),
+    radial-gradient(circle at 97% 22%, var(--film-bulb) 0 3px, rgba(255, 200, 60, 0.35) 3.5px, transparent 5.5px),
+    radial-gradient(circle at 97% 30%, var(--film-bulb) 0 3px, rgba(255, 200, 60, 0.35) 3.5px, transparent 5.5px),
+    radial-gradient(circle at 97% 38%, var(--film-bulb) 0 3px, rgba(255, 200, 60, 0.35) 3.5px, transparent 5.5px),
+    radial-gradient(circle at 97% 46%, var(--film-bulb) 0 3px, rgba(255, 200, 60, 0.35) 3.5px, transparent 5.5px),
+    radial-gradient(circle at 97% 54%, var(--film-bulb) 0 3px, rgba(255, 200, 60, 0.35) 3.5px, transparent 5.5px),
+    radial-gradient(circle at 97% 62%, var(--film-bulb) 0 3px, rgba(255, 200, 60, 0.35) 3.5px, transparent 5.5px),
+    radial-gradient(circle at 97% 70%, var(--film-bulb) 0 3px, rgba(255, 200, 60, 0.35) 3.5px, transparent 5.5px),
+    radial-gradient(circle at 97% 78%, var(--film-bulb) 0 3px, rgba(255, 200, 60, 0.35) 3.5px, transparent 5.5px),
+    radial-gradient(circle at 97% 86%, var(--film-bulb) 0 3px, rgba(255, 200, 60, 0.35) 3.5px, transparent 5.5px),
+    radial-gradient(circle at 97% 94%, var(--film-bulb) 0 3px, rgba(255, 200, 60, 0.35) 3.5px, transparent 5.5px),
+    /* Frame base */
+    linear-gradient(160deg, #1a1008, #0e0804 55%, #060302 100%);
+  border: 2px solid rgba(180, 190, 200, 0.35);
+  box-shadow:
+    0 0 0 1px rgba(100, 108, 116, 0.2),
+    0 0 20px rgba(255, 185, 50, 0.15),
+    0 0 50px rgba(255, 165, 30, 0.06),
+    0 14px 30px rgba(0, 0, 0, 0.6);
+  animation: bulbPulse 2.5s ease-in-out infinite;
+}
+
+.film-lightbox-poster {
+  display: block;
+  width: 100%;
+  aspect-ratio: 2 / 3;
+  object-fit: cover;
+}
+
+/* Title + rating overlay */
+.film-lightbox-overlay {
+  position: absolute;
+  bottom: 14px;
+  left: 14px;
+  right: 14px;
+  padding: 0.7rem 0.7rem 0.5rem;
+  background:
+    linear-gradient(0deg, rgba(4, 2, 2, 0.96) 0%, rgba(4, 2, 2, 0.8) 65%, transparent 100%);
+}
+
+.film-lightbox-title {
+  margin: 0 0 0.2rem;
+  font-size: 0.9rem !important;
+  color: #fff !important;
+  line-height: 1.2;
+  letter-spacing: 1px !important;
+}
+
+/* Normalized rating stars — suppress drop-cap */
+.film-lightbox-rating {
+  margin: 0;
+  font-size: 0.84rem;
+  color: var(--film-neon-amber);
+  line-height: 1;
+  letter-spacing: 2px;
+}
+
+.film-lightbox-rating::first-letter {
+  float: none !important;
+  font-size: inherit !important;
+  font-family: inherit !important;
+  color: inherit !important;
+  line-height: inherit !important;
+  padding: 0 !important;
+  margin: 0 !important;
+}
+
+/* Info strip */
+.film-lightbox-info {
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+  padding-top: 0.1rem;
+}
+
+.film-lightbox-date {
+  margin: 0;
+  font-family: "Special Elite", "Courier New", monospace;
+  font-size: 0.62rem;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: rgba(180, 190, 200, 0.6);
+}
+
+.film-lightbox-date::first-letter {
+  float: none !important;
+  font-size: inherit !important;
+  font-family: inherit !important;
+  color: inherit !important;
+  line-height: inherit !important;
+  padding: 0 !important;
+  margin: 0 !important;
+}
+
+.film-lightbox-review {
+  margin: 0;
+  font-size: 0.9rem;
+  line-height: 1.5;
+  color: rgba(230, 218, 200, 0.88);
+  font-style: italic;
+}
+
+.film-lightbox-review::first-letter {
+  float: none !important;
+  font-size: inherit !important;
+  font-family: inherit !important;
+  color: inherit !important;
+  line-height: inherit !important;
+  padding: 0 !important;
+  margin: 0 !important;
+}
+
+/* Letterboxd link */
+.film-lb-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45em;
+  color: rgba(0, 220, 80, 0.9);
+  font-family: "Special Elite", "Courier New", monospace;
+  font-size: 0.66rem;
+  text-transform: uppercase;
+  letter-spacing: 0.8px;
+  text-decoration: none;
+  margin-top: auto;
+}
+
+.film-lb-link:hover {
+  color: #44ff90;
+  text-shadow: 0 0 8px rgba(0, 255, 80, 0.3);
+}
+
+.film-lb-logo {
+  flex-shrink: 0;
+  vertical-align: middle;
+}
+
+/* ─── Now Screening — cinema projection screen with curtain drapes ────────── */
+
+.film-panel-screen {
+  padding: 1rem 0 0.6rem;
+  overflow: hidden;
+  /* Dark theater wall / acoustic surround */
+  background:
+    radial-gradient(ellipse 90% 50% at 50% 30%, rgba(22, 18, 22, 0.6), transparent 65%),
+    linear-gradient(180deg, #0c090b 0%, #080608 40%, #060506 100%);
+  border: none;
+  /* Screen glow spilling onto surrounding page */
+  box-shadow:
+    0 0 70px rgba(230, 240, 255, 0.10),
+    0 0 140px rgba(210, 225, 250, 0.05),
+    0 32px 56px rgba(0, 0, 0, 0.85);
+}
+
+/* Velvet curtain drape — left: gathered folds with highlight/shadow depth */
+.film-panel-screen::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  width: 1.1rem;
+  height: auto;
+  border: none;
+  pointer-events: none;
+  z-index: 0;
+  background:
+    /* Vertical fold ridges — alternating light/shadow for a gathered drape */
+    linear-gradient(90deg,
+      rgba(110, 12, 18, 0.85) 0%,
+      rgba(155, 20, 28, 0.55) 12%,
+      rgba(50, 4, 8, 0.80) 24%,
+      rgba(140, 16, 24, 0.50) 36%,
+      rgba(45, 3, 7, 0.82) 48%,
+      rgba(125, 14, 20, 0.45) 60%,
+      rgba(55, 5, 9, 0.75) 72%,
+      rgba(100, 10, 16, 0.35) 84%,
+      transparent 100%
+    ),
+    /* Subtle horizontal gathering texture */
+    repeating-linear-gradient(
+      180deg,
+      rgba(160, 20, 28, 0.10) 0,
+      rgba(70, 6, 12, 0.15) 5px,
+      rgba(130, 14, 22, 0.06) 10px
+    );
+  box-shadow: inset -8px 0 20px rgba(0, 0, 0, 0.55);
+}
+
+/* Velvet curtain drape — right: mirrored gathered folds */
+.film-panel-screen::after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  width: 1.1rem;
+  height: auto;
+  border: none;
+  pointer-events: none;
+  z-index: 0;
+  background:
+    linear-gradient(270deg,
+      rgba(110, 12, 18, 0.85) 0%,
+      rgba(155, 20, 28, 0.55) 12%,
+      rgba(50, 4, 8, 0.80) 24%,
+      rgba(140, 16, 24, 0.50) 36%,
+      rgba(45, 3, 7, 0.82) 48%,
+      rgba(125, 14, 20, 0.45) 60%,
+      rgba(55, 5, 9, 0.75) 72%,
+      rgba(100, 10, 16, 0.35) 84%,
+      transparent 100%
+    ),
+    repeating-linear-gradient(
+      180deg,
+      rgba(160, 20, 28, 0.10) 0,
+      rgba(70, 6, 12, 0.15) 5px,
+      rgba(130, 14, 22, 0.06) 10px
+    );
+  box-shadow: inset 8px 0 20px rgba(0, 0, 0, 0.55);
+}
+
+/* Projection screen header — inset into matte black frame */
+.film-panel-screen .film-panel-head {
+  padding: 0.9rem 2rem 0.8rem;
+  margin: 0 1.1rem;
+  /* Bright projection surface with center hotspot + film grain */
+  background:
+    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='200' height='200'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.75' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='0.06'/%3E%3C/svg%3E"),
+    radial-gradient(ellipse 70% 200% at 50% 50%, rgba(255, 252, 245, 0.20), transparent 55%),
+    linear-gradient(180deg, #eee8d4, #e4dcc6);
+  /* Matte black screen frame */
+  border: 3px solid #050404;
+  border-bottom: none;
+  margin-bottom: 0;
+  position: relative;
+  z-index: 1;
+  box-shadow:
+    0 0 0 1px rgba(50, 45, 42, 0.3),
+    inset 0 1px 6px rgba(0, 0, 0, 0.06);
+  animation: screenGlow 3s ease-in-out infinite;
+}
+
+.film-panel-screen .film-panel-head h2 {
+  font-size: clamp(1.05rem, 2.2vw, 1.55rem);
+  color: #0a0806 !important;
+  text-shadow: none;
+}
+
+.film-panel-screen .film-feed-status {
+  color: rgba(20, 16, 12, 0.55);
+}
+
+/* Film list — continuous bright screen surface below the header */
+.film-panel-screen .film-strip-list {
+  padding: 0.85rem 1.6rem;
+  margin: 0 1.1rem;
+  /* Bright projection screen surface — unified with header + film grain */
+  background:
+    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='200' height='200'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.75' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='0.06'/%3E%3C/svg%3E"),
+    /* Faint scan lines for projection texture */
+    repeating-linear-gradient(
+      0deg,
+      transparent,
+      transparent 3px,
+      rgba(0, 0, 0, 0.012) 3px,
+      rgba(0, 0, 0, 0.012) 4px
+    ),
+    /* Projector beam hotspot — brighter in center-top */
+    radial-gradient(ellipse 85% 50% at 50% 0%, rgba(255, 255, 255, 0.22), transparent 65%),
+    /* Screen surface — bright silver-white */
+    linear-gradient(180deg, #f0f2f5 0%, #e8eaed 40%, #e2e4e8 100%);
+  /* Matte black frame — sides and bottom */
+  border: 3px solid #050404;
+  border-top: 1px solid rgba(0, 0, 0, 0.08);
+  position: relative;
+  z-index: 1;
+  /* Faint edge vignette for screen depth */
+  box-shadow:
+    0 0 0 1px rgba(50, 45, 42, 0.3),
+    inset 0 0 30px rgba(0, 0, 0, 0.04);
+  animation: screenGlow 3s ease-in-out infinite;
+}
+
+/* Film entries on the bright projection screen — dark text */
+.film-panel-screen .film-strip-item {
+  background: transparent;
+  border-color: rgba(0, 0, 0, 0.07);
+}
+
+.film-panel-screen .film-strip-item::before,
+.film-panel-screen .film-strip-item::after {
+  background: repeating-linear-gradient(
+    90deg,
+    rgba(0, 0, 0, 0.13) 0,
+    rgba(0, 0, 0, 0.13) 8px,
+    transparent 8px,
+    transparent 16px
+  );
+}
+
+.film-panel-screen .film-strip-item a {
+  color: #18100c;
+}
+
+.film-panel-screen .film-strip-item:hover {
+  border-color: rgba(140, 18, 25, 0.2);
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.07);
+}
+
+.film-panel-screen .film-strip-item a:hover {
+  color: #8c1218;
+}
+
+.film-panel-screen .film-strip-meta {
+  color: rgba(20, 12, 8, 0.52);
+}
+
+.film-panel-screen .film-strip-review {
+  color: rgba(24, 15, 10, 0.72);
+  font-style: italic;
+}
+
+.film-panel-screen .film-strip-review::first-letter {
+  float: none !important;
+  font-size: inherit !important;
+  font-family: inherit !important;
+  color: inherit !important;
+  line-height: inherit !important;
+  padding: 0 !important;
+  margin: 0 !important;
+}
+
+/* ─── Film strip list ────────────────────────────────────────────────────── */
 
 .film-strip-list {
   list-style: none;
@@ -405,303 +908,459 @@
   display: grid;
   gap: 0.2rem;
   padding: 0.55rem 0.7rem;
-  background:
-    linear-gradient(180deg, rgba(24, 28, 32, 0.94), rgba(10, 12, 16, 0.96));
-  border: 1px solid rgba(202, 164, 95, 0.22);
+  background: linear-gradient(180deg, rgba(18, 10, 12, 0.94), rgba(8, 4, 5, 0.96));
+  border: 1px solid rgba(180, 190, 200, 0.15);
 }
 
+/* Film strip sprocket perforations — red-tinted */
 .film-strip-item::before,
 .film-strip-item::after {
   content: "";
   position: absolute;
   left: 8px;
   right: 8px;
-  height: 3px;
+  height: 4px;
   background:
     repeating-linear-gradient(
       90deg,
-      rgba(235, 214, 175, 0.42) 0,
-      rgba(235, 214, 175, 0.42) 7px,
-      transparent 7px,
-      transparent 14px
+      rgba(200, 180, 160, 0.45) 0,
+      rgba(200, 180, 160, 0.45) 8px,
+      transparent 8px,
+      transparent 16px
     );
 }
 
 .film-strip-item::before { top: 2px; }
-.film-strip-item::after { bottom: 2px; }
+.film-strip-item::after  { bottom: 2px; }
 
 .film-strip-item a {
-  color: #ffe2b2;
-  font-size: 1rem;
+  color: #e8dcd0;
+  font-family: "Libre Caslon Text", Georgia, serif;
+  font-size: 0.95rem;
   line-height: 1.25;
 }
 
 .film-strip-item:hover {
-  border-color: rgba(235, 195, 120, 0.38);
-  box-shadow: 0 2px 12px rgba(240, 190, 100, 0.08);
+  border-color: rgba(255, 50, 65, 0.3);
+  box-shadow: 0 2px 14px rgba(255, 50, 60, 0.06);
 }
 
-.film-strip-item a:hover { color: #fff1d6; }
+.film-strip-item a:hover { color: #fff; }
 
 .film-strip-meta {
-  color: rgba(232, 210, 178, 0.7);
+  color: rgba(180, 190, 200, 0.6);
   font-family: "Special Elite", "Courier New", monospace;
-  font-size: 0.66rem;
+  font-size: 0.64rem;
   letter-spacing: 0.35px;
   text-transform: uppercase;
 }
 
 .film-strip-review {
   margin: 0.08rem 0 0;
-  color: rgba(239, 225, 201, 0.84);
-  font-size: 0.84rem;
-  line-height: 1.35;
+  color: rgba(230, 218, 200, 0.82);
+  font-family: "Libre Caslon Text", Georgia, serif;
+  font-size: 0.82rem;
+  line-height: 1.4;
+  font-style: italic;
 }
 
-.film-stats-grid {
-  margin: 0;
-  display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
-  gap: 0.7rem;
-}
+/* ─── Sidebar — movie ticket stub ───────────────────────────────────────── */
 
-.film-stats-grid div {
-  padding: 0.55rem 0.6rem;
-  background: linear-gradient(180deg, rgba(90, 68, 36, 0.35), rgba(48, 36, 20, 0.45));
-  border: 1px solid rgba(231, 194, 120, 0.22);
-}
-
-.film-stats-grid dt {
-  margin: 0;
-  font-family: "Special Elite", "Courier New", monospace;
-  font-size: 0.58rem;
-  letter-spacing: 1px;
-  color: rgba(241, 205, 146, 0.78);
-  text-transform: uppercase;
-}
-
-.film-stats-grid dd {
-  margin: 0.2rem 0 0;
-  font-size: 1.3rem;
-  color: #ffe4b6;
-  font-family: "Bebas Neue", "Impact", sans-serif;
-  letter-spacing: 1px;
-}
-
-.film-note {
-  margin: 0.8rem 0 0;
-  font-size: 0.76rem;
-  color: rgba(236, 215, 180, 0.72);
-}
-
-.film-note a { color: #f5cc88; }
-
-.film-featured-card {
-  display: grid;
-  grid-template-columns: 130px minmax(0, 1fr);
-  gap: 0.8rem;
-  align-items: start;
-}
-
-.film-featured-card img {
-  width: 100%;
-  aspect-ratio: 2 / 3;
-  object-fit: cover;
-  border: 3px solid rgba(238, 203, 136, 0.35);
+.film-panel-lists,
+.film-panel-stats {
+  /* Cream paper with subtle horizontal print lines — physical ticket look */
+  background:
+    repeating-linear-gradient(
+      0deg,
+      transparent,
+      transparent 18px,
+      rgba(0, 0, 0, 0.02) 18px,
+      rgba(0, 0, 0, 0.02) 19px
+    ),
+    linear-gradient(165deg, #f9f3e5, #f0e8d3 55%, #ebe0c6 100%);
+  border: 1px solid rgba(100, 60, 20, 0.28);
+  border-top: 5px solid #b8192a;
   box-shadow:
-    0 9px 16px rgba(0, 0, 0, 0.4),
-    inset 0 0 0 1px rgba(0, 0, 0, 0.3);
-  outline: 1px solid rgba(180, 140, 70, 0.18);
-  outline-offset: 3px;
+    0 2px 4px rgba(0, 0, 0, 0.18),
+    0 14px 32px rgba(0, 0, 0, 0.65),
+    0 0 22px rgba(100, 12, 18, 0.12),
+    inset 0 0 0 1px rgba(255, 255, 255, 0.5);
 }
 
-.film-featured-copy h3 {
-  margin: 0;
-  font-size: 1.35rem;
+/* Punch holes — dark stamped circles on the cream paper */
+.film-panel-lists::before,
+.film-panel-stats::before {
+  width: 14px;
+  height: 14px;
+  border-radius: 50% !important;
+  border: none;
+  background: radial-gradient(circle at 40% 35%, #160608, #0d0406 65%, rgba(10, 3, 4, 0.6) 100%);
+  box-shadow:
+    inset 0 1px 4px rgba(0, 0, 0, 0.7),
+    0 0 0 1px rgba(80, 35, 15, 0.2);
+  top: 3.85rem;
+  left: -7px;
 }
 
-.film-featured-meta {
-  margin: 0.25rem 0 0.45rem;
+.film-panel-lists::after,
+.film-panel-stats::after {
+  width: 14px;
+  height: 14px;
+  border-radius: 50% !important;
+  border: none;
+  background: radial-gradient(circle at 40% 35%, #160608, #0d0406 65%, rgba(10, 3, 4, 0.6) 100%);
+  box-shadow:
+    inset 0 1px 4px rgba(0, 0, 0, 0.7),
+    0 0 0 1px rgba(80, 35, 15, 0.2);
+  top: 3.85rem;
+  right: -7px;
+  left: auto;
+  bottom: auto;
+}
+
+/* Ticket heading — dark thermal print on cream */
+.film-panel-lists h2,
+.film-panel-stats h2 {
+  position: relative;
+  font-size: 1rem;
+  color: #1c0e08;
+  border-bottom: none;
+  padding-bottom: 0.9rem;
+  margin-bottom: 0.9rem;
+  letter-spacing: 2px;
+}
+
+/* Ticket type label — like "ADULT" at the top of a cinema ticket */
+.film-panel-lists h2::before,
+.film-panel-stats h2::before {
+  content: "✦ ADMIT ONE ✦";
+  display: block;
   font-family: "Special Elite", "Courier New", monospace;
-  font-size: 0.64rem;
-  color: rgba(240, 204, 137, 0.78);
-  text-transform: uppercase;
-  letter-spacing: 0.8px;
+  font-size: 0.5rem;
+  letter-spacing: 2.5px;
+  color: rgba(60, 25, 8, 0.55);
+  margin-bottom: 0.3rem;
+  font-weight: normal;
 }
 
-.film-featured-copy p {
-  margin: 0 0 0.5rem;
-  font-size: 0.92rem;
-  color: rgba(255, 233, 198, 0.84);
+/* Perforated tear line — dark dashes across cream paper */
+.film-panel-lists h2::after,
+.film-panel-stats h2::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: -1.1rem;
+  right: -1.1rem;
+  height: 1px;
+  background-image: repeating-linear-gradient(
+    to right,
+    rgba(50, 20, 8, 0.45) 0,
+    rgba(50, 20, 8, 0.45) 5px,
+    transparent 5px,
+    transparent 10px
+  );
 }
 
-.film-featured-copy a {
-  font-family: "Special Elite", "Courier New", monospace;
-  font-size: 0.7rem;
-  text-transform: uppercase;
-  letter-spacing: 0.8px;
-  color: #f6cb84;
+/* List activity — dark print on cream ticket body */
+.film-panel-lists .film-list-activity a {
+  color: #1c0e08;
 }
+
+.film-panel-lists .film-list-activity a:hover {
+  color: #b8192a;
+}
+
+.film-panel-lists .film-list-activity span {
+  color: rgba(50, 20, 8, 0.55);
+}
+
+.film-panel-lists .film-list-activity li {
+  border-bottom-color: rgba(50, 20, 8, 0.1);
+}
+
+/* Stats grid — dark print on cream ticket body */
+.film-panel-stats .film-stats-grid div {
+  background: rgba(0, 0, 0, 0.04);
+  border-color: rgba(50, 20, 8, 0.14);
+}
+
+.film-panel-stats .film-stats-grid dt {
+  color: rgba(50, 20, 8, 0.6);
+}
+
+.film-panel-stats .film-stats-grid dd {
+  color: #1c0e08;
+}
+
+.film-panel-stats .film-note {
+  color: rgba(50, 20, 8, 0.5);
+}
+
+.film-panel-stats .film-note a {
+  color: #b8192a;
+  opacity: 0.85;
+}
+
+.film-panel-stats .film-note a:hover {
+  opacity: 1;
+}
+
+/* ─── List activity ──────────────────────────────────────────────────────── */
 
 .film-list-activity {
   list-style: none;
   margin: 0;
   padding: 0;
   display: grid;
-  gap: 0.45rem;
+  gap: 0;
 }
 
 .film-list-activity li {
   display: flex;
   justify-content: space-between;
-  gap: 0.8rem;
-  padding: 0.48rem 0.6rem;
-  background: rgba(20, 16, 14, 0.85);
-  border: 1px solid rgba(210, 170, 98, 0.2);
-  transition: border-color 0.2s;
+  align-items: baseline;
+  gap: 0.6rem;
+  padding: 0.44rem 0;
+  border-bottom: 1px solid rgba(180, 190, 200, 0.07);
 }
 
-.film-list-activity li:hover {
-  border-color: rgba(235, 195, 120, 0.38);
+.film-list-activity li:last-child {
+  border-bottom: none;
 }
 
 .film-list-activity a {
-  color: #f2d3a1;
-  font-size: 0.88rem;
-  line-height: 1.2;
+  color: #d0c4b8;
+  font-family: "Libre Caslon Text", Georgia, serif;
+  font-size: 0.82rem;
+  line-height: 1.3;
+}
+
+.film-list-activity a:hover {
+  color: #fff;
 }
 
 .film-list-activity span {
-  color: rgba(229, 208, 173, 0.7);
+  color: rgba(180, 190, 200, 0.5);
   font-family: "Special Elite", "Courier New", monospace;
-  font-size: 0.62rem;
+  font-size: 0.58rem;
   text-transform: uppercase;
   white-space: nowrap;
+  flex-shrink: 0;
 }
+
+/* ─── Booth stats ────────────────────────────────────────────────────────── */
+
+.film-stats-grid {
+  margin: 0;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 0.5rem;
+}
+
+.film-stats-grid div {
+  padding: 0.48rem 0.55rem;
+  background: rgba(40, 15, 18, 0.4);
+  border: 1px solid rgba(180, 190, 200, 0.12);
+}
+
+.film-stats-grid dt {
+  margin: 0;
+  font-family: "Special Elite", "Courier New", monospace;
+  font-size: 0.55rem;
+  letter-spacing: 1px;
+  color: rgba(180, 190, 200, 0.6);
+  text-transform: uppercase;
+}
+
+.film-stats-grid dd {
+  margin: 0.15rem 0 0;
+  font-family: "Bebas Neue", "Impact", sans-serif;
+  font-size: 1.2rem;
+  color: var(--film-chrome);
+  letter-spacing: 1px;
+}
+
+.film-note {
+  margin: 0.7rem 0 0;
+  font-size: 0.7rem;
+  color: rgba(180, 190, 200, 0.45);
+  font-family: "Special Elite", "Courier New", monospace;
+}
+
+.film-note a {
+  color: var(--film-neon-red);
+  opacity: 0.7;
+}
+
+.film-note a:hover {
+  opacity: 1;
+}
+
+/* ─── Fallback ───────────────────────────────────────────────────────────── */
 
 .film-fallback {
   margin: 0;
   padding: 0.7rem;
-  background: rgba(17, 14, 13, 0.8);
-  border: 1px solid rgba(203, 160, 92, 0.2);
-  color: rgba(244, 221, 184, 0.84);
+  background: rgba(10, 5, 5, 0.8);
+  border: 1px solid rgba(180, 190, 200, 0.15);
+  color: rgba(230, 218, 200, 0.84);
+  font-family: "Libre Caslon Text", Georgia, serif;
 }
 
-
-.film-divider {
-  height: 1px;
-  margin: 1.2rem 0 0;
-  border: none;
-  background:
-    linear-gradient(90deg,
-      transparent,
-      rgba(216, 168, 90, 0.35) 20%,
-      rgba(216, 168, 90, 0.5) 50%,
-      rgba(216, 168, 90, 0.35) 80%,
-      transparent
-    );
-}
-
-
-.film-panel::before,
-.film-panel::after {
-  content: "";
-  position: absolute;
-  width: 14px;
-  height: 14px;
-  pointer-events: none;
-}
-
-.film-panel::before {
-  top: 6px;
-  left: 6px;
-  border-top: 1px solid rgba(220, 178, 100, 0.28);
-  border-left: 1px solid rgba(220, 178, 100, 0.28);
-}
-
-.film-panel::after {
-  bottom: 6px;
-  right: 6px;
-  border-bottom: 1px solid rgba(220, 178, 100, 0.28);
-  border-right: 1px solid rgba(220, 178, 100, 0.28);
-}
+/* ─── Footer ─────────────────────────────────────────────────────────────── */
 
 .film-page footer {
   margin-top: 2rem;
-  border-top: 1px solid rgba(227, 170, 90, 0.2);
+  border-top: 1px solid rgba(180, 190, 200, 0.12);
   background: none;
 }
 
 .film-page footer .container {
-  color: rgba(232, 207, 164, 0.46);
+  color: rgba(180, 190, 200, 0.35);
 }
 
-@keyframes filmBeam {
-  0%, 100% { opacity: 0.45; }
-  50% { opacity: 0.72; }
+/* ─── Animations ─────────────────────────────────────────────────────────── */
+
+@keyframes bulbPulse {
+  0%, 100% {
+    filter: drop-shadow(0 0 5px rgba(255, 220, 100, 0.3));
+  }
+  50% {
+    filter: drop-shadow(0 0 14px rgba(255, 220, 100, 0.65));
+  }
 }
 
-/* Responsive panel stacking for narrower viewports. */
+@keyframes grainShift {
+  0%   { background-position: 0 0; }
+  25%  { background-position: 128px 64px; }
+  50%  { background-position: 64px 192px; }
+  75%  { background-position: 192px 128px; }
+  100% { background-position: 0 0; }
+}
+
+@keyframes screenGlow {
+  0%, 100% {
+    box-shadow:
+      0 0 0 1px rgba(50, 45, 42, 0.3),
+      inset 0 0 30px rgba(0, 0, 0, 0.04),
+      0 0 25px rgba(240, 240, 255, 0.06),
+      0 0 50px rgba(230, 235, 250, 0.03);
+  }
+  50% {
+    box-shadow:
+      0 0 0 1px rgba(50, 45, 42, 0.3),
+      inset 0 0 30px rgba(0, 0, 0, 0.04),
+      0 0 40px rgba(240, 240, 255, 0.12),
+      0 0 80px rgba(230, 235, 250, 0.05);
+  }
+}
+
+/* ─── Responsive ─────────────────────────────────────────────────────────── */
+
 @media (max-width: 1080px) {
-  .film-hero .container {
-    padding-left: 1.4rem;
-    padding-right: 1.4rem;
-  }
-
-  .film-hero-inner,
-  .film-grid-top,
-  .film-grid-bottom {
+  .film-layout {
     grid-template-columns: 1fr;
+    padding: 0 1.4rem;
   }
 
-  .film-projector {
-    min-height: 200px;
-  }
-
-  .film-projector-beam {
-    right: -14px;
-    width: 160px;
+  .film-sidebar {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 }
 
-@media (max-width: 720px) {
+@media (max-width: 760px) {
   .film-page {
     font-size: 36px;
   }
 
-  .film-hero {
-    padding-top: 1.2rem;
+  .film-marquee-wings {
+    display: none;
+  }
+
+  .film-marquee-crown {
+    padding: 0.45rem 0.8rem 0.35rem;
+    letter-spacing: 4px;
   }
 
   .film-marquee {
-    padding: 1rem 0.9rem;
+    padding: 1.2rem 1.2rem 1rem;
+  }
+
+  .film-marquee::before {
+    inset: 6px 10px;
+  }
+
+  .film-marquee::after {
+    top: 14px;
+    left: 16px;
+    right: 16px;
+    bottom: 14px;
   }
 
   .film-kicker {
-    font-size: 0.56rem;
+    font-size: 0.46rem;
   }
 
-  .film-subtitle {
-    font-size: 0.86rem;
-  }
-
-  .film-featured-card {
+  .film-lightbox {
     grid-template-columns: 1fr;
   }
 
-  .film-featured-card img {
-    max-width: 180px;
+  .film-lightbox-frame {
+    width: 100%;
+    max-width: none;
+    margin: 0;
+  }
+
+  .film-layout {
+    padding: 0 1rem;
+  }
+
+  .film-panel-screen {
+    box-shadow:
+      0 8px 40px rgba(230, 240, 255, 0.08),
+      0 24px 44px rgba(0, 0, 0, 0.8);
+  }
+
+  .film-sidebar {
+    grid-template-columns: 1fr;
   }
 
   .film-stats-grid {
-    grid-template-columns: 1fr;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
   .film-strip-item a {
-    font-size: 0.92rem;
+    font-size: 0.88rem;
   }
 
   .film-strip-review {
     font-size: 0.76rem;
+  }
+
+  .film-panel-screen .film-panel-head,
+  .film-panel-screen .film-strip-list {
+    margin-left: 0.8rem;
+    margin-right: 0.8rem;
+  }
+
+  .film-panel-lists,
+  .film-panel-stats {
+    margin-left: 0.8rem;
+    margin-right: 0.8rem;
+  }
+
+  .film-panel-screen .film-strip-list {
+    padding: 0.85rem;
+  }
+
+  .film-panel-screen::before,
+  .film-panel-screen::after {
+    width: 0.8rem;
+  }
+}
+
+@media (max-width: 420px) {
+  .film-stats-grid {
+    grid-template-columns: 1fr;
   }
 }

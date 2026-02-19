@@ -1998,11 +1998,11 @@ footer .container {
 }
 
 .shelf-book--lean {
-  transform: rotate(-0.9deg) translateY(6px);
+  transform: none;
 }
 
 .shelf-book--lean:hover {
-  transform: rotate(-0.9deg) translateY(-1px) scale(1.008);
+  transform: translateY(-6px) scale(1.008);
 }
 
 .shelf-book--tall {

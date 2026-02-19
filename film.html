@@ -83,85 +83,74 @@
       </div>
     </div>
   </nav>
-  <!-- Page hero / introductory banner section. -->
-  <header class="film-hero" aria-labelledby="film-title">
-    <div class="film-curtain" aria-hidden="true"></div>
+  <!-- Page hero / cinema marquee sign. -->
+  <header class="film-hero" aria-label="Cinema marquee">
     <div class="container film-hero-inner">
+      <svg class="film-marquee-wings" viewBox="0 0 900 80" aria-hidden="true">
+        <defs>
+          <filter id="wing-glow">
+            <feGaussianBlur stdDeviation="2.5" result="b"/>
+            <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+          </filter>
+        </defs>
+        <!-- Left wing: main arch → trough → large secondary dome → stop above marquee -->
+        <path class="film-wing-outer" d="M 348,74 C 318,0 258,-15 192,2 C 142,16 125,52 105,54 C 80,56 55,-10 30,2 C 12,10 0,40 0,62"/>
+        <path class="film-wing-trim"  d="M 344,75 C 316,8 260,-8 196,8 C 148,20 130,52 110,53 C 88,55 62,-2 38,8 C 20,14 8,42 8,62"/>
+        <path class="film-wing-inner" d="M 340,76 C 314,16 264,0 200,14 C 152,26 134,50 115,52 C 94,54 68,6 44,14 C 28,20 16,44 16,62"/>
+        <!-- Right wing (mirrored) -->
+        <path class="film-wing-outer" d="M 552,74 C 582,0 642,-15 708,2 C 758,16 775,52 795,54 C 820,56 845,-10 870,2 C 888,10 900,40 900,62"/>
+        <path class="film-wing-trim"  d="M 556,75 C 584,8 640,-8 704,8 C 752,20 770,52 790,53 C 812,55 838,-2 862,8 C 880,14 892,42 892,62"/>
+        <path class="film-wing-inner" d="M 560,76 C 586,16 636,0 700,14 C 748,26 766,50 785,52 C 806,54 832,6 856,14 C 872,20 884,44 884,62"/>
+      </svg>
+      <div class="film-marquee-crown" aria-hidden="true">Cinema</div>
       <div class="film-marquee">
-        <p class="film-kicker">Projection Booth</p>
-        <h1 id="film-title">Film Room</h1>
-        <p class="film-subtitle">Skeuomorphic watch log with live updates from Letterboxd.</p>
-        <a class="film-ticket" href="https://letterboxd.com/tenderbrew/" target="_blank" rel="noopener">Open Letterboxd</a>
-      </div>
-
-      <div class="film-projector" aria-hidden="true">
-        <div class="film-reel film-reel-left"></div>
-        <div class="film-reel film-reel-right"></div>
-        <div class="film-projector-body"></div>
-        <div class="film-projector-lens"></div>
-        <div class="film-projector-beam"></div>
+        <p class="film-kicker">Now Showing</p>
+        <ul id="film-marquee-titles" class="film-marquee-titles" aria-label="Now showing"></ul>
       </div>
     </div>
   </header>
   <!-- Main page content. Most route-specific structure lives here. -->
   <main>
-    
-    <!-- Secondary dashboard: featured log card and list activity feed. -->
-    <section class="film-section" aria-label="Featured review and list activity">
+    <section class="film-section" aria-label="Film activity and stats">
       <div class="container">
-        <div class="film-grid film-grid-bottom">
-          <article class="film-panel film-panel-featured" aria-labelledby="featured-title">
-            <h2 id="featured-title">Featured Log</h2>
-            <div id="film-featured"></div>
-          </article>
+        <div class="film-layout">
 
-          <article class="film-panel film-panel-lists" aria-labelledby="lists-title">
-            <h2 id="lists-title">Recent Lists</h2>
-            <ul id="film-list-activity" class="film-list-activity"></ul>
-          </article>
-        </div>
-      </div>
-    </section>
+          <!-- Main column: featured log + now screening -->
+          <div class="film-main-col">
+            <article class="film-panel film-panel-featured" aria-labelledby="featured-title">
+              <h2 id="featured-title">Featured Log</h2>
+              <div id="film-featured"></div>
+            </article>
 
-    <!-- Live activity dashboard: recent watches and computed booth stats. -->
-    <section class="film-section film-dashboard" aria-label="Live Letterboxd activity">
-      <div class="container">
-        <hr class="film-divider" aria-hidden="true">
-        <div class="film-grid film-grid-top" style="margin-top: 1.2rem;">
-          <article class="film-panel film-panel-list" aria-labelledby="recent-title">
-            <div class="film-panel-head">
-              <h2 id="recent-title">Now Screening</h2>
-              <p id="film-feed-status" class="film-feed-status" role="status">Loading Letterboxd feed...</p>
-            </div>
-            <ul id="film-recent-watches" class="film-strip-list" aria-live="polite"></ul>
-          </article>
+            <article class="film-panel film-panel-screen" aria-labelledby="recent-title">
+              <div class="film-panel-head">
+                <h2 id="recent-title">Now Screening</h2>
+                <p id="film-feed-status" class="film-feed-status" role="status">Loading Letterboxd feed...</p>
+              </div>
+              <ul id="film-recent-watches" class="film-strip-list" aria-live="polite"></ul>
+            </article>
+          </div>
 
-          <article class="film-panel film-panel-stats" aria-labelledby="stats-title">
-            <h2 id="stats-title">Booth Stats</h2>
-            <dl class="film-stats-grid">
-              <div>
-                <dt>Films Watched</dt>
-                <dd id="stat-films">--</dd>
-              </div>
-              <div>
-                <dt>This Year</dt>
-                <dd id="stat-this-year">--</dd>
-              </div>
-              <div>
-                <dt>Lists</dt>
-                <dd id="stat-lists">--</dd>
-              </div>
-              <div>
-                <dt>Following</dt>
-                <dd id="stat-following">--</dd>
-              </div>
-              <div>
-                <dt>Followers</dt>
-                <dd id="stat-followers">--</dd>
-              </div>
-            </dl>
-            <p class="film-note">Data source: <a href="https://letterboxd.com/tenderbrew/" target="_blank" rel="noopener">letterboxd.com/tenderbrew/</a></p>
-          </article>
+          <!-- Sidebar: recent lists + booth stats -->
+          <aside class="film-sidebar">
+            <article class="film-panel film-panel-lists" aria-labelledby="lists-title">
+              <h2 id="lists-title">Recent Lists</h2>
+              <ul id="film-list-activity" class="film-list-activity"></ul>
+            </article>
+
+            <article class="film-panel film-panel-stats" aria-labelledby="stats-title">
+              <h2 id="stats-title">Booth Stats</h2>
+              <dl class="film-stats-grid">
+                <div><dt>Films Watched</dt><dd id="stat-films">--</dd></div>
+                <div><dt>This Year</dt><dd id="stat-this-year">--</dd></div>
+                <div><dt>Lists</dt><dd id="stat-lists">--</dd></div>
+                <div><dt>Following</dt><dd id="stat-following">--</dd></div>
+                <div><dt>Followers</dt><dd id="stat-followers">--</dd></div>
+              </dl>
+              <p class="film-note">Data source: <a href="https://letterboxd.com/tenderbrew/" target="_blank" rel="noopener">letterboxd.com/tenderbrew/</a></p>
+            </article>
+          </aside>
+
         </div>
       </div>
     </section>
@@ -181,6 +170,7 @@
       var feedStatus = document.getElementById('film-feed-status');
       var recentList = document.getElementById('film-recent-watches');
       var featured = document.getElementById('film-featured');
+      var marqueeTitles = document.getElementById('film-marquee-titles');
       var listActivity = document.getElementById('film-list-activity');
       var statFilms = document.getElementById('stat-films');
       var statThisYear = document.getElementById('stat-this-year');
@@ -429,6 +419,16 @@
         });
       }
 
+      function renderMarqueeTitles(entries) {
+        marqueeTitles.innerHTML = '';
+        entries.forEach(function (entry, i) {
+          var li = document.createElement('li');
+          if (i === 0) li.className = 'film-marquee-featured';
+          li.textContent = entry.title;
+          marqueeTitles.appendChild(li);
+        });
+      }
+
       function renderFeatured(entry) {
         if (!entry) {
           featured.innerHTML = '<p class="film-fallback">No featured entry available.</p>';
@@ -438,22 +438,31 @@
         var poster = entry.thumbnail || extractThumbnailFromDescription(entry.description);
         var text = entry.latestWrittenReview || extractReviewText(entry.description);
         var ratingText = formatRatingStars(entry.rating);
-        var yearText = entry.year ? ('(' + entry.year + ')') : '';
+        var yearText = entry.year ? (' (' + entry.year + ')') : '';
         var safeTitle = escapeHtml(entry.title || 'Untitled');
         var safeText = escapeHtml(text);
         var safePoster = escapeHtml(poster);
         var safeLink = escapeHtml(entry.link || '#');
+        var safeRating = escapeHtml(ratingText);
+        var safeDateStr = escapeHtml(formatDate(entry.date));
+
+        var lbSvg = '<svg class="film-lb-logo" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 36 12" width="36" height="12" aria-hidden="true"><circle cx="6" cy="6" r="6" fill="#ff8000"/><circle cx="18" cy="6" r="6" fill="#00e054"/><circle cx="30" cy="6" r="6" fill="#40bcf4"/></svg>';
 
         featured.innerHTML =
-          '<article class="film-featured-card">' +
-            '<img src="' + safePoster + '" alt="Poster for ' + safeTitle + '" loading="lazy">' +
-            '<div class="film-featured-copy">' +
-              '<h3>' + safeTitle + ' ' + escapeHtml(yearText) + '</h3>' +
-              '<p class="film-featured-meta">' + escapeHtml(ratingText) + '  |  ' + escapeHtml(formatDate(entry.date)) + '</p>' +
-              '<p>' + safeText + '</p>' +
-              '<a href="' + safeLink + '" target="_blank" rel="noopener">Read on Letterboxd</a>' +
+          '<div class="film-lightbox">' +
+            '<div class="film-lightbox-frame">' +
+              '<img class="film-lightbox-poster" src="' + safePoster + '" alt="Poster for ' + safeTitle + '" loading="lazy">' +
+              '<div class="film-lightbox-overlay">' +
+                '<h3 class="film-lightbox-title">' + safeTitle + escapeHtml(yearText) + '</h3>' +
+                '<p class="film-lightbox-rating">' + safeRating + '</p>' +
+              '</div>' +
             '</div>' +
-          '</article>';
+            '<div class="film-lightbox-info">' +
+              '<p class="film-lightbox-date">' + safeDateStr + '</p>' +
+              (safeText ? '<p class="film-lightbox-review">' + safeText + '</p>' : '') +
+              '<a class="film-lb-link" href="' + safeLink + '" target="_blank" rel="noopener">' + lbSvg + '<span>Read on Letterboxd</span></a>' +
+            '</div>' +
+          '</div>';
       }
 
       function renderListActivity(entries) {
@@ -471,15 +480,12 @@
           link.rel = 'noopener';
           link.textContent = entry.title;
 
-          var date = document.createElement('span');
-          if (entry.metaLabel) {
-            date.textContent = entry.metaLabel;
-          } else {
-            date.textContent = formatDate(entry.date);
-          }
+          var meta = document.createElement('span');
+          var hasCount = entry.metaLabel && /\d/.test(entry.metaLabel);
+          meta.textContent = hasCount ? entry.metaLabel : '\u2014';
 
           item.appendChild(link);
-          item.appendChild(date);
+          item.appendChild(meta);
           listActivity.appendChild(item);
         });
       }
@@ -591,6 +597,21 @@
 
         appendEntries(primaryEntries);
         appendEntries(secondaryEntries);
+
+        // Enrich entries: prefer film-count labels over generic ones
+        var countMap = {};
+        [].concat(primaryEntries || [], secondaryEntries || []).forEach(function (e) {
+          if (e && e.link && e.metaLabel && /\d/.test(e.metaLabel)) {
+            countMap[e.link.toLowerCase()] = e.metaLabel;
+          }
+        });
+        merged.forEach(function (entry) {
+          var better = countMap[entry.link.toLowerCase()];
+          if (better && (!entry.metaLabel || !/\d/.test(entry.metaLabel))) {
+            entry.metaLabel = better;
+          }
+        });
+
         return merged;
       }
 
@@ -818,8 +839,9 @@
 
       function renderWithFallback(reason) {
         var fallbackEntries = attachLatestWrittenReviews(fallbackWatches);
-        renderRecentWatches(fallbackEntries);
+        renderMarqueeTitles(fallbackEntries.slice(0, 6));
         renderFeatured(fallbackEntries[0]);
+        renderRecentWatches(fallbackEntries.slice(1));
         renderListActivity(fallbackListActivity);
         feedStatus.textContent = 'Live feed unavailable (' + reason + '). Showing cached samples.';
       }
@@ -884,8 +906,9 @@
           }
 
           var filmEntriesWithReviews = attachLatestWrittenReviews(filmEntries);
-          renderRecentWatches(filmEntriesWithReviews);
+          renderMarqueeTitles(filmEntriesWithReviews.slice(0, 6));
           renderFeatured(filmEntriesWithReviews[0]);
+          renderRecentWatches(filmEntriesWithReviews.slice(1));
           if (listEntries.length >= 10) {
             renderListActivity(listEntries);
           } else {
@@ -897,7 +920,7 @@
                 renderListActivity(mergeListEntries(listEntries, fallbackListActivity, 10));
               });
           }
-          feedStatus.textContent = 'Live from Letterboxd.';
+          feedStatus.innerHTML = '<a href="' + escapeHtml(profileUrl) + '" target="_blank" rel="noopener" aria-label="Letterboxd profile"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 36 12" width="36" height="12" aria-hidden="true"><circle cx="6" cy="6" r="6" fill="#ff8000"/><circle cx="18" cy="6" r="6" fill="#00e054"/><circle cx="30" cy="6" r="6" fill="#40bcf4"/></svg></a>';
         })
         .catch(function (error) {
           renderWithFallback(error && error.message ? error.message : 'feed error');
