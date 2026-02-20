@@ -511,8 +511,52 @@
     </div>
   </footer>
 
+  <!-- Lightbox overlay for gallery photos. -->
+  <div class="sy-lightbox" id="sy-lightbox" aria-hidden="true">
+    <button class="sy-lightbox-close" aria-label="Close">&times;</button>
+    <img class="sy-lightbox-img" id="sy-lightbox-img" src="" alt="">
+    <div class="sy-lightbox-caption" id="sy-lightbox-caption"></div>
+  </div>
+
   <!-- Shared drawer controller for desktop/mobile navigation. -->
   <script src="drawer.js"></script>
   <script src="ticker.js"></script>
+  <script>
+    (function () {
+      var lightbox = document.getElementById('sy-lightbox');
+      var lbImg = document.getElementById('sy-lightbox-img');
+      var lbCaption = document.getElementById('sy-lightbox-caption');
+      var closeBtn = lightbox.querySelector('.sy-lightbox-close');
+
+      document.querySelectorAll('.sy-gallery-item img').forEach(function (img) {
+        img.style.cursor = 'pointer';
+        img.addEventListener('click', function () {
+          lbImg.src = img.src;
+          lbImg.alt = img.alt;
+          var item = img.closest('.sy-gallery-item');
+          var text = item.querySelector('.sy-caption-text');
+          var year = item.querySelector('.sy-caption-year');
+          lbCaption.textContent = (text ? text.textContent : '') + (year ? ' — ' + year.textContent : '');
+          lightbox.setAttribute('aria-hidden', 'false');
+          lightbox.classList.add('sy-lightbox--open');
+          document.body.style.overflow = 'hidden';
+        });
+      });
+
+      function close() {
+        lightbox.classList.remove('sy-lightbox--open');
+        lightbox.setAttribute('aria-hidden', 'true');
+        document.body.style.overflow = '';
+      }
+
+      closeBtn.addEventListener('click', close);
+      lightbox.addEventListener('click', function (e) {
+        if (e.target === lightbox) close();
+      });
+      document.addEventListener('keydown', function (e) {
+        if (e.key === 'Escape' && lightbox.classList.contains('sy-lightbox--open')) close();
+      });
+    })();
+  </script>
 </body>
 </html>

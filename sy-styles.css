@@ -1041,6 +1041,63 @@
 }
 
 
+/* Lightbox overlay for full-size gallery photos. */
+.sy-lightbox {
+  position: fixed;
+  inset: 0;
+  z-index: 9999;
+  background: rgba(8, 12, 20, 0.92);
+  backdrop-filter: blur(6px);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s, visibility 0.3s;
+}
+
+.sy-lightbox--open {
+  opacity: 1;
+  visibility: visible;
+}
+
+.sy-lightbox-close {
+  position: absolute;
+  top: 1rem;
+  right: 1.5rem;
+  background: none;
+  border: none;
+  color: var(--sy-cream-dark);
+  font-size: 2rem;
+  cursor: pointer;
+  line-height: 1;
+  opacity: 0.7;
+  transition: opacity 0.2s;
+}
+
+.sy-lightbox-close:hover {
+  opacity: 1;
+}
+
+.sy-lightbox-img {
+  max-width: 90vw;
+  max-height: 80vh;
+  object-fit: contain;
+  box-shadow: 0 12px 48px rgba(0, 0, 0, 0.6);
+  border: 3px solid rgba(201, 162, 78, 0.25);
+}
+
+.sy-lightbox-caption {
+  margin-top: 1rem;
+  font-family: var(--sy-font-script);
+  font-size: 1.4rem;
+  color: var(--sy-gilt);
+  text-shadow: 0 1px 4px rgba(0, 0, 0, 0.5);
+}
+
+
 .sy-photo-caption {
   position: absolute;
   bottom: 8px;
