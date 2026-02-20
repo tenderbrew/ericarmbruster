@@ -7,7 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Economics - Eric Armbruster</title>
   <meta name="description" content="Live macro indicators, Austrian economics headlines, and a reading queue.">
-  <meta name="theme-color" content="#080f0c">
+  <meta name="theme-color" content="#080c12">
   <link rel="canonical" href="https://www.ericarmbruster.com/economics.html">
   <meta property="og:title" content="Economics - Eric Armbruster">
   <meta property="og:description" content="Live macro indicators, Austrian economics headlines, and a reading queue.">
@@ -21,7 +21,7 @@
   <link rel="icon" href="images/hector-favicon.png" type="image/png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Libre+Caslon+Display&family=Libre+Caslon+Text:ital,wght@0,400;0,700;1,400&family=Herr+Von+Muellerhoff&family=IBM+Plex+Sans+Condensed:wght@400;500;700&family=Special+Elite&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;700&family=IBM+Plex+Sans+Condensed:wght@400;500;700&family=Libre+Caslon+Display&family=Libre+Caslon+Text:ital,wght@0,400;0,700;1,400&family=Special+Elite&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
   <link rel="stylesheet" href="econ-styles.css">
   <!-- Analytics library: loaded async so it does not block rendering. -->
@@ -37,7 +37,7 @@
 
   <!-- Shared primary navigation. Drawer behavior is provided by drawer.js. -->
 
-  
+
   <nav class="study-nav" aria-label="Primary">
     <div class="container nav-shell">
       <a href="index.html" class="brand-mark" aria-label="Eric Armbruster home">Eric M. Armbruster</a>
@@ -82,68 +82,120 @@
       </div>
     </div>
   </nav>
-  <!-- Page hero / introductory banner section. -->
+
+  <!-- Scrolling ticker tape: decorative market data strip. -->
+  <div class="econ-ticker-tape" aria-hidden="true">
+    <div class="econ-ticker-track">
+      <span class="econ-tick econ-tick--up">DJIA 38,547 &#9650;0.42%</span>
+      <span class="econ-tick-sep">&bull;</span>
+      <span class="econ-tick econ-tick--up">S&amp;P 500 5,234 &#9650;0.18%</span>
+      <span class="econ-tick-sep">&bull;</span>
+      <span class="econ-tick econ-tick--down">NASDAQ 16,340 &#9660;0.31%</span>
+      <span class="econ-tick-sep">&bull;</span>
+      <span class="econ-tick">10Y YIELD 4.285%</span>
+      <span class="econ-tick-sep">&bull;</span>
+      <span class="econ-tick">GOLD 2,338.40</span>
+      <span class="econ-tick-sep">&bull;</span>
+      <span class="econ-tick">VIX 13.42</span>
+      <span class="econ-tick-sep">&bull;</span>
+      <span class="econ-tick">EUR/USD 1.0845</span>
+      <span class="econ-tick-sep">&bull;</span>
+      <span class="econ-tick">WTI CRUDE 78.32</span>
+      <span class="econ-tick-sep">&bull;</span>
+      <span class="econ-tick">FED FUNDS 5.33%</span>
+      <span class="econ-tick-sep">&bull;</span>
+      <span class="econ-tick econ-tick--up">DJIA 38,547 &#9650;0.42%</span>
+      <span class="econ-tick-sep">&bull;</span>
+      <span class="econ-tick econ-tick--up">S&amp;P 500 5,234 &#9650;0.18%</span>
+      <span class="econ-tick-sep">&bull;</span>
+      <span class="econ-tick econ-tick--down">NASDAQ 16,340 &#9660;0.31%</span>
+      <span class="econ-tick-sep">&bull;</span>
+      <span class="econ-tick">10Y YIELD 4.285%</span>
+      <span class="econ-tick-sep">&bull;</span>
+      <span class="econ-tick">GOLD 2,338.40</span>
+      <span class="econ-tick-sep">&bull;</span>
+      <span class="econ-tick">VIX 13.42</span>
+      <span class="econ-tick-sep">&bull;</span>
+      <span class="econ-tick">EUR/USD 1.0845</span>
+      <span class="econ-tick-sep">&bull;</span>
+      <span class="econ-tick">WTI CRUDE 78.32</span>
+      <span class="econ-tick-sep">&bull;</span>
+      <span class="econ-tick">FED FUNDS 5.33%</span>
+      <span class="econ-tick-sep">&bull;</span>
+    </div>
+  </div>
+
+  <!-- Page hero: Bloomberg-style terminal window. -->
   <header class="econ-hero" aria-labelledby="econ-page-title">
     <div class="container econ-hero-inner">
-      <div class="econ-ledger">
-        <p class="econ-kicker">Economic Observatory</p>
-        <h1 id="econ-page-title">Macro Monitor</h1>
-        <p class="econ-subtitle">Live indicators from FRED, Austrian-leaning news flow, and a dedicated reading queue.</p>
-        <div class="econ-source-strip">
-          <a href="https://fred.stlouisfed.org/" target="_blank" rel="noopener">FRED Data</a>
-          <a href="https://mises.org/" target="_blank" rel="noopener">Mises Feed</a>
-          <span id="econ-last-refresh">Refreshing...</span>
+      <div class="econ-terminal">
+        <div class="econ-terminal-bar" aria-hidden="true">
+          <span class="econ-dot econ-dot--close"></span>
+          <span class="econ-dot econ-dot--min"></span>
+          <span class="econ-dot econ-dot--max"></span>
+          <span class="econ-terminal-title">FRED TERMINAL</span>
+        </div>
+        <div class="econ-terminal-body">
+          <p class="econ-kicker">Federal Reserve Economic Data</p>
+          <h1 id="econ-page-title">The Trading Floor</h1>
+
+          <div class="econ-source-strip">
+            <a href="https://fred.stlouisfed.org/" target="_blank" rel="noopener">FRED Data</a>
+            <a href="https://mises.org/" target="_blank" rel="noopener">Mises Feed</a>
+            <span id="econ-last-refresh">Refreshing...</span>
+          </div>
         </div>
       </div>
-
-      <aside class="econ-gauge-bank" aria-hidden="true">
-        <div class="econ-gauge">
-          <span>Inflation</span>
-        </div>
-        <div class="econ-gauge">
-          <span>Labor</span>
-        </div>
-        <div class="econ-gauge">
-          <span>Liquidity</span>
-        </div>
-      </aside>
     </div>
   </header>
-  <!-- Main page content. Most route-specific structure lives here. -->
+
+  <!-- Main page content. -->
   <main>
-    <!-- Indicator grid: each card maps to one FRED series definition in script. -->
-    <section class="econ-section" aria-labelledby="indicators-title">
+    <!-- The Big Board: LED display panels for FRED indicators. -->
+    <section class="econ-section econ-section--board" aria-labelledby="indicators-title">
       <div class="container">
-        <div class="econ-panel">
+        <div class="econ-panel econ-panel--board">
           <div class="econ-panel-head">
-            <h2 id="indicators-title">Live Indicators</h2>
+            <h2 id="indicators-title">The Big Board</h2>
             <p id="econ-indicator-status" class="econ-status" role="status">Loading data feeds...</p>
           </div>
+          <div class="econ-led-strip" aria-hidden="true"></div>
           <div id="econ-indicator-grid" class="econ-indicator-grid" aria-live="polite"></div>
         </div>
       </div>
     </section>
 
-    <!-- News and reading queue: live headlines plus manually curated reading slots. -->
-    <section class="econ-section" aria-labelledby="news-title">
+    <!-- Divider -->
+    <section class="econ-section">
       <div class="container">
         <hr class="econ-divider" aria-hidden="true">
       </div>
-      <div class="container econ-two-col">
-        <article class="econ-panel" aria-labelledby="news-title">
+    </section>
+
+    <!-- The Wire: Mises news feed on green-bar continuous paper. -->
+    <section class="econ-section" aria-labelledby="news-title">
+      <div class="container">
+        <article class="econ-panel econ-panel--wire" aria-labelledby="news-title">
           <div class="econ-panel-head">
-            <h2 id="news-title">Economics News Feed</h2>
+            <h2 id="news-title">The Wire</h2>
             <p id="econ-news-status" class="econ-status" role="status">Loading Mises feed...</p>
           </div>
           <ul id="econ-news-list" class="econ-news-list"></ul>
         </article>
+      </div>
+    </section>
 
-        <article class="econ-panel" aria-labelledby="reading-title">
-          <h2 id="reading-title">Reading List</h2>
-          <p class="econ-reading-note">Placeholder section. Add titles whenever you are ready.</p>
+    <!-- Research Desk: reading list in manila dossier folders. -->
+    <section class="econ-section" aria-labelledby="reading-title">
+      <div class="container">
+        <article class="econ-panel econ-panel--desk" aria-labelledby="reading-title">
+          <div class="econ-panel-head">
+            <h2 id="reading-title">Research Desk</h2>
+          </div>
+          <p class="econ-reading-note">Reserved shelf space. Titles added as they are acquired.</p>
 
           <div class="econ-reading-columns">
-            <section>
+            <section class="econ-dossier">
               <h3>In Queue</h3>
               <ul>
                 <li>[Add book/article]</li>
@@ -152,7 +204,7 @@
               </ul>
             </section>
 
-            <section>
+            <section class="econ-dossier">
               <h3>Currently Reading</h3>
               <ul>
                 <li>[Add active read]</li>
@@ -160,7 +212,7 @@
               </ul>
             </section>
 
-            <section>
+            <section class="econ-dossier">
               <h3>Finished + Notes</h3>
               <ul>
                 <li>[Add completed read + takeaway]</li>
@@ -172,6 +224,7 @@
       </div>
     </section>
   </main>
+
   <!-- Shared footer. -->
   <footer>
     <div class="container">
@@ -191,17 +244,41 @@
 
       // Per-series metadata controls label, unit, decimals, and optional transforms.
       var indicatorDefinitions = [
+        // Employment & Labor
         { id: 'UNRATE', name: 'Unemployment Rate', unit: '%', decimals: 1 },
+        { id: 'PAYEMS', name: 'Payroll Employment', unit: 'M jobs', decimals: 1, transform: function (v) { return v / 1000; } },
+        { id: 'JTSJOL', name: 'JOLTS Job Openings', unit: 'M', decimals: 2, transform: function (v) { return v / 1000; } },
+        { id: 'ICSA', name: 'Initial Jobless Claims', unit: 'K', decimals: 0 },
+        // Inflation & Prices
         { id: 'CPIAUCSL', name: 'CPI (All Urban)', unit: 'index', decimals: 1 },
         { id: 'CPI_YOY', name: 'CPI YoY Inflation', unit: '%', decimals: 2, derived: true },
+        { id: 'CPILFESL', name: 'Core CPI (ex Food/Energy)', unit: 'index', decimals: 1 },
+        { id: 'T10YIE', name: '10Y Breakeven Inflation', unit: '%', decimals: 2 },
+        { id: 'PCE', name: 'Personal Consumption', unit: '$T', decimals: 2, transform: function (v) { return v / 1000; } },
+        // Money & Fed
         { id: 'M2SL', name: 'Money Supply (M2)', unit: '$T', decimals: 2, transform: function (v) { return v / 1000; } },
+        { id: 'BOGMBASE', name: 'Monetary Base (M0)', unit: '$T', decimals: 2, transform: function (v) { return v / 1000; } },
+        { id: 'WALCL', name: 'Fed Balance Sheet', unit: '$T', decimals: 2, transform: function (v) { return v / 1000000; } },
         { id: 'FEDFUNDS', name: 'Fed Funds Rate', unit: '%', decimals: 2 },
-        { id: 'PAYEMS', name: 'Payroll Employment', unit: 'M jobs', decimals: 1, transform: function (v) { return v / 1000; } },
-        { id: 'GDPC1', name: 'Real GDP', unit: '$T', decimals: 2, transform: function (v) { return v / 1000; } },
+        // Rates & Bonds
+        { id: 'DGS2', name: '2Y Treasury Yield', unit: '%', decimals: 2 },
         { id: 'DGS10', name: '10Y Treasury Yield', unit: '%', decimals: 2 },
         { id: 'T10Y2Y', name: '10Y-2Y Spread', unit: 'pp', decimals: 2 },
-        { id: 'PCE', name: 'Personal Consumption', unit: '$T', decimals: 2, transform: function (v) { return v / 1000; } },
-        { id: 'UMCSENT', name: 'Consumer Sentiment', unit: 'index', decimals: 1 }
+        { id: 'DFII10', name: '10Y Real Rate (TIPS)', unit: '%', decimals: 2 },
+        { id: 'BAMLH0A0HYM2', name: 'High Yield Spread', unit: 'pp', decimals: 2 },
+        { id: 'MORTGAGE30US', name: '30Y Mortgage Rate', unit: '%', decimals: 2 },
+        // Output & Activity
+        { id: 'GDPC1', name: 'Real GDP', unit: '$T', decimals: 2, transform: function (v) { return v / 1000; } },
+        { id: 'INDPRO', name: 'Industrial Production', unit: 'index', decimals: 1 },
+        { id: 'RSAFS', name: 'Retail Sales', unit: '$B', decimals: 1 },
+        // Sentiment & Risk
+        { id: 'UMCSENT', name: 'Consumer Sentiment', unit: 'index', decimals: 1 },
+        { id: 'STLFSI4', name: 'Financial Stress Index', unit: 'index', decimals: 2 },
+        { id: 'DTWEXBGS', name: 'Dollar Index (Broad)', unit: 'index', decimals: 2 },
+        // Housing & Debt
+        { id: 'PERMIT', name: 'New Housing Permits', unit: 'K', decimals: 0 },
+        { id: 'GFDEGDQ188S', name: 'Debt-to-GDP Ratio', unit: '%', decimals: 1 },
+        { id: 'VIXCLS', name: 'CBOE Volatility (VIX)', unit: 'index', decimals: 2 }
       ];
 
       var indicatorCards = {};
@@ -576,5 +653,3 @@
   </script>
 </body>
 </html>
-
-
