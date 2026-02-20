@@ -387,6 +387,8 @@ footer .container {
   z-index: 600;
   overflow: visible;
   padding: 0.88rem 0 0.52rem;
+  font-family: "Libre Caslon Display", "Libre Caslon Text", "Georgia", serif;
+  color: #d6b58b;
 }
 
 .study-nav .nav-shell {
