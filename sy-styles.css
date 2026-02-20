@@ -691,7 +691,7 @@
 
 .sy-flourish-line {
   display: block;
-  width: 40px;
+  width: 60px;
   height: 2px;
   background: linear-gradient(90deg, transparent, var(--sy-gilt), transparent);
 }
@@ -736,15 +736,15 @@
 }
 
 .sy-hero-name {
-  font-size: clamp(2.4rem, 5vw, 3.6rem);
-  letter-spacing: 4px;
+  font-size: clamp(3rem, 6vw, 5rem);
+  letter-spacing: 6px;
   margin: 0.3rem 0 0;
   text-transform: uppercase;
 }
 
 .sy-hero-years {
   font-family: var(--sy-font-script);
-  font-size: clamp(1.4rem, 3vw, 1.8rem);
+  font-size: clamp(1.8rem, 3.5vw, 2.6rem);
   color: var(--sy-gilt-bright);
   margin: 0;
   text-shadow: 0 2px 8px rgba(0, 0, 0, 0.4);
@@ -753,10 +753,10 @@
 .sy-hero-epitaph {
   font-family: var(--sy-font-body);
   font-style: italic;
-  font-size: clamp(0.85rem, 1.5vw, 1rem);
+  font-size: clamp(0.9rem, 1.5vw, 1.1rem);
   color: var(--sy-text-on-leather);
   opacity: 0.85;
-  max-width: 28ch;
+  max-width: 34ch;
   margin: 0.4rem 0 0;
   line-height: 1.6;
 }
@@ -968,22 +968,28 @@
   max-width: none;
   margin: 0;
   align-self: center;
+  padding: 1.2rem 1.2rem;
 }
 
 .sy-tribute .sy-section-heading {
-  text-align: left;
+  font-size: clamp(0.95rem, 1.6vw, 1.2rem);
+}
+
+.sy-tribute .sy-section-heading {
+  text-align: center;
 }
 
 .sy-tribute .sy-bone-divider {
-  margin-left: 0;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .sy-tribute p {
   font-family: var(--sy-font-body);
-  font-size: 0.88rem;
+  font-size: 0.78rem;
   color: var(--sy-text-on-cream);
-  line-height: 1.7;
-  margin-bottom: 0.7rem;
+  line-height: 1.65;
+  margin-bottom: 0.5rem;
   text-align: left;
 }
 
