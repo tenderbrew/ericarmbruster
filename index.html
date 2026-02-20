@@ -46,9 +46,55 @@
 
 <body class="home-page">
 
+  <!-- Scrolling ticker tape: live market data. -->
+  <div class="ticker-tape" aria-hidden="true">
+    <div class="ticker-track">
+      <span class="tick" data-ticker="DJIA">DJIA 38,547 &#9650;0.42%</span>
+      <span class="tick-sep">&bull;</span>
+      <span class="tick" data-ticker="SP500">S&amp;P 500 5,234 &#9650;0.18%</span>
+      <span class="tick-sep">&bull;</span>
+      <span class="tick" data-ticker="NASDAQ">NASDAQ 16,340 &#9660;0.31%</span>
+      <span class="tick-sep">&bull;</span>
+      <span class="tick" data-ticker="10Y">10Y YIELD 4.285%</span>
+      <span class="tick-sep">&bull;</span>
+      <span class="tick" data-ticker="GOLD">GOLD 2,338.40</span>
+      <span class="tick-sep">&bull;</span>
+      <span class="tick" data-ticker="BTC">BTC 67,245 &#9650;2.14%</span>
+      <span class="tick-sep">&bull;</span>
+      <span class="tick" data-ticker="VIX">VIX 13.42</span>
+      <span class="tick-sep">&bull;</span>
+      <span class="tick" data-ticker="EURUSD">EUR/USD 1.0845</span>
+      <span class="tick-sep">&bull;</span>
+      <span class="tick" data-ticker="CRUDE">WTI CRUDE 78.32</span>
+      <span class="tick-sep">&bull;</span>
+      <span class="tick" data-ticker="FEDFUNDS">FED FUNDS 5.33%</span>
+      <span class="tick-sep">&bull;</span>
+      <span class="tick" data-ticker="DJIA">DJIA 38,547 &#9650;0.42%</span>
+      <span class="tick-sep">&bull;</span>
+      <span class="tick" data-ticker="SP500">S&amp;P 500 5,234 &#9650;0.18%</span>
+      <span class="tick-sep">&bull;</span>
+      <span class="tick" data-ticker="NASDAQ">NASDAQ 16,340 &#9660;0.31%</span>
+      <span class="tick-sep">&bull;</span>
+      <span class="tick" data-ticker="10Y">10Y YIELD 4.285%</span>
+      <span class="tick-sep">&bull;</span>
+      <span class="tick" data-ticker="GOLD">GOLD 2,338.40</span>
+      <span class="tick-sep">&bull;</span>
+      <span class="tick" data-ticker="BTC">BTC 67,245 &#9650;2.14%</span>
+      <span class="tick-sep">&bull;</span>
+      <span class="tick" data-ticker="VIX">VIX 13.42</span>
+      <span class="tick-sep">&bull;</span>
+      <span class="tick" data-ticker="EURUSD">EUR/USD 1.0845</span>
+      <span class="tick-sep">&bull;</span>
+      <span class="tick" data-ticker="CRUDE">WTI CRUDE 78.32</span>
+      <span class="tick-sep">&bull;</span>
+      <span class="tick" data-ticker="FEDFUNDS">FED FUNDS 5.33%</span>
+      <span class="tick-sep">&bull;</span>
+    </div>
+  </div>
+
   <!-- Shared primary navigation. Drawer behavior is provided by drawer.js. -->
 
-  
+
   <nav class="study-nav" aria-label="Primary">
     <div class="container nav-shell">
       <a href="index.html" class="brand-mark" aria-label="Eric Armbruster home">Eric M. Armbruster</a>
@@ -93,6 +139,7 @@
       </div>
     </div>
   </nav>
+
   <!-- Page hero / introductory banner section. -->
   <header class="home-stage">
     <div class="container stage-layout">
@@ -330,6 +377,7 @@
     document.getElementById("random-quote").innerHTML =
       "&ldquo;" + q.text + "&rdquo;<br><small>&mdash; Samwise Gamgee, <em>" + q.source + "</em></small>";
   </script>
+  <script src="ticker.js"></script>
 </body>
 </html>
 

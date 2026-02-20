@@ -35,6 +35,53 @@
 </head>
 <body class="econ-page">
 
+  <!-- Scrolling ticker tape: live market data. -->
+  <div class="ticker-tape" aria-hidden="true">
+    <div class="ticker-track">
+      <span class="tick" data-ticker="DJIA">DJIA 38,547 &#9650;0.42%</span>
+      <span class="tick-sep">&bull;</span>
+      <span class="tick" data-ticker="SP500">S&amp;P 500 5,234 &#9650;0.18%</span>
+      <span class="tick-sep">&bull;</span>
+      <span class="tick" data-ticker="NASDAQ">NASDAQ 16,340 &#9660;0.31%</span>
+      <span class="tick-sep">&bull;</span>
+      <span class="tick" data-ticker="10Y">10Y YIELD 4.285%</span>
+      <span class="tick-sep">&bull;</span>
+      <span class="tick" data-ticker="GOLD">GOLD 2,338.40</span>
+      <span class="tick-sep">&bull;</span>
+      <span class="tick" data-ticker="BTC">BTC 67,245 &#9650;2.14%</span>
+      <span class="tick-sep">&bull;</span>
+      <span class="tick" data-ticker="VIX">VIX 13.42</span>
+      <span class="tick-sep">&bull;</span>
+      <span class="tick" data-ticker="EURUSD">EUR/USD 1.0845</span>
+      <span class="tick-sep">&bull;</span>
+      <span class="tick" data-ticker="CRUDE">WTI CRUDE 78.32</span>
+      <span class="tick-sep">&bull;</span>
+      <span class="tick" data-ticker="FEDFUNDS">FED FUNDS 5.33%</span>
+      <span class="tick-sep">&bull;</span>
+      <span class="tick" data-ticker="DJIA">DJIA 38,547 &#9650;0.42%</span>
+      <span class="tick-sep">&bull;</span>
+      <span class="tick" data-ticker="SP500">S&amp;P 500 5,234 &#9650;0.18%</span>
+      <span class="tick-sep">&bull;</span>
+      <span class="tick" data-ticker="NASDAQ">NASDAQ 16,340 &#9660;0.31%</span>
+      <span class="tick-sep">&bull;</span>
+      <span class="tick" data-ticker="10Y">10Y YIELD 4.285%</span>
+      <span class="tick-sep">&bull;</span>
+      <span class="tick" data-ticker="GOLD">GOLD 2,338.40</span>
+      <span class="tick-sep">&bull;</span>
+      <span class="tick" data-ticker="BTC">BTC 67,245 &#9650;2.14%</span>
+      <span class="tick-sep">&bull;</span>
+      <span class="tick" data-ticker="VIX">VIX 13.42</span>
+      <span class="tick-sep">&bull;</span>
+      <span class="tick" data-ticker="EURUSD">EUR/USD 1.0845</span>
+      <span class="tick-sep">&bull;</span>
+      <span class="tick" data-ticker="CRUDE">WTI CRUDE 78.32</span>
+      <span class="tick-sep">&bull;</span>
+      <span class="tick" data-ticker="FEDFUNDS">FED FUNDS 5.33%</span>
+      <span class="tick-sep">&bull;</span>
+    </div>
+  </div>
+
+
   <!-- Shared primary navigation. Drawer behavior is provided by drawer.js. -->
 
 
@@ -83,60 +130,17 @@
     </div>
   </nav>
 
-  <!-- Scrolling ticker tape: decorative market data strip. -->
-  <div class="econ-ticker-tape" aria-hidden="true">
-    <div class="econ-ticker-track">
-      <span class="econ-tick econ-tick--up">DJIA 38,547 &#9650;0.42%</span>
-      <span class="econ-tick-sep">&bull;</span>
-      <span class="econ-tick econ-tick--up">S&amp;P 500 5,234 &#9650;0.18%</span>
-      <span class="econ-tick-sep">&bull;</span>
-      <span class="econ-tick econ-tick--down">NASDAQ 16,340 &#9660;0.31%</span>
-      <span class="econ-tick-sep">&bull;</span>
-      <span class="econ-tick">10Y YIELD 4.285%</span>
-      <span class="econ-tick-sep">&bull;</span>
-      <span class="econ-tick">GOLD 2,338.40</span>
-      <span class="econ-tick-sep">&bull;</span>
-      <span class="econ-tick">VIX 13.42</span>
-      <span class="econ-tick-sep">&bull;</span>
-      <span class="econ-tick">EUR/USD 1.0845</span>
-      <span class="econ-tick-sep">&bull;</span>
-      <span class="econ-tick">WTI CRUDE 78.32</span>
-      <span class="econ-tick-sep">&bull;</span>
-      <span class="econ-tick">FED FUNDS 5.33%</span>
-      <span class="econ-tick-sep">&bull;</span>
-      <span class="econ-tick econ-tick--up">DJIA 38,547 &#9650;0.42%</span>
-      <span class="econ-tick-sep">&bull;</span>
-      <span class="econ-tick econ-tick--up">S&amp;P 500 5,234 &#9650;0.18%</span>
-      <span class="econ-tick-sep">&bull;</span>
-      <span class="econ-tick econ-tick--down">NASDAQ 16,340 &#9660;0.31%</span>
-      <span class="econ-tick-sep">&bull;</span>
-      <span class="econ-tick">10Y YIELD 4.285%</span>
-      <span class="econ-tick-sep">&bull;</span>
-      <span class="econ-tick">GOLD 2,338.40</span>
-      <span class="econ-tick-sep">&bull;</span>
-      <span class="econ-tick">VIX 13.42</span>
-      <span class="econ-tick-sep">&bull;</span>
-      <span class="econ-tick">EUR/USD 1.0845</span>
-      <span class="econ-tick-sep">&bull;</span>
-      <span class="econ-tick">WTI CRUDE 78.32</span>
-      <span class="econ-tick-sep">&bull;</span>
-      <span class="econ-tick">FED FUNDS 5.33%</span>
-      <span class="econ-tick-sep">&bull;</span>
-    </div>
-  </div>
-
   <!-- Page hero: Bloomberg-style terminal window. -->
   <header class="econ-hero" aria-labelledby="econ-page-title">
-    <div class="container econ-hero-inner">
+    <div class="container">
       <div class="econ-terminal">
         <div class="econ-terminal-bar" aria-hidden="true">
           <span class="econ-dot econ-dot--close"></span>
           <span class="econ-dot econ-dot--min"></span>
           <span class="econ-dot econ-dot--max"></span>
-          <span class="econ-terminal-title">FRED TERMINAL</span>
+          <span class="econ-terminal-title">TERMINAL</span>
         </div>
         <div class="econ-terminal-body">
-          <p class="econ-kicker">Federal Reserve Economic Data</p>
           <h1 id="econ-page-title">The Trading Floor</h1>
 
           <div class="econ-source-strip">
@@ -151,30 +155,19 @@
 
   <!-- Main page content. -->
   <main>
-    <!-- The Big Board: LED display panels for FRED indicators. -->
-    <section class="econ-section econ-section--board" aria-labelledby="indicators-title">
-      <div class="container">
-        <div class="econ-panel econ-panel--board">
-          <div class="econ-panel-head">
-            <h2 id="indicators-title">The Big Board</h2>
-            <p id="econ-indicator-status" class="econ-status" role="status">Loading data feeds...</p>
-          </div>
-          <div class="econ-led-strip" aria-hidden="true"></div>
-          <div id="econ-indicator-grid" class="econ-indicator-grid" aria-live="polite"></div>
+    <!-- Indicators + Wire side-by-side on desktop -->
+    <div class="econ-layout container">
+      <div class="econ-panel econ-panel--board" aria-labelledby="indicators-title">
+        <div class="econ-panel-head">
+          <h2 id="indicators-title">Economic Indicators</h2>
+          <p id="econ-indicator-status" class="econ-status" role="status">Loading data feeds...</p>
         </div>
+        <div class="econ-led-strip" aria-hidden="true"></div>
+        <div id="econ-indicator-grid" class="econ-indicator-grid" aria-live="polite"></div>
       </div>
-    </section>
 
-    <!-- Divider -->
-    <section class="econ-section">
-      <div class="container">
-        <hr class="econ-divider" aria-hidden="true">
-      </div>
-    </section>
-
-    <!-- The Wire: Mises news feed on green-bar continuous paper. -->
-    <section class="econ-section" aria-labelledby="news-title">
-      <div class="container">
+      <!-- The Wire: Mises news feed sidebar -->
+      <aside class="econ-sidebar" aria-labelledby="news-title">
         <article class="econ-panel econ-panel--wire" aria-labelledby="news-title">
           <div class="econ-panel-head">
             <h2 id="news-title">The Wire</h2>
@@ -182,6 +175,13 @@
           </div>
           <ul id="econ-news-list" class="econ-news-list"></ul>
         </article>
+      </aside>
+    </div>
+
+    <!-- Divider -->
+    <section class="econ-section">
+      <div class="container">
+        <hr class="econ-divider" aria-hidden="true">
       </div>
     </section>
 
@@ -196,28 +196,29 @@
 
           <div class="econ-reading-columns">
             <section class="econ-dossier">
-              <h3>In Queue</h3>
-              <ul>
-                <li>[Add book/article]</li>
-                <li>[Add book/article]</li>
-                <li>[Add book/article]</li>
-              </ul>
+              <h3>Recommended Articles</h3>
             </section>
 
             <section class="econ-dossier">
               <h3>Currently Reading</h3>
               <ul>
-                <li>[Add active read]</li>
-                <li>[Add active read]</li>
+                <li>
+                  <strong>An Inquiry into the Nature and Causes of the Wealth of Nations</strong>
+                  <span class="econ-book-meta">Adam Smith &middot; 1776 &middot; 5 Books &middot; W. Strahan & T. Cadell, London</span>
+                </li>
+                <li>
+                  <strong>Principles of Economics</strong>
+                  <span class="econ-book-meta">Alfred Marshall &middot; 1890 &middot; 6 Books &middot; Macmillan and Co., London</span>
+                </li>
+                <li>
+                  <strong>On the Principles of Political Economy and Taxation</strong>
+                  <span class="econ-book-meta">David Ricardo &middot; 1817 &middot; 32 Chapters &middot; John Murray, London</span>
+                </li>
               </ul>
             </section>
 
             <section class="econ-dossier">
               <h3>Finished + Notes</h3>
-              <ul>
-                <li>[Add completed read + takeaway]</li>
-                <li>[Add completed read + takeaway]</li>
-              </ul>
             </section>
           </div>
         </article>
@@ -278,7 +279,10 @@
         // Housing & Debt
         { id: 'PERMIT', name: 'New Housing Permits', unit: 'K', decimals: 0 },
         { id: 'GFDEGDQ188S', name: 'Debt-to-GDP Ratio', unit: '%', decimals: 1 },
-        { id: 'VIXCLS', name: 'CBOE Volatility (VIX)', unit: 'index', decimals: 2 }
+        { id: 'VIXCLS', name: 'CBOE Volatility (VIX)', unit: 'index', decimals: 2 },
+        // Trade & Velocity
+        { id: 'BOPGSTB', name: 'Trade Balance', unit: '$B', decimals: 1 },
+        { id: 'M2V', name: 'Velocity of Money (M2)', unit: 'ratio', decimals: 2 }
       ];
 
       var indicatorCards = {};
@@ -587,7 +591,7 @@
 
       function renderNewsItems(items) {
         newsList.textContent = '';
-        items.slice(0, 8).forEach(function (item) {
+        items.slice(0, 10).forEach(function (item) {
           var li = document.createElement('li');
           var a = document.createElement('a');
           a.href = item.link;
@@ -651,5 +655,6 @@
       });
     })();
   </script>
+  <script src="ticker.js"></script>
 </body>
 </html>

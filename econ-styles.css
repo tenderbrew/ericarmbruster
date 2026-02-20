@@ -90,13 +90,40 @@
   padding: 1.4rem 0 0;
 }
 
+/* ─── Sidebar Layout ──────────────────────────────────────────────────── */
+
+.econ-layout {
+  display: grid;
+  grid-template-columns: 1fr 300px;
+  gap: 1.4rem;
+  align-items: stretch;
+  padding-top: 1.4rem;
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.econ-sidebar {
+  display: flex;
+  flex-direction: column;
+  min-height: 0;
+  overflow: hidden;
+}
+
+.econ-sidebar .econ-panel--wire {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  min-height: 0;
+}
+
+.econ-sidebar .econ-news-list {
+  flex: 1;
+  overflow-y: auto;
+  min-height: 0;
+}
+
 
 /* ─── Animations ───────────────────────────────────────────────────────── */
-
-@keyframes tickerScroll {
-  0%   { transform: translateX(0); }
-  100% { transform: translateX(-50%); }
-}
 
 @keyframes phosphorPulse {
   0%, 100% { opacity: 0.7; }
@@ -106,78 +133,6 @@
 @keyframes ledBlink {
   0%, 90%, 100% { opacity: 1; }
   95%           { opacity: 0.6; }
-}
-
-
-/* ─── Ticker Tape ──────────────────────────────────────────────────────── */
-
-.econ-ticker-tape {
-  position: relative;
-  overflow: hidden;
-  height: 36px;
-  background: var(--tape-bg);
-  border-bottom: 2px solid var(--tape-shadow);
-  box-shadow:
-    0 2px 8px rgba(0, 0, 0, 0.35),
-    inset 0 -1px 0 rgba(255, 255, 255, 0.4);
-}
-
-/* Sprocket holes along top edge */
-.econ-ticker-tape::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  height: 8px;
-  z-index: 2;
-  background:
-    radial-gradient(circle at 50% 4px, rgba(0, 0, 0, 0.08) 2.5px, transparent 2.5px);
-  background-size: 20px 8px;
-}
-
-/* Tape edge shadow */
-.econ-ticker-tape::after {
-  content: "";
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  height: 6px;
-  z-index: 2;
-  background: linear-gradient(180deg, transparent, rgba(0, 0, 0, 0.06));
-}
-
-.econ-ticker-track {
-  display: flex;
-  align-items: center;
-  width: max-content;
-  height: 100%;
-  padding-top: 4px;
-  animation: tickerScroll 35s linear infinite;
-}
-
-.econ-ticker-track:hover {
-  animation-play-state: paused;
-}
-
-.econ-tick {
-  font-family: "IBM Plex Mono", "Courier New", monospace;
-  font-size: 13px;
-  font-weight: 500;
-  color: var(--tape-text);
-  white-space: nowrap;
-  letter-spacing: 0.3px;
-}
-
-.econ-tick--up { color: #0a6b2e; }
-.econ-tick--down { color: #a01010; }
-
-.econ-tick-sep {
-  display: inline-block;
-  margin: 0 14px;
-  font-size: 8px;
-  color: rgba(26, 20, 8, 0.3);
 }
 
 
@@ -417,7 +372,7 @@
 
 .econ-indicator-grid {
   display: grid;
-  grid-template-columns: repeat(4, minmax(0, 1fr));
+  grid-template-columns: repeat(5, minmax(0, 1fr));
   gap: 10px;
 }
 
@@ -757,6 +712,22 @@
   color: var(--amber);
 }
 
+.econ-dossier li strong {
+  display: block;
+  font-size: 13px;
+  color: var(--phosphor-bright);
+  letter-spacing: 0.3px;
+}
+
+.econ-book-meta {
+  display: block;
+  margin-top: 2px;
+  font-size: 11px;
+  color: var(--amber);
+  opacity: 0.8;
+  letter-spacing: 0.2px;
+}
+
 
 /* ─── Footer ───────────────────────────────────────────────────────────── */
 
@@ -776,9 +747,13 @@
 /* ─── Responsive ───────────────────────────────────────────────────────── */
 
 @media (max-width: 1080px) {
-  .econ-hero .container {
-    padding-left: 1.4rem;
-    padding-right: 1.4rem;
+  .econ-layout {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+  }
+
+  .econ-sidebar .econ-panel--wire {
+    flex: none;
   }
 
   .econ-indicator-grid {
@@ -791,8 +766,6 @@
 }
 
 @media (max-width: 760px) {
-  .econ-hero { padding-top: 1.2rem; }
-
   .econ-terminal-body {
     padding: 1.2rem 1rem 1.4rem;
   }
@@ -819,11 +792,8 @@
 }
 
 @media (max-width: 440px) {
-  .econ-ticker-tape { height: 30px; }
-  .econ-tick { font-size: 11px; }
-
   .econ-indicator-grid {
-    grid-template-columns: 1fr;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
   .econ-panel-head {

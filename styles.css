@@ -261,8 +261,7 @@ nav:not(.study-nav) .container {
 
 /* Default sticky nav used by simpler secondary pages. */
 nav:not(.study-nav) {
-  position: sticky;
-  top: 0;
+  position: static;
   z-index: 350;
   padding: 0.78rem 0;
 }
@@ -384,8 +383,7 @@ footer .container {
 
 /* Primary nav and drawer shell shared across all routes. */
 .study-nav {
-  position: sticky;
-  top: 0;
+  position: static;
   z-index: 600;
   overflow: visible;
   padding: 0.88rem 0 0.52rem;
@@ -1090,6 +1088,88 @@ footer .container {
 .stage-copy h1 .archive-line--bottom {
   margin-top: 0.08em;
 }
+
+/* ─── Ticker Tape (shared across all pages) ────────────────────────── */
+
+@keyframes tickerScroll {
+  0%   { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+
+.ticker-tape {
+  position: sticky;
+  top: 0;
+  z-index: 700;
+  overflow: hidden;
+  height: 36px;
+  background: #f5eed8;
+  border-bottom: 2px solid #d8ceb0;
+  box-shadow:
+    0 2px 8px rgba(0, 0, 0, 0.35),
+    inset 0 -1px 0 rgba(255, 255, 255, 0.4);
+}
+
+.ticker-tape::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 8px;
+  z-index: 2;
+  background:
+    radial-gradient(circle at 50% 4px, rgba(0, 0, 0, 0.08) 2.5px, transparent 2.5px);
+  background-size: 20px 8px;
+}
+
+.ticker-tape::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 6px;
+  z-index: 2;
+  background: linear-gradient(180deg, transparent, rgba(0, 0, 0, 0.06));
+}
+
+.ticker-track {
+  display: flex;
+  align-items: center;
+  width: max-content;
+  height: 100%;
+  padding-top: 4px;
+  animation: tickerScroll 35s linear infinite;
+}
+
+.ticker-track:hover {
+  animation-play-state: paused;
+}
+
+.tick {
+  font-family: "IBM Plex Mono", "Courier New", monospace;
+  font-size: 13px;
+  font-weight: 500;
+  color: #1a1408;
+  white-space: nowrap;
+  letter-spacing: 0.3px;
+}
+
+.tick--up { color: #0a6b2e; }
+.tick--down { color: #a01010; }
+
+.tick-sep {
+  display: inline-block;
+  margin: 0 14px;
+  font-size: 8px;
+  color: rgba(26, 20, 8, 0.3);
+}
+
+@media (max-width: 440px) {
+  .ticker-tape { height: 30px; }
+  .tick { font-size: 11px; }
+}
+
 
 @media (min-width: 1081px) {
   :root {
