@@ -76,7 +76,7 @@
   background: none;
   box-shadow: none;
   clip-path: none;
-  padding: 1.4rem 1.2rem;
+  padding: 1.4rem 0;
 }
 
 .sy-page main:not(.home-rooms) > section .container p:first-of-type::first-letter {
@@ -629,27 +629,103 @@
 /* Hero composition (portrait mount, title, dates, epitaph). */
 .sy-hero {
   position: relative;
-  padding: 3rem 0 1.5rem;
+  padding: 5rem 0 3.5rem;
   text-align: center;
+  overflow: hidden;
+  border-bottom: 2px solid var(--sy-gilt-dim);
+}
+
+/* Warm radial glow behind the portrait. */
+.sy-hero-glow {
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 600px;
+  height: 600px;
+  background: radial-gradient(
+    ellipse at center,
+    rgba(201, 162, 78, 0.12) 0%,
+    rgba(201, 162, 78, 0.06) 30%,
+    rgba(201, 162, 78, 0.02) 50%,
+    transparent 70%
+  );
+  pointer-events: none;
+  z-index: 0;
 }
 
 .sy-hero-inner {
   position: relative;
+  z-index: 1;
+}
+
+/* Desktop: portrait | name | tribute in one row. */
+.sy-hero-layout {
+  display: grid;
+  grid-template-columns: 280px auto 1fr;
+  gap: 2.5rem;
+  align-items: center;
+  margin: 0 auto;
+}
+
+/* Text column: stack everything centered. */
+.sy-hero-text {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 0.8rem;
+  gap: 0.6rem;
 }
 
-.sy-hero h1 {
-  font-size: clamp(2.4rem, 6vw, 4.5rem);
-  letter-spacing: 2px;
-  margin: 0;
+/* Ornamental gilt flourish (line — diamond — line). */
+.sy-hero-flourish {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  margin-bottom: 0.4rem;
 }
 
+.sy-hero-flourish--lower {
+  margin-bottom: 0;
+  margin-top: 0.2rem;
+}
+
+.sy-flourish-line {
+  display: block;
+  width: 40px;
+  height: 2px;
+  background: linear-gradient(90deg, transparent, var(--sy-gilt), transparent);
+}
+
+.sy-flourish-diamond {
+  display: block;
+  width: 8px;
+  height: 8px;
+  background: var(--sy-gilt);
+  transform: rotate(45deg);
+  box-shadow: 0 0 6px rgba(201, 162, 78, 0.5);
+}
+
+/* Portrait with ornate frame + warm glow ring. */
 .sy-hero-portrait {
-  max-width: 300px;
-  margin: 0 auto 0.5rem;
+  width: 280px;
+}
+
+.sy-portrait-frame {
+  position: relative;
+  padding: 6px;
+  border: 3px solid var(--sy-gilt-dim);
+  box-shadow:
+    0 0 40px rgba(201, 162, 78, 0.15),
+    0 12px 40px rgba(0, 0, 0, 0.6),
+    inset 0 0 0 1px rgba(201, 162, 78, 0.2);
+}
+
+.sy-portrait-frame::before {
+  content: "";
+  position: absolute;
+  inset: -8px;
+  border: 1px solid rgba(201, 162, 78, 0.15);
+  pointer-events: none;
 }
 
 .sy-hero-portrait img {
@@ -657,24 +733,45 @@
   width: 100%;
   height: auto;
   filter: sepia(0.25) contrast(1.05);
-  box-shadow: 0 8px 24px var(--sy-shadow);
 }
 
-.sy-hero-dates {
+.sy-hero-name {
+  font-size: clamp(2.4rem, 5vw, 3.6rem);
+  letter-spacing: 4px;
+  margin: 0.3rem 0 0;
+  text-transform: uppercase;
+}
+
+.sy-hero-years {
   font-family: var(--sy-font-script);
-  font-size: clamp(1.4rem, 3vw, 2rem);
+  font-size: clamp(1.4rem, 3vw, 1.8rem);
   color: var(--sy-gilt-bright);
   margin: 0;
+  text-shadow: 0 2px 8px rgba(0, 0, 0, 0.4);
 }
 
 .sy-hero-epitaph {
   font-family: var(--sy-font-body);
   font-style: italic;
-  font-size: 1rem;
+  font-size: clamp(0.85rem, 1.5vw, 1rem);
   color: var(--sy-text-on-leather);
-  opacity: 0.8;
-  max-width: 32ch;
-  margin: 0;
+  opacity: 0.85;
+  max-width: 28ch;
+  margin: 0.4rem 0 0;
+  line-height: 1.6;
+}
+
+/* Extra paw positions for hero scatter. */
+.sy-paw--hero-tl {
+  top: 12%;
+  left: 14%;
+  transform: rotate(-45deg);
+}
+
+.sy-paw--hero-br {
+  bottom: 10%;
+  right: 12%;
+  transform: rotate(30deg);
 }
 
 
@@ -759,13 +856,12 @@
 
 
 .sy-gallery-grid {
-  column-count: 3;
-  column-gap: 1rem;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.2rem;
 }
 
 .sy-gallery-item {
-  break-inside: avoid;
-  margin-bottom: 1rem;
   background: var(--sy-cream);
   border: 1px solid rgba(201, 162, 78, 0.3);
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
@@ -795,6 +891,153 @@
 
 .sy-photo-placeholder--wide {
   min-height: 120px;
+}
+
+
+/* ── Vintage photo treatment ─────────────────────────────────── */
+
+/* Thick mount with extra bottom space for handwritten label (Polaroid feel). */
+.sy-gallery-item.sy-photo-mount {
+  padding: 12px 12px 42px;
+  background:
+    repeating-linear-gradient(
+      35deg,
+      rgba(160, 140, 100, 0.04) 0,
+      rgba(160, 140, 100, 0.04) 1px,
+      transparent 1px,
+      transparent 4px
+    ),
+    linear-gradient(175deg, #faf6ee, #ede4d0 50%, #e0d4b8);
+  box-shadow:
+    0 6px 16px rgba(0, 0, 0, 0.35),
+    0 1px 3px rgba(0, 0, 0, 0.15);
+}
+
+/* Warm, faded film look with uniform Polaroid-style crop. */
+.sy-gallery-item img {
+  display: block;
+  width: 100%;
+  aspect-ratio: 4 / 5;
+  object-fit: cover;
+  object-position: center 30%;
+  filter: sepia(0.2) saturate(0.8) contrast(1.06) brightness(0.96);
+}
+
+/* Organic scrapbook rotations. */
+.sy-gallery-item:nth-child(6n+1) { transform: rotate(-0.7deg); }
+.sy-gallery-item:nth-child(6n+2) { transform: rotate(0.5deg); }
+.sy-gallery-item:nth-child(6n+3) { transform: rotate(-0.3deg); }
+.sy-gallery-item:nth-child(6n+4) { transform: rotate(0.8deg); }
+.sy-gallery-item:nth-child(6n+5) { transform: rotate(-0.5deg); }
+.sy-gallery-item:nth-child(6n+6) { transform: rotate(0.3deg); }
+
+/* Move bottom corner brackets to image edge, not card edge. */
+.sy-gallery-item .sy-corner-bl { bottom: 30px; }
+.sy-gallery-item .sy-corner-br { bottom: 30px; }
+
+/* Always-visible handwritten caption in the label area. */
+.sy-gallery-item .sy-photo-caption {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 2px 14px 8px;
+  background: none;
+  opacity: 1;
+  transition: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+}
+
+.sy-gallery-item .sy-caption-text {
+  font-family: var(--sy-font-script);
+  font-size: 1.2rem;
+  color: var(--sy-sepia);
+  line-height: 1.2;
+}
+
+.sy-gallery-item .sy-caption-year {
+  font-family: var(--sy-font-script);
+  font-size: 1.1rem;
+  color: var(--sy-warm-gray);
+}
+
+/* Tribute card — sits in hero row on desktop, standalone on mobile. */
+.sy-tribute {
+  max-width: none;
+  margin: 0;
+  align-self: center;
+}
+
+.sy-tribute .sy-section-heading {
+  text-align: left;
+}
+
+.sy-tribute .sy-bone-divider {
+  margin-left: 0;
+}
+
+.sy-tribute p {
+  font-family: var(--sy-font-body);
+  font-size: 0.88rem;
+  color: var(--sy-text-on-cream);
+  line-height: 1.7;
+  margin-bottom: 0.7rem;
+  text-align: left;
+}
+
+.sy-tribute p:last-child {
+  margin-bottom: 0;
+}
+
+
+/* Pull quote banner — engraved brass-plate strip below nav. */
+.sy-pullquote-banner {
+  background:
+    linear-gradient(180deg, rgba(0, 0, 0, 0.15), transparent 30%, transparent 70%, rgba(0, 0, 0, 0.15)),
+    linear-gradient(90deg, var(--sy-leather-dark), #1a2636 30%, #1e2a3a 50%, #1a2636 70%, var(--sy-leather-dark));
+  border-top: 1px solid rgba(201, 162, 78, 0.12);
+  border-bottom: 1px solid rgba(201, 162, 78, 0.12);
+  padding: 0.75rem 1.5rem;
+  text-align: center;
+}
+
+.sy-pullquote {
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+
+/* Gilt accent lines flanking the quote. */
+.sy-pullquote::before,
+.sy-pullquote::after {
+  content: "";
+  flex: 0 0 auto;
+  width: 50px;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, var(--sy-gilt-dim), transparent);
+}
+
+.sy-pullquote p {
+  font-family: var(--sy-font-serif);
+  font-style: italic;
+  font-size: 0.78rem;
+  color: var(--sy-gilt);
+  letter-spacing: 0.5px;
+  line-height: 1.4;
+  margin: 0;
+  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.5);
+}
+
+.sy-pullquote cite {
+  font-family: var(--sy-font-script);
+  font-size: 1.1rem;
+  font-style: normal;
+  color: var(--sy-gilt-dim);
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.4);
 }
 
 
@@ -1026,12 +1269,35 @@
 
 /* Responsive layout adjustments for smaller viewports. */
 @media (max-width: 1080px) {
+  .sy-hero-layout {
+    grid-template-columns: 1fr;
+    justify-items: center;
+    gap: 1.5rem;
+  }
+
+  .sy-hero-portrait {
+    width: auto;
+    max-width: 280px;
+  }
+
+  .sy-tribute {
+    max-width: 600px;
+  }
+
+  .sy-tribute .sy-section-heading {
+    text-align: center;
+  }
+
+  .sy-tribute .sy-bone-divider {
+    margin-left: auto;
+  }
+
   .sy-narrative-grid {
     grid-template-columns: 1fr;
   }
 
   .sy-gallery-grid {
-    column-count: 2;
+    grid-template-columns: repeat(2, 1fr);
   }
 
   .sy-media-grid {
@@ -1041,11 +1307,16 @@
 
 @media (max-width: 760px) {
   .sy-hero {
-    padding: 2rem 0 1rem;
+    padding: 3rem 0 2rem;
   }
 
   .sy-hero-portrait {
     max-width: 240px;
+  }
+
+  .sy-hero-glow {
+    width: 400px;
+    height: 400px;
   }
 
   .sy-collar {
@@ -1054,7 +1325,7 @@
   }
 
   .sy-gallery-grid {
-    column-count: 2;
+    grid-template-columns: repeat(2, 1fr);
   }
 
   .sy-timeline {
@@ -1083,12 +1354,22 @@
 }
 
 @media (max-width: 420px) {
-  .sy-hero h1 {
-    font-size: 2rem;
+  .sy-hero {
+    padding: 2.5rem 0 1.5rem;
+  }
+
+  .sy-hero-name {
+    font-size: 2.4rem;
+    letter-spacing: 3px;
   }
 
   .sy-hero-portrait {
     max-width: 200px;
+  }
+
+  .sy-hero-glow {
+    width: 300px;
+    height: 300px;
   }
 
   .sy-collar {
@@ -1110,7 +1391,26 @@
   }
 
   .sy-gallery-grid {
-    column-count: 1;
+    grid-template-columns: 1fr;
+  }
+
+  /* Reduce vintage rotations on small screens. */
+  .sy-gallery-item:nth-child(6n+1),
+  .sy-gallery-item:nth-child(6n+2),
+  .sy-gallery-item:nth-child(6n+3),
+  .sy-gallery-item:nth-child(6n+4),
+  .sy-gallery-item:nth-child(6n+5),
+  .sy-gallery-item:nth-child(6n+6) {
+    transform: none;
+  }
+
+  .sy-gallery-item.sy-photo-mount {
+    padding: 10px 10px 36px;
+  }
+
+  .sy-gallery-item .sy-corner-bl,
+  .sy-gallery-item .sy-corner-br {
+    bottom: 26px;
   }
 
   .sy-gallery-tabs {

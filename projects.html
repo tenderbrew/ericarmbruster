@@ -1,46 +1,43 @@
-<!-- File Guide: projects.html. Project summary page with featured work, focus notes, and related links. -->
+<!-- File Guide: projects.html. Skeuomorphic project ledger — leather-bound journal on a dark desk. -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <!-- Head section: metadata, social tags, fonts, stylesheets, and analytics bootstrapping. -->
-  
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <title>Projects - Eric Armbruster</title>
+  <title>Project Ledger - Eric Armbruster</title>
 
-  
   <meta name="description" content="Selected projects by Eric Armbruster, with context, goals, and links.">
-  <meta name="theme-color" content="#070503">
+  <meta name="theme-color" content="#0c0806">
   <link rel="canonical" href="https://www.ericarmbruster.com/projects.html">
-  <meta property="og:title" content="Projects - Eric Armbruster">
+  <meta property="og:title" content="Project Ledger - Eric Armbruster">
   <meta property="og:description" content="Selected projects by Eric Armbruster, with context, goals, and links.">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://www.ericarmbruster.com/projects.html">
-  <meta property="og:image" content="https://www.ericarmbruster.com/images/chrono-trigger-sfc-cart.png">
+  <meta property="og:image" content="https://www.ericarmbruster.com/images/hector-0001.png">
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="Projects - Eric Armbruster">
+  <meta name="twitter:title" content="Project Ledger - Eric Armbruster">
   <meta name="twitter:description" content="Selected projects by Eric Armbruster, with context, goals, and links.">
-  <meta name="twitter:image" content="https://www.ericarmbruster.com/images/chrono-trigger-sfc-cart.png">
+  <meta name="twitter:image" content="https://www.ericarmbruster.com/images/hector-0001.png">
   <link rel="icon" href="images/hector-favicon.png" type="image/png">
 
-  
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Libre+Caslon+Display&family=Libre+Caslon+Text:ital,wght@0,400;0,700;1,400&family=Herr+Von+Muellerhoff&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=IM+Fell+English:ital@0;1&family=IM+Fell+English+SC&family=Libre+Caslon+Display&family=Libre+Caslon+Text:ital,wght@0,400;0,700;1,400&family=Herr+Von+Muellerhoff&display=swap" rel="stylesheet">
 
-  <link rel="stylesheet" href="styles.css">
-  <!-- Analytics library: loaded async so it does not block rendering. -->
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="proj-styles.css">
+
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-5ZTHJXDR9V"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
     function gtag(){dataLayer.push(arguments);}
     gtag('js', new Date());
-
     gtag('config', 'G-5ZTHJXDR9V');
   </script>
 </head>
-<body>
+
+<body class="proj-page">
 
   <!-- Scrolling ticker tape: live market data. -->
   <div class="ticker-tape" aria-hidden="true">
@@ -88,10 +85,7 @@
     </div>
   </div>
 
-
   <!-- Shared primary navigation. Drawer behavior is provided by drawer.js. -->
-
-  
   <nav class="study-nav" aria-label="Primary">
     <div class="container nav-shell">
       <a href="index.html" class="brand-mark" aria-label="Eric Armbruster home">Eric M. Armbruster</a>
@@ -125,7 +119,7 @@
           <a href="self-hosting.html">Self-Hosting</a>
           <a href="economics.html">Economics</a>
           <a href="bitcoin.html">Bitcoin</a>
-          <a href="dog-training.html">Seymour</a>
+          <a href="seymour.html">Seymour</a>
         </section>
         <section class="drawer-group drawer-group--compact">
           <h2>Elsewhere</h2>
@@ -137,65 +131,78 @@
     </div>
   </nav>
 
-  <!-- Page hero / introductory banner section. -->
-  <header class="hero">
-    <div class="container">
-      <h1>Projects</h1>
-      <p class="hero-subtitle">Selected work, current focus, and links to explore in more detail.</p>
-    </div>
-  </header>
-  <!-- Main page content. Most route-specific structure lives here. -->
+  <!-- Ambient desk lamp glow -->
+  <div class="proj-lamp" aria-hidden="true"></div>
+
+  <!-- Page content -->
   <main>
-    
-    <!-- Primary project highlight with external link. -->
-    <section>
-      <div class="container">
-        <h2>Featured Project</h2>
-        <p><strong>Nintendo Pipeline Club</strong> is a structured retro game club built around clear timelines and recurring discussion prompts. The goal is simple: help people actually finish classic titles and enjoy the conversation around them.</p>
-        <p><a href="https://nintendopipeline.club" target="_blank" rel="noopener">Visit Nintendo Pipeline Club</a></p>
-      </div>
-    </section>
+    <div class="proj-ledger">
 
-    <!-- Current direction and operating principles. -->
-    <section>
-      <div class="container">
-        <h2>Current Focus</h2>
-        <p>I am currently investing in projects with long-term utility: this website, self-hosted tooling, and lightweight systems that are easy to operate and maintain.</p>
-        <p>My default approach is to start small, instrument early, and iterate based on real usage rather than assumptions.</p>
-      </div>
-    </section>
+      <!-- Brass page corners -->
+      <span class="proj-corner proj-corner--tl" aria-hidden="true"></span>
+      <span class="proj-corner proj-corner--tr" aria-hidden="true"></span>
+      <span class="proj-corner proj-corner--br" aria-hidden="true"></span>
+      <span class="proj-corner proj-corner--bl" aria-hidden="true"></span>
 
-    <!-- Cross-links to other topic pages in the site. -->
-    <section>
-      <div class="container">
-        <h2>Related Pages</h2>
-        <p>
-          <a href="video-games.html">Video Games</a> |
-          <a href="film.html">Film</a> |
-          <a href="self-hosting.html">Self-Hosting</a> |
-          <a href="economics.html">Economics</a> |
-          <a href="bitcoin.html">Bitcoin</a> |
-          <a href="dog-training.html">Seymour</a>
-        </p>
+      <!-- Ribbon bookmark -->
+      <span class="proj-ribbon" aria-hidden="true"></span>
+
+      <!-- Ledger title -->
+      <header class="proj-title">
+        <h1>Project Ledger</h1>
+      </header>
+
+      <!-- Active projects -->
+      <h2 class="proj-section-heading">Active</h2>
+
+      <article class="proj-entry">
+        <div class="proj-stamp proj-stamp--active">Active</div>
+        <h3 class="proj-name">ericarmbruster.com</h3>
+        <p class="proj-desc">Personal website. The one you're looking at.</p>
+      </article>
+
+      <article class="proj-entry">
+        <div class="proj-stamp proj-stamp--active">Active</div>
+        <h3 class="proj-name">Self-Hosting Lab</h3>
+        <p class="proj-desc">Synology NAS running a fleet of containers &mdash; Plex, Home Assistant, Pi-hole, and more.</p>
+        <a class="proj-link" href="self-hosting.html">read more &rarr;</a>
+      </article>
+
+      <article class="proj-entry">
+        <div class="proj-stamp proj-stamp--active">Active</div>
+        <h3 class="proj-name">Secret Project</h3>
+        <p class="proj-desc">In development.</p>
+      </article>
+
+      <!-- Completed projects -->
+      <h2 class="proj-section-heading">Completed</h2>
+
+      <article class="proj-entry">
+        <div class="proj-stamp proj-stamp--complete">Complete</div>
+        <h3 class="proj-name">Nintendo Pipeline Club</h3>
+        <p class="proj-desc">Retro game club built around curated timelines and community discussion.</p>
+        <a class="proj-link" href="https://nintendopipeline.club" target="_blank" rel="noopener">visit &rarr;</a>
+      </article>
+
+      <!-- On the Shelf -->
+      <h2 class="proj-section-heading">On the Shelf</h2>
+
+      <div class="proj-scribble" aria-hidden="true">
+        <span class="proj-scribble-line"></span>
+        <span class="proj-scribble-line"></span>
+        <span class="proj-scribble-line"></span>
       </div>
-    </section>
-  </main>
-  <!-- Shared footer. -->
+
+    </div>
+  </main>
+
   <footer>
     <div class="container">
       &copy; 2026 Eric Armbruster
     </div>
-  </footer>
-  <!-- Shared drawer controller for desktop/mobile navigation. -->
-  <script src="drawer.js"></script>
+  </footer>
 
+  <script src="drawer.js"></script>
   <script src="ticker.js"></script>
 </body>
 </html>
-
-
-
-
-
-
-

@@ -1,0 +1,544 @@
+/*
+  proj-styles.css
+  Project Ledger page: Leather-bound journal open on a dark desk.
+  Aged paper, ruled lines, rubber stamps, binding stitches, ribbon bookmark.
+  Scoped to body.proj-page.
+*/
+
+/* ─── Palette ──────────────────────────────────────────────────────────── */
+
+.proj-page {
+  /* Desk */
+  --desk-dark: #0c0806;
+  --desk-mid: #1a120c;
+  --desk-light: #241a12;
+  --desk-grain: rgba(60, 40, 20, 0.06);
+
+  /* Leather */
+  --leather: #5c3a1e;
+  --leather-dark: #3d2410;
+  --leather-light: #7a4e2a;
+  --leather-stitch: rgba(180, 150, 100, 0.4);
+
+  /* Paper */
+  --paper: #e8dcc8;
+  --paper-mid: #d6c8a8;
+  --paper-dark: #c4b08a;
+  --paper-rule: rgba(109, 85, 59, 0.28);
+  --paper-rule-margin: rgba(160, 50, 40, 0.18);
+
+  /* Ink */
+  --ink-dark: #3b2a1c;
+  --ink-body: #4a3828;
+  --ink-faint: #7a6a58;
+  --ink-heading: #8b2f2b;
+
+  /* Brass */
+  --brass: #b8943e;
+  --brass-bright: #d4a84a;
+  --brass-dim: #8a6c2e;
+
+  /* Stamps */
+  --stamp-red: #a02218;
+  --stamp-green: #1a5c4a;
+
+  /* Lamp */
+  --lamp-glow: rgba(220, 180, 100, 0.08);
+
+  color: var(--ink-body);
+  font-family: "IM Fell English", "Libre Caslon Text", "Georgia", serif;
+  overflow-x: hidden;
+
+  background:
+    /* Warm desk lamp spill from upper-left */
+    radial-gradient(ellipse 700px 600px at 10% 8%, rgba(220, 180, 100, 0.06), transparent 60%),
+    /* Subtle warm glow from lower-right */
+    radial-gradient(ellipse 500px 400px at 85% 90%, rgba(160, 100, 40, 0.03), transparent 50%),
+    /* Wood grain — vertical streaks */
+    repeating-linear-gradient(
+      90deg,
+      transparent 0,
+      transparent 38px,
+      rgba(60, 40, 20, 0.04) 38px,
+      rgba(60, 40, 20, 0.04) 40px,
+      transparent 40px,
+      transparent 92px
+    ),
+    repeating-linear-gradient(
+      90deg,
+      transparent 0,
+      transparent 17px,
+      rgba(50, 30, 15, 0.025) 17px,
+      rgba(50, 30, 15, 0.025) 18px,
+      transparent 18px,
+      transparent 63px
+    ),
+    /* Base desk gradient */
+    linear-gradient(170deg, var(--desk-dark) 0%, var(--desk-mid) 40%, var(--desk-light) 100%);
+  background-attachment: fixed;
+}
+
+
+/* ─── Shared Overrides ─────────────────────────────────────────────────── */
+
+.proj-page main:not(.home-rooms) > section .container {
+  background: none;
+  box-shadow: none;
+  clip-path: none;
+  padding: 0;
+}
+
+.proj-page main:not(.home-rooms) > section .container p:first-of-type::first-letter {
+  float: none;
+  font-size: inherit;
+  line-height: inherit;
+  padding-right: 0;
+  color: inherit;
+  font-family: inherit;
+}
+
+.proj-page .study-nav {
+  position: relative;
+  z-index: 10;
+}
+
+.proj-page footer {
+  position: relative;
+  z-index: 2;
+  border-top: 1px solid rgba(90, 60, 30, 0.2);
+  margin-top: 0;
+  background: none;
+}
+
+.proj-page footer .container {
+  color: rgba(180, 150, 100, 0.35);
+  font-family: "IM Fell English", "Georgia", serif;
+  font-size: 0.72rem;
+}
+
+
+/* ─── Desk Lamp Glow (ambient) ────────────────────────────────────────── */
+
+.proj-lamp {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 50%;
+  height: 50%;
+  z-index: 0;
+  pointer-events: none;
+  background: radial-gradient(
+    ellipse 100% 100% at 0% 0%,
+    rgba(220, 180, 100, 0.05) 0%,
+    transparent 70%
+  );
+}
+
+
+/* ─── Ledger Book ──────────────────────────────────────────────────────── */
+
+.proj-ledger {
+  position: relative;
+  z-index: 2;
+  max-width: 760px;
+  margin: 0 auto;
+  padding: 3rem 3rem 3.5rem 3.6rem;
+
+  /* Aged paper with stain variations */
+  background:
+    /* Age spots / foxing */
+    radial-gradient(circle 80px at 15% 20%, rgba(160, 120, 60, 0.08), transparent),
+    radial-gradient(circle 60px at 75% 65%, rgba(140, 100, 50, 0.06), transparent),
+    radial-gradient(circle 100px at 90% 15%, rgba(130, 95, 45, 0.05), transparent),
+    /* Coffee ring stain — upper right area */
+    radial-gradient(circle 42px at 82% 12%, transparent 30px, rgba(130, 90, 40, 0.07) 32px, rgba(130, 90, 40, 0.04) 38px, transparent 40px),
+    /* Horizontal ruled lines */
+    repeating-linear-gradient(
+      180deg,
+      transparent 0,
+      transparent 1.64rem,
+      var(--paper-rule) 1.64rem,
+      var(--paper-rule) 1.72rem,
+      transparent 1.72rem
+    ),
+    /* Base paper gradient */
+    linear-gradient(168deg, var(--paper) 0%, var(--paper-mid) 60%, var(--paper-dark) 100%);
+
+  /* Margin line (red vertical rule on the left) */
+  border-left: 2px solid var(--paper-rule-margin);
+
+  box-shadow:
+    /* Page depth on right edge */
+    4px 0 0 -1px var(--paper-mid),
+    6px 1px 0 -1px var(--paper-dark),
+    8px 2px 0 -1px rgba(160, 130, 90, 0.5),
+    /* Desk shadow */
+    12px 12px 30px rgba(0, 0, 0, 0.4),
+    -2px 8px 24px rgba(0, 0, 0, 0.25),
+    /* Inner glow from lamp */
+    inset 40px 20px 60px rgba(220, 180, 100, 0.03);
+}
+
+/* Leather binding / spine on the left */
+.proj-ledger::before {
+  content: "";
+  position: absolute;
+  top: -4px;
+  left: -28px;
+  width: 28px;
+  bottom: -4px;
+  background:
+    /* Stitching holes */
+    radial-gradient(circle 1.5px at 14px 30px, var(--leather-stitch), transparent 2px),
+    radial-gradient(circle 1.5px at 14px 70px, var(--leather-stitch), transparent 2px),
+    radial-gradient(circle 1.5px at 14px 110px, var(--leather-stitch), transparent 2px),
+    radial-gradient(circle 1.5px at 14px 150px, var(--leather-stitch), transparent 2px),
+    radial-gradient(circle 1.5px at 14px 190px, var(--leather-stitch), transparent 2px),
+    radial-gradient(circle 1.5px at 14px 230px, var(--leather-stitch), transparent 2px),
+    radial-gradient(circle 1.5px at 14px 270px, var(--leather-stitch), transparent 2px),
+    radial-gradient(circle 1.5px at 14px 310px, var(--leather-stitch), transparent 2px),
+    radial-gradient(circle 1.5px at 14px 350px, var(--leather-stitch), transparent 2px),
+    radial-gradient(circle 1.5px at 14px 390px, var(--leather-stitch), transparent 2px),
+    /* Leather surface */
+    linear-gradient(90deg, var(--leather-dark) 0%, var(--leather) 40%, var(--leather-dark) 85%, #2a1808 100%);
+  box-shadow:
+    inset -3px 0 8px rgba(0, 0, 0, 0.3),
+    -4px 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+/* Page corner curl — bottom right */
+.proj-ledger::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 40px;
+  height: 40px;
+  background: linear-gradient(
+    225deg,
+    var(--desk-mid) 0%,
+    var(--desk-mid) 38%,
+    var(--paper-dark) 42%,
+    var(--paper-mid) 50%,
+    var(--paper) 100%
+  );
+  box-shadow: -2px -2px 4px rgba(0, 0, 0, 0.08);
+}
+
+
+/* ─── Ribbon Bookmark ─────────────────────────────────────────────────── */
+
+.proj-ribbon {
+  position: absolute;
+  top: -6px;
+  right: 60px;
+  width: 16px;
+  height: 80px;
+  z-index: 3;
+  pointer-events: none;
+  background: linear-gradient(
+    180deg,
+    #8b2f2b 0%,
+    #7a2824 60%,
+    #6a2220 100%
+  );
+  transform: rotate(2deg);
+  box-shadow:
+    1px 2px 4px rgba(0, 0, 0, 0.2),
+    inset -2px 0 3px rgba(0, 0, 0, 0.15);
+}
+
+/* Ribbon forked tail */
+.proj-ribbon::after {
+  content: "";
+  position: absolute;
+  bottom: -10px;
+  left: 0;
+  width: 16px;
+  height: 10px;
+  background: linear-gradient(180deg, #6a2220, #6a2220);
+  clip-path: polygon(0 0, 50% 60%, 100% 0, 100% 100%, 50% 40%, 0 100%);
+}
+
+
+/* ─── Ledger Title ────────────────────────────────────────────────────── */
+
+.proj-title {
+  text-align: center;
+  padding: 0.5rem 0 1.8rem;
+}
+
+.proj-title h1 {
+  font-family: "Herr Von Muellerhoff", "IM Fell English", "Georgia", cursive;
+  font-size: clamp(2.6rem, 4vw, 3.4rem);
+  font-weight: 400;
+  color: var(--ink-heading);
+  letter-spacing: 1px;
+  text-shadow:
+    1px 1px 0 rgba(200, 170, 130, 0.5),
+    0 0 8px rgba(139, 47, 43, 0.08);
+  margin: 0;
+}
+
+/* Decorative rule under heading */
+.proj-title::after {
+  content: "";
+  display: block;
+  width: min(60%, 280px);
+  height: 2px;
+  margin: 0.4rem auto 0;
+  background:
+    radial-gradient(circle at center, rgba(140, 45, 39, 0.7) 0%, transparent 70%),
+    linear-gradient(90deg, transparent 10%, rgba(140, 45, 39, 0.4) 30%, rgba(140, 45, 39, 0.4) 70%, transparent 90%);
+}
+
+
+/* ─── Section Headings ────────────────────────────────────────────────── */
+
+.proj-section-heading {
+  font-family: "IM Fell English", "Libre Caslon Text", "Georgia", serif;
+  font-size: 1.15rem;
+  font-weight: 400;
+  font-style: italic;
+  color: var(--ink-faint);
+  letter-spacing: 0.5px;
+  margin: 2rem 0 0.8rem;
+  padding-bottom: 0.3rem;
+  border-bottom: 1px solid rgba(109, 85, 59, 0.2);
+}
+
+.proj-section-heading:first-of-type {
+  margin-top: 0;
+}
+
+
+/* ─── Project Entries ─────────────────────────────────────────────────── */
+
+.proj-entry {
+  position: relative;
+  padding: 0.8rem 0.4rem 0.8rem 0.2rem;
+  border-bottom: 1px solid rgba(109, 85, 59, 0.1);
+  transition: background 0.2s ease;
+}
+
+.proj-entry:last-child {
+  border-bottom: none;
+}
+
+/* Slight organic rotation per entry */
+.proj-entry:nth-child(odd) {
+  transform: rotate(-0.15deg);
+}
+
+.proj-entry:nth-child(even) {
+  transform: rotate(0.1deg);
+}
+
+.proj-name {
+  font-family: "IM Fell English", "Libre Caslon Text", "Georgia", serif;
+  font-size: 1.1rem;
+  font-weight: 400;
+  color: var(--ink-dark);
+  margin: 0 0 0.2rem;
+  letter-spacing: 0.2px;
+}
+
+.proj-desc {
+  font-size: 0.88rem;
+  line-height: 1.6;
+  color: var(--ink-body);
+  margin: 0 0 0.3rem;
+  font-style: italic;
+}
+
+.proj-link {
+  font-family: "IM Fell English", "Georgia", serif;
+  font-size: 0.82rem;
+  color: var(--ink-heading);
+  text-decoration: underline;
+  text-decoration-color: rgba(139, 47, 43, 0.3);
+  text-underline-offset: 3px;
+  transition: color 0.2s ease, text-decoration-color 0.2s ease;
+}
+
+.proj-link:hover {
+  color: var(--stamp-red);
+  text-decoration-color: rgba(160, 34, 24, 0.5);
+}
+
+
+/* ─── Rubber Stamps ───────────────────────────────────────────────────── */
+
+.proj-stamp {
+  display: inline-block;
+  font-family: "IM Fell English SC", "IM Fell English", "Georgia", serif;
+  font-size: 0.62rem;
+  font-weight: 700;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  padding: 0.15rem 0.5rem;
+  border: 2px solid currentColor;
+  margin-bottom: 0.35rem;
+  /* Stamp ink imperfections */
+  opacity: 0.7;
+  filter: blur(0.2px);
+}
+
+.proj-stamp--active {
+  color: var(--stamp-green);
+  transform: rotate(-3deg);
+}
+
+.proj-stamp--complete {
+  color: var(--stamp-red);
+  transform: rotate(-5deg);
+}
+
+
+/* ─── Scribble Placeholders (shelf filler) ────────────────────────────── */
+
+.proj-scribble {
+  padding: 0.5rem 0.2rem;
+}
+
+.proj-scribble-line {
+  display: block;
+  height: 0.48rem;
+  margin-bottom: 0.9rem;
+  background:
+    repeating-linear-gradient(-8deg,
+      rgba(72, 52, 34, 0.18) 0,
+      rgba(72, 52, 34, 0.18) 2px,
+      transparent 2px,
+      transparent 5px
+    ),
+    repeating-linear-gradient(7deg,
+      rgba(72, 52, 34, 0.14) 0,
+      rgba(72, 52, 34, 0.14) 1.5px,
+      transparent 1.5px,
+      transparent 6px
+    );
+  filter: blur(0.25px);
+  opacity: 0.45;
+}
+
+.proj-scribble-line:nth-child(1) { width: 82%; }
+.proj-scribble-line:nth-child(2) { width: 68%; }
+.proj-scribble-line:nth-child(3) { width: 74%; }
+
+
+/* ─── Brass Page Corners ──────────────────────────────────────────────── */
+
+.proj-corner {
+  position: absolute;
+  width: 24px;
+  height: 24px;
+  z-index: 3;
+  pointer-events: none;
+}
+
+.proj-corner--tl {
+  top: 8px;
+  left: 8px;
+  border-top: 2px solid var(--brass);
+  border-left: 2px solid var(--brass);
+  box-shadow: inset 1px 1px 2px rgba(180, 148, 62, 0.3);
+}
+
+.proj-corner--tr {
+  top: 8px;
+  right: 8px;
+  border-top: 2px solid var(--brass);
+  border-right: 2px solid var(--brass);
+  box-shadow: inset -1px 1px 2px rgba(180, 148, 62, 0.3);
+}
+
+.proj-corner--br {
+  bottom: 8px;
+  right: 8px;
+  border-bottom: 2px solid var(--brass-dim);
+  border-right: 2px solid var(--brass-dim);
+  box-shadow: inset -1px -1px 2px rgba(138, 108, 46, 0.2);
+}
+
+.proj-corner--bl {
+  bottom: 8px;
+  left: 8px;
+  border-bottom: 2px solid var(--brass-dim);
+  border-left: 2px solid var(--brass-dim);
+  box-shadow: inset 1px -1px 2px rgba(138, 108, 46, 0.2);
+}
+
+
+/* ─── Responsive ──────────────────────────────────────────────────────── */
+
+@media (max-width: 1080px) {
+  .proj-ledger {
+    max-width: 640px;
+    padding: 2.5rem 2.4rem 3rem 2.8rem;
+  }
+}
+
+@media (max-width: 760px) {
+  .proj-ledger {
+    max-width: 100%;
+    margin: 0 1rem;
+    padding: 2rem 1.6rem 2.5rem 2rem;
+  }
+
+  .proj-ledger::before {
+    width: 18px;
+    left: -18px;
+  }
+
+  .proj-ribbon {
+    display: none;
+  }
+
+  .proj-corner {
+    display: none;
+  }
+
+  .proj-title h1 {
+    font-size: 2.4rem;
+  }
+
+  .proj-stamp {
+    font-size: 0.56rem;
+  }
+}
+
+@media (max-width: 420px) {
+  .proj-ledger {
+    margin: 0 0.5rem;
+    padding: 1.6rem 1.2rem 2rem 1.4rem;
+  }
+
+  .proj-ledger::before {
+    width: 10px;
+    left: -10px;
+  }
+
+  /* Simplify page edge shadow */
+  .proj-ledger {
+    box-shadow:
+      3px 0 0 -1px var(--paper-mid),
+      8px 8px 20px rgba(0, 0, 0, 0.3);
+  }
+
+  .proj-title h1 {
+    font-size: 2rem;
+  }
+
+  .proj-section-heading {
+    font-size: 1rem;
+  }
+
+  .proj-name {
+    font-size: 1rem;
+  }
+
+  .proj-desc {
+    font-size: 0.82rem;
+  }
+}

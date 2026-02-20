@@ -1,0 +1,518 @@
+<!-- File Guide: seymour.html. Memorial scrapbook page for Seymour with chronological photo gallery. -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Head section: metadata, social tags, fonts, stylesheets, and analytics bootstrapping. -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Seymour: A Remembrance - Eric Armbruster</title>
+  <meta name="description" content="A remembrance page for Seymour, Eric's Jack Russell Terrier.">
+  <meta name="theme-color" content="#0e1520">
+  <link rel="canonical" href="https://www.ericarmbruster.com/seymour.html">
+  <meta property="og:title" content="Seymour: A Remembrance - Eric Armbruster">
+  <meta property="og:description" content="A remembrance page for Seymour, Eric's Jack Russell Terrier.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://www.ericarmbruster.com/seymour.html">
+  <meta property="og:image" content="https://www.ericarmbruster.com/images/seymour-memoriam.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Seymour: A Remembrance - Eric Armbruster">
+  <meta name="twitter:description" content="A remembrance page for Seymour, Eric's Jack Russell Terrier.">
+  <meta name="twitter:image" content="https://www.ericarmbruster.com/images/seymour-memoriam.png">
+  <link rel="icon" href="images/hector-favicon.png" type="image/png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Libre+Caslon+Display&family=Libre+Caslon+Text:ital,wght@0,400;0,700;1,400&family=Herr+Von+Muellerhoff&family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Lora:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="sy-styles.css">
+  <!-- Analytics library: loaded async so it does not block rendering. -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-5ZTHJXDR9V"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-5ZTHJXDR9V');
+  </script>
+</head>
+<body class="sy-page">
+
+  <!-- Scrolling ticker tape: live market data. -->
+  <div class="ticker-tape" aria-hidden="true">
+    <div class="ticker-track">
+      <span class="tick" data-ticker="DJIA">DJIA 38,547 &#9650;0.42%</span>
+      <span class="tick-sep">&bull;</span>
+      <span class="tick" data-ticker="SP500">S&amp;P 500 5,234 &#9650;0.18%</span>
+      <span class="tick-sep">&bull;</span>
+      <span class="tick" data-ticker="NASDAQ">NASDAQ 16,340 &#9660;0.31%</span>
+      <span class="tick-sep">&bull;</span>
+      <span class="tick" data-ticker="10Y">10Y YIELD 4.285%</span>
+      <span class="tick-sep">&bull;</span>
+      <span class="tick" data-ticker="GOLD">GOLD 2,338.40</span>
+      <span class="tick-sep">&bull;</span>
+      <span class="tick" data-ticker="BTC">BTC 67,245 &#9650;2.14%</span>
+      <span class="tick-sep">&bull;</span>
+      <span class="tick" data-ticker="VIX">VIX 13.42</span>
+      <span class="tick-sep">&bull;</span>
+      <span class="tick" data-ticker="EURUSD">EUR/USD 1.0845</span>
+      <span class="tick-sep">&bull;</span>
+      <span class="tick" data-ticker="CRUDE">WTI CRUDE 78.32</span>
+      <span class="tick-sep">&bull;</span>
+      <span class="tick" data-ticker="FEDFUNDS">FED FUNDS 5.33%</span>
+      <span class="tick-sep">&bull;</span>
+      <span class="tick" data-ticker="DJIA">DJIA 38,547 &#9650;0.42%</span>
+      <span class="tick-sep">&bull;</span>
+      <span class="tick" data-ticker="SP500">S&amp;P 500 5,234 &#9650;0.18%</span>
+      <span class="tick-sep">&bull;</span>
+      <span class="tick" data-ticker="NASDAQ">NASDAQ 16,340 &#9660;0.31%</span>
+      <span class="tick-sep">&bull;</span>
+      <span class="tick" data-ticker="10Y">10Y YIELD 4.285%</span>
+      <span class="tick-sep">&bull;</span>
+      <span class="tick" data-ticker="GOLD">GOLD 2,338.40</span>
+      <span class="tick-sep">&bull;</span>
+      <span class="tick" data-ticker="BTC">BTC 67,245 &#9650;2.14%</span>
+      <span class="tick-sep">&bull;</span>
+      <span class="tick" data-ticker="VIX">VIX 13.42</span>
+      <span class="tick-sep">&bull;</span>
+      <span class="tick" data-ticker="EURUSD">EUR/USD 1.0845</span>
+      <span class="tick-sep">&bull;</span>
+      <span class="tick" data-ticker="CRUDE">WTI CRUDE 78.32</span>
+      <span class="tick-sep">&bull;</span>
+      <span class="tick" data-ticker="FEDFUNDS">FED FUNDS 5.33%</span>
+      <span class="tick-sep">&bull;</span>
+    </div>
+  </div>
+
+  <!-- Shared primary navigation. Drawer behavior is provided by drawer.js. -->
+  <nav class="study-nav" aria-label="Primary">
+    <div class="container nav-shell">
+      <a href="index.html" class="brand-mark" aria-label="Eric Armbruster home">Eric M. Armbruster</a>
+
+      <div class="nav-links-desktop" aria-label="Primary links">
+        <a href="about.html">about</a>
+        <a href="projects.html">projects</a>
+        <button class="drawer-toggle" type="button" aria-expanded="false" aria-controls="site-drawer" data-drawer-toggle>interests</button>
+      </div>
+
+      <div class="nav-icons" aria-label="Contact links">
+        <a href="mailto:eric.m.armbruster@gmail.com" aria-label="Email Eric"><svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"><rect x="1.5" y="3.5" width="13" height="9"/><path d="M1.5 3.5L8 9l6.5-5.5"/></svg></a>
+        <a href="https://github.com/tenderbrew" target="_blank" rel="noopener" aria-label="Eric on GitHub"><svg width="16" height="16" viewBox="0 0 16 16" fill="currentColor"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0016 8c0-4.42-3.58-8-8-8z"/></svg></a>
+        <a href="https://www.linkedin.com/in/ericmarmbruster/" target="_blank" rel="noopener" aria-label="Eric on LinkedIn"><svg width="16" height="16" viewBox="0 0 16 16" fill="currentColor"><path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.016-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.52 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.174-.431.569-.878 1.232-.878.87 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016l.016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z"/></svg></a>
+      </div>
+
+      <button class="drawer-toggle nav-mobile-toggle" type="button" aria-expanded="false" aria-controls="site-drawer" data-drawer-toggle>menu</button>
+    </div>
+
+    <div class="site-drawer" id="site-drawer">
+      <div class="container drawer-inner">
+        <section class="drawer-group">
+          <h2>Main Rooms</h2>
+          <a href="about.html">About</a>
+          <a href="projects.html">Projects</a>
+        </section>
+        <section class="drawer-group">
+          <h2>Interests</h2>
+          <a href="video-games.html">Video Games</a>
+          <a href="film.html">Film</a>
+          <a href="self-hosting.html">Self-Hosting</a>
+          <a href="economics.html">Economics</a>
+          <a href="bitcoin.html">Bitcoin</a>
+          <a href="seymour.html">Seymour</a>
+        </section>
+        <section class="drawer-group drawer-group--compact">
+          <h2>Elsewhere</h2>
+          <a href="mailto:eric.m.armbruster@gmail.com">Email</a>
+          <a href="https://github.com/tenderbrew" target="_blank" rel="noopener">GitHub</a>
+          <a href="https://www.linkedin.com/in/ericmarmbruster/" target="_blank" rel="noopener">LinkedIn</a>
+        </section>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Pull quote banner -->
+  <div class="sy-pullquote-banner">
+    <blockquote class="sy-pullquote">
+      <p>&ldquo;Dogs&rsquo; lives are too short. Their only fault, really.&rdquo; <cite>&mdash; Agnes Sligh Turnbull</cite></p>
+    </blockquote>
+  </div>
+
+  <!-- Page hero / introductory banner section. -->
+  <header class="hero sy-hero">
+    <div class="sy-hero-glow" aria-hidden="true"></div>
+    <div class="container sy-hero-inner">
+      <span class="sy-paw sy-paw--hero-l" aria-hidden="true"></span>
+      <span class="sy-paw sy-paw--hero-r" aria-hidden="true"></span>
+      <span class="sy-paw sy-paw--hero-tl" aria-hidden="true"></span>
+      <span class="sy-paw sy-paw--hero-br" aria-hidden="true"></span>
+
+      <div class="sy-hero-layout">
+        <div class="sy-hero-portrait">
+          <div class="sy-portrait-frame">
+            <img src="images/seymour-memoriam.png" alt="Seymour, a Jack Russell Terrier" width="400" height="400" loading="eager">
+          </div>
+        </div>
+
+        <div class="sy-hero-text">
+          <div class="sy-hero-flourish" aria-hidden="true">
+            <span class="sy-flourish-line"></span>
+            <span class="sy-flourish-diamond"></span>
+            <span class="sy-flourish-line"></span>
+          </div>
+
+          <h1 class="sy-embossed sy-hero-name">Seymour</h1>
+
+          <div class="sy-collar" aria-hidden="true">
+            <span class="sy-collar-tag"></span>
+          </div>
+
+          <p class="sy-hero-years">2010 &ndash; 2025</p>
+
+          <div class="sy-hero-flourish sy-hero-flourish--lower" aria-hidden="true">
+            <span class="sy-flourish-line"></span>
+            <span class="sy-flourish-diamond"></span>
+            <span class="sy-flourish-line"></span>
+          </div>
+
+          <p class="sy-hero-epitaph">A faithful companion. A good boy.</p>
+        </div>
+
+        <div class="sy-album-page sy-tribute" aria-labelledby="tribute-heading">
+          <h2 id="tribute-heading" class="sy-section-heading">Faithful Companion</h2>
+          <div class="sy-bone-divider" aria-hidden="true"></div>
+          <p>We got Seymour from a pet store in Frazier, PA. The salesperson commented during checkout that &ldquo;someone finally bought the crazy one.&rdquo; That about summed him up.</p>
+          <p>A chaotic first year of settling in with a certified lunatic gave way to middle years of compassionate friendship &mdash; a beautiful companion who willingly welcomed each of our children into the household as they arrived. Then came a mellow later life as the family sentinel and a true best friend.</p>
+          <p>The last years were hard, but they were worth it for more time with my best friend. Rest in peace, Seymour. We all miss you and remember you.</p>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main page content. -->
+  <main>
+
+    <!-- Photo gallery: chronological, 2013–2025 -->
+    <section aria-labelledby="gallery-heading" style="position: relative;">
+      <span class="sy-paw sy-paw--gallery-l" aria-hidden="true"></span>
+      <span class="sy-paw sy-paw--gallery-r" aria-hidden="true"></span>
+      <div class="container">
+        <h2 id="gallery-heading" class="sy-embossed sy-gallery-heading">Through the Years</h2>
+        <div class="sy-bone-divider" aria-hidden="true"></div>
+
+        <div class="sy-gallery-grid">
+
+          <div class="sy-gallery-item sy-photo-mount">
+            <img src="images/seymour/seymour-01.jpg" alt="Young Seymour on a blue leash in the grass" loading="lazy">
+            <span class="sy-corner-bl" aria-hidden="true"></span>
+            <span class="sy-corner-br" aria-hidden="true"></span>
+            <div class="sy-photo-caption">
+              <span class="sy-caption-text">First walks</span>
+              <span class="sy-caption-year">2013</span>
+            </div>
+          </div>
+
+          <div class="sy-gallery-item sy-photo-mount">
+            <img src="images/seymour/seymour-02.jpg" alt="Seymour sitting in a car seat with blue collar, tongue out" loading="lazy">
+            <span class="sy-corner-bl" aria-hidden="true"></span>
+            <span class="sy-corner-br" aria-hidden="true"></span>
+            <div class="sy-photo-caption">
+              <span class="sy-caption-text">Ready for the ride</span>
+              <span class="sy-caption-year">2013</span>
+            </div>
+          </div>
+
+          <div class="sy-gallery-item sy-photo-mount">
+            <img src="images/seymour/seymour-03.jpg" alt="Eric holding Seymour next to a cannon at Gettysburg" loading="lazy">
+            <span class="sy-corner-bl" aria-hidden="true"></span>
+            <span class="sy-corner-br" aria-hidden="true"></span>
+            <div class="sy-photo-caption">
+              <span class="sy-caption-text">Field trip to Gettysburg</span>
+              <span class="sy-caption-year">2015</span>
+            </div>
+          </div>
+
+          <div class="sy-gallery-item sy-photo-mount">
+            <img src="images/seymour/seymour-04.jpg" alt="Seymour sitting upright in a wingback chair" loading="lazy">
+            <span class="sy-corner-bl" aria-hidden="true"></span>
+            <span class="sy-corner-br" aria-hidden="true"></span>
+            <div class="sy-photo-caption">
+              <span class="sy-caption-text">King of the chair</span>
+              <span class="sy-caption-year">2015</span>
+            </div>
+          </div>
+
+          <div class="sy-gallery-item sy-photo-mount">
+            <img src="images/seymour/seymour-05.jpg" alt="Seymour wearing a bandana, peeking into a bassinet at a newborn baby" loading="lazy">
+            <span class="sy-corner-bl" aria-hidden="true"></span>
+            <span class="sy-corner-br" aria-hidden="true"></span>
+            <div class="sy-photo-caption">
+              <span class="sy-caption-text">Meeting the new arrival</span>
+              <span class="sy-caption-year">2015</span>
+            </div>
+          </div>
+
+          <div class="sy-gallery-item sy-photo-mount">
+            <img src="images/seymour/seymour-06.jpg" alt="Seymour being held at the park, big smile" loading="lazy">
+            <span class="sy-corner-bl" aria-hidden="true"></span>
+            <span class="sy-corner-br" aria-hidden="true"></span>
+            <div class="sy-photo-caption">
+              <span class="sy-caption-text">Park day</span>
+              <span class="sy-caption-year">2016</span>
+            </div>
+          </div>
+
+          <div class="sy-gallery-item sy-photo-mount">
+            <img src="images/seymour/seymour-07.jpg" alt="Eric holding Seymour indoors" loading="lazy">
+            <span class="sy-corner-bl" aria-hidden="true"></span>
+            <span class="sy-corner-br" aria-hidden="true"></span>
+            <div class="sy-photo-caption">
+              <span class="sy-caption-text">Best friends</span>
+              <span class="sy-caption-year">2016</span>
+            </div>
+          </div>
+
+          <div class="sy-gallery-item sy-photo-mount">
+            <img src="images/seymour/seymour-08.jpg" alt="Seymour standing at a windowsill, looking out at the yard" loading="lazy">
+            <span class="sy-corner-bl" aria-hidden="true"></span>
+            <span class="sy-corner-br" aria-hidden="true"></span>
+            <div class="sy-photo-caption">
+              <span class="sy-caption-text">The lookout</span>
+              <span class="sy-caption-year">2017</span>
+            </div>
+          </div>
+
+          <div class="sy-gallery-item sy-photo-mount">
+            <img src="images/seymour/seymour-09.jpg" alt="Seymour in a shark costume for Halloween" loading="lazy">
+            <span class="sy-corner-bl" aria-hidden="true"></span>
+            <span class="sy-corner-br" aria-hidden="true"></span>
+            <div class="sy-photo-caption">
+              <span class="sy-caption-text">Halloween shark</span>
+              <span class="sy-caption-year">2017</span>
+            </div>
+          </div>
+
+          <div class="sy-gallery-item sy-photo-mount">
+            <img src="images/seymour/seymour-10.jpg" alt="Seymour peeking over the couch cushions behind a smiling toddler" loading="lazy">
+            <span class="sy-corner-bl" aria-hidden="true"></span>
+            <span class="sy-corner-br" aria-hidden="true"></span>
+            <div class="sy-photo-caption">
+              <span class="sy-caption-text">Always nearby</span>
+              <span class="sy-caption-year">2018</span>
+            </div>
+          </div>
+
+          <div class="sy-gallery-item sy-photo-mount">
+            <img src="images/seymour/seymour-11.jpg" alt="Seymour standing alert in tall grass in the backyard" loading="lazy">
+            <span class="sy-corner-bl" aria-hidden="true"></span>
+            <span class="sy-corner-br" aria-hidden="true"></span>
+            <div class="sy-photo-caption">
+              <span class="sy-caption-text">Patrol duty</span>
+              <span class="sy-caption-year">2018</span>
+            </div>
+          </div>
+
+          <div class="sy-gallery-item sy-photo-mount">
+            <img src="images/seymour/seymour-12.jpg" alt="Seymour and a toddler snuggled together in a blanket fort" loading="lazy">
+            <span class="sy-corner-bl" aria-hidden="true"></span>
+            <span class="sy-corner-br" aria-hidden="true"></span>
+            <div class="sy-photo-caption">
+              <span class="sy-caption-text">Fort buddies</span>
+              <span class="sy-caption-year">2019</span>
+            </div>
+          </div>
+
+          <div class="sy-gallery-item sy-photo-mount">
+            <img src="images/seymour/seymour-13.jpg" alt="Eric on the couch with Seymour and a baby" loading="lazy">
+            <span class="sy-corner-bl" aria-hidden="true"></span>
+            <span class="sy-corner-br" aria-hidden="true"></span>
+            <div class="sy-photo-caption">
+              <span class="sy-caption-text">The whole crew</span>
+              <span class="sy-caption-year">2019</span>
+            </div>
+          </div>
+
+          <div class="sy-gallery-item sy-photo-mount">
+            <img src="images/seymour/seymour-14.jpg" alt="Seymour napping on a colorful baby play mat" loading="lazy">
+            <span class="sy-corner-bl" aria-hidden="true"></span>
+            <span class="sy-corner-br" aria-hidden="true"></span>
+            <div class="sy-photo-caption">
+              <span class="sy-caption-text">If it fits, I sits</span>
+              <span class="sy-caption-year">2019</span>
+            </div>
+          </div>
+
+          <div class="sy-gallery-item sy-photo-mount">
+            <img src="images/seymour/seymour-15.jpg" alt="Seymour burrowed between couch pillows with tongue out" loading="lazy">
+            <span class="sy-corner-bl" aria-hidden="true"></span>
+            <span class="sy-corner-br" aria-hidden="true"></span>
+            <div class="sy-photo-caption">
+              <span class="sy-caption-text">Couch fort</span>
+              <span class="sy-caption-year">2019</span>
+            </div>
+          </div>
+
+          <div class="sy-gallery-item sy-photo-mount">
+            <img src="images/seymour/seymour-16.jpg" alt="A little girl and Seymour standing side by side, looking out a window together" loading="lazy">
+            <span class="sy-corner-bl" aria-hidden="true"></span>
+            <span class="sy-corner-br" aria-hidden="true"></span>
+            <div class="sy-photo-caption">
+              <span class="sy-caption-text">Lookout buddies</span>
+              <span class="sy-caption-year">2019</span>
+            </div>
+          </div>
+
+          <div class="sy-gallery-item sy-photo-mount">
+            <img src="images/seymour/seymour-17.jpg" alt="Seymour lounging on a bed in a glamping tent" loading="lazy">
+            <span class="sy-corner-bl" aria-hidden="true"></span>
+            <span class="sy-corner-br" aria-hidden="true"></span>
+            <div class="sy-photo-caption">
+              <span class="sy-caption-text">Glamping</span>
+              <span class="sy-caption-year">2020</span>
+            </div>
+          </div>
+
+          <div class="sy-gallery-item sy-photo-mount">
+            <img src="images/seymour/seymour-18.jpg" alt="Seymour lying on a rug by the front door in a patch of sunlight" loading="lazy">
+            <span class="sy-corner-bl" aria-hidden="true"></span>
+            <span class="sy-corner-br" aria-hidden="true"></span>
+            <div class="sy-photo-caption">
+              <span class="sy-caption-text">Sunspot</span>
+              <span class="sy-caption-year">2020</span>
+            </div>
+          </div>
+
+          <div class="sy-gallery-item sy-photo-mount">
+            <img src="images/seymour/seymour-19.jpg" alt="Close-up of Seymour being petted, looking up at the camera" loading="lazy">
+            <span class="sy-corner-bl" aria-hidden="true"></span>
+            <span class="sy-corner-br" aria-hidden="true"></span>
+            <div class="sy-photo-caption">
+              <span class="sy-caption-text">Those eyes</span>
+              <span class="sy-caption-year">2020</span>
+            </div>
+          </div>
+
+          <div class="sy-gallery-item sy-photo-mount">
+            <img src="images/seymour/seymour-20.jpg" alt="A toddler standing by the couch where Seymour is resting" loading="lazy">
+            <span class="sy-corner-bl" aria-hidden="true"></span>
+            <span class="sy-corner-br" aria-hidden="true"></span>
+            <div class="sy-photo-caption">
+              <span class="sy-caption-text">Sharing the couch</span>
+              <span class="sy-caption-year">2020</span>
+            </div>
+          </div>
+
+          <div class="sy-gallery-item sy-photo-mount">
+            <img src="images/seymour/seymour-21.jpg" alt="Seymour standing at the window, watching the neighborhood on Christmas" loading="lazy">
+            <span class="sy-corner-bl" aria-hidden="true"></span>
+            <span class="sy-corner-br" aria-hidden="true"></span>
+            <div class="sy-photo-caption">
+              <span class="sy-caption-text">Christmas watch</span>
+              <span class="sy-caption-year">2020</span>
+            </div>
+          </div>
+
+          <div class="sy-gallery-item sy-photo-mount">
+            <img src="images/seymour/seymour-22.jpg" alt="Seymour curled up on a chunky knit blanket on a chair" loading="lazy">
+            <span class="sy-corner-bl" aria-hidden="true"></span>
+            <span class="sy-corner-br" aria-hidden="true"></span>
+            <div class="sy-photo-caption">
+              <span class="sy-caption-text">Nest</span>
+              <span class="sy-caption-year">2021</span>
+            </div>
+          </div>
+
+          <div class="sy-gallery-item sy-photo-mount">
+            <img src="images/seymour/seymour-23.jpg" alt="A child in a red wagon being walked alongside Seymour on leash" loading="lazy">
+            <span class="sy-corner-bl" aria-hidden="true"></span>
+            <span class="sy-corner-br" aria-hidden="true"></span>
+            <div class="sy-photo-caption">
+              <span class="sy-caption-text">Walking the crew</span>
+              <span class="sy-caption-year">2021</span>
+            </div>
+          </div>
+
+          <div class="sy-gallery-item sy-photo-mount">
+            <img src="images/seymour/seymour-24.jpg" alt="Beautiful side profile portrait of Seymour" loading="lazy">
+            <span class="sy-corner-bl" aria-hidden="true"></span>
+            <span class="sy-corner-br" aria-hidden="true"></span>
+            <div class="sy-photo-caption">
+              <span class="sy-caption-text">Profile</span>
+              <span class="sy-caption-year">2021</span>
+            </div>
+          </div>
+
+          <div class="sy-gallery-item sy-photo-mount">
+            <img src="images/seymour/seymour-25.jpg" alt="Seymour relaxing on a patio chair on the deck" loading="lazy">
+            <span class="sy-corner-bl" aria-hidden="true"></span>
+            <span class="sy-corner-br" aria-hidden="true"></span>
+            <div class="sy-photo-caption">
+              <span class="sy-caption-text">Deck days</span>
+              <span class="sy-caption-year">2021</span>
+            </div>
+          </div>
+
+          <div class="sy-gallery-item sy-photo-mount">
+            <img src="images/seymour/seymour-26.jpg" alt="Seymour and a child sitting together on an ottoman" loading="lazy">
+            <span class="sy-corner-bl" aria-hidden="true"></span>
+            <span class="sy-corner-br" aria-hidden="true"></span>
+            <div class="sy-photo-caption">
+              <span class="sy-caption-text">Partners in crime</span>
+              <span class="sy-caption-year">2021</span>
+            </div>
+          </div>
+
+          <div class="sy-gallery-item sy-photo-mount">
+            <img src="images/seymour/seymour-27.jpg" alt="Seymour yawning on the couch, looking happy" loading="lazy">
+            <span class="sy-corner-bl" aria-hidden="true"></span>
+            <span class="sy-corner-br" aria-hidden="true"></span>
+            <div class="sy-photo-caption">
+              <span class="sy-caption-text">All smiles</span>
+              <span class="sy-caption-year">2022</span>
+            </div>
+          </div>
+
+          <div class="sy-gallery-item sy-photo-mount">
+            <img src="images/seymour/seymour-28.jpg" alt="Selfie of Eric and Seymour on a hiking trail" loading="lazy">
+            <span class="sy-corner-bl" aria-hidden="true"></span>
+            <span class="sy-corner-br" aria-hidden="true"></span>
+            <div class="sy-photo-caption">
+              <span class="sy-caption-text">Trail partners</span>
+              <span class="sy-caption-year">2023</span>
+            </div>
+          </div>
+
+          <div class="sy-gallery-item sy-photo-mount">
+            <img src="images/seymour/seymour-29.jpg" alt="Seymour standing on the deck, looking out through the railing" loading="lazy">
+            <span class="sy-corner-bl" aria-hidden="true"></span>
+            <span class="sy-corner-br" aria-hidden="true"></span>
+            <div class="sy-photo-caption">
+              <span class="sy-caption-text">Keeping watch</span>
+              <span class="sy-caption-year">2024</span>
+            </div>
+          </div>
+
+          <div class="sy-gallery-item sy-photo-mount">
+            <img src="images/seymour/seymour-30.jpg" alt="Close-up of an older Seymour with gray muzzle" loading="lazy">
+            <span class="sy-corner-bl" aria-hidden="true"></span>
+            <span class="sy-corner-br" aria-hidden="true"></span>
+            <div class="sy-photo-caption">
+              <span class="sy-caption-text">The old man</span>
+              <span class="sy-caption-year">2025</span>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Shared footer. -->
+  <footer>
+    <div class="container sy-footer-inner">
+      <p class="sy-footer-copy">&copy; 2026 Eric Armbruster</p>
+    </div>
+  </footer>
+
+  <!-- Shared drawer controller for desktop/mobile navigation. -->
+  <script src="drawer.js"></script>
+  <script src="ticker.js"></script>
+</body>
+</html>
