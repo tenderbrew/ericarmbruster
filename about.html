@@ -1,17 +1,14 @@
-<!-- File Guide: about.html. Simple profile page using shared layout components and shared navigation. -->
+<!-- File Guide: about.html. Rain-themed personal profile page. -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <!-- Head section: metadata, social tags, fonts, stylesheets, and analytics bootstrapping. -->
-  
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <title>About - Eric Armbruster</title>
 
-  
   <meta name="description" content="Background, work, and interests of Eric Armbruster.">
-  <meta name="theme-color" content="#070503">
+  <meta name="theme-color" content="#0f1923">
   <link rel="canonical" href="https://www.ericarmbruster.com/about.html">
   <meta property="og:title" content="About - Eric Armbruster">
   <meta property="og:description" content="Background, work, and interests of Eric Armbruster.">
@@ -24,25 +21,23 @@
   <meta name="twitter:image" content="https://www.ericarmbruster.com/images/hector-0001.png">
   <link rel="icon" href="images/hector-favicon.png" type="image/png">
 
-  
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Libre+Caslon+Display&family=Libre+Caslon+Text:ital,wght@0,400;0,700;1,400&family=Herr+Von+Muellerhoff&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,400&family=Libre+Caslon+Display&family=Libre+Caslon+Text:ital,wght@0,400;0,700;1,400&family=Herr+Von+Muellerhoff&display=swap" rel="stylesheet">
 
-  
-  <link rel="stylesheet" href="styles.css">
-  <!-- Analytics library: loaded async so it does not block rendering. -->
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="about-styles.css">
+
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-5ZTHJXDR9V"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
     function gtag(){dataLayer.push(arguments);}
     gtag('js', new Date());
-
     gtag('config', 'G-5ZTHJXDR9V');
   </script>
 </head>
 
-<body>
+<body class="about-page">
 
   <!-- Scrolling ticker tape: live market data. -->
   <div class="ticker-tape" aria-hidden="true">
@@ -91,8 +86,6 @@
   </div>
 
   <!-- Shared primary navigation. Drawer behavior is provided by drawer.js. -->
-
-
   <nav class="study-nav" aria-label="Primary">
     <div class="container nav-shell">
       <a href="index.html" class="brand-mark" aria-label="Eric Armbruster home">Eric M. Armbruster</a>
@@ -138,58 +131,101 @@
     </div>
   </nav>
 
-  <!-- Page hero / introductory banner section. -->
-  <header class="hero">
-    <div class="container">
-      <h1>About</h1>
-      <p class="hero-subtitle">Engineer focused on reliable systems, clear tooling, and practical execution.</p>
-    </div>
-  </header>
-  <!-- Main page content. Most route-specific structure lives here. -->
+  <!-- Atmosphere layers (all fixed, behind content) -->
+  <div class="about-moon" aria-hidden="true"></div>
+  <div class="about-clouds" aria-hidden="true">
+    <span class="about-cloud about-cloud--1"></span>
+    <span class="about-cloud about-cloud--2"></span>
+    <span class="about-cloud about-cloud--3"></span>
+  </div>
+  <div class="about-fog" aria-hidden="true"></div>
+  <div class="about-lightning" aria-hidden="true"></div>
+
+  <!-- Distant rooftop silhouette along the bottom -->
+  <div class="about-skyline" aria-hidden="true"></div>
+
+  <!-- Street lanterns flanking the content -->
+  <div class="about-lantern about-lantern--left" aria-hidden="true">
+    <span class="about-lantern-glow"></span>
+  </div>
+  <div class="about-lantern about-lantern--right" aria-hidden="true">
+    <span class="about-lantern-glow"></span>
+  </div>
+
+  <!-- String lights draped across the top -->
+  <div class="about-string-lights" aria-hidden="true">
+    <span class="about-bulb about-bulb--1"></span>
+    <span class="about-bulb about-bulb--2"></span>
+    <span class="about-bulb about-bulb--3"></span>
+    <span class="about-bulb about-bulb--4"></span>
+    <span class="about-bulb about-bulb--5"></span>
+    <span class="about-bulb about-bulb--6"></span>
+    <span class="about-bulb about-bulb--7"></span>
+  </div>
+
+  <!-- Steam wisps rising from below -->
+  <div class="about-steam" aria-hidden="true">
+    <span class="about-wisp about-wisp--1"></span>
+    <span class="about-wisp about-wisp--2"></span>
+    <span class="about-wisp about-wisp--3"></span>
+  </div>
+
+  <!-- Page content -->
   <main>
-    <!-- Background and working philosophy. -->
-    <section>
-      <div class="container">
+    <div class="about-content">
+
+      <!-- Hero -->
+      <header class="about-hero">
+        <h1>Eric Armbruster</h1>
+        <p class="about-tagline">Builder of things. Listener of rain.</p>
+      </header>
+
+      <div class="about-divider" aria-hidden="true"><span class="about-drop"></span></div>
+
+      <!-- Hello -->
+      <section class="about-card">
+        <h2>Hello</h2>
+        <p>Thanks for stopping by. This site is really just a small corner of the internet I built for myself — a place to keep track of the hobbies and interests that keep me curious. If you've found your way here, I hope you find something worth your time.</p>
+      </section>
+
+      <div class="about-divider" aria-hidden="true"><span class="about-drop"></span></div>
+
+      <!-- Background -->
+      <section class="about-card">
         <h2>Background</h2>
-        <p>I am a software engineer focused on backend services, automation, and infrastructure. Most of my growth came from shipping side projects, finding weak points, and hardening them over time.</p>
-        <p>I favor simple architectures with clear failure modes. Fewer moving parts usually leads to faster iteration and stronger reliability.</p>
-      </div>
-    </section>
+        <ul class="about-list">
+          <li>Risk Manager in Finance</li>
+          <li>Master of Finance</li>
+          <li>Bachelor of Science in Economics</li>
+        </ul>
+      </section>
 
-    <!-- Day-to-day engineering focus and approach. -->
-    <section>
-      <div class="container">
-        <h2>What I Do</h2>
-        <p>I build product features and internal tooling that reduce friction for users and teams. My best work sits at the intersection of quality and delivery speed.</p>
-        <p>I prioritize strong interfaces, observable systems, and documentation that helps new contributors become effective quickly.</p>
-      </div>
-    </section>
+      <div class="about-divider" aria-hidden="true"><span class="about-drop"></span></div>
 
-    <!-- Personal interests that connect to the rest of this site. -->
-    <section>
-      <div class="container">
-        <h2>Outside of Work</h2>
-        <p>Outside work, I spend time on games, film, and self-hosting. I run Nintendo Pipeline Club and enjoy building small communities around shared interests.</p>
-        <p>I also read economics because it sharpens how I think about incentives, risk, and long-term tradeoffs.</p>
-      </div>
-    </section>
-  </main>
-  <!-- Shared footer. -->
+      <!-- Get in Touch -->
+      <section class="about-card" style="text-align: center;">
+        <h2>Get in Touch</h2>
+        <p>Always happy to connect.</p>
+        <div class="about-contact-links">
+          <a href="mailto:eric.m.armbruster@gmail.com">email</a>
+          <a href="https://github.com/tenderbrew" target="_blank" rel="noopener">github</a>
+          <a href="https://www.linkedin.com/in/ericmarmbruster/" target="_blank" rel="noopener">linkedin</a>
+        </div>
+      </section>
+
+    </div>
+
+    <!-- Wet ground / puddle reflection at the bottom -->
+    <div class="about-puddle" aria-hidden="true"></div>
+  </main>
+
   <footer>
     <div class="container">
       &copy; 2026 Eric Armbruster
     </div>
-  </footer>
-  <!-- Shared drawer controller for desktop/mobile navigation. -->
-  <script src="drawer.js"></script>
+  </footer>
 
+  <script src="drawer.js"></script>
   <script src="ticker.js"></script>
 </body>
 </html>
-
-
-
-
-
-
-
