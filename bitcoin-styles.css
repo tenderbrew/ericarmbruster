@@ -47,11 +47,26 @@
 .btc-rail-label {
   margin: 0;
   color: var(--btc-orange);
-  font-family: "IBM Plex Sans Condensed", sans-serif;
-  font-size: 0.82rem;
+  font-family: "IBM Plex Mono", monospace;
+  font-size: 1.1rem;
   font-weight: 700;
-  letter-spacing: 1.5px;
+  letter-spacing: 2px;
   text-transform: uppercase;
+  text-shadow: 0 0 8px rgba(247, 147, 26, 0.4);
+}
+
+.btc-prompt {
+  color: var(--btc-accent-purple);
+  margin-right: 0.1rem;
+}
+
+.btc-cursor {
+  color: var(--btc-orange);
+  animation: blink 1s step-end infinite;
+}
+
+@keyframes blink {
+  50% { opacity: 0; }
 }
 
 .btc-rail-links {
@@ -69,6 +84,8 @@
   letter-spacing: 0.7px;
   text-transform: uppercase;
   padding: 0.3rem 0.55rem;
+  min-width: 5.5rem;
+  text-align: center;
   border: 1px solid var(--btc-panel-edge);
   background: rgba(100, 120, 200, 0.12);
   border-radius: 3px;
@@ -316,38 +333,39 @@
   margin: 0;
   padding: 0;
   list-style: none;
-  display: grid;
-  gap: 0.42rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.22rem;
 }
 
 .btc-block-list li,
 .btc-news-list li {
-  padding: 0.48rem 0.56rem;
-  border: 1px solid rgba(100, 120, 200, 0.08);
-  background: rgba(11, 14, 26, 0.5);
+  padding: 0;
 }
 
 .btc-block-list a,
 .btc-news-list a {
+  display: block;
   color: var(--btc-accent-blue);
   text-decoration: none;
-  font-family: "IBM Plex Sans Condensed", sans-serif;
-  font-size: 0.94rem;
-  line-height: 1.2;
+  font-size: 0.8rem;
+  line-height: 1.3;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .btc-block-list a:hover,
 .btc-news-list a:hover {
   color: #9f8bff;
-  text-decoration: underline;
 }
 
 .btc-block-list span,
 .btc-news-list span {
   display: block;
-  margin-top: 0.26rem;
   color: var(--btc-muted);
-  font-size: 0.72rem;
+  font-size: 0.56rem;
+  letter-spacing: 0.4px;
 }
 
 .btc-block-panel {
@@ -362,7 +380,7 @@
 }
 
 @media (min-width: 1181px) {
-  .btc-news-list li:nth-child(n + 5) {
+  .btc-news-list li:nth-child(n + 11) {
     display: none;
   }
 }
@@ -376,26 +394,16 @@
   margin-top: 0.56rem;
   display: flex;
   flex-direction: column;
-  gap: 0.54rem;
-}
-
-.btc-reading-columns section {
-  display: grid;
-  grid-template-columns: minmax(8.2rem, 10rem) minmax(0, 1fr);
-  align-items: start;
-  gap: 0.58rem;
-  padding: 0.48rem 0.54rem;
-  border: 1px solid rgba(100, 120, 200, 0.08);
-  background: rgba(11, 14, 26, 0.4);
+  gap: 0.62rem;
 }
 
 .btc-reading-columns h3 {
-  margin: 0;
+  margin: 0 0 0.3rem;
   color: var(--btc-orange);
-  font-family: "IBM Plex Sans Condensed", sans-serif;
-  font-size: 0.8rem;
+  font-family: "IBM Plex Mono", monospace;
+  font-size: 0.62rem;
   font-weight: 700;
-  letter-spacing: 0.6px;
+  letter-spacing: 1px;
   text-transform: uppercase;
 }
 
@@ -404,34 +412,27 @@
   padding: 0;
   list-style: none;
   display: flex;
-  flex-wrap: wrap;
-  gap: 0.3rem 0.36rem;
+  flex-direction: column;
+  gap: 0.22rem;
 }
 
 .btc-reading-columns li {
   margin: 0;
-  color: var(--btc-muted);
-  line-height: 1.2;
 }
 
 .btc-reading-columns a {
-  display: inline-flex;
-  align-items: center;
-  min-height: 1.36rem;
-  padding: 0.16rem 0.36rem;
-  border: 1px solid rgba(100, 120, 200, 0.12);
-  background: rgba(11, 14, 26, 0.5);
+  display: block;
   color: var(--btc-accent-blue);
-  font-size: 0.88rem;
-  line-height: 1.2;
+  font-size: 0.8rem;
+  line-height: 1.3;
   text-decoration: none;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .btc-reading-columns a:hover {
   color: #9f8bff;
-  border-color: rgba(100, 120, 200, 0.25);
-  background: rgba(20, 24, 46, 0.7);
-  text-decoration: none;
 }
 
 .bitcoin-page footer {
@@ -536,6 +537,6 @@
 
   .btc-block-list a,
   .btc-news-list a {
-    font-size: 0.92rem;
+    font-size: 0.78rem;
   }
 }
