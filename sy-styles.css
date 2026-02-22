@@ -951,15 +951,15 @@
 }
 
 .sy-gallery-item .sy-caption-text {
-  font-family: var(--sy-font-script);
-  font-size: 1.2rem;
+  font-family: var(--sy-font-body);
+  font-size: 0.8rem;
   color: var(--sy-sepia);
-  line-height: 1.2;
+  line-height: 1.3;
 }
 
 .sy-gallery-item .sy-caption-year {
-  font-family: var(--sy-font-script);
-  font-size: 1.1rem;
+  font-family: var(--sy-font-body);
+  font-size: 0.75rem;
   color: var(--sy-warm-gray);
 }
 
@@ -1087,6 +1087,30 @@
   opacity: 1;
 }
 
+.sy-lightbox-prev,
+.sy-lightbox-next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: none;
+  border: none;
+  color: var(--sy-cream-dark);
+  font-size: 3rem;
+  cursor: pointer;
+  opacity: 0.5;
+  transition: opacity 0.2s;
+  padding: 1rem;
+  z-index: 2;
+}
+
+.sy-lightbox-prev { left: 1rem; }
+.sy-lightbox-next { right: 1rem; }
+
+.sy-lightbox-prev:hover,
+.sy-lightbox-next:hover {
+  opacity: 1;
+}
+
 .sy-lightbox-img {
   max-width: 90vw;
   max-height: 80vh;
@@ -1097,8 +1121,8 @@
 
 .sy-lightbox-caption {
   margin-top: 1rem;
-  font-family: var(--sy-font-script);
-  font-size: 1.4rem;
+  font-family: var(--sy-font-body);
+  font-size: 1rem;
   color: var(--sy-gilt);
   text-shadow: 0 1px 4px rgba(0, 0, 0, 0.5);
 }
@@ -1129,8 +1153,8 @@
 }
 
 .sy-caption-year {
-  font-family: var(--sy-font-script);
-  font-size: 1rem;
+  font-family: var(--sy-font-body);
+  font-size: 0.75rem;
   color: var(--sy-gilt-bright);
 }
 

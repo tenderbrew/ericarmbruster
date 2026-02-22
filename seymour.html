@@ -514,6 +514,8 @@
   <!-- Lightbox overlay for gallery photos. -->
   <div class="sy-lightbox" id="sy-lightbox" aria-hidden="true">
     <button class="sy-lightbox-close" aria-label="Close">&times;</button>
+    <button class="sy-lightbox-prev" aria-label="Previous photo">&#8249;</button>
+    <button class="sy-lightbox-next" aria-label="Next photo">&#8250;</button>
     <img class="sy-lightbox-img" id="sy-lightbox-img" src="" alt="">
     <div class="sy-lightbox-caption" id="sy-lightbox-caption"></div>
   </div>
@@ -527,16 +529,34 @@
       var lbImg = document.getElementById('sy-lightbox-img');
       var lbCaption = document.getElementById('sy-lightbox-caption');
       var closeBtn = lightbox.querySelector('.sy-lightbox-close');
+      var prevBtn = lightbox.querySelector('.sy-lightbox-prev');
+      var nextBtn = lightbox.querySelector('.sy-lightbox-next');
+      var galleryItems = Array.from(document.querySelectorAll('.sy-gallery-item'));
+      var currentIndex = 0;
 
-      document.querySelectorAll('.sy-gallery-item img').forEach(function (img) {
+      function showPhoto(index) {
+        currentIndex = index;
+        var item = galleryItems[index];
+        var img = item.querySelector('img');
+        lbImg.src = img.src;
+        lbImg.alt = img.alt;
+        var text = item.querySelector('.sy-caption-text');
+        var year = item.querySelector('.sy-caption-year');
+        lbCaption.textContent = (text ? text.textContent : '') + (year ? ' — ' + year.textContent : '');
+      }
+
+      function navigate(delta) {
+        var next = currentIndex + delta;
+        if (next < 0) next = galleryItems.length - 1;
+        if (next >= galleryItems.length) next = 0;
+        showPhoto(next);
+      }
+
+      galleryItems.forEach(function (item, i) {
+        var img = item.querySelector('img');
         img.style.cursor = 'pointer';
         img.addEventListener('click', function () {
-          lbImg.src = img.src;
-          lbImg.alt = img.alt;
-          var item = img.closest('.sy-gallery-item');
-          var text = item.querySelector('.sy-caption-text');
-          var year = item.querySelector('.sy-caption-year');
-          lbCaption.textContent = (text ? text.textContent : '') + (year ? ' — ' + year.textContent : '');
+          showPhoto(i);
           lightbox.setAttribute('aria-hidden', 'false');
           lightbox.classList.add('sy-lightbox--open');
           document.body.style.overflow = 'hidden';
@@ -550,11 +570,16 @@
       }
 
       closeBtn.addEventListener('click', close);
+      prevBtn.addEventListener('click', function () { navigate(-1); });
+      nextBtn.addEventListener('click', function () { navigate(1); });
       lightbox.addEventListener('click', function (e) {
         if (e.target === lightbox) close();
       });
       document.addEventListener('keydown', function (e) {
-        if (e.key === 'Escape' && lightbox.classList.contains('sy-lightbox--open')) close();
+        if (!lightbox.classList.contains('sy-lightbox--open')) return;
+        if (e.key === 'Escape') close();
+        if (e.key === 'ArrowLeft') navigate(-1);
+        if (e.key === 'ArrowRight') navigate(1);
       });
     })();
   </script>
