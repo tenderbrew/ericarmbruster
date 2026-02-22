@@ -7,7 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Bitcoin - Eric Armbruster</title>
   <meta name="description" content="A hand-crafted bitcoin room with live price data, performance timeline, recent blocks, and curated reading.">
-  <meta name="theme-color" content="#21140f">
+  <meta name="theme-color" content="#0b0e1a">
   <link rel="canonical" href="https://www.ericarmbruster.com/bitcoin.html">
   <meta property="og:title" content="Bitcoin - Eric Armbruster">
   <meta property="og:description" content="A hand-crafted bitcoin room with live price data, performance timeline, recent blocks, and curated reading.">
@@ -21,7 +21,7 @@
   <link rel="icon" href="images/hector-favicon.png" type="image/png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Libre+Caslon+Display&family=Herr+Von+Muellerhoff&family=Cinzel:wght@500;700&family=IM+Fell+English+SC&family=Libre+Caslon+Text:ital,wght@0,400;0,700;1,400&family=IBM+Plex+Sans+Condensed:wght@400;500;700&family=Special+Elite&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Libre+Caslon+Display&family=Herr+Von+Muellerhoff&family=Libre+Caslon+Text:ital,wght@0,400;0,700;1,400&family=IBM+Plex+Sans+Condensed:wght@400;500;700&family=IBM+Plex+Mono:wght@400;500;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
   <link rel="stylesheet" href="bitcoin-styles.css">
   <!-- Analytics library: loaded async so it does not block rendering. -->
@@ -127,36 +127,20 @@
     </div>
   </nav>
 
-  <!-- Brass status rail + links. -->
-  <header class="btc-rail" aria-labelledby="btc-page-title">
-    <div class="container btc-rail-inner">
-      <p class="btc-rail-label">Bitcoin Operations Desk</p>
-      <div class="btc-rail-links">
-        <a href="https://bitcoin.org/bitcoin.pdf" target="_blank" rel="noopener">Whitepaper</a>
-        <a href="https://mempool.space/" target="_blank" rel="noopener">Mempool</a>
-        <a href="https://bitcoincore.org/en/download/" target="_blank" rel="noopener">Bitcoin Core</a>
-      </div>
-    </div>
-  </header>
-
   <!-- Asymmetrical control-board layout unique to the bitcoin room. -->
   <main class="btc-desk">
     <div class="container btc-desk-grid">
-      <article class="btc-codex" aria-label="Bitcoin codex cover">
-        <div class="btc-codex-frame">
-          <div class="btc-codex-core">
-            <p class="btc-kicker">Distributed Ledger</p>
-            <h1 id="btc-page-title">Bitcoin Room</h1>
-            <p class="btc-symbol" aria-hidden="true">&#8383;</p>
-            <p class="btc-subtitle">Hand-built dashboard for market action, chain activity, and foundational reading.</p>
-            <div class="btc-hero-links">
-              <a href="https://bitcoin.org/bitcoin.pdf" target="_blank" rel="noopener">Read Whitepaper</a>
-              <a href="https://mempool.space/" target="_blank" rel="noopener">Open Mempool</a>
-            </div>
+      <!-- Brass status rail + links. -->
+      <header class="btc-rail" aria-labelledby="btc-page-title">
+        <div class="btc-rail-inner">
+          <p class="btc-rail-label">Bitcoin Operations Desk</p>
+          <div class="btc-rail-links">
+            <a href="https://bitcoin.org/bitcoin.pdf" target="_blank" rel="noopener">Whitepaper</a>
+            <a href="https://mempool.space/" target="_blank" rel="noopener">Mempool</a>
+            <a href="https://bitcoincore.org/en/download/" target="_blank" rel="noopener">Bitcoin Core</a>
           </div>
         </div>
-      </article>
-
+      </header>
       <aside class="btc-panel btc-price-panel" aria-labelledby="btc-price-title">
         <div class="btc-panel-head">
           <h2 id="btc-price-title">Price Tracker</h2>
@@ -196,12 +180,12 @@
           <svg id="btc-chart-svg" class="btc-chart-svg" viewBox="0 0 720 280" role="img" aria-label="Bitcoin 90 day price chart">
             <defs>
               <linearGradient id="btc-area-grad" x1="0" x2="0" y1="0" y2="1">
-                <stop offset="0%" stop-color="rgba(255, 195, 120, 0.56)"></stop>
-                <stop offset="100%" stop-color="rgba(255, 195, 120, 0.04)"></stop>
+                <stop offset="0%" stop-color="rgba(98, 37, 178, 0.45)"></stop>
+                <stop offset="100%" stop-color="rgba(98, 37, 178, 0.03)"></stop>
               </linearGradient>
             </defs>
             <path id="btc-chart-area" fill="url(#btc-area-grad)" d=""></path>
-            <path id="btc-chart-line" fill="none" stroke="#ffd28e" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" d=""></path>
+            <path id="btc-chart-line" fill="none" stroke="#9339f4" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" d=""></path>
           </svg>
         </div>
 
@@ -226,6 +210,16 @@
         <p class="btc-note">Sources: <a href="https://api.coinbase.com/" target="_blank" rel="noopener">Coinbase</a>, <a href="https://www.coingecko.com/en/api" target="_blank" rel="noopener">CoinGecko</a></p>
       </article>
 
+      <div class="btc-desk-bottom">
+      <article class="btc-panel btc-news-panel" aria-labelledby="btc-news-title">
+        <div class="btc-panel-head">
+          <h2 id="btc-news-title">Bitcoin News Feed</h2>
+          <p id="btc-news-status" class="btc-status" role="status">Loading headlines...</p>
+        </div>
+        <ul id="btc-news-list" class="btc-news-list"></ul>
+        <p class="btc-note">Source: <a href="https://www.coindesk.com/" target="_blank" rel="noopener">CoinDesk</a></p>
+      </article>
+
       <article class="btc-panel btc-block-panel" aria-labelledby="btc-block-title">
         <div class="btc-panel-head">
           <h2 id="btc-block-title">Recent Blocks</h2>
@@ -236,46 +230,38 @@
         <p class="btc-note">Source: <a href="https://mempool.space/api" target="_blank" rel="noopener">mempool.space API</a></p>
       </article>
 
-      <article class="btc-panel btc-news-panel" aria-labelledby="btc-news-title">
-        <div class="btc-panel-head">
-          <h2 id="btc-news-title">Bitcoin News Feed</h2>
-          <p id="btc-news-status" class="btc-status" role="status">Loading headlines...</p>
-        </div>
-        <ul id="btc-news-list" class="btc-news-list"></ul>
-        <p class="btc-note">Source: <a href="https://www.cryptocompare.com/" target="_blank" rel="noopener">CryptoCompare</a></p>
-      </article>
-
       <article class="btc-panel btc-reading-panel" aria-labelledby="btc-reading-title">
         <h2 id="btc-reading-title">Recommended Reading</h2>
         <div class="btc-reading-columns">
           <section>
-            <h3>Foundations</h3>
+            <h3>Educational</h3>
             <ul>
               <li><a href="https://bitcoin.org/bitcoin.pdf" target="_blank" rel="noopener">Bitcoin: A Peer-to-Peer Electronic Cash System</a></li>
-              <li><a href="https://www.lopp.net/bitcoin-information/technical-resources.html" target="_blank" rel="noopener">Jameson Lopp's Technical Resource List</a></li>
+              <li><a href="https://saifedean.com/thebitcoinstandard/" target="_blank" rel="noopener">The Bitcoin Standard &mdash; Saifedean Ammous</a></li>
+              <li><a href="https://www.amazon.com/Layered-Money-Everything-Between-Central/dp/1736110527" target="_blank" rel="noopener">Layered Money &mdash; Nik Bhatia</a></li>
+            </ul>
+          </section>
+
+          <section>
+            <h3>Technical</h3>
+            <ul>
+              <li><a href="https://github.com/bitcoinbook/bitcoinbook" target="_blank" rel="noopener">Mastering Bitcoin &mdash; Andreas Antonopoulos</a></li>
+              <li><a href="https://github.com/jimmysong/programmingbitcoin" target="_blank" rel="noopener">Programming Bitcoin &mdash; Jimmy Song</a></li>
               <li><a href="https://learnmeabitcoin.com/" target="_blank" rel="noopener">Learn Me A Bitcoin</a></li>
             </ul>
           </section>
 
           <section>
-            <h3>Books</h3>
+            <h3>Culture &amp; History</h3>
             <ul>
-              <li><a href="https://www.amazon.com/Bitcoin-Standard-Decentralized-Alternative-Central/dp/1119473861" target="_blank" rel="noopener">The Bitcoin Standard</a></li>
-              <li><a href="https://github.com/bitcoinbook/bitcoinbook" target="_blank" rel="noopener">Mastering Bitcoin (open edition)</a></li>
-              <li><a href="https://www.amazon.com/Layered-Money-Everything-Between-Central/dp/1736110527" target="_blank" rel="noopener">Layered Money</a></li>
-            </ul>
-          </section>
-
-          <section>
-            <h3>Practice</h3>
-            <ul>
-              <li><a href="https://bitcoinops.org/" target="_blank" rel="noopener">Bitcoin Optech Newsletter</a></li>
-              <li><a href="https://www.mempool.space/" target="_blank" rel="noopener">Watch the mempool in real time</a></li>
-              <li><a href="https://bitcoindevlist.com/" target="_blank" rel="noopener">Bitcoin Developer Mailing List archive</a></li>
+              <li><a href="https://www.amazon.com/Blocksize-War-controls-Bitcoins-protocol/dp/B08YQMC2WM" target="_blank" rel="noopener">The Blocksize War &mdash; Jonathan Bier</a></li>
+              <li><a href="https://www.amazon.com/Digital-Gold-Bitcoin-Millionaires-Reinvent/dp/006236250X" target="_blank" rel="noopener">Digital Gold &mdash; Nathaniel Popper</a></li>
+              <li><a href="https://www.amazon.com/Book-Satoshi-Collected-Writings-Nakamoto/dp/0996061312" target="_blank" rel="noopener">The Book of Satoshi &mdash; Phil Champagne</a></li>
             </ul>
           </section>
         </div>
       </article>
+    </div>
     </div>
   </main>
 
@@ -315,7 +301,7 @@
         spot: 'https://api.coinbase.com/v2/prices/BTC-USD/spot',
         simple: 'https://api.coingecko.com/api/v3/simple/price?ids=bitcoin&vs_currencies=usd&include_24hr_change=true',
         history: 'https://api.coingecko.com/api/v3/coins/bitcoin/market_chart?vs_currency=usd&days=90&interval=daily',
-        news: 'https://min-api.cryptocompare.com/data/v2/news/?lang=EN&categories=BTC',
+        news: 'https://api.rss2json.com/v1/api.json?rss_url=https%3A%2F%2Fwww.coindesk.com%2Farc%2Foutboundfeeds%2Frss%2F',
         blocks: 'https://mempool.space/api/blocks'
       };
 
@@ -497,7 +483,7 @@
           return;
         }
 
-        blocks.slice(0, 10).forEach(function (block) {
+        blocks.slice(0, 6).forEach(function (block) {
           var li = document.createElement('li');
 
           var link = document.createElement('a');
@@ -579,17 +565,16 @@
 
         try {
           var payload = await fetchJsonWithTimeout(endpoints.news, 9000);
-          if (!payload || !Array.isArray(payload.Data)) {
+          if (!payload || payload.status !== 'ok' || !Array.isArray(payload.items)) {
             throw new Error('Invalid news payload');
           }
 
-          var items = payload.Data.map(function (entry) {
-            var source = (entry.source_info && entry.source_info.name) || entry.source || 'News source';
+          var items = payload.items.map(function (entry) {
             return {
               title: entry.title,
-              url: entry.url,
-              source: source,
-              publishedOn: entry.published_on
+              url: entry.link,
+              source: 'CoinDesk',
+              publishedOn: Math.floor(new Date(entry.pubDate).getTime() / 1000)
             };
           });
 
