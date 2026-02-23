@@ -383,7 +383,7 @@ footer .container {
 
 /* Primary nav and drawer shell shared across all routes. */
 .study-nav {
-  position: static;
+  position: relative;
   z-index: 600;
   overflow: visible;
   padding: 0.88rem 0 0.52rem;
