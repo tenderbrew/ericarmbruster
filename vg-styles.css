@@ -28,6 +28,14 @@
   --vg-wood-mid: #4a2d18;
   --vg-wood-dark: #2e1a0e;
 
+  --vg-steam-dark: #171a21;
+  --vg-steam-bg: #1b2838;
+  --vg-steam-content: #1e2e3e;
+  --vg-steam-blue: #66c0f4;
+  --vg-steam-text: #c7d5e0;
+  --vg-steam-muted: #8f98a0;
+  --vg-steam-green: #5c7e10;
+
   --vg-font-pixel: "Press Start 2P", "Silkscreen", monospace;
   --vg-font-mono: "Share Tech Mono", "Courier New", monospace;
   --vg-font-pixel-sm: "Silkscreen", "Share Tech Mono", monospace;
@@ -1613,153 +1621,132 @@
 }
 
 
-.vg-monitor {
+/* ========================================================
+   Steam Window (Steam Library section)
+   ======================================================== */
+
+.vg-steam-window {
   position: relative;
-  background:
-    linear-gradient(180deg, #d8d4c8, #cac6ba 30%, #bab6aa 70%, #b0ac9e 100%);
-  padding: 0.6rem 1rem 0;
+  background: var(--vg-steam-bg);
+  border-radius: 6px;
+  overflow: hidden;
   box-shadow:
-    inset 0 0 0 1px rgba(0, 0, 0, 0.1),
-    inset 0 2px 0 rgba(255, 255, 255, 0.25),
-    inset 0 -1px 0 rgba(0, 0, 0, 0.12),
-    0 16px 32px rgba(0, 0, 0, 0.55);
+    0 8px 32px rgba(0, 0, 0, 0.5),
+    0 2px 8px rgba(0, 0, 0, 0.3);
 }
 
-.vg-monitor-bezel {
+.vg-steam-titlebar {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 0.4rem 0.3rem;
+  padding: 0.5rem 0.75rem;
+  background: var(--vg-steam-dark);
 }
 
-.vg-monitor-label {
-  font-family: var(--vg-font-pixel);
-  font-size: 0.72rem;
-  letter-spacing: 2px;
+.vg-steam-titlebar-label {
+  font-family: "IBM Plex Sans Condensed", "Trebuchet MS", sans-serif;
+  font-size: 0.82rem;
+  font-weight: 700;
+  letter-spacing: 1.5px;
   text-transform: uppercase;
-  color: #5a564e;
-  text-shadow: 0 1px 0 rgba(255, 255, 255, 0.25);
+  color: var(--vg-steam-text);
 }
 
-.vg-monitor-led {
-  width: 8px;
-  height: 8px;
-  border-radius: 50% !important;
-  background: radial-gradient(circle at 40% 35%, #44ccff, #1188aa 60%, #006688);
-  box-shadow:
-    0 0 4px rgba(0, 200, 255, 0.5),
-    0 0 10px rgba(0, 200, 255, 0.25),
-    inset 0 0 2px rgba(0, 0, 0, 0.2);
+.vg-steam-titlebar-dots {
+  display: flex;
+  gap: 6px;
 }
 
-.vg-monitor-screen {
-  padding: 0.5rem;
-  background: linear-gradient(145deg, rgba(12, 14, 22, 0.98), rgba(3, 4, 8, 0.98));
-  box-shadow:
-    inset 0 0 0 1px rgba(70, 90, 110, 0.2),
-    inset 0 0 0 2px rgba(5, 6, 10, 0.85),
-    inset 0 10px 14px rgba(0, 0, 0, 0.35);
-}
-
-.vg-monitor-screen-surface {
+.vg-steam-titlebar-dots::before,
+.vg-steam-titlebar-dots::after,
+.vg-steam-titlebar-dots {
   position: relative;
-  min-height: 300px;
+}
+
+.vg-steam-titlebar-dots::before {
+  content: "";
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: #ff5f57;
+  box-shadow: 16px 0 0 #febc2e, 32px 0 0 #28c840;
+}
+
+.vg-steam-navbar {
+  display: flex;
+  gap: 0;
+  padding: 0 0.75rem;
+  background: var(--vg-steam-dark);
+  border-bottom: 1px solid rgba(102, 192, 244, 0.15);
+}
+
+.vg-steam-nav-tab {
+  padding: 0.42rem 0.8rem;
+  font-family: "IBM Plex Sans Condensed", sans-serif;
+  font-size: 0.7rem;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  color: var(--vg-steam-muted);
+  cursor: default;
+  border-bottom: 2px solid transparent;
+  transition: color 0.15s ease;
+}
+
+.vg-steam-nav-tab.is-active {
+  color: var(--vg-steam-blue);
+  border-bottom-color: var(--vg-steam-blue);
+}
+
+.vg-steam-content {
   padding: 1.2rem 1rem;
-  background:
-    radial-gradient(circle at 50% 42%, rgba(40, 120, 160, 0.12), rgba(10, 25, 40, 0.1) 44%, rgba(4, 8, 14, 0.98) 100%),
-    linear-gradient(180deg, rgba(8, 14, 22, 0.94), rgba(3, 6, 12, 0.98));
-  box-shadow:
-    inset 0 0 0 1px rgba(60, 140, 180, 0.12),
-    inset 0 0 28px rgba(0, 0, 0, 0.5);
-  overflow: hidden;
+  background: var(--vg-steam-content);
 }
-
-
-.vg-monitor-screen-surface::before {
-  content: "";
-  position: absolute;
-  inset: 0;
-  pointer-events: none;
-  z-index: 2;
-  background:
-    linear-gradient(180deg, rgba(0, 200, 255, 0.06), transparent 24%),
-    repeating-linear-gradient(
-      0deg,
-      rgba(0, 180, 220, 0.06) 0,
-      rgba(0, 180, 220, 0.06) 1px,
-      transparent 1px,
-      transparent 3px
-    ),
-    linear-gradient(90deg, rgba(4, 8, 14, 0.3), transparent 16%, transparent 84%, rgba(4, 8, 14, 0.3));
-}
-
-
-.vg-monitor-screen-surface::after {
-  content: "";
-  position: absolute;
-  inset: 0;
-  pointer-events: none;
-  z-index: 3;
-  background:
-    radial-gradient(circle at 22% 14%, rgba(180, 230, 255, 0.08), transparent 28%),
-    linear-gradient(180deg, transparent 72%, rgba(2, 4, 8, 0.4) 100%);
-}
-
 
 .vg-steam-stats {
-  position: relative;
-  z-index: 4;
   display: flex;
   flex-wrap: wrap;
   gap: 0.6rem;
   justify-content: center;
   margin-bottom: 1rem;
   padding-bottom: 0.8rem;
-  border-bottom: 1px solid rgba(0, 255, 255, 0.1);
+  border-bottom: 1px solid rgba(102, 192, 244, 0.12);
 }
 
 .vg-steam-stats span {
-  font-family: var(--vg-font-pixel-sm);
-  font-size: 0.56rem;
-  color: var(--vg-cyan);
-  text-shadow: 0 0 4px var(--vg-cyan-glow);
+  font-family: "IBM Plex Mono", monospace;
+  font-size: 0.62rem;
+  color: var(--vg-steam-blue);
   letter-spacing: 0.5px;
   opacity: 0.85;
 }
 
 .vg-steam-updated {
-  position: relative;
-  z-index: 4;
   margin: 0 0 1rem;
   text-align: center;
-  font-family: var(--vg-font-pixel-sm);
-  font-size: 0.5rem;
-  color: rgba(140, 230, 255, 0.72);
-  text-shadow: 0 0 3px rgba(0, 200, 255, 0.2);
+  font-family: "IBM Plex Mono", monospace;
+  font-size: 0.56rem;
+  color: var(--vg-steam-muted);
   letter-spacing: 0.45px;
 }
 
-
 .vg-steam-columns {
-  position: relative;
-  z-index: 4;
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 1.2rem;
 }
 
 .vg-steam-heading {
-  font-family: var(--vg-font-pixel);
-  font-size: 0.52rem;
-  color: var(--vg-cyan);
-  letter-spacing: 1.2px;
+  font-family: "IBM Plex Sans Condensed", sans-serif;
+  font-size: 0.72rem;
+  font-weight: 600;
+  color: var(--vg-steam-blue);
+  letter-spacing: 0.8px;
   text-transform: uppercase;
-  text-shadow: 0 0 6px var(--vg-cyan-glow);
   margin-bottom: 0.6rem;
   padding-bottom: 0.4rem;
-  border-bottom: 1px solid rgba(0, 255, 255, 0.15);
+  border-bottom: 1px solid rgba(102, 192, 244, 0.15);
 }
-
 
 .vg-steam-list {
   list-style: none;
@@ -1772,12 +1759,11 @@
   justify-content: space-between;
   align-items: baseline;
   gap: 0.4rem;
-  padding: 0.28rem 0;
-  border-bottom: 1px solid rgba(0, 255, 255, 0.06);
-  font-family: var(--vg-font-mono);
-  font-size: 0.72rem;
-  color: var(--vg-cyan);
-  text-shadow: 0 0 3px var(--vg-cyan-glow);
+  padding: 0.32rem 0;
+  border-bottom: 1px solid rgba(42, 71, 94, 0.5);
+  font-family: "IBM Plex Sans Condensed", sans-serif;
+  font-size: 0.78rem;
+  color: var(--vg-steam-text);
 }
 
 .vg-steam-list li:last-child {
@@ -1793,10 +1779,9 @@
 }
 
 .vg-steam-hours {
-  font-family: var(--vg-font-pixel-sm);
-  font-size: 0.5rem;
-  color: rgba(140, 230, 255, 0.7);
-  text-shadow: 0 0 3px rgba(0, 200, 255, 0.2);
+  font-family: "IBM Plex Mono", monospace;
+  font-size: 0.56rem;
+  color: var(--vg-steam-muted);
   white-space: nowrap;
   flex-shrink: 0;
 }
@@ -1811,67 +1796,270 @@
 
 .vg-steam-list--ranked li::before {
   content: counter(steamrank, decimal-leading-zero);
-  font-family: var(--vg-font-pixel-sm);
+  font-family: "IBM Plex Mono", monospace;
   font-size: 0.56rem;
-  opacity: 0.45;
+  color: var(--vg-steam-muted);
+  opacity: 0.6;
   min-width: 2rem;
   flex-shrink: 0;
 }
 
 .vg-steam-loading {
-  font-family: var(--vg-font-pixel-sm);
-  font-size: 0.56rem;
-  color: rgba(0, 255, 255, 0.4);
+  font-family: "IBM Plex Mono", monospace;
+  font-size: 0.62rem;
+  color: var(--vg-steam-muted);
   text-align: center;
   padding: 1rem 0;
 }
 
-
-.vg-monitor-controls {
+.vg-steam-footer {
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 0.8rem 0.6rem;
+  padding: 0.7rem 0.6rem;
+  background: var(--vg-steam-dark);
 }
 
-.vg-monitor-btn {
+.vg-steam-btn {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  padding: 0.5rem 1.4rem;
-  border-radius: 21px !important;
+  padding: 0.44rem 1.2rem;
+  border-radius: 3px;
   border: none;
-  background:
-    radial-gradient(circle at 45% 40%, #ff5544, #cc2200 60%, #880000);
-  color: #fff;
-  font-family: var(--vg-font-pixel);
-  font-size: 0.44rem;
-  letter-spacing: 1px;
+  background: linear-gradient(180deg, #6fa720, var(--vg-steam-green));
+  color: #d2efa9;
+  font-family: "IBM Plex Sans Condensed", sans-serif;
+  font-size: 0.72rem;
+  font-weight: 600;
+  letter-spacing: 0.5px;
   text-transform: uppercase;
   text-decoration: none;
   cursor: pointer;
-  box-shadow:
-    inset 0 0 0 2px rgba(255, 100, 80, 0.3),
-    0 0 8px var(--vg-red-glow),
-    0 0 20px var(--vg-red-glow);
-  animation: vg-pulse-glow 2s ease-in-out infinite;
-  transition: transform 0.15s ease;
+  transition: background 0.15s ease, color 0.15s ease;
 }
 
-.vg-monitor-btn:hover {
-  transform: scale(1.05);
-  color: #fff;
+.vg-steam-btn:hover {
+  background: linear-gradient(180deg, #7db82a, #6d9610);
+  color: #ffffff;
 }
 
 
-.vg-monitor-stand {
-  width: 50%;
-  height: 14px;
+/* ========================================================
+   CRT Terminal (Eternal section)
+   ======================================================== */
+
+.vg-eternal-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.6rem;
+  align-items: start;
+}
+
+.vg-eternal-col {
+  min-width: 0;
+}
+
+.vg-terminal {
+  position: relative;
+  max-width: var(--vg-card-max-desktop);
   margin: 0 auto;
-  background: linear-gradient(180deg, #b0ac9e, #8a8678);
+  background:
+    linear-gradient(180deg, #3a3c42, #2e3036 30%, #26282e 70%, #1e2026 100%);
+  padding: 0.6rem 0.9rem 0;
   box-shadow:
-    inset 0 1px 0 rgba(255, 255, 255, 0.15),
-    0 4px 8px rgba(0, 0, 0, 0.4);
+    inset 0 0 0 1px rgba(255, 255, 255, 0.06),
+    inset 0 2px 0 rgba(255, 255, 255, 0.08),
+    inset 0 -1px 0 rgba(0, 0, 0, 0.3),
+    0 16px 32px rgba(0, 0, 0, 0.6);
+}
+
+.vg-terminal-bezel {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.35rem 0.3rem;
+}
+
+.vg-terminal-label {
+  font-family: var(--vg-font-pixel);
+  font-size: 0.68rem;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #7a7c82;
+  text-shadow: 0 1px 0 rgba(255, 255, 255, 0.06);
+}
+
+.vg-terminal-led {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: radial-gradient(circle at 40% 35%, #66ff44, #22cc00 60%, #008800);
+  box-shadow:
+    0 0 4px rgba(51, 255, 51, 0.5),
+    0 0 10px rgba(51, 255, 51, 0.25),
+    inset 0 0 2px rgba(0, 0, 0, 0.2);
+}
+
+.vg-terminal-screen {
+  padding: 0.5rem;
+  background: linear-gradient(145deg, rgba(8, 12, 8, 0.98), rgba(2, 4, 2, 0.98));
+  box-shadow:
+    inset 0 0 0 1px rgba(51, 255, 51, 0.12),
+    inset 0 0 0 2px rgba(4, 6, 4, 0.85),
+    inset 0 10px 14px rgba(0, 0, 0, 0.4);
+}
+
+.vg-terminal-screen-surface {
+  position: relative;
+  min-height: 220px;
+  padding: 1.2rem 1rem;
+  background:
+    radial-gradient(circle at 50% 42%, rgba(51, 180, 51, 0.1), rgba(12, 40, 12, 0.08) 44%, rgba(4, 10, 4, 0.98) 100%),
+    linear-gradient(180deg, rgba(6, 14, 6, 0.94), rgba(2, 8, 2, 0.98));
+  box-shadow:
+    inset 0 0 0 1px rgba(51, 255, 51, 0.1),
+    inset 0 0 28px rgba(0, 0, 0, 0.5);
+  overflow: hidden;
+}
+
+.vg-terminal-screen-surface::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  z-index: 2;
+  background:
+    linear-gradient(180deg, rgba(51, 255, 51, 0.06), transparent 24%),
+    repeating-linear-gradient(
+      0deg,
+      rgba(51, 255, 51, 0.06) 0,
+      rgba(51, 255, 51, 0.06) 1px,
+      transparent 1px,
+      transparent 3px
+    ),
+    linear-gradient(90deg, rgba(4, 10, 4, 0.3), transparent 16%, transparent 84%, rgba(4, 10, 4, 0.3));
+}
+
+.vg-terminal-screen-surface::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  z-index: 3;
+  background:
+    radial-gradient(circle at 20% 12%, rgba(180, 255, 180, 0.08), transparent 28%),
+    linear-gradient(180deg, transparent 72%, rgba(2, 6, 2, 0.4) 100%);
+}
+
+.vg-terminal-prompt {
+  position: absolute;
+  top: 0.6rem;
+  right: 0.8rem;
+  z-index: 4;
+  font-family: var(--vg-font-pixel-sm);
+  font-size: 0.5rem;
+  color: var(--vg-green);
+  opacity: 0.4;
+  text-shadow: 0 0 4px var(--vg-green-glow);
+}
+
+.vg-terminal-heading {
+  position: relative;
+  z-index: 4;
+  font-family: var(--vg-font-pixel);
+  font-size: clamp(0.62rem, 1.6vw, 0.82rem);
+  color: var(--vg-green);
+  text-shadow: 0 0 6px var(--vg-green-glow), 0 0 14px var(--vg-green-glow);
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  margin: 0 0 1rem;
+}
+
+.vg-terminal-stand {
+  width: 30%;
+  height: 40px;
+  margin: 0 auto;
+  background: linear-gradient(180deg, #3a3c42, #26282e);
+  box-shadow:
+    inset 0 1px 0 rgba(255, 255, 255, 0.06),
+    0 2px 4px rgba(0, 0, 0, 0.4);
+}
+
+.vg-terminal-foot {
+  width: 60%;
+  height: 10px;
+  margin: 0 auto;
+  background: linear-gradient(180deg, #2e3036, #1e2026);
+  box-shadow:
+    inset 0 1px 0 rgba(255, 255, 255, 0.04),
+    0 4px 8px rgba(0, 0, 0, 0.5);
+}
+
+/* Eternal list items */
+
+.vg-eternal-list {
+  position: relative;
+  z-index: 4;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.vg-eternal-item {
+  display: grid;
+  grid-template-columns: 2.2rem minmax(0, 1fr) auto;
+  grid-template-areas:
+    "rank title tag"
+    "rank meta  tag";
+  gap: 0 0.5rem;
+  align-items: center;
+  padding: 0.5rem 0;
+  border-bottom: 1px solid rgba(51, 255, 51, 0.1);
+  font-family: var(--vg-font-mono);
+  font-size: 0.82rem;
+  color: var(--vg-green);
+  text-shadow: 0 0 3px var(--vg-green-glow);
+}
+
+.vg-eternal-item:last-child {
+  border-bottom: none;
+}
+
+.vg-eternal-rank {
+  grid-area: rank;
+  font-family: var(--vg-font-pixel-sm);
+  font-size: 0.68rem;
+  opacity: 0.5;
+}
+
+.vg-eternal-title {
+  grid-area: title;
+  font-weight: 700;
+  min-width: 0;
+}
+
+.vg-eternal-meta {
+  grid-area: meta;
+  font-size: 0.68rem;
+  opacity: 0.5;
+  white-space: normal;
+  line-height: 1.35;
+}
+
+.vg-eternal-tag {
+  grid-area: tag;
+  font-family: var(--vg-font-pixel-sm);
+  font-size: 0.46rem;
+  color: #a884ff;
+  text-shadow: 0 0 4px rgba(168, 132, 255, 0.3);
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  padding: 0.2rem 0.5rem;
+  border: 1px solid rgba(168, 132, 255, 0.25);
+  background: rgba(168, 132, 255, 0.08);
+  white-space: nowrap;
+  align-self: center;
 }
 
 
@@ -2013,6 +2201,40 @@
     margin-top: calc(-1 * (var(--vg-cartridge-lift) + var(--vg-cartridge-protrusion)));
     margin-bottom: 0;
   }
+
+  .vg-eternal-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: var(--vg-grid-gap-desktop);
+    align-items: stretch;
+  }
+
+  .vg-eternal-col {
+    display: flex;
+  }
+
+  .vg-eternal-col--terminal .vg-terminal {
+    width: 100%;
+    max-width: var(--vg-card-max-desktop);
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .vg-eternal-col--terminal .vg-terminal-screen {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .vg-eternal-col--terminal .vg-terminal-screen-surface {
+    flex: 1;
+  }
+
+  .vg-eternal-col--backlog .vg-handheld {
+    width: 100%;
+    max-width: var(--vg-card-max-desktop);
+    margin: 0 auto;
+  }
 }
 
 
@@ -2050,6 +2272,11 @@
   .vg-dial-year {
     width: auto;
     padding: 0.3rem 0.5rem;
+  }
+
+  .vg-eternal-grid {
+    grid-template-columns: 1fr;
+    gap: 1.4rem;
   }
 }
 
@@ -2162,8 +2389,18 @@
     grid-template-columns: 1fr;
   }
 
-  .vg-monitor-screen-surface {
+  .vg-terminal {
+    max-width: 100%;
+  }
+
+  .vg-terminal-screen-surface {
     min-height: auto;
+    padding: 1rem 0.8rem;
+  }
+
+  .vg-eternal-item {
+    font-size: 0.74rem;
+    gap: 0 0.4rem;
   }
 }
 
@@ -2295,42 +2532,79 @@
     height: 22px;
   }
 
-  .vg-monitor {
-    padding: 0.4rem 0.7rem 0;
-  }
-
-  .vg-monitor-label {
-    font-size: 0.56rem;
-    letter-spacing: 1.5px;
-  }
-
-  .vg-monitor-screen-surface {
+  .vg-steam-content {
     padding: 0.8rem 0.7rem;
   }
 
+  .vg-steam-nav-tab {
+    font-size: 0.58rem;
+    padding: 0.36rem 0.5rem;
+  }
+
   .vg-steam-stats span {
-    font-size: 0.46rem;
+    font-size: 0.52rem;
   }
 
   .vg-steam-heading {
-    font-size: 0.44rem;
+    font-size: 0.6rem;
   }
 
   .vg-steam-list li {
-    font-size: 0.64rem;
+    font-size: 0.68rem;
   }
 
   .vg-steam-hours {
-    font-size: 0.44rem;
+    font-size: 0.48rem;
   }
 
   .vg-steam-list--ranked li::before {
-    font-size: 0.48rem;
+    font-size: 0.5rem;
     min-width: 1.6rem;
   }
 
-  .vg-monitor-btn {
-    font-size: 0.38rem;
-    padding: 0.4rem 1rem;
+  .vg-steam-btn {
+    font-size: 0.62rem;
+    padding: 0.38rem 1rem;
+  }
+
+  .vg-terminal {
+    padding: 0.4rem 0.7rem 0;
+  }
+
+  .vg-terminal-label {
+    font-size: 0.52rem;
+    letter-spacing: 1.5px;
+  }
+
+  .vg-terminal-heading {
+    font-size: 0.56rem;
+  }
+
+  .vg-terminal-screen-surface {
+    padding: 0.8rem 0.7rem;
+  }
+
+  .vg-eternal-item {
+    grid-template-columns: 1.8rem minmax(0, 1fr);
+    grid-template-areas:
+      "rank title"
+      "rank meta";
+    font-size: 0.68rem;
+  }
+
+  .vg-eternal-meta {
+    font-size: 0.56rem;
+  }
+
+  .vg-eternal-tag {
+    display: none;
+  }
+
+  .vg-terminal-stand {
+    height: 28px;
+  }
+
+  .vg-terminal-foot {
+    height: 8px;
   }
 }
