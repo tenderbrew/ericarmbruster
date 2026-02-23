@@ -1176,25 +1176,15 @@ footer .container {
 @media (min-width: 1081px) {
   :root {
     --desktop-top-panel-height: 14.5rem;
-    --desktop-room-panel-height: 19rem;
+    --desktop-room-panel-height: 21.5rem;
   }
 
-  .portrait-card,
-  .stage-copy {
-    min-height: var(--desktop-top-panel-height);
-    height: var(--desktop-top-panel-height);
-  }
 
-  .room-intro .room-card,
-  .room-ledger .room-card,
-  .room-quote .quote-crt {
-    min-height: var(--desktop-room-panel-height);
-  }
-
-  .room-intro .room-card,
-  .room-ledger .room-card,
-  .room-quote .quote-crt {
+  .room-intro,
+  .room-ledger,
+  .room-quote {
     height: var(--desktop-room-panel-height);
+    overflow: hidden;
   }
 
   .portrait-card {
@@ -1222,12 +1212,23 @@ footer .container {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
   grid-template-areas:
+    "archive archive archive"
     "intro ledger quote"
     "shelves shelves shelves";
   gap: 0.96rem;
   align-items: stretch;
   padding-top: 0.96rem;
   padding-bottom: 1.2rem;
+}
+
+.room-archive {
+  grid-area: archive;
+  height: var(--desktop-room-panel-height);
+}
+
+.room-archive .stage-copy {
+  width: 100%;
+  height: 100%;
 }
 
 .room {
@@ -1258,7 +1259,6 @@ footer .container {
 }
 
 .room-intro .room-card,
-.room-ledger .room-card,
 .room-quote .quote-crt {
   height: 100%;
 }
@@ -1536,8 +1536,7 @@ footer .container {
   padding: 1.14rem 1.16rem 1rem;
 }
 
-.register-card,
-.ledger-card {
+.register-card {
   position: relative;
   color: var(--paper-ink);
   background:
@@ -1557,8 +1556,7 @@ footer .container {
     inset 0 1px 0 rgba(255, 239, 210, 0.42);
 }
 
-.register-card::before,
-.ledger-card::before {
+.register-card::before {
   content: "";
   position: absolute;
   inset: 0;
@@ -1582,14 +1580,12 @@ footer .container {
   opacity: 0.62;
 }
 
-.register-card > *,
-.ledger-card > * {
+.register-card > * {
   position: relative;
   z-index: 1;
 }
 
-.register-card h2,
-.ledger-card h2 {
+.register-card h2 {
   color: var(--paper-ink);
 }
 
@@ -3521,259 +3517,97 @@ footer .container {
 
 .room-ledger {
   grid-area: ledger;
-  display: grid;
-  grid-template-columns: 1fr;
-  gap: 0.96rem;
+  overflow: hidden;
 }
 
-.ledger-card {
+.room-ledger .hector-card {
+  height: 100%;
+}
+
+.hector-card {
   position: relative;
+  display: flex;
+  flex-direction: column;
   overflow: hidden;
   clip-path: none;
-  padding: 1.34rem 1.12rem 1.36rem;
+  padding: 0.46rem 0.46rem 0.4rem;
   background:
-    radial-gradient(circle at 14% 18%, rgba(255, 244, 221, 0.56), transparent 46%),
-    radial-gradient(circle at 82% 76%, rgba(176, 130, 79, 0.18), transparent 58%),
-    radial-gradient(circle at 34% 60%, rgba(142, 98, 56, 0.12), transparent 44%),
-    repeating-linear-gradient(
-      0deg,
-      rgba(106, 77, 45, 0.05) 0,
-      rgba(106, 77, 45, 0.05) 1px,
-      transparent 1px,
-      transparent 4px
-    ),
+    radial-gradient(circle at 18% 14%, rgba(132, 70, 36, 0.24), transparent 42%),
+    radial-gradient(circle at 86% 88%, rgba(62, 31, 18, 0.28), transparent 56%),
     repeating-linear-gradient(
       90deg,
-      rgba(94, 69, 43, 0.03) 0,
-      rgba(94, 69, 43, 0.03) 1px,
-      transparent 1px,
-      transparent 7px
+      rgba(124, 66, 35, 0.16) 0,
+      rgba(124, 66, 35, 0.16) 2px,
+      rgba(56, 30, 18, 0.2) 2px,
+      rgba(56, 30, 18, 0.2) 10px
     ),
-    linear-gradient(168deg, #e6cfac, #d6b785 58%, #c39a67 100%);
+    linear-gradient(165deg, rgba(55, 32, 20, 0.97), rgba(22, 14, 10, 0.98));
   box-shadow:
-    0 16px 26px rgba(0, 0, 0, 0.34),
-    inset 0 0 0 1px rgba(98, 72, 43, 0.3),
-    inset 0 0 18px rgba(72, 49, 30, 0.16),
-    inset 0 1px 0 rgba(255, 243, 212, 0.42);
+    0 14px 24px var(--shadow-heavy),
+    inset 0 0 0 1px rgba(191, 134, 78, 0.24),
+    inset 0 0 16px rgba(0, 0, 0, 0.34);
   transform: none;
 }
 
-.ledger-card::before {
+.hector-card::before {
   content: "";
   position: absolute;
-  inset: 0.56rem;
+  inset: 0.28rem;
   pointer-events: none;
   background:
-    radial-gradient(26px 22px at 14px 14px, rgba(114, 130, 100, 0.54) 0 2px, transparent 3px),
-    radial-gradient(26px 22px at calc(100% - 14px) 14px, rgba(114, 130, 100, 0.54) 0 2px, transparent 3px),
-    radial-gradient(26px 22px at 14px calc(100% - 14px), rgba(114, 130, 100, 0.54) 0 2px, transparent 3px),
-    radial-gradient(26px 22px at calc(100% - 14px) calc(100% - 14px), rgba(114, 130, 100, 0.54) 0 2px, transparent 3px),
-    linear-gradient(90deg, rgba(103, 120, 88, 0.68), rgba(103, 120, 88, 0.68)) left top / 100% 1.5px no-repeat,
-    linear-gradient(90deg, rgba(103, 120, 88, 0.68), rgba(103, 120, 88, 0.68)) left bottom / 100% 1.5px no-repeat,
-    linear-gradient(180deg, rgba(103, 120, 88, 0.68), rgba(103, 120, 88, 0.68)) left top / 1.5px 100% no-repeat,
-    linear-gradient(180deg, rgba(103, 120, 88, 0.68), rgba(103, 120, 88, 0.68)) right top / 1.5px 100% no-repeat;
+    repeating-linear-gradient(
+      90deg,
+      rgba(101, 56, 29, 0.2) 0,
+      rgba(101, 56, 29, 0.2) 2px,
+      rgba(61, 35, 20, 0.22) 2px,
+      rgba(61, 35, 20, 0.22) 8px
+    ),
+    linear-gradient(145deg, rgba(106, 61, 32, 0.46), rgba(41, 24, 16, 0.56));
   box-shadow:
-    inset 0 0 0 1px rgba(91, 107, 79, 0.34),
-    inset 0 0 0 6px rgba(198, 171, 127, 0.18);
-  opacity: 0.96;
-  z-index: 1;
-}
-
-.ledger-card::after {
-  content: "";
-  position: absolute;
-  right: 0.62rem;
-  bottom: 0.48rem;
-  width: 56px;
-  height: 56px;
-  pointer-events: none;
-  background:
-    radial-gradient(circle at 34% 30%, rgba(255, 160, 150, 0.26), transparent 40%),
-    radial-gradient(circle at 62% 64%, rgba(122, 10, 10, 0.46), transparent 64%),
-    radial-gradient(circle at 52% 52%, rgba(173, 32, 30, 0.94), rgba(123, 17, 15, 0.98) 66%, rgba(82, 9, 8, 1) 100%);
-  box-shadow:
-    inset 0 0 0 2px rgba(118, 12, 12, 0.62),
-    inset 0 -4px 8px rgba(74, 4, 4, 0.44),
-    0 8px 10px rgba(0, 0, 0, 0.26);
-  clip-path: circle(50% at 50% 50%);
-  opacity: 0.9;
+    inset 0 0 0 1px rgba(199, 142, 86, 0.26),
+    inset 0 0 16px rgba(0, 0, 0, 0.5);
+  opacity: 0.68;
   z-index: 0;
 }
 
-.ledger-card h2 {
-  margin-bottom: 0.44rem;
-  margin-left: 0;
-  text-align: center;
-  font-family: "Herr Von Muellerhoff", "IM Fell English", "Georgia", cursive;
-  font-size: clamp(2.28rem, 3.6vw, 2.96rem);
-  font-weight: 400;
-  letter-spacing: 0.52px;
-  line-height: 0.95;
-  color: #8b2f2b;
-  text-transform: none;
-  transform: none;
-}
-
-.ledger-card h2::after {
-  content: "";
-  display: block;
-  width: min(78%, 330px);
-  height: 2px;
-  margin: 0.3rem auto 0;
-  background:
-    radial-gradient(circle at center, rgba(140, 45, 39, 0.86) 0 2px, transparent 3px),
-    linear-gradient(90deg, rgba(140, 45, 39, 0.6), rgba(140, 45, 39, 0.16) 18%, rgba(140, 45, 39, 0.16) 82%, rgba(140, 45, 39, 0.6));
-}
-
-.ledger-heading-link {
-  color: inherit;
-  display: inline-block;
-  border-bottom: none;
-  padding: 0;
-}
-
-.ledger-heading-link:hover {
-  color: #7f2c27;
-}
-
-.ledger-list {
-  list-style: none;
-  margin: 0;
-  padding: 0.44rem 0.42rem 0.52rem;
-  background:
-    repeating-linear-gradient(
-      180deg,
-      transparent 0,
-      transparent 1.66rem,
-      rgba(109, 85, 59, 0.34) 1.66rem,
-      rgba(109, 85, 59, 0.34) 1.74rem
-    );
-}
-
-.ledger-item {
-  --list-tilt: 0deg;
+.hector-frame {
   position: relative;
-  display: flex;
-  align-items: center;
-  background: none;
-  box-shadow: none;
-  border-bottom: none;
-  margin-left: 0.14rem;
-  min-height: 1.66rem;
-  padding: 0.16rem 0.16rem 0.2rem 1.44rem;
-  transform: rotate(var(--list-tilt));
-  transform-origin: left center;
-  transition: color 0.2s ease;
-}
-
-.ledger-item::before {
-  content: "[ ]";
-  position: absolute;
-  left: 0.14rem;
-  top: 0.36rem;
-  font-family: "IM Fell English", "Libre Caslon Text", "Georgia", serif;
-  font-size: 0.72rem;
-  letter-spacing: 0.2px;
-  color: #4a3424;
-  transform: none;
-}
-
-.ledger-item.is-complete::after {
-  content: "\2713";
-  position: absolute;
-  left: 0.34rem;
-  top: -0.04rem;
   z-index: 1;
-  color: #9f2018;
-  font-family: "IM Fell English SC", "Libre Caslon Display", "Libre Caslon Text", "Georgia", serif;
-  font-size: 1.56rem;
-  font-weight: 700;
-  line-height: 1;
-  text-shadow:
-    0 0 1px rgba(89, 18, 14, 0.46),
-    0 1px 0 rgba(255, 215, 205, 0.2);
-  transform: rotate(-10deg);
-}
-
-.ledger-item + .ledger-item {
-  margin-top: 0.04rem;
-}
-
-.ledger-item:hover {
-  color: #3d2a1a;
-}
-
-.ledger-title {
-  display: block;
-  color: #3b2a1c;
-  font-family: "IM Fell English", "Libre Caslon Text", "Georgia", serif;
-  font-style: normal;
-  font-size: 1.02rem;
-  letter-spacing: 0.1px;
-  line-height: 1;
-  margin-bottom: 0;
-  white-space: nowrap;
-  text-transform: lowercase;
-  transform: none;
-}
-
-.ledger-item:nth-child(2) .ledger-title {
-  text-transform: none;
-}
-
-.ledger-item:first-child .ledger-title {
-  font-size: 0.88rem;
-  letter-spacing: 0.06px;
-}
-
-.ledger-item--scribble {
-  pointer-events: none;
-  padding-top: 0.16rem;
-  padding-bottom: 0.18rem;
-}
-
-.ledger-item--scribble .ledger-scribble {
-  display: block;
-  height: 0.48rem;
-  margin-top: 0.02rem;
-  border-radius: 2px;
+  flex: 1;
+  min-height: 0;
+  overflow: hidden;
   background:
-    repeating-linear-gradient(
-      -8deg,
-      rgba(72, 52, 34, 0.22) 0,
-      rgba(72, 52, 34, 0.22) 2px,
-      transparent 2px,
-      transparent 5px
-    ),
-    repeating-linear-gradient(
-      7deg,
-      rgba(72, 52, 34, 0.17) 0,
-      rgba(72, 52, 34, 0.17) 1px,
-      transparent 1px,
-      transparent 4px
+    linear-gradient(
+      158deg,
+      #5c3b14 0%,
+      #9d6f2a 12%,
+      #e5c27c 26%,
+      #c59343 45%,
+      #efd594 58%,
+      #ba8538 74%,
+      #6f4919 100%
     );
-  filter: blur(0.25px);
-  opacity: 0.5;
+  padding: 5px;
 }
 
-.ledger-list li:nth-child(3) .ledger-scribble {
-  width: 86%;
+.hector-frame img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
 }
 
-.ledger-list li:nth-child(4) .ledger-scribble {
-  width: 74%;
-}
-
-.ledger-list li:nth-child(5) .ledger-scribble {
-  width: 82%;
-}
-
-.ledger-list li:nth-child(6) .ledger-scribble {
-  width: 68%;
-}
-
-.ledger-copy {
-  display: none;
+.hector-plaque {
+  position: relative;
+  z-index: 1;
+  margin: 0.34rem auto 0;
+  padding: 0.16rem 0.92rem 0.2rem;
+  font-family: "IM Fell English SC", "Libre Caslon Display", Georgia, serif;
+  font-size: 0.72rem;
+  letter-spacing: 1.2px;
+  text-align: center;
+  color: #d4b87a;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.5);
 }
 
 .reading-card {
@@ -3971,10 +3805,19 @@ footer .container {
   .home-rooms {
     grid-template-columns: 1fr;
     grid-template-areas:
+      "archive"
       "intro"
       "ledger"
       "quote"
       "shelves";
+  }
+
+  .room-archive {
+    height: auto;
+  }
+
+  .room-ledger {
+    height: 21.5rem;
   }
 }
 
@@ -4577,67 +4420,6 @@ footer .container {
     bottom: 0.56rem;
   }
 
-  .ledger-card {
-    padding: 1.18rem 0.86rem 1.54rem;
-  }
-
-  .ledger-card::before {
-    inset: 0.42rem;
-  }
-
-  .ledger-card::after {
-    left: auto;
-    right: 0.54rem;
-    bottom: 0.48rem;
-    width: 60px;
-    height: 60px;
-  }
-
-  .ledger-card h2 {
-    font-size: clamp(1.88rem, 9.1vw, 2.3rem);
-    letter-spacing: 0.52px;
-  }
-
-  .ledger-list {
-    padding: 0.54rem 0.28rem 0.7rem;
-  }
-
-  .ledger-item {
-    margin-left: 0.06rem;
-    min-height: 1.84rem;
-    padding: 0.2rem 0.16rem 0.24rem 1.48rem;
-  }
-
-  .ledger-item::before {
-    top: 0.44rem;
-    font-size: 0.72rem;
-  }
-
-  .ledger-item.is-complete::after {
-    font-size: 1.72rem;
-    left: 0.38rem;
-    top: 0;
-  }
-
-  .ledger-title {
-    font-size: 1.04rem;
-    letter-spacing: 0.06px;
-  }
-
-  .ledger-item:first-child .ledger-title {
-    font-size: 0.88rem;
-    letter-spacing: 0;
-  }
-
-  .ledger-item--scribble {
-    padding-top: 0.18rem;
-    padding-bottom: 0.2rem;
-  }
-
-  .ledger-item--scribble .ledger-scribble {
-    height: 0.52rem;
-  }
-
   .reading-card {
     padding: 0.02rem 0.02rem 0.18rem;
   }
@@ -5145,67 +4927,6 @@ footer .container {
     right: 0.5rem;
     top: 1.08rem;
     bottom: 0.5rem;
-  }
-
-  .ledger-card {
-    padding: 1.06rem 0.74rem 1.36rem;
-  }
-
-  .ledger-card::before {
-    inset: 0.34rem;
-  }
-
-  .ledger-card::after {
-    left: auto;
-    right: 0.44rem;
-    bottom: 0.42rem;
-    width: 52px;
-    height: 52px;
-  }
-
-  .ledger-card h2 {
-    font-size: clamp(1.72rem, 10.2vw, 2.08rem);
-    letter-spacing: 0.44px;
-  }
-
-  .ledger-list {
-    padding: 0.48rem 0.2rem 0.58rem;
-  }
-
-  .ledger-item {
-    margin-left: 0.04rem;
-    min-height: 1.66rem;
-    padding: 0.18rem 0.12rem 0.2rem 1.3rem;
-  }
-
-  .ledger-item::before {
-    top: 0.38rem;
-    font-size: 0.62rem;
-  }
-
-  .ledger-item.is-complete::after {
-    font-size: 1.5rem;
-    left: 0.34rem;
-    top: -0.02rem;
-  }
-
-  .ledger-title {
-    font-size: 0.92rem;
-    letter-spacing: 0.06px;
-  }
-
-  .ledger-item:first-child .ledger-title {
-    font-size: 0.78rem;
-    letter-spacing: 0;
-  }
-
-  .ledger-item--scribble {
-    padding-top: 0.14rem;
-    padding-bottom: 0.16rem;
-  }
-
-  .ledger-item--scribble .ledger-scribble {
-    height: 0.42rem;
   }
 
   .reading-card li {

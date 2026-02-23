@@ -140,33 +140,19 @@
     </div>
   </nav>
 
-  <!-- Page hero / introductory banner section. -->
-  <header class="home-stage">
-    <div class="container stage-layout">
-      <figure class="portrait-card">
-        <div class="portrait-ornament" aria-hidden="true">* * *</div>
-        <div class="portrait-stack">
-          <div class="portrait-frame portrait-frame--back" aria-hidden="true">
-            <img src="images/hector-0001.webp" alt="" width="1515" height="2013" loading="lazy" decoding="async">
-          </div>
-          <div class="portrait-frame portrait-frame--front">
-            <img src="images/hector-0001.webp" alt="Hector the dog in the snow" width="1515" height="2013" fetchpriority="high" decoding="async">
-          </div>
-        </div>
-        <figcaption class="portrait-plaque">Hector, Winter Sentinel</figcaption>
-      </figure>
+  <!-- Main page content. -->
+  <main class="container home-rooms">
 
+    <!-- Archive header spanning full width. -->
+    <header class="room room-archive">
       <article class="stage-copy" aria-label="Personal archive journal">
         <h1>
           <span class="archive-line archive-line--top">The Personal Archive of</span>
           <span class="archive-line archive-line--bottom">Eric M. Armbruster</span>
         </h1>
       </article>
-    </div>
-  </header>
-  <!-- Main page content. Most route-specific structure lives here. -->
-  <main class="container home-rooms">
-    
+    </header>
+
     <!-- Room 1: quick profile/utility links. -->
     <section class="room room-intro">
       <article class="room-card register-card">
@@ -180,43 +166,14 @@
     </section>
 
 
-    <!-- Room 2: project status ledger with visual completion states. -->
+    <!-- Room 2: Hector portrait. -->
     <section class="room room-ledger">
-      <article class="room-card ledger-card">
-        <h2><a href="projects.html" class="ledger-heading-link">Project Ledger</a></h2>
-        <ul class="ledger-list">
-          <li>
-            <a href="https://nintendopipeline.club" target="_blank" rel="noopener" class="ledger-item is-complete">
-              <span class="ledger-title">nintendo pipeline - retro game club</span>
-            </a>
-          </li>
-          <li>
-            <span class="ledger-item">
-              <span class="ledger-title">secret project</span>
-            </span>
-          </li>
-          <li aria-hidden="true">
-            <span class="ledger-item ledger-item--scribble">
-              <span class="ledger-scribble"></span>
-            </span>
-          </li>
-          <li aria-hidden="true">
-            <span class="ledger-item ledger-item--scribble">
-              <span class="ledger-scribble"></span>
-            </span>
-          </li>
-          <li aria-hidden="true">
-            <span class="ledger-item ledger-item--scribble">
-              <span class="ledger-scribble"></span>
-            </span>
-          </li>
-          <li aria-hidden="true">
-            <span class="ledger-item ledger-item--scribble">
-              <span class="ledger-scribble"></span>
-            </span>
-          </li>
-        </ul>
-      </article>
+      <figure class="room-card hector-card">
+        <div class="hector-frame">
+          <img src="images/hector-0001.webp" alt="Hector the dog in the snow" loading="lazy" decoding="async">
+        </div>
+        <figcaption class="hector-plaque">Hector, Winter Sentinel</figcaption>
+      </figure>
     </section>
 
 
