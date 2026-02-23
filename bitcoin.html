@@ -207,7 +207,7 @@
             <dd id="btc-chart-low">$--</dd>
           </div>
         </dl>
-        <p class="btc-note">Source: <a href="https://www.binance.com/" target="_blank" rel="noopener">Binance</a></p>
+        <p class="btc-note">Source: <a href="https://www.cryptocompare.com/" target="_blank" rel="noopener">CryptoCompare</a></p>
       </article>
 
       <div class="btc-desk-bottom">
@@ -304,8 +304,8 @@
       var newsList = document.getElementById('btc-news-list');
 
       var endpoints = {
-        ticker: 'https://api.binance.com/api/v3/ticker/24hr?symbol=BTCUSDT',
-        klines: 'https://api.binance.com/api/v3/klines?symbol=BTCUSDT&interval=1d&limit=90',
+        priceFull: 'https://min-api.cryptocompare.com/data/pricemultifull?fsyms=BTC&tsyms=USD',
+        histoday: 'https://min-api.cryptocompare.com/data/v2/histoday?fsym=BTC&tsym=USD&limit=90',
         news: 'https://api.rss2json.com/v1/api.json?rss_url=https%3A%2F%2Fwww.coindesk.com%2Farc%2Foutboundfeeds%2Frss%2F',
         blocks: 'https://mempool.space/api/blocks'
       };
@@ -514,24 +514,25 @@
       async function loadMarketData() {
         try {
           var responses = await Promise.all([
-            fetchJsonWithTimeout(endpoints.ticker, 8000),
-            fetchJsonWithTimeout(endpoints.klines, 9000)
+            fetchJsonWithTimeout(endpoints.priceFull, 8000),
+            fetchJsonWithTimeout(endpoints.histoday, 9000)
           ]);
 
-          var tickerData = responses[0];
-          var klinesData = responses[1];
+          var priceData = responses[0];
+          var histoData = responses[1];
 
-          var livePrice = Number(tickerData.lastPrice);
-          var change24Value = Number(tickerData.priceChangePercent);
+          var raw = priceData.RAW && priceData.RAW.BTC && priceData.RAW.BTC.USD;
+          if (!raw) throw new Error('Missing price data');
 
-          var historyPoints = Array.isArray(klinesData)
-            ? klinesData.map(function (candle) {
-                return {
-                  ts: Number(candle[0]),
-                  price: Number(candle[4])
-                };
-              }).filter(function (point) { return Number.isFinite(point.ts) && Number.isFinite(point.price); })
-            : [];
+          var livePrice = Number(raw.PRICE);
+          var change24Value = Number(raw.CHANGEPCT24HOUR);
+
+          var histoDays = (histoData.Data && Array.isArray(histoData.Data.Data))
+            ? histoData.Data.Data : [];
+
+          var historyPoints = histoDays.map(function (day) {
+            return { ts: Number(day.time) * 1000, price: Number(day.close) };
+          }).filter(function (point) { return Number.isFinite(point.ts) && Number.isFinite(point.price) && point.price > 0; });
 
           var change7Value = computeWindowChange(historyPoints, 7);
           var change30Value = computeWindowChange(historyPoints, 30);
