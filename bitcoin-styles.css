@@ -1,8 +1,29 @@
 /*
-  bitcoin-styles.css
-  Bitcoin route theme: dark data-dense dashboard inspired by mempool.space.
-*/
+ * ==========================================================================
+ * bitcoin-styles.css
+ * ==========================================================================
+ *
+ * Stylesheet for the Bitcoin dashboard page. All rules are scoped under the
+ * `.bitcoin-page` body class so they never leak into other pages on the site.
+ *
+ * Visual inspiration: mempool.space — a dark, data-dense dashboard aesthetic
+ * with monospace typography, tight panels, and a deep indigo/navy palette
+ * accented by Bitcoin orange (#f7931a).
+ *
+ * Layout strategy: a CSS Grid "desk" holds a top navigation rail, a chart
+ * panel + price sidebar, and a bottom row of three equal-width info panels.
+ * The grid collapses to single-column at tablet and mobile breakpoints.
+ * ==========================================================================
+ */
 
+/* ---------------------------------------------------------------------------
+ * DESIGN TOKENS (Custom Properties)
+ *
+ * Centralised color and shadow variables scoped to .bitcoin-page.
+ * Three background tiers (bg-0 darkest → bg-2 lightest) create subtle depth
+ * when layered in panels and gradients. Gold/copper map to the purple accent
+ * used for decorative elements, while --btc-orange is true Bitcoin brand orange.
+ * --------------------------------------------------------------------------- */
 .bitcoin-page {
   --btc-bg-0: #0b0e1a;
   --btc-bg-1: #11131f;
@@ -20,18 +41,32 @@
 
   color: var(--btc-ink);
   font-family: "IBM Plex Sans Condensed", "Trebuchet MS", sans-serif;
+
+  /* Full-page vertical gradient: starts at the deepest navy at top,
+     transitions through the mid-tone, and settles into a slightly
+     lighter indigo at the bottom to give a sense of depth. */
   background: linear-gradient(180deg, var(--btc-bg-0), var(--btc-bg-1) 44%, var(--btc-bg-2) 100%);
 }
 
+/* Slightly translucent paragraph text for softer readability against dark bg */
 .bitcoin-page p {
   color: rgba(220, 225, 235, 0.88);
 }
 
+/* ---------------------------------------------------------------------------
+ * TOP NAVIGATION RAIL
+ *
+ * A horizontal bar spanning the full grid width. It contains the page title
+ * (styled like a terminal prompt) on the left and navigation pill-links on
+ * the right. The rail sits in the "rail" grid area.
+ * --------------------------------------------------------------------------- */
 .btc-rail {
   grid-area: rail;
   padding: 0;
 }
 
+/* Inner flex container handles the split layout: label left, links right.
+   Wraps gracefully on narrow viewports so links flow below the title. */
 .btc-rail-inner {
   display: flex;
   flex-wrap: wrap;
@@ -44,6 +79,9 @@
   box-shadow: 0 4px 16px var(--btc-shadow);
 }
 
+/* Page title styled to resemble a terminal/CLI prompt.
+   Uses monospace font, uppercase letters, wide tracking, and a subtle
+   orange glow (text-shadow) to evoke a neon-terminal feel. */
 .btc-rail-label {
   margin: 0;
   color: var(--btc-orange);
@@ -55,26 +93,33 @@
   text-shadow: 0 0 8px rgba(247, 147, 26, 0.4);
 }
 
+/* The ">" prompt symbol before the title text, colored purple for contrast */
 .btc-prompt {
   color: var(--btc-accent-purple);
   margin-right: 0.1rem;
 }
 
+/* Blinking cursor character after the title — mimics a terminal caret.
+   Uses a step-end timing function so the blink is abrupt, not a fade. */
 .btc-cursor {
   color: var(--btc-orange);
   animation: blink 1s step-end infinite;
 }
 
+/* Keyframes for the terminal cursor blink: fully visible → invisible → visible */
 @keyframes blink {
   50% { opacity: 0; }
 }
 
+/* Container for the navigation pill-links; wraps on small screens */
 .btc-rail-links {
   display: flex;
   flex-wrap: wrap;
   gap: 0.5rem;
 }
 
+/* Individual nav links styled as small bordered pill-buttons.
+   Semi-transparent blue-tinted background keeps them subtle until hovered. */
 .btc-rail-links a {
   color: #e8e8e8;
   text-decoration: none;
@@ -91,11 +136,21 @@
   border-radius: 3px;
 }
 
+/* Hover intensifies the tint and border to signal interactivity */
 .btc-rail-links a:hover {
   background: rgba(100, 120, 200, 0.22);
   border-color: rgba(100, 120, 200, 0.3);
 }
 
+/* ---------------------------------------------------------------------------
+ * DESK: Main Content Wrapper & Grid
+ *
+ * The "desk" is the outermost content wrapper. The "desk-grid" inside it
+ * defines the two-column dashboard layout:
+ *   - Top row: navigation rail (full width)
+ *   - Middle row: chart panel (2fr) + price sidebar (1fr, min 255px)
+ *   - Bottom row: three equal info panels (full width)
+ * --------------------------------------------------------------------------- */
 .btc-desk {
   padding: 0.5rem 0 1.35rem;
 }
@@ -111,6 +166,7 @@
   align-items: stretch;
 }
 
+/* Bottom row sub-grid: three equal columns for block info, news, and reading panels */
 .btc-desk-bottom {
   grid-area: bottom;
   display: grid;
@@ -118,8 +174,13 @@
   gap: 0.98rem;
 }
 
-
-
+/* ---------------------------------------------------------------------------
+ * PANEL: Shared Card Component
+ *
+ * Every dashboard card (chart, price, blocks, news, reading) extends this
+ * base panel style. Panels have a dark background, a faint blue-tinted
+ * border, and a heavy drop-shadow to float above the page gradient.
+ * --------------------------------------------------------------------------- */
 .btc-panel {
   position: relative;
   padding: 1.02rem 0.98rem;
@@ -128,10 +189,14 @@
   box-shadow: 0 4px 16px var(--btc-shadow);
 }
 
+/* Disable the shared-styles ::before pseudo-element (e.g. decorative clip-path
+   or drop-cap) that other pages use — not appropriate for the dashboard look */
 .btc-panel::before {
   display: none;
 }
 
+/* Panel heading: uppercase, orange, fluid-sized via clamp() so it scales
+   between 1.16rem and 1.66rem depending on viewport width */
 .btc-panel h2 {
   margin: 0;
   color: var(--btc-orange);
@@ -143,6 +208,8 @@
   text-transform: uppercase;
 }
 
+/* Panel header row: title on the left, status badge on the right,
+   separated by a thin bottom border to divide head from body */
 .btc-panel-head {
   display: flex;
   justify-content: space-between;
@@ -153,6 +220,8 @@
   border-bottom: 1px solid rgba(100, 120, 200, 0.12);
 }
 
+/* Small monospace status text (e.g. "LIVE" or "LAST UPDATED") that sits
+   in the upper-right corner of each panel header */
 .btc-status {
   margin: 0.14rem 0 0;
   color: var(--btc-muted);
@@ -164,13 +233,23 @@
   text-transform: uppercase;
 }
 
+/* ---------------------------------------------------------------------------
+ * PRICE PANEL (Sidebar)
+ *
+ * Displays BTC price, market cap, volume, and percentage changes in a 2-col
+ * definition-list grid. Uses a subtle top-to-bottom gradient that's slightly
+ * lighter at the top to visually distinguish it from the adjacent chart panel.
+ * --------------------------------------------------------------------------- */
 .btc-price-panel {
   grid-area: price;
   display: flex;
   flex-direction: column;
+  /* Gradient starts slightly brighter (#161a2e) at top and fades into the
+     standard panel background, giving the sidebar a gentle highlight. */
   background: linear-gradient(180deg, #161a2e, var(--btc-bg-1));
 }
 
+/* 2-column grid of price stat tiles (dt/dd pairs inside div wrappers) */
 .btc-price-grid {
   margin: 0;
   display: grid;
@@ -179,6 +258,8 @@
   gap: 0.6rem;
 }
 
+/* Each stat tile: dark inset background with a very faint border,
+   creating a "recessed card within a card" effect */
 .btc-price-grid > div {
   padding: 0.56rem 0.62rem;
   border: 1px solid rgba(100, 120, 200, 0.1);
@@ -186,10 +267,13 @@
   overflow: hidden;
 }
 
+/* Prevent long numbers (e.g. market cap) from wrapping mid-value */
 .btc-price-grid dd {
   white-space: nowrap;
 }
 
+/* Label above each stat value: tiny, muted, monospace, uppercase —
+   the classic data-dashboard aesthetic for metric labels */
 .btc-price-grid dt {
   margin: 0;
   color: var(--btc-muted);
@@ -199,6 +283,7 @@
   text-transform: uppercase;
 }
 
+/* Stat values: bright white, larger monospace type so numbers are prominent */
 .btc-price-grid dd {
   margin: 0.26rem 0 0;
   color: #ffffff;
@@ -208,26 +293,38 @@
   letter-spacing: 0.24px;
 }
 
+/* Modifier class that makes a stat tile span both columns (used for the
+   main price display that deserves full width) */
 .btc-price-grid .btc-price-grid-wide {
   grid-column: 1 / -1;
 }
 
+/* The primary BTC price number: fluid-sized larger than other stats */
 #btc-price-value {
   font-size: clamp(1.3rem, 2.2vw, 1.8rem);
 }
 
+/* Green text for positive percentage changes (price going up) */
 #btc-change-24h.is-up,
 #btc-change-7d.is-up,
 #btc-change-30d.is-up {
   color: #0aab2f;
 }
 
+/* Red text for negative percentage changes (price going down) */
 #btc-change-24h.is-down,
 #btc-change-7d.is-down,
 #btc-change-30d.is-down {
   color: #ff3d00;
 }
 
+/* ---------------------------------------------------------------------------
+ * CHART PANEL
+ *
+ * Houses the SVG price chart. The panel uses a flex column layout so the
+ * chart shell can grow to fill available height. Below the chart, a row
+ * of four stat tiles (chart-meta) shows period high/low and other metrics.
+ * --------------------------------------------------------------------------- */
 .btc-chart-panel {
   grid-area: chart;
   display: flex;
@@ -235,6 +332,9 @@
   background: var(--btc-bg-1);
 }
 
+/* The dark inset container that wraps the actual SVG chart.
+   Inset box-shadow creates a "sunken screen" effect, as if the chart
+   is rendered on a recessed monitor within the panel. */
 .btc-chart-shell {
   margin-top: 0.32rem;
   padding: 0.6rem;
@@ -244,12 +344,15 @@
   box-shadow: inset 0 0 12px rgba(0, 0, 0, 0.3);
 }
 
+/* The SVG chart itself: fills full width and scales proportionally */
 .btc-chart-svg {
   width: 100%;
   height: auto;
   display: block;
 }
 
+/* Row of four stat tiles beneath the chart (e.g. 90d high, 90d low, etc.)
+   Uses a 4-column grid that collapses to 2 columns on mobile */
 .btc-chart-meta {
   margin: 0.68rem 0 0;
   display: grid;
@@ -257,12 +360,14 @@
   gap: 0.55rem;
 }
 
+/* Individual chart-meta tiles: same recessed dark style as price-grid tiles */
 .btc-chart-meta div {
   padding: 0.52rem 0.56rem;
   border: 1px solid rgba(100, 120, 200, 0.1);
   background: rgba(11, 14, 26, 0.6);
 }
 
+/* Chart-meta labels: tiny uppercase monospace, matching the price-grid labels */
 .btc-chart-meta dt {
   margin: 0;
   color: var(--btc-muted);
@@ -272,6 +377,7 @@
   text-transform: uppercase;
 }
 
+/* Chart-meta values: white monospace numbers, slightly smaller than price stats */
 .btc-chart-meta dd {
   margin: 0.2rem 0 0;
   color: #ffffff;
@@ -280,6 +386,13 @@
   font-weight: 500;
 }
 
+/* ---------------------------------------------------------------------------
+ * BOTTOM ROW PANELS: Blocks, News, and Reading
+ *
+ * Three equal-width panels in the bottom grid row. Each has full height
+ * and the same dark background. They display lists of recent blocks,
+ * Bitcoin news headlines, and recommended reading links respectively.
+ * --------------------------------------------------------------------------- */
 .btc-block-panel {
   height: 100%;
   background: var(--btc-bg-1);
@@ -295,6 +408,13 @@
   background: var(--btc-bg-1);
 }
 
+/* ---------------------------------------------------------------------------
+ * NOTES & BUTTONS
+ *
+ * Small helper text and action buttons used inside panels.
+ * --------------------------------------------------------------------------- */
+
+/* Muted footnote text beneath panel content (e.g. data source attribution) */
 .btc-note {
   margin: 0.64rem 0 0;
   color: var(--btc-muted);
@@ -302,10 +422,13 @@
   line-height: 1.3;
 }
 
+/* Links inside notes use the bright blue accent for visibility */
 .btc-note a {
   color: var(--btc-accent-blue);
 }
 
+/* Small pill-style action button (e.g. "View on Mempool").
+   Styled identically to the rail nav links for visual consistency. */
 .btc-button {
   display: inline-block;
   margin-top: 0.72rem;
@@ -328,6 +451,13 @@
   border-color: rgba(100, 120, 200, 0.3);
 }
 
+/* ---------------------------------------------------------------------------
+ * LIST COMPONENTS: Block List & News List
+ *
+ * Vertical lists of linked items used in the blocks and news panels.
+ * Links truncate with an ellipsis when they overflow the panel width,
+ * preventing layout breakage from long headlines or block hashes.
+ * --------------------------------------------------------------------------- */
 .btc-block-list,
 .btc-news-list {
   margin: 0;
@@ -343,6 +473,7 @@
   padding: 0;
 }
 
+/* Links are blue, single-line with ellipsis overflow to keep rows compact */
 .btc-block-list a,
 .btc-news-list a {
   display: block;
@@ -355,11 +486,13 @@
   text-overflow: ellipsis;
 }
 
+/* Hover shifts to a soft purple, tying into the page accent palette */
 .btc-block-list a:hover,
 .btc-news-list a:hover {
   color: #9f8bff;
 }
 
+/* Secondary metadata text beneath each list link (e.g. timestamps, sizes) */
 .btc-block-list span,
 .btc-news-list span {
   display: block;
@@ -368,28 +501,41 @@
   letter-spacing: 0.4px;
 }
 
+/* Block panel uses flex-column so the list can fill available space while
+   overflow is clipped cleanly without pushing the panel taller */
 .btc-block-panel {
   display: flex;
   flex-direction: column;
   overflow: hidden;
 }
 
+/* The block list grows to fill remaining panel height and clips overflow */
 .btc-block-list {
   flex: 1;
   overflow: hidden;
 }
 
+/* On wide desktops (>1180px), cap the news list at 10 visible items to
+   prevent the panel from becoming excessively tall */
 @media (min-width: 1181px) {
   .btc-news-list li:nth-child(n + 11) {
     display: none;
   }
 }
 
+/* Fallback placeholder text shown when API data is unavailable */
 .btc-fallback {
   color: var(--btc-muted);
   font-size: 0.9rem;
 }
 
+/* ---------------------------------------------------------------------------
+ * READING LIST PANEL
+ *
+ * The reading panel contains categorised link sections (books, articles, etc.)
+ * laid out in a vertical stack. Each section has an orange monospace heading
+ * and a compact list of truncating links.
+ * --------------------------------------------------------------------------- */
 .btc-reading-columns {
   margin-top: 0.56rem;
   display: flex;
@@ -397,6 +543,8 @@
   gap: 0.62rem;
 }
 
+/* Section headings inside the reading panel: small orange monospace labels
+   to match the dashboard-terminal aesthetic */
 .btc-reading-columns h3 {
   margin: 0 0 0.3rem;
   color: var(--btc-orange);
@@ -420,6 +568,7 @@
   margin: 0;
 }
 
+/* Reading links: same blue/ellipsis style as block and news lists */
 .btc-reading-columns a {
   display: block;
   color: var(--btc-accent-blue);
@@ -431,10 +580,18 @@
   text-overflow: ellipsis;
 }
 
+/* Purple hover state consistent with other list links across the page */
 .btc-reading-columns a:hover {
   color: #9f8bff;
 }
 
+/* ---------------------------------------------------------------------------
+ * FOOTER OVERRIDES
+ *
+ * The site-wide footer inherits dark text by default, so we override it here
+ * to use muted light text that's legible against the dark page background.
+ * z-index ensures it sits above any absolutely-positioned decorations.
+ * --------------------------------------------------------------------------- */
 .bitcoin-page footer {
   position: relative;
   z-index: 2;
@@ -444,6 +601,18 @@
   color: var(--btc-muted);
 }
 
+/* ===========================================================================
+ * RESPONSIVE BREAKPOINTS
+ * =========================================================================== */
+
+/* ---------------------------------------------------------------------------
+ * TABLET BREAKPOINT: max-width 1180px
+ *
+ * At this width the two-column chart+price layout no longer fits comfortably.
+ * The grid collapses to a single column: rail → chart → price → bottom panels.
+ * The bottom row goes from 3 columns to 2, with the reading panel spanning
+ * full width underneath so its longer content has room to breathe.
+ * --------------------------------------------------------------------------- */
 @media (max-width: 1180px) {
   .btc-desk-grid {
     grid-template-columns: 1fr;
@@ -458,34 +627,49 @@
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
+  /* Reading panel spans both columns in the 2-col bottom grid so it
+     gets the full width — its link lists benefit from more horizontal space */
   .btc-reading-panel {
     grid-column: 1 / -1;
   }
 }
 
+/* ---------------------------------------------------------------------------
+ * MOBILE BREAKPOINT: max-width 760px
+ *
+ * Full single-column layout. All elements stack vertically. Panels get reduced
+ * padding, font sizes shrink for compact readability on small screens, and
+ * the chart-meta stat row drops from 4 columns to 2 so tiles remain legible.
+ * --------------------------------------------------------------------------- */
 @media (max-width: 760px) {
+  /* Remove any residual rail padding on mobile */
   .btc-rail {
     padding: 0;
   }
 
+  /* Tighten rail inner padding for narrow screens */
   .btc-rail-inner {
     padding: 0.52rem 0.62rem;
   }
 
+  /* Smaller title font to fit mobile width */
   .btc-rail-label {
     font-size: 0.72rem;
   }
 
+  /* Compact nav pill-links: smaller text and tighter padding */
   .btc-rail-links a {
     font-size: 0.62rem;
     letter-spacing: 0.52px;
     padding: 0.26rem 0.48rem;
   }
 
+  /* Reduce top spacing since the rail is already snug */
   .btc-desk {
     padding-top: 0.24rem;
   }
 
+  /* Single-column stacked layout with slightly tighter gap */
   .btc-desk-grid {
     grid-template-columns: 1fr;
     grid-template-areas:
@@ -496,45 +680,56 @@
     gap: 0.82rem;
   }
 
+  /* Bottom panels also go single-column on mobile */
   .btc-desk-bottom {
     grid-template-columns: 1fr;
   }
 
-
+  /* Reduce panel padding to reclaim horizontal space on small screens */
   .btc-panel {
     padding: 0.78rem;
   }
 
+  /* Panel headings: tighter clamp range tuned for mobile viewports */
   .btc-panel h2 {
     font-size: clamp(1.08rem, 5.6vw, 1.42rem);
     letter-spacing: 0.62px;
   }
 
+  /* Slightly smaller status text on mobile */
   .btc-status {
     font-size: 0.54rem;
   }
 
+  /* Price values stay readable — slightly bumped to compensate for
+     the overall smaller surrounding context on mobile */
   .btc-price-grid dd {
     font-size: 1.12rem;
   }
 
+  /* Primary price uses a mobile-tuned fluid range */
   #btc-price-value {
     font-size: clamp(1.38rem, 6.3vw, 1.86rem);
   }
 
+  /* Chart stat row drops from 4 columns to 2 so each tile
+     has enough width to display its value without truncation */
   .btc-chart-meta {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
+  /* Tighter spacing between reading sections on mobile */
   .btc-reading-columns {
     gap: 0.5rem;
   }
 
+  /* Reading sections stack vertically with minimal gap */
   .btc-reading-columns section {
     grid-template-columns: 1fr;
     gap: 0.36rem;
   }
 
+  /* Slightly smaller link text on mobile for density */
   .btc-block-list a,
   .btc-news-list a {
     font-size: 0.78rem;

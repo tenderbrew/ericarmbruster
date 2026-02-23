@@ -1,4 +1,28 @@
-<!-- File Guide: about.html. Rain-themed personal profile page. -->
+<!--
+  about.html — Personal Profile / About Page
+  ============================================
+  A rainy night cityscape aesthetic. The page layers multiple atmospheric CSS
+  effects (moon, drifting clouds, fog, lightning flashes, street lanterns,
+  string lights, steam wisps, puddle reflections) behind a centered content
+  card. All atmosphere elements are purely decorative (aria-hidden) and use
+  CSS animations defined in about-styles.css.
+
+  Visual layers (back to front):
+    1. Moon — radial gradient circle in the sky
+    2. Clouds — translucent blobs drifting horizontally via CSS animation
+    3. Fog — soft horizontal band of translucent white
+    4. Lightning — full-screen flash triggered by a CSS keyframe
+    5. Skyline — city rooftop silhouette along the bottom edge
+    6. Lanterns — two street lamps flanking the content with glow halos
+    7. String lights — decorative bulbs draped across the top
+    8. Steam wisps — rising vapor shapes from below
+    9. Content cards — the actual text (hero, bio, background, contact)
+    10. Puddle — wet ground reflection at the very bottom
+
+  Stylesheets: styles.css (shared) + about-styles.css (page-specific)
+  Scripts: drawer.js (nav drawer) + ticker.js (live market ticker)
+  Body class: .about-page
+-->
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -7,7 +31,9 @@
 
   <title>About - Eric Armbruster</title>
 
+  <!-- SEO and social sharing metadata. -->
   <meta name="description" content="Background, work, and interests of Eric Armbruster.">
+  <!-- Dark blue-gray theme color matches the rainy night sky background. -->
   <meta name="theme-color" content="#0f1923">
   <link rel="canonical" href="https://www.ericarmbruster.com/about.html">
   <meta property="og:title" content="About - Eric Armbruster">
@@ -21,13 +47,19 @@
   <meta name="twitter:image" content="https://www.ericarmbruster.com/images/hector-0001.png">
   <link rel="icon" href="images/hector-favicon.png" type="image/png">
 
+  <!-- Google Fonts — Cormorant Garamond is a refined serif used for the about
+       page's body text, giving a literary / atmospheric feel that matches the
+       rainy night theme. Libre Caslon and Herr Von Muellerhoff are shared fonts
+       used across the site for headings and decorative flourishes. -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,400&family=Libre+Caslon+Display&family=Libre+Caslon+Text:ital,wght@0,400;0,700;1,400&family=Herr+Von+Muellerhoff&display=swap" rel="stylesheet">
 
+  <!-- Shared base styles first, then about-page-specific overrides. -->
   <link rel="stylesheet" href="styles.css">
   <link rel="stylesheet" href="about-styles.css">
 
+  <!-- Google Analytics -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-5ZTHJXDR9V"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
@@ -39,7 +71,10 @@
 
 <body class="about-page">
 
-  <!-- Scrolling ticker tape: live market data. -->
+  <!-- ═══════════════════════════════════════════════════════════════════════
+       SCROLLING TICKER TAPE — identical across all pages.
+       See projects.html for detailed explanation of the ticker structure.
+       ticker.js replaces these placeholder values with live market data. -->
   <div class="ticker-tape" aria-hidden="true">
     <div class="ticker-track">
       <span class="tick" data-ticker="DJIA">DJIA 38,547 &#9650;0.42%</span>
@@ -62,6 +97,7 @@
       <span class="tick-sep">&bull;</span>
       <span class="tick" data-ticker="FEDFUNDS">FED FUNDS 5.33%</span>
       <span class="tick-sep">&bull;</span>
+      <!-- Second duplicate set for seamless infinite scroll animation. -->
       <span class="tick" data-ticker="DJIA">DJIA 38,547 &#9650;0.42%</span>
       <span class="tick-sep">&bull;</span>
       <span class="tick" data-ticker="SP500">S&amp;P 500 5,234 &#9650;0.18%</span>
@@ -85,7 +121,9 @@
     </div>
   </div>
 
-  <!-- Shared primary navigation. Drawer behavior is provided by drawer.js. -->
+  <!-- ═══════════════════════════════════════════════════════════════════════
+       PRIMARY NAVIGATION — identical across all pages.
+       See projects.html for detailed explanation of nav structure. -->
   <nav class="study-nav" aria-label="Primary">
     <div class="container nav-shell">
       <a href="index.html" class="brand-mark" aria-label="Eric Armbruster home">Eric M. Armbruster</a>
@@ -105,6 +143,7 @@
       <button class="drawer-toggle nav-mobile-toggle" type="button" aria-expanded="false" aria-controls="site-drawer" data-drawer-toggle>menu</button>
     </div>
 
+    <!-- Slide-out drawer with full site navigation links. -->
     <div class="site-drawer" id="site-drawer">
       <div class="container drawer-inner">
         <section class="drawer-group">
@@ -131,20 +170,46 @@
     </div>
   </nav>
 
-  <!-- Atmosphere layers (all fixed, behind content) -->
+  <!-- ═══════════════════════════════════════════════════════════════════════
+       ATMOSPHERIC BACKGROUND LAYERS
+       ═══════════════════════════════════════════════════════════════════════
+       All of these elements are position: fixed and stacked behind the page
+       content using z-index. Together they create the rainy night scene.
+       All are aria-hidden="true" because they're purely decorative — screen
+       readers skip them entirely. -->
+
+  <!-- Moon — a large radial gradient circle positioned in the upper portion
+       of the viewport. CSS gives it a soft warm glow halo around a bright core. -->
   <div class="about-moon" aria-hidden="true"></div>
+
+  <!-- Clouds — three translucent blob shapes that drift horizontally across
+       the sky via CSS @keyframes animation. Each cloud has a different size,
+       speed, and vertical position to create depth. The cloud shapes are
+       built from layered CSS box-shadows and border-radius. -->
   <div class="about-clouds" aria-hidden="true">
     <span class="about-cloud about-cloud--1"></span>
     <span class="about-cloud about-cloud--2"></span>
     <span class="about-cloud about-cloud--3"></span>
   </div>
+
+  <!-- Fog — a horizontal band of translucent white/gray that sits across
+       the middle of the viewport, adding depth between the sky and ground.
+       Just a div with a soft radial gradient background. -->
   <div class="about-fog" aria-hidden="true"></div>
+
+  <!-- Lightning — a full-viewport flash effect. CSS animation briefly sets
+       the opacity from 0 to a bright white and back, creating a lightning
+       flash effect at timed intervals. -->
   <div class="about-lightning" aria-hidden="true"></div>
 
-  <!-- Distant rooftop silhouette along the bottom -->
+  <!-- Skyline — a city rooftop silhouette along the bottom edge of the
+       viewport. Built with CSS clip-path or box-shadow to create a jagged
+       building outline against the sky. -->
   <div class="about-skyline" aria-hidden="true"></div>
 
-  <!-- Street lanterns flanking the content -->
+  <!-- Street lanterns — two lamp posts (left and right) flanking the content
+       area. Each has a glow child element that creates a warm radial gradient
+       halo around the lantern, simulating the light cone hitting fog/rain. -->
   <div class="about-lantern about-lantern--left" aria-hidden="true">
     <span class="about-lantern-glow"></span>
   </div>
@@ -152,7 +217,10 @@
     <span class="about-lantern-glow"></span>
   </div>
 
-  <!-- String lights draped across the top -->
+  <!-- String lights — a row of small colored bulbs draped across the top
+       of the scene. Each bulb is a small circle with a CSS radial gradient
+       that creates a bright center fading to a soft glow. Seven bulbs total,
+       each with slightly different positioning to look naturally draped. -->
   <div class="about-string-lights" aria-hidden="true">
     <span class="about-bulb about-bulb--1"></span>
     <span class="about-bulb about-bulb--2"></span>
@@ -163,26 +231,36 @@
     <span class="about-bulb about-bulb--7"></span>
   </div>
 
-  <!-- Steam wisps rising from below -->
+  <!-- Steam wisps — three rising vapor/smoke shapes that animate upward from
+       the bottom. Creates the impression of warm air rising from a street
+       grate or chimney. CSS animation translates them vertically and fades
+       their opacity. -->
   <div class="about-steam" aria-hidden="true">
     <span class="about-wisp about-wisp--1"></span>
     <span class="about-wisp about-wisp--2"></span>
     <span class="about-wisp about-wisp--3"></span>
   </div>
 
-  <!-- Page content -->
+  <!-- ═══════════════════════════════════════════════════════════════════════
+       MAIN CONTENT
+       ═══════════════════════════════════════════════════════════════════════
+       Centered content cards on top of the atmospheric background. The
+       .about-content container provides the max-width constraint and
+       centering, while each .about-card is a semi-transparent panel. -->
   <main>
     <div class="about-content">
 
-      <!-- Hero -->
+      <!-- Hero header with name and tagline. -->
       <header class="about-hero">
         <h1>Eric Armbruster</h1>
         <p class="about-tagline">Builder of things. Listener of rain.</p>
       </header>
 
+      <!-- Decorative dividers between sections. The .about-drop child creates
+           a small raindrop-shaped element centered on the divider line. -->
       <div class="about-divider" aria-hidden="true"><span class="about-drop"></span></div>
 
-      <!-- Hello -->
+      <!-- Intro card — brief welcome message. -->
       <section class="about-card">
         <h2>Hello</h2>
         <p>Thanks for stopping by. This site is really just a small corner of the internet I built for myself — a place to keep track of the hobbies and interests that keep me curious. If you've found your way here, I hope you find something worth your time.</p>
@@ -190,7 +268,7 @@
 
       <div class="about-divider" aria-hidden="true"><span class="about-drop"></span></div>
 
-      <!-- Background -->
+      <!-- Background card — professional and educational credentials. -->
       <section class="about-card">
         <h2>Background</h2>
         <ul class="about-list">
@@ -202,7 +280,9 @@
 
       <div class="about-divider" aria-hidden="true"><span class="about-drop"></span></div>
 
-      <!-- Get in Touch -->
+      <!-- Contact card — centered links to email, GitHub, LinkedIn.
+           The inline style="text-align: center" centers the heading and
+           paragraph text within this specific card only. -->
       <section class="about-card" style="text-align: center;">
         <h2>Get in Touch</h2>
         <p>Always happy to connect.</p>
@@ -215,7 +295,9 @@
 
     </div>
 
-    <!-- Wet ground / puddle reflection at the bottom -->
+    <!-- Puddle reflection — a decorative element at the bottom of the page
+         simulating wet ground reflecting the scene above. CSS uses a
+         semi-transparent gradient and/or blur filter to create the effect. -->
     <div class="about-puddle" aria-hidden="true"></div>
   </main>
 
@@ -225,6 +307,7 @@
     </div>
   </footer>
 
+  <!-- Shared scripts — drawer.js for nav, ticker.js for live market data. -->
   <script src="drawer.js"></script>
   <script src="ticker.js"></script>
 </body>

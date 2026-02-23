@@ -1,15 +1,48 @@
 /*
-  vg-styles.css
-  Video Games route theme. Scoped to body.vg-page to prevent style leakage.
-*/
+ * ==========================================================================
+ *  vg-styles.css  --  Video Games page theme
+ * ==========================================================================
+ *
+ *  Scoped entirely to body.vg-page so these styles never leak into other
+ *  routes.  The colour identity is an indigo/deep-purple retro-gaming
+ *  aesthetic with neon cyan and amber accents that evoke CRT monitors,
+ *  arcade cabinets, and classic console hardware.
+ *
+ *  Major visual sections (in source order):
+ *    1. Design tokens (CSS custom properties)
+ *    2. Page background gradient
+ *    3. Shared-stylesheet overrides (clip-path, box-shadow, drop-cap)
+ *    4. Border-radius resets for skeuomorphic hardware elements
+ *    5. @keyframes animation primitives
+ *    6. Scanline overlay utility + section spacing
+ *    7. Hero marquee (grid, pixel title, retro ticker)
+ *    8. "Now Playing" section -- CRT TV skeuomorph + game list
+ *    9. Retro console unit (cartridge, LCD, buttons, ports)
+ *   10. Arcade cabinet (marquee, green-phosphor screen, joystick)
+ *   11. Feature grid layout wrapper
+ * ==========================================================================
+ */
 
-/* Route-local design tokens: palette, fonts, spacing, and component sizes. */
+
+/* --------------------------------------------------------------------------
+ *  1. DESIGN TOKENS
+ * --------------------------------------------------------------------------
+ *  All colours, fonts and spacing live as CSS custom properties on .vg-page
+ *  so every descendant can reference them with var().  Grouping tokens here
+ *  makes future palette tweaks a single-location change.
+ * -------------------------------------------------------------------------- */
 .vg-page {
+  /* Dark background ramp -- used for panels, borders, and page chrome.
+     "void" is near-black; "dark" and "panel" lighten slightly; "border"
+     provides a subtle visible edge against the dark backgrounds. */
   --vg-void: #08080f;
   --vg-dark: #0e0e1a;
   --vg-panel: #1a1a2e;
   --vg-border: #2a2a44;
 
+  /* Neon accent colours, each with a dimmer shade and a semi-transparent
+     glow variant.  The glow versions are used in text-shadow / box-shadow
+     to create the bloom effect associated with CRT phosphors. */
   --vg-green: #33ff33;
   --vg-green-dim: #1a8c1a;
   --vg-green-glow: rgba(51, 255, 51, 0.3);
@@ -21,13 +54,21 @@
   --vg-red: #ff3333;
   --vg-red-glow: rgba(255, 51, 51, 0.4);
 
+  /* Plastic surface ramp -- three grays that mimic the injection-molded
+     ABS plastic of vintage TV and console casings.  The gradient between
+     them gives depth to the CRT TV shell and console body. */
   --vg-plastic-light: #686a70;
   --vg-plastic-mid: #4d4f55;
   --vg-plastic-dark: #303239;
+
+  /* Faux wood-grain ramp -- warm browns inspired by the wood-panel veneer
+     found on late-70s / early-80s consoles (Atari 2600 era). */
   --vg-wood-light: #6b4226;
   --vg-wood-mid: #4a2d18;
   --vg-wood-dark: #2e1a0e;
 
+  /* Steam-inspired colours -- used for the Steam library integration
+     section; these closely match Valve's own dark-blue palette. */
   --vg-steam-dark: #171a21;
   --vg-steam-bg: #1b2838;
   --vg-steam-content: #1e2e3e;
@@ -36,29 +77,60 @@
   --vg-steam-muted: #8f98a0;
   --vg-steam-green: #5c7e10;
 
+  /* Typography stacks.
+     "pixel"   -- chunky 8-bit headline font (Press Start 2P / Silkscreen).
+     "mono"    -- clean monospace for body text on screen surfaces.
+     "pixel-sm"-- smaller pixel font used for labels and HUD elements. */
   --vg-font-pixel: "Press Start 2P", "Silkscreen", monospace;
   --vg-font-mono: "Share Tech Mono", "Courier New", monospace;
   --vg-font-pixel-sm: "Silkscreen", "Share Tech Mono", monospace;
 
+  /* Layout constants -- section vertical spacing, maximum card width on
+     large screens, and the gap between grid items on desktop. */
   --vg-section-gap: 2.5rem;
   --vg-card-max-desktop: 560px;
   --vg-grid-gap-desktop: 1.6rem;
 }
 
 
+/* --------------------------------------------------------------------------
+ *  2. PAGE BACKGROUND
+ * --------------------------------------------------------------------------
+ *  Three stacked radial/linear gradients create a moody, deep-space feel:
+ *
+ *    Layer 1 (top):   A subtle purple glow at the top-center simulates an
+ *                     overhead neon light reflected off a dark ceiling.
+ *    Layer 2 (lower-left):  A teal accent glow adds colour variance at the
+ *                     opposite corner so the background is not uniform.
+ *    Layer 3 (base):  A vertical sweep from void -> slightly lighter ->
+ *                     void keeps the overall page very dark while giving
+ *                     a gentle gradient transition.
+ * -------------------------------------------------------------------------- */
 .vg-page {
   background:
-    radial-gradient(ellipse at 50% 0%, rgba(20, 0, 60, 0.4), transparent 50%),
-    radial-gradient(ellipse at 0% 100%, rgba(0, 40, 60, 0.2), transparent 40%),
-    linear-gradient(180deg, var(--vg-void), #0a0a16 40%, var(--vg-void) 100%);
+    radial-gradient(ellipse at 50% 0%, rgba(20, 0, 60, 0.4), transparent 50%),   /* purple glow, top center */
+    radial-gradient(ellipse at 0% 100%, rgba(0, 40, 60, 0.2), transparent 40%),  /* teal glow, bottom left */
+    linear-gradient(180deg, var(--vg-void), #0a0a16 40%, var(--vg-void) 100%);   /* dark sweep base layer */
 }
 
+/* --------------------------------------------------------------------------
+ *  3. SHARED-STYLESHEET OVERRIDES
+ * --------------------------------------------------------------------------
+ *  The site-wide styles.css applies decorative clip-paths, box-shadows, and
+ *  a drop-cap first-letter treatment to all pages.  Those don't suit the
+ *  retro-gaming theme, so they're neutralised here.
+ * -------------------------------------------------------------------------- */
+
+/* The shared sheet uses ::before / ::after pseudo-elements on the <body>
+   for decorative overlays.  Hiding them prevents visual conflicts. */
 .vg-page::before,
 .vg-page::after {
   display: none;
 }
 
 
+/* Reset the hero container: remove clip-path silhouette, background, shadow,
+   and padding so the video-game hero can define its own layout. */
 .vg-page .hero .container {
   background: none;
   box-shadow: none;
@@ -66,6 +138,8 @@
   padding: 0;
 }
 
+/* Same treatment for every <section> container inside <main> -- clear the
+   shared decorative styling while preserving some inner padding. */
 .vg-page main:not(.home-rooms) > section .container {
   background: none;
   box-shadow: none;
@@ -73,6 +147,9 @@
   padding: 1.4rem 1.2rem;
 }
 
+/* Undo the drop-cap first-letter rule from styles.css.  The retro theme
+   doesn't use oversized initial letters, so float, font-size, line-height,
+   padding, colour, and font-family are all reset to inherit. */
 .vg-page main:not(.home-rooms) > section .container p:first-of-type::first-letter {
   float: none;
   font-size: inherit;
@@ -83,6 +160,15 @@
 }
 
 
+/* --------------------------------------------------------------------------
+ *  4. BORDER-RADIUS RESET
+ * --------------------------------------------------------------------------
+ *  The shared stylesheet applies a global border-radius with !important to
+ *  many elements.  Skeuomorphic hardware parts (knobs, LEDs, joystick, etc.)
+ *  need their own specific border-radius (often circular).  Setting them to
+ *  `initial !important` here clears the inherited value so each component
+ *  can set its own radius without fighting specificity.
+ * -------------------------------------------------------------------------- */
 .vg-page .vg-tv-knob,
 .vg-page .vg-tv-led,
 .vg-page .vg-console-led,
@@ -95,17 +181,33 @@
 }
 
 
-/* Shared animation primitives for CRT/arcade effects. */
+/* --------------------------------------------------------------------------
+ *  5. @KEYFRAMES -- ANIMATION PRIMITIVES
+ * --------------------------------------------------------------------------
+ *  Four reusable keyframe sequences that drive the retro UI effects used
+ *  throughout the page.
+ * -------------------------------------------------------------------------- */
+
+/* vg-blink  --  A hard on/off blink used for the LED power indicator and
+   the blinking cursor on the screen.  `step-end` in the animation timing
+   prevents smooth fading, giving it a digital feel. */
 @keyframes vg-blink {
   0%, 100% { opacity: 1; }
   50% { opacity: 0; }
 }
 
+/* vg-ticker-scroll  --  Translates the ticker text to the left by exactly
+   half its total width.  The HTML duplicates the text so the second copy
+   seamlessly fills the gap as the first scrolls out, producing an infinite
+   marquee loop. */
 @keyframes vg-ticker-scroll {
   0% { transform: translateX(0); }
   100% { transform: translateX(-50%); }
 }
 
+/* vg-static  --  Shifts a noise-texture background-position to random-
+   looking offsets at each keyframe step, mimicking analogue TV static.
+   Opacity fades out at the end so the effect can pulse in and out. */
 @keyframes vg-static {
   0% { opacity: 1; background-position: 0 0; }
   25% { background-position: -30px 20px; }
@@ -114,12 +216,23 @@
   100% { opacity: 0; background-position: 10px -20px; }
 }
 
+/* vg-pulse-glow  --  Cycles a red box-shadow between two intensities to
+   create a breathing glow effect.  Used on the arcade START button to
+   draw the user's attention. */
 @keyframes vg-pulse-glow {
   0%, 100% { box-shadow: 0 0 8px var(--vg-red-glow), 0 0 24px var(--vg-red-glow); }
   50% { box-shadow: 0 0 14px var(--vg-red-glow), 0 0 40px var(--vg-red-glow), 0 0 60px rgba(255, 51, 51, 0.15); }
 }
 
 
+/* --------------------------------------------------------------------------
+ *  6. SCANLINE OVERLAY UTILITY + SECTION SPACING
+ * --------------------------------------------------------------------------
+ *  .vg-scanlines is a utility class applied to any element that should
+ *  show CRT-style horizontal scan lines.  A ::before pseudo-element draws
+ *  repeating 1 px bright lines spaced 3 px apart over the element's
+ *  content.  pointer-events:none ensures clicks pass through the overlay.
+ * -------------------------------------------------------------------------- */
 .vg-scanlines {
   position: relative;
 }
@@ -132,18 +245,23 @@
   z-index: 2;
   background: repeating-linear-gradient(
     0deg,
-    rgba(255, 255, 255, 0.04) 0,
-    rgba(255, 255, 255, 0.04) 1px,
-    transparent 1px,
-    transparent 3px
+    rgba(255, 255, 255, 0.04) 0,      /* faint white line */
+    rgba(255, 255, 255, 0.04) 1px,     /* 1 px tall */
+    transparent 1px,                    /* gap starts */
+    transparent 3px                     /* gap ends -- 3 px pitch */
   );
 }
 
+/* Applies the blink keyframe to any element with the .vg-blink class.
+   step-end timing makes it flash sharply rather than fade. */
 .vg-blink {
   animation: vg-blink 1s step-end infinite;
 }
 
 
+/* Vertical rhythm: each <section> inside main gets top padding equal to
+   the section-gap token, and the <main> itself gets matching bottom
+   padding to balance the last section. */
 .vg-page main:not(.home-rooms) > section {
   padding: var(--vg-section-gap) 0 0;
 }
@@ -153,7 +271,20 @@
 }
 
 
-/* Hero marquee shell and title treatment. */
+/* --------------------------------------------------------------------------
+ *  7. HERO MARQUEE
+ * --------------------------------------------------------------------------
+ *  The hero area at the top of the page presents the page title as a neon
+ *  sign above a retro dot-matrix ticker.  It uses three layers:
+ *
+ *    .vg-hero           -- outer wrapper, hides overflow
+ *    .vg-hero-grid      -- absolute-positioned cyan grid overlay
+ *    .vg-hero-inner     -- z-indexed content (title + subtitle + ticker)
+ * -------------------------------------------------------------------------- */
+
+/* Outer hero wrapper -- relative positioning establishes the coordinate
+   system for the absolute grid overlay.  overflow:hidden clips the grid
+   and ticker at the edges. */
 .vg-hero {
   position: relative;
   overflow: hidden;
@@ -161,6 +292,19 @@
   text-align: center;
 }
 
+/* Full-bleed cyan grid overlay that sits behind the title text.
+   Three gradient layers compose the effect:
+
+     Layer 1: A vertical fade to dark at the bottom so the grid
+              doesn't compete with the ticker below.
+     Layer 2: Vertical cyan lines every 60 px (repeating-linear-gradient
+              at 90 deg).
+     Layer 3: Horizontal cyan lines every 60 px (repeating-linear-gradient
+              at 0 deg).
+
+   Together they form a perspective-less wireframe grid reminiscent of
+   80s sci-fi computer graphics.  Opacity is turned down to 0.6 so the
+   grid remains subtle. */
 .vg-hero-grid {
   position: absolute;
   inset: 0;
@@ -184,12 +328,20 @@
   opacity: 0.6;
 }
 
+/* Inner content layer -- z-index:1 lifts title and subtitle above the
+   grid overlay so they are readable. */
 .vg-hero-inner {
   position: relative;
   z-index: 1;
   padding: 2rem 1.2rem 1.6rem;
 }
 
+/* Page title -- displayed in the chunky pixel font with responsive sizing
+   via clamp() (minimum 1.6 rem, preferred 4.5 vw, maximum 3.2 rem).
+   Three layers of cyan text-shadow create the neon "bloom" effect:
+     1. tight 6 px glow  -- core brightness
+     2. medium 20 px glow -- inner halo
+     3. wide 40 px glow   -- outer atmospheric haze */
 .vg-hero-title {
   font-family: var(--vg-font-pixel);
   font-size: clamp(1.6rem, 4.5vw, 3.2rem);
@@ -204,6 +356,8 @@
     0 0 40px rgba(0, 255, 255, 0.15);
 }
 
+/* Subtitle -- a quieter monospace label beneath the title.  The lower
+   opacity and lack of text-shadow keep it subordinate to the headline. */
 .vg-hero-subtitle {
   margin-top: 1rem;
   font-family: var(--vg-font-mono);
@@ -213,6 +367,10 @@
   text-transform: uppercase;
 }
 
+/* Ticker bar -- a thin horizontal strip that scrolls news/updates across
+   the screen.  The background is a three-stop horizontal gradient (dark ->
+   slightly lighter -> dark) that gives it a subtle center highlight.
+   Top and bottom 1 px borders delineate it from surrounding content. */
 .vg-ticker {
   position: relative;
   z-index: 1;
@@ -224,6 +382,12 @@
   border-bottom: 1px solid var(--vg-border);
 }
 
+/* Ticker text -- inline-block keeps the text on one line; white-space:
+   nowrap prevents wrapping.  The green colour + green text-shadow mimic
+   a dot-matrix LED display.  The vg-ticker-scroll animation translates
+   the element leftward by 50 % over 20 s in a linear loop.  Because the
+   HTML contains two copies of the string end-to-end, once the first copy
+   scrolls out the second is in place, and the animation resets invisibly. */
 .vg-ticker-text {
   display: inline-block;
   white-space: nowrap;
@@ -237,7 +401,17 @@
 }
 
 
-/* Two-column "Now Playing" layout (modern + retro devices). */
+/* --------------------------------------------------------------------------
+ *  8. "NOW PLAYING" SECTION
+ * --------------------------------------------------------------------------
+ *  This section shows what games are currently being played.  It uses a
+ *  two-column grid: one column holds a CRT TV skeuomorph (for modern
+ *  games), the other holds a retro console unit (for classic games).
+ * -------------------------------------------------------------------------- */
+
+/* Two-column grid container -- each column gets an equal share of space
+   thanks to repeat(2, minmax(0,1fr)).  align-items:start prevents
+   shorter columns from stretching to match the taller one. */
 .vg-now-grid {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -245,32 +419,52 @@
   align-items: start;
 }
 
+/* Prevent columns from exceeding their grid track when content (like
+   long game titles) is wider than the available space. */
 .vg-now-column {
   min-width: 0;
 }
 
+/* Centre the TV and console within their grid column and cap their width
+   so they don't become uncomfortably wide on very large screens. */
 .vg-now-column .vg-tv,
 .vg-now-column .vg-console-unit {
   max-width: 640px;
   margin: 0 auto;
 }
 
+/* Stand-alone TV max-width (used when the TV appears outside the grid). */
 .vg-tv {
   max-width: 640px;
   margin: 0 auto;
 }
 
+/* --------------------------------------------------------------------------
+ *  8a. CRT TV -- Plastic Shell
+ * --------------------------------------------------------------------------
+ *  The TV shell mimics a late-80s / early-90s CRT television set with a
+ *  moulded plastic casing.  A diagonal gradient from light to dark gray
+ *  suggests a light source from the upper-left.
+ *
+ *  Four box-shadow layers add depth:
+ *    1. drop shadow beneath the TV to "seat" it on the page
+ *    2. inset 1 px bright edge -- a highlight catching the light
+ *    3. inset 2 px dark edge  -- a groove in the plastic moulding
+ *    4. inset bottom shadow   -- darker plastic underside
+ * -------------------------------------------------------------------------- */
 .vg-tv-shell {
   position: relative;
   padding: 0.8rem;
   background: linear-gradient(152deg, var(--vg-plastic-light), var(--vg-plastic-mid) 38%, var(--vg-plastic-dark) 100%);
   box-shadow:
-    0 14px 28px rgba(0, 0, 0, 0.6),
-    inset 0 0 0 1px rgba(159, 165, 177, 0.15),
-    inset 0 0 0 2px rgba(37, 39, 44, 0.7),
-    inset 0 -14px 18px rgba(0, 0, 0, 0.25);
+    0 14px 28px rgba(0, 0, 0, 0.6),           /* drop shadow on the "desk" */
+    inset 0 0 0 1px rgba(159, 165, 177, 0.15), /* bright highlight ring */
+    inset 0 0 0 2px rgba(37, 39, 44, 0.7),     /* dark groove ring */
+    inset 0 -14px 18px rgba(0, 0, 0, 0.25);    /* underside shadow */
 }
 
+/* Badge strip between the shell and screen -- shows a brand label on the
+   left and an LED indicator on the right, just like a real TV. */
 .vg-tv-badge {
   display: flex;
   align-items: center;
@@ -279,6 +473,8 @@
   min-height: 1.2rem;
 }
 
+/* Faux brand name in small monospace caps, coloured to look stamped
+   into the plastic. */
 .vg-tv-brand {
   font-family: var(--vg-font-mono);
   font-size: 0.62rem;
@@ -287,6 +483,9 @@
   color: #b8bcc6;
 }
 
+/* Power LED -- a tiny circle with a radial gradient from bright red-orange
+   at the highlight point (40 % from left, 35 % from top) fading to deep
+   red.  The box-shadow adds a coloured glow around it. */
 .vg-tv-led {
   width: 8px;
   height: 8px;
@@ -295,21 +494,40 @@
   box-shadow: 0 0 6px rgba(255, 50, 20, 0.5);
 }
 
+/* Green variant of the LED -- used when the TV is "on". */
 .vg-tv-led--green {
   background: radial-gradient(circle at 40% 35%, #66ff44, #22cc00 60%, #008800);
   box-shadow: 0 0 6px rgba(50, 255, 20, 0.5);
 }
 
+/* --------------------------------------------------------------------------
+ *  8b. CRT TV -- Screen Bezel
+ * --------------------------------------------------------------------------
+ *  The screen sits inside the shell and represents the recessed plastic
+ *  bezel around the glass tube.  Its dark gradient and inset shadows create
+ *  the illusion of depth -- the glass sits "behind" the bezel lip.
+ * -------------------------------------------------------------------------- */
 .vg-tv-screen {
   position: relative;
   padding: 0.5rem;
   background: linear-gradient(145deg, rgba(16, 19, 24, 0.98), rgba(3, 4, 7, 0.98));
   box-shadow:
-    inset 0 0 0 1px rgba(90, 95, 106, 0.2),
-    inset 0 0 0 2px rgba(7, 8, 12, 0.85),
-    inset 0 10px 14px rgba(0, 0, 0, 0.35);
+    inset 0 0 0 1px rgba(90, 95, 106, 0.2),    /* subtle bright edge */
+    inset 0 0 0 2px rgba(7, 8, 12, 0.85),       /* dark recess */
+    inset 0 10px 14px rgba(0, 0, 0, 0.35);      /* top-lip shadow */
 }
 
+/* --------------------------------------------------------------------------
+ *  8c. CRT TV -- Screen Surface  (warm amber CRT glow)
+ * --------------------------------------------------------------------------
+ *  The innermost surface represents the phosphor-coated glass of the CRT.
+ *  Two gradient layers create a warm amber hot-spot near the centre (where
+ *  the electron beam is brightest) fading to near-black at the edges.
+ *
+ *  box-shadow:
+ *    1. inset 1 px amber ring  -- subtle edge glow of the phosphor
+ *    2. inset 28 px dark wash  -- vignette darkening toward the corners
+ * -------------------------------------------------------------------------- */
 .vg-tv-screen-surface {
   position: relative;
   min-height: 260px;
@@ -324,6 +542,15 @@
 }
 
 
+/* Scanlines + warm top-wash via ::before pseudo-element.
+   Three gradient layers stacked:
+
+     Layer 1: A top-down amber wash that fades out by 24 % -- simulates the
+              brighter area at the top of an aging CRT.
+     Layer 2: Repeating horizontal amber lines (1 px on, 2 px off) that
+              mimic the visible scan lines of a CRT display.
+     Layer 3: Left and right edge darkening (vertical vignette) to round
+              the luminance toward the screen edges. */
 .vg-tv-screen-surface::before {
   content: "";
   position: absolute;
@@ -343,6 +570,13 @@
 }
 
 
+/* Glare / reflection highlight via ::after pseudo-element.
+   Two gradient layers:
+
+     Layer 1: A small bright spot near the upper-left (22 %, 14 %) that
+              simulates room light reflecting off the curved CRT glass.
+     Layer 2: A bottom shadow that darkens the lower portion of the
+              screen, adding to the domed-glass illusion. */
 .vg-tv-screen-surface::after {
   content: "";
   position: absolute;
@@ -354,6 +588,9 @@
     linear-gradient(180deg, transparent 72%, rgba(6, 5, 3, 0.4) 100%);
 }
 
+/* Channel number indicator -- positioned in the top-right corner of the
+   screen surface.  It uses the small pixel font and amber colour at
+   reduced opacity to subtly label the "channel", just like old TVs. */
 .vg-tv-channel {
   position: absolute;
   top: 0.6rem;
@@ -366,6 +603,9 @@
   text-shadow: 0 0 4px var(--vg-amber-glow);
 }
 
+/* Section heading rendered on the CRT screen -- styled to look like amber
+   phosphor text with a multi-layer neon glow.  z-index:4 keeps it above
+   both the scanline and glare overlays. */
 .vg-screen-heading {
   position: relative;
   z-index: 4;
@@ -378,6 +618,20 @@
   margin-bottom: 1.2rem;
 }
 
+/* --------------------------------------------------------------------------
+ *  8d. Game List (Now Playing items)
+ * --------------------------------------------------------------------------
+ *  Each game in the list is a grid row with three columns:
+ *    - rank  (small numbering)
+ *    - title + meta  (game name and platform / status)
+ *    - hltb  (HowLongToBeat completion time estimates)
+ *
+ *  z-index:4 ensures the text renders above the scanline and glare layers
+ *  that sit on the screen surface.
+ * -------------------------------------------------------------------------- */
+
+/* List container -- removes default list styling and lifts content above
+   the CRT overlay layers. */
 .vg-now-list {
   position: relative;
   z-index: 4;
@@ -386,6 +640,9 @@
   padding: 0;
 }
 
+/* Individual game row -- a 3-column grid using named areas so children
+   can be placed by semantic name.  The amber colour and text-shadow keep
+   the text looking like it's being rendered on the CRT phosphor. */
 .vg-now-item {
   display: grid;
   grid-template-columns: 2.4rem minmax(0, 1fr) auto;
@@ -402,10 +659,14 @@
   text-shadow: 0 0 3px var(--vg-amber-glow);
 }
 
+/* Remove the bottom border on the last item so it doesn't double up
+   with the section boundary. */
 .vg-now-item:last-child {
   border-bottom: none;
 }
 
+/* Rank number -- small pixel font at reduced opacity so it acts as a
+   subtle ordinal label without competing with the title. */
 .vg-now-rank {
   grid-area: rank;
   font-family: var(--vg-font-pixel-sm);
@@ -413,12 +674,16 @@
   opacity: 0.6;
 }
 
+/* Game title -- bold for emphasis; min-width:0 prevents the text from
+   overflowing its grid track when very long. */
 .vg-now-title {
   grid-area: title;
   font-weight: 700;
   min-width: 0;
 }
 
+/* Secondary metadata line (platform, progress %).  Smaller font at 50 %
+   opacity keeps it subordinate to the title. */
 .vg-now-meta {
   grid-area: meta;
   font-size: 0.72rem;
@@ -428,6 +693,17 @@
   line-height: 1.35;
 }
 
+/* --------------------------------------------------------------------------
+ *  8e. HLTB (How Long To Beat) Column Headers + Data
+ * --------------------------------------------------------------------------
+ *  Three fixed-width columns (5 ch each) display Main, Main+, and
+ *  Completionist times.  Using ch units means the column width scales
+ *  with the monospace font, keeping numbers neatly aligned.
+ * -------------------------------------------------------------------------- */
+
+/* Header row for the HLTB columns.  margin-left:auto pushes it to the
+   right edge; width:18ch fits three 5ch columns plus gaps.  The tiny
+   pixel font and low opacity make it a quiet label row. */
 .vg-now-hltb-header {
   position: relative;
   z-index: 4;
@@ -449,6 +725,9 @@
   border-bottom: 1px solid rgba(255, 179, 0, 0.15);
 }
 
+/* Retro variant of the HLTB header -- switches to green phosphor colour
+   and slightly narrower columns (4.5 ch) to fit the smaller retro console
+   screen. */
 .vg-now-hltb-header--retro {
   color: var(--vg-green);
   text-shadow: 0 0 3px var(--vg-green-glow);
@@ -460,6 +739,10 @@
   border-bottom-color: rgba(51, 255, 51, 0.15);
 }
 
+/* HLTB data cells within each game row.  Uses the same 3-column grid
+   layout as the header so columns align.  tabular-nums forces each digit
+   to the same width for perfect columnar alignment.  flex-shrink:0
+   prevents the HLTB column from being compressed by long titles. */
 .vg-now-hltb {
   grid-area: hltb;
   font-family: var(--vg-font-pixel-sm);
@@ -476,6 +759,9 @@
   flex-shrink: 0;
 }
 
+/* Each HLTB span is right-aligned with inline-flex so the numbers sit
+   flush against the column's right edge.  white-space:nowrap prevents
+   hour values from wrapping mid-number. */
 .vg-now-hltb > span {
   display: inline-flex;
   align-items: baseline;
@@ -483,12 +769,24 @@
   white-space: nowrap;
 }
 
+/* When the LCD screen is used as a list (retro console), tighten the
+   padding and set text-align to left for readability. */
 .vg-console-lcd--list {
   padding: 0.7rem 0.75rem;
   line-height: 1.45;
   text-align: left;
 }
 
+/* --------------------------------------------------------------------------
+ *  8f. Retro List Colour Overrides
+ * --------------------------------------------------------------------------
+ *  The retro console displays games in green phosphor rather than amber.
+ *  These rules override the default amber palette for items inside a
+ *  .vg-now-list--retro container.
+ * -------------------------------------------------------------------------- */
+
+/* Switch item text and glow from amber to green, and update the separator
+   border to a matching green tint. */
 .vg-now-list--retro .vg-now-item {
   color: var(--vg-green);
   text-shadow: 0 0 3px var(--vg-green-glow);
@@ -496,10 +794,14 @@
   text-align: left;
 }
 
+/* Metadata text in the retro list uses a softer, desaturated green so it
+   remains readable without overpowering the title. */
 .vg-now-list--retro .vg-now-meta {
   color: rgba(190, 255, 180, 0.72);
 }
 
+/* HLTB times in the retro list also switch to green, with slightly
+   narrower columns matching the retro header variant. */
 .vg-now-list--retro .vg-now-hltb {
   color: rgba(180, 255, 170, 0.92);
   text-shadow: 0 0 3px rgba(120, 240, 120, 0.25);
@@ -509,6 +811,14 @@
   width: 16ch;
 }
 
+/* --------------------------------------------------------------------------
+ *  8g. CRT TV -- Controls & Stand
+ * --------------------------------------------------------------------------
+ *  Below the screen, a row of knobs and a stand complete the TV illusion.
+ * -------------------------------------------------------------------------- */
+
+/* Control strip -- flexbox row aligned to the right, matching how vintage
+   TVs placed channel/volume knobs on one side. */
 .vg-tv-controls {
   display: flex;
   align-items: center;
@@ -517,6 +827,10 @@
   padding: 0.5rem 0.4rem 0.2rem;
 }
 
+/* Individual knob -- a 24 px circle with a radial gradient that fakes a
+   spherical highlight on the upper-left.  Three box-shadows: a dark inset
+   ring (groove), a bottom inset shadow (undercut), and an outer drop
+   shadow (depth). */
 .vg-tv-knob {
   width: 24px;
   height: 24px;
@@ -529,6 +843,9 @@
     0 2px 4px rgba(0, 0, 0, 0.4);
 }
 
+/* TV stand -- a short horizontal bar centred below the shell.  The
+   gradient darkens downward and a bottom-only border-radius rounds the
+   feet.  The drop shadow grounds it on the surface. */
 .vg-tv-stand {
   width: 60%;
   height: 12px;
@@ -539,6 +856,17 @@
 }
 
 
+/* --------------------------------------------------------------------------
+ *  9. RETRO CONSOLE UNIT
+ * --------------------------------------------------------------------------
+ *  A skeuomorphic top-loading game console (NES / Famicom style).
+ *  Components from top to bottom:
+ *    - Cartridge sticking out of the slot
+ *    - Console body with cartridge slot, LCD info screen, controls, ports
+ * -------------------------------------------------------------------------- */
+
+/* Wrapper -- centres the console and constrains its width.  flex-column
+   stacks the cartridge above the console body. */
 .vg-console-unit {
   max-width: 480px;
   margin: 0 auto;
@@ -547,6 +875,14 @@
   align-items: center;
 }
 
+/* --------------------------------------------------------------------------
+ *  9a. Cartridge
+ * --------------------------------------------------------------------------
+ *  The cartridge sits above the console and overlaps it by 20 px
+ *  (negative margin-bottom) so it looks physically inserted into the slot.
+ *  z-index:1 keeps it above the console body's z-index:2, which in turn
+ *  hides the overlap behind the slot lip.
+ * -------------------------------------------------------------------------- */
 .vg-cartridge {
   position: relative;
   z-index: 1;
@@ -554,6 +890,9 @@
   margin-bottom: -20px;
 }
 
+/* Label area -- a light beige gradient mimics the paper sticker on a
+   game cartridge.  The inset box-shadow adds a thin dark border; the
+   outer shadow gives it depth. */
 .vg-cartridge-label {
   background: linear-gradient(180deg, #c8c4bf, #a8a4a0);
   padding: 0.5rem;
@@ -562,6 +901,8 @@
     0 4px 12px rgba(0, 0, 0, 0.4);
 }
 
+/* The label image fills the label container, displayed at the browser's
+   default smooth scaling (image-rendering: auto). */
 .vg-cartridge-label img {
   display: block;
   width: 100%;
@@ -569,6 +910,10 @@
   image-rendering: auto;
 }
 
+/* Grip ridges at the bottom of the cartridge -- the repeating-linear-
+   gradient creates thin vertical dark stripes every 6 px, overlaid on a
+   lighter gray base.  This mimics the textured grip found on real
+   cartridges to help with removal. */
 .vg-cartridge-grip {
   height: 16px;
   background:
@@ -583,6 +928,21 @@
   box-shadow: inset 0 -2px 3px rgba(0, 0, 0, 0.2);
 }
 
+/* --------------------------------------------------------------------------
+ *  9b. Console Body
+ * --------------------------------------------------------------------------
+ *  The main console casing.  z-index:2 (higher than the cartridge's 1)
+ *  ensures the console's top edge covers the cartridge overlap, making
+ *  it look like the cart is inserted into a slot.
+ *
+ *  The gradient runs from light gray at the top to medium gray at the
+ *  bottom, mimicking the moulded-plastic look of a Super Famicom or NES.
+ *
+ *  box-shadow layers:
+ *    1. inset dark border ring
+ *    2. inset top highlight (simulates top-edge light catch)
+ *    3. outer drop shadow for depth on the page
+ * -------------------------------------------------------------------------- */
 .vg-console {
   position: relative;
   z-index: 2;
@@ -596,6 +956,10 @@
     0 12px 24px rgba(0, 0, 0, 0.5);
 }
 
+/* Cartridge slot -- a dark recessed rectangle centred at the top of the
+   console.  translateX(-50%) combined with left:50% achieves horizontal
+   centring for an absolutely-positioned element.  Inset shadow creates
+   the slot depth; the outer 1 px highlight simulates a bevelled edge. */
 .vg-console-slot {
   position: absolute;
   top: 0;
@@ -609,10 +973,14 @@
     0 1px 0 rgba(255, 255, 255, 0.15);
 }
 
+/* Face area below the slot -- adds top padding to clear the slot
+   overlap before any child elements are rendered. */
 .vg-console-face {
   padding-top: 0.8rem;
 }
 
+/* Label text printed on the console face above the LCD window.
+   Small pixel font in a dark brownish-gray to look stamped into plastic. */
 .vg-console-lcd-heading {
   font-family: var(--vg-font-pixel);
   font-size: 0.56rem;
@@ -623,6 +991,17 @@
   text-align: center;
 }
 
+/* --------------------------------------------------------------------------
+ *  9c. Console LCD Screen
+ * --------------------------------------------------------------------------
+ *  A small green-phosphor display that shows the currently loaded game.
+ *  The background uses a radial gradient to simulate the brighter centre
+ *  of an old LCD/LED panel fading to near-black at the edges.
+ *
+ *  box-shadow:
+ *    1. inset green tint ring -- faint edge glow
+ *    2. inset dark vignette   -- recessed glass effect
+ * -------------------------------------------------------------------------- */
 .vg-console-lcd {
   background:
     radial-gradient(circle at 50% 42%, rgba(80, 160, 70, 0.15), rgba(20, 40, 18, 0.9) 100%),
@@ -639,12 +1018,17 @@
   line-height: 1.6;
 }
 
+/* Game title displayed on the LCD -- slightly larger than the surrounding
+   text so it stands out as the primary information. */
 .vg-lcd-title {
   display: block;
   font-size: 0.74rem;
   margin-bottom: 0.2rem;
 }
 
+/* Platform and status labels shown beneath the title on the LCD.
+   inline-block keeps them on the same line; reduced opacity differentiates
+   them from the title. */
 .vg-lcd-platform,
 .vg-lcd-status {
   display: inline-block;
@@ -653,6 +1037,12 @@
   margin: 0 0.3rem;
 }
 
+/* --------------------------------------------------------------------------
+ *  9d. Console Hardware Controls
+ * --------------------------------------------------------------------------
+ *  A row of physical buttons / indicators below the LCD: power LED,
+ *  power label, eject bar, and reset label -- laid out with flexbox.
+ * -------------------------------------------------------------------------- */
 .vg-console-controls {
   display: flex;
   align-items: center;
@@ -661,6 +1051,8 @@
   padding: 0 0.2rem;
 }
 
+/* Power LED -- identical construction to the TV LED (radial gradient
+   circle with green highlight and glow), but slightly smaller at 6 px. */
 .vg-console-led {
   width: 6px;
   height: 6px;
@@ -669,6 +1061,8 @@
   box-shadow: 0 0 6px rgba(50, 255, 20, 0.5);
 }
 
+/* Tiny embossed labels next to the POWER and RESET buttons.  The muted
+   brownish-gray colour mimics text stamped into the plastic casing. */
 .vg-console-power-label,
 .vg-console-reset-label {
   font-family: var(--vg-font-mono);
@@ -678,6 +1072,10 @@
   text-transform: uppercase;
 }
 
+/* Eject bar -- a long, thin horizontal button styled as a raised ridge
+   of lighter plastic.  flex:1 makes it fill all remaining horizontal
+   space between the POWER and RESET labels.  Inset shadows add a top
+   highlight (light catch) and a bottom shadow (undercut). */
 .vg-console-eject {
   flex: 1;
   height: 6px;
@@ -687,6 +1085,12 @@
     inset 0 -1px 2px rgba(0, 0, 0, 0.2);
 }
 
+/* --------------------------------------------------------------------------
+ *  9e. Controller Ports
+ * --------------------------------------------------------------------------
+ *  Two rectangular dark recesses at the bottom of the console face, styled
+ *  to look like the controller plug-in ports on a NES / SNES.
+ * -------------------------------------------------------------------------- */
 .vg-console-ports {
   display: flex;
   gap: 1rem;
@@ -694,6 +1098,9 @@
   margin-top: 0.8rem;
 }
 
+/* Each port is a dark rectangle with an inset shadow that creates the
+   illusion of a recessed socket, plus a thin bottom highlight that
+   simulates the bevelled lip of the opening. */
 .vg-console-ports span {
   width: 50px;
   height: 14px;
@@ -704,18 +1111,32 @@
 }
 
 
+/* --------------------------------------------------------------------------
+ *  10. ARCADE CABINET
+ * --------------------------------------------------------------------------
+ *  A skeuomorphic arcade machine used to showcase the game pipeline /
+ *  backlog.  The structure from top to bottom:
+ *    - Marquee header (logo)
+ *    - Screen (green phosphor CRT)
+ *    - Control panel (joystick + START button)
+ *    - Coin slot text
+ *
+ *  The cabinet body has a faint vertical wood-stripe texture overlaid on
+ *  a dark indigo base, recalling the real wood-sided cabinets of the
+ *  early 1980s.
+ * -------------------------------------------------------------------------- */
 .vg-arcade-cabinet {
   max-width: 520px;
   margin: 0 auto;
   background:
     repeating-linear-gradient(
       90deg,
-      rgba(80, 50, 25, 0.06) 0,
+      rgba(80, 50, 25, 0.06) 0,        /* thin warm stripe */
       rgba(80, 50, 25, 0.06) 1px,
       transparent 1px,
-      transparent 8px
+      transparent 8px                    /* 8 px repeat gives subtle grain */
     ),
-    linear-gradient(180deg, #1a1a2e, #12121e);
+    linear-gradient(180deg, #1a1a2e, #12121e);  /* dark indigo base */
   box-shadow:
     0 16px 32px rgba(0, 0, 0, 0.6),
     inset 0 0 0 1px rgba(255, 255, 255, 0.05);
@@ -723,6 +1144,9 @@
   overflow: hidden;
 }
 
+/* Marquee header -- the illuminated sign at the top of the cabinet.
+   A faint warm glow gradient at the top simulates back-lit translucent
+   plastic, sitting over the panel-to-dark base gradient. */
 .vg-arcade-marquee {
   padding: 1rem;
   text-align: center;
@@ -732,16 +1156,28 @@
   border-bottom: 2px solid var(--vg-border);
 }
 
+/* Logo image inside the marquee -- constrained to 220 px width and
+   slightly brightened via the brightness filter to pop against the
+   dark background. */
 .vg-pipeline-logo {
   max-width: 220px;
   height: auto;
   filter: brightness(1.1);
 }
 
+/* Screen bezel -- a thin padding wrapper around the phosphor surface. */
 .vg-arcade-screen {
   padding: 0.8rem;
 }
 
+/* --------------------------------------------------------------------------
+ *  10a. Arcade Screen Surface  (green phosphor CRT)
+ * --------------------------------------------------------------------------
+ *  Same construction technique as the TV screen surface, but in green
+ *  instead of amber.  The radial gradient hot-spot sits at (50 %, 42 %)
+ *  and fades to near-black, while the inset shadows create vignetting
+ *  and a recessed-glass effect.
+ * -------------------------------------------------------------------------- */
 .vg-arcade-screen-surface {
   position: relative;
   min-height: 220px;
@@ -756,6 +1192,8 @@
 }
 
 
+/* Scanline overlay for the arcade screen -- green-tinted horizontal
+   lines (1 px on, 2 px off) drawn by the ::before pseudo-element. */
 .vg-arcade-screen-surface::before {
   content: "";
   position: absolute;
@@ -772,6 +1210,8 @@
     );
 }
 
+/* Arcade screen title -- centred green pixel text with a neon glow,
+   acting as a heading within the screen surface. */
 .vg-arcade-title {
   position: relative;
   z-index: 3;
@@ -785,6 +1225,8 @@
   margin-bottom: 0.6rem;
 }
 
+/* Description text below the arcade title -- uses the mono font at
+   reduced opacity for a "secondary info" feel on the green CRT. */
 .vg-arcade-desc {
   position: relative;
   z-index: 3;
@@ -795,6 +1237,8 @@
   margin-bottom: 1rem;
 }
 
+/* Cover-art carousel container -- a fixed 160x160 box that holds
+   absolutely-positioned game cover images, only one visible at a time. */
 .vg-arcade-covers {
   position: relative;
   z-index: 3;
@@ -803,6 +1247,9 @@
   margin: 0 auto;
 }
 
+/* Each cover image fills the container; opacity:0 hides inactive covers.
+   object-fit:contain ensures the artwork scales without cropping.
+   A 0.8 s ease transition on opacity creates a smooth crossfade. */
 .vg-arcade-covers .vg-cover {
   position: absolute;
   inset: 0;
@@ -813,10 +1260,18 @@
   transition: opacity 0.8s ease;
 }
 
+/* The currently active cover becomes fully visible. */
 .vg-arcade-covers .vg-cover.is-active {
   opacity: 1;
 }
 
+/* --------------------------------------------------------------------------
+ *  10b. Arcade Control Panel
+ * --------------------------------------------------------------------------
+ *  A horizontal strip with a joystick on one side and a START button on
+ *  the other, separated by a gap.  The background gradient and top border
+ *  visually separate the controls from the screen above.
+ * -------------------------------------------------------------------------- */
 .vg-arcade-controls {
   display: flex;
   align-items: center;
@@ -827,6 +1282,9 @@
   border-top: 1px solid var(--vg-border);
 }
 
+/* Joystick ball top -- a 32 px circle with a dark radial gradient that
+   simulates the spherical highlight of a ball-top joystick.  The inset
+   bright ring and outer drop shadow add dimensionality. */
 .vg-arcade-joystick {
   width: 32px;
   height: 32px;
@@ -838,6 +1296,11 @@
     0 4px 8px rgba(0, 0, 0, 0.5);
 }
 
+/* START button -- a pill-shaped (border-radius: 21 px on a 42 px tall
+   element) red button with a radial gradient that simulates a lit,
+   slightly convex surface.  The vg-pulse-glow animation makes the red
+   glow breathe in and out, drawing the user's eye.  On hover the button
+   scales up slightly for tactile feedback. */
 .vg-arcade-start-btn {
   display: inline-flex;
   align-items: center;
@@ -856,18 +1319,21 @@
   text-decoration: none;
   cursor: pointer;
   box-shadow:
-    inset 0 0 0 2px rgba(255, 100, 80, 0.3),
-    0 0 8px var(--vg-red-glow),
-    0 0 24px var(--vg-red-glow);
+    inset 0 0 0 2px rgba(255, 100, 80, 0.3),   /* inner bright ring */
+    0 0 8px var(--vg-red-glow),                  /* tight outer glow */
+    0 0 24px var(--vg-red-glow);                 /* wide outer glow */
   animation: vg-pulse-glow 2s ease-in-out infinite;
   transition: transform 0.15s ease;
 }
 
+/* Hover state -- scales the button up by 5 % and keeps text white. */
 .vg-arcade-start-btn:hover {
   transform: scale(1.05);
   color: #fff;
 }
 
+/* "INSERT COIN" text at the bottom of the cabinet -- very small, dim,
+   and uppercase, echoing the coin-slot messaging on real arcade machines. */
 .vg-arcade-coin {
   padding: 0.5rem 1rem 0.8rem;
   text-align: center;
@@ -879,31 +1345,51 @@
 }
 
 
+/* --------------------------------------------------------------------------
+ *  11. FEATURE GRID LAYOUT
+ * --------------------------------------------------------------------------
+ *  A single-column grid used to stack feature components (arcade cabinet,
+ *  console TV) with consistent vertical spacing.  On wider screens a
+ *  media query elsewhere may switch this to multi-column.
+ * -------------------------------------------------------------------------- */
 .vg-feature-grid {
   display: grid;
   grid-template-columns: minmax(0, 1fr);
   gap: var(--vg-section-gap);
 }
 
+/* Prevent feature columns from overflowing their grid track. */
 .vg-feature-col {
   min-width: 0;
 }
 
+/* Centre the arcade cabinet and console TV within their column. */
 .vg-feature-col .vg-arcade-cabinet,
 .vg-feature-col .vg-console-tv {
   margin: 0 auto;
 }
 
 
+/* Console TV wrapper -- constrains the console-style TV to a comfortable
+   maximum width and centres it horizontally. */
 .vg-console-tv {
   max-width: 820px;
-  margin: 0 auto;
-}
+  margin: 0 auto;}
+
+/* ==========================================================================
+   Console TV Frame
+   ---------------------------------------------------------------------------
+   The "console TV" is a skeuomorphic retro television set that houses the
+   Top 10 Games lists. The frame mimics a wood-grain cabinet from the 1970s.
+   It uses CSS Grid to place the screen area on the left and the channel-dial
+   controls on the right, just like a real vintage TV.
+   ========================================================================== */
 
 .vg-console-tv-frame {
   display: grid;
-  grid-template-columns: 1fr 200px;
+  grid-template-columns: 1fr 200px; /* Screen area gets remaining space; controls get a fixed 200px column */
   background:
+    /* Layer 1: Fine diagonal wood-grain lines — nearly vertical (2deg) for realism */
     repeating-linear-gradient(
       2deg,
       rgba(107, 66, 38, 0.06) 0,
@@ -911,6 +1397,7 @@
       transparent 1px,
       transparent 4px
     ),
+    /* Layer 2: Subtle vertical cross-grain at 90deg for depth */
     repeating-linear-gradient(
       90deg,
       rgba(80, 50, 30, 0.04) 0,
@@ -918,44 +1405,63 @@
       transparent 1px,
       transparent 6px
     ),
+    /* Layer 3: Base dark-brown gradient — the solid wood color underneath the grain */
     linear-gradient(170deg, #5a3820, #3e2612 50%, #2e1a0e 100%);
   box-shadow:
-    0 16px 32px rgba(0, 0, 0, 0.6),
-    inset 0 0 0 1px rgba(120, 80, 40, 0.2),
-    inset 0 1px 0 rgba(200, 150, 80, 0.15);
+    0 16px 32px rgba(0, 0, 0, 0.6),          /* Heavy drop shadow lifts the TV off the page */
+    inset 0 0 0 1px rgba(120, 80, 40, 0.2),   /* Faint inner border simulates a beveled edge */
+    inset 0 1px 0 rgba(200, 150, 80, 0.15);   /* Top highlight catches the light on the wood */
   padding: 1.2rem;
 }
 
+/* ---------------------------------------------------------------------------
+   TV Screen Area — the dark recessed bezel that holds the CRT screen
+   --------------------------------------------------------------------------- */
+
 .vg-console-tv-screen-area {
   padding: 0.5rem;
-  background: linear-gradient(145deg, rgba(16, 19, 24, 0.98), rgba(3, 4, 7, 0.98));
+  background: linear-gradient(145deg, rgba(16, 19, 24, 0.98), rgba(3, 4, 7, 0.98)); /* Near-black gradient mimics the plastic bezel around the tube */
   box-shadow:
-    inset 0 0 0 1px rgba(90, 95, 106, 0.18),
-    inset 0 0 0 2px rgba(7, 8, 12, 0.8);
+    inset 0 0 0 1px rgba(90, 95, 106, 0.18), /* Subtle metallic ring at the bezel edge */
+    inset 0 0 0 2px rgba(7, 8, 12, 0.8);      /* Darker second ring creates depth */
 }
 
+/* ---------------------------------------------------------------------------
+   CRT Screen — the phosphor-green display surface
+   ---------------------------------------------------------------------------
+   Three layers of effects create the classic green-screen CRT look:
+   1. The base element provides the green-tinted background and vignette.
+   2. ::before adds scanlines and a top-edge glow.
+   3. ::after adds a specular highlight (as if light reflects off curved glass).
+   --------------------------------------------------------------------------- */
+
 .vg-console-tv-screen {
-  position: relative;
+  position: relative; /* Establishes positioning context for the ::before and ::after overlays */
   min-height: 380px;
   padding: 1.4rem 1.2rem;
   background:
+    /* Radial vignette: bright green center fading to near-black edges, simulating CRT phosphor bloom */
     radial-gradient(circle at 50% 42%, rgba(110, 190, 92, 0.15), rgba(32, 55, 28, 0.12) 44%, rgba(8, 13, 9, 0.98) 100%),
+    /* Base dark-green tint underneath */
     linear-gradient(180deg, rgba(18, 35, 15, 0.94), rgba(7, 13, 9, 0.98));
   box-shadow:
-    inset 0 0 0 1px rgba(125, 160, 111, 0.15),
-    inset 0 0 28px rgba(0, 0, 0, 0.5);
+    inset 0 0 0 1px rgba(125, 160, 111, 0.15), /* Faint green inner border for the glass edge */
+    inset 0 0 28px rgba(0, 0, 0, 0.5);          /* Deep inner shadow creates the recessed CRT look */
   overflow: hidden;
 }
 
-
+/* CRT scanlines overlay — horizontal lines every 3px mimic the visible
+   raster lines of a real cathode-ray tube, plus a soft top-edge glow */
 .vg-console-tv-screen::before {
   content: "";
   position: absolute;
   inset: 0;
-  pointer-events: none;
+  pointer-events: none; /* Lets clicks pass through to the content underneath */
   z-index: 2;
   background:
+    /* Top-edge glow: a soft greenish-white wash fading down from the top */
     linear-gradient(180deg, rgba(214, 255, 194, 0.06), transparent 24%),
+    /* Horizontal scanlines: 1px green lines spaced 3px apart */
     repeating-linear-gradient(
       0deg,
       rgba(152, 230, 138, 0.08) 0,
@@ -965,7 +1471,8 @@
     );
 }
 
-
+/* CRT specular highlight — a small bright spot in the upper-left quadrant
+   simulating overhead light reflecting off the curved glass tube */
 .vg-console-tv-screen::after {
   content: "";
   position: absolute;
@@ -976,27 +1483,37 @@
     radial-gradient(circle at 20% 12%, rgba(244, 255, 220, 0.1), transparent 28%);
 }
 
+/* ---------------------------------------------------------------------------
+   Top 10 Games Heading — the title rendered on the CRT screen
+   Uses pixel font + green text-shadow glow to look like phosphor text
+   --------------------------------------------------------------------------- */
+
 .vg-top10-heading {
   position: relative;
-  z-index: 4;
+  z-index: 4; /* Sits above all CRT overlay layers (scanlines at z-2, highlight at z-3) */
   font-family: var(--vg-font-pixel);
-  font-size: clamp(0.8rem, 2vw, 1.1rem);
+  font-size: clamp(0.8rem, 2vw, 1.1rem); /* Fluid type: never smaller than 0.8rem, grows with viewport, caps at 1.1rem */
   color: var(--vg-green);
-  text-shadow: 0 0 6px var(--vg-green-glow), 0 0 14px var(--vg-green-glow);
+  text-shadow: 0 0 6px var(--vg-green-glow), 0 0 14px var(--vg-green-glow); /* Double glow for stronger phosphor bloom */
   letter-spacing: 1px;
   text-transform: uppercase;
   margin-bottom: 1rem;
   text-align: center;
 }
 
+/* ---------------------------------------------------------------------------
+   Static Noise Overlay — a fine crosshatch pattern that appears briefly
+   during panel transitions, simulating analog TV static/interference
+   --------------------------------------------------------------------------- */
 
 .vg-top10-static {
-  display: none;
+  display: none; /* Hidden by default; toggled via JS by adding .is-active */
   position: absolute;
   inset: 0;
-  z-index: 10;
+  z-index: 10; /* Renders above all other screen content */
   pointer-events: none;
   background:
+    /* Horizontal noise lines */
     repeating-linear-gradient(
       0deg,
       rgba(255, 255, 255, 0.05) 0,
@@ -1004,6 +1521,7 @@
       transparent 1px,
       transparent 2px
     ),
+    /* Vertical noise lines creating a crosshatch with the horizontal ones */
     repeating-linear-gradient(
       90deg,
       rgba(255, 255, 255, 0.03) 0,
@@ -1013,21 +1531,29 @@
     );
 }
 
+/* When activated, the static fades in with a stepped animation
+   (steps(3) creates a choppy, glitchy feel rather than a smooth fade) */
 .vg-top10-static.is-active {
   display: block;
   animation: vg-static 0.2s steps(3) forwards;
 }
 
+/* ---------------------------------------------------------------------------
+   Top 10 Panels — each panel holds one year's list of games.
+   Only the active panel is visible; the rest are hidden via [hidden].
+   --------------------------------------------------------------------------- */
 
 .vg-top10-panel {
   position: relative;
-  z-index: 4;
+  z-index: 4; /* Above CRT overlays but below static noise */
 }
 
 .vg-top10-panel[hidden] {
-  display: none;
+  display: none; /* Ensures the HTML hidden attribute fully hides the element */
 }
 
+/* Year label shown above the ranked list — smaller and dimmed to act as
+   a subtitle beneath the main heading */
 .vg-top10-year {
   font-family: var(--vg-font-pixel);
   font-size: clamp(0.6rem, 1.4vw, 0.82rem);
@@ -1036,47 +1562,63 @@
   letter-spacing: 2px;
   text-align: center;
   margin-bottom: 0.8rem;
-  opacity: 0.7;
+  opacity: 0.7; /* Dimmed so the year feels secondary to the heading */
 }
+
+/* ---------------------------------------------------------------------------
+   Top 10 List — an ordered list rendered as a numbered ranking using
+   CSS counters instead of native <ol> numbering for full styling control
+   --------------------------------------------------------------------------- */
 
 .vg-top10-list {
-  --vg-top10-row-min-height: 1.5rem;
-  list-style: none;
+  --vg-top10-row-min-height: 1.5rem; /* Custom property so we can calculate total min-height */
+  list-style: none; /* Remove default bullets/numbers — we use CSS counters instead */
   margin: 0;
   padding: 0;
-  counter-reset: top10rank;
-  min-height: calc(var(--vg-top10-row-min-height) * 10);
+  counter-reset: top10rank; /* Initialize the CSS counter named "top10rank" at 0 */
+  min-height: calc(var(--vg-top10-row-min-height) * 10); /* Reserve space for all 10 rows to prevent layout shift */
 }
 
+/* Each list item increments the counter and displays as a flex row */
 .vg-top10-list li {
-  counter-increment: top10rank;
+  counter-increment: top10rank; /* Bump the counter by 1 for each <li> */
   display: flex;
-  align-items: baseline;
+  align-items: baseline; /* Aligns rank number and game name along their text baselines */
   gap: 0.6rem;
   min-height: var(--vg-top10-row-min-height);
   padding: 0.3rem 0;
-  border-bottom: 1px solid rgba(51, 255, 51, 0.06);
+  border-bottom: 1px solid rgba(51, 255, 51, 0.06); /* Very faint green divider */
   font-family: var(--vg-font-mono);
   font-size: 0.78rem;
   color: var(--vg-green);
-  text-shadow: 0 0 3px var(--vg-green-glow);
+  text-shadow: 0 0 3px var(--vg-green-glow); /* Subtle phosphor glow on each line */
 }
 
+/* Remove the divider from the last item to avoid a trailing line */
 .vg-top10-list li:last-child {
   border-bottom: none;
 }
 
+/* Rank number badge — uses a smaller pixel font and is partially transparent
+   so it doesn't compete with the game name for visual attention */
 .vg-rank {
   font-family: var(--vg-font-pixel-sm);
   font-size: 0.62rem;
-  min-width: 2rem;
+  min-width: 2rem; /* Fixed width keeps all rank numbers aligned regardless of digit count */
   opacity: 0.5;
 }
 
+/* Game name takes up remaining horizontal space via flex: 1 */
 .vg-game-name {
   flex: 1;
 }
 
+/* ==========================================================================
+   TV Controls Panel — the right-side column inside the TV frame
+   ---------------------------------------------------------------------------
+   Contains the speaker grille and the channel dial (year selector buttons).
+   Laid out vertically with flexbox, centered horizontally.
+   ========================================================================== */
 
 .vg-console-tv-controls {
   display: flex;
@@ -1086,20 +1628,24 @@
   padding: 0.8rem 0.4rem;
 }
 
+/* Speaker grille — horizontal slats created with a repeating gradient.
+   The alternating light/dark bands mimic the look of stamped speaker holes. */
 .vg-speaker-grille {
   width: 100%;
   height: 80px;
   background:
     repeating-linear-gradient(
       0deg,
-      rgba(160, 120, 70, 0.3) 0,
+      rgba(160, 120, 70, 0.3) 0,    /* Light wood-toned slat */
       rgba(160, 120, 70, 0.3) 2px,
-      rgba(60, 38, 22, 0.6) 2px,
+      rgba(60, 38, 22, 0.6) 2px,    /* Dark gap between slats */
       rgba(60, 38, 22, 0.6) 6px
     );
-  box-shadow: inset 0 0 8px rgba(0, 0, 0, 0.4);
+  box-shadow: inset 0 0 8px rgba(0, 0, 0, 0.4); /* Recessed into the TV cabinet */
 }
 
+/* Channel dial container — a scrollable column of year buttons.
+   max-height + overflow-y: auto adds a scrollbar when there are many years. */
 .vg-channel-dial {
   display: flex;
   flex-direction: column;
@@ -1108,18 +1654,23 @@
   max-height: 280px;
   overflow-y: auto;
   padding: 0.4rem;
-  scrollbar-width: thin;
-  scrollbar-color: rgba(160, 120, 70, 0.4) transparent;
+  scrollbar-width: thin; /* Firefox: use a thinner scrollbar to save space */
+  scrollbar-color: rgba(160, 120, 70, 0.4) transparent; /* Firefox: wood-toned thumb on transparent track */
 }
+
+/* ---------------------------------------------------------------------------
+   Individual Year "Dial" Button — styled as small wooden tabs along the TV
+   panel. Each one switches the CRT screen to that year's Top 10 list.
+   --------------------------------------------------------------------------- */
 
 .vg-dial-year {
   display: block;
   width: 100%;
   padding: 0.32rem 0.4rem;
   border: 1px solid rgba(160, 120, 70, 0.2);
-  border-radius: 2px !important;
-  background: linear-gradient(180deg, rgba(80, 50, 30, 0.4), rgba(50, 30, 18, 0.6));
-  color: rgba(220, 180, 120, 0.6);
+  border-radius: 2px !important; /* !important overrides any global border-radius resets */
+  background: linear-gradient(180deg, rgba(80, 50, 30, 0.4), rgba(50, 30, 18, 0.6)); /* Dark wood button face */
+  color: rgba(220, 180, 120, 0.6); /* Muted amber text */
   font-family: var(--vg-font-pixel-sm);
   font-size: 0.52rem;
   letter-spacing: 1px;
@@ -1128,64 +1679,87 @@
   transition: all 0.15s ease;
 }
 
+/* Hover state: slightly lighter wood tone and brighter text */
 .vg-dial-year:hover {
   background: linear-gradient(180deg, rgba(100, 65, 35, 0.5), rgba(70, 42, 24, 0.7));
   color: rgba(220, 180, 120, 0.9);
   border-color: rgba(160, 120, 70, 0.4);
 }
 
+/* Active/selected state: golden amber tones indicate the currently shown year */
 .vg-dial-year.is-active {
   background: linear-gradient(180deg, rgba(180, 130, 60, 0.5), rgba(120, 80, 35, 0.6));
-  color: #e8c87a;
+  color: #e8c87a; /* Bright gold */
   border-color: rgba(200, 150, 70, 0.6);
-  box-shadow: 0 0 6px rgba(200, 150, 70, 0.2);
+  box-shadow: 0 0 6px rgba(200, 150, 70, 0.2); /* Warm glow around the active button */
 }
+
+/* ---------------------------------------------------------------------------
+   TV Stand / Legs — two small wooden pegs under the TV frame
+   Spaced apart using flexbox justify-content: space-between
+   --------------------------------------------------------------------------- */
 
 .vg-console-tv-legs {
   display: flex;
   justify-content: space-between;
-  padding: 0 2rem;
+  padding: 0 2rem; /* Inset the legs from the TV frame edges */
 }
 
 .vg-console-tv-leg {
   display: inline-block;
 }
 
+/* Each leg is a small rectangle with a wood gradient and a drop shadow */
 .vg-console-tv-legs span {
   display: block;
   width: 16px;
   height: 28px;
-  background: linear-gradient(180deg, var(--vg-wood-mid), var(--vg-wood-dark));
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.4);
+  background: linear-gradient(180deg, var(--vg-wood-mid), var(--vg-wood-dark)); /* Top-to-bottom wood darkening */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.4); /* Shadow grounds the legs visually */
 }
 
+/* ==========================================================================
+   Game Shelf Section
+   ---------------------------------------------------------------------------
+   A display shelf that holds game cartridges (the "Favorites" shelf).
+   The heading uses the cyan accent color to distinguish it from the
+   green CRT sections above.
+   ========================================================================== */
 
 .vg-shelf-heading {
   font-family: var(--vg-font-pixel);
   font-size: clamp(0.8rem, 2vw, 1.1rem);
   color: var(--vg-cyan);
-  text-shadow: 0 0 6px var(--vg-cyan-glow);
+  text-shadow: 0 0 6px var(--vg-cyan-glow); /* Cyan neon glow effect */
   letter-spacing: 1px;
   text-transform: uppercase;
   text-align: center;
   margin-bottom: 1.4rem;
 }
 
+/* Shelf container — centered with a max-width for readability */
 .vg-shelf {
   max-width: 780px;
   margin: 0 auto;
 }
 
+/* Each shelf row is a 6-column grid, one slot per cartridge */
 .vg-shelf-row {
   display: grid;
-  grid-template-columns: repeat(6, 1fr);
+  grid-template-columns: repeat(6, 1fr); /* 6 evenly-sized cartridge slots */
   gap: 0.8rem;
   padding: 0 0.4rem 0.6rem;
 }
 
+/* ---------------------------------------------------------------------------
+   Shelf Plank — the wooden plank that sits beneath each row of cartridges.
+   Uses the same wood-grain texture technique as the TV frame.
+   --------------------------------------------------------------------------- */
+
 .vg-shelf-plank {
   height: 14px;
   background:
+    /* Vertical grain lines for texture */
     repeating-linear-gradient(
       90deg,
       rgba(107, 66, 38, 0.08) 0,
@@ -1193,27 +1767,42 @@
       transparent 1px,
       transparent 4px
     ),
+    /* Solid wood color underneath */
     linear-gradient(180deg, #5a3820, #3e2612);
   box-shadow:
-    0 4px 8px rgba(0, 0, 0, 0.4),
-    inset 0 1px 0 rgba(200, 150, 80, 0.15),
-    inset 0 -2px 4px rgba(0, 0, 0, 0.3);
+    0 4px 8px rgba(0, 0, 0, 0.4),             /* Drop shadow so the plank appears to jut out */
+    inset 0 1px 0 rgba(200, 150, 80, 0.15),   /* Top highlight catches light */
+    inset 0 -2px 4px rgba(0, 0, 0, 0.3);      /* Bottom inner shadow adds thickness */
   margin-bottom: 0.6rem;
 }
 
+/* ==========================================================================
+   Game Cartridge
+   ---------------------------------------------------------------------------
+   Each cartridge is a vertical element with three parts stacked top-to-bottom:
+   1. Grip (top edge with grooves)
+   2. Label (main face with title and platform)
+   3. Pins (bottom connector strip)
+   The cartridge lifts up on hover to simulate pulling it from the shelf.
+   ========================================================================== */
+
 .vg-cart {
-  position: relative;
+  position: relative; /* Needed for the absolutely-positioned tooltip */
   cursor: default;
-  transition: transform 0.2s ease;
+  transition: transform 0.2s ease; /* Smooth lift animation on hover */
 }
 
+/* Pull the cartridge upward 8px on hover — like lifting it off the shelf */
 .vg-cart:hover {
   transform: translateY(-8px);
 }
 
+/* Grip — the ridged top edge of the cartridge that you'd grab to pull it out.
+   The repeating gradient creates vertical grooves in the plastic. */
 .vg-cart-grip {
   height: 10px;
   background:
+    /* Vertical grooves: dark lines every 5px */
     repeating-linear-gradient(
       90deg,
       rgba(0, 0, 0, 0.15) 0,
@@ -1221,64 +1810,76 @@
       transparent 2px,
       transparent 5px
     ),
+    /* Base gray plastic color */
     linear-gradient(180deg, #908c88, #7a7672);
-  box-shadow: inset 0 -1px 2px rgba(0, 0, 0, 0.2);
+  box-shadow: inset 0 -1px 2px rgba(0, 0, 0, 0.2); /* Shadow at the bottom edge of the grip */
 }
 
+/* Label — the main face of the cartridge showing the game title and platform.
+   Uses a light gray gradient to look like a paper/plastic label. */
 .vg-cart-label {
   padding: 0.5rem 0.35rem;
   min-height: 80px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
+  justify-content: center; /* Centers the title text vertically and horizontally */
   text-align: center;
   background:
-    linear-gradient(180deg, #c8c4bf, #b0aca8);
+    linear-gradient(180deg, #c8c4bf, #b0aca8); /* Light-to-mid gray simulates a printed label */
   box-shadow:
-    inset 0 0 0 1px rgba(0, 0, 0, 0.1),
-    0 4px 8px rgba(0, 0, 0, 0.3);
+    inset 0 0 0 1px rgba(0, 0, 0, 0.1), /* Thin inner border for label edge definition */
+    0 4px 8px rgba(0, 0, 0, 0.3);         /* Depth shadow behind the cartridge body */
 }
 
+/* Game title on the cartridge label — very small pixel font */
 .vg-cart-title {
   display: block;
   font-family: var(--vg-font-pixel-sm);
   font-size: 0.44rem;
-  color: #2a2826;
+  color: #2a2826; /* Dark gray — printed text on the label */
   line-height: 1.4;
   letter-spacing: 0.3px;
-  word-break: break-word;
+  word-break: break-word; /* Prevents very long titles from overflowing */
 }
 
+/* Platform indicator below the title (e.g., "SNES", "GBA") */
 .vg-cart-platform {
   display: block;
   margin-top: 0.3rem;
   font-family: var(--vg-font-mono);
   font-size: 0.4rem;
-  color: #6a6662;
+  color: #6a6662; /* Lighter gray for secondary info */
   letter-spacing: 1px;
   text-transform: uppercase;
 }
 
+/* Connector pins — the gold-striped bottom of the cartridge that plugs
+   into the console slot. Gold dashes on a dark base mimic the metal contacts. */
 .vg-cart-pins {
   height: 6px;
   background:
     repeating-linear-gradient(
       90deg,
-      rgba(200, 170, 80, 0.6) 0,
+      rgba(200, 170, 80, 0.6) 0,   /* Gold pin */
       rgba(200, 170, 80, 0.6) 2px,
-      transparent 2px,
+      transparent 2px,              /* Gap between pins */
       transparent 4px
     ),
-    linear-gradient(180deg, #3a3836, #2a2826);
+    linear-gradient(180deg, #3a3836, #2a2826); /* Dark plastic base beneath the gold */
 }
+
+/* ---------------------------------------------------------------------------
+   Cartridge Tooltip — appears below the cartridge on hover to show its
+   full name. Positioned absolutely, centered horizontally with transform.
+   --------------------------------------------------------------------------- */
 
 .vg-cart-tooltip {
   position: absolute;
   bottom: -2.4rem;
   left: 50%;
-  transform: translateX(-50%);
-  white-space: nowrap;
+  transform: translateX(-50%); /* Center the tooltip horizontally under the cartridge */
+  white-space: nowrap; /* Keep the tooltip text on one line */
   padding: 0.3rem 0.6rem;
   background: var(--vg-panel);
   border: 1px solid var(--vg-border);
@@ -1288,101 +1889,144 @@
   letter-spacing: 0.5px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
   z-index: 10;
-  pointer-events: none;
+  pointer-events: none; /* Prevents the tooltip from blocking mouse events */
 }
 
+/* ==========================================================================
+   Keyboard Focus Styles
+   ---------------------------------------------------------------------------
+   Custom :focus-visible outlines for interactive elements. These only appear
+   on keyboard navigation (not mouse clicks), improving accessibility without
+   affecting the visual design for mouse users.
+   ========================================================================== */
 
+/* Cartridges get a cyan focus ring matching the shelf accent color */
 .vg-page .vg-cart:focus-visible {
   outline: 2px solid var(--vg-cyan);
   outline-offset: 2px;
-  transform: translateY(-8px);
+  transform: translateY(-8px); /* Also lift the cartridge, matching the hover effect */
 }
 
+/* Year dial buttons get an amber focus ring matching their active color */
 .vg-page .vg-dial-year:focus-visible {
   outline: 2px solid var(--vg-amber);
   outline-offset: 1px;
 }
 
+/* Arcade start button gets a white focus ring for high contrast */
 .vg-page .vg-arcade-start-btn:focus-visible {
   outline: 2px solid #fff;
   outline-offset: 3px;
 }
 
-
+/* Console units without a cartridge slot hide the slot element entirely */
 .vg-console-unit--no-cart .vg-console-slot {
   display: none;
 }
 
+/* ==========================================================================
+   Handheld Console Section
+   ---------------------------------------------------------------------------
+   A skeuomorphic handheld gaming device (DS/Game Boy style) that houses the
+   Backloggery integration data. The device has:
+   - A plastic shell body with highlight/shadow edges
+   - Two "screens" (left = backlog list, right = platform breakdown)
+   - Physical controls: a D-pad on the left, face buttons on the right
+   - A red "Backloggery" link button styled as a console action button
+   ========================================================================== */
 
+/* Handheld shell — the outer plastic body of the device.
+   The gradient goes from light gray at top to slightly darker at bottom,
+   simulating the way light hits a curved plastic surface. */
 .vg-handheld {
   position: relative;
   background:
     linear-gradient(180deg, #d4d0cc, #c0bcb8 30%, #b0aca8 70%, #a8a4a0 100%);
   padding: 1.2rem 1.4rem 1rem;
   box-shadow:
-    inset 0 0 0 1px rgba(0, 0, 0, 0.1),
-    inset 0 2px 0 rgba(255, 255, 255, 0.3),
-    inset 0 -1px 0 rgba(0, 0, 0, 0.15),
-    0 16px 32px rgba(0, 0, 0, 0.55);
+    inset 0 0 0 1px rgba(0, 0, 0, 0.1),       /* Thin dark inner border for edge definition */
+    inset 0 2px 0 rgba(255, 255, 255, 0.3),    /* Top highlight — light catching the top edge */
+    inset 0 -1px 0 rgba(0, 0, 0, 0.15),        /* Bottom shadow for thickness */
+    0 16px 32px rgba(0, 0, 0, 0.55);           /* Large drop shadow lifts the device off the page */
 }
 
+/* Top bar of the handheld — holds the brand label and power LED */
 .vg-handheld-top {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: space-between; /* Label on the left, LED on the right */
   margin-bottom: 0.8rem;
   padding: 0 0.2rem;
 }
 
+/* Brand label — embossed text stamped into the plastic */
 .vg-handheld-label {
   font-family: var(--vg-font-pixel);
   font-size: 0.72rem;
   letter-spacing: 2px;
   text-transform: uppercase;
-  color: #4a4644;
-  text-shadow: 0 1px 0 rgba(255, 255, 255, 0.3);
+  color: #4a4644; /* Dark gray to look stamped/debossed */
+  text-shadow: 0 1px 0 rgba(255, 255, 255, 0.3); /* White bottom-shadow creates an embossed look */
 }
 
+/* Power indicator LED — a small green circle with a glow halo, mimicking
+   the always-on LED found on handheld gaming devices */
 .vg-handheld-led {
   width: 8px;
   height: 8px;
   border-radius: 50% !important;
-  background: radial-gradient(circle at 40% 35%, #66ff66, #22aa22 60%, #116611);
+  background: radial-gradient(circle at 40% 35%, #66ff66, #22aa22 60%, #116611); /* Bright center fading to darker green */
   box-shadow:
-    0 0 4px rgba(51, 255, 51, 0.5),
-    0 0 10px rgba(51, 255, 51, 0.25),
-    inset 0 0 2px rgba(0, 0, 0, 0.2);
+    0 0 4px rgba(51, 255, 51, 0.5),    /* Inner glow ring */
+    0 0 10px rgba(51, 255, 51, 0.25),   /* Outer diffuse glow */
+    inset 0 0 2px rgba(0, 0, 0, 0.2);   /* Slight inset to look recessed into the shell */
 }
+
+/* ---------------------------------------------------------------------------
+   Dual Screens — two side-by-side screens in a grid layout.
+   The left screen (1.2fr) is wider for the game backlog list;
+   the right screen (0.8fr) is narrower for the platform summary.
+   --------------------------------------------------------------------------- */
 
 .vg-handheld-screens {
   display: grid;
-  grid-template-columns: 1.2fr 0.8fr;
+  grid-template-columns: 1.2fr 0.8fr; /* Left screen gets 60%, right gets 40% */
   gap: 1rem;
   margin-bottom: 1rem;
 }
 
+/* Screen bezel — the dark plastic frame around each screen */
 .vg-handheld-screen {
-  background: #1a1a1e;
+  background: #1a1a1e; /* Very dark gray, nearly black */
   padding: 6px;
   box-shadow:
-    inset 0 2px 6px rgba(0, 0, 0, 0.6),
-    inset 0 0 0 1px rgba(0, 0, 0, 0.3),
-    0 1px 0 rgba(255, 255, 255, 0.15);
+    inset 0 2px 6px rgba(0, 0, 0, 0.6),       /* Deep top shadow — screen sits recessed */
+    inset 0 0 0 1px rgba(0, 0, 0, 0.3),        /* Crisp inner border */
+    0 1px 0 rgba(255, 255, 255, 0.15);          /* Bottom highlight on the bezel edge */
 }
+
+/* ---------------------------------------------------------------------------
+   Screen Surface — the actual green LCD/CRT display area inside the bezel.
+   Uses the same green phosphor look as the TV screen above, but smaller
+   and with lighter vignetting for the handheld scale.
+   --------------------------------------------------------------------------- */
 
 .vg-handheld-screen-surface {
   position: relative;
   background:
+    /* Green center bloom with dark edges — handheld-scale CRT vignette */
     radial-gradient(circle at 50% 42%, rgba(80, 160, 70, 0.15), rgba(20, 40, 18, 0.9) 100%),
+    /* Base very-dark-green background */
     linear-gradient(180deg, #0a1a08, #061008);
   padding: 0.7rem 0.8rem;
   box-shadow:
-    inset 0 0 0 1px rgba(80, 140, 70, 0.2),
-    inset 0 0 12px rgba(0, 0, 0, 0.5);
+    inset 0 0 0 1px rgba(80, 140, 70, 0.2),  /* Faint green inner ring */
+    inset 0 0 12px rgba(0, 0, 0, 0.5);        /* Deep inner shadow */
   min-height: 260px;
 }
 
-
+/* Scanlines overlay for the handheld screens — subtle horizontal lines
+   every 3px to simulate a low-res LCD/CRT display */
 .vg-handheld-screen-surface::after {
   content: "";
   position: absolute;
@@ -1393,11 +2037,13 @@
       180deg,
       transparent 0,
       transparent 2px,
-      rgba(0, 0, 0, 0.08) 2px,
+      rgba(0, 0, 0, 0.08) 2px,  /* Thin dark line every 3rd pixel */
       rgba(0, 0, 0, 0.08) 3px
     );
 }
 
+/* Screen heading — section title rendered on the handheld display.
+   Green pixel text with glow, separated by a faint bottom border. */
 .vg-handheld-heading {
   font-family: var(--vg-font-pixel);
   font-size: 0.52rem;
@@ -1407,10 +2053,16 @@
   text-shadow: 0 0 6px var(--vg-green-glow);
   margin-bottom: 0.6rem;
   padding-bottom: 0.4rem;
-  border-bottom: 1px solid rgba(51, 255, 51, 0.15);
+  border-bottom: 1px solid rgba(51, 255, 51, 0.15); /* Faint green divider */
   text-align: center;
 }
 
+/* ==========================================================================
+   Backlog List — games displayed on the handheld's left screen
+   ---------------------------------------------------------------------------
+   Each game entry shows the title and optional metadata (platform, status).
+   Styled to look like green-on-black terminal output.
+   ========================================================================== */
 
 .vg-backlog-list {
   list-style: none;
@@ -1418,6 +2070,8 @@
   margin: 0;
 }
 
+/* Each backlog item is a vertical stack (title on top, meta below) with
+   a very faint green divider between entries */
 .vg-backlog-list li {
   display: flex;
   flex-direction: column;
@@ -1429,6 +2083,7 @@
   border-bottom: none;
 }
 
+/* Game title — small pixel font with phosphor glow */
 .vg-backlog-title {
   font-family: var(--vg-font-pixel-sm);
   font-size: 0.56rem;
@@ -1437,6 +2092,7 @@
   line-height: 1.4;
 }
 
+/* Aggregate stats line (e.g., total game counts) — centered, lighter green */
 .vg-backlog-stats {
   font-family: var(--vg-font-mono);
   font-size: 0.5rem;
@@ -1447,6 +2103,7 @@
   letter-spacing: 0.5px;
 }
 
+/* Per-game metadata (platform, hours, etc.) — even lighter and smaller */
 .vg-backlog-meta {
   font-family: var(--vg-font-mono);
   font-size: 0.52rem;
@@ -1455,24 +2112,46 @@
   margin-top: 0.1rem;
 }
 
+/* ==========================================================================
+   Backloggery Status Colors
+   ---------------------------------------------------------------------------
+   These classes color-code each game by its completion status, matching the
+   Backloggery website's color scheme:
+   - Complete (gold)    = fully finished / 100%
+   - Unfinished (red)   = started but not beaten
+   - Unplayed (gray)    = haven't touched it yet
+   - Endless (purple)   = games with no real "end" (MMOs, etc.)
+   ========================================================================== */
+
+/* Gold/amber for completed games — matches Backloggery's cream/gold bar */
 .vg-status-complete {
   color: #e8c44a;
   text-shadow: 0 0 4px rgba(232, 196, 74, 0.35);
 }
 
+/* Red for unfinished games — matches Backloggery's red/brown bar */
 .vg-status-unfinished {
   color: #c04040;
   text-shadow: 0 0 4px rgba(192, 64, 64, 0.3);
 }
 
+/* Dim gray-green for unplayed games — no glow, just muted to convey
+   "hasn't been started yet" */
 .vg-status-unplayed {
   color: rgba(160, 180, 155, 0.6);
 }
 
+/* Purple for endless games (MMOs, live-service titles, etc.) */
 .vg-status-endless {
   color: #a884ff;
   text-shadow: 0 0 4px rgba(168, 132, 255, 0.34);
 }
+
+/* ---------------------------------------------------------------------------
+   Status Icon — a small circular badge next to the game title that shows
+   a single-letter status indicator (C, U, etc.). Uses currentColor so it
+   inherits the color of whichever status class wraps it.
+   --------------------------------------------------------------------------- */
 
 .vg-status-icon {
   display: inline-flex;
@@ -1481,18 +2160,25 @@
   width: 0.9rem;
   height: 0.9rem;
   margin-right: 0.22rem;
-  border: 1px solid currentColor;
-  border-radius: 999px !important;
+  border: 1px solid currentColor; /* Inherits whatever status color is applied */
+  border-radius: 999px !important; /* Forces a perfect circle regardless of global overrides */
   font-family: var(--vg-font-pixel-sm);
   font-size: 0.44rem;
   line-height: 1;
-  vertical-align: text-bottom;
+  vertical-align: text-bottom; /* Aligns the icon with the baseline of adjacent text */
 }
 
+/* Endless status icon gets a faint purple background fill */
 .vg-status-icon--endless {
   background: rgba(168, 132, 255, 0.12);
 }
 
+/* ==========================================================================
+   Platform List — displayed on the handheld's right screen
+   ---------------------------------------------------------------------------
+   Shows each gaming platform and its game count in a two-column layout
+   (name on the left, count on the right).
+   ========================================================================== */
 
 .vg-platform-list {
   list-style: none;
@@ -1500,6 +2186,7 @@
   margin: 0;
 }
 
+/* Each platform row: name on the left, count on the right, with a faint divider */
 .vg-platform-list li {
   display: flex;
   justify-content: space-between;
@@ -1512,6 +2199,7 @@
   border-bottom: none;
 }
 
+/* Platform name — small green pixel text */
 .vg-platform-name {
   font-family: var(--vg-font-pixel-sm);
   font-size: 0.5rem;
@@ -1520,67 +2208,84 @@
   line-height: 1.4;
 }
 
+/* Game count number — monospace for tabular alignment, slightly brighter
+   than the platform name so it stands out */
 .vg-platform-count {
   font-family: var(--vg-font-mono);
   font-size: 0.62rem;
   color: rgba(180, 255, 170, 0.92);
   text-shadow: 0 0 3px rgba(120, 240, 120, 0.25);
   letter-spacing: 1px;
-  min-width: 2.4ch;
+  min-width: 2.4ch; /* Reserves space for up to ~2 digits so columns stay aligned */
   text-align: right;
 }
 
+/* ==========================================================================
+   Handheld Controls — the D-pad, face buttons, and action button area
+   beneath the screens, simulating a real handheld's lower half
+   ========================================================================== */
 
 .vg-handheld-controls {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: space-between; /* D-pad on the left, buttons on the right */
   padding: 0.5rem 0.6rem 0.2rem;
 }
 
+/* D-Pad container — a 48x48 square that holds the cross-shaped pad.
+   The cross is formed by two overlapping pseudo-elements (::before and ::after). */
 .vg-handheld-dpad {
   width: 48px;
   height: 48px;
-  position: relative;
+  position: relative; /* Positioning context for the two cross arms */
 }
 
-
+/* Shared styles for both arms of the D-pad cross.
+   The gradient and shadows give each arm a raised, beveled plastic look. */
 .vg-handheld-dpad::before,
 .vg-handheld-dpad::after {
   content: "";
   position: absolute;
   background:
-    linear-gradient(180deg, #5a5c62, #42444a 50%, #3a3c42);
+    linear-gradient(180deg, #5a5c62, #42444a 50%, #3a3c42); /* Dark gray gradient — plastic look */
   box-shadow:
-    inset 0 0 0 1px rgba(0, 0, 0, 0.25),
-    inset 0 1px 0 rgba(255, 255, 255, 0.1),
-    0 2px 4px rgba(0, 0, 0, 0.3);
+    inset 0 0 0 1px rgba(0, 0, 0, 0.25),      /* Dark inset border for definition */
+    inset 0 1px 0 rgba(255, 255, 255, 0.1),    /* Top-edge highlight */
+    0 2px 4px rgba(0, 0, 0, 0.3);               /* Small drop shadow */
 }
 
+/* Vertical arm of the D-pad cross — full height, narrow width, centered horizontally */
 .vg-handheld-dpad::before {
   left: 50%;
   top: 0;
   width: 16px;
   height: 100%;
-  transform: translateX(-50%);
+  transform: translateX(-50%); /* Center horizontally */
 }
 
+/* Horizontal arm of the D-pad cross — full width, narrow height, centered vertically */
 .vg-handheld-dpad::after {
   top: 50%;
   left: 0;
   width: 100%;
   height: 16px;
-  transform: translateY(-50%);
+  transform: translateY(-50%); /* Center vertically */
 }
+
+/* ---------------------------------------------------------------------------
+   Backloggery Link Button — styled as a red handheld action button with
+   a pulsing glow animation. Links out to the Backloggery profile page.
+   --------------------------------------------------------------------------- */
 
 .vg-handheld-btn {
   display: inline-flex;
   align-items: center;
   justify-content: center;
   padding: 0.5rem 1.4rem;
-  border-radius: 21px !important;
+  border-radius: 21px !important; /* Pill shape */
   border: none;
   background:
+    /* Radial gradient creates a 3D dome/button effect — bright highlight offset to upper-left */
     radial-gradient(circle at 45% 40%, #ff5544, #cc2200 60%, #880000);
   color: #fff;
   font-family: var(--vg-font-pixel);
@@ -1590,59 +2295,75 @@
   text-decoration: none;
   cursor: pointer;
   box-shadow:
-    inset 0 0 0 2px rgba(255, 100, 80, 0.3),
-    0 0 8px var(--vg-red-glow),
-    0 0 20px var(--vg-red-glow);
-  animation: vg-pulse-glow 2s ease-in-out infinite;
+    inset 0 0 0 2px rgba(255, 100, 80, 0.3),  /* Inner bevel ring */
+    0 0 8px var(--vg-red-glow),                 /* Inner glow halo */
+    0 0 20px var(--vg-red-glow);                /* Wider outer glow */
+  animation: vg-pulse-glow 2s ease-in-out infinite; /* Continuously pulsing red glow */
   transition: transform 0.15s ease;
 }
 
+/* Slight scale-up on hover for tactile feedback */
 .vg-handheld-btn:hover {
   transform: scale(1.05);
-  color: #fff;
+  color: #fff; /* Ensure text stays white (prevents link color override) */
 }
+
+/* ---------------------------------------------------------------------------
+   Face Buttons — two circular gray buttons arranged side by side, rotated
+   -25deg as a group to mimic the angled A/B button layout on real handhelds
+   --------------------------------------------------------------------------- */
 
 .vg-handheld-buttons {
   display: flex;
   gap: 10px;
-  transform: rotate(-25deg);
+  transform: rotate(-25deg); /* Tilts the button pair like a real handheld layout */
 }
 
+/* Individual face button — a circular gray dome with a highlight and shadow
+   to look like a physical plastic button */
 .vg-handheld-buttons span {
   width: 28px;
   height: 28px;
   border-radius: 50% !important;
   background:
+    /* Radial gradient with off-center highlight creates a convex dome look */
     radial-gradient(circle at 40% 35%, #7a7c82, #52545a 60%, #3a3c42);
   box-shadow:
-    inset 0 0 0 1px rgba(0, 0, 0, 0.25),
-    inset 0 1px 0 rgba(255, 255, 255, 0.12),
-    0 2px 4px rgba(0, 0, 0, 0.35);
+    inset 0 0 0 1px rgba(0, 0, 0, 0.25),      /* Edge ring */
+    inset 0 1px 0 rgba(255, 255, 255, 0.12),   /* Top-edge shine */
+    0 2px 4px rgba(0, 0, 0, 0.35);              /* Small drop shadow beneath the button */
 }
 
-
-/* ========================================================
-   Steam Window (Steam Library section)
-   ======================================================== */
+/* ==========================================================================
+   Steam Library Window
+   ---------------------------------------------------------------------------
+   A UI that mimics the Steam desktop client's library view. It contains:
+   - A dark title bar with macOS-style traffic light dots
+   - A tab-based navigation bar
+   - A content area with stats, two-column game lists, and rankings
+   The design uses Steam's signature blue (#66c0f4) as the accent color.
+   ========================================================================== */
 
 .vg-steam-window {
   position: relative;
   background: var(--vg-steam-bg);
-  border-radius: 6px;
-  overflow: hidden;
+  border-radius: 6px; /* Slightly rounded corners like the Steam client */
+  overflow: hidden; /* Clips child elements to the rounded corners */
   box-shadow:
-    0 8px 32px rgba(0, 0, 0, 0.5),
-    0 2px 8px rgba(0, 0, 0, 0.3);
+    0 8px 32px rgba(0, 0, 0, 0.5), /* Primary drop shadow for depth */
+    0 2px 8px rgba(0, 0, 0, 0.3);  /* Tighter secondary shadow for crispness */
 }
 
+/* Title bar — the topmost strip with the "STEAM" label and window dots */
 .vg-steam-titlebar {
   display: flex;
   align-items: center;
   justify-content: space-between;
   padding: 0.5rem 0.75rem;
-  background: var(--vg-steam-dark);
+  background: var(--vg-steam-dark); /* Darkest shade for the title bar */
 }
 
+/* Steam title text — uses a condensed sans-serif font matching Steam's UI */
 .vg-steam-titlebar-label {
   font-family: "IBM Plex Sans Condensed", "Trebuchet MS", sans-serif;
   font-size: 0.82rem;
@@ -1652,34 +2373,44 @@
   color: var(--vg-steam-text);
 }
 
+/* Traffic light dots container — holds macOS-style red/yellow/green dots */
 .vg-steam-titlebar-dots {
   display: flex;
   gap: 6px;
 }
 
+/* Position context for the dots pseudo-elements */
 .vg-steam-titlebar-dots::before,
 .vg-steam-titlebar-dots::after,
 .vg-steam-titlebar-dots {
   position: relative;
 }
 
+/* The three dots are created with a single ::before pseudo-element:
+   the element itself is the red dot, and box-shadow offsets create
+   the yellow (16px right) and green (32px right) dots */
 .vg-steam-titlebar-dots::before {
   content: "";
   width: 10px;
   height: 10px;
   border-radius: 50%;
-  background: #ff5f57;
-  box-shadow: 16px 0 0 #febc2e, 32px 0 0 #28c840;
+  background: #ff5f57; /* Red "close" dot */
+  box-shadow: 16px 0 0 #febc2e, 32px 0 0 #28c840; /* Yellow "minimize" + green "maximize" */
 }
+
+/* ---------------------------------------------------------------------------
+   Navigation Tabs — Steam-style tab bar below the title bar
+   --------------------------------------------------------------------------- */
 
 .vg-steam-navbar {
   display: flex;
   gap: 0;
   padding: 0 0.75rem;
   background: var(--vg-steam-dark);
-  border-bottom: 1px solid rgba(102, 192, 244, 0.15);
+  border-bottom: 1px solid rgba(102, 192, 244, 0.15); /* Faint Steam-blue divider */
 }
 
+/* Individual nav tab — inactive tabs are muted gray; active tab is blue */
 .vg-steam-nav-tab {
   padding: 0.42rem 0.8rem;
   font-family: "IBM Plex Sans Condensed", sans-serif;
@@ -1689,20 +2420,27 @@
   text-transform: uppercase;
   color: var(--vg-steam-muted);
   cursor: default;
-  border-bottom: 2px solid transparent;
+  border-bottom: 2px solid transparent; /* Placeholder for the active indicator */
   transition: color 0.15s ease;
 }
 
+/* Active tab — highlighted with Steam blue text and a blue underline */
 .vg-steam-nav-tab.is-active {
   color: var(--vg-steam-blue);
   border-bottom-color: var(--vg-steam-blue);
 }
 
+/* ---------------------------------------------------------------------------
+   Steam Content Area — the main body of the Steam window
+   --------------------------------------------------------------------------- */
+
 .vg-steam-content {
   padding: 1.2rem 1rem;
-  background: var(--vg-steam-content);
+  background: var(--vg-steam-content); /* Slightly lighter than the title bar */
 }
 
+/* Stats row — a flex container for summary statistics (total games, hours, etc.)
+   Wraps on small screens and is separated from content below by a border */
 .vg-steam-stats {
   display: flex;
   flex-wrap: wrap;
@@ -1713,14 +2451,16 @@
   border-bottom: 1px solid rgba(102, 192, 244, 0.12);
 }
 
+/* Individual stat values — monospace for clean number alignment */
 .vg-steam-stats span {
   font-family: "IBM Plex Mono", monospace;
   font-size: 0.62rem;
   color: var(--vg-steam-blue);
   letter-spacing: 0.5px;
-  opacity: 0.85;
+  opacity: 0.85; /* Slightly muted so stats don't overpower the game lists */
 }
 
+/* "Last updated" timestamp — small muted text centered above the columns */
 .vg-steam-updated {
   margin: 0 0 1rem;
   text-align: center;
@@ -1730,12 +2470,14 @@
   letter-spacing: 0.45px;
 }
 
+/* Two-column layout for the game lists (e.g., "Most Played" / "Recently Played") */
 .vg-steam-columns {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr 1fr; /* Equal-width columns */
   gap: 1.2rem;
 }
 
+/* Column heading — Steam blue with an underline divider */
 .vg-steam-heading {
   font-family: "IBM Plex Sans Condensed", sans-serif;
   font-size: 0.72rem;
@@ -1748,19 +2490,24 @@
   border-bottom: 1px solid rgba(102, 192, 244, 0.15);
 }
 
+/* ---------------------------------------------------------------------------
+   Steam Game List — rows of games with name + hours played
+   --------------------------------------------------------------------------- */
+
 .vg-steam-list {
   list-style: none;
   padding: 0;
   margin: 0;
 }
 
+/* Each game row: name on left, hours on right, with a subtle blue-gray divider */
 .vg-steam-list li {
   display: flex;
   justify-content: space-between;
   align-items: baseline;
   gap: 0.4rem;
   padding: 0.32rem 0;
-  border-bottom: 1px solid rgba(42, 71, 94, 0.5);
+  border-bottom: 1px solid rgba(42, 71, 94, 0.5); /* Muted blue-gray divider */
   font-family: "IBM Plex Sans Condensed", sans-serif;
   font-size: 0.78rem;
   color: var(--vg-steam-text);
@@ -1770,40 +2517,52 @@
   border-bottom: none;
 }
 
+/* Game name — takes remaining space, truncates with ellipsis if too long */
 .vg-steam-game {
   flex: 1;
-  min-width: 0;
+  min-width: 0; /* Required for text-overflow to work inside a flex child */
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
 }
 
+/* Hours played label — fixed on the right side, won't shrink or wrap */
 .vg-steam-hours {
   font-family: "IBM Plex Mono", monospace;
   font-size: 0.56rem;
   color: var(--vg-steam-muted);
   white-space: nowrap;
-  flex-shrink: 0;
+  flex-shrink: 0; /* Prevents the hours from being compressed by a long game name */
 }
 
+/* ---------------------------------------------------------------------------
+   Ranked Steam List — a variant that adds auto-numbered ranks via CSS
+   counters (01, 02, 03...) using decimal-leading-zero format
+   --------------------------------------------------------------------------- */
+
 .vg-steam-list--ranked {
-  counter-reset: steamrank;
+  counter-reset: steamrank; /* Initialize the counter at 0 */
 }
 
 .vg-steam-list--ranked li {
-  counter-increment: steamrank;
+  counter-increment: steamrank; /* Each item bumps the counter by 1 */
 }
 
+/* Display the rank number as a zero-padded counter (01, 02, ..., 10) */
 .vg-steam-list--ranked li::before {
   content: counter(steamrank, decimal-leading-zero);
   font-family: "IBM Plex Mono", monospace;
-  font-size: 0.56rem;
+  font-size: 0.56rem;/* Steam game-row playtime text: muted color and slight transparency
+   so the hours-played figures recede behind the game title. The
+   min-width keeps the column from collapsing when playtime is short. */
   color: var(--vg-steam-muted);
   opacity: 0.6;
   min-width: 2rem;
   flex-shrink: 0;
 }
 
+/* Steam loading indicator — a tiny monospace label centered below the
+   game list that says "Loading…" or similar while data populates. */
 .vg-steam-loading {
   font-family: "IBM Plex Mono", monospace;
   font-size: 0.62rem;
@@ -1812,6 +2571,8 @@
   padding: 1rem 0;
 }
 
+/* Steam window footer bar — a dark strip at the bottom of the Steam
+   client replica, used to house the "View Profile" action button. */
 .vg-steam-footer {
   display: flex;
   align-items: center;
@@ -1820,6 +2581,9 @@
   background: var(--vg-steam-dark);
 }
 
+/* Steam "View Profile" button — replicates Steam's signature green
+   gradient CTA button. The top-to-bottom gradient gives it a subtle
+   3D pressed-plastic look typical of the Steam client UI. */
 .vg-steam-btn {
   display: inline-flex;
   align-items: center;
@@ -1827,7 +2591,7 @@
   padding: 0.44rem 1.2rem;
   border-radius: 3px;
   border: none;
-  background: linear-gradient(180deg, #6fa720, var(--vg-steam-green));
+  background: linear-gradient(180deg, #6fa720, var(--vg-steam-green)); /* lighter green on top fading to darker green */
   color: #d2efa9;
   font-family: "IBM Plex Sans Condensed", sans-serif;
   font-size: 0.72rem;
@@ -1839,16 +2603,26 @@
   transition: background 0.15s ease, color 0.15s ease;
 }
 
+/* Button hover brightens the gradient and turns text pure white,
+   giving immediate visual feedback without changing the button size. */
 .vg-steam-btn:hover {
   background: linear-gradient(180deg, #7db82a, #6d9610);
   color: #ffffff;
 }
 
 
-/* ========================================================
-   CRT Terminal (Eternal section)
-   ======================================================== */
+/* =================================================================
+   CRT Terminal — "Eternal Games" Section
+   -----------------------------------------------------------------
+   This component renders a retro CRT monitor housing the list of
+   "eternal" (endlessly replayable) games. It has a physical bezel,
+   an LED power indicator, a phosphor-green screen with scanlines,
+   a vertical stand, and a flat foot — all built from pure CSS.
+   ================================================================= */
 
+/* Eternal section grid — starts as a single column; at desktop widths
+   it expands to two columns so the CRT terminal and the handheld
+   console sit side by side. */
 .vg-eternal-grid {
   display: grid;
   grid-template-columns: 1fr;
@@ -1856,24 +2630,31 @@
   align-items: start;
 }
 
+/* Each column in the eternal grid. min-width: 0 prevents grid blowout
+   when a child (like a long game title) would otherwise overflow. */
 .vg-eternal-col {
   min-width: 0;
 }
 
+/* CRT monitor housing — the outer plastic casing of the terminal.
+   A top-to-bottom gradient simulates light hitting a curved plastic
+   surface (lighter gray at top, darker toward the base). */
 .vg-terminal {
   position: relative;
   max-width: var(--vg-card-max-desktop);
   margin: 0 auto;
   background:
-    linear-gradient(180deg, #3a3c42, #2e3036 30%, #26282e 70%, #1e2026 100%);
+    linear-gradient(180deg, #3a3c42, #2e3036 30%, #26282e 70%, #1e2026 100%); /* four-stop gradient mimics overhead light on matte plastic */
   padding: 0.6rem 0.9rem 0;
   box-shadow:
-    inset 0 0 0 1px rgba(255, 255, 255, 0.06),
-    inset 0 2px 0 rgba(255, 255, 255, 0.08),
-    inset 0 -1px 0 rgba(0, 0, 0, 0.3),
-    0 16px 32px rgba(0, 0, 0, 0.6);
+    inset 0 0 0 1px rgba(255, 255, 255, 0.06),   /* thin inner highlight simulating a beveled edge */
+    inset 0 2px 0 rgba(255, 255, 255, 0.08),      /* top-edge light catch */
+    inset 0 -1px 0 rgba(0, 0, 0, 0.3),            /* bottom-edge shadow for depth */
+    0 16px 32px rgba(0, 0, 0, 0.6);               /* strong drop shadow lifting the monitor off the page */
 }
 
+/* Bezel strip — the narrow bar above the screen containing the
+   brand label on the left and the power LED on the right. */
 .vg-terminal-bezel {
   display: flex;
   align-items: center;
@@ -1881,6 +2662,9 @@
   padding: 0.35rem 0.3rem;
 }
 
+/* "ETERNAL" brand label embossed into the bezel. Uses the pixel font
+   for a retro feel and a faint white text-shadow to simulate stamped
+   lettering catching light on dark plastic. */
 .vg-terminal-label {
   font-family: var(--vg-font-pixel);
   font-size: 0.68rem;
@@ -1890,39 +2674,59 @@
   text-shadow: 0 1px 0 rgba(255, 255, 255, 0.06);
 }
 
+/* Power LED — a small green circle that glows as if it were a real
+   indicator light. The radial gradient creates a specular highlight
+   at the upper-left (40% 35%), transitioning through progressively
+   darker greens. Box-shadows add an outer glow halo. */
 .vg-terminal-led {
   width: 8px;
   height: 8px;
   border-radius: 50%;
-  background: radial-gradient(circle at 40% 35%, #66ff44, #22cc00 60%, #008800);
+  background: radial-gradient(circle at 40% 35%, #66ff44, #22cc00 60%, #008800); /* bright spot → mid green → dark base */
   box-shadow:
-    0 0 4px rgba(51, 255, 51, 0.5),
-    0 0 10px rgba(51, 255, 51, 0.25),
-    inset 0 0 2px rgba(0, 0, 0, 0.2);
+    0 0 4px rgba(51, 255, 51, 0.5),     /* tight inner glow */
+    0 0 10px rgba(51, 255, 51, 0.25),    /* wider ambient glow */
+    inset 0 0 2px rgba(0, 0, 0, 0.2);   /* tiny inner shadow for dome curvature */
 }
 
+/* Screen recessed area — the dark inset that holds the screen surface.
+   The angled gradient and inset shadows simulate the physical depth
+   of a recessed CRT tube behind the bezel. The faint green border
+   (via box-shadow) hints at phosphor bleed along the frame edge. */
 .vg-terminal-screen {
   padding: 0.5rem;
   background: linear-gradient(145deg, rgba(8, 12, 8, 0.98), rgba(2, 4, 2, 0.98));
   box-shadow:
-    inset 0 0 0 1px rgba(51, 255, 51, 0.12),
-    inset 0 0 0 2px rgba(4, 6, 4, 0.85),
-    inset 0 10px 14px rgba(0, 0, 0, 0.4);
+    inset 0 0 0 1px rgba(51, 255, 51, 0.12),   /* thin green phosphor edge glow */
+    inset 0 0 0 2px rgba(4, 6, 4, 0.85),        /* dark gap between bezel and glass */
+    inset 0 10px 14px rgba(0, 0, 0, 0.4);       /* shadow from the top bezel onto the glass */
 }
 
+/* Screen surface — the actual "glass" area where content is displayed.
+   Two background layers: a radial gradient creates a subtle green
+   hotspot in the upper-center (simulating phosphor brightness
+   falloff), and a linear gradient darkens the edges. */
 .vg-terminal-screen-surface {
   position: relative;
   min-height: 220px;
   padding: 1.2rem 1rem;
   background:
-    radial-gradient(circle at 50% 42%, rgba(51, 180, 51, 0.1), rgba(12, 40, 12, 0.08) 44%, rgba(4, 10, 4, 0.98) 100%),
-    linear-gradient(180deg, rgba(6, 14, 6, 0.94), rgba(2, 8, 2, 0.98));
+    radial-gradient(circle at 50% 42%, rgba(51, 180, 51, 0.1), rgba(12, 40, 12, 0.08) 44%, rgba(4, 10, 4, 0.98) 100%), /* center phosphor bloom */
+    linear-gradient(180deg, rgba(6, 14, 6, 0.94), rgba(2, 8, 2, 0.98)); /* top-to-bottom subtle fade */
   box-shadow:
-    inset 0 0 0 1px rgba(51, 255, 51, 0.1),
-    inset 0 0 28px rgba(0, 0, 0, 0.5);
+    inset 0 0 0 1px rgba(51, 255, 51, 0.1),    /* faint green border inside the glass */
+    inset 0 0 28px rgba(0, 0, 0, 0.5);         /* heavy inner vignette for CRT curvature */
   overflow: hidden;
 }
 
+/* CRT scanlines overlay (::before pseudo-element).
+   Three background layers combine to create the classic CRT effect:
+   1. A top-down green wash that fades out quickly — simulates the
+      electron beam being brighter when it starts a new frame.
+   2. A repeating-linear-gradient producing 1px green lines every 3px,
+      which are the visible scanlines.
+   3. Left/right edge darkening that mimics the curved glass vignette
+      of a real CRT monitor. */
 .vg-terminal-screen-surface::before {
   content: "";
   position: absolute;
@@ -1930,17 +2734,23 @@
   pointer-events: none;
   z-index: 2;
   background:
-    linear-gradient(180deg, rgba(51, 255, 51, 0.06), transparent 24%),
+    linear-gradient(180deg, rgba(51, 255, 51, 0.06), transparent 24%),          /* top phosphor wash */
     repeating-linear-gradient(
       0deg,
       rgba(51, 255, 51, 0.06) 0,
       rgba(51, 255, 51, 0.06) 1px,
       transparent 1px,
       transparent 3px
-    ),
-    linear-gradient(90deg, rgba(4, 10, 4, 0.3), transparent 16%, transparent 84%, rgba(4, 10, 4, 0.3));
+    ),                                                                           /* horizontal scanlines every 3px */
+    linear-gradient(90deg, rgba(4, 10, 4, 0.3), transparent 16%, transparent 84%, rgba(4, 10, 4, 0.3)); /* left/right vignette */
 }
 
+/* CRT specular highlight overlay (::after pseudo-element).
+   Simulates the reflection of ambient room light on the curved glass:
+   1. A small radial highlight near the upper-left corner (as if a
+      light source is off-screen to the upper-left).
+   2. A bottom darkening gradient that fades the lower portion of the
+      screen, mimicking how CRTs appear dimmer at the bottom. */
 .vg-terminal-screen-surface::after {
   content: "";
   position: absolute;
@@ -1948,10 +2758,14 @@
   pointer-events: none;
   z-index: 3;
   background:
-    radial-gradient(circle at 20% 12%, rgba(180, 255, 180, 0.08), transparent 28%),
-    linear-gradient(180deg, transparent 72%, rgba(2, 6, 2, 0.4) 100%);
+    radial-gradient(circle at 20% 12%, rgba(180, 255, 180, 0.08), transparent 28%), /* upper-left specular glint */
+    linear-gradient(180deg, transparent 72%, rgba(2, 6, 2, 0.4) 100%);             /* bottom edge dim */
 }
 
+/* Blinking cursor prompt — a small pixel-font label ("C:\>" style)
+   positioned in the upper-right corner of the screen. Sits above
+   the scanline overlays (z-index: 4) so it renders on top. The
+   green glow text-shadow ties it into the phosphor color scheme. */
 .vg-terminal-prompt {
   position: absolute;
   top: 0.6rem;
@@ -1964,6 +2778,10 @@
   text-shadow: 0 0 4px var(--vg-green-glow);
 }
 
+/* Section heading inside the CRT screen — "ETERNAL" or similar title.
+   Uses clamp() for fluid sizing so it scales smoothly between mobile
+   and desktop. Double-layered text-shadow creates a stronger phosphor
+   glow effect by stacking a tight 6px blur with a wider 14px blur. */
 .vg-terminal-heading {
   position: relative;
   z-index: 4;
@@ -1976,28 +2794,44 @@
   margin: 0 0 1rem;
 }
 
+/* Monitor stand — the vertical neck connecting the screen housing to
+   the base foot. A gradient matching the bezel plastic gives the
+   impression of a single molded piece. The inset highlight on top
+   catches light while the drop shadow grounds it. */
 .vg-terminal-stand {
   width: 30%;
   height: 40px;
   margin: 0 auto;
   background: linear-gradient(180deg, #3a3c42, #26282e);
   box-shadow:
-    inset 0 1px 0 rgba(255, 255, 255, 0.06),
-    0 2px 4px rgba(0, 0, 0, 0.4);
+    inset 0 1px 0 rgba(255, 255, 255, 0.06),  /* top edge highlight */
+    0 2px 4px rgba(0, 0, 0, 0.4);             /* subtle drop shadow */
 }
 
+/* Monitor foot — the wider flat base that anchors the whole terminal.
+   Slightly darker than the stand to convey weight at the bottom.
+   The larger drop shadow reinforces the sense of the monitor sitting
+   on a surface. */
 .vg-terminal-foot {
   width: 60%;
   height: 10px;
   margin: 0 auto;
   background: linear-gradient(180deg, #2e3036, #1e2026);
   box-shadow:
-    inset 0 1px 0 rgba(255, 255, 255, 0.04),
-    0 4px 8px rgba(0, 0, 0, 0.5);
+    inset 0 1px 0 rgba(255, 255, 255, 0.04),  /* very faint top highlight */
+    0 4px 8px rgba(0, 0, 0, 0.5);             /* heavier base shadow */
 }
 
-/* Eternal list items */
+/* =================================================================
+   Eternal Games — List Items
+   -----------------------------------------------------------------
+   Each game in the eternal list is rendered as a small grid row with
+   a rank number, title, genre metadata, and an "Endless" tag badge.
+   Everything is styled in phosphor green to match the CRT screen.
+   ================================================================= */
 
+/* The <ul> container for eternal game items. Positioned above the
+   scanline overlays (z-index: 4) so text is always readable. */
 .vg-eternal-list {
   position: relative;
   z-index: 4;
@@ -2006,6 +2840,12 @@
   padding: 0;
 }
 
+/* Individual eternal game row — a 3-column grid:
+   Column 1 (2.2rem): rank number
+   Column 2 (flexible): game title on top, metadata below
+   Column 3 (auto): the "Endless" tag badge
+   Named grid-template-areas make it easy to place child elements
+   regardless of DOM order. The green bottom border separates rows. */
 .vg-eternal-item {
   display: grid;
   grid-template-columns: 2.2rem minmax(0, 1fr) auto;
@@ -2022,10 +2862,15 @@
   text-shadow: 0 0 3px var(--vg-green-glow);
 }
 
+/* Remove the bottom border from the last item so there's no
+   dangling line at the end of the list. */
 .vg-eternal-item:last-child {
   border-bottom: none;
 }
 
+/* Rank number (e.g., "01", "02") — placed in the "rank" grid area.
+   Uses the smaller pixel font and reduced opacity so the rank is
+   visible but doesn't compete with the game title for attention. */
 .vg-eternal-rank {
   grid-area: rank;
   font-family: var(--vg-font-pixel-sm);
@@ -2033,12 +2878,18 @@
   opacity: 0.5;
 }
 
+/* Game title — placed in the "title" grid area. Bold weight makes it
+   the most prominent text in each row. min-width: 0 prevents the
+   title from overflowing the grid cell on narrow viewports. */
 .vg-eternal-title {
   grid-area: title;
   font-weight: 700;
   min-width: 0;
 }
 
+/* Genre/description metadata line below the title. Smaller and
+   semi-transparent so it reads as secondary information. Normal
+   white-space wrapping allows long descriptions to flow naturally. */
 .vg-eternal-meta {
   grid-area: meta;
   font-size: 0.68rem;
@@ -2047,6 +2898,10 @@
   line-height: 1.35;
 }
 
+/* "Endless" tag badge — a small purple chip that marks each game's
+   status. Purple (#a884ff) contrasts nicely against the green CRT
+   palette, making the tag pop. The subtle border and background tint
+   give it a translucent pill appearance. nowrap keeps it on one line. */
 .vg-eternal-tag {
   grid-area: tag;
   font-family: var(--vg-font-pixel-sm);
@@ -2063,16 +2918,36 @@
 }
 
 
+/* Page footer overrides — the VG page footer strips the default
+   background and replaces it with a simple top border that matches
+   the page's dark indigo palette. */
 .vg-page footer {
   background: none;
   border-top: 1px solid var(--vg-border);
 }
 
+/* Footer text is very low-contrast (30% white) so it stays
+   unobtrusive at the bottom of the page. */
 .vg-page footer .container {
   color: rgba(255, 255, 255, 0.3);
 }
 
+/* =================================================================
+   RESPONSIVE BREAKPOINT: Desktop (min-width: 1081px)
+   -----------------------------------------------------------------
+   At full desktop width there is enough horizontal space to display
+   side-by-side two-column layouts for the "Now Playing" section,
+   the "Feature" section (arcade cabinet + top-10 TV), and the
+   "Eternal" section (CRT terminal + handheld backlog). The cartridge
+   element is also repositioned to protrude above the console using
+   absolute positioning. Flex containers are set to stretch so that
+   paired cards match each other's height.
+   ================================================================= */
 @media (min-width: 1081px) {
+
+  /* Now-playing and feature grids become two equal columns.
+     align-items: stretch ensures both columns share the same height
+     so their contained "hardware" cards line up visually. */
   .vg-now-grid,
   .vg-feature-grid {
     grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -2080,11 +2955,15 @@
     align-items: stretch;
   }
 
+  /* Make each column a flex container so that the card inside can
+     expand to fill the full column height. */
   .vg-now-column,
   .vg-feature-col {
     display: flex;
   }
 
+  /* Cards within columns fill their available width up to the max
+     card size, centered horizontally with auto margins. */
   .vg-now-column .vg-tv,
   .vg-now-column .vg-console-unit,
   .vg-feature-col--pipeline .vg-arcade-cabinet,
@@ -2094,65 +2973,95 @@
     margin: 0 auto;
   }
 
+  /* Pipeline (arcade) column stacks its children vertically so the
+     arcade cabinet occupies the full column height. */
   .vg-feature-col--pipeline {
     flex-direction: column;
   }
 
+  /* The arcade cabinet itself becomes a flex column so its internal
+     screen area can grow to fill remaining vertical space. */
   .vg-feature-col--pipeline .vg-arcade-cabinet {
     flex: 1;
     display: flex;
     flex-direction: column;
   }
 
+  /* The arcade screen region takes all remaining space inside the
+     cabinet, ensuring the cabinet stretches to match the adjacent
+     top-10 TV card's height. */
   .vg-feature-col--pipeline .vg-arcade-screen {
     flex: 1;
   }
 
+  /* Enforce a minimum height on the arcade screen surface and let
+     it grow with the flex parent. */
   .vg-feature-col--pipeline .vg-arcade-screen-surface {
     min-height: 220px;
     height: 100%;
   }
 
+  /* Fixed size for the game cover art thumbnails inside the
+     arcade cabinet at desktop width. */
   .vg-feature-col--pipeline .vg-arcade-covers {
     width: 160px;
     height: 160px;
   }
 
+  /* Top-10 console TV frame switches to a two-column layout: the
+     main screen on the left and the channel dial sidebar (160px)
+     on the right. Slightly more padding at desktop size. */
   .vg-feature-col--top10 .vg-console-tv-frame {
     grid-template-columns: 1fr 160px;
     padding: 0.95rem;
   }
 
+  /* Taller minimum screen height at desktop so the top-10 list has
+     room to breathe, with more generous padding. */
   .vg-feature-col--top10 .vg-console-tv-screen {
     min-height: 340px;
     padding: 1.2rem 1rem;
   }
 
+  /* Cap the channel dial height so it doesn't stretch too tall
+     when the adjacent screen grows. */
   .vg-feature-col--top10 .vg-channel-dial {
     max-height: 240px;
   }
 
+  /* Slightly smaller font for top-10 list entries at desktop to
+     fit more content comfortably in the available space. */
   .vg-feature-col--top10 .vg-top10-list li {
     font-size: 0.72rem;
   }
 
+  /* Desktop-specific custom property values controlling cartridge
+     positioning. These are used by calc() in the cartridge rules
+     below to lift the cartridge above the console. */
   .vg-page {
     --vg-cartridge-lift: 4.5rem;
     --vg-cartridge-protrusion: 4rem;
     --vg-now-row-shift: 1rem;
   }
 
+  /* Push the now-playing grid down to make room for the cartridge
+     element that protrudes above the console. The top margin equals
+     the cartridge lift plus a small extra shift for spacing. */
   .vg-now-grid {
     align-items: stretch;
     margin-top: calc(var(--vg-cartridge-lift) + var(--vg-now-row-shift));
   }
 
+  /* TV and console containers become flex columns so their inner
+     shells can expand vertically to match their sibling's height. */
   .vg-tv,
   .vg-console-unit {
     display: flex;
     flex-direction: column;
   }
 
+  /* Inner shell elements grow to fill remaining height, enabling
+     equal-height cards in the two-column desktop layout. */
   .vg-tv-shell,
   .vg-console {
     flex: 1;
@@ -2160,39 +3069,57 @@
     flex-direction: column;
   }
 
+  /* TV screen area grows to fill the shell, stretching the CRT
+     display area when the adjacent card is taller. */
   .vg-tv-shell .vg-tv-screen {
     flex: 1;
     display: flex;
     flex-direction: column;
   }
 
+  /* The screen surface itself takes all available flex space. */
   .vg-tv-shell .vg-tv-screen-surface {
     flex: 1;
   }
 
+  /* Console face (the front panel with the LCD) stretches similarly
+     to keep both columns at equal height. */
   .vg-console .vg-console-face {
     flex: 1;
     display: flex;
     flex-direction: column;
   }
 
+  /* The LCD panel takes remaining space inside the console face. */
   .vg-console .vg-console-lcd {
     flex: 1;
   }
 
+  /* Position the console column relative so the absolutely-positioned
+     cartridge can anchor itself to it. Content starts at the top. */
   .vg-console-unit {
     position: relative;
     justify-content: flex-start;
   }
 
+  /* When the console has no cartridge, remove the extra top padding
+     that would have been reserved for the protruding cartridge. */
   .vg-console-unit--no-cart {
     padding-top: 0;
   }
 
+  /* If the console has no cartridge, the grid doesn't need the extra
+     top margin that accommodates cartridge protrusion — just use the
+     small row shift. The :has() selector detects this automatically. */
   .vg-now-grid:has(.vg-console-unit--no-cart) {
     margin-top: var(--vg-now-row-shift);
   }
 
+  /* Cartridge element is absolutely positioned above the console.
+     It's horizontally centered via left: 50% + translateX(-50%).
+     A negative top margin lifts it above the console's top edge by
+     exactly the lift + protrusion distance, creating the visual
+     effect of a cartridge plugged into the slot. */
   .vg-cartridge {
     position: absolute;
     top: 0;
@@ -2202,16 +3129,23 @@
     margin-bottom: 0;
   }
 
+  /* Eternal section becomes a two-column grid at desktop width so
+     the CRT terminal and the handheld backlog sit side by side.
+     stretch ensures both columns match height. */
   .vg-eternal-grid {
     grid-template-columns: repeat(2, minmax(0, 1fr));
     gap: var(--vg-grid-gap-desktop);
     align-items: stretch;
   }
 
+  /* Each eternal column becomes a flex container for height matching. */
   .vg-eternal-col {
     display: flex;
   }
 
+  /* The terminal (CRT monitor) fills its column width, centered with
+     auto margins, and becomes a flex column so internal elements
+     can stretch vertically to match the adjacent card. */
   .vg-eternal-col--terminal .vg-terminal {
     width: 100%;
     max-width: var(--vg-card-max-desktop);
@@ -2220,16 +3154,21 @@
     flex-direction: column;
   }
 
+  /* Terminal screen grows to fill remaining vertical space inside
+     the CRT housing, keeping the two columns the same height. */
   .vg-eternal-col--terminal .vg-terminal-screen {
     flex: 1;
     display: flex;
     flex-direction: column;
   }
 
+  /* Screen surface takes all remaining space in the flex parent. */
   .vg-eternal-col--terminal .vg-terminal-screen-surface {
     flex: 1;
   }
 
+  /* The handheld backlog card in the other column fills its width,
+     centered with auto margins, capped at the desktop max. */
   .vg-eternal-col--backlog .vg-handheld {
     width: 100%;
     max-width: var(--vg-card-max-desktop);
@@ -2238,17 +3177,32 @@
 }
 
 
-/* Tablet-and-down responsive adjustments. */
+/* =================================================================
+   RESPONSIVE BREAKPOINT: Tablet (max-width: 1080px)
+   -----------------------------------------------------------------
+   At tablet width (1080px and below) there isn't enough room for
+   side-by-side cards. All multi-column grids collapse to a single
+   column so cards stack vertically. The channel dial switches from
+   a vertical scrollable sidebar to a horizontal wrapping row of
+   year tabs. The speaker grille is hidden to save space.
+   ================================================================= */
 @media (max-width: 1080px) {
+
+  /* Now-playing grid collapses to a single column with tighter
+     spacing between stacked cards. */
   .vg-now-grid {
     grid-template-columns: 1fr;
     gap: 1.2rem;
   }
 
+  /* Console TV frame drops its sidebar column (channel dial) and
+     becomes a single-column layout. */
   .vg-console-tv-frame {
     grid-template-columns: 1fr;
   }
 
+  /* TV controls (which were in the sidebar) reflow into a horizontal
+     centered row with wrapping, placed below the screen. */
   .vg-console-tv-controls {
     flex-direction: row;
     flex-wrap: wrap;
@@ -2256,10 +3210,15 @@
     padding: 1rem;
   }
 
+  /* The decorative speaker grille is hidden at tablet width since
+     the controls area is reorganized and space is limited. */
   .vg-speaker-grille {
     display: none;
   }
 
+  /* Channel dial (year selector tabs) becomes a horizontal wrapping
+     row centered below the screen. max-height and overflow-y are
+     reset since the dial no longer needs to scroll vertically. */
   .vg-channel-dial {
     flex-direction: row;
     flex-wrap: wrap;
@@ -2269,40 +3228,65 @@
     gap: 0.3rem;
   }
 
+  /* Year tabs auto-size their width based on content rather than
+     filling the full width of a vertical sidebar. */
   .vg-dial-year {
     width: auto;
     padding: 0.3rem 0.5rem;
   }
 
+  /* Eternal section also collapses to a single column. */
   .vg-eternal-grid {
     grid-template-columns: 1fr;
     gap: 1.4rem;
   }
 }
 
+/* =================================================================
+   RESPONSIVE BREAKPOINT: Mobile (max-width: 760px)
+   -----------------------------------------------------------------
+   At mobile width (760px and below) all hardware-themed cards expand
+   to full viewport width. Screen areas shrink, text sizes reduce,
+   and secondary UI elements are simplified. The game shelf drops
+   from its desktop column count to 3 columns. Handheld screens
+   stack vertically. The Steam sidebar collapses. Decorative details
+   like D-pad and buttons get physically smaller.
+   ================================================================= */
 @media (max-width: 760px) {
+
+  /* TV and console cards fill the full width on mobile instead of
+     being capped at the desktop max-width. */
   .vg-now-column .vg-tv,
   .vg-now-column .vg-console-unit {
     max-width: 100%;
   }
 
+  /* Hero section gets tighter padding to reclaim horizontal space. */
   .vg-hero-inner {
     padding: 1.4rem 1rem 1.2rem;
   }
 
+  /* Scrolling ticker text shrinks so it doesn't overwhelm the
+     narrower viewport. */
   .vg-ticker-text {
     font-size: 0.52rem;
   }
 
+  /* TV card fills full mobile width. */
   .vg-tv {
     max-width: 100%;
   }
 
+  /* TV screen surface gets a reduced minimum height and tighter
+     padding to fit the narrower screen. */
   .vg-tv-screen-surface {
     min-height: 200px;
     padding: 1rem 0.8rem;
   }
 
+  /* Now-playing list items: narrower rank column, smaller font,
+     and tighter gaps to fit on mobile. The grid areas remain the
+     same (rank, title, hltb on top row; rank, meta, hltb on bottom). */
   .vg-now-item {
     grid-template-columns: 2rem minmax(0, 1fr) auto;
     grid-template-areas:
@@ -2312,12 +3296,17 @@
     gap: 0.4rem;
   }
 
+  /* Metadata text wraps normally and aligns left on mobile since
+     there's not enough width for right-aligned single-line text. */
   .vg-now-meta {
     text-align: left;
     white-space: normal;
     line-height: 1.35;
   }
 
+  /* HLTB (How Long To Beat) time columns shrink with narrower
+     column widths (4.5ch each) and tighter gaps. The fixed total
+     width (16ch) keeps the three-column time grid compact. */
   .vg-now-hltb {
     font-size: 0.5rem;
     grid-template-columns: 4.5ch 4.5ch 4.5ch;
@@ -2326,6 +3315,7 @@
     align-self: center;
   }
 
+  /* HLTB column headers shrink to match the data cells below them. */
   .vg-now-hltb-header {
     font-size: 0.44rem;
     grid-template-columns: 4.5ch 4.5ch 4.5ch;
@@ -2333,10 +3323,12 @@
     width: 16ch;
   }
 
+  /* Console and arcade cards fill full width on mobile. */
   .vg-console-unit {
     max-width: 100%;
   }
 
+  /* Cartridge narrows to fit the smaller console card. */
   .vg-cartridge {
     width: 160px;
   }
@@ -2349,32 +3341,42 @@
     max-width: 100%;
   }
 
+  /* Console TV screen gets a reduced min-height for mobile. */
   .vg-console-tv-screen {
     min-height: 300px;
   }
 
+  /* Top-10 list text shrinks slightly for mobile readability. */
   .vg-top10-list li {
     font-size: 0.7rem;
   }
 
+  /* Game shelf grid drops to 3 columns on mobile (from more on
+     wider screens) to keep cartridge labels legible. */
   .vg-shelf-row {
     grid-template-columns: repeat(3, 1fr);
   }
 
+  /* Cart tooltips wrap text and center it since they can't extend
+     as wide on narrow screens. */
   .vg-cart-tooltip {
     white-space: normal;
     max-width: 180px;
     text-align: center;
   }
 
+  /* Handheld dual-screen layout collapses to a single stacked
+     column so top and bottom screens stack vertically. */
   .vg-handheld-screens {
     grid-template-columns: 1fr;
   }
 
+  /* Remove the min-height constraint so screens size naturally. */
   .vg-handheld-screen-surface {
     min-height: auto;
   }
 
+  /* D-pad and face buttons shrink to fit the narrower layout. */
   .vg-handheld-dpad {
     width: 40px;
     height: 40px;
@@ -2385,47 +3387,74 @@
     height: 24px;
   }
 
+  /* Steam sidebar + content grid collapses to a single column. */
   .vg-steam-columns {
     grid-template-columns: 1fr;
   }
 
+  /* CRT terminal fills full width on mobile. */
   .vg-terminal {
     max-width: 100%;
   }
 
+  /* Terminal screen surface loses fixed min-height and gets
+     tighter padding on mobile. */
   .vg-terminal-screen-surface {
     min-height: auto;
     padding: 1rem 0.8rem;
   }
 
+  /* Eternal list items get a smaller font and tighter gap. */
   .vg-eternal-item {
     font-size: 0.74rem;
     gap: 0 0.4rem;
   }
 }
 
+/* =================================================================
+   RESPONSIVE BREAKPOINT: Small Mobile (max-width: 420px)
+   -----------------------------------------------------------------
+   At the smallest phone screens (420px and below) aggressive size
+   reductions kick in. The hero title switches to a fluid clamp that
+   bottoms out at 1.1rem. The scrolling ticker is hidden entirely.
+   Game list metadata rows are removed to save vertical space. Many
+   decorative elements (console ports, arcade joystick) are hidden.
+   Font sizes drop to their minimums, and the game shelf goes to
+   a 2-column grid. The eternal list drops its tag column.
+   ================================================================= */
 @media (max-width: 420px) {
+
+  /* Hero title uses a viewport-relative clamp so it never gets
+     smaller than 1.1rem or larger than 1.6rem on these screens. */
   .vg-hero-title {
     font-size: clamp(1.1rem, 6vw, 1.6rem);
   }
 
+  /* Hero subtitle shrinks to stay proportional. */
   .vg-hero-subtitle {
     font-size: 0.68rem;
   }
 
+  /* The scrolling news ticker is completely hidden on very small
+     screens where it would be too tiny to read and wastes space. */
   .vg-ticker {
     display: none;
   }
 
+  /* TV knobs shrink to maintain proportion with the smaller card. */
   .vg-tv-knob {
     width: 18px;
     height: 18px;
   }
 
+  /* Section headings inside screens get smaller. */
   .vg-screen-heading {
     font-size: 0.58rem;
   }
 
+  /* Now-playing items simplify to a single-row grid: rank, title,
+     and HLTB times. The metadata row is removed (see below) to
+     save precious vertical space on tiny screens. */
   .vg-now-item {
     grid-template-columns: 1.8rem minmax(0, 1fr) auto;
     grid-template-areas: "rank title hltb";
@@ -2433,14 +3462,20 @@
     gap: 0.35rem;
   }
 
+  /* Hide the metadata row entirely on small mobile — there's not
+     enough room to display genre/platform info per game. */
   .vg-now-meta {
     display: none;
   }
 
+  /* Also hide the HLTB column headers since the data cells alone
+     are sufficient context at this size. */
   .vg-now-hltb-header {
     display: none;
   }
 
+  /* HLTB time cells shrink further: narrower columns (4ch) and
+     a tighter total width (14ch). */
   .vg-now-hltb {
     font-size: 0.5rem;
     grid-template-columns: 4ch 4ch 4ch;
@@ -2448,53 +3483,68 @@
     width: 14ch;
   }
 
+  /* Cartridge narrows further for the smallest screens. */
   .vg-cartridge {
     width: 130px;
   }
 
+  /* Decorative controller ports below the console are hidden since
+     they add visual clutter without conveying information. */
   .vg-console-ports {
     display: none;
   }
 
+  /* The arcade joystick decoration is also hidden at this size. */
   .vg-arcade-joystick {
     display: none;
   }
 
+  /* Console TV screen gets an even shorter min-height and tighter
+     padding to conserve vertical space. */
   .vg-console-tv-screen {
     min-height: 260px;
     padding: 1rem 0.8rem;
   }
 
+  /* Top-10 list items shrink to their smallest readable size. */
   .vg-top10-list li {
     font-size: 0.64rem;
   }
 
+  /* Channel dial year tabs get tighter spacing. */
   .vg-channel-dial {
     gap: 0.2rem;
   }
 
+  /* Year tab text shrinks with reduced padding. */
   .vg-dial-year {
     font-size: 0.44rem;
     padding: 0.25rem 0.35rem;
   }
 
+  /* Game shelf drops to 2 columns — the minimum that still allows
+     cartridge labels to be readable on a small phone. */
   .vg-shelf-row {
     grid-template-columns: repeat(2, 1fr);
   }
 
+  /* Cart labels get a shorter minimum height and tighter padding. */
   .vg-cart-label {
     min-height: 60px;
     padding: 0.35rem 0.25rem;
   }
 
+  /* Cart title text shrinks to its smallest size. */
   .vg-cart-title {
     font-size: 0.38rem;
   }
 
+  /* Handheld console body gets tighter padding overall. */
   .vg-handheld {
     padding: 0.8rem 0.9rem 0.7rem;
   }
 
+  /* Handheld brand label and heading shrink for small screens. */
   .vg-handheld-label {
     font-size: 0.56rem;
     letter-spacing: 1.5px;
@@ -2504,24 +3554,30 @@
     font-size: 0.44rem;
   }
 
+  /* Backlog title and platform name text size reduces to fit. */
   .vg-backlog-title,
   .vg-platform-name {
     font-size: 0.44rem;
   }
 
+  /* Backlog metadata (game counts, percentages) also shrinks. */
   .vg-backlog-meta {
     font-size: 0.44rem;
   }
 
+  /* Platform count numbers are slightly larger than the labels
+     so they remain the focal point even at small sizes. */
   .vg-platform-count {
     font-size: 0.52rem;
   }
 
+  /* Handheld "View" button shrinks with reduced padding. */
   .vg-handheld-btn {
     font-size: 0.38rem;
     padding: 0.4rem 1rem;
   }
 
+  /* D-pad and face buttons reach their smallest size on phones. */
   .vg-handheld-dpad {
     width: 34px;
     height: 34px;
@@ -2532,58 +3588,73 @@
     height: 22px;
   }
 
+  /* Steam window content area gets tighter padding. */
   .vg-steam-content {
     padding: 0.8rem 0.7rem;
   }
 
+  /* Steam navigation tabs shrink for small screens. */
   .vg-steam-nav-tab {
     font-size: 0.58rem;
     padding: 0.36rem 0.5rem;
   }
 
+  /* Steam stats text shrinks. */
   .vg-steam-stats span {
     font-size: 0.52rem;
   }
 
+  /* Steam section heading shrinks. */
   .vg-steam-heading {
     font-size: 0.6rem;
   }
 
+  /* Steam game list items shrink. */
   .vg-steam-list li {
     font-size: 0.68rem;
   }
 
+  /* Playtime hours text gets very small to fit alongside titles. */
   .vg-steam-hours {
     font-size: 0.48rem;
   }
 
+  /* Ranked list rank numbers shrink and get a narrower min-width. */
   .vg-steam-list--ranked li::before {
     font-size: 0.5rem;
     min-width: 1.6rem;
   }
 
+  /* Steam button shrinks with tighter padding. */
   .vg-steam-btn {
     font-size: 0.62rem;
     padding: 0.38rem 1rem;
   }
 
+  /* Terminal housing gets tighter horizontal padding. */
   .vg-terminal {
     padding: 0.4rem 0.7rem 0;
   }
 
+  /* Terminal brand label shrinks. */
   .vg-terminal-label {
     font-size: 0.52rem;
     letter-spacing: 1.5px;
   }
 
+  /* Terminal heading inside the screen shrinks. */
   .vg-terminal-heading {
     font-size: 0.56rem;
   }
 
+  /* Terminal screen surface gets tighter padding. */
   .vg-terminal-screen-surface {
     padding: 0.8rem 0.7rem;
   }
 
+  /* Eternal list items drop the tag column entirely. The grid
+     simplifies to just rank and title/meta — two columns instead
+     of three. This frees horizontal space on tiny screens. */
   .vg-eternal-item {
     grid-template-columns: 1.8rem minmax(0, 1fr);
     grid-template-areas:
@@ -2592,14 +3663,19 @@
     font-size: 0.68rem;
   }
 
+  /* Eternal metadata text shrinks. */
   .vg-eternal-meta {
     font-size: 0.56rem;
   }
 
+  /* The "Endless" tag badge is completely hidden at this breakpoint
+     since the two-column grid no longer has space for it. */
   .vg-eternal-tag {
     display: none;
   }
 
+  /* Monitor stand and foot shrink proportionally at the smallest
+     breakpoint to match the more compact terminal housing. */
   .vg-terminal-stand {
     height: 28px;
   }

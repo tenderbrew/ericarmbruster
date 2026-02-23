@@ -1,35 +1,67 @@
-# update-steam.yml
-# Nightly and manual workflow that refreshes steam-data.json using steam-fetch.js,
-# then commits the JSON only when it changes.
+# ============================================================================
+# update-steam.yml — GitHub Actions workflow for automated Steam data refresh
+# ============================================================================
+# This workflow runs the steam-fetch.js Node script to pull the latest game
+# library data from the Steam Web API, then commits the resulting JSON file
+# back to the repository. It ensures the video games page always shows
+# up-to-date playtime stats, recently played games, and top-10 lists without
+# any manual intervention.
+# ============================================================================
+
+# The `name` appears in the Actions tab of the GitHub repository UI.
 name: Update Steam Data
 
+# ---------------------------------------------------------------------------
+# Triggers — when this workflow runs
+# ---------------------------------------------------------------------------
 on:
   schedule:
-    # Runs daily at 08:00 UTC.
+    # Cron schedule: runs once per day at 08:00 UTC (3:00 AM Eastern).
+    # The five fields are: minute(0) hour(8) day-of-month(*) month(*) day-of-week(*).
+    # The asterisks mean "every" — so this fires every day regardless of date or weekday.
     - cron: '0 8 * * *'
-  # Lets you trigger a refresh manually from the Actions tab.
+
+  # workflow_dispatch enables the "Run workflow" button in the GitHub Actions UI,
+  # allowing a manual trigger at any time (useful after changing steam-fetch.js
+  # or when you want an immediate refresh without waiting for the cron schedule).
   workflow_dispatch:
 
+# ---------------------------------------------------------------------------
+# Jobs — the actual work performed when the workflow triggers
+# ---------------------------------------------------------------------------
 jobs:
   fetch:
+    # Uses a GitHub-hosted Ubuntu runner (a fresh Linux VM spun up for each run).
     runs-on: ubuntu-latest
+
     steps:
-      # Pull current repository state onto the runner.
+      # Step 1: Check out the repository so the runner has all project files,
+      # including steam-fetch.js and the current steam-data.json to compare against.
       - uses: actions/checkout@v4
 
-      # Ensure a modern Node runtime for built-in fetch support.
+      # Step 2: Install Node.js 20, which provides the native `fetch()` API that
+      # steam-fetch.js uses for HTTP requests (no external HTTP library needed).
       - uses: actions/setup-node@v4
         with:
           node-version: '20'
 
-      # Generate fresh Steam snapshot JSON from secrets-backed credentials.
+      # Step 3: Execute the Steam data fetch script. The two environment variables
+      # are injected from GitHub repository secrets (Settings → Secrets → Actions).
+      # STEAM_API_KEY is the personal API key from steamcommunity.com/dev/apikey.
+      # STEAM_ID is the 64-bit Steam profile ID whose library data is fetched.
       - name: Fetch Steam data
         env:
           STEAM_API_KEY: ${{ secrets.STEAM_API_KEY }}
           STEAM_ID: ${{ secrets.STEAM_ID }}
         run: node steam-fetch.js
 
-      # Commit only when steam-data.json changed, so history stays clean.
+      # Step 4: Conditionally commit and push the updated JSON file.
+      # `git diff --quiet steam-data.json` exits with code 0 if the file is
+      # unchanged — the `&& exit 0` then skips the commit entirely, keeping
+      # the git history clean (no empty "no changes" commits).
+      # If the file did change, it configures a bot identity for the commit
+      # (required by GitHub — commits need an author), stages the JSON,
+      # creates a conventional commit, and pushes to the default branch.
       - name: Commit and push if changed
         run: |
           git diff --quiet steam-data.json && exit 0

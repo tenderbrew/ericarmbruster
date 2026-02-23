@@ -1,12 +1,34 @@
-<!-- File Guide: seymour.html. Memorial scrapbook page for Seymour with chronological photo gallery. -->
+<!--
+  seymour.html — Memorial Scrapbook for Seymour
+  ================================================
+  A tribute page for Seymour, a Jack Russell Terrier (2010-2025). Designed as
+  a scrapbook/photo album with a navy-toned aesthetic (body class: .sy-page).
+
+  Page sections:
+    1. Pull quote banner — an Agnes Sligh Turnbull quote about dogs
+    2. Hero — portrait photo, name, dates, decorative flourishes, epitaph,
+       and a written tribute section
+    3. Photo gallery — 30 chronological photos (2013-2025) in a responsive
+       grid, each styled as a scrapbook photo mount with corner tabs
+    4. Lightbox overlay — full-screen photo viewer with prev/next navigation
+
+  Decorative elements: paw prints, bone dividers, collar tag, flourish lines,
+  and embossed text effects — all handled by sy-styles.css.
+
+  Stylesheets: styles.css (shared) + sy-styles.css (page-specific)
+  Scripts: drawer.js (nav) + ticker.js (ticker) + inline lightbox script
+  Body class: .sy-page
+-->
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <!-- Head section: metadata, social tags, fonts, stylesheets, and analytics bootstrapping. -->
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Seymour: A Loyal Friend - Eric Armbruster</title>
+
+  <!-- SEO and social sharing metadata. -->
   <meta name="description" content="Seymour: a loyal friend. A tribute to Eric's Jack Russell Terrier.">
+  <!-- Dark navy theme color matching the memorial scrapbook aesthetic. -->
   <meta name="theme-color" content="#0e1520">
   <link rel="canonical" href="https://www.ericarmbruster.com/seymour.html">
   <meta property="og:title" content="Seymour: A Loyal Friend - Eric Armbruster">
@@ -19,12 +41,18 @@
   <meta name="twitter:description" content="Seymour: a loyal friend. A tribute to Eric's Jack Russell Terrier.">
   <meta name="twitter:image" content="https://www.ericarmbruster.com/images/seymour-memoriam.png">
   <link rel="icon" href="images/hector-favicon.png" type="image/png">
+
+  <!-- Google Fonts — Playfair Display and Lora are elegant serifs chosen for
+       the memorial page's warm, respectful tone. They complement the
+       scrapbook aesthetic with their graceful curves and readability. -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Libre+Caslon+Display&family=Libre+Caslon+Text:ital,wght@0,400;0,700;1,400&family=Herr+Von+Muellerhoff&family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Lora:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+
   <link rel="stylesheet" href="styles.css">
   <link rel="stylesheet" href="sy-styles.css">
-  <!-- Analytics library: loaded async so it does not block rendering. -->
+
+  <!-- Google Analytics -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-5ZTHJXDR9V"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
@@ -33,9 +61,12 @@
     gtag('config', 'G-5ZTHJXDR9V');
   </script>
 </head>
+
 <body class="sy-page">
 
-  <!-- Scrolling ticker tape: live market data. -->
+  <!-- ═══════════════════════════════════════════════════════════════════════
+       SCROLLING TICKER TAPE — shared across all pages.
+       ticker.js replaces placeholder values with live market data. -->
   <div class="ticker-tape" aria-hidden="true">
     <div class="ticker-track">
       <span class="tick" data-ticker="DJIA">DJIA 38,547 &#9650;0.42%</span>
@@ -58,6 +89,7 @@
       <span class="tick-sep">&bull;</span>
       <span class="tick" data-ticker="FEDFUNDS">FED FUNDS 5.33%</span>
       <span class="tick-sep">&bull;</span>
+      <!-- Duplicate set for seamless infinite scroll animation. -->
       <span class="tick" data-ticker="DJIA">DJIA 38,547 &#9650;0.42%</span>
       <span class="tick-sep">&bull;</span>
       <span class="tick" data-ticker="SP500">S&amp;P 500 5,234 &#9650;0.18%</span>
@@ -81,7 +113,8 @@
     </div>
   </div>
 
-  <!-- Shared primary navigation. Drawer behavior is provided by drawer.js. -->
+  <!-- ═══════════════════════════════════════════════════════════════════════
+       PRIMARY NAVIGATION — shared across all pages. -->
   <nav class="study-nav" aria-label="Primary">
     <div class="container nav-shell">
       <a href="index.html" class="brand-mark" aria-label="Eric Armbruster home">Eric M. Armbruster</a>
@@ -127,44 +160,78 @@
     </div>
   </nav>
 
-  <!-- Pull quote banner -->
+  <!-- ═══════════════════════════════════════════════════════════════════════
+       PULL QUOTE BANNER
+       ═══════════════════════════════════════════════════════════════════════
+       A full-width banner with a poignant quote about dogs. The <blockquote>
+       with <cite> is semantically correct for attributed quotations.
+       &ldquo;/&rdquo; are typographic curly quotes; &rsquo; is an apostrophe;
+       &mdash; is an em dash. -->
   <div class="sy-pullquote-banner">
     <blockquote class="sy-pullquote">
       <p>&ldquo;Dogs&rsquo; lives are too short. Their only fault, really.&rdquo; <cite>&mdash; Agnes Sligh Turnbull</cite></p>
     </blockquote>
   </div>
 
-  <!-- Page hero / introductory banner section. -->
+  <!-- ═══════════════════════════════════════════════════════════════════════
+       HERO SECTION
+       ═══════════════════════════════════════════════════════════════════════
+       The memorial header with Seymour's portrait, name, life dates, and a
+       written tribute. Rich with decorative elements:
+
+       - sy-hero-glow: a soft radial gradient backdrop behind the portrait
+       - sy-paw elements: decorative paw print icons positioned at corners
+       - sy-portrait-frame: circular photo frame with a decorative border
+       - sy-hero-flourish: ornamental line-diamond-line dividers
+       - sy-collar: decorative dog collar with a tag (CSS-only illustration)
+       - sy-embossed: CSS text effect that creates a pressed/embossed look
+       - sy-tribute: the written memorial text ("Faithful Companion")
+       - sy-bone-divider: a small bone-shaped horizontal rule -->
   <header class="hero sy-hero">
+    <!-- Soft glow behind the hero content area. -->
     <div class="sy-hero-glow" aria-hidden="true"></div>
     <div class="container sy-hero-inner">
+      <!-- Decorative paw prints at the corners of the hero section.
+           Positioned absolutely, purely visual. -->
       <span class="sy-paw sy-paw--hero-l" aria-hidden="true"></span>
       <span class="sy-paw sy-paw--hero-r" aria-hidden="true"></span>
       <span class="sy-paw sy-paw--hero-tl" aria-hidden="true"></span>
       <span class="sy-paw sy-paw--hero-br" aria-hidden="true"></span>
 
       <div class="sy-hero-layout">
+        <!-- Portrait photo in a circular frame. loading="eager" because
+             this is above the fold and should load immediately. -->
         <div class="sy-hero-portrait">
           <div class="sy-portrait-frame">
             <img src="images/seymour-memoriam.png" alt="Seymour, a Jack Russell Terrier" width="400" height="400" loading="eager">
           </div>
         </div>
 
+        <!-- Name, dates, and epitaph text. -->
         <div class="sy-hero-text">
+          <!-- Upper flourish — decorative line-diamond-line ornament. -->
           <div class="sy-hero-flourish" aria-hidden="true">
             <span class="sy-flourish-line"></span>
             <span class="sy-flourish-diamond"></span>
             <span class="sy-flourish-line"></span>
           </div>
 
+          <!-- Name with embossed text effect (CSS creates a pressed-in look
+               using text-shadow with highlight above and shadow below). -->
           <h1 class="sy-embossed sy-hero-name">Seymour</h1>
 
+          <!-- Decorative dog collar illustration — the collar band and
+               dangling tag are built purely from CSS shapes (borders,
+               border-radius, gradients). -->
           <div class="sy-collar" aria-hidden="true">
             <span class="sy-collar-tag"></span>
           </div>
 
+          <!-- Life dates. &ndash; is an en dash (–), the typographically
+               correct separator for date ranges. -->
           <p class="sy-hero-years">2010 &ndash; 2025</p>
 
+          <!-- Lower flourish — same ornament repeated below the dates. -->
           <div class="sy-hero-flourish sy-hero-flourish--lower" aria-hidden="true">
             <span class="sy-flourish-line"></span>
             <span class="sy-flourish-diamond"></span>
@@ -174,8 +241,11 @@
           <p class="sy-hero-epitaph">A faithful companion. A good boy.</p>
         </div>
 
+        <!-- Written tribute section styled as a scrapbook album page. -->
         <div class="sy-album-page sy-tribute" aria-labelledby="tribute-heading">
           <h2 id="tribute-heading" class="sy-section-heading">Faithful Companion</h2>
+          <!-- Bone divider — a small decorative bone shape used as a
+               horizontal rule between sections. -->
           <div class="sy-bone-divider" aria-hidden="true"></div>
           <p>We got Seymour from a pet store in Frazier, PA. The salesperson commented during checkout that &ldquo;someone finally bought the crazy one.&rdquo; That about summed him up.</p>
           <p>A chaotic first year of settling in with a certified lunatic gave way to middle years of compassionate friendship &mdash; a beautiful companion who willingly welcomed each of our children into the household as they arrived. Then came a mellow later life as the family sentinel and a true best friend.</p>
@@ -185,10 +255,23 @@
     </div>
   </header>
 
-  <!-- Main page content. -->
   <main>
 
-    <!-- Photo gallery: chronological, 2013–2025 -->
+    <!-- ═══════════════════════════════════════════════════════════════════
+         PHOTO GALLERY — "Through the Years" (2013–2025)
+         ═══════════════════════════════════════════════════════════════════
+         A responsive grid of 30 chronological photos. Each photo is wrapped
+         in a .sy-photo-mount container that mimics a scrapbook page with:
+         - The photo image (loading="lazy" since most are below the fold)
+         - Two decorative corner tabs (sy-corner-bl, sy-corner-br) that
+           look like adhesive photo mount corners holding the photo in place
+         - A caption with description text and year
+
+         Clicking any photo opens the lightbox overlay (script at bottom).
+         The gallery grid adapts from 3 columns on desktop to 2 on tablet
+         to 1 on mobile via CSS media queries in sy-styles.css.
+
+         Decorative paw prints flank the gallery section title. -->
     <section aria-labelledby="gallery-heading" style="position: relative;">
       <span class="sy-paw sy-paw--gallery-l" aria-hidden="true"></span>
       <span class="sy-paw sy-paw--gallery-r" aria-hidden="true"></span>
@@ -197,6 +280,15 @@
         <div class="sy-bone-divider" aria-hidden="true"></div>
 
         <div class="sy-gallery-grid">
+
+          <!-- Each gallery item follows this structure:
+               .sy-gallery-item.sy-photo-mount — outer container
+                 img — the photo (loading="lazy" defers download until scroll)
+                 .sy-corner-bl / .sy-corner-br — decorative photo mount corners
+                 .sy-photo-caption — text overlay at the bottom
+                   .sy-caption-text — short description
+                   .sy-caption-year — the year the photo was taken
+               All 30 items below use this same pattern. -->
 
           <div class="sy-gallery-item sy-photo-mount">
             <img src="images/seymour/seymour-01.jpg" alt="Young Seymour on a blue leash in the grass" loading="lazy">
@@ -488,6 +580,7 @@
             </div>
           </div>
 
+          <!-- Last photo — the final image in the chronological timeline. -->
           <div class="sy-gallery-item sy-photo-mount">
             <img src="images/seymour/seymour-30.jpg" alt="Close-up of an older Seymour with gray muzzle" loading="lazy">
             <span class="sy-corner-bl" aria-hidden="true"></span>
@@ -504,14 +597,28 @@
 
   </main>
 
-  <!-- Shared footer. -->
   <footer>
     <div class="container sy-footer-inner">
       <p class="sy-footer-copy">&copy; 2026 Eric Armbruster</p>
     </div>
   </footer>
 
-  <!-- Lightbox overlay for gallery photos. -->
+  <!-- ═══════════════════════════════════════════════════════════════════════
+       LIGHTBOX OVERLAY
+       ═══════════════════════════════════════════════════════════════════════
+       A full-screen photo viewer that opens when a gallery photo is clicked.
+       Hidden by default (aria-hidden="true"), revealed by the inline script
+       below which adds the .sy-lightbox--open class.
+
+       Contains:
+       - Close button (×) — top-right, closes the lightbox
+       - Previous button (‹) — left side, navigates to the previous photo
+       - Next button (›) — right side, navigates to the next photo
+       - The large display image (src set dynamically by JS)
+       - Caption text (populated dynamically from the gallery item's caption)
+
+       The lightbox locks body scroll (overflow: hidden) when open and
+       restores it when closed. -->
   <div class="sy-lightbox" id="sy-lightbox" aria-hidden="true">
     <button class="sy-lightbox-close" aria-label="Close">&times;</button>
     <button class="sy-lightbox-prev" aria-label="Previous photo">&#8249;</button>
@@ -520,20 +627,49 @@
     <div class="sy-lightbox-caption" id="sy-lightbox-caption"></div>
   </div>
 
-  <!-- Shared drawer controller for desktop/mobile navigation. -->
+  <!-- Shared scripts. -->
   <script src="drawer.js"></script>
   <script src="ticker.js"></script>
+
+  <!-- ═══════════════════════════════════════════════════════════════════════
+       INLINE LIGHTBOX SCRIPT
+       ═══════════════════════════════════════════════════════════════════════
+       Controls the gallery lightbox overlay. Wrapped in an IIFE to keep
+       all variables private.
+
+       Features:
+       - Click any gallery photo → opens lightbox with that photo
+       - Previous/Next buttons → cycle through photos (wraps around)
+       - Click the backdrop (outside the image) → closes lightbox
+       - Escape key → closes lightbox
+       - Arrow keys → navigate between photos
+       - Body scroll is locked while lightbox is open
+  -->
   <script>
     (function () {
+      /* ── DOM references ──────────────────────────────────────────────
+       * Cache all the lightbox elements and gallery items once at load
+       * time so we don't query the DOM repeatedly during navigation. */
       var lightbox = document.getElementById('sy-lightbox');
       var lbImg = document.getElementById('sy-lightbox-img');
       var lbCaption = document.getElementById('sy-lightbox-caption');
       var closeBtn = lightbox.querySelector('.sy-lightbox-close');
       var prevBtn = lightbox.querySelector('.sy-lightbox-prev');
       var nextBtn = lightbox.querySelector('.sy-lightbox-next');
+
+      /* Convert the gallery items NodeList to a real array so we can use
+       * array methods (.length, index access) for navigation. */
       var galleryItems = Array.from(document.querySelectorAll('.sy-gallery-item'));
+
+      /* Tracks which photo is currently displayed in the lightbox.
+       * Used by navigate() to calculate the next/previous index. */
       var currentIndex = 0;
 
+      /* ── Show a specific photo ───────────────────────────────────────
+       * Updates the lightbox image source, alt text, and caption to match
+       * the gallery item at the given index. Reads the img src and alt
+       * from the gallery DOM, and combines the caption text and year
+       * into a single string separated by an em dash. */
       function showPhoto(index) {
         currentIndex = index;
         var item = galleryItems[index];
@@ -545,6 +681,10 @@
         lbCaption.textContent = (text ? text.textContent : '') + (year ? ' — ' + year.textContent : '');
       }
 
+      /* ── Navigate forward or backward ────────────────────────────────
+       * Adds `delta` to the current index (+1 for next, -1 for previous).
+       * Wraps around: going past the last photo loops to the first,
+       * and going before the first loops to the last. */
       function navigate(delta) {
         var next = currentIndex + delta;
         if (next < 0) next = galleryItems.length - 1;
@@ -552,6 +692,12 @@
         showPhoto(next);
       }
 
+      /* ── Attach click handlers to gallery images ─────────────────────
+       * Each gallery photo gets a click listener that:
+       * 1. Shows that photo in the lightbox
+       * 2. Makes the lightbox visible (aria-hidden="false" + CSS class)
+       * 3. Locks page scroll to prevent scrolling the gallery behind
+       *    the lightbox overlay */
       galleryItems.forEach(function (item, i) {
         var img = item.querySelector('img');
         img.style.cursor = 'pointer';
@@ -559,22 +705,38 @@
           showPhoto(i);
           lightbox.setAttribute('aria-hidden', 'false');
           lightbox.classList.add('sy-lightbox--open');
+          /* Lock body scroll so the page doesn't scroll behind the overlay. */
           document.body.style.overflow = 'hidden';
         });
       });
 
+      /* ── Close the lightbox ──────────────────────────────────────────
+       * Removes the open class and aria state, and restores body scroll. */
       function close() {
         lightbox.classList.remove('sy-lightbox--open');
         lightbox.setAttribute('aria-hidden', 'true');
         document.body.style.overflow = '';
       }
 
+      /* ── Button event listeners ──────────────────────────────────────
+       * Close button, prev/next navigation buttons. */
       closeBtn.addEventListener('click', close);
       prevBtn.addEventListener('click', function () { navigate(-1); });
       nextBtn.addEventListener('click', function () { navigate(1); });
+
+      /* Clicking the lightbox backdrop (the dark overlay area around the
+       * image) also closes the lightbox. We check `e.target === lightbox`
+       * to ensure we only close when clicking the backdrop itself, not
+       * when clicking the image or buttons inside it. */
       lightbox.addEventListener('click', function (e) {
         if (e.target === lightbox) close();
       });
+
+      /* ── Keyboard navigation ─────────────────────────────────────────
+       * Only active when the lightbox is open. Supports:
+       * - Escape → close the lightbox
+       * - Left arrow → previous photo
+       * - Right arrow → next photo */
       document.addEventListener('keydown', function (e) {
         if (!lightbox.classList.contains('sy-lightbox--open')) return;
         if (e.key === 'Escape') close();

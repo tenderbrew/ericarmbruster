@@ -1,33 +1,74 @@
-<!-- File Guide: projects.html. Skeuomorphic project ledger — leather-bound journal on a dark desk. -->
+<!--
+  projects.html — Project Ledger
+  ===============================
+  A skeuomorphic project portfolio styled as a leather-bound journal on a dark
+  wooden desk. Lists active projects, completed projects, and shelved ideas.
+
+  Visual design:
+    - Desk lamp glow (ambient light effect via CSS radial gradient)
+    - Leather journal with brass page corners and a ribbon bookmark
+    - Each project entry is a journal card with a rubber stamp status badge
+    - Scribble lines at the bottom suggest casual notebook doodling
+
+  Stylesheets: styles.css (shared nav, ticker, base) + proj-styles.css (page-specific)
+  Scripts: drawer.js (nav drawer) + ticker.js (live market ticker)
+  Body class: .proj-page (scopes all proj-styles.css rules to this page)
+-->
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <!-- Character encoding — UTF-8 covers all languages and special characters. -->
   <meta charset="utf-8">
+  <!-- Responsive viewport — tells mobile browsers to use the device's actual
+       width instead of simulating a desktop-width screen. -->
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <title>Project Ledger - Eric Armbruster</title>
 
+  <!-- SEO description — appears in search engine results below the page title. -->
   <meta name="description" content="Selected projects by Eric Armbruster, with context, goals, and links.">
+  <!-- Theme color — sets the browser's address bar color on mobile (dark brown
+       to match the desk aesthetic). -->
   <meta name="theme-color" content="#0c0806">
+  <!-- Canonical URL — tells search engines this is the authoritative URL for
+       this page, preventing duplicate content issues. -->
   <link rel="canonical" href="https://www.ericarmbruster.com/projects.html">
+
+  <!-- Open Graph tags — control how this page appears when shared on social
+       media platforms like Facebook, Discord, iMessage, etc. -->
   <meta property="og:title" content="Project Ledger - Eric Armbruster">
   <meta property="og:description" content="Selected projects by Eric Armbruster, with context, goals, and links.">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://www.ericarmbruster.com/projects.html">
   <meta property="og:image" content="https://www.ericarmbruster.com/images/hector-0001.png">
+
+  <!-- Twitter Card tags — similar to Open Graph but specific to Twitter/X.
+       "summary_large_image" shows a large preview image in the tweet card. -->
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="Project Ledger - Eric Armbruster">
   <meta name="twitter:description" content="Selected projects by Eric Armbruster, with context, goals, and links.">
   <meta name="twitter:image" content="https://www.ericarmbruster.com/images/hector-0001.png">
+
+  <!-- Favicon — the small icon shown in the browser tab. -->
   <link rel="icon" href="images/hector-favicon.png" type="image/png">
 
+  <!-- Google Fonts — preconnect establishes early connections to the font CDN
+       to reduce latency. The second link (gstatic.com) is where the actual
+       font files are served from, separate from the CSS that references them.
+       Fonts loaded: IM Fell English (old-style serif), Libre Caslon (elegant
+       serif for body), Herr Von Muellerhoff (ornate cursive for decorative use). -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=IM+Fell+English:ital@0;1&family=IM+Fell+English+SC&family=Libre+Caslon+Display&family=Libre+Caslon+Text:ital,wght@0,400;0,700;1,400&family=Herr+Von+Muellerhoff&display=swap" rel="stylesheet">
 
+  <!-- Stylesheets — shared base first, then page-specific overrides. The
+       cascade means proj-styles.css can override anything in styles.css. -->
   <link rel="stylesheet" href="styles.css">
   <link rel="stylesheet" href="proj-styles.css">
 
+  <!-- Google Analytics — tracks page views and visitor behavior. The `async`
+       attribute loads the script without blocking page rendering. The gtag()
+       calls initialize the tracker with our measurement ID. -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-5ZTHJXDR9V"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
@@ -37,9 +78,24 @@
   </script>
 </head>
 
+<!-- The .proj-page class scopes all proj-styles.css rules to this page only,
+     preventing style bleed to other pages that share styles.css. -->
 <body class="proj-page">
 
-  <!-- Scrolling ticker tape: live market data. -->
+  <!-- ═══════════════════════════════════════════════════════════════════════
+       SCROLLING TICKER TAPE
+       ═══════════════════════════════════════════════════════════════════════
+       A horizontally scrolling bar of live financial data. The ticker-track
+       contains two identical sets of spans — when the first set scrolls off
+       the left edge, the second seamlessly takes its place, creating an
+       infinite scroll illusion via CSS animation.
+
+       aria-hidden="true" hides this from screen readers since the market
+       data is decorative, not essential content.
+
+       Each <span data-ticker="SYMBOL"> is a placeholder that ticker.js
+       replaces with live data from FRED, CoinGecko, and Yahoo Finance.
+       The initial text values are static fallbacks shown until JS loads. -->
   <div class="ticker-tape" aria-hidden="true">
     <div class="ticker-track">
       <span class="tick" data-ticker="DJIA">DJIA 38,547 &#9650;0.42%</span>
@@ -62,6 +118,9 @@
       <span class="tick-sep">&bull;</span>
       <span class="tick" data-ticker="FEDFUNDS">FED FUNDS 5.33%</span>
       <span class="tick-sep">&bull;</span>
+      <!-- Second identical set — creates the seamless infinite scroll loop.
+           When the animation shifts the track left by 50%, this copy slides
+           into view exactly where the first copy left off. -->
       <span class="tick" data-ticker="DJIA">DJIA 38,547 &#9650;0.42%</span>
       <span class="tick-sep">&bull;</span>
       <span class="tick" data-ticker="SP500">S&amp;P 500 5,234 &#9650;0.18%</span>
@@ -85,26 +144,55 @@
     </div>
   </div>
 
-  <!-- Shared primary navigation. Drawer behavior is provided by drawer.js. -->
+  <!-- ═══════════════════════════════════════════════════════════════════════
+       PRIMARY NAVIGATION
+       ═══════════════════════════════════════════════════════════════════════
+       Shared across all pages. Contains:
+       - Brand mark (site title / home link)
+       - Desktop links: "about", "projects", "interests" (drawer toggle)
+       - Icon links: email, GitHub, LinkedIn (SVG icons)
+       - Mobile hamburger toggle (visible on small screens only)
+       - Slide-out drawer panel with full site link list
+
+       The drawer's open/close behavior is handled by drawer.js. The toggle
+       buttons use `data-drawer-toggle` attribute so drawer.js can find them,
+       and `aria-controls="site-drawer"` to associate them with the drawer
+       for screen readers. -->
   <nav class="study-nav" aria-label="Primary">
     <div class="container nav-shell">
+      <!-- Brand mark — clicking returns to homepage. -->
       <a href="index.html" class="brand-mark" aria-label="Eric Armbruster home">Eric M. Armbruster</a>
 
+      <!-- Desktop navigation links — hidden on mobile, replaced by hamburger. -->
       <div class="nav-links-desktop" aria-label="Primary links">
         <a href="about.html">about</a>
         <a href="projects.html">projects</a>
+        <!-- "interests" is a button (not a link) because it triggers the drawer
+             rather than navigating to a new page. aria-expanded tracks whether
+             the drawer is currently open. -->
         <button class="drawer-toggle" type="button" aria-expanded="false" aria-controls="site-drawer" data-drawer-toggle>interests</button>
       </div>
 
+      <!-- Contact icon links — small inline SVGs for email, GitHub, LinkedIn.
+           target="_blank" opens external links in a new tab.
+           rel="noopener" prevents the new tab from accessing this page's
+           window object (security best practice for external links). -->
       <div class="nav-icons" aria-label="Contact links">
         <a href="mailto:eric.m.armbruster@gmail.com" aria-label="Email Eric"><svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"><rect x="1.5" y="3.5" width="13" height="9"/><path d="M1.5 3.5L8 9l6.5-5.5"/></svg></a>
         <a href="https://github.com/tenderbrew" target="_blank" rel="noopener" aria-label="Eric on GitHub"><svg width="16" height="16" viewBox="0 0 16 16" fill="currentColor"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0016 8c0-4.42-3.58-8-8-8z"/></svg></a>
         <a href="https://www.linkedin.com/in/ericmarmbruster/" target="_blank" rel="noopener" aria-label="Eric on LinkedIn"><svg width="16" height="16" viewBox="0 0 16 16" fill="currentColor"><path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.016-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.52 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.174-.431.569-.878 1.232-.878.87 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016l.016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z"/></svg></a>
       </div>
 
+      <!-- Mobile hamburger toggle — visible only on small screens (CSS hides
+           it on desktop). Same data-drawer-toggle attribute as the desktop
+           "interests" button so drawer.js controls both. -->
       <button class="drawer-toggle nav-mobile-toggle" type="button" aria-expanded="false" aria-controls="site-drawer" data-drawer-toggle>menu</button>
     </div>
 
+    <!-- ── Slide-out drawer ──────────────────────────────────────────────
+         Hidden by default, slides in from the top when a toggle is clicked.
+         Groups links into categories: Main Rooms, Interests, Elsewhere.
+         drawer.js manages the .open class that triggers the CSS transition. -->
     <div class="site-drawer" id="site-drawer">
       <div class="container drawer-inner">
         <section class="drawer-group">
@@ -131,30 +219,48 @@
     </div>
   </nav>
 
-  <!-- Ambient desk lamp glow -->
+  <!-- ═══════════════════════════════════════════════════════════════════════
+       DESK LAMP GLOW
+       ═══════════════════════════════════════════════════════════════════════
+       A purely decorative element that creates an ambient warm light cone
+       via CSS radial gradient, simulating a desk lamp illuminating the
+       journal from above. aria-hidden keeps it out of the accessibility tree. -->
   <div class="proj-lamp" aria-hidden="true"></div>
 
-  <!-- Page content -->
+  <!-- ═══════════════════════════════════════════════════════════════════════
+       MAIN CONTENT — THE PROJECT LEDGER
+       ═══════════════════════════════════════════════════════════════════════
+       The ledger is styled as a leather-bound journal page with:
+       - Brass corner brackets (purely decorative positioned elements)
+       - A ribbon bookmark peeking out from the top
+       - Section headings styled as handwritten labels
+       - Project entries as journal cards with rubber stamp status badges -->
   <main>
     <div class="proj-ledger">
 
-      <!-- Brass page corners -->
+      <!-- Brass page corners — four absolutely-positioned decorative elements
+           at each corner of the ledger. CSS uses borders and gradients to
+           create a metallic brass bracket appearance. -->
       <span class="proj-corner proj-corner--tl" aria-hidden="true"></span>
       <span class="proj-corner proj-corner--tr" aria-hidden="true"></span>
       <span class="proj-corner proj-corner--br" aria-hidden="true"></span>
       <span class="proj-corner proj-corner--bl" aria-hidden="true"></span>
 
-      <!-- Ribbon bookmark -->
+      <!-- Ribbon bookmark — a colored strip that extends from the top of the
+           journal, simulating a fabric bookmark tucked between pages. -->
       <span class="proj-ribbon" aria-hidden="true"></span>
 
-      <!-- Ledger title -->
+      <!-- Ledger title — the journal's cover heading. -->
       <header class="proj-title">
         <h1>Project Ledger</h1>
       </header>
 
-      <!-- Active projects -->
+      <!-- ── Active projects ───────────────────────────────────────────── -->
       <h2 class="proj-section-heading">Active</h2>
 
+      <!-- Each project entry is an <article> (semantically independent content).
+           The .proj-stamp badge is styled like a rubber ink stamp marking the
+           project's status (Active, Complete, etc.) with appropriate colors. -->
       <article class="proj-entry">
         <div class="proj-stamp proj-stamp--active">Active</div>
         <h3 class="proj-name">ericarmbruster.com</h3>
@@ -165,6 +271,8 @@
         <div class="proj-stamp proj-stamp--active">Active</div>
         <h3 class="proj-name">Self-Hosting Lab</h3>
         <p class="proj-desc">Synology NAS running a fleet of containers &mdash; Plex, Home Assistant, Pi-hole, and more.</p>
+        <!-- Internal link to the self-hosting page for more detail.
+             &rarr; is the → right arrow HTML entity. -->
         <a class="proj-link" href="self-hosting.html">read more &rarr;</a>
       </article>
 
@@ -174,17 +282,22 @@
         <p class="proj-desc">In development.</p>
       </article>
 
-      <!-- Completed projects -->
+      <!-- ── Completed projects ────────────────────────────────────────── -->
       <h2 class="proj-section-heading">Completed</h2>
 
       <article class="proj-entry">
         <div class="proj-stamp proj-stamp--complete">Complete</div>
         <h3 class="proj-name">Nintendo Pipeline Club</h3>
         <p class="proj-desc">Retro game club built around curated timelines and community discussion.</p>
+        <!-- External link — opens in new tab. -->
         <a class="proj-link" href="https://nintendopipeline.club" target="_blank" rel="noopener">visit &rarr;</a>
       </article>
 
-      <!-- On the Shelf -->
+      <!-- ── On the Shelf ──────────────────────────────────────────────
+           "On the Shelf" = shelved/paused ideas. The scribble lines below
+           are purely decorative wavy lines that look like casual pen marks
+           at the bottom of a journal page, suggesting there's nothing else
+           written here yet. -->
       <h2 class="proj-section-heading">On the Shelf</h2>
 
       <div class="proj-scribble" aria-hidden="true">
@@ -196,12 +309,16 @@
     </div>
   </main>
 
+  <!-- Site footer — simple copyright line. -->
   <footer>
     <div class="container">
       &copy; 2026 Eric Armbruster
     </div>
   </footer>
 
+  <!-- Shared scripts loaded at the end of <body> so they don't block page
+       rendering. drawer.js controls the nav drawer; ticker.js fetches live
+       market data for the scrolling ticker tape. -->
   <script src="drawer.js"></script>
   <script src="ticker.js"></script>
 </body>

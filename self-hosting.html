@@ -1,12 +1,33 @@
-<!-- File Guide: self-hosting.html. Terminal-themed showcase page for homelab hardware and service status visuals. -->
+<!--
+  self-hosting.html — Self-Hosting / Homelab Showcase
+  ====================================================
+  A terminal-themed page showcasing Eric's home server infrastructure.
+  The design mimics a server rack and terminal interface — dark background,
+  monospace fonts, LED status indicators, and a faux syslog terminal.
+
+  Page sections:
+    1. Hero — styled as a terminal prompt (eric@homelab:~$)
+    2. Hardware snapshot — Synology NAS rack panel with LED drive bay indicators
+    3. Services grid — cards for each Docker container (Plex, Pi-hole, etc.)
+    4. System monitor — decorative CPU/memory/disk/network gauge bars
+    5. Terminal log — faux syslog output with color-coded log levels
+
+  All status data is static/decorative — no live polling from the NAS.
+
+  Stylesheets: styles.css (shared) + sh-styles.css (page-specific)
+  Scripts: drawer.js (nav drawer) + ticker.js (live market ticker)
+  Body class: .sh-page
+-->
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <!-- Head section: metadata, social tags, fonts, stylesheets, and analytics bootstrapping. -->
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Self-Hosting - Eric Armbruster</title>
+
+  <!-- SEO and social sharing metadata. -->
   <meta name="description" content="Eric's home setup, services, and lessons from running self-hosted infrastructure.">
+  <!-- Dark charcoal theme color matches the terminal/server rack aesthetic. -->
   <meta name="theme-color" content="#0c1117">
   <link rel="canonical" href="https://www.ericarmbruster.com/self-hosting.html">
   <meta property="og:title" content="Self-Hosting - Eric Armbruster">
@@ -19,26 +40,31 @@
   <meta name="twitter:description" content="Eric's home setup, services, and lessons from running self-hosted infrastructure.">
   <meta name="twitter:image" content="https://www.ericarmbruster.com/images/synology-nas.png">
   <link rel="icon" href="images/hector-favicon.png" type="image/png">
+
+  <!-- Google Fonts — JetBrains Mono for terminal/code text (monospace),
+       Inter for UI labels (clean sans-serif), plus shared serif fonts. -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Libre+Caslon+Display&family=Libre+Caslon+Text:ital,wght@0,400;0,700;1,400&family=Herr+Von+Muellerhoff&family=JetBrains+Mono:wght@400;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
-  
+
   <link rel="stylesheet" href="styles.css">
-  
-  <link rel="stylesheet" href="sh-styles.css">
-  <!-- Analytics library: loaded async so it does not block rendering. -->
+  <link rel="stylesheet" href="sh-styles.css">
+
+  <!-- Google Analytics -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-5ZTHJXDR9V"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
     function gtag(){dataLayer.push(arguments);}
     gtag('js', new Date());
-
     gtag('config', 'G-5ZTHJXDR9V');
   </script>
 </head>
+
 <body class="sh-page">
 
-  <!-- Scrolling ticker tape: live market data. -->
+  <!-- ═══════════════════════════════════════════════════════════════════════
+       SCROLLING TICKER TAPE — identical across all pages.
+       ticker.js replaces placeholder values with live market data. -->
   <div class="ticker-tape" aria-hidden="true">
     <div class="ticker-track">
       <span class="tick" data-ticker="DJIA">DJIA 38,547 &#9650;0.42%</span>
@@ -61,6 +87,7 @@
       <span class="tick-sep">&bull;</span>
       <span class="tick" data-ticker="FEDFUNDS">FED FUNDS 5.33%</span>
       <span class="tick-sep">&bull;</span>
+      <!-- Duplicate set for seamless infinite scroll. -->
       <span class="tick" data-ticker="DJIA">DJIA 38,547 &#9650;0.42%</span>
       <span class="tick-sep">&bull;</span>
       <span class="tick" data-ticker="SP500">S&amp;P 500 5,234 &#9650;0.18%</span>
@@ -84,10 +111,8 @@
     </div>
   </div>
 
-
-  <!-- Shared primary navigation. Drawer behavior is provided by drawer.js. -->
-
-  
+  <!-- ═══════════════════════════════════════════════════════════════════════
+       PRIMARY NAVIGATION — shared across all pages. -->
   <nav class="study-nav" aria-label="Primary">
     <div class="container nav-shell">
       <a href="index.html" class="brand-mark" aria-label="Eric Armbruster home">Eric M. Armbruster</a>
@@ -133,7 +158,14 @@
     </div>
   </nav>
 
-  <!-- Page hero / introductory banner section. -->
+  <!-- ═══════════════════════════════════════════════════════════════════════
+       HERO — TERMINAL PROMPT
+       ═══════════════════════════════════════════════════════════════════════
+       Styled to look like a Linux terminal prompt. The colored spans
+       (sh-user, sh-host, sh-path) mimic the typical bash PS1 prompt format:
+         user@hostname:~$ command_
+       The blinking underscore (sh-blink) simulates a terminal cursor via
+       CSS animation. The "output" paragraph simulates the command result. -->
   <header class="hero sh-hero">
     <div class="container sh-hero-inner">
       <h1 class="sh-hero-prompt">
@@ -141,13 +173,23 @@
       </h1>
       <p class="sh-hero-output">Running my own infrastructure. Monitoring, services, and hardware.</p>
     </div>
-  </header>
-  <!-- Main page content. Most route-specific structure lives here. -->
+  </header>
+
   <main>
 
-    
-    
-    <!-- Hardware snapshot panel and physical NAS photo. -->
+    <!-- ═══════════════════════════════════════════════════════════════════
+         HARDWARE SNAPSHOT — NAS RACK PANEL
+         ═══════════════════════════════════════════════════════════════════
+         Two-column grid: a skeuomorphic rack panel on the left showing the
+         NAS model, drive bay LEDs, and an LCD readout; a photo of the
+         physical Synology NAS on the right.
+
+         The rack panel mimics a 1U server faceplate:
+         - sh-rack-label: model name badge
+         - sh-ventilation: decorative perforated ventilation strips
+         - sh-drive-bays: four LED indicators showing drive status
+           (green = active, amber = standby)
+         - sh-rack-lcd: monospace readout showing hostname, IP, uptime -->
     <section aria-labelledby="hardware-heading">
       <div class="container">
         <div class="sh-hardware-grid">
@@ -155,18 +197,26 @@
             <div class="sh-rack-label" id="hardware-heading">Synology DS920+</div>
             <div class="sh-ventilation" aria-hidden="true"></div>
             <div class="sh-drive-bays" aria-label="Drive bay status">
+              <!-- Each LED is a small colored circle. Green = active drive,
+                   amber = standby/sleep. ARIA labels provide the status to
+                   screen readers. -->
               <span class="sh-led sh-led--green" aria-label="Bay 1: active"></span>
               <span class="sh-led sh-led--green" aria-label="Bay 2: active"></span>
               <span class="sh-led sh-led--green" aria-label="Bay 3: active"></span>
               <span class="sh-led sh-led--amber" aria-label="Bay 4: standby"></span>
             </div>
             <div class="sh-ventilation" aria-hidden="true"></div>
+            <!-- LCD readout — mimics a small monochrome character display.
+                 Values are placeholders (dashes) since there's no live API
+                 connection to the actual NAS. -->
             <div class="sh-rack-lcd">
               <span>HOST homelab</span>
               <span>IP   192.168.1.--</span>
               <span>UP   ---d --h --m</span>
             </div>
           </div>
+          <!-- Photo of the physical NAS unit. loading="lazy" defers download
+               until the user scrolls near it. -->
           <div class="sh-nas-photo">
             <img src="images/synology-nas.webp" alt="Synology NAS" width="400" height="300" loading="lazy">
           </div>
@@ -174,14 +224,30 @@
       </div>
     </section>
 
-    
-    
-    <!-- Service inventory cards (static status labels for presentation). -->
+    <!-- ═══════════════════════════════════════════════════════════════════
+         SERVICE INVENTORY
+         ═══════════════════════════════════════════════════════════════════
+         A grid of cards, one per Docker container / self-hosted service.
+         Each card shows:
+         - A colored top stripe (default green, variants for blue/amber)
+         - Service name
+         - LED status indicator + status text
+         - Port number (the Docker port mapping)
+         - Brief description
+
+         The stripe color indicates service category:
+         - Default (green): core infrastructure services
+         - Blue (sh-service-stripe--blue): smart home / container management
+         - Amber (sh-service-stripe--amber): networking / monitoring tools
+
+         All statuses are hardcoded as "Running" — this is a showcase page,
+         not a live monitoring dashboard. -->
     <section aria-labelledby="services-heading">
       <div class="container">
         <h2 id="services-heading" class="sh-services-heading">Services</h2>
         <div class="sh-services-grid">
 
+          <!-- Plex — media server for movies, TV shows, music. -->
           <div class="sh-service-card">
             <div class="sh-service-stripe"></div>
             <div class="sh-service-body">
@@ -197,6 +263,7 @@
             </div>
           </div>
 
+          <!-- Syncthing — peer-to-peer file synchronization across devices. -->
           <div class="sh-service-card">
             <div class="sh-service-stripe"></div>
             <div class="sh-service-body">
@@ -212,6 +279,7 @@
             </div>
           </div>
 
+          <!-- Home Assistant — home automation and IoT device control. -->
           <div class="sh-service-card">
             <div class="sh-service-stripe sh-service-stripe--blue"></div>
             <div class="sh-service-body">
@@ -227,6 +295,7 @@
             </div>
           </div>
 
+          <!-- Pi-hole — network-wide DNS-based ad blocker. -->
           <div class="sh-service-card">
             <div class="sh-service-stripe"></div>
             <div class="sh-service-body">
@@ -242,6 +311,7 @@
             </div>
           </div>
 
+          <!-- Nginx Proxy Manager — reverse proxy with SSL management UI. -->
           <div class="sh-service-card">
             <div class="sh-service-stripe sh-service-stripe--amber"></div>
             <div class="sh-service-body">
@@ -257,6 +327,7 @@
             </div>
           </div>
 
+          <!-- Grafana — data visualization dashboards for monitoring metrics. -->
           <div class="sh-service-card">
             <div class="sh-service-stripe sh-service-stripe--amber"></div>
             <div class="sh-service-body">
@@ -272,6 +343,7 @@
             </div>
           </div>
 
+          <!-- Uptime Kuma — self-hosted uptime monitoring with alerts. -->
           <div class="sh-service-card">
             <div class="sh-service-stripe"></div>
             <div class="sh-service-body">
@@ -287,6 +359,7 @@
             </div>
           </div>
 
+          <!-- Portainer — Docker container management web UI. -->
           <div class="sh-service-card">
             <div class="sh-service-stripe sh-service-stripe--blue"></div>
             <div class="sh-service-body">
@@ -302,6 +375,7 @@
             </div>
           </div>
 
+          <!-- Vaultwarden — self-hosted Bitwarden-compatible password manager. -->
           <div class="sh-service-card">
             <div class="sh-service-stripe"></div>
             <div class="sh-service-body">
@@ -321,19 +395,27 @@
       </div>
     </section>
 
-    
-    
-    <!-- Decorative monitor gauges and uptime placeholders (no live polling). -->
+    <!-- ═══════════════════════════════════════════════════════════════════
+         SYSTEM MONITOR — DECORATIVE GAUGES
+         ═══════════════════════════════════════════════════════════════════
+         A dashboard panel with four horizontal bar gauges (CPU, Memory,
+         Disk, Network) and an uptime counter. All values are placeholder
+         dashes — no live polling. The gauge visual is built from two nested
+         divs: sh-gauge-track (the background rail) and sh-gauge-fill (the
+         colored bar, width set via inline style). -->
     <section aria-labelledby="monitoring-heading">
       <div class="container">
         <div class="sh-dashboard">
           <h2 id="monitoring-heading" class="sh-dashboard-heading">System Monitor</h2>
 
+          <!-- Uptime display — placeholder format: DDDd HHh MMm -->
           <div class="sh-uptime">
             <div class="sh-uptime-label">Uptime</div>
             <div class="sh-uptime-value" id="sh-uptime-display">000d 00h 00m</div>
           </div>
 
+          <!-- Gauge bars — each has a label, percentage value, and a
+               filled bar (width: 0% since there's no live data). -->
           <div class="sh-gauges">
             <div class="sh-gauge">
               <div class="sh-gauge-label">
@@ -378,12 +460,27 @@
       </div>
     </section>
 
-    
-    
-    <!-- Faux terminal log stream to visualize operations activity. -->
+    <!-- ═══════════════════════════════════════════════════════════════════
+         FAUX TERMINAL LOG STREAM
+         ═══════════════════════════════════════════════════════════════════
+         A decorative terminal window showing fake syslog output. Styled
+         with a macOS-style title bar (three colored dots: red, amber, green)
+         and a dark terminal body with monospace text.
+
+         Log lines are color-coded by severity:
+         - sh-log-ok (green): successful operations (backups, cron jobs)
+         - sh-log-info (blue): informational messages (health checks, syncs)
+         - sh-log-warn (amber): warnings (firewall blocks)
+
+         The sh-ts spans contain timestamps. The last line shows an active
+         terminal prompt with a blinking cursor, suggesting the system is
+         live and waiting for input. -->
     <section aria-labelledby="logs-heading">
       <div class="container">
         <div class="sh-terminal">
+          <!-- Terminal title bar — mimics a macOS window chrome with
+               three colored dots (close/minimize/maximize). The title
+               shows the command being "run": tail -f /var/log/syslog -->
           <div class="sh-term-titlebar">
             <div class="sh-term-dots" aria-hidden="true">
               <span class="sh-term-dot sh-term-dot--red"></span>
@@ -392,6 +489,7 @@
             </div>
             <span class="sh-term-title" id="logs-heading">eric@homelab:~$ tail -f /var/log/syslog</span>
           </div>
+          <!-- Terminal body — each sh-term-line is one log entry. -->
           <div class="sh-term-body">
             <span class="sh-term-line"><span class="sh-ts">Feb 14 08:00:01</span> homelab CRON[1842]: <span class="sh-log-ok">(root) CMD (/usr/local/bin/backup.sh)</span></span>
             <span class="sh-term-line"><span class="sh-ts">Feb 14 08:00:03</span> homelab backup: <span class="sh-log-ok">snapshot completed — 3 volumes, 12.4 GB total</span></span>
@@ -401,24 +499,23 @@
             <span class="sh-term-line"><span class="sh-ts">Feb 14 09:00:01</span> homelab syncthing[984]: <span class="sh-log-info">Completed pull of "documents" (4 items, ~2.1 MiB)</span></span>
             <span class="sh-term-line"><span class="sh-ts">Feb 14 09:12:44</span> homelab kernel: <span class="sh-log-warn">[UFW BLOCK] IN=eth0 SRC=192.168.1.254 DST=192.168.1.50</span></span>
             <span class="sh-term-line"><span class="sh-ts">Feb 14 09:30:00</span> homelab uptimekuma: <span class="sh-log-ok">All 9 monitors operational</span></span>
+            <!-- Active prompt line — blinking cursor suggests the terminal is live. -->
             <span class="sh-term-prompt"><span class="sh-user">eric</span>@<span class="sh-host">homelab</span>:~$ <span class="sh-blink">_</span></span>
           </div>
         </div>
       </div>
     </section>
 
-  </main>
-  <!-- Shared footer. -->
+  </main>
+
   <footer>
     <div class="container">
       &copy; 2026 Eric Armbruster
     </div>
-  </footer>
-  <!-- Shared drawer controller for desktop/mobile navigation. -->
-  <script src="drawer.js"></script>
+  </footer>
 
+  <!-- Shared scripts — drawer.js for nav, ticker.js for live market data. -->
+  <script src="drawer.js"></script>
   <script src="ticker.js"></script>
 </body>
 </html>
-
-

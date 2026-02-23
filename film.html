@@ -1,31 +1,67 @@
-<!-- File Guide: film.html. Cinema-styled dashboard that fetches and renders Letterboxd activity with fallbacks. -->
+<!--
+  ============================================================================
+  film.html — Film / Cinema Dashboard
+  ============================================================================
+  This page renders a cinema-themed dashboard that displays Eric's recent
+  Letterboxd film-watching activity. It fetches live data from the Letterboxd
+  RSS feed and profile page, then normalizes and renders it into several UI
+  sections: a marquee with rotating titles, a featured film "lightbox" card,
+  a "Now Screening" list of recent watches, a sidebar with recent Letterboxd
+  lists, and a "Booth Stats" panel showing profile-level statistics.
+
+  Data flow overview:
+    1. Letterboxd RSS feed → fetched via CORS proxy (rss2json primary,
+       AllOrigins fallback) → parsed into normalized film entries
+    2. Letterboxd profile HTML → fetched via CORS proxy (CodeTabs primary,
+       AllOrigins fallback) → scraped for stats and list activity
+    3. Hardcoded fallback data is used when all live sources fail
+
+  Stylesheet: film-styles.css (scoped via body.film-page)
+  Color identity: cinema red / dark theater tones
+  ============================================================================
+-->
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
-  <!-- Head section: metadata, social tags, fonts, stylesheets, and analytics bootstrapping. -->
+  <!--
+    Head section: standard metadata, Open Graph / Twitter Card social tags,
+    preconnected Google Fonts, the shared base stylesheet (styles.css), the
+    page-specific stylesheet (film-styles.css), and Google Analytics bootstrap.
+  -->
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Film - Eric Armbruster</title>
   <meta name="description" content="A cinema-inspired film log with live activity from Eric's Letterboxd.">
   <meta name="theme-color" content="#130d0c">
   <link rel="canonical" href="https://www.ericarmbruster.com/film.html">
+
+  <!-- Open Graph metadata for rich link previews on social platforms -->
   <meta property="og:title" content="Film - Eric Armbruster">
   <meta property="og:description" content="A cinema-inspired film log with live activity from Eric's Letterboxd.">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://www.ericarmbruster.com/film.html">
   <meta property="og:image" content="https://www.ericarmbruster.com/images/the-thing-film.png">
+
+  <!-- Twitter Card metadata for Twitter/X link previews -->
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="Film - Eric Armbruster">
   <meta name="twitter:description" content="A cinema-inspired film log with live activity from Eric's Letterboxd.">
   <meta name="twitter:image" content="https://www.ericarmbruster.com/images/the-thing-film.png">
+
+  <!-- Favicon -->
   <link rel="icon" href="images/hector-favicon.png" type="image/png">
+
+  <!-- Google Fonts: preconnect for performance, then load the font families used across the site -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Libre+Caslon+Display&family=Libre+Caslon+Text:ital,wght@0,400;0,700;1,400&family=Herr+Von+Muellerhoff&family=Bebas+Neue&family=IBM+Plex+Sans+Condensed:wght@400;500;700&family=Special+Elite&display=swap" rel="stylesheet">
+
+  <!-- Shared base stylesheet (nav, layout, typography) and page-scoped film stylesheet -->
   <link rel="stylesheet" href="styles.css">
   <link rel="stylesheet" href="film-styles.css">
-  <!-- Analytics library: loaded async so it does not block rendering. -->
+
+  <!-- Google Analytics: loaded async so it never blocks page rendering -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-5ZTHJXDR9V"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
@@ -36,7 +72,11 @@
 </head>
 <body class="film-page">
 
-  <!-- Scrolling ticker tape: live market data. -->
+  <!--
+    Scrolling ticker tape: decorative market-data ribbon shared across all pages.
+    Content is duplicated so the CSS animation can loop seamlessly.
+    aria-hidden="true" because this is purely decorative.
+  -->
   <div class="ticker-tape" aria-hidden="true">
     <div class="ticker-track">
       <span class="tick" data-ticker="DJIA">DJIA 38,547 &#9650;0.42%</span>
@@ -59,6 +99,7 @@
       <span class="tick-sep">&bull;</span>
       <span class="tick" data-ticker="FEDFUNDS">FED FUNDS 5.33%</span>
       <span class="tick-sep">&bull;</span>
+      <!-- Duplicate run of ticker items to allow seamless CSS scroll animation -->
       <span class="tick" data-ticker="DJIA">DJIA 38,547 &#9650;0.42%</span>
       <span class="tick-sep">&bull;</span>
       <span class="tick" data-ticker="SP500">S&amp;P 500 5,234 &#9650;0.18%</span>
@@ -83,9 +124,14 @@
   </div>
 
 
-  <!-- Shared primary navigation. Drawer behavior is provided by drawer.js. -->
+  <!--
+    Shared primary navigation bar (identical across all pages).
+    Contains: brand mark, desktop links, contact icon links, mobile menu button.
+    The "interests" button and mobile "menu" button both toggle the drawer overlay.
+    Drawer open/close behavior is handled by the shared drawer.js script.
+  -->
 
-  
+
   <nav class="study-nav" aria-label="Primary">
     <div class="container nav-shell">
       <a href="index.html" class="brand-mark" aria-label="Eric Armbruster home">Eric M. Armbruster</a>
@@ -105,6 +151,7 @@
       <button class="drawer-toggle nav-mobile-toggle" type="button" aria-expanded="false" aria-controls="site-drawer" data-drawer-toggle>menu</button>
     </div>
 
+    <!-- Slide-down drawer: interest sub-pages and external links -->
     <div class="site-drawer" id="site-drawer">
       <div class="container drawer-inner">
         <section class="drawer-group">
@@ -131,21 +178,31 @@
     </div>
   </nav>
 
-  <!-- Page hero / cinema marquee sign. -->
+  <!--
+    Cinema Marquee Hero
+    ====================
+    A decorative header styled like a classic movie-theater marquee sign.
+    - The SVG "wings" are purely decorative arch shapes flanking the marquee.
+    - The "Cinema" crown text sits above the marquee board.
+    - The <ul id="film-marquee-titles"> list is populated by JavaScript with
+      the titles of recently watched films. The first item gets a special
+      "featured" class for larger styling.
+  -->
   <header class="film-hero" aria-label="Cinema marquee">
     <div class="container film-hero-inner">
       <svg class="film-marquee-wings" viewBox="0 0 900 80" aria-hidden="true">
         <defs>
+          <!-- SVG glow filter applied to marquee wing paths for a neon-sign effect -->
           <filter id="wing-glow">
             <feGaussianBlur stdDeviation="2.5" result="b"/>
             <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
           </filter>
         </defs>
-        <!-- Left wing: main arch → trough → large secondary dome → stop above marquee -->
+        <!-- Left wing: three nested paths (outer, trim, inner) forming an ornate arch -->
         <path class="film-wing-outer" d="M 348,74 C 318,0 258,-15 192,2 C 142,16 125,52 105,54 C 80,56 55,-10 30,2 C 12,10 0,40 0,62"/>
         <path class="film-wing-trim"  d="M 344,75 C 316,8 260,-8 196,8 C 148,20 130,52 110,53 C 88,55 62,-2 38,8 C 20,14 8,42 8,62"/>
         <path class="film-wing-inner" d="M 340,76 C 314,16 264,0 200,14 C 152,26 134,50 115,52 C 94,54 68,6 44,14 C 28,20 16,44 16,62"/>
-        <!-- Right wing (mirrored) -->
+        <!-- Right wing: mirror of the left wing paths -->
         <path class="film-wing-outer" d="M 552,74 C 582,0 642,-15 708,2 C 758,16 775,52 795,54 C 820,56 845,-10 870,2 C 888,10 900,40 900,62"/>
         <path class="film-wing-trim"  d="M 556,75 C 584,8 640,-8 704,8 C 752,20 770,52 790,53 C 812,55 838,-2 862,8 C 880,14 892,42 892,62"/>
         <path class="film-wing-inner" d="M 560,76 C 586,16 636,0 700,14 C 748,26 766,50 785,52 C 806,54 832,6 856,14 C 872,20 884,44 884,62"/>
@@ -153,39 +210,61 @@
       <div class="film-marquee-crown" aria-hidden="true">Cinema</div>
       <div class="film-marquee">
         <p class="film-kicker">Now Showing</p>
+        <!-- JS fills this list with up to 6 recent film titles for the marquee -->
         <ul id="film-marquee-titles" class="film-marquee-titles" aria-label="Now showing"></ul>
       </div>
     </div>
   </header>
-  <!-- Main page content. Most route-specific structure lives here. -->
+
+  <!--
+    Main Content Area
+    ==================
+    Two-column layout:
+      Left column (film-main-col):
+        1. "Featured Log" — a highlighted card for the most recent film entry,
+           rendered as a poster + overlay + review excerpt ("lightbox" style).
+        2. "Now Screening" — a list of the next 5 most recent watch entries,
+           each with title, year, rating stars, date, and optional review snippet.
+      Right column (film-sidebar):
+        1. "Recent Lists" — up to 10 Letterboxd lists scraped from the profile.
+        2. "Booth Stats" — profile-level numbers (films watched, this-year count,
+           lists, following, followers) scraped from the Letterboxd profile page.
+  -->
   <main>
     <section class="film-section" aria-label="Film activity and stats">
       <div class="container">
         <div class="film-layout">
 
-          <!-- Main column: featured log + now screening -->
+          <!-- Left column: featured log card and the recent-watches strip -->
           <div class="film-main-col">
+            <!-- Featured Log: JS renders the most recent film entry as a poster lightbox -->
             <article class="film-panel film-panel-featured" aria-labelledby="featured-title">
               <h2 id="featured-title">Featured Log</h2>
               <div id="film-featured"></div>
             </article>
 
+            <!-- Now Screening: JS populates this list with the next 5 recent watches -->
             <article class="film-panel film-panel-screen" aria-labelledby="recent-title">
               <div class="film-panel-head">
                 <h2 id="recent-title">Now Screening</h2>
+                <!-- Status line: shows "Loading..." initially, then swaps to the
+                     Letterboxd logo link on success, or an error message on failure -->
                 <p id="film-feed-status" class="film-feed-status" role="status">Loading Letterboxd feed...</p>
               </div>
+              <!-- aria-live="polite" so screen readers announce when new content loads -->
               <ul id="film-recent-watches" class="film-strip-list" aria-live="polite"></ul>
             </article>
           </div>
 
-          <!-- Sidebar: recent lists + booth stats -->
+          <!-- Right column sidebar: lists and profile stats -->
           <aside class="film-sidebar">
+            <!-- Recent Lists: JS fills this with up to 10 Letterboxd list links -->
             <article class="film-panel film-panel-lists" aria-labelledby="lists-title">
               <h2 id="lists-title">Recent Lists</h2>
               <ul id="film-list-activity" class="film-list-activity"></ul>
             </article>
 
+            <!-- Booth Stats: definition list of profile statistics, initially "--" placeholders -->
             <article class="film-panel film-panel-stats" aria-labelledby="stats-title">
               <h2 id="stats-title">Booth Stats</h2>
               <dl class="film-stats-grid">
@@ -203,18 +282,62 @@
       </div>
     </section>
   </main>
-  <!-- Shared footer. -->
+
+  <!-- Shared site footer (identical across all pages) -->
   <footer>
     <div class="container">
       &copy; 2026 Eric Armbruster
     </div>
   </footer>
-  <!-- Shared drawer controller for desktop/mobile navigation. -->
+
+  <!-- Shared drawer.js: handles open/close of the navigation drawer on all pages -->
   <script src="drawer.js"></script>
-  
+
+  <!--
+    ========================================================================
+    INLINE JAVASCRIPT — Letterboxd Data Pipeline
+    ========================================================================
+    This is the core data engine for the Film page. It follows this flow:
+
+    1. FETCH RSS FEED
+       - Primary:   rss2json.com API converts Letterboxd RSS → JSON
+       - Fallback:  AllOrigins proxy fetches raw RSS XML, parsed client-side
+
+    2. FETCH PROFILE DATA (in parallel)
+       - Primary:   CodeTabs CORS proxy fetches Letterboxd profile HTML
+       - Fallback:  AllOrigins proxy as secondary CORS bypass
+       - Scrapes profile stats (films, this-year, lists, following, followers)
+       - Scrapes list activity from the /lists/ page
+
+    3. NORMALIZE
+       - RSS items are parsed into a uniform shape: title, year, rating,
+         date, link, thumbnail, review text, film key
+       - Ratings are extracted from Letterboxd's title suffix (e.g. " - ★★★½")
+       - Poster thumbnails are extracted from the RSS description HTML <img>
+
+    4. RENDER
+       - Featured film card (most recent entry with poster + review)
+       - Recent watches list (next 5 entries)
+       - Marquee titles (up to 6 titles for the cinema sign)
+       - List activity sidebar (up to 10 lists)
+       - Booth stats panel (profile numbers)
+
+    5. FALLBACK
+       - Hardcoded sample data is rendered if all fetch attempts fail
+    ========================================================================
+  -->
   <script>
-    // Feed pipeline: rss2json primary -> AllOrigins fallback -> local sample fallback.
+    /*
+     * The entire pipeline is wrapped in an IIFE (Immediately Invoked Function
+     * Expression) to avoid polluting the global scope with variables.
+     */
     (function () {
+
+      /* ---------------------------------------------------------------
+       * DOM ELEMENT REFERENCES
+       * Cache references to all DOM elements that will be populated
+       * by the pipeline. This avoids repeated getElementById calls.
+       * --------------------------------------------------------------- */
       var feedStatus = document.getElementById('film-feed-status');
       var recentList = document.getElementById('film-recent-watches');
       var featured = document.getElementById('film-featured');
@@ -225,10 +348,23 @@
       var statLists = document.getElementById('stat-lists');
       var statFollowing = document.getElementById('stat-following');
       var statFollowers = document.getElementById('stat-followers');
+
+      /* ---------------------------------------------------------------
+       * URL CONFIGURATION
+       * Letterboxd profile URL, list page URL, and the CORS proxy
+       * wrappers needed to fetch them from the browser (Letterboxd
+       * does not provide a public API or set CORS headers).
+       * --------------------------------------------------------------- */
       var profileUrl = 'https://letterboxd.com/tenderbrew/';
       var profileProxyUrl = 'https://api.codetabs.com/v1/proxy?quest=' + encodeURIComponent(profileUrl);
       var listsUrl = 'https://letterboxd.com/tenderbrew/lists/';
       var listsProxyUrl = 'https://api.codetabs.com/v1/proxy?quest=' + encodeURIComponent(listsUrl);
+
+      /* ---------------------------------------------------------------
+       * FALLBACK PROFILE TOTALS
+       * Hardcoded snapshot of profile stats used when both CORS proxies
+       * fail. These numbers are updated manually to stay roughly current.
+       * --------------------------------------------------------------- */
       var fallbackProfileTotals = {
         films: 256,
         'this year': 2,
@@ -236,9 +372,24 @@
         following: 19,
         followers: 15
       };
+
+      /* ---------------------------------------------------------------
+       * RSS FEED URLS
+       * feedUrl: the raw Letterboxd RSS feed endpoint
+       * rssToJsonUrl: rss2json.com converts the RSS XML into a JSON
+       *   response, avoiding the need to parse XML on the client.
+       *   This is the PRIMARY fetch strategy for the watch feed.
+       * --------------------------------------------------------------- */
       var feedUrl = 'https://letterboxd.com/tenderbrew/rss/';
       var rssToJsonUrl = 'https://api.rss2json.com/v1/api.json?rss_url=' + encodeURIComponent(feedUrl);
 
+      /* ---------------------------------------------------------------
+       * FALLBACK WATCH DATA
+       * A hardcoded array of recent watches used as a last resort when
+       * both the rss2json and AllOrigins feed fetches fail. Each object
+       * mirrors the normalized entry shape the render functions expect:
+       * title, year, rating (numeric), link, date, thumbnail, description.
+       * --------------------------------------------------------------- */
       var fallbackWatches = [
         {
           title: 'Late Spring',
@@ -277,6 +428,13 @@
           description: 'Watched on Tuesday December 23, 2025.'
         }
       ];
+
+      /* ---------------------------------------------------------------
+       * FALLBACK LIST ACTIVITY
+       * Hardcoded list entries shown when scraping the lists page fails.
+       * Each entry has a title, a Letterboxd link, and a metaLabel
+       * (e.g. "31 films") shown as secondary text.
+       * --------------------------------------------------------------- */
       var fallbackListActivity = [
         {
           title: 'Halloween 2025 - monster movie watch',
@@ -330,12 +488,34 @@
         }
       ];
 
+      /* ===============================================================
+       * UTILITY / PARSING FUNCTIONS
+       * These pure functions handle date formatting, rating extraction,
+       * title parsing, review text extraction, and HTML escaping.
+       * They are used by both the normalization and render layers.
+       * =============================================================== */
+
+      /**
+       * formatDate — Converts a date string or Date object into a
+       * human-readable label like "Feb 6, 2026". Returns "Unknown date"
+       * if the input cannot be parsed into a valid Date.
+       */
       function formatDate(dateValue) {
         var date = new Date(dateValue);
         if (Number.isNaN(date.getTime())) return 'Unknown date';
         return new Intl.DateTimeFormat('en-US', { month: 'short', day: 'numeric', year: 'numeric' }).format(date);
       }
 
+      /**
+       * parseRatingFromTitle — Letterboxd appends ratings to RSS titles
+       * using Unicode star characters. For example:
+       *   "Late Spring, 1949 - ★★★★"  →  4.0
+       *   "Gremlins 2, 1990 - ★★★★½"  →  4.5
+       * This function extracts the trailing " - ★..." suffix, counts
+       * full stars (★ = U+2605, 1 point each) and half stars (½ = U+00BD,
+       * 0.5 points), and returns the numeric rating. Returns null if no
+       * rating suffix is found (i.e., the film was logged without a rating).
+       */
       function parseRatingFromTitle(rawTitle) {
         var match = rawTitle.match(/\s-\s([\u2605\u00BD]+)$/);
         if (!match) return null;
@@ -343,24 +523,41 @@
         var rating = 0;
         var symbols = match[1];
         for (var i = 0; i < symbols.length; i += 1) {
-          if (symbols[i] === '\u2605') rating += 1;
-          if (symbols[i] === '\u00BD') rating += 0.5;
+          if (symbols[i] === '\u2605') rating += 1;   // Full star
+          if (symbols[i] === '\u00BD') rating += 0.5;  // Half star
         }
         return rating;
       }
 
+      /**
+       * formatRatingStars — Converts a numeric rating back into a
+       * display string of Unicode star characters. For example:
+       *   4   → "★★★★"
+       *   3.5 → "★★★½"
+       * Returns "Unrated" for non-numeric or zero values.
+       */
       function formatRatingStars(ratingValue) {
         if (typeof ratingValue !== 'number') return 'Unrated';
 
         var fullStars = Math.floor(ratingValue);
+        // Check for half-star with floating-point tolerance
         var hasHalf = Math.abs(ratingValue - fullStars - 0.5) < 0.001;
         var stars = '\u2605'.repeat(fullStars);
         if (hasHalf) stars += '\u00BD';
         return stars || 'Unrated';
       }
 
+      /**
+       * parseFilmTitle — Splits a Letterboxd RSS title into the film
+       * name and release year. Letterboxd formats these as:
+       *   "The Royal Tenenbaums, 2001 - ★★★★★"
+       * First strips any trailing rating suffix, then splits on the
+       * final ", YYYY" pattern. Returns { title, year }.
+       */
       function parseFilmTitle(rawTitle) {
+        // Strip trailing rating stars if present
         var cleaned = rawTitle.replace(/\s-\s[\u2605\u00BD]+$/, '').trim();
+        // Match "Title, YYYY" pattern at end of string
         var match = cleaned.match(/^(.*),\s(\d{4})$/);
         if (!match) {
           return { title: cleaned, year: '' };
@@ -368,19 +565,35 @@
         return { title: match[1], year: match[2] };
       }
 
+      /**
+       * isBoilerplateReviewLine — Detects auto-generated Letterboxd
+       * description lines that should be filtered out when looking for
+       * genuine written reviews. Matches patterns like:
+       *   "Watched on Thursday January 1, 2026."
+       *   "Rewatched on ..."
+       *   "This review may contain spoilers."
+       */
       function isBoilerplateReviewLine(line) {
         return /^(re)?watched on\b/i.test(line) || /^this review may contain spoilers\.?$/i.test(line);
       }
 
+      /**
+       * extractParagraphText — Takes an HTML snippet (from RSS description)
+       * and extracts the text content of all <p> tags. Falls back to
+       * stripping all HTML tags if no <p> elements are found. Returns an
+       * array of non-empty text strings.
+       */
       function extractParagraphText(htmlSnippet) {
         if (!htmlSnippet) return [];
 
+        // Parse the HTML and extract text from <p> elements
         var parsed = new DOMParser().parseFromString(htmlSnippet, 'text/html');
         var paragraphs = Array.from(parsed.querySelectorAll('p'))
           .map(function (p) { return p.textContent.trim(); })
           .filter(Boolean);
         if (paragraphs.length) return paragraphs;
 
+        // Fallback: strip all HTML tags and return as a single-element array
         var plain = String(htmlSnippet)
           .replace(/<[^>]*>/g, ' ')
           .replace(/\s+/g, ' ')
@@ -388,6 +601,14 @@
         return plain ? [plain] : [];
       }
 
+      /**
+       * extractWrittenReviewText — Finds the first non-boilerplate
+       * paragraph in an RSS description. Letterboxd descriptions often
+       * start with auto-generated lines like "Watched on ..." — this
+       * function skips those and returns the first line that appears to
+       * be a genuine user-written review. Returns empty string if no
+       * written review is found.
+       */
       function extractWrittenReviewText(htmlSnippet) {
         var paragraphs = extractParagraphText(htmlSnippet);
 
@@ -400,6 +621,13 @@
         return '';
       }
 
+      /**
+       * extractReviewText — Higher-level review text extractor that
+       * tries extractWrittenReviewText first (genuine review), then
+       * falls back to the first paragraph of description text (which
+       * might be boilerplate like "Watched on..."), and finally
+       * returns a generic fallback string.
+       */
       function extractReviewText(htmlSnippet) {
         var writtenReview = extractWrittenReviewText(htmlSnippet);
         if (writtenReview) {
@@ -407,17 +635,31 @@
         }
         if (!htmlSnippet) return 'Logged on Letterboxd.';
 
+        // Fall back to the very first <p> regardless of content
         var parsed = new DOMParser().parseFromString(htmlSnippet, 'text/html');
         var firstParagraph = parsed.querySelector('p');
         if (!firstParagraph) return 'Logged on Letterboxd.';
         return firstParagraph.textContent.trim() || 'Logged on Letterboxd.';
       }
 
+      /**
+       * filmKeyFromLink — Extracts a stable film identifier (slug) from
+       * a Letterboxd URL. For example:
+       *   "https://letterboxd.com/tenderbrew/film/late-spring/" → "late-spring"
+       * This key is used to group multiple log entries for the same film
+       * (e.g., rewatches) so that reviews can be cross-referenced.
+       */
       function filmKeyFromLink(link) {
         var match = String(link || '').match(/\/film\/([^\/?#]+)/i);
         return match ? match[1].toLowerCase() : '';
       }
 
+      /**
+       * extractThumbnailFromDescription — Pulls the poster image URL
+       * from the RSS description HTML. Letterboxd embeds a poster <img>
+       * in each RSS item's description. Falls back to a local fallback
+       * image ("the-thing-film.webp") if no <img> is found.
+       */
       function extractThumbnailFromDescription(htmlSnippet) {
         if (!htmlSnippet) return 'images/the-thing-film.webp';
 
@@ -428,6 +670,12 @@
         return image.getAttribute('src') || 'images/the-thing-film.webp';
       }
 
+      /**
+       * escapeHtml — Prevents XSS by escaping the five dangerous HTML
+       * characters (&, <, >, ", ') in any string before injecting it
+       * into innerHTML. Critical for user-generated content like titles
+       * and review text coming from the RSS feed.
+       */
       function escapeHtml(value) {
         return String(value || '')
           .replace(/&/g, '&amp;')
@@ -437,26 +685,46 @@
           .replace(/'/g, '&#39;');
       }
 
+      /* ===============================================================
+       * RENDER FUNCTIONS
+       * Each function takes normalized data and populates a specific
+       * section of the page DOM. They are called both on success (with
+       * live data) and on failure (with fallback data).
+       * =============================================================== */
+
+      /**
+       * renderRecentWatches — Populates the "Now Screening" list with
+       * up to 5 film entries. Each entry becomes an <li> containing:
+       *   - A link to the Letterboxd log entry
+       *   - A metadata line with year, star rating, and formatted date
+       *   - An optional review paragraph (if the entry has a written review)
+       */
       function renderRecentWatches(entries) {
         recentList.innerHTML = '';
         entries.slice(0, 5).forEach(function (entry) {
+          // Create the list item container
           var item = document.createElement('li');
           item.className = 'film-strip-item';
 
+          // Create the film title as a clickable link to Letterboxd
           var link = document.createElement('a');
           link.href = entry.link;
           link.target = '_blank';
           link.rel = 'noopener';
           link.textContent = entry.title;
 
+          // Create the metadata line: (year) | ★★★★ | Jan 2, 2026
           var meta = document.createElement('span');
           meta.className = 'film-strip-meta';
           var ratingLabel = formatRatingStars(entry.rating);
           var yearLabel = entry.year ? ('(' + entry.year + ')') : '';
           meta.textContent = yearLabel + '  |  ' + ratingLabel + '  |  ' + formatDate(entry.date);
 
+          // Assemble the list item
           item.appendChild(link);
           item.appendChild(meta);
+
+          // Append written review text if this entry has one
           if (entry.latestWrittenReview) {
             var review = document.createElement('p');
             review.className = 'film-strip-review';
@@ -467,26 +735,46 @@
         });
       }
 
+      /**
+       * renderMarqueeTitles — Fills the cinema marquee sign with film
+       * titles. Each title becomes an <li>. The first item gets the
+       * "film-marquee-featured" class for larger/highlighted styling,
+       * mimicking how a theater marquee emphasizes the main feature.
+       */
       function renderMarqueeTitles(entries) {
         marqueeTitles.innerHTML = '';
         entries.forEach(function (entry, i) {
           var li = document.createElement('li');
+          // First entry gets special "featured" class for prominent display
           if (i === 0) li.className = 'film-marquee-featured';
           li.textContent = entry.title;
           marqueeTitles.appendChild(li);
         });
       }
 
+      /**
+       * renderFeatured — Builds and injects the "Featured Log" card,
+       * which is the centerpiece of the page. It renders as a "lightbox"
+       * with:
+       *   - A film poster image with an overlay showing the title and rating
+       *   - A side panel with the watch date, review excerpt, and a link
+       *     to the full Letterboxd entry (with the Letterboxd tri-circle logo)
+       * All user-provided strings are HTML-escaped to prevent XSS.
+       */
       function renderFeatured(entry) {
         if (!entry) {
           featured.innerHTML = '<p class="film-fallback">No featured entry available.</p>';
           return;
         }
 
+        // Resolve poster URL: prefer pre-extracted thumbnail, fall back to description parsing
         var poster = entry.thumbnail || extractThumbnailFromDescription(entry.description);
+        // Resolve review text: prefer written review, fall back to first paragraph
         var text = entry.latestWrittenReview || extractReviewText(entry.description);
         var ratingText = formatRatingStars(entry.rating);
         var yearText = entry.year ? (' (' + entry.year + ')') : '';
+
+        // Escape all dynamic values before inserting into innerHTML
         var safeTitle = escapeHtml(entry.title || 'Untitled');
         var safeText = escapeHtml(text);
         var safePoster = escapeHtml(poster);
@@ -494,8 +782,10 @@
         var safeRating = escapeHtml(ratingText);
         var safeDateStr = escapeHtml(formatDate(entry.date));
 
+        // Inline SVG for the Letterboxd tri-circle logo (orange, green, blue)
         var lbSvg = '<svg class="film-lb-logo" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 36 12" width="36" height="12" aria-hidden="true"><circle cx="6" cy="6" r="6" fill="#ff8000"/><circle cx="18" cy="6" r="6" fill="#00e054"/><circle cx="30" cy="6" r="6" fill="#40bcf4"/></svg>';
 
+        // Build the complete lightbox HTML structure
         featured.innerHTML =
           '<div class="film-lightbox">' +
             '<div class="film-lightbox-frame">' +
@@ -513,6 +803,13 @@
           '</div>';
       }
 
+      /**
+       * renderListActivity — Populates the "Recent Lists" sidebar with
+       * up to 10 Letterboxd list links. Each list entry shows:
+       *   - The list title as a link
+       *   - A meta label (e.g. "31 films") if a numeric count was found,
+       *     otherwise an em dash as placeholder
+       */
       function renderListActivity(entries) {
         listActivity.innerHTML = '';
         if (!entries.length) {
@@ -522,12 +819,15 @@
 
         entries.slice(0, 10).forEach(function (entry) {
           var item = document.createElement('li');
+
+          // List title as an external link
           var link = document.createElement('a');
           link.href = entry.link;
           link.target = '_blank';
           link.rel = 'noopener';
           link.textContent = entry.title;
 
+          // Show film count if available, otherwise show an em dash
           var meta = document.createElement('span');
           var hasCount = entry.metaLabel && /\d/.test(entry.metaLabel);
           meta.textContent = hasCount ? entry.metaLabel : '\u2014';
@@ -538,16 +838,32 @@
         });
       }
 
+      /* ===============================================================
+       * PROFILE STATS SCRAPING
+       * These functions parse the Letterboxd profile HTML to extract
+       * numeric statistics (films watched, this year, lists, etc.)
+       * =============================================================== */
+
+      /**
+       * parseStatCount — Parses a stat value string into a number.
+       * Handles comma separators and K/M/B suffixes. For example:
+       *   "1,234"  → 1234
+       *   "2.5k"   → 2500
+       *   "1.2M"   → 1200000
+       * Returns null if the string cannot be parsed.
+       */
       function parseStatCount(rawValue) {
         var text = String(rawValue || '').trim().replace(/,/g, '');
         if (!text) return null;
 
+        // Match a number optionally followed by a K/M/B suffix
         var match = text.match(/^([\d.]+)\s*([kmb])?$/i);
         if (!match) return null;
 
         var base = parseFloat(match[1]);
         if (Number.isNaN(base)) return null;
 
+        // Apply multiplier based on suffix
         var suffix = (match[2] || '').toLowerCase();
         if (suffix === 'k') base *= 1000;
         if (suffix === 'm') base *= 1000000;
@@ -556,9 +872,23 @@
         return Math.round(base);
       }
 
+      /**
+       * parseProfileTotals — Scrapes profile statistics from Letterboxd
+       * profile HTML. Letterboxd uses a `.profile-stats .profile-statistic`
+       * structure with `.definition` (label) and `.value` (number) spans.
+       *
+       * Primary strategy: DOM-parse the HTML and query for those selectors.
+       * Fallback strategy: regex extraction if DOM selectors fail (in case
+       * the proxy returns mangled HTML or the DOM structure changes).
+       *
+       * Returns an object like: { films: 256, 'this year': 2, lists: 10, ... }
+       * Throws if no stats can be extracted at all.
+       */
       function parseProfileTotals(htmlText) {
         var parsed = new DOMParser().parseFromString(htmlText, 'text/html');
         var stats = {};
+
+        // Primary: query the DOM for structured stat elements
         Array.from(parsed.querySelectorAll('.profile-stats .profile-statistic')).forEach(function (node) {
           var definition = node.querySelector('.definition');
           var value = node.querySelector('.value');
@@ -570,6 +900,7 @@
           stats[key] = count;
         });
 
+        // Fallback: regex-based extraction if DOM parsing found nothing
         if (!Object.keys(stats).length) {
           var regex = /<span class="value">\s*([^<]+)\s*<\/span>\s*<span class="definition">\s*([^<]+)\s*<\/span>/gi;
           var match;
@@ -582,12 +913,25 @@
           }
         }
 
+        // If both strategies yielded nothing, throw so the caller can use fallback data
         if (!Object.keys(stats).length) {
           throw new Error('No profile totals available');
         }
         return stats;
       }
 
+      /* ===============================================================
+       * LIST ACTIVITY SCRAPING
+       * These functions parse the Letterboxd lists page (or profile page)
+       * to extract list titles, links, and film counts.
+       * =============================================================== */
+
+      /**
+       * toAbsoluteLetterboxdLink — Normalizes a link that may be relative
+       * (e.g. "/tenderbrew/list/favorites/") into a full absolute URL.
+       * Handles three cases: already absolute, root-relative (/...), or
+       * path-only (no leading slash).
+       */
       function toAbsoluteLetterboxdLink(link) {
         if (!link) return '#';
         if (link.indexOf('http://') === 0 || link.indexOf('https://') === 0) return link;
@@ -595,19 +939,31 @@
         return 'https://letterboxd.com' + link;
       }
 
+      /**
+       * parseProfileLists — Scrapes list entries from Letterboxd HTML
+       * (either the /lists/ page or the main profile page). Looks for
+       * `h3.title-3 a[href*="/list/"]` elements, extracts each list's
+       * title and link, and optionally grabs a film count from a sibling
+       * `small.value` element. De-duplicates by link URL and caps at 10.
+       * Throws if no lists are found.
+       */
       function parseProfileLists(htmlText) {
         var parsed = new DOMParser().parseFromString(htmlText, 'text/html');
         var seen = {};
         var parsedLists = [];
 
         Array.from(parsed.querySelectorAll('h3.title-3 a[href*="/list/"]')).forEach(function (anchor) {
+          // Stop after collecting 10 lists
           if (parsedLists.length >= 10) return;
 
           var title = (anchor.textContent || '').trim();
           var link = toAbsoluteLetterboxdLink(anchor.getAttribute('href') || '');
+
+          // Skip empty or duplicate entries
           if (!title || !link || seen[link]) return;
           seen[link] = true;
 
+          // Try to find a film count label (e.g. "31 films") in a sibling element
           var heading = anchor.closest('h3');
           var countNode = heading ? heading.querySelector('small.value') : null;
           var countLabel = countNode
@@ -627,11 +983,20 @@
         return parsedLists;
       }
 
+      /**
+       * mergeListEntries — Combines list entries from multiple sources
+       * (e.g. RSS feed lists + scraped profile lists + fallback lists)
+       * into a single de-duplicated array. Primary entries take precedence.
+       * Also enriches entries: if a list appears in both sources but only
+       * one has a numeric film count, the count is carried over to the
+       * merged entry. Caps at maxCount (default 10).
+       */
       function mergeListEntries(primaryEntries, secondaryEntries, maxCount) {
         var merged = [];
         var seen = {};
         var limit = typeof maxCount === 'number' ? maxCount : 10;
 
+        // Helper: append entries from a source, skipping duplicates
         function appendEntries(entries) {
           (entries || []).forEach(function (entry) {
             if (merged.length >= limit) return;
@@ -643,16 +1008,19 @@
           });
         }
 
+        // Primary entries first (higher priority), then secondary
         appendEntries(primaryEntries);
         appendEntries(secondaryEntries);
 
-        // Enrich entries: prefer film-count labels over generic ones
+        // Build a lookup of numeric film-count labels from both sources
         var countMap = {};
         [].concat(primaryEntries || [], secondaryEntries || []).forEach(function (e) {
           if (e && e.link && e.metaLabel && /\d/.test(e.metaLabel)) {
             countMap[e.link.toLowerCase()] = e.metaLabel;
           }
         });
+
+        // Enrich: if a merged entry lacks a numeric count but one is available, apply it
         merged.forEach(function (entry) {
           var better = countMap[entry.link.toLowerCase()];
           if (better && (!entry.metaLabel || !/\d/.test(entry.metaLabel))) {
@@ -663,11 +1031,21 @@
         return merged;
       }
 
+      /**
+       * formatCount — Formats a number with locale-appropriate thousand
+       * separators (e.g. 1234 → "1,234"). Returns "--" for non-numbers.
+       */
       function formatCount(value) {
         if (typeof value !== 'number') return '--';
         return new Intl.NumberFormat('en-US').format(value);
       }
 
+      /**
+       * renderProfileTotals — Updates the "Booth Stats" panel with
+       * numeric stats. Merges live stats with fallback values so that
+       * any stat the scraper missed still shows the cached number
+       * rather than "--".
+       */
       function renderProfileTotals(stats) {
         var merged = Object.assign({}, fallbackProfileTotals, stats || {});
         statFilms.textContent = formatCount(merged.films);
@@ -677,6 +1055,17 @@
         statFollowers.textContent = formatCount(merged.followers);
       }
 
+      /* ===============================================================
+       * NETWORK / FETCH HELPERS
+       * These async functions handle fetching data through CORS proxies
+       * with timeouts and fallback chains.
+       * =============================================================== */
+
+      /**
+       * fetchWithTimeout — Wrapper around fetch() that aborts the request
+       * if it exceeds timeoutMs (default 7000ms). Uses AbortController
+       * when available; falls back to a plain fetch() in older browsers.
+       */
       async function fetchWithTimeout(url, options, timeoutMs) {
         if (typeof AbortController !== 'function') {
           return fetch(url, options);
@@ -692,6 +1081,19 @@
         }
       }
 
+      /* ---------------------------------------------------------------
+       * PROFILE HTML LOADERS
+       * Two strategies to fetch the Letterboxd profile page HTML:
+       *   1. CodeTabs CORS proxy (primary)
+       *   2. AllOrigins CORS proxy (fallback)
+       * The result is cached in profileHtmlPromise so multiple
+       * consumers (stats + lists) share one request.
+       * --------------------------------------------------------------- */
+
+      /**
+       * loadProfileHtmlViaCodeTabs — Fetches Letterboxd profile HTML
+       * through the CodeTabs CORS proxy. This is the primary strategy.
+       */
       async function loadProfileHtmlViaCodeTabs() {
         var response = await fetchWithTimeout(profileProxyUrl, { cache: 'no-store' }, 7000);
         if (!response.ok) {
@@ -701,6 +1103,11 @@
         return await response.text();
       }
 
+      /**
+       * loadListsHtmlViaCodeTabs — Fetches the Letterboxd /lists/ page
+       * through the CodeTabs CORS proxy. Checks for Cloudflare 1015
+       * rate-limit blocks in the response body.
+       */
       async function loadListsHtmlViaCodeTabs() {
         var response = await fetchWithTimeout(listsProxyUrl, { cache: 'no-store' }, 7000);
         if (!response.ok) {
@@ -708,12 +1115,19 @@
         }
 
         var html = await response.text();
+        // Cloudflare error code 1015 means the proxy was rate-limited
         if (!html || html.indexOf('error code: 1015') !== -1) {
           throw new Error('Lists proxy blocked');
         }
         return html;
       }
 
+      /**
+       * loadListsHtmlViaAllOrigins — Fallback: fetches Letterboxd /lists/
+       * page through the AllOrigins CORS proxy. AllOrigins wraps the
+       * response in a JSON envelope with a `contents` field that may be
+       * base64-encoded or URL-encoded (decoded by decodeDataPayload).
+       */
       async function loadListsHtmlViaAllOrigins() {
         var allOriginsUrl = 'https://api.allorigins.win/get?url=' + encodeURIComponent(listsUrl);
         var response = await fetchWithTimeout(allOriginsUrl, { cache: 'no-store' }, 7000);
@@ -729,6 +1143,10 @@
         return decoded;
       }
 
+      /**
+       * loadProfileHtmlViaAllOrigins — Fallback: fetches the Letterboxd
+       * profile page through AllOrigins, with the same data:URI decoding.
+       */
       async function loadProfileHtmlViaAllOrigins() {
         var allOriginsUrl = 'https://api.allorigins.win/get?url=' + encodeURIComponent(profileUrl);
         var response = await fetchWithTimeout(allOriginsUrl, { cache: 'no-store' }, 7000);
@@ -745,8 +1163,17 @@
         return decoded;
       }
 
+      /**
+       * profileHtmlPromise — Singleton promise that caches the profile
+       * HTML fetch result. Both loadProfileTotals() and loadProfileLists()
+       * (as a last-resort fallback) share this to avoid duplicate requests.
+       */
       var profileHtmlPromise = null;
 
+      /**
+       * loadProfileHtml — Returns the cached profile HTML promise, or
+       * initiates the fetch chain: CodeTabs first, AllOrigins fallback.
+       */
       async function loadProfileHtml() {
         if (!profileHtmlPromise) {
           profileHtmlPromise = (async function () {
@@ -760,11 +1187,24 @@
         return await profileHtmlPromise;
       }
 
+      /**
+       * loadProfileTotals — Fetches profile HTML and parses out the
+       * numeric stats (films, this year, lists, following, followers).
+       */
       async function loadProfileTotals() {
         var html = await loadProfileHtml();
         return parseProfileTotals(html);
       }
 
+      /**
+       * loadProfileLists — Attempts to scrape list activity with a
+       * three-level fallback chain:
+       *   1. Dedicated /lists/ page via CodeTabs proxy
+       *   2. Dedicated /lists/ page via AllOrigins proxy
+       *   3. Lists scraped from the main profile page (which shows fewer)
+       * At each level, scraped lists are merged with fallback data to
+       * ensure the sidebar is never empty.
+       */
       async function loadProfileLists() {
         try {
           var listsHtml = await loadListsHtmlViaCodeTabs();
@@ -774,13 +1214,32 @@
             var listsFallbackHtml = await loadListsHtmlViaAllOrigins();
             return mergeListEntries(parseProfileLists(listsFallbackHtml), fallbackListActivity, 10);
           } catch (listsFallbackError) {
+            // Last resort: try to find lists in the profile page HTML
             var profileHtml = await loadProfileHtml();
             return mergeListEntries(parseProfileLists(profileHtml), fallbackListActivity, 10);
           }
         }
       }
 
+      /* ===============================================================
+       * REVIEW CROSS-REFERENCING
+       * When a user rewatches a film, Letterboxd creates a new RSS entry.
+       * Only some entries have written reviews. This function groups
+       * entries by film slug and attaches the most recent written review
+       * to every entry for that film, so even a no-review rewatch can
+       * display the user's review from a previous viewing.
+       * =============================================================== */
+
+      /**
+       * attachLatestWrittenReviews — For each unique film (by slug),
+       * finds the most recent written review across all entries. Then
+       * returns a new array where every entry has a `latestWrittenReview`
+       * field: either its own review, or the newest review from another
+       * log of the same film.
+       */
       function attachLatestWrittenReviews(entries) {
+        // Phase 1: Build a map of film-slug → { text, timestamp } for the
+        // most recent written review per film
         var latestByFilm = {};
 
         entries.forEach(function (entry) {
@@ -791,6 +1250,7 @@
           var timestamp = new Date(entry.date || '').getTime();
           if (Number.isNaN(timestamp)) timestamp = -Infinity;
 
+          // Keep only the newest review for each film
           if (!latestByFilm[filmKey] || timestamp > latestByFilm[filmKey].timestamp) {
             latestByFilm[filmKey] = {
               text: writtenReview,
@@ -799,13 +1259,17 @@
           }
         });
 
+        // Phase 2: Map entries to enriched copies with latestWrittenReview
         return entries.map(function (entry) {
           var filmKey = entry.filmKey || filmKeyFromLink(entry.link);
           var writtenReview = entry.writtenReview || extractWrittenReviewText(entry.description || '');
           var latestWrittenReview = '';
+
           if (writtenReview) {
+            // This entry has its own review — use it directly
             latestWrittenReview = writtenReview;
           } else if (filmKey && latestByFilm[filmKey]) {
+            // No review on this entry, but another entry for the same film has one
             latestWrittenReview = latestByFilm[filmKey].text;
           }
 
@@ -817,7 +1281,18 @@
         });
       }
 
-      // Normalize proxy responses so render functions can use one consistent shape.
+      /* ===============================================================
+       * ENTRY NORMALIZATION
+       * The RSS feed can arrive in two forms (JSON via rss2json, or raw
+       * XML via AllOrigins). These functions normalize both into the
+       * same entry shape that the render functions expect.
+       * =============================================================== */
+
+      /**
+       * normalizeItems — Converts rss2json JSON items into normalized
+       * entry objects. Each item is parsed for title/year, rating,
+       * thumbnail, and review text. Used by loadFeedViaRssToJson.
+       */
       function normalizeItems(items) {
         return items.map(function (item) {
           var parsedTitle = parseFilmTitle(item.title || 'Untitled');
@@ -838,6 +1313,12 @@
         });
       }
 
+      /**
+       * parseXmlItems — Parses raw RSS XML text (from AllOrigins fallback)
+       * into normalized entry objects. Uses DOMParser to read the XML
+       * structure, extracting each <item>'s child elements (title, link,
+       * pubDate, description, guid). Throws if the XML is malformed.
+       */
       function parseXmlItems(xmlText) {
         var parsed = new DOMParser().parseFromString(xmlText, 'application/xml');
         if (parsed.querySelector('parsererror')) {
@@ -845,6 +1326,7 @@
         }
 
         return Array.from(parsed.querySelectorAll('item')).map(function (node) {
+          // Helper to read a child element's text content by tag name
           function read(tagName) {
             var found = node.querySelector(tagName);
             return found ? found.textContent.trim() : '';
@@ -870,8 +1352,17 @@
         });
       }
 
+      /**
+       * decodeDataPayload — AllOrigins sometimes returns content as a
+       * data: URI (e.g. "data:text/html;base64,PGh0bWw..."). This
+       * function detects that format, extracts the payload after the
+       * comma, and decodes it (base64 via atob, or URL-encoded via
+       * decodeURIComponent). Returns the original string if it is not
+       * a data: URI.
+       */
       function decodeDataPayload(contents) {
         if (!contents) return '';
+        // Not a data: URI — return as-is
         if (contents.indexOf('data:') !== 0) return contents;
 
         var comma = contents.indexOf(',');
@@ -879,12 +1370,26 @@
 
         var metadata = contents.slice(0, comma);
         var payload = contents.slice(comma + 1);
+
+        // Decode based on encoding type specified in the data: URI header
         if (metadata.indexOf(';base64') !== -1) {
           return atob(payload);
         }
         return decodeURIComponent(payload);
       }
 
+      /* ===============================================================
+       * FALLBACK RENDERER
+       * Called when all live feed fetches fail. Renders the hardcoded
+       * sample data so the page is never completely empty.
+       * =============================================================== */
+
+      /**
+       * renderWithFallback — Uses the hardcoded fallbackWatches and
+       * fallbackListActivity arrays to populate the page, and updates
+       * the feed status message to inform the user that cached samples
+       * are being shown along with the failure reason.
+       */
       function renderWithFallback(reason) {
         var fallbackEntries = attachLatestWrittenReviews(fallbackWatches);
         renderMarqueeTitles(fallbackEntries.slice(0, 6));
@@ -894,6 +1399,18 @@
         feedStatus.textContent = 'Live feed unavailable (' + reason + '). Showing cached samples.';
       }
 
+      /* ===============================================================
+       * RSS FEED LOADERS
+       * Two-strategy chain for fetching the Letterboxd RSS feed:
+       *   1. rss2json.com (converts RSS → JSON server-side, easiest to consume)
+       *   2. AllOrigins (returns raw RSS XML, parsed client-side)
+       * =============================================================== */
+
+      /**
+       * loadFeedViaRssToJson — PRIMARY strategy. Sends the Letterboxd
+       * RSS URL to rss2json.com, which returns a JSON response with
+       * status and items array. The items are then normalized.
+       */
       async function loadFeedViaRssToJson() {
         var response = await fetch(rssToJsonUrl, { cache: 'no-store' });
         if (!response.ok) {
@@ -901,6 +1418,7 @@
         }
 
         var payload = await response.json();
+        // rss2json returns { status: "ok", items: [...] } on success
         if (payload.status !== 'ok' || !Array.isArray(payload.items)) {
           throw new Error('Invalid payload');
         }
@@ -908,6 +1426,11 @@
         return normalizeItems(payload.items);
       }
 
+      /**
+       * loadFeedViaAllOrigins — FALLBACK strategy. Fetches the raw RSS
+       * XML through AllOrigins CORS proxy, decodes any data: URI
+       * wrapping, and parses the XML into normalized entries.
+       */
       async function loadFeedViaAllOrigins() {
         var allOriginsUrl = 'https://api.allorigins.win/get?url=' + encodeURIComponent(feedUrl);
         var response = await fetch(allOriginsUrl, { cache: 'no-store' });
@@ -924,6 +1447,10 @@
         return parseXmlItems(decoded);
       }
 
+      /**
+       * loadFeed — Orchestrates the two-strategy feed fetch chain.
+       * Tries rss2json first; if that fails, falls through to AllOrigins.
+       */
       async function loadFeed() {
         try {
           return await loadFeedViaRssToJson();
@@ -932,20 +1459,31 @@
         }
       }
 
-      // Render order: profile totals, recent list, featured card, list activity.
+      /* ===============================================================
+       * INITIALIZATION — KICK OFF ALL FETCHES
+       * Render fallback data immediately so the page is never blank,
+       * then start async fetches to replace it with live data.
+       * =============================================================== */
+
+      // Immediately render fallback stats and lists so the page has content
+      // while the async fetches are in progress
       renderProfileTotals(fallbackProfileTotals);
       renderListActivity(fallbackListActivity);
 
+      // Fetch live profile stats and replace the fallback stats on success
       loadProfileTotals()
         .then(function (profileTotals) {
           renderProfileTotals(profileTotals);
         })
         .catch(function () {
+          // Keep the already-rendered fallback stats
           renderProfileTotals(fallbackProfileTotals);
         });
 
+      // Fetch the RSS feed and render the main content areas
       loadFeed()
         .then(function (entries) {
+          // Separate RSS items into film entries (watches) and list entries
           var filmEntries = entries.filter(function (entry) { return entry.link.indexOf('/film/') !== -1; });
           var listEntries = entries.filter(function (entry) { return entry.link.indexOf('/list/') !== -1; });
 
@@ -953,10 +1491,16 @@
             throw new Error('No film entries');
           }
 
+          // Enrich film entries with cross-referenced written reviews
           var filmEntriesWithReviews = attachLatestWrittenReviews(filmEntries);
-          renderMarqueeTitles(filmEntriesWithReviews.slice(0, 6));
-          renderFeatured(filmEntriesWithReviews[0]);
-          renderRecentWatches(filmEntriesWithReviews.slice(1));
+
+          // Render the three main film sections
+          renderMarqueeTitles(filmEntriesWithReviews.slice(0, 6));  // Up to 6 titles for the marquee
+          renderFeatured(filmEntriesWithReviews[0]);                 // Most recent as featured card
+          renderRecentWatches(filmEntriesWithReviews.slice(1));      // Next 5 as the "Now Screening" list
+
+          // Render lists: if the RSS had 10+ list items, use those directly;
+          // otherwise supplement with scraped profile lists
           if (listEntries.length >= 10) {
             renderListActivity(listEntries);
           } else {
@@ -968,15 +1512,18 @@
                 renderListActivity(mergeListEntries(listEntries, fallbackListActivity, 10));
               });
           }
+
+          // Replace the "Loading..." status text with the Letterboxd logo link
           feedStatus.innerHTML = '<a href="' + escapeHtml(profileUrl) + '" target="_blank" rel="noopener" aria-label="Letterboxd profile"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 36 12" width="36" height="12" aria-hidden="true"><circle cx="6" cy="6" r="6" fill="#ff8000"/><circle cx="18" cy="6" r="6" fill="#00e054"/><circle cx="30" cy="6" r="6" fill="#40bcf4"/></svg></a>';
         })
         .catch(function (error) {
+          // All feed fetches failed — render hardcoded fallback data
           renderWithFallback(error && error.message ? error.message : 'feed error');
         });
     })();
   </script>
+
+  <!-- ticker.js: animates the scrolling market-data ticker tape at the top of the page -->
   <script src="ticker.js"></script>
 </body>
 </html>
-
-

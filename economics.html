@@ -1,8 +1,34 @@
-<!-- File Guide: economics.html. Data-driven macro dashboard fetching FRED indicators and Mises feed headlines. -->
+<!--
+  ============================================================================
+  economics.html — The Trading Floor
+  ============================================================================
+  A Bloomberg-terminal-inspired economics dashboard for ericarmbruster.com.
+
+  This page has three main sections:
+    1. Economic Indicators — a grid of ~30 live macro data cards fetched from
+       the Federal Reserve Economic Data (FRED) API via CSV export endpoints.
+    2. The Wire — a sidebar showing the latest 10 headlines from the
+       Mises Institute RSS feed (mises.org/feed).
+    3. Research Desk — a static reading list of seminal economics texts,
+       organized by school of thought (Classical, Austrian, Keynesian, etc.).
+
+  The page uses the .econ-page body class for scoped styles defined in
+  econ-styles.css. Shared site-wide styles (nav, footer, ticker) come from
+  styles.css.
+
+  The inline <script> at the bottom (~430 lines) contains the entire
+  client-side data pipeline: FRED CSV fetching, CPI year-over-year derivation,
+  Mises RSS parsing, CORS proxy fallback chain, and DOM card rendering.
+  ============================================================================
+-->
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <!-- Head section: metadata, social tags, fonts, stylesheets, and analytics bootstrapping. -->
+  <!--
+    Head section: character encoding, viewport for responsive design,
+    page title, SEO meta description, Open Graph / Twitter Card social tags,
+    favicon, Google Fonts preconnect + stylesheet links, and Google Analytics.
+  -->
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Economics - Eric Armbruster</title>
@@ -19,12 +45,18 @@
   <meta name="twitter:description" content="Live macro indicators, Austrian economics headlines, and a reading queue.">
   <meta name="twitter:image" content="https://www.ericarmbruster.com/images/bohm-bawerk.png">
   <link rel="icon" href="images/hector-favicon.png" type="image/png">
+
+  <!-- Preconnect to Google Fonts origins to speed up font loading -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;700&family=IBM+Plex+Sans+Condensed:wght@400;500;700&family=Libre+Caslon+Display&family=Libre+Caslon+Text:ital,wght@0,400;0,700;1,400&family=Special+Elite&family=Herr+Von+Muellerhoff&display=swap" rel="stylesheet">
+
+  <!-- Shared site-wide stylesheet (nav, footer, base layout, homepage) -->
   <link rel="stylesheet" href="styles.css">
+  <!-- Page-scoped stylesheet for the economics dashboard (emerald green palette) -->
   <link rel="stylesheet" href="econ-styles.css">
-  <!-- Analytics library: loaded async so it does not block rendering. -->
+
+  <!-- Google Analytics: loaded async so it never blocks the critical render path -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-5ZTHJXDR9V"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
@@ -35,7 +67,12 @@
 </head>
 <body class="econ-page">
 
-  <!-- Scrolling ticker tape: live market data. -->
+  <!--
+    Ticker tape: a horizontally scrolling strip of hardcoded market quotes
+    (DJIA, S&P 500, NASDAQ, 10Y yield, gold, BTC, VIX, EUR/USD, crude, fed funds).
+    The content is duplicated so the CSS infinite-scroll animation loops seamlessly.
+    Marked aria-hidden because it is purely decorative. Animation powered by ticker.js.
+  -->
   <div class="ticker-tape" aria-hidden="true">
     <div class="ticker-track">
       <span class="tick" data-ticker="DJIA">DJIA 38,547 &#9650;0.42%</span>
@@ -58,6 +95,7 @@
       <span class="tick-sep">&bull;</span>
       <span class="tick" data-ticker="FEDFUNDS">FED FUNDS 5.33%</span>
       <span class="tick-sep">&bull;</span>
+      <!-- Duplicate set for seamless looping animation -->
       <span class="tick" data-ticker="DJIA">DJIA 38,547 &#9650;0.42%</span>
       <span class="tick-sep">&bull;</span>
       <span class="tick" data-ticker="SP500">S&amp;P 500 5,234 &#9650;0.18%</span>
@@ -82,8 +120,12 @@
   </div>
 
 
-  <!-- Shared primary navigation. Drawer behavior is provided by drawer.js. -->
-
+  <!--
+    Shared primary navigation (identical across all pages).
+    Contains desktop nav links, social/contact icon row, mobile hamburger toggle,
+    and the slide-out drawer with grouped links. Drawer open/close behavior is
+    handled by drawer.js loaded at the bottom of the page.
+  -->
 
   <nav class="study-nav" aria-label="Primary">
     <div class="container nav-shell">
@@ -104,6 +146,7 @@
       <button class="drawer-toggle nav-mobile-toggle" type="button" aria-expanded="false" aria-controls="site-drawer" data-drawer-toggle>menu</button>
     </div>
 
+    <!-- Slide-out navigation drawer (shared across all pages) -->
     <div class="site-drawer" id="site-drawer">
       <div class="container drawer-inner">
         <section class="drawer-group">
@@ -130,7 +173,13 @@
     </div>
   </nav>
 
-  <!-- Page hero: Bloomberg-style terminal window. -->
+  <!--
+    Page hero: styled as a faux terminal window with macOS-style traffic-light
+    dots (close/minimize/maximize) and a "TERMINAL" title bar. The terminal body
+    contains the page heading "The Trading Floor" and a source-strip linking to
+    the FRED website and the Mises Institute, plus a live "last refreshed" timestamp
+    that gets updated by JavaScript once all data pipelines complete.
+  -->
   <header class="econ-hero" aria-labelledby="econ-page-title">
     <div class="container">
       <div class="econ-terminal">
@@ -143,6 +192,7 @@
         <div class="econ-terminal-body">
           <h1 id="econ-page-title">The Trading Floor</h1>
 
+          <!-- Quick-reference links to data sources and a JS-updated refresh timestamp -->
           <div class="econ-source-strip">
             <a href="https://fred.stlouisfed.org/" target="_blank" rel="noopener">FRED Data</a>
             <a href="https://mises.org/" target="_blank" rel="noopener">Mises Feed</a>
@@ -153,39 +203,68 @@
     </div>
   </header>
 
-  <!-- Main page content. -->
+  <!-- ===== Main page content ===== -->
   <main>
-    <!-- Indicators + Wire side-by-side on desktop -->
+    <!--
+      Two-column desktop layout:
+        Left (wide): Economic Indicators — a responsive CSS grid of data cards,
+          each showing one FRED series (value, unit, date, period-over-period delta).
+        Right (narrow): The Wire — a sidebar list of the latest Mises Institute headlines.
+      On mobile these stack vertically.
+    -->
     <div class="econ-layout container">
+
+      <!-- Economic Indicators panel: card grid populated by JS -->
       <div class="econ-panel econ-panel--board" aria-labelledby="indicators-title">
         <div class="econ-panel-head">
           <h2 id="indicators-title">Economic Indicators</h2>
+          <!-- Live status text updated by JS to show "X / Y indicators updated" -->
           <p id="econ-indicator-status" class="econ-status" role="status">Loading data feeds...</p>
         </div>
+        <!-- Decorative LED strip (purely visual, hidden from assistive tech) -->
         <div class="econ-led-strip" aria-hidden="true"></div>
+        <!-- JS injects one <article class="econ-indicator-card"> per indicator here -->
         <div id="econ-indicator-grid" class="econ-indicator-grid" aria-live="polite"></div>
       </div>
 
-      <!-- The Wire: Mises news feed sidebar -->
+      <!--
+        The Wire: Mises Institute news feed sidebar.
+        Headlines are fetched from mises.org/feed (RSS/XML), parsed client-side,
+        and rendered as <li> elements inside the <ul> below. If the RSS fetch
+        fails, a JSON-based fallback (rss2json) is attempted; if that also fails,
+        static fallback links are shown instead.
+      -->
       <aside class="econ-sidebar" aria-labelledby="news-title">
         <article class="econ-panel econ-panel--wire" aria-labelledby="news-title">
           <div class="econ-panel-head">
             <h2 id="news-title">The Wire</h2>
             <p id="econ-news-status" class="econ-status" role="status">Loading Mises feed...</p>
           </div>
+          <!-- JS populates this list with up to 10 headline items -->
           <ul id="econ-news-list" class="econ-news-list"></ul>
         </article>
       </aside>
     </div>
 
-    <!-- Divider -->
+    <!-- Visual divider between the live data section and the static reading list -->
     <section class="econ-section">
       <div class="container">
         <hr class="econ-divider" aria-hidden="true">
       </div>
     </section>
 
-    <!-- Research Desk: reading list in manila dossier folders. -->
+    <!--
+      Research Desk: a curated reading list of seminal economics texts organized
+      into six manila-dossier-styled columns by school of thought:
+        1. Classical (Smith, Ricardo, Mill, Malthus, Say)
+        2. Austrian (Menger, Mises, Hayek, Rothbard, Bohm-Bawerk)
+        3. Keynesian (Keynes, Galbraith, Minsky)
+        4. Monetarist & Chicago (Friedman, Buchanan, Hayek)
+        5. Marxian & Socialist (Marx, Engels, Luxemburg, Veblen)
+        6. Economic History (Heilbroner, Reinhart & Rogoff, Polanyi, Acemoglu)
+      Titles with available free-access editions link to Gutenberg, Mises.org,
+      Liberty Fund, or Archive.org.
+    -->
     <section class="econ-section" aria-labelledby="reading-title">
       <div class="container">
         <article class="econ-panel econ-panel--desk" aria-labelledby="reading-title">
@@ -193,6 +272,8 @@
             <h2 id="reading-title">Research Desk</h2>
           </div>
           <div class="econ-reading-columns">
+
+            <!-- Classical economics dossier -->
             <section class="econ-dossier">
               <h3>Classical</h3>
               <ul>
@@ -219,6 +300,7 @@
               </ul>
             </section>
 
+            <!-- Austrian economics dossier -->
             <section class="econ-dossier">
               <h3>Austrian</h3>
               <ul>
@@ -249,6 +331,7 @@
               </ul>
             </section>
 
+            <!-- Keynesian economics dossier -->
             <section class="econ-dossier">
               <h3>Keynesian</h3>
               <ul>
@@ -275,6 +358,7 @@
               </ul>
             </section>
 
+            <!-- Monetarist & Chicago school dossier -->
             <section class="econ-dossier">
               <h3>Monetarist &amp; Chicago</h3>
               <ul>
@@ -301,6 +385,7 @@
               </ul>
             </section>
 
+            <!-- Marxian & Socialist thought dossier -->
             <section class="econ-dossier">
               <h3>Marxian &amp; Socialist</h3>
               <ul>
@@ -327,6 +412,7 @@
               </ul>
             </section>
 
+            <!-- Economic history dossier -->
             <section class="econ-dossier">
               <h3>Economic History</h3>
               <ul>
@@ -358,75 +444,161 @@
     </section>
   </main>
 
-  <!-- Shared footer. -->
+  <!-- Shared site footer (identical on every page) -->
   <footer>
     <div class="container">
       &copy; 2026 Eric Armbruster
     </div>
   </footer>
-  <!-- Shared drawer controller for desktop/mobile navigation. -->
+
+  <!-- Shared drawer controller: manages open/close/accessibility for the nav drawer -->
   <script src="drawer.js"></script>
+
+  <!--
+    =========================================================================
+    INLINE JAVASCRIPT — Economics Data Pipeline
+    =========================================================================
+    This self-executing IIFE is the entire client-side data engine for the page.
+    It does the following:
+
+    1. Defines ~30 FRED indicator series with display metadata (name, unit,
+       decimal precision, optional value transforms).
+    2. Creates placeholder DOM cards in the indicator grid for each series.
+    3. Fetches each series' historical CSV from FRED's public graph export
+       endpoint (fred.stlouisfed.org/graph/fredgraph.csv?id=SERIES_ID).
+    4. Parses CSV into {date, value} arrays, extracts the latest + previous
+       data points, computes period-over-period deltas, and hydrates each card.
+    5. Derives a synthetic "CPI YoY Inflation" card by comparing the latest
+       CPI index value to the value from 12 months prior.
+    6. Fetches the Mises Institute RSS feed (mises.org/feed), parses the XML,
+       and renders up to 10 headline items in "The Wire" sidebar.
+    7. All external fetches route through a CORS proxy fallback chain
+       (Codetabs -> AllOrigins/get -> AllOrigins/raw) because FRED and Mises
+       do not serve permissive CORS headers for browser-based requests.
+    =========================================================================
+  -->
   <script>
-    // Economics data pipeline: fetch FRED + Mises feeds, then render cards and headlines.
     (function () {
+
+      /*
+       * ---------------------------------------------------------------
+       * DOM References
+       * Grab handles to the key containers that JS will populate or
+       * update during the data pipeline execution.
+       * ---------------------------------------------------------------
+       */
       var indicatorGrid = document.getElementById('econ-indicator-grid');
       var indicatorStatus = document.getElementById('econ-indicator-status');
       var newsList = document.getElementById('econ-news-list');
       var newsStatus = document.getElementById('econ-news-status');
       var refreshText = document.getElementById('econ-last-refresh');
 
-      // Per-series metadata controls label, unit, decimals, and optional transforms.
+      /*
+       * ---------------------------------------------------------------
+       * Indicator Definitions (FRED Series Metadata)
+       * ---------------------------------------------------------------
+       * Each object describes one economic indicator to display:
+       *   - id:        FRED series identifier (e.g. "UNRATE", "M2SL")
+       *   - name:      Human-readable label shown on the card
+       *   - unit:      Display unit appended after the value (%, $T, index, etc.)
+       *   - decimals:  Number of decimal places for formatting
+       *   - transform: Optional function to rescale raw FRED values
+       *                (e.g. divide by 1000 to convert billions -> trillions)
+       *   - derived:   If true, this indicator is NOT fetched directly from
+       *                FRED; instead it is computed from another series' data
+       *                (used only for CPI_YOY which is calculated from CPIAUCSL).
+       *
+       * The indicators are grouped thematically:
+       *   - Employment & Labor (UNRATE, PAYEMS, JTSJOL, ICSA)
+       *   - Inflation & Prices (CPIAUCSL, CPI_YOY, CPILFESL, T10YIE, PCE)
+       *   - Money & Fed (M2SL, BOGMBASE, WALCL, FEDFUNDS)
+       *   - Rates & Bonds (DGS2, DGS10, T10Y2Y, DFII10, BAMLH0A0HYM2, MORTGAGE30US)
+       *   - Output & Activity (GDPC1, INDPRO, RSAFS)
+       *   - Sentiment & Risk (UMCSENT, STLFSI4, DTWEXBGS)
+       *   - Housing & Debt (PERMIT, GFDEGDQ188S, VIXCLS)
+       *   - Trade & Velocity (BOPGSTB, M2V)
+       * ---------------------------------------------------------------
+       */
       var indicatorDefinitions = [
-        // Employment & Labor
+        // --- Employment & Labor ---
         { id: 'UNRATE', name: 'Unemployment Rate', unit: '%', decimals: 1 },
         { id: 'PAYEMS', name: 'Payroll Employment', unit: 'M jobs', decimals: 1, transform: function (v) { return v / 1000; } },
         { id: 'JTSJOL', name: 'JOLTS Job Openings', unit: 'M', decimals: 2, transform: function (v) { return v / 1000; } },
         { id: 'ICSA', name: 'Initial Jobless Claims', unit: 'K', decimals: 0 },
-        // Inflation & Prices
+
+        // --- Inflation & Prices ---
         { id: 'CPIAUCSL', name: 'CPI (All Urban)', unit: 'index', decimals: 1 },
+        // CPI_YOY is a derived (computed) indicator — see findCpiYoY() below
         { id: 'CPI_YOY', name: 'CPI YoY Inflation', unit: '%', decimals: 2, derived: true },
         { id: 'CPILFESL', name: 'Core CPI (ex Food/Energy)', unit: 'index', decimals: 1 },
         { id: 'T10YIE', name: '10Y Breakeven Inflation', unit: '%', decimals: 2 },
         { id: 'PCE', name: 'Personal Consumption', unit: '$T', decimals: 2, transform: function (v) { return v / 1000; } },
-        // Money & Fed
+
+        // --- Money & Fed ---
         { id: 'M2SL', name: 'Money Supply (M2)', unit: '$T', decimals: 2, transform: function (v) { return v / 1000; } },
         { id: 'BOGMBASE', name: 'Monetary Base (M0)', unit: '$T', decimals: 2, transform: function (v) { return v / 1000; } },
+        // WALCL is reported in millions, so divide by 1,000,000 to get trillions
         { id: 'WALCL', name: 'Fed Balance Sheet', unit: '$T', decimals: 2, transform: function (v) { return v / 1000000; } },
         { id: 'FEDFUNDS', name: 'Fed Funds Rate', unit: '%', decimals: 2 },
-        // Rates & Bonds
+
+        // --- Rates & Bonds ---
         { id: 'DGS2', name: '2Y Treasury Yield', unit: '%', decimals: 2 },
         { id: 'DGS10', name: '10Y Treasury Yield', unit: '%', decimals: 2 },
+        // T10Y2Y is the yield curve spread; negative values signal inversion
         { id: 'T10Y2Y', name: '10Y-2Y Spread', unit: 'pp', decimals: 2 },
         { id: 'DFII10', name: '10Y Real Rate (TIPS)', unit: '%', decimals: 2 },
         { id: 'BAMLH0A0HYM2', name: 'High Yield Spread', unit: 'pp', decimals: 2 },
         { id: 'MORTGAGE30US', name: '30Y Mortgage Rate', unit: '%', decimals: 2 },
-        // Output & Activity
+
+        // --- Output & Activity ---
         { id: 'GDPC1', name: 'Real GDP', unit: '$T', decimals: 2, transform: function (v) { return v / 1000; } },
         { id: 'INDPRO', name: 'Industrial Production', unit: 'index', decimals: 1 },
         { id: 'RSAFS', name: 'Retail Sales', unit: '$B', decimals: 1 },
-        // Sentiment & Risk
+
+        // --- Sentiment & Risk ---
         { id: 'UMCSENT', name: 'Consumer Sentiment', unit: 'index', decimals: 1 },
         { id: 'STLFSI4', name: 'Financial Stress Index', unit: 'index', decimals: 2 },
         { id: 'DTWEXBGS', name: 'Dollar Index (Broad)', unit: 'index', decimals: 2 },
-        // Housing & Debt
+
+        // --- Housing & Debt ---
         { id: 'PERMIT', name: 'New Housing Permits', unit: 'K', decimals: 0 },
         { id: 'GFDEGDQ188S', name: 'Debt-to-GDP Ratio', unit: '%', decimals: 1 },
         { id: 'VIXCLS', name: 'CBOE Volatility (VIX)', unit: 'index', decimals: 2 },
-        // Trade & Velocity
+
+        // --- Trade & Velocity ---
         { id: 'BOPGSTB', name: 'Trade Balance', unit: '$B', decimals: 1 },
         { id: 'M2V', name: 'Velocity of Money (M2)', unit: 'ratio', decimals: 2 }
       ];
 
+      // Lookup map: series ID -> its DOM card element (populated by createIndicatorCard)
       var indicatorCards = {};
 
+      /*
+       * ---------------------------------------------------------------
+       * Utility: formatDate
+       * Converts a date string (e.g. "2024-05-01") into a locale-friendly
+       * short format like "May 1, 2024". Returns "Unknown date" for invalid input.
+       * ---------------------------------------------------------------
+       */
       function formatDate(dateString) {
         var date = new Date(dateString);
         if (Number.isNaN(date.getTime())) return 'Unknown date';
         return new Intl.DateTimeFormat('en-US', { month: 'short', day: 'numeric', year: 'numeric' }).format(date);
       }
 
+      /*
+       * ---------------------------------------------------------------
+       * Utility: decodeDataPayload
+       * Some CORS proxies (notably AllOrigins/get) return content wrapped
+       * in a data URI (e.g. "data:text/csv;base64,..."). This function
+       * detects that encoding, extracts the payload portion after the comma,
+       * and decodes it (base64 via atob, or percent-encoded via decodeURIComponent).
+       * If the content is not a data URI, it is returned as-is.
+       * ---------------------------------------------------------------
+       */
       function decodeDataPayload(contents) {
         if (!contents) return '';
+        // If the string does not start with "data:", it is plain text
         if (contents.indexOf('data:') !== 0) return contents;
 
         var comma = contents.indexOf(',');
@@ -435,22 +607,36 @@
         var metadata = contents.slice(0, comma);
         var payload = contents.slice(comma + 1);
 
+        // Check if the data URI uses base64 encoding
         if (metadata.indexOf(';base64') !== -1) {
           return atob(payload);
         }
 
+        // Otherwise assume percent-encoding
         return decodeURIComponent(payload);
       }
 
+      /*
+       * ---------------------------------------------------------------
+       * CSV Parser: parseFredCsv
+       * FRED's CSV export has a header row ("DATE,VALUE") followed by
+       * data rows like "2024-05-01,3.4". This function splits the text
+       * into lines, skips the header, and maps each line into a
+       * {date, value} object. Lines with non-finite values (e.g. ".")
+       * are filtered out.
+       * ---------------------------------------------------------------
+       */
       function parseFredCsv(csvText) {
         var lines = csvText.split(/\r?\n/).filter(Boolean);
         if (lines.length < 2) return [];
 
+        // Skip header (line 0) and parse each subsequent line
         return lines.slice(1).map(function (line) {
           var parts = line.split(',');
           if (parts.length < 2) return null;
 
           var value = Number(parts[1]);
+          // FRED uses "." for missing observations, which becomes NaN
           if (!Number.isFinite(value)) return null;
 
           return {
@@ -460,6 +646,24 @@
         }).filter(Boolean);
       }
 
+      /*
+       * ---------------------------------------------------------------
+       * DOM Builder: createIndicatorCard
+       * Creates a single indicator card element and appends it to the
+       * grid. Each card contains:
+       *   - <h3> with the indicator's human-readable name
+       *   - <p class="econ-series-code"> with the FRED series ID
+       *   - <p class="econ-indicator-value"> showing "--" until data loads
+       *   - <p class="econ-indicator-meta"> showing "Awaiting update..."
+       *
+       * For non-derived indicators, the card contents are wrapped in an
+       * <a> tag linking to the FRED page for that series, so users can
+       * click through for full historical charts.
+       *
+       * Derived indicators (like CPI_YOY) are not linkable because they
+       * do not correspond to a single FRED series URL.
+       * ---------------------------------------------------------------
+       */
       function createIndicatorCard(definition) {
         var card = document.createElement('article');
         card.className = 'econ-indicator-card';
@@ -477,6 +681,7 @@
         meta.className = 'econ-indicator-meta';
         meta.textContent = 'Awaiting update...';
 
+        // Wrap in a link to FRED unless this is a derived (computed) indicator
         if (!definition.derived) {
           var link = document.createElement('a');
           link.href = 'https://fred.stlouisfed.org/series/' + definition.id;
@@ -489,10 +694,19 @@
           card.append(h3, code, value, meta);
         }
 
+        // Add to the grid and register in the lookup map
         indicatorGrid.appendChild(card);
         indicatorCards[definition.id] = card;
       }
 
+      /*
+       * ---------------------------------------------------------------
+       * Card Error State: setCardError
+       * Marks a card as errored — adds the "is-error" CSS class (which
+       * dims or grays out the card), sets the value to "--", and shows
+       * a human-readable error message in the meta line.
+       * ---------------------------------------------------------------
+       */
       function setCardError(seriesId, message) {
         var card = indicatorCards[seriesId];
         if (!card) return;
@@ -502,36 +716,76 @@
         card.querySelector('.econ-indicator-meta').textContent = message;
       }
 
+      /*
+       * ---------------------------------------------------------------
+       * Card Hydration: updateCard
+       * Populates a card with live data once it has been fetched:
+       *   1. Applies the optional transform function to scale the raw value
+       *      (e.g. dividing billions by 1000 to show trillions).
+       *   2. Formats the value with the correct number of decimal places
+       *      and appends the unit string.
+       *   3. If a previous data point is available, computes the delta
+       *      (period-over-period change) and displays it with a +/- sign.
+       *   4. Toggles "is-up" / "is-down" CSS classes for color-coded
+       *      directional styling (green for up, red for down).
+       * ---------------------------------------------------------------
+       */
       function updateCard(definition, latest, previous) {
         var card = indicatorCards[definition.id];
         if (!card) return;
 
+        // Apply transform if defined (e.g. billions -> trillions)
         var value = definition.transform ? definition.transform(latest.value) : latest.value;
         var previousValue = previous ? (definition.transform ? definition.transform(previous.value) : previous.value) : null;
         var delta = previousValue !== null ? value - previousValue : null;
 
+        // Clear any prior error state and set the formatted value
         card.classList.remove('is-error');
         card.querySelector('.econ-indicator-value').textContent = value.toLocaleString(undefined, {
           minimumFractionDigits: definition.decimals,
           maximumFractionDigits: definition.decimals
         }) + ' ' + definition.unit;
 
+        // If no previous data point exists, just show the date without a delta
         if (delta === null) {
           card.querySelector('.econ-indicator-meta').textContent = formatDate(latest.date);
           return;
         }
 
+        // Format the delta with explicit sign ("+0.3" or "-0.3")
         var sign = delta > 0 ? '+' : '';
         var deltaText = sign + delta.toLocaleString(undefined, {
           minimumFractionDigits: definition.decimals,
           maximumFractionDigits: definition.decimals
         });
 
+        // Show date + period-over-period change, and apply directional CSS classes
         card.querySelector('.econ-indicator-meta').textContent = formatDate(latest.date) + ' | change: ' + deltaText;
         card.classList.toggle('is-up', delta > 0);
         card.classList.toggle('is-down', delta < 0);
       }
 
+      /*
+       * ===============================================================
+       * CORS Proxy Fallback Chain
+       * ===============================================================
+       * FRED and Mises.org do not serve Access-Control-Allow-Origin
+       * headers, so direct browser fetch() calls are blocked by CORS.
+       * To work around this, all external fetches route through a chain
+       * of three free CORS proxy services. If one fails (rate limit,
+       * downtime, etc.), the next is tried automatically:
+       *
+       *   1. Codetabs (api.codetabs.com/v1/proxy)
+       *   2. AllOrigins GET (api.allorigins.win/get) — returns JSON
+       *      wrapper with a "contents" field that may be a data URI
+       *   3. AllOrigins RAW (api.allorigins.win/raw) — returns raw text
+       *
+       * Each proxy function takes a source URL and returns a Promise
+       * that resolves to the fetched text content.
+       * ===============================================================
+       */
+
+      // Proxy #1: Codetabs — simplest proxy, returns raw response body
       async function fetchTextViaCodetabs(sourceUrl) {
         var proxyUrl = 'https://api.codetabs.com/v1/proxy/?quest=' + encodeURIComponent(sourceUrl);
         var response = await fetch(proxyUrl, { cache: 'no-store' });
@@ -541,6 +795,8 @@
         return response.text();
       }
 
+      // Proxy #2: AllOrigins GET endpoint — returns JSON with a "contents" field
+      // that may be a data URI (base64 or percent-encoded), so we decode it
       async function fetchTextViaAllOriginsGet(sourceUrl) {
         var proxyUrl = 'https://api.allorigins.win/get?url=' + encodeURIComponent(sourceUrl);
         var response = await fetch(proxyUrl, { cache: 'no-store' });
@@ -549,6 +805,7 @@
         }
 
         var payload = await response.json();
+        // Decode the contents field (handles data URI wrapping)
         var decoded = decodeDataPayload(payload.contents || '');
         if (!decoded) {
           throw new Error('AllOrigins/get empty payload');
@@ -556,6 +813,7 @@
         return decoded;
       }
 
+      // Proxy #3: AllOrigins RAW endpoint — returns the proxied content directly
       async function fetchTextViaAllOriginsRaw(sourceUrl) {
         var proxyUrl = 'https://api.allorigins.win/raw?url=' + encodeURIComponent(sourceUrl);
         var response = await fetch(proxyUrl, { cache: 'no-store' });
@@ -566,7 +824,11 @@
         return response.text();
       }
 
-      // Proxy fallback chain for feeds without permissive CORS headers.
+      /*
+       * Orchestrator: tries each proxy in order. If Codetabs fails, tries
+       * AllOrigins/get; if that also fails, tries AllOrigins/raw.
+       * The last attempt is not caught, so its rejection propagates to the caller.
+       */
       async function fetchTextWithFallbacks(sourceUrl) {
         try {
           return await fetchTextViaCodetabs(sourceUrl);
@@ -579,6 +841,15 @@
         }
       }
 
+      /*
+       * ---------------------------------------------------------------
+       * FRED Data Fetcher: fetchFredSeries
+       * Constructs the FRED CSV export URL for a given series ID and
+       * fetches it through the CORS proxy chain. The CSV is then parsed
+       * into an array of {date, value} data points. Throws if no valid
+       * data points are found after parsing.
+       * ---------------------------------------------------------------
+       */
       async function fetchFredSeries(seriesId) {
         var sourceUrl = 'https://fred.stlouisfed.org/graph/fredgraph.csv?id=' + encodeURIComponent(seriesId);
         var csv = await fetchTextWithFallbacks(sourceUrl);
@@ -590,6 +861,15 @@
         return points;
       }
 
+      /*
+       * ---------------------------------------------------------------
+       * Utility: findLatestAndPrevious
+       * Given a chronologically sorted array of data points, extracts
+       * the most recent observation (last element) and the one before it.
+       * The "previous" value is used to compute the period-over-period
+       * change displayed on each card.
+       * ---------------------------------------------------------------
+       */
       function findLatestAndPrevious(points) {
         if (!points.length) return { latest: null, previous: null };
         var latest = points[points.length - 1];
@@ -597,13 +877,39 @@
         return { latest: latest, previous: previous };
       }
 
+      /*
+       * ---------------------------------------------------------------
+       * Derived Indicator: findCpiYoY (CPI Year-over-Year Inflation)
+       * ---------------------------------------------------------------
+       * This is not a FRED series — it is calculated from the CPIAUCSL
+       * (Consumer Price Index for All Urban Consumers) time series.
+       *
+       * Algorithm:
+       *   1. Take the most recent CPI observation (e.g. June 2024).
+       *   2. Walk backward through the data to find the observation
+       *      closest to exactly 12 months prior (e.g. June 2023).
+       *   3. Compute: YoY% = ((latest / prior) - 1) * 100
+       *
+       * This gives the headline year-over-year inflation rate that is
+       * commonly cited in economic reporting.
+       *
+       * Returns an object with {latest: {date, value}, previous: null}
+       * matching the shape expected by updateCard(), or null if the
+       * calculation cannot be performed (insufficient data history).
+       * ---------------------------------------------------------------
+       */
       function findCpiYoY(points) {
         if (!points.length) return null;
+
+        // Grab the most recent CPI value
         var latest = points[points.length - 1];
         var latestDate = new Date(latest.date + 'T00:00:00');
+
+        // Calculate the target date 12 months ago
         var target = new Date(latestDate);
         target.setFullYear(target.getFullYear() - 1);
 
+        // Walk backward to find the first observation at or before the target date
         var prior = null;
         for (var i = points.length - 2; i >= 0; i -= 1) {
           var pointDate = new Date(points[i].date + 'T00:00:00');
@@ -615,6 +921,7 @@
 
         if (!prior) return null;
 
+        // YoY inflation = percentage change over 12 months
         return {
           latest: {
             date: latest.date,
@@ -624,10 +931,35 @@
         };
       }
 
-      // Build placeholder cards first, then hydrate each card asynchronously.
+      /*
+       * ===============================================================
+       * Main Indicator Loading Pipeline: loadIndicators
+       * ===============================================================
+       * 1. Creates empty placeholder cards for ALL defined indicators
+       *    (including derived ones) so the grid layout is established
+       *    immediately, before any network requests complete.
+       *
+       * 2. Filters out derived indicators (they have no FRED endpoint)
+       *    and fires off parallel fetch requests for every remaining
+       *    series using Promise.allSettled (so one failure does not
+       *    abort the others).
+       *
+       * 3. For each fulfilled promise, extracts the latest + previous
+       *    data points and hydrates the corresponding card. Records
+       *    the CPI data array for use by the YoY derivation.
+       *
+       * 4. After all direct fetches settle, computes the CPI YoY
+       *    inflation rate from the CPIAUCSL data (if available) and
+       *    updates that derived card.
+       *
+       * 5. Updates the status line with "X / Y indicators updated."
+       * ===============================================================
+       */
       async function loadIndicators() {
+        // Step 1: Build all placeholder cards in DOM order
         indicatorDefinitions.forEach(createIndicatorCard);
 
+        // Step 2: Fetch all non-derived series in parallel
         var nonDerived = indicatorDefinitions.filter(function (def) { return !def.derived; });
         var results = await Promise.allSettled(nonDerived.map(function (definition) {
           return fetchFredSeries(definition.id).then(function (points) {
@@ -638,6 +970,7 @@
         var loaded = 0;
         var cpiPoints = null;
 
+        // Step 3: Process each result — hydrate card or show error
         results.forEach(function (result, index) {
           var definition = nonDerived[index];
           if (result.status !== 'fulfilled') {
@@ -646,6 +979,8 @@
           }
 
           var payload = result.value;
+
+          // Stash CPI data for the YoY derivation below
           if (definition.id === 'CPIAUCSL') {
             cpiPoints = payload.points;
           }
@@ -660,6 +995,7 @@
           loaded += 1;
         });
 
+        // Step 4: Compute and display the derived CPI Year-over-Year card
         var cpiYoyDefinition = indicatorDefinitions.find(function (def) { return def.id === 'CPI_YOY'; });
         if (cpiYoyDefinition) {
           if (cpiPoints) {
@@ -675,14 +1011,25 @@
           }
         }
 
+        // Step 5: Update the status text with the final tally
         indicatorStatus.textContent = loaded + ' / ' + indicatorDefinitions.length + ' indicators updated.';
       }
 
+      /*
+       * ===============================================================
+       * Mises RSS Feed — Helper Utilities
+       * ===============================================================
+       */
+
+      // Strip HTML tags from a string (used to sanitize RSS <title> content
+      // which sometimes contains encoded HTML entities or markup)
       function stripHtml(html) {
         var parsed = new DOMParser().parseFromString(html || '', 'text/html');
         return (parsed.body.textContent || '').trim();
       }
 
+      // Classify a Mises article URL into a human-readable category tag
+      // displayed on each news item (e.g. "Mises Wire", "Podcast", "Article")
       function classifyNewsItem(link) {
         if (!link) return 'Update';
         if (link.indexOf('/mises-wire/') !== -1) return 'Mises Wire';
@@ -690,6 +1037,10 @@
         return 'Article';
       }
 
+      /*
+       * Fallback news renderer: shown when both RSS parsing strategies fail.
+       * Displays two static links to browse Mises content manually.
+       */
       function renderFallbackNews() {
         newsList.textContent = '';
         var fallbacks = [
@@ -710,13 +1061,24 @@
         });
       }
 
+      /*
+       * ---------------------------------------------------------------
+       * RSS XML Parser: parseRssItems
+       * Parses raw RSS/XML text into an array of {title, link, pubDate}
+       * objects. Uses DOMParser to parse the XML, then queries all <item>
+       * elements and extracts their child tags. Items missing a title or
+       * link are filtered out.
+       * ---------------------------------------------------------------
+       */
       function parseRssItems(xmlText) {
         var parsed = new DOMParser().parseFromString(xmlText, 'application/xml');
+        // Check for XML parse errors (malformed feed)
         if (parsed.querySelector('parsererror')) {
           throw new Error('Malformed RSS XML');
         }
 
         return Array.from(parsed.querySelectorAll('item')).map(function (item) {
+          // Helper to read a child tag's text content
           function read(tagName) {
             var node = item.querySelector(tagName);
             return node ? node.textContent.trim() : '';
@@ -732,6 +1094,16 @@
         });
       }
 
+      /*
+       * ---------------------------------------------------------------
+       * News Renderer: renderNewsItems
+       * Takes an array of news item objects and builds DOM <li> elements
+       * inside the news list <ul>. Each item shows:
+       *   - A clickable headline link (sanitized via stripHtml)
+       *   - A metadata span with the article category and formatted date
+       * Limited to the 10 most recent items.
+       * ---------------------------------------------------------------
+       */
       function renderNewsItems(items) {
         newsList.textContent = '';
         items.slice(0, 10).forEach(function (item) {
@@ -751,6 +1123,15 @@
         });
       }
 
+      /*
+       * ---------------------------------------------------------------
+       * Fallback News Loader: loadNewsViaRss2Json
+       * If direct RSS XML parsing fails (proxy returned HTML error page,
+       * or the XML was malformed), this fallback uses the rss2json.com
+       * API which converts any RSS feed into a clean JSON response.
+       * The JSON payload has a "status" field and an "items" array.
+       * ---------------------------------------------------------------
+       */
       async function loadNewsViaRss2Json(feedUrl) {
         var rss2jsonUrl = 'https://api.rss2json.com/v1/api.json?rss_url=' + encodeURIComponent(feedUrl);
         var response = await fetch(rss2jsonUrl, { cache: 'no-store' });
@@ -766,10 +1147,26 @@
         renderNewsItems(payload.items);
       }
 
-      // Prefer direct RSS parse; fall back to rss2json when raw parsing fails.
+      /*
+       * ---------------------------------------------------------------
+       * Main News Loading Pipeline: loadNews
+       * ---------------------------------------------------------------
+       * Strategy (two-tier fallback):
+       *   1. Fetch the raw RSS XML from mises.org/feed through the CORS
+       *      proxy chain, then parse it with DOMParser as XML.
+       *   2. If that fails (network error, XML parse error, or zero items),
+       *      fall back to rss2json.com which handles the RSS parsing
+       *      server-side and returns clean JSON.
+       *
+       * If both strategies succeed, the news status is updated to
+       * "Latest headlines from Mises." If both fail, the caller
+       * (Promise.allSettled handler) will show the fallback links.
+       * ---------------------------------------------------------------
+       */
       async function loadNews() {
         var feedUrl = 'https://mises.org/feed';
         try {
+          // Primary: fetch raw XML via CORS proxy and parse locally
           var xmlText = await fetchTextWithFallbacks(feedUrl);
           var xmlItems = parseRssItems(xmlText);
           if (!xmlItems.length) {
@@ -778,26 +1175,42 @@
           renderNewsItems(xmlItems);
           newsStatus.textContent = 'Latest headlines from Mises.';
         } catch (rssXmlError) {
+          // Fallback: use rss2json.com for server-side RSS-to-JSON conversion
           await loadNewsViaRss2Json(feedUrl);
           newsStatus.textContent = 'Latest headlines from Mises.';
         }
       }
 
+      /*
+       * ===============================================================
+       * Bootstrap: kick off both data pipelines in parallel
+       * ===============================================================
+       * Promise.allSettled ensures that even if one pipeline fails
+       * completely, the other can still succeed and render its data.
+       * Once both settle:
+       *   - If the news pipeline rejected, show fallback links
+       *   - Update the "last refreshed" timestamp in the hero terminal
+       * ===============================================================
+       */
       Promise.allSettled([
         loadIndicators(),
         loadNews()
       ]).then(function (results) {
+        // If the news pipeline failed entirely, show static fallback links
         if (results[1].status !== 'fulfilled') {
           newsStatus.textContent = 'News feed unavailable.';
           renderFallbackNews();
         }
 
+        // Update the terminal header with the current time
         refreshText.textContent = 'Updated ' + new Date().toLocaleTimeString([], { hour: 'numeric', minute: '2-digit' });
       }).catch(function () {
         refreshText.textContent = 'Update failed';
       });
     })();
   </script>
+
+  <!-- Ticker animation controller: manages the CSS scroll animation for the ticker tape -->
   <script src="ticker.js"></script>
 </body>
 </html>

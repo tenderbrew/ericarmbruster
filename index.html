@@ -1,16 +1,38 @@
-<!-- File Guide: index.html. Homepage layout: shared navigation, hero stage, room cards, bookshelf links, and a random quote script. -->
+<!--
+  index.html — Homepage
+  ======================
+  The main landing page for ericarmbruster.com. Designed as a personal archive
+  with a warm, brown/wood-toned aesthetic.
+
+  Layout (CSS Grid with named areas defined in styles.css):
+    Row 1: "archive archive archive" — full-width banner with site title
+    Row 2: "intro ledger quote" — three "room" cards side by side
+    Row 3: "shelves shelves shelves" — full-width bookshelf with interest links
+
+  Room cards:
+    - Intro (House Register) — quick links to About, Projects, Correspondence
+    - Ledger (Hector portrait) — photo of Hector the dog in a gilded frame
+    - Quote (CRT display) — random Lord of the Rings quote on a skeuomorphic TV
+
+  Bookshelf:
+    - Six clickable book spines linking to interest pages (Video Games, Film,
+      Economics, Self-Hosting, Seymour, Bitcoin)
+
+  Stylesheet: styles.css only (no page-specific stylesheet needed)
+  Scripts: drawer.js (nav drawer) + ticker.js (market ticker) + inline quote script
+  Body class: .home-page
+-->
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <!-- Head section: metadata, social tags, fonts, stylesheets, and analytics bootstrapping. -->
-  
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <title>Eric Armbruster</title>
 
-  
+  <!-- SEO and social sharing metadata. -->
   <meta name="description" content="Personal website of Eric M. Armbruster">
+  <!-- Very dark brown theme color to match the homepage's wood-tone palette. -->
   <meta name="theme-color" content="#070503">
   <link rel="canonical" href="https://www.ericarmbruster.com/">
   <meta property="og:title" content="Eric Armbruster">
@@ -23,30 +45,37 @@
   <meta name="twitter:description" content="Personal website of Eric M. Armbruster">
   <meta name="twitter:image" content="https://www.ericarmbruster.com/images/hector-0001.png">
 
-  
   <link rel="icon" href="images/hector-favicon.png" type="image/png">
 
-  
+  <!-- Google Fonts — the homepage uses:
+       - Cinzel Decorative: ornate display serif for the archive banner title
+       - IM Fell English / SC: period-authentic serif for headings
+       - Libre Caslon Display/Text: elegant serif for body text and cards
+       - Share Tech Mono: monospace for the CRT screen text
+       - Herr Von Muellerhoff: ornate cursive for decorative flourishes
+       - Silkscreen: pixel font for retro/gaming UI elements -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Almendra+SC&family=Cinzel+Decorative:wght@700&family=IM+Fell+English&family=IM+Fell+English+SC&family=Libre+Caslon+Display&family=Libre+Caslon+Text:ital,wght@0,400;0,700;1,400&family=Pirata+One&family=Share+Tech+Mono&family=Herr+Von+Muellerhoff&family=Silkscreen:wght@400;700&family=Tangerine:wght@700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@700&family=IM+Fell+English&family=IM+Fell+English+SC&family=Libre+Caslon+Display&family=Libre+Caslon+Text:ital,wght@0,400;0,700;1,400&family=Share+Tech+Mono&family=Herr+Von+Muellerhoff&family=Silkscreen:wght@400;700&display=swap" rel="stylesheet">
 
-  
+  <!-- Only the shared stylesheet — the homepage doesn't have a page-specific CSS file. -->
   <link rel="stylesheet" href="styles.css">
-  <!-- Analytics library: loaded async so it does not block rendering. -->
+
+  <!-- Google Analytics -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-5ZTHJXDR9V"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
     function gtag(){dataLayer.push(arguments);}
     gtag('js', new Date());
-
     gtag('config', 'G-5ZTHJXDR9V');
   </script>
 </head>
 
 <body class="home-page">
 
-  <!-- Scrolling ticker tape: live market data. -->
+  <!-- ═══════════════════════════════════════════════════════════════════════
+       SCROLLING TICKER TAPE — identical across all pages.
+       ticker.js replaces placeholder values with live market data. -->
   <div class="ticker-tape" aria-hidden="true">
     <div class="ticker-track">
       <span class="tick" data-ticker="DJIA">DJIA 38,547 &#9650;0.42%</span>
@@ -69,6 +98,7 @@
       <span class="tick-sep">&bull;</span>
       <span class="tick" data-ticker="FEDFUNDS">FED FUNDS 5.33%</span>
       <span class="tick-sep">&bull;</span>
+      <!-- Duplicate set for seamless infinite scroll. -->
       <span class="tick" data-ticker="DJIA">DJIA 38,547 &#9650;0.42%</span>
       <span class="tick-sep">&bull;</span>
       <span class="tick" data-ticker="SP500">S&amp;P 500 5,234 &#9650;0.18%</span>
@@ -92,9 +122,8 @@
     </div>
   </div>
 
-  <!-- Shared primary navigation. Drawer behavior is provided by drawer.js. -->
-
-
+  <!-- ═══════════════════════════════════════════════════════════════════════
+       PRIMARY NAVIGATION — shared across all pages. -->
   <nav class="study-nav" aria-label="Primary">
     <div class="container nav-shell">
       <a href="index.html" class="brand-mark" aria-label="Eric Armbruster home">Eric M. Armbruster</a>
@@ -140,20 +169,32 @@
     </div>
   </nav>
 
-  <!-- Main page content. -->
+  <!-- ═══════════════════════════════════════════════════════════════════════
+       MAIN CONTENT — HOMEPAGE GRID
+       ═══════════════════════════════════════════════════════════════════════
+       The .home-rooms container is a CSS Grid with named template areas.
+       On desktop: 3 columns × 3 rows (archive spanning top, 3 rooms in
+       the middle, bookshelf spanning bottom). On mobile: single column. -->
   <main class="container home-rooms">
 
-    <!-- Archive header spanning full width. -->
+    <!-- ── Row 1: Archive Banner ─────────────────────────────────────────
+         Full-width header spanning all three columns. The .stage-copy
+         element is styled with a dark wood-grain background, gilt border
+         pseudo-elements, and the site's ornate title typography. -->
     <header class="room room-archive">
       <article class="stage-copy" aria-label="Personal archive journal">
         <h1>
+          <!-- Title split into two spans so CSS can style the lines
+               independently (different sizes, letter-spacing, colors). -->
           <span class="archive-line archive-line--top">The Personal Archive of</span>
           <span class="archive-line archive-line--bottom">Eric M. Armbruster</span>
         </h1>
       </article>
     </header>
 
-    <!-- Room 1: quick profile/utility links. -->
+    <!-- ── Row 2, Column 1: House Register ───────────────────────────────
+         A card with quick links to the main utility pages. Styled as an
+         old ledger/register book with a parchment background texture. -->
     <section class="room room-intro">
       <article class="room-card register-card">
         <h2>House Register</h2>
@@ -165,31 +206,57 @@
       </article>
     </section>
 
-
-    <!-- Room 2: Hector portrait. -->
+    <!-- ── Row 2, Column 2: Hector Portrait ──────────────────────────────
+         A photo of Hector (the dog) displayed in a gilded picture frame
+         with a brass nameplate plaque beneath. The <figure> element is
+         semantically correct for an image with a caption. The image uses
+         object-fit: cover to crop to the frame dimensions. -->
     <section class="room room-ledger">
       <figure class="room-card hector-card">
         <div class="hector-frame">
+          <!-- loading="lazy" defers image download until the user scrolls near.
+               decoding="async" prevents the image decode from blocking the
+               main thread during page load. -->
           <img src="images/hector-0001.webp" alt="Hector the dog in the snow" loading="lazy" decoding="async">
         </div>
         <figcaption class="hector-plaque">Hector, Winter Sentinel</figcaption>
       </figure>
     </section>
 
+    <!-- ── Row 2, Column 3: CRT Quote Display ────────────────────────────
+         A skeuomorphic CRT television that displays a random Lord of the
+         Rings quote (selected by the inline script at the bottom of <body>).
 
-    <!-- Room 3: CRT component that receives a random quote at runtime. -->
+         Visual structure:
+         - quote-crt: outer TV housing
+         - quote-crt-shell: the TV chassis
+         - crt-badge: "Trinitron" brand label with a small LED light
+         - crt-screen: the display bezel
+         - crt-screen-surface: the actual screen area (CSS adds scanlines,
+           phosphor glow, and glass reflection via pseudo-elements)
+         - crt-controls: row of decorative switches and knobs at the bottom
+
+         The #random-quote paragraph is empty in HTML — the inline script
+         below populates it with a quote on page load. -->
     <section class="room room-quote">
       <article class="quote-crt" aria-label="Quoted reflection on CRT display">
         <div class="quote-crt-shell">
+          <!-- Brand badge with a tiny LED indicator light. -->
           <div class="crt-badge" aria-hidden="true">
             <span class="crt-badge-mark">Trinitron</span>
             <span class="crt-badge-light"></span>
           </div>
+          <!-- Screen area — pseudo-elements add the CRT visual effects:
+               ::before creates horizontal scanlines (repeating 2px gradient)
+               ::after creates the curved glass reflection (radial gradient) -->
           <div class="crt-screen">
             <div class="crt-screen-surface">
               <p id="random-quote"></p>
             </div>
           </div>
+          <!-- Decorative TV controls — switches and knobs along the bottom
+               of the CRT housing. Each <span> is styled as a small tactile
+               element via CSS (box-shadows, borders, gradients). -->
           <div class="crt-controls" aria-hidden="true">
             <div class="crt-switches">
               <span></span>
@@ -210,12 +277,32 @@
       </article>
     </section>
 
-    
-    <!-- Room 4: bookshelf links into themed interest pages. -->
+    <!-- ── Row 3: Interests Bookshelf ────────────────────────────────────
+         A full-width bookshelf spanning all three columns. Each "book" is
+         a clickable link to an interest page. Books are arranged on wooden
+         shelf planks in two rows:
+           Row 1 (3 books): Video Games, Film, Economics
+           Row 2 (3 books): Self-Hosting, Seymour, Bitcoin
+
+         Each book has five visual layers:
+         - book-index: small catalog number on the spine (e.g., "VG-01")
+         - book-spine-title: title text on the spine (visible by default)
+         - book-cover: the front cover that reveals on hover (3D rotation)
+         - book-pages: edge of pages visible between spine and cover
+         - book-slip: "enter shelf" label that slides up on hover
+
+         The shelf-plank dividers between rows create the illusion of wooden
+         shelf boards. Modifier classes (--umber, --copper, --claret, etc.)
+         set each book's unique color scheme.
+
+         The id="interests" enables the nav drawer's "interests" button to
+         scroll to this section as an anchor link. -->
     <section id="interests" class="room room-shelves">
+      <!-- Decorative top edge of the bookshelf. -->
       <div class="bookshelf-top" aria-hidden="true"></div>
 
       <div class="bookshelf" aria-label="Interests bookshelf">
+        <!-- First shelf row — three books side by side. -->
         <div class="bookshelf-row bookshelf-row--triple">
           <a href="video-games.html" class="shelf-book shelf-book--umber">
             <span class="book-index" aria-hidden="true">VG-01</span>
@@ -228,6 +315,8 @@
             <span class="book-pages" aria-hidden="true"></span>
             <span class="book-slip">enter shelf</span>
           </a>
+          <!-- Mobile plank — on small screens, each book gets its own shelf
+               board underneath since they stack vertically. -->
           <div class="shelf-plank shelf-plank--mobile" aria-hidden="true"></div>
 
           <a href="film.html" class="shelf-book shelf-book--copper">
@@ -257,8 +346,10 @@
           <div class="shelf-plank shelf-plank--mobile" aria-hidden="true"></div>
         </div>
 
+        <!-- Wooden shelf plank divider between the two rows. -->
         <div class="shelf-plank" aria-hidden="true"></div>
 
+        <!-- Second shelf row — three taller books (--tall modifier). -->
         <div class="bookshelf-row bookshelf-row--single">
           <a href="self-hosting.html" class="shelf-book shelf-book--olive shelf-book--tall">
             <span class="book-index" aria-hidden="true">SH-03</span>
@@ -300,24 +391,38 @@
           <div class="shelf-plank shelf-plank--mobile" aria-hidden="true"></div>
         </div>
 
+        <!-- Bottom shelf plank. -->
         <div class="shelf-plank" aria-hidden="true"></div>
       </div>
     </section>
 
   </main>
-  <!-- Shared footer. -->
+
   <footer>
     <div class="container">
       &copy; 2026 Eric Armbruster
     </div>
   </footer>
-  <!-- Shared drawer controller for desktop/mobile navigation. -->
+
+  <!-- Shared nav drawer controller. -->
   <script src="drawer.js"></script>
 
-  
+  <!-- ═══════════════════════════════════════════════════════════════════════
+       INLINE QUOTE SCRIPT — Random LOTR Quote for the CRT Display
+       ═══════════════════════════════════════════════════════════════════════
+       Kept inline (not in a separate .js file) to avoid an extra HTTP request
+       for such a small script. It runs synchronously after the DOM is parsed
+       (since the <script> tag is at the bottom of <body>).
+
+       The quotes array holds Lord of the Rings quotes attributed to Samwise
+       Gamgee. On each page load, one is selected at random using
+       Math.random() and injected into the #random-quote paragraph inside
+       the CRT screen.
+
+       The HTML entities (&ldquo; &rdquo; &mdash;) render as typographic
+       quotation marks and em dash for proper typography. -->
   <script>
-    // Home CRT quote pool. Keeping this inline avoids an extra network request.
-    const quotes = [
+    var quotes = [
       { text: "There is some good in this world, and it is worth fighting for.", source: "The Fellowship of the Ring" },
       { text: "It's the job that's never started as takes longest to finish.", source: "The Fellowship of the Ring" },
       { text: "By rights we shouldn't even be here. But we are.", source: "The Fellowship of the Ring" },
@@ -329,15 +434,17 @@
       { text: "I can see the light ahead, Mr. Frodo. It's coming to us.", source: "The Return of the King" }
     ];
 
-    // Choose one quote each page load and render it into the CRT display.
-    const q = quotes[Math.floor(Math.random() * quotes.length)];
+    /* Pick a random quote from the array. Math.random() returns 0-0.999...,
+     * multiplied by the array length and floored to get a valid index. */
+    var q = quotes[Math.floor(Math.random() * quotes.length)];
+
+    /* Inject the formatted quote into the CRT screen. The innerHTML includes
+     * typographic quotes, a line break, and an attributed source line. */
     document.getElementById("random-quote").innerHTML =
       "&ldquo;" + q.text + "&rdquo;<br><small>&mdash; Samwise Gamgee, <em>" + q.source + "</em></small>";
   </script>
+
+  <!-- Shared ticker script — fetches live market data for the scrolling bar. -->
   <script src="ticker.js"></script>
 </body>
 </html>
-
-
-
-

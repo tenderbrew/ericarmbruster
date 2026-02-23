@@ -1,30 +1,81 @@
-<!-- File Guide: bitcoin.html. Skeuomorphic bitcoin dashboard with live price, 90D performance, news, reading queue, and recent blocks. -->
+<!--
+  ============================================================================
+  bitcoin.html — Bitcoin Dashboard Page
+  ============================================================================
+  This is the Bitcoin "room" on ericarmbruster.com. It renders a skeuomorphic
+  control-board dashboard with five live data panels:
+
+    1. Price Panel      — Current BTC spot price and 24H/7D/30D percentage moves
+    2. Performance Panel — SVG line+area chart of the last 90 days of daily closes
+    3. News Panel        — RSS-sourced Bitcoin headlines from CoinDesk
+    4. Recent Blocks     — The latest mined blocks from the mempool.space API
+    5. Recommended       — A static curated reading list (educational, technical, cultural)
+
+  Layout is driven by CSS Grid defined in bitcoin-styles.css, scoped under
+  the body class ".bitcoin-page". The inline <script> at the bottom runs a
+  self-executing data pipeline that fetches from three external APIs, transforms
+  the responses, and populates the DOM. Fallback data is shown if any fetch fails.
+
+  Color identity: deep indigo/purple (#0b0e1a background, #9339f4 accent).
+  ============================================================================
+-->
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <!-- Head section: metadata, social tags, fonts, stylesheets, and analytics bootstrapping. -->
+  <!--
+    Head section: character encoding, responsive viewport, page title,
+    SEO meta description, Open Graph / Twitter Card social tags, favicon,
+    Google Fonts preconnect + stylesheet imports, and Google Analytics bootstrap.
+  -->
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Bitcoin - Eric Armbruster</title>
   <meta name="description" content="A hand-crafted bitcoin room with live price data, performance timeline, recent blocks, and curated reading.">
   <meta name="theme-color" content="#0b0e1a">
   <link rel="canonical" href="https://www.ericarmbruster.com/bitcoin.html">
+
+  <!-- Open Graph tags for link previews on Facebook, Discord, Slack, etc. -->
   <meta property="og:title" content="Bitcoin - Eric Armbruster">
   <meta property="og:description" content="A hand-crafted bitcoin room with live price data, performance timeline, recent blocks, and curated reading.">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://www.ericarmbruster.com/bitcoin.html">
   <meta property="og:image" content="https://www.ericarmbruster.com/images/hector-0001.png">
+
+  <!-- Twitter Card tags for rich link previews on Twitter/X. -->
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="Bitcoin - Eric Armbruster">
   <meta name="twitter:description" content="A hand-crafted bitcoin room with live price data, performance timeline, recent blocks, and curated reading.">
   <meta name="twitter:image" content="https://www.ericarmbruster.com/images/hector-0001.png">
+
+  <!-- Favicon: site-wide mascot icon used across all pages. -->
   <link rel="icon" href="images/hector-favicon.png" type="image/png">
+
+  <!--
+    Google Fonts: preconnect to both the CSS origin and the static font file
+    origin (fonts.gstatic.com) for faster initial load. The font families
+    loaded here are shared across the site: Libre Caslon Display (headings),
+    Herr Von Muellerhoff (decorative script), Libre Caslon Text (body),
+    IBM Plex Sans Condensed (UI labels), IBM Plex Mono (monospace/terminal text).
+  -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Libre+Caslon+Display&family=Herr+Von+Muellerhoff&family=Libre+Caslon+Text:ital,wght@0,400;0,700;1,400&family=IBM+Plex+Sans+Condensed:wght@400;500;700&family=IBM+Plex+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+
+  <!-- Shared base stylesheet: handles nav, footer, ticker, and layout scaffolding. -->
   <link rel="stylesheet" href="styles.css">
+
+  <!--
+    Page-scoped stylesheet: all Bitcoin dashboard visuals — panel chrome,
+    grid layout, chart colors, block list styling, brass-rail header.
+    Scoped under body.bitcoin-page so it cannot leak into other pages.
+  -->
   <link rel="stylesheet" href="bitcoin-styles.css">
-  <!-- Analytics library: loaded async so it does not block rendering. -->
+
+  <!--
+    Google Analytics (GA4): loaded with async to avoid blocking the render.
+    The inline script below initializes the dataLayer and sends the initial
+    pageview config event to the G-5ZTHJXDR9V property.
+  -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-5ZTHJXDR9V"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
@@ -35,7 +86,15 @@
 </head>
 <body class="bitcoin-page">
 
-  <!-- Scrolling ticker tape: live market data. -->
+  <!--
+    Scrolling ticker tape: a horizontally-scrolling marquee of market quotes.
+    This component is shared across all site pages (economics, bitcoin, etc.).
+    The ticker-track duplicates its content once to create a seamless loop via
+    CSS animation. The actual values shown here are static placeholder text —
+    the live ticker.js script at the bottom of the page will overwrite these
+    spans with real-time data. aria-hidden="true" hides the decorative ticker
+    from screen readers.
+  -->
   <div class="ticker-tape" aria-hidden="true">
     <div class="ticker-track">
       <span class="tick" data-ticker="DJIA">DJIA 38,547 &#9650;0.42%</span>
@@ -58,6 +117,7 @@
       <span class="tick-sep">&bull;</span>
       <span class="tick" data-ticker="FEDFUNDS">FED FUNDS 5.33%</span>
       <span class="tick-sep">&bull;</span>
+      <!-- Duplicate set of tickers below creates the seamless infinite scroll effect. -->
       <span class="tick" data-ticker="DJIA">DJIA 38,547 &#9650;0.42%</span>
       <span class="tick-sep">&bull;</span>
       <span class="tick" data-ticker="SP500">S&amp;P 500 5,234 &#9650;0.18%</span>
@@ -81,26 +141,40 @@
     </div>
   </div>
 
-  <!-- Shared primary navigation. Drawer behavior is provided by drawer.js. -->
+  <!--
+    Primary site navigation — shared across all pages.
+    Contains: brand mark (home link), desktop nav links, social/contact icons,
+    mobile hamburger toggle, and the slide-down drawer with all page links.
+    Drawer open/close behavior is controlled by the shared drawer.js script
+    loaded near the bottom of the page. See drawer.js for implementation details.
+  -->
   <nav class="study-nav" aria-label="Primary">
     <div class="container nav-shell">
       <a href="index.html" class="brand-mark" aria-label="Eric Armbruster home">Eric M. Armbruster</a>
 
+      <!-- Desktop-only horizontal nav links; "interests" button opens the drawer. -->
       <div class="nav-links-desktop" aria-label="Primary links">
         <a href="about.html">about</a>
         <a href="projects.html">projects</a>
         <button class="drawer-toggle" type="button" aria-expanded="false" aria-controls="site-drawer" data-drawer-toggle>interests</button>
       </div>
 
+      <!-- Icon links: email, GitHub, LinkedIn — visible at all breakpoints. -->
       <div class="nav-icons" aria-label="Contact links">
         <a href="mailto:eric.m.armbruster@gmail.com" aria-label="Email Eric"><svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"><rect x="1.5" y="3.5" width="13" height="9"/><path d="M1.5 3.5L8 9l6.5-5.5"/></svg></a>
         <a href="https://github.com/tenderbrew" target="_blank" rel="noopener" aria-label="Eric on GitHub"><svg width="16" height="16" viewBox="0 0 16 16" fill="currentColor"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0016 8c0-4.42-3.58-8-8-8z"/></svg></a>
         <a href="https://www.linkedin.com/in/ericmarmbruster/" target="_blank" rel="noopener" aria-label="Eric on LinkedIn"><svg width="16" height="16" viewBox="0 0 16 16" fill="currentColor"><path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.016-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.52 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.174-.431.569-.878 1.232-.878.87 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016l.016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z"/></svg></a>
       </div>
 
+      <!-- Mobile-only hamburger button; toggles the same drawer as the desktop "interests" button. -->
       <button class="drawer-toggle nav-mobile-toggle" type="button" aria-expanded="false" aria-controls="site-drawer" data-drawer-toggle>menu</button>
     </div>
 
+    <!--
+      Slide-down navigation drawer: contains all page links organized into
+      three groups — Main Rooms, Interests, and Elsewhere (external links).
+      Visibility is toggled by drawer.js adding/removing classes.
+    -->
     <div class="site-drawer" id="site-drawer">
       <div class="container drawer-inner">
         <section class="drawer-group">
@@ -127,10 +201,25 @@
     </div>
   </nav>
 
-  <!-- Asymmetrical control-board layout unique to the bitcoin room. -->
+  <!--
+    ========================================================================
+    MAIN CONTENT: Bitcoin Control-Board Dashboard
+    ========================================================================
+    The "btc-desk" layout uses CSS Grid (defined in bitcoin-styles.css) to
+    arrange panels in an asymmetrical control-board aesthetic. The grid has
+    two main rows:
+      Row 1: brass status rail (full width), price panel (left), chart panel (right)
+      Row 2: three panels side-by-side — news, recent blocks, recommended reading
+    All live data is injected by the inline JavaScript at the bottom of this file.
+  -->
   <main class="btc-desk">
     <div class="container btc-desk-grid">
-      <!-- Brass status rail + links. -->
+
+      <!--
+        Brass status rail: a decorative terminal-style header bar spanning the
+        full grid width. Shows a blinking cursor prompt and quick-access links
+        to the Bitcoin whitepaper, mempool explorer, and Bitcoin Core download.
+      -->
       <header class="btc-rail" aria-labelledby="btc-page-title">
         <div class="btc-rail-inner">
           <p class="btc-rail-label"><span class="btc-prompt">&gt;</span> Bitcoin Terminal<span class="btc-cursor">_</span></p>
@@ -141,6 +230,16 @@
           </div>
         </div>
       </header>
+
+      <!--
+        Price panel: displays the current BTC spot price in USD plus percentage
+        changes over three time windows (24 hours, 7 days, 30 days).
+        The "Last Sync" row shows when data was last fetched.
+        All <dd> elements start with placeholder text ("$--" / "--") and are
+        populated by the loadMarketData() function in the inline JS below.
+        The status <p> acts as a live region (role="status") to announce
+        loading state to assistive technology.
+      -->
       <aside class="btc-panel btc-price-panel" aria-labelledby="btc-price-title">
         <div class="btc-panel-head">
           <h2 id="btc-price-title">Price</h2>
@@ -170,6 +269,22 @@
         </dl>
       </aside>
 
+      <!--
+        Performance chart panel: renders an SVG line+area chart showing the
+        last 90 days of daily BTC closing prices from CryptoCompare.
+
+        The SVG element has a fixed viewBox of 720x280 and uses two <path>
+        elements:
+          - btc-chart-line: the polyline tracing daily close prices
+          - btc-chart-area: the same polyline closed into a filled polygon
+            extending down to the chart baseline, filled with a vertical
+            linear gradient (btc-area-grad) that fades from semi-transparent
+            purple to near-transparent.
+
+        The <dl> below the chart shows the start price, end price, 90-day
+        high, and 90-day low. All are populated by the renderChart() function
+        in the inline JS.
+      -->
       <article class="btc-panel btc-chart-panel" aria-labelledby="btc-chart-title">
         <div class="btc-panel-head">
           <h2 id="btc-chart-title">Performance</h2>
@@ -178,17 +293,25 @@
 
         <div class="btc-chart-shell">
           <svg id="btc-chart-svg" class="btc-chart-svg" viewBox="0 0 720 280" role="img" aria-label="Bitcoin 90 day price chart">
+            <!--
+              SVG gradient definition: used as the fill for the area path beneath
+              the chart line. Goes from 45% opacity purple at the top to 3% at the
+              bottom, creating a soft glow effect under the price curve.
+            -->
             <defs>
               <linearGradient id="btc-area-grad" x1="0" x2="0" y1="0" y2="1">
                 <stop offset="0%" stop-color="rgba(98, 37, 178, 0.45)"></stop>
                 <stop offset="100%" stop-color="rgba(98, 37, 178, 0.03)"></stop>
               </linearGradient>
             </defs>
+            <!-- Area fill path: closed polygon beneath the line, filled with the gradient. -->
             <path id="btc-chart-area" fill="url(#btc-area-grad)" d=""></path>
+            <!-- Line path: the actual price curve, stroked in accent purple. -->
             <path id="btc-chart-line" fill="none" stroke="#9339f4" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" d=""></path>
           </svg>
         </div>
 
+        <!-- Chart metadata: start/end prices and 90-day high/low, populated by renderChart(). -->
         <dl class="btc-chart-meta">
           <div>
             <dt>Start</dt>
@@ -207,10 +330,23 @@
             <dd id="btc-chart-low">$--</dd>
           </div>
         </dl>
+        <!-- Attribution link to the data source used for price history. -->
         <p class="btc-note">Source: <a href="https://www.cryptocompare.com/" target="_blank" rel="noopener">CryptoCompare</a></p>
       </article>
 
+      <!--
+        Bottom row: three panels arranged side-by-side on desktop (stacked on mobile).
+        Contains: news headlines, recent blocks, and recommended reading.
+      -->
       <div class="btc-desk-bottom">
+
+      <!--
+        News panel: displays up to 20 Bitcoin headlines fetched from the CoinDesk
+        RSS feed via the rss2json proxy API. Each headline is an <li> containing
+        an <a> (title + link) and a <span> (source name + publication date).
+        The list is populated by renderNews(); if the feed fetch fails, static
+        fallback links are shown instead.
+      -->
       <article class="btc-panel btc-news-panel" aria-labelledby="btc-news-title">
         <div class="btc-panel-head">
           <h2 id="btc-news-title">News</h2>
@@ -220,6 +356,14 @@
         <p class="btc-note">Source: <a href="https://www.coindesk.com/" target="_blank" rel="noopener">CoinDesk</a></p>
       </article>
 
+      <!--
+        Recent blocks panel: shows the latest 10 Bitcoin blocks fetched from the
+        mempool.space REST API (/api/blocks). Each block is rendered as an <li>
+        containing a link to the block on mempool.space (by block hash), plus
+        a relative timestamp ("5m ago") and absolute date. Populated by
+        renderBlocks(); falls back to three hardcoded recent block entries
+        if the API call fails.
+      -->
       <article class="btc-panel btc-block-panel" aria-labelledby="btc-block-title">
         <div class="btc-panel-head">
           <h2 id="btc-block-title">Recent</h2>
@@ -230,6 +374,14 @@
         <p class="btc-note">Source: <a href="https://mempool.space/api" target="_blank" rel="noopener">mempool.space API</a></p>
       </article>
 
+      <!--
+        Recommended reading panel: a static, hand-curated list of Bitcoin books
+        and resources organized into three categories:
+          - Educational: introductory books on Bitcoin's monetary significance
+          - Technical: developer-oriented books and interactive learning sites
+          - Culture & History: books about Bitcoin's social history and governance
+        This panel has no dynamic data — it is pure static HTML.
+      -->
       <article class="btc-panel btc-reading-panel" aria-labelledby="btc-reading-title">
         <h2 id="btc-reading-title">Recommended</h2>
         <div class="btc-reading-columns">
@@ -271,18 +423,61 @@
     </div>
   </main>
 
-  <!-- Shared footer. -->
+  <!-- Shared site footer: copyright line, consistent across all pages. -->
   <footer>
     <div class="container">
       &copy; 2026 Eric Armbruster
     </div>
   </footer>
 
-  <!-- Shared drawer controller for desktop/mobile navigation. -->
+  <!--
+    Shared drawer controller: handles open/close toggling of the navigation
+    drawer for both desktop and mobile. Loaded before the inline script
+    because it only manipulates nav elements, not dashboard data.
+  -->
   <script src="drawer.js"></script>
+
+  <!--
+    ========================================================================
+    INLINE JAVASCRIPT: Bitcoin Dashboard Data Pipeline
+    ========================================================================
+    This self-executing function (IIFE) is the engine that brings the dashboard
+    to life. It runs three independent async data-loading pipelines in parallel:
+
+      1. loadMarketData() — fetches spot price + 90-day history from CryptoCompare
+      2. loadNews()       — fetches Bitcoin headlines from CoinDesk RSS via rss2json
+      3. loadBlocks()     — fetches recent blocks from the mempool.space REST API
+
+    Each pipeline follows the same pattern:
+      a) Optionally render fallback/placeholder data immediately
+      b) Fetch from the external API with a timeout
+      c) Transform the response into a normalized internal shape
+      d) Pass the transformed data to a render function that builds DOM nodes
+      e) On failure, keep the fallback data and update the status message
+
+    No CORS proxy is needed because all three APIs serve permissive CORS headers.
+    ========================================================================
+  -->
   <script>
-    // Bitcoin data pipeline: spot + simple market data, 90D history, recent news, and latest blocks.
+    /*
+     * The entire pipeline is wrapped in an IIFE (Immediately Invoked Function
+     * Expression) to avoid polluting the global scope. All variables, helper
+     * functions, and async loaders are scoped to this closure.
+     */
     (function () {
+
+      /* ----------------------------------------------------------------
+       * DOM ELEMENT REFERENCES
+       * ----------------------------------------------------------------
+       * Grab references to all the placeholder elements that will be
+       * populated with live data. These are grouped by panel:
+       *   - Price panel: spot price, percentage changes, sync timestamp
+       *   - Chart panel: SVG path elements and metadata labels
+       *   - Block panel: status message and list container
+       *   - News panel: status message and list container
+       * ---------------------------------------------------------------- */
+
+      // Price panel elements
       var priceStatus = document.getElementById('btc-price-status');
       var priceValue = document.getElementById('btc-price-value');
       var change24 = document.getElementById('btc-change-24h');
@@ -290,19 +485,45 @@
       var change30 = document.getElementById('btc-change-30d');
       var lastSync = document.getElementById('btc-last-sync');
 
+      // Chart panel elements: the metadata <dd> labels and the two SVG <path> elements
       var chartStart = document.getElementById('btc-chart-start');
       var chartEnd = document.getElementById('btc-chart-end');
       var chartHigh = document.getElementById('btc-chart-high');
       var chartLow = document.getElementById('btc-chart-low');
-      var chartLine = document.getElementById('btc-chart-line');
-      var chartArea = document.getElementById('btc-chart-area');
+      var chartLine = document.getElementById('btc-chart-line');   // The stroke-only price line
+      var chartArea = document.getElementById('btc-chart-area');   // The gradient-filled area beneath
 
+      // Block panel elements
       var blockStatus = document.getElementById('btc-block-status');
       var blockList = document.getElementById('btc-block-list');
 
+      // News panel elements
       var newsStatus = document.getElementById('btc-news-status');
       var newsList = document.getElementById('btc-news-list');
 
+      /* ----------------------------------------------------------------
+       * API ENDPOINT REGISTRY
+       * ----------------------------------------------------------------
+       * All external API URLs are centralized here for easy maintenance.
+       *
+       * priceFull — CryptoCompare "pricemultifull" endpoint.
+       *   Returns full market data for BTC/USD including PRICE, CHANGEPCT24HOUR,
+       *   MKTCAP, TOTALVOLUME24H, etc. Response shape:
+       *     { RAW: { BTC: { USD: { PRICE: number, CHANGEPCT24HOUR: number, ... } } } }
+       *
+       * histoday — CryptoCompare "histoday" endpoint (v2).
+       *   Returns daily OHLCV candles for the last 90 days. Response shape:
+       *     { Data: { Data: [ { time: epochSec, close: number, ... }, ... ] } }
+       *
+       * news — rss2json.com proxy that converts the CoinDesk RSS feed into JSON.
+       *   CoinDesk does not offer a public JSON API, so rss2json is used as a
+       *   lightweight RSS-to-JSON conversion service. Response shape:
+       *     { status: "ok", items: [ { title, link, pubDate, ... }, ... ] }
+       *
+       * blocks — mempool.space REST API.
+       *   Returns the 15 most recently mined Bitcoin blocks. Response shape:
+       *     [ { id: "hex-hash", height: number, timestamp: epochSec, ... }, ... ]
+       * ---------------------------------------------------------------- */
       var endpoints = {
         priceFull: 'https://min-api.cryptocompare.com/data/pricemultifull?fsyms=BTC&tsyms=USD',
         histoday: 'https://min-api.cryptocompare.com/data/v2/histoday?fsym=BTC&tsym=USD&limit=90',
@@ -310,6 +531,15 @@
         blocks: 'https://mempool.space/api/blocks'
       };
 
+      /* ----------------------------------------------------------------
+       * FALLBACK / PLACEHOLDER DATA
+       * ----------------------------------------------------------------
+       * Shown immediately on page load and kept visible if API calls fail.
+       * This ensures the dashboard never appears completely empty.
+       * ---------------------------------------------------------------- */
+
+      // Fallback news items: two evergreen Bitcoin resources displayed if
+      // the CoinDesk RSS feed is unreachable or returns an error.
       var fallbackNews = [
         {
           title: 'The Bitcoin Standard Reading Thread',
@@ -325,12 +555,29 @@
         }
       ];
 
+      // Fallback block data: three real recent blocks shown if mempool.space
+      // is unreachable. Heights and hashes are from actual mined blocks.
       var fallbackBlocks = [
         { height: 937271, id: '00000000000000000000da583ef9da2814722dbbe54ae858ff5fdd706f928777', timestamp: 1771438210 },
         { height: 937270, id: '000000000000000000013f89dba10fd4bd5f15d0dd0f81df2d12ef16147f224f', timestamp: 1771437582 },
         { height: 937269, id: '0000000000000000000044ca9e5d0e9219e34ef3008221dc38a6dd9fbf5cefd3', timestamp: 1771436640 }
       ];
 
+      /* ----------------------------------------------------------------
+       * FORMATTING HELPER FUNCTIONS
+       * ----------------------------------------------------------------
+       * Pure functions that transform raw numeric values into display strings.
+       * None of these touch the DOM — they just return formatted strings.
+       * ---------------------------------------------------------------- */
+
+      /**
+       * formatCurrency(value)
+       * Formats a number as a US dollar string with no decimal places.
+       * Uses Intl.NumberFormat for locale-aware thousands separators.
+       * Input:  67245.83 (number)
+       * Output: "$67,246" (string)
+       * Returns "$--" for non-finite inputs (NaN, Infinity, undefined).
+       */
       function formatCurrency(value) {
         if (!Number.isFinite(value)) return '$--';
         return new Intl.NumberFormat('en-US', {
@@ -340,12 +587,28 @@
         }).format(value);
       }
 
+      /**
+       * formatPercent(value)
+       * Formats a number as a percentage string with two decimal places.
+       * Prepends a "+" sign for positive values (negative sign is automatic).
+       * Input:  2.14 (number)
+       * Output: "+2.14%" (string)
+       * Returns "--" for non-finite inputs.
+       */
       function formatPercent(value) {
         if (!Number.isFinite(value)) return '--';
         var sign = value > 0 ? '+' : '';
         return sign + value.toFixed(2) + '%';
       }
 
+      /**
+       * formatDateTime(value)
+       * Converts a millisecond timestamp (or Date-parseable value) into a
+       * human-readable date string like "Jun 15, 2025, 3:42 PM".
+       * Input:  1718470920000 (ms epoch)
+       * Output: "Jun 15, 2025, 3:42 PM" (string)
+       * Returns "Unknown" if the input produces an invalid Date.
+       */
       function formatDateTime(value) {
         var date = new Date(value);
         if (Number.isNaN(date.getTime())) return 'Unknown';
@@ -358,6 +621,15 @@
         }).format(date);
       }
 
+      /**
+       * formatRelativeSeconds(epochSeconds)
+       * Converts a Unix timestamp (seconds, not milliseconds) into a concise
+       * relative time string like "5m ago", "2h ago", or "3d ago".
+       * Computes the difference between now and the given timestamp, then
+       * picks the largest appropriate unit (seconds, minutes, hours, days).
+       * Input:  1718470920 (seconds epoch)
+       * Output: "12m ago" (string)
+       */
       function formatRelativeSeconds(epochSeconds) {
         var diff = Math.max(0, Math.round(Date.now() / 1000 - epochSeconds));
         if (diff < 60) return diff + 's ago';
@@ -366,6 +638,14 @@
         return Math.round(diff / 86400) + 'd ago';
       }
 
+      /**
+       * setSignedClass(node, value)
+       * Adds or removes CSS classes "is-up" / "is-down" on a DOM element
+       * based on whether the numeric value is positive or negative.
+       * These classes are used in bitcoin-styles.css to color the text
+       * green (positive) or red (negative) for percentage change indicators.
+       * Removes both classes first to reset, then conditionally adds one.
+       */
       function setSignedClass(node, value) {
         if (!node) return;
         node.classList.remove('is-up', 'is-down');
@@ -374,13 +654,34 @@
         if (value < 0) node.classList.add('is-down');
       }
 
+      /* ----------------------------------------------------------------
+       * NETWORK HELPER
+       * ---------------------------------------------------------------- */
+
+      /**
+       * fetchJsonWithTimeout(url, timeoutMs)
+       * A wrapper around the Fetch API that adds an abort timeout.
+       * If the browser supports AbortController, a timer is set that will
+       * abort the fetch after `timeoutMs` milliseconds (default 8000ms).
+       * If AbortController is not available (very old browsers), it falls
+       * back to a plain fetch with no abort capability.
+       *
+       * The `cache: 'no-store'` option ensures we always get fresh data
+       * rather than a stale cached response (important for live prices).
+       *
+       * Input:  url (string), timeoutMs (number, optional)
+       * Output: Promise<Object> — the parsed JSON response body
+       * Throws: Error if HTTP status is not OK or if the request times out
+       */
       async function fetchJsonWithTimeout(url, timeoutMs) {
+        // Fallback path for browsers without AbortController support
         if (typeof AbortController !== 'function') {
           var responseNoAbort = await fetch(url, { cache: 'no-store' });
           if (!responseNoAbort.ok) throw new Error('HTTP ' + responseNoAbort.status);
           return responseNoAbort.json();
         }
 
+        // Create an AbortController and set a timeout to auto-abort
         var controller = new AbortController();
         var timer = setTimeout(function () { controller.abort(); }, timeoutMs || 8000);
 
@@ -389,21 +690,78 @@
           if (!response.ok) throw new Error('HTTP ' + response.status);
           return response.json();
         } finally {
+          // Always clear the timeout, whether the fetch succeeded or failed
           clearTimeout(timer);
         }
       }
 
+      /* ----------------------------------------------------------------
+       * DATA TRANSFORMATION
+       * ---------------------------------------------------------------- */
+
+      /**
+       * computeWindowChange(points, days)
+       * Calculates the percentage price change over a given number of days
+       * by comparing the last data point's price to the price N days earlier.
+       *
+       * Input:
+       *   points — Array of { ts, price } objects (the 90-day history)
+       *   days   — Number of days to look back (e.g. 7, 30)
+       * Output:
+       *   Number (percentage change, e.g. +5.23 or -2.10)
+       *   null if the data is insufficient or invalid
+       *
+       * The formula is: ((endPrice - startPrice) / startPrice) * 100
+       * startIndex is clamped so we don't go before the beginning of the array.
+       */
       function computeWindowChange(points, days) {
         if (!Array.isArray(points) || points.length < 2) return null;
 
         var end = points[points.length - 1].price;
         var startIndex = Math.max(0, points.length - 1 - days);
         var start = points[startIndex].price;
+        // Guard against division by zero or non-finite values
         if (!Number.isFinite(start) || start === 0 || !Number.isFinite(end)) return null;
         return ((end - start) / start) * 100;
       }
 
+      /* ----------------------------------------------------------------
+       * RENDER FUNCTIONS
+       * ----------------------------------------------------------------
+       * These functions take transformed data and write it into the DOM.
+       * Each function is responsible for one panel of the dashboard.
+       * ---------------------------------------------------------------- */
+
+      /**
+       * renderChart(points)
+       * Draws the 90-day price chart by computing SVG path data and setting
+       * it on the two <path> elements (line and filled area).
+       *
+       * Input: Array of { ts: msEpoch, price: number } objects
+       *
+       * COORDINATE MATH:
+       *   The SVG viewBox is 720x280. Padding is applied on all sides:
+       *     padX = 28px (left/right), padY = 24px (top/bottom)
+       *   This gives a usable plot area of 664 x 232 pixels.
+       *
+       *   For each data point at index i:
+       *     x = padX + (plotWidth * i) / (numPoints - 1)
+       *       — Evenly spaces points horizontally across the plot width
+       *     y = padY + ((maxPrice - pointPrice) / (maxPrice - minPrice)) * plotHeight
+       *       — Maps the price range [min, max] onto the vertical axis [bottom, top]
+       *       — Note: SVG y-axis is inverted (0 = top), so higher prices = lower y
+       *
+       *   The line path is a series of "M x y L x y L x y ..." commands.
+       *   The area path appends two extra points to close the polygon:
+       *     - Bottom-right corner: (lastX, baseline)
+       *     - Bottom-left corner: (firstX, baseline)
+       *     - "Z" closes the path back to the starting point
+       *
+       * Also updates the four metadata labels (start, end, high, low) below
+       * the chart with formatted currency values.
+       */
       function renderChart(points) {
+        // If there are fewer than 2 points, clear the chart and show placeholders
         if (!Array.isArray(points) || points.length < 2) {
           chartLine.setAttribute('d', '');
           chartArea.setAttribute('d', '');
@@ -414,58 +772,89 @@
           return;
         }
 
+        // SVG viewBox dimensions and padding constants
         var width = 720;
         var height = 280;
         var padX = 28;
         var padY = 24;
-        var plotWidth = width - (padX * 2);
-        var plotHeight = height - (padY * 2);
+        var plotWidth = width - (padX * 2);    // 664px usable horizontal space
+        var plotHeight = height - (padY * 2);  // 232px usable vertical space
 
+        // Extract all prices and find the min/max for vertical scaling
         var prices = points.map(function (point) { return point.price; });
         var min = Math.min.apply(null, prices);
         var max = Math.max.apply(null, prices);
+        // Prevent division by zero if all prices are identical
         if (max === min) max += 1;
 
+        // Map each data point to [x, y] SVG coordinates within the padded plot area
         var coords = points.map(function (point, index) {
           var x = padX + ((plotWidth * index) / (points.length - 1));
           var y = padY + ((max - point.price) / (max - min)) * plotHeight;
           return [x, y];
         });
 
+        // Build the SVG path "d" attribute string for the line
+        // First point uses "M" (moveTo), subsequent points use "L" (lineTo)
         var linePath = coords.map(function (coord, index) {
           return (index === 0 ? 'M ' : ' L ') + coord[0].toFixed(2) + ' ' + coord[1].toFixed(2);
         }).join('');
 
+        // Build the area path by extending the line path down to the baseline
+        // and back to create a closed polygon for the gradient fill
         var first = coords[0];
         var last = coords[coords.length - 1];
-        var baseline = height - padY;
+        var baseline = height - padY;  // Bottom edge of the plot area
         var areaPath = linePath + ' L ' + last[0].toFixed(2) + ' ' + baseline.toFixed(2) +
           ' L ' + first[0].toFixed(2) + ' ' + baseline.toFixed(2) + ' Z';
 
+        // Apply the computed path data to the SVG elements
         chartLine.setAttribute('d', linePath);
         chartArea.setAttribute('d', areaPath);
 
+        // Update the metadata labels with the start, end, high, and low prices
         chartStart.textContent = formatCurrency(points[0].price);
         chartEnd.textContent = formatCurrency(points[points.length - 1].price);
         chartHigh.textContent = formatCurrency(max);
         chartLow.textContent = formatCurrency(min);
       }
 
+      /**
+       * renderNews(items)
+       * Populates the news panel <ul> with headline list items.
+       * Clears existing content first, then creates up to 20 <li> elements.
+       *
+       * Input: Array of normalized news objects:
+       *   { title: string, url: string, source: string, publishedOn: epochSeconds }
+       *
+       * Each <li> contains:
+       *   - An <a> element with the headline title linking to the article
+       *   - A <span> element showing "Source | Date" metadata
+       *
+       * If the items array is empty, a single fallback message is shown.
+       */
       function renderNews(items) {
+        // Clear any previously rendered headlines
         newsList.innerHTML = '';
+
+        // Show a fallback message if no items are available
         if (!items.length) {
           newsList.innerHTML = '<li class="btc-fallback">No bitcoin headlines available right now.</li>';
           return;
         }
 
+        // Render up to 20 headline items
         items.slice(0, 20).forEach(function (item) {
           var li = document.createElement('li');
+
+          // Create the headline link
           var a = document.createElement('a');
           a.href = item.url || '#';
           a.target = '_blank';
           a.rel = 'noopener';
           a.textContent = item.title || 'Untitled headline';
 
+          // Create the metadata line (source name + publication date)
           var meta = document.createElement('span');
           var source = item.source || 'News source';
           var published = Number(item.publishedOn || item.published_on || 0);
@@ -475,79 +864,154 @@
             meta.textContent = source;
           }
 
+          // Assemble and append the list item
           li.appendChild(a);
           li.appendChild(meta);
           newsList.appendChild(li);
         });
       }
 
+      /**
+       * renderBlocks(blocks)
+       * Populates the recent blocks panel <ul> with block list items.
+       * Clears existing content first, then creates up to 10 <li> elements.
+       *
+       * Input: Array of block objects from mempool.space (or fallback data):
+       *   { height: number, id: string (block hash), timestamp: epochSeconds }
+       *
+       * Each <li> contains:
+       *   - An <a> linking to the block on mempool.space (by full block hash)
+       *   - A <span> with relative time ("5m ago") and absolute date
+       *
+       * If the blocks array is empty, a single fallback message is shown.
+       */
       function renderBlocks(blocks) {
+        // Clear any previously rendered block entries
         blockList.innerHTML = '';
+
+        // Show a fallback message if no block data is available
         if (!blocks.length) {
           blockList.innerHTML = '<li class="btc-fallback">No block data available.</li>';
           return;
         }
 
+        // Render up to 10 block entries
         blocks.slice(0, 10).forEach(function (block) {
           var li = document.createElement('li');
 
+          // Create the block link pointing to mempool.space block explorer
           var link = document.createElement('a');
           link.href = 'https://mempool.space/block/' + encodeURIComponent(block.id || '');
           link.target = '_blank';
           link.rel = 'noopener';
           link.textContent = 'Block #' + String(block.height || '--');
 
+          // Create the timestamp detail line
           var detail = document.createElement('span');
           var ts = Number(block.timestamp || 0);
           if (ts > 0) {
+            // Show both relative ("5m ago") and absolute ("Jun 15, 2025, 3:42 PM") times
             detail.textContent = formatRelativeSeconds(ts) + ' | ' + formatDateTime(ts * 1000);
           } else {
             detail.textContent = 'Timestamp unavailable';
           }
 
+          // Assemble and append the list item
           li.appendChild(link);
           li.appendChild(detail);
           blockList.appendChild(li);
         });
       }
 
+      /* ----------------------------------------------------------------
+       * ASYNC DATA LOADERS
+       * ----------------------------------------------------------------
+       * Each loader is responsible for one section of the dashboard.
+       * They run independently and in parallel (fired at the bottom of
+       * this IIFE). Each follows the pattern:
+       *   1. Optionally render fallback data immediately
+       *   2. Fetch from the external API
+       *   3. Validate and transform the response
+       *   4. Render the transformed data
+       *   5. Update the status message
+       *   6. On error: keep fallback data, update status to explain
+       * ---------------------------------------------------------------- */
+
+      /**
+       * loadMarketData()
+       * Fetches both the spot price and 90-day history in parallel using
+       * Promise.all, then processes both responses together.
+       *
+       * Pipeline:
+       *   1. Fetch priceFull endpoint (8s timeout) and histoday endpoint (9s timeout)
+       *   2. Extract the raw BTC/USD data from the nested CryptoCompare response
+       *   3. Pull the live price and 24H change percentage from the raw data
+       *   4. Transform the histoday array into a flat array of { ts, price } objects
+       *      by extracting each day's "close" value and "time" field
+       *   5. Filter out any invalid/zero-price entries
+       *   6. Compute 7D and 30D percentage changes from the history array
+       *   7. Populate the price panel DOM elements with formatted values
+       *   8. Apply is-up/is-down CSS classes for color coding
+       *   9. Render the SVG chart from the history points
+       *  10. On failure: show a hardcoded fallback price and "Snapshot mode" status
+       */
       async function loadMarketData() {
         try {
+          // Fetch spot price and 90-day history concurrently
           var responses = await Promise.all([
             fetchJsonWithTimeout(endpoints.priceFull, 8000),
             fetchJsonWithTimeout(endpoints.histoday, 9000)
           ]);
 
-          var priceData = responses[0];
-          var histoData = responses[1];
+          var priceData = responses[0];  // CryptoCompare pricemultifull response
+          var histoData = responses[1];  // CryptoCompare histoday response
 
+          // Navigate the nested response to get the BTC/USD raw market data object
+          // Expected path: priceData.RAW.BTC.USD.{ PRICE, CHANGEPCT24HOUR, ... }
           var raw = priceData.RAW && priceData.RAW.BTC && priceData.RAW.BTC.USD;
           if (!raw) throw new Error('Missing price data');
 
+          // Extract the two values we need from the spot price endpoint
           var livePrice = Number(raw.PRICE);
           var change24Value = Number(raw.CHANGEPCT24HOUR);
 
+          // Extract the daily candle array from the histoday response
+          // Expected path: histoData.Data.Data (array of { time, close, ... } objects)
           var histoDays = (histoData.Data && Array.isArray(histoData.Data.Data))
             ? histoData.Data.Data : [];
 
+          // Transform each daily candle into a simple { ts, price } object
+          // using the "close" price, and filter out any invalid entries
           var historyPoints = histoDays.map(function (day) {
             return { ts: Number(day.time) * 1000, price: Number(day.close) };
           }).filter(function (point) { return Number.isFinite(point.ts) && Number.isFinite(point.price) && point.price > 0; });
 
+          // Compute 7-day and 30-day percentage changes from the history data
+          // (24H change comes directly from the priceFull API response)
           var change7Value = computeWindowChange(historyPoints, 7);
           var change30Value = computeWindowChange(historyPoints, 30);
 
+          // Populate the price panel DOM with formatted live data
           priceValue.textContent = formatCurrency(livePrice);
           change24.textContent = formatPercent(change24Value);
           change7.textContent = formatPercent(change7Value);
           change30.textContent = formatPercent(change30Value);
+
+          // Apply green/red color classes based on positive/negative values
           setSignedClass(change24, change24Value);
           setSignedClass(change7, change7Value);
           setSignedClass(change30, change30Value);
+
+          // Record when the data was last fetched
           lastSync.textContent = formatDateTime(Date.now());
+
+          // Draw the 90-day SVG chart
           renderChart(historyPoints);
+
+          // Update the status indicator to confirm live data is showing
           priceStatus.textContent = 'Live market data.';
         } catch (error) {
+          // On any failure: show a hardcoded snapshot price and clear the changes
           priceValue.textContent = '$67,000';
           change24.textContent = '--';
           change7.textContent = '--';
@@ -556,20 +1020,40 @@
           setSignedClass(change7, null);
           setSignedClass(change30, null);
           lastSync.textContent = 'Snapshot mode';
+          // Render an empty chart (clears any previous data)
           renderChart([]);
           priceStatus.textContent = 'Market feed unavailable. Showing cached snapshot.';
         }
       }
 
+      /**
+       * loadNews()
+       * Fetches Bitcoin headlines from the CoinDesk RSS feed via the rss2json
+       * proxy service, which converts XML RSS into a JSON response.
+       *
+       * Pipeline:
+       *   1. Immediately render fallback news items (two static links)
+       *   2. Fetch the rss2json endpoint (9s timeout)
+       *   3. Validate that the response has status "ok" and an items array
+       *   4. Transform each RSS item into our normalized news shape:
+       *        { title, url, source, publishedOn }
+       *      The pubDate string from RSS is converted to a Unix epoch in seconds
+       *   5. Pass the normalized items to renderNews() to rebuild the list
+       *   6. On failure: keep the fallback items already rendered in step 1
+       */
       async function loadNews() {
+        // Show fallback content immediately so the panel is never empty
         renderNews(fallbackNews);
 
         try {
           var payload = await fetchJsonWithTimeout(endpoints.news, 9000);
+
+          // Validate the rss2json response shape
           if (!payload || payload.status !== 'ok' || !Array.isArray(payload.items)) {
             throw new Error('Invalid news payload');
           }
 
+          // Transform RSS items into our internal normalized news object shape
           var items = payload.items.map(function (entry) {
             return {
               title: entry.title,
@@ -579,34 +1063,70 @@
             };
           });
 
+          // Replace the fallback items with the live headlines
           renderNews(items);
           newsStatus.textContent = 'Live headlines loaded.';
         } catch (error) {
+          // Keep the fallback items that were already rendered above
           newsStatus.textContent = 'News feed unavailable. Showing fallback links.';
         }
       }
 
+      /**
+       * loadBlocks()
+       * Fetches the most recently mined Bitcoin blocks from the mempool.space
+       * public REST API.
+       *
+       * Pipeline:
+       *   1. Immediately render fallback block data (three hardcoded blocks)
+       *   2. Fetch the /api/blocks endpoint (9s timeout)
+       *   3. Validate that the response is an array
+       *   4. Pass the raw block array directly to renderBlocks() — the
+       *      mempool.space response shape already matches what we need:
+       *        { id: "hex-hash", height: number, timestamp: epochSeconds }
+       *   5. On failure: keep the fallback blocks already rendered in step 1
+       */
       async function loadBlocks() {
+        // Show fallback content immediately so the panel is never empty
         renderBlocks(fallbackBlocks);
 
         try {
           var payload = await fetchJsonWithTimeout(endpoints.blocks, 9000);
+
+          // Validate that the response is an array of block objects
           if (!Array.isArray(payload)) {
             throw new Error('Invalid block payload');
           }
 
+          // Replace the fallback blocks with the live data
           renderBlocks(payload);
           blockStatus.textContent = 'Latest blocks from mempool.space.';
         } catch (error) {
+          // Keep the fallback blocks that were already rendered above
           blockStatus.textContent = 'Block feed unavailable. Showing recent snapshot.';
         }
       }
 
+      /* ----------------------------------------------------------------
+       * INITIALIZATION
+       * ----------------------------------------------------------------
+       * Fire all three data loaders in parallel. They are independent of
+       * each other (no shared state or ordering dependency), so there is
+       * no need to await them sequentially. Each loader handles its own
+       * error state independently, ensuring that a failure in one panel
+       * does not prevent the others from loading.
+       * ---------------------------------------------------------------- */
       loadMarketData();
       loadNews();
       loadBlocks();
     })();
   </script>
+
+  <!--
+    Shared ticker script: fetches live market data and overwrites the static
+    placeholder values in the ticker-tape above. Loaded last because the ticker
+    is purely decorative and non-blocking.
+  -->
   <script src="ticker.js"></script>
 </body>
 </html>
