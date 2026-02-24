@@ -74,6 +74,11 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
+  <!-- Preload the nav brand mark font (Herr Von Muellerhoff, latin woff2) at
+       highest priority to eliminate FOUT on page transitions. See index.html
+       for a detailed explanation of why this preload is needed. -->
+  <link rel="preload" href="https://fonts.gstatic.com/s/herrvonmuellerhoff/v23/WBL6rFjRZkREW8WqmCWYLgCkQKXb4CAft0c99KM.woff2" as="font" type="font/woff2" crossorigin>
+
   <!--
     Google Fonts used across the page:
       - Libre Caslon Display/Text: serif body and headings (shared site-wide).
@@ -85,7 +90,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Libre+Caslon+Display&family=Libre+Caslon+Text:ital,wght@0,400;0,700;1,400&family=Herr+Von+Muellerhoff&family=Press+Start+2P&family=Share+Tech+Mono&family=Silkscreen:wght@400;700&display=swap" rel="stylesheet">
 
   <!-- Shared base stylesheet: nav, hero, footer, ticker, typography, layout grid. -->
-  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="css/styles.css">
 
   <!--
     Page-specific stylesheet scoped to body.vg-page. Contains all the
@@ -94,7 +99,7 @@
     channel-dial tablist, CRT static overlay animation, and responsive
     breakpoints that collapse the two-column grids on mobile.
   -->
-  <link rel="stylesheet" href="vg-styles.css">
+  <link rel="stylesheet" href="css/vg-styles.css">
 
   <!-- Google Analytics: loaded async so it never blocks page rendering. -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-5ZTHJXDR9V"></script>
@@ -968,7 +973,7 @@
   </footer>
 
   <!-- drawer.js: shared navigation drawer open/close/escape controller. -->
-  <script src="drawer.js"></script>
+  <script src="js/drawer.js"></script>
 
   <!--
     ==========================================================================
@@ -1281,6 +1286,6 @@
   </script>
 
   <!-- ticker.js: animates the scrolling market-data ticker tape at the top of the page. -->
-  <script src="ticker.js"></script>
+  <script src="js/ticker.js"></script>
 </body>
 </html>

@@ -187,6 +187,10 @@
   border: 1px solid var(--btc-panel-edge);
   background: var(--btc-bg-1);
   box-shadow: 0 4px 16px var(--btc-shadow);
+  /* Grid items default to min-width: auto, which lets content push them
+     wider than the track. Setting 0 allows the panel to shrink to the
+     grid column size, enabling text-overflow: ellipsis inside. */
+  min-width: 0;
 }
 
 /* Disable the shared-styles ::before pseudo-element (e.g. decorative clip-path
@@ -398,14 +402,20 @@
   background: var(--btc-bg-1);
 }
 
+/* overflow: hidden clips any nowrap headlines that exceed the panel
+   boundary so they ellipsis-truncate instead of pushing the layout wider */
 .btc-news-panel {
   height: 100%;
   background: var(--btc-bg-1);
+  overflow: hidden;
 }
 
+/* overflow: hidden clips long reading-list link titles that are set to
+   white-space: nowrap — prevents them from widening the panel on mobile */
 .btc-reading-panel {
   height: 100%;
   background: var(--btc-bg-1);
+  overflow: hidden;
 }
 
 /* ---------------------------------------------------------------------------
@@ -614,8 +624,12 @@
  * full width underneath so its longer content has room to breathe.
  * --------------------------------------------------------------------------- */
 @media (max-width: 1180px) {
+  /* Switch from two-column to single-column layout.
+     minmax(0, 1fr) prevents nowrap content (block hashes, headlines)
+     from pushing the column wider than the viewport — bare "1fr"
+     resolves to minmax(auto, 1fr) which respects content width. */
   .btc-desk-grid {
-    grid-template-columns: 1fr;
+    grid-template-columns: minmax(0, 1fr);
     grid-template-areas:
       "rail"
       "chart"
@@ -657,11 +671,13 @@
     font-size: 0.72rem;
   }
 
-  /* Compact nav pill-links: smaller text and tighter padding */
+  /* Compact nav pill-links: smaller text, tighter padding, and no
+     min-width floor so the pills shrink freely on narrow phones. */
   .btc-rail-links a {
     font-size: 0.62rem;
     letter-spacing: 0.52px;
     padding: 0.26rem 0.48rem;
+    min-width: 0;
   }
 
   /* Reduce top spacing since the rail is already snug */
@@ -669,9 +685,12 @@
     padding-top: 0.24rem;
   }
 
-  /* Single-column stacked layout with slightly tighter gap */
+  /* Single-column stacked layout with slightly tighter gap.
+     minmax(0, 1fr) caps the column minimum at zero so nowrap text
+     inside panels (hashes, headlines, reading titles) gets ellipsis-
+     truncated instead of pushing the grid wider than the screen. */
   .btc-desk-grid {
-    grid-template-columns: 1fr;
+    grid-template-columns: minmax(0, 1fr);
     grid-template-areas:
       "rail"
       "chart"
@@ -682,7 +701,7 @@
 
   /* Bottom panels also go single-column on mobile */
   .btc-desk-bottom {
-    grid-template-columns: 1fr;
+    grid-template-columns: minmax(0, 1fr);
   }
 
   /* Reduce panel padding to reclaim horizontal space on small screens */
@@ -733,5 +752,64 @@
   .btc-block-list a,
   .btc-news-list a {
     font-size: 0.78rem;
+  }
+}
+
+/* ---------------------------------------------------------------------------
+ * SMALL-MOBILE BREAKPOINT: max-width 420px
+ *
+ * Targets the narrowest phones (iPhone SE, older Androids, etc.) where the
+ * standard mobile breakpoint still leaves things a bit too wide. Further
+ * reduces padding, font sizes, and column counts to keep every panel
+ * comfortably within the viewport.
+ * --------------------------------------------------------------------------- */
+@media (max-width: 420px) {
+  /* Tighter panel padding to reclaim every pixel on tiny screens */
+  .btc-panel {
+    padding: 0.62rem;
+  }
+
+  /* Shrink panel headings another notch */
+  .btc-panel h2 {
+    font-size: clamp(0.96rem, 5vw, 1.24rem);
+  }
+
+  /* Rail title: smaller still to avoid wrapping the "BITCOIN TERMINAL" text */
+  .btc-rail-label {
+    font-size: 0.62rem;
+    letter-spacing: 1.2px;
+  }
+
+  /* Rail pill-links get even more compact */
+  .btc-rail-links a {
+    font-size: 0.56rem;
+    padding: 0.22rem 0.4rem;
+  }
+
+  /* Price grid collapses to single-column so stat tiles have room to breathe */
+  .btc-price-grid {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  /* Chart meta stays at 2 columns but with tighter gap */
+  .btc-chart-meta {
+    gap: 0.4rem;
+  }
+
+  /* Smaller chart-meta values to prevent overflow */
+  .btc-chart-meta dd {
+    font-size: 0.92rem;
+  }
+
+  /* Scale down reading section headings */
+  .btc-reading-columns h3 {
+    font-size: 0.56rem;
+  }
+
+  /* Smaller link text site-wide at this breakpoint */
+  .btc-block-list a,
+  .btc-news-list a,
+  .btc-reading-columns a {
+    font-size: 0.72rem;
   }
 }

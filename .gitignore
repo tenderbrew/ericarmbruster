@@ -1,7 +1,2 @@
-# .env holds secret API keys (STEAM_API_KEY, STEAM_ID) used by steam-fetch.js.
-# It must never be committed — GitHub Actions injects these via repository secrets instead.
 .env
-
-# node_modules/ contains packages installed by `npm install` (currently just the dotenv
-# package used by steam-fetch.js). This folder is auto-generated and should not be tracked.
 node_modules/

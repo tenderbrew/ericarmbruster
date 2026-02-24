@@ -47,10 +47,16 @@
        scrapbook aesthetic with their graceful curves and readability. -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <!-- Preload the nav brand mark font (Herr Von Muellerhoff, latin woff2) at
+       highest priority to eliminate FOUT on page transitions. See index.html
+       for a detailed explanation of why this preload is needed. -->
+  <link rel="preload" href="https://fonts.gstatic.com/s/herrvonmuellerhoff/v23/WBL6rFjRZkREW8WqmCWYLgCkQKXb4CAft0c99KM.woff2" as="font" type="font/woff2" crossorigin>
+
   <link href="https://fonts.googleapis.com/css2?family=Libre+Caslon+Display&family=Libre+Caslon+Text:ital,wght@0,400;0,700;1,400&family=Herr+Von+Muellerhoff&family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Lora:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
 
-  <link rel="stylesheet" href="styles.css">
-  <link rel="stylesheet" href="sy-styles.css">
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/sy-styles.css">
 
   <!-- Google Analytics -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-5ZTHJXDR9V"></script>
@@ -628,8 +634,8 @@
   </div>
 
   <!-- Shared scripts. -->
-  <script src="drawer.js"></script>
-  <script src="ticker.js"></script>
+  <script src="js/drawer.js"></script>
+  <script src="js/ticker.js"></script>
 
   <!-- ═══════════════════════════════════════════════════════════════════════
        INLINE LIGHTBOX SCRIPT

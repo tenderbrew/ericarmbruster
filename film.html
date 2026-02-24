@@ -55,11 +55,17 @@
   <!-- Google Fonts: preconnect for performance, then load the font families used across the site -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <!-- Preload the nav brand mark font (Herr Von Muellerhoff, latin woff2) at
+       highest priority to eliminate FOUT on page transitions. See index.html
+       for a detailed explanation of why this preload is needed. -->
+  <link rel="preload" href="https://fonts.gstatic.com/s/herrvonmuellerhoff/v23/WBL6rFjRZkREW8WqmCWYLgCkQKXb4CAft0c99KM.woff2" as="font" type="font/woff2" crossorigin>
+
   <link href="https://fonts.googleapis.com/css2?family=Libre+Caslon+Display&family=Libre+Caslon+Text:ital,wght@0,400;0,700;1,400&family=Herr+Von+Muellerhoff&family=Bebas+Neue&family=IBM+Plex+Sans+Condensed:wght@400;500;700&family=Special+Elite&display=swap" rel="stylesheet">
 
   <!-- Shared base stylesheet (nav, layout, typography) and page-scoped film stylesheet -->
-  <link rel="stylesheet" href="styles.css">
-  <link rel="stylesheet" href="film-styles.css">
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/film-styles.css">
 
   <!-- Google Analytics: loaded async so it never blocks page rendering -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-5ZTHJXDR9V"></script>
@@ -291,7 +297,7 @@
   </footer>
 
   <!-- Shared drawer.js: handles open/close of the navigation drawer on all pages -->
-  <script src="drawer.js"></script>
+  <script src="js/drawer.js"></script>
 
   <!--
     ========================================================================
@@ -1524,6 +1530,6 @@
   </script>
 
   <!-- ticker.js: animates the scrolling market-data ticker tape at the top of the page -->
-  <script src="ticker.js"></script>
+  <script src="js/ticker.js"></script>
 </body>
 </html>

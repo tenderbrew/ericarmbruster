@@ -59,12 +59,18 @@
        serif for body), Herr Von Muellerhoff (ornate cursive for decorative use). -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <!-- Preload the nav brand mark font (Herr Von Muellerhoff, latin woff2) at
+       highest priority to eliminate FOUT on page transitions. See index.html
+       for a detailed explanation of why this preload is needed. -->
+  <link rel="preload" href="https://fonts.gstatic.com/s/herrvonmuellerhoff/v23/WBL6rFjRZkREW8WqmCWYLgCkQKXb4CAft0c99KM.woff2" as="font" type="font/woff2" crossorigin>
+
   <link href="https://fonts.googleapis.com/css2?family=IM+Fell+English:ital@0;1&family=IM+Fell+English+SC&family=Libre+Caslon+Display&family=Libre+Caslon+Text:ital,wght@0,400;0,700;1,400&family=Herr+Von+Muellerhoff&display=swap" rel="stylesheet">
 
   <!-- Stylesheets — shared base first, then page-specific overrides. The
        cascade means proj-styles.css can override anything in styles.css. -->
-  <link rel="stylesheet" href="styles.css">
-  <link rel="stylesheet" href="proj-styles.css">
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/proj-styles.css">
 
   <!-- Google Analytics — tracks page views and visitor behavior. The `async`
        attribute loads the script without blocking page rendering. The gtag()
@@ -319,7 +325,7 @@
   <!-- Shared scripts loaded at the end of <body> so they don't block page
        rendering. drawer.js controls the nav drawer; ticker.js fetches live
        market data for the scrolling ticker tape. -->
-  <script src="drawer.js"></script>
-  <script src="ticker.js"></script>
+  <script src="js/drawer.js"></script>
+  <script src="js/ticker.js"></script>
 </body>
 </html>

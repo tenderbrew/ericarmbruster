@@ -32,12 +32,12 @@
   <title>About - Eric Armbruster</title>
 
   <!-- SEO and social sharing metadata. -->
-  <meta name="description" content="Background, work, and interests of Eric Armbruster.">
+  <meta name="description" content="Risk manager in finance with a Master of Finance and a BS in Economics. This is a small corner of the internet I built to keep track of the hobbies and interests that keep me curious.">
   <!-- Dark blue-gray theme color matches the rainy night sky background. -->
   <meta name="theme-color" content="#0f1923">
   <link rel="canonical" href="https://www.ericarmbruster.com/about.html">
   <meta property="og:title" content="About - Eric Armbruster">
-  <meta property="og:description" content="Background, work, and interests of Eric Armbruster.">
+  <meta property="og:description" content="Risk manager in finance with a Master of Finance and a BS in Economics. This is a small corner of the internet I built to keep track of the hobbies and interests that keep me curious.">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://www.ericarmbruster.com/about.html">
   <meta property="og:image" content="https://www.ericarmbruster.com/images/hector-0001.png">
@@ -53,11 +53,17 @@
        used across the site for headings and decorative flourishes. -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <!-- Preload the nav brand mark font (Herr Von Muellerhoff, latin woff2) at
+       highest priority to eliminate FOUT on page transitions. See index.html
+       for a detailed explanation of why this preload is needed. -->
+  <link rel="preload" href="https://fonts.gstatic.com/s/herrvonmuellerhoff/v23/WBL6rFjRZkREW8WqmCWYLgCkQKXb4CAft0c99KM.woff2" as="font" type="font/woff2" crossorigin>
+
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,400&family=Libre+Caslon+Display&family=Libre+Caslon+Text:ital,wght@0,400;0,700;1,400&family=Herr+Von+Muellerhoff&display=swap" rel="stylesheet">
 
   <!-- Shared base styles first, then about-page-specific overrides. -->
-  <link rel="stylesheet" href="styles.css">
-  <link rel="stylesheet" href="about-styles.css">
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/about-styles.css">
 
   <!-- Google Analytics -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-5ZTHJXDR9V"></script>
@@ -308,7 +314,7 @@
   </footer>
 
   <!-- Shared scripts — drawer.js for nav, ticker.js for live market data. -->
-  <script src="drawer.js"></script>
-  <script src="ticker.js"></script>
+  <script src="js/drawer.js"></script>
+  <script src="js/ticker.js"></script>
 </body>
 </html>

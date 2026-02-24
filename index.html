@@ -56,10 +56,21 @@
        - Silkscreen: pixel font for retro/gaming UI elements -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <!-- Preload the Herr Von Muellerhoff woff2 font file (latin subset) used for
+       the "Eric M. Armbruster" brand mark in the nav. Preloading tells the browser
+       to fetch this file at the highest priority during initial page load, before
+       the Google Fonts CSS is even parsed. This eliminates the FOUT (Flash of
+       Unstyled Text) where the brand mark briefly appears in a fallback system
+       font before the custom cursive font finishes downloading. The `crossorigin`
+       attribute is required because fonts are always fetched in CORS mode, even
+       when served from the same origin — omitting it would cause a double fetch. -->
+  <link rel="preload" href="https://fonts.gstatic.com/s/herrvonmuellerhoff/v23/WBL6rFjRZkREW8WqmCWYLgCkQKXb4CAft0c99KM.woff2" as="font" type="font/woff2" crossorigin>
+
   <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@700&family=IM+Fell+English&family=IM+Fell+English+SC&family=Libre+Caslon+Display&family=Libre+Caslon+Text:ital,wght@0,400;0,700;1,400&family=Share+Tech+Mono&family=Herr+Von+Muellerhoff&family=Silkscreen:wght@400;700&display=swap" rel="stylesheet">
 
   <!-- Only the shared stylesheet — the homepage doesn't have a page-specific CSS file. -->
-  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="css/styles.css">
 
   <!-- Google Analytics -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-5ZTHJXDR9V"></script>
@@ -405,7 +416,7 @@
   </footer>
 
   <!-- Shared nav drawer controller. -->
-  <script src="drawer.js"></script>
+  <script src="js/drawer.js"></script>
 
   <!-- ═══════════════════════════════════════════════════════════════════════
        INLINE QUOTE SCRIPT — Random LOTR Quote for the CRT Display
@@ -445,6 +456,6 @@
   </script>
 
   <!-- Shared ticker script — fetches live market data for the scrolling bar. -->
-  <script src="ticker.js"></script>
+  <script src="js/ticker.js"></script>
 </body>
 </html>
