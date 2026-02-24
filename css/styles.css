@@ -3565,7 +3565,7 @@ footer .container {
   height: 42%;
   background:
     linear-gradient(180deg, rgba(247, 252, 255, 0.18), rgba(70, 130, 171, 0.08)),
-    url("images/seymour-memoriam.png") center 42% / cover no-repeat;
+    url("../images/seymour-memoriam.png") center 42% / cover no-repeat;
   clip-path: ellipse(48% 44% at 50% 50%);
   box-shadow:
     inset 0 0 0 2px rgba(247, 251, 255, 0.5),
