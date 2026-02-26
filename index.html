@@ -226,10 +226,10 @@
     <section class="room room-ledger">
       <figure class="room-card hector-card">
         <div class="hector-frame">
-          <!-- loading="lazy" defers image download until the user scrolls near.
-               decoding="async" prevents the image decode from blocking the
-               main thread during page load. -->
-          <img src="images/hector-0001.webp" alt="Hector the dog in the snow" loading="lazy" decoding="async">
+          <!-- loading="eager" and decoding="sync" ensure the image loads
+               immediately — Hector is above the fold so lazy/async would
+               cause a visible flash on page load. -->
+          <img src="images/hector-0001.webp" alt="Hector the dog in the snow" loading="eager" decoding="sync">
         </div>
         <figcaption class="hector-plaque">Hector, Winter Sentinel</figcaption>
       </figure>
