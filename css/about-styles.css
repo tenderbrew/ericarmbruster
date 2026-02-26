@@ -1328,9 +1328,27 @@
   .about-lantern--left { left: 8px; }
   .about-lantern--right { right: 8px; }
 
+  /* Hide individual bulb dots — without wide-set lanterns as anchors they
+     read as random floating specks. Replace with a diffuse ambient glow. */
   .about-string-lights {
-    left: 4%;
-    right: 4%;
+    left: 0;
+    right: 0;
+    top: 100px;
+  }
+
+  .about-bulb {
+    display: none;
+  }
+
+  .about-string-lights::before {
+    top: 0;
+    height: 40px;
+    background: radial-gradient(
+      ellipse 70% 100% at 50% 0%,
+      rgba(232, 196, 124, 0.09) 0%,
+      rgba(232, 196, 124, 0.04) 50%,
+      transparent 100%
+    );
   }
 
   .about-skyline {

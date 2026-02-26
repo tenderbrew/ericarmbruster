@@ -912,11 +912,9 @@ footer .container {
   top: calc(100% + 0.28rem);
   width: min(1180px, calc(100% - 2.8rem));
   margin: 0;
-  background:
-    linear-gradient(170deg, rgba(39, 24, 15, 0.95), rgba(14, 9, 7, 0.95));
-  box-shadow:
-    0 20px 34px rgba(0, 0, 0, 0.72),
-    inset 0 0 22px rgba(158, 101, 49, 0.14);
+  clip-path: none;
+  background: linear-gradient(170deg, rgba(10, 7, 4, 0.97), rgba(5, 3, 2, 0.98));
+  box-shadow: 0 20px 34px rgba(0, 0, 0, 0.72);
   max-height: min(78vh, 560px);
   overflow: auto;
   opacity: 0;
@@ -926,17 +924,9 @@ footer .container {
   transition:
     opacity 0.22s ease,
     transform 0.22s ease,
-    /* visibility waits 0.22s to flip — keeps the drawer painted until
-       the fade-out animation finishes */
     visibility 0s linear 0.22s;
 }
 
-/* When JavaScript adds the .open class:
-   - opacity: 1 fades the drawer in
-   - visibility: visible makes it accessible to screen readers
-   - pointer-events: auto re-enables clicks
-   - transform resets to centered and full-scale
-   - transition-delay: 0s removes the visibility delay so it appears instantly */
 .site-drawer.open {
   opacity: 1;
   visibility: visible;
@@ -947,46 +937,63 @@ footer .container {
 
 /* --------------------------------------------------------------------------
    .drawer-inner — LAYOUT INSIDE THE DRAWER
-   A 3-column equal-width grid that holds .drawer-group cards. The minmax(0,1fr)
-   ensures columns can shrink below their content's intrinsic minimum if needed.
    -------------------------------------------------------------------------- */
 .drawer-inner {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
-  gap: 0.95rem;
-  padding: 0.96rem 1.02rem 1rem;
+  gap: 1.4rem;
+  padding: 1.1rem 1.3rem 1.2rem;
 }
 
-/* Each drawer group is a translucent brown card with a thin inset border.
-   It contains a heading and a stack of navigation links. */
+/* Groups have no card background — just a thin gold rule at the top
+   to separate them, matching the nav separator aesthetic. */
 .drawer-group {
-  background: rgba(110, 70, 38, 0.16);
-  box-shadow: inset 0 0 0 1px rgba(151, 98, 49, 0.2);
-  padding: 0.72rem 0.78rem;
+  background: none;
+  box-shadow: none;
+  padding: 0.6rem 0 0;
+  border-top: 1px solid rgba(140, 120, 70, 0.22);
 }
 
-/* Drawer group headings — small, uppercase, warm gold */
+/* Section labels — dim, small, same font as nav links */
 .drawer-group h2 {
-  font-size: 0.8rem;
-  letter-spacing: 1.2px;
-  text-transform: uppercase;
-  color: #d6b790;
-  margin-bottom: 0.34rem;
+  font-family: "IM Fell English SC", "Georgia", serif;
+  font-size: 0.64rem;
+  letter-spacing: 0.4px;
+  text-transform: none;
+  color: #6a6044;
+  margin-bottom: 0.5rem;
 }
 
-/* Drawer links are block-level (each on its own line) with generous
-   padding for a comfortable click/tap target. */
+/* Links match the desktop nav — IM Fell English SC, muted gold,
+   underline on hover instead of a background fill. */
 .drawer-group a {
+  position: relative;
   display: block;
-  color: #c8a981;
-  font-size: 0.9rem;
-  padding: 0.32rem 0.38rem;
+  color: #9e9472;
+  font-family: "IM Fell English SC", "Georgia", serif;
+  font-size: 0.84rem;
+  padding: 0.24rem 0;
 }
 
-/* Hover adds a warm translucent background and brightens the text */
+.drawer-group a::after {
+  content: "";
+  position: absolute;
+  bottom: 0.12rem;
+  left: 0;
+  right: 0;
+  height: 1px;
+  background: rgba(180, 155, 90, 0.7);
+  opacity: 0;
+  transition: opacity 0.18s ease;
+}
+
 .drawer-group a:hover {
-  background: rgba(176, 118, 63, 0.2);
-  color: #ebcda5;
+  background: none;
+  color: #d4c07a;
+}
+
+.drawer-group a:hover::after {
+  opacity: 1;
 }
 
 
@@ -1583,7 +1590,7 @@ footer .container {
    glow and heavy vignette darkness around the edges. */
 .crt-screen-surface {
   position: relative;
-  min-height: 196px;
+  height: 196px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -1657,6 +1664,7 @@ footer .container {
     0 0 4px rgba(130, 228, 116, 0.48),  /* tight inner glow */
     0 0 10px rgba(99, 195, 88, 0.22);   /* wider diffuse glow */
 }
+
 
 /* The attribution line below the quote — slightly smaller and dimmer green
    to establish hierarchy while keeping the CRT aesthetic. */
@@ -4884,9 +4892,9 @@ footer .container {
   }
 
   /* The glowing screen surface (where the quote text appears) gets a
-     shorter min-height and tighter padding for mobile. */
+     fixed height and tighter padding for mobile. */
   .crt-screen-surface {
-    min-height: 220px;
+    height: 220px;
     padding: 0.9rem 0.84rem;
   }
 
@@ -5560,10 +5568,10 @@ footer .container {
     padding: 0.42rem;
   }
 
-  /* Reduce the inner screen surface minimum height and padding so the
+  /* Reduce the inner screen surface to a fixed height so the
      quote text has enough room but the overall widget doesn't overflow. */
   .crt-screen-surface {
-    min-height: 188px;
+    height: 188px;
     padding: 0.74rem 0.7rem;
   }
 

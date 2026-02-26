@@ -28,7 +28,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <title>Eric Armbruster</title>
+  <title>The Personal Archive of Eric M. Armbruster</title>
 
   <!-- SEO and social sharing metadata. -->
   <meta name="description" content="Personal website of Eric M. Armbruster">
@@ -435,15 +435,41 @@
        quotation marks and em dash for proper typography. -->
   <script>
     var quotes = [
-      { text: "There is some good in this world, and it is worth fighting for.", source: "The Fellowship of the Ring" },
-      { text: "It's the job that's never started as takes longest to finish.", source: "The Fellowship of the Ring" },
-      { text: "By rights we shouldn't even be here. But we are.", source: "The Fellowship of the Ring" },
-      { text: "Those were the stories that stayed with you, that meant something.", source: "The Two Towers" },
-      { text: "Even darkness must pass.", source: "The Two Towers" },
-      { text: "A new day will come. And when the sun shines, it will shine out the clearer.", source: "The Two Towers" },
-      { text: "I can't carry it for you, but I can carry you.", source: "The Return of the King" },
-      { text: "Well, I'm back.", source: "The Return of the King" },
-      { text: "I can see the light ahead, Mr. Frodo. It's coming to us.", source: "The Return of the King" }
+      { text: "There is some good in this world, and it is worth fighting for.", source: "The Fellowship of the Ring", author: "Samwise Gamgee" },
+      { text: "It's the job that's never started as takes longest to finish.", source: "The Fellowship of the Ring", author: "Samwise Gamgee" },
+      { text: "By rights we shouldn't even be here. But we are.", source: "The Fellowship of the Ring", author: "Samwise Gamgee" },
+      { text: "Those were the stories that stayed with you, that meant something.", source: "The Two Towers", author: "Samwise Gamgee" },
+      { text: "Even darkness must pass.", source: "The Two Towers", author: "Samwise Gamgee" },
+      { text: "A new day will come. And when the sun shines, it will shine out the clearer.", source: "The Two Towers", author: "Samwise Gamgee" },
+      { text: "I can't carry it for you, but I can carry you.", source: "The Return of the King", author: "Samwise Gamgee" },
+      { text: "Well, I'm back.", source: "The Return of the King", author: "Samwise Gamgee" },
+      { text: "I can see the light ahead, Mr. Frodo. It's coming to us.", source: "The Return of the King", author: "Samwise Gamgee" },
+      { text: "There is no means of avoiding the final collapse of a boom brought about by credit expansion.", source: "Human Action", author: "Ludwig von Mises" },
+      { text: "The market is not a place, a thing, or a collective entity. The market is a process, actuated by the interplay of the actions of the various individuals cooperating under the division of labor.", source: "Human Action", author: "Ludwig von Mises" },
+      { text: "Tyranny is the political corollary of socialism, as representative government is the political corollary of the market economy.", source: "Planning for Freedom", author: "Ludwig von Mises" },
+      { text: "Ideas and only ideas can light the darkness.", source: "Planning for Freedom", author: "Ludwig von Mises" },
+      { text: "If history could teach us anything, it would be that private property is inextricably linked with civilization.", source: "Human Action", author: "Ludwig von Mises" },
+      { text: "The capitalist system of production is an economic democracy in which every penny gives a right to vote.", source: "The Anti-Capitalistic Mentality", author: "Ludwig von Mises" },
+      { text: "Inflation is not an act of God; it is not a catastrophe of the elements or a disease that comes like the plague. Inflation is a policy.", source: "Planning for Freedom", author: "Ludwig von Mises" },
+      { text: "All rational action is in the first place individual action. Only the individual thinks. Only the individual reasons. Only the individual acts.", source: "Socialism", author: "Ludwig von Mises" },
+      { text: "The program of liberalism, if condensed into a single word, would have to read: property, that is, private ownership of the means of production.", source: "Liberalism", author: "Ludwig von Mises" },
+      { text: "The root problem with conventional currency is all the trust that's required to make it work.", source: "P2P Foundation", author: "Satoshi Nakamoto" },
+      { text: "A purely peer-to-peer version of electronic cash would allow online payments to be sent directly from one party to another without going through a financial institution.", source: "Bitcoin Whitepaper", author: "Satoshi Nakamoto" },
+      { text: "The Times 03/Jan/2009 Chancellor on brink of second bailout for banks.", source: "Genesis Block", author: "Satoshi Nakamoto" },
+      { text: "It might make sense just to get some in case it catches on.", source: "P2P Foundation", author: "Satoshi Nakamoto" },
+      { text: "Lost coins only make everyone else's coins worth slightly more. Think of it as a donation to everyone.", source: "BitcoinTalk", author: "Satoshi Nakamoto" },
+      { text: "Governments are good at cutting off the heads of centrally controlled networks like Napster, but pure P2P networks like Gnutella and Tor seem to be holding their own.", source: "P2P Foundation", author: "Satoshi Nakamoto" },
+      { text: "If you don't believe me or don't get it, I don't have time to try to convince you, sorry.", source: "BitcoinTalk", author: "Satoshi Nakamoto" },
+      { text: "The nature of Bitcoin is such that once version 0.1 was released, the core design was set in stone for the rest of its lifetime.", source: "BitcoinTalk", author: "Satoshi Nakamoto" },
+      { text: "I'm sure that in 20 years there will either be very large transaction volume or no volume.", source: "Email to Mike Hearn", author: "Satoshi Nakamoto" },
+      { text: "Video games are bad for you? That's what they said about rock and roll.", source: "Interview", author: "Shigeru Miyamoto" },
+      { text: "A good idea is something that does not solve just one single problem, but rather can solve multiple problems at once.", source: "Interview", author: "Shigeru Miyamoto" },
+      { text: "I think that inside every adult is the heart of a child. We just gradually convince ourselves that we have to act more like adults.", source: "Interview", author: "Shigeru Miyamoto" },
+      { text: "The obvious objective of video games is to entertain people by surprising them with new experiences.", source: "Interview", author: "Shigeru Miyamoto" },
+      { text: "To create a new standard, you have to be up for that challenge and really enjoy it.", source: "Interview", author: "Shigeru Miyamoto" },
+      { text: "Above all, video games are meant to be just one thing: fun. Fun for everyone.", source: "Interview", author: "Shigeru Miyamoto" },
+      { text: "What I always try to do is create a new type of surprise that is new to the world.", source: "GDC Keynote", author: "Shigeru Miyamoto" },
+      { text: "I think that the best way to make a new game is to have all the people involved communicate actively and passionately.", source: "Interview", author: "Shigeru Miyamoto" }
     ];
 
     /* Pick a random quote from the array. Math.random() returns 0-0.999...,
@@ -452,8 +478,18 @@
 
     /* Inject the formatted quote into the CRT screen. The innerHTML includes
      * typographic quotes, a line break, and an attributed source line. */
-    document.getElementById("random-quote").innerHTML =
-      "&ldquo;" + q.text + "&rdquo;<br><small>&mdash; Samwise Gamgee, <em>" + q.source + "</em></small>";
+    var el = document.getElementById("random-quote");
+    el.innerHTML =
+      "&ldquo;" + q.text + "&rdquo;<br><small>&mdash; " + q.author + ", <em>" + q.source + "</em></small>";
+
+    /* Auto-fit: shrink font size in small steps until the content fits within
+     * the fixed-height screen surface. Stops at 8px to stay legible. */
+    var surface = el.closest(".crt-screen-surface");
+    var fontSize = parseFloat(window.getComputedStyle(el).fontSize);
+    while (surface && el.scrollHeight > surface.clientHeight && fontSize > 8) {
+      fontSize -= 0.5;
+      el.style.fontSize = fontSize + "px";
+    }
   </script>
 
   <!-- Shared ticker script — fetches live market data for the scrolling bar. -->
