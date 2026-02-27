@@ -998,6 +998,81 @@ footer .container {
 
 
 /* --------------------------------------------------------------------------
+   .interests-dropdown — DESKTOP-ONLY INTERESTS LINK PANEL
+   A compact dropdown triggered by the "interests" button in the desktop nav.
+   Separate from site-drawer (which is used only by the mobile menu button).
+   Positioned centered below the nav bar, same anchor as site-drawer.
+   -------------------------------------------------------------------------- */
+.interests-dropdown {
+  position: absolute;
+  left: 50%;
+  top: calc(100% + 0.28rem);
+  width: 200px;
+  transform: translateX(-50%) translateY(-4px) scale(0.97);
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+  z-index: 200;
+  background:
+    linear-gradient(160deg, rgba(38, 28, 18, 0.98), rgba(22, 15, 8, 0.99));
+  border: 1px solid rgba(140, 120, 70, 0.18);
+  border-radius: 3px;
+  padding: 0.7rem 0.9rem 0.8rem;
+  box-shadow:
+    0 8px 32px rgba(0, 0, 0, 0.55),
+    0 2px 8px rgba(0, 0, 0, 0.3);
+  transition:
+    opacity 0.22s ease,
+    transform 0.22s ease,
+    visibility 0s linear 0.22s;
+}
+
+.interests-dropdown.open {
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
+  transform: translateX(-50%) translateY(0) scale(1);
+  transition-delay: 0s;
+}
+
+.interests-dropdown a {
+  position: relative;
+  display: block;
+  color: #9e9472;
+  font-family: "IM Fell English SC", "Georgia", serif;
+  font-size: 0.84rem;
+  text-decoration: none;
+  padding: 0.22rem 0;
+}
+
+.interests-dropdown a::after {
+  content: "";
+  position: absolute;
+  bottom: 0.1rem;
+  left: 0;
+  right: 0;
+  height: 1px;
+  background: #d4c07a;
+  opacity: 0;
+  transition: opacity 0.18s ease;
+}
+
+.interests-dropdown a:hover {
+  color: #d4c07a;
+}
+
+.interests-dropdown a:hover::after {
+  opacity: 1;
+}
+
+/* Hidden on mobile — the site-drawer handles full nav there */
+@media (max-width: 760px) {
+  .interests-dropdown {
+    display: none;
+  }
+}
+
+/* --------------------------------------------------------------------------
    .stage-copy — HOMEPAGE HERO PANEL ("THE OPEN BOOK")
    A richly textured panel that serves as the main visual centerpiece on the
    homepage. It's placed via CSS Grid (grid-area: copy) and uses flexbox
@@ -6044,15 +6119,13 @@ footer .container {
     padding: 0.84rem 0.92rem 0.88rem;
   }
 
-  /* Hide the first drawer-group (which duplicates the main nav links
-     already visible in the header bar on desktop). */
+  /* On desktop, hide all drawer groups except interests — About, Projects,
+     and the contact icons are already present in the nav bar. */
   .drawer-group {
     display: none;
   }
 
-  /* Re-show only the second drawer-group, which contains supplementary
-     content that isn't part of the main header navigation. */
-  .drawer-group:nth-child(2) {
+  .drawer-group--interests {
     display: block;
   }
 }

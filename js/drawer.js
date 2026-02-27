@@ -102,3 +102,42 @@
     }
   });
 })();
+
+/* ── Desktop interests dropdown ───────────────────────────────────────────
+ * A separate, lightweight controller for the desktop-only interests dropdown.
+ * Targets [data-interests-toggle] buttons and the #interests-dropdown panel.
+ * Operates independently of the mobile site-drawer above.
+ */
+(function () {
+  var toggle   = document.querySelector('[data-interests-toggle]');
+  var dropdown = document.getElementById('interests-dropdown');
+
+  if (!toggle || !dropdown) return;
+
+  function setOpen(isOpen) {
+    dropdown.classList.toggle('open', isOpen);
+    toggle.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
+  }
+
+  toggle.addEventListener('click', function (event) {
+    event.stopPropagation();
+    setOpen(!dropdown.classList.contains('open'));
+  });
+
+  dropdown.querySelectorAll('a').forEach(function (link) {
+    link.addEventListener('click', function () { setOpen(false); });
+  });
+
+  document.addEventListener('click', function (event) {
+    if (!dropdown.contains(event.target) && !toggle.contains(event.target)) {
+      setOpen(false);
+    }
+  });
+
+  document.addEventListener('keydown', function (event) {
+    if (event.key === 'Escape') {
+      setOpen(false);
+      toggle.focus();
+    }
+  });
+})();
