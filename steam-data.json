@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-02-28T08:21:36.287Z",
+  "fetchedAt": "2026-03-01T08:24:17.897Z",
   "profile": {
     "name": "tenderbrew",
     "profileUrl": "https://steamcommunity.com/id/tenderbrew/",
@@ -7,22 +7,22 @@
   },
   "stats": {
     "totalGames": 497,
-    "totalHours": 3453,
-    "playedCount": 229,
-    "neverPlayed": 268,
+    "totalHours": 3454,
+    "playedCount": 230,
+    "neverPlayed": 267,
     "playtimeBuckets": {
       "100h+": 8,
       "50-100h": 8,
       "10-50h": 39,
       "1-10h": 99,
-      "<1h": 75
+      "<1h": 76
     }
   },
   "recentlyPlayed": [
     {
       "appid": 686060,
       "name": "Mewgenics",
-      "hours_2weeks": 5.8,
+      "hours_2weeks": 5,
       "hours_total": 6.4,
       "img_icon_url": "7ea8a70012dbedf73b6855e5e68ce504dd052998"
     },
@@ -46,6 +46,13 @@
       "hours_2weeks": 3.8,
       "hours_total": 3.8,
       "img_icon_url": "9e062d05f797a28b9c33ccc046b22bf09b1de5f2"
+    },
+    {
+      "appid": 3764200,
+      "name": "Resident Evil Requiem",
+      "hours_2weeks": 0.8,
+      "hours_total": 0.8,
+      "img_icon_url": "382b0b74c3154fae52a33be0108e1748f87a9478"
     }
   ],
   "topByPlaytime": [
