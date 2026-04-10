@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-04-09T09:01:17.152Z",
+  "fetchedAt": "2026-04-10T09:02:10.620Z",
   "profile": {
     "name": "tenderbrew",
     "profileUrl": "https://steamcommunity.com/id/tenderbrew/",
@@ -7,7 +7,7 @@
   },
   "stats": {
     "totalGames": 498,
-    "totalHours": 3459,
+    "totalHours": 3463,
     "playedCount": 232,
     "neverPlayed": 266,
     "playtimeBuckets": {
@@ -20,6 +20,13 @@
   },
   "recentlyPlayed": [
     {
+      "appid": 3784030,
+      "name": "RACCOIN: Coin Pusher Roguelike",
+      "hours_2weeks": 3.1,
+      "hours_total": 3.1,
+      "img_icon_url": "dcd64762cf678a859c7a527303bd9c77f6fba61d"
+    },
+    {
       "appid": 703080,
       "name": "Planet Zoo",
       "hours_2weeks": 2.7,
@@ -29,16 +36,9 @@
     {
       "appid": 1086940,
       "name": "Baldur's Gate 3",
-      "hours_2weeks": 1.6,
-      "hours_total": 122.5,
+      "hours_2weeks": 2,
+      "hours_total": 124.4,
       "img_icon_url": "d866cae7ea1e471fdbc206287111f1b642373bd9"
-    },
-    {
-      "appid": 3784030,
-      "name": "RACCOIN: Coin Pusher Roguelike",
-      "hours_2weeks": 1.1,
-      "hours_total": 1.1,
-      "img_icon_url": "dcd64762cf678a859c7a527303bd9c77f6fba61d"
     },
     {
       "appid": 2105620,
@@ -95,7 +95,7 @@
     {
       "appid": 1086940,
       "name": "Baldur's Gate 3",
-      "hours": 122.5,
+      "hours": 124.4,
       "img_icon_url": "d866cae7ea1e471fdbc206287111f1b642373bd9"
     },
     {
