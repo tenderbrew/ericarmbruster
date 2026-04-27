@@ -264,31 +264,35 @@
       font-size: 0.9rem;
       font-weight: 400;
     }
+    /* Mobile tape — ditch flex-wrap (which produced ragged rows because each
+       cell had a different content width) for a fixed grid. 6 cells become a
+       clean 3x2 at small-tablet width and 2x3 on phones, with each cell
+       stacking its label above its value. */
     @media (max-width: 740px) {
-      .econ-tape { gap: var(--space-2); padding: var(--space-2) var(--space-3); }
+      .econ-tape {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: var(--space-3) var(--space-2);
+        padding: var(--space-3);
+      }
       .econ-tape-sep { display: none; }
+      .econ-tape-cell {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 2px;
+        white-space: normal;
+      }
       .econ-tape-label { font-size: 0.62rem; letter-spacing: 0.12em; }
       .econ-tape-value { font-size: 0.85rem; }
     }
-
-    .econ-section-head {
-      font-family: var(--font-serif); font-style: italic; font-weight: 400;
-      font-size: 1.7rem; color: var(--ink); margin: var(--space-8) 0 var(--space-3);
-      padding-bottom: var(--space-3); border-bottom: 1px solid var(--rule);
-      display: flex; justify-content: space-between; align-items: baseline; gap: var(--space-4);
-    }
-    .econ-status {
-      font-family: var(--font-serif); font-style: italic;
-      font-size: 0.95rem; color: var(--ink-3); margin: 0;
+    @media (max-width: 460px) {
+      .econ-tape { grid-template-columns: repeat(2, 1fr); }
     }
 
-    /* Two-column layout: indicators on the left, the wire sidebar on the right. */
-    .econ-layout {
-      display: grid;
-      grid-template-columns: 3fr 1fr;
-      gap: var(--space-7);
-      margin-top: var(--space-3);
-    }
+    /* Stacked, full-width rhythm: indicators → wire → research desk. The
+       previous 3:1 split crowded the indicator grid and orphaned the news rail;
+       now each terminal panel reads top-to-bottom. */
 
     /* ── INDICATORS TERMINAL ─────────────────────────────────────────────
        Aggressive Bloomberg-on-CRT panel embedded in the cream page.
@@ -381,10 +385,11 @@
     }
 
     /* Indicator grid — sits inside the terminal panel. Dense Bloomberg-style
-       columns: each card has min 8rem so 4–6 fit per row depending on width. */
+       columns: each card has min 10rem so values like "21,615.10 $T" don't
+       wrap and ~6 fit per row at full container width. */
     .econ-indicator-grid {
       display: grid;
-      grid-template-columns: repeat(auto-fill, minmax(8rem, 1fr));
+      grid-template-columns: repeat(auto-fill, minmax(10rem, 1fr));
       gap: 0;
       padding: 0;
       margin-bottom: 2px;
@@ -454,14 +459,29 @@
       .econ-terminal-title::after { animation: none; }
     }
 
-    /* News list (the Wire) — sits inside an .econ-terminal panel. */
-    .econ-news-list { list-style: none; padding: 0; margin: 0 0 2px; }
+    /* News list (the Wire) — sits inside an .econ-terminal panel. Two columns
+       at desktop so the full-width panel doesn't read as a single skinny rail;
+       collapses to one column on narrow viewports. */
+    .econ-news-list {
+      list-style: none;
+      padding: 0;
+      margin: 0 0 2px;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(22rem, 1fr));
+      gap: 0;
+    }
     .econ-terminal .econ-news-list li {
       padding: var(--space-3) var(--space-5);
+      border-right: 1px solid rgba(255, 170, 51, 0.08);
       border-bottom: 1px solid rgba(255, 170, 51, 0.08);
       margin: 0;
     }
-    .econ-terminal .econ-news-list li:last-child { border-bottom: none; }
+    /* Strip the right border from items in the rightmost column so the panel
+       edge stays clean. nth-child(even) covers the typical 2-col case. */
+    .econ-terminal .econ-news-list li:nth-child(even) { border-right: none; }
+    @media (max-width: 700px) {
+      .econ-terminal .econ-news-list li { border-right: none; }
+    }
     .econ-terminal .econ-news-list a {
       display: block;
       font-family: var(--font-mono);
@@ -543,14 +563,23 @@
       letter-spacing: 0.08em;
     }
 
+    /* Note: .econ-reading-columns rules MUST match the base rule's
+       .econ-terminal .econ-reading-columns selector or the base wins on
+       specificity and the dossier grid stays 3-up on every viewport. */
     @media (max-width: 880px) {
       .econ-title { font-size: 2.4rem; }
-      .econ-layout { grid-template-columns: 1fr; }
-      .econ-reading-columns { grid-template-columns: repeat(2, 1fr); }
-      .econ-section-head { flex-direction: column; align-items: flex-start; gap: var(--space-2); }
+      .econ-terminal .econ-reading-columns { grid-template-columns: repeat(2, 1fr); }
+    }
+    /* Force a clean 2-up indicator grid on small tablets and phones. With
+       auto-fill, minmax(10rem, 1fr) the grid would pack 3 narrow cards in
+       this range, which makes long titles like "Velocity of Money (M2)"
+       wrap to 2 lines on some cards and not others — the resulting row
+       height variance is what reads as "misaligned". */
+    @media (max-width: 700px) {
+      .econ-indicator-grid { grid-template-columns: repeat(2, 1fr); }
     }
     @media (max-width: 540px) {
-      .econ-reading-columns { grid-template-columns: 1fr; }
+      .econ-terminal .econ-reading-columns { grid-template-columns: 1fr; }
     }
   </style>
 </head>
@@ -560,12 +589,12 @@
   <header class="site-header">
     <div class="site-header__inner">
       <a class="brand" href="index.html">Eric Armbruster</a>
+      <div class="site-utility">
+        <a class="site-utility__icon" href="about.html" aria-label="About"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"><circle cx="12" cy="8" r="4"/><path d="M4 21c0-4.4 3.6-8 8-8s8 3.6 8 8"/></svg></a>
+        <a class="site-utility__icon" href="projects.html" aria-label="Projects"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M9 7l-5 5 5 5"/><path d="M15 7l5 5-5 5"/></svg></a>
+        <a class="site-utility__icon" href="mailto:eric.m.armbruster@gmail.com" aria-label="Contact"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="1.5"/><path d="M3 7l9 7 9-7"/></svg></a>
+      </div>
       <div class="site-header__nav">
-        <div class="site-utility">
-          <a class="site-utility__icon" href="about.html" aria-label="About"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"><circle cx="12" cy="8" r="4"/><path d="M4 21c0-4.4 3.6-8 8-8s8 3.6 8 8"/></svg></a>
-          <a class="site-utility__icon" href="projects.html" aria-label="Projects"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M9 7l-5 5 5 5"/><path d="M15 7l5 5-5 5"/></svg></a>
-          <a class="site-utility__icon" href="mailto:eric.m.armbruster@gmail.com" aria-label="Contact"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="1.5"/><path d="M3 7l9 7 9-7"/></svg></a>
-        </div>
         <nav class="site-shelf" aria-label="Sections">
           <a class="site-shelf__book" href="video-games.html" style="--book-color: var(--c-vg);" aria-label="Video games"></a>
           <a class="site-shelf__book" href="film.html" style="--book-color: var(--c-film);" aria-label="Film"></a>
@@ -624,23 +653,21 @@
       </p>
     </header>
 
-    <div class="econ-layout">
-      <article class="econ-terminal">
-        <header class="econ-terminal-bar">
-          <span class="econ-terminal-title">Indicators</span>
-          <span id="econ-indicator-status" class="econ-terminal-status" role="status">Loading data feeds&hellip;</span>
-        </header>
-        <div id="econ-indicator-grid" class="econ-indicator-grid" aria-live="polite"></div>
-      </article>
+    <article class="econ-terminal">
+      <header class="econ-terminal-bar">
+        <span class="econ-terminal-title">Indicators</span>
+        <span id="econ-indicator-status" class="econ-terminal-status" role="status">Loading data feeds&hellip;</span>
+      </header>
+      <div id="econ-indicator-grid" class="econ-indicator-grid" aria-live="polite"></div>
+    </article>
 
-      <aside class="econ-terminal">
-        <header class="econ-terminal-bar">
-          <span class="econ-terminal-title">The Wire</span>
-          <span id="econ-news-status" class="econ-terminal-status" role="status">Loading Mises feed&hellip;</span>
-        </header>
-        <ul id="econ-news-list" class="econ-news-list"></ul>
-      </aside>
-    </div>
+    <aside class="econ-terminal">
+      <header class="econ-terminal-bar">
+        <span class="econ-terminal-title">The Wire</span>
+        <span id="econ-news-status" class="econ-terminal-status" role="status">Loading Mises feed&hellip;</span>
+      </header>
+      <ul id="econ-news-list" class="econ-news-list"></ul>
+    </aside>
 
     <article class="econ-terminal">
       <header class="econ-terminal-bar">
