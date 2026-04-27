@@ -6,57 +6,62 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 Hand-written static personal site served at `www.ericarmbruster.com` via GitHub Pages (the `CNAME` file). No build step, no bundler, no `package.json`, no test suite — every page is a stand-alone `.html` file at the repo root that the browser loads directly.
 
-Aesthetic and structural reference is `mempool.space` — dark navy dashboard, thin-bordered panels, monospace numerical readouts. This is intentional and pervasive; new UI should match it (see the design tokens at the top of `css/styles.css`).
+Visual language is **Tufte-warm aged paper**: aged-tan surface (`--paper #ddc89a`), warm near-black ink, EB Garamond serif body, IBM Plex Mono only for true tabular data, a single manuscript red (`--accent-red #7a1c1c`) reserved for emphasis, and one spot color per "room" (`--c-vg`, `--c-film`, `--c-econ`, `--c-sh`, `--c-seymour`, `--c-bitcoin`, `--c-projects`, `--c-about`). Tokens live at the top of `css/tufte-base.css`. Always reach for the tokens; don't hard-code colors.
+
+Pages: `index`, `about`, `projects`, `video-games`, `film`, `economics`, `self-hosting`, `seymour`, `bitcoin`. Body class is `.<page>-page` on every sub-page; homepage has plain `<body>`.
 
 ## Working on the site
 
-- **Preview locally:** serve from the repo root with any static file server so relative paths (`css/...`, `images/...`, `steam-data.json`) resolve. Opening an HTML file directly via `file://` works for visual checks but breaks `fetch()` calls.
-- **Steam data refresh (manual):** `node steam-fetch.js` — requires `.env` with `STEAM_API_KEY` and `STEAM_ID`. Writes `steam-data.json` (pretty-printed so daily diffs stay readable).
-- **Steam data refresh (automatic):** `.github/workflows/update-steam.yml` runs daily at 08:00 UTC and on `workflow_dispatch`. Secrets are injected from repo settings; the workflow only commits if the JSON actually changed.
+- **Preview locally:** serve from the repo root with any static file server so relative paths (`css/...`, `images/...`, `steam-data.json`) resolve. `file://` works for visual checks but breaks `fetch()` for `steam-data.json`.
+- **Steam data refresh (manual):** `node steam-fetch.js` — needs `.env` with `STEAM_API_KEY` and `STEAM_ID`. Writes pretty-printed `steam-data.json`.
+- **Steam data refresh (automatic):** `.github/workflows/update-steam.yml` runs daily at 08:00 UTC. *Heads-up*: this means upstream `main` often has a commit you don't have locally — `git pull --rebase origin main` before pushing.
 
-There is no lint or test command. Validation is "open the page in a browser and look at it."
+There is no lint or test command. Validation is "open it in a browser." If you make UI changes you can't preview yourself, say so explicitly rather than claiming success.
 
 ## Architecture
 
 ### One HTML file per page, no templating
 
-Pages: `index`, `about`, `projects`, `video-games`, `film`, `economics`, `self-hosting`, `seymour`, `bitcoin`. Navigation is plain `<a href>` between them.
+Navigation is plain `<a href>` between files. The site header markup (`.site-header` containing `.site-utility` icons + `.site-shelf` mini-bookshelf) and the site footer are **duplicated across every page** — there is no shared layout or include system. When you change shared chrome, grep for the markup and update every copy. The current page is marked with `aria-current="page"` on the matching utility icon and/or shelf book.
 
-The header, footer, ticker tape, and drawer markup are **duplicated across every page** — there is no shared layout or include system. When you change shared chrome (nav links, footer text, ticker tape items), update every HTML file. Grep for the markup you're changing to find every copy.
+The homepage has the *full* large bookshelf as its main content, so its header has the utility icons but **no mini shelf**. Sub-pages have both. `.site-header__inner { min-height: 42px }` keeps header height consistent between the two.
 
-### CSS layering
+### CSS — what's live and what's vestigial
 
-1. `css/styles.css` — design tokens (CSS custom properties for colors, spacing, type scale, fonts) plus base components (`.site-header`, `.panel`, `.tag`, `.stat`, ticker tape, drawer). Loaded by every page.
-2. `css/<page>-styles.css` (e.g. `vg-styles.css`, `bitcoin-styles.css`) — styles specific to one page's widgets.
-3. A page-local `<style>` block in `<head>` for one-off layout (the homepage widget grid, hero, etc.).
+**Live, loaded by HTML:**
+- `css/tufte-base.css` — loaded by every page. Design tokens, typography, `.site-header`, `.site-utility`, `.site-shelf`, `.site-footer`, base anchor styles. This is the only universal stylesheet.
+- `css/sy-styles.css` — loaded *only* by `seymour.html` (the photo-essay memorial page). Cormorant Italic, photo-essay layouts.
 
-Always reach for the tokens in `:root` (`--surface`, `--border`, `--accent`, `--bitcoin`, `--space-*`, `--font-mono`, etc.) rather than hard-coding values — it keeps the visual language consistent.
+**Vestigial — NOT loaded by any HTML:**
+- `css/styles.css`, `css/vg-styles.css`, `css/bitcoin-styles.css`, `css/econ-styles.css`, `css/film-styles.css`, `css/sh-styles.css`, `css/proj-styles.css`, `css/about-styles.css` — all leftover from the prior mempool-style dark dashboard. Kept around but not active. **Don't edit these expecting changes to ship**; don't link them back in without a reason. They're worth touching only if you're explicitly cleaning them up.
 
-### JS layering
+Page-specific styles for everything except seymour live in a `<style>` block in the page's `<head>`. That's where to put per-page widget styling.
 
-- **Site-wide scripts** loaded on every page:
-  - `js/drawer.js` — slide-out nav drawer + desktop "interests" dropdown. Two independent IIFEs, each guards on element presence.
-  - `js/ticker.js` — populates the top ticker tape with FRED series (8 macro indicators), CoinGecko BTC, Yahoo Finance DJIA. Each ticker `<span>` is matched via `data-ticker="SYMBOL"`. The HTML duplicates the ticker spans for the seamless CSS scroll, so updates target *all* matching spans.
-- **Page-specific JS** is written inline as IIFEs at the bottom of each HTML file — there are no external page-specific JS files. `bitcoin.html`, `economics.html`, `film.html`, and `video-games.html` are the heaviest.
+### Two CSS gotchas to avoid
 
-### Live data and CORS
+1. **Per-page link colors must be scoped to `main`.** The base anchor uses the page's spot color. If you write `.vg-page a { color: var(--c-vg) }` it cascades into the site-header anchors too and turns the utility icons / shelf books that color (which is unreadable on several pages). **Always write `.<page>-page main a { ... }`.** Same goes for `:hover`. Search for an existing page's `main a` rule before adding a new one.
+2. **Shelf book backgrounds need the `background:` shorthand.** The base `a` rule sets `background-size: 100% 1px` (underline trick). If `.site-shelf__book` only sets `background-image:`, that 1-pixel size is inherited and clips the cloth gradient to a strip. The current rule uses the `background:` shorthand (which resets all bg sub-properties); preserve that. Same trap if you add other elements that ride on `<a>` and use a gradient.
 
-`ticker.js` uses a **CORS-proxy fallback chain** for any source that doesn't send CORS headers (FRED, Yahoo Finance):
+### JS — what's live and what's vestigial
 
-1. Codetabs (`api.codetabs.com/v1/proxy/?quest=...`)
-2. AllOrigins `/get` (JSON-wrapped, may return data-URI payloads — handled by `decodeDataPayload`)
-3. AllOrigins `/raw`
+- **Live:** Google Analytics inline snippet in every `<head>`. The `video-games.html` inline IIFE that fetches `steam-data.json` at page load.
+- **Vestigial:** `js/drawer.js` and `js/ticker.js` — the slide-out nav drawer and FRED/CoinGecko ticker tape from the dashboard era. Not referenced from any HTML. Don't add them back without a reason.
 
-`Promise.allSettled` is used so one failed series doesn't kill the others, and individual fetches are wrapped in `try/catch` so the rest of the ticker keeps working. Apply the same pattern when adding new live data: assume external APIs will fail, degrade gracefully (leave placeholder text), and never let one failure block another fetch.
-
-CoinGecko and `mempool.space` send CORS headers, so they're called directly without a proxy.
+Page-specific JS is written inline as IIFEs at the bottom of each HTML file; there are no external page-specific JS files.
 
 ### The Steam pipeline
 
-`video-games.html` does not call the Steam API at runtime. The data flow is:
+`video-games.html` does not call the Steam API at runtime. The flow is:
 
 ```
-GitHub Actions (daily) → steam-fetch.js → steam-data.json (committed) → video-games.html (fetch at page load)
+GitHub Actions (daily) → steam-fetch.js → steam-data.json (committed) → video-games.html (fetch at load)
 ```
 
-The shape of `steam-data.json` is a contract between `steam-fetch.js` and `video-games.html`. If you change one side, change the other. Top-level keys: `fetchedAt`, `profile`, `stats` (incl. `playtimeBuckets`), `recentlyPlayed`, `topByPlaytime`.
+Shape of `steam-data.json` is a contract between `steam-fetch.js` and `video-games.html`. If you change one side, change the other. Top-level keys: `fetchedAt`, `profile`, `stats` (incl. `playtimeBuckets`), `recentlyPlayed`, `topByPlaytime`.
+
+## Design preferences (durable)
+
+- **Skeuomorphic charm over flat uniformity.** Each section gets one or two unique, hand-crafted touches (book spines on the homepage shelf, tipped-in portraits, postcards, ledgers). Don't unify pages with a single repeating component.
+- **Static CSS only.** No scroll-jacking, no parallax, no entrance animations, no JS-driven layout. Hover states are fine; motion-on-scroll is not.
+- **Plain, professional copy.** No twee voice, no "kept by hand" / "by the spirit" / character asides about Hector. Eric removes these on sight.
+- **Don't invent biographical details, inventory items, or hardware model numbers.** Use what's in the repo, in memory, or ask. This applies to the self-hosting service list, About-page bio, and any "what I use" content.
