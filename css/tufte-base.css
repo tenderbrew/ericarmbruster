@@ -180,9 +180,9 @@ li { margin: var(--space-2) 0; }
 }
 .site-header .brand {
   font-family: var(--font-serif);
-  font-style: italic;
-  font-size: 1.05rem;
-  color: var(--ink);
+  font-weight: 500;
+  font-size: 1.3rem;
+  color: var(--accent-red);
   background: none;
   line-height: 1.4;
 }
