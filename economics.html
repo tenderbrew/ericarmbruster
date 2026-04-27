@@ -339,6 +339,11 @@
       border-bottom: 1px solid rgba(255, 170, 51, 0.22);
       background: rgba(255, 170, 51, 0.05);
       margin-top: 2px;
+      /* Allow status (with white-space: nowrap) to drop to its own row
+         when the panel is too narrow to fit it inline next to the title.
+         Only wraps when needed; on desktop everything stays on one line. */
+      flex-wrap: wrap;
+      row-gap: 4px;
     }
     .econ-terminal-bar::before {
       content: 'MKT://';
