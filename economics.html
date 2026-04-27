@@ -727,11 +727,13 @@
   </footer>
 
   <!--
-    Economics data pipeline — preserved verbatim.
-    Targets: #econ-indicator-grid (cards appended dynamically with classes
-    .econ-indicator-card / .econ-indicator-value / .econ-series-code /
-    .econ-indicator-meta), #econ-indicator-status, #econ-news-list,
-    #econ-news-status, #econ-last-refresh.
+    Economics data pipeline.
+    Reads econ-data.json (refreshed every 6h by .github/workflows/update-econ.yml,
+    written by econ-fetch.js). Targets: #econ-indicator-grid (cards appended
+    dynamically with classes .econ-indicator-card / .econ-indicator-value /
+    .econ-series-code / .econ-indicator-meta), #econ-indicator-status,
+    #econ-news-list, #econ-news-status, #econ-last-refresh, plus the [data-tape]
+    cells in the top-of-page tape strip.
   -->
   <script>
     (function () {
@@ -741,6 +743,10 @@
       var newsStatus = document.getElementById('econ-news-status');
       var refreshText = document.getElementById('econ-last-refresh');
 
+      // Display metadata. Order here drives card order on the page.
+      // CPI_YOY is computed server-side (econ-fetch.js); marking derived: true
+      // suppresses the FRED deep-link since fred.stlouisfed.org/series/CPI_YOY
+      // doesn't exist.
       var indicatorDefinitions = [
         { id: 'UNRATE', name: 'Unemployment Rate', unit: '%', decimals: 1 },
         { id: 'PAYEMS', name: 'Payroll Employment', unit: 'M jobs', decimals: 1, transform: function (v) { return v / 1000; } },
@@ -780,29 +786,6 @@
         var date = new Date(dateString);
         if (Number.isNaN(date.getTime())) return 'Unknown date';
         return new Intl.DateTimeFormat('en-US', { month: 'short', day: 'numeric', year: 'numeric' }).format(date);
-      }
-
-      function decodeDataPayload(contents) {
-        if (!contents) return '';
-        if (contents.indexOf('data:') !== 0) return contents;
-        var comma = contents.indexOf(',');
-        if (comma === -1) return contents;
-        var metadata = contents.slice(0, comma);
-        var payload = contents.slice(comma + 1);
-        if (metadata.indexOf(';base64') !== -1) return atob(payload);
-        return decodeURIComponent(payload);
-      }
-
-      function parseFredCsv(csvText) {
-        var lines = csvText.split(/\r?\n/).filter(Boolean);
-        if (lines.length < 2) return [];
-        return lines.slice(1).map(function (line) {
-          var parts = line.split(',');
-          if (parts.length < 2) return null;
-          var value = Number(parts[1]);
-          if (!Number.isFinite(value)) return null;
-          return { date: parts[0], value: value };
-        }).filter(Boolean);
       }
 
       function createIndicatorCard(definition) {
@@ -869,118 +852,27 @@
         }
       }
 
-      async function fetchTextViaCodetabs(sourceUrl) {
-        var r = await fetch('https://api.codetabs.com/v1/proxy/?quest=' + encodeURIComponent(sourceUrl), { cache: 'no-store' });
-        if (!r.ok) throw new Error('Codetabs HTTP ' + r.status);
-        return r.text();
-      }
-      async function fetchTextViaAllOriginsGet(sourceUrl) {
-        var r = await fetch('https://api.allorigins.win/get?url=' + encodeURIComponent(sourceUrl), { cache: 'no-store' });
-        if (!r.ok) throw new Error('AllOrigins/get HTTP ' + r.status);
-        var p = await r.json();
-        var d = decodeDataPayload(p.contents || '');
-        if (!d) throw new Error('AllOrigins/get empty');
-        return d;
-      }
-      async function fetchTextViaAllOriginsRaw(sourceUrl) {
-        var r = await fetch('https://api.allorigins.win/raw?url=' + encodeURIComponent(sourceUrl), { cache: 'no-store' });
-        if (!r.ok) throw new Error('AllOrigins/raw HTTP ' + r.status);
-        return r.text();
-      }
-      async function fetchTextWithFallbacks(sourceUrl, validate) {
-        var attempts = [fetchTextViaAllOriginsRaw, fetchTextViaAllOriginsGet, fetchTextViaCodetabs];
-        var lastError = null;
-        for (var i = 0; i < attempts.length; i += 1) {
-          try {
-            var text = await attempts[i](sourceUrl);
-            if (!validate || validate(text)) return text;
-            lastError = new Error('Response failed validation');
-          } catch (err) { lastError = err; }
-        }
-        throw lastError || new Error('All proxies failed');
-      }
-
-      async function fetchFredSeries(seriesId) {
-        var sourceUrl = 'https://fred.stlouisfed.org/graph/fredgraph.csv?id=' + encodeURIComponent(seriesId);
-        var csv = await fetchTextWithFallbacks(sourceUrl, looksLikeFredCsv);
-        var points = parseFredCsv(csv);
-        if (!points.length) throw new Error('No data points');
-        return points;
-      }
-      function looksLikeFredCsv(text) {
-        if (!text) return false;
-        var head = text.slice(0, 32).trimStart().toLowerCase();
-        return head.indexOf('observation_date') === 0 || head.indexOf('date,') === 0;
-      }
-
-      function findLatestAndPrevious(points) {
-        if (!points.length) return { latest: null, previous: null };
-        var latest = points[points.length - 1];
-        var previous = points.length > 1 ? points[points.length - 2] : null;
-        return { latest: latest, previous: previous };
-      }
-
-      function findCpiYoY(points) {
-        if (!points.length) return null;
-        var latest = points[points.length - 1];
-        var latestDate = new Date(latest.date + 'T00:00:00');
-        var target = new Date(latestDate);
-        target.setFullYear(target.getFullYear() - 1);
-        var prior = null;
-        for (var i = points.length - 2; i >= 0; i -= 1) {
-          var pointDate = new Date(points[i].date + 'T00:00:00');
-          if (pointDate <= target) { prior = points[i]; break; }
-        }
-        if (!prior) return null;
-        return {
-          latest: { date: latest.date, value: ((latest.value / prior.value) - 1) * 100 },
-          previous: null
-        };
-      }
-
-      async function loadIndicators() {
-        indicatorDefinitions.forEach(createIndicatorCard);
-        var nonDerived = indicatorDefinitions.filter(function (def) { return !def.derived; });
-        var results = await Promise.allSettled(nonDerived.map(function (definition) {
-          return fetchFredSeries(definition.id).then(function (points) { return { definition: definition, points: points }; });
-        }));
-        var loaded = 0;
-        var cpiPoints = null;
-        results.forEach(function (result, index) {
-          var definition = nonDerived[index];
-          if (result.status !== 'fulfilled') {
-            console.warn('[econ] FRED feed failed for', definition.id, '-', result.reason && result.reason.message || result.reason);
-            setCardError(definition.id, 'Feed unavailable');
-            return;
-          }
-          var payload = result.value;
-          if (definition.id === 'CPIAUCSL') cpiPoints = payload.points;
-          var pair = findLatestAndPrevious(payload.points);
-          if (!pair.latest) { setCardError(definition.id, 'No data available'); return; }
-          updateCard(definition, pair.latest, pair.previous);
-          loaded += 1;
-        });
-        var cpiYoyDefinition = indicatorDefinitions.find(function (def) { return def.id === 'CPI_YOY'; });
-        if (cpiYoyDefinition) {
-          if (cpiPoints) {
-            var yoy = findCpiYoY(cpiPoints);
-            if (yoy && yoy.latest) { updateCard(cpiYoyDefinition, yoy.latest, yoy.previous); loaded += 1; }
-            else setCardError('CPI_YOY', 'Unable to compute YoY');
-          } else setCardError('CPI_YOY', 'Missing CPI source');
-        }
-        indicatorStatus.textContent = loaded + ' / ' + indicatorDefinitions.length + ' indicators updated.';
-      }
-
+      // RSS titles are server-decoded but may still contain entity-encoded
+      // characters; DOMParser handles both.
       function stripHtml(html) {
         var parsed = new DOMParser().parseFromString(html || '', 'text/html');
         return (parsed.body.textContent || '').trim();
       }
-      function classifyNewsItem(link) {
-        if (!link) return 'Update';
-        if (link.indexOf('/mises-wire/') !== -1) return 'Mises Wire';
-        if (link.indexOf('/podcasts/') !== -1) return 'Podcast';
-        return 'Article';
+
+      function renderNewsItems(items) {
+        newsList.textContent = '';
+        items.slice(0, 10).forEach(function (item) {
+          var li = document.createElement('li');
+          var a = document.createElement('a');
+          a.href = item.link; a.target = '_blank'; a.rel = 'noopener';
+          a.textContent = stripHtml(item.title || 'Untitled');
+          var meta = document.createElement('span');
+          meta.textContent = (item.kind || 'Article') + ' · ' + formatDate(item.pubDate);
+          li.appendChild(a); li.appendChild(meta);
+          newsList.appendChild(li);
+        });
       }
+
       function renderFallbackNews() {
         newsList.textContent = '';
         var fallbacks = [
@@ -995,59 +887,61 @@
           li.append(a, span); newsList.appendChild(li);
         });
       }
-      function parseRssItems(xmlText) {
-        var parsed = new DOMParser().parseFromString(xmlText, 'application/xml');
-        if (parsed.querySelector('parsererror')) throw new Error('Malformed RSS XML');
-        return Array.from(parsed.querySelectorAll('item')).map(function (item) {
-          function read(tagName) { var node = item.querySelector(tagName); return node ? node.textContent.trim() : ''; }
-          return { title: read('title'), link: read('link'), pubDate: read('pubDate') };
-        }).filter(function (item) { return item.title && item.link; });
-      }
-      function renderNewsItems(items) {
-        newsList.textContent = '';
-        items.slice(0, 10).forEach(function (item) {
-          var li = document.createElement('li');
-          var a = document.createElement('a');
-          a.href = item.link; a.target = '_blank'; a.rel = 'noopener';
-          a.textContent = stripHtml(item.title || 'Untitled');
-          var meta = document.createElement('span');
-          meta.textContent = classifyNewsItem(item.link) + ' · ' + formatDate(item.pubDate);
-          li.appendChild(a); li.appendChild(meta);
-          newsList.appendChild(li);
+
+      function applyIndicators(indicators) {
+        var loaded = 0;
+        indicatorDefinitions.forEach(function (def) {
+          var rec = indicators && indicators[def.id];
+          if (!rec || !rec.latest) {
+            setCardError(def.id, 'Feed unavailable');
+            return;
+          }
+          updateCard(def, rec.latest, rec.previous || null);
+          loaded += 1;
         });
-      }
-      async function loadNewsViaRss2Json(feedUrl) {
-        var rss2jsonUrl = 'https://api.rss2json.com/v1/api.json?rss_url=' + encodeURIComponent(feedUrl);
-        var response = await fetch(rss2jsonUrl, { cache: 'no-store' });
-        if (!response.ok) throw new Error('HTTP ' + response.status);
-        var payload = await response.json();
-        if (payload.status !== 'ok' || !Array.isArray(payload.items)) throw new Error('Invalid feed payload');
-        renderNewsItems(payload.items);
-      }
-      async function loadNews() {
-        var feedUrl = 'https://mises.org/feed';
-        try {
-          var xmlText = await fetchTextWithFallbacks(feedUrl);
-          var xmlItems = parseRssItems(xmlText);
-          if (!xmlItems.length) throw new Error('No RSS items');
-          renderNewsItems(xmlItems);
-          newsStatus.textContent = 'Latest from Mises.';
-        } catch (rssXmlError) {
-          console.warn('[econ] RSS XML pipeline failed -', rssXmlError && rssXmlError.message || rssXmlError);
-          await loadNewsViaRss2Json(feedUrl);
-          newsStatus.textContent = 'Latest from Mises.';
-        }
+        indicatorStatus.textContent = loaded + ' / ' + indicatorDefinitions.length + ' indicators updated.';
       }
 
-      Promise.allSettled([loadIndicators(), loadNews()]).then(function (results) {
-        if (results[1].status !== 'fulfilled') {
+      function applyNews(items) {
+        if (!items || !items.length) {
           newsStatus.textContent = 'News feed unavailable.';
           renderFallbackNews();
+          return;
         }
-        refreshText.textContent = 'Updated ' + new Date().toLocaleTimeString([], { hour: 'numeric', minute: '2-digit' });
-      }).catch(function () {
-        refreshText.textContent = 'Update failed';
-      });
+        renderNewsItems(items);
+        newsStatus.textContent = 'Latest from Mises.';
+      }
+
+      function refreshLabel(iso) {
+        if (iso) {
+          var d = new Date(iso);
+          if (!Number.isNaN(d.getTime())) {
+            return d.toLocaleString([], { month: 'short', day: 'numeric', hour: 'numeric', minute: '2-digit' });
+          }
+        }
+        return new Date().toLocaleTimeString([], { hour: 'numeric', minute: '2-digit' });
+      }
+
+      indicatorDefinitions.forEach(createIndicatorCard);
+
+      fetch('econ-data.json', { cache: 'no-store' })
+        .then(function (r) {
+          if (!r.ok) throw new Error('HTTP ' + r.status);
+          return r.json();
+        })
+        .then(function (data) {
+          applyIndicators(data.indicators || {});
+          applyNews(data.news || []);
+          refreshText.textContent = 'Updated ' + refreshLabel(data.fetchedAt);
+        })
+        .catch(function (err) {
+          console.warn('[econ] econ-data.json unavailable -', err && err.message || err);
+          indicatorDefinitions.forEach(function (def) { setCardError(def.id, 'Feed unavailable'); });
+          indicatorStatus.textContent = 'Data feed unavailable.';
+          newsStatus.textContent = 'News feed unavailable.';
+          renderFallbackNews();
+          refreshText.textContent = 'Update failed';
+        });
     })();
   </script>
 

@@ -12,9 +12,12 @@ Pages: `index`, `about`, `projects`, `video-games`, `film`, `economics`, `self-h
 
 ## Working on the site
 
-- **Preview locally:** serve from the repo root with any static file server so relative paths (`css/...`, `images/...`, `steam-data.json`) resolve. `file://` works for visual checks but breaks `fetch()` for `steam-data.json`.
+- **Preview locally:** serve from the repo root with any static file server so relative paths (`css/...`, `images/...`, `steam-data.json`, `econ-data.json`) resolve. `file://` works for visual checks but breaks `fetch()` for the JSON files.
 - **Steam data refresh (manual):** `node steam-fetch.js` — needs `.env` with `STEAM_API_KEY` and `STEAM_ID`. Writes pretty-printed `steam-data.json`.
-- **Steam data refresh (automatic):** `.github/workflows/update-steam.yml` runs daily at 08:00 UTC. *Heads-up*: this means upstream `main` often has a commit you don't have locally — `git pull --rebase origin main` before pushing.
+- **Steam data refresh (automatic):** `.github/workflows/update-steam.yml` runs daily at 08:00 UTC.
+- **Economics data refresh (manual):** `node econ-fetch.js` — no env vars required. Writes pretty-printed `econ-data.json` (FRED indicators + Mises Wire RSS).
+- **Economics data refresh (automatic):** `.github/workflows/update-econ.yml` runs every 6 hours.
+- *Heads-up*: because both workflows commit back to `main`, upstream often has commits you don't have locally — `git pull --rebase origin main` before pushing.
 
 There is no lint or test command. Validation is "open it in a browser." If you make UI changes you can't preview yourself, say so explicitly rather than claiming success.
 
@@ -58,6 +61,23 @@ GitHub Actions (daily) → steam-fetch.js → steam-data.json (committed) → vi
 ```
 
 Shape of `steam-data.json` is a contract between `steam-fetch.js` and `video-games.html`. If you change one side, change the other. Top-level keys: `fetchedAt`, `profile`, `stats` (incl. `playtimeBuckets`), `recentlyPlayed`, `topByPlaytime`.
+
+### The economics pipeline
+
+Same shape as Steam. `economics.html` does not hit FRED or the Mises feed at runtime — it reads a pre-baked JSON file:
+
+```
+GitHub Actions (every 6h) → econ-fetch.js → econ-data.json (committed) → economics.html (fetch at load)
+```
+
+Why pre-baked: the previous version fetched ~30 FRED CSVs through public CORS proxies (AllOrigins/Codetabs) at every page load, which timed out frequently. Server-side fetching needs no proxy and no API key (FRED's CSV endpoint is open).
+
+Shape of `econ-data.json`:
+- `fetchedAt` — ISO timestamp of the cron run
+- `indicators` — object keyed by FRED series ID. Each entry is `{ latest: {date, value}, previous: {date, value} | null }` or `null` if that series failed. CPI_YOY is computed from CPIAUCSL server-side.
+- `news` — array of up to 10 `{ title, link, pubDate, kind }` from the Mises RSS. `kind` is "Mises Wire" / "Podcast" / "Article" / "Update", classified by URL path.
+
+The `indicatorDefinitions` array in `economics.html` is the display contract (name, unit, decimals, transform, derived?). Order there drives card order. The series ID list in `econ-fetch.js` (`SERIES_IDS`) must stay in sync with non-derived definitions on the page. The top-of-page tape strip hydrates from the same data via `[data-tape="SERIES_ID"]` cells.
 
 ## Design preferences (durable)
 

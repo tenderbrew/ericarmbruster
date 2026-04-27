@@ -1,0 +1,364 @@
+{
+  "fetchedAt": "2026-04-27T18:16:43.601Z",
+  "indicators": {
+    "UNRATE": {
+      "latest": {
+        "date": "2026-03-01",
+        "value": 4.3
+      },
+      "previous": {
+        "date": "2026-02-01",
+        "value": 4.4
+      }
+    },
+    "PAYEMS": {
+      "latest": {
+        "date": "2026-03-01",
+        "value": 158637
+      },
+      "previous": {
+        "date": "2026-02-01",
+        "value": 158459
+      }
+    },
+    "JTSJOL": {
+      "latest": {
+        "date": "2026-02-01",
+        "value": 6882
+      },
+      "previous": {
+        "date": "2026-01-01",
+        "value": 7240
+      }
+    },
+    "ICSA": {
+      "latest": {
+        "date": "2026-04-18",
+        "value": 214000
+      },
+      "previous": {
+        "date": "2026-04-11",
+        "value": 208000
+      }
+    },
+    "CPIAUCSL": {
+      "latest": {
+        "date": "2026-03-01",
+        "value": 330.293
+      },
+      "previous": {
+        "date": "2026-02-01",
+        "value": 327.46
+      }
+    },
+    "CPILFESL": {
+      "latest": {
+        "date": "2026-03-01",
+        "value": 334.165
+      },
+      "previous": {
+        "date": "2026-02-01",
+        "value": 333.512
+      }
+    },
+    "T10YIE": {
+      "latest": {
+        "date": "2026-04-24",
+        "value": 2.42
+      },
+      "previous": {
+        "date": "2026-04-23",
+        "value": 2.42
+      }
+    },
+    "PCE": {
+      "latest": {
+        "date": "2026-02-01",
+        "value": 21615.1
+      },
+      "previous": {
+        "date": "2026-01-01",
+        "value": 21511.8
+      }
+    },
+    "M2SL": {
+      "latest": {
+        "date": "2026-02-01",
+        "value": 22667.3
+      },
+      "previous": {
+        "date": "2026-01-01",
+        "value": 22469.1
+      }
+    },
+    "BOGMBASE": {
+      "latest": {
+        "date": "2026-02-01",
+        "value": 5388
+      },
+      "previous": {
+        "date": "2026-01-01",
+        "value": 5402.5
+      }
+    },
+    "WALCL": {
+      "latest": {
+        "date": "2026-04-22",
+        "value": 6707419
+      },
+      "previous": {
+        "date": "2026-04-15",
+        "value": 6705696
+      }
+    },
+    "FEDFUNDS": {
+      "latest": {
+        "date": "2026-03-01",
+        "value": 3.64
+      },
+      "previous": {
+        "date": "2026-02-01",
+        "value": 3.64
+      }
+    },
+    "DGS2": {
+      "latest": {
+        "date": "2026-04-23",
+        "value": 3.83
+      },
+      "previous": {
+        "date": "2026-04-22",
+        "value": 3.79
+      }
+    },
+    "DGS10": {
+      "latest": {
+        "date": "2026-04-23",
+        "value": 4.34
+      },
+      "previous": {
+        "date": "2026-04-22",
+        "value": 4.3
+      }
+    },
+    "T10Y2Y": {
+      "latest": {
+        "date": "2026-04-24",
+        "value": 0.53
+      },
+      "previous": {
+        "date": "2026-04-23",
+        "value": 0.51
+      }
+    },
+    "DFII10": {
+      "latest": {
+        "date": "2026-04-23",
+        "value": 1.92
+      },
+      "previous": {
+        "date": "2026-04-22",
+        "value": 1.92
+      }
+    },
+    "BAMLH0A0HYM2": {
+      "latest": {
+        "date": "2026-04-24",
+        "value": 2.86
+      },
+      "previous": {
+        "date": "2026-04-23",
+        "value": 2.86
+      }
+    },
+    "MORTGAGE30US": {
+      "latest": {
+        "date": "2026-04-23",
+        "value": 6.23
+      },
+      "previous": {
+        "date": "2026-04-16",
+        "value": 6.3
+      }
+    },
+    "GDPC1": {
+      "latest": {
+        "date": "2025-10-01",
+        "value": 24055.749
+      },
+      "previous": {
+        "date": "2025-07-01",
+        "value": 24026.834
+      }
+    },
+    "INDPRO": {
+      "latest": {
+        "date": "2026-03-01",
+        "value": 101.7898
+      },
+      "previous": {
+        "date": "2026-02-01",
+        "value": 102.344
+      }
+    },
+    "RSAFS": {
+      "latest": {
+        "date": "2026-03-01",
+        "value": 752063
+      },
+      "previous": {
+        "date": "2026-02-01",
+        "value": 739772
+      }
+    },
+    "UMCSENT": {
+      "latest": {
+        "date": "2026-03-01",
+        "value": 53.3
+      },
+      "previous": {
+        "date": "2026-02-01",
+        "value": 56.6
+      }
+    },
+    "STLFSI4": {
+      "latest": {
+        "date": "2026-04-17",
+        "value": -0.7584
+      },
+      "previous": {
+        "date": "2026-04-10",
+        "value": -0.6475
+      }
+    },
+    "DTWEXBGS": {
+      "latest": {
+        "date": "2026-04-17",
+        "value": 118.0795
+      },
+      "previous": {
+        "date": "2026-04-16",
+        "value": 118.3616
+      }
+    },
+    "PERMIT": {
+      "latest": {
+        "date": "2026-01-01",
+        "value": 1386
+      },
+      "previous": {
+        "date": "2025-12-01",
+        "value": 1455
+      }
+    },
+    "GFDEGDQ188S": {
+      "latest": {
+        "date": "2025-10-01",
+        "value": 122.56815
+      },
+      "previous": {
+        "date": "2025-07-01",
+        "value": 121.02875
+      }
+    },
+    "VIXCLS": {
+      "latest": {
+        "date": "2026-04-24",
+        "value": 18.71
+      },
+      "previous": {
+        "date": "2026-04-23",
+        "value": 19.31
+      }
+    },
+    "BOPGSTB": {
+      "latest": {
+        "date": "2026-02-01",
+        "value": -57347
+      },
+      "previous": {
+        "date": "2026-01-01",
+        "value": -54677
+      }
+    },
+    "M2V": {
+      "latest": {
+        "date": "2025-10-01",
+        "value": 1.409
+      },
+      "previous": {
+        "date": "2025-07-01",
+        "value": 1.408
+      }
+    },
+    "CPI_YOY": {
+      "latest": {
+        "date": "2026-03-01",
+        "value": 3.2859577528651984
+      },
+      "previous": null
+    }
+  },
+  "news": [
+    {
+      "title": "Those Big, Beautiful Bonds",
+      "link": "https://mises.org/power-market/those-big-beautiful-bonds",
+      "pubDate": "Mon, 27 Apr 2026 10:29:46 CDT",
+      "kind": "Article"
+    },
+    {
+      "title": "When a Chicken Isn’t Just a Chicken",
+      "link": "https://mises.org/podcasts/audio-mises-wire/when-chicken-isnt-just-chicken",
+      "pubDate": "Mon, 27 Apr 2026 09:37:09 CDT",
+      "kind": "Podcast"
+    },
+    {
+      "title": "Transparent Monetary Policy and Economic Stability",
+      "link": "https://mises.org/mises-wire/transparent-monetary-policy-and-economic-stability",
+      "pubDate": "Mon, 27 Apr 2026 06:02:23 CDT",
+      "kind": "Mises Wire"
+    },
+    {
+      "title": "No, Thank You for Your “Service”",
+      "link": "https://mises.org/power-market/no-thank-you-your-service",
+      "pubDate": "Mon, 27 Apr 2026 02:02:13 CDT",
+      "kind": "Article"
+    },
+    {
+      "title": "When a Chicken Isn’t Just a Chicken",
+      "link": "https://mises.org/mises-wire/when-chicken-isnt-just-chicken",
+      "pubDate": "Mon, 27 Apr 2026 12:02:26 CDT",
+      "kind": "Mises Wire"
+    },
+    {
+      "title": "Chemistry 101",
+      "link": "https://mises.org/podcasts/minor-issues/chemistry-101",
+      "pubDate": "Sat, 25 Apr 2026 06:02:16 CDT",
+      "kind": "Podcast"
+    },
+    {
+      "title": "Inflation, Communication, and Noise",
+      "link": "https://mises.org/mises-wire/inflation-communication-and-noise",
+      "pubDate": "Sat, 25 Apr 2026 12:02:41 CDT",
+      "kind": "Mises Wire"
+    },
+    {
+      "title": "Leninism, Democracy, and Immigration",
+      "link": "https://mises.org/podcasts/radio-rothbard/leninism-democracy-and-immigration",
+      "pubDate": "Fri, 24 Apr 2026 11:00:00 CDT",
+      "kind": "Podcast"
+    },
+    {
+      "title": "U.S. consumer sentiment falls to record low on inflation",
+      "link": "https://mises.org/notes-margin/us-consumer-sentiment-falls-record-low-inflation",
+      "pubDate": "Fri, 24 Apr 2026 08:00:00 CDT",
+      "kind": "Article"
+    },
+    {
+      "title": "Treasury yields move higher as oil prices rise amid U.S.-Iran standoff",
+      "link": "https://mises.org/notes-margin/treasury-yields-move-higher-oil-prices-rise-amid-us-iran-standoff",
+      "pubDate": "Fri, 24 Apr 2026 07:00:00 CDT",
+      "kind": "Article"
+    }
+  ]
+}
