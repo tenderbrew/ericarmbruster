@@ -1,27 +1,11 @@
 <!--
-  about.html — Personal Profile / About Page
-  ============================================
-  A rainy night cityscape aesthetic. The page layers multiple atmospheric CSS
-  effects (moon, drifting clouds, fog, lightning flashes, street lanterns,
-  string lights, steam wisps, puddle reflections) behind a centered content
-  card. All atmosphere elements are purely decorative (aria-hidden) and use
-  CSS animations defined in about-styles.css.
-
-  Visual layers (back to front):
-    1. Moon — radial gradient circle in the sky
-    2. Clouds — translucent blobs drifting horizontally via CSS animation
-    3. Fog — soft horizontal band of translucent white
-    4. Lightning — full-screen flash triggered by a CSS keyframe
-    5. Skyline — city rooftop silhouette along the bottom edge
-    6. Lanterns — two street lamps flanking the content with glow halos
-    7. String lights — decorative bulbs draped across the top
-    8. Steam wisps — rising vapor shapes from below
-    9. Content cards — the actual text (hero, bio, background, contact)
-    10. Puddle — wet ground reflection at the very bottom
-
-  Stylesheets: styles.css (shared) + about-styles.css (page-specific)
-  Scripts: drawer.js (nav drawer) + ticker.js (live market ticker)
-  Body class: .about-page
+  about.html — Personal profile (Tufte-warm)
+  ------------------------------------------
+  A short, centered essayist's page. Cream paper, italic display name in
+  the about spot color (--c-about, neutral brown), a one-sentence tagline,
+  a short paragraph of welcome with a sidenote, and a contact strip.
+  The unique element is a small inline portrait of Hector as a "tipped-in"
+  figure — a dedication-style illustration on the page.
 -->
 <!DOCTYPE html>
 <html lang="en">
@@ -31,13 +15,11 @@
 
   <title>About</title>
 
-  <!-- SEO and social sharing metadata. -->
-  <meta name="description" content="Risk manager in finance with a Master of Finance and a BS in Economics. This is a small corner of the internet I built to keep track of the hobbies and interests that keep me curious.">
-  <!-- Dark blue-gray theme color matches the rainy night sky background. -->
-  <meta name="theme-color" content="#0f1923">
+  <meta name="description" content="Risk manager in finance with a Master of Finance and a BS in Economics. A small corner of the internet for hobbies and interests that keep me curious.">
+  <meta name="theme-color" content="#fbf6e8">
   <link rel="canonical" href="https://www.ericarmbruster.com/about.html">
   <meta property="og:title" content="About - Eric Armbruster">
-  <meta property="og:description" content="Risk manager in finance with a Master of Finance and a BS in Economics. This is a small corner of the internet I built to keep track of the hobbies and interests that keep me curious.">
+  <meta property="og:description" content="Risk manager in finance with a Master of Finance and a BS in Economics.">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://www.ericarmbruster.com/about.html">
   <meta property="og:image" content="https://www.ericarmbruster.com/images/hector-0001.png">
@@ -47,23 +29,11 @@
   <meta name="twitter:image" content="https://www.ericarmbruster.com/images/hector-0001.png">
   <link rel="icon" href="images/hector-favicon.png" type="image/png">
 
-  <!-- Google Fonts — Cormorant Garamond is a refined serif used for the about
-       page's body text, giving a literary / atmospheric feel that matches the
-       rainy night theme. Libre Caslon and Herr Von Muellerhoff are shared fonts
-       used across the site for headings and decorative flourishes. -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&display=swap" rel="stylesheet">
 
-  <!-- Preload the nav brand mark font (Herr Von Muellerhoff, latin woff2) at
-       highest priority to eliminate FOUT on page transitions. See index.html
-       for a detailed explanation of why this preload is needed. -->
-  <link rel="preload" href="https://fonts.gstatic.com/s/herrvonmuellerhoff/v23/WBL6rFjRZkREW8WqmCWYLgCkQKXb4CAft0c99KM.woff2" as="font" type="font/woff2" crossorigin>
-
-  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,400&family=Libre+Caslon+Display&family=Libre+Caslon+Text:ital,wght@0,400;0,700;1,400&family=Herr+Von+Muellerhoff&display=swap" rel="stylesheet">
-
-  <!-- Shared base styles first, then about-page-specific overrides. -->
-  <link rel="stylesheet" href="css/styles.css">
-  <link rel="stylesheet" href="css/about-styles.css">
+  <link rel="stylesheet" href="css/tufte-base.css">
 
   <!-- Google Analytics -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-5ZTHJXDR9V"></script>
@@ -73,244 +43,161 @@
     gtag('js', new Date());
     gtag('config', 'G-5ZTHJXDR9V');
   </script>
+
+  <style>
+    /* ── ABOUT MASTHEAD ───────────────────────────────────────────────── */
+    .about-masthead {
+      text-align: center;
+      margin: 0 0 var(--space-6);
+      padding-bottom: var(--space-6);
+      border-bottom: 1px solid var(--rule);
+    }
+    .about-name {
+      font-family: var(--font-serif);
+      font-size: 3.6rem;
+      font-weight: 500;
+      font-style: italic;
+      color: var(--c-about);
+      margin: 0;
+      line-height: 1;
+    }
+    .about-tagline {
+      margin-top: var(--space-3);
+      font-style: italic;
+      color: var(--ink-2);
+      font-size: 1.2rem;
+    }
+    .about-tagline em { color: var(--accent-red); }
+
+    /* Drop cap on the welcome paragraph, in the about spot color. */
+    .about-lead::first-letter {
+      float: left;
+      font-family: var(--font-serif);
+      font-size: 4em;
+      line-height: 0.85;
+      margin: 0.05em 0.08em -0.05em 0;
+      color: var(--c-about);
+      font-weight: 500;
+    }
+
+    .about-page p {
+      font-size: 1.2rem;
+      line-height: 1.7;
+    }
+
+    /* ── HECTOR FIGURE — tipped-in portrait, dedication style ─────────── */
+    .about-hector {
+      max-width: 14rem;
+      margin: var(--space-7) auto var(--space-6);
+      text-align: center;
+    }
+    .about-hector img {
+      border: 1px solid var(--rule);
+      background: var(--paper-soft);
+      padding: var(--space-3);
+      border-radius: 0;
+    }
+    .about-hector figcaption {
+      margin-top: var(--space-3);
+      font-style: italic;
+      font-size: var(--fs-small);
+      color: var(--ink-3);
+      text-align: center;
+    }
+
+    /* ── CONTACT STRIP ────────────────────────────────────────────────── */
+    .about-contact {
+      text-align: center;
+      margin-top: var(--space-5);
+    }
+    .about-contact h2 {
+      font-style: italic;
+      font-weight: 400;
+      font-size: 1.6rem;
+      margin: 0 0 var(--space-3);
+      border: none;
+    }
+    .about-contact p {
+      color: var(--ink-3);
+      font-style: italic;
+      margin-bottom: var(--space-4);
+    }
+    .about-contact ul {
+      list-style: none;
+      padding: 0;
+      display: flex;
+      gap: var(--space-5);
+      justify-content: center;
+      flex-wrap: wrap;
+      font-style: italic;
+    }
+    .about-contact ul li { margin: 0; }
+
+    @media (max-width: 540px) {
+      .about-name { font-size: 2.6rem; }
+      .about-page p { font-size: 1.1rem; }
+    }
+  </style>
 </head>
 
 <body class="about-page">
 
-  <!-- ═══════════════════════════════════════════════════════════════════════
-       SCROLLING TICKER TAPE — identical across all pages.
-       See projects.html for detailed explanation of the ticker structure.
-       ticker.js replaces these placeholder values with live market data. -->
-  <div class="ticker-tape" aria-hidden="true">
-    <div class="ticker-track">
-      <span class="tick" data-ticker="DJIA">DJIA 38,547 &#9650;0.42%</span>
-      <span class="tick-sep">&bull;</span>
-      <span class="tick" data-ticker="SP500">S&amp;P 500 5,234 &#9650;0.18%</span>
-      <span class="tick-sep">&bull;</span>
-      <span class="tick" data-ticker="NASDAQ">NASDAQ 16,340 &#9660;0.31%</span>
-      <span class="tick-sep">&bull;</span>
-      <span class="tick" data-ticker="10Y">10Y YIELD 4.285%</span>
-      <span class="tick-sep">&bull;</span>
-      <span class="tick" data-ticker="GOLD">GOLD 2,338.40</span>
-      <span class="tick-sep">&bull;</span>
-      <span class="tick" data-ticker="BTC">BTC 67,245 &#9650;2.14%</span>
-      <span class="tick-sep">&bull;</span>
-      <span class="tick" data-ticker="VIX">VIX 13.42</span>
-      <span class="tick-sep">&bull;</span>
-      <span class="tick" data-ticker="EURUSD">EUR/USD 1.0845</span>
-      <span class="tick-sep">&bull;</span>
-      <span class="tick" data-ticker="CRUDE">WTI CRUDE 78.32</span>
-      <span class="tick-sep">&bull;</span>
-      <span class="tick" data-ticker="FEDFUNDS">FED FUNDS 5.33%</span>
-      <span class="tick-sep">&bull;</span>
-      <!-- Second duplicate set for seamless infinite scroll animation. -->
-      <span class="tick" data-ticker="DJIA">DJIA 38,547 &#9650;0.42%</span>
-      <span class="tick-sep">&bull;</span>
-      <span class="tick" data-ticker="SP500">S&amp;P 500 5,234 &#9650;0.18%</span>
-      <span class="tick-sep">&bull;</span>
-      <span class="tick" data-ticker="NASDAQ">NASDAQ 16,340 &#9660;0.31%</span>
-      <span class="tick-sep">&bull;</span>
-      <span class="tick" data-ticker="10Y">10Y YIELD 4.285%</span>
-      <span class="tick-sep">&bull;</span>
-      <span class="tick" data-ticker="GOLD">GOLD 2,338.40</span>
-      <span class="tick-sep">&bull;</span>
-      <span class="tick" data-ticker="BTC">BTC 67,245 &#9650;2.14%</span>
-      <span class="tick-sep">&bull;</span>
-      <span class="tick" data-ticker="VIX">VIX 13.42</span>
-      <span class="tick-sep">&bull;</span>
-      <span class="tick" data-ticker="EURUSD">EUR/USD 1.0845</span>
-      <span class="tick-sep">&bull;</span>
-      <span class="tick" data-ticker="CRUDE">WTI CRUDE 78.32</span>
-      <span class="tick-sep">&bull;</span>
-      <span class="tick" data-ticker="FEDFUNDS">FED FUNDS 5.33%</span>
-      <span class="tick-sep">&bull;</span>
-    </div>
-  </div>
-
-  <!-- ═══════════════════════════════════════════════════════════════════════
-       PRIMARY NAVIGATION — identical across all pages.
-       See projects.html for detailed explanation of nav structure. -->
-  <nav class="study-nav" aria-label="Primary">
-    <div class="container nav-shell">
-      <a href="index.html" class="brand-mark" aria-label="Eric Armbruster home">Eric M. Armbruster</a>
-
-      <div class="nav-links-desktop" aria-label="Primary links">
-        <a href="about.html">about</a>
-        <a href="projects.html">projects</a>
-        <button class="drawer-toggle" type="button" aria-expanded="false" aria-controls="interests-dropdown" data-interests-toggle>interests</button>
-      </div>
-
-      <div class="nav-icons" aria-label="Contact links">
-        <a href="mailto:eric.m.armbruster@gmail.com" aria-label="Email Eric"><svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"><rect x="1.5" y="3.5" width="13" height="9"/><path d="M1.5 3.5L8 9l6.5-5.5"/></svg></a>
-        <a href="https://github.com/tenderbrew" target="_blank" rel="noopener" aria-label="Eric on GitHub"><svg width="16" height="16" viewBox="0 0 16 16" fill="currentColor"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0016 8c0-4.42-3.58-8-8-8z"/></svg></a>
-        <a href="https://www.linkedin.com/in/ericmarmbruster/" target="_blank" rel="noopener" aria-label="Eric on LinkedIn"><svg width="16" height="16" viewBox="0 0 16 16" fill="currentColor"><path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.016-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.52 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.174-.431.569-.878 1.232-.878.87 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016l.016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z"/></svg></a>
-      </div>
-
-      <button class="drawer-toggle nav-mobile-toggle" type="button" aria-expanded="false" aria-controls="site-drawer" data-drawer-toggle>menu</button>
-    </div>
-
-    <!-- Slide-out drawer with full site navigation links. -->
-
-    <div class="site-drawer" id="site-drawer">
-      <div class="container drawer-inner">
-        <section class="drawer-group">
-          <h2>Main Rooms</h2>
-          <a href="about.html">About</a>
-          <a href="projects.html">Projects</a>
-        </section>
-        <section class="drawer-group drawer-group--interests"><h2>Interests</h2>
-          <a href="video-games.html">Video Games</a>
-          <a href="film.html">Film</a>
-          <a href="self-hosting.html">Self-Hosting</a>
-          <a href="economics.html">Economics</a>
-          <a href="bitcoin.html">Bitcoin</a>
-          <a href="seymour.html">Seymour</a>
-        </section>
-        <section class="drawer-group drawer-group--compact">
-          <h2>Elsewhere</h2>
-          <a href="mailto:eric.m.armbruster@gmail.com">Email</a>
-          <a href="https://github.com/tenderbrew" target="_blank" rel="noopener">GitHub</a>
-          <a href="https://www.linkedin.com/in/ericmarmbruster/" target="_blank" rel="noopener">LinkedIn</a>
-        </section>
-      </div>
-    </div>
-    <div class="interests-dropdown" id="interests-dropdown">
-      <a href="video-games.html">Video Games</a>
-      <a href="film.html">Film</a>
-      <a href="self-hosting.html">Self-Hosting</a>
-      <a href="economics.html">Economics</a>
-      <a href="bitcoin.html">Bitcoin</a>
-      <a href="seymour.html">Seymour</a>
-    </div>
-  </nav>
-
-  <!-- ═══════════════════════════════════════════════════════════════════════
-       ATMOSPHERIC BACKGROUND LAYERS
-       ═══════════════════════════════════════════════════════════════════════
-       All of these elements are position: fixed and stacked behind the page
-       content using z-index. Together they create the rainy night scene.
-       All are aria-hidden="true" because they're purely decorative — screen
-       readers skip them entirely. -->
-
-  <!-- Moon — a large radial gradient circle positioned in the upper portion
-       of the viewport. CSS gives it a soft warm glow halo around a bright core. -->
-  <div class="about-moon" aria-hidden="true"></div>
-
-  <!-- Clouds — three translucent blob shapes that drift horizontally across
-       the sky via CSS @keyframes animation. Each cloud has a different size,
-       speed, and vertical position to create depth. The cloud shapes are
-       built from layered CSS box-shadows and border-radius. -->
-  <div class="about-clouds" aria-hidden="true">
-    <span class="about-cloud about-cloud--1"></span>
-    <span class="about-cloud about-cloud--2"></span>
-    <span class="about-cloud about-cloud--3"></span>
-  </div>
-
-  <!-- Fog — a horizontal band of translucent white/gray that sits across
-       the middle of the viewport, adding depth between the sky and ground.
-       Just a div with a soft radial gradient background. -->
-  <div class="about-fog" aria-hidden="true"></div>
-
-  <!-- Lightning — a full-viewport flash effect. CSS animation briefly sets
-       the opacity from 0 to a bright white and back, creating a lightning
-       flash effect at timed intervals. -->
-  <div class="about-lightning" aria-hidden="true"></div>
-
-  <!-- Skyline — a city rooftop silhouette along the bottom edge of the
-       viewport. Built with CSS clip-path or box-shadow to create a jagged
-       building outline against the sky. -->
-  <div class="about-skyline" aria-hidden="true"></div>
-
-  <!-- Street lanterns — two lamp posts (left and right) flanking the content
-       area. Each has a glow child element that creates a warm radial gradient
-       halo around the lantern, simulating the light cone hitting fog/rain. -->
-  <div class="about-lantern about-lantern--left" aria-hidden="true">
-    <span class="about-lantern-glow"></span>
-  </div>
-  <div class="about-lantern about-lantern--right" aria-hidden="true">
-    <span class="about-lantern-glow"></span>
-  </div>
-
-  <!-- String lights — a row of small colored bulbs draped across the top
-       of the scene. Each bulb is a small circle with a CSS radial gradient
-       that creates a bright center fading to a soft glow. Seven bulbs total,
-       each with slightly different positioning to look naturally draped. -->
-  <div class="about-string-lights" aria-hidden="true">
-    <span class="about-bulb about-bulb--1"></span>
-    <span class="about-bulb about-bulb--2"></span>
-    <span class="about-bulb about-bulb--3"></span>
-    <span class="about-bulb about-bulb--4"></span>
-    <span class="about-bulb about-bulb--5"></span>
-    <span class="about-bulb about-bulb--6"></span>
-    <span class="about-bulb about-bulb--7"></span>
-  </div>
-
-  <!-- Steam wisps — three rising vapor/smoke shapes that animate upward from
-       the bottom. Creates the impression of warm air rising from a street
-       grate or chimney. CSS animation translates them vertically and fades
-       their opacity. -->
-  <div class="about-steam" aria-hidden="true">
-    <span class="about-wisp about-wisp--1"></span>
-    <span class="about-wisp about-wisp--2"></span>
-    <span class="about-wisp about-wisp--3"></span>
-  </div>
-
-  <!-- ═══════════════════════════════════════════════════════════════════════
-       MAIN CONTENT
-       ═══════════════════════════════════════════════════════════════════════
-       Centered content cards on top of the atmospheric background. The
-       .about-content container provides the max-width constraint and
-       centering, while each .about-card is a semi-transparent panel. -->
-  <main>
-    <div class="about-content">
-
-      <!-- Hero header with name and tagline. -->
-      <header class="about-hero">
-        <h1>Eric Armbruster</h1>
-        <p class="about-tagline">Listener of rain.</p>
-      </header>
-
-      <!-- Decorative dividers between sections. The .about-drop child creates
-           a small raindrop-shaped element centered on the divider line. -->
-      <div class="about-divider" aria-hidden="true"><span class="about-drop"></span></div>
-
-      <!-- Intro card — brief welcome message. -->
-      <section class="about-card">
-        <h2>Hello</h2>
-        <p>Thanks for stopping by. This site is really just a small corner of the internet I built for myself — a place to keep track of the hobbies and interests that keep me curious. If you've found your way here, I hope you find something worth your time.</p>
-      </section>
-
-      <div class="about-divider" aria-hidden="true"><span class="about-drop"></span></div>
-
-      <!-- Contact card — centered links to email, GitHub, LinkedIn.
-           The inline style="text-align: center" centers the heading and
-           paragraph text within this specific card only. -->
-      <section class="about-card" style="text-align: center;">
-        <h2>Get in Touch</h2>
-        <p>Always happy to connect.</p>
-        <div class="about-contact-links">
-          <a href="mailto:eric.m.armbruster@gmail.com">✉️ email</a>
-          <a href="https://github.com/tenderbrew" target="_blank" rel="noopener">🐙 github</a>
-          <a href="https://www.linkedin.com/in/ericmarmbruster/" target="_blank" rel="noopener">💼 linkedin</a>
+  <header class="site-header">
+    <div class="site-header__inner">
+      <a class="brand" href="index.html">Eric Armbruster</a>
+      <div class="site-header__nav">
+        <div class="site-utility">
+          <a class="site-utility__icon" href="about.html" aria-label="About" aria-current="page"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"><circle cx="12" cy="8" r="4"/><path d="M4 21c0-4.4 3.6-8 8-8s8 3.6 8 8"/></svg></a>
+          <a class="site-utility__icon" href="projects.html" aria-label="Projects"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M9 7l-5 5 5 5"/><path d="M15 7l5 5-5 5"/></svg></a>
+          <a class="site-utility__icon" href="mailto:eric.m.armbruster@gmail.com" aria-label="Contact"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="1.5"/><path d="M3 7l9 7 9-7"/></svg></a>
         </div>
-      </section>
-
+        <nav class="site-shelf" aria-label="Sections">
+          <a class="site-shelf__book" href="video-games.html" style="--book-color: var(--c-vg);" aria-label="Video games"></a>
+          <a class="site-shelf__book" href="film.html" style="--book-color: var(--c-film);" aria-label="Film"></a>
+          <a class="site-shelf__book" href="economics.html" style="--book-color: var(--c-econ);" aria-label="Economics"></a>
+          <a class="site-shelf__book" href="self-hosting.html" style="--book-color: var(--c-sh);" aria-label="Self-hosting"></a>
+          <a class="site-shelf__book" href="bitcoin.html" style="--book-color: var(--c-bitcoin);" aria-label="Bitcoin"></a>
+          <a class="site-shelf__book" href="seymour.html" style="--book-color: var(--c-seymour);" aria-label="Seymour"></a>
+        </nav>
+      </div>
     </div>
+  </header>
 
-    <!-- Puddle reflection — a decorative element at the bottom of the page
-         simulating wet ground reflecting the scene above. CSS uses a
-         semi-transparent gradient and/or blur filter to create the effect. -->
-    <div class="about-puddle" aria-hidden="true"></div>
+  <main class="page">
+
+    <header class="about-masthead">
+      <h1 class="about-name">Eric M. Armbruster</h1>
+      <p class="about-tagline">Listener of rain.</p>
+    </header>
+
+    <article class="article">
+      <p class="about-lead">Thanks for stopping by. This site is a small corner of the internet I built for myself &mdash; a place to keep track of the hobbies and interests that keep me curious.<span class="sidenote">Risk manager. Master of Finance, BS in Economics.</span> If you've found your way here, I hope you find something worth your time.</p>
+    </article>
+
+    <hr>
+
+    <figure class="about-hector">
+      <img src="images/hector-0001.png" alt="Hector, a border terrier" loading="lazy">
+      <figcaption>Hector, a border terrier.</figcaption>
+    </figure>
+
+    <section class="about-contact">
+      <h2>Get in touch</h2>
+      <p>Always happy to connect.</p>
+      <ul>
+        <li><a href="mailto:eric.m.armbruster@gmail.com">email</a></li>
+        <li><a href="https://github.com/tenderbrew" target="_blank" rel="noopener">github</a></li>
+        <li><a href="https://www.linkedin.com/in/ericmarmbruster/" target="_blank" rel="noopener">linkedin</a></li>
+      </ul>
+    </section>
+
   </main>
 
-  <footer>
-    <div class="container">
-      &copy; 2026 Eric Armbruster
+  <footer class="site-footer">
+    <div class="site-footer__inner">
+      <span>&copy; 2026 Eric Armbruster</span>
     </div>
   </footer>
 
-  <!-- Shared scripts — drawer.js for nav, ticker.js for live market data. -->
-  <script src="js/drawer.js"></script>
-  <script src="js/ticker.js"></script>
 </body>
 </html>

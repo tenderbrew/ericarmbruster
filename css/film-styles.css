@@ -1,1830 +1,267 @@
-/*
- * ==========================================================================
- * film-styles.css — Film Page Stylesheet
- * ==========================================================================
- *
- * Scoped via the `.film-page` body class so that none of these styles
- * leak into other pages on the site. This stylesheet recreates the
- * atmosphere of a classic mid-century movie theater: deep crimson velvet
- * curtains, a glowing marquee sign with chase-light bulbs, a bright
- * projection screen, chrome Art Deco trim, film-strip sprocket borders,
- * ticket-stub sidebar panels, and a persistent film-grain overlay.
- *
- * Color identity: "cinema red" — dark velvety crimsons, warm amber bulb
- * light, chrome silver accents, and cream letterboard / ticket surfaces.
- *
- * Fonts:
- *   - "Bebas Neue" for marquee headings (tall condensed display type)
- *   - "Libre Caslon Text" for body text (classic serif)
- *   - "Special Elite" for metadata labels (typewriter monospace)
- *
- * Key visual techniques used in this file:
- *   - Dozens of radial-gradient "dots" to simulate chase-light bulbs
- *   - Repeating linear gradients to fake velvet curtain folds
- *   - SVG feTurbulence noise for film grain and projection texture
- *   - CSS custom properties (--film-*) for palette consistency
- *   - @keyframes for bulb pulse, grain shift, and screen glow
- * ==========================================================================
- */
-
-/* --------------------------------------------------------------------------
- * COLOR PALETTE & BASE DESIGN TOKENS
- *
- * All custom properties live on `.film-page` so they are scoped to this
- * page only. The velvet scale (velvet-0 through velvet-3) goes from near-
- * black to a very dark red, forming the body background gradient. Chrome
- * vars provide the silver metallic accent color at three brightness levels.
- * Bulb / neon vars supply the warm amber, red, and blue accent colors
- * used for marquee lights, links, and interactive highlights.
- * -------------------------------------------------------------------------- */
-
-.film-page {
-  --film-velvet-0: #060203;
-  --film-velvet-1: #100406;
-  --film-velvet-2: #1e0808;
-  --film-velvet-3: #2a0a0c;
-  --film-chrome: #b8c0c8;
-  --film-chrome-dim: #6a727a;
-  --film-chrome-dark: #3a4048;
-  --film-bulb: #ffe088;
-  --film-bulb-glow: rgba(255, 220, 100, 0.55);
-  --film-neon-red: #ff3344;
-  --film-neon-blue: #44aaff;
-  --film-neon-amber: #ffcc55;
-  --film-panel-shadow: rgba(0, 0, 0, 0.72);
-  --film-edge: rgba(180, 190, 200, 0.2);
-  --film-gap: 1.5rem;
-
-  color: #e8dcd0;
-  font-family: "Libre Caslon Text", Georgia, "Times New Roman", serif;
-  font-size: 38px;
-
-  /* BODY BACKGROUND — Simulates deep crimson velvet theater curtains.
-   *
-   * Layer 1 (repeating-linear-gradient at 90deg): Vertical "fold" ridges
-   *   that alternate between lighter and darker reds at 18px intervals,
-   *   producing the visual effect of gathered velvet fabric with light
-   *   catching the ridges and shadow filling the troughs.
-   *
-   * Layer 2 (radial-gradient, top-center): A wide elliptical wash of warm
-   *   crimson at the top edge, simulating stage lighting hitting the top
-   *   of the curtain valance.
-   *
-   * Layers 3-4 (radial-gradients, bottom corners): Dark vignettes in both
-   *   lower corners, mimicking how a theater auditorium dims at the edges.
-   *
-   * Layer 5 (radial-gradient, center): A gentle center-out vignette that
-   *   darkens the periphery and draws the eye toward the middle of the page.
-   *
-   * Layer 6 (linear-gradient, top to bottom): The base fill — a vertical
-   *   gradient stepping through the four velvet darkness levels, darkest
-   *   at the top (like the ceiling of a theater) to slightly warmer at bottom. */
-  background:
-    repeating-linear-gradient(
-      90deg,
-      rgba(130, 12, 18, 0.24) 0,
-      rgba(170, 22, 28, 0.10) 18px,
-      rgba(60, 4, 8, 0.30) 36px,
-      rgba(140, 16, 22, 0.08) 54px,
-      rgba(130, 12, 18, 0.24) 72px
-    ),
-    radial-gradient(ellipse 120% 60% at 50% 0%, rgba(140, 20, 28, 0.28), transparent 55%),
-    radial-gradient(ellipse 100% 80% at 0% 100%, rgba(0, 0, 0, 0.65), transparent 50%),
-    radial-gradient(ellipse 100% 80% at 100% 100%, rgba(0, 0, 0, 0.65), transparent 50%),
-    radial-gradient(ellipse 60% 50% at 50% 50%, transparent 30%, rgba(0, 0, 0, 0.5) 100%),
-    linear-gradient(180deg, var(--film-velvet-0), var(--film-velvet-1) 25%, var(--film-velvet-2) 55%, var(--film-velvet-3) 100%);
-}
-
-/* --------------------------------------------------------------------------
- * FILM GRAIN OVERLAY — Persistent full-screen noise texture
- *
- * Uses an inline SVG with feTurbulence (fractal noise) as a background
- * image on a fixed pseudo-element covering the entire viewport. The
- * `mix-blend-mode: overlay` blends the noise into whatever is beneath
- * without blocking interaction (pointer-events: none). The animation
- * `grainShift` jitters the background-position every 0.1s in 4 discrete
- * steps, simulating the dancing grain of projected celluloid film.
- * The very low opacity (0.045) keeps it subtle — visible on solid
- * backgrounds but never distracting over text or images.
- * -------------------------------------------------------------------------- */
-
-.film-page::before {
-  content: "";
-  display: block;
-  position: fixed;
-  inset: 0;
-  pointer-events: none;
-  z-index: 9999;
-  opacity: 0.045;
-  clip-path: none;
-  border: none;
-  background: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='g'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23g)'/%3E%3C/svg%3E") repeat;
-  background-size: 256px 256px;
-  mix-blend-mode: overlay;
-  animation: grainShift 0.4s steps(4) infinite;
-}
-
-/* Disable the shared styles.css ::after pseudo-element on this page,
- * since the film page uses its own ::before for the grain overlay
- * and does not need the default decorative element. */
-.film-page::after {
-  display: none;
-}
-
-/* --------------------------------------------------------------------------
- * TYPOGRAPHY — Heading typeface override
- *
- * All panel headings and the lightbox title use "Bebas Neue," a tall
- * condensed sans-serif that evokes the hand-lettered marquee signs
- * on vintage movie theaters. No other page on the site uses this font,
- * making it a strong part of the Film page's visual identity.
- * -------------------------------------------------------------------------- */
-
-.film-page .film-panel h2,
-.film-page .film-panel h3,
-.film-page .film-lightbox-title {
-  font-family: "Bebas Neue", "Impact", sans-serif;
-  text-transform: uppercase;
-  letter-spacing: 1.5px;
-  line-height: 1.1;
-}
-
-/* Body paragraph text is slightly dimmed to keep focus on titles and
- * interactive elements while remaining comfortably readable. */
-.film-page p {
-  color: rgba(230, 218, 200, 0.84);
-}
-
-/* Override shared styles.css container styling: the film page uses its own
- * panel system for visual framing, so we strip the default background,
- * box-shadow, clip-path, and padding that styles.css would otherwise apply. */
-.film-page main:not(.home-rooms) > section .container {
-  background: none;
-  box-shadow: none;
-  clip-path: none;
-  padding: 0;
-}
-
-.film-page main:not(.home-rooms) > .film-section {
-  padding: 1.6rem 0 0;
-}
-
 /* ==========================================================================
- * HERO SECTION
- *
- * The hero sits at the very top of the page and contains the decorative
- * marquee crown, the ornate wing swoops, and the full-width marquee sign.
- * It establishes position: relative so that the absolutely-positioned
- * wing SVG can be placed relative to the hero boundaries.
- * ========================================================================== */
-
-.film-hero {
-  position: relative;
-  padding: 1.2rem 0 0;
-  text-align: center;
-}
-
-.film-hero .container {
-  padding: 0;
-}
-
-.film-hero-inner {
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  align-items: stretch;
-}
-
-/* --------------------------------------------------------------------------
- * CINEMA CROWN — Decorative blade element above the marquee
- *
- * This is the small ornamental tab centered above the marquee sign,
- * similar to the decorative crest or pediment found above the entrance
- * of a classic movie palace. It has a dark mahogany background with a
- * subtle warm radial glow, gold text with a neon-like text-shadow, and
- * a gold metallic border on three sides (no bottom border, since it
- * visually merges into the marquee below via the -1px negative margin).
- * -------------------------------------------------------------------------- */
-
-.film-marquee-crown {
-  position: relative;
-  z-index: 3;
-  align-self: center;
-  width: clamp(140px, 18vw, 260px);
-  margin: 0 0 -1px;
-  padding: 0.6rem 1.2rem 0.45rem;
-  font-family: "Bebas Neue", "Impact", sans-serif;
-  font-size: clamp(1.2rem, 2.8vw, 2rem);
-  letter-spacing: 6px;
-  text-transform: uppercase;
-  text-align: center;
-  color: #ffeab0;
-  /* Warm neon glow around the crown text — inner glow is tight and bright,
-   * outer glow is diffuse and soft, mimicking a backlit theater sign. */
-  text-shadow:
-    0 0 12px rgba(255, 210, 80, 0.7),
-    0 0 30px rgba(255, 180, 60, 0.3);
-  /* Layer 1: Subtle warm radial glow near the bottom to simulate light
-   *   reflecting off the marquee below.
-   * Layer 2: Dark mahogany-to-near-black base fill. */
-  background:
-    radial-gradient(ellipse 80% 90% at 50% 80%, rgba(255, 200, 100, 0.12), transparent 60%),
-    linear-gradient(180deg, #1c1008, #140c06);
-  border: 2px solid rgba(200, 170, 110, 0.35);
-  border-bottom: none;
-  border-radius: 6px 6px 0 0;
-  /* Outer glow lifts the crown off the page; inner shadow adds depth. */
-  box-shadow:
-    0 -4px 20px rgba(255, 200, 80, 0.12),
-    inset 0 2px 8px rgba(0, 0, 0, 0.3);
-}
-
-/* CROWN CHASE-LIGHT BULBS — The ::before pseudo-element draws tiny warm
- * dots around the perimeter of the crown using radial gradients. Each
- * gradient creates one "bulb": a solid amber center (0-2.5px), a warm
- * glow ring (3px), then transparent. Top row has 6 bulbs, left column
- * has 3, right column has 3, totaling 12 miniature lights. They share
- * the `bulbPulse` animation so the glow breathes in sync with the
- * marquee bulbs below. */
-.film-marquee-crown::before {
-  content: "";
-  position: absolute;
-  inset: 4px 6px;
-  pointer-events: none;
-  border-radius: 4px 4px 0 0;
-  background:
-    /* Top row of 6 bulbs, evenly spaced across the crown */
-    radial-gradient(circle at 10% 0%, var(--film-bulb) 0 2.5px, rgba(255, 210, 80, 0.35) 3px, transparent 5px),
-    radial-gradient(circle at 25% 0%, var(--film-bulb) 0 2.5px, rgba(255, 210, 80, 0.35) 3px, transparent 5px),
-    radial-gradient(circle at 40% 0%, var(--film-bulb) 0 2.5px, rgba(255, 210, 80, 0.35) 3px, transparent 5px),
-    radial-gradient(circle at 55% 0%, var(--film-bulb) 0 2.5px, rgba(255, 210, 80, 0.35) 3px, transparent 5px),
-    radial-gradient(circle at 70% 0%, var(--film-bulb) 0 2.5px, rgba(255, 210, 80, 0.35) 3px, transparent 5px),
-    radial-gradient(circle at 85% 0%, var(--film-bulb) 0 2.5px, rgba(255, 210, 80, 0.35) 3px, transparent 5px),
-    /* Left column of 3 bulbs running down the crown's left edge */
-    radial-gradient(circle at 0% 20%, var(--film-bulb) 0 2.5px, rgba(255, 210, 80, 0.35) 3px, transparent 5px),
-    radial-gradient(circle at 0% 50%, var(--film-bulb) 0 2.5px, rgba(255, 210, 80, 0.35) 3px, transparent 5px),
-    radial-gradient(circle at 0% 80%, var(--film-bulb) 0 2.5px, rgba(255, 210, 80, 0.35) 3px, transparent 5px),
-    /* Right column of 3 bulbs running down the crown's right edge */
-    radial-gradient(circle at 100% 20%, var(--film-bulb) 0 2.5px, rgba(255, 210, 80, 0.35) 3px, transparent 5px),
-    radial-gradient(circle at 100% 50%, var(--film-bulb) 0 2.5px, rgba(255, 210, 80, 0.35) 3px, transparent 5px),
-    radial-gradient(circle at 100% 80%, var(--film-bulb) 0 2.5px, rgba(255, 210, 80, 0.35) 3px, transparent 5px);
-  animation: bulbPulse 2.5s ease-in-out infinite;
-}
-
-/* --------------------------------------------------------------------------
- * ORNATE WING SWOOPS — Decorative SVG arcs flanking the crown
- *
- * These are positioned absolutely within the hero so they extend
- * horizontally from the crown outward toward both edges of the viewport.
- * The SVG paths use dashed strokes (stroke-dasharray with tiny dash
- * lengths and larger gaps) to create the appearance of individual light
- * bulbs following a curved path — like the ornamental arches above the
- * entrance of a movie palace. An SVG filter (#wing-glow) applies a warm
- * amber glow, and the bulbPulse animation makes them breathe.
- * -------------------------------------------------------------------------- */
-
-.film-marquee-wings {
-  position: absolute;
-  top: -6px;
-  left: 0;
-  width: 100%;
-  height: auto;
-  z-index: 2;
-  pointer-events: none;
-  overflow: visible;
-}
-
-/* Both outer and inner wing arcs share amber stroke color and the SVG
- * glow filter. The outer arc is thicker and more widely spaced; the inner
- * arc is thinner and slightly more transparent for a layered depth effect. */
-.film-wing-outer,
-.film-wing-inner {
-  fill: none;
-  stroke: #ffe088;
-  stroke-linecap: round;
-  filter: url(#wing-glow);
-  animation: bulbPulse 2.5s ease-in-out infinite;
-}
-
-/* Outer arc: wider stroke, larger dash gaps — bolder bulb appearance */
-.film-wing-outer {
-  stroke-width: 6;
-  stroke-dasharray: 0.01 14;
-}
-
-/* Inner arc: thinner stroke, tighter gaps — subtler secondary row of bulbs */
-.film-wing-inner {
-  stroke-width: 4.5;
-  stroke-dasharray: 0.01 11;
-  opacity: 0.75;
-}
-
-/* Trim line: a faint continuous stroke that outlines the wing shape,
- * providing structural definition even when the bulb glow is dim. */
-.film-wing-trim {
-  fill: none;
-  stroke: rgba(200, 170, 110, 0.3);
-  stroke-width: 1.5;
-  stroke-linecap: round;
-}
-
-/* ==========================================================================
- * CINEMA MARQUEE SIGN — Full-width theater facade with chase-light border
- *
- * This is the main marquee: a wide panel styled to resemble the
- * illuminated sign on the front of a movie theater. It has a dark
- * mahogany/walnut background with faint wood-grain texture, a warm
- * amber glow radiating from the bottom, and a double metallic gold
- * border. The sign holds a bright cream "letterboard" (the ::after
- * pseudo-element) and is surrounded on all four sides by dense
- * chase-light bulbs (the ::before pseudo-element).
- * ========================================================================== */
-
-.film-marquee {
-  position: relative;
-  padding: 0.5rem 3rem 1.2rem;
-  text-align: center;
-  overflow: hidden;
-  /* MARQUEE BACKGROUND — Three-layer dark frame surface:
-   * Layer 1 (repeating-linear-gradient at 92deg): Very faint vertical
-   *   striations that simulate the grain of polished walnut wood.
-   * Layer 2 (radial-gradient, bottom-center): A warm amber glow near
-   *   the bottom, as if light from the bulbs below is reflecting back.
-   * Layer 3 (linear-gradient, top to bottom): The base dark-brown fill
-   *   that reads as a rich mahogany panel. */
-  background:
-    repeating-linear-gradient(
-      92deg,
-      rgba(100, 50, 20, 0.06) 0,
-      rgba(60, 30, 10, 0.04) 2px,
-      transparent 2px,
-      transparent 8px
-    ),
-    radial-gradient(ellipse 80% 60% at 50% 100%, rgba(255, 200, 100, 0.10), transparent 60%),
-    linear-gradient(180deg, #1c1008, #140c06 40%, #100804 100%);
-  /* Gold metallic trim borders on all four edges, slightly brighter on top */
-  border-top: 3px solid rgba(200, 170, 110, 0.35);
-  border-bottom: 3px solid rgba(200, 170, 110, 0.25);
-  border-left: 3px solid rgba(200, 170, 110, 0.25);
-  border-right: 3px solid rgba(200, 170, 110, 0.25);
-  /* MARQUEE BOX-SHADOW — Multiple layers:
-   * 1) Warm amber glow spreading outward (like light spilling from the sign)
-   * 2) Wider, softer amber bloom for ambient warmth
-   * 3) Strong dark shadow underneath for depth/lift off the page
-   * 4-5) Inner top/bottom metallic highlights for a beveled frame look
-   * 6) Inner deep shadow adding dimension to the frame edges */
-  box-shadow:
-    0 0 80px rgba(255, 200, 80, 0.14),
-    0 0 160px rgba(255, 180, 60, 0.06),
-    0 20px 60px rgba(0, 0, 0, 0.65),
-    inset 0 3px 0 rgba(200, 170, 110, 0.12),
-    inset 0 -3px 0 rgba(200, 170, 110, 0.08),
-    inset 0 8px 20px rgba(0, 0, 0, 0.3);
-}
-
-/* MARQUEE CHASE-LIGHT BULBS (::before) — Dense border of warm amber dots
- *
- * This pseudo-element is positioned just inside the marquee frame and
- * draws individual "light bulbs" using radial gradients. Each gradient
- * creates one circular bulb: a solid amber core (0-4px), a warm glow
- * halo (5px), then transparent (7px). The bulbs are placed at percentage
- * positions along each edge:
- *   - Top row: 31 bulbs from 5% to 95% at y=0%
- *   - Bottom row: 31 bulbs from 5% to 95% at y=100%
- *   - Left column: 13 bulbs from 8% to 92% at x=0%
- *   - Right column: 13 bulbs from 8% to 92% at x=100%
- *
- * Together they form a continuous rectangular border of glowing points,
- * just like the chase lights on a real theater marquee. The bulbPulse
- * animation makes the entire border breathe with a gentle glow. */
-.film-marquee::before {
-  content: "";
-  position: absolute;
-  inset: 6px 12px;
-  pointer-events: none;
-  z-index: 2;
-  background:
-    /* Top row — 31 evenly-spaced bulbs running left to right across the top */
-    radial-gradient(circle at 5%  0%, var(--film-bulb) 0 4px, rgba(255, 210, 80, 0.4) 5px, transparent 7px),
-    radial-gradient(circle at 8%  0%, var(--film-bulb) 0 4px, rgba(255, 210, 80, 0.4) 5px, transparent 7px),
-    radial-gradient(circle at 11% 0%, var(--film-bulb) 0 4px, rgba(255, 210, 80, 0.4) 5px, transparent 7px),
-    radial-gradient(circle at 14% 0%, var(--film-bulb) 0 4px, rgba(255, 210, 80, 0.4) 5px, transparent 7px),
-    radial-gradient(circle at 17% 0%, var(--film-bulb) 0 4px, rgba(255, 210, 80, 0.4) 5px, transparent 7px),
-    radial-gradient(circle at 20% 0%, var(--film-bulb) 0 4px, rgba(255, 210, 80, 0.4) 5px, transparent 7px),
-    radial-gradient(circle at 23% 0%, var(--film-bulb) 0 4px, rgba(255, 210, 80, 0.4) 5px, transparent 7px),
-    radial-gradient(circle at 26% 0%, var(--film-bulb) 0 4px, rgba(255, 210, 80, 0.4) 5px, transparent 7px),
-    radial-gradient(circle at 29% 0%, var(--film-bulb) 0 4px, rgba(255, 210, 80, 0.4) 5px, transparent 7px),
-    radial-gradient(circle at 32% 0%, var(--film-bulb) 0 4px, rgba(255, 210, 80, 0.4) 5px, transparent 7px),
-    radial-gradient(circle at 35% 0%, var(--film-bulb) 0 4px, rgba(255, 210, 80, 0.4) 5px, transparent 7px),
-    radial-gradient(circle at 38% 0%, var(--film-bulb) 0 4px, rgba(255, 210, 80, 0.4) 5px, transparent 7px),
-    radial-gradient(circle at 41% 0%, var(--film-bulb) 0 4px, rgba(255, 210, 80, 0.4) 5px, transparent 7px),
-    radial-gradient(circle at 44% 0%, var(--film-bulb) 0 4px, rgba(255, 210, 80, 0.4) 5px, transparent 7px),
-    radial-gradient(circle at 47% 0%, var(--film-bulb) 0 4px, rgba(255, 210, 80, 0.4) 5px, transparent 7px),
-    radial-gradient(circle at 50% 0%, var(--film-bulb) 0 4px, rgba(255, 210, 80, 0.4) 5px, transparent 7px),
-    radial-gradient(circle at 53% 0%, var(--film-bulb) 0 4px, rgba(255, 210, 80, 0.4) 5px, transparent 7px),
-    radial-gradient(circle at 56% 0%, var(--film-bulb) 0 4px, rgba(255, 210, 80, 0.4) 5px, transparent 7px),
-    radial-gradient(circle at 59% 0%, var(--film-bulb) 0 4px, rgba(255, 210, 80, 0.4) 5px, transparent 7px),
-    radial-gradient(circle at 62% 0%, var(--film-bulb) 0 4px, rgba(255, 210, 80, 0.4) 5px, transparent 7px),
-    radial-gradient(circle at 65% 0%, var(--film-bulb) 0 4px, rgba(255, 210, 80, 0.4) 5px, transparent 7px),
-    radial-gradient(circle at 68% 0%, var(--film-bulb) 0 4px, rgba(255, 210, 80, 0.4) 5px, transparent 7px),
-    radial-gradient(circle at 71% 0%, var(--film-bulb) 0 4px, rgba(255, 210, 80, 0.4) 5px, transparent 7px),
-    radial-gradient(circle at 74% 0%, var(--film-bulb) 0 4px, rgba(255, 210, 80, 0.4) 5px, transparent 7px),
-    radial-gradient(circle at 77% 0%, var(--film-bulb) 0 4px, rgba(255, 210, 80, 0.4) 5px, transparent 7px),
-    radial-gradient(circle at 80% 0%, var(--film-bulb) 0 4px, rgba(255, 210, 80, 0.4) 5px, transparent 7px),
-    radial-gradient(circle at 83% 0%, var(--film-bulb) 0 4px, rgba(255, 210, 80, 0.4) 5px, transparent 7px),
-    radial-gradient(circle at 86% 0%, var(--film-bulb) 0 4px, rgba(255, 210, 80, 0.4) 5px, transparent 7px),
-    radial-gradient(circle at 89% 0%, var(--film-bulb) 0 4px, rgba(255, 210, 80, 0.4) 5px, transparent 7px),
-    radial-gradient(circle at 92% 0%, var(--film-bulb) 0 4px, rgba(255, 210, 80, 0.4) 5px, transparent 7px),
-    radial-gradient(circle at 95% 0%, var(--film-bulb) 0 4px, rgba(255, 210, 80, 0.4) 5px, transparent 7px),
-    /* Bottom row — 31 bulbs mirroring the top row, placed at y=100% */
-    radial-gradient(circle at 5%  100%, var(--film-bulb) 0 4px, rgba(255, 210, 80, 0.4) 5px, transparent 7px),
-    radial-gradient(circle at 8%  100%, var(--film-bulb) 0 4px, rgba(255, 210, 80, 0.4) 5px, transparent 7px),
-    radial-gradient(circle at 11% 100%, var(--film-bulb) 0 4px, rgba(255, 210, 80, 0.4) 5px, transparent 7px),
-    radial-gradient(circle at 14% 100%, var(--film-bulb) 0 4px, rgba(255, 210, 80, 0.4) 5px, transparent 7px),
-    radial-gradient(circle at 17% 100%, var(--film-bulb) 0 4px, rgba(255, 210, 80, 0.4) 5px, transparent 7px),
-    radial-gradient(circle at 20% 100%, var(--film-bulb) 0 4px, rgba(255, 210, 80, 0.4) 5px, transparent 7px),
-    radial-gradient(circle at 23% 100%, var(--film-bulb) 0 4px, rgba(255, 210, 80, 0.4) 5px, transparent 7px),
-    radial-gradient(circle at 26% 100%, var(--film-bulb) 0 4px, rgba(255, 210, 80, 0.4) 5px, transparent 7px),
-    radial-gradient(circle at 29% 100%, var(--film-bulb) 0 4px, rgba(255, 210, 80, 0.4) 5px, transparent 7px),
-    radial-gradient(circle at 32% 100%, var(--film-bulb) 0 4px, rgba(255, 210, 80, 0.4) 5px, transparent 7px),
-    radial-gradient(circle at 35% 100%, var(--film-bulb) 0 4px, rgba(255, 210, 80, 0.4) 5px, transparent 7px),
-    radial-gradient(circle at 38% 100%, var(--film-bulb) 0 4px, rgba(255, 210, 80, 0.4) 5px, transparent 7px),
-    radial-gradient(circle at 41% 100%, var(--film-bulb) 0 4px, rgba(255, 210, 80, 0.4) 5px, transparent 7px),
-    radial-gradient(circle at 44% 100%, var(--film-bulb) 0 4px, rgba(255, 210, 80, 0.4) 5px, transparent 7px),
-    radial-gradient(circle at 47% 100%, var(--film-bulb) 0 4px, rgba(255, 210, 80, 0.4) 5px, transparent 7px),
-    radial-gradient(circle at 50% 100%, var(--film-bulb) 0 4px, rgba(255, 210, 80, 0.4) 5px, transparent 7px),
-    radial-gradient(circle at 53% 100%, var(--film-bulb) 0 4px, rgba(255, 210, 80, 0.4) 5px, transparent 7px),
-    radial-gradient(circle at 56% 100%, var(--film-bulb) 0 4px, rgba(255, 210, 80, 0.4) 5px, transparent 7px),
-    radial-gradient(circle at 59% 100%, var(--film-bulb) 0 4px, rgba(255, 210, 80, 0.4) 5px, transparent 7px),
-    radial-gradient(circle at 62% 100%, var(--film-bulb) 0 4px, rgba(255, 210, 80, 0.4) 5px, transparent 7px),
-    radial-gradient(circle at 65% 100%, var(--film-bulb) 0 4px, rgba(255, 210, 80, 0.4) 5px, transparent 7px),
-    radial-gradient(circle at 68% 100%, var(--film-bulb) 0 4px, rgba(255, 210, 80, 0.4) 5px, transparent 7px),
-    radial-gradient(circle at 71% 100%, var(--film-bulb) 0 4px, rgba(255, 210, 80, 0.4) 5px, transparent 7px),
-    radial-gradient(circle at 74% 100%, var(--film-bulb) 0 4px, rgba(255, 210, 80, 0.4) 5px, transparent 7px),
-    radial-gradient(circle at 77% 100%, var(--film-bulb) 0 4px, rgba(255, 210, 80, 0.4) 5px, transparent 7px),
-    radial-gradient(circle at 80% 100%, var(--film-bulb) 0 4px, rgba(255, 210, 80, 0.4) 5px, transparent 7px),
-    radial-gradient(circle at 83% 100%, var(--film-bulb) 0 4px, rgba(255, 210, 80, 0.4) 5px, transparent 7px),
-    radial-gradient(circle at 86% 100%, var(--film-bulb) 0 4px, rgba(255, 210, 80, 0.4) 5px, transparent 7px),
-    radial-gradient(circle at 89% 100%, var(--film-bulb) 0 4px, rgba(255, 210, 80, 0.4) 5px, transparent 7px),
-    radial-gradient(circle at 92% 100%, var(--film-bulb) 0 4px, rgba(255, 210, 80, 0.4) 5px, transparent 7px),
-    radial-gradient(circle at 95% 100%, var(--film-bulb) 0 4px, rgba(255, 210, 80, 0.4) 5px, transparent 7px),
-    /* Left column — 13 bulbs running vertically down the left side */
-    radial-gradient(circle at 0% 8%,  var(--film-bulb) 0 4px, rgba(255, 210, 80, 0.4) 5px, transparent 7px),
-    radial-gradient(circle at 0% 15%, var(--film-bulb) 0 4px, rgba(255, 210, 80, 0.4) 5px, transparent 7px),
-    radial-gradient(circle at 0% 22%, var(--film-bulb) 0 4px, rgba(255, 210, 80, 0.4) 5px, transparent 7px),
-    radial-gradient(circle at 0% 29%, var(--film-bulb) 0 4px, rgba(255, 210, 80, 0.4) 5px, transparent 7px),
-    radial-gradient(circle at 0% 36%, var(--film-bulb) 0 4px, rgba(255, 210, 80, 0.4) 5px, transparent 7px),
-    radial-gradient(circle at 0% 43%, var(--film-bulb) 0 4px, rgba(255, 210, 80, 0.4) 5px, transparent 7px),
-    radial-gradient(circle at 0% 50%, var(--film-bulb) 0 4px, rgba(255, 210, 80, 0.4) 5px, transparent 7px),
-    radial-gradient(circle at 0% 57%, var(--film-bulb) 0 4px, rgba(255, 210, 80, 0.4) 5px, transparent 7px),
-    radial-gradient(circle at 0% 64%, var(--film-bulb) 0 4px, rgba(255, 210, 80, 0.4) 5px, transparent 7px),
-    radial-gradient(circle at 0% 71%, var(--film-bulb) 0 4px, rgba(255, 210, 80, 0.4) 5px, transparent 7px),
-    radial-gradient(circle at 0% 78%, var(--film-bulb) 0 4px, rgba(255, 210, 80, 0.4) 5px, transparent 7px),
-    radial-gradient(circle at 0% 85%, var(--film-bulb) 0 4px, rgba(255, 210, 80, 0.4) 5px, transparent 7px),
-    radial-gradient(circle at 0% 92%, var(--film-bulb) 0 4px, rgba(255, 210, 80, 0.4) 5px, transparent 7px),
-    /* Right column — 13 bulbs running vertically down the right side */
-    radial-gradient(circle at 100% 8%,  var(--film-bulb) 0 4px, rgba(255, 210, 80, 0.4) 5px, transparent 7px),
-    radial-gradient(circle at 100% 15%, var(--film-bulb) 0 4px, rgba(255, 210, 80, 0.4) 5px, transparent 7px),
-    radial-gradient(circle at 100% 22%, var(--film-bulb) 0 4px, rgba(255, 210, 80, 0.4) 5px, transparent 7px),
-    radial-gradient(circle at 100% 29%, var(--film-bulb) 0 4px, rgba(255, 210, 80, 0.4) 5px, transparent 7px),
-    radial-gradient(circle at 100% 36%, var(--film-bulb) 0 4px, rgba(255, 210, 80, 0.4) 5px, transparent 7px),
-    radial-gradient(circle at 100% 43%, var(--film-bulb) 0 4px, rgba(255, 210, 80, 0.4) 5px, transparent 7px),
-    radial-gradient(circle at 100% 50%, var(--film-bulb) 0 4px, rgba(255, 210, 80, 0.4) 5px, transparent 7px),
-    radial-gradient(circle at 100% 57%, var(--film-bulb) 0 4px, rgba(255, 210, 80, 0.4) 5px, transparent 7px),
-    radial-gradient(circle at 100% 64%, var(--film-bulb) 0 4px, rgba(255, 210, 80, 0.4) 5px, transparent 7px),
-    radial-gradient(circle at 100% 71%, var(--film-bulb) 0 4px, rgba(255, 210, 80, 0.4) 5px, transparent 7px),
-    radial-gradient(circle at 100% 78%, var(--film-bulb) 0 4px, rgba(255, 210, 80, 0.4) 5px, transparent 7px),
-    radial-gradient(circle at 100% 85%, var(--film-bulb) 0 4px, rgba(255, 210, 80, 0.4) 5px, transparent 7px),
-    radial-gradient(circle at 100% 92%, var(--film-bulb) 0 4px, rgba(255, 210, 80, 0.4) 5px, transparent 7px);
-  animation: bulbPulse 2.5s ease-in-out infinite;
-}
-
-/* LETTERBOARD PANEL (::after) — The bright cream insert inside the marquee
- *
- * Real theater marquees have a white or cream-colored letterboard where
- * plastic letters are slotted into horizontal grooves. This pseudo-element
- * recreates that surface:
- *   Layer 1 (repeating-linear-gradient): Faint horizontal lines every 22-24px
- *     simulating the grooved channels that hold interchangeable letters.
- *   Layer 2 (radial-gradient): A warm center hotspot brighter at top-center,
- *     as if overhead bulbs are illuminating the middle of the board.
- *   Layer 3 (linear-gradient): The cream-to-ivory base surface color.
- * The border and shadows create a slightly recessed look, as though the
- * letterboard sits inside the mahogany frame. */
-.film-marquee::after {
-  content: "";
-  position: absolute;
-  top: 10px;
-  left: 24px;
-  right: 24px;
-  bottom: 16px;
-  pointer-events: none;
-  z-index: 0;
-  background:
-    repeating-linear-gradient(
-      0deg,
-      transparent,
-      transparent 22px,
-      rgba(0, 0, 0, 0.04) 22px,
-      rgba(0, 0, 0, 0.06) 23px,
-      transparent 23px,
-      transparent 24px
-    ),
-    radial-gradient(ellipse 60% 70% at 50% 30%, rgba(255, 252, 240, 0.30), transparent 60%),
-    linear-gradient(180deg, #f8f4e8, #f0eadb 40%, #ebe4d2 100%);
-  border: 2px solid rgba(80, 55, 25, 0.25);
-  box-shadow:
-    inset 0 2px 10px rgba(0, 0, 0, 0.06),
-    inset 0 0 30px rgba(0, 0, 0, 0.02),
-    0 0 20px rgba(255, 240, 200, 0.08);
-}
-
-/* --------------------------------------------------------------------------
- * MARQUEE KICKER — Small "NOW SHOWING" label text
- *
- * The kicker sits on top of the letterboard (z-index: 1 over the ::after
- * panel). It uses the typewriter font "Special Elite" at a tiny size with
- * wide letter-spacing, printed in a muted brown that looks like faded
- * ink stamped onto the cream board. No background, border, or shadow —
- * it should look like text physically placed on the letterboard surface.
- * -------------------------------------------------------------------------- */
-
-.film-kicker {
-  position: relative;
-  z-index: 1;
-  display: inline-block;
-  margin: 0 0 0.15rem;
-  padding: 0;
-  font-family: "Special Elite", "Courier New", monospace;
-  font-size: 0.5rem;
-  letter-spacing: 4px;
-  color: rgba(60, 35, 15, 0.45);
-  text-transform: uppercase;
-  background: none;
-  border: none;
-  text-shadow: none;
-  box-shadow: none;
-}
-
-/* --------------------------------------------------------------------------
- * MARQUEE TITLE LIST — Movie titles displayed on the letterboard
- *
- * These are the actual film titles shown on the marquee. They use the
- * Bebas Neue display font in dark brown on the cream letterboard, with a
- * subtle white text-shadow to simulate light catching the raised edges of
- * the plastic letters. The "featured" class makes one title much larger
- * to act as the headliner film.
- * -------------------------------------------------------------------------- */
-
-.film-marquee-titles {
-  position: relative;
-  z-index: 1;
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  display: flex;
-  flex-direction: column;
-  gap: 0.15rem;
-}
-
-.film-marquee-titles li {
-  font-family: "Bebas Neue", "Impact", sans-serif;
-  font-size: clamp(1.1rem, 2.8vw, 1.6rem);
-  color: #1a0e06;
-  text-transform: uppercase;
-  letter-spacing: 3px;
-  text-shadow: 0 1px 0 rgba(255, 255, 255, 0.3);
-  line-height: 1.15;
-}
-
-/* Featured/headliner title — significantly larger than the supporting titles,
- * like the top billing on a real marquee */
-.film-marquee-featured {
-  font-size: clamp(1.8rem, 4.5vw, 3.2rem) !important;
-  letter-spacing: 5px;
-  margin-bottom: 0.1rem;
-}
+   film-styles.css — Film / Letterboxd dashboard (mempool.space vibe)
+   --------------------------------------------------------------------------
+   Old marquee hero is hidden. Sections from the original markup that remain:
+   featured log lightbox, recent watches strip (now stacked), recent lists
+   sidebar, booth stats panel.
+   ========================================================================== */
 
 
-/* ==========================================================================
- * PAGE LAYOUT — Two-column grid with main content and sidebar
- *
- * Desktop layout is a fluid main column with a fixed-width 290px sidebar.
- * Both columns use CSS Grid internally so their children stack with
- * consistent gaps. The sidebar contains ticket-stub panels (stats, lists).
- * ========================================================================== */
+/* ── HERO — removed ──────────────────────────────────────────────────── */
+.film-hero { display: none; }
+
+
+/* ── LAYOUT ──────────────────────────────────────────────────────────── */
+.film-section { padding: var(--space-6) 0; }
 
 .film-layout {
   display: grid;
-  grid-template-columns: minmax(0, 1fr) 290px;
-  gap: var(--film-gap);
-  align-items: start;
+  grid-template-columns: 2fr 1fr;
+  gap: var(--space-4);
+  margin: 0 auto;
+  max-width: var(--container-max);
+  padding: 0 var(--gutter);
 }
-
-.film-main-col {
-  display: grid;
-  gap: var(--film-gap);
-}
-
+.film-main-col,
 .film-sidebar {
-  display: grid;
-  gap: var(--film-gap);
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-4);
 }
 
-/* ==========================================================================
- * PANEL BASE — Art Deco chrome-framed content card
- *
- * The base panel is a dark card with a faint vertical pinstripe texture
- * (the repeating-linear-gradient) over a near-black crimson gradient.
- * The border uses a dim chrome silver, and the box-shadow creates a
- * layered "recessed frame" effect: a dark inner gap, then a thin chrome
- * highlight line, then a deep outer shadow. The ::before and ::after
- * pseudo-elements add chrome corner brackets (L-shaped borders) at the
- * top-left and bottom-right corners for an Art Deco architectural feel.
- * ========================================================================== */
 
+/* ── PANEL ───────────────────────────────────────────────────────────── */
 .film-panel {
-  position: relative;
-  padding: 1.1rem;
-  /* Faint vertical pinstripes over a dark crimson-to-black gradient */
-  background:
-    repeating-linear-gradient(
-      90deg,
-      rgba(120, 10, 20, 0.04) 0,
-      rgba(120, 10, 20, 0.04) 1px,
-      transparent 1px,
-      transparent 9px
-    ),
-    linear-gradient(180deg, #1a0808, #100505 60%, #0a0303 100%);
-  border: 1px solid rgba(180, 190, 200, 0.18);
-  /* Layered shadow: inner dark recess, thin chrome inset highlight,
-   * then a heavy outer shadow for depth */
-  box-shadow:
-    inset 0 0 0 3px rgba(6, 2, 3, 0.5),
-    inset 0 0 0 4px rgba(180, 190, 200, 0.1),
-    0 20px 36px var(--film-panel-shadow);
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: var(--space-5);
 }
-
-/* ART DECO CORNER BRACKETS — Chrome L-shapes at opposing corners.
- * ::before draws the top-left bracket, ::after draws the bottom-right.
- * These small decorative corners reference the geometric metalwork
- * found on 1920s-1930s Art Deco theater interiors. */
-.film-panel::before,
-.film-panel::after {
-  content: "";
-  position: absolute;
-  width: 24px;
-  height: 24px;
-  pointer-events: none;
-}
-
-.film-panel::before {
-  top: 5px;
-  left: 5px;
-  border-top: 2px solid var(--film-chrome-dim);
-  border-left: 2px solid var(--film-chrome-dim);
-}
-
-.film-panel::after {
-  bottom: 5px;
-  right: 5px;
-  border-bottom: 2px solid var(--film-chrome-dim);
-  border-right: 2px solid var(--film-chrome-dim);
-}
-
-/* Panel heading — chrome silver text in the marquee display typeface */
 .film-panel h2 {
-  margin: 0 0 0.75rem;
-  font-size: clamp(1.05rem, 2.2vw, 1.55rem);
-  color: var(--film-chrome);
+  font-size: var(--fs-h3);
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--text-3);
+  font-weight: 500;
+  margin: 0 0 var(--space-4);
+  padding-bottom: var(--space-3);
+  border-bottom: 1px solid var(--border-soft);
 }
-
-/* Panel header row — flex layout with heading and status text on
- * opposite ends, used for "Now Screening" headers with date info */
 .film-panel-head {
   display: flex;
-  align-items: baseline;
   justify-content: space-between;
-  gap: 1rem;
-  margin-bottom: 0.6rem;
+  align-items: baseline;
+  flex-wrap: wrap;
+  gap: var(--space-2);
+  border-bottom: 1px solid var(--border-soft);
+  padding-bottom: var(--space-3);
+  margin-bottom: var(--space-4);
 }
-
-/* Feed status label — small typewriter-font text showing the data source
- * or last-updated timestamp, colored in warm amber */
+.film-panel-head h2 { border: none; padding-bottom: 0; margin-bottom: 0; }
 .film-feed-status {
+  font-family: var(--font-mono);
+  font-size: var(--fs-tiny);
+  color: var(--text-mute);
   margin: 0;
-  font-family: "Special Elite", "Courier New", monospace;
-  font-size: 0.6rem;
-  letter-spacing: 1px;
-  color: var(--film-neon-amber);
-  text-transform: uppercase;
+}
+.film-fallback {
+  font-size: var(--fs-small);
+  color: var(--text-mute);
+  font-style: italic;
 }
 
-/* ==========================================================================
- * FEATURED LOG — Lightbox-style poster card with animated glow frame
- *
- * The featured film review is displayed as a two-column grid: a large
- * movie poster on the left inside an illuminated "lightbox" frame, and
- * the review text / metadata on the right. The lightbox frame simulates
- * a backlit movie poster display case using the same chase-light bulb
- * technique as the marquee, but at a smaller scale.
- * ========================================================================== */
 
+/* ── FEATURED LOG ────────────────────────────────────────────────────── */
 .film-lightbox {
   display: grid;
-  grid-template-columns: 320px minmax(0, 1fr);
-  gap: 1.4rem;
+  grid-template-columns: 200px 1fr;
+  gap: var(--space-4);
   align-items: start;
 }
-
-/* LIGHTBOX POSTER FRAME — Chrome border with 48 chase-light bulbs
- *
- * This frame wraps the movie poster image and surrounds it with warm
- * amber bulbs on all four sides, simulating the illuminated poster
- * display cases found in theater lobbies. The construction is identical
- * to the marquee bulbs but at a slightly smaller 3px radius:
- *   - Top row: 9 bulbs at y=1.5%
- *   - Bottom row: 9 bulbs at y=98.5%
- *   - Left column: 12 bulbs at x=3%
- *   - Right column: 12 bulbs at x=97%
- * The frame base is a dark mahogany gradient, and the chrome border +
- * amber box-shadow glow complete the display-case illusion. */
 .film-lightbox-frame {
   position: relative;
-  width: 320px;
-  flex-shrink: 0;
-  padding: 14px;
-  background:
-    /* Top row of 9 poster-frame bulbs */
-    radial-gradient(circle at 5%  1.5%, var(--film-bulb) 0 3px, rgba(255, 200, 60, 0.35) 3.5px, transparent 5.5px),
-    radial-gradient(circle at 16% 1.5%, var(--film-bulb) 0 3px, rgba(255, 200, 60, 0.35) 3.5px, transparent 5.5px),
-    radial-gradient(circle at 27% 1.5%, var(--film-bulb) 0 3px, rgba(255, 200, 60, 0.35) 3.5px, transparent 5.5px),
-    radial-gradient(circle at 38% 1.5%, var(--film-bulb) 0 3px, rgba(255, 200, 60, 0.35) 3.5px, transparent 5.5px),
-    radial-gradient(circle at 50% 1.5%, var(--film-bulb) 0 3px, rgba(255, 200, 60, 0.35) 3.5px, transparent 5.5px),
-    radial-gradient(circle at 62% 1.5%, var(--film-bulb) 0 3px, rgba(255, 200, 60, 0.35) 3.5px, transparent 5.5px),
-    radial-gradient(circle at 73% 1.5%, var(--film-bulb) 0 3px, rgba(255, 200, 60, 0.35) 3.5px, transparent 5.5px),
-    radial-gradient(circle at 84% 1.5%, var(--film-bulb) 0 3px, rgba(255, 200, 60, 0.35) 3.5px, transparent 5.5px),
-    radial-gradient(circle at 95% 1.5%, var(--film-bulb) 0 3px, rgba(255, 200, 60, 0.35) 3.5px, transparent 5.5px),
-    /* Bottom row of 9 poster-frame bulbs */
-    radial-gradient(circle at 5%  98.5%, var(--film-bulb) 0 3px, rgba(255, 200, 60, 0.35) 3.5px, transparent 5.5px),
-    radial-gradient(circle at 16% 98.5%, var(--film-bulb) 0 3px, rgba(255, 200, 60, 0.35) 3.5px, transparent 5.5px),
-    radial-gradient(circle at 27% 98.5%, var(--film-bulb) 0 3px, rgba(255, 200, 60, 0.35) 3.5px, transparent 5.5px),
-    radial-gradient(circle at 38% 98.5%, var(--film-bulb) 0 3px, rgba(255, 200, 60, 0.35) 3.5px, transparent 5.5px),
-    radial-gradient(circle at 50% 98.5%, var(--film-bulb) 0 3px, rgba(255, 200, 60, 0.35) 3.5px, transparent 5.5px),
-    radial-gradient(circle at 62% 98.5%, var(--film-bulb) 0 3px, rgba(255, 200, 60, 0.35) 3.5px, transparent 5.5px),
-    radial-gradient(circle at 73% 98.5%, var(--film-bulb) 0 3px, rgba(255, 200, 60, 0.35) 3.5px, transparent 5.5px),
-    radial-gradient(circle at 84% 98.5%, var(--film-bulb) 0 3px, rgba(255, 200, 60, 0.35) 3.5px, transparent 5.5px),
-    radial-gradient(circle at 95% 98.5%, var(--film-bulb) 0 3px, rgba(255, 200, 60, 0.35) 3.5px, transparent 5.5px),
-    /* Left column of 12 poster-frame bulbs */
-    radial-gradient(circle at 3% 6%,  var(--film-bulb) 0 3px, rgba(255, 200, 60, 0.35) 3.5px, transparent 5.5px),
-    radial-gradient(circle at 3% 14%, var(--film-bulb) 0 3px, rgba(255, 200, 60, 0.35) 3.5px, transparent 5.5px),
-    radial-gradient(circle at 3% 22%, var(--film-bulb) 0 3px, rgba(255, 200, 60, 0.35) 3.5px, transparent 5.5px),
-    radial-gradient(circle at 3% 30%, var(--film-bulb) 0 3px, rgba(255, 200, 60, 0.35) 3.5px, transparent 5.5px),
-    radial-gradient(circle at 3% 38%, var(--film-bulb) 0 3px, rgba(255, 200, 60, 0.35) 3.5px, transparent 5.5px),
-    radial-gradient(circle at 3% 46%, var(--film-bulb) 0 3px, rgba(255, 200, 60, 0.35) 3.5px, transparent 5.5px),
-    radial-gradient(circle at 3% 54%, var(--film-bulb) 0 3px, rgba(255, 200, 60, 0.35) 3.5px, transparent 5.5px),
-    radial-gradient(circle at 3% 62%, var(--film-bulb) 0 3px, rgba(255, 200, 60, 0.35) 3.5px, transparent 5.5px),
-    radial-gradient(circle at 3% 70%, var(--film-bulb) 0 3px, rgba(255, 200, 60, 0.35) 3.5px, transparent 5.5px),
-    radial-gradient(circle at 3% 78%, var(--film-bulb) 0 3px, rgba(255, 200, 60, 0.35) 3.5px, transparent 5.5px),
-    radial-gradient(circle at 3% 86%, var(--film-bulb) 0 3px, rgba(255, 200, 60, 0.35) 3.5px, transparent 5.5px),
-    radial-gradient(circle at 3% 94%, var(--film-bulb) 0 3px, rgba(255, 200, 60, 0.35) 3.5px, transparent 5.5px),
-    /* Right column of 12 poster-frame bulbs */
-    radial-gradient(circle at 97% 6%,  var(--film-bulb) 0 3px, rgba(255, 200, 60, 0.35) 3.5px, transparent 5.5px),
-    radial-gradient(circle at 97% 14%, var(--film-bulb) 0 3px, rgba(255, 200, 60, 0.35) 3.5px, transparent 5.5px),
-    radial-gradient(circle at 97% 22%, var(--film-bulb) 0 3px, rgba(255, 200, 60, 0.35) 3.5px, transparent 5.5px),
-    radial-gradient(circle at 97% 30%, var(--film-bulb) 0 3px, rgba(255, 200, 60, 0.35) 3.5px, transparent 5.5px),
-    radial-gradient(circle at 97% 38%, var(--film-bulb) 0 3px, rgba(255, 200, 60, 0.35) 3.5px, transparent 5.5px),
-    radial-gradient(circle at 97% 46%, var(--film-bulb) 0 3px, rgba(255, 200, 60, 0.35) 3.5px, transparent 5.5px),
-    radial-gradient(circle at 97% 54%, var(--film-bulb) 0 3px, rgba(255, 200, 60, 0.35) 3.5px, transparent 5.5px),
-    radial-gradient(circle at 97% 62%, var(--film-bulb) 0 3px, rgba(255, 200, 60, 0.35) 3.5px, transparent 5.5px),
-    radial-gradient(circle at 97% 70%, var(--film-bulb) 0 3px, rgba(255, 200, 60, 0.35) 3.5px, transparent 5.5px),
-    radial-gradient(circle at 97% 78%, var(--film-bulb) 0 3px, rgba(255, 200, 60, 0.35) 3.5px, transparent 5.5px),
-    radial-gradient(circle at 97% 86%, var(--film-bulb) 0 3px, rgba(255, 200, 60, 0.35) 3.5px, transparent 5.5px),
-    radial-gradient(circle at 97% 94%, var(--film-bulb) 0 3px, rgba(255, 200, 60, 0.35) 3.5px, transparent 5.5px),
-    /* Frame base — dark mahogany gradient, angled for visual interest */
-    linear-gradient(160deg, #1a1008, #0e0804 55%, #060302 100%);
-  border: 2px solid rgba(180, 190, 200, 0.35);
-  /* Box-shadow layers: thin chrome outline, close amber glow, wide amber
-   * bloom, and a deep outer shadow to lift the frame off the page */
-  box-shadow:
-    0 0 0 1px rgba(100, 108, 116, 0.2),
-    0 0 20px rgba(255, 185, 50, 0.15),
-    0 0 50px rgba(255, 165, 30, 0.06),
-    0 14px 30px rgba(0, 0, 0, 0.6);
-  animation: bulbPulse 2.5s ease-in-out infinite;
+  background: var(--bg-deep);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  overflow: hidden;
 }
-
-/* The poster image itself fills the frame's content area at a 2:3
- * portrait aspect ratio (standard movie poster proportions). */
 .film-lightbox-poster {
-  display: block;
   width: 100%;
-  aspect-ratio: 2 / 3;
-  object-fit: cover;
+  height: auto;
+  display: block;
 }
-
-/* TITLE & RATING OVERLAY — A gradient scrim anchored to the bottom of
- * the poster frame. It fades from fully opaque black at the bottom to
- * transparent at the top, allowing the poster image to show through
- * while making white text readable over any poster artwork. */
 .film-lightbox-overlay {
   position: absolute;
-  bottom: 14px;
-  left: 14px;
-  right: 14px;
-  padding: 0.7rem 0.7rem 0.5rem;
-  background:
-    linear-gradient(0deg, rgba(4, 2, 2, 0.96) 0%, rgba(4, 2, 2, 0.8) 65%, transparent 100%);
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(11, 13, 22, 0.92);
+  border-top: 2px solid var(--accent);
+  padding: var(--space-3);
 }
-
-/* Film title inside the poster overlay — bright white for maximum
- * contrast against the dark gradient scrim */
 .film-lightbox-title {
-  margin: 0 0 0.2rem;
-  font-size: 0.9rem !important;
-  color: #fff !important;
-  line-height: 1.2;
-  letter-spacing: 1px !important;
+  font-size: var(--fs-h3);
+  color: var(--text);
+  font-weight: 600;
+  margin: 0 0 4px;
 }
-
-/* Star rating display — warm amber color. The ::first-letter reset
- * suppresses the decorative drop-cap that styles.css applies by default,
- * since star characters should all render at the same size inline. */
 .film-lightbox-rating {
+  font-family: var(--font-mono);
+  font-size: var(--fs-small);
+  color: var(--bitcoin);
   margin: 0;
-  font-size: 0.84rem;
-  color: var(--film-neon-amber);
-  line-height: 1;
-  letter-spacing: 2px;
 }
-
-.film-lightbox-rating::first-letter {
-  float: none !important;
-  font-size: inherit !important;
-  font-family: inherit !important;
-  color: inherit !important;
-  line-height: inherit !important;
-  padding: 0 !important;
-  margin: 0 !important;
-}
-
-/* --------------------------------------------------------------------------
- * LIGHTBOX INFO STRIP — Review text and metadata beside the poster
- *
- * Arranged as a vertical flex column: date, review blurb, and Letterboxd
- * link. The date uses the typewriter font, the review is italic serif,
- * and the link is styled in green to stand out from the warm palette.
- * -------------------------------------------------------------------------- */
-
 .film-lightbox-info {
   display: flex;
   flex-direction: column;
-  gap: 0.6rem;
-  padding-top: 0.1rem;
+  gap: var(--space-3);
 }
-
-/* Watch date — small uppercase typewriter text in dim chrome */
 .film-lightbox-date {
-  margin: 0;
-  font-family: "Special Elite", "Courier New", monospace;
-  font-size: 0.62rem;
-  letter-spacing: 1px;
+  font-family: var(--font-mono);
+  font-size: var(--fs-tiny);
+  color: var(--text-mute);
   text-transform: uppercase;
-  color: rgba(180, 190, 200, 0.6);
-}
-
-/* Suppress drop-cap on the date text */
-.film-lightbox-date::first-letter {
-  float: none !important;
-  font-size: inherit !important;
-  font-family: inherit !important;
-  color: inherit !important;
-  line-height: inherit !important;
-  padding: 0 !important;
-  margin: 0 !important;
-}
-
-/* Review excerpt — italic serif for a literary, personal feel */
-.film-lightbox-review {
+  letter-spacing: 0.04em;
   margin: 0;
-  font-size: 0.9rem;
-  line-height: 1.5;
-  color: rgba(230, 218, 200, 0.88);
-  font-style: italic;
+}
+.film-lightbox-review {
+  font-size: var(--fs-body);
+  color: var(--text-2);
+  line-height: 1.6;
+  margin: 0;
 }
 
-/* Suppress drop-cap on the review text as well */
-.film-lightbox-review::first-letter {
-  float: none !important;
-  font-size: inherit !important;
-  font-family: inherit !important;
-  color: inherit !important;
-  line-height: inherit !important;
-  padding: 0 !important;
-  margin: 0 !important;
-}
-
-/* LETTERBOXD EXTERNAL LINK — Green accent link that stands apart from
- * the red/amber palette. It pushes to the bottom of the info column
- * via `margin-top: auto` (flexbox trick). The green color references
- * the Letterboxd brand and provides a clear call-to-action. */
 .film-lb-link {
   display: inline-flex;
   align-items: center;
-  gap: 0.45em;
-  color: rgba(0, 220, 80, 0.9);
-  font-family: "Special Elite", "Courier New", monospace;
-  font-size: 0.66rem;
+  gap: 8px;
+  font-family: var(--font-mono);
+  font-size: var(--fs-tiny);
+  color: var(--accent);
   text-transform: uppercase;
-  letter-spacing: 0.8px;
-  text-decoration: none;
-  margin-top: auto;
+  letter-spacing: 0.06em;
+  border: 1px solid var(--accent);
+  border-radius: var(--radius);
+  padding: 6px 12px;
+  align-self: flex-start;
 }
-
-/* Hover: brighter green with a soft neon glow */
 .film-lb-link:hover {
-  color: #44ff90;
-  text-shadow: 0 0 8px rgba(0, 255, 80, 0.3);
+  background: var(--accent);
+  color: var(--bg-deep);
 }
+.film-lb-logo { display: inline-block; }
 
-/* Letterboxd logo icon beside the link text */
-.film-lb-logo {
-  flex-shrink: 0;
-  vertical-align: middle;
-}
 
-/* ==========================================================================
- * NOW SCREENING PANEL — Cinema projection screen with velvet curtain drapes
- *
- * This panel simulates looking at a movie theater screen from the
- * audience. The outer container is the dark "theater wall" with acoustic
- * panel texture. The ::before and ::after pseudo-elements create crimson
- * velvet curtains gathered to the left and right sides. Inside, the
- * header and film list sit on a bright "projection screen" surface with
- * subtle film grain and scan-line textures.
- * ========================================================================== */
-
-.film-panel-screen {
-  padding: 1rem 0 0.6rem;
-  overflow: hidden;
-  /* Dark theater wall background — a subtle radial gradient adds the
-   * impression of a darkened auditorium with slightly lighter walls
-   * near the top (where ambient screen light would bounce). */
-  background:
-    radial-gradient(ellipse 90% 50% at 50% 30%, rgba(22, 18, 22, 0.6), transparent 65%),
-    linear-gradient(180deg, #0c090b 0%, #080608 40%, #060506 100%);
-  border: none;
-  /* The screen panel "glows" — cool blue-white light spilling outward
-   * simulates the way a bright projected image illuminates the area
-   * around the screen in a dark theater. */
-  box-shadow:
-    0 0 70px rgba(230, 240, 255, 0.10),
-    0 0 140px rgba(210, 225, 250, 0.05),
-    0 32px 56px rgba(0, 0, 0, 0.85);
-}
-
-/* LEFT VELVET CURTAIN DRAPE (::before)
- *
- * Simulates gathered velvet curtain fabric on the left side of the screen.
- * The main gradient (linear-gradient at 90deg, left to right) alternates
- * between lighter crimson "ridges" and darker crimson "troughs" at
- * varying intervals, creating the appearance of vertical fabric folds
- * that catch light unevenly. The repeating-linear-gradient adds a subtle
- * horizontal gathering texture. The inset box-shadow on the right edge
- * darkens the curtain where it meets the screen, simulating the deep
- * shadow cast by the fold of heavy fabric. */
-.film-panel-screen::before {
-  content: "";
-  display: block;
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  width: 1.1rem;
-  height: auto;
-  border: none;
-  pointer-events: none;
-  z-index: 0;
-  background:
-    /* Vertical fold ridges — alternating crimson highlight and shadow
-     * at irregular intervals to look like gathered drape pleats */
-    linear-gradient(90deg,
-      rgba(110, 12, 18, 0.85) 0%,
-      rgba(155, 20, 28, 0.55) 12%,
-      rgba(50, 4, 8, 0.80) 24%,
-      rgba(140, 16, 24, 0.50) 36%,
-      rgba(45, 3, 7, 0.82) 48%,
-      rgba(125, 14, 20, 0.45) 60%,
-      rgba(55, 5, 9, 0.75) 72%,
-      rgba(100, 10, 16, 0.35) 84%,
-      transparent 100%
-    ),
-    /* Subtle horizontal texture — simulates the horizontal threads
-     * of the velvet weave and the slight ripple of gathered fabric */
-    repeating-linear-gradient(
-      180deg,
-      rgba(160, 20, 28, 0.10) 0,
-      rgba(70, 6, 12, 0.15) 5px,
-      rgba(130, 14, 22, 0.06) 10px
-    );
-  /* Deep inset shadow on the inner edge where the curtain meets the screen */
-  box-shadow: inset -8px 0 20px rgba(0, 0, 0, 0.55);
-}
-
-/* RIGHT VELVET CURTAIN DRAPE (::after) — Mirror of the left curtain.
- * The gradient direction is flipped to 270deg (right to left) so the
- * folds face inward. The inset shadow is on the left edge instead. */
-.film-panel-screen::after {
-  content: "";
-  display: block;
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  right: 0;
-  width: 1.1rem;
-  height: auto;
-  border: none;
-  pointer-events: none;
-  z-index: 0;
-  background:
-    linear-gradient(270deg,
-      rgba(110, 12, 18, 0.85) 0%,
-      rgba(155, 20, 28, 0.55) 12%,
-      rgba(50, 4, 8, 0.80) 24%,
-      rgba(140, 16, 24, 0.50) 36%,
-      rgba(45, 3, 7, 0.82) 48%,
-      rgba(125, 14, 20, 0.45) 60%,
-      rgba(55, 5, 9, 0.75) 72%,
-      rgba(100, 10, 16, 0.35) 84%,
-      transparent 100%
-    ),
-    repeating-linear-gradient(
-      180deg,
-      rgba(160, 20, 28, 0.10) 0,
-      rgba(70, 6, 12, 0.15) 5px,
-      rgba(130, 14, 22, 0.06) 10px
-    );
-  box-shadow: inset 8px 0 20px rgba(0, 0, 0, 0.55);
-}
-
-/* PROJECTION SCREEN HEADER — The bright inset panel that holds the
- * section title ("Now Screening"). It sits inside the dark theater
- * wall between the curtains.
- *
- * Background layers:
- *   1) Inline SVG feTurbulence noise — adds film-grain texture
- *   2) Radial gradient hotspot — brighter center, simulating the
- *      projector beam hitting the middle of the screen
- *   3) Warm cream base color — the actual screen surface
- *
- * The 3px black border represents the matte black frame of the screen.
- * The screenGlow animation makes the outer glow subtly pulse, as if
- * the projector brightness is slightly fluctuating. */
-.film-panel-screen .film-panel-head {
-  padding: 0.9rem 2rem 0.8rem;
-  margin: 0 1.1rem;
-  background:
-    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='200' height='200'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.75' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='0.06'/%3E%3C/svg%3E"),
-    radial-gradient(ellipse 70% 200% at 50% 50%, rgba(255, 252, 245, 0.20), transparent 55%),
-    linear-gradient(180deg, #eee8d4, #e4dcc6);
-  border: 3px solid #050404;
-  border-bottom: none;
-  margin-bottom: 0;
-  position: relative;
-  z-index: 1;
-  box-shadow:
-    0 0 0 1px rgba(50, 45, 42, 0.3),
-    inset 0 1px 6px rgba(0, 0, 0, 0.06);
-  animation: screenGlow 3s ease-in-out infinite;
-}
-
-/* Screen header text — dark ink color on the bright projection surface */
-.film-panel-screen .film-panel-head h2 {
-  font-size: clamp(1.05rem, 2.2vw, 1.55rem);
-  color: #0a0806 !important;
-  text-shadow: none;
-}
-
-/* Screen feed status — muted dark text on the bright surface */
-.film-panel-screen .film-feed-status {
-  color: rgba(20, 16, 12, 0.55);
-}
-
-/* FILM LIST ON PROJECTION SCREEN — Bright silver-white surface
- *
- * This is the main body of the projection screen, continuing below the
- * header. The background layers create a realistic projected image feel:
- *   1) SVG noise for film grain texture
- *   2) Repeating horizontal scan lines — the faint dark lines every 3-4px
- *      simulate the horizontal banding visible in projected film
- *   3) Projector beam hotspot — radial gradient brighter at top-center
- *      where the beam would be most intense
- *   4) Silver-white base gradient — the screen surface itself
- *
- * The border-top is just a subtle separator line (the matte black frame
- * is on the sides and bottom). The screenGlow animation pulses the outer
- * glow to simulate projector brightness fluctuation. */
-.film-panel-screen .film-strip-list {
-  padding: 0.85rem 1.6rem;
-  margin: 0 1.1rem;
-  background:
-    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='200' height='200'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.75' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='0.06'/%3E%3C/svg%3E"),
-    repeating-linear-gradient(
-      0deg,
-      transparent,
-      transparent 3px,
-      rgba(0, 0, 0, 0.012) 3px,
-      rgba(0, 0, 0, 0.012) 4px
-    ),
-    radial-gradient(ellipse 85% 50% at 50% 0%, rgba(255, 255, 255, 0.22), transparent 65%),
-    linear-gradient(180deg, #f0f2f5 0%, #e8eaed 40%, #e2e4e8 100%);
-  border: 3px solid #050404;
-  border-top: 1px solid rgba(0, 0, 0, 0.08);
-  position: relative;
-  z-index: 1;
-  box-shadow:
-    0 0 0 1px rgba(50, 45, 42, 0.3),
-    inset 0 0 30px rgba(0, 0, 0, 0.04);
-  animation: screenGlow 3s ease-in-out infinite;
-}
-
-/* SCREEN-CONTEXT OVERRIDES — Film entries displayed on the bright
- * projection screen need inverted colors: dark text on light background,
- * dark sprocket perforations instead of light ones, and dark-on-light
- * hover states. These rules override the default dark-panel styling. */
-
-.film-panel-screen .film-strip-item {
-  background: transparent;
-  border-color: rgba(0, 0, 0, 0.07);
-}
-
-/* Sprocket perforations on the screen — dark marks on the light surface */
-.film-panel-screen .film-strip-item::before,
-.film-panel-screen .film-strip-item::after {
-  background: repeating-linear-gradient(
-    90deg,
-    rgba(0, 0, 0, 0.13) 0,
-    rgba(0, 0, 0, 0.13) 8px,
-    transparent 8px,
-    transparent 16px
-  );
-}
-
-/* Dark text for film titles on the bright screen */
-.film-panel-screen .film-strip-item a {
-  color: #18100c;
-}
-
-/* Hover: subtle crimson border and shadow on the bright surface */
-.film-panel-screen .film-strip-item:hover {
-  border-color: rgba(140, 18, 25, 0.2);
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.07);
-}
-
-/* Hover text color: cinema red for a themed interactive highlight */
-.film-panel-screen .film-strip-item a:hover {
-  color: #8c1218;
-}
-
-/* Metadata and review text — dark tones suited for the bright screen */
-.film-panel-screen .film-strip-meta {
-  color: rgba(20, 12, 8, 0.52);
-}
-
-.film-panel-screen .film-strip-review {
-  color: rgba(24, 15, 10, 0.72);
-  font-style: italic;
-}
-
-/* Suppress drop-cap on review text within the screen context */
-.film-panel-screen .film-strip-review::first-letter {
-  float: none !important;
-  font-size: inherit !important;
-  font-family: inherit !important;
-  color: inherit !important;
-  line-height: inherit !important;
-  padding: 0 !important;
-  margin: 0 !important;
-}
-
-/* ==========================================================================
- * FILM STRIP LIST — Individual film entries with sprocket-hole borders
- *
- * Each film entry is styled to resemble a frame of 35mm film strip.
- * The dark background simulates the black celluloid base, and the
- * ::before / ::after pseudo-elements draw repeating rectangular dashes
- * along the top and bottom edges — these are the sprocket perforations
- * (the small rectangular holes that run along both edges of real film
- * stock and engage with the projector's transport mechanism).
- * ========================================================================== */
-
+/* ── NOW SCREENING — vertical stack ─────────────────────────────────── */
 .film-strip-list {
   list-style: none;
   margin: 0;
   padding: 0;
-  display: grid;
-  gap: 0.45rem;
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-3);
+}
+.film-strip-list li,
+.film-strip-list .film-strip-item {
+  background: var(--surface-2);
+  border: 1px solid var(--border);
+  border-left: 2px solid var(--accent);
+  border-radius: var(--radius);
+  padding: var(--space-4);
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+.film-strip-list a {
+  font-size: var(--fs-h3);
+  color: var(--text);
+  font-weight: 600;
+  text-transform: none;
+  letter-spacing: 0;
+}
+.film-strip-list a:hover { color: var(--accent); }
+
+.film-strip-list .film-strip-meta {
+  font-family: var(--font-mono);
+  font-size: var(--fs-small);
+  color: var(--text-3);
+}
+.film-strip-list .film-strip-review {
+  font-size: var(--fs-small);
+  line-height: 1.5;
+  color: var(--text-2);
+  margin: var(--space-2) 0 0;
 }
 
-.film-strip-item {
-  position: relative;
-  display: grid;
-  gap: 0.2rem;
-  padding: 0.55rem 0.7rem;
-  /* Dark celluloid base — near-black with a slight warm tint */
-  background: linear-gradient(180deg, rgba(18, 10, 12, 0.94), rgba(8, 4, 5, 0.96));
-  border: 1px solid rgba(180, 190, 200, 0.15);
-}
 
-/* SPROCKET PERFORATIONS — Repeating 8px dashes along top and bottom edges.
- * On real film, these rectangular holes are evenly spaced along both edges
- * of the celluloid strip. Here, each pseudo-element draws a 4px-tall
- * horizontal bar of repeating dashes (8px on, 8px off) in a warm muted tone. */
-.film-strip-item::before,
-.film-strip-item::after {
-  content: "";
-  position: absolute;
-  left: 8px;
-  right: 8px;
-  height: 4px;
-  background:
-    repeating-linear-gradient(
-      90deg,
-      rgba(200, 180, 160, 0.45) 0,
-      rgba(200, 180, 160, 0.45) 8px,
-      transparent 8px,
-      transparent 16px
-    );
-}
-
-/* Top sprocket holes */
-.film-strip-item::before { top: 2px; }
-/* Bottom sprocket holes */
-.film-strip-item::after  { bottom: 2px; }
-
-/* Film title link — warm cream text in the classic serif body font */
-.film-strip-item a {
-  color: #e8dcd0;
-  font-family: "Libre Caslon Text", Georgia, serif;
-  font-size: 0.95rem;
-  line-height: 1.25;
-}
-
-/* Hover: neon red border glow evokes the red light of a darkroom or
- * the warm glow of a projector running through film stock */
-.film-strip-item:hover {
-  border-color: rgba(255, 50, 65, 0.3);
-  box-shadow: 0 2px 14px rgba(255, 50, 60, 0.06);
-}
-
-.film-strip-item a:hover { color: #fff; }
-
-/* Metadata line — date, rating, etc. in small typewriter font */
-.film-strip-meta {
-  color: rgba(180, 190, 200, 0.6);
-  font-family: "Special Elite", "Courier New", monospace;
-  font-size: 0.64rem;
-  letter-spacing: 0.35px;
-  text-transform: uppercase;
-}
-
-/* One-line review excerpt beneath the title — italic serif */
-.film-strip-review {
-  margin: 0.08rem 0 0;
-  color: rgba(230, 218, 200, 0.82);
-  font-family: "Libre Caslon Text", Georgia, serif;
-  font-size: 0.82rem;
-  line-height: 1.4;
-  font-style: italic;
-}
-
-/* ==========================================================================
- * SIDEBAR — Movie ticket stub panels
- *
- * The sidebar panels (Lists and Stats) are styled to look like physical
- * cinema ticket stubs: cream-colored paper with faint horizontal print
- * lines, a bold red stripe across the top (the theater's brand color),
- * and circular "punch holes" on both sides where a theater usher would
- * tear or punch the ticket. The cream background contrasts with the dark
- * main content panels, making the sidebar feel like a tactile artifact
- * you could pick up and hold.
- *
- * Background layers:
- *   1) Repeating horizontal lines every 18-19px — simulates the faint
- *      ruled lines printed on thermal/receipt paper
- *   2) Cream-to-ivory gradient — the ticket paper surface itself
- *
- * The red border-top is the ticket's accent stripe, and the inset
- * box-shadow with white creates the subtle sheen of glossy paper.
- * ========================================================================== */
-
-.film-panel-lists,
-.film-panel-stats {
-  background:
-    repeating-linear-gradient(
-      0deg,
-      transparent,
-      transparent 18px,
-      rgba(0, 0, 0, 0.02) 18px,
-      rgba(0, 0, 0, 0.02) 19px
-    ),
-    linear-gradient(165deg, #f9f3e5, #f0e8d3 55%, #ebe0c6 100%);
-  border: 1px solid rgba(100, 60, 20, 0.28);
-  border-top: 5px solid #b8192a;
-  box-shadow:
-    0 2px 4px rgba(0, 0, 0, 0.18),
-    0 14px 32px rgba(0, 0, 0, 0.65),
-    0 0 22px rgba(100, 12, 18, 0.12),
-    inset 0 0 0 1px rgba(255, 255, 255, 0.5);
-}
-
-/* LEFT PUNCH HOLE — A small dark circle positioned on the left edge,
- * overlapping the panel boundary. The radial gradient simulates depth:
- * a highlight at top-left (as if lit from above), darkening toward the
- * center, with a dark ring border. The inset shadow adds the concave
- * depth of a hole punched through paper. */
-.film-panel-lists::before,
-.film-panel-stats::before {
-  width: 14px;
-  height: 14px;
-  border-radius: 50% !important;
-  border: none;
-  background: radial-gradient(circle at 40% 35%, #160608, #0d0406 65%, rgba(10, 3, 4, 0.6) 100%);
-  box-shadow:
-    inset 0 1px 4px rgba(0, 0, 0, 0.7),
-    0 0 0 1px rgba(80, 35, 15, 0.2);
-  top: 3.85rem;
-  left: -7px;
-}
-
-/* RIGHT PUNCH HOLE — Matching hole on the right side. Together with the
- * left hole, these simulate the perforated tear-line on a cinema ticket
- * where the stub separates from the main ticket. */
-.film-panel-lists::after,
-.film-panel-stats::after {
-  width: 14px;
-  height: 14px;
-  border-radius: 50% !important;
-  border: none;
-  background: radial-gradient(circle at 40% 35%, #160608, #0d0406 65%, rgba(10, 3, 4, 0.6) 100%);
-  box-shadow:
-    inset 0 1px 4px rgba(0, 0, 0, 0.7),
-    0 0 0 1px rgba(80, 35, 15, 0.2);
-  top: 3.85rem;
-  right: -7px;
-  left: auto;
-  bottom: auto;
-}
-
-/* TICKET HEADING — Dark thermal-print text on the cream paper surface.
- * The ::before pseudo adds a small "ADMIT ONE" label above the heading
- * (like the preprinted text on a real cinema ticket). The ::after pseudo
- * draws a dashed "perforated tear line" running the full width of the
- * panel below the heading, simulating where you would tear the stub. */
-
-.film-panel-lists h2,
-.film-panel-stats h2 {
-  position: relative;
-  font-size: 1rem;
-  color: #1c0e08;
-  border-bottom: none;
-  padding-bottom: 0.9rem;
-  margin-bottom: 0.9rem;
-  letter-spacing: 2px;
-}
-
-/* "ADMIT ONE" preprinted label — small typewriter font, faded brown ink */
-.film-panel-lists h2::before,
-.film-panel-stats h2::before {
-  content: "\2726 ADMIT ONE \2726";
-  display: block;
-  font-family: "Special Elite", "Courier New", monospace;
-  font-size: 0.5rem;
-  letter-spacing: 2.5px;
-  color: rgba(60, 25, 8, 0.55);
-  margin-bottom: 0.3rem;
-  font-weight: normal;
-}
-
-/* Perforated tear line — dashed dark marks across the cream paper,
- * extending beyond the padding to reach the panel edges */
-.film-panel-lists h2::after,
-.film-panel-stats h2::after {
-  content: "";
-  position: absolute;
-  bottom: 0;
-  left: -1.1rem;
-  right: -1.1rem;
-  height: 1px;
-  background-image: repeating-linear-gradient(
-    to right,
-    rgba(50, 20, 8, 0.45) 0,
-    rgba(50, 20, 8, 0.45) 5px,
-    transparent 5px,
-    transparent 10px
-  );
-}
-
-/* TICKET BODY — Dark print on cream for list items and stats.
- * These override the default light-on-dark panel colors so that text
- * reads as dark ink printed on the cream ticket paper surface. */
-
-.film-panel-lists .film-list-activity a {
-  color: #1c0e08;
-}
-
-/* Hover: cinema red ink — like a stamped or highlighted item */
-.film-panel-lists .film-list-activity a:hover {
-  color: #b8192a;
-}
-
-.film-panel-lists .film-list-activity span {
-  color: rgba(50, 20, 8, 0.55);
-}
-
-.film-panel-lists .film-list-activity li {
-  border-bottom-color: rgba(50, 20, 8, 0.1);
-}
-
-/* Stats grid on the ticket — dark values on cream with subtle dark
- * cell backgrounds for visual separation */
-.film-panel-stats .film-stats-grid div {
-  background: rgba(0, 0, 0, 0.04);
-  border-color: rgba(50, 20, 8, 0.14);
-}
-
-.film-panel-stats .film-stats-grid dt {
-  color: rgba(50, 20, 8, 0.6);
-}
-
-.film-panel-stats .film-stats-grid dd {
-  color: #1c0e08;
-}
-
-/* Footer note on the ticket — faded fine print */
-.film-panel-stats .film-note {
-  color: rgba(50, 20, 8, 0.5);
-}
-
-/* Links in the footer note — cinema red at reduced opacity */
-.film-panel-stats .film-note a {
-  color: #b8192a;
-  opacity: 0.85;
-}
-
-.film-panel-stats .film-note a:hover {
-  opacity: 1;
-}
-
-/* ==========================================================================
- * LIST ACTIVITY — Recent Letterboxd activity feed
- *
- * A simple list of recently watched/rated/listed films. Each item is a
- * flex row with the film title on the left and a date/action label on
- * the right. Styled for the default dark panel context (light text on
- * dark background). The ticket-stub panels override these colors above.
- * ========================================================================== */
-
+/* ── SIDEBAR — Recent Lists + Booth Stats ───────────────────────────── */
 .film-list-activity {
   list-style: none;
   margin: 0;
   padding: 0;
-  display: grid;
-  gap: 0;
-}
-
-.film-list-activity li {
   display: flex;
-  justify-content: space-between;
-  align-items: baseline;
-  gap: 0.6rem;
-  padding: 0.44rem 0;
-  border-bottom: 1px solid rgba(180, 190, 200, 0.07);
+  flex-direction: column;
+  gap: var(--space-2);
 }
-
-.film-list-activity li:last-child {
-  border-bottom: none;
+.film-list-activity li {
+  background: var(--surface-2);
+  border: 1px solid var(--border);
+  border-left: 2px solid var(--accent);
+  border-radius: var(--radius);
+  padding: var(--space-3);
 }
-
-/* Film title links — serif font, warm cream color */
 .film-list-activity a {
-  color: #d0c4b8;
-  font-family: "Libre Caslon Text", Georgia, serif;
-  font-size: 0.82rem;
-  line-height: 1.3;
+  font-size: var(--fs-small);
+  color: var(--text);
+  line-height: 1.4;
 }
+.film-list-activity a:hover { color: var(--accent); }
 
-.film-list-activity a:hover {
-  color: #fff;
-}
-
-/* Date/action labels — tiny monospace, chrome-colored, no-wrap */
-.film-list-activity span {
-  color: rgba(180, 190, 200, 0.5);
-  font-family: "Special Elite", "Courier New", monospace;
-  font-size: 0.58rem;
-  text-transform: uppercase;
-  white-space: nowrap;
-  flex-shrink: 0;
-}
-
-/* ==========================================================================
- * BOOTH STATS — Viewing statistics in a 2-column grid
- *
- * Displays key metrics (films this year, average rating, etc.) in a
- * compact grid of stat cards. Each card has a small label (dt) and a
- * large display number (dd) using the Bebas Neue marquee font. The
- * dark panel version uses chrome silver for numbers; the ticket-stub
- * override above switches to dark ink on cream.
- * ========================================================================== */
 
 .film-stats-grid {
-  margin: 0;
   display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
-  gap: 0.5rem;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--space-2);
+  margin: 0;
 }
-
-/* Individual stat card — dark semi-transparent background with chrome border */
-.film-stats-grid div {
-  padding: 0.48rem 0.55rem;
-  background: rgba(40, 15, 18, 0.4);
-  border: 1px solid rgba(180, 190, 200, 0.12);
+.film-stats-grid > div {
+  background: var(--surface-2);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: var(--space-3);
 }
-
-/* Stat label — tiny uppercase typewriter text */
 .film-stats-grid dt {
-  margin: 0;
-  font-family: "Special Elite", "Courier New", monospace;
-  font-size: 0.55rem;
-  letter-spacing: 1px;
-  color: rgba(180, 190, 200, 0.6);
+  font-size: var(--fs-tiny);
   text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--text-3);
+  margin-bottom: 4px;
+  font-weight: 500;
 }
-
-/* Stat value — large Bebas Neue display number in chrome silver */
 .film-stats-grid dd {
-  margin: 0.15rem 0 0;
-  font-family: "Bebas Neue", "Impact", sans-serif;
-  font-size: 1.2rem;
-  color: var(--film-chrome);
-  letter-spacing: 1px;
-}
-
-/* Footnote below the stats grid — small faded text with source attribution */
-.film-note {
-  margin: 0.7rem 0 0;
-  font-size: 0.7rem;
-  color: rgba(180, 190, 200, 0.45);
-  font-family: "Special Elite", "Courier New", monospace;
-}
-
-/* Footnote link — neon red accent */
-.film-note a {
-  color: var(--film-neon-red);
-  opacity: 0.7;
-}
-
-.film-note a:hover {
-  opacity: 1;
-}
-
-/* ==========================================================================
- * FALLBACK — Displayed when the Letterboxd data fails to load
- *
- * A simple dark card with chrome border that shows a "data unavailable"
- * message. Matches the general panel aesthetic but with minimal decoration.
- * ========================================================================== */
-
-.film-fallback {
+  font-family: var(--font-mono);
+  font-size: var(--fs-mono-lg);
+  color: var(--text);
   margin: 0;
-  padding: 0.7rem;
-  background: rgba(10, 5, 5, 0.8);
-  border: 1px solid rgba(180, 190, 200, 0.15);
-  color: rgba(230, 218, 200, 0.84);
-  font-family: "Libre Caslon Text", Georgia, serif;
+  font-weight: 500;
 }
 
-/* ==========================================================================
- * FOOTER — Minimal page footer
- *
- * A thin chrome separator line at the top and transparent background
- * so the velvet body texture shows through. Text is very dim chrome
- * to stay unobtrusive.
- * ========================================================================== */
-
-.film-page footer {
-  margin-top: 2rem;
-  border-top: 1px solid rgba(180, 190, 200, 0.12);
-  background: none;
+.film-note {
+  font-size: var(--fs-small);
+  color: var(--text-mute);
+  margin: var(--space-3) 0 0;
 }
+.film-note a { color: var(--accent); }
+.film-note a:hover { color: var(--accent-soft); }
 
-.film-page footer .container {
-  color: rgba(180, 190, 200, 0.35);
-}
 
-/* ==========================================================================
- * ANIMATIONS
- * ========================================================================== */
-
-/* BULB PULSE — Simulates the gentle breathing glow of incandescent bulbs.
- * Used on the marquee chase lights, crown bulbs, wing arcs, and lightbox
- * frame. At rest (0%, 100%) the drop-shadow is a modest 5px warm amber
- * glow; at peak (50%) it expands to 14px with higher opacity, creating
- * the impression that the bulbs are pulsing brighter and dimmer in a
- * slow, organic rhythm — like real warm filament bulbs fluctuating. */
-
-@keyframes bulbPulse {
-  0%, 100% {
-    filter: drop-shadow(0 0 5px rgba(255, 220, 100, 0.3));
-  }
-  50% {
-    filter: drop-shadow(0 0 14px rgba(255, 220, 100, 0.65));
-  }
-}
-
-/* GRAIN SHIFT — Jitters the film-grain noise overlay position.
- * Used on the .film-page::before pseudo-element. The background-position
- * jumps between four offset positions in discrete steps (steps(4)), so
- * the grain pattern visibly snaps to a new position each frame rather
- * than sliding smoothly. This recreates the "dancing grain" visible in
- * projected celluloid film, where each frame has a slightly different
- * noise pattern due to the photochemical emulsion. */
-
-@keyframes grainShift {
-  0%   { background-position: 0 0; }
-  25%  { background-position: 128px 64px; }
-  50%  { background-position: 64px 192px; }
-  75%  { background-position: 192px 128px; }
-  100% { background-position: 0 0; }
-}
-
-/* SCREEN GLOW — Subtly pulses the projection screen's outer glow.
- * Used on the .film-panel-screen header and film list. The glow cycles
- * between a dim state (25px / 50px spread) and a brighter state (40px /
- * 80px spread), simulating the slight flicker of a film projector's
- * lamp — the brightness is never perfectly steady in an analog projection
- * booth. The inner shadow and chrome outline remain constant. */
-
-@keyframes screenGlow {
-  0%, 100% {
-    box-shadow:
-      0 0 0 1px rgba(50, 45, 42, 0.3),
-      inset 0 0 30px rgba(0, 0, 0, 0.04),
-      0 0 25px rgba(240, 240, 255, 0.06),
-      0 0 50px rgba(230, 235, 250, 0.03);
-  }
-  50% {
-    box-shadow:
-      0 0 0 1px rgba(50, 45, 42, 0.3),
-      inset 0 0 30px rgba(0, 0, 0, 0.04),
-      0 0 40px rgba(240, 240, 255, 0.12),
-      0 0 80px rgba(230, 235, 250, 0.05);
-  }
-}
-
-/* ==========================================================================
- * RESPONSIVE BREAKPOINTS
- * ========================================================================== */
-
-/* TABLET BREAKPOINT (1080px and below)
- *
- * At this width, the two-column layout (main + sidebar) can no longer
- * fit comfortably side by side, so the grid collapses to a single column.
- * The sidebar switches to a two-column sub-grid so that the ticket-stub
- * panels (Lists and Stats) sit side by side instead of stacking, making
- * better use of the wider single-column space. Horizontal padding is
- * added to keep content from touching screen edges. */
-
+/* ── RESPONSIVE ──────────────────────────────────────────────────────── */
 @media (max-width: 1080px) {
-  .film-layout {
-    grid-template-columns: 1fr;
-    padding: 0 1.4rem;
-  }
-
-  .film-sidebar {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-  }
+  .film-layout { grid-template-columns: 1fr; }
 }
-
-/* MOBILE BREAKPOINT (760px and below)
- *
- * Major layout simplifications for small screens:
- *   - Base font size reduced slightly for better text fitting
- *   - Ornamental wing swoops hidden (too wide for mobile viewports)
- *   - Crown and marquee padding/sizing tightened
- *   - Lightbox switches from poster+text side-by-side to single column
- *   - Sidebar ticket panels go to single column and gain horizontal margin
- *   - Velvet curtain drapes narrowed from 1.1rem to 0.8rem
- *   - Projection screen and film list margins adjusted for narrower curtains
- *   - Film strip text sizes reduced slightly for better line wrapping */
-
 @media (max-width: 760px) {
-  .film-page {
-    font-size: 36px;
-  }
-
-  /* Wing swoops are purely decorative and too wide for mobile */
-  .film-marquee-wings {
-    display: none;
-  }
-
-  .film-marquee-crown {
-    padding: 0.45rem 0.8rem 0.35rem;
-    letter-spacing: 4px;
-  }
-
-  .film-marquee {
-    padding: 1.2rem 1.2rem 1rem;
-  }
-
-  /* Tighten the chase-light bulb border inset on smaller screens */
-  .film-marquee::before {
-    inset: 6px 10px;
-  }
-
-  /* Tighten the letterboard panel inset */
-  .film-marquee::after {
-    top: 14px;
-    left: 16px;
-    right: 16px;
-    bottom: 14px;
-  }
-
-  .film-kicker {
-    font-size: 0.46rem;
-  }
-
-  /* Featured log switches to single-column: poster stacks above text */
-  .film-lightbox {
-    grid-template-columns: 1fr;
-  }
-
-  .film-lightbox-frame {
-    width: 100%;
-    max-width: none;
-    margin: 0;
-  }
-
-  .film-layout {
-    padding: 0 1rem;
-  }
-
-  /* Reduced screen glow on mobile to avoid excessive rendering cost */
-  .film-panel-screen {
-    box-shadow:
-      0 8px 40px rgba(230, 240, 255, 0.08),
-      0 24px 44px rgba(0, 0, 0, 0.8);
-  }
-
-  /* Sidebar ticket panels stack to single column on mobile */
-  .film-sidebar {
-    grid-template-columns: 1fr;
-  }
-
-  .film-stats-grid {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-  }
-
-  .film-strip-item a {
-    font-size: 0.88rem;
-  }
-
-  .film-strip-review {
-    font-size: 0.76rem;
-  }
-
-  /* Narrower curtain drapes and screen margins for mobile */
-  .film-panel-screen .film-panel-head,
-  .film-panel-screen .film-strip-list {
-    margin-left: 0.8rem;
-    margin-right: 0.8rem;
-  }
-
-  .film-panel-lists,
-  .film-panel-stats {
-    margin-left: 0.8rem;
-    margin-right: 0.8rem;
-  }
-
-  .film-panel-screen .film-strip-list {
-    padding: 0.85rem;
-  }
-
-  /* Curtain width reduced from 1.1rem to 0.8rem on mobile */
-  .film-panel-screen::before,
-  .film-panel-screen::after {
-    width: 0.8rem;
-  }
+  .film-lightbox { grid-template-columns: 1fr; }
 }
-
-/* SMALL MOBILE BREAKPOINT (420px and below)
- *
- * At very narrow widths, the 2-column stats grid no longer fits side by
- * side, so it collapses to a single column stack. */
-
-@media (max-width: 420px) {
-  .film-stats-grid {
-    grid-template-columns: 1fr;
-  }
+@media (max-width: 480px) {
+  .film-stats-grid { grid-template-columns: 1fr; }
 }

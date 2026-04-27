@@ -1,26 +1,11 @@
 <!--
-  index.html — Homepage
-  ======================
-  The main landing page for ericarmbruster.com. Designed as a personal archive
-  with a warm, brown/wood-toned aesthetic.
-
-  Layout (CSS Grid with named areas defined in styles.css):
-    Row 1: "archive archive archive" — full-width banner with site title
-    Row 2: "intro ledger quote" — three "room" cards side by side
-    Row 3: "shelves shelves shelves" — full-width bookshelf with interest links
-
-  Room cards:
-    - Intro (House Register) — quick links to About, Projects, Correspondence
-    - Ledger (Hector portrait) — photo of Hector the dog in a gilded frame
-    - Quote (CRT display) — random Lord of the Rings quote on a skeuomorphic TV
-
-  Bookshelf:
-    - Six clickable book spines linking to interest pages (Video Games, Film,
-      Economics, Self-Hosting, Seymour, Bitcoin)
-
-  Stylesheet: styles.css only (no page-specific stylesheet needed)
-  Scripts: drawer.js (nav drawer) + ticker.js (market ticker) + inline quote script
-  Body class: .home-page
+  index.html — Homepage (Tufte-warm, book-spine shelf)
+  ----------------------------------------------------
+  A small personal-magazine masthead with a hand-styled bookshelf for the
+  table of contents: each section is a unique book spine in its own cloth
+  color, varied height and width, with gold-foil bands and an italic
+  vertical title. The "interesting design element" is the shelf itself —
+  pure CSS, no scroll trickery.
 -->
 <!DOCTYPE html>
 <html lang="en">
@@ -28,49 +13,29 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <title>The Personal Archive of Eric M. Armbruster</title>
+  <title>Eric Armbruster</title>
 
-  <!-- SEO and social sharing metadata. -->
-  <meta name="description" content="Personal website of Eric M. Armbruster">
-  <!-- Very dark brown theme color to match the homepage's wood-tone palette. -->
-  <meta name="theme-color" content="#070503">
+  <meta name="description" content="Personal site of Eric M. Armbruster — film, video games, economics, self-hosting, and the dogs along the way.">
+  <meta name="theme-color" content="#fbf6e8">
   <link rel="canonical" href="https://www.ericarmbruster.com/">
   <meta property="og:title" content="Eric Armbruster">
-  <meta property="og:description" content="Personal website of Eric M. Armbruster">
+  <meta property="og:description" content="Personal site of Eric M. Armbruster covering film, video games, economics, self-hosting, and Bitcoin.">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://www.ericarmbruster.com/">
-  <meta property="og:image" content="https://www.ericarmbruster.com/images/hector-0001.png">
+  <meta property="og:image" content="https://www.ericarmbruster.com/images/hector-0002.png">
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="Eric Armbruster">
-  <meta name="twitter:description" content="Personal website of Eric M. Armbruster">
-  <meta name="twitter:image" content="https://www.ericarmbruster.com/images/hector-0001.png">
+  <meta name="twitter:description" content="Personal site of Eric M. Armbruster.">
+  <meta name="twitter:image" content="https://www.ericarmbruster.com/images/hector-0002.png">
 
   <link rel="icon" href="images/hector-favicon.png" type="image/png">
 
-  <!-- Google Fonts — the homepage uses:
-       - Cinzel Decorative: ornate display serif for the archive banner title
-       - IM Fell English / SC: period-authentic serif for headings
-       - Libre Caslon Display/Text: elegant serif for body text and cards
-       - Share Tech Mono: monospace for the CRT screen text
-       - Herr Von Muellerhoff: ornate cursive for decorative flourishes
-       - Silkscreen: pixel font for retro/gaming UI elements -->
+  <!-- EB Garamond is the warm humanist serif body. -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
 
-  <!-- Preload the Herr Von Muellerhoff woff2 font file (latin subset) used for
-       the "Eric M. Armbruster" brand mark in the nav. Preloading tells the browser
-       to fetch this file at the highest priority during initial page load, before
-       the Google Fonts CSS is even parsed. This eliminates the FOUT (Flash of
-       Unstyled Text) where the brand mark briefly appears in a fallback system
-       font before the custom cursive font finishes downloading. The `crossorigin`
-       attribute is required because fonts are always fetched in CORS mode, even
-       when served from the same origin — omitting it would cause a double fetch. -->
-  <link rel="preload" href="https://fonts.gstatic.com/s/herrvonmuellerhoff/v23/WBL6rFjRZkREW8WqmCWYLgCkQKXb4CAft0c99KM.woff2" as="font" type="font/woff2" crossorigin>
-
-  <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@700&family=IM+Fell+English&family=IM+Fell+English+SC&family=Libre+Caslon+Display&family=Libre+Caslon+Text:ital,wght@0,400;0,700;1,400&family=Share+Tech+Mono&family=Herr+Von+Muellerhoff&family=Silkscreen:wght@400;700&display=swap" rel="stylesheet">
-
-  <!-- Only the shared stylesheet — the homepage doesn't have a page-specific CSS file. -->
-  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/tufte-base.css">
 
   <!-- Google Analytics -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-5ZTHJXDR9V"></script>
@@ -80,426 +45,362 @@
     gtag('js', new Date());
     gtag('config', 'G-5ZTHJXDR9V');
   </script>
+
+  <style>
+    /* ── MASTHEAD ─────────────────────────────────────────────────────── */
+    .masthead {
+      max-width: var(--container);
+      margin: 0 auto;
+      padding: var(--space-8) var(--gutter) var(--space-6);
+      border-bottom: 1px solid var(--rule);
+    }
+    .masthead-title {
+      font-family: var(--font-serif);
+      font-size: var(--fs-display);
+      font-weight: 500;
+      line-height: 1.05;
+      letter-spacing: -0.005em;
+      margin: 0;
+    }
+    .masthead-tagline {
+      margin-top: var(--space-4);
+      font-style: italic;
+      color: var(--ink-2);
+      font-size: 1.3rem;
+      max-width: 38rem;
+      line-height: 1.4;
+    }
+    .masthead-tagline em { color: var(--accent-red); font-style: italic; }
+    .masthead-meta {
+      margin-top: var(--space-5);
+      font-size: var(--fs-small);
+      color: var(--ink-3);
+      font-variant: small-caps;
+      letter-spacing: 0.08em;
+    }
+    .masthead-meta span { color: var(--ink-2); }
+
+    .shelf-eyebrow {
+      max-width: var(--container);
+      margin: var(--space-7) auto var(--space-4);
+      padding: 0 var(--gutter);
+      font-style: italic;
+      color: var(--ink-3);
+      font-size: 1rem;
+    }
+
+    /* ── SHELF ───────────────────────────────────────────────────────── */
+    .shelf {
+      max-width: var(--container);
+      margin: 0 auto;
+      padding: 0 var(--gutter);
+    }
+    .shelf-row {
+      display: flex;
+      gap: 6px;
+      align-items: flex-end;
+      padding-bottom: var(--space-2);
+      border-bottom: 6px solid #4a3a26;
+      box-shadow: 0 1px 0 #2a1f12, 0 8px 16px -10px rgba(28,22,17,0.25);
+      flex-wrap: wrap;
+      row-gap: var(--space-5);
+    }
+
+    /* Each book — uses --book-color for the cloth tone, --book-h/--book-w
+       for the unique height/width per section. */
+    .shelf-book {
+      position: relative;
+      width: var(--book-w, 5.5rem);
+      height: var(--book-h, 18rem);
+      background-color: var(--book-color, var(--c-vg));
+      background-image:
+        linear-gradient(180deg, rgba(255,255,255,0.07) 0%, rgba(0,0,0,0.05) 30%, rgba(0,0,0,0.22) 100%),
+        repeating-linear-gradient(180deg, rgba(0,0,0,0.05) 0 1px, transparent 1px 4px);
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+      box-shadow:
+        inset 1px 0 0 rgba(255,255,255,0.08),
+        inset -1px 0 0 rgba(0,0,0,0.18),
+        inset 0 1px 0 rgba(255,255,255,0.10),
+        inset 0 -1px 0 rgba(0,0,0,0.25),
+        2px 2px 6px -2px rgba(28,22,17,0.3);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-between;
+      padding: 1.1rem 0;
+      text-decoration: none;
+      color: rgba(245, 233, 200, 0.95);
+      transition: transform 200ms ease, box-shadow 200ms ease;
+      flex: 0 0 auto;
+    }
+    .shelf-book:hover {
+      transform: translateY(-6px);
+      background-image:
+        linear-gradient(180deg, rgba(255,255,255,0.10) 0%, rgba(0,0,0,0.04) 30%, rgba(0,0,0,0.20) 100%),
+        repeating-linear-gradient(180deg, rgba(0,0,0,0.05) 0 1px, transparent 1px 4px);
+      box-shadow:
+        inset 1px 0 0 rgba(255,255,255,0.10),
+        inset -1px 0 0 rgba(0,0,0,0.18),
+        inset 0 1px 0 rgba(255,255,255,0.12),
+        inset 0 -1px 0 rgba(0,0,0,0.25),
+        4px 8px 14px -4px rgba(28,22,17,0.35);
+      color: rgba(245, 233, 200, 1);
+    }
+
+    /* Top and bottom gold-foil bands. */
+    .shelf-book::before,
+    .shelf-book::after {
+      content: '';
+      position: absolute;
+      left: 0;
+      right: 0;
+      height: 3px;
+      background: linear-gradient(180deg, #d4b56f, #8a6a30, #d4b56f);
+      opacity: 0.85;
+    }
+    .shelf-book::before { top: 0.6rem; }
+    .shelf-book::after  { bottom: 0.6rem; }
+
+    .shelf-book-glyph {
+      font-family: var(--font-serif);
+      font-size: 1rem;
+      color: rgba(245, 233, 200, 0.7);
+      line-height: 1;
+      margin-top: 0.4rem;
+      margin-bottom: 1rem;       /* breathing room above the bottom gold band */
+      height: 1.4rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: color 200ms ease;
+    }
+    .shelf-book-glyph svg {
+      width: 18px;
+      height: 18px;
+      display: block;
+      overflow: visible;
+    }
+    .shelf-book-glyph svg.glyph-wide { width: 22px; height: 11px; }
+    .shelf-book:hover .shelf-book-glyph { color: rgba(245, 233, 200, 0.95); }
+    .shelf-book-title {
+      font-family: var(--font-serif);
+      font-style: italic;
+      font-size: 1.1rem;
+      font-weight: 500;
+      writing-mode: vertical-rl;
+      text-orientation: mixed;
+      letter-spacing: 0.02em;
+      white-space: nowrap;
+      color: inherit;
+      flex: 1 1 auto;
+      display: flex;
+      align-items: center;
+      justify-content: center;   /* center the vertical text along the spine */
+      padding: 0.4rem 0;
+    }
+    .shelf-book-no {
+      font-family: var(--font-serif);
+      font-style: italic;
+      font-size: 0.95rem;
+      color: rgba(245, 233, 200, 0.55);
+      line-height: 1;
+      margin-bottom: 0.3rem;
+    }
+
+    /* Per-book unique color, height, width — the charm of a real shelf. */
+    .shelf-book--vg      { --book-color: var(--c-vg);      --book-h: 20rem;   --book-w: 5.5rem; }
+    .shelf-book--film    { --book-color: var(--c-film);    --book-h: 17.5rem; --book-w: 5rem;   }
+    .shelf-book--econ    { --book-color: var(--c-econ);    --book-h: 21.5rem; --book-w: 6rem;   }
+    .shelf-book--sh      { --book-color: var(--c-sh);      --book-h: 16.5rem; --book-w: 4.5rem; }
+    .shelf-book--bitcoin { --book-color: var(--c-bitcoin); --book-h: 19rem;   --book-w: 5rem;   }
+    .shelf-book--seymour { --book-color: var(--c-seymour); --book-h: 17rem;   --book-w: 4.5rem; }
+
+    .shelf-caption {
+      max-width: var(--container);
+      margin: var(--space-5) auto 0;
+      padding: 0 var(--gutter);
+      font-style: italic;
+      color: var(--ink-3);
+      font-size: 1rem;
+    }
+    .shelf-caption em { color: var(--accent-red); }
+
+    /* ── COLOPHON — Hector portrait + contact ────────────────────────── */
+    .colophon {
+      max-width: var(--container);
+      margin: var(--space-8) auto 0;
+      padding: 0 var(--gutter);
+      display: grid;
+      grid-template-columns: 9rem 1fr;
+      gap: var(--space-6);
+      align-items: start;
+    }
+    .colophon img {
+      width: 9rem;
+      height: 9rem;
+      object-fit: cover;
+      object-position: 50% 22%;
+      border: 1px solid var(--rule);
+      background: var(--paper-soft);
+      padding: var(--space-2);
+    }
+    .colophon h2 {
+      margin: 0 0 var(--space-3);
+      font-style: italic;
+      font-weight: 400;
+      font-size: 1.45rem;
+    }
+    .colophon p { color: var(--ink-2); max-width: 38rem; }
+    .colophon-links {
+      margin-top: var(--space-3);
+      display: flex;
+      gap: var(--space-5);
+      flex-wrap: wrap;
+      font-style: italic;
+      color: var(--ink-2);
+    }
+
+    @media (max-width: 640px) {
+      .masthead-title { font-size: 2.4rem; }
+      .masthead-tagline { font-size: 1.1rem; }
+      .shelf-row { gap: 4px; }
+      .shelf-book { transform: scale(0.85); transform-origin: bottom center; }
+      .colophon { grid-template-columns: 1fr; }
+      .colophon img { width: 7rem; height: 7rem; }
+    }
+  </style>
 </head>
 
-<body class="home-page">
+<body>
 
-  <!-- ═══════════════════════════════════════════════════════════════════════
-       SCROLLING TICKER TAPE — identical across all pages.
-       ticker.js replaces placeholder values with live market data. -->
-  <div class="ticker-tape" aria-hidden="true">
-    <div class="ticker-track">
-      <span class="tick" data-ticker="DJIA">DJIA 38,547 &#9650;0.42%</span>
-      <span class="tick-sep">&bull;</span>
-      <span class="tick" data-ticker="SP500">S&amp;P 500 5,234 &#9650;0.18%</span>
-      <span class="tick-sep">&bull;</span>
-      <span class="tick" data-ticker="NASDAQ">NASDAQ 16,340 &#9660;0.31%</span>
-      <span class="tick-sep">&bull;</span>
-      <span class="tick" data-ticker="10Y">10Y YIELD 4.285%</span>
-      <span class="tick-sep">&bull;</span>
-      <span class="tick" data-ticker="GOLD">GOLD 2,338.40</span>
-      <span class="tick-sep">&bull;</span>
-      <span class="tick" data-ticker="BTC">BTC 67,245 &#9650;2.14%</span>
-      <span class="tick-sep">&bull;</span>
-      <span class="tick" data-ticker="VIX">VIX 13.42</span>
-      <span class="tick-sep">&bull;</span>
-      <span class="tick" data-ticker="EURUSD">EUR/USD 1.0845</span>
-      <span class="tick-sep">&bull;</span>
-      <span class="tick" data-ticker="CRUDE">WTI CRUDE 78.32</span>
-      <span class="tick-sep">&bull;</span>
-      <span class="tick" data-ticker="FEDFUNDS">FED FUNDS 5.33%</span>
-      <span class="tick-sep">&bull;</span>
-      <!-- Duplicate set for seamless infinite scroll. -->
-      <span class="tick" data-ticker="DJIA">DJIA 38,547 &#9650;0.42%</span>
-      <span class="tick-sep">&bull;</span>
-      <span class="tick" data-ticker="SP500">S&amp;P 500 5,234 &#9650;0.18%</span>
-      <span class="tick-sep">&bull;</span>
-      <span class="tick" data-ticker="NASDAQ">NASDAQ 16,340 &#9660;0.31%</span>
-      <span class="tick-sep">&bull;</span>
-      <span class="tick" data-ticker="10Y">10Y YIELD 4.285%</span>
-      <span class="tick-sep">&bull;</span>
-      <span class="tick" data-ticker="GOLD">GOLD 2,338.40</span>
-      <span class="tick-sep">&bull;</span>
-      <span class="tick" data-ticker="BTC">BTC 67,245 &#9650;2.14%</span>
-      <span class="tick-sep">&bull;</span>
-      <span class="tick" data-ticker="VIX">VIX 13.42</span>
-      <span class="tick-sep">&bull;</span>
-      <span class="tick" data-ticker="EURUSD">EUR/USD 1.0845</span>
-      <span class="tick-sep">&bull;</span>
-      <span class="tick" data-ticker="CRUDE">WTI CRUDE 78.32</span>
-      <span class="tick-sep">&bull;</span>
-      <span class="tick" data-ticker="FEDFUNDS">FED FUNDS 5.33%</span>
-      <span class="tick-sep">&bull;</span>
-    </div>
-  </div>
-
-  <!-- ═══════════════════════════════════════════════════════════════════════
-       PRIMARY NAVIGATION — shared across all pages. -->
-  <nav class="study-nav" aria-label="Primary">
-    <div class="container nav-shell">
-      <a href="index.html" class="brand-mark" aria-label="Eric Armbruster home">Eric M. Armbruster</a>
-
-      <div class="nav-links-desktop" aria-label="Primary links">
-        <a href="about.html">about</a>
-        <a href="projects.html">projects</a>
-        <button class="drawer-toggle" type="button" aria-expanded="false" aria-controls="interests-dropdown" data-interests-toggle>interests</button>
-      </div>
-
-      <div class="nav-icons" aria-label="Contact links">
-        <a href="mailto:eric.m.armbruster@gmail.com" aria-label="Email Eric"><svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"><rect x="1.5" y="3.5" width="13" height="9"/><path d="M1.5 3.5L8 9l6.5-5.5"/></svg></a>
-        <a href="https://github.com/tenderbrew" target="_blank" rel="noopener" aria-label="Eric on GitHub"><svg width="16" height="16" viewBox="0 0 16 16" fill="currentColor"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0016 8c0-4.42-3.58-8-8-8z"/></svg></a>
-        <a href="https://www.linkedin.com/in/ericmarmbruster/" target="_blank" rel="noopener" aria-label="Eric on LinkedIn"><svg width="16" height="16" viewBox="0 0 16 16" fill="currentColor"><path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.016-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.52 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.174-.431.569-.878 1.232-.878.87 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016l.016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z"/></svg></a>
-      </div>
-
-      <button class="drawer-toggle nav-mobile-toggle" type="button" aria-expanded="false" aria-controls="site-drawer" data-drawer-toggle>menu</button>
-    </div>
-
-
-    <div class="site-drawer" id="site-drawer">
-      <div class="container drawer-inner">
-        <section class="drawer-group">
-          <h2>Main Rooms</h2>
-          <a href="about.html">About</a>
-          <a href="projects.html">Projects</a>
-        </section>
-        <section class="drawer-group drawer-group--interests"><h2>Interests</h2>
-          <a href="video-games.html">Video Games</a>
-          <a href="film.html">Film</a>
-          <a href="self-hosting.html">Self-Hosting</a>
-          <a href="economics.html">Economics</a>
-          <a href="bitcoin.html">Bitcoin</a>
-          <a href="seymour.html">Seymour</a>
-        </section>
-        <section class="drawer-group drawer-group--compact">
-          <h2>Elsewhere</h2>
-          <a href="mailto:eric.m.armbruster@gmail.com">Email</a>
-          <a href="https://github.com/tenderbrew" target="_blank" rel="noopener">GitHub</a>
-          <a href="https://www.linkedin.com/in/ericmarmbruster/" target="_blank" rel="noopener">LinkedIn</a>
-        </section>
+  <header class="site-header">
+    <div class="site-header__inner">
+      <a class="brand" href="index.html" aria-current="page">Eric Armbruster</a>
+      <div class="site-header__nav">
+        <div class="site-utility">
+          <a class="site-utility__icon" href="about.html" aria-label="About"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"><circle cx="12" cy="8" r="4"/><path d="M4 21c0-4.4 3.6-8 8-8s8 3.6 8 8"/></svg></a>
+          <a class="site-utility__icon" href="projects.html" aria-label="Projects"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M9 7l-5 5 5 5"/><path d="M15 7l5 5-5 5"/></svg></a>
+          <a class="site-utility__icon" href="mailto:eric.m.armbruster@gmail.com" aria-label="Contact"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="1.5"/><path d="M3 7l9 7 9-7"/></svg></a>
+        </div>
       </div>
     </div>
-    <div class="interests-dropdown" id="interests-dropdown">
-      <a href="video-games.html">Video Games</a>
-      <a href="film.html">Film</a>
-      <a href="self-hosting.html">Self-Hosting</a>
-      <a href="economics.html">Economics</a>
-      <a href="bitcoin.html">Bitcoin</a>
-      <a href="seymour.html">Seymour</a>
+  </header>
+
+  <section class="masthead">
+    <h1 class="masthead-title">Eric M. Armbruster</h1>
+    <p class="masthead-tagline">A small collection of <em>hobbies</em>, tracked.</p>
+    <p class="masthead-meta">Gilbertsville · <span>est. 2022</span></p>
+  </section>
+
+  <p class="shelf-eyebrow">On the shelf &mdash;</p>
+
+  <nav class="shelf" aria-label="Site sections">
+    <div class="shelf-row">
+
+      <a href="video-games.html" class="shelf-book shelf-book--vg">
+        <span class="shelf-book-title">Video Games</span>
+        <span class="shelf-book-glyph" aria-hidden="true">
+          <!-- gamepad -->
+          <svg class="glyph-wide" viewBox="0 0 28 14">
+            <rect x="1" y="1" width="26" height="12" rx="6" stroke="currentColor" stroke-width="1.4" fill="none"/>
+            <path d="M5 7 H10 M7.5 4.5 V9.5" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"/>
+            <circle cx="20" cy="7" r="1.5" fill="currentColor"/>
+          </svg>
+        </span>
+        <span class="shelf-book-no">i.</span>
+      </a>
+
+      <a href="film.html" class="shelf-book shelf-book--film">
+        <span class="shelf-book-title">Film</span>
+        <span class="shelf-book-glyph" aria-hidden="true">
+          <!-- film reel -->
+          <svg viewBox="0 0 24 24">
+            <circle cx="12" cy="12" r="9.5" stroke="currentColor" stroke-width="1.4" fill="none"/>
+            <circle cx="12" cy="12" r="2" fill="currentColor"/>
+            <circle cx="12" cy="5" r="1.4" fill="currentColor"/>
+            <circle cx="12" cy="19" r="1.4" fill="currentColor"/>
+            <circle cx="5" cy="12" r="1.4" fill="currentColor"/>
+            <circle cx="19" cy="12" r="1.4" fill="currentColor"/>
+          </svg>
+        </span>
+        <span class="shelf-book-no">ii.</span>
+      </a>
+
+      <a href="economics.html" class="shelf-book shelf-book--econ">
+        <span class="shelf-book-title">Economics</span>
+        <span class="shelf-book-glyph" aria-hidden="true">
+          <!-- balance scale -->
+          <svg viewBox="0 0 24 24">
+            <path d="M12 4 V20 M9 20 H15 M4 7 H20" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" fill="none"/>
+            <path d="M3 9 a3 3 0 0 0 6 0" stroke="currentColor" stroke-width="1.4" fill="none"/>
+            <path d="M15 9 a3 3 0 0 0 6 0" stroke="currentColor" stroke-width="1.4" fill="none"/>
+            <path d="M6 7 V9 M18 7 V9" stroke="currentColor" stroke-width="1.4"/>
+          </svg>
+        </span>
+        <span class="shelf-book-no">iii.</span>
+      </a>
+
+      <a href="self-hosting.html" class="shelf-book shelf-book--sh">
+        <span class="shelf-book-title">Self-hosting</span>
+        <span class="shelf-book-glyph" aria-hidden="true">
+          <!-- server stack -->
+          <svg viewBox="0 0 24 24">
+            <rect x="4" y="4" width="16" height="5" rx="1" stroke="currentColor" stroke-width="1.4" fill="none"/>
+            <rect x="4" y="10.5" width="16" height="5" rx="1" stroke="currentColor" stroke-width="1.4" fill="none"/>
+            <rect x="4" y="17" width="16" height="3.5" rx="1" stroke="currentColor" stroke-width="1.4" fill="none"/>
+            <circle cx="7" cy="6.5" r="0.7" fill="currentColor"/>
+            <circle cx="7" cy="13" r="0.7" fill="currentColor"/>
+          </svg>
+        </span>
+        <span class="shelf-book-no">iv.</span>
+      </a>
+
+      <a href="bitcoin.html" class="shelf-book shelf-book--bitcoin">
+        <span class="shelf-book-title">Bitcoin</span>
+        <span class="shelf-book-glyph" aria-hidden="true">&#8383;</span>
+        <span class="shelf-book-no">v.</span>
+      </a>
+
+      <a href="seymour.html" class="shelf-book shelf-book--seymour">
+        <span class="shelf-book-title">Seymour :  A Memoir</span>
+        <span class="shelf-book-glyph" aria-hidden="true">
+          <!-- paw print -->
+          <svg viewBox="0 0 24 24">
+            <ellipse cx="12" cy="16" rx="4.5" ry="3.6" fill="currentColor"/>
+            <ellipse cx="5.5" cy="11" rx="1.7" ry="2.2" fill="currentColor"/>
+            <ellipse cx="9.5" cy="6.5" rx="1.7" ry="2.3" fill="currentColor"/>
+            <ellipse cx="14.5" cy="6.5" rx="1.7" ry="2.3" fill="currentColor"/>
+            <ellipse cx="18.5" cy="11" rx="1.7" ry="2.2" fill="currentColor"/>
+          </svg>
+        </span>
+        <span class="shelf-book-no">vi.</span>
+      </a>
+
     </div>
   </nav>
 
-  <!-- ═══════════════════════════════════════════════════════════════════════
-       MAIN CONTENT — HOMEPAGE GRID
-       ═══════════════════════════════════════════════════════════════════════
-       The .home-rooms container is a CSS Grid with named template areas.
-       On desktop: 3 columns × 3 rows (archive spanning top, 3 rooms in
-       the middle, bookshelf spanning bottom). On mobile: single column. -->
-  <main class="container home-rooms">
+  <hr style="max-width: var(--container); margin-left: auto; margin-right: auto;">
 
-    <!-- ── Row 1: Archive Banner ─────────────────────────────────────────
-         Full-width header spanning all three columns. The .stage-copy
-         element is styled with a dark wood-grain background, gilt border
-         pseudo-elements, and the site's ornate title typography. -->
-    <header class="room room-archive">
-      <article class="stage-copy" aria-label="Personal archive journal">
-        <h1>
-          <!-- Title split into two spans so CSS can style the lines
-               independently (different sizes, letter-spacing, colors). -->
-          <span class="archive-line archive-line--top">The Personal Archive of</span>
-          <span class="archive-line archive-line--bottom">Eric M. Armbruster</span>
-        </h1>
-      </article>
-    </header>
-
-    <!-- ── Row 2, Column 1: House Register ───────────────────────────────
-         A card with quick links to the main utility pages. Styled as an
-         old ledger/register book with a parchment background texture. -->
-    <section class="room room-intro">
-      <article class="room-card register-card">
-        <h2>House Register</h2>
-        <div class="register-links">
-          <a href="about.html">About the Author</a>
-          <a href="projects.html">Project Ledger</a>
-          <a href="mailto:eric.m.armbruster@gmail.com">Correspondence</a>
-        </div>
-      </article>
-    </section>
-
-    <!-- ── Row 2, Column 2: Hector Portrait ──────────────────────────────
-         A photo of Hector (the dog) displayed in a gilded picture frame
-         with a brass nameplate plaque beneath. The <figure> element is
-         semantically correct for an image with a caption. The image uses
-         object-fit: cover to crop to the frame dimensions. -->
-    <section class="room room-ledger">
-      <figure class="room-card hector-card">
-        <div class="hector-frame">
-          <!-- loading="eager" and decoding="sync" ensure the image loads
-               immediately — Hector is above the fold so lazy/async would
-               cause a visible flash on page load. -->
-          <img src="images/hector-0001.webp" alt="Hector the dog in the snow" loading="eager" decoding="sync">
-        </div>
-        <figcaption class="hector-plaque">Hector, Winter Sentinel</figcaption>
-      </figure>
-    </section>
-
-    <!-- ── Row 2, Column 3: CRT Quote Display ────────────────────────────
-         A skeuomorphic CRT television that displays a random Lord of the
-         Rings quote (selected by the inline script at the bottom of <body>).
-
-         Visual structure:
-         - quote-crt: outer TV housing
-         - quote-crt-shell: the TV chassis
-         - crt-badge: "Trinitron" brand label with a small LED light
-         - crt-screen: the display bezel
-         - crt-screen-surface: the actual screen area (CSS adds scanlines,
-           phosphor glow, and glass reflection via pseudo-elements)
-         - crt-controls: row of decorative switches and knobs at the bottom
-
-         The #random-quote paragraph is empty in HTML — the inline script
-         below populates it with a quote on page load. -->
-    <section class="room room-quote">
-      <article class="quote-crt" aria-label="Quoted reflection on CRT display">
-        <div class="quote-crt-shell">
-          <!-- Brand badge with a tiny LED indicator light. -->
-          <div class="crt-badge" aria-hidden="true">
-            <span class="crt-badge-mark">Trinitron</span>
-            <span class="crt-badge-light"></span>
-          </div>
-          <!-- Screen area — pseudo-elements add the CRT visual effects:
-               ::before creates horizontal scanlines (repeating 2px gradient)
-               ::after creates the curved glass reflection (radial gradient) -->
-          <div class="crt-screen">
-            <div class="crt-screen-surface">
-              <p id="random-quote"></p>
-            </div>
-          </div>
-          <!-- Decorative TV controls — switches and knobs along the bottom
-               of the CRT housing. Each <span> is styled as a small tactile
-               element via CSS (box-shadows, borders, gradients). -->
-          <div class="crt-controls" aria-hidden="true">
-            <div class="crt-switches">
-              <span></span>
-              <span></span>
-              <span></span>
-              <span></span>
-              <span></span>
-              <span></span>
-            </div>
-            <div class="crt-knobs">
-              <span></span>
-              <span></span>
-              <span></span>
-              <span></span>
-            </div>
-          </div>
-        </div>
-      </article>
-    </section>
-
-    <!-- ── Row 3: Interests Bookshelf ────────────────────────────────────
-         A full-width bookshelf spanning all three columns. Each "book" is
-         a clickable link to an interest page. Books are arranged on wooden
-         shelf planks in two rows:
-           Row 1 (3 books): Video Games, Film, Economics
-           Row 2 (3 books): Self-Hosting, Seymour, Bitcoin
-
-         Each book has five visual layers:
-         - book-index: small catalog number on the spine (e.g., "VG-01")
-         - book-spine-title: title text on the spine (visible by default)
-         - book-cover: the front cover that reveals on hover (3D rotation)
-         - book-pages: edge of pages visible between spine and cover
-         - book-slip: "enter shelf" label that slides up on hover
-
-         The shelf-plank dividers between rows create the illusion of wooden
-         shelf boards. Modifier classes (--umber, --copper, --claret, etc.)
-         set each book's unique color scheme.
-
-         The id="interests" enables the nav drawer's "interests" button to
-         scroll to this section as an anchor link. -->
-    <section id="interests" class="room room-shelves">
-      <!-- Decorative top edge of the bookshelf. -->
-      <div class="bookshelf-top" aria-hidden="true"></div>
-
-      <div class="bookshelf" aria-label="Interests bookshelf">
-        <!-- First shelf row — three books side by side. -->
-        <div class="bookshelf-row bookshelf-row--triple">
-          <a href="video-games.html" class="shelf-book shelf-book--umber">
-            <span class="book-index" aria-hidden="true">VG-01</span>
-            <span class="book-spine-title">Video Games</span>
-            <div class="book-cover">
-              <div class="shelf-body">
-                <h3>Video Games</h3>
-              </div>
-            </div>
-            <span class="book-pages" aria-hidden="true"></span>
-            <span class="book-slip">enter shelf</span>
-          </a>
-          <!-- Mobile plank — on small screens, each book gets its own shelf
-               board underneath since they stack vertically. -->
-          <div class="shelf-plank shelf-plank--mobile" aria-hidden="true"></div>
-
-          <a href="film.html" class="shelf-book shelf-book--copper">
-            <span class="book-index" aria-hidden="true">FL-02</span>
-            <span class="book-spine-title">Film</span>
-            <div class="book-cover">
-              <div class="shelf-body">
-                <h3>Film</h3>
-              </div>
-            </div>
-            <span class="book-pages" aria-hidden="true"></span>
-            <span class="book-slip">enter shelf</span>
-          </a>
-          <div class="shelf-plank shelf-plank--mobile" aria-hidden="true"></div>
-
-          <a href="economics.html" class="shelf-book shelf-book--claret">
-            <span class="book-index" aria-hidden="true">EC-04</span>
-            <span class="book-spine-title">Economics</span>
-            <div class="book-cover">
-              <div class="shelf-body">
-                <h3>Economics</h3>
-              </div>
-            </div>
-            <span class="book-pages" aria-hidden="true"></span>
-            <span class="book-slip">enter shelf</span>
-          </a>
-          <div class="shelf-plank shelf-plank--mobile" aria-hidden="true"></div>
-        </div>
-
-        <!-- Wooden shelf plank divider between the two rows. -->
-        <div class="shelf-plank" aria-hidden="true"></div>
-
-        <!-- Second shelf row — three taller books (--tall modifier). -->
-        <div class="bookshelf-row bookshelf-row--single">
-          <a href="self-hosting.html" class="shelf-book shelf-book--olive shelf-book--tall">
-            <span class="book-index" aria-hidden="true">SH-03</span>
-            <span class="book-spine-title">Self-Hosting</span>
-            <div class="book-cover">
-              <div class="shelf-body">
-                <h3>Self-Hosting</h3>
-              </div>
-            </div>
-            <span class="book-pages" aria-hidden="true"></span>
-            <span class="book-slip">enter shelf</span>
-          </a>
-          <div class="shelf-plank shelf-plank--mobile" aria-hidden="true"></div>
-
-          <a href="seymour.html" class="shelf-book shelf-book--azure shelf-book--tall">
-            <span class="book-index" aria-hidden="true">DG-05</span>
-            <span class="book-spine-title">Seymour</span>
-            <div class="book-cover">
-              <div class="shelf-body">
-                <h3>Seymour</h3>
-              </div>
-            </div>
-            <span class="book-pages" aria-hidden="true"></span>
-            <span class="book-slip">enter shelf</span>
-          </a>
-          <div class="shelf-plank shelf-plank--mobile" aria-hidden="true"></div>
-
-          <a href="bitcoin.html" class="shelf-book shelf-book--bitcoin shelf-book--tall">
-            <span class="book-index" aria-hidden="true">BT-06</span>
-            <span class="book-spine-title">Bitcoin</span>
-            <div class="book-cover">
-              <div class="shelf-body">
-                <h3>Bitcoin</h3>
-              </div>
-            </div>
-            <span class="book-pages" aria-hidden="true"></span>
-            <span class="book-slip">enter shelf</span>
-          </a>
-          <div class="shelf-plank shelf-plank--mobile" aria-hidden="true"></div>
-        </div>
-
-        <!-- Bottom shelf plank. -->
-        <div class="shelf-plank" aria-hidden="true"></div>
+  <section class="colophon">
+    <img src="images/hector-0002.png" alt="Hector, a border terrier">
+    <div>
+      <h2>Hector</h2>
+      <p>Border terrier. Loyal companion. Suspicious of mailmen.</p>
+      <div class="colophon-links">
+        <a href="mailto:eric.m.armbruster@gmail.com">email</a>
+        <a href="https://github.com/tenderbrew" target="_blank" rel="noopener">github</a>
+        <a href="https://www.linkedin.com/in/ericmarmbruster/" target="_blank" rel="noopener">linkedin</a>
       </div>
-    </section>
+    </div>
+  </section>
 
-  </main>
-
-  <footer>
-    <div class="container">
-      &copy; 2026 Eric Armbruster
+  <footer class="site-footer">
+    <div class="site-footer__inner">
+      <span>&copy; 2026 Eric Armbruster</span>
     </div>
   </footer>
 
-  <!-- Shared nav drawer controller. -->
-  <script src="js/drawer.js"></script>
-
-  <!-- ═══════════════════════════════════════════════════════════════════════
-       INLINE QUOTE SCRIPT — Random LOTR Quote for the CRT Display
-       ═══════════════════════════════════════════════════════════════════════
-       Kept inline (not in a separate .js file) to avoid an extra HTTP request
-       for such a small script. It runs synchronously after the DOM is parsed
-       (since the <script> tag is at the bottom of <body>).
-
-       The quotes array holds Lord of the Rings quotes attributed to Samwise
-       Gamgee. On each page load, one is selected at random using
-       Math.random() and injected into the #random-quote paragraph inside
-       the CRT screen.
-
-       The HTML entities (&ldquo; &rdquo; &mdash;) render as typographic
-       quotation marks and em dash for proper typography. -->
-  <script>
-    var quotes = [
-      { text: "There is some good in this world, and it is worth fighting for.", source: "The Fellowship of the Ring", author: "Samwise Gamgee" },
-      { text: "It's the job that's never started as takes longest to finish.", source: "The Fellowship of the Ring", author: "Samwise Gamgee" },
-      { text: "By rights we shouldn't even be here. But we are.", source: "The Fellowship of the Ring", author: "Samwise Gamgee" },
-      { text: "Those were the stories that stayed with you, that meant something.", source: "The Two Towers", author: "Samwise Gamgee" },
-      { text: "Even darkness must pass.", source: "The Two Towers", author: "Samwise Gamgee" },
-      { text: "A new day will come. And when the sun shines, it will shine out the clearer.", source: "The Two Towers", author: "Samwise Gamgee" },
-      { text: "I can't carry it for you, but I can carry you.", source: "The Return of the King", author: "Samwise Gamgee" },
-      { text: "Well, I'm back.", source: "The Return of the King", author: "Samwise Gamgee" },
-      { text: "I can see the light ahead, Mr. Frodo. It's coming to us.", source: "The Return of the King", author: "Samwise Gamgee" },
-      { text: "There is no means of avoiding the final collapse of a boom brought about by credit expansion.", source: "Human Action", author: "Ludwig von Mises" },
-      { text: "The market is not a place, a thing, or a collective entity. The market is a process, actuated by the interplay of the actions of the various individuals cooperating under the division of labor.", source: "Human Action", author: "Ludwig von Mises" },
-      { text: "Tyranny is the political corollary of socialism, as representative government is the political corollary of the market economy.", source: "Planning for Freedom", author: "Ludwig von Mises" },
-      { text: "Ideas and only ideas can light the darkness.", source: "Planning for Freedom", author: "Ludwig von Mises" },
-      { text: "If history could teach us anything, it would be that private property is inextricably linked with civilization.", source: "Human Action", author: "Ludwig von Mises" },
-      { text: "The capitalist system of production is an economic democracy in which every penny gives a right to vote.", source: "The Anti-Capitalistic Mentality", author: "Ludwig von Mises" },
-      { text: "Inflation is not an act of God; it is not a catastrophe of the elements or a disease that comes like the plague. Inflation is a policy.", source: "Planning for Freedom", author: "Ludwig von Mises" },
-      { text: "All rational action is in the first place individual action. Only the individual thinks. Only the individual reasons. Only the individual acts.", source: "Socialism", author: "Ludwig von Mises" },
-      { text: "The program of liberalism, if condensed into a single word, would have to read: property, that is, private ownership of the means of production.", source: "Liberalism", author: "Ludwig von Mises" },
-      { text: "The root problem with conventional currency is all the trust that's required to make it work.", source: "P2P Foundation", author: "Satoshi Nakamoto" },
-      { text: "A purely peer-to-peer version of electronic cash would allow online payments to be sent directly from one party to another without going through a financial institution.", source: "Bitcoin Whitepaper", author: "Satoshi Nakamoto" },
-      { text: "The Times 03/Jan/2009 Chancellor on brink of second bailout for banks.", source: "Genesis Block", author: "Satoshi Nakamoto" },
-      { text: "It might make sense just to get some in case it catches on.", source: "P2P Foundation", author: "Satoshi Nakamoto" },
-      { text: "Lost coins only make everyone else's coins worth slightly more. Think of it as a donation to everyone.", source: "BitcoinTalk", author: "Satoshi Nakamoto" },
-      { text: "Governments are good at cutting off the heads of centrally controlled networks like Napster, but pure P2P networks like Gnutella and Tor seem to be holding their own.", source: "P2P Foundation", author: "Satoshi Nakamoto" },
-      { text: "If you don't believe me or don't get it, I don't have time to try to convince you, sorry.", source: "BitcoinTalk", author: "Satoshi Nakamoto" },
-      { text: "The nature of Bitcoin is such that once version 0.1 was released, the core design was set in stone for the rest of its lifetime.", source: "BitcoinTalk", author: "Satoshi Nakamoto" },
-      { text: "I'm sure that in 20 years there will either be very large transaction volume or no volume.", source: "Email to Mike Hearn", author: "Satoshi Nakamoto" },
-      { text: "Video games are bad for you? That's what they said about rock and roll.", source: "Interview", author: "Shigeru Miyamoto" },
-      { text: "A good idea is something that does not solve just one single problem, but rather can solve multiple problems at once.", source: "Interview", author: "Shigeru Miyamoto" },
-      { text: "I think that inside every adult is the heart of a child. We just gradually convince ourselves that we have to act more like adults.", source: "Interview", author: "Shigeru Miyamoto" },
-      { text: "The obvious objective of video games is to entertain people by surprising them with new experiences.", source: "Interview", author: "Shigeru Miyamoto" },
-      { text: "To create a new standard, you have to be up for that challenge and really enjoy it.", source: "Interview", author: "Shigeru Miyamoto" },
-      { text: "Above all, video games are meant to be just one thing: fun. Fun for everyone.", source: "Interview", author: "Shigeru Miyamoto" },
-      { text: "What I always try to do is create a new type of surprise that is new to the world.", source: "GDC Keynote", author: "Shigeru Miyamoto" },
-      { text: "I think that the best way to make a new game is to have all the people involved communicate actively and passionately.", source: "Interview", author: "Shigeru Miyamoto" }
-    ];
-
-    /* Pick a random quote from the array. Math.random() returns 0-0.999...,
-     * multiplied by the array length and floored to get a valid index. */
-    var q = quotes[Math.floor(Math.random() * quotes.length)];
-
-    /* Inject the formatted quote into the CRT screen. The innerHTML includes
-     * typographic quotes, a line break, and an attributed source line. */
-    var el = document.getElementById("random-quote");
-    el.innerHTML =
-      "&ldquo;" + q.text + "&rdquo;<br><small>&mdash; " + q.author + ", <em>" + q.source + "</em></small>";
-
-    /* Auto-fit: shrink font size in small steps until the content fits within
-     * the fixed-height screen surface. Stops at 8px to stay legible. */
-    var surface = el.closest(".crt-screen-surface");
-    var fontSize = parseFloat(window.getComputedStyle(el).fontSize);
-    while (surface && el.scrollHeight > surface.clientHeight && fontSize > 8) {
-      fontSize -= 0.5;
-      el.style.fontSize = fontSize + "px";
-    }
-  </script>
-
-  <!-- Shared ticker script — fetches live market data for the scrolling bar. -->
-  <script src="js/ticker.js"></script>
 </body>
 </html>

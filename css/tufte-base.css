@@ -1,0 +1,398 @@
+/* ==========================================================================
+   tufte-base.css — Shared base for the warm, hobby-focused redesign
+   --------------------------------------------------------------------------
+   Cream paper, EB Garamond serif body, IBM Plex Mono only for true tabular
+   data, sidenote/marginalia layout, per-section spot colors. Pages opting
+   into the redesign load this in place of styles.css.
+   ========================================================================== */
+
+
+/* ── RESET ─────────────────────────────────────────────────────────────── */
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+html { scroll-behavior: smooth; }
+img, svg, video { display: block; max-width: 100%; }
+button { font: inherit; color: inherit; background: none; border: none; padding: 0; cursor: pointer; }
+
+
+/* ── DESIGN TOKENS ─────────────────────────────────────────────────────── */
+:root {
+  /* Paper & ink ramp — aged tan paper, easier on the eyes than cream. */
+  --paper:        #ddc89a;   /* aged tan — main surface */
+  --paper-deep:   #c9b078;   /* darker inset for figures / cards */
+  --paper-soft:   #d3bf8a;   /* alt surface, hover backgrounds */
+  --ink:          #1a1208;   /* body text — warm near-black */
+  --ink-2:        #3f3422;   /* secondary text */
+  --ink-3:        #62543a;   /* muted / marginalia */
+  --ink-mute:     #8a785f;   /* very faint */
+  --rule:         #ac9670;   /* borders */
+  --rule-soft:    #c2ac80;   /* faint borders */
+
+  /* Tufte red — manuscript red, reserved for emphasis only */
+  --accent-red:   #7a1c1c;
+
+  /* Section spot colors — one per "room" */
+  --c-vg:         #6e3a55;   /* video games — dusty plum */
+  --c-film:       #6b4438;   /* film — sepia brown */
+  --c-econ:       #2a4a6b;   /* economics — deep ink blue */
+  --c-sh:         #4a6a3a;   /* self-hosting — moss */
+  --c-seymour:    #4f5b75;   /* seymour — twilight gray-blue */
+  --c-bitcoin:    #b56a1e;   /* bitcoin — warmed orange */
+  --c-projects:   #6a5a30;   /* projects — warm gold */
+  --c-about:      #5a4536;   /* about — neutral brown */
+
+  /* Layout — main reading column + marginalia column on the right */
+  --col-main:     36rem;
+  --col-margin:   16rem;
+  --col-gutter:   2.5rem;
+  --container:    60rem;     /* total inner content width */
+  --gutter:       2rem;
+
+  /* Spacing rhythm */
+  --space-1: 4px;
+  --space-2: 8px;
+  --space-3: 12px;
+  --space-4: 16px;
+  --space-5: 24px;
+  --space-6: 36px;
+  --space-7: 56px;
+  --space-8: 80px;
+
+  /* Typography */
+  --font-serif: 'EB Garamond', 'Iowan Old Style', 'Sitka Text', Charter, Georgia, serif;
+  --font-mono:  'IBM Plex Mono', ui-monospace, SFMono-Regular, Menlo, Consolas, "Courier New", monospace;
+
+  --fs-display: 3rem;
+  --fs-h1:      2.1rem;
+  --fs-h2:      1.5rem;
+  --fs-h3:      1.15rem;
+  --fs-body:    1.15rem;
+  --fs-small:   0.95rem;
+  --fs-tiny:    0.8rem;
+}
+
+html { font-size: 16px; }
+@media (max-width: 760px) { html { font-size: 15px; } }
+
+
+/* ── BODY ──────────────────────────────────────────────────────────────── */
+body {
+  background: var(--paper);
+  color: var(--ink);
+  font-family: var(--font-serif);
+  font-size: var(--fs-body);
+  line-height: 1.55;
+  font-feature-settings: "kern", "onum", "liga";
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+
+/* ── TYPOGRAPHY ────────────────────────────────────────────────────────── */
+h1, h2, h3, h4 {
+  font-family: var(--font-serif);
+  font-weight: 500;
+  line-height: 1.2;
+  color: var(--ink);
+  letter-spacing: 0;
+}
+h1 { font-size: var(--fs-h1); margin: 0 0 var(--space-4); }
+h2 { font-size: var(--fs-h2); margin: var(--space-7) 0 var(--space-3); font-style: italic; font-weight: 400; }
+h3 { font-size: var(--fs-h3); margin: var(--space-5) 0 var(--space-3); }
+
+p {
+  margin: 0 0 var(--space-4);
+  font-size: var(--fs-body);
+  line-height: 1.65;
+}
+
+a {
+  color: var(--ink);
+  text-decoration: none;
+  background-image: linear-gradient(var(--rule), var(--rule));
+  background-position: 0 95%;
+  background-repeat: no-repeat;
+  background-size: 100% 1px;
+  transition: background-size 120ms ease, color 120ms ease;
+}
+a:hover {
+  color: var(--accent-red);
+  background-image: linear-gradient(var(--accent-red), var(--accent-red));
+  background-size: 100% 1px;
+}
+
+em, i { font-style: italic; }
+strong, b { font-weight: 600; }
+
+blockquote {
+  margin: var(--space-6) 0;
+  padding-left: var(--space-5);
+  border-left: 2px solid var(--rule);
+  color: var(--ink-2);
+  font-style: italic;
+}
+blockquote cite {
+  display: block;
+  margin-top: var(--space-3);
+  font-style: normal;
+  font-variant: small-caps;
+  letter-spacing: 0.04em;
+  font-size: var(--fs-small);
+  color: var(--ink-3);
+}
+
+/* Horizontal rule rendered as a small ornamental flower. */
+hr {
+  border: none;
+  text-align: center;
+  margin: var(--space-7) 0;
+  height: 1em;
+  color: var(--ink-3);
+}
+hr::before {
+  content: '\2766';   /* ❦ floral heart */
+  font-size: 1.05rem;
+  color: var(--ink-3);
+}
+
+ul, ol { padding-left: 1.4em; }
+li { margin: var(--space-2) 0; }
+
+
+/* ── SITE HEADER ───────────────────────────────────────────────────────── */
+.site-header {
+  border-bottom: 1px solid var(--rule);
+  padding: var(--space-4) var(--gutter);
+  background: var(--paper);
+  /* Sit above per-page fullscreen overlays (CRT scanlines, film grain,
+     vignettes) so the canonical top bar always reads clean. */
+  position: relative;
+  z-index: 10001;
+}
+.site-header__inner {
+  max-width: var(--container);
+  margin: 0 auto;
+  display: flex;
+  align-items: flex-end;
+  gap: var(--space-5);
+  /* Match the sub-page mini-shelf height so the masthead doesn't jump
+     when navigating from the homepage (no shelf) to a sub-page (shelf). */
+  min-height: 42px;
+}
+.site-header .brand {
+  font-family: var(--font-serif);
+  font-style: italic;
+  font-size: 1.05rem;
+  color: var(--ink);
+  background: none;
+  line-height: 1.4;
+}
+.site-header__nav {
+  margin-left: auto;
+  display: flex;
+  align-items: flex-end;
+  gap: var(--space-5);
+}
+
+/* Utility icons — about / projects / contact, stroked SVGs. */
+.site-utility {
+  display: flex;
+  align-items: center;
+  gap: var(--space-3);
+  padding-bottom: 2px;
+}
+.site-utility__icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 22px;
+  height: 22px;
+  color: var(--ink-2);
+  background: none;
+  padding: 0;
+  transition: color 120ms ease, transform 120ms ease;
+}
+.site-utility__icon:hover {
+  color: var(--accent-red);
+  background: none;
+  transform: translateY(-1px);
+}
+.site-utility__icon[aria-current="page"] { color: var(--accent-red); }
+.site-utility__icon svg { width: 100%; height: 100%; display: block; }
+
+/* Mini bookshelf — only rendered on sub-pages. Each book is a section
+   spot color with cloth gradient. Current page is marked by a small
+   red dot above the spine. */
+.site-shelf {
+  display: flex;
+  align-items: flex-end;
+  gap: 2px;
+}
+.site-shelf__book {
+  display: block;
+  width: 18px;
+  /* Use shorthand so the base `a` rule's background-size/position/repeat
+     do not bleed in and clip the cloth gradient. */
+  background:
+    linear-gradient(180deg, rgba(255,255,255,0.08) 0%, rgba(0,0,0,0.05) 30%, rgba(0,0,0,0.25) 100%),
+    repeating-linear-gradient(180deg, rgba(0,0,0,0.06) 0 1px, transparent 1px 4px),
+    var(--book-color, var(--c-vg));
+  border-radius: 1px 1px 0 0;
+  position: relative;
+  transition: transform 120ms ease, filter 120ms ease;
+  box-shadow: inset 0 0 0 1px rgba(0,0,0,0.22), 0 1px 0 rgba(0,0,0,0.3);
+  filter: saturate(0.85);
+}
+.site-shelf__book:hover {
+  transform: translateY(-3px);
+  filter: saturate(1.1);
+}
+.site-shelf__book[aria-current="page"] { filter: saturate(1.1); }
+.site-shelf__book[aria-current="page"]::after {
+  content: '';
+  position: absolute;
+  top: -7px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 5px;
+  height: 5px;
+  background: var(--accent-red);
+  border-radius: 50%;
+  box-shadow: 0 0 4px rgba(122, 28, 28, 0.4);
+}
+.site-shelf__book:nth-child(1) { height: 36px; }
+.site-shelf__book:nth-child(2) { height: 40px; }
+.site-shelf__book:nth-child(3) { height: 38px; }
+.site-shelf__book:nth-child(4) { height: 42px; }
+.site-shelf__book:nth-child(5) { height: 36px; }
+.site-shelf__book:nth-child(6) { height: 40px; }
+
+@media (max-width: 540px) {
+  .site-shelf__book { width: 14px; }
+  .site-shelf { gap: 1px; }
+  .site-utility__icon { width: 18px; height: 18px; }
+  .site-utility { gap: var(--space-2); }
+}
+
+
+
+/* ── PAGE & ARTICLE LAYOUT ─────────────────────────────────────────────── */
+.page {
+  max-width: var(--container);
+  margin: 0 auto;
+  padding: var(--space-7) var(--gutter) var(--space-8);
+}
+
+/* Two-column reading layout — main column + right-side marginalia column. */
+.article {
+  display: grid;
+  grid-template-columns: var(--col-main) var(--col-margin);
+  column-gap: var(--col-gutter);
+  align-items: start;
+}
+.article > * { grid-column: 1; min-width: 0; }
+.article > .full { grid-column: 1 / -1; }
+.article > aside,
+.article > .marginalia { grid-column: 2; }
+
+
+/* ── SIDENOTES ─────────────────────────────────────────────────────────── *
+   Inline <span class="sidenote"> floats into the right margin on wide
+   screens (Tufte-CSS technique — float right with negative margin equal to
+   the gutter + margin column). On narrow screens it falls back to an
+   inline italic block, set off by a left rule. */
+.sidenote, .marginnote {
+  font-size: var(--fs-small);
+  line-height: 1.45;
+  color: var(--ink-3);
+  font-style: italic;
+}
+@media (min-width: 980px) {
+  .sidenote, .marginnote {
+    float: right;
+    clear: right;
+    width: var(--col-margin);
+    margin-right: calc(-1 * (var(--col-gutter) + var(--col-margin)));
+    margin-top: 0.2em;
+    margin-bottom: 1em;
+    display: block;
+    position: relative;
+  }
+}
+@media (max-width: 979px) {
+  .sidenote, .marginnote {
+    display: block;
+    margin: var(--space-3) 0 var(--space-3) var(--space-5);
+    padding-left: var(--space-3);
+    border-left: 2px solid var(--rule);
+  }
+  .article {
+    grid-template-columns: 1fr;
+  }
+  .article > aside,
+  .article > .marginalia { grid-column: 1; }
+}
+
+
+/* ── FIGURE ────────────────────────────────────────────────────────────── */
+figure {
+  margin: var(--space-6) 0;
+}
+figure img {
+  width: 100%;
+  height: auto;
+  border: 1px solid var(--rule);
+  background: var(--paper-soft);
+  padding: var(--space-2);
+}
+figcaption {
+  margin-top: var(--space-3);
+  font-size: var(--fs-small);
+  color: var(--ink-3);
+  font-style: italic;
+  line-height: 1.4;
+}
+
+
+/* ── FOOTER ────────────────────────────────────────────────────────────── */
+.site-footer {
+  border-top: 1px solid var(--rule);
+  margin-top: var(--space-8);
+  padding: var(--space-5) var(--gutter);
+  font-size: var(--fs-small);
+  color: var(--ink-3);
+}
+.site-footer__inner {
+  max-width: var(--container);
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: var(--space-4);
+  font-style: italic;
+}
+
+
+/* ── ACCESSIBILITY & SCROLLBAR ─────────────────────────────────────────── */
+:focus-visible {
+  outline: 2px solid var(--accent-red);
+  outline-offset: 3px;
+}
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+
+* {
+  scrollbar-color: var(--rule) var(--paper);
+  scrollbar-width: thin;
+}
+::-webkit-scrollbar { width: 10px; height: 10px; }
+::-webkit-scrollbar-track { background: var(--paper); }
+::-webkit-scrollbar-thumb { background: var(--rule); border-radius: 4px; }
+::-webkit-scrollbar-thumb:hover { background: var(--ink-mute); }
+
+
+/* ── LEGACY CHROME — hide ticker/drawer if old markup is still in DOM ─── */
+.ticker-tape, .site-drawer, .interests-dropdown { display: none !important; }

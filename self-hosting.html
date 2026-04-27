@@ -1,62 +1,39 @@
 <!--
-  self-hosting.html — Self-Hosting / Homelab Showcase
-  ====================================================
-  A terminal-themed page showcasing Eric's home server infrastructure.
-  The design mimics a server rack and terminal interface — dark background,
-  monospace fonts, LED status indicators, and a faux syslog terminal.
-
-  Page sections:
-    1. Hero — styled as a terminal prompt (eric@homelab:~$)
-    2. Hardware snapshot — Synology NAS rack panel with LED drive bay indicators
-    3. Services grid — cards for each Docker container (Plex, Pi-hole, etc.)
-    4. System monitor — decorative CPU/memory/disk/network gauge bars
-    5. Terminal log — faux syslog output with color-coded log levels
-
-  All status data is static/decorative — no live polling from the NAS.
-
-  Stylesheets: styles.css (shared) + sh-styles.css (page-specific)
-  Scripts: drawer.js (nav drawer) + ticker.js (live market ticker)
-  Body class: .sh-page
+  self-hosting.html — Server rack
+  --------------------------------
+  Page is rendered as a stylized server rack: side-railed frame with
+  bolt patterns, a 4U Synology faceplate with drive bays at the top,
+  then 1U service rows grouped by category with status LEDs and port
+  labels. Glance dashboard image lives below the rack as a separate
+  monitor frame.
 -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Self-Hosting</title>
+  <title>Self-hosting</title>
 
-  <!-- SEO and social sharing metadata. -->
-  <meta name="description" content="Eric's home setup, services, and lessons from running self-hosted infrastructure.">
-  <!-- Dark charcoal theme color matches the terminal/server rack aesthetic. -->
-  <meta name="theme-color" content="#0c1117">
+  <meta name="description" content="Eric's home setup, services, and notes from running self-hosted infrastructure.">
+  <meta name="theme-color" content="#0a0b0d">
   <link rel="canonical" href="https://www.ericarmbruster.com/self-hosting.html">
-  <meta property="og:title" content="Self-Hosting - Eric Armbruster">
-  <meta property="og:description" content="Eric's home setup, services, and lessons from running self-hosted infrastructure.">
+  <meta property="og:title" content="Self-hosting - Eric Armbruster">
+  <meta property="og:description" content="Self-hosted services on a Synology NAS.">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://www.ericarmbruster.com/self-hosting.html">
   <meta property="og:image" content="https://www.ericarmbruster.com/images/synology-nas.png">
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="Self-Hosting - Eric Armbruster">
-  <meta name="twitter:description" content="Eric's home setup, services, and lessons from running self-hosted infrastructure.">
+  <meta name="twitter:title" content="Self-hosting - Eric Armbruster">
+  <meta name="twitter:description" content="Self-hosted services on a Synology NAS.">
   <meta name="twitter:image" content="https://www.ericarmbruster.com/images/synology-nas.png">
   <link rel="icon" href="images/hector-favicon.png" type="image/png">
 
-  <!-- Google Fonts — JetBrains Mono for terminal/code text (monospace),
-       Inter for UI labels (clean sans-serif), plus shared serif fonts. -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
 
-  <!-- Preload the nav brand mark font (Herr Von Muellerhoff, latin woff2) at
-       highest priority to eliminate FOUT on page transitions. See index.html
-       for a detailed explanation of why this preload is needed. -->
-  <link rel="preload" href="https://fonts.gstatic.com/s/herrvonmuellerhoff/v23/WBL6rFjRZkREW8WqmCWYLgCkQKXb4CAft0c99KM.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="css/tufte-base.css">
 
-  <link href="https://fonts.googleapis.com/css2?family=Libre+Caslon+Display&family=Libre+Caslon+Text:ital,wght@0,400;0,700;1,400&family=Herr+Von+Muellerhoff&family=JetBrains+Mono:wght@400;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
-
-  <link rel="stylesheet" href="css/styles.css">
-  <link rel="stylesheet" href="css/sh-styles.css">
-
-  <!-- Google Analytics -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-5ZTHJXDR9V"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
@@ -64,472 +41,891 @@
     gtag('js', new Date());
     gtag('config', 'G-5ZTHJXDR9V');
   </script>
+
+  <style>
+    /* ── PAGE-WIDE — server room ─────────────────────────────────────── */
+    body.sh-page {
+      background: #0a0b0d;
+      color: #e8e6dc;
+      font-family: var(--font-mono);
+    }
+    body.sh-page::after {
+      content: '';
+      position: fixed;
+      inset: 0;
+      pointer-events: none;
+      z-index: 8999;
+      background: radial-gradient(ellipse 80% 70% at center, transparent 55%, rgba(0,0,0,0.5) 100%);
+    }
+
+    /* Site footer — dark chrome. (Top bar uses the canonical cream masthead
+       from tufte-base.css for cross-page consistency.) */
+    .sh-page .site-footer {
+      background: #0a0b0d;
+      border-top: 1px solid #2a2c30;
+      color: rgba(232, 230, 220, 0.5);
+    }
+    .sh-page .site-footer__inner {
+      font-family: var(--font-mono);
+      font-style: normal;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      font-size: 0.75rem;
+    }
+    .sh-page main a {
+      color: #ffaa33;
+      background: none;
+      padding: 0;
+    }
+    .sh-page main a:hover {
+      color: #ffe09a;
+      background: none;
+    }
+
+    /* ── MASTHEAD ─────────────────────────────────────────────────────── */
+    .sh-masthead {
+      text-align: center;
+      margin: 0 0 var(--space-6);
+      padding: var(--space-4) 0 var(--space-5);
+    }
+    .sh-title {
+      font-family: var(--font-mono);
+      font-size: 1.85rem;
+      font-weight: 700;
+      font-style: normal;
+      letter-spacing: 0.2em;
+      text-indent: 0.2em;
+      color: #f4f0e8;
+      text-transform: uppercase;
+      margin: 0;
+      line-height: 1;
+    }
+    .sh-subtitle {
+      margin-top: var(--space-3);
+      font-family: var(--font-mono);
+      font-style: normal;
+      font-size: 0.75rem;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      color: rgba(232, 230, 220, 0.55);
+    }
+    .sh-subtitle::before { content: '> '; color: #ffaa33; }
+    .sh-subtitle::after {
+      content: '_';
+      margin-left: 0.4em;
+      color: #ffaa33;
+      animation: sh-blink 1.1s steps(1) infinite;
+    }
+    @keyframes sh-blink {
+      0%, 50%      { opacity: 1; }
+      50.01%, 100% { opacity: 0; }
+    }
+    @media (prefers-reduced-motion: reduce) {
+      .sh-subtitle::after { animation: none; }
+    }
+
+    /* ── STATUS LCD STRIP ────────────────────────────────────────────── */
+    .rack-status-bar {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      gap: var(--space-3) var(--space-4);
+      padding: 12px 18px;
+      background: linear-gradient(180deg, #15171a, #0a0b0d);
+      border: 1px solid #2a2c30;
+      border-bottom: 2px solid #ffaa33;
+      font-family: var(--font-mono);
+      font-size: 0.7rem;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: rgba(232, 230, 220, 0.6);
+    }
+    .rack-stat {
+      display: inline-flex;
+      align-items: center;
+      gap: var(--space-2);
+      white-space: nowrap;
+    }
+    .rack-stat strong {
+      color: #f4f0e8;
+      font-weight: 500;
+    }
+
+    /* ── THE RACK ───────────────────────────────────────────────────── */
+    .rack {
+      position: relative;
+      margin: 0 0 var(--space-6);
+      background: #0e0f12;
+      border-left: 1px solid #2a2c30;
+      border-right: 1px solid #2a2c30;
+      border-bottom: 1px solid #2a2c30;
+      overflow: hidden;
+    }
+    /* Left and right rack rails — vertical strips with bolts every 28px. */
+    .rack::before, .rack::after {
+      content: '';
+      position: absolute;
+      top: 0; bottom: 0;
+      width: 22px;
+      background:
+        radial-gradient(circle at center, #4a4c50 1.5px, transparent 2.5px),
+        linear-gradient(90deg, #16181c, #2a2c30 50%, #16181c);
+      background-size: 100% 28px, 100% 100%;
+      background-position: 0 6px, 0 0;
+      z-index: 1;
+    }
+    .rack::before { left: 0; }
+    .rack::after  { right: 0; }
+
+    /* Section header (1U blank label panel) */
+    .rack-section-head {
+      display: flex;
+      align-items: center;
+      gap: var(--space-4);
+      background: linear-gradient(180deg, #1a1c20, #0e0f12);
+      border-top: 1px solid #2a2c30;
+      border-bottom: 1px solid #0a0b0d;
+      padding: 10px 44px;
+      height: 36px;
+      position: relative;
+      z-index: 2;
+    }
+    .rack-section-num {
+      font-family: var(--font-mono);
+      font-size: 0.68rem;
+      color: rgba(232, 230, 220, 0.4);
+      letter-spacing: 0.12em;
+      font-weight: 500;
+    }
+    .rack-section-name {
+      font-family: var(--font-mono);
+      font-size: 0.78rem;
+      letter-spacing: 0.22em;
+      color: #ffaa33;
+      text-transform: uppercase;
+      font-weight: 600;
+      text-shadow: 0 0 4px rgba(255, 170, 51, 0.4);
+    }
+    .rack-section-meta {
+      margin-left: auto;
+      font-family: var(--font-mono);
+      font-size: 0.65rem;
+      color: rgba(232, 230, 220, 0.4);
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+    }
+
+    /* 1U unit — one service per row */
+    .rack-units {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      position: relative;
+      z-index: 2;
+    }
+    .rack-unit {
+      display: grid;
+      grid-template-columns: 12px 12rem 1fr 5rem;
+      gap: var(--space-3);
+      align-items: center;
+      background: linear-gradient(180deg, #26282c, #1a1c20);
+      border-top: 1px solid #2c2e32;
+      border-bottom: 1px solid #0a0b0d;
+      padding: 11px 44px;
+      font-size: 0.85rem;
+      transition: background 120ms ease;
+    }
+    .rack-unit:hover {
+      background: linear-gradient(180deg, #2c2f33, #1c1e22);
+    }
+    /* Sequence numbers were decorative; hidden so leftover spans in
+       unaffected sections collapse cleanly. */
+    .rack-unit-num { display: none; }
+    .rack-unit-name {
+      font-family: var(--font-mono);
+      font-weight: 600;
+      color: #f4f0e8;
+      font-size: 0.95rem;
+    }
+    .rack-unit-meta {
+      font-family: var(--font-mono);
+      color: rgba(232, 230, 220, 0.55);
+      font-size: 0.74rem;
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+    }
+    .rack-unit-port {
+      font-family: var(--font-mono);
+      color: #ffaa33;
+      font-size: 0.78rem;
+      text-align: right;
+      font-weight: 500;
+      text-shadow: 0 0 3px rgba(255, 170, 51, 0.3);
+    }
+
+    /* Status LEDs */
+    .led {
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      display: inline-block;
+    }
+    .led--green {
+      background: #3dd45a;
+      box-shadow: 0 0 6px rgba(61, 212, 90, 0.7), inset 0 0 0 1px rgba(0,0,0,0.4);
+    }
+    .led--amber {
+      background: #ffaa33;
+      box-shadow: 0 0 6px rgba(255, 170, 51, 0.7), inset 0 0 0 1px rgba(0,0,0,0.4);
+    }
+    .led--red {
+      background: #ff5b5b;
+      box-shadow: 0 0 6px rgba(255, 91, 91, 0.7), inset 0 0 0 1px rgba(0,0,0,0.4);
+    }
+
+    /* NAS — 4U faceplate with drive bays */
+    .rack-nas {
+      display: grid;
+      grid-template-columns: auto 1fr auto;
+      gap: var(--space-5);
+      align-items: center;
+      background: linear-gradient(180deg, #2c2e32, #1c1e22);
+      border-top: 1px solid #2c2e32;
+      border-bottom: 1px solid #0a0b0d;
+      padding: 18px 44px;
+      height: 110px;
+      position: relative;
+      z-index: 2;
+    }
+    .rack-nas-bays {
+      display: flex;
+      gap: 6px;
+    }
+    .bay {
+      width: 24px;
+      height: 64px;
+      background: linear-gradient(180deg, #0a0b0d, #15171a);
+      border: 1px solid #2a2c30;
+      position: relative;
+      border-radius: 1px;
+    }
+    .bay::before {
+      content: '';
+      position: absolute;
+      top: 8px;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 4px;
+      height: 4px;
+      border-radius: 50%;
+      background: rgba(0, 0, 0, 0.6);
+    }
+    .bay::after {
+      content: '';
+      position: absolute;
+      bottom: 8px;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 5px;
+      height: 5px;
+      border-radius: 50%;
+      background: #3dd45a;
+      box-shadow: 0 0 5px rgba(61, 212, 90, 0.8);
+    }
+    .bay--standby::after {
+      background: #ffaa33;
+      box-shadow: 0 0 5px rgba(255, 170, 51, 0.8);
+    }
+    .bay--empty::after { display: none; }
+
+    .rack-nas-info {
+      display: flex;
+      flex-direction: column;
+      gap: 6px;
+    }
+    .rack-nas-model {
+      font-family: var(--font-mono);
+      font-size: 1rem;
+      color: #f4f0e8;
+      font-weight: 600;
+      letter-spacing: 0.1em;
+    }
+    .rack-nas-meta {
+      font-family: var(--font-mono);
+      font-size: 0.7rem;
+      color: rgba(232, 230, 220, 0.55);
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+    }
+    .rack-nas-meta strong {
+      color: #ffaa33;
+      font-weight: 500;
+      text-shadow: 0 0 3px rgba(255, 170, 51, 0.3);
+    }
+    .rack-nas-vents {
+      display: flex;
+      flex-direction: column;
+      gap: 4px;
+    }
+    .rack-nas-vents span {
+      display: block;
+      width: 64px;
+      height: 2px;
+      background: rgba(255, 255, 255, 0.06);
+      border-radius: 1px;
+    }
+
+    /* Compute node — 1U slim panel for mini PC / Proxmox host (no drive bays). */
+    .rack-compute {
+      display: grid;
+      grid-template-columns: auto 1fr auto;
+      gap: var(--space-5);
+      align-items: center;
+      background: linear-gradient(180deg, #2a2c30, #1a1c20);
+      border-top: 1px solid #2c2e32;
+      border-bottom: 1px solid #0a0b0d;
+      padding: 16px 44px;
+      min-height: 56px;
+      position: relative;
+      z-index: 2;
+    }
+    .rack-compute-led {
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+      background: #3dd45a;
+      box-shadow: 0 0 6px rgba(61, 212, 90, 0.7), inset 0 0 0 1px rgba(0, 0, 0, 0.4);
+      flex-shrink: 0;
+    }
+    .rack-compute-info {
+      display: flex;
+      flex-direction: column;
+      gap: 4px;
+    }
+    .rack-compute-model {
+      font-family: var(--font-mono);
+      font-size: 1rem;
+      color: #f4f0e8;
+      font-weight: 600;
+      letter-spacing: 0.08em;
+    }
+    .rack-compute-meta {
+      font-family: var(--font-mono);
+      font-size: 0.7rem;
+      color: rgba(232, 230, 220, 0.55);
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+    }
+    .rack-compute-meta strong {
+      color: #ffaa33;
+      font-weight: 500;
+      text-shadow: 0 0 3px rgba(255, 170, 51, 0.3);
+    }
+    .rack-compute-vents {
+      display: grid;
+      grid-template-columns: repeat(6, 1fr);
+      gap: 3px;
+      width: 64px;
+    }
+    .rack-compute-vents span {
+      display: block;
+      height: 14px;
+      background: rgba(255, 255, 255, 0.06);
+      border-radius: 1px;
+    }
+
+    /* ── GLANCE DASHBOARD MONITOR ────────────────────────────────────── */
+    .sh-glance {
+      margin: var(--space-6) 0 var(--space-5);
+      padding: 18px;
+      background: #0e0f12;
+      border: 1px solid #2a2c30;
+      position: relative;
+    }
+    .sh-glance::before {
+      content: 'GLANCE / DASHBOARD';
+      position: absolute;
+      top: -10px;
+      left: 18px;
+      background: #0a0b0d;
+      padding: 0 10px;
+      font-family: var(--font-mono);
+      font-size: 0.68rem;
+      color: #ffaa33;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      text-shadow: 0 0 4px rgba(255, 170, 51, 0.4);
+    }
+    .sh-glance img {
+      width: 100%;
+      height: auto;
+      display: block;
+      border: 1px solid #1c1e22;
+    }
+    .sh-glance figcaption {
+      margin-top: var(--space-3);
+      font-family: var(--font-mono);
+      font-size: 0.68rem;
+      color: rgba(232, 230, 220, 0.5);
+      text-align: center;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+    }
+    .sh-glance-fallback {
+      padding: var(--space-7) var(--space-5);
+      font-family: var(--font-mono);
+      font-size: 0.78rem;
+      color: rgba(232, 230, 220, 0.5);
+      text-align: center;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+    }
+
+    /* ── RESPONSIVE ──────────────────────────────────────────────────── */
+    @media (max-width: 760px) {
+      .rack-unit {
+        grid-template-columns: 12px 1fr 4.5rem;
+        padding: 11px 32px;
+        gap: var(--space-3);
+      }
+      .rack-unit-num,
+      .rack-unit-meta { display: none; }
+      .rack-section-head { padding: 10px 32px; }
+      .rack-nas { padding: 16px 32px; grid-template-columns: auto 1fr; }
+      .rack-nas-vents { display: none; }
+      .rack::before, .rack::after { width: 14px; }
+      .rack-status-bar { font-size: 0.62rem; padding: 10px 14px; }
+    }
+    @media (max-width: 480px) {
+      .rack-section-meta { display: none; }
+      .rack-nas-bays { gap: 4px; }
+      .bay { width: 18px; }
+    }
+  </style>
 </head>
 
 <body class="sh-page">
 
-  <!-- ═══════════════════════════════════════════════════════════════════════
-       SCROLLING TICKER TAPE — identical across all pages.
-       ticker.js replaces placeholder values with live market data. -->
-  <div class="ticker-tape" aria-hidden="true">
-    <div class="ticker-track">
-      <span class="tick" data-ticker="DJIA">DJIA 38,547 &#9650;0.42%</span>
-      <span class="tick-sep">&bull;</span>
-      <span class="tick" data-ticker="SP500">S&amp;P 500 5,234 &#9650;0.18%</span>
-      <span class="tick-sep">&bull;</span>
-      <span class="tick" data-ticker="NASDAQ">NASDAQ 16,340 &#9660;0.31%</span>
-      <span class="tick-sep">&bull;</span>
-      <span class="tick" data-ticker="10Y">10Y YIELD 4.285%</span>
-      <span class="tick-sep">&bull;</span>
-      <span class="tick" data-ticker="GOLD">GOLD 2,338.40</span>
-      <span class="tick-sep">&bull;</span>
-      <span class="tick" data-ticker="BTC">BTC 67,245 &#9650;2.14%</span>
-      <span class="tick-sep">&bull;</span>
-      <span class="tick" data-ticker="VIX">VIX 13.42</span>
-      <span class="tick-sep">&bull;</span>
-      <span class="tick" data-ticker="EURUSD">EUR/USD 1.0845</span>
-      <span class="tick-sep">&bull;</span>
-      <span class="tick" data-ticker="CRUDE">WTI CRUDE 78.32</span>
-      <span class="tick-sep">&bull;</span>
-      <span class="tick" data-ticker="FEDFUNDS">FED FUNDS 5.33%</span>
-      <span class="tick-sep">&bull;</span>
-      <!-- Duplicate set for seamless infinite scroll. -->
-      <span class="tick" data-ticker="DJIA">DJIA 38,547 &#9650;0.42%</span>
-      <span class="tick-sep">&bull;</span>
-      <span class="tick" data-ticker="SP500">S&amp;P 500 5,234 &#9650;0.18%</span>
-      <span class="tick-sep">&bull;</span>
-      <span class="tick" data-ticker="NASDAQ">NASDAQ 16,340 &#9660;0.31%</span>
-      <span class="tick-sep">&bull;</span>
-      <span class="tick" data-ticker="10Y">10Y YIELD 4.285%</span>
-      <span class="tick-sep">&bull;</span>
-      <span class="tick" data-ticker="GOLD">GOLD 2,338.40</span>
-      <span class="tick-sep">&bull;</span>
-      <span class="tick" data-ticker="BTC">BTC 67,245 &#9650;2.14%</span>
-      <span class="tick-sep">&bull;</span>
-      <span class="tick" data-ticker="VIX">VIX 13.42</span>
-      <span class="tick-sep">&bull;</span>
-      <span class="tick" data-ticker="EURUSD">EUR/USD 1.0845</span>
-      <span class="tick-sep">&bull;</span>
-      <span class="tick" data-ticker="CRUDE">WTI CRUDE 78.32</span>
-      <span class="tick-sep">&bull;</span>
-      <span class="tick" data-ticker="FEDFUNDS">FED FUNDS 5.33%</span>
-      <span class="tick-sep">&bull;</span>
-    </div>
-  </div>
-
-  <!-- ═══════════════════════════════════════════════════════════════════════
-       PRIMARY NAVIGATION — shared across all pages. -->
-  <nav class="study-nav" aria-label="Primary">
-    <div class="container nav-shell">
-      <a href="index.html" class="brand-mark" aria-label="Eric Armbruster home">Eric M. Armbruster</a>
-
-      <div class="nav-links-desktop" aria-label="Primary links">
-        <a href="about.html">about</a>
-        <a href="projects.html">projects</a>
-        <button class="drawer-toggle" type="button" aria-expanded="false" aria-controls="interests-dropdown" data-interests-toggle>interests</button>
+  <header class="site-header">
+    <div class="site-header__inner">
+      <a class="brand" href="index.html">Eric Armbruster</a>
+      <div class="site-header__nav">
+        <div class="site-utility">
+          <a class="site-utility__icon" href="about.html" aria-label="About"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"><circle cx="12" cy="8" r="4"/><path d="M4 21c0-4.4 3.6-8 8-8s8 3.6 8 8"/></svg></a>
+          <a class="site-utility__icon" href="projects.html" aria-label="Projects"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M9 7l-5 5 5 5"/><path d="M15 7l5 5-5 5"/></svg></a>
+          <a class="site-utility__icon" href="mailto:eric.m.armbruster@gmail.com" aria-label="Contact"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="1.5"/><path d="M3 7l9 7 9-7"/></svg></a>
+        </div>
+        <nav class="site-shelf" aria-label="Sections">
+          <a class="site-shelf__book" href="video-games.html" style="--book-color: var(--c-vg);" aria-label="Video games"></a>
+          <a class="site-shelf__book" href="film.html" style="--book-color: var(--c-film);" aria-label="Film"></a>
+          <a class="site-shelf__book" href="economics.html" style="--book-color: var(--c-econ);" aria-label="Economics"></a>
+          <a class="site-shelf__book" href="self-hosting.html" style="--book-color: var(--c-sh);" aria-label="Self-hosting" aria-current="page"></a>
+          <a class="site-shelf__book" href="bitcoin.html" style="--book-color: var(--c-bitcoin);" aria-label="Bitcoin"></a>
+          <a class="site-shelf__book" href="seymour.html" style="--book-color: var(--c-seymour);" aria-label="Seymour"></a>
+        </nav>
       </div>
-
-      <div class="nav-icons" aria-label="Contact links">
-        <a href="mailto:eric.m.armbruster@gmail.com" aria-label="Email Eric"><svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"><rect x="1.5" y="3.5" width="13" height="9"/><path d="M1.5 3.5L8 9l6.5-5.5"/></svg></a>
-        <a href="https://github.com/tenderbrew" target="_blank" rel="noopener" aria-label="Eric on GitHub"><svg width="16" height="16" viewBox="0 0 16 16" fill="currentColor"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0016 8c0-4.42-3.58-8-8-8z"/></svg></a>
-        <a href="https://www.linkedin.com/in/ericmarmbruster/" target="_blank" rel="noopener" aria-label="Eric on LinkedIn"><svg width="16" height="16" viewBox="0 0 16 16" fill="currentColor"><path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.016-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.52 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.174-.431.569-.878 1.232-.878.87 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016l.016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z"/></svg></a>
-      </div>
-
-      <button class="drawer-toggle nav-mobile-toggle" type="button" aria-expanded="false" aria-controls="site-drawer" data-drawer-toggle>menu</button>
-    </div>
-
-
-    <div class="site-drawer" id="site-drawer">
-      <div class="container drawer-inner">
-        <section class="drawer-group">
-          <h2>Main Rooms</h2>
-          <a href="about.html">About</a>
-          <a href="projects.html">Projects</a>
-        </section>
-        <section class="drawer-group drawer-group--interests"><h2>Interests</h2>
-          <a href="video-games.html">Video Games</a>
-          <a href="film.html">Film</a>
-          <a href="self-hosting.html">Self-Hosting</a>
-          <a href="economics.html">Economics</a>
-          <a href="bitcoin.html">Bitcoin</a>
-          <a href="seymour.html">Seymour</a>
-        </section>
-        <section class="drawer-group drawer-group--compact">
-          <h2>Elsewhere</h2>
-          <a href="mailto:eric.m.armbruster@gmail.com">Email</a>
-          <a href="https://github.com/tenderbrew" target="_blank" rel="noopener">GitHub</a>
-          <a href="https://www.linkedin.com/in/ericmarmbruster/" target="_blank" rel="noopener">LinkedIn</a>
-        </section>
-      </div>
-    </div>
-    <div class="interests-dropdown" id="interests-dropdown">
-      <a href="video-games.html">Video Games</a>
-      <a href="film.html">Film</a>
-      <a href="self-hosting.html">Self-Hosting</a>
-      <a href="economics.html">Economics</a>
-      <a href="bitcoin.html">Bitcoin</a>
-      <a href="seymour.html">Seymour</a>
-    </div>
-  </nav>
-
-  <!-- ═══════════════════════════════════════════════════════════════════════
-       HERO — TERMINAL PROMPT
-       ═══════════════════════════════════════════════════════════════════════
-       Styled to look like a Linux terminal prompt. The colored spans
-       (sh-user, sh-host, sh-path) mimic the typical bash PS1 prompt format:
-         user@hostname:~$ command_
-       The blinking underscore (sh-blink) simulates a terminal cursor via
-       CSS animation. The "output" paragraph simulates the command result. -->
-  <header class="hero sh-hero">
-    <div class="container sh-hero-inner">
-      <h1 class="sh-hero-prompt">
-        <span class="sh-user">eric</span>@<span class="sh-host">homelab</span>:<span class="sh-path">~</span>$ <span class="sh-cmd">cat self-hosting</span><span class="sh-blink">_</span>
-      </h1>
-      <p class="sh-hero-output">Running my own infrastructure. Monitoring, services, and hardware.</p>
     </div>
   </header>
 
-  <main>
+  <main class="page">
 
-    <!-- ═══════════════════════════════════════════════════════════════════
-         HARDWARE SNAPSHOT — NAS RACK PANEL
-         ═══════════════════════════════════════════════════════════════════
-         Two-column grid: a skeuomorphic rack panel on the left showing the
-         NAS model, drive bay LEDs, and an LCD readout; a photo of the
-         physical Synology NAS on the right.
+    <header class="sh-masthead">
+      <h1 class="sh-title">Self-hosting</h1>
+      <p class="sh-subtitle">Self-hosted services on a Synology NAS</p>
+    </header>
 
-         The rack panel mimics a 1U server faceplate:
-         - sh-rack-label: model name badge
-         - sh-ventilation: decorative perforated ventilation strips
-         - sh-drive-bays: four LED indicators showing drive status
-           (green = active, amber = standby)
-         - sh-rack-lcd: monospace readout showing hostname, IP, uptime -->
-    <section aria-labelledby="hardware-heading">
-      <div class="container">
-        <div class="sh-hardware-grid">
-          <div class="sh-rack-panel">
-            <div class="sh-rack-label" id="hardware-heading">Synology DS920+</div>
-            <div class="sh-ventilation" aria-hidden="true"></div>
-            <div class="sh-drive-bays" aria-label="Drive bay status">
-              <!-- Each LED is a small colored circle. Green = active drive,
-                   amber = standby/sleep. ARIA labels provide the status to
-                   screen readers. -->
-              <span class="sh-led sh-led--green" aria-label="Bay 1: active"></span>
-              <span class="sh-led sh-led--green" aria-label="Bay 2: active"></span>
-              <span class="sh-led sh-led--green" aria-label="Bay 3: active"></span>
-              <span class="sh-led sh-led--amber" aria-label="Bay 4: standby"></span>
-            </div>
-            <div class="sh-ventilation" aria-hidden="true"></div>
-            <!-- LCD readout — mimics a small monochrome character display.
-                 Values are placeholders (dashes) since there's no live API
-                 connection to the actual NAS. -->
-            <div class="sh-rack-lcd">
-              <span>HOST homelab</span>
-              <span>IP   192.168.1.--</span>
-              <span>UP   ---d --h --m</span>
-            </div>
-          </div>
-          <!-- Photo of the physical NAS unit. loading="lazy" defers download
-               until the user scrolls near it. -->
-          <div class="sh-nas-photo">
-            <img src="images/synology-nas.webp" alt="Synology NAS" width="400" height="300" loading="lazy">
-          </div>
+    <!-- Status LCD strip — sits above the rack like a rack management panel. -->
+    <div class="rack-status-bar">
+      <span class="rack-stat"><span class="led led--green"></span> System online</span>
+      <span class="rack-stat">Hosts <strong>2 NAS &middot; 1 PVE</strong></span>
+      <span class="rack-stat">Disks <strong>12 / 12 SHR</strong></span>
+      <span class="rack-stat">Services <strong>36</strong></span>
+    </div>
+
+    <!-- Server rack: 4U Synology + service categories. -->
+    <article class="rack" aria-label="Service rack">
+
+      <!-- Media NAS -->
+      <header class="rack-section-head">
+        <span class="rack-section-num">U01&ndash;U08</span>
+        <span class="rack-section-name">Media NAS</span>
+        <span class="rack-section-meta">Synology DS1821+ &middot; 8 bays</span>
+      </header>
+      <div class="rack-nas">
+        <div class="rack-nas-bays" aria-label="Drive bay status">
+          <span class="bay" aria-label="Bay 1: active"></span>
+          <span class="bay" aria-label="Bay 2: active"></span>
+          <span class="bay" aria-label="Bay 3: active"></span>
+          <span class="bay" aria-label="Bay 4: active"></span>
+          <span class="bay" aria-label="Bay 5: active"></span>
+          <span class="bay" aria-label="Bay 6: active"></span>
+          <span class="bay" aria-label="Bay 7: active"></span>
+          <span class="bay bay--standby" aria-label="Bay 8: standby"></span>
+        </div>
+        <div class="rack-nas-info">
+          <span class="rack-nas-model">Synology DS1821+</span>
+          <span class="rack-nas-meta">media &middot; <strong>192.168.1.&mdash;</strong> &middot; SHR / 8 bays</span>
+        </div>
+        <div class="rack-nas-vents" aria-hidden="true">
+          <span></span><span></span><span></span><span></span><span></span><span></span>
         </div>
       </div>
-    </section>
 
-    <!-- ═══════════════════════════════════════════════════════════════════
-         SERVICE INVENTORY
-         ═══════════════════════════════════════════════════════════════════
-         A grid of cards, one per Docker container / self-hosted service.
-         Each card shows:
-         - A colored top stripe (default green, variants for blue/amber)
-         - Service name
-         - LED status indicator + status text
-         - Port number (the Docker port mapping)
-         - Brief description
-
-         The stripe color indicates service category:
-         - Default (green): core infrastructure services
-         - Blue (sh-service-stripe--blue): smart home / container management
-         - Amber (sh-service-stripe--amber): networking / monitoring tools
-
-         All statuses are hardcoded as "Running" — this is a showcase page,
-         not a live monitoring dashboard. -->
-    <section aria-labelledby="services-heading">
-      <div class="container">
-        <h2 id="services-heading" class="sh-services-heading">Services</h2>
-        <div class="sh-services-grid">
-
-          <!-- Plex — media server for movies, TV shows, music. -->
-          <div class="sh-service-card">
-            <div class="sh-service-stripe"></div>
-            <div class="sh-service-body">
-              <div class="sh-service-header">
-                <span class="sh-service-name">Plex</span>
-              </div>
-              <div class="sh-service-status">
-                <span class="sh-led sh-led--green"></span>
-                <span class="sh-service-status-text">Running</span>
-              </div>
-              <span class="sh-service-port">:32400</span>
-              <p class="sh-service-desc">Media server</p>
-            </div>
-          </div>
-
-          <!-- Syncthing — peer-to-peer file synchronization across devices. -->
-          <div class="sh-service-card">
-            <div class="sh-service-stripe"></div>
-            <div class="sh-service-body">
-              <div class="sh-service-header">
-                <span class="sh-service-name">Syncthing</span>
-              </div>
-              <div class="sh-service-status">
-                <span class="sh-led sh-led--green"></span>
-                <span class="sh-service-status-text">Running</span>
-              </div>
-              <span class="sh-service-port">:8384</span>
-              <p class="sh-service-desc">File sync</p>
-            </div>
-          </div>
-
-          <!-- Home Assistant — home automation and IoT device control. -->
-          <div class="sh-service-card">
-            <div class="sh-service-stripe sh-service-stripe--blue"></div>
-            <div class="sh-service-body">
-              <div class="sh-service-header">
-                <span class="sh-service-name">Home Assistant</span>
-              </div>
-              <div class="sh-service-status">
-                <span class="sh-led sh-led--green"></span>
-                <span class="sh-service-status-text">Running</span>
-              </div>
-              <span class="sh-service-port">:8123</span>
-              <p class="sh-service-desc">Automation</p>
-            </div>
-          </div>
-
-          <!-- Pi-hole — network-wide DNS-based ad blocker. -->
-          <div class="sh-service-card">
-            <div class="sh-service-stripe"></div>
-            <div class="sh-service-body">
-              <div class="sh-service-header">
-                <span class="sh-service-name">Pi-hole</span>
-              </div>
-              <div class="sh-service-status">
-                <span class="sh-led sh-led--green"></span>
-                <span class="sh-service-status-text">Running</span>
-              </div>
-              <span class="sh-service-port">:80</span>
-              <p class="sh-service-desc">DNS ad-blocking</p>
-            </div>
-          </div>
-
-          <!-- Nginx Proxy Manager — reverse proxy with SSL management UI. -->
-          <div class="sh-service-card">
-            <div class="sh-service-stripe sh-service-stripe--amber"></div>
-            <div class="sh-service-body">
-              <div class="sh-service-header">
-                <span class="sh-service-name">Nginx Proxy Manager</span>
-              </div>
-              <div class="sh-service-status">
-                <span class="sh-led sh-led--green"></span>
-                <span class="sh-service-status-text">Running</span>
-              </div>
-              <span class="sh-service-port">:81</span>
-              <p class="sh-service-desc">Reverse proxy</p>
-            </div>
-          </div>
-
-          <!-- Grafana — data visualization dashboards for monitoring metrics. -->
-          <div class="sh-service-card">
-            <div class="sh-service-stripe sh-service-stripe--amber"></div>
-            <div class="sh-service-body">
-              <div class="sh-service-header">
-                <span class="sh-service-name">Grafana</span>
-              </div>
-              <div class="sh-service-status">
-                <span class="sh-led sh-led--green"></span>
-                <span class="sh-service-status-text">Running</span>
-              </div>
-              <span class="sh-service-port">:3000</span>
-              <p class="sh-service-desc">Dashboards</p>
-            </div>
-          </div>
-
-          <!-- Uptime Kuma — self-hosted uptime monitoring with alerts. -->
-          <div class="sh-service-card">
-            <div class="sh-service-stripe"></div>
-            <div class="sh-service-body">
-              <div class="sh-service-header">
-                <span class="sh-service-name">Uptime Kuma</span>
-              </div>
-              <div class="sh-service-status">
-                <span class="sh-led sh-led--green"></span>
-                <span class="sh-service-status-text">Running</span>
-              </div>
-              <span class="sh-service-port">:3001</span>
-              <p class="sh-service-desc">Status monitoring</p>
-            </div>
-          </div>
-
-          <!-- Portainer — Docker container management web UI. -->
-          <div class="sh-service-card">
-            <div class="sh-service-stripe sh-service-stripe--blue"></div>
-            <div class="sh-service-body">
-              <div class="sh-service-header">
-                <span class="sh-service-name">Portainer</span>
-              </div>
-              <div class="sh-service-status">
-                <span class="sh-led sh-led--green"></span>
-                <span class="sh-service-status-text">Running</span>
-              </div>
-              <span class="sh-service-port">:9443</span>
-              <p class="sh-service-desc">Container management</p>
-            </div>
-          </div>
-
-          <!-- Vaultwarden — self-hosted Bitwarden-compatible password manager. -->
-          <div class="sh-service-card">
-            <div class="sh-service-stripe"></div>
-            <div class="sh-service-body">
-              <div class="sh-service-header">
-                <span class="sh-service-name">Vaultwarden</span>
-              </div>
-              <div class="sh-service-status">
-                <span class="sh-led sh-led--green"></span>
-                <span class="sh-service-status-text">Running</span>
-              </div>
-              <span class="sh-service-port">:8000</span>
-              <p class="sh-service-desc">Password manager</p>
-            </div>
-          </div>
-
+      <!-- Backup NAS -->
+      <header class="rack-section-head">
+        <span class="rack-section-num">U09&ndash;U12</span>
+        <span class="rack-section-name">Backup NAS</span>
+        <span class="rack-section-meta">Synology DS920+ &middot; 4 bays</span>
+      </header>
+      <div class="rack-nas">
+        <div class="rack-nas-bays" aria-label="Drive bay status">
+          <span class="bay" aria-label="Bay 1: active"></span>
+          <span class="bay" aria-label="Bay 2: active"></span>
+          <span class="bay" aria-label="Bay 3: active"></span>
+          <span class="bay bay--standby" aria-label="Bay 4: standby"></span>
+        </div>
+        <div class="rack-nas-info">
+          <span class="rack-nas-model">Synology DS920+</span>
+          <span class="rack-nas-meta">backup &middot; <strong>192.168.1.&mdash;</strong> &middot; SHR / 4 bays</span>
+        </div>
+        <div class="rack-nas-vents" aria-hidden="true">
+          <span></span><span></span><span></span><span></span><span></span><span></span>
         </div>
       </div>
-    </section>
 
-    <!-- ═══════════════════════════════════════════════════════════════════
-         SYSTEM MONITOR — DECORATIVE GAUGES
-         ═══════════════════════════════════════════════════════════════════
-         A dashboard panel with four horizontal bar gauges (CPU, Memory,
-         Disk, Network) and an uptime counter. All values are placeholder
-         dashes — no live polling. The gauge visual is built from two nested
-         divs: sh-gauge-track (the background rail) and sh-gauge-fill (the
-         colored bar, width set via inline style). -->
-    <section aria-labelledby="monitoring-heading">
-      <div class="container">
-        <div class="sh-dashboard">
-          <h2 id="monitoring-heading" class="sh-dashboard-heading">System Monitor</h2>
-
-          <!-- Uptime display — placeholder format: DDDd HHh MMm -->
-          <div class="sh-uptime">
-            <div class="sh-uptime-label">Uptime</div>
-            <div class="sh-uptime-value" id="sh-uptime-display">000d 00h 00m</div>
-          </div>
-
-          <!-- Gauge bars — each has a label, percentage value, and a
-               filled bar (width: 0% since there's no live data). -->
-          <div class="sh-gauges">
-            <div class="sh-gauge">
-              <div class="sh-gauge-label">
-                <span>CPU</span>
-                <span class="sh-gauge-value">--%</span>
-              </div>
-              <div class="sh-gauge-track">
-                <div class="sh-gauge-fill" style="width: 0%"></div>
-              </div>
-            </div>
-            <div class="sh-gauge">
-              <div class="sh-gauge-label">
-                <span>Memory</span>
-                <span class="sh-gauge-value">--%</span>
-              </div>
-              <div class="sh-gauge-track">
-                <div class="sh-gauge-fill" style="width: 0%"></div>
-              </div>
-            </div>
-            <div class="sh-gauge">
-              <div class="sh-gauge-label">
-                <span>Disk</span>
-                <span class="sh-gauge-value">--%</span>
-              </div>
-              <div class="sh-gauge-track">
-                <div class="sh-gauge-fill" style="width: 0%"></div>
-              </div>
-            </div>
-            <div class="sh-gauge">
-              <div class="sh-gauge-label">
-                <span>Network</span>
-                <span class="sh-gauge-value">-- Mbps</span>
-              </div>
-              <div class="sh-gauge-track">
-                <div class="sh-gauge-fill" style="width: 0%"></div>
-              </div>
-            </div>
-          </div>
-
-          <div class="sh-dashboard-footer">Last updated: --</div>
+      <!-- Compute -->
+      <header class="rack-section-head">
+        <span class="rack-section-num">U13</span>
+        <span class="rack-section-name">Compute</span>
+        <span class="rack-section-meta">Mini PC &middot; Proxmox VE</span>
+      </header>
+      <div class="rack-compute">
+        <span class="rack-compute-led" aria-label="Active"></span>
+        <div class="rack-compute-info">
+          <span class="rack-compute-model">Proxmox VE</span>
+          <span class="rack-compute-meta">homelab-pve &middot; <strong>192.168.1.&mdash;</strong> &middot; LXC + VM host</span>
+        </div>
+        <div class="rack-compute-vents" aria-hidden="true">
+          <span></span><span></span><span></span><span></span><span></span><span></span>
+          <span></span><span></span><span></span><span></span><span></span><span></span>
         </div>
       </div>
-    </section>
 
-    <!-- ═══════════════════════════════════════════════════════════════════
-         FAUX TERMINAL LOG STREAM
-         ═══════════════════════════════════════════════════════════════════
-         A decorative terminal window showing fake syslog output. Styled
-         with a macOS-style title bar (three colored dots: red, amber, green)
-         and a dark terminal body with monospace text.
+      <!-- Media servers -->
+      <header class="rack-section-head">
+        <span class="rack-section-num">U14</span>
+        <span class="rack-section-name">Media Servers</span>
+        <span class="rack-section-meta">3 services</span>
+      </header>
+      <ul class="rack-units">
+        <li class="rack-unit">
+          <span class="led led--green" aria-label="Running"></span>
+          <span class="rack-unit-name">Plex</span>
+          <span class="rack-unit-meta">Media server</span>
+          <span class="rack-unit-port">:32400</span>
+        </li>
+        <li class="rack-unit">
+          <span class="led led--green"></span>
+          <span class="rack-unit-name">Tautulli</span>
+          <span class="rack-unit-meta">Plex analytics</span>
+          <span class="rack-unit-port">:8181</span>
+        </li>
+        <li class="rack-unit">
+          <span class="led led--green"></span>
+          <span class="rack-unit-name">Notifiarr</span>
+          <span class="rack-unit-meta">Arr/Plex notifications</span>
+          <span class="rack-unit-port">:5454</span>
+        </li>
+      </ul>
 
-         Log lines are color-coded by severity:
-         - sh-log-ok (green): successful operations (backups, cron jobs)
-         - sh-log-info (blue): informational messages (health checks, syncs)
-         - sh-log-warn (amber): warnings (firewall blocks)
+      <!-- Arr stack -->
+      <header class="rack-section-head">
+        <span class="rack-section-num">U15</span>
+        <span class="rack-section-name">Arr Stack</span>
+        <span class="rack-section-meta">6 services</span>
+      </header>
+      <ul class="rack-units">
+        <li class="rack-unit">
+          <span class="led led--green"></span>
+          <span class="rack-unit-name">Radarr</span>
+          <span class="rack-unit-meta">Movie library</span>
+          <span class="rack-unit-port">:7878</span>
+        </li>
+        <li class="rack-unit">
+          <span class="led led--green"></span>
+          <span class="rack-unit-name">Sonarr</span>
+          <span class="rack-unit-meta">TV library</span>
+          <span class="rack-unit-port">:8989</span>
+        </li>
+        <li class="rack-unit">
+          <span class="led led--green"></span>
+          <span class="rack-unit-name">Lidarr</span>
+          <span class="rack-unit-meta">Music library</span>
+          <span class="rack-unit-port">:8686</span>
+        </li>
+        <li class="rack-unit">
+          <span class="led led--green"></span>
+          <span class="rack-unit-name">Bazarr</span>
+          <span class="rack-unit-meta">Subtitle automation</span>
+          <span class="rack-unit-port">:6767</span>
+        </li>
+        <li class="rack-unit">
+          <span class="led led--green"></span>
+          <span class="rack-unit-name">Profilarr</span>
+          <span class="rack-unit-meta">arr profile sync</span>
+          <span class="rack-unit-port">:6868</span>
+        </li>
+        <li class="rack-unit">
+          <span class="led led--green"></span>
+          <span class="rack-unit-name">Seerr</span>
+          <span class="rack-unit-meta">Media requests</span>
+          <span class="rack-unit-port">:5055</span>
+        </li>
+      </ul>
 
-         The sh-ts spans contain timestamps. The last line shows an active
-         terminal prompt with a blinking cursor, suggesting the system is
-         live and waiting for input. -->
-    <section aria-labelledby="logs-heading">
-      <div class="container">
-        <div class="sh-terminal">
-          <!-- Terminal title bar — mimics a macOS window chrome with
-               three colored dots (close/minimize/maximize). The title
-               shows the command being "run": tail -f /var/log/syslog -->
-          <div class="sh-term-titlebar">
-            <div class="sh-term-dots" aria-hidden="true">
-              <span class="sh-term-dot sh-term-dot--red"></span>
-              <span class="sh-term-dot sh-term-dot--amber"></span>
-              <span class="sh-term-dot sh-term-dot--green"></span>
-            </div>
-            <span class="sh-term-title" id="logs-heading">eric@homelab:~$ tail -f /var/log/syslog</span>
-          </div>
-          <!-- Terminal body — each sh-term-line is one log entry. -->
-          <div class="sh-term-body">
-            <span class="sh-term-line"><span class="sh-ts">Feb 14 08:00:01</span> homelab CRON[1842]: <span class="sh-log-ok">(root) CMD (/usr/local/bin/backup.sh)</span></span>
-            <span class="sh-term-line"><span class="sh-ts">Feb 14 08:00:03</span> homelab backup: <span class="sh-log-ok">snapshot completed — 3 volumes, 12.4 GB total</span></span>
-            <span class="sh-term-line"><span class="sh-ts">Feb 14 08:15:22</span> homelab dockerd: <span class="sh-log-info">container plex health check passed</span></span>
-            <span class="sh-term-line"><span class="sh-ts">Feb 14 08:15:22</span> homelab dockerd: <span class="sh-log-info">container pihole health check passed</span></span>
-            <span class="sh-term-line"><span class="sh-ts">Feb 14 08:30:00</span> homelab CRON[2104]: <span class="sh-log-ok">(root) CMD (/usr/local/bin/cert-renew.sh)</span></span>
-            <span class="sh-term-line"><span class="sh-ts">Feb 14 09:00:01</span> homelab syncthing[984]: <span class="sh-log-info">Completed pull of "documents" (4 items, ~2.1 MiB)</span></span>
-            <span class="sh-term-line"><span class="sh-ts">Feb 14 09:12:44</span> homelab kernel: <span class="sh-log-warn">[UFW BLOCK] IN=eth0 SRC=192.168.1.254 DST=192.168.1.50</span></span>
-            <span class="sh-term-line"><span class="sh-ts">Feb 14 09:30:00</span> homelab uptimekuma: <span class="sh-log-ok">All 9 monitors operational</span></span>
-            <!-- Active prompt line — blinking cursor suggests the terminal is live. -->
-            <span class="sh-term-prompt"><span class="sh-user">eric</span>@<span class="sh-host">homelab</span>:~$ <span class="sh-blink">_</span></span>
-          </div>
-        </div>
-      </div>
-    </section>
+      <!-- Downloads -->
+      <header class="rack-section-head">
+        <span class="rack-section-num">U16</span>
+        <span class="rack-section-name">Downloads</span>
+        <span class="rack-section-meta">5 services</span>
+      </header>
+      <ul class="rack-units">
+        <li class="rack-unit">
+          <span class="led led--green"></span>
+          <span class="rack-unit-name">qBittorrent</span>
+          <span class="rack-unit-meta">Torrent client (VPN)</span>
+          <span class="rack-unit-port">:8080</span>
+        </li>
+        <li class="rack-unit">
+          <span class="led led--green"></span>
+          <span class="rack-unit-name">Prowlarr</span>
+          <span class="rack-unit-meta">Indexer aggregator</span>
+          <span class="rack-unit-port">:9696</span>
+        </li>
+        <li class="rack-unit">
+          <span class="led led--green"></span>
+          <span class="rack-unit-name">SABnzbd</span>
+          <span class="rack-unit-meta">Usenet client</span>
+          <span class="rack-unit-port">:8085</span>
+        </li>
+        <li class="rack-unit">
+          <span class="led led--green"></span>
+          <span class="rack-unit-name">slskd</span>
+          <span class="rack-unit-meta">Soulseek client</span>
+          <span class="rack-unit-port">&mdash;</span>
+        </li>
+        <li class="rack-unit">
+          <span class="led led--green"></span>
+          <span class="rack-unit-name">qbit-manage</span>
+          <span class="rack-unit-meta">qBit lifecycle automation</span>
+          <span class="rack-unit-port">&mdash;</span>
+        </li>
+      </ul>
+
+      <!-- Books -->
+      <header class="rack-section-head">
+        <span class="rack-section-num">U17</span>
+        <span class="rack-section-name">Books</span>
+        <span class="rack-section-meta">4 services</span>
+      </header>
+      <ul class="rack-units">
+        <li class="rack-unit">
+          <span class="led led--green"></span>
+          <span class="rack-unit-name">Grimmory</span>
+          <span class="rack-unit-meta">Ebook library (OPDS)</span>
+          <span class="rack-unit-port">:6060</span>
+        </li>
+        <li class="rack-unit">
+          <span class="led led--green"></span>
+          <span class="rack-unit-name">Shelfmark</span>
+          <span class="rack-unit-meta">Reading list</span>
+          <span class="rack-unit-port">:8084</span>
+        </li>
+        <li class="rack-unit">
+          <span class="led led--green"></span>
+          <span class="rack-unit-name">Komga</span>
+          <span class="rack-unit-meta">Comics &amp; manga</span>
+          <span class="rack-unit-port">:25600</span>
+        </li>
+        <li class="rack-unit">
+          <span class="led led--green"></span>
+          <span class="rack-unit-name">Kapowarr</span>
+          <span class="rack-unit-meta">Comic downloads</span>
+          <span class="rack-unit-port">:5656</span>
+        </li>
+      </ul>
+
+      <!-- Documents -->
+      <header class="rack-section-head">
+        <span class="rack-section-num">U18</span>
+        <span class="rack-section-name">Documents</span>
+        <span class="rack-section-meta">1 service</span>
+      </header>
+      <ul class="rack-units">
+        <li class="rack-unit">
+          <span class="led led--green"></span>
+          <span class="rack-unit-name">Paperless-ngx</span>
+          <span class="rack-unit-meta">Document OCR</span>
+          <span class="rack-unit-port">:8010</span>
+        </li>
+      </ul>
+
+      <!-- Photos -->
+      <header class="rack-section-head">
+        <span class="rack-section-num">U19</span>
+        <span class="rack-section-name">Photos</span>
+        <span class="rack-section-meta">1 service</span>
+      </header>
+      <ul class="rack-units">
+        <li class="rack-unit">
+          <span class="led led--green"></span>
+          <span class="rack-unit-name">Immich</span>
+          <span class="rack-unit-meta">Photo library</span>
+          <span class="rack-unit-port">:2283</span>
+        </li>
+      </ul>
+
+      <!-- Household -->
+      <header class="rack-section-head">
+        <span class="rack-section-num">U20</span>
+        <span class="rack-section-name">Household</span>
+        <span class="rack-section-meta">1 service</span>
+      </header>
+      <ul class="rack-units">
+        <li class="rack-unit">
+          <span class="led led--green"></span>
+          <span class="rack-unit-name">Mealie</span>
+          <span class="rack-unit-meta">Recipe library</span>
+          <span class="rack-unit-port">:9925</span>
+        </li>
+      </ul>
+
+      <!-- Finance -->
+      <header class="rack-section-head">
+        <span class="rack-section-num">U21</span>
+        <span class="rack-section-name">Finance</span>
+        <span class="rack-section-meta">1 service</span>
+      </header>
+      <ul class="rack-units">
+        <li class="rack-unit">
+          <span class="led led--green"></span>
+          <span class="rack-unit-name">Sure</span>
+          <span class="rack-unit-meta">Personal finance</span>
+          <span class="rack-unit-port">:3004</span>
+        </li>
+      </ul>
+
+      <!-- Infrastructure -->
+      <header class="rack-section-head">
+        <span class="rack-section-num">U22</span>
+        <span class="rack-section-name">Infrastructure</span>
+        <span class="rack-section-meta">8 services</span>
+      </header>
+      <ul class="rack-units">
+        <li class="rack-unit">
+          <span class="led led--green"></span>
+          <span class="rack-unit-name">AdGuard Home</span>
+          <span class="rack-unit-meta">DNS / ad-block</span>
+          <span class="rack-unit-port">:3003</span>
+        </li>
+        <li class="rack-unit">
+          <span class="led led--green"></span>
+          <span class="rack-unit-name">Homepage</span>
+          <span class="rack-unit-meta">Service dashboard</span>
+          <span class="rack-unit-port">:3002</span>
+        </li>
+        <li class="rack-unit">
+          <span class="led led--green"></span>
+          <span class="rack-unit-name">Glance</span>
+          <span class="rack-unit-meta">Lightweight dashboard</span>
+          <span class="rack-unit-port">:8090</span>
+        </li>
+        <li class="rack-unit">
+          <span class="led led--green"></span>
+          <span class="rack-unit-name">Uptime Kuma</span>
+          <span class="rack-unit-meta">Service uptime</span>
+          <span class="rack-unit-port">:3001</span>
+        </li>
+        <li class="rack-unit">
+          <span class="led led--green"></span>
+          <span class="rack-unit-name">Netdata</span>
+          <span class="rack-unit-meta">Host metrics</span>
+          <span class="rack-unit-port">:19999</span>
+        </li>
+        <li class="rack-unit">
+          <span class="led led--green"></span>
+          <span class="rack-unit-name">Speedtest Tracker</span>
+          <span class="rack-unit-meta">ISP speedtest history</span>
+          <span class="rack-unit-port">:8765</span>
+        </li>
+        <li class="rack-unit">
+          <span class="led led--green"></span>
+          <span class="rack-unit-name">Dockhand</span>
+          <span class="rack-unit-meta">Container update alerts</span>
+          <span class="rack-unit-port">:3000</span>
+        </li>
+        <li class="rack-unit">
+          <span class="led led--green"></span>
+          <span class="rack-unit-name">CrowdSec</span>
+          <span class="rack-unit-meta">Intrusion detection</span>
+          <span class="rack-unit-port">:8180</span>
+        </li>
+      </ul>
+
+      <!-- Standalone -->
+      <header class="rack-section-head">
+        <span class="rack-section-num">U23</span>
+        <span class="rack-section-name">Standalone</span>
+        <span class="rack-section-meta">6 services</span>
+      </header>
+      <ul class="rack-units">
+        <li class="rack-unit">
+          <span class="led led--green"></span>
+          <span class="rack-unit-name">Minecraft</span>
+          <span class="rack-unit-meta">Minecraft server</span>
+          <span class="rack-unit-port">:25565</span>
+        </li>
+        <li class="rack-unit">
+          <span class="led led--green"></span>
+          <span class="rack-unit-name">BedrockConnect</span>
+          <span class="rack-unit-meta">Switch server proxy</span>
+          <span class="rack-unit-port">:19132</span>
+        </li>
+        <li class="rack-unit">
+          <span class="led led--green"></span>
+          <span class="rack-unit-name">Home Assistant</span>
+          <span class="rack-unit-meta">Home automation</span>
+          <span class="rack-unit-port">:8123</span>
+        </li>
+        <li class="rack-unit">
+          <span class="led led--green"></span>
+          <span class="rack-unit-name">bitcoind</span>
+          <span class="rack-unit-meta">Bitcoin Core node</span>
+          <span class="rack-unit-port">:8333</span>
+        </li>
+        <li class="rack-unit">
+          <span class="led led--green"></span>
+          <span class="rack-unit-name">BTC RPC Explorer</span>
+          <span class="rack-unit-meta">Bitcoin block explorer</span>
+          <span class="rack-unit-port">:3005</span>
+        </li>
+        <li class="rack-unit">
+          <span class="led led--green"></span>
+          <span class="rack-unit-name">tok-bot</span>
+          <span class="rack-unit-meta">Discord bot</span>
+          <span class="rack-unit-port">&mdash;</span>
+        </li>
+      </ul>
+
+    </article>
 
   </main>
 
-  <footer>
-    <div class="container">
-      &copy; 2026 Eric Armbruster
+  <footer class="site-footer">
+    <div class="site-footer__inner">
+      <span>&copy; 2026 Eric Armbruster</span>
     </div>
   </footer>
 
-  <!-- Shared scripts — drawer.js for nav, ticker.js for live market data. -->
-  <script src="js/drawer.js"></script>
-  <script src="js/ticker.js"></script>
 </body>
 </html>

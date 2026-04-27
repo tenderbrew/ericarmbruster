@@ -1,1155 +1,310 @@
 /* ==========================================================================
-   econ-styles.css — Economics Page Stylesheet
-   ===========================================================================
-   Scoped via the `body.econ-page` class so that none of these rules leak
-   into other pages on the site.
-
-   Visual concept: a Bloomberg-terminal / financial-dashboard aesthetic
-   rendered in an emerald-green phosphor palette. The page simulates a
-   late-night trading floor — dark panels glow with green LED readouts,
-   CRT scanlines drift over every surface, and manila-folder dossiers
-   hold the reading lists. The result is a skeuomorphic mashup of stock
-   tickers, oscilloscope grids, dot-matrix screens, and green-bar
-   continuous-form paper.
+   econ-styles.css — Economics dashboard (mempool.space vibe)
+   --------------------------------------------------------------------------
+   Terminal-window hero, dense FRED indicator card grid, Mises news sidebar,
+   research desk reading list. Uses Bitcoin-orange as the page accent
+   (Bloomberg amber-style) since this is also a financial dashboard.
    ========================================================================== */
 
 
-/* ---------------------------------------------------------------------------
-   Custom Properties (Design Tokens)
-   ---------------------------------------------------------------------------
-   Every color, shadow tint, and spacing value lives here so the entire
-   palette can be tuned from one place. The names are grouped by purpose:
+/* ── HERO — terminal window ──────────────────────────────────────────── */
+.econ-hero { padding: var(--space-6) 0 var(--space-4); }
 
-     --midnight / --panel*    Dark background layers (darkest to lightest)
-     --border*                Panel edge colors
-     --phosphor*              The signature green CRT glow (bright, dim, halo)
-     --amber*                 Secondary accent — warm amber for headlines
-     --tape-* / --green-bar-* Unused here visually but reserved for ticker tape
-     --red / --green          Semantic up/down indicator colors
-     --manila*                Manila-folder tan for the dossier cards
-     --desk-surface           Deep brown desk leather (unused but reserved)
-     --text-*                 Three tiers of text brightness
-     --gap                    Shared spacing unit
-   --------------------------------------------------------------------------- */
-
-.econ-page {
-  --midnight: #080c12;
-  --panel: #0d1117;
-  --panel-raised: #151b24;
-  --panel-surface: #1a2030;
-  --border: #1e2a38;
-  --border-bright: #2a3a4e;
-  --phosphor: #00d95f;
-  --phosphor-bright: #33ff88;
-  --phosphor-dim: rgba(0, 217, 95, 0.06);
-  --phosphor-glow: rgba(0, 217, 95, 0.25);
-  --amber: #f0a030;
-  --amber-glow: rgba(240, 160, 48, 0.12);
-  --tape-bg: #f5eed8;
-  --tape-text: #1a1408;
-  --tape-shadow: #d8ceb0;
-  --green-bar-a: #ffffff;
-  --green-bar-b: #e4f0e6;
-  --red: #ff4444;
-  --green: #00d95f;
-  --manila: #e8d8b8;
-  --manila-dark: #c8b898;
-  --desk-surface: #1c1410;
-  --text-primary: #d8e0ea;
-  --text-secondary: #6a7888;
-  --text-dim: #3a4858;
-  --gap: 1.5rem;
-
-  color: var(--text-primary);
-  font-family: "IBM Plex Sans Condensed", "Trebuchet MS", sans-serif;
-
-  /* Four-layer background simulating a dark trading-floor surface:
-       Layer 1 — vertical hairlines every 60 px in faint phosphor green,
-                 creating the vertical grid of an oscilloscope.
-       Layer 2 — horizontal hairlines at the same interval for the
-                 horizontal grid.
-       Layer 3 — a large radial ellipse of dark green light at the top
-                 center, as if a monitor is casting a soft glow downward.
-       Layer 4 — a vertical gradient from pure midnight to slightly
-                 lighter navy, giving the page depth from top to bottom. */
-  background:
-    repeating-linear-gradient(
-      90deg,
-      transparent 0, transparent 59px,
-      rgba(0, 217, 95, 0.018) 59px,
-      rgba(0, 217, 95, 0.018) 60px
-    ),
-    repeating-linear-gradient(
-      0deg,
-      transparent 0, transparent 59px,
-      rgba(0, 217, 95, 0.018) 59px,
-      rgba(0, 217, 95, 0.018) 60px
-    ),
-    radial-gradient(ellipse 1200px 600px at 50% 0, rgba(0, 60, 30, 0.25), transparent 65%),
-    linear-gradient(180deg, var(--midnight), #0a0e16 50%, #0c1018);
-}
-
-/* ---------------------------------------------------------------------------
-   CRT Scanline Overlay
-   ---------------------------------------------------------------------------
-   A fixed pseudo-element that paints faint horizontal scanlines across the
-   entire viewport, exactly like the horizontal electron-beam traces on an
-   old CRT monitor. It sits at z-index 9999 so it renders on top of every
-   element, but `pointer-events: none` ensures it never blocks clicks.
-   The lines are 2 px transparent / 2 px semi-black, repeating vertically. */
-
-.econ-page::before {
-  content: "";
-  position: fixed;
-  inset: 0;
-  pointer-events: none;
-  z-index: 9999;
-  background: repeating-linear-gradient(
-    0deg,
-    transparent 0, transparent 2px,
-    rgba(0, 0, 0, 0.04) 2px,
-    rgba(0, 0, 0, 0.04) 4px
-  );
-}
-
-/* Disable the shared ::after pseudo-element (used on other pages) so it
-   does not interfere with this page's own decorative layers. */
-.econ-page::after { display: none; }
-
-/* ---------------------------------------------------------------------------
-   Shared styles.css Overrides
-   ---------------------------------------------------------------------------
-   The global stylesheet applies decorative clip-paths, background panels,
-   drop-cap first-letters, and box-shadows to every page's main sections.
-   These rules neutralize all of that so the economics page can use its
-   own panel system without visual conflicts. */
-
-.econ-page main:not(.home-rooms) > section .container {
-  background: none;
-  box-shadow: none;
-  clip-path: none;
-  padding: 0;
-}
-
-/* Remove the decorative drop-cap styling that the shared stylesheet adds
-   to the first letter of every section's first paragraph. */
-.econ-page main:not(.home-rooms) > section .container p:first-of-type::first-letter {
-  float: none; font-size: inherit; line-height: inherit;
-  padding-right: 0; color: inherit; font-family: inherit;
-}
-
-/* Tighten the top padding on economics-specific sections so they sit
-   closer together than the default page sections. */
-.econ-page main:not(.home-rooms) > .econ-section {
-  padding: 1.4rem 0 0;
-}
-
-
-/* ---------------------------------------------------------------------------
-   Sidebar Layout (Two-Column Grid)
-   ---------------------------------------------------------------------------
-   The main content area uses a CSS Grid with a flexible left column for
-   the indicator board and desk panels, and a fixed 300 px right column
-   for the live-news sidebar. `align-items: stretch` ensures both columns
-   are always the same height. */
-
-.econ-layout {
-  display: grid;
-  grid-template-columns: 1fr 300px;
-  gap: 1.4rem;
-  align-items: stretch;
-  padding-top: 1.4rem;
-  padding-left: 0;
-  padding-right: 0;
-}
-
-/* The sidebar is a flex column so the news wire panel can fill all
-   remaining vertical space after its header. */
-.econ-sidebar {
-  display: flex;
-  flex-direction: column;
-  min-height: 0;
-  overflow: hidden;
-}
-
-/* Let the wire-feed panel inside the sidebar grow to fill available
-   height, making the news list scroll internally when it overflows. */
-.econ-sidebar .econ-panel--wire {
-  flex: 1;
-  display: flex;
-  flex-direction: column;
-  min-height: 0;
-}
-
-/* The actual scrollable news list inside the sidebar wire panel.
-   `overflow-y: auto` gives it a scrollbar only when content exceeds
-   the panel height, while `min-height: 0` allows flex shrinking. */
-.econ-sidebar .econ-news-list {
-  flex: 1;
-  overflow-y: auto;
-  min-height: 0;
-}
-
-
-/* ---------------------------------------------------------------------------
-   Keyframe Animations
-   ---------------------------------------------------------------------------
-   phosphorPulse — a slow fade between 70 % and 100 % opacity, used on the
-                   blinking green cursor in the terminal hero section. The
-                   `step-end` timing function (applied at usage site) makes
-                   it snap rather than ease, mimicking a real block cursor.
-
-   ledBlink      — a brief dip to 60 % opacity near the end of each cycle,
-                   simulating the flicker of an LED indicator light. */
-
-@keyframes phosphorPulse {
-  0%, 100% { opacity: 0.7; }
-  50%      { opacity: 1; }
-}
-
-@keyframes ledBlink {
-  0%, 90%, 100% { opacity: 1; }
-  95%           { opacity: 0.6; }
-}
-
-
-/* ===========================================================================
-   HERO SECTION — Terminal Window
-   ===========================================================================
-   The page hero is styled as a full-width macOS-style terminal window.
-   It has a chrome title bar with colored traffic-light dots, and a body
-   area that looks like a dark CRT screen displaying the page title in
-   bright phosphor-green text with a blinking cursor. */
-
-.econ-hero {
-  padding: 2rem 0 1rem;
-}
-
-.econ-hero .container {
-  padding-left: 0;
-  padding-right: 0;
-}
-
-/* The outer terminal frame: a bordered panel with a deep drop shadow
-   (60 px blur for depth, 16 px for closeness) and a subtle 1 px inset
-   highlight along the top edge to simulate a beveled glass edge. */
 .econ-terminal {
+  background: var(--bg-deep);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
   overflow: hidden;
-  border: 1px solid var(--border-bright);
-  background: var(--panel);
-  box-shadow:
-    0 20px 60px rgba(0, 0, 0, 0.6),      /* deep ambient shadow */
-    0 4px 16px rgba(0, 0, 0, 0.4),        /* tighter contact shadow */
-    inset 0 1px 0 rgba(255, 255, 255, 0.04); /* top-edge highlight */
 }
-
-/* Title bar — macOS-style window chrome with a dark gradient and a
-   crisp bottom border. The three colored dots sit inside this bar. */
 .econ-terminal-bar {
   display: flex;
   align-items: center;
-  gap: 7px;
-  height: 36px;
-  padding: 0 14px;
-  background: linear-gradient(180deg, #1e2430, #171c26);
-  border-bottom: 1px solid rgba(0, 0, 0, 0.5);
+  gap: var(--space-3);
+  background: var(--surface);
+  border-bottom: 1px solid var(--border);
+  padding: 8px var(--space-4);
 }
-
-/* Traffic-light dot base — all three dots share the same size and
-   forced circular border-radius (!important overrides any theme resets). */
 .econ-dot {
-  width: 11px;
-  height: 11px;
-  border-radius: 50% !important;
-}
-
-/* Close dot (red) — radial gradient places a specular highlight at
-   the upper-left, with an inset shadow for 3-D depth. */
-.econ-dot--close {
-  background: radial-gradient(circle at 35% 35%, #ff6b6b, #e74c3c);
-  box-shadow: inset 0 -1px 2px rgba(0, 0, 0, 0.2);
-}
-
-/* Minimize dot (amber/yellow) — same specular technique as close. */
-.econ-dot--min {
-  background: radial-gradient(circle at 35% 35%, #ffd93d, #f0a030);
-  box-shadow: inset 0 -1px 2px rgba(0, 0, 0, 0.2);
-}
-
-/* Maximize dot (green) — matches the phosphor accent of the page. */
-.econ-dot--max {
-  background: radial-gradient(circle at 35% 35%, #6bff8a, #2ecc71);
-  box-shadow: inset 0 -1px 2px rgba(0, 0, 0, 0.2);
-}
-
-/* Terminal title text centered in the title bar using auto margins.
-   Small monospace uppercase text evokes the look of a real terminal
-   window title (e.g., "bash — 80x24"). */
-.econ-terminal-title {
-  margin-left: auto;
-  margin-right: auto;
-  font-family: "IBM Plex Mono", monospace;
-  font-size: 11px;
-  font-weight: 500;
-  color: var(--text-secondary);
-  letter-spacing: 1.5px;
-  text-transform: uppercase;
-}
-
-/* Terminal body — the CRT "screen" area where the title and subtitle
-   are displayed. Its background is three stacked layers:
-     Layer 1 — a radial vignette that darkens the corners, imitating
-               the way old CRT glass curves light away from the edges.
-     Layer 2 — a tiny repeating dot pattern (1 px phosphor dots on a
-               4 px grid) that mimics the physical dot-matrix of a CRT.
-     Layer 3 — a dark vertical gradient for the base screen color. */
-.econ-terminal-body {
-  position: relative;
-  padding: 2rem 2rem 2.2rem;
-  background:
-    radial-gradient(ellipse 90% 80% at 50% 50%, transparent 50%, rgba(0, 0, 0, 0.25)),
-    radial-gradient(circle, rgba(0, 217, 95, 0.015) 1px, transparent 1px),
-    linear-gradient(180deg, #0a1018, #080c14 50%, #060a10);
-  background-size: auto, 4px 4px, auto;
-}
-
-/* Blinking green block cursor — an ::after pseudo-element positioned in
-   the bottom-right corner of the terminal body. The `step-end` timing
-   function on phosphorPulse makes it snap on/off like a real cursor. */
-.econ-terminal-body::after {
-  content: "";
-  position: absolute;
-  bottom: 2rem;
-  right: 2rem;
   width: 10px;
-  height: 18px;
-  background: var(--phosphor);
-  opacity: 0.6;
-  animation: phosphorPulse 1.2s step-end infinite;
+  height: 10px;
+  border-radius: 50%;
 }
-
-/* Kicker line above the main heading — small monospace green text that
-   reads like a terminal prompt or status label (e.g., "SECTION: ECONOMICS"). */
-.econ-kicker {
-  margin: 0;
-  font-family: "IBM Plex Mono", monospace;
-  font-size: 12px;
-  font-weight: 400;
-  letter-spacing: 2px;
-  color: var(--phosphor);
+.econ-dot--close { background: var(--danger); }
+.econ-dot--min   { background: var(--warning); }
+.econ-dot--max   { background: var(--success); }
+.econ-terminal-title {
+  font-family: var(--font-mono);
+  font-size: var(--fs-tiny);
+  color: var(--text-3);
+  margin-left: auto;
+  letter-spacing: 0.06em;
   text-transform: uppercase;
-  opacity: 0.65;
 }
-
-/* Main heading inside the terminal body — large serif type in bright
-   phosphor green. The text-shadow stack creates the CRT glow effect:
-     Layer 1 — 40 px green bloom (the main glow halo)
-     Layer 2 — 80 px wider, softer green ambient glow
-     Layer 3 — 1 px red offset to the left (chromatic aberration)
-     Layer 4 — 1 px blue offset to the right (chromatic aberration)
-   Together these simulate the look of green text on a CRT with
-   slight color-fringing at the edges. */
+.econ-terminal-body {
+  padding: var(--space-5);
+  border-left: 3px solid var(--bitcoin);
+}
 .econ-terminal-body h1 {
-  margin: 0.6rem 0 0.5rem;
-  font-family: "Libre Caslon Display", "Georgia", serif;
-  font-size: clamp(2.4rem, 5.5vw, 4rem);
-  font-weight: 400;
-  color: var(--phosphor-bright);
-  line-height: 1.05;
-  letter-spacing: 2px;
-  text-shadow:
-    0 0 40px rgba(0, 217, 95, 0.35),
-    0 0 80px rgba(0, 217, 95, 0.12),
-    -1px 0 rgba(255, 80, 80, 0.08),
-    1px 0 rgba(80, 160, 255, 0.08);
+  font-family: var(--font-mono);
+  font-size: var(--fs-display);
+  font-weight: 600;
+  color: var(--text);
+  letter-spacing: -0.02em;
+  margin: 0 0 var(--space-3);
+}
+.econ-terminal-body h1::before {
+  content: '> ';
+  color: var(--bitcoin);
 }
 
-/* Subtitle text beneath the heading — muted light-blue at 70 % opacity
-   to stay subordinate to the bright phosphor heading above. */
-.econ-subtitle {
-  margin: 0;
-  max-width: 54ch;
-  font-size: 15px;
-  color: rgba(200, 210, 225, 0.7);
-  line-height: 1.5;
-}
-
-/* Source-link strip — a row of small pill-shaped links (FRED, BLS, etc.)
-   displayed beneath the subtitle. Uses flex-wrap so the pills flow to
-   the next line on narrower screens. */
 .econ-source-strip {
-  margin-top: 1.2rem;
   display: flex;
   flex-wrap: wrap;
-  gap: 0.4rem 0.6rem;
+  gap: var(--space-3);
   align-items: center;
+  font-size: var(--fs-small);
 }
-
-/* Individual source pills — both <a> links and <span> labels share
-   the same base styling: a bordered monospace uppercase chip with a
-   faint phosphor-green background tint. */
-.econ-source-strip a,
-.econ-source-strip span {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  min-height: 28px;
-  padding: 4px 12px;
-  border: 1px solid var(--border-bright);
-  background: rgba(0, 217, 95, 0.04);
-  font-family: "IBM Plex Mono", monospace;
-  font-size: 11px;
-  font-weight: 500;
-  color: var(--phosphor);
-  letter-spacing: 0.8px;
-  text-transform: uppercase;
-  text-decoration: none;
-  transition: border-color 0.2s, background 0.2s;
-}
-
-/* Hover state for source links — the border brightens to full phosphor
-   green and the background tint doubles, drawing the eye. */
-.econ-source-strip a:hover {
-  border-color: var(--phosphor);
-  background: rgba(0, 217, 95, 0.08);
-  color: var(--phosphor-bright);
-}
-
-/* Non-interactive label spans are dimmer (secondary text color, no
-   background tint) to visually separate them from clickable links. */
-.econ-source-strip span {
-  color: var(--text-secondary);
-  border-color: var(--border);
-  background: none;
-}
-
-
-/* ===========================================================================
-   PANEL SYSTEM — Shared Base Styles
-   ===========================================================================
-   Every content block on the page (indicator board, news wire, research
-   desk) extends from this base `.econ-panel` class. It provides a dark
-   background, a subtle border, a heavy drop shadow for the "floating card"
-   look, and a 1 px inset top highlight for a beveled-glass edge. */
-
-.econ-panel {
-  position: relative;
-  padding: 1.2rem;
-  background: var(--panel);
+.econ-source-strip a {
+  color: var(--text-2);
+  font-family: var(--font-mono);
+  padding: 4px 10px;
   border: 1px solid var(--border);
-  box-shadow:
-    0 16px 40px rgba(0, 0, 0, 0.5),       /* deep ambient shadow */
-    inset 0 1px 0 rgba(255, 255, 255, 0.03); /* top-edge bevel */
+  border-radius: var(--radius);
+  background: var(--surface-2);
+}
+.econ-source-strip a:hover {
+  color: var(--bitcoin);
+  border-color: var(--bitcoin);
+}
+.econ-source-strip span {
+  color: var(--text-mute);
+  font-family: var(--font-mono);
+  font-size: var(--fs-tiny);
 }
 
-/* Panel header row — flexbox baseline alignment places the heading and
-   its companion status label on the same text baseline, with the status
-   pushed to the far right via `justify-content: space-between`. */
+
+/* ── LAYOUT — indicators + news sidebar ──────────────────────────────── */
+.econ-layout {
+  display: grid;
+  grid-template-columns: 2.5fr 1fr;
+  gap: var(--space-4);
+  margin: var(--space-5) auto;
+}
+
+
+/* ── PANEL ───────────────────────────────────────────────────────────── */
+.econ-panel {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: var(--space-5);
+  display: flex;
+  flex-direction: column;
+}
 .econ-panel-head {
   display: flex;
-  align-items: baseline;
   justify-content: space-between;
-  gap: 0.8rem;
-  margin-bottom: 0.8rem;
+  align-items: baseline;
+  margin-bottom: var(--space-4);
+  padding-bottom: var(--space-3);
+  border-bottom: 1px solid var(--border-soft);
+  flex-wrap: wrap;
+  gap: var(--space-2);
 }
-
-/* Panel heading — serif type in phosphor green with a soft green glow.
-   Uses clamp() for fluid sizing between small and large viewports. */
 .econ-panel h2 {
-  margin: 0;
-  font-family: "Libre Caslon Display", "Georgia", serif;
-  font-size: clamp(1.1rem, 2.2vw, 1.5rem);
-  font-weight: 400;
-  color: var(--phosphor);
-  letter-spacing: 1px;
-  text-shadow: 0 0 20px rgba(0, 217, 95, 0.2);
-}
-
-/* Status label — tiny monospace text (e.g., "LIVE", "UPDATED 2 MIN AGO")
-   used beside panel headings as a secondary descriptor. */
-.econ-status {
-  margin: 0;
-  font-family: "IBM Plex Mono", monospace;
-  font-size: 11px;
-  font-weight: 400;
+  font-size: var(--fs-h3);
   text-transform: uppercase;
-  letter-spacing: 0.8px;
-  color: var(--text-secondary);
+  letter-spacing: 0.08em;
+  color: var(--text-3);
+  font-weight: 500;
+  margin: 0;
+}
+.econ-status {
+  font-family: var(--font-mono);
+  font-size: var(--fs-tiny);
+  color: var(--text-mute);
 }
 
 
-/* ===========================================================================
-   THE BIG BOARD — Economic Indicator LED Panels
-   ===========================================================================
-   This section displays key economic indicators (CPI, unemployment, GDP,
-   etc.) as a grid of individual LED display modules, like the tiled
-   readout panels on a trading-floor "big board." Each card mimics a
-   small CRT screen with vignette corners, scanlines, and a color-coded
-   top border that changes based on the indicator's direction. */
-
-/* Board panel variant — adds a faint green radial bloom at the top to
-   simulate ambient light spilling from behind the display hardware. */
-.econ-panel--board {
-  padding: 1.4rem 1.2rem;
-  background:
-    radial-gradient(ellipse 70% 40% at 50% 0%, rgba(0, 217, 95, 0.04), transparent 60%),
-    var(--panel);
-  border-color: var(--border-bright);
-}
-
-/* LED indicator strip — a thin phosphor-green line between the panel
-   heading and the indicator grid, glowing softly. It fades to
-   transparent at both ends to avoid hard edges, and dual box-shadows
-   (8 px tight + 24 px wide) create a neon-tube halo effect. */
+/* ── LED STRIP ───────────────────────────────────────────────────────── */
 .econ-led-strip {
-  height: 3px;
-  margin: 0.2rem 0 1.1rem;
-  background: linear-gradient(90deg,
-    transparent,
-    var(--phosphor) 10%,
-    var(--phosphor) 50%,
-    var(--phosphor) 90%,
-    transparent
-  );
-  box-shadow:
-    0 0 8px var(--phosphor-glow),
-    0 0 24px rgba(0, 217, 95, 0.08);
-  opacity: 0.6;
+  display: none;     /* not needed in this aesthetic */
 }
 
-/* Five-column grid for the indicator cards on wide screens. Each column
-   uses `minmax(0, 1fr)` so they compress equally without overflow. */
+
+/* ── INDICATOR GRID ──────────────────────────────────────────────────── */
 .econ-indicator-grid {
   display: grid;
-  grid-template-columns: repeat(5, minmax(0, 1fr));
-  gap: 10px;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: var(--space-3);
 }
-
-/* Individual indicator card — styled as a miniature LED display module.
-   The pure-black background, inset green glow, and 3 px phosphor-green
-   top border make it look like a self-contained screen embedded in the
-   board. The card casts a heavy downward shadow to float above the panel. */
 .econ-indicator-card {
-  position: relative;
-  padding: 14px 14px 12px;
-  overflow: hidden;
-  background: #000000;
-  border: 1px solid #1a2430;
-  border-top: 3px solid var(--phosphor);
-  box-shadow:
-    inset 0 0 30px rgba(0, 217, 95, 0.03),  /* faint internal green glow */
-    0 4px 12px rgba(0, 0, 0, 0.4);           /* external drop shadow */
-  transition: box-shadow 0.25s, border-color 0.25s;
-}
-
-/* CRT vignette overlay on each indicator card — a radial gradient that
-   is transparent in the center and darkens toward the edges, replicating
-   the curved-glass light falloff of a CRT monitor. Sits at z-index 1
-   above card content but below the scanlines. */
-.econ-indicator-card::before {
-  content: "";
-  position: absolute;
-  inset: 0;
-  pointer-events: none;
-  background: radial-gradient(ellipse at center, transparent 55%, rgba(0, 0, 0, 0.35));
-  z-index: 1;
-}
-
-/* Scanline overlay on each indicator card — identical technique to the
-   full-page scanlines but with slightly stronger opacity (0.12 vs 0.04)
-   because these cards are small and need visible texture. Sits at z-index 2
-   so it renders above the vignette. */
-.econ-indicator-card::after {
-  content: "";
-  position: absolute;
-  inset: 0;
-  pointer-events: none;
-  z-index: 2;
-  background: repeating-linear-gradient(
-    0deg,
-    transparent 0, transparent 3px,
-    rgba(0, 0, 0, 0.12) 3px,
-    rgba(0, 0, 0, 0.12) 4px
-  );
-}
-
-/* Hover state — the internal glow intensifies, a green halo appears
-   around the card, the drop shadow deepens, and the border brightens
-   to phosphor green to draw attention to the hovered indicator. */
-.econ-indicator-card:hover {
-  box-shadow:
-    inset 0 0 40px rgba(0, 217, 95, 0.06),
-    0 0 20px rgba(0, 217, 95, 0.08),
-    0 6px 18px rgba(0, 0, 0, 0.5);
-  border-color: rgba(0, 217, 95, 0.5);
-}
-
-/* Indicator name label — condensed sans-serif in near-white for high
-   readability against the black card background. */
-.econ-indicator-card h3 {
-  margin: 0;
-  font-family: "IBM Plex Sans Condensed", sans-serif;
-  font-size: 13px;
-  font-weight: 500;
-  color: rgba(220, 230, 240, 0.9);
-  line-height: 1.3;
-}
-
-/* Series code beneath the indicator name (e.g., "FRED: CPIAUCSL") —
-   very small, dim phosphor green monospace text. Purely informational
-   metadata that identifies the data source series. */
-.econ-series-code {
-  margin: 3px 0 0;
-  font-family: "IBM Plex Mono", monospace;
-  font-size: 10px;
-  font-weight: 400;
-  color: rgba(0, 217, 95, 0.4);
-  letter-spacing: 0.8px;
-  text-transform: uppercase;
-}
-
-/* The big numeric value readout — large bold monospace in phosphor green
-   with a soft glow shadow, like a seven-segment LED display. This is
-   the most visually prominent element on each card. */
-.econ-indicator-value {
-  margin: 10px 0 4px;
-  font-family: "IBM Plex Mono", monospace;
-  font-size: 22px;
-  font-weight: 700;
-  color: var(--phosphor);
-  line-height: 1.1;
-  text-shadow: 0 0 12px var(--phosphor-glow);
-}
-
-/* Meta line below the value (e.g., date, units) — tiny uppercase
-   monospace in muted secondary color, providing context without
-   competing with the value readout above. */
-.econ-indicator-meta {
-  margin: 0;
-  font-family: "IBM Plex Mono", monospace;
-  font-size: 10px;
-  font-weight: 400;
-  color: var(--text-secondary);
-  text-transform: uppercase;
-  letter-spacing: 0.4px;
-}
-
-/* ---------------------------------------------------------------------------
-   Indicator State Classes (Color-Coded Up / Down / Error)
-   ---------------------------------------------------------------------------
-   Each indicator card receives a state class based on whether the latest
-   data point moved up, down, or failed to load. These classes swap the
-   top-border color and the value text color + glow to give an instant
-   visual signal — green for up, red for down, gray for error. */
-
-/* `.is-up` — green top border (default) with a stronger internal green
-   glow. The value text gets a brighter green shadow. */
-.econ-indicator-card.is-up {
-  box-shadow:
-    inset 0 0 30px rgba(0, 217, 95, 0.06),
-    0 4px 12px rgba(0, 0, 0, 0.4);
-}
-.econ-indicator-card.is-up .econ-indicator-value {
-  color: var(--green);
-  text-shadow: 0 0 16px rgba(0, 217, 95, 0.35);
-}
-
-/* `.is-down` — the top border flips to red, the inset glow turns red,
-   and the value text switches to red with a red halo, clearly signaling
-   that this indicator has declined. */
-.econ-indicator-card.is-down {
-  border-top-color: var(--red);
-  box-shadow:
-    inset 0 0 30px rgba(255, 68, 68, 0.05),
-    0 4px 12px rgba(0, 0, 0, 0.4);
-}
-.econ-indicator-card.is-down .econ-indicator-value {
-  color: var(--red);
-  text-shadow: 0 0 16px rgba(255, 68, 68, 0.3);
-}
-
-/* `.is-error` — the value goes dim gray with no glow, and the top border
-   drops to a dark neutral, indicating the data could not be fetched. */
-.econ-indicator-card.is-error .econ-indicator-value {
-  color: #555;
-  text-shadow: none;
-}
-.econ-indicator-card.is-error {
-  border-top-color: #333;
-}
-
-/* Wrapping link inside each indicator card — makes the entire card
-   clickable without changing its visual appearance. */
-.econ-indicator-link {
-  display: block;
-  color: inherit;
-  text-decoration: none;
-}
-
-/* Chart emoji positioned in the bottom-right corner of the card as a
-   subtle visual affordance that the card is clickable. Starts at half
-   opacity and brightens on hover. */
-.econ-indicator-link::after {
-  content: "\01F4C8";
-  position: absolute;
-  bottom: 8px;
-  right: 10px;
-  font-size: 14px;
-  opacity: 0.5;
-  transition: opacity 0.2s;
-}
-
-.econ-indicator-card:hover .econ-indicator-link::after {
-  opacity: 1;
-}
-
-/* ---------------------------------------------------------------------------
-   Section Divider
-   ---------------------------------------------------------------------------
-   A glowing phosphor-green horizontal rule used between major sections.
-   The dual box-shadow (10 px tight + 30 px wide) creates a soft neon-tube
-   glow, while the low opacity (0.3) keeps it subtle. */
-
-.econ-divider {
-  height: 1px;
-  margin: 0.6rem 0 0;
-  border: none;
-  background: var(--phosphor);
-  box-shadow: 0 0 10px var(--phosphor-glow), 0 0 30px rgba(0, 217, 95, 0.06);
-  opacity: 0.3;
-}
-
-
-/* ===========================================================================
-   THE WIRE — Bloomberg-Style News Feed Panel
-   ===========================================================================
-   A terminal-window panel that displays a live-updating list of article
-   links from Mises.org. It has its own chrome bar (with an amber "LIVE FEED"
-   label), scanline overlay, and scrollable news list styled like terminal
-   output with green-on-black text. */
-
-/* Wire panel base — pure black background with no padding (the internal
-   elements handle their own spacing). The chrome bar and scanlines are
-   generated via ::before and ::after pseudo-elements. */
-.econ-panel--wire {
-  position: relative;
-  overflow: hidden;
-  padding: 0;
-  border: 1px solid var(--border-bright);
-  background: #000;
-  box-shadow:
-    0 16px 40px rgba(0, 0, 0, 0.6),
-    inset 0 1px 0 rgba(255, 255, 255, 0.04);
-}
-
-/* Chrome bar — a dark gradient strip at the top of the wire panel,
-   displaying the feed source label in amber monospace text. This uses
-   the ::before pseudo-element so no extra HTML is needed. */
-.econ-panel--wire::before {
-  content: "MISES.ORG — LIVE FEED";
+  background: var(--surface-2);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: var(--space-3) var(--space-4);
   display: flex;
-  align-items: center;
-  height: 28px;
-  padding: 0 12px;
-  background: linear-gradient(180deg, #1e2430, #171c26);
-  border-bottom: 1px solid rgba(0, 0, 0, 0.5);
-  font-family: "IBM Plex Mono", monospace;
-  font-size: 10px;
+  flex-direction: column;
+  gap: 4px;
+  transition: border-color 120ms ease;
+}
+.econ-indicator-card:hover { border-color: var(--rule); }
+
+.econ-indicator-card a,
+.econ-indicator-card .econ-indicator-link {
+  display: contents;
+  color: inherit;
+  border: none;
+}
+.econ-indicator-card h3,
+.econ-indicator-card .econ-name {
+  font-size: var(--fs-tiny);
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--text-3);
   font-weight: 500;
-  color: var(--amber);
-  letter-spacing: 1.5px;
-  text-transform: uppercase;
+  margin: 0;
 }
-
-/* Scanline overlay for the wire panel — starts 28 px from the top so
-   the lines only cover the content area, not the chrome bar. Uses the
-   same repeating-gradient scanline technique as the indicator cards. */
-.econ-panel--wire::after {
-  content: "";
-  position: absolute;
-  inset: 28px 0 0;
-  pointer-events: none;
-  z-index: 2;
-  background: repeating-linear-gradient(
-    0deg,
-    transparent 0, transparent 3px,
-    rgba(0, 0, 0, 0.08) 3px,
-    rgba(0, 0, 0, 0.08) 4px
-  );
+.econ-indicator-card .econ-series-code,
+.econ-indicator-card .series-code {
+  font-family: var(--font-mono);
+  font-size: var(--fs-tiny);
+  color: var(--text-mute);
+  margin: 0;
 }
-
-/* Wire panel header — sits below the chrome bar with its own padding
-   and a bottom border to separate it from the scrollable news list. */
-.econ-panel--wire .econ-panel-head {
-  position: relative;
-  padding: 12px 14px 8px;
-  margin-bottom: 0;
-  border-bottom: 1px solid var(--border);
+.econ-indicator-card .econ-indicator-value,
+.econ-indicator-card .econ-value,
+.econ-indicator-card .value {
+  font-family: var(--font-mono);
+  font-size: var(--fs-mono-lg);
+  color: var(--text);
+  font-weight: 500;
+  margin: 4px 0 0;
 }
-
-/* Wire heading — switches from the default serif to bold monospace
-   in amber with a warm glow, matching the Bloomberg-terminal aesthetic
-   where section labels are often in amber/orange. */
-.econ-panel--wire h2 {
-  font-family: "IBM Plex Mono", monospace;
-  font-size: 14px;
-  font-weight: 700;
-  color: var(--amber);
-  letter-spacing: 2px;
-  text-transform: uppercase;
-  text-shadow: 0 0 12px var(--amber-glow);
+.econ-indicator-card .econ-indicator-meta,
+.econ-indicator-card .econ-meta,
+.econ-indicator-card .econ-date,
+.econ-indicator-card .econ-unit {
+  font-size: var(--fs-tiny);
+  color: var(--text-3);
+  margin: 0;
 }
-
-/* Wire status label — even dimmer than the default panel status to
-   stay unobtrusive against the black background. */
-.econ-panel--wire .econ-status {
-  color: var(--text-dim);
-  font-size: 10px;
+.econ-indicator-card .econ-delta {
+  font-family: var(--font-mono);
+  font-size: var(--fs-small);
+  font-weight: 500;
 }
+.econ-indicator-card .up    { color: var(--success); }
+.econ-indicator-card .down  { color: var(--danger); }
+.econ-indicator-card .flat  { color: var(--text-3); }
 
-/* News list — a plain unstyled list that acts as the scrollable
-   terminal-output area for article links. */
+
+/* ── THE WIRE — Mises news sidebar ───────────────────────────────────── */
 .econ-news-list {
   list-style: none;
   margin: 0;
   padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-2);
+  max-height: 720px;
+  overflow-y: auto;
 }
-
-/* Each news item — a grid row with minimal vertical padding and a
-   barely-visible bottom border to separate entries. The hover state
-   adds a faint phosphor-green tint, like highlighting a line in a
-   terminal with reverse video. */
-.econ-panel--wire .econ-news-list li {
-  display: grid;
-  gap: 2px;
-  padding: 10px 14px;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.04);
-  transition: background-color 0.15s;
+.econ-news-list li {
+  background: var(--surface-2);
+  border: 1px solid var(--border);
+  border-left: 2px solid var(--bitcoin);
+  border-radius: var(--radius);
+  padding: var(--space-3);
 }
-
-.econ-panel--wire .econ-news-list li:last-child { border-bottom: none; }
-
-.econ-panel--wire .econ-news-list li:hover {
-  background: rgba(0, 217, 95, 0.04);
-}
-
-/* News headline links — phosphor-green condensed sans-serif with a
-   soft green glow, styled to look like terminal hyperlinks. */
-.econ-panel--wire .econ-news-list a {
-  font-family: "IBM Plex Sans Condensed", sans-serif;
-  font-size: 14px;
-  font-weight: 500;
-  color: var(--phosphor);
+.econ-news-list a {
+  font-size: var(--fs-small);
+  color: var(--text);
+  display: block;
   line-height: 1.4;
-  text-decoration: none;
-  text-shadow: 0 0 8px rgba(0, 217, 95, 0.15);
+  margin-bottom: 4px;
 }
-
-/* Hover state brightens the link and intensifies the glow. */
-.econ-panel--wire .econ-news-list a:hover {
-  color: var(--phosphor-bright);
-  text-shadow: 0 0 12px rgba(0, 217, 95, 0.3);
-}
-
-/* Timestamp / source label beneath each headline — tiny amber monospace
-   text at half opacity, providing metadata without visual clutter. */
-.econ-panel--wire .econ-news-list span {
-  font-family: "IBM Plex Mono", monospace;
-  font-size: 10px;
-  text-transform: uppercase;
-  letter-spacing: 0.6px;
-  color: var(--amber);
-  opacity: 0.5;
+.econ-news-list a:hover { color: var(--accent); }
+.econ-news-list time,
+.econ-news-list span {
+  font-family: var(--font-mono);
+  font-size: var(--fs-tiny);
+  color: var(--text-mute);
 }
 
 
-/* ===========================================================================
-   RESEARCH DESK — Manila Dossier Cards
-   ===========================================================================
-   The reading-list section is styled as a researcher's desk: a dark
-   wood-grain surface holding manila-folder dossiers. Each dossier is a
-   card with a physical tab sticking up above it (like a real file folder
-   tab), containing a categorized reading list. */
-
-/* Desk panel variant — the background uses a subtle diagonal grain
-   texture (repeating 85-degree hairlines) over a dark gradient,
-   simulating the surface of a mahogany or walnut desk. */
-.econ-panel--desk {
-  padding: 1.4rem;
-  background:
-    repeating-linear-gradient(
-      85deg,
-      transparent 0, transparent 3px,
-      rgba(255, 255, 255, 0.008) 3px,
-      rgba(255, 255, 255, 0.008) 4px
-    ),
-    linear-gradient(180deg, #161c24, #0f1520 50%, #0c1018);
-  border-color: var(--border);
+/* ── RESEARCH DESK ───────────────────────────────────────────────────── */
+.econ-section { margin: var(--space-5) 0; }
+.econ-divider {
+  border: none;
+  border-top: 1px solid var(--border);
+  margin: 0;
 }
 
-/* Desk heading — uses amber instead of green to differentiate this
-   section visually and evoke warm desk-lamp lighting. */
-.econ-panel--desk h2 {
-  color: var(--amber);
-  text-shadow: 0 0 20px var(--amber-glow);
-}
+.econ-panel--desk { margin: var(--space-5) auto; }
 
-/* Three-column grid for the dossier cards on desktop. Each column
-   holds one category (e.g., "Monetary Theory", "Business Cycles"). */
 .econ-reading-columns {
   display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
-  gap: 14px;
+  grid-template-columns: repeat(3, 1fr);
+  gap: var(--space-4);
 }
-
-/* Dossier card base — a raised dark panel with a top margin of 28 px
-   to make room for the folder tab that sticks up above the card. The
-   inset top highlight and drop shadow give it physical depth. */
 .econ-dossier {
-  position: relative;
-  margin-top: 28px;
-  padding: 16px 14px 14px;
-  background: var(--panel-raised);
+  background: var(--surface-2);
   border: 1px solid var(--border);
-  box-shadow:
-    inset 0 1px 0 rgba(255, 255, 255, 0.03),  /* top-edge highlight */
-    0 4px 12px rgba(0, 0, 0, 0.3);              /* floating shadow */
+  border-radius: var(--radius);
+  padding: var(--space-4);
 }
-
-/* Manila folder tab — absolutely positioned above the card, this label
-   looks like the protruding tab of a physical manila file folder. It
-   uses a tan-to-darker-tan gradient background, a matching border
-   (open at the bottom so it merges with the card), and rounded top
-   corners. The dark brown text on the light tan background completes
-   the skeuomorphic effect. */
 .econ-dossier h3 {
-  position: absolute;
-  top: -22px;
-  left: 10px;
-  margin: 0;
-  padding: 4px 14px 2px;
-  background: linear-gradient(180deg, var(--manila), var(--manila-dark));
-  border: 1px solid var(--manila-dark);
-  border-bottom: none;
-  border-radius: 4px 4px 0 0 !important;
-  font-family: "IBM Plex Mono", monospace;
-  font-size: 10px;
-  font-weight: 700;
-  color: #3a2a18;
+  font-size: var(--fs-tiny);
   text-transform: uppercase;
-  letter-spacing: 1.2px;
-  box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.15);
+  letter-spacing: 0.08em;
+  color: var(--bitcoin);
+  font-weight: 500;
+  margin: 0 0 var(--space-3);
+  padding-bottom: var(--space-2);
+  border-bottom: 1px solid var(--border-soft);
 }
-
-/* Folder tab specular highlight — a 1 px white line along the top inside
-   edge of the tab, simulating light catching the top of the folder. */
-.econ-dossier h3::after {
-  content: "";
-  position: absolute;
-  top: 1px;
-  left: 1px;
-  right: 1px;
-  height: 1px;
-  background: rgba(255, 255, 255, 0.3);
-}
-
-/* Dossier list — tightened left padding for a compact look inside the
-   narrow card columns. Text uses secondary (dim) color. */
 .econ-dossier ul {
+  list-style: none;
   margin: 0;
-  padding-left: 1rem;
-  color: var(--text-secondary);
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-2);
 }
-
-/* Each reading-list entry — monospace text with generous line-height
-   for readability, spaced with bottom margin. */
 .econ-dossier li {
-  margin: 0 0 8px;
-  font-family: "IBM Plex Mono", monospace;
-  font-size: 12px;
-  line-height: 1.5;
+  font-size: var(--fs-small);
+  line-height: 1.4;
+  color: var(--text-2);
 }
-
-/* List-item bullets colored amber to tie visually to the desk heading. */
-.econ-dossier li::marker {
-  color: var(--amber);
+.econ-dossier a {
+  color: var(--text);
+  border-bottom: 1px solid transparent;
 }
-
-/* Book/article titles inside list items — bright phosphor green and
-   displayed as a block so they sit on their own line above the metadata. */
-.econ-dossier li strong {
+.econ-dossier a:hover {
+  color: var(--accent);
+  border-bottom-color: var(--accent);
+}
+.econ-dossier strong {
   display: block;
-  font-size: 13px;
-  color: var(--phosphor-bright);
-  letter-spacing: 0.3px;
-}
-
-/* Dossier links — inherit color from parent, no underline by default,
-   with a smooth color transition on hover. */
-.econ-dossier li a {
   color: inherit;
-  text-decoration: none;
-  transition: color 0.2s;
+  font-weight: 500;
 }
-
-.econ-dossier li a {
-  display: block;
-}
-
-/* When a link wraps the title <strong>, display it inline so the book
-   emoji and title flow together on one line. */
-.econ-dossier li a strong {
-  display: inline;
-}
-
-/* Prepend a book emoji before each linked reading-list entry to serve
-   as an icon indicating it is an external resource. */
-.econ-dossier li a::before {
-  content: "\01F4D6 ";
-}
-
-/* Hover state for dossier links — brighten to full white and add an
-   underline for clear affordance. */
-.econ-dossier li a:hover {
-  color: #fff;
-  text-decoration: underline;
-}
-
-/* Book metadata line (author, year) — small amber text beneath the
-   title, slightly transparent to stay subordinate. */
 .econ-book-meta {
   display: block;
+  font-family: var(--font-mono);
+  font-size: var(--fs-tiny);
+  color: var(--text-mute);
   margin-top: 2px;
-  font-size: 11px;
-  color: var(--amber);
-  opacity: 0.8;
-  letter-spacing: 0.2px;
 }
 
 
-/* ===========================================================================
-   FOOTER
-   ===========================================================================
-   A minimal footer with a top border and no background, keeping it
-   visually quiet. Uses monospace type and dim text to match the terminal
-   aesthetic. */
-
-.econ-page footer {
-  margin-top: 2.5rem;
-  border-top: 1px solid var(--border);
-  background: none;
-}
-
-.econ-page footer .container {
-  color: var(--text-dim);
-  font-family: "IBM Plex Mono", monospace;
-  font-size: 11px;
-}
-
-
-/* ===========================================================================
-   RESPONSIVE BREAKPOINTS
-   ===========================================================================
-   The layout adapts across four tiers:
-     1081 px+  — Full desktop (5-column indicator grid, 2-column layout)
-     1080 px   — Tablet (single-column layout, 3-column indicator grid)
-      760 px   — Mobile (2-column indicators, single-column dossiers)
-      440 px   — Small mobile (tighter padding, smaller window chrome)
-   ========================================================================== */
-
-/* ---------------------------------------------------------------------------
-   Tablet (max-width: 1080px)
-   ---------------------------------------------------------------------------
-   The sidebar collapses below the main content into a single-column stack.
-   The indicator grid drops from 5 to 3 columns so the cards stay readable
-   at this width. Terminal body padding is slightly reduced. */
-
+/* ── RESPONSIVE ──────────────────────────────────────────────────────── */
 @media (max-width: 1080px) {
-  .econ-layout {
-    grid-template-columns: 1fr;
-    grid-template-rows: auto;
-  }
-
-  .econ-sidebar .econ-panel--wire {
-    flex: none;
-  }
-
-  .econ-indicator-grid {
-    grid-template-columns: repeat(3, minmax(0, 1fr));
-  }
-
-  .econ-terminal-body {
-    padding: 1.6rem 1.6rem 1.8rem;
-  }
+  .econ-layout { grid-template-columns: 1fr; }
+  .econ-reading-columns { grid-template-columns: repeat(2, 1fr); }
 }
-
-/* ---------------------------------------------------------------------------
-   Mobile (max-width: 760px)
-   ---------------------------------------------------------------------------
-   Terminal padding tightens further. The blinking cursor is hidden because
-   it would overlap content at narrow widths. Subtitle and source pills
-   shrink. The indicator grid drops to 2 columns. The reading-list dossiers
-   stack into a single column so each card gets the full viewport width. */
-
 @media (max-width: 760px) {
-  .econ-terminal-body {
-    padding: 1.2rem 1rem 1.4rem;
-  }
-
-  .econ-terminal-body h1 {
-    letter-spacing: 1px;
-  }
-
-  /* Hide the blinking cursor on mobile to prevent overlap with content */
-  .econ-terminal-body::after {
-    display: none;
-  }
-
-  .econ-subtitle { font-size: 13px; }
-  .econ-source-strip { gap: 6px; }
-
-  .econ-indicator-grid {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-  }
-
-  .econ-reading-columns {
-    grid-template-columns: 1fr;
-  }
-
-}
-
-/* ---------------------------------------------------------------------------
-   Small Mobile (max-width: 440px)
-   ---------------------------------------------------------------------------
-   The indicator grid stays at 2 columns (already set at 760 px). Panel
-   headers switch from flex to grid for better stacking of long titles.
-   The terminal title bar and traffic-light dots shrink to save vertical
-   space. Terminal body padding is at its smallest. Dossier top margin is
-   reduced since the folder tabs are smaller at this scale. */
-
-@media (max-width: 440px) {
-  .econ-indicator-grid {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-  }
-
-  .econ-panel-head {
-    display: grid;
-    gap: 0.3rem;
-  }
-
-  .econ-terminal-bar {
-    height: 30px;
-    padding: 0 10px;
-  }
-
-  .econ-dot { width: 9px; height: 9px; }
-
-  .econ-terminal-body {
-    padding: 1rem 0.8rem 1.2rem;
-  }
-
-  .econ-dossier {
-    margin-top: 24px;
-  }
-
+  .econ-terminal-body h1 { font-size: var(--fs-h1); }
+  .econ-reading-columns { grid-template-columns: 1fr; }
 }

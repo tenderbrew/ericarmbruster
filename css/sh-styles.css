@@ -1,970 +1,409 @@
 /* ==========================================================================
-   sh-styles.css — Self-Hosting Page Stylesheet
-   ==========================================================================
-
-   This stylesheet powers the Self-Hosting page, which showcases a homelab /
-   server-rack aesthetic. Every rule is scoped under the `.sh-page` body class
-   so that these styles never leak into other pages on the site.
-
-   Visual concept: a dark "data-center control room" feel — brushed-metal rack
-   panels with Phillips-head screw holes, glowing LED status indicators, LCD
-   readouts, ventilation grilles, system-resource gauges, and a live terminal
-   log viewer. The palette leans heavily on GitHub's dark-mode grays with
-   accent colors borrowed from server status lights (green = healthy,
-   amber = warning, red = critical, blue = informational).
-
-   Major sections:
-     1. Design tokens (CSS custom properties)
-     2. Page background & global overrides
-     3. Animations
-     4. Hero (CLI prompt banner)
-     5. Hardware grid (rack panels, LEDs, drive bays, LCD, NAS photo)
-     6. Services grid (Docker-style container cards)
-     7. Dashboard (uptime counter, resource gauges)
-     8. Terminal log viewer
-     9. Accessibility & footer
-    10. Responsive breakpoints (1080 / 760 / 420 px)
+   sh-styles.css — Self-Hosting / Homelab (mempool.space vibe)
+   --------------------------------------------------------------------------
+   Hero terminal prompt, NAS rack panel with LED bays, services grid,
+   Glance dashboard snapshot, system monitor gauges, faux syslog terminal.
    ========================================================================== */
 
 
-/* --------------------------------------------------------------------------
-   1. DESIGN TOKENS
-   --------------------------------------------------------------------------
-   All colors, fonts, and spacing values live as custom properties on .sh-page
-   so they can be referenced throughout the stylesheet. This makes global
-   palette tweaks trivial — change a token here and every component updates.
-
-   Color naming convention:
-     --sh-void / --sh-dark / --sh-panel  =  background layers (darkest → lightest)
-     --sh-border                         =  subtle divider lines
-     --sh-text / --sh-text-dim           =  primary and secondary text
-     --sh-green / --sh-amber / --sh-red  =  status accent colors (healthy / warning / error)
-     --sh-blue                           =  informational accent
-     --sh-*-glow                         =  translucent versions used in box-shadow glows
-     --sh-metal-*                        =  brushed-metal grays for the rack panels
-   -------------------------------------------------------------------------- */
-.sh-page {
-  --sh-void: #0c1117;
-  --sh-dark: #161b22;
-  --sh-panel: #1c2128;
-  --sh-border: #30363d;
-  --sh-text: #c9d1d9;
-  --sh-text-dim: #8b949e;
-  --sh-green: #3fb950;
-  --sh-green-glow: rgba(63, 185, 80, 0.35);
-  --sh-amber: #d29922;
-  --sh-amber-glow: rgba(210, 153, 34, 0.35);
-  --sh-red: #f85149;
-  --sh-blue: #58a6ff;
-  --sh-blue-glow: rgba(88, 166, 255, 0.2);
-  --sh-metal-light: #8a8f98;
-  --sh-metal-mid: #4a4f58;
-  --sh-metal-dark: #2a2f38;
-  --sh-font-mono: "JetBrains Mono", "Courier New", monospace;
-  --sh-font-sans: "Inter", "system-ui", sans-serif;
-  --sh-section-gap: 2rem;
-}
-
-
-/* --------------------------------------------------------------------------
-   2. PAGE BACKGROUND & GLOBAL OVERRIDES
-   -------------------------------------------------------------------------- */
-
-/* Three-layer radial/linear gradient stack that simulates ambient light
-   spilling onto a dark server-room wall:
-     Layer 1 — a subtle blue-tinted glow at the top center (overhead light)
-     Layer 2 — a fainter glow in the bottom-right corner (secondary light)
-     Layer 3 — a vertical gradient from void-black through a slightly lighter
-               midpoint and back, giving the page gentle depth               */
-.sh-page {
-  background:
-    radial-gradient(ellipse at 50% 0%, rgba(20, 30, 50, 0.5), transparent 55%),
-    radial-gradient(ellipse at 100% 100%, rgba(10, 20, 40, 0.3), transparent 45%),
-    linear-gradient(180deg, var(--sh-void), #0d1218 40%, var(--sh-void) 100%);
-}
-
-/* The shared styles.css uses ::before / ::after pseudo-elements on <body> for
-   decorative clip-path shapes. Those don't suit the data-center look, so we
-   hide them entirely on this page. */
-.sh-page::before,
-.sh-page::after {
-  display: none;
-}
-
-
-/* The shared stylesheet applies background, box-shadow, clip-path, and drop-cap
-   styling to section containers and hero containers. All three rule blocks below
-   neutralize those defaults so this page's custom components render cleanly. */
-
-/* Hero container — strip the shared decorative treatment */
-.sh-page .hero .container {
-  background: none;
-  box-shadow: none;
-  clip-path: none;
-  padding: 0;
-}
-
-/* Section containers — keep a modest padding but remove decorative layers */
-.sh-page main:not(.home-rooms) > section .container {
-  background: none;
-  box-shadow: none;
-  clip-path: none;
-  padding: 1.4rem 1.2rem;
-}
-
-/* Drop-cap reset — the shared stylesheet floats and enlarges the first letter
-   of each section's opening paragraph. That clashes with the monospaced
-   terminal aesthetic, so every first-letter override is zeroed out here. */
-.sh-page main:not(.home-rooms) > section .container p:first-of-type::first-letter {
-  float: none;
-  font-size: inherit;
-  line-height: inherit;
-  padding-right: 0;
-  color: inherit;
-  font-family: inherit;
-}
-
-
-/* --------------------------------------------------------------------------
-   BORDER-RADIUS SAFEGUARDS
-   --------------------------------------------------------------------------
-   Some shared styles or resets might try to apply border-radius to elements
-   that must stay perfectly round (LEDs, terminal dots) or perfectly square
-   (gauge fill bars). These !important rules guarantee the correct shape
-   regardless of cascade order.                                              */
-.sh-page .sh-led,
-.sh-page .sh-term-dot {
-  border-radius: 50% !important;
-}
-
-.sh-page .sh-gauge-fill {
-  border-radius: 0 !important;
-}
-
-/* Rack-panel pseudo-element screws must remain circular */
-.sh-page .sh-rack-panel::before,
-.sh-page .sh-rack-panel::after {
-  border-radius: 50% !important;
-}
-
-
-/* --------------------------------------------------------------------------
-   3. ANIMATIONS
-   -------------------------------------------------------------------------- */
-
-/* A hard-step blink used for the terminal cursor block character ("_").
-   step-end makes the transition instant (no fade), mimicking a real cursor. */
-@keyframes sh-blink {
-  0%, 100% { opacity: 1; }
-  50% { opacity: 0; }
-}
-
-/* A smooth pulsing glow for green LEDs. At the midpoint the box-shadow
-   expands to a wider, doubled ring of green light, simulating the subtle
-   throb of an active status indicator on real hardware. */
-@keyframes sh-pulse-led {
-  0%, 100% { box-shadow: 0 0 4px var(--sh-green-glow); }
-  50% { box-shadow: 0 0 8px var(--sh-green-glow), 0 0 14px var(--sh-green-glow); }
-}
-
-/* Utility class that applies the cursor blink to any element */
-.sh-blink {
-  animation: sh-blink 1s step-end infinite;
-}
-
-
-/* --------------------------------------------------------------------------
-   SECTION SPACING
-   --------------------------------------------------------------------------
-   Sections inside <main> receive top padding from --sh-section-gap, and the
-   <main> element itself gets matching bottom padding, creating even vertical
-   rhythm between content blocks without margin collapsing issues.           */
-.sh-page main:not(.home-rooms) > section {
-  padding: var(--sh-section-gap) 0 0;
-}
-
-.sh-page main:not(.home-rooms) {
-  padding-bottom: var(--sh-section-gap);
-}
-
-
-/* --------------------------------------------------------------------------
-   4. HERO — CLI PROMPT BANNER
-   --------------------------------------------------------------------------
-   The hero area mimics a Linux shell prompt ("user@host:~/path$ command")
-   followed by its text output. Each token in the prompt is wrapped in a
-   <span> with a class that colorizes it like a real terminal:
-     .sh-user = green   (the logged-in username)
-     .sh-host = blue    (the hostname)
-     .sh-path = amber   (the working directory)
-     .sh-cmd  = default text (the command being typed)                       */
+/* ── HERO — terminal prompt ──────────────────────────────────────────── */
 .sh-hero {
-  position: relative;
-  padding: 3rem 0 0;
+  padding: var(--space-6) 0 var(--space-4);
 }
-
 .sh-hero-inner {
-  position: relative;
-  padding: 2.5rem 1.2rem 2rem;
+  background: var(--bg-deep);
+  border: 1px solid var(--border);
+  border-left: 3px solid var(--success);
+  border-radius: var(--radius);
+  padding: var(--space-5);
 }
-
-/* The prompt line uses clamp() for fluid sizing: it never shrinks below
-   0.82rem (readable on mobile) and never grows past 1.2rem (comfortable
-   on wide screens), scaling with viewport width in between. */
 .sh-hero-prompt {
-  font-family: var(--sh-font-mono);
-  font-size: clamp(0.82rem, 2.2vw, 1.2rem);
-  font-weight: 400;
-  line-height: 1.5;
-  color: var(--sh-text);
-  letter-spacing: 0.2px;
+  font-family: var(--font-mono);
+  font-size: var(--fs-h1);
+  font-weight: 500;
+  color: var(--text);
+  margin: 0 0 var(--space-2);
+  word-wrap: break-word;
+  letter-spacing: -0.01em;
 }
-
-.sh-hero-prompt .sh-user {
-  color: var(--sh-green);
+.sh-user  { color: var(--success); }
+.sh-host  { color: var(--accent); }
+.sh-path  { color: var(--text-3); }
+.sh-cmd   { color: var(--text); }
+.sh-blink {
+  color: var(--success);
+  animation: sh-blink 1s steps(2) infinite;
 }
+@keyframes sh-blink { 50% { opacity: 0; } }
 
-.sh-hero-prompt .sh-host {
-  color: var(--sh-blue);
-}
-
-.sh-hero-prompt .sh-path {
-  color: var(--sh-amber);
-}
-
-.sh-hero-prompt .sh-cmd {
-  color: var(--sh-text);
-}
-
-/* The "output" below the prompt is dimmer and slightly smaller, just like
-   real terminal stdout beneath a command you've executed. */
 .sh-hero-output {
-  margin-top: 0.4rem;
-  font-family: var(--sh-font-mono);
-  font-size: clamp(0.72rem, 1.6vw, 0.92rem);
-  color: var(--sh-text-dim);
-  letter-spacing: 0.2px;
-  line-height: 1.5;
+  color: var(--text-3);
+  font-size: var(--fs-body);
+  margin: 0;
 }
 
 
-/* --------------------------------------------------------------------------
-   5. HARDWARE GRID — RACK PANELS, LEDs, DRIVE BAYS, LCD, NAS PHOTO
-   --------------------------------------------------------------------------
-   A two-column grid that places hardware components side by side, e.g., a
-   server rack panel on the left and a NAS photo on the right. The items
-   stretch to equal height so adjacent panels line up visually.              */
+/* ── HARDWARE — NAS rack panel + photo ───────────────────────────────── */
 .sh-hardware-grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 1.6rem;
-  align-items: stretch;
+  gap: var(--space-4);
+  margin: var(--space-5) 0;
 }
 
-/* --- Rack Panel ---
-   Each .sh-rack-panel looks like a 1U/2U server faceplate. The background
-   is built from two layers:
-     Layer 1 — a subtle horizontal line pattern (repeating-linear-gradient)
-               that simulates fine brushed-metal texture; thin semi-transparent
-               stripes alternate with transparent gaps every 3px
-     Layer 2 — a vertical gradient from mid-gray to dark-gray, giving the
-               panel a slight top-lit, bottom-shadowed metallic sheen
-
-   The box-shadow has three layers:
-     Outer   — a deep drop shadow placing the panel "above" the page
-     Inset 1 — a faint white top highlight (light catching the top edge)
-     Inset 2 — a dark bottom edge (shadow under the bottom lip)             */
 .sh-rack-panel {
-  position: relative;
-  padding: 1.2rem;
-  background:
-    repeating-linear-gradient(
-      0deg,
-      rgba(138, 143, 152, 0.03) 0,
-      rgba(138, 143, 152, 0.03) 1px,
-      transparent 1px,
-      transparent 3px
-    ),
-    linear-gradient(180deg, var(--sh-metal-mid), var(--sh-metal-dark));
-  box-shadow:
-    0 8px 24px rgba(0, 0, 0, 0.5),
-    inset 0 1px 0 rgba(255, 255, 255, 0.08),
-    inset 0 -1px 0 rgba(0, 0, 0, 0.3);
-}
-
-
-/* --- Rack Screw Holes ---
-   The ::before and ::after pseudo-elements render two circular "screw heads"
-   on the left edge of every rack panel, mimicking the Phillips-head cage nuts
-   you'd find on real 19" rack rails.
-
-   The radial-gradient creates a subtle 3D dome effect:
-     - a lighter highlight at 45% / 40% (upper-left reflection)
-     - darkening toward the edges (recessed metal)
-
-   The inset box-shadow adds:
-     Layer 1 — a dark ring (the outer rim of the screw hole)
-     Layer 2 — an inner shadow (depth inside the recess)                     */
-.sh-rack-panel::before,
-.sh-rack-panel::after {
-  content: "";
-  position: absolute;
-  width: 10px;
-  height: 10px;
-  border-radius: 50% !important;
-  background:
-    radial-gradient(circle at 45% 40%, rgba(160, 165, 175, 0.4), rgba(40, 44, 52, 0.9) 70%);
-  box-shadow:
-    inset 0 0 0 1px rgba(0, 0, 0, 0.5),
-    inset 0 1px 2px rgba(0, 0, 0, 0.4);
-}
-
-/* Top screw — positioned near the upper-left corner */
-.sh-rack-panel::before {
-  top: 0.6rem;
-  left: 0.5rem;
-}
-
-/* Bottom screw — positioned near the lower-left corner */
-.sh-rack-panel::after {
-  bottom: 0.6rem;
-  left: 0.5rem;
-}
-
-/* Rack label text (e.g., "NAS-01") styled like the etched/stamped lettering
-   on real server faceplates — small, all-caps, wide letter-spacing. The
-   left padding clears the screw pseudo-elements. */
-.sh-rack-label {
-  font-family: var(--sh-font-sans);
-  font-size: 0.56rem;
-  font-weight: 600;
-  color: var(--sh-metal-light);
-  letter-spacing: 2px;
-  text-transform: uppercase;
-  margin-bottom: 0.8rem;
-  padding-left: 1.4rem;
-}
-
-/* --- Ventilation Grille ---
-   Simulates the perforated air-intake grilles found on server chassis. A
-   repeating horizontal stripe pattern alternates dark bars (the metal slats)
-   with faint lighter gaps (the openings where air flows through). The inset
-   shadow adds depth, as if the grille is recessed into the panel face. */
-.sh-ventilation {
-  height: 28px;
-  margin: 0.6rem 0;
-  background:
-    repeating-linear-gradient(
-      0deg,
-      rgba(0, 0, 0, 0.35) 0,
-      rgba(0, 0, 0, 0.35) 2px,
-      rgba(100, 105, 115, 0.15) 2px,
-      rgba(100, 105, 115, 0.15) 5px
-    );
-  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
-}
-
-/* --- Drive Bays ---
-   A horizontal row of LED indicators, each representing a drive bay slot.
-   The left margin aligns them with the rack label (clearing the screws). */
-.sh-drive-bays {
-  display: flex;
-  gap: 0.5rem;
-  padding: 0.4rem 0;
-  margin-left: 1.4rem;
-}
-
-/* --- LED Indicators ---
-   Tiny 6px circles that represent hardware status lights. Each LED variant
-   uses a radial-gradient with a bright highlight at the upper-left to create
-   a convincing "lit bulb" effect with glassy dimensionality.
-
-   Green LEDs additionally pulse via the sh-pulse-led animation, making them
-   appear actively alive. Amber LEDs glow steadily (static warning). "Off"
-   LEDs use muted gray tones with no outer glow. */
-.sh-led {
-  width: 6px;
-  height: 6px;
-  border-radius: 50% !important;
-}
-
-.sh-led--green {
-  background: radial-gradient(circle at 40% 35%, #66ff66, var(--sh-green) 60%, #1a7a1a);
-  box-shadow: 0 0 4px var(--sh-green-glow);
-  animation: sh-pulse-led 3s ease-in-out infinite;
-}
-
-.sh-led--amber {
-  background: radial-gradient(circle at 40% 35%, #ffdd44, var(--sh-amber) 60%, #8a6600);
-  box-shadow: 0 0 4px var(--sh-amber-glow);
-}
-
-.sh-led--off {
-  background: radial-gradient(circle at 40% 35%, #4a4f58, #2a2f38 60%);
-  box-shadow: none;
-}
-
-/* --- Rack LCD Display ---
-   Mimics a small green-on-black character LCD (like the OLED/VFD displays
-   on enterprise servers). The background gradient goes from very dark green
-   to near-black, and the inset shadows create the "sunken screen" look:
-     Inset 1 — a faint green border glow (backlight bleeding)
-     Inset 2 — a deep black inner shadow (the recessed bezel)               */
-.sh-rack-lcd {
-  margin-top: 0.8rem;
-  margin-left: 1.4rem;
-  padding: 0.5rem 0.7rem;
-  background: linear-gradient(180deg, #0a1a0a, #061008);
-  box-shadow:
-    inset 0 0 0 1px rgba(63, 185, 80, 0.15),
-    inset 0 0 8px rgba(0, 0, 0, 0.5);
-  max-width: 260px;
-}
-
-/* Each line on the LCD is a block-level <span> with green monospace text
-   and a green text-shadow to simulate phosphor glow on a CRT/VFD screen. */
-.sh-rack-lcd span {
-  display: block;
-  font-family: var(--sh-font-mono);
-  font-size: 0.58rem;
-  color: var(--sh-green);
-  text-shadow: 0 0 4px var(--sh-green-glow);
-  line-height: 1.6;
-  letter-spacing: 0.5px;
-}
-
-/* --- NAS Photo ---
-   A centered container for a real photograph of the NAS hardware. The dark
-   background and subtle border frame the image like a recessed display
-   window on a rack panel. */
-.sh-nas-photo {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background: var(--sh-dark);
-  border: 1px solid var(--sh-border);
-  padding: 1rem;
-}
-
-.sh-nas-photo img {
-  display: block;
-  width: 100%;
-  max-width: 320px;
-  height: auto;
-  object-fit: contain;
-}
-
-
-/* --------------------------------------------------------------------------
-   6. SERVICES GRID — DOCKER-STYLE CONTAINER CARDS
-   --------------------------------------------------------------------------
-   Displays self-hosted services (Jellyfin, Nextcloud, Pi-hole, etc.) in a
-   three-column grid. Each card resembles a container status tile from a
-   Docker dashboard, with a colored top stripe indicating service health.    */
-
-/* Section heading styled like a terminal heading — monospace, all-caps */
-.sh-services-heading {
-  font-family: var(--sh-font-mono);
-  font-size: clamp(0.72rem, 1.6vw, 0.92rem);
-  font-weight: 700;
-  color: var(--sh-text);
-  letter-spacing: 1px;
-  text-transform: uppercase;
-  margin-bottom: 1.2rem;
-}
-
-/* The three-column card grid with tight gaps for a compact dashboard feel */
-.sh-services-grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 0.8rem;
-}
-
-/* Individual service card — a dark panel with a subtle border. The
-   overflow:hidden clips the colored stripe at the top. On hover, the card
-   lifts slightly (translateY) and gains a deeper shadow for a tactile
-   "button press" interaction. */
-.sh-service-card {
-  position: relative;
-  background: var(--sh-panel);
-  border: 1px solid var(--sh-border);
-  padding: 0;
-  overflow: hidden;
-  transition: transform 0.15s ease, box-shadow 0.15s ease;
-}
-
-.sh-service-card:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.4);
-}
-
-/* --- Service Status Stripe ---
-   A thin 3px bar across the top of each card. The default color is green
-   (healthy). Modifier classes swap the color for amber (degraded),
-   red (down), or blue (informational/maintenance). This is the first thing
-   the eye sees, providing an at-a-glance health overview of the grid. */
-.sh-service-stripe {
-  height: 3px;
-  background: var(--sh-green);
-}
-
-.sh-service-stripe--amber {
-  background: var(--sh-amber);
-}
-
-.sh-service-stripe--red {
-  background: var(--sh-red);
-}
-
-.sh-service-stripe--blue {
-  background: var(--sh-blue);
-}
-
-/* Card body padding — sits below the stripe */
-.sh-service-body {
-  padding: 0.7rem 0.8rem;
-}
-
-/* Header row inside the card: service name + optional icon, flexed inline */
-.sh-service-header {
-  display: flex;
-  align-items: center;
-  gap: 0.5rem;
-  margin-bottom: 0.3rem;
-}
-
-/* Service name in bold monospace, like a container name in Docker CLI output */
-.sh-service-name {
-  font-family: var(--sh-font-mono);
-  font-size: 0.74rem;
-  font-weight: 700;
-  color: var(--sh-text);
-  letter-spacing: 0.3px;
-}
-
-/* Status line: a small LED dot + "RUNNING" / "STOPPED" text, flexed inline */
-.sh-service-status {
-  display: flex;
-  align-items: center;
-  gap: 0.3rem;
-  margin-bottom: 0.3rem;
-}
-
-/* Status text defaults to green (running). The --down modifier switches
-   it to red for stopped/errored services. */
-.sh-service-status-text {
-  font-family: var(--sh-font-mono);
-  font-size: 0.5rem;
-  color: var(--sh-green);
-  letter-spacing: 1px;
-  text-transform: uppercase;
-}
-
-.sh-service-status-text--down {
-  color: var(--sh-red);
-}
-
-/* Port number display — dim monospace, like seeing ":8096" in a config */
-.sh-service-port {
-  font-family: var(--sh-font-mono);
-  font-size: 0.52rem;
-  color: var(--sh-text-dim);
-  letter-spacing: 0.5px;
-}
-
-/* Brief description of what the service does, in readable sans-serif */
-.sh-service-desc {
-  margin-top: 0.3rem;
-  font-family: var(--sh-font-sans);
-  font-size: 0.64rem;
-  color: var(--sh-text-dim);
-  line-height: 1.4;
-}
-
-
-/* --------------------------------------------------------------------------
-   7. DASHBOARD — UPTIME COUNTER & RESOURCE GAUGES
-   --------------------------------------------------------------------------
-   A monitoring dashboard panel showing server uptime and system resource
-   utilization (CPU, RAM, disk, etc.), styled like a Grafana/Netdata widget. */
-.sh-dashboard {
-  background: var(--sh-panel);
-  border: 1px solid var(--sh-border);
-  padding: 1.2rem;
-}
-
-.sh-dashboard-heading {
-  font-family: var(--sh-font-mono);
-  font-size: 0.72rem;
-  font-weight: 700;
-  color: var(--sh-text);
-  letter-spacing: 1px;
-  text-transform: uppercase;
-  margin-bottom: 1rem;
-}
-
-/* Uptime counter — a prominent centered readout showing total days/hours
-   the server has been running without a reboot. The dark inset box and
-   border create a "sunken display" feel. */
-.sh-uptime {
-  text-align: center;
-  margin-bottom: 1.2rem;
-  padding: 0.8rem;
-  background: var(--sh-dark);
-  border: 1px solid var(--sh-border);
-}
-
-.sh-uptime-label {
-  font-family: var(--sh-font-sans);
-  font-size: 0.52rem;
-  font-weight: 600;
-  color: var(--sh-text-dim);
-  letter-spacing: 2px;
-  text-transform: uppercase;
-  margin-bottom: 0.3rem;
-}
-
-/* The uptime value is the largest text on the dashboard — bold green with a
-   neon glow (text-shadow) to look like a seven-segment LED display. */
-.sh-uptime-value {
-  font-family: var(--sh-font-mono);
-  font-size: clamp(1.2rem, 3vw, 1.8rem);
-  font-weight: 700;
-  color: var(--sh-green);
-  text-shadow: 0 0 8px var(--sh-green-glow);
-  letter-spacing: 2px;
-}
-
-/* Four-column grid for resource gauges (CPU, RAM, Disk, Swap, etc.) */
-.sh-gauges {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 1rem;
-}
-
-/* Each gauge is a vertical stack: label row, then the bar track below it */
-.sh-gauge {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: var(--space-5);
   display: flex;
   flex-direction: column;
-  gap: 0.3rem;
+  gap: var(--space-3);
+}
+.sh-rack-label {
+  font-family: var(--font-mono);
+  font-size: var(--fs-small);
+  color: var(--text);
+  background: var(--surface-2);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 8px 12px;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  font-weight: 500;
 }
 
-/* Label row uses space-between so the metric name sits on the left and the
-   percentage value sits flush-right on the same line. */
-.sh-gauge-label {
+.sh-ventilation {
+  height: 12px;
+  background-color: var(--bg-deep);
+  background-image: repeating-linear-gradient(
+    to right,
+    transparent 0, transparent 4px,
+    var(--text-mute) 4px, var(--text-mute) 5px
+  );
+  border: 1px solid var(--border);
+  border-radius: 3px;
+}
+
+.sh-drive-bays {
+  display: flex;
+  gap: 14px;
+  justify-content: center;
+  padding: var(--space-3) 0;
+}
+.sh-led {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  flex-shrink: 0;
+}
+.sh-led--green { background: var(--success); box-shadow: 0 0 8px rgba(26, 209, 163, 0.6); }
+.sh-led--amber { background: var(--warning); box-shadow: 0 0 8px rgba(255, 177, 77, 0.6); }
+.sh-led--blue  { background: var(--accent);  box-shadow: 0 0 8px rgba(51, 153, 255, 0.6); }
+.sh-led--red   { background: var(--danger);  box-shadow: 0 0 8px rgba(252, 110, 81, 0.6); }
+
+.sh-rack-lcd {
+  background: var(--bg-deep);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: var(--space-3);
+  font-family: var(--font-mono);
+  font-size: var(--fs-small);
+  color: var(--success);
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.sh-nas-photo {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: var(--space-3);
+}
+.sh-nas-photo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 3px;
+}
+
+
+/* ── GLANCE DASHBOARD ────────────────────────────────────────────────── */
+.sh-glance-panel {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: var(--space-5);
+  margin: var(--space-5) 0;
+}
+.sh-glance-head {
   display: flex;
   justify-content: space-between;
   align-items: baseline;
-  font-family: var(--sh-font-sans);
-  font-size: 0.56rem;
-  font-weight: 600;
-  color: var(--sh-text-dim);
-  letter-spacing: 1px;
+  margin-bottom: var(--space-4);
+  padding-bottom: var(--space-3);
+  border-bottom: 1px solid var(--border-soft);
+  flex-wrap: wrap;
+  gap: var(--space-2);
+}
+.sh-glance-title {
+  font-size: var(--fs-h3);
   text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--text-3);
+  font-weight: 500;
+  margin: 0;
+}
+.sh-glance-status {
+  font-family: var(--font-mono);
+  font-size: var(--fs-tiny);
+  color: var(--text-mute);
+}
+.sh-glance-frame {
+  background: var(--bg-deep);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 4px;
+}
+.sh-glance-frame img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 2px;
+  user-select: none;
+  pointer-events: none;
+}
+.sh-glance-fallback {
+  font-size: var(--fs-small);
+  color: var(--text-mute);
+  padding: var(--space-6);
+  text-align: center;
+  background: var(--bg-deep);
+  border-radius: var(--radius);
+  font-style: italic;
 }
 
+
+/* ── SERVICES — grid of cards ────────────────────────────────────────── */
+.sh-services-heading {
+  font-size: var(--fs-h3);
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--text-3);
+  font-weight: 500;
+  margin: var(--space-6) 0 var(--space-4);
+  padding-bottom: var(--space-3);
+  border-bottom: 1px solid var(--border);
+}
+
+.sh-services-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: var(--space-3);
+}
+
+.sh-service-card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  transition: border-color 120ms ease;
+}
+.sh-service-card:hover { border-color: var(--rule); }
+
+.sh-service-stripe {
+  height: 2px;
+  background: var(--success);
+}
+.sh-service-stripe--blue  { background: var(--accent); }
+.sh-service-stripe--amber { background: var(--warning); }
+
+.sh-service-body {
+  padding: var(--space-4);
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+.sh-service-name {
+  font-size: var(--fs-body);
+  font-weight: 600;
+  color: var(--text);
+}
+.sh-service-status {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: var(--fs-small);
+}
+.sh-service-status .sh-led { width: 8px; height: 8px; }
+.sh-service-status-text { color: var(--success); }
+.sh-service-port {
+  font-family: var(--font-mono);
+  font-size: var(--fs-small);
+  color: var(--text-3);
+}
+.sh-service-desc {
+  font-size: var(--fs-small);
+  color: var(--text-3);
+  margin: 0;
+}
+
+
+/* ── SYSTEM MONITOR ──────────────────────────────────────────────────── */
+.sh-dashboard {
+  margin: var(--space-6) 0;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: var(--space-5);
+}
+.sh-dashboard-heading {
+  font-size: var(--fs-h3);
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--text-3);
+  font-weight: 500;
+  margin: 0 0 var(--space-4);
+  padding-bottom: var(--space-3);
+  border-bottom: 1px solid var(--border-soft);
+}
+
+.sh-uptime {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  background: var(--surface-2);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: var(--space-3) var(--space-4);
+  margin-bottom: var(--space-4);
+}
+.sh-uptime-label {
+  font-size: var(--fs-tiny);
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--text-3);
+  font-weight: 500;
+}
+.sh-uptime-value {
+  font-family: var(--font-mono);
+  font-size: var(--fs-h2);
+  color: var(--success);
+  font-weight: 500;
+}
+
+.sh-gauges {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-3);
+}
+.sh-gauge-label {
+  display: flex;
+  justify-content: space-between;
+  font-size: var(--fs-small);
+  color: var(--text-2);
+  margin-bottom: 4px;
+}
 .sh-gauge-value {
-  font-family: var(--sh-font-mono);
-  font-size: 0.56rem;
-  color: var(--sh-text);
+  font-family: var(--font-mono);
+  color: var(--text);
 }
 
-/* The gauge track is the empty trough behind the fill bar — a very faint
-   white-tinted background with a border, like an unfilled progress bar. */
 .sh-gauge-track {
-  height: 8px;
-  background: rgba(255, 255, 255, 0.05);
-  border: 1px solid var(--sh-border);
+  background: var(--bg-deep);
+  border: 1px solid var(--border);
+  border-radius: 2px;
+  height: 10px;
   overflow: hidden;
 }
-
-/* The fill bar grows from the left via an inline width style in the HTML.
-   The default green fill includes a green glow (box-shadow) that makes it
-   look like it's emitting light. The transition animates width changes
-   smoothly when values update. */
 .sh-gauge-fill {
   height: 100%;
-  background: var(--sh-green);
-  box-shadow: 0 0 6px var(--sh-green-glow);
-  transition: width 0.6s ease;
+  background: var(--accent);
+  background-image: linear-gradient(
+    to right,
+    var(--success) 0%,
+    var(--success) 60%,
+    var(--warning) 80%,
+    var(--danger) 100%
+  );
 }
 
-/* Amber variant — used when a resource is in the warning zone (e.g., 70-89%) */
-.sh-gauge-fill--amber {
-  background: var(--sh-amber);
-  box-shadow: 0 0 6px var(--sh-amber-glow);
-}
-
-/* Red variant — used when a resource is critical (e.g., 90%+) */
-.sh-gauge-fill--red {
-  background: var(--sh-red);
-  box-shadow: 0 0 6px rgba(248, 81, 73, 0.35);
-}
-
-/* Tiny footer line at the bottom of the dashboard, showing a "last updated"
-   timestamp in dim monospace, right-aligned to stay out of the way. */
 .sh-dashboard-footer {
-  margin-top: 1rem;
+  margin-top: var(--space-4);
+  font-family: var(--font-mono);
+  font-size: var(--fs-tiny);
+  color: var(--text-mute);
   text-align: right;
-  font-family: var(--sh-font-mono);
-  font-size: 0.48rem;
-  color: var(--sh-text-dim);
-  letter-spacing: 0.5px;
 }
 
 
-/* --------------------------------------------------------------------------
-   8. TERMINAL LOG VIEWER
-   --------------------------------------------------------------------------
-   A faux terminal window that displays scrollable log output (systemd
-   journal, Docker logs, etc.). It has a macOS-style title bar with three
-   colored dots, a dark body with monospace text, and supports color-coded
-   log levels.                                                               */
-
-/* Outer wrapper — the terminal "window" with a dark background and border */
+/* ── TERMINAL — faux syslog ──────────────────────────────────────────── */
 .sh-terminal {
-  background: #0d1117;
-  border: 1px solid var(--sh-border);
+  margin: var(--space-6) 0;
+  background: var(--bg-deep);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
   overflow: hidden;
 }
-
-/* Title bar — the dark-gray gradient bar at the top of the terminal window.
-   The gradient goes from slightly lighter gray at top to darker at bottom,
-   mimicking the look of a macOS or GNOME window title bar. */
 .sh-term-titlebar {
   display: flex;
   align-items: center;
-  gap: 0.5rem;
-  padding: 0.4rem 0.7rem;
-  background: linear-gradient(180deg, #2d333b, #22272e);
-  border-bottom: 1px solid var(--sh-border);
+  gap: var(--space-3);
+  background: var(--surface);
+  border-bottom: 1px solid var(--border);
+  padding: 8px var(--space-4);
 }
-
-/* Container for the three traffic-light dots */
-.sh-term-dots {
-  display: flex;
-  gap: 0.35rem;
-}
-
-/* Each dot is a 10px circle. The radial-gradient gives each one a glossy
-   highlight in the upper-left quadrant, making it look like a small glass
-   bead — the classic macOS window control buttons. */
+.sh-term-dots { display: flex; gap: 6px; }
 .sh-term-dot {
   width: 10px;
   height: 10px;
-  border-radius: 50% !important;
+  border-radius: 50%;
 }
+.sh-term-dot--red   { background: var(--danger); }
+.sh-term-dot--amber { background: var(--warning); }
+.sh-term-dot--green { background: var(--success); }
 
-/* Close button (red) */
-.sh-term-dot--red {
-  background: radial-gradient(circle at 40% 35%, #ff6b6b, #e5534b 60%, #b33a3a);
-}
-
-/* Minimize button (amber/yellow) */
-.sh-term-dot--amber {
-  background: radial-gradient(circle at 40% 35%, #ffd666, #d4a72c 60%, #a58020);
-}
-
-/* Maximize button (green) */
-.sh-term-dot--green {
-  background: radial-gradient(circle at 40% 35%, #6bff6b, #3fb950 60%, #2a8a38);
-}
-
-/* Title text beside the dots — shows the terminal session name */
 .sh-term-title {
-  font-family: var(--sh-font-mono);
-  font-size: 0.54rem;
-  color: var(--sh-text-dim);
-  letter-spacing: 0.3px;
+  font-family: var(--font-mono);
+  font-size: var(--fs-small);
+  color: var(--text-3);
 }
-
-/* Scrollable body area for log lines. max-height prevents the terminal from
-   growing unbounded; overflow-y:auto adds a scrollbar when content exceeds
-   the limit. Thin scrollbar styling keeps the aesthetic clean. */
 .sh-term-body {
-  padding: 0.8rem 1rem;
-  max-height: 280px;
+  padding: var(--space-4);
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  font-family: var(--font-mono);
+  font-size: var(--fs-small);
+  line-height: 1.5;
+  color: var(--text-2);
+  max-height: 360px;
   overflow-y: auto;
-  scrollbar-width: thin;
-  scrollbar-color: var(--sh-border) transparent;
-  -webkit-overflow-scrolling: touch;
 }
+.sh-term-line { word-wrap: break-word; }
+.sh-ts        { color: var(--text-mute); margin-right: 6px; }
+.sh-log-ok    { color: var(--success); }
+.sh-log-info  { color: var(--accent); }
+.sh-log-warn  { color: var(--warning); }
+.sh-log-err   { color: var(--danger); }
 
-/* Individual log lines — block-level spans in monospace. pre-wrap preserves
-   whitespace formatting from log output, and word-break:break-all prevents
-   long strings (like URLs or hashes) from overflowing the terminal. */
-.sh-term-line {
-  display: block;
-  font-family: var(--sh-font-mono);
-  font-size: 0.62rem;
-  color: var(--sh-text-dim);
-  line-height: 1.7;
-  letter-spacing: 0.2px;
-  white-space: pre-wrap;
-  word-break: break-all;
-}
-
-/* Timestamp tokens within a log line — slightly dimmed so the eye focuses
-   on the actual log message rather than the date/time prefix */
-.sh-term-line .sh-ts {
-  color: var(--sh-text-dim);
-  opacity: 0.6;
-}
-
-/* Log level color classes — these match the conventions used by systemd
-   journalctl and Docker logs for severity-based coloring:
-     OK/success  = green
-     Warning     = amber
-     Error       = red
-     Info/debug  = blue                                                      */
-.sh-term-line .sh-log-ok {
-  color: var(--sh-green);
-}
-
-.sh-term-line .sh-log-warn {
-  color: var(--sh-amber);
-}
-
-.sh-term-line .sh-log-err {
-  color: var(--sh-red);
-}
-
-.sh-term-line .sh-log-info {
-  color: var(--sh-blue);
-}
-
-/* The active prompt line at the bottom of the terminal — brighter than log
-   lines to indicate "this is where input happens." Contains the same
-   user@host tokens as the hero prompt for visual consistency. */
 .sh-term-prompt {
-  display: block;
-  font-family: var(--sh-font-mono);
-  font-size: 0.62rem;
-  color: var(--sh-text);
-  line-height: 1.7;
-  margin-top: 0.2rem;
-}
-
-.sh-term-prompt .sh-user {
-  color: var(--sh-green);
-}
-
-.sh-term-prompt .sh-host {
-  color: var(--sh-blue);
+  margin-top: 6px;
+  color: var(--success);
 }
 
 
-/* --------------------------------------------------------------------------
-   9. ACCESSIBILITY & FOOTER
-   -------------------------------------------------------------------------- */
-
-/* Focus-visible outline for keyboard navigation on interactive service cards.
-   Uses the blue accent color to stand out against the dark backgrounds. */
-.sh-page .sh-service-card:focus-visible {
-  outline: 2px solid var(--sh-blue);
-  outline-offset: 2px;
-}
-
-
-/* Footer overrides — remove the shared footer background and re-theme the
-   text to match the page's muted color palette. A single top border
-   separates the footer from the content above. */
-.sh-page footer {
-  background: none;
-  border-top: 1px solid var(--sh-border);
-}
-
-.sh-page footer .container {
-  color: var(--sh-text-dim);
-}
-
-
-/* ==========================================================================
-   10. RESPONSIVE BREAKPOINTS
-   ==========================================================================
-   The page uses three breakpoints that match the site-wide system:
-     1080px — tablet / narrow desktop
-      760px — mobile landscape / small tablet
-      420px — small mobile (iPhone SE, etc.)
-
-   At each step, grids collapse from more columns to fewer, font sizes
-   shrink, and padding tightens to keep the content readable and the
-   data-center aesthetic intact on smaller screens.
-   ========================================================================== */
-
-/* --- Tablet (max-width: 1080px) ---
-   The services grid drops from 3 columns to 2, and the gauge grid drops
-   from 4 columns to 2. This prevents cards and gauges from becoming
-   too narrow to read on mid-sized screens. */
+/* ── RESPONSIVE ──────────────────────────────────────────────────────── */
 @media (max-width: 1080px) {
-  .sh-services-grid {
-    grid-template-columns: repeat(2, 1fr);
-  }
-
-  .sh-gauges {
-    grid-template-columns: repeat(2, 1fr);
-  }
+  .sh-services-grid { grid-template-columns: repeat(2, 1fr); }
 }
-
-/* --- Mobile (max-width: 760px) ---
-   The hero padding shrinks to conserve vertical space. The hardware grid
-   collapses to a single column so the rack panel and NAS photo stack
-   vertically. Services remain at 2 columns (still comfortable at this
-   width). The terminal body height is reduced to avoid dominating the
-   viewport on smaller screens. */
 @media (max-width: 760px) {
-  .sh-hero-inner {
-    padding: 1.6rem 1rem 1.2rem;
-  }
-
-  .sh-hardware-grid {
-    grid-template-columns: 1fr;
-  }
-
-  .sh-services-grid {
-    grid-template-columns: repeat(2, 1fr);
-  }
-
-  .sh-gauges {
-    grid-template-columns: repeat(2, 1fr);
-  }
-
-  .sh-term-body {
-    max-height: 220px;
-  }
-}
-
-/* --- Small Mobile (max-width: 420px) ---
-   Everything collapses to single-column layouts. Font sizes are reduced
-   to their smallest readable values. The LCD display's max-width is
-   removed so it fills the available space instead of being constrained
-   to 260px (which would leave awkward margins on a ~320px-wide screen). */
-@media (max-width: 420px) {
-  .sh-hero-prompt {
-    font-size: 0.72rem;
-  }
-
-  .sh-hero-output {
-    font-size: 0.64rem;
-  }
-
-  .sh-services-grid {
-    grid-template-columns: 1fr;
-  }
-
-  .sh-gauges {
-    grid-template-columns: 1fr;
-  }
-
-  .sh-service-name {
-    font-size: 0.66rem;
-  }
-
-  .sh-term-line {
-    font-size: 0.54rem;
-  }
-
-  .sh-rack-lcd {
-    max-width: 100%;
-  }
+  .sh-hero-prompt { font-size: var(--fs-h2); }
+  .sh-hardware-grid { grid-template-columns: 1fr; }
+  .sh-services-grid { grid-template-columns: 1fr; }
 }

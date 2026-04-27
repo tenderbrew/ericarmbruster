@@ -1,798 +1,123 @@
-/*
- * ==========================================================================
- * proj-styles.css — Projects / Ledger Page Stylesheet
- * ==========================================================================
- *
- * This stylesheet controls the visual presentation of the Projects page,
- * which is themed as a leather-bound journal lying open on a dark wooden
- * desk. The entire aesthetic evokes a well-used personal ledger: aged
- * paper with foxing stains, faint ruled lines, a red margin rule, a
- * leather spine with visible stitching, decorative brass corner brackets,
- * a silk ribbon bookmark, and the warm glow of a desk lamp casting light
- * from the upper-left corner.
- *
- * Scoped via the `body.proj-page` class so that none of these styles
- * leak into other pages. Each major visual element (desk surface, paper,
- * leather binding, ribbon, brass corners, rubber stamps) is built purely
- * from CSS gradients, box-shadows, and pseudo-elements — no images.
- *
- * Follows the site-wide convention of page-specific stylesheets alongside
- * the shared `styles.css` for navigation and base layout.
- * ==========================================================================
- */
-
-
 /* ==========================================================================
- * COLOR PALETTE — Custom Properties
- * ==========================================================================
- * All colors are defined as CSS custom properties on `.proj-page` so they
- * can be referenced throughout the stylesheet. They are organized by the
- * physical material they represent: the dark desk surface, the leather
- * binding, the aged paper, the ink used for text, the brass hardware,
- * the rubber stamp ink colors, and the warm lamp light.
- * ========================================================================== */
-
-.proj-page {
-
-  /* Desk surface colors — three values from near-black to dark brown,
-     forming the gradient of a dark hardwood desk. The grain color is a
-     semi-transparent brown used for the repeating wood-grain streaks. */
-  --desk-dark: #0c0806;
-  --desk-mid: #1a120c;
-  --desk-light: #241a12;
-  --desk-grain: rgba(60, 40, 20, 0.06);
-
-  /* Leather binding colors — a warm chestnut brown with darker and lighter
-     variants for the spine's 3D shading. The stitch color is a faint
-     gold used for the binding hole dots along the spine. */
-  --leather: #5c3a1e;
-  --leather-dark: #3d2410;
-  --leather-light: #7a4e2a;
-  --leather-stitch: rgba(180, 150, 100, 0.4);
-
-  /* Paper colors — the main page surface. Ranges from a warm cream (paper)
-     through a tan midtone to a darker parchment edge. The rule color is
-     the faint brown of horizontal ledger lines, and the margin rule is
-     the traditional red vertical line on the left side of the page. */
-  --paper: #e8dcc8;
-  --paper-mid: #d6c8a8;
-  --paper-dark: #c4b08a;
-  --paper-rule: rgba(109, 85, 59, 0.28);
-  --paper-rule-margin: rgba(160, 50, 40, 0.18);
-
-  /* Ink colors — used for text. Dark ink for headings and project names,
-     a slightly warmer brown for body copy, a faded variant for secondary
-     text, and a deep red-brown for the main heading (mimicking iron
-     gall ink that has oxidized to a reddish hue over time). */
-  --ink-dark: #3b2a1c;
-  --ink-body: #4a3828;
-  --ink-faint: #7a6a58;
-  --ink-heading: #8b2f2b;
-
-  /* Brass hardware colors — the metallic gold of corner brackets and
-     decorative accents. Three tones give highlights and shadows to
-     simulate polished brass catching the desk lamp's light. */
-  --brass: #b8943e;
-  --brass-bright: #d4a84a;
-  --brass-dim: #8a6c2e;
-
-  /* Rubber stamp ink colors — the saturated red and green used for
-     project status stamps ("ACTIVE", "COMPLETE"), mimicking the look
-     of ink pads used with physical rubber stamps. */
-  --stamp-red: #a02218;
-  --stamp-green: #1a5c4a;
-
-  /* Desk lamp glow — a very subtle warm yellow used as an ambient
-     radial overlay to simulate light falling across the scene. */
-  --lamp-glow: rgba(220, 180, 100, 0.08);
-
-  /* Base text color and typeface for the entire page. IM Fell English
-     is a digitization of early 18th-century typefaces, reinforcing
-     the historical ledger feel. */
-  color: var(--ink-body);
-  font-family: "IM Fell English", "Libre Caslon Text", "Georgia", serif;
-  overflow-x: hidden;
-
-  /* DESK SURFACE BACKGROUND — Five stacked layers combine to produce
-     the illusion of a dark wooden desk lit by a warm lamp:
-     Layer 1: A large elliptical warm glow in the upper-left, simulating
-              the main desk lamp casting light across the surface.
-     Layer 2: A smaller, dimmer warm glow in the lower-right, providing
-              faint reflected ambient light so the corners aren't dead.
-     Layer 3: Wide-spaced vertical wood grain streaks (every ~92px),
-              created with a repeating gradient of thin semi-transparent
-              brown lines to mimic the prominent grain of dark wood.
-     Layer 4: Tighter secondary grain streaks (every ~63px) at slightly
-              lower opacity, offsetting the first set to break up
-              regularity and make the grain look more natural.
-     Layer 5: The base desk color — a diagonal gradient from near-black
-              at top-left to dark chocolate at bottom-right, establishing
-              the overall surface tone beneath the grain detail. */
-  background:
-    radial-gradient(ellipse 700px 600px at 10% 8%, rgba(220, 180, 100, 0.06), transparent 60%),
-    radial-gradient(ellipse 500px 400px at 85% 90%, rgba(160, 100, 40, 0.03), transparent 50%),
-    repeating-linear-gradient(
-      90deg,
-      transparent 0,
-      transparent 38px,
-      rgba(60, 40, 20, 0.04) 38px,
-      rgba(60, 40, 20, 0.04) 40px,
-      transparent 40px,
-      transparent 92px
-    ),
-    repeating-linear-gradient(
-      90deg,
-      transparent 0,
-      transparent 17px,
-      rgba(50, 30, 15, 0.025) 17px,
-      rgba(50, 30, 15, 0.025) 18px,
-      transparent 18px,
-      transparent 63px
-    ),
-    linear-gradient(170deg, var(--desk-dark) 0%, var(--desk-mid) 40%, var(--desk-light) 100%);
-
-  /* Keep the desk background fixed so the wood grain and lamp glow
-     stay in place as the ledger page scrolls over the desk. */
-  background-attachment: fixed;
-}
+   proj-styles.css — Quest Log / Projects (mempool.space vibe)
+   --------------------------------------------------------------------------
+   Each project is a card with a status pill (Active/Complete/Shelved) in
+   accent colors borrowed from the mempool palette.
+   ========================================================================== */
 
 
-/* ==========================================================================
- * SHARED STYLE OVERRIDES
- * ==========================================================================
- * The base `styles.css` applies clip-path shapes, drop-cap first-letters,
- * background fills, and box-shadows to `.container` elements. These
- * defaults make sense for the homepage but would break the ledger aesthetic
- * here, so they are reset to `none` / `inherit` for this page.
- * ========================================================================== */
+/* Hide all the legacy leather-journal decorations. */
+.proj-lamp,
+.proj-corner,
+.proj-ribbon,
+.proj-scribble { display: none; }
 
-/* Strip the container's default card styling (background, shadow, clip-path)
-   so the ledger's own paper background shows through cleanly. */
-.proj-page main:not(.home-rooms) > section .container {
-  background: none;
-  box-shadow: none;
-  clip-path: none;
-  padding: 0;
-}
-
-/* Disable the decorative drop-cap first letter that styles.css applies to
-   the first paragraph inside containers — it clashes with the ledger's
-   handwritten journal look. */
-.proj-page main:not(.home-rooms) > section .container p:first-of-type::first-letter {
-  float: none;
-  font-size: inherit;
-  line-height: inherit;
-  padding-right: 0;
-  color: inherit;
-  font-family: inherit;
-}
-
-/* Ensure the study navigation bar sits above the ledger and desk lamp
-   layers so it remains clickable and visible. */
-.proj-page .study-nav {
-  position: relative;
-  z-index: 10;
-}
-
-/* Style the footer to blend with the desk surface: no background fill,
-   just a faint warm border on top to subtly delineate it. */
-.proj-page footer {
-  position: relative;
-  z-index: 2;
-  border-top: 1px solid rgba(90, 60, 30, 0.2);
-  margin-top: 0;
-  background: none;
-}
-
-/* Footer text uses a very dim gold tone so it's readable against the
-   dark desk but doesn't compete with the ledger content. */
-.proj-page footer .container {
-  color: rgba(180, 150, 100, 0.35);
-  font-family: "IM Fell English", "Georgia", serif;
-  font-size: 0.72rem;
-}
-
-
-/* ==========================================================================
- * DESK LAMP GLOW — Fixed Ambient Overlay
- * ==========================================================================
- * A fixed-position element covering the top-left quadrant of the viewport,
- * applying a very faint warm radial gradient. This simulates the cone of
- * light cast by a desk lamp positioned to the upper-left of the scene.
- * It sits behind the ledger (z-index: 0) and ignores mouse events so it
- * never interferes with interaction. This supplements the lamp glow
- * already baked into the body background, adding depth because this layer
- * stays fixed while the page scrolls.
- * ========================================================================== */
-
-.proj-lamp {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 50%;
-  height: 50%;
-  z-index: 0;
-  pointer-events: none;
-  background: radial-gradient(
-    ellipse 100% 100% at 0% 0%,
-    rgba(220, 180, 100, 0.05) 0%,
-    transparent 70%
-  );
-}
-
-
-/* ==========================================================================
- * LEDGER BOOK — The Main Paper Surface
- * ==========================================================================
- * The `.proj-ledger` element is the central visual component: a rectangle
- * of aged paper that looks like a page of an open journal. It is built
- * entirely from layered CSS gradients and shadows.
- *
- * The padding is intentionally asymmetric — slightly more on the left to
- * clear the red margin line, and more on the bottom to give visual weight
- * to the page's lower edge.
- * ========================================================================== */
 
 .proj-ledger {
-  position: relative;
-  z-index: 2;
-  max-width: 760px;
+  max-width: var(--container-max);
   margin: 0 auto;
-  padding: 3rem 3rem 3.5rem 3.6rem;
-
-  /* PAPER BACKGROUND — Six stacked layers simulate aged paper:
-     Layers 1-3: Three radial gradients at different positions and sizes
-                 create subtle brown "foxing" spots — the age discoloration
-                 marks found on old paper. Varying opacity and position
-                 prevents them from looking repetitive.
-     Layer 4:    A ring-shaped radial gradient that mimics a coffee cup
-                 stain in the upper-right area. The transparent center with
-                 a semi-transparent ring at 30-38px radius creates the
-                 characteristic ring shape.
-     Layer 5:    Horizontal ruled lines via a repeating gradient. Each line
-                 is placed every 1.72rem (matching the text line-height),
-                 drawn as a thin band of the paper-rule color, simulating
-                 the faint blue or brown lines of a ruled ledger page.
-     Layer 6:    The base paper gradient — a diagonal sweep from light
-                 cream in the upper-left (where the lamp hits) to darker
-                 parchment in the lower-right, giving the paper a natural
-                 tonal variation. */
-  background:
-    radial-gradient(circle 80px at 15% 20%, rgba(160, 120, 60, 0.08), transparent),
-    radial-gradient(circle 60px at 75% 65%, rgba(140, 100, 50, 0.06), transparent),
-    radial-gradient(circle 100px at 90% 15%, rgba(130, 95, 45, 0.05), transparent),
-    radial-gradient(circle 42px at 82% 12%, transparent 30px, rgba(130, 90, 40, 0.07) 32px, rgba(130, 90, 40, 0.04) 38px, transparent 40px),
-    repeating-linear-gradient(
-      180deg,
-      transparent 0,
-      transparent 1.64rem,
-      var(--paper-rule) 1.64rem,
-      var(--paper-rule) 1.72rem,
-      transparent 1.72rem
-    ),
-    linear-gradient(168deg, var(--paper) 0%, var(--paper-mid) 60%, var(--paper-dark) 100%);
-
-  /* The red vertical margin line, a classic detail of ruled notebook/
-     ledger paper. Drawn as a left border rather than a gradient so it
-     stays crisp at all zoom levels. */
-  border-left: 2px solid var(--paper-rule-margin);
-
-  /* PAGE DEPTH AND SHADOW — Multiple box-shadows combine to create the
-     illusion that this is a physical page with thickness:
-     Shadows 1-3: Three progressively offset lines on the right edge
-                  simulate the visible edges of pages beneath this one,
-                  like the layered pages of an open book.
-     Shadow 4:    A large soft shadow cast onto the desk surface below
-                  and to the right, grounding the book on the desk.
-     Shadow 5:    A secondary shadow offset to the left and down,
-                  simulating softer ambient shadow on the opposite side.
-     Shadow 6:    An inset glow from the upper-left simulating warm
-                  lamp light falling across the paper's surface. */
-  box-shadow:
-    4px 0 0 -1px var(--paper-mid),
-    6px 1px 0 -1px var(--paper-dark),
-    8px 2px 0 -1px rgba(160, 130, 90, 0.5),
-    12px 12px 30px rgba(0, 0, 0, 0.4),
-    -2px 8px 24px rgba(0, 0, 0, 0.25),
-    inset 40px 20px 60px rgba(220, 180, 100, 0.03);
-}
-
-/* LEATHER BINDING / SPINE — Left-Side Pseudo-Element
- * This ::before element creates a vertical leather spine running along
- * the left edge of the paper. It extends slightly above and below the
- * page (-4px top/bottom) to suggest the cover wrapping around.
- *
- * The background stacks two types of layers:
- *   - Ten small radial gradients positioned at regular 40px intervals
- *     down the spine, each drawing a tiny dot of the stitch color.
- *     Together they simulate the evenly-spaced holes where thread
- *     binds the pages to the cover.
- *   - A horizontal linear gradient beneath the stitching that shades
- *     the leather strip from dark at the edges to lighter in the
- *     center, giving it a rounded, dimensional appearance.
- *
- * The box-shadow adds an inset shadow on the right side (where the
- * spine meets the page) for depth, and a drop shadow on the left
- * where the spine casts onto the desk. */
-.proj-ledger::before {
-  content: "";
-  position: absolute;
-  top: -4px;
-  left: -28px;
-  width: 28px;
-  bottom: -4px;
-  background:
-    radial-gradient(circle 1.5px at 14px 30px, var(--leather-stitch), transparent 2px),
-    radial-gradient(circle 1.5px at 14px 70px, var(--leather-stitch), transparent 2px),
-    radial-gradient(circle 1.5px at 14px 110px, var(--leather-stitch), transparent 2px),
-    radial-gradient(circle 1.5px at 14px 150px, var(--leather-stitch), transparent 2px),
-    radial-gradient(circle 1.5px at 14px 190px, var(--leather-stitch), transparent 2px),
-    radial-gradient(circle 1.5px at 14px 230px, var(--leather-stitch), transparent 2px),
-    radial-gradient(circle 1.5px at 14px 270px, var(--leather-stitch), transparent 2px),
-    radial-gradient(circle 1.5px at 14px 310px, var(--leather-stitch), transparent 2px),
-    radial-gradient(circle 1.5px at 14px 350px, var(--leather-stitch), transparent 2px),
-    radial-gradient(circle 1.5px at 14px 390px, var(--leather-stitch), transparent 2px),
-    linear-gradient(90deg, var(--leather-dark) 0%, var(--leather) 40%, var(--leather-dark) 85%, #2a1808 100%);
-  box-shadow:
-    inset -3px 0 8px rgba(0, 0, 0, 0.3),
-    -4px 4px 12px rgba(0, 0, 0, 0.3);
-}
-
-/* PAGE CORNER CURL — Bottom-Right Pseudo-Element
- * A 40x40px triangle in the bottom-right corner that makes the page
- * appear to curl upward, revealing the desk surface beneath. The 225deg
- * gradient transitions from the desk color (the "underside" visible
- * through the curl) through a sharp edge into the paper color (the
- * page itself), creating a convincing fold. The subtle box-shadow adds
- * a tiny crease shadow along the fold line. */
-.proj-ledger::after {
-  content: "";
-  position: absolute;
-  bottom: 0;
-  right: 0;
-  width: 40px;
-  height: 40px;
-  background: linear-gradient(
-    225deg,
-    var(--desk-mid) 0%,
-    var(--desk-mid) 38%,
-    var(--paper-dark) 42%,
-    var(--paper-mid) 50%,
-    var(--paper) 100%
-  );
-  box-shadow: -2px -2px 4px rgba(0, 0, 0, 0.08);
+  padding: var(--space-6) var(--gutter);
 }
 
 
-/* ==========================================================================
- * RIBBON BOOKMARK
- * ==========================================================================
- * A narrow vertical strip positioned at the top of the ledger, hanging
- * down over the page like a fabric ribbon bookmark. It uses a deep
- * crimson gradient (matching the ink-heading red family) and is rotated
- * 2 degrees for a natural, slightly askew appearance. The box-shadow
- * gives it a faint drop shadow and an inset shadow on the left edge
- * to suggest the ribbon's thickness and the way light wraps around it.
- * ========================================================================== */
-
-.proj-ribbon {
-  position: absolute;
-  top: -6px;
-  right: 60px;
-  width: 16px;
-  height: 80px;
-  z-index: 3;
-  pointer-events: none;
-  background: linear-gradient(
-    180deg,
-    #8b2f2b 0%,
-    #7a2824 60%,
-    #6a2220 100%
-  );
-  transform: rotate(2deg);
-  box-shadow:
-    1px 2px 4px rgba(0, 0, 0, 0.2),
-    inset -2px 0 3px rgba(0, 0, 0, 0.15);
-}
-
-/* The forked "swallowtail" cut at the bottom of the ribbon, achieved with
-   a clip-path polygon. The polygon draws two triangular notches that meet
-   in the center, creating the classic V-shaped tail of a bookmark ribbon. */
-.proj-ribbon::after {
-  content: "";
-  position: absolute;
-  bottom: -10px;
-  left: 0;
-  width: 16px;
-  height: 10px;
-  background: linear-gradient(180deg, #6a2220, #6a2220);
-  clip-path: polygon(0 0, 50% 60%, 100% 0, 100% 100%, 50% 40%, 0 100%);
-}
-
-
-/* ==========================================================================
- * LEDGER TITLE — Page Heading
- * ==========================================================================
- * The title area at the top of the ledger page. Uses the ornate cursive
- * "Herr Von Muellerhoff" font to mimic a hand-lettered journal title.
- * The text-shadow adds a subtle embossed quality — a light offset below
- * the text (as if light hits the top of raised lettering) and a faint
- * colored halo around the red-brown ink.
- * ========================================================================== */
-
+/* ── TITLE ───────────────────────────────────────────────────────────── */
 .proj-title {
-  text-align: center;
-  padding: 0.5rem 0 1.8rem;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: var(--space-6);
+  margin-bottom: var(--space-5);
+  border-left: 3px solid var(--accent);
 }
-
 .proj-title h1 {
-  font-family: "Herr Von Muellerhoff", "IM Fell English", "Georgia", cursive;
-  font-size: clamp(2.6rem, 4vw, 3.4rem);
-  font-weight: 400;
-  color: var(--ink-heading);
-  letter-spacing: 1px;
-  /* Two text-shadow layers: a warm offset shadow simulating the slight
-     emboss of pressed ink, and a diffuse red halo mimicking ink bleed. */
-  text-shadow:
-    1px 1px 0 rgba(200, 170, 130, 0.5),
-    0 0 8px rgba(139, 47, 43, 0.08);
+  font-family: var(--font-mono);
+  font-size: var(--fs-display);
+  font-weight: 600;
+  color: var(--text);
   margin: 0;
+  letter-spacing: -0.02em;
 }
-
-/* A decorative horizontal rule beneath the title, drawn as a pseudo-element.
-   Two layered gradients create a line that is strongest at center and fades
-   at the edges — the radial gradient provides the central intensity while
-   the linear gradient defines the overall fade-to-transparent at both ends.
-   This mimics an ink flourish drawn beneath a chapter heading. */
-.proj-title::after {
-  content: "";
-  display: block;
-  width: min(60%, 280px);
-  height: 2px;
-  margin: 0.4rem auto 0;
-  background:
-    radial-gradient(circle at center, rgba(140, 45, 39, 0.7) 0%, transparent 70%),
-    linear-gradient(90deg, transparent 10%, rgba(140, 45, 39, 0.4) 30%, rgba(140, 45, 39, 0.4) 70%, transparent 90%);
+.proj-title h1::before {
+  content: '> ';
+  color: var(--accent);
 }
 
 
-/* ==========================================================================
- * SECTION HEADINGS — Category Dividers Within the Ledger
- * ==========================================================================
- * These italic headings divide the ledger into categories (e.g., "Active
- * Projects", "Completed"). Styled in the faint ink color with a thin
- * bottom border to resemble a handwritten section label underlined with
- * a ruler. The first heading in the ledger has its top margin removed
- * so it sits flush against the title area.
- * ========================================================================== */
-
+/* ── SECTION HEADINGS ────────────────────────────────────────────────── */
 .proj-section-heading {
-  font-family: "IM Fell English", "Libre Caslon Text", "Georgia", serif;
-  font-size: 1.15rem;
-  font-weight: 400;
-  font-style: italic;
-  color: var(--ink-faint);
-  letter-spacing: 0.5px;
-  margin: 2rem 0 0.8rem;
-  padding-bottom: 0.3rem;
-  border-bottom: 1px solid rgba(109, 85, 59, 0.2);
-}
-
-.proj-section-heading:first-of-type {
-  margin-top: 0;
-}
-
-
-/* ==========================================================================
- * PROJECT ENTRIES — Individual Ledger Rows
- * ==========================================================================
- * Each project is a row in the ledger, separated by faint bottom borders
- * that align with the ruled-line pattern of the paper background. The
- * slight alternating rotation (odd entries tilted -0.15deg, even entries
- * +0.1deg) gives a subtle organic, hand-placed feel — as if the entries
- * were written freehand rather than perfectly aligned.
- * ========================================================================== */
-
-.proj-entry {
-  position: relative;
-  padding: 0.8rem 0.4rem 0.8rem 0.2rem;
-  border-bottom: 1px solid rgba(109, 85, 59, 0.1);
-  transition: background 0.2s ease;
-}
-
-.proj-entry:last-child {
-  border-bottom: none;
-}
-
-/* Alternating micro-rotations make entries feel hand-written rather than
-   machine-perfect. The angles are tiny enough to be subconscious. */
-.proj-entry:nth-child(odd) {
-  transform: rotate(-0.15deg);
-}
-
-.proj-entry:nth-child(even) {
-  transform: rotate(0.1deg);
-}
-
-/* Project name — the bold title of each entry, rendered in dark ink
-   to stand out against the lighter body text below it. */
-.proj-name {
-  font-family: "IM Fell English", "Libre Caslon Text", "Georgia", serif;
-  font-size: 1.1rem;
-  font-weight: 400;
-  color: var(--ink-dark);
-  margin: 0 0 0.2rem;
-  letter-spacing: 0.2px;
-}
-
-/* Project description — a brief italic note beneath the name, styled
-   in the standard body ink to be readable but subordinate to the name. */
-.proj-desc {
-  font-size: 0.88rem;
-  line-height: 1.6;
-  color: var(--ink-body);
-  margin: 0 0 0.3rem;
-  font-style: italic;
-}
-
-/* Project links — styled in the heading red-brown with a faint underline
-   that strengthens on hover. The text-underline-offset keeps the underline
-   from crowding the text, and the transition provides a smooth color
-   shift when hovered. */
-.proj-link {
-  font-family: "IM Fell English", "Georgia", serif;
-  font-size: 0.82rem;
-  color: var(--ink-heading);
-  text-decoration: underline;
-  text-decoration-color: rgba(139, 47, 43, 0.3);
-  text-underline-offset: 3px;
-  transition: color 0.2s ease, text-decoration-color 0.2s ease;
-}
-
-.proj-link:hover {
-  color: var(--stamp-red);
-  text-decoration-color: rgba(160, 34, 24, 0.5);
-}
-
-
-/* ==========================================================================
- * RUBBER STAMPS — Project Status Badges
- * ==========================================================================
- * These inline badges mimic the look of a physical rubber stamp pressed
- * onto the ledger page. The all-caps small-caps font (IM Fell English SC),
- * heavy letter-spacing, and solid border create the rectangular stamp
- * frame. Reduced opacity (0.7) and a tiny blur (0.2px) simulate the way
- * real stamp ink never transfers perfectly — edges are slightly soft and
- * the color is never fully saturated.
- *
- * Each status variant gets its own ink color and rotation angle:
- *   --active:   green ink, tilted -3deg (freshly stamped, slightly askew)
- *   --complete: red ink, tilted -5deg (a bolder, more decisive stamp)
- * ========================================================================== */
-
-.proj-stamp {
-  display: inline-block;
-  font-family: "IM Fell English SC", "IM Fell English", "Georgia", serif;
-  font-size: 0.62rem;
-  font-weight: 700;
-  letter-spacing: 2px;
+  font-size: var(--fs-h3);
   text-transform: uppercase;
-  padding: 0.15rem 0.5rem;
-  border: 2px solid currentColor;
-  margin-bottom: 0.35rem;
-  opacity: 0.7;
-  filter: blur(0.2px);
-}
-
-.proj-stamp--active {
-  color: var(--stamp-green);
-  transform: rotate(-3deg);
-}
-
-.proj-stamp--complete {
-  color: var(--stamp-red);
-  transform: rotate(-5deg);
+  letter-spacing: 0.08em;
+  color: var(--text-3);
+  font-weight: 500;
+  margin: var(--space-6) 0 var(--space-4);
+  padding-bottom: var(--space-3);
+  border-bottom: 1px solid var(--border);
 }
 
 
-/* ==========================================================================
- * SCRIBBLE PLACEHOLDERS — Decorative Filler Lines
- * ==========================================================================
- * When the ledger has empty space, these elements fill it with faint
- * cross-hatched lines that look like idle pen scribbles or redacted text.
- * Two overlapping repeating-linear-gradients at opposing slight angles
- * (-8deg and 7deg) create a scratchy, hand-drawn texture. The blur and
- * low opacity keep them subtle — they read as background texture rather
- * than actual content. The three child lines have varying widths (82%,
- * 68%, 74%) to look naturally irregular, as if someone absent-mindedly
- * scrawled across the page.
- * ========================================================================== */
-
-.proj-scribble {
-  padding: 0.5rem 0.2rem;
+/* ── ENTRY CARD ──────────────────────────────────────────────────────── */
+.proj-entry {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: var(--space-5);
+  margin-bottom: var(--space-3);
+  position: relative;
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: var(--space-4);
+  align-items: start;
 }
-
-.proj-scribble-line {
-  display: block;
-  height: 0.48rem;
-  margin-bottom: 0.9rem;
-  /* Two crossing hatched patterns at different angles create the scratchy
-     scribble texture. The first set is slightly wider strokes at -8deg,
-     the second is thinner at +7deg. */
-  background:
-    repeating-linear-gradient(-8deg,
-      rgba(72, 52, 34, 0.18) 0,
-      rgba(72, 52, 34, 0.18) 2px,
-      transparent 2px,
-      transparent 5px
-    ),
-    repeating-linear-gradient(7deg,
-      rgba(72, 52, 34, 0.14) 0,
-      rgba(72, 52, 34, 0.14) 1.5px,
-      transparent 1.5px,
-      transparent 6px
-    );
-  filter: blur(0.25px);
-  opacity: 0.45;
+.proj-entry .proj-name {
+  font-size: var(--fs-h2);
+  font-weight: 600;
+  color: var(--text);
+  margin: 0 0 var(--space-2);
+  grid-column: 1;
 }
-
-/* Varying widths per line so the scribbles don't look uniform. */
-.proj-scribble-line:nth-child(1) { width: 82%; }
-.proj-scribble-line:nth-child(2) { width: 68%; }
-.proj-scribble-line:nth-child(3) { width: 74%; }
-
-
-/* ==========================================================================
- * BRASS PAGE CORNERS — Decorative Metal Brackets
- * ==========================================================================
- * Four small L-shaped brackets positioned at each corner of the ledger,
- * simulating the brass corner protectors found on expensive leather-bound
- * books. Each is a 24x24px absolutely-positioned element using two
- * adjacent borders to form the L-shape.
- *
- * The top corners use the brighter brass color (catching the lamp light),
- * while the bottom corners use the dimmer variant (in shadow). Each has
- * a subtle inset box-shadow that simulates the slight bevel / reflective
- * edge of polished metal.
- * ========================================================================== */
-
-.proj-corner {
-  position: absolute;
-  width: 24px;
-  height: 24px;
-  z-index: 3;
-  pointer-events: none;
+.proj-entry .proj-desc {
+  color: var(--text-2);
+  font-size: var(--fs-body);
+  line-height: 1.5;
+  margin: 0;
+  grid-column: 1;
 }
-
-/* Top-left corner — bright brass, inset glow from upper-left. */
-.proj-corner--tl {
-  top: 8px;
-  left: 8px;
-  border-top: 2px solid var(--brass);
-  border-left: 2px solid var(--brass);
-  box-shadow: inset 1px 1px 2px rgba(180, 148, 62, 0.3);
+.proj-entry .proj-link {
+  display: inline-block;
+  margin-top: var(--space-3);
+  font-family: var(--font-mono);
+  font-size: var(--fs-small);
+  color: var(--accent);
+  grid-column: 1;
 }
+.proj-entry .proj-link:hover { color: var(--accent-soft); }
 
-/* Top-right corner — bright brass, inset glow from upper-right. */
-.proj-corner--tr {
-  top: 8px;
-  right: 8px;
-  border-top: 2px solid var(--brass);
-  border-right: 2px solid var(--brass);
-  box-shadow: inset -1px 1px 2px rgba(180, 148, 62, 0.3);
+
+/* ── STATUS PILL ─────────────────────────────────────────────────────── */
+.proj-stamp {
+  grid-column: 2;
+  grid-row: 1;
+  display: inline-block;
+  font-family: var(--font-mono);
+  font-size: var(--fs-tiny);
+  font-weight: 500;
+  letter-spacing: 0.04em;
+  padding: 4px 10px;
+  border-radius: 3px;
+  border: 1px solid var(--border);
+  text-transform: uppercase;
+  white-space: nowrap;
 }
-
-/* Bottom-right corner — dimmer brass (in shadow), inset glow
-   from lower-right to maintain consistent light direction. */
-.proj-corner--br {
-  bottom: 8px;
-  right: 8px;
-  border-bottom: 2px solid var(--brass-dim);
-  border-right: 2px solid var(--brass-dim);
-  box-shadow: inset -1px -1px 2px rgba(138, 108, 46, 0.2);
-}
-
-/* Bottom-left corner — dimmer brass, inset glow from lower-left. */
-.proj-corner--bl {
-  bottom: 8px;
-  left: 8px;
-  border-bottom: 2px solid var(--brass-dim);
-  border-left: 2px solid var(--brass-dim);
-  box-shadow: inset 1px -1px 2px rgba(138, 108, 46, 0.2);
-}
+.proj-stamp--active   { background: rgba(26, 209, 163, 0.15); color: var(--success); border-color: rgba(26, 209, 163, 0.35); }
+.proj-stamp--complete { background: rgba(51, 153, 255, 0.15); color: var(--accent);  border-color: rgba(51, 153, 255, 0.35); }
+.proj-stamp--shelved  { background: var(--surface-2); color: var(--text-3); }
 
 
-/* ==========================================================================
- * RESPONSIVE BREAKPOINTS
- * ==========================================================================
- * The ledger adapts to three narrower viewport widths. At each step,
- * the page shrinks its max-width and padding, the leather spine narrows,
- * and purely decorative elements (ribbon, brass corners) are hidden to
- * keep the layout clean and functional on smaller screens.
- * ========================================================================== */
-
-/* TABLET (1080px and below) — The ledger narrows from 760px to 640px and
-   padding is reduced slightly. The leather spine and decorative elements
-   remain visible at this size since there is still adequate space. */
-@media (max-width: 1080px) {
-  .proj-ledger {
-    max-width: 640px;
-    padding: 2.5rem 2.4rem 3rem 2.8rem;
-  }
-}
-
-/* MOBILE (760px and below) — The ledger stretches to nearly full width
-   with small horizontal margins. The leather spine narrows from 28px to
-   18px to save space. The ribbon bookmark and brass corner brackets are
-   hidden entirely — they would be too small to read and would crowd the
-   content. The title and stamp sizes are reduced for the smaller viewport. */
+/* ── RESPONSIVE ──────────────────────────────────────────────────────── */
 @media (max-width: 760px) {
-  .proj-ledger {
-    max-width: 100%;
-    margin: 0 1rem;
-    padding: 2rem 1.6rem 2.5rem 2rem;
-  }
-
-  .proj-ledger::before {
-    width: 18px;
-    left: -18px;
-  }
-
-  .proj-ribbon {
-    display: none;
-  }
-
-  .proj-corner {
-    display: none;
-  }
-
-  .proj-title h1 {
-    font-size: 2.4rem;
-  }
-
-  .proj-stamp {
-    font-size: 0.56rem;
-  }
-}
-
-/* SMALL MOBILE (420px and below) — Tightest layout. Padding is compressed
-   further and the leather spine shrinks to just 10px (a thin decorative
-   strip). The multi-layer page-edge box-shadow is simplified to a single
-   edge line and one drop shadow to reduce visual noise at this scale.
-   Typography sizes are reduced across the board. */
-@media (max-width: 420px) {
-  .proj-ledger {
-    margin: 0 0.5rem;
-    padding: 1.6rem 1.2rem 2rem 1.4rem;
-  }
-
-  .proj-ledger::before {
-    width: 10px;
-    left: -10px;
-  }
-
-  /* Simplified page-edge shadow: only one visible page edge and a softer,
-     smaller desk shadow. The three-layer page depth effect from desktop
-     would look cluttered at this size. */
-  .proj-ledger {
-    box-shadow:
-      3px 0 0 -1px var(--paper-mid),
-      8px 8px 20px rgba(0, 0, 0, 0.3);
-  }
-
-  .proj-title h1 {
-    font-size: 2rem;
-  }
-
-  .proj-section-heading {
-    font-size: 1rem;
-  }
-
-  .proj-name {
-    font-size: 1rem;
-  }
-
-  .proj-desc {
-    font-size: 0.82rem;
-  }
+  .proj-title { padding: var(--space-4); }
+  .proj-title h1 { font-size: var(--fs-h1); }
+  .proj-entry { padding: var(--space-4); }
+  .proj-entry .proj-name { font-size: var(--fs-h3); text-transform: uppercase; letter-spacing: 0.08em; }
 }

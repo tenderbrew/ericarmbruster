@@ -1,2093 +1,428 @@
-/*
- * ==========================================================================
- * sy-styles.css — Seymour Memorial Page Stylesheet
- * ==========================================================================
- *
- * A tribute page for Seymour, a Jack Russell Terrier (2010–2025).
- *
- * All rules are scoped under the `.sy-page` body class so they never leak
- * into other routes on the site.  The visual language is inspired by a
- * leather-bound photo album / scrapbook:
- *
- *   - Deep navy and dark leather backgrounds give the feel of a book cover
- *   - Cream / ivory paper cards emulate album pages
- *   - Gilt (gold) accents on borders, flourishes, and text mimic gold
- *     leaf embossing found on memorial books
- *   - Sepia-toned photographs, decorative photo-mount corners, and slight
- *     random rotations recreate the look of hand-placed Polaroids
- *   - Decorative motifs (paw prints, dog collar, bone divider, dog bowl,
- *     doghouse, cushion) add warmth and personality
- *   - A lightbox overlay lets visitors view photos full-screen
- *
- * Typography:  Playfair Display (headings), Lora (body), Herr Von
- *              Muellerhoff (script / handwritten accents)
- *
- * Color palette: navy leather base, warm cream/ivory paper, gilt gold
- *                accents, sepia tones, collar red, wood browns
- * ==========================================================================
- */
+/* ==========================================================================
+   sy-styles.css — Seymour memorial (photo album)
+   --------------------------------------------------------------------------
+   Bespoke aesthetic: an open photo album resting on a dark leather
+   surface. Outer chrome is deep brown leather; the main content area
+   floats above it as an aged parchment "page" with paper texture, drop
+   shadow, and worn edges. Compact horizontal cover (portrait + name
+   plate + Cormorant Italic dedication + Agnes Sligh Turnbull quote),
+   then the 5-column album of mounted prints with Cormorant Italic
+   captions, then the "Faithful Companion" tribute prose as an afterword.
+   Spot color: --c-seymour. Lightbox preserved.
+   ========================================================================== */
 
 
-/* ---------------------------------------------------------------------------
- * CUSTOM PROPERTIES (DESIGN TOKENS)
- *
- * Every color, font stack, and spacing value used on the Seymour page is
- * stored here as a CSS custom property on `.sy-page`.  This makes it easy
- * to tweak the palette or typography in one place.
- *
- * The naming convention uses prefixes to group tokens:
- *   --sy-leather-*   : dark navy backgrounds (the album "cover")
- *   --sy-cream/ivory  : light paper surfaces (the album "pages")
- *   --sy-gilt-*       : gold / brass accent tones
- *   --sy-sepia-*      : warm brown text tones
- *   --sy-collar-*     : red collar and buckle accent
- *   --sy-wood/shingle : doghouse browns
- *   --sy-cushion-*    : slate-blue dog-bed tones
- *   --sy-paw          : very faint gold used for decorative paw prints
- * --------------------------------------------------------------------------- */
-.sy-page {
-  --sy-leather: #1e2a3a;
-  --sy-leather-dark: #0e1520;
-  --sy-leather-grain: #162230;
-  --sy-cream: #f4ecd8;
-  --sy-cream-dark: #e8dcc4;
-  --sy-ivory: #faf6ee;
-  --sy-gilt: #c9a24e;
-  --sy-gilt-bright: #e4c56a;
-  --sy-gilt-dim: #8a6b2e;
-  --sy-sepia: #704214;
-  --sy-sepia-soft: rgba(112, 66, 20, 0.3);
-  --sy-warm-gray: #9a8e7e;
-  --sy-warm-gray-dark: #6b6052;
-  --sy-text-on-cream: #3a2e1e;
-  --sy-text-on-leather: #e8dcc4;
-  --sy-shadow: rgba(0, 0, 0, 0.6);
-  --sy-section-gap: 2rem;
-  --sy-font-serif: "Playfair Display", "Georgia", serif;
-  --sy-font-body: "Lora", "Libre Caslon Text", serif;
-  --sy-font-script: "Herr Von Muellerhoff", cursive;
-
-  --sy-collar-red: #8b2020;
-  --sy-collar-red-dark: #5c1414;
-  --sy-collar-buckle: #c4a44a;
-  --sy-wood: #6b4226;
-  --sy-wood-dark: #3e2415;
-  --sy-wood-light: #8b6240;
-  --sy-shingle: #4a3220;
-  --sy-cushion: #3a4a5e;
-  --sy-cushion-light: #4e6278;
-  --sy-paw: rgba(201, 162, 78, 0.08);
-}
-
-
-/* ---------------------------------------------------------------------------
- * FULL-PAGE BACKGROUND — LEATHER ALBUM COVER TEXTURE
- *
- * Four layered gradients build up a subtle leather-grain effect:
- *   1. Fine 45-degree diagonal lines — mimics the cross-hatched grain of
- *      leather when viewed up close
- *   2. Fine -45-degree diagonal lines — a second pass at the opposing angle
- *      completes the cross-hatch and adds depth
- *   3. A radial vignette centered at the top — creates a gentle highlight
- *      as if the album is lit from above
- *   4. A vertical linear gradient from very dark navy to slightly lighter
- *      and back — this is the base leather color
- * --------------------------------------------------------------------------- */
-.sy-page {
+/* ── PAGE-WIDE — leather surface around an aged parchment album page ─── */
+body.sy-page {
   background:
-    repeating-linear-gradient(
-      45deg,
-      rgba(20, 35, 60, 0.06) 0,
-      rgba(20, 35, 60, 0.06) 1px,
-      transparent 1px,
-      transparent 4px
-    ),
-    repeating-linear-gradient(
-      -45deg,
-      rgba(25, 40, 65, 0.04) 0,
-      rgba(25, 40, 65, 0.04) 1px,
-      transparent 1px,
-      transparent 5px
-    ),
-    radial-gradient(ellipse at 50% 0%, rgba(30, 50, 80, 0.3), transparent 60%),
-    linear-gradient(180deg, #0e1520, #162230 40%, #0e1520 100%);
+    radial-gradient(ellipse 100% 80% at center top, #3d2a1c 0%, #1f1610 100%),
+    #1f1610;
+  color: var(--ink);
+  min-height: 100vh;
 }
 
-/* Disable the global site's decorative ::before / ::after pseudo-elements
-   (drop caps, background artwork, etc.) that would conflict with the
-   Seymour page's own visual treatment. */
-.sy-page::before,
-.sy-page::after {
-  display: none;
+/* Site footer — sits on the leather. (Top bar uses the canonical cream
+   masthead from tufte-base.css for cross-page consistency.) */
+.sy-page .site-footer {
+  background: transparent;
+  border-top: 1px solid rgba(232, 216, 176, 0.18);
+}
+.sy-page .site-footer__inner {
+  color: rgba(232, 216, 176, 0.55);
+  font-style: italic;
 }
 
-
-/* ---------------------------------------------------------------------------
- * GLOBAL CONTAINER OVERRIDES
- *
- * The shared `styles.css` applies clip-path masks, paper backgrounds, and
- * box-shadows to `.container` elements inside heroes and sections.  On the
- * Seymour page we strip all of that so each section can supply its own
- * scrapbook-themed surface (album pages, doghouse panels, etc.).
- * --------------------------------------------------------------------------- */
-.sy-page .hero .container {
+/* Default links inside the page — twilight spot color. */
+.sy-page main a {
+  color: var(--c-seymour);
   background: none;
-  box-shadow: none;
-  clip-path: none;
   padding: 0;
 }
-
-.sy-page main:not(.home-rooms) > section .container {
+.sy-page main a:hover {
+  color: #6b7798;
   background: none;
-  box-shadow: none;
-  clip-path: none;
-  padding: 1.4rem 0;
 }
 
-/* Disable the shared stylesheet's decorative drop-cap on first paragraphs —
-   the Seymour page uses its own typographic treatment. */
-.sy-page main:not(.home-rooms) > section .container p:first-of-type::first-letter {
-  float: none;
-  font-size: inherit;
-  line-height: inherit;
-  padding-right: 0;
-  color: inherit;
-  font-family: inherit;
-}
-
-
-/* ---------------------------------------------------------------------------
- * BORDER-RADIUS LOCK-INS
- *
- * Several decorative elements (timeline dots, collar tag, bowl rim, cushion,
- * doghouse nameplate) rely on very specific border-radius values to achieve
- * their visual shapes.  The `!important` flags here guarantee that no
- * inherited or utility class can flatten these shapes.
- * --------------------------------------------------------------------------- */
-
-/* Timeline markers are small gilt circles; keep them perfectly round. */
-.sy-page .sy-timeline-marker {
-  border-radius: 50% !important;
-}
-
-/* The collar tag is a small rounded lozenge hanging from the collar strap. */
-.sy-page .sy-collar-tag {
-  border-radius: 9px !important;
-}
-
-/* The tag's hanging loop (the tiny arch above the tag body). */
-.sy-page .sy-collar-tag::before {
-  border-radius: 3px 3px 0 0 !important;
-}
-
-/* The collar buckle is a tiny square with just slightly rounded corners. */
-.sy-page .sy-collar::before {
-  border-radius: 2px !important;
-}
-
-/* The bowl rim is flat-bottomed with rounded top corners. */
-.sy-page .sy-bowl::before {
-  border-radius: 4px 4px 0 0 !important;
-}
-
-/* The cushion is an oval (wide ellipse) achieved with asymmetric radii. */
-.sy-page .sy-cushion-wrap {
-  border-radius: 50% / 30% !important;
-}
-
-.sy-page .sy-cushion-wrap::before {
-  border-radius: 50% / 30% !important;
-}
-
-/* The doghouse nameplate is a nearly-rectangular brass plate. */
-.sy-page .sy-doghouse-nameplate {
-  border-radius: 2px !important;
-}
-
-
-/* ---------------------------------------------------------------------------
- * SECTION SPACING
- *
- * A consistent top padding on each <section> and a bottom padding on <main>
- * keeps the vertical rhythm between album-page sections uniform.
- * --------------------------------------------------------------------------- */
-.sy-page main:not(.home-rooms) > section {
-  padding: var(--sy-section-gap) 0 0;
-}
-
-.sy-page main:not(.home-rooms) {
-  padding-bottom: var(--sy-section-gap);
-}
-
-
-/* ===========================================================================
- * REUSABLE COMPONENTS
- * =========================================================================== */
-
-
-/* ---------------------------------------------------------------------------
- * ALBUM PAGE CARD (.sy-album-page)
- *
- * The primary content surface — meant to look like a page of cream-colored
- * archival paper sitting inside the navy leather album.
- *
- * Background layers:
- *   1. Very fine horizontal lines (repeating-linear-gradient at 0 deg) add
- *      a faint ruled-paper texture
- *   2. A diagonal linear gradient from ivory → cream → darker cream gives
- *      the paper a slight warm shading, as if illuminated from the upper left
- *
- * Box-shadow layers:
- *   1. Large outer shadow lifts the card off the leather background
- *   2. Thin inner gilt border (1px inset) — the gold edge of an album page
- *   3. Wider inner glow (6px inset) — a soft ivory highlight that makes
- *      the edges look bevelled / embossed
- * --------------------------------------------------------------------------- */
-.sy-album-page {
-  position: relative;
+/* The album "page" — aged parchment floating on leather. */
+.sy-page main.page {
   background:
-    repeating-linear-gradient(
-      0deg,
-      rgba(180, 160, 120, 0.04) 0,
-      rgba(180, 160, 120, 0.04) 1px,
-      transparent 1px,
-      transparent 3px
-    ),
-    linear-gradient(170deg, var(--sy-ivory), var(--sy-cream) 60%, var(--sy-cream-dark));
-  padding: 1.6rem 1.4rem;
+    repeating-linear-gradient(45deg, rgba(80, 50, 20, 0.018) 0 1px, transparent 1px 4px),
+    repeating-linear-gradient(-45deg, rgba(80, 50, 20, 0.018) 0 1px, transparent 1px 4px),
+    radial-gradient(ellipse 100% 90% at center, #f0e5c8 0%, #e6d8b4 100%);
+  margin: var(--space-5) auto var(--space-5);
+  padding: var(--space-7) var(--space-7) var(--space-8);
+  position: relative;
+  border: 1px solid rgba(60, 40, 20, 0.18);
   box-shadow:
-    0 12px 28px var(--sy-shadow),
-    inset 0 0 0 1px rgba(201, 162, 78, 0.25),
-    inset 0 0 0 6px rgba(244, 236, 216, 0.15);
-  color: var(--sy-text-on-cream);
+    0 18px 48px -16px rgba(0, 0, 0, 0.7),
+    0 6px 14px -6px rgba(0, 0, 0, 0.4),
+    inset 0 0 0 1px rgba(245, 230, 195, 0.4);
 }
 
-
-/* ---------------------------------------------------------------------------
- * GILT RULE (.sy-gilt-rule)
- *
- * A decorative horizontal line styled to resemble a gold-leaf divider
- * stamped into the paper.  The gradient fades in from transparent on
- * both ends so the rule tapers elegantly rather than starting abruptly.
- * --------------------------------------------------------------------------- */
-.sy-gilt-rule {
-  border: none;
-  height: 2px;
-  background: linear-gradient(
-    90deg,
-    transparent,
-    var(--sy-gilt-dim) 20%,
-    var(--sy-gilt) 50%,
-    var(--sy-gilt-dim) 80%,
-    transparent
-  );
-  margin: 1rem auto;
-  max-width: 60%;
-}
-
-
-/* ---------------------------------------------------------------------------
- * EMBOSSED TEXT (.sy-embossed)
- *
- * Simulates gold-foil embossing on the album cover.  Three text-shadow
- * layers work together:
- *   1. A warm highlight 1px below — catches the "light" on the raised letter
- *   2. A dark shadow 1px above — the recessed edge behind the letter
- *   3. A soft diffuse glow further below — ambient shadow that lifts the
- *      text off the surface
- * --------------------------------------------------------------------------- */
-.sy-embossed {
-  font-family: var(--sy-font-serif);
-  color: var(--sy-gilt);
-  text-shadow:
-    0 1px 0 rgba(255, 220, 140, 0.4),
-    0 -1px 0 rgba(0, 0, 0, 0.3),
-    0 2px 6px rgba(0, 0, 0, 0.2);
-}
-
-
-/* ---------------------------------------------------------------------------
- * SECTION HEADING (.sy-section-heading)
- *
- * Used for sub-section titles inside album-page cards (e.g., "Stories",
- * "Quick Facts").  Sepia-colored to harmonize with the cream paper.
- * Fluid sizing via clamp() keeps headings proportional across viewports.
- * --------------------------------------------------------------------------- */
-.sy-section-heading {
-  font-family: var(--sy-font-serif);
-  color: var(--sy-sepia);
-  font-size: clamp(1.1rem, 2vw, 1.6rem);
-  text-align: center;
-  margin-bottom: 0.3rem;
-}
-
-
-/* ---------------------------------------------------------------------------
- * PHOTO MOUNT CORNERS (.sy-photo-mount)
- *
- * Recreates the small L-shaped corner brackets used in traditional photo
- * albums to hold snapshots in place.  The component uses all four available
- * pseudo-elements plus two helper <span> elements to place gilt-colored
- * corner brackets at each corner of the photo:
- *
- *   ::before  — top-left    (border-right and border-bottom removed)
- *   ::after   — top-right   (border-left and border-bottom removed)
- *   .sy-corner-bl — bottom-left  (border-right and border-top removed)
- *   .sy-corner-br — bottom-right (border-left and border-top removed)
- *
- * Each "corner" is a 20×20px box with only two adjacent borders visible,
- * producing the classic album-corner shape.
- * --------------------------------------------------------------------------- */
-.sy-photo-mount {
-  position: relative;
-  padding: 8px;
-}
-
-.sy-photo-mount::before,
-.sy-photo-mount::after,
-.sy-photo-mount .sy-corner-bl,
-.sy-photo-mount .sy-corner-br {
-  content: "";
+/* Subtle aged-paper edge darkening (vignette inside the page). */
+.sy-page main.page::before {
+  content: '';
   position: absolute;
-  width: 20px;
-  height: 20px;
-  border: 2px solid var(--sy-gilt-dim);
+  inset: 0;
   pointer-events: none;
-  z-index: 2;
-}
-
-/* Top-left corner bracket — only top and left borders shown. */
-.sy-photo-mount::before {
-  top: 0;
-  left: 0;
-  border-right: none;
-  border-bottom: none;
-}
-
-/* Top-right corner bracket — only top and right borders shown. */
-.sy-photo-mount::after {
-  top: 0;
-  right: 0;
-  border-left: none;
-  border-bottom: none;
-}
-
-/* Bottom-left corner bracket — only bottom and left borders shown. */
-.sy-photo-mount .sy-corner-bl {
-  bottom: 0;
-  left: 0;
-  border-right: none;
-  border-top: none;
-}
-
-/* Bottom-right corner bracket — only bottom and right borders shown. */
-.sy-photo-mount .sy-corner-br {
-  bottom: 0;
-  right: 0;
-  border-left: none;
-  border-top: none;
-}
-
-
-/* ---------------------------------------------------------------------------
- * BONE DIVIDER (.sy-bone-divider)
- *
- * A purely decorative section divider shaped like a small dog bone,
- * rendered entirely with CSS gradients — no images required.
- *
- * ::before creates the bone's shaft (the narrow middle bar) using a
- * vertical gradient that gives the gilt bar a cylindrical sheen.
- *
- * ::after draws the four rounded knobs at each end of the bone.  Each
- * knob is a radial-gradient circle positioned at one of the four corners
- * (top-left, bottom-left, top-right, bottom-right) of the element.
- * Together with the shaft, they form the recognizable bone silhouette.
- * --------------------------------------------------------------------------- */
-.sy-bone-divider {
-  position: relative;
-  height: 14px;
-  margin: 1.2rem auto;
-  max-width: 120px;
-  background: none;
-  border: none;
-}
-
-/* Bone shaft — a thin horizontal bar with a top-to-bottom gold sheen. */
-.sy-bone-divider::before {
-  content: "";
-  position: absolute;
-  top: 4px;
-  left: 14px;
-  right: 14px;
-  height: 6px;
-  background: linear-gradient(180deg, var(--sy-gilt-bright), var(--sy-gilt), var(--sy-gilt-dim));
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
-}
-
-/* Bone knobs — four radial-gradient circles (two at each end). */
-.sy-bone-divider::after {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background:
-    /* Left-top knob */
-    radial-gradient(circle 7px at 7px 3px, var(--sy-gilt-bright), var(--sy-gilt) 60%, transparent 62%),
-    /* Left-bottom knob */
-    radial-gradient(circle 7px at 7px 11px, var(--sy-gilt-bright), var(--sy-gilt) 60%, transparent 62%),
-    /* Right-top knob */
-    radial-gradient(circle 7px at calc(100% - 7px) 3px, var(--sy-gilt-bright), var(--sy-gilt) 60%, transparent 62%),
-    /* Right-bottom knob */
-    radial-gradient(circle 7px at calc(100% - 7px) 11px, var(--sy-gilt-bright), var(--sy-gilt) 60%, transparent 62%);
-}
-
-
-/* ---------------------------------------------------------------------------
- * DOG COLLAR (.sy-collar)
- *
- * A decorative red leather collar strap that appears as a visual separator.
- *
- * Background layers:
- *   1. Very fine vertical lines — simulates the woven nylon / stitching
- *      texture of a real collar
- *   2. A vertical gradient from lighter red to dark red — gives the strap
- *      a cylindrical, three-dimensional appearance
- *
- * Dashed top and bottom borders mimic the decorative stitching along the
- * collar's edges.
- *
- * Box-shadow layers create the depth:
- *   1. Outer drop shadow — the collar floats above the page
- *   2. Inner top highlight — the light catching the upper edge
- *   3. Inner bottom shadow — the recessed lower edge
- * --------------------------------------------------------------------------- */
-.sy-collar {
-  position: relative;
-  width: 100%;
-  max-width: 280px;
-  height: 22px;
-  margin: 0 auto;
-  background:
-    repeating-linear-gradient(
-      90deg,
-      rgba(255, 255, 255, 0.03) 0,
-      rgba(255, 255, 255, 0.03) 1px,
-      transparent 1px,
-      transparent 3px
-    ),
-    linear-gradient(180deg, #a02828, var(--sy-collar-red), var(--sy-collar-red-dark));
-  box-shadow:
-    0 3px 8px rgba(0, 0, 0, 0.5),
-    inset 0 1px 0 rgba(255, 255, 255, 0.15),
-    inset 0 -1px 0 rgba(0, 0, 0, 0.3);
-  /* Dashed borders simulate the decorative edge stitching. */
-  border-top: 2px dashed rgba(220, 180, 140, 0.35);
-  border-bottom: 2px dashed rgba(220, 180, 140, 0.35);
-}
-
-/* Collar buckle — a small metallic square with a brass gradient, sitting
-   at about 12% from the left edge of the collar strap. */
-.sy-collar::before {
-  content: "";
-  position: absolute;
-  top: 50%;
-  left: 12%;
-  transform: translateY(-50%);
-  width: 14px;
-  height: 14px;
-  border: 2px solid var(--sy-collar-buckle);
-  background: linear-gradient(135deg, #d4b44a, #a88430, #d4b44a);
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.4);
-  border-radius: 2px !important;
-}
-
-/* ---------------------------------------------------------------------------
- * COLLAR TAG (.sy-collar-tag)
- *
- * The small gold ID tag hanging from the center of the collar.  It sits
- * below the collar strap via a negative `bottom` offset.
- *
- * ::before draws the tiny metal ring / loop that connects the tag to the
- * collar — a half-arch shape created by removing the bottom border from
- * a tiny bordered box with rounded top corners.
- * --------------------------------------------------------------------------- */
-.sy-collar-tag {
-  position: absolute;
-  bottom: -20px;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 36px;
-  height: 18px;
-  background: linear-gradient(180deg, var(--sy-gilt-bright), var(--sy-gilt));
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
-  z-index: 2;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border-radius: 9px !important;
-}
-
-/* Tag hanging loop — tiny open arch connecting the tag to the collar. */
-.sy-collar-tag::before {
-  content: "";
-  position: absolute;
-  top: -6px;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 6px;
-  height: 8px;
-  border: 1.5px solid var(--sy-gilt-dim);
-  border-bottom: none;
-  border-radius: 3px 3px 0 0 !important;
-}
-
-
-/* ---------------------------------------------------------------------------
- * PAW PRINT DECORATIONS (.sy-paw)
- *
- * Faint gilt paw-print shapes scattered around sections as decorative
- * background elements.  They are nearly invisible (opacity 0.07) and use
- * pointer-events: none so they never interfere with interaction.
- *
- * Each paw is built from two pseudo-elements:
- *   ::before  — the large central pad (an oval with asymmetric border-radius
- *               to create the classic bean-shaped pad)
- *   ::after   — four small toe pads arranged in an arc above the central pad,
- *               each drawn as a radial-gradient circle positioned at a
- *               specific coordinate within the element
- *
- * The position-variant classes (.sy-paw--hero-l, etc.) place and rotate
- * individual paw prints at different locations across each section.
- * --------------------------------------------------------------------------- */
-.sy-paw {
-  position: absolute;
-  width: 32px;
-  height: 36px;
-  opacity: 0.07;
-  pointer-events: none;
-}
-
-/* Central pad — a wider-bottomed oval shape. */
-.sy-paw::before {
-  content: "";
-  position: absolute;
-  bottom: 0;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 18px;
-  height: 16px;
-  background: var(--sy-gilt);
-  border-radius: 50% 50% 50% 50% / 40% 40% 60% 60% !important;
-}
-
-/* Four toe pads — radial gradient circles at different x/y positions. */
-.sy-paw::after {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 20px;
-  background:
-    radial-gradient(circle 5px at 4px 10px, var(--sy-gilt) 90%, transparent 91%),
-    radial-gradient(circle 5px at 14px 4px, var(--sy-gilt) 90%, transparent 91%),
-    radial-gradient(circle 5px at 24px 4px, var(--sy-gilt) 90%, transparent 91%),
-    radial-gradient(circle 5px at 30px 12px, var(--sy-gilt) 90%, transparent 91%);
-}
-
-/* Individual paw-print placements — each is rotated slightly for a natural,
-   "walked across the page" look. */
-.sy-paw--hero-l {
-  top: 30%;
-  left: 6%;
-  transform: rotate(-20deg);
-}
-
-.sy-paw--hero-r {
-  top: 40%;
-  right: 8%;
-  transform: rotate(15deg);
-}
-
-.sy-paw--gallery-l {
-  top: 10%;
-  left: 3%;
-  transform: rotate(-30deg);
-}
-
-.sy-paw--gallery-r {
-  bottom: 15%;
-  right: 4%;
-  transform: rotate(25deg);
-}
-
-.sy-paw--stories-l {
-  top: 20%;
-  left: 2%;
-  transform: rotate(-10deg);
-}
-
-
-/* ---------------------------------------------------------------------------
- * DOG BOWL (.sy-bowl)
- *
- * A decorative container styled to look like a stainless-steel dog bowl.
- *
- * ::before creates the metallic rim along the top of the bowl.  A four-stop
- * vertical gradient (light → medium → dark → medium) simulates the curved
- * reflective surface of polished steel.  Inner shadows add the top glint
- * and bottom depth line of a real rim.
- *
- * ::after adds faint left and right borders down the sides of the bowl body,
- * suggesting the reflective edges of a curved metal surface.
- * --------------------------------------------------------------------------- */
-.sy-bowl {
-  position: relative;
-  overflow: visible;
-}
-
-/* Steel rim at the top of the bowl. */
-.sy-bowl::before {
-  content: "";
-  position: absolute;
-  top: -8px;
-  left: -4px;
-  right: -4px;
-  height: 16px;
-  background: linear-gradient(180deg,
-    #c0c0c8,
-    #a0a0a8 40%,
-    #888890 60%,
-    #a0a0a8
-  );
-  box-shadow:
-    0 2px 6px rgba(0, 0, 0, 0.4),
-    inset 0 1px 0 rgba(255, 255, 255, 0.4),
-    inset 0 -1px 0 rgba(0, 0, 0, 0.2);
-  border-radius: 4px 4px 0 0 !important;
-}
-
-/* Faint side reflections running down the bowl walls. */
-.sy-bowl::after {
-  content: "";
-  position: absolute;
-  top: 6px;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  border-left: 3px solid rgba(192, 192, 200, 0.15);
-  border-right: 3px solid rgba(192, 192, 200, 0.15);
-  pointer-events: none;
-}
-
-
-/* ---------------------------------------------------------------------------
- * DOGHOUSE (.sy-doghouse)
- *
- * A themed wrapper for the Stories / Timeline section.  The entire section
- * is styled to look like a wooden doghouse, with a triangular shingled
- * roof, plank-textured walls, and a brass nameplate above the entrance.
- *
- * .sy-doghouse          — outer wrapper with top padding for the roof
- * .sy-doghouse-roof     — the triangular roofline
- * .sy-doghouse-body     — the rectangular "walls" containing the content
- * .sy-doghouse-nameplate— a small brass plaque ("SEYMOUR")
- * --------------------------------------------------------------------------- */
-.sy-doghouse {
-  position: relative;
-  padding-top: 2.4rem;
-}
-
-/* Roof container — sized to hold the triangular clip-path shape. */
-.sy-doghouse-roof {
-  position: relative;
-  height: 48px;
-  margin: 0 -1.2rem;
-  overflow: hidden;
-}
-
-/* Roof shingles — the ::before draws the actual triangular roof.
-   Background layers:
-     1. Vertical lines (repeating at 18px intervals) simulate individual
-        shingle columns / wood planks
-     2. A vertical gradient from dark shingle brown to darker wood creates
-        depth under the roofline
-   clip-path: polygon() cuts the rectangle into a centered triangle.
-*/
-.sy-doghouse-roof::before {
-  content: "";
-  position: absolute;
-  bottom: 0;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 120%;
-  height: 100%;
-  background:
-    repeating-linear-gradient(
-      90deg,
-      rgba(0, 0, 0, 0.1) 0,
-      rgba(0, 0, 0, 0.1) 1px,
-      transparent 1px,
-      transparent 18px
-    ),
-    linear-gradient(180deg, var(--sy-shingle), var(--sy-wood-dark));
-  clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
-}
-
-/* Shadow strip along the bottom of the roof where it meets the walls. */
-.sy-doghouse-roof::after {
-  content: "";
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  height: 4px;
-  background: linear-gradient(180deg, rgba(0, 0, 0, 0.3), transparent);
-}
-
-/* Doghouse walls — the main content area.
-   Background layers:
-     1. Horizontal lines every 28px — wood plank seams
-     2. Very fine vertical lines every 4px — the wood grain running
-        along the planks
-     3. Base gradient from medium to dark brown — overall wood color
-   Thick borders and an inner top-highlight shadow complete the plank look.
-*/
-.sy-doghouse-body {
-  position: relative;
-  background:
-    repeating-linear-gradient(
-      0deg,
-      rgba(0, 0, 0, 0.08) 0,
-      rgba(0, 0, 0, 0.08) 1px,
-      transparent 1px,
-      transparent 28px
-    ),
-    repeating-linear-gradient(
-      90deg,
-      rgba(255, 255, 255, 0.02) 0,
-      rgba(255, 255, 255, 0.02) 1px,
-      transparent 1px,
-      transparent 4px
-    ),
-    linear-gradient(180deg, var(--sy-wood), var(--sy-wood-dark));
-  padding: 1.6rem 1.4rem;
-  border-left: 4px solid var(--sy-wood-dark);
-  border-right: 4px solid var(--sy-wood-dark);
-  border-bottom: 6px solid var(--sy-wood-dark);
-  box-shadow:
-    0 8px 24px rgba(0, 0, 0, 0.5),
-    inset 0 2px 0 rgba(255, 255, 255, 0.05);
-}
-
-/* Brass nameplate above the doghouse entrance — styled like a small
-   engraved metal plate with gold gradient, uppercase tracking, and a
-   tight fit-content width so it centers naturally. */
-.sy-doghouse-nameplate {
-  display: block;
-  text-align: center;
-  margin: -0.6rem auto 1rem;
-  padding: 0.25rem 1.2rem;
-  background: linear-gradient(180deg, var(--sy-gilt-bright), var(--sy-gilt));
-  color: var(--sy-leather-dark);
-  font-family: var(--sy-font-serif);
-  font-size: 0.62rem;
-  font-weight: 700;
-  letter-spacing: 2px;
-  text-transform: uppercase;
-  width: fit-content;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
-}
-
-/* Inside the doghouse, timeline text switches to light colors so it is
-   legible against the dark wood background.  The timeline cards themselves
-   are album-page-style cream paper inserts, so their inner text reverts
-   back to dark sepia / cream tones. */
-.sy-doghouse-body .sy-timeline-title {
-  color: var(--sy-cream);
-}
-
-.sy-doghouse-body .sy-timeline-card p {
-  color: var(--sy-cream-dark);
-}
-
-/* Timeline cards inside the doghouse use the same cream paper texture
-   as .sy-album-page, providing contrast against the dark wood walls. */
-.sy-doghouse-body .sy-timeline-card {
-  background:
-    repeating-linear-gradient(
-      0deg,
-      rgba(180, 160, 120, 0.04) 0,
-      rgba(180, 160, 120, 0.04) 1px,
-      transparent 1px,
-      transparent 3px
-    ),
-    linear-gradient(170deg, var(--sy-ivory), var(--sy-cream) 60%, var(--sy-cream-dark));
-  color: var(--sy-text-on-cream);
-}
-
-/* Override the earlier light-on-dark rule: inside cream cards, titles and
-   body text should be dark again for readability. */
-.sy-doghouse-body .sy-timeline-title {
-  color: var(--sy-sepia);
-}
-
-.sy-doghouse-body .sy-timeline-card p {
-  color: var(--sy-text-on-cream);
-}
-
-
-/* ---------------------------------------------------------------------------
- * DOG CUSHION (.sy-cushion-wrap)
- *
- * A decorative oval wrapper styled to look like a plush dog bed / cushion.
- * Used to frame quotes or special content.
- *
- * Background layers:
- *   1 & 2. Two opposing diagonal micro-stripe patterns (45deg and -45deg)
- *          create a subtle fabric / quilted weave texture
- *   3. A radial gradient from lighter to darker slate-blue gives the
- *      cushion a soft, pillowy dome shape (lighter in the center where
- *      it would catch light)
- *
- * The elliptical border-radius (50% / 30%) makes the element a wide oval
- * rather than a circle.  Multiple inset shadows simulate the plumpness:
- *   - Inner top highlight — light catching the top curve
- *   - Inner bottom shadow — the compressed underside
- *
- * ::before draws a dashed border inset slightly from the edges, mimicking
- * decorative piping / stitching around the cushion's seam.
- * --------------------------------------------------------------------------- */
-.sy-cushion-wrap {
-  position: relative;
-  max-width: 480px;
-  margin: 0 auto 1.2rem;
-  padding: 1.4rem 2rem;
-  background:
-    /* Diagonal weave — first pass */
-    repeating-linear-gradient(
-      45deg,
-      rgba(255, 255, 255, 0.02) 0,
-      rgba(255, 255, 255, 0.02) 1px,
-      transparent 1px,
-      transparent 3px
-    ),
-    /* Diagonal weave — second pass, opposing angle */
-    repeating-linear-gradient(
-      -45deg,
-      rgba(0, 0, 0, 0.02) 0,
-      rgba(0, 0, 0, 0.02) 1px,
-      transparent 1px,
-      transparent 3px
-    ),
-    /* Pillowy dome highlight in center */
-    radial-gradient(ellipse at 50% 40%, var(--sy-cushion-light), var(--sy-cushion));
-  border-radius: 50% / 30% !important;
-  box-shadow:
-    0 8px 20px rgba(0, 0, 0, 0.5),
-    inset 0 4px 12px rgba(255, 255, 255, 0.08),
-    inset 0 -4px 12px rgba(0, 0, 0, 0.15);
-}
-
-/* Cushion piping / decorative stitching — a dashed oval border inset
-   from the edges, following the same elliptical shape. */
-.sy-cushion-wrap::before {
-  content: "";
-  position: absolute;
-  top: 8px;
-  left: 12px;
-  right: 12px;
-  bottom: 8px;
-  border: 2px dashed rgba(255, 255, 255, 0.08);
-  border-radius: 50% / 30% !important;
-  pointer-events: none;
-}
-
-
-/* ===========================================================================
- * HERO SECTION
- *
- * The hero is the opening composition visitors see first: a large portrait
- * of Seymour in an ornate gilt frame, his name in embossed gold, the
- * years of his life in script, and a short epitaph.  On desktop, these
- * elements are laid out in a three-column grid (portrait | text | tribute).
- * =========================================================================== */
-
-/* Hero wrapper — centers content, adds gilt bottom border, and contains
-   the radial glow and scattered paw prints via overflow: hidden. */
-.sy-hero {
-  position: relative;
-  padding: 5rem 0 3.5rem;
-  text-align: center;
-  overflow: hidden;
-  border-bottom: 2px solid var(--sy-gilt-dim);
-}
-
-/* A large, soft radial glow of warm gold centered behind the portrait.
-   This halo effect draws the eye to Seymour's photo and gives the hero
-   an almost candlelit warmth.  Multiple gradient stops ensure a smooth
-   fall-off from subtle gold to fully transparent. */
-.sy-hero-glow {
-  position: absolute;
-  top: 20%;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 600px;
-  height: 600px;
-  background: radial-gradient(
-    ellipse at center,
-    rgba(201, 162, 78, 0.12) 0%,
-    rgba(201, 162, 78, 0.06) 30%,
-    rgba(201, 162, 78, 0.02) 50%,
-    transparent 70%
-  );
-  pointer-events: none;
+  background: radial-gradient(ellipse 95% 90% at center, transparent 60%, rgba(80, 50, 20, 0.12) 100%);
   z-index: 0;
 }
-
-/* Ensures the text and portrait sit above the background glow layer. */
-.sy-hero-inner {
+.sy-page main.page > * {
   position: relative;
   z-index: 1;
 }
 
-/* Desktop three-column layout: portrait (fixed 280px) | flexible center
-   column (auto for the text block) | 1fr for the tribute card. */
-.sy-hero-layout {
+
+/* ── COVER — compact horizontal frontispiece ─────────────────────────── */
+.sy-masthead {
   display: grid;
-  grid-template-columns: 280px auto 1fr;
-  gap: 2.5rem;
+  grid-template-columns: auto 1fr;
+  gap: var(--space-6);
   align-items: center;
-  margin: 0 auto;
+  margin: 0 0 var(--space-5);
+  padding-bottom: var(--space-5);
+  border-bottom: 1px solid var(--rule);
 }
 
-/* Stacks the name, flourish, dates, and epitaph vertically and centers
-   them within the middle grid column. */
-.sy-hero-text {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 0.6rem;
-}
-
-/* ---------------------------------------------------------------------------
- * GILT FLOURISH (.sy-hero-flourish)
- *
- * An ornamental divider that appears above and below the hero name:
- *   — line — diamond — line —
- *
- * The flourish line is a short horizontal bar with a center-fading gold
- * gradient.  The diamond is a tiny square rotated 45 degrees with a
- * glowing box-shadow to make it sparkle.
- * --------------------------------------------------------------------------- */
-.sy-hero-flourish {
-  display: flex;
-  align-items: center;
-  gap: 0.6rem;
-  margin-bottom: 0.4rem;
-}
-
-.sy-hero-flourish--lower {
-  margin-bottom: 0;
-  margin-top: 0.2rem;
-}
-
-.sy-flourish-line {
-  display: block;
-  width: 60px;
-  height: 2px;
-  background: linear-gradient(90deg, transparent, var(--sy-gilt), transparent);
-}
-
-/* The center diamond — rotated 45deg to sit on its point. */
-.sy-flourish-diamond {
-  display: block;
-  width: 8px;
-  height: 8px;
-  background: var(--sy-gilt);
-  transform: rotate(45deg);
-  box-shadow: 0 0 6px rgba(201, 162, 78, 0.5);
-}
-
-/* ---------------------------------------------------------------------------
- * HERO PORTRAIT FRAME (.sy-portrait-frame)
- *
- * An ornate frame around Seymour's main photo, built with layered borders
- * and shadows to look like a gilt picture frame:
- *
- *   - 3px solid gilt border — the inner moulding of the frame
- *   - 6px padding — the mat / spacer between frame and photo
- *   - Box-shadow layers:
- *       1. A warm gold glow (40px spread) — ambient light hitting the frame
- *       2. A deep drop shadow (40px) — the frame's shadow on the wall
- *       3. A 1px inner gilt ring — the bevelled inner edge of the frame
- *   - ::before pseudo-element with a 1px border at -8px inset creates
- *     the outer frame moulding (the wider decorative border)
- *
- * The photo itself receives a subtle sepia filter and slight contrast boost
- * for a warm, timeless, vintage look.
- * --------------------------------------------------------------------------- */
-.sy-hero-portrait {
-  width: 280px;
-}
-
-.sy-portrait-frame {
+.sy-portrait {
   position: relative;
-  padding: 6px;
-  border: 3px solid var(--sy-gilt-dim);
-  box-shadow:
-    0 0 40px rgba(201, 162, 78, 0.15),
-    0 12px 40px rgba(0, 0, 0, 0.6),
-    inset 0 0 0 1px rgba(201, 162, 78, 0.2);
+  margin: 0;
+  width: 14rem;
+  flex-shrink: 0;
 }
-
-/* Outer frame moulding — a thin gilt line outside the main border. */
-.sy-portrait-frame::before {
-  content: "";
-  position: absolute;
-  inset: -8px;
-  border: 1px solid rgba(201, 162, 78, 0.15);
-  pointer-events: none;
-}
-
-/* Sepia filter + contrast boost give the portrait a warm vintage tone. */
-.sy-hero-portrait img {
+.sy-portrait img {
   display: block;
   width: 100%;
   height: auto;
-  filter: sepia(0.25) contrast(1.05);
+  background: #fcf6e2;
+  padding: 10px 10px 14px;
+  box-shadow: 0 4px 16px -3px rgba(28, 22, 17, 0.28);
+  filter: sepia(0.18) saturate(0.92) contrast(0.95);
+  border: none;
+}
+.sy-portrait::before, .sy-portrait::after {
+  content: '';
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background: rgba(40, 30, 20, 0.55);
+  z-index: 2;
+  pointer-events: none;
+}
+.sy-portrait::before {
+  top: 0; left: 0;
+  clip-path: polygon(0 0, 100% 0, 0 100%);
+}
+.sy-portrait::after {
+  top: 0; right: 0;
+  clip-path: polygon(0 0, 100% 0, 100% 100%);
 }
 
-/* Seymour's name in large embossed gold. clamp() provides fluid sizing
-   from 3rem on small screens to 5rem on large. */
-.sy-hero-name {
-  font-size: clamp(3rem, 6vw, 5rem);
-  letter-spacing: 6px;
-  margin: 0.3rem 0 0;
-  text-transform: uppercase;
-}
+.sy-cover-text { text-align: left; }
 
-/* Life dates in a flowing script font — the handwritten quality adds
-   an intimate, personal touch. */
-.sy-hero-years {
-  font-family: var(--sy-font-script);
-  font-size: clamp(1.8rem, 3.5vw, 2.6rem);
-  color: var(--sy-gilt-bright);
-  margin: 0;
-  text-shadow: 0 2px 8px rgba(0, 0, 0, 0.4);
-}
-
-/* Brief italicized epitaph beneath the dates — the max-width keeps the
-   line length comfortable for reading. */
-.sy-hero-epitaph {
-  font-family: var(--sy-font-body);
+.sy-name {
+  font-family: var(--font-serif);
+  font-size: 3.4rem;
+  font-weight: 500;
   font-style: italic;
-  font-size: clamp(0.9rem, 1.5vw, 1.1rem);
-  color: var(--sy-text-on-leather);
-  opacity: 0.85;
-  max-width: 34ch;
-  margin: 0.4rem 0 0;
-  line-height: 1.6;
-}
-
-/* Additional paw-print placements specific to the hero section,
-   positioned at the top-left and bottom-right for balance. */
-.sy-paw--hero-tl {
-  top: 12%;
-  left: 14%;
-  transform: rotate(-45deg);
-}
-
-.sy-paw--hero-br {
-  bottom: 10%;
-  right: 12%;
-  transform: rotate(30deg);
-}
-
-
-/* ---------------------------------------------------------------------------
- * NARRATIVE / OBITUARY SECTION
- *
- * A two-column layout (wider text | narrower profile sidebar) for the
- * written memorial.  The body copy uses the Lora serif at a comfortable
- * reading size and line height.  The profile list is a definition list
- * laid out in a two-column CSS grid (label | value).
- * --------------------------------------------------------------------------- */
-.sy-narrative-grid {
-  display: grid;
-  grid-template-columns: 1.4fr 1fr;
-  gap: 1.6rem;
-  align-items: start;
-}
-
-.sy-obituary p {
-  font-family: var(--sy-font-body);
-  font-size: 0.92rem;
-  color: var(--sy-text-on-cream);
-  line-height: 1.7;
-  margin-bottom: 0.8rem;
-}
-
-.sy-obituary p:last-child {
-  margin-bottom: 0;
-}
-
-/* Quick-facts sidebar — a definition list in a two-column grid layout
-   (dt for the label, dd for the value). */
-.sy-profile-list {
-  display: grid;
-  grid-template-columns: auto 1fr;
-  gap: 0.4rem 1rem;
-  font-family: var(--sy-font-body);
-  font-size: 0.85rem;
+  color: var(--c-seymour);
   margin: 0;
+  line-height: 1;
+  letter-spacing: 0.005em;
+}
+.sy-dates {
+  margin: var(--space-2) 0 0;
+  font-family: 'Cormorant Garamond', serif;
+  font-style: italic;
+  font-size: 1.25rem;
+  color: var(--ink-3);
+  letter-spacing: 0.04em;
+  font-variant: normal;
+}
+.sy-subtitle {
+  margin: 4px 0 0;
+  font-family: 'Cormorant Garamond', serif;
+  font-style: italic;
+  font-size: 1.15rem;
+  color: var(--ink-2);
+}
+
+/* Inline epigraph — small handwritten quote inside the cover text. */
+.sy-cover-text .sy-epigraph {
+  margin: var(--space-4) 0 0;
+  font-family: 'Cormorant Garamond', serif;
+  font-style: italic;
+  font-size: 1.2rem;
+  line-height: 1.4;
+  color: var(--ink);
+  border: none;
   padding: 0;
+  max-width: none;
+  text-align: left;
 }
-
-.sy-profile-list dt {
-  font-weight: 700;
-  color: var(--sy-sepia);
+.sy-cover-text .sy-epigraph cite {
+  display: block;
+  margin-top: 4px;
+  font-family: var(--font-serif);
+  font-style: normal;
+  font-variant: small-caps;
+  letter-spacing: 0.1em;
+  font-size: 0.78rem;
+  color: var(--ink-3);
 }
-
-.sy-profile-list dd {
-  color: var(--sy-text-on-cream);
-  margin: 0;
-}
+.sy-cover-text .sy-epigraph cite::before { content: '\2014\00A0'; }
 
 
-/* ---------------------------------------------------------------------------
- * GALLERY SECTION
- *
- * A filterable photo gallery presented as Polaroid-style snapshots arranged
- * in a grid.  Includes category tabs, photo cards with mount corners and
- * handwritten captions, and a lightbox for full-screen viewing.
- * --------------------------------------------------------------------------- */
-
-/* Gallery section heading — matches the style of other section headings
-   but allows for a larger maximum font size. */
-.sy-gallery-heading {
+/* ── SECTION HEADINGS — handwritten section dividers ─────────────────── */
+.sy-section-head {
+  font-family: 'Cormorant Garamond', serif;
+  font-style: italic;
+  font-weight: 500;
+  font-size: 2rem;
+  color: var(--c-seymour);
+  margin: var(--space-7) 0 var(--space-3);
+  padding-bottom: var(--space-2);
+  border-bottom: 1px solid var(--rule);
   text-align: center;
-  font-size: clamp(1.6rem, 3vw, 2.4rem);
-  margin-bottom: 0.3rem;
-}
-
-/* ---------------------------------------------------------------------------
- * GALLERY TABS (.sy-gallery-tabs, .sy-tab)
- *
- * Category filter buttons ("All", "Puppy Days", "Adventures", etc.) that
- * show/hide gallery items via JavaScript.  Styled as small leather-dark
- * tab buttons with gilt borders.
- *
- * .sy-tab--active highlights the currently selected category with a
- * filled gold background, making it look like a pressed brass button.
- * --------------------------------------------------------------------------- */
-.sy-gallery-tabs {
-  display: flex;
-  justify-content: center;
-  gap: 0.3rem;
-  margin-bottom: 1.4rem;
-  flex-wrap: wrap;
-}
-
-.sy-tab {
-  font-family: var(--sy-font-serif);
-  font-size: 0.72rem;
-  padding: 0.35rem 0.8rem;
-  background: var(--sy-leather-dark);
-  color: var(--sy-cream-dark);
-  border: 1px solid var(--sy-gilt-dim);
-  cursor: pointer;
-  letter-spacing: 0.5px;
-  transition: background 0.2s, color 0.2s;
-}
-
-.sy-tab:hover {
-  background: var(--sy-leather);
-  color: var(--sy-gilt-bright);
-}
-
-/* Active tab — gold-filled to indicate the selected filter category. */
-.sy-tab--active {
-  background: var(--sy-gilt);
-  color: var(--sy-leather-dark);
-  border-color: var(--sy-gilt);
+  letter-spacing: 0.01em;
 }
 
 
-/* ---------------------------------------------------------------------------
- * GALLERY GRID & ITEMS
- *
- * A 3-column CSS grid of gallery cards.  Each card is a cream-colored
- * rectangle with a gilt border and drop shadow, resembling a mounted
- * photo in an album.
- *
- * Items with data-sy-hidden="true" are filtered out by JavaScript and
- * hidden via display: none.
- * --------------------------------------------------------------------------- */
+/* ── PROSE (afterword below the album) ───────────────────────────────── */
+.sy-page p {
+  font-size: 1.2rem;
+  line-height: 1.7;
+  color: var(--ink);
+}
+.sy-lead::first-letter {
+  float: left;
+  font-family: var(--font-serif);
+  font-size: 4em;
+  line-height: 0.85;
+  margin: 0.05em 0.08em -0.05em 0;
+  color: var(--c-seymour);
+  font-weight: 500;
+}
+
+.sy-gallery-intro {
+  font-family: 'Cormorant Garamond', serif !important;
+  font-style: italic !important;
+  font-size: 1.2rem !important;
+  line-height: 1.35 !important;
+  color: var(--ink-2) !important;
+  text-align: center;
+  margin: 0 0 var(--space-5);
+}
+
+
+/* ── GALLERY — photo album, 5 columns ─────────────────────────────────
+   Each photo is presented as a print: cream "paper" border, very slight
+   rotation (varies per row), diagonal black-tape corner mounts, and a
+   Cormorant Italic caption beneath. */
 .sy-gallery-grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 1.2rem;
+  grid-template-columns: repeat(5, 1fr);
+  gap: var(--space-7) var(--space-5);
+  margin: 0 0 var(--space-7);
 }
 
 .sy-gallery-item {
-  background: var(--sy-cream);
-  border: 1px solid rgba(201, 162, 78, 0.3);
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
-  overflow: hidden;
+  margin: 0;
+  position: relative;
 }
 
-/* JavaScript-controlled visibility for category filtering. */
-.sy-gallery-item[data-sy-hidden="true"] {
-  display: none;
+/* Photo "print" — cream paper border with subtle drop shadow. */
+.photo {
+  position: relative;
+  background: #fcf6e2;
+  padding: 8px 8px 10px;
+  box-shadow: 0 5px 14px -4px rgba(28, 22, 17, 0.32), 0 1px 3px rgba(28, 22, 17, 0.18);
+  transition: transform 200ms ease, box-shadow 200ms ease;
 }
-
-/* ---------------------------------------------------------------------------
- * PHOTO PLACEHOLDERS
- *
- * Stand-in surfaces shown before photos are loaded or where a photo
- * slot is reserved.  A warm gradient mimics an unexposed print.
- * Variants adjust the minimum height for portrait (tall) and landscape
- * (wide) slots.
- * --------------------------------------------------------------------------- */
-.sy-photo-placeholder {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background: linear-gradient(135deg, #d4c8a8, #b8a880);
-  min-height: 160px;
-  color: var(--sy-warm-gray-dark);
-  font-family: var(--sy-font-body);
-  font-style: italic;
-  font-size: 0.8rem;
-}
-
-.sy-photo-placeholder--tall {
-  min-height: 240px;
-}
-
-.sy-photo-placeholder--wide {
-  min-height: 120px;
-}
-
-
-/* ---------------------------------------------------------------------------
- * VINTAGE POLAROID PHOTO TREATMENT
- *
- * When a gallery item also has .sy-photo-mount, it becomes a Polaroid-style
- * card: thick cream-paper padding on all sides with extra space at the
- * bottom for a handwritten caption (the classic Polaroid white border).
- *
- * Background layers recreate aged photographic paper:
- *   1. Fine diagonal lines (35deg) add a very subtle fiber texture
- *   2. A near-vertical gradient (175deg) from ivory to warm tan mimics
- *      the natural yellowing and darkening of vintage paper at the edges
- *
- * The images themselves receive CSS filters:
- *   - sepia(0.2)       — warm vintage color cast
- *   - saturate(0.8)    — slightly muted, less vivid than modern photos
- *   - contrast(1.06)   — gentle contrast pop to keep details visible
- *   - brightness(0.96) — slightly darkened, as if the print has aged
- *
- * aspect-ratio: 4/5 with object-fit: cover ensures a uniform Polaroid
- * crop regardless of the source photo's dimensions.
- * --------------------------------------------------------------------------- */
-.sy-gallery-item.sy-photo-mount {
-  padding: 12px 12px 42px;
-  background:
-    repeating-linear-gradient(
-      35deg,
-      rgba(160, 140, 100, 0.04) 0,
-      rgba(160, 140, 100, 0.04) 1px,
-      transparent 1px,
-      transparent 4px
-    ),
-    linear-gradient(175deg, #faf6ee, #ede4d0 50%, #e0d4b8);
-  box-shadow:
-    0 6px 16px rgba(0, 0, 0, 0.35),
-    0 1px 3px rgba(0, 0, 0, 0.15);
-}
-
-/* Vintage film look applied to all gallery images. */
-.sy-gallery-item img {
+.photo img {
   display: block;
   width: 100%;
-  aspect-ratio: 4 / 5;
+  aspect-ratio: 1;
   object-fit: cover;
-  object-position: center 30%;
-  filter: sepia(0.2) saturate(0.8) contrast(1.06) brightness(0.96);
+  cursor: pointer;
+  filter: sepia(0.18) saturate(0.92) contrast(0.95);
+  transition: filter 200ms ease;
 }
 
-/* Organic scrapbook rotations — each photo is slightly tilted using
-   nth-child selectors on a 6-item cycle.  This breaks the rigidity of
-   the grid and gives the gallery the charming imprecision of photos
-   placed by hand into a scrapbook. */
-.sy-gallery-item:nth-child(6n+1) { transform: rotate(-0.7deg); }
-.sy-gallery-item:nth-child(6n+2) { transform: rotate(0.5deg); }
-.sy-gallery-item:nth-child(6n+3) { transform: rotate(-0.3deg); }
-.sy-gallery-item:nth-child(6n+4) { transform: rotate(0.8deg); }
-.sy-gallery-item:nth-child(6n+5) { transform: rotate(-0.5deg); }
-.sy-gallery-item:nth-child(6n+6) { transform: rotate(0.3deg); }
-
-/* Reposition the bottom corner brackets so they sit at the image edge
-   (above the caption area) rather than at the very bottom of the card. */
-.sy-gallery-item .sy-corner-bl { bottom: 30px; }
-.sy-gallery-item .sy-corner-br { bottom: 30px; }
-
-/* Handwritten caption displayed in the Polaroid-style bottom strip.
-   Always visible (opacity: 1) since it sits in the white label area
-   rather than overlaying the photo itself.  Flexbox spreads the
-   caption text to the left and the year to the right. */
-.sy-gallery-item .sy-photo-caption {
+/* Diagonal corner mounts — top-left and bottom-right tape tabs. */
+.photo::before, .photo::after {
+  content: '';
   position: absolute;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  padding: 2px 14px 8px;
-  background: none;
-  opacity: 1;
-  transition: none;
-  display: flex;
-  justify-content: space-between;
-  align-items: baseline;
+  width: 18px;
+  height: 18px;
+  background: rgba(40, 30, 20, 0.62);
+  z-index: 2;
+  pointer-events: none;
+}
+.photo::before {
+  top: 0; left: 0;
+  clip-path: polygon(0 0, 100% 0, 0 100%);
+}
+.photo::after {
+  bottom: 0; right: 0;
+  clip-path: polygon(100% 0, 100% 100%, 0 100%);
 }
 
-.sy-gallery-item .sy-caption-text {
-  font-family: var(--sy-font-body);
-  font-size: 0.8rem;
-  color: var(--sy-sepia);
-  line-height: 1.3;
+/* Subtle pasted-in rotations cycling per nth-child. */
+.sy-gallery-item:nth-child(7n+1) .photo { transform: rotate(-0.7deg); }
+.sy-gallery-item:nth-child(7n+2) .photo { transform: rotate(0.5deg); }
+.sy-gallery-item:nth-child(7n+3) .photo { transform: rotate(-0.4deg); }
+.sy-gallery-item:nth-child(7n+5) .photo { transform: rotate(0.6deg); }
+.sy-gallery-item:nth-child(7n+6) .photo { transform: rotate(-0.3deg); }
+.sy-gallery-item:nth-child(7n)   .photo { transform: rotate(0.4deg); }
+
+/* Hover lift — straighten and raise. */
+.sy-gallery-item:hover .photo {
+  transform: rotate(0deg) translateY(-3px);
+  box-shadow: 0 8px 18px -4px rgba(28, 22, 17, 0.3);
+  z-index: 5;
+}
+.sy-gallery-item:hover .photo img {
+  filter: sepia(0.05) saturate(1) contrast(1);
 }
 
-.sy-gallery-item .sy-caption-year {
-  font-family: var(--sy-font-body);
-  font-size: 0.75rem;
-  color: var(--sy-warm-gray);
-}
-
-/* ---------------------------------------------------------------------------
- * TRIBUTE CARD (.sy-tribute)
- *
- * A special album-page card that sits in the third column of the hero grid
- * on desktop.  It contains a short written tribute with body copy.
- * On mobile it drops below the hero into a standalone block.
- * --------------------------------------------------------------------------- */
-.sy-tribute {
-  max-width: none;
-  margin: 0;
-  align-self: center;
-  padding: 1.2rem 1.2rem;
-}
-
-.sy-tribute .sy-section-heading {
-  font-size: clamp(0.95rem, 1.6vw, 1.2rem);
-}
-
-.sy-tribute .sy-section-heading {
+/* Caption — handwritten title + small-caps year. */
+.sy-gallery-item figcaption {
+  margin-top: var(--space-3);
   text-align: center;
+  line-height: 1.2;
 }
-
-.sy-tribute .sy-bone-divider {
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.sy-tribute p {
-  font-family: var(--sy-font-body);
-  font-size: 0.78rem;
-  color: var(--sy-text-on-cream);
-  line-height: 1.65;
-  margin-bottom: 0.5rem;
-  text-align: left;
-}
-
-.sy-tribute p:last-child {
-  margin-bottom: 0;
-}
-
-
-/* ---------------------------------------------------------------------------
- * PULL QUOTE BANNER (.sy-pullquote-banner)
- *
- * A full-width decorative strip (usually placed just below the nav or
- * between major sections) that displays a short quotation in embossed
- * gilt text.  The background simulates an engraved brass plate:
- *
- *   1. A vertical gradient adds darker edges at top and bottom, as if
- *      the plate is inset into the surface
- *   2. A horizontal gradient from dark leather → slightly lighter navy
- *      and back creates a subtle convex sheen across the plate
- *
- * Flanking the quote text are two decorative gilt lines (::before and
- * ::after) that serve as visual brackets.
- * --------------------------------------------------------------------------- */
-.sy-pullquote-banner {
-  background:
-    linear-gradient(180deg, rgba(0, 0, 0, 0.15), transparent 30%, transparent 70%, rgba(0, 0, 0, 0.15)),
-    linear-gradient(90deg, var(--sy-leather-dark), #1a2636 30%, #1e2a3a 50%, #1a2636 70%, var(--sy-leather-dark));
-  border-top: 1px solid rgba(201, 162, 78, 0.12);
-  border-bottom: 1px solid rgba(201, 162, 78, 0.12);
-  padding: 0.75rem 1.5rem;
-  text-align: center;
-}
-
-.sy-pullquote {
-  margin: 0;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 1rem;
-}
-
-/* Gilt accent lines flanking the quote — decorative horizontal rules that
-   fade from transparent on the outer edge to gold in the center. */
-.sy-pullquote::before,
-.sy-pullquote::after {
-  content: "";
-  flex: 0 0 auto;
-  width: 50px;
-  height: 1px;
-  background: linear-gradient(90deg, transparent, var(--sy-gilt-dim), transparent);
-}
-
-/* Quote text — serif italic in gold with a deep text-shadow for the
-   engraved / stamped-into-metal appearance. */
-.sy-pullquote p {
-  font-family: var(--sy-font-serif);
+.sy-caption-text {
+  display: block;
+  font-family: 'Cormorant Garamond', serif;
   font-style: italic;
-  font-size: 0.78rem;
-  color: var(--sy-gilt);
-  letter-spacing: 0.5px;
-  line-height: 1.4;
-  margin: 0;
-  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.5);
+  font-size: 1.15rem;
+  color: var(--ink);
+  font-weight: 500;
+  letter-spacing: 0.01em;
 }
-
-/* Attribution in flowing script — dimmer gold to visually subordinate
-   it to the quote itself. */
-.sy-pullquote cite {
-  font-family: var(--sy-font-script);
-  font-size: 1.1rem;
+.sy-caption-year {
+  display: block;
+  margin-top: 4px;
+  font-family: var(--font-serif);
   font-style: normal;
-  color: var(--sy-gilt-dim);
-  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.4);
+  font-variant: small-caps;
+  letter-spacing: 0.14em;
+  font-size: 0.74rem;
+  color: var(--ink-3);
 }
 
 
-/* ---------------------------------------------------------------------------
- * LIGHTBOX — FULL-SCREEN PHOTO VIEWER (.sy-lightbox)
- *
- * An overlay system that lets visitors click a gallery photo to view it at
- * full size.  The lightbox covers the entire viewport with a dark,
- * blurred backdrop (backdrop-filter: blur) and centers the enlarged photo.
- *
- * States:
- *   Default — invisible (opacity: 0, visibility: hidden)
- *   .sy-lightbox--open — visible (opacity: 1, visibility: visible)
- *   Transitions smoothly between states over 0.3s
- *
- * Navigation controls:
- *   .sy-lightbox-close — X button in the top-right corner
- *   .sy-lightbox-prev  — left arrow for previous photo
- *   .sy-lightbox-next  — right arrow for next photo
- *
- * The image is constrained to 90vw / 80vh so it always fits the screen.
- * A gilt border and deep drop shadow frame the enlarged photo.
- * --------------------------------------------------------------------------- */
+/* ── LIGHTBOX ──────────────────────────────────────────────────────────── */
 .sy-lightbox {
+  display: none;
   position: fixed;
   inset: 0;
-  z-index: 9999;
-  background: rgba(8, 12, 20, 0.92);
-  backdrop-filter: blur(6px);
-  display: flex;
-  flex-direction: column;
+  z-index: 100;
+  background: rgba(28, 22, 17, 0.92);
   align-items: center;
   justify-content: center;
-  padding: 2rem;
-  opacity: 0;
-  visibility: hidden;
-  transition: opacity 0.3s, visibility 0.3s;
+  padding: var(--space-5);
 }
+.sy-lightbox.sy-lightbox--open { display: flex; }
 
-/* Open state — make the overlay fully visible. */
-.sy-lightbox--open {
-  opacity: 1;
-  visibility: visible;
-}
-
-/* Close button — positioned in the top-right, styled as a large text
-   character (x) that brightens on hover. */
-.sy-lightbox-close {
-  position: absolute;
-  top: 1rem;
-  right: 1.5rem;
-  background: none;
-  border: none;
-  color: var(--sy-cream-dark);
-  font-size: 2rem;
-  cursor: pointer;
-  line-height: 1;
-  opacity: 0.7;
-  transition: opacity 0.2s;
-}
-
-.sy-lightbox-close:hover {
-  opacity: 1;
-}
-
-/* Previous / Next navigation arrows — large clickable buttons centered
-   vertically on the left and right edges of the viewport. */
-.sy-lightbox-prev,
-.sy-lightbox-next {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  background: none;
-  border: none;
-  color: var(--sy-cream-dark);
-  font-size: 3rem;
-  cursor: pointer;
-  opacity: 0.5;
-  transition: opacity 0.2s;
-  padding: 1rem;
-  z-index: 2;
-}
-
-.sy-lightbox-prev { left: 1rem; }
-.sy-lightbox-next { right: 1rem; }
-
-.sy-lightbox-prev:hover,
-.sy-lightbox-next:hover {
-  opacity: 1;
-}
-
-/* The enlarged photo — constrained to viewport with a gilt-accented border
-   and a dramatic drop shadow to separate it from the dark backdrop. */
 .sy-lightbox-img {
   max-width: 90vw;
   max-height: 80vh;
-  object-fit: contain;
-  box-shadow: 0 12px 48px rgba(0, 0, 0, 0.6);
-  border: 3px solid rgba(201, 162, 78, 0.25);
+  border: 1px solid rgba(216, 204, 174, 0.4);
+  background: #fcf6e2;
+  padding: 12px;
 }
 
-/* Caption text below the enlarged photo — gold on dark for readability. */
 .sy-lightbox-caption {
-  margin-top: 1rem;
-  font-family: var(--sy-font-body);
-  font-size: 1rem;
-  color: var(--sy-gilt);
-  text-shadow: 0 1px 4px rgba(0, 0, 0, 0.5);
-}
-
-
-/* ---------------------------------------------------------------------------
- * DEFAULT PHOTO CAPTION (.sy-photo-caption)
- *
- * A hover-reveal caption bar that sits at the bottom of each gallery photo.
- * Defaults to transparent (opacity: 0) and fades in on hover over the
- * gallery item.  This is the base style; the Polaroid-mount variant above
- * overrides these values to keep captions always visible.
- * --------------------------------------------------------------------------- */
-.sy-photo-caption {
   position: absolute;
-  bottom: 8px;
-  left: 8px;
-  right: 8px;
-  padding: 0.4rem 0.6rem;
-  background: rgba(30, 17, 10, 0.85);
-  opacity: 0;
-  transition: opacity 0.25s;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-/* Reveal the caption overlay when the gallery item is hovered. */
-.sy-gallery-item:hover .sy-photo-caption {
-  opacity: 1;
-}
-
-.sy-caption-text {
-  font-family: var(--sy-font-body);
-  font-size: 0.68rem;
-  color: var(--sy-cream);
-}
-
-.sy-caption-year {
-  font-family: var(--sy-font-body);
-  font-size: 0.75rem;
-  color: var(--sy-gilt-bright);
-}
-
-
-/* ---------------------------------------------------------------------------
- * STORIES / TIMELINE SECTION
- *
- * A vertical timeline of life events, styled with a gilt vertical line on
- * the left edge and small gilt dot markers at each entry.  Each event
- * consists of a title, a script-font date, and a body paragraph.
- *
- * The vertical line (::before on .sy-timeline) uses a top-to-bottom
- * gradient that fades out near the bottom, giving the impression that
- * the timeline trails off into memory.
- *
- * Timeline markers are small radial-gradient circles with an off-center
- * highlight (at 40% 35%) that gives them a metallic, brad-like sheen.
- * --------------------------------------------------------------------------- */
-.sy-stories-heading {
+  bottom: var(--space-5);
+  left: 50%;
+  transform: translateX(-50%);
+  font-family: 'Cormorant Garamond', serif;
+  font-style: italic;
+  font-size: 1.1rem;
+  color: var(--paper);
+  background: rgba(28, 22, 17, 0.55);
+  border: 1px solid rgba(216, 204, 174, 0.3);
+  padding: var(--space-2) var(--space-4);
+  max-width: 90vw;
   text-align: center;
-  font-size: clamp(1.6rem, 3vw, 2.4rem);
-  margin-bottom: 0.3rem;
 }
 
-.sy-timeline {
-  position: relative;
-  padding-left: 2rem;
-}
-
-/* Vertical gilt line running alongside the timeline entries.
-   Fades from gold to transparent at the bottom. */
-.sy-timeline::before {
-  content: "";
+.sy-lightbox-close,
+.sy-lightbox-prev,
+.sy-lightbox-next {
   position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0.6rem;
-  width: 2px;
-  background: linear-gradient(
-    180deg,
-    var(--sy-gilt),
-    var(--sy-gilt-dim) 80%,
-    transparent
-  );
-}
-
-.sy-timeline-item {
-  position: relative;
-  margin-bottom: 1.4rem;
-}
-
-.sy-timeline-item:last-child {
-  margin-bottom: 0;
-}
-
-/* Timeline dot marker — a small metallic circle with an off-center
-   highlight to simulate a brass brad / pushpin. */
-.sy-timeline-marker {
-  position: absolute;
-  left: -1.65rem;
-  top: 1.2rem;
-  width: 12px;
-  height: 12px;
-  background: radial-gradient(circle at 40% 35%, var(--sy-gilt-bright), var(--sy-gilt) 60%, var(--sy-gilt-dim));
-  box-shadow: 0 0 6px rgba(201, 162, 78, 0.4);
-}
-
-.sy-timeline-card {
-  margin-left: 0.5rem;
-}
-
-.sy-timeline-title {
-  font-family: var(--sy-font-serif);
-  font-size: 1.05rem;
-  color: var(--sy-sepia);
-  margin-bottom: 0.15rem;
-}
-
-/* Dates in flowing script font — adds a handwritten-journal quality. */
-.sy-timeline-date {
-  font-family: var(--sy-font-script);
-  font-size: 1.2rem;
-  color: var(--sy-gilt);
-  display: block;
-  margin-bottom: 0.4rem;
-}
-
-.sy-timeline-card p {
-  font-family: var(--sy-font-body);
-  font-size: 0.88rem;
-  color: var(--sy-text-on-cream);
-  line-height: 1.65;
-  margin: 0;
-}
-
-
-/* ---------------------------------------------------------------------------
- * MEDIA SECTION (VIDEO & AUDIO PLACEHOLDERS)
- *
- * A two-column grid (wider video slot | narrower audio slot) for multimedia
- * content.  The video placeholder mimics an old projection screen with a
- * dark sepia gradient.  The audio button is styled as a small brass control
- * with a gold gradient and serif lettering.
- * --------------------------------------------------------------------------- */
-.sy-media-heading {
-  text-align: center;
-  font-size: clamp(1.6rem, 3vw, 2.4rem);
-  margin-bottom: 0.3rem;
-}
-
-.sy-media-grid {
-  display: grid;
-  grid-template-columns: 1.6fr 1fr;
-  gap: 1.4rem;
-  align-items: start;
-}
-
-/* Video placeholder — a dark sepia box with a dashed gilt border and
-   centered play icon + descriptive text. */
-.sy-video-placeholder {
+  font-family: var(--font-serif);
+  font-size: 1.8rem;
+  color: var(--paper);
+  background: rgba(28, 22, 17, 0.5);
+  border: 1px solid rgba(216, 204, 174, 0.3);
+  width: 44px;
+  height: 44px;
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
-  min-height: 280px;
-  background: linear-gradient(135deg, #2a1a10, #1a0e06);
-  border: 2px dashed var(--sy-gilt-dim);
-  color: var(--sy-warm-gray);
-  font-family: var(--sy-font-body);
-  font-style: italic;
-  font-size: 0.85rem;
-  gap: 0.6rem;
+  line-height: 1;
+  transition: background 120ms ease, border-color 120ms ease;
 }
-
-.sy-play-icon {
-  font-size: 2.4rem;
-  color: var(--sy-gilt);
+.sy-lightbox-close:hover,
+.sy-lightbox-prev:hover,
+.sy-lightbox-next:hover {
+  background: rgba(28, 22, 17, 0.85);
+  border-color: var(--paper-soft);
 }
-
-.sy-audio-desc {
-  font-family: var(--sy-font-body);
-  font-size: 0.85rem;
-  color: var(--sy-text-on-cream);
-  margin-bottom: 0.8rem;
-}
-
-/* Audio play button — styled like a small brass plaque that brightens
-   slightly on hover via a CSS filter. */
-.sy-audio-btn {
-  display: inline-flex;
-  align-items: center;
-  gap: 0.5rem;
-  padding: 0.5rem 1.2rem;
-  background: linear-gradient(180deg, var(--sy-gilt-bright), var(--sy-gilt));
-  color: var(--sy-leather-dark);
-  border: 1px solid var(--sy-gilt);
-  font-family: var(--sy-font-serif);
-  font-size: 0.78rem;
-  letter-spacing: 0.5px;
-  cursor: pointer;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
-  transition: filter 0.15s;
-}
-
-.sy-audio-btn:hover {
-  filter: brightness(1.1);
-}
+.sy-lightbox-close { top: var(--space-4); right: var(--space-4); }
+.sy-lightbox-prev  { top: 50%; left: var(--space-4);  transform: translateY(-50%); height: 56px; }
+.sy-lightbox-next  { top: 50%; right: var(--space-4); transform: translateY(-50%); height: 56px; }
 
 
-/* ---------------------------------------------------------------------------
- * ACCESSIBILITY — FOCUS-VISIBLE OUTLINES
- *
- * Custom focus rings for interactive elements, using the bright gilt color
- * so keyboard navigation indicators are clearly visible against the dark
- * leather and cream backgrounds.
- * --------------------------------------------------------------------------- */
-.sy-page .sy-tab:focus-visible,
-.sy-page .sy-audio-btn:focus-visible {
-  outline: 2px solid var(--sy-gilt-bright);
-  outline-offset: 2px;
-}
-
-
-/* ---------------------------------------------------------------------------
- * FOOTER
- *
- * The page footer is stripped of the global background so it blends with
- * the leather page.  A gilt top border separates it from the content.
- * Contains a closing quote, an optional donation link, and a copyright line.
- * --------------------------------------------------------------------------- */
-.sy-page footer {
-  background: none;
-  border-top: 1px solid var(--sy-gilt-dim);
-}
-
-.sy-page footer .container {
-  color: var(--sy-warm-gray);
-}
-
-.sy-footer-inner {
-  text-align: center;
-}
-
-/* Closing quote — italicized body font in cream, centered with a max-width
-   for comfortable reading length. */
-.sy-footer-quote {
-  font-family: var(--sy-font-body);
-  font-style: italic;
-  font-size: 0.88rem;
-  color: var(--sy-cream);
-  max-width: 36ch;
-  margin: 0 auto;
-  line-height: 1.6;
-  text-align: center;
-}
-
-/* Quote attribution — smaller serif, in warm gray to subordinate it. */
-.sy-footer-quote cite {
-  display: block;
-  margin-top: 0.3rem;
-  font-family: var(--sy-font-serif);
-  font-size: 0.72rem;
-  font-style: normal;
-  color: var(--sy-warm-gray);
-}
-
-/* Donation / memorial link — gilt underlined text that brightens on hover. */
-.sy-donation-link {
-  font-family: var(--sy-font-serif);
-  font-size: 0.74rem;
-  color: var(--sy-gilt);
-  text-decoration: underline;
-  letter-spacing: 0.3px;
-}
-
-.sy-donation-link:hover {
-  color: var(--sy-gilt-bright);
-}
-
-/* Copyright line — very small, muted text. */
-.sy-footer-copy {
-  margin-top: 0.8rem;
-  font-size: 0.62rem;
-  color: var(--sy-warm-gray-dark);
-}
-
-
-/* ===========================================================================
- * RESPONSIVE BREAKPOINTS
- * =========================================================================== */
-
-
-/* ---------------------------------------------------------------------------
- * TABLET BREAKPOINT (max-width: 1080px)
- *
- * At this width the three-column hero layout can no longer fit comfortably.
- * Key changes:
- *   - Hero grid collapses to a single centered column (portrait, then text,
- *     then tribute card stacked vertically)
- *   - The portrait constrains to a max-width rather than a fixed width
- *   - The tribute card gets a max-width cap and centers its content
- *   - The narrative section (obituary + profile sidebar) becomes a single
- *     column — profile details move below the obituary
- *   - Gallery grid drops from 3 columns to 2
- *   - Media grid (video + audio) also becomes single-column
- * --------------------------------------------------------------------------- */
+/* ── RESPONSIVE ────────────────────────────────────────────────────────── */
 @media (max-width: 1080px) {
-  .sy-hero-layout {
+  .sy-gallery-grid { grid-template-columns: repeat(4, 1fr); gap: var(--space-6) var(--space-4); }
+}
+@media (max-width: 800px) {
+  .sy-gallery-grid { grid-template-columns: repeat(3, 1fr); gap: var(--space-5) var(--space-4); }
+  .sy-section-head { font-size: 1.75rem; }
+  .photo { padding: 6px 6px 8px; }
+  .photo::before, .photo::after { width: 14px; height: 14px; }
+  .sy-caption-text { font-size: 1.05rem; }
+}
+@media (max-width: 640px) {
+  .sy-masthead {
     grid-template-columns: 1fr;
-    justify-items: center;
-    gap: 1.5rem;
-  }
-
-  .sy-hero-portrait {
-    width: auto;
-    max-width: 280px;
-  }
-
-  .sy-tribute {
-    max-width: 600px;
-  }
-
-  .sy-tribute .sy-section-heading {
     text-align: center;
+    gap: var(--space-4);
   }
-
-  .sy-tribute .sy-bone-divider {
-    margin-left: auto;
-  }
-
-  .sy-narrative-grid {
-    grid-template-columns: 1fr;
-  }
-
-  .sy-gallery-grid {
-    grid-template-columns: repeat(2, 1fr);
-  }
-
-  .sy-media-grid {
-    grid-template-columns: 1fr;
-  }
+  .sy-portrait { margin: 0 auto; width: 12rem; }
+  .sy-cover-text { text-align: center; }
+  .sy-cover-text .sy-epigraph { text-align: center; }
+  .sy-name { font-size: 2.6rem; }
+}
+@media (max-width: 540px) {
+  .sy-gallery-grid { grid-template-columns: repeat(2, 1fr); gap: var(--space-5) var(--space-3); }
+  .sy-lead::first-letter { font-size: 3.2em; }
+}
+@media (max-width: 380px) {
+  .sy-gallery-grid { grid-template-columns: 1fr; }
 }
 
-/* ---------------------------------------------------------------------------
- * MOBILE BREAKPOINT (max-width: 760px)
- *
- * Further reductions for phone-sized screens:
- *   - Hero padding is tightened, portrait shrinks to 240px max
- *   - The warm glow behind the portrait shrinks from 600px to 400px
- *   - Collar strap gets narrower and shorter (220px / 18px)
- *   - Gallery stays at 2 columns but timeline indentation decreases
- *   - Video placeholder reduces minimum height
- *   - Doghouse roof shrinks, body padding tightens
- *   - Decorative paw prints are hidden entirely — they would overlap
- *     content at this width and become distracting
- * --------------------------------------------------------------------------- */
-@media (max-width: 760px) {
-  .sy-hero {
-    padding: 3rem 0 2rem;
-  }
-
-  .sy-hero-portrait {
-    max-width: 240px;
-  }
-
-  .sy-hero-glow {
-    width: 400px;
-    height: 400px;
-  }
-
-  .sy-collar {
-    max-width: 220px;
-    height: 18px;
-  }
-
-  .sy-gallery-grid {
-    grid-template-columns: repeat(2, 1fr);
-  }
-
-  .sy-timeline {
-    padding-left: 1.6rem;
-  }
-
-  .sy-timeline-marker {
-    left: -1.35rem;
-  }
-
-  .sy-video-placeholder {
-    min-height: 200px;
-  }
-
-  .sy-doghouse-roof {
-    height: 36px;
-  }
-
-  .sy-doghouse-body {
-    padding: 1.2rem 1rem;
-  }
-
-  /* Paw prints are hidden on mobile to prevent overlapping with content. */
-  .sy-paw {
-    display: none;
+/* Responsive — shrink the album page on smaller screens. */
+@media (max-width: 800px) {
+  .sy-page main.page {
+    margin: var(--space-3);
+    padding: var(--space-5) var(--space-4) var(--space-6);
   }
 }
-
-/* ---------------------------------------------------------------------------
- * SMALL MOBILE BREAKPOINT (max-width: 420px)
- *
- * Final round of adjustments for the smallest screens (roughly iPhone SE):
- *   - Hero padding, name size, and letter-spacing are reduced further
- *   - Portrait maxes out at 200px, glow shrinks to 300px
- *   - Collar strap narrows to 180px / 16px and the buckle shrinks
- *   - Doghouse roof height reduces to 28px
- *   - Cushion padding tightens
- *   - Gallery goes to a single column for maximum photo size
- *   - Scrapbook rotations are removed (transform: none) so photos
- *     sit perfectly straight — on a narrow screen the tilts look
- *     awkward and can cause horizontal overflow
- *   - Polaroid padding shrinks slightly; bottom corners reposition
- *   - Gallery tab buttons get smaller text and tighter spacing
- *   - Timeline indentation and marker size decrease further
- *   - Album-page card padding tightens
- * --------------------------------------------------------------------------- */
-@media (max-width: 420px) {
-  .sy-hero {
-    padding: 2.5rem 0 1.5rem;
-  }
-
-  .sy-hero-name {
-    font-size: 2.4rem;
-    letter-spacing: 3px;
-  }
-
-  .sy-hero-portrait {
-    max-width: 200px;
-  }
-
-  .sy-hero-glow {
-    width: 300px;
-    height: 300px;
-  }
-
-  .sy-collar {
-    max-width: 180px;
-    height: 16px;
-  }
-
-  .sy-collar::before {
-    width: 10px;
-    height: 10px;
-  }
-
-  .sy-doghouse-roof {
-    height: 28px;
-  }
-
-  .sy-cushion-wrap {
-    padding: 1rem 1.4rem;
-  }
-
-  /* Single column gallery at narrow widths for maximum photo size. */
-  .sy-gallery-grid {
-    grid-template-columns: 1fr;
-  }
-
-  /* Remove the organic rotations on small screens — tilted cards can
-     cause horizontal overflow and look awkward in a single column. */
-  .sy-gallery-item:nth-child(6n+1),
-  .sy-gallery-item:nth-child(6n+2),
-  .sy-gallery-item:nth-child(6n+3),
-  .sy-gallery-item:nth-child(6n+4),
-  .sy-gallery-item:nth-child(6n+5),
-  .sy-gallery-item:nth-child(6n+6) {
-    transform: none;
-  }
-
-  /* Slightly tighter Polaroid padding on small screens. */
-  .sy-gallery-item.sy-photo-mount {
-    padding: 10px 10px 36px;
-  }
-
-  /* Reposition bottom corner brackets to match the reduced padding. */
-  .sy-gallery-item .sy-corner-bl,
-  .sy-gallery-item .sy-corner-br {
-    bottom: 26px;
-  }
-
-  .sy-gallery-tabs {
-    gap: 0.2rem;
-  }
-
-  .sy-tab {
-    font-size: 0.62rem;
-    padding: 0.3rem 0.5rem;
-  }
-
-  .sy-timeline {
-    padding-left: 1.2rem;
-  }
-
-  .sy-timeline-marker {
-    left: -1.05rem;
-    width: 10px;
-    height: 10px;
-  }
-
-  .sy-album-page {
-    padding: 1.2rem 1rem;
+@media (max-width: 540px) {
+  .sy-page main.page {
+    margin: 0;
+    border-left: none;
+    border-right: none;
+    box-shadow:
+      0 6px 20px -8px rgba(0, 0, 0, 0.6),
+      inset 0 0 0 1px rgba(245, 230, 195, 0.3);
   }
 }

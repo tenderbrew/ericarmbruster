@@ -1,68 +1,39 @@
 <!--
-  ============================================================================
-  economics.html — The Trading Floor
-  ============================================================================
-  A Bloomberg-terminal-inspired economics dashboard for ericarmbruster.com.
-
-  This page has three main sections:
-    1. Economic Indicators — a grid of ~30 live macro data cards fetched from
-       the Federal Reserve Economic Data (FRED) API via CSV export endpoints.
-    2. The Wire — a sidebar showing the latest 10 headlines from the
-       Mises Institute RSS feed (mises.org/feed).
-    3. Research Desk — a static reading list of seminal economics texts,
-       organized by school of thought (Classical, Austrian, Keynesian, etc.).
-
-  The page uses the .econ-page body class for scoped styles defined in
-  econ-styles.css. Shared site-wide styles (nav, footer, ticker) come from
-  styles.css.
-
-  The inline <script> at the bottom (~430 lines) contains the entire
-  client-side data pipeline: FRED CSV fetching, CPI year-over-year derivation,
-  Mises RSS parsing, CORS proxy fallback chain, and DOM card rendering.
-  ============================================================================
+  economics.html — Economics (Tufte-warm)
+  ---------------------------------------
+  Live FRED macro indicators + the Mises Wire + a long reading list.
+  All DOM IDs the inline data pipeline targets are preserved verbatim:
+  #econ-indicator-grid, #econ-indicator-status, #econ-news-list,
+  #econ-news-status, #econ-last-refresh. The dynamic indicator card
+  classes (.econ-indicator-card, .econ-indicator-value, etc.) are styled
+  here so the JS can hydrate them without changes.
 -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <!--
-    Head section: character encoding, viewport for responsive design,
-    page title, SEO meta description, Open Graph / Twitter Card social tags,
-    favicon, Google Fonts preconnect + stylesheet links, and Google Analytics.
-  -->
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Economics</title>
-  <meta name="description" content="Live macro indicators, Austrian economics headlines, and a reading queue.">
-  <meta name="theme-color" content="#080c12">
+  <meta name="description" content="Live macro indicators, Austrian-leaning headlines, and a long reading list.">
+  <meta name="theme-color" content="#fbf6e8">
   <link rel="canonical" href="https://www.ericarmbruster.com/economics.html">
   <meta property="og:title" content="Economics - Eric Armbruster">
-  <meta property="og:description" content="Live macro indicators, Austrian economics headlines, and a reading queue.">
+  <meta property="og:description" content="Live macro indicators, the Mises Wire, and a reading list.">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://www.ericarmbruster.com/economics.html">
   <meta property="og:image" content="https://www.ericarmbruster.com/images/bohm-bawerk.png">
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="Economics - Eric Armbruster">
-  <meta name="twitter:description" content="Live macro indicators, Austrian economics headlines, and a reading queue.">
+  <meta name="twitter:description" content="Live macro indicators, the Mises Wire, and a reading list.">
   <meta name="twitter:image" content="https://www.ericarmbruster.com/images/bohm-bawerk.png">
   <link rel="icon" href="images/hector-favicon.png" type="image/png">
 
-  <!-- Preconnect to Google Fonts origins to speed up font loading -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
 
-  <!-- Preload the nav brand mark font (Herr Von Muellerhoff, latin woff2) at
-       highest priority to eliminate FOUT on page transitions. See index.html
-       for a detailed explanation of why this preload is needed. -->
-  <link rel="preload" href="https://fonts.gstatic.com/s/herrvonmuellerhoff/v23/WBL6rFjRZkREW8WqmCWYLgCkQKXb4CAft0c99KM.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="css/tufte-base.css">
 
-  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;700&family=IBM+Plex+Sans+Condensed:wght@400;500;700&family=Libre+Caslon+Display&family=Libre+Caslon+Text:ital,wght@0,400;0,700;1,400&family=Special+Elite&family=Herr+Von+Muellerhoff&display=swap" rel="stylesheet">
-
-  <!-- Shared site-wide stylesheet (nav, footer, base layout, homepage) -->
-  <link rel="stylesheet" href="css/styles.css">
-  <!-- Page-scoped stylesheet for the economics dashboard (emerald green palette) -->
-  <link rel="stylesheet" href="css/econ-styles.css">
-
-  <!-- Google Analytics: loaded async so it never blocks the critical render path -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-5ZTHJXDR9V"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
@@ -70,820 +41,878 @@
     gtag('js', new Date());
     gtag('config', 'G-5ZTHJXDR9V');
   </script>
+
+  <style>
+    /* ── PAGE-WIDE TERMINAL MODE — phosphor-amber on deep navy ─────────
+       Scoped to body.econ-page so other pages keep the cream baseline.
+       The whole page reads as a Bloomberg terminal: deep navy background,
+       amber accents, monospace throughout, scanlines, vignette. */
+    body.econ-page {
+      background: #0a0d12;
+      color: #e8e6dc;
+      font-family: var(--font-mono);
+    }
+    body.econ-page::before {
+      content: '';
+      position: fixed;
+      inset: 0;
+      pointer-events: none;
+      z-index: 9000;
+      background: repeating-linear-gradient(
+        0deg,
+        rgba(255, 170, 51, 0.04) 0,
+        rgba(255, 170, 51, 0.04) 1px,
+        transparent 1px,
+        transparent 3px
+      );
+      mix-blend-mode: screen;
+    }
+    body.econ-page::after {
+      content: '';
+      position: fixed;
+      inset: 0;
+      pointer-events: none;
+      z-index: 8999;
+      background: radial-gradient(
+        ellipse 80% 70% at center,
+        transparent 55%,
+        rgba(0, 0, 0, 0.5) 100%
+      );
+    }
+
+    /* Site footer — dark terminal chrome. (Top bar uses the canonical cream
+       masthead from tufte-base.css for cross-page consistency.) */
+    .econ-page .site-footer {
+      background: #0a0d12;
+      border-top: 1px solid rgba(255, 170, 51, 0.25);
+      color: rgba(232, 230, 220, 0.5);
+    }
+    .econ-page .site-footer__inner {
+      font-family: var(--font-mono);
+      font-style: normal;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      font-size: 0.75rem;
+    }
+
+    /* Default link styling inside .econ-page — amber, no underline. */
+    .econ-page main a {
+      color: #ffaa33;
+      background: none;
+      padding: 0;
+      transition: color 120ms ease, text-shadow 120ms ease;
+    }
+    .econ-page main a:hover {
+      color: #ffe09a;
+      background: none;
+      text-shadow: 0 0 6px rgba(255, 224, 154, 0.5);
+    }
+
+    /* ── MASTHEAD — terminal command prompt ─────────────────────────── */
+    .econ-masthead {
+      text-align: center;
+      margin: 0 0 var(--space-7);
+      padding-bottom: var(--space-6);
+      border-bottom: 1px solid rgba(255, 170, 51, 0.3);
+    }
+    .econ-masthead::before {
+      content: 'MKT://';
+      display: block;
+      font-family: var(--font-mono);
+      font-size: 0.78rem;
+      letter-spacing: 0.4em;
+      text-indent: 0.4em;
+      color: rgba(255, 170, 51, 0.7);
+      text-shadow: 0 0 6px rgba(255, 170, 51, 0.5);
+      margin-bottom: var(--space-3);
+    }
+    .econ-title {
+      font-family: var(--font-mono);
+      font-size: 3rem;
+      font-weight: 700;
+      font-style: normal;
+      letter-spacing: 0.12em;
+      color: #ffaa33;
+      text-transform: uppercase;
+      text-shadow:
+        0 0 10px rgba(255, 170, 51, 0.7),
+        0 0 22px rgba(255, 170, 51, 0.35);
+      margin: 0;
+      line-height: 1;
+    }
+    .econ-subtitle {
+      margin-top: var(--space-4);
+      font-family: var(--font-mono);
+      font-style: normal;
+      font-size: 0.85rem;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      color: #e8e6dc;
+      text-shadow: 0 0 6px rgba(232, 230, 220, 0.2);
+      max-width: 50rem;
+      margin-left: auto;
+      margin-right: auto;
+      line-height: 1.5;
+    }
+    .econ-subtitle::before { content: '> '; color: #ffaa33; }
+    .econ-subtitle::after {
+      content: '_';
+      margin-left: 0.4em;
+      color: #ffaa33;
+      animation: econ-cursor 1.1s steps(1) infinite;
+    }
+    @keyframes econ-cursor {
+      0%, 50%      { opacity: 1; }
+      50.01%, 100% { opacity: 0; }
+    }
+    @media (prefers-reduced-motion: reduce) {
+      .econ-subtitle::after { animation: none; }
+    }
+    .econ-meta {
+      margin-top: var(--space-4);
+      font-family: var(--font-mono);
+      font-style: normal;
+      font-size: 0.72rem;
+      letter-spacing: 0.08em;
+      color: rgba(232, 230, 220, 0.5);
+      text-transform: uppercase;
+      font-variant: normal;
+    }
+    .econ-meta span#econ-last-refresh { color: #e8e6dc; }
+
+    /* Bloomberg-on-CRT tape strip — matches the indicators terminal palette.
+       Deep navy bg, scanline texture, amber labels, cream values with
+       phosphor glow, ▲/▼ arrows on directional moves. Hydrated by the
+       FRED pipeline (mirrored from updateCard). */
+    .econ-tape {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: var(--space-2) var(--space-3);
+      padding: var(--space-3) var(--space-4);
+      margin: 0 0 var(--space-7);
+      position: relative;
+      background: #0a0d12;
+      background-image:
+        repeating-linear-gradient(
+          0deg,
+          rgba(255, 170, 51, 0.04) 0,
+          rgba(255, 170, 51, 0.04) 1px,
+          transparent 1px,
+          transparent 3px
+        );
+      color: #e8e6dc;
+      border: 1px solid #2a3038;
+      box-shadow:
+        inset 0 0 0 1px rgba(255, 170, 51, 0.18),
+        0 3px 14px -8px rgba(0, 0, 0, 0.4);
+    }
+    .econ-tape::before,
+    .econ-tape::after {
+      content: '';
+      position: absolute;
+      left: 0; right: 0;
+      height: 2px;
+      background: #ffaa33;
+      box-shadow: 0 0 8px rgba(255, 170, 51, 0.5);
+    }
+    .econ-tape::before { top: 0; }
+    .econ-tape::after  { bottom: 0; }
+
+    .econ-tape-cell {
+      display: inline-flex;
+      align-items: baseline;
+      gap: var(--space-2);
+      white-space: nowrap;
+    }
+    .econ-tape-label {
+      font-family: var(--font-mono);
+      font-size: 0.7rem;
+      text-transform: uppercase;
+      letter-spacing: 0.14em;
+      color: #ffaa33;
+      font-weight: 600;
+      text-shadow: 0 0 4px rgba(255, 170, 51, 0.3);
+    }
+    .econ-tape-value {
+      font-family: var(--font-mono);
+      font-size: 0.95rem;
+      color: #e8e6dc;
+      font-weight: 500;
+      text-shadow: 0 0 6px rgba(232, 230, 220, 0.15);
+    }
+    .econ-tape-cell.is-up .econ-tape-value {
+      color: #3dd45a;
+      text-shadow: 0 0 8px rgba(61, 212, 90, 0.4);
+    }
+    .econ-tape-cell.is-up .econ-tape-value::before {
+      content: '\25B2\00A0';            /* ▲  */
+      font-size: 0.78em;
+    }
+    .econ-tape-cell.is-down .econ-tape-value {
+      color: #ff5b5b;
+      text-shadow: 0 0 8px rgba(255, 91, 91, 0.4);
+    }
+    .econ-tape-cell.is-down .econ-tape-value::before {
+      content: '\25BC\00A0';            /* ▼  */
+      font-size: 0.78em;
+    }
+    .econ-tape-sep {
+      color: rgba(255, 170, 51, 0.35);
+      font-family: var(--font-mono);
+      font-size: 0.9rem;
+      font-weight: 400;
+    }
+    @media (max-width: 740px) {
+      .econ-tape { gap: var(--space-2); padding: var(--space-2) var(--space-3); }
+      .econ-tape-sep { display: none; }
+      .econ-tape-label { font-size: 0.62rem; letter-spacing: 0.12em; }
+      .econ-tape-value { font-size: 0.85rem; }
+    }
+
+    .econ-section-head {
+      font-family: var(--font-serif); font-style: italic; font-weight: 400;
+      font-size: 1.7rem; color: var(--ink); margin: var(--space-8) 0 var(--space-3);
+      padding-bottom: var(--space-3); border-bottom: 1px solid var(--rule);
+      display: flex; justify-content: space-between; align-items: baseline; gap: var(--space-4);
+    }
+    .econ-status {
+      font-family: var(--font-serif); font-style: italic;
+      font-size: 0.95rem; color: var(--ink-3); margin: 0;
+    }
+
+    /* Two-column layout: indicators on the left, the wire sidebar on the right. */
+    .econ-layout {
+      display: grid;
+      grid-template-columns: 3fr 1fr;
+      gap: var(--space-7);
+      margin-top: var(--space-3);
+    }
+
+    /* ── INDICATORS TERMINAL ─────────────────────────────────────────────
+       Aggressive Bloomberg-on-CRT panel embedded in the cream page.
+       Deep navy background, amber accents, all-caps monospace, phosphor
+       glow on values, ▲/▼ arrows on directional moves, subtle scanline
+       texture, blinking cursor on the title. The wire sidebar stays
+       cream so the two read like a terminal beside a newspaper. */
+    .econ-terminal {
+      background: #0a0d12;
+      background-image:
+        repeating-linear-gradient(
+          0deg,
+          rgba(255, 170, 51, 0.04) 0,
+          rgba(255, 170, 51, 0.04) 1px,
+          transparent 1px,
+          transparent 3px
+        );
+      color: #e8e6dc;
+      margin: var(--space-3) 0;
+      position: relative;
+      border: 1px solid #2a3038;
+      box-shadow:
+        inset 0 0 0 1px rgba(255, 170, 51, 0.18),
+        0 4px 20px -8px rgba(0, 0, 0, 0.4);
+    }
+    .econ-terminal::before,
+    .econ-terminal::after {
+      content: '';
+      position: absolute;
+      left: 0; right: 0;
+      height: 2px;
+      background: #ffaa33;
+      box-shadow: 0 0 8px rgba(255, 170, 51, 0.5);
+    }
+    .econ-terminal::before { top: 0; }
+    .econ-terminal::after  { bottom: 0; }
+
+    .econ-terminal-bar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: var(--space-3);
+      padding: 12px 18px;
+      border-bottom: 1px solid rgba(255, 170, 51, 0.22);
+      background: rgba(255, 170, 51, 0.05);
+      margin-top: 2px;
+    }
+    .econ-terminal-bar::before {
+      content: 'MKT://';
+      font-family: var(--font-mono);
+      color: #ffaa33;
+      font-size: 0.78rem;
+      letter-spacing: 0.12em;
+      font-weight: 600;
+      text-shadow: 0 0 6px rgba(255, 170, 51, 0.45);
+    }
+    .econ-terminal-title {
+      font-family: var(--font-mono);
+      font-size: 0.85rem;
+      text-transform: uppercase;
+      letter-spacing: 0.22em;
+      color: #ffaa33;
+      flex: 1 1 auto;
+      font-weight: 600;
+      text-shadow: 0 0 6px rgba(255, 170, 51, 0.4);
+    }
+    .econ-terminal-title::after {
+      content: '_';
+      margin-left: 0.4em;
+      animation: econ-blink 1.1s steps(1) infinite;
+    }
+    @keyframes econ-blink {
+      0%, 50%      { opacity: 1; }
+      50.01%, 100% { opacity: 0; }
+    }
+    .econ-terminal-status {
+      font-family: var(--font-mono);
+      font-size: 0.72rem;
+      color: rgba(232, 230, 220, 0.6);
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      white-space: nowrap;
+    }
+    .econ-terminal-status::before {
+      content: '\25CF\00A0';            /* ●  */
+      color: #3dd45a;
+      font-size: 0.55rem;
+      vertical-align: 2px;
+      text-shadow: 0 0 6px rgba(61, 212, 90, 0.6);
+    }
+
+    /* Indicator grid — sits inside the terminal panel. Dense Bloomberg-style
+       columns: each card has min 8rem so 4–6 fit per row depending on width. */
+    .econ-indicator-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(8rem, 1fr));
+      gap: 0;
+      padding: 0;
+      margin-bottom: 2px;
+    }
+    .econ-indicator-card {
+      padding: 14px 16px;
+      border-right: 1px solid rgba(255, 170, 51, 0.08);
+      border-bottom: 1px solid rgba(255, 170, 51, 0.08);
+      position: relative;
+    }
+    .econ-indicator-card h3 {
+      font-family: var(--font-mono); font-style: normal; font-weight: 400;
+      font-size: 0.7rem;
+      text-transform: uppercase;
+      letter-spacing: 0.14em;
+      color: rgba(232, 230, 220, 0.65);
+      margin: 0 0 4px;
+    }
+    .econ-series-code {
+      font-family: var(--font-mono); font-size: 0.65rem;
+      color: #ffaa33; letter-spacing: 0.12em;
+      margin: 0 0 8px;
+      font-weight: 600;
+      text-shadow: 0 0 4px rgba(255, 170, 51, 0.3);
+    }
+    .econ-indicator-value {
+      font-family: var(--font-mono); font-size: 1.4rem;
+      color: #e8e6dc; margin: 0; line-height: 1;
+      font-weight: 500;
+      text-shadow: 0 0 10px rgba(232, 230, 220, 0.15);
+    }
+    .econ-indicator-meta {
+      font-family: var(--font-mono);
+      font-style: normal; font-size: 0.68rem;
+      color: rgba(232, 230, 220, 0.42);
+      margin: 8px 0 0;
+      letter-spacing: 0.05em;
+      text-transform: uppercase;
+    }
+    .econ-indicator-card.is-up .econ-indicator-value {
+      color: #3dd45a;
+      text-shadow: 0 0 12px rgba(61, 212, 90, 0.4);
+    }
+    .econ-indicator-card.is-up .econ-indicator-value::before {
+      content: '\25B2\00A0';            /* ▲  */
+      font-size: 0.78em;
+    }
+    .econ-indicator-card.is-down .econ-indicator-value {
+      color: #ff5b5b;
+      text-shadow: 0 0 12px rgba(255, 91, 91, 0.4);
+    }
+    .econ-indicator-card.is-down .econ-indicator-value::before {
+      content: '\25BC\00A0';            /* ▼  */
+      font-size: 0.78em;
+    }
+    .econ-indicator-card.is-error .econ-indicator-value { color: rgba(232, 230, 220, 0.25); }
+    .econ-indicator-link {
+      display: block;
+      color: inherit;
+      background: none; padding: 0;
+      transition: background 120ms ease;
+    }
+    .econ-indicator-link:hover { background: rgba(255, 170, 51, 0.07); color: inherit; }
+    .econ-indicator-link:hover h3 { color: #ffe09a; }
+
+    @media (prefers-reduced-motion: reduce) {
+      .econ-terminal-title::after { animation: none; }
+    }
+
+    /* News list (the Wire) — sits inside an .econ-terminal panel. */
+    .econ-news-list { list-style: none; padding: 0; margin: 0 0 2px; }
+    .econ-terminal .econ-news-list li {
+      padding: var(--space-3) var(--space-5);
+      border-bottom: 1px solid rgba(255, 170, 51, 0.08);
+      margin: 0;
+    }
+    .econ-terminal .econ-news-list li:last-child { border-bottom: none; }
+    .econ-terminal .econ-news-list a {
+      display: block;
+      font-family: var(--font-mono);
+      color: #e8e6dc;
+      font-size: 0.88rem;
+      line-height: 1.45;
+      background: none; padding: 0;
+      text-shadow: 0 0 6px rgba(232, 230, 220, 0.1);
+    }
+    .econ-terminal .econ-news-list a:hover {
+      color: #ffe09a;
+      background: none;
+      text-shadow: 0 0 8px rgba(255, 224, 154, 0.4);
+    }
+    .econ-terminal .econ-news-list span {
+      display: block;
+      margin-top: 6px;
+      font-family: var(--font-mono);
+      font-style: normal;
+      font-size: 0.65rem;
+      color: #ffaa33;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      opacity: 0.85;
+      text-shadow: 0 0 4px rgba(255, 170, 51, 0.3);
+    }
+
+    /* Research Desk — six dossiers inside an .econ-terminal panel. */
+    .econ-terminal .econ-reading-columns {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: var(--space-6) 0;
+      margin-bottom: 2px;
+    }
+    .econ-terminal .econ-dossier {
+      padding: var(--space-5);
+      border-right: 1px solid rgba(255, 170, 51, 0.08);
+      border-bottom: 1px solid rgba(255, 170, 51, 0.08);
+    }
+    .econ-terminal .econ-dossier h3 {
+      font-family: var(--font-mono);
+      text-transform: uppercase;
+      letter-spacing: 0.16em;
+      font-size: 0.78rem;
+      font-style: normal;
+      font-weight: 600;
+      color: #ffaa33;
+      margin: 0 0 var(--space-3);
+      padding-bottom: var(--space-2);
+      border-bottom: 1px solid rgba(255, 170, 51, 0.22);
+      text-shadow: 0 0 6px rgba(255, 170, 51, 0.3);
+    }
+    .econ-terminal .econ-dossier ul { list-style: none; padding: 0; margin: 0; }
+    .econ-terminal .econ-dossier li {
+      margin: 0 0 var(--space-3);
+      font-family: var(--font-mono);
+      font-size: 0.82rem;
+      line-height: 1.45;
+      color: #e8e6dc;
+    }
+    .econ-terminal .econ-dossier strong { font-weight: 500; color: #e8e6dc; }
+    .econ-terminal .econ-dossier a {
+      color: #e8e6dc;
+      background: none; padding: 0;
+    }
+    .econ-terminal .econ-dossier a:hover {
+      color: #ffe09a;
+      background: none;
+      text-shadow: 0 0 6px rgba(255, 224, 154, 0.3);
+    }
+    .econ-terminal .econ-book-meta {
+      display: block;
+      margin-top: 3px;
+      font-family: var(--font-mono);
+      font-style: normal;
+      font-size: 0.62rem;
+      color: rgba(232, 230, 220, 0.5);
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+    }
+
+    @media (max-width: 880px) {
+      .econ-title { font-size: 2.4rem; }
+      .econ-layout { grid-template-columns: 1fr; }
+      .econ-reading-columns { grid-template-columns: repeat(2, 1fr); }
+      .econ-section-head { flex-direction: column; align-items: flex-start; gap: var(--space-2); }
+    }
+    @media (max-width: 540px) {
+      .econ-reading-columns { grid-template-columns: 1fr; }
+    }
+  </style>
 </head>
+
 <body class="econ-page">
 
-  <!--
-    Ticker tape: a horizontally scrolling strip of hardcoded market quotes
-    (DJIA, S&P 500, NASDAQ, 10Y yield, gold, BTC, VIX, EUR/USD, crude, fed funds).
-    The content is duplicated so the CSS infinite-scroll animation loops seamlessly.
-    Marked aria-hidden because it is purely decorative. Animation powered by ticker.js.
-  -->
-  <div class="ticker-tape" aria-hidden="true">
-    <div class="ticker-track">
-      <span class="tick" data-ticker="DJIA">DJIA 38,547 &#9650;0.42%</span>
-      <span class="tick-sep">&bull;</span>
-      <span class="tick" data-ticker="SP500">S&amp;P 500 5,234 &#9650;0.18%</span>
-      <span class="tick-sep">&bull;</span>
-      <span class="tick" data-ticker="NASDAQ">NASDAQ 16,340 &#9660;0.31%</span>
-      <span class="tick-sep">&bull;</span>
-      <span class="tick" data-ticker="10Y">10Y YIELD 4.285%</span>
-      <span class="tick-sep">&bull;</span>
-      <span class="tick" data-ticker="GOLD">GOLD 2,338.40</span>
-      <span class="tick-sep">&bull;</span>
-      <span class="tick" data-ticker="BTC">BTC 67,245 &#9650;2.14%</span>
-      <span class="tick-sep">&bull;</span>
-      <span class="tick" data-ticker="VIX">VIX 13.42</span>
-      <span class="tick-sep">&bull;</span>
-      <span class="tick" data-ticker="EURUSD">EUR/USD 1.0845</span>
-      <span class="tick-sep">&bull;</span>
-      <span class="tick" data-ticker="CRUDE">WTI CRUDE 78.32</span>
-      <span class="tick-sep">&bull;</span>
-      <span class="tick" data-ticker="FEDFUNDS">FED FUNDS 5.33%</span>
-      <span class="tick-sep">&bull;</span>
-      <!-- Duplicate set for seamless looping animation -->
-      <span class="tick" data-ticker="DJIA">DJIA 38,547 &#9650;0.42%</span>
-      <span class="tick-sep">&bull;</span>
-      <span class="tick" data-ticker="SP500">S&amp;P 500 5,234 &#9650;0.18%</span>
-      <span class="tick-sep">&bull;</span>
-      <span class="tick" data-ticker="NASDAQ">NASDAQ 16,340 &#9660;0.31%</span>
-      <span class="tick-sep">&bull;</span>
-      <span class="tick" data-ticker="10Y">10Y YIELD 4.285%</span>
-      <span class="tick-sep">&bull;</span>
-      <span class="tick" data-ticker="GOLD">GOLD 2,338.40</span>
-      <span class="tick-sep">&bull;</span>
-      <span class="tick" data-ticker="BTC">BTC 67,245 &#9650;2.14%</span>
-      <span class="tick-sep">&bull;</span>
-      <span class="tick" data-ticker="VIX">VIX 13.42</span>
-      <span class="tick-sep">&bull;</span>
-      <span class="tick" data-ticker="EURUSD">EUR/USD 1.0845</span>
-      <span class="tick-sep">&bull;</span>
-      <span class="tick" data-ticker="CRUDE">WTI CRUDE 78.32</span>
-      <span class="tick-sep">&bull;</span>
-      <span class="tick" data-ticker="FEDFUNDS">FED FUNDS 5.33%</span>
-      <span class="tick-sep">&bull;</span>
-    </div>
-  </div>
-
-
-  <!--
-    Shared primary navigation (identical across all pages).
-    Contains desktop nav links, social/contact icon row, mobile hamburger toggle,
-    and the slide-out drawer with grouped links. Drawer open/close behavior is
-    handled by drawer.js loaded at the bottom of the page.
-  -->
-
-  <nav class="study-nav" aria-label="Primary">
-    <div class="container nav-shell">
-      <a href="index.html" class="brand-mark" aria-label="Eric Armbruster home">Eric M. Armbruster</a>
-
-      <div class="nav-links-desktop" aria-label="Primary links">
-        <a href="about.html">about</a>
-        <a href="projects.html">projects</a>
-        <button class="drawer-toggle" type="button" aria-expanded="false" aria-controls="interests-dropdown" data-interests-toggle>interests</button>
-      </div>
-
-      <div class="nav-icons" aria-label="Contact links">
-        <a href="mailto:eric.m.armbruster@gmail.com" aria-label="Email Eric"><svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"><rect x="1.5" y="3.5" width="13" height="9"/><path d="M1.5 3.5L8 9l6.5-5.5"/></svg></a>
-        <a href="https://github.com/tenderbrew" target="_blank" rel="noopener" aria-label="Eric on GitHub"><svg width="16" height="16" viewBox="0 0 16 16" fill="currentColor"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0016 8c0-4.42-3.58-8-8-8z"/></svg></a>
-        <a href="https://www.linkedin.com/in/ericmarmbruster/" target="_blank" rel="noopener" aria-label="Eric on LinkedIn"><svg width="16" height="16" viewBox="0 0 16 16" fill="currentColor"><path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.016-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.52 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.174-.431.569-.878 1.232-.878.87 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016l.016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z"/></svg></a>
-      </div>
-
-      <button class="drawer-toggle nav-mobile-toggle" type="button" aria-expanded="false" aria-controls="site-drawer" data-drawer-toggle>menu</button>
-    </div>
-
-    <!-- Slide-out navigation drawer (shared across all pages) -->
-
-    <div class="site-drawer" id="site-drawer">
-      <div class="container drawer-inner">
-        <section class="drawer-group">
-          <h2>Main Rooms</h2>
-          <a href="about.html">About</a>
-          <a href="projects.html">Projects</a>
-        </section>
-        <section class="drawer-group drawer-group--interests"><h2>Interests</h2>
-          <a href="video-games.html">Video Games</a>
-          <a href="film.html">Film</a>
-          <a href="self-hosting.html">Self-Hosting</a>
-          <a href="economics.html">Economics</a>
-          <a href="bitcoin.html">Bitcoin</a>
-          <a href="seymour.html">Seymour</a>
-        </section>
-        <section class="drawer-group drawer-group--compact">
-          <h2>Elsewhere</h2>
-          <a href="mailto:eric.m.armbruster@gmail.com">Email</a>
-          <a href="https://github.com/tenderbrew" target="_blank" rel="noopener">GitHub</a>
-          <a href="https://www.linkedin.com/in/ericmarmbruster/" target="_blank" rel="noopener">LinkedIn</a>
-        </section>
-      </div>
-    </div>
-    <div class="interests-dropdown" id="interests-dropdown">
-      <a href="video-games.html">Video Games</a>
-      <a href="film.html">Film</a>
-      <a href="self-hosting.html">Self-Hosting</a>
-      <a href="economics.html">Economics</a>
-      <a href="bitcoin.html">Bitcoin</a>
-      <a href="seymour.html">Seymour</a>
-    </div>
-  </nav>
-
-  <!--
-    Page hero: styled as a faux terminal window with macOS-style traffic-light
-    dots (close/minimize/maximize) and a "TERMINAL" title bar. The terminal body
-    contains the page heading "The Trading Floor" and a source-strip linking to
-    the FRED website and the Mises Institute, plus a live "last refreshed" timestamp
-    that gets updated by JavaScript once all data pipelines complete.
-  -->
-  <header class="econ-hero" aria-labelledby="econ-page-title">
-    <div class="container">
-      <div class="econ-terminal">
-        <div class="econ-terminal-bar" aria-hidden="true">
-          <span class="econ-dot econ-dot--close"></span>
-          <span class="econ-dot econ-dot--min"></span>
-          <span class="econ-dot econ-dot--max"></span>
-          <span class="econ-terminal-title">TERMINAL</span>
+  <header class="site-header">
+    <div class="site-header__inner">
+      <a class="brand" href="index.html">Eric Armbruster</a>
+      <div class="site-header__nav">
+        <div class="site-utility">
+          <a class="site-utility__icon" href="about.html" aria-label="About"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"><circle cx="12" cy="8" r="4"/><path d="M4 21c0-4.4 3.6-8 8-8s8 3.6 8 8"/></svg></a>
+          <a class="site-utility__icon" href="projects.html" aria-label="Projects"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M9 7l-5 5 5 5"/><path d="M15 7l5 5-5 5"/></svg></a>
+          <a class="site-utility__icon" href="mailto:eric.m.armbruster@gmail.com" aria-label="Contact"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="1.5"/><path d="M3 7l9 7 9-7"/></svg></a>
         </div>
-        <div class="econ-terminal-body">
-          <h1 id="econ-page-title">The Trading Floor</h1>
-
-          <!-- Quick-reference links to data sources and a JS-updated refresh timestamp -->
-          <div class="econ-source-strip">
-            <a href="https://fred.stlouisfed.org/" target="_blank" rel="noopener">FRED Data</a>
-            <a href="https://mises.org/" target="_blank" rel="noopener">Mises Feed</a>
-            <span id="econ-last-refresh">Refreshing...</span>
-          </div>
-        </div>
+        <nav class="site-shelf" aria-label="Sections">
+          <a class="site-shelf__book" href="video-games.html" style="--book-color: var(--c-vg);" aria-label="Video games"></a>
+          <a class="site-shelf__book" href="film.html" style="--book-color: var(--c-film);" aria-label="Film"></a>
+          <a class="site-shelf__book" href="economics.html" style="--book-color: var(--c-econ);" aria-label="Economics" aria-current="page"></a>
+          <a class="site-shelf__book" href="self-hosting.html" style="--book-color: var(--c-sh);" aria-label="Self-hosting"></a>
+          <a class="site-shelf__book" href="bitcoin.html" style="--book-color: var(--c-bitcoin);" aria-label="Bitcoin"></a>
+          <a class="site-shelf__book" href="seymour.html" style="--book-color: var(--c-seymour);" aria-label="Seymour"></a>
+        </nav>
       </div>
     </div>
   </header>
 
-  <!-- ===== Main page content ===== -->
-  <main>
-    <!--
-      Two-column desktop layout:
-        Left (wide): Economic Indicators — a responsive CSS grid of data cards,
-          each showing one FRED series (value, unit, date, period-over-period delta).
-        Right (narrow): The Wire — a sidebar list of the latest Mises Institute headlines.
-      On mobile these stack vertically.
-    -->
-    <div class="econ-layout container">
+  <main class="page">
 
-      <!-- Economic Indicators panel: card grid populated by JS -->
-      <div class="econ-panel econ-panel--board" aria-labelledby="indicators-title">
-        <div class="econ-panel-head">
-          <h2 id="indicators-title">Economic Indicators</h2>
-          <!-- Live status text updated by JS to show "X / Y indicators updated" -->
-          <p id="econ-indicator-status" class="econ-status" role="status">Loading data feeds...</p>
-        </div>
-        <!-- Decorative LED strip (purely visual, hidden from assistive tech) -->
-        <div class="econ-led-strip" aria-hidden="true"></div>
-        <!-- JS injects one <article class="econ-indicator-card"> per indicator here -->
+    <!-- Tape strip — six key macro readouts. Cells with [data-tape="SERIES_ID"]
+         are hydrated by updateCard() once FRED data loads. -->
+    <div class="econ-tape" role="region" aria-label="Key macro indicators at a glance">
+      <span class="econ-tape-cell" data-tape="DGS10">
+        <span class="econ-tape-label">10Y Yield</span>
+        <span class="econ-tape-value">--</span>
+      </span>
+      <span class="econ-tape-sep" aria-hidden="true">|</span>
+      <span class="econ-tape-cell" data-tape="FEDFUNDS">
+        <span class="econ-tape-label">Fed Funds</span>
+        <span class="econ-tape-value">--</span>
+      </span>
+      <span class="econ-tape-sep" aria-hidden="true">|</span>
+      <span class="econ-tape-cell" data-tape="CPI_YOY">
+        <span class="econ-tape-label">Inflation YoY</span>
+        <span class="econ-tape-value">--</span>
+      </span>
+      <span class="econ-tape-sep" aria-hidden="true">|</span>
+      <span class="econ-tape-cell" data-tape="VIXCLS">
+        <span class="econ-tape-label">VIX</span>
+        <span class="econ-tape-value">--</span>
+      </span>
+      <span class="econ-tape-sep" aria-hidden="true">|</span>
+      <span class="econ-tape-cell" data-tape="DTWEXBGS">
+        <span class="econ-tape-label">USD Index</span>
+        <span class="econ-tape-value">--</span>
+      </span>
+      <span class="econ-tape-sep" aria-hidden="true">|</span>
+      <span class="econ-tape-cell" data-tape="T10Y2Y">
+        <span class="econ-tape-label">10Y-2Y Spread</span>
+        <span class="econ-tape-value">--</span>
+      </span>
+    </div>
+
+    <header class="econ-masthead">
+      <h1 class="econ-title">Economics</h1>
+      <p class="econ-subtitle">Live FRED macro indicators, the Mises Institute feed, and a reading list.</p>
+      <p class="econ-meta">
+        <a href="https://fred.stlouisfed.org/" target="_blank" rel="noopener">FRED</a> &middot;
+        <a href="https://mises.org/" target="_blank" rel="noopener">Mises</a> &middot;
+        <span id="econ-last-refresh">Refreshing&hellip;</span>
+      </p>
+    </header>
+
+    <div class="econ-layout">
+      <article class="econ-terminal">
+        <header class="econ-terminal-bar">
+          <span class="econ-terminal-title">Indicators</span>
+          <span id="econ-indicator-status" class="econ-terminal-status" role="status">Loading data feeds&hellip;</span>
+        </header>
         <div id="econ-indicator-grid" class="econ-indicator-grid" aria-live="polite"></div>
-      </div>
+      </article>
 
-      <!--
-        The Wire: Mises Institute news feed sidebar.
-        Headlines are fetched from mises.org/feed (RSS/XML), parsed client-side,
-        and rendered as <li> elements inside the <ul> below. If the RSS fetch
-        fails, a JSON-based fallback (rss2json) is attempted; if that also fails,
-        static fallback links are shown instead.
-      -->
-      <aside class="econ-sidebar" aria-labelledby="news-title">
-        <article class="econ-panel econ-panel--wire" aria-labelledby="news-title">
-          <div class="econ-panel-head">
-            <h2 id="news-title">The Wire</h2>
-            <p id="econ-news-status" class="econ-status" role="status">Loading Mises feed...</p>
-          </div>
-          <!-- JS populates this list with up to 10 headline items -->
-          <ul id="econ-news-list" class="econ-news-list"></ul>
-        </article>
+      <aside class="econ-terminal">
+        <header class="econ-terminal-bar">
+          <span class="econ-terminal-title">The Wire</span>
+          <span id="econ-news-status" class="econ-terminal-status" role="status">Loading Mises feed&hellip;</span>
+        </header>
+        <ul id="econ-news-list" class="econ-news-list"></ul>
       </aside>
     </div>
 
-    <!-- Visual divider between the live data section and the static reading list -->
-    <section class="econ-section">
-      <div class="container">
-        <hr class="econ-divider" aria-hidden="true">
+    <article class="econ-terminal">
+      <header class="econ-terminal-bar">
+        <span class="econ-terminal-title">Research Desk</span>
+      </header>
+      <div class="econ-reading-columns">
+
+      <section class="econ-dossier">
+        <h3>Classical</h3>
+        <ul>
+          <li><a href="https://www.gutenberg.org/ebooks/3300" target="_blank" rel="noopener"><strong>The Wealth of Nations</strong></a><span class="econ-book-meta">Adam Smith &middot; 1776</span></li>
+          <li><a href="https://www.gutenberg.org/ebooks/33310" target="_blank" rel="noopener"><strong>On the Principles of Political Economy and Taxation</strong></a><span class="econ-book-meta">David Ricardo &middot; 1817</span></li>
+          <li><a href="https://oll.libertyfund.org/titles/mill-principles-of-political-economy-ashley-ed" target="_blank" rel="noopener"><strong>Principles of Political Economy</strong></a><span class="econ-book-meta">John Stuart Mill &middot; 1848</span></li>
+          <li><a href="https://www.gutenberg.org/ebooks/4239" target="_blank" rel="noopener"><strong>An Essay on the Principle of Population</strong></a><span class="econ-book-meta">Thomas Robert Malthus &middot; 1798</span></li>
+          <li><a href="https://cdn.mises.org/A%20Treatise%20on%20Political%20Economy_6.pdf" target="_blank" rel="noopener"><strong>A Treatise on Political Economy</strong></a><span class="econ-book-meta">Jean-Baptiste Say &middot; 1803</span></li>
+        </ul>
+      </section>
+
+      <section class="econ-dossier">
+        <h3>Austrian</h3>
+        <ul>
+          <li><a href="https://mises.org/library/book/principles-economics" target="_blank" rel="noopener"><strong>Principles of Economics</strong></a><span class="econ-book-meta">Carl Menger &middot; 1871</span></li>
+          <li><a href="https://mises.org/library/book/human-action" target="_blank" rel="noopener"><strong>Human Action</strong></a><span class="econ-book-meta">Ludwig von Mises &middot; 1949</span></li>
+          <li><a href="https://mises.org/library/book/road-serfdom" target="_blank" rel="noopener"><strong>The Road to Serfdom</strong></a><span class="econ-book-meta">Friedrich A. Hayek &middot; 1944</span></li>
+          <li><a href="https://mises.org/library/book/man-economy-and-state-power-and-market" target="_blank" rel="noopener"><strong>Man, Economy, and State</strong></a><span class="econ-book-meta">Murray N. Rothbard &middot; 1962</span></li>
+          <li><a href="https://mises.org/library/book/capital-and-interest" target="_blank" rel="noopener"><strong>Capital and Interest</strong></a><span class="econ-book-meta">Eugen von B&ouml;hm-Bawerk &middot; 1884</span></li>
+          <li><a href="https://mises.org/library/book/socialism-economic-and-sociological-analysis" target="_blank" rel="noopener"><strong>Socialism</strong></a><span class="econ-book-meta">Ludwig von Mises &middot; 1922</span></li>
+        </ul>
+      </section>
+
+      <section class="econ-dossier">
+        <h3>Keynesian</h3>
+        <ul>
+          <li><a href="https://archive.org/details/generaltheoryofe00keyn" target="_blank" rel="noopener"><strong>The General Theory of Employment, Interest, and Money</strong></a><span class="econ-book-meta">John Maynard Keynes &middot; 1936</span></li>
+          <li><a href="https://www.gutenberg.org/ebooks/15776" target="_blank" rel="noopener"><strong>The Economic Consequences of the Peace</strong></a><span class="econ-book-meta">John Maynard Keynes &middot; 1919</span></li>
+          <li><strong>The Affluent Society</strong><span class="econ-book-meta">John Kenneth Galbraith &middot; 1958</span></li>
+          <li><strong>Stabilizing an Unstable Economy</strong><span class="econ-book-meta">Hyman Minsky &middot; 1986</span></li>
+          <li><strong>The New Industrial State</strong><span class="econ-book-meta">John Kenneth Galbraith &middot; 1967</span></li>
+        </ul>
+      </section>
+
+      <section class="econ-dossier">
+        <h3>Monetarist &amp; Chicago</h3>
+        <ul>
+          <li><strong>A Monetary History of the United States, 1867&ndash;1960</strong><span class="econ-book-meta">Milton Friedman &amp; Anna Schwartz &middot; 1963</span></li>
+          <li><strong>Capitalism and Freedom</strong><span class="econ-book-meta">Milton Friedman &middot; 1962</span></li>
+          <li><strong>Free to Choose</strong><span class="econ-book-meta">Milton &amp; Rose Friedman &middot; 1980</span></li>
+          <li><a href="https://oll.libertyfund.org/titles/buchanan-the-calculus-of-consent-logical-foundations-of-constitutional-democracy" target="_blank" rel="noopener"><strong>The Calculus of Consent</strong></a><span class="econ-book-meta">James Buchanan &amp; Gordon Tullock &middot; 1962</span></li>
+          <li><strong>The Constitution of Liberty</strong><span class="econ-book-meta">Friedrich A. Hayek &middot; 1960</span></li>
+        </ul>
+      </section>
+
+      <section class="econ-dossier">
+        <h3>Marxian &amp; Socialist</h3>
+        <ul>
+          <li><a href="https://www.marxists.org/archive/marx/works/1867-c1/" target="_blank" rel="noopener"><strong>Das Kapital</strong></a><span class="econ-book-meta">Karl Marx &middot; 1867</span></li>
+          <li><a href="https://www.gutenberg.org/ebooks/61" target="_blank" rel="noopener"><strong>The Communist Manifesto</strong></a><span class="econ-book-meta">Karl Marx &amp; Friedrich Engels &middot; 1848</span></li>
+          <li><a href="https://www.gutenberg.org/ebooks/41405" target="_blank" rel="noopener"><strong>The Accumulation of Capital</strong></a><span class="econ-book-meta">Rosa Luxemburg &middot; 1913</span></li>
+          <li><a href="https://www.gutenberg.org/ebooks/39257" target="_blank" rel="noopener"><strong>Socialism: Utopian and Scientific</strong></a><span class="econ-book-meta">Friedrich Engels &middot; 1880</span></li>
+          <li><a href="https://www.gutenberg.org/ebooks/833" target="_blank" rel="noopener"><strong>The Theory of the Leisure Class</strong></a><span class="econ-book-meta">Thorstein Veblen &middot; 1899</span></li>
+        </ul>
+      </section>
+
+      <section class="econ-dossier">
+        <h3>Economic history</h3>
+        <ul>
+          <li><strong>The Worldly Philosophers</strong><span class="econ-book-meta">Robert Heilbroner &middot; 1953</span></li>
+          <li><strong>This Time Is Different</strong><span class="econ-book-meta">Carmen Reinhart &amp; Kenneth Rogoff &middot; 2009</span></li>
+          <li><strong>The Great Transformation</strong><span class="econ-book-meta">Karl Polanyi &middot; 1944</span></li>
+          <li><strong>Why Nations Fail</strong><span class="econ-book-meta">Daron Acemoglu &amp; James Robinson &middot; 2012</span></li>
+          <li><strong>The Wealth and Poverty of Nations</strong><span class="econ-book-meta">David Landes &middot; 1998</span></li>
+        </ul>
+      </section>
+
       </div>
-    </section>
+    </article>
 
-    <!--
-      Research Desk: a curated reading list of seminal economics texts organized
-      into six manila-dossier-styled columns by school of thought:
-        1. Classical (Smith, Ricardo, Mill, Malthus, Say)
-        2. Austrian (Menger, Mises, Hayek, Rothbard, Bohm-Bawerk)
-        3. Keynesian (Keynes, Galbraith, Minsky)
-        4. Monetarist & Chicago (Friedman, Buchanan, Hayek)
-        5. Marxian & Socialist (Marx, Engels, Luxemburg, Veblen)
-        6. Economic History (Heilbroner, Reinhart & Rogoff, Polanyi, Acemoglu)
-      Titles with available free-access editions link to Gutenberg, Mises.org,
-      Liberty Fund, or Archive.org.
-    -->
-    <section class="econ-section" aria-labelledby="reading-title">
-      <div class="container">
-        <article class="econ-panel econ-panel--desk" aria-labelledby="reading-title">
-          <div class="econ-panel-head">
-            <h2 id="reading-title">Research Desk</h2>
-          </div>
-          <div class="econ-reading-columns">
-
-            <!-- Classical economics dossier -->
-            <section class="econ-dossier">
-              <h3>Classical</h3>
-              <ul>
-                <li>
-                  <a href="https://www.gutenberg.org/ebooks/3300" target="_blank" rel="noopener"><strong>The Wealth of Nations</strong></a>
-                  <span class="econ-book-meta">Adam Smith &middot; 1776</span>
-                </li>
-                <li>
-                  <a href="https://www.gutenberg.org/ebooks/33310" target="_blank" rel="noopener"><strong>On the Principles of Political Economy and Taxation</strong></a>
-                  <span class="econ-book-meta">David Ricardo &middot; 1817</span>
-                </li>
-                <li>
-                  <a href="https://oll.libertyfund.org/titles/mill-principles-of-political-economy-ashley-ed" target="_blank" rel="noopener"><strong>Principles of Political Economy</strong></a>
-                  <span class="econ-book-meta">John Stuart Mill &middot; 1848</span>
-                </li>
-                <li>
-                  <a href="https://www.gutenberg.org/ebooks/4239" target="_blank" rel="noopener"><strong>An Essay on the Principle of Population</strong></a>
-                  <span class="econ-book-meta">Thomas Robert Malthus &middot; 1798</span>
-                </li>
-                <li>
-                  <a href="https://cdn.mises.org/A%20Treatise%20on%20Political%20Economy_6.pdf" target="_blank" rel="noopener"><strong>A Treatise on Political Economy</strong></a>
-                  <span class="econ-book-meta">Jean-Baptiste Say &middot; 1803</span>
-                </li>
-              </ul>
-            </section>
-
-            <!-- Austrian economics dossier -->
-            <section class="econ-dossier">
-              <h3>Austrian</h3>
-              <ul>
-                <li>
-                  <a href="https://mises.org/library/book/principles-economics" target="_blank" rel="noopener"><strong>Principles of Economics</strong></a>
-                  <span class="econ-book-meta">Carl Menger &middot; 1871</span>
-                </li>
-                <li>
-                  <a href="https://mises.org/library/book/human-action" target="_blank" rel="noopener"><strong>Human Action</strong></a>
-                  <span class="econ-book-meta">Ludwig von Mises &middot; 1949</span>
-                </li>
-                <li>
-                  <a href="https://mises.org/library/book/road-serfdom" target="_blank" rel="noopener"><strong>The Road to Serfdom</strong></a>
-                  <span class="econ-book-meta">Friedrich A. Hayek &middot; 1944</span>
-                </li>
-                <li>
-                  <a href="https://mises.org/library/book/man-economy-and-state-power-and-market" target="_blank" rel="noopener"><strong>Man, Economy, and State</strong></a>
-                  <span class="econ-book-meta">Murray N. Rothbard &middot; 1962</span>
-                </li>
-                <li>
-                  <a href="https://mises.org/library/book/capital-and-interest" target="_blank" rel="noopener"><strong>Capital and Interest</strong></a>
-                  <span class="econ-book-meta">Eugen von B&ouml;hm-Bawerk &middot; 1884</span>
-                </li>
-                <li>
-                  <a href="https://mises.org/library/book/socialism-economic-and-sociological-analysis" target="_blank" rel="noopener"><strong>Socialism: An Economic and Sociological Analysis</strong></a>
-                  <span class="econ-book-meta">Ludwig von Mises &middot; 1922</span>
-                </li>
-              </ul>
-            </section>
-
-            <!-- Keynesian economics dossier -->
-            <section class="econ-dossier">
-              <h3>Keynesian</h3>
-              <ul>
-                <li>
-                  <a href="https://archive.org/details/generaltheoryofe00keyn" target="_blank" rel="noopener"><strong>The General Theory of Employment, Interest, and Money</strong></a>
-                  <span class="econ-book-meta">John Maynard Keynes &middot; 1936</span>
-                </li>
-                <li>
-                  <a href="https://www.gutenberg.org/ebooks/15776" target="_blank" rel="noopener"><strong>The Economic Consequences of the Peace</strong></a>
-                  <span class="econ-book-meta">John Maynard Keynes &middot; 1919</span>
-                </li>
-                <li>
-                  <strong>The Affluent Society</strong>
-                  <span class="econ-book-meta">John Kenneth Galbraith &middot; 1958</span>
-                </li>
-                <li>
-                  <strong>Stabilizing an Unstable Economy</strong>
-                  <span class="econ-book-meta">Hyman Minsky &middot; 1986</span>
-                </li>
-                <li>
-                  <strong>The New Industrial State</strong>
-                  <span class="econ-book-meta">John Kenneth Galbraith &middot; 1967</span>
-                </li>
-              </ul>
-            </section>
-
-            <!-- Monetarist & Chicago school dossier -->
-            <section class="econ-dossier">
-              <h3>Monetarist &amp; Chicago</h3>
-              <ul>
-                <li>
-                  <strong>A Monetary History of the United States, 1867&ndash;1960</strong>
-                  <span class="econ-book-meta">Milton Friedman &amp; Anna Schwartz &middot; 1963</span>
-                </li>
-                <li>
-                  <strong>Capitalism and Freedom</strong>
-                  <span class="econ-book-meta">Milton Friedman &middot; 1962</span>
-                </li>
-                <li>
-                  <strong>Free to Choose</strong>
-                  <span class="econ-book-meta">Milton &amp; Rose Friedman &middot; 1980</span>
-                </li>
-                <li>
-                  <a href="https://oll.libertyfund.org/titles/buchanan-the-calculus-of-consent-logical-foundations-of-constitutional-democracy" target="_blank" rel="noopener"><strong>The Calculus of Consent</strong></a>
-                  <span class="econ-book-meta">James Buchanan &amp; Gordon Tullock &middot; 1962</span>
-                </li>
-                <li>
-                  <strong>The Constitution of Liberty</strong>
-                  <span class="econ-book-meta">Friedrich A. Hayek &middot; 1960</span>
-                </li>
-              </ul>
-            </section>
-
-            <!-- Marxian & Socialist thought dossier -->
-            <section class="econ-dossier">
-              <h3>Marxian &amp; Socialist</h3>
-              <ul>
-                <li>
-                  <a href="https://www.marxists.org/archive/marx/works/1867-c1/" target="_blank" rel="noopener"><strong>Das Kapital</strong></a>
-                  <span class="econ-book-meta">Karl Marx &middot; 1867</span>
-                </li>
-                <li>
-                  <a href="https://www.gutenberg.org/ebooks/61" target="_blank" rel="noopener"><strong>The Communist Manifesto</strong></a>
-                  <span class="econ-book-meta">Karl Marx &amp; Friedrich Engels &middot; 1848</span>
-                </li>
-                <li>
-                  <a href="https://www.gutenberg.org/ebooks/41405" target="_blank" rel="noopener"><strong>The Accumulation of Capital</strong></a>
-                  <span class="econ-book-meta">Rosa Luxemburg &middot; 1913</span>
-                </li>
-                <li>
-                  <a href="https://www.gutenberg.org/ebooks/39257" target="_blank" rel="noopener"><strong>Socialism: Utopian and Scientific</strong></a>
-                  <span class="econ-book-meta">Friedrich Engels &middot; 1880</span>
-                </li>
-                <li>
-                  <a href="https://www.gutenberg.org/ebooks/833" target="_blank" rel="noopener"><strong>The Theory of the Leisure Class</strong></a>
-                  <span class="econ-book-meta">Thorstein Veblen &middot; 1899</span>
-                </li>
-              </ul>
-            </section>
-
-            <!-- Economic history dossier -->
-            <section class="econ-dossier">
-              <h3>Economic History</h3>
-              <ul>
-                <li>
-                  <strong>The Worldly Philosophers</strong>
-                  <span class="econ-book-meta">Robert Heilbroner &middot; 1953</span>
-                </li>
-                <li>
-                  <strong>This Time Is Different</strong>
-                  <span class="econ-book-meta">Carmen Reinhart &amp; Kenneth Rogoff &middot; 2009</span>
-                </li>
-                <li>
-                  <strong>The Great Transformation</strong>
-                  <span class="econ-book-meta">Karl Polanyi &middot; 1944</span>
-                </li>
-                <li>
-                  <strong>Why Nations Fail</strong>
-                  <span class="econ-book-meta">Daron Acemoglu &amp; James Robinson &middot; 2012</span>
-                </li>
-                <li>
-                  <strong>The Wealth and Poverty of Nations</strong>
-                  <span class="econ-book-meta">David Landes &middot; 1998</span>
-                </li>
-              </ul>
-            </section>
-          </div>
-        </article>
-      </div>
-    </section>
   </main>
 
-  <!-- Shared site footer (identical on every page) -->
-  <footer>
-    <div class="container">
-      &copy; 2026 Eric Armbruster
+  <footer class="site-footer">
+    <div class="site-footer__inner">
+      <span>&copy; 2026 Eric Armbruster</span>
     </div>
   </footer>
 
-  <!-- Shared drawer controller: manages open/close/accessibility for the nav drawer -->
-  <script src="js/drawer.js"></script>
-
   <!--
-    =========================================================================
-    INLINE JAVASCRIPT — Economics Data Pipeline
-    =========================================================================
-    This self-executing IIFE is the entire client-side data engine for the page.
-    It does the following:
-
-    1. Defines ~30 FRED indicator series with display metadata (name, unit,
-       decimal precision, optional value transforms).
-    2. Creates placeholder DOM cards in the indicator grid for each series.
-    3. Fetches each series' historical CSV from FRED's public graph export
-       endpoint (fred.stlouisfed.org/graph/fredgraph.csv?id=SERIES_ID).
-    4. Parses CSV into {date, value} arrays, extracts the latest + previous
-       data points, computes period-over-period deltas, and hydrates each card.
-    5. Derives a synthetic "CPI YoY Inflation" card by comparing the latest
-       CPI index value to the value from 12 months prior.
-    6. Fetches the Mises Institute RSS feed (mises.org/feed), parses the XML,
-       and renders up to 10 headline items in "The Wire" sidebar.
-    7. All external fetches route through a CORS proxy fallback chain
-       (Codetabs -> AllOrigins/get -> AllOrigins/raw) because FRED and Mises
-       do not serve permissive CORS headers for browser-based requests.
-    =========================================================================
+    Economics data pipeline — preserved verbatim.
+    Targets: #econ-indicator-grid (cards appended dynamically with classes
+    .econ-indicator-card / .econ-indicator-value / .econ-series-code /
+    .econ-indicator-meta), #econ-indicator-status, #econ-news-list,
+    #econ-news-status, #econ-last-refresh.
   -->
   <script>
     (function () {
-
-      /*
-       * ---------------------------------------------------------------
-       * DOM References
-       * Grab handles to the key containers that JS will populate or
-       * update during the data pipeline execution.
-       * ---------------------------------------------------------------
-       */
       var indicatorGrid = document.getElementById('econ-indicator-grid');
       var indicatorStatus = document.getElementById('econ-indicator-status');
       var newsList = document.getElementById('econ-news-list');
       var newsStatus = document.getElementById('econ-news-status');
       var refreshText = document.getElementById('econ-last-refresh');
 
-      /*
-       * ---------------------------------------------------------------
-       * Indicator Definitions (FRED Series Metadata)
-       * ---------------------------------------------------------------
-       * Each object describes one economic indicator to display:
-       *   - id:        FRED series identifier (e.g. "UNRATE", "M2SL")
-       *   - name:      Human-readable label shown on the card
-       *   - unit:      Display unit appended after the value (%, $T, index, etc.)
-       *   - decimals:  Number of decimal places for formatting
-       *   - transform: Optional function to rescale raw FRED values
-       *                (e.g. divide by 1000 to convert billions -> trillions)
-       *   - derived:   If true, this indicator is NOT fetched directly from
-       *                FRED; instead it is computed from another series' data
-       *                (used only for CPI_YOY which is calculated from CPIAUCSL).
-       *
-       * The indicators are grouped thematically:
-       *   - Employment & Labor (UNRATE, PAYEMS, JTSJOL, ICSA)
-       *   - Inflation & Prices (CPIAUCSL, CPI_YOY, CPILFESL, T10YIE, PCE)
-       *   - Money & Fed (M2SL, BOGMBASE, WALCL, FEDFUNDS)
-       *   - Rates & Bonds (DGS2, DGS10, T10Y2Y, DFII10, BAMLH0A0HYM2, MORTGAGE30US)
-       *   - Output & Activity (GDPC1, INDPRO, RSAFS)
-       *   - Sentiment & Risk (UMCSENT, STLFSI4, DTWEXBGS)
-       *   - Housing & Debt (PERMIT, GFDEGDQ188S, VIXCLS)
-       *   - Trade & Velocity (BOPGSTB, M2V)
-       * ---------------------------------------------------------------
-       */
       var indicatorDefinitions = [
-        // --- Employment & Labor ---
         { id: 'UNRATE', name: 'Unemployment Rate', unit: '%', decimals: 1 },
         { id: 'PAYEMS', name: 'Payroll Employment', unit: 'M jobs', decimals: 1, transform: function (v) { return v / 1000; } },
         { id: 'JTSJOL', name: 'JOLTS Job Openings', unit: 'M', decimals: 2, transform: function (v) { return v / 1000; } },
         { id: 'ICSA', name: 'Initial Jobless Claims', unit: 'K', decimals: 0 },
-
-        // --- Inflation & Prices ---
         { id: 'CPIAUCSL', name: 'CPI (All Urban)', unit: 'index', decimals: 1 },
-        // CPI_YOY is a derived (computed) indicator — see findCpiYoY() below
         { id: 'CPI_YOY', name: 'CPI YoY Inflation', unit: '%', decimals: 2, derived: true },
         { id: 'CPILFESL', name: 'Core CPI (ex Food/Energy)', unit: 'index', decimals: 1 },
         { id: 'T10YIE', name: '10Y Breakeven Inflation', unit: '%', decimals: 2 },
         { id: 'PCE', name: 'Personal Consumption', unit: '$T', decimals: 2, transform: function (v) { return v / 1000; } },
-
-        // --- Money & Fed ---
         { id: 'M2SL', name: 'Money Supply (M2)', unit: '$T', decimals: 2, transform: function (v) { return v / 1000; } },
         { id: 'BOGMBASE', name: 'Monetary Base (M0)', unit: '$T', decimals: 2, transform: function (v) { return v / 1000; } },
-        // WALCL is reported in millions, so divide by 1,000,000 to get trillions
         { id: 'WALCL', name: 'Fed Balance Sheet', unit: '$T', decimals: 2, transform: function (v) { return v / 1000000; } },
         { id: 'FEDFUNDS', name: 'Fed Funds Rate', unit: '%', decimals: 2 },
-
-        // --- Rates & Bonds ---
         { id: 'DGS2', name: '2Y Treasury Yield', unit: '%', decimals: 2 },
         { id: 'DGS10', name: '10Y Treasury Yield', unit: '%', decimals: 2 },
-        // T10Y2Y is the yield curve spread; negative values signal inversion
         { id: 'T10Y2Y', name: '10Y-2Y Spread', unit: 'pp', decimals: 2 },
         { id: 'DFII10', name: '10Y Real Rate (TIPS)', unit: '%', decimals: 2 },
         { id: 'BAMLH0A0HYM2', name: 'High Yield Spread', unit: 'pp', decimals: 2 },
         { id: 'MORTGAGE30US', name: '30Y Mortgage Rate', unit: '%', decimals: 2 },
-
-        // --- Output & Activity ---
         { id: 'GDPC1', name: 'Real GDP', unit: '$T', decimals: 2, transform: function (v) { return v / 1000; } },
         { id: 'INDPRO', name: 'Industrial Production', unit: 'index', decimals: 1 },
         { id: 'RSAFS', name: 'Retail Sales', unit: '$B', decimals: 1 },
-
-        // --- Sentiment & Risk ---
         { id: 'UMCSENT', name: 'Consumer Sentiment', unit: 'index', decimals: 1 },
         { id: 'STLFSI4', name: 'Financial Stress Index', unit: 'index', decimals: 2 },
         { id: 'DTWEXBGS', name: 'Dollar Index (Broad)', unit: 'index', decimals: 2 },
-
-        // --- Housing & Debt ---
         { id: 'PERMIT', name: 'New Housing Permits', unit: 'K', decimals: 0 },
         { id: 'GFDEGDQ188S', name: 'Debt-to-GDP Ratio', unit: '%', decimals: 1 },
         { id: 'VIXCLS', name: 'CBOE Volatility (VIX)', unit: 'index', decimals: 2 },
-
-        // --- Trade & Velocity ---
         { id: 'BOPGSTB', name: 'Trade Balance', unit: '$B', decimals: 1 },
         { id: 'M2V', name: 'Velocity of Money (M2)', unit: 'ratio', decimals: 2 }
       ];
 
-      // Lookup map: series ID -> its DOM card element (populated by createIndicatorCard)
       var indicatorCards = {};
 
-      /*
-       * ---------------------------------------------------------------
-       * Utility: formatDate
-       * Converts a date string (e.g. "2024-05-01") into a locale-friendly
-       * short format like "May 1, 2024". Returns "Unknown date" for invalid input.
-       * ---------------------------------------------------------------
-       */
       function formatDate(dateString) {
         var date = new Date(dateString);
         if (Number.isNaN(date.getTime())) return 'Unknown date';
         return new Intl.DateTimeFormat('en-US', { month: 'short', day: 'numeric', year: 'numeric' }).format(date);
       }
 
-      /*
-       * ---------------------------------------------------------------
-       * Utility: decodeDataPayload
-       * Some CORS proxies (notably AllOrigins/get) return content wrapped
-       * in a data URI (e.g. "data:text/csv;base64,..."). This function
-       * detects that encoding, extracts the payload portion after the comma,
-       * and decodes it (base64 via atob, or percent-encoded via decodeURIComponent).
-       * If the content is not a data URI, it is returned as-is.
-       * ---------------------------------------------------------------
-       */
       function decodeDataPayload(contents) {
         if (!contents) return '';
-        // If the string does not start with "data:", it is plain text
         if (contents.indexOf('data:') !== 0) return contents;
-
         var comma = contents.indexOf(',');
         if (comma === -1) return contents;
-
         var metadata = contents.slice(0, comma);
         var payload = contents.slice(comma + 1);
-
-        // Check if the data URI uses base64 encoding
-        if (metadata.indexOf(';base64') !== -1) {
-          return atob(payload);
-        }
-
-        // Otherwise assume percent-encoding
+        if (metadata.indexOf(';base64') !== -1) return atob(payload);
         return decodeURIComponent(payload);
       }
 
-      /*
-       * ---------------------------------------------------------------
-       * CSV Parser: parseFredCsv
-       * FRED's CSV export has a header row ("DATE,VALUE") followed by
-       * data rows like "2024-05-01,3.4". This function splits the text
-       * into lines, skips the header, and maps each line into a
-       * {date, value} object. Lines with non-finite values (e.g. ".")
-       * are filtered out.
-       * ---------------------------------------------------------------
-       */
       function parseFredCsv(csvText) {
         var lines = csvText.split(/\r?\n/).filter(Boolean);
         if (lines.length < 2) return [];
-
-        // Skip header (line 0) and parse each subsequent line
         return lines.slice(1).map(function (line) {
           var parts = line.split(',');
           if (parts.length < 2) return null;
-
           var value = Number(parts[1]);
-          // FRED uses "." for missing observations, which becomes NaN
           if (!Number.isFinite(value)) return null;
-
-          return {
-            date: parts[0],
-            value: value
-          };
+          return { date: parts[0], value: value };
         }).filter(Boolean);
       }
 
-      /*
-       * ---------------------------------------------------------------
-       * DOM Builder: createIndicatorCard
-       * Creates a single indicator card element and appends it to the
-       * grid. Each card contains:
-       *   - <h3> with the indicator's human-readable name
-       *   - <p class="econ-series-code"> with the FRED series ID
-       *   - <p class="econ-indicator-value"> showing "--" until data loads
-       *   - <p class="econ-indicator-meta"> showing "Awaiting update..."
-       *
-       * For non-derived indicators, the card contents are wrapped in an
-       * <a> tag linking to the FRED page for that series, so users can
-       * click through for full historical charts.
-       *
-       * Derived indicators (like CPI_YOY) are not linkable because they
-       * do not correspond to a single FRED series URL.
-       * ---------------------------------------------------------------
-       */
       function createIndicatorCard(definition) {
         var card = document.createElement('article');
         card.className = 'econ-indicator-card';
         card.setAttribute('data-series', definition.id);
-
-        var h3 = document.createElement('h3');
-        h3.textContent = definition.name;
-        var code = document.createElement('p');
-        code.className = 'econ-series-code';
-        code.textContent = definition.id;
-        var value = document.createElement('p');
-        value.className = 'econ-indicator-value';
-        value.textContent = '--';
-        var meta = document.createElement('p');
-        meta.className = 'econ-indicator-meta';
-        meta.textContent = 'Awaiting update...';
-
-        // Wrap in a link to FRED unless this is a derived (computed) indicator
+        var h3 = document.createElement('h3'); h3.textContent = definition.name;
+        var code = document.createElement('p'); code.className = 'econ-series-code'; code.textContent = definition.id;
+        var value = document.createElement('p'); value.className = 'econ-indicator-value'; value.textContent = '--';
+        var meta = document.createElement('p'); meta.className = 'econ-indicator-meta'; meta.textContent = 'Awaiting update...';
         if (!definition.derived) {
           var link = document.createElement('a');
           link.href = 'https://fred.stlouisfed.org/series/' + definition.id;
-          link.target = '_blank';
-          link.rel = 'noopener';
+          link.target = '_blank'; link.rel = 'noopener';
           link.className = 'econ-indicator-link';
           link.append(h3, code, value, meta);
           card.appendChild(link);
         } else {
           card.append(h3, code, value, meta);
         }
-
-        // Add to the grid and register in the lookup map
         indicatorGrid.appendChild(card);
         indicatorCards[definition.id] = card;
       }
 
-      /*
-       * ---------------------------------------------------------------
-       * Card Error State: setCardError
-       * Marks a card as errored — adds the "is-error" CSS class (which
-       * dims or grays out the card), sets the value to "--", and shows
-       * a human-readable error message in the meta line.
-       * ---------------------------------------------------------------
-       */
       function setCardError(seriesId, message) {
         var card = indicatorCards[seriesId];
         if (!card) return;
-
         card.classList.add('is-error');
         card.querySelector('.econ-indicator-value').textContent = '--';
         card.querySelector('.econ-indicator-meta').textContent = message;
       }
 
-      /*
-       * ---------------------------------------------------------------
-       * Card Hydration: updateCard
-       * Populates a card with live data once it has been fetched:
-       *   1. Applies the optional transform function to scale the raw value
-       *      (e.g. dividing billions by 1000 to show trillions).
-       *   2. Formats the value with the correct number of decimal places
-       *      and appends the unit string.
-       *   3. If a previous data point is available, computes the delta
-       *      (period-over-period change) and displays it with a +/- sign.
-       *   4. Toggles "is-up" / "is-down" CSS classes for color-coded
-       *      directional styling (green for up, red for down).
-       * ---------------------------------------------------------------
-       */
       function updateCard(definition, latest, previous) {
         var card = indicatorCards[definition.id];
         if (!card) return;
-
-        // Apply transform if defined (e.g. billions -> trillions)
         var value = definition.transform ? definition.transform(latest.value) : latest.value;
         var previousValue = previous ? (definition.transform ? definition.transform(previous.value) : previous.value) : null;
         var delta = previousValue !== null ? value - previousValue : null;
-
-        // Clear any prior error state and set the formatted value
         card.classList.remove('is-error');
-        card.querySelector('.econ-indicator-value').textContent = value.toLocaleString(undefined, {
+        var formattedValue = value.toLocaleString(undefined, {
           minimumFractionDigits: definition.decimals,
           maximumFractionDigits: definition.decimals
         }) + ' ' + definition.unit;
-
-        // If no previous data point exists, just show the date without a delta
+        card.querySelector('.econ-indicator-value').textContent = formattedValue;
         if (delta === null) {
           card.querySelector('.econ-indicator-meta').textContent = formatDate(latest.date);
-          return;
+        } else {
+          var sign = delta > 0 ? '+' : '';
+          var deltaText = sign + delta.toLocaleString(undefined, { minimumFractionDigits: definition.decimals, maximumFractionDigits: definition.decimals });
+          card.querySelector('.econ-indicator-meta').textContent = formatDate(latest.date) + ' · change: ' + deltaText;
+          card.classList.toggle('is-up', delta > 0);
+          card.classList.toggle('is-down', delta < 0);
         }
-
-        // Format the delta with explicit sign ("+0.3" or "-0.3")
-        var sign = delta > 0 ? '+' : '';
-        var deltaText = sign + delta.toLocaleString(undefined, {
-          minimumFractionDigits: definition.decimals,
-          maximumFractionDigits: definition.decimals
-        });
-
-        // Show date + period-over-period change, and apply directional CSS classes
-        card.querySelector('.econ-indicator-meta').textContent = formatDate(latest.date) + ' | change: ' + deltaText;
-        card.classList.toggle('is-up', delta > 0);
-        card.classList.toggle('is-down', delta < 0);
-      }
-
-      /*
-       * ===============================================================
-       * CORS Proxy Fallback Chain
-       * ===============================================================
-       * FRED and Mises.org do not serve Access-Control-Allow-Origin
-       * headers, so direct browser fetch() calls are blocked by CORS.
-       * To work around this, all external fetches route through a chain
-       * of three free CORS proxy services. If one fails (rate limit,
-       * downtime, etc.), the next is tried automatically:
-       *
-       *   1. Codetabs (api.codetabs.com/v1/proxy)
-       *   2. AllOrigins GET (api.allorigins.win/get) — returns JSON
-       *      wrapper with a "contents" field that may be a data URI
-       *   3. AllOrigins RAW (api.allorigins.win/raw) — returns raw text
-       *
-       * Each proxy function takes a source URL and returns a Promise
-       * that resolves to the fetched text content.
-       * ===============================================================
-       */
-
-      // Proxy #1: Codetabs — simplest proxy, returns raw response body
-      async function fetchTextViaCodetabs(sourceUrl) {
-        var proxyUrl = 'https://api.codetabs.com/v1/proxy/?quest=' + encodeURIComponent(sourceUrl);
-        var response = await fetch(proxyUrl, { cache: 'no-store' });
-        if (!response.ok) {
-          throw new Error('Codetabs HTTP ' + response.status);
-        }
-        return response.text();
-      }
-
-      // Proxy #2: AllOrigins GET endpoint — returns JSON with a "contents" field
-      // that may be a data URI (base64 or percent-encoded), so we decode it
-      async function fetchTextViaAllOriginsGet(sourceUrl) {
-        var proxyUrl = 'https://api.allorigins.win/get?url=' + encodeURIComponent(sourceUrl);
-        var response = await fetch(proxyUrl, { cache: 'no-store' });
-        if (!response.ok) {
-          throw new Error('AllOrigins/get HTTP ' + response.status);
-        }
-
-        var payload = await response.json();
-        // Decode the contents field (handles data URI wrapping)
-        var decoded = decodeDataPayload(payload.contents || '');
-        if (!decoded) {
-          throw new Error('AllOrigins/get empty payload');
-        }
-        return decoded;
-      }
-
-      // Proxy #3: AllOrigins RAW endpoint — returns the proxied content directly
-      async function fetchTextViaAllOriginsRaw(sourceUrl) {
-        var proxyUrl = 'https://api.allorigins.win/raw?url=' + encodeURIComponent(sourceUrl);
-        var response = await fetch(proxyUrl, { cache: 'no-store' });
-        if (!response.ok) {
-          throw new Error('AllOrigins/raw HTTP ' + response.status);
-        }
-
-        return response.text();
-      }
-
-      /*
-       * Orchestrator: tries each proxy in order. If Codetabs fails, tries
-       * AllOrigins/get; if that also fails, tries AllOrigins/raw.
-       * The last attempt is not caught, so its rejection propagates to the caller.
-       */
-      async function fetchTextWithFallbacks(sourceUrl) {
-        try {
-          return await fetchTextViaCodetabs(sourceUrl);
-        } catch (codetabsError) {
-          try {
-            return await fetchTextViaAllOriginsGet(sourceUrl);
-          } catch (allOriginsGetError) {
-            return fetchTextViaAllOriginsRaw(sourceUrl);
+        // Mirror the value into the top-of-page tape strip if a cell exists.
+        var tapeCell = document.querySelector('[data-tape="' + definition.id + '"]');
+        if (tapeCell) {
+          var tapeValueEl = tapeCell.querySelector('.econ-tape-value');
+          if (tapeValueEl) tapeValueEl.textContent = formattedValue;
+          tapeCell.classList.remove('is-up', 'is-down');
+          if (delta !== null) {
+            tapeCell.classList.toggle('is-up', delta > 0);
+            tapeCell.classList.toggle('is-down', delta < 0);
           }
         }
       }
 
-      /*
-       * ---------------------------------------------------------------
-       * FRED Data Fetcher: fetchFredSeries
-       * Constructs the FRED CSV export URL for a given series ID and
-       * fetches it through the CORS proxy chain. The CSV is then parsed
-       * into an array of {date, value} data points. Throws if no valid
-       * data points are found after parsing.
-       * ---------------------------------------------------------------
-       */
-      async function fetchFredSeries(seriesId) {
-        var sourceUrl = 'https://fred.stlouisfed.org/graph/fredgraph.csv?id=' + encodeURIComponent(seriesId);
-        var csv = await fetchTextWithFallbacks(sourceUrl);
-        var points = parseFredCsv(csv);
-        if (!points.length) {
-          throw new Error('No data points');
+      async function fetchTextViaCodetabs(sourceUrl) {
+        var r = await fetch('https://api.codetabs.com/v1/proxy/?quest=' + encodeURIComponent(sourceUrl), { cache: 'no-store' });
+        if (!r.ok) throw new Error('Codetabs HTTP ' + r.status);
+        return r.text();
+      }
+      async function fetchTextViaAllOriginsGet(sourceUrl) {
+        var r = await fetch('https://api.allorigins.win/get?url=' + encodeURIComponent(sourceUrl), { cache: 'no-store' });
+        if (!r.ok) throw new Error('AllOrigins/get HTTP ' + r.status);
+        var p = await r.json();
+        var d = decodeDataPayload(p.contents || '');
+        if (!d) throw new Error('AllOrigins/get empty');
+        return d;
+      }
+      async function fetchTextViaAllOriginsRaw(sourceUrl) {
+        var r = await fetch('https://api.allorigins.win/raw?url=' + encodeURIComponent(sourceUrl), { cache: 'no-store' });
+        if (!r.ok) throw new Error('AllOrigins/raw HTTP ' + r.status);
+        return r.text();
+      }
+      async function fetchTextWithFallbacks(sourceUrl, validate) {
+        var attempts = [fetchTextViaAllOriginsRaw, fetchTextViaAllOriginsGet, fetchTextViaCodetabs];
+        var lastError = null;
+        for (var i = 0; i < attempts.length; i += 1) {
+          try {
+            var text = await attempts[i](sourceUrl);
+            if (!validate || validate(text)) return text;
+            lastError = new Error('Response failed validation');
+          } catch (err) { lastError = err; }
         }
-
-        return points;
+        throw lastError || new Error('All proxies failed');
       }
 
-      /*
-       * ---------------------------------------------------------------
-       * Utility: findLatestAndPrevious
-       * Given a chronologically sorted array of data points, extracts
-       * the most recent observation (last element) and the one before it.
-       * The "previous" value is used to compute the period-over-period
-       * change displayed on each card.
-       * ---------------------------------------------------------------
-       */
+      async function fetchFredSeries(seriesId) {
+        var sourceUrl = 'https://fred.stlouisfed.org/graph/fredgraph.csv?id=' + encodeURIComponent(seriesId);
+        var csv = await fetchTextWithFallbacks(sourceUrl, looksLikeFredCsv);
+        var points = parseFredCsv(csv);
+        if (!points.length) throw new Error('No data points');
+        return points;
+      }
+      function looksLikeFredCsv(text) {
+        if (!text) return false;
+        var head = text.slice(0, 32).trimStart().toLowerCase();
+        return head.indexOf('observation_date') === 0 || head.indexOf('date,') === 0;
+      }
+
       function findLatestAndPrevious(points) {
         if (!points.length) return { latest: null, previous: null };
         var latest = points[points.length - 1];
@@ -891,170 +920,67 @@
         return { latest: latest, previous: previous };
       }
 
-      /*
-       * ---------------------------------------------------------------
-       * Derived Indicator: findCpiYoY (CPI Year-over-Year Inflation)
-       * ---------------------------------------------------------------
-       * This is not a FRED series — it is calculated from the CPIAUCSL
-       * (Consumer Price Index for All Urban Consumers) time series.
-       *
-       * Algorithm:
-       *   1. Take the most recent CPI observation (e.g. June 2024).
-       *   2. Walk backward through the data to find the observation
-       *      closest to exactly 12 months prior (e.g. June 2023).
-       *   3. Compute: YoY% = ((latest / prior) - 1) * 100
-       *
-       * This gives the headline year-over-year inflation rate that is
-       * commonly cited in economic reporting.
-       *
-       * Returns an object with {latest: {date, value}, previous: null}
-       * matching the shape expected by updateCard(), or null if the
-       * calculation cannot be performed (insufficient data history).
-       * ---------------------------------------------------------------
-       */
       function findCpiYoY(points) {
         if (!points.length) return null;
-
-        // Grab the most recent CPI value
         var latest = points[points.length - 1];
         var latestDate = new Date(latest.date + 'T00:00:00');
-
-        // Calculate the target date 12 months ago
         var target = new Date(latestDate);
         target.setFullYear(target.getFullYear() - 1);
-
-        // Walk backward to find the first observation at or before the target date
         var prior = null;
         for (var i = points.length - 2; i >= 0; i -= 1) {
           var pointDate = new Date(points[i].date + 'T00:00:00');
-          if (pointDate <= target) {
-            prior = points[i];
-            break;
-          }
+          if (pointDate <= target) { prior = points[i]; break; }
         }
-
         if (!prior) return null;
-
-        // YoY inflation = percentage change over 12 months
         return {
-          latest: {
-            date: latest.date,
-            value: ((latest.value / prior.value) - 1) * 100
-          },
+          latest: { date: latest.date, value: ((latest.value / prior.value) - 1) * 100 },
           previous: null
         };
       }
 
-      /*
-       * ===============================================================
-       * Main Indicator Loading Pipeline: loadIndicators
-       * ===============================================================
-       * 1. Creates empty placeholder cards for ALL defined indicators
-       *    (including derived ones) so the grid layout is established
-       *    immediately, before any network requests complete.
-       *
-       * 2. Filters out derived indicators (they have no FRED endpoint)
-       *    and fires off parallel fetch requests for every remaining
-       *    series using Promise.allSettled (so one failure does not
-       *    abort the others).
-       *
-       * 3. For each fulfilled promise, extracts the latest + previous
-       *    data points and hydrates the corresponding card. Records
-       *    the CPI data array for use by the YoY derivation.
-       *
-       * 4. After all direct fetches settle, computes the CPI YoY
-       *    inflation rate from the CPIAUCSL data (if available) and
-       *    updates that derived card.
-       *
-       * 5. Updates the status line with "X / Y indicators updated."
-       * ===============================================================
-       */
       async function loadIndicators() {
-        // Step 1: Build all placeholder cards in DOM order
         indicatorDefinitions.forEach(createIndicatorCard);
-
-        // Step 2: Fetch all non-derived series in parallel
         var nonDerived = indicatorDefinitions.filter(function (def) { return !def.derived; });
         var results = await Promise.allSettled(nonDerived.map(function (definition) {
-          return fetchFredSeries(definition.id).then(function (points) {
-            return { definition: definition, points: points };
-          });
+          return fetchFredSeries(definition.id).then(function (points) { return { definition: definition, points: points }; });
         }));
-
         var loaded = 0;
         var cpiPoints = null;
-
-        // Step 3: Process each result — hydrate card or show error
         results.forEach(function (result, index) {
           var definition = nonDerived[index];
           if (result.status !== 'fulfilled') {
+            console.warn('[econ] FRED feed failed for', definition.id, '-', result.reason && result.reason.message || result.reason);
             setCardError(definition.id, 'Feed unavailable');
             return;
           }
-
           var payload = result.value;
-
-          // Stash CPI data for the YoY derivation below
-          if (definition.id === 'CPIAUCSL') {
-            cpiPoints = payload.points;
-          }
-
+          if (definition.id === 'CPIAUCSL') cpiPoints = payload.points;
           var pair = findLatestAndPrevious(payload.points);
-          if (!pair.latest) {
-            setCardError(definition.id, 'No data available');
-            return;
-          }
-
+          if (!pair.latest) { setCardError(definition.id, 'No data available'); return; }
           updateCard(definition, pair.latest, pair.previous);
           loaded += 1;
         });
-
-        // Step 4: Compute and display the derived CPI Year-over-Year card
         var cpiYoyDefinition = indicatorDefinitions.find(function (def) { return def.id === 'CPI_YOY'; });
         if (cpiYoyDefinition) {
           if (cpiPoints) {
             var yoy = findCpiYoY(cpiPoints);
-            if (yoy && yoy.latest) {
-              updateCard(cpiYoyDefinition, yoy.latest, yoy.previous);
-              loaded += 1;
-            } else {
-              setCardError('CPI_YOY', 'Unable to compute YoY');
-            }
-          } else {
-            setCardError('CPI_YOY', 'Missing CPI source');
-          }
+            if (yoy && yoy.latest) { updateCard(cpiYoyDefinition, yoy.latest, yoy.previous); loaded += 1; }
+            else setCardError('CPI_YOY', 'Unable to compute YoY');
+          } else setCardError('CPI_YOY', 'Missing CPI source');
         }
-
-        // Step 5: Update the status text with the final tally
         indicatorStatus.textContent = loaded + ' / ' + indicatorDefinitions.length + ' indicators updated.';
       }
 
-      /*
-       * ===============================================================
-       * Mises RSS Feed — Helper Utilities
-       * ===============================================================
-       */
-
-      // Strip HTML tags from a string (used to sanitize RSS <title> content
-      // which sometimes contains encoded HTML entities or markup)
       function stripHtml(html) {
         var parsed = new DOMParser().parseFromString(html || '', 'text/html');
         return (parsed.body.textContent || '').trim();
       }
-
-      // Classify a Mises article URL into a human-readable category tag
-      // displayed on each news item (e.g. "Mises Wire", "Podcast", "Article")
       function classifyNewsItem(link) {
         if (!link) return 'Update';
         if (link.indexOf('/mises-wire/') !== -1) return 'Mises Wire';
         if (link.indexOf('/podcasts/') !== -1) return 'Podcast';
         return 'Article';
       }
-
-      /*
-       * Fallback news renderer: shown when both RSS parsing strategies fail.
-       * Displays two static links to browse Mises content manually.
-       */
       function renderFallbackNews() {
         newsList.textContent = '';
         var fallbacks = [
@@ -1064,159 +990,60 @@
         fallbacks.forEach(function (item) {
           var li = document.createElement('li');
           var a = document.createElement('a');
-          a.href = item.href;
-          a.target = '_blank';
-          a.rel = 'noopener';
-          a.textContent = item.text;
-          var span = document.createElement('span');
-          span.textContent = 'Live feed unavailable';
-          li.append(a, span);
-          newsList.appendChild(li);
+          a.href = item.href; a.target = '_blank'; a.rel = 'noopener'; a.textContent = item.text;
+          var span = document.createElement('span'); span.textContent = 'Live feed unavailable';
+          li.append(a, span); newsList.appendChild(li);
         });
       }
-
-      /*
-       * ---------------------------------------------------------------
-       * RSS XML Parser: parseRssItems
-       * Parses raw RSS/XML text into an array of {title, link, pubDate}
-       * objects. Uses DOMParser to parse the XML, then queries all <item>
-       * elements and extracts their child tags. Items missing a title or
-       * link are filtered out.
-       * ---------------------------------------------------------------
-       */
       function parseRssItems(xmlText) {
         var parsed = new DOMParser().parseFromString(xmlText, 'application/xml');
-        // Check for XML parse errors (malformed feed)
-        if (parsed.querySelector('parsererror')) {
-          throw new Error('Malformed RSS XML');
-        }
-
+        if (parsed.querySelector('parsererror')) throw new Error('Malformed RSS XML');
         return Array.from(parsed.querySelectorAll('item')).map(function (item) {
-          // Helper to read a child tag's text content
-          function read(tagName) {
-            var node = item.querySelector(tagName);
-            return node ? node.textContent.trim() : '';
-          }
-
-          return {
-            title: read('title'),
-            link: read('link'),
-            pubDate: read('pubDate')
-          };
-        }).filter(function (item) {
-          return item.title && item.link;
-        });
+          function read(tagName) { var node = item.querySelector(tagName); return node ? node.textContent.trim() : ''; }
+          return { title: read('title'), link: read('link'), pubDate: read('pubDate') };
+        }).filter(function (item) { return item.title && item.link; });
       }
-
-      /*
-       * ---------------------------------------------------------------
-       * News Renderer: renderNewsItems
-       * Takes an array of news item objects and builds DOM <li> elements
-       * inside the news list <ul>. Each item shows:
-       *   - A clickable headline link (sanitized via stripHtml)
-       *   - A metadata span with the article category and formatted date
-       * Limited to the 10 most recent items.
-       * ---------------------------------------------------------------
-       */
       function renderNewsItems(items) {
         newsList.textContent = '';
         items.slice(0, 10).forEach(function (item) {
           var li = document.createElement('li');
           var a = document.createElement('a');
-          a.href = item.link;
-          a.target = '_blank';
-          a.rel = 'noopener';
+          a.href = item.link; a.target = '_blank'; a.rel = 'noopener';
           a.textContent = stripHtml(item.title || 'Untitled');
-
           var meta = document.createElement('span');
-          meta.textContent = classifyNewsItem(item.link) + ' | ' + formatDate(item.pubDate);
-
-          li.appendChild(a);
-          li.appendChild(meta);
+          meta.textContent = classifyNewsItem(item.link) + ' · ' + formatDate(item.pubDate);
+          li.appendChild(a); li.appendChild(meta);
           newsList.appendChild(li);
         });
       }
-
-      /*
-       * ---------------------------------------------------------------
-       * Fallback News Loader: loadNewsViaRss2Json
-       * If direct RSS XML parsing fails (proxy returned HTML error page,
-       * or the XML was malformed), this fallback uses the rss2json.com
-       * API which converts any RSS feed into a clean JSON response.
-       * The JSON payload has a "status" field and an "items" array.
-       * ---------------------------------------------------------------
-       */
       async function loadNewsViaRss2Json(feedUrl) {
         var rss2jsonUrl = 'https://api.rss2json.com/v1/api.json?rss_url=' + encodeURIComponent(feedUrl);
         var response = await fetch(rss2jsonUrl, { cache: 'no-store' });
-        if (!response.ok) {
-          throw new Error('HTTP ' + response.status);
-        }
-
+        if (!response.ok) throw new Error('HTTP ' + response.status);
         var payload = await response.json();
-        if (payload.status !== 'ok' || !Array.isArray(payload.items)) {
-          throw new Error('Invalid feed payload');
-        }
-
+        if (payload.status !== 'ok' || !Array.isArray(payload.items)) throw new Error('Invalid feed payload');
         renderNewsItems(payload.items);
       }
-
-      /*
-       * ---------------------------------------------------------------
-       * Main News Loading Pipeline: loadNews
-       * ---------------------------------------------------------------
-       * Strategy (two-tier fallback):
-       *   1. Fetch the raw RSS XML from mises.org/feed through the CORS
-       *      proxy chain, then parse it with DOMParser as XML.
-       *   2. If that fails (network error, XML parse error, or zero items),
-       *      fall back to rss2json.com which handles the RSS parsing
-       *      server-side and returns clean JSON.
-       *
-       * If both strategies succeed, the news status is updated to
-       * "Latest headlines from Mises." If both fail, the caller
-       * (Promise.allSettled handler) will show the fallback links.
-       * ---------------------------------------------------------------
-       */
       async function loadNews() {
         var feedUrl = 'https://mises.org/feed';
         try {
-          // Primary: fetch raw XML via CORS proxy and parse locally
           var xmlText = await fetchTextWithFallbacks(feedUrl);
           var xmlItems = parseRssItems(xmlText);
-          if (!xmlItems.length) {
-            throw new Error('No RSS items');
-          }
+          if (!xmlItems.length) throw new Error('No RSS items');
           renderNewsItems(xmlItems);
-          newsStatus.textContent = 'Latest headlines from Mises.';
+          newsStatus.textContent = 'Latest from Mises.';
         } catch (rssXmlError) {
-          // Fallback: use rss2json.com for server-side RSS-to-JSON conversion
+          console.warn('[econ] RSS XML pipeline failed -', rssXmlError && rssXmlError.message || rssXmlError);
           await loadNewsViaRss2Json(feedUrl);
-          newsStatus.textContent = 'Latest headlines from Mises.';
+          newsStatus.textContent = 'Latest from Mises.';
         }
       }
 
-      /*
-       * ===============================================================
-       * Bootstrap: kick off both data pipelines in parallel
-       * ===============================================================
-       * Promise.allSettled ensures that even if one pipeline fails
-       * completely, the other can still succeed and render its data.
-       * Once both settle:
-       *   - If the news pipeline rejected, show fallback links
-       *   - Update the "last refreshed" timestamp in the hero terminal
-       * ===============================================================
-       */
-      Promise.allSettled([
-        loadIndicators(),
-        loadNews()
-      ]).then(function (results) {
-        // If the news pipeline failed entirely, show static fallback links
+      Promise.allSettled([loadIndicators(), loadNews()]).then(function (results) {
         if (results[1].status !== 'fulfilled') {
           newsStatus.textContent = 'News feed unavailable.';
           renderFallbackNews();
         }
-
-        // Update the terminal header with the current time
         refreshText.textContent = 'Updated ' + new Date().toLocaleTimeString([], { hour: 'numeric', minute: '2-digit' });
       }).catch(function () {
         refreshText.textContent = 'Update failed';
@@ -1224,7 +1051,5 @@
     })();
   </script>
 
-  <!-- Ticker animation controller: manages the CSS scroll animation for the ticker tape -->
-  <script src="js/ticker.js"></script>
 </body>
 </html>
