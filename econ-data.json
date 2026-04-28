@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-04-27T18:16:43.601Z",
+  "fetchedAt": "2026-04-28T03:36:42.009Z",
   "indicators": {
     "UNRATE": {
       "latest": {
@@ -63,11 +63,11 @@
     },
     "T10YIE": {
       "latest": {
-        "date": "2026-04-24",
-        "value": 2.42
+        "date": "2026-04-27",
+        "value": 2.44
       },
       "previous": {
-        "date": "2026-04-23",
+        "date": "2026-04-24",
         "value": 2.42
       }
     },
@@ -123,41 +123,41 @@
     },
     "DGS2": {
       "latest": {
-        "date": "2026-04-23",
-        "value": 3.83
+        "date": "2026-04-24",
+        "value": 3.78
       },
       "previous": {
-        "date": "2026-04-22",
-        "value": 3.79
+        "date": "2026-04-23",
+        "value": 3.83
       }
     },
     "DGS10": {
       "latest": {
-        "date": "2026-04-23",
-        "value": 4.34
+        "date": "2026-04-24",
+        "value": 4.31
       },
       "previous": {
-        "date": "2026-04-22",
-        "value": 4.3
+        "date": "2026-04-23",
+        "value": 4.34
       }
     },
     "T10Y2Y": {
       "latest": {
-        "date": "2026-04-24",
-        "value": 0.53
+        "date": "2026-04-27",
+        "value": 0.57
       },
       "previous": {
-        "date": "2026-04-23",
-        "value": 0.51
+        "date": "2026-04-24",
+        "value": 0.53
       }
     },
     "DFII10": {
       "latest": {
-        "date": "2026-04-23",
-        "value": 1.92
+        "date": "2026-04-24",
+        "value": 1.89
       },
       "previous": {
-        "date": "2026-04-22",
+        "date": "2026-04-23",
         "value": 1.92
       }
     },
@@ -233,12 +233,12 @@
     },
     "DTWEXBGS": {
       "latest": {
-        "date": "2026-04-17",
-        "value": 118.0795
+        "date": "2026-04-24",
+        "value": 118.7294
       },
       "previous": {
-        "date": "2026-04-16",
-        "value": 118.3616
+        "date": "2026-04-23",
+        "value": 118.7155
       }
     },
     "PERMIT": {
@@ -301,6 +301,12 @@
   },
   "news": [
     {
+      "title": "Robert Aro on the Fed's Reverse Repo Trick",
+      "link": "https://mises.org/podcasts/human-action-podcast/robert-aro-feds-reverse-repo-trick",
+      "pubDate": "Mon, 27 Apr 2026 03:00:28 CDT",
+      "kind": "Podcast"
+    },
+    {
       "title": "Those Big, Beautiful Bonds",
       "link": "https://mises.org/power-market/those-big-beautiful-bonds",
       "pubDate": "Mon, 27 Apr 2026 10:29:46 CDT",
@@ -311,6 +317,12 @@
       "link": "https://mises.org/podcasts/audio-mises-wire/when-chicken-isnt-just-chicken",
       "pubDate": "Mon, 27 Apr 2026 09:37:09 CDT",
       "kind": "Podcast"
+    },
+    {
+      "title": "The Problem with Eternal Vigilance",
+      "link": "https://mises.org/mises-wire/problem-eternal-vigilance",
+      "pubDate": "Mon, 27 Apr 2026 09:01:45 CDT",
+      "kind": "Mises Wire"
     },
     {
       "title": "Transparent Monetary Policy and Economic Stability",
@@ -347,18 +359,6 @@
       "link": "https://mises.org/podcasts/radio-rothbard/leninism-democracy-and-immigration",
       "pubDate": "Fri, 24 Apr 2026 11:00:00 CDT",
       "kind": "Podcast"
-    },
-    {
-      "title": "U.S. consumer sentiment falls to record low on inflation",
-      "link": "https://mises.org/notes-margin/us-consumer-sentiment-falls-record-low-inflation",
-      "pubDate": "Fri, 24 Apr 2026 08:00:00 CDT",
-      "kind": "Article"
-    },
-    {
-      "title": "Treasury yields move higher as oil prices rise amid U.S.-Iran standoff",
-      "link": "https://mises.org/notes-margin/treasury-yields-move-higher-oil-prices-rise-amid-us-iran-standoff",
-      "pubDate": "Fri, 24 Apr 2026 07:00:00 CDT",
-      "kind": "Article"
     }
   ]
 }
