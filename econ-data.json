@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-04-28T08:31:37.952Z",
+  "fetchedAt": "2026-04-28T14:22:57.875Z",
   "indicators": {
     "UNRATE": {
       "latest": {
@@ -263,12 +263,12 @@
     },
     "VIXCLS": {
       "latest": {
-        "date": "2026-04-24",
-        "value": 18.71
+        "date": "2026-04-27",
+        "value": 18.02
       },
       "previous": {
-        "date": "2026-04-23",
-        "value": 19.31
+        "date": "2026-04-24",
+        "value": 18.71
       }
     },
     "BOPGSTB": {
@@ -300,6 +300,24 @@
     }
   },
   "news": [
+    {
+      "title": "The Problem with Eternal Vigilance",
+      "link": "https://mises.org/podcasts/audio-mises-wire/problem-eternal-vigilance",
+      "pubDate": "Tue, 28 Apr 2026 08:46:11 CDT",
+      "kind": "Podcast"
+    },
+    {
+      "title": "Ft. Knox Full of Impure Gold Unfit for International Transactions",
+      "link": "https://mises.org/power-market/ft-knox-full-impure-gold-unfit-international-transactions",
+      "pubDate": "Tue, 28 Apr 2026 02:02:16 CDT",
+      "kind": "Article"
+    },
+    {
+      "title": "Free Speech is About Individual Liberty, Not Viewpoint Discrimination",
+      "link": "https://mises.org/mises-wire/free-speech-about-individual-liberty-not-viewpoint-discrimination",
+      "pubDate": "Tue, 28 Apr 2026 12:03:07 CDT",
+      "kind": "Mises Wire"
+    },
     {
       "title": "Robert Aro on the Fed's Reverse Repo Trick",
       "link": "https://mises.org/podcasts/human-action-podcast/robert-aro-feds-reverse-repo-trick",
@@ -341,24 +359,6 @@
       "link": "https://mises.org/mises-wire/when-chicken-isnt-just-chicken",
       "pubDate": "Mon, 27 Apr 2026 12:02:26 CDT",
       "kind": "Mises Wire"
-    },
-    {
-      "title": "Chemistry 101",
-      "link": "https://mises.org/podcasts/minor-issues/chemistry-101",
-      "pubDate": "Sat, 25 Apr 2026 06:02:16 CDT",
-      "kind": "Podcast"
-    },
-    {
-      "title": "Inflation, Communication, and Noise",
-      "link": "https://mises.org/mises-wire/inflation-communication-and-noise",
-      "pubDate": "Sat, 25 Apr 2026 12:02:41 CDT",
-      "kind": "Mises Wire"
-    },
-    {
-      "title": "Leninism, Democracy, and Immigration",
-      "link": "https://mises.org/podcasts/radio-rothbard/leninism-democracy-and-immigration",
-      "pubDate": "Fri, 24 Apr 2026 11:00:00 CDT",
-      "kind": "Podcast"
     }
   ]
 }
