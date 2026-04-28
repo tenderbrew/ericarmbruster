@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-04-28T14:22:57.875Z",
+  "fetchedAt": "2026-04-28T19:47:05.849Z",
   "indicators": {
     "UNRATE": {
       "latest": {
@@ -83,22 +83,22 @@
     },
     "M2SL": {
       "latest": {
-        "date": "2026-02-01",
-        "value": 22667.3
+        "date": "2026-03-01",
+        "value": 22686
       },
       "previous": {
-        "date": "2026-01-01",
-        "value": 22469.1
+        "date": "2026-02-01",
+        "value": 22627.3
       }
     },
     "BOGMBASE": {
       "latest": {
-        "date": "2026-02-01",
-        "value": 5388
+        "date": "2026-03-01",
+        "value": 5458.6
       },
       "previous": {
-        "date": "2026-01-01",
-        "value": 5402.5
+        "date": "2026-02-01",
+        "value": 5388
       }
     },
     "WALCL": {
@@ -163,11 +163,11 @@
     },
     "BAMLH0A0HYM2": {
       "latest": {
-        "date": "2026-04-24",
-        "value": 2.86
+        "date": "2026-04-27",
+        "value": 2.84
       },
       "previous": {
-        "date": "2026-04-23",
+        "date": "2026-04-24",
         "value": 2.86
       }
     },
@@ -301,10 +301,34 @@
   },
   "news": [
     {
+      "title": "If Science Is a Public Good, Let China Pay for It",
+      "link": "https://mises.org/podcasts/audio-mises-wire/if-science-public-good-let-china-pay-it",
+      "pubDate": "Tue, 28 Apr 2026 01:51:07 CDT",
+      "kind": "Podcast"
+    },
+    {
+      "title": "Those Big, Beautiful Bonds",
+      "link": "https://mises.org/podcasts/audio-mises-wire/those-big-beautiful-bonds",
+      "pubDate": "Tue, 28 Apr 2026 12:26:08 CDT",
+      "kind": "Podcast"
+    },
+    {
       "title": "The Problem with Eternal Vigilance",
       "link": "https://mises.org/podcasts/audio-mises-wire/problem-eternal-vigilance",
       "pubDate": "Tue, 28 Apr 2026 08:46:11 CDT",
       "kind": "Podcast"
+    },
+    {
+      "title": "Do the Rich Pay Their “Fair Share” of Taxes?",
+      "link": "https://mises.org/power-market/do-rich-pay-their-fair-share-taxes",
+      "pubDate": "Tue, 28 Apr 2026 08:02:18 CDT",
+      "kind": "Article"
+    },
+    {
+      "title": "If Science Is a Public Good, Let China Pay for It",
+      "link": "https://mises.org/mises-wire/if-science-public-good-let-china-pay-it",
+      "pubDate": "Tue, 28 Apr 2026 06:02:20 CDT",
+      "kind": "Mises Wire"
     },
     {
       "title": "Ft. Knox Full of Impure Gold Unfit for International Transactions",
@@ -335,30 +359,6 @@
       "link": "https://mises.org/podcasts/audio-mises-wire/when-chicken-isnt-just-chicken",
       "pubDate": "Mon, 27 Apr 2026 09:37:09 CDT",
       "kind": "Podcast"
-    },
-    {
-      "title": "The Problem with Eternal Vigilance",
-      "link": "https://mises.org/mises-wire/problem-eternal-vigilance",
-      "pubDate": "Mon, 27 Apr 2026 09:01:45 CDT",
-      "kind": "Mises Wire"
-    },
-    {
-      "title": "Transparent Monetary Policy and Economic Stability",
-      "link": "https://mises.org/mises-wire/transparent-monetary-policy-and-economic-stability",
-      "pubDate": "Mon, 27 Apr 2026 06:02:23 CDT",
-      "kind": "Mises Wire"
-    },
-    {
-      "title": "No, Thank You for Your “Service”",
-      "link": "https://mises.org/power-market/no-thank-you-your-service",
-      "pubDate": "Mon, 27 Apr 2026 02:02:13 CDT",
-      "kind": "Article"
-    },
-    {
-      "title": "When a Chicken Isn’t Just a Chicken",
-      "link": "https://mises.org/mises-wire/when-chicken-isnt-just-chicken",
-      "pubDate": "Mon, 27 Apr 2026 12:02:26 CDT",
-      "kind": "Mises Wire"
     }
   ]
 }
