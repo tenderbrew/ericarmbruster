@@ -4,7 +4,7 @@
   Letterboxd RSS feed + profile scrape, rendered as a sepia-toned
   essayist's log. All DOM IDs the inline pipeline targets are preserved:
   #film-feed-status, #film-recent-watches, #film-featured,
-  #film-marquee-titles, #film-list-activity, plus the five #stat-* IDs.
+  #film-list-activity, plus the five #stat-* IDs.
   The dynamic class names (.film-strip-*, .film-lightbox-*, etc.) are
   styled here so the JS can hydrate them without changes.
 -->
@@ -137,78 +137,70 @@
       color: rgba(244, 235, 217, 0.5);
     }
 
-    /* ── SECTION HEADS — program section labels ─────────────────────── */
-    .film-section-head {
-      font-family: 'Playfair Display', var(--font-serif);
-      font-style: italic;
-      font-weight: 400;
-      font-size: 1.85rem;
-      color: #fff;
-      letter-spacing: 0.02em;
-      margin: var(--space-8) 0 var(--space-3);
-      padding-bottom: var(--space-3);
-      border-bottom: 1px solid rgba(244, 235, 217, 0.25);
+    /* ── BORDERED SECTION PANELS ─────────────────────────────────────────
+       Each major section sits inside its own bordered panel with a header
+       bar above the content. A faint accent line at the top of each panel
+       evokes a film-cell aperture without going full marquee. */
+    .film-panel {
+      border: 1px solid rgba(244, 235, 217, 0.18);
+      background: rgba(244, 235, 217, 0.02);
+      margin: var(--space-7) 0;
+      position: relative;
+    }
+    .film-panel::before {
+      content: '';
+      position: absolute;
+      top: 0; left: 0; right: 0;
+      height: 1px;
+      background: linear-gradient(90deg, transparent 0%, rgba(244, 235, 217, 0.45) 50%, transparent 100%);
+      pointer-events: none;
+    }
+    .film-panel-bar {
       display: flex;
       justify-content: space-between;
       align-items: baseline;
+      flex-wrap: wrap;
+      row-gap: 4px;
       gap: var(--space-4);
-      text-shadow: 0 0 12px rgba(255,255,255,0.15);
+      padding: var(--space-4) var(--space-5);
+      border-bottom: 1px solid rgba(244, 235, 217, 0.18);
+      background: rgba(244, 235, 217, 0.04);
     }
-    .film-feed-status {
+    .film-panel-title {
+      font-family: 'Playfair Display', var(--font-serif);
+      font-style: italic;
+      font-weight: 400;
+      font-size: 1.6rem;
+      color: #fff;
+      letter-spacing: 0.02em;
+      margin: 0;
+    }
+    .film-panel-status {
       font-family: var(--font-serif);
       font-style: italic;
       font-size: 0.95rem;
       color: rgba(244, 235, 217, 0.55);
       margin: 0;
     }
-    .film-feed-status a { background: none; padding: 0; color: rgba(244, 235, 217, 0.55); }
-    .film-feed-status a:hover { color: #fff; }
-    .film-feed-status svg {
-      vertical-align: middle;
-      opacity: 0.65;
-      filter: grayscale(0.8);
+    .film-panel-status a { background: none; padding: 0; color: rgba(244, 235, 217, 0.55); }
+    .film-panel-status a:hover { color: #fff; }
+    .film-panel-status svg { vertical-align: middle; opacity: 0.65; filter: grayscale(0.8); }
+    .film-panel-body {
+      padding: var(--space-5);
     }
 
-    /* ── NOW SHOWING — marquee with star separators ──────────────────── */
-    .film-marquee-titles {
-      list-style: none;
-      padding: 0;
-      margin: var(--space-4) 0 var(--space-7);
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      gap: var(--space-3) var(--space-5);
-      text-align: center;
-    }
-    .film-marquee-titles li {
-      margin: 0;
-      padding: 0;
-      position: relative;
-      font-family: 'Playfair Display', var(--font-serif);
-      font-style: italic;
-      font-size: 1.3rem;
-      color: rgba(244, 235, 217, 0.85);
-    }
-    .film-marquee-titles li + li::before {
-      content: '★';
-      position: absolute;
-      left: calc(0px - var(--space-3));
-      top: 0.4em;
-      color: rgba(244, 235, 217, 0.4);
-      font-size: 0.6em;
-    }
-    .film-marquee-featured {
-      color: #fff !important;
-      font-weight: 700 !important;
-      text-shadow: 0 0 10px rgba(255,255,255,0.35);
-    }
-
-    /* Two-column layout for featured + sidebar. */
-    .film-layout {
+    /* Pairs Booth Stats and Recent Lists side by side at desktop (2fr:1fr
+       so the stats tiles get more room), stacks on mobile. */
+    .film-bottom-row {
       display: grid;
       grid-template-columns: 2fr 1fr;
-      gap: var(--space-7);
+      gap: var(--space-5);
+      margin: var(--space-7) 0;
     }
+    .film-bottom-row .film-panel {
+      margin: 0;
+    }
+
 
     /* ── FEATURED LIGHTBOX — film-cell card ──────────────────────────── */
     .film-lightbox {
@@ -381,41 +373,61 @@
       color: rgba(244, 235, 217, 0.5);
     }
 
-    /* ── BOOTH STATS — ticket counts on a marquee board ──────────────── */
+    /* ── BOOTH STATS — illuminated tiles on a marquee board ─────────────
+       Each stat is its own bordered tile with a faint inset glow and a
+       pair of "bulb" dots at the top corners — reads as a row of theatre
+       marquee tiles rather than a flat dashboard row. */
     .film-stats-grid {
       display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: var(--space-4);
-      margin: var(--space-3) 0;
+      grid-template-columns: repeat(auto-fit, minmax(7rem, 1fr));
+      gap: var(--space-3);
+      margin: 0;
     }
     .film-stats-grid > div {
       margin: 0;
-      padding: var(--space-3) 0;
-      border-bottom: 1px solid rgba(244, 235, 217, 0.1);
+      padding: var(--space-5) var(--space-3) var(--space-4);
+      text-align: center;
+      border: 1px solid rgba(244, 235, 217, 0.22);
+      background:
+        radial-gradient(ellipse at center top, rgba(255,255,255,0.05) 0%, transparent 60%),
+        rgba(244, 235, 217, 0.03);
+      box-shadow: inset 0 0 24px rgba(0,0,0,0.35);
+      position: relative;
     }
+    /* Corner bulbs — top left/right. */
+    .film-stats-grid > div::before,
+    .film-stats-grid > div::after {
+      content: '';
+      position: absolute;
+      top: 6px;
+      width: 4px;
+      height: 4px;
+      border-radius: 50%;
+      background: rgba(244, 235, 217, 0.6);
+      box-shadow: 0 0 6px rgba(255,255,255,0.45);
+    }
+    .film-stats-grid > div::before { left: 6px; }
+    .film-stats-grid > div::after  { right: 6px; }
     .film-stats-grid dt {
       font-family: var(--font-serif);
       font-style: normal;
       font-variant: small-caps;
-      letter-spacing: 0.12em;
+      letter-spacing: 0.16em;
       color: rgba(244, 235, 217, 0.55);
-      font-size: 0.78rem;
-      margin-bottom: 4px;
+      font-size: 0.72rem;
+      margin: 0 0 6px;
     }
     .film-stats-grid dd {
       font-family: 'Playfair Display', var(--font-serif);
       font-style: italic;
-      font-weight: 400;
-      font-size: 1.7rem;
+      font-weight: 600;
+      font-size: 2.4rem;
       color: #fff;
       margin: 0;
-      text-shadow: 0 0 12px rgba(255,255,255,0.18);
-    }
-    .film-note {
-      margin-top: var(--space-4);
-      font-style: italic;
-      font-size: 0.95rem;
-      color: rgba(244, 235, 217, 0.55);
+      line-height: 1;
+      text-shadow:
+        0 0 12px rgba(255,255,255,0.35),
+        0 0 24px rgba(255,255,255,0.15);
     }
     .film-fallback {
       font-style: italic;
@@ -426,15 +438,16 @@
     /* ── RESPONSIVE ──────────────────────────────────────────────────── */
     @media (max-width: 880px) {
       .film-title { font-size: 3.2rem; letter-spacing: 0.12em; }
-      .film-layout { grid-template-columns: 1fr; }
       .film-lightbox { grid-template-columns: 8rem 1fr; gap: var(--space-4); }
-      .film-section-head { flex-direction: column; align-items: flex-start; gap: var(--space-2); font-size: 1.5rem; }
-      .film-marquee-titles li { font-size: 1.1rem; }
+      .film-panel-title { font-size: 1.4rem; }
+      .film-panel-body { padding: var(--space-4); }
+      .film-panel-bar { padding: var(--space-3) var(--space-4); }
+      .film-bottom-row { grid-template-columns: 1fr; }
+      .film-stats-grid dd { font-size: 2rem; }
     }
     @media (max-width: 540px) {
       .film-title { font-size: 2.4rem; }
       .film-lightbox { grid-template-columns: 1fr; }
-      .film-stats-grid { grid-template-columns: 1fr 1fr 1fr; }
       .film-strip-item a { font-size: 1.2rem; }
     }
   </style>
@@ -469,32 +482,50 @@
       <h1 class="film-title">Film</h1>
     </header>
 
-    <h2 class="film-section-head"><span>Featured log</span></h2>
-    <div id="film-featured"></div>
+    <article class="film-panel">
+      <header class="film-panel-bar">
+        <h2 class="film-panel-title">Featured log</h2>
+      </header>
+      <div class="film-panel-body">
+        <div id="film-featured"></div>
+      </div>
+    </article>
 
-    <div class="film-layout">
-      <article>
-        <h2 class="film-section-head">
-          <span>Now screening</span>
-          <span id="film-feed-status" class="film-feed-status" role="status">Loading Letterboxd feed&hellip;</span>
-        </h2>
+    <article class="film-panel">
+      <header class="film-panel-bar">
+        <h2 class="film-panel-title">Now screening</h2>
+        <span id="film-feed-status" class="film-panel-status" role="status">Loading Letterboxd feed&hellip;</span>
+      </header>
+      <div class="film-panel-body">
         <ul id="film-recent-watches" class="film-strip-list" aria-live="polite"></ul>
+      </div>
+    </article>
+
+    <div class="film-bottom-row">
+      <article class="film-panel">
+        <header class="film-panel-bar">
+          <h2 class="film-panel-title">Booth stats</h2>
+          <span class="film-panel-status">Source: <a href="https://letterboxd.com/tenderbrew/" target="_blank" rel="noopener">letterboxd.com/tenderbrew</a></span>
+        </header>
+        <div class="film-panel-body">
+          <dl class="film-stats-grid">
+            <div><dt>Films Watched</dt><dd id="stat-films">--</dd></div>
+            <div><dt>This Year</dt>    <dd id="stat-this-year">--</dd></div>
+            <div><dt>Lists</dt>        <dd id="stat-lists">--</dd></div>
+            <div><dt>Following</dt>    <dd id="stat-following">--</dd></div>
+            <div><dt>Followers</dt>    <dd id="stat-followers">--</dd></div>
+          </dl>
+        </div>
       </article>
 
-      <aside>
-        <h2 class="film-section-head"><span>Booth stats</span></h2>
-        <dl class="film-stats-grid">
-          <div><dt>Films Watched</dt><dd id="stat-films">--</dd></div>
-          <div><dt>This Year</dt>    <dd id="stat-this-year">--</dd></div>
-          <div><dt>Lists</dt>        <dd id="stat-lists">--</dd></div>
-          <div><dt>Following</dt>    <dd id="stat-following">--</dd></div>
-          <div><dt>Followers</dt>    <dd id="stat-followers">--</dd></div>
-        </dl>
-        <p class="film-note">Source: <a href="https://letterboxd.com/tenderbrew/" target="_blank" rel="noopener">letterboxd.com/tenderbrew</a>.</p>
-
-        <h2 class="film-section-head"><span>Recent lists</span></h2>
-        <ul id="film-list-activity" class="film-list-activity"></ul>
-      </aside>
+      <article class="film-panel">
+        <header class="film-panel-bar">
+          <h2 class="film-panel-title">Recent lists</h2>
+        </header>
+        <div class="film-panel-body">
+          <ul id="film-list-activity" class="film-list-activity"></ul>
+        </div>
+      </article>
     </div>
 
   </main>
@@ -508,7 +539,7 @@
   <!--
     Letterboxd data pipeline — preserved verbatim from the previous design.
     Targets: #film-feed-status, #film-recent-watches, #film-featured,
-    #film-marquee-titles, #film-list-activity, and the five #stat-* IDs.
+    #film-list-activity, and the five #stat-* IDs.
     Two-strategy fetch chain: rss2json (primary) → AllOrigins (fallback).
     Profile stats and list activity scraped via CodeTabs / AllOrigins proxies.
   -->
@@ -517,7 +548,6 @@
       var feedStatus = document.getElementById('film-feed-status');
       var recentList = document.getElementById('film-recent-watches');
       var featured = document.getElementById('film-featured');
-      var marqueeTitles = document.getElementById('film-marquee-titles');
       var listActivity = document.getElementById('film-list-activity');
       var statFilms = document.getElementById('stat-films');
       var statThisYear = document.getElementById('stat-this-year');
@@ -646,17 +676,6 @@
             item.appendChild(review);
           }
           recentList.appendChild(item);
-        });
-      }
-
-      function renderMarqueeTitles(entries) {
-        if (!marqueeTitles) return;
-        marqueeTitles.innerHTML = '';
-        entries.forEach(function (entry, i) {
-          var li = document.createElement('li');
-          if (i === 0) li.className = 'film-marquee-featured';
-          li.textContent = entry.title;
-          marqueeTitles.appendChild(li);
         });
       }
 
@@ -955,7 +974,6 @@
 
       function renderWithFallback(reason) {
         var fallbackEntries = attachLatestWrittenReviews(fallbackWatches);
-        renderMarqueeTitles(fallbackEntries.slice(0, 6));
         renderFeatured(fallbackEntries[0]);
         renderRecentWatches(fallbackEntries.slice(1));
         renderListActivity(fallbackListActivity);
@@ -994,7 +1012,6 @@
           var listEntries = entries.filter(function (entry) { return entry.link.indexOf('/list/') !== -1; });
           if (!filmEntries.length) throw new Error('No film entries');
           var filmEntriesWithReviews = attachLatestWrittenReviews(filmEntries);
-          renderMarqueeTitles(filmEntriesWithReviews.slice(0, 6));
           renderFeatured(filmEntriesWithReviews[0]);
           renderRecentWatches(filmEntriesWithReviews.slice(1));
           if (listEntries.length >= 10) {
