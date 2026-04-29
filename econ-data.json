@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-04-29T14:09:09.496Z",
+  "fetchedAt": "2026-04-29T19:43:09.659Z",
   "indicators": {
     "UNRATE": {
       "latest": {
@@ -163,12 +163,12 @@
     },
     "BAMLH0A0HYM2": {
       "latest": {
-        "date": "2026-04-27",
-        "value": 2.84
+        "date": "2026-04-28",
+        "value": 2.85
       },
       "previous": {
-        "date": "2026-04-24",
-        "value": 2.86
+        "date": "2026-04-27",
+        "value": 2.84
       }
     },
     "MORTGAGE30US": {
@@ -223,12 +223,12 @@
     },
     "STLFSI4": {
       "latest": {
-        "date": "2026-04-17",
-        "value": -0.7584
+        "date": "2026-04-24",
+        "value": -0.6782
       },
       "previous": {
-        "date": "2026-04-10",
-        "value": -0.6475
+        "date": "2026-04-17",
+        "value": -0.758
       }
     },
     "DTWEXBGS": {
@@ -301,6 +301,18 @@
   },
   "news": [
     {
+      "title": "The Fuel Protests in Ireland: Their Lights and Shadows",
+      "link": "https://mises.org/podcasts/audio-mises-wire/fuel-protests-ireland-their-lights-and-shadows",
+      "pubDate": "Wed, 29 Apr 2026 02:00:10 CDT",
+      "kind": "Podcast"
+    },
+    {
+      "title": "The Dollar Collapse Has Begun",
+      "link": "https://mises.org/podcasts/individual-interview/dollar-collapse-has-begun",
+      "pubDate": "Wed, 29 Apr 2026 01:22:41 CDT",
+      "kind": "Podcast"
+    },
+    {
       "title": "The Case Against the “Free Bankers”",
       "link": "https://mises.org/podcasts/audio-mises-wire/case-against-free-bankers",
       "pubDate": "Wed, 29 Apr 2026 08:47:11 CDT",
@@ -311,6 +323,12 @@
       "link": "https://mises.org/podcasts/audio-mises-wire/revolution-was",
       "pubDate": "Wed, 29 Apr 2026 08:12:57 CDT",
       "kind": "Podcast"
+    },
+    {
+      "title": "The Fuel Protests in Ireland: Their Lights and Shadows",
+      "link": "https://mises.org/mises-wire/fuel-protests-ireland-their-lights-and-shadows",
+      "pubDate": "Wed, 29 Apr 2026 06:02:24 CDT",
+      "kind": "Mises Wire"
     },
     {
       "title": "The Right of Self-Determination",
@@ -341,24 +359,6 @@
       "link": "https://mises.org/mises-daily/revolution-was",
       "pubDate": "Tue, 28 Apr 2026 02:00:00 CDT",
       "kind": "Article"
-    },
-    {
-      "title": "If Science Is a Public Good, Let China Pay for It",
-      "link": "https://mises.org/podcasts/audio-mises-wire/if-science-public-good-let-china-pay-it",
-      "pubDate": "Tue, 28 Apr 2026 01:51:07 CDT",
-      "kind": "Podcast"
-    },
-    {
-      "title": "Those Big, Beautiful Bonds",
-      "link": "https://mises.org/podcasts/audio-mises-wire/those-big-beautiful-bonds",
-      "pubDate": "Tue, 28 Apr 2026 12:26:08 CDT",
-      "kind": "Podcast"
-    },
-    {
-      "title": "The Problem with Eternal Vigilance",
-      "link": "https://mises.org/podcasts/audio-mises-wire/problem-eternal-vigilance",
-      "pubDate": "Tue, 28 Apr 2026 08:46:11 CDT",
-      "kind": "Podcast"
     }
   ]
 }
