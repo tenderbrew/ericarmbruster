@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-04-30T08:28:20.884Z",
+  "fetchedAt": "2026-04-30T14:07:38.407Z",
   "indicators": {
     "UNRATE": {
       "latest": {
@@ -33,12 +33,12 @@
     },
     "ICSA": {
       "latest": {
-        "date": "2026-04-18",
-        "value": 214000
+        "date": "2026-04-25",
+        "value": 189000
       },
       "previous": {
-        "date": "2026-04-11",
-        "value": 208000
+        "date": "2026-04-18",
+        "value": 215000
       }
     },
     "CPIAUCSL": {
@@ -73,12 +73,12 @@
     },
     "PCE": {
       "latest": {
-        "date": "2026-02-01",
-        "value": 21615.1
+        "date": "2026-03-01",
+        "value": 21860.5
       },
       "previous": {
-        "date": "2026-01-01",
-        "value": 21511.8
+        "date": "2026-02-01",
+        "value": 21665.1
       }
     },
     "M2SL": {
@@ -163,12 +163,12 @@
     },
     "BAMLH0A0HYM2": {
       "latest": {
-        "date": "2026-04-28",
-        "value": 2.85
+        "date": "2026-04-29",
+        "value": 2.82
       },
       "previous": {
-        "date": "2026-04-27",
-        "value": 2.84
+        "date": "2026-04-28",
+        "value": 2.85
       }
     },
     "MORTGAGE30US": {
@@ -183,12 +183,12 @@
     },
     "GDPC1": {
       "latest": {
-        "date": "2025-10-01",
-        "value": 24055.749
+        "date": "2026-01-01",
+        "value": 24174.527
       },
       "previous": {
-        "date": "2025-07-01",
-        "value": 24026.834
+        "date": "2025-10-01",
+        "value": 24055.749
       }
     },
     "INDPRO": {
@@ -263,12 +263,12 @@
     },
     "VIXCLS": {
       "latest": {
-        "date": "2026-04-28",
-        "value": 17.83
+        "date": "2026-04-29",
+        "value": 18.81
       },
       "previous": {
-        "date": "2026-04-27",
-        "value": 18.02
+        "date": "2026-04-28",
+        "value": 17.83
       }
     },
     "BOPGSTB": {
@@ -283,12 +283,12 @@
     },
     "M2V": {
       "latest": {
-        "date": "2025-10-01",
-        "value": 1.409
+        "date": "2026-01-01",
+        "value": 1.411
       },
       "previous": {
-        "date": "2025-07-01",
-        "value": 1.408
+        "date": "2025-10-01",
+        "value": 1.41
       }
     },
     "CPI_YOY": {
@@ -300,6 +300,18 @@
     }
   },
   "news": [
+    {
+      "title": "Somaliland Exits Somalia",
+      "link": "https://mises.org/power-market/somaliland-exits-somalia",
+      "pubDate": "Thu, 30 Apr 2026 02:02:21 CDT",
+      "kind": "Article"
+    },
+    {
+      "title": "USAID Funded Aid Programs Abroad, But Mainly Was a Jobs Program for Progressives",
+      "link": "https://mises.org/mises-wire/usaid-funded-aid-programs-abroad-mainly-was-jobs-program-progressives",
+      "pubDate": "Thu, 30 Apr 2026 12:02:48 CDT",
+      "kind": "Mises Wire"
+    },
     {
       "title": "Gold Could Rise by Thousands of Dollars",
       "link": "https://mises.org/podcasts/individual-interview/gold-could-rise-thousands-dollars",
@@ -331,14 +343,14 @@
       "kind": "Podcast"
     },
     {
-      "title": "The Money Supply, the Iran War, and the Dollar",
-      "link": "https://mises.org/power-market/money-supply-iran-war-and-dollar",
+      "title": "The UAE is leaving OPEC, in blow to Saudi Arabia",
+      "link": "https://mises.org/notes-margin/uae-leaving-opec-blow-saudi-arabia",
       "pubDate": "Wed, 29 Apr 2026 07:00:00 CDT",
       "kind": "Article"
     },
     {
-      "title": "The UAE is leaving OPEC, in blow to Saudi Arabia",
-      "link": "https://mises.org/notes-margin/uae-leaving-opec-blow-saudi-arabia",
+      "title": "The Money Supply, the Iran War, and the Dollar",
+      "link": "https://mises.org/power-market/money-supply-iran-war-and-dollar",
       "pubDate": "Wed, 29 Apr 2026 07:00:00 CDT",
       "kind": "Article"
     },
@@ -347,18 +359,6 @@
       "link": "https://mises.org/mises-wire/fuel-protests-ireland-their-lights-and-shadows",
       "pubDate": "Wed, 29 Apr 2026 06:02:24 CDT",
       "kind": "Mises Wire"
-    },
-    {
-      "title": "Gas prices hit $4.23 per gallon, a new high for the year",
-      "link": "https://mises.org/notes-margin/gas-prices-hit-423-gallon-new-high-year",
-      "pubDate": "Wed, 29 Apr 2026 06:00:00 CDT",
-      "kind": "Article"
-    },
-    {
-      "title": "Congratulations to the Mises Institute's New Associated Scholars",
-      "link": "https://mises.org/power-market/congratulations-mises-institutes-new-associated-scholars",
-      "pubDate": "Wed, 29 Apr 2026 06:00:00 CDT",
-      "kind": "Article"
     }
   ]
 }
