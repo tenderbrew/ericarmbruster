@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-05-01T13:27:40.189Z",
+  "fetchedAt": "2026-05-01T19:17:53.697Z",
   "indicators": {
     "UNRATE": {
       "latest": {
@@ -163,12 +163,12 @@
     },
     "BAMLH0A0HYM2": {
       "latest": {
-        "date": "2026-04-29",
-        "value": 2.82
+        "date": "2026-04-30",
+        "value": 2.83
       },
       "previous": {
-        "date": "2026-04-28",
-        "value": 2.85
+        "date": "2026-04-29",
+        "value": 2.82
       }
     },
     "MORTGAGE30US": {
@@ -263,12 +263,12 @@
     },
     "VIXCLS": {
       "latest": {
-        "date": "2026-04-29",
-        "value": 18.81
+        "date": "2026-04-30",
+        "value": 16.89
       },
       "previous": {
-        "date": "2026-04-28",
-        "value": 17.83
+        "date": "2026-04-29",
+        "value": 18.81
       }
     },
     "BOPGSTB": {
@@ -301,10 +301,22 @@
   },
   "news": [
     {
+      "title": "Freedom Upsets Patterns: The Deregulation Argument Westminster Will Not Have",
+      "link": "https://mises.org/mises-wire/freedom-upsets-patterns-deregulation-argument-westminster-will-not-have",
+      "pubDate": "Fri, 01 May 2026 09:03:17 CDT",
+      "kind": "Mises Wire"
+    },
+    {
       "title": "The Luck Fallacy and Luck Egalitarianism",
       "link": "https://mises.org/podcasts/audio-mises-wire/luck-fallacy-and-luck-egalitarianism",
       "pubDate": "Fri, 01 May 2026 08:03:59 CDT",
       "kind": "Podcast"
+    },
+    {
+      "title": "Burned by a Red Hot Stove",
+      "link": "https://mises.org/friday-philosophy/burned-red-hot-stove",
+      "pubDate": "Fri, 01 May 2026 06:02:29 CDT",
+      "kind": "Article"
     },
     {
       "title": "The Luck Fallacy and Luck Egalitarianism",
@@ -346,18 +358,6 @@
       "title": "USAID Funded Aid Programs Abroad, But Mainly Was a Jobs Program for Progressives",
       "link": "https://mises.org/podcasts/audio-mises-wire/usaid-funded-aid-programs-abroad-mainly-was-jobs-program-progressives",
       "pubDate": "Thu, 30 Apr 2026 10:45:13 CDT",
-      "kind": "Podcast"
-    },
-    {
-      "title": "The Divine Right of Kings and Majorities",
-      "link": "https://mises.org/podcasts/production-security/divine-right-kings-and-majorities",
-      "pubDate": "Thu, 30 Apr 2026 09:24:10 CDT",
-      "kind": "Podcast"
-    },
-    {
-      "title": "The Production of Security",
-      "link": "https://mises.org/podcasts/production-security/production-security",
-      "pubDate": "Thu, 30 Apr 2026 09:24:02 CDT",
       "kind": "Podcast"
     }
   ]
