@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-04-30T19:39:44.547Z",
+  "fetchedAt": "2026-05-01T03:47:32.028Z",
   "indicators": {
     "UNRATE": {
       "latest": {
@@ -63,12 +63,12 @@
     },
     "T10YIE": {
       "latest": {
-        "date": "2026-04-29",
+        "date": "2026-04-30",
         "value": 2.46
       },
       "previous": {
-        "date": "2026-04-28",
-        "value": 2.44
+        "date": "2026-04-29",
+        "value": 2.46
       }
     },
     "PCE": {
@@ -103,12 +103,12 @@
     },
     "WALCL": {
       "latest": {
-        "date": "2026-04-22",
-        "value": 6707419
+        "date": "2026-04-29",
+        "value": 6699950
       },
       "previous": {
-        "date": "2026-04-15",
-        "value": 6705696
+        "date": "2026-04-22",
+        "value": 6707419
       }
     },
     "FEDFUNDS": {
@@ -123,42 +123,42 @@
     },
     "DGS2": {
       "latest": {
-        "date": "2026-04-28",
-        "value": 3.84
+        "date": "2026-04-29",
+        "value": 3.92
       },
       "previous": {
-        "date": "2026-04-27",
-        "value": 3.78
+        "date": "2026-04-28",
+        "value": 3.84
       }
     },
     "DGS10": {
       "latest": {
-        "date": "2026-04-28",
-        "value": 4.36
+        "date": "2026-04-29",
+        "value": 4.42
       },
       "previous": {
-        "date": "2026-04-27",
-        "value": 4.35
+        "date": "2026-04-28",
+        "value": 4.36
       }
     },
     "T10Y2Y": {
       "latest": {
-        "date": "2026-04-29",
-        "value": 0.5
+        "date": "2026-04-30",
+        "value": 0.52
       },
       "previous": {
-        "date": "2026-04-28",
-        "value": 0.52
+        "date": "2026-04-29",
+        "value": 0.5
       }
     },
     "DFII10": {
       "latest": {
-        "date": "2026-04-28",
-        "value": 1.92
+        "date": "2026-04-29",
+        "value": 1.96
       },
       "previous": {
-        "date": "2026-04-27",
-        "value": 1.91
+        "date": "2026-04-28",
+        "value": 1.92
       }
     },
     "BAMLH0A0HYM2": {
@@ -301,10 +301,22 @@
   },
   "news": [
     {
+      "title": "Stuff that Fed Officials Say",
+      "link": "https://mises.org/podcasts/power-and-market/stuff-fed-officials-say",
+      "pubDate": "Thu, 30 Apr 2026 05:20:01 CDT",
+      "kind": "Podcast"
+    },
+    {
       "title": "The Shadow Chair",
       "link": "https://mises.org/power-market/shadow-chair",
       "pubDate": "Thu, 30 Apr 2026 03:17:16 CDT",
       "kind": "Article"
+    },
+    {
+      "title": "We Are Living in the Fourth American Republic",
+      "link": "https://mises.org/podcasts/audio-mises-wire/we-are-living-fourth-american-republic",
+      "pubDate": "Thu, 30 Apr 2026 02:53:16 CDT",
+      "kind": "Podcast"
     },
     {
       "title": "The Tragedy of Socialized Fertility",
@@ -325,39 +337,27 @@
       "kind": "Podcast"
     },
     {
-      "title": "The Natural Order of Society",
-      "link": "https://mises.org/podcasts/production-security/natural-order-society",
-      "pubDate": "Thu, 30 Apr 2026 09:24:03 CDT",
+      "title": "The Production of Security",
+      "link": "https://mises.org/podcasts/production-security/production-security",
+      "pubDate": "Thu, 30 Apr 2026 09:24:02 CDT",
       "kind": "Podcast"
     },
     {
-      "title": "The Alternatives",
-      "link": "https://mises.org/podcasts/production-security/alternatives",
-      "pubDate": "Thu, 30 Apr 2026 09:24:06 CDT",
+      "title": "Security an Exception?",
+      "link": "https://mises.org/podcasts/production-security/security-exception",
+      "pubDate": "Thu, 30 Apr 2026 09:24:05 CDT",
       "kind": "Podcast"
     },
     {
-      "title": "Government and Society",
-      "link": "https://mises.org/podcasts/production-security/government-and-society",
-      "pubDate": "Thu, 30 Apr 2026 09:24:09 CDT",
+      "title": "The Monopolization and Collectivization of the Security Industry",
+      "link": "https://mises.org/podcasts/production-security/monopolization-and-collectivization-security-industry",
+      "pubDate": "Thu, 30 Apr 2026 09:24:08 CDT",
       "kind": "Podcast"
     },
     {
-      "title": "The Free Market for Security",
-      "link": "https://mises.org/podcasts/production-security/free-market-security",
-      "pubDate": "Thu, 30 Apr 2026 09:24:12 CDT",
-      "kind": "Podcast"
-    },
-    {
-      "title": "Preface by Murray N. Rothbard",
-      "link": "https://mises.org/podcasts/production-security/preface-murray-n-rothbard",
-      "pubDate": "Thu, 30 Apr 2026 09:24:01 CDT",
-      "kind": "Podcast"
-    },
-    {
-      "title": "Competition in Security",
-      "link": "https://mises.org/podcasts/production-security/competition-security",
-      "pubDate": "Thu, 30 Apr 2026 09:24:04 CDT",
+      "title": "The Regime of Terror",
+      "link": "https://mises.org/podcasts/production-security/regime-terror",
+      "pubDate": "Thu, 30 Apr 2026 09:24:11 CDT",
       "kind": "Podcast"
     }
   ]
