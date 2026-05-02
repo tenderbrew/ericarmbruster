@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-05-01T19:17:53.697Z",
+  "fetchedAt": "2026-05-02T03:23:17.432Z",
   "indicators": {
     "UNRATE": {
       "latest": {
@@ -63,11 +63,11 @@
     },
     "T10YIE": {
       "latest": {
-        "date": "2026-04-30",
-        "value": 2.46
+        "date": "2026-05-01",
+        "value": 2.48
       },
       "previous": {
-        "date": "2026-04-29",
+        "date": "2026-04-30",
         "value": 2.46
       }
     },
@@ -113,52 +113,52 @@
     },
     "FEDFUNDS": {
       "latest": {
-        "date": "2026-03-01",
+        "date": "2026-04-01",
         "value": 3.64
       },
       "previous": {
-        "date": "2026-02-01",
+        "date": "2026-03-01",
         "value": 3.64
       }
     },
     "DGS2": {
       "latest": {
-        "date": "2026-04-29",
-        "value": 3.92
+        "date": "2026-04-30",
+        "value": 3.88
       },
       "previous": {
-        "date": "2026-04-28",
-        "value": 3.84
+        "date": "2026-04-29",
+        "value": 3.92
       }
     },
     "DGS10": {
       "latest": {
-        "date": "2026-04-29",
-        "value": 4.42
+        "date": "2026-04-30",
+        "value": 4.4
       },
       "previous": {
-        "date": "2026-04-28",
-        "value": 4.36
+        "date": "2026-04-29",
+        "value": 4.42
       }
     },
     "T10Y2Y": {
       "latest": {
-        "date": "2026-04-30",
-        "value": 0.52
+        "date": "2026-05-01",
+        "value": 0.51
       },
       "previous": {
-        "date": "2026-04-29",
-        "value": 0.5
+        "date": "2026-04-30",
+        "value": 0.52
       }
     },
     "DFII10": {
       "latest": {
-        "date": "2026-04-29",
-        "value": 1.96
+        "date": "2026-04-30",
+        "value": 1.94
       },
       "previous": {
-        "date": "2026-04-28",
-        "value": 1.92
+        "date": "2026-04-29",
+        "value": 1.96
       }
     },
     "BAMLH0A0HYM2": {
@@ -302,7 +302,13 @@
   "news": [
     {
       "title": "Freedom Upsets Patterns: The Deregulation Argument Westminster Will Not Have",
-      "link": "https://mises.org/mises-wire/freedom-upsets-patterns-deregulation-argument-westminster-will-not-have",
+      "link": "https://mises.org/podcasts/audio-mises-wire/freedom-upsets-patterns-deregulation-argument-westminster-will-not-have",
+      "pubDate": "Fri, 01 May 2026 02:49:02 CDT",
+      "kind": "Podcast"
+    },
+    {
+      "title": "The UK Is in Dire Need of Deregulation",
+      "link": "https://mises.org/mises-wire/uk-dire-need-deregulation",
       "pubDate": "Fri, 01 May 2026 09:03:17 CDT",
       "kind": "Mises Wire"
     },
@@ -319,8 +325,20 @@
       "kind": "Article"
     },
     {
-      "title": "The Luck Fallacy and Luck Egalitarianism",
-      "link": "https://mises.org/mises-wire/luck-fallacy-and-luck-egalitarianism",
+      "title": "Top AI companies agree to work with Pentagon on secret data",
+      "link": "https://mises.org/notes-margin/top-ai-companies-agree-work-pentagon-secret-data",
+      "pubDate": "Fri, 01 May 2026 04:00:00 CDT",
+      "kind": "Article"
+    },
+    {
+      "title": "GOP Congressmen Seek to Extend US Veterans Benefits to Israeli Soldiers",
+      "link": "https://mises.org/notes-margin/gop-congressmen-seek-extend-us-veterans-benefits-israeli-soldiers",
+      "pubDate": "Fri, 01 May 2026 03:00:00 CDT",
+      "kind": "Article"
+    },
+    {
+      "title": "Why “Luck” Doesn’t Explain Wealth and Success in the Marketplace",
+      "link": "https://mises.org/mises-wire/why-luck-doesnt-explain-wealth-and-success-marketplace",
       "pubDate": "Fri, 01 May 2026 12:03:37 CDT",
       "kind": "Mises Wire"
     },
@@ -340,24 +358,6 @@
       "title": "We Are Living in the Fourth American Republic",
       "link": "https://mises.org/podcasts/audio-mises-wire/we-are-living-fourth-american-republic",
       "pubDate": "Thu, 30 Apr 2026 02:53:16 CDT",
-      "kind": "Podcast"
-    },
-    {
-      "title": "The Tragedy of Socialized Fertility",
-      "link": "https://mises.org/podcasts/audio-mises-wire/tragedy-socialized-fertility",
-      "pubDate": "Thu, 30 Apr 2026 11:59:59 CDT",
-      "kind": "Podcast"
-    },
-    {
-      "title": "We Are Living in the Fourth American Republic",
-      "link": "https://mises.org/mises-wire/we-are-living-fourth-american-republic",
-      "pubDate": "Thu, 30 Apr 2026 11:30:00 CDT",
-      "kind": "Mises Wire"
-    },
-    {
-      "title": "USAID Funded Aid Programs Abroad, But Mainly Was a Jobs Program for Progressives",
-      "link": "https://mises.org/podcasts/audio-mises-wire/usaid-funded-aid-programs-abroad-mainly-was-jobs-program-progressives",
-      "pubDate": "Thu, 30 Apr 2026 10:45:13 CDT",
       "kind": "Podcast"
     }
   ]
