@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-05-06T08:32:52.917Z",
+  "fetchedAt": "2026-05-06T14:24:23.416Z",
   "indicators": {
     "UNRATE": {
       "latest": {
@@ -163,12 +163,12 @@
     },
     "BAMLH0A0HYM2": {
       "latest": {
-        "date": "2026-05-04",
-        "value": 2.78
+        "date": "2026-05-05",
+        "value": 2.77
       },
       "previous": {
-        "date": "2026-05-01",
-        "value": 2.77
+        "date": "2026-05-04",
+        "value": 2.78
       }
     },
     "MORTGAGE30US": {
@@ -263,12 +263,12 @@
     },
     "VIXCLS": {
       "latest": {
-        "date": "2026-05-04",
-        "value": 18.29
+        "date": "2026-05-05",
+        "value": 17.38
       },
       "previous": {
-        "date": "2026-05-01",
-        "value": 16.99
+        "date": "2026-05-04",
+        "value": 18.29
       }
     },
     "BOPGSTB": {
@@ -300,6 +300,30 @@
     }
   },
   "news": [
+    {
+      "title": "Is Libertarianism Incoherent?",
+      "link": "https://mises.org/podcasts/audio-mises-wire/libertarianism-incoherent",
+      "pubDate": "Wed, 06 May 2026 09:01:03 CDT",
+      "kind": "Podcast"
+    },
+    {
+      "title": "The Justice Department Indicts the Ministry of Love",
+      "link": "https://mises.org/podcasts/audio-mises-wire/justice-department-indicts-ministry-love",
+      "pubDate": "Wed, 06 May 2026 02:12:36 CDT",
+      "kind": "Podcast"
+    },
+    {
+      "title": "Raising Taxes on the Wealthy Sounds Simple—Until They Leave",
+      "link": "https://mises.org/power-market/raising-taxes-wealthy-sounds-simple-until-they-leave",
+      "pubDate": "Wed, 06 May 2026 02:02:46 CDT",
+      "kind": "Article"
+    },
+    {
+      "title": "How Antitrust Populists Drove Spirit Airlines Out of Business",
+      "link": "https://mises.org/mises-wire/how-antitrust-populists-drove-spirit-airlines-out-business",
+      "pubDate": "Wed, 06 May 2026 12:02:50 CDT",
+      "kind": "Mises Wire"
+    },
     {
       "title": "The Precious Paper Problem: The Divergence in Western Bullion Markets",
       "link": "https://mises.org/podcasts/audio-mises-wire/precious-paper-problem-divergence-western-bullion-markets",
@@ -335,30 +359,6 @@
       "link": "https://mises.org/podcasts/audio-mises-wire/remembering-costs-war",
       "pubDate": "Tue, 05 May 2026 01:43:09 CDT",
       "kind": "Podcast"
-    },
-    {
-      "title": "Unequal but Not Unjust: Hayek, Nozick, and the Epistemological Limits  to Distributive Egalitarianism",
-      "link": "https://mises.org/power-market/unequal-not-unjust-hayek-nozick-and-epistemological-limits-distributive-egalitarianism",
-      "pubDate": "Tue, 05 May 2026 01:00:00 CDT",
-      "kind": "Article"
-    },
-    {
-      "title": "When the Federal Government Subsidized Robberies",
-      "link": "https://mises.org/power-market/when-federal-government-subsidized-robberies",
-      "pubDate": "Tue, 05 May 2026 11:00:00 CDT",
-      "kind": "Article"
-    },
-    {
-      "title": "Is Libertarianism Incoherent?",
-      "link": "https://mises.org/mises-wire/libertarianism-incoherent",
-      "pubDate": "Tue, 05 May 2026 09:02:36 CDT",
-      "kind": "Mises Wire"
-    },
-    {
-      "title": "Get Your Free Copy of Anatomy of the State!",
-      "link": "https://mises.org/mises-wire/get-your-free-copy-anatomy-state",
-      "pubDate": "Tue, 05 May 2026 09:00:06 CDT",
-      "kind": "Mises Wire"
     }
   ]
 }
