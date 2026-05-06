@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-05-05T19:28:07.936Z",
+  "fetchedAt": "2026-05-06T03:34:45.101Z",
   "indicators": {
     "UNRATE": {
       "latest": {
@@ -63,12 +63,12 @@
     },
     "T10YIE": {
       "latest": {
-        "date": "2026-05-04",
-        "value": 2.5
+        "date": "2026-05-05",
+        "value": 2.47
       },
       "previous": {
-        "date": "2026-05-01",
-        "value": 2.48
+        "date": "2026-05-04",
+        "value": 2.5
       }
     },
     "PCE": {
@@ -123,42 +123,42 @@
     },
     "DGS2": {
       "latest": {
-        "date": "2026-05-01",
-        "value": 3.88
+        "date": "2026-05-04",
+        "value": 3.95
       },
       "previous": {
-        "date": "2026-04-30",
+        "date": "2026-05-01",
         "value": 3.88
       }
     },
     "DGS10": {
       "latest": {
-        "date": "2026-05-01",
-        "value": 4.39
+        "date": "2026-05-04",
+        "value": 4.45
       },
       "previous": {
-        "date": "2026-04-30",
-        "value": 4.4
+        "date": "2026-05-01",
+        "value": 4.39
       }
     },
     "T10Y2Y": {
       "latest": {
-        "date": "2026-05-04",
+        "date": "2026-05-05",
         "value": 0.5
       },
       "previous": {
-        "date": "2026-05-01",
-        "value": 0.51
+        "date": "2026-05-04",
+        "value": 0.5
       }
     },
     "DFII10": {
       "latest": {
-        "date": "2026-05-01",
-        "value": 1.91
+        "date": "2026-05-04",
+        "value": 1.95
       },
       "previous": {
-        "date": "2026-04-30",
-        "value": 1.94
+        "date": "2026-05-01",
+        "value": 1.91
       }
     },
     "BAMLH0A0HYM2": {
@@ -301,6 +301,18 @@
   },
   "news": [
     {
+      "title": "The Precious Paper Problem: The Divergence in Western Bullion Markets",
+      "link": "https://mises.org/podcasts/audio-mises-wire/precious-paper-problem-divergence-western-bullion-markets",
+      "pubDate": "Tue, 05 May 2026 04:28:09 CDT",
+      "kind": "Podcast"
+    },
+    {
+      "title": "When America Chose Empire",
+      "link": "https://mises.org/podcasts/audio-mises-wire/when-america-chose-empire",
+      "pubDate": "Tue, 05 May 2026 02:57:36 CDT",
+      "kind": "Podcast"
+    },
+    {
       "title": "The NFL Draft and Public Buses",
       "link": "https://mises.org/podcasts/audio-mises-wire/nfl-draft-and-public-buses",
       "pubDate": "Tue, 05 May 2026 02:25:57 CDT",
@@ -313,10 +325,28 @@
       "kind": "Podcast"
     },
     {
+      "title": "Beef prices are near record levels",
+      "link": "https://mises.org/notes-margin/beef-prices-are-near-record-levels",
+      "pubDate": "Tue, 05 May 2026 02:00:00 CDT",
+      "kind": "Article"
+    },
+    {
       "title": "Remembering the Costs of War",
       "link": "https://mises.org/podcasts/audio-mises-wire/remembering-costs-war",
       "pubDate": "Tue, 05 May 2026 01:43:09 CDT",
       "kind": "Podcast"
+    },
+    {
+      "title": "Unequal but Not Unjust: Hayek, Nozick, and the Epistemological Limits  to Distributive Egalitarianism",
+      "link": "https://mises.org/power-market/unequal-not-unjust-hayek-nozick-and-epistemological-limits-distributive-egalitarianism",
+      "pubDate": "Tue, 05 May 2026 01:00:00 CDT",
+      "kind": "Article"
+    },
+    {
+      "title": "When the Federal Government Subsidized Robberies",
+      "link": "https://mises.org/power-market/when-federal-government-subsidized-robberies",
+      "pubDate": "Tue, 05 May 2026 11:00:00 CDT",
+      "kind": "Article"
     },
     {
       "title": "Is Libertarianism Incoherent?",
@@ -329,36 +359,6 @@
       "link": "https://mises.org/mises-wire/get-your-free-copy-anatomy-state",
       "pubDate": "Tue, 05 May 2026 09:00:06 CDT",
       "kind": "Mises Wire"
-    },
-    {
-      "title": "The Precious Paper Problem: The Divergence in Western Bullion Markets",
-      "link": "https://mises.org/mises-wire/precious-paper-problem-divergence-western-bullion-markets",
-      "pubDate": "Tue, 05 May 2026 06:04:02 CDT",
-      "kind": "Mises Wire"
-    },
-    {
-      "title": "Was the US-Israeli Attack on Iran Necessary?",
-      "link": "https://mises.org/power-market/was-us-israeli-attack-iran-necessary",
-      "pubDate": "Tue, 05 May 2026 02:02:47 CDT",
-      "kind": "Article"
-    },
-    {
-      "title": "Remembering the Costs of War",
-      "link": "https://mises.org/mises-wire/remembering-costs-war",
-      "pubDate": "Tue, 05 May 2026 12:02:15 CDT",
-      "kind": "Mises Wire"
-    },
-    {
-      "title": "The Battle of Ideas Paves the Way for Radicals and Revolutionaries",
-      "link": "https://mises.org/mises-wire/battle-ideas-paves-way-radicals-and-revolutionaries",
-      "pubDate": "Mon, 04 May 2026 06:00:00 CDT",
-      "kind": "Mises Wire"
-    },
-    {
-      "title": "Responding to Geochartalism: Did Mosler Complete Menger?",
-      "link": "https://mises.org/podcasts/human-action-podcast/responding-geochartalism-did-mosler-complete-menger",
-      "pubDate": "Mon, 04 May 2026 05:10:28 CDT",
-      "kind": "Podcast"
     }
   ]
 }
