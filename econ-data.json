@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-05-07T08:40:29.608Z",
+  "fetchedAt": "2026-05-07T14:25:25.374Z",
   "indicators": {
     "UNRATE": {
       "latest": {
@@ -33,12 +33,12 @@
     },
     "ICSA": {
       "latest": {
-        "date": "2026-04-25",
-        "value": 189000
+        "date": "2026-05-02",
+        "value": 200000
       },
       "previous": {
-        "date": "2026-04-18",
-        "value": 215000
+        "date": "2026-04-25",
+        "value": 190000
       }
     },
     "CPIAUCSL": {
@@ -163,12 +163,12 @@
     },
     "BAMLH0A0HYM2": {
       "latest": {
-        "date": "2026-05-05",
-        "value": 2.77
+        "date": "2026-05-06",
+        "value": 2.75
       },
       "previous": {
-        "date": "2026-05-04",
-        "value": 2.78
+        "date": "2026-05-05",
+        "value": 2.77
       }
     },
     "MORTGAGE30US": {
@@ -263,12 +263,12 @@
     },
     "VIXCLS": {
       "latest": {
-        "date": "2026-05-05",
-        "value": 17.38
+        "date": "2026-05-06",
+        "value": 17.39
       },
       "previous": {
-        "date": "2026-05-04",
-        "value": 18.29
+        "date": "2026-05-05",
+        "value": 17.38
       }
     },
     "BOPGSTB": {
@@ -300,6 +300,12 @@
     }
   },
   "news": [
+    {
+      "title": "Where California Went Wrong",
+      "link": "https://mises.org/mises-wire/where-california-went-wrong",
+      "pubDate": "Thu, 07 May 2026 12:02:16 CDT",
+      "kind": "Mises Wire"
+    },
     {
       "title": "How Antitrust Populists Drove Spirit Airlines Out of Business",
       "link": "https://mises.org/podcasts/guns-and-butter/how-antitrust-populists-drove-spirit-airlines-out-business",
@@ -353,12 +359,6 @@
       "link": "https://mises.org/podcasts/audio-mises-wire/justice-department-indicts-ministry-love",
       "pubDate": "Wed, 06 May 2026 02:12:36 CDT",
       "kind": "Podcast"
-    },
-    {
-      "title": "Raising Taxes on the Wealthy Sounds Simple—Until They Leave",
-      "link": "https://mises.org/power-market/raising-taxes-wealthy-sounds-simple-until-they-leave",
-      "pubDate": "Wed, 06 May 2026 02:02:46 CDT",
-      "kind": "Article"
     }
   ]
 }
