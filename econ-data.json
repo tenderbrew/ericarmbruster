@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-05-07T14:25:25.374Z",
+  "fetchedAt": "2026-05-07T19:46:52.829Z",
   "indicators": {
     "UNRATE": {
       "latest": {
@@ -173,12 +173,12 @@
     },
     "MORTGAGE30US": {
       "latest": {
-        "date": "2026-04-30",
-        "value": 6.3
+        "date": "2026-05-07",
+        "value": 6.37
       },
       "previous": {
-        "date": "2026-04-23",
-        "value": 6.23
+        "date": "2026-04-30",
+        "value": 6.3
       }
     },
     "GDPC1": {
@@ -302,6 +302,36 @@
   "news": [
     {
       "title": "Where California Went Wrong",
+      "link": "https://mises.org/podcasts/audio-mises-wire/where-california-went-wrong",
+      "pubDate": "Thu, 07 May 2026 11:15:57 CDT",
+      "kind": "Podcast"
+    },
+    {
+      "title": "California’s Decline: A Warning to America",
+      "link": "https://mises.org/podcasts/californias-decline-warning-america",
+      "pubDate": "Thu, 07 May 2026 11:00:00 CDT",
+      "kind": "Podcast"
+    },
+    {
+      "title": "The President Goes to War",
+      "link": "https://mises.org/podcasts/audio-mises-wire/president-goes-war",
+      "pubDate": "Thu, 07 May 2026 10:18:45 CDT",
+      "kind": "Podcast"
+    },
+    {
+      "title": "The Intelligence Trap: Why Smart People Defend Broken Systems",
+      "link": "https://mises.org/mises-wire/intelligence-trap-why-smart-people-defend-broken-systems",
+      "pubDate": "Thu, 07 May 2026 09:02:35 CDT",
+      "kind": "Mises Wire"
+    },
+    {
+      "title": "Say, Time, and the Divide Between Mises and Keynes",
+      "link": "https://mises.org/mises-wire/say-time-and-divide-between-mises-and-keynes",
+      "pubDate": "Thu, 07 May 2026 06:02:17 CDT",
+      "kind": "Mises Wire"
+    },
+    {
+      "title": "Where California Went Wrong",
       "link": "https://mises.org/mises-wire/where-california-went-wrong",
       "pubDate": "Thu, 07 May 2026 12:02:16 CDT",
       "kind": "Mises Wire"
@@ -328,36 +358,6 @@
       "title": "Fukuyama Was Wrong; History Did Not End",
       "link": "https://mises.org/podcasts/audio-mises-wire/fukuyama-was-wrong-history-did-not-end",
       "pubDate": "Wed, 06 May 2026 02:21:12 CDT",
-      "kind": "Podcast"
-    },
-    {
-      "title": "The MBS Slope n’ Swap",
-      "link": "https://mises.org/power-market/mbs-slope-n-swap",
-      "pubDate": "Wed, 06 May 2026 11:13:38 CDT",
-      "kind": "Article"
-    },
-    {
-      "title": "Is Libertarianism Incoherent?",
-      "link": "https://mises.org/podcasts/audio-mises-wire/libertarianism-incoherent",
-      "pubDate": "Wed, 06 May 2026 09:01:03 CDT",
-      "kind": "Podcast"
-    },
-    {
-      "title": "When the Federal Government Subsidized Robberies",
-      "link": "https://mises.org/podcasts/audio-mises-wire/when-federal-government-subsidized-robberies",
-      "pubDate": "Wed, 06 May 2026 06:27:18 CDT",
-      "kind": "Podcast"
-    },
-    {
-      "title": "Fukuyama Was Wrong; History Did Not End",
-      "link": "https://mises.org/mises-wire/fukuyama-was-wrong-history-did-not-end",
-      "pubDate": "Wed, 06 May 2026 06:02:19 CDT",
-      "kind": "Mises Wire"
-    },
-    {
-      "title": "The Justice Department Indicts the Ministry of Love",
-      "link": "https://mises.org/podcasts/audio-mises-wire/justice-department-indicts-ministry-love",
-      "pubDate": "Wed, 06 May 2026 02:12:36 CDT",
       "kind": "Podcast"
     }
   ]
