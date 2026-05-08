@@ -1,24 +1,24 @@
 {
-  "fetchedAt": "2026-05-08T07:47:31.311Z",
+  "fetchedAt": "2026-05-08T14:00:12.451Z",
   "indicators": {
     "UNRATE": {
       "latest": {
-        "date": "2026-03-01",
+        "date": "2026-04-01",
         "value": 4.3
       },
       "previous": {
-        "date": "2026-02-01",
-        "value": 4.4
+        "date": "2026-03-01",
+        "value": 4.3
       }
     },
     "PAYEMS": {
       "latest": {
-        "date": "2026-03-01",
-        "value": 158637
+        "date": "2026-04-01",
+        "value": 158736
       },
       "previous": {
-        "date": "2026-02-01",
-        "value": 158459
+        "date": "2026-03-01",
+        "value": 158621
       }
     },
     "JTSJOL": {
@@ -163,12 +163,12 @@
     },
     "BAMLH0A0HYM2": {
       "latest": {
-        "date": "2026-05-06",
-        "value": 2.75
+        "date": "2026-05-07",
+        "value": 2.79
       },
       "previous": {
-        "date": "2026-05-05",
-        "value": 2.77
+        "date": "2026-05-06",
+        "value": 2.75
       }
     },
     "MORTGAGE30US": {
@@ -263,12 +263,12 @@
     },
     "VIXCLS": {
       "latest": {
-        "date": "2026-05-06",
-        "value": 17.39
+        "date": "2026-05-07",
+        "value": 17.08
       },
       "previous": {
-        "date": "2026-05-05",
-        "value": 17.38
+        "date": "2026-05-06",
+        "value": 17.39
       }
     },
     "BOPGSTB": {
@@ -300,6 +300,18 @@
     }
   },
   "news": [
+    {
+      "title": "Paying Avaricious Uncle Sam: The Significance of the Tax of Taxes",
+      "link": "https://mises.org/power-market/paying-avaricious-uncle-sam-significance-tax-taxes",
+      "pubDate": "Fri, 08 May 2026 02:02:25 CDT",
+      "kind": "Article"
+    },
+    {
+      "title": "Hobbes’s State: “Why Are You Hitting Yourself?”",
+      "link": "https://mises.org/mises-wire/hobbess-state-why-are-you-hitting-yourself",
+      "pubDate": "Fri, 08 May 2026 12:02:12 CDT",
+      "kind": "Mises Wire"
+    },
     {
       "title": "The Great Gerrymander War",
       "link": "https://mises.org/podcasts/power-and-market/great-gerrymander-war",
@@ -346,18 +358,6 @@
       "title": "The Intelligence Trap: Why Smart People Defend Broken Systems",
       "link": "https://mises.org/mises-wire/intelligence-trap-why-smart-people-defend-broken-systems",
       "pubDate": "Thu, 07 May 2026 09:02:35 CDT",
-      "kind": "Mises Wire"
-    },
-    {
-      "title": "Say, Time, and the Divide Between Mises and Keynes",
-      "link": "https://mises.org/mises-wire/say-time-and-divide-between-mises-and-keynes",
-      "pubDate": "Thu, 07 May 2026 06:02:17 CDT",
-      "kind": "Mises Wire"
-    },
-    {
-      "title": "Where California Went Wrong",
-      "link": "https://mises.org/mises-wire/where-california-went-wrong",
-      "pubDate": "Thu, 07 May 2026 12:02:16 CDT",
       "kind": "Mises Wire"
     }
   ]
