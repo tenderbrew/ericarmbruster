@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-05-09T09:12:51.936Z",
+  "fetchedAt": "2026-05-10T09:24:11.346Z",
   "profile": {
     "name": "tenderbrew",
     "profileUrl": "https://steamcommunity.com/id/tenderbrew/",
@@ -7,18 +7,26 @@
   },
   "stats": {
     "totalGames": 499,
-    "totalHours": 3464,
-    "playedCount": 232,
-    "neverPlayed": 267,
+    "totalHours": 3466,
+    "playedCount": 233,
+    "neverPlayed": 266,
     "playtimeBuckets": {
       "100h+": 8,
       "50-100h": 8,
       "10-50h": 39,
-      "1-10h": 101,
+      "1-10h": 102,
       "<1h": 76
     }
   },
-  "recentlyPlayed": [],
+  "recentlyPlayed": [
+    {
+      "appid": 529340,
+      "name": "Victoria 3",
+      "hours_2weeks": 2.4,
+      "hours_total": 2.4,
+      "img_icon_url": "da7eddaef804905207eaf0ba9580b5026385f041"
+    }
+  ],
   "topByPlaytime": [
     {
       "appid": 1158310,
