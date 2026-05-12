@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-05-12T08:46:15.531Z",
+  "fetchedAt": "2026-05-12T14:34:07.197Z",
   "indicators": {
     "UNRATE": {
       "latest": {
@@ -43,22 +43,22 @@
     },
     "CPIAUCSL": {
       "latest": {
-        "date": "2026-03-01",
-        "value": 330.293
+        "date": "2026-04-01",
+        "value": 332.407
       },
       "previous": {
-        "date": "2026-02-01",
-        "value": 327.46
+        "date": "2026-03-01",
+        "value": 330.293
       }
     },
     "CPILFESL": {
       "latest": {
-        "date": "2026-03-01",
-        "value": 334.165
+        "date": "2026-04-01",
+        "value": 335.423
       },
       "previous": {
-        "date": "2026-02-01",
-        "value": 333.512
+        "date": "2026-03-01",
+        "value": 334.165
       }
     },
     "T10YIE": {
@@ -163,12 +163,12 @@
     },
     "BAMLH0A0HYM2": {
       "latest": {
-        "date": "2026-05-08",
-        "value": 2.81
+        "date": "2026-05-11",
+        "value": 2.79
       },
       "previous": {
-        "date": "2026-05-07",
-        "value": 2.79
+        "date": "2026-05-08",
+        "value": 2.81
       }
     },
     "MORTGAGE30US": {
@@ -263,12 +263,12 @@
     },
     "VIXCLS": {
       "latest": {
-        "date": "2026-05-08",
-        "value": 17.19
+        "date": "2026-05-11",
+        "value": 18.38
       },
       "previous": {
-        "date": "2026-05-07",
-        "value": 17.08
+        "date": "2026-05-08",
+        "value": 17.19
       }
     },
     "BOPGSTB": {
@@ -293,13 +293,25 @@
     },
     "CPI_YOY": {
       "latest": {
-        "date": "2026-03-01",
-        "value": 3.2859577528651984
+        "date": "2026-04-01",
+        "value": 3.7792458367415627
       },
       "previous": null
     }
   },
   "news": [
+    {
+      "title": "Enhancing Economic Analysis Through Corporate Finance",
+      "link": "https://mises.org/power-market/enhancing-economic-analysis-through-corporate-finance",
+      "pubDate": "Tue, 12 May 2026 02:02:24 CDT",
+      "kind": "Article"
+    },
+    {
+      "title": "The Inconsistencies of John Stuart Mill",
+      "link": "https://mises.org/mises-wire/inconsistencies-john-stuart-mill",
+      "pubDate": "Tue, 12 May 2026 12:02:16 CDT",
+      "kind": "Mises Wire"
+    },
     {
       "title": "America’s States Are Too Big and Too Centralized",
       "link": "https://mises.org/podcasts/californias-decline-warning-america/americas-states-are-too-big-and-too-centralized",
@@ -346,18 +358,6 @@
       "title": "Human Action: The Antidote to Progressivism",
       "link": "https://mises.org/podcasts/influence-and-significance-human-action-after-75-years/human-action-antidote-progressivism",
       "pubDate": "Mon, 11 May 2026 08:51:07 CDT",
-      "kind": "Podcast"
-    },
-    {
-      "title": "Human Action and the Foundations of Economic Prosperity",
-      "link": "https://mises.org/podcasts/influence-and-significance-human-action-after-75-years/human-action-and-foundations-economic-prosperity",
-      "pubDate": "Mon, 11 May 2026 08:49:50 CDT",
-      "kind": "Podcast"
-    },
-    {
-      "title": "Mises and Rothbard on Credit Contraction during a Downturn",
-      "link": "https://mises.org/podcasts/influence-and-significance-human-action-after-75-years/mises-and-rothbard-credit-contraction-during-downturn",
-      "pubDate": "Mon, 11 May 2026 08:47:11 CDT",
       "kind": "Podcast"
     }
   ]
