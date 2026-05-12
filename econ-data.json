@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-05-11T19:54:01.012Z",
+  "fetchedAt": "2026-05-12T03:38:27.274Z",
   "indicators": {
     "UNRATE": {
       "latest": {
@@ -63,11 +63,11 @@
     },
     "T10YIE": {
       "latest": {
-        "date": "2026-05-08",
-        "value": 2.45
+        "date": "2026-05-11",
+        "value": 2.47
       },
       "previous": {
-        "date": "2026-05-07",
+        "date": "2026-05-08",
         "value": 2.45
       }
     },
@@ -123,42 +123,42 @@
     },
     "DGS2": {
       "latest": {
-        "date": "2026-05-07",
-        "value": 3.92
+        "date": "2026-05-08",
+        "value": 3.9
       },
       "previous": {
-        "date": "2026-05-06",
-        "value": 3.87
+        "date": "2026-05-07",
+        "value": 3.92
       }
     },
     "DGS10": {
       "latest": {
-        "date": "2026-05-07",
-        "value": 4.41
+        "date": "2026-05-08",
+        "value": 4.38
       },
       "previous": {
-        "date": "2026-05-06",
-        "value": 4.36
+        "date": "2026-05-07",
+        "value": 4.41
       }
     },
     "T10Y2Y": {
       "latest": {
-        "date": "2026-05-08",
-        "value": 0.48
+        "date": "2026-05-11",
+        "value": 0.47
       },
       "previous": {
-        "date": "2026-05-07",
-        "value": 0.49
+        "date": "2026-05-08",
+        "value": 0.48
       }
     },
     "DFII10": {
       "latest": {
-        "date": "2026-05-07",
-        "value": 1.96
+        "date": "2026-05-08",
+        "value": 1.93
       },
       "previous": {
-        "date": "2026-05-06",
-        "value": 1.94
+        "date": "2026-05-07",
+        "value": 1.96
       }
     },
     "BAMLH0A0HYM2": {
@@ -233,12 +233,12 @@
     },
     "DTWEXBGS": {
       "latest": {
-        "date": "2026-05-01",
-        "value": 118.3926
+        "date": "2026-05-08",
+        "value": 118.0392
       },
       "previous": {
-        "date": "2026-04-30",
-        "value": 118.671
+        "date": "2026-05-07",
+        "value": 118.0116
       }
     },
     "PERMIT": {
@@ -301,6 +301,12 @@
   },
   "news": [
     {
+      "title": "America’s States Are Too Big and Too Centralized",
+      "link": "https://mises.org/podcasts/californias-decline-warning-america/americas-states-are-too-big-and-too-centralized",
+      "pubDate": "Mon, 11 May 2026 03:30:25 CDT",
+      "kind": "Podcast"
+    },
+    {
       "title": "Nations by Consent",
       "link": "https://mises.org/podcasts/audio-essays/nations-consent",
       "pubDate": "Mon, 11 May 2026 10:46:03 CDT",
@@ -352,12 +358,6 @@
       "title": "Mises and Rothbard on Credit Contraction during a Downturn",
       "link": "https://mises.org/podcasts/influence-and-significance-human-action-after-75-years/mises-and-rothbard-credit-contraction-during-downturn",
       "pubDate": "Mon, 11 May 2026 08:47:11 CDT",
-      "kind": "Podcast"
-    },
-    {
-      "title": "There's Many a Slip 'twixt Cup and Lip",
-      "link": "https://mises.org/podcasts/influence-and-significance-human-action-after-75-years/theres-many-slip-twixt-cup-and-lip",
-      "pubDate": "Mon, 11 May 2026 08:45:20 CDT",
       "kind": "Podcast"
     }
   ]
