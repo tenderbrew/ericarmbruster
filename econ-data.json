@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-05-13T08:49:51.215Z",
+  "fetchedAt": "2026-05-13T14:44:22.286Z",
   "indicators": {
     "UNRATE": {
       "latest": {
@@ -163,12 +163,12 @@
     },
     "BAMLH0A0HYM2": {
       "latest": {
-        "date": "2026-05-11",
-        "value": 2.79
+        "date": "2026-05-12",
+        "value": 2.82
       },
       "previous": {
-        "date": "2026-05-08",
-        "value": 2.81
+        "date": "2026-05-11",
+        "value": 2.79
       }
     },
     "MORTGAGE30US": {
@@ -263,12 +263,12 @@
     },
     "VIXCLS": {
       "latest": {
-        "date": "2026-05-11",
-        "value": 18.38
+        "date": "2026-05-12",
+        "value": 17.99
       },
       "previous": {
-        "date": "2026-05-08",
-        "value": 17.19
+        "date": "2026-05-11",
+        "value": 18.38
       }
     },
     "BOPGSTB": {
@@ -300,6 +300,18 @@
     }
   },
   "news": [
+    {
+      "title": "The Hidden Cost of Central Banking: Why Inflation Is Not “Neutral”",
+      "link": "https://mises.org/power-market/hidden-cost-central-banking-why-inflation-not-neutral",
+      "pubDate": "Wed, 13 May 2026 02:02:25 CDT",
+      "kind": "Article"
+    },
+    {
+      "title": "Progressives and Conservatives Are Wrong About Taxing the Rich",
+      "link": "https://mises.org/mises-wire/progressives-and-conservatives-are-wrong-about-taxing-rich",
+      "pubDate": "Wed, 13 May 2026 12:03:09 CDT",
+      "kind": "Mises Wire"
+    },
     {
       "title": "Depopulation Won’t Save Us or the Planet",
       "link": "https://mises.org/podcasts/audio-mises-wire/depopulation-wont-save-us-or-planet",
@@ -347,18 +359,6 @@
       "link": "https://mises.org/power-market/remembering-pre-chair-kevin-warsh",
       "pubDate": "Mon, 11 May 2026 10:01:57 CDT",
       "kind": "Article"
-    },
-    {
-      "title": "Nation-States and National Borders",
-      "link": "https://mises.org/podcasts/radio-rothbard/nation-states-and-national-borders",
-      "pubDate": "Mon, 11 May 2026 09:30:00 CDT",
-      "kind": "Podcast"
-    },
-    {
-      "title": "Today’s AIs Show the Marginal Revolution's Unfinished Business",
-      "link": "https://mises.org/mises-wire/todays-ais-show-marginal-revolutions-unfinished-business",
-      "pubDate": "Mon, 11 May 2026 09:02:23 CDT",
-      "kind": "Mises Wire"
     }
   ]
 }
