@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-05-14T08:43:16.406Z",
+  "fetchedAt": "2026-05-14T14:24:27.168Z",
   "indicators": {
     "UNRATE": {
       "latest": {
@@ -33,12 +33,12 @@
     },
     "ICSA": {
       "latest": {
-        "date": "2026-05-02",
-        "value": 200000
+        "date": "2026-05-09",
+        "value": 211000
       },
       "previous": {
-        "date": "2026-04-25",
-        "value": 190000
+        "date": "2026-05-02",
+        "value": 199000
       }
     },
     "CPIAUCSL": {
@@ -163,12 +163,12 @@
     },
     "BAMLH0A0HYM2": {
       "latest": {
-        "date": "2026-05-12",
+        "date": "2026-05-13",
         "value": 2.82
       },
       "previous": {
-        "date": "2026-05-11",
-        "value": 2.79
+        "date": "2026-05-12",
+        "value": 2.82
       }
     },
     "MORTGAGE30US": {
@@ -203,12 +203,12 @@
     },
     "RSAFS": {
       "latest": {
-        "date": "2026-03-01",
-        "value": 752063
+        "date": "2026-04-01",
+        "value": 757085
       },
       "previous": {
-        "date": "2026-02-01",
-        "value": 739772
+        "date": "2026-03-01",
+        "value": 753370
       }
     },
     "UMCSENT": {
@@ -263,12 +263,12 @@
     },
     "VIXCLS": {
       "latest": {
-        "date": "2026-05-12",
-        "value": 17.99
+        "date": "2026-05-13",
+        "value": 17.87
       },
       "previous": {
-        "date": "2026-05-11",
-        "value": 18.38
+        "date": "2026-05-12",
+        "value": 17.99
       }
     },
     "BOPGSTB": {
@@ -300,6 +300,30 @@
     }
   },
   "news": [
+    {
+      "title": "Socialists Are Reaping a Bountiful Political Harvest while They Create Havoc",
+      "link": "https://mises.org/podcasts/audio-mises-wire/socialists-are-reaping-bountiful-political-harvest-while-they-create-havoc",
+      "pubDate": "Thu, 14 May 2026 08:41:56 CDT",
+      "kind": "Podcast"
+    },
+    {
+      "title": "Help Us Celebrate 40 Years of Mises U!",
+      "link": "https://mises.org/mises-wire/help-us-celebrate-40-years-mises-u",
+      "pubDate": "Thu, 14 May 2026 06:30:07 CDT",
+      "kind": "Mises Wire"
+    },
+    {
+      "title": "Changes at the Fed: The Trimmed Mean PCE Inflation Rate",
+      "link": "https://mises.org/power-market/changes-fed-trimmed-mean-pce-inflation-rate",
+      "pubDate": "Thu, 14 May 2026 02:02:45 CDT",
+      "kind": "Article"
+    },
+    {
+      "title": "Socialists Are Reaping a Bountiful Political Harvest while They Create Havoc",
+      "link": "https://mises.org/mises-wire/socialists-are-reaping-bountiful-political-harvest-while-they-create-havoc",
+      "pubDate": "Thu, 14 May 2026 12:02:56 CDT",
+      "kind": "Mises Wire"
+    },
     {
       "title": "The Cost of Money: Coinage, Fiat Power, and the Quiet Corruption of Value",
       "link": "https://mises.org/podcasts/audio-mises-wire/cost-money-coinage-fiat-power-and-quiet-corruption-value",
@@ -335,30 +359,6 @@
       "link": "https://mises.org/mises-wire/cost-money-coinage-fiat-power-and-quiet-corruption-value",
       "pubDate": "Wed, 13 May 2026 09:02:22 CDT",
       "kind": "Mises Wire"
-    },
-    {
-      "title": "Gas prices rising in all 50 states as average nears $5",
-      "link": "https://mises.org/notes-margin/gas-prices-rising-all-50-states-average-nears-5",
-      "pubDate": "Wed, 13 May 2026 08:00:00 CDT",
-      "kind": "Article"
-    },
-    {
-      "title": "Freedom candidate Thomas Massie may lose thanks to the over-65 crowd",
-      "link": "https://mises.org/notes-margin/freedom-candidate-thomas-massie-may-lose-thanks-over-65-crowd",
-      "pubDate": "Wed, 13 May 2026 07:00:00 CDT",
-      "kind": "Article"
-    },
-    {
-      "title": "Marx Was Wrong About the “Necessary” Ruin of Small Landed Property",
-      "link": "https://mises.org/mises-wire/marx-was-wrong-about-necessary-ruin-small-landed-property",
-      "pubDate": "Wed, 13 May 2026 06:02:27 CDT",
-      "kind": "Mises Wire"
-    },
-    {
-      "title": "New Book: 'The Influence and Significance of Human Action After 75 Years'",
-      "link": "https://mises.org/power-market/new-book-influence-and-significance-human-action-after-75-years",
-      "pubDate": "Wed, 13 May 2026 06:00:00 CDT",
-      "kind": "Article"
     }
   ]
 }
