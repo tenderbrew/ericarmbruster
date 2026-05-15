@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-05-14T19:54:14.263Z",
+  "fetchedAt": "2026-05-15T03:51:27.371Z",
   "indicators": {
     "UNRATE": {
       "latest": {
@@ -103,12 +103,12 @@
     },
     "WALCL": {
       "latest": {
-        "date": "2026-05-06",
-        "value": 6709505
+        "date": "2026-05-13",
+        "value": 6728502
       },
       "previous": {
-        "date": "2026-04-29",
-        "value": 6699950
+        "date": "2026-05-06",
+        "value": 6709505
       }
     },
     "FEDFUNDS": {
@@ -123,22 +123,22 @@
     },
     "DGS2": {
       "latest": {
-        "date": "2026-05-12",
-        "value": 4
+        "date": "2026-05-13",
+        "value": 3.98
       },
       "previous": {
-        "date": "2026-05-11",
-        "value": 3.95
+        "date": "2026-05-12",
+        "value": 4
       }
     },
     "DGS10": {
       "latest": {
-        "date": "2026-05-12",
+        "date": "2026-05-13",
         "value": 4.46
       },
       "previous": {
-        "date": "2026-05-11",
-        "value": 4.42
+        "date": "2026-05-12",
+        "value": 4.46
       }
     },
     "T10Y2Y": {
@@ -153,12 +153,12 @@
     },
     "DFII10": {
       "latest": {
-        "date": "2026-05-12",
+        "date": "2026-05-13",
         "value": 1.99
       },
       "previous": {
-        "date": "2026-05-11",
-        "value": 1.95
+        "date": "2026-05-12",
+        "value": 1.99
       }
     },
     "BAMLH0A0HYM2": {
@@ -301,7 +301,31 @@
   },
   "news": [
     {
-      "title": "The Job Market Has Only Gotten Worse Since Trump's \"Liberation Day\"",
+      "title": "Rothbard University",
+      "link": "https://mises.org/podcasts/rothbard-university",
+      "pubDate": "Thu, 14 May 2026 08:47:37 CDT",
+      "kind": "Podcast"
+    },
+    {
+      "title": "Making Sense of the Trump Administration's \"Hail Mary\" on Iran",
+      "link": "https://mises.org/podcasts/human-action-podcast/making-sense-trump-administrations-hail-mary-iran",
+      "pubDate": "Thu, 14 May 2026 08:15:28 CDT",
+      "kind": "Podcast"
+    },
+    {
+      "title": "Bad Inflation Data Drops While Trump's in China (And Other Headlines)",
+      "link": "https://mises.org/podcasts/power-and-market/bad-inflation-data-drops-while-trumps-china-and-other-headlines",
+      "pubDate": "Thu, 14 May 2026 04:30:01 CDT",
+      "kind": "Podcast"
+    },
+    {
+      "title": "The Job Market Has Only Gotten Worse Since Trump’s “Liberation Day”",
+      "link": "https://mises.org/podcasts/audio-mises-wire/job-market-has-only-gotten-worse-trumps-liberation-day",
+      "pubDate": "Thu, 14 May 2026 04:03:36 CDT",
+      "kind": "Podcast"
+    },
+    {
+      "title": "The Job Market Has Only Gotten Worse Since Trump’s “Liberation Day”",
       "link": "https://mises.org/mises-wire/job-market-has-only-gotten-worse-trumps-liberation-day",
       "pubDate": "Thu, 14 May 2026 11:30:00 CDT",
       "kind": "Mises Wire"
@@ -334,30 +358,6 @@
       "title": "The Command Economy in Green Clothing: Britain’s Contracts for Difference and Their Nazi Predecessors",
       "link": "https://mises.org/mises-wire/command-economy-green-clothing-britains-contracts-difference-and-their-nazi-predecessors",
       "pubDate": "Thu, 14 May 2026 06:02:33 CDT",
-      "kind": "Mises Wire"
-    },
-    {
-      "title": "Feds move to seize private property to build border wall",
-      "link": "https://mises.org/notes-margin/feds-move-seize-private-property-build-border-wall",
-      "pubDate": "Thu, 14 May 2026 04:00:00 CDT",
-      "kind": "Article"
-    },
-    {
-      "title": "Foreclosure filings across the US have surged 18 percent compared to last year",
-      "link": "https://mises.org/notes-margin/foreclosure-filings-across-us-have-surged-18-percent-compared-last-year",
-      "pubDate": "Thu, 14 May 2026 03:00:00 CDT",
-      "kind": "Article"
-    },
-    {
-      "title": "Changes at the Fed: The Trimmed Mean PCE Inflation Rate",
-      "link": "https://mises.org/power-market/changes-fed-trimmed-mean-pce-inflation-rate",
-      "pubDate": "Thu, 14 May 2026 02:02:45 CDT",
-      "kind": "Article"
-    },
-    {
-      "title": "Socialists Are Reaping a Bountiful Political Harvest while They Create Havoc",
-      "link": "https://mises.org/mises-wire/socialists-are-reaping-bountiful-political-harvest-while-they-create-havoc",
-      "pubDate": "Thu, 14 May 2026 12:02:56 CDT",
       "kind": "Mises Wire"
     }
   ]
