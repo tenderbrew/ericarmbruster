@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-05-15T08:54:13.976Z",
+  "fetchedAt": "2026-05-15T14:17:29.212Z",
   "indicators": {
     "UNRATE": {
       "latest": {
@@ -163,11 +163,11 @@
     },
     "BAMLH0A0HYM2": {
       "latest": {
-        "date": "2026-05-13",
-        "value": 2.82
+        "date": "2026-05-14",
+        "value": 2.76
       },
       "previous": {
-        "date": "2026-05-12",
+        "date": "2026-05-13",
         "value": 2.82
       }
     },
@@ -193,12 +193,12 @@
     },
     "INDPRO": {
       "latest": {
-        "date": "2026-03-01",
-        "value": 101.7898
+        "date": "2026-04-01",
+        "value": 102.4963
       },
       "previous": {
-        "date": "2026-02-01",
-        "value": 102.344
+        "date": "2026-03-01",
+        "value": 101.806
       }
     },
     "RSAFS": {
@@ -263,12 +263,12 @@
     },
     "VIXCLS": {
       "latest": {
-        "date": "2026-05-13",
-        "value": 17.87
+        "date": "2026-05-14",
+        "value": 17.26
       },
       "previous": {
-        "date": "2026-05-12",
-        "value": 17.99
+        "date": "2026-05-13",
+        "value": 17.87
       }
     },
     "BOPGSTB": {
@@ -300,6 +300,18 @@
     }
   },
   "news": [
+    {
+      "title": "Egalitarianism and Value-Free Economics",
+      "link": "https://mises.org/podcasts/rothbard-university/egalitarianism-and-value-free-economics",
+      "pubDate": "Fri, 15 May 2026 09:00:26 CDT",
+      "kind": "Podcast"
+    },
+    {
+      "title": "Hobbes’s Self-Defeating Theory",
+      "link": "https://mises.org/mises-wire/hobbess-self-defeating-theory",
+      "pubDate": "Fri, 15 May 2026 12:03:02 CDT",
+      "kind": "Mises Wire"
+    },
     {
       "title": "Rothbard University",
       "link": "https://mises.org/podcasts/rothbard-university",
@@ -347,18 +359,6 @@
       "link": "https://mises.org/podcasts/audio-mises-wire/socialists-are-reaping-bountiful-political-harvest-while-they-create-havoc",
       "pubDate": "Thu, 14 May 2026 08:41:56 CDT",
       "kind": "Podcast"
-    },
-    {
-      "title": "Help Us Celebrate 40 Years of Mises U!",
-      "link": "https://mises.org/mises-wire/help-us-celebrate-40-years-mises-u",
-      "pubDate": "Thu, 14 May 2026 06:30:07 CDT",
-      "kind": "Mises Wire"
-    },
-    {
-      "title": "The Command Economy in Green Clothing: Britain’s Contracts for Difference and Their Nazi Predecessors",
-      "link": "https://mises.org/mises-wire/command-economy-green-clothing-britains-contracts-difference-and-their-nazi-predecessors",
-      "pubDate": "Thu, 14 May 2026 06:02:33 CDT",
-      "kind": "Mises Wire"
     }
   ]
 }
