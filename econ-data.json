@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-05-15T14:17:29.212Z",
+  "fetchedAt": "2026-05-15T19:43:55.120Z",
   "indicators": {
     "UNRATE": {
       "latest": {
@@ -63,11 +63,11 @@
     },
     "T10YIE": {
       "latest": {
-        "date": "2026-05-13",
+        "date": "2026-05-14",
         "value": 2.47
       },
       "previous": {
-        "date": "2026-05-12",
+        "date": "2026-05-13",
         "value": 2.47
       }
     },
@@ -143,12 +143,12 @@
     },
     "T10Y2Y": {
       "latest": {
-        "date": "2026-05-13",
-        "value": 0.48
+        "date": "2026-05-14",
+        "value": 0.47
       },
       "previous": {
-        "date": "2026-05-12",
-        "value": 0.46
+        "date": "2026-05-13",
+        "value": 0.48
       }
     },
     "DFII10": {
@@ -301,10 +301,46 @@
   },
   "news": [
     {
+      "title": "The Financial (In)Stability Report",
+      "link": "https://mises.org/power-market/financial-instability-report",
+      "pubDate": "Fri, 15 May 2026 02:16:34 CDT",
+      "kind": "Article"
+    },
+    {
+      "title": "Hobbes’s Self-Defeating Theory",
+      "link": "https://mises.org/podcasts/audio-mises-wire/hobbess-self-defeating-theory",
+      "pubDate": "Fri, 15 May 2026 01:31:57 CDT",
+      "kind": "Podcast"
+    },
+    {
+      "title": "The Hypocrisy of the West’s Abandonment of Universal Values",
+      "link": "https://mises.org/mises-wire/hypocrisy-wests-abandonment-universal-values",
+      "pubDate": "Fri, 15 May 2026 09:02:18 CDT",
+      "kind": "Mises Wire"
+    },
+    {
+      "title": "Seven Questions for Kevin Warsh, Newly Confirmed as Chairman of the Fed",
+      "link": "https://mises.org/power-market/seven-questions-kevin-warsh-newly-confirmed-chairman-fed",
+      "pubDate": "Fri, 15 May 2026 09:00:00 CDT",
+      "kind": "Article"
+    },
+    {
       "title": "Egalitarianism and Value-Free Economics",
       "link": "https://mises.org/podcasts/rothbard-university/egalitarianism-and-value-free-economics",
       "pubDate": "Fri, 15 May 2026 09:00:26 CDT",
       "kind": "Podcast"
+    },
+    {
+      "title": "Defending Southern Heritage",
+      "link": "https://mises.org/friday-philosophy/defending-southern-heritage",
+      "pubDate": "Fri, 15 May 2026 06:02:21 CDT",
+      "kind": "Article"
+    },
+    {
+      "title": "30-yr Bond at Highest Yield Since 2007 as Inflation Expectations Soar",
+      "link": "https://mises.org/notes-margin/30-yr-bond-highest-yield-2007-inflation-expectations-soar",
+      "pubDate": "Fri, 15 May 2026 03:00:00 CDT",
+      "kind": "Article"
     },
     {
       "title": "Hobbes’s Self-Defeating Theory",
@@ -322,42 +358,6 @@
       "title": "Making Sense of the Trump Administration's \"Hail Mary\" on Iran",
       "link": "https://mises.org/podcasts/human-action-podcast/making-sense-trump-administrations-hail-mary-iran",
       "pubDate": "Thu, 14 May 2026 08:15:28 CDT",
-      "kind": "Podcast"
-    },
-    {
-      "title": "Bad Inflation Data Drops While Trump's in China (And Other Headlines)",
-      "link": "https://mises.org/podcasts/power-and-market/bad-inflation-data-drops-while-trumps-china-and-other-headlines",
-      "pubDate": "Thu, 14 May 2026 04:30:01 CDT",
-      "kind": "Podcast"
-    },
-    {
-      "title": "The Job Market Has Only Gotten Worse Since Trump’s “Liberation Day”",
-      "link": "https://mises.org/podcasts/audio-mises-wire/job-market-has-only-gotten-worse-trumps-liberation-day",
-      "pubDate": "Thu, 14 May 2026 04:03:36 CDT",
-      "kind": "Podcast"
-    },
-    {
-      "title": "The Job Market Has Only Gotten Worse Since Trump’s “Liberation Day”",
-      "link": "https://mises.org/mises-wire/job-market-has-only-gotten-worse-trumps-liberation-day",
-      "pubDate": "Thu, 14 May 2026 11:30:00 CDT",
-      "kind": "Mises Wire"
-    },
-    {
-      "title": "Today’s AIs Show the Marginal Revolution's Unfinished Business",
-      "link": "https://mises.org/podcasts/audio-mises-wire/todays-ais-show-marginal-revolutions-unfinished-business",
-      "pubDate": "Thu, 14 May 2026 09:34:02 CDT",
-      "kind": "Podcast"
-    },
-    {
-      "title": "The GOP Fiscal Follies",
-      "link": "https://mises.org/mises-wire/gop-fiscal-follies",
-      "pubDate": "Thu, 14 May 2026 09:02:21 CDT",
-      "kind": "Mises Wire"
-    },
-    {
-      "title": "Socialists Are Reaping a Bountiful Political Harvest while They Create Havoc",
-      "link": "https://mises.org/podcasts/audio-mises-wire/socialists-are-reaping-bountiful-political-harvest-while-they-create-havoc",
-      "pubDate": "Thu, 14 May 2026 08:41:56 CDT",
       "kind": "Podcast"
     }
   ]
