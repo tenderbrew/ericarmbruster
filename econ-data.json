@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-05-18T10:13:21.296Z",
+  "fetchedAt": "2026-05-18T15:41:19.403Z",
   "indicators": {
     "UNRATE": {
       "latest": {
@@ -163,12 +163,12 @@
     },
     "BAMLH0A0HYM2": {
       "latest": {
-        "date": "2026-05-14",
-        "value": 2.76
+        "date": "2026-05-15",
+        "value": 2.8
       },
       "previous": {
-        "date": "2026-05-13",
-        "value": 2.82
+        "date": "2026-05-14",
+        "value": 2.76
       }
     },
     "MORTGAGE30US": {
@@ -263,12 +263,12 @@
     },
     "VIXCLS": {
       "latest": {
-        "date": "2026-05-14",
-        "value": 17.26
+        "date": "2026-05-15",
+        "value": 18.43
       },
       "previous": {
-        "date": "2026-05-13",
-        "value": 17.87
+        "date": "2026-05-14",
+        "value": 17.26
       }
     },
     "BOPGSTB": {
@@ -300,6 +300,18 @@
     }
   },
   "news": [
+    {
+      "title": "Why Stable Systems Fail: The Illusion of Institutional Control",
+      "link": "https://mises.org/power-market/why-stable-systems-fail-illusion-institutional-control",
+      "pubDate": "Mon, 18 May 2026 02:32:05 CDT",
+      "kind": "Article"
+    },
+    {
+      "title": "The Lines We Thought Machines Wouldn’t Cross",
+      "link": "https://mises.org/mises-wire/lines-we-thought-machines-wouldnt-cross",
+      "pubDate": "Mon, 18 May 2026 12:32:00 CDT",
+      "kind": "Mises Wire"
+    },
     {
       "title": "Predicting Recession",
       "link": "https://mises.org/podcasts/minor-issues/predicting-recession",
@@ -346,18 +358,6 @@
       "title": "The Financial (In)Stability Report",
       "link": "https://mises.org/power-market/financial-instability-report",
       "pubDate": "Fri, 15 May 2026 02:16:34 CDT",
-      "kind": "Article"
-    },
-    {
-      "title": "Hobbes’s Self-Defeating Theory",
-      "link": "https://mises.org/podcasts/audio-mises-wire/hobbess-self-defeating-theory",
-      "pubDate": "Fri, 15 May 2026 01:31:57 CDT",
-      "kind": "Podcast"
-    },
-    {
-      "title": "When the President Acts Like a Mafia Chief",
-      "link": "https://mises.org/notes-margin/when-president-acts-mafia-chief",
-      "pubDate": "Fri, 15 May 2026 10:40:32 CDT",
       "kind": "Article"
     }
   ]
