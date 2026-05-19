@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-05-18T19:49:06.388Z",
+  "fetchedAt": "2026-05-19T03:57:36.865Z",
   "indicators": {
     "UNRATE": {
       "latest": {
@@ -63,12 +63,12 @@
     },
     "T10YIE": {
       "latest": {
-        "date": "2026-05-15",
-        "value": 2.49
+        "date": "2026-05-18",
+        "value": 2.48
       },
       "previous": {
-        "date": "2026-05-14",
-        "value": 2.47
+        "date": "2026-05-15",
+        "value": 2.49
       }
     },
     "PCE": {
@@ -123,42 +123,42 @@
     },
     "DGS2": {
       "latest": {
-        "date": "2026-05-14",
-        "value": 4
+        "date": "2026-05-15",
+        "value": 4.09
       },
       "previous": {
-        "date": "2026-05-13",
-        "value": 3.98
+        "date": "2026-05-14",
+        "value": 4
       }
     },
     "DGS10": {
       "latest": {
-        "date": "2026-05-14",
-        "value": 4.47
+        "date": "2026-05-15",
+        "value": 4.59
       },
       "previous": {
-        "date": "2026-05-13",
-        "value": 4.46
+        "date": "2026-05-14",
+        "value": 4.47
       }
     },
     "T10Y2Y": {
       "latest": {
-        "date": "2026-05-15",
-        "value": 0.5
+        "date": "2026-05-18",
+        "value": 0.54
       },
       "previous": {
-        "date": "2026-05-14",
-        "value": 0.47
+        "date": "2026-05-15",
+        "value": 0.5
       }
     },
     "DFII10": {
       "latest": {
-        "date": "2026-05-14",
-        "value": 2
+        "date": "2026-05-15",
+        "value": 2.1
       },
       "previous": {
-        "date": "2026-05-13",
-        "value": 1.99
+        "date": "2026-05-14",
+        "value": 2
       }
     },
     "BAMLH0A0HYM2": {
@@ -233,12 +233,12 @@
     },
     "DTWEXBGS": {
       "latest": {
-        "date": "2026-05-08",
-        "value": 118.0392
+        "date": "2026-05-15",
+        "value": 119.2825
       },
       "previous": {
-        "date": "2026-05-07",
-        "value": 118.0116
+        "date": "2026-05-14",
+        "value": 118.6696
       }
     },
     "PERMIT": {
@@ -301,6 +301,12 @@
   },
   "news": [
     {
+      "title": "The Bad News from the Latest Employment Report",
+      "link": "https://mises.org/podcasts/loot-and-lobby/bad-news-latest-employment-report",
+      "pubDate": "Mon, 18 May 2026 04:47:22 CDT",
+      "kind": "Podcast"
+    },
+    {
       "title": "Rothbard on War, Peace, and the State",
       "link": "https://mises.org/podcasts/radio-rothbard/rothbard-war-peace-and-state",
       "pubDate": "Mon, 18 May 2026 11:30:00 CDT",
@@ -317,6 +323,12 @@
       "link": "https://mises.org/mises-wire/deflation-bad-economy",
       "pubDate": "Mon, 18 May 2026 06:31:51 CDT",
       "kind": "Mises Wire"
+    },
+    {
+      "title": "73 percent of non-affiliated voters oppose Iran War",
+      "link": "https://mises.org/notes-margin/73-percent-non-affiliated-voters-oppose-iran-war",
+      "pubDate": "Mon, 18 May 2026 03:00:00 CDT",
+      "kind": "Article"
     },
     {
       "title": "Why Stable Systems Fail: The Illusion of Institutional Control",
@@ -347,18 +359,6 @@
       "link": "https://mises.org/mises-wire/rerum-novarum-catholic-defense-private-property",
       "pubDate": "Sat, 16 May 2026 12:34:00 CDT",
       "kind": "Mises Wire"
-    },
-    {
-      "title": "When a Society Chooses Freedom in an Unfree World",
-      "link": "https://mises.org/mises-wire/when-society-chooses-freedom-unfree-world",
-      "pubDate": "Sat, 16 May 2026 12:33:57 CDT",
-      "kind": "Mises Wire"
-    },
-    {
-      "title": "Why Rothbard Is as Relevant as Ever",
-      "link": "https://mises.org/podcasts/audio-mises-wire/why-rothbard-relevant-ever",
-      "pubDate": "Fri, 15 May 2026 06:13:16 CDT",
-      "kind": "Podcast"
     }
   ]
 }
