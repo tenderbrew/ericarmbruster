@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-05-19T09:54:08.140Z",
+  "fetchedAt": "2026-05-19T15:33:45.182Z",
   "indicators": {
     "UNRATE": {
       "latest": {
@@ -163,12 +163,12 @@
     },
     "BAMLH0A0HYM2": {
       "latest": {
-        "date": "2026-05-15",
-        "value": 2.8
+        "date": "2026-05-18",
+        "value": 2.83
       },
       "previous": {
-        "date": "2026-05-14",
-        "value": 2.76
+        "date": "2026-05-15",
+        "value": 2.8
       }
     },
     "MORTGAGE30US": {
@@ -263,12 +263,12 @@
     },
     "VIXCLS": {
       "latest": {
-        "date": "2026-05-15",
-        "value": 18.43
+        "date": "2026-05-18",
+        "value": 17.82
       },
       "previous": {
-        "date": "2026-05-14",
-        "value": 17.26
+        "date": "2026-05-15",
+        "value": 18.43
       }
     },
     "BOPGSTB": {
@@ -300,6 +300,30 @@
     }
   },
   "news": [
+    {
+      "title": "Price Inflation Accelerates as Wars and Deficits Expand",
+      "link": "https://mises.org/podcasts/audio-mises-wire/price-inflation-accelerates-wars-and-deficits-expand",
+      "pubDate": "Tue, 19 May 2026 08:27:02 CDT",
+      "kind": "Podcast"
+    },
+    {
+      "title": "When a Society Chooses Freedom in an Unfree World",
+      "link": "https://mises.org/podcasts/audio-mises-wire/when-society-chooses-freedom-unfree-world",
+      "pubDate": "Tue, 19 May 2026 08:11:06 CDT",
+      "kind": "Podcast"
+    },
+    {
+      "title": "California’s Billionaires Tax Ballot Initiative",
+      "link": "https://mises.org/power-market/californias-billionaires-tax-ballot-initiative",
+      "pubDate": "Tue, 19 May 2026 02:35:02 CDT",
+      "kind": "Article"
+    },
+    {
+      "title": "The Minerals Consortium Will Result in Malinvestment",
+      "link": "https://mises.org/mises-wire/minerals-consortium-will-result-malinvestment",
+      "pubDate": "Tue, 19 May 2026 12:32:54 CDT",
+      "kind": "Mises Wire"
+    },
     {
       "title": "The Bad News from the Latest Employment Report",
       "link": "https://mises.org/podcasts/loot-and-lobby/bad-news-latest-employment-report",
@@ -335,30 +359,6 @@
       "link": "https://mises.org/power-market/why-stable-systems-fail-illusion-institutional-control",
       "pubDate": "Mon, 18 May 2026 02:32:05 CDT",
       "kind": "Article"
-    },
-    {
-      "title": "The Lines We Thought Machines Wouldn’t Cross",
-      "link": "https://mises.org/mises-wire/lines-we-thought-machines-wouldnt-cross",
-      "pubDate": "Mon, 18 May 2026 12:32:00 CDT",
-      "kind": "Mises Wire"
-    },
-    {
-      "title": "Predicting Recession",
-      "link": "https://mises.org/podcasts/minor-issues/predicting-recession",
-      "pubDate": "Sat, 16 May 2026 06:42:27 CDT",
-      "kind": "Podcast"
-    },
-    {
-      "title": "Price Inflation Accelerates as Wars and Deficits Expand",
-      "link": "https://mises.org/mises-wire/price-inflation-accelerates-wars-and-deficits-expand",
-      "pubDate": "Sat, 16 May 2026 06:00:00 CDT",
-      "kind": "Mises Wire"
-    },
-    {
-      "title": "Rerum Novarum: A Catholic Defense of Private Property",
-      "link": "https://mises.org/mises-wire/rerum-novarum-catholic-defense-private-property",
-      "pubDate": "Sat, 16 May 2026 12:34:00 CDT",
-      "kind": "Mises Wire"
     }
   ]
 }
