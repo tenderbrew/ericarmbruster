@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-05-19T19:56:51.897Z",
+  "fetchedAt": "2026-05-20T03:58:11.853Z",
   "indicators": {
     "UNRATE": {
       "latest": {
@@ -63,12 +63,12 @@
     },
     "T10YIE": {
       "latest": {
-        "date": "2026-05-18",
-        "value": 2.48
+        "date": "2026-05-19",
+        "value": 2.49
       },
       "previous": {
-        "date": "2026-05-15",
-        "value": 2.49
+        "date": "2026-05-18",
+        "value": 2.48
       }
     },
     "PCE": {
@@ -123,42 +123,42 @@
     },
     "DGS2": {
       "latest": {
-        "date": "2026-05-15",
-        "value": 4.09
+        "date": "2026-05-18",
+        "value": 4.07
       },
       "previous": {
-        "date": "2026-05-14",
-        "value": 4
+        "date": "2026-05-15",
+        "value": 4.09
       }
     },
     "DGS10": {
       "latest": {
-        "date": "2026-05-15",
-        "value": 4.59
+        "date": "2026-05-18",
+        "value": 4.61
       },
       "previous": {
-        "date": "2026-05-14",
-        "value": 4.47
+        "date": "2026-05-15",
+        "value": 4.59
       }
     },
     "T10Y2Y": {
       "latest": {
-        "date": "2026-05-18",
+        "date": "2026-05-19",
         "value": 0.54
       },
       "previous": {
-        "date": "2026-05-15",
-        "value": 0.5
+        "date": "2026-05-18",
+        "value": 0.54
       }
     },
     "DFII10": {
       "latest": {
-        "date": "2026-05-15",
-        "value": 2.1
+        "date": "2026-05-18",
+        "value": 2.13
       },
       "previous": {
-        "date": "2026-05-14",
-        "value": 2
+        "date": "2026-05-15",
+        "value": 2.1
       }
     },
     "BAMLH0A0HYM2": {
@@ -301,6 +301,24 @@
   },
   "news": [
     {
+      "title": "Massie Defeated in Kentucky Primary",
+      "link": "https://mises.org/power-market/massie-defeated-kentucky-primary",
+      "pubDate": "Tue, 19 May 2026 06:00:00 CDT",
+      "kind": "Article"
+    },
+    {
+      "title": "Causes of Uncontrollable US Public Spending and Debt",
+      "link": "https://mises.org/podcasts/audio-mises-wire/causes-uncontrollable-us-public-spending-and-debt",
+      "pubDate": "Tue, 19 May 2026 04:49:17 CDT",
+      "kind": "Podcast"
+    },
+    {
+      "title": "Is Deflation Bad for the Economy?",
+      "link": "https://mises.org/podcasts/audio-mises-wire/deflation-bad-economy",
+      "pubDate": "Tue, 19 May 2026 04:31:49 CDT",
+      "kind": "Podcast"
+    },
+    {
       "title": "Why Socialism Fails: From Mises's 1920 Article to Today",
       "link": "https://mises.org/podcasts/human-action-podcast/why-socialism-fails-misess-1920-article-today",
       "pubDate": "Tue, 19 May 2026 01:45:28 CDT",
@@ -341,24 +359,6 @@
       "link": "https://mises.org/power-market/californias-billionaires-tax-ballot-initiative",
       "pubDate": "Tue, 19 May 2026 02:35:02 CDT",
       "kind": "Article"
-    },
-    {
-      "title": "The Minerals Consortium Will Result in Malinvestment",
-      "link": "https://mises.org/mises-wire/minerals-consortium-will-result-malinvestment",
-      "pubDate": "Tue, 19 May 2026 12:32:54 CDT",
-      "kind": "Mises Wire"
-    },
-    {
-      "title": "The Bad News from the Latest Employment Report",
-      "link": "https://mises.org/podcasts/loot-and-lobby/bad-news-latest-employment-report",
-      "pubDate": "Mon, 18 May 2026 04:47:22 CDT",
-      "kind": "Podcast"
-    },
-    {
-      "title": "Rothbard on War, Peace, and the State",
-      "link": "https://mises.org/podcasts/radio-rothbard/rothbard-war-peace-and-state",
-      "pubDate": "Mon, 18 May 2026 11:30:00 CDT",
-      "kind": "Podcast"
     }
   ]
 }
