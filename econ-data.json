@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-05-21T09:50:47.448Z",
+  "fetchedAt": "2026-05-21T15:37:17.069Z",
   "indicators": {
     "UNRATE": {
       "latest": {
@@ -33,12 +33,12 @@
     },
     "ICSA": {
       "latest": {
-        "date": "2026-05-09",
-        "value": 211000
+        "date": "2026-05-16",
+        "value": 209000
       },
       "previous": {
-        "date": "2026-05-02",
-        "value": 199000
+        "date": "2026-05-09",
+        "value": 212000
       }
     },
     "CPIAUCSL": {
@@ -163,12 +163,12 @@
     },
     "BAMLH0A0HYM2": {
       "latest": {
-        "date": "2026-05-19",
-        "value": 2.86
+        "date": "2026-05-20",
+        "value": 2.8
       },
       "previous": {
-        "date": "2026-05-18",
-        "value": 2.83
+        "date": "2026-05-19",
+        "value": 2.86
       }
     },
     "MORTGAGE30US": {
@@ -243,12 +243,12 @@
     },
     "PERMIT": {
       "latest": {
-        "date": "2026-03-01",
-        "value": 1363
+        "date": "2026-04-01",
+        "value": 1442
       },
       "previous": {
-        "date": "2026-02-01",
-        "value": 1538
+        "date": "2026-03-01",
+        "value": 1363
       }
     },
     "GFDEGDQ188S": {
@@ -263,12 +263,12 @@
     },
     "VIXCLS": {
       "latest": {
-        "date": "2026-05-19",
-        "value": 18.06
+        "date": "2026-05-20",
+        "value": 17.44
       },
       "previous": {
-        "date": "2026-05-18",
-        "value": 17.82
+        "date": "2026-05-19",
+        "value": 18.06
       }
     },
     "BOPGSTB": {
@@ -300,6 +300,18 @@
     }
   },
   "news": [
+    {
+      "title": "Buc-ee’s: Free-Market Triumph or Simply Capitalist Oppression?",
+      "link": "https://mises.org/podcasts/audio-mises-wire/buc-ees-free-market-triumph-or-simply-capitalist-oppression",
+      "pubDate": "Thu, 21 May 2026 08:41:56 CDT",
+      "kind": "Podcast"
+    },
+    {
+      "title": "Buc-ee’s: Free-Market Triumph or Simply Capitalist Oppression?",
+      "link": "https://mises.org/mises-wire/buc-ees-free-market-triumph-or-simply-capitalist-oppression",
+      "pubDate": "Thu, 21 May 2026 12:02:53 CDT",
+      "kind": "Mises Wire"
+    },
     {
       "title": "A Rothbardian Case Against Bad Data Center Policy",
       "link": "https://mises.org/podcasts/guns-and-butter/rothbardian-case-against-bad-data-center-policy",
@@ -346,18 +358,6 @@
       "title": "The Economic Problem Behind Zohran Mamdani’s Government Grocery Plan",
       "link": "https://mises.org/power-market/economic-problem-behind-zohran-mamdanis-government-grocery-plan",
       "pubDate": "Wed, 20 May 2026 02:02:17 CDT",
-      "kind": "Article"
-    },
-    {
-      "title": "A Rothbardian Case Against Bad Data Center Policy",
-      "link": "https://mises.org/mises-wire/rothbardian-case-against-bad-data-center-policy",
-      "pubDate": "Wed, 20 May 2026 12:02:13 CDT",
-      "kind": "Mises Wire"
-    },
-    {
-      "title": "Massie Defeated in Kentucky Primary",
-      "link": "https://mises.org/power-market/massie-defeated-kentucky-primary",
-      "pubDate": "Tue, 19 May 2026 06:00:00 CDT",
       "kind": "Article"
     }
   ]
