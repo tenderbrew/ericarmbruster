@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-05-21T15:37:17.069Z",
+  "fetchedAt": "2026-05-21T19:58:58.483Z",
   "indicators": {
     "UNRATE": {
       "latest": {
@@ -173,12 +173,12 @@
     },
     "MORTGAGE30US": {
       "latest": {
-        "date": "2026-05-14",
-        "value": 6.36
+        "date": "2026-05-21",
+        "value": 6.51
       },
       "previous": {
-        "date": "2026-05-07",
-        "value": 6.37
+        "date": "2026-05-14",
+        "value": 6.36
       }
     },
     "GDPC1": {
@@ -301,10 +301,22 @@
   },
   "news": [
     {
+      "title": "Sabrin in WSJ: Independence Won’t Save the Federal Reserve",
+      "link": "https://mises.org/notes-margin/sabrin-wsj-independence-wont-save-federal-reserve",
+      "pubDate": "Thu, 21 May 2026 12:55:00 CDT",
+      "kind": "Article"
+    },
+    {
       "title": "Buc-ee’s: Free-Market Triumph or Simply Capitalist Oppression?",
       "link": "https://mises.org/podcasts/audio-mises-wire/buc-ees-free-market-triumph-or-simply-capitalist-oppression",
       "pubDate": "Thu, 21 May 2026 08:41:56 CDT",
       "kind": "Podcast"
+    },
+    {
+      "title": "The Economics of Value",
+      "link": "https://mises.org/mises-wire/economics-value",
+      "pubDate": "Thu, 21 May 2026 06:02:30 CDT",
+      "kind": "Mises Wire"
     },
     {
       "title": "Buc-ee’s: Free-Market Triumph or Simply Capitalist Oppression?",
@@ -347,18 +359,6 @@
       "link": "https://mises.org/mises-wire/economics-sociological-foundation-civilization",
       "pubDate": "Wed, 20 May 2026 06:02:25 CDT",
       "kind": "Mises Wire"
-    },
-    {
-      "title": "New US Report Says 42 Aircraft Lost In Iran War",
-      "link": "https://mises.org/notes-margin/new-us-report-says-42-aircraft-lost-iran-war",
-      "pubDate": "Wed, 20 May 2026 03:00:00 CDT",
-      "kind": "Article"
-    },
-    {
-      "title": "The Economic Problem Behind Zohran Mamdani’s Government Grocery Plan",
-      "link": "https://mises.org/power-market/economic-problem-behind-zohran-mamdanis-government-grocery-plan",
-      "pubDate": "Wed, 20 May 2026 02:02:17 CDT",
-      "kind": "Article"
     }
   ]
 }
