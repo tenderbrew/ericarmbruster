@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-05-20T20:22:58.118Z",
+  "fetchedAt": "2026-05-21T04:07:25.213Z",
   "indicators": {
     "UNRATE": {
       "latest": {
@@ -63,12 +63,12 @@
     },
     "T10YIE": {
       "latest": {
-        "date": "2026-05-19",
-        "value": 2.49
+        "date": "2026-05-20",
+        "value": 2.44
       },
       "previous": {
-        "date": "2026-05-18",
-        "value": 2.48
+        "date": "2026-05-19",
+        "value": 2.49
       }
     },
     "PCE": {
@@ -143,11 +143,11 @@
     },
     "T10Y2Y": {
       "latest": {
-        "date": "2026-05-19",
-        "value": 0.54
+        "date": "2026-05-20",
+        "value": 0.53
       },
       "previous": {
-        "date": "2026-05-18",
+        "date": "2026-05-19",
         "value": 0.54
       }
     },
@@ -223,12 +223,12 @@
     },
     "STLFSI4": {
       "latest": {
-        "date": "2026-05-08",
-        "value": -0.7621
+        "date": "2026-05-15",
+        "value": -0.7404
       },
       "previous": {
-        "date": "2026-05-01",
-        "value": -0.67
+        "date": "2026-05-08",
+        "value": -0.7619
       }
     },
     "DTWEXBGS": {
@@ -301,6 +301,18 @@
   },
   "news": [
     {
+      "title": "A Rothbardian Case Against Bad Data Center Policy",
+      "link": "https://mises.org/podcasts/guns-and-butter/rothbardian-case-against-bad-data-center-policy",
+      "pubDate": "Wed, 20 May 2026 05:15:38 CDT",
+      "kind": "Podcast"
+    },
+    {
+      "title": "Murray N. Rothbard: A Legacy of Liberty",
+      "link": "https://mises.org/podcasts/audio-mises-wire/murray-n-rothbard-legacy-liberty",
+      "pubDate": "Wed, 20 May 2026 03:33:07 CDT",
+      "kind": "Podcast"
+    },
+    {
       "title": "Economics: The Sociological Foundation of Civilization",
       "link": "https://mises.org/podcasts/audio-mises-wire/economics-sociological-foundation-civilization",
       "pubDate": "Wed, 20 May 2026 01:43:57 CDT",
@@ -347,18 +359,6 @@
       "link": "https://mises.org/power-market/massie-defeated-kentucky-primary",
       "pubDate": "Tue, 19 May 2026 06:00:00 CDT",
       "kind": "Article"
-    },
-    {
-      "title": "Causes of Uncontrollable US Public Spending and Debt",
-      "link": "https://mises.org/podcasts/audio-mises-wire/causes-uncontrollable-us-public-spending-and-debt",
-      "pubDate": "Tue, 19 May 2026 04:49:17 CDT",
-      "kind": "Podcast"
-    },
-    {
-      "title": "Is Deflation Bad for the Economy?",
-      "link": "https://mises.org/podcasts/audio-mises-wire/deflation-bad-economy",
-      "pubDate": "Tue, 19 May 2026 04:31:49 CDT",
-      "kind": "Podcast"
     }
   ]
 }
