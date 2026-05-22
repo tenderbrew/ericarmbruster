@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-05-22T09:35:36.004Z",
+  "fetchedAt": "2026-05-22T14:47:09.350Z",
   "indicators": {
     "UNRATE": {
       "latest": {
@@ -163,12 +163,12 @@
     },
     "BAMLH0A0HYM2": {
       "latest": {
-        "date": "2026-05-20",
-        "value": 2.8
+        "date": "2026-05-21",
+        "value": 2.78
       },
       "previous": {
-        "date": "2026-05-19",
-        "value": 2.86
+        "date": "2026-05-20",
+        "value": 2.8
       }
     },
     "MORTGAGE30US": {
@@ -263,12 +263,12 @@
     },
     "VIXCLS": {
       "latest": {
-        "date": "2026-05-20",
-        "value": 17.44
+        "date": "2026-05-21",
+        "value": 16.76
       },
       "previous": {
-        "date": "2026-05-19",
-        "value": 18.06
+        "date": "2026-05-20",
+        "value": 17.44
       }
     },
     "BOPGSTB": {
@@ -300,6 +300,24 @@
     }
   },
   "news": [
+    {
+      "title": "RMP is Not QE",
+      "link": "https://mises.org/power-market/rmp-not-qe",
+      "pubDate": "Fri, 22 May 2026 09:48:14 CDT",
+      "kind": "Article"
+    },
+    {
+      "title": "The Great Reversal: How Social Contract Theory Became State Apologetics",
+      "link": "https://mises.org/podcasts/audio-mises-wire/great-reversal-how-social-contract-theory-became-state-apologetics",
+      "pubDate": "Fri, 22 May 2026 08:10:44 CDT",
+      "kind": "Podcast"
+    },
+    {
+      "title": "The Great Reversal: How Social Contract Theory Became State Apologetics",
+      "link": "https://mises.org/mises-wire/great-reversal-how-social-contract-theory-became-state-apologetics",
+      "pubDate": "Fri, 22 May 2026 12:02:27 CDT",
+      "kind": "Mises Wire"
+    },
     {
       "title": "Post-Massie America",
       "link": "https://mises.org/podcasts/power-and-market/post-massie-america",
@@ -341,24 +359,6 @@
       "link": "https://mises.org/podcasts/audio-mises-wire/murray-n-rothbard-legacy-liberty",
       "pubDate": "Wed, 20 May 2026 03:33:07 CDT",
       "kind": "Podcast"
-    },
-    {
-      "title": "Economics: The Sociological Foundation of Civilization",
-      "link": "https://mises.org/podcasts/audio-mises-wire/economics-sociological-foundation-civilization",
-      "pubDate": "Wed, 20 May 2026 01:43:57 CDT",
-      "kind": "Podcast"
-    },
-    {
-      "title": "The Minerals Consortium Will Result in Malinvestment",
-      "link": "https://mises.org/podcasts/audio-mises-wire/minerals-consortium-will-result-malinvestment",
-      "pubDate": "Wed, 20 May 2026 07:42:18 CDT",
-      "kind": "Podcast"
-    },
-    {
-      "title": "Beyond the Balance Sheet: How Bad Are Things at the Fed?",
-      "link": "https://mises.org/power-market/beyond-balance-sheet-how-bad-are-things-fed",
-      "pubDate": "Wed, 20 May 2026 07:31:06 CDT",
-      "kind": "Article"
     }
   ]
 }
