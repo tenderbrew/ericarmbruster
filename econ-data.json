@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-05-21T19:58:58.483Z",
+  "fetchedAt": "2026-05-22T04:02:05.240Z",
   "indicators": {
     "UNRATE": {
       "latest": {
@@ -63,12 +63,12 @@
     },
     "T10YIE": {
       "latest": {
-        "date": "2026-05-20",
-        "value": 2.44
+        "date": "2026-05-21",
+        "value": 2.39
       },
       "previous": {
-        "date": "2026-05-19",
-        "value": 2.49
+        "date": "2026-05-20",
+        "value": 2.44
       }
     },
     "PCE": {
@@ -103,12 +103,12 @@
     },
     "WALCL": {
       "latest": {
-        "date": "2026-05-13",
-        "value": 6728502
+        "date": "2026-05-20",
+        "value": 6713643
       },
       "previous": {
-        "date": "2026-05-06",
-        "value": 6709505
+        "date": "2026-05-13",
+        "value": 6728502
       }
     },
     "FEDFUNDS": {
@@ -123,42 +123,42 @@
     },
     "DGS2": {
       "latest": {
-        "date": "2026-05-19",
-        "value": 4.13
+        "date": "2026-05-20",
+        "value": 4.04
       },
       "previous": {
-        "date": "2026-05-18",
-        "value": 4.07
+        "date": "2026-05-19",
+        "value": 4.13
       }
     },
     "DGS10": {
       "latest": {
-        "date": "2026-05-19",
-        "value": 4.67
+        "date": "2026-05-20",
+        "value": 4.57
       },
       "previous": {
-        "date": "2026-05-18",
-        "value": 4.61
+        "date": "2026-05-19",
+        "value": 4.67
       }
     },
     "T10Y2Y": {
       "latest": {
-        "date": "2026-05-20",
-        "value": 0.53
+        "date": "2026-05-21",
+        "value": 0.49
       },
       "previous": {
-        "date": "2026-05-19",
-        "value": 0.54
+        "date": "2026-05-20",
+        "value": 0.53
       }
     },
     "DFII10": {
       "latest": {
-        "date": "2026-05-19",
-        "value": 2.18
+        "date": "2026-05-20",
+        "value": 2.13
       },
       "previous": {
-        "date": "2026-05-18",
-        "value": 2.13
+        "date": "2026-05-19",
+        "value": 2.18
       }
     },
     "BAMLH0A0HYM2": {
@@ -301,6 +301,12 @@
   },
   "news": [
     {
+      "title": "Post-Massie America",
+      "link": "https://mises.org/podcasts/power-and-market/post-massie-america",
+      "pubDate": "Thu, 21 May 2026 04:10:00 CDT",
+      "kind": "Podcast"
+    },
+    {
       "title": "Sabrin in WSJ: Independence Won’t Save the Federal Reserve",
       "link": "https://mises.org/notes-margin/sabrin-wsj-independence-wont-save-federal-reserve",
       "pubDate": "Thu, 21 May 2026 12:55:00 CDT",
@@ -353,12 +359,6 @@
       "link": "https://mises.org/power-market/beyond-balance-sheet-how-bad-are-things-fed",
       "pubDate": "Wed, 20 May 2026 07:31:06 CDT",
       "kind": "Article"
-    },
-    {
-      "title": "Economics: The Sociological Foundation of Civilization",
-      "link": "https://mises.org/mises-wire/economics-sociological-foundation-civilization",
-      "pubDate": "Wed, 20 May 2026 06:02:25 CDT",
-      "kind": "Mises Wire"
     }
   ]
 }
