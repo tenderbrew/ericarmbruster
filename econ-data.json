@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-05-22T14:47:09.350Z",
+  "fetchedAt": "2026-05-22T19:53:20.689Z",
   "indicators": {
     "UNRATE": {
       "latest": {
@@ -213,12 +213,12 @@
     },
     "UMCSENT": {
       "latest": {
-        "date": "2026-03-01",
-        "value": 53.3
+        "date": "2026-04-01",
+        "value": 49.8
       },
       "previous": {
-        "date": "2026-02-01",
-        "value": 56.6
+        "date": "2026-03-01",
+        "value": 53.3
       }
     },
     "STLFSI4": {
@@ -301,16 +301,34 @@
   },
   "news": [
     {
+      "title": "The Economic Problem Behind Zohran Mamdani’s Government Grocery Plan",
+      "link": "https://mises.org/podcasts/audio-mises-wire/economic-problem-behind-zohran-mamdanis-government-grocery-plan",
+      "pubDate": "Fri, 22 May 2026 10:14:57 CDT",
+      "kind": "Podcast"
+    },
+    {
       "title": "RMP is Not QE",
       "link": "https://mises.org/power-market/rmp-not-qe",
       "pubDate": "Fri, 22 May 2026 09:48:14 CDT",
       "kind": "Article"
     },
     {
+      "title": "Beware the Alternatives to Capitalism and Socialism",
+      "link": "https://mises.org/mises-wire/beware-alternatives-capitalism-and-socialism",
+      "pubDate": "Fri, 22 May 2026 09:02:17 CDT",
+      "kind": "Mises Wire"
+    },
+    {
       "title": "The Great Reversal: How Social Contract Theory Became State Apologetics",
       "link": "https://mises.org/podcasts/audio-mises-wire/great-reversal-how-social-contract-theory-became-state-apologetics",
       "pubDate": "Fri, 22 May 2026 08:10:44 CDT",
       "kind": "Podcast"
+    },
+    {
+      "title": "After 75 Years, Human Action Is Still the Standard for Understanding Economics",
+      "link": "https://mises.org/friday-philosophy/after-75-years-human-action-still-standard-understanding-economics",
+      "pubDate": "Fri, 22 May 2026 06:02:18 CDT",
+      "kind": "Article"
     },
     {
       "title": "The Great Reversal: How Social Contract Theory Became State Apologetics",
@@ -341,24 +359,6 @@
       "link": "https://mises.org/mises-wire/economics-value",
       "pubDate": "Thu, 21 May 2026 06:02:30 CDT",
       "kind": "Mises Wire"
-    },
-    {
-      "title": "Buc-ee’s: Free-Market Triumph or Simply Capitalist Oppression?",
-      "link": "https://mises.org/mises-wire/buc-ees-free-market-triumph-or-simply-capitalist-oppression",
-      "pubDate": "Thu, 21 May 2026 12:02:53 CDT",
-      "kind": "Mises Wire"
-    },
-    {
-      "title": "A Rothbardian Case Against Bad Data Center Policy",
-      "link": "https://mises.org/podcasts/guns-and-butter/rothbardian-case-against-bad-data-center-policy",
-      "pubDate": "Wed, 20 May 2026 05:15:38 CDT",
-      "kind": "Podcast"
-    },
-    {
-      "title": "Murray N. Rothbard: A Legacy of Liberty",
-      "link": "https://mises.org/podcasts/audio-mises-wire/murray-n-rothbard-legacy-liberty",
-      "pubDate": "Wed, 20 May 2026 03:33:07 CDT",
-      "kind": "Podcast"
     }
   ]
 }
