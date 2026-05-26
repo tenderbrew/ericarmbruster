@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-05-26T15:48:05.232Z",
+  "fetchedAt": "2026-05-26T20:13:14.626Z",
   "indicators": {
     "UNRATE": {
       "latest": {
@@ -83,22 +83,22 @@
     },
     "M2SL": {
       "latest": {
-        "date": "2026-03-01",
-        "value": 22686
+        "date": "2026-04-01",
+        "value": 22804.5
       },
       "previous": {
-        "date": "2026-02-01",
-        "value": 22627.3
+        "date": "2026-03-01",
+        "value": 22686.4
       }
     },
     "BOGMBASE": {
       "latest": {
-        "date": "2026-03-01",
-        "value": 5458.6
+        "date": "2026-04-01",
+        "value": 5470.4
       },
       "previous": {
-        "date": "2026-02-01",
-        "value": 5388
+        "date": "2026-03-01",
+        "value": 5458.6
       }
     },
     "WALCL": {
@@ -301,64 +301,64 @@
   },
   "news": [
     {
+      "title": "The Big Apple’s Woes Are Not Just the Result of One Election",
+      "link": "https://mises.org/podcasts/audio-mises-wire/big-apples-woes-are-not-just-result-one-election",
+      "pubDate": "Tue, 26 May 2026 02:22:35 CDT",
+      "kind": "Podcast"
+    },
+    {
+      "title": "Ryan McMaken and Ron Paul Featured on John Stossel's America at 250",
+      "link": "https://mises.org/notes-margin/ryan-mcmaken-and-ron-paul-featured-john-stossels-america-250",
+      "pubDate": "Tue, 26 May 2026 01:30:00 CDT",
+      "kind": "Article"
+    },
+    {
+      "title": "RIP Antony Mueller",
+      "link": "https://mises.org/power-market/rip-antony-mueller",
+      "pubDate": "Tue, 26 May 2026 11:00:00 CDT",
+      "kind": "Article"
+    },
+    {
+      "title": "The Big Apple’s Woes Are Not Just the Result of One Election",
+      "link": "https://mises.org/mises-wire/big-apples-woes-are-not-just-result-one-election",
+      "pubDate": "Tue, 26 May 2026 09:02:16 CDT",
+      "kind": "Mises Wire"
+    },
+    {
+      "title": "RIP: Antony Müller, longtime Austrian-school economist, passes away",
+      "link": "https://mises.org/notes-margin/rip-antony-muller-longtime-austrian-school-economist-passes-away",
+      "pubDate": "Tue, 26 May 2026 09:00:00 CDT",
+      "kind": "Article"
+    },
+    {
       "title": "Murray Rothbard on War and \"Isolationism\"",
       "link": "https://mises.org/podcasts/audio-mises-wire/murray-rothbard-war-and-isolationism",
       "pubDate": "Tue, 26 May 2026 08:17:57 CDT",
       "kind": "Podcast"
     },
     {
+      "title": "Would Oil Bring a Resource Curse in Jamaica?",
+      "link": "https://mises.org/mises-wire/would-oil-bring-resource-curse-jamaica",
+      "pubDate": "Tue, 26 May 2026 06:02:27 CDT",
+      "kind": "Mises Wire"
+    },
+    {
+      "title": "When Our Word is No Longer Good",
+      "link": "https://mises.org/power-market/when-our-word-no-longer-good",
+      "pubDate": "Tue, 26 May 2026 06:00:00 CDT",
+      "kind": "Article"
+    },
+    {
+      "title": "JD Vance considering abandoning 2028 presidential run",
+      "link": "https://mises.org/notes-margin/jd-vance-considering-abandoning-2028-presidential-run",
+      "pubDate": "Tue, 26 May 2026 03:20:00 CDT",
+      "kind": "Article"
+    },
+    {
       "title": "Why Egalitarianism Persists",
       "link": "https://mises.org/mises-wire/why-egalitarianism-persists",
       "pubDate": "Tue, 26 May 2026 12:02:32 CDT",
       "kind": "Mises Wire"
-    },
-    {
-      "title": "Does Demand Create Supply?",
-      "link": "https://mises.org/mises-wire/does-demand-create-supply",
-      "pubDate": "Mon, 25 May 2026 09:03:37 CDT",
-      "kind": "Mises Wire"
-    },
-    {
-      "title": "Murray Rothbard on War and \"Isolationism\"",
-      "link": "https://mises.org/mises-wire/murray-rothbard-war-and-isolationism",
-      "pubDate": "Mon, 25 May 2026 06:02:19 CDT",
-      "kind": "Mises Wire"
-    },
-    {
-      "title": "The Wicked Witch of Eccles Hates Sound Money",
-      "link": "https://mises.org/mises-wire/wicked-witch-eccles-hates-sound-money",
-      "pubDate": "Mon, 25 May 2026 12:02:18 CDT",
-      "kind": "Mises Wire"
-    },
-    {
-      "title": "Price Inflation Is Getting Worse",
-      "link": "https://mises.org/podcasts/loot-and-lobby/price-inflation-getting-worse",
-      "pubDate": "Sat, 23 May 2026 12:14:22 CDT",
-      "kind": "Podcast"
-    },
-    {
-      "title": "War, Easy Money, and the Working-Class Squeeze",
-      "link": "https://mises.org/podcasts/minor-issues/war-easy-money-and-working-class-squeeze",
-      "pubDate": "Sat, 23 May 2026 06:02:11 CDT",
-      "kind": "Podcast"
-    },
-    {
-      "title": "A Schumpeterian Analysis of the Eurobond Scandal through Rothbard’s Cui Bono",
-      "link": "https://mises.org/mises-wire/schumpeterian-analysis-eurobond-scandal-through-rothbards-cui-bono",
-      "pubDate": "Sat, 23 May 2026 12:02:17 CDT",
-      "kind": "Mises Wire"
-    },
-    {
-      "title": "Mises’s Theory of Nations Applied to Immigration and Borders",
-      "link": "https://mises.org/mises-wire/misess-theory-nations-applied-immigration-and-borders",
-      "pubDate": "Sat, 23 May 2026 12:02:16 CDT",
-      "kind": "Mises Wire"
-    },
-    {
-      "title": "The US Constitution Is Now a Suicide Pact",
-      "link": "https://mises.org/podcasts/audio-mises-wire/us-constitution-now-suicide-pact",
-      "pubDate": "Fri, 22 May 2026 05:33:31 CDT",
-      "kind": "Podcast"
     }
   ]
 }
