@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-05-27T10:01:27.882Z",
+  "fetchedAt": "2026-05-27T15:55:07.905Z",
   "indicators": {
     "UNRATE": {
       "latest": {
@@ -163,11 +163,11 @@
     },
     "BAMLH0A0HYM2": {
       "latest": {
-        "date": "2026-05-25",
-        "value": 2.74
+        "date": "2026-05-26",
+        "value": 2.72
       },
       "previous": {
-        "date": "2026-05-22",
+        "date": "2026-05-25",
         "value": 2.74
       }
     },
@@ -223,12 +223,12 @@
     },
     "STLFSI4": {
       "latest": {
-        "date": "2026-05-15",
-        "value": -0.7404
+        "date": "2026-05-22",
+        "value": -0.7611
       },
       "previous": {
-        "date": "2026-05-08",
-        "value": -0.7619
+        "date": "2026-05-15",
+        "value": -0.7408
       }
     },
     "DTWEXBGS": {
@@ -263,12 +263,12 @@
     },
     "VIXCLS": {
       "latest": {
-        "date": "2026-05-25",
-        "value": 16.59
+        "date": "2026-05-26",
+        "value": 17.01
       },
       "previous": {
-        "date": "2026-05-22",
-        "value": 16.7
+        "date": "2026-05-25",
+        "value": 16.59
       }
     },
     "BOPGSTB": {
@@ -300,6 +300,30 @@
     }
   },
   "news": [
+    {
+      "title": "When Our Word is No Longer Good",
+      "link": "https://mises.org/podcasts/audio-mises-wire/when-our-word-no-longer-good",
+      "pubDate": "Wed, 27 May 2026 08:45:57 CDT",
+      "kind": "Podcast"
+    },
+    {
+      "title": "Kraken Financial: More Bank than Bank",
+      "link": "https://mises.org/power-market/kraken-financial-more-bank-bank",
+      "pubDate": "Wed, 27 May 2026 07:49:24 CDT",
+      "kind": "Article"
+    },
+    {
+      "title": "Democracy's Road to Tyranny",
+      "link": "https://mises.org/podcasts/audio-mises-wire/democracys-road-tyranny",
+      "pubDate": "Wed, 27 May 2026 07:31:12 CDT",
+      "kind": "Podcast"
+    },
+    {
+      "title": "The Public Goods Circular Argument",
+      "link": "https://mises.org/mises-wire/public-goods-circular-argument",
+      "pubDate": "Wed, 27 May 2026 12:02:17 CDT",
+      "kind": "Mises Wire"
+    },
     {
       "title": "The Big Apple’s Woes Are Not Just the Result of One Election",
       "link": "https://mises.org/podcasts/audio-mises-wire/big-apples-woes-are-not-just-result-one-election",
@@ -335,30 +359,6 @@
       "link": "https://mises.org/podcasts/audio-mises-wire/murray-rothbard-war-and-isolationism",
       "pubDate": "Tue, 26 May 2026 08:17:57 CDT",
       "kind": "Podcast"
-    },
-    {
-      "title": "Would Oil Bring a Resource Curse in Jamaica?",
-      "link": "https://mises.org/mises-wire/would-oil-bring-resource-curse-jamaica",
-      "pubDate": "Tue, 26 May 2026 06:02:27 CDT",
-      "kind": "Mises Wire"
-    },
-    {
-      "title": "When Our Word is No Longer Good",
-      "link": "https://mises.org/power-market/when-our-word-no-longer-good",
-      "pubDate": "Tue, 26 May 2026 06:00:00 CDT",
-      "kind": "Article"
-    },
-    {
-      "title": "JD Vance considering abandoning 2028 presidential run",
-      "link": "https://mises.org/notes-margin/jd-vance-considering-abandoning-2028-presidential-run",
-      "pubDate": "Tue, 26 May 2026 03:20:00 CDT",
-      "kind": "Article"
-    },
-    {
-      "title": "Why Egalitarianism Persists",
-      "link": "https://mises.org/mises-wire/why-egalitarianism-persists",
-      "pubDate": "Tue, 26 May 2026 12:02:32 CDT",
-      "kind": "Mises Wire"
     }
   ]
 }
