@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-05-27T15:55:07.905Z",
+  "fetchedAt": "2026-05-27T20:26:42.551Z",
   "indicators": {
     "UNRATE": {
       "latest": {
@@ -123,22 +123,22 @@
     },
     "DGS2": {
       "latest": {
-        "date": "2026-05-22",
-        "value": 4.13
+        "date": "2026-05-26",
+        "value": 4.01
       },
       "previous": {
-        "date": "2026-05-21",
-        "value": 4.08
+        "date": "2026-05-25",
+        "value": 0
       }
     },
     "DGS10": {
       "latest": {
-        "date": "2026-05-22",
-        "value": 4.56
+        "date": "2026-05-26",
+        "value": 4.5
       },
       "previous": {
-        "date": "2026-05-21",
-        "value": 4.57
+        "date": "2026-05-25",
+        "value": 0
       }
     },
     "T10Y2Y": {
@@ -153,12 +153,12 @@
     },
     "DFII10": {
       "latest": {
-        "date": "2026-05-22",
-        "value": 2.16
+        "date": "2026-05-26",
+        "value": 2.1
       },
       "previous": {
-        "date": "2026-05-21",
-        "value": 2.18
+        "date": "2026-05-25",
+        "value": 0
       }
     },
     "BAMLH0A0HYM2": {
@@ -301,6 +301,24 @@
   },
   "news": [
     {
+      "title": "The Two Economies",
+      "link": "https://mises.org/podcasts/audio-mises-wire/two-economies",
+      "pubDate": "Wed, 27 May 2026 01:11:04 CDT",
+      "kind": "Podcast"
+    },
+    {
+      "title": "Ron Paul Wins the Hayek Medal 2026 – A Message to Moderate Classical Liberals and Hardcore Libertarians",
+      "link": "https://mises.org/power-market/ron-paul-wins-hayek-medal-2026-message-moderate-classical-liberals-and-hardcore-libertarians",
+      "pubDate": "Wed, 27 May 2026 01:00:00 CDT",
+      "kind": "Article"
+    },
+    {
+      "title": "The Public Goods Circular Argument",
+      "link": "https://mises.org/podcasts/audio-mises-wire/public-goods-circular-argument",
+      "pubDate": "Wed, 27 May 2026 11:26:02 CDT",
+      "kind": "Podcast"
+    },
+    {
       "title": "When Our Word is No Longer Good",
       "link": "https://mises.org/podcasts/audio-mises-wire/when-our-word-no-longer-good",
       "pubDate": "Wed, 27 May 2026 08:45:57 CDT",
@@ -319,6 +337,12 @@
       "kind": "Podcast"
     },
     {
+      "title": "Who Owns the Airwaves and the Sea?",
+      "link": "https://mises.org/mises-wire/who-owns-airwaves-and-sea",
+      "pubDate": "Wed, 27 May 2026 06:02:21 CDT",
+      "kind": "Mises Wire"
+    },
+    {
       "title": "The Public Goods Circular Argument",
       "link": "https://mises.org/mises-wire/public-goods-circular-argument",
       "pubDate": "Wed, 27 May 2026 12:02:17 CDT",
@@ -335,30 +359,6 @@
       "link": "https://mises.org/notes-margin/ryan-mcmaken-and-ron-paul-featured-john-stossels-america-250",
       "pubDate": "Tue, 26 May 2026 01:30:00 CDT",
       "kind": "Article"
-    },
-    {
-      "title": "RIP Antony Mueller",
-      "link": "https://mises.org/power-market/rip-antony-mueller",
-      "pubDate": "Tue, 26 May 2026 11:00:00 CDT",
-      "kind": "Article"
-    },
-    {
-      "title": "The Big Apple’s Woes Are Not Just the Result of One Election",
-      "link": "https://mises.org/mises-wire/big-apples-woes-are-not-just-result-one-election",
-      "pubDate": "Tue, 26 May 2026 09:02:16 CDT",
-      "kind": "Mises Wire"
-    },
-    {
-      "title": "RIP: Antony Müller, longtime Austrian-school economist, passes away",
-      "link": "https://mises.org/notes-margin/rip-antony-muller-longtime-austrian-school-economist-passes-away",
-      "pubDate": "Tue, 26 May 2026 09:00:00 CDT",
-      "kind": "Article"
-    },
-    {
-      "title": "Murray Rothbard on War and \"Isolationism\"",
-      "link": "https://mises.org/podcasts/audio-mises-wire/murray-rothbard-war-and-isolationism",
-      "pubDate": "Tue, 26 May 2026 08:17:57 CDT",
-      "kind": "Podcast"
     }
   ]
 }
