@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-05-28T10:10:56.041Z",
+  "fetchedAt": "2026-05-28T16:08:48.931Z",
   "indicators": {
     "UNRATE": {
       "latest": {
@@ -33,12 +33,12 @@
     },
     "ICSA": {
       "latest": {
-        "date": "2026-05-16",
-        "value": 209000
+        "date": "2026-05-23",
+        "value": 215000
       },
       "previous": {
-        "date": "2026-05-09",
-        "value": 212000
+        "date": "2026-05-16",
+        "value": 210000
       }
     },
     "CPIAUCSL": {
@@ -73,12 +73,12 @@
     },
     "PCE": {
       "latest": {
-        "date": "2026-03-01",
-        "value": 21860.5
+        "date": "2026-04-01",
+        "value": 21979.4
       },
       "previous": {
-        "date": "2026-02-01",
-        "value": 21665.1
+        "date": "2026-03-01",
+        "value": 21868.3
       }
     },
     "M2SL": {
@@ -163,28 +163,28 @@
     },
     "BAMLH0A0HYM2": {
       "latest": {
-        "date": "2026-05-26",
-        "value": 2.72
+        "date": "2026-05-27",
+        "value": 2.71
       },
       "previous": {
-        "date": "2026-05-25",
-        "value": 2.74
+        "date": "2026-05-26",
+        "value": 2.72
       }
     },
     "MORTGAGE30US": {
       "latest": {
-        "date": "2026-05-21",
-        "value": 6.51
+        "date": "2026-05-28",
+        "value": 6.53
       },
       "previous": {
-        "date": "2026-05-14",
-        "value": 6.36
+        "date": "2026-05-21",
+        "value": 6.51
       }
     },
     "GDPC1": {
       "latest": {
         "date": "2026-01-01",
-        "value": 24174.527
+        "value": 24152.656
       },
       "previous": {
         "date": "2025-10-01",
@@ -244,7 +244,7 @@
     "PERMIT": {
       "latest": {
         "date": "2026-04-01",
-        "value": 1442
+        "value": 1423
       },
       "previous": {
         "date": "2026-03-01",
@@ -263,12 +263,12 @@
     },
     "VIXCLS": {
       "latest": {
-        "date": "2026-05-26",
-        "value": 17.01
+        "date": "2026-05-27",
+        "value": 16.29
       },
       "previous": {
-        "date": "2026-05-25",
-        "value": 16.59
+        "date": "2026-05-26",
+        "value": 17.01
       }
     },
     "BOPGSTB": {
@@ -284,7 +284,7 @@
     "M2V": {
       "latest": {
         "date": "2026-01-01",
-        "value": 1.411
+        "value": 1.409
       },
       "previous": {
         "date": "2025-10-01",
@@ -300,6 +300,42 @@
     }
   },
   "news": [
+    {
+      "title": "The Heart of a Fighter",
+      "link": "https://mises.org/podcasts/audio-mises-wire/heart-fighter",
+      "pubDate": "Thu, 28 May 2026 10:08:07 CDT",
+      "kind": "Podcast"
+    },
+    {
+      "title": "Justice Clarence Thomas Is Right about Progressivism",
+      "link": "https://mises.org/podcasts/audio-mises-wire/justice-clarence-thomas-right-about-progressivism",
+      "pubDate": "Thu, 28 May 2026 08:47:02 CDT",
+      "kind": "Podcast"
+    },
+    {
+      "title": "Who Owns the Airwaves and the Sea?",
+      "link": "https://mises.org/podcasts/audio-mises-wire/who-owns-airwaves-and-sea",
+      "pubDate": "Thu, 28 May 2026 08:05:22 CDT",
+      "kind": "Podcast"
+    },
+    {
+      "title": "There Is No Reprieve in the Fed’s War on Savings",
+      "link": "https://mises.org/mises-wire/there-no-reprieve-feds-war-savings",
+      "pubDate": "Thu, 28 May 2026 06:02:28 CDT",
+      "kind": "Mises Wire"
+    },
+    {
+      "title": "America's Old Republic Disappeared a Long Time Ago",
+      "link": "https://mises.org/podcasts/loot-and-lobby/americas-old-republic-disappeared-long-time-ago",
+      "pubDate": "Thu, 28 May 2026 02:27:16 CDT",
+      "kind": "Podcast"
+    },
+    {
+      "title": "Research Fellowship in Residence 2027",
+      "link": "https://mises.org/events/research-fellowship-residence-2027",
+      "pubDate": "Thu, 28 May 2026 01:00:00 CDT",
+      "kind": "Article"
+    },
     {
       "title": "Justice Clarence Thomas Is Right about Progressivism",
       "link": "https://mises.org/mises-wire/justice-clarence-thomas-right-about-progressivism",
@@ -322,42 +358,6 @@
       "title": "The Public Goods Circular Argument",
       "link": "https://mises.org/podcasts/audio-mises-wire/public-goods-circular-argument",
       "pubDate": "Wed, 27 May 2026 11:26:02 CDT",
-      "kind": "Podcast"
-    },
-    {
-      "title": "When Our Word is No Longer Good",
-      "link": "https://mises.org/podcasts/audio-mises-wire/when-our-word-no-longer-good",
-      "pubDate": "Wed, 27 May 2026 08:45:57 CDT",
-      "kind": "Podcast"
-    },
-    {
-      "title": "Kraken Financial: More Bank than Bank",
-      "link": "https://mises.org/power-market/kraken-financial-more-bank-bank",
-      "pubDate": "Wed, 27 May 2026 07:49:24 CDT",
-      "kind": "Article"
-    },
-    {
-      "title": "Democracy's Road to Tyranny",
-      "link": "https://mises.org/podcasts/audio-mises-wire/democracys-road-tyranny",
-      "pubDate": "Wed, 27 May 2026 07:31:12 CDT",
-      "kind": "Podcast"
-    },
-    {
-      "title": "Who Owns the Airwaves and the Sea?",
-      "link": "https://mises.org/mises-wire/who-owns-airwaves-and-sea",
-      "pubDate": "Wed, 27 May 2026 06:02:21 CDT",
-      "kind": "Mises Wire"
-    },
-    {
-      "title": "The Public Goods Circular Argument",
-      "link": "https://mises.org/mises-wire/public-goods-circular-argument",
-      "pubDate": "Wed, 27 May 2026 12:02:17 CDT",
-      "kind": "Mises Wire"
-    },
-    {
-      "title": "The Big Apple’s Woes Are Not Just the Result of One Election",
-      "link": "https://mises.org/podcasts/audio-mises-wire/big-apples-woes-are-not-just-result-one-election",
-      "pubDate": "Tue, 26 May 2026 02:22:35 CDT",
       "kind": "Podcast"
     }
   ]
