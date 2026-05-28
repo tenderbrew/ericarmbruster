@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-05-28T16:08:48.931Z",
+  "fetchedAt": "2026-05-28T20:29:20.878Z",
   "indicators": {
     "UNRATE": {
       "latest": {
@@ -123,22 +123,22 @@
     },
     "DGS2": {
       "latest": {
-        "date": "2026-05-26",
-        "value": 4.01
+        "date": "2026-05-27",
+        "value": 4
       },
       "previous": {
-        "date": "2026-05-25",
-        "value": 0
+        "date": "2026-05-26",
+        "value": 4.01
       }
     },
     "DGS10": {
       "latest": {
-        "date": "2026-05-26",
-        "value": 4.5
+        "date": "2026-05-27",
+        "value": 4.48
       },
       "previous": {
-        "date": "2026-05-25",
-        "value": 0
+        "date": "2026-05-26",
+        "value": 4.5
       }
     },
     "T10Y2Y": {
@@ -153,12 +153,12 @@
     },
     "DFII10": {
       "latest": {
-        "date": "2026-05-26",
-        "value": 2.1
+        "date": "2026-05-27",
+        "value": 2.09
       },
       "previous": {
-        "date": "2026-05-25",
-        "value": 0
+        "date": "2026-05-26",
+        "value": 2.1
       }
     },
     "BAMLH0A0HYM2": {
@@ -301,10 +301,28 @@
   },
   "news": [
     {
+      "title": "Mises and the Role of the Economist in Public Policy",
+      "link": "https://mises.org/podcasts/audio-mises-wire/mises-and-role-economist-public-policy",
+      "pubDate": "Thu, 28 May 2026 02:08:06 CDT",
+      "kind": "Podcast"
+    },
+    {
+      "title": "There Is No Reprieve in the Fed’s War on Savings",
+      "link": "https://mises.org/podcasts/audio-mises-wire/there-no-reprieve-feds-war-savings",
+      "pubDate": "Thu, 28 May 2026 12:01:38 CDT",
+      "kind": "Podcast"
+    },
+    {
       "title": "The Heart of a Fighter",
       "link": "https://mises.org/podcasts/audio-mises-wire/heart-fighter",
       "pubDate": "Thu, 28 May 2026 10:08:07 CDT",
       "kind": "Podcast"
+    },
+    {
+      "title": "The Defeat of Thomas Massie: Where to Go from Here?",
+      "link": "https://mises.org/mises-wire/defeat-thomas-massie-where-go-here",
+      "pubDate": "Thu, 28 May 2026 09:02:15 CDT",
+      "kind": "Mises Wire"
     },
     {
       "title": "Justice Clarence Thomas Is Right about Progressivism",
@@ -341,24 +359,6 @@
       "link": "https://mises.org/mises-wire/justice-clarence-thomas-right-about-progressivism",
       "pubDate": "Thu, 28 May 2026 12:02:26 CDT",
       "kind": "Mises Wire"
-    },
-    {
-      "title": "The Two Economies",
-      "link": "https://mises.org/podcasts/audio-mises-wire/two-economies",
-      "pubDate": "Wed, 27 May 2026 01:11:04 CDT",
-      "kind": "Podcast"
-    },
-    {
-      "title": "Ron Paul Wins the Hayek Medal 2026 – A Message to Moderate Classical Liberals and Hardcore Libertarians",
-      "link": "https://mises.org/power-market/ron-paul-wins-hayek-medal-2026-message-moderate-classical-liberals-and-hardcore-libertarians",
-      "pubDate": "Wed, 27 May 2026 01:00:00 CDT",
-      "kind": "Article"
-    },
-    {
-      "title": "The Public Goods Circular Argument",
-      "link": "https://mises.org/podcasts/audio-mises-wire/public-goods-circular-argument",
-      "pubDate": "Wed, 27 May 2026 11:26:02 CDT",
-      "kind": "Podcast"
     }
   ]
 }
