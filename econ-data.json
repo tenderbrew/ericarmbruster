@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-05-29T15:50:29.305Z",
+  "fetchedAt": "2026-05-29T20:31:29.287Z",
   "indicators": {
     "UNRATE": {
       "latest": {
@@ -123,22 +123,22 @@
     },
     "DGS2": {
       "latest": {
-        "date": "2026-05-27",
-        "value": 4
+        "date": "2026-05-28",
+        "value": 3.99
       },
       "previous": {
-        "date": "2026-05-26",
-        "value": 4.01
+        "date": "2026-05-27",
+        "value": 4
       }
     },
     "DGS10": {
       "latest": {
-        "date": "2026-05-27",
-        "value": 4.48
+        "date": "2026-05-28",
+        "value": 4.45
       },
       "previous": {
-        "date": "2026-05-26",
-        "value": 4.5
+        "date": "2026-05-27",
+        "value": 4.48
       }
     },
     "T10Y2Y": {
@@ -153,22 +153,22 @@
     },
     "DFII10": {
       "latest": {
-        "date": "2026-05-27",
-        "value": 2.09
+        "date": "2026-05-28",
+        "value": 2.06
       },
       "previous": {
-        "date": "2026-05-26",
-        "value": 2.1
+        "date": "2026-05-27",
+        "value": 2.09
       }
     },
     "BAMLH0A0HYM2": {
       "latest": {
-        "date": "2026-05-27",
-        "value": 2.71
+        "date": "2026-05-28",
+        "value": 2.72
       },
       "previous": {
-        "date": "2026-05-26",
-        "value": 2.72
+        "date": "2026-05-27",
+        "value": 2.71
       }
     },
     "MORTGAGE30US": {
@@ -263,12 +263,12 @@
     },
     "VIXCLS": {
       "latest": {
-        "date": "2026-05-27",
-        "value": 16.29
+        "date": "2026-05-28",
+        "value": 15.74
       },
       "previous": {
-        "date": "2026-05-26",
-        "value": 17.01
+        "date": "2026-05-27",
+        "value": 16.29
       }
     },
     "BOPGSTB": {
@@ -313,6 +313,18 @@
       "kind": "Podcast"
     },
     {
+      "title": "Patents: The Damage of Coerced Intellectual Monopoly",
+      "link": "https://mises.org/mises-wire/patents-damage-coerced-intellectual-monopoly",
+      "pubDate": "Fri, 29 May 2026 09:02:38 CDT",
+      "kind": "Mises Wire"
+    },
+    {
+      "title": "Willmoore Kendall on Lincoln, Equality and the South",
+      "link": "https://mises.org/friday-philosophy/willmoore-kendall-lincoln-equality-and-south",
+      "pubDate": "Fri, 29 May 2026 06:02:46 CDT",
+      "kind": "Article"
+    },
+    {
       "title": "“Creating a Nation”: The Declaration of Independence and the Nation Anachronism",
       "link": "https://mises.org/mises-wire/creating-nation-declaration-independence-and-nation-anachronism",
       "pubDate": "Fri, 29 May 2026 12:02:17 CDT",
@@ -347,18 +359,6 @@
       "link": "https://mises.org/podcasts/audio-mises-wire/justice-clarence-thomas-right-about-progressivism",
       "pubDate": "Thu, 28 May 2026 08:47:02 CDT",
       "kind": "Podcast"
-    },
-    {
-      "title": "Who Owns the Airwaves and the Sea?",
-      "link": "https://mises.org/podcasts/audio-mises-wire/who-owns-airwaves-and-sea",
-      "pubDate": "Thu, 28 May 2026 08:05:22 CDT",
-      "kind": "Podcast"
-    },
-    {
-      "title": "There Is No Reprieve in the Fed’s War on Savings",
-      "link": "https://mises.org/mises-wire/there-no-reprieve-feds-war-savings",
-      "pubDate": "Thu, 28 May 2026 06:02:28 CDT",
-      "kind": "Mises Wire"
     }
   ]
 }
