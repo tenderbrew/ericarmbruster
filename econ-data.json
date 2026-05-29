@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-05-28T20:29:20.878Z",
+  "fetchedAt": "2026-05-29T04:17:28.790Z",
   "indicators": {
     "UNRATE": {
       "latest": {
@@ -61,16 +61,7 @@
         "value": 334.165
       }
     },
-    "T10YIE": {
-      "latest": {
-        "date": "2026-05-27",
-        "value": 2.39
-      },
-      "previous": {
-        "date": "2026-05-26",
-        "value": 2.4
-      }
-    },
+    "T10YIE": null,
     "PCE": {
       "latest": {
         "date": "2026-04-01",
@@ -103,12 +94,12 @@
     },
     "WALCL": {
       "latest": {
-        "date": "2026-05-20",
-        "value": 6713643
+        "date": "2026-05-27",
+        "value": 6704383
       },
       "previous": {
-        "date": "2026-05-13",
-        "value": 6728502
+        "date": "2026-05-20",
+        "value": 6713643
       }
     },
     "FEDFUNDS": {
@@ -121,46 +112,10 @@
         "value": 3.64
       }
     },
-    "DGS2": {
-      "latest": {
-        "date": "2026-05-27",
-        "value": 4
-      },
-      "previous": {
-        "date": "2026-05-26",
-        "value": 4.01
-      }
-    },
-    "DGS10": {
-      "latest": {
-        "date": "2026-05-27",
-        "value": 4.48
-      },
-      "previous": {
-        "date": "2026-05-26",
-        "value": 4.5
-      }
-    },
-    "T10Y2Y": {
-      "latest": {
-        "date": "2026-05-27",
-        "value": 0.48
-      },
-      "previous": {
-        "date": "2026-05-26",
-        "value": 0.49
-      }
-    },
-    "DFII10": {
-      "latest": {
-        "date": "2026-05-27",
-        "value": 2.09
-      },
-      "previous": {
-        "date": "2026-05-26",
-        "value": 2.1
-      }
-    },
+    "DGS2": null,
+    "DGS10": null,
+    "T10Y2Y": null,
+    "DFII10": null,
     "BAMLH0A0HYM2": {
       "latest": {
         "date": "2026-05-27",
@@ -231,16 +186,7 @@
         "value": -0.7408
       }
     },
-    "DTWEXBGS": {
-      "latest": {
-        "date": "2026-05-22",
-        "value": 119.2868
-      },
-      "previous": {
-        "date": "2026-05-21",
-        "value": 119.369
-      }
-    },
+    "DTWEXBGS": null,
     "PERMIT": {
       "latest": {
         "date": "2026-04-01",
@@ -261,16 +207,7 @@
         "value": 121.02875
       }
     },
-    "VIXCLS": {
-      "latest": {
-        "date": "2026-05-27",
-        "value": 16.29
-      },
-      "previous": {
-        "date": "2026-05-26",
-        "value": 17.01
-      }
-    },
+    "VIXCLS": null,
     "BOPGSTB": {
       "latest": {
         "date": "2026-03-01",
