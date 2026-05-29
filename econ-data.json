@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-05-29T04:17:28.790Z",
+  "fetchedAt": "2026-05-29T10:01:21.912Z",
   "indicators": {
     "UNRATE": {
       "latest": {
@@ -61,7 +61,16 @@
         "value": 334.165
       }
     },
-    "T10YIE": null,
+    "T10YIE": {
+      "latest": {
+        "date": "2026-05-28",
+        "value": 2.39
+      },
+      "previous": {
+        "date": "2026-05-27",
+        "value": 2.39
+      }
+    },
     "PCE": {
       "latest": {
         "date": "2026-04-01",
@@ -112,10 +121,46 @@
         "value": 3.64
       }
     },
-    "DGS2": null,
-    "DGS10": null,
-    "T10Y2Y": null,
-    "DFII10": null,
+    "DGS2": {
+      "latest": {
+        "date": "2026-05-27",
+        "value": 4
+      },
+      "previous": {
+        "date": "2026-05-26",
+        "value": 4.01
+      }
+    },
+    "DGS10": {
+      "latest": {
+        "date": "2026-05-27",
+        "value": 4.48
+      },
+      "previous": {
+        "date": "2026-05-26",
+        "value": 4.5
+      }
+    },
+    "T10Y2Y": {
+      "latest": {
+        "date": "2026-05-28",
+        "value": 0.46
+      },
+      "previous": {
+        "date": "2026-05-27",
+        "value": 0.48
+      }
+    },
+    "DFII10": {
+      "latest": {
+        "date": "2026-05-27",
+        "value": 2.09
+      },
+      "previous": {
+        "date": "2026-05-26",
+        "value": 2.1
+      }
+    },
     "BAMLH0A0HYM2": {
       "latest": {
         "date": "2026-05-27",
@@ -186,7 +231,16 @@
         "value": -0.7408
       }
     },
-    "DTWEXBGS": null,
+    "DTWEXBGS": {
+      "latest": {
+        "date": "2026-05-22",
+        "value": 119.2868
+      },
+      "previous": {
+        "date": "2026-05-21",
+        "value": 119.369
+      }
+    },
     "PERMIT": {
       "latest": {
         "date": "2026-04-01",
@@ -207,7 +261,16 @@
         "value": 121.02875
       }
     },
-    "VIXCLS": null,
+    "VIXCLS": {
+      "latest": {
+        "date": "2026-05-27",
+        "value": 16.29
+      },
+      "previous": {
+        "date": "2026-05-26",
+        "value": 17.01
+      }
+    },
     "BOPGSTB": {
       "latest": {
         "date": "2026-03-01",
