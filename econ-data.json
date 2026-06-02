@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-06-02T10:43:29.691Z",
+  "fetchedAt": "2026-06-02T16:41:18.364Z",
   "indicators": {
     "UNRATE": {
       "latest": {
@@ -23,12 +23,12 @@
     },
     "JTSJOL": {
       "latest": {
-        "date": "2026-03-01",
-        "value": 6866
+        "date": "2026-04-01",
+        "value": 7618
       },
       "previous": {
-        "date": "2026-02-01",
-        "value": 6922
+        "date": "2026-03-01",
+        "value": 6887
       }
     },
     "ICSA": {
@@ -163,12 +163,12 @@
     },
     "BAMLH0A0HYM2": {
       "latest": {
-        "date": "2026-05-31",
-        "value": 2.74
+        "date": "2026-06-01",
+        "value": 2.72
       },
       "previous": {
-        "date": "2026-05-29",
-        "value": 2.72
+        "date": "2026-05-31",
+        "value": 2.74
       }
     },
     "MORTGAGE30US": {
@@ -263,12 +263,12 @@
     },
     "VIXCLS": {
       "latest": {
-        "date": "2026-05-29",
-        "value": 15.32
+        "date": "2026-06-01",
+        "value": 16.05
       },
       "previous": {
-        "date": "2026-05-28",
-        "value": 15.74
+        "date": "2026-05-29",
+        "value": 15.32
       }
     },
     "BOPGSTB": {
@@ -300,6 +300,18 @@
     }
   },
   "news": [
+    {
+      "title": "Justice Clarence Thomas, Harry Jaffa, and the Declaration of Independence",
+      "link": "https://mises.org/podcasts/audio-mises-wire/justice-clarence-thomas-harry-jaffa-and-declaration-independence",
+      "pubDate": "Tue, 02 Jun 2026 11:09:10 CDT",
+      "kind": "Podcast"
+    },
+    {
+      "title": "Beware the Neo-Primes",
+      "link": "https://mises.org/mises-wire/beware-neo-primes",
+      "pubDate": "Tue, 02 Jun 2026 06:02:31 CDT",
+      "kind": "Mises Wire"
+    },
     {
       "title": "Justice Clarence Thomas, Harry Jaffa, and the Declaration of Independence",
       "link": "https://mises.org/mises-wire/justice-clarence-thomas-harry-jaffa-and-declaration-independence",
@@ -337,28 +349,16 @@
       "kind": "Podcast"
     },
     {
-      "title": "The Subjective Nature of Time: From Bergson to Mises",
-      "link": "https://mises.org/mises-wire/subjective-nature-time-bergson-mises",
-      "pubDate": "Sat, 30 May 2026 12:01:44 CDT",
-      "kind": "Mises Wire"
-    },
-    {
       "title": "The Sedation of Appalachia",
       "link": "https://mises.org/mises-wire/sedation-appalachia",
       "pubDate": "Sat, 30 May 2026 12:01:51 CDT",
       "kind": "Mises Wire"
     },
     {
-      "title": "Rothbard Explains the Anatomy of the State",
-      "link": "https://mises.org/podcasts/radio-rothbard/rothbard-explains-anatomy-state",
-      "pubDate": "Fri, 29 May 2026 05:05:00 CDT",
-      "kind": "Podcast"
-    },
-    {
-      "title": "The Defeat of Thomas Massie: Where to Go from Here?",
-      "link": "https://mises.org/podcasts/audio-mises-wire/defeat-thomas-massie-where-go-here",
-      "pubDate": "Fri, 29 May 2026 09:39:15 CDT",
-      "kind": "Podcast"
+      "title": "The Subjective Nature of Time: From Bergson to Mises",
+      "link": "https://mises.org/mises-wire/subjective-nature-time-bergson-mises",
+      "pubDate": "Sat, 30 May 2026 12:01:44 CDT",
+      "kind": "Mises Wire"
     }
   ]
 }
