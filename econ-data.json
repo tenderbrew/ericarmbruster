@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-06-02T20:54:28.431Z",
+  "fetchedAt": "2026-06-03T05:05:15.611Z",
   "indicators": {
     "UNRATE": {
       "latest": {
@@ -31,16 +31,7 @@
         "value": 6887
       }
     },
-    "ICSA": {
-      "latest": {
-        "date": "2026-05-23",
-        "value": 215000
-      },
-      "previous": {
-        "date": "2026-05-16",
-        "value": 210000
-      }
-    },
+    "ICSA": null,
     "CPIAUCSL": {
       "latest": {
         "date": "2026-04-01",
@@ -61,16 +52,7 @@
         "value": 334.165
       }
     },
-    "T10YIE": {
-      "latest": {
-        "date": "2026-06-01",
-        "value": 2.4
-      },
-      "previous": {
-        "date": "2026-05-29",
-        "value": 2.38
-      }
-    },
+    "T10YIE": null,
     "PCE": {
       "latest": {
         "date": "2026-04-01",
@@ -121,46 +103,10 @@
         "value": 3.64
       }
     },
-    "DGS2": {
-      "latest": {
-        "date": "2026-06-01",
-        "value": 4.05
-      },
-      "previous": {
-        "date": "2026-05-29",
-        "value": 3.98
-      }
-    },
-    "DGS10": {
-      "latest": {
-        "date": "2026-06-01",
-        "value": 4.47
-      },
-      "previous": {
-        "date": "2026-05-29",
-        "value": 4.45
-      }
-    },
-    "T10Y2Y": {
-      "latest": {
-        "date": "2026-06-01",
-        "value": 0.42
-      },
-      "previous": {
-        "date": "2026-05-29",
-        "value": 0.47
-      }
-    },
-    "DFII10": {
-      "latest": {
-        "date": "2026-06-01",
-        "value": 2.07
-      },
-      "previous": {
-        "date": "2026-05-29",
-        "value": 2.07
-      }
-    },
+    "DGS2": null,
+    "DGS10": null,
+    "T10Y2Y": null,
+    "DFII10": null,
     "BAMLH0A0HYM2": {
       "latest": {
         "date": "2026-06-01",
@@ -171,16 +117,7 @@
         "value": 2.74
       }
     },
-    "MORTGAGE30US": {
-      "latest": {
-        "date": "2026-05-28",
-        "value": 6.53
-      },
-      "previous": {
-        "date": "2026-05-21",
-        "value": 6.51
-      }
-    },
+    "MORTGAGE30US": null,
     "GDPC1": {
       "latest": {
         "date": "2026-01-01",
@@ -231,16 +168,7 @@
         "value": -0.7408
       }
     },
-    "DTWEXBGS": {
-      "latest": {
-        "date": "2026-05-29",
-        "value": 118.8783
-      },
-      "previous": {
-        "date": "2026-05-28",
-        "value": 119.0318
-      }
-    },
+    "DTWEXBGS": null,
     "PERMIT": {
       "latest": {
         "date": "2026-04-01",
@@ -261,16 +189,7 @@
         "value": 121.02875
       }
     },
-    "VIXCLS": {
-      "latest": {
-        "date": "2026-06-01",
-        "value": 16.05
-      },
-      "previous": {
-        "date": "2026-05-29",
-        "value": 15.32
-      }
-    },
+    "VIXCLS": null,
     "BOPGSTB": {
       "latest": {
         "date": "2026-03-01",
@@ -300,6 +219,12 @@
     }
   },
   "news": [
+    {
+      "title": "Crazy Wealth Tax Proposals in California and New York City",
+      "link": "https://mises.org/podcasts/audio-mises-wire/crazy-wealth-tax-proposals-california-and-new-york-city",
+      "pubDate": "Tue, 02 Jun 2026 04:21:35 CDT",
+      "kind": "Podcast"
+    },
     {
       "title": "Beware the Neo-Primes",
       "link": "https://mises.org/podcasts/audio-mises-wire/beware-neo-primes",
@@ -353,12 +278,6 @@
       "link": "https://mises.org/mises-wire/remembering-mogambo-guru",
       "pubDate": "Mon, 01 Jun 2026 12:02:36 CDT",
       "kind": "Mises Wire"
-    },
-    {
-      "title": "What Adam Smith Left Out of the Pin Factory",
-      "link": "https://mises.org/podcasts/minor-issues/what-adam-smith-left-out-pin-factory",
-      "pubDate": "Sat, 30 May 2026 06:02:30 CDT",
-      "kind": "Podcast"
     }
   ]
 }
