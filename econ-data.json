@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-06-05T04:29:56.947Z",
+  "fetchedAt": "2026-06-05T10:19:56.953Z",
   "indicators": {
     "UNRATE": {
       "latest": {
@@ -117,7 +117,16 @@
         "value": 2.71
       }
     },
-    "MORTGAGE30US": null,
+    "MORTGAGE30US": {
+      "latest": {
+        "date": "2026-06-04",
+        "value": 6.48
+      },
+      "previous": {
+        "date": "2026-05-28",
+        "value": 6.53
+      }
+    },
     "GDPC1": {
       "latest": {
         "date": "2026-01-01",
@@ -220,6 +229,12 @@
   },
   "news": [
     {
+      "title": "Charles Lee: The Alternative “George Washington” You’ve Probably Never Heard Of",
+      "link": "https://mises.org/mises-wire/charles-lee-alternative-george-washington-youve-probably-never-heard",
+      "pubDate": "Fri, 05 Jun 2026 05:00:00 CDT",
+      "kind": "Mises Wire"
+    },
+    {
       "title": "The Federal Reserve is Why the People are Unhappy",
       "link": "https://mises.org/podcasts/audio-mises-wire/federal-reserve-why-people-are-unhappy",
       "pubDate": "Thu, 04 Jun 2026 03:28:02 CDT",
@@ -238,16 +253,16 @@
       "kind": "Podcast"
     },
     {
-      "title": "The Great Disconnect: When Wealth and Productive Ability Diverge",
-      "link": "https://mises.org/mises-wire/great-disconnect-when-wealth-and-productive-ability-diverge",
-      "pubDate": "Thu, 04 Jun 2026 11:00:00 CDT",
-      "kind": "Mises Wire"
-    },
-    {
       "title": "Five Objections Libertarians Have Answered",
       "link": "https://mises.org/power-market/five-objections-libertarians-have-answered",
       "pubDate": "Thu, 04 Jun 2026 11:00:00 CDT",
       "kind": "Article"
+    },
+    {
+      "title": "The Great Disconnect: When Wealth and Productive Ability Diverge",
+      "link": "https://mises.org/mises-wire/great-disconnect-when-wealth-and-productive-ability-diverge",
+      "pubDate": "Thu, 04 Jun 2026 11:00:00 CDT",
+      "kind": "Mises Wire"
     },
     {
       "title": "Economic Calculation and a Southern California Beach Girl",
@@ -265,12 +280,6 @@
       "title": "Edmund Phelps and Dynamic Capitalism",
       "link": "https://mises.org/power-market/edmund-phelps-and-dynamic-capitalism",
       "pubDate": "Thu, 04 Jun 2026 09:00:00 CDT",
-      "kind": "Article"
-    },
-    {
-      "title": "The Federal Reserve is Why the People are Unhappy",
-      "link": "https://mises.org/power-market/federal-reserve-why-people-are-unhappy",
-      "pubDate": "Thu, 04 Jun 2026 08:00:00 CDT",
       "kind": "Article"
     },
     {
