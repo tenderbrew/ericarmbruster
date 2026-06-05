@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-06-05T15:36:46.295Z",
+  "fetchedAt": "2026-06-05T20:23:03.149Z",
   "indicators": {
     "UNRATE": {
       "latest": {
@@ -158,7 +158,16 @@
         "value": 53.3
       }
     },
-    "STLFSI4": null,
+    "STLFSI4": {
+      "latest": {
+        "date": "2026-05-29",
+        "value": -0.6885
+      },
+      "previous": {
+        "date": "2026-05-22",
+        "value": -0.7592
+      }
+    },
     "DTWEXBGS": null,
     "PERMIT": {
       "latest": {
@@ -211,6 +220,18 @@
   },
   "news": [
     {
+      "title": "Brazil’s Public-Sector Supersalaries: The State as Inequality’s Overlooked Engine",
+      "link": "https://mises.org/mises-wire/brazils-public-sector-supersalaries-state-inequalitys-overlooked-engine",
+      "pubDate": "Fri, 05 Jun 2026 02:00:00 CDT",
+      "kind": "Mises Wire"
+    },
+    {
+      "title": "Rothbard on Scientism",
+      "link": "https://mises.org/friday-philosophy/rothbard-scientism",
+      "pubDate": "Fri, 05 Jun 2026 11:00:00 CDT",
+      "kind": "Article"
+    },
+    {
       "title": "Charles Lee: The Alternative “George Washington” You’ve Probably Never Heard Of",
       "link": "https://mises.org/mises-wire/charles-lee-alternative-george-washington-youve-probably-never-heard",
       "pubDate": "Fri, 05 Jun 2026 05:00:00 CDT",
@@ -235,16 +256,16 @@
       "kind": "Podcast"
     },
     {
-      "title": "The Great Disconnect: When Wealth and Productive Ability Diverge",
-      "link": "https://mises.org/mises-wire/great-disconnect-when-wealth-and-productive-ability-diverge",
-      "pubDate": "Thu, 04 Jun 2026 11:00:00 CDT",
-      "kind": "Mises Wire"
-    },
-    {
       "title": "Five Objections Libertarians Have Answered",
       "link": "https://mises.org/power-market/five-objections-libertarians-have-answered",
       "pubDate": "Thu, 04 Jun 2026 11:00:00 CDT",
       "kind": "Article"
+    },
+    {
+      "title": "The Great Disconnect: When Wealth and Productive Ability Diverge",
+      "link": "https://mises.org/mises-wire/great-disconnect-when-wealth-and-productive-ability-diverge",
+      "pubDate": "Thu, 04 Jun 2026 11:00:00 CDT",
+      "kind": "Mises Wire"
     },
     {
       "title": "Economic Calculation and a Southern California Beach Girl",
@@ -256,18 +277,6 @@
       "title": "The U.S. Bares Its Fangs against U.S. Citizens",
       "link": "https://mises.org/power-market/us-bares-its-fangs-against-us-citizens",
       "pubDate": "Thu, 04 Jun 2026 10:00:00 CDT",
-      "kind": "Article"
-    },
-    {
-      "title": "Edmund Phelps and Dynamic Capitalism",
-      "link": "https://mises.org/power-market/edmund-phelps-and-dynamic-capitalism",
-      "pubDate": "Thu, 04 Jun 2026 09:00:00 CDT",
-      "kind": "Article"
-    },
-    {
-      "title": "The Federal Reserve is Why the People are Unhappy",
-      "link": "https://mises.org/power-market/federal-reserve-why-people-are-unhappy",
-      "pubDate": "Thu, 04 Jun 2026 08:00:00 CDT",
       "kind": "Article"
     }
   ]
