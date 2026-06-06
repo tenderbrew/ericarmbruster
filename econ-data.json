@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-06-06T08:57:56.548Z",
+  "fetchedAt": "2026-06-06T14:12:10.565Z",
   "indicators": {
     "UNRATE": {
       "latest": {
@@ -31,16 +31,7 @@
         "value": 6887
       }
     },
-    "ICSA": {
-      "latest": {
-        "date": "2026-05-30",
-        "value": 225000
-      },
-      "previous": {
-        "date": "2026-05-23",
-        "value": 212000
-      }
-    },
+    "ICSA": null,
     "CPIAUCSL": {
       "latest": {
         "date": "2026-04-01",
@@ -238,6 +229,24 @@
   },
   "news": [
     {
+      "title": "Civilizations Are Transaction Costs",
+      "link": "https://mises.org/mises-wire/civilizations-are-transaction-costs",
+      "pubDate": "Sat, 06 Jun 2026 06:00:00 CDT",
+      "kind": "Mises Wire"
+    },
+    {
+      "title": "Taxpayers vs. Tax-Consumers: Rothbard’s Real Theory of Taxes and Spending",
+      "link": "https://mises.org/podcasts/minor-issues/taxpayers-vs-tax-consumers-rothbards-real-theory-taxes-and-spending",
+      "pubDate": "Sat, 06 Jun 2026 06:00:00 CDT",
+      "kind": "Podcast"
+    },
+    {
+      "title": "The Affordability Crisis Is a Sovereign Debt Problem",
+      "link": "https://mises.org/mises-wire/affordability-crisis-sovereign-debt-problem",
+      "pubDate": "Sat, 06 Jun 2026 05:00:00 CDT",
+      "kind": "Mises Wire"
+    },
+    {
       "title": "Charles Lee: The Alternative “George Washington” You’ve Probably Never Heard Of",
       "link": "https://mises.org/podcasts/audio-mises-wire/charles-lee-alternative-george-washington-youve-probably-never-heard",
       "pubDate": "Fri, 05 Jun 2026 04:12:13 CDT",
@@ -277,24 +286,6 @@
       "title": "The Great Disconnect: When Wealth and Productive Ability Diverge",
       "link": "https://mises.org/podcasts/audio-mises-wire/great-disconnect-when-wealth-and-productive-ability-diverge",
       "pubDate": "Thu, 04 Jun 2026 11:18:49 CDT",
-      "kind": "Podcast"
-    },
-    {
-      "title": "The Great Disconnect: When Wealth and Productive Ability Diverge",
-      "link": "https://mises.org/mises-wire/great-disconnect-when-wealth-and-productive-ability-diverge",
-      "pubDate": "Thu, 04 Jun 2026 11:00:00 CDT",
-      "kind": "Mises Wire"
-    },
-    {
-      "title": "Five Objections Libertarians Have Answered",
-      "link": "https://mises.org/power-market/five-objections-libertarians-have-answered",
-      "pubDate": "Thu, 04 Jun 2026 11:00:00 CDT",
-      "kind": "Article"
-    },
-    {
-      "title": "Economic Calculation and a Southern California Beach Girl",
-      "link": "https://mises.org/podcasts/audio-mises-wire/economic-calculation-and-southern-california-beach-girl",
-      "pubDate": "Thu, 04 Jun 2026 10:54:52 CDT",
       "kind": "Podcast"
     }
   ]
