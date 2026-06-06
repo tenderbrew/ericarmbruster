@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-06-06T04:12:59.958Z",
+  "fetchedAt": "2026-06-06T08:57:56.548Z",
   "indicators": {
     "UNRATE": {
       "latest": {
@@ -31,7 +31,16 @@
         "value": 6887
       }
     },
-    "ICSA": null,
+    "ICSA": {
+      "latest": {
+        "date": "2026-05-30",
+        "value": 225000
+      },
+      "previous": {
+        "date": "2026-05-23",
+        "value": 212000
+      }
+    },
     "CPIAUCSL": {
       "latest": {
         "date": "2026-04-01",
@@ -117,7 +126,16 @@
         "value": 2.75
       }
     },
-    "MORTGAGE30US": null,
+    "MORTGAGE30US": {
+      "latest": {
+        "date": "2026-06-04",
+        "value": 6.48
+      },
+      "previous": {
+        "date": "2026-05-28",
+        "value": 6.53
+      }
+    },
     "GDPC1": {
       "latest": {
         "date": "2026-01-01",
