@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-06-06T14:12:10.565Z",
+  "fetchedAt": "2026-06-06T19:54:06.331Z",
   "indicators": {
     "UNRATE": {
       "latest": {
@@ -31,7 +31,16 @@
         "value": 6887
       }
     },
-    "ICSA": null,
+    "ICSA": {
+      "latest": {
+        "date": "2026-05-30",
+        "value": 225000
+      },
+      "previous": {
+        "date": "2026-05-23",
+        "value": 212000
+      }
+    },
     "CPIAUCSL": {
       "latest": {
         "date": "2026-04-01",
@@ -229,16 +238,16 @@
   },
   "news": [
     {
-      "title": "Civilizations Are Transaction Costs",
-      "link": "https://mises.org/mises-wire/civilizations-are-transaction-costs",
-      "pubDate": "Sat, 06 Jun 2026 06:00:00 CDT",
-      "kind": "Mises Wire"
-    },
-    {
       "title": "Taxpayers vs. Tax-Consumers: Rothbard’s Real Theory of Taxes and Spending",
       "link": "https://mises.org/podcasts/minor-issues/taxpayers-vs-tax-consumers-rothbards-real-theory-taxes-and-spending",
       "pubDate": "Sat, 06 Jun 2026 06:00:00 CDT",
       "kind": "Podcast"
+    },
+    {
+      "title": "Civilizations Are Transaction Costs",
+      "link": "https://mises.org/mises-wire/civilizations-are-transaction-costs",
+      "pubDate": "Sat, 06 Jun 2026 06:00:00 CDT",
+      "kind": "Mises Wire"
     },
     {
       "title": "The Affordability Crisis Is a Sovereign Debt Problem",
