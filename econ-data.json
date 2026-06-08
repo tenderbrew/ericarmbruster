@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-06-08T04:38:58.415Z",
+  "fetchedAt": "2026-06-08T11:26:52.791Z",
   "indicators": {
     "UNRATE": {
       "latest": {
@@ -31,16 +31,7 @@
         "value": 6887
       }
     },
-    "ICSA": {
-      "latest": {
-        "date": "2026-05-30",
-        "value": 225000
-      },
-      "previous": {
-        "date": "2026-05-23",
-        "value": 212000
-      }
-    },
+    "ICSA": null,
     "CPIAUCSL": {
       "latest": {
         "date": "2026-04-01",
@@ -126,16 +117,7 @@
         "value": 2.75
       }
     },
-    "MORTGAGE30US": {
-      "latest": {
-        "date": "2026-06-04",
-        "value": 6.48
-      },
-      "previous": {
-        "date": "2026-05-28",
-        "value": 6.53
-      }
-    },
+    "MORTGAGE30US": null,
     "GDPC1": {
       "latest": {
         "date": "2026-01-01",
@@ -238,9 +220,15 @@
   },
   "news": [
     {
-      "title": "Civilizations Are Transaction Costs",
-      "link": "https://mises.org/mises-wire/civilizations-are-transaction-costs",
-      "pubDate": "Sat, 06 Jun 2026 06:00:00 CDT",
+      "title": "We’re Freaking Doomed without Freedom from State Rule",
+      "link": "https://mises.org/podcasts/audio-mises-wire/were-freaking-doomed-without-freedom-state-rule",
+      "pubDate": "Mon, 08 Jun 2026 06:01:00 CDT",
+      "kind": "Podcast"
+    },
+    {
+      "title": "We’re Freaking Doomed without Freedom from State Rule",
+      "link": "https://mises.org/mises-wire/were-freaking-doomed-without-freedom-state-rule",
+      "pubDate": "Mon, 08 Jun 2026 05:00:00 CDT",
       "kind": "Mises Wire"
     },
     {
@@ -248,6 +236,12 @@
       "link": "https://mises.org/podcasts/minor-issues/taxpayers-vs-tax-consumers-rothbards-real-theory-taxes-and-spending",
       "pubDate": "Sat, 06 Jun 2026 06:00:00 CDT",
       "kind": "Podcast"
+    },
+    {
+      "title": "Civilizations Are Transaction Costs",
+      "link": "https://mises.org/mises-wire/civilizations-are-transaction-costs",
+      "pubDate": "Sat, 06 Jun 2026 06:00:00 CDT",
+      "kind": "Mises Wire"
     },
     {
       "title": "The Affordability Crisis Is a Sovereign Debt Problem",
@@ -283,18 +277,6 @@
       "title": "The Federal Reserve is Why the People are Unhappy",
       "link": "https://mises.org/podcasts/audio-mises-wire/federal-reserve-why-people-are-unhappy",
       "pubDate": "Thu, 04 Jun 2026 03:28:02 CDT",
-      "kind": "Podcast"
-    },
-    {
-      "title": "The Subjective Nature of Time: From Bergson to Mises",
-      "link": "https://mises.org/podcasts/audio-mises-wire/subjective-nature-time-bergson-mises",
-      "pubDate": "Thu, 04 Jun 2026 01:23:11 CDT",
-      "kind": "Podcast"
-    },
-    {
-      "title": "The Great Disconnect: When Wealth and Productive Ability Diverge",
-      "link": "https://mises.org/podcasts/audio-mises-wire/great-disconnect-when-wealth-and-productive-ability-diverge",
-      "pubDate": "Thu, 04 Jun 2026 11:18:49 CDT",
       "kind": "Podcast"
     }
   ]
