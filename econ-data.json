@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-06-08T16:23:12.816Z",
+  "fetchedAt": "2026-06-08T20:43:28.433Z",
   "indicators": {
     "UNRATE": {
       "latest": {
@@ -117,7 +117,16 @@
         "value": 2.74
       }
     },
-    "MORTGAGE30US": null,
+    "MORTGAGE30US": {
+      "latest": {
+        "date": "2026-06-04",
+        "value": 6.48
+      },
+      "previous": {
+        "date": "2026-05-28",
+        "value": 6.53
+      }
+    },
     "GDPC1": {
       "latest": {
         "date": "2026-01-01",
@@ -220,6 +229,12 @@
   },
   "news": [
     {
+      "title": "VIDEO: A Message to Radicals and Moderates",
+      "link": "https://mises.org/notes-margin/video-message-radicals-and-moderates",
+      "pubDate": "Mon, 08 Jun 2026 12:20:00 CDT",
+      "kind": "Article"
+    },
+    {
       "title": "Is the US Economy Headed for a Bust?",
       "link": "https://mises.org/mises-wire/us-economy-headed-bust",
       "pubDate": "Mon, 08 Jun 2026 11:00:00 CDT",
@@ -244,10 +259,16 @@
       "kind": "Mises Wire"
     },
     {
-      "title": "Civilizations Are Transaction Costs",
-      "link": "https://mises.org/mises-wire/civilizations-are-transaction-costs",
-      "pubDate": "Sat, 06 Jun 2026 06:00:00 CDT",
-      "kind": "Mises Wire"
+      "title": "Jobs created (or lost) in the past month (or decade)",
+      "link": "https://mises.org/power-market/jobs-created-or-lost-past-month-or-decade",
+      "pubDate": "Mon, 08 Jun 2026 03:00:00 CDT",
+      "kind": "Article"
+    },
+    {
+      "title": "Trump administration launches largest-ever effort to denaturalize U.S. citizens",
+      "link": "https://mises.org/notes-margin/trump-administration-launches-largest-ever-effort-denaturalize-us-citizens",
+      "pubDate": "Mon, 08 Jun 2026 03:00:00 CDT",
+      "kind": "Article"
     },
     {
       "title": "Taxpayers vs. Tax-Consumers: Rothbard’s Real Theory of Taxes and Spending",
@@ -256,28 +277,16 @@
       "kind": "Podcast"
     },
     {
+      "title": "Civilizations Are Transaction Costs",
+      "link": "https://mises.org/mises-wire/civilizations-are-transaction-costs",
+      "pubDate": "Sat, 06 Jun 2026 06:00:00 CDT",
+      "kind": "Mises Wire"
+    },
+    {
       "title": "The Affordability Crisis Is a Sovereign Debt Problem",
       "link": "https://mises.org/mises-wire/affordability-crisis-sovereign-debt-problem",
       "pubDate": "Sat, 06 Jun 2026 05:00:00 CDT",
       "kind": "Mises Wire"
-    },
-    {
-      "title": "Charles Lee: The Alternative “George Washington” You’ve Probably Never Heard Of",
-      "link": "https://mises.org/podcasts/audio-mises-wire/charles-lee-alternative-george-washington-youve-probably-never-heard",
-      "pubDate": "Fri, 05 Jun 2026 04:12:13 CDT",
-      "kind": "Podcast"
-    },
-    {
-      "title": "Brazil’s Public-Sector Supersalaries: The State as Inequality’s Overlooked Engine",
-      "link": "https://mises.org/mises-wire/brazils-public-sector-supersalaries-state-inequalitys-overlooked-engine",
-      "pubDate": "Fri, 05 Jun 2026 02:00:00 CDT",
-      "kind": "Mises Wire"
-    },
-    {
-      "title": "Rothbard on Scientism",
-      "link": "https://mises.org/friday-philosophy/rothbard-scientism",
-      "pubDate": "Fri, 05 Jun 2026 11:00:00 CDT",
-      "kind": "Article"
     }
   ]
 }
