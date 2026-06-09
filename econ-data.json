@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-06-08T20:43:28.433Z",
+  "fetchedAt": "2026-06-09T04:15:54.941Z",
   "indicators": {
     "UNRATE": {
       "latest": {
@@ -117,16 +117,7 @@
         "value": 2.74
       }
     },
-    "MORTGAGE30US": {
-      "latest": {
-        "date": "2026-06-04",
-        "value": 6.48
-      },
-      "previous": {
-        "date": "2026-05-28",
-        "value": 6.53
-      }
-    },
+    "MORTGAGE30US": null,
     "GDPC1": {
       "latest": {
         "date": "2026-01-01",
