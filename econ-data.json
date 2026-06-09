@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-06-09T10:12:30.689Z",
+  "fetchedAt": "2026-06-09T15:33:38.087Z",
   "indicators": {
     "UNRATE": {
       "latest": {
@@ -109,12 +109,12 @@
     "DFII10": null,
     "BAMLH0A0HYM2": {
       "latest": {
-        "date": "2026-06-05",
-        "value": 2.76
+        "date": "2026-06-08",
+        "value": 2.75
       },
       "previous": {
-        "date": "2026-06-04",
-        "value": 2.74
+        "date": "2026-06-05",
+        "value": 2.76
       }
     },
     "MORTGAGE30US": null,
@@ -192,12 +192,12 @@
     "VIXCLS": null,
     "BOPGSTB": {
       "latest": {
-        "date": "2026-03-01",
-        "value": -60307
+        "date": "2026-04-01",
+        "value": -55881
       },
       "previous": {
-        "date": "2026-02-01",
-        "value": -57777
+        "date": "2026-03-01",
+        "value": -56585
       }
     },
     "M2V": {
@@ -219,6 +219,12 @@
     }
   },
   "news": [
+    {
+      "title": "The Prussian Assembly Line: Praxeological Sovereignty and the Separation of School and State",
+      "link": "https://mises.org/power-market/prussian-assembly-line-praxeological-sovereignty-and-separation-school-and-state",
+      "pubDate": "Tue, 09 Jun 2026 07:00:00 CDT",
+      "kind": "Article"
+    },
     {
       "title": "The Hazards of Criticizing Lincoln’s War",
       "link": "https://mises.org/mises-wire/hazards-criticizing-lincolns-war",
@@ -272,12 +278,6 @@
       "link": "https://mises.org/podcasts/minor-issues/taxpayers-vs-tax-consumers-rothbards-real-theory-taxes-and-spending",
       "pubDate": "Sat, 06 Jun 2026 06:00:00 CDT",
       "kind": "Podcast"
-    },
-    {
-      "title": "Civilizations Are Transaction Costs",
-      "link": "https://mises.org/mises-wire/civilizations-are-transaction-costs",
-      "pubDate": "Sat, 06 Jun 2026 06:00:00 CDT",
-      "kind": "Mises Wire"
     }
   ]
 }
