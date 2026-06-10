@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-06-10T10:28:13.629Z",
+  "fetchedAt": "2026-06-10T16:04:27.648Z",
   "indicators": {
     "UNRATE": {
       "latest": {
@@ -34,22 +34,22 @@
     "ICSA": null,
     "CPIAUCSL": {
       "latest": {
-        "date": "2026-04-01",
-        "value": 332.407
+        "date": "2026-05-01",
+        "value": 333.979
       },
       "previous": {
-        "date": "2026-03-01",
-        "value": 330.293
+        "date": "2026-04-01",
+        "value": 332.407
       }
     },
     "CPILFESL": {
       "latest": {
-        "date": "2026-04-01",
-        "value": 335.423
+        "date": "2026-05-01",
+        "value": 336.121
       },
       "previous": {
-        "date": "2026-03-01",
-        "value": 334.165
+        "date": "2026-04-01",
+        "value": 335.423
       }
     },
     "T10YIE": null,
@@ -109,12 +109,12 @@
     "DFII10": null,
     "BAMLH0A0HYM2": {
       "latest": {
-        "date": "2026-06-08",
-        "value": 2.75
+        "date": "2026-06-09",
+        "value": 2.78
       },
       "previous": {
-        "date": "2026-06-05",
-        "value": 2.76
+        "date": "2026-06-08",
+        "value": 2.75
       }
     },
     "MORTGAGE30US": {
@@ -169,12 +169,12 @@
     },
     "STLFSI4": {
       "latest": {
-        "date": "2026-05-29",
-        "value": -0.6885
+        "date": "2026-06-05",
+        "value": -0.8681
       },
       "previous": {
-        "date": "2026-05-22",
-        "value": -0.7592
+        "date": "2026-05-29",
+        "value": -0.6878
       }
     },
     "DTWEXBGS": null,
@@ -221,13 +221,31 @@
     },
     "CPI_YOY": {
       "latest": {
-        "date": "2026-04-01",
-        "value": 3.7792458367415627
+        "date": "2026-05-01",
+        "value": 4.166614684049641
       },
       "previous": null
     }
   },
   "news": [
+    {
+      "title": "Potential Lockdowns, Polarization, And What Should be Done",
+      "link": "https://mises.org/mises-wire/potential-lockdowns-polarization-and-what-should-be-done",
+      "pubDate": "Wed, 10 Jun 2026 11:00:00 CDT",
+      "kind": "Mises Wire"
+    },
+    {
+      "title": "Medieval Europeans Paved the Way for Freedom in the West",
+      "link": "https://mises.org/podcasts/audio-mises-wire/medieval-europeans-paved-way-freedom-west",
+      "pubDate": "Wed, 10 Jun 2026 07:48:57 CDT",
+      "kind": "Podcast"
+    },
+    {
+      "title": "We Should Not ‘Integrate’ Our Military with Any Foreign Nation!",
+      "link": "https://mises.org/power-market/we-should-not-integrate-our-military-any-foreign-nation",
+      "pubDate": "Wed, 10 Jun 2026 06:00:00 CDT",
+      "kind": "Article"
+    },
     {
       "title": "Trump’s Iran Predicament Is His Own Fault",
       "link": "https://mises.org/mises-wire/trumps-iran-predicament-his-own-fault",
@@ -269,24 +287,6 @@
       "link": "https://mises.org/mises-wire/anarcho-tyranny-killing-college-sports",
       "pubDate": "Tue, 09 Jun 2026 11:00:00 CDT",
       "kind": "Mises Wire"
-    },
-    {
-      "title": "The Prussian Assembly Line: Praxeological Sovereignty and the Separation of School and State",
-      "link": "https://mises.org/power-market/prussian-assembly-line-praxeological-sovereignty-and-separation-school-and-state",
-      "pubDate": "Tue, 09 Jun 2026 07:00:00 CDT",
-      "kind": "Article"
-    },
-    {
-      "title": "The Hazards of Criticizing Lincoln’s War",
-      "link": "https://mises.org/mises-wire/hazards-criticizing-lincolns-war",
-      "pubDate": "Tue, 09 Jun 2026 05:00:00 CDT",
-      "kind": "Mises Wire"
-    },
-    {
-      "title": "VIDEO: A Message to Radicals and Moderates",
-      "link": "https://mises.org/notes-margin/video-message-radicals-and-moderates",
-      "pubDate": "Mon, 08 Jun 2026 12:20:00 CDT",
-      "kind": "Article"
     }
   ]
 }
