@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-06-09T20:33:22.840Z",
+  "fetchedAt": "2026-06-10T04:23:04.091Z",
   "indicators": {
     "UNRATE": {
       "latest": {
@@ -31,7 +31,16 @@
         "value": 6887
       }
     },
-    "ICSA": null,
+    "ICSA": {
+      "latest": {
+        "date": "2026-05-30",
+        "value": 225000
+      },
+      "previous": {
+        "date": "2026-05-23",
+        "value": 212000
+      }
+    },
     "CPIAUCSL": {
       "latest": {
         "date": "2026-04-01",
@@ -117,7 +126,16 @@
         "value": 2.76
       }
     },
-    "MORTGAGE30US": null,
+    "MORTGAGE30US": {
+      "latest": {
+        "date": "2026-06-04",
+        "value": 6.48
+      },
+      "previous": {
+        "date": "2026-05-28",
+        "value": 6.53
+      }
+    },
     "GDPC1": {
       "latest": {
         "date": "2026-01-01",
@@ -220,6 +238,12 @@
   },
   "news": [
     {
+      "title": "Medieval Europeans Paved the Way for Freedom in the West",
+      "link": "https://mises.org/mises-wire/medieval-europeans-paved-way-freedom-west",
+      "pubDate": "Tue, 09 Jun 2026 04:00:00 CDT",
+      "kind": "Mises Wire"
+    },
+    {
       "title": "A Scholarly Takedown of MMT: Emmanuel Maggiori on the Theory's Fatal Flaws",
       "link": "https://mises.org/podcasts/human-action-podcast/scholarly-takedown-mmt-emmanuel-maggiori-theorys-fatal-flaws",
       "pubDate": "Tue, 09 Jun 2026 03:15:28 CDT",
@@ -272,12 +296,6 @@
       "link": "https://mises.org/mises-wire/us-economy-headed-bust",
       "pubDate": "Mon, 08 Jun 2026 11:00:00 CDT",
       "kind": "Mises Wire"
-    },
-    {
-      "title": "False Signals",
-      "link": "https://mises.org/power-market/false-signals",
-      "pubDate": "Mon, 08 Jun 2026 07:00:00 CDT",
-      "kind": "Article"
     }
   ]
 }
