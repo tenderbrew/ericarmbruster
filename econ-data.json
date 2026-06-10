@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-06-10T16:04:27.648Z",
+  "fetchedAt": "2026-06-10T20:52:11.552Z",
   "indicators": {
     "UNRATE": {
       "latest": {
@@ -31,7 +31,16 @@
         "value": 6887
       }
     },
-    "ICSA": null,
+    "ICSA": {
+      "latest": {
+        "date": "2026-05-30",
+        "value": 225000
+      },
+      "previous": {
+        "date": "2026-05-23",
+        "value": 212000
+      }
+    },
     "CPIAUCSL": {
       "latest": {
         "date": "2026-05-01",
@@ -229,6 +238,18 @@
   },
   "news": [
     {
+      "title": "AI, Creative Destruction, and the Politicization of Economic Change",
+      "link": "https://mises.org/mises-wire/ai-creative-destruction-and-politicization-economic-change",
+      "pubDate": "Wed, 10 Jun 2026 02:00:00 CDT",
+      "kind": "Mises Wire"
+    },
+    {
+      "title": "The NBA Finals and The New York Knicks: Unfair Ticket Prices?",
+      "link": "https://mises.org/power-market/nba-finals-and-new-york-knicks-unfair-ticket-prices",
+      "pubDate": "Wed, 10 Jun 2026 01:00:00 CDT",
+      "kind": "Article"
+    },
+    {
       "title": "Potential Lockdowns, Polarization, And What Should be Done",
       "link": "https://mises.org/mises-wire/potential-lockdowns-polarization-and-what-should-be-done",
       "pubDate": "Wed, 10 Jun 2026 11:00:00 CDT",
@@ -253,39 +274,27 @@
       "kind": "Mises Wire"
     },
     {
-      "title": "Medieval Europeans Paved the Way for Freedom in the West",
-      "link": "https://mises.org/mises-wire/medieval-europeans-paved-way-freedom-west",
-      "pubDate": "Tue, 09 Jun 2026 04:00:00 CDT",
-      "kind": "Mises Wire"
-    },
-    {
-      "title": "A Scholarly Takedown of MMT: Emmanuel Maggiori on the Theory's Fatal Flaws",
-      "link": "https://mises.org/podcasts/human-action-podcast/scholarly-takedown-mmt-emmanuel-maggiori-theorys-fatal-flaws",
-      "pubDate": "Tue, 09 Jun 2026 03:15:28 CDT",
-      "kind": "Podcast"
-    },
-    {
-      "title": "Why the CIA Covid Cover-Up?",
-      "link": "https://mises.org/mises-wire/why-cia-covid-cover",
-      "pubDate": "Tue, 09 Jun 2026 02:00:00 CDT",
-      "kind": "Mises Wire"
-    },
-    {
-      "title": "Self-Defense and the Right to Exclude",
-      "link": "https://mises.org/power-market/self-defense-and-right-exclude",
-      "pubDate": "Tue, 09 Jun 2026 01:00:00 CDT",
+      "title": "Remembering the U.S.S. Liberty",
+      "link": "https://mises.org/notes-margin/remembering-uss-liberty",
+      "pubDate": "Wed, 10 Jun 2026 05:00:00 CDT",
       "kind": "Article"
     },
     {
-      "title": "Anarcho-Tyranny is Killing College Sports",
-      "link": "https://mises.org/podcasts/audio-mises-wire/anarcho-tyranny-killing-college-sports",
-      "pubDate": "Tue, 09 Jun 2026 11:50:11 CDT",
-      "kind": "Podcast"
+      "title": "Trump claims Iran peace deal imminent — for 38th time",
+      "link": "https://mises.org/notes-margin/trump-claims-iran-peace-deal-imminent-38th-time",
+      "pubDate": "Wed, 10 Jun 2026 04:00:00 CDT",
+      "kind": "Article"
     },
     {
-      "title": "Anarcho-Tyranny is Killing College Sports",
-      "link": "https://mises.org/mises-wire/anarcho-tyranny-killing-college-sports",
-      "pubDate": "Tue, 09 Jun 2026 11:00:00 CDT",
+      "title": "Killing the mood: smartphones reduce birth rate, studies say",
+      "link": "https://mises.org/notes-margin/killing-mood-smartphones-reduce-birth-rate-studies-say",
+      "pubDate": "Wed, 10 Jun 2026 03:00:00 CDT",
+      "kind": "Article"
+    },
+    {
+      "title": "Medieval Europeans Paved the Way for Freedom in the West",
+      "link": "https://mises.org/mises-wire/medieval-europeans-paved-way-freedom-west",
+      "pubDate": "Tue, 09 Jun 2026 04:00:00 CDT",
       "kind": "Mises Wire"
     }
   ]
