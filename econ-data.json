@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-06-11T16:29:49.461Z",
+  "fetchedAt": "2026-06-11T20:43:38.047Z",
   "indicators": {
     "UNRATE": {
       "latest": {
@@ -31,7 +31,16 @@
         "value": 6887
       }
     },
-    "ICSA": null,
+    "ICSA": {
+      "latest": {
+        "date": "2026-06-06",
+        "value": 229000
+      },
+      "previous": {
+        "date": "2026-05-30",
+        "value": 225000
+      }
+    },
     "CPIAUCSL": {
       "latest": {
         "date": "2026-05-01",
@@ -229,6 +238,24 @@
   },
   "news": [
     {
+      "title": "AI, Creative Destruction, and the Politicization of Economic Change",
+      "link": "https://mises.org/podcasts/audio-mises-wire/ai-creative-destruction-and-politicization-economic-change",
+      "pubDate": "Thu, 11 Jun 2026 02:08:47 CDT",
+      "kind": "Podcast"
+    },
+    {
+      "title": "Potential Lockdowns, Polarization, And What Should be Done",
+      "link": "https://mises.org/podcasts/audio-mises-wire/potential-lockdowns-polarization-and-what-should-be-done",
+      "pubDate": "Thu, 11 Jun 2026 02:02:12 CDT",
+      "kind": "Podcast"
+    },
+    {
+      "title": "Stolen Once, Stolen Twice: The Libertarian Case Against Zimbabwe’s Land Grabs",
+      "link": "https://mises.org/mises-wire/stolen-once-stolen-twice-libertarian-case-against-zimbabwes-land-grabs",
+      "pubDate": "Thu, 11 Jun 2026 02:00:00 CDT",
+      "kind": "Mises Wire"
+    },
+    {
       "title": "Magnifica Humanitas, AI, and the State",
       "link": "https://mises.org/mises-wire/magnifica-humanitas-ai-and-state",
       "pubDate": "Thu, 11 Jun 2026 11:00:00 CDT",
@@ -268,24 +295,6 @@
       "title": "Potential Lockdowns, Polarization, And What Should be Done",
       "link": "https://mises.org/mises-wire/potential-lockdowns-polarization-and-what-should-be-done",
       "pubDate": "Wed, 10 Jun 2026 11:00:00 CDT",
-      "kind": "Mises Wire"
-    },
-    {
-      "title": "Medieval Europeans Paved the Way for Freedom in the West",
-      "link": "https://mises.org/podcasts/audio-mises-wire/medieval-europeans-paved-way-freedom-west",
-      "pubDate": "Wed, 10 Jun 2026 07:48:57 CDT",
-      "kind": "Podcast"
-    },
-    {
-      "title": "We Should Not ‘Integrate’ Our Military with Any Foreign Nation!",
-      "link": "https://mises.org/power-market/we-should-not-integrate-our-military-any-foreign-nation",
-      "pubDate": "Wed, 10 Jun 2026 06:00:00 CDT",
-      "kind": "Article"
-    },
-    {
-      "title": "Trump’s Iran Predicament Is His Own Fault",
-      "link": "https://mises.org/mises-wire/trumps-iran-predicament-his-own-fault",
-      "pubDate": "Wed, 10 Jun 2026 05:00:00 CDT",
       "kind": "Mises Wire"
     }
   ]
