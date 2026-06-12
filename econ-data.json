@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-06-12T04:38:01.453Z",
+  "fetchedAt": "2026-06-12T10:38:37.381Z",
   "indicators": {
     "UNRATE": {
       "latest": {
@@ -31,16 +31,7 @@
         "value": 6887
       }
     },
-    "ICSA": {
-      "latest": {
-        "date": "2026-06-06",
-        "value": 229000
-      },
-      "previous": {
-        "date": "2026-05-30",
-        "value": 225000
-      }
-    },
+    "ICSA": null,
     "CPIAUCSL": {
       "latest": {
         "date": "2026-05-01",
@@ -238,6 +229,12 @@
   },
   "news": [
     {
+      "title": "The Declaration of Independence versus Egalitarianism",
+      "link": "https://mises.org/mises-wire/declaration-independence-versus-egalitarianism",
+      "pubDate": "Fri, 12 Jun 2026 05:00:00 CDT",
+      "kind": "Mises Wire"
+    },
+    {
       "title": "The NDAA's Attempt to Election-proof US-Israel Relations",
       "link": "https://mises.org/podcasts/power-and-market/ndaas-attempt-election-proof-us-israel-relations",
       "pubDate": "Thu, 11 Jun 2026 05:10:00 CDT",
@@ -289,12 +286,6 @@
       "title": "How American Progressives Influenced Hitler",
       "link": "https://mises.org/mises-wire/how-american-progressives-influenced-hitler",
       "pubDate": "Thu, 11 Jun 2026 05:00:00 CDT",
-      "kind": "Mises Wire"
-    },
-    {
-      "title": "AI, Creative Destruction, and the Politicization of Economic Change",
-      "link": "https://mises.org/mises-wire/ai-creative-destruction-and-politicization-economic-change",
-      "pubDate": "Wed, 10 Jun 2026 02:00:00 CDT",
       "kind": "Mises Wire"
     }
   ]
