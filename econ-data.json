@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-06-12T15:43:14.826Z",
+  "fetchedAt": "2026-06-12T20:34:11.884Z",
   "indicators": {
     "UNRATE": {
       "latest": {
@@ -109,12 +109,12 @@
     "DFII10": null,
     "BAMLH0A0HYM2": {
       "latest": {
-        "date": "2026-06-10",
-        "value": 2.8
+        "date": "2026-06-11",
+        "value": 2.78
       },
       "previous": {
-        "date": "2026-06-09",
-        "value": 2.78
+        "date": "2026-06-10",
+        "value": 2.8
       }
     },
     "MORTGAGE30US": {
@@ -230,6 +230,24 @@
   "news": [
     {
       "title": "The Declaration of Independence versus Egalitarianism",
+      "link": "https://mises.org/podcasts/audio-mises-wire/declaration-independence-versus-egalitarianism",
+      "pubDate": "Fri, 12 Jun 2026 02:02:02 CDT",
+      "kind": "Podcast"
+    },
+    {
+      "title": "Brazil’s Monetary Hangover: Why Lula’s Fiscal Push Keeps Interest Rates High",
+      "link": "https://mises.org/mises-wire/brazils-monetary-hangover-why-lulas-fiscal-push-keeps-interest-rates-high",
+      "pubDate": "Fri, 12 Jun 2026 02:00:00 CDT",
+      "kind": "Mises Wire"
+    },
+    {
+      "title": "Rothbard on The Calculus of Consent",
+      "link": "https://mises.org/friday-philosophy/rothbard-calculus-consent",
+      "pubDate": "Fri, 12 Jun 2026 11:00:00 CDT",
+      "kind": "Article"
+    },
+    {
+      "title": "The Declaration of Independence versus Egalitarianism",
       "link": "https://mises.org/mises-wire/declaration-independence-versus-egalitarianism",
       "pubDate": "Fri, 12 Jun 2026 05:00:00 CDT",
       "kind": "Mises Wire"
@@ -268,24 +286,6 @@
       "title": "Magnifica Humanitas, AI, and the State",
       "link": "https://mises.org/mises-wire/magnifica-humanitas-ai-and-state",
       "pubDate": "Thu, 11 Jun 2026 11:00:00 CDT",
-      "kind": "Mises Wire"
-    },
-    {
-      "title": "How American Progressives Influenced Hitler",
-      "link": "https://mises.org/podcasts/audio-mises-wire/how-american-progressives-influenced-hitler",
-      "pubDate": "Thu, 11 Jun 2026 09:23:23 CDT",
-      "kind": "Podcast"
-    },
-    {
-      "title": "Why Thales Still Matters",
-      "link": "https://mises.org/power-market/why-thales-still-matters",
-      "pubDate": "Thu, 11 Jun 2026 07:00:00 CDT",
-      "kind": "Article"
-    },
-    {
-      "title": "How American Progressives Influenced Hitler",
-      "link": "https://mises.org/mises-wire/how-american-progressives-influenced-hitler",
-      "pubDate": "Thu, 11 Jun 2026 05:00:00 CDT",
       "kind": "Mises Wire"
     }
   ]
