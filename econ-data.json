@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-06-12T20:34:11.884Z",
+  "fetchedAt": "2026-06-13T04:21:58.587Z",
   "indicators": {
     "UNRATE": {
       "latest": {
@@ -31,7 +31,16 @@
         "value": 6887
       }
     },
-    "ICSA": null,
+    "ICSA": {
+      "latest": {
+        "date": "2026-06-06",
+        "value": 229000
+      },
+      "previous": {
+        "date": "2026-05-30",
+        "value": 225000
+      }
+    },
     "CPIAUCSL": {
       "latest": {
         "date": "2026-05-01",
@@ -106,7 +115,16 @@
     "DGS2": null,
     "DGS10": null,
     "T10Y2Y": null,
-    "DFII10": null,
+    "DFII10": {
+      "latest": {
+        "date": "2026-06-11",
+        "value": 2.16
+      },
+      "previous": {
+        "date": "2026-06-10",
+        "value": 2.21
+      }
+    },
     "BAMLH0A0HYM2": {
       "latest": {
         "date": "2026-06-11",
@@ -177,7 +195,16 @@
         "value": -0.6878
       }
     },
-    "DTWEXBGS": null,
+    "DTWEXBGS": {
+      "latest": {
+        "date": "2026-06-05",
+        "value": 120.0831
+      },
+      "previous": {
+        "date": "2026-06-04",
+        "value": 119.3615
+      }
+    },
     "PERMIT": {
       "latest": {
         "date": "2026-04-01",
@@ -229,6 +256,18 @@
   },
   "news": [
     {
+      "title": "Rothbard on The Calculus of Consent",
+      "link": "https://mises.org/friday-philosophy/rothbard-calculus-consent",
+      "pubDate": "Fri, 12 Jun 2026 04:05:00 CDT",
+      "kind": "Article"
+    },
+    {
+      "title": "April Money Supply Growth Hit a 49-Month High. And Prices Soared.",
+      "link": "https://mises.org/mises-wire/april-money-supply-growth-hit-49-month-high-and-prices-soared",
+      "pubDate": "Fri, 12 Jun 2026 04:00:00 CDT",
+      "kind": "Mises Wire"
+    },
+    {
       "title": "The Declaration of Independence versus Egalitarianism",
       "link": "https://mises.org/podcasts/audio-mises-wire/declaration-independence-versus-egalitarianism",
       "pubDate": "Fri, 12 Jun 2026 02:02:02 CDT",
@@ -241,9 +280,15 @@
       "kind": "Mises Wire"
     },
     {
-      "title": "Rothbard on The Calculus of Consent",
-      "link": "https://mises.org/friday-philosophy/rothbard-calculus-consent",
+      "title": "The Crisis at the Fed That No One Talks About",
+      "link": "https://mises.org/power-market/crisis-fed-no-one-talks-about",
       "pubDate": "Fri, 12 Jun 2026 11:00:00 CDT",
+      "kind": "Article"
+    },
+    {
+      "title": "Sabrin in the 'Naples Daily News': Why Property Taxes Should be Abolished",
+      "link": "https://mises.org/power-market/sabrin-naples-daily-news-why-property-taxes-should-be-abolished",
+      "pubDate": "Fri, 12 Jun 2026 09:00:00 CDT",
       "kind": "Article"
     },
     {
@@ -251,6 +296,12 @@
       "link": "https://mises.org/mises-wire/declaration-independence-versus-egalitarianism",
       "pubDate": "Fri, 12 Jun 2026 05:00:00 CDT",
       "kind": "Mises Wire"
+    },
+    {
+      "title": "How The CIA Conjured Ukrainian Nationalism",
+      "link": "https://mises.org/notes-margin/how-cia-conjured-ukrainian-nationalism",
+      "pubDate": "Fri, 12 Jun 2026 03:00:00 CDT",
+      "kind": "Article"
     },
     {
       "title": "The NDAA's Attempt to Election-proof US-Israel Relations",
@@ -263,30 +314,6 @@
       "link": "https://mises.org/podcasts/audio-mises-wire/ai-creative-destruction-and-politicization-economic-change",
       "pubDate": "Thu, 11 Jun 2026 02:08:47 CDT",
       "kind": "Podcast"
-    },
-    {
-      "title": "Potential Lockdowns, Polarization, And What Should be Done",
-      "link": "https://mises.org/podcasts/audio-mises-wire/potential-lockdowns-polarization-and-what-should-be-done",
-      "pubDate": "Thu, 11 Jun 2026 02:02:12 CDT",
-      "kind": "Podcast"
-    },
-    {
-      "title": "Stolen Once, Stolen Twice: The Libertarian Case Against Zimbabwe’s Land Grabs",
-      "link": "https://mises.org/mises-wire/stolen-once-stolen-twice-libertarian-case-against-zimbabwes-land-grabs",
-      "pubDate": "Thu, 11 Jun 2026 02:00:00 CDT",
-      "kind": "Mises Wire"
-    },
-    {
-      "title": "Here's What New Fed Chairman Kevin Warsh Might Be Thinking about Right Now",
-      "link": "https://mises.org/power-market/heres-what-new-fed-chairman-kevin-warsh-might-be-thinking-about-right-now",
-      "pubDate": "Thu, 11 Jun 2026 01:00:00 CDT",
-      "kind": "Article"
-    },
-    {
-      "title": "Magnifica Humanitas, AI, and the State",
-      "link": "https://mises.org/mises-wire/magnifica-humanitas-ai-and-state",
-      "pubDate": "Thu, 11 Jun 2026 11:00:00 CDT",
-      "kind": "Mises Wire"
     }
   ]
 }
