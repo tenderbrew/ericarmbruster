@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-06-14T10:45:15.808Z",
+  "fetchedAt": "2026-06-15T13:49:25.368Z",
   "profile": {
     "name": "tenderbrew",
     "profileUrl": "https://steamcommunity.com/id/tenderbrew/",
@@ -7,14 +7,14 @@
   },
   "stats": {
     "totalGames": 502,
-    "totalHours": 3516,
+    "totalHours": 3520,
     "playedCount": 237,
     "neverPlayed": 265,
     "playtimeBuckets": {
       "100h+": 8,
       "50-100h": 8,
-      "10-50h": 40,
-      "1-10h": 103,
+      "10-50h": 41,
+      "1-10h": 102,
       "<1h": 78
     }
   },
@@ -27,17 +27,10 @@
       "img_icon_url": "da7eddaef804905207eaf0ba9580b5026385f041"
     },
     {
-      "appid": 1875580,
-      "name": "Mina the Hollower",
-      "hours_2weeks": 3.9,
-      "hours_total": 5.6,
-      "img_icon_url": "dede041a155f1846f1b2104daf9a389af8db0e62"
-    },
-    {
       "appid": 2483190,
       "name": "Forza Horizon 6",
-      "hours_2weeks": 1.3,
-      "hours_total": 7.8,
+      "hours_2weeks": 5.9,
+      "hours_total": 12.4,
       "img_icon_url": "55a14aaa3f5ef5367225f3099ce564462f15b171"
     },
     {
@@ -46,6 +39,13 @@
       "hours_2weeks": 1,
       "hours_total": 1,
       "img_icon_url": "29286f2af71b4c1752abf62428e2b60761f7e69a"
+    },
+    {
+      "appid": 1875580,
+      "name": "Mina the Hollower",
+      "hours_2weeks": 0.9,
+      "hours_total": 5.6,
+      "img_icon_url": "dede041a155f1846f1b2104daf9a389af8db0e62"
     },
     {
       "appid": 2105620,
