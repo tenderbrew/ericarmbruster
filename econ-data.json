@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-06-15T12:42:43.202Z",
+  "fetchedAt": "2026-06-15T21:28:16.828Z",
   "indicators": {
     "UNRATE": {
       "latest": {
@@ -118,15 +118,24 @@
     "DFII10": null,
     "BAMLH0A0HYM2": {
       "latest": {
-        "date": "2026-06-11",
-        "value": 2.78
+        "date": "2026-06-12",
+        "value": 2.71
       },
       "previous": {
-        "date": "2026-06-10",
-        "value": 2.8
+        "date": "2026-06-11",
+        "value": 2.78
       }
     },
-    "MORTGAGE30US": null,
+    "MORTGAGE30US": {
+      "latest": {
+        "date": "2026-06-11",
+        "value": 6.52
+      },
+      "previous": {
+        "date": "2026-06-04",
+        "value": 6.48
+      }
+    },
     "GDPC1": {
       "latest": {
         "date": "2026-01-01",
@@ -139,12 +148,12 @@
     },
     "INDPRO": {
       "latest": {
-        "date": "2026-04-01",
-        "value": 102.4963
+        "date": "2026-05-01",
+        "value": 102.6475
       },
       "previous": {
-        "date": "2026-03-01",
-        "value": 101.806
+        "date": "2026-04-01",
+        "value": 102.509
       }
     },
     "RSAFS": {
@@ -229,64 +238,64 @@
   },
   "news": [
     {
+      "title": "The Fear of the Signal: Why the State Urgently Wants to Bind Prediction Markets",
+      "link": "https://mises.org/podcasts/audio-mises-wire/fear-signal-why-state-urgently-wants-bind-prediction-markets",
+      "pubDate": "Mon, 15 Jun 2026 02:35:57 CDT",
+      "kind": "Podcast"
+    },
+    {
+      "title": "The Ignoramus-in-Chief Declares: “I Love the Inflation”",
+      "link": "https://mises.org/mises-wire/ignoramus-chief-declares-i-love-inflation",
+      "pubDate": "Mon, 15 Jun 2026 02:00:00 CDT",
+      "kind": "Mises Wire"
+    },
+    {
+      "title": "Sound Money, Artificial Intelligence, and the Pope",
+      "link": "https://mises.org/podcasts/audio-mises-wire/sound-money-artificial-intelligence-and-pope",
+      "pubDate": "Mon, 15 Jun 2026 01:04:12 CDT",
+      "kind": "Podcast"
+    },
+    {
+      "title": "April Money Supply Growth Hit a 49-Month High. And Prices Soared.",
+      "link": "https://mises.org/podcasts/audio-mises-wire/april-money-supply-growth-hit-49-month-high-and-prices-soared",
+      "pubDate": "Mon, 15 Jun 2026 11:12:46 CDT",
+      "kind": "Podcast"
+    },
+    {
+      "title": "Raising Interest Rates Does Not Counter Inflation",
+      "link": "https://mises.org/mises-wire/raising-interest-rates-does-not-counter-inflation",
+      "pubDate": "Mon, 15 Jun 2026 11:00:00 CDT",
+      "kind": "Mises Wire"
+    },
+    {
+      "title": "Moloch in the Regulatory State",
+      "link": "https://mises.org/podcasts/audio-mises-wire/moloch-regulatory-state",
+      "pubDate": "Mon, 15 Jun 2026 09:25:13 CDT",
+      "kind": "Podcast"
+    },
+    {
+      "title": "Nothing should be nationalized",
+      "link": "https://mises.org/power-market/nothing-should-be-nationalized",
+      "pubDate": "Mon, 15 Jun 2026 08:00:00 CDT",
+      "kind": "Article"
+    },
+    {
       "title": "The Crucial Goal That Environmental Activists Reject",
       "link": "https://mises.org/power-market/crucial-goal-environmental-activists-reject",
       "pubDate": "Mon, 15 Jun 2026 07:00:00 CDT",
       "kind": "Article"
     },
     {
-      "title": "Moloch in the Regulatory State",
-      "link": "https://mises.org/mises-wire/moloch-regulatory-state",
-      "pubDate": "Mon, 15 Jun 2026 05:00:00 CDT",
-      "kind": "Mises Wire"
-    },
-    {
-      "title": "The Fed's Real Job: Propping Up Dollar Reserve Currency Status",
-      "link": "https://mises.org/podcasts/human-action-podcast/feds-real-job-propping-dollar-reserve-currency-status",
-      "pubDate": "Sat, 13 Jun 2026 09:31:00 CDT",
-      "kind": "Podcast"
-    },
-    {
-      "title": "Sound Money, Artificial Intelligence, and the Pope",
-      "link": "https://mises.org/mises-wire/sound-money-artificial-intelligence-and-pope",
-      "pubDate": "Sat, 13 Jun 2026 06:00:00 CDT",
-      "kind": "Mises Wire"
-    },
-    {
-      "title": "Why Politicians Lie—and How Easy Money Keeps the Boom Alive",
-      "link": "https://mises.org/podcasts/minor-issues/why-politicians-lie-and-how-easy-money-keeps-boom-alive",
-      "pubDate": "Sat, 13 Jun 2026 06:00:00 CDT",
-      "kind": "Podcast"
-    },
-    {
-      "title": "The Abolitionist Movement in the Antebellum South",
-      "link": "https://mises.org/mises-wire/abolitionist-movement-antebellum-south",
-      "pubDate": "Sat, 13 Jun 2026 05:00:00 CDT",
-      "kind": "Mises Wire"
-    },
-    {
-      "title": "The Fear of the Signal: Why the State Urgently Wants to Bind Prediction Markets",
-      "link": "https://mises.org/mises-wire/fear-signal-why-state-urgently-wants-bind-prediction-markets",
-      "pubDate": "Sat, 13 Jun 2026 05:00:00 CDT",
-      "kind": "Mises Wire"
-    },
-    {
-      "title": "The Abolitionist Movement in the Antebellum South",
-      "link": "https://mises.org/podcasts/audio-mises-wire/abolitionist-movement-antebellum-south",
-      "pubDate": "Sat, 13 Jun 2026 05:00:00 CDT",
-      "kind": "Podcast"
-    },
-    {
-      "title": "Rothbard on The Calculus of Consent",
-      "link": "https://mises.org/friday-philosophy/rothbard-calculus-consent",
-      "pubDate": "Fri, 12 Jun 2026 04:05:00 CDT",
+      "title": "Oil execs sound the alarm over dwindling stockpiles",
+      "link": "https://mises.org/notes-margin/oil-execs-sound-alarm-over-dwindling-stockpiles",
+      "pubDate": "Mon, 15 Jun 2026 06:00:00 CDT",
       "kind": "Article"
     },
     {
-      "title": "April Money Supply Growth Hit a 49-Month High. And Prices Soared.",
-      "link": "https://mises.org/mises-wire/april-money-supply-growth-hit-49-month-high-and-prices-soared",
-      "pubDate": "Fri, 12 Jun 2026 04:00:00 CDT",
-      "kind": "Mises Wire"
+      "title": "Federal Reserve surveys warn of rising inflation and food costs in 2026",
+      "link": "https://mises.org/notes-margin/federal-reserve-surveys-warn-rising-inflation-and-food-costs-2026",
+      "pubDate": "Mon, 15 Jun 2026 05:00:00 CDT",
+      "kind": "Article"
     }
   ]
 }
