@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-06-15T05:07:51.260Z",
+  "fetchedAt": "2026-06-15T12:42:43.202Z",
   "indicators": {
     "UNRATE": {
       "latest": {
@@ -126,16 +126,7 @@
         "value": 2.8
       }
     },
-    "MORTGAGE30US": {
-      "latest": {
-        "date": "2026-06-11",
-        "value": 6.52
-      },
-      "previous": {
-        "date": "2026-06-04",
-        "value": 6.48
-      }
-    },
+    "MORTGAGE30US": null,
     "GDPC1": {
       "latest": {
         "date": "2026-01-01",
@@ -238,15 +229,21 @@
   },
   "news": [
     {
+      "title": "The Crucial Goal That Environmental Activists Reject",
+      "link": "https://mises.org/power-market/crucial-goal-environmental-activists-reject",
+      "pubDate": "Mon, 15 Jun 2026 07:00:00 CDT",
+      "kind": "Article"
+    },
+    {
+      "title": "Moloch in the Regulatory State",
+      "link": "https://mises.org/mises-wire/moloch-regulatory-state",
+      "pubDate": "Mon, 15 Jun 2026 05:00:00 CDT",
+      "kind": "Mises Wire"
+    },
+    {
       "title": "The Fed's Real Job: Propping Up Dollar Reserve Currency Status",
       "link": "https://mises.org/podcasts/human-action-podcast/feds-real-job-propping-dollar-reserve-currency-status",
       "pubDate": "Sat, 13 Jun 2026 09:31:00 CDT",
-      "kind": "Podcast"
-    },
-    {
-      "title": "Why Politicians Lie—and How Easy Money Keeps the Boom Alive",
-      "link": "https://mises.org/podcasts/minor-issues/why-politicians-lie-and-how-easy-money-keeps-boom-alive",
-      "pubDate": "Sat, 13 Jun 2026 06:00:00 CDT",
       "kind": "Podcast"
     },
     {
@@ -256,9 +253,9 @@
       "kind": "Mises Wire"
     },
     {
-      "title": "The Abolitionist Movement in the Antebellum South",
-      "link": "https://mises.org/podcasts/audio-mises-wire/abolitionist-movement-antebellum-south",
-      "pubDate": "Sat, 13 Jun 2026 05:00:00 CDT",
+      "title": "Why Politicians Lie—and How Easy Money Keeps the Boom Alive",
+      "link": "https://mises.org/podcasts/minor-issues/why-politicians-lie-and-how-easy-money-keeps-boom-alive",
+      "pubDate": "Sat, 13 Jun 2026 06:00:00 CDT",
       "kind": "Podcast"
     },
     {
@@ -274,6 +271,12 @@
       "kind": "Mises Wire"
     },
     {
+      "title": "The Abolitionist Movement in the Antebellum South",
+      "link": "https://mises.org/podcasts/audio-mises-wire/abolitionist-movement-antebellum-south",
+      "pubDate": "Sat, 13 Jun 2026 05:00:00 CDT",
+      "kind": "Podcast"
+    },
+    {
       "title": "Rothbard on The Calculus of Consent",
       "link": "https://mises.org/friday-philosophy/rothbard-calculus-consent",
       "pubDate": "Fri, 12 Jun 2026 04:05:00 CDT",
@@ -283,18 +286,6 @@
       "title": "April Money Supply Growth Hit a 49-Month High. And Prices Soared.",
       "link": "https://mises.org/mises-wire/april-money-supply-growth-hit-49-month-high-and-prices-soared",
       "pubDate": "Fri, 12 Jun 2026 04:00:00 CDT",
-      "kind": "Mises Wire"
-    },
-    {
-      "title": "The Declaration of Independence versus Egalitarianism",
-      "link": "https://mises.org/podcasts/audio-mises-wire/declaration-independence-versus-egalitarianism",
-      "pubDate": "Fri, 12 Jun 2026 02:02:02 CDT",
-      "kind": "Podcast"
-    },
-    {
-      "title": "Brazil’s Monetary Hangover: Why Lula’s Fiscal Push Keeps Interest Rates High",
-      "link": "https://mises.org/mises-wire/brazils-monetary-hangover-why-lulas-fiscal-push-keeps-interest-rates-high",
-      "pubDate": "Fri, 12 Jun 2026 02:00:00 CDT",
       "kind": "Mises Wire"
     }
   ]
