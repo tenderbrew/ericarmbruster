@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-06-14T19:54:23.209Z",
+  "fetchedAt": "2026-06-15T05:07:51.260Z",
   "indicators": {
     "UNRATE": {
       "latest": {
@@ -61,16 +61,7 @@
         "value": 335.423
       }
     },
-    "T10YIE": {
-      "latest": {
-        "date": "2026-06-12",
-        "value": 2.31
-      },
-      "previous": {
-        "date": "2026-06-11",
-        "value": 2.29
-      }
-    },
+    "T10YIE": null,
     "PCE": {
       "latest": {
         "date": "2026-04-01",
@@ -195,16 +186,7 @@
         "value": -0.6878
       }
     },
-    "DTWEXBGS": {
-      "latest": {
-        "date": "2026-06-05",
-        "value": 120.0831
-      },
-      "previous": {
-        "date": "2026-06-04",
-        "value": 119.3615
-      }
-    },
+    "DTWEXBGS": null,
     "PERMIT": {
       "latest": {
         "date": "2026-04-01",
@@ -262,21 +244,15 @@
       "kind": "Podcast"
     },
     {
-      "title": "Sound Money, Artificial Intelligence, and the Pope",
-      "link": "https://mises.org/mises-wire/sound-money-artificial-intelligence-and-pope",
-      "pubDate": "Sat, 13 Jun 2026 06:00:00 CDT",
-      "kind": "Mises Wire"
-    },
-    {
       "title": "Why Politicians Lie—and How Easy Money Keeps the Boom Alive",
       "link": "https://mises.org/podcasts/minor-issues/why-politicians-lie-and-how-easy-money-keeps-boom-alive",
       "pubDate": "Sat, 13 Jun 2026 06:00:00 CDT",
       "kind": "Podcast"
     },
     {
-      "title": "The Fear of the Signal: Why the State Urgently Wants to Bind Prediction Markets",
-      "link": "https://mises.org/mises-wire/fear-signal-why-state-urgently-wants-bind-prediction-markets",
-      "pubDate": "Sat, 13 Jun 2026 05:00:00 CDT",
+      "title": "Sound Money, Artificial Intelligence, and the Pope",
+      "link": "https://mises.org/mises-wire/sound-money-artificial-intelligence-and-pope",
+      "pubDate": "Sat, 13 Jun 2026 06:00:00 CDT",
       "kind": "Mises Wire"
     },
     {
@@ -288,6 +264,12 @@
     {
       "title": "The Abolitionist Movement in the Antebellum South",
       "link": "https://mises.org/mises-wire/abolitionist-movement-antebellum-south",
+      "pubDate": "Sat, 13 Jun 2026 05:00:00 CDT",
+      "kind": "Mises Wire"
+    },
+    {
+      "title": "The Fear of the Signal: Why the State Urgently Wants to Bind Prediction Markets",
+      "link": "https://mises.org/mises-wire/fear-signal-why-state-urgently-wants-bind-prediction-markets",
       "pubDate": "Sat, 13 Jun 2026 05:00:00 CDT",
       "kind": "Mises Wire"
     },
