@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-06-16T11:41:54.643Z",
+  "fetchedAt": "2026-06-16T17:09:04.001Z",
   "indicators": {
     "UNRATE": {
       "latest": {
@@ -103,21 +103,66 @@
         "value": 3.64
       }
     },
-    "DGS2": null,
-    "DGS10": null,
-    "T10Y2Y": null,
-    "DFII10": null,
-    "BAMLH0A0HYM2": {
+    "DGS2": {
       "latest": {
         "date": "2026-06-12",
-        "value": 2.71
+        "value": 4.09
       },
       "previous": {
         "date": "2026-06-11",
-        "value": 2.78
+        "value": 4.05
       }
     },
-    "MORTGAGE30US": null,
+    "DGS10": {
+      "latest": {
+        "date": "2026-06-12",
+        "value": 4.48
+      },
+      "previous": {
+        "date": "2026-06-11",
+        "value": 4.45
+      }
+    },
+    "T10Y2Y": {
+      "latest": {
+        "date": "2026-06-15",
+        "value": 0.4
+      },
+      "previous": {
+        "date": "2026-06-12",
+        "value": 0.39
+      }
+    },
+    "DFII10": {
+      "latest": {
+        "date": "2026-06-12",
+        "value": 2.17
+      },
+      "previous": {
+        "date": "2026-06-11",
+        "value": 2.16
+      }
+    },
+    "BAMLH0A0HYM2": {
+      "latest": {
+        "date": "2026-06-15",
+        "value": 2.66
+      },
+      "previous": {
+        "date": "2026-06-12",
+        "value": 2.71
+      }
+    },
+    "MORTGAGE30US": {
+      "latest": {
+        "date": "2026-06-11",
+        "value": 6.52
+      },
+      "previous": {
+        "date": "2026-06-04",
+        "value": 6.48
+      }
+    },
     "GDPC1": {
       "latest": {
         "date": "2026-01-01",
@@ -168,15 +213,24 @@
         "value": -0.6878
       }
     },
-    "DTWEXBGS": null,
-    "PERMIT": {
+    "DTWEXBGS": {
       "latest": {
-        "date": "2026-04-01",
-        "value": 1423
+        "date": "2026-06-12",
+        "value": 119.5073
       },
       "previous": {
-        "date": "2026-03-01",
-        "value": 1363
+        "date": "2026-06-11",
+        "value": 120.1174
+      }
+    },
+    "PERMIT": {
+      "latest": {
+        "date": "2026-05-01",
+        "value": 1413
+      },
+      "previous": {
+        "date": "2026-04-01",
+        "value": 1423
       }
     },
     "GFDEGDQ188S": {
@@ -189,7 +243,16 @@
         "value": 121.02875
       }
     },
-    "VIXCLS": null,
+    "VIXCLS": {
+      "latest": {
+        "date": "2026-06-15",
+        "value": 16.2
+      },
+      "previous": {
+        "date": "2026-06-12",
+        "value": 17.68
+      }
+    },
     "BOPGSTB": {
       "latest": {
         "date": "2026-04-01",
@@ -220,10 +283,34 @@
   },
   "news": [
     {
+      "title": "Are All Billionaires Thieves or Can One Legitimately Earn Wealth?",
+      "link": "https://mises.org/mises-wire/are-all-billionaires-thieves-or-can-one-legitimately-earn-wealth",
+      "pubDate": "Tue, 16 Jun 2026 11:00:00 CDT",
+      "kind": "Mises Wire"
+    },
+    {
+      "title": "Why Justice Mattered to Rothbard",
+      "link": "https://mises.org/podcasts/audio-mises-wire/why-justice-mattered-rothbard",
+      "pubDate": "Tue, 16 Jun 2026 09:55:22 CDT",
+      "kind": "Podcast"
+    },
+    {
+      "title": "Raising Interest Rates Does Not Counter Inflation",
+      "link": "https://mises.org/podcasts/audio-mises-wire/raising-interest-rates-does-not-counter-inflation",
+      "pubDate": "Tue, 16 Jun 2026 08:25:47 CDT",
+      "kind": "Podcast"
+    },
+    {
       "title": "Why Justice Mattered to Rothbard",
       "link": "https://mises.org/mises-wire/why-justice-mattered-rothbard",
       "pubDate": "Tue, 16 Jun 2026 05:00:00 CDT",
       "kind": "Mises Wire"
+    },
+    {
+      "title": "Bank of Japan raises rates to 31-year high, flags more to come",
+      "link": "https://mises.org/notes-margin/bank-japan-raises-rates-31-year-high-flags-more-come",
+      "pubDate": "Tue, 16 Jun 2026 03:00:00 CDT",
+      "kind": "Article"
     },
     {
       "title": "The Fear of the Signal: Why the State Urgently Wants to Bind Prediction Markets",
@@ -254,30 +341,6 @@
       "link": "https://mises.org/mises-wire/raising-interest-rates-does-not-counter-inflation",
       "pubDate": "Mon, 15 Jun 2026 11:00:00 CDT",
       "kind": "Mises Wire"
-    },
-    {
-      "title": "Moloch in the Regulatory State",
-      "link": "https://mises.org/podcasts/audio-mises-wire/moloch-regulatory-state",
-      "pubDate": "Mon, 15 Jun 2026 09:25:13 CDT",
-      "kind": "Podcast"
-    },
-    {
-      "title": "Nothing should be nationalized",
-      "link": "https://mises.org/power-market/nothing-should-be-nationalized",
-      "pubDate": "Mon, 15 Jun 2026 08:00:00 CDT",
-      "kind": "Article"
-    },
-    {
-      "title": "The Crucial Goal That Environmental Activists Reject",
-      "link": "https://mises.org/power-market/crucial-goal-environmental-activists-reject",
-      "pubDate": "Mon, 15 Jun 2026 07:00:00 CDT",
-      "kind": "Article"
-    },
-    {
-      "title": "Oil execs sound the alarm over dwindling stockpiles",
-      "link": "https://mises.org/notes-margin/oil-execs-sound-alarm-over-dwindling-stockpiles",
-      "pubDate": "Mon, 15 Jun 2026 06:00:00 CDT",
-      "kind": "Article"
     }
   ]
 }
