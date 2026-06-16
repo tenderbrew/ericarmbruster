@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-06-16T05:04:57.698Z",
+  "fetchedAt": "2026-06-16T11:41:54.643Z",
   "indicators": {
     "UNRATE": {
       "latest": {
@@ -31,16 +31,7 @@
         "value": 6887
       }
     },
-    "ICSA": {
-      "latest": {
-        "date": "2026-06-06",
-        "value": 229000
-      },
-      "previous": {
-        "date": "2026-05-30",
-        "value": 225000
-      }
-    },
+    "ICSA": null,
     "CPIAUCSL": {
       "latest": {
         "date": "2026-05-01",
@@ -126,16 +117,7 @@
         "value": 2.78
       }
     },
-    "MORTGAGE30US": {
-      "latest": {
-        "date": "2026-06-11",
-        "value": 6.52
-      },
-      "previous": {
-        "date": "2026-06-04",
-        "value": 6.48
-      }
-    },
+    "MORTGAGE30US": null,
     "GDPC1": {
       "latest": {
         "date": "2026-01-01",
@@ -238,6 +220,12 @@
   },
   "news": [
     {
+      "title": "Why Justice Mattered to Rothbard",
+      "link": "https://mises.org/mises-wire/why-justice-mattered-rothbard",
+      "pubDate": "Tue, 16 Jun 2026 05:00:00 CDT",
+      "kind": "Mises Wire"
+    },
+    {
       "title": "The Fear of the Signal: Why the State Urgently Wants to Bind Prediction Markets",
       "link": "https://mises.org/podcasts/audio-mises-wire/fear-signal-why-state-urgently-wants-bind-prediction-markets",
       "pubDate": "Mon, 15 Jun 2026 02:35:57 CDT",
@@ -290,12 +278,6 @@
       "link": "https://mises.org/notes-margin/oil-execs-sound-alarm-over-dwindling-stockpiles",
       "pubDate": "Mon, 15 Jun 2026 06:00:00 CDT",
       "kind": "Article"
-    },
-    {
-      "title": "Moloch in the Regulatory State",
-      "link": "https://mises.org/mises-wire/moloch-regulatory-state",
-      "pubDate": "Mon, 15 Jun 2026 05:00:00 CDT",
-      "kind": "Mises Wire"
     }
   ]
 }
