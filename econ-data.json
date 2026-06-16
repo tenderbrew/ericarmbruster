@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-06-16T17:09:04.001Z",
+  "fetchedAt": "2026-06-16T20:56:41.929Z",
   "indicators": {
     "UNRATE": {
       "latest": {
@@ -31,7 +31,16 @@
         "value": 6887
       }
     },
-    "ICSA": null,
+    "ICSA": {
+      "latest": {
+        "date": "2026-06-06",
+        "value": 229000
+      },
+      "previous": {
+        "date": "2026-05-30",
+        "value": 225000
+      }
+    },
     "CPIAUCSL": {
       "latest": {
         "date": "2026-05-01",
@@ -52,7 +61,16 @@
         "value": 335.423
       }
     },
-    "T10YIE": null,
+    "T10YIE": {
+      "latest": {
+        "date": "2026-06-15",
+        "value": 2.32
+      },
+      "previous": {
+        "date": "2026-06-12",
+        "value": 2.31
+      }
+    },
     "PCE": {
       "latest": {
         "date": "2026-04-01",
@@ -105,22 +123,22 @@
     },
     "DGS2": {
       "latest": {
-        "date": "2026-06-12",
-        "value": 4.09
+        "date": "2026-06-15",
+        "value": 4.07
       },
       "previous": {
-        "date": "2026-06-11",
-        "value": 4.05
+        "date": "2026-06-12",
+        "value": 4.09
       }
     },
     "DGS10": {
       "latest": {
-        "date": "2026-06-12",
-        "value": 4.48
+        "date": "2026-06-15",
+        "value": 4.47
       },
       "previous": {
-        "date": "2026-06-11",
-        "value": 4.45
+        "date": "2026-06-12",
+        "value": 4.48
       }
     },
     "T10Y2Y": {
@@ -135,12 +153,12 @@
     },
     "DFII10": {
       "latest": {
-        "date": "2026-06-12",
-        "value": 2.17
+        "date": "2026-06-15",
+        "value": 2.15
       },
       "previous": {
-        "date": "2026-06-11",
-        "value": 2.16
+        "date": "2026-06-12",
+        "value": 2.17
       }
     },
     "BAMLH0A0HYM2": {
@@ -283,16 +301,46 @@
   },
   "news": [
     {
+      "title": "My 40 Year War on Psychiatry",
+      "link": "https://mises.org/mises-wire/my-40-year-war-psychiatry",
+      "pubDate": "Tue, 16 Jun 2026 02:00:00 CDT",
+      "kind": "Mises Wire"
+    },
+    {
+      "title": "Against the State",
+      "link": "https://mises.org/library/book/against-state",
+      "pubDate": "Tue, 16 Jun 2026 01:00:00 CDT",
+      "kind": "Article"
+    },
+    {
+      "title": "The Media Says This Was a \"Blowout\" Jobs Report. A Closer Look Suggests Otherwise",
+      "link": "https://mises.org/power-market/media-says-was-blowout-jobs-report-closer-look-suggests-otherwise",
+      "pubDate": "Tue, 16 Jun 2026 01:00:00 CDT",
+      "kind": "Article"
+    },
+    {
       "title": "Are All Billionaires Thieves or Can One Legitimately Earn Wealth?",
       "link": "https://mises.org/mises-wire/are-all-billionaires-thieves-or-can-one-legitimately-earn-wealth",
       "pubDate": "Tue, 16 Jun 2026 11:00:00 CDT",
       "kind": "Mises Wire"
     },
     {
+      "title": "Congress’s Failure is Liberty’s Gain",
+      "link": "https://mises.org/power-market/congresss-failure-libertys-gain",
+      "pubDate": "Tue, 16 Jun 2026 10:30:00 CDT",
+      "kind": "Article"
+    },
+    {
       "title": "Why Justice Mattered to Rothbard",
       "link": "https://mises.org/podcasts/audio-mises-wire/why-justice-mattered-rothbard",
       "pubDate": "Tue, 16 Jun 2026 09:55:22 CDT",
       "kind": "Podcast"
+    },
+    {
+      "title": "Rockwell's 'Against the State' Now Available for Free Online",
+      "link": "https://mises.org/power-market/rockwells-against-state-now-available-free-online",
+      "pubDate": "Tue, 16 Jun 2026 09:00:00 CDT",
+      "kind": "Article"
     },
     {
       "title": "Raising Interest Rates Does Not Counter Inflation",
@@ -311,36 +359,6 @@
       "link": "https://mises.org/notes-margin/bank-japan-raises-rates-31-year-high-flags-more-come",
       "pubDate": "Tue, 16 Jun 2026 03:00:00 CDT",
       "kind": "Article"
-    },
-    {
-      "title": "The Fear of the Signal: Why the State Urgently Wants to Bind Prediction Markets",
-      "link": "https://mises.org/podcasts/audio-mises-wire/fear-signal-why-state-urgently-wants-bind-prediction-markets",
-      "pubDate": "Mon, 15 Jun 2026 02:35:57 CDT",
-      "kind": "Podcast"
-    },
-    {
-      "title": "The Ignoramus-in-Chief Declares: “I Love the Inflation”",
-      "link": "https://mises.org/mises-wire/ignoramus-chief-declares-i-love-inflation",
-      "pubDate": "Mon, 15 Jun 2026 02:00:00 CDT",
-      "kind": "Mises Wire"
-    },
-    {
-      "title": "Sound Money, Artificial Intelligence, and the Pope",
-      "link": "https://mises.org/podcasts/audio-mises-wire/sound-money-artificial-intelligence-and-pope",
-      "pubDate": "Mon, 15 Jun 2026 01:04:12 CDT",
-      "kind": "Podcast"
-    },
-    {
-      "title": "April Money Supply Growth Hit a 49-Month High. And Prices Soared.",
-      "link": "https://mises.org/podcasts/audio-mises-wire/april-money-supply-growth-hit-49-month-high-and-prices-soared",
-      "pubDate": "Mon, 15 Jun 2026 11:12:46 CDT",
-      "kind": "Podcast"
-    },
-    {
-      "title": "Raising Interest Rates Does Not Counter Inflation",
-      "link": "https://mises.org/mises-wire/raising-interest-rates-does-not-counter-inflation",
-      "pubDate": "Mon, 15 Jun 2026 11:00:00 CDT",
-      "kind": "Mises Wire"
     }
   ]
 }
