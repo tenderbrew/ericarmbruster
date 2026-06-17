@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-06-17T15:43:23.111Z",
+  "fetchedAt": "2026-06-17T20:19:09.057Z",
   "indicators": {
     "UNRATE": {
       "latest": {
@@ -123,12 +123,12 @@
     },
     "DGS2": {
       "latest": {
-        "date": "2026-06-15",
-        "value": 4.07
+        "date": "2026-06-16",
+        "value": 4.05
       },
       "previous": {
-        "date": "2026-06-12",
-        "value": 4.09
+        "date": "2026-06-15",
+        "value": 4.07
       }
     },
     "DGS10": {
@@ -153,12 +153,12 @@
     },
     "DFII10": {
       "latest": {
-        "date": "2026-06-15",
-        "value": 2.15
+        "date": "2026-06-16",
+        "value": 2.14
       },
       "previous": {
-        "date": "2026-06-12",
-        "value": 2.17
+        "date": "2026-06-15",
+        "value": 2.15
       }
     },
     "BAMLH0A0HYM2": {
@@ -301,9 +301,27 @@
   },
   "news": [
     {
+      "title": "Why the US President Loves “Inflation”?",
+      "link": "https://mises.org/mises-wire/why-us-president-loves-inflation",
+      "pubDate": "Wed, 17 Jun 2026 02:00:00 CDT",
+      "kind": "Mises Wire"
+    },
+    {
+      "title": "Bond Market Sell Off: Welcome to the “Titanic Effect”",
+      "link": "https://mises.org/mises-wire/bond-market-sell-welcome-titanic-effect",
+      "pubDate": "Wed, 17 Jun 2026 11:00:00 CDT",
+      "kind": "Mises Wire"
+    },
+    {
       "title": "Kevin Warsh: It’s Showtime!",
       "link": "https://mises.org/power-market/kevin-warsh-its-showtime",
       "pubDate": "Wed, 17 Jun 2026 10:50:47 CDT",
+      "kind": "Article"
+    },
+    {
+      "title": "Federal Reserve holds target policy interest rate at 3.75 percent",
+      "link": "https://mises.org/notes-margin/federal-reserve-holds-target-policy-interest-rate-375-percent",
+      "pubDate": "Wed, 17 Jun 2026 09:00:00 CDT",
       "kind": "Article"
     },
     {
@@ -341,24 +359,6 @@
       "link": "https://mises.org/mises-wire/are-all-billionaires-thieves-or-can-one-legitimately-earn-wealth",
       "pubDate": "Tue, 16 Jun 2026 11:00:00 CDT",
       "kind": "Mises Wire"
-    },
-    {
-      "title": "Congress’s Failure is Liberty’s Gain",
-      "link": "https://mises.org/power-market/congresss-failure-libertys-gain",
-      "pubDate": "Tue, 16 Jun 2026 10:30:00 CDT",
-      "kind": "Article"
-    },
-    {
-      "title": "Why Justice Mattered to Rothbard",
-      "link": "https://mises.org/podcasts/audio-mises-wire/why-justice-mattered-rothbard",
-      "pubDate": "Tue, 16 Jun 2026 09:55:22 CDT",
-      "kind": "Podcast"
-    },
-    {
-      "title": "Rockwell's 'Against the State' Now Available for Free Online",
-      "link": "https://mises.org/power-market/rockwells-against-state-now-available-free-online",
-      "pubDate": "Tue, 16 Jun 2026 09:00:00 CDT",
-      "kind": "Article"
     }
   ]
 }
