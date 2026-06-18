@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-06-17T20:19:09.057Z",
+  "fetchedAt": "2026-06-18T04:22:01.676Z",
   "indicators": {
     "UNRATE": {
       "latest": {
@@ -63,12 +63,12 @@
     },
     "T10YIE": {
       "latest": {
-        "date": "2026-06-16",
-        "value": 2.29
+        "date": "2026-06-17",
+        "value": 2.26
       },
       "previous": {
-        "date": "2026-06-15",
-        "value": 2.32
+        "date": "2026-06-16",
+        "value": 2.29
       }
     },
     "PCE": {
@@ -133,22 +133,22 @@
     },
     "DGS10": {
       "latest": {
-        "date": "2026-06-15",
-        "value": 4.47
+        "date": "2026-06-16",
+        "value": 4.43
       },
       "previous": {
-        "date": "2026-06-12",
-        "value": 4.48
+        "date": "2026-06-15",
+        "value": 4.47
       }
     },
     "T10Y2Y": {
       "latest": {
-        "date": "2026-06-16",
-        "value": 0.38
+        "date": "2026-06-17",
+        "value": 0.29
       },
       "previous": {
-        "date": "2026-06-15",
-        "value": 0.4
+        "date": "2026-06-16",
+        "value": 0.38
       }
     },
     "DFII10": {
@@ -223,12 +223,12 @@
     },
     "STLFSI4": {
       "latest": {
-        "date": "2026-06-05",
-        "value": -0.8681
+        "date": "2026-06-12",
+        "value": -0.7698
       },
       "previous": {
-        "date": "2026-05-29",
-        "value": -0.6878
+        "date": "2026-06-05",
+        "value": -0.8678
       }
     },
     "DTWEXBGS": {
@@ -301,10 +301,22 @@
   },
   "news": [
     {
+      "title": "The Musk Trillionaire Panic Is a Distraction",
+      "link": "https://mises.org/podcasts/guns-and-butter/musk-trillionaire-panic-distraction",
+      "pubDate": "Wed, 17 Jun 2026 05:40:01 CDT",
+      "kind": "Podcast"
+    },
+    {
       "title": "Why the US President Loves “Inflation”?",
       "link": "https://mises.org/mises-wire/why-us-president-loves-inflation",
       "pubDate": "Wed, 17 Jun 2026 02:00:00 CDT",
       "kind": "Mises Wire"
+    },
+    {
+      "title": "The Fed Holds the Interest Rate Steady, and Warsh Buys Time with New \"Task Force\" Scheme",
+      "link": "https://mises.org/power-market/fed-holds-interest-rate-steady-and-warsh-buys-time-new-task-force-scheme",
+      "pubDate": "Wed, 17 Jun 2026 01:00:00 CDT",
+      "kind": "Article"
     },
     {
       "title": "Bond Market Sell Off: Welcome to the “Titanic Effect”",
@@ -343,22 +355,10 @@
       "kind": "Mises Wire"
     },
     {
-      "title": "Against the State",
-      "link": "https://mises.org/library/book/against-state",
-      "pubDate": "Tue, 16 Jun 2026 01:00:00 CDT",
-      "kind": "Article"
-    },
-    {
       "title": "The Media Says This Was a \"Blowout\" Jobs Report. A Closer Look Suggests Otherwise",
       "link": "https://mises.org/power-market/media-says-was-blowout-jobs-report-closer-look-suggests-otherwise",
       "pubDate": "Tue, 16 Jun 2026 01:00:00 CDT",
       "kind": "Article"
-    },
-    {
-      "title": "Are All Billionaires Thieves or Can One Legitimately Earn Wealth?",
-      "link": "https://mises.org/mises-wire/are-all-billionaires-thieves-or-can-one-legitimately-earn-wealth",
-      "pubDate": "Tue, 16 Jun 2026 11:00:00 CDT",
-      "kind": "Mises Wire"
     }
   ]
 }
