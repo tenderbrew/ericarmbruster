@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-06-20T04:04:30.156Z",
+  "fetchedAt": "2026-06-20T09:23:28.956Z",
   "indicators": {
     "UNRATE": {
       "latest": {
@@ -51,7 +51,16 @@
         "value": 332.407
       }
     },
-    "CPILFESL": null,
+    "CPILFESL": {
+      "latest": {
+        "date": "2026-05-01",
+        "value": 336.121
+      },
+      "previous": {
+        "date": "2026-04-01",
+        "value": 335.423
+      }
+    },
     "T10YIE": {
       "latest": {
         "date": "2026-06-18",
