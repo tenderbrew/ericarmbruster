@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-06-19T19:53:38.958Z",
+  "fetchedAt": "2026-06-20T04:04:30.156Z",
   "indicators": {
     "UNRATE": {
       "latest": {
@@ -51,16 +51,7 @@
         "value": 332.407
       }
     },
-    "CPILFESL": {
-      "latest": {
-        "date": "2026-05-01",
-        "value": 336.121
-      },
-      "previous": {
-        "date": "2026-04-01",
-        "value": 335.423
-      }
-    },
+    "CPILFESL": null,
     "T10YIE": {
       "latest": {
         "date": "2026-06-18",
@@ -301,6 +292,18 @@
   },
   "news": [
     {
+      "title": "Why Stable Systems Fail: The Illusion of Institutional Control",
+      "link": "https://mises.org/podcasts/audio-mises-wire/why-stable-systems-fail-illusion-institutional-control",
+      "pubDate": "Fri, 19 Jun 2026 04:30:02 CDT",
+      "kind": "Podcast"
+    },
+    {
+      "title": "Institutional Closure: Why Managed Directivism Breeds Its Own Collapse",
+      "link": "https://mises.org/podcasts/audio-mises-wire/institutional-closure-why-managed-directivism-breeds-its-own-collapse",
+      "pubDate": "Fri, 19 Jun 2026 04:00:02 CDT",
+      "kind": "Podcast"
+    },
+    {
       "title": "A Harvard Economist Tests Austrian Capital Theory",
       "link": "https://mises.org/podcasts/human-action-podcast/harvard-economist-tests-austrian-capital-theory",
       "pubDate": "Fri, 19 Jun 2026 02:31:00 CDT",
@@ -347,18 +350,6 @@
       "link": "https://mises.org/power-market/what-firm-anyway",
       "pubDate": "Fri, 19 Jun 2026 07:00:00 CDT",
       "kind": "Article"
-    },
-    {
-      "title": "The American Revolution and the Danger of Standing Armies",
-      "link": "https://mises.org/mises-wire/american-revolution-and-danger-standing-armies",
-      "pubDate": "Fri, 19 Jun 2026 05:00:00 CDT",
-      "kind": "Mises Wire"
-    },
-    {
-      "title": "Oppose Graham Platner for His Socialism, Not Just His Outrageous Behavior",
-      "link": "https://mises.org/podcasts/audio-mises-wire/oppose-graham-platner-his-socialism-not-just-his-outrageous-behavior",
-      "pubDate": "Thu, 18 Jun 2026 05:16:46 CDT",
-      "kind": "Podcast"
     }
   ]
 }
