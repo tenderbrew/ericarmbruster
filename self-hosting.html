@@ -12,7 +12,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Self-hosting</title>
+  <title>Self-hosting — Eric Armbruster</title>
 
   <meta name="description" content="Eric's home setup, services, and notes from running self-hosted infrastructure.">
   <meta name="theme-color" content="#0a0b0d">
@@ -48,6 +48,9 @@
       background: #0a0b0d;
       color: #e8e6dc;
       font-family: var(--font-mono);
+      /* Default --focus (manuscript red) is near-invisible on this dark rack;
+         use the page's amber accent so keyboard focus rings stay visible. */
+      --focus: #ffaa33;
     }
     body.sh-page::after {
       content: '';
@@ -71,6 +74,20 @@
       text-transform: uppercase;
       letter-spacing: 0.08em;
       font-size: 0.75rem;
+    }
+    /* Footer contact links — readable cream on the dark footer (the base
+       anchor's dark --ink would be invisible here). Scoped to the footer so
+       it can't leak into the header chrome. */
+    .sh-page .site-footer a {
+      color: #e8e6dc;
+      background: none;
+      padding: 0;
+      transition: color 120ms ease, text-shadow 120ms ease;
+    }
+    .sh-page .site-footer a:hover {
+      color: #ffe09a;
+      background: none;
+      text-shadow: 0 0 6px rgba(255, 224, 154, 0.5);
     }
     .sh-page main a {
       color: #ffaa33;
@@ -193,7 +210,7 @@
     .rack-section-num {
       font-family: var(--font-mono);
       font-size: 0.68rem;
-      color: rgba(232, 230, 220, 0.4);
+      color: rgba(232, 230, 220, 0.7);
       letter-spacing: 0.12em;
       font-weight: 500;
     }
@@ -210,7 +227,7 @@
       margin-left: auto;
       font-family: var(--font-mono);
       font-size: 0.65rem;
-      color: rgba(232, 230, 220, 0.4);
+      color: rgba(232, 230, 220, 0.7);
       letter-spacing: 0.1em;
       text-transform: uppercase;
     }
@@ -249,7 +266,7 @@
     }
     .rack-unit-meta {
       font-family: var(--font-mono);
-      color: rgba(232, 230, 220, 0.55);
+      color: rgba(232, 230, 220, 0.7);
       font-size: 0.74rem;
       text-transform: uppercase;
       letter-spacing: 0.06em;
@@ -353,7 +370,7 @@
     .rack-nas-meta {
       font-family: var(--font-mono);
       font-size: 0.7rem;
-      color: rgba(232, 230, 220, 0.55);
+      color: rgba(232, 230, 220, 0.7);
       text-transform: uppercase;
       letter-spacing: 0.08em;
     }
@@ -412,7 +429,7 @@
     .rack-compute-meta {
       font-family: var(--font-mono);
       font-size: 0.7rem;
-      color: rgba(232, 230, 220, 0.55);
+      color: rgba(232, 230, 220, 0.7);
       text-transform: uppercase;
       letter-spacing: 0.08em;
     }
@@ -506,6 +523,8 @@
 
 <body class="sh-page">
 
+  <a class="skip-link" href="#main">Skip to main content</a>
+
   <header class="site-header">
     <div class="site-header__inner">
       <a class="brand" href="index.html">Eric Armbruster</a>
@@ -527,7 +546,7 @@
     </div>
   </header>
 
-  <main class="page">
+  <main class="page" id="main">
 
     <header class="sh-masthead">
       <h1 class="sh-title">Self-hosting</h1>
@@ -924,6 +943,11 @@
   <footer class="site-footer">
     <div class="site-footer__inner">
       <span>&copy; 2026 Eric Armbruster</span>
+      <div class="footer-links">
+        <a href="mailto:eric.m.armbruster@gmail.com">email</a>
+        <a href="https://github.com/tenderbrew" target="_blank" rel="noopener">github</a>
+        <a href="https://www.linkedin.com/in/ericmarmbruster/" target="_blank" rel="noopener">linkedin</a>
+      </div>
     </div>
   </footer>
 

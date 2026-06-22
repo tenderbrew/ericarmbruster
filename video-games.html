@@ -13,19 +13,19 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Video Games</title>
+  <title>Video Games — Eric Armbruster</title>
   <meta name="description" content="Now playing, always playing, the long shelf, and the Nintendo Pipeline retro club.">
-  <meta name="theme-color" content="#fbf6e8">
+  <meta name="theme-color" content="#050a07">
   <link rel="canonical" href="https://www.ericarmbruster.com/video-games.html">
   <meta property="og:title" content="Video Games - Eric Armbruster">
   <meta property="og:description" content="Now playing, all-time favorites by year, and the Nintendo Pipeline retro club.">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://www.ericarmbruster.com/video-games.html">
-  <meta property="og:image" content="https://www.ericarmbruster.com/images/chrono-trigger-sfc-cart.png">
+  <meta property="og:image" content="https://www.ericarmbruster.com/images/chrono-trigger-sfc-cart-og.jpg">
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="Video Games - Eric Armbruster">
   <meta name="twitter:description" content="Now playing, all-time favorites by year.">
-  <meta name="twitter:image" content="https://www.ericarmbruster.com/images/chrono-trigger-sfc-cart.png">
+  <meta name="twitter:image" content="https://www.ericarmbruster.com/images/chrono-trigger-sfc-cart-og.jpg">
   <link rel="icon" href="images/hector-favicon.png" type="image/png">
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -54,6 +54,9 @@
       background: #050a07;
       color: #c8ffd8;
       font-family: var(--font-mono);
+      /* Focus ring: the cream-page red is invisible on this dark CRT bg,
+         so use the page's phosphor-green spot color. */
+      --focus: #33ff66;
     }
     /* Scanlines fixed over everything (above content but inert). */
     body.vg-page::before {
@@ -261,7 +264,7 @@
     .vg-status-completed  { color: #33ff66; text-shadow: 0 0 5px rgba(51, 255, 102, 0.5); }
     .vg-status-endless    { color: #ff66cc; text-shadow: 0 0 5px rgba(255, 102, 204, 0.5); }
     .vg-status-unfinished { color: #ffcc33; text-shadow: 0 0 5px rgba(255, 204, 51, 0.5); }
-    .vg-status-unplayed   { color: rgba(136, 255, 170, 0.4); }
+    .vg-status-unplayed   { color: rgba(136, 255, 170, 0.6); }
 
     /* ── STEAM SCOREBOARD ────────────────────────────────────────────── */
     .vg-steam {
@@ -484,6 +487,8 @@
 
 <body class="vg-page">
 
+  <a class="skip-link" href="#main">Skip to main content</a>
+
   <header class="site-header">
     <div class="site-header__inner">
       <a class="brand" href="index.html">Eric Armbruster</a>
@@ -505,7 +510,7 @@
     </div>
   </header>
 
-  <main class="page">
+  <main class="page" id="main">
 
     <header class="vg-masthead">
       <h1 class="vg-title">Video Games</h1>
@@ -549,16 +554,11 @@
         <ol class="vg-game-list">
           <li class="vg-game-row">
             <span class="vg-rank">01</span>
-            <span class="vg-game-name">Mega Man Legends</span>
-            <span class="vg-game-meta">PlayStation 1 &middot; Action Adventure</span>
-          </li>
-          <li class="vg-game-row">
-            <span class="vg-rank">02</span>
             <span class="vg-game-name">Legend of the River King</span>
             <span class="vg-game-meta">Game Boy Color &middot; RPG / Adventure</span>
           </li>
           <li class="vg-game-row">
-            <span class="vg-rank">03</span>
+            <span class="vg-rank">02</span>
             <span class="vg-game-name">Pilotwings 64</span>
             <span class="vg-game-meta">Nintendo 64 &middot; Flight Sim</span>
           </li>
@@ -677,7 +677,7 @@
           </ol>
         </div>
       </div>
-      <a class="vg-steam-link" href="https://steamcommunity.com/profiles/76561198028507840/" target="_blank" rel="noopener">View Steam profile &rarr;</a>
+      <a class="vg-steam-link" id="steam-profile-link" href="https://steamcommunity.com/id/tenderbrew/" target="_blank" rel="noopener">View Steam profile &rarr;</a>
     </div>
 
     </div>
@@ -709,7 +709,7 @@
           <li><span class="vg-rank">02</span><span class="vg-game-name">Sektori</span></li>
           <li><span class="vg-rank">03</span><span class="vg-game-name">Fantasy Life i: The Girl Who Steals Time</span></li>
           <li><span class="vg-rank">04</span><span class="vg-game-name">Ninja Gaiden: Ragebound</span></li>
-          <li><span class="vg-rank">05</span><span class="vg-game-name">Dynasty Warrior Origins</span></li>
+          <li><span class="vg-rank">05</span><span class="vg-game-name">Dynasty Warriors: Origins</span></li>
           <li><span class="vg-rank">06</span><span class="vg-game-name">Kirby Air Riders</span></li>
           <li><span class="vg-rank">07</span><span class="vg-game-name">Pokemon Legends Z-A</span></li>
           <li><span class="vg-rank">08</span><span class="vg-game-name">Mario Kart World</span></li>
@@ -743,7 +743,7 @@
           <li><span class="vg-rank">04</span><span class="vg-game-name">Pikmin 4</span></li>
           <li><span class="vg-rank">05</span><span class="vg-game-name">Hi-Fi Rush</span></li>
           <li><span class="vg-rank">06</span><span class="vg-game-name">Super Mario Wonder</span></li>
-          <li><span class="vg-rank">07</span><span class="vg-game-name">Wario Ware: Move It!</span></li>
+          <li><span class="vg-rank">07</span><span class="vg-game-name">WarioWare: Move It!</span></li>
           <li><span class="vg-rank">08</span><span class="vg-game-name">Baldur's Gate 3</span></li>
           <li><span class="vg-rank">09</span><span class="vg-game-name">Theatrhythm Final Bar Line</span></li>
           <li><span class="vg-rank">10</span><span class="vg-game-name">Forza Motorsport</span></li>
@@ -855,7 +855,7 @@
     <div class="vg-panel-body">
 
     <div class="vg-pipeline">
-      <img src="images/nintendopipeline.png" alt="Nintendo Pipeline Club logo" loading="lazy">
+      <img src="images/nintendopipeline.png" alt="Nintendo Pipeline Club logo" width="1679" height="651" loading="lazy">
       <div>
         <h3>Monthly retro game playthroughs</h3>
         <p>A community for monthly playthroughs of older games. Current pick: <em>Legend of the River King</em>.</p>
@@ -871,6 +871,11 @@
   <footer class="site-footer">
     <div class="site-footer__inner">
       <span>&copy; 2026 Eric Armbruster</span>
+      <div class="footer-links">
+        <a href="mailto:eric.m.armbruster@gmail.com">email</a>
+        <a href="https://github.com/tenderbrew" target="_blank" rel="noopener">github</a>
+        <a href="https://www.linkedin.com/in/ericmarmbruster/" target="_blank" rel="noopener">linkedin</a>
+      </div>
     </div>
   </footer>
 
@@ -935,6 +940,7 @@
       var updatedEl = document.getElementById('steam-updated');
       var recentEl = document.getElementById('steam-recent');
       var topEl = document.getElementById('steam-top');
+      var profileLinkEl = document.getElementById('steam-profile-link');
       if (!statsEl || !updatedEl || !recentEl || !topEl) return;
 
       function formatFetchedAt(isoString) {
@@ -972,6 +978,9 @@
       fetch('steam-data.json')
         .then(function (res) { if (!res.ok) throw new Error('Failed to load'); return res.json(); })
         .then(function (data) {
+          if (profileLinkEl && data.profile && data.profile.profileUrl) {
+            profileLinkEl.href = data.profile.profileUrl;
+          }
           statsEl.textContent = '';
           var statItems = [
             data.stats.totalGames + ' games',
