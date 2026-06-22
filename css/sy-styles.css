@@ -250,6 +250,25 @@ body.sy-page {
   transition: filter 200ms ease;
 }
 
+/* Each gallery photo is a <button> that opens the lightbox. Reset the button
+   chrome so the photo "print" shows through, and give keyboard users a clear
+   focus ring (accent red is plenty visible on the light paper surface). */
+.sy-photo-btn {
+  display: block;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  background: none;
+  font: inherit;
+  color: inherit;
+  cursor: pointer;
+}
+.sy-photo-btn:focus-visible {
+  outline: 3px solid var(--accent-red, #7a1c1c);
+  outline-offset: 4px;
+}
+
 /* Diagonal corner mounts — top-left and bottom-right tape tabs. */
 .photo::before, .photo::after {
   content: '';
