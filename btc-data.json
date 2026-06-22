@@ -1,13 +1,13 @@
 {
-  "fetchedAt": "2026-06-22T17:12:03.603Z",
+  "fetchedAt": "2026-06-22T21:12:12.280Z",
   "price": {
-    "usd": 64580,
-    "time": 1782148252
+    "usd": 64357,
+    "time": 1782162319
   },
   "moves": {
-    "d1": 2.132042631729414,
-    "d7": -2.5956767059131525,
-    "d30": -15.771947824866084
+    "d1": 1.7793723699320196,
+    "d7": -2.932021767767923,
+    "d30": -16.062794149348193
   },
   "history90d": [
     {
@@ -372,60 +372,85 @@
     },
     {
       "date": "2026-06-22",
-      "close": 64597.97577268009
+      "close": 64323.59867237728
     }
   ],
   "blocks": [
     {
-      "height": 954867,
-      "id": "00000000000000000000e0c57d35ace381c80d5940248a1b43d87ca05ac2561d",
-      "timestamp": 1782147755,
-      "txCount": 4099
+      "height": 954899,
+      "id": "0000000000000000000125aae77a1748d1a188bba8e7e84697016a291d1b53ae",
+      "timestamp": 1782162149,
+      "txCount": 5699
     },
     {
-      "height": 954866,
-      "id": "000000000000000000000b951399b504a52a3fdfa1d33bcde59ac6c019c4af1c",
-      "timestamp": 1782147613,
-      "txCount": 4986
+      "height": 954898,
+      "id": "00000000000000000000076bedab3a8a3eee33374f58a6cb51d7a5983a7a141a",
+      "timestamp": 1782161723,
+      "txCount": 5578
     },
     {
-      "height": 954865,
-      "id": "000000000000000000022e24edf59089c2fe4b8752abe1e7bffb11ce5f34c473",
-      "timestamp": 1782147033,
-      "txCount": 4315
+      "height": 954897,
+      "id": "00000000000000000001518f3d2bfa6c7e5083ac3ac005322f3f8e37c429744b",
+      "timestamp": 1782161700,
+      "txCount": 6476
     },
     {
-      "height": 954864,
-      "id": "00000000000000000001f246e44e262cd9506027a21b59c8aba6874523a3653f",
-      "timestamp": 1782146336,
-      "txCount": 3416
+      "height": 954896,
+      "id": "0000000000000000000228af04aeb7d4ee4563665780ab4ffa452caa13f269fd",
+      "timestamp": 1782161658,
+      "txCount": 5837
     },
     {
-      "height": 954863,
-      "id": "0000000000000000000113bcb4e7c1323ae3ee585b5041b4b3fa972c0e84b8bc",
-      "timestamp": 1782145887,
-      "txCount": 4963
+      "height": 954895,
+      "id": "00000000000000000001c28f9cf7367e88b5b7d51d6b8b65b3dcf333931b0234",
+      "timestamp": 1782161419,
+      "txCount": 6009
     },
     {
-      "height": 954862,
-      "id": "000000000000000000022cfb4d4e9fc91f9836d160777cb5f8680614d3f0b19b",
-      "timestamp": 1782145290,
-      "txCount": 4523
+      "height": 954894,
+      "id": "00000000000000000001f84c0f705ce3e1e2a7e547542be5f882eb70c1c80ea1",
+      "timestamp": 1782160953,
+      "txCount": 5156
     },
     {
-      "height": 954861,
-      "id": "000000000000000000023a7508fe8691c45575335aef30f990a3be44c1b8f029",
-      "timestamp": 1782144630,
-      "txCount": 4583
+      "height": 954893,
+      "id": "00000000000000000001854dbe2143897e06ab6d94f2b30f5f679f296becd633",
+      "timestamp": 1782160880,
+      "txCount": 6227
     },
     {
-      "height": 954860,
-      "id": "0000000000000000000080ff4c6973f36419aa62c58a66e0f81934858dd45bc4",
-      "timestamp": 1782144544,
-      "txCount": 4545
+      "height": 954892,
+      "id": "000000000000000000012eb42f23027a0497b68b711740639dc1c54a83143fd1",
+      "timestamp": 1782160357,
+      "txCount": 4767
     }
   ],
   "news": [
+    {
+      "title": "Securitize and tZERO clash over patents as race to bring Wall Street onchain heats up",
+      "link": "https://www.coindesk.com/business/2026/06/22/securitize-and-tzero-clash-over-patents-as-race-to-bring-wall-street-onchain-heats-up",
+      "pubDate": "Mon, 22 Jun 2026 21:08:50 +0000"
+    },
+    {
+      "title": "Ric Edelman says crypto’s biggest growth story is happening off the price chart",
+      "link": "https://www.coindesk.com/markets/2026/06/22/ric-edelman-says-crypto-s-biggest-growth-story-is-happening-off-the-price-chart",
+      "pubDate": "Mon, 22 Jun 2026 20:58:40 +0000"
+    },
+    {
+      "title": "21Shares co-founder warns tokenization hype is outrunning Wall Street reality",
+      "link": "https://www.coindesk.com/markets/2026/06/22/21shares-co-founder-warns-tokenization-hype-is-outrunning-wall-street-reality",
+      "pubDate": "Mon, 22 Jun 2026 20:53:39 +0000"
+    },
+    {
+      "title": "Strive says digital credit selloff was a liquidation event, not a credit crisis",
+      "link": "https://www.coindesk.com/markets/2026/06/22/strive-says-digital-credit-selloff-was-a-liquidation-event-not-a-credit-crisis",
+      "pubDate": "Mon, 22 Jun 2026 20:14:02 +0000"
+    },
+    {
+      "title": "Ether’s biggest corporate holders back new Ethereum research hub",
+      "link": "https://www.coindesk.com/business/2026/06/22/ether-s-biggest-corporate-holders-back-new-ethereum-research-hub",
+      "pubDate": "Mon, 22 Jun 2026 19:20:45 +0000"
+    },
     {
       "title": "Ethereum Foundation talent exodus sparks fresh debate over leadership",
       "link": "https://www.coindesk.com/tech/2026/06/22/ethereum-foundation-talent-exodus-sparks-fresh-debate-over-leadership",
@@ -460,31 +485,6 @@
       "title": "Bitcoin mining network becoming more sensitive to price swings, JPMorgan says",
       "link": "https://www.coindesk.com/markets/2026/06/22/bitcoin-mining-network-becoming-more-sensitive-to-price-swings-jpmorgan-says",
       "pubDate": "Mon, 22 Jun 2026 12:51:16 +0000"
-    },
-    {
-      "title": "Strategy added $35 million in bitcoin, $300 million in cash reserves last week",
-      "link": "https://www.coindesk.com/markets/2026/06/22/strategy-added-usd35-million-in-bitcoin-usd300-million-in-cash-reserves-last-week",
-      "pubDate": "Mon, 22 Jun 2026 12:39:40 +0000"
-    },
-    {
-      "title": "TradFi fund manager Baillie Gifford introduces Solana, Ethereum tokenized fund with BNY",
-      "link": "https://www.coindesk.com/business/2026/06/22/tradfi-fund-manager-baillie-gifford-introduces-solana-ethereum-tokenized-fund-with-bny",
-      "pubDate": "Mon, 22 Jun 2026 12:01:03 +0000"
-    },
-    {
-      "title": "Bitcoin ETF outflow pain eases just as another headwind gathers strength",
-      "link": "https://www.coindesk.com/daybook-us/2026/06/22/bitcoin-etf-outflow-pain-eases-just-as-another-headwind-strengthens",
-      "pubDate": "Mon, 22 Jun 2026 11:30:13 +0000"
-    },
-    {
-      "title": "As bitcoin, altcoin prices gain, derivatives signal skepticism over a sustained rally",
-      "link": "https://www.coindesk.com/markets/2026/06/22/as-bitcoin-altcoin-prices-gain-derivatives-signal-skepticism-over-a-sustained-rally",
-      "pubDate": "Mon, 22 Jun 2026 11:05:38 +0000"
-    },
-    {
-      "title": "Bank of England backs down on strict stablecoin holding limits, sets $50 billion issuance cap",
-      "link": "https://www.coindesk.com/policy/2026/06/22/bank-of-england-backs-down-on-strict-stablecoin-holding-limits-sets-usd50-billion-issuance-cap",
-      "pubDate": "Mon, 22 Jun 2026 10:48:14 +0000"
     }
   ]
 }
