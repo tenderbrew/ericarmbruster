@@ -2,8 +2,8 @@
    tufte-base.css — Shared base for the warm, hobby-focused redesign
    --------------------------------------------------------------------------
    Cream paper, EB Garamond serif body, IBM Plex Mono only for true tabular
-   data, sidenote/marginalia layout, per-section spot colors. Pages opting
-   into the redesign load this in place of styles.css.
+   data, sidenote/marginalia layout, per-section spot colors. The only
+   universal stylesheet — loaded by every page.
    ========================================================================== */
 
 
@@ -29,6 +29,10 @@ button { font: inherit; color: inherit; background: none; border: none; padding:
 
   /* Tufte red — manuscript red, reserved for emphasis only */
   --accent-red:   #7a1c1c;
+
+  /* Keyboard focus ring — theme-aware. Dark "room" pages override this
+     locally to a light/bright value so it keeps >=3:1 contrast there. */
+  --focus:        var(--accent-red);
 
   /* Section spot colors — one per "room" */
   --c-vg:         #6e3a55;   /* video games — dusty plum */
@@ -371,12 +375,54 @@ figcaption {
   font-style: italic;
 }
 
+/* Footer social links — sit on the right of the footer. */
+.footer-links {
+  display: flex;
+  gap: var(--space-5);
+  flex-wrap: wrap;
+}
+.footer-links a {
+  background: none;
+  padding: 0;
+}
+
 
 /* ── ACCESSIBILITY & SCROLLBAR ─────────────────────────────────────────── */
 :focus-visible {
-  outline: 2px solid var(--accent-red);
-  outline-offset: 3px;
+  outline: 3px solid var(--focus);
+  outline-offset: 2px;
 }
+
+/* Skip link — visually hidden until it receives keyboard focus, then it
+   slides into the top-left corner so keyboard users can jump past the
+   header straight to #main. */
+.skip-link {
+  position: absolute;
+  left: 8px;
+  top: -48px;
+  z-index: 1000;
+  background: var(--paper);
+  color: var(--ink);
+  padding: 8px 12px;
+  border: 1px solid var(--rule);
+  border-radius: 4px;
+  transition: top .15s ease;
+}
+.skip-link:focus { top: 8px; }
+
+/* Screen-reader-only utility — removed from visual flow but still announced. */
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0,0,0,0);
+  white-space: nowrap;
+  border: 0;
+}
+
 @media (prefers-reduced-motion: reduce) {
   *, *::before, *::after {
     animation-duration: 0.01ms !important;

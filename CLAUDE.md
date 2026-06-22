@@ -38,8 +38,7 @@ The homepage has the *full* large bookshelf as its main content, so its header h
 - `css/tufte-base.css` — loaded by every page. Design tokens, typography, `.site-header`, `.site-utility`, `.site-shelf`, `.site-footer`, base anchor styles. This is the only universal stylesheet.
 - `css/sy-styles.css` — loaded *only* by `seymour.html` (the photo-essay memorial page). Cormorant Italic, photo-essay layouts.
 
-**Vestigial — NOT loaded by any HTML:**
-- `css/styles.css`, `css/vg-styles.css`, `css/bitcoin-styles.css`, `css/econ-styles.css`, `css/film-styles.css`, `css/sh-styles.css`, `css/proj-styles.css`, `css/about-styles.css` — all leftover from the prior mempool-style dark dashboard. Kept around but not active. **Don't edit these expecting changes to ship**; don't link them back in without a reason. They're worth touching only if you're explicitly cleaning them up.
+**Removed (audit cleanup):** the eight dashboard-era stylesheets (`css/styles.css`, `css/vg-styles.css`, `css/bitcoin-styles.css`, `css/econ-styles.css`, `css/film-styles.css`, `css/sh-styles.css`, `css/proj-styles.css`, `css/about-styles.css`) were deleted — they were leftover from the prior mempool-style dark dashboard and loaded by nothing. Don't recreate them.
 
 Page-specific styles for everything except seymour live in a `<style>` block in the page's `<head>`. That's where to put per-page widget styling.
 
@@ -47,6 +46,22 @@ Page-specific styles for everything except seymour live in a `<style>` block in 
 
 1. **Per-page link colors must be scoped to `main`.** The base anchor uses the page's spot color. If you write `.vg-page a { color: var(--c-vg) }` it cascades into the site-header anchors too and turns the utility icons / shelf books that color (which is unreadable on several pages). **Always write `.<page>-page main a { ... }`.** Same goes for `:hover`. Search for an existing page's `main a` rule before adding a new one.
 2. **Shelf book backgrounds need the `background:` shorthand.** The base `a` rule sets `background-size: 100% 1px` (underline trick). If `.site-shelf__book` only sets `background-image:`, that 1-pixel size is inherited and clips the cloth gradient to a strip. The current rule uses the `background:` shorthand (which resets all bg sub-properties); preserve that. Same trap if you add other elements that ride on `<a>` and use a gradient.
+
+### Fonts — the base pair and the two intentional exceptions
+
+The base type pair is **EB Garamond** (serif body, every page) + **IBM Plex Mono** (true tabular data only). Two rooms deliberately load and use a third face on top of that pair — these are *intentional*, not stray imports to "clean up" in a future audit:
+
+- **`film.html` → Playfair Display** for theatrical display headings (the room's titles/marquee feel). Body stays EB Garamond.
+- **`bitcoin.html` → Inter** for body text (the dashboard/terminal feel). The mono data cells stay IBM Plex Mono.
+
+### `theme-color` convention
+
+Each page's `<meta name="theme-color">` matches that page's *real* surface color, so the browser chrome blends with the page:
+
+- Paper pages (`index`, `about`, `projects`, `seymour`) → `#ddc89a` (the `--paper` token).
+- Each dark "room" → its own body background, not a shared value: `film #0a0908`, `bitcoin #11131f`, `video-games #050a07`, `economics #0a0d12`, `self-hosting #0a0b0d`.
+
+If you restyle a page's background, update its `theme-color` to match.
 
 ### JS — what's live and what's vestigial
 

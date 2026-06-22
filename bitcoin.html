@@ -12,7 +12,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Bitcoin</title>
+  <title>Bitcoin — Eric Armbruster</title>
   <meta name="description" content="Live Bitcoin price, 90-day chart, recent blocks, and a reading list.">
   <meta name="theme-color" content="#11131f">
   <link rel="canonical" href="https://www.ericarmbruster.com/bitcoin.html">
@@ -50,7 +50,7 @@
       --surface-2:   #252840;
       --border:      #2c2f44;
       --border-soft: #1f2235;
-      --rule:        #34384f;
+      --btc-rule:    #34384f;
 
       --text:        #ffffff;
       --text-2:      #c8cad8;
@@ -63,6 +63,10 @@
       --success:     #1ad1a3;
       --danger:      #fc6e51;
       --magenta:     #c64eff;
+
+      /* Override the global --focus (dark manuscript red) with a hue that
+         reads on this page's dark navy bg, so :focus-visible rings stay visible. */
+      --focus:       #6cb4ff;
 
       background: var(--bg);
       color: var(--text-2);
@@ -468,6 +472,8 @@
 
 <body class="bitcoin-page">
 
+  <a class="skip-link" href="#main">Skip to main content</a>
+
   <header class="site-header">
     <div class="site-header__inner">
       <a class="brand" href="index.html">Eric Armbruster</a>
@@ -489,7 +495,7 @@
     </div>
   </header>
 
-  <main class="page">
+  <main id="main" class="page">
 
     <header class="btc-masthead">
       <h1 class="btc-title">Bitcoin</h1>
@@ -604,6 +610,11 @@
   <footer class="site-footer">
     <div class="site-footer__inner">
       <span>&copy; 2026 Eric Armbruster</span>
+      <div class="footer-links">
+        <a href="mailto:eric.m.armbruster@gmail.com">email</a>
+        <a href="https://github.com/tenderbrew" target="_blank" rel="noopener">github</a>
+        <a href="https://www.linkedin.com/in/ericmarmbruster/" target="_blank" rel="noopener">linkedin</a>
+      </div>
     </div>
   </footer>
 

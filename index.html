@@ -15,8 +15,8 @@
 
   <title>Eric Armbruster</title>
 
-  <meta name="description" content="Personal site of Eric M. Armbruster — film, video games, economics, self-hosting, and the dogs along the way.">
-  <meta name="theme-color" content="#fbf6e8">
+  <meta name="description" content="Personal site of Eric M. Armbruster covering film, video games, economics, self-hosting, and Bitcoin.">
+  <meta name="theme-color" content="#ddc89a">
   <link rel="canonical" href="https://www.ericarmbruster.com/">
   <meta property="og:title" content="Eric Armbruster">
   <meta property="og:description" content="Personal site of Eric M. Armbruster covering film, video games, economics, self-hosting, and Bitcoin.">
@@ -276,17 +276,6 @@
     }
     .shelf-caption em { color: var(--accent-red); }
 
-    /* Footer social links — sit on the right of the footer. */
-    .footer-links {
-      display: flex;
-      gap: var(--space-5);
-      flex-wrap: wrap;
-    }
-    .footer-links a {
-      background: none;
-      padding: 0;
-    }
-
     @media (max-width: 640px) {
       .masthead {
         grid-template-columns: 1fr;
@@ -306,9 +295,11 @@
 
 <body>
 
+  <a class="skip-link" href="#main">Skip to main content</a>
+
   <header class="site-header">
     <div class="site-header__inner">
-      <a class="brand" href="index.html" aria-current="page">Eric Armbruster</a>
+      <a class="brand" href="index.html">Eric Armbruster</a>
       <div class="site-utility">
         <a class="site-utility__icon" href="about.html" aria-label="About"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"><circle cx="12" cy="8" r="4"/><path d="M4 21c0-4.4 3.6-8 8-8s8 3.6 8 8"/></svg></a>
         <a class="site-utility__icon" href="projects.html" aria-label="Projects"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M9 7l-5 5 5 5"/><path d="M15 7l5 5-5 5"/></svg></a>
@@ -317,6 +308,8 @@
     </div>
   </header>
 
+  <main id="main">
+
   <section class="masthead">
     <div class="masthead-text">
       <h1 class="masthead-title">Eric M. Armbruster</h1>
@@ -324,7 +317,7 @@
       <p class="masthead-meta">Gilbertsville · <span>est. 2022</span></p>
     </div>
     <figure class="masthead-portrait">
-      <img src="images/hector-0002.png" alt="Hector, a border terrier" loading="lazy">
+      <img src="images/hector-0002.png" alt="Hector, a border terrier" width="320" height="320" loading="lazy">
       <figcaption class="masthead-portrait-caption">Hector</figcaption>
     </figure>
   </section>
@@ -415,6 +408,8 @@
 
     </div>
   </nav>
+
+  </main>
 
   <footer class="site-footer">
     <div class="site-footer__inner">

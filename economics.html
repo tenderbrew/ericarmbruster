@@ -13,19 +13,19 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Economics</title>
+  <title>Economics — Eric Armbruster</title>
   <meta name="description" content="Live macro indicators, Austrian-leaning headlines, and a long reading list.">
-  <meta name="theme-color" content="#fbf6e8">
+  <meta name="theme-color" content="#0a0d12">
   <link rel="canonical" href="https://www.ericarmbruster.com/economics.html">
   <meta property="og:title" content="Economics - Eric Armbruster">
   <meta property="og:description" content="Live macro indicators, the Mises Wire, and a reading list.">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://www.ericarmbruster.com/economics.html">
-  <meta property="og:image" content="https://www.ericarmbruster.com/images/bohm-bawerk.png">
+  <meta property="og:image" content="https://www.ericarmbruster.com/images/bohm-bawerk-og.jpg">
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="Economics - Eric Armbruster">
   <meta name="twitter:description" content="Live macro indicators, the Mises Wire, and a reading list.">
-  <meta name="twitter:image" content="https://www.ericarmbruster.com/images/bohm-bawerk.png">
+  <meta name="twitter:image" content="https://www.ericarmbruster.com/images/bohm-bawerk-og.jpg">
   <link rel="icon" href="images/hector-favicon.png" type="image/png">
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -51,6 +51,9 @@
       background: #0a0d12;
       color: #e8e6dc;
       font-family: var(--font-mono);
+      /* Light/bright focus ring so :focus-visible stays visible on the deep
+         navy terminal bg (the cream default --accent-red would vanish). */
+      --focus: #ffaa33;
     }
     body.econ-page::before {
       content: '';
@@ -93,6 +96,20 @@
       text-transform: uppercase;
       letter-spacing: 0.08em;
       font-size: 0.75rem;
+    }
+    /* Footer contact links — readable cream on the dark terminal footer
+       (the base anchor's dark --ink would be invisible here). Scoped to the
+       footer so it can't leak into the header chrome. */
+    .econ-page .site-footer a {
+      color: #e8e6dc;
+      background: none;
+      padding: 0;
+      transition: color 120ms ease, text-shadow 120ms ease;
+    }
+    .econ-page .site-footer a:hover {
+      color: #ffe09a;
+      background: none;
+      text-shadow: 0 0 6px rgba(255, 224, 154, 0.5);
     }
 
     /* Default link styling inside .econ-page — amber, no underline. */
@@ -265,6 +282,13 @@
     .econ-tape-cell.is-down .econ-tape-value::before {
       content: '\25BC\00A0';            /* ▼  */
       font-size: 0.78em;
+    }
+    /* Stale/unavailable cell — a series that failed to load. Dimmed value, no
+       glow, no arrow; the em-dash is set by setTapeStale(). Kept >=4.5:1 on the
+       deep navy bg so it reads as "no data" rather than broken. */
+    .econ-tape-cell.is-stale .econ-tape-value {
+      color: rgba(232, 230, 220, 0.6);
+      text-shadow: none;
     }
     .econ-tape-sep {
       color: rgba(255, 170, 51, 0.35);
@@ -458,7 +482,7 @@
       content: '\25BC\00A0';            /* ▼  */
       font-size: 0.78em;
     }
-    .econ-indicator-card.is-error .econ-indicator-value { color: rgba(232, 230, 220, 0.25); }
+    .econ-indicator-card.is-error .econ-indicator-value { color: rgba(232, 230, 220, 0.6); }
     .econ-indicator-link {
       display: block;
       color: inherit;
@@ -599,6 +623,8 @@
 
 <body class="econ-page">
 
+  <a class="skip-link" href="#main">Skip to main content</a>
+
   <header class="site-header">
     <div class="site-header__inner">
       <a class="brand" href="index.html">Eric Armbruster</a>
@@ -620,7 +646,7 @@
     </div>
   </header>
 
-  <main class="page">
+  <main id="main" class="page">
 
     <!-- Tape strip — six key macro readouts. Cells with [data-tape="SERIES_ID"]
          are hydrated by updateCard() once FRED data loads. Cells link out to
@@ -765,6 +791,11 @@
   <footer class="site-footer">
     <div class="site-footer__inner">
       <span>&copy; 2026 Eric Armbruster</span>
+      <div class="footer-links">
+        <a href="mailto:eric.m.armbruster@gmail.com">email</a>
+        <a href="https://github.com/tenderbrew" target="_blank" rel="noopener">github</a>
+        <a href="https://www.linkedin.com/in/ericmarmbruster/" target="_blank" rel="noopener">linkedin</a>
+      </div>
     </div>
   </footer>
 
@@ -852,7 +883,22 @@
         indicatorCards[definition.id] = card;
       }
 
+      // Flag the matching top-of-page tape cell (if any) as unavailable so a
+      // failed/null FRED series doesn't sit stuck on its '--' placeholder.
+      // Blanks the value to an em-dash, clears any stale direction arrow, and
+      // adds .is-stale + a title for the reason.
+      function setTapeStale(seriesId, message) {
+        var tapeCell = document.querySelector('[data-tape="' + seriesId + '"]');
+        if (!tapeCell) return;
+        var tapeValueEl = tapeCell.querySelector('.econ-tape-value');
+        if (tapeValueEl) tapeValueEl.textContent = '—';
+        tapeCell.classList.remove('is-up', 'is-down');
+        tapeCell.classList.add('is-stale');
+        tapeCell.title = message;
+      }
+
       function setCardError(seriesId, message) {
+        setTapeStale(seriesId, message);
         var card = indicatorCards[seriesId];
         if (!card) return;
         card.classList.add('is-error');
@@ -886,7 +932,8 @@
         if (tapeCell) {
           var tapeValueEl = tapeCell.querySelector('.econ-tape-value');
           if (tapeValueEl) tapeValueEl.textContent = formattedValue;
-          tapeCell.classList.remove('is-up', 'is-down');
+          tapeCell.classList.remove('is-up', 'is-down', 'is-stale');
+          tapeCell.removeAttribute('title');
           if (delta !== null) {
             tapeCell.classList.toggle('is-up', delta > 0);
             tapeCell.classList.toggle('is-down', delta < 0);
@@ -966,7 +1013,7 @@
 
       indicatorDefinitions.forEach(createIndicatorCard);
 
-      fetch('econ-data.json', { cache: 'no-store' })
+      fetch('econ-data.json')
         .then(function (r) {
           if (!r.ok) throw new Error('HTTP ' + r.status);
           return r.json();
