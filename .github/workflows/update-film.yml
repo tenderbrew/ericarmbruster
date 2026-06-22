@@ -1,0 +1,32 @@
+# Runs film-fetch.js every 6 hours, commits updated JSON back to the repo.
+# Letterboxd RSS + profile pages need no API key, so no secrets are required.
+name: Update Film Data
+
+on:
+  schedule:
+    - cron: '30 */6 * * *' # Every 6 hours (00:30, 06:30, 12:30, 18:30 UTC)
+  workflow_dispatch: # Manual trigger from Actions tab
+
+jobs:
+  fetch:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v6
+
+      - uses: actions/setup-node@v6
+        with:
+          node-version: '22'
+
+      - name: Fetch film data
+        run: node film-fetch.js
+
+      # Skip commit if nothing changed.
+      - name: Commit and push if changed
+        run: |
+          git diff --quiet film-data.json && exit 0
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add film-data.json
+          git commit -m "chore: update film data"
+          git push

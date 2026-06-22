@@ -549,7 +549,7 @@
         <div><dt>High</dt>  <dd id="btc-chart-high">$&mdash;</dd></div>
         <div><dt>Low</dt>   <dd id="btc-chart-low">$&mdash;</dd></div>
       </dl>
-      <p class="btc-note">Source: <a href="https://www.cryptocompare.com/" target="_blank" rel="noopener">CryptoCompare</a>.</p>
+      <p class="btc-note">Source: <a href="https://www.coingecko.com/" target="_blank" rel="noopener">CoinGecko</a>.</p>
     </section>
 
     <!-- NEWS -->
@@ -608,10 +608,10 @@
   </footer>
 
   <!--
-    Bitcoin data pipeline — preserved verbatim from the previous design,
-    except renderBlocks() now generates mempool-style gradient tiles.
+    Bitcoin data — reads the cron-built btc-data.json (btc-fetch.js) at load.
+    No third-party APIs or CORS proxies run in the browser.
     Targets: #btc-price-*, #btc-chart-* (incl. SVG paths), #btc-block-*,
-    #btc-news-*. Three independent loaders run in parallel.
+    #btc-news-*.
   -->
   <script>
     (function () {
@@ -635,23 +635,7 @@
       var newsStatus = document.getElementById('btc-news-status');
       var newsList = document.getElementById('btc-news-list');
 
-      var endpoints = {
-        priceFull: 'https://min-api.cryptocompare.com/data/pricemultifull?fsyms=BTC&tsyms=USD',
-        histoday: 'https://min-api.cryptocompare.com/data/v2/histoday?fsym=BTC&tsym=USD&limit=90',
-        news: 'https://api.rss2json.com/v1/api.json?rss_url=https%3A%2F%2Fwww.coindesk.com%2Farc%2Foutboundfeeds%2Frss%2F',
-        blocks: 'https://mempool.space/api/blocks'
-      };
-
-      var fallbackNews = [
-        { title: 'The Bitcoin Standard Reading Thread', url: 'https://bitcoin.org/bitcoin.pdf', source: 'Bitcoin.org', publishedOn: Date.now() / 1000 },
-        { title: 'Mastering Bitcoin Repository', url: 'https://github.com/bitcoinbook/bitcoinbook', source: 'GitHub', publishedOn: Date.now() / 1000 }
-      ];
-
-      var fallbackBlocks = [
-        { height: 937271, id: '00000000000000000000da583ef9da2814722dbbe54ae858ff5fdd706f928777', timestamp: 1771438210 },
-        { height: 937270, id: '000000000000000000013f89dba10fd4bd5f15d0dd0f81df2d12ef16147f224f', timestamp: 1771437582 },
-        { height: 937269, id: '0000000000000000000044ca9e5d0e9219e34ef3008221dc38a6dd9fbf5cefd3', timestamp: 1771436640 }
-      ];
+      var dataUrl = 'btc-data.json';
 
       function formatCurrency(value) {
         if (!Number.isFinite(value)) return '$--';
@@ -697,15 +681,6 @@
         } finally {
           clearTimeout(timer);
         }
-      }
-
-      function computeWindowChange(points, days) {
-        if (!Array.isArray(points) || points.length < 2) return null;
-        var end = points[points.length - 1].price;
-        var startIndex = Math.max(0, points.length - 1 - days);
-        var start = points[startIndex].price;
-        if (!Number.isFinite(start) || start === 0 || !Number.isFinite(end)) return null;
-        return ((end - start) / start) * 100;
       }
 
       function renderChart(points) {
@@ -801,76 +776,72 @@
         });
       }
 
-      async function loadMarketData() {
-        try {
-          var responses = await Promise.all([
-            fetchJsonWithTimeout(endpoints.priceFull, 8000),
-            fetchJsonWithTimeout(endpoints.histoday, 9000)
-          ]);
-          var raw = responses[0].RAW && responses[0].RAW.BTC && responses[0].RAW.BTC.USD;
-          if (!raw) throw new Error('Missing price data');
-          var livePrice = Number(raw.PRICE);
-          var change24Value = Number(raw.CHANGEPCT24HOUR);
-          var histoDays = (responses[1].Data && Array.isArray(responses[1].Data.Data)) ? responses[1].Data.Data : [];
-          var historyPoints = histoDays.map(function (day) {
-            return { ts: Number(day.time) * 1000, price: Number(day.close) };
-          }).filter(function (p) { return Number.isFinite(p.ts) && Number.isFinite(p.price) && p.price > 0; });
-          var change7Value = computeWindowChange(historyPoints, 7);
-          var change30Value = computeWindowChange(historyPoints, 30);
-          priceValue.textContent = formatCurrency(livePrice);
-          change24.textContent = formatPercent(change24Value);
-          change7.textContent = formatPercent(change7Value);
-          change30.textContent = formatPercent(change30Value);
-          setSignedClass(change24, change24Value);
-          setSignedClass(change7, change7Value);
-          setSignedClass(change30, change30Value);
-          lastSync.textContent = formatDateTime(Date.now());
-          renderChart(historyPoints);
-          priceStatus.textContent = 'Live market data.';
-        } catch (error) {
-          priceValue.textContent = '$67,000';
-          change24.textContent = '--';
-          change7.textContent = '--';
-          change30.textContent = '--';
-          setSignedClass(change24, null);
-          setSignedClass(change7, null);
-          setSignedClass(change30, null);
-          lastSync.textContent = 'Snapshot mode';
-          renderChart([]);
-          priceStatus.textContent = 'Market feed unavailable. Showing cached snapshot.';
-        }
+      function showError(message) {
+        priceStatus.textContent = message;
+        priceValue.textContent = '$--';
+        change24.textContent = '--';
+        change7.textContent = '--';
+        change30.textContent = '--';
+        setSignedClass(change24, null);
+        setSignedClass(change7, null);
+        setSignedClass(change30, null);
+        lastSync.textContent = 'Unavailable';
+        renderChart([]);
+        blockStatus.textContent = message;
+        renderBlocks([]);
+        newsStatus.textContent = message;
+        renderNews([]);
       }
 
-      async function loadNews() {
-        renderNews(fallbackNews);
+      // Single same-origin read of the cron-built snapshot (btc-fetch.js).
+      // No third-party APIs or CORS proxies at page load.
+      async function loadData() {
+        var data;
         try {
-          var payload = await fetchJsonWithTimeout(endpoints.news, 9000);
-          if (!payload || payload.status !== 'ok' || !Array.isArray(payload.items)) throw new Error('Invalid news payload');
-          var items = payload.items.map(function (entry) {
-            return { title: entry.title, url: entry.link, source: 'CoinDesk', publishedOn: Math.floor(new Date(entry.pubDate).getTime() / 1000) };
-          });
-          renderNews(items);
-          newsStatus.textContent = 'Live headlines loaded.';
+          data = await fetchJsonWithTimeout(dataUrl, 8000);
         } catch (error) {
-          newsStatus.textContent = 'News feed unavailable. Showing fallback links.';
+          showError('Data feed unavailable right now.');
+          return;
         }
+
+        // Price + precomputed 24h / 7d / 30d moves.
+        var price = data.price ? Number(data.price.usd) : NaN;
+        var moves = data.moves || {};
+        priceValue.textContent = formatCurrency(price);
+        change24.textContent = formatPercent(Number(moves.d1));
+        change7.textContent = formatPercent(Number(moves.d7));
+        change30.textContent = formatPercent(Number(moves.d30));
+        setSignedClass(change24, Number(moves.d1));
+        setSignedClass(change7, Number(moves.d7));
+        setSignedClass(change30, Number(moves.d30));
+        lastSync.textContent = data.fetchedAt ? formatDateTime(data.fetchedAt) : 'Unknown';
+        priceStatus.textContent = 'Latest snapshot from the data feed.';
+
+        // 90-day history -> chart (renderChart reads point.price).
+        var history = Array.isArray(data.history90d) ? data.history90d.map(function (d) {
+          return { price: Number(d.close) };
+        }).filter(function (p) { return Number.isFinite(p.price) && p.price > 0; }) : [];
+        renderChart(history);
+
+        // Recent blocks.
+        var blocks = Array.isArray(data.blocks) ? data.blocks : [];
+        renderBlocks(blocks);
+        blockStatus.textContent = blocks.length ? 'Recent blocks via mempool.space.' : 'No block data available.';
+
+        // Headlines — baked shape { title, link, pubDate }.
+        var news = Array.isArray(data.news) ? data.news.map(function (n) {
+          return {
+            title: n.title,
+            url: n.link,
+            source: 'CoinDesk',
+            publishedOn: n.pubDate ? Math.floor(new Date(n.pubDate).getTime() / 1000) : 0
+          };
+        }) : [];
+        renderNews(news);
+        newsStatus.textContent = news.length ? 'Headlines from CoinDesk.' : 'No headlines available.';
       }
 
-      async function loadBlocks() {
-        renderBlocks(fallbackBlocks);
-        try {
-          var payload = await fetchJsonWithTimeout(endpoints.blocks, 9000);
-          if (!Array.isArray(payload)) throw new Error('Invalid block payload');
-          renderBlocks(payload);
-          blockStatus.textContent = 'Latest blocks from mempool.space.';
-        } catch (error) {
-          blockStatus.textContent = 'Block feed unavailable. Showing recent snapshot.';
-        }
-      }
-
-      loadMarketData();
-      loadNews();
-      loadBlocks();
+      loadData();
     })();
   </script>
 
