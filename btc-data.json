@@ -1,55 +1,15 @@
 {
-  "fetchedAt": "2026-06-12T17:38:57.940Z",
+  "fetchedAt": "2026-06-22T17:12:03.603Z",
   "price": {
-    "usd": 63776,
-    "time": 1781285703
+    "usd": 64580,
+    "time": 1782148252
   },
   "moves": {
-    "d1": 0.35199218096362284,
-    "d7": 4.68503203530819,
-    "d30": -19.55377625876098
+    "d1": 2.132042631729414,
+    "d7": -2.5956767059131525,
+    "d30": -15.771947824866084
   },
   "history90d": [
-    {
-      "date": "2026-03-15",
-      "close": 71217.1010283798
-    },
-    {
-      "date": "2026-03-16",
-      "close": 72681.9132538886
-    },
-    {
-      "date": "2026-03-17",
-      "close": 74858.14870100339
-    },
-    {
-      "date": "2026-03-18",
-      "close": 73926.27899152413
-    },
-    {
-      "date": "2026-03-19",
-      "close": 71255.86350265636
-    },
-    {
-      "date": "2026-03-20",
-      "close": 69871.4514796119
-    },
-    {
-      "date": "2026-03-21",
-      "close": 70552.62530009366
-    },
-    {
-      "date": "2026-03-22",
-      "close": 68733.54779458739
-    },
-    {
-      "date": "2026-03-23",
-      "close": 67848.87605821833
-    },
-    {
-      "date": "2026-03-24",
-      "close": 70892.82823994374
-    },
     {
       "date": "2026-03-25",
       "close": 70524.51175942823
@@ -371,120 +331,160 @@
       "close": 63552.30087011473
     },
     {
-      "date": "2026-06-12",
-      "close": 63810.622814591545
+      "date": "2026-06-13",
+      "close": 63537.739003707065
+    },
+    {
+      "date": "2026-06-14",
+      "close": 64377.57668942172
+    },
+    {
+      "date": "2026-06-15",
+      "close": 65713.6235604093
+    },
+    {
+      "date": "2026-06-16",
+      "close": 66300.95853652984
+    },
+    {
+      "date": "2026-06-17",
+      "close": 65598.9439666077
+    },
+    {
+      "date": "2026-06-18",
+      "close": 64422.57366477588
+    },
+    {
+      "date": "2026-06-19",
+      "close": 62900.22709317204
+    },
+    {
+      "date": "2026-06-20",
+      "close": 63513.65867862926
+    },
+    {
+      "date": "2026-06-21",
+      "close": 64240.23278038838
+    },
+    {
+      "date": "2026-06-22",
+      "close": 63231.86958363731
+    },
+    {
+      "date": "2026-06-22",
+      "close": 64597.97577268009
     }
   ],
   "blocks": [
     {
-      "height": 953398,
-      "id": "00000000000000000001cce19cad0ad75d1cbf7e980d89baf1f89a92e9165c61",
-      "timestamp": 1781284803,
-      "txCount": 4404
+      "height": 954867,
+      "id": "00000000000000000000e0c57d35ace381c80d5940248a1b43d87ca05ac2561d",
+      "timestamp": 1782147755,
+      "txCount": 4099
     },
     {
-      "height": 953397,
-      "id": "0000000000000000000027041cf5c8662ba7f09d3c36ca90a182d0d54d72889d",
-      "timestamp": 1781284424,
-      "txCount": 3765
+      "height": 954866,
+      "id": "000000000000000000000b951399b504a52a3fdfa1d33bcde59ac6c019c4af1c",
+      "timestamp": 1782147613,
+      "txCount": 4986
     },
     {
-      "height": 953396,
-      "id": "00000000000000000001b5a266d6cd4c9b8dcfb418ce4463d77c05ab4ee66827",
-      "timestamp": 1781283745,
-      "txCount": 3382
+      "height": 954865,
+      "id": "000000000000000000022e24edf59089c2fe4b8752abe1e7bffb11ce5f34c473",
+      "timestamp": 1782147033,
+      "txCount": 4315
     },
     {
-      "height": 953395,
-      "id": "000000000000000000011c3c1764030968d1f30b4a39c245fe49f680db04918b",
-      "timestamp": 1781283541,
-      "txCount": 2140
+      "height": 954864,
+      "id": "00000000000000000001f246e44e262cd9506027a21b59c8aba6874523a3653f",
+      "timestamp": 1782146336,
+      "txCount": 3416
     },
     {
-      "height": 953394,
-      "id": "00000000000000000000a3dbc406a2c40a06af0a9e5d792e43b9981dc9960d2e",
-      "timestamp": 1781283417,
-      "txCount": 4250
+      "height": 954863,
+      "id": "0000000000000000000113bcb4e7c1323ae3ee585b5041b4b3fa972c0e84b8bc",
+      "timestamp": 1782145887,
+      "txCount": 4963
     },
     {
-      "height": 953393,
-      "id": "000000000000000000011b0aa24e63b6843a63f0de6e3cd2971312a585fe5376",
-      "timestamp": 1781282613,
-      "txCount": 4137
+      "height": 954862,
+      "id": "000000000000000000022cfb4d4e9fc91f9836d160777cb5f8680614d3f0b19b",
+      "timestamp": 1782145290,
+      "txCount": 4523
     },
     {
-      "height": 953392,
-      "id": "00000000000000000000cba6037909e41ef624c45a9c31d008a38f908cb177c2",
-      "timestamp": 1781281744,
-      "txCount": 4433
+      "height": 954861,
+      "id": "000000000000000000023a7508fe8691c45575335aef30f990a3be44c1b8f029",
+      "timestamp": 1782144630,
+      "txCount": 4583
     },
     {
-      "height": 953391,
-      "id": "00000000000000000001cbd6be59e2af4e2879d61f88b2592ed97fb07ab8f378",
-      "timestamp": 1781280996,
-      "txCount": 4726
+      "height": 954860,
+      "id": "0000000000000000000080ff4c6973f36419aa62c58a66e0f81934858dd45bc4",
+      "timestamp": 1782144544,
+      "txCount": 4545
     }
   ],
   "news": [
     {
-      "title": "VanEck bets BNB’s real-world usage can stand out in a crowded crypto ETF market",
-      "link": "https://www.coindesk.com/markets/2026/06/12/vaneck-bets-bnb-s-real-world-usage-can-stand-out-in-a-crowded-crypto-etf-market",
-      "pubDate": "Fri, 12 Jun 2026 16:05:31 +0000"
+      "title": "Ethereum Foundation talent exodus sparks fresh debate over leadership",
+      "link": "https://www.coindesk.com/tech/2026/06/22/ethereum-foundation-talent-exodus-sparks-fresh-debate-over-leadership",
+      "pubDate": "Mon, 22 Jun 2026 16:39:41 +0000"
     },
     {
-      "title": "Elon Musk's SpaceX soars 20% in blockbuster Nasdaq debut",
-      "link": "https://www.coindesk.com/markets/2026/06/12/spacex-opens-at-usdtk-in-blockbuster-nasdaq-debut",
-      "pubDate": "Fri, 12 Jun 2026 15:55:42 +0000"
+      "title": "Crypto's second U.S. lobbying front — tax policy — sees industry push on mining, staking",
+      "link": "https://www.coindesk.com/policy/2026/06/22/crypto-s-second-u-s-lobbying-front-tax-policy-sees-industry-push-on-mining-staking",
+      "pubDate": "Mon, 22 Jun 2026 15:56:13 +0000"
     },
     {
-      "title": "Bloomberg Analyst: Most Bitcoin ETF Investors Have Stayed Put Despite Outflows",
-      "link": "https://www.coindesk.com/markets/2026/06/08/bloomberg-analyst-most-bitcoin-etf-investors-have-stayed-put-despite-outflows",
-      "pubDate": "Fri, 12 Jun 2026 15:49:36 +0000"
+      "title": "Anchorage aims to bring banks onchain with new tokenized deposit platform",
+      "link": "https://www.coindesk.com/business/2026/06/19/anchorage-aims-to-bring-banks-onchain-with-new-tokenized-deposit-platform",
+      "pubDate": "Mon, 22 Jun 2026 15:00:00 +0000"
     },
     {
-      "title": "Kalshi’s crypto perpetuals spark debate over whether they’re futures or swaps",
-      "link": "https://www.coindesk.com/policy/2026/06/12/kalshi-s-crypto-perpetuals-spark-debate-over-whether-they-re-futures-or-swaps",
-      "pubDate": "Fri, 12 Jun 2026 15:37:08 +0000"
+      "title": "MoneyGram joins Solana as validator amid stablecoin payment push",
+      "link": "https://www.coindesk.com/business/2026/06/22/moneygram-joins-solana-as-validator-amid-stablecoin-payment-push",
+      "pubDate": "Mon, 22 Jun 2026 13:53:16 +0000"
     },
     {
-      "title": "The U.S. government is betting $2 Billion on quantum computing, and the defense side can't keep up",
-      "link": "https://www.coindesk.com/opinion/2026/06/12/the-u-s-government-is-betting-usd2-billion-on-quantum-computing-and-the-defense-side-can-t-keep-up",
-      "pubDate": "Fri, 12 Jun 2026 15:31:00 +0000"
+      "title": "OKX and NYSE partner to bridge tradfi and crypto markets in joint venture led by Andrew Cuomo",
+      "link": "https://www.coindesk.com/markets/2026/06/22/okx-and-nyse-partner-to-bridge-tradfi-and-crypto-markets-in-joint-venture-led-by-andrew-cuomo",
+      "pubDate": "Mon, 22 Jun 2026 13:40:27 +0000"
     },
     {
-      "title": "FTX's Sam Bankman-Fried loses appeal of criminal conviction on fraud, conspiracy charges",
-      "link": "https://www.coindesk.com/policy/2026/06/12/ftx-s-sam-bankman-fried-loses-appeal-of-criminal-conviction-on-fraud-conspiracy-charges",
-      "pubDate": "Fri, 12 Jun 2026 14:13:40 +0000"
+      "title": "Bitmine added $92 million of ETH, with Tom Lee continuing to believe in 'crypto spring'",
+      "link": "https://www.coindesk.com/business/2026/06/22/bitmine-added-usd92-million-of-eth-with-tom-lee-continuing-to-believe-in-crypto-spring",
+      "pubDate": "Mon, 22 Jun 2026 13:04:44 +0000"
     },
     {
-      "title": "XRP sentiment falls to 8-month low, and that has been a buy signal before",
-      "link": "https://www.coindesk.com/markets/2026/06/12/xrp-sentiment-falls-to-an-eight-month-low-and-that-has-been-a-buy-signal-before",
-      "pubDate": "Fri, 12 Jun 2026 14:08:03 +0000"
+      "title": "Bitcoin mining network becoming more sensitive to price swings, JPMorgan says",
+      "link": "https://www.coindesk.com/markets/2026/06/22/bitcoin-mining-network-becoming-more-sensitive-to-price-swings-jpmorgan-says",
+      "pubDate": "Mon, 22 Jun 2026 12:51:16 +0000"
     },
     {
-      "title": "CoinDesk 20 performance update: Ethereum (ETH) falls 1% as index trades lower",
-      "link": "https://www.coindesk.com/coindesk-indices/2026/06/12/coindesk-20-performance-update-ethereum-eth-falls-1-as-index-trades-lower",
-      "pubDate": "Fri, 12 Jun 2026 13:11:26 +0000"
+      "title": "Strategy added $35 million in bitcoin, $300 million in cash reserves last week",
+      "link": "https://www.coindesk.com/markets/2026/06/22/strategy-added-usd35-million-in-bitcoin-usd300-million-in-cash-reserves-last-week",
+      "pubDate": "Mon, 22 Jun 2026 12:39:40 +0000"
     },
     {
-      "title": "For crypto, SpaceX's stock market debut could go either way",
-      "link": "https://www.coindesk.com/daybook-us/2026/06/12/for-crypto-spacex-s-stock-market-debut-could-go-either-way",
-      "pubDate": "Fri, 12 Jun 2026 11:23:25 +0000"
+      "title": "TradFi fund manager Baillie Gifford introduces Solana, Ethereum tokenized fund with BNY",
+      "link": "https://www.coindesk.com/business/2026/06/22/tradfi-fund-manager-baillie-gifford-introduces-solana-ethereum-tokenized-fund-with-bny",
+      "pubDate": "Mon, 22 Jun 2026 12:01:03 +0000"
     },
     {
-      "title": "Monero price rockets 33% to $438 amid $120 million onchain laundering maze",
-      "link": "https://www.coindesk.com/markets/2026/06/12/monero-spiked-to-usd430-as-usd120-million-moved-through-it-then-tether-froze-usd72-million",
-      "pubDate": "Fri, 12 Jun 2026 11:10:51 +0000"
+      "title": "Bitcoin ETF outflow pain eases just as another headwind gathers strength",
+      "link": "https://www.coindesk.com/daybook-us/2026/06/22/bitcoin-etf-outflow-pain-eases-just-as-another-headwind-strengthens",
+      "pubDate": "Mon, 22 Jun 2026 11:30:13 +0000"
     },
     {
-      "title": "While bitcoin holds near $63,000, some data points to pain ahead for bulls",
-      "link": "https://www.coindesk.com/markets/2026/06/12/while-bitcoin-holds-near-usd63-000-some-data-points-to-pain-ahead-for-bulls",
-      "pubDate": "Fri, 12 Jun 2026 10:41:24 +0000"
+      "title": "As bitcoin, altcoin prices gain, derivatives signal skepticism over a sustained rally",
+      "link": "https://www.coindesk.com/markets/2026/06/22/as-bitcoin-altcoin-prices-gain-derivatives-signal-skepticism-over-a-sustained-rally",
+      "pubDate": "Mon, 22 Jun 2026 11:05:38 +0000"
     },
     {
-      "title": "Metaplanet buys Siiibo Securities to accelerate bitcoin financial ecosystem plans",
-      "link": "https://www.coindesk.com/markets/2026/06/12/metaplanet-buys-siiibo-securities-to-accelerate-bitcoin-financial-ecosystem-plans",
-      "pubDate": "Fri, 12 Jun 2026 10:00:12 +0000"
+      "title": "Bank of England backs down on strict stablecoin holding limits, sets $50 billion issuance cap",
+      "link": "https://www.coindesk.com/policy/2026/06/22/bank-of-england-backs-down-on-strict-stablecoin-holding-limits-sets-usd50-billion-issuance-cap",
+      "pubDate": "Mon, 22 Jun 2026 10:48:14 +0000"
     }
   ]
 }
