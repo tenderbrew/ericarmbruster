@@ -66,7 +66,7 @@ If you restyle a page's background, update its `theme-color` to match.
 ### JS — what's live and what's vestigial
 
 - **Live:** Google Analytics inline snippet in every `<head>`. The `video-games.html` inline IIFE that fetches `steam-data.json` at page load.
-- **Vestigial:** `js/drawer.js` and `js/ticker.js` — the slide-out nav drawer and FRED/CoinGecko ticker tape from the dashboard era. Not referenced from any HTML. Don't add them back without a reason.
+- **Removed in cleanup:** `js/drawer.js` and `js/ticker.js` — the slide-out nav drawer and FRED/CoinGecko ticker tape from the dashboard era, referenced from no HTML. Don't recreate them.
 
 Page-specific JS is written inline as IIFEs at the bottom of each HTML file; there are no external page-specific JS files.
 
