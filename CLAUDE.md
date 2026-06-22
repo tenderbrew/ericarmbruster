@@ -13,13 +13,16 @@ Pages: `index`, `about`, `projects`, `video-games`, `film`, `economics`, `self-h
 ## Working on the site
 
 - **Preview locally:** serve from the repo root with any static file server so relative paths (`css/...`, `images/...`, `steam-data.json`, `econ-data.json`) resolve. `file://` works for visual checks but breaks `fetch()` for the JSON files.
+- **Visual check (headless, no install):** `node tools/screenshot.js [pages…]` spins up a throwaway local server and drives the system Chrome/Edge to save `screenshots/check-<page>.png` for each page, then asserts the data-driven pages (bitcoin/film/seymour) actually *hydrated* rather than falling back. Defaults to all nine pages; pass names to limit, e.g. `node tools/screenshot.js bitcoin film`. This is how to actually *see* a UI change instead of only claiming it works. (Gotchas the script already handles, documented at its top: use `--headless=old` and launch Chrome asynchronously, or the in-process server gets starved and pages never load.)
 - **Steam data refresh (manual):** `node steam-fetch.js` — needs `.env` with `STEAM_API_KEY` and `STEAM_ID`. Writes pretty-printed `steam-data.json`.
 - **Steam data refresh (automatic):** `.github/workflows/update-steam.yml` runs daily at 08:00 UTC.
 - **Economics data refresh (manual):** `node econ-fetch.js` — no env vars required. Writes pretty-printed `econ-data.json` (FRED indicators + Mises Wire RSS).
 - **Economics data refresh (automatic):** `.github/workflows/update-econ.yml` runs every 6 hours.
-- *Heads-up*: because both workflows commit back to `main`, upstream often has commits you don't have locally — `git pull --rebase origin main` before pushing.
+- **Bitcoin data refresh:** `node btc-fetch.js` → `btc-data.json`; `.github/workflows/update-btc.yml` runs every 3 hours. `bitcoin.html` reads this baked file at load — no live crypto APIs in the browser.
+- **Film data refresh:** `node film-fetch.js` → `film-data.json`; `.github/workflows/update-film.yml` runs every 6 hours. `film.html` reads this baked file at load — no Letterboxd scraping or CORS proxies in the browser.
+- *Heads-up*: because these data workflows commit back to `main`, upstream often has commits you don't have locally — `git pull --rebase origin main` before pushing.
 
-There is no lint or test command. Validation is "open it in a browser." If you make UI changes you can't preview yourself, say so explicitly rather than claiming success.
+There is no lint or test command. Validation is "open it in a browser" — or run `node tools/screenshot.js` for a headless render + screenshot you can actually inspect. If you change UI and genuinely can't preview it, say so explicitly rather than claiming success.
 
 ## Architecture
 
