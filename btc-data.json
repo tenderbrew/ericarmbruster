@@ -1,13 +1,13 @@
 {
-  "fetchedAt": "2026-06-23T15:23:02.651Z",
+  "fetchedAt": "2026-06-23T20:21:04.768Z",
   "price": {
-    "usd": 62182,
-    "time": 1782228041
+    "usd": 62396,
+    "time": 1782245727
   },
   "moves": {
-    "d1": -2.775599519025229,
-    "d7": -5.208839898927408,
-    "d30": -19.231737735446707
+    "d1": -2.4410007331558625,
+    "d7": -4.8826151351431974,
+    "d30": -18.953772920474286
   },
   "history90d": [
     {
@@ -372,60 +372,75 @@
     },
     {
       "date": "2026-06-23",
-      "close": 62210.11844384187
+      "close": 62384.70776996878
     }
   ],
   "blocks": [
     {
-      "height": 955018,
-      "id": "0000000000000000000126465ee688d3044f7f25a5269ee678dfc00bb03808b0",
-      "timestamp": 1782227774,
-      "txCount": 4548
+      "height": 955054,
+      "id": "000000000000000000010eab88ae9b1189f261acb9c3b00373191af494d18291",
+      "timestamp": 1782245875,
+      "txCount": 6485
     },
     {
-      "height": 955017,
-      "id": "0000000000000000000084c0e72b4312d5b971da9ead4685966843d525f42a28",
-      "timestamp": 1782226085,
-      "txCount": 4697
+      "height": 955053,
+      "id": "00000000000000000000c476e972e61037944ef87ec5bdf1ec0417a07628f0e4",
+      "timestamp": 1782245861,
+      "txCount": 4783
     },
     {
-      "height": 955016,
-      "id": "00000000000000000002268a19eab478af5abc563a1e11151bc62a4e901c8e46",
-      "timestamp": 1782225818,
-      "txCount": 3315
+      "height": 955052,
+      "id": "0000000000000000000219c5196ac27338a15346717997beeb16dad93d9b6940",
+      "timestamp": 1782245809,
+      "txCount": 4325
     },
     {
-      "height": 955015,
-      "id": "00000000000000000000f83409e7b1aabe85c128e1209c28dbd0f62681528b9f",
-      "timestamp": 1782225808,
-      "txCount": 4548
+      "height": 955051,
+      "id": "0000000000000000000108841070be2f607dccba87618737a0d0d6d6baa0c6e3",
+      "timestamp": 1782245628,
+      "txCount": 5080
     },
     {
-      "height": 955014,
-      "id": "0000000000000000000180f826522ff0d5cbfc3283a6566283a96a341d48e8c4",
-      "timestamp": 1782224914,
-      "txCount": 4420
+      "height": 955050,
+      "id": "0000000000000000000019c045fd27698b757620a295ed790c05801e31c07ade",
+      "timestamp": 1782245393,
+      "txCount": 4465
     },
     {
-      "height": 955013,
-      "id": "000000000000000000002e4691e3ce269e0139e6793e2b1e22861e83b327086b",
-      "timestamp": 1782223949,
-      "txCount": 3935
+      "height": 955049,
+      "id": "00000000000000000001d469dfbc6d0ca3401103407c3a1e61e50d59f71a8dc1",
+      "timestamp": 1782245150,
+      "txCount": 3518
     },
     {
-      "height": 955012,
-      "id": "0000000000000000000112d2ec2fcff80a8e17a8da10b5764345bdabcb37a5d2",
-      "timestamp": 1782223716,
-      "txCount": 4545
+      "height": 955048,
+      "id": "00000000000000000000eab975379d6603dddc0367d63d4731037331adbf8def",
+      "timestamp": 1782242531,
+      "txCount": 4710
     },
     {
-      "height": 955011,
-      "id": "00000000000000000001a8df13f4eecf2f91567f6439f9c634a0d4199abb5a07",
-      "timestamp": 1782223480,
-      "txCount": 3336
+      "height": 955047,
+      "id": "00000000000000000001d02343a45f88232d471afd1661fa07f88f958e3facda",
+      "timestamp": 1782241856,
+      "txCount": 5795
     }
   ],
   "news": [
+    {
+      "title": "Meta is developing a prediction market app called ‘Arena’ as sector booms: NYT",
+      "link": "https://www.coindesk.com/markets/2026/06/23/meta-is-developing-a-prediction-market-app-called-arena-as-sector-booms-nyt",
+      "pubDate": "Tue, 23 Jun 2026 17:54:32 +0000"
+    },
+    {
+      "title": "BNY sees 'FOMO' driving asset managers into tokenized funds",
+      "link": "https://www.coindesk.com/markets/2026/06/23/bny-sees-fomo-driving-asset-managers-into-tokenized-funds",
+      "pubDate": "Tue, 23 Jun 2026 16:34:34 +0000"
+    },
+    {
+      "title": "Chainlink teams up with 47 South Korean, European banks to speed up international money transfers",
+      "link": "https://www.coindesk.com/markets/2026/06/23/chainlink-teams-up-with-47-south-korean-european-banks-to-speed-up-international-money-transfers",
+      "pubDate": "Tue, 23 Jun 2026 15:40:00 +0000"
+    },
     {
       "title": "Vitalik Buterin says Ethereum Foundation will cut budget 40% in major reset",
       "link": "https://www.coindesk.com/tech/2026/06/23/vitalik-buterin-says-ethereum-foundation-will-cut-budget-40-in-major-reset",
@@ -470,21 +485,6 @@
       "title": "Franklin Templeton closes 250 Digital acquisition deal and sets up new Franklin Crypto division",
       "link": "https://www.coindesk.com/business/2026/06/23/franklin-templeton-closes-250-digital-acquisition-deal-and-sets-up-new-franklin-crypto-division",
       "pubDate": "Tue, 23 Jun 2026 12:35:57 +0000"
-    },
-    {
-      "title": "Strategy's STRC slump prompts Terra comparisons that don't hold up, says analyst",
-      "link": "https://www.coindesk.com/markets/2026/06/23/strategy-s-strc-slid-below-par-reviving-terra-comparisons-that-don-t-hold-up",
-      "pubDate": "Tue, 23 Jun 2026 12:14:07 +0000"
-    },
-    {
-      "title": "Bitcoin volatility looks cheap as $10 billion options settlement nears",
-      "link": "https://www.coindesk.com/daybook-us/2026/06/23/bitcoin-volatility-looks-cheap-as-usd10-billion-options-settlement-nears",
-      "pubDate": "Tue, 23 Jun 2026 11:16:11 +0000"
-    },
-    {
-      "title": "Crypto market drops as Nasdaq tech selloff spills into digital assets",
-      "link": "https://www.coindesk.com/markets/2026/06/23/crypto-market-drops-as-nasdaq-tech-selloff-spills-into-digital-assets",
-      "pubDate": "Tue, 23 Jun 2026 10:45:50 +0000"
     }
   ]
 }
