@@ -1,13 +1,13 @@
 {
-  "fetchedAt": "2026-06-23T20:21:04.768Z",
+  "fetchedAt": "2026-06-23T22:22:03.619Z",
   "price": {
-    "usd": 62396,
-    "time": 1782245727
+    "usd": 62672,
+    "time": 1782252916
   },
   "moves": {
-    "d1": -2.4410007331558625,
-    "d7": -4.8826151351431974,
-    "d30": -18.953772920474286
+    "d1": -2.009462112128091,
+    "d7": -4.46187665474862,
+    "d30": -18.59527624322016
   },
   "history90d": [
     {
@@ -372,60 +372,65 @@
     },
     {
       "date": "2026-06-23",
-      "close": 62384.70776996878
+      "close": 62652.2786309781
     }
   ],
   "blocks": [
     {
-      "height": 955054,
-      "id": "000000000000000000010eab88ae9b1189f261acb9c3b00373191af494d18291",
-      "timestamp": 1782245875,
-      "txCount": 6485
+      "height": 955076,
+      "id": "00000000000000000000b767de4f0a028229179eceb58e9f56887daf7b207d5e",
+      "timestamp": 1782253073,
+      "txCount": 6627
     },
     {
-      "height": 955053,
-      "id": "00000000000000000000c476e972e61037944ef87ec5bdf1ec0417a07628f0e4",
-      "timestamp": 1782245861,
-      "txCount": 4783
+      "height": 955075,
+      "id": "000000000000000000001718d598be899e023cabf0a8fab12e6319ca1128fa71",
+      "timestamp": 1782252994,
+      "txCount": 6055
     },
     {
-      "height": 955052,
-      "id": "0000000000000000000219c5196ac27338a15346717997beeb16dad93d9b6940",
-      "timestamp": 1782245809,
-      "txCount": 4325
+      "height": 955074,
+      "id": "000000000000000000000a35d419bacbac33435dcf811cb3cb814484706fcd44",
+      "timestamp": 1782252742,
+      "txCount": 5511
     },
     {
-      "height": 955051,
-      "id": "0000000000000000000108841070be2f607dccba87618737a0d0d6d6baa0c6e3",
-      "timestamp": 1782245628,
-      "txCount": 5080
+      "height": 955073,
+      "id": "00000000000000000000ffd96e8913937438a03e8cc1a80f3e01edf80e87187b",
+      "timestamp": 1782252278,
+      "txCount": 6554
     },
     {
-      "height": 955050,
-      "id": "0000000000000000000019c045fd27698b757620a295ed790c05801e31c07ade",
-      "timestamp": 1782245393,
-      "txCount": 4465
+      "height": 955072,
+      "id": "00000000000000000001d04d2a3b8a59b7266fa2bc11ace21bd4d243119318a5",
+      "timestamp": 1782252102,
+      "txCount": 5194
     },
     {
-      "height": 955049,
-      "id": "00000000000000000001d469dfbc6d0ca3401103407c3a1e61e50d59f71a8dc1",
-      "timestamp": 1782245150,
-      "txCount": 3518
+      "height": 955071,
+      "id": "00000000000000000002051bdf5e8bc400d11a6ca2c5c11d77cb0efe93682ab7",
+      "timestamp": 1782251548,
+      "txCount": 5146
     },
     {
-      "height": 955048,
-      "id": "00000000000000000000eab975379d6603dddc0367d63d4731037331adbf8def",
-      "timestamp": 1782242531,
-      "txCount": 4710
+      "height": 955070,
+      "id": "0000000000000000000088a5b02a59eaaec9dd1f0ecf50efd02683255519b01b",
+      "timestamp": 1782251522,
+      "txCount": 4666
     },
     {
-      "height": 955047,
-      "id": "00000000000000000001d02343a45f88232d471afd1661fa07f88f958e3facda",
-      "timestamp": 1782241856,
-      "txCount": 5795
+      "height": 955069,
+      "id": "00000000000000000000d6439f89b2fcdd5c04d45cb6bf2b31c0339c0c2ba536",
+      "timestamp": 1782249982,
+      "txCount": 5059
     }
   ],
   "news": [
+    {
+      "title": "Crypto critic Roubini joins tokenization boom with onchain 'Technodollar'",
+      "link": "https://www.coindesk.com/business/2026/06/23/crypto-critic-roubini-joins-tokenization-boom-with-onchain-technodollar",
+      "pubDate": "Tue, 23 Jun 2026 21:54:10 +0000"
+    },
     {
       "title": "Meta is developing a prediction market app called ‘Arena’ as sector booms: NYT",
       "link": "https://www.coindesk.com/markets/2026/06/23/meta-is-developing-a-prediction-market-app-called-arena-as-sector-booms-nyt",
@@ -480,11 +485,6 @@
       "title": "The ECB digital euro takes step forward after winning key European Parliament vote",
       "link": "https://www.coindesk.com/policy/2026/06/23/european-parliament-clears-last-step-for-a-digital-euro-to-break-u-s-payment-grip",
       "pubDate": "Tue, 23 Jun 2026 12:37:20 +0000"
-    },
-    {
-      "title": "Franklin Templeton closes 250 Digital acquisition deal and sets up new Franklin Crypto division",
-      "link": "https://www.coindesk.com/business/2026/06/23/franklin-templeton-closes-250-digital-acquisition-deal-and-sets-up-new-franklin-crypto-division",
-      "pubDate": "Tue, 23 Jun 2026 12:35:57 +0000"
     }
   ]
 }
