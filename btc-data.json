@@ -1,19 +1,15 @@
 {
-  "fetchedAt": "2026-06-22T22:54:31.493Z",
+  "fetchedAt": "2026-06-23T04:18:16.839Z",
   "price": {
-    "usd": 63799,
-    "time": 1782168353
+    "usd": 64001,
+    "time": 1782187823
   },
   "moves": {
-    "d1": 0.8969059749412311,
-    "d7": -3.7736385593148514,
-    "d30": -16.79056208235725
+    "d1": 0.0684901608643429,
+    "d7": -2.43592940676165,
+    "d30": -16.869036808181214
   },
   "history90d": [
-    {
-      "date": "2026-03-25",
-      "close": 70524.51175942823
-    },
     {
       "date": "2026-03-26",
       "close": 71309.26403856269
@@ -371,61 +367,70 @@
       "close": 63231.86958363731
     },
     {
-      "date": "2026-06-22",
-      "close": 63894.11279358805
+      "date": "2026-06-23",
+      "close": 63957.19561383976
+    },
+    {
+      "date": "2026-06-23",
+      "close": 63938.21653681009
     }
   ],
   "blocks": [
     {
-      "height": 954910,
-      "id": "0000000000000000000011eb4a77614010e45368f13e00ca3b5e717a14351f21",
-      "timestamp": 1782168393,
-      "txCount": 4654
+      "height": 954944,
+      "id": "00000000000000000001b720255be001550eaa02303bc8ccfea56f3255202f77",
+      "timestamp": 1782187403,
+      "txCount": 4306
     },
     {
-      "height": 954909,
-      "id": "00000000000000000001a3288287ed138b936f368ef6f1855d572eddfafe1b35",
-      "timestamp": 1782166961,
-      "txCount": 5669
+      "height": 954943,
+      "id": "00000000000000000000c97f9dc542274a69852a521bb768232dbc60ca2ba860",
+      "timestamp": 1782185133,
+      "txCount": 5313
     },
     {
-      "height": 954908,
-      "id": "00000000000000000000ac9c2f407dccd7348366b7739999ccd520481fa855d3",
-      "timestamp": 1782166436,
-      "txCount": 5398
+      "height": 954942,
+      "id": "000000000000000000007d56e0dee6b1b44e7d4b589e31dbc8788ab08975ca12",
+      "timestamp": 1782184279,
+      "txCount": 4623
     },
     {
-      "height": 954907,
-      "id": "00000000000000000001ff85245572333bf63a3f60f13cd6ff28141aa823ce23",
-      "timestamp": 1782166431,
-      "txCount": 4505
+      "height": 954941,
+      "id": "000000000000000000008e35483b84564db6176f1e314e7c088676951c2008d8",
+      "timestamp": 1782183287,
+      "txCount": 4661
     },
     {
-      "height": 954906,
-      "id": "00000000000000000000ee4a31367b6f29382b743ca116f0a8908ea6469c37c3",
-      "timestamp": 1782164919,
-      "txCount": 4223
+      "height": 954940,
+      "id": "000000000000000000020dee4b00d1d384a3a92ea0e6a9a66f399e538ceded41",
+      "timestamp": 1782182879,
+      "txCount": 4892
     },
     {
-      "height": 954905,
-      "id": "000000000000000000016ca3e2746a65ca9bd6b7e3de01b0b0f496faf51355cc",
-      "timestamp": 1782164794,
-      "txCount": 5124
+      "height": 954939,
+      "id": "000000000000000000023adda7adab6eff0d718facfa6123e4ddba007a31ee4b",
+      "timestamp": 1782182104,
+      "txCount": 5744
     },
     {
-      "height": 954904,
-      "id": "00000000000000000000dacc3520bd45a196fe1831e6b62d47a52e69cadd5807",
-      "timestamp": 1782164253,
-      "txCount": 5402
+      "height": 954938,
+      "id": "000000000000000000015d2cc7d7546872939494e2d4a146709f8cdc8eb364ac",
+      "timestamp": 1782182001,
+      "txCount": 4653
     },
     {
-      "height": 954903,
-      "id": "00000000000000000000f03738be9977b6ec88415cb9add6fcc70dbb67056a44",
-      "timestamp": 1782164104,
-      "txCount": 6796
+      "height": 954937,
+      "id": "00000000000000000000ef90bcea4bb54b7ab3f770b75fc68794f4689e5f4c5c",
+      "timestamp": 1782180587,
+      "txCount": 5885
     }
   ],
   "news": [
+    {
+      "title": "U.S. Senate passes housing bill that carries four-year ban on a Fed CBDC",
+      "link": "https://www.coindesk.com/policy/2026/06/22/u-s-senate-passes-housing-bill-that-carries-four-year-ban-on-a-fed-cbdc",
+      "pubDate": "Mon, 22 Jun 2026 23:01:15 +0000"
+    },
     {
       "title": "Securitize and tZERO clash over patents as race to bring Wall Street onchain heats up",
       "link": "https://www.coindesk.com/business/2026/06/22/securitize-and-tzero-clash-over-patents-as-race-to-bring-wall-street-onchain-heats-up",
@@ -480,11 +485,6 @@
       "title": "Bitmine added $92 million of ETH, with Tom Lee continuing to believe in 'crypto spring'",
       "link": "https://www.coindesk.com/business/2026/06/22/bitmine-added-usd92-million-of-eth-with-tom-lee-continuing-to-believe-in-crypto-spring",
       "pubDate": "Mon, 22 Jun 2026 13:04:44 +0000"
-    },
-    {
-      "title": "Bitcoin mining network becoming more sensitive to price swings, JPMorgan says",
-      "link": "https://www.coindesk.com/markets/2026/06/22/bitcoin-mining-network-becoming-more-sensitive-to-price-swings-jpmorgan-says",
-      "pubDate": "Mon, 22 Jun 2026 12:51:16 +0000"
     }
   ]
 }
