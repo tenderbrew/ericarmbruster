@@ -1,13 +1,13 @@
 {
-  "fetchedAt": "2026-06-23T04:18:16.839Z",
+  "fetchedAt": "2026-06-23T10:00:59.356Z",
   "price": {
-    "usd": 64001,
-    "time": 1782187823
+    "usd": 62332,
+    "time": 1782208527
   },
   "moves": {
-    "d1": 0.0684901608643429,
-    "d7": -2.43592940676165,
-    "d30": -16.869036808181214
+    "d1": -2.5410676597710014,
+    "d7": -4.980177681321651,
+    "d30": -19.0369025847651
   },
   "history90d": [
     {
@@ -372,60 +372,95 @@
     },
     {
       "date": "2026-06-23",
-      "close": 63938.21653681009
+      "close": 62318.13797101437
     }
   ],
   "blocks": [
     {
-      "height": 954944,
-      "id": "00000000000000000001b720255be001550eaa02303bc8ccfea56f3255202f77",
-      "timestamp": 1782187403,
-      "txCount": 4306
+      "height": 954985,
+      "id": "00000000000000000001d7af91741d9e93611e304918f597975fb985fbc7b5a2",
+      "timestamp": 1782208747,
+      "txCount": 4319
     },
     {
-      "height": 954943,
-      "id": "00000000000000000000c97f9dc542274a69852a521bb768232dbc60ca2ba860",
-      "timestamp": 1782185133,
-      "txCount": 5313
+      "height": 954984,
+      "id": "00000000000000000000c9b225a470616a4036c773387110d1bb379c00e932d6",
+      "timestamp": 1782206883,
+      "txCount": 4629
     },
     {
-      "height": 954942,
-      "id": "000000000000000000007d56e0dee6b1b44e7d4b589e31dbc8788ab08975ca12",
-      "timestamp": 1782184279,
-      "txCount": 4623
+      "height": 954983,
+      "id": "00000000000000000000c1321aaf9d8c33f94a74ed2f7e2ddc271391a5ac6003",
+      "timestamp": 1782206120,
+      "txCount": 4438
     },
     {
-      "height": 954941,
-      "id": "000000000000000000008e35483b84564db6176f1e314e7c088676951c2008d8",
-      "timestamp": 1782183287,
-      "txCount": 4661
+      "height": 954982,
+      "id": "00000000000000000001b9bb8a03a7ccd1c181c6b6f26855cae12706d773bd4e",
+      "timestamp": 1782205765,
+      "txCount": 4193
     },
     {
-      "height": 954940,
-      "id": "000000000000000000020dee4b00d1d384a3a92ea0e6a9a66f399e538ceded41",
-      "timestamp": 1782182879,
-      "txCount": 4892
+      "height": 954981,
+      "id": "0000000000000000000180bac9761d5c7b328061787926be6a9e784dcb84fa37",
+      "timestamp": 1782205576,
+      "txCount": 4541
     },
     {
-      "height": 954939,
-      "id": "000000000000000000023adda7adab6eff0d718facfa6123e4ddba007a31ee4b",
-      "timestamp": 1782182104,
-      "txCount": 5744
+      "height": 954980,
+      "id": "000000000000000000000ac8471ef6452e030931075a077bdbf992d28417ddc1",
+      "timestamp": 1782204209,
+      "txCount": 4011
     },
     {
-      "height": 954938,
-      "id": "000000000000000000015d2cc7d7546872939494e2d4a146709f8cdc8eb364ac",
-      "timestamp": 1782182001,
-      "txCount": 4653
+      "height": 954979,
+      "id": "0000000000000000000157e9cf276f99f78628738e997165dbcf6feb948238f0",
+      "timestamp": 1782204124,
+      "txCount": 4690
     },
     {
-      "height": 954937,
-      "id": "00000000000000000000ef90bcea4bb54b7ab3f770b75fc68794f4689e5f4c5c",
-      "timestamp": 1782180587,
-      "txCount": 5885
+      "height": 954978,
+      "id": "000000000000000000003172edd04c7d321cf483e409948d025499e91d666bd9",
+      "timestamp": 1782203033,
+      "txCount": 4802
     }
   ],
   "news": [
+    {
+      "title": "Hut 8 to pay $2.35 million to settle investor suit over U.S. Bitcoin merger",
+      "link": "https://www.coindesk.com/markets/2026/06/23/hut-8-to-pay-usd2-35-million-to-settle-investor-suit-over-u-s-bitcoin-merger",
+      "pubDate": "Tue, 23 Jun 2026 09:57:11 +0000"
+    },
+    {
+      "title": "Bitcoin price has limited downside, likely near bottom, contrarian indicator suggests",
+      "link": "https://www.coindesk.com/markets/2026/06/23/bitcoin-price-has-limited-downside-likely-near-bottom-contrarian-indicator-suggests",
+      "pubDate": "Tue, 23 Jun 2026 08:24:00 +0000"
+    },
+    {
+      "title": "Live updates: An 'altcoin season' signal flashed, but bitcoin's slide is what set it off",
+      "link": "https://www.coindesk.com/markets/2026/06/23/live-updates-an-altcoin-season-signal-flashed-but-bitcoin-s-slide-is-what-set-it-off",
+      "pubDate": "Tue, 23 Jun 2026 06:30:21 +0000"
+    },
+    {
+      "title": "XRP drifts toward $1.10 support as traders await break from three-week range",
+      "link": "https://www.coindesk.com/markets/2026/06/23/xrp-drifts-toward-usd1-10-support-as-traders-await-break-from-three-week-range",
+      "pubDate": "Tue, 23 Jun 2026 06:27:10 +0000"
+    },
+    {
+      "title": "SpaceX’s $600 billion plunge erased equivalent of nearly half of bitcoin’s market cap in 3 days",
+      "link": "https://www.coindesk.com/markets/2026/06/23/spacex-s-usd600-billion-dive-erased-nearly-half-a-bitcoin-market-cap-in-three-days",
+      "pubDate": "Tue, 23 Jun 2026 06:23:36 +0000"
+    },
+    {
+      "title": "Bitcoin falls under $63,000 as a tech selloff drags risk assets lower",
+      "link": "https://www.coindesk.com/markets/2026/06/23/bitcoin-slips-toward-usd63-000-as-a-tech-selloff-drags-risk-assets-lower",
+      "pubDate": "Tue, 23 Jun 2026 05:24:57 +0000"
+    },
+    {
+      "title": "Trump signs orders to build a quantum computer and protect against the one that could break encryption",
+      "link": "https://www.coindesk.com/tech/2026/06/23/trump-signs-orders-to-build-a-quantum-computer-and-protect-against-the-one-that-could-break-encryption",
+      "pubDate": "Tue, 23 Jun 2026 05:15:16 +0000"
+    },
     {
       "title": "U.S. Senate passes housing bill that carries four-year ban on a Fed CBDC",
       "link": "https://www.coindesk.com/policy/2026/06/22/u-s-senate-passes-housing-bill-that-carries-four-year-ban-on-a-fed-cbdc",
@@ -450,41 +485,6 @@
       "title": "Strive says digital credit selloff was a liquidation event, not a credit crisis",
       "link": "https://www.coindesk.com/markets/2026/06/22/strive-says-digital-credit-selloff-was-a-liquidation-event-not-a-credit-crisis",
       "pubDate": "Mon, 22 Jun 2026 20:14:02 +0000"
-    },
-    {
-      "title": "Ether’s biggest corporate holders back new Ethereum research hub",
-      "link": "https://www.coindesk.com/business/2026/06/22/ether-s-biggest-corporate-holders-back-new-ethereum-research-hub",
-      "pubDate": "Mon, 22 Jun 2026 19:20:45 +0000"
-    },
-    {
-      "title": "Ethereum Foundation talent exodus sparks fresh debate over leadership",
-      "link": "https://www.coindesk.com/tech/2026/06/22/ethereum-foundation-talent-exodus-sparks-fresh-debate-over-leadership",
-      "pubDate": "Mon, 22 Jun 2026 16:39:41 +0000"
-    },
-    {
-      "title": "Crypto's second U.S. lobbying front — tax policy — sees industry push on mining, staking",
-      "link": "https://www.coindesk.com/policy/2026/06/22/crypto-s-second-u-s-lobbying-front-tax-policy-sees-industry-push-on-mining-staking",
-      "pubDate": "Mon, 22 Jun 2026 15:56:13 +0000"
-    },
-    {
-      "title": "Anchorage aims to bring banks onchain with new tokenized deposit platform",
-      "link": "https://www.coindesk.com/business/2026/06/19/anchorage-aims-to-bring-banks-onchain-with-new-tokenized-deposit-platform",
-      "pubDate": "Mon, 22 Jun 2026 15:00:00 +0000"
-    },
-    {
-      "title": "MoneyGram joins Solana as validator amid stablecoin payment push",
-      "link": "https://www.coindesk.com/business/2026/06/22/moneygram-joins-solana-as-validator-amid-stablecoin-payment-push",
-      "pubDate": "Mon, 22 Jun 2026 13:53:16 +0000"
-    },
-    {
-      "title": "OKX and NYSE partner to bridge tradfi and crypto markets in joint venture led by Andrew Cuomo",
-      "link": "https://www.coindesk.com/markets/2026/06/22/okx-and-nyse-partner-to-bridge-tradfi-and-crypto-markets-in-joint-venture-led-by-andrew-cuomo",
-      "pubDate": "Mon, 22 Jun 2026 13:40:27 +0000"
-    },
-    {
-      "title": "Bitmine added $92 million of ETH, with Tom Lee continuing to believe in 'crypto spring'",
-      "link": "https://www.coindesk.com/business/2026/06/22/bitmine-added-usd92-million-of-eth-with-tom-lee-continuing-to-believe-in-crypto-spring",
-      "pubDate": "Mon, 22 Jun 2026 13:04:44 +0000"
     }
   ]
 }
