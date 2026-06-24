@@ -1,13 +1,13 @@
 {
-  "fetchedAt": "2026-06-24T14:52:14.325Z",
+  "fetchedAt": "2026-06-24T17:16:21.954Z",
   "price": {
-    "usd": 61082,
-    "time": 1782312364
+    "usd": 59850,
+    "time": 1782321057
   },
   "moves": {
-    "d1": -2.505804088938135,
-    "d7": -5.185408583889584,
-    "d30": -20.954418543441168
+    "d1": -4.47222380935377,
+    "d7": -7.097781731865227,
+    "d30": -22.548736940914736
   },
   "history90d": [
     {
@@ -372,60 +372,85 @@
     },
     {
       "date": "2026-06-24",
-      "close": 61049.68461475053
+      "close": 59760.478803079044
     }
   ],
   "blocks": [
     {
-      "height": 955185,
-      "id": "00000000000000000001fa59f08002018b441db85f1c1c59775b00d5ef0c116e",
-      "timestamp": 1782312512,
-      "txCount": 4272
+      "height": 955199,
+      "id": "000000000000000000019208f410ff22b279c4b2a3a20cf45044d3c48b4f2f05",
+      "timestamp": 1782320086,
+      "txCount": 3959
     },
     {
-      "height": 955184,
-      "id": "00000000000000000001fdaebaa98d8c48b0011b15141ea8c949d4f4db5f7b9e",
-      "timestamp": 1782312497,
-      "txCount": 4281
+      "height": 955198,
+      "id": "00000000000000000001cef82ce6967ccb80efc093e67476c32d4a807abcbee4",
+      "timestamp": 1782319977,
+      "txCount": 4354
     },
     {
-      "height": 955183,
-      "id": "0000000000000000000029555dad6a33b073c653c8fbd8519e3be1acadcd0820",
-      "timestamp": 1782312024,
-      "txCount": 3776
+      "height": 955197,
+      "id": "000000000000000000014fe199b9c54f32562c32909bd6e40d00edfe9f2ec134",
+      "timestamp": 1782318421,
+      "txCount": 5299
     },
     {
-      "height": 955182,
-      "id": "000000000000000000006ad429406a7d3933a03fc6a672b7b3fcc4fd01afcb55",
-      "timestamp": 1782311806,
-      "txCount": 4977
+      "height": 955196,
+      "id": "00000000000000000001ad90207bbbda9f93f840180cbe816d46147054546cf7",
+      "timestamp": 1782318226,
+      "txCount": 4733
     },
     {
-      "height": 955181,
-      "id": "00000000000000000000e3804b499ab6ea1d4a772d9b88c14370593cd63d912a",
-      "timestamp": 1782311430,
-      "txCount": 4253
+      "height": 955195,
+      "id": "0000000000000000000207ade50dd8c894b1933e8b6db05a715f0cf6d43f7841",
+      "timestamp": 1782318051,
+      "txCount": 4530
     },
     {
-      "height": 955180,
-      "id": "0000000000000000000140c8b58f1acaca9ce07ff765e99e291e5456d2e05846",
-      "timestamp": 1782310437,
-      "txCount": 4883
+      "height": 955194,
+      "id": "000000000000000000000ffa8d1cd60c41ee43a0b46cf75163f20e9da6738628",
+      "timestamp": 1782317330,
+      "txCount": 4782
     },
     {
-      "height": 955179,
-      "id": "000000000000000000007be260309772fc2c8de2642de4c218a59bb3ccb80e53",
-      "timestamp": 1782310069,
-      "txCount": 4302
+      "height": 955193,
+      "id": "0000000000000000000166edb506668f07cc1e3c470627cd0ceae9c3649a3b53",
+      "timestamp": 1782316596,
+      "txCount": 5194
     },
     {
-      "height": 955178,
-      "id": "000000000000000000003561c983ba5d6e7a1ce5a2d91ed2cc5f8e33300a0a2a",
-      "timestamp": 1782309151,
-      "txCount": 5796
+      "height": 955192,
+      "id": "000000000000000000004a36f5d2ab6cd7d6313168c460628947cd1afed1adb8",
+      "timestamp": 1782316237,
+      "txCount": 3393
     }
   ],
   "news": [
+    {
+      "title": "Bitcoin falls to $60,000 as AI trade continues to draw investor interest and capital",
+      "link": "https://www.coindesk.com/markets/2026/06/24/bitcoin-falls-to-usd60-000-as-ai-trade-continues-to-draw-investor-interest-and-capital",
+      "pubDate": "Wed, 24 Jun 2026 16:01:02 +0000"
+    },
+    {
+      "title": "Crypto Long & Short: Infrastructure is the prevailing currency in digital assets",
+      "link": "https://www.coindesk.com/coindesk-indices/2026/06/24/crypto-long-and-short-infrastructure-is-the-prevailing-currency-in-digital-assets",
+      "pubDate": "Wed, 24 Jun 2026 16:00:00 +0000"
+    },
+    {
+      "title": "SecondFi loses $2.4 million in Cardano wallet exploit",
+      "link": "https://www.coindesk.com/business/2026/06/24/secondfi-loses-usd2-4-million-in-cardano-wallet-exploit-with-up-to-usd20-million-at-risk",
+      "pubDate": "Wed, 24 Jun 2026 15:45:42 +0000"
+    },
+    {
+      "title": "Trump's refusal to sign housing bill could delay Congress and imperil Clarity Act",
+      "link": "https://www.coindesk.com/policy/2026/06/24/trump-refuses-to-sign-law-with-u-s-cbdc-ban-demands-approval-of-elections-bill",
+      "pubDate": "Wed, 24 Jun 2026 15:42:51 +0000"
+    },
+    {
+      "title": "Ex-FCA policy insider explains the ‘great divide’ in the UK’s crypto ambition",
+      "link": "https://www.coindesk.com/policy/2026/06/24/ex-fca-policy-insider-explains-the-great-divide-in-the-uk-s-crypto-ambition",
+      "pubDate": "Wed, 24 Jun 2026 15:23:07 +0000"
+    },
     {
       "title": "Bitcoin just broke below the floor of its famous Rainbow Chart into the ‘BTC is dead’ zone",
       "link": "https://www.coindesk.com/markets/2026/06/24/bitcoin-just-broke-below-the-floor-of-its-famous-rainbow-chart-into-the-btc-is-dead-zone",
@@ -437,7 +462,7 @@
       "pubDate": "Wed, 24 Jun 2026 14:47:30 +0000"
     },
     {
-      "title": "Gold, silver and bitcoin tumble as debasement trade unwinds",
+      "title": "Gold, silver and bitcoin tumble as 'debasement' trade unwinds",
       "link": "https://www.coindesk.com/markets/2026/06/24/gold-silver-and-bitcoin-tumble-as-debasement-trade-unwinds",
       "pubDate": "Wed, 24 Jun 2026 13:48:04 +0000"
     },
@@ -460,31 +485,6 @@
       "title": "Aave could soar to $3,500 by 2030 on DeFi revival, says StanChart",
       "link": "https://www.coindesk.com/markets/2026/06/24/aave-could-soar-to-usd3-500-by-2030-on-defi-revival-says-stanchart",
       "pubDate": "Wed, 24 Jun 2026 12:48:10 +0000"
-    },
-    {
-      "title": "This forgotten coin could surprise everyone before its next halving",
-      "link": "https://www.coindesk.com/daybook-us/2026/06/24/this-forgotten-coin-could-surprise-everyone-before-its-next-halving",
-      "pubDate": "Wed, 24 Jun 2026 11:36:13 +0000"
-    },
-    {
-      "title": "Bitcoin clings to $62,500 as bears tighten grip on crypto market",
-      "link": "https://www.coindesk.com/markets/2026/06/24/bitcoin-clings-to-usd62-500-as-bears-tighten-grip-on-crypto-market",
-      "pubDate": "Wed, 24 Jun 2026 11:04:37 +0000"
-    },
-    {
-      "title": "YZi Labs ends proxy war with BNB treasury company CEA Industries",
-      "link": "https://www.coindesk.com/business/2026/06/22/yzi-labs-nears-settlement-in-activist-campaign-at-bnb-treasury-firm-cea-industries",
-      "pubDate": "Wed, 24 Jun 2026 10:47:12 +0000"
-    },
-    {
-      "title": "Cboe revives S&P 500 binary options, chasing a market popularized by Polymarket, Kalshi",
-      "link": "https://www.coindesk.com/business/2026/06/24/cboe-revives-s-and-p-500-binary-options-chasing-a-market-popularized-by-polymarket-kalshi",
-      "pubDate": "Wed, 24 Jun 2026 10:38:48 +0000"
-    },
-    {
-      "title": "The Runes revival: Bitcoin traffic hits a two-year high as transactions blast past 820,000",
-      "link": "https://www.coindesk.com/markets/2026/06/24/the-runes-revival-bitcoin-traffic-hits-a-two-year-high-as-transactions-blast-past-820-000",
-      "pubDate": "Wed, 24 Jun 2026 09:47:58 +0000"
     }
   ]
 }
