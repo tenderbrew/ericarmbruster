@@ -1,13 +1,13 @@
 {
-  "fetchedAt": "2026-06-24T17:16:21.954Z",
+  "fetchedAt": "2026-06-24T20:04:02.679Z",
   "price": {
-    "usd": 59850,
-    "time": 1782321057
+    "usd": 59775,
+    "time": 1782331111
   },
   "moves": {
-    "d1": -4.47222380935377,
-    "d7": -7.097781731865227,
-    "d30": -22.548736940914736
+    "d1": -4.591932802073884,
+    "d7": -7.214200551750105,
+    "d30": -22.64579366154016
   },
   "history90d": [
     {
@@ -372,62 +372,77 @@
     },
     {
       "date": "2026-06-24",
-      "close": 59760.478803079044
+      "close": 60113.90185829704
     }
   ],
   "blocks": [
     {
-      "height": 955199,
-      "id": "000000000000000000019208f410ff22b279c4b2a3a20cf45044d3c48b4f2f05",
-      "timestamp": 1782320086,
-      "txCount": 3959
+      "height": 955220,
+      "id": "000000000000000000015658ad46f68614442db34a9502e07d715209c6666452",
+      "timestamp": 1782331118,
+      "txCount": 6008
     },
     {
-      "height": 955198,
-      "id": "00000000000000000001cef82ce6967ccb80efc093e67476c32d4a807abcbee4",
-      "timestamp": 1782319977,
-      "txCount": 4354
+      "height": 955219,
+      "id": "00000000000000000000d82c322bdf014c5fa23210168c56111c946988a72fd1",
+      "timestamp": 1782330974,
+      "txCount": 2825
     },
     {
-      "height": 955197,
-      "id": "000000000000000000014fe199b9c54f32562c32909bd6e40d00edfe9f2ec134",
-      "timestamp": 1782318421,
-      "txCount": 5299
+      "height": 955218,
+      "id": "00000000000000000000422a8474b310947196bdad213cc5a0079079c4610b96",
+      "timestamp": 1782330881,
+      "txCount": 4756
     },
     {
-      "height": 955196,
-      "id": "00000000000000000001ad90207bbbda9f93f840180cbe816d46147054546cf7",
-      "timestamp": 1782318226,
-      "txCount": 4733
+      "height": 955217,
+      "id": "00000000000000000000c89a15e8d5949f40ac9761abe90593d08979a21a3cbb",
+      "timestamp": 1782330432,
+      "txCount": 4535
     },
     {
-      "height": 955195,
-      "id": "0000000000000000000207ade50dd8c894b1933e8b6db05a715f0cf6d43f7841",
-      "timestamp": 1782318051,
-      "txCount": 4530
+      "height": 955216,
+      "id": "00000000000000000000f5ac04471d25a92f6f885d3b71f1adbbdb66beaab546",
+      "timestamp": 1782330133,
+      "txCount": 4436
     },
     {
-      "height": 955194,
-      "id": "000000000000000000000ffa8d1cd60c41ee43a0b46cf75163f20e9da6738628",
-      "timestamp": 1782317330,
-      "txCount": 4782
+      "height": 955215,
+      "id": "00000000000000000001d0a5f1d8a21fe1cef919253a0e8ed4e53464c32248df",
+      "timestamp": 1782329730,
+      "txCount": 3608
     },
     {
-      "height": 955193,
-      "id": "0000000000000000000166edb506668f07cc1e3c470627cd0ceae9c3649a3b53",
-      "timestamp": 1782316596,
-      "txCount": 5194
+      "height": 955214,
+      "id": "0000000000000000000164cc6ee758cac868f2820b31cc017e1c2ff8458a0b91",
+      "timestamp": 1782329648,
+      "txCount": 3840
     },
     {
-      "height": 955192,
-      "id": "000000000000000000004a36f5d2ab6cd7d6313168c460628947cd1afed1adb8",
-      "timestamp": 1782316237,
-      "txCount": 3393
+      "height": 955213,
+      "id": "000000000000000000003bbdff299d39a6000d02309e90d3d9df198716b671b2",
+      "timestamp": 1782329005,
+      "txCount": 4469
     }
   ],
   "news": [
     {
-      "title": "Bitcoin falls to $60,000 as AI trade continues to draw investor interest and capital",
+      "title": "Upheaval at the Ethereum Foundation has some of crypto’s biggest names feeling bullish",
+      "link": "https://www.coindesk.com/tech/2026/06/24/upheaval-at-the-ethereum-foundation-has-some-of-crypto-s-biggest-names-feeling-bullish",
+      "pubDate": "Wed, 24 Jun 2026 19:52:39 +0000"
+    },
+    {
+      "title": "Kalshi targets a massive $40 billion valuation, widening lead over rival Polymarket",
+      "link": "https://www.coindesk.com/business/2026/06/24/kalshi-targets-a-massive-usd40-billion-valuation-widening-lead-over-rival-polymarket",
+      "pubDate": "Wed, 24 Jun 2026 19:48:23 +0000"
+    },
+    {
+      "title": "Binance withdraws Greek MiCA bid but vows to remain in Europe",
+      "link": "https://www.coindesk.com/policy/2026/06/24/binance-withdraws-greek-mica-bid-but-vows-to-remain-in-europe",
+      "pubDate": "Wed, 24 Jun 2026 17:18:08 +0000"
+    },
+    {
+      "title": "Bitcoin falls below $60,000 as AI trade continues to draw investor interest and capital",
       "link": "https://www.coindesk.com/markets/2026/06/24/bitcoin-falls-to-usd60-000-as-ai-trade-continues-to-draw-investor-interest-and-capital",
       "pubDate": "Wed, 24 Jun 2026 16:01:02 +0000"
     },
@@ -470,21 +485,6 @@
       "title": "Bitcoin could fall to $55,000 before finding a bottom, 10x Research says",
       "link": "https://www.coindesk.com/markets/2026/06/24/bitcoin-could-fall-to-usd55-000-before-finding-a-bottom-10x-research-says",
       "pubDate": "Wed, 24 Jun 2026 13:42:31 +0000"
-    },
-    {
-      "title": "CoinDesk 20 performance update: Aave (AAVE) gains 5.9% as index moves higher",
-      "link": "https://www.coindesk.com/coindesk-indices/2026/06/24/coindesk-20-performance-update-aave-aave-gains-5-9-as-index-moves-higher",
-      "pubDate": "Wed, 24 Jun 2026 13:19:59 +0000"
-    },
-    {
-      "title": "CZ, Binance founder, wants to clear up 'misunderstandings' about who he is",
-      "link": "https://www.coindesk.com/policy/2026/06/23/cz-binance-founder-wants-to-clear-up-misunderstandings-about-who-he-is",
-      "pubDate": "Wed, 24 Jun 2026 13:00:00 +0000"
-    },
-    {
-      "title": "Aave could soar to $3,500 by 2030 on DeFi revival, says StanChart",
-      "link": "https://www.coindesk.com/markets/2026/06/24/aave-could-soar-to-usd3-500-by-2030-on-defi-revival-says-stanchart",
-      "pubDate": "Wed, 24 Jun 2026 12:48:10 +0000"
     }
   ]
 }
