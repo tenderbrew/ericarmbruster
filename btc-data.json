@@ -1,13 +1,13 @@
 {
-  "fetchedAt": "2026-06-24T04:22:39.160Z",
+  "fetchedAt": "2026-06-24T09:49:58.164Z",
   "price": {
-    "usd": 62574,
-    "time": 1782274812
+    "usd": 62579,
+    "time": 1782294367
   },
   "moves": {
-    "d1": -0.12439319375944224,
-    "d7": -2.8694501936463612,
-    "d30": -19.023636847799473
+    "d1": -0.11641259424477468,
+    "d7": -2.8616889389873723,
+    "d30": -19.01716639975778
   },
   "history90d": [
     {
@@ -372,60 +372,85 @@
     },
     {
       "date": "2026-06-24",
-      "close": 62543.055965602434
+      "close": 62597.33822121926
     }
   ],
   "blocks": [
     {
-      "height": 955115,
-      "id": "0000000000000000000100706b442e928e295e525db9ae4f26bfe51400fc28bf",
-      "timestamp": 1782274622,
-      "txCount": 6015
+      "height": 955153,
+      "id": "000000000000000000012516f447b200c74fa5dfb002a194198ec16523e7faed",
+      "timestamp": 1782293232,
+      "txCount": 6305
     },
     {
-      "height": 955114,
-      "id": "00000000000000000001b81b8a9770e7c05123bcadc889c815b51cb7d2a4dc3d",
-      "timestamp": 1782274465,
-      "txCount": 6053
+      "height": 955152,
+      "id": "0000000000000000000058ea0e015a4ab9c55b684197f36369f4d856b055e49f",
+      "timestamp": 1782292828,
+      "txCount": 1530
     },
     {
-      "height": 955113,
-      "id": "00000000000000000000f639fb84cf34c10b4efca17fc7d45669abd18dbbd632",
-      "timestamp": 1782274393,
-      "txCount": 3726
+      "height": 955151,
+      "id": "000000000000000000006e1ddf611fc1991acba2f57a442abf01553fc8892c46",
+      "timestamp": 1782292395,
+      "txCount": 5709
     },
     {
-      "height": 955112,
-      "id": "00000000000000000000dc377e448019c1a6c8fc099d80b96be4a3dd72726aad",
-      "timestamp": 1782274093,
-      "txCount": 4285
+      "height": 955150,
+      "id": "00000000000000000001d7046b03edf69e7a6127e5dfc50b234b117f5d743ee4",
+      "timestamp": 1782292088,
+      "txCount": 6297
     },
     {
-      "height": 955111,
-      "id": "000000000000000000006ac57fe58712b8e8ffb3a4b56ef41306521219bfb314",
-      "timestamp": 1782273266,
-      "txCount": 4528
+      "height": 955149,
+      "id": "00000000000000000000047e5bdc46d70a25e6fbc0eff93c80738fe7d488218e",
+      "timestamp": 1782292014,
+      "txCount": 6230
     },
     {
-      "height": 955110,
-      "id": "00000000000000000000a3fd4df25113f6362e3b3a6c8c55adb78a465e8d31ea",
-      "timestamp": 1782273230,
-      "txCount": 4317
+      "height": 955148,
+      "id": "00000000000000000002068ea53691c929aedd18c207d838b7c1868e78e0e7d4",
+      "timestamp": 1782291988,
+      "txCount": 5873
     },
     {
-      "height": 955109,
-      "id": "00000000000000000001faeb771b2ddaac149d2768a9df99cee02476c006b515",
-      "timestamp": 1782270297,
-      "txCount": 4363
+      "height": 955147,
+      "id": "00000000000000000000febbe6b954ee4731941d3dff515e007facd8bc0baa40",
+      "timestamp": 1782291672,
+      "txCount": 6223
     },
     {
-      "height": 955108,
-      "id": "00000000000000000001e296b26999aa50831f53218b1188046556b0314d8d9d",
-      "timestamp": 1782270183,
-      "txCount": 2965
+      "height": 955146,
+      "id": "00000000000000000001c51081a6e5152b5fb4bfab12249dbd36b502067a6ff5",
+      "timestamp": 1782291506,
+      "txCount": 4618
     }
   ],
   "news": [
+    {
+      "title": "CryptoQuant says Michael Saylor's Strategy should halt its bitcoin buying",
+      "link": "https://www.coindesk.com/markets/2026/06/24/strategy-should-pause-its-bitcoin-buying-and-rebuild-cash-cryptoquant-says",
+      "pubDate": "Wed, 24 Jun 2026 08:15:18 +0000"
+    },
+    {
+      "title": "Trump lands in Senate's crosshairs over $500 million UAE investment in his crypto venture",
+      "link": "https://www.coindesk.com/policy/2026/06/24/trump-lands-in-senate-s-crosshairs-over-usd500-million-uae-investment-in-his-crypto-venture",
+      "pubDate": "Wed, 24 Jun 2026 07:18:21 +0000"
+    },
+    {
+      "title": "Bitcoin’s ‘OG’ investors have slowed selling in a bullish sign for the market",
+      "link": "https://www.coindesk.com/markets/2026/06/24/bitcoin-s-og-investors-have-slowed-selling-in-a-bullish-sign-for-the-market",
+      "pubDate": "Wed, 24 Jun 2026 06:39:41 +0000"
+    },
+    {
+      "title": "Live markets: Bitcoin could drop to $59,000 in the short-term as liquidity dries up",
+      "link": "https://www.coindesk.com/tech/2026/06/24/live-markets-bitcoin-could-drop-to-usd59-000-in-the-short-term-as-liquidaity-dries-up",
+      "pubDate": "Wed, 24 Jun 2026 05:13:27 +0000"
+    },
+    {
+      "title": "Bitcoin drops toward $62,000 as the chip selloff deepens for a second day",
+      "link": "https://www.coindesk.com/markets/2026/06/24/bitcoin-drops-toward-usd62-000-as-the-chip-selloff-deepens-for-a-second-day",
+      "pubDate": "Wed, 24 Jun 2026 04:33:03 +0000"
+    },
     {
       "title": "Crypto PAC's $5.5 million Congress pick gets Maryland win, more crypto allies advance",
       "link": "https://www.coindesk.com/policy/2026/06/23/crypto-pac-s-usd5-5-million-congress-pick-gets-maryland-win-more-crypto-allies-advance",
@@ -460,31 +485,6 @@
       "title": "Vitalik Buterin says Ethereum Foundation will cut budget 40% in major reset",
       "link": "https://www.coindesk.com/tech/2026/06/23/vitalik-buterin-says-ethereum-foundation-will-cut-budget-40-in-major-reset",
       "pubDate": "Tue, 23 Jun 2026 15:00:00 +0000"
-    },
-    {
-      "title": "Bitcoin's recent drop below $60,000 signals Fed, ETF and AI pressures: Deutsche Bank",
-      "link": "https://www.coindesk.com/markets/2026/06/23/bitcoin-s-recent-drop-below-usd60-000-signals-fed-etf-and-ai-pressures-deutsche-bank",
-      "pubDate": "Tue, 23 Jun 2026 14:54:17 +0000"
-    },
-    {
-      "title": "The SEC delayed tokenizing stocks, and here’s why that’s a relief",
-      "link": "https://www.coindesk.com/opinion/2026/06/23/the-sec-delayed-tokenizing-stocks-and-here-s-why-that-s-a-relief",
-      "pubDate": "Tue, 23 Jun 2026 14:01:44 +0000"
-    },
-    {
-      "title": "Ethereum Foundation cuts 20% of staff amid leadership exodus",
-      "link": "https://www.coindesk.com/tech/2026/06/23/ethereum-foundation-cuts-20-of-staff-amid-leadership-exodus",
-      "pubDate": "Tue, 23 Jun 2026 13:45:22 +0000"
-    },
-    {
-      "title": "Bitcoin may need to plunge 15% or more to mark bottom, according to this long-time indicator",
-      "link": "https://www.coindesk.com/markets/2026/06/23/bitcoin-may-need-to-plunge-15-or-more-to-mark-bottom-according-to-this-long-time-indicator",
-      "pubDate": "Tue, 23 Jun 2026 13:08:31 +0000"
-    },
-    {
-      "title": "Former Robinhood Crypto COO Tanya Denisova joins stablecoin issuer Agora as head of operations",
-      "link": "https://www.coindesk.com/business/2026/06/23/former-robinhood-crypto-coo-tanya-denisova-joins-stablecoin-issuer-agora-as-head-of-operations",
-      "pubDate": "Tue, 23 Jun 2026 13:00:00 +0000"
     }
   ]
 }
