@@ -1,13 +1,13 @@
 {
-  "fetchedAt": "2026-06-24T09:49:58.164Z",
+  "fetchedAt": "2026-06-24T14:52:14.325Z",
   "price": {
-    "usd": 62579,
-    "time": 1782294367
+    "usd": 61082,
+    "time": 1782312364
   },
   "moves": {
-    "d1": -0.11641259424477468,
-    "d7": -2.8616889389873723,
-    "d30": -19.01716639975778
+    "d1": -2.505804088938135,
+    "d7": -5.185408583889584,
+    "d30": -20.954418543441168
   },
   "history90d": [
     {
@@ -372,119 +372,119 @@
     },
     {
       "date": "2026-06-24",
-      "close": 62597.33822121926
+      "close": 61049.68461475053
     }
   ],
   "blocks": [
     {
-      "height": 955153,
-      "id": "000000000000000000012516f447b200c74fa5dfb002a194198ec16523e7faed",
-      "timestamp": 1782293232,
-      "txCount": 6305
+      "height": 955185,
+      "id": "00000000000000000001fa59f08002018b441db85f1c1c59775b00d5ef0c116e",
+      "timestamp": 1782312512,
+      "txCount": 4272
     },
     {
-      "height": 955152,
-      "id": "0000000000000000000058ea0e015a4ab9c55b684197f36369f4d856b055e49f",
-      "timestamp": 1782292828,
-      "txCount": 1530
+      "height": 955184,
+      "id": "00000000000000000001fdaebaa98d8c48b0011b15141ea8c949d4f4db5f7b9e",
+      "timestamp": 1782312497,
+      "txCount": 4281
     },
     {
-      "height": 955151,
-      "id": "000000000000000000006e1ddf611fc1991acba2f57a442abf01553fc8892c46",
-      "timestamp": 1782292395,
-      "txCount": 5709
+      "height": 955183,
+      "id": "0000000000000000000029555dad6a33b073c653c8fbd8519e3be1acadcd0820",
+      "timestamp": 1782312024,
+      "txCount": 3776
     },
     {
-      "height": 955150,
-      "id": "00000000000000000001d7046b03edf69e7a6127e5dfc50b234b117f5d743ee4",
-      "timestamp": 1782292088,
-      "txCount": 6297
+      "height": 955182,
+      "id": "000000000000000000006ad429406a7d3933a03fc6a672b7b3fcc4fd01afcb55",
+      "timestamp": 1782311806,
+      "txCount": 4977
     },
     {
-      "height": 955149,
-      "id": "00000000000000000000047e5bdc46d70a25e6fbc0eff93c80738fe7d488218e",
-      "timestamp": 1782292014,
-      "txCount": 6230
+      "height": 955181,
+      "id": "00000000000000000000e3804b499ab6ea1d4a772d9b88c14370593cd63d912a",
+      "timestamp": 1782311430,
+      "txCount": 4253
     },
     {
-      "height": 955148,
-      "id": "00000000000000000002068ea53691c929aedd18c207d838b7c1868e78e0e7d4",
-      "timestamp": 1782291988,
-      "txCount": 5873
+      "height": 955180,
+      "id": "0000000000000000000140c8b58f1acaca9ce07ff765e99e291e5456d2e05846",
+      "timestamp": 1782310437,
+      "txCount": 4883
     },
     {
-      "height": 955147,
-      "id": "00000000000000000000febbe6b954ee4731941d3dff515e007facd8bc0baa40",
-      "timestamp": 1782291672,
-      "txCount": 6223
+      "height": 955179,
+      "id": "000000000000000000007be260309772fc2c8de2642de4c218a59bb3ccb80e53",
+      "timestamp": 1782310069,
+      "txCount": 4302
     },
     {
-      "height": 955146,
-      "id": "00000000000000000001c51081a6e5152b5fb4bfab12249dbd36b502067a6ff5",
-      "timestamp": 1782291506,
-      "txCount": 4618
+      "height": 955178,
+      "id": "000000000000000000003561c983ba5d6e7a1ce5a2d91ed2cc5f8e33300a0a2a",
+      "timestamp": 1782309151,
+      "txCount": 5796
     }
   ],
   "news": [
     {
-      "title": "CryptoQuant says Michael Saylor's Strategy should halt its bitcoin buying",
-      "link": "https://www.coindesk.com/markets/2026/06/24/strategy-should-pause-its-bitcoin-buying-and-rebuild-cash-cryptoquant-says",
-      "pubDate": "Wed, 24 Jun 2026 08:15:18 +0000"
+      "title": "Bitcoin just broke below the floor of its famous Rainbow Chart into the ‘BTC is dead’ zone",
+      "link": "https://www.coindesk.com/markets/2026/06/24/bitcoin-just-broke-below-the-floor-of-its-famous-rainbow-chart-into-the-btc-is-dead-zone",
+      "pubDate": "Wed, 24 Jun 2026 14:47:55 +0000"
     },
     {
-      "title": "Trump lands in Senate's crosshairs over $500 million UAE investment in his crypto venture",
-      "link": "https://www.coindesk.com/policy/2026/06/24/trump-lands-in-senate-s-crosshairs-over-usd500-million-uae-investment-in-his-crypto-venture",
-      "pubDate": "Wed, 24 Jun 2026 07:18:21 +0000"
+      "title": "The banking lobby is wrong about stablecoins and community banks",
+      "link": "https://www.coindesk.com/opinion/2026/06/24/the-banking-lobby-is-wrong-about-stablecoins-and-community-banks",
+      "pubDate": "Wed, 24 Jun 2026 14:47:30 +0000"
     },
     {
-      "title": "Bitcoin’s ‘OG’ investors have slowed selling in a bullish sign for the market",
-      "link": "https://www.coindesk.com/markets/2026/06/24/bitcoin-s-og-investors-have-slowed-selling-in-a-bullish-sign-for-the-market",
-      "pubDate": "Wed, 24 Jun 2026 06:39:41 +0000"
+      "title": "Gold, silver and bitcoin tumble as debasement trade unwinds",
+      "link": "https://www.coindesk.com/markets/2026/06/24/gold-silver-and-bitcoin-tumble-as-debasement-trade-unwinds",
+      "pubDate": "Wed, 24 Jun 2026 13:48:04 +0000"
     },
     {
-      "title": "Live markets: Bitcoin could drop to $59,000 in the short-term as liquidity dries up",
-      "link": "https://www.coindesk.com/tech/2026/06/24/live-markets-bitcoin-could-drop-to-usd59-000-in-the-short-term-as-liquidaity-dries-up",
-      "pubDate": "Wed, 24 Jun 2026 05:13:27 +0000"
+      "title": "Bitcoin could fall to $55,000 before finding a bottom, 10x Research says",
+      "link": "https://www.coindesk.com/markets/2026/06/24/bitcoin-could-fall-to-usd55-000-before-finding-a-bottom-10x-research-says",
+      "pubDate": "Wed, 24 Jun 2026 13:42:31 +0000"
     },
     {
-      "title": "Bitcoin drops toward $62,000 as the chip selloff deepens for a second day",
-      "link": "https://www.coindesk.com/markets/2026/06/24/bitcoin-drops-toward-usd62-000-as-the-chip-selloff-deepens-for-a-second-day",
-      "pubDate": "Wed, 24 Jun 2026 04:33:03 +0000"
+      "title": "CoinDesk 20 performance update: Aave (AAVE) gains 5.9% as index moves higher",
+      "link": "https://www.coindesk.com/coindesk-indices/2026/06/24/coindesk-20-performance-update-aave-aave-gains-5-9-as-index-moves-higher",
+      "pubDate": "Wed, 24 Jun 2026 13:19:59 +0000"
     },
     {
-      "title": "Crypto PAC's $5.5 million Congress pick gets Maryland win, more crypto allies advance",
-      "link": "https://www.coindesk.com/policy/2026/06/23/crypto-pac-s-usd5-5-million-congress-pick-gets-maryland-win-more-crypto-allies-advance",
-      "pubDate": "Wed, 24 Jun 2026 03:00:34 +0000"
+      "title": "CZ, Binance founder, wants to clear up 'misunderstandings' about who he is",
+      "link": "https://www.coindesk.com/policy/2026/06/23/cz-binance-founder-wants-to-clear-up-misunderstandings-about-who-he-is",
+      "pubDate": "Wed, 24 Jun 2026 13:00:00 +0000"
     },
     {
-      "title": "AI chipmaker Cerebras down 11% after first public earnings report",
-      "link": "https://www.coindesk.com/markets/2026/06/23/ai-chipmaker-cerebras-down-11-after-first-public-earnings-report",
-      "pubDate": "Tue, 23 Jun 2026 22:58:44 +0000"
+      "title": "Aave could soar to $3,500 by 2030 on DeFi revival, says StanChart",
+      "link": "https://www.coindesk.com/markets/2026/06/24/aave-could-soar-to-usd3-500-by-2030-on-defi-revival-says-stanchart",
+      "pubDate": "Wed, 24 Jun 2026 12:48:10 +0000"
     },
     {
-      "title": "Crypto critic Roubini joins tokenization boom with onchain 'Technodollar'",
-      "link": "https://www.coindesk.com/business/2026/06/23/crypto-critic-roubini-joins-tokenization-boom-with-onchain-technodollar",
-      "pubDate": "Tue, 23 Jun 2026 21:54:10 +0000"
+      "title": "This forgotten coin could surprise everyone before its next halving",
+      "link": "https://www.coindesk.com/daybook-us/2026/06/24/this-forgotten-coin-could-surprise-everyone-before-its-next-halving",
+      "pubDate": "Wed, 24 Jun 2026 11:36:13 +0000"
     },
     {
-      "title": "Meta is developing a prediction market app called ‘Arena’ as sector booms: NYT",
-      "link": "https://www.coindesk.com/markets/2026/06/23/meta-is-developing-a-prediction-market-app-called-arena-as-sector-booms-nyt",
-      "pubDate": "Tue, 23 Jun 2026 17:54:32 +0000"
+      "title": "Bitcoin clings to $62,500 as bears tighten grip on crypto market",
+      "link": "https://www.coindesk.com/markets/2026/06/24/bitcoin-clings-to-usd62-500-as-bears-tighten-grip-on-crypto-market",
+      "pubDate": "Wed, 24 Jun 2026 11:04:37 +0000"
     },
     {
-      "title": "BNY sees 'FOMO' driving asset managers into tokenized funds",
-      "link": "https://www.coindesk.com/markets/2026/06/23/bny-sees-fomo-driving-asset-managers-into-tokenized-funds",
-      "pubDate": "Tue, 23 Jun 2026 16:34:34 +0000"
+      "title": "YZi Labs ends proxy war with BNB treasury company CEA Industries",
+      "link": "https://www.coindesk.com/business/2026/06/22/yzi-labs-nears-settlement-in-activist-campaign-at-bnb-treasury-firm-cea-industries",
+      "pubDate": "Wed, 24 Jun 2026 10:47:12 +0000"
     },
     {
-      "title": "Chainlink teams up with 47 South Korean, European banks to speed up international money transfers",
-      "link": "https://www.coindesk.com/markets/2026/06/23/chainlink-teams-up-with-47-south-korean-european-banks-to-speed-up-international-money-transfers",
-      "pubDate": "Tue, 23 Jun 2026 15:40:00 +0000"
+      "title": "Cboe revives S&P 500 binary options, chasing a market popularized by Polymarket, Kalshi",
+      "link": "https://www.coindesk.com/business/2026/06/24/cboe-revives-s-and-p-500-binary-options-chasing-a-market-popularized-by-polymarket-kalshi",
+      "pubDate": "Wed, 24 Jun 2026 10:38:48 +0000"
     },
     {
-      "title": "Vitalik Buterin says Ethereum Foundation will cut budget 40% in major reset",
-      "link": "https://www.coindesk.com/tech/2026/06/23/vitalik-buterin-says-ethereum-foundation-will-cut-budget-40-in-major-reset",
-      "pubDate": "Tue, 23 Jun 2026 15:00:00 +0000"
+      "title": "The Runes revival: Bitcoin traffic hits a two-year high as transactions blast past 820,000",
+      "link": "https://www.coindesk.com/markets/2026/06/24/the-runes-revival-bitcoin-traffic-hits-a-two-year-high-as-transactions-blast-past-820-000",
+      "pubDate": "Wed, 24 Jun 2026 09:47:58 +0000"
     }
   ]
 }
