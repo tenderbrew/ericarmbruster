@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-06-24T09:37:36.888Z",
+  "fetchedAt": "2026-06-24T14:39:42.947Z",
   "indicators": {
     "UNRATE": {
       "latest": {
@@ -163,12 +163,12 @@
     },
     "BAMLH0A0HYM2": {
       "latest": {
-        "date": "2026-06-22",
-        "value": 2.65
+        "date": "2026-06-23",
+        "value": 2.71
       },
       "previous": {
-        "date": "2026-06-19",
-        "value": 2.66
+        "date": "2026-06-22",
+        "value": 2.65
       }
     },
     "MORTGAGE30US": {
@@ -244,7 +244,7 @@
     "PERMIT": {
       "latest": {
         "date": "2026-05-01",
-        "value": 1413
+        "value": 1410
       },
       "previous": {
         "date": "2026-04-01",
@@ -263,12 +263,12 @@
     },
     "VIXCLS": {
       "latest": {
-        "date": "2026-06-22",
-        "value": 17.28
+        "date": "2026-06-23",
+        "value": 19.49
       },
       "previous": {
-        "date": "2026-06-19",
-        "value": 16.78
+        "date": "2026-06-22",
+        "value": 17.28
       }
     },
     "BOPGSTB": {
@@ -301,15 +301,21 @@
   },
   "news": [
     {
+      "title": "Murray N. Rothbard: Toward a “Science of Liberty”",
+      "link": "https://mises.org/podcasts/audio-mises-wire/murray-n-rothbard-toward-science-liberty",
+      "pubDate": "Wed, 24 Jun 2026 08:10:22 CDT",
+      "kind": "Podcast"
+    },
+    {
+      "title": "Greenspan Was The Perfect Fed Chair. That Is Not a Compliment",
+      "link": "https://mises.org/mises-wire/greenspan-was-perfect-fed-chair-not-compliment",
+      "pubDate": "Wed, 24 Jun 2026 05:00:00 CDT",
+      "kind": "Mises Wire"
+    },
+    {
       "title": "Greenspan's Empty Talk",
       "link": "https://mises.org/mises-daily/greenspans-empty-talk",
       "pubDate": "Tue, 23 Jun 2026 02:00:00 CDT",
-      "kind": "Article"
-    },
-    {
-      "title": "Factory job cuts in June near the worst since 2008 financial crisis and Covid levels",
-      "link": "https://mises.org/notes-margin/factory-job-cuts-june-near-worst-2008-financial-crisis-and-covid-levels",
-      "pubDate": "Tue, 23 Jun 2026 11:00:00 CDT",
       "kind": "Article"
     },
     {
@@ -317,6 +323,12 @@
       "link": "https://mises.org/mises-wire/public-choice-problem-ai-rights",
       "pubDate": "Tue, 23 Jun 2026 11:00:00 CDT",
       "kind": "Mises Wire"
+    },
+    {
+      "title": "Factory job cuts in June near the worst since 2008 financial crisis and Covid levels",
+      "link": "https://mises.org/notes-margin/factory-job-cuts-june-near-worst-2008-financial-crisis-and-covid-levels",
+      "pubDate": "Tue, 23 Jun 2026 11:00:00 CDT",
+      "kind": "Article"
     },
     {
       "title": "\"Japanese bond yields are the highest in 40 years\"",
@@ -337,27 +349,15 @@
       "kind": "Podcast"
     },
     {
-      "title": "Napolitano: A Republic or an Empire?",
-      "link": "https://mises.org/notes-margin/napolitano-republic-or-empire",
-      "pubDate": "Tue, 23 Jun 2026 08:00:00 CDT",
-      "kind": "Article"
-    },
-    {
       "title": "Trump’s Attempt to End the Iran War Infuriates the Uniparty",
       "link": "https://mises.org/power-market/trumps-attempt-end-iran-war-infuriates-uniparty",
       "pubDate": "Tue, 23 Jun 2026 08:00:00 CDT",
       "kind": "Article"
     },
     {
-      "title": "Lies, Damn Lies, and the History of Capitalism",
-      "link": "https://mises.org/podcasts/audio-mises-wire/lies-damn-lies-and-history-capitalism",
-      "pubDate": "Tue, 23 Jun 2026 07:42:57 CDT",
-      "kind": "Podcast"
-    },
-    {
-      "title": "Remembering Philip G. Duffy (1935–2026)",
-      "link": "https://mises.org/power-market/remembering-philip-g-duffy-1935-2026",
-      "pubDate": "Tue, 23 Jun 2026 07:00:00 CDT",
+      "title": "Napolitano: A Republic or an Empire?",
+      "link": "https://mises.org/notes-margin/napolitano-republic-or-empire",
+      "pubDate": "Tue, 23 Jun 2026 08:00:00 CDT",
       "kind": "Article"
     }
   ]
