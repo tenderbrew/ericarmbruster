@@ -1,19 +1,15 @@
 {
-  "fetchedAt": "2026-06-23T22:22:03.619Z",
+  "fetchedAt": "2026-06-24T04:22:39.160Z",
   "price": {
-    "usd": 62672,
-    "time": 1782252916
+    "usd": 62574,
+    "time": 1782274812
   },
   "moves": {
-    "d1": -2.009462112128091,
-    "d7": -4.46187665474862,
-    "d30": -18.59527624322016
+    "d1": -0.12439319375944224,
+    "d7": -2.8694501936463612,
+    "d30": -19.023636847799473
   },
   "history90d": [
-    {
-      "date": "2026-03-26",
-      "close": 71309.26403856269
-    },
     {
       "date": "2026-03-27",
       "close": 68791.11093800364
@@ -371,61 +367,75 @@
       "close": 63957.19561383976
     },
     {
-      "date": "2026-06-23",
-      "close": 62652.2786309781
+      "date": "2026-06-24",
+      "close": 62651.93474257838
+    },
+    {
+      "date": "2026-06-24",
+      "close": 62543.055965602434
     }
   ],
   "blocks": [
     {
-      "height": 955076,
-      "id": "00000000000000000000b767de4f0a028229179eceb58e9f56887daf7b207d5e",
-      "timestamp": 1782253073,
-      "txCount": 6627
+      "height": 955115,
+      "id": "0000000000000000000100706b442e928e295e525db9ae4f26bfe51400fc28bf",
+      "timestamp": 1782274622,
+      "txCount": 6015
     },
     {
-      "height": 955075,
-      "id": "000000000000000000001718d598be899e023cabf0a8fab12e6319ca1128fa71",
-      "timestamp": 1782252994,
-      "txCount": 6055
+      "height": 955114,
+      "id": "00000000000000000001b81b8a9770e7c05123bcadc889c815b51cb7d2a4dc3d",
+      "timestamp": 1782274465,
+      "txCount": 6053
     },
     {
-      "height": 955074,
-      "id": "000000000000000000000a35d419bacbac33435dcf811cb3cb814484706fcd44",
-      "timestamp": 1782252742,
-      "txCount": 5511
+      "height": 955113,
+      "id": "00000000000000000000f639fb84cf34c10b4efca17fc7d45669abd18dbbd632",
+      "timestamp": 1782274393,
+      "txCount": 3726
     },
     {
-      "height": 955073,
-      "id": "00000000000000000000ffd96e8913937438a03e8cc1a80f3e01edf80e87187b",
-      "timestamp": 1782252278,
-      "txCount": 6554
+      "height": 955112,
+      "id": "00000000000000000000dc377e448019c1a6c8fc099d80b96be4a3dd72726aad",
+      "timestamp": 1782274093,
+      "txCount": 4285
     },
     {
-      "height": 955072,
-      "id": "00000000000000000001d04d2a3b8a59b7266fa2bc11ace21bd4d243119318a5",
-      "timestamp": 1782252102,
-      "txCount": 5194
+      "height": 955111,
+      "id": "000000000000000000006ac57fe58712b8e8ffb3a4b56ef41306521219bfb314",
+      "timestamp": 1782273266,
+      "txCount": 4528
     },
     {
-      "height": 955071,
-      "id": "00000000000000000002051bdf5e8bc400d11a6ca2c5c11d77cb0efe93682ab7",
-      "timestamp": 1782251548,
-      "txCount": 5146
+      "height": 955110,
+      "id": "00000000000000000000a3fd4df25113f6362e3b3a6c8c55adb78a465e8d31ea",
+      "timestamp": 1782273230,
+      "txCount": 4317
     },
     {
-      "height": 955070,
-      "id": "0000000000000000000088a5b02a59eaaec9dd1f0ecf50efd02683255519b01b",
-      "timestamp": 1782251522,
-      "txCount": 4666
+      "height": 955109,
+      "id": "00000000000000000001faeb771b2ddaac149d2768a9df99cee02476c006b515",
+      "timestamp": 1782270297,
+      "txCount": 4363
     },
     {
-      "height": 955069,
-      "id": "00000000000000000000d6439f89b2fcdd5c04d45cb6bf2b31c0339c0c2ba536",
-      "timestamp": 1782249982,
-      "txCount": 5059
+      "height": 955108,
+      "id": "00000000000000000001e296b26999aa50831f53218b1188046556b0314d8d9d",
+      "timestamp": 1782270183,
+      "txCount": 2965
     }
   ],
   "news": [
+    {
+      "title": "Crypto PAC's $5.5 million Congress pick gets Maryland win, more crypto allies advance",
+      "link": "https://www.coindesk.com/policy/2026/06/23/crypto-pac-s-usd5-5-million-congress-pick-gets-maryland-win-more-crypto-allies-advance",
+      "pubDate": "Wed, 24 Jun 2026 03:00:34 +0000"
+    },
+    {
+      "title": "AI chipmaker Cerebras down 11% after first public earnings report",
+      "link": "https://www.coindesk.com/markets/2026/06/23/ai-chipmaker-cerebras-down-11-after-first-public-earnings-report",
+      "pubDate": "Tue, 23 Jun 2026 22:58:44 +0000"
+    },
     {
       "title": "Crypto critic Roubini joins tokenization boom with onchain 'Technodollar'",
       "link": "https://www.coindesk.com/business/2026/06/23/crypto-critic-roubini-joins-tokenization-boom-with-onchain-technodollar",
@@ -475,16 +485,6 @@
       "title": "Former Robinhood Crypto COO Tanya Denisova joins stablecoin issuer Agora as head of operations",
       "link": "https://www.coindesk.com/business/2026/06/23/former-robinhood-crypto-coo-tanya-denisova-joins-stablecoin-issuer-agora-as-head-of-operations",
       "pubDate": "Tue, 23 Jun 2026 13:00:00 +0000"
-    },
-    {
-      "title": "In Clarity Act's final weeks, its path through U.S. Senate not getting much clearer",
-      "link": "https://www.coindesk.com/news-analysis/2026/06/22/in-clarity-act-s-final-weeks-its-path-through-u-s-senate-not-getting-much-clearer",
-      "pubDate": "Tue, 23 Jun 2026 13:00:00 +0000"
-    },
-    {
-      "title": "The ECB digital euro takes step forward after winning key European Parliament vote",
-      "link": "https://www.coindesk.com/policy/2026/06/23/european-parliament-clears-last-step-for-a-digital-euro-to-break-u-s-payment-grip",
-      "pubDate": "Tue, 23 Jun 2026 12:37:20 +0000"
     }
   ]
 }
