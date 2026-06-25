@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-06-25T14:40:08.913Z",
+  "fetchedAt": "2026-06-25T20:05:59.283Z",
   "indicators": {
     "UNRATE": {
       "latest": {
@@ -163,22 +163,22 @@
     },
     "BAMLH0A0HYM2": {
       "latest": {
-        "date": "2026-06-23",
-        "value": 2.71
+        "date": "2026-06-24",
+        "value": 2.76
       },
       "previous": {
-        "date": "2026-06-22",
-        "value": 2.65
+        "date": "2026-06-23",
+        "value": 2.71
       }
     },
     "MORTGAGE30US": {
       "latest": {
-        "date": "2026-06-18",
-        "value": 6.47
+        "date": "2026-06-25",
+        "value": 6.49
       },
       "previous": {
-        "date": "2026-06-11",
-        "value": 6.52
+        "date": "2026-06-18",
+        "value": 6.47
       }
     },
     "GDPC1": {
@@ -301,6 +301,24 @@
   },
   "news": [
     {
+      "title": "On Little Bighorn Anniversary, Remember Custer’s Crimes",
+      "link": "https://mises.org/mises-wire/little-bighorn-anniversary-remember-custers-crimes",
+      "pubDate": "Thu, 25 Jun 2026 02:00:00 CDT",
+      "kind": "Mises Wire"
+    },
+    {
+      "title": "Intellectual Property versus the Unrealized",
+      "link": "https://mises.org/podcasts/audio-mises-wire/intellectual-property-versus-unrealized",
+      "pubDate": "Thu, 25 Jun 2026 12:15:11 CDT",
+      "kind": "Podcast"
+    },
+    {
+      "title": "Intellectual Property versus the Unrealized",
+      "link": "https://mises.org/mises-wire/intellectual-property-versus-unrealized",
+      "pubDate": "Thu, 25 Jun 2026 11:00:00 CDT",
+      "kind": "Mises Wire"
+    },
+    {
       "title": "Democratic Socialists: One Vote, One Time?",
       "link": "https://mises.org/podcasts/audio-mises-wire/democratic-socialists-one-vote-one-time",
       "pubDate": "Thu, 25 Jun 2026 08:21:13 CDT",
@@ -341,24 +359,6 @@
       "link": "https://mises.org/podcasts/audio-mises-wire/murray-n-rothbard-toward-science-liberty",
       "pubDate": "Wed, 24 Jun 2026 08:10:22 CDT",
       "kind": "Podcast"
-    },
-    {
-      "title": "Greenspan Was The Perfect Fed Chair. That Is Not a Compliment",
-      "link": "https://mises.org/mises-wire/greenspan-was-perfect-fed-chair-not-compliment",
-      "pubDate": "Wed, 24 Jun 2026 05:00:00 CDT",
-      "kind": "Mises Wire"
-    },
-    {
-      "title": "Greenspan's Empty Talk",
-      "link": "https://mises.org/mises-daily/greenspans-empty-talk",
-      "pubDate": "Tue, 23 Jun 2026 02:00:00 CDT",
-      "kind": "Article"
-    },
-    {
-      "title": "Factory job cuts in June near the worst since 2008 financial crisis and Covid levels",
-      "link": "https://mises.org/notes-margin/factory-job-cuts-june-near-worst-2008-financial-crisis-and-covid-levels",
-      "pubDate": "Tue, 23 Jun 2026 11:00:00 CDT",
-      "kind": "Article"
     }
   ]
 }
