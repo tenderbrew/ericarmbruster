@@ -1,13 +1,13 @@
 {
-  "fetchedAt": "2026-06-25T20:20:50.046Z",
+  "fetchedAt": "2026-06-25T22:43:37.953Z",
   "price": {
-    "usd": 59503,
-    "time": 1782418509
+    "usd": 59701,
+    "time": 1782427217
   },
   "moves": {
-    "d1": -2.3083538417221994,
-    "d7": -5.400977468872792,
-    "d30": -21.524912553658325
+    "d1": -1.9832787036730415,
+    "d7": -5.086193231755953,
+    "d30": -21.263781731441366
   },
   "history90d": [
     {
@@ -372,60 +372,65 @@
     },
     {
       "date": "2026-06-25",
-      "close": 59509.84558949172
+      "close": 59707.080773515634
     }
   ],
   "blocks": [
     {
-      "height": 955387,
-      "id": "0000000000000000000063342b90a94f0cc60ef5628fef0fbca29bc057ee60f5",
-      "timestamp": 1782418766,
-      "txCount": 5604
+      "height": 955407,
+      "id": "00000000000000000000ac5275adccbbfd5a11d0290676db0d9200f4086069f9",
+      "timestamp": 1782427334,
+      "txCount": 4709
     },
     {
-      "height": 955386,
-      "id": "00000000000000000001b2b9b4a8a75b9a982348421c961cbc7a70b79c41d8d6",
-      "timestamp": 1782418499,
-      "txCount": 6185
+      "height": 955406,
+      "id": "00000000000000000000223458477f9471c3fb0859344e84584691586e4b2516",
+      "timestamp": 1782426680,
+      "txCount": 5076
     },
     {
-      "height": 955385,
-      "id": "000000000000000000011f383d02a03c33efdb3cc0480b04987da4ad3cb2324a",
-      "timestamp": 1782418626,
-      "txCount": 4990
+      "height": 955405,
+      "id": "00000000000000000001d5052c49b537004af521624cfe684d5edb9b16ceefed",
+      "timestamp": 1782426586,
+      "txCount": 4469
     },
     {
-      "height": 955384,
-      "id": "00000000000000000001e276eaa91f8bfe63ddc251566ef3e01affc6adde6766",
-      "timestamp": 1782418014,
-      "txCount": 4333
+      "height": 955404,
+      "id": "00000000000000000001eea6989f4cdbc676afc13d809bb61928af122bed2a97",
+      "timestamp": 1782425568,
+      "txCount": 3654
     },
     {
-      "height": 955383,
-      "id": "00000000000000000000c6ca3c475f2de1f5601a2e2249ecb73cc29299840f62",
-      "timestamp": 1782417841,
-      "txCount": 4265
+      "height": 955403,
+      "id": "00000000000000000000d2e2bb1c730f6749742a30ea38524722266c775148fb",
+      "timestamp": 1782424646,
+      "txCount": 5910
     },
     {
-      "height": 955382,
-      "id": "000000000000000000002efc4aa35d3508bdfab62f174b4d3fdf9159228b33f6",
-      "timestamp": 1782417328,
-      "txCount": 4575
+      "height": 955402,
+      "id": "00000000000000000001f7b3840cd397c336642b5847213087c0b67b406bf891",
+      "timestamp": 1782424221,
+      "txCount": 5765
     },
     {
-      "height": 955381,
-      "id": "0000000000000000000151fb969288bc6dfdf652dd30cd6d80f13d6415cc857a",
-      "timestamp": 1782415897,
-      "txCount": 4527
+      "height": 955401,
+      "id": "00000000000000000001e3b317f092a79688ec8b9eaf5730c2fac80d255d9c87",
+      "timestamp": 1782423841,
+      "txCount": 4834
     },
     {
-      "height": 955380,
-      "id": "00000000000000000000b794d224f17bb510f25d96373ac89ac7639c9e734ee5",
-      "timestamp": 1782415518,
-      "txCount": 4502
+      "height": 955400,
+      "id": "000000000000000000000dcbfabb98ec5fc61411f8a05634c58c679c004ea84e",
+      "timestamp": 1782423188,
+      "txCount": 296
     }
   ],
   "news": [
+    {
+      "title": "Asset management giant Invesco files for tokenized fund targeting stablecoin reserve market",
+      "link": "https://www.coindesk.com/business/2026/06/25/asset-management-giant-invesco-files-for-tokenized-fund-targeting-stablecoin-reserve-market",
+      "pubDate": "Thu, 25 Jun 2026 20:47:24 +0000"
+    },
     {
       "title": "Coinbase's Base blockchain resumes after two-hour outage disrupted network",
       "link": "https://www.coindesk.com/tech/2026/06/25/coinbase-s-base-blockchain-resumes-after-two-hour-outage-disrupted-network",
@@ -480,11 +485,6 @@
       "title": "Kraken sues crypto derivatives firm PowerTrade over 'misappropriated' funds claim",
       "link": "https://www.coindesk.com/policy/2026/06/25/kraken-sues-crypto-derivatives-firm-powertrade-over-misappropriated-funds-claim",
       "pubDate": "Thu, 25 Jun 2026 13:53:28 +0000"
-    },
-    {
-      "title": "CoinDesk 20 performance update: AAVE gains 10.1% as index rises",
-      "link": "https://www.coindesk.com/coindesk-indices/2026/06/25/coindesk-20-performance-update-aave-gains-10-1-as-index-rises",
-      "pubDate": "Thu, 25 Jun 2026 13:15:26 +0000"
     }
   ]
 }
