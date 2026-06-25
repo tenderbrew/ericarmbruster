@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-06-25T09:28:58.761Z",
+  "fetchedAt": "2026-06-25T14:40:08.913Z",
   "indicators": {
     "UNRATE": {
       "latest": {
@@ -33,12 +33,12 @@
     },
     "ICSA": {
       "latest": {
-        "date": "2026-06-13",
-        "value": 226000
+        "date": "2026-06-20",
+        "value": 215000
       },
       "previous": {
-        "date": "2026-06-06",
-        "value": 230000
+        "date": "2026-06-13",
+        "value": 227000
       }
     },
     "CPIAUCSL": {
@@ -73,12 +73,12 @@
     },
     "PCE": {
       "latest": {
-        "date": "2026-04-01",
-        "value": 21979.4
+        "date": "2026-05-01",
+        "value": 22059.8
       },
       "previous": {
-        "date": "2026-03-01",
-        "value": 21868.3
+        "date": "2026-04-01",
+        "value": 21903.7
       }
     },
     "M2SL": {
@@ -184,7 +184,7 @@
     "GDPC1": {
       "latest": {
         "date": "2026-01-01",
-        "value": 24152.656
+        "value": 24180.419
       },
       "previous": {
         "date": "2025-10-01",
@@ -254,7 +254,7 @@
     "GFDEGDQ188S": {
       "latest": {
         "date": "2026-01-01",
-        "value": 122.77209
+        "value": 122.59387
       },
       "previous": {
         "date": "2025-10-01",
@@ -263,12 +263,12 @@
     },
     "VIXCLS": {
       "latest": {
-        "date": "2026-06-23",
-        "value": 19.49
+        "date": "2026-06-24",
+        "value": 18.63
       },
       "previous": {
-        "date": "2026-06-22",
-        "value": 17.28
+        "date": "2026-06-23",
+        "value": 19.49
       }
     },
     "BOPGSTB": {
@@ -284,7 +284,7 @@
     "M2V": {
       "latest": {
         "date": "2026-01-01",
-        "value": 1.409
+        "value": 1.411
       },
       "previous": {
         "date": "2025-10-01",
@@ -300,6 +300,18 @@
     }
   },
   "news": [
+    {
+      "title": "Democratic Socialists: One Vote, One Time?",
+      "link": "https://mises.org/podcasts/audio-mises-wire/democratic-socialists-one-vote-one-time",
+      "pubDate": "Thu, 25 Jun 2026 08:21:13 CDT",
+      "kind": "Podcast"
+    },
+    {
+      "title": "Democratic Socialists: One Vote, One Time?",
+      "link": "https://mises.org/mises-wire/democratic-socialists-one-vote-one-time",
+      "pubDate": "Thu, 25 Jun 2026 05:00:00 CDT",
+      "kind": "Mises Wire"
+    },
     {
       "title": "Greenspan Was The Perfect Fed Chair. That Is Not a Compliment",
       "link": "https://mises.org/podcasts/guns-and-butter/greenspan-was-perfect-fed-chair-not-compliment",
@@ -346,18 +358,6 @@
       "title": "Factory job cuts in June near the worst since 2008 financial crisis and Covid levels",
       "link": "https://mises.org/notes-margin/factory-job-cuts-june-near-worst-2008-financial-crisis-and-covid-levels",
       "pubDate": "Tue, 23 Jun 2026 11:00:00 CDT",
-      "kind": "Article"
-    },
-    {
-      "title": "The Public Choice Problem of AI Rights",
-      "link": "https://mises.org/mises-wire/public-choice-problem-ai-rights",
-      "pubDate": "Tue, 23 Jun 2026 11:00:00 CDT",
-      "kind": "Mises Wire"
-    },
-    {
-      "title": "\"Japanese bond yields are the highest in 40 years\"",
-      "link": "https://mises.org/notes-margin/japanese-bond-yields-are-highest-40-years",
-      "pubDate": "Tue, 23 Jun 2026 09:00:00 CDT",
       "kind": "Article"
     }
   ]
