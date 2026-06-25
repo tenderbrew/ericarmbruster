@@ -1,13 +1,13 @@
 {
-  "fetchedAt": "2026-06-25T15:09:26.992Z",
+  "fetchedAt": "2026-06-25T17:21:48.331Z",
   "price": {
-    "usd": 59323,
-    "time": 1782399955
+    "usd": 59353,
+    "time": 1782408039
   },
   "moves": {
-    "d1": -2.603876694494156,
-    "d7": -5.687144957160828,
-    "d30": -21.762304210219195
+    "d1": -2.554622885698832,
+    "d7": -5.639450375779487,
+    "d30": -21.72273893412572
   },
   "history90d": [
     {
@@ -372,60 +372,85 @@
     },
     {
       "date": "2026-06-25",
-      "close": 59203.87334118968
+      "close": 59380.73298735904
     }
   ],
   "blocks": [
     {
-      "height": 955352,
-      "id": "000000000000000000023185f13d12cde0ac14aa706a4738450b0f9c10811754",
-      "timestamp": 1782399255,
-      "txCount": 6137
+      "height": 955363,
+      "id": "000000000000000000002c9140f247e08db3a9679f35e01e09e516034a48a4a1",
+      "timestamp": 1782407714,
+      "txCount": 2733
     },
     {
-      "height": 955351,
-      "id": "000000000000000000020cd7ee1f3ce1001d93dfcd43b024d2e5180134239403",
-      "timestamp": 1782399095,
-      "txCount": 4468
+      "height": 955362,
+      "id": "00000000000000000000868f72bc22bacde3bc6f1d61b1a01c1ea658a29a9707",
+      "timestamp": 1782407880,
+      "txCount": 4091
     },
     {
-      "height": 955350,
-      "id": "00000000000000000000d2f20659c1e4a3c187a8bd1a4dc636d3ff3ff26877fa",
-      "timestamp": 1782398878,
-      "txCount": 4268
+      "height": 955361,
+      "id": "00000000000000000001a32907159efa67afaa9edee1fb8b7aabbffe3eaa0531",
+      "timestamp": 1782406476,
+      "txCount": 4072
     },
     {
-      "height": 955349,
-      "id": "00000000000000000001e424b7070892c536e78e70ddc9f91c028a64bd9b473b",
-      "timestamp": 1782398540,
-      "txCount": 3938
+      "height": 955360,
+      "id": "000000000000000000010b115f1156bf14fad18194eb354d386e8d7310162370",
+      "timestamp": 1782405591,
+      "txCount": 4359
     },
     {
-      "height": 955348,
-      "id": "000000000000000000013bf9b67d72f83ac7c78b9e21e89b24b371b973f73bc5",
-      "timestamp": 1782397356,
-      "txCount": 6224
+      "height": 955359,
+      "id": "000000000000000000005b722a91072b45329d9f2238df1d210eeb2a44c565a8",
+      "timestamp": 1782404729,
+      "txCount": 4369
     },
     {
-      "height": 955347,
-      "id": "0000000000000000000111c42800812aa63724501f1b65800d662476580f7adb",
-      "timestamp": 1782397500,
-      "txCount": 6017
+      "height": 955358,
+      "id": "0000000000000000000196b371768faf1cee906217f04ee6501f636b32aa8405",
+      "timestamp": 1782402697,
+      "txCount": 4627
     },
     {
-      "height": 955346,
-      "id": "000000000000000000005be1be0f9da718c912cebfc35c0ad39c20af7008c685",
-      "timestamp": 1782397134,
-      "txCount": 4656
+      "height": 955357,
+      "id": "00000000000000000001e75a3f3b13b359ab4d9d14983223501c0ad93452571b",
+      "timestamp": 1782401934,
+      "txCount": 4608
     },
     {
-      "height": 955345,
-      "id": "0000000000000000000191bb6a56094ff7488b50b73ac75ea2d5a5c944ebcc29",
-      "timestamp": 1782396714,
-      "txCount": 4562
+      "height": 955356,
+      "id": "00000000000000000002301ff678bcdff601120e062a97f4e37da056f15794b7",
+      "timestamp": 1782401094,
+      "txCount": 4719
     }
   ],
   "news": [
+    {
+      "title": "Kraken in talks to buy 15% stake in DeFi lender Aave at $385 million valuation",
+      "link": "https://www.coindesk.com/business/2026/06/25/kraken-in-talks-to-buy-15-stake-in-defi-lender-aave-at-usd385-million-valuation",
+      "pubDate": "Thu, 25 Jun 2026 17:14:19 +0000"
+    },
+    {
+      "title": "a16z-backed crypto firm rebrands, shifts focus to solving AI’s global copyright headache",
+      "link": "https://www.coindesk.com/business/2026/06/25/a16z-backed-crypto-firm-rebrands-shifts-focus-to-solving-ai-s-global-copyright-headache",
+      "pubDate": "Thu, 25 Jun 2026 17:06:10 +0000"
+    },
+    {
+      "title": "BlackBerry is making a massive comeback as an 'uncrashable' software layer for AI and robotics",
+      "link": "https://www.coindesk.com/markets/2026/06/25/blackberry-is-making-a-massive-comeback-as-an-uncrashable-software-layer-for-ai-and-robotics",
+      "pubDate": "Thu, 25 Jun 2026 16:05:06 +0000"
+    },
+    {
+      "title": "Strategy has a 10-month cash runway for dividends, but retail investors are losing faith",
+      "link": "https://www.coindesk.com/markets/2026/06/25/michael-saylor-s-broken-promises-have-shattered-strategy-investor-trust-says-tw-prime-ceo",
+      "pubDate": "Thu, 25 Jun 2026 15:45:43 +0000"
+    },
+    {
+      "title": "Quant fund says bitcoin is near a major inflection point as rare onchain signals align",
+      "link": "https://www.coindesk.com/markets/2026/06/25/quant-fund-says-bitcoin-is-near-a-major-inflection-point-as-rare-onchain-signals-align",
+      "pubDate": "Thu, 25 Jun 2026 15:14:01 +0000"
+    },
     {
       "title": "Bitcoin tumbles to new multi-year low of $58,000, but a short-squeeze setup emerges",
       "link": "https://www.coindesk.com/markets/2026/06/25/bitcoin-plunges-to-new-multi-year-low-of-usd58-000-but-a-short-squeeze-setup-emerges",
@@ -460,31 +485,6 @@
       "title": "Post-prison CZ says time behind bars didn't hurt the billionaire's business after Binance",
       "link": "https://www.coindesk.com/policy/2026/06/24/post-prison-cz-says-time-behind-bars-didn-t-hurt-the-billionaire-s-business-after-binance",
       "pubDate": "Thu, 25 Jun 2026 13:00:00 +0000"
-    },
-    {
-      "title": "Circle and Nomura join forces to target a $440 billion daily foreign exchange market in Japan",
-      "link": "https://www.coindesk.com/markets/2026/06/25/circle-and-nomura-join-forces-to-target-a-usd750-billion-daily-foreign-exchange-market-in-japan",
-      "pubDate": "Thu, 25 Jun 2026 12:29:21 +0000"
-    },
-    {
-      "title": "Bitcoin derivatives signal panic. A weak core PCE reading could trigger snapback.",
-      "link": "https://www.coindesk.com/daybook-us/2026/06/25/bitcoin-derivatives-signal-panic-a-weak-core-pce-reading-could-trigger-snapback",
-      "pubDate": "Thu, 25 Jun 2026 11:31:02 +0000"
-    },
-    {
-      "title": "CoinEx denies claims it served as $3.84 billion gateway to sanctioned Iranian crypto firms",
-      "link": "https://www.coindesk.com/policy/2026/06/25/coinex-denies-claims-it-served-as-usd3-84-billion-gateway-to-sanctioned-iranian-crypto-firms",
-      "pubDate": "Thu, 25 Jun 2026 10:56:58 +0000"
-    },
-    {
-      "title": "Crypto relief rally fails to shake persistent bearish derivatives signal",
-      "link": "https://www.coindesk.com/markets/2026/06/25/crypto-relief-rally-fails-to-shake-persistent-bearish-derivatives-signal",
-      "pubDate": "Thu, 25 Jun 2026 10:53:24 +0000"
-    },
-    {
-      "title": "Bitcoin supply in loss reaches record high 10.83 million BTC",
-      "link": "https://www.coindesk.com/markets/2026/06/25/bitcoin-supply-in-loss-reaches-record-high-10-83-million-btc",
-      "pubDate": "Thu, 25 Jun 2026 10:28:37 +0000"
     }
   ]
 }
