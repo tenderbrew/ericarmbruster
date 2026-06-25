@@ -1,13 +1,13 @@
 {
-  "fetchedAt": "2026-06-25T09:41:31.131Z",
+  "fetchedAt": "2026-06-25T15:09:26.992Z",
   "price": {
-    "usd": 61637,
-    "time": 1782380138
+    "usd": 59323,
+    "time": 1782399955
   },
   "moves": {
-    "d1": 1.1952337572520566,
-    "d7": -2.0083029132802133,
-    "d30": -18.710502580875556
+    "d1": -2.603876694494156,
+    "d7": -5.687144957160828,
+    "d30": -21.762304210219195
   },
   "history90d": [
     {
@@ -372,119 +372,119 @@
     },
     {
       "date": "2026-06-25",
-      "close": 61651.70972557642
+      "close": 59203.87334118968
     }
   ],
   "blocks": [
     {
-      "height": 955314,
-      "id": "0000000000000000000079d30e209f28b28d67bc8dacfa878a0ea69f275897d4",
-      "timestamp": 1782380178,
-      "txCount": 4828
+      "height": 955352,
+      "id": "000000000000000000023185f13d12cde0ac14aa706a4738450b0f9c10811754",
+      "timestamp": 1782399255,
+      "txCount": 6137
     },
     {
-      "height": 955313,
-      "id": "00000000000000000001721ba75b3a2b46bc1765ea96630f37124420974c33a9",
-      "timestamp": 1782379442,
-      "txCount": 4804
+      "height": 955351,
+      "id": "000000000000000000020cd7ee1f3ce1001d93dfcd43b024d2e5180134239403",
+      "timestamp": 1782399095,
+      "txCount": 4468
     },
     {
-      "height": 955312,
-      "id": "0000000000000000000079cff87354c1cbec2a9262cd896f9980841df793824d",
-      "timestamp": 1782378424,
-      "txCount": 5906
+      "height": 955350,
+      "id": "00000000000000000000d2f20659c1e4a3c187a8bd1a4dc636d3ff3ff26877fa",
+      "timestamp": 1782398878,
+      "txCount": 4268
     },
     {
-      "height": 955311,
-      "id": "000000000000000000008a966d4232ef3af2a15713e9a15ebe43f27dd5ac693b",
-      "timestamp": 1782378270,
-      "txCount": 4357
+      "height": 955349,
+      "id": "00000000000000000001e424b7070892c536e78e70ddc9f91c028a64bd9b473b",
+      "timestamp": 1782398540,
+      "txCount": 3938
     },
     {
-      "height": 955310,
-      "id": "00000000000000000000414220f1a7ef713237483561bc05fc6b2de26a02f382",
-      "timestamp": 1782377633,
-      "txCount": 6881
+      "height": 955348,
+      "id": "000000000000000000013bf9b67d72f83ac7c78b9e21e89b24b371b973f73bc5",
+      "timestamp": 1782397356,
+      "txCount": 6224
     },
     {
-      "height": 955309,
-      "id": "0000000000000000000231dc2400001d99e1fca0f69970d6fd558fb35e469068",
-      "timestamp": 1782377545,
-      "txCount": 6153
+      "height": 955347,
+      "id": "0000000000000000000111c42800812aa63724501f1b65800d662476580f7adb",
+      "timestamp": 1782397500,
+      "txCount": 6017
     },
     {
-      "height": 955308,
-      "id": "00000000000000000000c90dfa59abd298e49107f523262df5ccb8aab9905dac",
-      "timestamp": 1782377412,
-      "txCount": 5850
+      "height": 955346,
+      "id": "000000000000000000005be1be0f9da718c912cebfc35c0ad39c20af7008c685",
+      "timestamp": 1782397134,
+      "txCount": 4656
     },
     {
-      "height": 955307,
-      "id": "00000000000000000000a6bebab4434bcedce414e3eff629e79e1a6072b22103",
-      "timestamp": 1782376996,
-      "txCount": 6356
+      "height": 955345,
+      "id": "0000000000000000000191bb6a56094ff7488b50b73ac75ea2d5a5c944ebcc29",
+      "timestamp": 1782396714,
+      "txCount": 4562
     }
   ],
   "news": [
     {
-      "title": "Forget max pain theory. Bitcoin is well below the $72,000 magnet going into $10 billion options expiry",
-      "link": "https://www.coindesk.com/markets/2026/06/25/forget-max-pain-bitcoin-is-well-below-the-usd72-000-magnet-ahead-of-usd10-billion-options-expiry",
-      "pubDate": "Thu, 25 Jun 2026 07:24:59 +0000"
+      "title": "Bitcoin tumbles to new multi-year low of $58,000, but a short-squeeze setup emerges",
+      "link": "https://www.coindesk.com/markets/2026/06/25/bitcoin-plunges-to-new-multi-year-low-of-usd58-000-but-a-short-squeeze-setup-emerges",
+      "pubDate": "Thu, 25 Jun 2026 15:03:08 +0000"
     },
     {
-      "title": "Live markets: Bitcoin, ether lead $1 billion liquidation losses as AI trade keeps going",
-      "link": "https://www.coindesk.com/tech/2026/06/25/live-markets-bitcoin-ether-lead-usd1-billion-liquidation-losses-as-ai-trade-keeps-going",
-      "pubDate": "Thu, 25 Jun 2026 06:01:07 +0000"
+      "title": "Crypto for Advisors: Bitcoin: planning for inheritance",
+      "link": "https://www.coindesk.com/coindesk-indices/2026/06/24/crypto-for-advisors-bitcoin-planning-for-inheritance",
+      "pubDate": "Thu, 25 Jun 2026 15:00:00 +0000"
     },
     {
-      "title": "MemeCore's M token suddenly crashes 80% with no clear trigger",
-      "link": "https://www.coindesk.com/markets/2026/06/25/memecore-s-m-token-suddenly-crashes-80-with-no-clear-trigger",
-      "pubDate": "Thu, 25 Jun 2026 05:35:43 +0000"
+      "title": "Bitcoin likely to fall another 30% to $44,000 by year-end, prominent BTC miner says",
+      "link": "https://www.coindesk.com/markets/2026/06/25/bitcoin-can-fall-another-30-to-usd44-000-prominent-btc-miner-says",
+      "pubDate": "Thu, 25 Jun 2026 14:39:55 +0000"
     },
     {
-      "title": "Ripple's RLUSD stablecoin goes live in Japan after regulatory approval",
-      "link": "https://www.coindesk.com/markets/2026/06/25/ripple-s-rlusd-stablecoin-goes-live-in-japan-after-regulatory-approval",
-      "pubDate": "Thu, 25 Jun 2026 05:02:34 +0000"
+      "title": "Kraken sues crypto derivatives firm PowerTrade over 'misappropriated' funds claim",
+      "link": "https://www.coindesk.com/policy/2026/06/25/kraken-sues-crypto-derivatives-firm-powertrade-over-misappropriated-funds-claim",
+      "pubDate": "Thu, 25 Jun 2026 13:53:28 +0000"
     },
     {
-      "title": "Bitcoin has a new line in the sand. Thursday’s core PCE could stress test it.",
-      "link": "https://www.coindesk.com/markets/2026/06/25/bitcoin-has-a-new-line-in-the-sand-thursday-s-core-pce-could-stress-test-it",
-      "pubDate": "Thu, 25 Jun 2026 04:53:31 +0000"
+      "title": "CoinDesk 20 performance update: AAVE gains 10.1% as index rises",
+      "link": "https://www.coindesk.com/coindesk-indices/2026/06/25/coindesk-20-performance-update-aave-gains-10-1-as-index-rises",
+      "pubDate": "Thu, 25 Jun 2026 13:15:26 +0000"
     },
     {
-      "title": "XRP slides 2.8% as weak bounce keeps $1 support in focus",
-      "link": "https://www.coindesk.com/markets/2026/06/25/xrp-slides-2-8-as-weak-bounce-keeps-usd1-support-in-focus",
-      "pubDate": "Thu, 25 Jun 2026 04:32:00 +0000"
+      "title": "Uniswap, Spark aim to build stablecoin FX market as banks, fintechs enter the industry",
+      "link": "https://www.coindesk.com/business/2026/06/25/uniswap-spark-aim-to-build-stablecoin-fx-market-as-banks-fintechs-enter-the-industry",
+      "pubDate": "Thu, 25 Jun 2026 13:00:00 +0000"
     },
     {
-      "title": "Bitcoin back above $60,000, ETH, SOL recoup losses as AI stocks stage rebound",
-      "link": "https://www.coindesk.com/markets/2026/06/25/bitcoin-back-above-usd60-000-eth-sol-recoup-losses-as-ai-stocks-stage-rebound",
-      "pubDate": "Thu, 25 Jun 2026 04:29:03 +0000"
+      "title": "Post-prison CZ says time behind bars didn't hurt the billionaire's business after Binance",
+      "link": "https://www.coindesk.com/policy/2026/06/24/post-prison-cz-says-time-behind-bars-didn-t-hurt-the-billionaire-s-business-after-binance",
+      "pubDate": "Thu, 25 Jun 2026 13:00:00 +0000"
     },
     {
-      "title": "Upheaval at the Ethereum Foundation has some of crypto’s biggest names feeling bullish",
-      "link": "https://www.coindesk.com/tech/2026/06/24/upheaval-at-the-ethereum-foundation-has-some-of-crypto-s-biggest-names-feeling-bullish",
-      "pubDate": "Wed, 24 Jun 2026 19:52:39 +0000"
+      "title": "Circle and Nomura join forces to target a $440 billion daily foreign exchange market in Japan",
+      "link": "https://www.coindesk.com/markets/2026/06/25/circle-and-nomura-join-forces-to-target-a-usd750-billion-daily-foreign-exchange-market-in-japan",
+      "pubDate": "Thu, 25 Jun 2026 12:29:21 +0000"
     },
     {
-      "title": "Kalshi targets a massive $40 billion valuation, widening lead over rival Polymarket",
-      "link": "https://www.coindesk.com/business/2026/06/24/kalshi-targets-a-massive-usd40-billion-valuation-widening-lead-over-rival-polymarket",
-      "pubDate": "Wed, 24 Jun 2026 19:48:23 +0000"
+      "title": "Bitcoin derivatives signal panic. A weak core PCE reading could trigger snapback.",
+      "link": "https://www.coindesk.com/daybook-us/2026/06/25/bitcoin-derivatives-signal-panic-a-weak-core-pce-reading-could-trigger-snapback",
+      "pubDate": "Thu, 25 Jun 2026 11:31:02 +0000"
     },
     {
-      "title": "Binance withdraws Greek MiCA bid but vows to remain in Europe",
-      "link": "https://www.coindesk.com/policy/2026/06/24/binance-withdraws-greek-mica-bid-but-vows-to-remain-in-europe",
-      "pubDate": "Wed, 24 Jun 2026 17:18:08 +0000"
+      "title": "CoinEx denies claims it served as $3.84 billion gateway to sanctioned Iranian crypto firms",
+      "link": "https://www.coindesk.com/policy/2026/06/25/coinex-denies-claims-it-served-as-usd3-84-billion-gateway-to-sanctioned-iranian-crypto-firms",
+      "pubDate": "Thu, 25 Jun 2026 10:56:58 +0000"
     },
     {
-      "title": "Bitcoin falls below $60,000 as AI trade continues to draw investor interest and capital",
-      "link": "https://www.coindesk.com/markets/2026/06/24/bitcoin-falls-to-usd60-000-as-ai-trade-continues-to-draw-investor-interest-and-capital",
-      "pubDate": "Wed, 24 Jun 2026 16:01:02 +0000"
+      "title": "Crypto relief rally fails to shake persistent bearish derivatives signal",
+      "link": "https://www.coindesk.com/markets/2026/06/25/crypto-relief-rally-fails-to-shake-persistent-bearish-derivatives-signal",
+      "pubDate": "Thu, 25 Jun 2026 10:53:24 +0000"
     },
     {
-      "title": "Crypto Long & Short: Infrastructure is the prevailing currency in digital assets",
-      "link": "https://www.coindesk.com/coindesk-indices/2026/06/24/crypto-long-and-short-infrastructure-is-the-prevailing-currency-in-digital-assets",
-      "pubDate": "Wed, 24 Jun 2026 16:00:00 +0000"
+      "title": "Bitcoin supply in loss reaches record high 10.83 million BTC",
+      "link": "https://www.coindesk.com/markets/2026/06/25/bitcoin-supply-in-loss-reaches-record-high-10-83-million-btc",
+      "pubDate": "Thu, 25 Jun 2026 10:28:37 +0000"
     }
   ]
 }
