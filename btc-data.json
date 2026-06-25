@@ -1,13 +1,13 @@
 {
-  "fetchedAt": "2026-06-25T17:21:48.331Z",
+  "fetchedAt": "2026-06-25T20:20:50.046Z",
   "price": {
-    "usd": 59353,
-    "time": 1782408039
+    "usd": 59503,
+    "time": 1782418509
   },
   "moves": {
-    "d1": -2.554622885698832,
-    "d7": -5.639450375779487,
-    "d30": -21.72273893412572
+    "d1": -2.3083538417221994,
+    "d7": -5.400977468872792,
+    "d30": -21.524912553658325
   },
   "history90d": [
     {
@@ -372,60 +372,70 @@
     },
     {
       "date": "2026-06-25",
-      "close": 59380.73298735904
+      "close": 59509.84558949172
     }
   ],
   "blocks": [
     {
-      "height": 955363,
-      "id": "000000000000000000002c9140f247e08db3a9679f35e01e09e516034a48a4a1",
-      "timestamp": 1782407714,
-      "txCount": 2733
+      "height": 955387,
+      "id": "0000000000000000000063342b90a94f0cc60ef5628fef0fbca29bc057ee60f5",
+      "timestamp": 1782418766,
+      "txCount": 5604
     },
     {
-      "height": 955362,
-      "id": "00000000000000000000868f72bc22bacde3bc6f1d61b1a01c1ea658a29a9707",
-      "timestamp": 1782407880,
-      "txCount": 4091
+      "height": 955386,
+      "id": "00000000000000000001b2b9b4a8a75b9a982348421c961cbc7a70b79c41d8d6",
+      "timestamp": 1782418499,
+      "txCount": 6185
     },
     {
-      "height": 955361,
-      "id": "00000000000000000001a32907159efa67afaa9edee1fb8b7aabbffe3eaa0531",
-      "timestamp": 1782406476,
-      "txCount": 4072
+      "height": 955385,
+      "id": "000000000000000000011f383d02a03c33efdb3cc0480b04987da4ad3cb2324a",
+      "timestamp": 1782418626,
+      "txCount": 4990
     },
     {
-      "height": 955360,
-      "id": "000000000000000000010b115f1156bf14fad18194eb354d386e8d7310162370",
-      "timestamp": 1782405591,
-      "txCount": 4359
+      "height": 955384,
+      "id": "00000000000000000001e276eaa91f8bfe63ddc251566ef3e01affc6adde6766",
+      "timestamp": 1782418014,
+      "txCount": 4333
     },
     {
-      "height": 955359,
-      "id": "000000000000000000005b722a91072b45329d9f2238df1d210eeb2a44c565a8",
-      "timestamp": 1782404729,
-      "txCount": 4369
+      "height": 955383,
+      "id": "00000000000000000000c6ca3c475f2de1f5601a2e2249ecb73cc29299840f62",
+      "timestamp": 1782417841,
+      "txCount": 4265
     },
     {
-      "height": 955358,
-      "id": "0000000000000000000196b371768faf1cee906217f04ee6501f636b32aa8405",
-      "timestamp": 1782402697,
-      "txCount": 4627
+      "height": 955382,
+      "id": "000000000000000000002efc4aa35d3508bdfab62f174b4d3fdf9159228b33f6",
+      "timestamp": 1782417328,
+      "txCount": 4575
     },
     {
-      "height": 955357,
-      "id": "00000000000000000001e75a3f3b13b359ab4d9d14983223501c0ad93452571b",
-      "timestamp": 1782401934,
-      "txCount": 4608
+      "height": 955381,
+      "id": "0000000000000000000151fb969288bc6dfdf652dd30cd6d80f13d6415cc857a",
+      "timestamp": 1782415897,
+      "txCount": 4527
     },
     {
-      "height": 955356,
-      "id": "00000000000000000002301ff678bcdff601120e062a97f4e37da056f15794b7",
-      "timestamp": 1782401094,
-      "txCount": 4719
+      "height": 955380,
+      "id": "00000000000000000000b794d224f17bb510f25d96373ac89ac7639c9e734ee5",
+      "timestamp": 1782415518,
+      "txCount": 4502
     }
   ],
   "news": [
+    {
+      "title": "Coinbase's Base blockchain resumes after two-hour outage disrupted network",
+      "link": "https://www.coindesk.com/tech/2026/06/25/coinbase-s-base-blockchain-resumes-after-two-hour-outage-disrupted-network",
+      "pubDate": "Thu, 25 Jun 2026 18:46:08 +0000"
+    },
+    {
+      "title": "Strategy's yield-generating STRC stock is more correlated with BTC than ever",
+      "link": "https://www.coindesk.com/markets/2026/06/25/strategy-s-yield-generating-strc-stock-is-more-correlated-with-btc-than-ever",
+      "pubDate": "Thu, 25 Jun 2026 17:48:18 +0000"
+    },
     {
       "title": "Kraken in talks to buy 15% stake in DeFi lender Aave at $385 million valuation",
       "link": "https://www.coindesk.com/business/2026/06/25/kraken-in-talks-to-buy-15-stake-in-defi-lender-aave-at-usd385-million-valuation",
@@ -475,16 +485,6 @@
       "title": "CoinDesk 20 performance update: AAVE gains 10.1% as index rises",
       "link": "https://www.coindesk.com/coindesk-indices/2026/06/25/coindesk-20-performance-update-aave-gains-10-1-as-index-rises",
       "pubDate": "Thu, 25 Jun 2026 13:15:26 +0000"
-    },
-    {
-      "title": "Uniswap, Spark aim to build stablecoin FX market as banks, fintechs enter the industry",
-      "link": "https://www.coindesk.com/business/2026/06/25/uniswap-spark-aim-to-build-stablecoin-fx-market-as-banks-fintechs-enter-the-industry",
-      "pubDate": "Thu, 25 Jun 2026 13:00:00 +0000"
-    },
-    {
-      "title": "Post-prison CZ says time behind bars didn't hurt the billionaire's business after Binance",
-      "link": "https://www.coindesk.com/policy/2026/06/24/post-prison-cz-says-time-behind-bars-didn-t-hurt-the-billionaire-s-business-after-binance",
-      "pubDate": "Thu, 25 Jun 2026 13:00:00 +0000"
     }
   ]
 }
