@@ -1,13 +1,13 @@
 {
-  "fetchedAt": "2026-06-25T04:21:31.619Z",
+  "fetchedAt": "2026-06-25T09:41:31.131Z",
   "price": {
-    "usd": 60725,
-    "time": 1782361247
+    "usd": 61637,
+    "time": 1782380138
   },
   "moves": {
-    "d1": -0.3020820301258831,
-    "d7": -3.45821818727291,
-    "d30": -19.913286974117295
+    "d1": 1.1952337572520566,
+    "d7": -2.0083029132802133,
+    "d30": -18.710502580875556
   },
   "history90d": [
     {
@@ -372,60 +372,95 @@
     },
     {
       "date": "2026-06-25",
-      "close": 60730.186928444775
+      "close": 61651.70972557642
     }
   ],
   "blocks": [
     {
-      "height": 955273,
-      "id": "000000000000000000007cefe1ef09d725326364ddcb5da0cbbfe01cfdf8a114",
-      "timestamp": 1782360648,
-      "txCount": 4169
+      "height": 955314,
+      "id": "0000000000000000000079d30e209f28b28d67bc8dacfa878a0ea69f275897d4",
+      "timestamp": 1782380178,
+      "txCount": 4828
     },
     {
-      "height": 955272,
-      "id": "000000000000000000001acddc7fed0cf89b933381bca05c0196f60f1306e3dc",
-      "timestamp": 1782359983,
-      "txCount": 4017
+      "height": 955313,
+      "id": "00000000000000000001721ba75b3a2b46bc1765ea96630f37124420974c33a9",
+      "timestamp": 1782379442,
+      "txCount": 4804
     },
     {
-      "height": 955271,
-      "id": "0000000000000000000033ec93cafb3796259cc93b9010e3e493f3a40ddff4a3",
-      "timestamp": 1782358556,
-      "txCount": 6882
+      "height": 955312,
+      "id": "0000000000000000000079cff87354c1cbec2a9262cd896f9980841df793824d",
+      "timestamp": 1782378424,
+      "txCount": 5906
     },
     {
-      "height": 955270,
-      "id": "000000000000000000010cb9b12d39c49920028605e117c56725934abebcacc7",
-      "timestamp": 1782358456,
-      "txCount": 6665
+      "height": 955311,
+      "id": "000000000000000000008a966d4232ef3af2a15713e9a15ebe43f27dd5ac693b",
+      "timestamp": 1782378270,
+      "txCount": 4357
     },
     {
-      "height": 955269,
-      "id": "00000000000000000001836999441644620d8c401f4b8d3bb4f7f24556017f7c",
-      "timestamp": 1782358439,
-      "txCount": 5110
+      "height": 955310,
+      "id": "00000000000000000000414220f1a7ef713237483561bc05fc6b2de26a02f382",
+      "timestamp": 1782377633,
+      "txCount": 6881
     },
     {
-      "height": 955268,
-      "id": "000000000000000000001cce27f4bd6d10141f375f9cb9919964b99bedf58e1b",
-      "timestamp": 1782358417,
-      "txCount": 2632
+      "height": 955309,
+      "id": "0000000000000000000231dc2400001d99e1fca0f69970d6fd558fb35e469068",
+      "timestamp": 1782377545,
+      "txCount": 6153
     },
     {
-      "height": 955267,
-      "id": "00000000000000000001aaec219da9ac653b5c5d81de7470e829005377f3019e",
-      "timestamp": 1782358290,
-      "txCount": 4380
+      "height": 955308,
+      "id": "00000000000000000000c90dfa59abd298e49107f523262df5ccb8aab9905dac",
+      "timestamp": 1782377412,
+      "txCount": 5850
     },
     {
-      "height": 955266,
-      "id": "0000000000000000000216c2226421331b11c1bf8eb81731bc174ad12e977ca2",
-      "timestamp": 1782358061,
-      "txCount": 4296
+      "height": 955307,
+      "id": "00000000000000000000a6bebab4434bcedce414e3eff629e79e1a6072b22103",
+      "timestamp": 1782376996,
+      "txCount": 6356
     }
   ],
   "news": [
+    {
+      "title": "Forget max pain theory. Bitcoin is well below the $72,000 magnet going into $10 billion options expiry",
+      "link": "https://www.coindesk.com/markets/2026/06/25/forget-max-pain-bitcoin-is-well-below-the-usd72-000-magnet-ahead-of-usd10-billion-options-expiry",
+      "pubDate": "Thu, 25 Jun 2026 07:24:59 +0000"
+    },
+    {
+      "title": "Live markets: Bitcoin, ether lead $1 billion liquidation losses as AI trade keeps going",
+      "link": "https://www.coindesk.com/tech/2026/06/25/live-markets-bitcoin-ether-lead-usd1-billion-liquidation-losses-as-ai-trade-keeps-going",
+      "pubDate": "Thu, 25 Jun 2026 06:01:07 +0000"
+    },
+    {
+      "title": "MemeCore's M token suddenly crashes 80% with no clear trigger",
+      "link": "https://www.coindesk.com/markets/2026/06/25/memecore-s-m-token-suddenly-crashes-80-with-no-clear-trigger",
+      "pubDate": "Thu, 25 Jun 2026 05:35:43 +0000"
+    },
+    {
+      "title": "Ripple's RLUSD stablecoin goes live in Japan after regulatory approval",
+      "link": "https://www.coindesk.com/markets/2026/06/25/ripple-s-rlusd-stablecoin-goes-live-in-japan-after-regulatory-approval",
+      "pubDate": "Thu, 25 Jun 2026 05:02:34 +0000"
+    },
+    {
+      "title": "Bitcoin has a new line in the sand. Thursday’s core PCE could stress test it.",
+      "link": "https://www.coindesk.com/markets/2026/06/25/bitcoin-has-a-new-line-in-the-sand-thursday-s-core-pce-could-stress-test-it",
+      "pubDate": "Thu, 25 Jun 2026 04:53:31 +0000"
+    },
+    {
+      "title": "XRP slides 2.8% as weak bounce keeps $1 support in focus",
+      "link": "https://www.coindesk.com/markets/2026/06/25/xrp-slides-2-8-as-weak-bounce-keeps-usd1-support-in-focus",
+      "pubDate": "Thu, 25 Jun 2026 04:32:00 +0000"
+    },
+    {
+      "title": "Bitcoin back above $60,000, ETH, SOL recoup losses as AI stocks stage rebound",
+      "link": "https://www.coindesk.com/markets/2026/06/25/bitcoin-back-above-usd60-000-eth-sol-recoup-losses-as-ai-stocks-stage-rebound",
+      "pubDate": "Thu, 25 Jun 2026 04:29:03 +0000"
+    },
     {
       "title": "Upheaval at the Ethereum Foundation has some of crypto’s biggest names feeling bullish",
       "link": "https://www.coindesk.com/tech/2026/06/24/upheaval-at-the-ethereum-foundation-has-some-of-crypto-s-biggest-names-feeling-bullish",
@@ -450,41 +485,6 @@
       "title": "Crypto Long & Short: Infrastructure is the prevailing currency in digital assets",
       "link": "https://www.coindesk.com/coindesk-indices/2026/06/24/crypto-long-and-short-infrastructure-is-the-prevailing-currency-in-digital-assets",
       "pubDate": "Wed, 24 Jun 2026 16:00:00 +0000"
-    },
-    {
-      "title": "SecondFi loses $2.4 million in Cardano wallet exploit",
-      "link": "https://www.coindesk.com/business/2026/06/24/secondfi-loses-usd2-4-million-in-cardano-wallet-exploit-with-up-to-usd20-million-at-risk",
-      "pubDate": "Wed, 24 Jun 2026 15:45:42 +0000"
-    },
-    {
-      "title": "Trump's refusal to sign housing bill could delay Congress and imperil Clarity Act",
-      "link": "https://www.coindesk.com/policy/2026/06/24/trump-refuses-to-sign-law-with-u-s-cbdc-ban-demands-approval-of-elections-bill",
-      "pubDate": "Wed, 24 Jun 2026 15:42:51 +0000"
-    },
-    {
-      "title": "Ex-FCA policy insider explains the ‘great divide’ in the UK’s crypto ambition",
-      "link": "https://www.coindesk.com/policy/2026/06/24/ex-fca-policy-insider-explains-the-great-divide-in-the-uk-s-crypto-ambition",
-      "pubDate": "Wed, 24 Jun 2026 15:23:07 +0000"
-    },
-    {
-      "title": "Bitcoin just broke below the floor of its famous Rainbow Chart into the ‘BTC is dead’ zone",
-      "link": "https://www.coindesk.com/markets/2026/06/24/bitcoin-just-broke-below-the-floor-of-its-famous-rainbow-chart-into-the-btc-is-dead-zone",
-      "pubDate": "Wed, 24 Jun 2026 14:47:55 +0000"
-    },
-    {
-      "title": "The banking lobby is wrong about stablecoins and community banks",
-      "link": "https://www.coindesk.com/opinion/2026/06/24/the-banking-lobby-is-wrong-about-stablecoins-and-community-banks",
-      "pubDate": "Wed, 24 Jun 2026 14:47:30 +0000"
-    },
-    {
-      "title": "Gold, silver and bitcoin tumble as 'debasement' trade unwinds",
-      "link": "https://www.coindesk.com/markets/2026/06/24/gold-silver-and-bitcoin-tumble-as-debasement-trade-unwinds",
-      "pubDate": "Wed, 24 Jun 2026 13:48:04 +0000"
-    },
-    {
-      "title": "Bitcoin could fall to $55,000 before finding a bottom, 10x Research says",
-      "link": "https://www.coindesk.com/markets/2026/06/24/bitcoin-could-fall-to-usd55-000-before-finding-a-bottom-10x-research-says",
-      "pubDate": "Wed, 24 Jun 2026 13:42:31 +0000"
     }
   ]
 }
