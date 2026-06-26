@@ -1,13 +1,13 @@
 {
-  "fetchedAt": "2026-06-26T17:06:21.783Z",
+  "fetchedAt": "2026-06-26T20:06:46.747Z",
   "price": {
-    "usd": 60087,
-    "time": 1782493517
+    "usd": 59731,
+    "time": 1782504016
   },
   "moves": {
-    "d1": 0.6269729088612008,
-    "d7": -5.395152397010705,
-    "d30": -19.186525059832803
+    "d1": 0.030784010171736043,
+    "d7": -5.955661754220487,
+    "d30": -19.665324085890013
   },
   "history90d": [
     {
@@ -372,63 +372,83 @@
     },
     {
       "date": "2026-06-26",
-      "close": 60078.66825743004
+      "close": 59728.98599226574
     }
   ],
   "blocks": [
     {
-      "height": 955524,
-      "id": "000000000000000000016e80ca39475e2db2fd4956f714d9ef81ebeeef9ce71a",
-      "timestamp": 1782493233,
-      "txCount": 3093
+      "height": 955548,
+      "id": "00000000000000000000806830b42db5d67387185b56286eef88b828a2700a49",
+      "timestamp": 1782504083,
+      "txCount": 6025
     },
     {
-      "height": 955523,
-      "id": "0000000000000000000121b2f91e9a6290811c9e8852ad6a1349a43da8db0ce2",
-      "timestamp": 1782492480,
-      "txCount": 1252
+      "height": 955547,
+      "id": "00000000000000000000369add33aec5d53f10e00b8868286f5c7f9e35173932",
+      "timestamp": 1782503976,
+      "txCount": 6269
     },
     {
-      "height": 955522,
-      "id": "0000000000000000000231cb383be8a5195cbdc5118db4cca9579711bd72a297",
-      "timestamp": 1782492263,
-      "txCount": 5054
-    },
-    {
-      "height": 955521,
-      "id": "00000000000000000000e94fe355f3fe43931cd113553bd1fc1b70ad5abe4e57",
-      "timestamp": 1782492173,
-      "txCount": 5188
-    },
-    {
-      "height": 955520,
-      "id": "0000000000000000000180bc64043a0d1636a251f96f9d67c3752a99d9f9ba71",
-      "timestamp": 1782491917,
-      "txCount": 4343
-    },
-    {
-      "height": 955519,
-      "id": "00000000000000000001bf6a9389ed95ab73376829f9daa93ab6213b13a036d2",
-      "timestamp": 1782491441,
-      "txCount": 5194
-    },
-    {
-      "height": 955518,
-      "id": "000000000000000000017f5519a41e41c8d934f35dd5711869f9549d59f80397",
-      "timestamp": 1782491096,
+      "height": 955546,
+      "id": "00000000000000000001d27d02a804906914b10b2436523dfb3da8fe1900c335",
+      "timestamp": 1782503863,
       "txCount": 1
     },
     {
-      "height": 955517,
-      "id": "000000000000000000011bb7fe141d23c4778656bb7f60330a01ea92a8a735af",
-      "timestamp": 1782491082,
-      "txCount": 5104
+      "height": 955545,
+      "id": "0000000000000000000038827430d5986c4a0503a73063ef2ce40017ee5771a9",
+      "timestamp": 1782503833,
+      "txCount": 6588
+    },
+    {
+      "height": 955544,
+      "id": "000000000000000000018bacbca7e9e098bf73b3d51789f4f7c569f5f944aeb2",
+      "timestamp": 1782503777,
+      "txCount": 6341
+    },
+    {
+      "height": 955543,
+      "id": "000000000000000000011d18c2a1972d56dd545ff517ff06b75a890446734c1d",
+      "timestamp": 1782503761,
+      "txCount": 5346
+    },
+    {
+      "height": 955542,
+      "id": "000000000000000000013aa28776069fb12a3b3b20ea1e322b07e61b3e456f93",
+      "timestamp": 1782503329,
+      "txCount": 5094
+    },
+    {
+      "height": 955541,
+      "id": "000000000000000000009f3ba141e58711f9fb7cb23e5ba31c7ff547f7ad8b4b",
+      "timestamp": 1782503239,
+      "txCount": 4196
     }
   ],
   "news": [
     {
-      "title": "Securitize aims to raise $400 million as tokenization firm nears public debut",
-      "link": "https://www.coindesk.com/business/2026/06/26/securitize-aims-to-raise-usd400-million-as-tokenization-firm-nears-public-debut",
+      "title": "U.S. House Democrat, who may soon run key committee, condemns crypto in 401(k)s",
+      "link": "https://www.coindesk.com/policy/2026/06/26/u-s-house-democrat-who-may-soon-run-key-committee-condemns-crypto-in-401-k-s",
+      "pubDate": "Fri, 26 Jun 2026 19:38:12 +0000"
+    },
+    {
+      "title": "Former Ethereum Foundation leader warns of funding gap as governance shifts",
+      "link": "https://www.coindesk.com/markets/2026/06/26/former-ethereum-foundation-leader-warns-of-funding-gap-as-governance-shifts",
+      "pubDate": "Fri, 26 Jun 2026 18:37:50 +0000"
+    },
+    {
+      "title": "Anti-trafficking group says Clarity Act's Section 604 could weaken accountability",
+      "link": "https://www.coindesk.com/policy/2026/06/26/anti-trafficking-group-warns-clarity-act-s-section-604-could-weaken-accountability",
+      "pubDate": "Fri, 26 Jun 2026 18:24:24 +0000"
+    },
+    {
+      "title": "Virtuals' Jansen Teng says AI agents are evolving into autonomous economic actors",
+      "link": "https://www.coindesk.com/coindesk-news/2026/06/26/virtuals-jansen-teng-says-ai-agents-are-evolving-into-autonomous-economic-actors",
+      "pubDate": "Fri, 26 Jun 2026 18:04:22 +0000"
+    },
+    {
+      "title": "Securitize expects to raise $400 million as tokenization firm nears public debut",
+      "link": "https://www.coindesk.com/business/2026/06/26/securitize-expects-to-raise-usd400-million-as-tokenization-firm-nears-public-debut",
       "pubDate": "Fri, 26 Jun 2026 15:04:44 +0000"
     },
     {
@@ -465,26 +485,6 @@
       "title": "Ethereum treasury firm Sharplink buys ether for the first time in eight months",
       "link": "https://www.coindesk.com/markets/2026/06/26/ethereum-treasury-firm-sharplink-takes-in-ether-for-the-first-time-in-eight-months",
       "pubDate": "Fri, 26 Jun 2026 09:47:07 +0000"
-    },
-    {
-      "title": "Japanese financial services giant SBI Holdings to buy Bitbank for $289 million",
-      "link": "https://www.coindesk.com/business/2026/06/26/japanese-financial-services-giant-sbi-holdings-to-buy-bitbank-for-usd289-million",
-      "pubDate": "Fri, 26 Jun 2026 08:31:57 +0000"
-    },
-    {
-      "title": "Grant Cardone says he will keep buying bitcoin using real estate cash flows",
-      "link": "https://www.coindesk.com/business/2026/06/26/grant-cardone-says-he-will-keep-buying-bitcoin-using-real-estate-cash-flows",
-      "pubDate": "Fri, 26 Jun 2026 08:25:44 +0000"
-    },
-    {
-      "title": "Too big to fail: Strategy’s $13 billion bitcoin paper loss alone dwarfs hundreds of prominent tokens",
-      "link": "https://www.coindesk.com/markets/2026/06/26/too-big-to-fail-strategy-s-usd13-billion-bitcoin-paper-loss-alone-dwarfs-hundreds-of-prominent-tokens",
-      "pubDate": "Fri, 26 Jun 2026 06:37:29 +0000"
-    },
-    {
-      "title": "Ether, XRP and dogecoin lead a broad crypto selloff as tech stocks tumble",
-      "link": "https://www.coindesk.com/markets/2026/06/26/ether-xrp-and-dogecoin-lead-a-broad-crypto-selloff-as-tech-stocks-tumble",
-      "pubDate": "Fri, 26 Jun 2026 05:41:51 +0000"
     }
   ]
 }
