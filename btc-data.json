@@ -1,13 +1,13 @@
 {
-  "fetchedAt": "2026-06-26T14:45:11.957Z",
+  "fetchedAt": "2026-06-26T17:06:21.783Z",
   "price": {
-    "usd": 59534,
-    "time": 1782484820
+    "usd": 60087,
+    "time": 1782493517
   },
   "moves": {
-    "d1": -0.29912950960867546,
-    "d7": -6.265831258069721,
-    "d30": -19.930277479522797
+    "d1": 0.6269729088612008,
+    "d7": -5.395152397010705,
+    "d30": -19.186525059832803
   },
   "history90d": [
     {
@@ -372,60 +372,65 @@
     },
     {
       "date": "2026-06-26",
-      "close": 59542.33313354576
+      "close": 60078.66825743004
     }
   ],
   "blocks": [
     {
-      "height": 955502,
-      "id": "00000000000000000000c5a20c16fc0ab71cc2802981774deae0bfff877705db",
-      "timestamp": 1782484548,
-      "txCount": 5905
+      "height": 955524,
+      "id": "000000000000000000016e80ca39475e2db2fd4956f714d9ef81ebeeef9ce71a",
+      "timestamp": 1782493233,
+      "txCount": 3093
     },
     {
-      "height": 955501,
-      "id": "000000000000000000004cfd1f9cb5463a597662fa3cf15d5c8218fbfd6fbdcb",
-      "timestamp": 1782484418,
-      "txCount": 4717
+      "height": 955523,
+      "id": "0000000000000000000121b2f91e9a6290811c9e8852ad6a1349a43da8db0ce2",
+      "timestamp": 1782492480,
+      "txCount": 1252
     },
     {
-      "height": 955500,
-      "id": "00000000000000000001ed9a609d1c563dcf63745718caf4fb402ed6d8294655",
-      "timestamp": 1782484247,
-      "txCount": 4876
+      "height": 955522,
+      "id": "0000000000000000000231cb383be8a5195cbdc5118db4cca9579711bd72a297",
+      "timestamp": 1782492263,
+      "txCount": 5054
     },
     {
-      "height": 955499,
-      "id": "0000000000000000000235e0c9c18e2a4fae6c4505b62c50530f2b202475f097",
-      "timestamp": 1782484108,
-      "txCount": 3937
+      "height": 955521,
+      "id": "00000000000000000000e94fe355f3fe43931cd113553bd1fc1b70ad5abe4e57",
+      "timestamp": 1782492173,
+      "txCount": 5188
     },
     {
-      "height": 955498,
-      "id": "0000000000000000000018a06315d7b2b8d3bcbb81c24242bfdf08949d80b90d",
-      "timestamp": 1782483843,
-      "txCount": 4642
+      "height": 955520,
+      "id": "0000000000000000000180bc64043a0d1636a251f96f9d67c3752a99d9f9ba71",
+      "timestamp": 1782491917,
+      "txCount": 4343
     },
     {
-      "height": 955497,
-      "id": "0000000000000000000107087c25084e540dc52da4b9b4bdf4ba7ed6ebaf351d",
-      "timestamp": 1782483368,
-      "txCount": 4822
+      "height": 955519,
+      "id": "00000000000000000001bf6a9389ed95ab73376829f9daa93ab6213b13a036d2",
+      "timestamp": 1782491441,
+      "txCount": 5194
     },
     {
-      "height": 955496,
-      "id": "0000000000000000000069ccb3bc06e7489f554ea75b7f842808dfd084ff628c",
-      "timestamp": 1782483109,
-      "txCount": 5219
+      "height": 955518,
+      "id": "000000000000000000017f5519a41e41c8d934f35dd5711869f9549d59f80397",
+      "timestamp": 1782491096,
+      "txCount": 1
     },
     {
-      "height": 955495,
-      "id": "00000000000000000002381a8662f25555e60314c85d0fba007f0bf26474fce0",
-      "timestamp": 1782483059,
-      "txCount": 4033
+      "height": 955517,
+      "id": "000000000000000000011bb7fe141d23c4778656bb7f60330a01ea92a8a735af",
+      "timestamp": 1782491082,
+      "txCount": 5104
     }
   ],
   "news": [
+    {
+      "title": "Securitize aims to raise $400 million as tokenization firm nears public debut",
+      "link": "https://www.coindesk.com/business/2026/06/26/securitize-aims-to-raise-usd400-million-as-tokenization-firm-nears-public-debut",
+      "pubDate": "Fri, 26 Jun 2026 15:04:44 +0000"
+    },
     {
       "title": "CoinDesk 20 performance update: AAVE jumps 8.9%, leading index higher",
       "link": "https://www.coindesk.com/coindesk-indices/2026/06/26/coindesk-20-performance-update-aave-jumps-8-9-leading-index-higher",
@@ -480,11 +485,6 @@
       "title": "Ether, XRP and dogecoin lead a broad crypto selloff as tech stocks tumble",
       "link": "https://www.coindesk.com/markets/2026/06/26/ether-xrp-and-dogecoin-lead-a-broad-crypto-selloff-as-tech-stocks-tumble",
       "pubDate": "Fri, 26 Jun 2026 05:41:51 +0000"
-    },
-    {
-      "title": "Live markets: Bitcoin falls below $60,000. Kospi, Nikkei sink",
-      "link": "https://www.coindesk.com/tech/2026/06/26/live-markets-bitcoin-rebounds-to-nearly-usd60-000-kospi-nikkei-sink",
-      "pubDate": "Fri, 26 Jun 2026 05:10:37 +0000"
     }
   ]
 }
