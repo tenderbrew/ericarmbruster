@@ -1,13 +1,13 @@
 {
-  "fetchedAt": "2026-06-26T20:06:46.747Z",
+  "fetchedAt": "2026-06-26T22:22:07.310Z",
   "price": {
-    "usd": 59731,
-    "time": 1782504016
+    "usd": 59827,
+    "time": 1782512123
   },
   "moves": {
-    "d1": 0.030784010171736043,
-    "d7": -5.955661754220487,
-    "d30": -19.665324085890013
+    "d1": 0.1915540502677615,
+    "d7": -5.804513163512226,
+    "d30": -19.536209741784695
   },
   "history90d": [
     {
@@ -372,60 +372,65 @@
     },
     {
       "date": "2026-06-26",
-      "close": 59728.98599226574
+      "close": 59866.59203684313
     }
   ],
   "blocks": [
     {
-      "height": 955548,
-      "id": "00000000000000000000806830b42db5d67387185b56286eef88b828a2700a49",
-      "timestamp": 1782504083,
-      "txCount": 6025
+      "height": 955564,
+      "id": "000000000000000000010a0aad048ed547d2e35fe0e494f602bebd05120295c1",
+      "timestamp": 1782512204,
+      "txCount": 3953
     },
     {
-      "height": 955547,
-      "id": "00000000000000000000369add33aec5d53f10e00b8868286f5c7f9e35173932",
-      "timestamp": 1782503976,
-      "txCount": 6269
+      "height": 955563,
+      "id": "000000000000000000018b57cb7e85b4c8e5838f0cb7a1e976f622eb6b90b8ef",
+      "timestamp": 1782511118,
+      "txCount": 3866
     },
     {
-      "height": 955546,
-      "id": "00000000000000000001d27d02a804906914b10b2436523dfb3da8fe1900c335",
-      "timestamp": 1782503863,
-      "txCount": 1
+      "height": 955562,
+      "id": "00000000000000000002003d95c4eeb8b12f953eb6ac0101f3d6279c68d00d55",
+      "timestamp": 1782509985,
+      "txCount": 1222
     },
     {
-      "height": 955545,
-      "id": "0000000000000000000038827430d5986c4a0503a73063ef2ce40017ee5771a9",
-      "timestamp": 1782503833,
-      "txCount": 6588
+      "height": 955561,
+      "id": "000000000000000000002ddfca908cd87ff37078c7c30850a9892c1e4720fdea",
+      "timestamp": 1782509751,
+      "txCount": 6926
     },
     {
-      "height": 955544,
-      "id": "000000000000000000018bacbca7e9e098bf73b3d51789f4f7c569f5f944aeb2",
-      "timestamp": 1782503777,
-      "txCount": 6341
+      "height": 955560,
+      "id": "000000000000000000003298bbe314d3a6a0ecda50c34086a8f3e0a99e821bba",
+      "timestamp": 1782509674,
+      "txCount": 7038
     },
     {
-      "height": 955543,
-      "id": "000000000000000000011d18c2a1972d56dd545ff517ff06b75a890446734c1d",
-      "timestamp": 1782503761,
-      "txCount": 5346
+      "height": 955559,
+      "id": "000000000000000000008cb780e426af7826172fe8327ee5b30c5168ba3e2265",
+      "timestamp": 1782509655,
+      "txCount": 5406
     },
     {
-      "height": 955542,
-      "id": "000000000000000000013aa28776069fb12a3b3b20ea1e322b07e61b3e456f93",
-      "timestamp": 1782503329,
-      "txCount": 5094
+      "height": 955558,
+      "id": "000000000000000000022dc6fab486b2d99c8b91c12090d78f3cbe907d42cabc",
+      "timestamp": 1782509589,
+      "txCount": 4775
     },
     {
-      "height": 955541,
-      "id": "000000000000000000009f3ba141e58711f9fb7cb23e5ba31c7ff547f7ad8b4b",
-      "timestamp": 1782503239,
-      "txCount": 4196
+      "height": 955557,
+      "id": "000000000000000000007598d022b001de0a2ec97a13e6c65433aa4c458337da",
+      "timestamp": 1782509092,
+      "txCount": 4006
     }
   ],
   "news": [
+    {
+      "title": "Aave, Solana ecosystem tokens lead crypto rebound as bitcoin steadies near $60,000",
+      "link": "https://www.coindesk.com/markets/2026/06/26/aave-solana-ecosystem-tokens-lead-crypto-rebound-as-bitcoin-steadies-near-usd60-000",
+      "pubDate": "Fri, 26 Jun 2026 20:15:03 +0000"
+    },
     {
       "title": "U.S. House Democrat, who may soon run key committee, condemns crypto in 401(k)s",
       "link": "https://www.coindesk.com/policy/2026/06/26/u-s-house-democrat-who-may-soon-run-key-committee-condemns-crypto-in-401-k-s",
@@ -480,11 +485,6 @@
       "title": "Binance tells EU users it will no longer provide services after failing to secure MiCA license",
       "link": "https://www.coindesk.com/policy/2026/06/26/binance-tells-eu-users-it-will-no-longer-provide-services-after-failing-to-secure-mica-license",
       "pubDate": "Fri, 26 Jun 2026 10:19:22 +0000"
-    },
-    {
-      "title": "Ethereum treasury firm Sharplink buys ether for the first time in eight months",
-      "link": "https://www.coindesk.com/markets/2026/06/26/ethereum-treasury-firm-sharplink-takes-in-ether-for-the-first-time-in-eight-months",
-      "pubDate": "Fri, 26 Jun 2026 09:47:07 +0000"
     }
   ]
 }
