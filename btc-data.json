@@ -1,13 +1,13 @@
 {
-  "fetchedAt": "2026-06-26T04:37:20.505Z",
+  "fetchedAt": "2026-06-26T09:49:48.493Z",
   "price": {
-    "usd": 59840,
-    "time": 1782448525
+    "usd": 59919,
+    "time": 1782467119
   },
   "moves": {
-    "d1": 0.21332499319743903,
-    "d7": -5.784045125187154,
-    "d30": -19.518725507687094
+    "d1": 0.34562533869313405,
+    "d7": -5.659662430750146,
+    "d30": -19.412475162017106
   },
   "history90d": [
     {
@@ -372,60 +372,90 @@
     },
     {
       "date": "2026-06-26",
-      "close": 59846.26149296417
+      "close": 59804.99707796137
     }
   ],
   "blocks": [
     {
-      "height": 955441,
-      "id": "00000000000000000001f1441b7ad821c49c96b63aee93d0f753f318ce9c5fc7",
-      "timestamp": 1782448319,
-      "txCount": 5151
+      "height": 955464,
+      "id": "0000000000000000000059eb844b7535bda78f9abb72baea331f20a09800840d",
+      "timestamp": 1782463034,
+      "txCount": 4829
     },
     {
-      "height": 955440,
-      "id": "0000000000000000000052ebcf22d887290d38a0f43efa6851e8b478e7e6f40f",
-      "timestamp": 1782447345,
-      "txCount": 4923
+      "height": 955463,
+      "id": "00000000000000000000f6cee2256ff507843ca42c00a98c557eaad535b16d34",
+      "timestamp": 1782462819,
+      "txCount": 4416
     },
     {
-      "height": 955439,
-      "id": "000000000000000000018f7edbe7ed2b1e3619995ecf8d5571b87131f86b50ab",
-      "timestamp": 1782446732,
-      "txCount": 5477
+      "height": 955462,
+      "id": "0000000000000000000013d3a57666424d2c88d52407ae4619870eae6c0cc1a6",
+      "timestamp": 1782462487,
+      "txCount": 4705
     },
     {
-      "height": 955438,
-      "id": "0000000000000000000234a7943f3ab568a5734dbf994b5a39378ab3a9974144",
-      "timestamp": 1782446343,
-      "txCount": 520
+      "height": 955461,
+      "id": "000000000000000000000f4120ad549c8352628a760459000c577e41e14121c5",
+      "timestamp": 1782460875,
+      "txCount": 4887
     },
     {
-      "height": 955437,
-      "id": "00000000000000000001429ade2eb164f4f424c7236583a6814fcb29e96c2d78",
-      "timestamp": 1782446296,
-      "txCount": 4732
+      "height": 955460,
+      "id": "0000000000000000000099d7645cbf99701a89aa7afe871554bc90ef94f24987",
+      "timestamp": 1782460157,
+      "txCount": 5497
     },
     {
-      "height": 955436,
-      "id": "00000000000000000000b5c29ebae317d53ffec2cfcc8240f3500fb564d3bc40",
-      "timestamp": 1782445093,
-      "txCount": 6443
+      "height": 955459,
+      "id": "0000000000000000000156b582a6e03e2f97547ab6844159e1faf5eecb15b80f",
+      "timestamp": 1782459917,
+      "txCount": 3993
     },
     {
-      "height": 955435,
-      "id": "000000000000000000005a460f51e1162db7b70251e9cac727fcbc461c5c3169",
-      "timestamp": 1782445060,
-      "txCount": 5437
+      "height": 955458,
+      "id": "000000000000000000009098de3b858c5c1089b99a8304cf32c1a74af8d904ec",
+      "timestamp": 1782458988,
+      "txCount": 5694
     },
     {
-      "height": 955434,
-      "id": "000000000000000000010689cc2df897e51c59ccd52944bd9d74853778b34a93",
-      "timestamp": 1782444582,
-      "txCount": 5872
+      "height": 955457,
+      "id": "00000000000000000001a5eb84d6ba476257f1a62d1cf2bf8b1c6a98d025f9e3",
+      "timestamp": 1782458544,
+      "txCount": 4795
     }
   ],
   "news": [
+    {
+      "title": "Ethereum treasury firm Sharplink takes in ether for the first time in eight months",
+      "link": "https://www.coindesk.com/markets/2026/06/26/ethereum-treasury-firm-sharplink-takes-in-ether-for-the-first-time-in-eight-months",
+      "pubDate": "Fri, 26 Jun 2026 09:47:07 +0000"
+    },
+    {
+      "title": "Japanese financial services giant SBI Holdings to buy Bitbank for $289 million",
+      "link": "https://www.coindesk.com/business/2026/06/26/japanese-financial-services-giant-sbi-holdings-to-buy-bitbank-for-usd289-million",
+      "pubDate": "Fri, 26 Jun 2026 08:31:57 +0000"
+    },
+    {
+      "title": "Grant Cardone says he will keep buying bitcoin using real estate cash flows",
+      "link": "https://www.coindesk.com/business/2026/06/26/grant-cardone-says-he-will-keep-buying-bitcoin-using-real-estate-cash-flows",
+      "pubDate": "Fri, 26 Jun 2026 08:25:44 +0000"
+    },
+    {
+      "title": "Too big to fail: Strategy’s $13 billion bitcoin paper loss alone dwarfs hundreds of prominent tokens",
+      "link": "https://www.coindesk.com/markets/2026/06/26/too-big-to-fail-strategy-s-usd13-billion-bitcoin-paper-loss-alone-dwarfs-hundreds-of-prominent-tokens",
+      "pubDate": "Fri, 26 Jun 2026 06:37:29 +0000"
+    },
+    {
+      "title": "Ether, XRP and dogecoin lead a broad crypto selloff as tech stocks tumble",
+      "link": "https://www.coindesk.com/markets/2026/06/26/ether-xrp-and-dogecoin-lead-a-broad-crypto-selloff-as-tech-stocks-tumble",
+      "pubDate": "Fri, 26 Jun 2026 05:41:51 +0000"
+    },
+    {
+      "title": "Live markets: Bitcoin rebounds to nearly $60,000. Kospi, Nikkei sink",
+      "link": "https://www.coindesk.com/tech/2026/06/26/live-markets-bitcoin-rebounds-to-nearly-usd60-000-kospi-nikkei-sink",
+      "pubDate": "Fri, 26 Jun 2026 05:10:37 +0000"
+    },
     {
       "title": "Asset management giant Invesco files for tokenized fund targeting stablecoin reserve market",
       "link": "https://www.coindesk.com/business/2026/06/25/asset-management-giant-invesco-files-for-tokenized-fund-targeting-stablecoin-reserve-market",
@@ -455,36 +485,6 @@
       "title": "BlackBerry is making a massive comeback as an 'uncrashable' software layer for AI and robotics",
       "link": "https://www.coindesk.com/markets/2026/06/25/blackberry-is-making-a-massive-comeback-as-an-uncrashable-software-layer-for-ai-and-robotics",
       "pubDate": "Thu, 25 Jun 2026 16:05:06 +0000"
-    },
-    {
-      "title": "Strategy has a 10-month cash runway for dividends, but retail investors are losing faith",
-      "link": "https://www.coindesk.com/markets/2026/06/25/michael-saylor-s-broken-promises-have-shattered-strategy-investor-trust-says-tw-prime-ceo",
-      "pubDate": "Thu, 25 Jun 2026 15:45:43 +0000"
-    },
-    {
-      "title": "Quant fund says bitcoin is near a major inflection point as rare onchain signals align",
-      "link": "https://www.coindesk.com/markets/2026/06/25/quant-fund-says-bitcoin-is-near-a-major-inflection-point-as-rare-onchain-signals-align",
-      "pubDate": "Thu, 25 Jun 2026 15:14:01 +0000"
-    },
-    {
-      "title": "Bitcoin tumbles to new multi-year low of $58,000, but a short-squeeze setup emerges",
-      "link": "https://www.coindesk.com/markets/2026/06/25/bitcoin-plunges-to-new-multi-year-low-of-usd58-000-but-a-short-squeeze-setup-emerges",
-      "pubDate": "Thu, 25 Jun 2026 15:03:08 +0000"
-    },
-    {
-      "title": "Crypto for Advisors: Bitcoin: planning for inheritance",
-      "link": "https://www.coindesk.com/coindesk-indices/2026/06/24/crypto-for-advisors-bitcoin-planning-for-inheritance",
-      "pubDate": "Thu, 25 Jun 2026 15:00:00 +0000"
-    },
-    {
-      "title": "Bitcoin likely to fall another 30% to $44,000 by year-end, prominent BTC miner says",
-      "link": "https://www.coindesk.com/markets/2026/06/25/bitcoin-can-fall-another-30-to-usd44-000-prominent-btc-miner-says",
-      "pubDate": "Thu, 25 Jun 2026 14:39:55 +0000"
-    },
-    {
-      "title": "Kraken sues crypto derivatives firm PowerTrade over 'misappropriated' funds claim",
-      "link": "https://www.coindesk.com/policy/2026/06/25/kraken-sues-crypto-derivatives-firm-powertrade-over-misappropriated-funds-claim",
-      "pubDate": "Thu, 25 Jun 2026 13:53:28 +0000"
     }
   ]
 }
