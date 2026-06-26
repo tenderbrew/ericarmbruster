@@ -1,13 +1,13 @@
 {
-  "fetchedAt": "2026-06-26T09:49:48.493Z",
+  "fetchedAt": "2026-06-26T14:45:11.957Z",
   "price": {
-    "usd": 59919,
-    "time": 1782467119
+    "usd": 59534,
+    "time": 1782484820
   },
   "moves": {
-    "d1": 0.34562533869313405,
-    "d7": -5.659662430750146,
-    "d30": -19.412475162017106
+    "d1": -0.29912950960867546,
+    "d7": -6.265831258069721,
+    "d30": -19.930277479522797
   },
   "history90d": [
     {
@@ -372,62 +372,92 @@
     },
     {
       "date": "2026-06-26",
-      "close": 59804.99707796137
+      "close": 59542.33313354576
     }
   ],
   "blocks": [
     {
-      "height": 955464,
-      "id": "0000000000000000000059eb844b7535bda78f9abb72baea331f20a09800840d",
-      "timestamp": 1782463034,
-      "txCount": 4829
+      "height": 955502,
+      "id": "00000000000000000000c5a20c16fc0ab71cc2802981774deae0bfff877705db",
+      "timestamp": 1782484548,
+      "txCount": 5905
     },
     {
-      "height": 955463,
-      "id": "00000000000000000000f6cee2256ff507843ca42c00a98c557eaad535b16d34",
-      "timestamp": 1782462819,
-      "txCount": 4416
+      "height": 955501,
+      "id": "000000000000000000004cfd1f9cb5463a597662fa3cf15d5c8218fbfd6fbdcb",
+      "timestamp": 1782484418,
+      "txCount": 4717
     },
     {
-      "height": 955462,
-      "id": "0000000000000000000013d3a57666424d2c88d52407ae4619870eae6c0cc1a6",
-      "timestamp": 1782462487,
-      "txCount": 4705
+      "height": 955500,
+      "id": "00000000000000000001ed9a609d1c563dcf63745718caf4fb402ed6d8294655",
+      "timestamp": 1782484247,
+      "txCount": 4876
     },
     {
-      "height": 955461,
-      "id": "000000000000000000000f4120ad549c8352628a760459000c577e41e14121c5",
-      "timestamp": 1782460875,
-      "txCount": 4887
+      "height": 955499,
+      "id": "0000000000000000000235e0c9c18e2a4fae6c4505b62c50530f2b202475f097",
+      "timestamp": 1782484108,
+      "txCount": 3937
     },
     {
-      "height": 955460,
-      "id": "0000000000000000000099d7645cbf99701a89aa7afe871554bc90ef94f24987",
-      "timestamp": 1782460157,
-      "txCount": 5497
+      "height": 955498,
+      "id": "0000000000000000000018a06315d7b2b8d3bcbb81c24242bfdf08949d80b90d",
+      "timestamp": 1782483843,
+      "txCount": 4642
     },
     {
-      "height": 955459,
-      "id": "0000000000000000000156b582a6e03e2f97547ab6844159e1faf5eecb15b80f",
-      "timestamp": 1782459917,
-      "txCount": 3993
+      "height": 955497,
+      "id": "0000000000000000000107087c25084e540dc52da4b9b4bdf4ba7ed6ebaf351d",
+      "timestamp": 1782483368,
+      "txCount": 4822
     },
     {
-      "height": 955458,
-      "id": "000000000000000000009098de3b858c5c1089b99a8304cf32c1a74af8d904ec",
-      "timestamp": 1782458988,
-      "txCount": 5694
+      "height": 955496,
+      "id": "0000000000000000000069ccb3bc06e7489f554ea75b7f842808dfd084ff628c",
+      "timestamp": 1782483109,
+      "txCount": 5219
     },
     {
-      "height": 955457,
-      "id": "00000000000000000001a5eb84d6ba476257f1a62d1cf2bf8b1c6a98d025f9e3",
-      "timestamp": 1782458544,
-      "txCount": 4795
+      "height": 955495,
+      "id": "00000000000000000002381a8662f25555e60314c85d0fba007f0bf26474fce0",
+      "timestamp": 1782483059,
+      "txCount": 4033
     }
   ],
   "news": [
     {
-      "title": "Ethereum treasury firm Sharplink takes in ether for the first time in eight months",
+      "title": "CoinDesk 20 performance update: AAVE jumps 8.9%, leading index higher",
+      "link": "https://www.coindesk.com/coindesk-indices/2026/06/26/coindesk-20-performance-update-aave-jumps-8-9-leading-index-higher",
+      "pubDate": "Fri, 26 Jun 2026 13:22:16 +0000"
+    },
+    {
+      "title": "Wall Street's IPO revival hasn't reached dot-com euphoria levels, Goldman Sachs says",
+      "link": "https://www.coindesk.com/business/2026/06/26/wall-street-s-ipo-revival-hasn-t-reached-dot-com-euphoria-levels-goldman-sachs-says",
+      "pubDate": "Fri, 26 Jun 2026 12:25:36 +0000"
+    },
+    {
+      "title": "With crypto ending the first half in the red, bitcoin's solace is it beat Strategy",
+      "link": "https://www.coindesk.com/daybook-us/2026/06/26/with-crypto-ending-the-first-half-in-the-red-bitcoin-s-solace-is-it-beat-strategy",
+      "pubDate": "Fri, 26 Jun 2026 11:36:01 +0000"
+    },
+    {
+      "title": "Bitcoin bounces from $58,000 as derivatives signal more pain in the pipeline",
+      "link": "https://www.coindesk.com/markets/2026/06/26/bitcoin-bounces-from-usd58-000-as-derivatives-signal-more-pain-in-the-pipeline",
+      "pubDate": "Fri, 26 Jun 2026 11:03:20 +0000"
+    },
+    {
+      "title": "All eyes on Strategy's June 30 ex-dividend date and monthly STRC dividend rate reset",
+      "link": "https://www.coindesk.com/markets/2026/06/26/all-eyes-on-strategy-s-june-30-ex-dividend-date-and-monthly-strc-dividend-rate-reset",
+      "pubDate": "Fri, 26 Jun 2026 10:28:24 +0000"
+    },
+    {
+      "title": "Binance tells EU users it will no longer provide services after failing to secure MiCA license",
+      "link": "https://www.coindesk.com/policy/2026/06/26/binance-tells-eu-users-it-will-no-longer-provide-services-after-failing-to-secure-mica-license",
+      "pubDate": "Fri, 26 Jun 2026 10:19:22 +0000"
+    },
+    {
+      "title": "Ethereum treasury firm Sharplink buys ether for the first time in eight months",
       "link": "https://www.coindesk.com/markets/2026/06/26/ethereum-treasury-firm-sharplink-takes-in-ether-for-the-first-time-in-eight-months",
       "pubDate": "Fri, 26 Jun 2026 09:47:07 +0000"
     },
@@ -452,39 +482,9 @@
       "pubDate": "Fri, 26 Jun 2026 05:41:51 +0000"
     },
     {
-      "title": "Live markets: Bitcoin rebounds to nearly $60,000. Kospi, Nikkei sink",
+      "title": "Live markets: Bitcoin falls below $60,000. Kospi, Nikkei sink",
       "link": "https://www.coindesk.com/tech/2026/06/26/live-markets-bitcoin-rebounds-to-nearly-usd60-000-kospi-nikkei-sink",
       "pubDate": "Fri, 26 Jun 2026 05:10:37 +0000"
-    },
-    {
-      "title": "Asset management giant Invesco files for tokenized fund targeting stablecoin reserve market",
-      "link": "https://www.coindesk.com/business/2026/06/25/asset-management-giant-invesco-files-for-tokenized-fund-targeting-stablecoin-reserve-market",
-      "pubDate": "Thu, 25 Jun 2026 20:47:24 +0000"
-    },
-    {
-      "title": "Coinbase's Base blockchain resumes after two-hour outage disrupted network",
-      "link": "https://www.coindesk.com/tech/2026/06/25/coinbase-s-base-blockchain-resumes-after-two-hour-outage-disrupted-network",
-      "pubDate": "Thu, 25 Jun 2026 18:46:08 +0000"
-    },
-    {
-      "title": "Strategy's yield-generating STRC stock is more correlated with BTC than ever",
-      "link": "https://www.coindesk.com/markets/2026/06/25/strategy-s-yield-generating-strc-stock-is-more-correlated-with-btc-than-ever",
-      "pubDate": "Thu, 25 Jun 2026 17:48:18 +0000"
-    },
-    {
-      "title": "Kraken in talks to buy 15% stake in DeFi lender Aave at $385 million valuation",
-      "link": "https://www.coindesk.com/business/2026/06/25/kraken-in-talks-to-buy-15-stake-in-defi-lender-aave-at-usd385-million-valuation",
-      "pubDate": "Thu, 25 Jun 2026 17:14:19 +0000"
-    },
-    {
-      "title": "a16z-backed crypto firm rebrands, shifts focus to solving AI’s global copyright headache",
-      "link": "https://www.coindesk.com/business/2026/06/25/a16z-backed-crypto-firm-rebrands-shifts-focus-to-solving-ai-s-global-copyright-headache",
-      "pubDate": "Thu, 25 Jun 2026 17:06:10 +0000"
-    },
-    {
-      "title": "BlackBerry is making a massive comeback as an 'uncrashable' software layer for AI and robotics",
-      "link": "https://www.coindesk.com/markets/2026/06/25/blackberry-is-making-a-massive-comeback-as-an-uncrashable-software-layer-for-ai-and-robotics",
-      "pubDate": "Thu, 25 Jun 2026 16:05:06 +0000"
     }
   ]
 }
