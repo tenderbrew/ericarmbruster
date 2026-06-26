@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-06-25T20:05:59.283Z",
+  "fetchedAt": "2026-06-26T04:05:17.305Z",
   "indicators": {
     "UNRATE": {
       "latest": {
@@ -63,12 +63,12 @@
     },
     "T10YIE": {
       "latest": {
-        "date": "2026-06-24",
-        "value": 2.18
+        "date": "2026-06-25",
+        "value": 2.21
       },
       "previous": {
-        "date": "2026-06-23",
-        "value": 2.21
+        "date": "2026-06-24",
+        "value": 2.18
       }
     },
     "PCE": {
@@ -103,12 +103,12 @@
     },
     "WALCL": {
       "latest": {
-        "date": "2026-06-17",
-        "value": 6736424
+        "date": "2026-06-24",
+        "value": 6735645
       },
       "previous": {
-        "date": "2026-06-10",
-        "value": 6725397
+        "date": "2026-06-17",
+        "value": 6736424
       }
     },
     "FEDFUNDS": {
@@ -123,42 +123,42 @@
     },
     "DGS2": {
       "latest": {
-        "date": "2026-06-23",
-        "value": 4.16
+        "date": "2026-06-24",
+        "value": 4.11
       },
       "previous": {
-        "date": "2026-06-22",
-        "value": 4.24
+        "date": "2026-06-23",
+        "value": 4.16
       }
     },
     "DGS10": {
       "latest": {
-        "date": "2026-06-23",
-        "value": 4.5
+        "date": "2026-06-24",
+        "value": 4.41
       },
       "previous": {
-        "date": "2026-06-22",
-        "value": 4.51
+        "date": "2026-06-23",
+        "value": 4.5
       }
     },
     "T10Y2Y": {
       "latest": {
-        "date": "2026-06-24",
-        "value": 0.3
+        "date": "2026-06-25",
+        "value": 0.31
       },
       "previous": {
-        "date": "2026-06-23",
-        "value": 0.34
+        "date": "2026-06-24",
+        "value": 0.3
       }
     },
     "DFII10": {
       "latest": {
-        "date": "2026-06-23",
-        "value": 2.29
+        "date": "2026-06-24",
+        "value": 2.23
       },
       "previous": {
-        "date": "2026-06-22",
-        "value": 2.28
+        "date": "2026-06-23",
+        "value": 2.29
       }
     },
     "BAMLH0A0HYM2": {
@@ -301,10 +301,22 @@
   },
   "news": [
     {
+      "title": "The Death of Greenspan and Rise of Mamdanism",
+      "link": "https://mises.org/podcasts/power-and-market/death-greenspan-and-rise-mamdanism",
+      "pubDate": "Thu, 25 Jun 2026 05:10:00 CDT",
+      "kind": "Podcast"
+    },
+    {
       "title": "On Little Bighorn Anniversary, Remember Custer’s Crimes",
       "link": "https://mises.org/mises-wire/little-bighorn-anniversary-remember-custers-crimes",
       "pubDate": "Thu, 25 Jun 2026 02:00:00 CDT",
       "kind": "Mises Wire"
+    },
+    {
+      "title": "The Fed's Favorite Price-Inflation Measure Just Increased Again",
+      "link": "https://mises.org/power-market/feds-favorite-price-inflation-measure-just-increased-again",
+      "pubDate": "Thu, 25 Jun 2026 02:00:00 CDT",
+      "kind": "Article"
     },
     {
       "title": "Intellectual Property versus the Unrealized",
@@ -346,18 +358,6 @@
       "title": "How Greek Merchants and Philosophers Discovered Economics",
       "link": "https://mises.org/podcasts/audio-mises-wire/how-greek-merchants-and-philosophers-discovered-economics",
       "pubDate": "Wed, 24 Jun 2026 01:35:13 CDT",
-      "kind": "Podcast"
-    },
-    {
-      "title": "How Greek Merchants and Philosophers Discovered Economics",
-      "link": "https://mises.org/mises-wire/how-greek-merchants-and-philosophers-discovered-economics",
-      "pubDate": "Wed, 24 Jun 2026 11:00:00 CDT",
-      "kind": "Mises Wire"
-    },
-    {
-      "title": "Murray N. Rothbard: Toward a “Science of Liberty”",
-      "link": "https://mises.org/podcasts/audio-mises-wire/murray-n-rothbard-toward-science-liberty",
-      "pubDate": "Wed, 24 Jun 2026 08:10:22 CDT",
       "kind": "Podcast"
     }
   ]
