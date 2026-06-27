@@ -1,13 +1,13 @@
 {
-  "fetchedAt": "2026-06-27T16:18:13.920Z",
+  "fetchedAt": "2026-06-27T19:42:50.552Z",
   "price": {
-    "usd": 60658,
-    "time": 1782576910
+    "usd": 60070,
+    "time": 1782589211
   },
   "moves": {
-    "d1": 1.1272886261522563,
-    "d7": -5.5763072849293716,
-    "d30": -17.516820221436458
+    "d1": 0.14699178629309362,
+    "d7": -6.491621527345237,
+    "d30": -18.316386803087603
   },
   "history90d": [
     {
@@ -372,60 +372,70 @@
     },
     {
       "date": "2026-06-27",
-      "close": 60628.069718034974
+      "close": 60080.11262236056
     }
   ],
   "blocks": [
     {
-      "height": 955675,
-      "id": "00000000000000000000e5900b0d9306850ecfa8f0db547cde4728e80aff2529",
-      "timestamp": 1782576451,
-      "txCount": 4393
+      "height": 955708,
+      "id": "00000000000000000000f20f0b1545770e38ba00cbd0356fc12bd4c98ef05c79",
+      "timestamp": 1782589189,
+      "txCount": 6427
     },
     {
-      "height": 955674,
-      "id": "0000000000000000000177df1e1537eae06ef2ded8eabd4db5755d95b1f3e590",
-      "timestamp": 1782575972,
-      "txCount": 5440
+      "height": 955707,
+      "id": "00000000000000000001283a4bc4e970c6b00c09c119b8c25c0023e28d61004e",
+      "timestamp": 1782589099,
+      "txCount": 5727
     },
     {
-      "height": 955673,
-      "id": "000000000000000000006a1ea3b69d3a610e787ebc3b382a9a8fb33d9fe190a8",
-      "timestamp": 1782575898,
-      "txCount": 4987
+      "height": 955706,
+      "id": "00000000000000000000d0b70b9e2e81c9688ef855976f8315a4b0a16a261107",
+      "timestamp": 1782588559,
+      "txCount": 4781
     },
     {
-      "height": 955672,
-      "id": "0000000000000000000137575f25a5ed6a5f4135f2e0021342df9082e39ed053",
-      "timestamp": 1782575379,
-      "txCount": 4417
+      "height": 955705,
+      "id": "000000000000000000006500973e0a5bc56e8e7c52ebf9622dad9d264c298b3b",
+      "timestamp": 1782588017,
+      "txCount": 6709
     },
     {
-      "height": 955671,
-      "id": "0000000000000000000139c8ae6763404e05e4ce3f9733f7f5d7fe460417b39b",
-      "timestamp": 1782574602,
-      "txCount": 4328
+      "height": 955704,
+      "id": "0000000000000000000077dc55de8a1c321e64e910b236879a0506c86773c9e2",
+      "timestamp": 1782587885,
+      "txCount": 4703
     },
     {
-      "height": 955670,
-      "id": "000000000000000000008f10e4d56ea5c0f46235fdd3bd1792702acbd4f62174",
-      "timestamp": 1782574425,
-      "txCount": 4407
+      "height": 955703,
+      "id": "00000000000000000001089806eb0365ac250e44bc0b306ba0339a6b63c63fc5",
+      "timestamp": 1782587816,
+      "txCount": 4499
     },
     {
-      "height": 955669,
-      "id": "00000000000000000000b6fc5a81a0d6993ac8a0da7a0ea759afe0ddb01111a3",
-      "timestamp": 1782574186,
-      "txCount": 3877
+      "height": 955702,
+      "id": "000000000000000000014af2ba7df1ec980e20df86499a52c378913d03e43e83",
+      "timestamp": 1782586412,
+      "txCount": 5546
     },
     {
-      "height": 955668,
-      "id": "00000000000000000000a6ea082eb617ff54ed37c8809a4b864b4c7b08e65cd4",
-      "timestamp": 1782574061,
-      "txCount": 3505
+      "height": 955701,
+      "id": "00000000000000000001de5a2225088c9f132f965e35419472c59c2f738f1fb2",
+      "timestamp": 1782586187,
+      "txCount": 6796
     }
   ],
   "news": [
+    {
+      "title": "Why a selloff in gold and silver is dragging bitcoin down",
+      "link": "https://www.coindesk.com/markets/2026/06/27/why-a-selloff-in-gold-and-silver-is-dragging-bitcoin-down",
+      "pubDate": "Sat, 27 Jun 2026 18:11:04 +0000"
+    },
+    {
+      "title": "What Robinhood’s recent layoffs say about the current state of crypto investments",
+      "link": "https://www.coindesk.com/opinion/2026/06/27/what-robinhood-s-recent-layoffs-say-about-the-current-state-of-crypto-investments",
+      "pubDate": "Sat, 27 Jun 2026 16:30:00 +0000"
+    },
     {
       "title": "Tether putting $23 billion gold stockpile to work with bullion-backed loans",
       "link": "https://www.coindesk.com/business/2026/06/27/tether-putting-usd23-billion-gold-stockpile-to-work-with-bullion-backed-loans",
@@ -475,16 +485,6 @@
       "title": "Former Ethereum Foundation leader warns of funding gap as governance shifts",
       "link": "https://www.coindesk.com/markets/2026/06/26/former-ethereum-foundation-leader-warns-of-funding-gap-as-governance-shifts",
       "pubDate": "Fri, 26 Jun 2026 18:37:50 +0000"
-    },
-    {
-      "title": "Anti-trafficking group says Clarity Act's Section 604 could weaken accountability",
-      "link": "https://www.coindesk.com/policy/2026/06/26/anti-trafficking-group-warns-clarity-act-s-section-604-could-weaken-accountability",
-      "pubDate": "Fri, 26 Jun 2026 18:24:24 +0000"
-    },
-    {
-      "title": "Virtuals' Jansen Teng says AI agents are evolving into autonomous economic actors",
-      "link": "https://www.coindesk.com/coindesk-news/2026/06/26/virtuals-jansen-teng-says-ai-agents-are-evolving-into-autonomous-economic-actors",
-      "pubDate": "Fri, 26 Jun 2026 18:04:22 +0000"
     }
   ]
 }
