@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-06-26T19:55:20.285Z",
+  "fetchedAt": "2026-06-27T03:50:48.680Z",
   "indicators": {
     "UNRATE": {
       "latest": {
@@ -63,12 +63,12 @@
     },
     "T10YIE": {
       "latest": {
-        "date": "2026-06-25",
-        "value": 2.21
+        "date": "2026-06-26",
+        "value": 2.2
       },
       "previous": {
-        "date": "2026-06-24",
-        "value": 2.18
+        "date": "2026-06-25",
+        "value": 2.21
       }
     },
     "PCE": {
@@ -123,42 +123,42 @@
     },
     "DGS2": {
       "latest": {
-        "date": "2026-06-24",
-        "value": 4.11
+        "date": "2026-06-25",
+        "value": 4.09
       },
       "previous": {
-        "date": "2026-06-23",
-        "value": 4.16
+        "date": "2026-06-24",
+        "value": 4.11
       }
     },
     "DGS10": {
       "latest": {
-        "date": "2026-06-24",
-        "value": 4.41
+        "date": "2026-06-25",
+        "value": 4.4
       },
       "previous": {
-        "date": "2026-06-23",
-        "value": 4.5
+        "date": "2026-06-24",
+        "value": 4.41
       }
     },
     "T10Y2Y": {
       "latest": {
-        "date": "2026-06-25",
+        "date": "2026-06-26",
         "value": 0.31
       },
       "previous": {
-        "date": "2026-06-24",
-        "value": 0.3
+        "date": "2026-06-25",
+        "value": 0.31
       }
     },
     "DFII10": {
       "latest": {
-        "date": "2026-06-24",
-        "value": 2.23
+        "date": "2026-06-25",
+        "value": 2.19
       },
       "previous": {
-        "date": "2026-06-23",
-        "value": 2.29
+        "date": "2026-06-24",
+        "value": 2.23
       }
     },
     "BAMLH0A0HYM2": {
@@ -301,6 +301,12 @@
   },
   "news": [
     {
+      "title": "Hantavirus: Market versus Government Disease Control",
+      "link": "https://mises.org/podcasts/audio-mises-wire/hantavirus-market-versus-government-disease-control",
+      "pubDate": "Fri, 26 Jun 2026 04:35:52 CDT",
+      "kind": "Podcast"
+    },
+    {
       "title": "Conclusion",
       "link": "https://mises.org/podcasts/origins-federal-reserve/conclusion",
       "pubDate": "Fri, 26 Jun 2026 02:01:33 CDT",
@@ -352,12 +358,6 @@
       "title": "The Beginnings of the “Reform” Movement: The Indianapolis Monetary Convention",
       "link": "https://mises.org/podcasts/origins-federal-reserve/beginnings-reform-movement-indianapolis-monetary-convention",
       "pubDate": "Fri, 26 Jun 2026 01:53:21 CDT",
-      "kind": "Podcast"
-    },
-    {
-      "title": "Unhappiness with the National Banking System",
-      "link": "https://mises.org/podcasts/origins-federal-reserve/unhappiness-national-banking-system",
-      "pubDate": "Fri, 26 Jun 2026 01:52:21 CDT",
       "kind": "Podcast"
     }
   ]
