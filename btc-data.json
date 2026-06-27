@@ -1,13 +1,13 @@
 {
-  "fetchedAt": "2026-06-27T04:14:08.616Z",
+  "fetchedAt": "2026-06-27T08:48:52.319Z",
   "price": {
-    "usd": 60316,
-    "time": 1782533420
+    "usd": 60292,
+    "time": 1782549909
   },
   "moves": {
-    "d1": 0.5571159743974263,
-    "d7": -6.108683936130433,
-    "d30": -17.98187425362131
+    "d1": 0.517103858484802,
+    "d7": -6.146043701127002,
+    "d30": -18.014509624300945
   },
   "history90d": [
     {
@@ -372,60 +372,70 @@
     },
     {
       "date": "2026-06-27",
-      "close": 60337.43751053555
+      "close": 60311.465904491786
     }
   ],
   "blocks": [
     {
-      "height": 955601,
-      "id": "00000000000000000000f35115a8345519598e9de605029b27ced710a8277e19",
-      "timestamp": 1782533067,
-      "txCount": 4845
+      "height": 955633,
+      "id": "00000000000000000000e6ce317ea89a34b35ff6ce4187510d9aa8497212f2b4",
+      "timestamp": 1782549107,
+      "txCount": 6553
     },
     {
-      "height": 955600,
-      "id": "0000000000000000000096a4825988f376713b46283185a71b79f0f6db2fff45",
-      "timestamp": 1782532456,
-      "txCount": 6084
+      "height": 955632,
+      "id": "0000000000000000000192dddca8d0b386baf1b46b03e23e713926c1a3e1f2a3",
+      "timestamp": 1782549057,
+      "txCount": 5900
     },
     {
-      "height": 955599,
-      "id": "0000000000000000000138d4e0fa971d6de1651d7abed1ca9628047ca63a52fd",
-      "timestamp": 1782532183,
-      "txCount": 6534
+      "height": 955631,
+      "id": "000000000000000000000cd0d5a2c30da05abacbb90c121903e5cc2c30162d37",
+      "timestamp": 1782548800,
+      "txCount": 6353
     },
     {
-      "height": 955598,
-      "id": "00000000000000000001919877b6db7ddf4c65c3f1b21fb2d359baf7770987e0",
-      "timestamp": 1782532091,
-      "txCount": 5823
+      "height": 955630,
+      "id": "0000000000000000000061545ad253e04d2d1da1fbbc0c5772db405686e6b68f",
+      "timestamp": 1782548592,
+      "txCount": 5076
     },
     {
-      "height": 955597,
-      "id": "00000000000000000000e4c406e590520132fc6386f9b77bf0203bef8acff50a",
-      "timestamp": 1782531804,
-      "txCount": 5938
+      "height": 955629,
+      "id": "00000000000000000001c91e92758bfe5938628c5a4bc93801f2e340b25c1116",
+      "timestamp": 1782548551,
+      "txCount": 4662
     },
     {
-      "height": 955596,
-      "id": "00000000000000000000ef9d843c029ef08cb97705df376df6da640bc335b826",
-      "timestamp": 1782531621,
-      "txCount": 4281
+      "height": 955628,
+      "id": "00000000000000000000e3ebf1437e203171b40b904802686c91401c89836658",
+      "timestamp": 1782546785,
+      "txCount": 6086
     },
     {
-      "height": 955595,
-      "id": "00000000000000000000f9d4fd1d0cc47d4292ee049d96eef2b8f5219131e992",
-      "timestamp": 1782530670,
-      "txCount": 4375
+      "height": 955627,
+      "id": "000000000000000000009724be5c5a781aae5439efd36fa1bb843aac63987f44",
+      "timestamp": 1782546345,
+      "txCount": 299
     },
     {
-      "height": 955594,
-      "id": "0000000000000000000215e7bd6908a80c8394b0c94b2a934dbbad1d4723c246",
-      "timestamp": 1782529901,
-      "txCount": 4445
+      "height": 955626,
+      "id": "000000000000000000006047b7984d15034a1445fa762c6417b42d2232612d20",
+      "timestamp": 1782546325,
+      "txCount": 6748
     }
   ],
   "news": [
+    {
+      "title": "Ripple CEO stays bullish on bitcoin but says Saylor's strategy has hurt crypto",
+      "link": "https://www.coindesk.com/markets/2026/06/27/ripple-ceo-stays-bullish-on-bitcoin-but-says-saylor-s-strategy-has-hurt-crypto",
+      "pubDate": "Sat, 27 Jun 2026 07:58:35 +0000"
+    },
+    {
+      "title": "Dogecoin and Hyperliquid's HYPE led weekly crypto losses as AI stocks lure buyers",
+      "link": "https://www.coindesk.com/markets/2026/06/27/dogecoin-and-hyperliquid-s-hype-led-weekly-crypto-losses-as-ai-stocks-lure-buyers",
+      "pubDate": "Sat, 27 Jun 2026 07:43:58 +0000"
+    },
     {
       "title": "Aave, Solana ecosystem tokens lead crypto rebound as bitcoin steadies near $60,000",
       "link": "https://www.coindesk.com/markets/2026/06/26/aave-solana-ecosystem-tokens-lead-crypto-rebound-as-bitcoin-steadies-near-usd60-000",
@@ -475,16 +485,6 @@
       "title": "Bitcoin bounces from $58,000 as derivatives signal more pain in the pipeline",
       "link": "https://www.coindesk.com/markets/2026/06/26/bitcoin-bounces-from-usd58-000-as-derivatives-signal-more-pain-in-the-pipeline",
       "pubDate": "Fri, 26 Jun 2026 11:03:20 +0000"
-    },
-    {
-      "title": "All eyes on Strategy's June 30 ex-dividend date and monthly STRC dividend rate reset",
-      "link": "https://www.coindesk.com/markets/2026/06/26/all-eyes-on-strategy-s-june-30-ex-dividend-date-and-monthly-strc-dividend-rate-reset",
-      "pubDate": "Fri, 26 Jun 2026 10:28:24 +0000"
-    },
-    {
-      "title": "Binance tells EU users it will no longer provide services after failing to secure MiCA license",
-      "link": "https://www.coindesk.com/policy/2026/06/26/binance-tells-eu-users-it-will-no-longer-provide-services-after-failing-to-secure-mica-license",
-      "pubDate": "Fri, 26 Jun 2026 10:19:22 +0000"
     }
   ]
 }
