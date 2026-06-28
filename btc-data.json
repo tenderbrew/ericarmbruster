@@ -1,13 +1,13 @@
 {
-  "fetchedAt": "2026-06-28T04:47:03.191Z",
+  "fetchedAt": "2026-06-28T09:30:29.548Z",
   "price": {
-    "usd": 60062,
-    "time": 1782621649
+    "usd": 60278,
+    "time": 1782638708
   },
   "moves": {
-    "d1": 0.1983367635412625,
-    "d7": -5.0130885019056715,
-    "d30": -18.152391489792908
+    "d1": 0.5586784228420516,
+    "d7": -4.6714886070705175,
+    "d30": -17.85804425796239
   },
   "history90d": [
     {
@@ -372,60 +372,65 @@
     },
     {
       "date": "2026-06-28",
-      "close": 60079.61772888055
+      "close": 60238.44851602155
     }
   ],
   "blocks": [
     {
-      "height": 955763,
-      "id": "000000000000000000010c03862212b647c8a65a70e5c334aa99de774da169fa",
-      "timestamp": 1782621247,
-      "txCount": 6177
+      "height": 955790,
+      "id": "000000000000000000013cb74e147855beffaafbeb8ab2315afbb70b1968ba5c",
+      "timestamp": 1782638729,
+      "txCount": 5350
     },
     {
-      "height": 955762,
-      "id": "000000000000000000005c04b17eaebb911a5ca63d8e4280f620832b2a85e778",
-      "timestamp": 1782621118,
-      "txCount": 6810
+      "height": 955789,
+      "id": "000000000000000000001b3fbf61862235b9a3c17e4732affe0da4b687ebea46",
+      "timestamp": 1782638197,
+      "txCount": 4250
     },
     {
-      "height": 955761,
-      "id": "00000000000000000000fc14534da73c7fb44835da0bd8a1b8efa6078cef677c",
-      "timestamp": 1782620994,
-      "txCount": 6183
+      "height": 955788,
+      "id": "00000000000000000001edd01563cc1bd7c0eb51ce0f2f44b6a33120753ccfa9",
+      "timestamp": 1782636976,
+      "txCount": 5262
     },
     {
-      "height": 955760,
-      "id": "00000000000000000001646c931f3fb74dee03459a9975d0fac571cf95f41492",
-      "timestamp": 1782620684,
-      "txCount": 5362
+      "height": 955787,
+      "id": "0000000000000000000213147271e8e0a47b8318521412effd52ed2c9bf1cb0b",
+      "timestamp": 1782636383,
+      "txCount": 4315
     },
     {
-      "height": 955759,
-      "id": "000000000000000000014d13b378b9de313a827ceac0e5c34bcc7b554dc3339f",
-      "timestamp": 1782619974,
-      "txCount": 6944
+      "height": 955786,
+      "id": "0000000000000000000198d171cd798646d0d900fe149593219ad653307266ef",
+      "timestamp": 1782636028,
+      "txCount": 4208
     },
     {
-      "height": 955758,
-      "id": "000000000000000000007a00d2ccc98450592083eef59426187fc8e45d5d6a20",
-      "timestamp": 1782619877,
-      "txCount": 4531
+      "height": 955785,
+      "id": "00000000000000000001350ec469ef2095abe5bff514bdc8c38a34f7f9e8556d",
+      "timestamp": 1782633946,
+      "txCount": 4810
     },
     {
-      "height": 955757,
-      "id": "00000000000000000001607262f0bc374e736060d45397e893be6f4c0f808eae",
-      "timestamp": 1782619193,
-      "txCount": 6480
+      "height": 955784,
+      "id": "00000000000000000001d7dd63d353c8813ac94d58e8e54d1e9db8c28d3c7f53",
+      "timestamp": 1782632864,
+      "txCount": 6651
     },
     {
-      "height": 955756,
-      "id": "0000000000000000000156e9a701bb2a18de977c9b50132046c7547d100ede97",
-      "timestamp": 1782619147,
-      "txCount": 5528
+      "height": 955783,
+      "id": "000000000000000000016a5ac8b7f4f3232440c24dfb8b89f3394c230ba5bf1e",
+      "timestamp": 1782632787,
+      "txCount": 5641
     }
   ],
   "news": [
+    {
+      "title": "Bitcoin falls below $60,000, on track for a rare back-to-back quarterly loss",
+      "link": "https://www.coindesk.com/markets/2026/06/28/bitcoin-falls-below-usd60-000-on-track-for-a-rare-back-to-back-quarterly-loss",
+      "pubDate": "Sun, 28 Jun 2026 07:10:52 +0000"
+    },
     {
       "title": "Why a selloff in gold and silver is dragging bitcoin down",
       "link": "https://www.coindesk.com/markets/2026/06/27/why-a-selloff-in-gold-and-silver-is-dragging-bitcoin-down",
@@ -480,11 +485,6 @@
       "title": "U.S. House Democrat, who may soon run key committee, condemns crypto in 401(k)s",
       "link": "https://www.coindesk.com/policy/2026/06/26/u-s-house-democrat-who-may-soon-run-key-committee-condemns-crypto-in-401-k-s",
       "pubDate": "Fri, 26 Jun 2026 19:38:12 +0000"
-    },
-    {
-      "title": "Former Ethereum Foundation leader warns of funding gap as governance shifts",
-      "link": "https://www.coindesk.com/markets/2026/06/26/former-ethereum-foundation-leader-warns-of-funding-gap-as-governance-shifts",
-      "pubDate": "Fri, 26 Jun 2026 18:37:50 +0000"
     }
   ]
 }
