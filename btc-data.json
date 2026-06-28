@@ -1,13 +1,13 @@
 {
-  "fetchedAt": "2026-06-28T09:30:29.548Z",
+  "fetchedAt": "2026-06-28T14:13:14.406Z",
   "price": {
-    "usd": 60278,
-    "time": 1782638708
+    "usd": 60059,
+    "time": 1782655811
   },
   "moves": {
-    "d1": 0.5586784228420516,
-    "d7": -4.6714886070705175,
-    "d30": -17.85804425796239
+    "d1": 0.19333201827318458,
+    "d7": -5.017832944889489,
+    "d30": -18.156479645790558
   },
   "history90d": [
     {
@@ -372,60 +372,65 @@
     },
     {
       "date": "2026-06-28",
-      "close": 60238.44851602155
+      "close": 60061.465279998876
     }
   ],
   "blocks": [
     {
-      "height": 955790,
-      "id": "000000000000000000013cb74e147855beffaafbeb8ab2315afbb70b1968ba5c",
-      "timestamp": 1782638729,
-      "txCount": 5350
+      "height": 955812,
+      "id": "000000000000000000007fdabfaa20d553e0b576719c9a6abb130ab6935b7ecb",
+      "timestamp": 1782655375,
+      "txCount": 4475
     },
     {
-      "height": 955789,
-      "id": "000000000000000000001b3fbf61862235b9a3c17e4732affe0da4b687ebea46",
-      "timestamp": 1782638197,
-      "txCount": 4250
+      "height": 955811,
+      "id": "00000000000000000001dd8d5d3ccbb08ea3eb7310a6c0dd6f677b3ecfcf5538",
+      "timestamp": 1782654361,
+      "txCount": 6693
     },
     {
-      "height": 955788,
-      "id": "00000000000000000001edd01563cc1bd7c0eb51ce0f2f44b6a33120753ccfa9",
-      "timestamp": 1782636976,
-      "txCount": 5262
+      "height": 955810,
+      "id": "000000000000000000019fdeb888e25607352136ed1a3391d0521ad4b7848036",
+      "timestamp": 1782654639,
+      "txCount": 6239
     },
     {
-      "height": 955787,
-      "id": "0000000000000000000213147271e8e0a47b8318521412effd52ed2c9bf1cb0b",
-      "timestamp": 1782636383,
-      "txCount": 4315
+      "height": 955809,
+      "id": "00000000000000000001eb341cd031db2f4baf1253ab5b49a433d18c0ae28adc",
+      "timestamp": 1782654201,
+      "txCount": 5041
     },
     {
-      "height": 955786,
-      "id": "0000000000000000000198d171cd798646d0d900fe149593219ad653307266ef",
-      "timestamp": 1782636028,
-      "txCount": 4208
+      "height": 955808,
+      "id": "00000000000000000000ee5754b23a7d59eaf0080fb3c2078d16ea81ede24863",
+      "timestamp": 1782653775,
+      "txCount": 4494
     },
     {
-      "height": 955785,
-      "id": "00000000000000000001350ec469ef2095abe5bff514bdc8c38a34f7f9e8556d",
-      "timestamp": 1782633946,
-      "txCount": 4810
+      "height": 955807,
+      "id": "0000000000000000000054502ab84e7a205e40a1754c3a78958e6835d1f653ba",
+      "timestamp": 1782652916,
+      "txCount": 4495
     },
     {
-      "height": 955784,
-      "id": "00000000000000000001d7dd63d353c8813ac94d58e8e54d1e9db8c28d3c7f53",
-      "timestamp": 1782632864,
-      "txCount": 6651
+      "height": 955806,
+      "id": "000000000000000000009ebc8a0b3d4800dc8bd9f17ccc451b3be456000b4512",
+      "timestamp": 1782652904,
+      "txCount": 3677
     },
     {
-      "height": 955783,
-      "id": "000000000000000000016a5ac8b7f4f3232440c24dfb8b89f3394c230ba5bf1e",
-      "timestamp": 1782632787,
-      "txCount": 5641
+      "height": 955805,
+      "id": "000000000000000000015d42da113658fa95985acaf0f355491a85b9fe42f32e",
+      "timestamp": 1782651305,
+      "txCount": 1340
     }
   ],
   "news": [
+    {
+      "title": "Crypto's next frontier isn't crypto, it's financing AI and robotics, Framework's Anderson says",
+      "link": "https://www.coindesk.com/business/2026/06/28/crypto-s-next-frontier-isn-t-crypto-it-s-financing-ai-and-robotics-framework-s-anderson-says",
+      "pubDate": "Sun, 28 Jun 2026 13:00:00 +0000"
+    },
     {
       "title": "Bitcoin falls below $60,000, on track for a rare back-to-back quarterly loss",
       "link": "https://www.coindesk.com/markets/2026/06/28/bitcoin-falls-below-usd60-000-on-track-for-a-rare-back-to-back-quarterly-loss",
@@ -480,11 +485,6 @@
       "title": "Aave, Solana ecosystem tokens lead crypto rebound as bitcoin steadies near $60,000",
       "link": "https://www.coindesk.com/markets/2026/06/26/aave-solana-ecosystem-tokens-lead-crypto-rebound-as-bitcoin-steadies-near-usd60-000",
       "pubDate": "Fri, 26 Jun 2026 20:15:03 +0000"
-    },
-    {
-      "title": "U.S. House Democrat, who may soon run key committee, condemns crypto in 401(k)s",
-      "link": "https://www.coindesk.com/policy/2026/06/26/u-s-house-democrat-who-may-soon-run-key-committee-condemns-crypto-in-401-k-s",
-      "pubDate": "Fri, 26 Jun 2026 19:38:12 +0000"
     }
   ]
 }
