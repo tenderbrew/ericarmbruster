@@ -1,13 +1,13 @@
 {
-  "fetchedAt": "2026-06-28T14:13:14.406Z",
+  "fetchedAt": "2026-06-28T16:22:20.412Z",
   "price": {
-    "usd": 60059,
-    "time": 1782655811
+    "usd": 59791,
+    "time": 1782663609
   },
   "moves": {
-    "d1": 0.19333201827318458,
-    "d7": -5.017832944889489,
-    "d30": -18.156479645790558
+    "d1": -0.25375855900744426,
+    "d7": -5.441669851444198,
+    "d30": -18.52168824824695
   },
   "history90d": [
     {
@@ -372,60 +372,75 @@
     },
     {
       "date": "2026-06-28",
-      "close": 60061.465279998876
+      "close": 59766.4905640726
     }
   ],
   "blocks": [
     {
-      "height": 955812,
-      "id": "000000000000000000007fdabfaa20d553e0b576719c9a6abb130ab6935b7ecb",
-      "timestamp": 1782655375,
-      "txCount": 4475
+      "height": 955824,
+      "id": "00000000000000000000fff56d32999af3ea7670f2525d7deb0782edc461d694",
+      "timestamp": 1782663536,
+      "txCount": 4368
     },
     {
-      "height": 955811,
-      "id": "00000000000000000001dd8d5d3ccbb08ea3eb7310a6c0dd6f677b3ecfcf5538",
-      "timestamp": 1782654361,
-      "txCount": 6693
+      "height": 955823,
+      "id": "0000000000000000000185f22ab3809287fa1936aba8b8b8e1a4c1807ddabe73",
+      "timestamp": 1782663365,
+      "txCount": 4049
     },
     {
-      "height": 955810,
-      "id": "000000000000000000019fdeb888e25607352136ed1a3391d0521ad4b7848036",
-      "timestamp": 1782654639,
-      "txCount": 6239
+      "height": 955822,
+      "id": "00000000000000000000d8c18bd1e5092b18ffdba3d26578b983a8063a3bceac",
+      "timestamp": 1782663042,
+      "txCount": 3696
     },
     {
-      "height": 955809,
-      "id": "00000000000000000001eb341cd031db2f4baf1253ab5b49a433d18c0ae28adc",
-      "timestamp": 1782654201,
-      "txCount": 5041
+      "height": 955821,
+      "id": "0000000000000000000091bc5031bd998b1723d88a8918ffb133d8bef49e209c",
+      "timestamp": 1782662093,
+      "txCount": 4504
     },
     {
-      "height": 955808,
-      "id": "00000000000000000000ee5754b23a7d59eaf0080fb3c2078d16ea81ede24863",
-      "timestamp": 1782653775,
-      "txCount": 4494
+      "height": 955820,
+      "id": "00000000000000000001ad818f2f60467dfeefa065e1a96cca8f45a13441139b",
+      "timestamp": 1782661442,
+      "txCount": 4159
     },
     {
-      "height": 955807,
-      "id": "0000000000000000000054502ab84e7a205e40a1754c3a78958e6835d1f653ba",
-      "timestamp": 1782652916,
-      "txCount": 4495
+      "height": 955819,
+      "id": "00000000000000000000add0311abdc300b73d24791966be9e481fc808502a34",
+      "timestamp": 1782658734,
+      "txCount": 4473
     },
     {
-      "height": 955806,
-      "id": "000000000000000000009ebc8a0b3d4800dc8bd9f17ccc451b3be456000b4512",
-      "timestamp": 1782652904,
-      "txCount": 3677
+      "height": 955818,
+      "id": "00000000000000000001743113a59622ba48314b21e8c3f3efb25665adf6a295",
+      "timestamp": 1782658503,
+      "txCount": 3701
     },
     {
-      "height": 955805,
-      "id": "000000000000000000015d42da113658fa95985acaf0f355491a85b9fe42f32e",
-      "timestamp": 1782651305,
-      "txCount": 1340
+      "height": 955817,
+      "id": "0000000000000000000125fefe7bd05365a583c2a964716f59e3e70461a0e5ff",
+      "timestamp": 1782658015,
+      "txCount": 4085
     }
   ],
   "news": [
+    {
+      "title": "Samson Mow says bitcoin bottom is in despite skepticism from analysts",
+      "link": "https://www.coindesk.com/markets/2026/06/28/samson-mow-says-bitcoin-bottom-is-in-but-analysts-remain-divided",
+      "pubDate": "Sun, 28 Jun 2026 15:07:12 +0000"
+    },
+    {
+      "title": "Michael Saylor teases more bitcoin buying even as Strategy stock continues to fall",
+      "link": "https://www.coindesk.com/markets/2026/06/28/michael-saylor-teases-more-bitcoin-buying-even-as-strategy-stock-continues-to-fall",
+      "pubDate": "Sun, 28 Jun 2026 15:02:43 +0000"
+    },
+    {
+      "title": "SBI's $289 million Bitbank deal is symptomatic of Japan's crypto consolidation: Architect Partners",
+      "link": "https://www.coindesk.com/business/2026/06/28/sbi-s-usd289-million-bitbank-deal-is-symptomatic-of-japan-s-crypto-consolidation-architect-partners",
+      "pubDate": "Sun, 28 Jun 2026 15:00:00 +0000"
+    },
     {
       "title": "Crypto's next frontier isn't crypto, it's financing AI and robotics, Framework's Anderson says",
       "link": "https://www.coindesk.com/business/2026/06/28/crypto-s-next-frontier-isn-t-crypto-it-s-financing-ai-and-robotics-framework-s-anderson-says",
@@ -470,21 +485,6 @@
       "title": "Strategy's valuation has fallen below the value of its bitcoin holdings",
       "link": "https://www.coindesk.com/markets/2026/06/27/strategy-s-valuation-has-fallen-below-the-value-of-its-bitcoin-holdings",
       "pubDate": "Sat, 27 Jun 2026 12:08:14 +0000"
-    },
-    {
-      "title": "Ripple CEO stays bullish on bitcoin but says Saylor's strategy has hurt crypto",
-      "link": "https://www.coindesk.com/markets/2026/06/27/ripple-ceo-stays-bullish-on-bitcoin-but-says-saylor-s-strategy-has-hurt-crypto",
-      "pubDate": "Sat, 27 Jun 2026 07:58:35 +0000"
-    },
-    {
-      "title": "Dogecoin and Hyperliquid's HYPE led weekly crypto losses as AI stocks lure buyers",
-      "link": "https://www.coindesk.com/markets/2026/06/27/dogecoin-and-hyperliquid-s-hype-led-weekly-crypto-losses-as-ai-stocks-lure-buyers",
-      "pubDate": "Sat, 27 Jun 2026 07:43:58 +0000"
-    },
-    {
-      "title": "Aave, Solana ecosystem tokens lead crypto rebound as bitcoin steadies near $60,000",
-      "link": "https://www.coindesk.com/markets/2026/06/26/aave-solana-ecosystem-tokens-lead-crypto-rebound-as-bitcoin-steadies-near-usd60-000",
-      "pubDate": "Fri, 26 Jun 2026 20:15:03 +0000"
     }
   ]
 }
