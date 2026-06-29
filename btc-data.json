@@ -1,13 +1,13 @@
 {
-  "fetchedAt": "2026-06-29T16:07:07.408Z",
+  "fetchedAt": "2026-06-29T20:14:29.154Z",
   "price": {
-    "usd": 59741,
-    "time": 1782748812
+    "usd": 60377,
+    "time": 1782763813
   },
   "moves": {
-    "d1": 0.2159050653504524,
-    "d7": -6.592214641955641,
-    "d30": -18.99642713967542
+    "d1": 1.2827990848941928,
+    "d7": -5.597799558717731,
+    "d30": -18.134066744985567
   },
   "history90d": [
     {
@@ -372,60 +372,70 @@
     },
     {
       "date": "2026-06-29",
-      "close": 59749.29585004678
+      "close": 60369.44651876108
     }
   ],
   "blocks": [
     {
-      "height": 955951,
-      "id": "0000000000000000000139dc50abf2d43bb1fb9c245217838a5785a1e04ae04f",
-      "timestamp": 1782748752,
-      "txCount": 4138
+      "height": 955972,
+      "id": "0000000000000000000215f9615df89bad17e43fc89cb8ed328fcebf9b45b067",
+      "timestamp": 1782763878,
+      "txCount": 4205
     },
     {
-      "height": 955950,
-      "id": "0000000000000000000185c1543073c564ce31ac3b8ff88010119b3f7c5f7244",
-      "timestamp": 1782748087,
-      "txCount": 2277
+      "height": 955971,
+      "id": "00000000000000000001727097149c246b53e91227bff62e3babec5b5054b9a7",
+      "timestamp": 1782763331,
+      "txCount": 4699
     },
     {
-      "height": 955949,
-      "id": "00000000000000000001ac3e1e019e2deaad04ce2a22ed3d67a10aa5d665c189",
-      "timestamp": 1782747670,
-      "txCount": 651
+      "height": 955970,
+      "id": "00000000000000000000e9a43d155f2dc50becb88731fd10d4b6182df7281b1c",
+      "timestamp": 1782762606,
+      "txCount": 3885
     },
     {
-      "height": 955948,
-      "id": "000000000000000000010ed40f0d6d5f1137123e681d02d239c5c460121fc74d",
-      "timestamp": 1782747623,
-      "txCount": 1181
+      "height": 955969,
+      "id": "0000000000000000000051465e4e7a680d6f6e3e66758321eacb1bb88cc893f7",
+      "timestamp": 1782759794,
+      "txCount": 2717
     },
     {
-      "height": 955947,
-      "id": "000000000000000000002b499330b99b0c4743330715afd82abf56c35cb52ffb",
-      "timestamp": 1782747610,
-      "txCount": 4186
+      "height": 955968,
+      "id": "0000000000000000000097f16da54478283266121938c9431c697c83506b500f",
+      "timestamp": 1782759776,
+      "txCount": 3507
     },
     {
-      "height": 955946,
-      "id": "00000000000000000001da6f3adeadeaf6c444643423342620fb08c3116661c7",
-      "timestamp": 1782747061,
-      "txCount": 3707
+      "height": 955967,
+      "id": "000000000000000000010294019f6fff3db5e3aa7fe9c27900379d9e8f059333",
+      "timestamp": 1782759577,
+      "txCount": 3091
     },
     {
-      "height": 955945,
-      "id": "0000000000000000000091abf3fec482bb7495d991efddf4243ad2614ab4ed47",
-      "timestamp": 1782745763,
-      "txCount": 3524
+      "height": 955966,
+      "id": "00000000000000000000193a4a3da5f0c57d133424a5f587e119108055fb7bd2",
+      "timestamp": 1782759182,
+      "txCount": 3816
     },
     {
-      "height": 955944,
-      "id": "000000000000000000001e16163ea59f96b7a58d10bf703a4145fd9e845b2bb2",
-      "timestamp": 1782744793,
-      "txCount": 3494
+      "height": 955965,
+      "id": "0000000000000000000066b862c203c4ff9cbc416346b0df6e00c5cc4ed86d11",
+      "timestamp": 1782758873,
+      "txCount": 3756
     }
   ],
   "news": [
+    {
+      "title": "Bitcoin lending is entering a new institutional era, according to Silicon Valley Bank",
+      "link": "https://www.coindesk.com/business/2026/06/29/bitcoin-lending-is-entering-a-new-institutional-era-according-to-silicon-valley-bank",
+      "pubDate": "Mon, 29 Jun 2026 17:57:18 +0000"
+    },
+    {
+      "title": "JPMorgan backs U.S. crypto bill but warns of risks in digital asset framework",
+      "link": "https://www.coindesk.com/policy/2026/06/29/jpmorgan-backs-u-s-crypto-bill-but-warns-repeatedly-of-risks-in-digital-asset-framework",
+      "pubDate": "Mon, 29 Jun 2026 17:31:33 +0000"
+    },
     {
       "title": "Private keys, not smart contracts, caused 40% of crypto's $16 billion hack losses. Here's whats being done.",
       "link": "https://www.coindesk.com/tech/2026/06/29/private-keys-not-smart-contracts-caused-40-of-crypto-s-usd16-billion-hack-losses-here-s-whats-being-done",
@@ -475,16 +485,6 @@
       "title": "BlackRock pushes deeper into DeFi with Ethena integration, sending ENA up 8%",
       "link": "https://www.coindesk.com/business/2026/06/29/blackrock-pushes-deeper-into-defi-with-ethena-integration-sending-ena-up-8",
       "pubDate": "Mon, 29 Jun 2026 14:02:10 +0000"
-    },
-    {
-      "title": "Kalshi and Polymarket could become M&A targets as prediction markets consolidate: Bernstein",
-      "link": "https://www.coindesk.com/business/2026/06/29/kalshi-and-polymarket-could-become-m-and-a-targets-as-prediction-markets-consolidate-bernstein",
-      "pubDate": "Mon, 29 Jun 2026 12:56:42 +0000"
-    },
-    {
-      "title": "Tom Lee blames crypto weakness on quarter-end 'window dressing' as Bitmine adds another $43 million of ETH",
-      "link": "https://www.coindesk.com/business/2026/06/29/tom-lee-blames-crypto-weakness-on-quarter-end-window-dressing-as-bitmine-adds-another-usd43-million-of-eth",
-      "pubDate": "Mon, 29 Jun 2026 12:51:44 +0000"
     }
   ]
 }
