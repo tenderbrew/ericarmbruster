@@ -1,13 +1,13 @@
 {
-  "fetchedAt": "2026-06-29T04:57:20.743Z",
+  "fetchedAt": "2026-06-29T11:22:27.560Z",
   "price": {
-    "usd": 59756,
-    "time": 1782708614
+    "usd": 59838,
+    "time": 1782732060
   },
   "moves": {
-    "d1": 0.24106766015101755,
-    "d7": -6.568761456030225,
-    "d30": -18.97608845112141
+    "d1": 0.37862317839407744,
+    "d7": -6.440550706304582,
+    "d30": -18.86490362035952
   },
   "history90d": [
     {
@@ -372,60 +372,100 @@
     },
     {
       "date": "2026-06-29",
-      "close": 59719.9042549951
+      "close": 59829.60815532721
     }
   ],
   "blocks": [
     {
-      "height": 955883,
-      "id": "00000000000000000001ee2a4f8710815aa284661c40acbd57b1a9acaf07adc1",
-      "timestamp": 1782708253,
-      "txCount": 6600
+      "height": 955925,
+      "id": "0000000000000000000182578eede8a67dd7783bca499bc3aecd4c844d91b919",
+      "timestamp": 1782732066,
+      "txCount": 2332
     },
     {
-      "height": 955882,
-      "id": "00000000000000000001a26050c183526a6514402bfe14b7b3611f1a89b4ce3f",
-      "timestamp": 1782708287,
-      "txCount": 1
+      "height": 955924,
+      "id": "00000000000000000001c8e34b60732365d1fc429f03c386383bbcdfaef0915d",
+      "timestamp": 1782730224,
+      "txCount": 4988
     },
     {
-      "height": 955881,
-      "id": "000000000000000000006403a0261d1a3e2a62d1554d7d893ed252ff266f2468",
-      "timestamp": 1782708242,
-      "txCount": 4011
+      "height": 955923,
+      "id": "0000000000000000000069ce833677e473d01e01b391b19565ee1fa8ef2e9e40",
+      "timestamp": 1782729893,
+      "txCount": 4457
     },
     {
-      "height": 955880,
-      "id": "00000000000000000001b64eb64388f0cb88e1414b56e9af19867bc0a7bfbc91",
-      "timestamp": 1782707630,
-      "txCount": 3699
+      "height": 955922,
+      "id": "00000000000000000001e4e3057ad7e76b5841d0dea73f4a12d973c462745485",
+      "timestamp": 1782728915,
+      "txCount": 5113
     },
     {
-      "height": 955879,
-      "id": "00000000000000000000e3cceb27b9b9e92326304815d5c4fe7b5ca66c5eb3da",
-      "timestamp": 1782707250,
-      "txCount": 3182
+      "height": 955921,
+      "id": "0000000000000000000132dc53b870db1099ea00cbbb8857f3818522e22953ad",
+      "timestamp": 1782728223,
+      "txCount": 6997
     },
     {
-      "height": 955878,
-      "id": "00000000000000000001b53cc4fc1c435820507a8158b9468f026f2f059cb83c",
-      "timestamp": 1782706919,
-      "txCount": 3888
+      "height": 955920,
+      "id": "00000000000000000001b80133ee0cbb6bb9f273d1430e6a079bccc458048f16",
+      "timestamp": 1782728202,
+      "txCount": 5448
     },
     {
-      "height": 955877,
-      "id": "00000000000000000001689a229cc41387265ebb5afd2eea928c580e402f2db0",
-      "timestamp": 1782703992,
-      "txCount": 4529
+      "height": 955919,
+      "id": "00000000000000000001c6ca28251e1f96497d2bfe903fbc8fb4a5c7eabaed90",
+      "timestamp": 1782727575,
+      "txCount": 4468
     },
     {
-      "height": 955876,
-      "id": "00000000000000000000035c224cbf98c5fae427972dbe292af78879fd22189c",
-      "timestamp": 1782702805,
-      "txCount": 3595
+      "height": 955918,
+      "id": "00000000000000000001ffddcb67d382da3934124774e278551173074b4ad82f",
+      "timestamp": 1782727084,
+      "txCount": 3782
     }
   ],
   "news": [
+    {
+      "title": "Bitcoin hovers below $60,000 as crypto braces for a pivotal week",
+      "link": "https://www.coindesk.com/markets/2026/06/29/bitcoin-hovers-below-usd60-000-as-crypto-braces-for-a-pivotal-week",
+      "pubDate": "Mon, 29 Jun 2026 11:03:46 +0000"
+    },
+    {
+      "title": "Europe’s unlicensed crypto firms face ‘wipeout’ as MiCA deadline hits",
+      "link": "https://www.coindesk.com/policy/2026/06/29/europe-s-unlicensed-crypto-firms-face-wipeout-as-final-regulatory-deadline-falls",
+      "pubDate": "Mon, 29 Jun 2026 10:01:23 +0000"
+    },
+    {
+      "title": "Bitcoin falls into a technical no man’s land as major support levels sit miles away",
+      "link": "https://www.coindesk.com/markets/2026/06/29/bitcoin-falls-into-a-technical-no-man-s-land-as-major-support-levels-sit-miles-away",
+      "pubDate": "Mon, 29 Jun 2026 09:40:18 +0000"
+    },
+    {
+      "title": "New MiCA regime in Europe, U.S. jobs report for June: Crypto Week Ahead",
+      "link": "https://www.coindesk.com/markets/2026/06/29/new-mica-regime-in-europe-u-s-jobs-report-for-june-crypto-week-ahead",
+      "pubDate": "Mon, 29 Jun 2026 09:08:25 +0000"
+    },
+    {
+      "title": "BIS warns stablecoins are more like ETFs than actual money, and they're creating FX risk",
+      "link": "https://www.coindesk.com/markets/2026/06/29/bis-warns-stablecoins-are-more-like-etfs-than-actual-money-and-they-re-creating-fx-risk",
+      "pubDate": "Mon, 29 Jun 2026 08:51:57 +0000"
+    },
+    {
+      "title": "Crypto exchange BitMEX loses CEO, CFO and head of growth",
+      "link": "https://www.coindesk.com/business/2026/06/29/crypto-exchange-bitmex-removes-ceo-cfo-and-head-of-growth",
+      "pubDate": "Mon, 29 Jun 2026 07:03:51 +0000"
+    },
+    {
+      "title": "South Korea’s $518 billion AI chip push shows crypto is still losing the capital race",
+      "link": "https://www.coindesk.com/markets/2026/06/29/south-korea-s-usd518-billion-ai-chip-push-shows-crypto-is-still-losing-the-capital-race",
+      "pubDate": "Mon, 29 Jun 2026 06:19:46 +0000"
+    },
+    {
+      "title": "Bitcoin dips to $59,700 as Iran de-escalation lifts stocks but not crypto",
+      "link": "https://www.coindesk.com/tech/2026/06/29/bitcoin-dips-to-usd59-700-as-iran-de-escalation-lifts-stocks-but-not-crypto",
+      "pubDate": "Mon, 29 Jun 2026 06:03:32 +0000"
+    },
     {
       "title": "$4 billion gone. Spot bitcoin ETFs are on track for their worst month on record",
       "link": "https://www.coindesk.com/markets/2026/06/29/usd4-billion-gone-spot-bitcoin-etfs-are-on-track-for-their-worst-month-on-record",
@@ -445,46 +485,6 @@
       "title": "Michael Saylor teases more bitcoin buying even as Strategy stock continues to fall",
       "link": "https://www.coindesk.com/markets/2026/06/28/michael-saylor-teases-more-bitcoin-buying-even-as-strategy-stock-continues-to-fall",
       "pubDate": "Sun, 28 Jun 2026 15:02:43 +0000"
-    },
-    {
-      "title": "SBI's $289 million Bitbank deal is symptomatic of Japan's crypto consolidation: Architect Partners",
-      "link": "https://www.coindesk.com/business/2026/06/28/sbi-s-usd289-million-bitbank-deal-is-symptomatic-of-japan-s-crypto-consolidation-architect-partners",
-      "pubDate": "Sun, 28 Jun 2026 15:00:00 +0000"
-    },
-    {
-      "title": "Crypto's next frontier isn't crypto, it's financing AI and robotics, Framework's Anderson says",
-      "link": "https://www.coindesk.com/business/2026/06/28/crypto-s-next-frontier-isn-t-crypto-it-s-financing-ai-and-robotics-framework-s-anderson-says",
-      "pubDate": "Sun, 28 Jun 2026 13:00:00 +0000"
-    },
-    {
-      "title": "Bitcoin falls below $60,000, on track for a rare back-to-back quarterly loss",
-      "link": "https://www.coindesk.com/markets/2026/06/28/bitcoin-falls-below-usd60-000-on-track-for-a-rare-back-to-back-quarterly-loss",
-      "pubDate": "Sun, 28 Jun 2026 07:10:52 +0000"
-    },
-    {
-      "title": "Why a selloff in gold and silver is dragging bitcoin down",
-      "link": "https://www.coindesk.com/markets/2026/06/27/why-a-selloff-in-gold-and-silver-is-dragging-bitcoin-down",
-      "pubDate": "Sat, 27 Jun 2026 18:11:04 +0000"
-    },
-    {
-      "title": "What Robinhood’s recent layoffs say about the current state of crypto investments",
-      "link": "https://www.coindesk.com/opinion/2026/06/27/what-robinhood-s-recent-layoffs-say-about-the-current-state-of-crypto-investments",
-      "pubDate": "Sat, 27 Jun 2026 16:30:00 +0000"
-    },
-    {
-      "title": "Tether putting $23 billion gold stockpile to work with bullion-backed loans",
-      "link": "https://www.coindesk.com/business/2026/06/27/tether-putting-usd23-billion-gold-stockpile-to-work-with-bullion-backed-loans",
-      "pubDate": "Sat, 27 Jun 2026 15:00:00 +0000"
-    },
-    {
-      "title": "Polymarket hack updated to $3.1 million days after the platform promised users full refunds",
-      "link": "https://www.coindesk.com/markets/2026/06/27/polymarket-hack-updated-to-usd3-1-million-days-after-the-platform-promised-users-full-refunds",
-      "pubDate": "Sat, 27 Jun 2026 14:13:22 +0000"
-    },
-    {
-      "title": "Coinbase and OKX try to lure in Binance’s EU users after it failed to secure a MiCA license",
-      "link": "https://www.coindesk.com/business/2026/06/27/coinbase-and-okx-try-to-lure-in-binance-s-450m-eu-users-after-failing-to-secure-a-mica-license",
-      "pubDate": "Sat, 27 Jun 2026 14:11:45 +0000"
     }
   ]
 }
