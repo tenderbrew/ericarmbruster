@@ -1,13 +1,13 @@
 {
-  "fetchedAt": "2026-06-29T20:14:29.154Z",
+  "fetchedAt": "2026-06-29T22:19:02.245Z",
   "price": {
-    "usd": 60377,
-    "time": 1782763813
+    "usd": 60380,
+    "time": 1782771312
   },
   "moves": {
-    "d1": 1.2827990848941928,
-    "d7": -5.597799558717731,
-    "d30": -18.134066744985567
+    "d1": 1.2878316038543058,
+    "d7": -5.593108921532641,
+    "d30": -18.129999007274765
   },
   "history90d": [
     {
@@ -372,57 +372,57 @@
     },
     {
       "date": "2026-06-29",
-      "close": 60369.44651876108
+      "close": 60372.31907514016
     }
   ],
   "blocks": [
     {
-      "height": 955972,
-      "id": "0000000000000000000215f9615df89bad17e43fc89cb8ed328fcebf9b45b067",
-      "timestamp": 1782763878,
-      "txCount": 4205
+      "height": 955983,
+      "id": "000000000000000000001f8e6c6292ccb0bea852e85108196f5fcca6f0d35bad",
+      "timestamp": 1782769210,
+      "txCount": 5149
     },
     {
-      "height": 955971,
-      "id": "00000000000000000001727097149c246b53e91227bff62e3babec5b5054b9a7",
-      "timestamp": 1782763331,
-      "txCount": 4699
+      "height": 955982,
+      "id": "00000000000000000000f87b9611fe735f3558e2c2fae1868e05496481bbaae1",
+      "timestamp": 1782768708,
+      "txCount": 5100
     },
     {
-      "height": 955970,
-      "id": "00000000000000000000e9a43d155f2dc50becb88731fd10d4b6182df7281b1c",
-      "timestamp": 1782762606,
-      "txCount": 3885
+      "height": 955981,
+      "id": "0000000000000000000040630cface7c0f9b37539562887dda33f87b930cf2ab",
+      "timestamp": 1782768472,
+      "txCount": 4321
     },
     {
-      "height": 955969,
-      "id": "0000000000000000000051465e4e7a680d6f6e3e66758321eacb1bb88cc893f7",
-      "timestamp": 1782759794,
-      "txCount": 2717
+      "height": 955980,
+      "id": "00000000000000000001806e9856152c89ae3c9515067def5f1339ce45c337f3",
+      "timestamp": 1782767879,
+      "txCount": 3360
     },
     {
-      "height": 955968,
-      "id": "0000000000000000000097f16da54478283266121938c9431c697c83506b500f",
-      "timestamp": 1782759776,
-      "txCount": 3507
+      "height": 955979,
+      "id": "00000000000000000001266a2822f31870d9082ecbdce311c8c7e6fe94a3ae5a",
+      "timestamp": 1782766988,
+      "txCount": 4535
     },
     {
-      "height": 955967,
-      "id": "000000000000000000010294019f6fff3db5e3aa7fe9c27900379d9e8f059333",
-      "timestamp": 1782759577,
-      "txCount": 3091
+      "height": 955978,
+      "id": "0000000000000000000069eab899eaa81a488ea143cf1a57a56b9357f5d131ae",
+      "timestamp": 1782766792,
+      "txCount": 4564
     },
     {
-      "height": 955966,
-      "id": "00000000000000000000193a4a3da5f0c57d133424a5f587e119108055fb7bd2",
-      "timestamp": 1782759182,
-      "txCount": 3816
+      "height": 955977,
+      "id": "0000000000000000000125b2a917167ed186f93d9cc4caf31646bc15c8741ba0",
+      "timestamp": 1782766710,
+      "txCount": 3206
     },
     {
-      "height": 955965,
-      "id": "0000000000000000000066b862c203c4ff9cbc416346b0df6e00c5cc4ed86d11",
-      "timestamp": 1782758873,
-      "txCount": 3756
+      "height": 955976,
+      "id": "000000000000000000015f55cc9d3046f131e9327e79339a5b48ae2b9c4c5349",
+      "timestamp": 1782766710,
+      "txCount": 3670
     }
   ],
   "news": [
@@ -432,7 +432,7 @@
       "pubDate": "Mon, 29 Jun 2026 17:57:18 +0000"
     },
     {
-      "title": "JPMorgan backs U.S. crypto bill but warns of risks in digital asset framework",
+      "title": "JPMorgan urges strong safeguards as congress weighs crypto market structure rules",
       "link": "https://www.coindesk.com/policy/2026/06/29/jpmorgan-backs-u-s-crypto-bill-but-warns-repeatedly-of-risks-in-digital-asset-framework",
       "pubDate": "Mon, 29 Jun 2026 17:31:33 +0000"
     },
