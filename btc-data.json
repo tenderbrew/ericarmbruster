@@ -1,13 +1,13 @@
 {
-  "fetchedAt": "2026-06-30T04:22:22.334Z",
+  "fetchedAt": "2026-06-30T09:58:40.553Z",
   "price": {
-    "usd": 59462,
-    "time": 1782792908
+    "usd": 59312,
+    "time": 1782813316
   },
   "moves": {
-    "d1": -1.159631741613798,
-    "d7": -5.091518331692468,
-    "d30": -19.201962034318555
+    "d1": -1.4089683807910536,
+    "d7": -5.330936317132684,
+    "d30": -19.40578473948913
   },
   "history90d": [
     {
@@ -372,60 +372,95 @@
     },
     {
       "date": "2026-06-30",
-      "close": 59382.596584131046
+      "close": 59279.28431716297
     }
   ],
   "blocks": [
     {
-      "height": 956021,
-      "id": "000000000000000000006c10cf333d124fbcb98c75fc55bf342f4d24913504f4",
-      "timestamp": 1782793170,
-      "txCount": 2692
+      "height": 956056,
+      "id": "0000000000000000000205aae5803cdc7b9f4e7393ecd07ed005c2c4c1a9b44b",
+      "timestamp": 1782812956,
+      "txCount": 5546
     },
     {
-      "height": 956020,
-      "id": "00000000000000000001a62592391d58e87c8bf857045fb7e15783c06beffcf7",
-      "timestamp": 1782792005,
-      "txCount": 6931
+      "height": 956055,
+      "id": "000000000000000000012c5862e88928a77212090ed98a11330f955816749e50",
+      "timestamp": 1782812755,
+      "txCount": 4300
     },
     {
-      "height": 956019,
-      "id": "00000000000000000000411b36c9d528541a0790df2281e9962f573d975337a2",
-      "timestamp": 1782791985,
-      "txCount": 5818
+      "height": 956054,
+      "id": "000000000000000000013ab1dffd68a3ae7acdefb30c2cc8ff290f24f8182406",
+      "timestamp": 1782811952,
+      "txCount": 3724
     },
     {
-      "height": 956018,
-      "id": "0000000000000000000153c0c2fd1294952131998e0613c7729a0782708535be",
-      "timestamp": 1782791380,
-      "txCount": 6823
+      "height": 956053,
+      "id": "00000000000000000000687a10811799f712c5903a5d45d77c2e39e8168e811c",
+      "timestamp": 1782811745,
+      "txCount": 6592
     },
     {
-      "height": 956017,
-      "id": "0000000000000000000023201b67a8110ef3511b3a3db76017aa8c77cb97e5e0",
-      "timestamp": 1782791241,
-      "txCount": 6430
+      "height": 956052,
+      "id": "0000000000000000000060ed3737e169415dc2e0703eac8645c44646e69ff9f6",
+      "timestamp": 1782811497,
+      "txCount": 4863
     },
     {
-      "height": 956016,
-      "id": "00000000000000000000c69fb84be376808e4aeee4817daa1ca39bf4ee59cf14",
-      "timestamp": 1782791156,
-      "txCount": 3807
+      "height": 956051,
+      "id": "00000000000000000000fb886d1c0b0612c14a2c90bc637d6d9f68aa90dc0a85",
+      "timestamp": 1782811034,
+      "txCount": 4212
     },
     {
-      "height": 956015,
-      "id": "000000000000000000008c5a217622992c01e52182c2073141f3714e992ae620",
-      "timestamp": 1782790526,
-      "txCount": 6702
+      "height": 956050,
+      "id": "000000000000000000016225da2773c2b50444a21e09ed5505a4ea48a4d8bd52",
+      "timestamp": 1782810390,
+      "txCount": 4389
     },
     {
-      "height": 956014,
-      "id": "00000000000000000000a93580de5e7335b38c5f34bde7052f0414cbf4e47dbd",
-      "timestamp": 1782790060,
-      "txCount": 5505
+      "height": 956049,
+      "id": "000000000000000000013c36d7edeb21d6aaaab8831349275458865caec7f749",
+      "timestamp": 1782810125,
+      "txCount": 4227
     }
   ],
   "news": [
+    {
+      "title": "SEC wins $5.5 million default judgment over alleged fake crypto platform NanoBit",
+      "link": "https://www.coindesk.com/policy/2026/06/30/sec-wins-usd5-5-million-default-judgment-over-alleged-fake-crypto-platform-nanobit",
+      "pubDate": "Tue, 30 Jun 2026 09:54:50 +0000"
+    },
+    {
+      "title": "Bitcoin's correlation with dollar-yen rate hits -0.90, undercutting 'carry trade' theory",
+      "link": "https://www.coindesk.com/markets/2026/06/30/bitcoin-s-52-week-correlation-with-usd-jpy-hits-0-90-undercutting-carry-trade-theory",
+      "pubDate": "Tue, 30 Jun 2026 07:14:40 +0000"
+    },
+    {
+      "title": "Live updates: BlackRock's IBIT sheds $300 million as bitcoin demand dwindles",
+      "link": "https://www.coindesk.com/tech/2026/06/30/live-updates-blackrock-s-ibit-sheds-usd300-million-as-bitcoin-demand-dwindles",
+      "pubDate": "Tue, 30 Jun 2026 07:01:09 +0000"
+    },
+    {
+      "title": "Dubai set for crypto firm influx as MiCA deadline pushes companies to reassess Europe",
+      "link": "https://www.coindesk.com/policy/2026/06/30/dubai-set-for-crypto-firm-influx-as-mica-deadline-pushes-companies-to-reassess-europe",
+      "pubDate": "Tue, 30 Jun 2026 06:30:00 +0000"
+    },
+    {
+      "title": "XRP holds $1 support as network activity rises and leverage clears out",
+      "link": "https://www.coindesk.com/markets/2026/06/30/xrp-holds-usd1-support-as-network-activity-rises-and-leverage-clears-out",
+      "pubDate": "Tue, 30 Jun 2026 05:15:17 +0000"
+    },
+    {
+      "title": "Ether, solana and dogecoin slide as Strategy's bitcoin sales plan pressures market",
+      "link": "https://www.coindesk.com/markets/2026/06/30/ether-solana-and-dogecoin-slide-as-strategy-s-bitcoin-sales-plan-pressures-market",
+      "pubDate": "Tue, 30 Jun 2026 05:01:09 +0000"
+    },
+    {
+      "title": "Tether trades at 7% to 10% premium in India. Exchanges say it's just supply and demand",
+      "link": "https://www.coindesk.com/markets/2026/06/30/usdt-s-premium-in-india-jumps-to-10-exchanges-say-its-just-supply-and-demand",
+      "pubDate": "Tue, 30 Jun 2026 04:59:04 +0000"
+    },
     {
       "title": "Bitcoin under pressure below $60,000 as Japanese yen hits 40-year low against the U.S. dollar",
       "link": "https://www.coindesk.com/markets/2026/06/30/bitcoin-under-pressure-below-usd60-000-as-japanese-yen-hits-40-year-low-against-the-u-s-dollar",
@@ -450,41 +485,6 @@
       "title": "Private keys, not smart contracts, caused 40% of crypto's $16 billion hack losses. Here's whats being done.",
       "link": "https://www.coindesk.com/tech/2026/06/29/private-keys-not-smart-contracts-caused-40-of-crypto-s-usd16-billion-hack-losses-here-s-whats-being-done",
       "pubDate": "Mon, 29 Jun 2026 15:45:18 +0000"
-    },
-    {
-      "title": "White House to speak with law enforcement groups to push Crypto's Clarity Act",
-      "link": "https://www.coindesk.com/policy/2026/06/29/white-house-to-speak-with-law-enforcement-groups-to-push-crypto-s-clarity-act",
-      "pubDate": "Mon, 29 Jun 2026 15:23:51 +0000"
-    },
-    {
-      "title": "J.P. Morgan broadens blockchain settlement network as banks modernize cross-border payments",
-      "link": "https://www.coindesk.com/business/2026/06/29/j-p-morgan-broadens-blockchain-settlement-network-as-banks-modernize-cross-border-payments",
-      "pubDate": "Mon, 29 Jun 2026 15:23:36 +0000"
-    },
-    {
-      "title": "Crypto analytics firm Chainalysis proposes standards for blockchain tracing",
-      "link": "https://www.coindesk.com/policy/2026/06/29/crypto-analytics-firm-chainalysis-proposes-standards-for-blockchain-tracing",
-      "pubDate": "Mon, 29 Jun 2026 15:07:49 +0000"
-    },
-    {
-      "title": "MiCA's looming deadline could leave 10 million crypto users without a platform in the EU",
-      "link": "https://www.coindesk.com/business/2026/06/29/mica-july-1-deadline-could-leave-10-million-crypto-users-searching-for-a-new-platform-in-the-eu",
-      "pubDate": "Mon, 29 Jun 2026 15:03:53 +0000"
-    },
-    {
-      "title": "Ripple wants institutions to borrow against tokenized assets on XRPL",
-      "link": "https://www.coindesk.com/tech/2026/06/29/emb-3-pm-utc-ripple-wants-institutions-to-borrow-against-tokenized-assets-on-xrpl",
-      "pubDate": "Mon, 29 Jun 2026 15:00:00 +0000"
-    },
-    {
-      "title": "Wall Street's BNY expands stablecoin services for institutions, starting with Circle's USDC",
-      "link": "https://www.coindesk.com/business/2026/06/29/wall-street-s-bny-expands-stablecoin-services-for-institutions-starting-with-circle-s-usdc",
-      "pubDate": "Mon, 29 Jun 2026 14:46:33 +0000"
-    },
-    {
-      "title": "Strategy opens door to selling billions of bitcoin under new capital plan. Here's what it means",
-      "link": "https://www.coindesk.com/markets/2026/06/29/strategy-opens-the-door-to-selling-bitcoin-under-new-capital-plan-here-s-what-it-means",
-      "pubDate": "Mon, 29 Jun 2026 14:11:01 +0000"
     }
   ]
 }
