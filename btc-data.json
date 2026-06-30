@@ -1,13 +1,13 @@
 {
-  "fetchedAt": "2026-06-30T09:58:40.553Z",
+  "fetchedAt": "2026-06-30T14:41:08.932Z",
   "price": {
-    "usd": 59312,
-    "time": 1782813316
+    "usd": 58905,
+    "time": 1782830123
   },
   "moves": {
-    "d1": -1.4089683807910536,
-    "d7": -5.330936317132684,
-    "d30": -19.40578473948913
+    "d1": -2.085501795092004,
+    "d7": -5.980557117627139,
+    "d30": -19.958823679518588
   },
   "history90d": [
     {
@@ -372,60 +372,110 @@
     },
     {
       "date": "2026-06-30",
-      "close": 59279.28431716297
+      "close": 58584.21160641491
     }
   ],
   "blocks": [
     {
-      "height": 956056,
-      "id": "0000000000000000000205aae5803cdc7b9f4e7393ecd07ed005c2c4c1a9b44b",
-      "timestamp": 1782812956,
-      "txCount": 5546
+      "height": 956082,
+      "id": "000000000000000000011ef2aaf8ee956b306ed210f102c75f390aefd837a6c9",
+      "timestamp": 1782830167,
+      "txCount": 3808
     },
     {
-      "height": 956055,
-      "id": "000000000000000000012c5862e88928a77212090ed98a11330f955816749e50",
-      "timestamp": 1782812755,
-      "txCount": 4300
+      "height": 956081,
+      "id": "00000000000000000000de709874baa9446577a87b6f2ada3a47f29d220f174f",
+      "timestamp": 1782828543,
+      "txCount": 4010
     },
     {
-      "height": 956054,
-      "id": "000000000000000000013ab1dffd68a3ae7acdefb30c2cc8ff290f24f8182406",
-      "timestamp": 1782811952,
-      "txCount": 3724
+      "height": 956080,
+      "id": "000000000000000000014445582bb3f4f8f16e108375ef612b2033ad342155e9",
+      "timestamp": 1782828099,
+      "txCount": 3669
     },
     {
-      "height": 956053,
-      "id": "00000000000000000000687a10811799f712c5903a5d45d77c2e39e8168e811c",
-      "timestamp": 1782811745,
-      "txCount": 6592
+      "height": 956079,
+      "id": "000000000000000000021a2afaf8786c087a5005de2d1780c1620751c8d1bd0e",
+      "timestamp": 1782827628,
+      "txCount": 3432
     },
     {
-      "height": 956052,
-      "id": "0000000000000000000060ed3737e169415dc2e0703eac8645c44646e69ff9f6",
-      "timestamp": 1782811497,
-      "txCount": 4863
+      "height": 956078,
+      "id": "00000000000000000000eac410bf640b99c07b44ff89565f1138fe0861829f43",
+      "timestamp": 1782827374,
+      "txCount": 3173
     },
     {
-      "height": 956051,
-      "id": "00000000000000000000fb886d1c0b0612c14a2c90bc637d6d9f68aa90dc0a85",
-      "timestamp": 1782811034,
-      "txCount": 4212
+      "height": 956077,
+      "id": "000000000000000000018d725211bec3cacd69f83f2f5ab687a19944032a5b42",
+      "timestamp": 1782827197,
+      "txCount": 3368
     },
     {
-      "height": 956050,
-      "id": "000000000000000000016225da2773c2b50444a21e09ed5505a4ea48a4d8bd52",
-      "timestamp": 1782810390,
-      "txCount": 4389
+      "height": 956076,
+      "id": "00000000000000000000bd996e46212b5b30c711d98fd5f845ddd2b0b4645f3a",
+      "timestamp": 1782827075,
+      "txCount": 3801
     },
     {
-      "height": 956049,
-      "id": "000000000000000000013c36d7edeb21d6aaaab8831349275458865caec7f749",
-      "timestamp": 1782810125,
-      "txCount": 4227
+      "height": 956075,
+      "id": "0000000000000000000054cb9ff750fc610a4d17fcea44cab0a8f589776c8f27",
+      "timestamp": 1782826142,
+      "txCount": 3233
     }
   ],
   "news": [
+    {
+      "title": "Circle slides 8% as Stripe, Coinbase and BlackRock back rival stablecoin network",
+      "link": "https://www.coindesk.com/business/2026/06/30/circle-slides-8-as-stripe-coinbase-and-blackrock-back-rival-stablecoin-network",
+      "pubDate": "Tue, 30 Jun 2026 14:32:33 +0000"
+    },
+    {
+      "title": "MetaMask launches Money Account with stablecoin yield and spending in one wallet",
+      "link": "https://www.coindesk.com/tech/2026/06/30/metamask-launches-money-account-with-stablecoin-yield-and-spending-in-one-wallet",
+      "pubDate": "Tue, 30 Jun 2026 14:00:00 +0000"
+    },
+    {
+      "title": "Tokenized securities need competition, not gatekeepers",
+      "link": "https://www.coindesk.com/opinion/2026/06/29/tokenized-securities-need-competition-not-gatekeepers",
+      "pubDate": "Tue, 30 Jun 2026 13:25:52 +0000"
+    },
+    {
+      "title": "Nasdaq expands distribution of its market data into blockchain infrastructure",
+      "link": "https://www.coindesk.com/markets/2026/06/30/nasdaq-expands-distribution-of-its-market-data-into-blockchain-infrastructure",
+      "pubDate": "Tue, 30 Jun 2026 13:00:00 +0000"
+    },
+    {
+      "title": "Bitcoin’s quiet $59,000-$60,000 range is starting to look dangerous",
+      "link": "https://www.coindesk.com/markets/2026/06/30/bitcoin-s-quiet-usd59-000-usd60-000-range-is-starting-to-look-dangerous",
+      "pubDate": "Tue, 30 Jun 2026 11:55:34 +0000"
+    },
+    {
+      "title": "New York Life's $800 billion asset manager makes tokenization debut with Centrifuge fund",
+      "link": "https://www.coindesk.com/business/2026/06/29/new-york-life-makes-tokenization-debut-with-onchain-high-yield-bond-fund-with-centrifuge",
+      "pubDate": "Tue, 30 Jun 2026 11:20:30 +0000"
+    },
+    {
+      "title": "Bitcoin $4.4 billion supply overhang emerges as institutional demand wilts",
+      "link": "https://www.coindesk.com/daybook-us/2026/06/30/bitcoin-usd4-4-billion-supply-overhang-emerges-as-institutional-demand-wilts",
+      "pubDate": "Tue, 30 Jun 2026 11:18:34 +0000"
+    },
+    {
+      "title": "Bitcoin nears 2024 lows as options traders pay up for downside protection",
+      "link": "https://www.coindesk.com/markets/2026/06/30/bitcoin-nears-2024-lows-as-options-traders-pay-up-for-downside-protection",
+      "pubDate": "Tue, 30 Jun 2026 10:48:06 +0000"
+    },
+    {
+      "title": "Strategy heads for 11th losing month in 12 as bitcoin weakness continues",
+      "link": "https://www.coindesk.com/markets/2026/06/30/strategy-heads-for-eleventh-losing-month-in-twelve-as-bitcoin-weakness-continues",
+      "pubDate": "Tue, 30 Jun 2026 10:33:48 +0000"
+    },
+    {
+      "title": "UK to lower stablecoin capital buffers, undercutting EU's MiCA requirements",
+      "link": "https://www.coindesk.com/policy/2026/06/30/uk-to-lower-stablecoin-capital-buffers-undercutting-eu-s-mica-requirements",
+      "pubDate": "Tue, 30 Jun 2026 10:08:48 +0000"
+    },
     {
       "title": "SEC wins $5.5 million default judgment over alleged fake crypto platform NanoBit",
       "link": "https://www.coindesk.com/policy/2026/06/30/sec-wins-usd5-5-million-default-judgment-over-alleged-fake-crypto-platform-nanobit",
@@ -435,56 +485,6 @@
       "title": "Bitcoin's correlation with dollar-yen rate hits -0.90, undercutting 'carry trade' theory",
       "link": "https://www.coindesk.com/markets/2026/06/30/bitcoin-s-52-week-correlation-with-usd-jpy-hits-0-90-undercutting-carry-trade-theory",
       "pubDate": "Tue, 30 Jun 2026 07:14:40 +0000"
-    },
-    {
-      "title": "Live updates: BlackRock's IBIT sheds $300 million as bitcoin demand dwindles",
-      "link": "https://www.coindesk.com/tech/2026/06/30/live-updates-blackrock-s-ibit-sheds-usd300-million-as-bitcoin-demand-dwindles",
-      "pubDate": "Tue, 30 Jun 2026 07:01:09 +0000"
-    },
-    {
-      "title": "Dubai set for crypto firm influx as MiCA deadline pushes companies to reassess Europe",
-      "link": "https://www.coindesk.com/policy/2026/06/30/dubai-set-for-crypto-firm-influx-as-mica-deadline-pushes-companies-to-reassess-europe",
-      "pubDate": "Tue, 30 Jun 2026 06:30:00 +0000"
-    },
-    {
-      "title": "XRP holds $1 support as network activity rises and leverage clears out",
-      "link": "https://www.coindesk.com/markets/2026/06/30/xrp-holds-usd1-support-as-network-activity-rises-and-leverage-clears-out",
-      "pubDate": "Tue, 30 Jun 2026 05:15:17 +0000"
-    },
-    {
-      "title": "Ether, solana and dogecoin slide as Strategy's bitcoin sales plan pressures market",
-      "link": "https://www.coindesk.com/markets/2026/06/30/ether-solana-and-dogecoin-slide-as-strategy-s-bitcoin-sales-plan-pressures-market",
-      "pubDate": "Tue, 30 Jun 2026 05:01:09 +0000"
-    },
-    {
-      "title": "Tether trades at 7% to 10% premium in India. Exchanges say it's just supply and demand",
-      "link": "https://www.coindesk.com/markets/2026/06/30/usdt-s-premium-in-india-jumps-to-10-exchanges-say-its-just-supply-and-demand",
-      "pubDate": "Tue, 30 Jun 2026 04:59:04 +0000"
-    },
-    {
-      "title": "Bitcoin under pressure below $60,000 as Japanese yen hits 40-year low against the U.S. dollar",
-      "link": "https://www.coindesk.com/markets/2026/06/30/bitcoin-under-pressure-below-usd60-000-as-japanese-yen-hits-40-year-low-against-the-u-s-dollar",
-      "pubDate": "Tue, 30 Jun 2026 04:15:44 +0000"
-    },
-    {
-      "title": "Securitize heads to NYSE debut after investors approve SPAC merger",
-      "link": "https://www.coindesk.com/business/2026/06/29/securitize-heads-to-nyse-debut-after-investors-approve-spac-merger",
-      "pubDate": "Mon, 29 Jun 2026 23:05:58 +0000"
-    },
-    {
-      "title": "Bitcoin lending is entering a new institutional era, according to Silicon Valley Bank",
-      "link": "https://www.coindesk.com/business/2026/06/29/bitcoin-lending-is-entering-a-new-institutional-era-according-to-silicon-valley-bank",
-      "pubDate": "Mon, 29 Jun 2026 17:57:18 +0000"
-    },
-    {
-      "title": "JPMorgan urges strong safeguards as congress weighs crypto market structure rules",
-      "link": "https://www.coindesk.com/policy/2026/06/29/jpmorgan-backs-u-s-crypto-bill-but-warns-repeatedly-of-risks-in-digital-asset-framework",
-      "pubDate": "Mon, 29 Jun 2026 17:31:33 +0000"
-    },
-    {
-      "title": "Private keys, not smart contracts, caused 40% of crypto's $16 billion hack losses. Here's whats being done.",
-      "link": "https://www.coindesk.com/tech/2026/06/29/private-keys-not-smart-contracts-caused-40-of-crypto-s-usd16-billion-hack-losses-here-s-whats-being-done",
-      "pubDate": "Mon, 29 Jun 2026 15:45:18 +0000"
     }
   ]
 }
