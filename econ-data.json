@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-06-29T20:03:36.013Z",
+  "fetchedAt": "2026-06-30T03:59:57.683Z",
   "indicators": {
     "UNRATE": {
       "latest": {
@@ -63,12 +63,12 @@
     },
     "T10YIE": {
       "latest": {
-        "date": "2026-06-26",
-        "value": 2.2
+        "date": "2026-06-29",
+        "value": 2.22
       },
       "previous": {
-        "date": "2026-06-25",
-        "value": 2.21
+        "date": "2026-06-26",
+        "value": 2.2
       }
     },
     "PCE": {
@@ -123,42 +123,42 @@
     },
     "DGS2": {
       "latest": {
-        "date": "2026-06-25",
-        "value": 4.09
+        "date": "2026-06-26",
+        "value": 4.07
       },
       "previous": {
-        "date": "2026-06-24",
-        "value": 4.11
+        "date": "2026-06-25",
+        "value": 4.09
       }
     },
     "DGS10": {
       "latest": {
-        "date": "2026-06-25",
-        "value": 4.4
+        "date": "2026-06-26",
+        "value": 4.38
       },
       "previous": {
-        "date": "2026-06-24",
-        "value": 4.41
+        "date": "2026-06-25",
+        "value": 4.4
       }
     },
     "T10Y2Y": {
       "latest": {
-        "date": "2026-06-26",
-        "value": 0.31
+        "date": "2026-06-29",
+        "value": 0.28
       },
       "previous": {
-        "date": "2026-06-25",
+        "date": "2026-06-26",
         "value": 0.31
       }
     },
     "DFII10": {
       "latest": {
-        "date": "2026-06-25",
-        "value": 2.19
+        "date": "2026-06-26",
+        "value": 2.18
       },
       "previous": {
-        "date": "2026-06-24",
-        "value": 2.23
+        "date": "2026-06-25",
+        "value": 2.19
       }
     },
     "BAMLH0A0HYM2": {
@@ -233,12 +233,12 @@
     },
     "DTWEXBGS": {
       "latest": {
-        "date": "2026-06-18",
-        "value": 120.3958
+        "date": "2026-06-26",
+        "value": 120.8866
       },
       "previous": {
-        "date": "2026-06-17",
-        "value": 119.3871
+        "date": "2026-06-25",
+        "value": 121.0559
       }
     },
     "PERMIT": {
@@ -301,6 +301,12 @@
   },
   "news": [
     {
+      "title": "What Causes the Business Cycle?",
+      "link": "https://mises.org/podcasts/speaking-liberty/what-causes-business-cycle",
+      "pubDate": "Mon, 29 Jun 2026 04:44:02 CDT",
+      "kind": "Podcast"
+    },
+    {
       "title": "The State of Financial Markets Tells Us What Investors Really Believe",
       "link": "https://mises.org/podcasts/audio-mises-wire/state-financial-markets-tells-us-what-investors-really-believe",
       "pubDate": "Mon, 29 Jun 2026 02:25:13 CDT",
@@ -331,14 +337,14 @@
       "kind": "Podcast"
     },
     {
-      "title": "US Taxation Is Fueled by Quiet Envy",
-      "link": "https://mises.org/mises-wire/us-taxation-fueled-quiet-envy",
+      "title": "Why Bernie Sanders’s AI Bill Is Fascistic and Dangerous",
+      "link": "https://mises.org/mises-wire/why-bernie-sanderss-ai-bill-fascistic-and-dangerous",
       "pubDate": "Sat, 27 Jun 2026 05:00:00 CDT",
       "kind": "Mises Wire"
     },
     {
-      "title": "Why Bernie Sanders’s AI Bill Is Fascistic and Dangerous",
-      "link": "https://mises.org/mises-wire/why-bernie-sanderss-ai-bill-fascistic-and-dangerous",
+      "title": "US Taxation Is Fueled by Quiet Envy",
+      "link": "https://mises.org/mises-wire/us-taxation-fueled-quiet-envy",
       "pubDate": "Sat, 27 Jun 2026 05:00:00 CDT",
       "kind": "Mises Wire"
     },
@@ -353,12 +359,6 @@
       "link": "https://mises.org/podcasts/origins-federal-reserve/conclusion",
       "pubDate": "Fri, 26 Jun 2026 02:01:33 CDT",
       "kind": "Podcast"
-    },
-    {
-      "title": "Hantavirus: Market versus Government Disease Control",
-      "link": "https://mises.org/mises-wire/hantavirus-market-versus-government-disease-control",
-      "pubDate": "Fri, 26 Jun 2026 02:00:00 CDT",
-      "kind": "Mises Wire"
     }
   ]
 }
