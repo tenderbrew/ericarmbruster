@@ -1,13 +1,13 @@
 {
-  "fetchedAt": "2026-06-30T14:41:08.932Z",
+  "fetchedAt": "2026-06-30T17:13:15.976Z",
   "price": {
-    "usd": 58905,
-    "time": 1782830123
+    "usd": 58449,
+    "time": 1782839116
   },
   "moves": {
-    "d1": -2.085501795092004,
-    "d7": -5.980557117627139,
-    "d30": -19.958823679518588
+    "d1": -2.843485178190863,
+    "d7": -6.7083877933653895,
+    "d30": -20.57844470323712
   },
   "history90d": [
     {
@@ -372,62 +372,72 @@
     },
     {
       "date": "2026-06-30",
-      "close": 58584.21160641491
+      "close": 58416.99503207662
     }
   ],
   "blocks": [
     {
-      "height": 956082,
-      "id": "000000000000000000011ef2aaf8ee956b306ed210f102c75f390aefd837a6c9",
-      "timestamp": 1782830167,
-      "txCount": 3808
+      "height": 956092,
+      "id": "00000000000000000001de493537010bf61c15847bd235bbbb3bcab2d7953e66",
+      "timestamp": 1782837751,
+      "txCount": 3874
     },
     {
-      "height": 956081,
-      "id": "00000000000000000000de709874baa9446577a87b6f2ada3a47f29d220f174f",
-      "timestamp": 1782828543,
-      "txCount": 4010
+      "height": 956091,
+      "id": "00000000000000000001cd2de4a1ab2bb36c7d9f12e5e4d8a3d92c5819c5e7f6",
+      "timestamp": 1782837337,
+      "txCount": 3866
     },
     {
-      "height": 956080,
-      "id": "000000000000000000014445582bb3f4f8f16e108375ef612b2033ad342155e9",
-      "timestamp": 1782828099,
-      "txCount": 3669
+      "height": 956090,
+      "id": "000000000000000000013ffa06c4b718afb70e1851c32425543d5078ee00e339",
+      "timestamp": 1782836847,
+      "txCount": 3589
     },
     {
-      "height": 956079,
-      "id": "000000000000000000021a2afaf8786c087a5005de2d1780c1620751c8d1bd0e",
-      "timestamp": 1782827628,
-      "txCount": 3432
+      "height": 956089,
+      "id": "0000000000000000000007ca0ca483d030dc5c879a4c65eb5180b0515e8f096b",
+      "timestamp": 1782835829,
+      "txCount": 4333
     },
     {
-      "height": 956078,
-      "id": "00000000000000000000eac410bf640b99c07b44ff89565f1138fe0861829f43",
-      "timestamp": 1782827374,
-      "txCount": 3173
+      "height": 956088,
+      "id": "000000000000000000015bc5552e8faab1bc010cbd17fd088706daa670722540",
+      "timestamp": 1782835456,
+      "txCount": 4189
     },
     {
-      "height": 956077,
-      "id": "000000000000000000018d725211bec3cacd69f83f2f5ab687a19944032a5b42",
-      "timestamp": 1782827197,
-      "txCount": 3368
+      "height": 956087,
+      "id": "00000000000000000001ecab6c08ab9c1ff91ca52c23174c93f248ec00de1a16",
+      "timestamp": 1782833879,
+      "txCount": 3765
     },
     {
-      "height": 956076,
-      "id": "00000000000000000000bd996e46212b5b30c711d98fd5f845ddd2b0b4645f3a",
-      "timestamp": 1782827075,
-      "txCount": 3801
+      "height": 956086,
+      "id": "000000000000000000016edc0e245c8e57ed8413def01a0e53cba8cebf60338b",
+      "timestamp": 1782831679,
+      "txCount": 2187
     },
     {
-      "height": 956075,
-      "id": "0000000000000000000054cb9ff750fc610a4d17fcea44cab0a8f589776c8f27",
-      "timestamp": 1782826142,
-      "txCount": 3233
+      "height": 956085,
+      "id": "000000000000000000020fd44fcc242c0015516f81b39786103ca347231513cb",
+      "timestamp": 1782831661,
+      "txCount": 3334
     }
   ],
   "news": [
     {
-      "title": "Circle slides 8% as Stripe, Coinbase and BlackRock back rival stablecoin network",
+      "title": "Chinese exile once linked to Trump strategist gets 30-year sentence in $1 billion fraud",
+      "link": "https://www.coindesk.com/policy/2026/06/30/chinese-exile-once-linked-to-trump-strategist-gets-30-year-sentence-in-usd1-billion-fraud",
+      "pubDate": "Tue, 30 Jun 2026 16:31:46 +0000"
+    },
+    {
+      "title": "Jefferies warns of crypto market volatility as Clarity Act faces Senate test",
+      "link": "https://www.coindesk.com/policy/2026/06/30/jefferies-warns-of-crypto-market-volatility-as-clarity-act-faces-senate-test",
+      "pubDate": "Tue, 30 Jun 2026 14:41:59 +0000"
+    },
+    {
+      "title": "Circle slides 13% as Stripe, Coinbase and BlackRock back rival stablecoin network",
       "link": "https://www.coindesk.com/business/2026/06/30/circle-slides-8-as-stripe-coinbase-and-blackrock-back-rival-stablecoin-network",
       "pubDate": "Tue, 30 Jun 2026 14:32:33 +0000"
     },
@@ -475,16 +485,6 @@
       "title": "UK to lower stablecoin capital buffers, undercutting EU's MiCA requirements",
       "link": "https://www.coindesk.com/policy/2026/06/30/uk-to-lower-stablecoin-capital-buffers-undercutting-eu-s-mica-requirements",
       "pubDate": "Tue, 30 Jun 2026 10:08:48 +0000"
-    },
-    {
-      "title": "SEC wins $5.5 million default judgment over alleged fake crypto platform NanoBit",
-      "link": "https://www.coindesk.com/policy/2026/06/30/sec-wins-usd5-5-million-default-judgment-over-alleged-fake-crypto-platform-nanobit",
-      "pubDate": "Tue, 30 Jun 2026 09:54:50 +0000"
-    },
-    {
-      "title": "Bitcoin's correlation with dollar-yen rate hits -0.90, undercutting 'carry trade' theory",
-      "link": "https://www.coindesk.com/markets/2026/06/30/bitcoin-s-52-week-correlation-with-usd-jpy-hits-0-90-undercutting-carry-trade-theory",
-      "pubDate": "Tue, 30 Jun 2026 07:14:40 +0000"
     }
   ]
 }
