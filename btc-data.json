@@ -1,13 +1,13 @@
 {
-  "fetchedAt": "2026-06-30T20:16:16.161Z",
+  "fetchedAt": "2026-06-30T22:36:55.568Z",
   "price": {
-    "usd": 58754,
-    "time": 1782850209
+    "usd": 58449,
+    "time": 1782858926
   },
   "moves": {
-    "d1": -2.336500678530451,
-    "d7": -6.2215712229702795,
-    "d30": -20.164005202723633
+    "d1": -2.843485178190863,
+    "d7": -6.7083877933653895,
+    "d30": -20.57844470323712
   },
   "history90d": [
     {
@@ -372,60 +372,75 @@
     },
     {
       "date": "2026-06-30",
-      "close": 58777.804316366826
+      "close": 58453.092572777954
     }
   ],
   "blocks": [
     {
-      "height": 956111,
-      "id": "000000000000000000002a799fd9e9214cb14310b1527cca28d45fbbeee39c3a",
-      "timestamp": 1782850000,
-      "txCount": 3535
+      "height": 956132,
+      "id": "00000000000000000001493048640b9ce73ce55d37097ffb3e04e18c954a14b1",
+      "timestamp": 1782858272,
+      "txCount": 3923
     },
     {
-      "height": 956110,
-      "id": "00000000000000000000d432eff1c1191beb21afdd63795ada39e3d58e35d0dd",
-      "timestamp": 1782849239,
-      "txCount": 3754
+      "height": 956131,
+      "id": "000000000000000000020bb493a49f299bc0a988b40ab1bce0dff0c8b3001b77",
+      "timestamp": 1782857392,
+      "txCount": 3383
     },
     {
-      "height": 956109,
-      "id": "000000000000000000000d852ae0b27b8f470e8370b11db6dff3c070ab23836a",
-      "timestamp": 1782848890,
-      "txCount": 4191
+      "height": 956130,
+      "id": "000000000000000000007851521b071331e9a2514f14e6f2a1d9e7d41492e9e5",
+      "timestamp": 1782856683,
+      "txCount": 4391
     },
     {
-      "height": 956108,
-      "id": "00000000000000000001fcf7dc804349a0058ee4f9e9d73fffcd500235469b7c",
-      "timestamp": 1782847504,
-      "txCount": 3726
+      "height": 956129,
+      "id": "0000000000000000000035fecedc2289eaf14f6f7550f8e99e1e096b56e539e0",
+      "timestamp": 1782855974,
+      "txCount": 5341
     },
     {
-      "height": 956107,
-      "id": "000000000000000000006c7ec48ed14494657dc1ec11324791434d2296219cd4",
-      "timestamp": 1782846440,
-      "txCount": 3138
+      "height": 956128,
+      "id": "000000000000000000016dbd108cf1e1175b4541ac841f119ec78105d95d7bf1",
+      "timestamp": 1782855703,
+      "txCount": 6287
     },
     {
-      "height": 956106,
-      "id": "00000000000000000000042c002f39153d9170fcec6bed1693310ccbd70dac8a",
-      "timestamp": 1782846053,
-      "txCount": 3563
+      "height": 956127,
+      "id": "00000000000000000000fc832db4472e45100bc30a239e4911f988948eabc212",
+      "timestamp": 1782855570,
+      "txCount": 6307
     },
     {
-      "height": 956105,
-      "id": "00000000000000000000aef57217a37344c891fa60577800c297b193ac2e6d73",
-      "timestamp": 1782845478,
-      "txCount": 3715
+      "height": 956126,
+      "id": "00000000000000000002041250b75b00d454e1e9d1d529f4f2e58f67066f9f3f",
+      "timestamp": 1782855440,
+      "txCount": 7170
     },
     {
-      "height": 956104,
-      "id": "00000000000000000001582f5d2796b6417a308acb7b84b0222f02a939a3d93f",
-      "timestamp": 1782844783,
-      "txCount": 3866
+      "height": 956125,
+      "id": "00000000000000000001cde4c928478c7a8729e9719d188ccfc62075aafda26e",
+      "timestamp": 1782855432,
+      "txCount": 6424
     }
   ],
   "news": [
+    {
+      "title": "Trump pocketed more than $1 billion from crypto ties as industry headed toward slump",
+      "link": "https://www.coindesk.com/policy/2026/06/30/trump-pocketed-more-than-usd1-billion-from-crypto-ties-as-industry-headed-toward-slump",
+      "pubDate": "Tue, 30 Jun 2026 22:28:15 +0000"
+    },
+    {
+      "title": "Phantom doubles down on perpetual futures with hire of Hyperliquid market builders",
+      "link": "https://www.coindesk.com/business/2026/06/30/phantom-doubles-down-on-perpetual-futures-with-hire-of-hyperliquid-market-builders",
+      "pubDate": "Tue, 30 Jun 2026 21:00:19 +0000"
+    },
+    {
+      "title": "Companies spending the most on AI are growing jobs, Ramp study finds",
+      "link": "https://www.coindesk.com/business/2026/06/30/companies-spending-the-most-on-ai-are-growing-jobs-ramp-study-finds",
+      "pubDate": "Tue, 30 Jun 2026 20:21:49 +0000"
+    },
     {
       "title": "Why OpenUSD's 'real threat' that tanked Circle stock still faces a steep uphill battle for adoption",
       "link": "https://www.coindesk.com/business/2026/06/30/why-the-openusd-s-real-threat-that-tanked-circle-stock-still-faces-a-steep-uphill-battle-for-adoption",
@@ -470,21 +485,6 @@
       "title": "Bitcoin’s quiet $59,000-$60,000 range is starting to look dangerous",
       "link": "https://www.coindesk.com/markets/2026/06/30/bitcoin-s-quiet-usd59-000-usd60-000-range-is-starting-to-look-dangerous",
       "pubDate": "Tue, 30 Jun 2026 11:55:34 +0000"
-    },
-    {
-      "title": "New York Life's $800 billion asset manager makes tokenization debut with Centrifuge fund",
-      "link": "https://www.coindesk.com/business/2026/06/29/new-york-life-makes-tokenization-debut-with-onchain-high-yield-bond-fund-with-centrifuge",
-      "pubDate": "Tue, 30 Jun 2026 11:20:30 +0000"
-    },
-    {
-      "title": "Bitcoin $4.4 billion supply overhang emerges as institutional demand wilts",
-      "link": "https://www.coindesk.com/daybook-us/2026/06/30/bitcoin-usd4-4-billion-supply-overhang-emerges-as-institutional-demand-wilts",
-      "pubDate": "Tue, 30 Jun 2026 11:18:34 +0000"
-    },
-    {
-      "title": "Bitcoin nears 2024 lows as options traders pay up for downside protection",
-      "link": "https://www.coindesk.com/markets/2026/06/30/bitcoin-nears-2024-lows-as-options-traders-pay-up-for-downside-protection",
-      "pubDate": "Tue, 30 Jun 2026 10:48:06 +0000"
     }
   ]
 }
