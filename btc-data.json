@@ -1,13 +1,13 @@
 {
-  "fetchedAt": "2026-06-30T17:13:15.976Z",
+  "fetchedAt": "2026-06-30T20:16:16.161Z",
   "price": {
-    "usd": 58449,
-    "time": 1782839116
+    "usd": 58754,
+    "time": 1782850209
   },
   "moves": {
-    "d1": -2.843485178190863,
-    "d7": -6.7083877933653895,
-    "d30": -20.57844470323712
+    "d1": -2.336500678530451,
+    "d7": -6.2215712229702795,
+    "d30": -20.164005202723633
   },
   "history90d": [
     {
@@ -372,60 +372,70 @@
     },
     {
       "date": "2026-06-30",
-      "close": 58416.99503207662
+      "close": 58777.804316366826
     }
   ],
   "blocks": [
     {
-      "height": 956092,
-      "id": "00000000000000000001de493537010bf61c15847bd235bbbb3bcab2d7953e66",
-      "timestamp": 1782837751,
-      "txCount": 3874
+      "height": 956111,
+      "id": "000000000000000000002a799fd9e9214cb14310b1527cca28d45fbbeee39c3a",
+      "timestamp": 1782850000,
+      "txCount": 3535
     },
     {
-      "height": 956091,
-      "id": "00000000000000000001cd2de4a1ab2bb36c7d9f12e5e4d8a3d92c5819c5e7f6",
-      "timestamp": 1782837337,
+      "height": 956110,
+      "id": "00000000000000000000d432eff1c1191beb21afdd63795ada39e3d58e35d0dd",
+      "timestamp": 1782849239,
+      "txCount": 3754
+    },
+    {
+      "height": 956109,
+      "id": "000000000000000000000d852ae0b27b8f470e8370b11db6dff3c070ab23836a",
+      "timestamp": 1782848890,
+      "txCount": 4191
+    },
+    {
+      "height": 956108,
+      "id": "00000000000000000001fcf7dc804349a0058ee4f9e9d73fffcd500235469b7c",
+      "timestamp": 1782847504,
+      "txCount": 3726
+    },
+    {
+      "height": 956107,
+      "id": "000000000000000000006c7ec48ed14494657dc1ec11324791434d2296219cd4",
+      "timestamp": 1782846440,
+      "txCount": 3138
+    },
+    {
+      "height": 956106,
+      "id": "00000000000000000000042c002f39153d9170fcec6bed1693310ccbd70dac8a",
+      "timestamp": 1782846053,
+      "txCount": 3563
+    },
+    {
+      "height": 956105,
+      "id": "00000000000000000000aef57217a37344c891fa60577800c297b193ac2e6d73",
+      "timestamp": 1782845478,
+      "txCount": 3715
+    },
+    {
+      "height": 956104,
+      "id": "00000000000000000001582f5d2796b6417a308acb7b84b0222f02a939a3d93f",
+      "timestamp": 1782844783,
       "txCount": 3866
-    },
-    {
-      "height": 956090,
-      "id": "000000000000000000013ffa06c4b718afb70e1851c32425543d5078ee00e339",
-      "timestamp": 1782836847,
-      "txCount": 3589
-    },
-    {
-      "height": 956089,
-      "id": "0000000000000000000007ca0ca483d030dc5c879a4c65eb5180b0515e8f096b",
-      "timestamp": 1782835829,
-      "txCount": 4333
-    },
-    {
-      "height": 956088,
-      "id": "000000000000000000015bc5552e8faab1bc010cbd17fd088706daa670722540",
-      "timestamp": 1782835456,
-      "txCount": 4189
-    },
-    {
-      "height": 956087,
-      "id": "00000000000000000001ecab6c08ab9c1ff91ca52c23174c93f248ec00de1a16",
-      "timestamp": 1782833879,
-      "txCount": 3765
-    },
-    {
-      "height": 956086,
-      "id": "000000000000000000016edc0e245c8e57ed8413def01a0e53cba8cebf60338b",
-      "timestamp": 1782831679,
-      "txCount": 2187
-    },
-    {
-      "height": 956085,
-      "id": "000000000000000000020fd44fcc242c0015516f81b39786103ca347231513cb",
-      "timestamp": 1782831661,
-      "txCount": 3334
     }
   ],
   "news": [
+    {
+      "title": "Why OpenUSD's 'real threat' that tanked Circle stock still faces a steep uphill battle for adoption",
+      "link": "https://www.coindesk.com/business/2026/06/30/why-the-openusd-s-real-threat-that-tanked-circle-stock-still-faces-a-steep-uphill-battle-for-adoption",
+      "pubDate": "Tue, 30 Jun 2026 18:39:06 +0000"
+    },
+    {
+      "title": "SEC giving novel ETFs a rethink as it opens comment period on overhauling U.S. rules",
+      "link": "https://www.coindesk.com/policy/2026/06/30/sec-giving-novel-etfs-a-rethink-as-it-opens-comment-period-on-overhauling-u-s-rules",
+      "pubDate": "Tue, 30 Jun 2026 17:51:57 +0000"
+    },
     {
       "title": "Chinese exile once linked to Trump strategist gets 30-year sentence in $1 billion fraud",
       "link": "https://www.coindesk.com/policy/2026/06/30/chinese-exile-once-linked-to-trump-strategist-gets-30-year-sentence-in-usd1-billion-fraud",
@@ -437,7 +447,7 @@
       "pubDate": "Tue, 30 Jun 2026 14:41:59 +0000"
     },
     {
-      "title": "Circle slides 13% as Stripe, Coinbase and BlackRock back rival stablecoin network",
+      "title": "Circle craters 17% as Stripe, Coinbase and BlackRock back rival stablecoin network",
       "link": "https://www.coindesk.com/business/2026/06/30/circle-slides-8-as-stripe-coinbase-and-blackrock-back-rival-stablecoin-network",
       "pubDate": "Tue, 30 Jun 2026 14:32:33 +0000"
     },
@@ -475,16 +485,6 @@
       "title": "Bitcoin nears 2024 lows as options traders pay up for downside protection",
       "link": "https://www.coindesk.com/markets/2026/06/30/bitcoin-nears-2024-lows-as-options-traders-pay-up-for-downside-protection",
       "pubDate": "Tue, 30 Jun 2026 10:48:06 +0000"
-    },
-    {
-      "title": "Strategy heads for 11th losing month in 12 as bitcoin weakness continues",
-      "link": "https://www.coindesk.com/markets/2026/06/30/strategy-heads-for-eleventh-losing-month-in-twelve-as-bitcoin-weakness-continues",
-      "pubDate": "Tue, 30 Jun 2026 10:33:48 +0000"
-    },
-    {
-      "title": "UK to lower stablecoin capital buffers, undercutting EU's MiCA requirements",
-      "link": "https://www.coindesk.com/policy/2026/06/30/uk-to-lower-stablecoin-capital-buffers-undercutting-eu-s-mica-requirements",
-      "pubDate": "Tue, 30 Jun 2026 10:08:48 +0000"
     }
   ]
 }
