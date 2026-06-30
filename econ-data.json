@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-06-30T09:45:43.401Z",
+  "fetchedAt": "2026-06-30T14:26:52.699Z",
   "indicators": {
     "UNRATE": {
       "latest": {
@@ -23,12 +23,12 @@
     },
     "JTSJOL": {
       "latest": {
-        "date": "2026-04-01",
-        "value": 7618
+        "date": "2026-05-01",
+        "value": 7594
       },
       "previous": {
-        "date": "2026-03-01",
-        "value": 6887
+        "date": "2026-04-01",
+        "value": 7585
       }
     },
     "ICSA": {
@@ -163,12 +163,12 @@
     },
     "BAMLH0A0HYM2": {
       "latest": {
-        "date": "2026-06-26",
-        "value": 2.83
+        "date": "2026-06-29",
+        "value": 2.8
       },
       "previous": {
-        "date": "2026-06-25",
-        "value": 2.78
+        "date": "2026-06-26",
+        "value": 2.83
       }
     },
     "MORTGAGE30US": {
@@ -263,12 +263,12 @@
     },
     "VIXCLS": {
       "latest": {
-        "date": "2026-06-26",
-        "value": 18.41
+        "date": "2026-06-29",
+        "value": 17.65
       },
       "previous": {
-        "date": "2026-06-25",
-        "value": 18.89
+        "date": "2026-06-26",
+        "value": 18.41
       }
     },
     "BOPGSTB": {
@@ -300,6 +300,18 @@
     }
   },
   "news": [
+    {
+      "title": "From 2008 to the Coming Reset: Larry Lepard's Case for Sound Money",
+      "link": "https://mises.org/podcasts/human-action-podcast/2008-coming-reset-larry-lepards-case-sound-money",
+      "pubDate": "Tue, 30 Jun 2026 09:20:00 CDT",
+      "kind": "Podcast"
+    },
+    {
+      "title": "Calhoun’s Answer to the Abolition Petitions",
+      "link": "https://mises.org/mises-wire/calhouns-answer-abolition-petitions",
+      "pubDate": "Tue, 30 Jun 2026 05:00:00 CDT",
+      "kind": "Mises Wire"
+    },
     {
       "title": "What Causes the Business Cycle?",
       "link": "https://mises.org/podcasts/speaking-liberty/what-causes-business-cycle",
@@ -347,18 +359,6 @@
       "link": "https://mises.org/mises-wire/why-bernie-sanderss-ai-bill-fascistic-and-dangerous",
       "pubDate": "Sat, 27 Jun 2026 05:00:00 CDT",
       "kind": "Mises Wire"
-    },
-    {
-      "title": "Hantavirus: Market versus Government Disease Control",
-      "link": "https://mises.org/podcasts/audio-mises-wire/hantavirus-market-versus-government-disease-control",
-      "pubDate": "Fri, 26 Jun 2026 04:35:52 CDT",
-      "kind": "Podcast"
-    },
-    {
-      "title": "Conclusion",
-      "link": "https://mises.org/podcasts/origins-federal-reserve/conclusion",
-      "pubDate": "Fri, 26 Jun 2026 02:01:33 CDT",
-      "kind": "Podcast"
     }
   ]
 }
