@@ -1,13 +1,13 @@
 {
-  "fetchedAt": "2026-07-01T15:10:14.176Z",
+  "fetchedAt": "2026-07-01T17:22:23.566Z",
   "price": {
-    "usd": 59695,
-    "time": 1782918312
+    "usd": 59836,
+    "time": 1782926116
   },
   "moves": {
-    "d1": 1.9542913712723653,
-    "d7": -1.9931294654321086,
-    "d30": -16.34707406166722
+    "d1": 2.195108107738575,
+    "d7": -1.7616365640940712,
+    "d30": -16.149485276051934
   },
   "history90d": [
     {
@@ -372,67 +372,77 @@
     },
     {
       "date": "2026-07-01",
-      "close": 59766.76888794793
+      "close": 60015.954637162446
     }
   ],
   "blocks": [
     {
-      "height": 956227,
-      "id": "000000000000000000011a20cede8fb939ac803dbc6ec4576f67fc2c0a8540ca",
-      "timestamp": 1782918294,
-      "txCount": 3520
+      "height": 956244,
+      "id": "00000000000000000001383ce398af09297ecda5619d45b777dadb76dce594b8",
+      "timestamp": 1782926368,
+      "txCount": 4491
     },
     {
-      "height": 956226,
-      "id": "0000000000000000000174f4b8ec6c8b6243c79b90eda2b68725d6039343ad69",
-      "timestamp": 1782918245,
-      "txCount": 2962
+      "height": 956243,
+      "id": "0000000000000000000158a5d8705f55fa9df80bffdf566fe50772d90826b102",
+      "timestamp": 1782925889,
+      "txCount": 4124
     },
     {
-      "height": 956225,
-      "id": "0000000000000000000145afee9f18770c7ddc2a2530750c305f5e7696fc5925",
-      "timestamp": 1782917559,
-      "txCount": 3606
+      "height": 956242,
+      "id": "0000000000000000000032886c6c31af6a60cf090ed29fa0966464ed89f86c7a",
+      "timestamp": 1782925782,
+      "txCount": 3931
     },
     {
-      "height": 956224,
-      "id": "000000000000000000002a06dc0b831108a4cc616f88873394d8213220aa8145",
-      "timestamp": 1782916663,
-      "txCount": 3703
+      "height": 956241,
+      "id": "000000000000000000005dd79d3c01270211087ee43880226968d15f626ba7ae",
+      "timestamp": 1782925480,
+      "txCount": 3921
     },
     {
-      "height": 956223,
-      "id": "00000000000000000001e37e722d1fbf05055e4d891671570ce782906e94cabc",
-      "timestamp": 1782916376,
-      "txCount": 3076
+      "height": 956240,
+      "id": "0000000000000000000188d701061339cc7d6e5c62273785fbcd4bc2872fe3db",
+      "timestamp": 1782924890,
+      "txCount": 3895
     },
     {
-      "height": 956222,
-      "id": "00000000000000000000faaea30d016e8a6f3202d29ae46572dc6bd5c050572d",
-      "timestamp": 1782916196,
-      "txCount": 3477
+      "height": 956239,
+      "id": "000000000000000000004203dc537a1e267104d973368c6a040b4a341e73a034",
+      "timestamp": 1782924782,
+      "txCount": 3753
     },
     {
-      "height": 956221,
-      "id": "000000000000000000018c36c012dc3f84d2098496d0e0976f3797117bb28d6e",
-      "timestamp": 1782915893,
-      "txCount": 4482
+      "height": 956238,
+      "id": "000000000000000000014e2ecfa3098e9bc74a8c1cf54705ce8f204f3a995590",
+      "timestamp": 1782924071,
+      "txCount": 3734
     },
     {
-      "height": 956220,
-      "id": "000000000000000000008cd8c36aa011fe33a130815de8610d48ff4a5b62439f",
-      "timestamp": 1782914854,
-      "txCount": 3767
+      "height": 956237,
+      "id": "000000000000000000020b7dce6a51dbacdb51feebe9c672d773363bac752d77",
+      "timestamp": 1782923367,
+      "txCount": 3380
     }
   ],
   "news": [
+    {
+      "title": "Jefferies warns against buying the dip in Circle as Open USD raises new competition fears",
+      "link": "https://www.coindesk.com/markets/2026/07/01/jefferies-warns-against-buying-the-dip-in-circle-as-open-usd-raises-new-competition-fears",
+      "pubDate": "Wed, 01 Jul 2026 16:11:50 +0000"
+    },
+    {
+      "title": "Cantor says bitcoin bear market may be entering final stretch",
+      "link": "https://www.coindesk.com/markets/2026/07/01/cantor-says-bitcoin-bear-market-may-be-entering-final-stretch",
+      "pubDate": "Wed, 01 Jul 2026 15:11:46 +0000"
+    },
     {
       "title": "Goliath Ventures CEO pleads guilty in $400 million crypto Ponzi case",
       "link": "https://www.coindesk.com/policy/2026/07/01/goliath-ventures-ceo-pleads-guilty-in-usd400-million-crypto-ponzi-case",
       "pubDate": "Wed, 01 Jul 2026 15:06:22 +0000"
     },
     {
-      "title": "Bitcoin climbs toward $60,000 after Fed Chair Warsh said inflation risks has come down",
+      "title": "Bitcoin breaks above $60,000 after Fed Chair Warsh said inflation risks has come down",
       "link": "https://www.coindesk.com/markets/2026/07/01/bitcoin-retakes-usd60-000-level-after-fed-chair-warsh-said-inflation-risks-has-come-down",
       "pubDate": "Wed, 01 Jul 2026 14:36:00 +0000"
     },
@@ -475,16 +485,6 @@
       "title": "Tokenized Google stock inflated 7,700% in rare DeFi lending exploit",
       "link": "https://www.coindesk.com/tech/2026/07/01/tokenized-google-stock-inflated-7-700-in-rare-defi-lending-exploit",
       "pubDate": "Wed, 01 Jul 2026 13:32:20 +0000"
-    },
-    {
-      "title": "What's next for Bitcoin and stocks? Analysts see a volatile second half",
-      "link": "https://www.coindesk.com/markets/2026/06/30/what-s-next-for-bitcoin-and-stocks-analysts-see-a-volatile-second-half",
-      "pubDate": "Wed, 01 Jul 2026 13:00:00 +0000"
-    },
-    {
-      "title": "Mysterious Solana project World unveiled as fully onchain prediction market",
-      "link": "https://www.coindesk.com/web3/2026/07/01/mysterious-solana-project-world-unveiled-as-fully-onchain-prediction-market",
-      "pubDate": "Wed, 01 Jul 2026 13:00:00 +0000"
     }
   ]
 }
