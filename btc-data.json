@@ -1,19 +1,15 @@
 {
-  "fetchedAt": "2026-06-30T22:36:55.568Z",
+  "fetchedAt": "2026-07-01T04:51:32.541Z",
   "price": {
-    "usd": 58449,
-    "time": 1782858926
+    "usd": 59270,
+    "time": 1782881108
   },
   "moves": {
-    "d1": -2.843485178190863,
-    "d7": -6.7083877933653895,
-    "d30": -20.57844470323712
+    "d1": 1.2284253216402252,
+    "d7": -2.690891756699243,
+    "d30": -16.942643096323252
   },
   "history90d": [
-    {
-      "date": "2026-04-02",
-      "close": 68089.0553821667
-    },
     {
       "date": "2026-04-03",
       "close": 66891.6645686824
@@ -371,61 +367,70 @@
       "close": 60159.63016705464
     },
     {
-      "date": "2026-06-30",
-      "close": 58453.092572777954
+      "date": "2026-07-01",
+      "close": 58550.74778816053
+    },
+    {
+      "date": "2026-07-01",
+      "close": 59297.04320493063
     }
   ],
   "blocks": [
     {
-      "height": 956132,
-      "id": "00000000000000000001493048640b9ce73ce55d37097ffb3e04e18c954a14b1",
-      "timestamp": 1782858272,
-      "txCount": 3923
+      "height": 956168,
+      "id": "00000000000000000000f5cb3a728cab2b3e19e05138c5c26073ec41e259c990",
+      "timestamp": 1782881275,
+      "txCount": 6468
     },
     {
-      "height": 956131,
-      "id": "000000000000000000020bb493a49f299bc0a988b40ab1bce0dff0c8b3001b77",
-      "timestamp": 1782857392,
-      "txCount": 3383
+      "height": 956167,
+      "id": "000000000000000000000fba009777d6bb015c58974324caa9e7cbd04a96094c",
+      "timestamp": 1782881265,
+      "txCount": 3407
     },
     {
-      "height": 956130,
-      "id": "000000000000000000007851521b071331e9a2514f14e6f2a1d9e7d41492e9e5",
-      "timestamp": 1782856683,
-      "txCount": 4391
+      "height": 956166,
+      "id": "00000000000000000001cd5fdbd8a298d35ffaf4eb1f2d0bf0e7529de1baae63",
+      "timestamp": 1782879943,
+      "txCount": 4730
     },
     {
-      "height": 956129,
-      "id": "0000000000000000000035fecedc2289eaf14f6f7550f8e99e1e096b56e539e0",
-      "timestamp": 1782855974,
-      "txCount": 5341
+      "height": 956165,
+      "id": "000000000000000000012175f62d011885bb49741b1117d1af3ef30bad7988fd",
+      "timestamp": 1782879418,
+      "txCount": 6609
     },
     {
-      "height": 956128,
-      "id": "000000000000000000016dbd108cf1e1175b4541ac841f119ec78105d95d7bf1",
-      "timestamp": 1782855703,
-      "txCount": 6287
+      "height": 956164,
+      "id": "000000000000000000013a3d6be7713f03ef564eb5564781b71a7db26eaea1d0",
+      "timestamp": 1782879230,
+      "txCount": 5869
     },
     {
-      "height": 956127,
-      "id": "00000000000000000000fc832db4472e45100bc30a239e4911f988948eabc212",
-      "timestamp": 1782855570,
-      "txCount": 6307
+      "height": 956163,
+      "id": "00000000000000000000beaf9fd977f6326dca5be216378521a8139f15bfae75",
+      "timestamp": 1782878952,
+      "txCount": 2182
     },
     {
-      "height": 956126,
-      "id": "00000000000000000002041250b75b00d454e1e9d1d529f4f2e58f67066f9f3f",
-      "timestamp": 1782855440,
-      "txCount": 7170
+      "height": 956162,
+      "id": "000000000000000000016221b6a91fd32a52306aae6132ff050bb9bab8ceb8d8",
+      "timestamp": 1782878110,
+      "txCount": 4656
     },
     {
-      "height": 956125,
-      "id": "00000000000000000001cde4c928478c7a8729e9719d188ccfc62075aafda26e",
-      "timestamp": 1782855432,
-      "txCount": 6424
+      "height": 956161,
+      "id": "0000000000000000000072488a80ceacc4caeb5aec9835edcf86a3655af42169",
+      "timestamp": 1782877149,
+      "txCount": 5398
     }
   ],
   "news": [
+    {
+      "title": "U.S. senators seek to block foreign adversaries from AI technology in new bill",
+      "link": "https://www.coindesk.com/policy/2026/06/30/u-s-senators-seek-to-block-foreign-adversaries-from-ai-technology-in-new-bill",
+      "pubDate": "Tue, 30 Jun 2026 23:02:46 +0000"
+    },
     {
       "title": "Trump pocketed more than $1 billion from crypto ties as industry headed toward slump",
       "link": "https://www.coindesk.com/policy/2026/06/30/trump-pocketed-more-than-usd1-billion-from-crypto-ties-as-industry-headed-toward-slump",
@@ -480,11 +485,6 @@
       "title": "Nasdaq expands distribution of its market data into blockchain infrastructure",
       "link": "https://www.coindesk.com/markets/2026/06/30/nasdaq-expands-distribution-of-its-market-data-into-blockchain-infrastructure",
       "pubDate": "Tue, 30 Jun 2026 13:00:00 +0000"
-    },
-    {
-      "title": "Bitcoin’s quiet $59,000-$60,000 range is starting to look dangerous",
-      "link": "https://www.coindesk.com/markets/2026/06/30/bitcoin-s-quiet-usd59-000-usd60-000-range-is-starting-to-look-dangerous",
-      "pubDate": "Tue, 30 Jun 2026 11:55:34 +0000"
     }
   ]
 }
