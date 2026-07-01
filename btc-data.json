@@ -1,13 +1,13 @@
 {
-  "fetchedAt": "2026-07-01T10:09:50.167Z",
+  "fetchedAt": "2026-07-01T15:10:14.176Z",
   "price": {
-    "usd": 58826,
-    "time": 1782900313
+    "usd": 59695,
+    "time": 1782918312
   },
   "moves": {
-    "d1": 0.4701087897892364,
-    "d7": -3.419848126870073,
-    "d30": -17.564837570175662
+    "d1": 1.9542913712723653,
+    "d7": -1.9931294654321086,
+    "d30": -16.34707406166722
   },
   "history90d": [
     {
@@ -372,119 +372,119 @@
     },
     {
       "date": "2026-07-01",
-      "close": 58798.4985013965
+      "close": 59766.76888794793
     }
   ],
   "blocks": [
     {
-      "height": 956194,
-      "id": "0000000000000000000140af8e18afaf40edea7908045d6c39efca6e1ca4a174",
-      "timestamp": 1782899345,
-      "txCount": 3715
+      "height": 956227,
+      "id": "000000000000000000011a20cede8fb939ac803dbc6ec4576f67fc2c0a8540ca",
+      "timestamp": 1782918294,
+      "txCount": 3520
     },
     {
-      "height": 956193,
-      "id": "00000000000000000000c39dfd85d566bf3b5e5acb4cfedfe9ad22ad6a0b4d7e",
-      "timestamp": 1782898384,
-      "txCount": 4057
+      "height": 956226,
+      "id": "0000000000000000000174f4b8ec6c8b6243c79b90eda2b68725d6039343ad69",
+      "timestamp": 1782918245,
+      "txCount": 2962
     },
     {
-      "height": 956192,
-      "id": "00000000000000000001b5fd6e6f4907c9738e548a195d8a6c855b140a5595e8",
-      "timestamp": 1782897504,
-      "txCount": 3647
+      "height": 956225,
+      "id": "0000000000000000000145afee9f18770c7ddc2a2530750c305f5e7696fc5925",
+      "timestamp": 1782917559,
+      "txCount": 3606
     },
     {
-      "height": 956191,
-      "id": "000000000000000000011ef65830971693b469d3665b691945f906ff2571471d",
-      "timestamp": 1782897119,
-      "txCount": 4216
+      "height": 956224,
+      "id": "000000000000000000002a06dc0b831108a4cc616f88873394d8213220aa8145",
+      "timestamp": 1782916663,
+      "txCount": 3703
     },
     {
-      "height": 956190,
-      "id": "000000000000000000003ccfc9a1ad665ca44ac87687a5f29db95a76223ccbb2",
-      "timestamp": 1782895015,
-      "txCount": 4183
+      "height": 956223,
+      "id": "00000000000000000001e37e722d1fbf05055e4d891671570ce782906e94cabc",
+      "timestamp": 1782916376,
+      "txCount": 3076
     },
     {
-      "height": 956189,
-      "id": "00000000000000000000e6675eb6ba515a5f1ab90dbb929becdf1db80adc4d52",
-      "timestamp": 1782894855,
-      "txCount": 4051
+      "height": 956222,
+      "id": "00000000000000000000faaea30d016e8a6f3202d29ae46572dc6bd5c050572d",
+      "timestamp": 1782916196,
+      "txCount": 3477
     },
     {
-      "height": 956188,
-      "id": "00000000000000000000efc520fb45b706171e7064165118338d2a8ef57b76f7",
-      "timestamp": 1782893433,
-      "txCount": 4252
+      "height": 956221,
+      "id": "000000000000000000018c36c012dc3f84d2098496d0e0976f3797117bb28d6e",
+      "timestamp": 1782915893,
+      "txCount": 4482
     },
     {
-      "height": 956187,
-      "id": "00000000000000000001174a41ad86647ef3748605931bfb44bcd92ef48ca03c",
-      "timestamp": 1782892585,
-      "txCount": 3126
+      "height": 956220,
+      "id": "000000000000000000008cd8c36aa011fe33a130815de8610d48ff4a5b62439f",
+      "timestamp": 1782914854,
+      "txCount": 3767
     }
   ],
   "news": [
     {
-      "title": "Bitcoin’s 20% June crash looks even deadlier on the charts. Here’s why",
-      "link": "https://www.coindesk.com/markets/2026/07/01/bitcoin-s-20-june-crash-looks-even-deadlier-on-the-charts-here-s-why",
-      "pubDate": "Wed, 01 Jul 2026 07:42:49 +0000"
+      "title": "Goliath Ventures CEO pleads guilty in $400 million crypto Ponzi case",
+      "link": "https://www.coindesk.com/policy/2026/07/01/goliath-ventures-ceo-pleads-guilty-in-usd400-million-crypto-ponzi-case",
+      "pubDate": "Wed, 01 Jul 2026 15:06:22 +0000"
     },
     {
-      "title": "Live markets: U.S. spot bitcoin ETFs had their worst month ever in June, shedding $4.5 billion",
-      "link": "https://www.coindesk.com/tech/2026/07/01/live-markets-u-s-spot-bitcoin-etfs-had-their-worst-month-ever-in-june-shedding-usd4-5-billion",
-      "pubDate": "Wed, 01 Jul 2026 07:05:11 +0000"
+      "title": "Bitcoin climbs toward $60,000 after Fed Chair Warsh said inflation risks has come down",
+      "link": "https://www.coindesk.com/markets/2026/07/01/bitcoin-retakes-usd60-000-level-after-fed-chair-warsh-said-inflation-risks-has-come-down",
+      "pubDate": "Wed, 01 Jul 2026 14:36:00 +0000"
     },
     {
-      "title": "Anthropic restores AI models Fable, Mythos after the U.S. lifts export controls",
-      "link": "https://www.coindesk.com/tech/2026/07/01/anthropic-restores-ai-models-fable-mythos-after-the-u-s-lifts-export-controls",
-      "pubDate": "Wed, 01 Jul 2026 06:54:13 +0000"
+      "title": "EthLabs launches as Ethereum undergoes its biggest leadership transition in years",
+      "link": "https://www.coindesk.com/tech/2026/07/01/ethlabs-launches-as-ethereum-undergoes-its-biggest-leadership-transition-in-years",
+      "pubDate": "Wed, 01 Jul 2026 14:09:56 +0000"
     },
     {
-      "title": "Why Poland is the only EU country where crypto firms can't get a MiCA license",
-      "link": "https://www.coindesk.com/policy/2026/07/01/why-poland-is-the-only-eu-country-where-crypto-firms-can-t-get-a-mica-license",
-      "pubDate": "Wed, 01 Jul 2026 06:30:00 +0000"
+      "title": "Europe's MiCA rollout sparks debate over who wins under new crypto rules",
+      "link": "https://www.coindesk.com/policy/2026/07/01/europe-s-mica-rollout-sparks-debate-over-who-wins-under-new-crypto-rules",
+      "pubDate": "Wed, 01 Jul 2026 14:00:24 +0000"
     },
     {
-      "title": "XRP holds above $1 after leverage flush as network activity improves",
-      "link": "https://www.coindesk.com/markets/2026/07/01/xrp-holds-above-usd1-after-leverage-flush-as-network-activity-improves",
-      "pubDate": "Wed, 01 Jul 2026 05:30:16 +0000"
+      "title": "Europe is closing the door on offshore crypto, but it’s leaving the riskiest window open",
+      "link": "https://www.coindesk.com/opinion/2026/07/01/europe-is-closing-the-door-on-offshore-crypto-but-it-s-leaving-the-riskiest-window-open",
+      "pubDate": "Wed, 01 Jul 2026 14:00:00 +0000"
     },
     {
-      "title": "Taiwan’s sweeping crypto law raises the bar with licensing, reserve mandates, and tough penalties",
-      "link": "https://www.coindesk.com/policy/2026/07/01/taiwan-s-sweeping-crypto-law-raises-the-bar-with-licensing-reserve-mandates-and-tough-penalties",
-      "pubDate": "Wed, 01 Jul 2026 05:04:14 +0000"
+      "title": "French banking giant Crédit Agricole rolls out euro stablecoin, EURXT",
+      "link": "https://www.coindesk.com/business/2026/07/01/french-banking-giant-credit-agricole-rolls-out-euro-stablecoin-eurxt",
+      "pubDate": "Wed, 01 Jul 2026 13:50:24 +0000"
     },
     {
-      "title": "U.S. senators seek to block foreign adversaries from AI technology in new bill",
-      "link": "https://www.coindesk.com/policy/2026/06/30/u-s-senators-seek-to-block-foreign-adversaries-from-ai-technology-in-new-bill",
-      "pubDate": "Tue, 30 Jun 2026 23:02:46 +0000"
+      "title": "Morpho poised to scale as DeFi infrastructure play, Standard Chartered says",
+      "link": "https://www.coindesk.com/markets/2026/07/01/morpho-poised-to-scale-as-defi-infrastructure-play-standard-chartered-says",
+      "pubDate": "Wed, 01 Jul 2026 13:46:40 +0000"
     },
     {
-      "title": "Trump pocketed more than $1 billion from crypto ties as industry headed toward slump",
-      "link": "https://www.coindesk.com/policy/2026/06/30/trump-pocketed-more-than-usd1-billion-from-crypto-ties-as-industry-headed-toward-slump",
-      "pubDate": "Tue, 30 Jun 2026 22:28:15 +0000"
+      "title": "Ethereum gets a new nonprofit focused on institutional adoption",
+      "link": "https://www.coindesk.com/tech/2026/07/01/ethereum-gets-a-new-nonprofit-focused-on-institutional-adoption",
+      "pubDate": "Wed, 01 Jul 2026 13:41:44 +0000"
     },
     {
-      "title": "Phantom doubles down on perpetual futures with hire of Hyperliquid market builders",
-      "link": "https://www.coindesk.com/business/2026/06/30/phantom-doubles-down-on-perpetual-futures-with-hire-of-hyperliquid-market-builders",
-      "pubDate": "Tue, 30 Jun 2026 21:00:19 +0000"
+      "title": "Citi slashes 12-month bitcoin, ether targets as ETF flows dry up",
+      "link": "https://www.coindesk.com/markets/2026/07/01/citi-slashes-12-month-bitcoin-ether-targets-as-etf-flows-dry-up",
+      "pubDate": "Wed, 01 Jul 2026 13:39:19 +0000"
     },
     {
-      "title": "Companies spending the most on AI are growing jobs, Ramp study finds",
-      "link": "https://www.coindesk.com/business/2026/06/30/companies-spending-the-most-on-ai-are-growing-jobs-ramp-study-finds",
-      "pubDate": "Tue, 30 Jun 2026 20:21:49 +0000"
+      "title": "Tokenized Google stock inflated 7,700% in rare DeFi lending exploit",
+      "link": "https://www.coindesk.com/tech/2026/07/01/tokenized-google-stock-inflated-7-700-in-rare-defi-lending-exploit",
+      "pubDate": "Wed, 01 Jul 2026 13:32:20 +0000"
     },
     {
-      "title": "Why OpenUSD's 'real threat' that tanked Circle stock still faces a steep uphill battle for adoption",
-      "link": "https://www.coindesk.com/business/2026/06/30/why-the-openusd-s-real-threat-that-tanked-circle-stock-still-faces-a-steep-uphill-battle-for-adoption",
-      "pubDate": "Tue, 30 Jun 2026 18:39:06 +0000"
+      "title": "What's next for Bitcoin and stocks? Analysts see a volatile second half",
+      "link": "https://www.coindesk.com/markets/2026/06/30/what-s-next-for-bitcoin-and-stocks-analysts-see-a-volatile-second-half",
+      "pubDate": "Wed, 01 Jul 2026 13:00:00 +0000"
     },
     {
-      "title": "SEC giving novel ETFs a rethink as it opens comment period on overhauling U.S. rules",
-      "link": "https://www.coindesk.com/policy/2026/06/30/sec-giving-novel-etfs-a-rethink-as-it-opens-comment-period-on-overhauling-u-s-rules",
-      "pubDate": "Tue, 30 Jun 2026 17:51:57 +0000"
+      "title": "Mysterious Solana project World unveiled as fully onchain prediction market",
+      "link": "https://www.coindesk.com/web3/2026/07/01/mysterious-solana-project-world-unveiled-as-fully-onchain-prediction-market",
+      "pubDate": "Wed, 01 Jul 2026 13:00:00 +0000"
     }
   ]
 }
