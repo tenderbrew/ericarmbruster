@@ -1,13 +1,13 @@
 {
-  "fetchedAt": "2026-07-01T20:09:06.576Z",
+  "fetchedAt": "2026-07-01T22:38:26.025Z",
   "price": {
-    "usd": 59965,
-    "time": 1782936013
+    "usd": 60431,
+    "time": 1782945311
   },
   "moves": {
-    "d1": 2.4154298028033816,
-    "d7": -1.549845186274168,
-    "d30": -15.968712557297515
+    "d1": 3.211320577223553,
+    "d7": -0.7847693563200919,
+    "d30": -15.315688627533497
   },
   "history90d": [
     {
@@ -372,60 +372,65 @@
     },
     {
       "date": "2026-07-01",
-      "close": 59932.17515632593
+      "close": 60436.048577887785
     }
   ],
   "blocks": [
     {
-      "height": 956259,
-      "id": "000000000000000000019a050acec1f48a7624ca5a7cdb6f41eb6d6cce35d71a",
-      "timestamp": 1782936378,
-      "txCount": 4165
+      "height": 956274,
+      "id": "0000000000000000000103174737290de2b8744f1ae5af71f2c6c2cf3b424ede",
+      "timestamp": 1782945076,
+      "txCount": 3800
     },
     {
-      "height": 956258,
-      "id": "00000000000000000001d471dcd8d38e7af855256b48d755af943cf6e426b0d0",
-      "timestamp": 1782935735,
-      "txCount": 4449
+      "height": 956273,
+      "id": "0000000000000000000116005f8af25c88c1a92ba824b1f4e373a906c0b50d10",
+      "timestamp": 1782944788,
+      "txCount": 3834
     },
     {
-      "height": 956257,
-      "id": "00000000000000000000e54ffc20588dd2b83421f062d4e45fa64555a7b5e2d1",
-      "timestamp": 1782935347,
-      "txCount": 4029
+      "height": 956272,
+      "id": "0000000000000000000114239a0de8620abc1c0c9d2af582030cae79eba87ef4",
+      "timestamp": 1782943876,
+      "txCount": 5638
     },
     {
-      "height": 956256,
-      "id": "000000000000000000011b7592c9447dbf9414db75ee71061c686e5d9aaf96b3",
-      "timestamp": 1782934710,
-      "txCount": 3651
+      "height": 956271,
+      "id": "000000000000000000004b5f7f0c60fda64851786debf4a57fdd90994b40bdad",
+      "timestamp": 1782943826,
+      "txCount": 4192
     },
     {
-      "height": 956255,
-      "id": "00000000000000000001e52ecf3929a2630e130bc1e9503c83ec99a3c8253026",
-      "timestamp": 1782932362,
-      "txCount": 3738
+      "height": 956270,
+      "id": "00000000000000000001b9f12e6ec7de967fe390b6008dd647827a6d6376ff1f",
+      "timestamp": 1782943654,
+      "txCount": 3894
     },
     {
-      "height": 956254,
-      "id": "000000000000000000006ac7b204d0b959b65d5b43d31f2764773ff69dfa44f8",
-      "timestamp": 1782932104,
-      "txCount": 3170
+      "height": 956269,
+      "id": "0000000000000000000048db10f7c6b712e564cdbf1e002ae9f40656cb1323d5",
+      "timestamp": 1782942670,
+      "txCount": 3863
     },
     {
-      "height": 956253,
-      "id": "00000000000000000000381a17821a13a833093704d379c548afa9eddf1c842e",
-      "timestamp": 1782931819,
-      "txCount": 3678
+      "height": 956268,
+      "id": "000000000000000000006eb8c02d25cb3e1f501e34d5fc232bc60df110ca9c1c",
+      "timestamp": 1782941930,
+      "txCount": 4090
     },
     {
-      "height": 956252,
-      "id": "00000000000000000001204919a23a40a51a9a1b2bd706c596836a9281e74e65",
-      "timestamp": 1782930896,
-      "txCount": 4210
+      "height": 956267,
+      "id": "0000000000000000000100408ef5a7d3d71b1f0a6e07468e8b78e820d4c75b25",
+      "timestamp": 1782941761,
+      "txCount": 4671
     }
   ],
   "news": [
+    {
+      "title": "Ethereum Institutional launch draws support from across the Ethereum ecosystem",
+      "link": "https://www.coindesk.com/tech/2026/07/01/ethereum-institutional-launch-draws-support-from-across-the-ethereum-ecosystem",
+      "pubDate": "Wed, 01 Jul 2026 21:13:24 +0000"
+    },
     {
       "title": "Robinhood rolls out public blockchain as it expands deeper into crypto",
       "link": "https://www.coindesk.com/business/2026/07/01/robinhood-rolls-out-public-blockchain-as-it-expands-deeper-into-crypto",
@@ -480,11 +485,6 @@
       "title": "Morpho poised to scale as DeFi infrastructure play, Standard Chartered says",
       "link": "https://www.coindesk.com/markets/2026/07/01/morpho-poised-to-scale-as-defi-infrastructure-play-standard-chartered-says",
       "pubDate": "Wed, 01 Jul 2026 13:46:40 +0000"
-    },
-    {
-      "title": "Ethereum gets a new nonprofit focused on institutional adoption",
-      "link": "https://www.coindesk.com/tech/2026/07/01/ethereum-gets-a-new-nonprofit-focused-on-institutional-adoption",
-      "pubDate": "Wed, 01 Jul 2026 13:41:44 +0000"
     }
   ]
 }
