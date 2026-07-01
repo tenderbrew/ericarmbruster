@@ -1,13 +1,13 @@
 {
-  "fetchedAt": "2026-07-01T04:51:32.541Z",
+  "fetchedAt": "2026-07-01T10:09:50.167Z",
   "price": {
-    "usd": 59270,
-    "time": 1782881108
+    "usd": 58826,
+    "time": 1782900313
   },
   "moves": {
-    "d1": 1.2284253216402252,
-    "d7": -2.690891756699243,
-    "d30": -16.942643096323252
+    "d1": 0.4701087897892364,
+    "d7": -3.419848126870073,
+    "d30": -17.564837570175662
   },
   "history90d": [
     {
@@ -372,60 +372,90 @@
     },
     {
       "date": "2026-07-01",
-      "close": 59297.04320493063
+      "close": 58798.4985013965
     }
   ],
   "blocks": [
     {
-      "height": 956168,
-      "id": "00000000000000000000f5cb3a728cab2b3e19e05138c5c26073ec41e259c990",
-      "timestamp": 1782881275,
-      "txCount": 6468
+      "height": 956194,
+      "id": "0000000000000000000140af8e18afaf40edea7908045d6c39efca6e1ca4a174",
+      "timestamp": 1782899345,
+      "txCount": 3715
     },
     {
-      "height": 956167,
-      "id": "000000000000000000000fba009777d6bb015c58974324caa9e7cbd04a96094c",
-      "timestamp": 1782881265,
-      "txCount": 3407
+      "height": 956193,
+      "id": "00000000000000000000c39dfd85d566bf3b5e5acb4cfedfe9ad22ad6a0b4d7e",
+      "timestamp": 1782898384,
+      "txCount": 4057
     },
     {
-      "height": 956166,
-      "id": "00000000000000000001cd5fdbd8a298d35ffaf4eb1f2d0bf0e7529de1baae63",
-      "timestamp": 1782879943,
-      "txCount": 4730
+      "height": 956192,
+      "id": "00000000000000000001b5fd6e6f4907c9738e548a195d8a6c855b140a5595e8",
+      "timestamp": 1782897504,
+      "txCount": 3647
     },
     {
-      "height": 956165,
-      "id": "000000000000000000012175f62d011885bb49741b1117d1af3ef30bad7988fd",
-      "timestamp": 1782879418,
-      "txCount": 6609
+      "height": 956191,
+      "id": "000000000000000000011ef65830971693b469d3665b691945f906ff2571471d",
+      "timestamp": 1782897119,
+      "txCount": 4216
     },
     {
-      "height": 956164,
-      "id": "000000000000000000013a3d6be7713f03ef564eb5564781b71a7db26eaea1d0",
-      "timestamp": 1782879230,
-      "txCount": 5869
+      "height": 956190,
+      "id": "000000000000000000003ccfc9a1ad665ca44ac87687a5f29db95a76223ccbb2",
+      "timestamp": 1782895015,
+      "txCount": 4183
     },
     {
-      "height": 956163,
-      "id": "00000000000000000000beaf9fd977f6326dca5be216378521a8139f15bfae75",
-      "timestamp": 1782878952,
-      "txCount": 2182
+      "height": 956189,
+      "id": "00000000000000000000e6675eb6ba515a5f1ab90dbb929becdf1db80adc4d52",
+      "timestamp": 1782894855,
+      "txCount": 4051
     },
     {
-      "height": 956162,
-      "id": "000000000000000000016221b6a91fd32a52306aae6132ff050bb9bab8ceb8d8",
-      "timestamp": 1782878110,
-      "txCount": 4656
+      "height": 956188,
+      "id": "00000000000000000000efc520fb45b706171e7064165118338d2a8ef57b76f7",
+      "timestamp": 1782893433,
+      "txCount": 4252
     },
     {
-      "height": 956161,
-      "id": "0000000000000000000072488a80ceacc4caeb5aec9835edcf86a3655af42169",
-      "timestamp": 1782877149,
-      "txCount": 5398
+      "height": 956187,
+      "id": "00000000000000000001174a41ad86647ef3748605931bfb44bcd92ef48ca03c",
+      "timestamp": 1782892585,
+      "txCount": 3126
     }
   ],
   "news": [
+    {
+      "title": "Bitcoin’s 20% June crash looks even deadlier on the charts. Here’s why",
+      "link": "https://www.coindesk.com/markets/2026/07/01/bitcoin-s-20-june-crash-looks-even-deadlier-on-the-charts-here-s-why",
+      "pubDate": "Wed, 01 Jul 2026 07:42:49 +0000"
+    },
+    {
+      "title": "Live markets: U.S. spot bitcoin ETFs had their worst month ever in June, shedding $4.5 billion",
+      "link": "https://www.coindesk.com/tech/2026/07/01/live-markets-u-s-spot-bitcoin-etfs-had-their-worst-month-ever-in-june-shedding-usd4-5-billion",
+      "pubDate": "Wed, 01 Jul 2026 07:05:11 +0000"
+    },
+    {
+      "title": "Anthropic restores AI models Fable, Mythos after the U.S. lifts export controls",
+      "link": "https://www.coindesk.com/tech/2026/07/01/anthropic-restores-ai-models-fable-mythos-after-the-u-s-lifts-export-controls",
+      "pubDate": "Wed, 01 Jul 2026 06:54:13 +0000"
+    },
+    {
+      "title": "Why Poland is the only EU country where crypto firms can't get a MiCA license",
+      "link": "https://www.coindesk.com/policy/2026/07/01/why-poland-is-the-only-eu-country-where-crypto-firms-can-t-get-a-mica-license",
+      "pubDate": "Wed, 01 Jul 2026 06:30:00 +0000"
+    },
+    {
+      "title": "XRP holds above $1 after leverage flush as network activity improves",
+      "link": "https://www.coindesk.com/markets/2026/07/01/xrp-holds-above-usd1-after-leverage-flush-as-network-activity-improves",
+      "pubDate": "Wed, 01 Jul 2026 05:30:16 +0000"
+    },
+    {
+      "title": "Taiwan’s sweeping crypto law raises the bar with licensing, reserve mandates, and tough penalties",
+      "link": "https://www.coindesk.com/policy/2026/07/01/taiwan-s-sweeping-crypto-law-raises-the-bar-with-licensing-reserve-mandates-and-tough-penalties",
+      "pubDate": "Wed, 01 Jul 2026 05:04:14 +0000"
+    },
     {
       "title": "U.S. senators seek to block foreign adversaries from AI technology in new bill",
       "link": "https://www.coindesk.com/policy/2026/06/30/u-s-senators-seek-to-block-foreign-adversaries-from-ai-technology-in-new-bill",
@@ -455,36 +485,6 @@
       "title": "SEC giving novel ETFs a rethink as it opens comment period on overhauling U.S. rules",
       "link": "https://www.coindesk.com/policy/2026/06/30/sec-giving-novel-etfs-a-rethink-as-it-opens-comment-period-on-overhauling-u-s-rules",
       "pubDate": "Tue, 30 Jun 2026 17:51:57 +0000"
-    },
-    {
-      "title": "Chinese exile once linked to Trump strategist gets 30-year sentence in $1 billion fraud",
-      "link": "https://www.coindesk.com/policy/2026/06/30/chinese-exile-once-linked-to-trump-strategist-gets-30-year-sentence-in-usd1-billion-fraud",
-      "pubDate": "Tue, 30 Jun 2026 16:31:46 +0000"
-    },
-    {
-      "title": "Jefferies warns of crypto market volatility as Clarity Act faces Senate test",
-      "link": "https://www.coindesk.com/policy/2026/06/30/jefferies-warns-of-crypto-market-volatility-as-clarity-act-faces-senate-test",
-      "pubDate": "Tue, 30 Jun 2026 14:41:59 +0000"
-    },
-    {
-      "title": "Circle craters 17% as Stripe, Coinbase and BlackRock back rival stablecoin network",
-      "link": "https://www.coindesk.com/business/2026/06/30/circle-slides-8-as-stripe-coinbase-and-blackrock-back-rival-stablecoin-network",
-      "pubDate": "Tue, 30 Jun 2026 14:32:33 +0000"
-    },
-    {
-      "title": "MetaMask launches Money Account with stablecoin yield and spending in one wallet",
-      "link": "https://www.coindesk.com/tech/2026/06/30/metamask-launches-money-account-with-stablecoin-yield-and-spending-in-one-wallet",
-      "pubDate": "Tue, 30 Jun 2026 14:00:00 +0000"
-    },
-    {
-      "title": "Tokenized securities need competition, not gatekeepers",
-      "link": "https://www.coindesk.com/opinion/2026/06/29/tokenized-securities-need-competition-not-gatekeepers",
-      "pubDate": "Tue, 30 Jun 2026 13:25:52 +0000"
-    },
-    {
-      "title": "Nasdaq expands distribution of its market data into blockchain infrastructure",
-      "link": "https://www.coindesk.com/markets/2026/06/30/nasdaq-expands-distribution-of-its-market-data-into-blockchain-infrastructure",
-      "pubDate": "Tue, 30 Jun 2026 13:00:00 +0000"
     }
   ]
 }
