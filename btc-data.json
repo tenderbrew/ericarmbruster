@@ -1,13 +1,13 @@
 {
-  "fetchedAt": "2026-07-01T17:22:23.566Z",
+  "fetchedAt": "2026-07-01T20:09:06.576Z",
   "price": {
-    "usd": 59836,
-    "time": 1782926116
+    "usd": 59965,
+    "time": 1782936013
   },
   "moves": {
-    "d1": 2.195108107738575,
-    "d7": -1.7616365640940712,
-    "d30": -16.149485276051934
+    "d1": 2.4154298028033816,
+    "d7": -1.549845186274168,
+    "d30": -15.968712557297515
   },
   "history90d": [
     {
@@ -372,60 +372,70 @@
     },
     {
       "date": "2026-07-01",
-      "close": 60015.954637162446
+      "close": 59932.17515632593
     }
   ],
   "blocks": [
     {
-      "height": 956244,
-      "id": "00000000000000000001383ce398af09297ecda5619d45b777dadb76dce594b8",
-      "timestamp": 1782926368,
-      "txCount": 4491
+      "height": 956259,
+      "id": "000000000000000000019a050acec1f48a7624ca5a7cdb6f41eb6d6cce35d71a",
+      "timestamp": 1782936378,
+      "txCount": 4165
     },
     {
-      "height": 956243,
-      "id": "0000000000000000000158a5d8705f55fa9df80bffdf566fe50772d90826b102",
-      "timestamp": 1782925889,
-      "txCount": 4124
+      "height": 956258,
+      "id": "00000000000000000001d471dcd8d38e7af855256b48d755af943cf6e426b0d0",
+      "timestamp": 1782935735,
+      "txCount": 4449
     },
     {
-      "height": 956242,
-      "id": "0000000000000000000032886c6c31af6a60cf090ed29fa0966464ed89f86c7a",
-      "timestamp": 1782925782,
-      "txCount": 3931
+      "height": 956257,
+      "id": "00000000000000000000e54ffc20588dd2b83421f062d4e45fa64555a7b5e2d1",
+      "timestamp": 1782935347,
+      "txCount": 4029
     },
     {
-      "height": 956241,
-      "id": "000000000000000000005dd79d3c01270211087ee43880226968d15f626ba7ae",
-      "timestamp": 1782925480,
-      "txCount": 3921
+      "height": 956256,
+      "id": "000000000000000000011b7592c9447dbf9414db75ee71061c686e5d9aaf96b3",
+      "timestamp": 1782934710,
+      "txCount": 3651
     },
     {
-      "height": 956240,
-      "id": "0000000000000000000188d701061339cc7d6e5c62273785fbcd4bc2872fe3db",
-      "timestamp": 1782924890,
-      "txCount": 3895
+      "height": 956255,
+      "id": "00000000000000000001e52ecf3929a2630e130bc1e9503c83ec99a3c8253026",
+      "timestamp": 1782932362,
+      "txCount": 3738
     },
     {
-      "height": 956239,
-      "id": "000000000000000000004203dc537a1e267104d973368c6a040b4a341e73a034",
-      "timestamp": 1782924782,
-      "txCount": 3753
+      "height": 956254,
+      "id": "000000000000000000006ac7b204d0b959b65d5b43d31f2764773ff69dfa44f8",
+      "timestamp": 1782932104,
+      "txCount": 3170
     },
     {
-      "height": 956238,
-      "id": "000000000000000000014e2ecfa3098e9bc74a8c1cf54705ce8f204f3a995590",
-      "timestamp": 1782924071,
-      "txCount": 3734
+      "height": 956253,
+      "id": "00000000000000000000381a17821a13a833093704d379c548afa9eddf1c842e",
+      "timestamp": 1782931819,
+      "txCount": 3678
     },
     {
-      "height": 956237,
-      "id": "000000000000000000020b7dce6a51dbacdb51feebe9c672d773363bac752d77",
-      "timestamp": 1782923367,
-      "txCount": 3380
+      "height": 956252,
+      "id": "00000000000000000001204919a23a40a51a9a1b2bd706c596836a9281e74e65",
+      "timestamp": 1782930896,
+      "txCount": 4210
     }
   ],
   "news": [
+    {
+      "title": "Robinhood rolls out public blockchain as it expands deeper into crypto",
+      "link": "https://www.coindesk.com/business/2026/07/01/robinhood-rolls-out-public-blockchain-as-it-expands-deeper-into-crypto",
+      "pubDate": "Wed, 01 Jul 2026 18:25:00 +0000"
+    },
+    {
+      "title": "Ethereum Foundation lays out use cases for governments, institutions in new policy guide",
+      "link": "https://www.coindesk.com/policy/2026/07/01/ethereum-foundation-lays-out-use-cases-for-governments-institutions-in-new-policy-guide",
+      "pubDate": "Wed, 01 Jul 2026 17:52:33 +0000"
+    },
     {
       "title": "Jefferies warns against buying the dip in Circle as Open USD raises new competition fears",
       "link": "https://www.coindesk.com/markets/2026/07/01/jefferies-warns-against-buying-the-dip-in-circle-as-open-usd-raises-new-competition-fears",
@@ -475,16 +485,6 @@
       "title": "Ethereum gets a new nonprofit focused on institutional adoption",
       "link": "https://www.coindesk.com/tech/2026/07/01/ethereum-gets-a-new-nonprofit-focused-on-institutional-adoption",
       "pubDate": "Wed, 01 Jul 2026 13:41:44 +0000"
-    },
-    {
-      "title": "Citi slashes 12-month bitcoin, ether targets as ETF flows dry up",
-      "link": "https://www.coindesk.com/markets/2026/07/01/citi-slashes-12-month-bitcoin-ether-targets-as-etf-flows-dry-up",
-      "pubDate": "Wed, 01 Jul 2026 13:39:19 +0000"
-    },
-    {
-      "title": "Tokenized Google stock inflated 7,700% in rare DeFi lending exploit",
-      "link": "https://www.coindesk.com/tech/2026/07/01/tokenized-google-stock-inflated-7-700-in-rare-defi-lending-exploit",
-      "pubDate": "Wed, 01 Jul 2026 13:32:20 +0000"
     }
   ]
 }
