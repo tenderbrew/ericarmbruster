@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-07-01T09:56:12.580Z",
+  "fetchedAt": "2026-07-01T14:44:39.350Z",
   "indicators": {
     "UNRATE": {
       "latest": {
@@ -163,12 +163,12 @@
     },
     "BAMLH0A0HYM2": {
       "latest": {
-        "date": "2026-06-29",
-        "value": 2.8
+        "date": "2026-06-30",
+        "value": 2.75
       },
       "previous": {
-        "date": "2026-06-26",
-        "value": 2.83
+        "date": "2026-06-29",
+        "value": 2.8
       }
     },
     "MORTGAGE30US": {
@@ -263,12 +263,12 @@
     },
     "VIXCLS": {
       "latest": {
-        "date": "2026-06-29",
-        "value": 17.65
+        "date": "2026-06-30",
+        "value": 16.45
       },
       "previous": {
-        "date": "2026-06-26",
-        "value": 18.41
+        "date": "2026-06-29",
+        "value": 17.65
       }
     },
     "BOPGSTB": {
@@ -300,6 +300,18 @@
     }
   },
   "news": [
+    {
+      "title": "Get Your Free July Rothbard Giveaway The Origins of the Federal Reserve!",
+      "link": "https://mises.org/mises-wire/get-your-free-july-rothbard-giveaway-origins-federal-reserve",
+      "pubDate": "Wed, 01 Jul 2026 06:00:00 CDT",
+      "kind": "Mises Wire"
+    },
+    {
+      "title": "The Economic Reasons Why Oil Consumers Need to be “Gouged”",
+      "link": "https://mises.org/mises-wire/economic-reasons-why-oil-consumers-need-be-gouged",
+      "pubDate": "Wed, 01 Jul 2026 05:00:00 CDT",
+      "kind": "Mises Wire"
+    },
     {
       "title": "A Libertarian Critique of Birthright Citizenship",
       "link": "https://mises.org/podcasts/audio-mises-wire/libertarian-critique-birthright-citizenship",
@@ -347,18 +359,6 @@
       "link": "https://mises.org/podcasts/audio-mises-wire/calhouns-answer-abolition-petitions",
       "pubDate": "Tue, 30 Jun 2026 09:26:01 CDT",
       "kind": "Podcast"
-    },
-    {
-      "title": "From 2008 to the Coming Reset: Larry Lepard's Case for Sound Money",
-      "link": "https://mises.org/podcasts/human-action-podcast/2008-coming-reset-larry-lepards-case-sound-money",
-      "pubDate": "Tue, 30 Jun 2026 09:20:00 CDT",
-      "kind": "Podcast"
-    },
-    {
-      "title": "Calhoun’s Answer to the Abolition Petitions",
-      "link": "https://mises.org/mises-wire/calhouns-answer-abolition-petitions",
-      "pubDate": "Tue, 30 Jun 2026 05:00:00 CDT",
-      "kind": "Mises Wire"
     }
   ]
 }
