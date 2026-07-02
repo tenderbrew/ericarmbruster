@@ -1,13 +1,13 @@
 {
-  "fetchedAt": "2026-07-02T09:30:25.471Z",
+  "fetchedAt": "2026-07-02T14:26:52.818Z",
   "price": {
-    "usd": 60492,
-    "time": 1782984369
+    "usd": 61779,
+    "time": 1783002061
   },
   "moves": {
-    "d1": 0.8537848272710313,
-    "d7": 1.3052215155163749,
-    "d30": -9.239113216471818
+    "d1": 2.9995036177342005,
+    "d7": 3.460544865553894,
+    "d30": -7.308126287780404
   },
   "history90d": [
     {
@@ -372,60 +372,110 @@
     },
     {
       "date": "2026-07-02",
-      "close": 60527.38819931654
+      "close": 61636.36466283053
     }
   ],
   "blocks": [
     {
-      "height": 956343,
-      "id": "00000000000000000001f49e2c92ce01777518349ccddb81578a722c30a52dcc",
-      "timestamp": 1782984061,
-      "txCount": 6671
+      "height": 956365,
+      "id": "0000000000000000000025477ed989cf55e405c25bff2b13f625862cfcdeaf9f",
+      "timestamp": 1783000698,
+      "txCount": 4036
     },
     {
-      "height": 956342,
-      "id": "00000000000000000000aa3bfd5a8dc9e42c02c1437d5fdc3d316e90a242044f",
-      "timestamp": 1782983777,
-      "txCount": 5488
+      "height": 956364,
+      "id": "0000000000000000000138d4ceb64c4e084a83ab7edb2839dbfa305c85a2035a",
+      "timestamp": 1782999556,
+      "txCount": 4417
     },
     {
-      "height": 956341,
-      "id": "00000000000000000001871629f1a2ef67da2b3d0a8e95b78ec6bed649db7427",
-      "timestamp": 1782983521,
-      "txCount": 5027
+      "height": 956363,
+      "id": "000000000000000000000e43ee30039f30400463a09cde690bf80256e9546e36",
+      "timestamp": 1782997974,
+      "txCount": 5199
     },
     {
-      "height": 956340,
-      "id": "00000000000000000001376b2387ebd4c63090b3027e40b1f2ceac3f2d003ad9",
-      "timestamp": 1782983082,
-      "txCount": 4048
+      "height": 956362,
+      "id": "000000000000000000001c923bfab00b916a01f27113c3125a92a624d3154d56",
+      "timestamp": 1782997528,
+      "txCount": 5242
     },
     {
-      "height": 956339,
-      "id": "00000000000000000001dc56fec66a5163da367655aa742fd152e082fe9dd1d9",
-      "timestamp": 1782982557,
-      "txCount": 5968
+      "height": 956361,
+      "id": "000000000000000000006714b59438e3d0b81fb12009e0ce48d8b95b369cdff3",
+      "timestamp": 1782997155,
+      "txCount": 5090
     },
     {
-      "height": 956338,
-      "id": "00000000000000000000097c84e192e3f7e850340d684f1c06be6e1ef1b822fe",
-      "timestamp": 1782982167,
-      "txCount": 6007
+      "height": 956360,
+      "id": "000000000000000000015e2b8ccb5f99bd9fa086704ce5f027a5b4c7e8a4a83b",
+      "timestamp": 1782996887,
+      "txCount": 3122
     },
     {
-      "height": 956337,
-      "id": "0000000000000000000157a11e2f0d46474721b0753d076500a91695a59fea25",
-      "timestamp": 1782981823,
-      "txCount": 5687
+      "height": 956359,
+      "id": "00000000000000000000e2e35c6de0472a32490b11959893a9f34782f29d4b5b",
+      "timestamp": 1782996508,
+      "txCount": 3015
     },
     {
-      "height": 956336,
-      "id": "000000000000000000015bdb19b0b3ee0da5328aef896312feeef2119e034755",
-      "timestamp": 1782981481,
-      "txCount": 5818
+      "height": 956358,
+      "id": "00000000000000000000582ebd2b7b0e5d7f9619354149dcc91582e3af7733a7",
+      "timestamp": 1782995661,
+      "txCount": 4725
     }
   ],
   "news": [
+    {
+      "title": "Ondo Finance debuts SEC-aligned tokenized stock model with BlackRock ETF, Micron shares",
+      "link": "https://www.coindesk.com/business/2026/07/01/ondo-finance-debuts-sec-aligned-tokenized-stock-model-with-blackrock-etf-micron-shares",
+      "pubDate": "Thu, 02 Jul 2026 14:16:02 +0000"
+    },
+    {
+      "title": "JPMorgan says Strategy's bitcoin sales policy adds 'two-way risk' to crypto markets",
+      "link": "https://www.coindesk.com/markets/2026/07/02/jpmorgan-says-strategy-s-bitcoin-sales-policy-adds-two-way-risk-to-crypto-markets",
+      "pubDate": "Thu, 02 Jul 2026 13:11:22 +0000"
+    },
+    {
+      "title": "U.S. payroll growth slowed sharply in June, with only 57,000 jobs added",
+      "link": "https://www.coindesk.com/markets/2026/07/02/u-s-payroll-growth-slowed-sharply-in-june-adding-only-57-000-jobs",
+      "pubDate": "Thu, 02 Jul 2026 12:37:50 +0000"
+    },
+    {
+      "title": "A struggling Nasdaq-listed company that tried to copy Saylor's Bitcoin playbook is completely dumping crypto for AI",
+      "link": "https://www.coindesk.com/markets/2026/07/02/a-struggling-nasdaq-listed-company-that-tried-to-copy-saylor-s-bitcoin-playbook-is-completely-dumping-crypto-for-ai",
+      "pubDate": "Thu, 02 Jul 2026 12:10:15 +0000"
+    },
+    {
+      "title": "Three years after MiCA became law, Europe's crypto framework is undergoing a rethink",
+      "link": "https://www.coindesk.com/policy/2026/07/02/three-years-after-mica-became-law-europe-s-crypto-framework-is-undergoing-a-rethink",
+      "pubDate": "Thu, 02 Jul 2026 11:55:03 +0000"
+    },
+    {
+      "title": "Warsh's comments set the stage for U.S. jobs data to ignite bitcoin, gold rally",
+      "link": "https://www.coindesk.com/daybook-us/2026/07/02/warsh-s-comments-set-the-stage-for-u-s-jobs-data-to-ignite-bitcoin-gold-rally",
+      "pubDate": "Thu, 02 Jul 2026 11:47:06 +0000"
+    },
+    {
+      "title": "Smaller tokens lead as bitcoin, sol rally in 'first real bounce of the selloff'",
+      "link": "https://www.coindesk.com/markets/2026/07/02/smaller-tokens-lead-as-bitcoin-sol-rally-in-first-real-bounce-of-the-selloff",
+      "pubDate": "Thu, 02 Jul 2026 11:27:36 +0000"
+    },
+    {
+      "title": "Bitcoin rises 4% to above $61,000 as inflation fears soften",
+      "link": "https://www.coindesk.com/markets/2026/07/02/bitcoin-zooms-above-usd61-000-as-inflation-fears-soften",
+      "pubDate": "Thu, 02 Jul 2026 10:30:42 +0000"
+    },
+    {
+      "title": "ChatGPT developer OpenAI said to discuss offering U.S. government a 5% stake: FT",
+      "link": "https://www.coindesk.com/policy/2026/07/02/openai-reported-to-discuss-offering-u-s-government-a-5-stake",
+      "pubDate": "Thu, 02 Jul 2026 10:06:22 +0000"
+    },
+    {
+      "title": "Live markets: Bitcoin rises above $61,000 as U.S. jobs data for June disappoints",
+      "link": "https://www.coindesk.com/tech/2026/07/02/live-markets-bitcoin-holds-above-usd60-000-as-yen-jumps-on-intervention-fears",
+      "pubDate": "Thu, 02 Jul 2026 09:42:41 +0000"
+    },
     {
       "title": "Metaplanet buys another $170 million of bitcoin expanding treasury to 43,000 BTC",
       "link": "https://www.coindesk.com/markets/2026/07/02/metaplanet-buys-another-usd170-million-of-bitcoin-expanding-treasury-to-43-000-btc",
@@ -435,56 +485,6 @@
       "title": "Taiko fully restores cross-chain bridge just 10 days after a $1.7 million hack",
       "link": "https://www.coindesk.com/markets/2026/07/02/taiko-s-bridge-is-back-online-after-usd1-7-million-hack-and-its-token-is-up-a-staggering-136",
       "pubDate": "Thu, 02 Jul 2026 08:35:28 +0000"
-    },
-    {
-      "title": "Solana launches onchain governance and sets entry fee at 100,000 SOL staked",
-      "link": "https://www.coindesk.com/markets/2026/07/02/solana-adds-onchain-governance-with-usd7-7-million-sol-needed-to-open-proposals",
-      "pubDate": "Thu, 02 Jul 2026 07:15:21 +0000"
-    },
-    {
-      "title": "XRP edges higher as whale activity rises while retail traders stay cautious",
-      "link": "https://www.coindesk.com/markets/2026/07/02/xrp-edges-higher-as-whale-activity-rises-while-retail-traders-stay-cautious",
-      "pubDate": "Thu, 02 Jul 2026 06:20:31 +0000"
-    },
-    {
-      "title": "Bitcoin's long-term holders have returned to accumulation",
-      "link": "https://www.coindesk.com/markets/2026/07/02/bitcoin-long-term-holders-have-returned-to-accumulation",
-      "pubDate": "Thu, 02 Jul 2026 06:17:16 +0000"
-    },
-    {
-      "title": "FBI Director Kash Patel caught sleeping on required disclosure of six-figure MSTR investment: Report",
-      "link": "https://www.coindesk.com/policy/2026/07/02/fbi-director-kash-patel-caught-sleeping-on-required-disclosure-of-six-figure-mstr-investment",
-      "pubDate": "Thu, 02 Jul 2026 05:24:18 +0000"
-    },
-    {
-      "title": "Ether, solana, dogecoin in the green after Warsh comments push bitcoin above $60,000",
-      "link": "https://www.coindesk.com/markets/2026/07/02/ether-solana-dogecoin-in-the-green-after-warsh-comments-push-bitcoin-above-usd60-000",
-      "pubDate": "Thu, 02 Jul 2026 05:22:54 +0000"
-    },
-    {
-      "title": "Ethereum Institutional launch draws support from across the Ethereum ecosystem",
-      "link": "https://www.coindesk.com/tech/2026/07/01/ethereum-institutional-launch-draws-support-from-across-the-ethereum-ecosystem",
-      "pubDate": "Wed, 01 Jul 2026 21:13:24 +0000"
-    },
-    {
-      "title": "Robinhood rolls out public blockchain as it expands deeper into crypto",
-      "link": "https://www.coindesk.com/business/2026/07/01/robinhood-rolls-out-public-blockchain-as-it-expands-deeper-into-crypto",
-      "pubDate": "Wed, 01 Jul 2026 18:25:00 +0000"
-    },
-    {
-      "title": "Ethereum Foundation lays out use cases for governments, institutions in new policy guide",
-      "link": "https://www.coindesk.com/policy/2026/07/01/ethereum-foundation-lays-out-use-cases-for-governments-institutions-in-new-policy-guide",
-      "pubDate": "Wed, 01 Jul 2026 17:52:33 +0000"
-    },
-    {
-      "title": "Jefferies warns against buying the dip in Circle as Open USD raises new competition fears",
-      "link": "https://www.coindesk.com/markets/2026/07/01/jefferies-warns-against-buying-the-dip-in-circle-as-open-usd-raises-new-competition-fears",
-      "pubDate": "Wed, 01 Jul 2026 16:11:50 +0000"
-    },
-    {
-      "title": "Cantor says bitcoin bear market may be entering final stretch",
-      "link": "https://www.coindesk.com/markets/2026/07/01/cantor-says-bitcoin-bear-market-may-be-entering-final-stretch",
-      "pubDate": "Wed, 01 Jul 2026 15:11:46 +0000"
     }
   ]
 }
