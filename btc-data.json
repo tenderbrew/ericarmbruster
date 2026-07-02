@@ -1,13 +1,13 @@
 {
-  "fetchedAt": "2026-07-02T17:00:29.807Z",
+  "fetchedAt": "2026-07-02T19:48:15.304Z",
   "price": {
-    "usd": 61629,
-    "time": 1783011335
+    "usd": 61512,
+    "time": 1783021257
   },
   "moves": {
-    "d1": 2.7494198426219363,
-    "d7": 3.209341677903832,
-    "d30": -7.5331830393761345
+    "d1": 2.5543544980343835,
+    "d7": 3.0134031915367787,
+    "d30": -7.70872730562081
   },
   "history90d": [
     {
@@ -372,60 +372,70 @@
     },
     {
       "date": "2026-07-02",
-      "close": 61590.775734044524
+      "close": 61509.95255946429
     }
   ],
   "blocks": [
     {
-      "height": 956376,
-      "id": "0000000000000000000074b85505aada4ca8ef88094503e2ee9d8009c0131c7b",
-      "timestamp": 1783011057,
-      "txCount": 3575
+      "height": 956390,
+      "id": "000000000000000000015ce46ee49d04cc056b2cb6ff006364b86c3a2dd5a834",
+      "timestamp": 1783021584,
+      "txCount": 3947
     },
     {
-      "height": 956375,
-      "id": "00000000000000000001afdf382ec8e7e3070fefa6c3f35d3a872375ccc1cce3",
-      "timestamp": 1783011098,
-      "txCount": 3867
+      "height": 956389,
+      "id": "00000000000000000000d1626b8e1db1d0e6956c0ee81909311244a77e0805dd",
+      "timestamp": 1783019225,
+      "txCount": 2266
     },
     {
-      "height": 956374,
-      "id": "00000000000000000000fed073c3d35732456ae8808db59bc5a251f3ff0bde2b",
-      "timestamp": 1783010546,
-      "txCount": 3979
+      "height": 956388,
+      "id": "000000000000000000010818d161175c0f18f93a10d8c6175e46acde2c04195a",
+      "timestamp": 1783019072,
+      "txCount": 2910
     },
     {
-      "height": 956373,
-      "id": "000000000000000000001934d723bb560643ea37bbc9452a97edc827a8202003",
-      "timestamp": 1783010323,
-      "txCount": 3853
+      "height": 956387,
+      "id": "000000000000000000017d820edb82514a38b0167410d2ff69657ad10debe4e4",
+      "timestamp": 1783018702,
+      "txCount": 2789
     },
     {
-      "height": 956372,
-      "id": "000000000000000000017aa9023635c1ce26e75d5d0704c95514e94f0b8d2cf8",
-      "timestamp": 1783009490,
-      "txCount": 3721
+      "height": 956386,
+      "id": "0000000000000000000033079d3c9c7ebe2e76ddba88ee4e1f239852cfff3832",
+      "timestamp": 1783018486,
+      "txCount": 3652
     },
     {
-      "height": 956371,
-      "id": "00000000000000000001137c2f9ce0a66b4e3b9667b0bb58985445d37c02465b",
-      "timestamp": 1783008823,
-      "txCount": 3884
+      "height": 956385,
+      "id": "0000000000000000000037f73ea928f0368338a4e5ce3989e1a48d53dc43e125",
+      "timestamp": 1783017342,
+      "txCount": 4183
     },
     {
-      "height": 956370,
-      "id": "00000000000000000001abfec22c84db2984cc8076f54317224caf0543f3f569",
-      "timestamp": 1783008033,
-      "txCount": 3979
+      "height": 956384,
+      "id": "000000000000000000003501e8b85ffdff85bd9f4615ee63d83daedd4b72f17f",
+      "timestamp": 1783016100,
+      "txCount": 1235
     },
     {
-      "height": 956369,
-      "id": "00000000000000000001ff479f59fad262511577ca386061c3c4c7d2aa3a7506",
-      "timestamp": 1783006246,
-      "txCount": 3871
+      "height": 956383,
+      "id": "000000000000000000015252a9b9cc58620f2b21a1f203c101414af447c1c3a1",
+      "timestamp": 1783015919,
+      "txCount": 2395
     }
   ],
   "news": [
+    {
+      "title": "Securitize tokenizes $295 million of its own stock on Solana and Avalanche amid NYSE debut",
+      "link": "https://www.coindesk.com/business/2026/07/02/securitize-tokenizes-usd295-million-of-its-own-stock-on-solana-and-avalanche-amid-nyse-debut",
+      "pubDate": "Thu, 02 Jul 2026 19:00:03 +0000"
+    },
+    {
+      "title": "EToro invests in onchain derivatives platform Extended as brokers race into DeFi",
+      "link": "https://www.coindesk.com/business/2026/07/02/etoro-invests-in-onchain-derivatives-platform-extended-as-brokers-race-into-defi",
+      "pubDate": "Thu, 02 Jul 2026 17:00:00 +0000"
+    },
     {
       "title": "Bitwise says STRC selloff signals crypto cycle nearing a bottom, not Strategy’s breaking point",
       "link": "https://www.coindesk.com/markets/2026/07/02/bitwise-says-strc-selloff-signals-crypto-cycle-nearing-a-bottom-not-strategy-s-breaking-point",
@@ -475,16 +485,6 @@
       "title": "Smaller tokens lead as bitcoin, sol rally in 'first real bounce of the selloff'",
       "link": "https://www.coindesk.com/markets/2026/07/02/smaller-tokens-lead-as-bitcoin-sol-rally-in-first-real-bounce-of-the-selloff",
       "pubDate": "Thu, 02 Jul 2026 11:27:36 +0000"
-    },
-    {
-      "title": "Bitcoin rises 4% to above $61,000 as inflation fears soften",
-      "link": "https://www.coindesk.com/markets/2026/07/02/bitcoin-zooms-above-usd61-000-as-inflation-fears-soften",
-      "pubDate": "Thu, 02 Jul 2026 10:30:42 +0000"
-    },
-    {
-      "title": "ChatGPT developer OpenAI said to discuss offering U.S. government a 5% stake: FT",
-      "link": "https://www.coindesk.com/policy/2026/07/02/openai-reported-to-discuss-offering-u-s-government-a-5-stake",
-      "pubDate": "Thu, 02 Jul 2026 10:06:22 +0000"
     }
   ]
 }
