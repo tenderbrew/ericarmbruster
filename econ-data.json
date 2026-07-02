@@ -1,24 +1,24 @@
 {
-  "fetchedAt": "2026-07-02T09:18:42.764Z",
+  "fetchedAt": "2026-07-02T14:10:47.485Z",
   "indicators": {
     "UNRATE": {
       "latest": {
-        "date": "2026-05-01",
-        "value": 4.3
+        "date": "2026-06-01",
+        "value": 4.2
       },
       "previous": {
-        "date": "2026-04-01",
+        "date": "2026-05-01",
         "value": 4.3
       }
     },
     "PAYEMS": {
       "latest": {
-        "date": "2026-05-01",
-        "value": 159001
+        "date": "2026-06-01",
+        "value": 158984
       },
       "previous": {
-        "date": "2026-04-01",
-        "value": 158829
+        "date": "2026-05-01",
+        "value": 158927
       }
     },
     "JTSJOL": {
@@ -33,12 +33,12 @@
     },
     "ICSA": {
       "latest": {
-        "date": "2026-06-20",
+        "date": "2026-06-27",
         "value": 215000
       },
       "previous": {
-        "date": "2026-06-13",
-        "value": 227000
+        "date": "2026-06-20",
+        "value": 216000
       }
     },
     "CPIAUCSL": {
@@ -163,12 +163,12 @@
     },
     "BAMLH0A0HYM2": {
       "latest": {
-        "date": "2026-06-30",
-        "value": 2.75
+        "date": "2026-07-01",
+        "value": 2.74
       },
       "previous": {
-        "date": "2026-06-29",
-        "value": 2.8
+        "date": "2026-06-30",
+        "value": 2.75
       }
     },
     "MORTGAGE30US": {
@@ -263,12 +263,12 @@
     },
     "VIXCLS": {
       "latest": {
-        "date": "2026-06-30",
-        "value": 16.45
+        "date": "2026-07-01",
+        "value": 16.59
       },
       "previous": {
-        "date": "2026-06-29",
-        "value": 17.65
+        "date": "2026-06-30",
+        "value": 16.45
       }
     },
     "BOPGSTB": {
@@ -300,6 +300,12 @@
     }
   },
   "news": [
+    {
+      "title": "Surprise, Surprise. Government Capital Stock Is Deteriorating",
+      "link": "https://mises.org/mises-wire/surprise-surprise-government-capital-stock-deteriorating",
+      "pubDate": "Thu, 02 Jul 2026 05:00:00 CDT",
+      "kind": "Mises Wire"
+    },
     {
       "title": "The Birthright Citizenship Ruling Will Create More Conflict over Immigration",
       "link": "https://mises.org/podcasts/audio-mises-wire/birthright-citizenship-ruling-will-create-more-conflict-over-immigration",
@@ -352,12 +358,6 @@
       "title": "A Libertarian Critique of Birthright Citizenship",
       "link": "https://mises.org/podcasts/audio-mises-wire/libertarian-critique-birthright-citizenship",
       "pubDate": "Tue, 30 Jun 2026 04:21:38 CDT",
-      "kind": "Podcast"
-    },
-    {
-      "title": "Bitcoin Is Not Freedom: The Delusion of Digital Escape",
-      "link": "https://mises.org/podcasts/audio-mises-wire/bitcoin-not-freedom-delusion-digital-escape",
-      "pubDate": "Tue, 30 Jun 2026 04:01:57 CDT",
       "kind": "Podcast"
     }
   ]
