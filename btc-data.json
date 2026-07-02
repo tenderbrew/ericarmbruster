@@ -1,13 +1,13 @@
 {
-  "fetchedAt": "2026-07-02T04:19:01.698Z",
+  "fetchedAt": "2026-07-02T09:30:25.471Z",
   "price": {
-    "usd": 60869,
-    "time": 1782965722
+    "usd": 60492,
+    "time": 1782984369
   },
   "moves": {
-    "d1": 1.4823287153865161,
-    "d7": 1.9365788604768674,
-    "d30": -8.673470580794529
+    "d1": 0.8537848272710313,
+    "d7": 1.3052215155163749,
+    "d30": -9.239113216471818
   },
   "history90d": [
     {
@@ -372,60 +372,95 @@
     },
     {
       "date": "2026-07-02",
-      "close": 60885.58617900299
+      "close": 60527.38819931654
     }
   ],
   "blocks": [
     {
-      "height": 956306,
-      "id": "00000000000000000001cd3c36c2351b81a5377e50e82cd07b600559e79e6fb7",
-      "timestamp": 1782965603,
-      "txCount": 4613
+      "height": 956343,
+      "id": "00000000000000000001f49e2c92ce01777518349ccddb81578a722c30a52dcc",
+      "timestamp": 1782984061,
+      "txCount": 6671
     },
     {
-      "height": 956305,
-      "id": "0000000000000000000019d2ec528d23309699051eb227c71af467191a42e9b8",
-      "timestamp": 1782964823,
-      "txCount": 4986
+      "height": 956342,
+      "id": "00000000000000000000aa3bfd5a8dc9e42c02c1437d5fdc3d316e90a242044f",
+      "timestamp": 1782983777,
+      "txCount": 5488
     },
     {
-      "height": 956304,
-      "id": "00000000000000000000ff50b1dcd3a17934880e578f945b0fa7a418ab6a2005",
-      "timestamp": 1782964508,
-      "txCount": 4235
+      "height": 956341,
+      "id": "00000000000000000001871629f1a2ef67da2b3d0a8e95b78ec6bed649db7427",
+      "timestamp": 1782983521,
+      "txCount": 5027
     },
     {
-      "height": 956303,
-      "id": "000000000000000000007cf06b62bb1aca267dab9e4824675fb0fd31a28f7768",
-      "timestamp": 1782963807,
-      "txCount": 3949
+      "height": 956340,
+      "id": "00000000000000000001376b2387ebd4c63090b3027e40b1f2ceac3f2d003ad9",
+      "timestamp": 1782983082,
+      "txCount": 4048
     },
     {
-      "height": 956302,
-      "id": "00000000000000000001d44212cfd1b4c7d8413a62f394df1c3b21fd50fad380",
-      "timestamp": 1782963009,
-      "txCount": 5252
+      "height": 956339,
+      "id": "00000000000000000001dc56fec66a5163da367655aa742fd152e082fe9dd1d9",
+      "timestamp": 1782982557,
+      "txCount": 5968
     },
     {
-      "height": 956301,
-      "id": "00000000000000000001c83ae700f4306535fa0a30c5a2148d3510f553975256",
-      "timestamp": 1782962878,
-      "txCount": 4209
+      "height": 956338,
+      "id": "00000000000000000000097c84e192e3f7e850340d684f1c06be6e1ef1b822fe",
+      "timestamp": 1782982167,
+      "txCount": 6007
     },
     {
-      "height": 956300,
-      "id": "00000000000000000000014a7994d86c402ce685105baadc5a1d44839edfad11",
-      "timestamp": 1782962428,
-      "txCount": 4073
+      "height": 956337,
+      "id": "0000000000000000000157a11e2f0d46474721b0753d076500a91695a59fea25",
+      "timestamp": 1782981823,
+      "txCount": 5687
     },
     {
-      "height": 956299,
-      "id": "0000000000000000000164ea220ea05756b2b61ed2880a848e09b4adb0f7d7bf",
-      "timestamp": 1782961729,
-      "txCount": 3003
+      "height": 956336,
+      "id": "000000000000000000015bdb19b0b3ee0da5328aef896312feeef2119e034755",
+      "timestamp": 1782981481,
+      "txCount": 5818
     }
   ],
   "news": [
+    {
+      "title": "Metaplanet buys another $170 million of bitcoin expanding treasury to 43,000 BTC",
+      "link": "https://www.coindesk.com/markets/2026/07/02/metaplanet-buys-another-usd170-million-of-bitcoin-expanding-treasury-to-43-000-btc",
+      "pubDate": "Thu, 02 Jul 2026 08:57:20 +0000"
+    },
+    {
+      "title": "Taiko fully restores cross-chain bridge just 10 days after a $1.7 million hack",
+      "link": "https://www.coindesk.com/markets/2026/07/02/taiko-s-bridge-is-back-online-after-usd1-7-million-hack-and-its-token-is-up-a-staggering-136",
+      "pubDate": "Thu, 02 Jul 2026 08:35:28 +0000"
+    },
+    {
+      "title": "Solana launches onchain governance and sets entry fee at 100,000 SOL staked",
+      "link": "https://www.coindesk.com/markets/2026/07/02/solana-adds-onchain-governance-with-usd7-7-million-sol-needed-to-open-proposals",
+      "pubDate": "Thu, 02 Jul 2026 07:15:21 +0000"
+    },
+    {
+      "title": "XRP edges higher as whale activity rises while retail traders stay cautious",
+      "link": "https://www.coindesk.com/markets/2026/07/02/xrp-edges-higher-as-whale-activity-rises-while-retail-traders-stay-cautious",
+      "pubDate": "Thu, 02 Jul 2026 06:20:31 +0000"
+    },
+    {
+      "title": "Bitcoin's long-term holders have returned to accumulation",
+      "link": "https://www.coindesk.com/markets/2026/07/02/bitcoin-long-term-holders-have-returned-to-accumulation",
+      "pubDate": "Thu, 02 Jul 2026 06:17:16 +0000"
+    },
+    {
+      "title": "FBI Director Kash Patel caught sleeping on required disclosure of six-figure MSTR investment: Report",
+      "link": "https://www.coindesk.com/policy/2026/07/02/fbi-director-kash-patel-caught-sleeping-on-required-disclosure-of-six-figure-mstr-investment",
+      "pubDate": "Thu, 02 Jul 2026 05:24:18 +0000"
+    },
+    {
+      "title": "Ether, solana, dogecoin in the green after Warsh comments push bitcoin above $60,000",
+      "link": "https://www.coindesk.com/markets/2026/07/02/ether-solana-dogecoin-in-the-green-after-warsh-comments-push-bitcoin-above-usd60-000",
+      "pubDate": "Thu, 02 Jul 2026 05:22:54 +0000"
+    },
     {
       "title": "Ethereum Institutional launch draws support from across the Ethereum ecosystem",
       "link": "https://www.coindesk.com/tech/2026/07/01/ethereum-institutional-launch-draws-support-from-across-the-ethereum-ecosystem",
@@ -450,41 +485,6 @@
       "title": "Cantor says bitcoin bear market may be entering final stretch",
       "link": "https://www.coindesk.com/markets/2026/07/01/cantor-says-bitcoin-bear-market-may-be-entering-final-stretch",
       "pubDate": "Wed, 01 Jul 2026 15:11:46 +0000"
-    },
-    {
-      "title": "Goliath Ventures CEO pleads guilty in $400 million crypto Ponzi case",
-      "link": "https://www.coindesk.com/policy/2026/07/01/goliath-ventures-ceo-pleads-guilty-in-usd400-million-crypto-ponzi-case",
-      "pubDate": "Wed, 01 Jul 2026 15:06:22 +0000"
-    },
-    {
-      "title": "Bitcoin breaks above $60,000 after Fed Chair Warsh said inflation risks has come down",
-      "link": "https://www.coindesk.com/markets/2026/07/01/bitcoin-retakes-usd60-000-level-after-fed-chair-warsh-said-inflation-risks-has-come-down",
-      "pubDate": "Wed, 01 Jul 2026 14:36:00 +0000"
-    },
-    {
-      "title": "EthLabs launches as Ethereum undergoes its biggest leadership transition in years",
-      "link": "https://www.coindesk.com/tech/2026/07/01/ethlabs-launches-as-ethereum-undergoes-its-biggest-leadership-transition-in-years",
-      "pubDate": "Wed, 01 Jul 2026 14:09:56 +0000"
-    },
-    {
-      "title": "Europe's MiCA rollout sparks debate over who wins under new crypto rules",
-      "link": "https://www.coindesk.com/policy/2026/07/01/europe-s-mica-rollout-sparks-debate-over-who-wins-under-new-crypto-rules",
-      "pubDate": "Wed, 01 Jul 2026 14:00:24 +0000"
-    },
-    {
-      "title": "Europe is closing the door on offshore crypto, but it’s leaving the riskiest window open",
-      "link": "https://www.coindesk.com/opinion/2026/07/01/europe-is-closing-the-door-on-offshore-crypto-but-it-s-leaving-the-riskiest-window-open",
-      "pubDate": "Wed, 01 Jul 2026 14:00:00 +0000"
-    },
-    {
-      "title": "French banking giant Crédit Agricole rolls out euro stablecoin, EURXT",
-      "link": "https://www.coindesk.com/business/2026/07/01/french-banking-giant-credit-agricole-rolls-out-euro-stablecoin-eurxt",
-      "pubDate": "Wed, 01 Jul 2026 13:50:24 +0000"
-    },
-    {
-      "title": "Morpho poised to scale as DeFi infrastructure play, Standard Chartered says",
-      "link": "https://www.coindesk.com/markets/2026/07/01/morpho-poised-to-scale-as-defi-infrastructure-play-standard-chartered-says",
-      "pubDate": "Wed, 01 Jul 2026 13:46:40 +0000"
     }
   ]
 }
