@@ -1,13 +1,13 @@
 {
-  "fetchedAt": "2026-07-02T14:26:52.818Z",
+  "fetchedAt": "2026-07-02T17:00:29.807Z",
   "price": {
-    "usd": 61779,
-    "time": 1783002061
+    "usd": 61629,
+    "time": 1783011335
   },
   "moves": {
-    "d1": 2.9995036177342005,
-    "d7": 3.460544865553894,
-    "d30": -7.308126287780404
+    "d1": 2.7494198426219363,
+    "d7": 3.209341677903832,
+    "d30": -7.5331830393761345
   },
   "history90d": [
     {
@@ -372,60 +372,75 @@
     },
     {
       "date": "2026-07-02",
-      "close": 61636.36466283053
+      "close": 61590.775734044524
     }
   ],
   "blocks": [
     {
-      "height": 956365,
-      "id": "0000000000000000000025477ed989cf55e405c25bff2b13f625862cfcdeaf9f",
-      "timestamp": 1783000698,
-      "txCount": 4036
+      "height": 956376,
+      "id": "0000000000000000000074b85505aada4ca8ef88094503e2ee9d8009c0131c7b",
+      "timestamp": 1783011057,
+      "txCount": 3575
     },
     {
-      "height": 956364,
-      "id": "0000000000000000000138d4ceb64c4e084a83ab7edb2839dbfa305c85a2035a",
-      "timestamp": 1782999556,
-      "txCount": 4417
+      "height": 956375,
+      "id": "00000000000000000001afdf382ec8e7e3070fefa6c3f35d3a872375ccc1cce3",
+      "timestamp": 1783011098,
+      "txCount": 3867
     },
     {
-      "height": 956363,
-      "id": "000000000000000000000e43ee30039f30400463a09cde690bf80256e9546e36",
-      "timestamp": 1782997974,
-      "txCount": 5199
+      "height": 956374,
+      "id": "00000000000000000000fed073c3d35732456ae8808db59bc5a251f3ff0bde2b",
+      "timestamp": 1783010546,
+      "txCount": 3979
     },
     {
-      "height": 956362,
-      "id": "000000000000000000001c923bfab00b916a01f27113c3125a92a624d3154d56",
-      "timestamp": 1782997528,
-      "txCount": 5242
+      "height": 956373,
+      "id": "000000000000000000001934d723bb560643ea37bbc9452a97edc827a8202003",
+      "timestamp": 1783010323,
+      "txCount": 3853
     },
     {
-      "height": 956361,
-      "id": "000000000000000000006714b59438e3d0b81fb12009e0ce48d8b95b369cdff3",
-      "timestamp": 1782997155,
-      "txCount": 5090
+      "height": 956372,
+      "id": "000000000000000000017aa9023635c1ce26e75d5d0704c95514e94f0b8d2cf8",
+      "timestamp": 1783009490,
+      "txCount": 3721
     },
     {
-      "height": 956360,
-      "id": "000000000000000000015e2b8ccb5f99bd9fa086704ce5f027a5b4c7e8a4a83b",
-      "timestamp": 1782996887,
-      "txCount": 3122
+      "height": 956371,
+      "id": "00000000000000000001137c2f9ce0a66b4e3b9667b0bb58985445d37c02465b",
+      "timestamp": 1783008823,
+      "txCount": 3884
     },
     {
-      "height": 956359,
-      "id": "00000000000000000000e2e35c6de0472a32490b11959893a9f34782f29d4b5b",
-      "timestamp": 1782996508,
-      "txCount": 3015
+      "height": 956370,
+      "id": "00000000000000000001abfec22c84db2984cc8076f54317224caf0543f3f569",
+      "timestamp": 1783008033,
+      "txCount": 3979
     },
     {
-      "height": 956358,
-      "id": "00000000000000000000582ebd2b7b0e5d7f9619354149dcc91582e3af7733a7",
-      "timestamp": 1782995661,
-      "txCount": 4725
+      "height": 956369,
+      "id": "00000000000000000001ff479f59fad262511577ca386061c3c4c7d2aa3a7506",
+      "timestamp": 1783006246,
+      "txCount": 3871
     }
   ],
   "news": [
+    {
+      "title": "Bitwise says STRC selloff signals crypto cycle nearing a bottom, not Strategy’s breaking point",
+      "link": "https://www.coindesk.com/markets/2026/07/02/bitwise-says-strc-selloff-signals-crypto-cycle-nearing-a-bottom-not-strategy-s-breaking-point",
+      "pubDate": "Thu, 02 Jul 2026 16:51:36 +0000"
+    },
+    {
+      "title": "US Treasury sanctions over 100 ISIS-K crypto addresses that moved over $1.4 million",
+      "link": "https://www.coindesk.com/policy/2026/07/02/us-treasury-sanctions-over-100-isis-k-crypto-addresses-in-latest-enforcement-action",
+      "pubDate": "Thu, 02 Jul 2026 14:49:05 +0000"
+    },
+    {
+      "title": "SBI Crypto to shut down mining pool that holds roughly 2% of Bitcoin's hashrate",
+      "link": "https://www.coindesk.com/business/2026/07/02/sbi-crypto-to-shut-down-mining-pool-that-holds-roughly-2-of-bitcoin-s-hashrate",
+      "pubDate": "Thu, 02 Jul 2026 14:44:55 +0000"
+    },
     {
       "title": "Ondo Finance debuts SEC-aligned tokenized stock model with BlackRock ETF, Micron shares",
       "link": "https://www.coindesk.com/business/2026/07/01/ondo-finance-debuts-sec-aligned-tokenized-stock-model-with-blackrock-etf-micron-shares",
@@ -470,21 +485,6 @@
       "title": "ChatGPT developer OpenAI said to discuss offering U.S. government a 5% stake: FT",
       "link": "https://www.coindesk.com/policy/2026/07/02/openai-reported-to-discuss-offering-u-s-government-a-5-stake",
       "pubDate": "Thu, 02 Jul 2026 10:06:22 +0000"
-    },
-    {
-      "title": "Live markets: Bitcoin rises above $61,000 as U.S. jobs data for June disappoints",
-      "link": "https://www.coindesk.com/tech/2026/07/02/live-markets-bitcoin-holds-above-usd60-000-as-yen-jumps-on-intervention-fears",
-      "pubDate": "Thu, 02 Jul 2026 09:42:41 +0000"
-    },
-    {
-      "title": "Metaplanet buys another $170 million of bitcoin expanding treasury to 43,000 BTC",
-      "link": "https://www.coindesk.com/markets/2026/07/02/metaplanet-buys-another-usd170-million-of-bitcoin-expanding-treasury-to-43-000-btc",
-      "pubDate": "Thu, 02 Jul 2026 08:57:20 +0000"
-    },
-    {
-      "title": "Taiko fully restores cross-chain bridge just 10 days after a $1.7 million hack",
-      "link": "https://www.coindesk.com/markets/2026/07/02/taiko-s-bridge-is-back-online-after-usd1-7-million-hack-and-its-token-is-up-a-staggering-136",
-      "pubDate": "Thu, 02 Jul 2026 08:35:28 +0000"
     }
   ]
 }
