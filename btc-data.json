@@ -1,13 +1,13 @@
 {
-  "fetchedAt": "2026-07-03T16:43:51.492Z",
+  "fetchedAt": "2026-07-03T19:46:02.819Z",
   "price": {
-    "usd": 61975,
-    "time": 1783096509
+    "usd": 62213,
+    "time": 1783107608
   },
   "moves": {
-    "d1": 0.793173545654291,
-    "d7": 3.3229534868572275,
-    "d30": -3.197170820126649
+    "d1": 1.1802453537037794,
+    "d7": 3.719740302990693,
+    "d30": -2.8254229646234585
   },
   "history90d": [
     {
@@ -372,60 +372,65 @@
     },
     {
       "date": "2026-07-03",
-      "close": 61999.31552554339
+      "close": 62170.90499689981
     }
   ],
   "blocks": [
     {
-      "height": 956522,
-      "id": "000000000000000000014cadc2c034e5187a52c4956ce0b04effb3827ce5fd94",
-      "timestamp": 1783096405,
-      "txCount": 5537
+      "height": 956543,
+      "id": "000000000000000000001ccfe7a443466278dbecaff8e184b42113250655f432",
+      "timestamp": 1783107882,
+      "txCount": 4272
     },
     {
-      "height": 956521,
-      "id": "00000000000000000000a0ccb8e83e29165040301f49155cdbd4eb9d58c2ddc1",
-      "timestamp": 1783096387,
-      "txCount": 3529
+      "height": 956542,
+      "id": "0000000000000000000200bad2d8d62a198f06b4390e7ca9be8f15581b42102e",
+      "timestamp": 1783107487,
+      "txCount": 6954
     },
     {
-      "height": 956520,
-      "id": "000000000000000000019b58c4e2fe1c425ffd44c97ae968f44478b13c9f0307",
-      "timestamp": 1783095955,
-      "txCount": 4846
+      "height": 956541,
+      "id": "00000000000000000001603ef19e6489d71083644e53efbdaf3a3da8c1ff2bfe",
+      "timestamp": 1783107054,
+      "txCount": 6202
     },
     {
-      "height": 956519,
-      "id": "00000000000000000000b3656f20a790beff1e1098f1ee64c98f1d2546461fac",
-      "timestamp": 1783095795,
-      "txCount": 4732
+      "height": 956540,
+      "id": "000000000000000000016ecc11dbc2357b0d2c15fcccd3617fdbb3f16d6b66b6",
+      "timestamp": 1783106865,
+      "txCount": 5341
     },
     {
-      "height": 956518,
-      "id": "00000000000000000001592dd25acd86254ead40196123a5768bd108bf23c570",
-      "timestamp": 1783095772,
-      "txCount": 4210
+      "height": 956539,
+      "id": "00000000000000000000884e134ea7561ae7d333b821040c4a7a11bb1cc5d1e6",
+      "timestamp": 1783106459,
+      "txCount": 5785
     },
     {
-      "height": 956517,
-      "id": "000000000000000000005b55847d56adbd83ce23154c97eb11b9d118174dc54e",
-      "timestamp": 1783095384,
-      "txCount": 4258
+      "height": 956538,
+      "id": "000000000000000000014d19bd54c6f33da54da3c82e5be06e5b43b5ba810441",
+      "timestamp": 1783106139,
+      "txCount": 5458
     },
     {
-      "height": 956516,
-      "id": "00000000000000000001f5926c77916bf8d76c06d72db0bbda9234d15ce8da93",
-      "timestamp": 1783094721,
-      "txCount": 4111
+      "height": 956537,
+      "id": "00000000000000000000ac0c6a746d9dd7650a6c8e048a2a164e72f32206f7ec",
+      "timestamp": 1783106094,
+      "txCount": 5867
     },
     {
-      "height": 956515,
-      "id": "0000000000000000000140abbd71c164dcf95db1d4b1bfb4854000d6266a9694",
-      "timestamp": 1783094243,
-      "txCount": 4281
+      "height": 956536,
+      "id": "000000000000000000005f46900e43d25a4fe531b5b8c9ee75726a03cc3f0370",
+      "timestamp": 1783106003,
+      "txCount": 5047
     }
   ],
   "news": [
+    {
+      "title": "This sanctioned Russian stablecoin claims it processes billions, but blockchain analysts disagree",
+      "link": "https://www.coindesk.com/business/2026/07/03/this-sanctioned-russian-stablecoin-claims-it-processes-billions-but-blockchain-analysts-disagree",
+      "pubDate": "Fri, 03 Jul 2026 19:18:59 +0000"
+    },
     {
       "title": "Trump says there is ‘nothing wrong’ with family’s crypto windfall",
       "link": "https://www.coindesk.com/policy/2026/07/03/trump-says-there-is-nothing-wrong-with-family-s-crypto-windfall",
@@ -480,11 +485,6 @@
       "title": "Ether and solana extend gains as a short squeeze lifts bitcoin toward $62,000",
       "link": "https://www.coindesk.com/markets/2026/07/03/ether-and-solana-extend-gains-as-a-short-squeeze-lifts-bitcoin-toward-usd62-000",
       "pubDate": "Fri, 03 Jul 2026 05:18:58 +0000"
-    },
-    {
-      "title": "Securitize tokenizes $295 million of its own stock on Solana and Avalanche amid NYSE debut",
-      "link": "https://www.coindesk.com/business/2026/07/02/securitize-tokenizes-usd295-million-of-its-own-stock-on-solana-and-avalanche-amid-nyse-debut",
-      "pubDate": "Thu, 02 Jul 2026 19:00:03 +0000"
     }
   ]
 }
