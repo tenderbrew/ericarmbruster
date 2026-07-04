@@ -1,13 +1,13 @@
 {
-  "fetchedAt": "2026-07-04T19:34:33.101Z",
+  "fetchedAt": "2026-07-04T22:08:52.479Z",
   "price": {
-    "usd": 63318,
-    "time": 1783193411
+    "usd": 63215,
+    "time": 1783202710
   },
   "moves": {
-    "d1": 1.248146935043204,
-    "d7": 5.630153627816337,
-    "d30": -0.7496590455800312
+    "d1": 1.083445599967714,
+    "d7": 5.458324040279394,
+    "d30": -0.9111105304390854
   },
   "history90d": [
     {
@@ -372,60 +372,65 @@
     },
     {
       "date": "2026-07-04",
-      "close": 63308.499121332905
+      "close": 63207.70291788346
     }
   ],
   "blocks": [
     {
-      "height": 956689,
-      "id": "00000000000000000000aff1acde94b4de0f40858fbc639aa5f0e5290e326a08",
-      "timestamp": 1783193323,
-      "txCount": 5372
+      "height": 956705,
+      "id": "0000000000000000000093187e9289050dd7df3324c29429a08fccd0cdd3cd42",
+      "timestamp": 1783202418,
+      "txCount": 5269
     },
     {
-      "height": 956688,
-      "id": "00000000000000000000a094da1e6a2fc6f1da5fd825d988a11acb5e675fbc98",
-      "timestamp": 1783193032,
-      "txCount": 2593
+      "height": 956704,
+      "id": "00000000000000000001bae535be8cbb7d95637c6fbe89a6351c1d35768c9538",
+      "timestamp": 1783201974,
+      "txCount": 4845
     },
     {
-      "height": 956687,
-      "id": "00000000000000000000f68975b969dd411d930d099e671250f389d9ee0b3e3c",
-      "timestamp": 1783193219,
-      "txCount": 4170
+      "height": 956703,
+      "id": "0000000000000000000201e4b02e8af83b1b05bec6c995bbff4666b1b7608cf0",
+      "timestamp": 1783200663,
+      "txCount": 3623
     },
     {
-      "height": 956686,
-      "id": "0000000000000000000102963211b77c2e1e64463f7bb8756f05b27a26b5417b",
-      "timestamp": 1783192565,
-      "txCount": 4276
+      "height": 956702,
+      "id": "0000000000000000000059f0ad4682ab79ddf6275e7a32f6eb52ec0165ebdc10",
+      "timestamp": 1783199893,
+      "txCount": 6238
     },
     {
-      "height": 956685,
-      "id": "0000000000000000000083a35e15823167f876aab7d413ad6239721ed71b78fe",
-      "timestamp": 1783190415,
-      "txCount": 518
+      "height": 956701,
+      "id": "00000000000000000001a85da53c4c7ac05fd22a31bfde5bc8ebbc50aabd4560",
+      "timestamp": 1783199877,
+      "txCount": 3618
     },
     {
-      "height": 956684,
-      "id": "00000000000000000000b17561dfa095f59827664eff60365bc9a32f39905a23",
-      "timestamp": 1783190320,
-      "txCount": 4796
+      "height": 956700,
+      "id": "000000000000000000012f722c3a0869862a40679e0de741059d95e309797593",
+      "timestamp": 1783198761,
+      "txCount": 6978
     },
     {
-      "height": 956683,
-      "id": "00000000000000000001cd3f24b18703be12c1a4cea7e2d92d1299966ba745a3",
-      "timestamp": 1783189854,
-      "txCount": 4482
+      "height": 956699,
+      "id": "00000000000000000000d551178a4b3e2147a43e2b96d2bd910a03f2c6817d23",
+      "timestamp": 1783198685,
+      "txCount": 6548
     },
     {
-      "height": 956682,
-      "id": "0000000000000000000164be3c633569fb59a0424cf47a259b0342d57059dc95",
-      "timestamp": 1783189325,
-      "txCount": 4869
+      "height": 956698,
+      "id": "0000000000000000000045f3e06ef8ac037169f65ffeb8e855149d71666c225b",
+      "timestamp": 1783198488,
+      "txCount": 6995
     }
   ],
   "news": [
+    {
+      "title": "Tokenization's next use case is personalized portfolios, NYLIM executive says",
+      "link": "https://www.coindesk.com/business/2026/07/02/tokenization-s-next-use-case-is-personalized-portfolios-nylim-executive-says",
+      "pubDate": "Sat, 04 Jul 2026 20:00:00 +0000"
+    },
     {
       "title": "Bitcoin jumps above $63,000, reversing end-June losses",
       "link": "https://www.coindesk.com/markets/2026/07/04/bitcoin-jumps-above-usd63-000-reversing-end-june-losses",
@@ -434,6 +439,11 @@
     {
       "title": "Bitcoin experts split over plan to freeze Satoshi's 1.1 million bitcoin as quantum threat grows",
       "link": "https://www.coindesk.com/business/2026/07/04/bitcoin-experts-split-over-plan-to-freeze-satoshi-s-1-1-million-bitcoin-as-quantum-threat-grows",
+      "pubDate": "Sat, 04 Jul 2026 18:00:00 +0000"
+    },
+    {
+      "title": "How ethical hackers with just a $3,000 server found a flaw that could've put $70 billion in crypto at risk",
+      "link": "https://www.coindesk.com/tech/2026/07/04/how-ethical-hackers-with-just-a-usd3-000-server-found-a-flaw-that-could-ve-put-usd70-billion-in-crypto-at-risk",
       "pubDate": "Sat, 04 Jul 2026 18:00:00 +0000"
     },
     {
@@ -475,16 +485,6 @@
       "title": "This sanctioned Russian stablecoin claims it processes billions, but blockchain analysts disagree",
       "link": "https://www.coindesk.com/business/2026/07/03/this-sanctioned-russian-stablecoin-claims-it-processes-billions-but-blockchain-analysts-disagree",
       "pubDate": "Fri, 03 Jul 2026 19:18:59 +0000"
-    },
-    {
-      "title": "Trump says there is ‘nothing wrong’ with family’s crypto windfall",
-      "link": "https://www.coindesk.com/policy/2026/07/03/trump-says-there-is-nothing-wrong-with-family-s-crypto-windfall",
-      "pubDate": "Fri, 03 Jul 2026 12:04:15 +0000"
-    },
-    {
-      "title": "Bitcoin whales bought $16.7 billion of bitcoin in 2 weeks even as ETFs bled a record $4 billion",
-      "link": "https://www.coindesk.com/markets/2026/07/03/bitcoin-whales-bought-270-000-btc-in-two-weeks-even-as-etfs-bled-a-record-usd4-billion",
-      "pubDate": "Fri, 03 Jul 2026 11:45:33 +0000"
     }
   ]
 }
