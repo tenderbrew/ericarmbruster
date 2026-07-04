@@ -1,13 +1,13 @@
 {
-  "fetchedAt": "2026-07-04T13:55:30.677Z",
+  "fetchedAt": "2026-07-04T16:14:24.656Z",
   "price": {
-    "usd": 62523,
-    "time": 1783173007
+    "usd": 62835,
+    "time": 1783181409
   },
   "moves": {
-    "d1": -0.02309152500542533,
-    "d7": 4.303896131778662,
-    "d30": -1.9958137102688123
+    "d1": 0.47580960648536674,
+    "d7": 4.824389639657589,
+    "d30": -1.5067567852588781
   },
   "history90d": [
     {
@@ -372,60 +372,80 @@
     },
     {
       "date": "2026-07-04",
-      "close": 62518.48964960444
+      "close": 62789.85901776654
     }
   ],
   "blocks": [
     {
-      "height": 956654,
-      "id": "00000000000000000000362331a77d6cb63cd532daa700cb98d9f5057943e612",
-      "timestamp": 1783172855,
-      "txCount": 5501
+      "height": 956669,
+      "id": "000000000000000000008d70d4c0bf1232ae317747f9a62f9e5fe16235d1ee2c",
+      "timestamp": 1783180979,
+      "txCount": 3614
     },
     {
-      "height": 956653,
-      "id": "000000000000000000009ad00caca4f1f74b39844d69dedd199ab8000b43961c",
-      "timestamp": 1783172311,
-      "txCount": 4739
+      "height": 956668,
+      "id": "0000000000000000000020fdb8bae5f677791488ce6b316229ba13780e2a3da3",
+      "timestamp": 1783180581,
+      "txCount": 3695
     },
     {
-      "height": 956652,
-      "id": "00000000000000000001fd58e15c370d199e2edf6c4bfd085f2f97f5fae94e54",
-      "timestamp": 1783171632,
-      "txCount": 5796
+      "height": 956667,
+      "id": "000000000000000000014c88552efa4bcd414dbf9e43912b4ea9e5b92ad7ea6c",
+      "timestamp": 1783179097,
+      "txCount": 4115
     },
     {
-      "height": 956651,
-      "id": "000000000000000000014c3fdafd4b22524f8dc96fd7c733878a355a3196ef0a",
-      "timestamp": 1783171247,
-      "txCount": 4785
+      "height": 956666,
+      "id": "00000000000000000000b038cd4222c96d416c8a2adc97a664daf5692ea2d965",
+      "timestamp": 1783178332,
+      "txCount": 3755
     },
     {
-      "height": 956650,
-      "id": "00000000000000000001c850aa617c23f07148dd51da9c3b20a5164b05033e80",
-      "timestamp": 1783170543,
-      "txCount": 6669
+      "height": 956665,
+      "id": "000000000000000000005e78b40bffe77e1bdec21162dbdc07fe1374b3e2377b",
+      "timestamp": 1783177396,
+      "txCount": 4441
     },
     {
-      "height": 956649,
-      "id": "000000000000000000020fb59234274d4b72670cfa5a43f06808c3a2de8b55a4",
-      "timestamp": 1783170527,
-      "txCount": 4102
+      "height": 956664,
+      "id": "000000000000000000006cf090f8662beceae3dfa00a76a7e42444d56c7766d4",
+      "timestamp": 1783177065,
+      "txCount": 6535
     },
     {
-      "height": 956648,
-      "id": "00000000000000000000f8e9dad1039f2950044d11d0479fda9e7461582ab93e",
-      "timestamp": 1783170286,
-      "txCount": 4268
+      "height": 956663,
+      "id": "00000000000000000000614b9b8369e636438f345dbc3f981ccb226273ff2801",
+      "timestamp": 1783176912,
+      "txCount": 6839
     },
     {
-      "height": 956647,
-      "id": "0000000000000000000097f492389fa68e6be966f5e15725c8762f5b75a0b8ad",
-      "timestamp": 1783168713,
-      "txCount": 3943
+      "height": 956662,
+      "id": "00000000000000000001236a3a45c5233a3a8ace04101cb199560c4a51c394a8",
+      "timestamp": 1783176860,
+      "txCount": 4914
     }
   ],
   "news": [
+    {
+      "title": "Why bitcoin's disconnect from record-high stocks won't last",
+      "link": "https://www.coindesk.com/markets/2026/07/03/why-bitcoin-s-disconnect-from-record-high-stocks-won-t-last",
+      "pubDate": "Sat, 04 Jul 2026 16:00:00 +0000"
+    },
+    {
+      "title": "Trump's crypto token buyers are down $3.8 billion, blockchain data shows",
+      "link": "https://www.coindesk.com/business/2026/07/04/trump-s-crypto-token-buyers-are-down-usd3-8-billion-blockchain-data-shows",
+      "pubDate": "Sat, 04 Jul 2026 15:30:52 +0000"
+    },
+    {
+      "title": "Europe led on crypto regulation. Now implementation must match ambition",
+      "link": "https://www.coindesk.com/opinion/2026/07/04/europe-led-on-crypto-regulation-now-implementation-must-match-ambition",
+      "pubDate": "Sat, 04 Jul 2026 14:00:00 +0000"
+    },
+    {
+      "title": "EU moves to block retail investors from explosive boom of multibillion-dollar prediction markets",
+      "link": "https://www.coindesk.com/policy/2026/07/04/eu-moves-to-block-retail-investors-from-explosive-boom-of-multibillion-dollar-prediction-markets",
+      "pubDate": "Sat, 04 Jul 2026 13:56:27 +0000"
+    },
     {
       "title": "UK's bold new crypto rules promise to unlock global trading, but huge compliance hurdles still threaten the rollout",
       "link": "https://www.coindesk.com/policy/2026/07/04/uk-s-bold-new-crypto-rules-promise-to-unlock-global-trading-but-huge-compliance-hurdles-still-threaten-the-rollout",
@@ -465,26 +485,6 @@
       "title": "Crypto bulls on firmer footing as U.S. rate-hike risk recedes",
       "link": "https://www.coindesk.com/markets/2026/07/03/crypto-bulls-on-firmer-footing-as-u-s-rate-hike-risk-recedes",
       "pubDate": "Fri, 03 Jul 2026 11:11:39 +0000"
-    },
-    {
-      "title": "Memory and semiconductor stocks lose momentum, bitcoin rebounds in sign of changing investor focus",
-      "link": "https://www.coindesk.com/markets/2026/07/03/memory-and-semiconductor-stocks-lose-momentum-bitcoin-rebounds-in-sign-of-changing-investor-focus",
-      "pubDate": "Fri, 03 Jul 2026 10:41:52 +0000"
-    },
-    {
-      "title": "Tokenization could make finance faster, but also more susceptible to shocks, IMF says",
-      "link": "https://www.coindesk.com/markets/2026/07/03/tokenization-could-make-finance-faster-but-also-more-susceptible-to-shocks-imf-says",
-      "pubDate": "Fri, 03 Jul 2026 09:06:29 +0000"
-    },
-    {
-      "title": "Live updates: Bitcoin rises above $62,000 as the red hot semiconductor trade starts to fade",
-      "link": "https://www.coindesk.com/tech/2026/07/03/live-updates-more-bitcoin-is-now-held-at-a-loss-than-at-a-profit",
-      "pubDate": "Fri, 03 Jul 2026 07:05:31 +0000"
-    },
-    {
-      "title": "Binance says MiCA should be judged by who it licenses, not who it excludes",
-      "link": "https://www.coindesk.com/policy/2026/07/03/binance-says-mica-should-be-judged-by-who-it-licenses-not-who-it-excludes",
-      "pubDate": "Fri, 03 Jul 2026 06:30:00 +0000"
     }
   ]
 }
