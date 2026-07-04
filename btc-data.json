@@ -1,13 +1,13 @@
 {
-  "fetchedAt": "2026-07-04T10:59:36.140Z",
+  "fetchedAt": "2026-07-04T13:55:30.677Z",
   "price": {
-    "usd": 62422,
-    "time": 1783162207
+    "usd": 62523,
+    "time": 1783173007
   },
   "moves": {
-    "d1": -0.18459477590468953,
-    "d7": 4.135403041087082,
-    "d30": -2.1541302148393338
+    "d1": -0.02309152500542533,
+    "d7": 4.303896131778662,
+    "d30": -1.9958137102688123
   },
   "history90d": [
     {
@@ -372,60 +372,65 @@
     },
     {
       "date": "2026-07-04",
-      "close": 62484.23307032062
+      "close": 62518.48964960444
     }
   ],
   "blocks": [
     {
-      "height": 956637,
-      "id": "00000000000000000000e6166db503f620a0cf9f7f0e2b84202151cfcd7a5ea1",
-      "timestamp": 1783162583,
-      "txCount": 4518
+      "height": 956654,
+      "id": "00000000000000000000362331a77d6cb63cd532daa700cb98d9f5057943e612",
+      "timestamp": 1783172855,
+      "txCount": 5501
     },
     {
-      "height": 956636,
-      "id": "00000000000000000000bf473e92e95c914d880dfb90b3aec9010f86688cbd9d",
-      "timestamp": 1783161896,
-      "txCount": 4026
+      "height": 956653,
+      "id": "000000000000000000009ad00caca4f1f74b39844d69dedd199ab8000b43961c",
+      "timestamp": 1783172311,
+      "txCount": 4739
     },
     {
-      "height": 956635,
-      "id": "00000000000000000001f857a9d1411a582b22a3728b80e47482e9622a556fb7",
-      "timestamp": 1783161078,
-      "txCount": 4487
+      "height": 956652,
+      "id": "00000000000000000001fd58e15c370d199e2edf6c4bfd085f2f97f5fae94e54",
+      "timestamp": 1783171632,
+      "txCount": 5796
     },
     {
-      "height": 956634,
-      "id": "000000000000000000001b8f790b0f0fceeabc2c3ebda42fcfa9ebbedad9b40c",
-      "timestamp": 1783159473,
-      "txCount": 2774
+      "height": 956651,
+      "id": "000000000000000000014c3fdafd4b22524f8dc96fd7c733878a355a3196ef0a",
+      "timestamp": 1783171247,
+      "txCount": 4785
     },
     {
-      "height": 956633,
-      "id": "0000000000000000000192096e6cc603a587acc2a687c8ad6eddeee6d49eb036",
-      "timestamp": 1783159274,
-      "txCount": 4192
+      "height": 956650,
+      "id": "00000000000000000001c850aa617c23f07148dd51da9c3b20a5164b05033e80",
+      "timestamp": 1783170543,
+      "txCount": 6669
     },
     {
-      "height": 956632,
-      "id": "000000000000000000006416ed41f59fe19ffd347b4cc26ca713ae0587ac77d9",
-      "timestamp": 1783158967,
-      "txCount": 4305
+      "height": 956649,
+      "id": "000000000000000000020fb59234274d4b72670cfa5a43f06808c3a2de8b55a4",
+      "timestamp": 1783170527,
+      "txCount": 4102
     },
     {
-      "height": 956631,
-      "id": "00000000000000000000fcff20f02175071eb03f9b1894b9426b374b6a7df246",
-      "timestamp": 1783155386,
-      "txCount": 4381
+      "height": 956648,
+      "id": "00000000000000000000f8e9dad1039f2950044d11d0479fda9e7461582ab93e",
+      "timestamp": 1783170286,
+      "txCount": 4268
     },
     {
-      "height": 956630,
-      "id": "0000000000000000000023f2fb7f21aba6a9a1ae4032aa483b6c9d9d5ee3ea2d",
-      "timestamp": 1783155361,
-      "txCount": 6548
+      "height": 956647,
+      "id": "0000000000000000000097f492389fa68e6be966f5e15725c8762f5b75a0b8ad",
+      "timestamp": 1783168713,
+      "txCount": 3943
     }
   ],
   "news": [
+    {
+      "title": "UK's bold new crypto rules promise to unlock global trading, but huge compliance hurdles still threaten the rollout",
+      "link": "https://www.coindesk.com/policy/2026/07/04/uk-s-bold-new-crypto-rules-promise-to-unlock-global-trading-but-huge-compliance-hurdles-still-threaten-the-rollout",
+      "pubDate": "Sat, 04 Jul 2026 12:00:00 +0000"
+    },
     {
       "title": "XRP climbs 8% as record holder losses signal better risk-reward for buyers",
       "link": "https://www.coindesk.com/markets/2026/07/04/xrp-climbs-8-as-one-onchain-gauge-signal-shows-favorable-risk-reward-for-buyers",
@@ -480,11 +485,6 @@
       "title": "Binance says MiCA should be judged by who it licenses, not who it excludes",
       "link": "https://www.coindesk.com/policy/2026/07/03/binance-says-mica-should-be-judged-by-who-it-licenses-not-who-it-excludes",
       "pubDate": "Fri, 03 Jul 2026 06:30:00 +0000"
-    },
-    {
-      "title": "Finally. $221 million flow into Bitcoin ETFs, ending a painful 10-day outflow streak",
-      "link": "https://www.coindesk.com/markets/2026/07/03/finally-usd221-million-flow-into-bitcoin-etfs-ending-a-painful-10-day-outflow-streak",
-      "pubDate": "Fri, 03 Jul 2026 05:54:51 +0000"
     }
   ]
 }
