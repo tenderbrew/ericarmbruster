@@ -1,13 +1,13 @@
 {
-  "fetchedAt": "2026-07-04T03:58:23.499Z",
+  "fetchedAt": "2026-07-04T08:49:22.881Z",
   "price": {
-    "usd": 62580,
-    "time": 1783137366
+    "usd": 62536,
+    "time": 1783154732
   },
   "moves": {
-    "d1": 0.06805387401693785,
-    "d7": 4.39898629187192,
-    "d30": -1.906466772045845
+    "d1": -0.002303977859974271,
+    "d7": 4.325583361273622,
+    "d30": -1.9754363383933993
   },
   "history90d": [
     {
@@ -372,60 +372,70 @@
     },
     {
       "date": "2026-07-04",
-      "close": 62580.95797365817
+      "close": 62573.28577638448
     }
   ],
   "blocks": [
     {
-      "height": 956590,
-      "id": "00000000000000000001060a53f8ca4ed22846fb3630ef9be5faffa8c06aed0c",
-      "timestamp": 1783137284,
-      "txCount": 4136
+      "height": 956628,
+      "id": "0000000000000000000007194075056fd0350ec24720e57642caf2c1eafa8976",
+      "timestamp": 1783154031,
+      "txCount": 5939
     },
     {
-      "height": 956589,
-      "id": "00000000000000000000e891ae593615ee61ddfd3485d5f87f57a1b722fde911",
-      "timestamp": 1783135840,
-      "txCount": 3165
+      "height": 956627,
+      "id": "0000000000000000000013b5dd7cb8815f7c21ae8836b350b156cb994971478c",
+      "timestamp": 1783153672,
+      "txCount": 4393
     },
     {
-      "height": 956588,
-      "id": "0000000000000000000137974034f653771c6d196c4eb5fce923f938a9d859dd",
-      "timestamp": 1783134897,
-      "txCount": 6957
+      "height": 956626,
+      "id": "000000000000000000018917fefbc8d40d18caf1600d6f6d02483ef4d372d1a9",
+      "timestamp": 1783152528,
+      "txCount": 6223
     },
     {
-      "height": 956587,
-      "id": "00000000000000000000c75163056f3fbaa927b6008bac86329c98958983dcdb",
-      "timestamp": 1783134731,
-      "txCount": 5345
+      "height": 956625,
+      "id": "000000000000000000008ffc50c2d1457879fb6838d11c2d433db059c1ca80b2",
+      "timestamp": 1783152294,
+      "txCount": 5463
     },
     {
-      "height": 956586,
-      "id": "00000000000000000000a8f335ecd7cd5d95c8e997cdc0925e1396341627fee8",
-      "timestamp": 1783134563,
-      "txCount": 7114
+      "height": 956624,
+      "id": "00000000000000000000ca0d7c2091026174593b4e10a2e894052efd0dd04da3",
+      "timestamp": 1783152037,
+      "txCount": 6024
     },
     {
-      "height": 956585,
-      "id": "000000000000000000009ab4e74a3f6a20447a8160fde7c597af67b4b951b23f",
-      "timestamp": 1783134514,
-      "txCount": 6005
+      "height": 956623,
+      "id": "000000000000000000001f091f98e2fad1e3c61f2486086480e74781f38ca201",
+      "timestamp": 1783151923,
+      "txCount": 2741
     },
     {
-      "height": 956584,
-      "id": "000000000000000000014fad881fddcd2f0fad175560ee0d76ad5d793a30aea7",
-      "timestamp": 1783134258,
-      "txCount": 3336
+      "height": 956622,
+      "id": "00000000000000000000e32a02a699bc1a522da63c4d54564f5f9ea8d112a497",
+      "timestamp": 1783150607,
+      "txCount": 5835
     },
     {
-      "height": 956583,
-      "id": "00000000000000000000d5d4714a9f2185f8b215707d049261a089de58e14a20",
-      "timestamp": 1783133044,
-      "txCount": 6771
+      "height": 956621,
+      "id": "0000000000000000000198a77958aac346f84307c3aa53a6afcef53f7161a90b",
+      "timestamp": 1783150337,
+      "txCount": 4059
     }
   ],
   "news": [
+    {
+      "title": "XRP climbs 8% as record holder losses signal better risk-reward for buyers",
+      "link": "https://www.coindesk.com/markets/2026/07/04/xrp-climbs-8-as-one-onchain-gauge-signal-shows-favorable-risk-reward-for-buyers",
+      "pubDate": "Sat, 04 Jul 2026 07:08:00 +0000"
+    },
+    {
+      "title": "Bitcoin’s next parabolic run may need $1 trillion in fresh capital",
+      "link": "https://www.coindesk.com/markets/2026/07/04/bitcoin-s-next-parabolic-run-may-need-usd1-trillion-in-fresh-capital",
+      "pubDate": "Sat, 04 Jul 2026 06:48:42 +0000"
+    },
     {
       "title": "This sanctioned Russian stablecoin claims it processes billions, but blockchain analysts disagree",
       "link": "https://www.coindesk.com/business/2026/07/03/this-sanctioned-russian-stablecoin-claims-it-processes-billions-but-blockchain-analysts-disagree",
@@ -475,16 +485,6 @@
       "title": "Finally. $221 million flow into Bitcoin ETFs, ending a painful 10-day outflow streak",
       "link": "https://www.coindesk.com/markets/2026/07/03/finally-usd221-million-flow-into-bitcoin-etfs-ending-a-painful-10-day-outflow-streak",
       "pubDate": "Fri, 03 Jul 2026 05:54:51 +0000"
-    },
-    {
-      "title": "XRP bulls test path back toward $1.10 as token zips 4% higher",
-      "link": "https://www.coindesk.com/markets/2026/07/03/xrp-bulls-test-path-back-toward-usd1-10-as-token-zips-4-higher",
-      "pubDate": "Fri, 03 Jul 2026 05:29:00 +0000"
-    },
-    {
-      "title": "Ether and solana extend gains as a short squeeze lifts bitcoin toward $62,000",
-      "link": "https://www.coindesk.com/markets/2026/07/03/ether-and-solana-extend-gains-as-a-short-squeeze-lifts-bitcoin-toward-usd62-000",
-      "pubDate": "Fri, 03 Jul 2026 05:18:58 +0000"
     }
   ]
 }
