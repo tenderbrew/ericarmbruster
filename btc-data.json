@@ -1,13 +1,13 @@
 {
-  "fetchedAt": "2026-07-05T14:05:12.839Z",
+  "fetchedAt": "2026-07-05T16:17:20.429Z",
   "price": {
-    "usd": 62738,
-    "time": 1783260006
+    "usd": 62658,
+    "time": 1783268108
   },
   "moves": {
-    "d1": -0.5646160037816483,
-    "d7": 5.243391506502348,
-    "d30": 2.981208288873005
+    "d1": -0.6914104619999084,
+    "d7": 5.109191000899371,
+    "d30": 2.849892393193998
   },
   "history90d": [
     {
@@ -372,60 +372,65 @@
     },
     {
       "date": "2026-07-05",
-      "close": 62675.1486481571
+      "close": 62663.89619572304
     }
   ],
   "blocks": [
     {
-      "height": 956794,
-      "id": "000000000000000000005112ce01ce6de997015595895b7e6b96c0aaea14841c",
-      "timestamp": 1783259813,
-      "txCount": 3965
+      "height": 956805,
+      "id": "00000000000000000001dd42b106f423cecda728647c973dbd5dbb18e6d5b21b",
+      "timestamp": 1783267778,
+      "txCount": 3925
     },
     {
-      "height": 956793,
-      "id": "00000000000000000001de10a635373372a3730340691b5c8cdb7d36f2e6cdf6",
-      "timestamp": 1783257882,
-      "txCount": 3544
+      "height": 956804,
+      "id": "00000000000000000001b00a50284b511d153921eef1b9162917053b28396b6c",
+      "timestamp": 1783267106,
+      "txCount": 5713
     },
     {
-      "height": 956792,
-      "id": "000000000000000000015e4a4413747bf3c067a975130281fda267bca006d92a",
-      "timestamp": 1783257120,
-      "txCount": 4363
+      "height": 956803,
+      "id": "000000000000000000014c92f5e3e68ed1fa81faf59a2a7c1d3e36fd68a886da",
+      "timestamp": 1783266862,
+      "txCount": 4757
     },
     {
-      "height": 956791,
-      "id": "00000000000000000000eae7446589c36da6c5b47e42e51ee84dc8d1b8e46533",
-      "timestamp": 1783255322,
-      "txCount": 5034
+      "height": 956802,
+      "id": "0000000000000000000178e2c07a07f798fb8c3acb2ad004dc12681e96a16a32",
+      "timestamp": 1783266769,
+      "txCount": 4483
     },
     {
-      "height": 956790,
-      "id": "00000000000000000000c047f6f766edfce642cf6c06298a25228786fa3b519c",
-      "timestamp": 1783254714,
-      "txCount": 6517
+      "height": 956801,
+      "id": "00000000000000000001e44c4a93b16dcdf690041a08b404c484e56e51e9a2e1",
+      "timestamp": 1783265505,
+      "txCount": 4402
     },
     {
-      "height": 956789,
-      "id": "000000000000000000020fb783ee7cf429d0eff8934ef9564c23da26aef575da",
-      "timestamp": 1783254475,
-      "txCount": 4597
+      "height": 956800,
+      "id": "00000000000000000002053db93fbd0397f6bdaffc662b9be41c137e7b9e4493",
+      "timestamp": 1783264522,
+      "txCount": 3711
     },
     {
-      "height": 956788,
-      "id": "000000000000000000003701d743dfa1eb29295646685e12af281271bf102e2c",
-      "timestamp": 1783253902,
-      "txCount": 5477
+      "height": 956799,
+      "id": "00000000000000000000c0a1dfb626a3306b7294edac18e821d0edb7726af710",
+      "timestamp": 1783264239,
+      "txCount": 2944
     },
     {
-      "height": 956787,
-      "id": "000000000000000000021612cc1265dc2a3deee699466831719cfdad910cd213",
-      "timestamp": 1783253323,
-      "txCount": 5173
+      "height": 956798,
+      "id": "0000000000000000000179d405c646b8122051cd990aa684cbda8a0674807328",
+      "timestamp": 1783264113,
+      "txCount": 3049
     }
   ],
   "news": [
+    {
+      "title": "Americans traded $571 million on Polymarket politic bets despite U.S. ban",
+      "link": "https://www.coindesk.com/tech/2026/07/03/americans-traded-usd571-million-on-polymarket-politic-bets-despite-u-s-ban",
+      "pubDate": "Sun, 05 Jul 2026 15:00:00 +0000"
+    },
     {
       "title": "Banks have stopped asking if stablecoins belong in finance, now they're considering how",
       "link": "https://www.coindesk.com/business/2026/07/05/banks-have-stopped-asking-if-stablecoins-belong-in-finance-now-they-re-considering-how",
@@ -480,11 +485,6 @@
       "title": "Europe led on crypto regulation. Now implementation must match ambition",
       "link": "https://www.coindesk.com/opinion/2026/07/04/europe-led-on-crypto-regulation-now-implementation-must-match-ambition",
       "pubDate": "Sat, 04 Jul 2026 14:00:00 +0000"
-    },
-    {
-      "title": "EU moves to block retail investors from explosive boom of multibillion-dollar prediction markets",
-      "link": "https://www.coindesk.com/policy/2026/07/04/eu-moves-to-block-retail-investors-from-explosive-boom-of-multibillion-dollar-prediction-markets",
-      "pubDate": "Sat, 04 Jul 2026 13:56:27 +0000"
     }
   ]
 }
