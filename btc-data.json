@@ -1,13 +1,13 @@
 {
-  "fetchedAt": "2026-07-05T16:17:20.429Z",
+  "fetchedAt": "2026-07-05T19:40:21.212Z",
   "price": {
-    "usd": 62658,
-    "time": 1783268108
+    "usd": 62756,
+    "time": 1783280113
   },
   "moves": {
-    "d1": -0.6914104619999084,
-    "d7": 5.109191000899371,
-    "d30": 2.849892393193998
+    "d1": -0.5360872506825376,
+    "d7": 5.273586620263027,
+    "d30": 3.0107543654007918
   },
   "history90d": [
     {
@@ -372,60 +372,65 @@
     },
     {
       "date": "2026-07-05",
-      "close": 62663.89619572304
+      "close": 62747.02284150752
     }
   ],
   "blocks": [
     {
-      "height": 956805,
-      "id": "00000000000000000001dd42b106f423cecda728647c973dbd5dbb18e6d5b21b",
-      "timestamp": 1783267778,
-      "txCount": 3925
+      "height": 956827,
+      "id": "0000000000000000000110a3670beab795b1f6b7b3d6a049f340409e32995699",
+      "timestamp": 1783280196,
+      "txCount": 4551
     },
     {
-      "height": 956804,
-      "id": "00000000000000000001b00a50284b511d153921eef1b9162917053b28396b6c",
-      "timestamp": 1783267106,
-      "txCount": 5713
+      "height": 956826,
+      "id": "00000000000000000001a7ac34ca4c9f531f960ef2fc71e5cf961512bde2fdf0",
+      "timestamp": 1783279676,
+      "txCount": 6278
     },
     {
-      "height": 956803,
-      "id": "000000000000000000014c92f5e3e68ed1fa81faf59a2a7c1d3e36fd68a886da",
-      "timestamp": 1783266862,
-      "txCount": 4757
+      "height": 956825,
+      "id": "000000000000000000008cec4e530b779e41b8420a1500f65f3af85a5df8c24a",
+      "timestamp": 1783279397,
+      "txCount": 4939
     },
     {
-      "height": 956802,
-      "id": "0000000000000000000178e2c07a07f798fb8c3acb2ad004dc12681e96a16a32",
-      "timestamp": 1783266769,
-      "txCount": 4483
+      "height": 956824,
+      "id": "00000000000000000001cf968e9069d6f6d79fad06152ff91c50e6599dc3ea98",
+      "timestamp": 1783279001,
+      "txCount": 4265
     },
     {
-      "height": 956801,
-      "id": "00000000000000000001e44c4a93b16dcdf690041a08b404c484e56e51e9a2e1",
-      "timestamp": 1783265505,
-      "txCount": 4402
+      "height": 956823,
+      "id": "000000000000000000016cc83ab12627fd4f7dc582f57b63241bdcc325a4f777",
+      "timestamp": 1783277850,
+      "txCount": 5497
     },
     {
-      "height": 956800,
-      "id": "00000000000000000002053db93fbd0397f6bdaffc662b9be41c137e7b9e4493",
-      "timestamp": 1783264522,
-      "txCount": 3711
+      "height": 956822,
+      "id": "00000000000000000001b6234b2f588ab9abaa58e8cfed317abec2e2ca5e96e6",
+      "timestamp": 1783277308,
+      "txCount": 6512
     },
     {
-      "height": 956799,
-      "id": "00000000000000000000c0a1dfb626a3306b7294edac18e821d0edb7726af710",
-      "timestamp": 1783264239,
-      "txCount": 2944
+      "height": 956821,
+      "id": "000000000000000000006c5daf3c748d7276ce9480ec0f582857a670a94d03c9",
+      "timestamp": 1783277061,
+      "txCount": 5050
     },
     {
-      "height": 956798,
-      "id": "0000000000000000000179d405c646b8122051cd990aa684cbda8a0674807328",
-      "timestamp": 1783264113,
-      "txCount": 3049
+      "height": 956820,
+      "id": "000000000000000000016288da4a0086d9401e33f8256f2ad43ae18e156dcad1",
+      "timestamp": 1783276565,
+      "txCount": 4961
     }
   ],
   "news": [
+    {
+      "title": "Clarity and Congress's summer break: State of Crypto",
+      "link": "https://www.coindesk.com/policy/2026/07/05/clarity-and-congress-s-summer-break-state-of-crypto",
+      "pubDate": "Sun, 05 Jul 2026 18:30:00 +0000"
+    },
     {
       "title": "Americans traded $571 million on Polymarket politic bets despite U.S. ban",
       "link": "https://www.coindesk.com/tech/2026/07/03/americans-traded-usd571-million-on-polymarket-politic-bets-despite-u-s-ban",
@@ -480,11 +485,6 @@
       "title": "Trump's crypto token buyers are down $3.8 billion, blockchain data shows",
       "link": "https://www.coindesk.com/business/2026/07/04/trump-s-crypto-token-buyers-are-down-usd3-8-billion-blockchain-data-shows",
       "pubDate": "Sat, 04 Jul 2026 15:30:52 +0000"
-    },
-    {
-      "title": "Europe led on crypto regulation. Now implementation must match ambition",
-      "link": "https://www.coindesk.com/opinion/2026/07/04/europe-led-on-crypto-regulation-now-implementation-must-match-ambition",
-      "pubDate": "Sat, 04 Jul 2026 14:00:00 +0000"
     }
   ]
 }
