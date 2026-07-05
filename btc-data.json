@@ -1,13 +1,13 @@
 {
-  "fetchedAt": "2026-07-05T04:17:25.814Z",
+  "fetchedAt": "2026-07-05T09:21:05.317Z",
   "price": {
-    "usd": 62711,
-    "time": 1783224606
+    "usd": 62816,
+    "time": 1783242908
   },
   "moves": {
-    "d1": -0.6074091334303144,
-    "d7": 5.198098835861331,
-    "d30": 2.9368891740813474
+    "d1": -0.44099140701884254,
+    "d7": 5.374236999465265,
+    "d30": 3.1092412871600583
   },
   "history90d": [
     {
@@ -372,60 +372,65 @@
     },
     {
       "date": "2026-07-05",
-      "close": 62742.38870226559
+      "close": 62812.564289679365
     }
   ],
   "blocks": [
     {
-      "height": 956735,
-      "id": "00000000000000000001de013e39552e22b3a8220d1f8c5587cf35b485bddde1",
-      "timestamp": 1783223993,
-      "txCount": 3333
+      "height": 956769,
+      "id": "0000000000000000000032e3303787d637af9ba3d9642164327c90e350543969",
+      "timestamp": 1783243194,
+      "txCount": 4842
     },
     {
-      "height": 956734,
-      "id": "0000000000000000000185864dd3fed99fe43eb812fb0c052b06c0fc65e502ae",
-      "timestamp": 1783222503,
-      "txCount": 4895
+      "height": 956768,
+      "id": "00000000000000000001a12e518d888ab8ad10224e5887ed23faa8681367c387",
+      "timestamp": 1783242091,
+      "txCount": 4209
     },
     {
-      "height": 956733,
-      "id": "00000000000000000001b94ed119d65bdd2eae5027ea5c369368ebbd3d0e3702",
-      "timestamp": 1783221944,
-      "txCount": 4487
+      "height": 956767,
+      "id": "000000000000000000018bc817ce842c653403444132c1daa683c96c8c857e1b",
+      "timestamp": 1783240943,
+      "txCount": 1041
     },
     {
-      "height": 956732,
-      "id": "00000000000000000001d03f054ab25207f01ceb3b44e7f3e62ea0ba1f9e63f2",
-      "timestamp": 1783221829,
-      "txCount": 3865
+      "height": 956766,
+      "id": "0000000000000000000212250d13e0cda7558cb07bb98c226720fbda84ca56f9",
+      "timestamp": 1783240654,
+      "txCount": 3476
     },
     {
-      "height": 956731,
-      "id": "00000000000000000001770a4acedb958c6fbfca9ca532a4b8500533556bd066",
-      "timestamp": 1783219882,
-      "txCount": 4241
+      "height": 956765,
+      "id": "0000000000000000000024ed1520c6e6ea36eaffe0d68767cb471511fa738642",
+      "timestamp": 1783240625,
+      "txCount": 4491
     },
     {
-      "height": 956730,
-      "id": "00000000000000000001c6551bbd170a9b4ac2cd6649e2eab2fbe8d46421290d",
-      "timestamp": 1783217264,
-      "txCount": 5307
+      "height": 956764,
+      "id": "00000000000000000001d0079432c9be7d8ed7736fa8239a972eba833751ddd3",
+      "timestamp": 1783238400,
+      "txCount": 6435
     },
     {
-      "height": 956729,
-      "id": "00000000000000000000ceaaed724c7b3e58e02ec87eee532df516607eeb7af7",
-      "timestamp": 1783216415,
-      "txCount": 6067
+      "height": 956763,
+      "id": "0000000000000000000200c49de3a5884460e0abdcca0a7312cc4bbd0ab73be1",
+      "timestamp": 1783238278,
+      "txCount": 6146
     },
     {
-      "height": 956728,
-      "id": "00000000000000000000fe569453e3a5bbcd5ac1cfcfadbb93b06230f98eb34e",
-      "timestamp": 1783215829,
-      "txCount": 5736
+      "height": 956762,
+      "id": "00000000000000000000560fd67e91806bb2010435721aee1c0bd3f16d440e20",
+      "timestamp": 1783238036,
+      "txCount": 4312
     }
   ],
   "news": [
+    {
+      "title": "Barstool's Portnoy plans to hold bitcoin down to zero after timing it wrong every time",
+      "link": "https://www.coindesk.com/markets/2026/07/05/barstool-s-portnoy-plans-to-hold-bitcoin-down-to-zero-after-timing-it-wrong-every-time",
+      "pubDate": "Sun, 05 Jul 2026 06:00:22 +0000"
+    },
     {
       "title": "Tokenization's next use case is personalized portfolios, NYLIM executive says",
       "link": "https://www.coindesk.com/business/2026/07/02/tokenization-s-next-use-case-is-personalized-portfolios-nylim-executive-says",
@@ -480,11 +485,6 @@
       "title": "Bitcoin’s next parabolic run may need $1 trillion in fresh capital",
       "link": "https://www.coindesk.com/markets/2026/07/04/bitcoin-s-next-parabolic-run-may-need-usd1-trillion-in-fresh-capital",
       "pubDate": "Sat, 04 Jul 2026 06:48:42 +0000"
-    },
-    {
-      "title": "This sanctioned Russian stablecoin claims it processes billions, but blockchain analysts disagree",
-      "link": "https://www.coindesk.com/business/2026/07/03/this-sanctioned-russian-stablecoin-claims-it-processes-billions-but-blockchain-analysts-disagree",
-      "pubDate": "Fri, 03 Jul 2026 19:18:59 +0000"
     }
   ]
 }
