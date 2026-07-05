@@ -1,13 +1,13 @@
 {
-  "fetchedAt": "2026-07-05T09:21:05.317Z",
+  "fetchedAt": "2026-07-05T14:05:12.839Z",
   "price": {
-    "usd": 62816,
-    "time": 1783242908
+    "usd": 62738,
+    "time": 1783260006
   },
   "moves": {
-    "d1": -0.44099140701884254,
-    "d7": 5.374236999465265,
-    "d30": 3.1092412871600583
+    "d1": -0.5646160037816483,
+    "d7": 5.243391506502348,
+    "d30": 2.981208288873005
   },
   "history90d": [
     {
@@ -372,60 +372,75 @@
     },
     {
       "date": "2026-07-05",
-      "close": 62812.564289679365
+      "close": 62675.1486481571
     }
   ],
   "blocks": [
     {
-      "height": 956769,
-      "id": "0000000000000000000032e3303787d637af9ba3d9642164327c90e350543969",
-      "timestamp": 1783243194,
-      "txCount": 4842
+      "height": 956794,
+      "id": "000000000000000000005112ce01ce6de997015595895b7e6b96c0aaea14841c",
+      "timestamp": 1783259813,
+      "txCount": 3965
     },
     {
-      "height": 956768,
-      "id": "00000000000000000001a12e518d888ab8ad10224e5887ed23faa8681367c387",
-      "timestamp": 1783242091,
-      "txCount": 4209
+      "height": 956793,
+      "id": "00000000000000000001de10a635373372a3730340691b5c8cdb7d36f2e6cdf6",
+      "timestamp": 1783257882,
+      "txCount": 3544
     },
     {
-      "height": 956767,
-      "id": "000000000000000000018bc817ce842c653403444132c1daa683c96c8c857e1b",
-      "timestamp": 1783240943,
-      "txCount": 1041
+      "height": 956792,
+      "id": "000000000000000000015e4a4413747bf3c067a975130281fda267bca006d92a",
+      "timestamp": 1783257120,
+      "txCount": 4363
     },
     {
-      "height": 956766,
-      "id": "0000000000000000000212250d13e0cda7558cb07bb98c226720fbda84ca56f9",
-      "timestamp": 1783240654,
-      "txCount": 3476
+      "height": 956791,
+      "id": "00000000000000000000eae7446589c36da6c5b47e42e51ee84dc8d1b8e46533",
+      "timestamp": 1783255322,
+      "txCount": 5034
     },
     {
-      "height": 956765,
-      "id": "0000000000000000000024ed1520c6e6ea36eaffe0d68767cb471511fa738642",
-      "timestamp": 1783240625,
-      "txCount": 4491
+      "height": 956790,
+      "id": "00000000000000000000c047f6f766edfce642cf6c06298a25228786fa3b519c",
+      "timestamp": 1783254714,
+      "txCount": 6517
     },
     {
-      "height": 956764,
-      "id": "00000000000000000001d0079432c9be7d8ed7736fa8239a972eba833751ddd3",
-      "timestamp": 1783238400,
-      "txCount": 6435
+      "height": 956789,
+      "id": "000000000000000000020fb783ee7cf429d0eff8934ef9564c23da26aef575da",
+      "timestamp": 1783254475,
+      "txCount": 4597
     },
     {
-      "height": 956763,
-      "id": "0000000000000000000200c49de3a5884460e0abdcca0a7312cc4bbd0ab73be1",
-      "timestamp": 1783238278,
-      "txCount": 6146
+      "height": 956788,
+      "id": "000000000000000000003701d743dfa1eb29295646685e12af281271bf102e2c",
+      "timestamp": 1783253902,
+      "txCount": 5477
     },
     {
-      "height": 956762,
-      "id": "00000000000000000000560fd67e91806bb2010435721aee1c0bd3f16d440e20",
-      "timestamp": 1783238036,
-      "txCount": 4312
+      "height": 956787,
+      "id": "000000000000000000021612cc1265dc2a3deee699466831719cfdad910cd213",
+      "timestamp": 1783253323,
+      "txCount": 5173
     }
   ],
   "news": [
+    {
+      "title": "Banks have stopped asking if stablecoins belong in finance, now they're considering how",
+      "link": "https://www.coindesk.com/business/2026/07/05/banks-have-stopped-asking-if-stablecoins-belong-in-finance-now-they-re-considering-how",
+      "pubDate": "Sun, 05 Jul 2026 14:00:00 +0000"
+    },
+    {
+      "title": "Collateral, not yield, will decide which stablecoins win",
+      "link": "https://www.coindesk.com/opinion/2026/07/05/collateral-not-yield-will-decide-which-stablecoins-win",
+      "pubDate": "Sun, 05 Jul 2026 13:00:00 +0000"
+    },
+    {
+      "title": "Kalshi and prediction market sector embroiled in mixed bag of legal fights across U.S.",
+      "link": "https://www.coindesk.com/news-analysis/2026/07/02/kalshi-and-prediction-market-sector-embroiled-in-mixed-bag-of-legal-fights-across-u-s",
+      "pubDate": "Sun, 05 Jul 2026 13:00:00 +0000"
+    },
     {
       "title": "Barstool's Portnoy plans to hold bitcoin down to zero after timing it wrong every time",
       "link": "https://www.coindesk.com/markets/2026/07/05/barstool-s-portnoy-plans-to-hold-bitcoin-down-to-zero-after-timing-it-wrong-every-time",
@@ -470,21 +485,6 @@
       "title": "EU moves to block retail investors from explosive boom of multibillion-dollar prediction markets",
       "link": "https://www.coindesk.com/policy/2026/07/04/eu-moves-to-block-retail-investors-from-explosive-boom-of-multibillion-dollar-prediction-markets",
       "pubDate": "Sat, 04 Jul 2026 13:56:27 +0000"
-    },
-    {
-      "title": "UK's bold new crypto rules promise to unlock global trading, but huge compliance hurdles still threaten the rollout",
-      "link": "https://www.coindesk.com/policy/2026/07/04/uk-s-bold-new-crypto-rules-promise-to-unlock-global-trading-but-huge-compliance-hurdles-still-threaten-the-rollout",
-      "pubDate": "Sat, 04 Jul 2026 12:00:00 +0000"
-    },
-    {
-      "title": "XRP climbs 8% as record holder losses signal better risk-reward for buyers",
-      "link": "https://www.coindesk.com/markets/2026/07/04/xrp-climbs-8-as-one-onchain-gauge-signal-shows-favorable-risk-reward-for-buyers",
-      "pubDate": "Sat, 04 Jul 2026 07:08:00 +0000"
-    },
-    {
-      "title": "Bitcoin’s next parabolic run may need $1 trillion in fresh capital",
-      "link": "https://www.coindesk.com/markets/2026/07/04/bitcoin-s-next-parabolic-run-may-need-usd1-trillion-in-fresh-capital",
-      "pubDate": "Sat, 04 Jul 2026 06:48:42 +0000"
     }
   ]
 }
