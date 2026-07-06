@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-07-06T15:40:42.198Z",
+  "fetchedAt": "2026-07-06T20:02:49.740Z",
   "indicators": {
     "UNRATE": {
       "latest": {
@@ -163,12 +163,12 @@
     },
     "BAMLH0A0HYM2": {
       "latest": {
-        "date": "2026-07-02",
-        "value": 2.75
+        "date": "2026-07-03",
+        "value": 2.74
       },
       "previous": {
-        "date": "2026-07-01",
-        "value": 2.74
+        "date": "2026-07-02",
+        "value": 2.75
       }
     },
     "MORTGAGE30US": {
@@ -301,6 +301,12 @@
   },
   "news": [
     {
+      "title": "Why Increases in Money Supply Can’t Create Economic Growth",
+      "link": "https://mises.org/mises-wire/why-increases-money-supply-cant-create-economic-growth",
+      "pubDate": "Mon, 06 Jul 2026 11:00:00 CDT",
+      "kind": "Mises Wire"
+    },
+    {
       "title": "Venezuela's Government Has Made the Earthquake Even More Tragic",
       "link": "https://mises.org/power-market/venezuelas-government-has-made-earthquake-even-more-tragic",
       "pubDate": "Mon, 06 Jul 2026 07:00:00 CDT",
@@ -353,12 +359,6 @@
       "link": "https://mises.org/podcasts/radio-rothbard/what-independence-day-really-means",
       "pubDate": "Fri, 03 Jul 2026 03:40:03 CDT",
       "kind": "Podcast"
-    },
-    {
-      "title": "Rationality, Psychology and Capitalism",
-      "link": "https://mises.org/power-market/rationality-psychology-and-capitalism",
-      "pubDate": "Fri, 03 Jul 2026 03:00:00 CDT",
-      "kind": "Article"
     }
   ]
 }
