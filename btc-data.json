@@ -1,13 +1,13 @@
 {
-  "fetchedAt": "2026-07-06T20:12:20.638Z",
+  "fetchedAt": "2026-07-06T22:34:27.362Z",
   "price": {
-    "usd": 63570,
-    "time": 1783368308
+    "usd": 64175,
+    "time": 1783377016
   },
   "moves": {
-    "d1": 0.03709078273945732,
-    "d7": 5.668867683320622,
-    "d30": 4.449615860181666
+    "d1": 0.9891505581611559,
+    "d7": 6.6745254613355565,
+    "d30": 5.443669935931372
   },
   "history90d": [
     {
@@ -372,10 +372,34 @@
     },
     {
       "date": "2026-07-06",
-      "close": 63554.689972195345
+      "close": 64161.52361110188
     }
   ],
   "blocks": [
+    {
+      "height": 956954,
+      "id": "00000000000000000000511d976097061d85b74ff89746a45618acc87725a2bc",
+      "timestamp": 1783377079,
+      "txCount": 4523
+    },
+    {
+      "height": 956953,
+      "id": "0000000000000000000081cd32b129de781b02f609ea7423af53ba340e4ccc7a",
+      "timestamp": 1783377015,
+      "txCount": 3373
+    },
+    {
+      "height": 956952,
+      "id": "00000000000000000000e6f642f2745884555f3e1ec8a9118a47be50229c37ae",
+      "timestamp": 1783370269,
+      "txCount": 4558
+    },
+    {
+      "height": 956951,
+      "id": "000000000000000000019a954d2e97a9234ea8c6dc7437b3089f8ac4ea900f3f",
+      "timestamp": 1783369038,
+      "txCount": 4388
+    },
     {
       "height": 956950,
       "id": "0000000000000000000170249ddcae6a6e84a1613cd86728753cb8fbe5f7efa6",
@@ -399,33 +423,14 @@
       "id": "0000000000000000000020562d79560fc57fd7855bfc8e705a2f9fcd991391d2",
       "timestamp": 1783361748,
       "txCount": 4554
-    },
-    {
-      "height": 956946,
-      "id": "0000000000000000000144af662c025875c086c62b990d0b0dc21185f28036d6",
-      "timestamp": 1783360320,
-      "txCount": 3891
-    },
-    {
-      "height": 956945,
-      "id": "00000000000000000000e69c23e3c5692e5190acdef68a1293dfef8f82de50fa",
-      "timestamp": 1783359268,
-      "txCount": 5337
-    },
-    {
-      "height": 956944,
-      "id": "000000000000000000012bfc9b48c3142db3196339cd1dce20d816dbb6530ce3",
-      "timestamp": 1783359050,
-      "txCount": 4256
-    },
-    {
-      "height": 956943,
-      "id": "00000000000000000001420f1a6714c5a5276bc5fca5c685de282506764df34f",
-      "timestamp": 1783358442,
-      "txCount": 5192
     }
   ],
   "news": [
+    {
+      "title": "Bitcoin's U.S. reserve still a work-in-progress as federal agencies hash it out",
+      "link": "https://www.coindesk.com/policy/2026/07/06/bitcoin-s-u-s-reserve-still-a-work-in-progress-as-federal-agencies-hash-it-out",
+      "pubDate": "Mon, 06 Jul 2026 21:40:06 +0000"
+    },
     {
       "title": "Circle’s USDC is leaving Tether behind in the stablecoin volume race, new data from Visa shows",
       "link": "https://www.coindesk.com/business/2026/07/06/circle-s-usdc-is-leaving-tether-behind-in-the-stablecoin-volume-race",
@@ -480,11 +485,6 @@
       "title": "U.S. inflation outlook underpins bitcoin bulls after best week since March",
       "link": "https://www.coindesk.com/daybook-us/2026/07/06/u-s-inflation-outlook-underpins-bitcoin-bulls-after-best-week-since-march",
       "pubDate": "Mon, 06 Jul 2026 11:15:00 +0000"
-    },
-    {
-      "title": "Crypto bounces back from the brink as altcoin optimism returns despite pockets of weakness",
-      "link": "https://www.coindesk.com/markets/2026/07/06/crypto-bounces-back-from-the-brink-as-altcoin-optimism-returns-despite-pockets-of-weakness",
-      "pubDate": "Mon, 06 Jul 2026 10:44:45 +0000"
     }
   ]
 }
