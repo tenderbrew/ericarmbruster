@@ -1,13 +1,13 @@
 {
-  "fetchedAt": "2026-07-06T10:59:16.705Z",
+  "fetchedAt": "2026-07-06T15:53:35.349Z",
   "price": {
-    "usd": 62771,
-    "time": 1783335310
+    "usd": 62844,
+    "time": 1783353008
   },
   "moves": {
-    "d1": -1.2202575818257233,
-    "d7": 4.3407345186364354,
-    "d30": 3.1368072543568104
+    "d1": -1.1053809477665766,
+    "d7": 4.462078349702714,
+    "d30": 3.2567509692819963
   },
   "history90d": [
     {
@@ -372,60 +372,110 @@
     },
     {
       "date": "2026-07-06",
-      "close": 62762.00926941357
+      "close": 63261.660544352606
     }
   ],
   "blocks": [
     {
-      "height": 956908,
-      "id": "000000000000000000010ce90535fbfb075609136c239016e30813abc460a910",
-      "timestamp": 1783335170,
-      "txCount": 4125
+      "height": 956933,
+      "id": "000000000000000000010fa630a226a673cc56e94d27b2104d55b0037fbae1e8",
+      "timestamp": 1783352680,
+      "txCount": 3513
     },
     {
-      "height": 956907,
-      "id": "000000000000000000005a0f84a3ece9c7ceda03b6606933e0c66755b8e39139",
-      "timestamp": 1783334296,
-      "txCount": 4489
+      "height": 956932,
+      "id": "00000000000000000001262e595dd5f6832d158ffb3c5d342174f55fc99acdb3",
+      "timestamp": 1783352495,
+      "txCount": 2763
     },
     {
-      "height": 956906,
-      "id": "00000000000000000000bc9f9c2d88246d0ab2d34259aeee8efd6d538c19bb41",
-      "timestamp": 1783333961,
-      "txCount": 4848
+      "height": 956931,
+      "id": "00000000000000000001069492cd9d8099a86ea3d873438f13485d00b15a2d0a",
+      "timestamp": 1783352472,
+      "txCount": 3464
     },
     {
-      "height": 956905,
-      "id": "0000000000000000000005fecff90435427a7df581ac83d2c240cc7faddf5e25",
-      "timestamp": 1783333492,
-      "txCount": 4025
+      "height": 956930,
+      "id": "0000000000000000000165d6c2d15e2378dd63b4b2200c987fc87814c8aeed60",
+      "timestamp": 1783351982,
+      "txCount": 3431
     },
     {
-      "height": 956904,
-      "id": "00000000000000000000fa64dabcbd5f10daec94f921d99fc49212dab122be7d",
-      "timestamp": 1783333105,
-      "txCount": 3922
+      "height": 956929,
+      "id": "00000000000000000000381c6de864898a61670079c46a63029448a6fa136e8c",
+      "timestamp": 1783351925,
+      "txCount": 4306
     },
     {
-      "height": 956903,
-      "id": "000000000000000000005abfd2cacbc9f8f4fec731defbebdb3dada6e3174b3f",
-      "timestamp": 1783331690,
-      "txCount": 3500
+      "height": 956928,
+      "id": "0000000000000000000024abdeb083c39870ed9d029902e01e2cc30e0131cd85",
+      "timestamp": 1783350356,
+      "txCount": 3984
     },
     {
-      "height": 956902,
-      "id": "00000000000000000001300200e8f3df8499a79c004677c9e88db86a253bda9b",
-      "timestamp": 1783331188,
-      "txCount": 4103
+      "height": 956927,
+      "id": "000000000000000000004ddfdb548a31e0b9b672de9f2d86eea8b74aa7040713",
+      "timestamp": 1783348198,
+      "txCount": 4891
     },
     {
-      "height": 956901,
-      "id": "00000000000000000000f7a8cacba438341b120d0640e975c1d0ccd4f8732d03",
-      "timestamp": 1783330301,
-      "txCount": 4051
+      "height": 956926,
+      "id": "000000000000000000016a5b353443db3179d515d081621c402ae37055c294c5",
+      "timestamp": 1783348132,
+      "txCount": 4350
     }
   ],
   "news": [
+    {
+      "title": "One month that shook the market: Saylor's struggles over bitcoin strategy yields big losses",
+      "link": "https://www.coindesk.com/markets/2026/07/06/one-month-that-shook-the-market-saylor-s-struggles-over-bitcoin-strategy-yields-big-loss",
+      "pubDate": "Mon, 06 Jul 2026 15:47:12 +0000"
+    },
+    {
+      "title": "Ethereum developers embrace Vitalik Buterin's long-term vision but urge quicker execution",
+      "link": "https://www.coindesk.com/tech/2026/07/06/ethereum-developers-embrace-vitalik-buterin-s-long-term-vision-but-urge-quicker-execution",
+      "pubDate": "Mon, 06 Jul 2026 15:34:33 +0000"
+    },
+    {
+      "title": "Securitize eyes acquisitions with $400 million war chest after going public, CEO says",
+      "link": "https://www.coindesk.com/business/2026/07/06/securitize-eyes-acquisitions-with-usd400-million-war-chest-after-going-public-ceo-says",
+      "pubDate": "Mon, 06 Jul 2026 14:25:32 +0000"
+    },
+    {
+      "title": "DeFi protocol Summer.fi halts Lazy Summer vaults after $6 million exploit",
+      "link": "https://www.coindesk.com/web3/2026/07/06/defi-protocol-summer-fi-halts-lazy-summer-vaults-after-usd6-million-exploit",
+      "pubDate": "Mon, 06 Jul 2026 13:42:12 +0000"
+    },
+    {
+      "title": "Cantor says Strategy's recovery hinges on restoring STRC to par",
+      "link": "https://www.coindesk.com/markets/2026/07/06/cantor-says-strategy-s-recovery-hinges-on-restoring-strc-to-par",
+      "pubDate": "Mon, 06 Jul 2026 13:06:09 +0000"
+    },
+    {
+      "title": "Bitmine added another $74 million in ether as Tom Lee bets on Clarity Act boost",
+      "link": "https://www.coindesk.com/business/2026/07/06/bitmine-added-another-usd74-million-in-ether-as-tom-lee-bets-on-clarity-act-boost",
+      "pubDate": "Mon, 06 Jul 2026 12:54:37 +0000"
+    },
+    {
+      "title": "Michael Saylor's Strategy dramatically ups pace of bitcoin sales, raising $216 million",
+      "link": "https://www.coindesk.com/markets/2026/07/06/michael-saylor-s-strategy-dramatically-ups-pace-of-bitcoin-sales-raising-usd216-million",
+      "pubDate": "Mon, 06 Jul 2026 12:16:28 +0000"
+    },
+    {
+      "title": "Russia's largest bank plans crypto wallet launch as Moscow clears market path",
+      "link": "https://www.coindesk.com/business/2026/07/06/russia-s-largest-bank-plans-crypto-wallet-launch-as-moscow-clears-market-path",
+      "pubDate": "Mon, 06 Jul 2026 11:36:05 +0000"
+    },
+    {
+      "title": "SpaceX's Nasdaq 100 inclusion comes with a historical warning",
+      "link": "https://www.coindesk.com/markets/2026/07/06/spacex-s-nasdaq-100-inclusion-comes-with-a-historical-warning",
+      "pubDate": "Mon, 06 Jul 2026 11:16:26 +0000"
+    },
+    {
+      "title": "U.S. inflation outlook underpins bitcoin bulls after best week since March",
+      "link": "https://www.coindesk.com/daybook-us/2026/07/06/u-s-inflation-outlook-underpins-bitcoin-bulls-after-best-week-since-march",
+      "pubDate": "Mon, 06 Jul 2026 11:15:00 +0000"
+    },
     {
       "title": "Crypto bounces back from the brink as altcoin optimism returns despite pockets of weakness",
       "link": "https://www.coindesk.com/markets/2026/07/06/crypto-bounces-back-from-the-brink-as-altcoin-optimism-returns-despite-pockets-of-weakness",
@@ -435,56 +485,6 @@
       "title": "Bitcoin's Sharpe Ratio slides to lowest since 2022. Here's what it means.",
       "link": "https://www.coindesk.com/markets/2026/07/06/bitcoin-s-sharpe-ratio-slides-to-lowest-since-2022-here-s-what-it-means",
       "pubDate": "Mon, 06 Jul 2026 10:19:56 +0000"
-    },
-    {
-      "title": "Ripple's preliminary crypto asset provider license in Luxembourg upgraded to fully compliant",
-      "link": "https://www.coindesk.com/policy/2026/07/06/ripple-s-preliminary-crypto-asset-provider-license-in-luxembourg-upgraded-to-fully-compliant",
-      "pubDate": "Mon, 06 Jul 2026 10:01:24 +0000"
-    },
-    {
-      "title": "Coinbase AI draws backlash after erroneously publishing World Cup result before kickoff",
-      "link": "https://www.coindesk.com/business/2026/07/06/coinbase-ai-draws-backlash-after-pushing-world-cup-result-before-kickoff",
-      "pubDate": "Mon, 06 Jul 2026 09:39:52 +0000"
-    },
-    {
-      "title": "FOMC minutes, SpaceX joins Nasdaq 100: Crypto Week Ahead",
-      "link": "https://www.coindesk.com/markets/2026/07/06/fomc-minutes-spacex-joins-nasdaq-100-crypto-week-ahead",
-      "pubDate": "Mon, 06 Jul 2026 08:18:05 +0000"
-    },
-    {
-      "title": "Vitalik Buterin says Ethereum is preparing its 'biggest rebuild' since the Merge",
-      "link": "https://www.coindesk.com/tech/2026/07/06/vitalik-buterin-says-ethereum-is-preparing-its-biggest-rebuild-since-the-merge",
-      "pubDate": "Mon, 06 Jul 2026 07:44:58 +0000"
-    },
-    {
-      "title": "Live markets: Bitcoin pops to $63,900, then reverses, as week begins",
-      "link": "https://www.coindesk.com/tech/2026/07/06/live-markets-bitcoin-pops-to-usd63-900-then-reverses-as-week-begins",
-      "pubDate": "Mon, 06 Jul 2026 07:43:21 +0000"
-    },
-    {
-      "title": "I am contemplating selling some of my bitcoin for gold, veteran trader Peter Brandt says",
-      "link": "https://www.coindesk.com/markets/2026/07/06/i-am-contemplating-selling-some-of-my-bitcoin-for-gold-veteran-trader-peter-brandt-says",
-      "pubDate": "Mon, 06 Jul 2026 06:03:29 +0000"
-    },
-    {
-      "title": "XRP rises 3% as $1.14 breakout turns into support test",
-      "link": "https://www.coindesk.com/markets/2026/07/06/xrp-rises-3-as-usd1-14-breakout-turns-into-support-test",
-      "pubDate": "Mon, 06 Jul 2026 05:15:01 +0000"
-    },
-    {
-      "title": "Ether leads crypto's hold above key levels as bitcoin steadies over $63,000",
-      "link": "https://www.coindesk.com/markets/2026/07/06/ether-leads-crypto-s-hold-above-key-levels-as-bitcoin-steadies-over-usd63-000",
-      "pubDate": "Mon, 06 Jul 2026 05:09:07 +0000"
-    },
-    {
-      "title": "Clarity and Congress's summer break: State of Crypto",
-      "link": "https://www.coindesk.com/policy/2026/07/05/clarity-and-congress-s-summer-break-state-of-crypto",
-      "pubDate": "Sun, 05 Jul 2026 18:30:00 +0000"
-    },
-    {
-      "title": "Americans traded $571 million on Polymarket politic bets despite U.S. ban",
-      "link": "https://www.coindesk.com/tech/2026/07/03/americans-traded-usd571-million-on-polymarket-politic-bets-despite-u-s-ban",
-      "pubDate": "Sun, 05 Jul 2026 15:00:00 +0000"
     }
   ]
 }
