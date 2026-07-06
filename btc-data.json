@@ -1,13 +1,13 @@
 {
-  "fetchedAt": "2026-07-06T15:53:35.349Z",
+  "fetchedAt": "2026-07-06T20:12:20.638Z",
   "price": {
-    "usd": 62844,
-    "time": 1783353008
+    "usd": 63570,
+    "time": 1783368308
   },
   "moves": {
-    "d1": -1.1053809477665766,
-    "d7": 4.462078349702714,
-    "d30": 3.2567509692819963
+    "d1": 0.03709078273945732,
+    "d7": 5.668867683320622,
+    "d30": 4.449615860181666
   },
   "history90d": [
     {
@@ -372,62 +372,67 @@
     },
     {
       "date": "2026-07-06",
-      "close": 63261.660544352606
+      "close": 63554.689972195345
     }
   ],
   "blocks": [
     {
-      "height": 956933,
-      "id": "000000000000000000010fa630a226a673cc56e94d27b2104d55b0037fbae1e8",
-      "timestamp": 1783352680,
-      "txCount": 3513
+      "height": 956950,
+      "id": "0000000000000000000170249ddcae6a6e84a1613cd86728753cb8fbe5f7efa6",
+      "timestamp": 1783367925,
+      "txCount": 3859
     },
     {
-      "height": 956932,
-      "id": "00000000000000000001262e595dd5f6832d158ffb3c5d342174f55fc99acdb3",
-      "timestamp": 1783352495,
-      "txCount": 2763
+      "height": 956949,
+      "id": "00000000000000000000411e6546f4eaf21471ed863993b8c60389ea94d085ba",
+      "timestamp": 1783364746,
+      "txCount": 4239
     },
     {
-      "height": 956931,
-      "id": "00000000000000000001069492cd9d8099a86ea3d873438f13485d00b15a2d0a",
-      "timestamp": 1783352472,
-      "txCount": 3464
+      "height": 956948,
+      "id": "0000000000000000000051e76cb37371ee3a0c92df90e16fb940007e7cd7b503",
+      "timestamp": 1783361704,
+      "txCount": 3170
     },
     {
-      "height": 956930,
-      "id": "0000000000000000000165d6c2d15e2378dd63b4b2200c987fc87814c8aeed60",
-      "timestamp": 1783351982,
-      "txCount": 3431
+      "height": 956947,
+      "id": "0000000000000000000020562d79560fc57fd7855bfc8e705a2f9fcd991391d2",
+      "timestamp": 1783361748,
+      "txCount": 4554
     },
     {
-      "height": 956929,
-      "id": "00000000000000000000381c6de864898a61670079c46a63029448a6fa136e8c",
-      "timestamp": 1783351925,
-      "txCount": 4306
+      "height": 956946,
+      "id": "0000000000000000000144af662c025875c086c62b990d0b0dc21185f28036d6",
+      "timestamp": 1783360320,
+      "txCount": 3891
     },
     {
-      "height": 956928,
-      "id": "0000000000000000000024abdeb083c39870ed9d029902e01e2cc30e0131cd85",
-      "timestamp": 1783350356,
-      "txCount": 3984
+      "height": 956945,
+      "id": "00000000000000000000e69c23e3c5692e5190acdef68a1293dfef8f82de50fa",
+      "timestamp": 1783359268,
+      "txCount": 5337
     },
     {
-      "height": 956927,
-      "id": "000000000000000000004ddfdb548a31e0b9b672de9f2d86eea8b74aa7040713",
-      "timestamp": 1783348198,
-      "txCount": 4891
+      "height": 956944,
+      "id": "000000000000000000012bfc9b48c3142db3196339cd1dce20d816dbb6530ce3",
+      "timestamp": 1783359050,
+      "txCount": 4256
     },
     {
-      "height": 956926,
-      "id": "000000000000000000016a5b353443db3179d515d081621c402ae37055c294c5",
-      "timestamp": 1783348132,
-      "txCount": 4350
+      "height": 956943,
+      "id": "00000000000000000001420f1a6714c5a5276bc5fca5c685de282506764df34f",
+      "timestamp": 1783358442,
+      "txCount": 5192
     }
   ],
   "news": [
     {
-      "title": "One month that shook the market: Saylor's struggles over bitcoin strategy yields big losses",
+      "title": "Circle’s USDC is leaving Tether behind in the stablecoin volume race, new data from Visa shows",
+      "link": "https://www.coindesk.com/business/2026/07/06/circle-s-usdc-is-leaving-tether-behind-in-the-stablecoin-volume-race",
+      "pubDate": "Mon, 06 Jul 2026 16:00:15 +0000"
+    },
+    {
+      "title": "Strategy selling hundreds of millions worth of bitcoin raises question about its capital-allocation playbook",
       "link": "https://www.coindesk.com/markets/2026/07/06/one-month-that-shook-the-market-saylor-s-struggles-over-bitcoin-strategy-yields-big-loss",
       "pubDate": "Mon, 06 Jul 2026 15:47:12 +0000"
     },
@@ -480,11 +485,6 @@
       "title": "Crypto bounces back from the brink as altcoin optimism returns despite pockets of weakness",
       "link": "https://www.coindesk.com/markets/2026/07/06/crypto-bounces-back-from-the-brink-as-altcoin-optimism-returns-despite-pockets-of-weakness",
       "pubDate": "Mon, 06 Jul 2026 10:44:45 +0000"
-    },
-    {
-      "title": "Bitcoin's Sharpe Ratio slides to lowest since 2022. Here's what it means.",
-      "link": "https://www.coindesk.com/markets/2026/07/06/bitcoin-s-sharpe-ratio-slides-to-lowest-since-2022-here-s-what-it-means",
-      "pubDate": "Mon, 06 Jul 2026 10:19:56 +0000"
     }
   ]
 }
