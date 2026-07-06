@@ -1,13 +1,13 @@
 {
-  "fetchedAt": "2026-07-06T04:36:14.848Z",
+  "fetchedAt": "2026-07-06T10:59:16.705Z",
   "price": {
-    "usd": 63171,
-    "time": 1783312246
+    "usd": 62771,
+    "time": 1783335310
   },
   "moves": {
-    "d1": -0.5907965732824483,
-    "d7": 5.005632223109124,
-    "d30": 3.7940330895632535
+    "d1": -1.2202575818257233,
+    "d7": 4.3407345186364354,
+    "d30": 3.1368072543568104
   },
   "history90d": [
     {
@@ -372,60 +372,110 @@
     },
     {
       "date": "2026-07-06",
-      "close": 63198.833832521945
+      "close": 62762.00926941357
     }
   ],
   "blocks": [
     {
-      "height": 956876,
-      "id": "000000000000000000015fb5162e4f072d554dfbf8effe05e1654723480931dc",
-      "timestamp": 1783312478,
-      "txCount": 5290
+      "height": 956908,
+      "id": "000000000000000000010ce90535fbfb075609136c239016e30813abc460a910",
+      "timestamp": 1783335170,
+      "txCount": 4125
     },
     {
-      "height": 956875,
-      "id": "00000000000000000000673293aab2a92010c9217ca8206a37eaac6207b7d988",
-      "timestamp": 1783311959,
-      "txCount": 4225
+      "height": 956907,
+      "id": "000000000000000000005a0f84a3ece9c7ceda03b6606933e0c66755b8e39139",
+      "timestamp": 1783334296,
+      "txCount": 4489
     },
     {
-      "height": 956874,
-      "id": "0000000000000000000124ff3082aa898cf681938883319d0ceef34b0e884f92",
-      "timestamp": 1783310596,
-      "txCount": 6249
+      "height": 956906,
+      "id": "00000000000000000000bc9f9c2d88246d0ab2d34259aeee8efd6d538c19bb41",
+      "timestamp": 1783333961,
+      "txCount": 4848
     },
     {
-      "height": 956873,
-      "id": "000000000000000000003e3ebf86c5ccb8dee52f5c8d2dbcc486ea7ad2c5ec7b",
-      "timestamp": 1783310411,
-      "txCount": 3934
+      "height": 956905,
+      "id": "0000000000000000000005fecff90435427a7df581ac83d2c240cc7faddf5e25",
+      "timestamp": 1783333492,
+      "txCount": 4025
     },
     {
-      "height": 956872,
-      "id": "00000000000000000002046dbc199d1b22e417cbf73b51576eabf20e24edc644",
-      "timestamp": 1783309439,
-      "txCount": 4869
+      "height": 956904,
+      "id": "00000000000000000000fa64dabcbd5f10daec94f921d99fc49212dab122be7d",
+      "timestamp": 1783333105,
+      "txCount": 3922
     },
     {
-      "height": 956871,
-      "id": "00000000000000000000786b68e4e54059e77479e79209eff807533bbeefdc27",
-      "timestamp": 1783308419,
-      "txCount": 6151
+      "height": 956903,
+      "id": "000000000000000000005abfd2cacbc9f8f4fec731defbebdb3dada6e3174b3f",
+      "timestamp": 1783331690,
+      "txCount": 3500
     },
     {
-      "height": 956870,
-      "id": "000000000000000000003a3d7198ad390fbd3660d94e7a69a1220724de6505bc",
-      "timestamp": 1783308378,
-      "txCount": 3759
+      "height": 956902,
+      "id": "00000000000000000001300200e8f3df8499a79c004677c9e88db86a253bda9b",
+      "timestamp": 1783331188,
+      "txCount": 4103
     },
     {
-      "height": 956869,
-      "id": "000000000000000000007908fc06a94931baaed641d2c7f6a8958b9a3ce94195",
-      "timestamp": 1783307178,
-      "txCount": 6759
+      "height": 956901,
+      "id": "00000000000000000000f7a8cacba438341b120d0640e975c1d0ccd4f8732d03",
+      "timestamp": 1783330301,
+      "txCount": 4051
     }
   ],
   "news": [
+    {
+      "title": "Crypto bounces back from the brink as altcoin optimism returns despite pockets of weakness",
+      "link": "https://www.coindesk.com/markets/2026/07/06/crypto-bounces-back-from-the-brink-as-altcoin-optimism-returns-despite-pockets-of-weakness",
+      "pubDate": "Mon, 06 Jul 2026 10:44:45 +0000"
+    },
+    {
+      "title": "Bitcoin's Sharpe Ratio slides to lowest since 2022. Here's what it means.",
+      "link": "https://www.coindesk.com/markets/2026/07/06/bitcoin-s-sharpe-ratio-slides-to-lowest-since-2022-here-s-what-it-means",
+      "pubDate": "Mon, 06 Jul 2026 10:19:56 +0000"
+    },
+    {
+      "title": "Ripple's preliminary crypto asset provider license in Luxembourg upgraded to fully compliant",
+      "link": "https://www.coindesk.com/policy/2026/07/06/ripple-s-preliminary-crypto-asset-provider-license-in-luxembourg-upgraded-to-fully-compliant",
+      "pubDate": "Mon, 06 Jul 2026 10:01:24 +0000"
+    },
+    {
+      "title": "Coinbase AI draws backlash after erroneously publishing World Cup result before kickoff",
+      "link": "https://www.coindesk.com/business/2026/07/06/coinbase-ai-draws-backlash-after-pushing-world-cup-result-before-kickoff",
+      "pubDate": "Mon, 06 Jul 2026 09:39:52 +0000"
+    },
+    {
+      "title": "FOMC minutes, SpaceX joins Nasdaq 100: Crypto Week Ahead",
+      "link": "https://www.coindesk.com/markets/2026/07/06/fomc-minutes-spacex-joins-nasdaq-100-crypto-week-ahead",
+      "pubDate": "Mon, 06 Jul 2026 08:18:05 +0000"
+    },
+    {
+      "title": "Vitalik Buterin says Ethereum is preparing its 'biggest rebuild' since the Merge",
+      "link": "https://www.coindesk.com/tech/2026/07/06/vitalik-buterin-says-ethereum-is-preparing-its-biggest-rebuild-since-the-merge",
+      "pubDate": "Mon, 06 Jul 2026 07:44:58 +0000"
+    },
+    {
+      "title": "Live markets: Bitcoin pops to $63,900, then reverses, as week begins",
+      "link": "https://www.coindesk.com/tech/2026/07/06/live-markets-bitcoin-pops-to-usd63-900-then-reverses-as-week-begins",
+      "pubDate": "Mon, 06 Jul 2026 07:43:21 +0000"
+    },
+    {
+      "title": "I am contemplating selling some of my bitcoin for gold, veteran trader Peter Brandt says",
+      "link": "https://www.coindesk.com/markets/2026/07/06/i-am-contemplating-selling-some-of-my-bitcoin-for-gold-veteran-trader-peter-brandt-says",
+      "pubDate": "Mon, 06 Jul 2026 06:03:29 +0000"
+    },
+    {
+      "title": "XRP rises 3% as $1.14 breakout turns into support test",
+      "link": "https://www.coindesk.com/markets/2026/07/06/xrp-rises-3-as-usd1-14-breakout-turns-into-support-test",
+      "pubDate": "Mon, 06 Jul 2026 05:15:01 +0000"
+    },
+    {
+      "title": "Ether leads crypto's hold above key levels as bitcoin steadies over $63,000",
+      "link": "https://www.coindesk.com/markets/2026/07/06/ether-leads-crypto-s-hold-above-key-levels-as-bitcoin-steadies-over-usd63-000",
+      "pubDate": "Mon, 06 Jul 2026 05:09:07 +0000"
+    },
     {
       "title": "Clarity and Congress's summer break: State of Crypto",
       "link": "https://www.coindesk.com/policy/2026/07/05/clarity-and-congress-s-summer-break-state-of-crypto",
@@ -435,56 +485,6 @@
       "title": "Americans traded $571 million on Polymarket politic bets despite U.S. ban",
       "link": "https://www.coindesk.com/tech/2026/07/03/americans-traded-usd571-million-on-polymarket-politic-bets-despite-u-s-ban",
       "pubDate": "Sun, 05 Jul 2026 15:00:00 +0000"
-    },
-    {
-      "title": "Banks have stopped asking if stablecoins belong in finance, now they're considering how",
-      "link": "https://www.coindesk.com/business/2026/07/05/banks-have-stopped-asking-if-stablecoins-belong-in-finance-now-they-re-considering-how",
-      "pubDate": "Sun, 05 Jul 2026 14:00:00 +0000"
-    },
-    {
-      "title": "Collateral, not yield, will decide which stablecoins win",
-      "link": "https://www.coindesk.com/opinion/2026/07/05/collateral-not-yield-will-decide-which-stablecoins-win",
-      "pubDate": "Sun, 05 Jul 2026 13:00:00 +0000"
-    },
-    {
-      "title": "Kalshi and prediction market sector embroiled in mixed bag of legal fights across U.S.",
-      "link": "https://www.coindesk.com/news-analysis/2026/07/02/kalshi-and-prediction-market-sector-embroiled-in-mixed-bag-of-legal-fights-across-u-s",
-      "pubDate": "Sun, 05 Jul 2026 13:00:00 +0000"
-    },
-    {
-      "title": "Barstool's Portnoy plans to hold bitcoin down to zero after timing it wrong every time",
-      "link": "https://www.coindesk.com/markets/2026/07/05/barstool-s-portnoy-plans-to-hold-bitcoin-down-to-zero-after-timing-it-wrong-every-time",
-      "pubDate": "Sun, 05 Jul 2026 06:00:22 +0000"
-    },
-    {
-      "title": "Tokenization's next use case is personalized portfolios, NYLIM executive says",
-      "link": "https://www.coindesk.com/business/2026/07/02/tokenization-s-next-use-case-is-personalized-portfolios-nylim-executive-says",
-      "pubDate": "Sat, 04 Jul 2026 20:00:00 +0000"
-    },
-    {
-      "title": "Bitcoin jumps above $63,000, reversing end-June losses",
-      "link": "https://www.coindesk.com/markets/2026/07/04/bitcoin-jumps-above-usd63-000-reversing-end-june-losses",
-      "pubDate": "Sat, 04 Jul 2026 18:07:17 +0000"
-    },
-    {
-      "title": "Bitcoin experts split over plan to freeze Satoshi's 1.1 million bitcoin as quantum threat grows",
-      "link": "https://www.coindesk.com/business/2026/07/04/bitcoin-experts-split-over-plan-to-freeze-satoshi-s-1-1-million-bitcoin-as-quantum-threat-grows",
-      "pubDate": "Sat, 04 Jul 2026 18:00:00 +0000"
-    },
-    {
-      "title": "How ethical hackers with just a $3,000 server found a flaw that could've put $70 billion in crypto at risk",
-      "link": "https://www.coindesk.com/tech/2026/07/04/how-ethical-hackers-with-just-a-usd3-000-server-found-a-flaw-that-could-ve-put-usd70-billion-in-crypto-at-risk",
-      "pubDate": "Sat, 04 Jul 2026 18:00:00 +0000"
-    },
-    {
-      "title": "Why bitcoin's disconnect from record-high stocks won't last",
-      "link": "https://www.coindesk.com/markets/2026/07/03/why-bitcoin-s-disconnect-from-record-high-stocks-won-t-last",
-      "pubDate": "Sat, 04 Jul 2026 16:00:00 +0000"
-    },
-    {
-      "title": "Trump's crypto token buyers are down $3.8 billion, blockchain data shows",
-      "link": "https://www.coindesk.com/business/2026/07/04/trump-s-crypto-token-buyers-are-down-usd3-8-billion-blockchain-data-shows",
-      "pubDate": "Sat, 04 Jul 2026 15:30:52 +0000"
     }
   ]
 }
