@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-07-06T10:44:38.404Z",
+  "fetchedAt": "2026-07-06T15:40:42.198Z",
   "indicators": {
     "UNRATE": {
       "latest": {
@@ -263,12 +263,12 @@
     },
     "VIXCLS": {
       "latest": {
-        "date": "2026-07-01",
-        "value": 16.59
+        "date": "2026-07-03",
+        "value": 15.81
       },
       "previous": {
-        "date": "2026-06-30",
-        "value": 16.45
+        "date": "2026-07-02",
+        "value": 16.15
       }
     },
     "BOPGSTB": {
@@ -301,6 +301,12 @@
   },
   "news": [
     {
+      "title": "Venezuela's Government Has Made the Earthquake Even More Tragic",
+      "link": "https://mises.org/power-market/venezuelas-government-has-made-earthquake-even-more-tragic",
+      "pubDate": "Mon, 06 Jul 2026 07:00:00 CDT",
+      "kind": "Article"
+    },
+    {
       "title": "No Paine, No Declaration",
       "link": "https://mises.org/mises-wire/no-paine-no-declaration",
       "pubDate": "Mon, 06 Jul 2026 05:00:00 CDT",
@@ -332,15 +338,15 @@
     },
     {
       "title": "America's Libertarian Revolution",
-      "link": "https://mises.org/mises-wire/americas-libertarian-revolution",
-      "pubDate": "Sat, 04 Jul 2026 05:00:00 CDT",
-      "kind": "Mises Wire"
-    },
-    {
-      "title": "America's Libertarian Revolution",
       "link": "https://mises.org/podcasts/audio-mises-wire/americas-libertarian-revolution",
       "pubDate": "Sat, 04 Jul 2026 05:00:00 CDT",
       "kind": "Podcast"
+    },
+    {
+      "title": "America's Libertarian Revolution",
+      "link": "https://mises.org/mises-wire/americas-libertarian-revolution",
+      "pubDate": "Sat, 04 Jul 2026 05:00:00 CDT",
+      "kind": "Mises Wire"
     },
     {
       "title": "What Independence Day Really Means",
@@ -353,12 +359,6 @@
       "link": "https://mises.org/power-market/rationality-psychology-and-capitalism",
       "pubDate": "Fri, 03 Jul 2026 03:00:00 CDT",
       "kind": "Article"
-    },
-    {
-      "title": "The French Far-Left Downplays Government Debt in Order to Spend Even More",
-      "link": "https://mises.org/podcasts/audio-mises-wire/french-far-left-downplays-government-debt-order-spend-even-more",
-      "pubDate": "Fri, 03 Jul 2026 02:25:06 CDT",
-      "kind": "Podcast"
     }
   ]
 }
