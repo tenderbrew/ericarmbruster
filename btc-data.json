@@ -1,13 +1,13 @@
 {
-  "fetchedAt": "2026-07-07T17:24:56.826Z",
+  "fetchedAt": "2026-07-07T20:11:07.164Z",
   "price": {
-    "usd": 63929,
-    "time": 1783444809
+    "usd": 63824,
+    "time": 1783454713
   },
   "moves": {
-    "d1": -0.22365240615246362,
-    "d7": 9.185625145725297,
-    "d30": 1.0662120168776656
+    "d1": -0.387529777882889,
+    "d7": 9.006293533463229,
+    "d30": 0.900216111079466
   },
   "history90d": [
     {
@@ -372,60 +372,70 @@
     },
     {
       "date": "2026-07-07",
-      "close": 63963.24035327051
+      "close": 63662.09003388696
     }
   ],
   "blocks": [
     {
-      "height": 957067,
-      "id": "00000000000000000001100ddf98b48a1b6b847966e921e794ad83dae0f6c833",
-      "timestamp": 1783443277,
-      "txCount": 6499
+      "height": 957081,
+      "id": "00000000000000000001634fbdb6030437ef9a5d8e9b0092d933d7619cc38662",
+      "timestamp": 1783453767,
+      "txCount": 4536
     },
     {
-      "height": 957066,
-      "id": "000000000000000000010c63a37b341e51634a7356113e2748bfec29d7a6edde",
-      "timestamp": 1783443139,
-      "txCount": 3390
+      "height": 957080,
+      "id": "000000000000000000019aae5f354cb0e9535df680ec8f1f85969e31be2c4086",
+      "timestamp": 1783453181,
+      "txCount": 4299
     },
     {
-      "height": 957065,
-      "id": "000000000000000000009e1c0c255e8de324554ba0e656b7c03d2af6583fc075",
-      "timestamp": 1783442601,
-      "txCount": 6557
+      "height": 957079,
+      "id": "00000000000000000000cbebcd80a2cb1ef6ccb7e575b82595b57239a42e2925",
+      "timestamp": 1783452056,
+      "txCount": 3456
     },
     {
-      "height": 957064,
-      "id": "00000000000000000000af13e76c51739a7ba62516e8dddd125178604c14f086",
-      "timestamp": 1783442588,
-      "txCount": 5086
+      "height": 957078,
+      "id": "00000000000000000001ac66b61d904dd3c44e5b08a46d4ba86f9b9ecfd4f516",
+      "timestamp": 1783451491,
+      "txCount": 3702
     },
     {
-      "height": 957063,
-      "id": "000000000000000000017fb276db23399cf54f86f92ff017961a2f15d437fe3c",
-      "timestamp": 1783442312,
-      "txCount": 4416
+      "height": 957077,
+      "id": "00000000000000000000660bab6687a5549f4cd08d6ec9ea8c73f1c14bbeb631",
+      "timestamp": 1783450863,
+      "txCount": 5640
     },
     {
-      "height": 957062,
-      "id": "00000000000000000001532aa8631d023830f8079b32406fb1d8348977671a6d",
-      "timestamp": 1783441998,
-      "txCount": 3775
+      "height": 957076,
+      "id": "00000000000000000001fb69c196ccfe84aa2b09dcab61869aacf538b749ca3e",
+      "timestamp": 1783450760,
+      "txCount": 3981
     },
     {
-      "height": 957061,
-      "id": "00000000000000000001d6aa9a6e3ac94c46879225f735db3070e6e5b9aabe06",
-      "timestamp": 1783440420,
-      "txCount": 4563
+      "height": 957075,
+      "id": "000000000000000000002bc39a72595d24cfbf392c5e1929ffada050d30d94c8",
+      "timestamp": 1783450238,
+      "txCount": 3316
     },
     {
-      "height": 957060,
-      "id": "000000000000000000012e9ab5200790559feeb41a1fbdcbce60961e435711dd",
-      "timestamp": 1783440356,
-      "txCount": 3719
+      "height": 957074,
+      "id": "000000000000000000014c1e0a26291bf762ada4c730027c4e1f975fac09fb20",
+      "timestamp": 1783449644,
+      "txCount": 2519
     }
   ],
   "news": [
+    {
+      "title": "BlackRock-backed Securitize slides 40% after SPAC debut despite tokenization boom",
+      "link": "https://www.coindesk.com/markets/2026/07/07/blackrock-backed-securitize-slides-40-after-spac-debut-despite-tokenization-boom",
+      "pubDate": "Tue, 07 Jul 2026 19:35:14 +0000"
+    },
+    {
+      "title": "Crypto exchange Kraken is trying to become a bank in Europe",
+      "link": "https://www.coindesk.com/business/2026/07/07/crypto-exchange-kraken-is-trying-to-become-a-bank-in-europe",
+      "pubDate": "Tue, 07 Jul 2026 18:38:10 +0000"
+    },
     {
       "title": "SpaceX IPO powers record $3.86 billion in tokenized equities trading in June",
       "link": "https://www.coindesk.com/markets/2026/07/07/spacex-ipo-powers-record-usd3-86-billion-in-tokenized-equities-trading-in-june",
@@ -475,16 +485,6 @@
       "title": "Bitcoin's July gains may be fleeting as U.S. demand stays weak",
       "link": "https://www.coindesk.com/daybook-us/2026/07/07/bitcoin-s-july-gains-may-be-fleeting-as-u-s-demand-stays-weak",
       "pubDate": "Tue, 07 Jul 2026 11:26:17 +0000"
-    },
-    {
-      "title": "Bitcoin stalls as open interest decline raises questions about rally's staying power",
-      "link": "https://www.coindesk.com/markets/2026/07/07/bitcoin-stalls-as-open-interest-decline-raises-questions-about-rally-s-staying-power",
-      "pubDate": "Tue, 07 Jul 2026 10:44:09 +0000"
-    },
-    {
-      "title": "Binance taps into Bitcoin holders’ hunger for yield with new covered call yield play",
-      "link": "https://www.coindesk.com/markets/2026/07/07/binance-taps-into-bitcoin-holders-hunger-for-yield-with-new-covered-call-yield-play",
-      "pubDate": "Tue, 07 Jul 2026 08:20:00 +0000"
     }
   ]
 }
