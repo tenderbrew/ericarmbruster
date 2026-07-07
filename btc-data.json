@@ -1,13 +1,13 @@
 {
-  "fetchedAt": "2026-07-07T04:14:14.764Z",
+  "fetchedAt": "2026-07-07T09:59:00.824Z",
   "price": {
-    "usd": 63150,
-    "time": 1783397409
+    "usd": 63260,
+    "time": 1783417807
   },
   "moves": {
-    "d1": -1.4394664307048166,
-    "d7": 7.855155374752498,
-    "d30": -0.16531951280601698
+    "d1": -1.2677853746062784,
+    "d7": 8.043026587598456,
+    "d30": 0.00858095993494512
   },
   "history90d": [
     {
@@ -372,60 +372,90 @@
     },
     {
       "date": "2026-07-07",
-      "close": 63194.43483139365
+      "close": 63183.05642648743
     }
   ],
   "blocks": [
     {
-      "height": 956993,
-      "id": "0000000000000000000150ca7ffd9b990e35bc5112380088f8c520ed7482c04e",
-      "timestamp": 1783396037,
-      "txCount": 5056
+      "height": 957021,
+      "id": "00000000000000000001a1950825e6198d9d1c2156149c0ee2692d809677b4f3",
+      "timestamp": 1783417975,
+      "txCount": 4839
     },
     {
-      "height": 956992,
-      "id": "00000000000000000001120a6fc591c341d8b3b321f7408ccaae92b210830984",
-      "timestamp": 1783395287,
-      "txCount": 5886
+      "height": 957020,
+      "id": "000000000000000000012706b8b2b70f5682e6cfd8ca2649ba46951a030c7f08",
+      "timestamp": 1783415881,
+      "txCount": 5908
     },
     {
-      "height": 956991,
-      "id": "000000000000000000021458b0a1a03351b5f9342c4ff0aa18e595406444f529",
-      "timestamp": 1783395185,
-      "txCount": 6431
+      "height": 957019,
+      "id": "00000000000000000001cab2886b54f5662a0c2e0e5043599d5607cc77a25743",
+      "timestamp": 1783415834,
+      "txCount": 3668
     },
     {
-      "height": 956990,
-      "id": "000000000000000000020a2fcd5686c3ca8feae945624f8f39de132224047796",
-      "timestamp": 1783395405,
-      "txCount": 4484
+      "height": 957018,
+      "id": "000000000000000000011671cca8103842667e3fdca8c28e0c8edc4f324396ec",
+      "timestamp": 1783415088,
+      "txCount": 3075
     },
     {
-      "height": 956989,
-      "id": "00000000000000000000dd73c0728a69a38c905fd93383d55091e270dea13428",
-      "timestamp": 1783394065,
-      "txCount": 4229
+      "height": 957017,
+      "id": "000000000000000000007415a4695e10513d6b2a8967e323a6858540ee0024e1",
+      "timestamp": 1783414760,
+      "txCount": 4468
     },
     {
-      "height": 956988,
-      "id": "000000000000000000001ddf8a40851ab9f825c1e18acf08fb268d5e2e0202f5",
-      "timestamp": 1783393968,
-      "txCount": 5701
+      "height": 957016,
+      "id": "000000000000000000008534ae62b82b93ea8d95d7ed65aaa13c30b45fa54c76",
+      "timestamp": 1783413809,
+      "txCount": 6119
     },
     {
-      "height": 956987,
-      "id": "0000000000000000000038d5a9667ad04ed51e5e413862589fae61bb6642456c",
-      "timestamp": 1783393898,
-      "txCount": 6660
+      "height": 957015,
+      "id": "000000000000000000018201632cdf4bb112dac22ebd1e96f1428d48e8beed29",
+      "timestamp": 1783413914,
+      "txCount": 4448
     },
     {
-      "height": 956986,
-      "id": "00000000000000000000cd2dba7f22e15ca9755e7b18fa756bfd155f9085b0c3",
-      "timestamp": 1783394066,
-      "txCount": 6757
+      "height": 957014,
+      "id": "0000000000000000000091a3aa64feaa4129038925cdc7906c75d99f4ffeb7b6",
+      "timestamp": 1783413170,
+      "txCount": 5635
     }
   ],
   "news": [
+    {
+      "title": "Binance taps into Bitcoin holders’ hunger for yield with new covered call yield play",
+      "link": "https://www.coindesk.com/markets/2026/07/07/binance-taps-into-bitcoin-holders-hunger-for-yield-with-new-covered-call-yield-play",
+      "pubDate": "Tue, 07 Jul 2026 08:20:00 +0000"
+    },
+    {
+      "title": "Bitcoin's recent macro relief faces a challenge from Japanese interest rates",
+      "link": "https://www.coindesk.com/markets/2026/07/07/btc-s-recent-macro-relief-faces-a-challenge-from-japanese-interest-rates",
+      "pubDate": "Tue, 07 Jul 2026 07:50:57 +0000"
+    },
+    {
+      "title": "Live markets: Bitcoin and ether ETFs drew inflows on Monday",
+      "link": "https://www.coindesk.com/tech/2026/07/07/live-markets-bitcoin-and-ether-etfs-drew-inflows-on-monday",
+      "pubDate": "Tue, 07 Jul 2026 06:51:28 +0000"
+    },
+    {
+      "title": "BONK faces $20 million treasury drain after attacker spends $4 million to pass malicious proposal",
+      "link": "https://www.coindesk.com/markets/2026/07/07/bonk-faces-usd20-million-treasury-drain-after-attacker-spends-usd4-million-to-pass-malicious-proposal",
+      "pubDate": "Tue, 07 Jul 2026 05:40:58 +0000"
+    },
+    {
+      "title": "XRP stalls near $1.14 as breakout attempt struggles for volume",
+      "link": "https://www.coindesk.com/markets/2026/07/07/xrp-stalls-near-usd1-14-as-breakout-attempt-struggles-for-volume",
+      "pubDate": "Tue, 07 Jul 2026 04:46:30 +0000"
+    },
+    {
+      "title": "Bitcoin drops after a run at $64,000, shrugging off Strategy's $213 million BTC sale",
+      "link": "https://www.coindesk.com/markets/2026/07/07/bitcoin-drops-after-a-run-at-usd64-000-shrugging-off-strategy-s-usd213-million-btc-sale",
+      "pubDate": "Tue, 07 Jul 2026 04:33:15 +0000"
+    },
     {
       "title": "Bitcoin's U.S. reserve still a work-in-progress as federal agencies hash it out",
       "link": "https://www.coindesk.com/policy/2026/07/06/bitcoin-s-u-s-reserve-still-a-work-in-progress-as-federal-agencies-hash-it-out",
@@ -455,36 +485,6 @@
       "title": "Bitcoin miner TeraWulf soars on a $19 billion AI data-center lease with Anthropic",
       "link": "https://www.coindesk.com/markets/2026/07/06/bitcoin-miner-terawulf-soars-on-a-usd19-billion-ai-data-center-lease-with-anthropic",
       "pubDate": "Mon, 06 Jul 2026 14:12:15 +0000"
-    },
-    {
-      "title": "DeFi protocol Summer.fi halts Lazy Summer vaults after $6 million exploit",
-      "link": "https://www.coindesk.com/web3/2026/07/06/defi-protocol-summer-fi-halts-lazy-summer-vaults-after-usd6-million-exploit",
-      "pubDate": "Mon, 06 Jul 2026 13:42:12 +0000"
-    },
-    {
-      "title": "Cantor says Strategy's recovery hinges on restoring STRC to par",
-      "link": "https://www.coindesk.com/markets/2026/07/06/cantor-says-strategy-s-recovery-hinges-on-restoring-strc-to-par",
-      "pubDate": "Mon, 06 Jul 2026 13:06:09 +0000"
-    },
-    {
-      "title": "Bitmine added another $74 million in ether as Tom Lee bets on Clarity Act boost",
-      "link": "https://www.coindesk.com/business/2026/07/06/bitmine-added-another-usd74-million-in-ether-as-tom-lee-bets-on-clarity-act-boost",
-      "pubDate": "Mon, 06 Jul 2026 12:54:37 +0000"
-    },
-    {
-      "title": "Michael Saylor's Strategy dramatically ups pace of bitcoin sales, raising $216 million",
-      "link": "https://www.coindesk.com/markets/2026/07/06/michael-saylor-s-strategy-dramatically-ups-pace-of-bitcoin-sales-raising-usd216-million",
-      "pubDate": "Mon, 06 Jul 2026 12:16:28 +0000"
-    },
-    {
-      "title": "Russia's largest bank plans crypto wallet launch as Moscow clears market path",
-      "link": "https://www.coindesk.com/business/2026/07/06/russia-s-largest-bank-plans-crypto-wallet-launch-as-moscow-clears-market-path",
-      "pubDate": "Mon, 06 Jul 2026 11:36:05 +0000"
-    },
-    {
-      "title": "SpaceX's Nasdaq 100 inclusion comes with a historical warning",
-      "link": "https://www.coindesk.com/markets/2026/07/06/spacex-s-nasdaq-100-inclusion-comes-with-a-historical-warning",
-      "pubDate": "Mon, 06 Jul 2026 11:16:26 +0000"
     }
   ]
 }
