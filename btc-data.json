@@ -1,13 +1,13 @@
 {
-  "fetchedAt": "2026-07-07T09:59:00.824Z",
+  "fetchedAt": "2026-07-07T15:10:29.343Z",
   "price": {
-    "usd": 63260,
-    "time": 1783417807
+    "usd": 63419,
+    "time": 1783436709
   },
   "moves": {
-    "d1": -1.2677853746062784,
-    "d7": 8.043026587598456,
-    "d30": 0.00858095993494512
+    "d1": -1.0196282117002187,
+    "d7": 8.314585886166714,
+    "d30": 0.2599461887150545
   },
   "history90d": [
     {
@@ -372,60 +372,105 @@
     },
     {
       "date": "2026-07-07",
-      "close": 63183.05642648743
+      "close": 63408.3285982015
     }
   ],
   "blocks": [
     {
-      "height": 957021,
-      "id": "00000000000000000001a1950825e6198d9d1c2156149c0ee2692d809677b4f3",
-      "timestamp": 1783417975,
-      "txCount": 4839
+      "height": 957054,
+      "id": "00000000000000000001ff4e1f3ecf80dfd240566d2278971ca795e2d5ab1a67",
+      "timestamp": 1783436985,
+      "txCount": 4362
     },
     {
-      "height": 957020,
-      "id": "000000000000000000012706b8b2b70f5682e6cfd8ca2649ba46951a030c7f08",
-      "timestamp": 1783415881,
-      "txCount": 5908
+      "height": 957053,
+      "id": "0000000000000000000196f19b0c0ed00622c597a0f0b94112ecdc10b98df2a1",
+      "timestamp": 1783436419,
+      "txCount": 4669
     },
     {
-      "height": 957019,
-      "id": "00000000000000000001cab2886b54f5662a0c2e0e5043599d5607cc77a25743",
-      "timestamp": 1783415834,
-      "txCount": 3668
+      "height": 957052,
+      "id": "000000000000000000008fb498e14dfbbc65f2b072277ef7c2bff5f4facc9126",
+      "timestamp": 1783435841,
+      "txCount": 4375
     },
     {
-      "height": 957018,
-      "id": "000000000000000000011671cca8103842667e3fdca8c28e0c8edc4f324396ec",
-      "timestamp": 1783415088,
-      "txCount": 3075
+      "height": 957051,
+      "id": "000000000000000000003c24bbfe2b70b1228c948cea90b624770ecc4fa19f01",
+      "timestamp": 1783435683,
+      "txCount": 4358
     },
     {
-      "height": 957017,
-      "id": "000000000000000000007415a4695e10513d6b2a8967e323a6858540ee0024e1",
-      "timestamp": 1783414760,
-      "txCount": 4468
+      "height": 957050,
+      "id": "00000000000000000000a97c196a3000edb8676d2c5f3d6fa30a9d42ce50e96e",
+      "timestamp": 1783435273,
+      "txCount": 3748
     },
     {
-      "height": 957016,
-      "id": "000000000000000000008534ae62b82b93ea8d95d7ed65aaa13c30b45fa54c76",
-      "timestamp": 1783413809,
-      "txCount": 6119
+      "height": 957049,
+      "id": "00000000000000000001875938b8d16fd647000f42b90831f8e886be2814c800",
+      "timestamp": 1783434549,
+      "txCount": 2335
     },
     {
-      "height": 957015,
-      "id": "000000000000000000018201632cdf4bb112dac22ebd1e96f1428d48e8beed29",
-      "timestamp": 1783413914,
-      "txCount": 4448
+      "height": 957048,
+      "id": "00000000000000000000fc7d7c739251fdf77de45a2237be3ce78623f0f55c6b",
+      "timestamp": 1783433936,
+      "txCount": 5149
     },
     {
-      "height": 957014,
-      "id": "0000000000000000000091a3aa64feaa4129038925cdc7906c75d99f4ffeb7b6",
-      "timestamp": 1783413170,
-      "txCount": 5635
+      "height": 957047,
+      "id": "00000000000000000000c61153a14cad2fbe9903395c02adaf4592eaa6627e6f",
+      "timestamp": 1783433520,
+      "txCount": 1721
     }
   ],
   "news": [
+    {
+      "title": "Analysts see more upside for SpaceX as post-IPO research begins",
+      "link": "https://www.coindesk.com/markets/2026/07/07/analysts-see-more-upside-for-spacex-as-post-ipo-research-begins",
+      "pubDate": "Tue, 07 Jul 2026 14:39:24 +0000"
+    },
+    {
+      "title": "Vanguard opens search for digital assets leader in sign of evolving crypto strategy",
+      "link": "https://www.coindesk.com/markets/2026/07/07/vanguard-opens-search-for-digital-assets-leader-in-sign-of-evolving-crypto-strategy",
+      "pubDate": "Tue, 07 Jul 2026 14:28:37 +0000"
+    },
+    {
+      "title": "AI trade loses steam as infrastructure boom faces reality check",
+      "link": "https://www.coindesk.com/markets/2026/07/07/ai-trade-loses-steam-as-infrastructure-boom-faces-reality-check",
+      "pubDate": "Tue, 07 Jul 2026 14:17:54 +0000"
+    },
+    {
+      "title": "EDX Markets raises $76 million in funding round led by SBI Holdings",
+      "link": "https://www.coindesk.com/business/2026/07/07/edx-markets-raises-usd76-million-in-funding-round-led-by-sbi-holdings",
+      "pubDate": "Tue, 07 Jul 2026 14:07:05 +0000"
+    },
+    {
+      "title": "Former Tether investment chief is looking to sell part of his stake in the stablecoin giant: Bloomberg",
+      "link": "https://www.coindesk.com/business/2026/07/07/former-tether-investment-chief-is-looking-to-sell-part-of-his-stake-in-the-stablecoin-giant-bloomberg",
+      "pubDate": "Tue, 07 Jul 2026 13:46:25 +0000"
+    },
+    {
+      "title": "Bitcoin, XRP draw Japanese firms as weak yen drives treasury diversification",
+      "link": "https://www.coindesk.com/markets/2026/07/07/bitcoin-xrp-draw-japanese-firms-as-weak-yen-drives-treasury-diversification",
+      "pubDate": "Tue, 07 Jul 2026 13:26:59 +0000"
+    },
+    {
+      "title": "Coinbase secures UK authorization to offer traditional investments alongside crypto",
+      "link": "https://www.coindesk.com/business/2026/07/07/coinbase-secures-uk-authorization-to-offer-traditional-investments-alongside-crypto",
+      "pubDate": "Tue, 07 Jul 2026 11:37:01 +0000"
+    },
+    {
+      "title": "Bitcoin's July gains may be fleeting as U.S. demand stays weak",
+      "link": "https://www.coindesk.com/daybook-us/2026/07/07/bitcoin-s-july-gains-may-be-fleeting-as-u-s-demand-stays-weak",
+      "pubDate": "Tue, 07 Jul 2026 11:26:17 +0000"
+    },
+    {
+      "title": "Bitcoin stalls as open interest decline raises questions about rally's staying power",
+      "link": "https://www.coindesk.com/markets/2026/07/07/bitcoin-stalls-as-open-interest-decline-raises-questions-about-rally-s-staying-power",
+      "pubDate": "Tue, 07 Jul 2026 10:44:09 +0000"
+    },
     {
       "title": "Binance taps into Bitcoin holders’ hunger for yield with new covered call yield play",
       "link": "https://www.coindesk.com/markets/2026/07/07/binance-taps-into-bitcoin-holders-hunger-for-yield-with-new-covered-call-yield-play",
@@ -437,54 +482,9 @@
       "pubDate": "Tue, 07 Jul 2026 07:50:57 +0000"
     },
     {
-      "title": "Live markets: Bitcoin and ether ETFs drew inflows on Monday",
+      "title": "Live markets: Bitcoin trying to hold $63,000 as AI favorites plunge on Tuesday",
       "link": "https://www.coindesk.com/tech/2026/07/07/live-markets-bitcoin-and-ether-etfs-drew-inflows-on-monday",
       "pubDate": "Tue, 07 Jul 2026 06:51:28 +0000"
-    },
-    {
-      "title": "BONK faces $20 million treasury drain after attacker spends $4 million to pass malicious proposal",
-      "link": "https://www.coindesk.com/markets/2026/07/07/bonk-faces-usd20-million-treasury-drain-after-attacker-spends-usd4-million-to-pass-malicious-proposal",
-      "pubDate": "Tue, 07 Jul 2026 05:40:58 +0000"
-    },
-    {
-      "title": "XRP stalls near $1.14 as breakout attempt struggles for volume",
-      "link": "https://www.coindesk.com/markets/2026/07/07/xrp-stalls-near-usd1-14-as-breakout-attempt-struggles-for-volume",
-      "pubDate": "Tue, 07 Jul 2026 04:46:30 +0000"
-    },
-    {
-      "title": "Bitcoin drops after a run at $64,000, shrugging off Strategy's $213 million BTC sale",
-      "link": "https://www.coindesk.com/markets/2026/07/07/bitcoin-drops-after-a-run-at-usd64-000-shrugging-off-strategy-s-usd213-million-btc-sale",
-      "pubDate": "Tue, 07 Jul 2026 04:33:15 +0000"
-    },
-    {
-      "title": "Bitcoin's U.S. reserve still a work-in-progress as federal agencies hash it out",
-      "link": "https://www.coindesk.com/policy/2026/07/06/bitcoin-s-u-s-reserve-still-a-work-in-progress-as-federal-agencies-hash-it-out",
-      "pubDate": "Mon, 06 Jul 2026 21:40:06 +0000"
-    },
-    {
-      "title": "Circle’s USDC is leaving Tether behind in the stablecoin volume race, new data from Visa shows",
-      "link": "https://www.coindesk.com/business/2026/07/06/circle-s-usdc-is-leaving-tether-behind-in-the-stablecoin-volume-race",
-      "pubDate": "Mon, 06 Jul 2026 16:00:15 +0000"
-    },
-    {
-      "title": "Strategy selling hundreds of millions worth of bitcoin raises question about its capital-allocation playbook",
-      "link": "https://www.coindesk.com/markets/2026/07/06/one-month-that-shook-the-market-saylor-s-struggles-over-bitcoin-strategy-yields-big-loss",
-      "pubDate": "Mon, 06 Jul 2026 15:47:12 +0000"
-    },
-    {
-      "title": "Ethereum developers embrace Vitalik Buterin's long-term vision but urge quicker execution",
-      "link": "https://www.coindesk.com/tech/2026/07/06/ethereum-developers-embrace-vitalik-buterin-s-long-term-vision-but-urge-quicker-execution",
-      "pubDate": "Mon, 06 Jul 2026 15:34:33 +0000"
-    },
-    {
-      "title": "Securitize eyes acquisitions with $400 million war chest after going public, CEO says",
-      "link": "https://www.coindesk.com/business/2026/07/06/securitize-eyes-acquisitions-with-usd400-million-war-chest-after-going-public-ceo-says",
-      "pubDate": "Mon, 06 Jul 2026 14:25:32 +0000"
-    },
-    {
-      "title": "Bitcoin miner TeraWulf soars on a $19 billion AI data-center lease with Anthropic",
-      "link": "https://www.coindesk.com/markets/2026/07/06/bitcoin-miner-terawulf-soars-on-a-usd19-billion-ai-data-center-lease-with-anthropic",
-      "pubDate": "Mon, 06 Jul 2026 14:12:15 +0000"
     }
   ]
 }
