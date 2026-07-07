@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-07-07T14:45:27.050Z",
+  "fetchedAt": "2026-07-07T20:01:06.244Z",
   "indicators": {
     "UNRATE": {
       "latest": {
@@ -273,12 +273,12 @@
     },
     "BOPGSTB": {
       "latest": {
-        "date": "2026-04-01",
-        "value": -55881
+        "date": "2026-05-01",
+        "value": -77585
       },
       "previous": {
-        "date": "2026-03-01",
-        "value": -56585
+        "date": "2026-04-01",
+        "value": -54570
       }
     },
     "M2V": {
@@ -300,6 +300,24 @@
     }
   },
   "news": [
+    {
+      "title": "A False Choice: Culture vs. Economics",
+      "link": "https://mises.org/notes-margin/false-choice-culture-vs-economics",
+      "pubDate": "Tue, 07 Jul 2026 02:40:00 CDT",
+      "kind": "Article"
+    },
+    {
+      "title": "Israel Kirzner and the Entrepreneurial Market Process",
+      "link": "https://mises.org/mises-wire/israel-kirzner-and-entrepreneurial-market-process",
+      "pubDate": "Tue, 07 Jul 2026 11:00:00 CDT",
+      "kind": "Mises Wire"
+    },
+    {
+      "title": "Consolidating Federal Power under the Civil Rights Act 1957",
+      "link": "https://mises.org/podcasts/audio-mises-wire/consolidating-federal-power-under-civil-rights-act-1957",
+      "pubDate": "Tue, 07 Jul 2026 10:20:54 CDT",
+      "kind": "Podcast"
+    },
     {
       "title": "Don't Confuse the Declaration of Independence with the Constitution",
       "link": "https://mises.org/podcasts/audio-mises-wire/dont-confuse-declaration-independence-constitution",
@@ -341,24 +359,6 @@
       "link": "https://mises.org/mises-wire/why-increases-money-supply-cant-create-economic-growth",
       "pubDate": "Mon, 06 Jul 2026 11:00:00 CDT",
       "kind": "Mises Wire"
-    },
-    {
-      "title": "Venezuela's Government Has Made the Earthquake Even More Tragic",
-      "link": "https://mises.org/power-market/venezuelas-government-has-made-earthquake-even-more-tragic",
-      "pubDate": "Mon, 06 Jul 2026 07:00:00 CDT",
-      "kind": "Article"
-    },
-    {
-      "title": "No Paine, No Declaration",
-      "link": "https://mises.org/mises-wire/no-paine-no-declaration",
-      "pubDate": "Mon, 06 Jul 2026 05:00:00 CDT",
-      "kind": "Mises Wire"
-    },
-    {
-      "title": "Keiko Fujimori, a center-right populist, is elected president of Peru",
-      "link": "https://mises.org/notes-margin/keiko-fujimori-center-right-populist-elected-president-peru",
-      "pubDate": "Mon, 06 Jul 2026 03:00:00 CDT",
-      "kind": "Article"
     }
   ]
 }
