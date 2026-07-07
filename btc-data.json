@@ -1,13 +1,13 @@
 {
-  "fetchedAt": "2026-07-07T15:10:29.343Z",
+  "fetchedAt": "2026-07-07T17:24:56.826Z",
   "price": {
-    "usd": 63419,
-    "time": 1783436709
+    "usd": 63929,
+    "time": 1783444809
   },
   "moves": {
-    "d1": -1.0196282117002187,
-    "d7": 8.314585886166714,
-    "d30": 0.2599461887150545
+    "d1": -0.22365240615246362,
+    "d7": 9.185625145725297,
+    "d30": 1.0662120168776656
   },
   "history90d": [
     {
@@ -372,60 +372,70 @@
     },
     {
       "date": "2026-07-07",
-      "close": 63408.3285982015
+      "close": 63963.24035327051
     }
   ],
   "blocks": [
     {
-      "height": 957054,
-      "id": "00000000000000000001ff4e1f3ecf80dfd240566d2278971ca795e2d5ab1a67",
-      "timestamp": 1783436985,
-      "txCount": 4362
+      "height": 957067,
+      "id": "00000000000000000001100ddf98b48a1b6b847966e921e794ad83dae0f6c833",
+      "timestamp": 1783443277,
+      "txCount": 6499
     },
     {
-      "height": 957053,
-      "id": "0000000000000000000196f19b0c0ed00622c597a0f0b94112ecdc10b98df2a1",
-      "timestamp": 1783436419,
-      "txCount": 4669
+      "height": 957066,
+      "id": "000000000000000000010c63a37b341e51634a7356113e2748bfec29d7a6edde",
+      "timestamp": 1783443139,
+      "txCount": 3390
     },
     {
-      "height": 957052,
-      "id": "000000000000000000008fb498e14dfbbc65f2b072277ef7c2bff5f4facc9126",
-      "timestamp": 1783435841,
-      "txCount": 4375
+      "height": 957065,
+      "id": "000000000000000000009e1c0c255e8de324554ba0e656b7c03d2af6583fc075",
+      "timestamp": 1783442601,
+      "txCount": 6557
     },
     {
-      "height": 957051,
-      "id": "000000000000000000003c24bbfe2b70b1228c948cea90b624770ecc4fa19f01",
-      "timestamp": 1783435683,
-      "txCount": 4358
+      "height": 957064,
+      "id": "00000000000000000000af13e76c51739a7ba62516e8dddd125178604c14f086",
+      "timestamp": 1783442588,
+      "txCount": 5086
     },
     {
-      "height": 957050,
-      "id": "00000000000000000000a97c196a3000edb8676d2c5f3d6fa30a9d42ce50e96e",
-      "timestamp": 1783435273,
-      "txCount": 3748
+      "height": 957063,
+      "id": "000000000000000000017fb276db23399cf54f86f92ff017961a2f15d437fe3c",
+      "timestamp": 1783442312,
+      "txCount": 4416
     },
     {
-      "height": 957049,
-      "id": "00000000000000000001875938b8d16fd647000f42b90831f8e886be2814c800",
-      "timestamp": 1783434549,
-      "txCount": 2335
+      "height": 957062,
+      "id": "00000000000000000001532aa8631d023830f8079b32406fb1d8348977671a6d",
+      "timestamp": 1783441998,
+      "txCount": 3775
     },
     {
-      "height": 957048,
-      "id": "00000000000000000000fc7d7c739251fdf77de45a2237be3ce78623f0f55c6b",
-      "timestamp": 1783433936,
-      "txCount": 5149
+      "height": 957061,
+      "id": "00000000000000000001d6aa9a6e3ac94c46879225f735db3070e6e5b9aabe06",
+      "timestamp": 1783440420,
+      "txCount": 4563
     },
     {
-      "height": 957047,
-      "id": "00000000000000000000c61153a14cad2fbe9903395c02adaf4592eaa6627e6f",
-      "timestamp": 1783433520,
-      "txCount": 1721
+      "height": 957060,
+      "id": "000000000000000000012e9ab5200790559feeb41a1fbdcbce60961e435711dd",
+      "timestamp": 1783440356,
+      "txCount": 3719
     }
   ],
   "news": [
+    {
+      "title": "SpaceX IPO powers record $3.86 billion in tokenized equities trading in June",
+      "link": "https://www.coindesk.com/markets/2026/07/07/spacex-ipo-powers-record-usd3-86-billion-in-tokenized-equities-trading-in-june",
+      "pubDate": "Tue, 07 Jul 2026 16:18:18 +0000"
+    },
+    {
+      "title": "U.S. SEC to propose crypto rule as soon as this month to ease startups, fundraising",
+      "link": "https://www.coindesk.com/policy/2026/07/07/u-s-sec-to-propose-crypto-rule-as-soon-as-this-month-to-ease-startups-fundraising",
+      "pubDate": "Tue, 07 Jul 2026 16:08:19 +0000"
+    },
     {
       "title": "Analysts see more upside for SpaceX as post-IPO research begins",
       "link": "https://www.coindesk.com/markets/2026/07/07/analysts-see-more-upside-for-spacex-as-post-ipo-research-begins",
@@ -475,16 +485,6 @@
       "title": "Binance taps into Bitcoin holders’ hunger for yield with new covered call yield play",
       "link": "https://www.coindesk.com/markets/2026/07/07/binance-taps-into-bitcoin-holders-hunger-for-yield-with-new-covered-call-yield-play",
       "pubDate": "Tue, 07 Jul 2026 08:20:00 +0000"
-    },
-    {
-      "title": "Bitcoin's recent macro relief faces a challenge from Japanese interest rates",
-      "link": "https://www.coindesk.com/markets/2026/07/07/btc-s-recent-macro-relief-faces-a-challenge-from-japanese-interest-rates",
-      "pubDate": "Tue, 07 Jul 2026 07:50:57 +0000"
-    },
-    {
-      "title": "Live markets: Bitcoin trying to hold $63,000 as AI favorites plunge on Tuesday",
-      "link": "https://www.coindesk.com/tech/2026/07/07/live-markets-bitcoin-and-ether-etfs-drew-inflows-on-monday",
-      "pubDate": "Tue, 07 Jul 2026 06:51:28 +0000"
     }
   ]
 }
