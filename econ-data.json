@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-07-06T20:02:49.740Z",
+  "fetchedAt": "2026-07-07T03:47:34.802Z",
   "indicators": {
     "UNRATE": {
       "latest": {
@@ -63,12 +63,12 @@
     },
     "T10YIE": {
       "latest": {
-        "date": "2026-07-02",
-        "value": 2.23
+        "date": "2026-07-06",
+        "value": 2.24
       },
       "previous": {
-        "date": "2026-07-01",
-        "value": 2.23
+        "date": "2026-07-03",
+        "value": 0
       }
     },
     "PCE": {
@@ -123,42 +123,42 @@
     },
     "DGS2": {
       "latest": {
-        "date": "2026-07-01",
-        "value": 4.17
+        "date": "2026-07-02",
+        "value": 4.14
       },
       "previous": {
-        "date": "2026-06-30",
-        "value": 4.14
+        "date": "2026-07-01",
+        "value": 4.17
       }
     },
     "DGS10": {
       "latest": {
-        "date": "2026-07-01",
-        "value": 4.48
+        "date": "2026-07-02",
+        "value": 4.49
       },
       "previous": {
-        "date": "2026-06-30",
-        "value": 4.44
+        "date": "2026-07-01",
+        "value": 4.48
       }
     },
     "T10Y2Y": {
       "latest": {
-        "date": "2026-07-02",
+        "date": "2026-07-06",
         "value": 0.35
       },
       "previous": {
-        "date": "2026-07-01",
-        "value": 0.31
+        "date": "2026-07-03",
+        "value": 0
       }
     },
     "DFII10": {
       "latest": {
-        "date": "2026-07-01",
-        "value": 2.25
+        "date": "2026-07-02",
+        "value": 2.26
       },
       "previous": {
-        "date": "2026-06-30",
-        "value": 2.2
+        "date": "2026-07-01",
+        "value": 2.25
       }
     },
     "BAMLH0A0HYM2": {
@@ -233,12 +233,12 @@
     },
     "DTWEXBGS": {
       "latest": {
-        "date": "2026-06-26",
-        "value": 120.8866
+        "date": "2026-07-02",
+        "value": 120.6902
       },
       "previous": {
-        "date": "2026-06-25",
-        "value": 121.0559
+        "date": "2026-07-01",
+        "value": 121.1455
       }
     },
     "PERMIT": {
@@ -319,6 +319,12 @@
       "kind": "Mises Wire"
     },
     {
+      "title": "Keiko Fujimori, a center-right populist, is elected president of Peru",
+      "link": "https://mises.org/notes-margin/keiko-fujimori-center-right-populist-elected-president-peru",
+      "pubDate": "Mon, 06 Jul 2026 03:00:00 CDT",
+      "kind": "Article"
+    },
+    {
       "title": "Kudzu: Another \"Gift\" to America from the USDA",
       "link": "https://mises.org/power-market/kudzu-another-gift-america-usda",
       "pubDate": "Sat, 04 Jul 2026 07:00:00 CDT",
@@ -337,8 +343,8 @@
       "kind": "Podcast"
     },
     {
-      "title": "It’s the Fourth of July! Why Am I Sad?",
-      "link": "https://mises.org/mises-wire/its-fourth-july-why-am-i-sad",
+      "title": "America's Libertarian Revolution",
+      "link": "https://mises.org/mises-wire/americas-libertarian-revolution",
       "pubDate": "Sat, 04 Jul 2026 05:00:00 CDT",
       "kind": "Mises Wire"
     },
@@ -349,16 +355,10 @@
       "kind": "Podcast"
     },
     {
-      "title": "America's Libertarian Revolution",
-      "link": "https://mises.org/mises-wire/americas-libertarian-revolution",
+      "title": "It’s the Fourth of July! Why Am I Sad?",
+      "link": "https://mises.org/mises-wire/its-fourth-july-why-am-i-sad",
       "pubDate": "Sat, 04 Jul 2026 05:00:00 CDT",
       "kind": "Mises Wire"
-    },
-    {
-      "title": "What Independence Day Really Means",
-      "link": "https://mises.org/podcasts/radio-rothbard/what-independence-day-really-means",
-      "pubDate": "Fri, 03 Jul 2026 03:40:03 CDT",
-      "kind": "Podcast"
     }
   ]
 }
