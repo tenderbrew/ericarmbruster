@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-07-07T20:01:06.244Z",
+  "fetchedAt": "2026-07-08T03:15:21.632Z",
   "indicators": {
     "UNRATE": {
       "latest": {
@@ -63,12 +63,12 @@
     },
     "T10YIE": {
       "latest": {
-        "date": "2026-07-06",
-        "value": 2.24
+        "date": "2026-07-07",
+        "value": 2.25
       },
       "previous": {
-        "date": "2026-07-03",
-        "value": 0
+        "date": "2026-07-06",
+        "value": 2.24
       }
     },
     "PCE": {
@@ -123,42 +123,42 @@
     },
     "DGS2": {
       "latest": {
-        "date": "2026-07-02",
-        "value": 4.14
-      },
-      "previous": {
-        "date": "2026-07-01",
-        "value": 4.17
-      }
-    },
-    "DGS10": {
-      "latest": {
-        "date": "2026-07-02",
-        "value": 4.49
-      },
-      "previous": {
-        "date": "2026-07-01",
-        "value": 4.48
-      }
-    },
-    "T10Y2Y": {
-      "latest": {
         "date": "2026-07-06",
-        "value": 0.35
+        "value": 4.13
       },
       "previous": {
         "date": "2026-07-03",
         "value": 0
       }
     },
-    "DFII10": {
+    "DGS10": {
       "latest": {
-        "date": "2026-07-02",
-        "value": 2.26
+        "date": "2026-07-06",
+        "value": 4.48
       },
       "previous": {
-        "date": "2026-07-01",
-        "value": 2.25
+        "date": "2026-07-03",
+        "value": 0
+      }
+    },
+    "T10Y2Y": {
+      "latest": {
+        "date": "2026-07-07",
+        "value": 0.36
+      },
+      "previous": {
+        "date": "2026-07-06",
+        "value": 0.35
+      }
+    },
+    "DFII10": {
+      "latest": {
+        "date": "2026-07-06",
+        "value": 2.24
+      },
+      "previous": {
+        "date": "2026-07-03",
+        "value": 0
       }
     },
     "BAMLH0A0HYM2": {
@@ -301,9 +301,33 @@
   },
   "news": [
     {
+      "title": "Why Rothbard Sided with the American Revolutionaries",
+      "link": "https://mises.org/podcasts/audio-mises-wire/why-rothbard-sided-american-revolutionaries",
+      "pubDate": "Tue, 07 Jul 2026 05:19:16 CDT",
+      "kind": "Podcast"
+    },
+    {
+      "title": "Greenspan's Legacy: Did the Fed Cause the Housing Bubble?",
+      "link": "https://mises.org/podcasts/human-action-podcast/greenspans-legacy-did-fed-cause-housing-bubble",
+      "pubDate": "Tue, 07 Jul 2026 03:00:00 CDT",
+      "kind": "Podcast"
+    },
+    {
       "title": "A False Choice: Culture vs. Economics",
       "link": "https://mises.org/notes-margin/false-choice-culture-vs-economics",
       "pubDate": "Tue, 07 Jul 2026 02:40:00 CDT",
+      "kind": "Article"
+    },
+    {
+      "title": "Why Rothbard Sided with the American Revolutionaries",
+      "link": "https://mises.org/mises-wire/why-rothbard-sided-american-revolutionaries",
+      "pubDate": "Tue, 07 Jul 2026 02:00:00 CDT",
+      "kind": "Mises Wire"
+    },
+    {
+      "title": "Let’s Leave the Strait of Hormuz Alone",
+      "link": "https://mises.org/power-market/lets-leave-strait-hormuz-alone",
+      "pubDate": "Tue, 07 Jul 2026 01:00:00 CDT",
       "kind": "Article"
     },
     {
@@ -325,40 +349,16 @@
       "kind": "Podcast"
     },
     {
+      "title": "Rothbard's 'Conceived in Liberty' Is Free in One Volume, or in Five",
+      "link": "https://mises.org/power-market/rothbards-conceived-liberty-free-one-volume-or-five",
+      "pubDate": "Tue, 07 Jul 2026 09:00:00 CDT",
+      "kind": "Article"
+    },
+    {
       "title": "No Paine, No Declaration",
       "link": "https://mises.org/podcasts/audio-mises-wire/no-paine-no-declaration",
       "pubDate": "Tue, 07 Jul 2026 08:43:55 CDT",
       "kind": "Podcast"
-    },
-    {
-      "title": "When Politicians Say “Bye” to Taxpayers",
-      "link": "https://mises.org/power-market/when-politicians-say-bye-taxpayers",
-      "pubDate": "Tue, 07 Jul 2026 07:00:00 CDT",
-      "kind": "Article"
-    },
-    {
-      "title": "The Iran War, Ali’s “Rope-a-Dope”, And the 1415 Battle of Agincourt",
-      "link": "https://mises.org/power-market/iran-war-alis-rope-dope-and-1415-battle-agincourt",
-      "pubDate": "Tue, 07 Jul 2026 07:00:00 CDT",
-      "kind": "Article"
-    },
-    {
-      "title": "The Anti-Federalists, America’s Unsung Heroes, Predicted Evil Empire &amp; The Imperial Presidency",
-      "link": "https://mises.org/power-market/anti-federalists-americas-unsung-heroes-predicted-evil-empire-imperial-presidency",
-      "pubDate": "Tue, 07 Jul 2026 05:00:00 CDT",
-      "kind": "Article"
-    },
-    {
-      "title": "Consolidating Federal Power under the Civil Rights Act 1957",
-      "link": "https://mises.org/mises-wire/consolidating-federal-power-under-civil-rights-act-1957",
-      "pubDate": "Tue, 07 Jul 2026 05:00:00 CDT",
-      "kind": "Mises Wire"
-    },
-    {
-      "title": "Why Increases in Money Supply Can’t Create Economic Growth",
-      "link": "https://mises.org/mises-wire/why-increases-money-supply-cant-create-economic-growth",
-      "pubDate": "Mon, 06 Jul 2026 11:00:00 CDT",
-      "kind": "Mises Wire"
     }
   ]
 }
