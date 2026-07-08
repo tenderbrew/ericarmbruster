@@ -1,13 +1,13 @@
 {
-  "fetchedAt": "2026-07-08T14:37:36.352Z",
+  "fetchedAt": "2026-07-08T16:47:44.573Z",
   "price": {
-    "usd": 61950,
-    "time": 1783521013
+    "usd": 61868,
+    "time": 1783528873
   },
   "moves": {
-    "d1": -2.2120559719722266,
-    "d7": 3.284599121362164,
-    "d30": -1.7889479922916562
+    "d1": -2.341492798611422,
+    "d7": 3.147886657634147,
+    "d30": -1.918944865005645
   },
   "history90d": [
     {
@@ -372,60 +372,75 @@
     },
     {
       "date": "2026-07-08",
-      "close": 61880.99655304145
+      "close": 61975.64772536823
     }
   ],
   "blocks": [
     {
-      "height": 957185,
-      "id": "0000000000000000000102b60c644bf13fd898d1ba7fb19f6dfceafd5dab0bd8",
-      "timestamp": 1783521216,
-      "txCount": 4104
+      "height": 957203,
+      "id": "00000000000000000000a741d4556bfd7f2c86e36e4412b9a06f7d7e4b72c824",
+      "timestamp": 1783529044,
+      "txCount": 5353
     },
     {
-      "height": 957184,
-      "id": "00000000000000000000269cd34f988547956287631e1e24acca33c0a29163a8",
-      "timestamp": 1783520702,
-      "txCount": 4155
+      "height": 957202,
+      "id": "00000000000000000000d5f51c2c8cdae8c3ada7190e3d4635c0838d60818a1d",
+      "timestamp": 1783528856,
+      "txCount": 3942
     },
     {
-      "height": 957183,
-      "id": "000000000000000000017b4ed27b823d039d4dd63517a3ddc98a37ca5c938751",
-      "timestamp": 1783520481,
-      "txCount": 3968
+      "height": 957201,
+      "id": "0000000000000000000156a9623ffc873434ca825ad9bad751180f1e73abde06",
+      "timestamp": 1783528120,
+      "txCount": 4536
     },
     {
-      "height": 957182,
-      "id": "00000000000000000001bd4177e7eb7ea8658dfe86672f740ab742969db7d457",
-      "timestamp": 1783517821,
-      "txCount": 4771
+      "height": 957200,
+      "id": "00000000000000000000b1a84e1b98ecc7c6c1d63f76745d13f244b7b53f1e52",
+      "timestamp": 1783527907,
+      "txCount": 4251
     },
     {
-      "height": 957181,
-      "id": "00000000000000000001716f075baf49ff6eb8c37af77b03c1b196328dc0917d",
-      "timestamp": 1783517508,
-      "txCount": 2768
+      "height": 957199,
+      "id": "00000000000000000001fc67abf75107c8cf92e36ee332b6ea6ffdecf144b079",
+      "timestamp": 1783527701,
+      "txCount": 4035
     },
     {
-      "height": 957180,
-      "id": "00000000000000000001ebddbed21edda8ce418e83c3578fefed0093f602a8fd",
-      "timestamp": 1783516915,
-      "txCount": 6216
+      "height": 957198,
+      "id": "0000000000000000000020a360230ed3eed955155744c913ee61b59a20049900",
+      "timestamp": 1783526094,
+      "txCount": 6535
     },
     {
-      "height": 957179,
-      "id": "0000000000000000000152ea678b9ef065ab324ab7a6dd7fb583940cb47e9b86",
-      "timestamp": 1783516685,
-      "txCount": 5639
+      "height": 957197,
+      "id": "00000000000000000000b0f046a5c8de5c1138ccb783228e414b2de699154557",
+      "timestamp": 1783525876,
+      "txCount": 4911
     },
     {
-      "height": 957178,
-      "id": "00000000000000000000a46390f5fe402d9d87266a6ef1ff962fa4975caf3cd3",
-      "timestamp": 1783516468,
-      "txCount": 4317
+      "height": 957196,
+      "id": "000000000000000000006f204ddca0610e748d93b520e4db0378972b00497ffb",
+      "timestamp": 1783525514,
+      "txCount": 4093
     }
   ],
   "news": [
+    {
+      "title": "Polymarket bets on U.S. marketing blitz to win back trust after 4-year ban: Report",
+      "link": "https://www.coindesk.com/markets/2026/07/08/polymarket-bets-on-u-s-marketing-blitz-to-win-back-trust-after-4-year-ban-report",
+      "pubDate": "Wed, 08 Jul 2026 15:58:40 +0000"
+    },
+    {
+      "title": "Crypto Long & Short: With MSTR concerns assuaged, look to traditional signals around BTC",
+      "link": "https://www.coindesk.com/coindesk-indices/2026/07/08/crypto-long-and-short-with-mstr-concerns-assuaged-look-to-traditional-signals-around-btc",
+      "pubDate": "Wed, 08 Jul 2026 15:18:10 +0000"
+    },
+    {
+      "title": "Crypto VC Paradigm launches $1.2 billion AI fund as it broadens beyond digital assets",
+      "link": "https://www.coindesk.com/markets/2026/07/08/crypto-vc-paradigm-launches-usd1-2-billion-ai-fund-as-it-broadens-beyond-digital-assets-bbg",
+      "pubDate": "Wed, 08 Jul 2026 15:11:45 +0000"
+    },
     {
       "title": "Dinari, tZERO join forces on turnkey platform for tokenized U.S. equities",
       "link": "https://www.coindesk.com/business/2026/07/08/dinari-tzero-join-forces-on-turnkey-platform-for-tokenized-u-s-equities",
@@ -442,7 +457,7 @@
       "pubDate": "Wed, 08 Jul 2026 14:01:44 +0000"
     },
     {
-      "title": "Citadel drops U.S. Portofino suit, seeks bankruptcy order against firm's founder in UK",
+      "title": "Citadel abandons multi-year crypto lawsuit to focus on bankruptcy order against an ex-employee",
       "link": "https://www.coindesk.com/policy/2026/07/08/citadel-drops-u-s-portofino-suit-seeks-bankruptcy-order-against-firm-s-founder-in-uk",
       "pubDate": "Wed, 08 Jul 2026 12:45:30 +0000"
     },
@@ -470,21 +485,6 @@
       "title": "Validators embrace XRP Ledger's recent upgrade. But not everyone’s on board yet",
       "link": "https://www.coindesk.com/tech/2026/07/08/xrp-ledger-s-new-upgrade-is-here-but-not-everyone-s-on-board-yet",
       "pubDate": "Wed, 08 Jul 2026 08:40:22 +0000"
-    },
-    {
-      "title": "Live markets: Bitcoin drops to $62,000, stocks slide, oil soars as Iran ceasefire collapses",
-      "link": "https://www.coindesk.com/tech/2026/07/08/live-markets-japan-s-collapsing-yen-is-pushing-companies-into-bitcoin-and-xrp",
-      "pubDate": "Wed, 08 Jul 2026 05:29:16 +0000"
-    },
-    {
-      "title": "Bitcoin under pressure as Trump says Iran ceasefire is over",
-      "link": "https://www.coindesk.com/markets/2026/07/08/bitcoin-under-pressure-as-u-s-iran-escalation-lifts-oil",
-      "pubDate": "Wed, 08 Jul 2026 04:30:24 +0000"
-    },
-    {
-      "title": "BlackRock-backed Securitize slides 40% after SPAC debut despite tokenization boom",
-      "link": "https://www.coindesk.com/markets/2026/07/07/blackrock-backed-securitize-slides-40-after-spac-debut-despite-tokenization-boom",
-      "pubDate": "Tue, 07 Jul 2026 19:35:14 +0000"
     }
   ]
 }
