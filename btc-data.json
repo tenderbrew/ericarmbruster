@@ -1,13 +1,13 @@
 {
-  "fetchedAt": "2026-07-08T08:42:32.971Z",
+  "fetchedAt": "2026-07-08T11:14:51.640Z",
   "price": {
-    "usd": 62081,
-    "time": 1783499756
+    "usd": 62107,
+    "time": 1783508709
   },
   "moves": {
-    "d1": -2.0052727489266786,
-    "d7": 3.503005618293553,
-    "d30": -1.5812700614924569
+    "d1": -1.9642318038947337,
+    "d7": 3.5463534726463353,
+    "d30": -1.5400515408758308
   },
   "history90d": [
     {
@@ -372,67 +372,77 @@
     },
     {
       "date": "2026-07-08",
-      "close": 61887.46793774711
+      "close": 62068.615834859294
     }
   ],
   "blocks": [
     {
-      "height": 957143,
-      "id": "00000000000000000000d272faf268ef6ee59506b3f46582ff8cd450da0e3725",
-      "timestamp": 1783499898,
-      "txCount": 4246
+      "height": 957165,
+      "id": "000000000000000000011fde40d218d7ef3bcd30e196ddea39ad6b27555e4cfe",
+      "timestamp": 1783508759,
+      "txCount": 1928
     },
     {
-      "height": 957142,
-      "id": "00000000000000000000ad310368f57f7a8add789fae9439a552f72f60c707df",
-      "timestamp": 1783498068,
-      "txCount": 4240
+      "height": 957164,
+      "id": "000000000000000000007d94d59fe6b5df4825dda5ca3d00f7630e71b89dcbb9",
+      "timestamp": 1783508725,
+      "txCount": 5862
     },
     {
-      "height": 957141,
-      "id": "0000000000000000000076ca5b6ace92da8464260b8e673a574f8919a5702902",
-      "timestamp": 1783495860,
-      "txCount": 6214
+      "height": 957163,
+      "id": "00000000000000000000f33352c64c00e7af3357db7e7ce8efd7dd49b37824a3",
+      "timestamp": 1783508710,
+      "txCount": 4829
     },
     {
-      "height": 957140,
-      "id": "00000000000000000001f8ecb10c67f92fb090c8cc151929b67d750d0dad2e4e",
-      "timestamp": 1783495763,
-      "txCount": 5950
+      "height": 957162,
+      "id": "00000000000000000001d2913050b9c4a28e60c56d2a74faf071296bb9be1f45",
+      "timestamp": 1783508154,
+      "txCount": 4849
     },
     {
-      "height": 957139,
-      "id": "00000000000000000001d0fb2bac84a579f4e3c61f9f953fb219f8fc64d477db",
-      "timestamp": 1783495402,
-      "txCount": 5498
+      "height": 957161,
+      "id": "00000000000000000001a3479394937f1ae332a215e431db72c39dae23c3fc2b",
+      "timestamp": 1783507548,
+      "txCount": 6021
     },
     {
-      "height": 957138,
-      "id": "00000000000000000000c198a02ea9b8d63545507080116356e6444110309cc8",
-      "timestamp": 1783495077,
-      "txCount": 4274
+      "height": 957160,
+      "id": "00000000000000000000626a04b85a05807510f78f68dd96a14e0c61520ed0f0",
+      "timestamp": 1783507319,
+      "txCount": 4411
     },
     {
-      "height": 957137,
-      "id": "0000000000000000000089a6c6eb5de3ce19660d9a8860f83f7711c0c58b0a64",
-      "timestamp": 1783495282,
-      "txCount": 4013
+      "height": 957159,
+      "id": "0000000000000000000088f211f8fa52b0353e897ee2415983b142bb63b556f6",
+      "timestamp": 1783506796,
+      "txCount": 2951
     },
     {
-      "height": 957136,
-      "id": "00000000000000000001b560e97c1315a3f1f106acccce14fbee414ead5a514f",
-      "timestamp": 1783494156,
-      "txCount": 3807
+      "height": 957158,
+      "id": "0000000000000000000039fed4c0b2d94ac3e5e7a85d04e1b2779deaec23c76b",
+      "timestamp": 1783506773,
+      "txCount": 6667
     }
   ],
   "news": [
     {
-      "title": "XRP Ledger’s new upgrade is here. But not everyone’s on board yet",
+      "title": "Crypto and stocks tumble after Trump declares ceasefire 'over' following Iran strikes",
+      "link": "https://www.coindesk.com/markets/2026/07/08/crypto-and-stocks-tumble-after-trump-declares-ceasefire-over-following-iran-strikes",
+      "pubDate": "Wed, 08 Jul 2026 10:37:10 +0000"
+    },
+    {
+      "title": "Reserve Bank of India still favors crypto prohibition to curtail tax evasion: Reuters",
+      "link": "https://www.coindesk.com/policy/2026/07/08/reserve-bank-of-india-still-favors-crypto-prohibition-to-curtail-tax-evasion-reuters",
+      "pubDate": "Wed, 08 Jul 2026 09:45:24 +0000"
+    },
+    {
+      "title": "Validators embrace XRP Ledger's recent upgrade. But not everyone’s on board yet",
       "link": "https://www.coindesk.com/tech/2026/07/08/xrp-ledger-s-new-upgrade-is-here-but-not-everyone-s-on-board-yet",
       "pubDate": "Wed, 08 Jul 2026 08:40:22 +0000"
     },
     {
-      "title": "Live markets: Japan's collapsing yen is pushing companies into bitcoin and XRP",
+      "title": "Live markets: Bitcoin drops as yen, Iran ceasefire collapse",
       "link": "https://www.coindesk.com/tech/2026/07/08/live-markets-japan-s-collapsing-yen-is-pushing-companies-into-bitcoin-and-xrp",
       "pubDate": "Wed, 08 Jul 2026 05:29:16 +0000"
     },
@@ -475,16 +485,6 @@
       "title": "AI trade loses steam as infrastructure boom faces reality check",
       "link": "https://www.coindesk.com/markets/2026/07/07/ai-trade-loses-steam-as-infrastructure-boom-faces-reality-check",
       "pubDate": "Tue, 07 Jul 2026 14:17:54 +0000"
-    },
-    {
-      "title": "EDX Markets raises $76 million in funding round led by SBI Holdings",
-      "link": "https://www.coindesk.com/business/2026/07/07/edx-markets-raises-usd76-million-in-funding-round-led-by-sbi-holdings",
-      "pubDate": "Tue, 07 Jul 2026 14:07:05 +0000"
-    },
-    {
-      "title": "Former Tether investment chief is looking to sell part of his stake in the stablecoin giant: Bloomberg",
-      "link": "https://www.coindesk.com/business/2026/07/07/former-tether-investment-chief-is-looking-to-sell-part-of-his-stake-in-the-stablecoin-giant-bloomberg",
-      "pubDate": "Tue, 07 Jul 2026 13:46:25 +0000"
     }
   ]
 }
