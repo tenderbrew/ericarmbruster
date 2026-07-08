@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-07-08T08:34:47.667Z",
+  "fetchedAt": "2026-07-08T14:23:27.591Z",
   "indicators": {
     "UNRATE": {
       "latest": {
@@ -263,12 +263,12 @@
     },
     "VIXCLS": {
       "latest": {
-        "date": "2026-07-06",
-        "value": 15.57
+        "date": "2026-07-07",
+        "value": 16.13
       },
       "previous": {
-        "date": "2026-07-03",
-        "value": 15.81
+        "date": "2026-07-06",
+        "value": 15.57
       }
     },
     "BOPGSTB": {
@@ -300,6 +300,18 @@
     }
   },
   "news": [
+    {
+      "title": "The Economics and Ethics of Interest Rates",
+      "link": "https://mises.org/podcasts/audio-essays/economics-and-ethics-interest-rates",
+      "pubDate": "Wed, 08 Jul 2026 08:20:03 CDT",
+      "kind": "Podcast"
+    },
+    {
+      "title": "Is This Country Having Its Socialist Moment?",
+      "link": "https://mises.org/mises-wire/country-having-its-socialist-moment",
+      "pubDate": "Wed, 08 Jul 2026 05:00:00 CDT",
+      "kind": "Mises Wire"
+    },
     {
       "title": "Why Rothbard Sided with the American Revolutionaries",
       "link": "https://mises.org/podcasts/audio-mises-wire/why-rothbard-sided-american-revolutionaries",
@@ -346,18 +358,6 @@
       "title": "Don't Confuse the Declaration of Independence with the Constitution",
       "link": "https://mises.org/podcasts/audio-mises-wire/dont-confuse-declaration-independence-constitution",
       "pubDate": "Tue, 07 Jul 2026 09:37:02 CDT",
-      "kind": "Podcast"
-    },
-    {
-      "title": "Rothbard's 'Conceived in Liberty' Is Free in One Volume, or in Five",
-      "link": "https://mises.org/power-market/rothbards-conceived-liberty-free-one-volume-or-five",
-      "pubDate": "Tue, 07 Jul 2026 09:00:00 CDT",
-      "kind": "Article"
-    },
-    {
-      "title": "No Paine, No Declaration",
-      "link": "https://mises.org/podcasts/audio-mises-wire/no-paine-no-declaration",
-      "pubDate": "Tue, 07 Jul 2026 08:43:55 CDT",
       "kind": "Podcast"
     }
   ]
