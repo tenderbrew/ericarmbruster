@@ -1,13 +1,13 @@
 {
-  "fetchedAt": "2026-07-08T19:52:16.464Z",
+  "fetchedAt": "2026-07-08T22:15:26.550Z",
   "price": {
-    "usd": 62104,
-    "time": 1783540211
+    "usd": 62182,
+    "time": 1783548608
   },
   "moves": {
-    "d1": -1.968967297552271,
-    "d7": 3.541351797144099,
-    "d30": -1.5448075240239056
+    "d1": -1.8458444624564474,
+    "d7": 3.6713953602024674,
+    "d30": -1.4211519621740054
   },
   "history90d": [
     {
@@ -372,57 +372,57 @@
     },
     {
       "date": "2026-07-08",
-      "close": 62089.91475522272
+      "close": 62163.8181287758
     }
   ],
   "blocks": [
     {
-      "height": 957218,
-      "id": "0000000000000000000161f697f155716e5bce4a5fe0a21f41b9db3e31bfbcea",
-      "timestamp": 1783539259,
-      "txCount": 4392
+      "height": 957230,
+      "id": "00000000000000000000ef86d31e3ccd7f5fe182956cbaf3122775d9532f97ff",
+      "timestamp": 1783548494,
+      "txCount": 4703
     },
     {
-      "height": 957217,
-      "id": "00000000000000000001b24368d7fee9cbb2f5790ddf03c86420ba1a6bae6eb1",
-      "timestamp": 1783538192,
-      "txCount": 4404
+      "height": 957229,
+      "id": "000000000000000000012f4ab112d6a6a7cadf3d8d94b1850c77d6b6c0e0c600",
+      "timestamp": 1783547915,
+      "txCount": 5109
     },
     {
-      "height": 957216,
-      "id": "0000000000000000000009012126a0d40afc0dc847110678d44f4d4f4e8ed96f",
-      "timestamp": 1783537603,
-      "txCount": 6031
+      "height": 957228,
+      "id": "000000000000000000018ed7a8cb355341164632d50ca97704666f99a27d662f",
+      "timestamp": 1783547724,
+      "txCount": 2448
     },
     {
-      "height": 957215,
-      "id": "0000000000000000000155af5396437a25bbc7504495fe1bd7277e55b17270d5",
-      "timestamp": 1783537399,
-      "txCount": 5015
+      "height": 957227,
+      "id": "00000000000000000001fe658bed2f1d6f55022d4a73c7bf15d6d7a2fb65520e",
+      "timestamp": 1783547377,
+      "txCount": 4205
     },
     {
-      "height": 957214,
-      "id": "000000000000000000000ae295ba4bcf2ea412af4c665df25bdfd2651528092f",
-      "timestamp": 1783537542,
-      "txCount": 4051
+      "height": 957226,
+      "id": "000000000000000000014adccc9c762af02b4450e3f1f1676e4248ea800818dc",
+      "timestamp": 1783546560,
+      "txCount": 4354
     },
     {
-      "height": 957213,
-      "id": "0000000000000000000175e5123290e144574bd03a31d9031982457e4609a931",
-      "timestamp": 1783536689,
-      "txCount": 3452
+      "height": 957225,
+      "id": "000000000000000000017484ec076323712f26b62367755e0300d067a2fb62cf",
+      "timestamp": 1783545914,
+      "txCount": 4245
     },
     {
-      "height": 957212,
-      "id": "00000000000000000000a18d4a1d740b27845cb0ececf0500d1f3e6a304f9574",
-      "timestamp": 1783535624,
-      "txCount": 5435
+      "height": 957224,
+      "id": "000000000000000000018bad2f589673d34f4d1eeff5116528722f858650b978",
+      "timestamp": 1783543401,
+      "txCount": 4303
     },
     {
-      "height": 957211,
-      "id": "0000000000000000000075ac53aaff1b52ff10aee4ebb1e3e3fa6f4341bd1276",
-      "timestamp": 1783535315,
-      "txCount": 3807
+      "height": 957223,
+      "id": "0000000000000000000062f7e2653421db91b9f66276d859366348d2c32626e2",
+      "timestamp": 1783542144,
+      "txCount": 6616
     }
   ],
   "news": [
@@ -447,7 +447,7 @@
       "pubDate": "Wed, 08 Jul 2026 14:35:04 +0000"
     },
     {
-      "title": "Adam Back's BSTR scraps SPAC merger, seeks new deal",
+      "title": "Adam Back's bitcoin treasury firm scraps SPAC merger, seeks new deal",
       "link": "https://www.coindesk.com/markets/2026/07/08/adam-back-s-bstr-scraps-original-spac-terms-seeks-new-deal",
       "pubDate": "Wed, 08 Jul 2026 14:17:26 +0000"
     },
