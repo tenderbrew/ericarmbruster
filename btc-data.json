@@ -1,13 +1,13 @@
 {
-  "fetchedAt": "2026-07-08T11:14:51.640Z",
+  "fetchedAt": "2026-07-08T14:37:36.352Z",
   "price": {
-    "usd": 62107,
-    "time": 1783508709
+    "usd": 61950,
+    "time": 1783521013
   },
   "moves": {
-    "d1": -1.9642318038947337,
-    "d7": 3.5463534726463353,
-    "d30": -1.5400515408758308
+    "d1": -2.2120559719722266,
+    "d7": 3.284599121362164,
+    "d30": -1.7889479922916562
   },
   "history90d": [
     {
@@ -372,60 +372,90 @@
     },
     {
       "date": "2026-07-08",
-      "close": 62068.615834859294
+      "close": 61880.99655304145
     }
   ],
   "blocks": [
     {
-      "height": 957165,
-      "id": "000000000000000000011fde40d218d7ef3bcd30e196ddea39ad6b27555e4cfe",
-      "timestamp": 1783508759,
-      "txCount": 1928
+      "height": 957185,
+      "id": "0000000000000000000102b60c644bf13fd898d1ba7fb19f6dfceafd5dab0bd8",
+      "timestamp": 1783521216,
+      "txCount": 4104
     },
     {
-      "height": 957164,
-      "id": "000000000000000000007d94d59fe6b5df4825dda5ca3d00f7630e71b89dcbb9",
-      "timestamp": 1783508725,
-      "txCount": 5862
+      "height": 957184,
+      "id": "00000000000000000000269cd34f988547956287631e1e24acca33c0a29163a8",
+      "timestamp": 1783520702,
+      "txCount": 4155
     },
     {
-      "height": 957163,
-      "id": "00000000000000000000f33352c64c00e7af3357db7e7ce8efd7dd49b37824a3",
-      "timestamp": 1783508710,
-      "txCount": 4829
+      "height": 957183,
+      "id": "000000000000000000017b4ed27b823d039d4dd63517a3ddc98a37ca5c938751",
+      "timestamp": 1783520481,
+      "txCount": 3968
     },
     {
-      "height": 957162,
-      "id": "00000000000000000001d2913050b9c4a28e60c56d2a74faf071296bb9be1f45",
-      "timestamp": 1783508154,
-      "txCount": 4849
+      "height": 957182,
+      "id": "00000000000000000001bd4177e7eb7ea8658dfe86672f740ab742969db7d457",
+      "timestamp": 1783517821,
+      "txCount": 4771
     },
     {
-      "height": 957161,
-      "id": "00000000000000000001a3479394937f1ae332a215e431db72c39dae23c3fc2b",
-      "timestamp": 1783507548,
-      "txCount": 6021
+      "height": 957181,
+      "id": "00000000000000000001716f075baf49ff6eb8c37af77b03c1b196328dc0917d",
+      "timestamp": 1783517508,
+      "txCount": 2768
     },
     {
-      "height": 957160,
-      "id": "00000000000000000000626a04b85a05807510f78f68dd96a14e0c61520ed0f0",
-      "timestamp": 1783507319,
-      "txCount": 4411
+      "height": 957180,
+      "id": "00000000000000000001ebddbed21edda8ce418e83c3578fefed0093f602a8fd",
+      "timestamp": 1783516915,
+      "txCount": 6216
     },
     {
-      "height": 957159,
-      "id": "0000000000000000000088f211f8fa52b0353e897ee2415983b142bb63b556f6",
-      "timestamp": 1783506796,
-      "txCount": 2951
+      "height": 957179,
+      "id": "0000000000000000000152ea678b9ef065ab324ab7a6dd7fb583940cb47e9b86",
+      "timestamp": 1783516685,
+      "txCount": 5639
     },
     {
-      "height": 957158,
-      "id": "0000000000000000000039fed4c0b2d94ac3e5e7a85d04e1b2779deaec23c76b",
-      "timestamp": 1783506773,
-      "txCount": 6667
+      "height": 957178,
+      "id": "00000000000000000000a46390f5fe402d9d87266a6ef1ff962fa4975caf3cd3",
+      "timestamp": 1783516468,
+      "txCount": 4317
     }
   ],
   "news": [
+    {
+      "title": "Dinari, tZERO join forces on turnkey platform for tokenized U.S. equities",
+      "link": "https://www.coindesk.com/business/2026/07/08/dinari-tzero-join-forces-on-turnkey-platform-for-tokenized-u-s-equities",
+      "pubDate": "Wed, 08 Jul 2026 14:35:04 +0000"
+    },
+    {
+      "title": "Adam Back's BSTR scraps SPAC merger, seeks new deal",
+      "link": "https://www.coindesk.com/markets/2026/07/08/adam-back-s-bstr-scraps-original-spac-terms-seeks-new-deal",
+      "pubDate": "Wed, 08 Jul 2026 14:17:26 +0000"
+    },
+    {
+      "title": "BNB Chain is building a new layer-1 for high-frequency trading and AI agents",
+      "link": "https://www.coindesk.com/web3/2026/07/08/bnb-chain-is-building-a-new-layer-1-for-high-frequency-trading-and-ai-agents",
+      "pubDate": "Wed, 08 Jul 2026 14:01:44 +0000"
+    },
+    {
+      "title": "Citadel drops U.S. Portofino suit, seeks bankruptcy order against firm's founder in UK",
+      "link": "https://www.coindesk.com/policy/2026/07/08/citadel-drops-u-s-portofino-suit-seeks-bankruptcy-order-against-firm-s-founder-in-uk",
+      "pubDate": "Wed, 08 Jul 2026 12:45:30 +0000"
+    },
+    {
+      "title": "SpaceX's first bitcoin wallet movements in six months likely don't signal sales",
+      "link": "https://www.coindesk.com/markets/2026/07/08/spacex-s-first-bitcoin-wallet-movements-in-six-months-likely-don-t-signal-sales",
+      "pubDate": "Wed, 08 Jul 2026 12:44:27 +0000"
+    },
+    {
+      "title": "Bitcoin's inflation quagmire gets stickier as renewed MidEast conflict sends oil price soaring",
+      "link": "https://www.coindesk.com/daybook-us/2026/07/08/bitcoin-s-inflation-quagmire-gets-stickier-as-renewed-mideast-conflict-sends-oil-price-soaring",
+      "pubDate": "Wed, 08 Jul 2026 11:15:42 +0000"
+    },
     {
       "title": "Crypto and stocks tumble after Trump declares ceasefire 'over' following Iran strikes",
       "link": "https://www.coindesk.com/markets/2026/07/08/crypto-and-stocks-tumble-after-trump-declares-ceasefire-over-following-iran-strikes",
@@ -442,7 +472,7 @@
       "pubDate": "Wed, 08 Jul 2026 08:40:22 +0000"
     },
     {
-      "title": "Live markets: Bitcoin drops as yen, Iran ceasefire collapse",
+      "title": "Live markets: Bitcoin drops to $62,000, stocks slide, oil soars as Iran ceasefire collapses",
       "link": "https://www.coindesk.com/tech/2026/07/08/live-markets-japan-s-collapsing-yen-is-pushing-companies-into-bitcoin-and-xrp",
       "pubDate": "Wed, 08 Jul 2026 05:29:16 +0000"
     },
@@ -455,36 +485,6 @@
       "title": "BlackRock-backed Securitize slides 40% after SPAC debut despite tokenization boom",
       "link": "https://www.coindesk.com/markets/2026/07/07/blackrock-backed-securitize-slides-40-after-spac-debut-despite-tokenization-boom",
       "pubDate": "Tue, 07 Jul 2026 19:35:14 +0000"
-    },
-    {
-      "title": "Crypto exchange Kraken is trying to become a bank in Europe",
-      "link": "https://www.coindesk.com/business/2026/07/07/crypto-exchange-kraken-is-trying-to-become-a-bank-in-europe",
-      "pubDate": "Tue, 07 Jul 2026 18:38:10 +0000"
-    },
-    {
-      "title": "SpaceX IPO powers record $3.86 billion in tokenized equities trading in June",
-      "link": "https://www.coindesk.com/markets/2026/07/07/spacex-ipo-powers-record-usd3-86-billion-in-tokenized-equities-trading-in-june",
-      "pubDate": "Tue, 07 Jul 2026 16:18:18 +0000"
-    },
-    {
-      "title": "U.S. SEC to propose crypto rule as soon as this month to ease startups, fundraising",
-      "link": "https://www.coindesk.com/policy/2026/07/07/u-s-sec-to-propose-crypto-rule-as-soon-as-this-month-to-ease-startups-fundraising",
-      "pubDate": "Tue, 07 Jul 2026 16:08:19 +0000"
-    },
-    {
-      "title": "Analysts see more upside for SpaceX as post-IPO research begins",
-      "link": "https://www.coindesk.com/markets/2026/07/07/analysts-see-more-upside-for-spacex-as-post-ipo-research-begins",
-      "pubDate": "Tue, 07 Jul 2026 14:39:24 +0000"
-    },
-    {
-      "title": "Vanguard opens search for digital assets leader in sign of evolving crypto strategy",
-      "link": "https://www.coindesk.com/markets/2026/07/07/vanguard-opens-search-for-digital-assets-leader-in-sign-of-evolving-crypto-strategy",
-      "pubDate": "Tue, 07 Jul 2026 14:28:37 +0000"
-    },
-    {
-      "title": "AI trade loses steam as infrastructure boom faces reality check",
-      "link": "https://www.coindesk.com/markets/2026/07/07/ai-trade-loses-steam-as-infrastructure-boom-faces-reality-check",
-      "pubDate": "Tue, 07 Jul 2026 14:17:54 +0000"
     }
   ]
 }
