@@ -1,13 +1,13 @@
 {
-  "fetchedAt": "2026-07-09T15:31:57.062Z",
+  "fetchedAt": "2026-07-09T20:01:43.004Z",
   "price": {
-    "usd": 63053,
-    "time": 1783610722
+    "usd": 63221,
+    "time": 1783626909
   },
   "moves": {
-    "d1": 1.2917004012135802,
-    "d7": 2.546381146819532,
-    "d30": 2.261962683516905
+    "d1": 1.561584556882667,
+    "d7": 2.819608305442678,
+    "d30": 2.534432030428735
   },
   "history90d": [
     {
@@ -372,60 +372,75 @@
     },
     {
       "date": "2026-07-09",
-      "close": 62931.21928929025
+      "close": 63209.861276428644
     }
   ],
   "blocks": [
     {
-      "height": 957319,
-      "id": "000000000000000000015d1ab17cae6ee60cf5c897188e4108c94a1da637d1e0",
-      "timestamp": 1783610172,
-      "txCount": 4080
+      "height": 957345,
+      "id": "00000000000000000001866544370d85500e57d5e98acdb3f55bc960899dd3c0",
+      "timestamp": 1783626688,
+      "txCount": 4434
     },
     {
-      "height": 957318,
-      "id": "000000000000000000019e3f503a4a26893c319183228590f1f8ebbe98f854ce",
-      "timestamp": 1783609550,
-      "txCount": 2667
+      "height": 957344,
+      "id": "00000000000000000001b81d2ea81fd4e0c9043d78c54f52612b9690e0fa8b6d",
+      "timestamp": 1783624899,
+      "txCount": 5266
     },
     {
-      "height": 957317,
-      "id": "000000000000000000019d174b02e5915530efd8b897aa02d2f929ed2b74f5ac",
-      "timestamp": 1783609109,
-      "txCount": 4460
+      "height": 957343,
+      "id": "00000000000000000000aae35612a7929f9627a9a419f4cba744e8c48a529c08",
+      "timestamp": 1783624593,
+      "txCount": 4182
     },
     {
-      "height": 957316,
-      "id": "00000000000000000000a7c7b76fd987c30805024d541b18bc615a548b5a3133",
-      "timestamp": 1783608679,
-      "txCount": 2926
+      "height": 957342,
+      "id": "00000000000000000000fac86b2a178e931a9855f954205da963cf11692262bc",
+      "timestamp": 1783623701,
+      "txCount": 921
     },
     {
-      "height": 957315,
-      "id": "000000000000000000000a4b9bd2c20551b4f86ee10a319a4a395b9670b6eccc",
-      "timestamp": 1783608121,
-      "txCount": 4422
+      "height": 957341,
+      "id": "00000000000000000000b0ddb1c5926744c2901b29155e5bd47fcfb8a3b351d1",
+      "timestamp": 1783623489,
+      "txCount": 4307
     },
     {
-      "height": 957314,
-      "id": "0000000000000000000207c6af13374863d15b8f013da3a587a27f3dd03775f7",
-      "timestamp": 1783606943,
-      "txCount": 3577
+      "height": 957340,
+      "id": "000000000000000000000e3a17c1c050769e59c4c52683083c187c1887dc2f42",
+      "timestamp": 1783622651,
+      "txCount": 3608
     },
     {
-      "height": 957313,
-      "id": "00000000000000000001645e2ade0724b5fdf68a58d15f42e02d09b9f0f6ce1b",
-      "timestamp": 1783606653,
-      "txCount": 4687
+      "height": 957339,
+      "id": "0000000000000000000105972d679b0e032d0a8e25e225f0de5cbdaf8d401815",
+      "timestamp": 1783622536,
+      "txCount": 4121
     },
     {
-      "height": 957312,
-      "id": "0000000000000000000122253ab715c6d0766354c3f7ac12f84af5fea256e8bd",
-      "timestamp": 1783606165,
-      "txCount": 4363
+      "height": 957338,
+      "id": "00000000000000000000a2079326b140f4d92aac74244f2c15fe928087d17e76",
+      "timestamp": 1783621736,
+      "txCount": 4489
     }
   ],
   "news": [
+    {
+      "title": "Newest version of crypto Clarity Act may drop as soon as next week, sources say",
+      "link": "https://www.coindesk.com/policy/2026/07/09/newest-version-of-crypto-clarity-act-may-drop-as-soon-as-next-week-sources-say",
+      "pubDate": "Thu, 09 Jul 2026 19:34:24 +0000"
+    },
+    {
+      "title": "Billions flowing out of bitcoin ETFs and private credit funds suggest rising market risks",
+      "link": "https://www.coindesk.com/markets/2026/07/09/billions-flowing-out-of-bitcoin-etfs-and-private-credit-funds-suggest-rising-market-risks",
+      "pubDate": "Thu, 09 Jul 2026 18:13:04 +0000"
+    },
+    {
+      "title": "AI contracts, not bitcoin, now drive miner valuations, and Cipher and TeraWulf look cheap, says analyst",
+      "link": "https://www.coindesk.com/markets/2026/07/09/cipher-terawulf-among-ai-infrastructure-stocks-trading-below-contract-value-compass-point-argues",
+      "pubDate": "Thu, 09 Jul 2026 15:53:42 +0000"
+    },
     {
       "title": "Ethereum's newest nonprofit wants to become Wall Street's guide to crypto",
       "link": "https://www.coindesk.com/tech/2026/07/09/ethereum-s-newest-nonprofit-wants-to-become-wall-street-s-guide-to-crypto",
@@ -470,21 +485,6 @@
       "title": "Crypto remains resilient in face of renewed Middle East tensions",
       "link": "https://www.coindesk.com/markets/2026/07/09/crypto-remains-resilient-in-face-of-renewed-middle-east-tensions",
       "pubDate": "Thu, 09 Jul 2026 10:36:02 +0000"
-    },
-    {
-      "title": "Singapore's Temasek investment fund says crypto is off the table, will focus on AI",
-      "link": "https://www.coindesk.com/business/2026/07/09/singapore-s-temasek-investment-fund-says-crypto-is-off-the-table-will-focus-on-ai",
-      "pubDate": "Thu, 09 Jul 2026 10:22:35 +0000"
-    },
-    {
-      "title": "Crypto trader applies legendary HODL strategy to EUR/USD forex bet",
-      "link": "https://www.coindesk.com/markets/2026/07/09/crypto-trader-applies-legendary-hodl-strategy-to-eur-usd-forex-bet",
-      "pubDate": "Thu, 09 Jul 2026 09:51:20 +0000"
-    },
-    {
-      "title": "Sony secures conditional approval to set up U.S. stablecoin trust bank",
-      "link": "https://www.coindesk.com/business/2026/07/09/sony-secures-conditional-approval-to-set-up-u-s-stablecoin-trust-bank",
-      "pubDate": "Thu, 09 Jul 2026 09:49:26 +0000"
     }
   ]
 }
