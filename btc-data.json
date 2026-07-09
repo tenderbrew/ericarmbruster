@@ -1,13 +1,13 @@
 {
-  "fetchedAt": "2026-07-09T04:10:12.931Z",
+  "fetchedAt": "2026-07-09T10:00:47.133Z",
   "price": {
-    "usd": 61977,
-    "time": 1783569909
+    "usd": 62861,
+    "time": 1783590908
   },
   "moves": {
-    "d1": -0.4368433577147224,
-    "d7": 0.7964262499236208,
-    "d30": 0.5168613902007513
+    "d1": 0.9832613661631795,
+    "d7": 2.234121536964495,
+    "d30": 1.9505691441891182
   },
   "history90d": [
     {
@@ -372,60 +372,105 @@
     },
     {
       "date": "2026-07-09",
-      "close": 62011.56912034736
+      "close": 62890.28456218997
     }
   ],
   "blocks": [
     {
-      "height": 957259,
-      "id": "0000000000000000000173c519805a191ded1dcc60ad495ae00b14b8d1654deb",
-      "timestamp": 1783569833,
-      "txCount": 5651
+      "height": 957288,
+      "id": "00000000000000000000f94e38afb9bfcfc99d90a5066adf723a06ab122255c3",
+      "timestamp": 1783591133,
+      "txCount": 5463
     },
     {
-      "height": 957258,
-      "id": "0000000000000000000051f5936070bf1a53127c0778a703879f9588965b44c3",
-      "timestamp": 1783569125,
-      "txCount": 5576
+      "height": 957287,
+      "id": "00000000000000000000d240a9190c852d4044894b8da2270e9451c67bd98198",
+      "timestamp": 1783590509,
+      "txCount": 5364
     },
     {
-      "height": 957257,
-      "id": "0000000000000000000078114174bad9e3997b7f07772a0d5e07cdfeeb8f7b69",
-      "timestamp": 1783568375,
-      "txCount": 3769
+      "height": 957286,
+      "id": "00000000000000000001d1342fdb7aca99530415555f8d2634ae67dc501098a3",
+      "timestamp": 1783590229,
+      "txCount": 1094
     },
     {
-      "height": 957256,
-      "id": "00000000000000000000d78bc69d07a49a0477cee1b7a2f02ecd5ec567dcd8de",
-      "timestamp": 1783567561,
-      "txCount": 6337
+      "height": 957285,
+      "id": "000000000000000000011ada0a2dc0b9f4113b4ac58b52d4b8a84cff3e76dfcf",
+      "timestamp": 1783590220,
+      "txCount": 3704
     },
     {
-      "height": 957255,
-      "id": "0000000000000000000196b200db4c081a4b31630b8f7e5ca8f29f5f08979601",
-      "timestamp": 1783567369,
-      "txCount": 5519
+      "height": 957284,
+      "id": "000000000000000000001d24a14483899870e878cba6d380b4dc7f89c8fa7ec6",
+      "timestamp": 1783589208,
+      "txCount": 2239
     },
     {
-      "height": 957254,
-      "id": "00000000000000000000cb0019ef6f2d53bac337e682158340cfa4c47f202b1e",
-      "timestamp": 1783566843,
-      "txCount": 5837
+      "height": 957283,
+      "id": "000000000000000000014c8102ad555902c52c801a0fc33bafbce317638c6d67",
+      "timestamp": 1783589086,
+      "txCount": 3280
     },
     {
-      "height": 957253,
-      "id": "00000000000000000001af470b51fe03ab6f6090ede7ac0c57ebe82bd6b2d1f0",
-      "timestamp": 1783566520,
-      "txCount": 6933
+      "height": 957282,
+      "id": "000000000000000000011e8f11c5e0333ed259047f7c4db5fe84805de0243000",
+      "timestamp": 1783588656,
+      "txCount": 3514
     },
     {
-      "height": 957252,
-      "id": "0000000000000000000065b5f44392467334c9c11aa3e036cbdd4234ea636853",
-      "timestamp": 1783566445,
-      "txCount": 5326
+      "height": 957281,
+      "id": "000000000000000000015137f080f2ca0fa0be807f32ca206aac0f810805dfa9",
+      "timestamp": 1783587471,
+      "txCount": 5203
     }
   ],
   "news": [
+    {
+      "title": "Crypto trader applies legendary HODL strategy to EUR/USD forex bet",
+      "link": "https://www.coindesk.com/markets/2026/07/09/crypto-trader-applies-legendary-hodl-strategy-to-eur-usd-forex-bet",
+      "pubDate": "Thu, 09 Jul 2026 09:51:20 +0000"
+    },
+    {
+      "title": "Sony secures conditional approval to set up U.S. stablecoin trust bank",
+      "link": "https://www.coindesk.com/business/2026/07/09/sony-secures-conditional-approval-to-set-up-u-s-stablecoin-trust-bank",
+      "pubDate": "Thu, 09 Jul 2026 09:49:26 +0000"
+    },
+    {
+      "title": "Two blockbuster AI IPO's on the horizon could leave crypto further behind",
+      "link": "https://www.coindesk.com/markets/2026/07/09/two-blockbuster-ai-ipo-s-on-the-horizon-could-leave-crypto-further-behind",
+      "pubDate": "Thu, 09 Jul 2026 09:31:56 +0000"
+    },
+    {
+      "title": "Bitcoin's dwindling exchange reserves don't pack the same bullish punch anymore",
+      "link": "https://www.coindesk.com/markets/2026/07/09/bitcoin-s-dwindling-exchange-reserves-don-t-pack-the-same-bullish-punch-anymore",
+      "pubDate": "Thu, 09 Jul 2026 08:43:01 +0000"
+    },
+    {
+      "title": "Live markets: Second day of U.S, Iran conflict keeps markets volatile as oil drops",
+      "link": "https://www.coindesk.com/markets/2026/07/09/live-markets-bitcoin-etfs-slip-back-to-outflows-while-ether-funds-extend-their-streak",
+      "pubDate": "Thu, 09 Jul 2026 06:51:10 +0000"
+    },
+    {
+      "title": "Bank of Japan may speed up rate hikes, pushing borrowing costs above 2%, ex-BOJ official warns",
+      "link": "https://www.coindesk.com/markets/2026/07/09/bank-of-japan-may-speed-up-rate-hikes-pushing-borrowing-costs-above-2-ex-boj-official-warns",
+      "pubDate": "Thu, 09 Jul 2026 06:42:09 +0000"
+    },
+    {
+      "title": "'CASHCAT' trader turns $800 into over $1 million on Robinhood's brand new blockchain",
+      "link": "https://www.coindesk.com/tech/2026/07/09/cashcat-trader-turns-usd800-into-over-usd1-million-on-robinhood-s-brand-new-blockchain",
+      "pubDate": "Thu, 09 Jul 2026 06:40:50 +0000"
+    },
+    {
+      "title": "XRP holds near $1.10 as traders watch long-term breakout setup",
+      "link": "https://www.coindesk.com/markets/2026/07/09/xrp-holds-near-usd1-10-as-traders-watch-long-term-breakout-setup",
+      "pubDate": "Thu, 09 Jul 2026 05:07:11 +0000"
+    },
+    {
+      "title": "Bitcoin, ether steady, gold slides as U.S.-Iran tensions escalate again",
+      "link": "https://www.coindesk.com/markets/2026/07/09/bitcoin-ether-steady-gold-slides-as-us-iran-tensions-escalate-again",
+      "pubDate": "Thu, 09 Jul 2026 04:57:35 +0000"
+    },
     {
       "title": "Polymarket bets on U.S. marketing blitz to win back trust after 4-year ban: Report",
       "link": "https://www.coindesk.com/markets/2026/07/08/polymarket-bets-on-u-s-marketing-blitz-to-win-back-trust-after-4-year-ban-report",
@@ -440,51 +485,6 @@
       "title": "Crypto VC Paradigm launches $1.2 billion AI fund as it broadens beyond digital assets",
       "link": "https://www.coindesk.com/markets/2026/07/08/crypto-vc-paradigm-launches-usd1-2-billion-ai-fund-as-it-broadens-beyond-digital-assets-bbg",
       "pubDate": "Wed, 08 Jul 2026 15:11:45 +0000"
-    },
-    {
-      "title": "Dinari, tZERO join forces on turnkey platform for tokenized U.S. equities",
-      "link": "https://www.coindesk.com/business/2026/07/08/dinari-tzero-join-forces-on-turnkey-platform-for-tokenized-u-s-equities",
-      "pubDate": "Wed, 08 Jul 2026 14:35:04 +0000"
-    },
-    {
-      "title": "Adam Back's bitcoin treasury firm scraps SPAC merger, seeks new deal",
-      "link": "https://www.coindesk.com/markets/2026/07/08/adam-back-s-bstr-scraps-original-spac-terms-seeks-new-deal",
-      "pubDate": "Wed, 08 Jul 2026 14:17:26 +0000"
-    },
-    {
-      "title": "BNB Chain is building a new layer-1 for high-frequency trading and AI agents",
-      "link": "https://www.coindesk.com/web3/2026/07/08/bnb-chain-is-building-a-new-layer-1-for-high-frequency-trading-and-ai-agents",
-      "pubDate": "Wed, 08 Jul 2026 14:01:44 +0000"
-    },
-    {
-      "title": "Citadel abandons multi-year crypto lawsuit to focus on bankruptcy order against an ex-employee",
-      "link": "https://www.coindesk.com/policy/2026/07/08/citadel-drops-u-s-portofino-suit-seeks-bankruptcy-order-against-firm-s-founder-in-uk",
-      "pubDate": "Wed, 08 Jul 2026 12:45:30 +0000"
-    },
-    {
-      "title": "SpaceX's first bitcoin wallet movements in six months likely don't signal sales",
-      "link": "https://www.coindesk.com/markets/2026/07/08/spacex-s-first-bitcoin-wallet-movements-in-six-months-likely-don-t-signal-sales",
-      "pubDate": "Wed, 08 Jul 2026 12:44:27 +0000"
-    },
-    {
-      "title": "Bitcoin's inflation quagmire gets stickier as renewed MidEast conflict sends oil price soaring",
-      "link": "https://www.coindesk.com/daybook-us/2026/07/08/bitcoin-s-inflation-quagmire-gets-stickier-as-renewed-mideast-conflict-sends-oil-price-soaring",
-      "pubDate": "Wed, 08 Jul 2026 11:15:42 +0000"
-    },
-    {
-      "title": "Crypto and stocks tumble after Trump declares ceasefire 'over' following Iran strikes",
-      "link": "https://www.coindesk.com/markets/2026/07/08/crypto-and-stocks-tumble-after-trump-declares-ceasefire-over-following-iran-strikes",
-      "pubDate": "Wed, 08 Jul 2026 10:37:10 +0000"
-    },
-    {
-      "title": "Reserve Bank of India still favors crypto prohibition to curtail tax evasion: Reuters",
-      "link": "https://www.coindesk.com/policy/2026/07/08/reserve-bank-of-india-still-favors-crypto-prohibition-to-curtail-tax-evasion-reuters",
-      "pubDate": "Wed, 08 Jul 2026 09:45:24 +0000"
-    },
-    {
-      "title": "Validators embrace XRP Ledger's recent upgrade. But not everyone’s on board yet",
-      "link": "https://www.coindesk.com/tech/2026/07/08/xrp-ledger-s-new-upgrade-is-here-but-not-everyone-s-on-board-yet",
-      "pubDate": "Wed, 08 Jul 2026 08:40:22 +0000"
     }
   ]
 }
