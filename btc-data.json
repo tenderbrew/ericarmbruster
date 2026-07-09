@@ -1,13 +1,13 @@
 {
-  "fetchedAt": "2026-07-09T20:01:43.004Z",
+  "fetchedAt": "2026-07-09T22:41:57.404Z",
   "price": {
-    "usd": 63221,
-    "time": 1783626909
+    "usd": 63251,
+    "time": 1783636507
   },
   "moves": {
-    "d1": 1.561584556882667,
-    "d7": 2.819608305442678,
-    "d30": 2.534432030428735
+    "d1": 1.6097781561092983,
+    "d7": 2.8683988694825358,
+    "d30": 2.583087270948692
   },
   "history90d": [
     {
@@ -372,60 +372,80 @@
     },
     {
       "date": "2026-07-09",
-      "close": 63209.861276428644
+      "close": 63249.080593243154
     }
   ],
   "blocks": [
     {
-      "height": 957345,
-      "id": "00000000000000000001866544370d85500e57d5e98acdb3f55bc960899dd3c0",
-      "timestamp": 1783626688,
-      "txCount": 4434
+      "height": 957357,
+      "id": "0000000000000000000088cd7abc3bd675f5fa4de45a8e7622c4214d606a0a7f",
+      "timestamp": 1783636721,
+      "txCount": 3320
     },
     {
-      "height": 957344,
-      "id": "00000000000000000001b81d2ea81fd4e0c9043d78c54f52612b9690e0fa8b6d",
-      "timestamp": 1783624899,
-      "txCount": 5266
+      "height": 957356,
+      "id": "0000000000000000000005d263cf813b7d5d171ab30a8f1c640760b4fbe67486",
+      "timestamp": 1783636659,
+      "txCount": 3910
     },
     {
-      "height": 957343,
-      "id": "00000000000000000000aae35612a7929f9627a9a419f4cba744e8c48a529c08",
-      "timestamp": 1783624593,
-      "txCount": 4182
+      "height": 957355,
+      "id": "000000000000000000009e4368a6ee83b7b1f02defdb5c341a8d0f8d4bc2b4b5",
+      "timestamp": 1783636064,
+      "txCount": 4055
     },
     {
-      "height": 957342,
-      "id": "00000000000000000000fac86b2a178e931a9855f954205da963cf11692262bc",
-      "timestamp": 1783623701,
-      "txCount": 921
+      "height": 957354,
+      "id": "000000000000000000002bb58bd9225e26120abfab13434310c3252cfa5a982e",
+      "timestamp": 1783634957,
+      "txCount": 3708
     },
     {
-      "height": 957341,
-      "id": "00000000000000000000b0ddb1c5926744c2901b29155e5bd47fcfb8a3b351d1",
-      "timestamp": 1783623489,
-      "txCount": 4307
+      "height": 957353,
+      "id": "000000000000000000006ba2d785d45d12dd37b64d07daf42c412ff980d78cba",
+      "timestamp": 1783634767,
+      "txCount": 3215
     },
     {
-      "height": 957340,
-      "id": "000000000000000000000e3a17c1c050769e59c4c52683083c187c1887dc2f42",
-      "timestamp": 1783622651,
-      "txCount": 3608
+      "height": 957352,
+      "id": "00000000000000000000c9b6ad61740e3844da10377f958fcfdd49a62da79fa8",
+      "timestamp": 1783634023,
+      "txCount": 3338
     },
     {
-      "height": 957339,
-      "id": "0000000000000000000105972d679b0e032d0a8e25e225f0de5cbdaf8d401815",
-      "timestamp": 1783622536,
-      "txCount": 4121
+      "height": 957351,
+      "id": "00000000000000000001aa49c2ecbbb9f968921662ef7697ee725faa2568dd94",
+      "timestamp": 1783633788,
+      "txCount": 3177
     },
     {
-      "height": 957338,
-      "id": "00000000000000000000a2079326b140f4d92aac74244f2c15fe928087d17e76",
-      "timestamp": 1783621736,
-      "txCount": 4489
+      "height": 957350,
+      "id": "0000000000000000000052df80fd8f952098615bd54373232db92f68a029eeb8",
+      "timestamp": 1783633746,
+      "txCount": 3256
     }
   ],
   "news": [
+    {
+      "title": "New Hampshire snuffs out trailblazing state-government bitcoin bond effort",
+      "link": "https://www.coindesk.com/policy/2026/07/09/new-hampshire-snuffs-out-trailblazing-bitcoin-municipal-bond-effort",
+      "pubDate": "Thu, 09 Jul 2026 22:19:54 +0000"
+    },
+    {
+      "title": "Grayscale's CFO exits after 7 years with crypto asset manager",
+      "link": "https://www.coindesk.com/business/2026/07/09/grayscale-s-cfo-exits-after-7-years-with-crypto-asset-manager",
+      "pubDate": "Thu, 09 Jul 2026 20:42:49 +0000"
+    },
+    {
+      "title": "With SEC fight over, Coinbase's top legal exec Grewal moves on, and others reassigned",
+      "link": "https://www.coindesk.com/policy/2026/07/09/with-sec-fight-over-coinbase-s-top-legal-exec-grewal-moves-on-and-others-reassigned",
+      "pubDate": "Thu, 09 Jul 2026 20:31:39 +0000"
+    },
+    {
+      "title": "Arbitrum jumps 19% benefitting from Robinhood's $568 million onchain trading frenzy",
+      "link": "https://www.coindesk.com/markets/2026/07/09/arbitrum-jumps-19-benefitting-from-robinhood-s-usd568-million-onchain-trading-frenzy",
+      "pubDate": "Thu, 09 Jul 2026 20:28:51 +0000"
+    },
     {
       "title": "Newest version of crypto Clarity Act may drop as soon as next week, sources say",
       "link": "https://www.coindesk.com/policy/2026/07/09/newest-version-of-crypto-clarity-act-may-drop-as-soon-as-next-week-sources-say",
@@ -465,26 +485,6 @@
       "title": "Pricing houses in bitcoin exposes dollar's loss of value",
       "link": "https://www.coindesk.com/daybook-us/2026/07/09/pricing-houses-in-bitcoin-exposes-dollar-s-loss-of-value",
       "pubDate": "Thu, 09 Jul 2026 11:27:10 +0000"
-    },
-    {
-      "title": "Swift rolls out new blockchain ledger to bring 24/7 banking to 17 global giants",
-      "link": "https://www.coindesk.com/business/2026/07/09/swift-rolls-out-24-7-blockchain-payment-systems-with-17-global-banks-across-six-continents",
-      "pubDate": "Thu, 09 Jul 2026 11:08:37 +0000"
-    },
-    {
-      "title": "Latin America’s biggest stock exchange now offers options on bitcoin, ether and solana futures",
-      "link": "https://www.coindesk.com/business/2026/07/09/brazil-s-b3-exchange-introduces-options-on-bitcoin-ether-and-solana-futures",
-      "pubDate": "Thu, 09 Jul 2026 10:55:37 +0000"
-    },
-    {
-      "title": "Crypto for Advisors: Q2 2026 Digital Asset Review",
-      "link": "https://www.coindesk.com/coindesk-indices/2026/07/09/q2-2026-digital-asset-review",
-      "pubDate": "Thu, 09 Jul 2026 10:40:45 +0000"
-    },
-    {
-      "title": "Crypto remains resilient in face of renewed Middle East tensions",
-      "link": "https://www.coindesk.com/markets/2026/07/09/crypto-remains-resilient-in-face-of-renewed-middle-east-tensions",
-      "pubDate": "Thu, 09 Jul 2026 10:36:02 +0000"
     }
   ]
 }
