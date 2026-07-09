@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-07-08T19:37:53.254Z",
+  "fetchedAt": "2026-07-09T03:39:29.374Z",
   "indicators": {
     "UNRATE": {
       "latest": {
@@ -63,12 +63,12 @@
     },
     "T10YIE": {
       "latest": {
-        "date": "2026-07-07",
+        "date": "2026-07-08",
         "value": 2.25
       },
       "previous": {
-        "date": "2026-07-06",
-        "value": 2.24
+        "date": "2026-07-07",
+        "value": 2.25
       }
     },
     "PCE": {
@@ -123,42 +123,42 @@
     },
     "DGS2": {
       "latest": {
-        "date": "2026-07-06",
-        "value": 4.13
+        "date": "2026-07-07",
+        "value": 4.19
       },
       "previous": {
-        "date": "2026-07-03",
-        "value": 0
+        "date": "2026-07-06",
+        "value": 4.13
       }
     },
     "DGS10": {
       "latest": {
-        "date": "2026-07-06",
-        "value": 4.48
+        "date": "2026-07-07",
+        "value": 4.55
       },
       "previous": {
-        "date": "2026-07-03",
-        "value": 0
+        "date": "2026-07-06",
+        "value": 4.48
       }
     },
     "T10Y2Y": {
       "latest": {
-        "date": "2026-07-07",
-        "value": 0.36
+        "date": "2026-07-08",
+        "value": 0.35
       },
       "previous": {
-        "date": "2026-07-06",
-        "value": 0.35
+        "date": "2026-07-07",
+        "value": 0.36
       }
     },
     "DFII10": {
       "latest": {
-        "date": "2026-07-06",
-        "value": 2.24
+        "date": "2026-07-07",
+        "value": 2.3
       },
       "previous": {
-        "date": "2026-07-03",
-        "value": 0
+        "date": "2026-07-06",
+        "value": 2.24
       }
     },
     "BAMLH0A0HYM2": {
@@ -301,6 +301,42 @@
   },
   "news": [
     {
+      "title": "Foreign Investments and the Spirit of Capitalism",
+      "link": "https://mises.org/podcasts/marxism-unmasked-delusion-destruction/foreign-investments-and-spirit-capitalism",
+      "pubDate": "Wed, 08 Jul 2026 04:33:23 CDT",
+      "kind": "Podcast"
+    },
+    {
+      "title": "Profit and Loss, Private Property, and the Achievements of Capitalism",
+      "link": "https://mises.org/podcasts/marxism-unmasked-delusion-destruction/profit-and-loss-private-property-and-achievements-capitalism",
+      "pubDate": "Wed, 08 Jul 2026 04:22:21 CDT",
+      "kind": "Podcast"
+    },
+    {
+      "title": "Money, Interest, and the Business Cycle",
+      "link": "https://mises.org/podcasts/marxism-unmasked-delusion-destruction/money-interest-and-business-cycle",
+      "pubDate": "Wed, 08 Jul 2026 03:55:29 CDT",
+      "kind": "Podcast"
+    },
+    {
+      "title": "The Making of Modern Civilization: Savings, Investment, and Economic Calculation",
+      "link": "https://mises.org/podcasts/marxism-unmasked-delusion-destruction/making-modern-civilization-savings-investment-and-economic-calculation",
+      "pubDate": "Wed, 08 Jul 2026 03:20:21 CDT",
+      "kind": "Podcast"
+    },
+    {
+      "title": "Marxism and the Manipulation of Man",
+      "link": "https://mises.org/podcasts/marxism-unmasked-delusion-destruction/marxism-and-manipulation-man",
+      "pubDate": "Wed, 08 Jul 2026 03:08:21 CDT",
+      "kind": "Podcast"
+    },
+    {
+      "title": "Nationalism, Socialism, and Violent Revolution",
+      "link": "https://mises.org/podcasts/marxism-unmasked-delusion-destruction/nationalism-socialism-and-violent-revolution",
+      "pubDate": "Wed, 08 Jul 2026 02:54:15 CDT",
+      "kind": "Podcast"
+    },
+    {
       "title": "Individualism and the Industrial Revolution",
       "link": "https://mises.org/podcasts/marxism-unmasked-delusion-destruction/individualism-and-industrial-revolution",
       "pubDate": "Wed, 08 Jul 2026 02:29:06 CDT",
@@ -322,42 +358,6 @@
       "title": "Mind, Materialism, and the Fate of Man",
       "link": "https://mises.org/podcasts/marxism-unmasked-delusion-destruction/mind-materialism-and-fate-man",
       "pubDate": "Wed, 08 Jul 2026 01:59:52 CDT",
-      "kind": "Podcast"
-    },
-    {
-      "title": "Introduction to Marxism Unmasked",
-      "link": "https://mises.org/podcasts/marxism-unmasked-delusion-destruction/introduction-marxism-unmasked",
-      "pubDate": "Wed, 08 Jul 2026 01:52:10 CDT",
-      "kind": "Podcast"
-    },
-    {
-      "title": "Cronyism and Regulatory Capture",
-      "link": "https://mises.org/mises-wire/cronyism-and-regulatory-capture",
-      "pubDate": "Wed, 08 Jul 2026 11:00:00 CDT",
-      "kind": "Mises Wire"
-    },
-    {
-      "title": "Appendix 2: On the Term “Liberalism”",
-      "link": "https://mises.org/podcasts/liberalism-classical-tradition/appendix-2-term-liberalism",
-      "pubDate": "Wed, 08 Jul 2026 10:06:50 CDT",
-      "kind": "Podcast"
-    },
-    {
-      "title": "Appendix 1: On the Literature of Liberalism",
-      "link": "https://mises.org/podcasts/liberalism-classical-tradition/appendix-1-literature-liberalism",
-      "pubDate": "Wed, 08 Jul 2026 09:59:45 CDT",
-      "kind": "Podcast"
-    },
-    {
-      "title": "Chapter 5: The Future of Liberalism",
-      "link": "https://mises.org/podcasts/liberalism-classical-tradition/chapter-5-future-liberalism",
-      "pubDate": "Wed, 08 Jul 2026 09:55:29 CDT",
-      "kind": "Podcast"
-    },
-    {
-      "title": "Chapter 4: Liberalism and the Political Parties",
-      "link": "https://mises.org/podcasts/liberalism-classical-tradition/chapter-4-liberalism-and-political-parties",
-      "pubDate": "Wed, 08 Jul 2026 09:40:16 CDT",
       "kind": "Podcast"
     }
   ]
