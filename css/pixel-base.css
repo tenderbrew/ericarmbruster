@@ -83,7 +83,7 @@ a:focus-visible,
 
 .masthead { margin-bottom: 8px; }
 
-.masthead .sun { display: block; margin-bottom: 24px; }
+.masthead .px-art { display: block; margin-bottom: 24px; }
 
 .masthead--home h1::after {
   /* the one moving thing on the site: a block cursor (homepage only) */
