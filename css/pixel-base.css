@@ -1,0 +1,197 @@
+/*
+  pixel-base.css — v3 design system
+  ---------------------------------
+  Sun-bleached retro/pixel system. One system for every page (Seymour's
+  memorial keeps its own Garamond styles and does not load this file).
+
+  Rules of the system:
+  - DotGothic16 for display/nav/labels, at integer pixel sizes only.
+  - IBM Plex Mono for body text and tables.
+  - Shadows are solid black offsets — never blurred.
+  - Ornament is pixel art (inline SVG, crispEdges); no border-radius anywhere.
+  - Static CSS only. The single animation (masthead cursor blink) is
+    steps()-based and removed under prefers-reduced-motion.
+*/
+
+:root {
+  --paper: #F3EEDF;
+  --paper-dim: #EAE2CB;
+  --ink: #1A1A18;
+  --pool: #2E6FBF;
+  --sunset: #E8743B;
+  --shadow: #000000;
+
+  --font-display: "DotGothic16", monospace;
+  --font-body: "IBM Plex Mono", monospace;
+}
+
+* { box-sizing: border-box; }
+
+html {
+  background: var(--paper);
+  color: var(--ink);
+  font-family: var(--font-body);
+  font-size: 15px;
+  line-height: 1.7;
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  margin: 0 auto;
+  max-width: 660px;
+  padding: 40px 24px 56px;
+}
+
+img,
+svg.px-art {
+  image-rendering: pixelated;
+  max-width: 100%;
+}
+
+/* ---- Type ------------------------------------------------------------ */
+
+h1, h2, h3, .px-label {
+  font-family: var(--font-display);
+  font-weight: 400;
+  line-height: 1.2;
+  letter-spacing: 1px;
+  margin: 0;
+}
+
+h1 { font-size: 48px; }
+h2 { font-size: 24px; margin-top: 8px; }
+.px-label { font-size: 16px; }
+
+p { margin: 16px 0; }
+
+a {
+  color: var(--pool);
+  text-decoration-thickness: 2px;
+  text-underline-offset: 3px;
+}
+
+a:hover { color: var(--sunset); }
+
+a:focus-visible,
+:focus-visible {
+  outline: 3px solid var(--sunset);
+  outline-offset: 2px;
+}
+
+::selection { background: var(--sunset); color: var(--paper); }
+
+/* ---- Masthead --------------------------------------------------------- */
+
+.masthead { margin-bottom: 8px; }
+
+.masthead .sun { display: block; margin-bottom: 24px; }
+
+.masthead h1::after {
+  /* the one moving thing on the site: a block cursor */
+  content: "";
+  display: inline-block;
+  width: 22px;
+  height: 38px;
+  margin-left: 10px;
+  background: var(--sunset);
+  animation: blink 1.2s steps(1) infinite;
+}
+
+@keyframes blink { 50% { background: transparent; } }
+
+@media (prefers-reduced-motion: reduce) {
+  .masthead h1::after { animation: none; }
+}
+
+.masthead .tagline {
+  margin-top: 4px;
+  color: var(--ink);
+}
+
+/* ---- Pixel wave divider ----------------------------------------------- */
+/* Stepped 16x8 water tile, repeated. Same motif as the masthead ornament. */
+
+.px-wave {
+  border: 0;
+  height: 8px;
+  margin: 40px 0;
+  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="8" shape-rendering="crispEdges"><rect x="0" y="4" width="2" height="2" fill="%232E6FBF"/><rect x="2" y="2" width="2" height="2" fill="%232E6FBF"/><rect x="4" y="0" width="2" height="2" fill="%232E6FBF"/><rect x="6" y="2" width="2" height="2" fill="%232E6FBF"/><rect x="8" y="4" width="2" height="2" fill="%232E6FBF"/><rect x="10" y="6" width="2" height="2" fill="%232E6FBF"/><rect x="12" y="4" width="2" height="2" fill="%232E6FBF"/><rect x="14" y="6" width="2" height="2" fill="%232E6FBF"/></svg>');
+  background-repeat: repeat-x;
+  image-rendering: pixelated;
+}
+
+/* ---- Panels and cards -------------------------------------------------- */
+
+.px-panel {
+  background: var(--paper-dim);
+  border: 2px solid var(--ink);
+  box-shadow: 4px 4px 0 var(--shadow);
+  padding: 20px 24px;
+  margin: 24px 0;
+}
+
+.px-panel h2, .px-panel .px-label { margin-top: 0; }
+.px-panel :last-child { margin-bottom: 0; }
+
+/* ---- Link table -------------------------------------------------------- */
+
+.px-links {
+  list-style: none;
+  margin: 16px 0;
+  padding: 0;
+}
+
+.px-links li {
+  display: flex;
+  align-items: baseline;
+  gap: 12px;
+  padding: 6px 0;
+}
+
+.px-links .px-label {
+  min-width: 104px;
+  color: var(--ink);
+}
+
+/* ---- Sprite bullets ---------------------------------------------------- */
+/* Small pixel sun used as a list bullet. */
+
+ul.px-bullets {
+  list-style: none;
+  padding-left: 0;
+}
+
+ul.px-bullets li {
+  padding-left: 26px;
+  position: relative;
+  margin: 8px 0;
+}
+
+ul.px-bullets li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0.35em;
+  width: 14px;
+  height: 14px;
+  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="7" height="7" shape-rendering="crispEdges"><rect x="2" y="1" width="3" height="1" fill="%23E8743B"/><rect x="1" y="2" width="5" height="3" fill="%23E8743B"/><rect x="2" y="5" width="3" height="1" fill="%23E8743B"/></svg>');
+  background-size: 14px 14px;
+  image-rendering: pixelated;
+}
+
+/* ---- Footer ------------------------------------------------------------ */
+
+footer {
+  margin-top: 48px;
+  font-size: 13px;
+  color: var(--ink);
+}
+
+/* ---- Mobile ------------------------------------------------------------ */
+
+@media (max-width: 480px) {
+  body { padding: 24px 16px 40px; }
+  h1 { font-size: 32px; }
+  h2 { font-size: 16px; }
+  .masthead h1::after { width: 15px; height: 25px; margin-left: 7px; }
+}

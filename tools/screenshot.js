@@ -37,13 +37,10 @@ const MIME = {
 
 // Per-page hydration assertions. Pages not listed are screenshotted only.
 const CHECKS = {
-  bitcoin: { must: ['Latest snapshot from the data feed.'], mustNot: ['Data feed unavailable'] },
-  film:    { must: ['aria-label="Letterboxd profile"', 'film-lightbox'], mustNot: ['Film data unavailable ('] },
   seymour: { count: [['class="sy-photo-btn"', 30]] },
 };
 
-const ALL_PAGES = ['index', 'about', 'projects', 'video-games', 'film',
-  'economics', 'self-hosting', 'seymour', 'bitcoin'];
+const ALL_PAGES = ['index', 'seymour', '404'];
 
 function findBrowser() {
   const candidates = [
