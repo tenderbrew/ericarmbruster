@@ -34,6 +34,41 @@
 
   <link rel="stylesheet" href="css/pixel-base.css">
   <style>
+    .masthead--home {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      gap: 24px;
+      flex-wrap: wrap;
+    }
+    .mast-portrait {
+      display: block;
+      text-decoration: none;
+      text-align: center;
+      flex: 0 0 auto;
+    }
+    .mast-portrait img {
+      display: block;
+      width: 176px;
+      height: 176px;
+      object-fit: cover;
+      image-rendering: auto; /* a real photograph, not pixel art */
+      border: 2px solid var(--ink);
+      box-shadow: 4px 4px 0 var(--shadow);
+    }
+    .mast-portrait .plate {
+      display: inline-block;
+      margin-top: 10px;
+      font-family: var(--font-display);
+      font-size: 16px;
+      color: var(--pool);
+    }
+    .mast-portrait:hover img { border-color: var(--sunset); }
+    .mast-portrait:hover .plate { color: var(--sunset); }
+    @media (max-width: 480px) {
+      .mast-portrait img { width: 128px; height: 128px; }
+    }
+
     .toc .px-label { min-width: 160px; }
     .toc-icon { flex: 0 0 16px; align-self: center; }
     .toc a.px-label { color: var(--pool); }
@@ -53,6 +88,7 @@
 <body>
 
   <header class="masthead masthead--home">
+    <div class="mast-left">
     <svg class="px-art sun" width="256" height="144" viewBox="0 0 32 18" shape-rendering="crispEdges" aria-hidden="true">
       <!-- sun -->
       <rect x="10" y="1" width="4" height="1" fill="#E8743B"/>
@@ -92,6 +128,11 @@
       <rect x="10" y="17" width="2" height="1" fill="#E8743B"/>
     </svg>
     <h1>Eric Armbruster</h1>
+    </div>
+    <a class="mast-portrait" href="hector.html">
+      <img src="images/hector-0002.png" alt="Hector, a Border Terrier, sitting on the edge of his dog bed" width="176" height="176">
+      <span class="plate">hector</span>
+    </a>
   </header>
 
   <hr class="px-wave">
