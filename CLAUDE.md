@@ -25,9 +25,26 @@ One system for every page. Tokens live at the top of `css/pixel-base.css` — al
 
 ## Pages
 
-- `index.html` — single-page home (intro, elsewhere links, Seymour pointer). Carries the canonical head conventions: OG/twitter meta, `theme-color #F3EEDF`, gtag `G-5ZTHJXDR9V`, hector favicon.
+- `index.html` — home: intro, sections TOC, elsewhere links, Seymour pointer. Carries the canonical head conventions: OG/twitter meta, `theme-color #F3EEDF`, gtag `G-5ZTHJXDR9V`, hector favicon. The blinking masthead cursor is homepage-only (`.masthead--home`).
+- `now.html` — hand-edited "what I'm up to": one paragraph + date, replaced whenever.
+- `video-games.html` — hydrates from `steam-data.json` (see pipelines below).
+- `film.html` — hydrates from `film-data.json`; posters hotlink Letterboxd's CDN.
+- `reading.html` — hand-edited book log; add a `<tr>` per book (template row in a comment).
 - `seymour.html` — memorial, pixel chrome with untouched photos (see above).
 - `404.html` — GitHub Pages not-found page, pixel system, `noindex`, **absolute** asset paths (`/css/...`) because it serves at any path.
+
+## Data pipelines
+
+Same architecture as v1: GitHub Actions run the fetcher on a schedule, commit the JSON, and the page `fetch()`es it at load — the browser never calls upstream APIs. On successful render the page sets `data-hydrated="<name>"` on `<main>` (asserted by `tools/screenshot.js`); the failure message is JS-injected only on failure (a hidden static fallback string would trip the `mustNot` check).
+
+| Page | Fetcher | Data file | Workflow | Schedule |
+|---|---|---|---|---|
+| `video-games` | `steam-fetch.js` (needs `.env` `STEAM_API_KEY`/`STEAM_ID` locally; Action uses repo secrets) | `steam-data.json` | `update-steam.yml` | daily 08:00 UTC |
+| `film` | `film-fetch.js` (no key) | `film-data.json` | `update-film.yml` | every 6 hours |
+
+JSON shape is a contract between fetcher and page — change both sides together. Because these workflows commit to `main`, `git pull --rebase origin main` before pushing.
+
+Shared pixel components for data pages live in `pixel-base.css`: `.px-stats`/`.px-stat` (stat tiles), `.px-table` (bordered tables), `.px-bar-row` (single-series chunky bars). Gotcha: `ul.px-bullets li` owns `padding-left` for the sprite bullet — page styles must only set `padding-top/bottom` on those `li`s or the bullet overlaps the text.
 
 When adding a page: copy index.html's head block, load `css/pixel-base.css`, put page-specific styles in a `<style>` block in the head, add the page to `sitemap.xml` and to `ALL_PAGES` in `tools/screenshot.js`. There is no shared-layout include system — header/footer markup is duplicated per page, so grep and update every copy when changing shared chrome.
 

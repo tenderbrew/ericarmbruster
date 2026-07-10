@@ -1,0 +1,239 @@
+<!--
+  film.html — Film (v3 retro/pixel system)
+  -----------------------------------------
+  Hydrates from film-data.json, baked by film-fetch.js via the
+  update-film.yml Action (Letterboxd RSS + profile) — no scraping in the
+  browser. Poster images hotlink Letterboxd's CDN, same as the v1 page.
+  On success the JS sets data-hydrated="film" on <main> for
+  tools/screenshot.js.
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Film &mdash; Eric Armbruster</title>
+
+  <meta name="description" content="What Eric Armbruster has been watching, from his Letterboxd diary.">
+  <meta name="theme-color" content="#F3EEDF">
+  <link rel="canonical" href="https://www.ericarmbruster.com/film.html">
+  <meta property="og:title" content="Film - Eric Armbruster">
+  <meta property="og:description" content="What Eric Armbruster has been watching.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://www.ericarmbruster.com/film.html">
+
+  <link rel="icon" href="images/hector-favicon.png" type="image/png">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DotGothic16&family=IBM+Plex+Mono:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/pixel-base.css">
+
+  <style>
+    .site-nav { margin-bottom: 32px; }
+    .site-nav a {
+      font-family: var(--font-display);
+      font-size: 16px;
+      text-decoration: none;
+    }
+    .film-updated { font-size: 12px; margin: 4px 0 0; }
+    .film-fallback { display: none; }
+
+    .film-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+      gap: 28px 20px;
+      margin: 24px 0;
+    }
+    .film-card { margin: 0; }
+    .film-card a.poster-link {
+      display: block;
+      border: 2px solid var(--ink);
+      box-shadow: 4px 4px 0 var(--shadow);
+    }
+    .film-card a.poster-link:hover { border-color: var(--sunset); }
+    .film-card img {
+      display: block;
+      width: 100%;
+      height: auto;
+      aspect-ratio: 2 / 3;
+      object-fit: cover;
+    }
+    .film-card figcaption { margin-top: 8px; font-size: 12px; }
+    .film-card .film-title { display: block; }
+    .film-card .film-meta {
+      display: flex;
+      justify-content: space-between;
+      gap: 8px;
+      margin-top: 2px;
+    }
+    .film-card .film-rating {
+      font-family: var(--font-display);
+      font-size: 16px;
+      color: var(--sunset);
+      letter-spacing: 0;
+    }
+    .film-card .film-date { color: var(--pool); }
+
+    /* padding-top/bottom only — px-bullets owns padding-left for the sprite */
+    .film-favorites li,
+    ul.film-lists li { padding-top: 2px; padding-bottom: 2px; }
+    ul.film-lists .count { font-size: 12px; }
+  </style>
+
+  <!-- Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-5ZTHJXDR9V"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-5ZTHJXDR9V');
+  </script>
+</head>
+<body>
+
+  <nav class="site-nav">
+    <a href="index.html">&larr; Eric Armbruster</a>
+  </nav>
+
+  <header class="masthead">
+    <h1>Film</h1>
+    <p class="film-updated" id="film-updated"></p>
+  </header>
+
+  <hr class="px-wave">
+
+  <main id="main">
+
+    <p class="film-fallback" id="film-fallback"></p>
+
+    <div class="px-stats" id="film-stats"></div>
+
+    <h2>Recent watches</h2>
+    <div class="film-grid" id="film-recent"></div>
+
+    <hr class="px-wave">
+
+    <h2>Favorites</h2>
+    <ul class="film-favorites px-bullets" id="film-favorites"></ul>
+
+    <h2>Lists</h2>
+    <ul class="film-lists px-bullets" id="film-lists"></ul>
+
+    <p id="film-profile"></p>
+
+  </main>
+
+  <footer>
+    <p>&copy; 2026 Eric Armbruster</p>
+  </footer>
+
+  <script>
+    (function () {
+      function el(tag, className, text) {
+        var node = document.createElement(tag);
+        if (className) node.className = className;
+        if (text !== undefined) node.textContent = text;
+        return node;
+      }
+
+      function stars(rating) {
+        if (!rating) return '';
+        var full = Math.floor(rating);
+        var s = '';
+        for (var i = 0; i < full; i++) s += '★';
+        if (rating - full >= 0.5) s += '½';
+        return s;
+      }
+
+      function fail() {
+        var p = document.getElementById('film-fallback');
+        p.textContent = 'Data feed unavailable. The film diary could not be loaded.';
+        p.style.display = 'block';
+      }
+
+      fetch('film-data.json')
+        .then(function (r) { if (!r.ok) throw new Error(r.status); return r.json(); })
+        .then(function (data) {
+          document.getElementById('film-updated').textContent =
+            'From the Letterboxd diary. Updated ' +
+            new Date(data.fetchedAt).toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' }) + '.';
+
+          var stats = document.getElementById('film-stats');
+          [
+            [data.stats.films, 'films logged'],
+            [data.stats.thisYear, 'this year'],
+            [data.stats.lists, 'lists']
+          ].forEach(function (pair) {
+            var tile = el('div', 'px-stat');
+            tile.appendChild(el('div', 'value', String(pair[0])));
+            tile.appendChild(el('div', 'label', pair[1]));
+            stats.appendChild(tile);
+          });
+
+          var grid = document.getElementById('film-recent');
+          data.recent.forEach(function (f) {
+            var fig = el('figure', 'film-card');
+            if (f.poster) {
+              var a = el('a', 'poster-link');
+              a.href = f.link;
+              a.target = '_blank';
+              a.rel = 'noopener';
+              var img = el('img');
+              img.src = f.poster;
+              img.alt = 'Poster for ' + f.title;
+              img.loading = 'lazy';
+              a.appendChild(img);
+              fig.appendChild(a);
+            }
+            var cap = el('figcaption');
+            var title = el('span', 'film-title', f.title + (f.year ? ' (' + f.year + ')' : ''));
+            cap.appendChild(title);
+            var meta = el('span', 'film-meta');
+            meta.appendChild(el('span', 'film-rating', stars(f.rating)));
+            meta.appendChild(el('span', 'film-date', f.watchedDate || ''));
+            cap.appendChild(meta);
+            fig.appendChild(cap);
+            grid.appendChild(fig);
+          });
+
+          var favs = document.getElementById('film-favorites');
+          data.favorites.forEach(function (f) {
+            var li = el('li');
+            var a = el('a', null, f.title);
+            a.href = f.link;
+            a.target = '_blank';
+            a.rel = 'noopener';
+            li.appendChild(a);
+            favs.appendChild(li);
+          });
+
+          var lists = document.getElementById('film-lists');
+          data.lists.forEach(function (l) {
+            var li = el('li');
+            var a = el('a', null, l.title);
+            a.href = l.link;
+            a.target = '_blank';
+            a.rel = 'noopener';
+            li.appendChild(a);
+            li.appendChild(document.createTextNode(' '));
+            li.appendChild(el('span', 'count', '(' + l.films + ' films)'));
+            lists.appendChild(li);
+          });
+
+          var profile = document.getElementById('film-profile');
+          var pa = el('a', null, 'Full diary on Letterboxd');
+          pa.href = data.profileUrl;
+          pa.target = '_blank';
+          pa.rel = 'noopener';
+          profile.appendChild(pa);
+
+          document.getElementById('main').setAttribute('data-hydrated', 'film');
+        })
+        .catch(fail);
+    })();
+  </script>
+</body>
+</html>

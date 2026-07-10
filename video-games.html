@@ -1,0 +1,206 @@
+<!--
+  video-games.html — Video games (v3 retro/pixel system)
+  -------------------------------------------------------
+  Hydrates from steam-data.json, which the update-steam.yml Action bakes
+  daily via steam-fetch.js — the browser never calls the Steam API. On a
+  successful render the JS sets data-hydrated="steam" on <main>, which
+  tools/screenshot.js asserts.
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Video games &mdash; Eric Armbruster</title>
+
+  <meta name="description" content="What Eric Armbruster has been playing, from his Steam library.">
+  <meta name="theme-color" content="#F3EEDF">
+  <link rel="canonical" href="https://www.ericarmbruster.com/video-games.html">
+  <meta property="og:title" content="Video games - Eric Armbruster">
+  <meta property="og:description" content="What Eric Armbruster has been playing.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://www.ericarmbruster.com/video-games.html">
+
+  <link rel="icon" href="images/hector-favicon.png" type="image/png">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DotGothic16&family=IBM+Plex+Mono:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/pixel-base.css">
+
+  <style>
+    .site-nav { margin-bottom: 32px; }
+    .site-nav a {
+      font-family: var(--font-display);
+      font-size: 16px;
+      text-decoration: none;
+    }
+    .vg-updated { font-size: 12px; margin: 4px 0 0; }
+    .vg-icon {
+      width: 28px;
+      height: 28px;
+      border: 2px solid var(--ink);
+      display: block;
+    }
+    .px-table td.vg-icon-cell { padding: 6px 0 6px 12px; width: 40px; }
+    .vg-fallback { display: none; }
+  </style>
+
+  <!-- Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-5ZTHJXDR9V"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-5ZTHJXDR9V');
+  </script>
+</head>
+<body>
+
+  <nav class="site-nav">
+    <a href="index.html">&larr; Eric Armbruster</a>
+  </nav>
+
+  <header class="masthead">
+    <h1>Video games</h1>
+    <p class="vg-updated" id="vg-updated"></p>
+  </header>
+
+  <hr class="px-wave">
+
+  <main id="main">
+
+    <p class="vg-fallback" id="vg-fallback"></p>
+
+    <div class="px-stats" id="vg-stats"></div>
+
+    <h2>Recently played</h2>
+    <table class="px-table">
+      <thead>
+        <tr><th></th><th>Game</th><th class="num">Last 2 weeks</th><th class="num">Total</th></tr>
+      </thead>
+      <tbody id="vg-recent"></tbody>
+    </table>
+
+    <hr class="px-wave">
+
+    <h2>Most played</h2>
+    <table class="px-table">
+      <thead>
+        <tr><th></th><th>Game</th><th class="num">Hours</th></tr>
+      </thead>
+      <tbody id="vg-top"></tbody>
+    </table>
+
+    <hr class="px-wave">
+
+    <h2>Library breakdown</h2>
+    <p>How the library's playtime is distributed, in hours per game.</p>
+    <div id="vg-buckets"></div>
+
+  </main>
+
+  <footer>
+    <p>&copy; 2026 Eric Armbruster</p>
+  </footer>
+
+  <script>
+    (function () {
+      var BUCKET_ORDER = ['100h+', '50-100h', '10-50h', '1-10h', '<1h'];
+
+      function el(tag, className, text) {
+        var node = document.createElement(tag);
+        if (className) node.className = className;
+        if (text !== undefined) node.textContent = text;
+        return node;
+      }
+
+      function iconCell(game) {
+        var td = el('td', 'vg-icon-cell');
+        if (game.img_icon_url) {
+          var img = el('img', 'vg-icon');
+          img.src = 'https://media.steampowered.com/steamcommunity/public/images/apps/' + game.appid + '/' + game.img_icon_url + '.jpg';
+          img.alt = '';
+          img.loading = 'lazy';
+          img.width = 28;
+          img.height = 28;
+          td.appendChild(img);
+        }
+        return td;
+      }
+
+      function numCell(text) {
+        var td = el('td', 'num', text);
+        return td;
+      }
+
+      function fail() {
+        var p = document.getElementById('vg-fallback');
+        p.textContent = 'Data feed unavailable. The library snapshot could not be loaded.';
+        p.style.display = 'block';
+      }
+
+      fetch('steam-data.json')
+        .then(function (r) { if (!r.ok) throw new Error(r.status); return r.json(); })
+        .then(function (data) {
+          var updated = document.getElementById('vg-updated');
+          updated.textContent = 'From the Steam library. Updated ' +
+            new Date(data.fetchedAt).toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' }) + '.';
+
+          var stats = document.getElementById('vg-stats');
+          [
+            [data.stats.totalGames, 'games in library'],
+            [Math.round(data.stats.totalHours).toLocaleString(), 'hours played'],
+            [data.stats.playedCount, 'games played'],
+            [data.stats.neverPlayed, 'never launched']
+          ].forEach(function (pair) {
+            var tile = el('div', 'px-stat');
+            tile.appendChild(el('div', 'value', String(pair[0])));
+            tile.appendChild(el('div', 'label', pair[1]));
+            stats.appendChild(tile);
+          });
+
+          var recent = document.getElementById('vg-recent');
+          data.recentlyPlayed.forEach(function (g) {
+            var tr = el('tr');
+            tr.appendChild(iconCell(g));
+            tr.appendChild(el('td', null, g.name));
+            tr.appendChild(numCell(g.hours_2weeks + ' h'));
+            tr.appendChild(numCell(g.hours_total + ' h'));
+            recent.appendChild(tr);
+          });
+
+          var top = document.getElementById('vg-top');
+          data.topByPlaytime.forEach(function (g) {
+            var tr = el('tr');
+            tr.appendChild(iconCell(g));
+            tr.appendChild(el('td', null, g.name));
+            tr.appendChild(numCell(g.hours.toLocaleString() + ' h'));
+            top.appendChild(tr);
+          });
+
+          var buckets = document.getElementById('vg-buckets');
+          var max = Math.max.apply(null, BUCKET_ORDER.map(function (k) { return data.stats.playtimeBuckets[k] || 0; }));
+          BUCKET_ORDER.forEach(function (k) {
+            var count = data.stats.playtimeBuckets[k] || 0;
+            var row = el('div', 'px-bar-row');
+            row.appendChild(el('span', 'bar-label', k));
+            var track = el('div', 'bar-track');
+            var bar = el('div', 'bar');
+            bar.style.width = (max ? (count / max) * 100 : 0) + '%';
+            track.appendChild(bar);
+            row.appendChild(track);
+            row.appendChild(el('span', 'bar-value', count + ' games'));
+            row.title = k + ': ' + count + ' games';
+            buckets.appendChild(row);
+          });
+
+          document.getElementById('main').setAttribute('data-hydrated', 'steam');
+        })
+        .catch(fail);
+    })();
+  </script>
+</body>
+</html>

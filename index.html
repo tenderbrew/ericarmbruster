@@ -33,6 +33,13 @@
   <link href="https://fonts.googleapis.com/css2?family=DotGothic16&family=IBM+Plex+Mono:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet">
 
   <link rel="stylesheet" href="css/pixel-base.css">
+  <style>
+    .toc .px-label { min-width: 160px; }
+    .toc a.px-label { color: var(--pool); }
+    .toc a.px-label:hover { color: var(--sunset); }
+    .toc span:not(.px-label) { font-size: 13px; }
+    .toc-note { font-size: 12px; }
+  </style>
 
   <!-- Google Analytics -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-5ZTHJXDR9V"></script>
@@ -45,7 +52,7 @@
 </head>
 <body>
 
-  <header class="masthead">
+  <header class="masthead masthead--home">
     <svg class="px-art sun" width="256" height="144" viewBox="0 0 32 18" shape-rendering="crispEdges" aria-hidden="true">
       <!-- sun -->
       <rect x="10" y="1" width="4" height="1" fill="#E8743B"/>
@@ -94,12 +101,14 @@
       I'm Eric. This is my personal site.
     </p>
 
-    <div class="px-panel">
-      <p class="px-label">Under construction</p>
-      <p>
-        The site was rebuilt in July 2026. New sections are on the way.
-      </p>
-    </div>
+    <h2>Sections</h2>
+    <ul class="px-links toc">
+      <li><a class="px-label" href="now.html">now</a> <span>what I'm up to</span></li>
+      <li><a class="px-label" href="video-games.html">video games</a> <span>what I've been playing</span></li>
+      <li><a class="px-label" href="film.html">film</a> <span>what I've been watching</span></li>
+      <li><a class="px-label" href="reading.html">reading</a> <span>the book log</span></li>
+    </ul>
+    <p class="toc-note">More sections are on the way &mdash; the site was rebuilt in July 2026.</p>
 
     <hr class="px-wave">
 
