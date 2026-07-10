@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-07-09T19:51:07.552Z",
+  "fetchedAt": "2026-07-10T03:40:58.281Z",
   "indicators": {
     "UNRATE": {
       "latest": {
@@ -63,11 +63,11 @@
     },
     "T10YIE": {
       "latest": {
-        "date": "2026-07-08",
-        "value": 2.25
+        "date": "2026-07-09",
+        "value": 2.23
       },
       "previous": {
-        "date": "2026-07-07",
+        "date": "2026-07-08",
         "value": 2.25
       }
     },
@@ -103,12 +103,12 @@
     },
     "WALCL": {
       "latest": {
-        "date": "2026-07-01",
-        "value": 6724564
+        "date": "2026-07-08",
+        "value": 6735609
       },
       "previous": {
-        "date": "2026-06-24",
-        "value": 6735645
+        "date": "2026-07-01",
+        "value": 6724564
       }
     },
     "FEDFUNDS": {
@@ -123,42 +123,42 @@
     },
     "DGS2": {
       "latest": {
-        "date": "2026-07-07",
-        "value": 4.19
+        "date": "2026-07-08",
+        "value": 4.21
       },
       "previous": {
-        "date": "2026-07-06",
-        "value": 4.13
+        "date": "2026-07-07",
+        "value": 4.19
       }
     },
     "DGS10": {
       "latest": {
-        "date": "2026-07-07",
-        "value": 4.55
+        "date": "2026-07-08",
+        "value": 4.56
       },
       "previous": {
-        "date": "2026-07-06",
-        "value": 4.48
+        "date": "2026-07-07",
+        "value": 4.55
       }
     },
     "T10Y2Y": {
       "latest": {
-        "date": "2026-07-08",
-        "value": 0.35
+        "date": "2026-07-09",
+        "value": 0.38
       },
       "previous": {
-        "date": "2026-07-07",
-        "value": 0.36
+        "date": "2026-07-08",
+        "value": 0.35
       }
     },
     "DFII10": {
       "latest": {
-        "date": "2026-07-07",
-        "value": 2.3
+        "date": "2026-07-08",
+        "value": 2.31
       },
       "previous": {
-        "date": "2026-07-06",
-        "value": 2.24
+        "date": "2026-07-07",
+        "value": 2.3
       }
     },
     "BAMLH0A0HYM2": {
@@ -301,6 +301,12 @@
   },
   "news": [
     {
+      "title": "Justice Thomas's Rothbardian Phase and the Hamiltonian Vance",
+      "link": "https://mises.org/podcasts/power-and-market/justice-thomass-rothbardian-phase-and-hamiltonian-vance",
+      "pubDate": "Thu, 09 Jul 2026 05:00:00 CDT",
+      "kind": "Podcast"
+    },
+    {
       "title": "Why Your Bigger Paycheck Feels Like Less Money",
       "link": "https://mises.org/power-market/why-your-bigger-paycheck-feels-less-money",
       "pubDate": "Thu, 09 Jul 2026 01:00:00 CDT",
@@ -353,12 +359,6 @@
       "link": "https://mises.org/power-market/now-accepting-applications-2026-ron-paul-scholars-seminar",
       "pubDate": "Thu, 09 Jul 2026 05:00:00 CDT",
       "kind": "Article"
-    },
-    {
-      "title": "Foreign Investments and the Spirit of Capitalism",
-      "link": "https://mises.org/podcasts/marxism-unmasked-delusion-destruction/foreign-investments-and-spirit-capitalism",
-      "pubDate": "Wed, 08 Jul 2026 04:33:23 CDT",
-      "kind": "Podcast"
     }
   ]
 }
