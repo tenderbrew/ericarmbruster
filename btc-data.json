@@ -1,19 +1,15 @@
 {
-  "fetchedAt": "2026-07-09T22:41:57.404Z",
+  "fetchedAt": "2026-07-10T04:10:36.688Z",
   "price": {
-    "usd": 63251,
-    "time": 1783636507
+    "usd": 63971,
+    "time": 1783656307
   },
   "moves": {
-    "d1": 1.6097781561092983,
-    "d7": 2.8683988694825358,
-    "d30": 2.583087270948692
+    "d1": 1.1868177858874285,
+    "d7": 2.292321418580001,
+    "d30": 4.0305484901427935
   },
   "history90d": [
-    {
-      "date": "2026-04-11",
-      "close": 72972.70823557042
-    },
     {
       "date": "2026-04-12",
       "close": 73053.88808483821
@@ -371,61 +367,70 @@
       "close": 62248.930317339764
     },
     {
-      "date": "2026-07-09",
-      "close": 63249.080593243154
+      "date": "2026-07-10",
+      "close": 63220.68565824794
+    },
+    {
+      "date": "2026-07-10",
+      "close": 63923.61020903821
     }
   ],
   "blocks": [
     {
-      "height": 957357,
-      "id": "0000000000000000000088cd7abc3bd675f5fa4de45a8e7622c4214d606a0a7f",
-      "timestamp": 1783636721,
-      "txCount": 3320
+      "height": 957388,
+      "id": "0000000000000000000137cd51479ea2ed8111c579aa05dd5a93350e3b01b3d3",
+      "timestamp": 1783655931,
+      "txCount": 6016
     },
     {
-      "height": 957356,
-      "id": "0000000000000000000005d263cf813b7d5d171ab30a8f1c640760b4fbe67486",
-      "timestamp": 1783636659,
-      "txCount": 3910
+      "height": 957387,
+      "id": "000000000000000000002260134113592c8eb054e9972f648ca11803bfeeb23f",
+      "timestamp": 1783655399,
+      "txCount": 5618
     },
     {
-      "height": 957355,
-      "id": "000000000000000000009e4368a6ee83b7b1f02defdb5c341a8d0f8d4bc2b4b5",
-      "timestamp": 1783636064,
-      "txCount": 4055
+      "height": 957386,
+      "id": "00000000000000000001e77a19618a4335b65da518f407e2c31c048e4aa3c0e8",
+      "timestamp": 1783654966,
+      "txCount": 6584
     },
     {
-      "height": 957354,
-      "id": "000000000000000000002bb58bd9225e26120abfab13434310c3252cfa5a982e",
-      "timestamp": 1783634957,
-      "txCount": 3708
+      "height": 957385,
+      "id": "000000000000000000007f1a07fd5dc8d260c0d081c2b00626501d6457839711",
+      "timestamp": 1783654922,
+      "txCount": 6892
     },
     {
-      "height": 957353,
-      "id": "000000000000000000006ba2d785d45d12dd37b64d07daf42c412ff980d78cba",
-      "timestamp": 1783634767,
-      "txCount": 3215
+      "height": 957384,
+      "id": "0000000000000000000161930c596dcaca49820ad28e556b5ff263cf1de230fb",
+      "timestamp": 1783654845,
+      "txCount": 912
     },
     {
-      "height": 957352,
-      "id": "00000000000000000000c9b6ad61740e3844da10377f958fcfdd49a62da79fa8",
-      "timestamp": 1783634023,
-      "txCount": 3338
+      "height": 957383,
+      "id": "00000000000000000001201c6b3dc44c30e7f23bc642c54c98b4e765ad214b2b",
+      "timestamp": 1783654413,
+      "txCount": 588
     },
     {
-      "height": 957351,
-      "id": "00000000000000000001aa49c2ecbbb9f968921662ef7697ee725faa2568dd94",
-      "timestamp": 1783633788,
-      "txCount": 3177
+      "height": 957382,
+      "id": "00000000000000000000f4f8c91a6c400c42a40577fafa2ca2231d78f1955424",
+      "timestamp": 1783654234,
+      "txCount": 4900
     },
     {
-      "height": 957350,
-      "id": "0000000000000000000052df80fd8f952098615bd54373232db92f68a029eeb8",
-      "timestamp": 1783633746,
-      "txCount": 3256
+      "height": 957381,
+      "id": "00000000000000000001db9adca1044c8e0df20879f2032b2fd82cb99ef7a5ec",
+      "timestamp": 1783653808,
+      "txCount": 6646
     }
   ],
   "news": [
+    {
+      "title": "Bitcoin zips higher to nearly $64,000 as chip rally and yen strength drive gains",
+      "link": "https://www.coindesk.com/markets/2026/07/10/bitcoin-zips-to-nearly-usd64-000-as-chip-rally-and-yen-strength-drive-gains",
+      "pubDate": "Fri, 10 Jul 2026 03:57:58 +0000"
+    },
     {
       "title": "New Hampshire snuffs out trailblazing state-government bitcoin bond effort",
       "link": "https://www.coindesk.com/policy/2026/07/09/new-hampshire-snuffs-out-trailblazing-bitcoin-municipal-bond-effort",
@@ -480,11 +485,6 @@
       "title": "Over $7.2 billion have migrated from LayerZero to Chainlink CCIP as Mantle joins exodus",
       "link": "https://www.coindesk.com/business/2026/07/09/over-usd7-2-billion-have-migrated-from-layerzero-to-chainlink-ccip-as-mantle-joins-exodus",
       "pubDate": "Thu, 09 Jul 2026 12:00:00 +0000"
-    },
-    {
-      "title": "Pricing houses in bitcoin exposes dollar's loss of value",
-      "link": "https://www.coindesk.com/daybook-us/2026/07/09/pricing-houses-in-bitcoin-exposes-dollar-s-loss-of-value",
-      "pubDate": "Thu, 09 Jul 2026 11:27:10 +0000"
     }
   ]
 }
