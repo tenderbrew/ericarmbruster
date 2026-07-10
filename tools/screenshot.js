@@ -40,6 +40,7 @@ const CHECKS = {
   seymour: { count: [['class="sy-photo-btn"', 30]] },
   'video-games': { must: ['data-hydrated="steam"'], mustNot: ['Data feed unavailable'] },
   film: { must: ['data-hydrated="film"'], mustNot: ['Data feed unavailable'] },
+  reading: { must: ['data-hydrated="reading"'], mustNot: ['Data feed unavailable'] },
 };
 
 const ALL_PAGES = ['index', 'now', 'video-games', 'film', 'reading', 'seymour', '404'];

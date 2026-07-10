@@ -22,7 +22,7 @@ live in git history.
 - `now.html` — what I'm up to right now (hand-edited).
 - `video-games.html` — Steam library snapshot (auto: `steam-fetch.js` + daily Action → `steam-data.json`).
 - `film.html` — Letterboxd diary (auto: `film-fetch.js` + 6-hourly Action → `film-data.json`).
-- `reading.html` — book log (hand-edited, one row per book).
+- `reading.html` — Goodreads shelves (auto: `reading-fetch.js` + daily Action → `reading-data.json`).
 - `seymour.html` — photo-essay memorial for Seymour (2010–2025), in the
   pixel system. The memorial photographs themselves stay full-color and
   undithered, mounted in hard-shadow frames.

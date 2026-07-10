@@ -1,0 +1,32 @@
+# Runs reading-fetch.js daily, commits updated JSON back to the repo.
+# The Goodreads shelf RSS feed is public, so no secrets are required.
+name: Update Reading Data
+
+on:
+  schedule:
+    - cron: '15 9 * * *' # Daily 09:15 UTC
+  workflow_dispatch: # Manual trigger from Actions tab
+
+jobs:
+  fetch:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v6
+
+      - uses: actions/setup-node@v6
+        with:
+          node-version: '22'
+
+      - name: Fetch reading data
+        run: node reading-fetch.js
+
+      # Skip commit if nothing changed.
+      - name: Commit and push if changed
+        run: |
+          git diff --quiet reading-data.json && exit 0
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add reading-data.json
+          git commit -m "chore: update reading data"
+          git push

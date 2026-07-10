@@ -29,7 +29,7 @@ One system for every page. Tokens live at the top of `css/pixel-base.css` — al
 - `now.html` — hand-edited "what I'm up to": one paragraph + date, replaced whenever.
 - `video-games.html` — hydrates from `steam-data.json` (see pipelines below).
 - `film.html` — hydrates from `film-data.json`; posters hotlink Letterboxd's CDN.
-- `reading.html` — hand-edited book log; add a `<tr>` per book (template row in a comment).
+- `reading.html` — hydrates from `reading-data.json` (Goodreads shelves; covers hotlink Goodreads' CDN).
 - `seymour.html` — memorial, pixel chrome with untouched photos (see above).
 - `404.html` — GitHub Pages not-found page, pixel system, `noindex`, **absolute** asset paths (`/css/...`) because it serves at any path.
 
@@ -41,6 +41,7 @@ Same architecture as v1: GitHub Actions run the fetcher on a schedule, commit th
 |---|---|---|---|---|
 | `video-games` | `steam-fetch.js` (needs `.env` `STEAM_API_KEY`/`STEAM_ID` locally; Action uses repo secrets) | `steam-data.json` | `update-steam.yml` | daily 08:00 UTC |
 | `film` | `film-fetch.js` (no key) | `film-data.json` | `update-film.yml` | every 6 hours |
+| `reading` | `reading-fetch.js` (no key; public Goodreads shelf RSS `/review/list_rss/22369018` — empty `user_shelves` in the feed means shelf "read") | `reading-data.json` | `update-reading.yml` | daily 09:15 UTC |
 
 JSON shape is a contract between fetcher and page — change both sides together. Because these workflows commit to `main`, `git pull --rebase origin main` before pushing.
 
