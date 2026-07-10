@@ -1,0 +1,32 @@
+# Runs econ-fetch.js every 6 hours, commits updated JSON back to the repo.
+# FRED CSVs and the Mises RSS need no API key, so no secrets are required.
+name: Update Economics Data
+
+on:
+  schedule:
+    - cron: '0 */6 * * *' # Every 6 hours (00, 06, 12, 18 UTC)
+  workflow_dispatch: # Manual trigger from Actions tab
+
+jobs:
+  fetch:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v6
+
+      - uses: actions/setup-node@v6
+        with:
+          node-version: '22'
+
+      - name: Fetch economics data
+        run: node econ-fetch.js
+
+      # Skip commit if nothing changed.
+      - name: Commit and push if changed
+        run: |
+          git diff --quiet econ-data.json && exit 0
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add econ-data.json
+          git commit -m "chore: update econ data"
+          git push

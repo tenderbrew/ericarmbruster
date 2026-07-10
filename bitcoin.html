@@ -1,0 +1,212 @@
+<!--
+  bitcoin.html — Bitcoin (v3 retro/pixel system)
+  -----------------------------------------------
+  Hydrates from btc-data.json (price, 90d history, recent blocks, news),
+  baked every 3 hours by btc-fetch.js via update-btc.yml — no live crypto
+  APIs in the browser. The 90-day chart is a single-series SVG polyline
+  drawn at hydration. On success the JS sets data-hydrated="btc" on
+  <main>.
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Bitcoin &mdash; Eric Armbruster</title>
+
+  <meta name="description" content="Bitcoin price, blocks, and news — a periodically baked snapshot.">
+  <meta name="theme-color" content="#F3EEDF">
+  <link rel="canonical" href="https://www.ericarmbruster.com/bitcoin.html">
+  <meta property="og:title" content="Bitcoin - Eric Armbruster">
+  <meta property="og:description" content="Bitcoin price, blocks, and news.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://www.ericarmbruster.com/bitcoin.html">
+
+  <link rel="icon" href="images/hector-favicon.png" type="image/png">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DotGothic16&family=IBM+Plex+Mono:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/pixel-base.css">
+
+  <style>
+    .site-nav { margin-bottom: 32px; }
+    .site-nav a {
+      font-family: var(--font-display);
+      font-size: 16px;
+      text-decoration: none;
+    }
+    .btc-updated { font-size: 12px; margin: 4px 0 0; }
+    .btc-fallback { display: none; }
+
+    .btc-chart-panel {
+      background: var(--paper-dim);
+      border: 2px solid var(--ink);
+      box-shadow: 4px 4px 0 var(--shadow);
+      padding: 16px;
+      margin: 24px 0;
+    }
+    .btc-chart-panel svg { display: block; width: 100%; height: auto; }
+    .btc-chart-meta {
+      display: flex;
+      justify-content: space-between;
+      gap: 8px;
+      font-size: 11px;
+      margin: 8px 0 0;
+    }
+
+    .delta-up { color: var(--sunset); }
+    .delta-down { color: var(--pool); }
+
+    ul.btc-news li { padding-top: 2px; padding-bottom: 2px; }
+  </style>
+
+  <!-- Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-5ZTHJXDR9V"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-5ZTHJXDR9V');
+  </script>
+</head>
+<body>
+
+  <nav class="site-nav">
+    <a href="index.html">&larr; Eric Armbruster</a>
+  </nav>
+
+  <header class="masthead">
+    <h1>Bitcoin</h1>
+    <p class="btc-updated" id="btc-updated"></p>
+  </header>
+
+  <hr class="px-wave">
+
+  <main id="main">
+
+    <p class="btc-fallback" id="btc-fallback"></p>
+
+    <div class="px-stats" id="btc-stats"></div>
+
+    <h2>Last 90 days</h2>
+    <div class="btc-chart-panel">
+      <svg id="btc-chart" viewBox="0 0 360 100" preserveAspectRatio="none" role="img" aria-label="Bitcoin price, last 90 days"></svg>
+      <p class="btc-chart-meta"><span id="btc-chart-start"></span><span id="btc-chart-range"></span><span id="btc-chart-end"></span></p>
+    </div>
+
+    <hr class="px-wave">
+
+    <h2>Recent blocks</h2>
+    <table class="px-table">
+      <thead>
+        <tr><th>Height</th><th class="num">Transactions</th><th class="num">Mined</th></tr>
+      </thead>
+      <tbody id="btc-blocks"></tbody>
+    </table>
+
+    <h2>News</h2>
+    <ul class="px-bullets btc-news" id="btc-news"></ul>
+
+  </main>
+
+  <footer>
+    <p>&copy; 2026 Eric Armbruster</p>
+  </footer>
+
+  <script>
+    (function () {
+      function el(tag, className, text) {
+        var node = document.createElement(tag);
+        if (className) node.className = className;
+        if (text !== undefined) node.textContent = text;
+        return node;
+      }
+
+      function pct(v) {
+        var s = (v >= 0 ? '+' : '') + v.toFixed(1) + '%';
+        return s;
+      }
+
+      function fail() {
+        var p = document.getElementById('btc-fallback');
+        p.textContent = 'Data feed unavailable. The snapshot could not be loaded.';
+        p.style.display = 'block';
+      }
+
+      fetch('btc-data.json')
+        .then(function (r) { if (!r.ok) throw new Error(r.status); return r.json(); })
+        .then(function (data) {
+          document.getElementById('btc-updated').textContent =
+            'A baked snapshot — no live APIs. Updated ' +
+            new Date(data.fetchedAt).toLocaleString('en-US', { month: 'long', day: 'numeric', year: 'numeric', hour: 'numeric', minute: '2-digit' }) + '.';
+
+          var stats = document.getElementById('btc-stats');
+          var priceTile = el('div', 'px-stat');
+          priceTile.appendChild(el('div', 'value', '$' + Math.round(data.price.usd).toLocaleString()));
+          priceTile.appendChild(el('div', 'label', 'price (USD)'));
+          stats.appendChild(priceTile);
+          [['d1', '24 hours'], ['d7', '7 days'], ['d30', '30 days']].forEach(function (pair) {
+            var v = data.moves[pair[0]];
+            if (v === undefined || v === null) return;
+            var tile = el('div', 'px-stat');
+            tile.appendChild(el('div', 'value ' + (v >= 0 ? 'delta-up' : 'delta-down'), pct(v)));
+            tile.appendChild(el('div', 'label', pair[1]));
+            stats.appendChild(tile);
+          });
+
+          // 90d polyline: 2px pool stroke on the dim panel, no fill.
+          var svg = document.getElementById('btc-chart');
+          var pts = data.history90d;
+          var min = Infinity, max = -Infinity;
+          pts.forEach(function (p) {
+            if (p.close < min) min = p.close;
+            if (p.close > max) max = p.close;
+          });
+          var pad = (max - min) * 0.08 || 1;
+          var lo = min - pad, hi = max + pad;
+          var coords = pts.map(function (p, i) {
+            var x = (i / (pts.length - 1)) * 356 + 2;
+            var y = 98 - ((p.close - lo) / (hi - lo)) * 96;
+            return x.toFixed(1) + ',' + y.toFixed(1);
+          });
+          var line = document.createElementNS('http://www.w3.org/2000/svg', 'polyline');
+          line.setAttribute('points', coords.join(' '));
+          line.setAttribute('fill', 'none');
+          line.setAttribute('stroke', '#2E6FBF');
+          line.setAttribute('stroke-width', '2');
+          svg.appendChild(line);
+          document.getElementById('btc-chart-start').textContent = pts[0].date;
+          document.getElementById('btc-chart-end').textContent = pts[pts.length - 1].date;
+          document.getElementById('btc-chart-range').textContent =
+            'low $' + Math.round(min).toLocaleString() + ' · high $' + Math.round(max).toLocaleString();
+
+          var blocks = document.getElementById('btc-blocks');
+          data.blocks.forEach(function (b) {
+            var tr = el('tr');
+            tr.appendChild(el('td', null, String(b.height)));
+            tr.appendChild(el('td', 'num', b.txCount.toLocaleString()));
+            tr.appendChild(el('td', 'num', new Date(b.timestamp * 1000).toLocaleTimeString('en-US', { hour: 'numeric', minute: '2-digit' })));
+            blocks.appendChild(tr);
+          });
+
+          var news = document.getElementById('btc-news');
+          data.news.forEach(function (n) {
+            var li = el('li');
+            var a = el('a', null, n.title);
+            a.href = n.link;
+            a.target = '_blank';
+            a.rel = 'noopener';
+            li.appendChild(a);
+            news.appendChild(li);
+          });
+
+          document.getElementById('main').setAttribute('data-hydrated', 'btc');
+        })
+        .catch(fail);
+    })();
+  </script>
+</body>
+</html>

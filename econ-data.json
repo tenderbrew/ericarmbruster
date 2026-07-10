@@ -1,0 +1,364 @@
+{
+  "fetchedAt": "2026-07-10T16:14:16.741Z",
+  "indicators": {
+    "UNRATE": {
+      "latest": {
+        "date": "2026-06-01",
+        "value": 4.2
+      },
+      "previous": {
+        "date": "2026-05-01",
+        "value": 4.3
+      }
+    },
+    "PAYEMS": {
+      "latest": {
+        "date": "2026-06-01",
+        "value": 158984
+      },
+      "previous": {
+        "date": "2026-05-01",
+        "value": 158927
+      }
+    },
+    "JTSJOL": {
+      "latest": {
+        "date": "2026-05-01",
+        "value": 7594
+      },
+      "previous": {
+        "date": "2026-04-01",
+        "value": 7585
+      }
+    },
+    "ICSA": {
+      "latest": {
+        "date": "2026-07-04",
+        "value": 215000
+      },
+      "previous": {
+        "date": "2026-06-27",
+        "value": 217000
+      }
+    },
+    "CPIAUCSL": {
+      "latest": {
+        "date": "2026-05-01",
+        "value": 333.979
+      },
+      "previous": {
+        "date": "2026-04-01",
+        "value": 332.407
+      }
+    },
+    "CPILFESL": {
+      "latest": {
+        "date": "2026-05-01",
+        "value": 336.121
+      },
+      "previous": {
+        "date": "2026-04-01",
+        "value": 335.423
+      }
+    },
+    "T10YIE": {
+      "latest": {
+        "date": "2026-07-09",
+        "value": 2.23
+      },
+      "previous": {
+        "date": "2026-07-08",
+        "value": 2.25
+      }
+    },
+    "PCE": {
+      "latest": {
+        "date": "2026-05-01",
+        "value": 22059.8
+      },
+      "previous": {
+        "date": "2026-04-01",
+        "value": 21903.7
+      }
+    },
+    "M2SL": {
+      "latest": {
+        "date": "2026-05-01",
+        "value": 23052.3
+      },
+      "previous": {
+        "date": "2026-04-01",
+        "value": 22804.5
+      }
+    },
+    "BOGMBASE": {
+      "latest": {
+        "date": "2026-05-01",
+        "value": 5538.6
+      },
+      "previous": {
+        "date": "2026-04-01",
+        "value": 5470.4
+      }
+    },
+    "WALCL": {
+      "latest": {
+        "date": "2026-07-08",
+        "value": 6735609
+      },
+      "previous": {
+        "date": "2026-07-01",
+        "value": 6724564
+      }
+    },
+    "FEDFUNDS": {
+      "latest": {
+        "date": "2026-06-01",
+        "value": 3.63
+      },
+      "previous": {
+        "date": "2026-05-01",
+        "value": 3.63
+      }
+    },
+    "DGS2": {
+      "latest": {
+        "date": "2026-07-08",
+        "value": 4.21
+      },
+      "previous": {
+        "date": "2026-07-07",
+        "value": 4.19
+      }
+    },
+    "DGS10": {
+      "latest": {
+        "date": "2026-07-08",
+        "value": 4.56
+      },
+      "previous": {
+        "date": "2026-07-07",
+        "value": 4.55
+      }
+    },
+    "T10Y2Y": {
+      "latest": {
+        "date": "2026-07-09",
+        "value": 0.38
+      },
+      "previous": {
+        "date": "2026-07-08",
+        "value": 0.35
+      }
+    },
+    "DFII10": {
+      "latest": {
+        "date": "2026-07-08",
+        "value": 2.31
+      },
+      "previous": {
+        "date": "2026-07-07",
+        "value": 2.3
+      }
+    },
+    "BAMLH0A0HYM2": {
+      "latest": {
+        "date": "2026-07-08",
+        "value": 2.7
+      },
+      "previous": {
+        "date": "2026-07-07",
+        "value": 2.67
+      }
+    },
+    "MORTGAGE30US": {
+      "latest": {
+        "date": "2026-07-09",
+        "value": 6.49
+      },
+      "previous": {
+        "date": "2026-07-02",
+        "value": 6.43
+      }
+    },
+    "GDPC1": {
+      "latest": {
+        "date": "2026-01-01",
+        "value": 24180.419
+      },
+      "previous": {
+        "date": "2025-10-01",
+        "value": 24055.749
+      }
+    },
+    "INDPRO": {
+      "latest": {
+        "date": "2026-05-01",
+        "value": 102.6475
+      },
+      "previous": {
+        "date": "2026-04-01",
+        "value": 102.509
+      }
+    },
+    "RSAFS": {
+      "latest": {
+        "date": "2026-05-01",
+        "value": 763705
+      },
+      "previous": {
+        "date": "2026-04-01",
+        "value": 757036
+      }
+    },
+    "UMCSENT": {
+      "latest": {
+        "date": "2026-05-01",
+        "value": 44.8
+      },
+      "previous": {
+        "date": "2026-04-01",
+        "value": 49.8
+      }
+    },
+    "STLFSI4": {
+      "latest": {
+        "date": "2026-07-03",
+        "value": -0.7246
+      },
+      "previous": {
+        "date": "2026-06-26",
+        "value": -0.6461
+      }
+    },
+    "DTWEXBGS": {
+      "latest": {
+        "date": "2026-07-02",
+        "value": 120.6902
+      },
+      "previous": {
+        "date": "2026-07-01",
+        "value": 121.1455
+      }
+    },
+    "PERMIT": {
+      "latest": {
+        "date": "2026-05-01",
+        "value": 1410
+      },
+      "previous": {
+        "date": "2026-04-01",
+        "value": 1423
+      }
+    },
+    "GFDEGDQ188S": {
+      "latest": {
+        "date": "2026-01-01",
+        "value": 122.59387
+      },
+      "previous": {
+        "date": "2025-10-01",
+        "value": 122.56815
+      }
+    },
+    "VIXCLS": {
+      "latest": {
+        "date": "2026-07-09",
+        "value": 15.84
+      },
+      "previous": {
+        "date": "2026-07-08",
+        "value": 16.9
+      }
+    },
+    "BOPGSTB": {
+      "latest": {
+        "date": "2026-05-01",
+        "value": -77585
+      },
+      "previous": {
+        "date": "2026-04-01",
+        "value": -54570
+      }
+    },
+    "M2V": {
+      "latest": {
+        "date": "2026-01-01",
+        "value": 1.411
+      },
+      "previous": {
+        "date": "2025-10-01",
+        "value": 1.41
+      }
+    },
+    "CPI_YOY": {
+      "latest": {
+        "date": "2026-05-01",
+        "value": 4.166614684049641
+      },
+      "previous": null
+    }
+  },
+  "news": [
+    {
+      "title": "Old Fogies Don’t Die Soon Enough",
+      "link": "https://mises.org/friday-philosophy/old-fogies-dont-die-soon-enough",
+      "pubDate": "Fri, 10 Jul 2026 11:00:00 CDT",
+      "kind": "Article"
+    },
+    {
+      "title": "The Depression of 1784: Revolutionary Inflation and Post-Revolution Depression",
+      "link": "https://mises.org/podcasts/audio-mises-wire/depression-1784-revolutionary-inflation-and-post-revolution-depression",
+      "pubDate": "Fri, 10 Jul 2026 10:55:09 CDT",
+      "kind": "Podcast"
+    },
+    {
+      "title": "How Adam Smith Helped Create Modern Unionism",
+      "link": "https://mises.org/podcasts/audio-mises-wire/how-adam-smith-helped-create-modern-unionism",
+      "pubDate": "Fri, 10 Jul 2026 08:37:02 CDT",
+      "kind": "Podcast"
+    },
+    {
+      "title": "Cronyism and Regulatory Capture",
+      "link": "https://mises.org/podcasts/audio-mises-wire/cronyism-and-regulatory-capture",
+      "pubDate": "Fri, 10 Jul 2026 08:16:56 CDT",
+      "kind": "Podcast"
+    },
+    {
+      "title": "The Market Miracle",
+      "link": "https://mises.org/power-market/market-miracle",
+      "pubDate": "Fri, 10 Jul 2026 07:00:00 CDT",
+      "kind": "Article"
+    },
+    {
+      "title": "The Depression of 1784: Revolutionary Inflation and Post-Revolution Depression",
+      "link": "https://mises.org/mises-wire/depression-1784-revolutionary-inflation-and-post-revolution-depression",
+      "pubDate": "Fri, 10 Jul 2026 05:00:00 CDT",
+      "kind": "Mises Wire"
+    },
+    {
+      "title": "Justice Thomas's Rothbardian Phase and the Hamiltonian Vance",
+      "link": "https://mises.org/podcasts/power-and-market/justice-thomass-rothbardian-phase-and-hamiltonian-vance",
+      "pubDate": "Thu, 09 Jul 2026 05:00:00 CDT",
+      "kind": "Podcast"
+    },
+    {
+      "title": "Why Your Bigger Paycheck Feels Like Less Money",
+      "link": "https://mises.org/power-market/why-your-bigger-paycheck-feels-less-money",
+      "pubDate": "Thu, 09 Jul 2026 01:00:00 CDT",
+      "kind": "Article"
+    },
+    {
+      "title": "Books for Students. T-Shirt for You!",
+      "link": "https://mises.org/mises-wire/books-students-t-shirt-you",
+      "pubDate": "Thu, 09 Jul 2026 11:20:26 CDT",
+      "kind": "Mises Wire"
+    },
+    {
+      "title": "How Adam Smith Helped Create Modern Unionism",
+      "link": "https://mises.org/mises-wire/how-adam-smith-helped-create-modern-unionism",
+      "pubDate": "Thu, 09 Jul 2026 11:00:00 CDT",
+      "kind": "Mises Wire"
+    }
+  ]
+}

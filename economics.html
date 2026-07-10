@@ -1,0 +1,223 @@
+<!--
+  economics.html — Economics (v3 retro/pixel system)
+  ---------------------------------------------------
+  Hydrates from econ-data.json (FRED indicators + Mises Wire RSS), baked
+  every 6 hours by econ-fetch.js via update-econ.yml. The
+  indicatorDefinitions array is the display contract — its ids must stay
+  in sync with SERIES_IDS in econ-fetch.js (CPI_YOY is derived
+  server-side). On success the JS sets data-hydrated="econ" on <main>.
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Economics &mdash; Eric Armbruster</title>
+
+  <meta name="description" content="US economic indicators Eric Armbruster keeps an eye on, refreshed from FRED.">
+  <meta name="theme-color" content="#F3EEDF">
+  <link rel="canonical" href="https://www.ericarmbruster.com/economics.html">
+  <meta property="og:title" content="Economics - Eric Armbruster">
+  <meta property="og:description" content="US economic indicators, refreshed from FRED.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://www.ericarmbruster.com/economics.html">
+
+  <link rel="icon" href="images/hector-favicon.png" type="image/png">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DotGothic16&family=IBM+Plex+Mono:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/pixel-base.css">
+
+  <style>
+    .site-nav { margin-bottom: 32px; }
+    .site-nav a {
+      font-family: var(--font-display);
+      font-size: 16px;
+      text-decoration: none;
+    }
+    .econ-updated { font-size: 12px; margin: 4px 0 0; }
+    .econ-fallback { display: none; }
+
+    .econ-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+      gap: 20px;
+      margin: 24px 0;
+    }
+    .econ-card {
+      background: var(--paper-dim);
+      border: 2px solid var(--ink);
+      box-shadow: 4px 4px 0 var(--shadow);
+      padding: 12px 14px;
+    }
+    .econ-card .name { font-size: 12px; }
+    .econ-card .value {
+      font-family: var(--font-display);
+      font-size: 24px;
+      line-height: 1.2;
+      margin-top: 4px;
+    }
+    .econ-card .value .unit { font-size: 16px; }
+    .econ-card .meta { font-size: 11px; margin-top: 4px; }
+    .econ-card .delta-up { color: var(--sunset); }
+    .econ-card .delta-down { color: var(--pool); }
+    .econ-card a { text-decoration: none; color: inherit; display: block; }
+    .econ-card a:hover .name { color: var(--sunset); }
+
+    ul.econ-news li { padding-top: 2px; padding-bottom: 2px; }
+    ul.econ-news .kind { font-size: 11px; }
+  </style>
+
+  <!-- Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-5ZTHJXDR9V"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-5ZTHJXDR9V');
+  </script>
+</head>
+<body>
+
+  <nav class="site-nav">
+    <a href="index.html">&larr; Eric Armbruster</a>
+  </nav>
+
+  <header class="masthead">
+    <h1>Economics</h1>
+    <p class="econ-updated" id="econ-updated"></p>
+  </header>
+
+  <hr class="px-wave">
+
+  <main id="main">
+
+    <p class="econ-fallback" id="econ-fallback"></p>
+
+    <h2>Indicators</h2>
+    <p>US series from <a href="https://fred.stlouisfed.org/" target="_blank" rel="noopener">FRED</a>. Arrows compare against the prior reading.</p>
+    <div class="econ-grid" id="econ-grid"></div>
+
+    <hr class="px-wave">
+
+    <h2>Reading feed</h2>
+    <ul class="px-bullets econ-news" id="econ-news"></ul>
+
+  </main>
+
+  <footer>
+    <p>&copy; 2026 Eric Armbruster</p>
+  </footer>
+
+  <script>
+    (function () {
+      function t(f) { return f; } // identity marker for readability below
+      var DEFS = [
+        { id: 'UNRATE', name: 'Unemployment Rate', unit: '%', decimals: 1 },
+        { id: 'PAYEMS', name: 'Payroll Employment', unit: 'M jobs', decimals: 1, transform: function (v) { return v / 1000; } },
+        { id: 'JTSJOL', name: 'JOLTS Job Openings', unit: 'M', decimals: 2, transform: function (v) { return v / 1000; } },
+        { id: 'ICSA', name: 'Initial Jobless Claims', unit: 'K', decimals: 0, transform: function (v) { return v / 1000; } },
+        { id: 'CPIAUCSL', name: 'CPI (All Urban)', unit: 'index', decimals: 1 },
+        { id: 'CPI_YOY', name: 'CPI YoY Inflation', unit: '%', decimals: 2, derived: true },
+        { id: 'CPILFESL', name: 'Core CPI (ex Food/Energy)', unit: 'index', decimals: 1 },
+        { id: 'T10YIE', name: '10Y Breakeven Inflation', unit: '%', decimals: 2 },
+        { id: 'PCE', name: 'Personal Consumption', unit: '$T', decimals: 2, transform: function (v) { return v / 1000; } },
+        { id: 'M2SL', name: 'Money Supply (M2)', unit: '$T', decimals: 2, transform: function (v) { return v / 1000; } },
+        { id: 'BOGMBASE', name: 'Monetary Base (M0)', unit: '$T', decimals: 2, transform: function (v) { return v / 1000; } },
+        { id: 'WALCL', name: 'Fed Balance Sheet', unit: '$T', decimals: 2, transform: function (v) { return v / 1000000; } },
+        { id: 'FEDFUNDS', name: 'Fed Funds Rate', unit: '%', decimals: 2 },
+        { id: 'DGS2', name: '2Y Treasury Yield', unit: '%', decimals: 2 },
+        { id: 'DGS10', name: '10Y Treasury Yield', unit: '%', decimals: 2 },
+        { id: 'T10Y2Y', name: '10Y-2Y Spread', unit: 'pp', decimals: 2 },
+        { id: 'DFII10', name: '10Y Real Rate (TIPS)', unit: '%', decimals: 2 },
+        { id: 'BAMLH0A0HYM2', name: 'High Yield Spread', unit: 'pp', decimals: 2 },
+        { id: 'MORTGAGE30US', name: '30Y Mortgage Rate', unit: '%', decimals: 2 },
+        { id: 'GDPC1', name: 'Real GDP', unit: '$T', decimals: 2, transform: function (v) { return v / 1000; } },
+        { id: 'INDPRO', name: 'Industrial Production', unit: 'index', decimals: 1 },
+        { id: 'RSAFS', name: 'Retail Sales', unit: '$B', decimals: 1, transform: function (v) { return v / 1000; } },
+        { id: 'UMCSENT', name: 'Consumer Sentiment', unit: 'index', decimals: 1 },
+        { id: 'STLFSI4', name: 'Financial Stress Index', unit: 'index', decimals: 2 },
+        { id: 'DTWEXBGS', name: 'Dollar Index (Broad)', unit: 'index', decimals: 2 },
+        { id: 'PERMIT', name: 'New Housing Permits', unit: 'K', decimals: 0 },
+        { id: 'GFDEGDQ188S', name: 'Debt-to-GDP Ratio', unit: '%', decimals: 1 },
+        { id: 'VIXCLS', name: 'CBOE Volatility (VIX)', unit: 'index', decimals: 2 },
+        { id: 'BOPGSTB', name: 'Trade Balance', unit: '$B', decimals: 1, transform: function (v) { return v / 1000; } },
+        { id: 'M2V', name: 'Velocity of Money (M2)', unit: 'ratio', decimals: 2 }
+      ];
+
+      function el(tag, className, text) {
+        var node = document.createElement(tag);
+        if (className) node.className = className;
+        if (text !== undefined) node.textContent = text;
+        return node;
+      }
+
+      function fmtDate(s) {
+        var d = new Date(s);
+        return isNaN(d) ? '' : d.toLocaleDateString('en-US', { month: 'short', day: 'numeric', year: 'numeric' });
+      }
+
+      function fail() {
+        var p = document.getElementById('econ-fallback');
+        p.textContent = 'Data feed unavailable. The indicators could not be loaded.';
+        p.style.display = 'block';
+      }
+
+      fetch('econ-data.json')
+        .then(function (r) { if (!r.ok) throw new Error(r.status); return r.json(); })
+        .then(function (data) {
+          document.getElementById('econ-updated').textContent =
+            'Baked from FRED. Updated ' + fmtDate(data.fetchedAt) + '.';
+
+          var grid = document.getElementById('econ-grid');
+          DEFS.forEach(function (def) {
+            var series = data.indicators[def.id];
+            if (!series || !series.latest) return;
+            var tx = def.transform || t(function (v) { return v; });
+            var value = tx(series.latest.value);
+            var card = el('article', 'econ-card');
+            var inner = card;
+            if (!def.derived) {
+              inner = el('a');
+              inner.href = 'https://fred.stlouisfed.org/series/' + def.id;
+              inner.target = '_blank';
+              inner.rel = 'noopener';
+              card.appendChild(inner);
+            }
+            inner.appendChild(el('p', 'name', def.name));
+            var v = el('p', 'value', value.toFixed(def.decimals) + ' ');
+            v.appendChild(el('span', 'unit', def.unit));
+            inner.appendChild(v);
+            var meta = el('p', 'meta', fmtDate(series.latest.date));
+            if (series.previous && series.previous.value !== series.latest.value) {
+              var up = series.latest.value > series.previous.value;
+              var delta = el('span', up ? 'delta-up' : 'delta-down', ' ' + (up ? '▲' : '▼'));
+              meta.appendChild(delta);
+            }
+            inner.appendChild(meta);
+            grid.appendChild(card);
+          });
+
+          var news = document.getElementById('econ-news');
+          data.news.forEach(function (n) {
+            var li = el('li');
+            var a = el('a', null, n.title);
+            a.href = n.link;
+            a.target = '_blank';
+            a.rel = 'noopener';
+            li.appendChild(a);
+            li.appendChild(document.createTextNode(' '));
+            li.appendChild(el('span', 'kind', '(' + n.kind + ')'));
+            news.appendChild(li);
+          });
+
+          document.getElementById('main').setAttribute('data-hydrated', 'econ');
+        })
+        .catch(fail);
+    })();
+  </script>
+</body>
+</html>
