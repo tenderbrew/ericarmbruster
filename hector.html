@@ -1,0 +1,99 @@
+<!--
+  hector.html — Hector (v3 retro/pixel system)
+  ---------------------------------------------
+  Photo page for the resident dog (he is also the site favicon). Uses the
+  shared .px-gallery component; to add a photo, drop it in images/hector/
+  and copy the figure template below. Grows over time, no schedule.
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Hector &mdash; Eric Armbruster</title>
+
+  <meta name="description" content="Hector, the Armbruster family dog.">
+  <meta name="theme-color" content="#F3EEDF">
+  <link rel="canonical" href="https://www.ericarmbruster.com/hector.html">
+  <meta property="og:title" content="Hector - Eric Armbruster">
+  <meta property="og:description" content="Hector, the Armbruster family dog.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://www.ericarmbruster.com/hector.html">
+  <meta property="og:image" content="https://www.ericarmbruster.com/images/hector-0002.png">
+
+  <link rel="icon" href="images/hector-favicon.png" type="image/png">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DotGothic16&family=IBM+Plex+Mono:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/pixel-base.css">
+
+  <style>
+    .site-nav { margin-bottom: 32px; }
+    .site-nav a {
+      font-family: var(--font-display);
+      font-size: 16px;
+      text-decoration: none;
+    }
+    /* The favicon at 8x, honest pixels — Hector as sprite. */
+    .hx-sprite {
+      image-rendering: pixelated;
+      width: 128px;
+      height: 128px;
+      aspect-ratio: auto;
+    }
+    .hx-masthead { display: flex; align-items: center; gap: 24px; flex-wrap: wrap; }
+  </style>
+
+  <!-- Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-5ZTHJXDR9V"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-5ZTHJXDR9V');
+  </script>
+</head>
+<body>
+
+  <nav class="site-nav">
+    <a href="index.html">&larr; Eric Armbruster</a>
+  </nav>
+
+  <header class="masthead hx-masthead">
+    <img class="hx-sprite" src="images/hector-favicon.png" alt="" width="128" height="128">
+    <div>
+      <h1>Hector</h1>
+      <p>The resident dog. He is also this site's favicon.</p>
+    </div>
+  </header>
+
+  <hr class="px-wave">
+
+  <main id="main">
+
+    <div class="px-gallery">
+      <figure>
+        <span class="frame"><img src="images/hector-0002.png" alt="Hector sitting on the edge of his dog bed"></span>
+        <figcaption><span>Half in, half out</span></figcaption>
+      </figure>
+      <!-- Template — copy, drop the photo in images/hector/, fill in:
+      <figure>
+        <span class="frame"><img src="images/hector/hector-XX.jpg" alt="" loading="lazy"></span>
+        <figcaption><span>Caption</span><span class="when">2026</span></figcaption>
+      </figure>
+      -->
+    </div>
+
+    <p>More photos as they get taken.</p>
+
+  </main>
+
+  <footer>
+    <p>&copy; 2026 Eric Armbruster</p>
+  </footer>
+
+</body>
+</html>

@@ -45,7 +45,7 @@ const CHECKS = {
   bitcoin: { must: ['data-hydrated="btc"'], mustNot: ['Data feed unavailable'] },
 };
 
-const ALL_PAGES = ['index', 'now', 'video-games', 'film', 'reading', 'economics', 'bitcoin', 'seymour', '404'];
+const ALL_PAGES = ['index', 'now', 'video-games', 'film', 'reading', 'economics', 'bitcoin', 'family-tree', 'hector', 'seymour', '404'];
 
 function findBrowser() {
   const candidates = [

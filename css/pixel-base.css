@@ -264,6 +264,47 @@ ul.px-bullets li::before {
   text-align: left;
 }
 
+/* ---- Photo gallery (full-color photos in pixel frames) ------------------ */
+
+.px-gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(170px, 1fr));
+  gap: 28px 24px;
+  margin: 24px 0;
+}
+
+.px-gallery figure { margin: 0; }
+
+.px-gallery .frame {
+  display: block;
+  border: 2px solid var(--ink);
+  box-shadow: 4px 4px 0 var(--shadow);
+}
+
+.px-gallery img {
+  display: block;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 1;
+  object-fit: cover;
+  image-rendering: auto; /* real photographs, not pixel art */
+}
+
+.px-gallery figcaption {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 8px;
+  margin-top: 8px;
+  font-size: 12px;
+}
+
+.px-gallery .when {
+  font-family: var(--font-display);
+  font-size: 16px;
+  color: var(--pool);
+}
+
 /* ---- Footer ------------------------------------------------------------ */
 
 footer {
