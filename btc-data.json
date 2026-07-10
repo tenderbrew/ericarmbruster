@@ -1,13 +1,13 @@
 {
-  "fetchedAt": "2026-07-10T04:10:36.688Z",
+  "fetchedAt": "2026-07-10T09:51:17.502Z",
   "price": {
-    "usd": 63971,
-    "time": 1783656307
+    "usd": 64409,
+    "time": 1783676709
   },
   "moves": {
-    "d1": 1.1868177858874285,
-    "d7": 2.292321418580001,
-    "d30": 4.0305484901427935
+    "d1": 1.8796290001910743,
+    "d7": 2.992701853172841,
+    "d30": 4.742830309071411
   },
   "history90d": [
     {
@@ -372,60 +372,95 @@
     },
     {
       "date": "2026-07-10",
-      "close": 63923.61020903821
+      "close": 64375.632500616564
     }
   ],
   "blocks": [
     {
-      "height": 957388,
-      "id": "0000000000000000000137cd51479ea2ed8111c579aa05dd5a93350e3b01b3d3",
-      "timestamp": 1783655931,
-      "txCount": 6016
+      "height": 957411,
+      "id": "00000000000000000001fdd0d20370c84ef406b751dce8a99b375ea2003bab6f",
+      "timestamp": 1783676815,
+      "txCount": 3719
     },
     {
-      "height": 957387,
-      "id": "000000000000000000002260134113592c8eb054e9972f648ca11803bfeeb23f",
-      "timestamp": 1783655399,
-      "txCount": 5618
+      "height": 957410,
+      "id": "00000000000000000000eba54e872906a97307e1111824107ee9857411b06b00",
+      "timestamp": 1783676709,
+      "txCount": 4035
     },
     {
-      "height": 957386,
-      "id": "00000000000000000001e77a19618a4335b65da518f407e2c31c048e4aa3c0e8",
-      "timestamp": 1783654966,
-      "txCount": 6584
+      "height": 957409,
+      "id": "00000000000000000000ae57d460065990cf5565b62fbca3c5378ad5055d5bf2",
+      "timestamp": 1783676116,
+      "txCount": 2619
     },
     {
-      "height": 957385,
-      "id": "000000000000000000007f1a07fd5dc8d260c0d081c2b00626501d6457839711",
-      "timestamp": 1783654922,
-      "txCount": 6892
+      "height": 957408,
+      "id": "00000000000000000000da10c704b59ce63dba944a011e975a116c02e37db06a",
+      "timestamp": 1783675276,
+      "txCount": 3856
     },
     {
-      "height": 957384,
-      "id": "0000000000000000000161930c596dcaca49820ad28e556b5ff263cf1de230fb",
-      "timestamp": 1783654845,
-      "txCount": 912
+      "height": 957407,
+      "id": "0000000000000000000038ed3372c3e5f6b0e70a4d7208dbbce391bbfdf7db89",
+      "timestamp": 1783675086,
+      "txCount": 3744
     },
     {
-      "height": 957383,
-      "id": "00000000000000000001201c6b3dc44c30e7f23bc642c54c98b4e765ad214b2b",
-      "timestamp": 1783654413,
-      "txCount": 588
+      "height": 957406,
+      "id": "000000000000000000007e36a13cebb92d94b811f8d71ec324e6e74f10de92c5",
+      "timestamp": 1783674516,
+      "txCount": 4220
     },
     {
-      "height": 957382,
-      "id": "00000000000000000000f4f8c91a6c400c42a40577fafa2ca2231d78f1955424",
-      "timestamp": 1783654234,
-      "txCount": 4900
+      "height": 957405,
+      "id": "000000000000000000015c826ecb81f876e88755eb4f7388e36753ce3a4f1c01",
+      "timestamp": 1783671988,
+      "txCount": 4011
     },
     {
-      "height": 957381,
-      "id": "00000000000000000001db9adca1044c8e0df20879f2032b2fd82cb99ef7a5ec",
-      "timestamp": 1783653808,
-      "txCount": 6646
+      "height": 957404,
+      "id": "00000000000000000000b6b20a32cfbb1411258f7e24f7405b5373f1a22377a6",
+      "timestamp": 1783670938,
+      "txCount": 4716
     }
   ],
   "news": [
+    {
+      "title": "Polymarket seeks approval to bring margin trading to U.S. customers",
+      "link": "https://www.coindesk.com/markets/2026/07/10/polymarket-seeks-approval-to-bring-margin-trading-to-u-s-customers",
+      "pubDate": "Fri, 10 Jul 2026 09:35:21 +0000"
+    },
+    {
+      "title": "Bitcoin's $60,000-$70,000 range becomes third longest consolidation in history",
+      "link": "https://www.coindesk.com/markets/2026/07/10/bitcoin-s-usd60k-to-usd70k-range-becomes-third-longest-consolidation-in-history",
+      "pubDate": "Fri, 10 Jul 2026 09:16:52 +0000"
+    },
+    {
+      "title": "Metaplanet explores bringing bitcoin-backed digital credit to Japan",
+      "link": "https://www.coindesk.com/markets/2026/07/10/metaplanet-explores-bringing-bitcoin-backed-digital-credit-to-japan",
+      "pubDate": "Fri, 10 Jul 2026 09:08:20 +0000"
+    },
+    {
+      "title": "Bitcoin gets a green light from a reliable momentum gauge. Here are key levels to watch",
+      "link": "https://www.coindesk.com/markets/2026/07/10/bitcoin-gets-a-green-light-from-a-reliable-momentum-gauge-here-are-key-levels-to-watch",
+      "pubDate": "Fri, 10 Jul 2026 06:49:13 +0000"
+    },
+    {
+      "title": "Live markets: Bitcoin tops $64,000 as selling pressure on Coinbase eases",
+      "link": "https://www.coindesk.com/tech/2026/07/10/live-markets-bitcoin-etfs-bleed-again-while-ether-funds-snap-a-five-day-inflow-streak",
+      "pubDate": "Fri, 10 Jul 2026 06:21:34 +0000"
+    },
+    {
+      "title": "XRP up 2% as buyers push through $1.10 resistance",
+      "link": "https://www.coindesk.com/markets/2026/07/10/xrp-up-2-as-buyers-push-through-usd1-10-resistance",
+      "pubDate": "Fri, 10 Jul 2026 05:13:48 +0000"
+    },
+    {
+      "title": "Bitcoin's quiet split: Strong in USD, lagging in JPY as Yen rises on intervention fears",
+      "link": "https://www.coindesk.com/markets/2026/07/10/bitcoin-s-quiet-split-strong-in-usd-lagging-in-jpy-as-yen-rises-on-intervention-fears",
+      "pubDate": "Fri, 10 Jul 2026 04:34:06 +0000"
+    },
     {
       "title": "Bitcoin zips higher to nearly $64,000 as chip rally and yen strength drive gains",
       "link": "https://www.coindesk.com/markets/2026/07/10/bitcoin-zips-to-nearly-usd64-000-as-chip-rally-and-yen-strength-drive-gains",
@@ -450,41 +485,6 @@
       "title": "Arbitrum jumps 19% benefitting from Robinhood's $568 million onchain trading frenzy",
       "link": "https://www.coindesk.com/markets/2026/07/09/arbitrum-jumps-19-benefitting-from-robinhood-s-usd568-million-onchain-trading-frenzy",
       "pubDate": "Thu, 09 Jul 2026 20:28:51 +0000"
-    },
-    {
-      "title": "Newest version of crypto Clarity Act may drop as soon as next week, sources say",
-      "link": "https://www.coindesk.com/policy/2026/07/09/newest-version-of-crypto-clarity-act-may-drop-as-soon-as-next-week-sources-say",
-      "pubDate": "Thu, 09 Jul 2026 19:34:24 +0000"
-    },
-    {
-      "title": "Billions flowing out of bitcoin ETFs and private credit funds suggest rising market risks",
-      "link": "https://www.coindesk.com/markets/2026/07/09/billions-flowing-out-of-bitcoin-etfs-and-private-credit-funds-suggest-rising-market-risks",
-      "pubDate": "Thu, 09 Jul 2026 18:13:04 +0000"
-    },
-    {
-      "title": "AI contracts, not bitcoin, now drive miner valuations, and Cipher and TeraWulf look cheap, says analyst",
-      "link": "https://www.coindesk.com/markets/2026/07/09/cipher-terawulf-among-ai-infrastructure-stocks-trading-below-contract-value-compass-point-argues",
-      "pubDate": "Thu, 09 Jul 2026 15:53:42 +0000"
-    },
-    {
-      "title": "Ethereum's newest nonprofit wants to become Wall Street's guide to crypto",
-      "link": "https://www.coindesk.com/tech/2026/07/09/ethereum-s-newest-nonprofit-wants-to-become-wall-street-s-guide-to-crypto",
-      "pubDate": "Thu, 09 Jul 2026 14:58:55 +0000"
-    },
-    {
-      "title": "Aave rolls out vaults for yield-hungry fintech investors",
-      "link": "https://www.coindesk.com/business/2026/07/09/aave-rolls-out-vaults-for-yield-hungry-fintech-investors",
-      "pubDate": "Thu, 09 Jul 2026 13:01:38 +0000"
-    },
-    {
-      "title": "Age verification is the surveillance nobody voted for",
-      "link": "https://www.coindesk.com/opinion/2026/07/09/age-verification-is-the-surveillance-nobody-voted-for",
-      "pubDate": "Thu, 09 Jul 2026 13:00:00 +0000"
-    },
-    {
-      "title": "Over $7.2 billion have migrated from LayerZero to Chainlink CCIP as Mantle joins exodus",
-      "link": "https://www.coindesk.com/business/2026/07/09/over-usd7-2-billion-have-migrated-from-layerzero-to-chainlink-ccip-as-mantle-joins-exodus",
-      "pubDate": "Thu, 09 Jul 2026 12:00:00 +0000"
     }
   ]
 }
