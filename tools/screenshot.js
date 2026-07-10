@@ -38,7 +38,7 @@ const MIME = {
 // Per-page hydration assertions. Pages not listed are screenshotted only.
 const CHECKS = {
   seymour: { count: [['class="sy-photo-btn"', 30]] },
-  hector: { count: [['class="hx-photo-btn"', 9]] },
+  hector: { count: [['class="hx-photo-btn"', 13]] },
   'video-games': { must: ['data-hydrated="steam"'], mustNot: ['Data feed unavailable'] },
   film: { must: ['data-hydrated="film"'], mustNot: ['Data feed unavailable'] },
   reading: { must: ['data-hydrated="reading"'], mustNot: ['Data feed unavailable'] },
