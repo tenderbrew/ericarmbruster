@@ -132,18 +132,24 @@
 
   <script>
     (function () {
-      var GROUPS = [
-        ['media', 'Media'],
-        ['arr', 'Media automation'],
-        ['downloads', 'Downloads'],
-        ['books', 'Books & comics'],
-        ['photos', 'Photos'],
-        ['documents', 'Documents'],
-        ['household', 'Household'],
-        ['finance', 'Finance'],
-        ['infra', 'Infrastructure'],
-        ['standalone', 'One-offs']
-      ];
+      // Grouping mirrors the lab's Glance dashboard, not compose projects.
+      var GROUP_ORDER = ['Clients', 'Utilities', 'Monitoring', 'Arr stack',
+        'Discord bots', 'Downloads', 'Security', 'Auxiliary'];
+      var NAME_GROUPS = {
+        audiobookshelf: 'Clients', grimmory: 'Clients', komga: 'Clients', plex: 'Clients',
+        'btc-rpc-explorer': 'Utilities', homeassistant: 'Utilities', immich: 'Utilities',
+        mealie: 'Utilities', minecraft: 'Utilities', paperless: 'Utilities',
+        seerr: 'Utilities', sure: 'Utilities',
+        dockhand: 'Monitoring', homepage: 'Monitoring', netdata: 'Monitoring',
+        notifiarr: 'Monitoring', 'speedtest-tracker': 'Monitoring',
+        tautulli: 'Monitoring', 'uptime-kuma': 'Monitoring',
+        kapowarr: 'Arr stack', lidarr: 'Arr stack', prowlarr: 'Arr stack',
+        radarr: 'Arr stack', shelfmark: 'Arr stack', sonarr: 'Arr stack',
+        'discord-blackjack': 'Discord bots', 'tok-bot': 'Discord bots',
+        qbittorrent: 'Downloads', sabnzbd: 'Downloads', slskd: 'Downloads',
+        adguard: 'Security', crowdsec: 'Security'
+        // everything unmapped falls into Auxiliary
+      };
 
       var DESCRIPTIONS = {
         plex: 'movies, TV, and music for the whole house',
@@ -206,12 +212,12 @@
             'Generated from the lab itself. Snapshot from ' +
             new Date(data.fetchedAt).toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' }) + '.';
 
+          function groupOf(s) { return NAME_GROUPS[s.name] || 'Auxiliary'; }
+
           var stats = document.getElementById('sh-stats');
-          var groupCount = {};
-          data.services.forEach(function (s) { groupCount[s.project] = (groupCount[s.project] || 0) + 1; });
           [
             [data.services.length, 'services running'],
-            [Object.keys(groupCount).length, 'stacks'],
+            [GROUP_ORDER.length, 'groups'],
             ['1', 'small server in a closet']
           ].forEach(function (pair) {
             var tile = el('div', 'px-stat');
@@ -221,16 +227,12 @@
           });
 
           var wrap = document.getElementById('sh-groups');
-          var seen = {};
-          var order = GROUPS.map(function (g) { return g[0]; });
-          data.services.forEach(function (s) { if (order.indexOf(s.project) === -1) order.push(s.project); });
-          order.forEach(function (key) {
-            var items = data.services.filter(function (s) { return s.project === key; });
-            if (!items.length || seen[key]) return;
-            seen[key] = true;
-            var labelPair = GROUPS.filter(function (g) { return g[0] === key; })[0];
+          GROUP_ORDER.forEach(function (group) {
+            var items = data.services.filter(function (s) { return groupOf(s) === group; });
+            if (!items.length) return;
+            items.sort(function (a, b) { return a.name.localeCompare(b.name); });
             var section = el('section', 'sh-group');
-            section.appendChild(el('h2', null, labelPair ? labelPair[1] : key));
+            section.appendChild(el('h2', null, group));
             var table = el('table', 'px-table sh-table');
             var tbody = el('tbody');
             items.forEach(function (s) {
