@@ -56,15 +56,7 @@
       border: 2px solid var(--ink);
       box-shadow: 4px 4px 0 var(--shadow);
     }
-    .mast-portrait .plate {
-      display: inline-block;
-      margin-top: 10px;
-      font-family: var(--font-display);
-      font-size: 16px;
-      color: var(--pool);
-    }
     .mast-portrait:hover img { border-color: var(--sunset); }
-    .mast-portrait:hover .plate { color: var(--sunset); }
     @media (max-width: 480px) {
       .mast-portrait img { width: 128px; height: 128px; }
     }
@@ -129,9 +121,8 @@
     </svg>
     <h1>Eric Armbruster</h1>
     </div>
-    <a class="mast-portrait" href="hector.html">
+    <a class="mast-portrait" href="hector.html" aria-label="Hector, the resident dog">
       <img src="images/hector-0002.png" alt="Hector, a Border Terrier, sitting on the edge of his dog bed" width="176" height="176">
-      <span class="plate">hector</span>
     </a>
   </header>
 
