@@ -1,0 +1,176 @@
+<!--
+  music.html — Music (v3 retro/pixel system)
+  --------------------------------------------
+  Hydrates from music-data.json, exported from Tautulli's Plex listening
+  history via tools/export-music.sh (the API key never leaves the
+  homelab). Typographic shelf — no album art, the mono tables are the
+  aesthetic. On success the JS sets data-hydrated="music" on <main>.
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Music &mdash; Eric Armbruster</title>
+
+  <meta name="description" content="What Eric Armbruster has been listening to, from the Plex server's history.">
+  <meta name="theme-color" content="#F3EEDF">
+  <link rel="canonical" href="https://www.ericarmbruster.com/music.html">
+  <meta property="og:title" content="Music - Eric Armbruster">
+  <meta property="og:description" content="What Eric Armbruster has been listening to.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://www.ericarmbruster.com/music.html">
+
+  <link rel="icon" href="images/hector-favicon.png" type="image/png">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DotGothic16&family=IBM+Plex+Mono:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/pixel-base.css">
+
+  <style>
+    .site-nav { margin-bottom: 32px; }
+    .site-nav a {
+      font-family: var(--font-display);
+      font-size: 16px;
+      text-decoration: none;
+    }
+    .mu-updated { font-size: 12px; margin: 4px 0 0; }
+    .mu-fallback { display: none; }
+    .mu-when { font-size: 11px; white-space: nowrap; }
+  </style>
+
+  <!-- Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-5ZTHJXDR9V"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-5ZTHJXDR9V');
+  </script>
+</head>
+<body>
+
+  <nav class="site-nav">
+    <a href="index.html">&larr; Eric Armbruster</a>
+  </nav>
+
+  <header class="masthead">
+    <h1>Music</h1>
+    <p class="mu-updated" id="mu-updated"></p>
+  </header>
+
+  <hr class="px-wave">
+
+  <main id="main">
+
+    <p class="mu-fallback" id="mu-fallback"></p>
+
+    <h2>Top artists</h2>
+    <p>Play counts over the last few hundred spins on the house Plex server.</p>
+    <div id="mu-artists"></div>
+
+    <hr class="px-wave">
+
+    <h2>Top albums</h2>
+    <table class="px-table">
+      <thead>
+        <tr><th>Album</th><th>Artist</th><th class="num">Plays</th></tr>
+      </thead>
+      <tbody id="mu-albums"></tbody>
+    </table>
+
+    <h2>Recently played</h2>
+    <table class="px-table">
+      <thead>
+        <tr><th>Track</th><th>Artist</th><th class="num">When</th></tr>
+      </thead>
+      <tbody id="mu-recent"></tbody>
+    </table>
+
+  </main>
+
+  <footer>
+    <p>&copy; 2026 Eric Armbruster</p>
+  </footer>
+
+  <script>
+    (function () {
+      function el(tag, className, text) {
+        var node = document.createElement(tag);
+        if (className) node.className = className;
+        if (text !== undefined) node.textContent = text;
+        return node;
+      }
+
+      function ago(epoch) {
+        if (!epoch) return '';
+        var days = Math.floor((Date.now() / 1000 - epoch) / 86400);
+        if (days <= 0) return 'today';
+        if (days === 1) return 'yesterday';
+        return days + 'd ago';
+      }
+
+      function fail() {
+        var p = document.getElementById('mu-fallback');
+        p.textContent = 'Data feed unavailable. The listening history could not be loaded.';
+        p.style.display = 'block';
+      }
+
+      fetch('music-data.json')
+        .then(function (r) { if (!r.ok) throw new Error(r.status); return r.json(); })
+        .then(function (data) {
+          document.getElementById('mu-updated').textContent =
+            'From the house Plex server. Updated ' +
+            new Date(data.fetchedAt).toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' }) + '.';
+
+          var artists = document.getElementById('mu-artists');
+          var max = data.topArtists.length ? data.topArtists[0].plays : 0;
+          data.topArtists.forEach(function (a) {
+            var row = el('div', 'px-bar-row');
+            var label = el('span', 'bar-label', a.artist);
+            label.style.width = '160px';
+            label.style.minWidth = '160px';
+            label.style.overflow = 'hidden';
+            label.style.textOverflow = 'ellipsis';
+            label.style.whiteSpace = 'nowrap';
+            row.style.gridTemplateColumns = '160px 1fr 84px';
+            row.appendChild(label);
+            var track = el('div', 'bar-track');
+            var bar = el('div', 'bar');
+            bar.style.width = (max ? (a.plays / max) * 100 : 0) + '%';
+            track.appendChild(bar);
+            row.appendChild(track);
+            row.appendChild(el('span', 'bar-value', a.plays + ' plays'));
+            row.title = a.artist + ': ' + a.plays + ' plays';
+            artists.appendChild(row);
+          });
+
+          var albums = document.getElementById('mu-albums');
+          data.topAlbums.forEach(function (a) {
+            var tr = el('tr');
+            tr.appendChild(el('td', null, a.album));
+            tr.appendChild(el('td', null, a.artist));
+            tr.appendChild(el('td', 'num', String(a.plays)));
+            albums.appendChild(tr);
+          });
+
+          var recent = document.getElementById('mu-recent');
+          data.recentTracks.forEach(function (t) {
+            var tr = el('tr');
+            tr.appendChild(el('td', null, t.track));
+            tr.appendChild(el('td', null, t.artist));
+            var when = el('td', 'num mu-when', ago(t.played));
+            tr.appendChild(when);
+            recent.appendChild(tr);
+          });
+
+          document.getElementById('main').setAttribute('data-hydrated', 'music');
+        })
+        .catch(fail);
+    })();
+  </script>
+</body>
+</html>

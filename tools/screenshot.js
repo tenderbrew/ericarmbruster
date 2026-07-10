@@ -43,9 +43,11 @@ const CHECKS = {
   reading: { must: ['data-hydrated="reading"'], mustNot: ['Data feed unavailable'] },
   economics: { must: ['data-hydrated="econ"'], mustNot: ['Data feed unavailable'] },
   bitcoin: { must: ['data-hydrated="btc"'], mustNot: ['Data feed unavailable'] },
+  'self-hosting': { must: ['data-hydrated="services"'], mustNot: ['Data feed unavailable'] },
+  music: { must: ['data-hydrated="music"'], mustNot: ['Data feed unavailable'] },
 };
 
-const ALL_PAGES = ['index', 'now', 'video-games', 'film', 'reading', 'economics', 'bitcoin', 'family-tree', 'hector', 'seymour', '404'];
+const ALL_PAGES = ['index', 'now', 'video-games', 'film', 'reading', 'music', 'self-hosting', 'economics', 'bitcoin', 'family-tree', 'hector', 'seymour', '404'];
 
 function findBrowser() {
   const candidates = [

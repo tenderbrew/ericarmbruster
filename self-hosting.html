@@ -1,0 +1,219 @@
+<!--
+  self-hosting.html — Self-hosting (v3 retro/pixel system)
+  ---------------------------------------------------------
+  Hydrates from services-data.json, a snapshot of what's actually running
+  on the homelab (refresh with tools/export-services.sh — it reads
+  container names + compose projects over SSH; nothing sensitive is
+  published: no ports, IPs, versions, or hardware details). The GROUPS
+  and DESCRIPTIONS maps below are the editorial layer; services missing
+  from them still render, just undescribed. On success the JS sets
+  data-hydrated="services" on <main>.
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Self-hosting &mdash; Eric Armbruster</title>
+
+  <meta name="description" content="The services running on Eric Armbruster's homelab.">
+  <meta name="theme-color" content="#F3EEDF">
+  <link rel="canonical" href="https://www.ericarmbruster.com/self-hosting.html">
+  <meta property="og:title" content="Self-hosting - Eric Armbruster">
+  <meta property="og:description" content="The services running on Eric's homelab.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://www.ericarmbruster.com/self-hosting.html">
+
+  <link rel="icon" href="images/hector-favicon.png" type="image/png">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DotGothic16&family=IBM+Plex+Mono:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/pixel-base.css">
+
+  <style>
+    .site-nav { margin-bottom: 32px; }
+    .site-nav a {
+      font-family: var(--font-display);
+      font-size: 16px;
+      text-decoration: none;
+    }
+    .sh-updated { font-size: 12px; margin: 4px 0 0; }
+    .sh-fallback { display: none; }
+
+    .sh-group { margin: 28px 0; }
+    .sh-group > h2 { font-size: 16px; margin-bottom: 8px; }
+    .sh-table td:first-child {
+      font-family: var(--font-display);
+      font-size: 16px;
+      white-space: nowrap;
+    }
+    .sh-table td.desc { font-size: 13px; }
+  </style>
+
+  <!-- Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-5ZTHJXDR9V"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-5ZTHJXDR9V');
+  </script>
+</head>
+<body>
+
+  <nav class="site-nav">
+    <a href="index.html">&larr; Eric Armbruster</a>
+  </nav>
+
+  <header class="masthead">
+    <h1>Self-hosting</h1>
+    <p class="sh-updated" id="sh-updated"></p>
+  </header>
+
+  <hr class="px-wave">
+
+  <main id="main">
+
+    <p class="sh-fallback" id="sh-fallback"></p>
+
+    <p>
+      Most of what my household uses day to day runs out of a closet:
+      photos, movies, music, books, recipes, documents, ad-blocking. This
+      list is generated from what's actually running &mdash; it is the
+      lab's own inventory, not documentation about it.
+    </p>
+
+    <div class="px-stats" id="sh-stats"></div>
+
+    <div id="sh-groups"></div>
+
+  </main>
+
+  <footer>
+    <p>&copy; 2026 Eric Armbruster</p>
+  </footer>
+
+  <script>
+    (function () {
+      var GROUPS = [
+        ['media', 'Media'],
+        ['arr', 'Media automation'],
+        ['downloads', 'Downloads'],
+        ['books', 'Books & comics'],
+        ['photos', 'Photos'],
+        ['documents', 'Documents'],
+        ['household', 'Household'],
+        ['finance', 'Finance'],
+        ['infra', 'Infrastructure'],
+        ['standalone', 'One-offs']
+      ];
+
+      var DESCRIPTIONS = {
+        plex: 'movies, TV, and music for the whole house',
+        tautulli: 'watch statistics for Plex',
+        notifiarr: 'notification hub',
+        sonarr: 'TV automation',
+        radarr: 'movie automation',
+        lidarr: 'music automation',
+        bazarr: 'subtitles',
+        profilarr: 'quality profiles',
+        seerr: 'the family’s request portal',
+        prowlarr: 'indexer manager',
+        sabnzbd: 'usenet downloader',
+        qbittorrent: 'torrent client',
+        'qbit-manage': 'torrent housekeeping',
+        slskd: 'soulseek client',
+        audiobookshelf: 'audiobooks & podcasts',
+        komga: 'comics server',
+        kapowarr: 'comics automation',
+        shelfmark: 'book tracking',
+        grimmory: 'library manager',
+        immich: 'the family photo library',
+        paperless: 'document archive',
+        mealie: 'recipe manager',
+        sure: 'personal finance',
+        adguard: 'network-wide ad blocking + DNS',
+        homepage: 'the lab’s dashboard',
+        glance: 'at-a-glance dashboard',
+        netdata: 'metrics',
+        'uptime-kuma': 'uptime monitoring',
+        'speedtest-tracker': 'ISP speed history',
+        crowdsec: 'intrusion detection',
+        dockhand: 'container updates',
+        homeassistant: 'home automation',
+        bitcoind: 'a full Bitcoin node',
+        'btc-rpc-explorer': 'block explorer for the node',
+        minecraft: 'the kids’ Minecraft server',
+        bedrockconnect: 'console Minecraft helper',
+        'tok-bot': 'a Discord bot I wrote',
+        'discord-blackjack': 'a blackjack Discord bot I wrote'
+      };
+
+      function el(tag, className, text) {
+        var node = document.createElement(tag);
+        if (className) node.className = className;
+        if (text !== undefined) node.textContent = text;
+        return node;
+      }
+
+      function fail() {
+        var p = document.getElementById('sh-fallback');
+        p.textContent = 'Data feed unavailable. The service inventory could not be loaded.';
+        p.style.display = 'block';
+      }
+
+      fetch('services-data.json')
+        .then(function (r) { if (!r.ok) throw new Error(r.status); return r.json(); })
+        .then(function (data) {
+          document.getElementById('sh-updated').textContent =
+            'Generated from the lab itself. Snapshot from ' +
+            new Date(data.fetchedAt).toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' }) + '.';
+
+          var stats = document.getElementById('sh-stats');
+          var groupCount = {};
+          data.services.forEach(function (s) { groupCount[s.project] = (groupCount[s.project] || 0) + 1; });
+          [
+            [data.services.length, 'services running'],
+            [Object.keys(groupCount).length, 'stacks'],
+            ['1', 'small server in a closet']
+          ].forEach(function (pair) {
+            var tile = el('div', 'px-stat');
+            tile.appendChild(el('div', 'value', String(pair[0])));
+            tile.appendChild(el('div', 'label', pair[1]));
+            stats.appendChild(tile);
+          });
+
+          var wrap = document.getElementById('sh-groups');
+          var seen = {};
+          var order = GROUPS.map(function (g) { return g[0]; });
+          data.services.forEach(function (s) { if (order.indexOf(s.project) === -1) order.push(s.project); });
+          order.forEach(function (key) {
+            var items = data.services.filter(function (s) { return s.project === key; });
+            if (!items.length || seen[key]) return;
+            seen[key] = true;
+            var labelPair = GROUPS.filter(function (g) { return g[0] === key; })[0];
+            var section = el('section', 'sh-group');
+            section.appendChild(el('h2', null, labelPair ? labelPair[1] : key));
+            var table = el('table', 'px-table sh-table');
+            var tbody = el('tbody');
+            items.forEach(function (s) {
+              var tr = el('tr');
+              tr.appendChild(el('td', null, s.name));
+              tr.appendChild(el('td', 'desc', DESCRIPTIONS[s.name] || ''));
+              tbody.appendChild(tr);
+            });
+            table.appendChild(tbody);
+            section.appendChild(table);
+            wrap.appendChild(section);
+          });
+
+          document.getElementById('main').setAttribute('data-hydrated', 'services');
+        })
+        .catch(fail);
+    })();
+  </script>
+</body>
+</html>

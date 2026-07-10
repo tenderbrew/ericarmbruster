@@ -1,0 +1,158 @@
+{
+  "fetchedAt": "2026-07-10T16:31:34.793Z",
+  "note": "main services only; databases/caches/workers are filtered as implementation detail",
+  "services": [
+    {
+      "name": "bazarr",
+      "project": "arr"
+    },
+    {
+      "name": "lidarr",
+      "project": "arr"
+    },
+    {
+      "name": "profilarr",
+      "project": "arr"
+    },
+    {
+      "name": "radarr",
+      "project": "arr"
+    },
+    {
+      "name": "seerr",
+      "project": "arr"
+    },
+    {
+      "name": "sonarr",
+      "project": "arr"
+    },
+    {
+      "name": "audiobookshelf",
+      "project": "books"
+    },
+    {
+      "name": "grimmory",
+      "project": "books"
+    },
+    {
+      "name": "kapowarr",
+      "project": "books"
+    },
+    {
+      "name": "komga",
+      "project": "books"
+    },
+    {
+      "name": "shelfmark",
+      "project": "books"
+    },
+    {
+      "name": "paperless",
+      "project": "documents"
+    },
+    {
+      "name": "prowlarr",
+      "project": "downloads"
+    },
+    {
+      "name": "qbit-manage",
+      "project": "downloads"
+    },
+    {
+      "name": "qbittorrent",
+      "project": "downloads"
+    },
+    {
+      "name": "sabnzbd",
+      "project": "downloads"
+    },
+    {
+      "name": "slskd",
+      "project": "downloads"
+    },
+    {
+      "name": "sure",
+      "project": "finance"
+    },
+    {
+      "name": "mealie",
+      "project": "household"
+    },
+    {
+      "name": "adguard",
+      "project": "infra"
+    },
+    {
+      "name": "crowdsec",
+      "project": "infra"
+    },
+    {
+      "name": "dockhand",
+      "project": "infra"
+    },
+    {
+      "name": "glance",
+      "project": "infra"
+    },
+    {
+      "name": "homepage",
+      "project": "infra"
+    },
+    {
+      "name": "netdata",
+      "project": "infra"
+    },
+    {
+      "name": "speedtest-tracker",
+      "project": "infra"
+    },
+    {
+      "name": "uptime-kuma",
+      "project": "infra"
+    },
+    {
+      "name": "notifiarr",
+      "project": "media"
+    },
+    {
+      "name": "plex",
+      "project": "media"
+    },
+    {
+      "name": "tautulli",
+      "project": "media"
+    },
+    {
+      "name": "immich",
+      "project": "photos"
+    },
+    {
+      "name": "bedrockconnect",
+      "project": "standalone"
+    },
+    {
+      "name": "bitcoind",
+      "project": "standalone"
+    },
+    {
+      "name": "btc-rpc-explorer",
+      "project": "standalone"
+    },
+    {
+      "name": "discord-blackjack",
+      "project": "standalone"
+    },
+    {
+      "name": "homeassistant",
+      "project": "standalone"
+    },
+    {
+      "name": "minecraft",
+      "project": "standalone"
+    },
+    {
+      "name": "tok-bot",
+      "project": "standalone"
+    }
+  ]
+}

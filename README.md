@@ -23,6 +23,12 @@ live in git history.
 - `video-games.html` — Steam library snapshot (auto: `steam-fetch.js` + daily Action → `steam-data.json`).
 - `film.html` — Letterboxd diary (auto: `film-fetch.js` + 6-hourly Action → `film-data.json`).
 - `reading.html` — Goodreads shelves (auto: `reading-fetch.js` + daily Action → `reading-data.json`).
+- `music.html` — Plex listening history (semi-auto: `tools/export-music.sh` over SSH → `music-data.json`).
+- `self-hosting.html` — the homelab's own service inventory (semi-auto: `tools/export-services.sh` → `services-data.json`).
+- `economics.html` — FRED indicators + Mises feed (auto: `econ-fetch.js` + 6-hourly Action).
+- `bitcoin.html` — price/blocks/news snapshot (auto: `btc-fetch.js` + 3-hourly Action).
+- `family-tree.html` — the ancestry research, deceased ancestors only (hand-edited).
+- `hector.html` — the resident dog (hand-edited).
 - `seymour.html` — photo-essay memorial for Seymour (2010–2025), in the
   pixel system. The memorial photographs themselves stay full-color and
   undithered, mounted in hard-shadow frames.

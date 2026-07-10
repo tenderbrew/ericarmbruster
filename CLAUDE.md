@@ -30,8 +30,15 @@ One system for every page. Tokens live at the top of `css/pixel-base.css` — al
 - `video-games.html` — hydrates from `steam-data.json` (see pipelines below).
 - `film.html` — hydrates from `film-data.json`; posters hotlink Letterboxd's CDN.
 - `reading.html` — hydrates from `reading-data.json` (Goodreads shelves; covers hotlink Goodreads' CDN).
+- `music.html` — hydrates from `music-data.json` (Plex listening history via Tautulli).
+- `self-hosting.html` — hydrates from `services-data.json` (the homelab's own container inventory); the GROUPS/DESCRIPTIONS maps in the page are the editorial layer.
+- `economics.html` — hydrates from `econ-data.json` (FRED + Mises RSS); `indicatorDefinitions` in the page must stay in sync with `SERIES_IDS` in `econ-fetch.js`.
+- `bitcoin.html` — hydrates from `btc-data.json`; draws the 90d SVG polyline at hydration.
+- `family-tree.html` — hand-edited distillation of `Documents/ancestry/tree.md` (outside this repo). **Deceased ancestors only; living relatives appear as "(living)", unnamed.**
+- `hector.html` — hand-edited photo page (template figure in a comment); uses the shared `.px-gallery`.
 - `seymour.html` — memorial, pixel chrome with untouched photos (see above).
 - `404.html` — GitHub Pages not-found page, pixel system, `noindex`, **absolute** asset paths (`/css/...`) because it serves at any path.
+- Retro Game Club is deliberately NOT a page here — it links out to nintendopipeline.club (its own repo/site) from the homepage TOC.
 
 ## Data pipelines
 
@@ -42,6 +49,17 @@ Same architecture as v1: GitHub Actions run the fetcher on a schedule, commit th
 | `video-games` | `steam-fetch.js` (needs `.env` `STEAM_API_KEY`/`STEAM_ID` locally; Action uses repo secrets) | `steam-data.json` | `update-steam.yml` | daily 08:00 UTC |
 | `film` | `film-fetch.js` (no key) | `film-data.json` | `update-film.yml` | every 6 hours |
 | `reading` | `reading-fetch.js` (no key; public Goodreads shelf RSS `/review/list_rss/22369018` — empty `user_shelves` in the feed means shelf "read") | `reading-data.json` | `update-reading.yml` | daily 09:15 UTC |
+| `economics` | `econ-fetch.js` (no key) | `econ-data.json` | `update-econ.yml` | every 6 hours |
+| `bitcoin` | `btc-fetch.js` (no key) | `btc-data.json` | `update-btc.yml` | every 3 hours |
+
+**Homelab-fed pages** (no GitHub Action — Actions can't reach the LAN). Refresh by running the export script from the dev box, then commit the JSON; secrets are read on the homelab and never leave it:
+
+| Page | Script | Data file | Source |
+|---|---|---|---|
+| `self-hosting` | `tools/export-services.sh` | `services-data.json` | `docker ps` names + compose projects over SSH (`tenderbrew@192.168.1.101`); sidecars filtered; **never publish ports/IPs/versions** |
+| `music` | `tools/export-music.sh` | `music-data.json` | Tautulli `get_history` (API key read on-homelab from its config.ini) |
+
+Gotcha that broke the first version of these scripts: `ssh ... | python - "$OUT" <<'PY'` does NOT work — the heredoc steals stdin from the pipe. Write ssh output to a mktemp file and pass the path to python. Also use `command -v python || command -v python3` on this Windows box (bare `python3` resolves to the broken Microsoft Store shim).
 
 JSON shape is a contract between fetcher and page — change both sides together. Because these workflows commit to `main`, `git pull --rebase origin main` before pushing.
 
