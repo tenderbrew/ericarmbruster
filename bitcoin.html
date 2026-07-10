@@ -1,38 +1,69 @@
 <!--
-  bitcoin.html — Mempool-styled Bitcoin dashboard
+  bitcoin.html — Bitcoin (v3 retro/pixel system)
   -----------------------------------------------
-  Live spot price + 90-day chart + recent blocks rendered as gradient
-  tiles + news + reading list. All DOM IDs the inline data pipeline
-  targets are preserved verbatim: btc-price-*, btc-chart-*,
-  btc-block-*, btc-news-*. The SVG retains its 720x280 viewBox so
-  renderChart() math still works.
+  Hydrates from btc-data.json (price, 90d history, recent blocks, news),
+  baked every 3 hours by btc-fetch.js via update-btc.yml — no live crypto
+  APIs in the browser. The 90-day chart is a single-series SVG polyline
+  drawn at hydration. On success the JS sets data-hydrated="btc" on
+  <main>.
 -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Bitcoin — Eric Armbruster</title>
-  <meta name="description" content="Live Bitcoin price, 90-day chart, recent blocks, and a reading list.">
-  <meta name="theme-color" content="#11131f">
+
+  <title>Bitcoin &mdash; Eric Armbruster</title>
+
+  <meta name="description" content="Bitcoin price, blocks, and news — a periodically baked snapshot.">
+  <meta name="theme-color" content="#F3EEDF">
   <link rel="canonical" href="https://www.ericarmbruster.com/bitcoin.html">
   <meta property="og:title" content="Bitcoin - Eric Armbruster">
-  <meta property="og:description" content="Live spot, ninety days of close, and a reading list.">
+  <meta property="og:description" content="Bitcoin price, blocks, and news.">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://www.ericarmbruster.com/bitcoin.html">
-  <meta property="og:image" content="https://www.ericarmbruster.com/images/hector-0001.png">
-  <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="Bitcoin - Eric Armbruster">
-  <meta name="twitter:description" content="Live spot, ninety days of close, and a reading list.">
-  <meta name="twitter:image" content="https://www.ericarmbruster.com/images/hector-0001.png">
+
   <link rel="icon" href="images/hector-favicon.png" type="image/png">
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=IBM+Plex+Mono:wght@400;500;600&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=DotGothic16&family=IBM+Plex+Mono:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet">
 
-  <link rel="stylesheet" href="css/tufte-base.css">
+  <link rel="stylesheet" href="css/pixel-base.css">
 
+  <style>
+    .site-nav { margin-bottom: 32px; }
+    .site-nav a {
+      font-family: var(--font-display);
+      font-size: 16px;
+      text-decoration: none;
+    }
+    .btc-updated { font-size: 12px; margin: 4px 0 0; }
+    .btc-fallback { display: none; }
+
+    .btc-chart-panel {
+      background: var(--paper-dim);
+      border: 2px solid var(--ink);
+      box-shadow: 4px 4px 0 var(--shadow);
+      padding: 16px;
+      margin: 24px 0;
+    }
+    .btc-chart-panel svg { display: block; width: 100%; height: auto; }
+    .btc-chart-meta {
+      display: flex;
+      justify-content: space-between;
+      gap: 8px;
+      font-size: 11px;
+      margin: 8px 0 0;
+    }
+
+    .delta-up { color: var(--sunset); }
+    .delta-down { color: var(--pool); }
+
+    ul.btc-news li { padding-top: 2px; padding-bottom: 2px; }
+  </style>
+
+  <!-- Google Analytics -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-5ZTHJXDR9V"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
@@ -40,821 +71,175 @@
     gtag('js', new Date());
     gtag('config', 'G-5ZTHJXDR9V');
   </script>
-
-  <style>
-    /* ── MEMPOOL.SPACE STYLE — dark navy with blue + bitcoin orange ─── */
-    body.bitcoin-page {
-      --bg:          #11131f;
-      --bg-deep:     #0b0d16;
-      --surface:     #1d1f31;
-      --surface-2:   #252840;
-      --border:      #2c2f44;
-      --border-soft: #1f2235;
-      --btc-rule:    #34384f;
-
-      --text:        #ffffff;
-      --text-2:      #c8cad8;
-      --text-3:      #8a8da0;
-      --text-mute:   #5a5d70;
-
-      --accent:      #3399ff;
-      --accent-soft: #6cb4ff;
-      --bitcoin:     #f7931a;
-      --success:     #1ad1a3;
-      --danger:      #fc6e51;
-      --magenta:     #c64eff;
-
-      /* Override the global --focus (dark manuscript red) with a hue that
-         reads on this page's dark navy bg, so :focus-visible rings stay visible. */
-      --focus:       #6cb4ff;
-
-      background: var(--bg);
-      color: var(--text-2);
-      font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
-      font-feature-settings: "kern", "liga";
-    }
-
-    /* Wider main container — mempool dashboards are roomy. */
-    .bitcoin-page main.page {
-      max-width: 76rem;
-      padding: 32px 24px 64px;
-    }
-
-    /* Site footer — dark chrome. (Top bar uses the canonical cream masthead
-       from tufte-base.css for cross-page consistency.) */
-    .bitcoin-page .site-footer {
-      background: var(--bg-deep);
-      border-top: 1px solid var(--border);
-      color: var(--text-mute);
-    }
-    .bitcoin-page .site-footer__inner {
-      font-family: 'IBM Plex Mono', monospace;
-      font-style: normal;
-      font-size: 0.75rem;
-      color: var(--text-mute);
-    }
-
-    /* Default link color inside .bitcoin-page (accent blue, no underline). */
-    .bitcoin-page main a {
-      color: var(--accent);
-      background: none;
-      padding: 0;
-      transition: color 120ms ease;
-    }
-    .bitcoin-page main a:hover {
-      color: var(--accent-soft);
-      background: none;
-    }
-
-    /* ── MASTHEAD — small mempool-style title with brand glyph ───────── */
-    .btc-masthead {
-      display: flex;
-      align-items: baseline;
-      justify-content: space-between;
-      gap: 16px;
-      margin: 0 0 24px;
-      padding: 8px 0 16px;
-      border-bottom: 1px solid var(--border);
-    }
-    .btc-title {
-      font-family: 'Inter', sans-serif;
-      font-size: 1.5rem;
-      font-weight: 600;
-      font-style: normal;
-      color: var(--text);
-      letter-spacing: -0.01em;
-      margin: 0;
-      display: inline-flex;
-      align-items: center;
-      gap: 12px;
-    }
-    .btc-title::before {
-      content: '';
-      display: inline-block;
-      width: 12px;
-      height: 12px;
-      background: var(--bitcoin);
-      border-radius: 2px;
-      box-shadow: 0 0 8px rgba(247, 147, 26, 0.4);
-    }
-    .btc-subtitle {
-      margin: 0;
-      font-family: 'Inter', sans-serif;
-      font-style: normal;
-      font-size: 0.85rem;
-      color: var(--text-3);
-    }
-
-    /* ── PANEL HEAD — section labels ─────────────────────────────────── */
-    .btc-panel {
-      margin-bottom: 32px;
-    }
-    .btc-section-head {
-      display: flex;
-      justify-content: space-between;
-      align-items: baseline;
-      gap: 16px;
-      margin: 0 0 16px;
-      padding-bottom: 10px;
-      border-bottom: 1px solid var(--border);
-    }
-    .btc-section-head > span:first-child,
-    .btc-section-head h2 {
-      font-family: 'Inter', sans-serif;
-      font-style: normal;
-      font-size: 0.78rem;
-      font-weight: 600;
-      text-transform: uppercase;
-      letter-spacing: 0.1em;
-      color: var(--text-3);
-      margin: 0;
-      border: none;
-      padding: 0;
-    }
-    .btc-status {
-      font-family: 'IBM Plex Mono', monospace;
-      font-style: normal;
-      font-size: 0.72rem;
-      color: var(--text-mute);
-      margin: 0;
-      letter-spacing: 0.04em;
-    }
-
-    /* ── PRICE PANEL ──────────────────────────────────────────────────── */
-    .btc-spot {
-      display: flex;
-      align-items: baseline;
-      gap: 16px;
-      flex-wrap: wrap;
-      margin-bottom: 20px;
-    }
-    .btc-spot-value {
-      font-family: 'IBM Plex Mono', monospace;
-      font-size: 2.6rem;
-      font-weight: 500;
-      color: var(--text);
-      letter-spacing: -0.02em;
-      line-height: 1;
-    }
-    .btc-spot-suffix {
-      font-family: 'Inter', sans-serif;
-      font-size: 0.72rem;
-      text-transform: uppercase;
-      letter-spacing: 0.12em;
-      color: var(--text-3);
-      font-weight: 500;
-    }
-    .btc-spot-change {
-      font-family: 'IBM Plex Mono', monospace;
-      font-size: 1rem;
-      color: var(--text-2);
-      margin-left: auto;
-      padding: 4px 10px;
-      border-radius: 4px;
-      background: var(--surface);
-      border: 1px solid var(--border);
-    }
-    .btc-spot-change.is-up {
-      color: var(--success);
-      border-color: rgba(26, 209, 163, 0.35);
-      background: rgba(26, 209, 163, 0.1);
-    }
-    .btc-spot-change.is-down {
-      color: var(--danger);
-      border-color: rgba(252, 110, 81, 0.35);
-      background: rgba(252, 110, 81, 0.1);
-    }
-
-    .btc-price-grid {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap: 24px;
-      margin: 0;
-    }
-    .btc-price-grid > div { margin: 0; }
-    .btc-price-grid dt {
-      font-family: 'Inter', sans-serif;
-      font-size: 0.7rem;
-      text-transform: uppercase;
-      letter-spacing: 0.08em;
-      color: var(--text-3);
-      margin-bottom: 4px;
-      font-weight: 500;
-    }
-    .btc-price-grid dd {
-      font-family: 'IBM Plex Mono', monospace;
-      font-size: 1.2rem;
-      color: var(--text);
-      margin: 0;
-      line-height: 1.1;
-    }
-    .btc-price-grid dd.is-up   { color: var(--success); }
-    .btc-price-grid dd.is-down { color: var(--danger); }
-
-    /* ── CHART PANEL ──────────────────────────────────────────────────── */
-    .btc-chart-shell {
-      background: var(--bg-deep);
-      border: 1px solid var(--border);
-      padding: 16px;
-      border-radius: 4px;
-      margin-bottom: 16px;
-    }
-    .btc-chart-svg {
-      width: 100%;
-      height: auto;
-      display: block;
-    }
-    .btc-chart-meta {
-      display: grid;
-      grid-template-columns: repeat(4, 1fr);
-      gap: 24px;
-      margin: 0;
-    }
-    .btc-chart-meta > div { margin: 0; }
-    .btc-chart-meta dt {
-      font-family: 'Inter', sans-serif;
-      font-size: 0.7rem;
-      text-transform: uppercase;
-      letter-spacing: 0.08em;
-      color: var(--text-3);
-      margin-bottom: 4px;
-      font-weight: 500;
-    }
-    .btc-chart-meta dd {
-      font-family: 'IBM Plex Mono', monospace;
-      font-size: 1rem;
-      color: var(--text);
-      margin: 0;
-    }
-
-    /* ── BLOCKS — gradient tiles like mempool.space ───────────────────── */
-    .btc-block-list {
-      display: flex;
-      gap: 10px;
-      flex-wrap: wrap;
-      list-style: none;
-      padding: 0;
-      margin: 0;
-    }
-    .btc-block {
-      list-style: none;
-      width: 110px;
-      height: 110px;
-      flex: 0 0 auto;
-    }
-    .btc-block a {
-      display: flex;
-      flex-direction: column;
-      justify-content: space-between;
-      width: 100%;
-      height: 100%;
-      padding: 14px;
-      text-decoration: none;
-      color: var(--text);
-      background:
-        linear-gradient(135deg, #5a4ba8 0%, #3a2e7a 60%, #1d1738 100%);
-      border-radius: 4px;
-      box-shadow:
-        inset 0 1px 0 rgba(255, 255, 255, 0.16),
-        inset 0 0 0 1px rgba(255, 255, 255, 0.04),
-        0 4px 10px rgba(0, 0, 0, 0.4);
-      transition: transform 140ms ease, box-shadow 140ms ease;
-      position: relative;
-      overflow: hidden;
-    }
-    .btc-block a:hover {
-      transform: translateY(-3px);
-      box-shadow:
-        inset 0 1px 0 rgba(255, 255, 255, 0.2),
-        inset 0 0 0 1px rgba(255, 255, 255, 0.08),
-        0 8px 16px rgba(0, 0, 0, 0.5);
-      color: var(--text);
-    }
-    /* Fee-band stripe at top of each tile (mempool's "fee tier" tell). */
-    .btc-block a::before {
-      content: '';
-      position: absolute;
-      top: 0;
-      left: 0;
-      right: 0;
-      height: 3px;
-      background: linear-gradient(90deg, var(--bitcoin) 0%, #ffba5a 50%, var(--bitcoin) 100%);
-      box-shadow: 0 0 6px rgba(247, 147, 26, 0.5);
-    }
-    .btc-block-height {
-      font-family: 'IBM Plex Mono', monospace;
-      font-size: 1rem;
-      font-weight: 600;
-      color: #ffffff;
-      letter-spacing: 0.02em;
-      margin-top: 4px;
-      text-shadow: 0 0 8px rgba(255, 255, 255, 0.15);
-    }
-    .btc-block-time {
-      font-family: 'IBM Plex Mono', monospace;
-      font-size: 0.78rem;
-      color: var(--accent-soft);
-      letter-spacing: 0.04em;
-    }
-    .btc-fallback {
-      font-family: 'IBM Plex Mono', monospace;
-      font-size: 0.85rem;
-      color: var(--text-mute);
-      list-style: none;
-      padding: 16px 0;
-    }
-
-    /* ── NEWS LIST ───────────────────────────────────────────────────── */
-    .btc-list {
-      list-style: none;
-      padding: 0;
-      margin: 0;
-    }
-    .btc-list li {
-      padding: 12px 0;
-      border-bottom: 1px solid var(--border-soft);
-      margin: 0;
-    }
-    .btc-list li:last-child { border-bottom: none; }
-    .btc-list a {
-      display: block;
-      color: var(--text);
-      font-family: 'Inter', sans-serif;
-      font-size: 0.95rem;
-      font-weight: 500;
-      line-height: 1.4;
-      background: none;
-      padding: 0;
-    }
-    .btc-list a:hover { color: var(--accent); background: none; }
-    .btc-list span {
-      display: block;
-      margin-top: 4px;
-      font-family: 'IBM Plex Mono', monospace;
-      font-size: 0.7rem;
-      color: var(--text-mute);
-      letter-spacing: 0.04em;
-    }
-
-    /* ── BUTTONS ────────────────────────────────────────────────────── */
-    .btc-button {
-      display: inline-block;
-      padding: 8px 16px;
-      font-family: 'Inter', sans-serif;
-      font-size: 0.85rem;
-      font-weight: 500;
-      color: var(--text);
-      background: var(--surface);
-      border: 1px solid var(--border);
-      border-radius: 4px;
-      transition: background 120ms ease, border-color 120ms ease, color 120ms ease;
-      margin-top: 16px;
-    }
-    .btc-button:hover {
-      background: var(--surface-2);
-      border-color: var(--accent);
-      color: var(--accent);
-    }
-
-    /* ── NOTES (data source attribution) ─────────────────────────────── */
-    .btc-note {
-      font-family: 'IBM Plex Mono', monospace;
-      font-size: 0.72rem;
-      color: var(--text-mute);
-      margin-top: 12px;
-      letter-spacing: 0.02em;
-    }
-
-    /* ── READING LIST ─────────────────────────────────────────────────── */
-    .btc-reading-columns {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap: 28px;
-    }
-    .btc-reading-columns h3 {
-      font-family: 'Inter', sans-serif;
-      font-size: 0.72rem;
-      font-weight: 600;
-      text-transform: uppercase;
-      letter-spacing: 0.1em;
-      color: var(--bitcoin);
-      margin: 0 0 12px;
-      padding-bottom: 8px;
-      border-bottom: 1px solid var(--border);
-    }
-    .btc-reading-columns ul { list-style: none; padding: 0; margin: 0; }
-    .btc-reading-columns li {
-      margin: 0 0 12px;
-      font-family: 'Inter', sans-serif;
-      font-size: 0.9rem;
-      line-height: 1.4;
-    }
-    .btc-reading-columns a { color: var(--text-2); }
-    .btc-reading-columns a:hover { color: var(--accent); }
-
-    /* ── RESPONSIVE ──────────────────────────────────────────────────── */
-    @media (max-width: 880px) {
-      .btc-masthead { flex-direction: column; align-items: flex-start; gap: 4px; }
-      .btc-spot-value { font-size: 2rem; }
-      .btc-spot-change { margin-left: 0; }
-      .btc-price-grid { grid-template-columns: repeat(3, 1fr); gap: 16px; }
-      .btc-chart-meta { grid-template-columns: repeat(4, 1fr); gap: 12px; }
-      .btc-reading-columns { grid-template-columns: 1fr; gap: 20px; }
-    }
-    @media (max-width: 540px) {
-      .btc-block { width: 96px; height: 96px; }
-      .btc-price-grid { grid-template-columns: repeat(2, 1fr); }
-      .btc-chart-meta { grid-template-columns: repeat(2, 1fr); }
-      .btc-section-head { flex-direction: column; align-items: flex-start; gap: 4px; }
-    }
-  </style>
 </head>
+<body>
 
-<body class="bitcoin-page">
+  <nav class="site-nav">
+    <a href="index.html">&larr; Eric Armbruster</a>
+  </nav>
 
-  <a class="skip-link" href="#main">Skip to main content</a>
-
-  <header class="site-header">
-    <div class="site-header__inner">
-      <a class="brand" href="index.html">Eric Armbruster</a>
-      <div class="site-utility">
-        <a class="site-utility__icon" href="about.html" aria-label="About"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"><circle cx="12" cy="8" r="4"/><path d="M4 21c0-4.4 3.6-8 8-8s8 3.6 8 8"/></svg></a>
-        <a class="site-utility__icon" href="projects.html" aria-label="Projects"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M9 7l-5 5 5 5"/><path d="M15 7l5 5-5 5"/></svg></a>
-        <a class="site-utility__icon" href="mailto:eric.m.armbruster@gmail.com" aria-label="Contact"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="1.5"/><path d="M3 7l9 7 9-7"/></svg></a>
-      </div>
-      <div class="site-header__nav">
-        <nav class="site-shelf" aria-label="Sections">
-          <a class="site-shelf__book" href="video-games.html" style="--book-color: var(--c-vg);" aria-label="Video games"></a>
-          <a class="site-shelf__book" href="film.html" style="--book-color: var(--c-film);" aria-label="Film"></a>
-          <a class="site-shelf__book" href="economics.html" style="--book-color: var(--c-econ);" aria-label="Economics"></a>
-          <a class="site-shelf__book" href="self-hosting.html" style="--book-color: var(--c-sh);" aria-label="Self-hosting"></a>
-          <a class="site-shelf__book" href="bitcoin.html" style="--book-color: var(--c-bitcoin);" aria-label="Bitcoin" aria-current="page"></a>
-          <a class="site-shelf__book" href="seymour.html" style="--book-color: var(--c-seymour);" aria-label="Seymour"></a>
-        </nav>
-      </div>
-    </div>
+  <header class="masthead">
+    <svg class="px-art" width="256" height="144" viewBox="0 0 32 18" shape-rendering="crispEdges" aria-hidden="true">
+      <rect x="14" y="4" width="4" height="1" fill="#E8743B"/>
+      <rect x="13" y="5" width="2" height="1" fill="#E8743B"/>
+      <rect x="15" y="5" width="2" height="1" fill="#1A1A18"/>
+      <rect x="17" y="5" width="2" height="1" fill="#E8743B"/>
+      <rect x="12" y="6" width="2" height="1" fill="#E8743B"/>
+      <rect x="14" y="6" width="1" height="1" fill="#1A1A18"/>
+      <rect x="15" y="6" width="2" height="1" fill="#E8743B"/>
+      <rect x="17" y="6" width="1" height="1" fill="#1A1A18"/>
+      <rect x="18" y="6" width="2" height="1" fill="#E8743B"/>
+      <rect x="12" y="7" width="2" height="1" fill="#E8743B"/>
+      <rect x="14" y="7" width="3" height="1" fill="#1A1A18"/>
+      <rect x="17" y="7" width="3" height="1" fill="#E8743B"/>
+      <rect x="12" y="8" width="2" height="1" fill="#E8743B"/>
+      <rect x="14" y="8" width="1" height="1" fill="#1A1A18"/>
+      <rect x="15" y="8" width="2" height="1" fill="#E8743B"/>
+      <rect x="17" y="8" width="1" height="1" fill="#1A1A18"/>
+      <rect x="18" y="8" width="2" height="1" fill="#E8743B"/>
+      <rect x="13" y="9" width="2" height="1" fill="#E8743B"/>
+      <rect x="15" y="9" width="2" height="1" fill="#1A1A18"/>
+      <rect x="17" y="9" width="2" height="1" fill="#E8743B"/>
+      <rect x="0" y="10" width="32" height="1" fill="#2E6FBF"/>
+      <rect x="2" y="12" width="2" height="1" fill="#2E6FBF"/>
+      <rect x="9" y="12" width="2" height="1" fill="#2E6FBF"/>
+      <rect x="14" y="12" width="2" height="1" fill="#E8743B"/>
+      <rect x="22" y="12" width="2" height="1" fill="#2E6FBF"/>
+      <rect x="5" y="14" width="2" height="1" fill="#2E6FBF"/>
+      <rect x="13" y="14" width="4" height="1" fill="#E8743B"/>
+      <rect x="24" y="14" width="2" height="1" fill="#2E6FBF"/>
+      <rect x="10" y="16" width="2" height="1" fill="#2E6FBF"/>
+      <rect x="14" y="16" width="2" height="1" fill="#E8743B"/>
+      <rect x="20" y="16" width="2" height="1" fill="#2E6FBF"/>
+    </svg>
+    <h1>Bitcoin</h1>
+    <p class="btc-updated" id="btc-updated"></p>
   </header>
 
-  <main id="main" class="page">
+  <hr class="px-wave">
 
-    <header class="btc-masthead">
-      <h1 class="btc-title">Bitcoin</h1>
-      <p class="btc-subtitle">Live spot, 90-day chart, recent blocks.</p>
-    </header>
+  <main id="main">
 
-    <!-- RECENT BLOCKS — visual tiles, the centerpiece -->
-    <section class="btc-panel">
-      <header class="btc-section-head">
-        <span>Recent blocks</span>
-        <span id="btc-block-status" class="btc-status" role="status">Loading latest blocks&hellip;</span>
-      </header>
-      <ul id="btc-block-list" class="btc-block-list"></ul>
-      <a class="btc-button" href="https://mempool.space/blocks" target="_blank" rel="noopener">Open block explorer</a>
-      <p class="btc-note">Source: <a href="https://mempool.space/api" target="_blank" rel="noopener">mempool.space</a>.</p>
-    </section>
+    <p class="btc-fallback" id="btc-fallback"></p>
 
-    <!-- PRICE -->
-    <section class="btc-panel">
-      <header class="btc-section-head">
-        <span>Price</span>
-        <span id="btc-price-status" class="btc-status" role="status">Loading market data&hellip;</span>
-      </header>
-      <div class="btc-spot">
-        <span id="btc-price-value" class="btc-spot-value">$&mdash;</span>
-        <span class="btc-spot-suffix">USD</span>
-        <span id="btc-change-24h" class="btc-spot-change">&mdash;</span>
-      </div>
-      <dl class="btc-price-grid">
-        <div><dt>7D Move</dt>    <dd id="btc-change-7d">&mdash;</dd></div>
-        <div><dt>30D Move</dt>   <dd id="btc-change-30d">&mdash;</dd></div>
-        <div><dt>Last sync</dt>  <dd id="btc-last-sync">&mdash;</dd></div>
-      </dl>
-    </section>
+    <div class="px-stats" id="btc-stats"></div>
 
-    <!-- 90-DAY CHART -->
-    <section class="btc-panel">
-      <header class="btc-section-head">
-        <span>Performance</span>
-        <span class="btc-status">Last 90 days</span>
-      </header>
-      <div class="btc-chart-shell">
-        <svg id="btc-chart-svg" class="btc-chart-svg" viewBox="0 0 720 280" role="img" aria-label="Bitcoin 90 day price chart">
-          <defs>
-            <linearGradient id="btc-area-grad" x1="0" x2="0" y1="0" y2="1">
-              <stop offset="0%" stop-color="rgba(247, 147, 26, 0.40)"></stop>
-              <stop offset="100%" stop-color="rgba(247, 147, 26, 0.02)"></stop>
-            </linearGradient>
-          </defs>
-          <path id="btc-chart-area" fill="url(#btc-area-grad)" d=""></path>
-          <path id="btc-chart-line" fill="none" stroke="#f7931a" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d=""></path>
-        </svg>
-      </div>
-      <dl class="btc-chart-meta">
-        <div><dt>Start</dt> <dd id="btc-chart-start">$&mdash;</dd></div>
-        <div><dt>End</dt>   <dd id="btc-chart-end">$&mdash;</dd></div>
-        <div><dt>High</dt>  <dd id="btc-chart-high">$&mdash;</dd></div>
-        <div><dt>Low</dt>   <dd id="btc-chart-low">$&mdash;</dd></div>
-      </dl>
-      <p class="btc-note">Source: <a href="https://www.coingecko.com/" target="_blank" rel="noopener">CoinGecko</a>.</p>
-    </section>
+    <h2>Last 90 days</h2>
+    <div class="btc-chart-panel">
+      <svg id="btc-chart" viewBox="0 0 360 100" preserveAspectRatio="none" role="img" aria-label="Bitcoin price, last 90 days"></svg>
+      <p class="btc-chart-meta"><span id="btc-chart-start"></span><span id="btc-chart-range"></span><span id="btc-chart-end"></span></p>
+    </div>
 
-    <!-- NEWS -->
-    <section class="btc-panel">
-      <header class="btc-section-head">
-        <span>News</span>
-        <span id="btc-news-status" class="btc-status" role="status">Loading headlines&hellip;</span>
-      </header>
-      <ul id="btc-news-list" class="btc-list"></ul>
-      <p class="btc-note">Source: <a href="https://www.coindesk.com/" target="_blank" rel="noopener">CoinDesk</a>.</p>
-    </section>
+    <hr class="px-wave">
 
-    <!-- READING LIST -->
-    <section class="btc-panel">
-      <header class="btc-section-head"><span>Recommended reading</span></header>
-      <div class="btc-reading-columns">
-        <section>
-          <h3>Educational</h3>
-          <ul>
-            <li><a href="https://bitcoin.org/bitcoin.pdf" target="_blank" rel="noopener">Bitcoin: A Peer-to-Peer Electronic Cash System</a></li>
-            <li><a href="https://saifedean.com/thebitcoinstandard/" target="_blank" rel="noopener">The Bitcoin Standard &mdash; Saifedean Ammous</a></li>
-            <li><a href="https://www.amazon.com/Layered-Money-Everything-Between-Central/dp/1736110527" target="_blank" rel="noopener">Layered Money &mdash; Nik Bhatia</a></li>
-            <li><a href="https://www.amazon.com/Internet-Money-Andreas-M-Antonopoulos/dp/1537000454" target="_blank" rel="noopener">The Internet of Money &mdash; Andreas Antonopoulos</a></li>
-            <li><a href="https://www.amazon.com/Broken-Money-Financial-System-Failing/dp/B0CG83FZTT" target="_blank" rel="noopener">Broken Money &mdash; Lyn Alden</a></li>
-          </ul>
-        </section>
-        <section>
-          <h3>Technical</h3>
-          <ul>
-            <li><a href="https://github.com/bitcoinbook/bitcoinbook" target="_blank" rel="noopener">Mastering Bitcoin &mdash; Andreas Antonopoulos</a></li>
-            <li><a href="https://github.com/jimmysong/programmingbitcoin" target="_blank" rel="noopener">Programming Bitcoin &mdash; Jimmy Song</a></li>
-            <li><a href="https://learnmeabitcoin.com/" target="_blank" rel="noopener">Learn Me A Bitcoin</a></li>
-            <li><a href="https://www.amazon.com/Grokking-Bitcoin-Kalle-Rosenbaum/dp/1617294640" target="_blank" rel="noopener">Grokking Bitcoin &mdash; Kalle Rosenbaum</a></li>
-            <li><a href="https://github.com/BlockchainCommons/Learning-Bitcoin-from-the-Command-Line" target="_blank" rel="noopener">Learning Bitcoin from the Command Line</a></li>
-          </ul>
-        </section>
-        <section>
-          <h3>Culture &amp; history</h3>
-          <ul>
-            <li><a href="https://www.amazon.com/Blocksize-War-controls-Bitcoins-protocol/dp/B08YQMC2WM" target="_blank" rel="noopener">The Blocksize War &mdash; Jonathan Bier</a></li>
-            <li><a href="https://www.amazon.com/Digital-Gold-Bitcoin-Millionaires-Reinvent/dp/006236250X" target="_blank" rel="noopener">Digital Gold &mdash; Nathaniel Popper</a></li>
-            <li><a href="https://www.amazon.com/Book-Satoshi-Collected-Writings-Nakamoto/dp/0996061312" target="_blank" rel="noopener">The Book of Satoshi &mdash; Phil Champagne</a></li>
-            <li><a href="https://www.amazon.com/Genesis-Book-Story-Bitcoin-Before/dp/B0D2V3YC73" target="_blank" rel="noopener">The Genesis Book &mdash; Aaron van Wirdum</a></li>
-            <li><a href="https://www.amazon.com/Bitcoin-Venice-Allen-Farrington/dp/B09KRFLX1Y" target="_blank" rel="noopener">Bitcoin is Venice &mdash; Allen Farrington</a></li>
-          </ul>
-        </section>
-      </div>
-    </section>
+    <h2>Recent blocks</h2>
+    <table class="px-table">
+      <thead>
+        <tr><th>Height</th><th class="num">Transactions</th><th class="num">Mined</th></tr>
+      </thead>
+      <tbody id="btc-blocks"></tbody>
+    </table>
+
+    <h2>News</h2>
+    <ul class="px-bullets btc-news" id="btc-news"></ul>
 
   </main>
 
-  <footer class="site-footer">
-    <div class="site-footer__inner">
-      <span>&copy; 2026 Eric Armbruster</span>
-      <div class="footer-links">
-        <a href="mailto:eric.m.armbruster@gmail.com">email</a>
-        <a href="https://github.com/tenderbrew" target="_blank" rel="noopener">github</a>
-        <a href="https://www.linkedin.com/in/ericmarmbruster/" target="_blank" rel="noopener">linkedin</a>
-      </div>
-    </div>
+  <footer>
+    <p>&copy; 2026 Eric Armbruster</p>
   </footer>
 
-  <!--
-    Bitcoin data — reads the cron-built btc-data.json (btc-fetch.js) at load.
-    No third-party APIs or CORS proxies run in the browser.
-    Targets: #btc-price-*, #btc-chart-* (incl. SVG paths), #btc-block-*,
-    #btc-news-*.
-  -->
   <script>
     (function () {
-      var priceStatus = document.getElementById('btc-price-status');
-      var priceValue = document.getElementById('btc-price-value');
-      var change24 = document.getElementById('btc-change-24h');
-      var change7 = document.getElementById('btc-change-7d');
-      var change30 = document.getElementById('btc-change-30d');
-      var lastSync = document.getElementById('btc-last-sync');
-
-      var chartStart = document.getElementById('btc-chart-start');
-      var chartEnd = document.getElementById('btc-chart-end');
-      var chartHigh = document.getElementById('btc-chart-high');
-      var chartLow = document.getElementById('btc-chart-low');
-      var chartLine = document.getElementById('btc-chart-line');
-      var chartArea = document.getElementById('btc-chart-area');
-
-      var blockStatus = document.getElementById('btc-block-status');
-      var blockList = document.getElementById('btc-block-list');
-
-      var newsStatus = document.getElementById('btc-news-status');
-      var newsList = document.getElementById('btc-news-list');
-
-      var dataUrl = 'btc-data.json';
-
-      function formatCurrency(value) {
-        if (!Number.isFinite(value)) return '$--';
-        return new Intl.NumberFormat('en-US', { style: 'currency', currency: 'USD', maximumFractionDigits: 0 }).format(value);
-      }
-      function formatPercent(value) {
-        if (!Number.isFinite(value)) return '--';
-        var sign = value > 0 ? '+' : '';
-        return sign + value.toFixed(2) + '%';
-      }
-      function formatDateTime(value) {
-        var date = new Date(value);
-        if (Number.isNaN(date.getTime())) return 'Unknown';
-        return new Intl.DateTimeFormat('en-US', { month: 'short', day: 'numeric', year: 'numeric', hour: 'numeric', minute: '2-digit' }).format(date);
-      }
-      function formatRelativeSeconds(epochSeconds) {
-        var diff = Math.max(0, Math.round(Date.now() / 1000 - epochSeconds));
-        if (diff < 60) return diff + 's ago';
-        if (diff < 3600) return Math.round(diff / 60) + 'm ago';
-        if (diff < 86400) return Math.round(diff / 3600) + 'h ago';
-        return Math.round(diff / 86400) + 'd ago';
-      }
-      function setSignedClass(node, value) {
-        if (!node) return;
-        node.classList.remove('is-up', 'is-down');
-        if (!Number.isFinite(value)) return;
-        if (value > 0) node.classList.add('is-up');
-        if (value < 0) node.classList.add('is-down');
+      function el(tag, className, text) {
+        var node = document.createElement(tag);
+        if (className) node.className = className;
+        if (text !== undefined) node.textContent = text;
+        return node;
       }
 
-      async function fetchJsonWithTimeout(url, timeoutMs) {
-        if (typeof AbortController !== 'function') {
-          var responseNoAbort = await fetch(url, { cache: 'no-store' });
-          if (!responseNoAbort.ok) throw new Error('HTTP ' + responseNoAbort.status);
-          return responseNoAbort.json();
-        }
-        var controller = new AbortController();
-        var timer = setTimeout(function () { controller.abort(); }, timeoutMs || 8000);
-        try {
-          var response = await fetch(url, { cache: 'no-store', signal: controller.signal });
-          if (!response.ok) throw new Error('HTTP ' + response.status);
-          return response.json();
-        } finally {
-          clearTimeout(timer);
-        }
+      function pct(v) {
+        var s = (v >= 0 ? '+' : '') + v.toFixed(1) + '%';
+        return s;
       }
 
-      function renderChart(points) {
-        if (!Array.isArray(points) || points.length < 2) {
-          chartLine.setAttribute('d', '');
-          chartArea.setAttribute('d', '');
-          chartStart.textContent = '$--';
-          chartEnd.textContent = '$--';
-          chartHigh.textContent = '$--';
-          chartLow.textContent = '$--';
-          return;
-        }
-        var width = 720;
-        var height = 280;
-        var padX = 28;
-        var padY = 24;
-        var plotWidth = width - (padX * 2);
-        var plotHeight = height - (padY * 2);
-        var prices = points.map(function (p) { return p.price; });
-        var min = Math.min.apply(null, prices);
-        var max = Math.max.apply(null, prices);
-        if (max === min) max += 1;
-        var coords = points.map(function (point, index) {
-          var x = padX + ((plotWidth * index) / (points.length - 1));
-          var y = padY + ((max - point.price) / (max - min)) * plotHeight;
-          return [x, y];
-        });
-        var linePath = coords.map(function (c, i) { return (i === 0 ? 'M ' : ' L ') + c[0].toFixed(2) + ' ' + c[1].toFixed(2); }).join('');
-        var first = coords[0];
-        var last = coords[coords.length - 1];
-        var baseline = height - padY;
-        var areaPath = linePath + ' L ' + last[0].toFixed(2) + ' ' + baseline.toFixed(2) + ' L ' + first[0].toFixed(2) + ' ' + baseline.toFixed(2) + ' Z';
-        chartLine.setAttribute('d', linePath);
-        chartArea.setAttribute('d', areaPath);
-        chartStart.textContent = formatCurrency(points[0].price);
-        chartEnd.textContent = formatCurrency(points[points.length - 1].price);
-        chartHigh.textContent = formatCurrency(max);
-        chartLow.textContent = formatCurrency(min);
+      function fail() {
+        var p = document.getElementById('btc-fallback');
+        p.textContent = 'Data feed unavailable. The snapshot could not be loaded.';
+        p.style.display = 'block';
       }
 
-      function renderNews(items) {
-        newsList.innerHTML = '';
-        if (!items.length) {
-          newsList.innerHTML = '<li class="btc-fallback">No bitcoin headlines available right now.</li>';
-          return;
-        }
-        items.slice(0, 20).forEach(function (item) {
-          var li = document.createElement('li');
-          var a = document.createElement('a');
-          a.href = item.url || '#';
-          a.target = '_blank';
-          a.rel = 'noopener';
-          a.textContent = item.title || 'Untitled headline';
-          var meta = document.createElement('span');
-          var source = item.source || 'News source';
-          var published = Number(item.publishedOn || item.published_on || 0);
-          meta.textContent = published > 0 ? source + ' · ' + formatDateTime(published * 1000) : source;
-          li.appendChild(a);
-          li.appendChild(meta);
-          newsList.appendChild(li);
-        });
-      }
+      fetch('btc-data.json')
+        .then(function (r) { if (!r.ok) throw new Error(r.status); return r.json(); })
+        .then(function (data) {
+          document.getElementById('btc-updated').textContent =
+            'A baked snapshot — no live APIs. Updated ' +
+            new Date(data.fetchedAt).toLocaleString('en-US', { month: 'long', day: 'numeric', year: 'numeric', hour: 'numeric', minute: '2-digit' }) + '.';
 
-      // Mempool-style block tile: gradient rectangle with height + relative time.
-      function renderBlocks(blocks) {
-        blockList.innerHTML = '';
-        if (!blocks.length) {
-          blockList.innerHTML = '<li class="btc-fallback">No block data available.</li>';
-          return;
-        }
-        blocks.slice(0, 8).forEach(function (block) {
-          var li = document.createElement('li');
-          li.className = 'btc-block';
-          var link = document.createElement('a');
-          link.href = 'https://mempool.space/block/' + encodeURIComponent(block.id || '');
-          link.target = '_blank';
-          link.rel = 'noopener';
-          link.title = 'Block #' + String(block.height || '--');
+          var stats = document.getElementById('btc-stats');
+          var priceTile = el('div', 'px-stat');
+          priceTile.appendChild(el('div', 'value', '$' + Math.round(data.price.usd).toLocaleString()));
+          priceTile.appendChild(el('div', 'label', 'price (USD)'));
+          stats.appendChild(priceTile);
+          [['d1', '24 hours'], ['d7', '7 days'], ['d30', '30 days']].forEach(function (pair) {
+            var v = data.moves[pair[0]];
+            if (v === undefined || v === null) return;
+            var tile = el('div', 'px-stat');
+            tile.appendChild(el('div', 'value ' + (v >= 0 ? 'delta-up' : 'delta-down'), pct(v)));
+            tile.appendChild(el('div', 'label', pair[1]));
+            stats.appendChild(tile);
+          });
 
-          var height = document.createElement('div');
-          height.className = 'btc-block-height';
-          height.textContent = String(block.height || '--');
+          // 90d polyline: 2px pool stroke on the dim panel, no fill.
+          var svg = document.getElementById('btc-chart');
+          var pts = data.history90d;
+          var min = Infinity, max = -Infinity;
+          pts.forEach(function (p) {
+            if (p.close < min) min = p.close;
+            if (p.close > max) max = p.close;
+          });
+          var pad = (max - min) * 0.08 || 1;
+          var lo = min - pad, hi = max + pad;
+          var coords = pts.map(function (p, i) {
+            var x = (i / (pts.length - 1)) * 356 + 2;
+            var y = 98 - ((p.close - lo) / (hi - lo)) * 96;
+            return x.toFixed(1) + ',' + y.toFixed(1);
+          });
+          var line = document.createElementNS('http://www.w3.org/2000/svg', 'polyline');
+          line.setAttribute('points', coords.join(' '));
+          line.setAttribute('fill', 'none');
+          line.setAttribute('stroke', '#2E6FBF');
+          line.setAttribute('stroke-width', '2');
+          svg.appendChild(line);
+          document.getElementById('btc-chart-start').textContent = pts[0].date;
+          document.getElementById('btc-chart-end').textContent = pts[pts.length - 1].date;
+          document.getElementById('btc-chart-range').textContent =
+            'low $' + Math.round(min).toLocaleString() + ' · high $' + Math.round(max).toLocaleString();
 
-          var time = document.createElement('div');
-          time.className = 'btc-block-time';
-          var ts = Number(block.timestamp || 0);
-          time.textContent = ts > 0 ? formatRelativeSeconds(ts) : '—';
+          var blocks = document.getElementById('btc-blocks');
+          data.blocks.forEach(function (b) {
+            var tr = el('tr');
+            tr.appendChild(el('td', null, String(b.height)));
+            tr.appendChild(el('td', 'num', b.txCount.toLocaleString()));
+            tr.appendChild(el('td', 'num', new Date(b.timestamp * 1000).toLocaleTimeString('en-US', { hour: 'numeric', minute: '2-digit' })));
+            blocks.appendChild(tr);
+          });
 
-          link.appendChild(height);
-          link.appendChild(time);
-          li.appendChild(link);
-          blockList.appendChild(li);
-        });
-      }
+          var news = document.getElementById('btc-news');
+          data.news.forEach(function (n) {
+            var li = el('li');
+            var a = el('a', null, n.title);
+            a.href = n.link;
+            a.target = '_blank';
+            a.rel = 'noopener';
+            li.appendChild(a);
+            news.appendChild(li);
+          });
 
-      function showError(message) {
-        priceStatus.textContent = message;
-        priceValue.textContent = '$--';
-        change24.textContent = '--';
-        change7.textContent = '--';
-        change30.textContent = '--';
-        setSignedClass(change24, null);
-        setSignedClass(change7, null);
-        setSignedClass(change30, null);
-        lastSync.textContent = 'Unavailable';
-        renderChart([]);
-        blockStatus.textContent = message;
-        renderBlocks([]);
-        newsStatus.textContent = message;
-        renderNews([]);
-      }
-
-      // Single same-origin read of the cron-built snapshot (btc-fetch.js).
-      // No third-party APIs or CORS proxies at page load.
-      async function loadData() {
-        var data;
-        try {
-          data = await fetchJsonWithTimeout(dataUrl, 8000);
-        } catch (error) {
-          showError('Data feed unavailable right now.');
-          return;
-        }
-
-        // Price + precomputed 24h / 7d / 30d moves.
-        var price = data.price ? Number(data.price.usd) : NaN;
-        var moves = data.moves || {};
-        priceValue.textContent = formatCurrency(price);
-        change24.textContent = formatPercent(Number(moves.d1));
-        change7.textContent = formatPercent(Number(moves.d7));
-        change30.textContent = formatPercent(Number(moves.d30));
-        setSignedClass(change24, Number(moves.d1));
-        setSignedClass(change7, Number(moves.d7));
-        setSignedClass(change30, Number(moves.d30));
-        lastSync.textContent = data.fetchedAt ? formatDateTime(data.fetchedAt) : 'Unknown';
-        priceStatus.textContent = 'Latest snapshot from the data feed.';
-
-        // 90-day history -> chart (renderChart reads point.price).
-        var history = Array.isArray(data.history90d) ? data.history90d.map(function (d) {
-          return { price: Number(d.close) };
-        }).filter(function (p) { return Number.isFinite(p.price) && p.price > 0; }) : [];
-        renderChart(history);
-
-        // Recent blocks.
-        var blocks = Array.isArray(data.blocks) ? data.blocks : [];
-        renderBlocks(blocks);
-        blockStatus.textContent = blocks.length ? 'Recent blocks via mempool.space.' : 'No block data available.';
-
-        // Headlines — baked shape { title, link, pubDate }.
-        var news = Array.isArray(data.news) ? data.news.map(function (n) {
-          return {
-            title: n.title,
-            url: n.link,
-            source: 'CoinDesk',
-            publishedOn: n.pubDate ? Math.floor(new Date(n.pubDate).getTime() / 1000) : 0
-          };
-        }) : [];
-        renderNews(news);
-        newsStatus.textContent = news.length ? 'Headlines from CoinDesk.' : 'No headlines available.';
-      }
-
-      loadData();
+          document.getElementById('main').setAttribute('data-hydrated', 'btc');
+        })
+        .catch(fail);
     })();
   </script>
-
 </body>
 </html>

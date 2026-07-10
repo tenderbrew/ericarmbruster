@@ -1,0 +1,285 @@
+<!--
+  family-tree.html — Family tree (v3 retro/pixel system)
+  --------------------------------------------------------
+  A presentable distillation of the ancestry research in
+  Documents/ancestry (tree.md is the source of truth; every entry here is
+  [CONFIRMED] there). Privacy rule: deceased ancestors only — living
+  relatives appear as "(living)" without names. Update by hand as the
+  research confirms new generations.
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Family tree &mdash; Eric Armbruster</title>
+
+  <meta name="description" content="The Armbruster family tree: Baden, Switzerland, Ireland, and Pennsylvania coal country.">
+  <meta name="theme-color" content="#F3EEDF">
+  <link rel="canonical" href="https://www.ericarmbruster.com/family-tree.html">
+  <meta property="og:title" content="Family tree - Eric Armbruster">
+  <meta property="og:description" content="The Armbruster family tree: Baden, Switzerland, Ireland, and Pennsylvania coal country.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://www.ericarmbruster.com/family-tree.html">
+
+  <link rel="icon" href="images/hector-favicon.png" type="image/png">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DotGothic16&family=IBM+Plex+Mono:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/pixel-base.css">
+
+  <style>
+    .site-nav { margin-bottom: 32px; }
+    .site-nav a {
+      font-family: var(--font-display);
+      font-size: 16px;
+      text-decoration: none;
+    }
+
+    .ft-gen { margin: 32px 0; }
+    .ft-gen > h2 { margin-bottom: 4px; }
+    .ft-gen > .ft-gen-note { font-size: 12px; margin: 0 0 16px; }
+
+    .ft-couples { display: grid; gap: 16px; }
+    .ft-couple {
+      background: var(--paper-dim);
+      border: 2px solid var(--ink);
+      box-shadow: 4px 4px 0 var(--shadow);
+      padding: 14px 18px;
+    }
+    .ft-couple .line {
+      font-family: var(--font-display);
+      font-size: 16px;
+      color: var(--pool);
+    }
+    .ft-person { margin: 6px 0 0; }
+    .ft-person .name { font-weight: 500; }
+    .ft-person .dates { color: var(--sunset); }
+    .ft-person .note { display: block; font-size: 13px; }
+
+    .ft-origins { display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 20px; margin: 24px 0; }
+  </style>
+
+  <!-- Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-5ZTHJXDR9V"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-5ZTHJXDR9V');
+  </script>
+</head>
+<body>
+
+  <nav class="site-nav">
+    <a href="index.html">&larr; Eric Armbruster</a>
+  </nav>
+
+  <header class="masthead">
+    <svg class="px-art" width="256" height="144" viewBox="0 0 32 18" shape-rendering="crispEdges" aria-hidden="true">
+      <rect x="9" y="2" width="1" height="1" fill="#E8743B"/>
+      <rect x="22" y="2" width="1" height="1" fill="#E8743B"/>
+      <rect x="10" y="3" width="2" height="1" fill="#1A1A18"/>
+      <rect x="19" y="3" width="4" height="1" fill="#1A1A18"/>
+      <rect x="11" y="4" width="2" height="1" fill="#1A1A18"/>
+      <rect x="18" y="4" width="2" height="1" fill="#1A1A18"/>
+      <rect x="4" y="5" width="2" height="1" fill="#1A1A18"/>
+      <rect x="12" y="5" width="2" height="1" fill="#1A1A18"/>
+      <rect x="17" y="5" width="2" height="1" fill="#1A1A18"/>
+      <rect x="24" y="5" width="2" height="1" fill="#1A1A18"/>
+      <rect x="5" y="6" width="2" height="1" fill="#1A1A18"/>
+      <rect x="13" y="6" width="2" height="1" fill="#1A1A18"/>
+      <rect x="16" y="6" width="2" height="1" fill="#1A1A18"/>
+      <rect x="23" y="6" width="2" height="1" fill="#1A1A18"/>
+      <rect x="6" y="7" width="4" height="1" fill="#1A1A18"/>
+      <rect x="13" y="7" width="5" height="1" fill="#1A1A18"/>
+      <rect x="20" y="7" width="4" height="1" fill="#1A1A18"/>
+      <rect x="9" y="8" width="12" height="1" fill="#1A1A18"/>
+      <rect x="14" y="9" width="3" height="1" fill="#1A1A18"/>
+      <rect x="14" y="10" width="3" height="1" fill="#1A1A18"/>
+      <rect x="14" y="11" width="3" height="1" fill="#1A1A18"/>
+      <rect x="14" y="12" width="3" height="1" fill="#1A1A18"/>
+      <rect x="3" y="13" width="25" height="1" fill="#2E6FBF"/>
+      <rect x="12" y="14" width="2" height="1" fill="#2E6FBF"/>
+      <rect x="15" y="14" width="2" height="1" fill="#2E6FBF"/>
+      <rect x="18" y="14" width="2" height="1" fill="#2E6FBF"/>
+      <rect x="10" y="15" width="2" height="1" fill="#2E6FBF"/>
+      <rect x="15" y="15" width="1" height="1" fill="#2E6FBF"/>
+      <rect x="20" y="15" width="2" height="1" fill="#2E6FBF"/>
+      <rect x="8" y="16" width="2" height="1" fill="#2E6FBF"/>
+      <rect x="15" y="16" width="1" height="1" fill="#2E6FBF"/>
+      <rect x="22" y="16" width="2" height="1" fill="#2E6FBF"/>
+    </svg>
+    <h1>Family tree</h1>
+  </header>
+
+  <hr class="px-wave">
+
+  <main id="main">
+
+    <p>
+      Where the family comes from, as far back as the records go. Four
+      streams meet in Pennsylvania: German farmers from Baden, Swiss
+      emigrants from Bern, an Irishman from Donegal, and the coal-country
+      families of Carbon and Luzerne counties. Living relatives are left
+      off this page; the research itself continues.
+    </p>
+
+    <div class="ft-origins">
+      <div class="px-stat"><div class="value">1691</div><div class="label">earliest confirmed birth, Kappel am Rhein</div></div>
+      <div class="px-stat"><div class="value">1841</div><div class="label">first arrival in America (Donegal, Ireland)</div></div>
+      <div class="px-stat"><div class="value">1853</div><div class="label">the Armbrusters leave Baden</div></div>
+      <div class="px-stat"><div class="value">9</div><div class="label">confirmed generations</div></div>
+    </div>
+
+    <hr class="px-wave">
+
+    <section class="ft-gen">
+      <h2>Parents</h2>
+      <div class="ft-couples">
+        <div class="ft-couple">
+          <p class="ft-person"><span class="name">(living)</span>
+            <span class="note">Eric's father.</span></p>
+          <p class="ft-person"><span class="name">Dolores Sharon (Yenchick) Armbruster</span> <span class="dates">1960 &ndash; 2025</span>
+            <span class="note">Born in Hazleton; a registered nurse for 43 years, retiring from St. Luke's. Loved Hilton Head trips with her grandchildren.</span></p>
+        </div>
+      </div>
+    </section>
+
+    <section class="ft-gen">
+      <h2>Grandparents</h2>
+      <div class="ft-couples">
+        <div class="ft-couple">
+          <p class="line">Armbruster</p>
+          <p class="ft-person"><span class="name">Thomas Albert Armbruster Sr. &ldquo;TA&rdquo;</span> <span class="dates">1931 &ndash; 2020</span>
+            <span class="note">Born in East Mauch Chunk (Jim Thorpe). President and owner of T.A. Armbruster, Inc., a Lehigh Valley general contractor — projects included the Velodrome, Lehigh Valley Mall, and Muhlenberg College buildings. Scuba diver, fisherman, boater.</span></p>
+          <p class="ft-person"><span class="name">Lucile E. (Houser) Armbruster</span> <span class="dates">1935 &ndash; 1972</span>
+            <span class="note">Born in Weissport, Carbon County; raised seven Armbruster children. Died at 37 from injuries in an auto accident near Camp Hill.</span></p>
+        </div>
+        <div class="ft-couple">
+          <p class="line">Yenchick</p>
+          <p class="ft-person"><span class="name">John George Yenchick Sr.</span> <span class="dates">1921 &ndash; 1997</span>
+            <span class="note">Born in Tomhicken, Luzerne County. Farmer in Sugarloaf Township and a retiree of All-Steel Corp.</span></p>
+          <p class="ft-person"><span class="name">Cecelia E. (Derendal) Yenchick</span> <span class="dates">1926 &ndash; 2006</span>
+            <span class="note">Born in McAdoo; textile-factory worker; lived on the family-farm road in Sugarloaf to the end.</span></p>
+        </div>
+      </div>
+    </section>
+
+    <section class="ft-gen">
+      <h2>Great-grandparents</h2>
+      <div class="ft-couples">
+        <div class="ft-couple">
+          <p class="line">Armbruster</p>
+          <p class="ft-person"><span class="name">Joseph Vincent Armbruster</span> <span class="dates">1898 &ndash; 1979</span>
+            <span class="note">Jim Thorpe.</span></p>
+          <p class="ft-person"><span class="name">Anna Elizabeth (Kehrli) Armbruster</span> <span class="dates">1909 &ndash; 1995</span>
+            <span class="note">Born in the Germantown section of East Mauch Chunk, fourth of five children.</span></p>
+        </div>
+        <div class="ft-couple">
+          <p class="line">Houser</p>
+          <p class="ft-person"><span class="name">Clyde R. Houser</span> <span class="dates">b. ~1911</span>
+            <span class="note">Of Franklin Township and later 901 North Street, East Mauch Chunk — the same borough as the Armbrusters.</span></p>
+          <p class="ft-person"><span class="name">Pauline (Fisher) Houser</span> <span class="dates">b. ~1912</span>
+            <span class="note">Of Franklin Township, Carbon County.</span></p>
+        </div>
+        <div class="ft-couple">
+          <p class="line">Derendal</p>
+          <p class="ft-person"><span class="name">Stephen Derendal</span>
+            <span class="note">Of McAdoo.</span></p>
+          <p class="ft-person"><span class="name">Frances (Cichowicz) Derendal</span></p>
+        </div>
+      </div>
+    </section>
+
+    <section class="ft-gen">
+      <h2>Second great-grandparents</h2>
+      <div class="ft-couples">
+        <div class="ft-couple">
+          <p class="line">Armbruster</p>
+          <p class="ft-person"><span class="name">Joseph C. &ldquo;lil Jake&rdquo; Armbruster</span> <span class="dates">1860 &ndash; 1943</span>
+            <span class="note">Butcher in Mauch Chunk, second of nine children; married at St. Joseph's Catholic Church in 1883.</span></p>
+          <p class="ft-person"><span class="name">Anna Helen (Morrison) Armbruster</span> <span class="dates">1858 &ndash; 1935</span>
+            <span class="note">The Irish line.</span></p>
+        </div>
+        <div class="ft-couple">
+          <p class="line">Kehrli</p>
+          <p class="ft-person"><span class="name">Frederick &ldquo;Fred&rdquo; Kehrli</span> <span class="dates">1875 &ndash; 1946</span>
+            <span class="note">Born in Switzerland, emigrated around 1883; died in East Mauch Chunk.</span></p>
+          <p class="ft-person"><span class="name">Susanna &ldquo;Susan&rdquo; (Marzen) Kehrli</span> <span class="dates">1885 &ndash; 1961</span>
+            <span class="note">Born and died in Jim Thorpe, daughter of Mauch Chunk Germans.</span></p>
+        </div>
+      </div>
+    </section>
+
+    <section class="ft-gen">
+      <h2>Third great-grandparents</h2>
+      <div class="ft-couples">
+        <div class="ft-couple">
+          <p class="line">Armbruster &mdash; the emigrants</p>
+          <p class="ft-person"><span class="name">Eduard Karl Armbruster</span> <span class="dates">1827 &ndash; 1906</span>
+            <span class="note">Born in Kappel am Rhein, Baden — his baptism entry survives in the parish register. Emigrated in 1853; died in Jim Thorpe.</span></p>
+          <p class="ft-person"><span class="name">Agatha (Spitzm&uuml;ller) Armbruster</span> <span class="dates">1835 &ndash; 1915</span>
+            <span class="note">Born in Diersburg, Baden; emigrated December 1852. They raised nine children in the Mauch Chunk area.</span></p>
+        </div>
+        <div class="ft-couple">
+          <p class="line">Morrison &mdash; the Irish line</p>
+          <p class="ft-person"><span class="name">Thomas Morrison</span> <span class="dates">1818 &ndash; 1859</span>
+            <span class="note">Born in Moville, County Donegal; came to America in 1841. Drowned at the coal chutes on the Lehigh River at Mauch Chunk when his daughter Anna was seventeen months old.</span></p>
+          <p class="ft-person"><span class="name">Jane (Jameson) Morrison</span> <span class="dates">d. 1886</span>
+            <span class="note">Twice widowed before marrying Thomas.</span></p>
+        </div>
+        <div class="ft-couple">
+          <p class="line">Kehrli &mdash; the Swiss line</p>
+          <p class="ft-person"><span class="name">Niklaus Kehrli</span>
+            <span class="note">Of Uetendorf, Bern, Switzerland.</span></p>
+          <p class="ft-person"><span class="name">Rosina (Knuchel) Kehrli</span>
+            <span class="note">Of Uetendorf. Named on both sons' Pennsylvania death certificates.</span></p>
+        </div>
+        <div class="ft-couple">
+          <p class="line">Marzen</p>
+          <p class="ft-person"><span class="name">Leonard Marzen</span> &amp; <span class="name">Appolonia (Flesch) Marzen</span>
+            <span class="note">Mauch Chunk Germans, settled there by 1885.</span></p>
+        </div>
+      </div>
+    </section>
+
+    <section class="ft-gen">
+      <h2>Kappel am Rhein &mdash; the old country</h2>
+      <p class="ft-gen-note">The Baden village the Armbrusters farmed for at least 160 years before emigrating. All from Catholic parish registers.</p>
+      <div class="ft-couples">
+        <div class="ft-couple">
+          <p class="ft-person"><span class="name">Karl Armbruster</span> <span class="dates">b. 1799</span> &amp; <span class="name">Ursula (L&ouml;ffel)</span> <span class="dates">b. ~1802</span>
+            <span class="note">&ldquo;B&uuml;rger und Bauer&rdquo; — citizen and farmer. Married in Kappel in 1821; at least thirteen children.</span></p>
+        </div>
+        <div class="ft-couple">
+          <p class="ft-person"><span class="name">Valentin Armbruster</span> <span class="dates">1753 &ndash; 1820</span> &amp; <span class="name">Genovefa (K&ouml;lble)</span> <span class="dates">1759 &ndash; 1818</span>
+            <span class="note">Married in Kappel in 1783.</span></p>
+        </div>
+        <div class="ft-couple">
+          <p class="ft-person"><span class="name">Jacob Armbruster</span> <span class="dates">1691 &ndash; 1760</span> &amp; <span class="name">Anna Maria (Richter)</span> <span class="dates">1724 &ndash; 1792</span>
+            <span class="note">The oldest generation found so far — still being verified against the original registers.</span></p>
+        </div>
+      </div>
+    </section>
+
+    <hr class="px-wave">
+
+    <p>
+      Sourced from parish registers in Baden, Pennsylvania death
+      certificates, census records, and newspaper archives. The research
+      is ongoing; corrections welcome at
+      <a href="mailto:eric.m.armbruster@gmail.com">eric.m.armbruster@gmail.com</a>.
+    </p>
+
+  </main>
+
+  <footer>
+    <p>&copy; 2026 Eric Armbruster</p>
+  </footer>
+
+</body>
+</html>

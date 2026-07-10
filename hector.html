@@ -1,0 +1,314 @@
+<!--
+  hector.html — Hector (v3 retro/pixel system)
+  ---------------------------------------------
+  Photo page for the resident dog (he is also the site favicon). Uses the
+  shared .px-gallery component; photos live in images/hector/ as
+  -thumb.jpg (400 square) + -lg.jpg (1200 max) pairs, sourced from the
+  Immich library. Lightbox is the same inline pattern as seymour.html.
+  To add a photo: process thumb/lg pair, copy a figure block, done.
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Hector &mdash; Eric Armbruster</title>
+
+  <meta name="description" content="Hector, the Armbruster family dog.">
+  <meta name="theme-color" content="#F3EEDF">
+  <link rel="canonical" href="https://www.ericarmbruster.com/hector.html">
+  <meta property="og:title" content="Hector - Eric Armbruster">
+  <meta property="og:description" content="Hector, the Armbruster family dog.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://www.ericarmbruster.com/hector.html">
+  <meta property="og:image" content="https://www.ericarmbruster.com/images/hector-0002.png">
+
+  <link rel="icon" href="images/hector-favicon.png" type="image/png">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DotGothic16&family=IBM+Plex+Mono:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/pixel-base.css">
+
+  <style>
+    .site-nav { margin-bottom: 32px; }
+    .site-nav a {
+      font-family: var(--font-display);
+      font-size: 16px;
+      text-decoration: none;
+    }
+    /* The favicon at 8x, honest pixels — Hector as sprite. */
+    .hx-sprite {
+      image-rendering: pixelated;
+      width: 128px;
+      height: 128px;
+      aspect-ratio: auto;
+    }
+    .hx-masthead { display: flex; align-items: center; gap: 24px; flex-wrap: wrap; }
+
+    .hx-photo-btn {
+      display: block;
+      width: 100%;
+      padding: 0;
+      background: none;
+      border: 2px solid var(--ink);
+      box-shadow: 4px 4px 0 var(--shadow);
+      cursor: pointer;
+    }
+    .hx-photo-btn:hover { border-color: var(--sunset); }
+    .hx-photo-btn img {
+      display: block;
+      width: 100%;
+      height: auto;
+      aspect-ratio: 1;
+      object-fit: cover;
+      image-rendering: auto; /* real photographs, not pixel art */
+    }
+
+    /* Lightbox (same pattern as seymour.html) */
+    .hx-lightbox {
+      display: none;
+      position: fixed;
+      inset: 0;
+      z-index: 10;
+      background: rgba(26, 26, 24, 0.94);
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      padding: 48px 16px 16px;
+    }
+    .hx-lightbox--open { display: flex; }
+    .hx-lightbox-img {
+      max-width: min(92vw, 900px);
+      max-height: 78vh;
+      border: 2px solid var(--paper);
+      box-shadow: 4px 4px 0 var(--shadow);
+    }
+    .hx-lightbox-caption {
+      margin-top: 16px;
+      font-family: var(--font-display);
+      font-size: 16px;
+      color: var(--paper);
+      text-align: center;
+    }
+    .hx-lightbox button {
+      position: absolute;
+      background: var(--paper);
+      color: var(--ink);
+      border: 2px solid var(--ink);
+      box-shadow: 4px 4px 0 var(--shadow);
+      font-family: var(--font-display);
+      font-size: 24px;
+      line-height: 1;
+      width: 44px;
+      height: 44px;
+      cursor: pointer;
+      padding: 0;
+    }
+    .hx-lightbox button:hover { color: var(--sunset); }
+    .hx-lightbox-close { top: 16px; right: 16px; }
+    .hx-lightbox-prev { left: 16px; top: 50%; }
+    .hx-lightbox-next { right: 16px; top: 50%; }
+  </style>
+
+  <!-- Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-5ZTHJXDR9V"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-5ZTHJXDR9V');
+  </script>
+</head>
+<body>
+
+  <nav class="site-nav">
+    <a href="index.html">&larr; Eric Armbruster</a>
+  </nav>
+
+  <header class="masthead hx-masthead">
+    <img class="hx-sprite" src="images/hector-favicon.png" alt="" width="128" height="128">
+    <div>
+      <h1>Hector</h1>
+      <p>The resident dog. He is also this site's favicon.</p>
+    </div>
+  </header>
+
+  <hr class="px-wave">
+
+  <main id="main">
+
+    <p>December 2025 to now. Click any photograph to enlarge.</p>
+
+    <div class="px-gallery" id="hx-gallery">
+      <figure>
+        <button type="button" class="hx-photo-btn"><img src="images/hector/hector-01-thumb.jpg" data-full="images/hector/hector-01-lg.jpg" alt="Puppy Hector asleep on a lap" loading="lazy" width="400" height="400"></button>
+        <figcaption><span>Lap nap</span><span class="when">2025</span></figcaption>
+      </figure>
+      <figure>
+        <button type="button" class="hx-photo-btn"><img src="images/hector/hector-02-thumb.jpg" data-full="images/hector/hector-02-lg.jpg" alt="Close-up of puppy Hector looking up" loading="lazy" width="400" height="400"></button>
+        <figcaption><span>Puppy eyes</span><span class="when">2025</span></figcaption>
+      </figure>
+      <figure>
+        <button type="button" class="hx-photo-btn"><img src="images/hector/hector-03-thumb.jpg" data-full="images/hector/hector-03-lg.jpg" alt="Tiny Hector standing on the kitchen floor" loading="lazy" width="400" height="400"></button>
+        <figcaption><span>Finding his feet</span><span class="when">2026</span></figcaption>
+      </figure>
+      <figure>
+        <button type="button" class="hx-photo-btn"><img src="images/hector/hector-14-thumb.jpg" data-full="images/hector/hector-14-lg.jpg" alt="Tiny puppy Hector on a light blue leash, sniffing the asphalt" loading="lazy" width="400" height="400"></button>
+        <figcaption><span>First walks</span><span class="when">2026</span></figcaption>
+      </figure>
+      <figure>
+        <button type="button" class="hx-photo-btn"><img src="images/hector/hector-15-thumb.jpg" data-full="images/hector/hector-15-lg.jpg" alt="Puppy Hector standing over a teddy bear his own size" loading="lazy" width="400" height="400"></button>
+        <figcaption><span>The teddy bear</span><span class="when">2026</span></figcaption>
+      </figure>
+      <figure>
+        <button type="button" class="hx-photo-btn"><img src="images/hector/hector-04-thumb.jpg" data-full="images/hector/hector-04-lg.jpg" alt="Hector perched on the arm of a leather chair" loading="lazy" width="400" height="400"></button>
+        <figcaption><span>Chair arm perch</span><span class="when">2026</span></figcaption>
+      </figure>
+      <figure>
+        <button type="button" class="hx-photo-btn"><img src="images/hector/hector-05-thumb.jpg" data-full="images/hector/hector-05-lg.jpg" alt="Hector asleep in his bed with a green bone toy" loading="lazy" width="400" height="400"></button>
+        <figcaption><span>Green bone</span><span class="when">2026</span></figcaption>
+      </figure>
+      <figure>
+        <button type="button" class="hx-photo-btn"><img src="images/hector/hector-06-thumb.jpg" data-full="images/hector/hector-06-lg.jpg" alt="Hector curled up asleep on the carpet" loading="lazy" width="400" height="400"></button>
+        <figcaption><span>Curled up</span><span class="when">2026</span></figcaption>
+      </figure>
+      <figure>
+        <button type="button" class="hx-photo-btn"><img src="images/hector/hector-07-thumb.jpg" data-full="images/hector/hector-07-lg.jpg" alt="Hector in his harness on a neighborhood walk" loading="lazy" width="400" height="400"></button>
+        <figcaption><span>Out on a walk</span><span class="when">2026</span></figcaption>
+      </figure>
+      <figure>
+        <button type="button" class="hx-photo-btn"><img src="images/hector/hector-08-thumb.jpg" data-full="images/hector/hector-08-lg.jpg" alt="Hector sitting in a pink fluffy bed" loading="lazy" width="400" height="400"></button>
+        <figcaption><span>The pink bed</span><span class="when">2026</span></figcaption>
+      </figure>
+      <figure>
+        <button type="button" class="hx-photo-btn"><img src="images/hector/hector-10-thumb.jpg" data-full="images/hector/hector-10-lg.jpg" alt="Hector from behind, sitting on a tiled waiting-room floor on his leash" loading="lazy" width="400" height="400"></button>
+        <figcaption><span>Waiting his turn</span><span class="when">2026</span></figcaption>
+      </figure>
+      <figure>
+        <button type="button" class="hx-photo-btn"><img src="images/hector/hector-11-thumb.jpg" data-full="images/hector/hector-11-lg.jpg" alt="Hector curled up in a sherpa-lined bed" loading="lazy" width="400" height="400"></button>
+        <figcaption><span>Burrowed in</span><span class="when">2026</span></figcaption>
+      </figure>
+      <figure>
+        <button type="button" class="hx-photo-btn"><img src="images/hector/hector-12-thumb.jpg" data-full="images/hector/hector-12-lg.jpg" alt="Hector sitting upright on the couch with scruffy bed head" loading="lazy" width="400" height="400"></button>
+        <figcaption><span>Bed head</span><span class="when">2026</span></figcaption>
+      </figure>
+      <figure>
+        <button type="button" class="hx-photo-btn"><img src="images/hector/hector-09-thumb.jpg" data-full="images/hector/hector-09-lg.jpg" alt="Hector sitting on the carpet in front of a delivery box" loading="lazy" width="400" height="400"></button>
+        <figcaption><span>Special delivery</span><span class="when">2026</span></figcaption>
+      </figure>
+      <figure>
+        <button type="button" class="hx-photo-btn"><img src="images/hector/hector-13-thumb.jpg" data-full="images/hector/hector-13-lg.jpg" alt="Freshly groomed Hector with a short coat, lying on the floor with a rope toy" loading="lazy" width="400" height="400"></button>
+        <figcaption><span>Fresh cut</span><span class="when">2026</span></figcaption>
+      </figure>
+    </div>
+
+    <p>More photos as they get taken.</p>
+
+  </main>
+
+  <footer>
+    <p>&copy; 2026 Eric Armbruster</p>
+  </footer>
+
+  <!-- Lightbox overlay (same inline pattern as seymour.html). -->
+  <div class="hx-lightbox" id="hx-lightbox" role="dialog" aria-modal="true" aria-label="Photo viewer" aria-hidden="true" tabindex="-1">
+    <button class="hx-lightbox-close" aria-label="Close">&times;</button>
+    <button class="hx-lightbox-prev" aria-label="Previous photo">&#8249;</button>
+    <button class="hx-lightbox-next" aria-label="Next photo">&#8250;</button>
+    <img class="hx-lightbox-img" id="hx-lightbox-img" src="" alt="">
+    <div class="hx-lightbox-caption" id="hx-lightbox-caption"></div>
+  </div>
+
+  <script>
+    (function () {
+      var lightbox = document.getElementById('hx-lightbox');
+      var lbImg = document.getElementById('hx-lightbox-img');
+      var lbCaption = document.getElementById('hx-lightbox-caption');
+      var closeBtn = lightbox.querySelector('.hx-lightbox-close');
+      var prevBtn = lightbox.querySelector('.hx-lightbox-prev');
+      var nextBtn = lightbox.querySelector('.hx-lightbox-next');
+      var galleryItems = Array.from(document.querySelectorAll('#hx-gallery figure'));
+      var mainEl = document.getElementById('main');
+      var focusable = [closeBtn, prevBtn, nextBtn];
+      var currentIndex = 0;
+
+      function showPhoto(index) {
+        currentIndex = index;
+        var item = galleryItems[index];
+        var img = item.querySelector('img');
+        lbImg.src = img.getAttribute('data-full') || img.src;
+        lbImg.alt = img.alt;
+        var spans = item.querySelectorAll('figcaption span');
+        lbCaption.textContent = spans.length ? spans[0].textContent + (spans[1] ? ' — ' + spans[1].textContent : '') : '';
+      }
+      function navigate(delta) {
+        var next = currentIndex + delta;
+        if (next < 0) next = galleryItems.length - 1;
+        if (next >= galleryItems.length) next = 0;
+        showPhoto(next);
+      }
+      var lastTrigger = null;
+      function open(index, trigger) {
+        lastTrigger = trigger || null;
+        showPhoto(index);
+        lightbox.setAttribute('aria-hidden', 'false');
+        lightbox.classList.add('hx-lightbox--open');
+        document.body.style.overflow = 'hidden';
+        if (mainEl) {
+          mainEl.setAttribute('aria-hidden', 'true');
+          mainEl.inert = true;
+        }
+        closeBtn.focus();
+      }
+      galleryItems.forEach(function (item, i) {
+        var trigger = item.querySelector('.hx-photo-btn');
+        trigger.addEventListener('click', function () { open(i, trigger); });
+      });
+      function close() {
+        lightbox.classList.remove('hx-lightbox--open');
+        lightbox.setAttribute('aria-hidden', 'true');
+        document.body.style.overflow = '';
+        if (mainEl) {
+          mainEl.removeAttribute('aria-hidden');
+          mainEl.inert = false;
+        }
+        if (lastTrigger && typeof lastTrigger.focus === 'function') lastTrigger.focus();
+        lastTrigger = null;
+      }
+      function trapFocus(e) {
+        if (e.key !== 'Tab') return;
+        var first = focusable[0];
+        var last = focusable[focusable.length - 1];
+        var active = document.activeElement;
+        if (e.shiftKey) {
+          if (active === first || !lightbox.contains(active)) {
+            e.preventDefault();
+            last.focus();
+          }
+        } else {
+          if (active === last || !lightbox.contains(active)) {
+            e.preventDefault();
+            first.focus();
+          }
+        }
+      }
+      closeBtn.addEventListener('click', close);
+      prevBtn.addEventListener('click', function () { navigate(-1); });
+      nextBtn.addEventListener('click', function () { navigate(1); });
+      lightbox.addEventListener('click', function (e) {
+        if (e.target === lightbox) close();
+      });
+      document.addEventListener('keydown', function (e) {
+        if (!lightbox.classList.contains('hx-lightbox--open')) return;
+        if (e.key === 'Escape') close();
+        if (e.key === 'ArrowLeft') navigate(-1);
+        if (e.key === 'ArrowRight') navigate(1);
+        trapFocus(e);
+      });
+    })();
+  </script>
+</body>
+</html>

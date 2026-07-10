@@ -37,13 +37,18 @@ const MIME = {
 
 // Per-page hydration assertions. Pages not listed are screenshotted only.
 const CHECKS = {
-  bitcoin: { must: ['Latest snapshot from the data feed.'], mustNot: ['Data feed unavailable'] },
-  film:    { must: ['aria-label="Letterboxd profile"', 'film-lightbox'], mustNot: ['Film data unavailable ('] },
   seymour: { count: [['class="sy-photo-btn"', 30]] },
+  hector: { count: [['class="hx-photo-btn"', 15]] },
+  'video-games': { must: ['data-hydrated="steam"'], mustNot: ['Data feed unavailable'] },
+  film: { must: ['data-hydrated="film"'], mustNot: ['Data feed unavailable'] },
+  reading: { must: ['data-hydrated="reading"'], mustNot: ['Data feed unavailable'] },
+  economics: { must: ['data-hydrated="econ"'], mustNot: ['Data feed unavailable'] },
+  bitcoin: { must: ['data-hydrated="btc"'], mustNot: ['Data feed unavailable'] },
+  'self-hosting': { must: ['data-hydrated="services"'], mustNot: ['Data feed unavailable'] },
+  music: { must: ['data-hydrated="music"'], mustNot: ['Data feed unavailable'] },
 };
 
-const ALL_PAGES = ['index', 'about', 'projects', 'video-games', 'film',
-  'economics', 'self-hosting', 'seymour', 'bitcoin'];
+const ALL_PAGES = ['index', 'now', 'video-games', 'film', 'reading', 'music', 'self-hosting', 'economics', 'bitcoin', 'family-tree', 'hector', 'seymour', '404'];
 
 function findBrowser() {
   const candidates = [

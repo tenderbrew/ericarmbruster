@@ -1,0 +1,260 @@
+<!--
+  reading.html — Reading (v3 retro/pixel system)
+  -----------------------------------------------
+  Hydrates from reading-data.json, baked daily by reading-fetch.js via
+  update-reading.yml from the public Goodreads shelf RSS — log books on
+  Goodreads and this page follows. Covers hotlink Goodreads' CDN. On
+  success the JS sets data-hydrated="reading" on <main> for
+  tools/screenshot.js.
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Reading &mdash; Eric Armbruster</title>
+
+  <meta name="description" content="What Eric Armbruster is reading, from his Goodreads shelves.">
+  <meta name="theme-color" content="#F3EEDF">
+  <link rel="canonical" href="https://www.ericarmbruster.com/reading.html">
+  <meta property="og:title" content="Reading - Eric Armbruster">
+  <meta property="og:description" content="What Eric Armbruster is reading.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://www.ericarmbruster.com/reading.html">
+
+  <link rel="icon" href="images/hector-favicon.png" type="image/png">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DotGothic16&family=IBM+Plex+Mono:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/pixel-base.css">
+
+  <style>
+    .site-nav { margin-bottom: 32px; }
+    .site-nav a {
+      font-family: var(--font-display);
+      font-size: 16px;
+      text-decoration: none;
+    }
+    .rd-updated { font-size: 12px; margin: 4px 0 0; }
+    .rd-fallback { display: none; }
+
+    .rd-shelf {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+      gap: 28px 20px;
+      margin: 24px 0;
+    }
+    .rd-card { margin: 0; }
+    .rd-card a.cover-link {
+      display: block;
+      border: 2px solid var(--ink);
+      box-shadow: 4px 4px 0 var(--shadow);
+    }
+    .rd-card a.cover-link:hover { border-color: var(--sunset); }
+    .rd-card img {
+      display: block;
+      width: 100%;
+      height: auto;
+      aspect-ratio: 2 / 3;
+      object-fit: cover;
+    }
+    .rd-card figcaption { margin-top: 8px; font-size: 12px; }
+    .rd-card .rd-author { display: block; color: var(--pool); margin-top: 2px; }
+
+    .rd-rating {
+      font-family: var(--font-display);
+      font-size: 16px;
+      color: var(--sunset);
+    }
+    /* padding-top/bottom only — px-bullets owns padding-left for the sprite */
+    ul.rd-toread li { padding-top: 2px; padding-bottom: 2px; }
+  </style>
+
+  <!-- Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-5ZTHJXDR9V"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-5ZTHJXDR9V');
+  </script>
+</head>
+<body>
+
+  <nav class="site-nav">
+    <a href="index.html">&larr; Eric Armbruster</a>
+  </nav>
+
+  <header class="masthead">
+    <svg class="px-art" width="256" height="144" viewBox="0 0 32 18" shape-rendering="crispEdges" aria-hidden="true">
+      <rect x="5" y="5" width="10" height="1" fill="#1A1A18"/>
+      <rect x="17" y="5" width="10" height="1" fill="#1A1A18"/>
+      <rect x="5" y="6" width="1" height="1" fill="#1A1A18"/>
+      <rect x="15" y="6" width="2" height="1" fill="#1A1A18"/>
+      <rect x="26" y="6" width="1" height="1" fill="#1A1A18"/>
+      <rect x="5" y="7" width="1" height="1" fill="#1A1A18"/>
+      <rect x="8" y="7" width="3" height="1" fill="#2E6FBF"/>
+      <rect x="12" y="7" width="2" height="1" fill="#2E6FBF"/>
+      <rect x="15" y="7" width="2" height="1" fill="#1A1A18"/>
+      <rect x="18" y="7" width="2" height="1" fill="#2E6FBF"/>
+      <rect x="21" y="7" width="3" height="1" fill="#2E6FBF"/>
+      <rect x="26" y="7" width="1" height="1" fill="#1A1A18"/>
+      <rect x="5" y="8" width="1" height="1" fill="#1A1A18"/>
+      <rect x="15" y="8" width="2" height="1" fill="#1A1A18"/>
+      <rect x="24" y="8" width="1" height="1" fill="#E8743B"/>
+      <rect x="26" y="8" width="1" height="1" fill="#1A1A18"/>
+      <rect x="5" y="9" width="1" height="1" fill="#1A1A18"/>
+      <rect x="8" y="9" width="2" height="1" fill="#2E6FBF"/>
+      <rect x="11" y="9" width="3" height="1" fill="#2E6FBF"/>
+      <rect x="15" y="9" width="2" height="1" fill="#1A1A18"/>
+      <rect x="18" y="9" width="3" height="1" fill="#2E6FBF"/>
+      <rect x="22" y="9" width="2" height="1" fill="#2E6FBF"/>
+      <rect x="24" y="9" width="1" height="1" fill="#E8743B"/>
+      <rect x="26" y="9" width="1" height="1" fill="#1A1A18"/>
+      <rect x="5" y="10" width="1" height="1" fill="#1A1A18"/>
+      <rect x="15" y="10" width="2" height="1" fill="#1A1A18"/>
+      <rect x="24" y="10" width="1" height="1" fill="#E8743B"/>
+      <rect x="26" y="10" width="1" height="1" fill="#1A1A18"/>
+      <rect x="5" y="11" width="1" height="1" fill="#1A1A18"/>
+      <rect x="8" y="11" width="3" height="1" fill="#2E6FBF"/>
+      <rect x="12" y="11" width="2" height="1" fill="#2E6FBF"/>
+      <rect x="15" y="11" width="2" height="1" fill="#1A1A18"/>
+      <rect x="18" y="11" width="2" height="1" fill="#2E6FBF"/>
+      <rect x="21" y="11" width="3" height="1" fill="#2E6FBF"/>
+      <rect x="24" y="11" width="1" height="1" fill="#E8743B"/>
+      <rect x="26" y="11" width="1" height="1" fill="#1A1A18"/>
+      <rect x="5" y="12" width="1" height="1" fill="#1A1A18"/>
+      <rect x="15" y="12" width="2" height="1" fill="#1A1A18"/>
+      <rect x="26" y="12" width="1" height="1" fill="#1A1A18"/>
+      <rect x="5" y="13" width="22" height="1" fill="#1A1A18"/>
+      <rect x="15" y="14" width="2" height="1" fill="#1A1A18"/>
+    </svg>
+    <h1>Reading</h1>
+    <p class="rd-updated" id="rd-updated"></p>
+  </header>
+
+  <hr class="px-wave">
+
+  <main id="main">
+
+    <p class="rd-fallback" id="rd-fallback"></p>
+
+    <h2>Currently reading</h2>
+    <div class="rd-shelf" id="rd-current"></div>
+
+    <hr class="px-wave">
+
+    <h2>Read</h2>
+    <table class="px-table">
+      <thead>
+        <tr><th>Book</th><th>Author</th><th>Rating</th><th class="num">Finished</th></tr>
+      </thead>
+      <tbody id="rd-read"></tbody>
+    </table>
+
+    <h2>Up next</h2>
+    <ul class="px-bullets rd-toread" id="rd-toread"></ul>
+
+    <p id="rd-profile"></p>
+
+  </main>
+
+  <footer>
+    <p>&copy; 2026 Eric Armbruster</p>
+  </footer>
+
+  <script>
+    (function () {
+      function el(tag, className, text) {
+        var node = document.createElement(tag);
+        if (className) node.className = className;
+        if (text !== undefined) node.textContent = text;
+        return node;
+      }
+
+      function stars(rating) {
+        var s = '';
+        for (var i = 0; i < rating; i++) s += '★';
+        return s;
+      }
+
+      function bookLink(b) {
+        var a = el('a', null, b.title);
+        a.href = b.link;
+        a.target = '_blank';
+        a.rel = 'noopener';
+        return a;
+      }
+
+      function fail() {
+        var p = document.getElementById('rd-fallback');
+        p.textContent = 'Data feed unavailable. The bookshelf could not be loaded.';
+        p.style.display = 'block';
+      }
+
+      fetch('reading-data.json')
+        .then(function (r) { if (!r.ok) throw new Error(r.status); return r.json(); })
+        .then(function (data) {
+          document.getElementById('rd-updated').textContent =
+            'From the Goodreads shelves. Updated ' +
+            new Date(data.fetchedAt).toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' }) + '.';
+
+          var current = document.getElementById('rd-current');
+          data.currentlyReading.forEach(function (b) {
+            var fig = el('figure', 'rd-card');
+            if (b.cover) {
+              var a = el('a', 'cover-link');
+              a.href = b.link;
+              a.target = '_blank';
+              a.rel = 'noopener';
+              var img = el('img');
+              img.src = b.cover;
+              img.alt = 'Cover of ' + b.title;
+              img.loading = 'lazy';
+              a.appendChild(img);
+              fig.appendChild(a);
+            }
+            var cap = el('figcaption');
+            cap.appendChild(el('span', null, b.title));
+            cap.appendChild(el('span', 'rd-author', b.author));
+            fig.appendChild(cap);
+            current.appendChild(fig);
+          });
+
+          var read = document.getElementById('rd-read');
+          data.read.forEach(function (b) {
+            var tr = el('tr');
+            var td = el('td');
+            td.appendChild(bookLink(b));
+            tr.appendChild(td);
+            tr.appendChild(el('td', null, b.author));
+            tr.appendChild(el('td', 'rd-rating', stars(b.rating)));
+            tr.appendChild(el('td', 'num', b.readAt || ''));
+            read.appendChild(tr);
+          });
+
+          var toread = document.getElementById('rd-toread');
+          data.toRead.forEach(function (b) {
+            var li = el('li');
+            li.appendChild(bookLink(b));
+            li.appendChild(document.createTextNode(' — ' + b.author));
+            toread.appendChild(li);
+          });
+
+          var profile = document.getElementById('rd-profile');
+          var pa = el('a', null, 'Shelves on Goodreads');
+          pa.href = data.profileUrl;
+          pa.target = '_blank';
+          pa.rel = 'noopener';
+          profile.appendChild(pa);
+
+          document.getElementById('main').setAttribute('data-hydrated', 'reading');
+        })
+        .catch(fail);
+    })();
+  </script>
+</body>
+</html>

@@ -1,3 +1,19 @@
+# Secrets / dependencies
 .env
 node_modules/
+
+# Local screenshot output (tools/screenshot.js)
 screenshots/
+
+# OS files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Editor dirs
+.vscode/
+.idea/
+
+# Logs and temp
+*.log
+*.tmp
