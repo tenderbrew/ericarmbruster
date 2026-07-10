@@ -1,13 +1,13 @@
 {
-  "fetchedAt": "2026-07-10T16:14:17.004Z",
+  "fetchedAt": "2026-07-10T22:13:41.790Z",
   "price": {
-    "usd": 63952,
-    "time": 1783699506
+    "usd": 64009,
+    "time": 1783721409
   },
   "moves": {
-    "d1": 1.1567643313856513,
-    "d7": 2.261939618905884,
-    "d30": 3.999650420371914
+    "d1": 1.2469246948909385,
+    "d7": 2.353085017928236,
+    "d30": 4.09234462968453
   },
   "history90d": [
     {
@@ -372,60 +372,65 @@
     },
     {
       "date": "2026-07-10",
-      "close": 63986.36920518018
+      "close": 63991.55639029491
     }
   ],
   "blocks": [
     {
-      "height": 957446,
-      "id": "0000000000000000000113d12615e335e94d4c0b54b2a78bdd66bbce6f0372ff",
-      "timestamp": 1783699933,
-      "txCount": 4772
+      "height": 957480,
+      "id": "00000000000000000001935ef42c12256eb98f5e1acba3b1c1e7691150f124ec",
+      "timestamp": 1783721088,
+      "txCount": 4261
     },
     {
-      "height": 957445,
-      "id": "000000000000000000004b220eb96bf7d218f0e0ad23601bae0fe6adfee3c0c2",
-      "timestamp": 1783699308,
-      "txCount": 4899
+      "height": 957479,
+      "id": "00000000000000000001e77d781302eb9016278517d78392b53dfcade10f7e11",
+      "timestamp": 1783720806,
+      "txCount": 4261
     },
     {
-      "height": 957444,
-      "id": "000000000000000000015664781c5e5855675287d1e6f9133a6fc89abccf17d0",
-      "timestamp": 1783699102,
-      "txCount": 3483
+      "height": 957478,
+      "id": "00000000000000000001af37db863c0af47b9268f9a6a2498d6d11d4e7344f57",
+      "timestamp": 1783718079,
+      "txCount": 4347
     },
     {
-      "height": 957443,
-      "id": "00000000000000000000a188ce93ad42823d36f4416764d0637ba2cc726febea",
-      "timestamp": 1783698764,
-      "txCount": 3981
+      "height": 957477,
+      "id": "0000000000000000000195830805398b25753428ee67ebe9c710e6156285b32a",
+      "timestamp": 1783716508,
+      "txCount": 5052
     },
     {
-      "height": 957442,
-      "id": "000000000000000000000cded310141b5b148cb6b2eaaf9b240d4f6f86ecb731",
-      "timestamp": 1783697589,
-      "txCount": 5707
+      "height": 957476,
+      "id": "00000000000000000000e06badcd8e19049160273430b1fecc0ea8cf599c8d06",
+      "timestamp": 1783716452,
+      "txCount": 3904
     },
     {
-      "height": 957441,
-      "id": "00000000000000000000f308149a6e8d2a80cb83807cb4d09224952f7b2da49d",
-      "timestamp": 1783697836,
-      "txCount": 3979
+      "height": 957475,
+      "id": "00000000000000000000786c6a0a6fd49007b53124b63127601ff1927993c24c",
+      "timestamp": 1783716237,
+      "txCount": 3725
     },
     {
-      "height": 957440,
-      "id": "000000000000000000016daa2257b6e37445328ea1e04388e047e78a0da84693",
-      "timestamp": 1783697430,
-      "txCount": 4292
+      "height": 957474,
+      "id": "0000000000000000000006df0864ffde11eb703b0e8efd1ae86bef384a9dddee",
+      "timestamp": 1783714592,
+      "txCount": 4361
     },
     {
-      "height": 957439,
-      "id": "00000000000000000000d1736cb4426a0ccbcabc549003f1034b1a3eb1a23425",
-      "timestamp": 1783696311,
-      "txCount": 3877
+      "height": 957473,
+      "id": "000000000000000000002cc245e5e553404a3fe745f749722fe5d2e6d7f59ff5",
+      "timestamp": 1783713911,
+      "txCount": 3902
     }
   ],
   "news": [
+    {
+      "title": "Meta's Chief Data Officer Says Agentic Commerce is the \"Next Tier of Business\"",
+      "link": "https://www.coindesk.com/coindesk-news/2026/07/10/meta-s-chief-data-officer-says-agentic-commerce-is-the-next-tier-of-business",
+      "pubDate": "Fri, 10 Jul 2026 21:26:55 +0000"
+    },
     {
       "title": "U.S. government digital dollar set to be banned tonight under housing law's CBDC limit",
       "link": "https://www.coindesk.com/policy/2026/07/10/u-s-government-digital-dollar-set-to-be-banned-tonight-under-housing-law-s-cbdc-limit",
@@ -480,11 +485,6 @@
       "title": "Live updates: Bitcoin rises to $64,000 as SK Hynix opens for trade after $26.5 billion IPO",
       "link": "https://www.coindesk.com/tech/2026/07/10/live-markets-bitcoin-etfs-bleed-again-while-ether-funds-snap-a-five-day-inflow-streak",
       "pubDate": "Fri, 10 Jul 2026 06:21:34 +0000"
-    },
-    {
-      "title": "XRP up 2% as buyers push through $1.10 resistance",
-      "link": "https://www.coindesk.com/markets/2026/07/10/xrp-up-2-as-buyers-push-through-usd1-10-resistance",
-      "pubDate": "Fri, 10 Jul 2026 05:13:48 +0000"
     }
   ]
 }
