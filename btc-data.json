@@ -1,13 +1,13 @@
 {
-  "fetchedAt": "2026-07-10T09:51:17.502Z",
+  "fetchedAt": "2026-07-10T14:49:19.582Z",
   "price": {
-    "usd": 64409,
-    "time": 1783676709
+    "usd": 64057,
+    "time": 1783694709
   },
   "moves": {
-    "d1": 1.8796290001910743,
-    "d7": 2.992701853172841,
-    "d30": 4.742830309071411
+    "d1": 1.3228492115269441,
+    "d7": 2.4298390381575885,
+    "d30": 4.1704029112109575
   },
   "history90d": [
     {
@@ -372,67 +372,87 @@
     },
     {
       "date": "2026-07-10",
-      "close": 64375.632500616564
+      "close": 64030.01440931601
     }
   ],
   "blocks": [
     {
-      "height": 957411,
-      "id": "00000000000000000001fdd0d20370c84ef406b751dce8a99b375ea2003bab6f",
-      "timestamp": 1783676815,
-      "txCount": 3719
+      "height": 957437,
+      "id": "0000000000000000000043b4fd99e2017a39d38122bf0b1aa9e9d86fd4ca7e37",
+      "timestamp": 1783694512,
+      "txCount": 4080
     },
     {
-      "height": 957410,
-      "id": "00000000000000000000eba54e872906a97307e1111824107ee9857411b06b00",
-      "timestamp": 1783676709,
-      "txCount": 4035
+      "height": 957436,
+      "id": "0000000000000000000091b13575ae184060d0222e967eb4e0c5decb91a27ab0",
+      "timestamp": 1783694043,
+      "txCount": 4695
     },
     {
-      "height": 957409,
-      "id": "00000000000000000000ae57d460065990cf5565b62fbca3c5378ad5055d5bf2",
-      "timestamp": 1783676116,
-      "txCount": 2619
+      "height": 957435,
+      "id": "0000000000000000000204610ca8cdc20500640101f90cc555fef4881d765c9d",
+      "timestamp": 1783693387,
+      "txCount": 3927
     },
     {
-      "height": 957408,
-      "id": "00000000000000000000da10c704b59ce63dba944a011e975a116c02e37db06a",
-      "timestamp": 1783675276,
-      "txCount": 3856
+      "height": 957434,
+      "id": "00000000000000000001daf134902f0e997e7d61ff2b11b5fddffcb254a47629",
+      "timestamp": 1783693305,
+      "txCount": 3908
     },
     {
-      "height": 957407,
-      "id": "0000000000000000000038ed3372c3e5f6b0e70a4d7208dbbce391bbfdf7db89",
-      "timestamp": 1783675086,
-      "txCount": 3744
+      "height": 957433,
+      "id": "00000000000000000001efd51917a2ea884e0fc20572d74a5e59dda4f25c45e5",
+      "timestamp": 1783692461,
+      "txCount": 4237
     },
     {
-      "height": 957406,
-      "id": "000000000000000000007e36a13cebb92d94b811f8d71ec324e6e74f10de92c5",
-      "timestamp": 1783674516,
-      "txCount": 4220
+      "height": 957432,
+      "id": "000000000000000000014afa41c0300c8371e8aec94e1b1b7602ae3474152304",
+      "timestamp": 1783691127,
+      "txCount": 4348
     },
     {
-      "height": 957405,
-      "id": "000000000000000000015c826ecb81f876e88755eb4f7388e36753ce3a4f1c01",
-      "timestamp": 1783671988,
-      "txCount": 4011
+      "height": 957431,
+      "id": "000000000000000000018cb6b6bb3bfe8504477703918245e012675f393d4aa1",
+      "timestamp": 1783690650,
+      "txCount": 6613
     },
     {
-      "height": 957404,
-      "id": "00000000000000000000b6b20a32cfbb1411258f7e24f7405b5373f1a22377a6",
-      "timestamp": 1783670938,
-      "txCount": 4716
+      "height": 957430,
+      "id": "00000000000000000000c0b9dba0f63c1cb46752d117e67fea720c24ecd6c473",
+      "timestamp": 1783690558,
+      "txCount": 5982
     }
   ],
   "news": [
+    {
+      "title": "OKX, MetaMask, Matter Labs back dispute resolution court for AI agents",
+      "link": "https://www.coindesk.com/business/2026/07/10/okx-metamask-matter-labs-back-dispute-resolution-court-for-ai-agents",
+      "pubDate": "Fri, 10 Jul 2026 12:29:08 +0000"
+    },
+    {
+      "title": "Circle soars after securing U.S. trust bank approval in crypto expansion",
+      "link": "https://www.coindesk.com/business/2026/07/10/circle-secures-u-s-trust-bank-approval-in-crypto-expansion",
+      "pubDate": "Fri, 10 Jul 2026 11:41:47 +0000"
+    },
+    {
+      "title": "Japan's 'invest locally' plan likely to spur demand for assets like bitcoin, gold",
+      "link": "https://www.coindesk.com/daybook-us/2026/07/10/japan-s-invest-locally-plan-likely-to-spur-demand-for-assets-like-bitcoin-gold",
+      "pubDate": "Fri, 10 Jul 2026 11:37:31 +0000"
+    },
+    {
+      "title": "Crypto defies equity weakness as altcoin optimism builds into the weekend",
+      "link": "https://www.coindesk.com/markets/2026/07/10/crypto-defies-equity-weakness-as-altcoin-optimism-builds-into-the-weekend",
+      "pubDate": "Fri, 10 Jul 2026 10:37:44 +0000"
+    },
     {
       "title": "Polymarket seeks approval to bring margin trading to U.S. customers",
       "link": "https://www.coindesk.com/markets/2026/07/10/polymarket-seeks-approval-to-bring-margin-trading-to-u-s-customers",
       "pubDate": "Fri, 10 Jul 2026 09:35:21 +0000"
     },
     {
-      "title": "Bitcoin's $60,000-$70,000 range becomes third longest consolidation in history",
+      "title": "Bitcoin's $60,000-$70,000 range becomes third most traded range in history",
       "link": "https://www.coindesk.com/markets/2026/07/10/bitcoin-s-usd60k-to-usd70k-range-becomes-third-longest-consolidation-in-history",
       "pubDate": "Fri, 10 Jul 2026 09:16:52 +0000"
     },
@@ -447,7 +467,7 @@
       "pubDate": "Fri, 10 Jul 2026 06:49:13 +0000"
     },
     {
-      "title": "Live markets: Bitcoin tops $64,000 as selling pressure on Coinbase eases",
+      "title": "Live updates: Bitcoin takes aim at $65,000, erasing losses from earlier this week",
       "link": "https://www.coindesk.com/tech/2026/07/10/live-markets-bitcoin-etfs-bleed-again-while-ether-funds-snap-a-five-day-inflow-streak",
       "pubDate": "Fri, 10 Jul 2026 06:21:34 +0000"
     },
@@ -465,26 +485,6 @@
       "title": "Bitcoin zips higher to nearly $64,000 as chip rally and yen strength drive gains",
       "link": "https://www.coindesk.com/markets/2026/07/10/bitcoin-zips-to-nearly-usd64-000-as-chip-rally-and-yen-strength-drive-gains",
       "pubDate": "Fri, 10 Jul 2026 03:57:58 +0000"
-    },
-    {
-      "title": "New Hampshire snuffs out trailblazing state-government bitcoin bond effort",
-      "link": "https://www.coindesk.com/policy/2026/07/09/new-hampshire-snuffs-out-trailblazing-bitcoin-municipal-bond-effort",
-      "pubDate": "Thu, 09 Jul 2026 22:19:54 +0000"
-    },
-    {
-      "title": "Grayscale's CFO exits after 7 years with crypto asset manager",
-      "link": "https://www.coindesk.com/business/2026/07/09/grayscale-s-cfo-exits-after-7-years-with-crypto-asset-manager",
-      "pubDate": "Thu, 09 Jul 2026 20:42:49 +0000"
-    },
-    {
-      "title": "With SEC fight over, Coinbase's top legal exec Grewal moves on, and others reassigned",
-      "link": "https://www.coindesk.com/policy/2026/07/09/with-sec-fight-over-coinbase-s-top-legal-exec-grewal-moves-on-and-others-reassigned",
-      "pubDate": "Thu, 09 Jul 2026 20:31:39 +0000"
-    },
-    {
-      "title": "Arbitrum jumps 19% benefitting from Robinhood's $568 million onchain trading frenzy",
-      "link": "https://www.coindesk.com/markets/2026/07/09/arbitrum-jumps-19-benefitting-from-robinhood-s-usd568-million-onchain-trading-frenzy",
-      "pubDate": "Thu, 09 Jul 2026 20:28:51 +0000"
     }
   ]
 }
