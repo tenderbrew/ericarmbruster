@@ -1,0 +1,579 @@
+<!--
+  v2/bitcoin.html — Bitcoin (the mine)
+  ------------------------------------
+  Painted vignette of the lantern-lit mine mouth in the hillside, then live
+  spot, ninety days of close, recent blocks, headlines, and a reading list.
+  Content is baked from btc-data.json at build time and re-hydrated from the
+  same file at page load (GitHub Actions refreshes it every 3 hours); the
+  spot price additionally checks mempool.space live once per load.
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Bitcoin — Eric Armbruster</title>
+
+  <meta name="description" content="Live spot, ninety days of close, recent blocks, and a reading list.">
+  <meta name="robots" content="noindex">
+  <meta name="theme-color" content="#2b3158">
+
+  <link rel="icon" href="../images/hector-favicon.png" type="image/png">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..600;1,9..144,300..600&family=Newsreader:ital,opsz,wght@0,6..72,400..600;1,6..72,400..600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/valley.css">
+
+  <!-- Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-5ZTHJXDR9V"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-5ZTHJXDR9V');
+  </script>
+
+  <style>
+    /* Spot — one big mono figure with the moves beside it. */
+    .btc-page .spot-card { padding: 1.4rem 1.5rem; }
+    .btc-page .spot-figure {
+      font-family: var(--font-mono);
+      font-size: 2.4rem;
+      font-weight: 500;
+      line-height: 1;
+      letter-spacing: -0.01em;
+      color: var(--ink);
+    }
+    .btc-page .spot-status {
+      font-family: var(--font-mono);
+      font-size: 0.74rem;
+      letter-spacing: 0.08em;
+      color: var(--ink-3);
+    }
+    .btc-page .spot-moves { margin-top: 1.1rem; }
+    .btc-page .is-up { color: var(--moss); }
+    .btc-page .is-down { color: var(--rose); }
+    @media (max-width: 540px) { .btc-page .spot-figure { font-size: 2rem; } }
+
+    /* Ninety days — the sparkline and its mono caption. */
+    .btc-page .spark { width: 100%; height: 160px; display: block; }
+    .btc-page .spark-caption {
+      margin: 0.6rem 0 0;
+      font-family: var(--font-mono);
+      font-size: 0.74rem;
+      letter-spacing: 0.05em;
+      color: var(--ink-3);
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.3rem 1.8rem;
+    }
+    .btc-page .spark-caption .sc-val { color: var(--ink-2); }
+
+    /* Recent blocks — small linked cards. */
+    .btc-page .block-row { display: flex; flex-wrap: wrap; gap: 0.7rem; }
+    .btc-page .block-card { display: block; text-decoration: none; padding: 0.65rem 0.95rem; }
+    .btc-page .block-card .bk-height {
+      display: block;
+      font-family: var(--font-mono);
+      font-size: 1.02rem;
+      font-weight: 500;
+      color: var(--ink);
+      transition: color 150ms ease;
+    }
+    .btc-page .block-card:hover .bk-height { color: var(--rose); }
+    .btc-page .block-card .bk-meta {
+      display: block;
+      margin-top: 0.2rem;
+      font-family: var(--font-mono);
+      font-size: 0.68rem;
+      letter-spacing: 0.05em;
+      color: var(--ink-3);
+    }
+
+    /* Reading list — three category cards. */
+    .btc-page .read-card h3 {
+      margin: 0 0 0.6rem;
+      font-style: italic;
+      font-size: 1.12rem;
+      font-weight: 500;
+    }
+    .btc-page .read-list { list-style: none; margin: 0; padding: 0; }
+    .btc-page .read-list li { padding: 0.5rem 0; border-bottom: 1px solid var(--rule-soft); }
+    .btc-page .read-list li:first-child { padding-top: 0; }
+    .btc-page .read-list li:last-child { border-bottom: none; padding-bottom: 0; }
+    .btc-page .read-author {
+      display: block;
+      margin-top: 0.15rem;
+      font-family: var(--font-mono);
+      font-size: 0.7rem;
+      letter-spacing: 0.06em;
+      color: var(--ink-3);
+    }
+  </style>
+</head>
+
+<body class="t-dusk btc-page">
+
+  <nav class="topbar" aria-label="Site">
+    <div class="topbar-inner">
+      <a class="wordmark" href="index.html">Eric M. Armbruster</a>
+      <div class="topnav">
+        <a href="film.html">Film</a>
+        <a href="video-games.html">Video Games</a>
+        <a href="economics.html">Economics</a>
+        <a href="bitcoin.html" aria-current="page">Bitcoin</a>
+        <a href="self-hosting.html">Self-hosting</a>
+        <a href="seymour.html">Seymour</a>
+        <a href="projects.html">Projects</a>
+        <a href="about.html">About</a>
+      </div>
+    </div>
+  </nav>
+
+  <header class="vignette">
+    <svg viewBox="0 0 1600 340" preserveAspectRatio="xMidYMax slice" role="img"
+         aria-label="A lantern at the mine mouth in the hillside.">
+      <defs>
+        <linearGradient id="skyG" x1="0" y1="0" x2="0" y2="1">
+          <stop offset="0" class="sky-s1"/>
+          <stop offset="0.45" class="sky-s2"/>
+          <stop offset="0.72" class="sky-s3"/>
+          <stop offset="0.92" class="sky-s4"/>
+          <stop offset="1" class="sky-s5"/>
+        </linearGradient>
+        <radialGradient id="gloLantern">
+          <stop offset="0" stop-color="#ffc370" stop-opacity="0.9"/>
+          <stop offset="1" stop-color="#ffc370" stop-opacity="0"/>
+        </radialGradient>
+        <radialGradient id="vinG" cx="0.5" cy="0.45" r="0.8">
+          <stop offset="0" stop-color="#1a120a" stop-opacity="0"/>
+          <stop offset="1" stop-color="#1a120a" stop-opacity="0.3"/>
+        </radialGradient>
+        <filter id="grainF">
+          <feTurbulence type="fractalNoise" baseFrequency="0.8" numOctaves="2" stitchTiles="stitch"/>
+          <feColorMatrix type="matrix" values="0 0 0 0 0  0 0 0 0 0  0 0 0 0 0  0 0 0 0.7 0"/>
+        </filter>
+      </defs>
+
+      <rect x="0" y="0" width="1600" height="340" fill="url(#skyG)"/>
+      <g class="g-stars" fill="#fff4dc">
+        <circle class="star" cx="140" cy="48" r="1.3"/>
+        <circle class="star" cx="300" cy="92" r="1"/>
+        <circle class="star" cx="470" cy="40" r="1.4"/>
+        <circle class="star" cx="640" cy="76" r="1"/>
+        <circle class="star" cx="820" cy="52" r="1.3"/>
+        <circle class="star" cx="1010" cy="40" r="1"/>
+        <circle class="star" cx="1180" cy="62" r="1.4"/>
+        <circle class="star" cx="1335" cy="44" r="1.1"/>
+        <circle class="star" cx="1490" cy="72" r="1"/>
+        <circle class="star" cx="240" cy="138" r="0.9"/>
+        <circle class="star" cx="560" cy="124" r="0.9"/>
+        <circle class="star" cx="730" cy="148" r="0.8"/>
+      </g>
+
+      <!-- the valley falling away to the west -->
+      <path class="f-r4" d="M0,250 C170,242 360,238 540,243 C640,246 720,252 790,258 L790,340 L0,340 Z"/>
+      <path class="f-m1" d="M0,284 C200,276 400,276 560,283 C680,288 790,298 900,312 L900,340 L0,340 Z"/>
+
+      <!-- the hillside, filling the right -->
+      <path class="f-r2" d="M500,340 C590,284 670,222 770,180 C870,140 980,118 1110,112 C1270,106 1440,122 1600,140 L1600,340 Z"/>
+
+      <!-- forest along the upper edge, with a clearing at the mine -->
+      <g class="f-tree">
+        <!-- continuous canopy mass west of the clearing -->
+        <path d="M530,330 C560,300 600,268 648,236 C690,208 736,186 790,168 C816,159 844,151 868,146 C862,160 866,172 858,178 C838,194 818,196 802,210 C780,228 766,228 748,248 C726,270 716,272 700,292 C682,314 668,318 656,336 L530,340 Z"/>
+        <ellipse cx="586" cy="290" rx="30" ry="16"/>
+        <ellipse cx="622" cy="266" rx="22" ry="13"/>
+        <ellipse cx="676" cy="230" rx="28" ry="15"/>
+        <ellipse cx="712" cy="208" rx="20" ry="12"/>
+        <ellipse cx="772" cy="180" rx="26" ry="14"/>
+        <ellipse cx="806" cy="166" rx="18" ry="10"/>
+        <ellipse cx="844" cy="152" rx="22" ry="12"/>
+        <!-- canopy mass east of the clearing -->
+        <path d="M1030,124 C1080,114 1140,108 1210,106 C1300,104 1390,112 1480,122 C1540,128 1580,133 1600,136 L1600,160 C1560,152 1500,146 1440,142 C1360,136 1280,132 1200,132 C1140,132 1080,132 1030,136 Z"/>
+        <ellipse cx="1052" cy="122" rx="24" ry="13"/>
+        <ellipse cx="1092" cy="114" rx="28" ry="14"/>
+        <ellipse cx="1136" cy="110" rx="20" ry="11"/>
+        <ellipse cx="1186" cy="107" rx="30" ry="14"/>
+        <ellipse cx="1238" cy="106" rx="22" ry="12"/>
+        <ellipse cx="1284" cy="108" rx="28" ry="13"/>
+        <ellipse cx="1336" cy="112" rx="20" ry="11"/>
+        <ellipse cx="1390" cy="115" rx="28" ry="14"/>
+        <ellipse cx="1446" cy="120" rx="22" ry="12"/>
+        <ellipse cx="1500" cy="126" rx="28" ry="13"/>
+        <ellipse cx="1554" cy="131" rx="24" ry="12"/>
+        <ellipse cx="1596" cy="136" rx="22" ry="12"/>
+      </g>
+
+      <!-- lantern light spilling from the portal -->
+      <g class="g-glow">
+        <ellipse cx="946" cy="194" rx="130" ry="76" fill="url(#gloLantern)" opacity="0.5"/>
+      </g>
+
+      <!-- the mine, up close -->
+      <g transform="translate(-1538.6,-1347.9) scale(2.3)">
+        <polygon points="1058,686 1106,686 1122,708 1046,708" class="f-m1" opacity="0.5"/>
+        <rect x="1070" y="660" width="24" height="26" rx="6" fill="#1a120c"/>
+        <rect x="1064" y="657" width="5" height="33" class="f-sil"/>
+        <rect x="1095" y="657" width="5" height="33" class="f-sil"/>
+        <rect x="1061" y="652" width="42" height="5.5" rx="1" class="f-sil"/>
+        <g style="stroke:var(--sil)" stroke-width="1.1">
+          <path d="M1074,686 L1064,706" fill="none"/>
+          <path d="M1082,686 L1075,707" fill="none"/>
+        </g>
+        <line x1="1080" y1="657" x2="1080" y2="663" style="stroke:var(--sil)" stroke-width="1"/>
+        <g class="g-glow">
+          <circle cx="1080" cy="667" r="10" fill="url(#gloLantern)"/>
+          <circle cx="1080" cy="666" r="2.6" fill="#ffc370"/>
+        </g>
+      </g>
+
+      <!-- the tramway running down toward the valley floor -->
+      <g style="stroke:var(--sil)" stroke-width="2" fill="none" opacity="0.5">
+        <path d="M867,287 L901,290"/>
+        <path d="M794,301 L833,307"/>
+        <path d="M711,315 L760,323"/>
+        <path d="M638,325 L701,333"/>
+      </g>
+      <g style="stroke:var(--sil)" stroke-width="2.5" fill="none" opacity="0.85">
+        <path d="M908.5,276 C830,298 715,318 585,331"/>
+        <path d="M934,278 C858,304 745,326 655,340"/>
+      </g>
+
+      <path class="f-m2" d="M0,302 C180,296 360,300 540,310 C700,318 830,330 940,340 L0,340 Z"/>
+
+      <rect x="0" y="0" width="1600" height="340" fill="url(#vinG)" pointer-events="none"/>
+      <rect x="0" y="0" width="1600" height="340" filter="url(#grainF)" opacity="0.05" pointer-events="none"/>
+    </svg>
+  </header>
+
+  <div class="plate">
+    <h1>Bitcoin</h1>
+    <p class="plate-sub">Live spot, ninety days of close, recent blocks, and a reading list.</p>
+    <p class="plate-meta"><a href="https://mempool.space/" target="_blank" rel="noopener">mempool.space</a> · <span id="btc-updated">updated June 12, 2026</span></p>
+  </div>
+
+  <main class="page">
+    <div class="wrap">
+
+      <section class="section">
+        <h2>Spot</h2>
+        <div class="card spot-card">
+          <p style="margin:0;">
+            <span class="spot-figure" id="btc-price">$63,776</span><span class="spot-status" id="btc-live-status"></span>
+          </p>
+          <ul class="statline spot-moves">
+            <li><span class="s-val is-up" id="btc-d1">+0.4%</span><span class="s-label">24h</span></li>
+            <li><span class="s-val is-up" id="btc-d7">+4.7%</span><span class="s-label">7d</span></li>
+            <li><span class="s-val is-down" id="btc-d30">−19.6%</span><span class="s-label">30d</span></li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="section">
+        <h2>Ninety days</h2>
+        <svg class="spark" viewBox="0 0 600 160" preserveAspectRatio="none" role="img"
+             aria-label="Bitcoin closing price over the last ninety days.">
+          <path id="btc-spark-area" fill="rgba(201, 123, 45, 0.15)" d="M0.0,82.0L6.7,71.8L13.3,56.7L20.0,63.2L26.7,81.7L33.3,91.4L40.0,86.6L46.7,99.3L53.3,105.4L60.0,84.2L66.7,86.8L73.3,81.4L80.0,98.9L86.7,116.0L93.3,116.0L100.0,118.5L106.7,113.4L113.3,102.8L120.0,103.7L126.7,112.1L133.3,111.7L140.0,109.2L146.7,97.5L153.3,98.4L160.0,76.7L166.7,82.7L173.3,78.1L180.0,69.8L186.7,69.2L193.3,85.2L200.0,59.1L206.7,61.4L213.3,56.8L220.0,54.7L226.7,40.9L233.3,50.6L240.0,63.6L246.7,49.6L253.3,46.3L260.0,33.5L266.7,33.0L273.3,38.7L280.0,37.5L286.7,30.3L293.3,39.3L300.0,46.3L306.7,50.3L313.3,46.7L320.0,33.6L326.7,30.3L333.3,30.9L340.0,22.1L346.7,14.5L353.3,11.0L360.0,20.8L366.7,19.6L373.3,16.2L380.0,6.0L386.7,8.9L393.3,17.6L400.0,25.9L406.7,13.6L413.3,27.4L420.0,33.9L426.7,38.8L433.3,42.1L440.0,43.1L446.7,38.6L453.3,38.0L460.0,52.3L466.7,44.1L473.3,41.9L480.0,39.9L486.7,50.0L493.3,60.2L500.0,65.8L506.7,66.9L513.3,64.4L520.0,65.5L526.7,81.0L533.3,113.8L540.0,132.0L546.7,133.6L553.3,153.6L560.0,154.0L566.7,137.4L573.3,138.6L580.0,148.5L586.7,149.6L593.3,135.3L600.0,133.5L600,160L0,160Z"/>
+          <path id="btc-spark-line" fill="none" style="stroke:var(--lantern)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M0.0,82.0L6.7,71.8L13.3,56.7L20.0,63.2L26.7,81.7L33.3,91.4L40.0,86.6L46.7,99.3L53.3,105.4L60.0,84.2L66.7,86.8L73.3,81.4L80.0,98.9L86.7,116.0L93.3,116.0L100.0,118.5L106.7,113.4L113.3,102.8L120.0,103.7L126.7,112.1L133.3,111.7L140.0,109.2L146.7,97.5L153.3,98.4L160.0,76.7L166.7,82.7L173.3,78.1L180.0,69.8L186.7,69.2L193.3,85.2L200.0,59.1L206.7,61.4L213.3,56.8L220.0,54.7L226.7,40.9L233.3,50.6L240.0,63.6L246.7,49.6L253.3,46.3L260.0,33.5L266.7,33.0L273.3,38.7L280.0,37.5L286.7,30.3L293.3,39.3L300.0,46.3L306.7,50.3L313.3,46.7L320.0,33.6L326.7,30.3L333.3,30.9L340.0,22.1L346.7,14.5L353.3,11.0L360.0,20.8L366.7,19.6L373.3,16.2L380.0,6.0L386.7,8.9L393.3,17.6L400.0,25.9L406.7,13.6L413.3,27.4L420.0,33.9L426.7,38.8L433.3,42.1L440.0,43.1L446.7,38.6L453.3,38.0L460.0,52.3L466.7,44.1L473.3,41.9L480.0,39.9L486.7,50.0L493.3,60.2L500.0,65.8L506.7,66.9L513.3,64.4L520.0,65.5L526.7,81.0L533.3,113.8L540.0,132.0L546.7,133.6L553.3,153.6L560.0,154.0L566.7,137.4L573.3,138.6L580.0,148.5L586.7,149.6L593.3,135.3L600.0,133.5"/>
+        </svg>
+        <p class="spark-caption">
+          <span>start <span class="sc-val" id="btc-spark-start">$71,217</span></span>
+          <span>end <span class="sc-val" id="btc-spark-end">$63,811</span></span>
+          <span>high <span class="sc-val" id="btc-spark-high">$82,146</span></span>
+          <span>low <span class="sc-val" id="btc-spark-low">$60,862</span></span>
+        </p>
+      </section>
+
+      <section class="section">
+        <h2>Recent blocks</h2>
+        <div class="block-row" id="btc-blocks">
+          <a class="card block-card" href="https://mempool.space/block/00000000000000000001cce19cad0ad75d1cbf7e980d89baf1f89a92e9165c61" target="_blank" rel="noopener">
+            <span class="bk-height">953398</span>
+            <span class="bk-meta">4,404 tx · 19m ago</span>
+          </a>
+          <a class="card block-card" href="https://mempool.space/block/0000000000000000000027041cf5c8662ba7f09d3c36ca90a182d0d54d72889d" target="_blank" rel="noopener">
+            <span class="bk-height">953397</span>
+            <span class="bk-meta">3,765 tx · 25m ago</span>
+          </a>
+          <a class="card block-card" href="https://mempool.space/block/00000000000000000001b5a266d6cd4c9b8dcfb418ce4463d77c05ab4ee66827" target="_blank" rel="noopener">
+            <span class="bk-height">953396</span>
+            <span class="bk-meta">3,382 tx · 37m ago</span>
+          </a>
+          <a class="card block-card" href="https://mempool.space/block/000000000000000000011c3c1764030968d1f30b4a39c245fe49f680db04918b" target="_blank" rel="noopener">
+            <span class="bk-height">953395</span>
+            <span class="bk-meta">2,140 tx · 40m ago</span>
+          </a>
+          <a class="card block-card" href="https://mempool.space/block/00000000000000000000a3dbc406a2c40a06af0a9e5d792e43b9981dc9960d2e" target="_blank" rel="noopener">
+            <span class="bk-height">953394</span>
+            <span class="bk-meta">4,250 tx · 42m ago</span>
+          </a>
+          <a class="card block-card" href="https://mempool.space/block/000000000000000000011b0aa24e63b6843a63f0de6e3cd2971312a585fe5376" target="_blank" rel="noopener">
+            <span class="bk-height">953393</span>
+            <span class="bk-meta">4,137 tx · 55m ago</span>
+          </a>
+          <a class="card block-card" href="https://mempool.space/block/00000000000000000000cba6037909e41ef624c45a9c31d008a38f908cb177c2" target="_blank" rel="noopener">
+            <span class="bk-height">953392</span>
+            <span class="bk-meta">4,433 tx · 1h ago</span>
+          </a>
+          <a class="card block-card" href="https://mempool.space/block/00000000000000000001cbd6be59e2af4e2879d61f88b2592ed97fb07ab8f378" target="_blank" rel="noopener">
+            <span class="bk-height">953391</span>
+            <span class="bk-meta">4,726 tx · 1h ago</span>
+          </a>
+        </div>
+      </section>
+
+      <section class="section">
+        <h2>Headlines</h2>
+        <ul class="ledger" id="btc-news">
+          <li><span class="l-name"><a href="https://www.coindesk.com/markets/2026/06/12/vaneck-bets-bnb-s-real-world-usage-can-stand-out-in-a-crowded-crypto-etf-market" target="_blank" rel="noopener">VanEck bets BNB’s real-world usage can stand out in a crowded crypto ETF market</a></span><span class="l-meta">CoinDesk · Jun 12</span></li>
+          <li><span class="l-name"><a href="https://www.coindesk.com/markets/2026/06/12/spacex-opens-at-usdtk-in-blockbuster-nasdaq-debut" target="_blank" rel="noopener">Elon Musk's SpaceX soars 20% in blockbuster Nasdaq debut</a></span><span class="l-meta">CoinDesk · Jun 12</span></li>
+          <li><span class="l-name"><a href="https://www.coindesk.com/markets/2026/06/08/bloomberg-analyst-most-bitcoin-etf-investors-have-stayed-put-despite-outflows" target="_blank" rel="noopener">Bloomberg Analyst: Most Bitcoin ETF Investors Have Stayed Put Despite Outflows</a></span><span class="l-meta">CoinDesk · Jun 12</span></li>
+          <li><span class="l-name"><a href="https://www.coindesk.com/policy/2026/06/12/kalshi-s-crypto-perpetuals-spark-debate-over-whether-they-re-futures-or-swaps" target="_blank" rel="noopener">Kalshi’s crypto perpetuals spark debate over whether they’re futures or swaps</a></span><span class="l-meta">CoinDesk · Jun 12</span></li>
+          <li><span class="l-name"><a href="https://www.coindesk.com/opinion/2026/06/12/the-u-s-government-is-betting-usd2-billion-on-quantum-computing-and-the-defense-side-can-t-keep-up" target="_blank" rel="noopener">The U.S. government is betting $2 Billion on quantum computing, and the defense side can't keep up</a></span><span class="l-meta">CoinDesk · Jun 12</span></li>
+          <li><span class="l-name"><a href="https://www.coindesk.com/policy/2026/06/12/ftx-s-sam-bankman-fried-loses-appeal-of-criminal-conviction-on-fraud-conspiracy-charges" target="_blank" rel="noopener">FTX's Sam Bankman-Fried loses appeal of criminal conviction on fraud, conspiracy charges</a></span><span class="l-meta">CoinDesk · Jun 12</span></li>
+          <li><span class="l-name"><a href="https://www.coindesk.com/markets/2026/06/12/xrp-sentiment-falls-to-an-eight-month-low-and-that-has-been-a-buy-signal-before" target="_blank" rel="noopener">XRP sentiment falls to 8-month low, and that has been a buy signal before</a></span><span class="l-meta">CoinDesk · Jun 12</span></li>
+          <li><span class="l-name"><a href="https://www.coindesk.com/coindesk-indices/2026/06/12/coindesk-20-performance-update-ethereum-eth-falls-1-as-index-trades-lower" target="_blank" rel="noopener">CoinDesk 20 performance update: Ethereum (ETH) falls 1% as index trades lower</a></span><span class="l-meta">CoinDesk · Jun 12</span></li>
+          <li><span class="l-name"><a href="https://www.coindesk.com/daybook-us/2026/06/12/for-crypto-spacex-s-stock-market-debut-could-go-either-way" target="_blank" rel="noopener">For crypto, SpaceX's stock market debut could go either way</a></span><span class="l-meta">CoinDesk · Jun 12</span></li>
+          <li><span class="l-name"><a href="https://www.coindesk.com/markets/2026/06/12/monero-spiked-to-usd430-as-usd120-million-moved-through-it-then-tether-froze-usd72-million" target="_blank" rel="noopener">Monero price rockets 33% to $438 amid $120 million onchain laundering maze</a></span><span class="l-meta">CoinDesk · Jun 12</span></li>
+        </ul>
+      </section>
+
+      <section class="section">
+        <h2>Reading list</h2>
+        <div class="grid-3">
+          <div class="card read-card">
+            <h3>Educational</h3>
+            <ul class="read-list">
+              <li>
+                <a href="https://bitcoin.org/bitcoin.pdf" target="_blank" rel="noopener">Bitcoin: A Peer-to-Peer Electronic Cash System</a>
+              </li>
+              <li>
+                <a href="https://saifedean.com/thebitcoinstandard/" target="_blank" rel="noopener">The Bitcoin Standard</a>
+                <span class="read-author">Saifedean Ammous</span>
+              </li>
+              <li>
+                <a href="https://www.amazon.com/Layered-Money-Everything-Between-Central/dp/1736110527" target="_blank" rel="noopener">Layered Money</a>
+                <span class="read-author">Nik Bhatia</span>
+              </li>
+              <li>
+                <a href="https://www.amazon.com/Internet-Money-Andreas-M-Antonopoulos/dp/1537000454" target="_blank" rel="noopener">The Internet of Money</a>
+                <span class="read-author">Andreas Antonopoulos</span>
+              </li>
+              <li>
+                <a href="https://www.amazon.com/Broken-Money-Financial-System-Failing/dp/B0CG83FZTT" target="_blank" rel="noopener">Broken Money</a>
+                <span class="read-author">Lyn Alden</span>
+              </li>
+            </ul>
+          </div>
+          <div class="card read-card">
+            <h3>Technical</h3>
+            <ul class="read-list">
+              <li>
+                <a href="https://github.com/bitcoinbook/bitcoinbook" target="_blank" rel="noopener">Mastering Bitcoin</a>
+                <span class="read-author">Andreas Antonopoulos</span>
+              </li>
+              <li>
+                <a href="https://github.com/jimmysong/programmingbitcoin" target="_blank" rel="noopener">Programming Bitcoin</a>
+                <span class="read-author">Jimmy Song</span>
+              </li>
+              <li>
+                <a href="https://learnmeabitcoin.com/" target="_blank" rel="noopener">Learn Me A Bitcoin</a>
+              </li>
+              <li>
+                <a href="https://www.amazon.com/Grokking-Bitcoin-Kalle-Rosenbaum/dp/1617294640" target="_blank" rel="noopener">Grokking Bitcoin</a>
+                <span class="read-author">Kalle Rosenbaum</span>
+              </li>
+              <li>
+                <a href="https://github.com/BlockchainCommons/Learning-Bitcoin-from-the-Command-Line" target="_blank" rel="noopener">Learning Bitcoin from the Command Line</a>
+              </li>
+            </ul>
+          </div>
+          <div class="card read-card">
+            <h3>Culture &amp; history</h3>
+            <ul class="read-list">
+              <li>
+                <a href="https://www.amazon.com/Blocksize-War-controls-Bitcoins-protocol/dp/B08YQMC2WM" target="_blank" rel="noopener">The Blocksize War</a>
+                <span class="read-author">Jonathan Bier</span>
+              </li>
+              <li>
+                <a href="https://www.amazon.com/Digital-Gold-Bitcoin-Millionaires-Reinvent/dp/006236250X" target="_blank" rel="noopener">Digital Gold</a>
+                <span class="read-author">Nathaniel Popper</span>
+              </li>
+              <li>
+                <a href="https://www.amazon.com/Book-Satoshi-Collected-Writings-Nakamoto/dp/0996061312" target="_blank" rel="noopener">The Book of Satoshi</a>
+                <span class="read-author">Phil Champagne</span>
+              </li>
+              <li>
+                <a href="https://www.amazon.com/Genesis-Book-Story-Bitcoin-Before/dp/B0D2V3YC73" target="_blank" rel="noopener">The Genesis Book</a>
+                <span class="read-author">Aaron van Wirdum</span>
+              </li>
+              <li>
+                <a href="https://www.amazon.com/Bitcoin-Venice-Allen-Farrington/dp/B09KRFLX1Y" target="_blank" rel="noopener">Bitcoin is Venice</a>
+                <span class="read-author">Allen Farrington</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <p class="note">Price, blocks, and headlines bake every three hours via a scheduled job;
+        the spot price also checks mempool.space live when you load the page.</p>
+
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <span>&copy; 2026 Eric Armbruster</span>
+      <div class="footer-links">
+        <a href="mailto:eric.m.armbruster@gmail.com">email</a>
+        <a href="https://github.com/tenderbrew" target="_blank" rel="noopener">github</a>
+        <a href="https://www.linkedin.com/in/ericmarmbruster/" target="_blank" rel="noopener">linkedin</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/valley.js" defer></script>
+  <script>
+    /* Hydrate from btc-data.json (baked by btc-fetch.js via GitHub Actions),
+       then check mempool.space once for a live spot price. */
+    (function () {
+      function el(tag, cls, text) {
+        var n = document.createElement(tag);
+        if (cls) n.className = cls;
+        if (text != null) n.textContent = text;
+        return n;
+      }
+
+      function fmtUSD(v) {
+        if (!isFinite(v)) return '$—';
+        return '$' + Math.round(v).toLocaleString('en-US');
+      }
+
+      function fmtMove(v) {
+        if (v == null || !isFinite(v)) return '—';
+        return (v >= 0 ? '+' : '−') + Math.abs(v).toFixed(1) + '%';
+      }
+
+      function setMove(id, v) {
+        var n = document.getElementById(id);
+        n.textContent = fmtMove(v);
+        n.classList.remove('is-up', 'is-down');
+        if (v > 0) n.classList.add('is-up');
+        if (v < 0) n.classList.add('is-down');
+      }
+
+      function relAge(epochSeconds) {
+        var diff = Math.max(0, Math.round(Date.now() / 1000 - epochSeconds));
+        if (diff < 60) return diff + 's ago';
+        if (diff < 3600) return Math.round(diff / 60) + 'm ago';
+        if (diff < 86400) return Math.round(diff / 3600) + 'h ago';
+        return Math.round(diff / 86400) + 'd ago';
+      }
+
+      function drawSpark(closes) {
+        if (!closes || closes.length < 2) return;
+        var W = 600, H = 160, PAD = 6;
+        var min = Math.min.apply(null, closes);
+        var max = Math.max.apply(null, closes);
+        if (max === min) max += 1;
+        var d = closes.map(function (c, i) {
+          var x = (W * i) / (closes.length - 1);
+          var y = PAD + ((max - c) / (max - min)) * (H - PAD * 2);
+          return (i ? 'L' : 'M') + x.toFixed(1) + ',' + y.toFixed(1);
+        }).join('');
+        document.getElementById('btc-spark-line').setAttribute('d', d);
+        document.getElementById('btc-spark-area').setAttribute('d', d + 'L600,160L0,160Z');
+        document.getElementById('btc-spark-start').textContent = fmtUSD(closes[0]);
+        document.getElementById('btc-spark-end').textContent = fmtUSD(closes[closes.length - 1]);
+        document.getElementById('btc-spark-high').textContent = fmtUSD(max);
+        document.getElementById('btc-spark-low').textContent = fmtUSD(min);
+      }
+
+      function render(data) {
+        // Spot + moves
+        if (data.price && isFinite(data.price.usd)) {
+          document.getElementById('btc-price').textContent = fmtUSD(data.price.usd);
+        }
+        var m = data.moves || {};
+        setMove('btc-d1', m.d1);
+        setMove('btc-d7', m.d7);
+        setMove('btc-d30', m.d30);
+
+        // Ninety days
+        drawSpark((data.history90d || [])
+          .map(function (p) { return p.close; })
+          .filter(function (c) { return isFinite(c) && c > 0; }));
+
+        // Recent blocks
+        if (data.blocks && data.blocks.length) {
+          var row = document.getElementById('btc-blocks');
+          row.textContent = '';
+          data.blocks.slice(0, 8).forEach(function (b) {
+            var card = el('a', 'card block-card');
+            card.href = 'https://mempool.space/block/' + encodeURIComponent(b.id || '');
+            card.target = '_blank';
+            card.rel = 'noopener';
+            card.appendChild(el('span', 'bk-height', String(b.height)));
+            var bits = [];
+            if (b.txCount != null) bits.push(b.txCount.toLocaleString('en-US') + ' tx');
+            if (b.timestamp) bits.push(relAge(b.timestamp));
+            card.appendChild(el('span', 'bk-meta', bits.join(' · ')));
+            row.appendChild(card);
+          });
+        }
+
+        // Headlines
+        if (data.news && data.news.length) {
+          var list = document.getElementById('btc-news');
+          list.textContent = '';
+          data.news.slice(0, 10).forEach(function (item) {
+            var li = el('li');
+            var name = el('span', 'l-name');
+            var a = el('a', null, item.title);
+            a.href = item.link || '#';
+            a.target = '_blank';
+            a.rel = 'noopener';
+            name.appendChild(a);
+            li.appendChild(name);
+            var d = new Date(item.pubDate);
+            var when = isNaN(d) ? '' : d.toLocaleDateString('en-US', { month: 'short', day: 'numeric' });
+            li.appendChild(el('span', 'l-meta', (item.source || 'CoinDesk') + (when ? ' · ' + when : '')));
+            list.appendChild(li);
+          });
+        }
+
+        // Updated stamp
+        if (data.fetchedAt) {
+          var d2 = new Date(data.fetchedAt);
+          if (!isNaN(d2)) {
+            document.getElementById('btc-updated').textContent =
+              'updated ' + d2.toLocaleDateString('en-US', { month: 'long', day: 'numeric', year: 'numeric' });
+          }
+        }
+      }
+
+      function liveSpot() {
+        fetch('https://mempool.space/api/v1/prices')
+          .then(function (r) { if (!r.ok) throw new Error(r.status); return r.json(); })
+          .then(function (j) {
+            if (!j || !isFinite(j.USD)) return;
+            document.getElementById('btc-price').textContent = fmtUSD(j.USD);
+            document.getElementById('btc-live-status').textContent = ' · live';
+          })
+          .catch(function () { /* baked price stands */ });
+      }
+
+      fetch('../btc-data.json')
+        .then(function (r) { if (!r.ok) throw new Error(r.status); return r.json(); })
+        .then(render)
+        .catch(function () { /* baked content stands */ })
+        .then(liveSpot);
+    })();
+  </script>
+</body>
+</html>
