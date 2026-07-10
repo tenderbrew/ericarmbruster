@@ -1,10 +1,10 @@
 <!--
-  seymour.html — Memorial for Seymour (Tufte-warm redesign)
-  ---------------------------------------------------------
-  Cream paper, EB Garamond serif, an Agnes Sligh Turnbull epigraph, the
-  written tribute as flowing prose with true marginal notes (right-side
-  sidenotes on wide screens), and a chronological scrapbook gallery
-  (2013–2025) that opens into a lightbox.
+  seymour.html — Memorial for Seymour (v3 retro/pixel system)
+  -----------------------------------------------------------
+  The memorial in the sitewide pixel system: DotGothic16 display, Plex Mono
+  prose, hard-shadow frames, wave dividers. The photographs themselves stay
+  full-color and untouched (Eric's explicit call) — only the chrome is
+  pixel. Lightbox markup/JS carried over unchanged from the prior version.
 -->
 <!DOCTYPE html>
 <html lang="en">
@@ -14,7 +14,7 @@
   <title>Seymour, 2010&ndash;2025 &mdash; Eric Armbruster</title>
 
   <meta name="description" content="A memorial for Seymour, a Jack Russell Terrier (2010-2025).">
-  <meta name="theme-color" content="#ddc89a">
+  <meta name="theme-color" content="#F3EEDF">
   <link rel="canonical" href="https://www.ericarmbruster.com/seymour.html">
   <meta property="og:title" content="Seymour, 2010-2025 - Eric Armbruster">
   <meta property="og:description" content="A memorial for Seymour, a Jack Russell Terrier.">
@@ -24,15 +24,182 @@
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="Seymour, 2010-2025 - Eric Armbruster">
   <meta name="twitter:description" content="A memorial for Seymour, a Jack Russell Terrier.">
-  <meta name="twitter:image" content="https://www.ericarmbruster.com/images/seymour-memoriam.png">
   <link rel="icon" href="images/hector-favicon.png" type="image/png">
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Cormorant+Garamond:ital,wght@1,400;1,500;1,600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=DotGothic16&family=IBM+Plex+Mono:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet">
 
-  <link rel="stylesheet" href="css/tufte-base.css">
-  <link rel="stylesheet" href="css/sy-styles.css">
+  <link rel="stylesheet" href="css/pixel-base.css">
+
+  <style>
+    /* Page chrome */
+    .skip-link {
+      position: absolute;
+      left: -9999px;
+    }
+    .skip-link:focus {
+      position: static;
+      display: inline-block;
+      padding: 4px 8px;
+    }
+    .site-nav {
+      margin-bottom: 32px;
+    }
+    .site-nav a {
+      font-family: var(--font-display);
+      font-size: 16px;
+      text-decoration: none;
+    }
+
+    /* Memorial masthead: portrait left, name plate right */
+    .sy-masthead {
+      display: flex;
+      gap: 32px;
+      align-items: flex-start;
+      flex-wrap: wrap;
+    }
+    .sy-portrait {
+      margin: 0;
+      flex: 0 0 auto;
+    }
+    .sy-portrait img {
+      display: block;
+      width: 224px;
+      height: auto;
+      border: 2px solid var(--ink);
+      box-shadow: 4px 4px 0 var(--shadow);
+    }
+    .sy-cover-text { flex: 1 1 260px; }
+    .sy-name { font-size: 48px; }
+    .sy-dates {
+      font-family: var(--font-display);
+      font-size: 24px;
+      color: var(--sunset);
+      margin: 4px 0 0;
+    }
+    .sy-subtitle { margin: 12px 0 0; }
+    .sy-epigraph {
+      margin: 20px 0 0;
+      padding: 2px 0 2px 16px;
+      border-left: 4px solid var(--pool);
+      font-style: italic;
+    }
+    .sy-epigraph cite {
+      display: block;
+      margin-top: 4px;
+      font-style: normal;
+      font-size: 13px;
+    }
+
+    /* Gallery */
+    .sy-gallery-intro { margin: 0 0 24px; }
+    .sy-gallery-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(170px, 1fr));
+      gap: 28px 24px;
+    }
+    .sy-gallery-item { margin: 0; }
+    .sy-photo-btn {
+      display: block;
+      width: 100%;
+      padding: 0;
+      background: none;
+      border: 2px solid var(--ink);
+      box-shadow: 4px 4px 0 var(--shadow);
+      cursor: pointer;
+    }
+    .sy-photo-btn img {
+      display: block;
+      width: 100%;
+      height: auto;
+      aspect-ratio: 1;
+      object-fit: cover;
+      image-rendering: auto; /* real photographs, not pixel art */
+    }
+    .sy-photo-btn:hover { border-color: var(--sunset); }
+    .sy-gallery-item figcaption {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      gap: 8px;
+      margin-top: 8px;
+      font-size: 12px;
+    }
+    .sy-caption-year {
+      font-family: var(--font-display);
+      font-size: 16px;
+      color: var(--pool);
+    }
+
+    /* Tribute prose; sidenotes become note cards */
+    .sy-section-head { margin-top: 8px; }
+    .sidenote {
+      display: block;
+      margin: 14px 0;
+      padding: 10px 14px;
+      background: var(--paper-dim);
+      border: 2px solid var(--ink);
+      box-shadow: 4px 4px 0 var(--shadow);
+      font-size: 13px;
+    }
+
+    /* Footer links */
+    .footer-links { display: flex; gap: 16px; margin-top: 4px; }
+
+    /* Lightbox */
+    .sy-lightbox {
+      display: none;
+      position: fixed;
+      inset: 0;
+      z-index: 10;
+      background: rgba(26, 26, 24, 0.94);
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      padding: 48px 16px 16px;
+    }
+    .sy-lightbox--open { display: flex; }
+    .sy-lightbox-img {
+      max-width: min(92vw, 900px);
+      max-height: 78vh;
+      border: 2px solid var(--paper);
+      box-shadow: 4px 4px 0 var(--shadow);
+    }
+    .sy-lightbox-caption {
+      margin-top: 16px;
+      font-family: var(--font-display);
+      font-size: 16px;
+      color: var(--paper);
+      text-align: center;
+    }
+    .sy-lightbox button {
+      position: absolute;
+      background: var(--paper);
+      color: var(--ink);
+      border: 2px solid var(--ink);
+      box-shadow: 4px 4px 0 var(--shadow);
+      font-family: var(--font-display);
+      font-size: 24px;
+      line-height: 1;
+      width: 44px;
+      height: 44px;
+      cursor: pointer;
+      padding: 0;
+    }
+    .sy-lightbox button:hover { color: var(--sunset); }
+    .sy-lightbox-close { top: 16px; right: 16px; }
+    .sy-lightbox-prev { left: 16px; top: 50%; }
+    .sy-lightbox-next { right: 16px; top: 50%; }
+
+    @media (max-width: 480px) {
+      .sy-masthead { gap: 20px; }
+      .sy-portrait img { width: 160px; }
+      .sy-name { font-size: 32px; }
+      .sy-dates { font-size: 16px; }
+      .sy-gallery-grid { grid-template-columns: repeat(2, 1fr); gap: 20px 16px; }
+    }
+  </style>
 
   <!-- Google Analytics -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-5ZTHJXDR9V"></script>
@@ -44,22 +211,16 @@
   </script>
 </head>
 
-<body class="sy-page">
+<body>
 
   <a class="skip-link" href="#main">Skip to main content</a>
 
-  <header class="site-header">
-    <div class="site-header__inner">
-      <a class="brand" href="index.html">Eric Armbruster</a>
-      <div class="site-utility">
-        <a class="site-utility__icon" href="mailto:eric.m.armbruster@gmail.com" aria-label="Contact"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="1.5"/><path d="M3 7l9 7 9-7"/></svg></a>
-      </div>
-    </div>
-  </header>
+  <nav class="site-nav">
+    <a href="index.html">&larr; Eric Armbruster</a>
+  </nav>
 
-  <main class="page" id="main">
+  <main id="main">
 
-    <!-- COVER — compact horizontal: portrait left, name plate + dedication + quote right. -->
     <header class="sy-masthead">
       <figure class="sy-portrait">
         <img src="images/seymour-memoriam.png" alt="Seymour, a Jack Russell Terrier">
@@ -75,164 +236,166 @@
       </div>
     </header>
 
-    <!-- GALLERY -->
+    <hr class="px-wave">
+
     <p class="sy-gallery-intro">A photo album, 2013 &mdash; 2025. Click any photograph to enlarge.</p>
 
     <div class="sy-gallery-grid">
 
       <figure class="sy-gallery-item">
-        <div class="photo"><button type="button" class="sy-photo-btn"><img src="images/seymour/seymour-01-thumb.jpg" data-full="images/seymour/seymour-01-lg.jpg" alt="Young Seymour on a blue leash in the grass" loading="lazy" width="400" height="400"></button></div>
+        <button type="button" class="sy-photo-btn"><img src="images/seymour/seymour-01-thumb.jpg" data-full="images/seymour/seymour-01-lg.jpg" alt="Young Seymour on a blue leash in the grass" loading="lazy" width="400" height="400"></button>
         <figcaption><span class="sy-caption-text">First walks</span><span class="sy-caption-year">2013</span></figcaption>
       </figure>
 
       <figure class="sy-gallery-item">
-        <div class="photo"><button type="button" class="sy-photo-btn"><img src="images/seymour/seymour-02-thumb.jpg" data-full="images/seymour/seymour-02-lg.jpg" alt="Seymour sitting in a car seat with blue collar, tongue out" loading="lazy" width="400" height="400"></button></div>
+        <button type="button" class="sy-photo-btn"><img src="images/seymour/seymour-02-thumb.jpg" data-full="images/seymour/seymour-02-lg.jpg" alt="Seymour sitting in a car seat with blue collar, tongue out" loading="lazy" width="400" height="400"></button>
         <figcaption><span class="sy-caption-text">Ready for the ride</span><span class="sy-caption-year">2013</span></figcaption>
       </figure>
 
       <figure class="sy-gallery-item">
-        <div class="photo"><button type="button" class="sy-photo-btn"><img src="images/seymour/seymour-03-thumb.jpg" data-full="images/seymour/seymour-03-lg.jpg" alt="Eric holding Seymour next to a cannon at Gettysburg" loading="lazy" width="400" height="400"></button></div>
+        <button type="button" class="sy-photo-btn"><img src="images/seymour/seymour-03-thumb.jpg" data-full="images/seymour/seymour-03-lg.jpg" alt="Eric holding Seymour next to a cannon at Gettysburg" loading="lazy" width="400" height="400"></button>
         <figcaption><span class="sy-caption-text">Field trip to Gettysburg</span><span class="sy-caption-year">2015</span></figcaption>
       </figure>
 
       <figure class="sy-gallery-item">
-        <div class="photo"><button type="button" class="sy-photo-btn"><img src="images/seymour/seymour-04-thumb.jpg" data-full="images/seymour/seymour-04-lg.jpg" alt="Seymour sitting upright in a wingback chair" loading="lazy" width="400" height="400"></button></div>
+        <button type="button" class="sy-photo-btn"><img src="images/seymour/seymour-04-thumb.jpg" data-full="images/seymour/seymour-04-lg.jpg" alt="Seymour sitting upright in a wingback chair" loading="lazy" width="400" height="400"></button>
         <figcaption><span class="sy-caption-text">King of the chair</span><span class="sy-caption-year">2015</span></figcaption>
       </figure>
 
       <figure class="sy-gallery-item">
-        <div class="photo"><button type="button" class="sy-photo-btn"><img src="images/seymour/seymour-05-thumb.jpg" data-full="images/seymour/seymour-05-lg.jpg" alt="Seymour wearing a bandana, peeking into a bassinet at a newborn baby" loading="lazy" width="400" height="400"></button></div>
+        <button type="button" class="sy-photo-btn"><img src="images/seymour/seymour-05-thumb.jpg" data-full="images/seymour/seymour-05-lg.jpg" alt="Seymour wearing a bandana, peeking into a bassinet at a newborn baby" loading="lazy" width="400" height="400"></button>
         <figcaption><span class="sy-caption-text">Meeting the new arrival</span><span class="sy-caption-year">2015</span></figcaption>
       </figure>
 
       <figure class="sy-gallery-item">
-        <div class="photo"><button type="button" class="sy-photo-btn"><img src="images/seymour/seymour-06-thumb.jpg" data-full="images/seymour/seymour-06-lg.jpg" alt="Seymour being held at the park, big smile" loading="lazy" width="400" height="400"></button></div>
+        <button type="button" class="sy-photo-btn"><img src="images/seymour/seymour-06-thumb.jpg" data-full="images/seymour/seymour-06-lg.jpg" alt="Seymour being held at the park, big smile" loading="lazy" width="400" height="400"></button>
         <figcaption><span class="sy-caption-text">Park day</span><span class="sy-caption-year">2016</span></figcaption>
       </figure>
 
       <figure class="sy-gallery-item">
-        <div class="photo"><button type="button" class="sy-photo-btn"><img src="images/seymour/seymour-07-thumb.jpg" data-full="images/seymour/seymour-07-lg.jpg" alt="Eric holding Seymour indoors" loading="lazy" width="400" height="400"></button></div>
+        <button type="button" class="sy-photo-btn"><img src="images/seymour/seymour-07-thumb.jpg" data-full="images/seymour/seymour-07-lg.jpg" alt="Eric holding Seymour indoors" loading="lazy" width="400" height="400"></button>
         <figcaption><span class="sy-caption-text">Best friends</span><span class="sy-caption-year">2016</span></figcaption>
       </figure>
 
       <figure class="sy-gallery-item">
-        <div class="photo"><button type="button" class="sy-photo-btn"><img src="images/seymour/seymour-08-thumb.jpg" data-full="images/seymour/seymour-08-lg.jpg" alt="Seymour standing at a windowsill, looking out at the yard" loading="lazy" width="400" height="400"></button></div>
+        <button type="button" class="sy-photo-btn"><img src="images/seymour/seymour-08-thumb.jpg" data-full="images/seymour/seymour-08-lg.jpg" alt="Seymour standing at a windowsill, looking out at the yard" loading="lazy" width="400" height="400"></button>
         <figcaption><span class="sy-caption-text">The lookout</span><span class="sy-caption-year">2017</span></figcaption>
       </figure>
 
       <figure class="sy-gallery-item">
-        <div class="photo"><button type="button" class="sy-photo-btn"><img src="images/seymour/seymour-09-thumb.jpg" data-full="images/seymour/seymour-09-lg.jpg" alt="Seymour in a shark costume for Halloween" loading="lazy" width="400" height="400"></button></div>
+        <button type="button" class="sy-photo-btn"><img src="images/seymour/seymour-09-thumb.jpg" data-full="images/seymour/seymour-09-lg.jpg" alt="Seymour in a shark costume for Halloween" loading="lazy" width="400" height="400"></button>
         <figcaption><span class="sy-caption-text">Halloween shark</span><span class="sy-caption-year">2017</span></figcaption>
       </figure>
 
       <figure class="sy-gallery-item">
-        <div class="photo"><button type="button" class="sy-photo-btn"><img src="images/seymour/seymour-10-thumb.jpg" data-full="images/seymour/seymour-10-lg.jpg" alt="Seymour peeking over the couch cushions behind a smiling toddler" loading="lazy" width="400" height="400"></button></div>
+        <button type="button" class="sy-photo-btn"><img src="images/seymour/seymour-10-thumb.jpg" data-full="images/seymour/seymour-10-lg.jpg" alt="Seymour peeking over the couch cushions behind a smiling toddler" loading="lazy" width="400" height="400"></button>
         <figcaption><span class="sy-caption-text">Always nearby</span><span class="sy-caption-year">2018</span></figcaption>
       </figure>
 
       <figure class="sy-gallery-item">
-        <div class="photo"><button type="button" class="sy-photo-btn"><img src="images/seymour/seymour-11-thumb.jpg" data-full="images/seymour/seymour-11-lg.jpg" alt="Seymour standing alert in tall grass in the backyard" loading="lazy" width="400" height="400"></button></div>
+        <button type="button" class="sy-photo-btn"><img src="images/seymour/seymour-11-thumb.jpg" data-full="images/seymour/seymour-11-lg.jpg" alt="Seymour standing alert in tall grass in the backyard" loading="lazy" width="400" height="400"></button>
         <figcaption><span class="sy-caption-text">Patrol duty</span><span class="sy-caption-year">2018</span></figcaption>
       </figure>
 
       <figure class="sy-gallery-item">
-        <div class="photo"><button type="button" class="sy-photo-btn"><img src="images/seymour/seymour-12-thumb.jpg" data-full="images/seymour/seymour-12-lg.jpg" alt="Seymour and a toddler snuggled together in a blanket fort" loading="lazy" width="400" height="400"></button></div>
+        <button type="button" class="sy-photo-btn"><img src="images/seymour/seymour-12-thumb.jpg" data-full="images/seymour/seymour-12-lg.jpg" alt="Seymour and a toddler snuggled together in a blanket fort" loading="lazy" width="400" height="400"></button>
         <figcaption><span class="sy-caption-text">Fort buddies</span><span class="sy-caption-year">2019</span></figcaption>
       </figure>
 
       <figure class="sy-gallery-item">
-        <div class="photo"><button type="button" class="sy-photo-btn"><img src="images/seymour/seymour-13-thumb.jpg" data-full="images/seymour/seymour-13-lg.jpg" alt="Eric on the couch with Seymour and a baby" loading="lazy" width="400" height="400"></button></div>
+        <button type="button" class="sy-photo-btn"><img src="images/seymour/seymour-13-thumb.jpg" data-full="images/seymour/seymour-13-lg.jpg" alt="Eric on the couch with Seymour and a baby" loading="lazy" width="400" height="400"></button>
         <figcaption><span class="sy-caption-text">The whole crew</span><span class="sy-caption-year">2019</span></figcaption>
       </figure>
 
       <figure class="sy-gallery-item">
-        <div class="photo"><button type="button" class="sy-photo-btn"><img src="images/seymour/seymour-14-thumb.jpg" data-full="images/seymour/seymour-14-lg.jpg" alt="Seymour napping on a colorful baby play mat" loading="lazy" width="400" height="400"></button></div>
+        <button type="button" class="sy-photo-btn"><img src="images/seymour/seymour-14-thumb.jpg" data-full="images/seymour/seymour-14-lg.jpg" alt="Seymour napping on a colorful baby play mat" loading="lazy" width="400" height="400"></button>
         <figcaption><span class="sy-caption-text">If it fits, I sits</span><span class="sy-caption-year">2019</span></figcaption>
       </figure>
 
       <figure class="sy-gallery-item">
-        <div class="photo"><button type="button" class="sy-photo-btn"><img src="images/seymour/seymour-15-thumb.jpg" data-full="images/seymour/seymour-15-lg.jpg" alt="Seymour burrowed between couch pillows with tongue out" loading="lazy" width="400" height="400"></button></div>
+        <button type="button" class="sy-photo-btn"><img src="images/seymour/seymour-15-thumb.jpg" data-full="images/seymour/seymour-15-lg.jpg" alt="Seymour burrowed between couch pillows with tongue out" loading="lazy" width="400" height="400"></button>
         <figcaption><span class="sy-caption-text">Couch fort</span><span class="sy-caption-year">2019</span></figcaption>
       </figure>
 
       <figure class="sy-gallery-item">
-        <div class="photo"><button type="button" class="sy-photo-btn"><img src="images/seymour/seymour-16-thumb.jpg" data-full="images/seymour/seymour-16-lg.jpg" alt="A little girl and Seymour standing side by side, looking out a window together" loading="lazy" width="400" height="400"></button></div>
+        <button type="button" class="sy-photo-btn"><img src="images/seymour/seymour-16-thumb.jpg" data-full="images/seymour/seymour-16-lg.jpg" alt="A little girl and Seymour standing side by side, looking out a window together" loading="lazy" width="400" height="400"></button>
         <figcaption><span class="sy-caption-text">Lookout buddies</span><span class="sy-caption-year">2019</span></figcaption>
       </figure>
 
       <figure class="sy-gallery-item">
-        <div class="photo"><button type="button" class="sy-photo-btn"><img src="images/seymour/seymour-17-thumb.jpg" data-full="images/seymour/seymour-17-lg.jpg" alt="Seymour lounging on a bed in a glamping tent" loading="lazy" width="400" height="400"></button></div>
+        <button type="button" class="sy-photo-btn"><img src="images/seymour/seymour-17-thumb.jpg" data-full="images/seymour/seymour-17-lg.jpg" alt="Seymour lounging on a bed in a glamping tent" loading="lazy" width="400" height="400"></button>
         <figcaption><span class="sy-caption-text">Glamping</span><span class="sy-caption-year">2020</span></figcaption>
       </figure>
 
       <figure class="sy-gallery-item">
-        <div class="photo"><button type="button" class="sy-photo-btn"><img src="images/seymour/seymour-18-thumb.jpg" data-full="images/seymour/seymour-18-lg.jpg" alt="Seymour lying on a rug by the front door in a patch of sunlight" loading="lazy" width="400" height="400"></button></div>
+        <button type="button" class="sy-photo-btn"><img src="images/seymour/seymour-18-thumb.jpg" data-full="images/seymour/seymour-18-lg.jpg" alt="Seymour lying on a rug by the front door in a patch of sunlight" loading="lazy" width="400" height="400"></button>
         <figcaption><span class="sy-caption-text">Sunspot</span><span class="sy-caption-year">2020</span></figcaption>
       </figure>
 
       <figure class="sy-gallery-item">
-        <div class="photo"><button type="button" class="sy-photo-btn"><img src="images/seymour/seymour-19-thumb.jpg" data-full="images/seymour/seymour-19-lg.jpg" alt="Close-up of Seymour being petted, looking up at the camera" loading="lazy" width="400" height="400"></button></div>
+        <button type="button" class="sy-photo-btn"><img src="images/seymour/seymour-19-thumb.jpg" data-full="images/seymour/seymour-19-lg.jpg" alt="Close-up of Seymour being petted, looking up at the camera" loading="lazy" width="400" height="400"></button>
         <figcaption><span class="sy-caption-text">Those eyes</span><span class="sy-caption-year">2020</span></figcaption>
       </figure>
 
       <figure class="sy-gallery-item">
-        <div class="photo"><button type="button" class="sy-photo-btn"><img src="images/seymour/seymour-20-thumb.jpg" data-full="images/seymour/seymour-20-lg.jpg" alt="A toddler standing by the couch where Seymour is resting" loading="lazy" width="400" height="400"></button></div>
+        <button type="button" class="sy-photo-btn"><img src="images/seymour/seymour-20-thumb.jpg" data-full="images/seymour/seymour-20-lg.jpg" alt="A toddler standing by the couch where Seymour is resting" loading="lazy" width="400" height="400"></button>
         <figcaption><span class="sy-caption-text">Sharing the couch</span><span class="sy-caption-year">2020</span></figcaption>
       </figure>
 
       <figure class="sy-gallery-item">
-        <div class="photo"><button type="button" class="sy-photo-btn"><img src="images/seymour/seymour-21-thumb.jpg" data-full="images/seymour/seymour-21-lg.jpg" alt="Seymour standing at the window, watching the neighborhood on Christmas" loading="lazy" width="400" height="400"></button></div>
+        <button type="button" class="sy-photo-btn"><img src="images/seymour/seymour-21-thumb.jpg" data-full="images/seymour/seymour-21-lg.jpg" alt="Seymour standing at the window, watching the neighborhood on Christmas" loading="lazy" width="400" height="400"></button>
         <figcaption><span class="sy-caption-text">Christmas watch</span><span class="sy-caption-year">2020</span></figcaption>
       </figure>
 
       <figure class="sy-gallery-item">
-        <div class="photo"><button type="button" class="sy-photo-btn"><img src="images/seymour/seymour-22-thumb.jpg" data-full="images/seymour/seymour-22-lg.jpg" alt="Seymour curled up on a chunky knit blanket on a chair" loading="lazy" width="400" height="400"></button></div>
+        <button type="button" class="sy-photo-btn"><img src="images/seymour/seymour-22-thumb.jpg" data-full="images/seymour/seymour-22-lg.jpg" alt="Seymour curled up on a chunky knit blanket on a chair" loading="lazy" width="400" height="400"></button>
         <figcaption><span class="sy-caption-text">Nest</span><span class="sy-caption-year">2021</span></figcaption>
       </figure>
 
       <figure class="sy-gallery-item">
-        <div class="photo"><button type="button" class="sy-photo-btn"><img src="images/seymour/seymour-23-thumb.jpg" data-full="images/seymour/seymour-23-lg.jpg" alt="A child in a red wagon being walked alongside Seymour on leash" loading="lazy" width="400" height="400"></button></div>
+        <button type="button" class="sy-photo-btn"><img src="images/seymour/seymour-23-thumb.jpg" data-full="images/seymour/seymour-23-lg.jpg" alt="A child in a red wagon being walked alongside Seymour on leash" loading="lazy" width="400" height="400"></button>
         <figcaption><span class="sy-caption-text">Walking the crew</span><span class="sy-caption-year">2021</span></figcaption>
       </figure>
 
       <figure class="sy-gallery-item">
-        <div class="photo"><button type="button" class="sy-photo-btn"><img src="images/seymour/seymour-24-thumb.jpg" data-full="images/seymour/seymour-24-lg.jpg" alt="Beautiful side profile portrait of Seymour" loading="lazy" width="400" height="400"></button></div>
+        <button type="button" class="sy-photo-btn"><img src="images/seymour/seymour-24-thumb.jpg" data-full="images/seymour/seymour-24-lg.jpg" alt="Beautiful side profile portrait of Seymour" loading="lazy" width="400" height="400"></button>
         <figcaption><span class="sy-caption-text">Profile</span><span class="sy-caption-year">2021</span></figcaption>
       </figure>
 
       <figure class="sy-gallery-item">
-        <div class="photo"><button type="button" class="sy-photo-btn"><img src="images/seymour/seymour-25-thumb.jpg" data-full="images/seymour/seymour-25-lg.jpg" alt="Seymour relaxing on a patio chair on the deck" loading="lazy" width="400" height="400"></button></div>
+        <button type="button" class="sy-photo-btn"><img src="images/seymour/seymour-25-thumb.jpg" data-full="images/seymour/seymour-25-lg.jpg" alt="Seymour relaxing on a patio chair on the deck" loading="lazy" width="400" height="400"></button>
         <figcaption><span class="sy-caption-text">Deck days</span><span class="sy-caption-year">2021</span></figcaption>
       </figure>
 
       <figure class="sy-gallery-item">
-        <div class="photo"><button type="button" class="sy-photo-btn"><img src="images/seymour/seymour-26-thumb.jpg" data-full="images/seymour/seymour-26-lg.jpg" alt="Seymour and a child sitting together on an ottoman" loading="lazy" width="400" height="400"></button></div>
+        <button type="button" class="sy-photo-btn"><img src="images/seymour/seymour-26-thumb.jpg" data-full="images/seymour/seymour-26-lg.jpg" alt="Seymour and a child sitting together on an ottoman" loading="lazy" width="400" height="400"></button>
         <figcaption><span class="sy-caption-text">Partners in crime</span><span class="sy-caption-year">2021</span></figcaption>
       </figure>
 
       <figure class="sy-gallery-item">
-        <div class="photo"><button type="button" class="sy-photo-btn"><img src="images/seymour/seymour-27-thumb.jpg" data-full="images/seymour/seymour-27-lg.jpg" alt="Seymour yawning on the couch, looking happy" loading="lazy" width="400" height="400"></button></div>
+        <button type="button" class="sy-photo-btn"><img src="images/seymour/seymour-27-thumb.jpg" data-full="images/seymour/seymour-27-lg.jpg" alt="Seymour yawning on the couch, looking happy" loading="lazy" width="400" height="400"></button>
         <figcaption><span class="sy-caption-text">All smiles</span><span class="sy-caption-year">2022</span></figcaption>
       </figure>
 
       <figure class="sy-gallery-item">
-        <div class="photo"><button type="button" class="sy-photo-btn"><img src="images/seymour/seymour-28-thumb.jpg" data-full="images/seymour/seymour-28-lg.jpg" alt="Selfie of Eric and Seymour on a hiking trail" loading="lazy" width="400" height="400"></button></div>
+        <button type="button" class="sy-photo-btn"><img src="images/seymour/seymour-28-thumb.jpg" data-full="images/seymour/seymour-28-lg.jpg" alt="Selfie of Eric and Seymour on a hiking trail" loading="lazy" width="400" height="400"></button>
         <figcaption><span class="sy-caption-text">Trail partners</span><span class="sy-caption-year">2023</span></figcaption>
       </figure>
 
       <figure class="sy-gallery-item">
-        <div class="photo"><button type="button" class="sy-photo-btn"><img src="images/seymour/seymour-29-thumb.jpg" data-full="images/seymour/seymour-29-lg.jpg" alt="Seymour standing on the deck, looking out through the railing" loading="lazy" width="400" height="400"></button></div>
+        <button type="button" class="sy-photo-btn"><img src="images/seymour/seymour-29-thumb.jpg" data-full="images/seymour/seymour-29-lg.jpg" alt="Seymour standing on the deck, looking out through the railing" loading="lazy" width="400" height="400"></button>
         <figcaption><span class="sy-caption-text">Keeping watch</span><span class="sy-caption-year">2024</span></figcaption>
       </figure>
 
       <figure class="sy-gallery-item">
-        <div class="photo"><button type="button" class="sy-photo-btn"><img src="images/seymour/seymour-30-thumb.jpg" data-full="images/seymour/seymour-30-lg.jpg" alt="Close-up of an older Seymour with gray muzzle" loading="lazy" width="400" height="400"></button></div>
+        <button type="button" class="sy-photo-btn"><img src="images/seymour/seymour-30-thumb.jpg" data-full="images/seymour/seymour-30-lg.jpg" alt="Close-up of an older Seymour with gray muzzle" loading="lazy" width="400" height="400"></button>
         <figcaption><span class="sy-caption-text">The old man</span><span class="sy-caption-year">2025</span></figcaption>
       </figure>
 
     </div>
 
-    <!-- TRIBUTE PROSE — afterword, sits below the album. -->
+    <hr class="px-wave">
+
     <h2 class="sy-section-head">Faithful Companion</h2>
     <article class="article">
       <p class="sy-lead">We got Seymour from a pet store in Frazier, Pennsylvania.<span class="sidenote">The salesperson commented during checkout that &ldquo;someone finally bought the crazy one.&rdquo; That about summed him up.</span> A chaotic first year of settling in with a certified lunatic gave way to middle years of compassionate friendship &mdash; a beautiful companion who willingly welcomed each of our children into the household as they arrived. Then came a mellow later life as the family sentinel and a true best friend.</p>
@@ -242,14 +405,12 @@
 
   </main>
 
-  <footer class="site-footer">
-    <div class="site-footer__inner">
-      <span>&copy; 2026 Eric Armbruster</span>
-      <div class="footer-links">
-        <a href="mailto:eric.m.armbruster@gmail.com">email</a>
-        <a href="https://github.com/tenderbrew" target="_blank" rel="noopener">github</a>
-        <a href="https://www.linkedin.com/in/ericmarmbruster/" target="_blank" rel="noopener">linkedin</a>
-      </div>
+  <footer>
+    <p>&copy; 2026 Eric Armbruster</p>
+    <div class="footer-links">
+      <a href="mailto:eric.m.armbruster@gmail.com">email</a>
+      <a href="https://github.com/tenderbrew" target="_blank" rel="noopener">github</a>
+      <a href="https://www.linkedin.com/in/ericmarmbruster/" target="_blank" rel="noopener">linkedin</a>
     </div>
   </footer>
 

@@ -6,7 +6,7 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 Hand-written static personal site served at `www.ericarmbruster.com` via GitHub Pages from `main` (the `CNAME` file). No build step, no bundler, no `package.json`, no test suite — every page is a stand-alone `.html` file at the repo root that the browser loads directly.
 
-**v3 (July 2026):** the site was rebuilt from scratch in a single retro/pixel design system inspired by poolsuite.net. Everything from v1 except the Seymour memorial was torn down; the v1 pages, their data fetchers + GitHub Actions workflows, and the unshipped v2 "painted valley" redesign are all recoverable from git history (see the `archive:` and `v3: tear down` commits). Old sections (video games, film, self-hosting, economics, bitcoin) get ported back one page at a time — **into the pixel system, not as unique designs.**
+**v3 (July 2026):** the site was rebuilt from scratch in a single retro/pixel design system inspired by poolsuite.net. Everything from v1 except the Seymour memorial was torn down; the v1 pages, their data fetchers + GitHub Actions workflows, and the unshipped v2 "painted valley" redesign are all recoverable from git history (see the `archive:` and `v3: tear down` commits). Old sections (video games, film, self-hosting, economics, bitcoin) get ported back one page at a time — **into the pixel system, not as unique designs.** Every page is in the system, including the Seymour memorial.
 
 ## The v3 design system
 
@@ -19,14 +19,14 @@ One system for every page. Tokens live at the top of `css/pixel-base.css` — al
 - **Chrome decisions Eric made explicitly:** hard offset shadows and pixel dividers/ornaments YES; beveled 3D buttons and custom pixel cursors NO.
 - **Motion:** static CSS only — no scroll-jacking, parallax, entrance animations, or JS-driven layout. The single sanctioned animation is the masthead block-cursor blink (`steps()`-based), disabled under `prefers-reduced-motion`. Hover states are fine.
 
-### The Seymour exemption
+### Seymour: pixel chrome, untouched photographs
 
-`seymour.html` is a memorial and is deliberately **exempt** from the pixel system — it keeps its Garamond photo-essay design (`css/tufte-base.css` + `css/sy-styles.css`, EB Garamond + Cormorant Garamond). `css/tufte-base.css` exists *only* for Seymour now; don't load it elsewhere and don't "migrate" Seymour to the pixel system. Its lightbox is an inline IIFE at the bottom of the file.
+`seymour.html` is in the pixel system (Eric asked for this explicitly after initially exempting it), with one hard rule: the 30 memorial photographs stay **full-color and undithered** — Eric's explicit call. Thumbnails are square (`aspect-ratio: 1; object-fit: cover; height: auto` — the `height: auto` matters, or the `height="400"` attribute wins) in hard-shadow frames; `image-rendering: auto` on them, not `pixelated`. Its lightbox is an inline IIFE at the bottom of the file; the old Tufte-era stylesheets (`tufte-base.css`, `sy-styles.css`) were deleted with it.
 
 ## Pages
 
 - `index.html` — single-page home (intro, elsewhere links, Seymour pointer). Carries the canonical head conventions: OG/twitter meta, `theme-color #F3EEDF`, gtag `G-5ZTHJXDR9V`, hector favicon.
-- `seymour.html` — memorial, exempt (see above).
+- `seymour.html` — memorial, pixel chrome with untouched photos (see above).
 - `404.html` — GitHub Pages not-found page, pixel system, `noindex`, **absolute** asset paths (`/css/...`) because it serves at any path.
 
 When adding a page: copy index.html's head block, load `css/pixel-base.css`, put page-specific styles in a `<style>` block in the head, add the page to `sitemap.xml` and to `ALL_PAGES` in `tools/screenshot.js`. There is no shared-layout include system — header/footer markup is duplicated per page, so grep and update every copy when changing shared chrome.
