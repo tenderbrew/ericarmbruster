@@ -1,13 +1,13 @@
 {
-  "fetchedAt": "2026-07-10T14:49:19.582Z",
+  "fetchedAt": "2026-07-10T17:05:23.784Z",
   "price": {
-    "usd": 64057,
-    "time": 1783694709
+    "usd": 64095,
+    "time": 1783702807
   },
   "moves": {
-    "d1": 1.3228492115269441,
-    "d7": 2.4298390381575885,
-    "d30": 4.1704029112109575
+    "d1": 1.3829561205304541,
+    "d7": 2.4906026375058232,
+    "d30": 4.232199050752716
   },
   "history90d": [
     {
@@ -372,60 +372,70 @@
     },
     {
       "date": "2026-07-10",
-      "close": 64030.01440931601
+      "close": 64065.75594435244
     }
   ],
   "blocks": [
     {
-      "height": 957437,
-      "id": "0000000000000000000043b4fd99e2017a39d38122bf0b1aa9e9d86fd4ca7e37",
-      "timestamp": 1783694512,
-      "txCount": 4080
+      "height": 957453,
+      "id": "00000000000000000000c5d00788f35b8042be01d4e6dfc43174d41a2d2fe537",
+      "timestamp": 1783702346,
+      "txCount": 4254
     },
     {
-      "height": 957436,
-      "id": "0000000000000000000091b13575ae184060d0222e967eb4e0c5decb91a27ab0",
-      "timestamp": 1783694043,
-      "txCount": 4695
+      "height": 957452,
+      "id": "00000000000000000001ade33eb47b1625bef4ee28f0c91784455f50e71f0342",
+      "timestamp": 1783701912,
+      "txCount": 6457
     },
     {
-      "height": 957435,
-      "id": "0000000000000000000204610ca8cdc20500640101f90cc555fef4881d765c9d",
-      "timestamp": 1783693387,
-      "txCount": 3927
+      "height": 957451,
+      "id": "000000000000000000012ae85639f95d991cea3e1a32155bccd078f3281f0a72",
+      "timestamp": 1783701725,
+      "txCount": 5944
     },
     {
-      "height": 957434,
-      "id": "00000000000000000001daf134902f0e997e7d61ff2b11b5fddffcb254a47629",
-      "timestamp": 1783693305,
-      "txCount": 3908
+      "height": 957450,
+      "id": "000000000000000000008804aa9b71a9e37bd6cd687cc695373c23aaac100798",
+      "timestamp": 1783701667,
+      "txCount": 4235
     },
     {
-      "height": 957433,
-      "id": "00000000000000000001efd51917a2ea884e0fc20572d74a5e59dda4f25c45e5",
-      "timestamp": 1783692461,
-      "txCount": 4237
+      "height": 957449,
+      "id": "00000000000000000000530db753f08103a2285a41c81f054fa2fb5f9bc564fb",
+      "timestamp": 1783700866,
+      "txCount": 5539
     },
     {
-      "height": 957432,
-      "id": "000000000000000000014afa41c0300c8371e8aec94e1b1b7602ae3474152304",
-      "timestamp": 1783691127,
-      "txCount": 4348
+      "height": 957448,
+      "id": "000000000000000000017cee7d68311b263cab00e0be1c310475b1b2182fd1e4",
+      "timestamp": 1783700581,
+      "txCount": 5767
     },
     {
-      "height": 957431,
-      "id": "000000000000000000018cb6b6bb3bfe8504477703918245e012675f393d4aa1",
-      "timestamp": 1783690650,
-      "txCount": 6613
+      "height": 957447,
+      "id": "00000000000000000002019e68b5b36852610d99c96c0c4afc7eb4403f4d566d",
+      "timestamp": 1783700435,
+      "txCount": 4976
     },
     {
-      "height": 957430,
-      "id": "00000000000000000000c0b9dba0f63c1cb46752d117e67fea720c24ecd6c473",
-      "timestamp": 1783690558,
-      "txCount": 5982
+      "height": 957446,
+      "id": "0000000000000000000113d12615e335e94d4c0b54b2a78bdd66bbce6f0372ff",
+      "timestamp": 1783699933,
+      "txCount": 4772
     }
   ],
   "news": [
+    {
+      "title": "U.S. government digital dollar set to be banned tonight under housing law's CBDC limit",
+      "link": "https://www.coindesk.com/policy/2026/07/10/u-s-government-digital-dollar-set-to-be-banned-tonight-under-housing-law-s-cbdc-limit",
+      "pubDate": "Fri, 10 Jul 2026 16:02:21 +0000"
+    },
+    {
+      "title": "Hyundai becomes first major South Korean company to introduce internal stablecoin transfers",
+      "link": "https://www.coindesk.com/business/2026/07/10/hyundai-becomes-first-major-south-korean-company-to-introduce-internal-stablecoin-transfers",
+      "pubDate": "Fri, 10 Jul 2026 15:26:43 +0000"
+    },
     {
       "title": "OKX, MetaMask, Matter Labs back dispute resolution court for AI agents",
       "link": "https://www.coindesk.com/business/2026/07/10/okx-metamask-matter-labs-back-dispute-resolution-court-for-ai-agents",
@@ -467,7 +477,7 @@
       "pubDate": "Fri, 10 Jul 2026 06:49:13 +0000"
     },
     {
-      "title": "Live updates: Bitcoin takes aim at $65,000, erasing losses from earlier this week",
+      "title": "Live updates: Bitcoin rises to $64,000 as SK Hynix opens for trade after $26.5 billion IPO",
       "link": "https://www.coindesk.com/tech/2026/07/10/live-markets-bitcoin-etfs-bleed-again-while-ether-funds-snap-a-five-day-inflow-streak",
       "pubDate": "Fri, 10 Jul 2026 06:21:34 +0000"
     },
@@ -475,16 +485,6 @@
       "title": "XRP up 2% as buyers push through $1.10 resistance",
       "link": "https://www.coindesk.com/markets/2026/07/10/xrp-up-2-as-buyers-push-through-usd1-10-resistance",
       "pubDate": "Fri, 10 Jul 2026 05:13:48 +0000"
-    },
-    {
-      "title": "Bitcoin's quiet split: Strong in USD, lagging in JPY as Yen rises on intervention fears",
-      "link": "https://www.coindesk.com/markets/2026/07/10/bitcoin-s-quiet-split-strong-in-usd-lagging-in-jpy-as-yen-rises-on-intervention-fears",
-      "pubDate": "Fri, 10 Jul 2026 04:34:06 +0000"
-    },
-    {
-      "title": "Bitcoin zips higher to nearly $64,000 as chip rally and yen strength drive gains",
-      "link": "https://www.coindesk.com/markets/2026/07/10/bitcoin-zips-to-nearly-usd64-000-as-chip-rally-and-yen-strength-drive-gains",
-      "pubDate": "Fri, 10 Jul 2026 03:57:58 +0000"
     }
   ]
 }
