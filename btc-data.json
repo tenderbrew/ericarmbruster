@@ -1,13 +1,13 @@
 {
-  "fetchedAt": "2026-07-11T13:49:37.225Z",
+  "fetchedAt": "2026-07-11T16:07:27.973Z",
   "price": {
-    "usd": 64194,
-    "time": 1783777510
+    "usd": 64103,
+    "time": 1783785908
   },
   "moves": {
-    "d1": 0.1747129627050148,
-    "d7": 1.7430431357907672,
-    "d30": 1.0097181708601743
+    "d1": 0.03270749677977136,
+    "d7": 1.5988144395674864,
+    "d30": 0.86652901994968
   },
   "history90d": [
     {
@@ -372,60 +372,65 @@
     },
     {
       "date": "2026-07-11",
-      "close": 64202.319828047286
+      "close": 64067.54890470206
     }
   ],
   "blocks": [
     {
-      "height": 957573,
-      "id": "000000000000000000000e95191b046b9e08295a3e18ce3a67496e4a1a061f78",
-      "timestamp": 1783777393,
-      "txCount": 4464
+      "height": 957584,
+      "id": "00000000000000000001cb03291fe4d0b064d830d01c859d2cd5314880e442fb",
+      "timestamp": 1783785866,
+      "txCount": 4392
     },
     {
-      "height": 957572,
-      "id": "0000000000000000000180bc621910796b7e5012da18172484aad50b3f200521",
-      "timestamp": 1783775969,
-      "txCount": 4189
+      "height": 957583,
+      "id": "000000000000000000020263c80f37729ce3cb4a6b9be88cb31c2e6e635c814f",
+      "timestamp": 1783785197,
+      "txCount": 4302
     },
     {
-      "height": 957571,
-      "id": "00000000000000000000797def8a40a7c884881118ddfde1c007f04d6f59fbe7",
-      "timestamp": 1783775545,
-      "txCount": 3891
+      "height": 957582,
+      "id": "00000000000000000000573d02831735d9b3bc46c2b00a6d64c47ecd375f6d12",
+      "timestamp": 1783784697,
+      "txCount": 4398
     },
     {
-      "height": 957570,
-      "id": "00000000000000000000ac9215d127750e7d88ad3fc1a768c72ef2d3a5e799f2",
-      "timestamp": 1783774412,
-      "txCount": 4505
+      "height": 957581,
+      "id": "0000000000000000000201180b483d50941c1461965abea5aff9e3c4ebd7ee1c",
+      "timestamp": 1783782652,
+      "txCount": 4690
     },
     {
-      "height": 957569,
-      "id": "000000000000000000001542144f5b9958f5d64ad5dac79495f0855b8befdeab",
-      "timestamp": 1783773865,
-      "txCount": 6174
+      "height": 957580,
+      "id": "000000000000000000008e644610a3fdcd4940eaae3c2b6211a0180fad608b25",
+      "timestamp": 1783781146,
+      "txCount": 5085
     },
     {
-      "height": 957568,
-      "id": "0000000000000000000016e984960db06ead82de4117cd020a2b618ba40a888d",
-      "timestamp": 1783773712,
-      "txCount": 5021
+      "height": 957579,
+      "id": "00000000000000000000b7c00baad167fa5a897ef5c3f830236503b85b115e0d",
+      "timestamp": 1783780538,
+      "txCount": 6927
     },
     {
-      "height": 957567,
-      "id": "000000000000000000017d00dea8439a79ac5c1c944e3f1c4d44f3c81d115708",
-      "timestamp": 1783772962,
-      "txCount": 5030
+      "height": 957578,
+      "id": "0000000000000000000162f744a3356af21c85f2c7442791a2856cabec89f030",
+      "timestamp": 1783780488,
+      "txCount": 4891
     },
     {
-      "height": 957566,
-      "id": "000000000000000000017bc82e21895370553cb1d2d66fa109c85f38d7436922",
-      "timestamp": 1783772762,
-      "txCount": 6725
+      "height": 957577,
+      "id": "0000000000000000000014ae15d21c561bd1a37974455d9978927f2bd759c742",
+      "timestamp": 1783779993,
+      "txCount": 5555
     }
   ],
   "news": [
+    {
+      "title": "The UK has finally shown it’s serious about crypto",
+      "link": "https://www.coindesk.com/opinion/2026/07/11/the-uk-has-finally-shown-it-s-serious-about-crypto",
+      "pubDate": "Sat, 11 Jul 2026 15:00:00 +0000"
+    },
     {
       "title": "Bitcoin treasury company Empery Digital sold about half of its BTC stack",
       "link": "https://www.coindesk.com/markets/2026/07/11/bitcoin-treasury-company-empery-digital-sold-about-half-of-btc-stack",
@@ -480,11 +485,6 @@
       "title": "Polymarket seeks approval to bring margin trading to U.S. customers",
       "link": "https://www.coindesk.com/markets/2026/07/10/polymarket-seeks-approval-to-bring-margin-trading-to-u-s-customers",
       "pubDate": "Fri, 10 Jul 2026 09:35:21 +0000"
-    },
-    {
-      "title": "Bitcoin's $60,000-$70,000 range becomes third most traded range in history",
-      "link": "https://www.coindesk.com/markets/2026/07/10/bitcoin-s-usd60k-to-usd70k-range-becomes-third-longest-consolidation-in-history",
-      "pubDate": "Fri, 10 Jul 2026 09:16:52 +0000"
     }
   ]
 }
