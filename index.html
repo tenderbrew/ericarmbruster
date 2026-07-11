@@ -106,6 +106,18 @@
 
     .colophon-door { color: var(--ink); text-decoration: none; }
     .colophon-door:hover { color: var(--sunset); }
+    .memoriam { display: flex; align-items: center; gap: 20px; }
+    .memoriam-photo { flex: 0 0 auto; display: block; }
+    .memoriam-photo img {
+      display: block;
+      width: 88px;
+      height: 88px;
+      object-fit: cover;
+      image-rendering: auto; /* a real photograph */
+      border: 2px solid var(--ink);
+      box-shadow: 4px 4px 0 var(--shadow);
+    }
+    .memoriam-photo:hover img { border-color: var(--sunset); }
     .ew-icon { flex: 0 0 16px; align-self: center; }
     .toc .px-label { min-width: 160px; }
     .toc-icon { flex: 0 0 16px; align-self: center; }
@@ -241,12 +253,17 @@
 
     <hr class="px-wave">
 
-    <div class="px-panel">
-      <p class="px-label">In memoriam</p>
-      <p>
-        <a href="seymour.html">Seymour (2010&ndash;2025)</a> &mdash; a
-        memorial for our Jack Russell Terrier.
-      </p>
+    <div class="px-panel memoriam">
+      <a class="memoriam-photo" href="seymour.html" aria-hidden="true" tabindex="-1">
+        <img src="images/seymour-memoriam.png" alt="" width="88" height="88" loading="lazy">
+      </a>
+      <div>
+        <p class="px-label">In memoriam</p>
+        <p>
+          <a href="seymour.html">Seymour (2010&ndash;2025)</a> &mdash; a
+          memorial for our Jack Russell Terrier.
+        </p>
+      </div>
     </div>
   </main>
 
