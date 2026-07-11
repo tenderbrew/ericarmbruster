@@ -12,13 +12,13 @@ Hand-written static personal site served at `www.ericarmbruster.com` via GitHub 
 
 One system for every page. Tokens live at the top of `css/pixel-base.css` — always use the variables, never hard-code colors.
 
-- **Palette (locked by Eric):** paper `#F3EEDF`, ink `#1A1A18`, pool blue `#2E6FBF`, sunset orange `#E8743B`, plus derived `--paper-dim` for panel fills. Shadows are always solid black offsets (`box-shadow: 4px 4px 0`) — never blurred.
+- **Palette (locked by Eric):** paper `#F3EEDF`, ink `#1A1A18`, pool blue `#2E6FBF`, sunset orange `#E8743B`, plus derived `--paper-dim` for panel fills. Component shadows are **checkerboard-dithered** (System 7 style): a `::after` pseudo-element offset 4px with a 2px-checker data-URI (see "Dithered pixel shadows" in pixel-base.css) — press states shrink the offset to 2px. Tables and sub-page one-off frames keep solid `4px 4px 0` offsets; never blurred anywhere.
 - **Type:** DotGothic16 (Google Fonts) for display/nav/labels, **integer pixel sizes only** (48/32/24/16 — the face is drawn on a grid; fractional sizes blur it). IBM Plex Mono for body text and tables.
 - **Ornament:** hand-placed pixel art as inline SVG with `shape-rendering: crispEdges` — masthead scenes, the `.px-wave` divider, `.px-bullets` sprite bullets. No border-radius anywhere in the system.
 - **Dock icons (homepage Sections):** 24×24 poolsuite-style *objects* rendered at 72px in `.dock-tile`s. They use the four site colors PLUS a fixed icon-only extra set — brown `#8B5A33`, green `#5F7F3F`, gray `#9C9C94`, yellow `#E8C84A` — documented here so it stays a closed 8-color kit, not a free-for-all. Masthead scenes and 16×16 glyphs stay strict 4-color. Generator maps live in the session scratchpad (`dock_icons.py`) — same ASCII-grid method.
-- **The sprite sheet:** every section page has a masthead pixel scene (32×18 grid rendered at 256×144) and a 16×16 TOC icon on the homepage — hourglass/now, CRT/video-games, movie-camera/film, book/reading, cassette/music, server/self-hosting, chart/economics, coin-on-horizon/bitcoin, tree-with-roots/family-tree, sunk-sun/404, cartridge/RGC link. All drawn as unit `<rect>`s in ONLY the four palette colors (paper is negative space). The ASCII-map generator that produced them lives outside the repo (session scratchpad `sprites.py`) — for new sprites, draw a `.`/`K`/`P`/`S` character grid and emit merged-run rects the same way; the crunch test is a screenshot at final size. Hector and Seymour are exempt (favicon sprite / quiet memorial).
+- **The sprite sheet:** every section page has a masthead pixel scene (32×18 grid rendered at 256×144) — hourglass/now, CRT/video-games, movie-camera/film, book/reading, cassette/music, server/self-hosting, chart/economics, coin-on-horizon/bitcoin, tree-with-roots/family-tree, sunk-sun/404. 16×16 glyphs remain for the Elsewhere icons (octocat/in/envelope) and the guestbook pen. All drawn as unit `<rect>`s in ONLY the four palette colors (paper is negative space). The ASCII-map generator that produced them lives outside the repo (session scratchpad `sprites.py`) — for new sprites, draw a `.`/`K`/`P`/`S` character grid and emit merged-run rects the same way; the crunch test is a screenshot at final size. Hector and Seymour are exempt (favicon sprite / quiet memorial).
 - **Images:** photos get pre-dithered into the 4-color palette via `node tools/dither.js input.jpg output.png [width]` (one-time `npm install sharp`; keep output widths small, ~160px, and scale up with `image-rendering: pixelated`). Commit the dithered PNG as the asset.
-- **Chrome decisions Eric made explicitly:** hard offset shadows and pixel dividers/ornaments YES; beveled 3D buttons and custom pixel cursors NO.
+- **Chrome decisions Eric made explicitly:** pixel dividers/ornaments YES; dithered checker shadows YES (upgraded from solid offsets 2026-07-11); beveled 3D buttons and custom pixel cursors NO (the mwm window titlebars are the one sanctioned bevel-free chrome).
 - **Motion:** static CSS only — no scroll-jacking, parallax, entrance animations, or JS-driven layout. The single sanctioned animation is the masthead block-cursor blink (`steps()`-based), disabled under `prefers-reduced-motion`. Hover states are fine.
 
 ### Seymour: pixel chrome, untouched photographs
@@ -27,7 +27,7 @@ One system for every page. Tokens live at the top of `css/pixel-base.css` — al
 
 ## Pages
 
-- `index.html` — home: intro, sections TOC, elsewhere links, Seymour pointer. Carries the canonical head conventions: OG/twitter meta, `theme-color #F3EEDF`, gtag `G-5ZTHJXDR9V`, hector favicon. The blinking masthead cursor is homepage-only (`.masthead--home`).
+- `index.html` — the desktop: sun/moon masthead (mode cycler), Hector portrait (door to his page), the dock (4×2 object-icon tiles → mwm windows), Elsewhere tiles (github/linkedin/email/nintendopipeline), guestbook tile, Seymour memoriam panel, secret doors. Carries the canonical head conventions: OG/twitter meta, `theme-color #F3EEDF`, gtag `G-5ZTHJXDR9V`, hector favicon. The blinking masthead cursor is homepage-only (`.masthead--home`).
 - `now.html` — hand-edited "what I'm up to": one paragraph + date, replaced whenever.
 - `video-games.html` — hydrates from `steam-data.json` (see pipelines below).
 - `film.html` — hydrates from `film-data.json`; posters hotlink Letterboxd's CDN.
@@ -40,7 +40,8 @@ One system for every page. Tokens live at the top of `css/pixel-base.css` — al
 - `hector.html` — hand-edited photo page (template figure in a comment); uses the shared `.px-gallery`.
 - `seymour.html` — memorial, pixel chrome with untouched photos (see above).
 - `404.html` — GitHub Pages not-found page, pixel system, `noindex`, **absolute** asset paths (`/css/...`) because it serves at any path.
-- Retro Game Club is deliberately NOT a page here — it links out to nintendopipeline.club (its own repo/site) from the homepage TOC.
+- Retro Game Club is deliberately NOT a page here — its cartridge tile in the Elsewhere row links out to nintendopipeline.club (its own repo/site).
+- `guestbook.html` — live-backend page (see Data pipelines); `birds.html` + `colophon.html` — secret pages, noindex, not in sitemap.
 
 ## The windows (homepage desktop)
 
@@ -78,15 +79,15 @@ Gotcha that broke the first version of these scripts: `ssh ... | python - "$OUT"
 
 JSON shape is a contract between fetcher and page — change both sides together. Because these workflows commit to `main`, `git pull --rebase origin main` before pushing.
 
-**Guestbook** (the one page with a live backend): `guestbook.html` talks to `https://guestbook.ericarmbruster.com` — a stdlib-Node service at `/opt/docker/guestbook` on the homelab (`docker compose -p guestbook`, cloudflared tunnel under profile `tunnel`; the CF public hostname points at `guestbook:8000`, so the container listens on PORT=8000). POST /sign → honeypot/time-trap/no-links/rate-limit → pending queue → Discord webhook ping with secret-keyed approve/deny links; GET /entries is CF-cached 60s. Secrets only in the homelab `.env`. The page degrades to an "asleep" note if the backend is down; screenshot tool renders it in that offline state by design.
+**Guestbook** (the one page with a live backend): `guestbook.html` talks to `https://guestbook.ericarmbruster.com` — a stdlib-Node service at `/opt/docker/guestbook` on the homelab (`docker compose -p guestbook`, cloudflared tunnel under profile `tunnel`; the CF public hostname points at `guestbook:8000`, so the container listens on PORT=8000). POST /sign → honeypot/time-trap/no-links/rate-limit (5/hr per IP — a home NAT is a whole household) → pending queue → Discord webhook ping (configured, live) with secret-keyed approve/deny links. **Approve/deny is two-step:** GET renders a confirm page, only POST /admin/act mutates — because Discord's link-preview crawler GETs every URL in a message (this bit us). GET /entries is CF-cached 60s; GET /export/{music,services} feeds update-homelab.yml. Secrets only in the homelab `.env`. The page degrades to an "asleep" note if the backend is down; screenshot tool renders it in that offline state by design.
 
 Shared pixel components for data pages live in `pixel-base.css`: `.px-stats`/`.px-stat` (stat tiles), `.px-table` (bordered tables), `.px-bar-row` (single-series chunky bars). Gotcha: `ul.px-bullets li` owns `padding-left` for the sprite bullet — page styles must only set `padding-top/bottom` on those `li`s or the bullet overlaps the text.
 
-When adding a page: copy index.html's head block, load `css/pixel-base.css`, put page-specific styles in a `<style>` block in the head, add the page to `sitemap.xml` and to `ALL_PAGES` in `tools/screenshot.js`. There is no shared-layout include system — header/footer markup is duplicated per page, so grep and update every copy when changing shared chrome.
+When adding a page: copy a section page's head block (including the mode/framed pre-paint script), load `css/pixel-base.css?v=N`, put page-specific styles in a `<style>` block in the head, draw a masthead sprite + a dock icon, add the page to `sitemap.xml`, `ALL_PAGES` in `tools/screenshot.js`, and a dock tile in index.html. There is no shared-layout include system — chrome is duplicated per page, so grep and update every copy when changing shared markup. **Cache-busting convention: any pixel-base.css change must bump the `?v=N` query on ALL pages** (sed across *.html) — GitHub Pages caches for 10 minutes and browsers hold stylesheets long past deploys (this bit us too).
 
 ## Working on the site
 
-- **Preview locally:** serve the repo root with any static server (`python -m http.server`); `file://` also works now that no page fetches JSON at runtime.
+- **Preview locally:** serve the repo root with any static server (`python -m http.server`) — the data pages `fetch()` their local JSON, so `file://` breaks them. The guestbook page always talks to the live tunnel endpoint regardless.
 - **Visual check (headless):** `node tools/screenshot.js [pages…]` → `screenshots/check-<page>.png` (git-ignored). This is how to actually *see* a UI change instead of only claiming it works.
 - There is no lint or test command. Validation is "open it in a browser" or the screenshot tool. If you change UI and genuinely can't preview it, say so explicitly rather than claiming success.
 

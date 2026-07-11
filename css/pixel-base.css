@@ -6,7 +6,8 @@
   Rules of the system:
   - DotGothic16 for display/nav/labels, at integer pixel sizes only.
   - IBM Plex Mono for body text and tables.
-  - Shadows are solid black offsets — never blurred.
+  - Component shadows are dithered 2px checkers (::after); tables and
+    sub-page one-offs keep solid offsets. Never blurred.
   - Ornament is pixel art (inline SVG, crispEdges); no border-radius anywhere.
   - Static CSS only. The single animation (masthead cursor blink) is
     steps()-based and removed under prefers-reduced-motion.

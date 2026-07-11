@@ -2,60 +2,47 @@
 
 My personal website — a hand-written static site served at
 [www.ericarmbruster.com](https://www.ericarmbruster.com) from this repo's `main`
-branch via GitHub Pages (see `CNAME`).
+branch via GitHub Pages (see `CNAME`). No build step, no bundler, no framework:
+every page is a stand-alone `.html` file the browser loads directly.
 
-There is no build step, no bundler, and no `package.json`. Every page is a
-stand-alone `.html` file at the repo root that the browser loads directly.
+## v3 — "the pixel rebuild" (July 2026, v1.0)
 
-## v3 (July 2026)
+A retro/pixel design system inspired by poolsuite.net: four colors
+(cream / ink / pool blue / sunset orange), DotGothic16 + IBM Plex Mono,
+hand-placed pixel-art sprites, checkerboard-dithered shadows. The homepage is
+a little desktop — section tiles open pages in Motif/CDE-style windows — and
+the whole site follows the clock at my house: **day, dusk, and night** looks
+that switch on Eastern time (clicking the sun cycles them).
 
-The site was rebuilt from scratch in July 2026 in a **retro/pixel** design
-system (poolsuite.net-inspired). Everything from v1 was removed (the Seymour memorial was rebuilt in the
-new system with its photographs untouched); old sections (video games,
-film, self-hosting, economics, bitcoin) will be ported back one at a time. The v1 pages, their
-data fetchers/workflows, and the unshipped v2 "painted valley" redesign all
-live in git history.
+Earlier eras (v1 "the bookshelf", v2 "the valley", never shipped) live in git
+history — and in a hidden museum page somewhere on the site. There are several
+other secrets. Happy hunting.
 
 ## Pages
 
-- `index.html` — home: intro, sections TOC, links, Seymour pointer.
-- `now.html` — what I'm up to right now (hand-edited).
-- `video-games.html` — Steam library snapshot (auto: `steam-fetch.js` + daily Action → `steam-data.json`).
-- `film.html` — Letterboxd diary (auto: `film-fetch.js` + 6-hourly Action → `film-data.json`).
-- `reading.html` — Goodreads shelves (auto: `reading-fetch.js` + daily Action → `reading-data.json`).
-- `music.html` — Plex listening history (auto: homelab cron → tunnel export → `update-homelab.yml` every 6h).
-- `self-hosting.html` — the homelab's own service inventory (auto: same homelab pipeline).
-- `economics.html` — FRED indicators + Mises feed (auto: `econ-fetch.js` + 6-hourly Action).
-- `bitcoin.html` — price/blocks/news snapshot (auto: `btc-fetch.js` + 3-hourly Action).
-- `family-tree.html` — the ancestry research, deceased ancestors only (hand-edited).
-- `hector.html` — the resident dog (hand-edited).
-- `seymour.html` — photo-essay memorial for Seymour (2010–2025), in the
-  pixel system. The memorial photographs themselves stay full-color and
-  undithered, mounted in hard-shadow frames.
-- `404.html` — GitHub Pages not-found page, in the pixel system.
+**Sections (the dock):** video games (Steam), film (Letterboxd),
+reading (Goodreads), music (Plex), self-hosting (the homelab's own inventory),
+family tree, economics (FRED), bitcoin.
 
-## The design system
+**Everything else:** now, hector, guestbook, the Seymour memorial, a styled
+404, and a couple of unlisted pages you have to find.
 
-Tokens live at the top of `css/pixel-base.css`:
+## How it stays fresh (all zero-touch)
 
-- **Palette:** cream paper `#F3EEDF`, soft-black ink `#1A1A18`, pool blue
-  `#2E6FBF`, sunset orange `#E8743B`. Shadows are solid black offsets
-  (`4px 4px 0`), never blurred.
-- **Type:** DotGothic16 for display/nav/labels at integer pixel sizes only;
-  IBM Plex Mono for body text and tables. Both from Google Fonts.
-- **Ornament:** hand-placed pixel art as inline SVG with
-  `shape-rendering: crispEdges` (masthead sun-over-water, wave dividers,
-  sprite bullets). No border-radius anywhere.
-- **Images:** photos are pre-dithered into the palette with
-  `node tools/dither.js input.jpg output.png [width]` (needs a one-time
-  `npm install sharp`; `node_modules` is git-ignored) and rendered with
-  `image-rendering: pixelated`.
-- **Motion:** static CSS only. The single animation is the masthead block
-  cursor (steps-based blink), disabled under `prefers-reduced-motion`.
+| Cadence | What |
+|---|---|
+| real-time | guestbook (self-hosted on my homelab behind a Cloudflare tunnel, Discord-moderated) |
+| every 3h | bitcoin |
+| every 6h | film, economics, music + self-hosting (homelab cron → tunnel export → Action) |
+| daily | video games, reading |
 
-## Preview
+GitHub Actions commit refreshed JSON; pages hydrate from those baked files at
+load — the browser never calls upstream APIs.
 
-Serve the repo root with any static file server (`python -m http.server`)
-or open the files directly — there are no runtime data fetches anymore.
-`node tools/screenshot.js` renders pages headlessly to `screenshots/`
-(git-ignored) for a visual check.
+## Development
+
+- Preview: any static server from the repo root (`python -m http.server`).
+- Visual check: `node tools/screenshot.js [pages…]` renders every page
+  headlessly and asserts the data pages actually hydrated.
+- Everything else an agent needs — design tokens, sprite methodology,
+  pipelines, gotchas, the secrets registry — is in [`CLAUDE.md`](CLAUDE.md).
