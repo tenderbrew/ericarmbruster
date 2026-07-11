@@ -1,13 +1,13 @@
 {
-  "fetchedAt": "2026-07-11T10:32:25.329Z",
+  "fetchedAt": "2026-07-11T13:49:37.225Z",
   "price": {
-    "usd": 64127,
-    "time": 1783765809
+    "usd": 64194,
+    "time": 1783777510
   },
   "moves": {
-    "d1": 0.07015948779300896,
-    "d7": 1.63685277703296,
-    "d30": 0.9042931916183772
+    "d1": 0.1747129627050148,
+    "d7": 1.7430431357907672,
+    "d30": 1.0097181708601743
   },
   "history90d": [
     {
@@ -372,60 +372,70 @@
     },
     {
       "date": "2026-07-11",
-      "close": 64113.80837140121
+      "close": 64202.319828047286
     }
   ],
   "blocks": [
     {
-      "height": 957552,
-      "id": "000000000000000000016f37f66674d317affd0eb30c2934f9420d0fffb75fc0",
-      "timestamp": 1783764282,
-      "txCount": 6989
+      "height": 957573,
+      "id": "000000000000000000000e95191b046b9e08295a3e18ce3a67496e4a1a061f78",
+      "timestamp": 1783777393,
+      "txCount": 4464
     },
     {
-      "height": 957551,
-      "id": "00000000000000000001fdde99500a47bab9fcfd90cd3d012f1e544093add081",
-      "timestamp": 1783764227,
-      "txCount": 5437
+      "height": 957572,
+      "id": "0000000000000000000180bc621910796b7e5012da18172484aad50b3f200521",
+      "timestamp": 1783775969,
+      "txCount": 4189
     },
     {
-      "height": 957550,
-      "id": "000000000000000000005a3806d6e0a2334216a30bf1c1e401a12097e835f540",
-      "timestamp": 1783763683,
-      "txCount": 1394
+      "height": 957571,
+      "id": "00000000000000000000797def8a40a7c884881118ddfde1c007f04d6f59fbe7",
+      "timestamp": 1783775545,
+      "txCount": 3891
     },
     {
-      "height": 957549,
-      "id": "0000000000000000000176a96be5825a99c6fc446f534b98550843919d65d627",
-      "timestamp": 1783763225,
-      "txCount": 7082
+      "height": 957570,
+      "id": "00000000000000000000ac9215d127750e7d88ad3fc1a768c72ef2d3a5e799f2",
+      "timestamp": 1783774412,
+      "txCount": 4505
     },
     {
-      "height": 957548,
-      "id": "000000000000000000003b986f3fd59c9a52360bff770bd883b003417f586b38",
-      "timestamp": 1783763177,
-      "txCount": 4842
+      "height": 957569,
+      "id": "000000000000000000001542144f5b9958f5d64ad5dac79495f0855b8befdeab",
+      "timestamp": 1783773865,
+      "txCount": 6174
     },
     {
-      "height": 957547,
-      "id": "00000000000000000001981623436b18439c33684146afd40424377a1a765c17",
-      "timestamp": 1783762986,
-      "txCount": 5517
+      "height": 957568,
+      "id": "0000000000000000000016e984960db06ead82de4117cd020a2b618ba40a888d",
+      "timestamp": 1783773712,
+      "txCount": 5021
     },
     {
-      "height": 957546,
-      "id": "00000000000000000001dba2f1759c4891b4ca218a3ee4d41ff4284ddbcb5888",
-      "timestamp": 1783762553,
-      "txCount": 5402
+      "height": 957567,
+      "id": "000000000000000000017d00dea8439a79ac5c1c944e3f1c4d44f3c81d115708",
+      "timestamp": 1783772962,
+      "txCount": 5030
     },
     {
-      "height": 957545,
-      "id": "00000000000000000000c318d430b421858ba279d899e03e70b2b7ca0d37e92d",
-      "timestamp": 1783761851,
-      "txCount": 4579
+      "height": 957566,
+      "id": "000000000000000000017bc82e21895370553cb1d2d66fa109c85f38d7436922",
+      "timestamp": 1783772762,
+      "txCount": 6725
     }
   ],
   "news": [
+    {
+      "title": "Bitcoin treasury company Empery Digital sold about half of its BTC stack",
+      "link": "https://www.coindesk.com/markets/2026/07/11/bitcoin-treasury-company-empery-digital-sold-about-half-of-btc-stack",
+      "pubDate": "Sat, 11 Jul 2026 12:25:05 +0000"
+    },
+    {
+      "title": "AI found an Ethereum bug that could take validators offline, but humans had to prove it",
+      "link": "https://www.coindesk.com/tech/2026/07/10/ai-found-an-ethereum-bug-that-could-take-validators-offline-but-humans-had-to-prove-it",
+      "pubDate": "Sat, 11 Jul 2026 12:00:00 +0000"
+    },
     {
       "title": "Bitcoin analysts predict $300,000–$500,000 price in 2029. The math says no",
       "link": "https://www.coindesk.com/markets/2026/07/10/bitcoin-analysts-predict-usd300-000-usd500-000-price-in-2029-the-math-says-no",
@@ -475,16 +485,6 @@
       "title": "Bitcoin's $60,000-$70,000 range becomes third most traded range in history",
       "link": "https://www.coindesk.com/markets/2026/07/10/bitcoin-s-usd60k-to-usd70k-range-becomes-third-longest-consolidation-in-history",
       "pubDate": "Fri, 10 Jul 2026 09:16:52 +0000"
-    },
-    {
-      "title": "Metaplanet explores bringing bitcoin-backed digital credit to Japan",
-      "link": "https://www.coindesk.com/markets/2026/07/10/metaplanet-explores-bringing-bitcoin-backed-digital-credit-to-japan",
-      "pubDate": "Fri, 10 Jul 2026 09:08:20 +0000"
-    },
-    {
-      "title": "Bitcoin gets a green light from a reliable momentum gauge. Here are key levels to watch",
-      "link": "https://www.coindesk.com/markets/2026/07/10/bitcoin-gets-a-green-light-from-a-reliable-momentum-gauge-here-are-key-levels-to-watch",
-      "pubDate": "Fri, 10 Jul 2026 06:49:13 +0000"
     }
   ]
 }
