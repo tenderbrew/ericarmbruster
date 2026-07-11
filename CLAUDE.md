@@ -42,6 +42,10 @@ One system for every page. Tokens live at the top of `css/pixel-base.css` — al
 - `404.html` — GitHub Pages not-found page, pixel system, `noindex`, **absolute** asset paths (`/css/...`) because it serves at any path.
 - Retro Game Club is deliberately NOT a page here — it links out to nintendopipeline.club (its own repo/site) from the homepage TOC.
 
+## The windows (homepage desktop)
+
+On desktop widths (>700px), internal links on the homepage open in **Motif/CDE-style windows** (iframes) instead of navigating: `.mwm-window` chrome in index.html — pool titlebar (dash button = close, box = open as real page), draggable, ESC/back closes, up to 4 stacked, `#slug` deep links open a window on load. Pages detect framing via `window.self!==window.top` → `html.framed` hides their `.site-nav` (rule in pixel-base). Phones and no-JS fall back to plain navigation, and every page stays a real canonical URL — the windows are decoration, not architecture. Screenshot tool is unaffected (it loads pages directly).
+
 ## The secrets (deliberate easter eggs — do not "clean up")
 
 - **Day / dusk / night:** the site follows the clock at Eric's house — a pre-paint head script on every page computes the hour in `America/New_York` (day 8:00–19:00, dusk 6–8 + 19–21, night 21–6) and sets `html.dusk` / `html.night`. Clicking the homepage sun **cycles** day→dusk→night, stored in `sessionStorage.roost_mode` (session override only; next visit returns to the clock). Tokens: `html.dusk` warms the paper; `html.night` flips paper/ink and sprite ink survives via `html.night svg.px-art rect[fill="#1A1A18"]`. Three masthead scenes (`.sun-day/.sun-dusk/.sun-night`) — their show/hide selectors must stay `.masthead`-scoped or `.masthead .px-art { display:block }` wins the specificity fight. The head script skips the clock when `navigator.webdriver` is true so tools/screenshot.js always captures day.

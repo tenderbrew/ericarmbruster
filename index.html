@@ -39,8 +39,8 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=DotGothic16&family=IBM+Plex+Mono:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet">
 
-  <link rel="stylesheet" href="css/pixel-base.css?v=5">
-  <script>try{var m=sessionStorage.roost_mode;if(!m&&!navigator.webdriver){var h=+new Intl.DateTimeFormat("en-US",{timeZone:"America/New_York",hour:"numeric",hour12:false}).format(new Date());m=(h>=21||h<6)?"night":(h<8||h>=19)?"dusk":"day"}if(m==="night"||m==="dusk")document.documentElement.classList.add(m)}catch(e){}</script>
+  <link rel="stylesheet" href="css/pixel-base.css?v=6">
+  <script>try{if(window.self!==window.top)document.documentElement.classList.add("framed");var m=sessionStorage.roost_mode;if(!m&&!navigator.webdriver){var h=+new Intl.DateTimeFormat("en-US",{timeZone:"America/New_York",hour:"numeric",hour12:false}).format(new Date());m=(h>=21||h<6)?"night":(h<8||h>=19)?"dusk":"day"}if(m==="night"||m==="dusk")document.documentElement.classList.add(m)}catch(e){}</script>
   <style>
     .masthead .sun-night, .masthead .sun-dusk { display: none; }
     html.night .masthead .sun-day, html.night .masthead .sun-dusk { display: none; }
@@ -147,6 +147,72 @@
       background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="4" height="4" shape-rendering="crispEdges"><rect width="2" height="2" fill="%231A1A18"/><rect x="2" y="2" width="2" height="2" fill="%231A1A18"/></svg>');
       background-size: 4px 4px;
       image-rendering: pixelated;
+    }
+    /* ---- mwm windows (Motif/CDE chrome, roost palette) ---- */
+    .mwm-window {
+      position: fixed;
+      display: flex;
+      flex-direction: column;
+      background: var(--paper);
+      border: 2px solid var(--ink);
+      width: min(92vw, 900px);
+      height: min(84vh, 720px);
+      z-index: 50;
+    }
+    .mwm-window::after {
+      content: '';
+      position: absolute;
+      z-index: -1;
+      top: 6px;
+      left: 6px;
+      right: -8px;
+      bottom: -8px;
+      background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="4" height="4" shape-rendering="crispEdges"><rect width="2" height="2" fill="%231A1A18"/><rect x="2" y="2" width="2" height="2" fill="%231A1A18"/></svg>');
+      background-size: 4px 4px;
+      image-rendering: pixelated;
+    }
+    .mwm-title {
+      display: flex;
+      align-items: stretch;
+      height: 34px;
+      background: var(--pool);
+      border-bottom: 2px solid var(--ink);
+      cursor: grab;
+      user-select: none;
+      touch-action: none;
+    }
+    .mwm-window.dragging .mwm-title { cursor: grabbing; }
+    .mwm-window:not(.top) .mwm-title { background: var(--paper-dim); }
+    .mwm-title .name {
+      flex: 1;
+      font-family: var(--font-display);
+      font-size: 16px;
+      color: var(--paper);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      overflow: hidden;
+      white-space: nowrap;
+    }
+    .mwm-window:not(.top) .mwm-title .name { color: var(--ink); }
+    .mwm-title button {
+      width: 34px;
+      border: 0;
+      border-left: 2px solid var(--ink);
+      background: var(--paper-dim);
+      color: var(--ink);
+      font-family: var(--font-body);
+      font-size: 14px;
+      cursor: pointer;
+      padding: 0;
+    }
+    .mwm-title button:first-child { border-left: 0; border-right: 2px solid var(--ink); }
+    .mwm-title button:hover { background: var(--sunset); color: var(--paper); }
+    .mwm-window iframe {
+      flex: 1;
+      width: 100%;
+      border: 0;
+      background: var(--paper);
     }
     .colophon-door { color: var(--ink); text-decoration: none; }
     .colophon-door:hover { color: var(--sunset); }
@@ -391,5 +457,113 @@
     })();
   </script>
 
+
+  <script>
+    (function () {
+      if (window.matchMedia('(max-width: 700px)').matches) return; // phones navigate
+      var wins = [];
+
+      function retitle() {
+        wins.forEach(function (w, i) {
+          w.classList.toggle('top', i === wins.length - 1);
+          w.style.zIndex = 50 + i;
+        });
+      }
+
+      function closeWin(w, viaHistory) {
+        var i = wins.indexOf(w);
+        if (i === -1) return;
+        wins.splice(i, 1);
+        w.remove();
+        retitle();
+        if (!viaHistory && history.state && history.state.mwm) history.back();
+      }
+
+      function openWindow(href, title) {
+        if (wins.length >= 4) closeWin(wins[0], true);
+        var w = document.createElement('div');
+        w.className = 'mwm-window';
+        var off = wins.length * 28;
+        w.style.left = 'calc(50% - min(46vw, 450px) + ' + off + 'px)';
+        w.style.top = 'calc(7vh + ' + off + 'px)';
+
+        var bar = document.createElement('div');
+        bar.className = 'mwm-title';
+        var menu = document.createElement('button');
+        menu.textContent = '\u2500';
+        menu.setAttribute('aria-label', 'Close window');
+        var name = document.createElement('span');
+        name.className = 'name';
+        name.textContent = title;
+        var maxi = document.createElement('button');
+        maxi.textContent = '\u25A1';
+        maxi.setAttribute('aria-label', 'Open as full page');
+        bar.appendChild(menu); bar.appendChild(name); bar.appendChild(maxi);
+
+        var frame = document.createElement('iframe');
+        frame.src = href;
+        frame.title = title;
+        w.appendChild(bar); w.appendChild(frame);
+        document.body.appendChild(w);
+        wins.push(w);
+        retitle();
+        history.pushState({ mwm: 1 }, '', '#' + href.replace('.html', ''));
+
+        menu.addEventListener('click', function () { closeWin(w); });
+        maxi.addEventListener('click', function () { window.location.href = href; });
+        w.addEventListener('mousedown', function () {
+          var i = wins.indexOf(w);
+          if (i !== -1 && i !== wins.length - 1) { wins.splice(i, 1); wins.push(w); retitle(); }
+        });
+
+        // drag by titlebar
+        bar.addEventListener('pointerdown', function (ev) {
+          if (ev.target !== bar && ev.target !== name) return;
+          var sx = ev.clientX - w.offsetLeft, sy = ev.clientY - w.offsetTop;
+          w.classList.add('dragging');
+          bar.setPointerCapture(ev.pointerId);
+          function move(e) {
+            w.style.left = Math.max(8 - w.offsetWidth + 120, Math.min(e.clientX - sx, innerWidth - 120)) + 'px';
+            w.style.top = Math.max(0, Math.min(e.clientY - sy, innerHeight - 40)) + 'px';
+          }
+          function up() {
+            w.classList.remove('dragging');
+            bar.removeEventListener('pointermove', move);
+            bar.removeEventListener('pointerup', up);
+          }
+          bar.addEventListener('pointermove', move);
+          bar.addEventListener('pointerup', up);
+        });
+        menu.focus();
+      }
+
+      document.addEventListener('keydown', function (e) {
+        if (e.key === 'Escape' && wins.length) closeWin(wins[wins.length - 1]);
+      });
+      window.addEventListener('popstate', function () {
+        if (wins.length) closeWin(wins[wins.length - 1], true);
+      });
+
+      document.addEventListener('click', function (e) {
+        var a = e.target.closest('a');
+        if (!a) return;
+        var href = a.getAttribute('href') || '';
+        if (!/^[a-z0-9-]+\.html$/.test(href)) return; // internal pages only
+        e.preventDefault();
+        var label = a.querySelector('.label');
+        var title = (label && label.textContent) || a.getAttribute('aria-label') ||
+                    (a.textContent || '').trim() || href.replace('.html', '');
+        openWindow(href, title.toLowerCase());
+      });
+
+      // deep link: /#film opens the film window
+      var h = location.hash.replace('#', '');
+      if (/^[a-z-]+$/.test(h)) {
+        var page = h + '.html';
+        history.replaceState(null, '', location.pathname);
+        openWindow(page, h.replace('-', ' '));
+      }
+    })();
+  </script>
 </body>
 </html>

@@ -383,3 +383,8 @@ html.night svg.px-art rect[fill="#1A1A18"] { fill: #F3EEDF; }
   background-size: 4px 4px;
   image-rendering: pixelated;
 }
+
+/* ---- Framed mode (page is inside a homepage window) --------------------- */
+
+html.framed .site-nav { display: none; }
+html.framed body { padding: 28px 24px 40px; }
