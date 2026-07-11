@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-07-10T16:31:34.793Z",
+  "fetchedAt": "2026-07-11T18:10:02.038Z",
   "note": "main services only; databases/caches/workers are filtered as implementation detail",
   "services": [
     {
@@ -73,6 +73,14 @@
     {
       "name": "sure",
       "project": "finance"
+    },
+    {
+      "name": "guestbook",
+      "project": "guestbook"
+    },
+    {
+      "name": "guestbook-tunnel",
+      "project": "guestbook"
     },
     {
       "name": "mealie",
