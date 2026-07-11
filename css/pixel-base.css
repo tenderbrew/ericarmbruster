@@ -321,3 +321,30 @@ footer {
   h2 { font-size: 16px; }
   .masthead--home h1::after { width: 15px; height: 25px; margin-left: 7px; }
 }
+
+/* ---- Night (secret: click the homepage sun) ----------------------------- */
+
+html.night {
+  --paper: #1A1A18;
+  --paper-dim: #242420;
+  --ink: #F3EEDF;
+  --pool: #5B94D6; /* lightened for contrast on the dark surface */
+}
+
+/* Ink-drawn sprite pixels flip to cream so pixel art survives the dark. */
+html.night svg.px-art rect[fill="#1A1A18"] { fill: #F3EEDF; }
+
+/* ---- The stray pixel (secret: it leads somewhere) ----------------------- */
+
+.wave-wrap { position: relative; }
+
+.stray-pixel {
+  position: absolute;
+  top: -2px;
+  left: 61%;
+  width: 12px;
+  height: 12px;
+  background: var(--sunset);
+}
+
+.stray-pixel:hover { background: var(--ink); }

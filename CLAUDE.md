@@ -41,6 +41,14 @@ One system for every page. Tokens live at the top of `css/pixel-base.css` — al
 - `404.html` — GitHub Pages not-found page, pixel system, `noindex`, **absolute** asset paths (`/css/...`) because it serves at any path.
 - Retro Game Club is deliberately NOT a page here — it links out to nintendopipeline.club (its own repo/site) from the homepage TOC.
 
+## The secrets (deliberate easter eggs — do not "clean up")
+
+- **Night mode:** clicking the homepage sun toggles `html.night` (persisted as `localStorage.roost_night`; a tiny head script on every page applies it before paint). Tokens flip in `pixel-base.css` under `html.night`; sprite ink survives the dark via `html.night svg.px-art rect[fill="#1A1A18"]`. The sun/moon swap selectors must stay `.masthead`-scoped or `.masthead .px-art { display:block }` wins the specificity fight.
+- **The stray pixel:** one sunset pixel sits on the homepage's second wave divider (`.wave-wrap` + `.stray-pixel`) and links to `birds.html` — backyard bird photography, noindex, not in the sitemap.
+- **The colophon:** the homepage footer's copyright line links to `colophon.html` — a museum of all three site eras with screenshots resurrected from git history (v1 `19d842a`, v2 `4bdf43a` via git worktree + tools/screenshot.js), noindex, not in the sitemap.
+- **View source:** an ASCII Hector comment tops `index.html`.
+- Hector's page is deliberately NOT in the TOC — the masthead portrait is the only door.
+
 ## Data pipelines
 
 Same architecture as v1: GitHub Actions run the fetcher on a schedule, commit the JSON, and the page `fetch()`es it at load — the browser never calls upstream APIs. On successful render the page sets `data-hydrated="<name>"` on `<main>` (asserted by `tools/screenshot.js`); the failure message is JS-injected only on failure (a hidden static fallback string would trip the `mustNot` check).

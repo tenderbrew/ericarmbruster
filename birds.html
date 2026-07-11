@@ -1,0 +1,102 @@
+<!--
+  birds.html — a secret page. Reached only via the stray sunset pixel in
+  a homepage wave divider. Backyard bird photography, full color.
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Birds &mdash; Eric Armbruster</title>
+  <meta name="robots" content="noindex">
+  <meta name="theme-color" content="#F3EEDF">
+
+  <link rel="icon" href="images/hector-favicon.png" type="image/png">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DotGothic16&family=IBM+Plex+Mono:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/pixel-base.css">
+  <script>try{if(localStorage.roost_night==='1')document.documentElement.classList.add('night')}catch(e){}</script>
+
+  <!-- Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-5ZTHJXDR9V"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-5ZTHJXDR9V');
+  </script>
+
+  <style>
+    .site-nav { margin-bottom: 32px; }
+    .site-nav a {
+      font-family: var(--font-display);
+      font-size: 16px;
+      text-decoration: none;
+    }
+
+    .bird-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 24px; margin: 24px 0; }
+    .bird-grid figure { margin: 0; }
+    .bird-grid img {
+      display: block;
+      width: 100%;
+      height: auto;
+      border: 2px solid var(--ink);
+      box-shadow: 4px 4px 0 var(--shadow);
+      image-rendering: auto; /* real photographs */
+    }
+    .bird-grid figcaption { margin-top: 8px; font-size: 12px; }
+    @media (max-width: 560px) { .bird-grid { grid-template-columns: 1fr; } }
+  </style>
+</head>
+<body>
+
+  <nav class="site-nav">
+    <a href="index.html">&larr; Eric Armbruster</a>
+  </nav>
+
+  <header class="masthead">
+    <h1>Birds</h1>
+    <p>You found the stray pixel. This is the backyard, through a long lens.</p>
+  </header>
+
+  <hr class="px-wave">
+
+  <main id="main">
+    <div class="bird-grid">
+      <figure>
+        <img src="images/birds/bird-01.jpg" alt="Downy Woodpecker clinging to a seed-cylinder feeder" loading="lazy">
+        <figcaption>Downy Woodpecker</figcaption>
+      </figure>
+      <figure>
+        <img src="images/birds/bird-02.jpg" alt="Male House Finch standing in a platform feeder full of seed" loading="lazy">
+        <figcaption>House Finch</figcaption>
+      </figure>
+      <figure>
+        <img src="images/birds/bird-03.jpg" alt="Red-bellied Woodpecker and a starling high in a dead tree" loading="lazy">
+        <figcaption>Red-bellied Woodpecker, with company</figcaption>
+      </figure>
+      <figure>
+        <img src="images/birds/bird-04.jpg" alt="Mourning Dove standing on landscaping rocks in evening light" loading="lazy">
+        <figcaption>Mourning Dove</figcaption>
+      </figure>
+      <figure>
+        <img src="images/birds/bird-05.jpg" alt="European Starlings perched across bare branches against a blue sky" loading="lazy">
+        <figcaption>European Starlings</figcaption>
+      </figure>
+      <figure>
+        <img src="images/birds/bird-06.jpg" alt="Female House Finch on the edge of the platform feeder" loading="lazy">
+        <figcaption>House Finch</figcaption>
+      </figure>
+    </div>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 Eric Armbruster</p>
+  </footer>
+
+</body>
+</html>

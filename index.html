@@ -1,4 +1,11 @@
 <!--
+        __
+   (___()'`;   hector was here.
+   /,    /`
+   \\"~-\\
+   three more secrets live on this page.
+-->
+<!--
   index.html — Homepage (v3 retro/pixel system)
   ----------------------------------------------
   Single-page launch: intro, links, and a pointer to the Seymour memorial.
@@ -33,7 +40,12 @@
   <link href="https://fonts.googleapis.com/css2?family=DotGothic16&family=IBM+Plex+Mono:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet">
 
   <link rel="stylesheet" href="css/pixel-base.css">
+  <script>try{if(localStorage.roost_night==='1')document.documentElement.classList.add('night')}catch(e){}</script>
   <style>
+    .masthead .sun-night { display: none; }
+    html.night .masthead .sun-day { display: none; }
+    html.night .masthead .sun-night { display: block; }
+    .masthead--home .sun { cursor: pointer; }
     .masthead--home {
       display: flex;
       justify-content: space-between;
@@ -92,6 +104,8 @@
     .gb-tile:hover .plate { color: var(--sunset); }
     .gb-tile:active { box-shadow: 2px 2px 0 var(--shadow); transform: translate(2px, 2px); }
 
+    .colophon-door { color: var(--ink); text-decoration: none; }
+    .colophon-door:hover { color: var(--sunset); }
     .toc .px-label { min-width: 160px; }
     .toc-icon { flex: 0 0 16px; align-self: center; }
     .toc a.px-label { color: var(--pool); }
@@ -112,7 +126,7 @@
 
   <header class="masthead masthead--home">
     <div class="mast-left">
-    <svg class="px-art sun" width="256" height="144" viewBox="0 0 32 18" shape-rendering="crispEdges" aria-hidden="true">
+    <svg class="px-art sun sun-day" width="256" height="144" viewBox="0 0 32 18" shape-rendering="crispEdges" aria-hidden="true">
       <!-- sun -->
       <rect x="10" y="1" width="4" height="1" fill="#E8743B"/>
       <rect x="9"  y="2" width="6" height="1" fill="#E8743B"/>
@@ -150,6 +164,37 @@
       <rect x="11" y="15" width="2" height="1" fill="#E8743B"/>
       <rect x="10" y="17" width="2" height="1" fill="#E8743B"/>
     </svg>
+    <svg class="px-art sun sun-night" width="256" height="144" viewBox="0 0 32 18" shape-rendering="crispEdges" aria-hidden="true">
+      <rect x="20" y="0" width="1" height="1" fill="#F3EEDF"/>
+      <rect x="10" y="1" width="4" height="1" fill="#F3EEDF"/>
+      <rect x="9" y="2" width="2" height="1" fill="#F3EEDF"/>
+      <rect x="8" y="3" width="2" height="1" fill="#F3EEDF"/>
+      <rect x="25" y="3" width="1" height="1" fill="#F3EEDF"/>
+      <rect x="8" y="4" width="2" height="1" fill="#F3EEDF"/>
+      <rect x="8" y="5" width="2" height="1" fill="#F3EEDF"/>
+      <rect x="15" y="5" width="1" height="1" fill="#E8743B"/>
+      <rect x="9" y="6" width="2" height="1" fill="#F3EEDF"/>
+      <rect x="10" y="7" width="4" height="1" fill="#F3EEDF"/>
+      <rect x="21" y="7" width="1" height="1" fill="#F3EEDF"/>
+      <rect x="0" y="10" width="32" height="1" fill="#2E6FBF"/>
+      <rect x="1" y="11" width="1" height="1" fill="#F3EEDF"/>
+      <rect x="9" y="11" width="1" height="1" fill="#2E6FBF"/>
+      <rect x="13" y="11" width="1" height="1" fill="#2E6FBF"/>
+      <rect x="19" y="11" width="1" height="1" fill="#2E6FBF"/>
+      <rect x="26" y="11" width="1" height="1" fill="#2E6FBF"/>
+      <rect x="2" y="13" width="1" height="1" fill="#F3EEDF"/>
+      <rect x="9" y="13" width="1" height="1" fill="#2E6FBF"/>
+      <rect x="16" y="13" width="1" height="1" fill="#2E6FBF"/>
+      <rect x="24" y="13" width="1" height="1" fill="#2E6FBF"/>
+      <rect x="1" y="15" width="1" height="1" fill="#F3EEDF"/>
+      <rect x="6" y="15" width="1" height="1" fill="#2E6FBF"/>
+      <rect x="12" y="15" width="1" height="1" fill="#2E6FBF"/>
+      <rect x="21" y="15" width="1" height="1" fill="#2E6FBF"/>
+      <rect x="2" y="17" width="1" height="1" fill="#F3EEDF"/>
+      <rect x="11" y="17" width="1" height="1" fill="#2E6FBF"/>
+      <rect x="16" y="17" width="1" height="1" fill="#2E6FBF"/>
+      <rect x="24" y="17" width="1" height="1" fill="#2E6FBF"/>
+    </svg>
     <h1>Eric Armbruster</h1>
     </div>
     <a class="mast-portrait" href="hector.html" aria-label="Hector, the resident dog">
@@ -178,7 +223,7 @@
       <li><svg class="px-art toc-icon" width="16" height="16" viewBox="0 0 16 16" shape-rendering="crispEdges" aria-hidden="true"><rect x="4" y="2" width="8" height="1" fill="#1A1A18"/><rect x="4" y="3" width="1" height="1" fill="#1A1A18"/><rect x="11" y="3" width="1" height="1" fill="#1A1A18"/><rect x="4" y="4" width="1" height="1" fill="#1A1A18"/><rect x="6" y="4" width="4" height="1" fill="#2E6FBF"/><rect x="11" y="4" width="1" height="1" fill="#1A1A18"/><rect x="4" y="5" width="1" height="1" fill="#1A1A18"/><rect x="6" y="5" width="4" height="1" fill="#2E6FBF"/><rect x="11" y="5" width="1" height="1" fill="#1A1A18"/><rect x="4" y="6" width="1" height="1" fill="#1A1A18"/><rect x="6" y="6" width="4" height="1" fill="#2E6FBF"/><rect x="11" y="6" width="1" height="1" fill="#1A1A18"/><rect x="4" y="7" width="1" height="1" fill="#1A1A18"/><rect x="11" y="7" width="1" height="1" fill="#1A1A18"/><rect x="4" y="8" width="1" height="1" fill="#1A1A18"/><rect x="6" y="8" width="4" height="1" fill="#1A1A18"/><rect x="11" y="8" width="1" height="1" fill="#1A1A18"/><rect x="4" y="9" width="1" height="1" fill="#1A1A18"/><rect x="6" y="9" width="4" height="1" fill="#1A1A18"/><rect x="11" y="9" width="1" height="1" fill="#1A1A18"/><rect x="4" y="10" width="1" height="1" fill="#1A1A18"/><rect x="11" y="10" width="1" height="1" fill="#1A1A18"/><rect x="4" y="11" width="8" height="1" fill="#1A1A18"/></svg><a class="px-label" href="https://nintendopipeline.club" target="_blank" rel="noopener">retro game club</a> <span>the club's own site</span></li>
     </ul>
 
-    <hr class="px-wave">
+    <div class="wave-wrap"><hr class="px-wave"><a class="stray-pixel" href="birds.html" aria-label="a stray pixel"></a></div>
 
     <h2>Elsewhere</h2>
     <div class="elsewhere-row">
@@ -205,8 +250,20 @@
   </main>
 
   <footer>
-    <p>&copy; 2026 Eric Armbruster</p>
+    <p><a class="colophon-door" href="colophon.html">&copy; 2026 Eric Armbruster</a></p>
   </footer>
 
+
+  <script>
+    (function () {
+      function flip() {
+        var night = document.documentElement.classList.toggle('night');
+        try { localStorage.roost_night = night ? '1' : '0'; } catch (e) {}
+      }
+      document.querySelectorAll('.masthead--home .sun').forEach(function (el) {
+        el.addEventListener('click', flip);
+      });
+    })();
+  </script>
 </body>
 </html>

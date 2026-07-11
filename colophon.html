@@ -1,0 +1,116 @@
+<!--
+  colophon.html — a secret page. Reached only by clicking the copyright
+  line in the homepage footer. The site's own museum: one screenshot per
+  era, resurrected from git history.
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Colophon &mdash; Eric Armbruster</title>
+  <meta name="robots" content="noindex">
+  <meta name="theme-color" content="#F3EEDF">
+
+  <link rel="icon" href="images/hector-favicon.png" type="image/png">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DotGothic16&family=IBM+Plex+Mono:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/pixel-base.css">
+  <script>try{if(localStorage.roost_night==='1')document.documentElement.classList.add('night')}catch(e){}</script>
+
+  <!-- Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-5ZTHJXDR9V"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-5ZTHJXDR9V');
+  </script>
+
+  <style>
+    .site-nav { margin-bottom: 32px; }
+    .site-nav a {
+      font-family: var(--font-display);
+      font-size: 16px;
+      text-decoration: none;
+    }
+
+    .era { margin: 32px 0; }
+    .era img {
+      display: block;
+      width: 100%;
+      height: auto;
+      border: 2px solid var(--ink);
+      box-shadow: 4px 4px 0 var(--shadow);
+      image-rendering: auto;
+    }
+    .era h2 { margin-top: 16px; }
+    .era p { font-size: 14px; }
+    .era .when {
+      font-family: var(--font-display);
+      font-size: 16px;
+      color: var(--sunset);
+    }
+  </style>
+</head>
+<body>
+
+  <nav class="site-nav">
+    <a href="index.html">&larr; Eric Armbruster</a>
+  </nav>
+
+  <header class="masthead">
+    <h1>Colophon</h1>
+    <p>You clicked the copyright line. This page is the site's museum &mdash; every face it has worn, pulled back out of git history.</p>
+  </header>
+
+  <hr class="px-wave">
+
+  <main id="main">
+
+    <section class="era">
+      <img src="images/colophon/era-v1.jpg" alt="The first design: aged tan paper with a shelf of cloth-bound book spines, one per section, and a polaroid of Hector">
+      <h2>v1 &mdash; the bookshelf</h2>
+      <p class="when">until July 2026</p>
+      <p>
+        Aged paper, EB Garamond, and a shelf of cloth spines &mdash; every
+        section was a book, every page its own room. Its masthead claimed
+        &ldquo;est. 2022.&rdquo;
+      </p>
+    </section>
+
+    <section class="era">
+      <img src="images/colophon/era-v2.jpg" alt="The unshipped second design: a painted valley at dusk with tiny buildings for each section">
+      <h2>v2 &mdash; the valley</h2>
+      <p class="when">June 2026 &middot; never shipped</p>
+      <p>
+        A painted world at dusk: the drive-in, the depot, the barn, the
+        mine &mdash; each section a building in the valley. It lived in a
+        folder for a month, lost the argument, and exists now only in git
+        history and this screenshot.
+      </p>
+    </section>
+
+    <section class="era">
+      <img src="images/colophon/era-v3.jpg" alt="The current design: cream pixel-art homepage with a sun over dithered water and a photo of Hector">
+      <h2>v3 &mdash; the pixel rebuild</h2>
+      <p class="when">July 2026 &mdash; now</p>
+      <p>
+        Four colors, one sprite sheet, DotGothic16, and a sun that sets
+        over dithered water. Built from scratch in a week. You are
+        standing in it.
+      </p>
+    </section>
+
+  </main>
+
+  <footer>
+    <p>&copy; 2026 Eric Armbruster</p>
+  </footer>
+
+</body>
+</html>
