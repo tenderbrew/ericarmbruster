@@ -124,7 +124,7 @@ a:focus-visible,
 .px-panel {
   background: var(--paper-dim);
   border: 2px solid var(--ink);
-  box-shadow: 4px 4px 0 var(--shadow);
+  position: relative;
   padding: 20px 24px;
   margin: 24px 0;
 }
@@ -190,7 +190,7 @@ ul.px-bullets li::before {
 .px-stat {
   background: var(--paper-dim);
   border: 2px solid var(--ink);
-  box-shadow: 4px 4px 0 var(--shadow);
+  position: relative;
   padding: 14px 16px;
 }
 
@@ -278,7 +278,7 @@ ul.px-bullets li::before {
 .px-gallery .frame {
   display: block;
   border: 2px solid var(--ink);
-  box-shadow: 4px 4px 0 var(--shadow);
+  position: relative;
 }
 
 .px-gallery img {
@@ -348,3 +348,20 @@ html.night svg.px-art rect[fill="#1A1A18"] { fill: #F3EEDF; }
 }
 
 .stray-pixel:hover { background: var(--ink); }
+
+/* ---- Dithered pixel shadows (checkerboard, System 7 style) -------------- */
+
+.px-panel::after,
+.px-stat::after,
+.px-gallery .frame::after {
+  content: '';
+  position: absolute;
+  z-index: -1;
+  top: 4px;
+  left: 4px;
+  right: -6px;
+  bottom: -6px;
+  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="4" height="4" shape-rendering="crispEdges"><rect width="2" height="2" fill="%231A1A18"/><rect x="2" y="2" width="2" height="2" fill="%231A1A18"/></svg>');
+  background-size: 4px 4px;
+  image-rendering: pixelated;
+}
