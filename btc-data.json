@@ -1,13 +1,13 @@
 {
-  "fetchedAt": "2026-07-11T16:07:27.973Z",
+  "fetchedAt": "2026-07-11T19:23:10.870Z",
   "price": {
-    "usd": 64103,
-    "time": 1783785908
+    "usd": 64277,
+    "time": 1783797307
   },
   "moves": {
-    "d1": 0.03270749677977136,
-    "d7": 1.5988144395674864,
-    "d30": 0.86652901994968
+    "d1": 0.3042344316258605,
+    "d7": 1.8745923861922087,
+    "d30": 1.1403192645477622
   },
   "history90d": [
     {
@@ -372,60 +372,70 @@
     },
     {
       "date": "2026-07-11",
-      "close": 64067.54890470206
+      "close": 64275.17257476803
     }
   ],
   "blocks": [
     {
-      "height": 957584,
-      "id": "00000000000000000001cb03291fe4d0b064d830d01c859d2cd5314880e442fb",
-      "timestamp": 1783785866,
-      "txCount": 4392
+      "height": 957597,
+      "id": "000000000000000000006f29e9cd201f976320b945aa44744136749d8ab74ed7",
+      "timestamp": 1783796528,
+      "txCount": 4475
     },
     {
-      "height": 957583,
-      "id": "000000000000000000020263c80f37729ce3cb4a6b9be88cb31c2e6e635c814f",
-      "timestamp": 1783785197,
-      "txCount": 4302
+      "height": 957596,
+      "id": "0000000000000000000154da2fdc842c57194c6e57aca8ba7a1989f14afe3048",
+      "timestamp": 1783795436,
+      "txCount": 3243
     },
     {
-      "height": 957582,
-      "id": "00000000000000000000573d02831735d9b3bc46c2b00a6d64c47ecd375f6d12",
-      "timestamp": 1783784697,
-      "txCount": 4398
+      "height": 957595,
+      "id": "0000000000000000000011745f2591611c19b1ecdbbda79566045c5fabfc6482",
+      "timestamp": 1783794377,
+      "txCount": 4443
     },
     {
-      "height": 957581,
-      "id": "0000000000000000000201180b483d50941c1461965abea5aff9e3c4ebd7ee1c",
-      "timestamp": 1783782652,
-      "txCount": 4690
+      "height": 957594,
+      "id": "0000000000000000000064ade01bfe8cebc027c602c5d9357556be850b8999ad",
+      "timestamp": 1783793553,
+      "txCount": 3616
     },
     {
-      "height": 957580,
-      "id": "000000000000000000008e644610a3fdcd4940eaae3c2b6211a0180fad608b25",
-      "timestamp": 1783781146,
-      "txCount": 5085
+      "height": 957593,
+      "id": "00000000000000000000690f95b678f9a9ede4768d2fb54b2d1c51a52cb4283c",
+      "timestamp": 1783793146,
+      "txCount": 4151
     },
     {
-      "height": 957579,
-      "id": "00000000000000000000b7c00baad167fa5a897ef5c3f830236503b85b115e0d",
-      "timestamp": 1783780538,
-      "txCount": 6927
+      "height": 957592,
+      "id": "000000000000000000018397b53df6a233dddcc80dce038b502428ab947b0b9a",
+      "timestamp": 1783792378,
+      "txCount": 4259
     },
     {
-      "height": 957578,
-      "id": "0000000000000000000162f744a3356af21c85f2c7442791a2856cabec89f030",
-      "timestamp": 1783780488,
-      "txCount": 4891
+      "height": 957591,
+      "id": "00000000000000000001804aff01a147c5b34af4265541bc674ed05a86bd5ec0",
+      "timestamp": 1783790490,
+      "txCount": 4681
     },
     {
-      "height": 957577,
-      "id": "0000000000000000000014ae15d21c561bd1a37974455d9978927f2bd759c742",
-      "timestamp": 1783779993,
-      "txCount": 5555
+      "height": 957590,
+      "id": "000000000000000000015615d070f487329d4481b52411eb86a768e63a8b64ef",
+      "timestamp": 1783790315,
+      "txCount": 4318
     }
   ],
   "news": [
+    {
+      "title": "Lending protocol Bonzo loses 77% of value locked as $9 million oracle exploit rattles Hedera",
+      "link": "https://www.coindesk.com/web3/2026/07/11/lending-protocol-bonzo-loses-77-of-value-locked-as-usd9-million-oracle-exploit-rattles-hedera",
+      "pubDate": "Sat, 11 Jul 2026 18:06:58 +0000"
+    },
+    {
+      "title": "Crypto IPO market stalls as capital rotates to AI and macro uncertainty weighs",
+      "link": "https://www.coindesk.com/business/2026/07/08/crypto-ipo-market-stalls-as-capital-rotates-to-ai-and-macro-uncertainty-weighs",
+      "pubDate": "Sat, 11 Jul 2026 17:07:24 +0000"
+    },
     {
       "title": "The UK has finally shown it’s serious about crypto",
       "link": "https://www.coindesk.com/opinion/2026/07/11/the-uk-has-finally-shown-it-s-serious-about-crypto",
@@ -475,16 +485,6 @@
       "title": "Japan's 'invest locally' plan likely to spur demand for assets like bitcoin, gold",
       "link": "https://www.coindesk.com/daybook-us/2026/07/10/japan-s-invest-locally-plan-likely-to-spur-demand-for-assets-like-bitcoin-gold",
       "pubDate": "Fri, 10 Jul 2026 11:37:31 +0000"
-    },
-    {
-      "title": "Crypto defies equity weakness as altcoin optimism builds into the weekend",
-      "link": "https://www.coindesk.com/markets/2026/07/10/crypto-defies-equity-weakness-as-altcoin-optimism-builds-into-the-weekend",
-      "pubDate": "Fri, 10 Jul 2026 10:37:44 +0000"
-    },
-    {
-      "title": "Polymarket seeks approval to bring margin trading to U.S. customers",
-      "link": "https://www.coindesk.com/markets/2026/07/10/polymarket-seeks-approval-to-bring-margin-trading-to-u-s-customers",
-      "pubDate": "Fri, 10 Jul 2026 09:35:21 +0000"
     }
   ]
 }
