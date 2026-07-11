@@ -326,8 +326,19 @@ footer {
 
 html.dusk {
   --paper: #F2D8BD;
-  --paper-dim: #EACBA4;
+  --paper-dim: #EAC49B;
+  --ink: #2E1F26;
+  --pool: #7B4B94;
+  --sunset: #DE6222;
 }
+
+/* Dusk re-inks the water: wave dividers and every pool-blue sprite pixel
+   turn violet, so the whole pixel world shifts with the sky. */
+html.dusk .px-wave {
+  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="8" shape-rendering="crispEdges"><rect x="0" y="4" width="2" height="2" fill="%237B4B94"/><rect x="2" y="2" width="2" height="2" fill="%237B4B94"/><rect x="4" y="0" width="2" height="2" fill="%237B4B94"/><rect x="6" y="2" width="2" height="2" fill="%237B4B94"/><rect x="8" y="4" width="2" height="2" fill="%237B4B94"/><rect x="10" y="6" width="2" height="2" fill="%237B4B94"/><rect x="12" y="4" width="2" height="2" fill="%237B4B94"/><rect x="14" y="6" width="2" height="2" fill="%237B4B94"/></svg>');
+}
+
+html.dusk svg.px-art rect[fill="#2E6FBF"] { fill: #7B4B94; }
 
 /* ---- Night (secret: click the homepage sun) ----------------------------- */
 
