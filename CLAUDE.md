@@ -61,12 +61,12 @@ Same architecture as v1: GitHub Actions run the fetcher on a schedule, commit th
 | `economics` | `econ-fetch.js` (no key) | `econ-data.json` | `update-econ.yml` | every 6 hours |
 | `bitcoin` | `btc-fetch.js` (no key) | `btc-data.json` | `update-btc.yml` | every 3 hours |
 
-**Homelab-fed pages** (no GitHub Action — Actions can't reach the LAN). Refresh by running the export script from the dev box, then commit the JSON; secrets are read on the homelab and never leave it:
+**Homelab-fed pages** (fully automatic since 2026-07-11): a host cron on the homelab (`/opt/docker/guestbook/gen-exports.sh`, tenderbrew's crontab, :10 every 6h) regenerates `data/exports/{music,services}.json`, the guestbook service exposes them read-only at `guestbook.ericarmbruster.com/export/{music,services}`, and `update-homelab.yml` (:40 every 6h) pulls, validates (bad/unreachable response keeps the old file), and commits `music-data.json` + `services-data.json`. The Tautulli API key never leaves the homelab. `tools/export-music.sh` and `tools/export-services.sh` remain as manual SSH fallbacks from the dev box:
 
-| Page | Script | Data file | Source |
-|---|---|---|---|
-| `self-hosting` | `tools/export-services.sh` | `services-data.json` | `docker ps` names + compose projects over SSH (`tenderbrew@192.168.1.101`); sidecars filtered; **never publish ports/IPs/versions** |
-| `music` | `tools/export-music.sh` | `music-data.json` | Tautulli `get_history` (API key read on-homelab from its config.ini) |
+| Page | Data file | Source |
+|---|---|---|
+| `self-hosting` | `services-data.json` | `docker ps` names + compose projects; sidecars filtered; **never publish ports/IPs/versions** |
+| `music` | `music-data.json` | Tautulli `get_history` |
 
 Gotcha that broke the first version of these scripts: `ssh ... | python - "$OUT" <<'PY'` does NOT work — the heredoc steals stdin from the pipe. Write ssh output to a mktemp file and pass the path to python. Also use `command -v python || command -v python3` on this Windows box (bare `python3` resolves to the broken Microsoft Store shim).
 

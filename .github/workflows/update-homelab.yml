@@ -1,0 +1,39 @@
+# Pulls music + services JSON from the homelab (published read-only through
+# the guestbook's Cloudflare tunnel; regenerated there by cron at :10 every
+# 6h) and commits them. No secrets needed — the endpoint is public data the
+# site already publishes, and the default GITHUB_TOKEN does the commit.
+name: Update Homelab Data
+
+on:
+  schedule:
+    - cron: '40 */6 * * *' # :40 every 6h — 30min after the homelab regenerates
+  workflow_dispatch: # Manual trigger from Actions tab
+
+jobs:
+  fetch:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v6
+
+      - name: Fetch exports (validated — a bad/missing response keeps the old file)
+        run: |
+          set -e
+          fetch_valid () { # url, required_key, outfile
+            curl -sf --max-time 30 "$1" -o /tmp/pull.json || { echo "unreachable: $1 (keeping $3)"; return 0; }
+            node -e "const d=require('/tmp/pull.json'); if(!d[process.argv[1]]) process.exit(1);" "$2" \
+              || { echo "invalid payload: $1 (keeping $3)"; return 0; }
+            mv /tmp/pull.json "$3"
+          }
+          fetch_valid https://guestbook.ericarmbruster.com/export/music     recentTracks music-data.json
+          fetch_valid https://guestbook.ericarmbruster.com/export/services  services     services-data.json
+
+      # Skip commit if nothing changed.
+      - name: Commit and push if changed
+        run: |
+          git diff --quiet music-data.json services-data.json && exit 0
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add music-data.json services-data.json
+          git commit -m "chore: update homelab data (music, services)"
+          git push
