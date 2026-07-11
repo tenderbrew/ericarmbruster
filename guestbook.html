@@ -1,0 +1,248 @@
+<!--
+  guestbook.html — Guestbook (v3 retro/pixel system)
+  ---------------------------------------------------
+  The one page with a live backend: a tiny self-hosted service on the
+  homelab (/opt/docker/guestbook), public via Cloudflare Tunnel at
+  guestbook.ericarmbruster.com. POST /sign goes into a moderation queue
+  (Discord ping with approve/deny links); GET /entries returns approved
+  notes. Spam defenses live server-side (honeypot, time trap, no links,
+  rate limit). If the backend is down this page degrades to a note and
+  the rest of the site is unaffected.
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Guestbook &mdash; Eric Armbruster</title>
+
+  <meta name="description" content="Sign the guestbook.">
+  <meta name="theme-color" content="#F3EEDF">
+  <link rel="canonical" href="https://www.ericarmbruster.com/guestbook.html">
+  <meta property="og:title" content="Guestbook - Eric Armbruster">
+  <meta property="og:description" content="Sign the guestbook.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://www.ericarmbruster.com/guestbook.html">
+
+  <link rel="icon" href="images/hector-favicon.png" type="image/png">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DotGothic16&family=IBM+Plex+Mono:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/pixel-base.css">
+
+  <style>
+    .site-nav { margin-bottom: 32px; }
+    .site-nav a {
+      font-family: var(--font-display);
+      font-size: 16px;
+      text-decoration: none;
+    }
+
+    .gb-form label {
+      display: block;
+      font-family: var(--font-display);
+      font-size: 16px;
+      margin: 14px 0 4px;
+    }
+    .gb-form input[type="text"],
+    .gb-form textarea {
+      width: 100%;
+      font-family: var(--font-body);
+      font-size: 14px;
+      color: var(--ink);
+      background: var(--paper);
+      border: 2px solid var(--ink);
+      padding: 8px 10px;
+    }
+    .gb-form textarea { min-height: 96px; resize: vertical; }
+    .gb-form input:focus, .gb-form textarea:focus { outline: 3px solid var(--sunset); outline-offset: 1px; }
+    .gb-form .hp { position: absolute; left: -9999px; }
+    .gb-form button {
+      margin-top: 16px;
+      font-family: var(--font-display);
+      font-size: 16px;
+      color: var(--paper);
+      background: var(--pool);
+      border: 2px solid var(--ink);
+      box-shadow: 4px 4px 0 var(--shadow);
+      padding: 10px 22px;
+      cursor: pointer;
+    }
+    .gb-form button:hover { background: var(--sunset); }
+    .gb-form button:active { box-shadow: 2px 2px 0 var(--shadow); transform: translate(2px, 2px); }
+    .gb-note { font-size: 13px; margin-top: 12px; }
+    .gb-status { font-size: 14px; margin-top: 12px; }
+    .gb-status.err { color: var(--sunset); }
+
+    .gb-entry {
+      background: var(--paper-dim);
+      border: 2px solid var(--ink);
+      box-shadow: 4px 4px 0 var(--shadow);
+      padding: 14px 18px;
+      margin: 16px 0;
+    }
+    .gb-entry .who {
+      display: flex;
+      justify-content: space-between;
+      gap: 12px;
+      align-items: baseline;
+      font-family: var(--font-display);
+      font-size: 16px;
+    }
+    .gb-entry .who .name { color: var(--pool); }
+    .gb-entry .who .date { font-family: var(--font-body); font-size: 11px; }
+    .gb-entry p { margin: 8px 0 0; font-size: 14px; white-space: pre-wrap; }
+  </style>
+
+  <!-- Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-5ZTHJXDR9V"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-5ZTHJXDR9V');
+  </script>
+</head>
+<body>
+
+  <nav class="site-nav">
+    <a href="index.html">&larr; Eric Armbruster</a>
+  </nav>
+
+  <header class="masthead">
+    <svg class="px-art" width="256" height="144" viewBox="0 0 32 18" shape-rendering="crispEdges" aria-hidden="true">
+      <rect x="24" y="1" width="2" height="1" fill="#1A1A18"/>
+      <rect x="23" y="2" width="4" height="1" fill="#1A1A18"/>
+      <rect x="22" y="3" width="4" height="1" fill="#1A1A18"/>
+      <rect x="21" y="4" width="4" height="1" fill="#1A1A18"/>
+      <rect x="20" y="5" width="4" height="1" fill="#1A1A18"/>
+      <rect x="19" y="6" width="4" height="1" fill="#1A1A18"/>
+      <rect x="18" y="7" width="4" height="1" fill="#1A1A18"/>
+      <rect x="17" y="8" width="4" height="1" fill="#1A1A18"/>
+      <rect x="16" y="9" width="3" height="1" fill="#1A1A18"/>
+      <rect x="15" y="10" width="1" height="1" fill="#1A1A18"/>
+      <rect x="16" y="10" width="1" height="1" fill="#2E6FBF"/>
+      <rect x="17" y="10" width="1" height="1" fill="#1A1A18"/>
+      <rect x="14" y="11" width="1" height="1" fill="#1A1A18"/>
+      <rect x="15" y="11" width="1" height="1" fill="#2E6FBF"/>
+      <rect x="14" y="12" width="1" height="1" fill="#E8743B"/>
+      <rect x="4" y="13" width="2" height="1" fill="#2E6FBF"/>
+      <rect x="8" y="13" width="1" height="1" fill="#2E6FBF"/>
+      <rect x="14" y="13" width="1" height="1" fill="#2E6FBF"/>
+      <rect x="3" y="14" width="1" height="1" fill="#2E6FBF"/>
+      <rect x="6" y="14" width="2" height="1" fill="#2E6FBF"/>
+      <rect x="9" y="14" width="2" height="1" fill="#2E6FBF"/>
+      <rect x="12" y="14" width="2" height="1" fill="#2E6FBF"/>
+      <rect x="4" y="16" width="24" height="1" fill="#1A1A18"/>
+    </svg>
+    <h1>Guestbook</h1>
+  </header>
+
+  <hr class="px-wave">
+
+  <main id="main">
+
+    <p>Leave a note. A name and a message is all it takes &mdash; entries appear after I approve them.</p>
+
+    <div class="px-panel">
+      <form class="gb-form" id="gb-form">
+        <label for="gb-name">name</label>
+        <input type="text" id="gb-name" name="name" maxlength="40" autocomplete="off" required>
+        <label for="gb-message">message</label>
+        <textarea id="gb-message" name="message" maxlength="500" required></textarea>
+        <div class="hp" aria-hidden="true">
+          <label for="gb-website">website</label>
+          <input type="text" id="gb-website" name="website" tabindex="-1" autocomplete="off">
+        </div>
+        <button type="submit">Sign the guestbook</button>
+        <p class="gb-status" id="gb-status" role="status"></p>
+        <p class="gb-note">No links, 500 characters, one entry per hour.</p>
+      </form>
+    </div>
+
+    <hr class="px-wave">
+
+    <h2>Signatures</h2>
+    <div id="gb-entries"><p id="gb-loading">Loading&hellip;</p></div>
+
+  </main>
+
+  <footer>
+    <p>&copy; 2026 Eric Armbruster</p>
+  </footer>
+
+  <script>
+    (function () {
+      var BASE = 'https://guestbook.ericarmbruster.com';
+      var loadedAt = Date.now();
+
+      function el(tag, className, text) {
+        var node = document.createElement(tag);
+        if (className) node.className = className;
+        if (text !== undefined) node.textContent = text;
+        return node;
+      }
+
+      fetch(BASE + '/entries')
+        .then(function (r) { if (!r.ok) throw new Error(r.status); return r.json(); })
+        .then(function (data) {
+          var wrap = document.getElementById('gb-entries');
+          wrap.textContent = '';
+          if (!data.entries.length) {
+            wrap.appendChild(el('p', null, 'No signatures yet. Be the first.'));
+            return;
+          }
+          data.entries.forEach(function (e) {
+            var card = el('article', 'gb-entry');
+            var who = el('div', 'who');
+            who.appendChild(el('span', 'name', e.name));
+            who.appendChild(el('span', 'date', e.date));
+            card.appendChild(who);
+            card.appendChild(el('p', null, e.message));
+            wrap.appendChild(card);
+          });
+          document.getElementById('main').setAttribute('data-hydrated', 'guestbook');
+        })
+        .catch(function () {
+          document.getElementById('gb-entries').textContent = '';
+          document.getElementById('gb-entries').appendChild(
+            el('p', null, 'The guestbook is asleep right now. Try again in a little while.'));
+        });
+
+      document.getElementById('gb-form').addEventListener('submit', function (ev) {
+        ev.preventDefault();
+        var status = document.getElementById('gb-status');
+        status.className = 'gb-status';
+        status.textContent = 'Sending…';
+        fetch(BASE + '/sign', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({
+            name: document.getElementById('gb-name').value,
+            message: document.getElementById('gb-message').value,
+            website: document.getElementById('gb-website').value,
+            ts: loadedAt
+          })
+        })
+          .then(function (r) { return r.json().then(function (j) { return { ok: r.ok, j: j }; }); })
+          .then(function (res) {
+            if (res.ok) {
+              document.getElementById('gb-form').reset();
+              status.textContent = 'Thanks — your note is waiting for approval.';
+            } else {
+              status.className = 'gb-status err';
+              status.textContent = res.j.error || 'Something went wrong.';
+            }
+          })
+          .catch(function () {
+            status.className = 'gb-status err';
+            status.textContent = 'Could not reach the guestbook — try again later.';
+          });
+      });
+    })();
+  </script>
+</body>
+</html>
