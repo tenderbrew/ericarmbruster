@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-07-10T16:14:16.741Z",
+  "fetchedAt": "2026-07-11T02:55:30.316Z",
   "indicators": {
     "UNRATE": {
       "latest": {
@@ -63,12 +63,12 @@
     },
     "T10YIE": {
       "latest": {
-        "date": "2026-07-09",
-        "value": 2.23
+        "date": "2026-07-10",
+        "value": 2.24
       },
       "previous": {
-        "date": "2026-07-08",
-        "value": 2.25
+        "date": "2026-07-09",
+        "value": 2.23
       }
     },
     "PCE": {
@@ -123,52 +123,52 @@
     },
     "DGS2": {
       "latest": {
-        "date": "2026-07-08",
-        "value": 4.21
+        "date": "2026-07-09",
+        "value": 4.16
       },
       "previous": {
-        "date": "2026-07-07",
-        "value": 4.19
+        "date": "2026-07-08",
+        "value": 4.21
       }
     },
     "DGS10": {
       "latest": {
-        "date": "2026-07-08",
-        "value": 4.56
+        "date": "2026-07-09",
+        "value": 4.54
       },
       "previous": {
-        "date": "2026-07-07",
-        "value": 4.55
+        "date": "2026-07-08",
+        "value": 4.56
       }
     },
     "T10Y2Y": {
       "latest": {
-        "date": "2026-07-09",
-        "value": 0.38
+        "date": "2026-07-10",
+        "value": 0.35
       },
       "previous": {
-        "date": "2026-07-08",
-        "value": 0.35
+        "date": "2026-07-09",
+        "value": 0.38
       }
     },
     "DFII10": {
       "latest": {
-        "date": "2026-07-08",
+        "date": "2026-07-09",
         "value": 2.31
       },
       "previous": {
-        "date": "2026-07-07",
-        "value": 2.3
+        "date": "2026-07-08",
+        "value": 2.31
       }
     },
     "BAMLH0A0HYM2": {
       "latest": {
-        "date": "2026-07-08",
+        "date": "2026-07-09",
         "value": 2.7
       },
       "previous": {
-        "date": "2026-07-07",
-        "value": 2.67
+        "date": "2026-07-08",
+        "value": 2.7
       }
     },
     "MORTGAGE30US": {
@@ -301,6 +301,24 @@
   },
   "news": [
     {
+      "title": "Praxeology within a Physics of the Social Sciences",
+      "link": "https://mises.org/podcasts/audio-mises-wire/praxeology-within-physics-social-sciences",
+      "pubDate": "Fri, 10 Jul 2026 03:04:34 CDT",
+      "kind": "Podcast"
+    },
+    {
+      "title": "Praxeology within a Physics of the Social Sciences",
+      "link": "https://mises.org/mises-wire/praxeology-within-physics-social-sciences",
+      "pubDate": "Fri, 10 Jul 2026 02:00:00 CDT",
+      "kind": "Mises Wire"
+    },
+    {
+      "title": "Three Myths of American Healthcare",
+      "link": "https://mises.org/podcasts/why-healthcare-system-broken-mises-circle-new-hampshire/three-myths-american-healthcare",
+      "pubDate": "Fri, 10 Jul 2026 12:02:26 CDT",
+      "kind": "Podcast"
+    },
+    {
       "title": "Old Fogies Don’t Die Soon Enough",
       "link": "https://mises.org/friday-philosophy/old-fogies-dont-die-soon-enough",
       "pubDate": "Fri, 10 Jul 2026 11:00:00 CDT",
@@ -341,24 +359,6 @@
       "link": "https://mises.org/podcasts/power-and-market/justice-thomass-rothbardian-phase-and-hamiltonian-vance",
       "pubDate": "Thu, 09 Jul 2026 05:00:00 CDT",
       "kind": "Podcast"
-    },
-    {
-      "title": "Why Your Bigger Paycheck Feels Like Less Money",
-      "link": "https://mises.org/power-market/why-your-bigger-paycheck-feels-less-money",
-      "pubDate": "Thu, 09 Jul 2026 01:00:00 CDT",
-      "kind": "Article"
-    },
-    {
-      "title": "Books for Students. T-Shirt for You!",
-      "link": "https://mises.org/mises-wire/books-students-t-shirt-you",
-      "pubDate": "Thu, 09 Jul 2026 11:20:26 CDT",
-      "kind": "Mises Wire"
-    },
-    {
-      "title": "How Adam Smith Helped Create Modern Unionism",
-      "link": "https://mises.org/mises-wire/how-adam-smith-helped-create-modern-unionism",
-      "pubDate": "Thu, 09 Jul 2026 11:00:00 CDT",
-      "kind": "Mises Wire"
     }
   ]
 }
