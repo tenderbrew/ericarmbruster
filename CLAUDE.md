@@ -64,6 +64,8 @@ Gotcha that broke the first version of these scripts: `ssh ... | python - "$OUT"
 
 JSON shape is a contract between fetcher and page — change both sides together. Because these workflows commit to `main`, `git pull --rebase origin main` before pushing.
 
+**Guestbook** (the one page with a live backend): `guestbook.html` talks to `https://guestbook.ericarmbruster.com` — a stdlib-Node service at `/opt/docker/guestbook` on the homelab (`docker compose -p guestbook`, cloudflared tunnel under profile `tunnel`; the CF public hostname points at `guestbook:8000`, so the container listens on PORT=8000). POST /sign → honeypot/time-trap/no-links/rate-limit → pending queue → Discord webhook ping with secret-keyed approve/deny links; GET /entries is CF-cached 60s. Secrets only in the homelab `.env`. The page degrades to an "asleep" note if the backend is down; screenshot tool renders it in that offline state by design.
+
 Shared pixel components for data pages live in `pixel-base.css`: `.px-stats`/`.px-stat` (stat tiles), `.px-table` (bordered tables), `.px-bar-row` (single-series chunky bars). Gotcha: `ul.px-bullets li` owns `padding-left` for the sprite bullet — page styles must only set `padding-top/bottom` on those `li`s or the bullet overlaps the text.
 
 When adding a page: copy index.html's head block, load `css/pixel-base.css`, put page-specific styles in a `<style>` block in the head, add the page to `sitemap.xml` and to `ALL_PAGES` in `tools/screenshot.js`. There is no shared-layout include system — header/footer markup is duplicated per page, so grep and update every copy when changing shared chrome.
