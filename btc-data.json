@@ -1,19 +1,15 @@
 {
-  "fetchedAt": "2026-07-10T22:13:41.790Z",
+  "fetchedAt": "2026-07-11T03:37:36.703Z",
   "price": {
-    "usd": 64009,
-    "time": 1783721409
+    "usd": 64100,
+    "time": 1783740911
   },
   "moves": {
-    "d1": 1.2469246948909385,
-    "d7": 2.353085017928236,
-    "d30": 4.09234462968453
+    "d1": 0.028025997903102784,
+    "d7": 1.594059647384305,
+    "d30": 0.8618084984910901
   },
   "history90d": [
-    {
-      "date": "2026-04-12",
-      "close": 73053.88808483821
-    },
     {
       "date": "2026-04-13",
       "close": 70756.75105500016
@@ -371,61 +367,70 @@
       "close": 63220.68565824794
     },
     {
-      "date": "2026-07-10",
-      "close": 63991.55639029491
+      "date": "2026-07-11",
+      "close": 64082.04036871
+    },
+    {
+      "date": "2026-07-11",
+      "close": 64100.12366747558
     }
   ],
   "blocks": [
     {
-      "height": 957480,
-      "id": "00000000000000000001935ef42c12256eb98f5e1acba3b1c1e7691150f124ec",
-      "timestamp": 1783721088,
-      "txCount": 4261
+      "height": 957515,
+      "id": "000000000000000000017eb3205722134a57edbfc089b180105ad2c74f182e18",
+      "timestamp": 1783740160,
+      "txCount": 4485
     },
     {
-      "height": 957479,
-      "id": "00000000000000000001e77d781302eb9016278517d78392b53dfcade10f7e11",
-      "timestamp": 1783720806,
-      "txCount": 4261
+      "height": 957514,
+      "id": "0000000000000000000178c8ba73eefd28cd149e7845a767e3813ae81643b233",
+      "timestamp": 1783739556,
+      "txCount": 4208
     },
     {
-      "height": 957478,
-      "id": "00000000000000000001af37db863c0af47b9268f9a6a2498d6d11d4e7344f57",
-      "timestamp": 1783718079,
-      "txCount": 4347
+      "height": 957513,
+      "id": "000000000000000000000ea6a2565dfbcca73623334ed7a47fc42560ecc3d972",
+      "timestamp": 1783738997,
+      "txCount": 3091
     },
     {
-      "height": 957477,
-      "id": "0000000000000000000195830805398b25753428ee67ebe9c710e6156285b32a",
-      "timestamp": 1783716508,
-      "txCount": 5052
+      "height": 957512,
+      "id": "00000000000000000000ed2f2121cf8f36e7cf34ca9bb8ba41ac81f094763c66",
+      "timestamp": 1783738478,
+      "txCount": 3627
     },
     {
-      "height": 957476,
-      "id": "00000000000000000000e06badcd8e19049160273430b1fecc0ea8cf599c8d06",
-      "timestamp": 1783716452,
-      "txCount": 3904
+      "height": 957511,
+      "id": "0000000000000000000191df7845e6b60ea2b46b57d77bf5b4517eb546282a53",
+      "timestamp": 1783738350,
+      "txCount": 3244
     },
     {
-      "height": 957475,
-      "id": "00000000000000000000786c6a0a6fd49007b53124b63127601ff1927993c24c",
-      "timestamp": 1783716237,
-      "txCount": 3725
+      "height": 957510,
+      "id": "00000000000000000000028e5c9855115f8ccceba96436d95491ff29f654b55d",
+      "timestamp": 1783736786,
+      "txCount": 4215
     },
     {
-      "height": 957474,
-      "id": "0000000000000000000006df0864ffde11eb703b0e8efd1ae86bef384a9dddee",
-      "timestamp": 1783714592,
-      "txCount": 4361
+      "height": 957509,
+      "id": "00000000000000000001576461ca5907efadd2219d32b69233ece346dd0c8417",
+      "timestamp": 1783734303,
+      "txCount": 5801
     },
     {
-      "height": 957473,
-      "id": "000000000000000000002cc245e5e553404a3fe745f749722fe5d2e6d7f59ff5",
-      "timestamp": 1783713911,
-      "txCount": 3902
+      "height": 957508,
+      "id": "0000000000000000000039ebd6bcd900caae1b7d49a9dcbbe1e6dc33ab57be84",
+      "timestamp": 1783733854,
+      "txCount": 6692
     }
   ],
   "news": [
+    {
+      "title": "Bitcoin analysts predict $300,000–$500,000 price in 2029. The math says no",
+      "link": "https://www.coindesk.com/markets/2026/07/10/bitcoin-analysts-predict-usd300-000-usd500-000-price-in-2029-the-math-says-no",
+      "pubDate": "Sat, 11 Jul 2026 02:30:00 +0000"
+    },
     {
       "title": "Meta's Chief Data Officer Says Agentic Commerce is the \"Next Tier of Business\"",
       "link": "https://www.coindesk.com/coindesk-news/2026/07/10/meta-s-chief-data-officer-says-agentic-commerce-is-the-next-tier-of-business",
@@ -480,11 +485,6 @@
       "title": "Bitcoin gets a green light from a reliable momentum gauge. Here are key levels to watch",
       "link": "https://www.coindesk.com/markets/2026/07/10/bitcoin-gets-a-green-light-from-a-reliable-momentum-gauge-here-are-key-levels-to-watch",
       "pubDate": "Fri, 10 Jul 2026 06:49:13 +0000"
-    },
-    {
-      "title": "Live updates: Bitcoin rises to $64,000 as SK Hynix opens for trade after $26.5 billion IPO",
-      "link": "https://www.coindesk.com/tech/2026/07/10/live-markets-bitcoin-etfs-bleed-again-while-ether-funds-snap-a-five-day-inflow-streak",
-      "pubDate": "Fri, 10 Jul 2026 06:21:34 +0000"
     }
   ]
 }
