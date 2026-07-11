@@ -322,6 +322,13 @@ footer {
   .masthead--home h1::after { width: 15px; height: 25px; margin-left: 7px; }
 }
 
+/* ---- Dusk (early morning / early evening, America/New_York) ------------- */
+
+html.dusk {
+  --paper: #F2D8BD;
+  --paper-dim: #EACBA4;
+}
+
 /* ---- Night (secret: click the homepage sun) ----------------------------- */
 
 html.night {

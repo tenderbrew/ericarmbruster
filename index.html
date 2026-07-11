@@ -39,12 +39,14 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=DotGothic16&family=IBM+Plex+Mono:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet">
 
-  <link rel="stylesheet" href="css/pixel-base.css?v=3">
-  <script>try{if(localStorage.roost_night==='1')document.documentElement.classList.add('night')}catch(e){}</script>
+  <link rel="stylesheet" href="css/pixel-base.css?v=4">
+  <script>try{var m=sessionStorage.roost_mode;if(!m&&!navigator.webdriver){var h=+new Intl.DateTimeFormat("en-US",{timeZone:"America/New_York",hour:"numeric",hour12:false}).format(new Date());m=(h>=21||h<6)?"night":(h<8||h>=19)?"dusk":"day"}if(m==="night"||m==="dusk")document.documentElement.classList.add(m)}catch(e){}</script>
   <style>
-    .masthead .sun-night { display: none; }
-    html.night .masthead .sun-day { display: none; }
+    .masthead .sun-night, .masthead .sun-dusk { display: none; }
+    html.night .masthead .sun-day, html.night .masthead .sun-dusk { display: none; }
     html.night .masthead .sun-night { display: block; }
+    html.dusk .masthead .sun-day, html.dusk .masthead .sun-night { display: none; }
+    html.dusk .masthead .sun-dusk { display: block; }
     .masthead--home .sun { cursor: pointer; }
     .masthead--home {
       display: flex;
@@ -258,6 +260,29 @@
       <rect x="16" y="17" width="1" height="1" fill="#2E6FBF"/>
       <rect x="24" y="17" width="1" height="1" fill="#2E6FBF"/>
     </svg>
+    <svg class="px-art sun sun-dusk" width="256" height="144" viewBox="0 0 32 18" shape-rendering="crispEdges" aria-hidden="true">
+      <rect x="4" y="2" width="2" height="1" fill="#E8743B"/>
+      <rect x="24" y="2" width="2" height="1" fill="#E8743B"/>
+      <rect x="3" y="3" width="4" height="1" fill="#E8743B"/>
+      <rect x="23" y="3" width="4" height="1" fill="#E8743B"/>
+      <rect x="10" y="6" width="4" height="1" fill="#E8743B"/>
+      <rect x="9" y="7" width="6" height="1" fill="#E8743B"/>
+      <rect x="8" y="8" width="8" height="1" fill="#E8743B"/>
+      <rect x="8" y="9" width="8" height="1" fill="#E8743B"/>
+      <rect x="0" y="10" width="32" height="1" fill="#2E6FBF"/>
+      <rect x="10" y="11" width="4" height="1" fill="#E8743B"/>
+      <rect x="2" y="12" width="2" height="1" fill="#2E6FBF"/>
+      <rect x="18" y="12" width="2" height="1" fill="#2E6FBF"/>
+      <rect x="26" y="12" width="2" height="1" fill="#2E6FBF"/>
+      <rect x="9" y="13" width="6" height="1" fill="#E8743B"/>
+      <rect x="4" y="14" width="2" height="1" fill="#2E6FBF"/>
+      <rect x="22" y="14" width="2" height="1" fill="#2E6FBF"/>
+      <rect x="10" y="15" width="4" height="1" fill="#E8743B"/>
+      <rect x="1" y="16" width="2" height="1" fill="#2E6FBF"/>
+      <rect x="16" y="16" width="2" height="1" fill="#2E6FBF"/>
+      <rect x="26" y="16" width="2" height="1" fill="#2E6FBF"/>
+      <rect x="11" y="17" width="2" height="1" fill="#E8743B"/>
+    </svg>
     <h1>Eric Armbruster</h1>
     </div>
     <a class="mast-portrait" href="hector.html" aria-label="Hector, the resident dog">
@@ -354,12 +379,16 @@
 
   <script>
     (function () {
-      function flip() {
-        var night = document.documentElement.classList.toggle('night');
-        try { localStorage.roost_night = night ? '1' : '0'; } catch (e) {}
+      function cycle() {
+        var el = document.documentElement;
+        var cur = el.classList.contains('night') ? 'night' : el.classList.contains('dusk') ? 'dusk' : 'day';
+        var next = cur === 'day' ? 'dusk' : cur === 'dusk' ? 'night' : 'day';
+        el.classList.remove('night', 'dusk');
+        if (next !== 'day') el.classList.add(next);
+        try { sessionStorage.roost_mode = next; } catch (e) {}
       }
       document.querySelectorAll('.masthead--home .sun').forEach(function (el) {
-        el.addEventListener('click', flip);
+        el.addEventListener('click', cycle);
       });
     })();
   </script>
