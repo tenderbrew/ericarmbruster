@@ -31,7 +31,7 @@ family tree, economics (FRED), bitcoin.
 
 | Cadence | What |
 |---|---|
-| real-time | guestbook (self-hosted on my homelab behind a Cloudflare tunnel, Discord-moderated) |
+| real-time | guestbook + the footer visit counter (both self-hosted on my homelab behind a Cloudflare tunnel; guestbook is Discord-moderated) |
 | every 3h | bitcoin |
 | every 6h | film, economics, music + self-hosting (homelab cron → tunnel export → Action) |
 | daily | video games, reading |
