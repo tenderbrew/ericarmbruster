@@ -348,7 +348,7 @@ html.night {
   --paper-dim: #242420;
   --ink: #F3EEDF;
   --pool: #5B94D6; /* lightened for contrast on the dark surface */
-  --shadow: #454540; /* pure black vanishes on the night paper */
+  --shadow: #605E56; /* pure black vanishes on the night paper */
 }
 
 /* Ink-drawn sprite pixels flip to cream so pixel art survives the dark. */
@@ -390,7 +390,7 @@ html.night .px-panel::after,
 html.night .px-stat::after,
 html.night .px-gallery .frame::after {
   /* the ink checker is invisible on night paper; repaint it charcoal */
-  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="4" height="4" shape-rendering="crispEdges"><rect width="2" height="2" fill="%23454540"/><rect x="2" y="2" width="2" height="2" fill="%23454540"/></svg>');
+  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="4" height="4" shape-rendering="crispEdges"><rect width="2" height="2" fill="%23605E56"/><rect x="2" y="2" width="2" height="2" fill="%23605E56"/></svg>');
 }
 
 /* ---- Framed mode (page is inside a homepage window) --------------------- */
