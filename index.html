@@ -76,6 +76,18 @@
     }
 
     .cp { margin-top: 36px; }
+    .zone-tab {
+      display: inline-block;
+      font-family: var(--font-display);
+      font-size: 16px;
+      font-weight: normal;
+      color: var(--ink);
+      background: var(--paper-dim);
+      border: 2px solid var(--ink);
+      padding: 5px 12px;
+      margin: 0 0 16px;
+      position: relative;
+    }
     .gb-tile {
       flex: 0 0 auto;
       display: flex;
@@ -104,7 +116,7 @@
       display: grid;
       grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
       gap: 14px;
-      margin: 24px 0 8px;
+      margin: 0 0 8px;
     }
     .dock-tile {
       display: flex;
@@ -128,7 +140,7 @@
     .dock-tile:hover .label { color: var(--sunset); }
     .dock-tile:active { transform: translate(2px, 2px); }
     .dock-tile:active::after { top: 2px; left: 2px; right: -4px; bottom: -4px; }
-    .dock-tile::after, .gb-tile::after, .tip-btn::after, .odometer::after,
+    .dock-tile::after, .gb-tile::after, .tip-btn::after, .odometer::after, .zone-tab::after,
     .mast-portrait::after, .memoriam-photo::after {
       content: '';
       position: absolute;
@@ -214,7 +226,7 @@
     .quiet-door { color: var(--ink); text-decoration: none; }
     .quiet-door:hover { color: var(--sunset); }
     .mast-left { position: relative; }
-    .tip-row { display: flex; align-items: stretch; justify-content: space-between; flex-wrap: wrap; gap: 12px 24px; margin: 24px 0; }
+    .tip-row { display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 12px 24px; margin: 24px 0; }
     .tipjar { display: flex; align-items: center; gap: 22px; width: fit-content; margin: 0; }
     .tipjar .jar { flex: 0 0 72px; }
     /* z-index:0 makes these stacking contexts: the negative-z dither
@@ -238,25 +250,25 @@
     .tip-btn:active::after { top: 2px; left: 2px; right: -4px; bottom: -4px; }
     /* buttons keep constant colors, so their sprites skip the night ink-flip */
     html.night .tip-btn svg.px-art rect[fill="#1A1A18"] { fill: #1A1A18; }
-    html.dusk .dock-tile::after, html.dusk html.dusk .gb-tile::after,
+    html.dusk .dock-tile::after, html.dusk .gb-tile::after, html.dusk .zone-tab::after,
     html.dusk .tip-btn::after, html.dusk .odometer::after, html.dusk .mast-portrait::after,
     html.dusk .memoriam-photo::after, html.dusk .mwm-window::after {
       background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="4" height="4" shape-rendering="crispEdges"><rect width="2" height="2" fill="%23DE6222"/><rect x="2" y="2" width="2" height="2" fill="%23DE6222"/></svg>');
     }
-    html.night .dock-tile::after, html.night html.night .gb-tile::after,
+    html.night .dock-tile::after, html.night .gb-tile::after, html.night .zone-tab::after,
     html.night .tip-btn::after, html.night .odometer::after, html.night .mast-portrait::after,
     html.night .memoriam-photo::after, html.night .mwm-window::after {
       background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="4" height="4" shape-rendering="crispEdges"><rect width="2" height="2" fill="%23E8C84A"/><rect x="2" y="2" width="2" height="2" fill="%23E8C84A"/></svg>');
     }
-    .visitor { display: flex; align-items: stretch; gap: 10px; margin: 0; }
+    footer { display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 12px; }
+    .visitor { display: flex; align-items: center; margin: 0; }
     .odometer {
       display: inline-flex;
       align-items: center;
-      gap: 8px;
-      box-sizing: border-box; /* stretches to match the tip panel's full height */
+      gap: 6px;
       background: #1A1A18; /* constant: an odometer plate is dark in every mode */
       border: 2px solid var(--ink);
-      padding: 0 14px;
+      padding: 4px 7px;
       position: relative;
     }
     .odometer svg { display: block; }
@@ -281,12 +293,6 @@
     @media (max-width: 480px) {
       /* guestbook: full-width bar in the stack */
       .gb-tile { width: 100%; }
-      /* counter: full-width odometer strip under the tip box, same height
-         as the box itself. Flex stretch only matches heights on a shared
-         line, so wrapped mobile needs it stated: 72px tiles + 2x20 panel
-         padding + 2x2 border = 116px. Change together with .tipjar. */
-      .visitor { width: 100%; }
-      .odometer { width: 100%; justify-content: center; height: 116px; }
     }
 
   </style>
@@ -415,6 +421,7 @@
 
     <hr class="px-wave">
 
+    <h2 class="zone-tab">sections</h2>
     <div class="dock">
       <a class="dock-tile" href="video-games.html">
         <svg class="px-art" width="72" height="72" viewBox="0 0 24 24" shape-rendering="crispEdges" aria-hidden="true"><rect x="8" y="1" width="1" height="1" fill="#1A1A18"/><rect x="15" y="1" width="1" height="1" fill="#1A1A18"/><rect x="9" y="2" width="1" height="1" fill="#1A1A18"/><rect x="14" y="2" width="1" height="1" fill="#1A1A18"/><rect x="10" y="3" width="1" height="1" fill="#1A1A18"/><rect x="13" y="3" width="1" height="1" fill="#1A1A18"/><rect x="4" y="4" width="16" height="1" fill="#1A1A18"/><rect x="3" y="5" width="1" height="1" fill="#1A1A18"/><rect x="4" y="5" width="16" height="1" fill="#9C9C94"/><rect x="20" y="5" width="1" height="1" fill="#1A1A18"/><rect x="3" y="6" width="1" height="1" fill="#1A1A18"/><rect x="4" y="6" width="1" height="1" fill="#9C9C94"/><rect x="5" y="6" width="14" height="1" fill="#1A1A18"/><rect x="19" y="6" width="1" height="1" fill="#9C9C94"/><rect x="20" y="6" width="1" height="1" fill="#1A1A18"/><rect x="3" y="7" width="1" height="1" fill="#1A1A18"/><rect x="4" y="7" width="1" height="1" fill="#9C9C94"/><rect x="5" y="7" width="1" height="1" fill="#1A1A18"/><rect x="6" y="7" width="12" height="1" fill="#2E6FBF"/><rect x="18" y="7" width="1" height="1" fill="#1A1A18"/><rect x="19" y="7" width="1" height="1" fill="#9C9C94"/><rect x="20" y="7" width="1" height="1" fill="#1A1A18"/><rect x="3" y="8" width="1" height="1" fill="#1A1A18"/><rect x="4" y="8" width="1" height="1" fill="#9C9C94"/><rect x="5" y="8" width="1" height="1" fill="#1A1A18"/><rect x="6" y="8" width="12" height="1" fill="#2E6FBF"/><rect x="18" y="8" width="1" height="1" fill="#1A1A18"/><rect x="19" y="8" width="1" height="1" fill="#9C9C94"/><rect x="20" y="8" width="1" height="1" fill="#1A1A18"/><rect x="3" y="9" width="1" height="1" fill="#1A1A18"/><rect x="4" y="9" width="1" height="1" fill="#9C9C94"/><rect x="5" y="9" width="1" height="1" fill="#1A1A18"/><rect x="6" y="9" width="4" height="1" fill="#2E6FBF"/><rect x="10" y="9" width="2" height="1" fill="#E8743B"/><rect x="12" y="9" width="6" height="1" fill="#2E6FBF"/><rect x="18" y="9" width="1" height="1" fill="#1A1A18"/><rect x="19" y="9" width="1" height="1" fill="#9C9C94"/><rect x="20" y="9" width="1" height="1" fill="#1A1A18"/><rect x="3" y="10" width="1" height="1" fill="#1A1A18"/><rect x="4" y="10" width="1" height="1" fill="#9C9C94"/><rect x="5" y="10" width="1" height="1" fill="#1A1A18"/><rect x="6" y="10" width="3" height="1" fill="#2E6FBF"/><rect x="9" y="10" width="4" height="1" fill="#E8743B"/><rect x="13" y="10" width="5" height="1" fill="#2E6FBF"/><rect x="18" y="10" width="1" height="1" fill="#1A1A18"/><rect x="19" y="10" width="1" height="1" fill="#9C9C94"/><rect x="20" y="10" width="1" height="1" fill="#1A1A18"/><rect x="3" y="11" width="1" height="1" fill="#1A1A18"/><rect x="4" y="11" width="1" height="1" fill="#9C9C94"/><rect x="5" y="11" width="1" height="1" fill="#1A1A18"/><rect x="6" y="11" width="4" height="1" fill="#2E6FBF"/><rect x="10" y="11" width="2" height="1" fill="#E8743B"/><rect x="12" y="11" width="6" height="1" fill="#2E6FBF"/><rect x="18" y="11" width="1" height="1" fill="#1A1A18"/><rect x="19" y="11" width="1" height="1" fill="#9C9C94"/><rect x="20" y="11" width="1" height="1" fill="#1A1A18"/><rect x="3" y="12" width="1" height="1" fill="#1A1A18"/><rect x="4" y="12" width="1" height="1" fill="#9C9C94"/><rect x="5" y="12" width="1" height="1" fill="#1A1A18"/><rect x="6" y="12" width="12" height="1" fill="#2E6FBF"/><rect x="18" y="12" width="1" height="1" fill="#1A1A18"/><rect x="19" y="12" width="1" height="1" fill="#9C9C94"/><rect x="20" y="12" width="1" height="1" fill="#1A1A18"/><rect x="3" y="13" width="1" height="1" fill="#1A1A18"/><rect x="4" y="13" width="1" height="1" fill="#9C9C94"/><rect x="5" y="13" width="1" height="1" fill="#1A1A18"/><rect x="6" y="13" width="2" height="1" fill="#2E6FBF"/><rect x="8" y="13" width="2" height="1" fill="#F3EEDF"/><rect x="10" y="13" width="8" height="1" fill="#2E6FBF"/><rect x="18" y="13" width="1" height="1" fill="#1A1A18"/><rect x="19" y="13" width="1" height="1" fill="#9C9C94"/><rect x="20" y="13" width="1" height="1" fill="#1A1A18"/><rect x="3" y="14" width="1" height="1" fill="#1A1A18"/><rect x="4" y="14" width="1" height="1" fill="#9C9C94"/><rect x="5" y="14" width="1" height="1" fill="#1A1A18"/><rect x="6" y="14" width="12" height="1" fill="#2E6FBF"/><rect x="18" y="14" width="1" height="1" fill="#1A1A18"/><rect x="19" y="14" width="1" height="1" fill="#9C9C94"/><rect x="20" y="14" width="1" height="1" fill="#1A1A18"/><rect x="3" y="15" width="1" height="1" fill="#1A1A18"/><rect x="4" y="15" width="1" height="1" fill="#9C9C94"/><rect x="5" y="15" width="14" height="1" fill="#1A1A18"/><rect x="19" y="15" width="1" height="1" fill="#9C9C94"/><rect x="20" y="15" width="1" height="1" fill="#1A1A18"/><rect x="3" y="16" width="1" height="1" fill="#1A1A18"/><rect x="4" y="16" width="16" height="1" fill="#9C9C94"/><rect x="20" y="16" width="1" height="1" fill="#1A1A18"/><rect x="3" y="17" width="1" height="1" fill="#1A1A18"/><rect x="4" y="17" width="4" height="1" fill="#9C9C94"/><rect x="8" y="17" width="1" height="1" fill="#E8743B"/><rect x="9" y="17" width="7" height="1" fill="#9C9C94"/><rect x="16" y="17" width="1" height="1" fill="#1A1A18"/><rect x="17" y="17" width="3" height="1" fill="#9C9C94"/><rect x="20" y="17" width="1" height="1" fill="#1A1A18"/><rect x="4" y="18" width="16" height="1" fill="#1A1A18"/><rect x="6" y="19" width="3" height="1" fill="#1A1A18"/><rect x="15" y="19" width="3" height="1" fill="#1A1A18"/></svg>
@@ -451,7 +458,7 @@
     </div>
 
     <div class="cp">
-      <p class="px-label">Completed projects</p>
+      <h2 class="zone-tab">completed projects</h2>
       <a class="dock-tile cp-tile" href="https://nintendopipeline.club" target="_blank" rel="noopener">
         <svg class="px-art" width="72" height="72" viewBox="0 0 24 24" shape-rendering="crispEdges" aria-hidden="true"><rect x="5" y="2" width="13" height="1" fill="#1A1A18"/><rect x="4" y="3" width="1" height="1" fill="#1A1A18"/><rect x="5" y="3" width="13" height="1" fill="#9C9C94"/><rect x="18" y="3" width="1" height="1" fill="#1A1A18"/><rect x="4" y="4" width="1" height="1" fill="#1A1A18"/><rect x="5" y="4" width="1" height="1" fill="#9C9C94"/><rect x="6" y="4" width="11" height="1" fill="#1A1A18"/><rect x="17" y="4" width="1" height="1" fill="#9C9C94"/><rect x="18" y="4" width="1" height="1" fill="#1A1A18"/><rect x="4" y="5" width="1" height="1" fill="#1A1A18"/><rect x="5" y="5" width="13" height="1" fill="#9C9C94"/><rect x="18" y="5" width="1" height="1" fill="#1A1A18"/><rect x="4" y="6" width="1" height="1" fill="#1A1A18"/><rect x="5" y="6" width="1" height="1" fill="#9C9C94"/><rect x="6" y="6" width="11" height="1" fill="#1A1A18"/><rect x="17" y="6" width="1" height="1" fill="#9C9C94"/><rect x="18" y="6" width="1" height="1" fill="#1A1A18"/><rect x="4" y="7" width="1" height="1" fill="#1A1A18"/><rect x="5" y="7" width="13" height="1" fill="#9C9C94"/><rect x="18" y="7" width="1" height="1" fill="#1A1A18"/><rect x="4" y="8" width="1" height="1" fill="#1A1A18"/><rect x="5" y="8" width="2" height="1" fill="#9C9C94"/><rect x="7" y="8" width="1" height="1" fill="#1A1A18"/><rect x="8" y="8" width="7" height="1" fill="#2E6FBF"/><rect x="15" y="8" width="1" height="1" fill="#1A1A18"/><rect x="16" y="8" width="2" height="1" fill="#9C9C94"/><rect x="18" y="8" width="1" height="1" fill="#1A1A18"/><rect x="4" y="9" width="1" height="1" fill="#1A1A18"/><rect x="5" y="9" width="2" height="1" fill="#9C9C94"/><rect x="7" y="9" width="1" height="1" fill="#1A1A18"/><rect x="8" y="9" width="7" height="1" fill="#2E6FBF"/><rect x="15" y="9" width="1" height="1" fill="#1A1A18"/><rect x="16" y="9" width="2" height="1" fill="#9C9C94"/><rect x="18" y="9" width="1" height="1" fill="#1A1A18"/><rect x="4" y="10" width="1" height="1" fill="#1A1A18"/><rect x="5" y="10" width="2" height="1" fill="#9C9C94"/><rect x="7" y="10" width="1" height="1" fill="#1A1A18"/><rect x="8" y="10" width="1" height="1" fill="#2E6FBF"/><rect x="9" y="10" width="4" height="1" fill="#F3EEDF"/><rect x="13" y="10" width="2" height="1" fill="#2E6FBF"/><rect x="15" y="10" width="1" height="1" fill="#1A1A18"/><rect x="16" y="10" width="2" height="1" fill="#9C9C94"/><rect x="18" y="10" width="1" height="1" fill="#1A1A18"/><rect x="4" y="11" width="1" height="1" fill="#1A1A18"/><rect x="5" y="11" width="2" height="1" fill="#9C9C94"/><rect x="7" y="11" width="1" height="1" fill="#1A1A18"/><rect x="8" y="11" width="7" height="1" fill="#2E6FBF"/><rect x="15" y="11" width="1" height="1" fill="#1A1A18"/><rect x="16" y="11" width="2" height="1" fill="#9C9C94"/><rect x="18" y="11" width="1" height="1" fill="#1A1A18"/><rect x="4" y="12" width="1" height="1" fill="#1A1A18"/><rect x="5" y="12" width="2" height="1" fill="#9C9C94"/><rect x="7" y="12" width="1" height="1" fill="#1A1A18"/><rect x="8" y="12" width="7" height="1" fill="#2E6FBF"/><rect x="15" y="12" width="1" height="1" fill="#1A1A18"/><rect x="16" y="12" width="2" height="1" fill="#9C9C94"/><rect x="18" y="12" width="1" height="1" fill="#1A1A18"/><rect x="4" y="13" width="1" height="1" fill="#1A1A18"/><rect x="5" y="13" width="13" height="1" fill="#9C9C94"/><rect x="18" y="13" width="1" height="1" fill="#1A1A18"/><rect x="4" y="14" width="1" height="1" fill="#1A1A18"/><rect x="5" y="14" width="13" height="1" fill="#9C9C94"/><rect x="18" y="14" width="1" height="1" fill="#1A1A18"/><rect x="4" y="15" width="2" height="1" fill="#1A1A18"/><rect x="6" y="15" width="11" height="1" fill="#9C9C94"/><rect x="17" y="15" width="2" height="1" fill="#1A1A18"/><rect x="5" y="16" width="1" height="1" fill="#1A1A18"/><rect x="6" y="16" width="11" height="1" fill="#9C9C94"/><rect x="17" y="16" width="1" height="1" fill="#1A1A18"/><rect x="5" y="17" width="13" height="1" fill="#1A1A18"/></svg>
         <span class="label">retro game club</span>
@@ -486,12 +493,12 @@
         <svg class="px-art" width="72" height="72" viewBox="0 0 16 16" shape-rendering="crispEdges" aria-hidden="true"><rect x="11" y="2" width="2" height="1" fill="#1A1A18"/><rect x="10" y="3" width="3" height="1" fill="#1A1A18"/><rect x="9" y="4" width="3" height="1" fill="#1A1A18"/><rect x="8" y="5" width="3" height="1" fill="#1A1A18"/><rect x="7" y="6" width="3" height="1" fill="#1A1A18"/><rect x="6" y="7" width="1" height="1" fill="#1A1A18"/><rect x="7" y="7" width="1" height="1" fill="#2E6FBF"/><rect x="8" y="7" width="1" height="1" fill="#1A1A18"/><rect x="5" y="8" width="1" height="1" fill="#1A1A18"/><rect x="6" y="8" width="1" height="1" fill="#2E6FBF"/><rect x="5" y="9" width="1" height="1" fill="#E8743B"/><rect x="3" y="10" width="1" height="1" fill="#2E6FBF"/><rect x="5" y="10" width="1" height="1" fill="#2E6FBF"/><rect x="2" y="11" width="1" height="1" fill="#2E6FBF"/><rect x="4" y="11" width="1" height="1" fill="#2E6FBF"/><rect x="6" y="11" width="2" height="1" fill="#2E6FBF"/><rect x="2" y="12" width="11" height="1" fill="#1A1A18"/></svg>
         <span class="plate">guestbook</span>
       </a>
-      <p class="visitor" hidden><span class="odometer"></span></p>
     </div>
   </main>
 
   <footer>
     <p><a class="colophon-door" href="colophon.html">&copy; 2026 Eric Armbruster</a></p>
+    <p class="visitor" hidden><span class="odometer"></span></p>
   </footer>
 
 
@@ -649,7 +656,7 @@
           var n = String(Math.max(0, d.count | 0));
           while (n.length < 6) n = '0' + n;
           el.innerHTML = n.split('').map(function (ch) {
-            return '<svg width="28" height="44" viewBox="0 0 7 11" shape-rendering="crispEdges" aria-hidden="true">' + D[ch] + '</svg>';
+            return '<svg width="14" height="22" viewBox="0 0 7 11" shape-rendering="crispEdges" aria-hidden="true">' + D[ch] + '</svg>';
           }).join('');
           wrap.setAttribute('aria-label', 'visitor ' + Number(n));
           wrap.hidden = false;
