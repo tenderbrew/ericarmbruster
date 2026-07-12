@@ -39,7 +39,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=DotGothic16&family=IBM+Plex+Mono:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet">
 
-  <link rel="stylesheet" href="css/pixel-base.css?v=10">
+  <link rel="stylesheet" href="css/pixel-base.css?v=11">
   <script>try{if(window.self!==window.top)document.documentElement.classList.add("framed");var m=sessionStorage.roost_mode;if(!m&&!navigator.webdriver){var h=+new Intl.DateTimeFormat("en-US",{timeZone:"America/New_York",hour:"numeric",hour12:false}).format(new Date());m=(h>=21||h<6)?"night":(h<8||h>=19)?"dusk":"day"}if(m==="night"||m==="dusk")document.documentElement.classList.add(m)}catch(e){}</script>
   <style>
     .masthead .sun-night, .masthead .sun-dusk { display: none; }
@@ -241,6 +241,11 @@
     .tip-btn:active::after { top: 2px; left: 2px; right: -4px; bottom: -4px; }
     /* buttons keep constant colors, so their sprites skip the night ink-flip */
     html.night .tip-btn svg.px-art rect[fill="#1A1A18"] { fill: #1A1A18; }
+    html.dusk .dock-tile::after, html.dusk .ew-tile::after, html.dusk .gb-tile::after,
+    html.dusk .tip-btn::after, html.dusk .odometer::after, html.dusk .mast-portrait::after,
+    html.dusk .memoriam-photo::after, html.dusk .mwm-window::after {
+      background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="4" height="4" shape-rendering="crispEdges"><rect width="2" height="2" fill="%23DE6222"/><rect x="2" y="2" width="2" height="2" fill="%23DE6222"/></svg>');
+    }
     html.night .dock-tile::after, html.night .ew-tile::after, html.night .gb-tile::after,
     html.night .tip-btn::after, html.night .odometer::after, html.night .mast-portrait::after,
     html.night .memoriam-photo::after, html.night .mwm-window::after {

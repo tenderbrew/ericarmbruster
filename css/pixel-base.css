@@ -331,6 +331,7 @@ html.dusk {
   --ink: #2E1F26;
   --pool: #7B4B94;
   --sunset: #DE6222;
+  --shadow: #DE6222; /* golden hour: dusk shadows run long and orange */
 }
 
 /* Dusk re-inks the water: wave dividers and every pool-blue sprite pixel
@@ -384,6 +385,13 @@ html.night svg.px-art rect[fill="#1A1A18"] { fill: #F3EEDF; }
   background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="4" height="4" shape-rendering="crispEdges"><rect width="2" height="2" fill="%231A1A18"/><rect x="2" y="2" width="2" height="2" fill="%231A1A18"/></svg>');
   background-size: 4px 4px;
   image-rendering: pixelated;
+}
+
+html.dusk .px-panel::after,
+html.dusk .px-stat::after,
+html.dusk .px-gallery .frame::after {
+  /* golden hour: the dusk checker runs sunset orange */
+  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="4" height="4" shape-rendering="crispEdges"><rect width="2" height="2" fill="%23DE6222"/><rect x="2" y="2" width="2" height="2" fill="%23DE6222"/></svg>');
 }
 
 html.night .px-panel::after,
