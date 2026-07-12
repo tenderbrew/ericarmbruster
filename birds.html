@@ -40,16 +40,69 @@
 
     .bird-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 24px; margin: 24px 0; }
     .bird-grid figure { margin: 0; }
-    .bird-grid img {
+    .bd-photo-btn {
+      display: block;
+      width: 100%;
+      padding: 0;
+      background: none;
+      border: 2px solid var(--ink);
+      box-shadow: 4px 4px 0 var(--shadow);
+      cursor: pointer;
+    }
+    .bd-photo-btn:hover { border-color: var(--sunset); }
+    .bd-photo-btn img {
       display: block;
       width: 100%;
       height: auto;
-      border: 2px solid var(--ink);
-      box-shadow: 4px 4px 0 var(--shadow);
       image-rendering: auto; /* real photographs */
     }
     .bird-grid figcaption { margin-top: 8px; font-size: 12px; }
     @media (max-width: 560px) { .bird-grid { grid-template-columns: 1fr; } }
+
+    /* Lightbox (same pattern as hector.html / seymour.html) */
+    .bd-lightbox {
+      display: none;
+      position: fixed;
+      inset: 0;
+      z-index: 10;
+      background: rgba(26, 26, 24, 0.94);
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      padding: 48px 16px 16px;
+    }
+    .bd-lightbox--open { display: flex; }
+    .bd-lightbox-img {
+      max-width: min(92vw, 900px);
+      max-height: 78vh;
+      border: 2px solid var(--paper);
+      box-shadow: 4px 4px 0 var(--shadow);
+    }
+    .bd-lightbox-caption {
+      margin-top: 16px;
+      font-family: var(--font-display);
+      font-size: 16px;
+      color: var(--paper);
+      text-align: center;
+    }
+    .bd-lightbox button {
+      position: absolute;
+      background: var(--paper);
+      color: var(--ink);
+      border: 2px solid var(--ink);
+      box-shadow: 4px 4px 0 var(--shadow);
+      font-family: var(--font-display);
+      font-size: 24px;
+      line-height: 1;
+      width: 44px;
+      height: 44px;
+      cursor: pointer;
+      padding: 0;
+    }
+    .bd-lightbox button:hover { color: var(--sunset); }
+    .bd-lightbox-close { top: 16px; right: 16px; }
+    .bd-lightbox-prev { left: 16px; top: 50%; transform: translateY(-50%); }
+    .bd-lightbox-next { right: 16px; top: 50%; transform: translateY(-50%); }
   </style>
 </head>
 <body>
@@ -66,29 +119,29 @@
   <hr class="px-wave">
 
   <main id="main">
-    <div class="bird-grid">
+    <div class="bird-grid" id="bd-gallery">
       <figure>
-        <img src="images/birds/bird-01.jpg" alt="Downy Woodpecker clinging to a seed-cylinder feeder" loading="lazy">
+        <button type="button" class="bd-photo-btn"><img src="images/birds/bird-01.jpg" alt="Downy Woodpecker clinging to a seed-cylinder feeder" loading="lazy"></button>
         <figcaption>Downy Woodpecker</figcaption>
       </figure>
       <figure>
-        <img src="images/birds/bird-02.jpg" alt="Male House Finch standing in a platform feeder full of seed" loading="lazy">
+        <button type="button" class="bd-photo-btn"><img src="images/birds/bird-02.jpg" alt="Male House Finch standing in a platform feeder full of seed" loading="lazy"></button>
         <figcaption>House Finch</figcaption>
       </figure>
       <figure>
-        <img src="images/birds/bird-03.jpg" alt="Red-bellied Woodpecker and a starling high in a dead tree" loading="lazy">
+        <button type="button" class="bd-photo-btn"><img src="images/birds/bird-03.jpg" alt="Red-bellied Woodpecker and a starling high in a dead tree" loading="lazy"></button>
         <figcaption>Red-bellied Woodpecker, with company</figcaption>
       </figure>
       <figure>
-        <img src="images/birds/bird-04.jpg" alt="Mourning Dove standing on landscaping rocks in evening light" loading="lazy">
+        <button type="button" class="bd-photo-btn"><img src="images/birds/bird-04.jpg" alt="Mourning Dove standing on landscaping rocks in evening light" loading="lazy"></button>
         <figcaption>Mourning Dove</figcaption>
       </figure>
       <figure>
-        <img src="images/birds/bird-05.jpg" alt="European Starlings perched across bare branches against a blue sky" loading="lazy">
+        <button type="button" class="bd-photo-btn"><img src="images/birds/bird-05.jpg" alt="European Starlings perched across bare branches against a blue sky" loading="lazy"></button>
         <figcaption>European Starlings</figcaption>
       </figure>
       <figure>
-        <img src="images/birds/bird-06.jpg" alt="Female House Finch on the edge of the platform feeder" loading="lazy">
+        <button type="button" class="bd-photo-btn"><img src="images/birds/bird-06.jpg" alt="Female House Finch on the edge of the platform feeder" loading="lazy"></button>
         <figcaption>House Finch</figcaption>
       </figure>
     </div>
@@ -98,5 +151,102 @@
     <p>&copy; 2026 Eric Armbruster</p>
   </footer>
 
+
+  <div class="bd-lightbox" id="bd-lightbox" role="dialog" aria-modal="true" aria-label="Photo viewer" aria-hidden="true" tabindex="-1">
+    <button class="bd-lightbox-close" aria-label="Close">&times;</button>
+    <button class="bd-lightbox-prev" aria-label="Previous photo">&#8249;</button>
+    <button class="bd-lightbox-next" aria-label="Next photo">&#8250;</button>
+    <img class="bd-lightbox-img" id="bd-lightbox-img" src="" alt="">
+    <div class="bd-lightbox-caption" id="bd-lightbox-caption"></div>
+  </div>
+
+  <script>
+    (function () {
+      var lightbox = document.getElementById('bd-lightbox');
+      var lbImg = document.getElementById('bd-lightbox-img');
+      var lbCaption = document.getElementById('bd-lightbox-caption');
+      var closeBtn = lightbox.querySelector('.bd-lightbox-close');
+      var prevBtn = lightbox.querySelector('.bd-lightbox-prev');
+      var nextBtn = lightbox.querySelector('.bd-lightbox-next');
+      var galleryItems = Array.from(document.querySelectorAll('#bd-gallery figure'));
+      var mainEl = document.getElementById('main');
+      var focusable = [closeBtn, prevBtn, nextBtn];
+      var currentIndex = 0;
+
+      function showPhoto(index) {
+        currentIndex = index;
+        var item = galleryItems[index];
+        var img = item.querySelector('img');
+        lbImg.src = img.getAttribute('data-full') || img.src;
+        lbImg.alt = img.alt;
+        var fc = item.querySelector('figcaption');
+        lbCaption.textContent = fc ? fc.textContent : '';
+      }
+      function navigate(delta) {
+        var next = currentIndex + delta;
+        if (next < 0) next = galleryItems.length - 1;
+        if (next >= galleryItems.length) next = 0;
+        showPhoto(next);
+      }
+      var lastTrigger = null;
+      function open(index, trigger) {
+        lastTrigger = trigger || null;
+        showPhoto(index);
+        lightbox.setAttribute('aria-hidden', 'false');
+        lightbox.classList.add('bd-lightbox--open');
+        document.body.style.overflow = 'hidden';
+        if (mainEl) {
+          mainEl.setAttribute('aria-hidden', 'true');
+          mainEl.inert = true;
+        }
+        closeBtn.focus();
+      }
+      galleryItems.forEach(function (item, i) {
+        var trigger = item.querySelector('.bd-photo-btn');
+        trigger.addEventListener('click', function () { open(i, trigger); });
+      });
+      function close() {
+        lightbox.classList.remove('bd-lightbox--open');
+        lightbox.setAttribute('aria-hidden', 'true');
+        document.body.style.overflow = '';
+        if (mainEl) {
+          mainEl.removeAttribute('aria-hidden');
+          mainEl.inert = false;
+        }
+        if (lastTrigger && typeof lastTrigger.focus === 'function') lastTrigger.focus();
+        lastTrigger = null;
+      }
+      function trapFocus(e) {
+        if (e.key !== 'Tab') return;
+        var first = focusable[0];
+        var last = focusable[focusable.length - 1];
+        var active = document.activeElement;
+        if (e.shiftKey) {
+          if (active === first || !lightbox.contains(active)) {
+            e.preventDefault();
+            last.focus();
+          }
+        } else {
+          if (active === last || !lightbox.contains(active)) {
+            e.preventDefault();
+            first.focus();
+          }
+        }
+      }
+      closeBtn.addEventListener('click', close);
+      prevBtn.addEventListener('click', function () { navigate(-1); });
+      nextBtn.addEventListener('click', function () { navigate(1); });
+      lightbox.addEventListener('click', function (e) {
+        if (e.target === lightbox) close();
+      });
+      document.addEventListener('keydown', function (e) {
+        if (!lightbox.classList.contains('bd-lightbox--open')) return;
+        if (e.key === 'Escape') close();
+        if (e.key === 'ArrowLeft') navigate(-1);
+        if (e.key === 'ArrowRight') navigate(1);
+        trapFocus(e);
+      });
+    })();
+  </script>
 </body>
 </html>
