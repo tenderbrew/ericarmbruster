@@ -1,7 +1,49 @@
 {
-  "fetchedAt": "2026-07-12T12:10:01.460Z",
-  "windowPlays": 278,
+  "fetchedAt": "2026-07-12T18:10:01.424Z",
+  "windowPlays": 285,
   "recentTracks": [
+    {
+      "artist": "Third Eye Blind",
+      "album": "Blue",
+      "track": "Deep Inside of You",
+      "played": 1783874278
+    },
+    {
+      "artist": "Jason Isbell",
+      "album": "Something More Than Free",
+      "track": "Something More Than Free",
+      "played": 1783874076
+    },
+    {
+      "artist": "Sixpence None the Richer",
+      "album": "Sixpence None the Richer",
+      "track": "Kiss Me",
+      "played": 1783873873
+    },
+    {
+      "artist": "Jason Isbell and the 400 Unit",
+      "album": "The Nashville Sound",
+      "track": "Last of My Kind",
+      "played": 1783873511
+    },
+    {
+      "artist": "Radiohead",
+      "album": "OK Computer: OKNOTOK 1997 2017",
+      "track": "No Surprises",
+      "played": 1783873286
+    },
+    {
+      "artist": "The Ataris",
+      "album": "Blue Skies, Broken Hearts…Next 12 Exits",
+      "track": "Your Boyfriend Sucks",
+      "played": 1783873116
+    },
+    {
+      "artist": "PinkPantheress",
+      "album": "Heaven knows",
+      "track": "Mosquito",
+      "played": 1783872974
+    },
     {
       "artist": "Stone Temple Pilots",
       "album": "Core",
@@ -109,48 +151,6 @@
       "album": "In the Aeroplane Over the Sea",
       "track": "In the Aeroplane Over the Sea",
       "played": 1783599963
-    },
-    {
-      "artist": "Rilo Kiley",
-      "album": "Take Offs and Landings",
-      "track": "Science vs. Romance",
-      "played": 1783599624
-    },
-    {
-      "artist": "The Decemberists",
-      "album": "The King Is Dead",
-      "track": "Don't Carry It All",
-      "played": 1783599532
-    },
-    {
-      "artist": "Alanis Morissette",
-      "album": "Jagged Little Pill",
-      "track": "Ironic",
-      "played": 1783599317
-    },
-    {
-      "artist": "The Ataris",
-      "album": "So Long, Astoria",
-      "track": "In This Diary",
-      "played": 1783599086
-    },
-    {
-      "artist": "The Mars Volta",
-      "album": "De‐Loused in the Comatorium",
-      "track": "Televators",
-      "played": 1783598730
-    },
-    {
-      "artist": "Broken Social Scene",
-      "album": "You Forgot It in People",
-      "track": "Anthems for a Seventeen Year‐Old Girl",
-      "played": 1783598460
-    },
-    {
-      "artist": "Oasis",
-      "album": "Definitely Maybe",
-      "track": "Live Forever",
-      "played": 1783598191
     }
   ],
   "topArtists": [
@@ -171,6 +171,10 @@
       "plays": 8
     },
     {
+      "artist": "The Ataris",
+      "plays": 7
+    },
+    {
       "artist": "Taking Back Sunday",
       "plays": 7
     },
@@ -189,10 +193,6 @@
     {
       "artist": "Modest Mouse",
       "plays": 7
-    },
-    {
-      "artist": "Wilco",
-      "plays": 6
     }
   ],
   "topAlbums": [
@@ -212,6 +212,11 @@
       "plays": 5
     },
     {
+      "artist": "The Ataris",
+      "album": "Blue Skies, Broken Hearts…Next 12 Exits",
+      "plays": 4
+    },
+    {
       "artist": "The Postal Service",
       "album": "Give Up",
       "plays": 4
@@ -227,6 +232,11 @@
       "plays": 4
     },
     {
+      "artist": "Jason Isbell and the 400 Unit",
+      "album": "The Nashville Sound",
+      "plays": 3
+    },
+    {
       "artist": "Hootie & the Blowfish",
       "album": "Cracked Rear View",
       "plays": 3
@@ -234,16 +244,6 @@
     {
       "artist": "Okkervil River",
       "album": "The Stage Names",
-      "plays": 3
-    },
-    {
-      "artist": "Monsters of Folk",
-      "album": "Monsters of Folk",
-      "plays": 3
-    },
-    {
-      "artist": "Phoebe Bridgers",
-      "album": "Stranger in the Alps",
       "plays": 3
     }
   ]
