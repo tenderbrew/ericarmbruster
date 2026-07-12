@@ -90,8 +90,8 @@
       align-items: center;
       justify-content: center;
       gap: 8px;
-      width: 160px;
-      height: 160px;
+      width: 116px;
+      height: 116px;
       background: var(--paper-dim);
       border: 2px solid var(--ink);
       position: relative;
@@ -286,9 +286,8 @@
     .memoriam-photo:hover img { border-color: var(--sunset); }
     /* ---- Mobile (must stay at the end: overrides base rules above) ------ */
     @media (max-width: 480px) {
-      /* cp + guestbook: equal 150px tiles so the pair reads as a set */
-      .gb-tile { width: 150px; height: 150px; }
-      .gb-tile svg { width: 72px; height: 72px; }
+      /* guestbook: full-width bar in the stack */
+      .gb-tile { width: 100%; }
       /* counter: full-width odometer strip under the tip box, same height
          as the box itself. Flex stretch only matches heights on a shared
          line, so wrapped mobile needs it stated: 72px tiles + 2x20 panel
@@ -468,10 +467,6 @@
           <span class="label">retro game club</span>
         </a>
       </div>
-      <a class="gb-tile" href="guestbook.html">
-        <svg class="px-art" width="96" height="96" viewBox="0 0 16 16" shape-rendering="crispEdges" aria-hidden="true"><rect x="11" y="2" width="2" height="1" fill="#1A1A18"/><rect x="10" y="3" width="3" height="1" fill="#1A1A18"/><rect x="9" y="4" width="3" height="1" fill="#1A1A18"/><rect x="8" y="5" width="3" height="1" fill="#1A1A18"/><rect x="7" y="6" width="3" height="1" fill="#1A1A18"/><rect x="6" y="7" width="1" height="1" fill="#1A1A18"/><rect x="7" y="7" width="1" height="1" fill="#2E6FBF"/><rect x="8" y="7" width="1" height="1" fill="#1A1A18"/><rect x="5" y="8" width="1" height="1" fill="#1A1A18"/><rect x="6" y="8" width="1" height="1" fill="#2E6FBF"/><rect x="5" y="9" width="1" height="1" fill="#E8743B"/><rect x="3" y="10" width="1" height="1" fill="#2E6FBF"/><rect x="5" y="10" width="1" height="1" fill="#2E6FBF"/><rect x="2" y="11" width="1" height="1" fill="#2E6FBF"/><rect x="4" y="11" width="1" height="1" fill="#2E6FBF"/><rect x="6" y="11" width="2" height="1" fill="#2E6FBF"/><rect x="2" y="12" width="11" height="1" fill="#1A1A18"/></svg>
-        <span class="plate">guestbook</span>
-      </a>
     </div>
 
     <hr class="px-wave">
@@ -499,6 +494,10 @@
             <button type="button" class="tip-btn btc-copy" data-addr="bc1qkyddfq890sekylqzs42g9fahhu3kwtudrv9pj3" aria-label="copy bitcoin address" title="bc1qkyddfq890sekylqzs42g9fahhu3kwtudrv9pj3 — click to copy"><svg class="px-art tip-coin" width="48" height="48" viewBox="0 0 16 16" shape-rendering="crispEdges" aria-hidden="true"><rect x="5" y="1" width="6" height="1" fill="#1A1A18"/><rect x="3" y="2" width="2" height="1" fill="#1A1A18"/><rect x="5" y="2" width="6" height="1" fill="#F3EEDF"/><rect x="11" y="2" width="2" height="1" fill="#1A1A18"/><rect x="2" y="3" width="1" height="1" fill="#1A1A18"/><rect x="3" y="3" width="3" height="1" fill="#F3EEDF"/><rect x="6" y="3" width="1" height="1" fill="#1A1A18"/><rect x="7" y="3" width="2" height="1" fill="#F3EEDF"/><rect x="9" y="3" width="1" height="1" fill="#1A1A18"/><rect x="10" y="3" width="3" height="1" fill="#F3EEDF"/><rect x="13" y="3" width="1" height="1" fill="#1A1A18"/><rect x="2" y="4" width="1" height="1" fill="#1A1A18"/><rect x="3" y="4" width="2" height="1" fill="#F3EEDF"/><rect x="5" y="4" width="5" height="1" fill="#1A1A18"/><rect x="10" y="4" width="3" height="1" fill="#F3EEDF"/><rect x="13" y="4" width="1" height="1" fill="#1A1A18"/><rect x="1" y="5" width="1" height="1" fill="#1A1A18"/><rect x="2" y="5" width="3" height="1" fill="#F3EEDF"/><rect x="5" y="5" width="1" height="1" fill="#1A1A18"/><rect x="6" y="5" width="4" height="1" fill="#F3EEDF"/><rect x="10" y="5" width="1" height="1" fill="#1A1A18"/><rect x="11" y="5" width="3" height="1" fill="#F3EEDF"/><rect x="14" y="5" width="1" height="1" fill="#1A1A18"/><rect x="1" y="6" width="1" height="1" fill="#1A1A18"/><rect x="2" y="6" width="3" height="1" fill="#F3EEDF"/><rect x="5" y="6" width="1" height="1" fill="#1A1A18"/><rect x="6" y="6" width="4" height="1" fill="#F3EEDF"/><rect x="10" y="6" width="1" height="1" fill="#1A1A18"/><rect x="11" y="6" width="3" height="1" fill="#F3EEDF"/><rect x="14" y="6" width="1" height="1" fill="#1A1A18"/><rect x="1" y="7" width="1" height="1" fill="#1A1A18"/><rect x="2" y="7" width="3" height="1" fill="#F3EEDF"/><rect x="5" y="7" width="5" height="1" fill="#1A1A18"/><rect x="10" y="7" width="4" height="1" fill="#F3EEDF"/><rect x="14" y="7" width="1" height="1" fill="#1A1A18"/><rect x="1" y="8" width="1" height="1" fill="#1A1A18"/><rect x="2" y="8" width="3" height="1" fill="#F3EEDF"/><rect x="5" y="8" width="1" height="1" fill="#1A1A18"/><rect x="6" y="8" width="4" height="1" fill="#F3EEDF"/><rect x="10" y="8" width="1" height="1" fill="#1A1A18"/><rect x="11" y="8" width="2" height="1" fill="#F3EEDF"/><rect x="13" y="8" width="1" height="1" fill="#8B5A33"/><rect x="14" y="8" width="1" height="1" fill="#1A1A18"/><rect x="1" y="9" width="1" height="1" fill="#1A1A18"/><rect x="2" y="9" width="3" height="1" fill="#F3EEDF"/><rect x="5" y="9" width="1" height="1" fill="#1A1A18"/><rect x="6" y="9" width="4" height="1" fill="#F3EEDF"/><rect x="10" y="9" width="1" height="1" fill="#1A1A18"/><rect x="11" y="9" width="2" height="1" fill="#F3EEDF"/><rect x="13" y="9" width="1" height="1" fill="#8B5A33"/><rect x="14" y="9" width="1" height="1" fill="#1A1A18"/><rect x="2" y="10" width="1" height="1" fill="#1A1A18"/><rect x="3" y="10" width="2" height="1" fill="#F3EEDF"/><rect x="5" y="10" width="5" height="1" fill="#1A1A18"/><rect x="10" y="10" width="2" height="1" fill="#F3EEDF"/><rect x="12" y="10" width="1" height="1" fill="#8B5A33"/><rect x="13" y="10" width="1" height="1" fill="#1A1A18"/><rect x="2" y="11" width="1" height="1" fill="#1A1A18"/><rect x="3" y="11" width="3" height="1" fill="#F3EEDF"/><rect x="6" y="11" width="1" height="1" fill="#1A1A18"/><rect x="7" y="11" width="2" height="1" fill="#F3EEDF"/><rect x="9" y="11" width="1" height="1" fill="#1A1A18"/><rect x="10" y="11" width="1" height="1" fill="#F3EEDF"/><rect x="11" y="11" width="2" height="1" fill="#8B5A33"/><rect x="13" y="11" width="1" height="1" fill="#1A1A18"/><rect x="3" y="12" width="2" height="1" fill="#1A1A18"/><rect x="5" y="12" width="4" height="1" fill="#F3EEDF"/><rect x="9" y="12" width="2" height="1" fill="#8B5A33"/><rect x="11" y="12" width="2" height="1" fill="#1A1A18"/><rect x="5" y="13" width="6" height="1" fill="#1A1A18"/></svg><svg class="px-art tip-check" width="48" height="48" viewBox="0 0 16 16" shape-rendering="crispEdges" aria-hidden="true"><rect x="12" y="3" width="2" height="1" fill="#1A1A18"/><rect x="11" y="4" width="3" height="1" fill="#1A1A18"/><rect x="10" y="5" width="3" height="1" fill="#1A1A18"/><rect x="9" y="6" width="3" height="1" fill="#1A1A18"/><rect x="2" y="7" width="2" height="1" fill="#1A1A18"/><rect x="8" y="7" width="3" height="1" fill="#1A1A18"/><rect x="2" y="8" width="3" height="1" fill="#1A1A18"/><rect x="7" y="8" width="3" height="1" fill="#1A1A18"/><rect x="3" y="9" width="6" height="1" fill="#1A1A18"/><rect x="4" y="10" width="4" height="1" fill="#1A1A18"/><rect x="5" y="11" width="2" height="1" fill="#1A1A18"/></svg></button>
         </div>
       </div>
+    <a class="gb-tile" href="guestbook.html">
+        <svg class="px-art" width="72" height="72" viewBox="0 0 16 16" shape-rendering="crispEdges" aria-hidden="true"><rect x="11" y="2" width="2" height="1" fill="#1A1A18"/><rect x="10" y="3" width="3" height="1" fill="#1A1A18"/><rect x="9" y="4" width="3" height="1" fill="#1A1A18"/><rect x="8" y="5" width="3" height="1" fill="#1A1A18"/><rect x="7" y="6" width="3" height="1" fill="#1A1A18"/><rect x="6" y="7" width="1" height="1" fill="#1A1A18"/><rect x="7" y="7" width="1" height="1" fill="#2E6FBF"/><rect x="8" y="7" width="1" height="1" fill="#1A1A18"/><rect x="5" y="8" width="1" height="1" fill="#1A1A18"/><rect x="6" y="8" width="1" height="1" fill="#2E6FBF"/><rect x="5" y="9" width="1" height="1" fill="#E8743B"/><rect x="3" y="10" width="1" height="1" fill="#2E6FBF"/><rect x="5" y="10" width="1" height="1" fill="#2E6FBF"/><rect x="2" y="11" width="1" height="1" fill="#2E6FBF"/><rect x="4" y="11" width="1" height="1" fill="#2E6FBF"/><rect x="6" y="11" width="2" height="1" fill="#2E6FBF"/><rect x="2" y="12" width="11" height="1" fill="#1A1A18"/></svg>
+        <span class="plate">guestbook</span>
+      </a>
   <p class="visitor" hidden><span class="odometer"></span></p>
     </div>
   </main>
@@ -662,7 +661,7 @@
           var n = String(Math.max(0, d.count | 0));
           while (n.length < 6) n = '0' + n;
           el.innerHTML = n.split('').map(function (ch) {
-            return '<svg width="35" height="55" viewBox="0 0 7 11" shape-rendering="crispEdges" aria-hidden="true">' + D[ch] + '</svg>';
+            return '<svg width="28" height="44" viewBox="0 0 7 11" shape-rendering="crispEdges" aria-hidden="true">' + D[ch] + '</svg>';
           }).join('');
           wrap.setAttribute('aria-label', 'visitor ' + Number(n));
           wrap.hidden = false;
