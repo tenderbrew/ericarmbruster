@@ -289,9 +289,12 @@
       /* cp + guestbook: equal 150px tiles so the pair reads as a set */
       .gb-tile { width: 150px; height: 150px; }
       .gb-tile svg { width: 72px; height: 72px; }
-      /* counter: full-width odometer strip under the tip box */
+      /* counter: full-width odometer strip under the tip box, same height
+         as the box itself. Flex stretch only matches heights on a shared
+         line, so wrapped mobile needs it stated: 72px tiles + 2x20 panel
+         padding + 2x2 border = 116px. Change together with .tipjar. */
       .visitor { width: 100%; }
-      .odometer { width: 100%; justify-content: center; }
+      .odometer { width: 100%; justify-content: center; height: 116px; }
     }
 
   </style>
