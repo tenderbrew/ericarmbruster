@@ -78,7 +78,7 @@
     .elsewhere-row {
       display: flex;
       justify-content: space-between;
-      align-items: flex-start;
+      align-items: flex-end;
       gap: 24px;
       flex-wrap: wrap;
     }
@@ -284,6 +284,16 @@
       border: 2px solid var(--ink);
     }
     .memoriam-photo:hover img { border-color: var(--sunset); }
+    /* ---- Mobile (must stay at the end: overrides base rules above) ------ */
+    @media (max-width: 480px) {
+      /* cp + guestbook: equal 150px tiles so the pair reads as a set */
+      .gb-tile { width: 150px; height: 150px; }
+      .gb-tile svg { width: 72px; height: 72px; }
+      /* counter: full-width odometer strip under the tip box */
+      .visitor { width: 100%; }
+      .odometer { width: 100%; justify-content: center; }
+    }
+
   </style>
 
   <!-- Google Analytics -->
