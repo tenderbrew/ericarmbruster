@@ -135,7 +135,7 @@
     .dock-tile:hover .label { color: var(--sunset); }
     .dock-tile:active { transform: translate(2px, 2px); }
     .dock-tile:active::after { top: 2px; left: 2px; right: -4px; bottom: -4px; }
-    .dock-tile::after, .ew-tile::after, .gb-tile::after, .tip-btn::after,
+    .dock-tile::after, .ew-tile::after, .gb-tile::after, .tip-btn::after, .odometer::after,
     .mast-portrait::after, .memoriam-photo::after {
       content: '';
       position: absolute;
@@ -242,20 +242,24 @@
     /* buttons keep constant colors, so their sprites skip the night ink-flip */
     html.night .tip-btn svg.px-art rect[fill="#1A1A18"] { fill: #1A1A18; }
     html.night .dock-tile::after, html.night .ew-tile::after, html.night .gb-tile::after,
-    html.night .tip-btn::after, html.night .mast-portrait::after, html.night .memoriam-photo::after,
+    html.night .tip-btn::after, html.night .odometer::after, html.night .mast-portrait::after,
+    html.night .memoriam-photo::after, html.night .mwm-window::after {
+      background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="4" height="4" shape-rendering="crispEdges"><rect width="2" height="2" fill="%23F3EEDF"/><rect x="2" y="2" width="2" height="2" fill="%23F3EEDF"/></svg>');
+    }
     .visitor { display: flex; align-items: center; gap: 10px; }
     .visitor-word { font-family: var(--font-display); font-size: 16px; }
     .odometer {
       display: inline-flex;
-      gap: 6px;
+      align-items: center;
+      gap: 8px;
+      height: 72px; /* same height as the tip tiles beside it */
+      box-sizing: border-box;
       background: #1A1A18; /* constant: an odometer plate is dark in every mode */
       border: 2px solid var(--ink);
-      padding: 4px 7px;
+      padding: 0 14px;
+      position: relative;
     }
     .odometer svg { display: block; }
-    html.night .mwm-window::after {
-      background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="4" height="4" shape-rendering="crispEdges"><rect width="2" height="2" fill="%23F3EEDF"/><rect x="2" y="2" width="2" height="2" fill="%23F3EEDF"/></svg>');
-    }
     .tip-btn .tip-check { display: none; }
     .tip-btn.copied .tip-coin { display: none; }
     .tip-btn.copied .tip-check { display: block; }
@@ -646,7 +650,7 @@
           var n = String(Math.max(0, d.count | 0));
           while (n.length < 6) n = '0' + n;
           el.innerHTML = n.split('').map(function (ch) {
-            return '<svg width="14" height="22" viewBox="0 0 7 11" shape-rendering="crispEdges" aria-hidden="true">' + D[ch] + '</svg>';
+            return '<svg width="21" height="33" viewBox="0 0 7 11" shape-rendering="crispEdges" aria-hidden="true">' + D[ch] + '</svg>';
           }).join('');
           wrap.setAttribute('aria-label', 'visitor ' + Number(n));
           wrap.hidden = false;
