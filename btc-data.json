@@ -1,13 +1,13 @@
 {
-  "fetchedAt": "2026-07-12T16:08:49.888Z",
+  "fetchedAt": "2026-07-12T19:21:16.327Z",
   "price": {
-    "usd": 64097,
-    "time": 1783872310
+    "usd": 64137,
+    "time": 1783883708
   },
   "moves": {
-    "d1": 0.3196095769258056,
-    "d7": 0.8664056614952287,
-    "d30": 0.880202860634216
+    "d1": 0.3822144474045608,
+    "d7": 0.9293517623495395,
+    "d30": 0.943157571688169
   },
   "history90d": [
     {
@@ -372,60 +372,65 @@
     },
     {
       "date": "2026-07-12",
-      "close": 64118.52854739631
+      "close": 64145.087361251084
     }
   ],
   "blocks": [
     {
-      "height": 957726,
-      "id": "00000000000000000000e27aa30cbd27beed89751d23f0365aeebc9240fac7f7",
-      "timestamp": 1783872268,
-      "txCount": 6265
+      "height": 957745,
+      "id": "000000000000000000015c26791fd4dc41efe91f6d0464a25e299fd589673ed7",
+      "timestamp": 1783884020,
+      "txCount": 6854
     },
     {
-      "height": 957725,
-      "id": "00000000000000000000daa235749a1952a681b0936f1da229497c631305b667",
-      "timestamp": 1783872124,
-      "txCount": 4415
+      "height": 957744,
+      "id": "0000000000000000000189a7a2349a1636d978f705bf352f6767cf56c91ce1d3",
+      "timestamp": 1783883744,
+      "txCount": 5013
     },
     {
-      "height": 957724,
-      "id": "00000000000000000001c204bd79637e20f867bc575be5a222851c93885a005a",
-      "timestamp": 1783871489,
-      "txCount": 4876
+      "height": 957743,
+      "id": "00000000000000000001a33ccb290bac2a1c84a31018b2673c7311c0825d5020",
+      "timestamp": 1783883246,
+      "txCount": 4227
     },
     {
-      "height": 957723,
-      "id": "00000000000000000001df8cfe21183aa963c23552c525844f66efb4922df993",
-      "timestamp": 1783870457,
-      "txCount": 7030
+      "height": 957742,
+      "id": "000000000000000000004c79f2800602f44893d6227f0e505e3456a077913749",
+      "timestamp": 1783882994,
+      "txCount": 4233
     },
     {
-      "height": 957722,
-      "id": "00000000000000000002191a7cf94331e3584bba7910b0ff37e38c6107c8e5b1",
-      "timestamp": 1783870376,
-      "txCount": 5174
+      "height": 957741,
+      "id": "000000000000000000012c41359c2a538465c8c14e63311a8e63e9fde9da7647",
+      "timestamp": 1783881059,
+      "txCount": 4853
     },
     {
-      "height": 957721,
-      "id": "000000000000000000009a54c66972211b3459b2dabf87ef3087b0a949d45b26",
-      "timestamp": 1783870396,
-      "txCount": 6445
+      "height": 957740,
+      "id": "00000000000000000001af095220ea5df76deb048aa326db5867328b63373894",
+      "timestamp": 1783880478,
+      "txCount": 5036
     },
     {
-      "height": 957720,
-      "id": "0000000000000000000081e79cee21920746c4619545f655c49e78c5a9010b7b",
-      "timestamp": 1783869969,
-      "txCount": 6560
+      "height": 957739,
+      "id": "0000000000000000000206a73e0ceb7fa0685dd8dffec8ec2c63459bfafe0fc3",
+      "timestamp": 1783879919,
+      "txCount": 7196
     },
     {
-      "height": 957719,
-      "id": "0000000000000000000014ab105d27968cc27bef78b6321b3753640aad16c8eb",
-      "timestamp": 1783869783,
-      "txCount": 4492
+      "height": 957738,
+      "id": "0000000000000000000222f3dcd4abfedf247d32c5fe3871cf7fe99277bf4dd2",
+      "timestamp": 1783879687,
+      "txCount": 5597
     }
   ],
   "news": [
+    {
+      "title": "Signs of life?: State of Crypto",
+      "link": "https://www.coindesk.com/policy/2026/07/12/signs-of-life-state-of-crypto",
+      "pubDate": "Sun, 12 Jul 2026 18:30:00 +0000"
+    },
     {
       "title": "Stablecoin market cap has shrunk by $10 billion since May, but analyst sees no reason to panic",
       "link": "https://www.coindesk.com/markets/2026/07/12/stablecoin-market-cap-has-shrunk-by-usd10-billion-since-may-but-analyst-sees-no-reason-to-panic",
@@ -480,11 +485,6 @@
       "title": "Bitcoin analysts predict $300,000–$500,000 price in 2029. The math says no",
       "link": "https://www.coindesk.com/markets/2026/07/10/bitcoin-analysts-predict-usd300-000-usd500-000-price-in-2029-the-math-says-no",
       "pubDate": "Sat, 11 Jul 2026 02:30:00 +0000"
-    },
-    {
-      "title": "Meta's Chief Data Officer Says Agentic Commerce is the \"Next Tier of Business\"",
-      "link": "https://www.coindesk.com/coindesk-news/2026/07/10/meta-s-chief-data-officer-says-agentic-commerce-is-the-next-tier-of-business",
-      "pubDate": "Fri, 10 Jul 2026 21:26:55 +0000"
     }
   ]
 }
