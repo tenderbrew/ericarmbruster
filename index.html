@@ -242,6 +242,17 @@
     html.night .tip-btn svg.px-art rect[fill="#1A1A18"] { fill: #1A1A18; }
     html.night .dock-tile::after, html.night .ew-tile::after, html.night .gb-tile::after,
     html.night .tip-btn::after, html.night .mast-portrait::after, html.night .memoriam-photo::after,
+    footer { display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 12px; }
+    .visitor { display: flex; align-items: center; gap: 10px; }
+    .visitor-word { font-family: var(--font-display); font-size: 16px; }
+    .odometer {
+      display: inline-flex;
+      gap: 6px;
+      background: #1A1A18; /* constant: an odometer plate is dark in every mode */
+      border: 2px solid var(--ink);
+      padding: 4px 7px;
+    }
+    .odometer svg { display: block; }
     html.night .mwm-window::after {
       background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="4" height="4" shape-rendering="crispEdges"><rect width="2" height="2" fill="%23F3EEDF"/><rect x="2" y="2" width="2" height="2" fill="%23F3EEDF"/></svg>');
     }
@@ -475,6 +486,7 @@
 
   <footer>
     <p><a class="colophon-door" href="colophon.html">&copy; 2026 Eric Armbruster</a></p>
+    <p class="visitor" hidden><span class="visitor-word">visitor</span><span class="odometer"></span></p>
   </footer>
 
 
@@ -613,6 +625,31 @@
           setTimeout(function () { b.classList.remove('copied'); }, 1600);
         });
       });
+    })();
+  </script>
+
+  <script>
+    (function () {
+      var D = {"0": "<rect x=\"2\" y=\"2\" width=\"3\" height=\"1\" fill=\"#F3EEDF\"/><rect x=\"1\" y=\"3\" width=\"1\" height=\"1\" fill=\"#F3EEDF\"/><rect x=\"5\" y=\"3\" width=\"1\" height=\"1\" fill=\"#F3EEDF\"/><rect x=\"1\" y=\"4\" width=\"1\" height=\"1\" fill=\"#F3EEDF\"/><rect x=\"5\" y=\"4\" width=\"1\" height=\"1\" fill=\"#F3EEDF\"/><rect x=\"1\" y=\"5\" width=\"1\" height=\"1\" fill=\"#F3EEDF\"/><rect x=\"5\" y=\"5\" width=\"1\" height=\"1\" fill=\"#F3EEDF\"/><rect x=\"1\" y=\"6\" width=\"1\" height=\"1\" fill=\"#F3EEDF\"/><rect x=\"5\" y=\"6\" width=\"1\" height=\"1\" fill=\"#F3EEDF\"/><rect x=\"1\" y=\"7\" width=\"1\" height=\"1\" fill=\"#F3EEDF\"/><rect x=\"5\" y=\"7\" width=\"1\" height=\"1\" fill=\"#F3EEDF\"/><rect x=\"2\" y=\"8\" width=\"3\" height=\"1\" fill=\"#F3EEDF\"/>", "1": "<rect x=\"3\" y=\"2\" width=\"1\" height=\"1\" fill=\"#F3EEDF\"/><rect x=\"2\" y=\"3\" width=\"2\" height=\"1\" fill=\"#F3EEDF\"/><rect x=\"3\" y=\"4\" width=\"1\" height=\"1\" fill=\"#F3EEDF\"/><rect x=\"3\" y=\"5\" width=\"1\" height=\"1\" fill=\"#F3EEDF\"/><rect x=\"3\" y=\"6\" width=\"1\" height=\"1\" fill=\"#F3EEDF\"/><rect x=\"3\" y=\"7\" width=\"1\" height=\"1\" fill=\"#F3EEDF\"/><rect x=\"2\" y=\"8\" width=\"3\" height=\"1\" fill=\"#F3EEDF\"/>", "2": "<rect x=\"2\" y=\"2\" width=\"3\" height=\"1\" fill=\"#F3EEDF\"/><rect x=\"1\" y=\"3\" width=\"1\" height=\"1\" fill=\"#F3EEDF\"/><rect x=\"5\" y=\"3\" width=\"1\" height=\"1\" fill=\"#F3EEDF\"/><rect x=\"5\" y=\"4\" width=\"1\" height=\"1\" fill=\"#F3EEDF\"/><rect x=\"4\" y=\"5\" width=\"1\" height=\"1\" fill=\"#F3EEDF\"/><rect x=\"3\" y=\"6\" width=\"1\" height=\"1\" fill=\"#F3EEDF\"/><rect x=\"2\" y=\"7\" width=\"1\" height=\"1\" fill=\"#F3EEDF\"/><rect x=\"1\" y=\"8\" width=\"5\" height=\"1\" fill=\"#F3EEDF\"/>", "3": "<rect x=\"2\" y=\"2\" width=\"3\" height=\"1\" fill=\"#F3EEDF\"/><rect x=\"1\" y=\"3\" width=\"1\" height=\"1\" fill=\"#F3EEDF\"/><rect x=\"5\" y=\"3\" width=\"1\" height=\"1\" fill=\"#F3EEDF\"/><rect x=\"5\" y=\"4\" width=\"1\" height=\"1\" fill=\"#F3EEDF\"/><rect x=\"3\" y=\"5\" width=\"2\" height=\"1\" fill=\"#F3EEDF\"/><rect x=\"5\" y=\"6\" width=\"1\" height=\"1\" fill=\"#F3EEDF\"/><rect x=\"1\" y=\"7\" width=\"1\" height=\"1\" fill=\"#F3EEDF\"/><rect x=\"5\" y=\"7\" width=\"1\" height=\"1\" fill=\"#F3EEDF\"/><rect x=\"2\" y=\"8\" width=\"3\" height=\"1\" fill=\"#F3EEDF\"/>", "4": "<rect x=\"4\" y=\"2\" width=\"1\" height=\"1\" fill=\"#F3EEDF\"/><rect x=\"3\" y=\"3\" width=\"2\" height=\"1\" fill=\"#F3EEDF\"/><rect x=\"2\" y=\"4\" width=\"1\" height=\"1\" fill=\"#F3EEDF\"/><rect x=\"4\" y=\"4\" width=\"1\" height=\"1\" fill=\"#F3EEDF\"/><rect x=\"1\" y=\"5\" width=\"1\" height=\"1\" fill=\"#F3EEDF\"/><rect x=\"4\" y=\"5\" width=\"1\" height=\"1\" fill=\"#F3EEDF\"/><rect x=\"1\" y=\"6\" width=\"5\" height=\"1\" fill=\"#F3EEDF\"/><rect x=\"4\" y=\"7\" width=\"1\" height=\"1\" fill=\"#F3EEDF\"/><rect x=\"4\" y=\"8\" width=\"1\" height=\"1\" fill=\"#F3EEDF\"/>", "5": "<rect x=\"1\" y=\"2\" width=\"5\" height=\"1\" fill=\"#F3EEDF\"/><rect x=\"1\" y=\"3\" width=\"1\" height=\"1\" fill=\"#F3EEDF\"/><rect x=\"1\" y=\"4\" width=\"4\" height=\"1\" fill=\"#F3EEDF\"/><rect x=\"5\" y=\"5\" width=\"1\" height=\"1\" fill=\"#F3EEDF\"/><rect x=\"5\" y=\"6\" width=\"1\" height=\"1\" fill=\"#F3EEDF\"/><rect x=\"1\" y=\"7\" width=\"1\" height=\"1\" fill=\"#F3EEDF\"/><rect x=\"5\" y=\"7\" width=\"1\" height=\"1\" fill=\"#F3EEDF\"/><rect x=\"2\" y=\"8\" width=\"3\" height=\"1\" fill=\"#F3EEDF\"/>", "6": "<rect x=\"2\" y=\"2\" width=\"3\" height=\"1\" fill=\"#F3EEDF\"/><rect x=\"1\" y=\"3\" width=\"1\" height=\"1\" fill=\"#F3EEDF\"/><rect x=\"1\" y=\"4\" width=\"1\" height=\"1\" fill=\"#F3EEDF\"/><rect x=\"1\" y=\"5\" width=\"4\" height=\"1\" fill=\"#F3EEDF\"/><rect x=\"1\" y=\"6\" width=\"1\" height=\"1\" fill=\"#F3EEDF\"/><rect x=\"5\" y=\"6\" width=\"1\" height=\"1\" fill=\"#F3EEDF\"/><rect x=\"1\" y=\"7\" width=\"1\" height=\"1\" fill=\"#F3EEDF\"/><rect x=\"5\" y=\"7\" width=\"1\" height=\"1\" fill=\"#F3EEDF\"/><rect x=\"2\" y=\"8\" width=\"3\" height=\"1\" fill=\"#F3EEDF\"/>", "7": "<rect x=\"1\" y=\"2\" width=\"5\" height=\"1\" fill=\"#F3EEDF\"/><rect x=\"5\" y=\"3\" width=\"1\" height=\"1\" fill=\"#F3EEDF\"/><rect x=\"4\" y=\"4\" width=\"1\" height=\"1\" fill=\"#F3EEDF\"/><rect x=\"3\" y=\"5\" width=\"1\" height=\"1\" fill=\"#F3EEDF\"/><rect x=\"2\" y=\"6\" width=\"1\" height=\"1\" fill=\"#F3EEDF\"/><rect x=\"2\" y=\"7\" width=\"1\" height=\"1\" fill=\"#F3EEDF\"/><rect x=\"2\" y=\"8\" width=\"1\" height=\"1\" fill=\"#F3EEDF\"/>", "8": "<rect x=\"2\" y=\"2\" width=\"3\" height=\"1\" fill=\"#F3EEDF\"/><rect x=\"1\" y=\"3\" width=\"1\" height=\"1\" fill=\"#F3EEDF\"/><rect x=\"5\" y=\"3\" width=\"1\" height=\"1\" fill=\"#F3EEDF\"/><rect x=\"1\" y=\"4\" width=\"1\" height=\"1\" fill=\"#F3EEDF\"/><rect x=\"5\" y=\"4\" width=\"1\" height=\"1\" fill=\"#F3EEDF\"/><rect x=\"2\" y=\"5\" width=\"3\" height=\"1\" fill=\"#F3EEDF\"/><rect x=\"1\" y=\"6\" width=\"1\" height=\"1\" fill=\"#F3EEDF\"/><rect x=\"5\" y=\"6\" width=\"1\" height=\"1\" fill=\"#F3EEDF\"/><rect x=\"1\" y=\"7\" width=\"1\" height=\"1\" fill=\"#F3EEDF\"/><rect x=\"5\" y=\"7\" width=\"1\" height=\"1\" fill=\"#F3EEDF\"/><rect x=\"2\" y=\"8\" width=\"3\" height=\"1\" fill=\"#F3EEDF\"/>", "9": "<rect x=\"2\" y=\"2\" width=\"3\" height=\"1\" fill=\"#F3EEDF\"/><rect x=\"1\" y=\"3\" width=\"1\" height=\"1\" fill=\"#F3EEDF\"/><rect x=\"5\" y=\"3\" width=\"1\" height=\"1\" fill=\"#F3EEDF\"/><rect x=\"1\" y=\"4\" width=\"1\" height=\"1\" fill=\"#F3EEDF\"/><rect x=\"5\" y=\"4\" width=\"1\" height=\"1\" fill=\"#F3EEDF\"/><rect x=\"2\" y=\"5\" width=\"4\" height=\"1\" fill=\"#F3EEDF\"/><rect x=\"5\" y=\"6\" width=\"1\" height=\"1\" fill=\"#F3EEDF\"/><rect x=\"4\" y=\"7\" width=\"1\" height=\"1\" fill=\"#F3EEDF\"/><rect x=\"2\" y=\"8\" width=\"2\" height=\"1\" fill=\"#F3EEDF\"/>"};
+      var el = document.querySelector('.odometer');
+      var wrap = document.querySelector('.visitor');
+      // only real visits tick: local previews and the screenshot tool
+      // (whose plain headless chrome doesn't even set navigator.webdriver)
+      // read the count without incrementing it
+      var live = /(^|\.)ericarmbruster\.com$/.test(location.hostname);
+      var path = (live && !navigator.webdriver) ? '/hit' : '/count';
+      fetch('https://guestbook.ericarmbruster.com' + path)
+        .then(function (r) { return r.json(); })
+        .then(function (d) {
+          var n = String(Math.max(0, d.count | 0));
+          while (n.length < 6) n = '0' + n;
+          el.innerHTML = n.split('').map(function (ch) {
+            return '<svg width="14" height="22" viewBox="0 0 7 11" shape-rendering="crispEdges" aria-hidden="true">' + D[ch] + '</svg>';
+          }).join('');
+          wrap.setAttribute('aria-label', 'visitor ' + Number(n));
+          wrap.hidden = false;
+        })
+        .catch(function () {});
     })();
   </script>
 </body>
