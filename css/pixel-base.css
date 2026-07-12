@@ -348,7 +348,7 @@ html.night {
   --paper-dim: #242420;
   --ink: #F3EEDF;
   --pool: #5B94D6; /* lightened for contrast on the dark surface */
-  --shadow: #605E56; /* pure black vanishes on the night paper */
+  --shadow: #F3EEDF; /* night mirrors day: shadows wear the ink color */
 }
 
 /* Ink-drawn sprite pixels flip to cream so pixel art survives the dark. */
@@ -389,8 +389,8 @@ html.night svg.px-art rect[fill="#1A1A18"] { fill: #F3EEDF; }
 html.night .px-panel::after,
 html.night .px-stat::after,
 html.night .px-gallery .frame::after {
-  /* the ink checker is invisible on night paper; repaint it charcoal */
-  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="4" height="4" shape-rendering="crispEdges"><rect width="2" height="2" fill="%23605E56"/><rect x="2" y="2" width="2" height="2" fill="%23605E56"/></svg>');
+  /* night mirrors day: the checker wears the night ink (cream) */
+  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="4" height="4" shape-rendering="crispEdges"><rect width="2" height="2" fill="%23F3EEDF"/><rect x="2" y="2" width="2" height="2" fill="%23F3EEDF"/></svg>');
 }
 
 /* ---- Framed mode (page is inside a homepage window) --------------------- */
