@@ -27,7 +27,7 @@ One system for every page. Tokens live at the top of `css/pixel-base.css` — al
 
 ## Pages
 
-- `index.html` — the desktop: sun/moon masthead (mode cycler), Hector portrait (door to his page), the dock (4×2 object-icon tiles → mwm windows), masthead contact icons (`.mast-links`: bare 32px github/linkedin/email glyphs under the h1), Completed projects row (RGC dock-style tile; the guestbook tile lives in the bottom tip-row), Seymour memoriam panel, secret doors. Carries the canonical head conventions: OG/twitter meta, `theme-color #F3EEDF`, gtag `G-5ZTHJXDR9V`, hector favicon. The blinking masthead cursor is homepage-only (`.masthead--home`).
+- `index.html` — the desktop, arranged as **three zones with exactly two wave dividers** (Eric's 2026-07-14 holistic pass; do not re-add per-band dividers): ZONE 1 the person (sun/moon masthead + mode cycler, h1, `.mast-links` bare 32px github/linkedin/email glyphs, Hector portrait door, welcome line → now.html); wave; ZONE 2 the sections (4×2 dock → mwm windows, then the Completed projects shelf — px-label + RGC dock-style tile, spacing only, no divider); wave (this one carries the stray-pixel → birds.html secret); ZONE 3 the door (Seymour memoriam panel, then the tip-row trio, then the bare © footer → colophon). Carries the canonical head conventions: OG/twitter meta, `theme-color #F3EEDF`, gtag `G-5ZTHJXDR9V`, hector favicon. The blinking masthead cursor is homepage-only (`.masthead--home`).
 - `now.html` — hand-edited "what I'm up to": one paragraph + date, replaced whenever.
 - `video-games.html` — hydrates from `steam-data.json` (see pipelines below).
 - `film.html` — hydrates from `film-data.json`; posters hotlink Letterboxd's CDN.
