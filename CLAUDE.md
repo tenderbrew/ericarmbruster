@@ -43,6 +43,10 @@ One system for every page. Tokens live at the top of `css/pixel-base.css` — al
 - Retro Game Club is deliberately NOT a page here — its cartridge tile in the Elsewhere row links out to nintendopipeline.club (its own repo/site).
 - `guestbook.html` — live-backend page (see Data pipelines); `birds.html` + `colophon.html` — secret pages, noindex, not in sitemap.
 
+## Tip jar (homepage)
+
+`.tipjar` strip under the dock: Venmo `@tenderbrew` (venmo.com/u/tenderbrew) and a bitcoin address `bc1qkyddfq890sekylqzs42g9fahhu3kwtudrv9pj3` (Eric's Strike wallet, provided 2026-07-12) rendered truncated with a `bitcoin:` URI link + clipboard copy button. The address is Eric's own — never regenerate or "fix" it; any change must come from him verbatim.
+
 ## The windows (homepage desktop)
 
 On desktop widths (>700px), internal links on the homepage open in **Motif/CDE-style windows** (iframes) instead of navigating: `.mwm-window` chrome in index.html — pool titlebar (dash button = close, box = open as real page), draggable, ESC/back closes, up to 4 stacked, `#slug` deep links open a window on load. Pages detect framing via `window.self!==window.top` → `html.framed` hides their `.site-nav` (rule in pixel-base). Phones and no-JS fall back to plain navigation, and every page stays a real canonical URL — the windows are decoration, not architecture. Screenshot tool is unaffected (it loads pages directly).

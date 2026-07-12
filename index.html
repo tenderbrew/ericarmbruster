@@ -217,6 +217,32 @@
     .quiet-door { color: var(--ink); text-decoration: none; }
     .quiet-door:hover { color: var(--sunset); }
     .mast-left { position: relative; }
+    .tipjar {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      flex-wrap: wrap;
+      font-size: 13px;
+      margin: 18px 0 0;
+    }
+    .tipjar .tip-label {
+      font-family: var(--font-display);
+      font-size: 16px;
+      color: var(--ink);
+    }
+    .tipjar .dot { color: var(--ink); }
+    .tip-coin { flex: 0 0 16px; }
+    .btc-addr { font-size: 13px; }
+    .btc-copy {
+      font-family: var(--font-display);
+      font-size: 16px;
+      color: var(--ink);
+      background: var(--paper-dim);
+      border: 2px solid var(--ink);
+      padding: 1px 10px;
+      cursor: pointer;
+    }
+    .btc-copy:hover { border-color: var(--sunset); color: var(--sunset); }
     .colophon-door { color: var(--ink); text-decoration: none; }
     .colophon-door:hover { color: var(--sunset); }
     .memoriam { display: flex; align-items: center; gap: 20px; }
@@ -401,6 +427,15 @@
       </a>
     </div>
 
+    <p class="tipjar">
+      <span class="tip-label">tip jar</span>
+      <a href="https://venmo.com/u/tenderbrew" target="_blank" rel="noopener">venmo @tenderbrew</a>
+      <span class="dot">&middot;</span>
+      <svg class="px-art tip-coin" width="16" height="16" viewBox="0 0 16 16" shape-rendering="crispEdges" aria-hidden="true"><rect x="5" y="3" width="6" height="1" fill="#E8743B"/><rect x="4" y="4" width="3" height="1" fill="#E8743B"/><rect x="7" y="4" width="2" height="1" fill="#1A1A18"/><rect x="9" y="4" width="3" height="1" fill="#E8743B"/><rect x="4" y="5" width="2" height="1" fill="#E8743B"/><rect x="6" y="5" width="1" height="1" fill="#1A1A18"/><rect x="7" y="5" width="2" height="1" fill="#E8743B"/><rect x="9" y="5" width="1" height="1" fill="#1A1A18"/><rect x="10" y="5" width="2" height="1" fill="#E8743B"/><rect x="4" y="6" width="2" height="1" fill="#E8743B"/><rect x="6" y="6" width="3" height="1" fill="#1A1A18"/><rect x="9" y="6" width="3" height="1" fill="#E8743B"/><rect x="4" y="7" width="2" height="1" fill="#E8743B"/><rect x="6" y="7" width="1" height="1" fill="#1A1A18"/><rect x="7" y="7" width="2" height="1" fill="#E8743B"/><rect x="9" y="7" width="1" height="1" fill="#1A1A18"/><rect x="10" y="7" width="2" height="1" fill="#E8743B"/><rect x="4" y="8" width="3" height="1" fill="#E8743B"/><rect x="7" y="8" width="2" height="1" fill="#1A1A18"/><rect x="9" y="8" width="3" height="1" fill="#E8743B"/><rect x="5" y="9" width="6" height="1" fill="#E8743B"/></svg>
+      <a class="btc-addr" href="bitcoin:bc1qkyddfq890sekylqzs42g9fahhu3kwtudrv9pj3" title="bc1qkyddfq890sekylqzs42g9fahhu3kwtudrv9pj3">bc1qkyd&hellip;rv9pj3</a>
+      <button type="button" class="btc-copy" data-addr="bc1qkyddfq890sekylqzs42g9fahhu3kwtudrv9pj3">copy</button>
+    </p>
+
     <div class="wave-wrap"><hr class="px-wave"><a class="stray-pixel" href="birds.html" aria-label="a stray pixel"></a></div>
 
     <div class="elsewhere-row">
@@ -559,6 +594,19 @@
         history.replaceState(null, '', location.pathname);
         openWindow(page, h.replace('-', ' '));
       }
+    })();
+  </script>
+
+  <script>
+    (function () {
+      var b = document.querySelector('.btc-copy');
+      if (!b) return;
+      b.addEventListener('click', function () {
+        navigator.clipboard.writeText(b.getAttribute('data-addr')).then(function () {
+          b.textContent = 'copied';
+          setTimeout(function () { b.textContent = 'copy'; }, 1600);
+        });
+      });
     })();
   </script>
 </body>
