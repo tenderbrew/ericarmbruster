@@ -1,13 +1,13 @@
 {
-  "fetchedAt": "2026-07-12T03:52:25.178Z",
+  "fetchedAt": "2026-07-12T08:29:51.414Z",
   "price": {
-    "usd": 64155,
-    "time": 1783828209
+    "usd": 63982,
+    "time": 1783844707
   },
   "moves": {
-    "d1": 0.4103866391200084,
-    "d7": 0.9576775077339894,
-    "d30": 0.9714871916624457
+    "d1": 0.13962057429937058,
+    "d7": 0.6854356215390212,
+    "d30": 0.6992080663541067
   },
   "history90d": [
     {
@@ -372,60 +372,75 @@
     },
     {
       "date": "2026-07-12",
-      "close": 64139.53947438165
+      "close": 63964.45468296762
     }
   ],
   "blocks": [
     {
-      "height": 957647,
-      "id": "0000000000000000000081123c88cde9f99021b09cacabda2d978d3f05fdbbe0",
-      "timestamp": 1783828661,
-      "txCount": 6946
+      "height": 957678,
+      "id": "000000000000000000020d9cb7d094160ecdbcc910f89740f6a4a8a743292564",
+      "timestamp": 1783844895,
+      "txCount": 7078
     },
     {
-      "height": 957646,
-      "id": "0000000000000000000083bfaf356aa0e0b3dc6f6e8dbdddf012cf42ef804115",
-      "timestamp": 1783828236,
-      "txCount": 4714
+      "height": 957677,
+      "id": "0000000000000000000163cc0c2e6683d8409aa4a74099ec0b9f1123db22fe25",
+      "timestamp": 1783844811,
+      "txCount": 5856
     },
     {
-      "height": 957645,
-      "id": "000000000000000000022e2392184b02241dfccbbbd6f2463c26497f1423f47c",
-      "timestamp": 1783827397,
-      "txCount": 4828
+      "height": 957676,
+      "id": "00000000000000000001af1c56a95aaa7ab1f3d8735897e2dc3159d62685f029",
+      "timestamp": 1783844425,
+      "txCount": 4563
     },
     {
-      "height": 957644,
-      "id": "00000000000000000001891988ba43c2618b94328e5de919a1d443ef2a494d8b",
-      "timestamp": 1783826332,
-      "txCount": 6040
+      "height": 957675,
+      "id": "00000000000000000001b73f1ed686896b096b12384e9ea210a0dec3fafc2ae5",
+      "timestamp": 1783843776,
+      "txCount": 4534
     },
     {
-      "height": 957643,
-      "id": "000000000000000000021055d4bbb31e44282f8c11f1f5e93c9eb4becd383c8e",
-      "timestamp": 1783825942,
-      "txCount": 3755
+      "height": 957674,
+      "id": "000000000000000000012c91173c73a2960af4e7a0fb3dd3a7f2df767005881e",
+      "timestamp": 1783842641,
+      "txCount": 6940
     },
     {
-      "height": 957642,
-      "id": "000000000000000000023440671ceb75054987517b5e606a3cc0987718b2d95f",
-      "timestamp": 1783824408,
-      "txCount": 6115
+      "height": 957673,
+      "id": "00000000000000000000de5d72598fd96dc3ed08d499de213df945b34e460729",
+      "timestamp": 1783842549,
+      "txCount": 5364
     },
     {
-      "height": 957641,
-      "id": "00000000000000000001a44926aa2dc6dcb727c2f98369e466c7f5c08f7835ec",
-      "timestamp": 1783824014,
-      "txCount": 3985
+      "height": 957672,
+      "id": "000000000000000000008416e857ef80f241dba97595a395ef5ecf18ff63eda5",
+      "timestamp": 1783842018,
+      "txCount": 6222
     },
     {
-      "height": 957640,
-      "id": "00000000000000000000911aa6d8c3cae54670482e109416337642cb8b1f2a7e",
-      "timestamp": 1783823265,
-      "txCount": 5848
+      "height": 957671,
+      "id": "00000000000000000001c7484b4b8fdf8e20ae84c5d98dc67f3ebbe690c44789",
+      "timestamp": 1783841731,
+      "txCount": 5598
     }
   ],
   "news": [
+    {
+      "title": "Bitcoin, ether little changed as U.S. launches fresh Iran strikes",
+      "link": "https://www.coindesk.com/markets/2026/07/12/bitcoin-ether-little-changed-as-u-s-launches-fresh-iran-strikes",
+      "pubDate": "Sun, 12 Jul 2026 06:18:15 +0000"
+    },
+    {
+      "title": "Ripple once weighed shutting down and handing XRP to shareholders, CEO says",
+      "link": "https://www.coindesk.com/markets/2026/07/12/ripple-once-weighed-shutting-down-and-handing-xrp-to-shareholders-ceo-says",
+      "pubDate": "Sun, 12 Jul 2026 06:09:49 +0000"
+    },
+    {
+      "title": "Bitcoin’s BIP 110 fork deadline nears with miner support at zero",
+      "link": "https://www.coindesk.com/tech/2026/07/12/bitcoin-s-bip-110-fork-deadline-nears-with-miner-support-at-zero",
+      "pubDate": "Sun, 12 Jul 2026 05:49:52 +0000"
+    },
     {
       "title": "Lending protocol Bonzo loses 77% of value locked as $9 million oracle exploit rattles Hedera",
       "link": "https://www.coindesk.com/web3/2026/07/11/lending-protocol-bonzo-loses-77-of-value-locked-as-usd9-million-oracle-exploit-rattles-hedera",
@@ -470,21 +485,6 @@
       "title": "Hyundai becomes first major South Korean company to introduce internal stablecoin transfers",
       "link": "https://www.coindesk.com/business/2026/07/10/hyundai-becomes-first-major-south-korean-company-to-introduce-internal-stablecoin-transfers",
       "pubDate": "Fri, 10 Jul 2026 15:26:43 +0000"
-    },
-    {
-      "title": "OKX, MetaMask, Matter Labs back dispute resolution court for AI agents",
-      "link": "https://www.coindesk.com/business/2026/07/10/okx-metamask-matter-labs-back-dispute-resolution-court-for-ai-agents",
-      "pubDate": "Fri, 10 Jul 2026 12:29:08 +0000"
-    },
-    {
-      "title": "Circle soars after securing U.S. trust bank approval in crypto expansion",
-      "link": "https://www.coindesk.com/business/2026/07/10/circle-secures-u-s-trust-bank-approval-in-crypto-expansion",
-      "pubDate": "Fri, 10 Jul 2026 11:41:47 +0000"
-    },
-    {
-      "title": "Japan's 'invest locally' plan likely to spur demand for assets like bitcoin, gold",
-      "link": "https://www.coindesk.com/daybook-us/2026/07/10/japan-s-invest-locally-plan-likely-to-spur-demand-for-assets-like-bitcoin-gold",
-      "pubDate": "Fri, 10 Jul 2026 11:37:31 +0000"
     }
   ]
 }
