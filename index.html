@@ -221,7 +221,7 @@
     .quiet-door { color: var(--ink); text-decoration: none; }
     .quiet-door:hover { color: var(--sunset); }
     .mast-left { position: relative; }
-    .tip-row { display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 12px 24px; margin: 24px 0; }
+    .tip-row { display: flex; align-items: stretch; justify-content: space-between; flex-wrap: wrap; gap: 12px 24px; margin: 24px 0; }
     .tipjar { display: flex; align-items: center; gap: 22px; width: fit-content; margin: 0; }
     .tipjar .jar { flex: 0 0 72px; }
     /* z-index:0 makes these stacking contexts: the negative-z dither
@@ -255,14 +255,14 @@
     html.night .memoriam-photo::after, html.night .mwm-window::after {
       background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="4" height="4" shape-rendering="crispEdges"><rect width="2" height="2" fill="%23E8C84A"/><rect x="2" y="2" width="2" height="2" fill="%23E8C84A"/></svg>');
     }
-    .visitor { display: flex; align-items: center; gap: 10px; }
+    .visitor { display: flex; align-items: stretch; gap: 10px; margin: 0; }
+    .visitor-word { align-self: center; }
     .visitor-word { font-family: var(--font-display); font-size: 16px; }
     .odometer {
       display: inline-flex;
       align-items: center;
       gap: 8px;
-      height: 72px; /* same height as the tip tiles beside it */
-      box-sizing: border-box;
+      box-sizing: border-box; /* stretches to match the tip panel's full height */
       background: #1A1A18; /* constant: an odometer plate is dark in every mode */
       border: 2px solid var(--ink);
       padding: 0 14px;
@@ -651,7 +651,7 @@
           var n = String(Math.max(0, d.count | 0));
           while (n.length < 6) n = '0' + n;
           el.innerHTML = n.split('').map(function (ch) {
-            return '<svg width="21" height="33" viewBox="0 0 7 11" shape-rendering="crispEdges" aria-hidden="true">' + D[ch] + '</svg>';
+            return '<svg width="35" height="55" viewBox="0 0 7 11" shape-rendering="crispEdges" aria-hidden="true">' + D[ch] + '</svg>';
           }).join('');
           wrap.setAttribute('aria-label', 'visitor ' + Number(n));
           wrap.hidden = false;
