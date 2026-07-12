@@ -45,7 +45,9 @@ One system for every page. Tokens live at the top of `css/pixel-base.css` — al
 
 ## Tip jar (homepage)
 
-`.tipjar` strip under the dock: Venmo `@tenderbrew` (venmo.com/u/tenderbrew) and a bitcoin address `bc1qkyddfq890sekylqzs42g9fahhu3kwtudrv9pj3` (Eric's Strike wallet, provided 2026-07-12) rendered truncated with a `bitcoin:` URI link + clipboard copy button. The address is Eric's own — never regenerate or "fix" it; any change must come from him verbatim.
+`.tipjar` is a `.px-panel` under the dock: a 72px mason-jar sprite (gold coin pile + one coin dropping through the lid slot, drawn in the dock-icon 8-color kit) beside a "Tip jar" label and two `.tip-btn` buttons — Venmo `@tenderbrew` (venmo.com/u/tenderbrew, pool background so it goes violet at dusk) and a bitcoin button labeled `₿ bc1qkyd…rv9pj3` that copies the full address to the clipboard (full address in `data-addr` and `title`). Button *text* colors are hardcoded (`#F3EEDF` on venmo, `#1A1A18` on the yellow ₿) so night mode's token flip can't wash them out. The address `bc1qkyddfq890sekylqzs42g9fahhu3kwtudrv9pj3` (Eric's Strike wallet, provided 2026-07-12) is Eric's own — never regenerate or "fix" it; any change must come from him verbatim.
+
+**Shadow-inside-panel gotcha:** the dithered shadows are `::after` at `z-index:-1`, and `.px-panel` has an opaque background — a shadow-bearing element placed *inside* a panel paints its shadow underneath the panel and it silently disappears. Fix: make the element's parent (or the element itself, if its border lives on a child like `.memoriam-photo`'s img) a stacking context with `position:relative; z-index:0`. `.tip-actions` and `.memoriam-photo` already do this.
 
 ## The windows (homepage desktop)
 

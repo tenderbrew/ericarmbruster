@@ -135,7 +135,7 @@
     .dock-tile:hover .label { color: var(--sunset); }
     .dock-tile:active { transform: translate(2px, 2px); }
     .dock-tile:active::after { top: 2px; left: 2px; right: -4px; bottom: -4px; }
-    .dock-tile::after, .ew-tile::after, .gb-tile::after,
+    .dock-tile::after, .ew-tile::after, .gb-tile::after, .tip-btn::after,
     .mast-portrait::after, .memoriam-photo::after {
       content: '';
       position: absolute;
@@ -217,37 +217,32 @@
     .quiet-door { color: var(--ink); text-decoration: none; }
     .quiet-door:hover { color: var(--sunset); }
     .mast-left { position: relative; }
-    .tipjar {
-      display: flex;
-      align-items: center;
-      gap: 10px;
-      flex-wrap: wrap;
-      font-size: 13px;
-      margin: 18px 0 0;
-    }
-    .tipjar .tip-label {
+    .tipjar { display: flex; align-items: center; gap: 22px; margin-top: 24px; }
+    .tipjar .jar { flex: 0 0 72px; }
+    .tip-body { display: flex; flex-direction: column; gap: 10px; }
+    /* z-index:0 makes these stacking contexts: the negative-z dither
+       shadows inside must paint above the panel's opaque background */
+    .tip-actions { display: flex; gap: 12px; flex-wrap: wrap; position: relative; z-index: 0; }
+    .tip-btn {
+      display: inline-block;
       font-family: var(--font-display);
       font-size: 16px;
-      color: var(--ink);
-    }
-    .tipjar .dot { color: var(--ink); }
-    .tip-coin { flex: 0 0 16px; }
-    .btc-addr { font-size: 13px; }
-    .btc-copy {
-      font-family: var(--font-display);
-      font-size: 16px;
-      color: var(--ink);
-      background: var(--paper-dim);
+      text-decoration: none;
+      padding: 8px 14px;
       border: 2px solid var(--ink);
-      padding: 1px 10px;
       cursor: pointer;
+      position: relative;
     }
-    .btc-copy:hover { border-color: var(--sunset); color: var(--sunset); }
+    .tip-btn.venmo { background: var(--pool); color: #F3EEDF; }
+    .tip-btn.btc-copy { background: #E8C84A; color: #1A1A18; }
+    .tip-btn:hover { border-color: var(--sunset); }
+    .tip-btn:active { transform: translate(2px, 2px); }
+    .tip-btn:active::after { top: 2px; left: 2px; right: -4px; bottom: -4px; }
     .colophon-door { color: var(--ink); text-decoration: none; }
     .colophon-door:hover { color: var(--sunset); }
     .memoriam { display: flex; align-items: center; gap: 20px; }
     .memoriam-photo { flex: 0 0 auto; display: block; }
-    .memoriam-photo { position: relative; }
+    .memoriam-photo { position: relative; z-index: 0; }
     .memoriam-photo img {
       display: block;
       width: 88px;
@@ -427,14 +422,16 @@
       </a>
     </div>
 
-    <p class="tipjar">
-      <span class="tip-label">tip jar</span>
-      <a href="https://venmo.com/u/tenderbrew" target="_blank" rel="noopener">venmo @tenderbrew</a>
-      <span class="dot">&middot;</span>
-      <svg class="px-art tip-coin" width="16" height="16" viewBox="0 0 16 16" shape-rendering="crispEdges" aria-hidden="true"><rect x="5" y="3" width="6" height="1" fill="#E8743B"/><rect x="4" y="4" width="3" height="1" fill="#E8743B"/><rect x="7" y="4" width="2" height="1" fill="#1A1A18"/><rect x="9" y="4" width="3" height="1" fill="#E8743B"/><rect x="4" y="5" width="2" height="1" fill="#E8743B"/><rect x="6" y="5" width="1" height="1" fill="#1A1A18"/><rect x="7" y="5" width="2" height="1" fill="#E8743B"/><rect x="9" y="5" width="1" height="1" fill="#1A1A18"/><rect x="10" y="5" width="2" height="1" fill="#E8743B"/><rect x="4" y="6" width="2" height="1" fill="#E8743B"/><rect x="6" y="6" width="3" height="1" fill="#1A1A18"/><rect x="9" y="6" width="3" height="1" fill="#E8743B"/><rect x="4" y="7" width="2" height="1" fill="#E8743B"/><rect x="6" y="7" width="1" height="1" fill="#1A1A18"/><rect x="7" y="7" width="2" height="1" fill="#E8743B"/><rect x="9" y="7" width="1" height="1" fill="#1A1A18"/><rect x="10" y="7" width="2" height="1" fill="#E8743B"/><rect x="4" y="8" width="3" height="1" fill="#E8743B"/><rect x="7" y="8" width="2" height="1" fill="#1A1A18"/><rect x="9" y="8" width="3" height="1" fill="#E8743B"/><rect x="5" y="9" width="6" height="1" fill="#E8743B"/></svg>
-      <a class="btc-addr" href="bitcoin:bc1qkyddfq890sekylqzs42g9fahhu3kwtudrv9pj3" title="bc1qkyddfq890sekylqzs42g9fahhu3kwtudrv9pj3">bc1qkyd&hellip;rv9pj3</a>
-      <button type="button" class="btc-copy" data-addr="bc1qkyddfq890sekylqzs42g9fahhu3kwtudrv9pj3">copy</button>
-    </p>
+    <div class="px-panel tipjar">
+      <svg class="px-art jar" width="72" height="72" viewBox="0 0 24 24" shape-rendering="crispEdges" aria-hidden="true"><rect x="6" y="1" width="12" height="1" fill="#1A1A18"/><rect x="6" y="2" width="1" height="1" fill="#1A1A18"/><rect x="7" y="2" width="10" height="1" fill="#9C9C94"/><rect x="17" y="2" width="1" height="1" fill="#1A1A18"/><rect x="6" y="3" width="1" height="1" fill="#1A1A18"/><rect x="7" y="3" width="2" height="1" fill="#9C9C94"/><rect x="9" y="3" width="6" height="1" fill="#1A1A18"/><rect x="15" y="3" width="2" height="1" fill="#9C9C94"/><rect x="17" y="3" width="1" height="1" fill="#1A1A18"/><rect x="6" y="4" width="12" height="1" fill="#1A1A18"/><rect x="5" y="5" width="1" height="1" fill="#1A1A18"/><rect x="6" y="5" width="2" height="1" fill="#F3EEDF"/><rect x="16" y="5" width="2" height="1" fill="#F3EEDF"/><rect x="18" y="5" width="1" height="1" fill="#1A1A18"/><rect x="4" y="6" width="1" height="1" fill="#1A1A18"/><rect x="5" y="6" width="1" height="1" fill="#F3EEDF"/><rect x="18" y="6" width="1" height="1" fill="#F3EEDF"/><rect x="19" y="6" width="1" height="1" fill="#1A1A18"/><rect x="4" y="7" width="1" height="1" fill="#1A1A18"/><rect x="5" y="7" width="1" height="1" fill="#F3EEDF"/><rect x="11" y="7" width="2" height="1" fill="#E8C84A"/><rect x="18" y="7" width="1" height="1" fill="#F3EEDF"/><rect x="19" y="7" width="1" height="1" fill="#1A1A18"/><rect x="4" y="8" width="1" height="1" fill="#1A1A18"/><rect x="5" y="8" width="1" height="1" fill="#F3EEDF"/><rect x="11" y="8" width="2" height="1" fill="#E8C84A"/><rect x="18" y="8" width="1" height="1" fill="#F3EEDF"/><rect x="19" y="8" width="1" height="1" fill="#1A1A18"/><rect x="4" y="9" width="1" height="1" fill="#1A1A18"/><rect x="5" y="9" width="1" height="1" fill="#F3EEDF"/><rect x="18" y="9" width="1" height="1" fill="#F3EEDF"/><rect x="19" y="9" width="1" height="1" fill="#1A1A18"/><rect x="4" y="10" width="1" height="1" fill="#1A1A18"/><rect x="5" y="10" width="1" height="1" fill="#F3EEDF"/><rect x="10" y="10" width="4" height="1" fill="#E8C84A"/><rect x="18" y="10" width="1" height="1" fill="#F3EEDF"/><rect x="19" y="10" width="1" height="1" fill="#1A1A18"/><rect x="4" y="11" width="1" height="1" fill="#1A1A18"/><rect x="5" y="11" width="1" height="1" fill="#F3EEDF"/><rect x="9" y="11" width="6" height="1" fill="#E8C84A"/><rect x="18" y="11" width="1" height="1" fill="#F3EEDF"/><rect x="19" y="11" width="1" height="1" fill="#1A1A18"/><rect x="4" y="12" width="1" height="1" fill="#1A1A18"/><rect x="5" y="12" width="1" height="1" fill="#F3EEDF"/><rect x="8" y="12" width="4" height="1" fill="#E8C84A"/><rect x="12" y="12" width="1" height="1" fill="#8B5A33"/><rect x="13" y="12" width="3" height="1" fill="#E8C84A"/><rect x="18" y="12" width="1" height="1" fill="#F3EEDF"/><rect x="19" y="12" width="1" height="1" fill="#1A1A18"/><rect x="4" y="13" width="1" height="1" fill="#1A1A18"/><rect x="5" y="13" width="1" height="1" fill="#F3EEDF"/><rect x="7" y="13" width="2" height="1" fill="#E8C84A"/><rect x="9" y="13" width="1" height="1" fill="#8B5A33"/><rect x="10" y="13" width="7" height="1" fill="#E8C84A"/><rect x="18" y="13" width="1" height="1" fill="#F3EEDF"/><rect x="19" y="13" width="1" height="1" fill="#1A1A18"/><rect x="4" y="14" width="1" height="1" fill="#1A1A18"/><rect x="5" y="14" width="1" height="1" fill="#F3EEDF"/><rect x="7" y="14" width="7" height="1" fill="#E8C84A"/><rect x="14" y="14" width="1" height="1" fill="#8B5A33"/><rect x="15" y="14" width="2" height="1" fill="#E8C84A"/><rect x="18" y="14" width="1" height="1" fill="#F3EEDF"/><rect x="19" y="14" width="1" height="1" fill="#1A1A18"/><rect x="4" y="15" width="1" height="1" fill="#1A1A18"/><rect x="5" y="15" width="1" height="1" fill="#F3EEDF"/><rect x="6" y="15" width="12" height="1" fill="#E8C84A"/><rect x="18" y="15" width="1" height="1" fill="#F3EEDF"/><rect x="19" y="15" width="1" height="1" fill="#1A1A18"/><rect x="4" y="16" width="2" height="1" fill="#1A1A18"/><rect x="6" y="16" width="2" height="1" fill="#E8C84A"/><rect x="8" y="16" width="1" height="1" fill="#8B5A33"/><rect x="9" y="16" width="6" height="1" fill="#E8C84A"/><rect x="15" y="16" width="2" height="1" fill="#8B5A33"/><rect x="17" y="16" width="1" height="1" fill="#E8C84A"/><rect x="18" y="16" width="2" height="1" fill="#1A1A18"/><rect x="5" y="17" width="14" height="1" fill="#1A1A18"/></svg>
+      <div class="tip-body">
+        <p class="px-label">Tip jar</p>
+        <div class="tip-actions">
+          <a class="tip-btn venmo" href="https://venmo.com/u/tenderbrew" target="_blank" rel="noopener">venmo @tenderbrew</a>
+          <button type="button" class="tip-btn btc-copy" data-addr="bc1qkyddfq890sekylqzs42g9fahhu3kwtudrv9pj3" title="bc1qkyddfq890sekylqzs42g9fahhu3kwtudrv9pj3 — click to copy">&#8383; bc1qkyd&hellip;rv9pj3</button>
+        </div>
+      </div>
+    </div>
 
     <div class="wave-wrap"><hr class="px-wave"><a class="stray-pixel" href="birds.html" aria-label="a stray pixel"></a></div>
 
@@ -603,8 +600,8 @@
       if (!b) return;
       b.addEventListener('click', function () {
         navigator.clipboard.writeText(b.getAttribute('data-addr')).then(function () {
-          b.textContent = 'copied';
-          setTimeout(function () { b.textContent = 'copy'; }, 1600);
+          b.textContent = 'copied ✓';
+          setTimeout(function () { b.textContent = '₿ bc1qkyd…rv9pj3'; }, 1600);
         });
       });
     })();
