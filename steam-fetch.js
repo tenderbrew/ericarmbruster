@@ -31,7 +31,7 @@ const BASE = 'https://api.steampowered.com';
 async function steamGet(iface, method, version, params) {
   const qs = new URLSearchParams({ key: API_KEY, steamid: STEAM_ID, format: 'json', ...params });
   const url = `${BASE}/${iface}/${method}/v${version}/?${qs}`;
-  const res = await fetch(url);
+  const res = await fetch(url, { signal: AbortSignal.timeout(20000) });
   if (!res.ok) throw new Error(`${method} failed: ${res.status}`);
   return res.json();
 }
@@ -57,7 +57,7 @@ async function getRecentlyPlayed() {
 async function getPlayerSummary() {
   const qs = new URLSearchParams({ key: API_KEY, steamids: STEAM_ID, format: 'json' });
   const url = `${BASE}/ISteamUser/GetPlayerSummaries/v0002/?${qs}`;
-  const res = await fetch(url);
+  const res = await fetch(url, { signal: AbortSignal.timeout(20000) });
   if (!res.ok) throw new Error(`GetPlayerSummaries failed: ${res.status}`);
   const data = await res.json();
   return data.response.players[0] || {};
@@ -145,6 +145,17 @@ async function getPlayerSummary() {
 
   // Pretty-print so git diffs are readable between daily runs.
   var outPath = path.join(__dirname, 'steam-data.json');
+  // Skip the write (and the bot commit) when nothing but the timestamp
+  // moved - keeps "Updated <time>" honest and kills no-op commits.
+  try {
+    var prevRaw = JSON.parse(fs.readFileSync(outPath, 'utf-8'));
+    var stripStamp = function (o) { return JSON.stringify(Object.assign({}, o, { fetchedAt: null })); };
+    if (stripStamp(prevRaw) === stripStamp(output)) {
+      console.log('No data change - keeping previous file untouched.');
+      return;
+    }
+  } catch (e) { /* first run */ }
+
   fs.writeFileSync(outPath, JSON.stringify(output, null, 2));
 
   console.log('Wrote ' + outPath);

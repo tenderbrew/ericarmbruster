@@ -7,9 +7,17 @@ on:
     - cron: '15 */3 * * *' # Every 3 hours at :15 (offset from the other crons)
   workflow_dispatch: # Manual trigger from Actions tab
 
+permissions:
+  contents: write # the bot commits data back to main
+
+concurrency:
+  group: update-btc
+  cancel-in-progress: false
+
 jobs:
   fetch:
     runs-on: ubuntu-latest
+    timeout-minutes: 10
 
     steps:
       - uses: actions/checkout@v6

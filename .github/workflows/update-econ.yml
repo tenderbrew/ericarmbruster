@@ -4,12 +4,20 @@ name: Update Economics Data
 
 on:
   schedule:
-    - cron: '0 */6 * * *' # Every 6 hours (00, 06, 12, 18 UTC)
+    - cron: '5 */6 * * *' # Every 6 hours at :05 (minute :00 is GitHub's most-congested slot)
   workflow_dispatch: # Manual trigger from Actions tab
+
+permissions:
+  contents: write # the bot commits data back to main
+
+concurrency:
+  group: update-econ
+  cancel-in-progress: false
 
 jobs:
   fetch:
     runs-on: ubuntu-latest
+    timeout-minutes: 10
 
     steps:
       - uses: actions/checkout@v6

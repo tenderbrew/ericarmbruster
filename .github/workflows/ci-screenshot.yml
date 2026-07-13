@@ -1,0 +1,41 @@
+# Hydration + render gate: every push that touches pages, styles, tools or
+# data runs the same screenshot/assertion suite used locally
+# (tools/screenshot.js). Fails the run if any page fails to hydrate.
+name: CI Screenshot Check
+
+on:
+  push:
+    branches: [main]
+    paths: ['*.html', 'css/**', 'tools/**', '*-data.json']
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: ci-screenshot
+  cancel-in-progress: true
+
+jobs:
+  screenshot:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+
+    steps:
+      - uses: actions/checkout@v6
+
+      - uses: actions/setup-node@v6
+        with:
+          node-version: '22'
+
+      # ubuntu-latest ships Google Chrome preinstalled.
+      - name: Run screenshot + hydration checks
+        run: CHROME_PATH="$(command -v google-chrome || command -v chromium-browser)" node tools/screenshot.js
+
+      - name: Upload screenshots
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: page-screenshots
+          path: screenshots/
+          retention-days: 14

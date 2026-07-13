@@ -21,7 +21,7 @@ const USER_AGENT =
 const OUT_PATH = path.join(__dirname, 'film-data.json');
 
 async function get(url) {
-  const r = await fetch(url, { headers: { 'User-Agent': USER_AGENT } });
+  const r = await fetch(url, { headers: { 'User-Agent': USER_AGENT }, signal: AbortSignal.timeout(20000) });
   if (!r.ok) throw new Error('HTTP ' + r.status + ' for ' + url);
   return r.text();
 }
@@ -178,6 +178,17 @@ function parseLists(html) {
     recent: recent,
     lists: lists
   };
+
+  // Skip the write (and the bot commit) when nothing but the timestamp
+  // moved - keeps "Updated <time>" honest and kills no-op commits.
+  try {
+    var prevRaw = JSON.parse(fs.readFileSync(OUT_PATH, 'utf-8'));
+    var stripStamp = function (o) { return JSON.stringify(Object.assign({}, o, { fetchedAt: null })); };
+    if (stripStamp(prevRaw) === stripStamp(output)) {
+      console.log('No data change - keeping previous file untouched.');
+      return;
+    }
+  } catch (e) { /* first run */ }
 
   fs.writeFileSync(OUT_PATH, JSON.stringify(output, null, 2));
   console.log('Wrote ' + OUT_PATH);

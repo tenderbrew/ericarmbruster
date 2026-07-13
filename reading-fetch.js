@@ -66,7 +66,7 @@ function parseFeed(xml) {
 }
 
 async function main() {
-  const r = await fetch(FEED, { headers: { 'User-Agent': USER_AGENT } });
+  const r = await fetch(FEED, { headers: { 'User-Agent': USER_AGENT }, signal: AbortSignal.timeout(20000) });
   if (!r.ok) throw new Error('HTTP ' + r.status + ' for ' + FEED);
   const xml = await r.text();
 
@@ -84,6 +84,17 @@ async function main() {
     read: read,
     toRead: books.filter((b) => b.shelf === 'to-read'),
   };
+
+  // Skip the write (and the bot commit) when nothing but the timestamp
+  // moved - keeps "Updated <time>" honest and kills no-op commits.
+  try {
+    var prevRaw = JSON.parse(fs.readFileSync(OUT_PATH, 'utf-8'));
+    var stripStamp = function (o) { return JSON.stringify(Object.assign({}, o, { fetchedAt: null })); };
+    if (stripStamp(prevRaw) === stripStamp(data)) {
+      console.log('No data change - keeping previous file untouched.');
+      return;
+    }
+  } catch (e) { /* first run */ }
 
   fs.writeFileSync(OUT_PATH, JSON.stringify(data, null, 2) + '\n');
   console.log('Wrote ' + OUT_PATH);

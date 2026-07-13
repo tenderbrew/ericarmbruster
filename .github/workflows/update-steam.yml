@@ -6,9 +6,17 @@ on:
     - cron: '0 8 * * *' # Daily at 08:00 UTC (3 AM Eastern)
   workflow_dispatch: # Manual trigger from Actions tab
 
+permissions:
+  contents: write # the bot commits data back to main
+
+concurrency:
+  group: update-steam
+  cancel-in-progress: false
+
 jobs:
   fetch:
     runs-on: ubuntu-latest
+    timeout-minutes: 10
 
     steps:
       - uses: actions/checkout@v6

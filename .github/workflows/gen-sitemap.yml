@@ -1,0 +1,47 @@
+# Regenerates sitemap.xml whenever a page changes. The commit only touches
+# sitemap.xml, which is outside the paths filter, so it cannot retrigger
+# itself.
+name: Generate Sitemap
+
+on:
+  push:
+    branches: [main]
+    paths: ['*.html']
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: gen-sitemap
+  cancel-in-progress: false
+
+jobs:
+  sitemap:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+
+    steps:
+      - uses: actions/checkout@v6
+        with:
+          fetch-depth: 0 # full history: lastmod comes from git log
+
+      - uses: actions/setup-node@v6
+        with:
+          node-version: '22'
+
+      - name: Regenerate sitemap
+        run: node tools/gen-sitemap.js
+
+      - name: Commit and push if changed
+        run: |
+          git diff --quiet sitemap.xml && exit 0
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add sitemap.xml
+          git commit -m "chore: regenerate sitemap"
+          for i in 1 2 3; do
+            git push && exit 0
+            git pull --rebase origin main
+          done
+          git push

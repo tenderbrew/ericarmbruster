@@ -45,6 +45,7 @@ async function fetchFred(seriesId) {
   for (let attempt = 0; attempt < 2; attempt += 1) {
     try {
       const r = await fetch(FRED_BASE + encodeURIComponent(seriesId), {
+        signal: AbortSignal.timeout(20000),
         headers: { 'User-Agent': USER_AGENT }
       });
       if (!r.ok) throw new Error('HTTP ' + r.status);
@@ -119,7 +120,7 @@ function parseRssItems(xmlText) {
 }
 
 async function fetchNews() {
-  const r = await fetch(MISES_FEED, { headers: { 'User-Agent': USER_AGENT } });
+  const r = await fetch(MISES_FEED, { headers: { 'User-Agent': USER_AGENT }, signal: AbortSignal.timeout(20000) });
   if (!r.ok) throw new Error('HTTP ' + r.status);
   const xml = await r.text();
   return parseRssItems(xml).slice(0, 10);
@@ -181,6 +182,17 @@ async function fetchNews() {
   }
 
   const outPath = path.join(__dirname, 'econ-data.json');
+  // Skip the write (and the bot commit) when nothing but the timestamp
+  // moved - keeps "Updated <time>" honest and kills no-op commits.
+  try {
+    var prevRaw = JSON.parse(fs.readFileSync(outPath, 'utf-8'));
+    var stripStamp = function (o) { return JSON.stringify(Object.assign({}, o, { fetchedAt: null })); };
+    if (stripStamp(prevRaw) === stripStamp(output)) {
+      console.log('No data change - keeping previous file untouched.');
+      return;
+    }
+  } catch (e) { /* first run */ }
+
   fs.writeFileSync(outPath, JSON.stringify(output, null, 2));
 
   console.log('Wrote ' + outPath);

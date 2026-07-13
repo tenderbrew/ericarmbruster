@@ -4,12 +4,20 @@ name: Update Reading Data
 
 on:
   schedule:
-    - cron: '15 9 * * *' # Daily 09:15 UTC
+    - cron: '17 9 * * *' # Daily 09:17 UTC (offset from btc's :15 to avoid a push race)
   workflow_dispatch: # Manual trigger from Actions tab
+
+permissions:
+  contents: write # the bot commits data back to main
+
+concurrency:
+  group: update-reading
+  cancel-in-progress: false
 
 jobs:
   fetch:
     runs-on: ubuntu-latest
+    timeout-minutes: 10
 
     steps:
       - uses: actions/checkout@v6

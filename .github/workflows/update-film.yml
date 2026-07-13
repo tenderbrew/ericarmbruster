@@ -7,9 +7,17 @@ on:
     - cron: '30 */6 * * *' # Every 6 hours (00:30, 06:30, 12:30, 18:30 UTC)
   workflow_dispatch: # Manual trigger from Actions tab
 
+permissions:
+  contents: write # the bot commits data back to main
+
+concurrency:
+  group: update-film
+  cancel-in-progress: false
+
 jobs:
   fetch:
     runs-on: ubuntu-latest
+    timeout-minutes: 10
 
     steps:
       - uses: actions/checkout@v6
