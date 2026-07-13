@@ -1,13 +1,13 @@
 {
-  "fetchedAt": "2026-07-13T15:08:32.947Z",
+  "fetchedAt": "2026-07-13T17:21:25.632Z",
   "price": {
-    "usd": 62730,
-    "time": 1783954807
+    "usd": 62256,
+    "time": 1783962908
   },
   "moves": {
-    "d1": -1.5945063096437062,
-    "d7": -2.094975917626496,
-    "d30": -2.559239993406659
+    "d1": -2.338077232794167,
+    "d7": -2.8347651957238207,
+    "d30": -3.2955212024473934
   },
   "history90d": [
     {
@@ -372,60 +372,80 @@
     },
     {
       "date": "2026-07-13",
-      "close": 62683.2340588739
+      "close": 62194.394149842345
     }
   ],
   "blocks": [
     {
-      "height": 957869,
-      "id": "00000000000000000001a0f90d47e80ca66ea1d892fe1c3857f3e806fa250a64",
-      "timestamp": 1783954631,
-      "txCount": 4446
+      "height": 957886,
+      "id": "000000000000000000001f2d53673b574c488a4751dd568ea62c1b70ba6c3628",
+      "timestamp": 1783962118,
+      "txCount": 5215
     },
     {
-      "height": 957868,
-      "id": "00000000000000000001c40c5a83a77f39ef43f79ca9c0682ef11c43abce7200",
-      "timestamp": 1783954615,
-      "txCount": 6556
+      "height": 957885,
+      "id": "00000000000000000000b06eb10c9f95f2d3a77713592871c888b2bb977ed101",
+      "timestamp": 1783961938,
+      "txCount": 6405
     },
     {
-      "height": 957867,
-      "id": "00000000000000000000001406b8441f3076464c68fbd46eb0e2601d66f70368",
-      "timestamp": 1783954520,
-      "txCount": 3929
+      "height": 957884,
+      "id": "00000000000000000001b013db8d91f203936a95399f4ccc56aec10b8838e895",
+      "timestamp": 1783961706,
+      "txCount": 5437
     },
     {
-      "height": 957866,
-      "id": "0000000000000000000000cad86ec3037fbcf5e2d98907694d6a622d47f427c7",
-      "timestamp": 1783954465,
-      "txCount": 3268
+      "height": 957883,
+      "id": "0000000000000000000097f760b3b51ac7c45a6bca69e2d17294a8c9354859e5",
+      "timestamp": 1783961490,
+      "txCount": 5367
     },
     {
-      "height": 957865,
-      "id": "00000000000000000000c8ab7cb16c570436ad55ef51c73abfe90626c4769c1e",
-      "timestamp": 1783954116,
-      "txCount": 3182
+      "height": 957882,
+      "id": "0000000000000000000194ead0c70018e0d51cbc2c0df66d5d382a840649065f",
+      "timestamp": 1783961290,
+      "txCount": 5314
     },
     {
-      "height": 957864,
-      "id": "000000000000000000014c8d8bde00481dc2b712e09844e0f718d92463dc5be9",
-      "timestamp": 1783954135,
-      "txCount": 2795
+      "height": 957881,
+      "id": "000000000000000000011b91dea94cf9a52600baf783646cf6ea76e6767f9c87",
+      "timestamp": 1783960986,
+      "txCount": 4081
     },
     {
-      "height": 957863,
-      "id": "00000000000000000001ebf4f20240437aa565c86c38ea23a49c3f480e248078",
-      "timestamp": 1783953675,
-      "txCount": 3560
+      "height": 957880,
+      "id": "00000000000000000000241edc99cbdfddb72afee1597815f862b506536304ab",
+      "timestamp": 1783960758,
+      "txCount": 4490
     },
     {
-      "height": 957862,
-      "id": "0000000000000000000222cbac698c64f0d95ff31776bb38c9cae05426187d0d",
-      "timestamp": 1783953278,
-      "txCount": 3829
+      "height": 957879,
+      "id": "00000000000000000001681d892d7d2d56e35c03c39df5659cd6e649b4887153",
+      "timestamp": 1783960158,
+      "txCount": 4539
     }
   ],
   "news": [
+    {
+      "title": "Mizuho says Circle bank approval doesn't solve USDC growth, stablecoin competition risks",
+      "link": "https://www.coindesk.com/business/2026/07/13/mizuho-says-circle-bank-approval-doesn-t-solve-usdc-growth-stablecoin-competition-risks",
+      "pubDate": "Mon, 13 Jul 2026 16:34:48 +0000"
+    },
+    {
+      "title": "Bitcoin panic-selling may be ending as sellers' profit margins disappear",
+      "link": "https://www.coindesk.com/markets/2026/07/13/bitcoin-panic-selling-may-be-ending-as-sellers-profit-margins-disappear",
+      "pubDate": "Mon, 13 Jul 2026 15:49:41 +0000"
+    },
+    {
+      "title": "Strategy pauses its Bitcoin buying spree to hoard a massive $3 billion cash cushion",
+      "link": "https://www.coindesk.com/markets/2026/07/13/strategy-pauses-its-bitcoin-buying-spree-to-hoard-a-massive-usd3-billion-cash-cushion",
+      "pubDate": "Mon, 13 Jul 2026 15:27:36 +0000"
+    },
+    {
+      "title": "Robinhood built a blockchain for tokenized stocks. Memecoins took over",
+      "link": "https://www.coindesk.com/tech/2026/07/13/robinhood-built-a-blockchain-for-tokenized-stocks-memecoins-took-over",
+      "pubDate": "Mon, 13 Jul 2026 15:17:05 +0000"
+    },
     {
       "title": "Bolivia weighs adding Tether's USDT to its national payments system",
       "link": "https://www.coindesk.com/business/2026/07/13/bolivia-weighs-adding-tether-s-usdt-to-its-national-payments-system",
@@ -465,26 +485,6 @@
       "title": "BlackRock, Goldman Sachs, JPMorgan, Morgan Stanley join UK government's tokenization taskforce",
       "link": "https://www.coindesk.com/business/2026/07/13/uk-government-unveils-tokenization-taskforce-with-blackrock-goldman-jpmorgan-morgan-stanley",
       "pubDate": "Mon, 13 Jul 2026 11:40:21 +0000"
-    },
-    {
-      "title": "Resurgent U.S.-Iran hostilities send bitcoin lower even as ETF flows show demand",
-      "link": "https://www.coindesk.com/daybook-us/2026/07/13/resurgent-u-s-iran-hostilities-send-bitcoin-lower-even-as-etf-flows-show-demand",
-      "pubDate": "Mon, 13 Jul 2026 11:20:49 +0000"
-    },
-    {
-      "title": "Profit-taking, MidEast hostilities drag crypto lower after bullish week",
-      "link": "https://www.coindesk.com/markets/2026/07/13/profit-taking-mideast-hostilities-drag-crypto-lower-after-bullish-week",
-      "pubDate": "Mon, 13 Jul 2026 10:30:39 +0000"
-    },
-    {
-      "title": "Paradigm shifts vs bubbles: AI chips and bitcoin show powerful trends can still produce severe corrections",
-      "link": "https://www.coindesk.com/markets/2026/07/13/paradigm-shifts-vs-bubbles-ai-chips-and-bitcoin-show-powerful-trends-can-still-produce-severe-corrections",
-      "pubDate": "Mon, 13 Jul 2026 09:32:41 +0000"
-    },
-    {
-      "title": "U.S. inflation, second-quarter earnings reports: Crypto Week Ahead",
-      "link": "https://www.coindesk.com/markets/2026/07/13/u-s-inflation-second-quarter-earnings-reports-crypto-week-ahead",
-      "pubDate": "Mon, 13 Jul 2026 08:55:50 +0000"
     }
   ]
 }
