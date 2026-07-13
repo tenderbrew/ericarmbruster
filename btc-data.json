@@ -1,13 +1,13 @@
 {
-  "fetchedAt": "2026-07-13T09:46:00.717Z",
+  "fetchedAt": "2026-07-13T15:08:32.947Z",
   "price": {
-    "usd": 63055,
-    "time": 1783935608
+    "usd": 62730,
+    "time": 1783954807
   },
   "moves": {
-    "d1": -1.0846739256270332,
-    "d7": -1.5877364336990052,
-    "d30": -2.0544058310897007
+    "d1": -1.5945063096437062,
+    "d7": -2.094975917626496,
+    "d30": -2.559239993406659
   },
   "history90d": [
     {
@@ -372,60 +372,110 @@
     },
     {
       "date": "2026-07-13",
-      "close": 63045.18476007958
+      "close": 62683.2340588739
     }
   ],
   "blocks": [
     {
-      "height": 957834,
-      "id": "00000000000000000000dd41096d2157bff8c1ce4df78b09163b025e67946f0a",
-      "timestamp": 1783935736,
-      "txCount": 4937
+      "height": 957869,
+      "id": "00000000000000000001a0f90d47e80ca66ea1d892fe1c3857f3e806fa250a64",
+      "timestamp": 1783954631,
+      "txCount": 4446
     },
     {
-      "height": 957833,
-      "id": "000000000000000000008a4a6adbcd61727489735ac069fa8f6e53bd529c2a76",
-      "timestamp": 1783935392,
-      "txCount": 465
+      "height": 957868,
+      "id": "00000000000000000001c40c5a83a77f39ef43f79ca9c0682ef11c43abce7200",
+      "timestamp": 1783954615,
+      "txCount": 6556
     },
     {
-      "height": 957832,
-      "id": "0000000000000000000018c073c26fe1c6a7158f97836bb108985ad1f8f0397b",
-      "timestamp": 1783935309,
-      "txCount": 6308
+      "height": 957867,
+      "id": "00000000000000000000001406b8441f3076464c68fbd46eb0e2601d66f70368",
+      "timestamp": 1783954520,
+      "txCount": 3929
     },
     {
-      "height": 957831,
-      "id": "00000000000000000000974e317c2a9f8694f0250ab9528f8fc87c608413443b",
-      "timestamp": 1783935225,
-      "txCount": 4692
+      "height": 957866,
+      "id": "0000000000000000000000cad86ec3037fbcf5e2d98907694d6a622d47f427c7",
+      "timestamp": 1783954465,
+      "txCount": 3268
     },
     {
-      "height": 957830,
-      "id": "000000000000000000010963439f749705f8b668426fd36bfda3b3c26ac82d40",
-      "timestamp": 1783934155,
-      "txCount": 5448
+      "height": 957865,
+      "id": "00000000000000000000c8ab7cb16c570436ad55ef51c73abfe90626c4769c1e",
+      "timestamp": 1783954116,
+      "txCount": 3182
     },
     {
-      "height": 957829,
-      "id": "00000000000000000001c0d2ce39585ddc4031460f447c68598a2d922408d92d",
-      "timestamp": 1783933774,
-      "txCount": 5751
+      "height": 957864,
+      "id": "000000000000000000014c8d8bde00481dc2b712e09844e0f718d92463dc5be9",
+      "timestamp": 1783954135,
+      "txCount": 2795
     },
     {
-      "height": 957828,
-      "id": "000000000000000000008a9ecfe70558d3d2a50c4bc9d2806ed03f14267c9c66",
-      "timestamp": 1783933656,
-      "txCount": 4166
+      "height": 957863,
+      "id": "00000000000000000001ebf4f20240437aa565c86c38ea23a49c3f480e248078",
+      "timestamp": 1783953675,
+      "txCount": 3560
     },
     {
-      "height": 957827,
-      "id": "000000000000000000018174c149c343a04cc7c6efbe914ed96d85a0dd9a2494",
-      "timestamp": 1783933194,
-      "txCount": 6227
+      "height": 957862,
+      "id": "0000000000000000000222cbac698c64f0d95ff31776bb38c9cae05426187d0d",
+      "timestamp": 1783953278,
+      "txCount": 3829
     }
   ],
   "news": [
+    {
+      "title": "Bolivia weighs adding Tether's USDT to its national payments system",
+      "link": "https://www.coindesk.com/business/2026/07/13/bolivia-weighs-adding-tether-s-usdt-to-its-national-payments-system",
+      "pubDate": "Mon, 13 Jul 2026 14:47:52 +0000"
+    },
+    {
+      "title": "UK Treasury report on tokenization cites Ripple as convergence model",
+      "link": "https://www.coindesk.com/policy/2026/07/13/ripple-lands-inside-uk-plan-for-tokenized-repo-bonds-and-funds",
+      "pubDate": "Mon, 13 Jul 2026 14:06:53 +0000"
+    },
+    {
+      "title": "Tom Lee's BitMine ether holdings rise to 5.77 million tokens, or 4.8% of total supply",
+      "link": "https://www.coindesk.com/markets/2026/07/13/tom-lee-s-bitmine-raises-ether-holdings-to-usd5-77-million-or-4-8-of-supply",
+      "pubDate": "Mon, 13 Jul 2026 14:04:01 +0000"
+    },
+    {
+      "title": "Wall Street transfer agents lobby SEC, warning that third-party tokens pose risks to market integrity",
+      "link": "https://www.coindesk.com/policy/2026/07/13/wall-street-transfer-agents-lobby-sec-warning-that-third-party-tokens-pose-risks-to-market-integrity",
+      "pubDate": "Mon, 13 Jul 2026 13:45:00 +0000"
+    },
+    {
+      "title": "Robinhood Chain surges into top five by DEX volume: Bernstein",
+      "link": "https://www.coindesk.com/tech/2026/07/13/robinhood-chain-surges-into-top-five-by-dex-volume-bernstein",
+      "pubDate": "Mon, 13 Jul 2026 12:49:00 +0000"
+    },
+    {
+      "title": "Michael Saylor’s Strategy added $467 million in cash, made no changes to bitcoin holdings",
+      "link": "https://www.coindesk.com/markets/2026/07/13/michael-saylor-s-strategy-added-usd467-million-in-cash-made-no-changes-to-bitcoin-holdings",
+      "pubDate": "Mon, 13 Jul 2026 12:15:17 +0000"
+    },
+    {
+      "title": "SBI Holdings' blockchain initiative pivots to Solana for tokenization, stablecoin issuance",
+      "link": "https://www.coindesk.com/business/2026/07/13/sbi-holdings-blockchain-initiative-pivots-to-solana-for-tokenization-stablecoin-issuance",
+      "pubDate": "Mon, 13 Jul 2026 11:40:51 +0000"
+    },
+    {
+      "title": "BlackRock, Goldman Sachs, JPMorgan, Morgan Stanley join UK government's tokenization taskforce",
+      "link": "https://www.coindesk.com/business/2026/07/13/uk-government-unveils-tokenization-taskforce-with-blackrock-goldman-jpmorgan-morgan-stanley",
+      "pubDate": "Mon, 13 Jul 2026 11:40:21 +0000"
+    },
+    {
+      "title": "Resurgent U.S.-Iran hostilities send bitcoin lower even as ETF flows show demand",
+      "link": "https://www.coindesk.com/daybook-us/2026/07/13/resurgent-u-s-iran-hostilities-send-bitcoin-lower-even-as-etf-flows-show-demand",
+      "pubDate": "Mon, 13 Jul 2026 11:20:49 +0000"
+    },
+    {
+      "title": "Profit-taking, MidEast hostilities drag crypto lower after bullish week",
+      "link": "https://www.coindesk.com/markets/2026/07/13/profit-taking-mideast-hostilities-drag-crypto-lower-after-bullish-week",
+      "pubDate": "Mon, 13 Jul 2026 10:30:39 +0000"
+    },
     {
       "title": "Paradigm shifts vs bubbles: AI chips and bitcoin show powerful trends can still produce severe corrections",
       "link": "https://www.coindesk.com/markets/2026/07/13/paradigm-shifts-vs-bubbles-ai-chips-and-bitcoin-show-powerful-trends-can-still-produce-severe-corrections",
@@ -435,56 +485,6 @@
       "title": "U.S. inflation, second-quarter earnings reports: Crypto Week Ahead",
       "link": "https://www.coindesk.com/markets/2026/07/13/u-s-inflation-second-quarter-earnings-reports-crypto-week-ahead",
       "pubDate": "Mon, 13 Jul 2026 08:55:50 +0000"
-    },
-    {
-      "title": "Live markets: Bitcoin slips below $63,000 in an Asian-session leverage flush",
-      "link": "https://www.coindesk.com/markets/2026/07/13/bitcoin-slips-below-usd63-000-in-an-asian-session-leverage-flush",
-      "pubDate": "Mon, 13 Jul 2026 06:52:28 +0000"
-    },
-    {
-      "title": "Bitcoin holds near $63,800 as war-driven selloff hits everything but crypto",
-      "link": "https://www.coindesk.com/markets/2026/07/13/bitcoin-holds-near-usd63-800-as-war-driven-selloff-hits-everything-but-crypto",
-      "pubDate": "Mon, 13 Jul 2026 04:48:11 +0000"
-    },
-    {
-      "title": "Signs of life?: State of Crypto",
-      "link": "https://www.coindesk.com/policy/2026/07/12/signs-of-life-state-of-crypto",
-      "pubDate": "Sun, 12 Jul 2026 18:30:00 +0000"
-    },
-    {
-      "title": "Stablecoin market cap has shrunk by $10 billion since May, but analyst sees no reason to panic",
-      "link": "https://www.coindesk.com/markets/2026/07/12/stablecoin-market-cap-has-shrunk-by-usd10-billion-since-may-but-analyst-sees-no-reason-to-panic",
-      "pubDate": "Sun, 12 Jul 2026 13:00:00 +0000"
-    },
-    {
-      "title": "Bitcoin is nearing a power law support line Fidelity has tracked since 2015",
-      "link": "https://www.coindesk.com/markets/2026/07/12/bitcoin-is-nearing-a-power-law-support-line-fidelity-has-tracked-since-2015",
-      "pubDate": "Sun, 12 Jul 2026 11:30:00 +0000"
-    },
-    {
-      "title": "Bitcoin, ether little changed as U.S. launches fresh Iran strikes",
-      "link": "https://www.coindesk.com/markets/2026/07/12/bitcoin-ether-little-changed-as-u-s-launches-fresh-iran-strikes",
-      "pubDate": "Sun, 12 Jul 2026 06:18:15 +0000"
-    },
-    {
-      "title": "Ripple once weighed shutting down and handing XRP to shareholders, CEO says",
-      "link": "https://www.coindesk.com/markets/2026/07/12/ripple-once-weighed-shutting-down-and-handing-xrp-to-shareholders-ceo-says",
-      "pubDate": "Sun, 12 Jul 2026 06:09:49 +0000"
-    },
-    {
-      "title": "Bitcoin’s BIP 110 fork deadline nears with miner support at zero",
-      "link": "https://www.coindesk.com/tech/2026/07/12/bitcoin-s-bip-110-fork-deadline-nears-with-miner-support-at-zero",
-      "pubDate": "Sun, 12 Jul 2026 05:49:52 +0000"
-    },
-    {
-      "title": "Lending protocol Bonzo loses 77% of value locked as $9 million oracle exploit rattles Hedera",
-      "link": "https://www.coindesk.com/web3/2026/07/11/lending-protocol-bonzo-loses-77-of-value-locked-as-usd9-million-oracle-exploit-rattles-hedera",
-      "pubDate": "Sat, 11 Jul 2026 18:06:58 +0000"
-    },
-    {
-      "title": "Crypto IPO market stalls as capital rotates to AI and macro uncertainty weighs",
-      "link": "https://www.coindesk.com/business/2026/07/08/crypto-ipo-market-stalls-as-capital-rotates-to-ai-and-macro-uncertainty-weighs",
-      "pubDate": "Sat, 11 Jul 2026 17:07:24 +0000"
     }
   ]
 }
