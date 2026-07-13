@@ -1,13 +1,13 @@
 {
-  "fetchedAt": "2026-07-13T19:45:01.162Z",
+  "fetchedAt": "2026-07-13T22:06:25.352Z",
   "price": {
-    "usd": 62035,
-    "time": 1783971638
+    "usd": 62011,
+    "time": 1783980007
   },
   "moves": {
-    "d1": -2.684763253925504,
-    "d7": -3.1796880447945153,
-    "d30": -3.6388084328229264
+    "d1": -2.7224124145913575,
+    "d7": -3.2171457297614614,
+    "d30": -3.676088494040175
   },
   "history90d": [
     {
@@ -372,60 +372,70 @@
     },
     {
       "date": "2026-07-13",
-      "close": 62078.83230249841
+      "close": 62110.88217229757
     }
   ],
   "blocks": [
     {
-      "height": 957900,
-      "id": "00000000000000000001ff122c1d118bdd6482061a54855992ec41d36258626e",
-      "timestamp": 1783971640,
-      "txCount": 5528
+      "height": 957908,
+      "id": "00000000000000000002363a947d68607a168e236d9277fad0445e947114b7fd",
+      "timestamp": 1783980305,
+      "txCount": 3986
     },
     {
-      "height": 957899,
-      "id": "00000000000000000001a76fa03e0f4a858a82f9d2fe16bd384ae0fc8eefb64a",
-      "timestamp": 1783971399,
-      "txCount": 4350
+      "height": 957907,
+      "id": "000000000000000000015979d798cfb80d1b24488e6f5007e094fcad19bd64c0",
+      "timestamp": 1783977735,
+      "txCount": 4171
     },
     {
-      "height": 957898,
-      "id": "00000000000000000002152de93c3c8033a628061c0aed3cdd39bc970261b6fb",
-      "timestamp": 1783970928,
-      "txCount": 4210
+      "height": 957906,
+      "id": "000000000000000000003ba7f1e7d7f25fa4c9599a32d63e5968658dcdf54e08",
+      "timestamp": 1783977112,
+      "txCount": 3818
     },
     {
-      "height": 957897,
-      "id": "000000000000000000010588e18e49ef776727529c0874eace4115a304c13db4",
-      "timestamp": 1783970629,
-      "txCount": 4424
+      "height": 957905,
+      "id": "0000000000000000000010dd80549f61535150faa6c9c252349b92e34a687442",
+      "timestamp": 1783975256,
+      "txCount": 4021
     },
     {
-      "height": 957896,
-      "id": "0000000000000000000081519ae60ecc91a0a4a3df442cdffd553a7a2a76c462",
-      "timestamp": 1783968661,
-      "txCount": 4362
+      "height": 957904,
+      "id": "00000000000000000000d58c1dca023c51fcd7fb93fb7b0f53f750f7c3ab5b7b",
+      "timestamp": 1783974725,
+      "txCount": 4648
     },
     {
-      "height": 957895,
-      "id": "00000000000000000001a79b1f138768185205edb2fd44791f97773dae2c7b8a",
-      "timestamp": 1783968089,
-      "txCount": 4127
+      "height": 957903,
+      "id": "00000000000000000001de9d869f13ae53ffbcca3ba3558788b6dbea6162e478",
+      "timestamp": 1783973586,
+      "txCount": 3935
     },
     {
-      "height": 957894,
-      "id": "0000000000000000000068a2966099e65134e0d0295c69491a06b4851e822f4f",
-      "timestamp": 1783967701,
-      "txCount": 3408
+      "height": 957902,
+      "id": "00000000000000000001b3560962335795578d29addd0d7804d2cf7218cc4577",
+      "timestamp": 1783972714,
+      "txCount": 989
     },
     {
-      "height": 957893,
-      "id": "00000000000000000000d28853723bad8f87a876057811f42adefcc1779b81d4",
-      "timestamp": 1783967201,
-      "txCount": 2727
+      "height": 957901,
+      "id": "0000000000000000000101d716a2012ba5323a39b8b4264094aebe5b150702fb",
+      "timestamp": 1783972504,
+      "txCount": 4363
     }
   ],
   "news": [
+    {
+      "title": "Binance.US CEO says exchange is rebuilding, eyes return to 20% U.S. market share",
+      "link": "https://www.coindesk.com/coindesk-news/2026/07/13/binance-us-ceo-says-exchange-is-rebuilding-eyes-return-to-20-u-s-market-share",
+      "pubDate": "Mon, 13 Jul 2026 20:27:47 +0000"
+    },
+    {
+      "title": "Franklin Crypto CIO says crypto prices are disconnected from fundamentals",
+      "link": "https://www.coindesk.com/markets/2026/07/13/franklin-crypto-cio-says-crypto-prices-are-disconnected-from-fundamentals",
+      "pubDate": "Mon, 13 Jul 2026 20:15:29 +0000"
+    },
     {
       "title": "TeraWulf CEO: 'Not All Megawatts Are Created Equally' in AI Race",
       "link": "https://www.coindesk.com/coindesk-news/2026/07/13/terawulf-ceo-not-all-megawatts-are-created-equally-in-ai-race",
@@ -475,16 +485,6 @@
       "title": "Wall Street transfer agents lobby SEC, warning that third-party tokens pose risks to market integrity",
       "link": "https://www.coindesk.com/policy/2026/07/13/wall-street-transfer-agents-lobby-sec-warning-that-third-party-tokens-pose-risks-to-market-integrity",
       "pubDate": "Mon, 13 Jul 2026 13:45:00 +0000"
-    },
-    {
-      "title": "Robinhood Chain surges into top five by DEX volume: Bernstein",
-      "link": "https://www.coindesk.com/tech/2026/07/13/robinhood-chain-surges-into-top-five-by-dex-volume-bernstein",
-      "pubDate": "Mon, 13 Jul 2026 12:49:00 +0000"
-    },
-    {
-      "title": "Michael Saylor’s Strategy added $467 million in cash, made no changes to bitcoin holdings",
-      "link": "https://www.coindesk.com/markets/2026/07/13/michael-saylor-s-strategy-added-usd467-million-in-cash-made-no-changes-to-bitcoin-holdings",
-      "pubDate": "Mon, 13 Jul 2026 12:15:17 +0000"
     }
   ]
 }
