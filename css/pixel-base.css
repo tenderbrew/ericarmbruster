@@ -20,6 +20,11 @@
   --pool: #2E6FBF;
   --sunset: #E8743B;
   --shadow: #000000;
+  /* text-grade variants: same hues, darkened to clear WCAG AA on the paper.
+     Use for body links and any sunset-colored TEXT; sprites, borders and
+     hovers keep the display tokens above. */
+  --link: #2B67B2;
+  --sunset-text: #AD4612;
 
   --font-display: "DotGothic16", monospace;
   --font-body: "IBM Plex Mono", monospace;
@@ -65,7 +70,7 @@ h2 { font-size: 24px; margin-top: 8px; }
 p { margin: 16px 0; }
 
 a {
-  color: var(--pool);
+  color: var(--link);
   text-decoration-thickness: 2px;
   text-underline-offset: 3px;
 }
@@ -303,7 +308,7 @@ ul.px-bullets li::before {
 .px-gallery .when {
   font-family: var(--font-display);
   font-size: 16px;
-  color: var(--pool);
+  color: var(--link);
 }
 
 /* ---- Footer ------------------------------------------------------------ */
@@ -332,6 +337,8 @@ html.dusk {
   --pool: #7B4B94;
   --sunset: #DE6222;
   --shadow: #DE6222; /* golden hour: dusk shadows run long and orange */
+  --link: #7B4B94; /* the dusk violet already clears AA on peach */
+  --sunset-text: #9C3E0E;
 }
 
 /* Dusk re-inks the water: wave dividers and every pool-blue sprite pixel
@@ -350,6 +357,8 @@ html.night {
   --ink: #F3EEDF;
   --pool: #5B94D6; /* lightened for contrast on the dark surface */
   --shadow: #E8C84A; /* moonlight: night shadows glow kit gold */
+  --link: #5B94D6;
+  --sunset-text: #E8743B; /* passes on the night paper as-is */
 }
 
 /* Ink-drawn sprite pixels flip to cream so pixel art survives the dark. */

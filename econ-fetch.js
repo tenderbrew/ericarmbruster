@@ -132,6 +132,12 @@ async function fetchNews() {
   let ok = 0, fail = 0;
 
   // Sequential — keeps load on FRED gentle and total runtime is still < 30s.
+  // Previous output - per-series fallback when FRED hiccups.
+  let prevIndicators = {};
+  try {
+    prevIndicators = (JSON.parse(fs.readFileSync(path.join(__dirname, 'econ-data.json'), 'utf-8')).indicators) || {};
+  } catch (e) { /* first run */ }
+
   for (const id of SERIES_IDS) {
     try {
       const points = await fetchFred(id);
@@ -140,7 +146,8 @@ async function fetchNews() {
       ok += 1;
     } catch (err) {
       console.warn('  ' + id + ' failed: ' + err.message);
-      indicators[id] = null;
+      // Keep the last good value on a transient failure instead of nulling.
+      indicators[id] = prevIndicators[id] || null;
       fail += 1;
     }
   }
@@ -150,7 +157,7 @@ async function fetchNews() {
     const yoy = cpiYoY(cpiPoints);
     indicators.CPI_YOY = yoy ? { latest: yoy.latest, previous: null } : null;
   } else {
-    indicators.CPI_YOY = null;
+    indicators.CPI_YOY = prevIndicators.CPI_YOY || null;
   }
 
   console.log('Fetching Mises feed...');
@@ -167,6 +174,11 @@ async function fetchNews() {
     indicators: indicators,
     news: news
   };
+
+  if (ok === 0) {
+    console.error('every FRED series failed - keeping the previous econ-data.json');
+    process.exit(1);
+  }
 
   const outPath = path.join(__dirname, 'econ-data.json');
   fs.writeFileSync(outPath, JSON.stringify(output, null, 2));

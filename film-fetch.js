@@ -118,7 +118,10 @@ function parseLists(html) {
     if (!linkM || /\/(edit|likes)\/$/.test(linkM[1])) continue;
     // The display title lives in <h2 class="name prettify"><a href>TITLE</a>.
     const titleM = block.match(/<h2 class="name[^"]*">\s*<a [^>]*>([\s\S]*?)<\/a>/);
-    const countM = block.match(/([\d,]+)(?:&nbsp;|\s)films?/i);
+    // Count must come from the metadata, not the list TITLE - "2026 Films
+    // Ranked" would otherwise match first and report 2026 films.
+    const metaBlock = block.replace(/<h2 class="name[\s\S]*?<\/h2>/i, '');
+    const countM = metaBlock.match(/([\d,]+)(?:&nbsp;|\s)films?/i);
     let title = '';
     if (titleM) title = decodeEntities(titleM[1].replace(/<[^>]+>/g, ''));
     if (!title) {

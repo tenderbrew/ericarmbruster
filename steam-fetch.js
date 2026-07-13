@@ -74,6 +74,11 @@ async function getPlayerSummary() {
   ]);
 
   const games = owned.games || [];
+  if (!games.length) {
+    // Steam sometimes answers 200 with an empty body (profile visibility
+    // flip / degraded API). Believable zeros would clobber good data.
+    throw new Error('empty owned-games payload - refusing to overwrite steam-data.json');
+  }
   const totalGames = owned.game_count || games.length;
   const totalMinutes = games.reduce(function (sum, g) { return sum + (g.playtime_forever || 0); }, 0);
   const totalHours = Math.round(totalMinutes / 60);
