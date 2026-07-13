@@ -1,13 +1,13 @@
 {
-  "fetchedAt": "2026-07-13T03:55:08.694Z",
+  "fetchedAt": "2026-07-13T09:46:00.717Z",
   "price": {
-    "usd": 62809,
-    "time": 1783914610
+    "usd": 63055,
+    "time": 1783935608
   },
   "moves": {
-    "d1": -1.4705778224519572,
-    "d7": -1.9716777046102751,
-    "d30": -2.4365264585665347
+    "d1": -1.0846739256270332,
+    "d7": -1.5877364336990052,
+    "d30": -2.0544058310897007
   },
   "history90d": [
     {
@@ -372,60 +372,80 @@
     },
     {
       "date": "2026-07-13",
-      "close": 62762.78358210217
+      "close": 63045.18476007958
     }
   ],
   "blocks": [
     {
-      "height": 957799,
-      "id": "00000000000000000000d7d57d592795a1b49f9cbc20f3c8c42aea6ed5e02760",
-      "timestamp": 1783914743,
-      "txCount": 4651
+      "height": 957834,
+      "id": "00000000000000000000dd41096d2157bff8c1ce4df78b09163b025e67946f0a",
+      "timestamp": 1783935736,
+      "txCount": 4937
     },
     {
-      "height": 957798,
-      "id": "000000000000000000006f714f5adec2199bc8e799095b9c7faaf1d9f415ef2f",
-      "timestamp": 1783913634,
-      "txCount": 6476
+      "height": 957833,
+      "id": "000000000000000000008a4a6adbcd61727489735ac069fa8f6e53bd529c2a76",
+      "timestamp": 1783935392,
+      "txCount": 465
     },
     {
-      "height": 957797,
-      "id": "00000000000000000001602cd4dc1cbaef6249edbd2aa4470a6adc2c3bdbc393",
-      "timestamp": 1783913664,
-      "txCount": 6323
+      "height": 957832,
+      "id": "0000000000000000000018c073c26fe1c6a7158f97836bb108985ad1f8f0397b",
+      "timestamp": 1783935309,
+      "txCount": 6308
     },
     {
-      "height": 957796,
-      "id": "000000000000000000011f0bad98214a479c9a539fd843c772cf9cc95b73164d",
-      "timestamp": 1783913082,
-      "txCount": 6961
+      "height": 957831,
+      "id": "00000000000000000000974e317c2a9f8694f0250ab9528f8fc87c608413443b",
+      "timestamp": 1783935225,
+      "txCount": 4692
     },
     {
-      "height": 957795,
-      "id": "000000000000000000004de6169001b394ee1baef02ddc1435ff5ea15f802c22",
-      "timestamp": 1783912924,
-      "txCount": 5243
+      "height": 957830,
+      "id": "000000000000000000010963439f749705f8b668426fd36bfda3b3c26ac82d40",
+      "timestamp": 1783934155,
+      "txCount": 5448
     },
     {
-      "height": 957794,
-      "id": "00000000000000000000478a2ed0cc89202c366141022586bcb70cd4a9d46ae3",
-      "timestamp": 1783912212,
-      "txCount": 3924
+      "height": 957829,
+      "id": "00000000000000000001c0d2ce39585ddc4031460f447c68598a2d922408d92d",
+      "timestamp": 1783933774,
+      "txCount": 5751
     },
     {
-      "height": 957793,
-      "id": "000000000000000000000f6132e1d6af6d39e94775236258bbd4a4a1c179180e",
-      "timestamp": 1783911141,
-      "txCount": 7138
+      "height": 957828,
+      "id": "000000000000000000008a9ecfe70558d3d2a50c4bc9d2806ed03f14267c9c66",
+      "timestamp": 1783933656,
+      "txCount": 4166
     },
     {
-      "height": 957792,
-      "id": "000000000000000000022d86fd862b27979e1aaa201804acf665362ddbe6babc",
-      "timestamp": 1783911136,
-      "txCount": 5489
+      "height": 957827,
+      "id": "000000000000000000018174c149c343a04cc7c6efbe914ed96d85a0dd9a2494",
+      "timestamp": 1783933194,
+      "txCount": 6227
     }
   ],
   "news": [
+    {
+      "title": "Paradigm shifts vs bubbles: AI chips and bitcoin show powerful trends can still produce severe corrections",
+      "link": "https://www.coindesk.com/markets/2026/07/13/paradigm-shifts-vs-bubbles-ai-chips-and-bitcoin-show-powerful-trends-can-still-produce-severe-corrections",
+      "pubDate": "Mon, 13 Jul 2026 09:32:41 +0000"
+    },
+    {
+      "title": "U.S. inflation, second-quarter earnings reports: Crypto Week Ahead",
+      "link": "https://www.coindesk.com/markets/2026/07/13/u-s-inflation-second-quarter-earnings-reports-crypto-week-ahead",
+      "pubDate": "Mon, 13 Jul 2026 08:55:50 +0000"
+    },
+    {
+      "title": "Live markets: Bitcoin slips below $63,000 in an Asian-session leverage flush",
+      "link": "https://www.coindesk.com/markets/2026/07/13/bitcoin-slips-below-usd63-000-in-an-asian-session-leverage-flush",
+      "pubDate": "Mon, 13 Jul 2026 06:52:28 +0000"
+    },
+    {
+      "title": "Bitcoin holds near $63,800 as war-driven selloff hits everything but crypto",
+      "link": "https://www.coindesk.com/markets/2026/07/13/bitcoin-holds-near-usd63-800-as-war-driven-selloff-hits-everything-but-crypto",
+      "pubDate": "Mon, 13 Jul 2026 04:48:11 +0000"
+    },
     {
       "title": "Signs of life?: State of Crypto",
       "link": "https://www.coindesk.com/policy/2026/07/12/signs-of-life-state-of-crypto",
@@ -465,26 +485,6 @@
       "title": "Crypto IPO market stalls as capital rotates to AI and macro uncertainty weighs",
       "link": "https://www.coindesk.com/business/2026/07/08/crypto-ipo-market-stalls-as-capital-rotates-to-ai-and-macro-uncertainty-weighs",
       "pubDate": "Sat, 11 Jul 2026 17:07:24 +0000"
-    },
-    {
-      "title": "The UK has finally shown it’s serious about crypto",
-      "link": "https://www.coindesk.com/opinion/2026/07/11/the-uk-has-finally-shown-it-s-serious-about-crypto",
-      "pubDate": "Sat, 11 Jul 2026 15:00:00 +0000"
-    },
-    {
-      "title": "Bitcoin treasury company Empery Digital sold about half of its BTC stack",
-      "link": "https://www.coindesk.com/markets/2026/07/11/bitcoin-treasury-company-empery-digital-sold-about-half-of-btc-stack",
-      "pubDate": "Sat, 11 Jul 2026 12:25:05 +0000"
-    },
-    {
-      "title": "AI found an Ethereum bug that could take validators offline, but humans had to prove it",
-      "link": "https://www.coindesk.com/tech/2026/07/10/ai-found-an-ethereum-bug-that-could-take-validators-offline-but-humans-had-to-prove-it",
-      "pubDate": "Sat, 11 Jul 2026 12:00:00 +0000"
-    },
-    {
-      "title": "Bitcoin analysts predict $300,000–$500,000 price in 2029. The math says no",
-      "link": "https://www.coindesk.com/markets/2026/07/10/bitcoin-analysts-predict-usd300-000-usd500-000-price-in-2029-the-math-says-no",
-      "pubDate": "Sat, 11 Jul 2026 02:30:00 +0000"
     }
   ]
 }
