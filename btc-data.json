@@ -1,13 +1,13 @@
 {
-  "fetchedAt": "2026-07-14T19:40:46.859Z",
+  "fetchedAt": "2026-07-14T22:10:03.657Z",
   "price": {
-    "usd": 64469,
-    "time": 1784057710
+    "usd": 64569,
+    "time": 1784066709
   },
   "moves": {
-    "d1": 3.5775491681027116,
-    "d7": 1.7641802024684905,
-    "d30": -1.894011459077638
+    "d1": 3.738211733317165,
+    "d7": 1.9220299910528649,
+    "d30": -1.7418360126756127
   },
   "history90d": [
     {
@@ -372,60 +372,65 @@
     },
     {
       "date": "2026-07-14",
-      "close": 64466.79584062857
+      "close": 64558.35161685796
     }
   ],
   "blocks": [
     {
-      "height": 958054,
-      "id": "000000000000000000015e1f112c868267db4b2270833f97b8476c32f7db8574",
-      "timestamp": 1784057604,
-      "txCount": 5404
+      "height": 958071,
+      "id": "00000000000000000001e8f93b8e616198d54912e4f1ee9190b04cf551bec444",
+      "timestamp": 1784065947,
+      "txCount": 5325
     },
     {
-      "height": 958053,
-      "id": "000000000000000000005d7cbdae0f10a44d65333fa477af8460b2856190ab72",
-      "timestamp": 1784057113,
-      "txCount": 5285
+      "height": 958070,
+      "id": "00000000000000000000b5dc43c2c1d58b0c362c2924cfcc7f717408b767cf7f",
+      "timestamp": 1784065749,
+      "txCount": 5195
     },
     {
-      "height": 958052,
-      "id": "000000000000000000002ae40f0083485b29eae298b657590c7bd2593bb0a140",
-      "timestamp": 1784056822,
-      "txCount": 6989
+      "height": 958069,
+      "id": "000000000000000000019d359e68ac9c6ae3754fae1e5da9a1141bbd370f42da",
+      "timestamp": 1784065075,
+      "txCount": 6707
     },
     {
-      "height": 958051,
-      "id": "00000000000000000001b1a857aae4865fa789f84f6829cb08a6eb66bebc992e",
-      "timestamp": 1784056482,
-      "txCount": 5832
+      "height": 958068,
+      "id": "000000000000000000004aa02ddc5490eec9bbb7ac0db7a1ed069698d1f82839",
+      "timestamp": 1784064918,
+      "txCount": 4309
     },
     {
-      "height": 958050,
-      "id": "00000000000000000000727f670831efcfa0e64cdab0969739c516d38cc8e4ab",
-      "timestamp": 1784056318,
-      "txCount": 4424
+      "height": 958067,
+      "id": "000000000000000000007935ac63208f845d309ba7c130574d9340a9784e2c9b",
+      "timestamp": 1784064375,
+      "txCount": 5994
     },
     {
-      "height": 958049,
-      "id": "000000000000000000006a74441d12065d89a1eaa82ac466b08cc20f6b3a9294",
-      "timestamp": 1784055713,
-      "txCount": 4802
+      "height": 958066,
+      "id": "0000000000000000000114fb0b5c50618904be7a3d8a133f9f2d1d628fb292cd",
+      "timestamp": 1784064022,
+      "txCount": 6836
     },
     {
-      "height": 958048,
-      "id": "00000000000000000001053eaf0963654497f05f7b03a4230c84fc75b16e1e24",
-      "timestamp": 1784055689,
-      "txCount": 4626
+      "height": 958065,
+      "id": "00000000000000000001dc808df9aa9d2e79e2afc013181a6c4f55a496cef597",
+      "timestamp": 1784063928,
+      "txCount": 1568
     },
     {
-      "height": 958047,
-      "id": "000000000000000000005d5bd28b326251ba1d6782b3ed93bfcc8e699e4eda65",
-      "timestamp": 1784055468,
-      "txCount": 3589
+      "height": 958064,
+      "id": "00000000000000000000b0bfc263b046aa9066d94030f91fd0c6268fd57d1dbd",
+      "timestamp": 1784063579,
+      "txCount": 5769
     }
   ],
   "news": [
+    {
+      "title": "U.S. CFTC moves to stop Kalshi from canceling trades as ordered by Michigan court",
+      "link": "https://www.coindesk.com/policy/2026/07/14/u-s-cftc-moves-to-stop-kalshi-from-canceling-trades-as-ordered-by-michigan-court",
+      "pubDate": "Tue, 14 Jul 2026 20:51:05 +0000"
+    },
     {
       "title": "Some U.S. Senate Democrats come out against Clarity Act, calling it a 'corrupt' bill",
       "link": "https://www.coindesk.com/policy/2026/07/14/some-u-s-senate-democrats-come-out-against-clarity-act-calling-it-a-corrupt-bill",
@@ -480,11 +485,6 @@
       "title": "U.S. June CPI fell 0.4%, likely cooling move toward Fed rate hikes",
       "link": "https://www.coindesk.com/markets/2026/07/14/u-s-june-cpi-fell-0-4-likely-cooling-move-toward-fed-rate-hikes",
       "pubDate": "Tue, 14 Jul 2026 12:33:24 +0000"
-    },
-    {
-      "title": "ECB picks firms including Deutsche Bank, Revolut for digital euro pilot",
-      "link": "https://www.coindesk.com/business/2026/07/14/ecb-picks-firms-including-deutsche-bank-revolut-for-digital-euro-pilot",
-      "pubDate": "Tue, 14 Jul 2026 12:10:03 +0000"
     }
   ]
 }
