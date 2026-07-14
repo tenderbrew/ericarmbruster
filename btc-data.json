@@ -1,19 +1,15 @@
 {
-  "fetchedAt": "2026-07-13T22:06:25.352Z",
+  "fetchedAt": "2026-07-14T03:29:24.944Z",
   "price": {
-    "usd": 62011,
-    "time": 1783980007
+    "usd": 62303,
+    "time": 1783999507
   },
   "moves": {
-    "d1": -2.7224124145913575,
-    "d7": -3.2171457297614614,
-    "d30": -3.676088494040175
+    "d1": 0.097598005557753,
+    "d7": -1.6548462182693346,
+    "d30": -5.190131628145533
   },
   "history90d": [
-    {
-      "date": "2026-04-15",
-      "close": 74181.10807228928
-    },
     {
       "date": "2026-04-16",
       "close": 74833.50639132406
@@ -371,61 +367,70 @@
       "close": 63746.44102430586
     },
     {
-      "date": "2026-07-13",
-      "close": 62110.88217229757
+      "date": "2026-07-14",
+      "close": 62242.25280265039
+    },
+    {
+      "date": "2026-07-14",
+      "close": 62371.051513949344
     }
   ],
   "blocks": [
     {
-      "height": 957908,
-      "id": "00000000000000000002363a947d68607a168e236d9277fad0445e947114b7fd",
-      "timestamp": 1783980305,
-      "txCount": 3986
+      "height": 957951,
+      "id": "000000000000000000006e4ad34fa62b0e7a626fc0f68e8d29ce52bc4a86f095",
+      "timestamp": 1783999366,
+      "txCount": 4678
     },
     {
-      "height": 957907,
-      "id": "000000000000000000015979d798cfb80d1b24488e6f5007e094fcad19bd64c0",
-      "timestamp": 1783977735,
-      "txCount": 4171
+      "height": 957950,
+      "id": "000000000000000000016ea78b0d57a7979de3542518c8690a1e5a808e691cc5",
+      "timestamp": 1783998575,
+      "txCount": 5322
     },
     {
-      "height": 957906,
-      "id": "000000000000000000003ba7f1e7d7f25fa4c9599a32d63e5968658dcdf54e08",
-      "timestamp": 1783977112,
-      "txCount": 3818
+      "height": 957949,
+      "id": "00000000000000000001bda6bfa328f15edf597bfc364e02da42ea92a518a15e",
+      "timestamp": 1783998140,
+      "txCount": 4450
     },
     {
-      "height": 957905,
-      "id": "0000000000000000000010dd80549f61535150faa6c9c252349b92e34a687442",
-      "timestamp": 1783975256,
-      "txCount": 4021
+      "height": 957948,
+      "id": "00000000000000000000d347fae00267f300683a4c759174fc57ea4419325f0b",
+      "timestamp": 1783997811,
+      "txCount": 3475
     },
     {
-      "height": 957904,
-      "id": "00000000000000000000d58c1dca023c51fcd7fb93fb7b0f53f750f7c3ab5b7b",
-      "timestamp": 1783974725,
-      "txCount": 4648
+      "height": 957947,
+      "id": "00000000000000000000e770029e4e9d313c657440d8f91f4ad87b43f3993b76",
+      "timestamp": 1783996172,
+      "txCount": 6248
     },
     {
-      "height": 957903,
-      "id": "00000000000000000001de9d869f13ae53ffbcca3ba3558788b6dbea6162e478",
-      "timestamp": 1783973586,
-      "txCount": 3935
+      "height": 957946,
+      "id": "000000000000000000015013dc677cf9da828c69e1fea3e85748170b6219d4bc",
+      "timestamp": 1783995926,
+      "txCount": 372
     },
     {
-      "height": 957902,
-      "id": "00000000000000000001b3560962335795578d29addd0d7804d2cf7218cc4577",
-      "timestamp": 1783972714,
-      "txCount": 989
+      "height": 957945,
+      "id": "0000000000000000000060c0acc30fce32fc417649e34647e7b267ea552b5e2e",
+      "timestamp": 1783995793,
+      "txCount": 6740
     },
     {
-      "height": 957901,
-      "id": "0000000000000000000101d716a2012ba5323a39b8b4264094aebe5b150702fb",
-      "timestamp": 1783972504,
-      "txCount": 4363
+      "height": 957944,
+      "id": "00000000000000000000e7d6620c88a891467341ffb010b8e82e549def4e413a",
+      "timestamp": 1783995638,
+      "txCount": 6904
     }
   ],
   "news": [
+    {
+      "title": "Bitcoin slips as traders lift July Fed rate hike bets ahead of Inflation report",
+      "link": "https://www.coindesk.com/markets/2026/07/14/bitcoin-slips-as-traders-lift-july-fed-rate-hike-bets-ahead-of-inflation-report",
+      "pubDate": "Tue, 14 Jul 2026 02:58:36 +0000"
+    },
     {
       "title": "Binance.US CEO says exchange is rebuilding, eyes return to 20% U.S. market share",
       "link": "https://www.coindesk.com/coindesk-news/2026/07/13/binance-us-ceo-says-exchange-is-rebuilding-eyes-return-to-20-u-s-market-share",
@@ -480,11 +485,6 @@
       "title": "Tom Lee's BitMine ether holdings rise to 5.77 million tokens, or 4.8% of total supply",
       "link": "https://www.coindesk.com/markets/2026/07/13/tom-lee-s-bitmine-raises-ether-holdings-to-usd5-77-million-or-4-8-of-supply",
       "pubDate": "Mon, 13 Jul 2026 14:04:01 +0000"
-    },
-    {
-      "title": "Wall Street transfer agents lobby SEC, warning that third-party tokens pose risks to market integrity",
-      "link": "https://www.coindesk.com/policy/2026/07/13/wall-street-transfer-agents-lobby-sec-warning-that-third-party-tokens-pose-risks-to-market-integrity",
-      "pubDate": "Mon, 13 Jul 2026 13:45:00 +0000"
     }
   ]
 }
