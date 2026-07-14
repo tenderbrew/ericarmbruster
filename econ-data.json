@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-07-14T03:23:01.675Z",
+  "fetchedAt": "2026-07-14T14:06:28.532Z",
   "indicators": {
     "UNRATE": {
       "latest": {
@@ -43,22 +43,22 @@
     },
     "CPIAUCSL": {
       "latest": {
-        "date": "2026-05-01",
-        "value": 333.979
+        "date": "2026-06-01",
+        "value": 332.568
       },
       "previous": {
-        "date": "2026-04-01",
-        "value": 332.407
+        "date": "2026-05-01",
+        "value": 333.979
       }
     },
     "CPILFESL": {
       "latest": {
-        "date": "2026-05-01",
-        "value": 336.121
+        "date": "2026-06-01",
+        "value": 336.065
       },
       "previous": {
-        "date": "2026-04-01",
-        "value": 335.423
+        "date": "2026-05-01",
+        "value": 336.121
       }
     },
     "T10YIE": {
@@ -263,12 +263,12 @@
     },
     "VIXCLS": {
       "latest": {
-        "date": "2026-07-10",
-        "value": 15.03
+        "date": "2026-07-13",
+        "value": 17.16
       },
       "previous": {
-        "date": "2026-07-09",
-        "value": 15.84
+        "date": "2026-07-10",
+        "value": 15.03
       }
     },
     "BOPGSTB": {
@@ -293,13 +293,31 @@
     },
     "CPI_YOY": {
       "latest": {
-        "date": "2026-05-01",
-        "value": 4.166614684049641
+        "date": "2026-06-01",
+        "value": 3.463530729385411
       },
       "previous": null
     }
   },
   "news": [
+    {
+      "title": "Poland: For Now It’s Still a Paper Tiger",
+      "link": "https://mises.org/podcasts/audio-mises-wire/poland-now-its-still-paper-tiger",
+      "pubDate": "Tue, 14 Jul 2026 08:12:12 CDT",
+      "kind": "Podcast"
+    },
+    {
+      "title": "Pikachu’s Pokémon Price Information",
+      "link": "https://mises.org/power-market/pikachus-pokemon-price-information",
+      "pubDate": "Tue, 14 Jul 2026 07:00:00 CDT",
+      "kind": "Article"
+    },
+    {
+      "title": "The UK’s Monstrous Equality Act",
+      "link": "https://mises.org/mises-wire/uks-monstrous-equality-act",
+      "pubDate": "Tue, 14 Jul 2026 05:00:00 CDT",
+      "kind": "Mises Wire"
+    },
     {
       "title": "The Rise of State-Controlled Medical Care",
       "link": "https://mises.org/podcasts/why-healthcare-system-broken-mises-circle-new-hampshire/rise-state-controlled-medical-care",
@@ -340,24 +358,6 @@
       "title": "Anti-Marxism",
       "link": "https://mises.org/podcasts/critique-interventionism/anti-marxism",
       "pubDate": "Mon, 13 Jul 2026 09:01:20 CDT",
-      "kind": "Podcast"
-    },
-    {
-      "title": "Social Liberalism",
-      "link": "https://mises.org/podcasts/critique-interventionism/social-liberalism",
-      "pubDate": "Mon, 13 Jul 2026 08:58:27 CDT",
-      "kind": "Podcast"
-    },
-    {
-      "title": "Does the Free Market Naturally Lead to Price Deflation?",
-      "link": "https://mises.org/podcasts/human-action-podcast/does-free-market-naturally-lead-price-deflation",
-      "pubDate": "Mon, 13 Jul 2026 08:30:00 CDT",
-      "kind": "Podcast"
-    },
-    {
-      "title": "The Hampered Market Economy",
-      "link": "https://mises.org/podcasts/critique-interventionism/hampered-market-economy",
-      "pubDate": "Mon, 13 Jul 2026 08:28:02 CDT",
       "kind": "Podcast"
     }
   ]
