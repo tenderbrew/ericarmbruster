@@ -1,13 +1,13 @@
 {
-  "fetchedAt": "2026-07-14T03:29:24.944Z",
+  "fetchedAt": "2026-07-14T08:26:13.377Z",
   "price": {
-    "usd": 62303,
-    "time": 1783999507
+    "usd": 62521,
+    "time": 1784017211
   },
   "moves": {
-    "d1": 0.097598005557753,
-    "d7": -1.6548462182693346,
-    "d30": -5.190131628145533
+    "d1": 0.44784239772526213,
+    "d7": -1.3107336791553736,
+    "d30": -4.858389154989107
   },
   "history90d": [
     {
@@ -372,60 +372,75 @@
     },
     {
       "date": "2026-07-14",
-      "close": 62371.051513949344
+      "close": 62493.85618242018
     }
   ],
   "blocks": [
     {
-      "height": 957951,
-      "id": "000000000000000000006e4ad34fa62b0e7a626fc0f68e8d29ce52bc4a86f095",
-      "timestamp": 1783999366,
-      "txCount": 4678
+      "height": 957977,
+      "id": "00000000000000000000459cbc95b6a313e244fe3b500e3e3b70a3b18a6459ee",
+      "timestamp": 1784017065,
+      "txCount": 6742
     },
     {
-      "height": 957950,
-      "id": "000000000000000000016ea78b0d57a7979de3542518c8690a1e5a808e691cc5",
-      "timestamp": 1783998575,
-      "txCount": 5322
+      "height": 957976,
+      "id": "00000000000000000001cd861c5c3d3d7d474fc9f3662ecfec744fb2822d79fe",
+      "timestamp": 1784016923,
+      "txCount": 5925
     },
     {
-      "height": 957949,
-      "id": "00000000000000000001bda6bfa328f15edf597bfc364e02da42ea92a518a15e",
-      "timestamp": 1783998140,
-      "txCount": 4450
+      "height": 957975,
+      "id": "0000000000000000000202c3b1b107ff7741e4588d02fd47e06f9255767dc352",
+      "timestamp": 1784016596,
+      "txCount": 3824
     },
     {
-      "height": 957948,
-      "id": "00000000000000000000d347fae00267f300683a4c759174fc57ea4419325f0b",
-      "timestamp": 1783997811,
-      "txCount": 3475
+      "height": 957974,
+      "id": "000000000000000000016161337d2e9888ad9e71987194f4600f127188d21ae0",
+      "timestamp": 1784015862,
+      "txCount": 6586
     },
     {
-      "height": 957947,
-      "id": "00000000000000000000e770029e4e9d313c657440d8f91f4ad87b43f3993b76",
-      "timestamp": 1783996172,
-      "txCount": 6248
+      "height": 957973,
+      "id": "00000000000000000000113a69f0340d2cf12c34345d2d76f3d83ca100e1e1d1",
+      "timestamp": 1784015663,
+      "txCount": 6547
     },
     {
-      "height": 957946,
-      "id": "000000000000000000015013dc677cf9da828c69e1fea3e85748170b6219d4bc",
-      "timestamp": 1783995926,
-      "txCount": 372
+      "height": 957972,
+      "id": "000000000000000000018976aa4e41ddedc7f6092435bfc19cf5294e281ac2d8",
+      "timestamp": 1784015681,
+      "txCount": 5648
     },
     {
-      "height": 957945,
-      "id": "0000000000000000000060c0acc30fce32fc417649e34647e7b267ea552b5e2e",
-      "timestamp": 1783995793,
-      "txCount": 6740
+      "height": 957971,
+      "id": "000000000000000000019f8e1ba0bea9a6846c68fc74f52123110ba3dd4cb626",
+      "timestamp": 1784015360,
+      "txCount": 4182
     },
     {
-      "height": 957944,
-      "id": "00000000000000000000e7d6620c88a891467341ffb010b8e82e549def4e413a",
-      "timestamp": 1783995638,
-      "txCount": 6904
+      "height": 957970,
+      "id": "00000000000000000000f82a847cea346a268ece8080e2564e7d6ea2e61dcbce",
+      "timestamp": 1784014655,
+      "txCount": 4170
     }
   ],
   "news": [
+    {
+      "title": "Live updates: Bitcoin holds $62,600 as the Iran conflict reignites and CPI looms",
+      "link": "https://www.coindesk.com/business/2026/07/14/live-updates-bitcoin-holds-usd62-600-as-the-iran-conflict-reignites-and-cpi-looms",
+      "pubDate": "Tue, 14 Jul 2026 06:55:24 +0000"
+    },
+    {
+      "title": "U.S. government moves $288 million in seized bitcoin, ether to Coinbase Prime",
+      "link": "https://www.coindesk.com/markets/2026/07/14/u-s-government-moves-usd288-million-in-seized-bitcoin-ether-to-coinbase-prime",
+      "pubDate": "Tue, 14 Jul 2026 06:28:43 +0000"
+    },
+    {
+      "title": "Solo bitcoin miner makes $200,000 using $150 equipment",
+      "link": "https://www.coindesk.com/markets/2026/07/14/solo-btc-miner-makes-usd200-000-using-usd150-equipment",
+      "pubDate": "Tue, 14 Jul 2026 04:43:56 +0000"
+    },
     {
       "title": "Bitcoin slips as traders lift July Fed rate hike bets ahead of Inflation report",
       "link": "https://www.coindesk.com/markets/2026/07/14/bitcoin-slips-as-traders-lift-july-fed-rate-hike-bets-ahead-of-inflation-report",
@@ -470,21 +485,6 @@
       "title": "Robinhood built a blockchain for tokenized stocks. Memecoins took over",
       "link": "https://www.coindesk.com/tech/2026/07/13/robinhood-built-a-blockchain-for-tokenized-stocks-memecoins-took-over",
       "pubDate": "Mon, 13 Jul 2026 15:17:05 +0000"
-    },
-    {
-      "title": "Bolivia weighs adding Tether's USDT to its national payments system",
-      "link": "https://www.coindesk.com/business/2026/07/13/bolivia-weighs-adding-tether-s-usdt-to-its-national-payments-system",
-      "pubDate": "Mon, 13 Jul 2026 14:47:52 +0000"
-    },
-    {
-      "title": "UK Treasury report on tokenization cites Ripple as convergence model",
-      "link": "https://www.coindesk.com/policy/2026/07/13/ripple-lands-inside-uk-plan-for-tokenized-repo-bonds-and-funds",
-      "pubDate": "Mon, 13 Jul 2026 14:06:53 +0000"
-    },
-    {
-      "title": "Tom Lee's BitMine ether holdings rise to 5.77 million tokens, or 4.8% of total supply",
-      "link": "https://www.coindesk.com/markets/2026/07/13/tom-lee-s-bitmine-raises-ether-holdings-to-usd5-77-million-or-4-8-of-supply",
-      "pubDate": "Mon, 13 Jul 2026 14:04:01 +0000"
     }
   ]
 }
