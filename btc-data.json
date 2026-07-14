@@ -1,13 +1,13 @@
 {
-  "fetchedAt": "2026-07-14T10:55:19.188Z",
+  "fetchedAt": "2026-07-14T14:09:42.691Z",
   "price": {
-    "usd": 62799,
-    "time": 1784026208
+    "usd": 63555,
+    "time": 1784037910
   },
   "moves": {
-    "d1": 0.8944843290214166,
-    "d7": -0.8719112668907791,
-    "d30": -4.435341413991479
+    "d1": 2.1090933220426544,
+    "d7": 0.32143313480719193,
+    "d30": -3.2848950391921594
   },
   "history90d": [
     {
@@ -372,60 +372,100 @@
     },
     {
       "date": "2026-07-14",
-      "close": 62739.20288816155
+      "close": 63651.55375791356
     }
   ],
   "blocks": [
     {
-      "height": 957991,
-      "id": "00000000000000000000e6fb03fc75117f9fcd21690e51acc0e01b22330f404a",
-      "timestamp": 1784025759,
-      "txCount": 3742
+      "height": 958016,
+      "id": "00000000000000000001d0f198da4adf33b597782a36c766685b2f217110cfc8",
+      "timestamp": 1784038172,
+      "txCount": 4391
     },
     {
-      "height": 957990,
-      "id": "0000000000000000000144a343499b054289b3f59f207dc8b53d7373dd6cf384",
-      "timestamp": 1784024899,
-      "txCount": 7008
+      "height": 958015,
+      "id": "000000000000000000004d01e7b31e16da631e0b35e6f786a3efe8ae7d970a31",
+      "timestamp": 1784037384,
+      "txCount": 622
     },
     {
-      "height": 957989,
-      "id": "000000000000000000011f900bfd7afa5a138f09957d21871258485070880617",
-      "timestamp": 1784024878,
-      "txCount": 6635
+      "height": 958014,
+      "id": "0000000000000000000202a90638cc123abad4259b5566d71cc9fd0623a45283",
+      "timestamp": 1784037238,
+      "txCount": 5056
     },
     {
-      "height": 957988,
-      "id": "00000000000000000001564de531c5f063874e0ccdedb20500a464f1cb68146a",
-      "timestamp": 1784025060,
-      "txCount": 4909
+      "height": 958013,
+      "id": "00000000000000000001b164cb9dc3500336ee56edbdf54e8bee86e7c2815299",
+      "timestamp": 1784037024,
+      "txCount": 3728
     },
     {
-      "height": 957987,
-      "id": "000000000000000000004a60872a95cbc833beaef377c04f42313a640b23c4ed",
-      "timestamp": 1784024779,
-      "txCount": 4447
+      "height": 958012,
+      "id": "00000000000000000001710e94741a7deeb2fd37a1004351c1ecf67a978921df",
+      "timestamp": 1784036442,
+      "txCount": 3835
     },
     {
-      "height": 957986,
-      "id": "000000000000000000003ab1adb812bb93bd1a81987640022a8bb786533946a3",
-      "timestamp": 1784023827,
-      "txCount": 4625
+      "height": 958011,
+      "id": "00000000000000000001956c76e58e5a15f6c5b56b1322fc612f7d234b74184a",
+      "timestamp": 1784036107,
+      "txCount": 4415
     },
     {
-      "height": 957985,
-      "id": "00000000000000000000786f9fbcdfe92e62997289e4222d6836486ebe6b7b6f",
-      "timestamp": 1784022092,
-      "txCount": 6087
+      "height": 958010,
+      "id": "00000000000000000001d2cfe3ce2d378fd2843e682491730dde32c0c0e46d29",
+      "timestamp": 1784035068,
+      "txCount": 6017
     },
     {
-      "height": 957984,
-      "id": "00000000000000000001821a1f462475e93d8ce5b56bc9a47c7c1f55be92f1e9",
-      "timestamp": 1784021902,
-      "txCount": 4573
+      "height": 958009,
+      "id": "0000000000000000000071ab154b1dc36848d262c9f3ca536da0f046d02c3860",
+      "timestamp": 1784035017,
+      "txCount": 6509
     }
   ],
   "news": [
+    {
+      "title": "For pension funds, tokenization’s real play is balance-sheet management, Fidelity’s Lai says",
+      "link": "https://www.coindesk.com/markets/2026/07/14/for-pension-funds-tokenization-s-real-play-is-balance-sheet-management-fidelity-s-lai-says",
+      "pubDate": "Tue, 14 Jul 2026 14:05:18 +0000"
+    },
+    {
+      "title": "Hut 8 price target hiked to $165 at Benchmark as AI pivot reshapes valuation",
+      "link": "https://www.coindesk.com/business/2026/07/14/hut-8-price-target-hiked-to-usd165-at-benchmark-as-ai-pivot-reshapes-valuation",
+      "pubDate": "Tue, 14 Jul 2026 12:53:05 +0000"
+    },
+    {
+      "title": "U.S. June CPI fell 0.4%, likely cooling move toward Fed rate hikes",
+      "link": "https://www.coindesk.com/markets/2026/07/14/u-s-june-cpi-fell-0-4-likely-cooling-move-toward-fed-rate-hikes",
+      "pubDate": "Tue, 14 Jul 2026 12:33:24 +0000"
+    },
+    {
+      "title": "ECB picks firms including Deutsche Bank, Revolut for digital euro pilot",
+      "link": "https://www.coindesk.com/business/2026/07/14/ecb-picks-firms-including-deutsche-bank-revolut-for-digital-euro-pilot",
+      "pubDate": "Tue, 14 Jul 2026 12:10:03 +0000"
+    },
+    {
+      "title": "Japan’s biggest card network taps Circle to bring stablecoins to 40 million merchants",
+      "link": "https://www.coindesk.com/business/2026/07/14/circle-signs-mou-with-japan-s-largest-card-network-to-explore-stablecoin-payments",
+      "pubDate": "Tue, 14 Jul 2026 12:01:50 +0000"
+    },
+    {
+      "title": "U.S.-Iran escalation weighs on bitcoin, stocks as oil climbs",
+      "link": "https://www.coindesk.com/daybook-us/2026/07/14/u-s-iran-escalation-weighs-on-bitcoin-stocks-as-oil-climbs",
+      "pubDate": "Tue, 14 Jul 2026 11:15:06 +0000"
+    },
+    {
+      "title": "Bitcoin's BIP-110 sparked a fight over who gets to decide the future of Bitcoin",
+      "link": "https://www.coindesk.com/tech/2026/07/14/bitcoin-s-bip-110-sparked-a-fight-over-who-gets-to-decide-the-future-of-bitcoin",
+      "pubDate": "Tue, 14 Jul 2026 11:01:16 +0000"
+    },
+    {
+      "title": "Prediction markets just crushed traditional sportsbooks in a massive $50 billion World Cup breakout",
+      "link": "https://www.coindesk.com/business/2026/07/14/prediction-markets-just-crushed-traditional-sportsbooks-in-a-massive-usd50-billion-world-cup-breakout",
+      "pubDate": "Tue, 14 Jul 2026 11:00:00 +0000"
+    },
     {
       "title": "Bitcoin’s great rotation: Long-term holders pass supply to a new generation of buyers",
       "link": "https://www.coindesk.com/markets/2026/07/14/bitcoin-s-great-rotation-long-term-holders-pass-supply-to-a-new-generation-of-buyers",
@@ -442,49 +482,9 @@
       "pubDate": "Tue, 14 Jul 2026 10:27:21 +0000"
     },
     {
-      "title": "Live updates: Bitcoin holds $62,600 as the Iran conflict reignites and CPI looms",
+      "title": "Live updates: Bitcoin rises past $63,000 after inflation softened in June",
       "link": "https://www.coindesk.com/business/2026/07/14/live-updates-bitcoin-holds-usd62-600-as-the-iran-conflict-reignites-and-cpi-looms",
       "pubDate": "Tue, 14 Jul 2026 06:55:24 +0000"
-    },
-    {
-      "title": "U.S. government moves $288 million in seized bitcoin, ether to Coinbase Prime",
-      "link": "https://www.coindesk.com/markets/2026/07/14/u-s-government-moves-usd288-million-in-seized-bitcoin-ether-to-coinbase-prime",
-      "pubDate": "Tue, 14 Jul 2026 06:28:43 +0000"
-    },
-    {
-      "title": "Solo bitcoin miner makes $200,000 using $150 equipment",
-      "link": "https://www.coindesk.com/markets/2026/07/14/solo-btc-miner-makes-usd200-000-using-usd150-equipment",
-      "pubDate": "Tue, 14 Jul 2026 04:43:56 +0000"
-    },
-    {
-      "title": "Bitcoin slips as traders lift July Fed rate hike bets ahead of Inflation report",
-      "link": "https://www.coindesk.com/markets/2026/07/14/bitcoin-slips-as-traders-lift-july-fed-rate-hike-bets-ahead-of-inflation-report",
-      "pubDate": "Tue, 14 Jul 2026 02:58:36 +0000"
-    },
-    {
-      "title": "Binance.US CEO says exchange is rebuilding, eyes return to 20% U.S. market share",
-      "link": "https://www.coindesk.com/coindesk-news/2026/07/13/binance-us-ceo-says-exchange-is-rebuilding-eyes-return-to-20-u-s-market-share",
-      "pubDate": "Mon, 13 Jul 2026 20:27:47 +0000"
-    },
-    {
-      "title": "Franklin Crypto CIO says crypto prices are disconnected from fundamentals",
-      "link": "https://www.coindesk.com/markets/2026/07/13/franklin-crypto-cio-says-crypto-prices-are-disconnected-from-fundamentals",
-      "pubDate": "Mon, 13 Jul 2026 20:15:29 +0000"
-    },
-    {
-      "title": "TeraWulf CEO: 'Not All Megawatts Are Created Equally' in AI Race",
-      "link": "https://www.coindesk.com/coindesk-news/2026/07/13/terawulf-ceo-not-all-megawatts-are-created-equally-in-ai-race",
-      "pubDate": "Mon, 13 Jul 2026 19:43:03 +0000"
-    },
-    {
-      "title": "Trump's crypto riches loom over Clarity Act talks to ban conflicts for U.S. officials",
-      "link": "https://www.coindesk.com/policy/2026/07/13/trump-s-crypto-riches-loom-over-clarity-act-talks-to-ban-conflicts-for-u-s-officials",
-      "pubDate": "Mon, 13 Jul 2026 17:49:10 +0000"
-    },
-    {
-      "title": "Mizuho says Circle bank approval doesn't solve USDC growth, stablecoin competition risks",
-      "link": "https://www.coindesk.com/business/2026/07/13/mizuho-says-circle-bank-approval-doesn-t-solve-usdc-growth-stablecoin-competition-risks",
-      "pubDate": "Mon, 13 Jul 2026 16:34:48 +0000"
     }
   ]
 }
