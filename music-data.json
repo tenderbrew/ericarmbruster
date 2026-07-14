@@ -1,7 +1,25 @@
 {
-  "fetchedAt": "2026-07-13T18:10:01.832Z",
-  "windowPlays": 291,
+  "fetchedAt": "2026-07-14T00:10:01.723Z",
+  "windowPlays": 294,
   "recentTracks": [
+    {
+      "artist": "Taking Back Sunday",
+      "album": "Louder Now",
+      "track": "Liar (It Takes One to Know One)",
+      "played": 1783966667
+    },
+    {
+      "artist": "Lana Del Rey",
+      "album": "Born to Die",
+      "track": "Summertime Sadness",
+      "played": 1783966596
+    },
+    {
+      "artist": "Thursday",
+      "album": "War All the Time",
+      "track": "For the Workforce, Drowning",
+      "played": 1783966499
+    },
     {
       "artist": "The Good Life",
       "album": "Black Out",
@@ -133,24 +151,6 @@
       "album": "Pinkerton",
       "track": "Pink Triangle",
       "played": 1783603885
-    },
-    {
-      "artist": "No Doubt",
-      "album": "Tragic Kingdom",
-      "track": "Spiderwebs",
-      "played": 1783601453
-    },
-    {
-      "artist": "Nirvana",
-      "album": "Bleach",
-      "track": "About a Girl",
-      "played": 1783601290
-    },
-    {
-      "artist": "The All‐American Rejects",
-      "album": "Move Along",
-      "track": "Move Along",
-      "played": 1783601061
     }
   ],
   "topArtists": [
@@ -161,6 +161,14 @@
     {
       "artist": "Elliott Smith",
       "plays": 11
+    },
+    {
+      "artist": "Thursday",
+      "plays": 9
+    },
+    {
+      "artist": "Taking Back Sunday",
+      "plays": 8
     },
     {
       "artist": "Rilo Kiley",
@@ -175,19 +183,11 @@
       "plays": 8
     },
     {
-      "artist": "Thursday",
-      "plays": 8
-    },
-    {
       "artist": "The Good Life",
       "plays": 7
     },
     {
       "artist": "The Ataris",
-      "plays": 7
-    },
-    {
-      "artist": "Taking Back Sunday",
       "plays": 7
     },
     {
@@ -202,13 +202,13 @@
       "plays": 16
     },
     {
-      "artist": "Taking Back Sunday",
-      "album": "Tell All Your Friends",
-      "plays": 5
-    },
-    {
       "artist": "Thursday",
       "album": "War All the Time",
+      "plays": 6
+    },
+    {
+      "artist": "Taking Back Sunday",
+      "album": "Tell All Your Friends",
       "plays": 5
     },
     {
@@ -232,6 +232,11 @@
       "plays": 4
     },
     {
+      "artist": "Taking Back Sunday",
+      "album": "Louder Now",
+      "plays": 3
+    },
+    {
       "artist": "Alanis Morissette",
       "album": "Jagged Little Pill",
       "plays": 3
@@ -239,11 +244,6 @@
     {
       "artist": "Okkervil River",
       "album": "Black Sheep Boy",
-      "plays": 3
-    },
-    {
-      "artist": "Jason Isbell and the 400 Unit",
-      "album": "The Nashville Sound",
       "plays": 3
     }
   ]
