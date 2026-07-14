@@ -1,13 +1,13 @@
 {
-  "fetchedAt": "2026-07-14T14:09:42.691Z",
+  "fetchedAt": "2026-07-14T16:35:51.284Z",
   "price": {
-    "usd": 63555,
-    "time": 1784037910
+    "usd": 64786,
+    "time": 1784046613
   },
   "moves": {
-    "d1": 2.1090933220426544,
-    "d7": 0.32143313480719193,
-    "d30": -3.2848950391921594
+    "d1": 4.086849499832512,
+    "d7": 2.2645640322809912,
+    "d30": -1.411615293983215
   },
   "history90d": [
     {
@@ -372,60 +372,75 @@
     },
     {
       "date": "2026-07-14",
-      "close": 63651.55375791356
+      "close": 64803.617765817755
     }
   ],
   "blocks": [
     {
-      "height": 958016,
-      "id": "00000000000000000001d0f198da4adf33b597782a36c766685b2f217110cfc8",
-      "timestamp": 1784038172,
-      "txCount": 4391
+      "height": 958033,
+      "id": "000000000000000000018a9938e661233492d4cf4ff8245729c012fa2538de76",
+      "timestamp": 1784045218,
+      "txCount": 4383
     },
     {
-      "height": 958015,
-      "id": "000000000000000000004d01e7b31e16da631e0b35e6f786a3efe8ae7d970a31",
-      "timestamp": 1784037384,
-      "txCount": 622
+      "height": 958032,
+      "id": "00000000000000000000452fbaf49af973336935af95bcfe68445b763386659a",
+      "timestamp": 1784044526,
+      "txCount": 4187
     },
     {
-      "height": 958014,
-      "id": "0000000000000000000202a90638cc123abad4259b5566d71cc9fd0623a45283",
-      "timestamp": 1784037238,
-      "txCount": 5056
+      "height": 958031,
+      "id": "000000000000000000003a72f8e2d70546b8c34ad8d5fc867bbd129962d79f17",
+      "timestamp": 1784042934,
+      "txCount": 6942
     },
     {
-      "height": 958013,
-      "id": "00000000000000000001b164cb9dc3500336ee56edbdf54e8bee86e7c2815299",
-      "timestamp": 1784037024,
-      "txCount": 3728
+      "height": 958030,
+      "id": "000000000000000000001bd64a31832350cf46039b7858e8d1a525143477a355",
+      "timestamp": 1784042784,
+      "txCount": 4150
     },
     {
-      "height": 958012,
-      "id": "00000000000000000001710e94741a7deeb2fd37a1004351c1ecf67a978921df",
-      "timestamp": 1784036442,
-      "txCount": 3835
+      "height": 958029,
+      "id": "000000000000000000022c9ecbf4bac03c8c8a289af2851b7902a449349ba64e",
+      "timestamp": 1784042765,
+      "txCount": 3751
     },
     {
-      "height": 958011,
-      "id": "00000000000000000001956c76e58e5a15f6c5b56b1322fc612f7d234b74184a",
-      "timestamp": 1784036107,
-      "txCount": 4415
+      "height": 958028,
+      "id": "000000000000000000016cb6378e059810f9e10c73c80598b40ec527ddc75aa7",
+      "timestamp": 1784042231,
+      "txCount": 1098
     },
     {
-      "height": 958010,
-      "id": "00000000000000000001d2cfe3ce2d378fd2843e682491730dde32c0c0e46d29",
-      "timestamp": 1784035068,
-      "txCount": 6017
+      "height": 958027,
+      "id": "0000000000000000000203db4faddbccc50e32d060cb07e537044f4cfa65772c",
+      "timestamp": 1784042075,
+      "txCount": 3418
     },
     {
-      "height": 958009,
-      "id": "0000000000000000000071ab154b1dc36848d262c9f3ca536da0f046d02c3860",
-      "timestamp": 1784035017,
-      "txCount": 6509
+      "height": 958026,
+      "id": "00000000000000000000a9fe6d9322426b4e388a4a720c847d6a6440475ef45c",
+      "timestamp": 1784041498,
+      "txCount": 1864
     }
   ],
   "news": [
+    {
+      "title": "U.S., UK move to align rules for tokenized finance across world's largest financial markets",
+      "link": "https://www.coindesk.com/policy/2026/07/14/u-s-uk-move-to-align-rules-for-tokenized-finance-across-world-s-largest-financial-markets",
+      "pubDate": "Tue, 14 Jul 2026 16:29:48 +0000"
+    },
+    {
+      "title": "JPMorgan says Hyperliquid's rise threatens Circle's USDC economics",
+      "link": "https://www.coindesk.com/business/2026/07/14/jpmorgan-says-hyperliquid-s-rise-threatens-circle-s-usdc-economics",
+      "pubDate": "Tue, 14 Jul 2026 14:57:16 +0000"
+    },
+    {
+      "title": "Ethereum Foundation spinout EthSystems targets banks with blockchain privacy technology",
+      "link": "https://www.coindesk.com/tech/2026/07/14/ethereum-foundation-spinout-ethsystems-targets-banks-with-blockchain-privacy-technology",
+      "pubDate": "Tue, 14 Jul 2026 14:31:44 +0000"
+    },
     {
       "title": "For pension funds, tokenization’s real play is balance-sheet management, Fidelity’s Lai says",
       "link": "https://www.coindesk.com/markets/2026/07/14/for-pension-funds-tokenization-s-real-play-is-balance-sheet-management-fidelity-s-lai-says",
@@ -470,21 +485,6 @@
       "title": "Bitcoin’s great rotation: Long-term holders pass supply to a new generation of buyers",
       "link": "https://www.coindesk.com/markets/2026/07/14/bitcoin-s-great-rotation-long-term-holders-pass-supply-to-a-new-generation-of-buyers",
       "pubDate": "Tue, 14 Jul 2026 10:46:42 +0000"
-    },
-    {
-      "title": "Bitcoin steadies at $62,600 as South Koreans flee stocks rout for crypto",
-      "link": "https://www.coindesk.com/markets/2026/07/14/bitcoin-steadies-at-usd62-600-as-south-koreans-flee-stocks-rout-for-crypto",
-      "pubDate": "Tue, 14 Jul 2026 10:39:03 +0000"
-    },
-    {
-      "title": "XRP and ether bulls are getting louder as prices fall, signaling more trouble ahead",
-      "link": "https://www.coindesk.com/markets/2026/07/14/xrp-ether-bulls-get-loud-as-prices-fade-raising-downside-risk",
-      "pubDate": "Tue, 14 Jul 2026 10:27:21 +0000"
-    },
-    {
-      "title": "Live updates: Bitcoin rises past $63,000 after inflation softened in June",
-      "link": "https://www.coindesk.com/business/2026/07/14/live-updates-bitcoin-holds-usd62-600-as-the-iran-conflict-reignites-and-cpi-looms",
-      "pubDate": "Tue, 14 Jul 2026 06:55:24 +0000"
     }
   ]
 }
