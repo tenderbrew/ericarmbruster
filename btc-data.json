@@ -1,13 +1,13 @@
 {
-  "fetchedAt": "2026-07-14T16:35:51.284Z",
+  "fetchedAt": "2026-07-14T19:40:46.859Z",
   "price": {
-    "usd": 64786,
-    "time": 1784046613
+    "usd": 64469,
+    "time": 1784057710
   },
   "moves": {
-    "d1": 4.086849499832512,
-    "d7": 2.2645640322809912,
-    "d30": -1.411615293983215
+    "d1": 3.5775491681027116,
+    "d7": 1.7641802024684905,
+    "d30": -1.894011459077638
   },
   "history90d": [
     {
@@ -372,60 +372,85 @@
     },
     {
       "date": "2026-07-14",
-      "close": 64803.617765817755
+      "close": 64466.79584062857
     }
   ],
   "blocks": [
     {
-      "height": 958033,
-      "id": "000000000000000000018a9938e661233492d4cf4ff8245729c012fa2538de76",
-      "timestamp": 1784045218,
-      "txCount": 4383
+      "height": 958054,
+      "id": "000000000000000000015e1f112c868267db4b2270833f97b8476c32f7db8574",
+      "timestamp": 1784057604,
+      "txCount": 5404
     },
     {
-      "height": 958032,
-      "id": "00000000000000000000452fbaf49af973336935af95bcfe68445b763386659a",
-      "timestamp": 1784044526,
-      "txCount": 4187
+      "height": 958053,
+      "id": "000000000000000000005d7cbdae0f10a44d65333fa477af8460b2856190ab72",
+      "timestamp": 1784057113,
+      "txCount": 5285
     },
     {
-      "height": 958031,
-      "id": "000000000000000000003a72f8e2d70546b8c34ad8d5fc867bbd129962d79f17",
-      "timestamp": 1784042934,
-      "txCount": 6942
+      "height": 958052,
+      "id": "000000000000000000002ae40f0083485b29eae298b657590c7bd2593bb0a140",
+      "timestamp": 1784056822,
+      "txCount": 6989
     },
     {
-      "height": 958030,
-      "id": "000000000000000000001bd64a31832350cf46039b7858e8d1a525143477a355",
-      "timestamp": 1784042784,
-      "txCount": 4150
+      "height": 958051,
+      "id": "00000000000000000001b1a857aae4865fa789f84f6829cb08a6eb66bebc992e",
+      "timestamp": 1784056482,
+      "txCount": 5832
     },
     {
-      "height": 958029,
-      "id": "000000000000000000022c9ecbf4bac03c8c8a289af2851b7902a449349ba64e",
-      "timestamp": 1784042765,
-      "txCount": 3751
+      "height": 958050,
+      "id": "00000000000000000000727f670831efcfa0e64cdab0969739c516d38cc8e4ab",
+      "timestamp": 1784056318,
+      "txCount": 4424
     },
     {
-      "height": 958028,
-      "id": "000000000000000000016cb6378e059810f9e10c73c80598b40ec527ddc75aa7",
-      "timestamp": 1784042231,
-      "txCount": 1098
+      "height": 958049,
+      "id": "000000000000000000006a74441d12065d89a1eaa82ac466b08cc20f6b3a9294",
+      "timestamp": 1784055713,
+      "txCount": 4802
     },
     {
-      "height": 958027,
-      "id": "0000000000000000000203db4faddbccc50e32d060cb07e537044f4cfa65772c",
-      "timestamp": 1784042075,
-      "txCount": 3418
+      "height": 958048,
+      "id": "00000000000000000001053eaf0963654497f05f7b03a4230c84fc75b16e1e24",
+      "timestamp": 1784055689,
+      "txCount": 4626
     },
     {
-      "height": 958026,
-      "id": "00000000000000000000a9fe6d9322426b4e388a4a720c847d6a6440475ef45c",
-      "timestamp": 1784041498,
-      "txCount": 1864
+      "height": 958047,
+      "id": "000000000000000000005d5bd28b326251ba1d6782b3ed93bfcc8e699e4eda65",
+      "timestamp": 1784055468,
+      "txCount": 3589
     }
   ],
   "news": [
+    {
+      "title": "Some U.S. Senate Democrats come out against Clarity Act, calling it a 'corrupt' bill",
+      "link": "https://www.coindesk.com/policy/2026/07/14/some-u-s-senate-democrats-come-out-against-clarity-act-calling-it-a-corrupt-bill",
+      "pubDate": "Tue, 14 Jul 2026 18:57:15 +0000"
+    },
+    {
+      "title": "Binance bets on becoming a crypto 'super app' as stablecoins reshape growth",
+      "link": "https://www.coindesk.com/business/2026/07/14/binance-bets-on-becoming-a-crypto-super-app-as-stablecoins-reshape-growth",
+      "pubDate": "Tue, 14 Jul 2026 17:33:19 +0000"
+    },
+    {
+      "title": "The Clarity Act isn't a ticket to sanctions evasion, actually",
+      "link": "https://www.coindesk.com/opinion/2026/07/14/the-clarity-act-isn-t-a-ticket-to-sanctions-evasion-actually",
+      "pubDate": "Tue, 14 Jul 2026 17:27:48 +0000"
+    },
+    {
+      "title": "Mizuho downgrades Circle to underperform, cuts price target to $50 on Open USD threat",
+      "link": "https://www.coindesk.com/business/2026/07/14/mizuho-downgrades-circle-to-underperform-cuts-price-target-to-usd50-on-open-usd-threat",
+      "pubDate": "Tue, 14 Jul 2026 16:59:44 +0000"
+    },
+    {
+      "title": "Wikipedia blackout could hurt how AI engines like ChatGPT understand crypto",
+      "link": "https://www.coindesk.com/policy/2026/07/14/wikipedia-blackout-could-hurt-how-ai-engines-like-chatgpt-understand-crypto",
+      "pubDate": "Tue, 14 Jul 2026 16:39:26 +0000"
+    },
     {
       "title": "U.S., UK move to align rules for tokenized finance across world's largest financial markets",
       "link": "https://www.coindesk.com/policy/2026/07/14/u-s-uk-move-to-align-rules-for-tokenized-finance-across-world-s-largest-financial-markets",
@@ -460,31 +485,6 @@
       "title": "ECB picks firms including Deutsche Bank, Revolut for digital euro pilot",
       "link": "https://www.coindesk.com/business/2026/07/14/ecb-picks-firms-including-deutsche-bank-revolut-for-digital-euro-pilot",
       "pubDate": "Tue, 14 Jul 2026 12:10:03 +0000"
-    },
-    {
-      "title": "Japan’s biggest card network taps Circle to bring stablecoins to 40 million merchants",
-      "link": "https://www.coindesk.com/business/2026/07/14/circle-signs-mou-with-japan-s-largest-card-network-to-explore-stablecoin-payments",
-      "pubDate": "Tue, 14 Jul 2026 12:01:50 +0000"
-    },
-    {
-      "title": "U.S.-Iran escalation weighs on bitcoin, stocks as oil climbs",
-      "link": "https://www.coindesk.com/daybook-us/2026/07/14/u-s-iran-escalation-weighs-on-bitcoin-stocks-as-oil-climbs",
-      "pubDate": "Tue, 14 Jul 2026 11:15:06 +0000"
-    },
-    {
-      "title": "Bitcoin's BIP-110 sparked a fight over who gets to decide the future of Bitcoin",
-      "link": "https://www.coindesk.com/tech/2026/07/14/bitcoin-s-bip-110-sparked-a-fight-over-who-gets-to-decide-the-future-of-bitcoin",
-      "pubDate": "Tue, 14 Jul 2026 11:01:16 +0000"
-    },
-    {
-      "title": "Prediction markets just crushed traditional sportsbooks in a massive $50 billion World Cup breakout",
-      "link": "https://www.coindesk.com/business/2026/07/14/prediction-markets-just-crushed-traditional-sportsbooks-in-a-massive-usd50-billion-world-cup-breakout",
-      "pubDate": "Tue, 14 Jul 2026 11:00:00 +0000"
-    },
-    {
-      "title": "Bitcoin’s great rotation: Long-term holders pass supply to a new generation of buyers",
-      "link": "https://www.coindesk.com/markets/2026/07/14/bitcoin-s-great-rotation-long-term-holders-pass-supply-to-a-new-generation-of-buyers",
-      "pubDate": "Tue, 14 Jul 2026 10:46:42 +0000"
     }
   ]
 }
