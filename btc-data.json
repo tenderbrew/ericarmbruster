@@ -1,13 +1,13 @@
 {
-  "fetchedAt": "2026-07-14T08:26:13.377Z",
+  "fetchedAt": "2026-07-14T10:55:19.188Z",
   "price": {
-    "usd": 62521,
-    "time": 1784017211
+    "usd": 62799,
+    "time": 1784026208
   },
   "moves": {
-    "d1": 0.44784239772526213,
-    "d7": -1.3107336791553736,
-    "d30": -4.858389154989107
+    "d1": 0.8944843290214166,
+    "d7": -0.8719112668907791,
+    "d30": -4.435341413991479
   },
   "history90d": [
     {
@@ -372,60 +372,75 @@
     },
     {
       "date": "2026-07-14",
-      "close": 62493.85618242018
+      "close": 62739.20288816155
     }
   ],
   "blocks": [
     {
-      "height": 957977,
-      "id": "00000000000000000000459cbc95b6a313e244fe3b500e3e3b70a3b18a6459ee",
-      "timestamp": 1784017065,
-      "txCount": 6742
+      "height": 957991,
+      "id": "00000000000000000000e6fb03fc75117f9fcd21690e51acc0e01b22330f404a",
+      "timestamp": 1784025759,
+      "txCount": 3742
     },
     {
-      "height": 957976,
-      "id": "00000000000000000001cd861c5c3d3d7d474fc9f3662ecfec744fb2822d79fe",
-      "timestamp": 1784016923,
-      "txCount": 5925
+      "height": 957990,
+      "id": "0000000000000000000144a343499b054289b3f59f207dc8b53d7373dd6cf384",
+      "timestamp": 1784024899,
+      "txCount": 7008
     },
     {
-      "height": 957975,
-      "id": "0000000000000000000202c3b1b107ff7741e4588d02fd47e06f9255767dc352",
-      "timestamp": 1784016596,
-      "txCount": 3824
+      "height": 957989,
+      "id": "000000000000000000011f900bfd7afa5a138f09957d21871258485070880617",
+      "timestamp": 1784024878,
+      "txCount": 6635
     },
     {
-      "height": 957974,
-      "id": "000000000000000000016161337d2e9888ad9e71987194f4600f127188d21ae0",
-      "timestamp": 1784015862,
-      "txCount": 6586
+      "height": 957988,
+      "id": "00000000000000000001564de531c5f063874e0ccdedb20500a464f1cb68146a",
+      "timestamp": 1784025060,
+      "txCount": 4909
     },
     {
-      "height": 957973,
-      "id": "00000000000000000000113a69f0340d2cf12c34345d2d76f3d83ca100e1e1d1",
-      "timestamp": 1784015663,
-      "txCount": 6547
+      "height": 957987,
+      "id": "000000000000000000004a60872a95cbc833beaef377c04f42313a640b23c4ed",
+      "timestamp": 1784024779,
+      "txCount": 4447
     },
     {
-      "height": 957972,
-      "id": "000000000000000000018976aa4e41ddedc7f6092435bfc19cf5294e281ac2d8",
-      "timestamp": 1784015681,
-      "txCount": 5648
+      "height": 957986,
+      "id": "000000000000000000003ab1adb812bb93bd1a81987640022a8bb786533946a3",
+      "timestamp": 1784023827,
+      "txCount": 4625
     },
     {
-      "height": 957971,
-      "id": "000000000000000000019f8e1ba0bea9a6846c68fc74f52123110ba3dd4cb626",
-      "timestamp": 1784015360,
-      "txCount": 4182
+      "height": 957985,
+      "id": "00000000000000000000786f9fbcdfe92e62997289e4222d6836486ebe6b7b6f",
+      "timestamp": 1784022092,
+      "txCount": 6087
     },
     {
-      "height": 957970,
-      "id": "00000000000000000000f82a847cea346a268ece8080e2564e7d6ea2e61dcbce",
-      "timestamp": 1784014655,
-      "txCount": 4170
+      "height": 957984,
+      "id": "00000000000000000001821a1f462475e93d8ce5b56bc9a47c7c1f55be92f1e9",
+      "timestamp": 1784021902,
+      "txCount": 4573
     }
   ],
   "news": [
+    {
+      "title": "Bitcoin’s great rotation: Long-term holders pass supply to a new generation of buyers",
+      "link": "https://www.coindesk.com/markets/2026/07/14/bitcoin-s-great-rotation-long-term-holders-pass-supply-to-a-new-generation-of-buyers",
+      "pubDate": "Tue, 14 Jul 2026 10:46:42 +0000"
+    },
+    {
+      "title": "Bitcoin steadies at $62,600 as South Koreans flee stocks rout for crypto",
+      "link": "https://www.coindesk.com/markets/2026/07/14/bitcoin-steadies-at-usd62-600-as-south-koreans-flee-stocks-rout-for-crypto",
+      "pubDate": "Tue, 14 Jul 2026 10:39:03 +0000"
+    },
+    {
+      "title": "XRP and ether bulls are getting louder as prices fall, signaling more trouble ahead",
+      "link": "https://www.coindesk.com/markets/2026/07/14/xrp-ether-bulls-get-loud-as-prices-fade-raising-downside-risk",
+      "pubDate": "Tue, 14 Jul 2026 10:27:21 +0000"
+    },
     {
       "title": "Live updates: Bitcoin holds $62,600 as the Iran conflict reignites and CPI looms",
       "link": "https://www.coindesk.com/business/2026/07/14/live-updates-bitcoin-holds-usd62-600-as-the-iran-conflict-reignites-and-cpi-looms",
@@ -470,21 +485,6 @@
       "title": "Mizuho says Circle bank approval doesn't solve USDC growth, stablecoin competition risks",
       "link": "https://www.coindesk.com/business/2026/07/13/mizuho-says-circle-bank-approval-doesn-t-solve-usdc-growth-stablecoin-competition-risks",
       "pubDate": "Mon, 13 Jul 2026 16:34:48 +0000"
-    },
-    {
-      "title": "Bitcoin panic-selling may be ending as sellers' profit margins disappear",
-      "link": "https://www.coindesk.com/markets/2026/07/13/bitcoin-panic-selling-may-be-ending-as-sellers-profit-margins-disappear",
-      "pubDate": "Mon, 13 Jul 2026 15:49:41 +0000"
-    },
-    {
-      "title": "Strategy pauses its Bitcoin buying spree to hoard a massive $3 billion cash cushion",
-      "link": "https://www.coindesk.com/markets/2026/07/13/strategy-pauses-its-bitcoin-buying-spree-to-hoard-a-massive-usd3-billion-cash-cushion",
-      "pubDate": "Mon, 13 Jul 2026 15:27:36 +0000"
-    },
-    {
-      "title": "Robinhood built a blockchain for tokenized stocks. Memecoins took over",
-      "link": "https://www.coindesk.com/tech/2026/07/13/robinhood-built-a-blockchain-for-tokenized-stocks-memecoins-took-over",
-      "pubDate": "Mon, 13 Jul 2026 15:17:05 +0000"
     }
   ]
 }
