@@ -1,13 +1,13 @@
 {
-  "fetchedAt": "2026-07-15T16:42:49.552Z",
+  "fetchedAt": "2026-07-15T19:34:20.964Z",
   "price": {
-    "usd": 64811,
-    "time": 1784133610
+    "usd": 64776,
+    "time": 1784143508
   },
   "moves": {
-    "d1": -0.2560324414205617,
-    "d7": 4.115845315893818,
-    "d30": -2.247265453498559
+    "d1": -0.3098973542370653,
+    "d7": 4.059619450129426,
+    "d30": -2.3000550371977457
   },
   "history90d": [
     {
@@ -372,60 +372,70 @@
     },
     {
       "date": "2026-07-15",
-      "close": 65163.78091578957
+      "close": 64858.02530547495
     }
   ],
   "blocks": [
     {
-      "height": 958171,
-      "id": "0000000000000000000117eab1a5abc94bbf1d37dcf712fd0067cea441278599",
-      "timestamp": 1784132668,
-      "txCount": 2601
+      "height": 958189,
+      "id": "000000000000000000022e4a066b2f01a557e3802bb1c09e899742a1c82282eb",
+      "timestamp": 1784141661,
+      "txCount": 4576
     },
     {
-      "height": 958170,
-      "id": "0000000000000000000014aab40ad7a82f686f4812d547f5a89beb43eaf47c49",
-      "timestamp": 1784132510,
-      "txCount": 2395
+      "height": 958188,
+      "id": "0000000000000000000008b6308e8a419fec58dfd886f7614ae1ced850e5fc1f",
+      "timestamp": 1784140310,
+      "txCount": 3095
     },
     {
-      "height": 958169,
-      "id": "00000000000000000001d9452e9f7e2219eec5065b187ffadc5667607524d1bd",
-      "timestamp": 1784132178,
-      "txCount": 4041
+      "height": 958187,
+      "id": "00000000000000000001528549b7cf83fe24b0e26d96964184a223b4fd08074b",
+      "timestamp": 1784139606,
+      "txCount": 1
     },
     {
-      "height": 958168,
-      "id": "00000000000000000000c3df6264207762c166a12de5ff05255be6dfb905c974",
-      "timestamp": 1784131435,
-      "txCount": 3989
+      "height": 958186,
+      "id": "00000000000000000001e2e515801772af6c66e04e6962840a6c4e55a14e7f87",
+      "timestamp": 1784139573,
+      "txCount": 3593
     },
     {
-      "height": 958167,
-      "id": "00000000000000000001721238f2e07306ad38cbfe032e72c32480fc886b212c",
-      "timestamp": 1784131280,
-      "txCount": 3602
+      "height": 958185,
+      "id": "00000000000000000001d6ff996aeb651ca62f13e47b1de815f152c18febf2a1",
+      "timestamp": 1784139544,
+      "txCount": 4544
     },
     {
-      "height": 958166,
-      "id": "000000000000000000014d8cf84070c9e60f59cc32911d1a0d9eac2b97e0aac9",
-      "timestamp": 1784130919,
-      "txCount": 4444
+      "height": 958184,
+      "id": "000000000000000000008f66788f667a2bbe0fff4f7d078dbf12982161f73441",
+      "timestamp": 1784139149,
+      "txCount": 3899
     },
     {
-      "height": 958165,
-      "id": "000000000000000000010adc460c06c38a5d3852c464554ce343222c68b2f65e",
-      "timestamp": 1784130170,
-      "txCount": 4254
+      "height": 958183,
+      "id": "0000000000000000000168620e6c990086891c38d9e570d1ecfa3c0133355a06",
+      "timestamp": 1784138672,
+      "txCount": 2899
     },
     {
-      "height": 958164,
-      "id": "00000000000000000000ca71f2ceef4f41c36055bdb80d71347de2d4fec1409e",
-      "timestamp": 1784129906,
-      "txCount": 4190
+      "height": 958182,
+      "id": "00000000000000000000392802408e87b37fa729257c9d012ee085fc1438e4ec",
+      "timestamp": 1784138428,
+      "txCount": 4199
     }
   ],
   "news": [
+    {
+      "title": "DTCC moves tokenized securities into live trading, marking a milestone for Wall Street's blockchain push",
+      "link": "https://www.coindesk.com/business/2026/07/15/dtcc-moves-tokenized-securities-into-live-trading-marking-a-milestone-for-wall-street-s-blockchain-push",
+      "pubDate": "Wed, 15 Jul 2026 17:02:22 +0000"
+    },
+    {
+      "title": "Cantor and Securitize collaborate on blockchain-based IPOs",
+      "link": "https://www.coindesk.com/business/2026/07/15/cantor-and-securitize-collaborate-on-blockchain-based-ipos",
+      "pubDate": "Wed, 15 Jul 2026 16:52:28 +0000"
+    },
     {
       "title": "Ostium suffers $18 million exploit as oracle attack wave continues to hit DeFi",
       "link": "https://www.coindesk.com/business/2026/07/15/ostium-suffers-usd18-million-exploit-as-oracle-attack-wave-continues-to-hit-defi",
@@ -475,16 +485,6 @@
       "title": "Japan reclassifies crypto as a financial asset, paves way for tax cuts",
       "link": "https://www.coindesk.com/policy/2026/07/15/japan-reclassifies-crypto-as-a-financial-asset-paves-way-for-tax-cuts",
       "pubDate": "Wed, 15 Jul 2026 12:05:33 +0000"
-    },
-    {
-      "title": "Strategy feels 'very secure' until bitcoin reaches $8,000-$10,000, says CEO",
-      "link": "https://www.coindesk.com/markets/2026/07/15/strategy-feels-very-secure-until-bitcoin-reaches-usd8-000-usd10-000-says-ceo",
-      "pubDate": "Wed, 15 Jul 2026 12:00:33 +0000"
-    },
-    {
-      "title": "Bitcoin rally cools as investors digest inflation data, oil clouds outlook",
-      "link": "https://www.coindesk.com/daybook-us/2026/07/15/bitcoin-rally-cools-as-investors-digest-inflation-data-oil-clouds-outlook",
-      "pubDate": "Wed, 15 Jul 2026 11:46:06 +0000"
     }
   ]
 }
