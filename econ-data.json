@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-07-15T03:23:18.081Z",
+  "fetchedAt": "2026-07-15T14:03:39.708Z",
   "indicators": {
     "UNRATE": {
       "latest": {
@@ -163,11 +163,11 @@
     },
     "BAMLH0A0HYM2": {
       "latest": {
-        "date": "2026-07-13",
-        "value": 2.69
+        "date": "2026-07-14",
+        "value": 2.72
       },
       "previous": {
-        "date": "2026-07-10",
+        "date": "2026-07-13",
         "value": 2.69
       }
     },
@@ -263,12 +263,12 @@
     },
     "VIXCLS": {
       "latest": {
-        "date": "2026-07-13",
-        "value": 17.16
+        "date": "2026-07-14",
+        "value": 16.5
       },
       "previous": {
-        "date": "2026-07-10",
-        "value": 15.03
+        "date": "2026-07-13",
+        "value": 17.16
       }
     },
     "BOPGSTB": {
@@ -300,6 +300,24 @@
     }
   },
   "news": [
+    {
+      "title": "What the Conservatives Get Wrong about the French Revolution",
+      "link": "https://mises.org/podcasts/audio-mises-wire/what-conservatives-get-wrong-about-french-revolution",
+      "pubDate": "Wed, 15 Jul 2026 08:02:02 CDT",
+      "kind": "Podcast"
+    },
+    {
+      "title": "Friedrich Hayek, the Knowledge Problem, and the Case of Iran",
+      "link": "https://mises.org/power-market/friedrich-hayek-knowledge-problem-and-case-iran",
+      "pubDate": "Wed, 15 Jul 2026 07:00:00 CDT",
+      "kind": "Article"
+    },
+    {
+      "title": "America’s Gerontocracy Goes Deeper than Aging Politicians",
+      "link": "https://mises.org/mises-wire/americas-gerontocracy-goes-deeper-aging-politicians",
+      "pubDate": "Wed, 15 Jul 2026 05:00:00 CDT",
+      "kind": "Mises Wire"
+    },
     {
       "title": "What the Conservatives Get Wrong about the French Revolution",
       "link": "https://mises.org/mises-wire/what-conservatives-get-wrong-about-french-revolution",
@@ -341,24 +359,6 @@
       "link": "https://mises.org/podcasts/why-healthcare-system-broken-mises-circle-new-hampshire/why-healthcare-system-broken",
       "pubDate": "Tue, 14 Jul 2026 09:15:26 CDT",
       "kind": "Podcast"
-    },
-    {
-      "title": "Poland: For Now It’s Still a Paper Tiger",
-      "link": "https://mises.org/podcasts/audio-mises-wire/poland-now-its-still-paper-tiger",
-      "pubDate": "Tue, 14 Jul 2026 08:12:12 CDT",
-      "kind": "Podcast"
-    },
-    {
-      "title": "Pikachu’s Pokémon Price Information",
-      "link": "https://mises.org/power-market/pikachus-pokemon-price-information",
-      "pubDate": "Tue, 14 Jul 2026 07:00:00 CDT",
-      "kind": "Article"
-    },
-    {
-      "title": "The UK’s Monstrous Equality Act",
-      "link": "https://mises.org/mises-wire/uks-monstrous-equality-act",
-      "pubDate": "Tue, 14 Jul 2026 05:00:00 CDT",
-      "kind": "Mises Wire"
     }
   ]
 }
