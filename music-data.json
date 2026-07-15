@@ -1,7 +1,19 @@
 {
-  "fetchedAt": "2026-07-14T12:10:01.827Z",
-  "windowPlays": 294,
+  "fetchedAt": "2026-07-15T00:10:01.874Z",
+  "windowPlays": 296,
   "recentTracks": [
+    {
+      "artist": "Purple Mountains",
+      "album": "Purple Mountains",
+      "track": "Nights That Won’t Happen",
+      "played": 1784068394
+    },
+    {
+      "artist": "Purple Mountains",
+      "album": "Purple Mountains",
+      "track": "I Loved Being My Mother’s Son",
+      "played": 1784068133
+    },
     {
       "artist": "Taking Back Sunday",
       "album": "Louder Now",
@@ -139,18 +151,6 @@
       "album": "American Football",
       "track": "Never Meant",
       "played": 1783778854
-    },
-    {
-      "artist": "Jason Isbell",
-      "album": "Southeastern",
-      "track": "Stockholm",
-      "played": 1783616419
-    },
-    {
-      "artist": "Weezer",
-      "album": "Pinkerton",
-      "track": "Pink Triangle",
-      "played": 1783603885
     }
   ],
   "topArtists": [
@@ -232,6 +232,11 @@
       "plays": 4
     },
     {
+      "artist": "Purple Mountains",
+      "album": "Purple Mountains",
+      "plays": 3
+    },
+    {
       "artist": "Taking Back Sunday",
       "album": "Louder Now",
       "plays": 3
@@ -239,11 +244,6 @@
     {
       "artist": "Alanis Morissette",
       "album": "Jagged Little Pill",
-      "plays": 3
-    },
-    {
-      "artist": "Okkervil River",
-      "album": "Black Sheep Boy",
       "plays": 3
     }
   ]
