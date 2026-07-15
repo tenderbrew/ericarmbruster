@@ -1,13 +1,13 @@
 {
-  "fetchedAt": "2026-07-15T08:33:18.576Z",
+  "fetchedAt": "2026-07-15T11:01:07.275Z",
   "price": {
-    "usd": 64605,
-    "time": 1784104207
+    "usd": 64616,
+    "time": 1784113206
   },
   "moves": {
-    "d1": -0.5730659282834005,
-    "d7": 3.7849159345376693,
-    "d30": -2.5579698604137335
+    "d1": -0.556136955683928,
+    "d7": 3.8025869209207475,
+    "d30": -2.5413788483939936
   },
   "history90d": [
     {
@@ -372,60 +372,65 @@
     },
     {
       "date": "2026-07-15",
-      "close": 64581.1724717768
+      "close": 64603.35357668082
     }
   ],
   "blocks": [
     {
-      "height": 958129,
-      "id": "0000000000000000000116c51c1f152a6e627009fc29f9f147659eb7bf6bfe86",
-      "timestamp": 1784104051,
-      "txCount": 3163
+      "height": 958147,
+      "id": "000000000000000000000115b4920fb4691b5ce4e781005078ec9950900183e4",
+      "timestamp": 1784113382,
+      "txCount": 3410
     },
     {
-      "height": 958128,
-      "id": "000000000000000000001ad44a57da0d6f50a2e7f7da9f18118d9f94a5101dfa",
-      "timestamp": 1784103558,
-      "txCount": 5851
+      "height": 958146,
+      "id": "00000000000000000000e61ba88e32b4a1135e21606cf767815114ca33b3bc9c",
+      "timestamp": 1784111602,
+      "txCount": 5073
     },
     {
-      "height": 958127,
-      "id": "00000000000000000000dd01ff8362a8cc16dc369e88930ea0003b1f6ab2b980",
-      "timestamp": 1784103512,
-      "txCount": 5633
+      "height": 958145,
+      "id": "000000000000000000004ee3dfb4db742ede2621ebf9ac6876675c8bb643b51f",
+      "timestamp": 1784111326,
+      "txCount": 4877
     },
     {
-      "height": 958126,
-      "id": "0000000000000000000152e5a03b9d1e43785c634df3d3b61990f54f05fcba56",
-      "timestamp": 1784103434,
-      "txCount": 5219
+      "height": 958144,
+      "id": "000000000000000000005c23f5e45615dbadfe562e2a51f62125c4fa8f495fa2",
+      "timestamp": 1784111061,
+      "txCount": 4351
     },
     {
-      "height": 958125,
-      "id": "00000000000000000000157c126e799ad42ccc70c9eabbf573abf2ac102eb408",
-      "timestamp": 1784103349,
-      "txCount": 6997
+      "height": 958143,
+      "id": "00000000000000000002284d8e98b368f3cff76cf36901450fea052ac9a85f9b",
+      "timestamp": 1784110504,
+      "txCount": 4836
     },
     {
-      "height": 958124,
-      "id": "000000000000000000022fb3c6df46800a2307d0ac6d65c774151e8a8a78d849",
-      "timestamp": 1784103226,
-      "txCount": 3544
+      "height": 958142,
+      "id": "00000000000000000000f5a40c0a26c7a2ab870d6f24f7ae8b8760c9001d03d2",
+      "timestamp": 1784110170,
+      "txCount": 4286
     },
     {
-      "height": 958123,
-      "id": "000000000000000000003640b6bef115d81efa23dd739d3a9dd9f6241be37691",
-      "timestamp": 1784102886,
-      "txCount": 5553
+      "height": 958141,
+      "id": "000000000000000000000b630809ea5b70f36f98821ab3cc9aff853cd047fe4e",
+      "timestamp": 1784109969,
+      "txCount": 6523
     },
     {
-      "height": 958122,
-      "id": "00000000000000000001fe2f3b1308f21f9255d1d03909d06b1ce29531a7d8c0",
-      "timestamp": 1784102549,
-      "txCount": 5840
+      "height": 958140,
+      "id": "0000000000000000000162b7b58fb4d0029a16d91f1ce94f73b95bc55120db61",
+      "timestamp": 1784109923,
+      "txCount": 5809
     }
   ],
   "news": [
+    {
+      "title": "Stripe mounts blockbuster $53 billion bid to buy PayPal",
+      "link": "https://www.coindesk.com/business/2026/07/15/stripe-mounts-blockbuster-usd53-billion-bid-to-buy-paypal",
+      "pubDate": "Wed, 15 Jul 2026 10:41:39 +0000"
+    },
     {
       "title": "Live markets: Bitcoin, ether ETFs draw inflows as majors rise as much as 5%",
       "link": "https://www.coindesk.com/tech/2026/07/15/live-markets-bitcoin-ether-etfs-draw-inflows-as-majors-rise-as-much-as-5",
@@ -437,7 +442,7 @@
       "pubDate": "Wed, 15 Jul 2026 08:16:34 +0000"
     },
     {
-      "title": "Visa, Mastercard and Ripple back x402 as agent payments average 32 cents",
+      "title": "AI agentic payments enter mainstream as Visa, Mastercard, Ripple back x402 standard",
       "link": "https://www.coindesk.com/tech/2026/07/15/visa-mastercard-and-ripple-join-the-standard-letting-ai-agents-pay-in-stablecoins",
       "pubDate": "Wed, 15 Jul 2026 06:05:24 +0000"
     },
@@ -480,11 +485,6 @@
       "title": "U.S., UK move to align rules for tokenized finance across world's largest financial markets",
       "link": "https://www.coindesk.com/policy/2026/07/14/u-s-uk-move-to-align-rules-for-tokenized-finance-across-world-s-largest-financial-markets",
       "pubDate": "Tue, 14 Jul 2026 16:29:48 +0000"
-    },
-    {
-      "title": "JPMorgan says Hyperliquid's rise threatens Circle's USDC economics",
-      "link": "https://www.coindesk.com/business/2026/07/14/jpmorgan-says-hyperliquid-s-rise-threatens-circle-s-usdc-economics",
-      "pubDate": "Tue, 14 Jul 2026 14:57:16 +0000"
     }
   ]
 }
