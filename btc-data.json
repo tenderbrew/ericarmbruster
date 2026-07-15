@@ -1,13 +1,13 @@
 {
-  "fetchedAt": "2026-07-15T03:28:41.809Z",
+  "fetchedAt": "2026-07-15T08:33:18.576Z",
   "price": {
-    "usd": 64579,
-    "time": 1784085608
+    "usd": 64605,
+    "time": 1784104207
   },
   "moves": {
-    "d1": -0.6130798635185175,
-    "d7": 3.743148148541242,
-    "d30": -2.597184979733125
+    "d1": -0.5730659282834005,
+    "d7": 3.7849159345376693,
+    "d30": -2.5579698604137335
   },
   "history90d": [
     {
@@ -372,60 +372,80 @@
     },
     {
       "date": "2026-07-15",
-      "close": 64536.410529765504
+      "close": 64581.1724717768
     }
   ],
   "blocks": [
     {
-      "height": 958091,
-      "id": "000000000000000000011668dbaf9752f63e07bafbd9b0f4fdf0f0f9f9a0496b",
-      "timestamp": 1784085423,
-      "txCount": 3339
+      "height": 958129,
+      "id": "0000000000000000000116c51c1f152a6e627009fc29f9f147659eb7bf6bfe86",
+      "timestamp": 1784104051,
+      "txCount": 3163
     },
     {
-      "height": 958090,
-      "id": "000000000000000000003fe070a3a390fefebb8afbc95f0e5f0cdae5ffa8e4f6",
-      "timestamp": 1784085202,
-      "txCount": 2155
+      "height": 958128,
+      "id": "000000000000000000001ad44a57da0d6f50a2e7f7da9f18118d9f94a5101dfa",
+      "timestamp": 1784103558,
+      "txCount": 5851
     },
     {
-      "height": 958089,
-      "id": "00000000000000000000b603560e6921c9bf0ca3aba786a3765bed5f8cfde976",
-      "timestamp": 1784084338,
-      "txCount": 6891
+      "height": 958127,
+      "id": "00000000000000000000dd01ff8362a8cc16dc369e88930ea0003b1f6ab2b980",
+      "timestamp": 1784103512,
+      "txCount": 5633
     },
     {
-      "height": 958088,
-      "id": "000000000000000000004ba4b061ab32d58470fad13e496432f3e6fd5785d306",
-      "timestamp": 1784084273,
-      "txCount": 3205
+      "height": 958126,
+      "id": "0000000000000000000152e5a03b9d1e43785c634df3d3b61990f54f05fcba56",
+      "timestamp": 1784103434,
+      "txCount": 5219
     },
     {
-      "height": 958087,
-      "id": "00000000000000000000fe7971f856932968b49eefb7fc9768e125775e56fb22",
-      "timestamp": 1784084209,
-      "txCount": 3273
+      "height": 958125,
+      "id": "00000000000000000000157c126e799ad42ccc70c9eabbf573abf2ac102eb408",
+      "timestamp": 1784103349,
+      "txCount": 6997
     },
     {
-      "height": 958086,
-      "id": "00000000000000000000e199249fccdbfe4e89d53275322a1d38feee24fd83da",
-      "timestamp": 1784084147,
-      "txCount": 3261
+      "height": 958124,
+      "id": "000000000000000000022fb3c6df46800a2307d0ac6d65c774151e8a8a78d849",
+      "timestamp": 1784103226,
+      "txCount": 3544
     },
     {
-      "height": 958085,
-      "id": "000000000000000000014c4b3ce2bd5dc81f64ddcd62a6bbbe7f6566f25221eb",
-      "timestamp": 1784083983,
-      "txCount": 3210
+      "height": 958123,
+      "id": "000000000000000000003640b6bef115d81efa23dd739d3a9dd9f6241be37691",
+      "timestamp": 1784102886,
+      "txCount": 5553
     },
     {
-      "height": 958084,
-      "id": "00000000000000000001cf8b3caa2049cb9fdae0d1e37bee01c73941f95e9532",
-      "timestamp": 1784081603,
-      "txCount": 3174
+      "height": 958122,
+      "id": "00000000000000000001fe2f3b1308f21f9255d1d03909d06b1ce29531a7d8c0",
+      "timestamp": 1784102549,
+      "txCount": 5840
     }
   ],
   "news": [
+    {
+      "title": "Live markets: Bitcoin, ether ETFs draw inflows as majors rise as much as 5%",
+      "link": "https://www.coindesk.com/tech/2026/07/15/live-markets-bitcoin-ether-etfs-draw-inflows-as-majors-rise-as-much-as-5",
+      "pubDate": "Wed, 15 Jul 2026 08:29:18 +0000"
+    },
+    {
+      "title": "UK plans first G7 digital sovereign bond by early 2027",
+      "link": "https://www.coindesk.com/business/2026/07/15/uk-plans-first-g7-digital-sovereign-bond-by-early-2027",
+      "pubDate": "Wed, 15 Jul 2026 08:16:34 +0000"
+    },
+    {
+      "title": "Visa, Mastercard and Ripple back x402 as agent payments average 32 cents",
+      "link": "https://www.coindesk.com/tech/2026/07/15/visa-mastercard-and-ripple-join-the-standard-letting-ai-agents-pay-in-stablecoins",
+      "pubDate": "Wed, 15 Jul 2026 06:05:24 +0000"
+    },
+    {
+      "title": "Bitcoin nears $65,000 as cooling U.S. inflation guts the Fed rate-hike trade",
+      "link": "https://www.coindesk.com/markets/2026/07/15/bitcoin-tops-usd64-000-as-cooling-u-s-inflation-guts-the-fed-rate-hike-trade",
+      "pubDate": "Wed, 15 Jul 2026 05:19:14 +0000"
+    },
     {
       "title": "U.S. CFTC moves to stop Kalshi from canceling trades as ordered by Michigan court",
       "link": "https://www.coindesk.com/policy/2026/07/14/u-s-cftc-moves-to-stop-kalshi-from-canceling-trades-as-ordered-by-michigan-court",
@@ -465,26 +485,6 @@
       "title": "JPMorgan says Hyperliquid's rise threatens Circle's USDC economics",
       "link": "https://www.coindesk.com/business/2026/07/14/jpmorgan-says-hyperliquid-s-rise-threatens-circle-s-usdc-economics",
       "pubDate": "Tue, 14 Jul 2026 14:57:16 +0000"
-    },
-    {
-      "title": "Ethereum Foundation spinout EthSystems targets banks with blockchain privacy technology",
-      "link": "https://www.coindesk.com/tech/2026/07/14/ethereum-foundation-spinout-ethsystems-targets-banks-with-blockchain-privacy-technology",
-      "pubDate": "Tue, 14 Jul 2026 14:31:44 +0000"
-    },
-    {
-      "title": "For pension funds, tokenization’s real play is balance-sheet management, Fidelity’s Lai says",
-      "link": "https://www.coindesk.com/markets/2026/07/14/for-pension-funds-tokenization-s-real-play-is-balance-sheet-management-fidelity-s-lai-says",
-      "pubDate": "Tue, 14 Jul 2026 14:05:18 +0000"
-    },
-    {
-      "title": "Hut 8 price target hiked to $165 at Benchmark as AI pivot reshapes valuation",
-      "link": "https://www.coindesk.com/business/2026/07/14/hut-8-price-target-hiked-to-usd165-at-benchmark-as-ai-pivot-reshapes-valuation",
-      "pubDate": "Tue, 14 Jul 2026 12:53:05 +0000"
-    },
-    {
-      "title": "U.S. June CPI fell 0.4%, likely cooling move toward Fed rate hikes",
-      "link": "https://www.coindesk.com/markets/2026/07/14/u-s-june-cpi-fell-0-4-likely-cooling-move-toward-fed-rate-hikes",
-      "pubDate": "Tue, 14 Jul 2026 12:33:24 +0000"
     }
   ]
 }
