@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-07-14T19:39:41.420Z",
+  "fetchedAt": "2026-07-15T03:23:18.081Z",
   "indicators": {
     "UNRATE": {
       "latest": {
@@ -63,12 +63,12 @@
     },
     "T10YIE": {
       "latest": {
-        "date": "2026-07-13",
-        "value": 2.26
+        "date": "2026-07-14",
+        "value": 2.25
       },
       "previous": {
-        "date": "2026-07-10",
-        "value": 2.24
+        "date": "2026-07-13",
+        "value": 2.26
       }
     },
     "PCE": {
@@ -123,42 +123,42 @@
     },
     "DGS2": {
       "latest": {
-        "date": "2026-07-10",
-        "value": 4.21
+        "date": "2026-07-13",
+        "value": 4.26
       },
       "previous": {
-        "date": "2026-07-09",
-        "value": 4.16
+        "date": "2026-07-10",
+        "value": 4.21
       }
     },
     "DGS10": {
       "latest": {
-        "date": "2026-07-10",
-        "value": 4.56
+        "date": "2026-07-13",
+        "value": 4.62
       },
       "previous": {
-        "date": "2026-07-09",
-        "value": 4.54
+        "date": "2026-07-10",
+        "value": 4.56
       }
     },
     "T10Y2Y": {
       "latest": {
-        "date": "2026-07-13",
-        "value": 0.36
+        "date": "2026-07-14",
+        "value": 0.4
       },
       "previous": {
-        "date": "2026-07-10",
-        "value": 0.35
+        "date": "2026-07-13",
+        "value": 0.36
       }
     },
     "DFII10": {
       "latest": {
-        "date": "2026-07-10",
-        "value": 2.32
+        "date": "2026-07-13",
+        "value": 2.36
       },
       "previous": {
-        "date": "2026-07-09",
-        "value": 2.31
+        "date": "2026-07-10",
+        "value": 2.32
       }
     },
     "BAMLH0A0HYM2": {
@@ -301,6 +301,18 @@
   },
   "news": [
     {
+      "title": "What the Conservatives Get Wrong about the French Revolution",
+      "link": "https://mises.org/mises-wire/what-conservatives-get-wrong-about-french-revolution",
+      "pubDate": "Tue, 14 Jul 2026 04:00:00 CDT",
+      "kind": "Mises Wire"
+    },
+    {
+      "title": "How to Fix the Economics of Healthcare",
+      "link": "https://mises.org/podcasts/why-healthcare-system-broken-mises-circle-new-hampshire/how-fix-economics-healthcare",
+      "pubDate": "Tue, 14 Jul 2026 03:00:26 CDT",
+      "kind": "Podcast"
+    },
+    {
       "title": "The FIFA World Cup: Price Controls on Ticket Prices?",
       "link": "https://mises.org/mises-wire/fifa-world-cup-price-controls-ticket-prices",
       "pubDate": "Tue, 14 Jul 2026 02:00:00 CDT",
@@ -347,18 +359,6 @@
       "link": "https://mises.org/mises-wire/uks-monstrous-equality-act",
       "pubDate": "Tue, 14 Jul 2026 05:00:00 CDT",
       "kind": "Mises Wire"
-    },
-    {
-      "title": "The Rise of State-Controlled Medical Care",
-      "link": "https://mises.org/podcasts/why-healthcare-system-broken-mises-circle-new-hampshire/rise-state-controlled-medical-care",
-      "pubDate": "Mon, 13 Jul 2026 06:02:26 CDT",
-      "kind": "Podcast"
-    },
-    {
-      "title": "Private Property, Public Purpose",
-      "link": "https://mises.org/podcasts/audio-essays/private-property-public-purpose",
-      "pubDate": "Mon, 13 Jul 2026 05:07:03 CDT",
-      "kind": "Podcast"
     }
   ]
 }
