@@ -1,13 +1,13 @@
 {
-  "fetchedAt": "2026-07-15T19:34:20.964Z",
+  "fetchedAt": "2026-07-15T22:10:53.385Z",
   "price": {
-    "usd": 64776,
-    "time": 1784143508
+    "usd": 64796,
+    "time": 1784153411
   },
   "moves": {
-    "d1": -0.3098973542370653,
-    "d7": 4.059619450129426,
-    "d30": -2.3000550371977457
+    "d1": -0.2791174040562061,
+    "d7": 4.091748516280513,
+    "d30": -2.2698895607982106
   },
   "history90d": [
     {
@@ -372,60 +372,65 @@
     },
     {
       "date": "2026-07-15",
-      "close": 64858.02530547495
+      "close": 64782.44770072466
     }
   ],
   "blocks": [
     {
-      "height": 958189,
-      "id": "000000000000000000022e4a066b2f01a557e3802bb1c09e899742a1c82282eb",
-      "timestamp": 1784141661,
-      "txCount": 4576
+      "height": 958205,
+      "id": "000000000000000000007d5e252cbac8b2430029eba59b20245155fcc4beb36a",
+      "timestamp": 1784152903,
+      "txCount": 4418
     },
     {
-      "height": 958188,
-      "id": "0000000000000000000008b6308e8a419fec58dfd886f7614ae1ced850e5fc1f",
-      "timestamp": 1784140310,
-      "txCount": 3095
+      "height": 958204,
+      "id": "00000000000000000001c872815b61c6ad07848a3c87e973cf2091c33501bb81",
+      "timestamp": 1784151208,
+      "txCount": 3828
     },
     {
-      "height": 958187,
-      "id": "00000000000000000001528549b7cf83fe24b0e26d96964184a223b4fd08074b",
-      "timestamp": 1784139606,
-      "txCount": 1
+      "height": 958203,
+      "id": "000000000000000000011996c40b81035ae6b3643a45a2309dee0e7ece3e47d8",
+      "timestamp": 1784150686,
+      "txCount": 5368
     },
     {
-      "height": 958186,
-      "id": "00000000000000000001e2e515801772af6c66e04e6962840a6c4e55a14e7f87",
-      "timestamp": 1784139573,
-      "txCount": 3593
+      "height": 958202,
+      "id": "000000000000000000003b77fadee199a5bcc3d2a09a65d3f63276fa5cca40cd",
+      "timestamp": 1784150601,
+      "txCount": 3651
     },
     {
-      "height": 958185,
-      "id": "00000000000000000001d6ff996aeb651ca62f13e47b1de815f152c18febf2a1",
-      "timestamp": 1784139544,
-      "txCount": 4544
+      "height": 958201,
+      "id": "00000000000000000000e78e6b4fbbbc43c0c95d799036af192287d485957a97",
+      "timestamp": 1784150140,
+      "txCount": 3803
     },
     {
-      "height": 958184,
-      "id": "000000000000000000008f66788f667a2bbe0fff4f7d078dbf12982161f73441",
-      "timestamp": 1784139149,
-      "txCount": 3899
+      "height": 958200,
+      "id": "000000000000000000016a599e8ee43f393249d902dbab39a4f2b03969352844",
+      "timestamp": 1784149000,
+      "txCount": 3256
     },
     {
-      "height": 958183,
-      "id": "0000000000000000000168620e6c990086891c38d9e570d1ecfa3c0133355a06",
-      "timestamp": 1784138672,
-      "txCount": 2899
+      "height": 958199,
+      "id": "0000000000000000000072574c34b92f500276bb4d8837a3dbe04f65cec7f413",
+      "timestamp": 1784148265,
+      "txCount": 5112
     },
     {
-      "height": 958182,
-      "id": "00000000000000000000392802408e87b37fa729257c9d012ee085fc1438e4ec",
-      "timestamp": 1784138428,
-      "txCount": 4199
+      "height": 958198,
+      "id": "0000000000000000000132c8ec2870c99b471362e64fd836b3d8d3a1a3781dd9",
+      "timestamp": 1784148138,
+      "txCount": 3978
     }
   ],
   "news": [
+    {
+      "title": "Coinbase's Jesse Pollak steps back from Base app leadership after admitting his crypto social strategy failed",
+      "link": "https://www.coindesk.com/business/2026/07/15/coinbase-s-jesse-pollak-steps-back-from-base-app-leadership-after-admitting-his-crypto-social-strategy-failed",
+      "pubDate": "Wed, 15 Jul 2026 20:18:02 +0000"
+    },
     {
       "title": "DTCC moves tokenized securities into live trading, marking a milestone for Wall Street's blockchain push",
       "link": "https://www.coindesk.com/business/2026/07/15/dtcc-moves-tokenized-securities-into-live-trading-marking-a-milestone-for-wall-street-s-blockchain-push",
@@ -480,11 +485,6 @@
       "title": "The launchpad that fueled Robinhood Chain's memecoin boom just gave away all its revenue",
       "link": "https://www.coindesk.com/business/2026/07/15/the-launchpad-that-fueled-robinhood-chain-s-memecoin-boom-just-gave-away-all-its-revenue",
       "pubDate": "Wed, 15 Jul 2026 12:11:58 +0000"
-    },
-    {
-      "title": "Japan reclassifies crypto as a financial asset, paves way for tax cuts",
-      "link": "https://www.coindesk.com/policy/2026/07/15/japan-reclassifies-crypto-as-a-financial-asset-paves-way-for-tax-cuts",
-      "pubDate": "Wed, 15 Jul 2026 12:05:33 +0000"
     }
   ]
 }
