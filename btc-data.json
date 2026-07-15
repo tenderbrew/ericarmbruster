@@ -1,13 +1,13 @@
 {
-  "fetchedAt": "2026-07-15T11:01:07.275Z",
+  "fetchedAt": "2026-07-15T14:06:27.173Z",
   "price": {
-    "usd": 64616,
-    "time": 1784113206
+    "usd": 65150,
+    "time": 1784124309
   },
   "moves": {
-    "d1": -0.556136955683928,
-    "d7": 3.8025869209207475,
-    "d30": -2.5413788483939936
+    "d1": 0.2656877141449687,
+    "d7": 4.6604329871546835,
+    "d30": -1.7359606285265006
   },
   "history90d": [
     {
@@ -372,67 +372,107 @@
     },
     {
       "date": "2026-07-15",
-      "close": 64603.35357668082
+      "close": 65163.78091578957
     }
   ],
   "blocks": [
     {
-      "height": 958147,
-      "id": "000000000000000000000115b4920fb4691b5ce4e781005078ec9950900183e4",
-      "timestamp": 1784113382,
-      "txCount": 3410
+      "height": 958160,
+      "id": "000000000000000000012c0a94a13290bbc37a732e81b4a154b87c87df232cd5",
+      "timestamp": 1784123730,
+      "txCount": 2312
     },
     {
-      "height": 958146,
-      "id": "00000000000000000000e61ba88e32b4a1135e21606cf767815114ca33b3bc9c",
-      "timestamp": 1784111602,
-      "txCount": 5073
+      "height": 958159,
+      "id": "000000000000000000017d2f3060dfc30315e1d592aa664728d31491275a9570",
+      "timestamp": 1784123719,
+      "txCount": 4553
     },
     {
-      "height": 958145,
-      "id": "000000000000000000004ee3dfb4db742ede2621ebf9ac6876675c8bb643b51f",
-      "timestamp": 1784111326,
-      "txCount": 4877
+      "height": 958158,
+      "id": "000000000000000000000ccfffbb7fd04d25424fd0e438a90aae9346cebb8d1d",
+      "timestamp": 1784122498,
+      "txCount": 4461
     },
     {
-      "height": 958144,
-      "id": "000000000000000000005c23f5e45615dbadfe562e2a51f62125c4fa8f495fa2",
-      "timestamp": 1784111061,
-      "txCount": 4351
+      "height": 958157,
+      "id": "000000000000000000008800519bce1714180dc6142dcf68b88dbfa0c3abaf85",
+      "timestamp": 1784121272,
+      "txCount": 2877
     },
     {
-      "height": 958143,
-      "id": "00000000000000000002284d8e98b368f3cff76cf36901450fea052ac9a85f9b",
-      "timestamp": 1784110504,
-      "txCount": 4836
+      "height": 958156,
+      "id": "000000000000000000016d7cb043451a0d21e2325d4ae2dd4984556d873fcbb7",
+      "timestamp": 1784121146,
+      "txCount": 3387
     },
     {
-      "height": 958142,
-      "id": "00000000000000000000f5a40c0a26c7a2ab870d6f24f7ae8b8760c9001d03d2",
-      "timestamp": 1784110170,
-      "txCount": 4286
+      "height": 958155,
+      "id": "000000000000000000014c9cd7b71c170cc5b57cf94e343ff4de68c8fe40151c",
+      "timestamp": 1784120723,
+      "txCount": 4147
     },
     {
-      "height": 958141,
-      "id": "000000000000000000000b630809ea5b70f36f98821ab3cc9aff853cd047fe4e",
-      "timestamp": 1784109969,
-      "txCount": 6523
+      "height": 958154,
+      "id": "0000000000000000000012f5becee66931736406faa370f2db9ad232d4b3d436",
+      "timestamp": 1784120484,
+      "txCount": 4302
     },
     {
-      "height": 958140,
-      "id": "0000000000000000000162b7b58fb4d0029a16d91f1ce94f73b95bc55120db61",
-      "timestamp": 1784109923,
-      "txCount": 5809
+      "height": 958153,
+      "id": "00000000000000000001e7304691121f23079e8f820a7964fa253bb38f273062",
+      "timestamp": 1784116984,
+      "txCount": 3885
     }
   ],
   "news": [
+    {
+      "title": "Open USD poses biggest threat yet to Circle's USDC, CoinShares says",
+      "link": "https://www.coindesk.com/business/2026/07/15/open-usd-poses-biggest-threat-yet-to-circle-s-usdc-coinshares-says",
+      "pubDate": "Wed, 15 Jul 2026 14:03:54 +0000"
+    },
+    {
+      "title": "A timeline of the Ethereum Foundation's ongoing shakeup",
+      "link": "https://www.coindesk.com/tech/2026/07/15/a-timeline-of-the-ethereum-foundation-s-ongoing-shakeup",
+      "pubDate": "Wed, 15 Jul 2026 13:19:48 +0000"
+    },
+    {
+      "title": "BlackRock's crypto assets fall 39% despite $15 billion of net inflows",
+      "link": "https://www.coindesk.com/markets/2026/07/15/blackrock-s-crypto-assets-fall-39-despite-usd15-billion-of-net-inflows",
+      "pubDate": "Wed, 15 Jul 2026 12:12:01 +0000"
+    },
+    {
+      "title": "The launchpad that fueled Robinhood Chain's memecoin boom just gave away all its revenue",
+      "link": "https://www.coindesk.com/business/2026/07/15/the-launchpad-that-fueled-robinhood-chain-s-memecoin-boom-just-gave-away-all-its-revenue",
+      "pubDate": "Wed, 15 Jul 2026 12:11:58 +0000"
+    },
+    {
+      "title": "Japan reclassifies crypto as a financial asset, paves way for tax cuts",
+      "link": "https://www.coindesk.com/policy/2026/07/15/japan-reclassifies-crypto-as-a-financial-asset-paves-way-for-tax-cuts",
+      "pubDate": "Wed, 15 Jul 2026 12:05:33 +0000"
+    },
+    {
+      "title": "Strategy feels 'very secure' until bitcoin reaches $8,000-$10,000, says CEO",
+      "link": "https://www.coindesk.com/markets/2026/07/15/strategy-feels-very-secure-until-bitcoin-reaches-usd8-000-usd10-000-says-ceo",
+      "pubDate": "Wed, 15 Jul 2026 12:00:33 +0000"
+    },
+    {
+      "title": "Bitcoin rally cools as investors digest inflation data, oil clouds outlook",
+      "link": "https://www.coindesk.com/daybook-us/2026/07/15/bitcoin-rally-cools-as-investors-digest-inflation-data-oil-clouds-outlook",
+      "pubDate": "Wed, 15 Jul 2026 11:46:06 +0000"
+    },
+    {
+      "title": "Crypto steadies as Middle East tensions counter U.S. inflation report boost",
+      "link": "https://www.coindesk.com/markets/2026/07/15/crypto-steadies-as-middle-east-tensions-counter-u-s-inflation-report-boost",
+      "pubDate": "Wed, 15 Jul 2026 11:05:49 +0000"
+    },
     {
       "title": "Stripe mounts blockbuster $53 billion bid to buy PayPal",
       "link": "https://www.coindesk.com/business/2026/07/15/stripe-mounts-blockbuster-usd53-billion-bid-to-buy-paypal",
       "pubDate": "Wed, 15 Jul 2026 10:41:39 +0000"
     },
     {
-      "title": "Live markets: Bitcoin, ether ETFs draw inflows as majors rise as much as 5%",
+      "title": "Live markets: Bitcoin tops $65,000 as markets get more good inflation news",
       "link": "https://www.coindesk.com/tech/2026/07/15/live-markets-bitcoin-ether-etfs-draw-inflows-as-majors-rise-as-much-as-5",
       "pubDate": "Wed, 15 Jul 2026 08:29:18 +0000"
     },
@@ -445,46 +485,6 @@
       "title": "AI agentic payments enter mainstream as Visa, Mastercard, Ripple back x402 standard",
       "link": "https://www.coindesk.com/tech/2026/07/15/visa-mastercard-and-ripple-join-the-standard-letting-ai-agents-pay-in-stablecoins",
       "pubDate": "Wed, 15 Jul 2026 06:05:24 +0000"
-    },
-    {
-      "title": "Bitcoin nears $65,000 as cooling U.S. inflation guts the Fed rate-hike trade",
-      "link": "https://www.coindesk.com/markets/2026/07/15/bitcoin-tops-usd64-000-as-cooling-u-s-inflation-guts-the-fed-rate-hike-trade",
-      "pubDate": "Wed, 15 Jul 2026 05:19:14 +0000"
-    },
-    {
-      "title": "U.S. CFTC moves to stop Kalshi from canceling trades as ordered by Michigan court",
-      "link": "https://www.coindesk.com/policy/2026/07/14/u-s-cftc-moves-to-stop-kalshi-from-canceling-trades-as-ordered-by-michigan-court",
-      "pubDate": "Tue, 14 Jul 2026 20:51:05 +0000"
-    },
-    {
-      "title": "Some U.S. Senate Democrats come out against Clarity Act, calling it a 'corrupt' bill",
-      "link": "https://www.coindesk.com/policy/2026/07/14/some-u-s-senate-democrats-come-out-against-clarity-act-calling-it-a-corrupt-bill",
-      "pubDate": "Tue, 14 Jul 2026 18:57:15 +0000"
-    },
-    {
-      "title": "Binance bets on becoming a crypto 'super app' as stablecoins reshape growth",
-      "link": "https://www.coindesk.com/business/2026/07/14/binance-bets-on-becoming-a-crypto-super-app-as-stablecoins-reshape-growth",
-      "pubDate": "Tue, 14 Jul 2026 17:33:19 +0000"
-    },
-    {
-      "title": "The Clarity Act isn't a ticket to sanctions evasion, actually",
-      "link": "https://www.coindesk.com/opinion/2026/07/14/the-clarity-act-isn-t-a-ticket-to-sanctions-evasion-actually",
-      "pubDate": "Tue, 14 Jul 2026 17:27:48 +0000"
-    },
-    {
-      "title": "Mizuho downgrades Circle to underperform, cuts price target to $50 on Open USD threat",
-      "link": "https://www.coindesk.com/business/2026/07/14/mizuho-downgrades-circle-to-underperform-cuts-price-target-to-usd50-on-open-usd-threat",
-      "pubDate": "Tue, 14 Jul 2026 16:59:44 +0000"
-    },
-    {
-      "title": "Wikipedia blackout could hurt how AI engines like ChatGPT understand crypto",
-      "link": "https://www.coindesk.com/policy/2026/07/14/wikipedia-blackout-could-hurt-how-ai-engines-like-chatgpt-understand-crypto",
-      "pubDate": "Tue, 14 Jul 2026 16:39:26 +0000"
-    },
-    {
-      "title": "U.S., UK move to align rules for tokenized finance across world's largest financial markets",
-      "link": "https://www.coindesk.com/policy/2026/07/14/u-s-uk-move-to-align-rules-for-tokenized-finance-across-world-s-largest-financial-markets",
-      "pubDate": "Tue, 14 Jul 2026 16:29:48 +0000"
     }
   ]
 }
