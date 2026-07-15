@@ -1,13 +1,13 @@
 {
-  "fetchedAt": "2026-07-15T14:06:27.173Z",
+  "fetchedAt": "2026-07-15T16:42:49.552Z",
   "price": {
-    "usd": 65150,
-    "time": 1784124309
+    "usd": 64811,
+    "time": 1784133610
   },
   "moves": {
-    "d1": 0.2656877141449687,
-    "d7": 4.6604329871546835,
-    "d30": -1.7359606285265006
+    "d1": -0.2560324414205617,
+    "d7": 4.115845315893818,
+    "d30": -2.247265453498559
   },
   "history90d": [
     {
@@ -377,55 +377,80 @@
   ],
   "blocks": [
     {
-      "height": 958160,
-      "id": "000000000000000000012c0a94a13290bbc37a732e81b4a154b87c87df232cd5",
-      "timestamp": 1784123730,
-      "txCount": 2312
+      "height": 958171,
+      "id": "0000000000000000000117eab1a5abc94bbf1d37dcf712fd0067cea441278599",
+      "timestamp": 1784132668,
+      "txCount": 2601
     },
     {
-      "height": 958159,
-      "id": "000000000000000000017d2f3060dfc30315e1d592aa664728d31491275a9570",
-      "timestamp": 1784123719,
-      "txCount": 4553
+      "height": 958170,
+      "id": "0000000000000000000014aab40ad7a82f686f4812d547f5a89beb43eaf47c49",
+      "timestamp": 1784132510,
+      "txCount": 2395
     },
     {
-      "height": 958158,
-      "id": "000000000000000000000ccfffbb7fd04d25424fd0e438a90aae9346cebb8d1d",
-      "timestamp": 1784122498,
-      "txCount": 4461
+      "height": 958169,
+      "id": "00000000000000000001d9452e9f7e2219eec5065b187ffadc5667607524d1bd",
+      "timestamp": 1784132178,
+      "txCount": 4041
     },
     {
-      "height": 958157,
-      "id": "000000000000000000008800519bce1714180dc6142dcf68b88dbfa0c3abaf85",
-      "timestamp": 1784121272,
-      "txCount": 2877
+      "height": 958168,
+      "id": "00000000000000000000c3df6264207762c166a12de5ff05255be6dfb905c974",
+      "timestamp": 1784131435,
+      "txCount": 3989
     },
     {
-      "height": 958156,
-      "id": "000000000000000000016d7cb043451a0d21e2325d4ae2dd4984556d873fcbb7",
-      "timestamp": 1784121146,
-      "txCount": 3387
+      "height": 958167,
+      "id": "00000000000000000001721238f2e07306ad38cbfe032e72c32480fc886b212c",
+      "timestamp": 1784131280,
+      "txCount": 3602
     },
     {
-      "height": 958155,
-      "id": "000000000000000000014c9cd7b71c170cc5b57cf94e343ff4de68c8fe40151c",
-      "timestamp": 1784120723,
-      "txCount": 4147
+      "height": 958166,
+      "id": "000000000000000000014d8cf84070c9e60f59cc32911d1a0d9eac2b97e0aac9",
+      "timestamp": 1784130919,
+      "txCount": 4444
     },
     {
-      "height": 958154,
-      "id": "0000000000000000000012f5becee66931736406faa370f2db9ad232d4b3d436",
-      "timestamp": 1784120484,
-      "txCount": 4302
+      "height": 958165,
+      "id": "000000000000000000010adc460c06c38a5d3852c464554ce343222c68b2f65e",
+      "timestamp": 1784130170,
+      "txCount": 4254
     },
     {
-      "height": 958153,
-      "id": "00000000000000000001e7304691121f23079e8f820a7964fa253bb38f273062",
-      "timestamp": 1784116984,
-      "txCount": 3885
+      "height": 958164,
+      "id": "00000000000000000000ca71f2ceef4f41c36055bdb80d71347de2d4fec1409e",
+      "timestamp": 1784129906,
+      "txCount": 4190
     }
   ],
   "news": [
+    {
+      "title": "Ostium suffers $18 million exploit as oracle attack wave continues to hit DeFi",
+      "link": "https://www.coindesk.com/business/2026/07/15/ostium-suffers-usd18-million-exploit-as-oracle-attack-wave-continues-to-hit-defi",
+      "pubDate": "Wed, 15 Jul 2026 15:27:43 +0000"
+    },
+    {
+      "title": "The privacy paradox of protecting kids online",
+      "link": "https://www.coindesk.com/opinion/2026/07/14/the-privacy-paradox-of-protecting-kids-online",
+      "pubDate": "Wed, 15 Jul 2026 14:58:50 +0000"
+    },
+    {
+      "title": "Crypto Long & Short: To ETH or not to ETH — is SOL the better diversifier?",
+      "link": "https://www.coindesk.com/coindesk-indices/2026/07/15/crypto-long-and-short-to-eth-or-not-to-eth-is-sol-the-better-diversifier",
+      "pubDate": "Wed, 15 Jul 2026 14:58:09 +0000"
+    },
+    {
+      "title": "President Trump expected to meet with senators to work on ethics concerns in crypto bill",
+      "link": "https://www.coindesk.com/policy/2026/07/15/high-level-white-house-meeting-said-to-be-planned-to-hash-out-clarity-act-ethics-section",
+      "pubDate": "Wed, 15 Jul 2026 14:37:36 +0000"
+    },
+    {
+      "title": "South Korea to modify 76-year-old law to classify cryptocurrencies as national assets",
+      "link": "https://www.coindesk.com/policy/2026/07/15/south-korea-to-modify-76-year-old-law-to-classify-cryptocurrencies-as-national-assets",
+      "pubDate": "Wed, 15 Jul 2026 14:35:26 +0000"
+    },
     {
       "title": "Open USD poses biggest threat yet to Circle's USDC, CoinShares says",
       "link": "https://www.coindesk.com/business/2026/07/15/open-usd-poses-biggest-threat-yet-to-circle-s-usdc-coinshares-says",
@@ -460,31 +485,6 @@
       "title": "Bitcoin rally cools as investors digest inflation data, oil clouds outlook",
       "link": "https://www.coindesk.com/daybook-us/2026/07/15/bitcoin-rally-cools-as-investors-digest-inflation-data-oil-clouds-outlook",
       "pubDate": "Wed, 15 Jul 2026 11:46:06 +0000"
-    },
-    {
-      "title": "Crypto steadies as Middle East tensions counter U.S. inflation report boost",
-      "link": "https://www.coindesk.com/markets/2026/07/15/crypto-steadies-as-middle-east-tensions-counter-u-s-inflation-report-boost",
-      "pubDate": "Wed, 15 Jul 2026 11:05:49 +0000"
-    },
-    {
-      "title": "Stripe mounts blockbuster $53 billion bid to buy PayPal",
-      "link": "https://www.coindesk.com/business/2026/07/15/stripe-mounts-blockbuster-usd53-billion-bid-to-buy-paypal",
-      "pubDate": "Wed, 15 Jul 2026 10:41:39 +0000"
-    },
-    {
-      "title": "Live markets: Bitcoin tops $65,000 as markets get more good inflation news",
-      "link": "https://www.coindesk.com/tech/2026/07/15/live-markets-bitcoin-ether-etfs-draw-inflows-as-majors-rise-as-much-as-5",
-      "pubDate": "Wed, 15 Jul 2026 08:29:18 +0000"
-    },
-    {
-      "title": "UK plans first G7 digital sovereign bond by early 2027",
-      "link": "https://www.coindesk.com/business/2026/07/15/uk-plans-first-g7-digital-sovereign-bond-by-early-2027",
-      "pubDate": "Wed, 15 Jul 2026 08:16:34 +0000"
-    },
-    {
-      "title": "AI agentic payments enter mainstream as Visa, Mastercard, Ripple back x402 standard",
-      "link": "https://www.coindesk.com/tech/2026/07/15/visa-mastercard-and-ripple-join-the-standard-letting-ai-agents-pay-in-stablecoins",
-      "pubDate": "Wed, 15 Jul 2026 06:05:24 +0000"
     }
   ]
 }
