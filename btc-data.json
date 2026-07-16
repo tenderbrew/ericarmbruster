@@ -1,13 +1,13 @@
 {
-  "fetchedAt": "2026-07-16T03:32:30.341Z",
+  "fetchedAt": "2026-07-16T08:30:39.175Z",
   "price": {
-    "usd": 64588,
-    "time": 1784172310
+    "usd": 64022,
+    "time": 1784190309
   },
   "moves": {
-    "d1": -0.20712864710025203,
-    "d7": 2.1627641768128703,
-    "d30": -1.5410979285311432
+    "d1": -1.0816373048345262,
+    "d7": 1.2674875848131872,
+    "d30": -2.4039166962968483
   },
   "history90d": [
     {
@@ -372,60 +372,85 @@
     },
     {
       "date": "2026-07-16",
-      "close": 64633.820277662126
+      "close": 64082.77478972815
     }
   ],
   "blocks": [
     {
-      "height": 958232,
-      "id": "00000000000000000000843c626fd2537b607d92276ca49c4d087f27dbe61a12",
-      "timestamp": 1784172037,
-      "txCount": 4197
+      "height": 958263,
+      "id": "0000000000000000000107e62e543138010ebed324f1de8b8dd58447f7aca6e4",
+      "timestamp": 1784189987,
+      "txCount": 6000
     },
     {
-      "height": 958231,
-      "id": "000000000000000000016536dd1c6797fac78f6b54bd57c8fd54d898f9a5c0c9",
-      "timestamp": 1784171015,
-      "txCount": 6257
+      "height": 958262,
+      "id": "00000000000000000001952d18ccf55ed86be37e8a7b46b50d73e49874553800",
+      "timestamp": 1784189544,
+      "txCount": 4304
     },
     {
-      "height": 958230,
-      "id": "00000000000000000000c888869da97612356d9a8aa6b455c28485e75d88e804",
-      "timestamp": 1784170819,
-      "txCount": 4599
+      "height": 958261,
+      "id": "000000000000000000006c1df0662084ae10a885bc1aafdb3e4657a0a2cfa9e8",
+      "timestamp": 1784189084,
+      "txCount": 4355
     },
     {
-      "height": 958229,
-      "id": "000000000000000000020a3ad4066a9b4a70efd16d7f21405f08f6642bc9e605",
-      "timestamp": 1784170522,
-      "txCount": 5913
+      "height": 958260,
+      "id": "000000000000000000011ccf6883854da14ed9cc711efff73a33cfc66ec92caf",
+      "timestamp": 1784187792,
+      "txCount": 5650
     },
     {
-      "height": 958228,
-      "id": "000000000000000000021314216bbff11bf35529bbcb12d6da10cdc56014f94a",
-      "timestamp": 1784170007,
-      "txCount": 6155
+      "height": 958259,
+      "id": "00000000000000000000061bac534d37ae92144a72aec34b9a0c88fa9175caaa",
+      "timestamp": 1784187574,
+      "txCount": 5488
     },
     {
-      "height": 958227,
-      "id": "000000000000000000021899fb8ec81fb96abf83f1ea250d49b705df9f564939",
-      "timestamp": 1784169928,
-      "txCount": 3659
+      "height": 958258,
+      "id": "000000000000000000020f02f6196739e67c7da7449162759bb2774cb467ec96",
+      "timestamp": 1784187564,
+      "txCount": 4018
     },
     {
-      "height": 958226,
-      "id": "0000000000000000000196b333dd7bfa1525cdcaab3a190708924b6401fb0f9c",
-      "timestamp": 1784169083,
-      "txCount": 5026
+      "height": 958257,
+      "id": "00000000000000000001f00db7616484c7785b129b3e93098b29d2bce74cf3d9",
+      "timestamp": 1784186607,
+      "txCount": 6040
     },
     {
-      "height": 958225,
-      "id": "00000000000000000001f6a148564e0b9ecf5db388016c85e6d1c78ad1649ea3",
-      "timestamp": 1784169012,
-      "txCount": 5414
+      "height": 958256,
+      "id": "0000000000000000000031eebc7d9498610f01953d592b7a7220a7cb7cb36056",
+      "timestamp": 1784186538,
+      "txCount": 4661
     }
   ],
   "news": [
+    {
+      "title": "Live updates: ZachXBT calls hardware wallets complete garbage; BTC steady after Korea rate hike",
+      "link": "https://www.coindesk.com/markets/2026/07/16/live-updates-zachxbt-calls-hardware-wallets-complete-garbage-btc-steady-near-usd65-000",
+      "pubDate": "Thu, 16 Jul 2026 06:20:00 +0000"
+    },
+    {
+      "title": "U.S. Senate unanimously opposes clemency for FTX founder Sam Bankman-Fried",
+      "link": "https://www.coindesk.com/policy/2026/07/16/u-s-senate-unanimously-opposes-clemency-for-ftx-founder-sam-bankman-fried",
+      "pubDate": "Thu, 16 Jul 2026 06:00:43 +0000"
+    },
+    {
+      "title": "A bitcoin wallet dormant since the 2017 peak just moved $383 million",
+      "link": "https://www.coindesk.com/markets/2026/07/16/a-bitcoin-wallet-dormant-since-the-2017-peak-just-moved-usd383-million",
+      "pubDate": "Thu, 16 Jul 2026 05:12:26 +0000"
+    },
+    {
+      "title": "Ether outruns bitcoin as ETF money returns, almost all of from BlackRock's fund",
+      "link": "https://www.coindesk.com/markets/2026/07/16/ether-outruns-bitcoin-as-etf-money-returns-almost-all-of-from-blackrock-s-fund",
+      "pubDate": "Thu, 16 Jul 2026 04:56:15 +0000"
+    },
+    {
+      "title": "Two groups of bitcoin investors sell on the rise as U.S. inflation lifts prices to nearly $65,000",
+      "link": "https://www.coindesk.com/markets/2026/07/16/two-groups-of-bitcoin-investors-sell-on-the-rise-as-inflation-lifts-prices-to-nearly-usd65-000",
+      "pubDate": "Thu, 16 Jul 2026 04:09:10 +0000"
+    },
     {
       "title": "Coinbase's Jesse Pollak steps back from Base app leadership after admitting his crypto social strategy failed",
       "link": "https://www.coindesk.com/business/2026/07/15/coinbase-s-jesse-pollak-steps-back-from-base-app-leadership-after-admitting-his-crypto-social-strategy-failed",
@@ -460,31 +485,6 @@
       "title": "President Trump expected to meet with senators to work on ethics concerns in crypto bill",
       "link": "https://www.coindesk.com/policy/2026/07/15/high-level-white-house-meeting-said-to-be-planned-to-hash-out-clarity-act-ethics-section",
       "pubDate": "Wed, 15 Jul 2026 14:37:36 +0000"
-    },
-    {
-      "title": "South Korea to modify 76-year-old law to classify cryptocurrencies as national assets",
-      "link": "https://www.coindesk.com/policy/2026/07/15/south-korea-to-modify-76-year-old-law-to-classify-cryptocurrencies-as-national-assets",
-      "pubDate": "Wed, 15 Jul 2026 14:35:26 +0000"
-    },
-    {
-      "title": "Open USD poses biggest threat yet to Circle's USDC, CoinShares says",
-      "link": "https://www.coindesk.com/business/2026/07/15/open-usd-poses-biggest-threat-yet-to-circle-s-usdc-coinshares-says",
-      "pubDate": "Wed, 15 Jul 2026 14:03:54 +0000"
-    },
-    {
-      "title": "A timeline of the Ethereum Foundation's ongoing shakeup",
-      "link": "https://www.coindesk.com/tech/2026/07/15/a-timeline-of-the-ethereum-foundation-s-ongoing-shakeup",
-      "pubDate": "Wed, 15 Jul 2026 13:19:48 +0000"
-    },
-    {
-      "title": "BlackRock's crypto assets fall 39% despite $15 billion of net inflows",
-      "link": "https://www.coindesk.com/markets/2026/07/15/blackrock-s-crypto-assets-fall-39-despite-usd15-billion-of-net-inflows",
-      "pubDate": "Wed, 15 Jul 2026 12:12:01 +0000"
-    },
-    {
-      "title": "The launchpad that fueled Robinhood Chain's memecoin boom just gave away all its revenue",
-      "link": "https://www.coindesk.com/business/2026/07/15/the-launchpad-that-fueled-robinhood-chain-s-memecoin-boom-just-gave-away-all-its-revenue",
-      "pubDate": "Wed, 15 Jul 2026 12:11:58 +0000"
     }
   ]
 }
