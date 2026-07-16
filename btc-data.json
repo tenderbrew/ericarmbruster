@@ -1,13 +1,13 @@
 {
-  "fetchedAt": "2026-07-16T14:17:53.767Z",
+  "fetchedAt": "2026-07-16T16:38:50.345Z",
   "price": {
-    "usd": 64594,
-    "time": 1784211312
+    "usd": 64548,
+    "time": 1784219710
   },
   "moves": {
-    "d1": -0.19785823730095187,
-    "d7": 2.1722547413923765,
-    "d30": -1.5319514398269063
+    "d1": -0.26893137909560494,
+    "d7": 2.0994937462828656,
+    "d30": -1.6020745198926711
   },
   "history90d": [
     {
@@ -372,60 +372,90 @@
     },
     {
       "date": "2026-07-16",
-      "close": 64592.37019232394
+      "close": 64479.26985507535
     }
   ],
   "blocks": [
     {
-      "height": 958292,
-      "id": "00000000000000000000f6ab814630834045231f0a806ee01ab9f10be20b356d",
-      "timestamp": 1784211413,
-      "txCount": 3446
+      "height": 958302,
+      "id": "00000000000000000000c1d4020acf3597a748e882fc260098658400b6457a06",
+      "timestamp": 1784219853,
+      "txCount": 3898
     },
     {
-      "height": 958291,
-      "id": "0000000000000000000221c1e9945db4bc0734e1f875108bf1411579e1ee92cc",
-      "timestamp": 1784210899,
-      "txCount": 3838
+      "height": 958301,
+      "id": "00000000000000000001e30e3c7fa3b2cd3f283bc54fe704e36fcaa438eda4dc",
+      "timestamp": 1784219037,
+      "txCount": 3201
     },
     {
-      "height": 958290,
-      "id": "00000000000000000001474af7abcb69f2843e2667eeb5ac5ed6c53134b5239b",
-      "timestamp": 1784209905,
-      "txCount": 4072
+      "height": 958300,
+      "id": "000000000000000000002176c47a61efc0e582ad73890acb92e94ba34f05c185",
+      "timestamp": 1784218470,
+      "txCount": 3799
     },
     {
-      "height": 958289,
-      "id": "000000000000000000002bd0de6f16aa11037363792c85af02a3879ce2951700",
-      "timestamp": 1784208683,
-      "txCount": 3615
+      "height": 958299,
+      "id": "00000000000000000001bf408de4ebfdbab744a454418687042354b3e4d3cd01",
+      "timestamp": 1784218086,
+      "txCount": 3769
     },
     {
-      "height": 958288,
-      "id": "00000000000000000000be9c5878220ac79613ba826bbad8b8d479e245dd4c1e",
-      "timestamp": 1784208292,
-      "txCount": 3830
+      "height": 958298,
+      "id": "00000000000000000000189c7d45d631521c003bf8b1d39383b8a12212985fc5",
+      "timestamp": 1784217349,
+      "txCount": 4202
     },
     {
-      "height": 958287,
-      "id": "0000000000000000000063ce452e1711505f11aa1d56b19096125934f130bcdd",
-      "timestamp": 1784206191,
-      "txCount": 3668
+      "height": 958297,
+      "id": "0000000000000000000065374ee75399cfa1660e7cff951151934cb9a97d9f17",
+      "timestamp": 1784216526,
+      "txCount": 4326
     },
     {
-      "height": 958286,
-      "id": "00000000000000000000e2fcc974ba11c137b0a13246803a0d2c90fdb76db6bc",
-      "timestamp": 1784205817,
-      "txCount": 4043
+      "height": 958296,
+      "id": "000000000000000000017aa100f0a570773eea95834ce4f670cddecf5cd9f2cb",
+      "timestamp": 1784214614,
+      "txCount": 2674
     },
     {
-      "height": 958285,
-      "id": "00000000000000000000c8b415c04a0a2cdb4d6489d1ce1aab146665b77fcbea",
-      "timestamp": 1784204929,
-      "txCount": 4039
+      "height": 958295,
+      "id": "00000000000000000001dae85ddf8a9d563eb04ee13da4ff7dd2152c49abd7ab",
+      "timestamp": 1784214360,
+      "txCount": 3876
     }
   ],
   "news": [
+    {
+      "title": "Stripe’s $53 billion PayPal bid is a high-stakes play to own the future of digital payments",
+      "link": "https://www.coindesk.com/business/2026/07/16/stripe-s-usd53-billion-paypal-bid-is-a-high-stakes-play-to-own-the-future-of-digital-payments",
+      "pubDate": "Thu, 16 Jul 2026 16:37:16 +0000"
+    },
+    {
+      "title": "Visa backs Open USD with new stablecoin platform as Circle faces fresh competition",
+      "link": "https://www.coindesk.com/business/2026/07/16/visa-backs-open-usd-with-new-stablecoin-platform-as-circle-faces-fresh-competition",
+      "pubDate": "Thu, 16 Jul 2026 16:14:30 +0000"
+    },
+    {
+      "title": "Keyrock acquires BlockFills trading assets to expand institutional crypto business",
+      "link": "https://www.coindesk.com/business/2026/07/16/keyrock-acquires-blockfills-trading-assets-to-expand-institutional-crypto-business",
+      "pubDate": "Thu, 16 Jul 2026 15:26:15 +0000"
+    },
+    {
+      "title": "The Clarity Act is the most important consumer protection effort in years",
+      "link": "https://www.coindesk.com/opinion/2026/07/16/the-clarity-act-is-the-most-important-consumer-protection-effort-in-years",
+      "pubDate": "Thu, 16 Jul 2026 15:07:30 +0000"
+    },
+    {
+      "title": "Crypto for Advisors: Strengthening defenses against AI fraud",
+      "link": "https://www.coindesk.com/coindesk-indices/2026/07/16/crypto-for-advisors-strengthening-defenses-against-ai-fraud",
+      "pubDate": "Thu, 16 Jul 2026 14:54:11 +0000"
+    },
+    {
+      "title": "Crypto brokerage firm Alpaca raises $135 million for tokenized stock infrastructure",
+      "link": "https://www.coindesk.com/business/2026/07/16/crypto-brokerage-firm-alpaca-raises-usd135-million-for-tokenized-stock-infrastructure",
+      "pubDate": "Thu, 16 Jul 2026 14:19:32 +0000"
+    },
     {
       "title": "Ledger wants AI agents to manage crypto without holding your keys",
       "link": "https://www.coindesk.com/tech/2026/07/15/ledger-wants-ai-agents-to-manage-crypto-without-holding-your-keys",
@@ -455,36 +485,6 @@
       "title": "Tether invests $20 million in Argentine neobank Ualá as it expands Latin America push",
       "link": "https://www.coindesk.com/business/2026/07/16/tether-invests-usd20-million-in-argentine-neobank-uala-as-it-expands-latin-america-push",
       "pubDate": "Thu, 16 Jul 2026 10:12:05 +0000"
-    },
-    {
-      "title": "U.S. adds four Iran central bank crypto wallets to sanctions, Tether freezes $131 million of contents",
-      "link": "https://www.coindesk.com/business/2026/07/16/u-s-adds-four-iran-central-bank-crypto-wallets-to-sanctions-tether-freezes-usd131-million-of-contents",
-      "pubDate": "Thu, 16 Jul 2026 10:07:06 +0000"
-    },
-    {
-      "title": "Live updates: Bitcoin holding $64,000 as AI momentum stocks continue to tumble",
-      "link": "https://www.coindesk.com/markets/2026/07/16/live-updates-zachxbt-calls-hardware-wallets-complete-garbage-btc-steady-near-usd65-000",
-      "pubDate": "Thu, 16 Jul 2026 06:20:00 +0000"
-    },
-    {
-      "title": "U.S. Senate unanimously opposes clemency for FTX founder Sam Bankman-Fried",
-      "link": "https://www.coindesk.com/policy/2026/07/16/u-s-senate-unanimously-opposes-clemency-for-ftx-founder-sam-bankman-fried",
-      "pubDate": "Thu, 16 Jul 2026 06:00:43 +0000"
-    },
-    {
-      "title": "A bitcoin wallet dormant since the 2017 peak just moved $383 million",
-      "link": "https://www.coindesk.com/markets/2026/07/16/a-bitcoin-wallet-dormant-since-the-2017-peak-just-moved-usd383-million",
-      "pubDate": "Thu, 16 Jul 2026 05:12:26 +0000"
-    },
-    {
-      "title": "Ether outruns bitcoin as ETF money returns, almost all of from BlackRock's fund",
-      "link": "https://www.coindesk.com/markets/2026/07/16/ether-outruns-bitcoin-as-etf-money-returns-almost-all-of-from-blackrock-s-fund",
-      "pubDate": "Thu, 16 Jul 2026 04:56:15 +0000"
-    },
-    {
-      "title": "Two groups of crypto investors are selling bitcoin to cap its latest price recovery",
-      "link": "https://www.coindesk.com/markets/2026/07/16/two-groups-of-bitcoin-investors-sell-on-the-rise-as-inflation-lifts-prices-to-nearly-usd65-000",
-      "pubDate": "Thu, 16 Jul 2026 04:09:10 +0000"
     }
   ]
 }
