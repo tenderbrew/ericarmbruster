@@ -1,13 +1,13 @@
 {
-  "fetchedAt": "2026-07-16T11:09:49.633Z",
+  "fetchedAt": "2026-07-16T14:17:53.767Z",
   "price": {
-    "usd": 64133,
-    "time": 1784199907
+    "usd": 64594,
+    "time": 1784211312
   },
   "moves": {
-    "d1": -0.9101347235474178,
-    "d7": 1.4430630295339641,
-    "d30": -2.2347066552685924
+    "d1": -0.19785823730095187,
+    "d7": 2.1722547413923765,
+    "d30": -1.5319514398269063
   },
   "history90d": [
     {
@@ -372,60 +372,80 @@
     },
     {
       "date": "2026-07-16",
-      "close": 64084.062207923605
+      "close": 64592.37019232394
     }
   ],
   "blocks": [
     {
-      "height": 958279,
-      "id": "000000000000000000022061a7c772773011ca32636e7122197b1bd2caa92b65",
-      "timestamp": 1784199036,
-      "txCount": 3427
+      "height": 958292,
+      "id": "00000000000000000000f6ab814630834045231f0a806ee01ab9f10be20b356d",
+      "timestamp": 1784211413,
+      "txCount": 3446
     },
     {
-      "height": 958278,
-      "id": "0000000000000000000170f2c1c8d77233496e68aa136d9e16d823f5e2fa0d1a",
-      "timestamp": 1784197618,
-      "txCount": 6766
+      "height": 958291,
+      "id": "0000000000000000000221c1e9945db4bc0734e1f875108bf1411579e1ee92cc",
+      "timestamp": 1784210899,
+      "txCount": 3838
     },
     {
-      "height": 958277,
-      "id": "000000000000000000000c4c496a38059d374d610a3ca6991b8424d4cecf9fe9",
-      "timestamp": 1784197511,
-      "txCount": 6094
+      "height": 958290,
+      "id": "00000000000000000001474af7abcb69f2843e2667eeb5ac5ed6c53134b5239b",
+      "timestamp": 1784209905,
+      "txCount": 4072
     },
     {
-      "height": 958276,
-      "id": "00000000000000000000ec4b66db0ae3dddb2df543f3fbc0379b4e135640948d",
-      "timestamp": 1784197217,
-      "txCount": 4964
+      "height": 958289,
+      "id": "000000000000000000002bd0de6f16aa11037363792c85af02a3879ce2951700",
+      "timestamp": 1784208683,
+      "txCount": 3615
     },
     {
-      "height": 958275,
-      "id": "00000000000000000001f5715c36a40112dde27581384003b50204282f25e6c3",
-      "timestamp": 1784197084,
-      "txCount": 4261
+      "height": 958288,
+      "id": "00000000000000000000be9c5878220ac79613ba826bbad8b8d479e245dd4c1e",
+      "timestamp": 1784208292,
+      "txCount": 3830
     },
     {
-      "height": 958274,
-      "id": "000000000000000000021d13eb304b70109dfd65d9c5f658f912b164806cb87a",
-      "timestamp": 1784195509,
-      "txCount": 4732
+      "height": 958287,
+      "id": "0000000000000000000063ce452e1711505f11aa1d56b19096125934f130bcdd",
+      "timestamp": 1784206191,
+      "txCount": 3668
     },
     {
-      "height": 958273,
-      "id": "00000000000000000000fbae49553155721ee9a71f5c9426e143d3cc217d7897",
-      "timestamp": 1784194737,
-      "txCount": 4146
+      "height": 958286,
+      "id": "00000000000000000000e2fcc974ba11c137b0a13246803a0d2c90fdb76db6bc",
+      "timestamp": 1784205817,
+      "txCount": 4043
     },
     {
-      "height": 958272,
-      "id": "000000000000000000009c0c100385691662b3dd04ef74edd1df0a9cc2b36326",
-      "timestamp": 1784193788,
-      "txCount": 6137
+      "height": 958285,
+      "id": "00000000000000000000c8b415c04a0a2cdb4d6489d1ce1aab146665b77fcbea",
+      "timestamp": 1784204929,
+      "txCount": 4039
     }
   ],
   "news": [
+    {
+      "title": "Ledger wants AI agents to manage crypto without holding your keys",
+      "link": "https://www.coindesk.com/tech/2026/07/15/ledger-wants-ai-agents-to-manage-crypto-without-holding-your-keys",
+      "pubDate": "Thu, 16 Jul 2026 13:00:00 +0000"
+    },
+    {
+      "title": "Galaxy targets institutional stablecoin yield with new DeFi vaults",
+      "link": "https://www.coindesk.com/tech/2026/07/16/galaxy-targets-institutional-stablecoin-yield-with-new-defi-vaults",
+      "pubDate": "Thu, 16 Jul 2026 12:00:00 +0000"
+    },
+    {
+      "title": "The most popular bitcoin call option has slipped by $10,000",
+      "link": "https://www.coindesk.com/daybook-us/2026/07/16/the-most-popular-bitcoin-call-option-has-slipped-by-usd10-000",
+      "pubDate": "Thu, 16 Jul 2026 11:27:53 +0000"
+    },
+    {
+      "title": "Inside the high-stakes race to build an open financial system specifically for AI bots",
+      "link": "https://www.coindesk.com/business/2026/07/16/ai-payments-have-a-new-open-standards-body-its-aim-is-to-reinvent-the-internet",
+      "pubDate": "Thu, 16 Jul 2026 11:22:37 +0000"
+    },
     {
       "title": "Bitcoin pulls back to $64,000 after hitting monthly high as bears take control",
       "link": "https://www.coindesk.com/markets/2026/07/16/bitcoin-pulls-back-to-usd64-000-after-hitting-monthly-high-as-bears-take-control",
@@ -442,7 +462,7 @@
       "pubDate": "Thu, 16 Jul 2026 10:07:06 +0000"
     },
     {
-      "title": "Live updates: ZachXBT calls hardware wallets complete garbage; BTC steady after Korea rate hike",
+      "title": "Live updates: Bitcoin holding $64,000 as AI momentum stocks continue to tumble",
       "link": "https://www.coindesk.com/markets/2026/07/16/live-updates-zachxbt-calls-hardware-wallets-complete-garbage-btc-steady-near-usd65-000",
       "pubDate": "Thu, 16 Jul 2026 06:20:00 +0000"
     },
@@ -462,29 +482,9 @@
       "pubDate": "Thu, 16 Jul 2026 04:56:15 +0000"
     },
     {
-      "title": "Two groups of bitcoin investors sell on the rise as U.S. inflation lifts prices to nearly $65,000",
+      "title": "Two groups of crypto investors are selling bitcoin to cap its latest price recovery",
       "link": "https://www.coindesk.com/markets/2026/07/16/two-groups-of-bitcoin-investors-sell-on-the-rise-as-inflation-lifts-prices-to-nearly-usd65-000",
       "pubDate": "Thu, 16 Jul 2026 04:09:10 +0000"
-    },
-    {
-      "title": "Coinbase's Jesse Pollak steps back from Base app leadership after admitting his crypto social strategy failed",
-      "link": "https://www.coindesk.com/business/2026/07/15/coinbase-s-jesse-pollak-steps-back-from-base-app-leadership-after-admitting-his-crypto-social-strategy-failed",
-      "pubDate": "Wed, 15 Jul 2026 20:18:02 +0000"
-    },
-    {
-      "title": "DTCC moves tokenized securities into live trading, marking a milestone for Wall Street's blockchain push",
-      "link": "https://www.coindesk.com/business/2026/07/15/dtcc-moves-tokenized-securities-into-live-trading-marking-a-milestone-for-wall-street-s-blockchain-push",
-      "pubDate": "Wed, 15 Jul 2026 17:02:22 +0000"
-    },
-    {
-      "title": "Cantor and Securitize collaborate on blockchain-based IPOs",
-      "link": "https://www.coindesk.com/business/2026/07/15/cantor-and-securitize-collaborate-on-blockchain-based-ipos",
-      "pubDate": "Wed, 15 Jul 2026 16:52:28 +0000"
-    },
-    {
-      "title": "Ostium suffers $18 million exploit as oracle attack wave continues to hit DeFi",
-      "link": "https://www.coindesk.com/business/2026/07/15/ostium-suffers-usd18-million-exploit-as-oracle-attack-wave-continues-to-hit-defi",
-      "pubDate": "Wed, 15 Jul 2026 15:27:43 +0000"
     }
   ]
 }
