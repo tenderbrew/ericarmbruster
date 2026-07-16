@@ -1,13 +1,13 @@
 {
-  "fetchedAt": "2026-07-16T08:30:39.175Z",
+  "fetchedAt": "2026-07-16T11:09:49.633Z",
   "price": {
-    "usd": 64022,
-    "time": 1784190309
+    "usd": 64133,
+    "time": 1784199907
   },
   "moves": {
-    "d1": -1.0816373048345262,
-    "d7": 1.2674875848131872,
-    "d30": -2.4039166962968483
+    "d1": -0.9101347235474178,
+    "d7": 1.4430630295339641,
+    "d30": -2.2347066552685924
   },
   "history90d": [
     {
@@ -372,60 +372,75 @@
     },
     {
       "date": "2026-07-16",
-      "close": 64082.77478972815
+      "close": 64084.062207923605
     }
   ],
   "blocks": [
     {
-      "height": 958263,
-      "id": "0000000000000000000107e62e543138010ebed324f1de8b8dd58447f7aca6e4",
-      "timestamp": 1784189987,
-      "txCount": 6000
+      "height": 958279,
+      "id": "000000000000000000022061a7c772773011ca32636e7122197b1bd2caa92b65",
+      "timestamp": 1784199036,
+      "txCount": 3427
     },
     {
-      "height": 958262,
-      "id": "00000000000000000001952d18ccf55ed86be37e8a7b46b50d73e49874553800",
-      "timestamp": 1784189544,
-      "txCount": 4304
+      "height": 958278,
+      "id": "0000000000000000000170f2c1c8d77233496e68aa136d9e16d823f5e2fa0d1a",
+      "timestamp": 1784197618,
+      "txCount": 6766
     },
     {
-      "height": 958261,
-      "id": "000000000000000000006c1df0662084ae10a885bc1aafdb3e4657a0a2cfa9e8",
-      "timestamp": 1784189084,
-      "txCount": 4355
+      "height": 958277,
+      "id": "000000000000000000000c4c496a38059d374d610a3ca6991b8424d4cecf9fe9",
+      "timestamp": 1784197511,
+      "txCount": 6094
     },
     {
-      "height": 958260,
-      "id": "000000000000000000011ccf6883854da14ed9cc711efff73a33cfc66ec92caf",
-      "timestamp": 1784187792,
-      "txCount": 5650
+      "height": 958276,
+      "id": "00000000000000000000ec4b66db0ae3dddb2df543f3fbc0379b4e135640948d",
+      "timestamp": 1784197217,
+      "txCount": 4964
     },
     {
-      "height": 958259,
-      "id": "00000000000000000000061bac534d37ae92144a72aec34b9a0c88fa9175caaa",
-      "timestamp": 1784187574,
-      "txCount": 5488
+      "height": 958275,
+      "id": "00000000000000000001f5715c36a40112dde27581384003b50204282f25e6c3",
+      "timestamp": 1784197084,
+      "txCount": 4261
     },
     {
-      "height": 958258,
-      "id": "000000000000000000020f02f6196739e67c7da7449162759bb2774cb467ec96",
-      "timestamp": 1784187564,
-      "txCount": 4018
+      "height": 958274,
+      "id": "000000000000000000021d13eb304b70109dfd65d9c5f658f912b164806cb87a",
+      "timestamp": 1784195509,
+      "txCount": 4732
     },
     {
-      "height": 958257,
-      "id": "00000000000000000001f00db7616484c7785b129b3e93098b29d2bce74cf3d9",
-      "timestamp": 1784186607,
-      "txCount": 6040
+      "height": 958273,
+      "id": "00000000000000000000fbae49553155721ee9a71f5c9426e143d3cc217d7897",
+      "timestamp": 1784194737,
+      "txCount": 4146
     },
     {
-      "height": 958256,
-      "id": "0000000000000000000031eebc7d9498610f01953d592b7a7220a7cb7cb36056",
-      "timestamp": 1784186538,
-      "txCount": 4661
+      "height": 958272,
+      "id": "000000000000000000009c0c100385691662b3dd04ef74edd1df0a9cc2b36326",
+      "timestamp": 1784193788,
+      "txCount": 6137
     }
   ],
   "news": [
+    {
+      "title": "Bitcoin pulls back to $64,000 after hitting monthly high as bears take control",
+      "link": "https://www.coindesk.com/markets/2026/07/16/bitcoin-pulls-back-to-usd64-000-after-hitting-monthly-high-as-bears-take-control",
+      "pubDate": "Thu, 16 Jul 2026 10:35:56 +0000"
+    },
+    {
+      "title": "Tether invests $20 million in Argentine neobank Ualá as it expands Latin America push",
+      "link": "https://www.coindesk.com/business/2026/07/16/tether-invests-usd20-million-in-argentine-neobank-uala-as-it-expands-latin-america-push",
+      "pubDate": "Thu, 16 Jul 2026 10:12:05 +0000"
+    },
+    {
+      "title": "U.S. adds four Iran central bank crypto wallets to sanctions, Tether freezes $131 million of contents",
+      "link": "https://www.coindesk.com/business/2026/07/16/u-s-adds-four-iran-central-bank-crypto-wallets-to-sanctions-tether-freezes-usd131-million-of-contents",
+      "pubDate": "Thu, 16 Jul 2026 10:07:06 +0000"
+    },
     {
       "title": "Live updates: ZachXBT calls hardware wallets complete garbage; BTC steady after Korea rate hike",
       "link": "https://www.coindesk.com/markets/2026/07/16/live-updates-zachxbt-calls-hardware-wallets-complete-garbage-btc-steady-near-usd65-000",
@@ -470,21 +485,6 @@
       "title": "Ostium suffers $18 million exploit as oracle attack wave continues to hit DeFi",
       "link": "https://www.coindesk.com/business/2026/07/15/ostium-suffers-usd18-million-exploit-as-oracle-attack-wave-continues-to-hit-defi",
       "pubDate": "Wed, 15 Jul 2026 15:27:43 +0000"
-    },
-    {
-      "title": "The privacy paradox of protecting kids online",
-      "link": "https://www.coindesk.com/opinion/2026/07/14/the-privacy-paradox-of-protecting-kids-online",
-      "pubDate": "Wed, 15 Jul 2026 14:58:50 +0000"
-    },
-    {
-      "title": "Crypto Long & Short: To ETH or not to ETH — is SOL the better diversifier?",
-      "link": "https://www.coindesk.com/coindesk-indices/2026/07/15/crypto-long-and-short-to-eth-or-not-to-eth-is-sol-the-better-diversifier",
-      "pubDate": "Wed, 15 Jul 2026 14:58:09 +0000"
-    },
-    {
-      "title": "President Trump expected to meet with senators to work on ethics concerns in crypto bill",
-      "link": "https://www.coindesk.com/policy/2026/07/15/high-level-white-house-meeting-said-to-be-planned-to-hash-out-clarity-act-ethics-section",
-      "pubDate": "Wed, 15 Jul 2026 14:37:36 +0000"
     }
   ]
 }
