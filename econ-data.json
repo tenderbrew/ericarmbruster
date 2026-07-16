@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-07-16T14:14:59.319Z",
+  "fetchedAt": "2026-07-16T19:25:43.223Z",
   "indicators": {
     "UNRATE": {
       "latest": {
@@ -173,12 +173,12 @@
     },
     "MORTGAGE30US": {
       "latest": {
-        "date": "2026-07-09",
-        "value": 6.49
+        "date": "2026-07-16",
+        "value": 6.55
       },
       "previous": {
-        "date": "2026-07-02",
-        "value": 6.43
+        "date": "2026-07-09",
+        "value": 6.49
       }
     },
     "GDPC1": {
@@ -301,6 +301,18 @@
   },
   "news": [
     {
+      "title": "The Predatory Logic of the State",
+      "link": "https://mises.org/podcasts/audio-mises-wire/predatory-logic-state",
+      "pubDate": "Thu, 16 Jul 2026 01:05:02 CDT",
+      "kind": "Podcast"
+    },
+    {
+      "title": "The Predatory Logic of the State",
+      "link": "https://mises.org/mises-wire/predatory-logic-state",
+      "pubDate": "Thu, 16 Jul 2026 11:00:00 CDT",
+      "kind": "Mises Wire"
+    },
+    {
       "title": "Rothbard’s Definition of Government as Organized Crime: The Microsoft Antitrust Case",
       "link": "https://mises.org/podcasts/audio-mises-wire/rothbards-definition-government-organized-crime-microsoft-antitrust-case",
       "pubDate": "Thu, 16 Jul 2026 09:01:24 CDT",
@@ -343,21 +355,9 @@
       "kind": "Mises Wire"
     },
     {
-      "title": "Foucault, Panopticism and the Carceral Society; the Rise of the Surveillance State",
-      "link": "https://mises.org/mises-wire/foucault-panopticism-and-carceral-society-rise-surveillance-state",
-      "pubDate": "Wed, 15 Jul 2026 11:00:00 CDT",
-      "kind": "Mises Wire"
-    },
-    {
-      "title": "Why Is the Healthcare System Broken? Speaker Panel",
-      "link": "https://mises.org/podcasts/why-healthcare-system-broken-mises-circle-new-hampshire/why-healthcare-system-broken-speaker-panel",
-      "pubDate": "Wed, 15 Jul 2026 10:15:26 CDT",
-      "kind": "Podcast"
-    },
-    {
-      "title": "America’s Gerontocracy Goes Deeper than Aging Politicians",
-      "link": "https://mises.org/podcasts/audio-mises-wire/americas-gerontocracy-goes-deeper-aging-politicians",
-      "pubDate": "Wed, 15 Jul 2026 09:31:02 CDT",
+      "title": "Brokenomics: Austrian Economics with Jonathan Newman",
+      "link": "https://mises.org/podcasts/individual-interview/brokenomics-austrian-economics-jonathan-newman",
+      "pubDate": "Wed, 15 Jul 2026 12:30:20 CDT",
       "kind": "Podcast"
     }
   ]
