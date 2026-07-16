@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-07-16T03:29:38.465Z",
+  "fetchedAt": "2026-07-16T14:14:59.319Z",
   "indicators": {
     "UNRATE": {
       "latest": {
@@ -33,12 +33,12 @@
     },
     "ICSA": {
       "latest": {
-        "date": "2026-07-04",
-        "value": 215000
+        "date": "2026-07-11",
+        "value": 208000
       },
       "previous": {
-        "date": "2026-06-27",
-        "value": 217000
+        "date": "2026-07-04",
+        "value": 216000
       }
     },
     "CPIAUCSL": {
@@ -163,12 +163,12 @@
     },
     "BAMLH0A0HYM2": {
       "latest": {
-        "date": "2026-07-14",
-        "value": 2.72
+        "date": "2026-07-15",
+        "value": 2.71
       },
       "previous": {
-        "date": "2026-07-13",
-        "value": 2.69
+        "date": "2026-07-14",
+        "value": 2.72
       }
     },
     "MORTGAGE30US": {
@@ -203,12 +203,12 @@
     },
     "RSAFS": {
       "latest": {
-        "date": "2026-05-01",
-        "value": 763705
+        "date": "2026-06-01",
+        "value": 768553
       },
       "previous": {
-        "date": "2026-04-01",
-        "value": 757036
+        "date": "2026-05-01",
+        "value": 766876
       }
     },
     "UMCSENT": {
@@ -263,12 +263,12 @@
     },
     "VIXCLS": {
       "latest": {
-        "date": "2026-07-14",
-        "value": 16.5
+        "date": "2026-07-15",
+        "value": 15.67
       },
       "previous": {
-        "date": "2026-07-13",
-        "value": 17.16
+        "date": "2026-07-14",
+        "value": 16.5
       }
     },
     "BOPGSTB": {
@@ -300,6 +300,30 @@
     }
   },
   "news": [
+    {
+      "title": "Rothbard’s Definition of Government as Organized Crime: The Microsoft Antitrust Case",
+      "link": "https://mises.org/podcasts/audio-mises-wire/rothbards-definition-government-organized-crime-microsoft-antitrust-case",
+      "pubDate": "Thu, 16 Jul 2026 09:01:24 CDT",
+      "kind": "Podcast"
+    },
+    {
+      "title": "The Vendée: The French War for National Liberation",
+      "link": "https://mises.org/podcasts/audio-mises-wire/vendee-french-war-national-liberation",
+      "pubDate": "Thu, 16 Jul 2026 08:24:02 CDT",
+      "kind": "Podcast"
+    },
+    {
+      "title": "Populism Will Not Solve the Housing Affordability Crisis. Markets Will",
+      "link": "https://mises.org/power-market/populism-will-not-solve-housing-affordability-crisis-markets-will",
+      "pubDate": "Thu, 16 Jul 2026 07:00:00 CDT",
+      "kind": "Article"
+    },
+    {
+      "title": "Rothbard’s Definition of Government as Organized Crime: The Microsoft Antitrust Case",
+      "link": "https://mises.org/mises-wire/rothbards-definition-government-organized-crime-microsoft-antitrust-case",
+      "pubDate": "Thu, 16 Jul 2026 05:00:00 CDT",
+      "kind": "Mises Wire"
+    },
     {
       "title": "The FIFA World Cup: Price Controls on Ticket Prices?",
       "link": "https://mises.org/podcasts/audio-mises-wire/fifa-world-cup-price-controls-ticket-prices",
@@ -335,30 +359,6 @@
       "link": "https://mises.org/podcasts/audio-mises-wire/americas-gerontocracy-goes-deeper-aging-politicians",
       "pubDate": "Wed, 15 Jul 2026 09:31:02 CDT",
       "kind": "Podcast"
-    },
-    {
-      "title": "What the Conservatives Get Wrong about the French Revolution",
-      "link": "https://mises.org/podcasts/audio-mises-wire/what-conservatives-get-wrong-about-french-revolution",
-      "pubDate": "Wed, 15 Jul 2026 08:02:02 CDT",
-      "kind": "Podcast"
-    },
-    {
-      "title": "America’s Gerontocracy Goes Deeper than Aging Politicians",
-      "link": "https://mises.org/mises-wire/americas-gerontocracy-goes-deeper-aging-politicians",
-      "pubDate": "Wed, 15 Jul 2026 05:00:00 CDT",
-      "kind": "Mises Wire"
-    },
-    {
-      "title": "Why movement conservatism’s excommunications have always been about foreign policy.",
-      "link": "https://mises.org/notes-margin/why-movement-conservatisms-excommunications-have-always-been-about-foreign-policy",
-      "pubDate": "Wed, 15 Jul 2026 03:00:00 CDT",
-      "kind": "Article"
-    },
-    {
-      "title": "What the Conservatives Get Wrong about the French Revolution",
-      "link": "https://mises.org/mises-wire/what-conservatives-get-wrong-about-french-revolution",
-      "pubDate": "Tue, 14 Jul 2026 04:00:00 CDT",
-      "kind": "Mises Wire"
     }
   ]
 }
