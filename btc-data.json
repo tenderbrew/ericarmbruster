@@ -1,13 +1,13 @@
 {
-  "fetchedAt": "2026-07-16T16:38:50.345Z",
+  "fetchedAt": "2026-07-16T19:33:04.270Z",
   "price": {
-    "usd": 64548,
-    "time": 1784219710
+    "usd": 64221,
+    "time": 1784230209
   },
   "moves": {
-    "d1": -0.26893137909560494,
-    "d7": 2.0994937462828656,
-    "d30": -1.6020745198926711
+    "d1": -0.7741687131576414,
+    "d7": 1.5822579766999967,
+    "d30": -2.1005581542732132
   },
   "history90d": [
     {
@@ -372,60 +372,70 @@
     },
     {
       "date": "2026-07-16",
-      "close": 64479.26985507535
+      "close": 64193.25603569558
     }
   ],
   "blocks": [
     {
-      "height": 958302,
-      "id": "00000000000000000000c1d4020acf3597a748e882fc260098658400b6457a06",
-      "timestamp": 1784219853,
-      "txCount": 3898
+      "height": 958314,
+      "id": "00000000000000000001e60bb0a49f914c10e1e051cb6e08951f107cd27f77d1",
+      "timestamp": 1784230025,
+      "txCount": 3046
     },
     {
-      "height": 958301,
-      "id": "00000000000000000001e30e3c7fa3b2cd3f283bc54fe704e36fcaa438eda4dc",
-      "timestamp": 1784219037,
-      "txCount": 3201
+      "height": 958313,
+      "id": "000000000000000000007b819548fb619ded6429e51764172d0d489031037c37",
+      "timestamp": 1784229649,
+      "txCount": 4561
     },
     {
-      "height": 958300,
-      "id": "000000000000000000002176c47a61efc0e582ad73890acb92e94ba34f05c185",
-      "timestamp": 1784218470,
-      "txCount": 3799
+      "height": 958312,
+      "id": "00000000000000000000c840216bf3e698a25a38332fd4eac80acb58d5fe2e6b",
+      "timestamp": 1784229247,
+      "txCount": 4217
     },
     {
-      "height": 958299,
-      "id": "00000000000000000001bf408de4ebfdbab744a454418687042354b3e4d3cd01",
-      "timestamp": 1784218086,
-      "txCount": 3769
+      "height": 958311,
+      "id": "00000000000000000002194aff5b1944e13177a4e8dbaf7c8f4cc34d269de7b4",
+      "timestamp": 1784229156,
+      "txCount": 3411
     },
     {
-      "height": 958298,
-      "id": "00000000000000000000189c7d45d631521c003bf8b1d39383b8a12212985fc5",
-      "timestamp": 1784217349,
-      "txCount": 4202
+      "height": 958310,
+      "id": "00000000000000000001a1b3f13e013ceba7bfaea0e884c75ed53b1bb7a16c01",
+      "timestamp": 1784228594,
+      "txCount": 4103
     },
     {
-      "height": 958297,
-      "id": "0000000000000000000065374ee75399cfa1660e7cff951151934cb9a97d9f17",
-      "timestamp": 1784216526,
-      "txCount": 4326
+      "height": 958309,
+      "id": "00000000000000000000b1fd4cc44956c3d2a9836da8a83f2335b85678b687e6",
+      "timestamp": 1784226825,
+      "txCount": 4280
     },
     {
-      "height": 958296,
-      "id": "000000000000000000017aa100f0a570773eea95834ce4f670cddecf5cd9f2cb",
-      "timestamp": 1784214614,
-      "txCount": 2674
+      "height": 958308,
+      "id": "00000000000000000001829a495ef5854812e866e00cad2932ff536455d929c4",
+      "timestamp": 1784226568,
+      "txCount": 4146
     },
     {
-      "height": 958295,
-      "id": "00000000000000000001dae85ddf8a9d563eb04ee13da4ff7dd2152c49abd7ab",
-      "timestamp": 1784214360,
-      "txCount": 3876
+      "height": 958307,
+      "id": "00000000000000000000898fe84429d825209602577438c69f34ed5e8b1b945e",
+      "timestamp": 1784222518,
+      "txCount": 3890
     }
   ],
   "news": [
+    {
+      "title": "$1.9 trillion asset manager T. Rowe Price bets on active management with first multi-token crypto ETF",
+      "link": "https://www.coindesk.com/markets/2026/07/16/usd1-9-trillion-asset-manager-t-rowe-price-bets-on-active-management-with-first-multi-token-crypto-etf",
+      "pubDate": "Thu, 16 Jul 2026 18:38:13 +0000"
+    },
+    {
+      "title": "Citadel Securities invests $400 million in Crypto.com, valuing exchange at $20 billion",
+      "link": "https://www.coindesk.com/business/2026/07/16/citadel-securities-invests-usd400-million-in-crypto-com-valuing-exchange-at-usd20-billion",
+      "pubDate": "Thu, 16 Jul 2026 18:00:00 +0000"
+    },
     {
       "title": "Stripe’s $53 billion PayPal bid is a high-stakes play to own the future of digital payments",
       "link": "https://www.coindesk.com/business/2026/07/16/stripe-s-usd53-billion-paypal-bid-is-a-high-stakes-play-to-own-the-future-of-digital-payments",
@@ -475,16 +485,6 @@
       "title": "Inside the high-stakes race to build an open financial system specifically for AI bots",
       "link": "https://www.coindesk.com/business/2026/07/16/ai-payments-have-a-new-open-standards-body-its-aim-is-to-reinvent-the-internet",
       "pubDate": "Thu, 16 Jul 2026 11:22:37 +0000"
-    },
-    {
-      "title": "Bitcoin pulls back to $64,000 after hitting monthly high as bears take control",
-      "link": "https://www.coindesk.com/markets/2026/07/16/bitcoin-pulls-back-to-usd64-000-after-hitting-monthly-high-as-bears-take-control",
-      "pubDate": "Thu, 16 Jul 2026 10:35:56 +0000"
-    },
-    {
-      "title": "Tether invests $20 million in Argentine neobank Ualá as it expands Latin America push",
-      "link": "https://www.coindesk.com/business/2026/07/16/tether-invests-usd20-million-in-argentine-neobank-uala-as-it-expands-latin-america-push",
-      "pubDate": "Thu, 16 Jul 2026 10:12:05 +0000"
     }
   ]
 }
