@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-07-16T19:25:43.223Z",
+  "fetchedAt": "2026-07-17T03:31:14.296Z",
   "indicators": {
     "UNRATE": {
       "latest": {
@@ -63,12 +63,12 @@
     },
     "T10YIE": {
       "latest": {
-        "date": "2026-07-15",
-        "value": 2.23
+        "date": "2026-07-16",
+        "value": 2.22
       },
       "previous": {
-        "date": "2026-07-14",
-        "value": 2.25
+        "date": "2026-07-15",
+        "value": 2.23
       }
     },
     "PCE": {
@@ -103,12 +103,12 @@
     },
     "WALCL": {
       "latest": {
-        "date": "2026-07-08",
-        "value": 6735609
+        "date": "2026-07-15",
+        "value": 6743028
       },
       "previous": {
-        "date": "2026-07-01",
-        "value": 6724564
+        "date": "2026-07-08",
+        "value": 6735609
       }
     },
     "FEDFUNDS": {
@@ -123,42 +123,42 @@
     },
     "DGS2": {
       "latest": {
-        "date": "2026-07-14",
-        "value": 4.18
+        "date": "2026-07-15",
+        "value": 4.13
       },
       "previous": {
-        "date": "2026-07-13",
-        "value": 4.26
+        "date": "2026-07-14",
+        "value": 4.18
       }
     },
     "DGS10": {
       "latest": {
-        "date": "2026-07-14",
-        "value": 4.58
+        "date": "2026-07-15",
+        "value": 4.55
       },
       "previous": {
-        "date": "2026-07-13",
-        "value": 4.62
+        "date": "2026-07-14",
+        "value": 4.58
       }
     },
     "T10Y2Y": {
       "latest": {
-        "date": "2026-07-15",
-        "value": 0.42
+        "date": "2026-07-16",
+        "value": 0.41
       },
       "previous": {
-        "date": "2026-07-14",
-        "value": 0.4
+        "date": "2026-07-15",
+        "value": 0.42
       }
     },
     "DFII10": {
       "latest": {
-        "date": "2026-07-14",
-        "value": 2.33
+        "date": "2026-07-15",
+        "value": 2.32
       },
       "previous": {
-        "date": "2026-07-13",
-        "value": 2.36
+        "date": "2026-07-14",
+        "value": 2.33
       }
     },
     "BAMLH0A0HYM2": {
@@ -301,6 +301,12 @@
   },
   "news": [
     {
+      "title": "Graham, McConnell, and America's Late-Soviet Politics",
+      "link": "https://mises.org/podcasts/power-and-market/graham-mcconnell-and-americas-late-soviet-politics",
+      "pubDate": "Thu, 16 Jul 2026 05:00:00 CDT",
+      "kind": "Podcast"
+    },
+    {
       "title": "The Predatory Logic of the State",
       "link": "https://mises.org/podcasts/audio-mises-wire/predatory-logic-state",
       "pubDate": "Thu, 16 Jul 2026 01:05:02 CDT",
@@ -353,12 +359,6 @@
       "link": "https://mises.org/mises-wire/vendee-french-war-national-liberation",
       "pubDate": "Wed, 15 Jul 2026 04:00:00 CDT",
       "kind": "Mises Wire"
-    },
-    {
-      "title": "Brokenomics: Austrian Economics with Jonathan Newman",
-      "link": "https://mises.org/podcasts/individual-interview/brokenomics-austrian-economics-jonathan-newman",
-      "pubDate": "Wed, 15 Jul 2026 12:30:20 CDT",
-      "kind": "Podcast"
     }
   ]
 }
