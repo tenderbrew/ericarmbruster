@@ -1,13 +1,13 @@
 {
-  "fetchedAt": "2026-07-17T10:56:55.950Z",
+  "fetchedAt": "2026-07-17T13:59:37.615Z",
   "price": {
-    "usd": 63128,
-    "time": 1784285708
+    "usd": 62744,
+    "time": 1784296514
   },
   "moves": {
-    "d1": -1.0361186940283096,
-    "d7": -1.4887796381337415,
-    "d30": -2.0095031774300387
+    "d1": -1.638104032095311,
+    "d7": -2.0880114943458206,
+    "d30": -2.605567535240638
   },
   "history90d": [
     {
@@ -372,60 +372,70 @@
     },
     {
       "date": "2026-07-17",
-      "close": 63123.621565848
+      "close": 62996.95733004059
     }
   ],
   "blocks": [
     {
-      "height": 958399,
-      "id": "00000000000000000001d317aaf7c47762c2ba93c2a053dd1276ca5c31e5c600",
-      "timestamp": 1784284791,
-      "txCount": 5447
+      "height": 958422,
+      "id": "0000000000000000000103f4585bae0e9f5957f9698f38b0df7ec932357bb8c3",
+      "timestamp": 1784295331,
+      "txCount": 6935
     },
     {
-      "height": 958398,
-      "id": "000000000000000000008d80127d9ed42f3a9586febd498af19c0babe5f8b702",
-      "timestamp": 1784284355,
-      "txCount": 6173
+      "height": 958421,
+      "id": "00000000000000000000feacbf5b6ac5058eeba62bfcc8d0cfacd6e44a6cd06b",
+      "timestamp": 1784295295,
+      "txCount": 4683
     },
     {
-      "height": 958397,
-      "id": "00000000000000000000e471693272f6ce4aa416cb964e9653be7c67dc0714ed",
-      "timestamp": 1784284185,
-      "txCount": 6326
+      "height": 958420,
+      "id": "000000000000000000006b922a379f40e7f957c6d8d49fbd5b2b2bf581f63a69",
+      "timestamp": 1784295181,
+      "txCount": 5576
     },
     {
-      "height": 958396,
-      "id": "0000000000000000000152e0e8d3e7b63fc7ba1a90270c393011a44e22c32585",
-      "timestamp": 1784284056,
-      "txCount": 4698
+      "height": 958419,
+      "id": "00000000000000000001c1bac44a4bf0ad6207d4f8ce85e188d8a375d6815c11",
+      "timestamp": 1784294756,
+      "txCount": 4911
     },
     {
-      "height": 958395,
-      "id": "000000000000000000001503ce2bd471aa717cf6e27cc7d73f2b4bc4aa1fd5c1",
-      "timestamp": 1784283033,
-      "txCount": 5531
+      "height": 958418,
+      "id": "000000000000000000005a63f9c8b0aae7ae8bf551be212d1623d8e03025b71d",
+      "timestamp": 1784293726,
+      "txCount": 3905
     },
     {
-      "height": 958394,
-      "id": "00000000000000000001d7c06cbe6416f6f4a4851094562efe86f44b6f00dcdf",
-      "timestamp": 1784282915,
-      "txCount": 4488
+      "height": 958417,
+      "id": "0000000000000000000100eb3fadf7fecfd0db8e0a8a953074bdfa8a1534713d",
+      "timestamp": 1784293010,
+      "txCount": 6443
     },
     {
-      "height": 958393,
-      "id": "0000000000000000000061bdf3c9c1339c23c1dc96604ba68c771c42c37239d7",
-      "timestamp": 1784281724,
-      "txCount": 6638
+      "height": 958416,
+      "id": "00000000000000000002210ac0e112307bb0bc099c104b864d44b763d2c94995",
+      "timestamp": 1784292933,
+      "txCount": 6086
     },
     {
-      "height": 958392,
-      "id": "00000000000000000000eba9e611ed8a256493a974f368f7a1ad73ddb1311782",
-      "timestamp": 1784281591,
-      "txCount": 5837
+      "height": 958415,
+      "id": "0000000000000000000002c4ad5d1c1d10080903b5d571819757c31be1b9baf1",
+      "timestamp": 1784292613,
+      "txCount": 4974
     }
   ],
   "news": [
+    {
+      "title": "Bitcoin faces fresh headwinds as China’s Kimi beats Claude, GPT in coding benchmark",
+      "link": "https://www.coindesk.com/markets/2026/07/17/bitcoin-faces-fresh-headwinds-as-china-s-kimi-beats-claude-gpt-in-coding-benchmark",
+      "pubDate": "Fri, 17 Jul 2026 12:45:11 +0000"
+    },
+    {
+      "title": "AI frenzy losing steam leaves bitcoin less volatile than South Korean stocks",
+      "link": "https://www.coindesk.com/daybook-us/2026/07/17/ai-frenzy-losing-steam-leaves-bitcoin-less-volatile-than-south-korean-stocks",
+      "pubDate": "Fri, 17 Jul 2026 11:48:20 +0000"
+    },
     {
       "title": "Live markets: Bitcoin slips to $63,000 as the chip rout goes global",
       "link": "https://www.coindesk.com/markets/2026/07/17/live-markets-bitcoin-slips-to-usd63-000-as-the-chip-rout-goes-global",
@@ -475,16 +485,6 @@
       "title": "Stripe’s $53 billion PayPal bid is a high-stakes play to own the future of digital payments",
       "link": "https://www.coindesk.com/business/2026/07/16/stripe-s-usd53-billion-paypal-bid-is-a-high-stakes-play-to-own-the-future-of-digital-payments",
       "pubDate": "Thu, 16 Jul 2026 16:37:16 +0000"
-    },
-    {
-      "title": "Visa backs Open USD with new stablecoin platform as Circle faces fresh competition",
-      "link": "https://www.coindesk.com/business/2026/07/16/visa-backs-open-usd-with-new-stablecoin-platform-as-circle-faces-fresh-competition",
-      "pubDate": "Thu, 16 Jul 2026 16:14:30 +0000"
-    },
-    {
-      "title": "Keyrock acquires BlockFills trading assets to expand institutional crypto business",
-      "link": "https://www.coindesk.com/business/2026/07/16/keyrock-acquires-blockfills-trading-assets-to-expand-institutional-crypto-business",
-      "pubDate": "Thu, 16 Jul 2026 15:26:15 +0000"
     }
   ]
 }
