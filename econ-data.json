@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-07-17T03:31:14.296Z",
+  "fetchedAt": "2026-07-17T13:58:03.610Z",
   "indicators": {
     "UNRATE": {
       "latest": {
@@ -193,12 +193,12 @@
     },
     "INDPRO": {
       "latest": {
-        "date": "2026-05-01",
-        "value": 102.6475
+        "date": "2026-06-01",
+        "value": 102.6395
       },
       "previous": {
-        "date": "2026-04-01",
-        "value": 102.509
+        "date": "2026-05-01",
+        "value": 102.5606
       }
     },
     "RSAFS": {
@@ -243,12 +243,12 @@
     },
     "PERMIT": {
       "latest": {
-        "date": "2026-05-01",
-        "value": 1410
+        "date": "2026-06-01",
+        "value": 1367
       },
       "previous": {
-        "date": "2026-04-01",
-        "value": 1423
+        "date": "2026-05-01",
+        "value": 1410
       }
     },
     "GFDEGDQ188S": {
@@ -263,12 +263,12 @@
     },
     "VIXCLS": {
       "latest": {
-        "date": "2026-07-15",
-        "value": 15.67
+        "date": "2026-07-16",
+        "value": 16.73
       },
       "previous": {
-        "date": "2026-07-14",
-        "value": 16.5
+        "date": "2026-07-15",
+        "value": 15.67
       }
     },
     "BOPGSTB": {
@@ -300,6 +300,12 @@
     }
   },
   "news": [
+    {
+      "title": "Economic Foundations and Christianity Are Compatible",
+      "link": "https://mises.org/mises-wire/economic-foundations-and-christianity-are-compatible",
+      "pubDate": "Fri, 17 Jul 2026 05:00:00 CDT",
+      "kind": "Mises Wire"
+    },
     {
       "title": "Graham, McConnell, and America's Late-Soviet Politics",
       "link": "https://mises.org/podcasts/power-and-market/graham-mcconnell-and-americas-late-soviet-politics",
@@ -353,12 +359,6 @@
       "link": "https://mises.org/podcasts/audio-mises-wire/foucault-panopticism-and-carceral-society-rise-surveillance-state",
       "pubDate": "Wed, 15 Jul 2026 04:06:57 CDT",
       "kind": "Podcast"
-    },
-    {
-      "title": "The Vendée: The French War for National Liberation",
-      "link": "https://mises.org/mises-wire/vendee-french-war-national-liberation",
-      "pubDate": "Wed, 15 Jul 2026 04:00:00 CDT",
-      "kind": "Mises Wire"
     }
   ]
 }
