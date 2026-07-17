@@ -1,13 +1,13 @@
 {
-  "fetchedAt": "2026-07-17T08:25:38.617Z",
+  "fetchedAt": "2026-07-17T10:56:55.950Z",
   "price": {
-    "usd": 62687,
-    "time": 1784276408
+    "usd": 63128,
+    "time": 1784285708
   },
   "moves": {
-    "d1": -1.727461230714622,
-    "d7": -2.1769599730023126,
-    "d30": -2.694045838353143
+    "d1": -1.0361186940283096,
+    "d7": -1.4887796381337415,
+    "d30": -2.0095031774300387
   },
   "history90d": [
     {
@@ -372,60 +372,75 @@
     },
     {
       "date": "2026-07-17",
-      "close": 62775.66738334507
+      "close": 63123.621565848
     }
   ],
   "blocks": [
     {
-      "height": 958383,
-      "id": "00000000000000000001db52a4485f7d1a1784b7ba6c5b93db1b20449ac2628b",
-      "timestamp": 1784276401,
-      "txCount": 3838
+      "height": 958399,
+      "id": "00000000000000000001d317aaf7c47762c2ba93c2a053dd1276ca5c31e5c600",
+      "timestamp": 1784284791,
+      "txCount": 5447
     },
     {
-      "height": 958382,
-      "id": "00000000000000000000d1f42ef7b68ae4c1dd7a7ba10244b606f9a65a3e50cb",
-      "timestamp": 1784276118,
-      "txCount": 4276
+      "height": 958398,
+      "id": "000000000000000000008d80127d9ed42f3a9586febd498af19c0babe5f8b702",
+      "timestamp": 1784284355,
+      "txCount": 6173
     },
     {
-      "height": 958381,
-      "id": "000000000000000000020fbc5d878737e28dbdaae8bac01cb7ed42701296c323",
-      "timestamp": 1784275980,
-      "txCount": 4149
+      "height": 958397,
+      "id": "00000000000000000000e471693272f6ce4aa416cb964e9653be7c67dc0714ed",
+      "timestamp": 1784284185,
+      "txCount": 6326
     },
     {
-      "height": 958380,
-      "id": "00000000000000000000fedfadc9a5578efc9550fa530639b55be5a949dcb369",
-      "timestamp": 1784272022,
-      "txCount": 5307
+      "height": 958396,
+      "id": "0000000000000000000152e0e8d3e7b63fc7ba1a90270c393011a44e22c32585",
+      "timestamp": 1784284056,
+      "txCount": 4698
     },
     {
-      "height": 958379,
-      "id": "0000000000000000000032cbac146f2a02acbf55207cc540c68473478dd5f18f",
-      "timestamp": 1784271685,
-      "txCount": 4719
+      "height": 958395,
+      "id": "000000000000000000001503ce2bd471aa717cf6e27cc7d73f2b4bc4aa1fd5c1",
+      "timestamp": 1784283033,
+      "txCount": 5531
     },
     {
-      "height": 958378,
-      "id": "00000000000000000001021a510b3df25dea265d4f9c27f9c9c9b074d41ea2fa",
-      "timestamp": 1784270739,
-      "txCount": 6915
+      "height": 958394,
+      "id": "00000000000000000001d7c06cbe6416f6f4a4851094562efe86f44b6f00dcdf",
+      "timestamp": 1784282915,
+      "txCount": 4488
     },
     {
-      "height": 958377,
-      "id": "0000000000000000000191d15687e328945fa8d607bf1d15a9a794c699eeedc4",
-      "timestamp": 1784270880,
-      "txCount": 5867
+      "height": 958393,
+      "id": "0000000000000000000061bdf3c9c1339c23c1dc96604ba68c771c42c37239d7",
+      "timestamp": 1784281724,
+      "txCount": 6638
     },
     {
-      "height": 958376,
-      "id": "000000000000000000020d8e227306f92967a86e33ecf0c4f71ef54e52e9012f",
-      "timestamp": 1784270460,
-      "txCount": 6694
+      "height": 958392,
+      "id": "00000000000000000000eba9e611ed8a256493a974f368f7a1ad73ddb1311782",
+      "timestamp": 1784281591,
+      "txCount": 5837
     }
   ],
   "news": [
+    {
+      "title": "Live markets: Bitcoin slips to $63,000 as the chip rout goes global",
+      "link": "https://www.coindesk.com/markets/2026/07/17/live-markets-bitcoin-slips-to-usd63-000-as-the-chip-rout-goes-global",
+      "pubDate": "Fri, 17 Jul 2026 10:43:57 +0000"
+    },
+    {
+      "title": "Risk-off wave drags bitcoin below $63,000 as AI selloff spreads from stocks to crypto",
+      "link": "https://www.coindesk.com/markets/2026/07/17/risk-off-wave-drags-bitcoin-below-usd63-000-as-ai-selloff-spreads-from-stocks-to-crypto",
+      "pubDate": "Fri, 17 Jul 2026 10:26:06 +0000"
+    },
+    {
+      "title": "Airbnb CEO says X account was hacked, attacker posted AI-slop on tokenization",
+      "link": "https://www.coindesk.com/web3/2026/07/17/airbnb-ceo-says-x-account-was-hacked-attacker-posted-ai-slop-thread-on-tokenization",
+      "pubDate": "Fri, 17 Jul 2026 08:50:22 +0000"
+    },
     {
       "title": "Ether falls twice as hard as bitcoin and HYPE drops 10% as the chip trade unwinds",
       "link": "https://www.coindesk.com/markets/2026/07/17/ether-falls-twice-as-hard-as-bitcoin-and-hype-drops-10-as-the-chip-trade-unwinds",
@@ -437,7 +452,7 @@
       "pubDate": "Fri, 17 Jul 2026 07:28:52 +0000"
     },
     {
-      "title": "Bitcoin Ordinals leader proposes a way to bypass data restriction efforts",
+      "title": "DOG Mode vs. BIP-110: Inside the Bitcoin client built to bypass data restrictions",
       "link": "https://www.coindesk.com/tech/2026/07/17/bitcoin-s-anti-spam-fight-gets-a-dog-mode-reply",
       "pubDate": "Fri, 17 Jul 2026 05:32:00 +0000"
     },
@@ -470,21 +485,6 @@
       "title": "Keyrock acquires BlockFills trading assets to expand institutional crypto business",
       "link": "https://www.coindesk.com/business/2026/07/16/keyrock-acquires-blockfills-trading-assets-to-expand-institutional-crypto-business",
       "pubDate": "Thu, 16 Jul 2026 15:26:15 +0000"
-    },
-    {
-      "title": "The Clarity Act is the most important consumer protection effort in years",
-      "link": "https://www.coindesk.com/opinion/2026/07/16/the-clarity-act-is-the-most-important-consumer-protection-effort-in-years",
-      "pubDate": "Thu, 16 Jul 2026 15:07:30 +0000"
-    },
-    {
-      "title": "Crypto for Advisors: Strengthening defenses against AI fraud",
-      "link": "https://www.coindesk.com/coindesk-indices/2026/07/16/crypto-for-advisors-strengthening-defenses-against-ai-fraud",
-      "pubDate": "Thu, 16 Jul 2026 14:54:11 +0000"
-    },
-    {
-      "title": "Crypto brokerage firm Alpaca raises $135 million for tokenized stock infrastructure",
-      "link": "https://www.coindesk.com/business/2026/07/16/crypto-brokerage-firm-alpaca-raises-usd135-million-for-tokenized-stock-infrastructure",
-      "pubDate": "Thu, 16 Jul 2026 14:19:32 +0000"
     }
   ]
 }
