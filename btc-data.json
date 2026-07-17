@@ -1,13 +1,13 @@
 {
-  "fetchedAt": "2026-07-17T03:33:14.349Z",
+  "fetchedAt": "2026-07-17T08:25:38.617Z",
   "price": {
-    "usd": 63637,
-    "time": 1784259007
+    "usd": 62687,
+    "time": 1784276408
   },
   "moves": {
-    "d1": -0.23817458705930328,
-    "d7": -0.694485328727612,
-    "d30": -1.2194074531446497
+    "d1": -1.727461230714622,
+    "d7": -2.1769599730023126,
+    "d30": -2.694045838353143
   },
   "history90d": [
     {
@@ -372,60 +372,80 @@
     },
     {
       "date": "2026-07-17",
-      "close": 63621.86755473571
+      "close": 62775.66738334507
     }
   ],
   "blocks": [
     {
-      "height": 958355,
-      "id": "0000000000000000000000bd8fcc41176f88c0bc60608473540ff9453d6cd6c0",
-      "timestamp": 1784257910,
-      "txCount": 3478
+      "height": 958383,
+      "id": "00000000000000000001db52a4485f7d1a1784b7ba6c5b93db1b20449ac2628b",
+      "timestamp": 1784276401,
+      "txCount": 3838
     },
     {
-      "height": 958354,
-      "id": "00000000000000000001469577e72f4ff34933c7f9943e3764e28be449bc6db0",
-      "timestamp": 1784257578,
-      "txCount": 3311
+      "height": 958382,
+      "id": "00000000000000000000d1f42ef7b68ae4c1dd7a7ba10244b606f9a65a3e50cb",
+      "timestamp": 1784276118,
+      "txCount": 4276
     },
     {
-      "height": 958353,
-      "id": "00000000000000000001739eea5db17f8c0f84cba72ee12b6f312fa5fd9657e3",
-      "timestamp": 1784256118,
-      "txCount": 6708
+      "height": 958381,
+      "id": "000000000000000000020fbc5d878737e28dbdaae8bac01cb7ed42701296c323",
+      "timestamp": 1784275980,
+      "txCount": 4149
     },
     {
-      "height": 958352,
-      "id": "00000000000000000001356e9862093ffdf70f7b2a09738ba90208d3c832a3f5",
-      "timestamp": 1784256104,
-      "txCount": 6184
+      "height": 958380,
+      "id": "00000000000000000000fedfadc9a5578efc9550fa530639b55be5a949dcb369",
+      "timestamp": 1784272022,
+      "txCount": 5307
     },
     {
-      "height": 958351,
-      "id": "0000000000000000000037356c655e05cbf5b78ade5a4664fe2b5d9e4dfe7d82",
-      "timestamp": 1784255885,
-      "txCount": 5461
+      "height": 958379,
+      "id": "0000000000000000000032cbac146f2a02acbf55207cc540c68473478dd5f18f",
+      "timestamp": 1784271685,
+      "txCount": 4719
     },
     {
-      "height": 958350,
-      "id": "0000000000000000000135ad6bbe8cd065bc072fab6b97ea64f39be31819aef1",
-      "timestamp": 1784255482,
-      "txCount": 5157
+      "height": 958378,
+      "id": "00000000000000000001021a510b3df25dea265d4f9c27f9c9c9b074d41ea2fa",
+      "timestamp": 1784270739,
+      "txCount": 6915
     },
     {
-      "height": 958349,
-      "id": "000000000000000000018efd61c3a9f29faa51298c7a9611223861d94dc4b2f1",
-      "timestamp": 1784255339,
-      "txCount": 3748
+      "height": 958377,
+      "id": "0000000000000000000191d15687e328945fa8d607bf1d15a9a794c699eeedc4",
+      "timestamp": 1784270880,
+      "txCount": 5867
     },
     {
-      "height": 958348,
-      "id": "000000000000000000017aa6d41deeb343366230f33f89d23a594d0a48cfebea",
-      "timestamp": 1784254652,
-      "txCount": 3350
+      "height": 958376,
+      "id": "000000000000000000020d8e227306f92967a86e33ecf0c4f71ef54e52e9012f",
+      "timestamp": 1784270460,
+      "txCount": 6694
     }
   ],
   "news": [
+    {
+      "title": "Ether falls twice as hard as bitcoin and HYPE drops 10% as the chip trade unwinds",
+      "link": "https://www.coindesk.com/markets/2026/07/17/ether-falls-twice-as-hard-as-bitcoin-and-hype-drops-10-as-the-chip-trade-unwinds",
+      "pubDate": "Fri, 17 Jul 2026 07:29:41 +0000"
+    },
+    {
+      "title": "This $28 million ether market bet aims to profit from pure market chaos",
+      "link": "https://www.coindesk.com/markets/2026/07/17/this-usd28-million-ether-market-bet-aims-to-profit-from-pure-market-chaos",
+      "pubDate": "Fri, 17 Jul 2026 07:28:52 +0000"
+    },
+    {
+      "title": "Bitcoin Ordinals leader proposes a way to bypass data restriction efforts",
+      "link": "https://www.coindesk.com/tech/2026/07/17/bitcoin-s-anti-spam-fight-gets-a-dog-mode-reply",
+      "pubDate": "Fri, 17 Jul 2026 05:32:00 +0000"
+    },
+    {
+      "title": "Bitcoin under $63,000 after new U.S. strike on Iran. Trump's China comment adds to uncertainty",
+      "link": "https://www.coindesk.com/markets/2026/07/17/bitcoin-under-usd64-000-after-u-s-strike-on-iran-trump-s-china-comment-adds-to-uncertainty",
+      "pubDate": "Fri, 17 Jul 2026 04:10:09 +0000"
+    },
     {
       "title": "$1.9 trillion asset manager T. Rowe Price bets on active management with first multi-token crypto ETF",
       "link": "https://www.coindesk.com/markets/2026/07/16/usd1-9-trillion-asset-manager-t-rowe-price-bets-on-active-management-with-first-multi-token-crypto-etf",
@@ -465,26 +485,6 @@
       "title": "Crypto brokerage firm Alpaca raises $135 million for tokenized stock infrastructure",
       "link": "https://www.coindesk.com/business/2026/07/16/crypto-brokerage-firm-alpaca-raises-usd135-million-for-tokenized-stock-infrastructure",
       "pubDate": "Thu, 16 Jul 2026 14:19:32 +0000"
-    },
-    {
-      "title": "Ledger wants AI agents to manage crypto without holding your keys",
-      "link": "https://www.coindesk.com/tech/2026/07/15/ledger-wants-ai-agents-to-manage-crypto-without-holding-your-keys",
-      "pubDate": "Thu, 16 Jul 2026 13:00:00 +0000"
-    },
-    {
-      "title": "Galaxy targets institutional stablecoin yield with new DeFi vaults",
-      "link": "https://www.coindesk.com/tech/2026/07/16/galaxy-targets-institutional-stablecoin-yield-with-new-defi-vaults",
-      "pubDate": "Thu, 16 Jul 2026 12:00:00 +0000"
-    },
-    {
-      "title": "The most popular bitcoin call option has slipped by $10,000",
-      "link": "https://www.coindesk.com/daybook-us/2026/07/16/the-most-popular-bitcoin-call-option-has-slipped-by-usd10-000",
-      "pubDate": "Thu, 16 Jul 2026 11:27:53 +0000"
-    },
-    {
-      "title": "Inside the high-stakes race to build an open financial system specifically for AI bots",
-      "link": "https://www.coindesk.com/business/2026/07/16/ai-payments-have-a-new-open-standards-body-its-aim-is-to-reinvent-the-internet",
-      "pubDate": "Thu, 16 Jul 2026 11:22:37 +0000"
     }
   ]
 }
