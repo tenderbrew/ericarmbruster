@@ -1,13 +1,13 @@
 {
-  "fetchedAt": "2026-07-17T16:34:02.547Z",
+  "fetchedAt": "2026-07-17T19:30:12.575Z",
   "price": {
-    "usd": 63431,
-    "time": 1784305808
+    "usd": 63980,
+    "time": 1784316310
   },
   "moves": {
-    "d1": -0.5611146382098253,
-    "d7": -1.015948251591392,
-    "d30": -1.5391711450951306
+    "d1": 0.2995362748078323,
+    "d7": -0.159233957163174,
+    "d30": -0.686985383537797
   },
   "history90d": [
     {
@@ -372,60 +372,70 @@
     },
     {
       "date": "2026-07-17",
-      "close": 63360.77608556154
+      "close": 64019.811248500475
     }
   ],
   "blocks": [
     {
-      "height": 958435,
-      "id": "000000000000000000015e8ed3a33c66c24f6f70b851be9de30189b0c32b08db",
-      "timestamp": 1784305801,
-      "txCount": 4668
+      "height": 958445,
+      "id": "00000000000000000000e349eb40bcc5a1372c8d152ab12f6072fa716f9416e8",
+      "timestamp": 1784316529,
+      "txCount": 4230
     },
     {
-      "height": 958434,
-      "id": "00000000000000000000280f386b8941b8964f1a0a30fb5d424fcb360ba43e99",
-      "timestamp": 1784305165,
-      "txCount": 3750
+      "height": 958444,
+      "id": "000000000000000000014592284906720b7506fc8e4f4426f1cab2f22b7c0fa9",
+      "timestamp": 1784315543,
+      "txCount": 4111
     },
     {
-      "height": 958433,
-      "id": "00000000000000000001150f433bd782b222ecaf5dfb7780013c2b934e0e7140",
-      "timestamp": 1784304536,
-      "txCount": 4140
+      "height": 958443,
+      "id": "00000000000000000000f65534bc7efcaee5cca3c4e11591daee0ef29ad9c1b8",
+      "timestamp": 1784315420,
+      "txCount": 4781
     },
     {
-      "height": 958432,
-      "id": "000000000000000000021fb7871138c76c262471fe3b178e8829d62cbf167ae8",
-      "timestamp": 1784302997,
-      "txCount": 3092
+      "height": 958442,
+      "id": "0000000000000000000191665947fdc1896fdc05d45b79a8359101fc5462d111",
+      "timestamp": 1784315196,
+      "txCount": 4110
     },
     {
-      "height": 958431,
-      "id": "0000000000000000000108134886191cca47cb3db5df607c7c5aa9a02e957b3f",
-      "timestamp": 1784302784,
-      "txCount": 3271
+      "height": 958441,
+      "id": "00000000000000000000988ec315b8eb5223cf59e2598d7c4be4db2de197d67b",
+      "timestamp": 1784312878,
+      "txCount": 4046
     },
     {
-      "height": 958430,
-      "id": "0000000000000000000048b18959b831360d98059a2b66a59344e232ee51677e",
-      "timestamp": 1784302408,
-      "txCount": 4187
+      "height": 958440,
+      "id": "00000000000000000000fba1253013ba8d4e2e54253a41d36fde4d8593a22097",
+      "timestamp": 1784311576,
+      "txCount": 4138
     },
     {
-      "height": 958429,
-      "id": "000000000000000000022e062fe6236b71722b7ade5079d5c45e73a5561252e1",
-      "timestamp": 1784301574,
-      "txCount": 3450
+      "height": 958439,
+      "id": "00000000000000000001f2c4b1781206cec8b25e2454ec54873d14af288ea3c6",
+      "timestamp": 1784309309,
+      "txCount": 4064
     },
     {
-      "height": 958428,
-      "id": "000000000000000000020787a43232bbfd5783861c0249ca0472293bb0eea641",
-      "timestamp": 1784301314,
-      "txCount": 3642
+      "height": 958438,
+      "id": "0000000000000000000204373ce8071deb24f181e3b6ff59b93abf080f2d34e3",
+      "timestamp": 1784307022,
+      "txCount": 2711
     }
   ],
   "news": [
+    {
+      "title": "Polymarket traders cut Clarity Act passage odds to record low as Senate delay drags on",
+      "link": "https://www.coindesk.com/markets/2026/07/17/polymarket-traders-cut-clarity-act-passage-odds-to-record-low-as-senate-delay-drags-on",
+      "pubDate": "Fri, 17 Jul 2026 18:00:11 +0000"
+    },
+    {
+      "title": "Stripe and Swift race to control the next generation of global payments infrastructure",
+      "link": "https://www.coindesk.com/business/2026/07/17/stripe-and-swift-race-to-control-the-next-generation-of-global-payments-infrastructure",
+      "pubDate": "Fri, 17 Jul 2026 17:23:01 +0000"
+    },
     {
       "title": "Cardano hands core development to outside teams in decentralization push",
       "link": "https://www.coindesk.com/tech/2026/07/17/cardano-hands-core-development-to-outside-teams-in-decentralization-push",
@@ -452,7 +462,7 @@
       "pubDate": "Fri, 17 Jul 2026 11:48:20 +0000"
     },
     {
-      "title": "Live markets: Bitcoin slips below $63,000 as the chip rout goes global",
+      "title": "Live markets: Bitcoin returns to $63,000 as Nasdaq trims large early loss",
       "link": "https://www.coindesk.com/markets/2026/07/17/live-markets-bitcoin-slips-to-usd63-000-as-the-chip-rout-goes-global",
       "pubDate": "Fri, 17 Jul 2026 10:43:57 +0000"
     },
@@ -475,16 +485,6 @@
       "title": "This $28 million ether market bet aims to profit from pure market chaos",
       "link": "https://www.coindesk.com/markets/2026/07/17/this-usd28-million-ether-market-bet-aims-to-profit-from-pure-market-chaos",
       "pubDate": "Fri, 17 Jul 2026 07:28:52 +0000"
-    },
-    {
-      "title": "DOG Mode vs. BIP-110: Inside the Bitcoin client built to bypass data restrictions",
-      "link": "https://www.coindesk.com/tech/2026/07/17/bitcoin-s-anti-spam-fight-gets-a-dog-mode-reply",
-      "pubDate": "Fri, 17 Jul 2026 05:32:00 +0000"
-    },
-    {
-      "title": "Bitcoin under $63,000 after new U.S. strike on Iran. Trump's China comment adds to uncertainty",
-      "link": "https://www.coindesk.com/markets/2026/07/17/bitcoin-under-usd64-000-after-u-s-strike-on-iran-trump-s-china-comment-adds-to-uncertainty",
-      "pubDate": "Fri, 17 Jul 2026 04:10:09 +0000"
     }
   ]
 }
