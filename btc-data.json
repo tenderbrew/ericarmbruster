@@ -1,13 +1,13 @@
 {
-  "fetchedAt": "2026-07-18T16:07:59.077Z",
+  "fetchedAt": "2026-07-18T19:21:23.184Z",
   "price": {
-    "usd": 64080,
-    "time": 1784390405
+    "usd": 64499,
+    "time": 1784402107
   },
   "moves": {
-    "d1": 0.24167294795922611,
-    "d7": 0.29300250697232855,
-    "d30": 1.875625830540173
+    "d1": 0.8971233375533849,
+    "d7": 0.9487885252373207,
+    "d30": 2.541760150499539
   },
   "history90d": [
     {
@@ -372,60 +372,75 @@
     },
     {
       "date": "2026-07-18",
-      "close": 64060.483698527554
+      "close": 64519.036128717
     }
   ],
   "blocks": [
     {
-      "height": 958574,
-      "id": "00000000000000000001c942edeed03c29f5f524c2b1e141ed4adf63a8ecf5e0",
-      "timestamp": 1784390676,
-      "txCount": 4638
+      "height": 958598,
+      "id": "0000000000000000000015bab47608b00b7e11d67d160744ede63309b0a7dde4",
+      "timestamp": 1784401332,
+      "txCount": 4569
     },
     {
-      "height": 958573,
-      "id": "00000000000000000001b720ae616140ef527a9f383438fc8bdfff50c90fe780",
-      "timestamp": 1784389794,
-      "txCount": 6227
+      "height": 958597,
+      "id": "000000000000000000014e0458040fe09fceb17b9c3434233de97cb86e4f0a2d",
+      "timestamp": 1784400707,
+      "txCount": 4172
     },
     {
-      "height": 958572,
-      "id": "00000000000000000001246891d81178613edd45b06d0d35d9e2a325c1e5ab92",
-      "timestamp": 1784389657,
-      "txCount": 5882
+      "height": 958596,
+      "id": "0000000000000000000011fb141248e132defa3631ab0ef1785912dbd2a4e4f5",
+      "timestamp": 1784400158,
+      "txCount": 4698
     },
     {
-      "height": 958571,
-      "id": "000000000000000000011d5546511314a90f154460b2ad80c9f4db961e1474e8",
-      "timestamp": 1784389165,
-      "txCount": 6628
+      "height": 958595,
+      "id": "000000000000000000022365ed61acf82a126f3a92ca77b2b966f61e8cbadd64",
+      "timestamp": 1784399663,
+      "txCount": 4499
     },
     {
-      "height": 958570,
-      "id": "0000000000000000000039eea17209a323e4e050d2c7c939b1cae96baebc646a",
-      "timestamp": 1784389043,
-      "txCount": 6856
+      "height": 958594,
+      "id": "000000000000000000020934afa0945d959250e9a4598d39c53fa280639b096a",
+      "timestamp": 1784397901,
+      "txCount": 4409
     },
     {
-      "height": 958569,
-      "id": "000000000000000000006faa6b314e51c0eab2c3665d1cf1d1fddfc713597e20",
-      "timestamp": 1784389032,
-      "txCount": 4527
+      "height": 958593,
+      "id": "000000000000000000014528018795cfc768cdd2b18264b648fd052e0f456e4d",
+      "timestamp": 1784397504,
+      "txCount": 6794
     },
     {
-      "height": 958568,
-      "id": "00000000000000000001b5d03111b9ef3ca37cac42842c871405629b65862e3d",
-      "timestamp": 1784388227,
-      "txCount": 6441
+      "height": 958592,
+      "id": "00000000000000000000f9df1332dd5d0bb960bf3a0925d39141c1a9e55903c7",
+      "timestamp": 1784397321,
+      "txCount": 5013
     },
     {
-      "height": 958567,
-      "id": "0000000000000000000155a56a59a616b7c13948205f6d3fcbd3f5548ff2ff28",
-      "timestamp": 1784388160,
-      "txCount": 3995
+      "height": 958591,
+      "id": "000000000000000000018b2bf4e66b77bfc6f62f5a40f913f559e875d5f2fb04",
+      "timestamp": 1784396861,
+      "txCount": 4195
     }
   ],
   "news": [
+    {
+      "title": "Crypto executives say digital native generations may never need a bank account",
+      "link": "https://www.coindesk.com/business/2026/07/17/crypto-executives-say-digital-native-generations-may-never-need-a-bank-account",
+      "pubDate": "Sat, 18 Jul 2026 18:30:00 +0000"
+    },
+    {
+      "title": "DOG Mode explains Bitcoin's next governance fight",
+      "link": "https://www.coindesk.com/tech/2026/07/18/dog-mode-explains-bitcoin-s-next-governance-fight",
+      "pubDate": "Sat, 18 Jul 2026 17:00:00 +0000"
+    },
+    {
+      "title": "Trump targets Brazil's payments system while dollar stablecoins are quietly overtaking country's payments",
+      "link": "https://www.coindesk.com/business/2026/07/18/trump-targets-brazil-s-payments-system-while-dollar-stablecoins-quietly-dominate-country-s-payments",
+      "pubDate": "Sat, 18 Jul 2026 16:09:59 +0000"
+    },
     {
       "title": "Here is why a massive $1.6 billion in crypto liquidity is sitting idle and wasting away",
       "link": "https://www.coindesk.com/web3/2026/07/18/here-is-why-a-massive-usd1-6-billion-in-crypto-liquidity-is-sitting-idle-and-wasting-away",
@@ -470,21 +485,6 @@
       "title": "Bitcoin faces fresh headwinds as China’s Kimi beats Claude, GPT in coding benchmark",
       "link": "https://www.coindesk.com/markets/2026/07/17/bitcoin-faces-fresh-headwinds-as-china-s-kimi-beats-claude-gpt-in-coding-benchmark",
       "pubDate": "Fri, 17 Jul 2026 12:45:11 +0000"
-    },
-    {
-      "title": "AI frenzy losing steam leaves bitcoin less volatile than South Korean stocks",
-      "link": "https://www.coindesk.com/daybook-us/2026/07/17/ai-frenzy-losing-steam-leaves-bitcoin-less-volatile-than-south-korean-stocks",
-      "pubDate": "Fri, 17 Jul 2026 11:48:20 +0000"
-    },
-    {
-      "title": "Live markets: Bitcoin returns to $63,000 as Nasdaq trims large early loss",
-      "link": "https://www.coindesk.com/markets/2026/07/17/live-markets-bitcoin-slips-to-usd63-000-as-the-chip-rout-goes-global",
-      "pubDate": "Fri, 17 Jul 2026 10:43:57 +0000"
-    },
-    {
-      "title": "Risk-off wave drags bitcoin below $63,000 as AI selloff spreads from stocks to crypto",
-      "link": "https://www.coindesk.com/markets/2026/07/17/risk-off-wave-drags-bitcoin-below-usd63-000-as-ai-selloff-spreads-from-stocks-to-crypto",
-      "pubDate": "Fri, 17 Jul 2026 10:26:06 +0000"
     }
   ]
 }
