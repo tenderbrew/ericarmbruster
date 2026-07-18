@@ -1,13 +1,13 @@
 {
-  "fetchedAt": "2026-07-18T19:21:23.184Z",
+  "fetchedAt": "2026-07-18T22:04:13.701Z",
   "price": {
-    "usd": 64499,
-    "time": 1784402107
+    "usd": 64692,
+    "time": 1784412005
   },
   "moves": {
-    "d1": 0.8971233375533849,
-    "d7": 0.9487885252373207,
-    "d30": 2.541760150499539
+    "d1": 1.1990372401588179,
+    "d7": 1.2508570252973472,
+    "d30": 2.84859529071948
   },
   "history90d": [
     {
@@ -372,60 +372,65 @@
     },
     {
       "date": "2026-07-18",
-      "close": 64519.036128717
+      "close": 64723.41432387899
     }
   ],
   "blocks": [
     {
-      "height": 958598,
-      "id": "0000000000000000000015bab47608b00b7e11d67d160744ede63309b0a7dde4",
-      "timestamp": 1784401332,
-      "txCount": 4569
+      "height": 958615,
+      "id": "00000000000000000001b9f937ee37150194e23447158323c5124f00198ad152",
+      "timestamp": 1784411255,
+      "txCount": 6850
     },
     {
-      "height": 958597,
-      "id": "000000000000000000014e0458040fe09fceb17b9c3434233de97cb86e4f0a2d",
-      "timestamp": 1784400707,
-      "txCount": 4172
+      "height": 958614,
+      "id": "00000000000000000001c7d4aea64306eb1b5cf056e23f1101c87fbf34633c16",
+      "timestamp": 1784411118,
+      "txCount": 5837
     },
     {
-      "height": 958596,
-      "id": "0000000000000000000011fb141248e132defa3631ab0ef1785912dbd2a4e4f5",
-      "timestamp": 1784400158,
-      "txCount": 4698
+      "height": 958613,
+      "id": "00000000000000000000ea6e6f14254ba03fd21ea8557d72da3ae2b61d757da9",
+      "timestamp": 1784410509,
+      "txCount": 5348
     },
     {
-      "height": 958595,
-      "id": "000000000000000000022365ed61acf82a126f3a92ca77b2b966f61e8cbadd64",
-      "timestamp": 1784399663,
-      "txCount": 4499
+      "height": 958612,
+      "id": "000000000000000000006e5774897eb92f8f0a1490a6f9ee5a5772805f6afe77",
+      "timestamp": 1784410177,
+      "txCount": 6559
     },
     {
-      "height": 958594,
-      "id": "000000000000000000020934afa0945d959250e9a4598d39c53fa280639b096a",
-      "timestamp": 1784397901,
-      "txCount": 4409
+      "height": 958611,
+      "id": "000000000000000000022de2328936d13d505dee38d6643303aa316859b825ed",
+      "timestamp": 1784409884,
+      "txCount": 6859
     },
     {
-      "height": 958593,
-      "id": "000000000000000000014528018795cfc768cdd2b18264b648fd052e0f456e4d",
-      "timestamp": 1784397504,
-      "txCount": 6794
+      "height": 958610,
+      "id": "00000000000000000001b1042d796bbf8f2b3542adb9ded5ac5a5cdf476851ff",
+      "timestamp": 1784409750,
+      "txCount": 4977
     },
     {
-      "height": 958592,
-      "id": "00000000000000000000f9df1332dd5d0bb960bf3a0925d39141c1a9e55903c7",
-      "timestamp": 1784397321,
-      "txCount": 5013
+      "height": 958609,
+      "id": "00000000000000000001996c0d10e521e7fb4993536c3889ff99ad7edf146b65",
+      "timestamp": 1784409439,
+      "txCount": 5175
     },
     {
-      "height": 958591,
-      "id": "000000000000000000018b2bf4e66b77bfc6f62f5a40f913f559e875d5f2fb04",
-      "timestamp": 1784396861,
-      "txCount": 4195
+      "height": 958608,
+      "id": "000000000000000000008153c31dd676874af44a7f878feb053ea21a113d1ce4",
+      "timestamp": 1784409075,
+      "txCount": 2176
     }
   ],
   "news": [
+    {
+      "title": "France orders country's internet service providers to block Polymarket",
+      "link": "https://www.coindesk.com/policy/2026/07/18/france-orders-country-s-internet-service-providers-to-block-polymarket",
+      "pubDate": "Sat, 18 Jul 2026 21:52:18 +0000"
+    },
     {
       "title": "Crypto executives say digital native generations may never need a bank account",
       "link": "https://www.coindesk.com/business/2026/07/17/crypto-executives-say-digital-native-generations-may-never-need-a-bank-account",
@@ -480,11 +485,6 @@
       "title": "Japan's SBI Group is building Asia's first cross-border digital asset empire",
       "link": "https://www.coindesk.com/business/2026/07/17/japan-s-sbi-group-is-building-asia-s-first-cross-border-digital-asset-empire",
       "pubDate": "Fri, 17 Jul 2026 13:46:46 +0000"
-    },
-    {
-      "title": "Bitcoin faces fresh headwinds as China’s Kimi beats Claude, GPT in coding benchmark",
-      "link": "https://www.coindesk.com/markets/2026/07/17/bitcoin-faces-fresh-headwinds-as-china-s-kimi-beats-claude-gpt-in-coding-benchmark",
-      "pubDate": "Fri, 17 Jul 2026 12:45:11 +0000"
     }
   ]
 }
