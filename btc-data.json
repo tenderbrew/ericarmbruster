@@ -1,13 +1,13 @@
 {
-  "fetchedAt": "2026-07-19T08:31:29.041Z",
+  "fetchedAt": "2026-07-19T10:41:51.854Z",
   "price": {
-    "usd": 64598,
-    "time": 1784449507
+    "usd": 64584,
+    "time": 1784457309
   },
   "moves": {
-    "d1": -0.3013653701771868,
-    "d7": 1.3358533621813384,
-    "d30": 1.707256901790788
+    "d1": -0.32297255437511163,
+    "d7": 1.3138913517929396,
+    "d30": 1.6852143989791735
   },
   "history90d": [
     {
@@ -372,60 +372,65 @@
     },
     {
       "date": "2026-07-19",
-      "close": 64623.69622312523
+      "close": 64601.63042256952
     }
   ],
   "blocks": [
     {
-      "height": 958702,
-      "id": "0000000000000000000155275822580db54601d7bafd8e2fe526d5be581d5cbd",
-      "timestamp": 1784449620,
-      "txCount": 5859
+      "height": 958719,
+      "id": "000000000000000000001a4a30ac254d8cee874b71ecdc94c507abda7aa71ecf",
+      "timestamp": 1784457444,
+      "txCount": 5960
     },
     {
-      "height": 958701,
-      "id": "00000000000000000002128fee6b278963255ee33042646362c3159133d5482b",
-      "timestamp": 1784449050,
-      "txCount": 5541
+      "height": 958718,
+      "id": "000000000000000000004c2f5dbbc5e3a72c081d7fca78df24aa25b87bff1556",
+      "timestamp": 1784457549,
+      "txCount": 2051
     },
     {
-      "height": 958700,
-      "id": "000000000000000000004e2467d0f6fae014a30e19c3205f761f50de8ac11a38",
-      "timestamp": 1784448590,
-      "txCount": 6460
+      "height": 958717,
+      "id": "00000000000000000002175e481d241b798dea6248c11f29e9463b3adc8b8a81",
+      "timestamp": 1784456714,
+      "txCount": 6512
     },
     {
-      "height": 958699,
-      "id": "00000000000000000000a8f320cab1ea3b4e6948a45c6f645cc042436fe8e7d9",
-      "timestamp": 1784448514,
-      "txCount": 5200
+      "height": 958716,
+      "id": "00000000000000000000fb5e8739560896198683a6da37d691034e24201175bc",
+      "timestamp": 1784456155,
+      "txCount": 6544
     },
     {
-      "height": 958698,
-      "id": "00000000000000000001e9552252722035ef400f335d312c513b3edef5479aa6",
-      "timestamp": 1784448105,
-      "txCount": 6362
+      "height": 958715,
+      "id": "000000000000000000004d3f690f98db581cbbc146b56025bbb9ec2e0da25979",
+      "timestamp": 1784456142,
+      "txCount": 4623
     },
     {
-      "height": 958697,
-      "id": "0000000000000000000043b53e764d00b298521a4c0b4b2ea9f4f4269214a5b8",
-      "timestamp": 1784447904,
-      "txCount": 5642
+      "height": 958714,
+      "id": "000000000000000000000afb42039ae57ff88ccbdf0fa026a92d304ad0cc6095",
+      "timestamp": 1784454704,
+      "txCount": 5810
     },
     {
-      "height": 958696,
-      "id": "000000000000000000011e9082f29fadb888c3f1e85c696138091bab3cce9737",
-      "timestamp": 1784447131,
-      "txCount": 4711
+      "height": 958713,
+      "id": "00000000000000000001dc0f2f2be30a1348351191c7bad0b8e30d3a0316020e",
+      "timestamp": 1784453998,
+      "txCount": 5104
     },
     {
-      "height": 958695,
-      "id": "00000000000000000001ddff5ce25bc0af2147b32f69f24a47bb931b0f3c8cc2",
-      "timestamp": 1784446620,
-      "txCount": 6701
+      "height": 958712,
+      "id": "000000000000000000022a650bdaa9ac26435ba7d0391d839ef5f3aac5289acc",
+      "timestamp": 1784453262,
+      "txCount": 7025
     }
   ],
   "news": [
+    {
+      "title": "Bitcoin’s quantum problem gets a recovery tool, but not for Satoshi’s 1.1 million coins",
+      "link": "https://www.coindesk.com/tech/2026/07/19/bitcoin-s-quantum-problem-gets-a-recovery-tool-but-not-for-satoshi-s-1-1-million-coin",
+      "pubDate": "Sun, 19 Jul 2026 10:00:00 +0000"
+    },
     {
       "title": "Inside Zcash's new node that targets Visa-scale privacy at 50,000 transactions per second",
       "link": "https://www.coindesk.com/tech/2026/07/16/inside-zcash-s-new-node-that-targets-visa-scale-privacy-at-50-000-transactions-per-second",
@@ -480,11 +485,6 @@
       "title": "Cardano hands core development to outside teams in decentralization push",
       "link": "https://www.coindesk.com/tech/2026/07/17/cardano-hands-core-development-to-outside-teams-in-decentralization-push",
       "pubDate": "Fri, 17 Jul 2026 16:23:26 +0000"
-    },
-    {
-      "title": "Inside Robinhood’s high-stakes bet to onboard millions of casual users onto decentralized finance",
-      "link": "https://www.coindesk.com/business/2026/07/17/inside-robinhood-s-high-stakes-bet-to-onboard-10-million-casual-investors-onto-decentralized-finance",
-      "pubDate": "Fri, 17 Jul 2026 15:36:39 +0000"
     }
   ]
 }
