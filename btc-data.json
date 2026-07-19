@@ -1,13 +1,13 @@
 {
-  "fetchedAt": "2026-07-19T03:48:32.989Z",
+  "fetchedAt": "2026-07-19T08:31:29.041Z",
   "price": {
-    "usd": 64624,
-    "time": 1784432712
+    "usd": 64598,
+    "time": 1784449507
   },
   "moves": {
-    "d1": -0.2612377423810486,
-    "d7": 1.3766399529026918,
-    "d30": 1.7481929784409322
+    "d1": -0.3013653701771868,
+    "d7": 1.3358533621813384,
+    "d30": 1.707256901790788
   },
   "history90d": [
     {
@@ -372,60 +372,65 @@
     },
     {
       "date": "2026-07-19",
-      "close": 64616.35029092864
+      "close": 64623.69622312523
     }
   ],
   "blocks": [
     {
-      "height": 958651,
-      "id": "00000000000000000000f7842d7e404a30da0ca6d7412348f32be4201907702e",
-      "timestamp": 1784432782,
-      "txCount": 6054
+      "height": 958702,
+      "id": "0000000000000000000155275822580db54601d7bafd8e2fe526d5be581d5cbd",
+      "timestamp": 1784449620,
+      "txCount": 5859
     },
     {
-      "height": 958650,
-      "id": "00000000000000000001eee6b97dc1370417f27cb229e14d8a856be1684c5ecf",
-      "timestamp": 1784432201,
-      "txCount": 3991
+      "height": 958701,
+      "id": "00000000000000000002128fee6b278963255ee33042646362c3159133d5482b",
+      "timestamp": 1784449050,
+      "txCount": 5541
     },
     {
-      "height": 958649,
-      "id": "0000000000000000000057124c9894ca7fd2e8c1c7e339dff10c6e35f639dc0b",
-      "timestamp": 1784431876,
-      "txCount": 4393
+      "height": 958700,
+      "id": "000000000000000000004e2467d0f6fae014a30e19c3205f761f50de8ac11a38",
+      "timestamp": 1784448590,
+      "txCount": 6460
     },
     {
-      "height": 958648,
-      "id": "00000000000000000001b4da82f7fe20dc90e2598a3711a170da4a1b9e3abfc8",
-      "timestamp": 1784431549,
-      "txCount": 3520
+      "height": 958699,
+      "id": "00000000000000000000a8f320cab1ea3b4e6948a45c6f645cc042436fe8e7d9",
+      "timestamp": 1784448514,
+      "txCount": 5200
     },
     {
-      "height": 958647,
-      "id": "0000000000000000000141466b4d6ee4ad01499e0da7039dbfeb533d5216226e",
-      "timestamp": 1784428574,
-      "txCount": 4481
+      "height": 958698,
+      "id": "00000000000000000001e9552252722035ef400f335d312c513b3edef5479aa6",
+      "timestamp": 1784448105,
+      "txCount": 6362
     },
     {
-      "height": 958646,
-      "id": "00000000000000000002122154787256060976bce119846233eee04fa0ac0fe2",
-      "timestamp": 1784427933,
-      "txCount": 7183
+      "height": 958697,
+      "id": "0000000000000000000043b53e764d00b298521a4c0b4b2ea9f4f4269214a5b8",
+      "timestamp": 1784447904,
+      "txCount": 5642
     },
     {
-      "height": 958645,
-      "id": "00000000000000000001e1ab70f82d6d8e95cd9b6898a0a7fbd8863d871515af",
-      "timestamp": 1784427911,
-      "txCount": 6820
+      "height": 958696,
+      "id": "000000000000000000011e9082f29fadb888c3f1e85c696138091bab3cce9737",
+      "timestamp": 1784447131,
+      "txCount": 4711
     },
     {
-      "height": 958644,
-      "id": "000000000000000000018dc7718725a47531da58c983365bc490c10e0ae8e57e",
-      "timestamp": 1784427685,
-      "txCount": 5307
+      "height": 958695,
+      "id": "00000000000000000001ddff5ce25bc0af2147b32f69f24a47bb931b0f3c8cc2",
+      "timestamp": 1784446620,
+      "txCount": 6701
     }
   ],
   "news": [
+    {
+      "title": "Inside Zcash's new node that targets Visa-scale privacy at 50,000 transactions per second",
+      "link": "https://www.coindesk.com/tech/2026/07/16/inside-zcash-s-new-node-that-targets-visa-scale-privacy-at-50-000-transactions-per-second",
+      "pubDate": "Sun, 19 Jul 2026 05:37:34 +0000"
+    },
     {
       "title": "France orders country's internet service providers to block Polymarket",
       "link": "https://www.coindesk.com/policy/2026/07/18/france-orders-country-s-internet-service-providers-to-block-polymarket",
@@ -480,11 +485,6 @@
       "title": "Inside Robinhood’s high-stakes bet to onboard millions of casual users onto decentralized finance",
       "link": "https://www.coindesk.com/business/2026/07/17/inside-robinhood-s-high-stakes-bet-to-onboard-10-million-casual-investors-onto-decentralized-finance",
       "pubDate": "Fri, 17 Jul 2026 15:36:39 +0000"
-    },
-    {
-      "title": "Japan's SBI Group is building Asia's first cross-border digital asset empire",
-      "link": "https://www.coindesk.com/business/2026/07/17/japan-s-sbi-group-is-building-asia-s-first-cross-border-digital-asset-empire",
-      "pubDate": "Fri, 17 Jul 2026 13:46:46 +0000"
     }
   ]
 }
