@@ -1,13 +1,13 @@
 {
-  "fetchedAt": "2026-07-19T10:41:51.854Z",
+  "fetchedAt": "2026-07-19T13:49:10.103Z",
   "price": {
-    "usd": 64584,
-    "time": 1784457309
+    "usd": 64380,
+    "time": 1784468409
   },
   "moves": {
-    "d1": -0.32297255437511163,
-    "d7": 1.3138913517929396,
-    "d30": 1.6852143989791735
+    "d1": -0.6378200955448721,
+    "d7": 0.9938734861332454,
+    "d30": 1.3640236437241215
   },
   "history90d": [
     {
@@ -372,60 +372,70 @@
     },
     {
       "date": "2026-07-19",
-      "close": 64601.63042256952
+      "close": 64397.14274584607
     }
   ],
   "blocks": [
     {
-      "height": 958719,
-      "id": "000000000000000000001a4a30ac254d8cee874b71ecdc94c507abda7aa71ecf",
-      "timestamp": 1784457444,
-      "txCount": 5960
+      "height": 958740,
+      "id": "000000000000000000020f603c81f1e420d6a08d5e802ed3877817c7d61b02c4",
+      "timestamp": 1784468590,
+      "txCount": 4624
     },
     {
-      "height": 958718,
-      "id": "000000000000000000004c2f5dbbc5e3a72c081d7fca78df24aa25b87bff1556",
-      "timestamp": 1784457549,
-      "txCount": 2051
+      "height": 958739,
+      "id": "00000000000000000001ed2fc3a6e80d8c5a087d07ff6cf5ea7e46e1c7e2f0c9",
+      "timestamp": 1784466678,
+      "txCount": 7058
     },
     {
-      "height": 958717,
-      "id": "00000000000000000002175e481d241b798dea6248c11f29e9463b3adc8b8a81",
-      "timestamp": 1784456714,
-      "txCount": 6512
+      "height": 958738,
+      "id": "00000000000000000000bcdee436166aad06384f5b8b848f7b983a1c7e8957bf",
+      "timestamp": 1784466636,
+      "txCount": 7050
     },
     {
-      "height": 958716,
-      "id": "00000000000000000000fb5e8739560896198683a6da37d691034e24201175bc",
-      "timestamp": 1784456155,
-      "txCount": 6544
+      "height": 958737,
+      "id": "000000000000000000020045467957f2144571984d1bc8bbab46ed6929f39583",
+      "timestamp": 1784466530,
+      "txCount": 6994
     },
     {
-      "height": 958715,
-      "id": "000000000000000000004d3f690f98db581cbbc146b56025bbb9ec2e0da25979",
-      "timestamp": 1784456142,
-      "txCount": 4623
+      "height": 958736,
+      "id": "0000000000000000000066caa5b7bd1ed00ce3c2f5ed1dfe490ba2ef78037720",
+      "timestamp": 1784466249,
+      "txCount": 6363
     },
     {
-      "height": 958714,
-      "id": "000000000000000000000afb42039ae57ff88ccbdf0fa026a92d304ad0cc6095",
-      "timestamp": 1784454704,
-      "txCount": 5810
+      "height": 958735,
+      "id": "00000000000000000001eeab73143a6da87d147cf58cb00c26f5a2231f4dbb52",
+      "timestamp": 1784466054,
+      "txCount": 5869
     },
     {
-      "height": 958713,
-      "id": "00000000000000000001dc0f2f2be30a1348351191c7bad0b8e30d3a0316020e",
-      "timestamp": 1784453998,
-      "txCount": 5104
+      "height": 958734,
+      "id": "00000000000000000000a624e889654d5d09df2a3ca89d22c4aa7185639cf983",
+      "timestamp": 1784465698,
+      "txCount": 6153
     },
     {
-      "height": 958712,
-      "id": "000000000000000000022a650bdaa9ac26435ba7d0391d839ef5f3aac5289acc",
-      "timestamp": 1784453262,
-      "txCount": 7025
+      "height": 958733,
+      "id": "00000000000000000001ec771005a6d72cb668b94ff30b07b393c6c43c3ec792",
+      "timestamp": 1784465481,
+      "txCount": 5943
     }
   ],
   "news": [
+    {
+      "title": "Tether's USDT hits 2-year countdown threatening its position on U.S. crypto platforms",
+      "link": "https://www.coindesk.com/news-analysis/2026/07/17/tether-s-usdt-hits-2-year-countdown-threatening-its-position-on-u-s-crypto-platforms",
+      "pubDate": "Sun, 19 Jul 2026 13:00:00 +0000"
+    },
+    {
+      "title": "Kraken says simpler options can unlock crypto's next derivatives market",
+      "link": "https://www.coindesk.com/business/2026/07/19/kraken-says-simpler-options-can-unlock-crypto-s-next-derivatives-market",
+      "pubDate": "Sun, 19 Jul 2026 13:00:00 +0000"
+    },
     {
       "title": "Bitcoin’s quantum problem gets a recovery tool, but not for Satoshi’s 1.1 million coins",
       "link": "https://www.coindesk.com/tech/2026/07/19/bitcoin-s-quantum-problem-gets-a-recovery-tool-but-not-for-satoshi-s-1-1-million-coin",
@@ -475,16 +485,6 @@
       "title": "Polymarket traders cut Clarity Act passage odds to record low as Senate delay drags on",
       "link": "https://www.coindesk.com/markets/2026/07/17/polymarket-traders-cut-clarity-act-passage-odds-to-record-low-as-senate-delay-drags-on",
       "pubDate": "Fri, 17 Jul 2026 18:00:11 +0000"
-    },
-    {
-      "title": "Stripe and Swift race to control the next generation of global payments infrastructure",
-      "link": "https://www.coindesk.com/business/2026/07/17/stripe-and-swift-race-to-control-the-next-generation-of-global-payments-infrastructure",
-      "pubDate": "Fri, 17 Jul 2026 17:23:01 +0000"
-    },
-    {
-      "title": "Cardano hands core development to outside teams in decentralization push",
-      "link": "https://www.coindesk.com/tech/2026/07/17/cardano-hands-core-development-to-outside-teams-in-decentralization-push",
-      "pubDate": "Fri, 17 Jul 2026 16:23:26 +0000"
     }
   ]
 }
