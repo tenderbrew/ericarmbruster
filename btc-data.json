@@ -1,13 +1,13 @@
 {
-  "fetchedAt": "2026-07-19T16:07:26.967Z",
+  "fetchedAt": "2026-07-19T19:22:27.936Z",
   "price": {
-    "usd": 64560,
-    "time": 1784477107
+    "usd": 64394,
+    "time": 1784488808
   },
   "moves": {
-    "d1": -0.36001344157156057,
-    "d7": 1.2762421911270971,
-    "d30": 1.6474272513020916
+    "d1": -0.6162129113469472,
+    "d7": 1.0158354965216443,
+    "d30": 1.386066146535736
   },
   "history90d": [
     {
@@ -372,60 +372,65 @@
     },
     {
       "date": "2026-07-19",
-      "close": 64551.967360314055
+      "close": 64386.40038450225
     }
   ],
   "blocks": [
     {
-      "height": 958755,
-      "id": "00000000000000000000379c57be2d3ecdacdaa30c1dffccfaa2201ff51d9e31",
-      "timestamp": 1784477072,
-      "txCount": 6877
+      "height": 958769,
+      "id": "0000000000000000000223a9200fee83f551cc7c3d8c0b76147ecebec829ce08",
+      "timestamp": 1784488837,
+      "txCount": 4383
     },
     {
-      "height": 958754,
-      "id": "00000000000000000001147490960591608bce825e40a1565d1319cee07650e5",
-      "timestamp": 1784476957,
-      "txCount": 6378
+      "height": 958768,
+      "id": "00000000000000000000d01c726da495ab23f0a16be7ec652b0d1a5d1ba66f6b",
+      "timestamp": 1784487636,
+      "txCount": 3971
     },
     {
-      "height": 958753,
-      "id": "000000000000000000014fef2f8c8ecd214408bdb20e02e2d2f2b1ccc6cc9d38",
-      "timestamp": 1784477247,
-      "txCount": 6858
+      "height": 958767,
+      "id": "0000000000000000000208fb1291e5760c41e5bd71c6325f524daf83816b2a84",
+      "timestamp": 1784485582,
+      "txCount": 4589
     },
     {
-      "height": 958752,
-      "id": "000000000000000000008427761407db888777e7f6a6473787198b162538b4f4",
-      "timestamp": 1784476828,
-      "txCount": 5192
+      "height": 958766,
+      "id": "00000000000000000001cbb185d91496d6808ce3c55067b78cf631e7ae9281fa",
+      "timestamp": 1784484620,
+      "txCount": 4950
     },
     {
-      "height": 958751,
-      "id": "00000000000000000000e39710ce45c7e48c99e15e13fd2eea50cf417e29a561",
-      "timestamp": 1784476287,
-      "txCount": 6211
+      "height": 958765,
+      "id": "000000000000000000002906b777e52e9eb257a0b2968b25c27d38055cac41ec",
+      "timestamp": 1784484107,
+      "txCount": 6174
     },
     {
-      "height": 958750,
-      "id": "00000000000000000000933d09aa118630b1051dc1bdde2dc52a35ad4ff4c0de",
-      "timestamp": 1784476114,
-      "txCount": 6888
+      "height": 958764,
+      "id": "00000000000000000001b66a1278cb75a659847f563897297fac3fdc0ebc06de",
+      "timestamp": 1784484072,
+      "txCount": 2951
     },
     {
-      "height": 958749,
-      "id": "00000000000000000000c6f8163135754f53c22642ddd37f83885eb6aa270add",
-      "timestamp": 1784476103,
-      "txCount": 5943
+      "height": 958763,
+      "id": "00000000000000000001eca40c2e9628b43fa1b04371868da44e454bee385c50",
+      "timestamp": 1784483855,
+      "txCount": 4248
     },
     {
-      "height": 958748,
-      "id": "00000000000000000001339b829804962511c81df538d03cc49b796a43edadce",
-      "timestamp": 1784476062,
-      "txCount": 3859
+      "height": 958762,
+      "id": "000000000000000000006ab5b89f03a1c4784c25a70a4ec56b49bcd03e36964c",
+      "timestamp": 1784483413,
+      "txCount": 1
     }
   ],
   "news": [
+    {
+      "title": "The GENIUS Act turns 1: State of Crypto",
+      "link": "https://www.coindesk.com/policy/2026/07/19/the-genius-act-turns-1-state-of-crypto",
+      "pubDate": "Sun, 19 Jul 2026 18:30:00 +0000"
+    },
     {
       "title": "Bitcoin's biggest advocate, Michael Saylor, says new plan to clean up the blockchain is 'a bad idea'",
       "link": "https://www.coindesk.com/tech/2026/07/19/bitcoin-s-biggest-advocate-michael-saylor-says-new-plan-to-clean-up-the-blockchain-is-a-bad-idea",
@@ -480,11 +485,6 @@
       "title": "Here is why a massive $1.6 billion in crypto liquidity is sitting idle and wasting away",
       "link": "https://www.coindesk.com/web3/2026/07/18/here-is-why-a-massive-usd1-6-billion-in-crypto-liquidity-is-sitting-idle-and-wasting-away",
       "pubDate": "Sat, 18 Jul 2026 15:50:31 +0000"
-    },
-    {
-      "title": "Massive bitcoin call spreads target $72,000 by month end, right when the Fed meets",
-      "link": "https://www.coindesk.com/markets/2026/07/18/massive-bitcoin-call-spreads-target-usd72-000-by-month-end-right-when-the-fed-meets",
-      "pubDate": "Sat, 18 Jul 2026 14:15:15 +0000"
     }
   ]
 }
