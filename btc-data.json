@@ -1,13 +1,13 @@
 {
-  "fetchedAt": "2026-07-19T13:49:10.103Z",
+  "fetchedAt": "2026-07-19T16:07:26.967Z",
   "price": {
-    "usd": 64380,
-    "time": 1784468409
+    "usd": 64560,
+    "time": 1784477107
   },
   "moves": {
-    "d1": -0.6378200955448721,
-    "d7": 0.9938734861332454,
-    "d30": 1.3640236437241215
+    "d1": -0.36001344157156057,
+    "d7": 1.2762421911270971,
+    "d30": 1.6474272513020916
   },
   "history90d": [
     {
@@ -372,60 +372,70 @@
     },
     {
       "date": "2026-07-19",
-      "close": 64397.14274584607
+      "close": 64551.967360314055
     }
   ],
   "blocks": [
     {
-      "height": 958740,
-      "id": "000000000000000000020f603c81f1e420d6a08d5e802ed3877817c7d61b02c4",
-      "timestamp": 1784468590,
-      "txCount": 4624
+      "height": 958755,
+      "id": "00000000000000000000379c57be2d3ecdacdaa30c1dffccfaa2201ff51d9e31",
+      "timestamp": 1784477072,
+      "txCount": 6877
     },
     {
-      "height": 958739,
-      "id": "00000000000000000001ed2fc3a6e80d8c5a087d07ff6cf5ea7e46e1c7e2f0c9",
-      "timestamp": 1784466678,
-      "txCount": 7058
+      "height": 958754,
+      "id": "00000000000000000001147490960591608bce825e40a1565d1319cee07650e5",
+      "timestamp": 1784476957,
+      "txCount": 6378
     },
     {
-      "height": 958738,
-      "id": "00000000000000000000bcdee436166aad06384f5b8b848f7b983a1c7e8957bf",
-      "timestamp": 1784466636,
-      "txCount": 7050
+      "height": 958753,
+      "id": "000000000000000000014fef2f8c8ecd214408bdb20e02e2d2f2b1ccc6cc9d38",
+      "timestamp": 1784477247,
+      "txCount": 6858
     },
     {
-      "height": 958737,
-      "id": "000000000000000000020045467957f2144571984d1bc8bbab46ed6929f39583",
-      "timestamp": 1784466530,
-      "txCount": 6994
+      "height": 958752,
+      "id": "000000000000000000008427761407db888777e7f6a6473787198b162538b4f4",
+      "timestamp": 1784476828,
+      "txCount": 5192
     },
     {
-      "height": 958736,
-      "id": "0000000000000000000066caa5b7bd1ed00ce3c2f5ed1dfe490ba2ef78037720",
-      "timestamp": 1784466249,
-      "txCount": 6363
+      "height": 958751,
+      "id": "00000000000000000000e39710ce45c7e48c99e15e13fd2eea50cf417e29a561",
+      "timestamp": 1784476287,
+      "txCount": 6211
     },
     {
-      "height": 958735,
-      "id": "00000000000000000001eeab73143a6da87d147cf58cb00c26f5a2231f4dbb52",
-      "timestamp": 1784466054,
-      "txCount": 5869
+      "height": 958750,
+      "id": "00000000000000000000933d09aa118630b1051dc1bdde2dc52a35ad4ff4c0de",
+      "timestamp": 1784476114,
+      "txCount": 6888
     },
     {
-      "height": 958734,
-      "id": "00000000000000000000a624e889654d5d09df2a3ca89d22c4aa7185639cf983",
-      "timestamp": 1784465698,
-      "txCount": 6153
-    },
-    {
-      "height": 958733,
-      "id": "00000000000000000001ec771005a6d72cb668b94ff30b07b393c6c43c3ec792",
-      "timestamp": 1784465481,
+      "height": 958749,
+      "id": "00000000000000000000c6f8163135754f53c22642ddd37f83885eb6aa270add",
+      "timestamp": 1784476103,
       "txCount": 5943
+    },
+    {
+      "height": 958748,
+      "id": "00000000000000000001339b829804962511c81df538d03cc49b796a43edadce",
+      "timestamp": 1784476062,
+      "txCount": 3859
     }
   ],
   "news": [
+    {
+      "title": "Bitcoin's biggest advocate, Michael Saylor, says new plan to clean up the blockchain is 'a bad idea'",
+      "link": "https://www.coindesk.com/tech/2026/07/19/bitcoin-s-biggest-advocate-michael-saylor-says-new-plan-to-clean-up-the-blockchain-is-a-bad-idea",
+      "pubDate": "Sun, 19 Jul 2026 15:19:21 +0000"
+    },
+    {
+      "title": "AI is destroying the internet. Math is our only hope.",
+      "link": "https://www.coindesk.com/opinion/2026/07/17/ai-is-destroying-the-internet-math-is-our-only-hope",
+      "pubDate": "Sun, 19 Jul 2026 14:00:00 +0000"
+    },
     {
       "title": "Tether's USDT hits 2-year countdown threatening its position on U.S. crypto platforms",
       "link": "https://www.coindesk.com/news-analysis/2026/07/17/tether-s-usdt-hits-2-year-countdown-threatening-its-position-on-u-s-crypto-platforms",
@@ -475,16 +485,6 @@
       "title": "Massive bitcoin call spreads target $72,000 by month end, right when the Fed meets",
       "link": "https://www.coindesk.com/markets/2026/07/18/massive-bitcoin-call-spreads-target-usd72-000-by-month-end-right-when-the-fed-meets",
       "pubDate": "Sat, 18 Jul 2026 14:15:15 +0000"
-    },
-    {
-      "title": "Tokenization has become a strategic priority for 84% of financial firms",
-      "link": "https://www.coindesk.com/business/2026/07/16/tokenization-has-become-a-strategic-priority-for-84-of-financial-firms",
-      "pubDate": "Sat, 18 Jul 2026 14:00:00 +0000"
-    },
-    {
-      "title": "Polymarket traders cut Clarity Act passage odds to record low as Senate delay drags on",
-      "link": "https://www.coindesk.com/markets/2026/07/17/polymarket-traders-cut-clarity-act-passage-odds-to-record-low-as-senate-delay-drags-on",
-      "pubDate": "Fri, 17 Jul 2026 18:00:11 +0000"
     }
   ]
 }
