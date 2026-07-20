@@ -1,13 +1,13 @@
 {
-  "fetchedAt": "2026-07-20T14:31:04.818Z",
+  "fetchedAt": "2026-07-20T16:42:21.232Z",
   "price": {
-    "usd": 64286,
-    "time": 1784557509
+    "usd": 65410,
+    "time": 1784565608
   },
   "moves": {
-    "d1": -0.6087917687799926,
-    "d7": 3.283536673760268,
-    "d30": 0.07124385705150615
+    "d1": 1.129000566283489,
+    "d7": 5.0893839067706725,
+    "d30": 1.820926184390692
   },
   "history90d": [
     {
@@ -372,67 +372,72 @@
     },
     {
       "date": "2026-07-20",
-      "close": 64347.53779555086
+      "close": 65431.38583873977
     }
   ],
   "blocks": [
     {
-      "height": 958893,
-      "id": "000000000000000000013e60bffab373f197555c9ba53774b7ff5d4911724ee2",
-      "timestamp": 1784557273,
-      "txCount": 3967
+      "height": 958910,
+      "id": "000000000000000000022fbc1594ea38976583f5479a57ab4fdf44d4e92112d7",
+      "timestamp": 1784565088,
+      "txCount": 6415
     },
     {
-      "height": 958892,
-      "id": "000000000000000000002e711afc21c102368da50c7df03e395aa19f7f5b0456",
-      "timestamp": 1784554151,
-      "txCount": 6962
+      "height": 958909,
+      "id": "000000000000000000017cff154181fbb49ac5bc9dbcae3415f9b23d6dda4771",
+      "timestamp": 1784564953,
+      "txCount": 4848
     },
     {
-      "height": 958891,
-      "id": "00000000000000000001998e3b783f6038c5710502481f56c63943928a99ba89",
-      "timestamp": 1784554031,
-      "txCount": 7105
+      "height": 958908,
+      "id": "00000000000000000001451ccf568c5e0e650b52a4dd268385704f63c73681d4",
+      "timestamp": 1784564892,
+      "txCount": 4432
     },
     {
-      "height": 958890,
-      "id": "000000000000000000010d734c600b0746dd916a534bfd48c3bbdb9c5be305fe",
-      "timestamp": 1784553958,
-      "txCount": 6446
+      "height": 958907,
+      "id": "000000000000000000014135ad9e3fd8bc4dbe61b292f1c938ab6cde9334a131",
+      "timestamp": 1784564278,
+      "txCount": 3513
     },
     {
-      "height": 958889,
-      "id": "000000000000000000016ecb5ce28052e6af6e31bef6c7fbb696f7c3eb5a4782",
-      "timestamp": 1784553879,
-      "txCount": 4510
+      "height": 958906,
+      "id": "00000000000000000001f5ec5170cc64e92d9aeef4a811e07b92d56d26b240ef",
+      "timestamp": 1784564228,
+      "txCount": 3853
     },
     {
-      "height": 958888,
-      "id": "000000000000000000022cd4da63d5d9200ece24f3ffc8b46fe46bd73859d8d3",
-      "timestamp": 1784553062,
-      "txCount": 6568
+      "height": 958905,
+      "id": "00000000000000000000b64edde2ef5147aee49f5fb76662b2e0c6137e2ce477",
+      "timestamp": 1784564074,
+      "txCount": 4353
     },
     {
-      "height": 958887,
-      "id": "000000000000000000018a551b0202795a1ab48e4f199b001ff3370947c9a9b8",
-      "timestamp": 1784552896,
-      "txCount": 4892
+      "height": 958904,
+      "id": "000000000000000000007822d74d33c9a4d692356a7ec6976479f1133bd8a3b8",
+      "timestamp": 1784563491,
+      "txCount": 3959
     },
     {
-      "height": 958886,
-      "id": "00000000000000000000b9999faa3afbbf4f54fc7d1ed4245f4638194055cd92",
-      "timestamp": 1784552525,
-      "txCount": 6961
+      "height": 958903,
+      "id": "0000000000000000000123535669511cfded6e95391e6793f2ccc28b9a211aa1",
+      "timestamp": 1784560965,
+      "txCount": 4489
     }
   ],
   "news": [
+    {
+      "title": "Inside Cardano's 'Van Rossum' hard fork, and what it means for users",
+      "link": "https://www.coindesk.com/markets/2026/07/20/inside-cardano-s-van-rossum-hard-fork-and-what-it-means-for-users",
+      "pubDate": "Mon, 20 Jul 2026 14:31:23 +0000"
+    },
     {
       "title": "Exodus to cut 25% of global workforce in payments shift",
       "link": "https://www.coindesk.com/business/2026/07/20/exodus-to-cut-25-of-global-workforce-in-payments-shift",
       "pubDate": "Mon, 20 Jul 2026 13:53:08 +0000"
     },
     {
-      "title": "Hut 8 surges on $9.8 billion AI data-center lease, lifting compute sector",
+      "title": "AI compute stocks bounce as Hut 8, IREN land billions in new contracts",
       "link": "https://www.coindesk.com/business/2026/07/20/hut-8-surges-on-usd9-8-billion-ai-data-center-lease-lifting-compute-sector",
       "pubDate": "Mon, 20 Jul 2026 13:49:24 +0000"
     },
@@ -480,11 +485,6 @@
       "title": "U.S. regulatory developments and earnings, ECB rate decision: Crypto Week Ahead",
       "link": "https://www.coindesk.com/markets/2026/07/20/u-s-regulatory-developments-and-earnings-ecb-rate-decision-crypto-week-ahead",
       "pubDate": "Mon, 20 Jul 2026 08:57:53 +0000"
-    },
-    {
-      "title": "Amazon Japan supplier AZ-Com Maruwa to adopt yen stablecoin JPYC for payments",
-      "link": "https://www.coindesk.com/business/2026/07/20/amazon-japan-supplier-az-com-maruwa-to-adopt-yen-stablecoin-jpyc-for-payments",
-      "pubDate": "Mon, 20 Jul 2026 08:10:34 +0000"
     }
   ]
 }
