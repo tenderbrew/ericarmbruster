@@ -1,13 +1,13 @@
 {
-  "fetchedAt": "2026-07-20T09:32:07.468Z",
+  "fetchedAt": "2026-07-20T14:31:04.818Z",
   "price": {
-    "usd": 64107,
-    "time": 1784539508
+    "usd": 64286,
+    "time": 1784557509
   },
   "moves": {
-    "d1": -0.885539836374627,
-    "d7": 2.995950682026405,
-    "d30": -0.20739772354787522
+    "d1": -0.6087917687799926,
+    "d7": 3.283536673760268,
+    "d30": 0.07124385705150615
   },
   "history90d": [
     {
@@ -372,60 +372,105 @@
     },
     {
       "date": "2026-07-20",
-      "close": 64139.42594246385
+      "close": 64347.53779555086
     }
   ],
   "blocks": [
     {
-      "height": 958854,
-      "id": "000000000000000000001faa0b71026229c9a4ff3300436be2c089491e4dadd7",
-      "timestamp": 1784539449,
-      "txCount": 5511
+      "height": 958893,
+      "id": "000000000000000000013e60bffab373f197555c9ba53774b7ff5d4911724ee2",
+      "timestamp": 1784557273,
+      "txCount": 3967
     },
     {
-      "height": 958853,
-      "id": "00000000000000000000194894801a6e9c29c4ce6b7f555470c859906af0d932",
-      "timestamp": 1784538713,
-      "txCount": 4454
+      "height": 958892,
+      "id": "000000000000000000002e711afc21c102368da50c7df03e395aa19f7f5b0456",
+      "timestamp": 1784554151,
+      "txCount": 6962
     },
     {
-      "height": 958852,
-      "id": "00000000000000000000c958d27647a61ab30f916fa1fdaaef0db83d457bed4f",
-      "timestamp": 1784538205,
-      "txCount": 4499
+      "height": 958891,
+      "id": "00000000000000000001998e3b783f6038c5710502481f56c63943928a99ba89",
+      "timestamp": 1784554031,
+      "txCount": 7105
     },
     {
-      "height": 958851,
-      "id": "000000000000000000012661823048bdae3a9c6a7040006ad89aca77858fa86c",
-      "timestamp": 1784537016,
-      "txCount": 4810
+      "height": 958890,
+      "id": "000000000000000000010d734c600b0746dd916a534bfd48c3bbdb9c5be305fe",
+      "timestamp": 1784553958,
+      "txCount": 6446
     },
     {
-      "height": 958850,
-      "id": "00000000000000000001ebc0e308f81588c0a4783af11b199e507e28db5ba7c0",
-      "timestamp": 1784536350,
-      "txCount": 4859
+      "height": 958889,
+      "id": "000000000000000000016ecb5ce28052e6af6e31bef6c7fbb696f7c3eb5a4782",
+      "timestamp": 1784553879,
+      "txCount": 4510
     },
     {
-      "height": 958849,
-      "id": "00000000000000000001c37dcbb6c3ea7bda9d950a6c45e5443b019d66b677eb",
-      "timestamp": 1784535687,
-      "txCount": 7164
+      "height": 958888,
+      "id": "000000000000000000022cd4da63d5d9200ece24f3ffc8b46fe46bd73859d8d3",
+      "timestamp": 1784553062,
+      "txCount": 6568
     },
     {
-      "height": 958848,
-      "id": "00000000000000000000ea7f2a03197cf3375c7c6c491ebb72566e8b8e1a8f58",
-      "timestamp": 1784535671,
-      "txCount": 6270
+      "height": 958887,
+      "id": "000000000000000000018a551b0202795a1ab48e4f199b001ff3370947c9a9b8",
+      "timestamp": 1784552896,
+      "txCount": 4892
     },
     {
-      "height": 958847,
-      "id": "000000000000000000018444930b8d29245ba529c23ae6b204b259f373735b05",
-      "timestamp": 1784535720,
-      "txCount": 6480
+      "height": 958886,
+      "id": "00000000000000000000b9999faa3afbbf4f54fc7d1ed4245f4638194055cd92",
+      "timestamp": 1784552525,
+      "txCount": 6961
     }
   ],
   "news": [
+    {
+      "title": "Exodus to cut 25% of global workforce in payments shift",
+      "link": "https://www.coindesk.com/business/2026/07/20/exodus-to-cut-25-of-global-workforce-in-payments-shift",
+      "pubDate": "Mon, 20 Jul 2026 13:53:08 +0000"
+    },
+    {
+      "title": "Hut 8 surges on $9.8 billion AI data-center lease, lifting compute sector",
+      "link": "https://www.coindesk.com/business/2026/07/20/hut-8-surges-on-usd9-8-billion-ai-data-center-lease-lifting-compute-sector",
+      "pubDate": "Mon, 20 Jul 2026 13:49:24 +0000"
+    },
+    {
+      "title": "Tom Lee's Bitmine slowed ether purchases as it bought back $86 million in stock",
+      "link": "https://www.coindesk.com/business/2026/07/20/tom-lee-s-bitmine-slowed-ether-purchases-as-it-bought-back-usd86-million-in-stock",
+      "pubDate": "Mon, 20 Jul 2026 12:55:36 +0000"
+    },
+    {
+      "title": "Saylor's Strategy raises cash reserves to $3.2 billion, leaving bitcoin holdings unchanged",
+      "link": "https://www.coindesk.com/business/2026/07/20/saylor-s-strategy-raises-cash-reserves-to-usd3-225-billion-leaving-bitcoin-holdings-unchanged",
+      "pubDate": "Mon, 20 Jul 2026 12:35:02 +0000"
+    },
+    {
+      "title": "Brazil’s securities regulator sets up task force with 60-day deadline for tokenization proposal",
+      "link": "https://www.coindesk.com/policy/2026/07/20/brazil-s-securities-regulator-sets-up-task-force-with-60-day-deadline-for-tokenization-proposal",
+      "pubDate": "Mon, 20 Jul 2026 12:02:28 +0000"
+    },
+    {
+      "title": "A bitcoin 'volmageddon' may be brewing, key indicator suggests",
+      "link": "https://www.coindesk.com/daybook-us/2026/07/20/a-bitcoin-volmageddon-may-be-brewing-key-indicator-suggests",
+      "pubDate": "Mon, 20 Jul 2026 11:15:57 +0000"
+    },
+    {
+      "title": "Bank of Korea prepares for live CBDC transactions with 9 banks in September",
+      "link": "https://www.coindesk.com/business/2026/07/20/bank-of-korea-prepares-for-live-cbdc-transactions-with-nine-banks-in-september",
+      "pubDate": "Mon, 20 Jul 2026 11:10:07 +0000"
+    },
+    {
+      "title": "Crypto market slips even as equities advance. Pump surges on social-media chatter",
+      "link": "https://www.coindesk.com/markets/2026/07/20/crypto-market-slips-even-as-equities-advance-pump-surges-on-social-media-chatter",
+      "pubDate": "Mon, 20 Jul 2026 10:33:14 +0000"
+    },
+    {
+      "title": "Hyperliquid plans to add decentralized prediction markets in upgrade to HIP-4",
+      "link": "https://www.coindesk.com/business/2026/07/20/hyperliquid-plans-to-add-decentralized-prediction-markets-in-upgrade-to-hip-4",
+      "pubDate": "Mon, 20 Jul 2026 10:04:25 +0000"
+    },
     {
       "title": "Cross-chain protocol Allbridge halts after $1.65 million flash loan exploit",
       "link": "https://www.coindesk.com/business/2026/07/20/cross-chain-protocol-allbridge-halts-after-usd1-65-million-flash-loan-exploit",
@@ -440,51 +485,6 @@
       "title": "Amazon Japan supplier AZ-Com Maruwa to adopt yen stablecoin JPYC for payments",
       "link": "https://www.coindesk.com/business/2026/07/20/amazon-japan-supplier-az-com-maruwa-to-adopt-yen-stablecoin-jpyc-for-payments",
       "pubDate": "Mon, 20 Jul 2026 08:10:34 +0000"
-    },
-    {
-      "title": "Live markets: Oil bounce and lingering AI selloff pushes bitcoin under $64,000",
-      "link": "https://www.coindesk.com/tech/2026/07/20/live-markets-oil-bounce-and-lingering-ai-selloff-pushes-bitcoin-under-usd64-000",
-      "pubDate": "Mon, 20 Jul 2026 07:15:47 +0000"
-    },
-    {
-      "title": "Moonshot AI IPO push follows Kimi, Alibaba AI releases that shook bitcoin",
-      "link": "https://www.coindesk.com/tech/2026/07/20/moonshot-ai-ipo-push-follows-kimi-alibaba-ai-releases-that-shook-bitcoin",
-      "pubDate": "Mon, 20 Jul 2026 07:08:07 +0000"
-    },
-    {
-      "title": "Bitcoin ETFs see new money again, but inflows remain ‘peanuts’ relative to the recent exodus",
-      "link": "https://www.coindesk.com/markets/2026/07/20/bitcoin-etfs-see-new-money-again-but-inflows-remain-peanuts-relative-to-the-recent-exodus",
-      "pubDate": "Mon, 20 Jul 2026 05:46:36 +0000"
-    },
-    {
-      "title": "Bitcoin flat near $64,000 as oil hits a one-month high and Kimi AI selloff lingers",
-      "link": "https://www.coindesk.com/markets/2026/07/20/bitcoin-flat-near-usd64-000-as-oil-hits-a-one-month-high-and-kimi-ai-selloff-lingers",
-      "pubDate": "Mon, 20 Jul 2026 05:31:43 +0000"
-    },
-    {
-      "title": "The GENIUS Act turns 1: State of Crypto",
-      "link": "https://www.coindesk.com/policy/2026/07/19/the-genius-act-turns-1-state-of-crypto",
-      "pubDate": "Sun, 19 Jul 2026 18:30:00 +0000"
-    },
-    {
-      "title": "Bitcoin's biggest advocate, Michael Saylor, says new plan to clean up the blockchain is 'a bad idea'",
-      "link": "https://www.coindesk.com/tech/2026/07/19/bitcoin-s-biggest-advocate-michael-saylor-says-new-plan-to-clean-up-the-blockchain-is-a-bad-idea",
-      "pubDate": "Sun, 19 Jul 2026 15:19:21 +0000"
-    },
-    {
-      "title": "AI is destroying the internet. Math is our only hope.",
-      "link": "https://www.coindesk.com/opinion/2026/07/17/ai-is-destroying-the-internet-math-is-our-only-hope",
-      "pubDate": "Sun, 19 Jul 2026 14:00:00 +0000"
-    },
-    {
-      "title": "Tether's USDT hits 2-year countdown threatening its position on U.S. crypto platforms",
-      "link": "https://www.coindesk.com/news-analysis/2026/07/17/tether-s-usdt-hits-2-year-countdown-threatening-its-position-on-u-s-crypto-platforms",
-      "pubDate": "Sun, 19 Jul 2026 13:00:00 +0000"
-    },
-    {
-      "title": "Kraken says simpler options can unlock crypto's next derivatives market",
-      "link": "https://www.coindesk.com/business/2026/07/19/kraken-says-simpler-options-can-unlock-crypto-s-next-derivatives-market",
-      "pubDate": "Sun, 19 Jul 2026 13:00:00 +0000"
     }
   ]
 }
