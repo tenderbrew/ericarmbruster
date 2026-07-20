@@ -1,13 +1,13 @@
 {
-  "fetchedAt": "2026-07-20T03:59:32.733Z",
+  "fetchedAt": "2026-07-20T09:32:07.468Z",
   "price": {
-    "usd": 64811,
-    "time": 1784519708
+    "usd": 64107,
+    "time": 1784539508
   },
   "moves": {
-    "d1": 0.20289949092491266,
-    "d7": 4.127015141136137,
-    "d30": 0.8884887163513877
+    "d1": -0.885539836374627,
+    "d7": 2.995950682026405,
+    "d30": -0.20739772354787522
   },
   "history90d": [
     {
@@ -372,60 +372,95 @@
     },
     {
       "date": "2026-07-20",
-      "close": 64744.81210178665
+      "close": 64139.42594246385
     }
   ],
   "blocks": [
     {
-      "height": 958818,
-      "id": "00000000000000000001f067d97091d294edf2f8ba122e3350e9d13fa41c9f55",
-      "timestamp": 1784519739,
-      "txCount": 6614
+      "height": 958854,
+      "id": "000000000000000000001faa0b71026229c9a4ff3300436be2c089491e4dadd7",
+      "timestamp": 1784539449,
+      "txCount": 5511
     },
     {
-      "height": 958817,
-      "id": "000000000000000000019349d3da915ab501515d35a9a2cb16bdfc2555091f09",
-      "timestamp": 1784519529,
-      "txCount": 7155
+      "height": 958853,
+      "id": "00000000000000000000194894801a6e9c29c4ce6b7f555470c859906af0d932",
+      "timestamp": 1784538713,
+      "txCount": 4454
     },
     {
-      "height": 958816,
-      "id": "00000000000000000001e462d41007041604168d32017b2d76b17233757e61e8",
-      "timestamp": 1784519465,
-      "txCount": 5040
+      "height": 958852,
+      "id": "00000000000000000000c958d27647a61ab30f916fa1fdaaef0db83d457bed4f",
+      "timestamp": 1784538205,
+      "txCount": 4499
     },
     {
-      "height": 958815,
-      "id": "0000000000000000000134eb8cd640b2ba898c712b887eed4b76469ad48e7622",
-      "timestamp": 1784518726,
-      "txCount": 6226
+      "height": 958851,
+      "id": "000000000000000000012661823048bdae3a9c6a7040006ad89aca77858fa86c",
+      "timestamp": 1784537016,
+      "txCount": 4810
     },
     {
-      "height": 958814,
-      "id": "00000000000000000001fafd1ac1baedacd281e2f0924070913b4a8716d969a9",
-      "timestamp": 1784518443,
-      "txCount": 5630
+      "height": 958850,
+      "id": "00000000000000000001ebc0e308f81588c0a4783af11b199e507e28db5ba7c0",
+      "timestamp": 1784536350,
+      "txCount": 4859
     },
     {
-      "height": 958813,
-      "id": "00000000000000000000179dc1048631ab6d742094f38d8d5c2ba5e6e5e22917",
-      "timestamp": 1784518011,
-      "txCount": 5997
+      "height": 958849,
+      "id": "00000000000000000001c37dcbb6c3ea7bda9d950a6c45e5443b019d66b677eb",
+      "timestamp": 1784535687,
+      "txCount": 7164
     },
     {
-      "height": 958812,
-      "id": "0000000000000000000226f515e856ddb1ddbc7be184ecda0c2ca3db07dcf899",
-      "timestamp": 1784517849,
-      "txCount": 4909
+      "height": 958848,
+      "id": "00000000000000000000ea7f2a03197cf3375c7c6c491ebb72566e8b8e1a8f58",
+      "timestamp": 1784535671,
+      "txCount": 6270
     },
     {
-      "height": 958811,
-      "id": "00000000000000000000114065d2d56a99c1c3f8caf9c4c2989cff0e0f7653b3",
-      "timestamp": 1784517264,
-      "txCount": 5109
+      "height": 958847,
+      "id": "000000000000000000018444930b8d29245ba529c23ae6b204b259f373735b05",
+      "timestamp": 1784535720,
+      "txCount": 6480
     }
   ],
   "news": [
+    {
+      "title": "Cross-chain protocol Allbridge halts after $1.65 million flash loan exploit",
+      "link": "https://www.coindesk.com/business/2026/07/20/cross-chain-protocol-allbridge-halts-after-usd1-65-million-flash-loan-exploit",
+      "pubDate": "Mon, 20 Jul 2026 09:31:22 +0000"
+    },
+    {
+      "title": "U.S. regulatory developments and earnings, ECB rate decision: Crypto Week Ahead",
+      "link": "https://www.coindesk.com/markets/2026/07/20/u-s-regulatory-developments-and-earnings-ecb-rate-decision-crypto-week-ahead",
+      "pubDate": "Mon, 20 Jul 2026 08:57:53 +0000"
+    },
+    {
+      "title": "Amazon Japan supplier AZ-Com Maruwa to adopt yen stablecoin JPYC for payments",
+      "link": "https://www.coindesk.com/business/2026/07/20/amazon-japan-supplier-az-com-maruwa-to-adopt-yen-stablecoin-jpyc-for-payments",
+      "pubDate": "Mon, 20 Jul 2026 08:10:34 +0000"
+    },
+    {
+      "title": "Live markets: Oil bounce and lingering AI selloff pushes bitcoin under $64,000",
+      "link": "https://www.coindesk.com/tech/2026/07/20/live-markets-oil-bounce-and-lingering-ai-selloff-pushes-bitcoin-under-usd64-000",
+      "pubDate": "Mon, 20 Jul 2026 07:15:47 +0000"
+    },
+    {
+      "title": "Moonshot AI IPO push follows Kimi, Alibaba AI releases that shook bitcoin",
+      "link": "https://www.coindesk.com/tech/2026/07/20/moonshot-ai-ipo-push-follows-kimi-alibaba-ai-releases-that-shook-bitcoin",
+      "pubDate": "Mon, 20 Jul 2026 07:08:07 +0000"
+    },
+    {
+      "title": "Bitcoin ETFs see new money again, but inflows remain ‘peanuts’ relative to the recent exodus",
+      "link": "https://www.coindesk.com/markets/2026/07/20/bitcoin-etfs-see-new-money-again-but-inflows-remain-peanuts-relative-to-the-recent-exodus",
+      "pubDate": "Mon, 20 Jul 2026 05:46:36 +0000"
+    },
+    {
+      "title": "Bitcoin flat near $64,000 as oil hits a one-month high and Kimi AI selloff lingers",
+      "link": "https://www.coindesk.com/markets/2026/07/20/bitcoin-flat-near-usd64-000-as-oil-hits-a-one-month-high-and-kimi-ai-selloff-lingers",
+      "pubDate": "Mon, 20 Jul 2026 05:31:43 +0000"
+    },
     {
       "title": "The GENIUS Act turns 1: State of Crypto",
       "link": "https://www.coindesk.com/policy/2026/07/19/the-genius-act-turns-1-state-of-crypto",
@@ -450,41 +485,6 @@
       "title": "Kraken says simpler options can unlock crypto's next derivatives market",
       "link": "https://www.coindesk.com/business/2026/07/19/kraken-says-simpler-options-can-unlock-crypto-s-next-derivatives-market",
       "pubDate": "Sun, 19 Jul 2026 13:00:00 +0000"
-    },
-    {
-      "title": "Bitcoin’s quantum problem gets a recovery tool, but not for Satoshi’s 1.1 million coins",
-      "link": "https://www.coindesk.com/tech/2026/07/19/bitcoin-s-quantum-problem-gets-a-recovery-tool-but-not-for-satoshi-s-1-1-million-coin",
-      "pubDate": "Sun, 19 Jul 2026 10:00:00 +0000"
-    },
-    {
-      "title": "Inside Zcash's new node that targets Visa-scale privacy at 50,000 transactions per second",
-      "link": "https://www.coindesk.com/tech/2026/07/16/inside-zcash-s-new-node-that-targets-visa-scale-privacy-at-50-000-transactions-per-second",
-      "pubDate": "Sun, 19 Jul 2026 05:37:34 +0000"
-    },
-    {
-      "title": "France orders country's internet service providers to block Polymarket",
-      "link": "https://www.coindesk.com/policy/2026/07/18/france-orders-country-s-internet-service-providers-to-block-polymarket",
-      "pubDate": "Sat, 18 Jul 2026 21:52:18 +0000"
-    },
-    {
-      "title": "Crypto executives say digital native generations may never need a bank account",
-      "link": "https://www.coindesk.com/business/2026/07/17/crypto-executives-say-digital-native-generations-may-never-need-a-bank-account",
-      "pubDate": "Sat, 18 Jul 2026 18:30:00 +0000"
-    },
-    {
-      "title": "DOG Mode explains Bitcoin's next governance fight",
-      "link": "https://www.coindesk.com/tech/2026/07/18/dog-mode-explains-bitcoin-s-next-governance-fight",
-      "pubDate": "Sat, 18 Jul 2026 17:00:00 +0000"
-    },
-    {
-      "title": "Trump targets Brazil's payments system while dollar stablecoins are quietly overtaking country's payments",
-      "link": "https://www.coindesk.com/business/2026/07/18/trump-targets-brazil-s-payments-system-while-dollar-stablecoins-quietly-dominate-country-s-payments",
-      "pubDate": "Sat, 18 Jul 2026 16:09:59 +0000"
-    },
-    {
-      "title": "Here is why a massive $1.6 billion in crypto liquidity is sitting idle and wasting away",
-      "link": "https://www.coindesk.com/web3/2026/07/18/here-is-why-a-massive-usd1-6-billion-in-crypto-liquidity-is-sitting-idle-and-wasting-away",
-      "pubDate": "Sat, 18 Jul 2026 15:50:31 +0000"
     }
   ]
 }
