@@ -1,12 +1,48 @@
 {
-  "fetchedAt": "2026-07-19T18:10:02.076Z",
-  "windowPlays": 347,
+  "fetchedAt": "2026-07-20T18:10:01.855Z",
+  "windowPlays": 353,
   "recentTracks": [
+    {
+      "artist": "Turnpike Troubadours",
+      "album": "Diamonds & Gasoline",
+      "track": "Long Hot Summer Day",
+      "played": 1784561184
+    },
+    {
+      "artist": "The Shins",
+      "album": "Oh, Inverted World",
+      "track": "Caring Is Creepy",
+      "played": 1784560946
+    },
+    {
+      "artist": "Dashboard Confessional",
+      "album": "A Mark, a Mission, a Brand, a Scar",
+      "track": "As Lovers Go",
+      "played": 1784560742
+    },
+    {
+      "artist": "My Morning Jacket",
+      "album": "Evil Urges",
+      "track": "I'm Amazed",
+      "played": 1784560114
+    },
+    {
+      "artist": "The Killers",
+      "album": "Hot Fuss",
+      "track": "Mr. Brightside",
+      "played": 1784559895
+    },
+    {
+      "artist": "Radiohead",
+      "album": "In Rainbows",
+      "track": "Nude",
+      "played": 1784559624
+    },
     {
       "artist": "Gin Blossoms",
       "album": "New Miserable Experience",
       "track": "Hey Jealousy",
-      "played": 1784480335
+      "played": 1784559549
     },
     {
       "artist": "The Offspring",
@@ -115,42 +151,6 @@
       "album": "Recovering the Satellites",
       "track": "A Long December",
       "played": 1784244373
-    },
-    {
-      "artist": "the Microphones",
-      "album": "the Glow, pt. 2",
-      "track": "I Felt Your Shape",
-      "played": 1784244261
-    },
-    {
-      "artist": "Jimmy Eat World",
-      "album": "Futures",
-      "track": "Kill",
-      "played": 1784244037
-    },
-    {
-      "artist": "The Boy Least Likely To",
-      "album": "The Best Party Ever",
-      "track": "Warm Panda Cola",
-      "played": 1784243990
-    },
-    {
-      "artist": "Okkervil River",
-      "album": "The Stand Ins",
-      "track": "Singer Songwriter",
-      "played": 1784243761
-    },
-    {
-      "artist": "Godspeed You! Black Emperor",
-      "album": "Lift Yr. Skinny Fists Like Antennas to Heaven!",
-      "track": "Storm",
-      "played": 1784243321
-    },
-    {
-      "artist": "Broken Social Scene",
-      "album": "Broken Social Scene",
-      "track": "7/4 (Shoreline)",
-      "played": 1784243027
     }
   ],
   "topArtists": [
@@ -212,6 +212,11 @@
       "plays": 6
     },
     {
+      "artist": "Turnpike Troubadours",
+      "album": "Diamonds & Gasoline",
+      "plays": 4
+    },
+    {
       "artist": "Rilo Kiley",
       "album": "Under the Blacklight",
       "plays": 4
@@ -240,11 +245,6 @@
       "artist": "The Good Life",
       "album": "Album of the Year",
       "plays": 4
-    },
-    {
-      "artist": "Okkervil River",
-      "album": "The Stand Ins",
-      "plays": 3
     }
   ]
 }
