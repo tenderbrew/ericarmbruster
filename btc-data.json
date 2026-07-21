@@ -1,13 +1,13 @@
 {
-  "fetchedAt": "2026-07-21T14:18:15.339Z",
+  "fetchedAt": "2026-07-21T16:40:04.391Z",
   "price": {
-    "usd": 66795,
-    "time": 1784643009
+    "usd": 66545,
+    "time": 1784651707
   },
   "moves": {
-    "d1": 2.4472024147318194,
-    "d7": 2.7973386165205394,
-    "d30": 5.635023034784248
+    "d1": 2.063763525538276,
+    "d7": 2.4125892392598214,
+    "d30": 5.239652786132454
   },
   "history90d": [
     {
@@ -372,60 +372,80 @@
     },
     {
       "date": "2026-07-21",
-      "close": 66844.64279448194
+      "close": 66586.98507062807
     }
   ],
   "blocks": [
     {
-      "height": 959018,
-      "id": "00000000000000000002017ffc322d27f5e35500a450ffead5090cffbf4f6816",
-      "timestamp": 1784643148,
-      "txCount": 4447
+      "height": 959034,
+      "id": "00000000000000000000e08190f9207d29323ea55708c37c7f0f2bc15be1141f",
+      "timestamp": 1784651665,
+      "txCount": 5516
     },
     {
-      "height": 959017,
-      "id": "00000000000000000001cc2cf237c18a8f66b3bac31c8b0d6d4dcfd4301a8135",
-      "timestamp": 1784642495,
-      "txCount": 4943
+      "height": 959033,
+      "id": "000000000000000000017e04211a1cb9bab1ff74b9dd8113436a0a4d57ee37b3",
+      "timestamp": 1784651417,
+      "txCount": 3860
     },
     {
-      "height": 959016,
-      "id": "0000000000000000000078306e5801469545d356e17c562e73a6b0f0e146a6d8",
-      "timestamp": 1784642214,
-      "txCount": 5973
+      "height": 959032,
+      "id": "00000000000000000001860329d5a4f9a6cb2926076d0c5a5bc4d5caafc5c31f",
+      "timestamp": 1784650669,
+      "txCount": 6157
     },
     {
-      "height": 959015,
-      "id": "0000000000000000000027eec4f5c5906eab3ac5429131d0db1a374e70f7d04a",
-      "timestamp": 1784641921,
-      "txCount": 5078
+      "height": 959031,
+      "id": "00000000000000000001b6e09c0aaa1100571fc07062bae44418da9dd14cbf55",
+      "timestamp": 1784650511,
+      "txCount": 5734
     },
     {
-      "height": 959014,
-      "id": "000000000000000000003e89d7ac8f2f94055d02c64b38c182bdd73d6247b0cb",
-      "timestamp": 1784641574,
-      "txCount": 5384
+      "height": 959030,
+      "id": "000000000000000000003cd8e44077ff704a2a67f618d4db4db349806427804c",
+      "timestamp": 1784650245,
+      "txCount": 4659
     },
     {
-      "height": 959013,
-      "id": "00000000000000000000a37f14c25827366f0e925cacf76021e7b46b6f78760b",
-      "timestamp": 1784641151,
-      "txCount": 5714
+      "height": 959029,
+      "id": "0000000000000000000195ca3e1010a7ebfdecf8c52dd7604372c30183ebb018",
+      "timestamp": 1784650220,
+      "txCount": 4523
     },
     {
-      "height": 959012,
-      "id": "00000000000000000001efa3ccb0294367cf08ba838dceae5b0f7d620ac15c37",
-      "timestamp": 1784640817,
-      "txCount": 3912
+      "height": 959028,
+      "id": "00000000000000000000a3866110bbedc9a43b61b62486a0c1b4243497eff12e",
+      "timestamp": 1784649212,
+      "txCount": 3540
     },
     {
-      "height": 959011,
-      "id": "00000000000000000001426cb0aeab4b2f709b9f21e44a60f8a724826ea4be66",
-      "timestamp": 1784640375,
-      "txCount": 5537
+      "height": 959027,
+      "id": "000000000000000000003b03ce4ebb75f9f947e7222e3a45a86f255b79039714",
+      "timestamp": 1784648629,
+      "txCount": 5960
     }
   ],
   "news": [
+    {
+      "title": "Claude's Fable 5 just solved an 87-year-old math problem, and it matters for bitcoin",
+      "link": "https://www.coindesk.com/tech/2026/07/21/claude-s-fable-5-just-solved-an-87-year-old-math-problem-and-it-matters-for-bitcoin",
+      "pubDate": "Tue, 21 Jul 2026 16:19:24 +0000"
+    },
+    {
+      "title": "Galaxy sets up $5 million fund to help shield Bitcoin against quantum computing threats",
+      "link": "https://www.coindesk.com/tech/2026/07/21/galaxy-sets-up-usd5-million-fund-to-help-shield-bitcoin-against-quantum-computing-threats",
+      "pubDate": "Tue, 21 Jul 2026 16:16:14 +0000"
+    },
+    {
+      "title": "Russia’s parliament passes crypto market law with $3,800 annual cap for retail investors",
+      "link": "https://www.coindesk.com/policy/2026/07/21/russia-s-parliament-passes-crypto-market-law-rules-to-take-effect-sept-1",
+      "pubDate": "Tue, 21 Jul 2026 15:19:44 +0000"
+    },
+    {
+      "title": "Augustus raises $180 million to build a clearing bank for the AI and stablecoin era",
+      "link": "https://www.coindesk.com/business/2026/07/21/augustus-raises-usd180-million-to-build-a-clearing-bank-for-the-ai-and-stablecoin-era",
+      "pubDate": "Tue, 21 Jul 2026 14:27:03 +0000"
+    },
     {
       "title": "MoneyGram's CEO says blockchain works best when customers don't know it's there",
       "link": "https://www.coindesk.com/tech/2026/07/17/moneygram-s-ceo-says-blockchain-works-best-when-customers-don-t-know-it-s-there",
@@ -457,7 +477,7 @@
       "pubDate": "Tue, 21 Jul 2026 07:21:04 +0000"
     },
     {
-      "title": "Live markets: Bitcoin rises to five-week high above $66,400 on rising hope for Clarity Act",
+      "title": "Live markets: Bitcoin rises to five-week high near $67,000 on boosted hope for Clarity Act",
       "link": "https://www.coindesk.com/business/2026/07/21/live-markets-bitcoin-etfs-post-a-fifth-straight-day-of-inflows-in-a-first-since-april",
       "pubDate": "Tue, 21 Jul 2026 06:42:52 +0000"
     },
@@ -465,26 +485,6 @@
       "title": "UK Parliament begins inquiry into banking chokepoint for crypto businesses",
       "link": "https://www.coindesk.com/policy/2026/07/21/uk-parliamentary-group-begins-inquiry-into-banking-chokepoint-for-crypto-businesses",
       "pubDate": "Tue, 21 Jul 2026 06:15:26 +0000"
-    },
-    {
-      "title": "Bitcoin hits one-month high above $66,000 as the chip trade turns back into a tailwind",
-      "link": "https://www.coindesk.com/markets/2026/07/21/bitcoin-hits-a-two-week-high-near-usd65-500-as-the-chip-trade-turns-back-into-a-tailwind",
-      "pubDate": "Tue, 21 Jul 2026 05:34:00 +0000"
-    },
-    {
-      "title": "Inside Cardano's 'Van Rossum' hard fork, and what it means for users",
-      "link": "https://www.coindesk.com/markets/2026/07/20/inside-cardano-s-van-rossum-hard-fork-and-what-it-means-for-users",
-      "pubDate": "Mon, 20 Jul 2026 14:31:23 +0000"
-    },
-    {
-      "title": "Exodus to cut 25% of global workforce in payments shift",
-      "link": "https://www.coindesk.com/business/2026/07/20/exodus-to-cut-25-of-global-workforce-in-payments-shift",
-      "pubDate": "Mon, 20 Jul 2026 13:53:08 +0000"
-    },
-    {
-      "title": "AI compute stocks bounce as Hut 8, IREN land billions in new contracts",
-      "link": "https://www.coindesk.com/business/2026/07/20/hut-8-surges-on-usd9-8-billion-ai-data-center-lease-lifting-compute-sector",
-      "pubDate": "Mon, 20 Jul 2026 13:49:24 +0000"
     }
   ]
 }
