@@ -1,13 +1,13 @@
 {
-  "fetchedAt": "2026-07-21T19:48:06.839Z",
+  "fetchedAt": "2026-07-21T22:10:46.679Z",
   "price": {
-    "usd": 66456,
-    "time": 1784662810
+    "usd": 66343,
+    "time": 1784671509
   },
   "moves": {
-    "d1": 1.9272592809853828,
-    "d7": 2.275618460955009,
-    "d30": 5.098900977612408
+    "d1": 1.753944903069904,
+    "d7": 2.1017117424331655,
+    "d30": 4.920193625221803
   },
   "history90d": [
     {
@@ -372,60 +372,75 @@
     },
     {
       "date": "2026-07-21",
-      "close": 66416.09900015613
+      "close": 66294.17055682362
     }
   ],
   "blocks": [
     {
-      "height": 959050,
-      "id": "000000000000000000008776d593e628cfadd67d4c7c9ff59e04455f386e4b29",
-      "timestamp": 1784663215,
-      "txCount": 4401
+      "height": 959067,
+      "id": "00000000000000000001eac7b8a8e4a482088bcccf9032320da2f81a60c01111",
+      "timestamp": 1784671602,
+      "txCount": 984
     },
     {
-      "height": 959049,
-      "id": "00000000000000000000f5341313a04a0ef202992be8b1dad5ca8721337cc9f5",
-      "timestamp": 1784662599,
-      "txCount": 4379
+      "height": 959066,
+      "id": "000000000000000000020619280e107ed9ef310d57f3413ceff6ddfc79df51e0",
+      "timestamp": 1784671655,
+      "txCount": 1286
     },
     {
-      "height": 959048,
-      "id": "00000000000000000000926603939873277cbb026e4a0f8212896714a9978a63",
-      "timestamp": 1784661800,
-      "txCount": 5273
+      "height": 959065,
+      "id": "0000000000000000000034b11d4a6cf12d2312b34cb7e46fc1c48e5b8a8d0641",
+      "timestamp": 1784671250,
+      "txCount": 6540
     },
     {
-      "height": 959047,
-      "id": "000000000000000000004b4b15fe6300ba67cd6913c0b31222701af1c1fd14c7",
-      "timestamp": 1784661448,
-      "txCount": 4487
+      "height": 959064,
+      "id": "00000000000000000001c9b62e132e72c7da59d5880506a460e818e7a1e6b48d",
+      "timestamp": 1784671109,
+      "txCount": 4752
     },
     {
-      "height": 959046,
-      "id": "0000000000000000000069db016d74f0431edf819ce3ea3fa7c7a40bbd472eea",
-      "timestamp": 1784661047,
-      "txCount": 3873
+      "height": 959063,
+      "id": "00000000000000000001718b930ae3677b92456edd3acaf757a90c7311144145",
+      "timestamp": 1784670332,
+      "txCount": 5845
     },
     {
-      "height": 959045,
-      "id": "000000000000000000011366d669646e75c2f84b24fcc4bc6690ee9d1150a936",
-      "timestamp": 1784660598,
-      "txCount": 4131
+      "height": 959062,
+      "id": "0000000000000000000199c025f16ed884dc60118989f644eeee8cde12b12245",
+      "timestamp": 1784670025,
+      "txCount": 6103
     },
     {
-      "height": 959044,
-      "id": "000000000000000000014220ab94dd3aa8e5c2f94960cc436ffd15331e933bfe",
-      "timestamp": 1784659696,
-      "txCount": 3237
+      "height": 959061,
+      "id": "000000000000000000022645eee1e171b271a92e6527728e85441efc88fa04a5",
+      "timestamp": 1784669661,
+      "txCount": 5157
     },
     {
-      "height": 959043,
-      "id": "00000000000000000001635e7ee72b018514c109324d34902a14c14eb5cdc336",
-      "timestamp": 1784659226,
-      "txCount": 4407
+      "height": 959060,
+      "id": "0000000000000000000081027132b25318d6374b61183ae1097b3eb17680e700",
+      "timestamp": 1784669374,
+      "txCount": 4470
     }
   ],
   "news": [
+    {
+      "title": "Crypto lobby group TDC sues Illinois to block digital asset tax",
+      "link": "https://www.coindesk.com/policy/2026/07/21/crypto-lobby-group-tdc-sues-illinois-to-block-digital-asset-tax",
+      "pubDate": "Tue, 21 Jul 2026 22:08:10 +0000"
+    },
+    {
+      "title": "Crypto Clarity Act still at mercy of ethics section as Democrats balk at Trump deal",
+      "link": "https://www.coindesk.com/policy/2026/07/21/crypto-clarity-act-still-at-mercy-of-ethics-section-as-democrats-balk-at-trump-deal",
+      "pubDate": "Tue, 21 Jul 2026 21:14:03 +0000"
+    },
+    {
+      "title": "Bitcoin rally faces key test at $68,000 as 'summer slumber' grips crypto, analysts say",
+      "link": "https://www.coindesk.com/markets/2026/07/21/bitcoin-rally-faces-key-test-at-usd68-000-as-summer-slumber-grips-crypto-analysts-say",
+      "pubDate": "Tue, 21 Jul 2026 20:05:33 +0000"
+    },
     {
       "title": "White House pushes Senate Democrats to take 'historic' crypto Clarity Act ethics deal",
       "link": "https://www.coindesk.com/policy/2026/07/21/white-house-pushes-senate-democrats-to-take-historic-crypto-clarity-act-ethics-deal",
@@ -470,21 +485,6 @@
       "title": "Bitcoin rally has broad-based support as institutions, whales, options traders pile in",
       "link": "https://www.coindesk.com/daybook-us/2026/07/21/bitcoin-rally-has-broad-based-support-as-institutions-whales-options-traders-pile-in",
       "pubDate": "Tue, 21 Jul 2026 11:37:22 +0000"
-    },
-    {
-      "title": "Clarity odds jump to 43% on Polymarket after unverified reports Trump agreed to ethics deal",
-      "link": "https://www.coindesk.com/markets/2026/07/21/clarity-act-odds-jump-11-points-on-polymarket-after-reports-trump-agreed-to-ethics-deal",
-      "pubDate": "Tue, 21 Jul 2026 11:19:18 +0000"
-    },
-    {
-      "title": "Crypto markets rally on Clarity progress report, Asian chip-stock rebound",
-      "link": "https://www.coindesk.com/markets/2026/07/21/crypto-markets-rally-on-clarity-progress-report-asian-chip-stock-rebound",
-      "pubDate": "Tue, 21 Jul 2026 11:02:48 +0000"
-    },
-    {
-      "title": "XRP jumps 4% as traders watch 'triangle breakout' toward $1.35",
-      "link": "https://www.coindesk.com/markets/2026/07/21/xrp-jumps-4-as-traders-watch-triangle-breakout-toward-usd1-35",
-      "pubDate": "Tue, 21 Jul 2026 07:21:04 +0000"
     }
   ]
 }
