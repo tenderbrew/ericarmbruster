@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-07-20T19:53:33.589Z",
+  "fetchedAt": "2026-07-21T03:35:13.291Z",
   "indicators": {
     "UNRATE": {
       "latest": {
@@ -63,12 +63,12 @@
     },
     "T10YIE": {
       "latest": {
-        "date": "2026-07-17",
-        "value": 2.24
+        "date": "2026-07-20",
+        "value": 2.25
       },
       "previous": {
-        "date": "2026-07-16",
-        "value": 2.22
+        "date": "2026-07-17",
+        "value": 2.24
       }
     },
     "PCE": {
@@ -123,42 +123,42 @@
     },
     "DGS2": {
       "latest": {
-        "date": "2026-07-16",
-        "value": 4.16
+        "date": "2026-07-17",
+        "value": 4.18
       },
       "previous": {
-        "date": "2026-07-15",
-        "value": 4.13
+        "date": "2026-07-16",
+        "value": 4.16
       }
     },
     "DGS10": {
       "latest": {
-        "date": "2026-07-16",
-        "value": 4.57
+        "date": "2026-07-17",
+        "value": 4.55
       },
       "previous": {
-        "date": "2026-07-15",
-        "value": 4.55
+        "date": "2026-07-16",
+        "value": 4.57
       }
     },
     "T10Y2Y": {
       "latest": {
-        "date": "2026-07-17",
-        "value": 0.37
+        "date": "2026-07-20",
+        "value": 0.39
       },
       "previous": {
-        "date": "2026-07-16",
-        "value": 0.41
+        "date": "2026-07-17",
+        "value": 0.37
       }
     },
     "DFII10": {
       "latest": {
-        "date": "2026-07-16",
-        "value": 2.35
+        "date": "2026-07-17",
+        "value": 2.31
       },
       "previous": {
-        "date": "2026-07-15",
-        "value": 2.32
+        "date": "2026-07-16",
+        "value": 2.35
       }
     },
     "BAMLH0A0HYM2": {
@@ -233,12 +233,12 @@
     },
     "DTWEXBGS": {
       "latest": {
-        "date": "2026-07-10",
-        "value": 120.5046
+        "date": "2026-07-17",
+        "value": 120.5315
       },
       "previous": {
-        "date": "2026-07-09",
-        "value": 120.753
+        "date": "2026-07-16",
+        "value": 120.331
       }
     },
     "PERMIT": {
@@ -301,10 +301,40 @@
   },
   "news": [
     {
+      "title": "Banking",
+      "link": "https://mises.org/podcasts/mises-u-2026/banking",
+      "pubDate": "Mon, 20 Jul 2026 04:00:00 CDT",
+      "kind": "Podcast"
+    },
+    {
+      "title": "Money",
+      "link": "https://mises.org/podcasts/mises-u-2026/money",
+      "pubDate": "Mon, 20 Jul 2026 03:00:00 CDT",
+      "kind": "Podcast"
+    },
+    {
       "title": "The Quiet Rise of Chinese Innovation",
       "link": "https://mises.org/mises-wire/quiet-rise-chinese-innovation",
       "pubDate": "Mon, 20 Jul 2026 02:00:00 CDT",
       "kind": "Mises Wire"
+    },
+    {
+      "title": "Entrepreneurship",
+      "link": "https://mises.org/podcasts/mises-u-2026/entrepreneurship",
+      "pubDate": "Mon, 20 Jul 2026 02:00:00 CDT",
+      "kind": "Podcast"
+    },
+    {
+      "title": "The Division of Labor and Social Order",
+      "link": "https://mises.org/podcasts/mises-u-2026/division-labor-and-social-order",
+      "pubDate": "Mon, 20 Jul 2026 01:00:00 CDT",
+      "kind": "Podcast"
+    },
+    {
+      "title": "Subjective Value and Market Prices",
+      "link": "https://mises.org/podcasts/mises-u-2026/subjective-value-and-market-prices",
+      "pubDate": "Mon, 20 Jul 2026 11:00:00 CDT",
+      "kind": "Podcast"
     },
     {
       "title": "Do Technology Shocks Cause Boom-Bust Cycles?",
@@ -329,36 +359,6 @@
       "link": "https://mises.org/power-market/argentina-and-its-eternal-vocation-mediocrity",
       "pubDate": "Mon, 20 Jul 2026 07:00:00 CDT",
       "kind": "Article"
-    },
-    {
-      "title": "Alan Greenspan’s Deceitful Legacy",
-      "link": "https://mises.org/mises-wire/alan-greenspans-deceitful-legacy",
-      "pubDate": "Mon, 20 Jul 2026 05:00:00 CDT",
-      "kind": "Mises Wire"
-    },
-    {
-      "title": "Why Mises University Matters",
-      "link": "https://mises.org/podcasts/mises-u-2026/why-mises-university-matters",
-      "pubDate": "Sun, 19 Jul 2026 07:10:00 CDT",
-      "kind": "Podcast"
-    },
-    {
-      "title": "Major Party Realignment",
-      "link": "https://mises.org/podcasts/minor-issues/major-party-realignment",
-      "pubDate": "Sat, 18 Jul 2026 06:00:00 CDT",
-      "kind": "Podcast"
-    },
-    {
-      "title": "AI: The Ominous Opportunity",
-      "link": "https://mises.org/mises-wire/ai-ominous-opportunity",
-      "pubDate": "Sat, 18 Jul 2026 05:00:00 CDT",
-      "kind": "Mises Wire"
-    },
-    {
-      "title": "Sanctuary Cities: Leave Your Ambition and Entrepreneurial Skills at the Border",
-      "link": "https://mises.org/mises-wire/sanctuary-cities-leave-your-ambition-and-entrepreneurial-skills-border",
-      "pubDate": "Sat, 18 Jul 2026 05:00:00 CDT",
-      "kind": "Mises Wire"
     }
   ]
 }
