@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-07-13T06:10:01.367Z",
+  "fetchedAt": "2026-07-21T12:10:01.677Z",
   "note": "main services only; databases/caches/workers are filtered as implementation detail",
   "services": [
     {
@@ -156,10 +156,6 @@
     },
     {
       "name": "minecraft",
-      "project": "standalone"
-    },
-    {
-      "name": "tok-bot",
       "project": "standalone"
     }
   ]
