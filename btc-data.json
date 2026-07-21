@@ -1,13 +1,13 @@
 {
-  "fetchedAt": "2026-07-21T03:39:46.427Z",
+  "fetchedAt": "2026-07-21T08:42:09.397Z",
   "price": {
-    "usd": 65440,
-    "time": 1784604909
+    "usd": 66295,
+    "time": 1784623207
   },
   "moves": {
-    "d1": 0.3689636353028103,
-    "d7": 0.7119969917674274,
-    "d30": 3.4921162870915623
+    "d1": 1.6803246363447322,
+    "d7": 2.0278398619991034,
+    "d30": 4.84428253748066
   },
   "history90d": [
     {
@@ -372,60 +372,80 @@
     },
     {
       "date": "2026-07-21",
-      "close": 65450.689955703914
+      "close": 66263.51474277631
     }
   ],
   "blocks": [
     {
-      "height": 958955,
-      "id": "000000000000000000002e10114161734382245478fb60736dd687ac9e7e93cf",
-      "timestamp": 1784603020,
-      "txCount": 5599
+      "height": 958985,
+      "id": "00000000000000000001c38b6ae31983f39643a2180a56448e3f242119fe861d",
+      "timestamp": 1784623155,
+      "txCount": 4159
     },
     {
-      "height": 958954,
-      "id": "00000000000000000000f2bd0da0451bc2d77d72b32243c6db61325f058edab1",
-      "timestamp": 1784603013,
-      "txCount": 3487
+      "height": 958984,
+      "id": "0000000000000000000118282de38887f0539b4d679c7e5845ae10871405e060",
+      "timestamp": 1784622478,
+      "txCount": 4395
     },
     {
-      "height": 958953,
-      "id": "000000000000000000018a4524a390bafcfd076ca79ffe2ed361d57c34e08679",
-      "timestamp": 1784602694,
-      "txCount": 3012
+      "height": 958983,
+      "id": "00000000000000000000149fd9f70bf4d79f728403a145db4f6b5ef5069eb4e1",
+      "timestamp": 1784621162,
+      "txCount": 3028
     },
     {
-      "height": 958952,
-      "id": "000000000000000000002f134cb90434c8d826621ef346f7216ef65a331ba765",
-      "timestamp": 1784601556,
-      "txCount": 3547
+      "height": 958982,
+      "id": "0000000000000000000210b0b313014c0d1f03e4ba61db17d2cfb03e4924fc43",
+      "timestamp": 1784620740,
+      "txCount": 3955
     },
     {
-      "height": 958951,
-      "id": "000000000000000000006e5564fe21636ecc957efd0cb5a32009b052eb03f1d4",
-      "timestamp": 1784599301,
-      "txCount": 4682
+      "height": 958981,
+      "id": "000000000000000000017a06ab77841a7caa8f201b1aa85fe467c9931d3a29fa",
+      "timestamp": 1784619304,
+      "txCount": 3860
     },
     {
-      "height": 958950,
-      "id": "00000000000000000001c2e88e8330b60aea2e2d5767e8e875eccb13fd59433c",
-      "timestamp": 1784599118,
-      "txCount": 4090
+      "height": 958980,
+      "id": "00000000000000000000246d5122a71a8a54e341629b5f92a9dc8fba2c8e5ac8",
+      "timestamp": 1784617452,
+      "txCount": 4278
     },
     {
-      "height": 958949,
-      "id": "000000000000000000009cf799f64b85029b5d1933ea2bf201388b18ab00f123",
-      "timestamp": 1784598916,
-      "txCount": 3997
+      "height": 958979,
+      "id": "000000000000000000006316428c925929cf33d46943a2191f43994c099d3ba9",
+      "timestamp": 1784617344,
+      "txCount": 3435
     },
     {
-      "height": 958948,
-      "id": "00000000000000000000c5d3d8bb32a8df914b11af608882688250b80e5bfae1",
-      "timestamp": 1784595349,
-      "txCount": 7120
+      "height": 958978,
+      "id": "00000000000000000001163d56522343843991010c6249e3ab9a91bae4818346",
+      "timestamp": 1784615355,
+      "txCount": 6657
     }
   ],
   "news": [
+    {
+      "title": "XRP jumps 4% as traders watch 'triangle breakout' toward $1.35",
+      "link": "https://www.coindesk.com/markets/2026/07/21/xrp-jumps-4-as-traders-watch-triangle-breakout-toward-usd1-35",
+      "pubDate": "Tue, 21 Jul 2026 07:21:04 +0000"
+    },
+    {
+      "title": "Live markets: Bitcoin ETFs post a fifth straight day of inflows in a first since April",
+      "link": "https://www.coindesk.com/business/2026/07/21/live-markets-bitcoin-etfs-post-a-fifth-straight-day-of-inflows-in-a-first-since-april",
+      "pubDate": "Tue, 21 Jul 2026 06:42:52 +0000"
+    },
+    {
+      "title": "UK Parliament begins inquiry into banking chokepoint for crypto businesses",
+      "link": "https://www.coindesk.com/policy/2026/07/21/uk-parliamentary-group-begins-inquiry-into-banking-chokepoint-for-crypto-businesses",
+      "pubDate": "Tue, 21 Jul 2026 06:15:26 +0000"
+    },
+    {
+      "title": "Bitcoin hits a two-week high near $65,500 as the chip trade turns back into a tailwind",
+      "link": "https://www.coindesk.com/markets/2026/07/21/bitcoin-hits-a-two-week-high-near-usd65-500-as-the-chip-trade-turns-back-into-a-tailwind",
+      "pubDate": "Tue, 21 Jul 2026 05:34:00 +0000"
+    },
     {
       "title": "Inside Cardano's 'Van Rossum' hard fork, and what it means for users",
       "link": "https://www.coindesk.com/markets/2026/07/20/inside-cardano-s-van-rossum-hard-fork-and-what-it-means-for-users",
@@ -465,26 +485,6 @@
       "title": "Bank of Korea prepares for live CBDC transactions with 9 banks in September",
       "link": "https://www.coindesk.com/business/2026/07/20/bank-of-korea-prepares-for-live-cbdc-transactions-with-nine-banks-in-september",
       "pubDate": "Mon, 20 Jul 2026 11:10:07 +0000"
-    },
-    {
-      "title": "Crypto market slips even as equities advance. Pump surges on social-media chatter",
-      "link": "https://www.coindesk.com/markets/2026/07/20/crypto-market-slips-even-as-equities-advance-pump-surges-on-social-media-chatter",
-      "pubDate": "Mon, 20 Jul 2026 10:33:14 +0000"
-    },
-    {
-      "title": "Hyperliquid plans to add decentralized prediction markets in upgrade to HIP-4",
-      "link": "https://www.coindesk.com/business/2026/07/20/hyperliquid-plans-to-add-decentralized-prediction-markets-in-upgrade-to-hip-4",
-      "pubDate": "Mon, 20 Jul 2026 10:04:25 +0000"
-    },
-    {
-      "title": "Cross-chain protocol Allbridge halts after $1.65 million flash loan exploit",
-      "link": "https://www.coindesk.com/business/2026/07/20/cross-chain-protocol-allbridge-halts-after-usd1-65-million-flash-loan-exploit",
-      "pubDate": "Mon, 20 Jul 2026 09:31:22 +0000"
-    },
-    {
-      "title": "U.S. regulatory developments and earnings, ECB rate decision: Crypto Week Ahead",
-      "link": "https://www.coindesk.com/markets/2026/07/20/u-s-regulatory-developments-and-earnings-ecb-rate-decision-crypto-week-ahead",
-      "pubDate": "Mon, 20 Jul 2026 08:57:53 +0000"
     }
   ]
 }
