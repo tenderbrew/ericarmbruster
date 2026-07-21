@@ -1,13 +1,13 @@
 {
-  "fetchedAt": "2026-07-21T16:40:04.391Z",
+  "fetchedAt": "2026-07-21T19:48:06.839Z",
   "price": {
-    "usd": 66545,
-    "time": 1784651707
+    "usd": 66456,
+    "time": 1784662810
   },
   "moves": {
-    "d1": 2.063763525538276,
-    "d7": 2.4125892392598214,
-    "d30": 5.239652786132454
+    "d1": 1.9272592809853828,
+    "d7": 2.275618460955009,
+    "d30": 5.098900977612408
   },
   "history90d": [
     {
@@ -372,60 +372,70 @@
     },
     {
       "date": "2026-07-21",
-      "close": 66586.98507062807
+      "close": 66416.09900015613
     }
   ],
   "blocks": [
     {
-      "height": 959034,
-      "id": "00000000000000000000e08190f9207d29323ea55708c37c7f0f2bc15be1141f",
-      "timestamp": 1784651665,
-      "txCount": 5516
+      "height": 959050,
+      "id": "000000000000000000008776d593e628cfadd67d4c7c9ff59e04455f386e4b29",
+      "timestamp": 1784663215,
+      "txCount": 4401
     },
     {
-      "height": 959033,
-      "id": "000000000000000000017e04211a1cb9bab1ff74b9dd8113436a0a4d57ee37b3",
-      "timestamp": 1784651417,
-      "txCount": 3860
+      "height": 959049,
+      "id": "00000000000000000000f5341313a04a0ef202992be8b1dad5ca8721337cc9f5",
+      "timestamp": 1784662599,
+      "txCount": 4379
     },
     {
-      "height": 959032,
-      "id": "00000000000000000001860329d5a4f9a6cb2926076d0c5a5bc4d5caafc5c31f",
-      "timestamp": 1784650669,
-      "txCount": 6157
+      "height": 959048,
+      "id": "00000000000000000000926603939873277cbb026e4a0f8212896714a9978a63",
+      "timestamp": 1784661800,
+      "txCount": 5273
     },
     {
-      "height": 959031,
-      "id": "00000000000000000001b6e09c0aaa1100571fc07062bae44418da9dd14cbf55",
-      "timestamp": 1784650511,
-      "txCount": 5734
+      "height": 959047,
+      "id": "000000000000000000004b4b15fe6300ba67cd6913c0b31222701af1c1fd14c7",
+      "timestamp": 1784661448,
+      "txCount": 4487
     },
     {
-      "height": 959030,
-      "id": "000000000000000000003cd8e44077ff704a2a67f618d4db4db349806427804c",
-      "timestamp": 1784650245,
-      "txCount": 4659
+      "height": 959046,
+      "id": "0000000000000000000069db016d74f0431edf819ce3ea3fa7c7a40bbd472eea",
+      "timestamp": 1784661047,
+      "txCount": 3873
     },
     {
-      "height": 959029,
-      "id": "0000000000000000000195ca3e1010a7ebfdecf8c52dd7604372c30183ebb018",
-      "timestamp": 1784650220,
-      "txCount": 4523
+      "height": 959045,
+      "id": "000000000000000000011366d669646e75c2f84b24fcc4bc6690ee9d1150a936",
+      "timestamp": 1784660598,
+      "txCount": 4131
     },
     {
-      "height": 959028,
-      "id": "00000000000000000000a3866110bbedc9a43b61b62486a0c1b4243497eff12e",
-      "timestamp": 1784649212,
-      "txCount": 3540
+      "height": 959044,
+      "id": "000000000000000000014220ab94dd3aa8e5c2f94960cc436ffd15331e933bfe",
+      "timestamp": 1784659696,
+      "txCount": 3237
     },
     {
-      "height": 959027,
-      "id": "000000000000000000003b03ce4ebb75f9f947e7222e3a45a86f255b79039714",
-      "timestamp": 1784648629,
-      "txCount": 5960
+      "height": 959043,
+      "id": "00000000000000000001635e7ee72b018514c109324d34902a14c14eb5cdc336",
+      "timestamp": 1784659226,
+      "txCount": 4407
     }
   ],
   "news": [
+    {
+      "title": "White House pushes Senate Democrats to take 'historic' crypto Clarity Act ethics deal",
+      "link": "https://www.coindesk.com/policy/2026/07/21/white-house-pushes-senate-democrats-to-take-historic-crypto-clarity-act-ethics-deal",
+      "pubDate": "Tue, 21 Jul 2026 18:14:39 +0000"
+    },
+    {
+      "title": "Movement Labs files for Chapter 11 bankruptcy months after token scandal",
+      "link": "https://www.coindesk.com/policy/2026/07/21/movement-labs-files-for-chapter-11-months-after-token-scandal-and-strategic-overhaul",
+      "pubDate": "Tue, 21 Jul 2026 17:54:40 +0000"
+    },
     {
       "title": "Claude's Fable 5 just solved an 87-year-old math problem, and it matters for bitcoin",
       "link": "https://www.coindesk.com/tech/2026/07/21/claude-s-fable-5-just-solved-an-87-year-old-math-problem-and-it-matters-for-bitcoin",
@@ -475,16 +485,6 @@
       "title": "XRP jumps 4% as traders watch 'triangle breakout' toward $1.35",
       "link": "https://www.coindesk.com/markets/2026/07/21/xrp-jumps-4-as-traders-watch-triangle-breakout-toward-usd1-35",
       "pubDate": "Tue, 21 Jul 2026 07:21:04 +0000"
-    },
-    {
-      "title": "Live markets: Bitcoin rises to five-week high near $67,000 on boosted hope for Clarity Act",
-      "link": "https://www.coindesk.com/business/2026/07/21/live-markets-bitcoin-etfs-post-a-fifth-straight-day-of-inflows-in-a-first-since-april",
-      "pubDate": "Tue, 21 Jul 2026 06:42:52 +0000"
-    },
-    {
-      "title": "UK Parliament begins inquiry into banking chokepoint for crypto businesses",
-      "link": "https://www.coindesk.com/policy/2026/07/21/uk-parliamentary-group-begins-inquiry-into-banking-chokepoint-for-crypto-businesses",
-      "pubDate": "Tue, 21 Jul 2026 06:15:26 +0000"
     }
   ]
 }
