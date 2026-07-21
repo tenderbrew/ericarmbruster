@@ -1,13 +1,13 @@
 {
-  "fetchedAt": "2026-07-21T11:17:01.244Z",
+  "fetchedAt": "2026-07-21T14:18:15.339Z",
   "price": {
-    "usd": 66120,
-    "time": 1784632208
+    "usd": 66795,
+    "time": 1784643009
   },
   "moves": {
-    "d1": 1.4119174139092472,
-    "d7": 1.7585152979165963,
-    "d30": 4.567523363424408
+    "d1": 2.4472024147318194,
+    "d7": 2.7973386165205394,
+    "d30": 5.635023034784248
   },
   "history90d": [
     {
@@ -372,60 +372,80 @@
     },
     {
       "date": "2026-07-21",
-      "close": 66153.78543226805
+      "close": 66844.64279448194
     }
   ],
   "blocks": [
     {
-      "height": 958998,
-      "id": "000000000000000000022152d4772e08e7f8a4ff6e04c43e1ee929744a02a2f4",
-      "timestamp": 1784632455,
-      "txCount": 4359
+      "height": 959018,
+      "id": "00000000000000000002017ffc322d27f5e35500a450ffead5090cffbf4f6816",
+      "timestamp": 1784643148,
+      "txCount": 4447
     },
     {
-      "height": 958997,
-      "id": "00000000000000000001958018957aca1edae5badd0651a2c96920366121c95d",
-      "timestamp": 1784631242,
-      "txCount": 5699
+      "height": 959017,
+      "id": "00000000000000000001cc2cf237c18a8f66b3bac31c8b0d6d4dcfd4301a8135",
+      "timestamp": 1784642495,
+      "txCount": 4943
     },
     {
-      "height": 958996,
-      "id": "000000000000000000005312dedf20945f92118f628b659fbf4bd79d699de1cf",
-      "timestamp": 1784631455,
-      "txCount": 4338
+      "height": 959016,
+      "id": "0000000000000000000078306e5801469545d356e17c562e73a6b0f0e146a6d8",
+      "timestamp": 1784642214,
+      "txCount": 5973
     },
     {
-      "height": 958995,
-      "id": "0000000000000000000199d0e061ddba354f2a2c8effa33a012f2de4fa73a0dd",
-      "timestamp": 1784630290,
-      "txCount": 4754
+      "height": 959015,
+      "id": "0000000000000000000027eec4f5c5906eab3ac5429131d0db1a374e70f7d04a",
+      "timestamp": 1784641921,
+      "txCount": 5078
     },
     {
-      "height": 958994,
-      "id": "000000000000000000015e344d926094a7a364ff0ec2982fad6004a5584821ce",
-      "timestamp": 1784630035,
-      "txCount": 4907
+      "height": 959014,
+      "id": "000000000000000000003e89d7ac8f2f94055d02c64b38c182bdd73d6247b0cb",
+      "timestamp": 1784641574,
+      "txCount": 5384
     },
     {
-      "height": 958993,
-      "id": "000000000000000000019684b545f331ce88371597dff47ca2aad9fdf8fddd81",
-      "timestamp": 1784629281,
-      "txCount": 3227
+      "height": 959013,
+      "id": "00000000000000000000a37f14c25827366f0e925cacf76021e7b46b6f78760b",
+      "timestamp": 1784641151,
+      "txCount": 5714
     },
     {
-      "height": 958992,
-      "id": "000000000000000000012b743979cbe179bc749a4e1cc20c802ef106c4dce658",
-      "timestamp": 1784628737,
-      "txCount": 3605
+      "height": 959012,
+      "id": "00000000000000000001efa3ccb0294367cf08ba838dceae5b0f7d620ac15c37",
+      "timestamp": 1784640817,
+      "txCount": 3912
     },
     {
-      "height": 958991,
-      "id": "00000000000000000000c53ff1326021aa48c5018e21d4163459b80197c6282e",
-      "timestamp": 1784628280,
-      "txCount": 3265
+      "height": 959011,
+      "id": "00000000000000000001426cb0aeab4b2f709b9f21e44a60f8a724826ea4be66",
+      "timestamp": 1784640375,
+      "txCount": 5537
     }
   ],
   "news": [
+    {
+      "title": "MoneyGram's CEO says blockchain works best when customers don't know it's there",
+      "link": "https://www.coindesk.com/tech/2026/07/17/moneygram-s-ceo-says-blockchain-works-best-when-customers-don-t-know-it-s-there",
+      "pubDate": "Tue, 21 Jul 2026 13:38:13 +0000"
+    },
+    {
+      "title": "Jack Mallers steps down as XXI Capital CEO as Tether's plans to merge three bitcoin firms falls",
+      "link": "https://www.coindesk.com/business/2026/07/21/jack-mallers-steps-down-as-xxi-capital-ceo-as-tether-s-plans-to-merge-three-bitcoin-firms-falls",
+      "pubDate": "Tue, 21 Jul 2026 12:42:29 +0000"
+    },
+    {
+      "title": "Bitcoin rally has broad-based support as institutions, whales, options traders pile in",
+      "link": "https://www.coindesk.com/daybook-us/2026/07/21/bitcoin-rally-has-broad-based-support-as-institutions-whales-options-traders-pile-in",
+      "pubDate": "Tue, 21 Jul 2026 11:37:22 +0000"
+    },
+    {
+      "title": "Clarity odds jump to 43% on Polymarket after unverified reports Trump agreed to ethics deal",
+      "link": "https://www.coindesk.com/markets/2026/07/21/clarity-act-odds-jump-11-points-on-polymarket-after-reports-trump-agreed-to-ethics-deal",
+      "pubDate": "Tue, 21 Jul 2026 11:19:18 +0000"
+    },
     {
       "title": "Crypto markets rally on Clarity progress report, Asian chip-stock rebound",
       "link": "https://www.coindesk.com/markets/2026/07/21/crypto-markets-rally-on-clarity-progress-report-asian-chip-stock-rebound",
@@ -437,7 +457,7 @@
       "pubDate": "Tue, 21 Jul 2026 07:21:04 +0000"
     },
     {
-      "title": "Live markets: Bitcoin ETFs post a fifth straight day of inflows in a first since April",
+      "title": "Live markets: Bitcoin rises to five-week high above $66,400 on rising hope for Clarity Act",
       "link": "https://www.coindesk.com/business/2026/07/21/live-markets-bitcoin-etfs-post-a-fifth-straight-day-of-inflows-in-a-first-since-april",
       "pubDate": "Tue, 21 Jul 2026 06:42:52 +0000"
     },
@@ -447,7 +467,7 @@
       "pubDate": "Tue, 21 Jul 2026 06:15:26 +0000"
     },
     {
-      "title": "Bitcoin hits a two-week high near $65,500 as the chip trade turns back into a tailwind",
+      "title": "Bitcoin hits one-month high above $66,000 as the chip trade turns back into a tailwind",
       "link": "https://www.coindesk.com/markets/2026/07/21/bitcoin-hits-a-two-week-high-near-usd65-500-as-the-chip-trade-turns-back-into-a-tailwind",
       "pubDate": "Tue, 21 Jul 2026 05:34:00 +0000"
     },
@@ -465,26 +485,6 @@
       "title": "AI compute stocks bounce as Hut 8, IREN land billions in new contracts",
       "link": "https://www.coindesk.com/business/2026/07/20/hut-8-surges-on-usd9-8-billion-ai-data-center-lease-lifting-compute-sector",
       "pubDate": "Mon, 20 Jul 2026 13:49:24 +0000"
-    },
-    {
-      "title": "Tom Lee's Bitmine slowed ether purchases as it bought back $86 million in stock",
-      "link": "https://www.coindesk.com/business/2026/07/20/tom-lee-s-bitmine-slowed-ether-purchases-as-it-bought-back-usd86-million-in-stock",
-      "pubDate": "Mon, 20 Jul 2026 12:55:36 +0000"
-    },
-    {
-      "title": "Saylor's Strategy raises cash reserves to $3.2 billion, leaving bitcoin holdings unchanged",
-      "link": "https://www.coindesk.com/business/2026/07/20/saylor-s-strategy-raises-cash-reserves-to-usd3-225-billion-leaving-bitcoin-holdings-unchanged",
-      "pubDate": "Mon, 20 Jul 2026 12:35:02 +0000"
-    },
-    {
-      "title": "Brazil’s securities regulator sets up task force with 60-day deadline for tokenization proposal",
-      "link": "https://www.coindesk.com/policy/2026/07/20/brazil-s-securities-regulator-sets-up-task-force-with-60-day-deadline-for-tokenization-proposal",
-      "pubDate": "Mon, 20 Jul 2026 12:02:28 +0000"
-    },
-    {
-      "title": "A bitcoin 'volmageddon' may be brewing, key indicator suggests",
-      "link": "https://www.coindesk.com/daybook-us/2026/07/20/a-bitcoin-volmageddon-may-be-brewing-key-indicator-suggests",
-      "pubDate": "Mon, 20 Jul 2026 11:15:57 +0000"
     }
   ]
 }
