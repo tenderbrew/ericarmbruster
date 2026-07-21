@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-07-21T03:35:13.291Z",
+  "fetchedAt": "2026-07-21T14:14:40.301Z",
   "indicators": {
     "UNRATE": {
       "latest": {
@@ -163,12 +163,12 @@
     },
     "BAMLH0A0HYM2": {
       "latest": {
-        "date": "2026-07-17",
-        "value": 2.73
+        "date": "2026-07-20",
+        "value": 2.69
       },
       "previous": {
-        "date": "2026-07-16",
-        "value": 2.71
+        "date": "2026-07-17",
+        "value": 2.73
       }
     },
     "MORTGAGE30US": {
@@ -263,12 +263,12 @@
     },
     "VIXCLS": {
       "latest": {
-        "date": "2026-07-17",
-        "value": 18.77
+        "date": "2026-07-20",
+        "value": 18.65
       },
       "previous": {
-        "date": "2026-07-16",
-        "value": 16.73
+        "date": "2026-07-17",
+        "value": 18.77
       }
     },
     "BOPGSTB": {
@@ -301,6 +301,24 @@
   },
   "news": [
     {
+      "title": "Constant, Tocqueville, and Acton on the Enlightenment, Liberalism, and Religion",
+      "link": "https://mises.org/podcasts/audio-mises-wire/constant-tocqueville-and-acton-enlightenment-liberalism-and-religion",
+      "pubDate": "Tue, 21 Jul 2026 08:15:02 CDT",
+      "kind": "Podcast"
+    },
+    {
+      "title": "Colonel Doug Macgregor: Sleepwalking into World War III",
+      "link": "https://mises.org/power-market/colonel-doug-macgregor-sleepwalking-world-war-iii",
+      "pubDate": "Tue, 21 Jul 2026 07:00:00 CDT",
+      "kind": "Article"
+    },
+    {
+      "title": "The Ideology Behind the American Revolution",
+      "link": "https://mises.org/mises-wire/ideology-behind-american-revolution",
+      "pubDate": "Tue, 21 Jul 2026 05:00:00 CDT",
+      "kind": "Mises Wire"
+    },
+    {
       "title": "Banking",
       "link": "https://mises.org/podcasts/mises-u-2026/banking",
       "pubDate": "Mon, 20 Jul 2026 04:00:00 CDT",
@@ -313,27 +331,21 @@
       "kind": "Podcast"
     },
     {
-      "title": "The Quiet Rise of Chinese Innovation",
-      "link": "https://mises.org/mises-wire/quiet-rise-chinese-innovation",
-      "pubDate": "Mon, 20 Jul 2026 02:00:00 CDT",
-      "kind": "Mises Wire"
-    },
-    {
       "title": "Entrepreneurship",
       "link": "https://mises.org/podcasts/mises-u-2026/entrepreneurship",
       "pubDate": "Mon, 20 Jul 2026 02:00:00 CDT",
       "kind": "Podcast"
     },
     {
+      "title": "The Quiet Rise of Chinese Innovation",
+      "link": "https://mises.org/mises-wire/quiet-rise-chinese-innovation",
+      "pubDate": "Mon, 20 Jul 2026 02:00:00 CDT",
+      "kind": "Mises Wire"
+    },
+    {
       "title": "The Division of Labor and Social Order",
       "link": "https://mises.org/podcasts/mises-u-2026/division-labor-and-social-order",
       "pubDate": "Mon, 20 Jul 2026 01:00:00 CDT",
-      "kind": "Podcast"
-    },
-    {
-      "title": "Subjective Value and Market Prices",
-      "link": "https://mises.org/podcasts/mises-u-2026/subjective-value-and-market-prices",
-      "pubDate": "Mon, 20 Jul 2026 11:00:00 CDT",
       "kind": "Podcast"
     },
     {
@@ -343,22 +355,10 @@
       "kind": "Mises Wire"
     },
     {
-      "title": "Praxeology",
-      "link": "https://mises.org/podcasts/mises-u-2026/praxeology",
-      "pubDate": "Mon, 20 Jul 2026 10:00:00 CDT",
+      "title": "Subjective Value and Market Prices",
+      "link": "https://mises.org/podcasts/mises-u-2026/subjective-value-and-market-prices",
+      "pubDate": "Mon, 20 Jul 2026 11:00:00 CDT",
       "kind": "Podcast"
-    },
-    {
-      "title": "The Birth of the Austrian School",
-      "link": "https://mises.org/podcasts/mises-u-2026/birth-austrian-school",
-      "pubDate": "Mon, 20 Jul 2026 09:00:00 CDT",
-      "kind": "Podcast"
-    },
-    {
-      "title": "Argentina and Its Eternal Vocation for Mediocrity",
-      "link": "https://mises.org/power-market/argentina-and-its-eternal-vocation-mediocrity",
-      "pubDate": "Mon, 20 Jul 2026 07:00:00 CDT",
-      "kind": "Article"
     }
   ]
 }
