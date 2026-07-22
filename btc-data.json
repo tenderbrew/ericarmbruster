@@ -1,13 +1,13 @@
 {
-  "fetchedAt": "2026-07-22T14:19:18.171Z",
+  "fetchedAt": "2026-07-22T16:41:51.040Z",
   "price": {
-    "usd": 65963,
-    "time": 1784729410
+    "usd": 66219,
+    "time": 1784738108
   },
   "moves": {
-    "d1": -0.8177900893424517,
-    "d7": 1.9173402652400862,
-    "d30": 3.1361668799096076
+    "d1": -0.43286754583884424,
+    "d7": 2.312877750010345,
+    "d30": 3.5364345863701407
   },
   "history90d": [
     {
@@ -372,60 +372,85 @@
     },
     {
       "date": "2026-07-22",
-      "close": 65720.0048897256
+      "close": 66280.1499320538
     }
   ],
   "blocks": [
     {
-      "height": 959139,
-      "id": "0000000000000000000163b3bc64e66a34edf9fcf46813062498287ca9674a53",
-      "timestamp": 1784729701,
-      "txCount": 3322
+      "height": 959153,
+      "id": "00000000000000000000118c3ab40140c9dfc65b7cf1af565d277741fc4499af",
+      "timestamp": 1784737976,
+      "txCount": 3691
     },
     {
-      "height": 959138,
-      "id": "0000000000000000000158a04e7802f515c86cd6576cb04bcd3d5607b4ebaf40",
-      "timestamp": 1784729455,
-      "txCount": 5885
+      "height": 959152,
+      "id": "00000000000000000000eb24f9b7da3873325ec77aa775deaef7da593661da72",
+      "timestamp": 1784737432,
+      "txCount": 4635
     },
     {
-      "height": 959137,
-      "id": "00000000000000000000be2ff53cfa088df7464f5f679d5671edf93f98a5d9b3",
-      "timestamp": 1784729015,
-      "txCount": 5600
+      "height": 959151,
+      "id": "00000000000000000000721156b510c80a8e03de7c1efd82ace1603b01319f52",
+      "timestamp": 1784736974,
+      "txCount": 3487
     },
     {
-      "height": 959136,
-      "id": "0000000000000000000172ed93252db10a56091782eb509e0010355149e8c96e",
-      "timestamp": 1784728999,
-      "txCount": 3376
+      "height": 959150,
+      "id": "000000000000000000021b04aeecb4c86efe7b04728864b7cd34c8f2418df37c",
+      "timestamp": 1784736516,
+      "txCount": 4314
     },
     {
-      "height": 959135,
-      "id": "00000000000000000000fc2d7f6d310cfa25a1524c414eaad0e1937fd94eb0f7",
-      "timestamp": 1784728765,
-      "txCount": 4545
+      "height": 959149,
+      "id": "000000000000000000022c0cb62edc8b5d992bad9217b1fb1298a0642d082904",
+      "timestamp": 1784735547,
+      "txCount": 4412
     },
     {
-      "height": 959134,
-      "id": "0000000000000000000006b894441f3fa4003e8570da0b32b4e6c681fd2efdef",
-      "timestamp": 1784727267,
-      "txCount": 5456
+      "height": 959148,
+      "id": "00000000000000000001eb1b862fbd163c6edeb7fbb012e35ac30baf0c69dce4",
+      "timestamp": 1784735037,
+      "txCount": 4294
     },
     {
-      "height": 959133,
-      "id": "00000000000000000001f705aab51b7339400a0b6fd6c12ac61df3ed84eaca72",
-      "timestamp": 1784727518,
-      "txCount": 4346
+      "height": 959147,
+      "id": "000000000000000000022376e1a8532884c4debe0506b9c69c35ff9b346ecc5f",
+      "timestamp": 1784735024,
+      "txCount": 6114
     },
     {
-      "height": 959132,
-      "id": "000000000000000000016dc4cdc338593df972fba4517d9947d6f0c17683c10a",
-      "timestamp": 1784726446,
-      "txCount": 3533
+      "height": 959146,
+      "id": "000000000000000000016ba6e9e9b0e642d6e445d12ebe06e7dca4701432e328",
+      "timestamp": 1784734907,
+      "txCount": 5219
     }
   ],
   "news": [
+    {
+      "title": "New Clarity Act emerges that's a start on the final draft, makes ethics rule temporary",
+      "link": "https://www.coindesk.com/policy/2026/07/22/new-clarity-act-emerges-that-s-a-start-on-the-final-draft-makes-ethics-rule-temporary",
+      "pubDate": "Wed, 22 Jul 2026 16:15:55 +0000"
+    },
+    {
+      "title": "Revolut hits $115 billion valuation in employee share sale: WSJ",
+      "link": "https://www.coindesk.com/business/2026/07/22/revolut-hits-usd115-billion-valuation-in-employee-share-sale-wsj",
+      "pubDate": "Wed, 22 Jul 2026 15:53:54 +0000"
+    },
+    {
+      "title": "SEC's Peirce warns some DeFi vaults, onchain lending may fall under securities laws",
+      "link": "https://www.coindesk.com/policy/2026/07/22/sec-s-peirce-warns-some-defi-vaults-onchain-lending-may-fall-under-securities-laws",
+      "pubDate": "Wed, 22 Jul 2026 15:37:36 +0000"
+    },
+    {
+      "title": "UK digital bond plans hinge on one missing piece: onchain cash",
+      "link": "https://www.coindesk.com/business/2026/07/22/uk-digital-bond-plans-hinge-on-one-missing-piece-onchain-cash",
+      "pubDate": "Wed, 22 Jul 2026 15:36:49 +0000"
+    },
+    {
+      "title": "Crypto Long & Short: The crypto question isn't what to own — it's what you can survive holding",
+      "link": "https://www.coindesk.com/coindesk-indices/2026/07/22/crypto-long-and-short-the-crypto-question-isn-t-what-to-own-it-s-what-you-can-survive-holding",
+      "pubDate": "Wed, 22 Jul 2026 15:09:47 +0000"
+    },
     {
       "title": "U.S. seeks forfeiture of $25 million in crypto tied to romance and investment scams",
       "link": "https://www.coindesk.com/policy/2026/07/22/u-s-seeks-forfeiture-of-usd25-million-in-crypto-tied-to-romance-and-investment-scams",
@@ -460,31 +485,6 @@
       "title": "Bitcoin retreats from one-month high as oil tops $85, inflation concerns resurface",
       "link": "https://www.coindesk.com/markets/2026/07/22/bitcoin-retreats-from-one-month-high-as-oil-tops-usd85-inflation-concerns-resurface",
       "pubDate": "Wed, 22 Jul 2026 10:33:33 +0000"
-    },
-    {
-      "title": "Kraken parent expands tokenized stocks to Hong Kong, UK and South Korea equities",
-      "link": "https://www.coindesk.com/business/2026/07/22/kraken-parent-expands-tokenized-stocks-to-hong-kong-uk-and-south-korea-equities",
-      "pubDate": "Wed, 22 Jul 2026 10:30:00 +0000"
-    },
-    {
-      "title": "Balance stablecoin collapses 99% after $1 million exploit drains its bitcoin vaults",
-      "link": "https://www.coindesk.com/tech/2026/07/22/balance-stablecoin-collapses-99-after-usd1-million-exploit-drains-its-bitcoin-vaults",
-      "pubDate": "Wed, 22 Jul 2026 09:01:54 +0000"
-    },
-    {
-      "title": "Live updates: Bitcoin slips under $66,000 as oil's surge sacks strength from risk markets",
-      "link": "https://www.coindesk.com/tech/2026/07/22/live-updates-bitcoin-under-usd66-000-as-traders-await-alphabet-earnings-to-gauge-ai-trade",
-      "pubDate": "Wed, 22 Jul 2026 08:13:28 +0000"
-    },
-    {
-      "title": "AI models escaped OpenAI’s sandbox and hit Hugging Face. Crypto is where that gets dangerous",
-      "link": "https://www.coindesk.com/markets/2026/07/22/ai-models-escaped-openai-s-sandbox-and-hit-hugging-face-crypto-is-where-that-gets-dangerous",
-      "pubDate": "Wed, 22 Jul 2026 06:01:56 +0000"
-    },
-    {
-      "title": "Bitcoin holds near $66,300 as chips extend their rally and the yen hits a 40-year low",
-      "link": "https://www.coindesk.com/markets/2026/07/22/bitcoin-holds-near-usd66-300-as-chips-extend-their-rally-and-the-yen-hits-a-40-year-low",
-      "pubDate": "Wed, 22 Jul 2026 05:03:39 +0000"
     }
   ]
 }
