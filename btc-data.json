@@ -1,13 +1,13 @@
 {
-  "fetchedAt": "2026-07-22T16:41:51.040Z",
+  "fetchedAt": "2026-07-22T19:40:50.192Z",
   "price": {
-    "usd": 66219,
-    "time": 1784738108
+    "usd": 65895,
+    "time": 1784748908
   },
   "moves": {
-    "d1": -0.43286754583884424,
-    "d7": 2.312877750010345,
-    "d30": 3.5364345863701407
+    "d1": -0.9200351399605955,
+    "d7": 1.8122756208479807,
+    "d30": 3.0298457703810344
   },
   "history90d": [
     {
@@ -372,62 +372,62 @@
     },
     {
       "date": "2026-07-22",
-      "close": 66280.1499320538
+      "close": 65870.06302317823
     }
   ],
   "blocks": [
     {
-      "height": 959153,
-      "id": "00000000000000000000118c3ab40140c9dfc65b7cf1af565d277741fc4499af",
-      "timestamp": 1784737976,
-      "txCount": 3691
+      "height": 959165,
+      "id": "00000000000000000001911acfb8662379ed919f90635da0c5748c328a41d667",
+      "timestamp": 1784748463,
+      "txCount": 4260
     },
     {
-      "height": 959152,
-      "id": "00000000000000000000eb24f9b7da3873325ec77aa775deaef7da593661da72",
-      "timestamp": 1784737432,
-      "txCount": 4635
+      "height": 959164,
+      "id": "00000000000000000001db147c721593a15d1f2f6ba97d313893d1cd647cdbb0",
+      "timestamp": 1784747668,
+      "txCount": 4088
     },
     {
-      "height": 959151,
-      "id": "00000000000000000000721156b510c80a8e03de7c1efd82ace1603b01319f52",
-      "timestamp": 1784736974,
-      "txCount": 3487
+      "height": 959163,
+      "id": "000000000000000000006324ce5cf127d333722cdffbfd44bb21a19e104193c2",
+      "timestamp": 1784746049,
+      "txCount": 3592
     },
     {
-      "height": 959150,
-      "id": "000000000000000000021b04aeecb4c86efe7b04728864b7cd34c8f2418df37c",
-      "timestamp": 1784736516,
-      "txCount": 4314
+      "height": 959162,
+      "id": "0000000000000000000071a4801481d81ecba6bcd327b20fa7003650c5c8f963",
+      "timestamp": 1784745940,
+      "txCount": 4336
     },
     {
-      "height": 959149,
-      "id": "000000000000000000022c0cb62edc8b5d992bad9217b1fb1298a0642d082904",
-      "timestamp": 1784735547,
-      "txCount": 4412
+      "height": 959161,
+      "id": "000000000000000000007edcba6d6ab715a17e90fc27f777e20469ce895264fe",
+      "timestamp": 1784745124,
+      "txCount": 3701
     },
     {
-      "height": 959148,
-      "id": "00000000000000000001eb1b862fbd163c6edeb7fbb012e35ac30baf0c69dce4",
-      "timestamp": 1784735037,
-      "txCount": 4294
+      "height": 959160,
+      "id": "000000000000000000016f64cc4bb5be42cb56cee9303a3defab2f3684b7150b",
+      "timestamp": 1784743493,
+      "txCount": 4187
     },
     {
-      "height": 959147,
-      "id": "000000000000000000022376e1a8532884c4debe0506b9c69c35ff9b346ecc5f",
-      "timestamp": 1784735024,
-      "txCount": 6114
+      "height": 959159,
+      "id": "0000000000000000000064a31fbfe43fc85e4003d6d202941ae75eaeb40a04e6",
+      "timestamp": 1784742520,
+      "txCount": 3862
     },
     {
-      "height": 959146,
-      "id": "000000000000000000016ba6e9e9b0e642d6e445d12ebe06e7dca4701432e328",
-      "timestamp": 1784734907,
-      "txCount": 5219
+      "height": 959158,
+      "id": "000000000000000000006d0e7ad48c72161581c3fef641274566afde47461e08",
+      "timestamp": 1784742279,
+      "txCount": 4737
     }
   ],
   "news": [
     {
-      "title": "New Clarity Act emerges that's a start on the final draft, makes ethics rule temporary",
+      "title": "New draft of Clarity Act is out, and it would impose limits on Trump's crypto empire",
       "link": "https://www.coindesk.com/policy/2026/07/22/new-clarity-act-emerges-that-s-a-start-on-the-final-draft-makes-ethics-rule-temporary",
       "pubDate": "Wed, 22 Jul 2026 16:15:55 +0000"
     },
