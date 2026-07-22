@@ -1,13 +1,13 @@
 {
-  "fetchedAt": "2026-07-22T08:41:54.215Z",
+  "fetchedAt": "2026-07-22T11:17:26.611Z",
   "price": {
-    "usd": 65942,
-    "time": 1784709607
+    "usd": 65976,
+    "time": 1784718909
   },
   "moves": {
-    "d1": -0.8493657667392296,
-    "d7": 1.8848938309425245,
-    "d30": 3.1033324196140244
+    "d1": -0.7982432414301632,
+    "d7": 1.9374261531385661,
+    "d30": 3.1564929743783
   },
   "history90d": [
     {
@@ -372,60 +372,80 @@
     },
     {
       "date": "2026-07-22",
-      "close": 65934.34286726841
+      "close": 65948.1381612234
     }
   ],
   "blocks": [
     {
-      "height": 959094,
-      "id": "000000000000000000016f4ff0e858b6d171d26d9a51363d2c363cb421a817fc",
-      "timestamp": 1784691196,
-      "txCount": 1427
+      "height": 959122,
+      "id": "00000000000000000000c8928f25b4ad5b68097e0d92785dd40c05d842ad09bf",
+      "timestamp": 1784718890,
+      "txCount": 3945
     },
     {
-      "height": 959093,
-      "id": "00000000000000000001dc4ef9f6faf5f9876c202b29eaceaec6e04f5e6d9c6c",
-      "timestamp": 1784691141,
-      "txCount": 4732
+      "height": 959121,
+      "id": "00000000000000000000f7b50fd53f3781bcf3c5b2d41ea5565fdd513cf37592",
+      "timestamp": 1784718314,
+      "txCount": 4470
     },
     {
-      "height": 959092,
-      "id": "00000000000000000001fdd57a93268799b480b40a9622d9328ddee1ef7665f3",
-      "timestamp": 1784690031,
-      "txCount": 3320
+      "height": 959120,
+      "id": "0000000000000000000188030ea9e5e86b909f1c409ba70c2fe93073f0a2f2de",
+      "timestamp": 1784715926,
+      "txCount": 3059
     },
     {
-      "height": 959091,
-      "id": "0000000000000000000021ab0a90ab8d9fd157b50d2fa5f4c116b47a3467ae40",
-      "timestamp": 1784687634,
-      "txCount": 4985
+      "height": 959119,
+      "id": "0000000000000000000205654895d4489d04e3b0ced17a97c79743c590a15139",
+      "timestamp": 1784715588,
+      "txCount": 4670
     },
     {
-      "height": 959090,
-      "id": "00000000000000000000c8c5905ae97a8ebaf17a885ef1e0cb5dad63620a1b2b",
-      "timestamp": 1784687272,
-      "txCount": 5146
+      "height": 959118,
+      "id": "0000000000000000000213266bdc40397fbd10d4c3396de2ff3631e96d1fd95b",
+      "timestamp": 1784714518,
+      "txCount": 4365
     },
     {
-      "height": 959089,
-      "id": "00000000000000000000f243faa0a0af655d035fd23dbcb96f13427c093f981b",
-      "timestamp": 1784686677,
-      "txCount": 5666
+      "height": 959117,
+      "id": "00000000000000000000143a1732700deb57e461f28239ef09276c9f9863b54b",
+      "timestamp": 1784713735,
+      "txCount": 4158
     },
     {
-      "height": 959088,
-      "id": "0000000000000000000078c7e667cc632641c24fe35f8e446fc5d3419f4957ce",
-      "timestamp": 1784686473,
-      "txCount": 3864
+      "height": 959116,
+      "id": "00000000000000000000b951bc5107fb5b785090d608a68f8e5a46536e306874",
+      "timestamp": 1784713115,
+      "txCount": 4424
     },
     {
-      "height": 959087,
-      "id": "00000000000000000000784710ec224362480291e551e69d58db243571a14947",
-      "timestamp": 1784685955,
-      "txCount": 4455
+      "height": 959115,
+      "id": "0000000000000000000146c469ee9ebff4e4e3e075de978d25846005e5860e75",
+      "timestamp": 1784711197,
+      "txCount": 3931
     }
   ],
   "news": [
+    {
+      "title": "SecondFi to shut down after $2.4 million ADA wallet theft",
+      "link": "https://www.coindesk.com/web3/2026/07/22/secondfi-to-shut-down-after-usd2-4-million-ada-wallet-theft",
+      "pubDate": "Wed, 22 Jul 2026 11:10:27 +0000"
+    },
+    {
+      "title": "Bitcoin retreats from one-month high as oil tops $85, inflation concerns resurface",
+      "link": "https://www.coindesk.com/markets/2026/07/22/bitcoin-retreats-from-one-month-high-as-oil-tops-usd85-inflation-concerns-resurface",
+      "pubDate": "Wed, 22 Jul 2026 10:33:33 +0000"
+    },
+    {
+      "title": "Kraken parent expands tokenized stocks to Hong Kong, UK and South Korea equities",
+      "link": "https://www.coindesk.com/business/2026/07/22/kraken-parent-expands-tokenized-stocks-to-hong-kong-uk-and-south-korea-equities",
+      "pubDate": "Wed, 22 Jul 2026 10:30:00 +0000"
+    },
+    {
+      "title": "Balance stablecoin collapses 99% after $1 million exploit drains its bitcoin vaults",
+      "link": "https://www.coindesk.com/tech/2026/07/22/balance-stablecoin-collapses-99-after-usd1-million-exploit-drains-its-bitcoin-vaults",
+      "pubDate": "Wed, 22 Jul 2026 09:01:54 +0000"
+    },
     {
       "title": "Live updates: Bitcoin under $66,000 as traders await Alphabet earnings to gauge AI trade",
       "link": "https://www.coindesk.com/tech/2026/07/22/live-updates-bitcoin-under-usd66-000-as-traders-await-alphabet-earnings-to-gauge-ai-trade",
@@ -465,26 +485,6 @@
       "title": "Movement Labs files for Chapter 11 bankruptcy months after token scandal",
       "link": "https://www.coindesk.com/policy/2026/07/21/movement-labs-files-for-chapter-11-months-after-token-scandal-and-strategic-overhaul",
       "pubDate": "Tue, 21 Jul 2026 17:54:40 +0000"
-    },
-    {
-      "title": "Claude's Fable 5 just solved an 87-year-old math problem, and it matters for bitcoin",
-      "link": "https://www.coindesk.com/tech/2026/07/21/claude-s-fable-5-just-solved-an-87-year-old-math-problem-and-it-matters-for-bitcoin",
-      "pubDate": "Tue, 21 Jul 2026 16:19:24 +0000"
-    },
-    {
-      "title": "Galaxy sets up $5 million fund to help shield Bitcoin against quantum computing threats",
-      "link": "https://www.coindesk.com/tech/2026/07/21/galaxy-sets-up-usd5-million-fund-to-help-shield-bitcoin-against-quantum-computing-threats",
-      "pubDate": "Tue, 21 Jul 2026 16:16:14 +0000"
-    },
-    {
-      "title": "Russia’s parliament passes crypto market law with $3,800 annual cap for retail investors",
-      "link": "https://www.coindesk.com/policy/2026/07/21/russia-s-parliament-passes-crypto-market-law-rules-to-take-effect-sept-1",
-      "pubDate": "Tue, 21 Jul 2026 15:19:44 +0000"
-    },
-    {
-      "title": "Augustus raises $180 million to build a clearing bank for the AI and stablecoin era",
-      "link": "https://www.coindesk.com/business/2026/07/21/augustus-raises-usd180-million-to-build-a-clearing-bank-for-the-ai-and-stablecoin-era",
-      "pubDate": "Tue, 21 Jul 2026 14:27:03 +0000"
     }
   ]
 }
