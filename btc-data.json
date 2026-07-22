@@ -1,13 +1,13 @@
 {
-  "fetchedAt": "2026-07-22T19:40:50.192Z",
+  "fetchedAt": "2026-07-22T22:14:35.307Z",
   "price": {
-    "usd": 65895,
-    "time": 1784748908
+    "usd": 65977,
+    "time": 1784758207
   },
   "moves": {
-    "d1": -0.9200351399605955,
-    "d7": 1.8122756208479807,
-    "d30": 3.0298457703810344
+    "d1": -0.7967396377445923,
+    "d7": 1.9389712214384458,
+    "d30": 3.158056520106678
   },
   "history90d": [
     {
@@ -372,60 +372,65 @@
     },
     {
       "date": "2026-07-22",
-      "close": 65870.06302317823
+      "close": 65979.18879005662
     }
   ],
   "blocks": [
     {
-      "height": 959165,
-      "id": "00000000000000000001911acfb8662379ed919f90635da0c5748c328a41d667",
-      "timestamp": 1784748463,
-      "txCount": 4260
+      "height": 959182,
+      "id": "000000000000000000008faae44577926039354e1ebb46d39be57e2b05cd8d53",
+      "timestamp": 1784757516,
+      "txCount": 5609
     },
     {
-      "height": 959164,
-      "id": "00000000000000000001db147c721593a15d1f2f6ba97d313893d1cd647cdbb0",
-      "timestamp": 1784747668,
-      "txCount": 4088
+      "height": 959181,
+      "id": "00000000000000000000486248281065ae391a78aeacc90b6aa148f28d642271",
+      "timestamp": 1784757493,
+      "txCount": 4878
     },
     {
-      "height": 959163,
-      "id": "000000000000000000006324ce5cf127d333722cdffbfd44bb21a19e104193c2",
-      "timestamp": 1784746049,
-      "txCount": 3592
+      "height": 959180,
+      "id": "000000000000000000000c1ba10c7e5cf1351387f0524295ef3c152a657b5581",
+      "timestamp": 1784756624,
+      "txCount": 4436
     },
     {
-      "height": 959162,
-      "id": "0000000000000000000071a4801481d81ecba6bcd327b20fa7003650c5c8f963",
-      "timestamp": 1784745940,
-      "txCount": 4336
+      "height": 959179,
+      "id": "00000000000000000000ad2fd2bee149900c8a427076d2bd17d2e1acaba49765",
+      "timestamp": 1784755761,
+      "txCount": 4583
     },
     {
-      "height": 959161,
-      "id": "000000000000000000007edcba6d6ab715a17e90fc27f777e20469ce895264fe",
-      "timestamp": 1784745124,
-      "txCount": 3701
+      "height": 959178,
+      "id": "00000000000000000000f893a8ebd00387b519292be71e27c7f3a9fd729eecf0",
+      "timestamp": 1784755427,
+      "txCount": 4386
     },
     {
-      "height": 959160,
-      "id": "000000000000000000016f64cc4bb5be42cb56cee9303a3defab2f3684b7150b",
-      "timestamp": 1784743493,
-      "txCount": 4187
+      "height": 959177,
+      "id": "0000000000000000000071559f1e1c26ab7577ee24c9b0cb6b1daa7d08766cfd",
+      "timestamp": 1784753258,
+      "txCount": 6343
     },
     {
-      "height": 959159,
-      "id": "0000000000000000000064a31fbfe43fc85e4003d6d202941ae75eaeb40a04e6",
-      "timestamp": 1784742520,
-      "txCount": 3862
+      "height": 959176,
+      "id": "00000000000000000000160982b921c18805178d20f3abbf4cf73359b4948562",
+      "timestamp": 1784753157,
+      "txCount": 5586
     },
     {
-      "height": 959158,
-      "id": "000000000000000000006d0e7ad48c72161581c3fef641274566afde47461e08",
-      "timestamp": 1784742279,
-      "txCount": 4737
+      "height": 959175,
+      "id": "0000000000000000000201891daf9881a20d71b40ab0061cffd7a49e20210fd5",
+      "timestamp": 1784752793,
+      "txCount": 5778
     }
   ],
   "news": [
+    {
+      "title": "Tesla holds bitcoin treasury steady, reports $112M impairment loss",
+      "link": "https://www.coindesk.com/markets/2026/07/22/tesla-holds-bitcoin-steady-reports-usd112m-impairment-loss",
+      "pubDate": "Wed, 22 Jul 2026 20:40:24 +0000"
+    },
     {
       "title": "New draft of Clarity Act is out, and it would impose limits on Trump's crypto empire",
       "link": "https://www.coindesk.com/policy/2026/07/22/new-clarity-act-emerges-that-s-a-start-on-the-final-draft-makes-ethics-rule-temporary",
@@ -480,11 +485,6 @@
       "title": "SecondFi to shut down after $2.4 million ADA wallet theft",
       "link": "https://www.coindesk.com/web3/2026/07/22/secondfi-to-shut-down-after-usd2-4-million-ada-wallet-theft",
       "pubDate": "Wed, 22 Jul 2026 11:10:27 +0000"
-    },
-    {
-      "title": "Bitcoin retreats from one-month high as oil tops $85, inflation concerns resurface",
-      "link": "https://www.coindesk.com/markets/2026/07/22/bitcoin-retreats-from-one-month-high-as-oil-tops-usd85-inflation-concerns-resurface",
-      "pubDate": "Wed, 22 Jul 2026 10:33:33 +0000"
     }
   ]
 }
