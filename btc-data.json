@@ -1,19 +1,15 @@
 {
-  "fetchedAt": "2026-07-21T22:10:46.679Z",
+  "fetchedAt": "2026-07-22T03:40:36.245Z",
   "price": {
-    "usd": 66343,
-    "time": 1784671509
+    "usd": 66216,
+    "time": 1784691317
   },
   "moves": {
-    "d1": 1.753944903069904,
-    "d7": 2.1017117424331655,
-    "d30": 4.920193625221803
+    "d1": -0.4373783568955236,
+    "d7": 2.308242545110706,
+    "d30": 3.5317439491850733
   },
   "history90d": [
-    {
-      "date": "2026-04-23",
-      "close": 78194.78334884858
-    },
     {
       "date": "2026-04-24",
       "close": 78260.61998045091
@@ -371,63 +367,67 @@
       "close": 65199.437784154594
     },
     {
-      "date": "2026-07-21",
-      "close": 66294.17055682362
+      "date": "2026-07-22",
+      "close": 66506.88672839502
+    },
+    {
+      "date": "2026-07-22",
+      "close": 66206.4417389897
     }
   ],
   "blocks": [
     {
-      "height": 959067,
-      "id": "00000000000000000001eac7b8a8e4a482088bcccf9032320da2f81a60c01111",
-      "timestamp": 1784671602,
-      "txCount": 984
+      "height": 959094,
+      "id": "000000000000000000016f4ff0e858b6d171d26d9a51363d2c363cb421a817fc",
+      "timestamp": 1784691196,
+      "txCount": 1427
     },
     {
-      "height": 959066,
-      "id": "000000000000000000020619280e107ed9ef310d57f3413ceff6ddfc79df51e0",
-      "timestamp": 1784671655,
-      "txCount": 1286
+      "height": 959093,
+      "id": "00000000000000000001dc4ef9f6faf5f9876c202b29eaceaec6e04f5e6d9c6c",
+      "timestamp": 1784691141,
+      "txCount": 4732
     },
     {
-      "height": 959065,
-      "id": "0000000000000000000034b11d4a6cf12d2312b34cb7e46fc1c48e5b8a8d0641",
-      "timestamp": 1784671250,
-      "txCount": 6540
+      "height": 959092,
+      "id": "00000000000000000001fdd57a93268799b480b40a9622d9328ddee1ef7665f3",
+      "timestamp": 1784690031,
+      "txCount": 3320
     },
     {
-      "height": 959064,
-      "id": "00000000000000000001c9b62e132e72c7da59d5880506a460e818e7a1e6b48d",
-      "timestamp": 1784671109,
-      "txCount": 4752
+      "height": 959091,
+      "id": "0000000000000000000021ab0a90ab8d9fd157b50d2fa5f4c116b47a3467ae40",
+      "timestamp": 1784687634,
+      "txCount": 4985
     },
     {
-      "height": 959063,
-      "id": "00000000000000000001718b930ae3677b92456edd3acaf757a90c7311144145",
-      "timestamp": 1784670332,
-      "txCount": 5845
+      "height": 959090,
+      "id": "00000000000000000000c8c5905ae97a8ebaf17a885ef1e0cb5dad63620a1b2b",
+      "timestamp": 1784687272,
+      "txCount": 5146
     },
     {
-      "height": 959062,
-      "id": "0000000000000000000199c025f16ed884dc60118989f644eeee8cde12b12245",
-      "timestamp": 1784670025,
-      "txCount": 6103
+      "height": 959089,
+      "id": "00000000000000000000f243faa0a0af655d035fd23dbcb96f13427c093f981b",
+      "timestamp": 1784686677,
+      "txCount": 5666
     },
     {
-      "height": 959061,
-      "id": "000000000000000000022645eee1e171b271a92e6527728e85441efc88fa04a5",
-      "timestamp": 1784669661,
-      "txCount": 5157
+      "height": 959088,
+      "id": "0000000000000000000078c7e667cc632641c24fe35f8e446fc5d3419f4957ce",
+      "timestamp": 1784686473,
+      "txCount": 3864
     },
     {
-      "height": 959060,
-      "id": "0000000000000000000081027132b25318d6374b61183ae1097b3eb17680e700",
-      "timestamp": 1784669374,
-      "txCount": 4470
+      "height": 959087,
+      "id": "00000000000000000000784710ec224362480291e551e69d58db243571a14947",
+      "timestamp": 1784685955,
+      "txCount": 4455
     }
   ],
   "news": [
     {
-      "title": "Crypto lobby group TDC sues Illinois to block digital asset tax",
+      "title": "Crypto lobby group Digital Chamber sues Illinois to block digital asset tax",
       "link": "https://www.coindesk.com/policy/2026/07/21/crypto-lobby-group-tdc-sues-illinois-to-block-digital-asset-tax",
       "pubDate": "Tue, 21 Jul 2026 22:08:10 +0000"
     },
