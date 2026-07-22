@@ -1,13 +1,13 @@
 {
-  "fetchedAt": "2026-07-22T11:17:26.611Z",
+  "fetchedAt": "2026-07-22T14:19:18.171Z",
   "price": {
-    "usd": 65976,
-    "time": 1784718909
+    "usd": 65963,
+    "time": 1784729410
   },
   "moves": {
-    "d1": -0.7982432414301632,
-    "d7": 1.9374261531385661,
-    "d30": 3.1564929743783
+    "d1": -0.8177900893424517,
+    "d7": 1.9173402652400862,
+    "d30": 3.1361668799096076
   },
   "history90d": [
     {
@@ -372,60 +372,85 @@
     },
     {
       "date": "2026-07-22",
-      "close": 65948.1381612234
+      "close": 65720.0048897256
     }
   ],
   "blocks": [
     {
-      "height": 959122,
-      "id": "00000000000000000000c8928f25b4ad5b68097e0d92785dd40c05d842ad09bf",
-      "timestamp": 1784718890,
-      "txCount": 3945
+      "height": 959139,
+      "id": "0000000000000000000163b3bc64e66a34edf9fcf46813062498287ca9674a53",
+      "timestamp": 1784729701,
+      "txCount": 3322
     },
     {
-      "height": 959121,
-      "id": "00000000000000000000f7b50fd53f3781bcf3c5b2d41ea5565fdd513cf37592",
-      "timestamp": 1784718314,
-      "txCount": 4470
+      "height": 959138,
+      "id": "0000000000000000000158a04e7802f515c86cd6576cb04bcd3d5607b4ebaf40",
+      "timestamp": 1784729455,
+      "txCount": 5885
     },
     {
-      "height": 959120,
-      "id": "0000000000000000000188030ea9e5e86b909f1c409ba70c2fe93073f0a2f2de",
-      "timestamp": 1784715926,
-      "txCount": 3059
+      "height": 959137,
+      "id": "00000000000000000000be2ff53cfa088df7464f5f679d5671edf93f98a5d9b3",
+      "timestamp": 1784729015,
+      "txCount": 5600
     },
     {
-      "height": 959119,
-      "id": "0000000000000000000205654895d4489d04e3b0ced17a97c79743c590a15139",
-      "timestamp": 1784715588,
-      "txCount": 4670
+      "height": 959136,
+      "id": "0000000000000000000172ed93252db10a56091782eb509e0010355149e8c96e",
+      "timestamp": 1784728999,
+      "txCount": 3376
     },
     {
-      "height": 959118,
-      "id": "0000000000000000000213266bdc40397fbd10d4c3396de2ff3631e96d1fd95b",
-      "timestamp": 1784714518,
-      "txCount": 4365
+      "height": 959135,
+      "id": "00000000000000000000fc2d7f6d310cfa25a1524c414eaad0e1937fd94eb0f7",
+      "timestamp": 1784728765,
+      "txCount": 4545
     },
     {
-      "height": 959117,
-      "id": "00000000000000000000143a1732700deb57e461f28239ef09276c9f9863b54b",
-      "timestamp": 1784713735,
-      "txCount": 4158
+      "height": 959134,
+      "id": "0000000000000000000006b894441f3fa4003e8570da0b32b4e6c681fd2efdef",
+      "timestamp": 1784727267,
+      "txCount": 5456
     },
     {
-      "height": 959116,
-      "id": "00000000000000000000b951bc5107fb5b785090d608a68f8e5a46536e306874",
-      "timestamp": 1784713115,
-      "txCount": 4424
+      "height": 959133,
+      "id": "00000000000000000001f705aab51b7339400a0b6fd6c12ac61df3ed84eaca72",
+      "timestamp": 1784727518,
+      "txCount": 4346
     },
     {
-      "height": 959115,
-      "id": "0000000000000000000146c469ee9ebff4e4e3e075de978d25846005e5860e75",
-      "timestamp": 1784711197,
-      "txCount": 3931
+      "height": 959132,
+      "id": "000000000000000000016dc4cdc338593df972fba4517d9947d6f0c17683c10a",
+      "timestamp": 1784726446,
+      "txCount": 3533
     }
   ],
   "news": [
+    {
+      "title": "U.S. seeks forfeiture of $25 million in crypto tied to romance and investment scams",
+      "link": "https://www.coindesk.com/policy/2026/07/22/u-s-seeks-forfeiture-of-usd25-million-in-crypto-tied-to-romance-and-investment-scams",
+      "pubDate": "Wed, 22 Jul 2026 13:45:58 +0000"
+    },
+    {
+      "title": "Forget Nvidia: The next big AI trade could be crypto and blockchain",
+      "link": "https://www.coindesk.com/markets/2026/07/21/forget-nvidia-the-next-big-ai-trade-could-be-crypto-and-blockchain",
+      "pubDate": "Wed, 22 Jul 2026 13:32:40 +0000"
+    },
+    {
+      "title": "Kalshi rolls out Midterm Hubs ahead of the November elections in the U.S.",
+      "link": "https://www.coindesk.com/markets/2026/07/22/kalshi-rolls-out-midterm-hubs-ahead-of-the-november-elections-in-the-u-s",
+      "pubDate": "Wed, 22 Jul 2026 12:12:10 +0000"
+    },
+    {
+      "title": "Midnight token rebounds 19% after Wanchain bridge hack, Hoskinson calls for ZK revamp",
+      "link": "https://www.coindesk.com/business/2026/07/22/midnight-token-rebounds-after-wanchain-bridge-hack-hoskinson-calls-for-industry-overhaul",
+      "pubDate": "Wed, 22 Jul 2026 11:45:42 +0000"
+    },
+    {
+      "title": "Here's why bitcoin bulls should take a closer look at interest rates",
+      "link": "https://www.coindesk.com/daybook-us/2026/07/22/here-s-why-bitcoin-bulls-should-take-a-closer-look-at-interest-rates",
+      "pubDate": "Wed, 22 Jul 2026 11:23:36 +0000"
+    },
     {
       "title": "SecondFi to shut down after $2.4 million ADA wallet theft",
       "link": "https://www.coindesk.com/web3/2026/07/22/secondfi-to-shut-down-after-usd2-4-million-ada-wallet-theft",
@@ -447,7 +472,7 @@
       "pubDate": "Wed, 22 Jul 2026 09:01:54 +0000"
     },
     {
-      "title": "Live updates: Bitcoin under $66,000 as traders await Alphabet earnings to gauge AI trade",
+      "title": "Live updates: Bitcoin slips under $66,000 as oil's surge sacks strength from risk markets",
       "link": "https://www.coindesk.com/tech/2026/07/22/live-updates-bitcoin-under-usd66-000-as-traders-await-alphabet-earnings-to-gauge-ai-trade",
       "pubDate": "Wed, 22 Jul 2026 08:13:28 +0000"
     },
@@ -460,31 +485,6 @@
       "title": "Bitcoin holds near $66,300 as chips extend their rally and the yen hits a 40-year low",
       "link": "https://www.coindesk.com/markets/2026/07/22/bitcoin-holds-near-usd66-300-as-chips-extend-their-rally-and-the-yen-hits-a-40-year-low",
       "pubDate": "Wed, 22 Jul 2026 05:03:39 +0000"
-    },
-    {
-      "title": "Crypto lobby group Digital Chamber sues Illinois to block digital asset tax",
-      "link": "https://www.coindesk.com/policy/2026/07/21/crypto-lobby-group-tdc-sues-illinois-to-block-digital-asset-tax",
-      "pubDate": "Tue, 21 Jul 2026 22:08:10 +0000"
-    },
-    {
-      "title": "Crypto Clarity Act still at mercy of ethics section as Democrats balk at Trump deal",
-      "link": "https://www.coindesk.com/policy/2026/07/21/crypto-clarity-act-still-at-mercy-of-ethics-section-as-democrats-balk-at-trump-deal",
-      "pubDate": "Tue, 21 Jul 2026 21:14:03 +0000"
-    },
-    {
-      "title": "Bitcoin rally faces key test at $68,000 as 'summer slumber' grips crypto, analysts say",
-      "link": "https://www.coindesk.com/markets/2026/07/21/bitcoin-rally-faces-key-test-at-usd68-000-as-summer-slumber-grips-crypto-analysts-say",
-      "pubDate": "Tue, 21 Jul 2026 20:05:33 +0000"
-    },
-    {
-      "title": "White House pushes Senate Democrats to take 'historic' crypto Clarity Act ethics deal",
-      "link": "https://www.coindesk.com/policy/2026/07/21/white-house-pushes-senate-democrats-to-take-historic-crypto-clarity-act-ethics-deal",
-      "pubDate": "Tue, 21 Jul 2026 18:14:39 +0000"
-    },
-    {
-      "title": "Movement Labs files for Chapter 11 bankruptcy months after token scandal",
-      "link": "https://www.coindesk.com/policy/2026/07/21/movement-labs-files-for-chapter-11-months-after-token-scandal-and-strategic-overhaul",
-      "pubDate": "Tue, 21 Jul 2026 17:54:40 +0000"
     }
   ]
 }
