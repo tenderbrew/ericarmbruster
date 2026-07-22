@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-07-22T03:35:19.666Z",
+  "fetchedAt": "2026-07-22T14:17:34.646Z",
   "indicators": {
     "UNRATE": {
       "latest": {
@@ -163,12 +163,12 @@
     },
     "BAMLH0A0HYM2": {
       "latest": {
-        "date": "2026-07-20",
+        "date": "2026-07-21",
         "value": 2.69
       },
       "previous": {
-        "date": "2026-07-17",
-        "value": 2.73
+        "date": "2026-07-20",
+        "value": 2.69
       }
     },
     "MORTGAGE30US": {
@@ -263,12 +263,12 @@
     },
     "VIXCLS": {
       "latest": {
-        "date": "2026-07-20",
-        "value": 18.65
+        "date": "2026-07-21",
+        "value": 17.05
       },
       "previous": {
-        "date": "2026-07-17",
-        "value": 18.77
+        "date": "2026-07-20",
+        "value": 18.65
       }
     },
     "BOPGSTB": {
@@ -300,6 +300,18 @@
     }
   },
   "news": [
+    {
+      "title": "You Know How This Happens, Right?",
+      "link": "https://mises.org/podcasts/audio-mises-wire/you-know-how-happens-right",
+      "pubDate": "Wed, 22 Jul 2026 08:01:01 CDT",
+      "kind": "Podcast"
+    },
+    {
+      "title": "You Know How This Happens, Right?",
+      "link": "https://mises.org/mises-wire/you-know-how-happens-right",
+      "pubDate": "Wed, 22 Jul 2026 05:00:00 CDT",
+      "kind": "Mises Wire"
+    },
     {
       "title": "Tariffs vs. Free Trade",
       "link": "https://mises.org/podcasts/mises-u-2026/tariffs-vs-free-trade",
@@ -346,18 +358,6 @@
       "title": "Sanctuary Cities: Leave Your Ambition and Entrepreneurial Skills at the Border",
       "link": "https://mises.org/podcasts/audio-mises-wire/sanctuary-cities-leave-your-ambition-and-entrepreneurial-skills-border",
       "pubDate": "Tue, 21 Jul 2026 10:54:06 CDT",
-      "kind": "Podcast"
-    },
-    {
-      "title": "The Quiet Rise of Chinese Innovation",
-      "link": "https://mises.org/podcasts/audio-mises-wire/quiet-rise-chinese-innovation",
-      "pubDate": "Tue, 21 Jul 2026 10:07:02 CDT",
-      "kind": "Podcast"
-    },
-    {
-      "title": "Calculation and Socialism",
-      "link": "https://mises.org/podcasts/mises-u-2026/calculation-and-socialism",
-      "pubDate": "Tue, 21 Jul 2026 10:00:00 CDT",
       "kind": "Podcast"
     }
   ]
