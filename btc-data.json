@@ -1,13 +1,13 @@
 {
-  "fetchedAt": "2026-07-23T03:39:42.764Z",
+  "fetchedAt": "2026-07-23T08:42:59.039Z",
   "price": {
-    "usd": 65647,
-    "time": 1784777707
+    "usd": 65591,
+    "time": 1784795711
   },
   "moves": {
-    "d1": -0.6508408336393212,
-    "d7": 2.963876638827223,
-    "d30": 4.763164392175612
+    "d1": -0.7355903715209666,
+    "d7": 2.876043575750842,
+    "d30": 4.67379645143251
   },
   "history90d": [
     {
@@ -372,60 +372,95 @@
     },
     {
       "date": "2026-07-23",
-      "close": 65650.87386403601
+      "close": 65571.83405309715
     }
   ],
   "blocks": [
     {
-      "height": 959212,
-      "id": "00000000000000000002240780d1c63bce826678ceab546fd8ce769159a4b273",
-      "timestamp": 1784777411,
-      "txCount": 6620
+      "height": 959236,
+      "id": "000000000000000000016aca15becb51ec166677ae961f2bf0cc5f9b4d176153",
+      "timestamp": 1784794996,
+      "txCount": 6026
     },
     {
-      "height": 959211,
-      "id": "00000000000000000000e05181f8b5559ccbc8164d5407ab1e9a40af89083b79",
-      "timestamp": 1784777270,
-      "txCount": 1076
+      "height": 959235,
+      "id": "000000000000000000008ea4199017fe4109ec89f69367fb0dc5f396d5c26736",
+      "timestamp": 1784794776,
+      "txCount": 6237
     },
     {
-      "height": 959210,
-      "id": "0000000000000000000224132c9cbaebc4d56846d0b74354fa117f9a2ac21ea4",
-      "timestamp": 1784776799,
-      "txCount": 5044
+      "height": 959234,
+      "id": "00000000000000000000ba0e341de8a759cb0f05133256adc594db746e6d3db0",
+      "timestamp": 1784794757,
+      "txCount": 4540
     },
     {
-      "height": 959209,
-      "id": "0000000000000000000146b90fd388424a4d467d12819b7abafc3d876b1a6731",
-      "timestamp": 1784776406,
-      "txCount": 3934
+      "height": 959233,
+      "id": "0000000000000000000199cf5ce9ff0022af8f1baedf35d675db5c662da082d3",
+      "timestamp": 1784794614,
+      "txCount": 4238
     },
     {
-      "height": 959208,
-      "id": "00000000000000000001d48bc1adb049ba3f83403c86c9bf4fd2edcbc21fbb51",
-      "timestamp": 1784775430,
-      "txCount": 6554
+      "height": 959232,
+      "id": "000000000000000000008412f18bd08bdaa5c910caeb017ffe52e680cd1f600a",
+      "timestamp": 1784793276,
+      "txCount": 3963
     },
     {
-      "height": 959207,
-      "id": "0000000000000000000134471002e461906f085c98deb65835a1efc1fbd2c2d3",
-      "timestamp": 1784775334,
-      "txCount": 3002
+      "height": 959231,
+      "id": "00000000000000000000a9312ad6e2005e6d11d3dd9b8ff2395373354d3435b3",
+      "timestamp": 1784792819,
+      "txCount": 4285
     },
     {
-      "height": 959206,
-      "id": "0000000000000000000115c425f86ee252ac9445a2e30fe2b15945e3ec95b84a",
-      "timestamp": 1784774764,
-      "txCount": 5795
+      "height": 959230,
+      "id": "00000000000000000001d4a6bc5a086ad001f67f6656980b40766ba5c7e8ea68",
+      "timestamp": 1784791699,
+      "txCount": 4988
     },
     {
-      "height": 959205,
-      "id": "00000000000000000000f861290d3cfa4fce50f76dbe76ebd7879145ff023732",
-      "timestamp": 1784774502,
-      "txCount": 5686
+      "height": 959229,
+      "id": "0000000000000000000147940b459b447cd014b51847b28431be79dc7c0cfe50",
+      "timestamp": 1784791416,
+      "txCount": 5040
     }
   ],
   "news": [
+    {
+      "title": "BitMEX, the exchange that invented perps, is shutting down",
+      "link": "https://www.coindesk.com/markets/2026/07/23/bitmex-s-11-year-run-comes-to-an-end-notifies-users-it-is-ending-operations-in-by-sept-23",
+      "pubDate": "Thu, 23 Jul 2026 08:42:26 +0000"
+    },
+    {
+      "title": "24/7 financial rails: How BNY plans to eliminate the weekend lag in U.S. Treasuries",
+      "link": "https://www.coindesk.com/business/2026/07/23/24-7-financial-rails-how-bny-plans-to-eliminate-the-weekend-lag-in-u-s-treasuries",
+      "pubDate": "Thu, 23 Jul 2026 08:42:21 +0000"
+    },
+    {
+      "title": "South Korea's oldest crypto exchange is now part of the $1 trillion Mirae Group family",
+      "link": "https://www.coindesk.com/markets/2026/07/23/south-korea-s-oldest-crypto-exchange-is-now-part-of-the-usd800-billion-mirae-group-family",
+      "pubDate": "Thu, 23 Jul 2026 07:05:42 +0000"
+    },
+    {
+      "title": "Bitcoin, Ethereum-linked protocols lose $35 million in multiple attacks hours apart",
+      "link": "https://www.coindesk.com/tech/2026/07/23/bitcoin-ethereum-linked-protocols-lose-usd35-million-in-multiple-attacks-hours-apart",
+      "pubDate": "Thu, 23 Jul 2026 06:38:18 +0000"
+    },
+    {
+      "title": "Arbitrum-based AFX Trade drained of $24 million after bridge keys compromised",
+      "link": "https://www.coindesk.com/tech/2026/07/23/arbitrum-based-afx-trade-drained-of-usd24-million-after-bridge-keys-compromised",
+      "pubDate": "Thu, 23 Jul 2026 05:01:06 +0000"
+    },
+    {
+      "title": "XRP whales accumulate as small holders capitulate",
+      "link": "https://www.coindesk.com/markets/2026/07/23/xrp-whales-accumulate-as-small-holders-capitulate",
+      "pubDate": "Thu, 23 Jul 2026 04:11:13 +0000"
+    },
+    {
+      "title": "Bitcoin wilts as oil and rates rise. Clarity Act odds tumble to 38%",
+      "link": "https://www.coindesk.com/markets/2026/07/23/bitcoin-wilts-as-oil-and-rates-rise-clarity-act-odds-tumble-to-38",
+      "pubDate": "Thu, 23 Jul 2026 03:50:20 +0000"
+    },
     {
       "title": "Senator Lummis: Ethics, other provisions in crypto Clarity Act to be further discussed",
       "link": "https://www.coindesk.com/policy/2026/07/22/senator-lummis-ethics-other-provisions-in-crypto-clarity-act-to-be-further-discussed",
@@ -450,41 +485,6 @@
       "title": "Revolut hits $115 billion valuation in employee share sale: WSJ",
       "link": "https://www.coindesk.com/business/2026/07/22/revolut-hits-usd115-billion-valuation-in-employee-share-sale-wsj",
       "pubDate": "Wed, 22 Jul 2026 15:53:54 +0000"
-    },
-    {
-      "title": "SEC's Peirce warns some DeFi vaults, onchain lending may fall under securities laws",
-      "link": "https://www.coindesk.com/policy/2026/07/22/sec-s-peirce-warns-some-defi-vaults-onchain-lending-may-fall-under-securities-laws",
-      "pubDate": "Wed, 22 Jul 2026 15:37:36 +0000"
-    },
-    {
-      "title": "UK digital bond plans hinge on one missing piece: onchain cash",
-      "link": "https://www.coindesk.com/business/2026/07/22/uk-digital-bond-plans-hinge-on-one-missing-piece-onchain-cash",
-      "pubDate": "Wed, 22 Jul 2026 15:36:49 +0000"
-    },
-    {
-      "title": "Crypto Long & Short: The crypto question isn't what to own — it's what you can survive holding",
-      "link": "https://www.coindesk.com/coindesk-indices/2026/07/22/crypto-long-and-short-the-crypto-question-isn-t-what-to-own-it-s-what-you-can-survive-holding",
-      "pubDate": "Wed, 22 Jul 2026 15:09:47 +0000"
-    },
-    {
-      "title": "U.S. seeks forfeiture of $25 million in crypto tied to romance and investment scams",
-      "link": "https://www.coindesk.com/policy/2026/07/22/u-s-seeks-forfeiture-of-usd25-million-in-crypto-tied-to-romance-and-investment-scams",
-      "pubDate": "Wed, 22 Jul 2026 13:45:58 +0000"
-    },
-    {
-      "title": "Forget Nvidia: The next big AI trade could be crypto and blockchain",
-      "link": "https://www.coindesk.com/markets/2026/07/21/forget-nvidia-the-next-big-ai-trade-could-be-crypto-and-blockchain",
-      "pubDate": "Wed, 22 Jul 2026 13:32:40 +0000"
-    },
-    {
-      "title": "Kalshi rolls out Midterm Hubs ahead of the November elections in the U.S.",
-      "link": "https://www.coindesk.com/markets/2026/07/22/kalshi-rolls-out-midterm-hubs-ahead-of-the-november-elections-in-the-u-s",
-      "pubDate": "Wed, 22 Jul 2026 12:12:10 +0000"
-    },
-    {
-      "title": "Midnight token rebounds 19% after Wanchain bridge hack, Hoskinson calls for ZK revamp",
-      "link": "https://www.coindesk.com/business/2026/07/22/midnight-token-rebounds-after-wanchain-bridge-hack-hoskinson-calls-for-industry-overhaul",
-      "pubDate": "Wed, 22 Jul 2026 11:45:42 +0000"
     }
   ]
 }
