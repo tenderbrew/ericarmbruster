@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-07-23T14:25:52.962Z",
+  "fetchedAt": "2026-07-23T19:39:21.652Z",
   "indicators": {
     "UNRATE": {
       "latest": {
@@ -173,12 +173,12 @@
     },
     "MORTGAGE30US": {
       "latest": {
-        "date": "2026-07-16",
-        "value": 6.55
+        "date": "2026-07-23",
+        "value": 6.58
       },
       "previous": {
-        "date": "2026-07-09",
-        "value": 6.49
+        "date": "2026-07-16",
+        "value": 6.55
       }
     },
     "GDPC1": {
@@ -301,6 +301,18 @@
   },
   "news": [
     {
+      "title": "How Norway Built the World’s Largest Fund and a Thriving Economy to Boot",
+      "link": "https://mises.org/podcasts/audio-mises-wire/how-norway-built-worlds-largest-fund-and-thriving-economy-boot",
+      "pubDate": "Thu, 23 Jul 2026 12:57:01 CDT",
+      "kind": "Podcast"
+    },
+    {
+      "title": "How Norway Built the World’s Largest Fund and a Thriving Economy to Boot",
+      "link": "https://mises.org/mises-wire/how-norway-built-worlds-largest-fund-and-thriving-economy-boot",
+      "pubDate": "Thu, 23 Jul 2026 11:00:00 CDT",
+      "kind": "Mises Wire"
+    },
+    {
       "title": "Help Us Expand the Mises Academy!",
       "link": "https://mises.org/mises-wire/help-us-expand-mises-academy",
       "pubDate": "Thu, 23 Jul 2026 08:50:44 CDT",
@@ -347,18 +359,6 @@
       "link": "https://mises.org/mises-wire/blame-cronyism-our-economic-woes-not-free-markets",
       "pubDate": "Wed, 22 Jul 2026 11:00:00 CDT",
       "kind": "Mises Wire"
-    },
-    {
-      "title": "Race and Discrimination",
-      "link": "https://mises.org/podcasts/mises-u-2026/race-and-discrimination",
-      "pubDate": "Wed, 22 Jul 2026 11:00:00 CDT",
-      "kind": "Podcast"
-    },
-    {
-      "title": "Repugnant Markets",
-      "link": "https://mises.org/podcasts/mises-u-2026/repugnant-markets",
-      "pubDate": "Wed, 22 Jul 2026 10:00:00 CDT",
-      "kind": "Podcast"
     }
   ]
 }
