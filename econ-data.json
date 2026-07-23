@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-07-22T19:39:20.165Z",
+  "fetchedAt": "2026-07-23T03:37:29.060Z",
   "indicators": {
     "UNRATE": {
       "latest": {
@@ -63,12 +63,12 @@
     },
     "T10YIE": {
       "latest": {
-        "date": "2026-07-21",
-        "value": 2.26
+        "date": "2026-07-22",
+        "value": 2.28
       },
       "previous": {
-        "date": "2026-07-20",
-        "value": 2.25
+        "date": "2026-07-21",
+        "value": 2.26
       }
     },
     "PCE": {
@@ -123,42 +123,42 @@
     },
     "DGS2": {
       "latest": {
-        "date": "2026-07-20",
-        "value": 4.21
+        "date": "2026-07-21",
+        "value": 4.26
       },
       "previous": {
-        "date": "2026-07-17",
-        "value": 4.18
+        "date": "2026-07-20",
+        "value": 4.21
       }
     },
     "DGS10": {
       "latest": {
-        "date": "2026-07-20",
-        "value": 4.6
+        "date": "2026-07-21",
+        "value": 4.63
       },
       "previous": {
-        "date": "2026-07-17",
-        "value": 4.55
+        "date": "2026-07-20",
+        "value": 4.6
       }
     },
     "T10Y2Y": {
       "latest": {
-        "date": "2026-07-21",
-        "value": 0.37
+        "date": "2026-07-22",
+        "value": 0.36
       },
       "previous": {
-        "date": "2026-07-20",
-        "value": 0.39
+        "date": "2026-07-21",
+        "value": 0.37
       }
     },
     "DFII10": {
       "latest": {
-        "date": "2026-07-20",
-        "value": 2.35
+        "date": "2026-07-21",
+        "value": 2.37
       },
       "previous": {
-        "date": "2026-07-17",
-        "value": 2.31
+        "date": "2026-07-20",
+        "value": 2.35
       }
     },
     "BAMLH0A0HYM2": {
@@ -301,10 +301,40 @@
   },
   "news": [
     {
+      "title": "Cronyism: The Origins of the Federal Reserve",
+      "link": "https://mises.org/podcasts/mises-u-2026/cronyism-origins-federal-reserve",
+      "pubDate": "Wed, 22 Jul 2026 04:00:00 CDT",
+      "kind": "Podcast"
+    },
+    {
+      "title": "Inflation and the Family",
+      "link": "https://mises.org/podcasts/mises-u-2026/inflation-and-family",
+      "pubDate": "Wed, 22 Jul 2026 03:00:00 CDT",
+      "kind": "Podcast"
+    },
+    {
+      "title": "Public Choice from an Austrian Perspective",
+      "link": "https://mises.org/podcasts/mises-u-2026/public-choice-austrian-perspective",
+      "pubDate": "Wed, 22 Jul 2026 02:00:00 CDT",
+      "kind": "Podcast"
+    },
+    {
+      "title": "The Austrian Theory of Economic Progress",
+      "link": "https://mises.org/podcasts/mises-u-2026/austrian-theory-economic-progress",
+      "pubDate": "Wed, 22 Jul 2026 01:00:00 CDT",
+      "kind": "Podcast"
+    },
+    {
       "title": "Blame Cronyism for Our Economic Woes, Not Free Markets",
       "link": "https://mises.org/mises-wire/blame-cronyism-our-economic-woes-not-free-markets",
       "pubDate": "Wed, 22 Jul 2026 11:00:00 CDT",
       "kind": "Mises Wire"
+    },
+    {
+      "title": "Race and Discrimination",
+      "link": "https://mises.org/podcasts/mises-u-2026/race-and-discrimination",
+      "pubDate": "Wed, 22 Jul 2026 11:00:00 CDT",
+      "kind": "Podcast"
     },
     {
       "title": "Repugnant Markets",
@@ -329,36 +359,6 @@
       "link": "https://mises.org/mises-wire/you-know-how-happens-right",
       "pubDate": "Wed, 22 Jul 2026 05:00:00 CDT",
       "kind": "Mises Wire"
-    },
-    {
-      "title": "Tariffs vs. Free Trade",
-      "link": "https://mises.org/podcasts/mises-u-2026/tariffs-vs-free-trade",
-      "pubDate": "Tue, 21 Jul 2026 04:00:00 CDT",
-      "kind": "Podcast"
-    },
-    {
-      "title": "Price Controls",
-      "link": "https://mises.org/podcasts/mises-u-2026/price-controls",
-      "pubDate": "Tue, 21 Jul 2026 03:00:00 CDT",
-      "kind": "Podcast"
-    },
-    {
-      "title": "Competition and Monopoly",
-      "link": "https://mises.org/podcasts/mises-u-2026/competition-and-monopoly",
-      "pubDate": "Tue, 21 Jul 2026 02:00:00 CDT",
-      "kind": "Podcast"
-    },
-    {
-      "title": "The Austrian Theory of the Business Cycle",
-      "link": "https://mises.org/podcasts/mises-u-2026/austrian-theory-business-cycle",
-      "pubDate": "Tue, 21 Jul 2026 01:00:00 CDT",
-      "kind": "Podcast"
-    },
-    {
-      "title": "From Spoiled Sons of Liberty to Surveillance Leviathan: America’s Six Republics and the Myth of Eternal Union",
-      "link": "https://mises.org/podcasts/audio-mises-wire/spoiled-sons-liberty-surveillance-leviathan-americas-six-republics-and-myth-eternal-union",
-      "pubDate": "Tue, 21 Jul 2026 12:17:57 CDT",
-      "kind": "Podcast"
     }
   ]
 }
