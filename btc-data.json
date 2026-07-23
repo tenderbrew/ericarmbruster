@@ -1,13 +1,13 @@
 {
-  "fetchedAt": "2026-07-23T14:27:23.124Z",
+  "fetchedAt": "2026-07-23T16:43:07.344Z",
   "price": {
-    "usd": 65099,
-    "time": 1784816707
+    "usd": 64732,
+    "time": 1784824807
   },
   "moves": {
-    "d1": -1.480175597195399,
-    "d7": 2.104367378722749,
-    "d30": 3.8886352577610417
+    "d1": -2.035587747241163,
+    "d7": 1.5287471260615693,
+    "d30": 3.302956074676855
   },
   "history90d": [
     {
@@ -372,60 +372,70 @@
     },
     {
       "date": "2026-07-23",
-      "close": 65109.25539406824
+      "close": 64722.17202771706
     }
   ],
   "blocks": [
     {
-      "height": 959265,
-      "id": "00000000000000000000dd814ded19a61388dfdd26ad3b91be2b86229238c92b",
-      "timestamp": 1784816801,
-      "txCount": 3920
+      "height": 959281,
+      "id": "00000000000000000000655e9a0da2f6f13a8bef9c2b4a244d1011c38f1761b8",
+      "timestamp": 1784823886,
+      "txCount": 4052
     },
     {
-      "height": 959264,
-      "id": "000000000000000000001f988cd9c530c35e75f5f53b29eab2e50178ca1eeb03",
-      "timestamp": 1784815359,
+      "height": 959280,
+      "id": "000000000000000000020234cab54aecb5d7a595018a18073122d2f56a8bc017",
+      "timestamp": 1784823865,
+      "txCount": 4278
+    },
+    {
+      "height": 959279,
+      "id": "00000000000000000002166dd0626474798015432fbed073735a14e871f60800",
+      "timestamp": 1784821913,
+      "txCount": 4630
+    },
+    {
+      "height": 959278,
+      "id": "00000000000000000001fbc87af9420de6b14d15a28792b1aad37542d4426a8e",
+      "timestamp": 1784821113,
+      "txCount": 4767
+    },
+    {
+      "height": 959277,
+      "id": "0000000000000000000196ac4ccb58bd8feaec4f37a6979f8bbaa83f55999549",
+      "timestamp": 1784820755,
       "txCount": 4056
     },
     {
-      "height": 959263,
-      "id": "000000000000000000019e8586a7acbd8b481dcbbd32b8cc8cc26c93b3edf6cf",
-      "timestamp": 1784814551,
-      "txCount": 3439
+      "height": 959276,
+      "id": "0000000000000000000031b14dce071568b3319da3e2b07f4d25ba72cc650cca",
+      "timestamp": 1784819900,
+      "txCount": 5131
     },
     {
-      "height": 959262,
-      "id": "00000000000000000000574552a6211b3130fbe03795b00345ac190216713b4e",
-      "timestamp": 1784812938,
-      "txCount": 5369
+      "height": 959275,
+      "id": "00000000000000000000a44db2332d752d9c43a14fb130c0c705d33a0c1b2baa",
+      "timestamp": 1784819357,
+      "txCount": 6134
     },
     {
-      "height": 959261,
-      "id": "00000000000000000000702bcf01ee200cb0adf17b3ed48ae10cef5903f9fe3b",
-      "timestamp": 1784812322,
-      "txCount": 6238
-    },
-    {
-      "height": 959260,
-      "id": "000000000000000000006d74f2804955dac2568bc97e48d501e2a7172bf54cb9",
-      "timestamp": 1784812080,
-      "txCount": 4275
-    },
-    {
-      "height": 959259,
-      "id": "000000000000000000001e2d94c09d6cc70cc5869609a6495820cfa000df6346",
-      "timestamp": 1784811403,
-      "txCount": 6645
-    },
-    {
-      "height": 959258,
-      "id": "00000000000000000001c25f649bed9c05a0bd68b0651e9ac7659265477dfbc3",
-      "timestamp": 1784811286,
-      "txCount": 687
+      "height": 959274,
+      "id": "00000000000000000000f4a2b19cba477226228f020c7339d541eaf07ea772e1",
+      "timestamp": 1784819164,
+      "txCount": 6173
     }
   ],
   "news": [
+    {
+      "title": "The SEC settles with Coinbase over its missing Gary Gensler texts",
+      "link": "https://www.coindesk.com/policy/2026/07/23/sec-agrees-to-end-lawsuit-over-missing-ethereum-records-will-pay-usd150-000-in-fees",
+      "pubDate": "Thu, 23 Jul 2026 15:36:39 +0000"
+    },
+    {
+      "title": "Crypto for Advisors: It’s time for tokenization to get to work",
+      "link": "https://www.coindesk.com/coindesk-indices/2026/07/23/crypto-for-advisors-it-s-time-for-tokenization-to-get-to-work",
+      "pubDate": "Thu, 23 Jul 2026 14:53:34 +0000"
+    },
     {
       "title": "Uniswap pushes deeper into tokenized assets with permissioned trading pools",
       "link": "https://www.coindesk.com/business/2026/07/22/uniswap-pushes-deeper-into-tokenized-assets-with-permissioned-trading-pools",
@@ -467,7 +477,7 @@
       "pubDate": "Thu, 23 Jul 2026 10:26:23 +0000"
     },
     {
-      "title": "Live markets: Bitcoin slips back as Iran war expansion sends oil surging above $90 per barrel",
+      "title": "Live markets: Bitcoin slides as stocks slump on Iran war expansion, AI spending concern",
       "link": "https://www.coindesk.com/tech/2026/07/23/live-markets-bitcoin-trades-above-usd65-000-as-alphabet-s-bigger-ai-bill-props-up-the-chip-trade",
       "pubDate": "Thu, 23 Jul 2026 09:03:33 +0000"
     },
@@ -475,16 +485,6 @@
       "title": "BitMEX, the exchange that invented perps, is shutting down",
       "link": "https://www.coindesk.com/markets/2026/07/23/bitmex-s-11-year-run-comes-to-an-end-notifies-users-it-is-ending-operations-in-by-sept-23",
       "pubDate": "Thu, 23 Jul 2026 08:42:26 +0000"
-    },
-    {
-      "title": "24/7 financial rails: How BNY plans to eliminate the weekend lag in U.S. Treasuries",
-      "link": "https://www.coindesk.com/business/2026/07/23/24-7-financial-rails-how-bny-plans-to-eliminate-the-weekend-lag-in-u-s-treasuries",
-      "pubDate": "Thu, 23 Jul 2026 08:42:21 +0000"
-    },
-    {
-      "title": "South Korea's oldest crypto exchange is now part of the $1 trillion Mirae Group family",
-      "link": "https://www.coindesk.com/markets/2026/07/23/south-korea-s-oldest-crypto-exchange-is-now-part-of-the-usd800-billion-mirae-group-family",
-      "pubDate": "Thu, 23 Jul 2026 07:05:42 +0000"
     }
   ]
 }
