@@ -1,13 +1,13 @@
 {
-  "fetchedAt": "2026-07-23T16:43:07.344Z",
+  "fetchedAt": "2026-07-23T19:41:47.750Z",
   "price": {
-    "usd": 64732,
-    "time": 1784824807
+    "usd": 64851,
+    "time": 1784835308
   },
   "moves": {
-    "d1": -2.035587747241163,
-    "d7": 1.5287471260615693,
-    "d30": 3.302956074676855
+    "d1": -1.8554949792426778,
+    "d7": 1.715392385098835,
+    "d30": 3.492862948755926
   },
   "history90d": [
     {
@@ -372,60 +372,75 @@
     },
     {
       "date": "2026-07-23",
-      "close": 64722.17202771706
+      "close": 64783.47502961276
     }
   ],
   "blocks": [
     {
-      "height": 959281,
-      "id": "00000000000000000000655e9a0da2f6f13a8bef9c2b4a244d1011c38f1761b8",
-      "timestamp": 1784823886,
-      "txCount": 4052
+      "height": 959301,
+      "id": "000000000000000000014a4ad990f1026ae31aa6b3eb2735db19b855b486aec6",
+      "timestamp": 1784835224,
+      "txCount": 5248
     },
     {
-      "height": 959280,
-      "id": "000000000000000000020234cab54aecb5d7a595018a18073122d2f56a8bc017",
-      "timestamp": 1784823865,
-      "txCount": 4278
+      "height": 959300,
+      "id": "00000000000000000001ee32c660e6ddb918d7eb90e5bb48ae43e6b877f9ea4a",
+      "timestamp": 1784835046,
+      "txCount": 5522
     },
     {
-      "height": 959279,
-      "id": "00000000000000000002166dd0626474798015432fbed073735a14e871f60800",
-      "timestamp": 1784821913,
-      "txCount": 4630
+      "height": 959299,
+      "id": "000000000000000000015d393fcb21ddb8e500de874f500299d340475a5061b1",
+      "timestamp": 1784834691,
+      "txCount": 4637
     },
     {
-      "height": 959278,
-      "id": "00000000000000000001fbc87af9420de6b14d15a28792b1aad37542d4426a8e",
-      "timestamp": 1784821113,
-      "txCount": 4767
+      "height": 959298,
+      "id": "000000000000000000010adcb1f145439769ec8da50bd782f3132f36fe32d76c",
+      "timestamp": 1784833998,
+      "txCount": 4459
     },
     {
-      "height": 959277,
-      "id": "0000000000000000000196ac4ccb58bd8feaec4f37a6979f8bbaa83f55999549",
-      "timestamp": 1784820755,
-      "txCount": 4056
+      "height": 959297,
+      "id": "0000000000000000000035615acc12fb10880e13320d159a767ddab343b6aa50",
+      "timestamp": 1784833919,
+      "txCount": 3828
     },
     {
-      "height": 959276,
-      "id": "0000000000000000000031b14dce071568b3319da3e2b07f4d25ba72cc650cca",
-      "timestamp": 1784819900,
-      "txCount": 5131
+      "height": 959296,
+      "id": "0000000000000000000150dc1062a1de245ca50af62de03440590a0c3498d387",
+      "timestamp": 1784832908,
+      "txCount": 4456
     },
     {
-      "height": 959275,
-      "id": "00000000000000000000a44db2332d752d9c43a14fb130c0c705d33a0c1b2baa",
-      "timestamp": 1784819357,
-      "txCount": 6134
+      "height": 959295,
+      "id": "000000000000000000004a2b1e24f41a845c32af13a6320544bba0df9d92e419",
+      "timestamp": 1784832748,
+      "txCount": 4122
     },
     {
-      "height": 959274,
-      "id": "00000000000000000000f4a2b19cba477226228f020c7339d541eaf07ea772e1",
-      "timestamp": 1784819164,
-      "txCount": 6173
+      "height": 959294,
+      "id": "000000000000000000022a15ec8282971f5bd125048d775fc545121a8f7fe303",
+      "timestamp": 1784832284,
+      "txCount": 4161
     }
   ],
   "news": [
+    {
+      "title": "Robinhood CEO Vlad Tenev's X account hacked to promote token amid memecoin frenzy",
+      "link": "https://www.coindesk.com/business/2026/07/23/robinhood-ceo-vlad-tenev-s-x-account-hacked-to-promote-token-amid-memecoin-frenzy",
+      "pubDate": "Thu, 23 Jul 2026 18:29:31 +0000"
+    },
+    {
+      "title": "Tassat wants to help smaller banks tap the trillion-dollar stablecoin boom before Wall Street lock them out",
+      "link": "https://www.coindesk.com/business/2026/07/23/tassat-wants-to-help-smaller-banks-tap-the-trillion-dollar-stablecoin-boom-before-wall-street-lock-them-out",
+      "pubDate": "Thu, 23 Jul 2026 18:10:02 +0000"
+    },
+    {
+      "title": "Coinbase's corporate customers can now accept payments from AI agents",
+      "link": "https://www.coindesk.com/business/2026/07/23/coinbase-closes-the-gaps-in-ai-agent-economy-for-businesses-users-and-developers",
+      "pubDate": "Thu, 23 Jul 2026 16:54:12 +0000"
+    },
     {
       "title": "The SEC settles with Coinbase over its missing Gary Gensler texts",
       "link": "https://www.coindesk.com/policy/2026/07/23/sec-agrees-to-end-lawsuit-over-missing-ethereum-records-will-pay-usd150-000-in-fees",
@@ -470,21 +485,6 @@
       "title": "Bulls face a test unlike anything in bitcoin's 17-year history",
       "link": "https://www.coindesk.com/daybook-us/2026/07/23/bulls-face-a-test-unlike-anything-in-bitcoin-s-17-year-history",
       "pubDate": "Thu, 23 Jul 2026 11:13:39 +0000"
-    },
-    {
-      "title": "Crypto catches its breath as bitcoin settles into a holding pattern amid July rally",
-      "link": "https://www.coindesk.com/markets/2026/07/23/crypto-catches-its-breath-as-bitcoin-settles-into-a-holding-pattern-after-its-best-month-since-january",
-      "pubDate": "Thu, 23 Jul 2026 10:26:23 +0000"
-    },
-    {
-      "title": "Live markets: Bitcoin slides as stocks slump on Iran war expansion, AI spending concern",
-      "link": "https://www.coindesk.com/tech/2026/07/23/live-markets-bitcoin-trades-above-usd65-000-as-alphabet-s-bigger-ai-bill-props-up-the-chip-trade",
-      "pubDate": "Thu, 23 Jul 2026 09:03:33 +0000"
-    },
-    {
-      "title": "BitMEX, the exchange that invented perps, is shutting down",
-      "link": "https://www.coindesk.com/markets/2026/07/23/bitmex-s-11-year-run-comes-to-an-end-notifies-users-it-is-ending-operations-in-by-sept-23",
-      "pubDate": "Thu, 23 Jul 2026 08:42:26 +0000"
     }
   ]
 }
