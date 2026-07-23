@@ -1,13 +1,13 @@
 {
-  "fetchedAt": "2026-07-23T19:41:47.750Z",
+  "fetchedAt": "2026-07-23T22:12:28.694Z",
   "price": {
-    "usd": 64851,
-    "time": 1784835308
+    "usd": 65121,
+    "time": 1784844308
   },
   "moves": {
-    "d1": -1.8554949792426778,
-    "d7": 1.715392385098835,
-    "d30": 3.492862948755926
+    "d1": -1.4468811358847589,
+    "d7": 2.138873224931337,
+    "d30": 3.923744091624415
   },
   "history90d": [
     {
@@ -372,60 +372,65 @@
     },
     {
       "date": "2026-07-23",
-      "close": 64783.47502961276
+      "close": 65101.20345461665
     }
   ],
   "blocks": [
     {
-      "height": 959301,
-      "id": "000000000000000000014a4ad990f1026ae31aa6b3eb2735db19b855b486aec6",
-      "timestamp": 1784835224,
-      "txCount": 5248
+      "height": 959312,
+      "id": "000000000000000000016255cca70ac6931fe851e9f56f8230c7115e473be0a7",
+      "timestamp": 1784843818,
+      "txCount": 4452
     },
     {
-      "height": 959300,
-      "id": "00000000000000000001ee32c660e6ddb918d7eb90e5bb48ae43e6b877f9ea4a",
-      "timestamp": 1784835046,
-      "txCount": 5522
+      "height": 959311,
+      "id": "000000000000000000005a63a2c00834b92746ab0658c9f0c98aeb509724e8f9",
+      "timestamp": 1784842428,
+      "txCount": 3970
     },
     {
-      "height": 959299,
-      "id": "000000000000000000015d393fcb21ddb8e500de874f500299d340475a5061b1",
-      "timestamp": 1784834691,
-      "txCount": 4637
+      "height": 959310,
+      "id": "000000000000000000000b51d1839c6913081e4a9aaa54f745c4c998f134b32a",
+      "timestamp": 1784841366,
+      "txCount": 4684
     },
     {
-      "height": 959298,
-      "id": "000000000000000000010adcb1f145439769ec8da50bd782f3132f36fe32d76c",
-      "timestamp": 1784833998,
-      "txCount": 4459
+      "height": 959309,
+      "id": "000000000000000000008ec566a2bb10a1781b3da149c24d2774993ebb9035da",
+      "timestamp": 1784841132,
+      "txCount": 4084
     },
     {
-      "height": 959297,
-      "id": "0000000000000000000035615acc12fb10880e13320d159a767ddab343b6aa50",
-      "timestamp": 1784833919,
-      "txCount": 3828
+      "height": 959308,
+      "id": "00000000000000000000a21939138cd768eb96f95c70554dc9b29316b8aa0426",
+      "timestamp": 1784839451,
+      "txCount": 4091
     },
     {
-      "height": 959296,
-      "id": "0000000000000000000150dc1062a1de245ca50af62de03440590a0c3498d387",
-      "timestamp": 1784832908,
-      "txCount": 4456
+      "height": 959307,
+      "id": "0000000000000000000227299762e02f2a1a6f15bde2297ad407c5c15342ec0a",
+      "timestamp": 1784838416,
+      "txCount": 7418
     },
     {
-      "height": 959295,
-      "id": "000000000000000000004a2b1e24f41a845c32af13a6320544bba0df9d92e419",
-      "timestamp": 1784832748,
-      "txCount": 4122
+      "height": 959306,
+      "id": "0000000000000000000212a0ee39a93fcc666dd278d0d3b2ddd3ba19357fe7fc",
+      "timestamp": 1784838044,
+      "txCount": 5669
     },
     {
-      "height": 959294,
-      "id": "000000000000000000022a15ec8282971f5bd125048d775fc545121a8f7fe303",
-      "timestamp": 1784832284,
-      "txCount": 4161
+      "height": 959305,
+      "id": "00000000000000000000e82cdcdca5f072924d79790f2e4301330d4338d8eb30",
+      "timestamp": 1784837537,
+      "txCount": 5898
     }
   ],
   "news": [
+    {
+      "title": "Clarity Act expected to miss its window before Congress' summer break, leadership says",
+      "link": "https://www.coindesk.com/policy/2026/07/23/clarity-act-expected-to-miss-its-window-before-congress-summer-break-leadership-says",
+      "pubDate": "Thu, 23 Jul 2026 20:16:37 +0000"
+    },
     {
       "title": "Robinhood CEO Vlad Tenev's X account hacked to promote token amid memecoin frenzy",
       "link": "https://www.coindesk.com/business/2026/07/23/robinhood-ceo-vlad-tenev-s-x-account-hacked-to-promote-token-amid-memecoin-frenzy",
@@ -480,11 +485,6 @@
       "title": "Polymarket to challenge France’s nationwide website block",
       "link": "https://www.coindesk.com/policy/2026/07/23/polymarket-to-challenge-france-s-nationwide-website-block",
       "pubDate": "Thu, 23 Jul 2026 11:53:53 +0000"
-    },
-    {
-      "title": "Bulls face a test unlike anything in bitcoin's 17-year history",
-      "link": "https://www.coindesk.com/daybook-us/2026/07/23/bulls-face-a-test-unlike-anything-in-bitcoin-s-17-year-history",
-      "pubDate": "Thu, 23 Jul 2026 11:13:39 +0000"
     }
   ]
 }
