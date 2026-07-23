@@ -1,13 +1,13 @@
 {
-  "fetchedAt": "2026-07-23T08:42:59.039Z",
+  "fetchedAt": "2026-07-23T11:18:24.758Z",
   "price": {
-    "usd": 65591,
-    "time": 1784795711
+    "usd": 65638,
+    "time": 1784805007
   },
   "moves": {
-    "d1": -0.7355903715209666,
-    "d7": 2.876043575750842,
-    "d30": 4.67379645143251
+    "d1": -0.6644612950845841,
+    "d7": 2.949760610832808,
+    "d30": 4.748801687413318
   },
   "history90d": [
     {
@@ -372,60 +372,70 @@
     },
     {
       "date": "2026-07-23",
-      "close": 65571.83405309715
+      "close": 65684.08244093576
     }
   ],
   "blocks": [
     {
-      "height": 959236,
-      "id": "000000000000000000016aca15becb51ec166677ae961f2bf0cc5f9b4d176153",
-      "timestamp": 1784794996,
-      "txCount": 6026
+      "height": 959244,
+      "id": "00000000000000000000fd4e657b6f03c7606ceecf8e6a9cc49b644fd2b1780a",
+      "timestamp": 1784803649,
+      "txCount": 3032
     },
     {
-      "height": 959235,
-      "id": "000000000000000000008ea4199017fe4109ec89f69367fb0dc5f396d5c26736",
-      "timestamp": 1784794776,
-      "txCount": 6237
+      "height": 959243,
+      "id": "00000000000000000000c7418f8b780d367333fd25c185def245f05c097b7f86",
+      "timestamp": 1784803400,
+      "txCount": 4259
     },
     {
-      "height": 959234,
-      "id": "00000000000000000000ba0e341de8a759cb0f05133256adc594db746e6d3db0",
-      "timestamp": 1784794757,
-      "txCount": 4540
+      "height": 959242,
+      "id": "0000000000000000000131dd87314d5d5355308b466bff72f6621fd94b8d91e6",
+      "timestamp": 1784802660,
+      "txCount": 4508
     },
     {
-      "height": 959233,
-      "id": "0000000000000000000199cf5ce9ff0022af8f1baedf35d675db5c662da082d3",
-      "timestamp": 1784794614,
-      "txCount": 4238
+      "height": 959241,
+      "id": "000000000000000000007933e0dc73604a52057ba18de7b9463b65d9433dd0fe",
+      "timestamp": 1784800070,
+      "txCount": 4704
     },
     {
-      "height": 959232,
-      "id": "000000000000000000008412f18bd08bdaa5c910caeb017ffe52e680cd1f600a",
-      "timestamp": 1784793276,
-      "txCount": 3963
+      "height": 959240,
+      "id": "0000000000000000000181919d7c56d488be45525c0c1659b46439d21496f911",
+      "timestamp": 1784797876,
+      "txCount": 5649
     },
     {
-      "height": 959231,
-      "id": "00000000000000000000a9312ad6e2005e6d11d3dd9b8ff2395373354d3435b3",
-      "timestamp": 1784792819,
-      "txCount": 4285
+      "height": 959239,
+      "id": "00000000000000000001107f2ccfc1d44de83ac12a9c537d8cd86ed80b743ac2",
+      "timestamp": 1784797410,
+      "txCount": 4974
     },
     {
-      "height": 959230,
-      "id": "00000000000000000001d4a6bc5a086ad001f67f6656980b40766ba5c7e8ea68",
-      "timestamp": 1784791699,
-      "txCount": 4988
+      "height": 959238,
+      "id": "000000000000000000011412a9b4e47f03b2bbbfc34cc7c8baf2f314605790ae",
+      "timestamp": 1784797028,
+      "txCount": 4100
     },
     {
-      "height": 959229,
-      "id": "0000000000000000000147940b459b447cd014b51847b28431be79dc7c0cfe50",
-      "timestamp": 1784791416,
-      "txCount": 5040
+      "height": 959237,
+      "id": "000000000000000000017a8690a113a236c364ebf3dd7fedb2f63ff664f24494",
+      "timestamp": 1784796273,
+      "txCount": 4610
     }
   ],
   "news": [
+    {
+      "title": "Crypto catches its breath as bitcoin settles into a holding pattern amid July rally",
+      "link": "https://www.coindesk.com/markets/2026/07/23/crypto-catches-its-breath-as-bitcoin-settles-into-a-holding-pattern-after-its-best-month-since-january",
+      "pubDate": "Thu, 23 Jul 2026 10:26:23 +0000"
+    },
+    {
+      "title": "Live markets: Bitcoin trades above $65,000 as Alphabet's bigger AI bill props up the chip trade",
+      "link": "https://www.coindesk.com/tech/2026/07/23/live-markets-bitcoin-trades-above-usd65-000-as-alphabet-s-bigger-ai-bill-props-up-the-chip-trade",
+      "pubDate": "Thu, 23 Jul 2026 09:03:33 +0000"
+    },
     {
       "title": "BitMEX, the exchange that invented perps, is shutting down",
       "link": "https://www.coindesk.com/markets/2026/07/23/bitmex-s-11-year-run-comes-to-an-end-notifies-users-it-is-ending-operations-in-by-sept-23",
@@ -475,16 +485,6 @@
       "title": "Tesla holds bitcoin treasury steady, reports $112M impairment loss",
       "link": "https://www.coindesk.com/markets/2026/07/22/tesla-holds-bitcoin-steady-reports-usd112m-impairment-loss",
       "pubDate": "Wed, 22 Jul 2026 20:40:24 +0000"
-    },
-    {
-      "title": "New draft of Clarity Act is out, and it would impose limits on Trump's crypto empire",
-      "link": "https://www.coindesk.com/policy/2026/07/22/new-clarity-act-emerges-that-s-a-start-on-the-final-draft-makes-ethics-rule-temporary",
-      "pubDate": "Wed, 22 Jul 2026 16:15:55 +0000"
-    },
-    {
-      "title": "Revolut hits $115 billion valuation in employee share sale: WSJ",
-      "link": "https://www.coindesk.com/business/2026/07/22/revolut-hits-usd115-billion-valuation-in-employee-share-sale-wsj",
-      "pubDate": "Wed, 22 Jul 2026 15:53:54 +0000"
     }
   ]
 }
