@@ -1,13 +1,13 @@
 {
-  "fetchedAt": "2026-07-23T11:18:24.758Z",
+  "fetchedAt": "2026-07-23T14:27:23.124Z",
   "price": {
-    "usd": 65638,
-    "time": 1784805007
+    "usd": 65099,
+    "time": 1784816707
   },
   "moves": {
-    "d1": -0.6644612950845841,
-    "d7": 2.949760610832808,
-    "d30": 4.748801687413318
+    "d1": -1.480175597195399,
+    "d7": 2.104367378722749,
+    "d30": 3.8886352577610417
   },
   "history90d": [
     {
@@ -372,67 +372,102 @@
     },
     {
       "date": "2026-07-23",
-      "close": 65684.08244093576
+      "close": 65109.25539406824
     }
   ],
   "blocks": [
     {
-      "height": 959244,
-      "id": "00000000000000000000fd4e657b6f03c7606ceecf8e6a9cc49b644fd2b1780a",
-      "timestamp": 1784803649,
-      "txCount": 3032
+      "height": 959265,
+      "id": "00000000000000000000dd814ded19a61388dfdd26ad3b91be2b86229238c92b",
+      "timestamp": 1784816801,
+      "txCount": 3920
     },
     {
-      "height": 959243,
-      "id": "00000000000000000000c7418f8b780d367333fd25c185def245f05c097b7f86",
-      "timestamp": 1784803400,
-      "txCount": 4259
+      "height": 959264,
+      "id": "000000000000000000001f988cd9c530c35e75f5f53b29eab2e50178ca1eeb03",
+      "timestamp": 1784815359,
+      "txCount": 4056
     },
     {
-      "height": 959242,
-      "id": "0000000000000000000131dd87314d5d5355308b466bff72f6621fd94b8d91e6",
-      "timestamp": 1784802660,
-      "txCount": 4508
+      "height": 959263,
+      "id": "000000000000000000019e8586a7acbd8b481dcbbd32b8cc8cc26c93b3edf6cf",
+      "timestamp": 1784814551,
+      "txCount": 3439
     },
     {
-      "height": 959241,
-      "id": "000000000000000000007933e0dc73604a52057ba18de7b9463b65d9433dd0fe",
-      "timestamp": 1784800070,
-      "txCount": 4704
+      "height": 959262,
+      "id": "00000000000000000000574552a6211b3130fbe03795b00345ac190216713b4e",
+      "timestamp": 1784812938,
+      "txCount": 5369
     },
     {
-      "height": 959240,
-      "id": "0000000000000000000181919d7c56d488be45525c0c1659b46439d21496f911",
-      "timestamp": 1784797876,
-      "txCount": 5649
+      "height": 959261,
+      "id": "00000000000000000000702bcf01ee200cb0adf17b3ed48ae10cef5903f9fe3b",
+      "timestamp": 1784812322,
+      "txCount": 6238
     },
     {
-      "height": 959239,
-      "id": "00000000000000000001107f2ccfc1d44de83ac12a9c537d8cd86ed80b743ac2",
-      "timestamp": 1784797410,
-      "txCount": 4974
+      "height": 959260,
+      "id": "000000000000000000006d74f2804955dac2568bc97e48d501e2a7172bf54cb9",
+      "timestamp": 1784812080,
+      "txCount": 4275
     },
     {
-      "height": 959238,
-      "id": "000000000000000000011412a9b4e47f03b2bbbfc34cc7c8baf2f314605790ae",
-      "timestamp": 1784797028,
-      "txCount": 4100
+      "height": 959259,
+      "id": "000000000000000000001e2d94c09d6cc70cc5869609a6495820cfa000df6346",
+      "timestamp": 1784811403,
+      "txCount": 6645
     },
     {
-      "height": 959237,
-      "id": "000000000000000000017a8690a113a236c364ebf3dd7fedb2f63ff664f24494",
-      "timestamp": 1784796273,
-      "txCount": 4610
+      "height": 959258,
+      "id": "00000000000000000001c25f649bed9c05a0bd68b0651e9ac7659265477dfbc3",
+      "timestamp": 1784811286,
+      "txCount": 687
     }
   ],
   "news": [
+    {
+      "title": "Uniswap pushes deeper into tokenized assets with permissioned trading pools",
+      "link": "https://www.coindesk.com/business/2026/07/22/uniswap-pushes-deeper-into-tokenized-assets-with-permissioned-trading-pools",
+      "pubDate": "Thu, 23 Jul 2026 14:00:00 +0000"
+    },
+    {
+      "title": "Goldman Sachs CEO backs Clarity Act despite banking industry's concerns over stablecoin rules",
+      "link": "https://www.coindesk.com/policy/2026/07/23/goldman-sachs-ceo-backs-clarity-act-despite-banking-industry-s-concerns-over-stablecoin-rules",
+      "pubDate": "Thu, 23 Jul 2026 13:53:19 +0000"
+    },
+    {
+      "title": "The KIDS Act is way worse than digital carding — it is a mass surveillance system",
+      "link": "https://www.coindesk.com/opinion/2026/07/23/the-kids-act-is-way-worse-than-digital-carding-it-is-a-mass-surveillance-system",
+      "pubDate": "Thu, 23 Jul 2026 13:00:00 +0000"
+    },
+    {
+      "title": "BlackRock, Coinbase, Strategy in a new group pledging $15 million to prepare Bitcoin for quantum threats",
+      "link": "https://www.coindesk.com/business/2026/07/23/blackrock-coinbase-strategy-in-group-pledging-usd15-million-to-prepare-bitcoin-for-quantum-threats",
+      "pubDate": "Thu, 23 Jul 2026 12:54:27 +0000"
+    },
+    {
+      "title": "Abu Dhabi's Mubadala Capital joins tokenization push as Coinbase takes stake in onchain fund",
+      "link": "https://www.coindesk.com/business/2026/07/23/abu-dhabi-s-mubadala-capital-joins-tokenization-push-as-coinbase-takes-stake-in-onchain-fund",
+      "pubDate": "Thu, 23 Jul 2026 12:00:00 +0000"
+    },
+    {
+      "title": "Polymarket to challenge France’s nationwide website block",
+      "link": "https://www.coindesk.com/policy/2026/07/23/polymarket-to-challenge-france-s-nationwide-website-block",
+      "pubDate": "Thu, 23 Jul 2026 11:53:53 +0000"
+    },
+    {
+      "title": "Bulls face a test unlike anything in bitcoin's 17-year history",
+      "link": "https://www.coindesk.com/daybook-us/2026/07/23/bulls-face-a-test-unlike-anything-in-bitcoin-s-17-year-history",
+      "pubDate": "Thu, 23 Jul 2026 11:13:39 +0000"
+    },
     {
       "title": "Crypto catches its breath as bitcoin settles into a holding pattern amid July rally",
       "link": "https://www.coindesk.com/markets/2026/07/23/crypto-catches-its-breath-as-bitcoin-settles-into-a-holding-pattern-after-its-best-month-since-january",
       "pubDate": "Thu, 23 Jul 2026 10:26:23 +0000"
     },
     {
-      "title": "Live markets: Bitcoin trades above $65,000 as Alphabet's bigger AI bill props up the chip trade",
+      "title": "Live markets: Bitcoin slips back as Iran war expansion sends oil surging above $90 per barrel",
       "link": "https://www.coindesk.com/tech/2026/07/23/live-markets-bitcoin-trades-above-usd65-000-as-alphabet-s-bigger-ai-bill-props-up-the-chip-trade",
       "pubDate": "Thu, 23 Jul 2026 09:03:33 +0000"
     },
@@ -450,41 +485,6 @@
       "title": "South Korea's oldest crypto exchange is now part of the $1 trillion Mirae Group family",
       "link": "https://www.coindesk.com/markets/2026/07/23/south-korea-s-oldest-crypto-exchange-is-now-part-of-the-usd800-billion-mirae-group-family",
       "pubDate": "Thu, 23 Jul 2026 07:05:42 +0000"
-    },
-    {
-      "title": "Bitcoin, Ethereum-linked protocols lose $35 million in multiple attacks hours apart",
-      "link": "https://www.coindesk.com/tech/2026/07/23/bitcoin-ethereum-linked-protocols-lose-usd35-million-in-multiple-attacks-hours-apart",
-      "pubDate": "Thu, 23 Jul 2026 06:38:18 +0000"
-    },
-    {
-      "title": "Arbitrum-based AFX Trade drained of $24 million after bridge keys compromised",
-      "link": "https://www.coindesk.com/tech/2026/07/23/arbitrum-based-afx-trade-drained-of-usd24-million-after-bridge-keys-compromised",
-      "pubDate": "Thu, 23 Jul 2026 05:01:06 +0000"
-    },
-    {
-      "title": "XRP whales accumulate as small holders capitulate",
-      "link": "https://www.coindesk.com/markets/2026/07/23/xrp-whales-accumulate-as-small-holders-capitulate",
-      "pubDate": "Thu, 23 Jul 2026 04:11:13 +0000"
-    },
-    {
-      "title": "Bitcoin wilts as oil and rates rise. Clarity Act odds tumble to 38%",
-      "link": "https://www.coindesk.com/markets/2026/07/23/bitcoin-wilts-as-oil-and-rates-rise-clarity-act-odds-tumble-to-38",
-      "pubDate": "Thu, 23 Jul 2026 03:50:20 +0000"
-    },
-    {
-      "title": "Senator Lummis: Ethics, other provisions in crypto Clarity Act to be further discussed",
-      "link": "https://www.coindesk.com/policy/2026/07/22/senator-lummis-ethics-other-provisions-in-crypto-clarity-act-to-be-further-discussed",
-      "pubDate": "Wed, 22 Jul 2026 23:19:41 +0000"
-    },
-    {
-      "title": "Key Democratic lawmakers say crypto Clarity Act 'falls short' on ethics, other issues",
-      "link": "https://www.coindesk.com/policy/2026/07/22/key-democratic-lawmakers-say-crypto-clarity-act-falls-short-on-ethics-other-issues",
-      "pubDate": "Wed, 22 Jul 2026 22:22:25 +0000"
-    },
-    {
-      "title": "Tesla holds bitcoin treasury steady, reports $112M impairment loss",
-      "link": "https://www.coindesk.com/markets/2026/07/22/tesla-holds-bitcoin-steady-reports-usd112m-impairment-loss",
-      "pubDate": "Wed, 22 Jul 2026 20:40:24 +0000"
     }
   ]
 }
