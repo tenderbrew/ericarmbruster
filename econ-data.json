@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-07-23T03:37:29.060Z",
+  "fetchedAt": "2026-07-23T14:25:52.962Z",
   "indicators": {
     "UNRATE": {
       "latest": {
@@ -33,12 +33,12 @@
     },
     "ICSA": {
       "latest": {
-        "date": "2026-07-11",
-        "value": 208000
+        "date": "2026-07-18",
+        "value": 187000
       },
       "previous": {
-        "date": "2026-07-04",
-        "value": 216000
+        "date": "2026-07-11",
+        "value": 209000
       }
     },
     "CPIAUCSL": {
@@ -163,11 +163,11 @@
     },
     "BAMLH0A0HYM2": {
       "latest": {
-        "date": "2026-07-21",
-        "value": 2.69
+        "date": "2026-07-22",
+        "value": 2.68
       },
       "previous": {
-        "date": "2026-07-20",
+        "date": "2026-07-21",
         "value": 2.69
       }
     },
@@ -263,12 +263,12 @@
     },
     "VIXCLS": {
       "latest": {
-        "date": "2026-07-21",
-        "value": 17.05
+        "date": "2026-07-22",
+        "value": 16.64
       },
       "previous": {
-        "date": "2026-07-20",
-        "value": 18.65
+        "date": "2026-07-21",
+        "value": 17.05
       }
     },
     "BOPGSTB": {
@@ -300,6 +300,24 @@
     }
   },
   "news": [
+    {
+      "title": "Help Us Expand the Mises Academy!",
+      "link": "https://mises.org/mises-wire/help-us-expand-mises-academy",
+      "pubDate": "Thu, 23 Jul 2026 08:50:44 CDT",
+      "kind": "Mises Wire"
+    },
+    {
+      "title": "Yes, Democratic Socialists Want Soviet-Style Control of Capital",
+      "link": "https://mises.org/podcasts/audio-mises-wire/yes-democratic-socialists-want-soviet-style-control-capital",
+      "pubDate": "Thu, 23 Jul 2026 08:17:02 CDT",
+      "kind": "Podcast"
+    },
+    {
+      "title": "Yes, Democratic Socialists Want Soviet-Style Control of Capital",
+      "link": "https://mises.org/mises-wire/yes-democratic-socialists-want-soviet-style-control-capital",
+      "pubDate": "Thu, 23 Jul 2026 05:00:00 CDT",
+      "kind": "Mises Wire"
+    },
     {
       "title": "Cronyism: The Origins of the Federal Reserve",
       "link": "https://mises.org/podcasts/mises-u-2026/cronyism-origins-federal-reserve",
@@ -341,24 +359,6 @@
       "link": "https://mises.org/podcasts/mises-u-2026/repugnant-markets",
       "pubDate": "Wed, 22 Jul 2026 10:00:00 CDT",
       "kind": "Podcast"
-    },
-    {
-      "title": "Will You Ever Be Able to Buy a House?",
-      "link": "https://mises.org/podcasts/mises-u-2026/will-you-ever-be-able-buy-house",
-      "pubDate": "Wed, 22 Jul 2026 09:00:00 CDT",
-      "kind": "Podcast"
-    },
-    {
-      "title": "You Know How This Happens, Right?",
-      "link": "https://mises.org/podcasts/audio-mises-wire/you-know-how-happens-right",
-      "pubDate": "Wed, 22 Jul 2026 08:01:01 CDT",
-      "kind": "Podcast"
-    },
-    {
-      "title": "You Know How This Happens, Right?",
-      "link": "https://mises.org/mises-wire/you-know-how-happens-right",
-      "pubDate": "Wed, 22 Jul 2026 05:00:00 CDT",
-      "kind": "Mises Wire"
     }
   ]
 }
