@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-07-24T00:10:01.783Z",
+  "fetchedAt": "2026-07-24T06:10:01.733Z",
   "note": "main services only; databases/caches/workers are filtered as implementation detail",
   "services": [
     {
@@ -148,10 +148,6 @@
     },
     {
       "name": "discord-blackjack",
-      "project": "standalone"
-    },
-    {
-      "name": "flamboyant_euclid",
       "project": "standalone"
     },
     {
