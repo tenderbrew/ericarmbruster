@@ -1,13 +1,13 @@
 {
-  "fetchedAt": "2026-07-24T03:38:35.712Z",
+  "fetchedAt": "2026-07-24T08:39:40.419Z",
   "price": {
-    "usd": 65263,
-    "time": 1784864115
+    "usd": 65359,
+    "time": 1784882107
   },
   "moves": {
-    "d1": 0.3236207752525866,
-    "d7": 2.125102828083447,
-    "d30": 7.0068148238005
+    "d1": 0.4711939421989886,
+    "d7": 2.275325923428362,
+    "d30": 7.164218777389575
   },
   "history90d": [
     {
@@ -372,60 +372,80 @@
     },
     {
       "date": "2026-07-24",
-      "close": 65254.47185263728
+      "close": 65379.75671991527
     }
   ],
   "blocks": [
     {
-      "height": 959356,
-      "id": "0000000000000000000223c63fc98eb2942fa4c6c533846696a810a1d28d131b",
-      "timestamp": 1784863958,
-      "txCount": 5350
+      "height": 959399,
+      "id": "000000000000000000018b58b3aee215c89cbfd287ba46e6b11ec7b8dfbb1b26",
+      "timestamp": 1784881089,
+      "txCount": 6757
     },
     {
-      "height": 959355,
-      "id": "0000000000000000000187f9e466c023dc655b470fb4a8ead5ad5ccdd9cc1f66",
-      "timestamp": 1784863456,
-      "txCount": 6616
+      "height": 959398,
+      "id": "000000000000000000018ab418a66803cebdaa32c4f52c62d7dab75bbea48c9f",
+      "timestamp": 1784880927,
+      "txCount": 6930
     },
     {
-      "height": 959354,
-      "id": "00000000000000000001cd01640a96a917ea2b9a61c3ce2d04683b4814bd6751",
-      "timestamp": 1784863216,
-      "txCount": 3242
+      "height": 959397,
+      "id": "0000000000000000000128b137fd4b6a9130aef2e0428bfcbd6afc5d4362f62d",
+      "timestamp": 1784880727,
+      "txCount": 6519
     },
     {
-      "height": 959353,
-      "id": "00000000000000000001ff8b8f22693e2184b0bc4f757a2c66b0851956fa5f84",
-      "timestamp": 1784862784,
-      "txCount": 3745
+      "height": 959396,
+      "id": "000000000000000000010b84948c404d711b551dd43fc78dc5ecfdfa27ca81bd",
+      "timestamp": 1784880625,
+      "txCount": 6903
     },
     {
-      "height": 959352,
-      "id": "000000000000000000009232865cf757a6ce6c12aa478d1c32886a978d7d2b85",
-      "timestamp": 1784861811,
-      "txCount": 6247
+      "height": 959395,
+      "id": "00000000000000000000c96d1549081bf4f349c7c30106431f9103c9d75d5b74",
+      "timestamp": 1784880511,
+      "txCount": 6556
     },
     {
-      "height": 959351,
-      "id": "00000000000000000001a8779e1ef7fcf423fdede4384d1495769aa7b6923676",
-      "timestamp": 1784861549,
-      "txCount": 5845
+      "height": 959394,
+      "id": "00000000000000000001d36ca292fcdadeab784789251948b2a9d6dca89bf2f4",
+      "timestamp": 1784880475,
+      "txCount": 6445
     },
     {
-      "height": 959350,
-      "id": "00000000000000000001f0380bcf88885e5e07f8a7974298f75bc45ab6b7295f",
-      "timestamp": 1784861413,
-      "txCount": 4183
+      "height": 959393,
+      "id": "000000000000000000021f97bc19ca8620402be2bb066c5bad053aa04ff1fbc9",
+      "timestamp": 1784880280,
+      "txCount": 4829
     },
     {
-      "height": 959349,
-      "id": "000000000000000000011016a761705e553ce1052927b0905673962a16fabdea",
-      "timestamp": 1784861351,
-      "txCount": 3765
+      "height": 959392,
+      "id": "000000000000000000009f604a012cd519ce60f35e666cef618198096a192085",
+      "timestamp": 1784879181,
+      "txCount": 5359
     }
   ],
   "news": [
+    {
+      "title": "Live updates: Dogecoin and ether lead pullback as investors digest tech earnings",
+      "link": "https://www.coindesk.com/tech/2026/07/24/live-updates-dogecoin-and-ether-lead-pullback-as-investors-digest-tech-earnings",
+      "pubDate": "Fri, 24 Jul 2026 07:22:26 +0000"
+    },
+    {
+      "title": "Ripple’s RLUSD gets two boosts as transfer volume drops 25%",
+      "link": "https://www.coindesk.com/business/2026/07/24/ripple-s-rlusd-gets-two-boosts-as-transfer-volume-drops-25",
+      "pubDate": "Fri, 24 Jul 2026 06:33:37 +0000"
+    },
+    {
+      "title": "Mirae plans to turn crypto exchange Korbit into something Korea hasn't seen before",
+      "link": "https://www.coindesk.com/markets/2026/07/24/mirae-asset-has-a-name-for-what-it-s-building-with-korbit-an-intelligent-platform",
+      "pubDate": "Fri, 24 Jul 2026 06:10:49 +0000"
+    },
+    {
+      "title": "Bitcoin holds near $65,000 as $800 billion AI selloff leaves crypto largely untouched",
+      "link": "https://www.coindesk.com/markets/2026/07/24/bitcoin-holds-near-usd65-000-as-usd800-billion-ai-selloff-leaves-crypto-largely-untouched",
+      "pubDate": "Fri, 24 Jul 2026 04:43:19 +0000"
+    },
     {
       "title": "Clarity Act expected to miss its window before Congress' summer break, leadership says",
       "link": "https://www.coindesk.com/policy/2026/07/23/clarity-act-expected-to-miss-its-window-before-congress-summer-break-leadership-says",
@@ -437,7 +457,7 @@
       "pubDate": "Thu, 23 Jul 2026 18:29:31 +0000"
     },
     {
-      "title": "Tassat wants to help smaller banks tap the trillion-dollar stablecoin boom before Wall Street lock them out",
+      "title": "Tassat wants to help smaller banks tap the trillion-dollar stablecoin boom before Wall Street locks them out",
       "link": "https://www.coindesk.com/business/2026/07/23/tassat-wants-to-help-smaller-banks-tap-the-trillion-dollar-stablecoin-boom-before-wall-street-lock-them-out",
       "pubDate": "Thu, 23 Jul 2026 18:10:02 +0000"
     },
@@ -465,26 +485,6 @@
       "title": "Goldman Sachs CEO backs Clarity Act despite banking industry's concerns over stablecoin rules",
       "link": "https://www.coindesk.com/policy/2026/07/23/goldman-sachs-ceo-backs-clarity-act-despite-banking-industry-s-concerns-over-stablecoin-rules",
       "pubDate": "Thu, 23 Jul 2026 13:53:19 +0000"
-    },
-    {
-      "title": "The KIDS Act is way worse than digital carding — it is a mass surveillance system",
-      "link": "https://www.coindesk.com/opinion/2026/07/23/the-kids-act-is-way-worse-than-digital-carding-it-is-a-mass-surveillance-system",
-      "pubDate": "Thu, 23 Jul 2026 13:00:00 +0000"
-    },
-    {
-      "title": "BlackRock, Coinbase, Strategy in a new group pledging $15 million to prepare Bitcoin for quantum threats",
-      "link": "https://www.coindesk.com/business/2026/07/23/blackrock-coinbase-strategy-in-group-pledging-usd15-million-to-prepare-bitcoin-for-quantum-threats",
-      "pubDate": "Thu, 23 Jul 2026 12:54:27 +0000"
-    },
-    {
-      "title": "Abu Dhabi's Mubadala Capital joins tokenization push as Coinbase takes stake in onchain fund",
-      "link": "https://www.coindesk.com/business/2026/07/23/abu-dhabi-s-mubadala-capital-joins-tokenization-push-as-coinbase-takes-stake-in-onchain-fund",
-      "pubDate": "Thu, 23 Jul 2026 12:00:00 +0000"
-    },
-    {
-      "title": "Polymarket to challenge France’s nationwide website block",
-      "link": "https://www.coindesk.com/policy/2026/07/23/polymarket-to-challenge-france-s-nationwide-website-block",
-      "pubDate": "Thu, 23 Jul 2026 11:53:53 +0000"
     }
   ]
 }
