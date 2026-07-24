@@ -1,13 +1,13 @@
 {
-  "fetchedAt": "2026-07-24T14:08:12.946Z",
+  "fetchedAt": "2026-07-24T16:54:49.432Z",
   "price": {
-    "usd": 64064,
-    "time": 1784901608
+    "usd": 63864,
+    "time": 1784911809
   },
   "moves": {
-    "d1": -1.5195065910886596,
-    "d7": 0.24887896018168654,
-    "d30": 5.040905028453402
+    "d1": -1.8269506888937026,
+    "d7": -0.0640858217869078,
+    "d30": 4.712980125142807
   },
   "history90d": [
     {
@@ -372,60 +372,75 @@
     },
     {
       "date": "2026-07-24",
-      "close": 63998.73480985126
+      "close": 63837.88820898862
     }
   ],
   "blocks": [
     {
-      "height": 959426,
-      "id": "00000000000000000000cc69ea07b9728e22f5b79e3cc021de3bc4da8e2bda6e",
-      "timestamp": 1784899645,
-      "txCount": 4116
+      "height": 959443,
+      "id": "0000000000000000000175dd98d28ecfefd53b39502278fdffbf85f8375573c0",
+      "timestamp": 1784911825,
+      "txCount": 4680
     },
     {
-      "height": 959425,
-      "id": "000000000000000000005030db40124b18dee1e07a9565f22fb4520e0e219d4f",
-      "timestamp": 1784899524,
-      "txCount": 3746
+      "height": 959442,
+      "id": "000000000000000000003676ba18d45b239fa9a11dff5c45f47578128ba7cb1d",
+      "timestamp": 1784911662,
+      "txCount": 4150
     },
     {
-      "height": 959424,
-      "id": "00000000000000000001a333c8149053763c6f52a6b24d7477e312a2195fd5b8",
-      "timestamp": 1784899310,
-      "txCount": 3616
+      "height": 959441,
+      "id": "00000000000000000001392d8aa183fc4f1c118fb21c76cc3d5893630044a3fb",
+      "timestamp": 1784911440,
+      "txCount": 4309
     },
     {
-      "height": 959423,
-      "id": "0000000000000000000160a9420697eeeb4cf05eb270244b90a636992b5b42d4",
-      "timestamp": 1784899205,
-      "txCount": 3443
+      "height": 959440,
+      "id": "000000000000000000005ed3e6b61befb7dd0505918175b1d26bb5487dd8f76b",
+      "timestamp": 1784910766,
+      "txCount": 4588
     },
     {
-      "height": 959422,
-      "id": "00000000000000000001e96a8a27c165e979c56e608220bd5e9a522841a4a4d2",
-      "timestamp": 1784898578,
-      "txCount": 3963
+      "height": 959439,
+      "id": "00000000000000000000f1f7ee86f8fc5c88b6097db02134a72501e78a8105f3",
+      "timestamp": 1784908865,
+      "txCount": 3045
     },
     {
-      "height": 959421,
-      "id": "000000000000000000008a01fdac08f52852f50cccd72ae70777991fd14c1426",
-      "timestamp": 1784897176,
-      "txCount": 4266
+      "height": 959438,
+      "id": "00000000000000000001f9d570844ca932c2e460f4f800b5ddf13f87a3bd4639",
+      "timestamp": 1784908617,
+      "txCount": 3214
     },
     {
-      "height": 959420,
-      "id": "000000000000000000020ec7d1ff26ddf76c9b510a0a8ecbf01a8b8f489f52ef",
-      "timestamp": 1784895539,
-      "txCount": 4630
+      "height": 959437,
+      "id": "00000000000000000000151d1111d5906b56287499d90e24e9fcbb8aaa4e0448",
+      "timestamp": 1784908374,
+      "txCount": 4510
     },
     {
-      "height": 959419,
-      "id": "000000000000000000020d35e779a03128efe0bf3dd89db5bc7b9df03b1e59ba",
-      "timestamp": 1784894058,
-      "txCount": 4400
+      "height": 959436,
+      "id": "00000000000000000001ce635dcd3b308c2a8a3a473535cd319fea2b45536cf7",
+      "timestamp": 1784907998,
+      "txCount": 3970
     }
   ],
   "news": [
+    {
+      "title": "Senate Dems should accept the victory they won on Trump's crypto limits: White House",
+      "link": "https://www.coindesk.com/policy/2026/07/24/senate-dems-should-accept-the-victory-they-won-on-trump-s-crypto-limits-white-house",
+      "pubDate": "Fri, 24 Jul 2026 15:01:46 +0000"
+    },
+    {
+      "title": "Sam Altman-backed World Network secures $52.5 million in fresh funding to fight online AI deepfakes",
+      "link": "https://www.coindesk.com/business/2026/07/24/sam-altman-backed-world-network-secures-fresh-funding-to-fight-online-ai-deepfakes",
+      "pubDate": "Fri, 24 Jul 2026 15:00:00 +0000"
+    },
+    {
+      "title": "Institutional crypto trading platform LMAX is exploring sale, IPO",
+      "link": "https://www.coindesk.com/business/2026/05/22/institutional-crypto-trading-platform-lmax-is-exploring-sale-ipo",
+      "pubDate": "Fri, 24 Jul 2026 14:36:16 +0000"
+    },
     {
       "title": "Saylor and team overhaul Strategy's bitcoin metrics as bear market persists",
       "link": "https://www.coindesk.com/markets/2026/07/24/saylor-and-team-overhaul-strategy-s-bitcoin-metrics-as-bear-market-persists",
@@ -470,21 +485,6 @@
       "title": "Bitcoin treasury companies sell up, repay debt, pivot to AI as share prices collapse",
       "link": "https://www.coindesk.com/markets/2026/07/24/bitcoin-treasury-companies-sell-up-repay-debt-pivot-to-ai-as-share-prices-collapse",
       "pubDate": "Fri, 24 Jul 2026 10:53:52 +0000"
-    },
-    {
-      "title": "India orders takedown of Jack Dorsey’s bitcoin-linked messaging app Bitchat",
-      "link": "https://www.coindesk.com/tech/2026/07/24/india-orders-takedown-of-jack-dorsey-s-bitcoin-linked-messaging-app-bitchat",
-      "pubDate": "Fri, 24 Jul 2026 10:10:42 +0000"
-    },
-    {
-      "title": "BitMEX faces proposed class-action suit for theft, insider trading as crypto exchange shuts down",
-      "link": "https://www.coindesk.com/business/2026/07/24/bitmex-faces-proposed-class-action-suit-for-theft-insider-trading-as-crypto-exchange-shuts-down",
-      "pubDate": "Fri, 24 Jul 2026 09:54:00 +0000"
-    },
-    {
-      "title": "Live updates: Bitcoin gives up gains, falls below $64,000 as stocks retreat",
-      "link": "https://www.coindesk.com/tech/2026/07/24/live-updates-dogecoin-and-ether-lead-pullback-as-investors-digest-tech-earnings",
-      "pubDate": "Fri, 24 Jul 2026 07:22:26 +0000"
     }
   ]
 }
