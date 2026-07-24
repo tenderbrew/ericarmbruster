@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-07-24T03:35:19.391Z",
+  "fetchedAt": "2026-07-24T14:04:51.940Z",
   "indicators": {
     "UNRATE": {
       "latest": {
@@ -263,12 +263,12 @@
     },
     "VIXCLS": {
       "latest": {
-        "date": "2026-07-22",
-        "value": 16.64
+        "date": "2026-07-23",
+        "value": 18.7
       },
       "previous": {
-        "date": "2026-07-21",
-        "value": 17.05
+        "date": "2026-07-22",
+        "value": 16.64
       }
     },
     "BOPGSTB": {
@@ -300,6 +300,12 @@
     }
   },
   "news": [
+    {
+      "title": "The Anti-Slavery Advocates of Disunion",
+      "link": "https://mises.org/mises-wire/anti-slavery-advocates-disunion",
+      "pubDate": "Fri, 24 Jul 2026 05:00:00 CDT",
+      "kind": "Mises Wire"
+    },
     {
       "title": "The Crisis in Higher Education",
       "link": "https://mises.org/podcasts/mises-u-2026/crisis-higher-education",
@@ -353,12 +359,6 @@
       "link": "https://mises.org/podcasts/mises-u-2026/austrian-economists-you-may-not-know",
       "pubDate": "Thu, 23 Jul 2026 09:00:00 CDT",
       "kind": "Podcast"
-    },
-    {
-      "title": "Help Us Expand the Mises Academy!",
-      "link": "https://mises.org/mises-wire/help-us-expand-mises-academy",
-      "pubDate": "Thu, 23 Jul 2026 08:50:44 CDT",
-      "kind": "Mises Wire"
     }
   ]
 }
