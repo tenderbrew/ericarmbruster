@@ -1,13 +1,13 @@
 {
-  "fetchedAt": "2026-07-25T16:11:11.793Z",
+  "fetchedAt": "2026-07-25T19:31:33.947Z",
   "price": {
-    "usd": 64139,
-    "time": 1784995507
+    "usd": 64356,
+    "time": 1785007809
   },
   "moves": {
-    "d1": 0.07232124733074219,
-    "d7": -1.0134990196747795,
-    "d30": 7.387417630996862
+    "d1": 0.41089362467792157,
+    "d7": -0.6786002730037821,
+    "d30": 7.750739005292173
   },
   "history90d": [
     {
@@ -372,60 +372,65 @@
     },
     {
       "date": "2026-07-25",
-      "close": 64119.70220103039
+      "close": 64362.25307041543
     }
   ],
   "blocks": [
     {
-      "height": 959577,
-      "id": "00000000000000000001930a01df9c97ac1ad010fee449471b94492c3067e4c4",
-      "timestamp": 1784996045,
-      "txCount": 4712
+      "height": 959596,
+      "id": "000000000000000000010a796fcc9e9ea6d7f3ef789354b6dc02767a3461eb9c",
+      "timestamp": 1785007724,
+      "txCount": 4415
     },
     {
-      "height": 959576,
-      "id": "000000000000000000020927f49ab4aa6bfe6bfd8e8bc45967d162c470778720",
-      "timestamp": 1784994854,
-      "txCount": 4380
+      "height": 959595,
+      "id": "00000000000000000001de2798798b5a72c4ff9b805d739f2982e9aef2f9097a",
+      "timestamp": 1785005913,
+      "txCount": 5648
     },
     {
-      "height": 959575,
-      "id": "00000000000000000000d9f44585b05c02dcb93ac9db2cef2ca8a092f8bcd642",
-      "timestamp": 1784994053,
-      "txCount": 4518
+      "height": 959594,
+      "id": "00000000000000000000933e3fec0c6337dae036e58b1c503dd26041b47946b5",
+      "timestamp": 1785006162,
+      "txCount": 3769
     },
     {
-      "height": 959574,
-      "id": "000000000000000000011d879c7cfb12fbeb6811e09b3edbcb2de1390bb04fda",
-      "timestamp": 1784992923,
-      "txCount": 5711
+      "height": 959593,
+      "id": "00000000000000000001cc5f8906bbbb0f93371ee332b117af988df5bcf4746e",
+      "timestamp": 1785005405,
+      "txCount": 4065
     },
     {
-      "height": 959573,
-      "id": "000000000000000000019f86fba2ac5d8b149e436825ef3f7cdba58811ead245",
-      "timestamp": 1784992466,
-      "txCount": 5027
+      "height": 959592,
+      "id": "000000000000000000019190d596b445008319f199f8ee6f6af0e73cbc440667",
+      "timestamp": 1785004456,
+      "txCount": 4765
     },
     {
-      "height": 959572,
-      "id": "00000000000000000001704abdc0f65b903e7f176112300fdb660fd8d5c7c897",
-      "timestamp": 1784992244,
-      "txCount": 4226
+      "height": 959591,
+      "id": "00000000000000000000bb1992e2b46cb27538fa3d13b76d16e45642c7ffc4f6",
+      "timestamp": 1785002880,
+      "txCount": 4526
     },
     {
-      "height": 959571,
-      "id": "00000000000000000001701116fee8777b93360d686c9b9244ed45ae0bdf1265",
-      "timestamp": 1784991146,
-      "txCount": 967
+      "height": 959590,
+      "id": "0000000000000000000178e924b664d6ce34e6a542ce6727dd7899c778f7ddf7",
+      "timestamp": 1785002071,
+      "txCount": 7044
     },
     {
-      "height": 959570,
-      "id": "00000000000000000001040d182a292f7e7bbe3d73b22b0e616d83c828a7ff68",
-      "timestamp": 1784991093,
-      "txCount": 3781
+      "height": 959589,
+      "id": "00000000000000000000934dc892f7acb54dac7ed6c8583c0539a445339c4cef",
+      "timestamp": 1785002041,
+      "txCount": 6080
     }
   ],
   "news": [
+    {
+      "title": "Russia’s largest bank Sberbank plans crypto trading infrastructure by December",
+      "link": "https://www.coindesk.com/business/2026/07/25/russia-s-largest-bank-sberbank-plans-crypto-trading-infrastructure-by-december",
+      "pubDate": "Sat, 25 Jul 2026 16:59:36 +0000"
+    },
     {
       "title": "North Korea arrests hackers accused of laundering stolen funds from country's bank via crypto",
       "link": "https://www.coindesk.com/business/2026/07/25/north-korea-arrests-hackers-accused-of-laundering-stolen-funds-from-country-s-bank-via-crypto",
@@ -480,11 +485,6 @@
       "title": "Crypto's institutional influx has killed the memecoin craze",
       "link": "https://www.coindesk.com/daybook-us/2026/07/24/crypto-s-institutional-influx-has-killed-the-memecoin-craze",
       "pubDate": "Fri, 24 Jul 2026 11:35:48 +0000"
-    },
-    {
-      "title": "A $5 billion cluster has formed in bitcoin options. It tells a bullish story",
-      "link": "https://www.coindesk.com/markets/2026/07/24/a-usd5-billion-cluster-has-formed-in-bitcoin-options-it-tells-a-bullish-story",
-      "pubDate": "Fri, 24 Jul 2026 11:34:53 +0000"
     }
   ]
 }
