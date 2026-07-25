@@ -1,13 +1,13 @@
 {
-  "fetchedAt": "2026-07-25T13:58:53.426Z",
+  "fetchedAt": "2026-07-25T16:11:11.793Z",
   "price": {
-    "usd": 64126,
-    "time": 1784987708
+    "usd": 64139,
+    "time": 1784995507
   },
   "moves": {
-    "d1": 0.05203810951730503,
-    "d7": -1.0335620782310984,
-    "d30": 7.365651834380094
+    "d1": 0.07232124733074219,
+    "d7": -1.0134990196747795,
+    "d30": 7.387417630996862
   },
   "history90d": [
     {
@@ -372,60 +372,65 @@
     },
     {
       "date": "2026-07-25",
-      "close": 64117.28788793523
+      "close": 64119.70220103039
     }
   ],
   "blocks": [
     {
-      "height": 959566,
-      "id": "00000000000000000000cae56f17d13108366de237b60d8b873bacaca801126e",
-      "timestamp": 1784987706,
-      "txCount": 7061
+      "height": 959577,
+      "id": "00000000000000000001930a01df9c97ac1ad010fee449471b94492c3067e4c4",
+      "timestamp": 1784996045,
+      "txCount": 4712
     },
     {
-      "height": 959565,
-      "id": "0000000000000000000174eff2b7ff78d163c37bb8b04c9fe5e1c52083ae6cc5",
-      "timestamp": 1784987675,
-      "txCount": 6664
+      "height": 959576,
+      "id": "000000000000000000020927f49ab4aa6bfe6bfd8e8bc45967d162c470778720",
+      "timestamp": 1784994854,
+      "txCount": 4380
     },
     {
-      "height": 959564,
-      "id": "00000000000000000001d3a197b3ad5d4bed12ea69d5a0e6ba15c4394950704a",
-      "timestamp": 1784987615,
-      "txCount": 4789
+      "height": 959575,
+      "id": "00000000000000000000d9f44585b05c02dcb93ac9db2cef2ca8a092f8bcd642",
+      "timestamp": 1784994053,
+      "txCount": 4518
     },
     {
-      "height": 959563,
-      "id": "000000000000000000009d20652fd611870c0987b84f01504ed6f4461f8a785b",
-      "timestamp": 1784987091,
-      "txCount": 4220
+      "height": 959574,
+      "id": "000000000000000000011d879c7cfb12fbeb6811e09b3edbcb2de1390bb04fda",
+      "timestamp": 1784992923,
+      "txCount": 5711
     },
     {
-      "height": 959562,
-      "id": "0000000000000000000051eff1c82ebc272684bd084300aa6dbf4b1bf1f4b27d",
-      "timestamp": 1784986313,
-      "txCount": 1846
+      "height": 959573,
+      "id": "000000000000000000019f86fba2ac5d8b149e436825ef3f7cdba58811ead245",
+      "timestamp": 1784992466,
+      "txCount": 5027
     },
     {
-      "height": 959561,
-      "id": "000000000000000000001d236fb61359e3952c1ad5a5d6cbb04237f2e2a034ba",
-      "timestamp": 1784986094,
-      "txCount": 4477
+      "height": 959572,
+      "id": "00000000000000000001704abdc0f65b903e7f176112300fdb660fd8d5c7c897",
+      "timestamp": 1784992244,
+      "txCount": 4226
     },
     {
-      "height": 959560,
-      "id": "00000000000000000000620b392690eb581855e219682a1abba5c087ae6b8314",
-      "timestamp": 1784985280,
-      "txCount": 4566
+      "height": 959571,
+      "id": "00000000000000000001701116fee8777b93360d686c9b9244ed45ae0bdf1265",
+      "timestamp": 1784991146,
+      "txCount": 967
     },
     {
-      "height": 959559,
-      "id": "000000000000000000005159167892758b2590468ec57d29f90671bcb8318257",
-      "timestamp": 1784983452,
-      "txCount": 5233
+      "height": 959570,
+      "id": "00000000000000000001040d182a292f7e7bbe3d73b22b0e616d83c828a7ff68",
+      "timestamp": 1784991093,
+      "txCount": 3781
     }
   ],
   "news": [
+    {
+      "title": "North Korea arrests hackers accused of laundering stolen funds from country's bank via crypto",
+      "link": "https://www.coindesk.com/business/2026/07/25/north-korea-arrests-hackers-accused-of-laundering-stolen-funds-from-country-s-bank-via-crypto",
+      "pubDate": "Sat, 25 Jul 2026 15:46:05 +0000"
+    },
     {
       "title": "Democratizing weather derivatives through tokenization could be crypto's most important real-world use case",
       "link": "https://www.coindesk.com/opinion/2026/07/25/democratizing-weather-derivatives-through-tokenization-could-be-crypto-s-most-important-real-world-use-case",
@@ -480,11 +485,6 @@
       "title": "A $5 billion cluster has formed in bitcoin options. It tells a bullish story",
       "link": "https://www.coindesk.com/markets/2026/07/24/a-usd5-billion-cluster-has-formed-in-bitcoin-options-it-tells-a-bullish-story",
       "pubDate": "Fri, 24 Jul 2026 11:34:53 +0000"
-    },
-    {
-      "title": "Bitcoin settles near $65,000 as oil's march toward $100 fails to spook the market",
-      "link": "https://www.coindesk.com/markets/2026/07/24/bitcoin-settles-near-usd65-000-as-oil-s-march-toward-usd100-fails-to-spook-the-market",
-      "pubDate": "Fri, 24 Jul 2026 11:19:38 +0000"
     }
   ]
 }
