@@ -1,13 +1,13 @@
 {
-  "fetchedAt": "2026-07-26T10:51:27.726Z",
+  "fetchedAt": "2026-07-26T13:52:09.424Z",
   "price": {
-    "usd": 64500,
-    "time": 1785062706
+    "usd": 64508,
+    "time": 1785073513
   },
   "moves": {
-    "d1": 0.28258668784930663,
-    "d7": -0.26349175451474416,
-    "d30": 7.460014726027175
+    "d1": 0.29502483813617086,
+    "d7": -0.2511213348873942,
+    "d30": 7.473343099946672
   },
   "history90d": [
     {
@@ -372,60 +372,65 @@
     },
     {
       "date": "2026-07-26",
-      "close": 64485.99701020604
+      "close": 64492.28228468648
     }
   ],
   "blocks": [
     {
-      "height": 959687,
-      "id": "00000000000000000000f6aa95d6be62d83a85176f7a60264d517e688732e747",
-      "timestamp": 1785063078,
-      "txCount": 5423
+      "height": 959704,
+      "id": "000000000000000000001c7010217be9f84b0f5529c11e2c58c171bca5478d8a",
+      "timestamp": 1785073646,
+      "txCount": 5987
     },
     {
-      "height": 959686,
-      "id": "0000000000000000000219f40a18ae499c16ca59cb786b6303eda44ca21b303e",
-      "timestamp": 1785062866,
-      "txCount": 5191
+      "height": 959703,
+      "id": "000000000000000000005dbbcaa4748892e5a7f4ca5d5ed1917725db052107b6",
+      "timestamp": 1785073535,
+      "txCount": 6175
     },
     {
-      "height": 959685,
-      "id": "000000000000000000003ebe525493ce6f0f15796fb133137778f9aaeb63c3eb",
-      "timestamp": 1785062083,
-      "txCount": 6556
+      "height": 959702,
+      "id": "00000000000000000000717317c036368e3de724a6be23593757d832c4a43ea1",
+      "timestamp": 1785072989,
+      "txCount": 6079
     },
     {
-      "height": 959684,
-      "id": "0000000000000000000088d1b527d71196419942ab2ae39afb2aa13a622e9789",
-      "timestamp": 1785061555,
-      "txCount": 5624
+      "height": 959701,
+      "id": "00000000000000000001c0005f8dab651079765590115fdfa6c443b5d7b4b367",
+      "timestamp": 1785072893,
+      "txCount": 3978
     },
     {
-      "height": 959683,
-      "id": "000000000000000000010572e5186bf36a131c4e13cae23a897d5b6112d2b4af",
-      "timestamp": 1785060713,
-      "txCount": 5539
+      "height": 959700,
+      "id": "00000000000000000001c133d2990d8dc72407729fae67b1faa2be80c585f4d4",
+      "timestamp": 1785072515,
+      "txCount": 4660
     },
     {
-      "height": 959682,
-      "id": "0000000000000000000221939f64e65cbde95336d4df991267ba812bb90f3b97",
-      "timestamp": 1785059955,
-      "txCount": 5479
+      "height": 959699,
+      "id": "00000000000000000000236a550a2f243c78c1a44580f8f757163585641b9c35",
+      "timestamp": 1785072047,
+      "txCount": 4183
     },
     {
-      "height": 959681,
-      "id": "000000000000000000001055b839c97fdd7e8b1fbd1c13caa90d7c22a21df6a4",
-      "timestamp": 1785059356,
-      "txCount": 4038
+      "height": 959698,
+      "id": "00000000000000000000ecd40abaadf86b3c976b1d11d087133166ebc5df9c68",
+      "timestamp": 1785070854,
+      "txCount": 4538
     },
     {
-      "height": 959680,
-      "id": "00000000000000000001b44c8e306d55f31007ee4195f3fe0eb5e57a48fcb99c",
-      "timestamp": 1785058402,
-      "txCount": 3785
+      "height": 959697,
+      "id": "00000000000000000000f1873483c2a0687319c450e099f71bbf89c51f81ecc8",
+      "timestamp": 1785068064,
+      "txCount": 4669
     }
   ],
   "news": [
+    {
+      "title": "U.S. regulator warns prediction markets against cutting corners in event contracts",
+      "link": "https://www.coindesk.com/policy/2026/07/24/u-s-regulator-warns-prediction-markets-against-cutting-corners-in-event-contracts",
+      "pubDate": "Sun, 26 Jul 2026 13:00:00 +0000"
+    },
     {
       "title": "Europe's high regulatory bar could spark new crypto industry M&A wave",
       "link": "https://www.coindesk.com/policy/2026/07/26/europe-s-high-regulatory-bar-could-spark-new-crypto-industry-m-and-a-wave",
@@ -480,11 +485,6 @@
       "title": "Saylor and team overhaul Strategy's bitcoin metrics as bear market persists",
       "link": "https://www.coindesk.com/markets/2026/07/24/saylor-and-team-overhaul-strategy-s-bitcoin-metrics-as-bear-market-persists",
       "pubDate": "Fri, 24 Jul 2026 13:15:15 +0000"
-    },
-    {
-      "title": "Brazilian farmers tokenized dairy cows to get loans, bypassing bank lending limits",
-      "link": "https://www.coindesk.com/markets/2026/07/24/brazilian-farmers-tokenized-dairy-cows-to-get-loans-bypassing-bank-lending-limits",
-      "pubDate": "Fri, 24 Jul 2026 13:03:03 +0000"
     }
   ]
 }
