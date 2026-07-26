@@ -1,13 +1,13 @@
 {
-  "fetchedAt": "2026-07-26T03:51:14.623Z",
+  "fetchedAt": "2026-07-26T08:38:04.445Z",
   "price": {
-    "usd": 64490,
-    "time": 1785037506
+    "usd": 64340,
+    "time": 1785054606
   },
   "moves": {
-    "d1": 0.2670389999907208,
-    "d7": -0.2789547790489344,
-    "d30": 7.443354258627788
+    "d1": 0.03382368211202191,
+    "d7": -0.5109001470616881,
+    "d30": 7.193447247637019
   },
   "history90d": [
     {
@@ -372,60 +372,70 @@
     },
     {
       "date": "2026-07-26",
-      "close": 64499.70579817026
+      "close": 64353.82206940631
     }
   ],
   "blocks": [
     {
-      "height": 959645,
-      "id": "000000000000000000004afd14f0e6548484799e89e6aae42cf50d231a457be1",
-      "timestamp": 1785037841,
-      "txCount": 6030
+      "height": 959676,
+      "id": "000000000000000000004ddbfe6d1b9dc570c0c1efb17518e0cee06067a4d5eb",
+      "timestamp": 1785054224,
+      "txCount": 6058
     },
     {
-      "height": 959644,
-      "id": "00000000000000000000e48f7f35e56defb4c9a2486b95329d7a1f03bf027f27",
-      "timestamp": 1785037415,
-      "txCount": 5884
+      "height": 959675,
+      "id": "000000000000000000009ecbb59aa267e0cb1b84d38161c2315e20866a9894e5",
+      "timestamp": 1785053846,
+      "txCount": 4246
     },
     {
-      "height": 959643,
-      "id": "0000000000000000000213550d2200c2533bcebea0484dba03fcadbf02ac86c1",
-      "timestamp": 1785037197,
-      "txCount": 6229
+      "height": 959674,
+      "id": "000000000000000000007bcfd619f38c5d6640f6408c134bade1f3c7bc196d8d",
+      "timestamp": 1785052881,
+      "txCount": 5777
     },
     {
-      "height": 959642,
-      "id": "00000000000000000000d289bda82164e24a925a29f74536c58552055785a000",
-      "timestamp": 1785036941,
-      "txCount": 4063
+      "height": 959673,
+      "id": "000000000000000000008de15f4c6843c665b036c51ea09978064f2d8546ed26",
+      "timestamp": 1785052741,
+      "txCount": 2443
     },
     {
-      "height": 959641,
-      "id": "0000000000000000000073507e07b3ec1d2e693ee6eb8d7985cdf6b74aaa4891",
-      "timestamp": 1785036579,
-      "txCount": 6089
+      "height": 959672,
+      "id": "0000000000000000000163333e0bda1c0fe7975845603498b757b4b65d1c88f1",
+      "timestamp": 1785052397,
+      "txCount": 4330
     },
     {
-      "height": 959640,
-      "id": "0000000000000000000188a729550bb14371cefc3cd2cb74883fdd5ec1a88cbb",
-      "timestamp": 1785036312,
-      "txCount": 6701
+      "height": 959671,
+      "id": "00000000000000000001058e4acba79f2a6bfabfae97eb9a70743dbcc49e20b4",
+      "timestamp": 1785050267,
+      "txCount": 4281
     },
     {
-      "height": 959639,
-      "id": "00000000000000000000f9e3a5bc02e5e74c57ecbf1dbdd6b61c6296640cc297",
-      "timestamp": 1785036232,
-      "txCount": 6518
+      "height": 959670,
+      "id": "0000000000000000000041cdaaf15d88bc065d6f6cee01d0a74e467d01bed867",
+      "timestamp": 1785049243,
+      "txCount": 4724
     },
     {
-      "height": 959638,
-      "id": "00000000000000000001129e7929812e3f1e61448ba2fbb89304f5e94f9b2d42",
-      "timestamp": 1785036053,
-      "txCount": 5971
+      "height": 959669,
+      "id": "00000000000000000000a69376b3084daf8a85b87c50d1b483abdf96aa1d53ea",
+      "timestamp": 1785047162,
+      "txCount": 6793
     }
   ],
   "news": [
+    {
+      "title": "Shiba Inu surges 36% as South Korean traders fuel mystery rally",
+      "link": "https://www.coindesk.com/markets/2026/07/26/shiba-inu-surges-36-as-south-korean-traders-fuel-mystery-rally",
+      "pubDate": "Sun, 26 Jul 2026 07:29:45 +0000"
+    },
+    {
+      "title": "Crypto exchange BitMart to shut down after nine years, BMX token crashes 58%",
+      "link": "https://www.coindesk.com/markets/2026/07/26/crypto-exchange-bitmart-to-shut-down-after-nine-years-bmx-token-crashes-58",
+      "pubDate": "Sun, 26 Jul 2026 06:59:51 +0000"
+    },
     {
       "title": "Russia’s largest bank Sberbank plans crypto trading infrastructure by December",
       "link": "https://www.coindesk.com/business/2026/07/25/russia-s-largest-bank-sberbank-plans-crypto-trading-infrastructure-by-december",
@@ -475,16 +485,6 @@
       "title": "EU hits Russia with massive 21st sanctions package targeting $120B crypto network",
       "link": "https://www.coindesk.com/policy/2026/07/24/eu-hits-russia-with-massive-21st-sanctions-package-targeting-usd120b-crypto-network",
       "pubDate": "Fri, 24 Jul 2026 11:58:06 +0000"
-    },
-    {
-      "title": "Crypto market maker B2C2 held sale talks with multiple potential buyers",
-      "link": "https://www.coindesk.com/business/2026/06/29/crypto-market-maker-b2c2-held-sale-talks-with-multiple-potential-buyers",
-      "pubDate": "Fri, 24 Jul 2026 11:49:06 +0000"
-    },
-    {
-      "title": "Crypto's institutional influx has killed the memecoin craze",
-      "link": "https://www.coindesk.com/daybook-us/2026/07/24/crypto-s-institutional-influx-has-killed-the-memecoin-craze",
-      "pubDate": "Fri, 24 Jul 2026 11:35:48 +0000"
     }
   ]
 }
