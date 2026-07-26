@@ -1,13 +1,13 @@
 {
-  "fetchedAt": "2026-07-26T08:38:04.445Z",
+  "fetchedAt": "2026-07-26T10:51:27.726Z",
   "price": {
-    "usd": 64340,
-    "time": 1785054606
+    "usd": 64500,
+    "time": 1785062706
   },
   "moves": {
-    "d1": 0.03382368211202191,
-    "d7": -0.5109001470616881,
-    "d30": 7.193447247637019
+    "d1": 0.28258668784930663,
+    "d7": -0.26349175451474416,
+    "d30": 7.460014726027175
   },
   "history90d": [
     {
@@ -372,60 +372,65 @@
     },
     {
       "date": "2026-07-26",
-      "close": 64353.82206940631
+      "close": 64485.99701020604
     }
   ],
   "blocks": [
     {
-      "height": 959676,
-      "id": "000000000000000000004ddbfe6d1b9dc570c0c1efb17518e0cee06067a4d5eb",
-      "timestamp": 1785054224,
-      "txCount": 6058
+      "height": 959687,
+      "id": "00000000000000000000f6aa95d6be62d83a85176f7a60264d517e688732e747",
+      "timestamp": 1785063078,
+      "txCount": 5423
     },
     {
-      "height": 959675,
-      "id": "000000000000000000009ecbb59aa267e0cb1b84d38161c2315e20866a9894e5",
-      "timestamp": 1785053846,
-      "txCount": 4246
+      "height": 959686,
+      "id": "0000000000000000000219f40a18ae499c16ca59cb786b6303eda44ca21b303e",
+      "timestamp": 1785062866,
+      "txCount": 5191
     },
     {
-      "height": 959674,
-      "id": "000000000000000000007bcfd619f38c5d6640f6408c134bade1f3c7bc196d8d",
-      "timestamp": 1785052881,
-      "txCount": 5777
+      "height": 959685,
+      "id": "000000000000000000003ebe525493ce6f0f15796fb133137778f9aaeb63c3eb",
+      "timestamp": 1785062083,
+      "txCount": 6556
     },
     {
-      "height": 959673,
-      "id": "000000000000000000008de15f4c6843c665b036c51ea09978064f2d8546ed26",
-      "timestamp": 1785052741,
-      "txCount": 2443
+      "height": 959684,
+      "id": "0000000000000000000088d1b527d71196419942ab2ae39afb2aa13a622e9789",
+      "timestamp": 1785061555,
+      "txCount": 5624
     },
     {
-      "height": 959672,
-      "id": "0000000000000000000163333e0bda1c0fe7975845603498b757b4b65d1c88f1",
-      "timestamp": 1785052397,
-      "txCount": 4330
+      "height": 959683,
+      "id": "000000000000000000010572e5186bf36a131c4e13cae23a897d5b6112d2b4af",
+      "timestamp": 1785060713,
+      "txCount": 5539
     },
     {
-      "height": 959671,
-      "id": "00000000000000000001058e4acba79f2a6bfabfae97eb9a70743dbcc49e20b4",
-      "timestamp": 1785050267,
-      "txCount": 4281
+      "height": 959682,
+      "id": "0000000000000000000221939f64e65cbde95336d4df991267ba812bb90f3b97",
+      "timestamp": 1785059955,
+      "txCount": 5479
     },
     {
-      "height": 959670,
-      "id": "0000000000000000000041cdaaf15d88bc065d6f6cee01d0a74e467d01bed867",
-      "timestamp": 1785049243,
-      "txCount": 4724
+      "height": 959681,
+      "id": "000000000000000000001055b839c97fdd7e8b1fbd1c13caa90d7c22a21df6a4",
+      "timestamp": 1785059356,
+      "txCount": 4038
     },
     {
-      "height": 959669,
-      "id": "00000000000000000000a69376b3084daf8a85b87c50d1b483abdf96aa1d53ea",
-      "timestamp": 1785047162,
-      "txCount": 6793
+      "height": 959680,
+      "id": "00000000000000000001b44c8e306d55f31007ee4195f3fe0eb5e57a48fcb99c",
+      "timestamp": 1785058402,
+      "txCount": 3785
     }
   ],
   "news": [
+    {
+      "title": "Europe's high regulatory bar could spark new crypto industry M&A wave",
+      "link": "https://www.coindesk.com/policy/2026/07/26/europe-s-high-regulatory-bar-could-spark-new-crypto-industry-m-and-a-wave",
+      "pubDate": "Sun, 26 Jul 2026 10:00:00 +0000"
+    },
     {
       "title": "Shiba Inu surges 36% as South Korean traders fuel mystery rally",
       "link": "https://www.coindesk.com/markets/2026/07/26/shiba-inu-surges-36-as-south-korean-traders-fuel-mystery-rally",
@@ -480,11 +485,6 @@
       "title": "Brazilian farmers tokenized dairy cows to get loans, bypassing bank lending limits",
       "link": "https://www.coindesk.com/markets/2026/07/24/brazilian-farmers-tokenized-dairy-cows-to-get-loans-bypassing-bank-lending-limits",
       "pubDate": "Fri, 24 Jul 2026 13:03:03 +0000"
-    },
-    {
-      "title": "EU hits Russia with massive 21st sanctions package targeting $120B crypto network",
-      "link": "https://www.coindesk.com/policy/2026/07/24/eu-hits-russia-with-massive-21st-sanctions-package-targeting-usd120b-crypto-network",
-      "pubDate": "Fri, 24 Jul 2026 11:58:06 +0000"
     }
   ]
 }
