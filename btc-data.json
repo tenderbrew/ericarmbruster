@@ -1,13 +1,13 @@
 {
-  "fetchedAt": "2026-07-26T16:12:46.414Z",
+  "fetchedAt": "2026-07-26T19:32:09.968Z",
   "price": {
-    "usd": 64654,
-    "time": 1785082207
+    "usd": 64667,
+    "time": 1785094208
   },
   "moves": {
-    "d1": 0.5220210808714709,
-    "d7": -0.02536117668830995,
-    "d30": 7.716585923977681
+    "d1": 0.5422330750876281,
+    "d7": -0.005259244793875961,
+    "d30": 7.738244531596883
   },
   "history90d": [
     {
@@ -372,60 +372,65 @@
     },
     {
       "date": "2026-07-26",
-      "close": 64658.18298548581
+      "close": 64666.466099205885
     }
   ],
   "blocks": [
     {
-      "height": 959719,
-      "id": "00000000000000000001351d4e0f04b7567c60310c115e493e08179e4e6c0e11",
-      "timestamp": 1785082093,
-      "txCount": 5039
+      "height": 959733,
+      "id": "000000000000000000010e60c2987ae2de0cd32da5ca2d6c596522edded96f09",
+      "timestamp": 1785093001,
+      "txCount": 2988
     },
     {
-      "height": 959718,
-      "id": "00000000000000000000d7f230d7d0fd76414a7a66931d4895d0cd6c900a7fb5",
-      "timestamp": 1785081659,
-      "txCount": 5898
+      "height": 959732,
+      "id": "000000000000000000007dac45684cabe5b88b5561bca038a6c03ba9bad98449",
+      "timestamp": 1785092849,
+      "txCount": 4743
     },
     {
-      "height": 959717,
-      "id": "00000000000000000000aaddcb4f9bea0472058d61beb807022f37afe4ae54b8",
-      "timestamp": 1785081085,
-      "txCount": 4620
+      "height": 959731,
+      "id": "0000000000000000000201c0752ca4fb3b3674f27fa0857bd72961cb57b0215b",
+      "timestamp": 1785092543,
+      "txCount": 4582
     },
     {
-      "height": 959716,
-      "id": "00000000000000000000093cc3e5f38fb030b0431a280fa6247a7f963c3e27fb",
-      "timestamp": 1785080945,
-      "txCount": 4555
+      "height": 959730,
+      "id": "0000000000000000000171bbbd6e93d945499dc33a30747cd1603372a7a1f513",
+      "timestamp": 1785090690,
+      "txCount": 4556
     },
     {
-      "height": 959715,
-      "id": "00000000000000000000eb2fd373b0ec435602436cda7312116940d523e75e14",
-      "timestamp": 1785079585,
-      "txCount": 6386
+      "height": 959729,
+      "id": "00000000000000000001feba52c4388213d322a85fc653cba89cdc7164865bc0",
+      "timestamp": 1785089227,
+      "txCount": 6382
     },
     {
-      "height": 959714,
-      "id": "000000000000000000016ffe6597adc405e4ea6ae03e05a023746ed32109d1de",
-      "timestamp": 1785079370,
-      "txCount": 6505
+      "height": 959728,
+      "id": "000000000000000000000e429a2ab4fd5c5280b41ae16f5b0941c893b3fec98f",
+      "timestamp": 1785089545,
+      "txCount": 4887
     },
     {
-      "height": 959713,
-      "id": "00000000000000000001ef962f5604c074751cc75671e798d8b71e592a965a1f",
-      "timestamp": 1785079271,
-      "txCount": 2238
+      "height": 959727,
+      "id": "00000000000000000000c29768ee7b2725a65b17ca7ceda29349f7e1f9277867",
+      "timestamp": 1785088611,
+      "txCount": 6109
     },
     {
-      "height": 959712,
-      "id": "00000000000000000001abcacf2d2dbafbf76f12b760bfe49122d36686eaaced",
-      "timestamp": 1785078767,
-      "txCount": 4687
+      "height": 959726,
+      "id": "00000000000000000001f2d7f9eb763791f9efe24a6147470abff86e816d28ea",
+      "timestamp": 1785088470,
+      "txCount": 4533
     }
   ],
   "news": [
+    {
+      "title": "2 weeks left for Clarity: State of Crypto",
+      "link": "https://www.coindesk.com/policy/2026/07/26/2-weeks-left-for-clarity-state-of-crypto",
+      "pubDate": "Sun, 26 Jul 2026 18:30:00 +0000"
+    },
     {
       "title": "U.S. regulator warns prediction markets against cutting corners in event contracts",
       "link": "https://www.coindesk.com/policy/2026/07/24/u-s-regulator-warns-prediction-markets-against-cutting-corners-in-event-contracts",
@@ -480,11 +485,6 @@
       "title": "Institutional crypto trading platform LMAX is exploring sale, IPO",
       "link": "https://www.coindesk.com/business/2026/05/22/institutional-crypto-trading-platform-lmax-is-exploring-sale-ipo",
       "pubDate": "Fri, 24 Jul 2026 14:36:16 +0000"
-    },
-    {
-      "title": "Saylor and team overhaul Strategy's bitcoin metrics as bear market persists",
-      "link": "https://www.coindesk.com/markets/2026/07/24/saylor-and-team-overhaul-strategy-s-bitcoin-metrics-as-bear-market-persists",
-      "pubDate": "Fri, 24 Jul 2026 13:15:15 +0000"
     }
   ]
 }
