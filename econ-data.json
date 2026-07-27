@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-07-27T10:05:43.901Z",
+  "fetchedAt": "2026-07-27T15:07:21.869Z",
   "indicators": {
     "UNRATE": {
       "latest": {
@@ -263,12 +263,12 @@
     },
     "VIXCLS": {
       "latest": {
-        "date": "2026-07-23",
-        "value": 18.7
+        "date": "2026-07-24",
+        "value": 18.58
       },
       "previous": {
-        "date": "2026-07-22",
-        "value": 16.64
+        "date": "2026-07-23",
+        "value": 18.7
       }
     },
     "BOPGSTB": {
@@ -300,6 +300,18 @@
     }
   },
   "news": [
+    {
+      "title": "How Democratic Socialism Created California's Housing Crisis",
+      "link": "https://mises.org/podcasts/audio-mises-wire/how-democratic-socialism-created-californias-housing-crisis",
+      "pubDate": "Mon, 27 Jul 2026 10:01:46 CDT",
+      "kind": "Podcast"
+    },
+    {
+      "title": "Domestic Agorism: Eastern Europe’s Example of Libertarianism Without Academic Guidance",
+      "link": "https://mises.org/podcasts/audio-mises-wire/domestic-agorism-eastern-europes-example-libertarianism-without-academic-guidance",
+      "pubDate": "Mon, 27 Jul 2026 09:41:57 CDT",
+      "kind": "Podcast"
+    },
     {
       "title": "Paradise Lost, Government Gained",
       "link": "https://mises.org/mises-wire/paradise-lost-government-gained",
@@ -346,18 +358,6 @@
       "title": "Faculty Panel: Theory and Method",
       "link": "https://mises.org/podcasts/mises-u-2026/faculty-panel-theory-and-method",
       "pubDate": "Fri, 24 Jul 2026 02:00:00 CDT",
-      "kind": "Podcast"
-    },
-    {
-      "title": "Domestic Agorism: Eastern Europe’s Example of Libertarianism Without Academic Guidance",
-      "link": "https://mises.org/mises-wire/domestic-agorism-eastern-europes-example-libertarianism-without-academic-guidance",
-      "pubDate": "Fri, 24 Jul 2026 02:00:00 CDT",
-      "kind": "Mises Wire"
-    },
-    {
-      "title": "What Do Austrians Think of Equilibrium?",
-      "link": "https://mises.org/podcasts/mises-u-2026/what-do-austrians-think-equilibrium",
-      "pubDate": "Fri, 24 Jul 2026 01:00:00 CDT",
       "kind": "Podcast"
     }
   ]
