@@ -1,13 +1,13 @@
 {
-  "fetchedAt": "2026-07-27T03:58:40.751Z",
+  "fetchedAt": "2026-07-27T10:06:36.827Z",
   "price": {
-    "usd": 65256,
-    "time": 1785124206
+    "usd": 65190,
+    "time": 1785146707
   },
   "moves": {
-    "d1": 1.4609591280750012,
-    "d7": 0.905512900269545,
-    "d30": 8.719546061420601
+    "d1": 1.3583413871400385,
+    "d7": 0.8034569383439383,
+    "d30": 8.609586976584671
   },
   "history90d": [
     {
@@ -368,60 +368,85 @@
     },
     {
       "date": "2026-07-27",
-      "close": 65233.897393703206
+      "close": 65201.04260979716
     }
   ],
   "blocks": [
     {
-      "height": 959780,
-      "id": "0000000000000000000091b637b6b1789af86f8d03f809a13480dc2ea42a371b",
-      "timestamp": 1785123605,
-      "txCount": 6172
+      "height": 959820,
+      "id": "0000000000000000000010405c0abe4f22735b66e82b2f36cc891c80c53287b0",
+      "timestamp": 1785144795,
+      "txCount": 6850
     },
     {
-      "height": 959779,
-      "id": "00000000000000000000dadfadadba3e7dbf8715b52f650c73de233c6494b89c",
-      "timestamp": 1785123571,
-      "txCount": 4266
+      "height": 959819,
+      "id": "000000000000000000018fe9dcd3b3b97a08a2a4758074cb61f6eb13f8edad39",
+      "timestamp": 1785144711,
+      "txCount": 7234
     },
     {
-      "height": 959778,
-      "id": "000000000000000000017f4faf09d3f7b64ac4c166c766d7a844c58c0713d30b",
-      "timestamp": 1785121571,
-      "txCount": 4133
+      "height": 959818,
+      "id": "000000000000000000010d99a2c87ee5126bab0187632017c3c7683686208573",
+      "timestamp": 1785144699,
+      "txCount": 5520
     },
     {
-      "height": 959777,
-      "id": "000000000000000000007f1620a42cfd0a04cb4473a2563856f71e4c7e460af6",
-      "timestamp": 1785121389,
-      "txCount": 4088
+      "height": 959817,
+      "id": "00000000000000000000a260a5d0ee2ce4795abc8643b2471d776b96db091333",
+      "timestamp": 1785144333,
+      "txCount": 5556
     },
     {
-      "height": 959776,
-      "id": "000000000000000000021315a1a6ce5741b3cef76abab3aa874d4a71c604a3ef",
-      "timestamp": 1785120126,
-      "txCount": 1988
+      "height": 959816,
+      "id": "000000000000000000001a1f98c4e7d68868f12292d86b0c7755bdde38ecd107",
+      "timestamp": 1785143793,
+      "txCount": 5012
     },
     {
-      "height": 959775,
-      "id": "00000000000000000000e2c7b07ddd570653636aab04df36c3aa2a4618e7a2e3",
-      "timestamp": 1785118894,
-      "txCount": 6285
+      "height": 959815,
+      "id": "000000000000000000015ac1db3b7147951e3e827070d149b0dc6705aec03350",
+      "timestamp": 1785143176,
+      "txCount": 5609
     },
     {
-      "height": 959774,
-      "id": "00000000000000000001fd1dd5a501bacf9113e3f2583f037167084a3e606127",
-      "timestamp": 1785118662,
-      "txCount": 6900
+      "height": 959814,
+      "id": "0000000000000000000166247a6eb3ff446fb3cec66368e8f2bbde570af366c2",
+      "timestamp": 1785142879,
+      "txCount": 5851
     },
     {
-      "height": 959773,
-      "id": "00000000000000000001ce093a9429afd837f8c02aa017238b0031459b584f11",
-      "timestamp": 1785118530,
-      "txCount": 5715
+      "height": 959813,
+      "id": "00000000000000000001e2ddd2a4f3738eaba8d4c5227d7282d6c879bd77fd71",
+      "timestamp": 1785142255,
+      "txCount": 6444
     }
   ],
   "news": [
+    {
+      "title": "Interest rates in U.S., U.K., Japan and Coinbase, Strategy earnings: Crypto Week Ahead",
+      "link": "https://www.coindesk.com/markets/2026/07/27/interest-rates-in-u-s-u-k-japan-and-coinbase-strategy-earnings-crypto-week-ahead",
+      "pubDate": "Mon, 27 Jul 2026 09:43:58 +0000"
+    },
+    {
+      "title": "Cloud data firm Storj files for Chapter 11, extending a week of crypto failures. Token slides 16%",
+      "link": "https://www.coindesk.com/business/2026/07/27/cloud-data-firm-storj-files-for-chapter-11-extending-a-week-of-crypto-failures-token-slides-16",
+      "pubDate": "Mon, 27 Jul 2026 09:15:43 +0000"
+    },
+    {
+      "title": "Live updates: Ether leads crypto higher. China's gold imports surge",
+      "link": "https://www.coindesk.com/markets/2026/07/27/live-updates-ether-leads-crypto-higher-as-bitcoin-trades-around-usd65-500",
+      "pubDate": "Mon, 27 Jul 2026 06:43:34 +0000"
+    },
+    {
+      "title": "Crypto is the canary in the coal mine for the quantum computing threat, experts say",
+      "link": "https://www.coindesk.com/markets/2026/07/27/crypto-is-the-canary-in-the-coal-mine-for-the-quantum-computing-threat-experts-say",
+      "pubDate": "Mon, 27 Jul 2026 06:37:54 +0000"
+    },
+    {
+      "title": "Bitcoin is back above $65,000 as U.S. and Iran hold fire. Oil drops 5%",
+      "link": "https://www.coindesk.com/markets/2026/07/27/bitcoin-is-back-above-usd65-000-as-u-s-iran-hold-fire-oil-drops-5",
+      "pubDate": "Mon, 27 Jul 2026 04:21:26 +0000"
+    },
     {
       "title": "South Korea trading giant puts receivables onchain in tokenization test with LG CNS",
       "link": "https://www.coindesk.com/business/2026/07/26/south-korea-trading-giant-puts-receivables-onchain-in-tokenization-test-with-lg-cns",
@@ -456,31 +481,6 @@
       "title": "Russia’s largest bank Sberbank plans crypto trading infrastructure by December",
       "link": "https://www.coindesk.com/business/2026/07/25/russia-s-largest-bank-sberbank-plans-crypto-trading-infrastructure-by-december",
       "pubDate": "Sat, 25 Jul 2026 16:59:36 +0000"
-    },
-    {
-      "title": "North Korea arrests hackers accused of laundering stolen funds from country's bank via crypto",
-      "link": "https://www.coindesk.com/business/2026/07/25/north-korea-arrests-hackers-accused-of-laundering-stolen-funds-from-country-s-bank-via-crypto",
-      "pubDate": "Sat, 25 Jul 2026 15:46:05 +0000"
-    },
-    {
-      "title": "Democratizing weather derivatives through tokenization could be crypto's most important real-world use case",
-      "link": "https://www.coindesk.com/opinion/2026/07/25/democratizing-weather-derivatives-through-tokenization-could-be-crypto-s-most-important-real-world-use-case",
-      "pubDate": "Sat, 25 Jul 2026 13:00:00 +0000"
-    },
-    {
-      "title": "Robinhood Chain's real-world assets jump fivefold as tokenized stocks start trading in bigger size",
-      "link": "https://www.coindesk.com/business/2026/07/25/robinhood-chain-s-real-world-assets-jump-fivefold-as-tokenized-stocks-start-trading-in-bigger-size",
-      "pubDate": "Sat, 25 Jul 2026 10:00:00 +0000"
-    },
-    {
-      "title": "Senate Dems should accept the victory they won on Trump's crypto limits: White House",
-      "link": "https://www.coindesk.com/policy/2026/07/24/senate-dems-should-accept-the-victory-they-won-on-trump-s-crypto-limits-white-house",
-      "pubDate": "Fri, 24 Jul 2026 15:01:46 +0000"
-    },
-    {
-      "title": "Sam Altman-backed World Network secures $52.5 million in fresh funding to fight online AI deepfakes",
-      "link": "https://www.coindesk.com/business/2026/07/24/sam-altman-backed-world-network-secures-fresh-funding-to-fight-online-ai-deepfakes",
-      "pubDate": "Fri, 24 Jul 2026 15:00:00 +0000"
     }
   ]
 }
