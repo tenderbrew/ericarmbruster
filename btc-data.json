@@ -1,13 +1,13 @@
 {
-  "fetchedAt": "2026-07-27T10:06:36.827Z",
+  "fetchedAt": "2026-07-27T15:10:28.284Z",
   "price": {
-    "usd": 65190,
-    "time": 1785146707
+    "usd": 64647,
+    "time": 1785164710
   },
   "moves": {
-    "d1": 1.3583413871400385,
-    "d7": 0.8034569383439383,
-    "d30": 8.609586976584671
+    "d1": 0.5140772458113396,
+    "d7": -0.03618529386224534,
+    "d30": 7.70492359679813
   },
   "history90d": [
     {
@@ -368,119 +368,119 @@
     },
     {
       "date": "2026-07-27",
-      "close": 65201.04260979716
+      "close": 64587.96164592035
     }
   ],
   "blocks": [
     {
-      "height": 959820,
-      "id": "0000000000000000000010405c0abe4f22735b66e82b2f36cc891c80c53287b0",
-      "timestamp": 1785144795,
-      "txCount": 6850
+      "height": 959848,
+      "id": "00000000000000000000782ca354572f6db58bd9817340358aabc70695f29541",
+      "timestamp": 1785162716,
+      "txCount": 3880
     },
     {
-      "height": 959819,
-      "id": "000000000000000000018fe9dcd3b3b97a08a2a4758074cb61f6eb13f8edad39",
-      "timestamp": 1785144711,
-      "txCount": 7234
+      "height": 959847,
+      "id": "000000000000000000019666dccc2e9d1acd17143fead982f5d62d266ab6f0f9",
+      "timestamp": 1785162698,
+      "txCount": 4033
     },
     {
-      "height": 959818,
-      "id": "000000000000000000010d99a2c87ee5126bab0187632017c3c7683686208573",
-      "timestamp": 1785144699,
-      "txCount": 5520
+      "height": 959846,
+      "id": "0000000000000000000012fb9484ca548528fc61673c5677f92157eb422a22bd",
+      "timestamp": 1785161496,
+      "txCount": 4101
     },
     {
-      "height": 959817,
-      "id": "00000000000000000000a260a5d0ee2ce4795abc8643b2471d776b96db091333",
-      "timestamp": 1785144333,
-      "txCount": 5556
+      "height": 959845,
+      "id": "0000000000000000000182b6c84b997cd022c9784abffa775f8ab09176b37c2a",
+      "timestamp": 1785159445,
+      "txCount": 4071
     },
     {
-      "height": 959816,
-      "id": "000000000000000000001a1f98c4e7d68868f12292d86b0c7755bdde38ecd107",
-      "timestamp": 1785143793,
-      "txCount": 5012
+      "height": 959844,
+      "id": "0000000000000000000163bf174c7ff87b6b6ddf6095935f40657dd2a1749601",
+      "timestamp": 1785159103,
+      "txCount": 3802
     },
     {
-      "height": 959815,
-      "id": "000000000000000000015ac1db3b7147951e3e827070d149b0dc6705aec03350",
-      "timestamp": 1785143176,
-      "txCount": 5609
+      "height": 959843,
+      "id": "00000000000000000000b5b479825e9ebcef9a2a65526a650dabe73a12735dd4",
+      "timestamp": 1785159065,
+      "txCount": 4390
     },
     {
-      "height": 959814,
-      "id": "0000000000000000000166247a6eb3ff446fb3cec66368e8f2bbde570af366c2",
-      "timestamp": 1785142879,
-      "txCount": 5851
+      "height": 959842,
+      "id": "00000000000000000001f2333ec86c039dc834c7c0b2f7810c4cfd29efb4ef27",
+      "timestamp": 1785155136,
+      "txCount": 5792
     },
     {
-      "height": 959813,
-      "id": "00000000000000000001e2ddd2a4f3738eaba8d4c5227d7282d6c879bd77fd71",
-      "timestamp": 1785142255,
-      "txCount": 6444
+      "height": 959841,
+      "id": "00000000000000000001c058d7ab4f318b39ed500682dca808749bfaed834651",
+      "timestamp": 1785154686,
+      "txCount": 5866
     }
   ],
   "news": [
     {
-      "title": "Interest rates in U.S., U.K., Japan and Coinbase, Strategy earnings: Crypto Week Ahead",
-      "link": "https://www.coindesk.com/markets/2026/07/27/interest-rates-in-u-s-u-k-japan-and-coinbase-strategy-earnings-crypto-week-ahead",
-      "pubDate": "Mon, 27 Jul 2026 09:43:58 +0000"
+      "title": "What are perps, anyway? Everything you need to know about crypto’s hottest trading instrument",
+      "link": "https://www.coindesk.com/business/2026/07/27/what-are-perps-anyway-everything-you-need-to-know-about-crypto-s-hottest-trading-instrument",
+      "pubDate": "Mon, 27 Jul 2026 15:00:00 +0000"
     },
     {
-      "title": "Cloud data firm Storj files for Chapter 11, extending a week of crypto failures. Token slides 16%",
-      "link": "https://www.coindesk.com/business/2026/07/27/cloud-data-firm-storj-files-for-chapter-11-extending-a-week-of-crypto-failures-token-slides-16",
-      "pubDate": "Mon, 27 Jul 2026 09:15:43 +0000"
+      "title": "Fanatics buys regulated exchange in bid to grow prediction markets business",
+      "link": "https://www.coindesk.com/markets/2026/07/27/fanatics-buys-regulated-exchange-in-bid-to-grow-prediction-markets-business",
+      "pubDate": "Mon, 27 Jul 2026 14:46:10 +0000"
     },
     {
-      "title": "Live updates: Ether leads crypto higher. China's gold imports surge",
-      "link": "https://www.coindesk.com/markets/2026/07/27/live-updates-ether-leads-crypto-higher-as-bitcoin-trades-around-usd65-500",
-      "pubDate": "Mon, 27 Jul 2026 06:43:34 +0000"
+      "title": "Cantor is advising crypto bank AMINA on path to potential public listing",
+      "link": "https://www.coindesk.com/business/2026/07/27/cantor-is-advising-crypto-bank-amina-on-path-to-potential-public-listing",
+      "pubDate": "Mon, 27 Jul 2026 14:36:30 +0000"
     },
     {
-      "title": "Crypto is the canary in the coal mine for the quantum computing threat, experts say",
-      "link": "https://www.coindesk.com/markets/2026/07/27/crypto-is-the-canary-in-the-coal-mine-for-the-quantum-computing-threat-experts-say",
-      "pubDate": "Mon, 27 Jul 2026 06:37:54 +0000"
+      "title": "Lido begins moving $16.5 billion in staked ether to cut validator count by a third",
+      "link": "https://www.coindesk.com/tech/2026/07/27/lido-begins-moving-usd16-5-billion-in-staked-ether-to-cut-validator-count-by-a-third",
+      "pubDate": "Mon, 27 Jul 2026 14:00:00 +0000"
     },
     {
-      "title": "Bitcoin is back above $65,000 as U.S. and Iran hold fire. Oil drops 5%",
-      "link": "https://www.coindesk.com/markets/2026/07/27/bitcoin-is-back-above-usd65-000-as-u-s-iran-hold-fire-oil-drops-5",
-      "pubDate": "Mon, 27 Jul 2026 04:21:26 +0000"
+      "title": "Thailand's SEC alleges Bitkub concealed cyberattack that led to $50 million hack",
+      "link": "https://www.coindesk.com/policy/2026/07/27/thailand-s-sec-alleges-bitkub-concealed-cyberattack-that-led-to-usd50-million-hack",
+      "pubDate": "Mon, 27 Jul 2026 13:32:16 +0000"
     },
     {
-      "title": "South Korea trading giant puts receivables onchain in tokenization test with LG CNS",
-      "link": "https://www.coindesk.com/business/2026/07/26/south-korea-trading-giant-puts-receivables-onchain-in-tokenization-test-with-lg-cns",
-      "pubDate": "Mon, 27 Jul 2026 00:00:00 +0000"
+      "title": "Nvidia forms 37-member AI security alliance without OpenAI, Anthropic or Google",
+      "link": "https://www.coindesk.com/tech/2026/07/27/nvidia-forms-37-member-ai-security-alliance-without-openai-anthropic-or-google",
+      "pubDate": "Mon, 27 Jul 2026 13:25:58 +0000"
     },
     {
-      "title": "2 weeks left for Clarity: State of Crypto",
-      "link": "https://www.coindesk.com/policy/2026/07/26/2-weeks-left-for-clarity-state-of-crypto",
-      "pubDate": "Sun, 26 Jul 2026 18:30:00 +0000"
+      "title": "Securitize builds Wall Street credentials with SEC adviser license as tokenization expands",
+      "link": "https://www.coindesk.com/business/2026/07/27/securitize-builds-wall-street-credentials-with-sec-adviser-license-as-tokenization-expands",
+      "pubDate": "Mon, 27 Jul 2026 13:00:00 +0000"
     },
     {
-      "title": "U.S. regulator warns prediction markets against cutting corners in event contracts",
-      "link": "https://www.coindesk.com/policy/2026/07/24/u-s-regulator-warns-prediction-markets-against-cutting-corners-in-event-contracts",
-      "pubDate": "Sun, 26 Jul 2026 13:00:00 +0000"
+      "title": "Crypto is rewriting how Wall Street traders spend their weekends",
+      "link": "https://www.coindesk.com/markets/2026/07/27/crypto-is-rewriting-how-wall-street-traders-spend-their-weekends",
+      "pubDate": "Mon, 27 Jul 2026 13:00:00 +0000"
     },
     {
-      "title": "Europe's high regulatory bar could spark new crypto industry M&A wave",
-      "link": "https://www.coindesk.com/policy/2026/07/26/europe-s-high-regulatory-bar-could-spark-new-crypto-industry-m-and-a-wave",
-      "pubDate": "Sun, 26 Jul 2026 10:00:00 +0000"
+      "title": "Bitmine buys more ether as Tom Lee says rising ETH/BTC ratio points to stronger crypto prices",
+      "link": "https://www.coindesk.com/business/2026/07/27/bitmine-buys-more-ether-as-tom-lee-says-rising-eth-btc-ratio-points-to-stronger-crypto-prices",
+      "pubDate": "Mon, 27 Jul 2026 12:55:57 +0000"
     },
     {
-      "title": "Shiba Inu surges 36% as South Korean traders fuel mystery rally",
-      "link": "https://www.coindesk.com/markets/2026/07/26/shiba-inu-surges-36-as-south-korean-traders-fuel-mystery-rally",
-      "pubDate": "Sun, 26 Jul 2026 07:29:45 +0000"
+      "title": "Circle buys nearly 1,000 blockchain patents from IBM",
+      "link": "https://www.coindesk.com/business/2026/07/27/circle-buys-nearly-1-000-blockchain-patents-from-ibm",
+      "pubDate": "Mon, 27 Jul 2026 12:47:04 +0000"
     },
     {
-      "title": "Crypto exchange BitMart to shut down after nine years, BMX token crashes 58%",
-      "link": "https://www.coindesk.com/markets/2026/07/26/crypto-exchange-bitmart-to-shut-down-after-nine-years-bmx-token-crashes-58",
-      "pubDate": "Sun, 26 Jul 2026 06:59:51 +0000"
+      "title": "Michael Saylor's Strategy boosted cash reserve to $3.75 billion, repurchased $25 million of STRC",
+      "link": "https://www.coindesk.com/markets/2026/07/27/michael-saylor-s-strategy-boosted-cash-reserve-to-usd3-75-billion",
+      "pubDate": "Mon, 27 Jul 2026 12:12:54 +0000"
     },
     {
-      "title": "Russia’s largest bank Sberbank plans crypto trading infrastructure by December",
-      "link": "https://www.coindesk.com/business/2026/07/25/russia-s-largest-bank-sberbank-plans-crypto-trading-infrastructure-by-december",
-      "pubDate": "Sat, 25 Jul 2026 16:59:36 +0000"
+      "title": "Bitcoin options traders are dropping their hedges going into the Fed meeting",
+      "link": "https://www.coindesk.com/markets/2026/07/27/bitcoin-options-traders-are-dropping-their-hedges-going-into-the-fed-meeting",
+      "pubDate": "Mon, 27 Jul 2026 11:53:18 +0000"
     }
   ]
 }
