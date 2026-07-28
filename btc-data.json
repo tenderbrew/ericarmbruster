@@ -1,13 +1,13 @@
 {
-  "fetchedAt": "2026-07-28T16:48:24.805Z",
+  "fetchedAt": "2026-07-28T19:49:38.305Z",
   "price": {
-    "usd": 63791,
-    "time": 1785256816
+    "usd": 63622,
+    "time": 1785267911
   },
   "moves": {
-    "d1": 0.1407303217278777,
-    "d7": -4.103940708958653,
-    "d30": 7.221484222929964
+    "d1": -0.12457016618376837,
+    "d7": -4.357995889472921,
+    "d30": 6.937424859796049
   },
   "history90d": [
     {
@@ -372,60 +372,70 @@
     },
     {
       "date": "2026-07-28",
-      "close": 63870.16988125494
+      "close": 63666.56782878947
     }
   ],
   "blocks": [
     {
-      "height": 960000,
-      "id": "000000000000000000001268aab06132c2dd203f77b6020462cd177942d6959d",
-      "timestamp": 1785256412,
-      "txCount": 772
+      "height": 960009,
+      "id": "000000000000000000014ce22c8a1e2a0fc84ad468c15c8a17a6fe6dc83be78e",
+      "timestamp": 1785268058,
+      "txCount": 4541
     },
     {
-      "height": 959999,
-      "id": "00000000000000000001647ecc5197ed5e4792c5d3b0e9f9c2369496ade38cad",
-      "timestamp": 1785256243,
-      "txCount": 4420
+      "height": 960008,
+      "id": "0000000000000000000077799277503879ed2562b939a1bde91b9e73dd0c579e",
+      "timestamp": 1785267648,
+      "txCount": 4141
     },
     {
-      "height": 959998,
-      "id": "00000000000000000001f2e50b27f1782e2c8a6e3f5ee426ed00657eae8830a0",
-      "timestamp": 1785255399,
-      "txCount": 6551
+      "height": 960007,
+      "id": "000000000000000000007033493f2d64cd888af92bb547403eb05c4b5a339b5f",
+      "timestamp": 1785266926,
+      "txCount": 4455
     },
     {
-      "height": 959997,
-      "id": "00000000000000000001459c2c05034e36b3c0fdca91ae56af26de0d6a515483",
-      "timestamp": 1785255174,
-      "txCount": 6158
+      "height": 960006,
+      "id": "000000000000000000022efeeb1a58c3baaa7c6b2ae97a7f87035f71a10c342d",
+      "timestamp": 1785263560,
+      "txCount": 4221
     },
     {
-      "height": 959996,
-      "id": "00000000000000000001d7f4db9c72b1143eb64d9b70b531ae2d365d2b3c68a7",
-      "timestamp": 1785255053,
-      "txCount": 5706
+      "height": 960005,
+      "id": "00000000000000000001d3c8f9789ba5fe68e2ee801463481727d4394e882551",
+      "timestamp": 1785262805,
+      "txCount": 4218
     },
     {
-      "height": 959995,
-      "id": "00000000000000000001739b1d10ad9637c1b8d7d3a1946d9e4159f1ea4f807e",
-      "timestamp": 1785255030,
-      "txCount": 3534
+      "height": 960004,
+      "id": "000000000000000000017aedb62d18a964ee5bc8b94fb87efca6df9d6f99431a",
+      "timestamp": 1785260937,
+      "txCount": 4469
     },
     {
-      "height": 959994,
-      "id": "00000000000000000000cf210e0b55fa90e51720f52df6fed15f9909388d79b5",
-      "timestamp": 1785254297,
-      "txCount": 6099
+      "height": 960003,
+      "id": "0000000000000000000083e9eb459b89b6070a6d28dd719547602ce594c9d8a5",
+      "timestamp": 1785259807,
+      "txCount": 4780
     },
     {
-      "height": 959993,
-      "id": "000000000000000000022a8d4f5f45ddf6dfc5413ab66344b63a5481c304e2dc",
-      "timestamp": 1785254235,
-      "txCount": 6858
+      "height": 960002,
+      "id": "00000000000000000001c30aaa4adea62a8bc9fbe66c3be472aa079a90ceb25e",
+      "timestamp": 1785259321,
+      "txCount": 4515
     }
   ],
   "news": [
+    {
+      "title": "Ondo drops tokenized asset blockchain plans for private, high-speed trading network",
+      "link": "https://www.coindesk.com/business/2026/07/28/ondo-drops-tokenized-asset-blockchain-plans-for-private-high-speed-trading-network",
+      "pubDate": "Tue, 28 Jul 2026 19:44:26 +0000"
+    },
+    {
+      "title": "Wall Street veteran Don Wilson says regulators are getting perps all wrong",
+      "link": "https://www.coindesk.com/markets/2026/07/28/wall-street-veteran-don-wilson-says-regulators-are-getting-crypto-s-biggest-trading-innovation-all-wrong",
+      "pubDate": "Tue, 28 Jul 2026 17:23:35 +0000"
+    },
     {
       "title": "BlackRock, Fidelity, other Wall Street giants back the Clarity Act",
       "link": "https://www.coindesk.com/policy/2026/07/28/blackrock-fidelity-other-wall-street-giants-back-the-clarity-act",
@@ -475,16 +485,6 @@
       "title": "Bitcoin’s recent stability hasn't been enough to spark a broader altcoin rally",
       "link": "https://www.coindesk.com/daybook-us/2026/07/28/bitcoin-s-recent-stability-hasn-t-been-enough-to-spark-a-broader-altcoin-rally",
       "pubDate": "Tue, 28 Jul 2026 11:37:31 +0000"
-    },
-    {
-      "title": "Bitcoin drops as South Korean stocks tumble, Senate shelves crypto Clarity Act",
-      "link": "https://www.coindesk.com/markets/2026/07/28/bitcoin-drops-as-south-korean-stocks-tumble-senate-shelves-crypto-clarity-act",
-      "pubDate": "Tue, 28 Jul 2026 11:09:16 +0000"
-    },
-    {
-      "title": "1inch opens Aqua liquidity protocol across 13 chains",
-      "link": "https://www.coindesk.com/web3/2026/07/27/1inch-opens-aqua-liquidity-protocol-across-13-chains",
-      "pubDate": "Tue, 28 Jul 2026 11:00:00 +0000"
     }
   ]
 }
