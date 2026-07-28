@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-07-28T03:27:38.710Z",
+  "fetchedAt": "2026-07-28T14:29:23.883Z",
   "indicators": {
     "UNRATE": {
       "latest": {
@@ -163,12 +163,12 @@
     },
     "BAMLH0A0HYM2": {
       "latest": {
-        "date": "2026-07-24",
-        "value": 2.79
+        "date": "2026-07-27",
+        "value": 2.81
       },
       "previous": {
-        "date": "2026-07-23",
-        "value": 2.77
+        "date": "2026-07-24",
+        "value": 2.79
       }
     },
     "MORTGAGE30US": {
@@ -263,12 +263,12 @@
     },
     "VIXCLS": {
       "latest": {
-        "date": "2026-07-24",
-        "value": 18.58
+        "date": "2026-07-27",
+        "value": 18.67
       },
       "previous": {
-        "date": "2026-07-23",
-        "value": 18.7
+        "date": "2026-07-24",
+        "value": 18.58
       }
     },
     "BOPGSTB": {
@@ -300,6 +300,24 @@
     }
   },
   "news": [
+    {
+      "title": "The Dupes of War",
+      "link": "https://mises.org/podcasts/audio-mises-wire/dupes-war",
+      "pubDate": "Tue, 28 Jul 2026 07:37:11 CDT",
+      "kind": "Podcast"
+    },
+    {
+      "title": "The Supreme Court Plays Wizard of Oz with the Fed",
+      "link": "https://mises.org/power-market/supreme-court-plays-wizard-oz-fed",
+      "pubDate": "Tue, 28 Jul 2026 07:00:00 CDT",
+      "kind": "Article"
+    },
+    {
+      "title": "DEI By Any Other Name is Still Just as Sinister",
+      "link": "https://mises.org/mises-wire/dei-any-other-name-still-just-sinister",
+      "pubDate": "Tue, 28 Jul 2026 05:00:00 CDT",
+      "kind": "Mises Wire"
+    },
     {
       "title": "Part V: Applying the Treatise, 1956–1962",
       "link": "https://mises.org/podcasts/murray-n-rothbard-making-austrian-economist/part-v-applying-treatise-1956-1962",
@@ -341,24 +359,6 @@
       "link": "https://mises.org/podcasts/murray-n-rothbard-making-austrian-economist/introduction",
       "pubDate": "Mon, 27 Jul 2026 01:58:04 CDT",
       "kind": "Podcast"
-    },
-    {
-      "title": "Paradise Lost, Government Gained",
-      "link": "https://mises.org/podcasts/audio-mises-wire/paradise-lost-government-gained",
-      "pubDate": "Mon, 27 Jul 2026 01:54:01 CDT",
-      "kind": "Podcast"
-    },
-    {
-      "title": "Acknowledgements",
-      "link": "https://mises.org/podcasts/murray-n-rothbard-making-austrian-economist/acknowledgements",
-      "pubDate": "Mon, 27 Jul 2026 01:23:02 CDT",
-      "kind": "Podcast"
-    },
-    {
-      "title": "Gov. DeSantis Signs Big-Government Bill Attacking Florida’s Gold Industry",
-      "link": "https://mises.org/power-market/gov-desantis-signs-big-government-bill-attacking-floridas-gold-industry",
-      "pubDate": "Mon, 27 Jul 2026 01:00:00 CDT",
-      "kind": "Article"
     }
   ]
 }
