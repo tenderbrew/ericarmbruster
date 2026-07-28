@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-07-27T18:10:02.179Z",
+  "fetchedAt": "2026-07-28T12:10:01.276Z",
   "note": "main services only; databases/caches/workers are filtered as implementation detail",
   "services": [
     {
@@ -45,10 +45,6 @@
     {
       "name": "shelfmark",
       "project": "books"
-    },
-    {
-      "name": "paperless",
-      "project": "documents"
     },
     {
       "name": "prowlarr",
