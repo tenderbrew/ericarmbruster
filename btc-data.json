@@ -1,13 +1,13 @@
 {
-  "fetchedAt": "2026-07-28T03:30:43.612Z",
+  "fetchedAt": "2026-07-28T08:49:01.776Z",
   "price": {
-    "usd": 63227,
-    "time": 1785209409
+    "usd": 63437,
+    "time": 1785228308
   },
   "moves": {
-    "d1": -0.7446511882257867,
-    "d7": -4.951793500734092,
-    "d30": 6.2734991293943
+    "d1": -0.4149878600515522,
+    "d7": -4.636103631456001,
+    "d30": 6.626472302519293
   },
   "history90d": [
     {
@@ -372,60 +372,80 @@
     },
     {
       "date": "2026-07-28",
-      "close": 63228.63783644966
+      "close": 63435.343830531296
     }
   ],
   "blocks": [
     {
-      "height": 959925,
-      "id": "000000000000000000010706e319d4f027ac78dbab4d6d24dfd6f9c9b2914437",
-      "timestamp": 1785209142,
-      "txCount": 5822
+      "height": 959949,
+      "id": "000000000000000000004986b0b81eb06028ca3b161105e8556f6f7acf9f93d0",
+      "timestamp": 1785228268,
+      "txCount": 3299
     },
     {
-      "height": 959924,
-      "id": "00000000000000000000bed08b5528955eb82ef4954f739b7e1b38d505f21da2",
-      "timestamp": 1785208857,
-      "txCount": 6688
+      "height": 959948,
+      "id": "00000000000000000001cdf132cf3f813b99340ef7c2fb9311d39a255b51c77c",
+      "timestamp": 1785228008,
+      "txCount": 3119
     },
     {
-      "height": 959923,
-      "id": "000000000000000000020e87ec5c9912ecab8a3c1ace12adb93741a3eb700004",
-      "timestamp": 1785208803,
-      "txCount": 3797
+      "height": 959947,
+      "id": "00000000000000000000a0e4f3645709f4a721d9883926ac2b59619ba6a30a09",
+      "timestamp": 1785227724,
+      "txCount": 3760
     },
     {
-      "height": 959922,
-      "id": "0000000000000000000101c5aba20083a10f88ceafa585319cb7e39dcd48e4a0",
-      "timestamp": 1785207793,
-      "txCount": 5763
+      "height": 959946,
+      "id": "000000000000000000020b4aaac08b5511ed78a1410c3bc7f6766ffc820c38df",
+      "timestamp": 1785226816,
+      "txCount": 3805
     },
     {
-      "height": 959921,
-      "id": "0000000000000000000089b9564dff795bd44b051e6637baeb1d9ae3ad7b67f0",
-      "timestamp": 1785207487,
-      "txCount": 629
+      "height": 959945,
+      "id": "0000000000000000000186e80b6d083976675576e8ead973c13167ae2c99ca64",
+      "timestamp": 1785226277,
+      "txCount": 4037
     },
     {
-      "height": 959920,
-      "id": "00000000000000000001c79d305eee203b303c7c9667050e1489e050a631afec",
-      "timestamp": 1785207299,
-      "txCount": 4768
+      "height": 959944,
+      "id": "00000000000000000000cd74e8f93fd1e145aeeaec76cda1252816e36f8ed617",
+      "timestamp": 1785223645,
+      "txCount": 4379
     },
     {
-      "height": 959919,
-      "id": "000000000000000000017d3cea7c20b2796b66552a85d504dd08a7a52e1335d0",
-      "timestamp": 1785206817,
-      "txCount": 6386
+      "height": 959943,
+      "id": "00000000000000000000a72a65fc204301b149963d53855d65498f270061b97d",
+      "timestamp": 1785223151,
+      "txCount": 2742
     },
     {
-      "height": 959918,
-      "id": "00000000000000000001db6b29f4f71ac80a73f0ce23154fefff6f5e7508f48f",
-      "timestamp": 1785206703,
-      "txCount": 5740
+      "height": 959942,
+      "id": "0000000000000000000136278907dec191a87baed18064b920787ebf659ba3e8",
+      "timestamp": 1785223042,
+      "txCount": 4378
     }
   ],
   "news": [
+    {
+      "title": "Inside the CME and CFTC’s battle over onchain perpetual futures",
+      "link": "https://www.coindesk.com/policy/2026/07/28/inside-the-cme-and-cftc-s-battle-over-onchain-perpetual-futures",
+      "pubDate": "Tue, 28 Jul 2026 08:00:00 +0000"
+    },
+    {
+      "title": "Hong Kong’s central bank puts a number on lenders' quantum preparedness. It's very low.",
+      "link": "https://www.coindesk.com/markets/2026/07/28/hong-kong-s-central-bank-puts-a-number-on-lenders-quantum-preparedness-it-s-very-low",
+      "pubDate": "Tue, 28 Jul 2026 07:55:41 +0000"
+    },
+    {
+      "title": "Live updates: Bitcoin recovers from Asian session lows; Nasdaq futures remain under pressure",
+      "link": "https://www.coindesk.com/markets/2026/07/28/bitcoin-recovers-from-asian-session-lows-nasdaq-futures-remain-under-pressure",
+      "pubDate": "Tue, 28 Jul 2026 07:46:22 +0000"
+    },
+    {
+      "title": "Bitcoin slides 2% after U.S. close while Korea’s Kospi plunges 10%",
+      "link": "https://www.coindesk.com/markets/2026/07/28/bitcoin-slides-2-after-u-s-close-while-korea-s-kospi-plunges-10",
+      "pubDate": "Tue, 28 Jul 2026 04:32:39 +0000"
+    },
     {
       "title": "U.S. Senate puts off crypto Clarity Act for now as it focuses limited bandwidth elsewhere",
       "link": "https://www.coindesk.com/policy/2026/07/27/u-s-senate-puts-off-crypto-clarity-act-for-now-as-it-focuses-limited-bandwidth-elsewhere",
@@ -465,26 +485,6 @@
       "title": "Cantor is advising crypto bank AMINA on path to potential public listing",
       "link": "https://www.coindesk.com/business/2026/07/27/cantor-is-advising-crypto-bank-amina-on-path-to-potential-public-listing",
       "pubDate": "Mon, 27 Jul 2026 14:36:30 +0000"
-    },
-    {
-      "title": "Lido begins moving $16.5 billion in staked ether to cut validator count by a third",
-      "link": "https://www.coindesk.com/tech/2026/07/27/lido-begins-moving-usd16-5-billion-in-staked-ether-to-cut-validator-count-by-a-third",
-      "pubDate": "Mon, 27 Jul 2026 14:00:00 +0000"
-    },
-    {
-      "title": "Thailand's SEC alleges Bitkub concealed cyberattack that led to $50 million hack",
-      "link": "https://www.coindesk.com/policy/2026/07/27/thailand-s-sec-alleges-bitkub-concealed-cyberattack-that-led-to-usd50-million-hack",
-      "pubDate": "Mon, 27 Jul 2026 13:32:16 +0000"
-    },
-    {
-      "title": "Nvidia forms 37-member AI security alliance without OpenAI, Anthropic or Google",
-      "link": "https://www.coindesk.com/tech/2026/07/27/nvidia-forms-37-member-ai-security-alliance-without-openai-anthropic-or-google",
-      "pubDate": "Mon, 27 Jul 2026 13:25:58 +0000"
-    },
-    {
-      "title": "Securitize builds Wall Street credentials with SEC adviser license as tokenization expands",
-      "link": "https://www.coindesk.com/business/2026/07/27/securitize-builds-wall-street-credentials-with-sec-adviser-license-as-tokenization-expands",
-      "pubDate": "Mon, 27 Jul 2026 13:00:00 +0000"
     }
   ]
 }
