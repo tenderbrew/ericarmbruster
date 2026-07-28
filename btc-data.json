@@ -1,13 +1,13 @@
 {
-  "fetchedAt": "2026-07-28T14:32:10.877Z",
+  "fetchedAt": "2026-07-28T16:48:24.805Z",
   "price": {
-    "usd": 63144,
-    "time": 1785248709
+    "usd": 63791,
+    "time": 1785256816
   },
   "moves": {
-    "d1": -0.8749466941232242,
-    "d7": -5.076566163353524,
-    "d30": 6.1339906847782455
+    "d1": 0.1407303217278777,
+    "d7": -4.103940708958653,
+    "d30": 7.221484222929964
   },
   "history90d": [
     {
@@ -372,60 +372,85 @@
     },
     {
       "date": "2026-07-28",
-      "close": 63146.10303510921
+      "close": 63870.16988125494
     }
   ],
   "blocks": [
     {
-      "height": 959981,
-      "id": "000000000000000000022b771f9106365cd1cc1b89924f7b81b577c7c7ac3042",
-      "timestamp": 1785248870,
-      "txCount": 3665
+      "height": 960000,
+      "id": "000000000000000000001268aab06132c2dd203f77b6020462cd177942d6959d",
+      "timestamp": 1785256412,
+      "txCount": 772
     },
     {
-      "height": 959980,
-      "id": "0000000000000000000160631113e5c402135a7a81567e34a4666d2b2b7a742d",
-      "timestamp": 1785248465,
-      "txCount": 4102
+      "height": 959999,
+      "id": "00000000000000000001647ecc5197ed5e4792c5d3b0e9f9c2369496ade38cad",
+      "timestamp": 1785256243,
+      "txCount": 4420
     },
     {
-      "height": 959979,
-      "id": "0000000000000000000101d69d0750075c52770570c58da762f9ebf44437e3d8",
-      "timestamp": 1785248445,
-      "txCount": 3984
+      "height": 959998,
+      "id": "00000000000000000001f2e50b27f1782e2c8a6e3f5ee426ed00657eae8830a0",
+      "timestamp": 1785255399,
+      "txCount": 6551
     },
     {
-      "height": 959978,
-      "id": "000000000000000000012c08f846cf01723af9d9f64a2cb205e08781fd905506",
-      "timestamp": 1785246067,
-      "txCount": 4099
+      "height": 959997,
+      "id": "00000000000000000001459c2c05034e36b3c0fdca91ae56af26de0d6a515483",
+      "timestamp": 1785255174,
+      "txCount": 6158
     },
     {
-      "height": 959977,
-      "id": "000000000000000000007a809315b965d348b913d9666189e6b52b2acc9b1b69",
-      "timestamp": 1785245778,
-      "txCount": 3044
+      "height": 959996,
+      "id": "00000000000000000001d7f4db9c72b1143eb64d9b70b531ae2d365d2b3c68a7",
+      "timestamp": 1785255053,
+      "txCount": 5706
     },
     {
-      "height": 959976,
-      "id": "00000000000000000001ab5de94bf7b1f9c961ccec9c95dc2363542b8198bda7",
-      "timestamp": 1785244559,
-      "txCount": 3563
+      "height": 959995,
+      "id": "00000000000000000001739b1d10ad9637c1b8d7d3a1946d9e4159f1ea4f807e",
+      "timestamp": 1785255030,
+      "txCount": 3534
     },
     {
-      "height": 959975,
-      "id": "0000000000000000000010a6a0091ded1f66ac92337dbccc8f853433821b6b9a",
-      "timestamp": 1785244310,
-      "txCount": 4014
+      "height": 959994,
+      "id": "00000000000000000000cf210e0b55fa90e51720f52df6fed15f9909388d79b5",
+      "timestamp": 1785254297,
+      "txCount": 6099
     },
     {
-      "height": 959974,
-      "id": "00000000000000000000820f01f48b895e1e35eaeaab537c8665a9a800b430a7",
-      "timestamp": 1785242931,
-      "txCount": 5615
+      "height": 959993,
+      "id": "000000000000000000022a8d4f5f45ddf6dfc5413ab66344b63a5481c304e2dc",
+      "timestamp": 1785254235,
+      "txCount": 6858
     }
   ],
   "news": [
+    {
+      "title": "BlackRock, Fidelity, other Wall Street giants back the Clarity Act",
+      "link": "https://www.coindesk.com/policy/2026/07/28/blackrock-fidelity-other-wall-street-giants-back-the-clarity-act",
+      "pubDate": "Tue, 28 Jul 2026 16:08:19 +0000"
+    },
+    {
+      "title": "Ethereum startup EthSystems bets privacy is key to getting banks on public blockchains",
+      "link": "https://www.coindesk.com/tech/2026/07/28/ethereum-startup-ethsystems-bets-privacy-is-key-to-getting-banks-on-public-blockchains",
+      "pubDate": "Tue, 28 Jul 2026 15:46:33 +0000"
+    },
+    {
+      "title": "Russia outlines new digital depository rules ahead of fall crypto framework roll-out",
+      "link": "https://www.coindesk.com/policy/2026/07/28/russia-outlines-new-digital-depository-rules-ahead-of-fall-crypto-framework-roll-out",
+      "pubDate": "Tue, 28 Jul 2026 14:49:50 +0000"
+    },
+    {
+      "title": "Hyperliquid is taking crypto perps deep into DeFi’s ‘money LEGO’ land",
+      "link": "https://www.coindesk.com/business/2026/07/28/hyperliquid-is-taking-crypto-perps-deep-into-defi-s-money-lego-land",
+      "pubDate": "Tue, 28 Jul 2026 14:49:01 +0000"
+    },
+    {
+      "title": "Zcash seals $1.7 billion shielded pool as Ironwood upgrade activates",
+      "link": "https://www.coindesk.com/tech/2026/07/28/zcash-seals-usd1-7-billion-shielded-pool-as-ironwood-upgrade-activates",
+      "pubDate": "Tue, 28 Jul 2026 14:35:28 +0000"
+    },
     {
       "title": "Morgan Stanley debuts ether, solana exchange-traded products after bitcoin fund success",
       "link": "https://www.coindesk.com/markets/2026/07/28/morgan-stanley-debuts-ether-and-solana-etps-after-bitcoin-fund-success",
@@ -460,31 +485,6 @@
       "title": "1inch opens Aqua liquidity protocol across 13 chains",
       "link": "https://www.coindesk.com/web3/2026/07/27/1inch-opens-aqua-liquidity-protocol-across-13-chains",
       "pubDate": "Tue, 28 Jul 2026 11:00:00 +0000"
-    },
-    {
-      "title": "Perpetuals tied to SK Hynix hit by flash crash to $900 on Hyperliquid",
-      "link": "https://www.coindesk.com/markets/2026/07/28/perpetuals-tied-to-sk-hynix-suffer-a-flash-crash-to-usd900-on-hyperliquid",
-      "pubDate": "Tue, 28 Jul 2026 10:05:43 +0000"
-    },
-    {
-      "title": "BitMEX and BitMart may be first casualties of crypto trading slump",
-      "link": "https://www.coindesk.com/business/2026/07/28/bitmex-and-bitmart-may-be-first-casualties-of-crypto-trading-slump",
-      "pubDate": "Tue, 28 Jul 2026 09:36:01 +0000"
-    },
-    {
-      "title": "Inside the CME and CFTC’s battle over onchain perpetual futures",
-      "link": "https://www.coindesk.com/policy/2026/07/28/inside-the-cme-and-cftc-s-battle-over-onchain-perpetual-futures",
-      "pubDate": "Tue, 28 Jul 2026 08:00:00 +0000"
-    },
-    {
-      "title": "Hong Kong’s central bank puts a number on lenders' quantum preparedness. It's very low.",
-      "link": "https://www.coindesk.com/markets/2026/07/28/hong-kong-s-central-bank-puts-a-number-on-lenders-quantum-preparedness-it-s-very-low",
-      "pubDate": "Tue, 28 Jul 2026 07:55:41 +0000"
-    },
-    {
-      "title": "Live updates: Bitcoin falls back to $63,000 as South Korea's Kospi crashes nearly 11%",
-      "link": "https://www.coindesk.com/markets/2026/07/28/bitcoin-recovers-from-asian-session-lows-nasdaq-futures-remain-under-pressure",
-      "pubDate": "Tue, 28 Jul 2026 07:46:22 +0000"
     }
   ]
 }
