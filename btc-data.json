@@ -1,13 +1,13 @@
 {
-  "fetchedAt": "2026-07-28T11:26:05.458Z",
+  "fetchedAt": "2026-07-28T14:32:10.877Z",
   "price": {
-    "usd": 63508,
-    "time": 1785237608
+    "usd": 63144,
+    "time": 1785248709
   },
   "moves": {
-    "d1": -0.30353025862120964,
-    "d7": -4.52937038993817,
-    "d30": 6.745810851528211
+    "d1": -0.8749466941232242,
+    "d7": -5.076566163353524,
+    "d30": 6.1339906847782455
   },
   "history90d": [
     {
@@ -372,60 +372,85 @@
     },
     {
       "date": "2026-07-28",
-      "close": 63420.13226141274
+      "close": 63146.10303510921
     }
   ],
   "blocks": [
     {
-      "height": 959965,
-      "id": "00000000000000000001622bd8844b50e084cd737702011526f67b176563af1f",
-      "timestamp": 1785237609,
-      "txCount": 5836
+      "height": 959981,
+      "id": "000000000000000000022b771f9106365cd1cc1b89924f7b81b577c7c7ac3042",
+      "timestamp": 1785248870,
+      "txCount": 3665
     },
     {
-      "height": 959964,
-      "id": "00000000000000000001197d93e8dd3eb7209ad83da0b23e91c4fb1a13e7f7cd",
-      "timestamp": 1785237260,
-      "txCount": 4597
+      "height": 959980,
+      "id": "0000000000000000000160631113e5c402135a7a81567e34a4666d2b2b7a742d",
+      "timestamp": 1785248465,
+      "txCount": 4102
     },
     {
-      "height": 959963,
-      "id": "00000000000000000002345fb3f43fc1992a11cbf52abe0e5f61ffcf2d107530",
-      "timestamp": 1785237094,
-      "txCount": 3646
+      "height": 959979,
+      "id": "0000000000000000000101d69d0750075c52770570c58da762f9ebf44437e3d8",
+      "timestamp": 1785248445,
+      "txCount": 3984
     },
     {
-      "height": 959962,
-      "id": "000000000000000000016c59e1cbd74f9d49bbad2f4b6f06bf8b7fc82f6f0879",
-      "timestamp": 1785236023,
-      "txCount": 4325
+      "height": 959978,
+      "id": "000000000000000000012c08f846cf01723af9d9f64a2cb205e08781fd905506",
+      "timestamp": 1785246067,
+      "txCount": 4099
     },
     {
-      "height": 959961,
-      "id": "000000000000000000010956cf2af0ade81cf55bb6a4609ce954986309d13693",
-      "timestamp": 1785235219,
-      "txCount": 5710
+      "height": 959977,
+      "id": "000000000000000000007a809315b965d348b913d9666189e6b52b2acc9b1b69",
+      "timestamp": 1785245778,
+      "txCount": 3044
     },
     {
-      "height": 959960,
-      "id": "0000000000000000000015f5a9033b25cdd02e1ba127470174cef45113d8d6a6",
-      "timestamp": 1785235047,
-      "txCount": 4282
+      "height": 959976,
+      "id": "00000000000000000001ab5de94bf7b1f9c961ccec9c95dc2363542b8198bda7",
+      "timestamp": 1785244559,
+      "txCount": 3563
     },
     {
-      "height": 959959,
-      "id": "000000000000000000022389f66ae55f40d2e4d9e9726705e23108e33e1f3ebf",
-      "timestamp": 1785234063,
-      "txCount": 2500
+      "height": 959975,
+      "id": "0000000000000000000010a6a0091ded1f66ac92337dbccc8f853433821b6b9a",
+      "timestamp": 1785244310,
+      "txCount": 4014
     },
     {
-      "height": 959958,
-      "id": "00000000000000000001dfab49d4598cf960b4f4e140d631c5df389299fd167d",
-      "timestamp": 1785233166,
-      "txCount": 3811
+      "height": 959974,
+      "id": "00000000000000000000820f01f48b895e1e35eaeaab537c8665a9a800b430a7",
+      "timestamp": 1785242931,
+      "txCount": 5615
     }
   ],
   "news": [
+    {
+      "title": "Morgan Stanley debuts ether, solana exchange-traded products after bitcoin fund success",
+      "link": "https://www.coindesk.com/markets/2026/07/28/morgan-stanley-debuts-ether-and-solana-etps-after-bitcoin-fund-success",
+      "pubDate": "Tue, 28 Jul 2026 14:30:57 +0000"
+    },
+    {
+      "title": "Core Scientific lands AMD AI deal as bitcoin mining operation winds down",
+      "link": "https://www.coindesk.com/business/2026/07/28/core-scientific-lands-amd-ai-deal-as-bitcoin-mining-operation-winds-down",
+      "pubDate": "Tue, 28 Jul 2026 12:46:05 +0000"
+    },
+    {
+      "title": "Binance makes fighting crypto crime more difficult, says new report",
+      "link": "https://www.coindesk.com/business/2026/07/28/binance-makes-fighting-crypto-crime-more-difficult-says-new-nyt-article",
+      "pubDate": "Tue, 28 Jul 2026 12:24:02 +0000"
+    },
+    {
+      "title": "Apple kept fake bitcoin wallet on App Store after $875,000 theft report, lawsuit alleges",
+      "link": "https://www.coindesk.com/business/2026/07/28/apple-kept-fake-bitcoin-wallet-on-app-store-after-usd875-000-theft-report-lawsuit-alleges",
+      "pubDate": "Tue, 28 Jul 2026 11:59:17 +0000"
+    },
+    {
+      "title": "Bitcoin’s recent stability hasn't been enough to spark a broader altcoin rally",
+      "link": "https://www.coindesk.com/daybook-us/2026/07/28/bitcoin-s-recent-stability-hasn-t-been-enough-to-spark-a-broader-altcoin-rally",
+      "pubDate": "Tue, 28 Jul 2026 11:37:31 +0000"
+    },
     {
       "title": "Bitcoin drops as South Korean stocks tumble, Senate shelves crypto Clarity Act",
       "link": "https://www.coindesk.com/markets/2026/07/28/bitcoin-drops-as-south-korean-stocks-tumble-senate-shelves-crypto-clarity-act",
@@ -457,34 +482,9 @@
       "pubDate": "Tue, 28 Jul 2026 07:55:41 +0000"
     },
     {
-      "title": "Live updates: Bitcoin's next move hinges on breakeven wall at $68,500; Nasdaq futures wilt",
+      "title": "Live updates: Bitcoin falls back to $63,000 as South Korea's Kospi crashes nearly 11%",
       "link": "https://www.coindesk.com/markets/2026/07/28/bitcoin-recovers-from-asian-session-lows-nasdaq-futures-remain-under-pressure",
       "pubDate": "Tue, 28 Jul 2026 07:46:22 +0000"
-    },
-    {
-      "title": "Bitcoin slides 2% after U.S. close while Korea’s Kospi plunges 10%",
-      "link": "https://www.coindesk.com/markets/2026/07/28/bitcoin-slides-2-after-u-s-close-while-korea-s-kospi-plunges-10",
-      "pubDate": "Tue, 28 Jul 2026 04:32:39 +0000"
-    },
-    {
-      "title": "U.S. Senate puts off crypto Clarity Act for now as it focuses limited bandwidth elsewhere",
-      "link": "https://www.coindesk.com/policy/2026/07/27/u-s-senate-puts-off-crypto-clarity-act-for-now-as-it-focuses-limited-bandwidth-elsewhere",
-      "pubDate": "Mon, 27 Jul 2026 23:55:16 +0000"
-    },
-    {
-      "title": "Kalshi, Polymarket win pause against Minnesota's prediction market ban",
-      "link": "https://www.coindesk.com/policy/2026/07/27/kalshi-polymarket-win-pause-against-minnesota-s-prediction-market-ban",
-      "pubDate": "Mon, 27 Jul 2026 23:29:38 +0000"
-    },
-    {
-      "title": "Bitcoin shrugs off AI selloff but high-stakes Fed meeting could determine what's next",
-      "link": "https://www.coindesk.com/markets/2026/07/27/bitcoin-shrugs-off-ai-selloff-but-high-stakes-fed-meeting-could-determine-what-s-next",
-      "pubDate": "Mon, 27 Jul 2026 19:55:45 +0000"
-    },
-    {
-      "title": "Crypto’s favorite $90 trillion trading product is coming to Wall Street, but big banks are taking it slow",
-      "link": "https://www.coindesk.com/markets/2026/07/22/crypto-s-favorite-usd90-trillion-trading-product-is-coming-to-wall-street-but-big-banks-are-taking-it-slow",
-      "pubDate": "Mon, 27 Jul 2026 18:00:00 +0000"
     }
   ]
 }
