@@ -1,13 +1,13 @@
 {
-  "fetchedAt": "2026-07-28T08:49:01.776Z",
+  "fetchedAt": "2026-07-28T11:26:05.458Z",
   "price": {
-    "usd": 63437,
-    "time": 1785228308
+    "usd": 63508,
+    "time": 1785237608
   },
   "moves": {
-    "d1": -0.4149878600515522,
-    "d7": -4.636103631456001,
-    "d30": 6.626472302519293
+    "d1": -0.30353025862120964,
+    "d7": -4.52937038993817,
+    "d30": 6.745810851528211
   },
   "history90d": [
     {
@@ -372,60 +372,80 @@
     },
     {
       "date": "2026-07-28",
-      "close": 63435.343830531296
+      "close": 63420.13226141274
     }
   ],
   "blocks": [
     {
-      "height": 959949,
-      "id": "000000000000000000004986b0b81eb06028ca3b161105e8556f6f7acf9f93d0",
-      "timestamp": 1785228268,
-      "txCount": 3299
+      "height": 959965,
+      "id": "00000000000000000001622bd8844b50e084cd737702011526f67b176563af1f",
+      "timestamp": 1785237609,
+      "txCount": 5836
     },
     {
-      "height": 959948,
-      "id": "00000000000000000001cdf132cf3f813b99340ef7c2fb9311d39a255b51c77c",
-      "timestamp": 1785228008,
-      "txCount": 3119
+      "height": 959964,
+      "id": "00000000000000000001197d93e8dd3eb7209ad83da0b23e91c4fb1a13e7f7cd",
+      "timestamp": 1785237260,
+      "txCount": 4597
     },
     {
-      "height": 959947,
-      "id": "00000000000000000000a0e4f3645709f4a721d9883926ac2b59619ba6a30a09",
-      "timestamp": 1785227724,
-      "txCount": 3760
+      "height": 959963,
+      "id": "00000000000000000002345fb3f43fc1992a11cbf52abe0e5f61ffcf2d107530",
+      "timestamp": 1785237094,
+      "txCount": 3646
     },
     {
-      "height": 959946,
-      "id": "000000000000000000020b4aaac08b5511ed78a1410c3bc7f6766ffc820c38df",
-      "timestamp": 1785226816,
-      "txCount": 3805
+      "height": 959962,
+      "id": "000000000000000000016c59e1cbd74f9d49bbad2f4b6f06bf8b7fc82f6f0879",
+      "timestamp": 1785236023,
+      "txCount": 4325
     },
     {
-      "height": 959945,
-      "id": "0000000000000000000186e80b6d083976675576e8ead973c13167ae2c99ca64",
-      "timestamp": 1785226277,
-      "txCount": 4037
+      "height": 959961,
+      "id": "000000000000000000010956cf2af0ade81cf55bb6a4609ce954986309d13693",
+      "timestamp": 1785235219,
+      "txCount": 5710
     },
     {
-      "height": 959944,
-      "id": "00000000000000000000cd74e8f93fd1e145aeeaec76cda1252816e36f8ed617",
-      "timestamp": 1785223645,
-      "txCount": 4379
+      "height": 959960,
+      "id": "0000000000000000000015f5a9033b25cdd02e1ba127470174cef45113d8d6a6",
+      "timestamp": 1785235047,
+      "txCount": 4282
     },
     {
-      "height": 959943,
-      "id": "00000000000000000000a72a65fc204301b149963d53855d65498f270061b97d",
-      "timestamp": 1785223151,
-      "txCount": 2742
+      "height": 959959,
+      "id": "000000000000000000022389f66ae55f40d2e4d9e9726705e23108e33e1f3ebf",
+      "timestamp": 1785234063,
+      "txCount": 2500
     },
     {
-      "height": 959942,
-      "id": "0000000000000000000136278907dec191a87baed18064b920787ebf659ba3e8",
-      "timestamp": 1785223042,
-      "txCount": 4378
+      "height": 959958,
+      "id": "00000000000000000001dfab49d4598cf960b4f4e140d631c5df389299fd167d",
+      "timestamp": 1785233166,
+      "txCount": 3811
     }
   ],
   "news": [
+    {
+      "title": "Bitcoin drops as South Korean stocks tumble, Senate shelves crypto Clarity Act",
+      "link": "https://www.coindesk.com/markets/2026/07/28/bitcoin-drops-as-south-korean-stocks-tumble-senate-shelves-crypto-clarity-act",
+      "pubDate": "Tue, 28 Jul 2026 11:09:16 +0000"
+    },
+    {
+      "title": "1inch opens Aqua liquidity protocol across 13 chains",
+      "link": "https://www.coindesk.com/web3/2026/07/27/1inch-opens-aqua-liquidity-protocol-across-13-chains",
+      "pubDate": "Tue, 28 Jul 2026 11:00:00 +0000"
+    },
+    {
+      "title": "Perpetuals tied to SK Hynix hit by flash crash to $900 on Hyperliquid",
+      "link": "https://www.coindesk.com/markets/2026/07/28/perpetuals-tied-to-sk-hynix-suffer-a-flash-crash-to-usd900-on-hyperliquid",
+      "pubDate": "Tue, 28 Jul 2026 10:05:43 +0000"
+    },
+    {
+      "title": "BitMEX and BitMart may be first casualties of crypto trading slump",
+      "link": "https://www.coindesk.com/business/2026/07/28/bitmex-and-bitmart-may-be-first-casualties-of-crypto-trading-slump",
+      "pubDate": "Tue, 28 Jul 2026 09:36:01 +0000"
+    },
     {
       "title": "Inside the CME and CFTC’s battle over onchain perpetual futures",
       "link": "https://www.coindesk.com/policy/2026/07/28/inside-the-cme-and-cftc-s-battle-over-onchain-perpetual-futures",
@@ -437,7 +457,7 @@
       "pubDate": "Tue, 28 Jul 2026 07:55:41 +0000"
     },
     {
-      "title": "Live updates: Bitcoin recovers from Asian session lows; Nasdaq futures remain under pressure",
+      "title": "Live updates: Bitcoin's next move hinges on breakeven wall at $68,500; Nasdaq futures wilt",
       "link": "https://www.coindesk.com/markets/2026/07/28/bitcoin-recovers-from-asian-session-lows-nasdaq-futures-remain-under-pressure",
       "pubDate": "Tue, 28 Jul 2026 07:46:22 +0000"
     },
@@ -465,26 +485,6 @@
       "title": "Crypto’s favorite $90 trillion trading product is coming to Wall Street, but big banks are taking it slow",
       "link": "https://www.coindesk.com/markets/2026/07/22/crypto-s-favorite-usd90-trillion-trading-product-is-coming-to-wall-street-but-big-banks-are-taking-it-slow",
       "pubDate": "Mon, 27 Jul 2026 18:00:00 +0000"
-    },
-    {
-      "title": "Digital asset trading platform Uphold cuts 17% of global headcount as crypto winter bites",
-      "link": "https://www.coindesk.com/business/2026/07/27/digital-asset-trading-platform-uphold-cuts-17-of-global-headcount-as-crypto-winter-bites",
-      "pubDate": "Mon, 27 Jul 2026 16:47:06 +0000"
-    },
-    {
-      "title": "What are perps, anyway? Everything you need to know about crypto’s hottest trading instrument",
-      "link": "https://www.coindesk.com/business/2026/07/27/what-are-perps-anyway-everything-you-need-to-know-about-crypto-s-hottest-trading-instrument",
-      "pubDate": "Mon, 27 Jul 2026 15:00:00 +0000"
-    },
-    {
-      "title": "Fanatics buys regulated exchange in bid to grow prediction markets business",
-      "link": "https://www.coindesk.com/markets/2026/07/27/fanatics-buys-regulated-exchange-in-bid-to-grow-prediction-markets-business",
-      "pubDate": "Mon, 27 Jul 2026 14:46:10 +0000"
-    },
-    {
-      "title": "Cantor is advising crypto bank AMINA on path to potential public listing",
-      "link": "https://www.coindesk.com/business/2026/07/27/cantor-is-advising-crypto-bank-amina-on-path-to-potential-public-listing",
-      "pubDate": "Mon, 27 Jul 2026 14:36:30 +0000"
     }
   ]
 }
