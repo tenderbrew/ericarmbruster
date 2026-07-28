@@ -1,19 +1,15 @@
 {
-  "fetchedAt": "2026-07-27T22:15:55.765Z",
+  "fetchedAt": "2026-07-28T03:30:43.612Z",
   "price": {
-    "usd": 64670,
-    "time": 1785190207
+    "usd": 63227,
+    "time": 1785209409
   },
   "moves": {
-    "d1": 0.54983797371293,
-    "d7": -0.0006203374336211098,
-    "d30": 7.743242671816697
+    "d1": -0.7446511882257867,
+    "d7": -4.951793500734092,
+    "d30": 6.2734991293943
   },
   "history90d": [
-    {
-      "date": "2026-04-29",
-      "close": 76331.86443470464
-    },
     {
       "date": "2026-04-30",
       "close": 75784.95743624517
@@ -368,60 +364,78 @@
     },
     {
       "date": "2026-07-27",
-      "close": 64661.504428949615
+      "close": 65310.39342889224
+    },
+    {
+      "date": "2026-07-28",
+      "close": 63701.35288114535
+    },
+    {
+      "date": "2026-07-28",
+      "close": 63228.63783644966
     }
   ],
   "blocks": [
     {
-      "height": 959891,
-      "id": "00000000000000000001a6fa88b6aba8bec3fa2a91c1bf58d4955c6fb762e108",
-      "timestamp": 1785189870,
-      "txCount": 4481
+      "height": 959925,
+      "id": "000000000000000000010706e319d4f027ac78dbab4d6d24dfd6f9c9b2914437",
+      "timestamp": 1785209142,
+      "txCount": 5822
     },
     {
-      "height": 959890,
-      "id": "000000000000000000021964fd730f4d863419019dc57aa62b9838f785fed780",
-      "timestamp": 1785187891,
-      "txCount": 5985
+      "height": 959924,
+      "id": "00000000000000000000bed08b5528955eb82ef4954f739b7e1b38d505f21da2",
+      "timestamp": 1785208857,
+      "txCount": 6688
     },
     {
-      "height": 959889,
-      "id": "000000000000000000001610e5af2fc549c84e226002c41167113f8b8dbe6c4f",
-      "timestamp": 1785187771,
-      "txCount": 4364
+      "height": 959923,
+      "id": "000000000000000000020e87ec5c9912ecab8a3c1ace12adb93741a3eb700004",
+      "timestamp": 1785208803,
+      "txCount": 3797
     },
     {
-      "height": 959888,
-      "id": "00000000000000000000cbfd099159c0b388354b8988ebcfb784dbc3558084fa",
-      "timestamp": 1785186835,
-      "txCount": 3482
+      "height": 959922,
+      "id": "0000000000000000000101c5aba20083a10f88ceafa585319cb7e39dcd48e4a0",
+      "timestamp": 1785207793,
+      "txCount": 5763
     },
     {
-      "height": 959887,
-      "id": "00000000000000000000c8a4cce8aa2c3edb158d4af9de3411b3a44c75ed091a",
-      "timestamp": 1785185856,
-      "txCount": 4729
+      "height": 959921,
+      "id": "0000000000000000000089b9564dff795bd44b051e6637baeb1d9ae3ad7b67f0",
+      "timestamp": 1785207487,
+      "txCount": 629
     },
     {
-      "height": 959886,
-      "id": "00000000000000000000459c532cca3353ccad25742eb75e311e06e2753776be",
-      "timestamp": 1785185267,
-      "txCount": 4821
+      "height": 959920,
+      "id": "00000000000000000001c79d305eee203b303c7c9667050e1489e050a631afec",
+      "timestamp": 1785207299,
+      "txCount": 4768
     },
     {
-      "height": 959885,
-      "id": "0000000000000000000091ef125ab06ba3ff0e9784fa9702bfc00f7b898d0d55",
-      "timestamp": 1785185073,
-      "txCount": 2950
+      "height": 959919,
+      "id": "000000000000000000017d3cea7c20b2796b66552a85d504dd08a7a52e1335d0",
+      "timestamp": 1785206817,
+      "txCount": 6386
     },
     {
-      "height": 959884,
-      "id": "00000000000000000001e8f1053fd3888dafcb2ee397413c0b21b20debf4a3c8",
-      "timestamp": 1785184881,
-      "txCount": 2908
+      "height": 959918,
+      "id": "00000000000000000001db6b29f4f71ac80a73f0ce23154fefff6f5e7508f48f",
+      "timestamp": 1785206703,
+      "txCount": 5740
     }
   ],
   "news": [
+    {
+      "title": "U.S. Senate puts off crypto Clarity Act for now as it focuses limited bandwidth elsewhere",
+      "link": "https://www.coindesk.com/policy/2026/07/27/u-s-senate-puts-off-crypto-clarity-act-for-now-as-it-focuses-limited-bandwidth-elsewhere",
+      "pubDate": "Mon, 27 Jul 2026 23:55:16 +0000"
+    },
+    {
+      "title": "Kalshi, Polymarket win pause against Minnesota's prediction market ban",
+      "link": "https://www.coindesk.com/policy/2026/07/27/kalshi-polymarket-win-pause-against-minnesota-s-prediction-market-ban",
+      "pubDate": "Mon, 27 Jul 2026 23:29:38 +0000"
+    },
     {
       "title": "Bitcoin shrugs off AI selloff but high-stakes Fed meeting could determine what's next",
       "link": "https://www.coindesk.com/markets/2026/07/27/bitcoin-shrugs-off-ai-selloff-but-high-stakes-fed-meeting-could-determine-what-s-next",
@@ -471,16 +485,6 @@
       "title": "Securitize builds Wall Street credentials with SEC adviser license as tokenization expands",
       "link": "https://www.coindesk.com/business/2026/07/27/securitize-builds-wall-street-credentials-with-sec-adviser-license-as-tokenization-expands",
       "pubDate": "Mon, 27 Jul 2026 13:00:00 +0000"
-    },
-    {
-      "title": "Crypto is rewriting how Wall Street traders spend their weekends",
-      "link": "https://www.coindesk.com/markets/2026/07/27/crypto-is-rewriting-how-wall-street-traders-spend-their-weekends",
-      "pubDate": "Mon, 27 Jul 2026 13:00:00 +0000"
-    },
-    {
-      "title": "Bitmine buys more ether as Tom Lee says rising ETH/BTC ratio points to stronger crypto prices",
-      "link": "https://www.coindesk.com/business/2026/07/27/bitmine-buys-more-ether-as-tom-lee-says-rising-eth-btc-ratio-points-to-stronger-crypto-prices",
-      "pubDate": "Mon, 27 Jul 2026 12:55:57 +0000"
     }
   ]
 }
