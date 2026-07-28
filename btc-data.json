@@ -1,13 +1,13 @@
 {
-  "fetchedAt": "2026-07-28T19:49:38.305Z",
+  "fetchedAt": "2026-07-28T22:14:52.802Z",
   "price": {
-    "usd": 63622,
-    "time": 1785267911
+    "usd": 63903,
+    "time": 1785276610
   },
   "moves": {
-    "d1": -0.12457016618376837,
-    "d7": -4.357995889472921,
-    "d30": 6.937424859796049
+    "d1": 0.3165507634208087,
+    "d7": -3.935572778676999,
+    "d30": 7.409736581929938
   },
   "history90d": [
     {
@@ -372,60 +372,65 @@
     },
     {
       "date": "2026-07-28",
-      "close": 63666.56782878947
+      "close": 63940.45605759615
     }
   ],
   "blocks": [
     {
-      "height": 960009,
-      "id": "000000000000000000014ce22c8a1e2a0fc84ad468c15c8a17a6fe6dc83be78e",
-      "timestamp": 1785268058,
-      "txCount": 4541
+      "height": 960021,
+      "id": "00000000000000000000dbc2b80bc46b6da8aaa044dd36955ff95723a91908c0",
+      "timestamp": 1785276308,
+      "txCount": 4443
     },
     {
-      "height": 960008,
-      "id": "0000000000000000000077799277503879ed2562b939a1bde91b9e73dd0c579e",
-      "timestamp": 1785267648,
-      "txCount": 4141
+      "height": 960020,
+      "id": "000000000000000000014b6bdde724f394b8fd2d3309a4cae7aea2c00b1c3bdb",
+      "timestamp": 1785276222,
+      "txCount": 3529
     },
     {
-      "height": 960007,
-      "id": "000000000000000000007033493f2d64cd888af92bb547403eb05c4b5a339b5f",
-      "timestamp": 1785266926,
-      "txCount": 4455
+      "height": 960019,
+      "id": "00000000000000000001bb7b23324f2b246f3ef773d85a4781bd3a51685b14f2",
+      "timestamp": 1785275839,
+      "txCount": 4117
     },
     {
-      "height": 960006,
-      "id": "000000000000000000022efeeb1a58c3baaa7c6b2ae97a7f87035f71a10c342d",
-      "timestamp": 1785263560,
-      "txCount": 4221
+      "height": 960018,
+      "id": "000000000000000000009d109f8f705b2f05cabb6cab29752d426b7b92a63bd0",
+      "timestamp": 1785275520,
+      "txCount": 4500
     },
     {
-      "height": 960005,
-      "id": "00000000000000000001d3c8f9789ba5fe68e2ee801463481727d4394e882551",
-      "timestamp": 1785262805,
-      "txCount": 4218
+      "height": 960017,
+      "id": "000000000000000000006679bde39c7825755e90ccfe8fc1a9c5662ab7b298f6",
+      "timestamp": 1785274084,
+      "txCount": 1
     },
     {
-      "height": 960004,
-      "id": "000000000000000000017aedb62d18a964ee5bc8b94fb87efca6df9d6f99431a",
-      "timestamp": 1785260937,
-      "txCount": 4469
+      "height": 960016,
+      "id": "000000000000000000019a44cef361ba626c0c7e9601fd62361117d2942c7cff",
+      "timestamp": 1785273596,
+      "txCount": 4007
     },
     {
-      "height": 960003,
-      "id": "0000000000000000000083e9eb459b89b6070a6d28dd719547602ce594c9d8a5",
-      "timestamp": 1785259807,
-      "txCount": 4780
+      "height": 960015,
+      "id": "0000000000000000000096f24bdca205d072cb597858b373e548a654b9f7db6e",
+      "timestamp": 1785270986,
+      "txCount": 4102
     },
     {
-      "height": 960002,
-      "id": "00000000000000000001c30aaa4adea62a8bc9fbe66c3be472aa079a90ceb25e",
-      "timestamp": 1785259321,
-      "txCount": 4515
+      "height": 960014,
+      "id": "00000000000000000000df1b8d078390653572b477048c3a6b7177714ba9ca87",
+      "timestamp": 1785270724,
+      "txCount": 3671
     }
   ],
   "news": [
+    {
+      "title": "'Anything remotely dovish' from Fed could be good for bitcoin, says analyst",
+      "link": "https://www.coindesk.com/markets/2026/07/28/remotely-dovish-fed-could-be-good-for-bitcoin-says-analyst",
+      "pubDate": "Tue, 28 Jul 2026 20:23:31 +0000"
+    },
     {
       "title": "Ondo drops tokenized asset blockchain plans for private, high-speed trading network",
       "link": "https://www.coindesk.com/business/2026/07/28/ondo-drops-tokenized-asset-blockchain-plans-for-private-high-speed-trading-network",
@@ -480,11 +485,6 @@
       "title": "Apple kept fake bitcoin wallet on App Store after $875,000 theft report, lawsuit alleges",
       "link": "https://www.coindesk.com/business/2026/07/28/apple-kept-fake-bitcoin-wallet-on-app-store-after-usd875-000-theft-report-lawsuit-alleges",
       "pubDate": "Tue, 28 Jul 2026 11:59:17 +0000"
-    },
-    {
-      "title": "Bitcoin’s recent stability hasn't been enough to spark a broader altcoin rally",
-      "link": "https://www.coindesk.com/daybook-us/2026/07/28/bitcoin-s-recent-stability-hasn-t-been-enough-to-spark-a-broader-altcoin-rally",
-      "pubDate": "Tue, 28 Jul 2026 11:37:31 +0000"
     }
   ]
 }
