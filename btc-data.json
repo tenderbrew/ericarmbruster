@@ -1,19 +1,15 @@
 {
-  "fetchedAt": "2026-07-28T22:14:52.802Z",
+  "fetchedAt": "2026-07-29T03:33:40.496Z",
   "price": {
-    "usd": 63903,
-    "time": 1785276610
+    "usd": 63710,
+    "time": 1785295808
   },
   "moves": {
-    "d1": 0.3165507634208087,
-    "d7": -3.935572778676999,
-    "d30": 7.409736581929938
+    "d1": -0.26915787248872336,
+    "d7": -3.5822668135811475,
+    "d30": 5.914383666793133
   },
   "history90d": [
-    {
-      "date": "2026-04-30",
-      "close": 75784.95743624517
-    },
     {
       "date": "2026-05-01",
       "close": 76296.7964844269
@@ -368,64 +364,73 @@
     },
     {
       "date": "2026-07-28",
-      "close": 63701.35288114535
+      "close": 63673.70583727069
     },
     {
-      "date": "2026-07-28",
-      "close": 63940.45605759615
+      "date": "2026-07-29",
+      "close": 63881.94327943538
+    },
+    {
+      "date": "2026-07-29",
+      "close": 63662.31386302338
     }
   ],
   "blocks": [
     {
-      "height": 960021,
-      "id": "00000000000000000000dbc2b80bc46b6da8aaa044dd36955ff95723a91908c0",
-      "timestamp": 1785276308,
-      "txCount": 4443
+      "height": 960049,
+      "id": "00000000000000000002247aec4390309150d7c7da701cf9ca8006cda0406ff0",
+      "timestamp": 1785295895,
+      "txCount": 3982
     },
     {
-      "height": 960020,
-      "id": "000000000000000000014b6bdde724f394b8fd2d3309a4cae7aea2c00b1c3bdb",
-      "timestamp": 1785276222,
-      "txCount": 3529
+      "height": 960048,
+      "id": "000000000000000000009fba4b0be8ad0dba9f2842ee1388df52b21c205ae40d",
+      "timestamp": 1785295142,
+      "txCount": 5843
     },
     {
-      "height": 960019,
-      "id": "00000000000000000001bb7b23324f2b246f3ef773d85a4781bd3a51685b14f2",
-      "timestamp": 1785275839,
-      "txCount": 4117
+      "height": 960047,
+      "id": "000000000000000000011d9601043f2070939b6ad3ec5e70369fe3bde310787e",
+      "timestamp": 1785294934,
+      "txCount": 6296
     },
     {
-      "height": 960018,
-      "id": "000000000000000000009d109f8f705b2f05cabb6cab29752d426b7b92a63bd0",
-      "timestamp": 1785275520,
-      "txCount": 4500
+      "height": 960046,
+      "id": "000000000000000000003b87511329c9b80c88a3782c048822da01dbc1e8c3ca",
+      "timestamp": 1785294756,
+      "txCount": 4434
     },
     {
-      "height": 960017,
-      "id": "000000000000000000006679bde39c7825755e90ccfe8fc1a9c5662ab7b298f6",
-      "timestamp": 1785274084,
-      "txCount": 1
+      "height": 960045,
+      "id": "0000000000000000000210d74c6690cec54d332a956c9d7b75b9ad3e94c2786a",
+      "timestamp": 1785293759,
+      "txCount": 3311
     },
     {
-      "height": 960016,
-      "id": "000000000000000000019a44cef361ba626c0c7e9601fd62361117d2942c7cff",
-      "timestamp": 1785273596,
-      "txCount": 4007
+      "height": 960044,
+      "id": "000000000000000000000db8697b7dbe3208d3b771f8490ac4caf60afd855e94",
+      "timestamp": 1785293192,
+      "txCount": 3556
     },
     {
-      "height": 960015,
-      "id": "0000000000000000000096f24bdca205d072cb597858b373e548a654b9f7db6e",
-      "timestamp": 1785270986,
-      "txCount": 4102
+      "height": 960043,
+      "id": "00000000000000000000d3c59cc300050eef561709d2c297d05ec3a0f725cb42",
+      "timestamp": 1785291936,
+      "txCount": 5435
     },
     {
-      "height": 960014,
-      "id": "00000000000000000000df1b8d078390653572b477048c3a6b7177714ba9ca87",
-      "timestamp": 1785270724,
-      "txCount": 3671
+      "height": 960042,
+      "id": "0000000000000000000111edb67cc9633ff550ec68c989353b5fa0594f60f855",
+      "timestamp": 1785291736,
+      "txCount": 5802
     }
   ],
   "news": [
+    {
+      "title": "Coinbase wants to be Canada’s ‘everything exchange,’ but says clearer rules are needed first",
+      "link": "https://www.coindesk.com/policy/2026/07/28/coinbase-wants-to-be-canada-s-everything-exchange-but-says-clearer-rules-are-needed-first",
+      "pubDate": "Tue, 28 Jul 2026 23:50:38 +0000"
+    },
     {
       "title": "'Anything remotely dovish' from Fed could be good for bitcoin, says analyst",
       "link": "https://www.coindesk.com/markets/2026/07/28/remotely-dovish-fed-could-be-good-for-bitcoin-says-analyst",
@@ -480,11 +485,6 @@
       "title": "Binance makes fighting crypto crime more difficult, says new report",
       "link": "https://www.coindesk.com/business/2026/07/28/binance-makes-fighting-crypto-crime-more-difficult-says-new-nyt-article",
       "pubDate": "Tue, 28 Jul 2026 12:24:02 +0000"
-    },
-    {
-      "title": "Apple kept fake bitcoin wallet on App Store after $875,000 theft report, lawsuit alleges",
-      "link": "https://www.coindesk.com/business/2026/07/28/apple-kept-fake-bitcoin-wallet-on-app-store-after-usd875-000-theft-report-lawsuit-alleges",
-      "pubDate": "Tue, 28 Jul 2026 11:59:17 +0000"
     }
   ]
 }
