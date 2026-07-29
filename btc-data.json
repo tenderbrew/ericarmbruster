@@ -1,13 +1,13 @@
 {
-  "fetchedAt": "2026-07-29T19:39:42.656Z",
+  "fetchedAt": "2026-07-29T22:10:31.411Z",
   "price": {
-    "usd": 63882,
-    "time": 1785353710
+    "usd": 63840,
+    "time": 1785362708
   },
   "moves": {
-    "d1": 0.00008878966686332035,
-    "d7": -3.321964661516097,
-    "d30": 6.200324241125088
+    "d1": -0.06565748830136275,
+    "d7": -3.385526814927331,
+    "d30": 6.1305015427417064
   },
   "history90d": [
     {
@@ -372,60 +372,65 @@
     },
     {
       "date": "2026-07-29",
-      "close": 63947.435067041566
+      "close": 63930.8610365125
     }
   ],
   "blocks": [
     {
-      "height": 960138,
-      "id": "0000000000000000000025166ca429c7d408e3b2dc860ae47ac146942b78dedf",
-      "timestamp": 1785353734,
-      "txCount": 3802
+      "height": 960156,
+      "id": "00000000000000000000c45622db769d0803a5f10ed4cd7aee6faf7d09ac9684",
+      "timestamp": 1785362991,
+      "txCount": 6927
     },
     {
-      "height": 960137,
-      "id": "0000000000000000000103849df65da269de1a7ce69df36f7df0d18f5bc34e8c",
-      "timestamp": 1785353699,
-      "txCount": 4251
+      "height": 960155,
+      "id": "00000000000000000001e357d50d9963dd6099a044dd9113872c84714e83efe9",
+      "timestamp": 1785363212,
+      "txCount": 4487
     },
     {
-      "height": 960136,
-      "id": "00000000000000000000038aa10680d85e77040c415d2fe978b825d691db62d5",
-      "timestamp": 1785352238,
-      "txCount": 3542
+      "height": 960154,
+      "id": "00000000000000000001192d40a9c1dc46defce9213f0ca28a28421a2f36e6ce",
+      "timestamp": 1785362522,
+      "txCount": 3986
     },
     {
-      "height": 960135,
-      "id": "000000000000000000016bc0272936682b37347097d158263d3ae8764c730ed5",
-      "timestamp": 1785351928,
-      "txCount": 4206
+      "height": 960153,
+      "id": "00000000000000000001706e7b07703bef4f0dccd148358787437612b55bacf3",
+      "timestamp": 1785362232,
+      "txCount": 4306
     },
     {
-      "height": 960134,
-      "id": "00000000000000000000d1323cd68374317711708aea8ad1f6cb9f5255ef9ac6",
-      "timestamp": 1785351423,
-      "txCount": 4500
+      "height": 960152,
+      "id": "000000000000000000002c183dc4bf875ccc550215178681e0d932edf7e27673",
+      "timestamp": 1785362431,
+      "txCount": 4363
     },
     {
-      "height": 960133,
-      "id": "0000000000000000000120bfddc7995c1db4cbe3928ea18d6d2f09da6b228f60",
-      "timestamp": 1785350929,
-      "txCount": 3856
+      "height": 960151,
+      "id": "0000000000000000000204001e09cd14afcfd9bfc0183b79dc515b723e15413c",
+      "timestamp": 1785362115,
+      "txCount": 3226
     },
     {
-      "height": 960132,
-      "id": "000000000000000000017a2a6c55dea35da1e00f918a766cd4d1935ef9054f21",
-      "timestamp": 1785347757,
-      "txCount": 4699
+      "height": 960150,
+      "id": "00000000000000000001c52969b436512d0415a9bc46bc15a4b2f564af602c2d",
+      "timestamp": 1785361909,
+      "txCount": 4021
     },
     {
-      "height": 960131,
-      "id": "00000000000000000000e05f80f21771b223f8fcd77e858ef415726f6d58aeee",
-      "timestamp": 1785347602,
-      "txCount": 3862
+      "height": 960149,
+      "id": "0000000000000000000033f983a02e60eb6f85622ff04992a5a19a33154154ed",
+      "timestamp": 1785361716,
+      "txCount": 2231
     }
   ],
   "news": [
+    {
+      "title": "Robinhood slides 4% despite earnings beat as crypto revenue cools",
+      "link": "https://www.coindesk.com/markets/2026/07/29/robinhood-slides-4-despite-earnings-beat-as-crypto-revenue-cools",
+      "pubDate": "Wed, 29 Jul 2026 20:40:43 +0000"
+    },
     {
       "title": "As crypto perpetual futures boom, Ethereum’s role is shifting",
       "link": "https://www.coindesk.com/tech/2026/07/29/as-crypto-perpetual-futures-boom-ethereum-s-role-is-shifting",
@@ -480,11 +485,6 @@
       "title": "BNY targets $8.6 trillion transfer agency market on blockchain rails",
       "link": "https://www.coindesk.com/business/2026/07/29/bny-targets-usd8-6-trillion-transfer-agency-market-on-blockchain-rails",
       "pubDate": "Wed, 29 Jul 2026 12:18:58 +0000"
-    },
-    {
-      "title": "3 reasons Wednesday's Fed meeting is pivotal for BTC",
-      "link": "https://www.coindesk.com/daybook-us/2026/07/29/3-reasons-wednesday-s-fed-meeting-is-pivotal-for-btc",
-      "pubDate": "Wed, 29 Jul 2026 11:15:00 +0000"
     }
   ]
 }
