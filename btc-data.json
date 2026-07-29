@@ -1,13 +1,13 @@
 {
-  "fetchedAt": "2026-07-29T16:37:31.870Z",
+  "fetchedAt": "2026-07-29T19:39:42.656Z",
   "price": {
-    "usd": 63865,
-    "time": 1785342908
+    "usd": 63882,
+    "time": 1785353710
   },
   "moves": {
-    "d1": -0.026522799034567335,
-    "d7": -3.3476921998015996,
-    "d30": 6.172062672731804
+    "d1": 0.00008878966686332035,
+    "d7": -3.321964661516097,
+    "d30": 6.200324241125088
   },
   "history90d": [
     {
@@ -372,60 +372,70 @@
     },
     {
       "date": "2026-07-29",
-      "close": 63863.148224954646
+      "close": 63947.435067041566
     }
   ],
   "blocks": [
     {
-      "height": 960129,
-      "id": "000000000000000000016792d9c1460bfa4db07da3b724db76c3dd0640ca5754",
-      "timestamp": 1785342267,
-      "txCount": 3924
+      "height": 960138,
+      "id": "0000000000000000000025166ca429c7d408e3b2dc860ae47ac146942b78dedf",
+      "timestamp": 1785353734,
+      "txCount": 3802
     },
     {
-      "height": 960128,
-      "id": "0000000000000000000084bd8092a07bc89245c2bf05f2cf75851bcc5ef92f70",
-      "timestamp": 1785341883,
-      "txCount": 3912
+      "height": 960137,
+      "id": "0000000000000000000103849df65da269de1a7ce69df36f7df0d18f5bc34e8c",
+      "timestamp": 1785353699,
+      "txCount": 4251
     },
     {
-      "height": 960127,
-      "id": "0000000000000000000091c72779c83d76dfa8149e950f3a5287377a9708d5c1",
-      "timestamp": 1785339728,
-      "txCount": 5739
+      "height": 960136,
+      "id": "00000000000000000000038aa10680d85e77040c415d2fe978b825d691db62d5",
+      "timestamp": 1785352238,
+      "txCount": 3542
     },
     {
-      "height": 960126,
-      "id": "00000000000000000001398d564782dd39efd8edfd72f45b011ffe245da04316",
-      "timestamp": 1785339572,
-      "txCount": 5372
+      "height": 960135,
+      "id": "000000000000000000016bc0272936682b37347097d158263d3ae8764c730ed5",
+      "timestamp": 1785351928,
+      "txCount": 4206
     },
     {
-      "height": 960125,
-      "id": "000000000000000000012a2afc60a7e52bf32412967f4fa197b9afbe768b09c8",
-      "timestamp": 1785339498,
-      "txCount": 6873
+      "height": 960134,
+      "id": "00000000000000000000d1323cd68374317711708aea8ad1f6cb9f5255ef9ac6",
+      "timestamp": 1785351423,
+      "txCount": 4500
     },
     {
-      "height": 960124,
-      "id": "000000000000000000020bc01180e72889ca3cd23b5dff402594683e92878bb1",
-      "timestamp": 1785339392,
-      "txCount": 6165
+      "height": 960133,
+      "id": "0000000000000000000120bfddc7995c1db4cbe3928ea18d6d2f09da6b228f60",
+      "timestamp": 1785350929,
+      "txCount": 3856
     },
     {
-      "height": 960123,
-      "id": "000000000000000000014d4bab713c30d85e6e7aa37108c3b4d74542c36fcaba",
-      "timestamp": 1785339281,
-      "txCount": 4698
+      "height": 960132,
+      "id": "000000000000000000017a2a6c55dea35da1e00f918a766cd4d1935ef9054f21",
+      "timestamp": 1785347757,
+      "txCount": 4699
     },
     {
-      "height": 960122,
-      "id": "00000000000000000000891cb78026e9e58fb054ebfb3f6e8f3b28b282576267",
-      "timestamp": 1785338784,
-      "txCount": 4201
+      "height": 960131,
+      "id": "00000000000000000000e05f80f21771b223f8fcd77e858ef415726f6d58aeee",
+      "timestamp": 1785347602,
+      "txCount": 3862
     }
   ],
   "news": [
+    {
+      "title": "As crypto perpetual futures boom, Ethereum’s role is shifting",
+      "link": "https://www.coindesk.com/tech/2026/07/29/as-crypto-perpetual-futures-boom-ethereum-s-role-is-shifting",
+      "pubDate": "Wed, 29 Jul 2026 18:00:00 +0000"
+    },
+    {
+      "title": "Fed holds rates steady, extending pause as markets await Kevin Warsh's policy roadmap",
+      "link": "https://www.coindesk.com/markets/2026/07/29/fomc-hold-fed-holds-rates-steady-extending-pause-as-markets-await-warsh-s-policy-roadmap",
+      "pubDate": "Wed, 29 Jul 2026 17:58:33 +0000"
+    },
     {
       "title": "The traditional 9-to-5 banking day is officially dying, says Morgan Stanley execs",
       "link": "https://www.coindesk.com/markets/2026/07/29/morgan-stanley-execs-admit-the-traditional-9-to-5-banking-day-is-officially-dying",
@@ -475,16 +485,6 @@
       "title": "3 reasons Wednesday's Fed meeting is pivotal for BTC",
       "link": "https://www.coindesk.com/daybook-us/2026/07/29/3-reasons-wednesday-s-fed-meeting-is-pivotal-for-btc",
       "pubDate": "Wed, 29 Jul 2026 11:15:00 +0000"
-    },
-    {
-      "title": "Bitcoin steadies above $64,000 as crypto looks to Fed interest-rate decision",
-      "link": "https://www.coindesk.com/markets/2026/07/29/bitcoin-steadies-above-usd64-000-as-crypto-looks-to-fed-interest-rate-decision",
-      "pubDate": "Wed, 29 Jul 2026 10:34:18 +0000"
-    },
-    {
-      "title": "Binance offers gold and silver options after commodity futures pull in billions in daily volume",
-      "link": "https://www.coindesk.com/markets/2026/07/29/binance-offers-gold-and-silver-options-after-commodity-futures-pull-in-billions-in-daily-volume",
-      "pubDate": "Wed, 29 Jul 2026 10:00:00 +0000"
     }
   ]
 }
