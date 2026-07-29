@@ -1,13 +1,13 @@
 {
-  "fetchedAt": "2026-07-29T09:06:06.873Z",
+  "fetchedAt": "2026-07-29T11:32:09.136Z",
   "price": {
-    "usd": 64350,
-    "time": 1785315908
+    "usd": 64431,
+    "time": 1785324606
   },
   "moves": {
-    "d1": 0.7326901727413349,
-    "d7": -2.613700666362373,
-    "d30": 6.978348594539918
+    "d1": 0.8594865659657724,
+    "d7": -2.491116513354996,
+    "d30": 7.113006655707865
   },
   "history90d": [
     {
@@ -372,60 +372,85 @@
     },
     {
       "date": "2026-07-29",
-      "close": 64373.600236603466
+      "close": 64448.089007088194
     }
   ],
   "blocks": [
     {
-      "height": 960086,
-      "id": "0000000000000000000192e33f82097db28d38419d9b835ecdcd69135e177958",
-      "timestamp": 1785315057,
-      "txCount": 1936
+      "height": 960099,
+      "id": "0000000000000000000152e3c06cd4b2b3b2e18135e51a96b43c110c7221eb3e",
+      "timestamp": 1785324620,
+      "txCount": 6517
     },
     {
-      "height": 960085,
-      "id": "00000000000000000000f8ee2b009ae827305f8237a16bd38829e1709b6d882b",
-      "timestamp": 1785314430,
-      "txCount": 5195
+      "height": 960098,
+      "id": "000000000000000000022dfb866822b092cee3f9550713f306eea5554e071f07",
+      "timestamp": 1785324556,
+      "txCount": 4471
     },
     {
-      "height": 960084,
-      "id": "000000000000000000000d4eebe0e0c922d1ca475869479cadc9e626328e1af7",
-      "timestamp": 1785314087,
-      "txCount": 5408
+      "height": 960097,
+      "id": "000000000000000000022a21e2a9d47e04724fb074979d0ec1f666362713dbbe",
+      "timestamp": 1785323855,
+      "txCount": 4104
     },
     {
-      "height": 960083,
-      "id": "00000000000000000000d3c76688851f45d3f4554dc3c6eec21d181cd077ffd6",
-      "timestamp": 1785313668,
-      "txCount": 4649
+      "height": 960096,
+      "id": "00000000000000000001a99d72762e95ec25a3437720b0f998a255d96d936dfe",
+      "timestamp": 1785323300,
+      "txCount": 5517
     },
     {
-      "height": 960082,
-      "id": "0000000000000000000077a33c1d9a45b8097e18adc6f855e61d8280edc9d050",
-      "timestamp": 1785313212,
-      "txCount": 5935
+      "height": 960095,
+      "id": "00000000000000000000ce449f5c61643c9c0e47ed31debecf4ae34430a6aa0e",
+      "timestamp": 1785323257,
+      "txCount": 3982
     },
     {
-      "height": 960081,
-      "id": "0000000000000000000175461d2affd5ee673467dfbefeb464d729f73b983b2a",
-      "timestamp": 1785312857,
-      "txCount": 4336
+      "height": 960094,
+      "id": "000000000000000000010008db91c189a7ec232723327bb769c9b8806c80c3ab",
+      "timestamp": 1785323016,
+      "txCount": 3119
     },
     {
-      "height": 960080,
-      "id": "00000000000000000000097fc22d1bd91c061ad11b07eb0bfa4c99b9b05a7aba",
-      "timestamp": 1785312542,
-      "txCount": 4369
+      "height": 960093,
+      "id": "00000000000000000000b77c07fa294f034eea8489df3459d586888a2813f2b5",
+      "timestamp": 1785323115,
+      "txCount": 4579
     },
     {
-      "height": 960079,
-      "id": "00000000000000000000a0fb3abb710a31775cc79165c9066f157d9d37faea31",
-      "timestamp": 1785311092,
-      "txCount": 4834
+      "height": 960092,
+      "id": "00000000000000000000f847f61493ac3c40f231f4526c558983ffc07607ecc7",
+      "timestamp": 1785319239,
+      "txCount": 5808
     }
   ],
   "news": [
+    {
+      "title": "3 reasons Wednesday's Fed meeting is pivotal for BTC",
+      "link": "https://www.coindesk.com/daybook-us/2026/07/29/3-reasons-wednesday-s-fed-meeting-is-pivotal-for-btc",
+      "pubDate": "Wed, 29 Jul 2026 11:15:00 +0000"
+    },
+    {
+      "title": "Bitcoin steadies above $64,000 as crypto looks to Fed interest-rate decision",
+      "link": "https://www.coindesk.com/markets/2026/07/29/bitcoin-steadies-above-usd64-000-as-crypto-looks-to-fed-interest-rate-decision",
+      "pubDate": "Wed, 29 Jul 2026 10:34:18 +0000"
+    },
+    {
+      "title": "Binance offers gold and silver options after commodity futures pull in billions in daily volume",
+      "link": "https://www.coindesk.com/markets/2026/07/29/binance-offers-gold-and-silver-options-after-commodity-futures-pull-in-billions-in-daily-volume",
+      "pubDate": "Wed, 29 Jul 2026 10:00:00 +0000"
+    },
+    {
+      "title": "Ionic Digital jumps 26% in Nasdaq debut, giving Celsius Network claimholders an exit route",
+      "link": "https://www.coindesk.com/business/2026/07/29/ionic-digital-jumps-26-in-nasdaq-debut-giving-celsius-network-claimholders-an-exit-route",
+      "pubDate": "Wed, 29 Jul 2026 09:22:24 +0000"
+    },
+    {
+      "title": "Russia charges Telegram founder Pavel Durov with aiding terrorism",
+      "link": "https://www.coindesk.com/policy/2026/07/29/russia-charges-telegram-founder-pavel-durov-with-aiding-terrorism",
+      "pubDate": "Wed, 29 Jul 2026 09:10:54 +0000"
+    },
     {
       "title": "SpaceX is a battleground Solana must win",
       "link": "https://www.coindesk.com/opinion/2026/07/29/spacex-is-a-battleground-solana-must-win",
@@ -460,31 +485,6 @@
       "title": "'Anything remotely dovish' from Fed could be good for bitcoin, says analyst",
       "link": "https://www.coindesk.com/markets/2026/07/28/remotely-dovish-fed-could-be-good-for-bitcoin-says-analyst",
       "pubDate": "Tue, 28 Jul 2026 20:23:31 +0000"
-    },
-    {
-      "title": "Ondo drops tokenized asset blockchain plans for private, high-speed trading network",
-      "link": "https://www.coindesk.com/business/2026/07/28/ondo-drops-tokenized-asset-blockchain-plans-for-private-high-speed-trading-network",
-      "pubDate": "Tue, 28 Jul 2026 19:44:26 +0000"
-    },
-    {
-      "title": "Wall Street veteran Don Wilson says regulators are getting perps all wrong",
-      "link": "https://www.coindesk.com/markets/2026/07/28/wall-street-veteran-don-wilson-says-regulators-are-getting-crypto-s-biggest-trading-innovation-all-wrong",
-      "pubDate": "Tue, 28 Jul 2026 17:23:35 +0000"
-    },
-    {
-      "title": "BlackRock, Fidelity, other Wall Street giants back the Clarity Act",
-      "link": "https://www.coindesk.com/policy/2026/07/28/blackrock-fidelity-other-wall-street-giants-back-the-clarity-act",
-      "pubDate": "Tue, 28 Jul 2026 16:08:19 +0000"
-    },
-    {
-      "title": "Ethereum startup EthSystems bets privacy is key to getting banks on public blockchains",
-      "link": "https://www.coindesk.com/tech/2026/07/28/ethereum-startup-ethsystems-bets-privacy-is-key-to-getting-banks-on-public-blockchains",
-      "pubDate": "Tue, 28 Jul 2026 15:46:33 +0000"
-    },
-    {
-      "title": "Russia outlines new digital depository rules ahead of fall crypto framework roll-out",
-      "link": "https://www.coindesk.com/policy/2026/07/28/russia-outlines-new-digital-depository-rules-ahead-of-fall-crypto-framework-roll-out",
-      "pubDate": "Tue, 28 Jul 2026 14:49:50 +0000"
     }
   ]
 }
