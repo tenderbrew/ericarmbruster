@@ -1,13 +1,13 @@
 {
-  "fetchedAt": "2026-07-30T19:47:38.987Z",
+  "fetchedAt": "2026-07-30T22:16:50.338Z",
   "price": {
-    "usd": 64796,
-    "time": 1785440411
+    "usd": 64891,
+    "time": 1785449409
   },
   "moves": {
-    "d1": 1.375858664252827,
-    "d7": -0.36446416703207474,
-    "d30": 10.637397504727698
+    "d1": 1.5244898540346608,
+    "d7": -0.2183845339662649,
+    "d30": 10.799607406001677
   },
   "history90d": [
     {
@@ -372,60 +372,70 @@
     },
     {
       "date": "2026-07-30",
-      "close": 64786.58540573101
+      "close": 64867.43302310213
     }
   ],
   "blocks": [
     {
-      "height": 960300,
-      "id": "0000000000000000000213fec6801df8384373ebcf60f8ba9fd290c645f8205d",
-      "timestamp": 1785440560,
-      "txCount": 6058
+      "height": 960320,
+      "id": "000000000000000000016a2a76688907cf572811d6a3127f73a92782f5f5728b",
+      "timestamp": 1785449957,
+      "txCount": 3940
     },
     {
-      "height": 960299,
-      "id": "00000000000000000001c3b82a7071c301455ea9738d7d60b0af2ab3307be51e",
-      "timestamp": 1785440054,
-      "txCount": 4457
+      "height": 960319,
+      "id": "000000000000000000009f6f189f679e5049fab04097e136ee64c0e74aca4b85",
+      "timestamp": 1785449040,
+      "txCount": 4609
     },
     {
-      "height": 960298,
-      "id": "000000000000000000014e541ef35e1c55d243921a7c02cf9b19497ce898e020",
-      "timestamp": 1785439560,
-      "txCount": 4387
+      "height": 960318,
+      "id": "00000000000000000001672c7d0d718ecbd7d79521614aa00dc8bc2ca312e411",
+      "timestamp": 1785448493,
+      "txCount": 4317
     },
     {
-      "height": 960297,
-      "id": "0000000000000000000191de5732b036ae223286ca1a5f87da8bea426e12e098",
-      "timestamp": 1785438976,
-      "txCount": 4591
+      "height": 960317,
+      "id": "00000000000000000001c703cad78a5d891ec966915c99310abf499493d476db",
+      "timestamp": 1785447324,
+      "txCount": 5466
     },
     {
-      "height": 960296,
-      "id": "000000000000000000005154e675cfb4d140151c78e8a155626ef0846f8ba9d7",
-      "timestamp": 1785438669,
-      "txCount": 4576
+      "height": 960316,
+      "id": "0000000000000000000206fda42195e6582c3ffdfc69317ee5eabd3a2929640d",
+      "timestamp": 1785446786,
+      "txCount": 4814
     },
     {
-      "height": 960295,
-      "id": "00000000000000000000bb38b540fef598d87e44e7453a300b78705f26e2713c",
-      "timestamp": 1785438298,
-      "txCount": 4354
+      "height": 960315,
+      "id": "00000000000000000000c4dd83a223d8a32c9904c787948fd42c88c30739553a",
+      "timestamp": 1785445736,
+      "txCount": 4776
     },
     {
-      "height": 960294,
-      "id": "000000000000000000021c3e8bbc4a94c029e5df2b88750946fdedb1f6b31128",
-      "timestamp": 1785437160,
-      "txCount": 5816
+      "height": 960314,
+      "id": "0000000000000000000217608ee42a2c0b8a65aaa2d9188da1f6cfe0c5589487",
+      "timestamp": 1785445246,
+      "txCount": 5714
     },
     {
-      "height": 960293,
-      "id": "00000000000000000001af2e3aaad383ed4b2e94e797e5a03b17ab0b7fcc2464",
-      "timestamp": 1785437052,
-      "txCount": 3011
+      "height": 960313,
+      "id": "00000000000000000001a4162b9ffa17314a59116178040075b550700e76dee4",
+      "timestamp": 1785444826,
+      "txCount": 1
     }
   ],
   "news": [
+    {
+      "title": "Strategy books $8.2 billion Q2 loss on bitcoin price decline",
+      "link": "https://www.coindesk.com/markets/2026/07/30/strategy-books-usd8-2-billion-second-quarter-loss-on-bitcoin-price-decline",
+      "pubDate": "Thu, 30 Jul 2026 20:32:13 +0000"
+    },
+    {
+      "title": "Coinbase sinks 5% after missing second quarter revenue estimates",
+      "link": "https://www.coindesk.com/markets/2026/07/30/coinbase-sinks-5-after-missing-q2-revenue-estimates",
+      "pubDate": "Thu, 30 Jul 2026 20:18:33 +0000"
+    },
     {
       "title": "Global banks test tokenized money for cross-border payments in $1 million BIS pilot",
       "link": "https://www.coindesk.com/business/2026/07/30/global-banks-test-tokenized-money-for-cross-border-payments-in-usd1-million-bis-pilot",
@@ -472,19 +482,9 @@
       "pubDate": "Thu, 30 Jul 2026 13:35:51 +0000"
     },
     {
-      "title": "Telegram faces terror-related legal action in Australia one day after founder is charged by Russia",
-      "link": "https://www.coindesk.com/policy/2026/07/30/telegram-faces-terror-related-legal-action-in-australia-one-day-after-founder-is-charged-by-russia",
-      "pubDate": "Thu, 30 Jul 2026 12:09:18 +0000"
-    },
-    {
-      "title": "Bitcoin ETFs on track for the smallest monthly inflows ever",
-      "link": "https://www.coindesk.com/daybook-us/2026/07/30/bitcoin-etfs-on-track-for-the-smallest-monthly-inflows-ever",
-      "pubDate": "Thu, 30 Jul 2026 11:18:34 +0000"
-    },
-    {
-      "title": "South Korea plans to tax crypto gains over $1,740 as political battle moves to parliament",
-      "link": "https://www.coindesk.com/policy/2026/07/30/south-korea-s-long-delayed-crypto-tax-set-to-start-in-2027",
-      "pubDate": "Thu, 30 Jul 2026 11:17:56 +0000"
+      "title": "Everything is becoming a perp",
+      "link": "https://www.coindesk.com/opinion/2026/07/28/everything-is-becoming-a-perp",
+      "pubDate": "Thu, 30 Jul 2026 13:00:00 +0000"
     }
   ]
 }
