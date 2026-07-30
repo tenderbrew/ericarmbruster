@@ -1,13 +1,13 @@
 {
-  "fetchedAt": "2026-07-30T14:28:40.307Z",
+  "fetchedAt": "2026-07-30T16:45:14.444Z",
   "price": {
-    "usd": 64682,
-    "time": 1785421508
+    "usd": 64810,
+    "time": 1785429609
   },
   "moves": {
-    "d1": 1.1975012365146087,
-    "d7": -0.5397597267110421,
-    "d30": 10.442745623198913
+    "d1": 1.397762208010156,
+    "d7": -0.3429366421592195,
+    "d30": 10.661302121757533
   },
   "history90d": [
     {
@@ -372,60 +372,75 @@
     },
     {
       "date": "2026-07-30",
-      "close": 64706.178200624374
+      "close": 64744.725717010995
     }
   ],
   "blocks": [
     {
-      "height": 960263,
-      "id": "00000000000000000001ff51a0651ba174917a3797e044ebae8fcb8260565a46",
-      "timestamp": 1785421158,
-      "txCount": 3838
+      "height": 960281,
+      "id": "00000000000000000001fe4c8a0f7f57bd71acfcd656e9c6d759a9e3a38745e8",
+      "timestamp": 1785429787,
+      "txCount": 4249
     },
     {
-      "height": 960262,
-      "id": "0000000000000000000143191a50f8974417dc94619dfa07a6b58436f22388ec",
-      "timestamp": 1785420746,
-      "txCount": 3905
+      "height": 960280,
+      "id": "00000000000000000001a490e20bc30424f05b871239d688a4baef04bcc7f821",
+      "timestamp": 1785428555,
+      "txCount": 6309
     },
     {
-      "height": 960261,
-      "id": "00000000000000000001f21933f75e51d0533eea7ef902192e01f87732a81b30",
-      "timestamp": 1785419459,
-      "txCount": 3972
+      "height": 960279,
+      "id": "000000000000000000012a497b6e6cb5094227375ad2c2c502f8b2b40a0427fe",
+      "timestamp": 1785428521,
+      "txCount": 4583
     },
     {
-      "height": 960260,
-      "id": "000000000000000000010b7c5bf1bb46590bd8d6399e157857754a2f5ad336b9",
-      "timestamp": 1785418107,
-      "txCount": 4314
+      "height": 960278,
+      "id": "00000000000000000001af5d839e7090a4610f2424f9f34f9e8a27cfaf4dcd42",
+      "timestamp": 1785428350,
+      "txCount": 4626
     },
     {
-      "height": 960259,
-      "id": "00000000000000000001dfcd39c42f46ae48b0c97ebddfae3e9ff94963a7077e",
-      "timestamp": 1785415884,
-      "txCount": 3181
+      "height": 960277,
+      "id": "00000000000000000000a7b613bfcafcbf914f1f093ef90ca2c87f778b3bd07c",
+      "timestamp": 1785427847,
+      "txCount": 5589
     },
     {
-      "height": 960258,
-      "id": "00000000000000000000a5ea8861570ed551f77ed3cc0bddc3db3958d2700b44",
-      "timestamp": 1785415534,
-      "txCount": 4099
+      "height": 960276,
+      "id": "000000000000000000003b7109575e401b69a6eb1514b1d54b70480290fd85af",
+      "timestamp": 1785427277,
+      "txCount": 4490
     },
     {
-      "height": 960257,
-      "id": "00000000000000000002056d5d82bf01db83412bef0b1e6e8cb644a1f74788ee",
-      "timestamp": 1785415063,
-      "txCount": 4164
+      "height": 960275,
+      "id": "000000000000000000020507fc8d1fd6087ee5d743e1f23e20f724fb0541c194",
+      "timestamp": 1785426837,
+      "txCount": 3719
     },
     {
-      "height": 960256,
-      "id": "00000000000000000001d9c2c50c68482673c3c4f8906b587645bac2e65bb2b4",
-      "timestamp": 1785414270,
-      "txCount": 3775
+      "height": 960274,
+      "id": "00000000000000000000386bfd6bc36f3de79b046ad441d4c7b3ddf6c01d4c4c",
+      "timestamp": 1785426169,
+      "txCount": 7304
     }
   ],
   "news": [
+    {
+      "title": "Ondo Finance weighs acquisition worth up to $500 million",
+      "link": "https://www.coindesk.com/business/2026/07/29/ondo-finance-weighs-acquisition-worth-up-to-usd500-million",
+      "pubDate": "Thu, 30 Jul 2026 16:04:16 +0000"
+    },
+    {
+      "title": "Crypto for Advisors: Is the Clarity Act dead?",
+      "link": "https://www.coindesk.com/coindesk-indices/2026/07/30/crypto-for-advisors-is-the-clarity-act-dead",
+      "pubDate": "Thu, 30 Jul 2026 15:00:49 +0000"
+    },
+    {
+      "title": "CME's Duffy warns an overlooked tax risk looms over U.S. perpetual futures",
+      "link": "https://www.coindesk.com/policy/2026/07/30/cme-s-duffy-warns-an-overlooked-tax-risk-looms-over-u-s-perpetual-futures",
+      "pubDate": "Thu, 30 Jul 2026 14:33:02 +0000"
+    },
     {
       "title": "The economics behind Aave proposal to ditch 6 chains that earn loose change in revenue",
       "link": "https://www.coindesk.com/tech/2026/07/30/the-economics-behind-the-aave-proposal-to-ditch-6-chains-that-earn-chump-change",
@@ -447,6 +462,11 @@
       "pubDate": "Thu, 30 Jul 2026 13:52:37 +0000"
     },
     {
+      "title": "Fake staking site drains $8.5 million in XRP from dozens of investors promising easy yield",
+      "link": "https://www.coindesk.com/business/2026/07/30/fake-staking-site-drains-usd8-5-million-in-xrp-from-dozens-of-investors-promising-easy-yield",
+      "pubDate": "Thu, 30 Jul 2026 13:35:51 +0000"
+    },
+    {
       "title": "Telegram faces terror-related legal action in Australia one day after founder is charged by Russia",
       "link": "https://www.coindesk.com/policy/2026/07/30/telegram-faces-terror-related-legal-action-in-australia-one-day-after-founder-is-charged-by-russia",
       "pubDate": "Thu, 30 Jul 2026 12:09:18 +0000"
@@ -465,26 +485,6 @@
       "title": "Crypto's resilience tested as oil rises after Iran strikes, Fed signals rates could still rise",
       "link": "https://www.coindesk.com/markets/2026/07/30/crypto-s-resilience-tested-as-oil-rises-after-iran-strikes-fed-signals-rates-could-still-rise",
       "pubDate": "Thu, 30 Jul 2026 10:56:24 +0000"
-    },
-    {
-      "title": "BitRiver founder charged in Russia with $12.5 million fraud",
-      "link": "https://www.coindesk.com/policy/2026/07/30/bitriver-founder-charged-in-russia-with-usd12-5-million-fraud",
-      "pubDate": "Thu, 30 Jul 2026 10:02:33 +0000"
-    },
-    {
-      "title": "Crypto exchange Luno cuts 20% of staff amid automation push and retail trading slumps",
-      "link": "https://www.coindesk.com/business/2026/07/30/crypto-exchange-luno-cuts-20-of-staff-amid-automation-push-and-retail-trading-slumps",
-      "pubDate": "Thu, 30 Jul 2026 09:54:18 +0000"
-    },
-    {
-      "title": "Live updates: Bitcoin rises above $64,000 as Microsoft's AI payoff lifts stocks",
-      "link": "https://www.coindesk.com/tech/2026/07/30/live-updates-bitcoin-holds-near-usd64-000-as-microsoft-s-ai-payoff-lifts-stocks",
-      "pubDate": "Thu, 30 Jul 2026 09:01:13 +0000"
-    },
-    {
-      "title": "Bitcoin and ether markets are ruled by perps. SpaceX showed how far their influence can go",
-      "link": "https://www.coindesk.com/markets/2026/07/30/bitcoin-and-ether-markets-are-ruled-by-perps-spacex-showed-how-far-their-influence-can-go",
-      "pubDate": "Thu, 30 Jul 2026 09:00:00 +0000"
     }
   ]
 }
