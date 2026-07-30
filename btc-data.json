@@ -1,13 +1,13 @@
 {
-  "fetchedAt": "2026-07-30T16:45:14.444Z",
+  "fetchedAt": "2026-07-30T19:47:38.987Z",
   "price": {
-    "usd": 64810,
-    "time": 1785429609
+    "usd": 64796,
+    "time": 1785440411
   },
   "moves": {
-    "d1": 1.397762208010156,
-    "d7": -0.3429366421592195,
-    "d30": 10.661302121757533
+    "d1": 1.375858664252827,
+    "d7": -0.36446416703207474,
+    "d30": 10.637397504727698
   },
   "history90d": [
     {
@@ -372,63 +372,68 @@
     },
     {
       "date": "2026-07-30",
-      "close": 64744.725717010995
+      "close": 64786.58540573101
     }
   ],
   "blocks": [
     {
-      "height": 960281,
-      "id": "00000000000000000001fe4c8a0f7f57bd71acfcd656e9c6d759a9e3a38745e8",
-      "timestamp": 1785429787,
-      "txCount": 4249
+      "height": 960300,
+      "id": "0000000000000000000213fec6801df8384373ebcf60f8ba9fd290c645f8205d",
+      "timestamp": 1785440560,
+      "txCount": 6058
     },
     {
-      "height": 960280,
-      "id": "00000000000000000001a490e20bc30424f05b871239d688a4baef04bcc7f821",
-      "timestamp": 1785428555,
-      "txCount": 6309
+      "height": 960299,
+      "id": "00000000000000000001c3b82a7071c301455ea9738d7d60b0af2ab3307be51e",
+      "timestamp": 1785440054,
+      "txCount": 4457
     },
     {
-      "height": 960279,
-      "id": "000000000000000000012a497b6e6cb5094227375ad2c2c502f8b2b40a0427fe",
-      "timestamp": 1785428521,
-      "txCount": 4583
+      "height": 960298,
+      "id": "000000000000000000014e541ef35e1c55d243921a7c02cf9b19497ce898e020",
+      "timestamp": 1785439560,
+      "txCount": 4387
     },
     {
-      "height": 960278,
-      "id": "00000000000000000001af5d839e7090a4610f2424f9f34f9e8a27cfaf4dcd42",
-      "timestamp": 1785428350,
-      "txCount": 4626
+      "height": 960297,
+      "id": "0000000000000000000191de5732b036ae223286ca1a5f87da8bea426e12e098",
+      "timestamp": 1785438976,
+      "txCount": 4591
     },
     {
-      "height": 960277,
-      "id": "00000000000000000000a7b613bfcafcbf914f1f093ef90ca2c87f778b3bd07c",
-      "timestamp": 1785427847,
-      "txCount": 5589
+      "height": 960296,
+      "id": "000000000000000000005154e675cfb4d140151c78e8a155626ef0846f8ba9d7",
+      "timestamp": 1785438669,
+      "txCount": 4576
     },
     {
-      "height": 960276,
-      "id": "000000000000000000003b7109575e401b69a6eb1514b1d54b70480290fd85af",
-      "timestamp": 1785427277,
-      "txCount": 4490
+      "height": 960295,
+      "id": "00000000000000000000bb38b540fef598d87e44e7453a300b78705f26e2713c",
+      "timestamp": 1785438298,
+      "txCount": 4354
     },
     {
-      "height": 960275,
-      "id": "000000000000000000020507fc8d1fd6087ee5d743e1f23e20f724fb0541c194",
-      "timestamp": 1785426837,
-      "txCount": 3719
+      "height": 960294,
+      "id": "000000000000000000021c3e8bbc4a94c029e5df2b88750946fdedb1f6b31128",
+      "timestamp": 1785437160,
+      "txCount": 5816
     },
     {
-      "height": 960274,
-      "id": "00000000000000000000386bfd6bc36f3de79b046ad441d4c7b3ddf6c01d4c4c",
-      "timestamp": 1785426169,
-      "txCount": 7304
+      "height": 960293,
+      "id": "00000000000000000001af2e3aaad383ed4b2e94e797e5a03b17ab0b7fcc2464",
+      "timestamp": 1785437052,
+      "txCount": 3011
     }
   ],
   "news": [
     {
+      "title": "Global banks test tokenized money for cross-border payments in $1 million BIS pilot",
+      "link": "https://www.coindesk.com/business/2026/07/30/global-banks-test-tokenized-money-for-cross-border-payments-in-usd1-million-bis-pilot",
+      "pubDate": "Thu, 30 Jul 2026 17:34:03 +0000"
+    },
+    {
       "title": "Ondo Finance weighs acquisition worth up to $500 million",
-      "link": "https://www.coindesk.com/business/2026/07/29/ondo-finance-weighs-acquisition-worth-up-to-usd500-million",
+      "link": "https://www.coindesk.com/business/2026/07/30/ondo-finance-weighs-acquisition-worth-up-to-usd500-million",
       "pubDate": "Thu, 30 Jul 2026 16:04:16 +0000"
     },
     {
@@ -480,11 +485,6 @@
       "title": "South Korea plans to tax crypto gains over $1,740 as political battle moves to parliament",
       "link": "https://www.coindesk.com/policy/2026/07/30/south-korea-s-long-delayed-crypto-tax-set-to-start-in-2027",
       "pubDate": "Thu, 30 Jul 2026 11:17:56 +0000"
-    },
-    {
-      "title": "Crypto's resilience tested as oil rises after Iran strikes, Fed signals rates could still rise",
-      "link": "https://www.coindesk.com/markets/2026/07/30/crypto-s-resilience-tested-as-oil-rises-after-iran-strikes-fed-signals-rates-could-still-rise",
-      "pubDate": "Thu, 30 Jul 2026 10:56:24 +0000"
     }
   ]
 }
