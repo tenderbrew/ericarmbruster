@@ -1,13 +1,13 @@
 {
-  "fetchedAt": "2026-07-31T09:14:16.303Z",
+  "fetchedAt": "2026-07-31T11:35:08.727Z",
   "price": {
-    "usd": 63734,
-    "time": 1785489007
+    "usd": 63841,
+    "time": 1785497412
   },
   "moves": {
-    "d1": -0.3129847122652518,
-    "d7": -1.997480696672982,
-    "d30": 8.82406155574904
+    "d1": -0.14562489433781467,
+    "d7": -1.8329488994304421,
+    "d30": 9.006761128762886
   },
   "history90d": [
     {
@@ -368,60 +368,70 @@
     },
     {
       "date": "2026-07-31",
-      "close": 63752.89529814852
+      "close": 63823.51963006962
     }
   ],
   "blocks": [
     {
-      "height": 960376,
-      "id": "00000000000000000001b99b3f83517ccaf42c29e1454d9ba41c7353d24c66b2",
-      "timestamp": 1785488959,
-      "txCount": 3539
+      "height": 960392,
+      "id": "0000000000000000000188c148d16d246b4e56a4601b70ad0949b9475d40277e",
+      "timestamp": 1785496173,
+      "txCount": 4107
     },
     {
-      "height": 960375,
-      "id": "00000000000000000001ce75700a6952b6b2a51d786a7c74200a04ed3bc40397",
-      "timestamp": 1785488527,
-      "txCount": 4368
+      "height": 960391,
+      "id": "0000000000000000000213f13831d38a9296acb519220892976273bd275d3ed6",
+      "timestamp": 1785495589,
+      "txCount": 3791
     },
     {
-      "height": 960374,
-      "id": "00000000000000000000a0ceb386afd8724c29c6002559e26aa4a20cdf3c8102",
-      "timestamp": 1785487559,
-      "txCount": 6041
+      "height": 960390,
+      "id": "000000000000000000000ad24dce6b63297ffc270615ff8461c3004b7b8fd967",
+      "timestamp": 1785494470,
+      "txCount": 3823
     },
     {
-      "height": 960373,
-      "id": "000000000000000000011a9c0cb9ee37f420bcedb9af88830d96ce468d33bc0f",
-      "timestamp": 1785487293,
-      "txCount": 6061
+      "height": 960389,
+      "id": "00000000000000000001f55f9e4d38662704341cf146f6a32aaa28eed490e487",
+      "timestamp": 1785493210,
+      "txCount": 5862
     },
     {
-      "height": 960372,
-      "id": "00000000000000000002019073e26b9ee8436ba43d60cffa0d6718ee2e497a8f",
-      "timestamp": 1785487209,
-      "txCount": 5349
+      "height": 960388,
+      "id": "000000000000000000016de7fbebaa96fb74b2d9aed06ad25c1e134e7b33bb28",
+      "timestamp": 1785492976,
+      "txCount": 4430
     },
     {
-      "height": 960371,
-      "id": "0000000000000000000234adf07dc83d94beb5790726c9179d2c59b3f0b99dba",
-      "timestamp": 1785487149,
-      "txCount": 5579
+      "height": 960387,
+      "id": "0000000000000000000157cc474de14ec0fd513595cbc80fa4fa3b8945e8a3ac",
+      "timestamp": 1785492390,
+      "txCount": 4621
     },
     {
-      "height": 960370,
-      "id": "0000000000000000000144775cebb05f21734e40c0bcf1adec7f97bea910b421",
-      "timestamp": 1785487125,
-      "txCount": 4723
+      "height": 960386,
+      "id": "000000000000000000006f27ef75fbcdc32bc3348c5b3937e83bfaa8078a772b",
+      "timestamp": 1785491748,
+      "txCount": 7098
     },
     {
-      "height": 960369,
-      "id": "0000000000000000000226671b447ec4db771ab0ec63b14bd536ef6a811ea1a0",
-      "timestamp": 1785486977,
-      "txCount": 4246
+      "height": 960385,
+      "id": "0000000000000000000027608332da0b71948453b4d27cb01727b679ff3f7fb6",
+      "timestamp": 1785491717,
+      "txCount": 5675
     }
   ],
   "news": [
+    {
+      "title": "Bitcoin, ether fall, equities rally with broader crypto market on track for best month in a year",
+      "link": "https://www.coindesk.com/markets/2026/07/31/bitcoin-ether-fall-equities-rally-with-broader-crypto-market-on-track-for-best-month-in-a-year",
+      "pubDate": "Fri, 31 Jul 2026 11:07:52 +0000"
+    },
+    {
+      "title": "New York sues Kalshi, alleges it offers a gambling platform 'plain and simple'",
+      "link": "https://www.coindesk.com/policy/2026/07/31/new-york-sues-kalshi-alleges-it-offers-a-gambling-platform-plain-and-simple",
+      "pubDate": "Fri, 31 Jul 2026 09:55:47 +0000"
+    },
     {
       "title": "Quantum Solutions, Hyperscale Data tap crypto treasuries to fund AI data centers",
       "link": "https://www.coindesk.com/business/2026/07/31/quantum-solutions-hyperscale-data-tap-crypto-treasuries-to-fund-ai-data-centers",
@@ -433,7 +443,7 @@
       "pubDate": "Fri, 31 Jul 2026 08:30:31 +0000"
     },
     {
-      "title": "Live updates: Bitcoin steady as Japan holds rates at 1%, keeping the yen carry trade alive",
+      "title": "Live updates: Bitcoin slides back below $64,000 as Nasdaq continues rally",
       "link": "https://www.coindesk.com/markets/2026/07/31/live-updates-bitcoin-steady-as-japan-holds-rates-at-1-keeping-the-yen-carry-trade-alive",
       "pubDate": "Fri, 31 Jul 2026 07:46:10 +0000"
     },
@@ -443,7 +453,7 @@
       "pubDate": "Fri, 31 Jul 2026 05:43:39 +0000"
     },
     {
-      "title": "Major bitcoin wallet flaw drains 594 BTC in 25-minute sweep",
+      "title": "Major bitcoin wallet flaw drains $38 million worth of BTC in 25-minute sweep",
       "link": "https://www.coindesk.com/tech/2026/07/31/major-bitcoin-wallet-flaw-drains-594-btc-in-25-minute-sweep",
       "pubDate": "Fri, 31 Jul 2026 05:12:55 +0000"
     },
@@ -453,7 +463,7 @@
       "pubDate": "Thu, 30 Jul 2026 20:32:13 +0000"
     },
     {
-      "title": "Coinbase sinks 5% after missing second quarter revenue estimates",
+      "title": "Coinbase sinks 5% after missing second-quarter revenue estimates",
       "link": "https://www.coindesk.com/markets/2026/07/30/coinbase-sinks-5-after-missing-q2-revenue-estimates",
       "pubDate": "Thu, 30 Jul 2026 20:18:33 +0000"
     },
@@ -471,16 +481,6 @@
       "title": "Crypto for Advisors: Is the Clarity Act dead?",
       "link": "https://www.coindesk.com/coindesk-indices/2026/07/30/crypto-for-advisors-is-the-clarity-act-dead",
       "pubDate": "Thu, 30 Jul 2026 15:00:49 +0000"
-    },
-    {
-      "title": "CME's Duffy warns an overlooked tax risk looms over U.S. perpetual futures",
-      "link": "https://www.coindesk.com/policy/2026/07/30/cme-s-duffy-warns-an-overlooked-tax-risk-looms-over-u-s-perpetual-futures",
-      "pubDate": "Thu, 30 Jul 2026 14:33:02 +0000"
-    },
-    {
-      "title": "The economics behind Aave proposal to ditch 6 chains that earn loose change in revenue",
-      "link": "https://www.coindesk.com/tech/2026/07/30/the-economics-behind-the-aave-proposal-to-ditch-6-chains-that-earn-chump-change",
-      "pubDate": "Thu, 30 Jul 2026 14:25:41 +0000"
     }
   ]
 }
