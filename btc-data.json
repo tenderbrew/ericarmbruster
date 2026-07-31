@@ -1,13 +1,13 @@
 {
-  "fetchedAt": "2026-07-31T14:31:13.202Z",
+  "fetchedAt": "2026-07-31T16:54:26.469Z",
   "price": {
-    "usd": 62550,
-    "time": 1785507914
+    "usd": 62754,
+    "time": 1785516610
   },
   "moves": {
-    "d1": -2.16489148260256,
-    "d7": -3.8180942287773356,
-    "d30": 6.8024139440816755
+    "d1": -1.8458129512268773,
+    "d7": -3.504407437772872,
+    "d30": 7.1507383636595145
   },
   "history90d": [
     {
@@ -368,60 +368,70 @@
     },
     {
       "date": "2026-07-31",
-      "close": 62521.18972329904
+      "close": 62787.114776777125
     }
   ],
   "blocks": [
     {
-      "height": 960412,
-      "id": "00000000000000000001d2cee9d11fbf1e9d8f00b5004a066ee77b14560dd67e",
-      "timestamp": 1785507111,
-      "txCount": 3796
+      "height": 960436,
+      "id": "00000000000000000001a20611b9f7bc3f9f6ff8637c63ffea13771263ba36da",
+      "timestamp": 1785516303,
+      "txCount": 4229
     },
     {
-      "height": 960411,
-      "id": "0000000000000000000109c806c67987f7082cbd184c8c3df55d8dff78b00e83",
-      "timestamp": 1785506696,
-      "txCount": 3555
+      "height": 960435,
+      "id": "0000000000000000000147a42bf6207f7736246fdb8091dae00177fa81e29e3e",
+      "timestamp": 1785515606,
+      "txCount": 4321
     },
     {
-      "height": 960410,
-      "id": "00000000000000000000f2465db25b6b807e71b1741197da137a6e53e53af77f",
-      "timestamp": 1785505838,
-      "txCount": 4426
+      "height": 960434,
+      "id": "00000000000000000001ebfa4f00b2f83b73e9c383fe0c4cbf79697f8fcffc4b",
+      "timestamp": 1785515233,
+      "txCount": 5533
     },
     {
-      "height": 960409,
-      "id": "00000000000000000002130ee678a8873070470fc9bf79aa471ec3ff6fb728ee",
-      "timestamp": 1785505363,
-      "txCount": 3582
+      "height": 960433,
+      "id": "0000000000000000000182c80042c038dfed9d9e60b344be2844c7eb374fdcfd",
+      "timestamp": 1785515077,
+      "txCount": 4507
     },
     {
-      "height": 960408,
-      "id": "00000000000000000001606c53f39b2c64d1ba40a843c05cab86d15bb94fefad",
-      "timestamp": 1785504861,
-      "txCount": 3983
+      "height": 960432,
+      "id": "00000000000000000000f10683aab2385d4e9f1e628b1c317e60961a775beefe",
+      "timestamp": 1785514734,
+      "txCount": 4609
     },
     {
-      "height": 960407,
-      "id": "00000000000000000001f757ede4a9f7e23719d45b108142cbc0bf4a681dc48b",
-      "timestamp": 1785504390,
-      "txCount": 3858
+      "height": 960431,
+      "id": "000000000000000000010be52d7fd53b3b20ae665355c58a6ad4cca64f2aa2bf",
+      "timestamp": 1785514186,
+      "txCount": 1897
     },
     {
-      "height": 960406,
-      "id": "00000000000000000001563dbce1a3ea15b39ffdcbfb007041e160b04c809bcc",
-      "timestamp": 1785504651,
-      "txCount": 3712
+      "height": 960430,
+      "id": "00000000000000000000ba7a923a4715f043af249597cf2cac2a77b5f98e76b4",
+      "timestamp": 1785514181,
+      "txCount": 2676
     },
     {
-      "height": 960405,
-      "id": "00000000000000000000393536a51ccf0af1015e9af67626702a522178c3cbe9",
-      "timestamp": 1785503672,
-      "txCount": 4648
+      "height": 960429,
+      "id": "00000000000000000000d22bad91665ddf0679262ce9eee57cede65edb14a9d5",
+      "timestamp": 1785514044,
+      "txCount": 2862
     }
   ],
   "news": [
+    {
+      "title": "Quantum computing nears commercial breakthrough, IBM CEO says",
+      "link": "https://www.coindesk.com/markets/2026/07/31/quantum-computing-nears-commercial-breakthrough-ibm-ceo-says",
+      "pubDate": "Fri, 31 Jul 2026 15:39:30 +0000"
+    },
+    {
+      "title": "Crypto faces 3 barriers to next bull run, STS Digital CEO says",
+      "link": "https://www.coindesk.com/markets/2026/07/31/crypto-faces-3-barriers-to-next-bull-run-sts-digital-ceo-says",
+      "pubDate": "Fri, 31 Jul 2026 15:00:00 +0000"
+    },
     {
       "title": "Circle secures New York trust charter as crypto regulatory push accelerates",
       "link": "https://www.coindesk.com/policy/2026/07/31/circle-secures-new-york-trust-charter-as-crypto-regulatory-push-accelerates",
@@ -471,16 +481,6 @@
       "title": "Quantum Solutions, Hyperscale Data tap crypto treasuries to fund AI data centers",
       "link": "https://www.coindesk.com/business/2026/07/31/quantum-solutions-hyperscale-data-tap-crypto-treasuries-to-fund-ai-data-centers",
       "pubDate": "Fri, 31 Jul 2026 08:57:02 +0000"
-    },
-    {
-      "title": "Bitcoin’s calm is back and so is the setup for a volatility explosion",
-      "link": "https://www.coindesk.com/markets/2026/07/31/bitcoin-s-calm-is-back-and-so-is-the-setup-for-a-volatility-explosion",
-      "pubDate": "Fri, 31 Jul 2026 08:30:31 +0000"
-    },
-    {
-      "title": "Live updates: 'Worst hit in Bitcoin history' – longtime Bitcoiners react to Coincard flaw",
-      "link": "https://www.coindesk.com/markets/2026/07/31/live-updates-bitcoin-steady-as-japan-holds-rates-at-1-keeping-the-yen-carry-trade-alive",
-      "pubDate": "Fri, 31 Jul 2026 07:46:10 +0000"
     }
   ]
 }
