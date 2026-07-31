@@ -1,13 +1,13 @@
 {
-  "fetchedAt": "2026-07-31T03:46:48.661Z",
+  "fetchedAt": "2026-07-31T09:14:16.303Z",
   "price": {
-    "usd": 64323,
-    "time": 1785469511
+    "usd": 63734,
+    "time": 1785489007
   },
   "moves": {
-    "d1": 0.6082763415596437,
-    "d7": -1.0917869716649875,
-    "d30": 9.829762943647747
+    "d1": -0.3129847122652518,
+    "d7": -1.997480696672982,
+    "d30": 8.82406155574904
   },
   "history90d": [
     {
@@ -368,60 +368,85 @@
     },
     {
       "date": "2026-07-31",
-      "close": 64331.993277257854
+      "close": 63752.89529814852
     }
   ],
   "blocks": [
     {
-      "height": 960341,
-      "id": "00000000000000000001a9b2fceb6c59da4169e47ab3b4284ce4522d83ccec63",
-      "timestamp": 1785468426,
-      "txCount": 3852
+      "height": 960376,
+      "id": "00000000000000000001b99b3f83517ccaf42c29e1454d9ba41c7353d24c66b2",
+      "timestamp": 1785488959,
+      "txCount": 3539
     },
     {
-      "height": 960340,
-      "id": "000000000000000000021ac0de0f7ca7cbc4fb96e77f98a79b8fe2ef508688e8",
-      "timestamp": 1785467704,
-      "txCount": 4577
+      "height": 960375,
+      "id": "00000000000000000001ce75700a6952b6b2a51d786a7c74200a04ed3bc40397",
+      "timestamp": 1785488527,
+      "txCount": 4368
     },
     {
-      "height": 960339,
-      "id": "00000000000000000001331228b477c105aa4b3e8c2f08bd2d9db6f671f99858",
-      "timestamp": 1785467617,
-      "txCount": 3005
+      "height": 960374,
+      "id": "00000000000000000000a0ceb386afd8724c29c6002559e26aa4a20cdf3c8102",
+      "timestamp": 1785487559,
+      "txCount": 6041
     },
     {
-      "height": 960338,
-      "id": "0000000000000000000104e0b202f57a0de3c11bcf47987e997664a45b9033c9",
-      "timestamp": 1785467405,
-      "txCount": 2725
+      "height": 960373,
+      "id": "000000000000000000011a9c0cb9ee37f420bcedb9af88830d96ce468d33bc0f",
+      "timestamp": 1785487293,
+      "txCount": 6061
     },
     {
-      "height": 960337,
-      "id": "00000000000000000001c89b88a3f188f17611931c63059428a571bb13d6a3fa",
-      "timestamp": 1785466308,
-      "txCount": 3429
+      "height": 960372,
+      "id": "00000000000000000002019073e26b9ee8436ba43d60cffa0d6718ee2e497a8f",
+      "timestamp": 1785487209,
+      "txCount": 5349
     },
     {
-      "height": 960336,
-      "id": "00000000000000000001f46379f9a3b34431c064e07464c57c4c16af3a467a49",
-      "timestamp": 1785465753,
-      "txCount": 3085
+      "height": 960371,
+      "id": "0000000000000000000234adf07dc83d94beb5790726c9179d2c59b3f0b99dba",
+      "timestamp": 1785487149,
+      "txCount": 5579
     },
     {
-      "height": 960335,
-      "id": "00000000000000000001c3c18d5aa9571f187968b139415fb947228fc5bb2b7f",
-      "timestamp": 1785464637,
-      "txCount": 3487
+      "height": 960370,
+      "id": "0000000000000000000144775cebb05f21734e40c0bcf1adec7f97bea910b421",
+      "timestamp": 1785487125,
+      "txCount": 4723
     },
     {
-      "height": 960334,
-      "id": "0000000000000000000095927b53cbbe82bbf4c3a6a58855d3b77cacdaa2f7b1",
-      "timestamp": 1785464355,
-      "txCount": 2839
+      "height": 960369,
+      "id": "0000000000000000000226671b447ec4db771ab0ec63b14bd536ef6a811ea1a0",
+      "timestamp": 1785486977,
+      "txCount": 4246
     }
   ],
   "news": [
+    {
+      "title": "Quantum Solutions, Hyperscale Data tap crypto treasuries to fund AI data centers",
+      "link": "https://www.coindesk.com/business/2026/07/31/quantum-solutions-hyperscale-data-tap-crypto-treasuries-to-fund-ai-data-centers",
+      "pubDate": "Fri, 31 Jul 2026 08:57:02 +0000"
+    },
+    {
+      "title": "Bitcoin’s calm is back and so is the setup for a volatility explosion",
+      "link": "https://www.coindesk.com/markets/2026/07/31/bitcoin-s-calm-is-back-and-so-is-the-setup-for-a-volatility-explosion",
+      "pubDate": "Fri, 31 Jul 2026 08:30:31 +0000"
+    },
+    {
+      "title": "Live updates: Bitcoin steady as Japan holds rates at 1%, keeping the yen carry trade alive",
+      "link": "https://www.coindesk.com/markets/2026/07/31/live-updates-bitcoin-steady-as-japan-holds-rates-at-1-keeping-the-yen-carry-trade-alive",
+      "pubDate": "Fri, 31 Jul 2026 07:46:10 +0000"
+    },
+    {
+      "title": "Bitcoin flat near $64,000 as Kospi's record 17% surge leaves crypto untouched",
+      "link": "https://www.coindesk.com/markets/2026/07/31/bitcoin-flat-near-usd64-000-as-kospi-s-record-17-surge-leaves-crypto-untouched",
+      "pubDate": "Fri, 31 Jul 2026 05:43:39 +0000"
+    },
+    {
+      "title": "Major bitcoin wallet flaw drains 594 BTC in 25-minute sweep",
+      "link": "https://www.coindesk.com/tech/2026/07/31/major-bitcoin-wallet-flaw-drains-594-btc-in-25-minute-sweep",
+      "pubDate": "Fri, 31 Jul 2026 05:12:55 +0000"
+    },
     {
       "title": "Strategy books $8.2 billion Q2 loss on bitcoin price decline",
       "link": "https://www.coindesk.com/markets/2026/07/30/strategy-books-usd8-2-billion-second-quarter-loss-on-bitcoin-price-decline",
@@ -456,31 +481,6 @@
       "title": "The economics behind Aave proposal to ditch 6 chains that earn loose change in revenue",
       "link": "https://www.coindesk.com/tech/2026/07/30/the-economics-behind-the-aave-proposal-to-ditch-6-chains-that-earn-chump-change",
       "pubDate": "Thu, 30 Jul 2026 14:25:41 +0000"
-    },
-    {
-      "title": "JPMorgan says fading Clarity Act odds weigh on crypto outlook",
-      "link": "https://www.coindesk.com/policy/2026/07/30/jpmorgan-says-fading-clarity-act-odds-weigh-on-crypto-outlook",
-      "pubDate": "Thu, 30 Jul 2026 14:06:14 +0000"
-    },
-    {
-      "title": "Institutional crypto trading hits a record 72% as Wall Street calms crypto's wild swings",
-      "link": "https://www.coindesk.com/markets/2026/07/30/institutional-trading-hits-a-record-72-as-wall-street-quietens-down-crypto-s-wild-swings",
-      "pubDate": "Thu, 30 Jul 2026 13:55:18 +0000"
-    },
-    {
-      "title": "Ethereum enters its second decade after a year of upheaval at the foundation",
-      "link": "https://www.coindesk.com/tech/2026/07/30/ethereum-enters-its-second-decade-after-a-year-of-upheaval-at-the-foundation",
-      "pubDate": "Thu, 30 Jul 2026 13:52:37 +0000"
-    },
-    {
-      "title": "Fake staking site drains $8.5 million in XRP from dozens of investors promising easy yield",
-      "link": "https://www.coindesk.com/business/2026/07/30/fake-staking-site-drains-usd8-5-million-in-xrp-from-dozens-of-investors-promising-easy-yield",
-      "pubDate": "Thu, 30 Jul 2026 13:35:51 +0000"
-    },
-    {
-      "title": "Everything is becoming a perp",
-      "link": "https://www.coindesk.com/opinion/2026/07/28/everything-is-becoming-a-perp",
-      "pubDate": "Thu, 30 Jul 2026 13:00:00 +0000"
     }
   ]
 }
