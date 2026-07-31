@@ -1,13 +1,13 @@
 {
-  "fetchedAt": "2026-07-31T16:54:26.469Z",
+  "fetchedAt": "2026-07-31T19:48:33.358Z",
   "price": {
-    "usd": 62754,
-    "time": 1785516610
+    "usd": 62911,
+    "time": 1785526808
   },
   "moves": {
-    "d1": -1.8458129512268773,
-    "d7": -3.504407437772872,
-    "d30": 7.1507383636595145
+    "d1": -1.600247610903427,
+    "d7": -3.262991623127276,
+    "d30": 7.418811568922834
   },
   "history90d": [
     {
@@ -368,60 +368,75 @@
     },
     {
       "date": "2026-07-31",
-      "close": 62787.114776777125
+      "close": 62957.15672889532
     }
   ],
   "blocks": [
     {
-      "height": 960436,
-      "id": "00000000000000000001a20611b9f7bc3f9f6ff8637c63ffea13771263ba36da",
-      "timestamp": 1785516303,
-      "txCount": 4229
+      "height": 960454,
+      "id": "0000000000000000000155ac49eb0aa1b16c9b55242b20111a8b4709cff37928",
+      "timestamp": 1785527232,
+      "txCount": 3906
     },
     {
-      "height": 960435,
-      "id": "0000000000000000000147a42bf6207f7736246fdb8091dae00177fa81e29e3e",
-      "timestamp": 1785515606,
-      "txCount": 4321
+      "height": 960453,
+      "id": "000000000000000000006299c2e8d3f627b121ba6aa910b8e4f35f98cb2deb6e",
+      "timestamp": 1785526077,
+      "txCount": 2551
     },
     {
-      "height": 960434,
-      "id": "00000000000000000001ebfa4f00b2f83b73e9c383fe0c4cbf79697f8fcffc4b",
-      "timestamp": 1785515233,
-      "txCount": 5533
+      "height": 960452,
+      "id": "0000000000000000000039528bae2fc01730ed10375ae2e20afc8c0faec27263",
+      "timestamp": 1785526183,
+      "txCount": 3926
     },
     {
-      "height": 960433,
-      "id": "0000000000000000000182c80042c038dfed9d9e60b344be2844c7eb374fdcfd",
-      "timestamp": 1785515077,
-      "txCount": 4507
+      "height": 960451,
+      "id": "00000000000000000000a45d3e3f34e2cc23ba2adbf2f8d6275691a49c85f90f",
+      "timestamp": 1785525226,
+      "txCount": 3652
     },
     {
-      "height": 960432,
-      "id": "00000000000000000000f10683aab2385d4e9f1e628b1c317e60961a775beefe",
-      "timestamp": 1785514734,
-      "txCount": 4609
+      "height": 960450,
+      "id": "00000000000000000000408f69c0d7a6cc5e3725e0c34b0863c18912c8aebb3c",
+      "timestamp": 1785524702,
+      "txCount": 3689
     },
     {
-      "height": 960431,
-      "id": "000000000000000000010be52d7fd53b3b20ae665355c58a6ad4cca64f2aa2bf",
-      "timestamp": 1785514186,
-      "txCount": 1897
+      "height": 960449,
+      "id": "00000000000000000001a33a4c55c30769bcba7d0b62cd09a2320c428f851008",
+      "timestamp": 1785523914,
+      "txCount": 3192
     },
     {
-      "height": 960430,
-      "id": "00000000000000000000ba7a923a4715f043af249597cf2cac2a77b5f98e76b4",
-      "timestamp": 1785514181,
-      "txCount": 2676
+      "height": 960448,
+      "id": "0000000000000000000089044778ac4faa5206eac82d5f2efce5e94fa92113fa",
+      "timestamp": 1785523692,
+      "txCount": 3761
     },
     {
-      "height": 960429,
-      "id": "00000000000000000000d22bad91665ddf0679262ce9eee57cede65edb14a9d5",
-      "timestamp": 1785514044,
-      "txCount": 2862
+      "height": 960447,
+      "id": "00000000000000000001c7f81e818070459fae2258604edd883cd9288a7b0b83",
+      "timestamp": 1785523156,
+      "txCount": 2363
     }
   ],
   "news": [
+    {
+      "title": "Tether posts $1.5 billion operating profit in Q2 as reserve buffer falls by half",
+      "link": "https://www.coindesk.com/business/2026/07/31/tether-posts-usd1-5-billion-operating-profit-in-q2-as-reserve-buffer-falls-by-half",
+      "pubDate": "Fri, 31 Jul 2026 18:24:55 +0000"
+    },
+    {
+      "title": "The good and the bad of perps, according to crypto traders",
+      "link": "https://www.coindesk.com/business/2026/07/31/the-good-and-the-bad-of-perps-according-to-crypto-traders",
+      "pubDate": "Fri, 31 Jul 2026 17:53:59 +0000"
+    },
+    {
+      "title": "Coldcard's $38 million (so far) exploit shakes faith in self-custody, may push investors to ETFs",
+      "link": "https://www.coindesk.com/business/2026/07/31/coldcard-s-usd38-million-so-far-exploit-shakes-faith-in-self-custody-may-push-investors-to-etfs",
+      "pubDate": "Fri, 31 Jul 2026 17:07:30 +0000"
+    },
     {
       "title": "Quantum computing nears commercial breakthrough, IBM CEO says",
       "link": "https://www.coindesk.com/markets/2026/07/31/quantum-computing-nears-commercial-breakthrough-ibm-ceo-says",
@@ -466,21 +481,6 @@
       "title": "​Traders brace for an August crypto pull-back as protection against $60,000 bitcoin dip becomes top trade",
       "link": "https://www.coindesk.com/daybook-us/2026/07/31/bitcoin-usd60-000-put-leads-the-pack-as-mood-swings-bearish-for-august",
       "pubDate": "Fri, 31 Jul 2026 11:36:45 +0000"
-    },
-    {
-      "title": "Bitcoin, ether fall, equities rally with broader crypto market on track for best month in a year",
-      "link": "https://www.coindesk.com/markets/2026/07/31/bitcoin-ether-fall-equities-rally-with-broader-crypto-market-on-track-for-best-month-in-a-year",
-      "pubDate": "Fri, 31 Jul 2026 11:07:52 +0000"
-    },
-    {
-      "title": "New York sues Kalshi, alleges it offers a gambling platform 'plain and simple'",
-      "link": "https://www.coindesk.com/policy/2026/07/31/new-york-sues-kalshi-alleges-it-offers-a-gambling-platform-plain-and-simple",
-      "pubDate": "Fri, 31 Jul 2026 09:55:47 +0000"
-    },
-    {
-      "title": "Quantum Solutions, Hyperscale Data tap crypto treasuries to fund AI data centers",
-      "link": "https://www.coindesk.com/business/2026/07/31/quantum-solutions-hyperscale-data-tap-crypto-treasuries-to-fund-ai-data-centers",
-      "pubDate": "Fri, 31 Jul 2026 08:57:02 +0000"
     }
   ]
 }
