@@ -1,13 +1,13 @@
 {
-  "fetchedAt": "2026-07-31T11:35:08.727Z",
+  "fetchedAt": "2026-07-31T14:31:13.202Z",
   "price": {
-    "usd": 63841,
-    "time": 1785497412
+    "usd": 62550,
+    "time": 1785507914
   },
   "moves": {
-    "d1": -0.14562489433781467,
-    "d7": -1.8329488994304421,
-    "d30": 9.006761128762886
+    "d1": -2.16489148260256,
+    "d7": -3.8180942287773356,
+    "d30": 6.8024139440816755
   },
   "history90d": [
     {
@@ -368,60 +368,95 @@
     },
     {
       "date": "2026-07-31",
-      "close": 63823.51963006962
+      "close": 62521.18972329904
     }
   ],
   "blocks": [
     {
-      "height": 960392,
-      "id": "0000000000000000000188c148d16d246b4e56a4601b70ad0949b9475d40277e",
-      "timestamp": 1785496173,
-      "txCount": 4107
+      "height": 960412,
+      "id": "00000000000000000001d2cee9d11fbf1e9d8f00b5004a066ee77b14560dd67e",
+      "timestamp": 1785507111,
+      "txCount": 3796
     },
     {
-      "height": 960391,
-      "id": "0000000000000000000213f13831d38a9296acb519220892976273bd275d3ed6",
-      "timestamp": 1785495589,
-      "txCount": 3791
+      "height": 960411,
+      "id": "0000000000000000000109c806c67987f7082cbd184c8c3df55d8dff78b00e83",
+      "timestamp": 1785506696,
+      "txCount": 3555
     },
     {
-      "height": 960390,
-      "id": "000000000000000000000ad24dce6b63297ffc270615ff8461c3004b7b8fd967",
-      "timestamp": 1785494470,
-      "txCount": 3823
+      "height": 960410,
+      "id": "00000000000000000000f2465db25b6b807e71b1741197da137a6e53e53af77f",
+      "timestamp": 1785505838,
+      "txCount": 4426
     },
     {
-      "height": 960389,
-      "id": "00000000000000000001f55f9e4d38662704341cf146f6a32aaa28eed490e487",
-      "timestamp": 1785493210,
-      "txCount": 5862
+      "height": 960409,
+      "id": "00000000000000000002130ee678a8873070470fc9bf79aa471ec3ff6fb728ee",
+      "timestamp": 1785505363,
+      "txCount": 3582
     },
     {
-      "height": 960388,
-      "id": "000000000000000000016de7fbebaa96fb74b2d9aed06ad25c1e134e7b33bb28",
-      "timestamp": 1785492976,
-      "txCount": 4430
+      "height": 960408,
+      "id": "00000000000000000001606c53f39b2c64d1ba40a843c05cab86d15bb94fefad",
+      "timestamp": 1785504861,
+      "txCount": 3983
     },
     {
-      "height": 960387,
-      "id": "0000000000000000000157cc474de14ec0fd513595cbc80fa4fa3b8945e8a3ac",
-      "timestamp": 1785492390,
-      "txCount": 4621
+      "height": 960407,
+      "id": "00000000000000000001f757ede4a9f7e23719d45b108142cbc0bf4a681dc48b",
+      "timestamp": 1785504390,
+      "txCount": 3858
     },
     {
-      "height": 960386,
-      "id": "000000000000000000006f27ef75fbcdc32bc3348c5b3937e83bfaa8078a772b",
-      "timestamp": 1785491748,
-      "txCount": 7098
+      "height": 960406,
+      "id": "00000000000000000001563dbce1a3ea15b39ffdcbfb007041e160b04c809bcc",
+      "timestamp": 1785504651,
+      "txCount": 3712
     },
     {
-      "height": 960385,
-      "id": "0000000000000000000027608332da0b71948453b4d27cb01727b679ff3f7fb6",
-      "timestamp": 1785491717,
-      "txCount": 5675
+      "height": 960405,
+      "id": "00000000000000000000393536a51ccf0af1015e9af67626702a522178c3cbe9",
+      "timestamp": 1785503672,
+      "txCount": 4648
     }
   ],
   "news": [
+    {
+      "title": "Circle secures New York trust charter as crypto regulatory push accelerates",
+      "link": "https://www.coindesk.com/policy/2026/07/31/circle-secures-new-york-trust-charter-as-crypto-regulatory-push-accelerates",
+      "pubDate": "Fri, 31 Jul 2026 13:35:17 +0000"
+    },
+    {
+      "title": "Coinbase's weak quarter leaves Wall Street split on timing of a recovery",
+      "link": "https://www.coindesk.com/markets/2026/07/31/coinbase-s-weak-quarter-leaves-wall-street-split-on-timing-of-a-recovery",
+      "pubDate": "Fri, 31 Jul 2026 13:20:45 +0000"
+    },
+    {
+      "title": "RWA perps will outpace tokenization",
+      "link": "https://www.coindesk.com/opinion/2026/07/31/rwa-perps-will-outpace-tokenization",
+      "pubDate": "Fri, 31 Jul 2026 13:00:00 +0000"
+    },
+    {
+      "title": "Dubai-based crypto exchange tied to $4 billion Iran sanctioned-evasion network",
+      "link": "https://www.coindesk.com/business/2026/07/31/dubai-based-crypto-exchange-tied-to-usd4-billion-iran-sanctioned-evasion-network-reuters",
+      "pubDate": "Fri, 31 Jul 2026 12:28:02 +0000"
+    },
+    {
+      "title": "World Cup bets smash records as prediction markets hit $20 billion in volume",
+      "link": "https://www.coindesk.com/markets/2026/07/31/world-cup-bets-smash-records-as-prediction-markets-hit-usd20-billion-in-volume",
+      "pubDate": "Fri, 31 Jul 2026 12:00:26 +0000"
+    },
+    {
+      "title": "U.S. sanctions Iran-linked bitcoin insurance scheme for Strait of Hormuz ships",
+      "link": "https://www.coindesk.com/policy/2026/07/31/u-s-sanctions-iran-linked-bitcoin-insurance-scheme-for-strait-of-hormuz-ships",
+      "pubDate": "Fri, 31 Jul 2026 11:58:33 +0000"
+    },
+    {
+      "title": "​Traders brace for an August crypto pull-back as protection against $60,000 bitcoin dip becomes top trade",
+      "link": "https://www.coindesk.com/daybook-us/2026/07/31/bitcoin-usd60-000-put-leads-the-pack-as-mood-swings-bearish-for-august",
+      "pubDate": "Fri, 31 Jul 2026 11:36:45 +0000"
+    },
     {
       "title": "Bitcoin, ether fall, equities rally with broader crypto market on track for best month in a year",
       "link": "https://www.coindesk.com/markets/2026/07/31/bitcoin-ether-fall-equities-rally-with-broader-crypto-market-on-track-for-best-month-in-a-year",
@@ -443,44 +478,9 @@
       "pubDate": "Fri, 31 Jul 2026 08:30:31 +0000"
     },
     {
-      "title": "Live updates: Bitcoin slides back below $64,000 as Nasdaq continues rally",
+      "title": "Live updates: 'Worst hit in Bitcoin history' – longtime Bitcoiners react to Coincard flaw",
       "link": "https://www.coindesk.com/markets/2026/07/31/live-updates-bitcoin-steady-as-japan-holds-rates-at-1-keeping-the-yen-carry-trade-alive",
       "pubDate": "Fri, 31 Jul 2026 07:46:10 +0000"
-    },
-    {
-      "title": "Bitcoin flat near $64,000 as Kospi's record 17% surge leaves crypto untouched",
-      "link": "https://www.coindesk.com/markets/2026/07/31/bitcoin-flat-near-usd64-000-as-kospi-s-record-17-surge-leaves-crypto-untouched",
-      "pubDate": "Fri, 31 Jul 2026 05:43:39 +0000"
-    },
-    {
-      "title": "Major bitcoin wallet flaw drains $38 million worth of BTC in 25-minute sweep",
-      "link": "https://www.coindesk.com/tech/2026/07/31/major-bitcoin-wallet-flaw-drains-594-btc-in-25-minute-sweep",
-      "pubDate": "Fri, 31 Jul 2026 05:12:55 +0000"
-    },
-    {
-      "title": "Strategy books $8.2 billion Q2 loss on bitcoin price decline",
-      "link": "https://www.coindesk.com/markets/2026/07/30/strategy-books-usd8-2-billion-second-quarter-loss-on-bitcoin-price-decline",
-      "pubDate": "Thu, 30 Jul 2026 20:32:13 +0000"
-    },
-    {
-      "title": "Coinbase sinks 5% after missing second-quarter revenue estimates",
-      "link": "https://www.coindesk.com/markets/2026/07/30/coinbase-sinks-5-after-missing-q2-revenue-estimates",
-      "pubDate": "Thu, 30 Jul 2026 20:18:33 +0000"
-    },
-    {
-      "title": "Global banks test tokenized money for cross-border payments in $1 million BIS pilot",
-      "link": "https://www.coindesk.com/business/2026/07/30/global-banks-test-tokenized-money-for-cross-border-payments-in-usd1-million-bis-pilot",
-      "pubDate": "Thu, 30 Jul 2026 17:34:03 +0000"
-    },
-    {
-      "title": "Ondo Finance weighs acquisition worth up to $500 million",
-      "link": "https://www.coindesk.com/business/2026/07/30/ondo-finance-weighs-acquisition-worth-up-to-usd500-million",
-      "pubDate": "Thu, 30 Jul 2026 16:04:16 +0000"
-    },
-    {
-      "title": "Crypto for Advisors: Is the Clarity Act dead?",
-      "link": "https://www.coindesk.com/coindesk-indices/2026/07/30/crypto-for-advisors-is-the-clarity-act-dead",
-      "pubDate": "Thu, 30 Jul 2026 15:00:49 +0000"
     }
   ]
 }
