@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-07-31T09:13:37.382Z",
+  "fetchedAt": "2026-07-31T14:28:46.504Z",
   "indicators": {
     "UNRATE": {
       "latest": {
@@ -163,12 +163,12 @@
     },
     "BAMLH0A0HYM2": {
       "latest": {
-        "date": "2026-07-29",
-        "value": 2.87
+        "date": "2026-07-30",
+        "value": 2.84
       },
       "previous": {
-        "date": "2026-07-28",
-        "value": 2.84
+        "date": "2026-07-29",
+        "value": 2.87
       }
     },
     "MORTGAGE30US": {
@@ -263,12 +263,12 @@
     },
     "VIXCLS": {
       "latest": {
-        "date": "2026-07-29",
-        "value": 20.66
+        "date": "2026-07-30",
+        "value": 17.09
       },
       "previous": {
-        "date": "2026-07-28",
-        "value": 18.21
+        "date": "2026-07-29",
+        "value": 20.66
       }
     },
     "BOPGSTB": {
@@ -300,6 +300,12 @@
     }
   },
   "news": [
+    {
+      "title": "Democracy + Bureaucracy = Idiocracy",
+      "link": "https://mises.org/mises-wire/democracy-bureaucracy-idiocracy",
+      "pubDate": "Fri, 31 Jul 2026 05:00:00 CDT",
+      "kind": "Mises Wire"
+    },
     {
       "title": "Zimbabwe Has No Long Money",
       "link": "https://mises.org/mises-wire/zimbabwe-has-no-long-money",
@@ -353,12 +359,6 @@
       "link": "https://mises.org/mises-wire/illinois-takes-swipe-interchange-fees-and-misses",
       "pubDate": "Wed, 29 Jul 2026 11:00:00 CDT",
       "kind": "Mises Wire"
-    },
-    {
-      "title": "The Myth of Free Banking in Scotland",
-      "link": "https://mises.org/podcasts/audio-essays/myth-free-banking-scotland",
-      "pubDate": "Wed, 29 Jul 2026 10:21:01 CDT",
-      "kind": "Podcast"
     }
   ]
 }
