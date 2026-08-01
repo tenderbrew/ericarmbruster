@@ -1,13 +1,13 @@
 {
-  "fetchedAt": "2026-08-01T13:50:24.264Z",
+  "fetchedAt": "2026-08-01T16:10:57.739Z",
   "price": {
-    "usd": 63021,
-    "time": 1785591909
+    "usd": 62933,
+    "time": 1785600309
   },
   "moves": {
-    "d1": 0.31982423809191474,
-    "d7": -2.0140507354049375,
-    "d30": 2.4894782496877266
+    "d1": 0.17974165398579878,
+    "d7": -2.1508743899849136,
+    "d30": 2.3463660476285453
   },
   "history90d": [
     {
@@ -372,60 +372,75 @@
     },
     {
       "date": "2026-08-01",
-      "close": 63010.24725608965
+      "close": 62915.54447456494
     }
   ],
   "blocks": [
     {
-      "height": 960565,
-      "id": "000000000000000000009c533bb5d1a035052ab0b1d206f23596272b0b4578ae",
-      "timestamp": 1785591973,
-      "txCount": 4567
+      "height": 960584,
+      "id": "00000000000000000000f225069122aa29bcbb07a02e55659326ac6fa876442c",
+      "timestamp": 1785599175,
+      "txCount": 4504
     },
     {
-      "height": 960564,
-      "id": "00000000000000000001f0180e601c57725576bd772b554924a628bb930c42be",
-      "timestamp": 1785590497,
-      "txCount": 4087
+      "height": 960583,
+      "id": "00000000000000000000a15573f8f9c3ae468e2f100a7ebc64c93f7255596f87",
+      "timestamp": 1785598718,
+      "txCount": 3507
     },
     {
-      "height": 960563,
-      "id": "00000000000000000000ae95f3f90a88550b0aad6e936636862cfbbc3972fdd4",
-      "timestamp": 1785589456,
-      "txCount": 3764
+      "height": 960582,
+      "id": "00000000000000000001e22305fb9341b154695e61dfbf47538fc79162e4f3e2",
+      "timestamp": 1785598111,
+      "txCount": 4442
     },
     {
-      "height": 960562,
-      "id": "00000000000000000001fbed1f4d8af3fc5b134961237f1ae2099c38eddfeacf",
-      "timestamp": 1785588823,
-      "txCount": 4296
+      "height": 960581,
+      "id": "00000000000000000000b499ff8fa4eb42525a10f32eec0fccbc56c7c59c8b1f",
+      "timestamp": 1785597767,
+      "txCount": 3818
     },
     {
-      "height": 960561,
-      "id": "000000000000000000019dd487131c85d43f809d67b1beabf8b71047f521ae90",
-      "timestamp": 1785587781,
-      "txCount": 3783
+      "height": 960580,
+      "id": "0000000000000000000036ef31150f96bd3d249fa6c87531c8e92955e5f59d60",
+      "timestamp": 1785597433,
+      "txCount": 6350
     },
     {
-      "height": 960560,
-      "id": "00000000000000000000af0bedcc1ba22d4a24dcb2eb3c6eb21723d577b12e12",
-      "timestamp": 1785587101,
-      "txCount": 4560
+      "height": 960579,
+      "id": "0000000000000000000219432a534086ab3820f6593dc0dc8d0aec20916bf497",
+      "timestamp": 1785597624,
+      "txCount": 5836
     },
     {
-      "height": 960559,
-      "id": "0000000000000000000137a319c8d8c1649f007551b9986247eaf646346a4652",
-      "timestamp": 1785585383,
-      "txCount": 4889
+      "height": 960578,
+      "id": "00000000000000000000f39dbe75978d2ac2297fe235e29dcde2c933b04e7fd4",
+      "timestamp": 1785597245,
+      "txCount": 4095
     },
     {
-      "height": 960558,
-      "id": "000000000000000000013f2285e15e45244c1eaf6a4c994d2bdb353586895e6c",
-      "timestamp": 1785584718,
-      "txCount": 3758
+      "height": 960577,
+      "id": "00000000000000000001f8e93aa4776c79247462a709a190e9a1d3af07eda1a2",
+      "timestamp": 1785597134,
+      "txCount": 3977
     }
   ],
   "news": [
+    {
+      "title": "Bank of Italy research suggests stablecoins aren't necessarily cheaper for remittances",
+      "link": "https://www.coindesk.com/business/2026/08/01/bank-of-italy-research-suggests-stablecoins-aren-t-necessarily-cheaper-for-remittances",
+      "pubDate": "Sat, 01 Aug 2026 16:00:00 +0000"
+    },
+    {
+      "title": "Bitcoin mining difficulty shrinks 14% from this year's high as plunging revenues force operators to pivot",
+      "link": "https://www.coindesk.com/business/2026/08/01/bitcoin-mining-difficulty-shrinks-14-from-this-year-s-high-as-plunging-revenues-force-operators-to-pivot",
+      "pubDate": "Sat, 01 Aug 2026 15:51:10 +0000"
+    },
+    {
+      "title": "SEC to review Nasdaq bitcoin options approval after CME challenge",
+      "link": "https://www.coindesk.com/policy/2026/08/01/sec-to-review-nasdaq-bitcoin-options-approval-after-cme-challenge",
+      "pubDate": "Sat, 01 Aug 2026 15:48:27 +0000"
+    },
     {
       "title": "Solana Foundation's new CISO warns AI is making crypto scams more convincing",
       "link": "https://www.coindesk.com/tech/2026/07/31/solana-foundation-s-new-ciso-warns-ai-is-making-crypto-scams-more-convincing",
@@ -470,21 +485,6 @@
       "title": "Coldcard's $38 million (so far) exploit shakes faith in self-custody, may push investors to ETFs",
       "link": "https://www.coindesk.com/business/2026/07/31/coldcard-s-usd38-million-so-far-exploit-shakes-faith-in-self-custody-may-push-investors-to-etfs",
       "pubDate": "Fri, 31 Jul 2026 17:07:30 +0000"
-    },
-    {
-      "title": "Quantum computing nears commercial breakthrough, IBM CEO says",
-      "link": "https://www.coindesk.com/markets/2026/07/31/quantum-computing-nears-commercial-breakthrough-ibm-ceo-says",
-      "pubDate": "Fri, 31 Jul 2026 15:39:30 +0000"
-    },
-    {
-      "title": "Crypto faces 3 barriers to next bull run, STS Digital CEO says",
-      "link": "https://www.coindesk.com/markets/2026/07/31/crypto-faces-3-barriers-to-next-bull-run-sts-digital-ceo-says",
-      "pubDate": "Fri, 31 Jul 2026 15:00:00 +0000"
-    },
-    {
-      "title": "Circle secures New York trust charter as crypto regulatory push accelerates",
-      "link": "https://www.coindesk.com/policy/2026/07/31/circle-secures-new-york-trust-charter-as-crypto-regulatory-push-accelerates",
-      "pubDate": "Fri, 31 Jul 2026 13:35:17 +0000"
     }
   ]
 }
