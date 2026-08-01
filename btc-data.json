@@ -1,13 +1,13 @@
 {
-  "fetchedAt": "2026-08-01T16:10:57.739Z",
+  "fetchedAt": "2026-08-01T19:30:13.030Z",
   "price": {
-    "usd": 62933,
-    "time": 1785600309
+    "usd": 62470,
+    "time": 1785612310
   },
   "moves": {
-    "d1": 0.17974165398579878,
-    "d7": -2.1508743899849136,
-    "d30": 2.3463660476285453
+    "d1": -0.5572837601180214,
+    "d7": -2.8707533907863514,
+    "d30": 1.5934007117943683
   },
   "history90d": [
     {
@@ -372,60 +372,65 @@
     },
     {
       "date": "2026-08-01",
-      "close": 62915.54447456494
+      "close": 62495.95479853868
     }
   ],
   "blocks": [
     {
-      "height": 960584,
-      "id": "00000000000000000000f225069122aa29bcbb07a02e55659326ac6fa876442c",
-      "timestamp": 1785599175,
-      "txCount": 4504
+      "height": 960611,
+      "id": "00000000000000000000b506d236fb92b440acf3487f870f55b94941b6bab0ee",
+      "timestamp": 1785611978,
+      "txCount": 4688
     },
     {
-      "height": 960583,
-      "id": "00000000000000000000a15573f8f9c3ae468e2f100a7ebc64c93f7255596f87",
-      "timestamp": 1785598718,
-      "txCount": 3507
+      "height": 960610,
+      "id": "0000000000000000000086c8e5f5a13063b8231538c3e9acd571f0d6ac766aea",
+      "timestamp": 1785611838,
+      "txCount": 4844
     },
     {
-      "height": 960582,
-      "id": "00000000000000000001e22305fb9341b154695e61dfbf47538fc79162e4f3e2",
-      "timestamp": 1785598111,
-      "txCount": 4442
+      "height": 960609,
+      "id": "00000000000000000000a03afa531e4da7c9d2f4a967eabe69229a45ea1f8fa0",
+      "timestamp": 1785611389,
+      "txCount": 4181
     },
     {
-      "height": 960581,
-      "id": "00000000000000000000b499ff8fa4eb42525a10f32eec0fccbc56c7c59c8b1f",
-      "timestamp": 1785597767,
-      "txCount": 3818
+      "height": 960608,
+      "id": "000000000000000000005f7a6b4a688a3cb0acfde85d15d0e261ad101a69d44a",
+      "timestamp": 1785610196,
+      "txCount": 6100
     },
     {
-      "height": 960580,
-      "id": "0000000000000000000036ef31150f96bd3d249fa6c87531c8e92955e5f59d60",
-      "timestamp": 1785597433,
-      "txCount": 6350
+      "height": 960607,
+      "id": "0000000000000000000025ebd455dd8f6454bae43e09d7fd8c979a7361291bc2",
+      "timestamp": 1785610132,
+      "txCount": 5420
     },
     {
-      "height": 960579,
-      "id": "0000000000000000000219432a534086ab3820f6593dc0dc8d0aec20916bf497",
-      "timestamp": 1785597624,
-      "txCount": 5836
+      "height": 960606,
+      "id": "00000000000000000000949c1be6bc7fa359143d66fe70c9d8a5cc3723169b18",
+      "timestamp": 1785610112,
+      "txCount": 4257
     },
     {
-      "height": 960578,
-      "id": "00000000000000000000f39dbe75978d2ac2297fe235e29dcde2c933b04e7fd4",
-      "timestamp": 1785597245,
-      "txCount": 4095
+      "height": 960605,
+      "id": "00000000000000000001fea5181a617f45655bab8376c20dda8cf6be5a257485",
+      "timestamp": 1785609447,
+      "txCount": 4177
     },
     {
-      "height": 960577,
-      "id": "00000000000000000001f8e93aa4776c79247462a709a190e9a1d3af07eda1a2",
-      "timestamp": 1785597134,
-      "txCount": 3977
+      "height": 960604,
+      "id": "0000000000000000000125f3ac86ce3e852b5c0bde1d8a562f15ab7fcfe9f8c8",
+      "timestamp": 1785609067,
+      "txCount": 6251
     }
   ],
   "news": [
+    {
+      "title": "Tokenized stock trading surged 288% in July, but one QQQ token drove most of it",
+      "link": "https://www.coindesk.com/markets/2026/08/01/tokenized-stock-trading-surged-288-in-july-but-one-qqq-token-drove-most-of-it",
+      "pubDate": "Sat, 01 Aug 2026 16:51:35 +0000"
+    },
     {
       "title": "Bank of Italy research suggests stablecoins aren't necessarily cheaper for remittances",
       "link": "https://www.coindesk.com/business/2026/08/01/bank-of-italy-research-suggests-stablecoins-aren-t-necessarily-cheaper-for-remittances",
@@ -480,11 +485,6 @@
       "title": "The good and the bad of perps, according to crypto traders",
       "link": "https://www.coindesk.com/business/2026/07/31/the-good-and-the-bad-of-perps-according-to-crypto-traders",
       "pubDate": "Fri, 31 Jul 2026 17:53:59 +0000"
-    },
-    {
-      "title": "Coldcard's $38 million (so far) exploit shakes faith in self-custody, may push investors to ETFs",
-      "link": "https://www.coindesk.com/business/2026/07/31/coldcard-s-usd38-million-so-far-exploit-shakes-faith-in-self-custody-may-push-investors-to-etfs",
-      "pubDate": "Fri, 31 Jul 2026 17:07:30 +0000"
     }
   ]
 }
