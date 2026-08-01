@@ -1,13 +1,13 @@
 {
-  "fetchedAt": "2026-08-01T08:32:27.072Z",
+  "fetchedAt": "2026-08-01T10:46:17.916Z",
   "price": {
-    "usd": 63042,
-    "time": 1785572708
+    "usd": 62979,
+    "time": 1785580809
   },
   "moves": {
-    "d1": 0.35325303657178786,
-    "d7": -1.9813996360165342,
-    "d30": 2.5236300251791244
+    "d1": 0.2529666411321685,
+    "d7": -2.079352934181744,
+    "d30": 2.421174698704931
   },
   "history90d": [
     {
@@ -372,60 +372,65 @@
     },
     {
       "date": "2026-08-01",
-      "close": 63035.37185677043
+      "close": 63012.77860140616
     }
   ],
   "blocks": [
     {
-      "height": 960538,
-      "id": "0000000000000000000121c750257bbe00814d553d209193ca05bcd4979065e7",
-      "timestamp": 1785572028,
-      "txCount": 5766
+      "height": 960550,
+      "id": "00000000000000000000bb41264ea727b012405bb0463bd06a8ff9f0b9192060",
+      "timestamp": 1785580254,
+      "txCount": 5287
     },
     {
-      "height": 960537,
-      "id": "00000000000000000001e9ffdd4339820eb373f7aa3db2a736e8b2616e2e1179",
-      "timestamp": 1785571861,
-      "txCount": 4614
+      "height": 960549,
+      "id": "00000000000000000000476cf1f91ef192d04b42571484acd2b89fff5ff40646",
+      "timestamp": 1785580103,
+      "txCount": 4392
     },
     {
-      "height": 960536,
-      "id": "00000000000000000001416cc9613e8ba7cf6205c1e283b94e440451bbd43da6",
-      "timestamp": 1785571846,
-      "txCount": 4342
+      "height": 960548,
+      "id": "00000000000000000001485779b7d63c68cec3250384d27a07c4900c1ad545fb",
+      "timestamp": 1785579649,
+      "txCount": 5877
     },
     {
-      "height": 960535,
-      "id": "00000000000000000001ef056d48e325956ca0ce638968e97ef2d999695fb30a",
-      "timestamp": 1785570703,
-      "txCount": 1044
+      "height": 960547,
+      "id": "000000000000000000009d22dc6ce02f3256a3ad022acbdf400a3faccbed25cc",
+      "timestamp": 1785579260,
+      "txCount": 4495
     },
     {
-      "height": 960534,
-      "id": "000000000000000000014970766b360dfb81711532ac760902b7bf74a46fbbcb",
-      "timestamp": 1785570553,
-      "txCount": 3971
+      "height": 960546,
+      "id": "00000000000000000000524fbebe323ace89569852ad64e56be8e308dd7b00eb",
+      "timestamp": 1785578951,
+      "txCount": 3884
     },
     {
-      "height": 960533,
-      "id": "000000000000000000012ee50b90fd5671433a7e5c92422dbd3e9cb8695b0fec",
-      "timestamp": 1785569585,
-      "txCount": 5714
+      "height": 960545,
+      "id": "00000000000000000001da9a96c43833050958bc59888b6a8116ebaf913e5f2a",
+      "timestamp": 1785578882,
+      "txCount": 4620
     },
     {
-      "height": 960532,
-      "id": "000000000000000000022620ddd713fb5b89cc5054d0ae1f64ce0b67a0db8720",
-      "timestamp": 1785569259,
-      "txCount": 6303
+      "height": 960544,
+      "id": "00000000000000000001a066f85bc7025f2ccf6a7bbd1a18552ab0abe40eafee",
+      "timestamp": 1785578285,
+      "txCount": 3642
     },
     {
-      "height": 960531,
-      "id": "00000000000000000001073f3e30994daef122910bba30a74b823be0ae16e27c",
-      "timestamp": 1785569117,
-      "txCount": 5193
+      "height": 960543,
+      "id": "000000000000000000013ebd1979f41122f0c0f6367a7c0c477aeb04867c5343",
+      "timestamp": 1785576950,
+      "txCount": 4390
     }
   ],
   "news": [
+    {
+      "title": "Binance founder CZ calls for wallet diversification after $70 million Coldcard exploit",
+      "link": "https://www.coindesk.com/markets/2026/08/01/binance-founder-cz-says-diversify-your-wallets-following-usd70-million-coldcard-exploit",
+      "pubDate": "Sat, 01 Aug 2026 09:01:08 +0000"
+    },
     {
       "title": "XRP Ledger upgrade brings back features once pulled over critical bugs",
       "link": "https://www.coindesk.com/tech/2026/08/01/xrp-ledger-upgrade-brings-back-features-once-pulled-over-critical-bugs",
@@ -480,11 +485,6 @@
       "title": "RWA perps will outpace tokenization",
       "link": "https://www.coindesk.com/opinion/2026/07/31/rwa-perps-will-outpace-tokenization",
       "pubDate": "Fri, 31 Jul 2026 13:00:00 +0000"
-    },
-    {
-      "title": "Dubai-based crypto exchange tied to $4 billion Iran sanctioned-evasion network",
-      "link": "https://www.coindesk.com/business/2026/07/31/dubai-based-crypto-exchange-tied-to-usd4-billion-iran-sanctioned-evasion-network-reuters",
-      "pubDate": "Fri, 31 Jul 2026 12:28:02 +0000"
     }
   ]
 }
