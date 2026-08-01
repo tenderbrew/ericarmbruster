@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-07-30T00:10:01.353Z",
+  "fetchedAt": "2026-08-01T00:10:02.005Z",
   "note": "main services only; databases/caches/workers are filtered as implementation detail",
   "services": [
     {
@@ -99,19 +99,11 @@
       "project": "infra"
     },
     {
-      "name": "homepage",
-      "project": "infra"
-    },
-    {
       "name": "netdata",
       "project": "infra"
     },
     {
       "name": "socket-proxy-ro",
-      "project": "infra"
-    },
-    {
-      "name": "speedtest-tracker",
       "project": "infra"
     },
     {
@@ -135,10 +127,6 @@
       "project": "photos"
     },
     {
-      "name": "bedrockconnect",
-      "project": "standalone"
-    },
-    {
       "name": "bitcoind",
       "project": "standalone"
     },
@@ -152,10 +140,6 @@
     },
     {
       "name": "homeassistant",
-      "project": "standalone"
-    },
-    {
-      "name": "minecraft",
       "project": "standalone"
     }
   ]
