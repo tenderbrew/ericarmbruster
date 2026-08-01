@@ -1,13 +1,13 @@
 {
-  "fetchedAt": "2026-08-01T19:30:13.030Z",
+  "fetchedAt": "2026-08-01T22:08:33.092Z",
   "price": {
-    "usd": 62470,
-    "time": 1785612310
+    "usd": 62771,
+    "time": 1785621909
   },
   "moves": {
-    "d1": -0.5572837601180214,
-    "d7": -2.8707533907863514,
-    "d30": 1.5934007117943683
+    "d1": -0.0781376485732177,
+    "d7": -2.4027542995525897,
+    "d30": 2.082909493837759
   },
   "history90d": [
     {
@@ -372,60 +372,70 @@
     },
     {
       "date": "2026-08-01",
-      "close": 62495.95479853868
+      "close": 62773.888583769636
     }
   ],
   "blocks": [
     {
-      "height": 960611,
-      "id": "00000000000000000000b506d236fb92b440acf3487f870f55b94941b6bab0ee",
-      "timestamp": 1785611978,
-      "txCount": 4688
+      "height": 960629,
+      "id": "000000000000000000019f0f11172f6d903d884f6b06625bb5f142e1c18ecfed",
+      "timestamp": 1785622004,
+      "txCount": 3781
     },
     {
-      "height": 960610,
-      "id": "0000000000000000000086c8e5f5a13063b8231538c3e9acd571f0d6ac766aea",
-      "timestamp": 1785611838,
-      "txCount": 4844
+      "height": 960628,
+      "id": "000000000000000000018bd163952921acc26aaace310ace154b3e3eb9e08868",
+      "timestamp": 1785621485,
+      "txCount": 5719
     },
     {
-      "height": 960609,
-      "id": "00000000000000000000a03afa531e4da7c9d2f4a967eabe69229a45ea1f8fa0",
-      "timestamp": 1785611389,
-      "txCount": 4181
+      "height": 960627,
+      "id": "000000000000000000018ec5dfe7edab9261d362c4e326d2529954e771308620",
+      "timestamp": 1785621259,
+      "txCount": 6097
     },
     {
-      "height": 960608,
-      "id": "000000000000000000005f7a6b4a688a3cb0acfde85d15d0e261ad101a69d44a",
-      "timestamp": 1785610196,
-      "txCount": 6100
+      "height": 960626,
+      "id": "00000000000000000000c73fbd61de753a67941e5049b60ac55d4a127023a876",
+      "timestamp": 1785621145,
+      "txCount": 4037
     },
     {
-      "height": 960607,
-      "id": "0000000000000000000025ebd455dd8f6454bae43e09d7fd8c979a7361291bc2",
-      "timestamp": 1785610132,
-      "txCount": 5420
+      "height": 960625,
+      "id": "000000000000000000006f91b88fcec1b77f1f5afba9f4779593a3dd1cd313ee",
+      "timestamp": 1785621097,
+      "txCount": 4273
     },
     {
-      "height": 960606,
-      "id": "00000000000000000000949c1be6bc7fa359143d66fe70c9d8a5cc3723169b18",
-      "timestamp": 1785610112,
-      "txCount": 4257
+      "height": 960624,
+      "id": "0000000000000000000147dd106ed2c886c6665b6293d93a5650c6e81ea256e6",
+      "timestamp": 1785620826,
+      "txCount": 3844
     },
     {
-      "height": 960605,
-      "id": "00000000000000000001fea5181a617f45655bab8376c20dda8cf6be5a257485",
-      "timestamp": 1785609447,
-      "txCount": 4177
+      "height": 960623,
+      "id": "000000000000000000020cac9b9c9bb680d04a63db76437fd5639b2da50a4f6f",
+      "timestamp": 1785618401,
+      "txCount": 5613
     },
     {
-      "height": 960604,
-      "id": "0000000000000000000125f3ac86ce3e852b5c0bde1d8a562f15ab7fcfe9f8c8",
-      "timestamp": 1785609067,
-      "txCount": 6251
+      "height": 960622,
+      "id": "00000000000000000000720a9f5dc9c7b2ed4e8805c672b527de73463d0fcd97",
+      "timestamp": 1785618308,
+      "txCount": 5207
     }
   ],
   "news": [
+    {
+      "title": "Strategy holds STRC dividend at 12%",
+      "link": "https://www.coindesk.com/markets/2026/08/01/strategy-holds-strc-dividend-at-12",
+      "pubDate": "Sat, 01 Aug 2026 22:01:57 +0000"
+    },
+    {
+      "title": "Bitcoin cold-wallet attack spreads to 4,500 addresses as losses near $89 million",
+      "link": "https://www.coindesk.com/tech/2026/08/02/bitcoin-cold-wallet-attack-spreads-to-4-500-addresses-as-losses-near-usd89-million",
+      "pubDate": "Sat, 01 Aug 2026 20:10:54 +0000"
+    },
     {
       "title": "Tokenized stock trading surged 288% in July, but one QQQ token drove most of it",
       "link": "https://www.coindesk.com/markets/2026/08/01/tokenized-stock-trading-surged-288-in-july-but-one-qqq-token-drove-most-of-it",
@@ -475,16 +485,6 @@
       "title": "Bitcoin holds monthly gain, faces 'choppy' August as 'forced-selling' exhausted, analysts say",
       "link": "https://www.coindesk.com/markets/2026/07/31/bitcoin-holds-onto-july-gain-as-forced-selling-fuel-was-already-spent-analysts-say",
       "pubDate": "Fri, 31 Jul 2026 20:50:58 +0000"
-    },
-    {
-      "title": "Tether posts $1.5 billion operating profit in Q2 as reserve buffer falls by half",
-      "link": "https://www.coindesk.com/business/2026/07/31/tether-posts-usd1-5-billion-operating-profit-in-q2-as-reserve-buffer-falls-by-half",
-      "pubDate": "Fri, 31 Jul 2026 18:24:55 +0000"
-    },
-    {
-      "title": "The good and the bad of perps, according to crypto traders",
-      "link": "https://www.coindesk.com/business/2026/07/31/the-good-and-the-bad-of-perps-according-to-crypto-traders",
-      "pubDate": "Fri, 31 Jul 2026 17:53:59 +0000"
     }
   ]
 }
