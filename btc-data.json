@@ -1,13 +1,13 @@
 {
-  "fetchedAt": "2026-08-01T10:46:17.916Z",
+  "fetchedAt": "2026-08-01T13:50:24.264Z",
   "price": {
-    "usd": 62979,
-    "time": 1785580809
+    "usd": 63021,
+    "time": 1785591909
   },
   "moves": {
-    "d1": 0.2529666411321685,
-    "d7": -2.079352934181744,
-    "d30": 2.421174698704931
+    "d1": 0.31982423809191474,
+    "d7": -2.0140507354049375,
+    "d30": 2.4894782496877266
   },
   "history90d": [
     {
@@ -372,60 +372,70 @@
     },
     {
       "date": "2026-08-01",
-      "close": 63012.77860140616
+      "close": 63010.24725608965
     }
   ],
   "blocks": [
     {
-      "height": 960550,
-      "id": "00000000000000000000bb41264ea727b012405bb0463bd06a8ff9f0b9192060",
-      "timestamp": 1785580254,
-      "txCount": 5287
+      "height": 960565,
+      "id": "000000000000000000009c533bb5d1a035052ab0b1d206f23596272b0b4578ae",
+      "timestamp": 1785591973,
+      "txCount": 4567
     },
     {
-      "height": 960549,
-      "id": "00000000000000000000476cf1f91ef192d04b42571484acd2b89fff5ff40646",
-      "timestamp": 1785580103,
-      "txCount": 4392
+      "height": 960564,
+      "id": "00000000000000000001f0180e601c57725576bd772b554924a628bb930c42be",
+      "timestamp": 1785590497,
+      "txCount": 4087
     },
     {
-      "height": 960548,
-      "id": "00000000000000000001485779b7d63c68cec3250384d27a07c4900c1ad545fb",
-      "timestamp": 1785579649,
-      "txCount": 5877
+      "height": 960563,
+      "id": "00000000000000000000ae95f3f90a88550b0aad6e936636862cfbbc3972fdd4",
+      "timestamp": 1785589456,
+      "txCount": 3764
     },
     {
-      "height": 960547,
-      "id": "000000000000000000009d22dc6ce02f3256a3ad022acbdf400a3faccbed25cc",
-      "timestamp": 1785579260,
-      "txCount": 4495
+      "height": 960562,
+      "id": "00000000000000000001fbed1f4d8af3fc5b134961237f1ae2099c38eddfeacf",
+      "timestamp": 1785588823,
+      "txCount": 4296
     },
     {
-      "height": 960546,
-      "id": "00000000000000000000524fbebe323ace89569852ad64e56be8e308dd7b00eb",
-      "timestamp": 1785578951,
-      "txCount": 3884
+      "height": 960561,
+      "id": "000000000000000000019dd487131c85d43f809d67b1beabf8b71047f521ae90",
+      "timestamp": 1785587781,
+      "txCount": 3783
     },
     {
-      "height": 960545,
-      "id": "00000000000000000001da9a96c43833050958bc59888b6a8116ebaf913e5f2a",
-      "timestamp": 1785578882,
-      "txCount": 4620
+      "height": 960560,
+      "id": "00000000000000000000af0bedcc1ba22d4a24dcb2eb3c6eb21723d577b12e12",
+      "timestamp": 1785587101,
+      "txCount": 4560
     },
     {
-      "height": 960544,
-      "id": "00000000000000000001a066f85bc7025f2ccf6a7bbd1a18552ab0abe40eafee",
-      "timestamp": 1785578285,
-      "txCount": 3642
+      "height": 960559,
+      "id": "0000000000000000000137a319c8d8c1649f007551b9986247eaf646346a4652",
+      "timestamp": 1785585383,
+      "txCount": 4889
     },
     {
-      "height": 960543,
-      "id": "000000000000000000013ebd1979f41122f0c0f6367a7c0c477aeb04867c5343",
-      "timestamp": 1785576950,
-      "txCount": 4390
+      "height": 960558,
+      "id": "000000000000000000013f2285e15e45244c1eaf6a4c994d2bdb353586895e6c",
+      "timestamp": 1785584718,
+      "txCount": 3758
     }
   ],
   "news": [
+    {
+      "title": "Solana Foundation's new CISO warns AI is making crypto scams more convincing",
+      "link": "https://www.coindesk.com/tech/2026/07/31/solana-foundation-s-new-ciso-warns-ai-is-making-crypto-scams-more-convincing",
+      "pubDate": "Sat, 01 Aug 2026 13:00:00 +0000"
+    },
+    {
+      "title": "Everyone has the perps convergence backwards",
+      "link": "https://www.coindesk.com/opinion/2026/08/01/everyone-has-the-perps-convergence-backwards",
+      "pubDate": "Sat, 01 Aug 2026 13:00:00 +0000"
+    },
     {
       "title": "Binance founder CZ calls for wallet diversification after $70 million Coldcard exploit",
       "link": "https://www.coindesk.com/markets/2026/08/01/binance-founder-cz-says-diversify-your-wallets-following-usd70-million-coldcard-exploit",
@@ -475,16 +485,6 @@
       "title": "Circle secures New York trust charter as crypto regulatory push accelerates",
       "link": "https://www.coindesk.com/policy/2026/07/31/circle-secures-new-york-trust-charter-as-crypto-regulatory-push-accelerates",
       "pubDate": "Fri, 31 Jul 2026 13:35:17 +0000"
-    },
-    {
-      "title": "Coinbase's weak quarter leaves Wall Street split on timing of a recovery",
-      "link": "https://www.coindesk.com/markets/2026/07/31/coinbase-s-weak-quarter-leaves-wall-street-split-on-timing-of-a-recovery",
-      "pubDate": "Fri, 31 Jul 2026 13:20:45 +0000"
-    },
-    {
-      "title": "RWA perps will outpace tokenization",
-      "link": "https://www.coindesk.com/opinion/2026/07/31/rwa-perps-will-outpace-tokenization",
-      "pubDate": "Fri, 31 Jul 2026 13:00:00 +0000"
     }
   ]
 }
