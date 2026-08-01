@@ -1,13 +1,13 @@
 {
-  "fetchedAt": "2026-08-01T03:46:11.796Z",
+  "fetchedAt": "2026-08-01T08:32:27.072Z",
   "price": {
-    "usd": 62942,
-    "time": 1785555609
+    "usd": 63042,
+    "time": 1785572708
   },
   "moves": {
-    "d1": 0.19406828190573489,
-    "d7": -2.1368810616755995,
-    "d30": 2.3610025228391507
+    "d1": 0.35325303657178786,
+    "d7": -1.9813996360165342,
+    "d30": 2.5236300251791244
   },
   "history90d": [
     {
@@ -372,60 +372,70 @@
     },
     {
       "date": "2026-08-01",
-      "close": 62937.274832627714
+      "close": 63035.37185677043
     }
   ],
   "blocks": [
     {
-      "height": 960506,
-      "id": "00000000000000000000aa48ef985a67c3996877276817125fdaa9e4a7c1d858",
-      "timestamp": 1785556258,
-      "txCount": 6770
+      "height": 960538,
+      "id": "0000000000000000000121c750257bbe00814d553d209193ca05bcd4979065e7",
+      "timestamp": 1785572028,
+      "txCount": 5766
     },
     {
-      "height": 960505,
-      "id": "000000000000000000018d4eb6a02b6e98c18ccca2a1cf01c62cb0a2cea3e081",
-      "timestamp": 1785555781,
-      "txCount": 4898
+      "height": 960537,
+      "id": "00000000000000000001e9ffdd4339820eb373f7aa3db2a736e8b2616e2e1179",
+      "timestamp": 1785571861,
+      "txCount": 4614
     },
     {
-      "height": 960504,
-      "id": "00000000000000000000d67aa800881b594d7cbc410445b9f076805cb2b2b357",
-      "timestamp": 1785555774,
-      "txCount": 4510
+      "height": 960536,
+      "id": "00000000000000000001416cc9613e8ba7cf6205c1e283b94e440451bbd43da6",
+      "timestamp": 1785571846,
+      "txCount": 4342
     },
     {
-      "height": 960503,
-      "id": "000000000000000000019d668df9f4d0dd9501c8e801485bdd27671522352505",
-      "timestamp": 1785555684,
-      "txCount": 2588
+      "height": 960535,
+      "id": "00000000000000000001ef056d48e325956ca0ce638968e97ef2d999695fb30a",
+      "timestamp": 1785570703,
+      "txCount": 1044
     },
     {
-      "height": 960502,
-      "id": "00000000000000000000b6258f4a2e998e8e1c93dd2b266514d6a16f640258ff",
-      "timestamp": 1785554750,
-      "txCount": 4088
+      "height": 960534,
+      "id": "000000000000000000014970766b360dfb81711532ac760902b7bf74a46fbbcb",
+      "timestamp": 1785570553,
+      "txCount": 3971
     },
     {
-      "height": 960501,
-      "id": "000000000000000000010e041958450fc42e54d7d3557229e073cec02ecf217b",
-      "timestamp": 1785554410,
-      "txCount": 2959
+      "height": 960533,
+      "id": "000000000000000000012ee50b90fd5671433a7e5c92422dbd3e9cb8695b0fec",
+      "timestamp": 1785569585,
+      "txCount": 5714
     },
     {
-      "height": 960500,
-      "id": "00000000000000000000d121b0b62b54a09cda3246ad80b699c1ce9d43a467e4",
-      "timestamp": 1785553983,
-      "txCount": 3419
+      "height": 960532,
+      "id": "000000000000000000022620ddd713fb5b89cc5054d0ae1f64ce0b67a0db8720",
+      "timestamp": 1785569259,
+      "txCount": 6303
     },
     {
-      "height": 960499,
-      "id": "00000000000000000000e5995ffd43dc0649c222f4b557f2df698463d772dac9",
-      "timestamp": 1785553576,
-      "txCount": 3877
+      "height": 960531,
+      "id": "00000000000000000001073f3e30994daef122910bba30a74b823be0ae16e27c",
+      "timestamp": 1785569117,
+      "txCount": 5193
     }
   ],
   "news": [
+    {
+      "title": "XRP Ledger upgrade brings back features once pulled over critical bugs",
+      "link": "https://www.coindesk.com/tech/2026/08/01/xrp-ledger-upgrade-brings-back-features-once-pulled-over-critical-bugs",
+      "pubDate": "Sat, 01 Aug 2026 06:09:51 +0000"
+    },
+    {
+      "title": "How bitcoin cold wallets lost $70 million in an attack that never touched the devices",
+      "link": "https://www.coindesk.com/tech/2026/08/01/how-bitcoin-cold-wallets-lost-usd70-million-in-an-attack-that-never-touched-the-devices",
+      "pubDate": "Sat, 01 Aug 2026 05:55:46 +0000"
+    },
     {
       "title": "Bitcoin holds monthly gain, faces 'choppy' August as 'forced-selling' exhausted, analysts say",
       "link": "https://www.coindesk.com/markets/2026/07/31/bitcoin-holds-onto-july-gain-as-forced-selling-fuel-was-already-spent-analysts-say",
@@ -475,16 +485,6 @@
       "title": "Dubai-based crypto exchange tied to $4 billion Iran sanctioned-evasion network",
       "link": "https://www.coindesk.com/business/2026/07/31/dubai-based-crypto-exchange-tied-to-usd4-billion-iran-sanctioned-evasion-network-reuters",
       "pubDate": "Fri, 31 Jul 2026 12:28:02 +0000"
-    },
-    {
-      "title": "World Cup bets smash records as prediction markets hit $20 billion in volume",
-      "link": "https://www.coindesk.com/markets/2026/07/31/world-cup-bets-smash-records-as-prediction-markets-hit-usd20-billion-in-volume",
-      "pubDate": "Fri, 31 Jul 2026 12:00:26 +0000"
-    },
-    {
-      "title": "U.S. sanctions Iran-linked bitcoin insurance scheme for Strait of Hormuz ships",
-      "link": "https://www.coindesk.com/policy/2026/07/31/u-s-sanctions-iran-linked-bitcoin-insurance-scheme-for-strait-of-hormuz-ships",
-      "pubDate": "Fri, 31 Jul 2026 11:58:33 +0000"
     }
   ]
 }
