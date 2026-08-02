@@ -1,8 +1,8 @@
 {
-  "fetchedAt": "2026-08-02T13:50:26.227Z",
+  "fetchedAt": "2026-08-02T16:10:17.439Z",
   "price": {
     "usd": 63027,
-    "time": 1785678309
+    "time": 1785686711
   },
   "moves": {
     "d1": 0.40530873027200265,
@@ -372,60 +372,65 @@
     },
     {
       "date": "2026-08-02",
-      "close": 63064.03178964649
+      "close": 63051.84277743973
     }
   ],
   "blocks": [
     {
-      "height": 960734,
-      "id": "00000000000000000001960a52b620223c63317523ad6e2978276d8623af5120",
-      "timestamp": 1785678095,
-      "txCount": 4091
+      "height": 960747,
+      "id": "000000000000000000004e33b4c5e97dd588954fcae7545a92961c4cf5e42c9f",
+      "timestamp": 1785686250,
+      "txCount": 4725
     },
     {
-      "height": 960733,
-      "id": "00000000000000000001234365130ddc7b20ce753ba1080cfc13160a2d0c2763",
-      "timestamp": 1785678226,
-      "txCount": 4429
+      "height": 960746,
+      "id": "00000000000000000001f1dfa0eb605bae2626d97f59e774b8bcf9ed6ac2293b",
+      "timestamp": 1785686093,
+      "txCount": 4034
     },
     {
-      "height": 960732,
-      "id": "000000000000000000001fe75085bf50293dc0067d19450e06a1116e57504b51",
-      "timestamp": 1785674375,
-      "txCount": 4538
+      "height": 960745,
+      "id": "000000000000000000010e2fde56a278bbf24e3d025ee4aa60d6e22eea09d883",
+      "timestamp": 1785684670,
+      "txCount": 4112
     },
     {
-      "height": 960731,
-      "id": "00000000000000000002132d32492b6afb1f9a302af5cbec75d8ac6fc8b0ebc4",
-      "timestamp": 1785674059,
-      "txCount": 4129
+      "height": 960744,
+      "id": "00000000000000000001a2e880d2347b142ce196cdcaea583385e40e7dbfe338",
+      "timestamp": 1785684128,
+      "txCount": 4740
     },
     {
-      "height": 960730,
-      "id": "000000000000000000007c9a18775e5aed936c9f42fc16a97c25c96f0639cd27",
-      "timestamp": 1785673533,
-      "txCount": 3785
+      "height": 960743,
+      "id": "00000000000000000000a43f1e305bfe27727e10d2dce6ea6daf1166f06bbc02",
+      "timestamp": 1785683546,
+      "txCount": 4747
     },
     {
-      "height": 960729,
-      "id": "00000000000000000001627032360c1902fc575362abda378db108ca3336c708",
-      "timestamp": 1785672869,
-      "txCount": 5661
+      "height": 960742,
+      "id": "00000000000000000000931d3d401410c1a4b317a1d7193b2c7d18b08014211f",
+      "timestamp": 1785682466,
+      "txCount": 4033
     },
     {
-      "height": 960728,
-      "id": "000000000000000000001733d6787b5a7300e57cc66bba7bb9f7fa7dd56cb947",
-      "timestamp": 1785672749,
-      "txCount": 3117
+      "height": 960741,
+      "id": "000000000000000000016b26bf2ae4bc1e976d23a2a0f2a01e3bfea1418b2c0f",
+      "timestamp": 1785680829,
+      "txCount": 5159
     },
     {
-      "height": 960727,
-      "id": "00000000000000000001d549ea6070602e45f05bad906d73ae5b487997009747",
-      "timestamp": 1785672241,
-      "txCount": 4908
+      "height": 960740,
+      "id": "0000000000000000000120b78110511fd7fb89bc973bd29750d8c838c9de7386",
+      "timestamp": 1785680487,
+      "txCount": 4710
     }
   ],
   "news": [
+    {
+      "title": "The future of crypto payments won't include on-ramps or bridges, Fun CEO says",
+      "link": "https://www.coindesk.com/tech/2026/08/02/the-future-of-crypto-payments-won-t-include-on-ramps-or-bridges-fun-ceo-says",
+      "pubDate": "Sun, 02 Aug 2026 16:00:00 +0000"
+    },
     {
       "title": "The reverse bridge: Crypto meets Wall Street using perps",
       "link": "https://www.coindesk.com/business/2026/08/02/the-reverse-bridge-crypto-meets-wall-street-using-perps",
@@ -480,11 +485,6 @@
       "title": "Binance founder CZ calls for wallet diversification after $70 million Coldcard exploit",
       "link": "https://www.coindesk.com/markets/2026/08/01/binance-founder-cz-says-diversify-your-wallets-following-usd70-million-coldcard-exploit",
       "pubDate": "Sat, 01 Aug 2026 09:01:08 +0000"
-    },
-    {
-      "title": "XRP Ledger upgrade brings back features once pulled over critical bugs",
-      "link": "https://www.coindesk.com/tech/2026/08/01/xrp-ledger-upgrade-brings-back-features-once-pulled-over-critical-bugs",
-      "pubDate": "Sat, 01 Aug 2026 06:09:51 +0000"
     }
   ]
 }
