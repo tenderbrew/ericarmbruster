@@ -1,13 +1,13 @@
 {
-  "fetchedAt": "2026-08-02T10:47:59.022Z",
+  "fetchedAt": "2026-08-02T13:50:26.227Z",
   "price": {
-    "usd": 63140,
-    "time": 1785667508
+    "usd": 63027,
+    "time": 1785678309
   },
   "moves": {
-    "d1": 0.5853236427146191,
-    "d7": -3.3231976029286847,
-    "d30": 0.9374152524875834
+    "d1": 0.40530873027200265,
+    "d7": -3.4962175375322424,
+    "d30": 0.7567702109365637
   },
   "history90d": [
     {
@@ -372,60 +372,70 @@
     },
     {
       "date": "2026-08-02",
-      "close": 63147.18097368292
+      "close": 63064.03178964649
     }
   ],
   "blocks": [
     {
-      "height": 960718,
-      "id": "0000000000000000000174cdef812936fedaaadbe191086edd7b4643e061aa50",
-      "timestamp": 1785667733,
-      "txCount": 6329
+      "height": 960734,
+      "id": "00000000000000000001960a52b620223c63317523ad6e2978276d8623af5120",
+      "timestamp": 1785678095,
+      "txCount": 4091
     },
     {
-      "height": 960717,
-      "id": "000000000000000000007ec5a583d0144d93621e20ea4e0003c59d1fd344ef6d",
-      "timestamp": 1785667269,
-      "txCount": 4476
+      "height": 960733,
+      "id": "00000000000000000001234365130ddc7b20ce753ba1080cfc13160a2d0c2763",
+      "timestamp": 1785678226,
+      "txCount": 4429
     },
     {
-      "height": 960716,
-      "id": "0000000000000000000106cee1bd507d27b35743765a3221cdf6daddbf22fd6b",
-      "timestamp": 1785667055,
-      "txCount": 4817
+      "height": 960732,
+      "id": "000000000000000000001fe75085bf50293dc0067d19450e06a1116e57504b51",
+      "timestamp": 1785674375,
+      "txCount": 4538
     },
     {
-      "height": 960715,
-      "id": "000000000000000000020c3d20836aece9c67d5a629e84794bcc9afb4a2133b8",
-      "timestamp": 1785665036,
-      "txCount": 5381
+      "height": 960731,
+      "id": "00000000000000000002132d32492b6afb1f9a302af5cbec75d8ac6fc8b0ebc4",
+      "timestamp": 1785674059,
+      "txCount": 4129
     },
     {
-      "height": 960714,
-      "id": "00000000000000000000dddfb202af2d54669d0986ccdc5ecf8b3ecea406f267",
-      "timestamp": 1785664370,
-      "txCount": 5416
+      "height": 960730,
+      "id": "000000000000000000007c9a18775e5aed936c9f42fc16a97c25c96f0639cd27",
+      "timestamp": 1785673533,
+      "txCount": 3785
     },
     {
-      "height": 960713,
-      "id": "00000000000000000001513cd3b1c55e5474f3b9a24de3b5cd4b82f97925ed95",
-      "timestamp": 1785664292,
-      "txCount": 6819
+      "height": 960729,
+      "id": "00000000000000000001627032360c1902fc575362abda378db108ca3336c708",
+      "timestamp": 1785672869,
+      "txCount": 5661
     },
     {
-      "height": 960712,
-      "id": "000000000000000000020a479823682a97d4d3de0d1d2db80f730ed05df99f14",
-      "timestamp": 1785664221,
-      "txCount": 6059
+      "height": 960728,
+      "id": "000000000000000000001733d6787b5a7300e57cc66bba7bb9f7fa7dd56cb947",
+      "timestamp": 1785672749,
+      "txCount": 3117
     },
     {
-      "height": 960711,
-      "id": "00000000000000000001119ecdc5fb9d5e18dd48d433613859051780c322a017",
-      "timestamp": 1785663916,
-      "txCount": 6542
+      "height": 960727,
+      "id": "00000000000000000001d549ea6070602e45f05bad906d73ae5b487997009747",
+      "timestamp": 1785672241,
+      "txCount": 4908
     }
   ],
   "news": [
+    {
+      "title": "The reverse bridge: Crypto meets Wall Street using perps",
+      "link": "https://www.coindesk.com/business/2026/08/02/the-reverse-bridge-crypto-meets-wall-street-using-perps",
+      "pubDate": "Sun, 02 Aug 2026 13:00:00 +0000"
+    },
+    {
+      "title": "Unlike the FTX collapse, the $89 million Coldcard exploit has investors sending bitcoin back to exchanges",
+      "link": "https://www.coindesk.com/markets/2026/08/02/unlike-the-ftx-collapse-the-usd88-million-coldcard-exploit-has-investors-sending-bitcoin-back-to-exchanges",
+      "pubDate": "Sun, 02 Aug 2026 12:03:51 +0000"
+    },
     {
       "title": "Strategy holds STRC dividend at 12%",
       "link": "https://www.coindesk.com/markets/2026/08/01/strategy-holds-strc-dividend-at-12",
@@ -475,16 +485,6 @@
       "title": "XRP Ledger upgrade brings back features once pulled over critical bugs",
       "link": "https://www.coindesk.com/tech/2026/08/01/xrp-ledger-upgrade-brings-back-features-once-pulled-over-critical-bugs",
       "pubDate": "Sat, 01 Aug 2026 06:09:51 +0000"
-    },
-    {
-      "title": "How bitcoin cold wallets lost $70 million in an attack that never touched the devices",
-      "link": "https://www.coindesk.com/tech/2026/08/01/how-bitcoin-cold-wallets-lost-usd70-million-in-an-attack-that-never-touched-the-devices",
-      "pubDate": "Sat, 01 Aug 2026 05:55:46 +0000"
-    },
-    {
-      "title": "Bitcoin holds monthly gain, faces 'choppy' August as 'forced-selling' exhausted, analysts say",
-      "link": "https://www.coindesk.com/markets/2026/07/31/bitcoin-holds-onto-july-gain-as-forced-selling-fuel-was-already-spent-analysts-say",
-      "pubDate": "Fri, 31 Jul 2026 20:50:58 +0000"
     }
   ]
 }
