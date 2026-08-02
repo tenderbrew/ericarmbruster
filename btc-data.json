@@ -1,13 +1,13 @@
 {
-  "fetchedAt": "2026-08-02T16:10:17.439Z",
+  "fetchedAt": "2026-08-02T19:30:53.002Z",
   "price": {
-    "usd": 63027,
-    "time": 1785686711
+    "usd": 63284,
+    "time": 1785698707
   },
   "moves": {
-    "d1": 0.40530873027200265,
-    "d7": -3.4962175375322424,
-    "d30": 0.7567702109365637
+    "d1": 0.8147231771547636,
+    "d7": -3.1027120225489146,
+    "d30": 1.1676177833136459
   },
   "history90d": [
     {
@@ -372,60 +372,70 @@
     },
     {
       "date": "2026-08-02",
-      "close": 63051.84277743973
+      "close": 63281.249881176096
     }
   ],
   "blocks": [
     {
-      "height": 960747,
-      "id": "000000000000000000004e33b4c5e97dd588954fcae7545a92961c4cf5e42c9f",
-      "timestamp": 1785686250,
-      "txCount": 4725
+      "height": 960764,
+      "id": "00000000000000000001b83907fc15e2a095293fed51dd26caf36466b215cd47",
+      "timestamp": 1785698616,
+      "txCount": 4322
     },
     {
-      "height": 960746,
-      "id": "00000000000000000001f1dfa0eb605bae2626d97f59e774b8bcf9ed6ac2293b",
-      "timestamp": 1785686093,
-      "txCount": 4034
+      "height": 960763,
+      "id": "00000000000000000002223d18efba8b3919c0ecc99928081eb3dec41a997abb",
+      "timestamp": 1785698336,
+      "txCount": 4088
     },
     {
-      "height": 960745,
-      "id": "000000000000000000010e2fde56a278bbf24e3d025ee4aa60d6e22eea09d883",
-      "timestamp": 1785684670,
-      "txCount": 4112
+      "height": 960762,
+      "id": "000000000000000000014f69ab8f4fe18a2fee6294642e8dd60d0c56734a8a04",
+      "timestamp": 1785698240,
+      "txCount": 4191
     },
     {
-      "height": 960744,
-      "id": "00000000000000000001a2e880d2347b142ce196cdcaea583385e40e7dbfe338",
-      "timestamp": 1785684128,
-      "txCount": 4740
+      "height": 960761,
+      "id": "000000000000000000007f2d6b9b795a3dd8daed57049169b6b2ffcc17363b00",
+      "timestamp": 1785696392,
+      "txCount": 5585
     },
     {
-      "height": 960743,
-      "id": "00000000000000000000a43f1e305bfe27727e10d2dce6ea6daf1166f06bbc02",
-      "timestamp": 1785683546,
-      "txCount": 4747
+      "height": 960760,
+      "id": "000000000000000000002a5f6037acd9d3583ba305c487a8d3d8bef3c47606bf",
+      "timestamp": 1785696232,
+      "txCount": 4317
     },
     {
-      "height": 960742,
-      "id": "00000000000000000000931d3d401410c1a4b317a1d7193b2c7d18b08014211f",
-      "timestamp": 1785682466,
-      "txCount": 4033
+      "height": 960759,
+      "id": "00000000000000000000f0704193235cb246d4df6fe27d5b4917ebe7aac26965",
+      "timestamp": 1785695609,
+      "txCount": 5285
     },
     {
-      "height": 960741,
-      "id": "000000000000000000016b26bf2ae4bc1e976d23a2a0f2a01e3bfea1418b2c0f",
-      "timestamp": 1785680829,
-      "txCount": 5159
+      "height": 960758,
+      "id": "00000000000000000000c3915e4525f0184a862ffe3a2de53d9a3404fe885640",
+      "timestamp": 1785695458,
+      "txCount": 3584
     },
     {
-      "height": 960740,
-      "id": "0000000000000000000120b78110511fd7fb89bc973bd29750d8c838c9de7386",
-      "timestamp": 1785680487,
-      "txCount": 4710
+      "height": 960757,
+      "id": "000000000000000000021609d34e0e9d5e76c09cc27f4dad499113874d9106de",
+      "timestamp": 1785695389,
+      "txCount": 3491
     }
   ],
   "news": [
+    {
+      "title": "Counting down the days: State of Crypto",
+      "link": "https://www.coindesk.com/policy/2026/08/02/counting-down-the-days-state-of-crypto",
+      "pubDate": "Sun, 02 Aug 2026 18:30:00 +0000"
+    },
+    {
+      "title": "Why a DeFi platform ditched its consumer app to become the secret backend for tech giants",
+      "link": "https://www.coindesk.com/web3/2026/08/02/why-a-defi-platform-ditched-its-consumer-app-to-become-the-secret-backend-for-tech-giants",
+      "pubDate": "Sun, 02 Aug 2026 17:00:00 +0000"
+    },
     {
       "title": "The future of crypto payments won't include on-ramps or bridges, Fun CEO says",
       "link": "https://www.coindesk.com/tech/2026/08/02/the-future-of-crypto-payments-won-t-include-on-ramps-or-bridges-fun-ceo-says",
@@ -475,16 +485,6 @@
       "title": "Solana Foundation's new CISO warns AI is making crypto scams more convincing",
       "link": "https://www.coindesk.com/tech/2026/07/31/solana-foundation-s-new-ciso-warns-ai-is-making-crypto-scams-more-convincing",
       "pubDate": "Sat, 01 Aug 2026 13:00:00 +0000"
-    },
-    {
-      "title": "Everyone has the perps convergence backwards",
-      "link": "https://www.coindesk.com/opinion/2026/08/01/everyone-has-the-perps-convergence-backwards",
-      "pubDate": "Sat, 01 Aug 2026 13:00:00 +0000"
-    },
-    {
-      "title": "Binance founder CZ calls for wallet diversification after $70 million Coldcard exploit",
-      "link": "https://www.coindesk.com/markets/2026/08/01/binance-founder-cz-says-diversify-your-wallets-following-usd70-million-coldcard-exploit",
-      "pubDate": "Sat, 01 Aug 2026 09:01:08 +0000"
     }
   ]
 }
