@@ -1,13 +1,13 @@
 {
-  "fetchedAt": "2026-08-03T03:49:56.208Z",
+  "fetchedAt": "2026-08-03T10:03:11.946Z",
   "price": {
-    "usd": 62979,
-    "time": 1785728709
+    "usd": 62699,
+    "time": 1785750907
   },
   "moves": {
-    "d1": 0.28082481768620937,
-    "d7": -3.5697127309921695,
-    "d30": 0.6800360339945355
+    "d1": -0.16501635078188803,
+    "d7": -3.9984346928417125,
+    "d30": 0.2324200018327227
   },
   "history90d": [
     {
@@ -368,60 +368,90 @@
     },
     {
       "date": "2026-08-03",
-      "close": 62833.74724179086
+      "close": 62771.21054569422
     }
   ],
   "blocks": [
     {
-      "height": 960817,
-      "id": "00000000000000000000ab4a1c32e343d1910e9d9247b48be7d327be867f5e82",
-      "timestamp": 1785728464,
-      "txCount": 5925
+      "height": 960851,
+      "id": "000000000000000000020d26a6680f419d4128e7062c6e784c6868eb4d7300d1",
+      "timestamp": 1785751363,
+      "txCount": 4514
     },
     {
-      "height": 960816,
-      "id": "0000000000000000000070848fd55696c961e9a54a33978ae59b7d06524aa2f6",
-      "timestamp": 1785728002,
-      "txCount": 5345
+      "height": 960850,
+      "id": "00000000000000000000675a8ae37c88ee1995c01d64eeb5f1f3c92a31a057b4",
+      "timestamp": 1785750982,
+      "txCount": 3447
     },
     {
-      "height": 960815,
-      "id": "00000000000000000000d4ffaaa3ca80350ef94146ce9b35fe09e2bbab4f1678",
-      "timestamp": 1785727670,
-      "txCount": 5167
+      "height": 960849,
+      "id": "00000000000000000001d82eee8f93d63f3e507dfd9f8dce9a9f9d2884be3a25",
+      "timestamp": 1785750692,
+      "txCount": 4505
     },
     {
-      "height": 960814,
-      "id": "00000000000000000001d039485526de6642bdd1f5a0fb5681a9e9f9ec9bbf0b",
-      "timestamp": 1785727037,
-      "txCount": 4791
+      "height": 960848,
+      "id": "00000000000000000000e986f0ba36a4e33c3a439b6b6dcb4a3e7660d9c9c240",
+      "timestamp": 1785749093,
+      "txCount": 883
     },
     {
-      "height": 960813,
-      "id": "00000000000000000000f2293d908d9a738ea21b50ed07110cadfab6ad9665f3",
-      "timestamp": 1785726326,
-      "txCount": 6318
+      "height": 960847,
+      "id": "00000000000000000001e95797ac15f08f9e264681481092034bcbf595373419",
+      "timestamp": 1785749066,
+      "txCount": 5662
     },
     {
-      "height": 960812,
-      "id": "000000000000000000022452e004c258302b4223af9de14ba7c10ef43152a86d",
-      "timestamp": 1785726108,
-      "txCount": 5726
+      "height": 960846,
+      "id": "000000000000000000010a82b087d6f816437010ba92d6754008e4a7cc19816f",
+      "timestamp": 1785748917,
+      "txCount": 3735
     },
     {
-      "height": 960811,
-      "id": "00000000000000000001d74f869cc82fc3ca8f93f5fa3892e682eec4600aa962",
-      "timestamp": 1785725816,
-      "txCount": 6816
+      "height": 960845,
+      "id": "0000000000000000000082deca8403f1bd83c2cadb210359f7b5350d1b223ef6",
+      "timestamp": 1785748859,
+      "txCount": 4246
     },
     {
-      "height": 960810,
-      "id": "000000000000000000019f904d0f9df56493a973a520dbc658e9dab950c12620",
-      "timestamp": 1785725745,
-      "txCount": 4061
+      "height": 960844,
+      "id": "000000000000000000020e0545a022c64edd552e70d09f12b1316b6b21e3ff15",
+      "timestamp": 1785747965,
+      "txCount": 3799
     }
   ],
   "news": [
+    {
+      "title": "Robinhood wins UK crypto registration before new regulatory regime kicks off",
+      "link": "https://www.coindesk.com/policy/2026/08/03/robinhood-wins-uk-crypto-registration-before-new-regulatory-regime-kicks-off",
+      "pubDate": "Mon, 03 Aug 2026 09:38:53 +0000"
+    },
+    {
+      "title": "Coldcard wallet losses may near $114 million as possible fourth sweep emerges",
+      "link": "https://www.coindesk.com/tech/2026/08/03/coldcard-wallet-losses-may-near-usd114-million-as-possible-fourth-sweep-emerges",
+      "pubDate": "Mon, 03 Aug 2026 08:51:39 +0000"
+    },
+    {
+      "title": "U.S. Jobs, Circle, Galaxy, American Bitcoin earnings: Crypto Week Ahead",
+      "link": "https://www.coindesk.com/markets/2026/08/03/u-s-jobs-circle-galaxy-american-bitcoin-earnings-crypto-week-ahead",
+      "pubDate": "Mon, 03 Aug 2026 08:16:28 +0000"
+    },
+    {
+      "title": "Bitcoin slips under $63,000 despite Iran deal hopes as Coldcard losses rattle market",
+      "link": "https://www.coindesk.com/markets/2026/08/03/bitcoin-slips-under-usd63-000-despite-iran-deal-hopes-as-coldcard-losses-rattle-market",
+      "pubDate": "Mon, 03 Aug 2026 06:15:38 +0000"
+    },
+    {
+      "title": "Trump Media’s bitcoin stash may be down to loan collateral after $165 million BTC move",
+      "link": "https://www.coindesk.com/markets/2026/08/03/trump-media-s-bitcoin-stash-may-be-down-to-loan-collateral-after-usd165-million-btc-move",
+      "pubDate": "Mon, 03 Aug 2026 05:52:29 +0000"
+    },
+    {
+      "title": "Michael Saylor’s Strategy is now tracking bitcoin’s 200-week moving average",
+      "link": "https://www.coindesk.com/markets/2026/08/03/michael-saylor-s-strategy-is-now-tracking-bitcoin-s-200-week-moving-average",
+      "pubDate": "Mon, 03 Aug 2026 05:07:49 +0000"
+    },
     {
       "title": "Counting down the days: State of Crypto",
       "link": "https://www.coindesk.com/policy/2026/08/02/counting-down-the-days-state-of-crypto",
@@ -451,36 +481,6 @@
       "title": "Strategy holds STRC dividend at 12%",
       "link": "https://www.coindesk.com/markets/2026/08/01/strategy-holds-strc-dividend-at-12",
       "pubDate": "Sat, 01 Aug 2026 22:01:57 +0000"
-    },
-    {
-      "title": "Bitcoin cold-wallet attack spreads to 4,500 addresses as losses near $89 million",
-      "link": "https://www.coindesk.com/tech/2026/08/02/bitcoin-cold-wallet-attack-spreads-to-4-500-addresses-as-losses-near-usd89-million",
-      "pubDate": "Sat, 01 Aug 2026 20:10:54 +0000"
-    },
-    {
-      "title": "Tokenized stock trading surged 288% in July, but one QQQ token drove most of it",
-      "link": "https://www.coindesk.com/markets/2026/08/01/tokenized-stock-trading-surged-288-in-july-but-one-qqq-token-drove-most-of-it",
-      "pubDate": "Sat, 01 Aug 2026 16:51:35 +0000"
-    },
-    {
-      "title": "Bank of Italy research suggests stablecoins aren't necessarily cheaper for remittances",
-      "link": "https://www.coindesk.com/business/2026/08/01/bank-of-italy-research-suggests-stablecoins-aren-t-necessarily-cheaper-for-remittances",
-      "pubDate": "Sat, 01 Aug 2026 16:00:00 +0000"
-    },
-    {
-      "title": "Bitcoin mining difficulty shrinks 14% from this year's high as plunging revenues force operators to pivot",
-      "link": "https://www.coindesk.com/business/2026/08/01/bitcoin-mining-difficulty-shrinks-14-from-this-year-s-high-as-plunging-revenues-force-operators-to-pivot",
-      "pubDate": "Sat, 01 Aug 2026 15:51:10 +0000"
-    },
-    {
-      "title": "SEC to review Nasdaq bitcoin options approval after CME challenge",
-      "link": "https://www.coindesk.com/policy/2026/08/01/sec-to-review-nasdaq-bitcoin-options-approval-after-cme-challenge",
-      "pubDate": "Sat, 01 Aug 2026 15:48:27 +0000"
-    },
-    {
-      "title": "Solana Foundation's new CISO warns AI is making crypto scams more convincing",
-      "link": "https://www.coindesk.com/tech/2026/07/31/solana-foundation-s-new-ciso-warns-ai-is-making-crypto-scams-more-convincing",
-      "pubDate": "Sat, 01 Aug 2026 13:00:00 +0000"
     }
   ]
 }
