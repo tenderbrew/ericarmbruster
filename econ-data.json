@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-08-03T10:02:32.212Z",
+  "fetchedAt": "2026-08-03T15:09:57.539Z",
   "indicators": {
     "UNRATE": {
       "latest": {
@@ -263,12 +263,12 @@
     },
     "VIXCLS": {
       "latest": {
-        "date": "2026-07-30",
-        "value": 17.09
+        "date": "2026-07-31",
+        "value": 15.99
       },
       "previous": {
-        "date": "2026-07-29",
-        "value": 20.66
+        "date": "2026-07-30",
+        "value": 17.09
       }
     },
     "BOPGSTB": {
@@ -301,6 +301,12 @@
   },
   "news": [
     {
+      "title": "Federal Farm Interventions: Harmful as Usual",
+      "link": "https://mises.org/power-market/federal-farm-interventions-harmful-usual",
+      "pubDate": "Mon, 03 Aug 2026 07:00:00 CDT",
+      "kind": "Article"
+    },
+    {
       "title": "The Slumlord Fed",
       "link": "https://mises.org/mises-wire/slumlord-fed",
       "pubDate": "Mon, 03 Aug 2026 05:00:00 CDT",
@@ -331,16 +337,16 @@
       "kind": "Mises Wire"
     },
     {
-      "title": "Why Comments Sections Are Not Coming Back to Mises.org",
-      "link": "https://mises.org/power-market/why-comments-sections-are-not-coming-back-misesorg",
-      "pubDate": "Fri, 31 Jul 2026 02:00:00 CDT",
-      "kind": "Article"
-    },
-    {
       "title": "Fight for Your (Property) Rights!",
       "link": "https://mises.org/mises-wire/fight-your-property-rights",
       "pubDate": "Fri, 31 Jul 2026 02:00:00 CDT",
       "kind": "Mises Wire"
+    },
+    {
+      "title": "Why Comments Sections Are Not Coming Back to Mises.org",
+      "link": "https://mises.org/power-market/why-comments-sections-are-not-coming-back-misesorg",
+      "pubDate": "Fri, 31 Jul 2026 02:00:00 CDT",
+      "kind": "Article"
     },
     {
       "title": "When \"Limited Government\" Fails to Stop Cronyism and State-Sponsored Wealth Grabbing",
@@ -353,12 +359,6 @@
       "link": "https://mises.org/mises-wire/democracy-bureaucracy-idiocracy",
       "pubDate": "Fri, 31 Jul 2026 05:00:00 CDT",
       "kind": "Mises Wire"
-    },
-    {
-      "title": "Italy suspends its Schengen free movement agreement with Spain after 60,000 migrants reach Spanish territory",
-      "link": "https://mises.org/notes-margin/italy-suspends-its-schengen-free-movement-agreement-spain-after-60000-migrants-reach-spanish-territory-0",
-      "pubDate": "Fri, 31 Jul 2026 03:00:00 CDT",
-      "kind": "Article"
     }
   ]
 }
