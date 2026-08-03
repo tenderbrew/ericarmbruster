@@ -1,13 +1,13 @@
 {
-  "fetchedAt": "2026-08-03T10:03:11.946Z",
+  "fetchedAt": "2026-08-03T15:12:17.648Z",
   "price": {
-    "usd": 62699,
-    "time": 1785750907
+    "usd": 63818,
+    "time": 1785769513
   },
   "moves": {
-    "d1": -0.16501635078188803,
-    "d7": -3.9984346928417125,
-    "d30": 0.2324200018327227
+    "d1": 1.616756033203104,
+    "d7": -2.285077995307294,
+    "d30": 2.0212855017936793
   },
   "history90d": [
     {
@@ -368,119 +368,119 @@
     },
     {
       "date": "2026-08-03",
-      "close": 62771.21054569422
+      "close": 63753.81691336958
     }
   ],
   "blocks": [
     {
-      "height": 960851,
-      "id": "000000000000000000020d26a6680f419d4128e7062c6e784c6868eb4d7300d1",
-      "timestamp": 1785751363,
-      "txCount": 4514
+      "height": 960878,
+      "id": "0000000000000000000167e2574225d4b8c031b01c3e2531cc231a1cd205f01f",
+      "timestamp": 1785770143,
+      "txCount": 4178
     },
     {
-      "height": 960850,
-      "id": "00000000000000000000675a8ae37c88ee1995c01d64eeb5f1f3c92a31a057b4",
-      "timestamp": 1785750982,
-      "txCount": 3447
+      "height": 960877,
+      "id": "000000000000000000019ef1c630406e946cc99dce7af277d64b9c0d7da89bf2",
+      "timestamp": 1785769657,
+      "txCount": 3980
     },
     {
-      "height": 960849,
-      "id": "00000000000000000001d82eee8f93d63f3e507dfd9f8dce9a9f9d2884be3a25",
-      "timestamp": 1785750692,
-      "txCount": 4505
+      "height": 960876,
+      "id": "000000000000000000021043e89e4ed2d6cff61e66b478423f6ad8699d6f6aad",
+      "timestamp": 1785767462,
+      "txCount": 3837
     },
     {
-      "height": 960848,
-      "id": "00000000000000000000e986f0ba36a4e33c3a439b6b6dcb4a3e7660d9c9c240",
-      "timestamp": 1785749093,
-      "txCount": 883
+      "height": 960875,
+      "id": "00000000000000000001a57bf9ae350be4d7dcdad9746bc9acdd9b39434b49ef",
+      "timestamp": 1785767196,
+      "txCount": 3875
     },
     {
-      "height": 960847,
-      "id": "00000000000000000001e95797ac15f08f9e264681481092034bcbf595373419",
-      "timestamp": 1785749066,
-      "txCount": 5662
+      "height": 960874,
+      "id": "0000000000000000000233341ad94a1dc2eb639a1d920f61d7be034949e7cd87",
+      "timestamp": 1785766669,
+      "txCount": 4016
     },
     {
-      "height": 960846,
-      "id": "000000000000000000010a82b087d6f816437010ba92d6754008e4a7cc19816f",
-      "timestamp": 1785748917,
-      "txCount": 3735
+      "height": 960873,
+      "id": "0000000000000000000116e97abd0ec33f2e06db3894e2cf9c5f4262c27ad68c",
+      "timestamp": 1785763665,
+      "txCount": 5615
     },
     {
-      "height": 960845,
-      "id": "0000000000000000000082deca8403f1bd83c2cadb210359f7b5350d1b223ef6",
-      "timestamp": 1785748859,
-      "txCount": 4246
+      "height": 960872,
+      "id": "0000000000000000000115e97dbb5fc5b73daa9ba27808f1c4642ff36f67ca33",
+      "timestamp": 1785763400,
+      "txCount": 4849
     },
     {
-      "height": 960844,
-      "id": "000000000000000000020e0545a022c64edd552e70d09f12b1316b6b21e3ff15",
-      "timestamp": 1785747965,
-      "txCount": 3799
+      "height": 960871,
+      "id": "000000000000000000002e4730c059782e9c1f5869737420194fe4bc0ca8aaaa",
+      "timestamp": 1785763187,
+      "txCount": 4244
     }
   ],
   "news": [
     {
-      "title": "Robinhood wins UK crypto registration before new regulatory regime kicks off",
-      "link": "https://www.coindesk.com/policy/2026/08/03/robinhood-wins-uk-crypto-registration-before-new-regulatory-regime-kicks-off",
-      "pubDate": "Mon, 03 Aug 2026 09:38:53 +0000"
+      "title": "U.S.-Japan intervention revives yen carry trade fears for bitcoin",
+      "link": "https://www.coindesk.com/markets/2026/08/03/u-s-japan-intervention-revives-yen-carry-trade-fears-for-bitcoin",
+      "pubDate": "Mon, 03 Aug 2026 14:46:08 +0000"
     },
     {
-      "title": "Coldcard wallet losses may near $114 million as possible fourth sweep emerges",
-      "link": "https://www.coindesk.com/tech/2026/08/03/coldcard-wallet-losses-may-near-usd114-million-as-possible-fourth-sweep-emerges",
-      "pubDate": "Mon, 03 Aug 2026 08:51:39 +0000"
+      "title": "Circle slides after Morgan Stanley downgrade, cut in price target",
+      "link": "https://www.coindesk.com/markets/2026/08/03/circle-internet-slides-after-morgan-stanley-downgrade-cut-in-price-target",
+      "pubDate": "Mon, 03 Aug 2026 13:59:50 +0000"
     },
     {
-      "title": "U.S. Jobs, Circle, Galaxy, American Bitcoin earnings: Crypto Week Ahead",
-      "link": "https://www.coindesk.com/markets/2026/08/03/u-s-jobs-circle-galaxy-american-bitcoin-earnings-crypto-week-ahead",
-      "pubDate": "Mon, 03 Aug 2026 08:16:28 +0000"
+      "title": "Bernstein sees another leg lower for crypto markets if Clarity Act stalls",
+      "link": "https://www.coindesk.com/policy/2026/08/03/bernstein-sees-another-leg-lower-for-crypto-markets-if-clarity-act-stalls",
+      "pubDate": "Mon, 03 Aug 2026 13:49:40 +0000"
     },
     {
-      "title": "Bitcoin slips under $63,000 despite Iran deal hopes as Coldcard losses rattle market",
-      "link": "https://www.coindesk.com/markets/2026/08/03/bitcoin-slips-under-usd63-000-despite-iran-deal-hopes-as-coldcard-losses-rattle-market",
-      "pubDate": "Mon, 03 Aug 2026 06:15:38 +0000"
+      "title": "BlackRock expands tokenized cash with new blockchain-based money market offerings",
+      "link": "https://www.coindesk.com/business/2026/08/03/blackrock-expands-tokenized-cash-with-new-blockchain-based-money-market-offerings",
+      "pubDate": "Mon, 03 Aug 2026 13:15:46 +0000"
     },
     {
-      "title": "Trump Media’s bitcoin stash may be down to loan collateral after $165 million BTC move",
-      "link": "https://www.coindesk.com/markets/2026/08/03/trump-media-s-bitcoin-stash-may-be-down-to-loan-collateral-after-usd165-million-btc-move",
-      "pubDate": "Mon, 03 Aug 2026 05:52:29 +0000"
+      "title": "Tom Lee's Bitmine bought more ether, added to stock buyback last week",
+      "link": "https://www.coindesk.com/business/2026/08/03/bitmine-bought-more-ether-added-to-stock-buyback-last-week",
+      "pubDate": "Mon, 03 Aug 2026 12:53:21 +0000"
     },
     {
-      "title": "Michael Saylor’s Strategy is now tracking bitcoin’s 200-week moving average",
-      "link": "https://www.coindesk.com/markets/2026/08/03/michael-saylor-s-strategy-is-now-tracking-bitcoin-s-200-week-moving-average",
-      "pubDate": "Mon, 03 Aug 2026 05:07:49 +0000"
+      "title": "Strategy sold another $105 million of bitcoin last week, repurchased $81.2 million of STRC",
+      "link": "https://www.coindesk.com/markets/2026/08/03/strategy-sold-another-usd105-million-of-bitcoin-last-week-repurchased-usd81-2-million-of-strc",
+      "pubDate": "Mon, 03 Aug 2026 12:17:10 +0000"
     },
     {
-      "title": "Counting down the days: State of Crypto",
-      "link": "https://www.coindesk.com/policy/2026/08/02/counting-down-the-days-state-of-crypto",
-      "pubDate": "Sun, 02 Aug 2026 18:30:00 +0000"
+      "title": "Bitget set to exit Japan, close all remaining positions by year-end",
+      "link": "https://www.coindesk.com/policy/2026/08/03/bitget-set-to-exit-japan-close-all-remaining-positions-by-year-end",
+      "pubDate": "Mon, 03 Aug 2026 12:03:41 +0000"
     },
     {
-      "title": "Why a DeFi platform ditched its consumer app to become the secret backend for tech giants",
-      "link": "https://www.coindesk.com/web3/2026/08/02/why-a-defi-platform-ditched-its-consumer-app-to-become-the-secret-backend-for-tech-giants",
-      "pubDate": "Sun, 02 Aug 2026 17:00:00 +0000"
+      "title": "Solo Bitcoin miner nets $200,000 as Coldcard hardware wallet drains rocks sentiment",
+      "link": "https://www.coindesk.com/daybook-us/2026/08/03/solo-bitcoin-miner-nets-usd200-000-as-coldcard-hardware-wallet-drains-rocks-sentiment",
+      "pubDate": "Mon, 03 Aug 2026 11:18:31 +0000"
     },
     {
-      "title": "The future of crypto payments won't include on-ramps or bridges, Fun CEO says",
-      "link": "https://www.coindesk.com/tech/2026/08/02/the-future-of-crypto-payments-won-t-include-on-ramps-or-bridges-fun-ceo-says",
-      "pubDate": "Sun, 02 Aug 2026 16:00:00 +0000"
+      "title": "Bitcoin, ether decline as Coldcard exploit enters a fifth day",
+      "link": "https://www.coindesk.com/markets/2026/08/03/bitcoin-ether-decline-as-coldcard-exploit-enters-a-fifth-day",
+      "pubDate": "Mon, 03 Aug 2026 10:51:37 +0000"
     },
     {
-      "title": "The reverse bridge: Crypto meets Wall Street using perps",
-      "link": "https://www.coindesk.com/business/2026/08/02/the-reverse-bridge-crypto-meets-wall-street-using-perps",
-      "pubDate": "Sun, 02 Aug 2026 13:00:00 +0000"
+      "title": "Bithumb now targets 2028 IPO after major internal restructuring",
+      "link": "https://www.coindesk.com/business/2026/08/03/bithumb-now-targets-2028-ip-after-major-internal-restructuring",
+      "pubDate": "Mon, 03 Aug 2026 10:41:08 +0000"
     },
     {
-      "title": "Unlike the FTX collapse, the $89 million Coldcard exploit has investors sending bitcoin back to exchanges",
-      "link": "https://www.coindesk.com/markets/2026/08/02/unlike-the-ftx-collapse-the-usd88-million-coldcard-exploit-has-investors-sending-bitcoin-back-to-exchanges",
-      "pubDate": "Sun, 02 Aug 2026 12:03:51 +0000"
+      "title": "Live updates: Bitcoin rises above $63,000 as stocks surge to start August",
+      "link": "https://www.coindesk.com/business/2026/08/03/live-updates-traders-say-bitcoin-sell-off-from-usd65-000-points-to-thin-volume-not-panic-selling",
+      "pubDate": "Mon, 03 Aug 2026 10:29:23 +0000"
     },
     {
-      "title": "Strategy holds STRC dividend at 12%",
-      "link": "https://www.coindesk.com/markets/2026/08/01/strategy-holds-strc-dividend-at-12",
-      "pubDate": "Sat, 01 Aug 2026 22:01:57 +0000"
+      "title": "The bitcoin futures yield collapse: Once over 20%, now less than Treasury notes",
+      "link": "https://www.coindesk.com/markets/2026/08/03/the-bitcoin-futures-yield-collapse-once-over-20-now-less-than-treasury-notes",
+      "pubDate": "Mon, 03 Aug 2026 10:13:50 +0000"
     }
   ]
 }
