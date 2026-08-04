@@ -1,19 +1,15 @@
 {
-  "fetchedAt": "2026-08-03T22:16:00.501Z",
+  "fetchedAt": "2026-08-04T03:32:51.543Z",
   "price": {
-    "usd": 63439,
-    "time": 1785795311
+    "usd": 63639,
+    "time": 1785813910
   },
   "moves": {
-    "d1": 1.0132781658837908,
-    "d7": -2.8653837936679194,
-    "d30": 1.4154052296889486
+    "d1": 0.27385135749722345,
+    "d7": -0.49727834273068927,
+    "d30": 0.08319091310460269
   },
   "history90d": [
-    {
-      "date": "2026-05-06",
-      "close": 80913.9613749304
-    },
     {
       "date": "2026-05-07",
       "close": 81436.85936825167
@@ -368,60 +364,73 @@
     },
     {
       "date": "2026-08-03",
-      "close": 63446.2157681186
+      "close": 63466.47029088457
+    },
+    {
+      "date": "2026-08-04",
+      "close": 63465.19968911304
+    },
+    {
+      "date": "2026-08-04",
+      "close": 63768.59029062488
     }
   ],
   "blocks": [
     {
-      "height": 960928,
-      "id": "00000000000000000000f06631bba82da28dac215483d102d465574549354869",
-      "timestamp": 1785795317,
-      "txCount": 6553
+      "height": 960957,
+      "id": "000000000000000000013d97522e70fc3743a328a8c04b55da1b1c36d60317e1",
+      "timestamp": 1785813989,
+      "txCount": 3494
     },
     {
-      "height": 960927,
-      "id": "00000000000000000001db71a98062477e065d7d8479fa2384bbec2bad85d157",
-      "timestamp": 1785795149,
-      "txCount": 5552
+      "height": 960956,
+      "id": "00000000000000000000292d8e10d48f44831e7074312b0ce6d0d1a27fb8fd39",
+      "timestamp": 1785810972,
+      "txCount": 1469
     },
     {
-      "height": 960926,
-      "id": "00000000000000000000ec7cdad31da083e0d9c4ca190d55bea337430b5fb125",
-      "timestamp": 1785795128,
-      "txCount": 6786
+      "height": 960955,
+      "id": "00000000000000000001a64dc5ee8219c3341d86fddabb7ea3481ddd15fe954a",
+      "timestamp": 1785810941,
+      "txCount": 5254
     },
     {
-      "height": 960925,
-      "id": "000000000000000000006e70b685c66282245daa7b4247ea4cf3d1f8db6a95ac",
-      "timestamp": 1785794897,
-      "txCount": 6879
+      "height": 960954,
+      "id": "00000000000000000000d01e71583f2579868dca4b175a4f1682edb189196c42",
+      "timestamp": 1785811250,
+      "txCount": 6329
     },
     {
-      "height": 960924,
-      "id": "00000000000000000000ceb870f6f57d1c7db1cc16ee06f423da80631a53d2e4",
-      "timestamp": 1785794824,
-      "txCount": 770
+      "height": 960953,
+      "id": "000000000000000000007db79315eae02d4b838cd54aefc318d22406624d90c0",
+      "timestamp": 1785810697,
+      "txCount": 6489
     },
     {
-      "height": 960923,
-      "id": "000000000000000000004e4f745b9a226ea61f52f60105436f6a8e8ff6211e37",
-      "timestamp": 1785794652,
-      "txCount": 6887
+      "height": 960952,
+      "id": "000000000000000000017dad5a33f0467cca681fc1aa22495ed04b55805942b8",
+      "timestamp": 1785810629,
+      "txCount": 6202
     },
     {
-      "height": 960922,
-      "id": "000000000000000000007a6c5c2936a5e16b4ffda725a229fb59e0ab888c5e93",
-      "timestamp": 1785794564,
-      "txCount": 6009
+      "height": 960951,
+      "id": "0000000000000000000020837ec2c6bd4146ceac1c791624355de4fdbb474544",
+      "timestamp": 1785810611,
+      "txCount": 4946
     },
     {
-      "height": 960921,
-      "id": "00000000000000000000b8eb81537b8c5c9890640d7964fa66d65643324ca8ae",
-      "timestamp": 1785794482,
-      "txCount": 5948
+      "height": 960950,
+      "id": "0000000000000000000157581b6dc9b29b1bfcf5e89ce787c9f4674aabf43138",
+      "timestamp": 1785809440,
+      "txCount": 5270
     }
   ],
   "news": [
+    {
+      "title": "U.S. FBI intelligence agent arrested in connection with theft of $1 million in crypto",
+      "link": "https://www.coindesk.com/policy/2026/08/03/u-s-fbi-intelligence-agent-arrested-in-connection-with-theft-of-usd1-million-in-crypto",
+      "pubDate": "Mon, 03 Aug 2026 22:17:59 +0000"
+    },
     {
       "title": "Trump-linked American Bitcoin president Matt Prusak departs for Giga Energy",
       "link": "https://www.coindesk.com/business/2026/08/03/trump-linked-american-bitcoin-president-matt-prusak-departs-for-giga-energy",
@@ -476,11 +485,6 @@
       "title": "Bithumb now targets 2028 IPO after major internal restructuring",
       "link": "https://www.coindesk.com/business/2026/08/03/bithumb-now-targets-2028-ip-after-major-internal-restructuring",
       "pubDate": "Mon, 03 Aug 2026 10:41:08 +0000"
-    },
-    {
-      "title": "Live updates: Bitcoin flirts with $64,000 as stocks start strong in August",
-      "link": "https://www.coindesk.com/business/2026/08/03/live-updates-traders-say-bitcoin-sell-off-from-usd65-000-points-to-thin-volume-not-panic-selling",
-      "pubDate": "Mon, 03 Aug 2026 10:29:23 +0000"
     }
   ]
 }
