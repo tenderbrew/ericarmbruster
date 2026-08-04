@@ -1,13 +1,13 @@
 {
-  "fetchedAt": "2026-08-04T08:51:28.963Z",
+  "fetchedAt": "2026-08-04T11:32:06.185Z",
   "price": {
-    "usd": 63554,
-    "time": 1785833108
+    "usd": 63718,
+    "time": 1785842712
   },
   "moves": {
-    "d1": 0.13991969035305196,
-    "d7": -0.6301800435881466,
-    "d30": -0.050486096710344874
+    "d1": 0.3983290246076798,
+    "d7": -0.3737579384043399,
+    "d30": 0.20743189869731893
   },
   "history90d": [
     {
@@ -372,60 +372,85 @@
     },
     {
       "date": "2026-08-04",
-      "close": 63547.165429940185
+      "close": 63719.73807076438
     }
   ],
   "blocks": [
     {
-      "height": 960986,
-      "id": "0000000000000000000141c834fea0fc0353327c9711439688872631e3a3a572",
-      "timestamp": 1785832548,
-      "txCount": 4454
+      "height": 961003,
+      "id": "00000000000000000000027ac5ed5f29eda1eae86feef63d64121ec723800807",
+      "timestamp": 1785843099,
+      "txCount": 4166
     },
     {
-      "height": 960985,
-      "id": "000000000000000000005ecde1f25a3846da5d7b8da7d88d1495a50d3787f2c0",
-      "timestamp": 1785832116,
-      "txCount": 4092
+      "height": 961002,
+      "id": "00000000000000000001f9856bcb3c610f0883216c40342c759e1d78600e2941",
+      "timestamp": 1785842432,
+      "txCount": 3946
     },
     {
-      "height": 960984,
-      "id": "000000000000000000022faed61966353d5494afaa43dd40f13ca203ac34b25e",
-      "timestamp": 1785831594,
-      "txCount": 2527
+      "height": 961001,
+      "id": "0000000000000000000158d7765779886cd2ccf7dcc21fdbf7d2a9795d0c8e6b",
+      "timestamp": 1785842260,
+      "txCount": 3019
     },
     {
-      "height": 960983,
-      "id": "00000000000000000000aa91d708476020bd947ce9e950f7d1cb3996a3c82198",
-      "timestamp": 1785831540,
-      "txCount": 4325
+      "height": 961000,
+      "id": "000000000000000000006b8f23172c4851e6cd6bcc7b613549f969500a0a86b7",
+      "timestamp": 1785841728,
+      "txCount": 4642
     },
     {
-      "height": 960982,
-      "id": "000000000000000000003ed055686c248ab17afa443a4484d787beaa00f3e164",
-      "timestamp": 1785830497,
-      "txCount": 4669
+      "height": 960999,
+      "id": "0000000000000000000116aef903bb5847091c34736ed67f0171bdf0cc805e03",
+      "timestamp": 1785839910,
+      "txCount": 4578
     },
     {
-      "height": 960981,
-      "id": "000000000000000000003e79e86a7ccfcbd5f7fac136cc3c4724a76d4a169c1b",
-      "timestamp": 1785830617,
-      "txCount": 4409
+      "height": 960998,
+      "id": "00000000000000000001b9e17f2f142f23ea0171a5d592475cdd2ec5225413ec",
+      "timestamp": 1785838958,
+      "txCount": 4976
     },
     {
-      "height": 960980,
-      "id": "00000000000000000001bffa4e08f01cdb34029fa4db5d0fd4b8df052485ccbd",
-      "timestamp": 1785829804,
-      "txCount": 4089
+      "height": 960997,
+      "id": "000000000000000000022a3d188dc8e15bfd6d11dade39e7d5143283d7d021b2",
+      "timestamp": 1785838463,
+      "txCount": 4417
     },
     {
-      "height": 960979,
-      "id": "000000000000000000006786255114b784f8b2c7e9eb420cdffb6cc924b1a5bb",
-      "timestamp": 1785829358,
-      "txCount": 4397
+      "height": 960996,
+      "id": "000000000000000000011862250d6efc16c464433b379fa0fe2135c819447637",
+      "timestamp": 1785837202,
+      "txCount": 6113
     }
   ],
   "news": [
+    {
+      "title": "The bitcoin market has plenty of reasons to freak out, yet calm pervades",
+      "link": "https://www.coindesk.com/daybook-us/2026/08/04/the-bitcoin-market-has-plenty-of-reasons-to-freak-out-yet-calm-pervades",
+      "pubDate": "Tue, 04 Aug 2026 11:23:33 +0000"
+    },
+    {
+      "title": "South African lawmakers propose draft rules on cross-border crypto transactions",
+      "link": "https://www.coindesk.com/policy/2026/08/04/south-african-lawmakers-propose-draft-rules-on-cross-border-crypto-transactions",
+      "pubDate": "Tue, 04 Aug 2026 10:59:41 +0000"
+    },
+    {
+      "title": "Bitcoin rises toward $64,000 as Coldcard exploit, Strategy sales recede. ADA advances",
+      "link": "https://www.coindesk.com/markets/2026/08/04/bitcoin-rises-toward-usd64-000-as-coldcard-exploit-strategy-sales-recede-ada-advances",
+      "pubDate": "Tue, 04 Aug 2026 10:51:11 +0000"
+    },
+    {
+      "title": "BlackRock debuts tokenized access to $311 billion of money market funds in Europe",
+      "link": "https://www.coindesk.com/business/2026/08/04/blackrock-debuts-tokenized-access-to-usd311-billion-of-money-market-funds-in-europe",
+      "pubDate": "Tue, 04 Aug 2026 10:03:24 +0000"
+    },
+    {
+      "title": "First U.S. spot bitcoin ETF to close as inflows dwindle, investors chase AI returns",
+      "link": "https://www.coindesk.com/business/2026/08/04/first-u-s-spot-bitcoin-etf-to-close-as-inflows-dwindle-investors-chase-ai-returns",
+      "pubDate": "Tue, 04 Aug 2026 09:54:02 +0000"
+    },
     {
       "title": "Live updates: Bitcoin at $63,600 as rare US-Japan yen action tests carry-trade fears",
       "link": "https://www.coindesk.com/business/2026/08/04/live-updates-bitcoin-at-usd63-600-as-rare-us-japan-yen-action-tests-carry-trade-fears",
@@ -460,31 +485,6 @@
       "title": "A bitcoin wallet dormant since 2013 moved $31 million, and it's not the only one",
       "link": "https://www.coindesk.com/markets/2026/08/04/a-bitcoin-wallet-dormant-since-2013-moved-usd31-million-and-it-s-not-the-only-one",
       "pubDate": "Tue, 04 Aug 2026 04:48:40 +0000"
-    },
-    {
-      "title": "U.S. FBI intelligence agent arrested in connection with theft of $1 million in crypto",
-      "link": "https://www.coindesk.com/policy/2026/08/03/u-s-fbi-intelligence-agent-arrested-in-connection-with-theft-of-usd1-million-in-crypto",
-      "pubDate": "Mon, 03 Aug 2026 22:17:59 +0000"
-    },
-    {
-      "title": "Trump-linked American Bitcoin president Matt Prusak departs for Giga Energy",
-      "link": "https://www.coindesk.com/business/2026/08/03/trump-linked-american-bitcoin-president-matt-prusak-departs-for-giga-energy",
-      "pubDate": "Mon, 03 Aug 2026 15:24:45 +0000"
-    },
-    {
-      "title": "U.S.-Japan intervention revives yen carry trade fears for bitcoin",
-      "link": "https://www.coindesk.com/markets/2026/08/03/u-s-japan-intervention-revives-yen-carry-trade-fears-for-bitcoin",
-      "pubDate": "Mon, 03 Aug 2026 14:46:08 +0000"
-    },
-    {
-      "title": "Circle slides after Morgan Stanley downgrade, cut in price target",
-      "link": "https://www.coindesk.com/markets/2026/08/03/circle-internet-slides-after-morgan-stanley-downgrade-cut-in-price-target",
-      "pubDate": "Mon, 03 Aug 2026 13:59:50 +0000"
-    },
-    {
-      "title": "Bernstein sees another leg lower for crypto markets if Clarity Act stalls",
-      "link": "https://www.coindesk.com/policy/2026/08/03/bernstein-sees-another-leg-lower-for-crypto-markets-if-clarity-act-stalls",
-      "pubDate": "Mon, 03 Aug 2026 13:49:40 +0000"
     }
   ]
 }
