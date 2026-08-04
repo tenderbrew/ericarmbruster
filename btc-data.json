@@ -1,13 +1,13 @@
 {
-  "fetchedAt": "2026-08-04T17:00:24.038Z",
+  "fetchedAt": "2026-08-04T19:52:57.170Z",
   "price": {
-    "usd": 63862,
-    "time": 1785862509
+    "usd": 64284,
+    "time": 1785873009
   },
   "moves": {
-    "d1": 0.6252250254166203,
-    "d7": -0.148606821657582,
-    "d30": 0.4338964800308931
+    "d1": 1.2901563611205535,
+    "d7": 0.5112110343641563,
+    "d30": 1.0975635169945486
   },
   "history90d": [
     {
@@ -372,60 +372,70 @@
     },
     {
       "date": "2026-08-04",
-      "close": 63887.12922284205
+      "close": 64283.38550174341
     }
   ],
   "blocks": [
     {
-      "height": 961045,
-      "id": "000000000000000000012487c39d6ad7e3804e86fc2477d0c45a87a2a1263a18",
-      "timestamp": 1785863055,
-      "txCount": 4206
+      "height": 961063,
+      "id": "00000000000000000001263b49560d5061218de6a179a7bd9f9edf15c7a5007a",
+      "timestamp": 1785871892,
+      "txCount": 4777
     },
     {
-      "height": 961044,
-      "id": "0000000000000000000221b2d36508fb2018040f9828bd46937c43e0f3d6e39b",
-      "timestamp": 1785862265,
-      "txCount": 4918
+      "height": 961062,
+      "id": "00000000000000000000e9d30230a2603cc56cc21f74428b5fee0a86ea70c70c",
+      "timestamp": 1785871299,
+      "txCount": 5252
     },
     {
-      "height": 961043,
-      "id": "000000000000000000022356223e545099fb0921d00bed4a8e0dc9b876c7ed2d",
-      "timestamp": 1785861730,
+      "height": 961061,
+      "id": "00000000000000000000dda023d63c315beb6a49483de0eff2be16ebe308c46d",
+      "timestamp": 1785870695,
+      "txCount": 3852
+    },
+    {
+      "height": 961060,
+      "id": "000000000000000000023a2e501f3b7fe498ce0828803ce42ce143fbbfd58215",
+      "timestamp": 1785870205,
+      "txCount": 5741
+    },
+    {
+      "height": 961059,
+      "id": "00000000000000000000321b0588866493755cb53fd37d34c575febfd7bfde4a",
+      "timestamp": 1785870050,
+      "txCount": 4032
+    },
+    {
+      "height": 961058,
+      "id": "00000000000000000000da67838a0da1ffd92db5eee06b6477e518d9da363b01",
+      "timestamp": 1785870014,
+      "txCount": 4534
+    },
+    {
+      "height": 961057,
+      "id": "00000000000000000000dfd5c5244b42e178051ae62e9d3b806dffada386169f",
+      "timestamp": 1785868738,
+      "txCount": 5085
+    },
+    {
+      "height": 961056,
+      "id": "000000000000000000021b2c0a16cb0aedfec3865749cb6695f04324fa3c5266",
+      "timestamp": 1785868590,
       "txCount": 4198
-    },
-    {
-      "height": 961042,
-      "id": "00000000000000000000da3fa471cf7336ac4a441975ecab2e01a82fb06107de",
-      "timestamp": 1785860879,
-      "txCount": 4280
-    },
-    {
-      "height": 961041,
-      "id": "00000000000000000001f83182956d70e4bb4b5ea55945e6b745f09b892ee5eb",
-      "timestamp": 1785860466,
-      "txCount": 5898
-    },
-    {
-      "height": 961040,
-      "id": "00000000000000000001cd8141ebfb021c73b0eb887fb3da165afe56b505c834",
-      "timestamp": 1785860220,
-      "txCount": 4623
-    },
-    {
-      "height": 961039,
-      "id": "000000000000000000004c876c67976f37b6aec451df3fd2722b45e214eb065c",
-      "timestamp": 1785859666,
-      "txCount": 6699
-    },
-    {
-      "height": 961038,
-      "id": "0000000000000000000018272090e08fa48d82e151502e29ecd2425e437fc4db",
-      "timestamp": 1785859589,
-      "txCount": 4087
     }
   ],
   "news": [
+    {
+      "title": "Open USD rattled Circle's stock, but its key backers still support USDC",
+      "link": "https://www.coindesk.com/business/2026/08/03/open-usd-rattled-circle-s-stock-but-its-key-backers-still-support-usdc",
+      "pubDate": "Tue, 04 Aug 2026 17:55:23 +0000"
+    },
+    {
+      "title": "Samsung is poised to become a dominant stablecoin distributor, analysts say",
+      "link": "https://www.coindesk.com/business/2026/08/04/samsung-is-poised-to-become-a-dominant-stablecoin-distributor-analysts-say",
+      "pubDate": "Tue, 04 Aug 2026 17:14:13 +0000"
+    },
     {
       "title": "Clarity Act sits idle over Trump ethics question as Warren asks SEC to investigate him",
       "link": "https://www.coindesk.com/policy/2026/08/04/clarity-act-sits-idle-over-trump-ethics-question-as-warren-asks-sec-to-investigate-him",
@@ -475,16 +485,6 @@
       "title": "Coldcard urges users to move bitcoin as exploit is still in progress",
       "link": "https://www.coindesk.com/tech/2026/08/04/coldcard-urges-users-to-move-bitcoin-as-active-wallet-exploit-continues",
       "pubDate": "Tue, 04 Aug 2026 12:00:25 +0000"
-    },
-    {
-      "title": "The bitcoin market has plenty of reasons to freak out, yet calm pervades",
-      "link": "https://www.coindesk.com/daybook-us/2026/08/04/the-bitcoin-market-has-plenty-of-reasons-to-freak-out-yet-calm-pervades",
-      "pubDate": "Tue, 04 Aug 2026 11:23:33 +0000"
-    },
-    {
-      "title": "South African lawmakers propose draft rules on cross-border crypto transactions",
-      "link": "https://www.coindesk.com/policy/2026/08/04/south-african-lawmakers-propose-draft-rules-on-cross-border-crypto-transactions",
-      "pubDate": "Tue, 04 Aug 2026 10:59:41 +0000"
     }
   ]
 }
