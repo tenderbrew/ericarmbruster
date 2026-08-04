@@ -1,13 +1,13 @@
 {
-  "fetchedAt": "2026-08-04T03:32:51.543Z",
+  "fetchedAt": "2026-08-04T08:51:28.963Z",
   "price": {
-    "usd": 63639,
-    "time": 1785813910
+    "usd": 63554,
+    "time": 1785833108
   },
   "moves": {
-    "d1": 0.27385135749722345,
-    "d7": -0.49727834273068927,
-    "d30": 0.08319091310460269
+    "d1": 0.13991969035305196,
+    "d7": -0.6301800435881466,
+    "d30": -0.050486096710344874
   },
   "history90d": [
     {
@@ -372,60 +372,95 @@
     },
     {
       "date": "2026-08-04",
-      "close": 63768.59029062488
+      "close": 63547.165429940185
     }
   ],
   "blocks": [
     {
-      "height": 960957,
-      "id": "000000000000000000013d97522e70fc3743a328a8c04b55da1b1c36d60317e1",
-      "timestamp": 1785813989,
-      "txCount": 3494
+      "height": 960986,
+      "id": "0000000000000000000141c834fea0fc0353327c9711439688872631e3a3a572",
+      "timestamp": 1785832548,
+      "txCount": 4454
     },
     {
-      "height": 960956,
-      "id": "00000000000000000000292d8e10d48f44831e7074312b0ce6d0d1a27fb8fd39",
-      "timestamp": 1785810972,
-      "txCount": 1469
+      "height": 960985,
+      "id": "000000000000000000005ecde1f25a3846da5d7b8da7d88d1495a50d3787f2c0",
+      "timestamp": 1785832116,
+      "txCount": 4092
     },
     {
-      "height": 960955,
-      "id": "00000000000000000001a64dc5ee8219c3341d86fddabb7ea3481ddd15fe954a",
-      "timestamp": 1785810941,
-      "txCount": 5254
+      "height": 960984,
+      "id": "000000000000000000022faed61966353d5494afaa43dd40f13ca203ac34b25e",
+      "timestamp": 1785831594,
+      "txCount": 2527
     },
     {
-      "height": 960954,
-      "id": "00000000000000000000d01e71583f2579868dca4b175a4f1682edb189196c42",
-      "timestamp": 1785811250,
-      "txCount": 6329
+      "height": 960983,
+      "id": "00000000000000000000aa91d708476020bd947ce9e950f7d1cb3996a3c82198",
+      "timestamp": 1785831540,
+      "txCount": 4325
     },
     {
-      "height": 960953,
-      "id": "000000000000000000007db79315eae02d4b838cd54aefc318d22406624d90c0",
-      "timestamp": 1785810697,
-      "txCount": 6489
+      "height": 960982,
+      "id": "000000000000000000003ed055686c248ab17afa443a4484d787beaa00f3e164",
+      "timestamp": 1785830497,
+      "txCount": 4669
     },
     {
-      "height": 960952,
-      "id": "000000000000000000017dad5a33f0467cca681fc1aa22495ed04b55805942b8",
-      "timestamp": 1785810629,
-      "txCount": 6202
+      "height": 960981,
+      "id": "000000000000000000003e79e86a7ccfcbd5f7fac136cc3c4724a76d4a169c1b",
+      "timestamp": 1785830617,
+      "txCount": 4409
     },
     {
-      "height": 960951,
-      "id": "0000000000000000000020837ec2c6bd4146ceac1c791624355de4fdbb474544",
-      "timestamp": 1785810611,
-      "txCount": 4946
+      "height": 960980,
+      "id": "00000000000000000001bffa4e08f01cdb34029fa4db5d0fd4b8df052485ccbd",
+      "timestamp": 1785829804,
+      "txCount": 4089
     },
     {
-      "height": 960950,
-      "id": "0000000000000000000157581b6dc9b29b1bfcf5e89ce787c9f4674aabf43138",
-      "timestamp": 1785809440,
-      "txCount": 5270
+      "height": 960979,
+      "id": "000000000000000000006786255114b784f8b2c7e9eb420cdffb6cc924b1a5bb",
+      "timestamp": 1785829358,
+      "txCount": 4397
     }
   ],
   "news": [
+    {
+      "title": "Live updates: Bitcoin at $63,600 as rare US-Japan yen action tests carry-trade fears",
+      "link": "https://www.coindesk.com/business/2026/08/04/live-updates-bitcoin-at-usd63-600-as-rare-us-japan-yen-action-tests-carry-trade-fears",
+      "pubDate": "Tue, 04 Aug 2026 08:41:00 +0000"
+    },
+    {
+      "title": "Bhutan's GMC puts part of its bitcoin treasury to work after 10,000 BTC pledge",
+      "link": "https://www.coindesk.com/markets/2026/08/04/bhutan-s-gmc-puts-part-of-its-bitcoin-treasury-to-work-after-10-000-btc-pledge",
+      "pubDate": "Tue, 04 Aug 2026 07:56:11 +0000"
+    },
+    {
+      "title": "Why Jim Cramer’s quantum panic isn’t rattling bitcoin as price holds steady around $64,000",
+      "link": "https://www.coindesk.com/markets/2026/08/04/why-jim-cramer-s-quantum-panic-isn-t-rattling-bitcoin-as-price-holds-steady-around-usd64-000",
+      "pubDate": "Tue, 04 Aug 2026 07:53:18 +0000"
+    },
+    {
+      "title": "XRP holders can now borrow RLUSD on Ethereum through $280 million lending pool",
+      "link": "https://www.coindesk.com/markets/2026/08/04/flare-s-wrapped-xrp-wins-approval-in-a-usd280-million-rlusd-lending-vault",
+      "pubDate": "Tue, 04 Aug 2026 06:12:20 +0000"
+    },
+    {
+      "title": "A new Solana proposal aims to ramp up daily SOL Burns from $47,000 to $650,000",
+      "link": "https://www.coindesk.com/tech/2026/08/04/a-new-solana-proposal-would-take-daily-sol-burns-from-usd47-000-to-usd650-000",
+      "pubDate": "Tue, 04 Aug 2026 05:39:18 +0000"
+    },
+    {
+      "title": "Bitcoin nears $64,000 as traders look past Strategy's BTC sales and Coldcard sweeps",
+      "link": "https://www.coindesk.com/markets/2026/08/04/bitcoin-nears-usd64-000-as-traders-look-past-the-fourth-coldcard-sweep",
+      "pubDate": "Tue, 04 Aug 2026 05:21:13 +0000"
+    },
+    {
+      "title": "A bitcoin wallet dormant since 2013 moved $31 million, and it's not the only one",
+      "link": "https://www.coindesk.com/markets/2026/08/04/a-bitcoin-wallet-dormant-since-2013-moved-usd31-million-and-it-s-not-the-only-one",
+      "pubDate": "Tue, 04 Aug 2026 04:48:40 +0000"
+    },
     {
       "title": "U.S. FBI intelligence agent arrested in connection with theft of $1 million in crypto",
       "link": "https://www.coindesk.com/policy/2026/08/03/u-s-fbi-intelligence-agent-arrested-in-connection-with-theft-of-usd1-million-in-crypto",
@@ -450,41 +485,6 @@
       "title": "Bernstein sees another leg lower for crypto markets if Clarity Act stalls",
       "link": "https://www.coindesk.com/policy/2026/08/03/bernstein-sees-another-leg-lower-for-crypto-markets-if-clarity-act-stalls",
       "pubDate": "Mon, 03 Aug 2026 13:49:40 +0000"
-    },
-    {
-      "title": "BlackRock expands tokenized cash with new blockchain-based money market offerings",
-      "link": "https://www.coindesk.com/business/2026/08/03/blackrock-expands-tokenized-cash-with-new-blockchain-based-money-market-offerings",
-      "pubDate": "Mon, 03 Aug 2026 13:15:46 +0000"
-    },
-    {
-      "title": "Tom Lee's Bitmine bought more ether, added to stock buyback last week",
-      "link": "https://www.coindesk.com/business/2026/08/03/bitmine-bought-more-ether-added-to-stock-buyback-last-week",
-      "pubDate": "Mon, 03 Aug 2026 12:53:21 +0000"
-    },
-    {
-      "title": "Strategy sold another $105 million of bitcoin last week, repurchased $81.2 million of STRC",
-      "link": "https://www.coindesk.com/markets/2026/08/03/strategy-sold-another-usd105-million-of-bitcoin-last-week-repurchased-usd81-2-million-of-strc",
-      "pubDate": "Mon, 03 Aug 2026 12:17:10 +0000"
-    },
-    {
-      "title": "Bitget set to exit Japan, close all remaining positions by year-end",
-      "link": "https://www.coindesk.com/policy/2026/08/03/bitget-set-to-exit-japan-close-all-remaining-positions-by-year-end",
-      "pubDate": "Mon, 03 Aug 2026 12:03:41 +0000"
-    },
-    {
-      "title": "Solo Bitcoin miner nets $200,000 as Coldcard hardware wallet drains rocks sentiment",
-      "link": "https://www.coindesk.com/daybook-us/2026/08/03/solo-bitcoin-miner-nets-usd200-000-as-coldcard-hardware-wallet-drains-rocks-sentiment",
-      "pubDate": "Mon, 03 Aug 2026 11:18:31 +0000"
-    },
-    {
-      "title": "Bitcoin, ether decline as Coldcard exploit enters a fifth day",
-      "link": "https://www.coindesk.com/markets/2026/08/03/bitcoin-ether-decline-as-coldcard-exploit-enters-a-fifth-day",
-      "pubDate": "Mon, 03 Aug 2026 10:51:37 +0000"
-    },
-    {
-      "title": "Bithumb now targets 2028 IPO after major internal restructuring",
-      "link": "https://www.coindesk.com/business/2026/08/03/bithumb-now-targets-2028-ip-after-major-internal-restructuring",
-      "pubDate": "Mon, 03 Aug 2026 10:41:08 +0000"
     }
   ]
 }
