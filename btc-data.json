@@ -1,13 +1,13 @@
 {
-  "fetchedAt": "2026-08-04T14:36:42.755Z",
+  "fetchedAt": "2026-08-04T17:00:24.038Z",
   "price": {
-    "usd": 63890,
-    "time": 1785854115
+    "usd": 63862,
+    "time": 1785862509
   },
   "moves": {
-    "d1": 0.6693436922405649,
-    "d7": -0.10482743784571147,
-    "d30": 0.4779312597346541
+    "d1": 0.6252250254166203,
+    "d7": -0.148606821657582,
+    "d30": 0.4338964800308931
   },
   "history90d": [
     {
@@ -372,60 +372,80 @@
     },
     {
       "date": "2026-08-04",
-      "close": 63911.82580643022
+      "close": 63887.12922284205
     }
   ],
   "blocks": [
     {
-      "height": 961025,
-      "id": "000000000000000000001f6327e9d26fb527a0e8efa95c0472614ad6c6eb7639",
-      "timestamp": 1785853855,
-      "txCount": 5291
+      "height": 961045,
+      "id": "000000000000000000012487c39d6ad7e3804e86fc2477d0c45a87a2a1263a18",
+      "timestamp": 1785863055,
+      "txCount": 4206
     },
     {
-      "height": 961024,
-      "id": "00000000000000000000f7820c80fe2461b7cb2bb6a9e89e5de41f2add289160",
-      "timestamp": 1785853383,
-      "txCount": 3225
+      "height": 961044,
+      "id": "0000000000000000000221b2d36508fb2018040f9828bd46937c43e0f3d6e39b",
+      "timestamp": 1785862265,
+      "txCount": 4918
     },
     {
-      "height": 961023,
-      "id": "000000000000000000012d08f7c5a496a45e99063a5db7fdb56310374083f7df",
-      "timestamp": 1785852918,
-      "txCount": 4157
+      "height": 961043,
+      "id": "000000000000000000022356223e545099fb0921d00bed4a8e0dc9b876c7ed2d",
+      "timestamp": 1785861730,
+      "txCount": 4198
     },
     {
-      "height": 961022,
-      "id": "00000000000000000000269a71a7fe130e03e484d20c83fcf1cd9a48782f9f22",
-      "timestamp": 1785852304,
-      "txCount": 4578
+      "height": 961042,
+      "id": "00000000000000000000da3fa471cf7336ac4a441975ecab2e01a82fb06107de",
+      "timestamp": 1785860879,
+      "txCount": 4280
     },
     {
-      "height": 961021,
-      "id": "0000000000000000000059260298846cd0a8dcc3a1ecc8ecdb1a33ae92dfc36b",
-      "timestamp": 1785852199,
-      "txCount": 3492
+      "height": 961041,
+      "id": "00000000000000000001f83182956d70e4bb4b5ea55945e6b745f09b892ee5eb",
+      "timestamp": 1785860466,
+      "txCount": 5898
     },
     {
-      "height": 961020,
-      "id": "0000000000000000000053adccc989706a4616eb78b627a3280abcc936760213",
-      "timestamp": 1785851927,
-      "txCount": 4048
+      "height": 961040,
+      "id": "00000000000000000001cd8141ebfb021c73b0eb887fb3da165afe56b505c834",
+      "timestamp": 1785860220,
+      "txCount": 4623
     },
     {
-      "height": 961019,
-      "id": "000000000000000000000cd4587091680351806bc8b590f0b0e3a614044b6256",
-      "timestamp": 1785850493,
-      "txCount": 3917
+      "height": 961039,
+      "id": "000000000000000000004c876c67976f37b6aec451df3fd2722b45e214eb065c",
+      "timestamp": 1785859666,
+      "txCount": 6699
     },
     {
-      "height": 961018,
-      "id": "0000000000000000000020ba354e5855a8be9d14ec93db40108d172976ca41ad",
-      "timestamp": 1785849346,
-      "txCount": 6451
+      "height": 961038,
+      "id": "0000000000000000000018272090e08fa48d82e151502e29ecd2425e437fc4db",
+      "timestamp": 1785859589,
+      "txCount": 4087
     }
   ],
   "news": [
+    {
+      "title": "Clarity Act sits idle over Trump ethics question as Warren asks SEC to investigate him",
+      "link": "https://www.coindesk.com/policy/2026/08/04/clarity-act-sits-idle-over-trump-ethics-question-as-warren-asks-sec-to-investigate-him",
+      "pubDate": "Tue, 04 Aug 2026 16:21:59 +0000"
+    },
+    {
+      "title": "Wells Fargo joins JPMorgan and Citi in the race to tokenize Wall Street’s settlement rails",
+      "link": "https://www.coindesk.com/business/2026/08/04/wells-fargo-to-offer-tokenized-deposits-for-24-7-corporate-payments",
+      "pubDate": "Tue, 04 Aug 2026 15:47:05 +0000"
+    },
+    {
+      "title": "Bitcoin’s $63,000 zone emerges as key battleground for buyers: Glassnode",
+      "link": "https://www.coindesk.com/markets/2026/08/04/bitcoin-s-usd63-000-zone-emerges-as-key-battleground-for-buyers-glassnode",
+      "pubDate": "Tue, 04 Aug 2026 14:49:33 +0000"
+    },
+    {
+      "title": "Polymarket targets $20 billion valuation as competition heats up in prediction market sector",
+      "link": "https://www.coindesk.com/markets/2026/08/04/polymarket-targets-usd20-billion-valuation-as-competition-heats-up-in-prediction-markets",
+      "pubDate": "Tue, 04 Aug 2026 14:38:23 +0000"
+    },
     {
       "title": "Intesa Sanpaolo slashed IBIT stake by 94% in 2Q, tripled ether ETF holding as crypto prices slumped",
       "link": "https://www.coindesk.com/business/2026/08/04/intesa-sanpaolo-slashed-ibit-stake-by-94-in-2q-tripled-ether-etf-holding-as-crypto-prices-slumped",
@@ -465,26 +485,6 @@
       "title": "South African lawmakers propose draft rules on cross-border crypto transactions",
       "link": "https://www.coindesk.com/policy/2026/08/04/south-african-lawmakers-propose-draft-rules-on-cross-border-crypto-transactions",
       "pubDate": "Tue, 04 Aug 2026 10:59:41 +0000"
-    },
-    {
-      "title": "Bitcoin rises toward $64,000 as Coldcard exploit, Strategy sales recede. ADA advances",
-      "link": "https://www.coindesk.com/markets/2026/08/04/bitcoin-rises-toward-usd64-000-as-coldcard-exploit-strategy-sales-recede-ada-advances",
-      "pubDate": "Tue, 04 Aug 2026 10:51:11 +0000"
-    },
-    {
-      "title": "BlackRock debuts tokenized access to $311 billion of money market funds in Europe",
-      "link": "https://www.coindesk.com/business/2026/08/04/blackrock-debuts-tokenized-access-to-usd311-billion-of-money-market-funds-in-europe",
-      "pubDate": "Tue, 04 Aug 2026 10:03:24 +0000"
-    },
-    {
-      "title": "First U.S. spot bitcoin ETF to close as inflows dwindle, investors chase AI returns",
-      "link": "https://www.coindesk.com/business/2026/08/04/first-u-s-spot-bitcoin-etf-to-close-as-inflows-dwindle-investors-chase-ai-returns",
-      "pubDate": "Tue, 04 Aug 2026 09:54:02 +0000"
-    },
-    {
-      "title": "Live updates: Bitcoin stuck in tight range as risk assets rise on Iran deal hopes",
-      "link": "https://www.coindesk.com/business/2026/08/04/live-updates-bitcoin-at-usd63-600-as-rare-us-japan-yen-action-tests-carry-trade-fears",
-      "pubDate": "Tue, 04 Aug 2026 08:41:00 +0000"
     }
   ]
 }
