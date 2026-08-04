@@ -1,13 +1,13 @@
 {
-  "fetchedAt": "2026-08-04T11:32:06.185Z",
+  "fetchedAt": "2026-08-04T14:36:42.755Z",
   "price": {
-    "usd": 63718,
-    "time": 1785842712
+    "usd": 63890,
+    "time": 1785854115
   },
   "moves": {
-    "d1": 0.3983290246076798,
-    "d7": -0.3737579384043399,
-    "d30": 0.20743189869731893
+    "d1": 0.6693436922405649,
+    "d7": -0.10482743784571147,
+    "d30": 0.4779312597346541
   },
   "history90d": [
     {
@@ -372,60 +372,90 @@
     },
     {
       "date": "2026-08-04",
-      "close": 63719.73807076438
+      "close": 63911.82580643022
     }
   ],
   "blocks": [
     {
-      "height": 961003,
-      "id": "00000000000000000000027ac5ed5f29eda1eae86feef63d64121ec723800807",
-      "timestamp": 1785843099,
-      "txCount": 4166
+      "height": 961025,
+      "id": "000000000000000000001f6327e9d26fb527a0e8efa95c0472614ad6c6eb7639",
+      "timestamp": 1785853855,
+      "txCount": 5291
     },
     {
-      "height": 961002,
-      "id": "00000000000000000001f9856bcb3c610f0883216c40342c759e1d78600e2941",
-      "timestamp": 1785842432,
-      "txCount": 3946
+      "height": 961024,
+      "id": "00000000000000000000f7820c80fe2461b7cb2bb6a9e89e5de41f2add289160",
+      "timestamp": 1785853383,
+      "txCount": 3225
     },
     {
-      "height": 961001,
-      "id": "0000000000000000000158d7765779886cd2ccf7dcc21fdbf7d2a9795d0c8e6b",
-      "timestamp": 1785842260,
-      "txCount": 3019
+      "height": 961023,
+      "id": "000000000000000000012d08f7c5a496a45e99063a5db7fdb56310374083f7df",
+      "timestamp": 1785852918,
+      "txCount": 4157
     },
     {
-      "height": 961000,
-      "id": "000000000000000000006b8f23172c4851e6cd6bcc7b613549f969500a0a86b7",
-      "timestamp": 1785841728,
-      "txCount": 4642
-    },
-    {
-      "height": 960999,
-      "id": "0000000000000000000116aef903bb5847091c34736ed67f0171bdf0cc805e03",
-      "timestamp": 1785839910,
+      "height": 961022,
+      "id": "00000000000000000000269a71a7fe130e03e484d20c83fcf1cd9a48782f9f22",
+      "timestamp": 1785852304,
       "txCount": 4578
     },
     {
-      "height": 960998,
-      "id": "00000000000000000001b9e17f2f142f23ea0171a5d592475cdd2ec5225413ec",
-      "timestamp": 1785838958,
-      "txCount": 4976
+      "height": 961021,
+      "id": "0000000000000000000059260298846cd0a8dcc3a1ecc8ecdb1a33ae92dfc36b",
+      "timestamp": 1785852199,
+      "txCount": 3492
     },
     {
-      "height": 960997,
-      "id": "000000000000000000022a3d188dc8e15bfd6d11dade39e7d5143283d7d021b2",
-      "timestamp": 1785838463,
-      "txCount": 4417
+      "height": 961020,
+      "id": "0000000000000000000053adccc989706a4616eb78b627a3280abcc936760213",
+      "timestamp": 1785851927,
+      "txCount": 4048
     },
     {
-      "height": 960996,
-      "id": "000000000000000000011862250d6efc16c464433b379fa0fe2135c819447637",
-      "timestamp": 1785837202,
-      "txCount": 6113
+      "height": 961019,
+      "id": "000000000000000000000cd4587091680351806bc8b590f0b0e3a614044b6256",
+      "timestamp": 1785850493,
+      "txCount": 3917
+    },
+    {
+      "height": 961018,
+      "id": "0000000000000000000020ba354e5855a8be9d14ec93db40108d172976ca41ad",
+      "timestamp": 1785849346,
+      "txCount": 6451
     }
   ],
   "news": [
+    {
+      "title": "Intesa Sanpaolo slashed IBIT stake by 94% in 2Q, tripled ether ETF holding as crypto prices slumped",
+      "link": "https://www.coindesk.com/business/2026/08/04/intesa-sanpaolo-slashed-ibit-stake-by-94-in-2q-tripled-ether-etf-holding-as-crypto-prices-slumped",
+      "pubDate": "Tue, 04 Aug 2026 14:25:50 +0000"
+    },
+    {
+      "title": "Dinari brings tokenized U.S. stocks to American investors as equity race heats up",
+      "link": "https://www.coindesk.com/business/2026/08/04/dinari-brings-tokenized-u-s-stocks-to-american-investors-as-equity-race-heats-up",
+      "pubDate": "Tue, 04 Aug 2026 14:00:00 +0000"
+    },
+    {
+      "title": "As Clarity Act teeters, mystery group hammers away at crypto in Washington ads",
+      "link": "https://www.coindesk.com/policy/2026/08/03/as-clarity-act-teeters-mystery-group-hammers-away-at-crypto-in-washington-ads",
+      "pubDate": "Tue, 04 Aug 2026 13:00:00 +0000"
+    },
+    {
+      "title": "BitGo’s WBTC move pushes LayerZero-to-Chainlink tally near $15 billion",
+      "link": "https://www.coindesk.com/business/2026/08/04/bitgo-s-wbtc-move-pushes-layerzero-to-chainlink-tally-near-usd15-billion",
+      "pubDate": "Tue, 04 Aug 2026 13:00:00 +0000"
+    },
+    {
+      "title": "BNY to add crypto staking to digital asset custody platform",
+      "link": "https://www.coindesk.com/business/2026/08/04/bny-to-add-crypto-staking-to-digital-asset-custody-platform",
+      "pubDate": "Tue, 04 Aug 2026 12:30:00 +0000"
+    },
+    {
+      "title": "Coldcard urges users to move bitcoin as exploit is still in progress",
+      "link": "https://www.coindesk.com/tech/2026/08/04/coldcard-urges-users-to-move-bitcoin-as-active-wallet-exploit-continues",
+      "pubDate": "Tue, 04 Aug 2026 12:00:25 +0000"
+    },
     {
       "title": "The bitcoin market has plenty of reasons to freak out, yet calm pervades",
       "link": "https://www.coindesk.com/daybook-us/2026/08/04/the-bitcoin-market-has-plenty-of-reasons-to-freak-out-yet-calm-pervades",
@@ -452,39 +482,9 @@
       "pubDate": "Tue, 04 Aug 2026 09:54:02 +0000"
     },
     {
-      "title": "Live updates: Bitcoin at $63,600 as rare US-Japan yen action tests carry-trade fears",
+      "title": "Live updates: Bitcoin stuck in tight range as risk assets rise on Iran deal hopes",
       "link": "https://www.coindesk.com/business/2026/08/04/live-updates-bitcoin-at-usd63-600-as-rare-us-japan-yen-action-tests-carry-trade-fears",
       "pubDate": "Tue, 04 Aug 2026 08:41:00 +0000"
-    },
-    {
-      "title": "Bhutan's GMC puts part of its bitcoin treasury to work after 10,000 BTC pledge",
-      "link": "https://www.coindesk.com/markets/2026/08/04/bhutan-s-gmc-puts-part-of-its-bitcoin-treasury-to-work-after-10-000-btc-pledge",
-      "pubDate": "Tue, 04 Aug 2026 07:56:11 +0000"
-    },
-    {
-      "title": "Why Jim Cramer’s quantum panic isn’t rattling bitcoin as price holds steady around $64,000",
-      "link": "https://www.coindesk.com/markets/2026/08/04/why-jim-cramer-s-quantum-panic-isn-t-rattling-bitcoin-as-price-holds-steady-around-usd64-000",
-      "pubDate": "Tue, 04 Aug 2026 07:53:18 +0000"
-    },
-    {
-      "title": "XRP holders can now borrow RLUSD on Ethereum through $280 million lending pool",
-      "link": "https://www.coindesk.com/markets/2026/08/04/flare-s-wrapped-xrp-wins-approval-in-a-usd280-million-rlusd-lending-vault",
-      "pubDate": "Tue, 04 Aug 2026 06:12:20 +0000"
-    },
-    {
-      "title": "A new Solana proposal aims to ramp up daily SOL Burns from $47,000 to $650,000",
-      "link": "https://www.coindesk.com/tech/2026/08/04/a-new-solana-proposal-would-take-daily-sol-burns-from-usd47-000-to-usd650-000",
-      "pubDate": "Tue, 04 Aug 2026 05:39:18 +0000"
-    },
-    {
-      "title": "Bitcoin nears $64,000 as traders look past Strategy's BTC sales and Coldcard sweeps",
-      "link": "https://www.coindesk.com/markets/2026/08/04/bitcoin-nears-usd64-000-as-traders-look-past-the-fourth-coldcard-sweep",
-      "pubDate": "Tue, 04 Aug 2026 05:21:13 +0000"
-    },
-    {
-      "title": "A bitcoin wallet dormant since 2013 moved $31 million, and it's not the only one",
-      "link": "https://www.coindesk.com/markets/2026/08/04/a-bitcoin-wallet-dormant-since-2013-moved-usd31-million-and-it-s-not-the-only-one",
-      "pubDate": "Tue, 04 Aug 2026 04:48:40 +0000"
     }
   ]
 }
