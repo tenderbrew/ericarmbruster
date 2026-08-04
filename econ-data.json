@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-08-04T03:30:12.820Z",
+  "fetchedAt": "2026-08-04T14:34:49.090Z",
   "indicators": {
     "UNRATE": {
       "latest": {
@@ -23,12 +23,12 @@
     },
     "JTSJOL": {
       "latest": {
-        "date": "2026-05-01",
-        "value": 7594
+        "date": "2026-06-01",
+        "value": 7359
       },
       "previous": {
-        "date": "2026-04-01",
-        "value": 7585
+        "date": "2026-05-01",
+        "value": 7537
       }
     },
     "ICSA": {
@@ -163,12 +163,12 @@
     },
     "BAMLH0A0HYM2": {
       "latest": {
-        "date": "2026-07-30",
-        "value": 2.84
+        "date": "2026-07-31",
+        "value": 2.85
       },
       "previous": {
-        "date": "2026-07-29",
-        "value": 2.87
+        "date": "2026-07-30",
+        "value": 2.84
       }
     },
     "MORTGAGE30US": {
@@ -263,22 +263,22 @@
     },
     "VIXCLS": {
       "latest": {
-        "date": "2026-07-31",
-        "value": 15.99
+        "date": "2026-08-03",
+        "value": 15.86
       },
       "previous": {
-        "date": "2026-07-30",
-        "value": 17.09
+        "date": "2026-07-31",
+        "value": 15.99
       }
     },
     "BOPGSTB": {
       "latest": {
-        "date": "2026-05-01",
-        "value": -77585
+        "date": "2026-06-01",
+        "value": -73261
       },
       "previous": {
-        "date": "2026-04-01",
-        "value": -54570
+        "date": "2026-05-01",
+        "value": -77647
       }
     },
     "M2V": {
@@ -300,6 +300,18 @@
     }
   },
   "news": [
+    {
+      "title": "What Would Happen if Spain Had an Open Border with Morocco",
+      "link": "https://mises.org/podcasts/audio-mises-wire/what-would-happen-if-spain-had-open-border-morocco",
+      "pubDate": "Tue, 04 Aug 2026 07:54:02 CDT",
+      "kind": "Podcast"
+    },
+    {
+      "title": "Problems of Causation in Race and Discrimination",
+      "link": "https://mises.org/mises-wire/problems-causation-race-and-discrimination",
+      "pubDate": "Tue, 04 Aug 2026 05:00:00 CDT",
+      "kind": "Mises Wire"
+    },
     {
       "title": "What Would Happen if Spain Had an Open Border with Morocco",
       "link": "https://mises.org/mises-wire/what-would-happen-if-spain-had-open-border-morocco",
@@ -347,18 +359,6 @@
       "link": "https://mises.org/podcasts/minor-issues/gold-socialism-and-crisis-dollar",
       "pubDate": "Sat, 01 Aug 2026 06:00:00 CDT",
       "kind": "Podcast"
-    },
-    {
-      "title": "Austrian Economics Made Obvious",
-      "link": "https://mises.org/mises-wire/austrian-economics-made-obvious",
-      "pubDate": "Sat, 01 Aug 2026 05:00:00 CDT",
-      "kind": "Mises Wire"
-    },
-    {
-      "title": "Inflation and Statistics: Economics Explains Them, Not the Other Way Around",
-      "link": "https://mises.org/mises-wire/inflation-and-statistics-economics-explains-them-not-other-way-around",
-      "pubDate": "Sat, 01 Aug 2026 05:00:00 CDT",
-      "kind": "Mises Wire"
     }
   ]
 }
