@@ -1,13 +1,13 @@
 {
-  "fetchedAt": "2026-08-04T19:52:57.170Z",
+  "fetchedAt": "2026-08-04T22:19:56.059Z",
   "price": {
-    "usd": 64284,
-    "time": 1785873009
+    "usd": 64180,
+    "time": 1785881710
   },
   "moves": {
-    "d1": 1.2901563611205535,
-    "d7": 0.5112110343641563,
-    "d30": 1.0975635169945486
+    "d1": 1.12628702720301,
+    "d7": 0.348601894491507,
+    "d30": 0.9340057638091981
   },
   "history90d": [
     {
@@ -372,60 +372,65 @@
     },
     {
       "date": "2026-08-04",
-      "close": 64283.38550174341
+      "close": 64165.19863713882
     }
   ],
   "blocks": [
     {
-      "height": 961063,
-      "id": "00000000000000000001263b49560d5061218de6a179a7bd9f9edf15c7a5007a",
-      "timestamp": 1785871892,
-      "txCount": 4777
+      "height": 961077,
+      "id": "00000000000000000001f1b67d976e7ef082f34dd107532afae7cb50660f7be9",
+      "timestamp": 1785881377,
+      "txCount": 3870
     },
     {
-      "height": 961062,
-      "id": "00000000000000000000e9d30230a2603cc56cc21f74428b5fee0a86ea70c70c",
-      "timestamp": 1785871299,
-      "txCount": 5252
+      "height": 961076,
+      "id": "00000000000000000000edc9ec775fc467e6651395aec93266389fa84ebc4517",
+      "timestamp": 1785880446,
+      "txCount": 3710
     },
     {
-      "height": 961061,
-      "id": "00000000000000000000dda023d63c315beb6a49483de0eff2be16ebe308c46d",
-      "timestamp": 1785870695,
-      "txCount": 3852
+      "height": 961075,
+      "id": "00000000000000000000d554db66051713ac3112a909767d9136eda794a57978",
+      "timestamp": 1785880223,
+      "txCount": 4613
     },
     {
-      "height": 961060,
-      "id": "000000000000000000023a2e501f3b7fe498ce0828803ce42ce143fbbfd58215",
-      "timestamp": 1785870205,
-      "txCount": 5741
+      "height": 961074,
+      "id": "00000000000000000001654e912feeec394c9d64115941a8c84dd4530f2aae67",
+      "timestamp": 1785879952,
+      "txCount": 4332
     },
     {
-      "height": 961059,
-      "id": "00000000000000000000321b0588866493755cb53fd37d34c575febfd7bfde4a",
-      "timestamp": 1785870050,
-      "txCount": 4032
+      "height": 961073,
+      "id": "0000000000000000000212bd71af6d8b272c1481d66aae26c0b08f30f01f5f43",
+      "timestamp": 1785877192,
+      "txCount": 4017
     },
     {
-      "height": 961058,
-      "id": "00000000000000000000da67838a0da1ffd92db5eee06b6477e518d9da363b01",
-      "timestamp": 1785870014,
-      "txCount": 4534
+      "height": 961072,
+      "id": "00000000000000000001b6eab099c6c3098fe6c442fc31007f32a8a5dab00605",
+      "timestamp": 1785876560,
+      "txCount": 6770
     },
     {
-      "height": 961057,
-      "id": "00000000000000000000dfd5c5244b42e178051ae62e9d3b806dffada386169f",
-      "timestamp": 1785868738,
-      "txCount": 5085
+      "height": 961071,
+      "id": "00000000000000000000b9dd05184fb8769c55a41e6485ec75740382f70005c0",
+      "timestamp": 1785876550,
+      "txCount": 6711
     },
     {
-      "height": 961056,
-      "id": "000000000000000000021b2c0a16cb0aedfec3865749cb6695f04324fa3c5266",
-      "timestamp": 1785868590,
-      "txCount": 4198
+      "height": 961070,
+      "id": "0000000000000000000065bbb8a8098bb2a27048dbb7d90d827a109ccd180dc8",
+      "timestamp": 1785876480,
+      "txCount": 5775
     }
   ],
   "news": [
+    {
+      "title": "SpaceX tops Wall Street revenue forecast, posts $540 million loss on bitcoin holdings",
+      "link": "https://www.coindesk.com/business/2026/08/04/spacex-tops-wall-street-revenue-forecast-posts-usd540-million-decline-on-bitcoin-holding-value",
+      "pubDate": "Tue, 04 Aug 2026 20:26:21 +0000"
+    },
     {
       "title": "Open USD rattled Circle's stock, but its key backers still support USDC",
       "link": "https://www.coindesk.com/business/2026/08/03/open-usd-rattled-circle-s-stock-but-its-key-backers-still-support-usdc",
@@ -480,11 +485,6 @@
       "title": "BNY to add crypto staking to digital asset custody platform",
       "link": "https://www.coindesk.com/business/2026/08/04/bny-to-add-crypto-staking-to-digital-asset-custody-platform",
       "pubDate": "Tue, 04 Aug 2026 12:30:00 +0000"
-    },
-    {
-      "title": "Coldcard urges users to move bitcoin as exploit is still in progress",
-      "link": "https://www.coindesk.com/tech/2026/08/04/coldcard-urges-users-to-move-bitcoin-as-active-wallet-exploit-continues",
-      "pubDate": "Tue, 04 Aug 2026 12:00:25 +0000"
     }
   ]
 }
