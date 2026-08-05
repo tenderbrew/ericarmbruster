@@ -1,13 +1,13 @@
 {
-  "fetchedAt": "2026-08-05T16:50:26.881Z",
+  "fetchedAt": "2026-08-05T19:50:58.814Z",
   "price": {
-    "usd": 64634,
-    "time": 1785948309
+    "usd": 64852,
+    "time": 1785959113
   },
   "moves": {
-    "d1": 0.8926114069008229,
-    "d7": 1.0947146908627747,
-    "d30": 0.988675565238073
+    "d1": 1.2329058229466172,
+    "d7": 1.4356907685093345,
+    "d30": 1.3292939901107692
   },
   "history90d": [
     {
@@ -372,60 +372,65 @@
     },
     {
       "date": "2026-08-05",
-      "close": 64584.586803304774
+      "close": 64828.76009932174
     }
   ],
   "blocks": [
     {
-      "height": 961184,
-      "id": "00000000000000000000d029a20a196195d8ea3dd8f784fec9dafe63a6805acd",
-      "timestamp": 1785948444,
-      "txCount": 3841
+      "height": 961198,
+      "id": "00000000000000000000d379615b92b42128c1d906fbb73108c3e215ad850684",
+      "timestamp": 1785959092,
+      "txCount": 3927
     },
     {
-      "height": 961183,
-      "id": "0000000000000000000075da8be584041ddbac9c42ec9ce28475d5730aad3658",
-      "timestamp": 1785948240,
-      "txCount": 4543
+      "height": 961197,
+      "id": "000000000000000000015bac6693a42d8b5dc66c1eaa88f47cfdbb02893ffc43",
+      "timestamp": 1785957873,
+      "txCount": 4745
     },
     {
-      "height": 961182,
-      "id": "00000000000000000001eb1c5148746cfe9a89271f069d99123be7806f58adf7",
-      "timestamp": 1785948141,
-      "txCount": 3443
+      "height": 961196,
+      "id": "0000000000000000000168b409184abf11076adaf7af1654eeaca75a1f5e34a2",
+      "timestamp": 1785956609,
+      "txCount": 3832
     },
     {
-      "height": 961181,
-      "id": "0000000000000000000211d3ada7cb98cab22c0ea2bab31dc442cba97428955e",
-      "timestamp": 1785947886,
-      "txCount": 4411
+      "height": 961195,
+      "id": "000000000000000000016d452c8961aad647eb6d19c5670b401969f0e1bf0fe7",
+      "timestamp": 1785956002,
+      "txCount": 3702
     },
     {
-      "height": 961180,
-      "id": "00000000000000000000d9367f89f2f85df8f7dc1431b8031815e836235cffae",
-      "timestamp": 1785947342,
-      "txCount": 3827
+      "height": 961194,
+      "id": "0000000000000000000059f04594ffe8e079d192674c6b231cbe9adddc6a5971",
+      "timestamp": 1785955294,
+      "txCount": 3662
     },
     {
-      "height": 961179,
-      "id": "000000000000000000012f7f8bf54aa91049a7c18f84e3452cb650c29574c28a",
-      "timestamp": 1785944591,
-      "txCount": 4147
+      "height": 961193,
+      "id": "00000000000000000000481cdd39f2bf246fe3caee5d6e004a31527b827df542",
+      "timestamp": 1785954927,
+      "txCount": 3915
     },
     {
-      "height": 961178,
-      "id": "00000000000000000000e92f5622a7a0f9e5d934cdab90dac2bd5c2903f980a2",
-      "timestamp": 1785944304,
-      "txCount": 4199
+      "height": 961192,
+      "id": "0000000000000000000115d6338f131f562166223cc238f1cfaf4494f55d7b2a",
+      "timestamp": 1785953687,
+      "txCount": 4292
     },
     {
-      "height": 961177,
-      "id": "00000000000000000001c2a5814a0234a7ce05516c8f49250226930c9fbab8ab",
-      "timestamp": 1785943478,
-      "txCount": 4660
+      "height": 961191,
+      "id": "000000000000000000014070c9beded1ffcd0f3a4b821e497e6659e7b0bf48a3",
+      "timestamp": 1785952379,
+      "txCount": 4398
     }
   ],
   "news": [
+    {
+      "title": "Crypto's campaign efforts see rare loss, but crypto roster in Congress likely to grow",
+      "link": "https://www.coindesk.com/policy/2026/08/05/crypto-s-campaign-efforts-see-rare-loss-but-crypto-roster-in-congress-likely-to-grow",
+      "pubDate": "Wed, 05 Aug 2026 18:15:21 +0000"
+    },
     {
       "title": "Coldcard exploit could boost demand for regulated bitcoin exposure, analysts say",
       "link": "https://www.coindesk.com/tech/2026/08/05/coldcard-exploit-could-boost-demand-for-regulated-bitcoin-exposure-analysts-say",
@@ -480,11 +485,6 @@
       "title": "The $120 million Coldcard hack lights up Bitcoin's memory pool",
       "link": "https://www.coindesk.com/daybook-us/2026/08/05/the-usd120-million-coldcard-hack-lights-up-bitcoin-s-memory-pool",
       "pubDate": "Wed, 05 Aug 2026 11:20:58 +0000"
-    },
-    {
-      "title": "Circle shares fall 3% despite earnings beat as stablecoin issuer misses on revenue",
-      "link": "https://www.coindesk.com/markets/2026/08/05/circle-shares-jump-as-earnings-beat-offsets-revenue-miss-arc-blockchain-gains-wall-street-backing",
-      "pubDate": "Wed, 05 Aug 2026 11:13:17 +0000"
     }
   ]
 }
