@@ -1,13 +1,13 @@
 {
-  "fetchedAt": "2026-08-05T19:50:58.814Z",
+  "fetchedAt": "2026-08-05T22:18:23.707Z",
   "price": {
-    "usd": 64852,
-    "time": 1785959113
+    "usd": 64619,
+    "time": 1785967812
   },
   "moves": {
-    "d1": 1.2329058229466172,
-    "d7": 1.4356907685093345,
-    "d30": 1.3292939901107692
+    "d1": 0.8691966535031792,
+    "d7": 1.0712530341439708,
+    "d30": 0.9652385176550871
   },
   "history90d": [
     {
@@ -372,60 +372,65 @@
     },
     {
       "date": "2026-08-05",
-      "close": 64828.76009932174
+      "close": 64626.628717507
     }
   ],
   "blocks": [
     {
-      "height": 961198,
-      "id": "00000000000000000000d379615b92b42128c1d906fbb73108c3e215ad850684",
-      "timestamp": 1785959092,
-      "txCount": 3927
+      "height": 961215,
+      "id": "0000000000000000000013d5adc3c4cc84863ceedee469761aeba0ac517d20d4",
+      "timestamp": 1785968157,
+      "txCount": 5061
     },
     {
-      "height": 961197,
-      "id": "000000000000000000015bac6693a42d8b5dc66c1eaa88f47cfdbb02893ffc43",
-      "timestamp": 1785957873,
-      "txCount": 4745
+      "height": 961214,
+      "id": "00000000000000000001fa41d207f90f827076a2d2812938e2b1b521d7d6b04b",
+      "timestamp": 1785967953,
+      "txCount": 4320
     },
     {
-      "height": 961196,
-      "id": "0000000000000000000168b409184abf11076adaf7af1654eeaca75a1f5e34a2",
-      "timestamp": 1785956609,
-      "txCount": 3832
+      "height": 961213,
+      "id": "0000000000000000000083a97517a51c542fe1c691aabae7ddd437b0cf795412",
+      "timestamp": 1785967089,
+      "txCount": 4949
     },
     {
-      "height": 961195,
-      "id": "000000000000000000016d452c8961aad647eb6d19c5670b401969f0e1bf0fe7",
-      "timestamp": 1785956002,
-      "txCount": 3702
+      "height": 961212,
+      "id": "0000000000000000000213dd0d1b3fa89470b04329cc284b119a11812503b766",
+      "timestamp": 1785967047,
+      "txCount": 4503
     },
     {
-      "height": 961194,
-      "id": "0000000000000000000059f04594ffe8e079d192674c6b231cbe9adddc6a5971",
-      "timestamp": 1785955294,
-      "txCount": 3662
+      "height": 961211,
+      "id": "0000000000000000000064e2e97bf285a0243aae9b6b3ad091d7037c710028e3",
+      "timestamp": 1785966801,
+      "txCount": 3701
     },
     {
-      "height": 961193,
-      "id": "00000000000000000000481cdd39f2bf246fe3caee5d6e004a31527b827df542",
-      "timestamp": 1785954927,
-      "txCount": 3915
+      "height": 961210,
+      "id": "000000000000000000007b9ebbd03dc140cc1c203e663e68732a6dd7f9424c99",
+      "timestamp": 1785965996,
+      "txCount": 4922
     },
     {
-      "height": 961192,
-      "id": "0000000000000000000115d6338f131f562166223cc238f1cfaf4494f55d7b2a",
-      "timestamp": 1785953687,
-      "txCount": 4292
+      "height": 961209,
+      "id": "000000000000000000016f42a903ed639dd5b8cbacc93e7d5f83a6f0370b1fa4",
+      "timestamp": 1785965958,
+      "txCount": 2106
     },
     {
-      "height": 961191,
-      "id": "000000000000000000014070c9beded1ffcd0f3a4b821e497e6659e7b0bf48a3",
-      "timestamp": 1785952379,
-      "txCount": 4398
+      "height": 961208,
+      "id": "000000000000000000008016599ef777dae6b77d77450ca1f9fa7138b4e6d750",
+      "timestamp": 1785965936,
+      "txCount": 4222
     }
   ],
   "news": [
+    {
+      "title": "Crypto firm RedotPay says it will defend itself ‘vigorously’ against Binance lawsuit",
+      "link": "https://www.coindesk.com/business/2026/08/05/binance-sues-redotpay-for-usd470-million-claiming-it-diverted-users",
+      "pubDate": "Wed, 05 Aug 2026 21:40:33 +0000"
+    },
     {
       "title": "Crypto's campaign efforts see rare loss, but crypto roster in Congress likely to grow",
       "link": "https://www.coindesk.com/policy/2026/08/05/crypto-s-campaign-efforts-see-rare-loss-but-crypto-roster-in-congress-likely-to-grow",
@@ -480,11 +485,6 @@
       "title": "Yellow Card raises $40 million to link banks to stablecoin processing",
       "link": "https://www.coindesk.com/business/2026/08/05/yellow-card-raises-usd40-million-to-link-banks-to-stablecoin-processing",
       "pubDate": "Wed, 05 Aug 2026 12:09:05 +0000"
-    },
-    {
-      "title": "The $120 million Coldcard hack lights up Bitcoin's memory pool",
-      "link": "https://www.coindesk.com/daybook-us/2026/08/05/the-usd120-million-coldcard-hack-lights-up-bitcoin-s-memory-pool",
-      "pubDate": "Wed, 05 Aug 2026 11:20:58 +0000"
     }
   ]
 }
