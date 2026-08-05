@@ -1,13 +1,13 @@
 {
-  "fetchedAt": "2026-08-05T14:29:25.009Z",
+  "fetchedAt": "2026-08-05T16:50:26.881Z",
   "price": {
-    "usd": 64316,
-    "time": 1785939908
+    "usd": 64634,
+    "time": 1785948309
   },
   "moves": {
-    "d1": 0.3962186348707153,
-    "d7": 0.5973275684242108,
-    "d30": 0.4918101564788113
+    "d1": 0.8926114069008229,
+    "d7": 1.0947146908627747,
+    "d30": 0.988675565238073
   },
   "history90d": [
     {
@@ -372,60 +372,75 @@
     },
     {
       "date": "2026-08-05",
-      "close": 64310.67840285369
+      "close": 64584.586803304774
     }
   ],
   "blocks": [
     {
-      "height": 961170,
-      "id": "00000000000000000000f2e12616aa9c782dd8601a9a195795ba48f1a152be31",
-      "timestamp": 1785939574,
-      "txCount": 5526
+      "height": 961184,
+      "id": "00000000000000000000d029a20a196195d8ea3dd8f784fec9dafe63a6805acd",
+      "timestamp": 1785948444,
+      "txCount": 3841
     },
     {
-      "height": 961169,
-      "id": "000000000000000000022a32714bdd88137303c987903462668d4851806c46e6",
-      "timestamp": 1785939279,
-      "txCount": 6180
+      "height": 961183,
+      "id": "0000000000000000000075da8be584041ddbac9c42ec9ce28475d5730aad3658",
+      "timestamp": 1785948240,
+      "txCount": 4543
     },
     {
-      "height": 961168,
-      "id": "00000000000000000001f03dd73b7cddf207e5b14a6fba2d9386c1768f0908fb",
-      "timestamp": 1785939163,
-      "txCount": 5042
+      "height": 961182,
+      "id": "00000000000000000001eb1c5148746cfe9a89271f069d99123be7806f58adf7",
+      "timestamp": 1785948141,
+      "txCount": 3443
     },
     {
-      "height": 961167,
-      "id": "000000000000000000017610a0b09946fa385ff95813afb5946996729b74345c",
-      "timestamp": 1785939155,
-      "txCount": 4431
+      "height": 961181,
+      "id": "0000000000000000000211d3ada7cb98cab22c0ea2bab31dc442cba97428955e",
+      "timestamp": 1785947886,
+      "txCount": 4411
     },
     {
-      "height": 961166,
-      "id": "00000000000000000000b876bb77565d44889a9c7f4ccd1e5f6fef686c924781",
-      "timestamp": 1785937948,
-      "txCount": 5495
+      "height": 961180,
+      "id": "00000000000000000000d9367f89f2f85df8f7dc1431b8031815e836235cffae",
+      "timestamp": 1785947342,
+      "txCount": 3827
     },
     {
-      "height": 961165,
-      "id": "00000000000000000000412f495fd640e9927ecc337f5734d28e078f1a64a5f8",
-      "timestamp": 1785937555,
-      "txCount": 4195
+      "height": 961179,
+      "id": "000000000000000000012f7f8bf54aa91049a7c18f84e3452cb650c29574c28a",
+      "timestamp": 1785944591,
+      "txCount": 4147
     },
     {
-      "height": 961164,
-      "id": "0000000000000000000117f87483a1e9dc7df73539a22097fd9ad9d376766018",
-      "timestamp": 1785937103,
-      "txCount": 4435
+      "height": 961178,
+      "id": "00000000000000000000e92f5622a7a0f9e5d934cdab90dac2bd5c2903f980a2",
+      "timestamp": 1785944304,
+      "txCount": 4199
     },
     {
-      "height": 961163,
-      "id": "000000000000000000012f9a6f8acdf9bf832f607e005f42ea7487f98a2c12ee",
-      "timestamp": 1785936695,
-      "txCount": 4565
+      "height": 961177,
+      "id": "00000000000000000001c2a5814a0234a7ce05516c8f49250226930c9fbab8ab",
+      "timestamp": 1785943478,
+      "txCount": 4660
     }
   ],
   "news": [
+    {
+      "title": "Coldcard exploit could boost demand for regulated bitcoin exposure, analysts say",
+      "link": "https://www.coindesk.com/tech/2026/08/05/coldcard-exploit-could-boost-demand-for-regulated-bitcoin-exposure-analysts-say",
+      "pubDate": "Wed, 05 Aug 2026 15:44:08 +0000"
+    },
+    {
+      "title": "Crypto Long & Short: Putting the bitcoin sizing question to the test",
+      "link": "https://www.coindesk.com/coindesk-indices/2026/08/05/crypto-long-and-short-putting-the-bitcoin-sizing-question-to-the-test",
+      "pubDate": "Wed, 05 Aug 2026 15:03:19 +0000"
+    },
+    {
+      "title": "Strategy’s STRC rebounds 30% as company builds cash reserve, bitcoin price stabilizes",
+      "link": "https://www.coindesk.com/markets/2026/08/05/strategy-s-strc-rebounds-30-as-company-builds-cash-reserve-bitcoin-price-stabilizes",
+      "pubDate": "Wed, 05 Aug 2026 14:44:30 +0000"
+    },
     {
       "title": "Nomura’s Laser Digital backs ZIGChain for onchain private credit push in UAE",
       "link": "https://www.coindesk.com/business/2026/08/05/noumura-s-laser-digital-backs-zigchain-for-onchain-private-credit-push-in-uae",
@@ -470,21 +485,6 @@
       "title": "Circle shares fall 3% despite earnings beat as stablecoin issuer misses on revenue",
       "link": "https://www.coindesk.com/markets/2026/08/05/circle-shares-jump-as-earnings-beat-offsets-revenue-miss-arc-blockchain-gains-wall-street-backing",
       "pubDate": "Wed, 05 Aug 2026 11:13:17 +0000"
-    },
-    {
-      "title": "Bitcoin, broader market fail to keep pace as global equities hit record highs",
-      "link": "https://www.coindesk.com/markets/2026/08/05/bitcoin-broader-market-fail-to-keep-pace-as-global-equities-hit-record-highs",
-      "pubDate": "Wed, 05 Aug 2026 11:01:15 +0000"
-    },
-    {
-      "title": "Coldcard hack sparks a self-custody security overhaul: Cory Klippsten",
-      "link": "https://www.coindesk.com/markets/2026/08/05/coldcard-hack-sparks-a-self-custody-security-overhaul-cory-klippsten",
-      "pubDate": "Wed, 05 Aug 2026 09:55:32 +0000"
-    },
-    {
-      "title": "Why bitcoin’s ‘500-day rule’ faces its biggest test yet",
-      "link": "https://www.coindesk.com/markets/2026/08/05/why-bitcoin-s-500-day-rule-faces-its-biggest-test-yet",
-      "pubDate": "Wed, 05 Aug 2026 09:06:15 +0000"
     }
   ]
 }
