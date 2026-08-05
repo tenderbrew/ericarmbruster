@@ -1,13 +1,13 @@
 {
-  "fetchedAt": "2026-08-05T08:49:31.301Z",
+  "fetchedAt": "2026-08-05T11:27:17.305Z",
   "price": {
-    "usd": 64183,
-    "time": 1785919214
+    "usd": 64041,
+    "time": 1785929112
   },
   "moves": {
-    "d1": 0.1886078214115683,
-    "d7": 0.389300878850829,
-    "d30": 0.2840016679096946
+    "d1": -0.03305184408615158,
+    "d7": 0.1671971952462048,
+    "d30": 0.06213095079077302
   },
   "history90d": [
     {
@@ -372,60 +372,90 @@
     },
     {
       "date": "2026-08-05",
-      "close": 64076.94701585812
+      "close": 64036.945738088456
     }
   ],
   "blocks": [
     {
-      "height": 961133,
-      "id": "000000000000000000000857135871a87c0df1e0c617bfa413a9205ab2af7a83",
-      "timestamp": 1785918599,
-      "txCount": 4328
+      "height": 961150,
+      "id": "0000000000000000000022ac4bc195683509a51445c7a6b149a88ce7e0ca0f82",
+      "timestamp": 1785929135,
+      "txCount": 4359
     },
     {
-      "height": 961132,
-      "id": "00000000000000000000094797a5e65683f8a897969240ec9a02563f044cb729",
-      "timestamp": 1785917677,
-      "txCount": 5285
+      "height": 961149,
+      "id": "00000000000000000001afb4ae3a63b24c0fc5b58c0fd269e9dc2a5cab694834",
+      "timestamp": 1785928545,
+      "txCount": 3532
     },
     {
-      "height": 961131,
-      "id": "000000000000000000013bd82327de838081b254ea56d886b8dd2225e2e76071",
-      "timestamp": 1785917616,
-      "txCount": 3390
+      "height": 961148,
+      "id": "0000000000000000000062ff12c2e7075650ac0b5f99fa024d524dd85ddc910d",
+      "timestamp": 1785927746,
+      "txCount": 4607
     },
     {
-      "height": 961130,
-      "id": "000000000000000000017138cd30e304cda919c3caf6c41926891975091d05f7",
-      "timestamp": 1785916785,
-      "txCount": 4835
+      "height": 961147,
+      "id": "000000000000000000016b5ca93e1a274bb652afc1ad074e6f0fc296050dbf68",
+      "timestamp": 1785927040,
+      "txCount": 4315
     },
     {
-      "height": 961129,
-      "id": "000000000000000000017491f0e866748091e05c5c1a0fa3cc0c3c42054d3521",
-      "timestamp": 1785916770,
-      "txCount": 3499
+      "height": 961146,
+      "id": "00000000000000000001003f0281fb080a5f8eb9d2c269701f491551f68a87b9",
+      "timestamp": 1785926020,
+      "txCount": 4668
     },
     {
-      "height": 961128,
-      "id": "0000000000000000000063eb03dd853c5f9f5ca2b5a89d1c837f8c2b5c490289",
-      "timestamp": 1785916694,
-      "txCount": 4187
+      "height": 961145,
+      "id": "0000000000000000000218068a03878eb84076e4d2a61d1a22be8fd5af04cde0",
+      "timestamp": 1785923645,
+      "txCount": 5891
     },
     {
-      "height": 961127,
-      "id": "00000000000000000001d30138527a074c48220e93cd5e93a3c11ca70f184708",
-      "timestamp": 1785916043,
-      "txCount": 4425
+      "height": 961144,
+      "id": "00000000000000000001bea57c146b858b24140bcd77dc84dee214738f01cf7f",
+      "timestamp": 1785923243,
+      "txCount": 5696
     },
     {
-      "height": 961126,
-      "id": "00000000000000000001473ebce7be38e82f9c332a0cafdbed00310db15e7ef9",
-      "timestamp": 1785913422,
-      "txCount": 4175
+      "height": 961143,
+      "id": "00000000000000000000e081e5715f5301b9fdcc917a1a6accfd011e79cee225",
+      "timestamp": 1785922933,
+      "txCount": 4781
     }
   ],
   "news": [
+    {
+      "title": "The $120 million Coldcard hack lights up Bitcoin's memory pool",
+      "link": "https://www.coindesk.com/daybook-us/2026/08/05/the-usd120-million-coldcard-hack-lights-up-bitcoin-s-memory-pool",
+      "pubDate": "Wed, 05 Aug 2026 11:20:58 +0000"
+    },
+    {
+      "title": "Circle shares jump as earnings beat offsets revenue miss, Arc blockchain gains Wall Street backing",
+      "link": "https://www.coindesk.com/markets/2026/08/05/circle-shares-jump-as-earnings-beat-offsets-revenue-miss-arc-blockchain-gains-wall-street-backing",
+      "pubDate": "Wed, 05 Aug 2026 11:13:17 +0000"
+    },
+    {
+      "title": "Bitcoin, broader market fail to keep pace as global equities hit record highs",
+      "link": "https://www.coindesk.com/markets/2026/08/05/bitcoin-broader-market-fail-to-keep-pace-as-global-equities-hit-record-highs",
+      "pubDate": "Wed, 05 Aug 2026 11:01:15 +0000"
+    },
+    {
+      "title": "Coldcard hack sparks a self-custody security overhaul: Cory Klippsten",
+      "link": "https://www.coindesk.com/markets/2026/08/05/coldcard-hack-sparks-a-self-custody-security-overhaul-cory-klippsten",
+      "pubDate": "Wed, 05 Aug 2026 09:55:32 +0000"
+    },
+    {
+      "title": "Why bitcoin’s ‘500-day rule’ faces its biggest test yet",
+      "link": "https://www.coindesk.com/markets/2026/08/05/why-bitcoin-s-500-day-rule-faces-its-biggest-test-yet",
+      "pubDate": "Wed, 05 Aug 2026 09:06:15 +0000"
+    },
+    {
+      "title": "Live updates: An AI credit bubble could set up bitcoin’s path to $1 million",
+      "link": "https://www.coindesk.com/markets/2026/08/05/live-updates-an-ai-credit-bubble-could-set-up-bitcoin-s-path-to-usd1-million",
+      "pubDate": "Wed, 05 Aug 2026 09:00:20 +0000"
+    },
     {
       "title": "The worst chart for bitcoin bulls right now",
       "link": "https://www.coindesk.com/markets/2026/08/05/the-worst-chart-for-bitcoin-bulls-right-now",
@@ -455,36 +485,6 @@
       "title": "Open USD rattled Circle's stock, but its key backers still support USDC",
       "link": "https://www.coindesk.com/business/2026/08/03/open-usd-rattled-circle-s-stock-but-its-key-backers-still-support-usdc",
       "pubDate": "Tue, 04 Aug 2026 17:55:23 +0000"
-    },
-    {
-      "title": "Samsung is poised to become a dominant stablecoin distributor, analysts say",
-      "link": "https://www.coindesk.com/business/2026/08/04/samsung-is-poised-to-become-a-dominant-stablecoin-distributor-analysts-say",
-      "pubDate": "Tue, 04 Aug 2026 17:14:13 +0000"
-    },
-    {
-      "title": "Clarity Act sits idle over Trump ethics question as Warren asks SEC to investigate him",
-      "link": "https://www.coindesk.com/policy/2026/08/04/clarity-act-sits-idle-over-trump-ethics-question-as-warren-asks-sec-to-investigate-him",
-      "pubDate": "Tue, 04 Aug 2026 16:21:59 +0000"
-    },
-    {
-      "title": "Wells Fargo joins JPMorgan and Citi in the race to tokenize Wall Street’s settlement rails",
-      "link": "https://www.coindesk.com/business/2026/08/04/wells-fargo-to-offer-tokenized-deposits-for-24-7-corporate-payments",
-      "pubDate": "Tue, 04 Aug 2026 15:47:05 +0000"
-    },
-    {
-      "title": "Bitcoin’s $63,000 zone emerges as key battleground for buyers: Glassnode",
-      "link": "https://www.coindesk.com/markets/2026/08/04/bitcoin-s-usd63-000-zone-emerges-as-key-battleground-for-buyers-glassnode",
-      "pubDate": "Tue, 04 Aug 2026 14:49:33 +0000"
-    },
-    {
-      "title": "Polymarket targets $20 billion valuation as competition heats up in prediction market sector",
-      "link": "https://www.coindesk.com/markets/2026/08/04/polymarket-targets-usd20-billion-valuation-as-competition-heats-up-in-prediction-markets",
-      "pubDate": "Tue, 04 Aug 2026 14:38:23 +0000"
-    },
-    {
-      "title": "Intesa Sanpaolo slashed IBIT stake by 94% in 2Q, tripled ether ETF holding as crypto prices slumped",
-      "link": "https://www.coindesk.com/business/2026/08/04/intesa-sanpaolo-slashed-ibit-stake-by-94-in-2q-tripled-ether-etf-holding-as-crypto-prices-slumped",
-      "pubDate": "Tue, 04 Aug 2026 14:25:50 +0000"
     }
   ]
 }
