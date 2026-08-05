@@ -1,13 +1,13 @@
 {
-  "fetchedAt": "2026-08-05T11:27:17.305Z",
+  "fetchedAt": "2026-08-05T14:29:25.009Z",
   "price": {
-    "usd": 64041,
-    "time": 1785929112
+    "usd": 64316,
+    "time": 1785939908
   },
   "moves": {
-    "d1": -0.03305184408615158,
-    "d7": 0.1671971952462048,
-    "d30": 0.06213095079077302
+    "d1": 0.3962186348707153,
+    "d7": 0.5973275684242108,
+    "d30": 0.4918101564788113
   },
   "history90d": [
     {
@@ -372,67 +372,102 @@
     },
     {
       "date": "2026-08-05",
-      "close": 64036.945738088456
+      "close": 64310.67840285369
     }
   ],
   "blocks": [
     {
-      "height": 961150,
-      "id": "0000000000000000000022ac4bc195683509a51445c7a6b149a88ce7e0ca0f82",
-      "timestamp": 1785929135,
-      "txCount": 4359
+      "height": 961170,
+      "id": "00000000000000000000f2e12616aa9c782dd8601a9a195795ba48f1a152be31",
+      "timestamp": 1785939574,
+      "txCount": 5526
     },
     {
-      "height": 961149,
-      "id": "00000000000000000001afb4ae3a63b24c0fc5b58c0fd269e9dc2a5cab694834",
-      "timestamp": 1785928545,
-      "txCount": 3532
+      "height": 961169,
+      "id": "000000000000000000022a32714bdd88137303c987903462668d4851806c46e6",
+      "timestamp": 1785939279,
+      "txCount": 6180
     },
     {
-      "height": 961148,
-      "id": "0000000000000000000062ff12c2e7075650ac0b5f99fa024d524dd85ddc910d",
-      "timestamp": 1785927746,
-      "txCount": 4607
+      "height": 961168,
+      "id": "00000000000000000001f03dd73b7cddf207e5b14a6fba2d9386c1768f0908fb",
+      "timestamp": 1785939163,
+      "txCount": 5042
     },
     {
-      "height": 961147,
-      "id": "000000000000000000016b5ca93e1a274bb652afc1ad074e6f0fc296050dbf68",
-      "timestamp": 1785927040,
-      "txCount": 4315
+      "height": 961167,
+      "id": "000000000000000000017610a0b09946fa385ff95813afb5946996729b74345c",
+      "timestamp": 1785939155,
+      "txCount": 4431
     },
     {
-      "height": 961146,
-      "id": "00000000000000000001003f0281fb080a5f8eb9d2c269701f491551f68a87b9",
-      "timestamp": 1785926020,
-      "txCount": 4668
+      "height": 961166,
+      "id": "00000000000000000000b876bb77565d44889a9c7f4ccd1e5f6fef686c924781",
+      "timestamp": 1785937948,
+      "txCount": 5495
     },
     {
-      "height": 961145,
-      "id": "0000000000000000000218068a03878eb84076e4d2a61d1a22be8fd5af04cde0",
-      "timestamp": 1785923645,
-      "txCount": 5891
+      "height": 961165,
+      "id": "00000000000000000000412f495fd640e9927ecc337f5734d28e078f1a64a5f8",
+      "timestamp": 1785937555,
+      "txCount": 4195
     },
     {
-      "height": 961144,
-      "id": "00000000000000000001bea57c146b858b24140bcd77dc84dee214738f01cf7f",
-      "timestamp": 1785923243,
-      "txCount": 5696
+      "height": 961164,
+      "id": "0000000000000000000117f87483a1e9dc7df73539a22097fd9ad9d376766018",
+      "timestamp": 1785937103,
+      "txCount": 4435
     },
     {
-      "height": 961143,
-      "id": "00000000000000000000e081e5715f5301b9fdcc917a1a6accfd011e79cee225",
-      "timestamp": 1785922933,
-      "txCount": 4781
+      "height": 961163,
+      "id": "000000000000000000012f9a6f8acdf9bf832f607e005f42ea7487f98a2c12ee",
+      "timestamp": 1785936695,
+      "txCount": 4565
     }
   ],
   "news": [
+    {
+      "title": "Nomura’s Laser Digital backs ZIGChain for onchain private credit push in UAE",
+      "link": "https://www.coindesk.com/business/2026/08/05/noumura-s-laser-digital-backs-zigchain-for-onchain-private-credit-push-in-uae",
+      "pubDate": "Wed, 05 Aug 2026 13:25:04 +0000"
+    },
+    {
+      "title": "Crypto may have institutionalized, but it still trades like a rumor mill",
+      "link": "https://www.coindesk.com/opinion/2026/08/05/crypto-may-have-institutionalized-but-it-still-trades-like-a-rumor-mill",
+      "pubDate": "Wed, 05 Aug 2026 13:00:00 +0000"
+    },
+    {
+      "title": "Ondo Finance hires former Blockchain.com CFO Adam Schlisman",
+      "link": "https://www.coindesk.com/business/2026/08/05/ondo-finance-hires-former-blockchain-com-cfo-adam-schlisman",
+      "pubDate": "Wed, 05 Aug 2026 13:00:00 +0000"
+    },
+    {
+      "title": "Galaxy Digital shares slip 5% after second-quarter results",
+      "link": "https://www.coindesk.com/business/2026/08/05/galaxy-digital-shares-slip-5-after-second-quarter-results",
+      "pubDate": "Wed, 05 Aug 2026 12:42:19 +0000"
+    },
+    {
+      "title": "AI agent token once worth $2.4 billion ends with founder calling it dead",
+      "link": "https://www.coindesk.com/markets/2026/08/05/ai-agent-token-once-worth-usd2-4-billion-ends-with-founder-calling-it-dead",
+      "pubDate": "Wed, 05 Aug 2026 12:28:39 +0000"
+    },
+    {
+      "title": "SpaceX extends decline to 11% on lockup expiration and capex spending fears",
+      "link": "https://www.coindesk.com/markets/2026/08/05/spacex-stock-drops-11-premarket-as-lockup-spending-fears-hit-first-earnings",
+      "pubDate": "Wed, 05 Aug 2026 12:12:08 +0000"
+    },
+    {
+      "title": "Yellow Card raises $40 million to link banks to stablecoin processing",
+      "link": "https://www.coindesk.com/business/2026/08/05/yellow-card-raises-usd40-million-to-link-banks-to-stablecoin-processing",
+      "pubDate": "Wed, 05 Aug 2026 12:09:05 +0000"
+    },
     {
       "title": "The $120 million Coldcard hack lights up Bitcoin's memory pool",
       "link": "https://www.coindesk.com/daybook-us/2026/08/05/the-usd120-million-coldcard-hack-lights-up-bitcoin-s-memory-pool",
       "pubDate": "Wed, 05 Aug 2026 11:20:58 +0000"
     },
     {
-      "title": "Circle shares jump as earnings beat offsets revenue miss, Arc blockchain gains Wall Street backing",
+      "title": "Circle shares fall 3% despite earnings beat as stablecoin issuer misses on revenue",
       "link": "https://www.coindesk.com/markets/2026/08/05/circle-shares-jump-as-earnings-beat-offsets-revenue-miss-arc-blockchain-gains-wall-street-backing",
       "pubDate": "Wed, 05 Aug 2026 11:13:17 +0000"
     },
@@ -450,41 +485,6 @@
       "title": "Why bitcoin’s ‘500-day rule’ faces its biggest test yet",
       "link": "https://www.coindesk.com/markets/2026/08/05/why-bitcoin-s-500-day-rule-faces-its-biggest-test-yet",
       "pubDate": "Wed, 05 Aug 2026 09:06:15 +0000"
-    },
-    {
-      "title": "Live updates: An AI credit bubble could set up bitcoin’s path to $1 million",
-      "link": "https://www.coindesk.com/markets/2026/08/05/live-updates-an-ai-credit-bubble-could-set-up-bitcoin-s-path-to-usd1-million",
-      "pubDate": "Wed, 05 Aug 2026 09:00:20 +0000"
-    },
-    {
-      "title": "The worst chart for bitcoin bulls right now",
-      "link": "https://www.coindesk.com/markets/2026/08/05/the-worst-chart-for-bitcoin-bulls-right-now",
-      "pubDate": "Wed, 05 Aug 2026 07:54:22 +0000"
-    },
-    {
-      "title": "New Ethereum proposal would cut issuance to zero if staked ETH reaches $112 billion",
-      "link": "https://www.coindesk.com/tech/2026/08/05/new-ethereum-proposal-would-cut-issuance-to-zero-if-staked-eth-reaches-usd112-billion",
-      "pubDate": "Wed, 05 Aug 2026 05:49:57 +0000"
-    },
-    {
-      "title": "\"You stole, please return some.\" Coldcard hacker's wallet becomes a graffiti wall of pleas and hustles",
-      "link": "https://www.coindesk.com/markets/2026/08/05/you-stole-please-return-some-coldcard-hacker-s-wallet-becomes-a-graffiti-wall-of-pleas-and-hustles",
-      "pubDate": "Wed, 05 Aug 2026 05:12:46 +0000"
-    },
-    {
-      "title": "Bitcoin flat at $64,000 as stocks print records and Hormuz deal nears",
-      "link": "https://www.coindesk.com/markets/2026/08/05/bitcoin-flat-at-usd64-000-as-stocks-print-records-and-hormuz-deal-nears",
-      "pubDate": "Wed, 05 Aug 2026 04:32:16 +0000"
-    },
-    {
-      "title": "SpaceX tops Wall Street revenue forecast, posts $540 million loss on bitcoin holdings",
-      "link": "https://www.coindesk.com/business/2026/08/04/spacex-tops-wall-street-revenue-forecast-posts-usd540-million-decline-on-bitcoin-holding-value",
-      "pubDate": "Tue, 04 Aug 2026 20:26:21 +0000"
-    },
-    {
-      "title": "Open USD rattled Circle's stock, but its key backers still support USDC",
-      "link": "https://www.coindesk.com/business/2026/08/03/open-usd-rattled-circle-s-stock-but-its-key-backers-still-support-usdc",
-      "pubDate": "Tue, 04 Aug 2026 17:55:23 +0000"
     }
   ]
 }
