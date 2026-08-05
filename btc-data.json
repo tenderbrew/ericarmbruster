@@ -1,13 +1,13 @@
 {
-  "fetchedAt": "2026-08-05T03:28:27.687Z",
+  "fetchedAt": "2026-08-05T08:49:31.301Z",
   "price": {
-    "usd": 64086,
-    "time": 1785900010
+    "usd": 64183,
+    "time": 1785919214
   },
   "moves": {
-    "d1": 0.03719241610677937,
-    "d7": 0.23758216540259447,
-    "d30": 0.1324420935397308
+    "d1": 0.1886078214115683,
+    "d7": 0.389300878850829,
+    "d30": 0.2840016679096946
   },
   "history90d": [
     {
@@ -372,60 +372,80 @@
     },
     {
       "date": "2026-08-05",
-      "close": 64039.20908186058
+      "close": 64076.94701585812
     }
   ],
   "blocks": [
     {
-      "height": 961109,
-      "id": "00000000000000000000979b4992652f6ffd10f20cb080fdb82fb28962d8b0cf",
-      "timestamp": 1785900188,
-      "txCount": 4097
+      "height": 961133,
+      "id": "000000000000000000000857135871a87c0df1e0c617bfa413a9205ab2af7a83",
+      "timestamp": 1785918599,
+      "txCount": 4328
     },
     {
-      "height": 961108,
-      "id": "000000000000000000006a6c82f2ab6242cafb234761318ee00d35ef7f32f786",
-      "timestamp": 1785899778,
-      "txCount": 4471
+      "height": 961132,
+      "id": "00000000000000000000094797a5e65683f8a897969240ec9a02563f044cb729",
+      "timestamp": 1785917677,
+      "txCount": 5285
     },
     {
-      "height": 961107,
-      "id": "00000000000000000001534e619f4da855a0d3bc871e477fc031775a62a378c2",
-      "timestamp": 1785899056,
-      "txCount": 5257
+      "height": 961131,
+      "id": "000000000000000000013bd82327de838081b254ea56d886b8dd2225e2e76071",
+      "timestamp": 1785917616,
+      "txCount": 3390
     },
     {
-      "height": 961106,
-      "id": "000000000000000000006b849e875544636d793a3204c3fb41f2d161d3d551d7",
-      "timestamp": 1785898348,
-      "txCount": 5001
+      "height": 961130,
+      "id": "000000000000000000017138cd30e304cda919c3caf6c41926891975091d05f7",
+      "timestamp": 1785916785,
+      "txCount": 4835
     },
     {
-      "height": 961105,
-      "id": "0000000000000000000216980b30e40932124ecf618dad641a540ec801d3b332",
-      "timestamp": 1785897877,
-      "txCount": 3327
+      "height": 961129,
+      "id": "000000000000000000017491f0e866748091e05c5c1a0fa3cc0c3c42054d3521",
+      "timestamp": 1785916770,
+      "txCount": 3499
     },
     {
-      "height": 961104,
-      "id": "00000000000000000000e602824884ae33d52d3663ef6aa000107cef4fd4a3c8",
-      "timestamp": 1785896934,
-      "txCount": 6202
+      "height": 961128,
+      "id": "0000000000000000000063eb03dd853c5f9f5ca2b5a89d1c837f8c2b5c490289",
+      "timestamp": 1785916694,
+      "txCount": 4187
     },
     {
-      "height": 961103,
-      "id": "00000000000000000001b5a599a4d9dc6b333167c824eae917dac56a444aa097",
-      "timestamp": 1785896637,
-      "txCount": 2083
+      "height": 961127,
+      "id": "00000000000000000001d30138527a074c48220e93cd5e93a3c11ca70f184708",
+      "timestamp": 1785916043,
+      "txCount": 4425
     },
     {
-      "height": 961102,
-      "id": "00000000000000000002397b0bc4e0a73aab0947759da23647652043075f9d39",
-      "timestamp": 1785895904,
-      "txCount": 3638
+      "height": 961126,
+      "id": "00000000000000000001473ebce7be38e82f9c332a0cafdbed00310db15e7ef9",
+      "timestamp": 1785913422,
+      "txCount": 4175
     }
   ],
   "news": [
+    {
+      "title": "The worst chart for bitcoin bulls right now",
+      "link": "https://www.coindesk.com/markets/2026/08/05/the-worst-chart-for-bitcoin-bulls-right-now",
+      "pubDate": "Wed, 05 Aug 2026 07:54:22 +0000"
+    },
+    {
+      "title": "New Ethereum proposal would cut issuance to zero if staked ETH reaches $112 billion",
+      "link": "https://www.coindesk.com/tech/2026/08/05/new-ethereum-proposal-would-cut-issuance-to-zero-if-staked-eth-reaches-usd112-billion",
+      "pubDate": "Wed, 05 Aug 2026 05:49:57 +0000"
+    },
+    {
+      "title": "\"You stole, please return some.\" Coldcard hacker's wallet becomes a graffiti wall of pleas and hustles",
+      "link": "https://www.coindesk.com/markets/2026/08/05/you-stole-please-return-some-coldcard-hacker-s-wallet-becomes-a-graffiti-wall-of-pleas-and-hustles",
+      "pubDate": "Wed, 05 Aug 2026 05:12:46 +0000"
+    },
+    {
+      "title": "Bitcoin flat at $64,000 as stocks print records and Hormuz deal nears",
+      "link": "https://www.coindesk.com/markets/2026/08/05/bitcoin-flat-at-usd64-000-as-stocks-print-records-and-hormuz-deal-nears",
+      "pubDate": "Wed, 05 Aug 2026 04:32:16 +0000"
+    },
     {
       "title": "SpaceX tops Wall Street revenue forecast, posts $540 million loss on bitcoin holdings",
       "link": "https://www.coindesk.com/business/2026/08/04/spacex-tops-wall-street-revenue-forecast-posts-usd540-million-decline-on-bitcoin-holding-value",
@@ -465,26 +485,6 @@
       "title": "Intesa Sanpaolo slashed IBIT stake by 94% in 2Q, tripled ether ETF holding as crypto prices slumped",
       "link": "https://www.coindesk.com/business/2026/08/04/intesa-sanpaolo-slashed-ibit-stake-by-94-in-2q-tripled-ether-etf-holding-as-crypto-prices-slumped",
       "pubDate": "Tue, 04 Aug 2026 14:25:50 +0000"
-    },
-    {
-      "title": "Dinari brings tokenized U.S. stocks to American investors as equity race heats up",
-      "link": "https://www.coindesk.com/business/2026/08/04/dinari-brings-tokenized-u-s-stocks-to-american-investors-as-equity-race-heats-up",
-      "pubDate": "Tue, 04 Aug 2026 14:00:00 +0000"
-    },
-    {
-      "title": "As Clarity Act teeters, mystery group hammers away at crypto in Washington ads",
-      "link": "https://www.coindesk.com/policy/2026/08/03/as-clarity-act-teeters-mystery-group-hammers-away-at-crypto-in-washington-ads",
-      "pubDate": "Tue, 04 Aug 2026 13:00:00 +0000"
-    },
-    {
-      "title": "BitGo’s WBTC move pushes LayerZero-to-Chainlink tally near $15 billion",
-      "link": "https://www.coindesk.com/business/2026/08/04/bitgo-s-wbtc-move-pushes-layerzero-to-chainlink-tally-near-usd15-billion",
-      "pubDate": "Tue, 04 Aug 2026 13:00:00 +0000"
-    },
-    {
-      "title": "BNY to add crypto staking to digital asset custody platform",
-      "link": "https://www.coindesk.com/business/2026/08/04/bny-to-add-crypto-staking-to-digital-asset-custody-platform",
-      "pubDate": "Tue, 04 Aug 2026 12:30:00 +0000"
     }
   ]
 }
