@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-08-03T18:10:01.439Z",
+  "fetchedAt": "2026-08-05T12:10:01.983Z",
   "note": "main services only; databases/caches/workers are filtered as implementation detail",
   "services": [
     {
@@ -87,6 +87,14 @@
       "project": "infra"
     },
     {
+      "name": "beszel",
+      "project": "infra"
+    },
+    {
+      "name": "beszel-agent",
+      "project": "infra"
+    },
+    {
       "name": "crowdsec",
       "project": "infra"
     },
@@ -96,10 +104,6 @@
     },
     {
       "name": "glance",
-      "project": "infra"
-    },
-    {
-      "name": "netdata",
       "project": "infra"
     },
     {
