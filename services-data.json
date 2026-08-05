@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-08-05T12:10:01.983Z",
+  "fetchedAt": "2026-08-05T18:10:01.825Z",
   "note": "main services only; databases/caches/workers are filtered as implementation detail",
   "services": [
     {
@@ -144,10 +144,6 @@
     },
     {
       "name": "homeassistant",
-      "project": "standalone"
-    },
-    {
-      "name": "tok-bot",
       "project": "standalone"
     }
   ]
