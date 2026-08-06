@@ -1,13 +1,13 @@
 {
-  "fetchedAt": "2026-08-06T03:31:59.989Z",
+  "fetchedAt": "2026-08-06T08:50:49.646Z",
   "price": {
-    "usd": 64485,
-    "time": 1785987017
+    "usd": 64817,
+    "time": 1786005908
   },
   "moves": {
-    "d1": -0.19146860723151526,
-    "d7": -0.4506871096521148,
-    "d30": 1.8152444853698713
+    "d1": 0.3223940340400855,
+    "d7": 0.061840949270042245,
+    "d30": 2.339438657179471
   },
   "history90d": [
     {
@@ -372,60 +372,95 @@
     },
     {
       "date": "2026-08-06",
-      "close": 64477.45301676216
+      "close": 64826.98081706754
     }
   ],
   "blocks": [
     {
-      "height": 961241,
-      "id": "000000000000000000022d0ad6f17739e3abcda90b9aad4315d0937ff4b4dbac",
-      "timestamp": 1785987019,
-      "txCount": 4552
+      "height": 961275,
+      "id": "000000000000000000022e9764a36672facd52a39aa4e895546413ce63814064",
+      "timestamp": 1786005958,
+      "txCount": 3352
     },
     {
-      "height": 961240,
-      "id": "00000000000000000001babe190fd8837afa153c6cdec8e13e354d8911c1210b",
-      "timestamp": 1785986658,
-      "txCount": 4255
+      "height": 961274,
+      "id": "0000000000000000000142bfebaf6106994f5dd98d8b0ac2136ed01e39d86b9c",
+      "timestamp": 1786005515,
+      "txCount": 4115
     },
     {
-      "height": 961239,
-      "id": "00000000000000000001a245886f917930fdca6072586b5844fde9db5fbfd417",
-      "timestamp": 1785985637,
-      "txCount": 4363
+      "height": 961273,
+      "id": "0000000000000000000128d7521a7d24ea18086e70de8b2cf1cebeb7e8b35e86",
+      "timestamp": 1786005123,
+      "txCount": 1
     },
     {
-      "height": 961238,
-      "id": "000000000000000000009178c8475c8319a36fce279dae70d5f57beea5255c7f",
-      "timestamp": 1785985405,
-      "txCount": 3215
+      "height": 961272,
+      "id": "00000000000000000001c856ed676ecd4819d2da82958705464a436751d23a10",
+      "timestamp": 1786005090,
+      "txCount": 4620
     },
     {
-      "height": 961237,
-      "id": "0000000000000000000192caed2be2a6a811d20c7ff215f5d2b08e465d84b619",
-      "timestamp": 1785983369,
-      "txCount": 4185
+      "height": 961271,
+      "id": "0000000000000000000140eb9e6d4a6b30a9bd404405251a8e26e5fe41397e4c",
+      "timestamp": 1786002780,
+      "txCount": 5921
     },
     {
-      "height": 961236,
-      "id": "000000000000000000018d17e0131532948b246e87afc47bcffb4cd33d44b936",
-      "timestamp": 1785983084,
-      "txCount": 2758
+      "height": 961270,
+      "id": "000000000000000000003737a2ea500be1636985178d65bba4f5e6c8ee8af76e",
+      "timestamp": 1786002148,
+      "txCount": 4622
     },
     {
-      "height": 961235,
-      "id": "00000000000000000000af5b3a10845b45fe10088c50ea63b429594c3bde6836",
-      "timestamp": 1785983014,
-      "txCount": 3972
+      "height": 961269,
+      "id": "000000000000000000016168a9b84c9c24d0dbd1c100e6a4d057bf36e419d68e",
+      "timestamp": 1786002049,
+      "txCount": 4159
     },
     {
-      "height": 961234,
-      "id": "00000000000000000001c3c50cf63b6700bb2ce44272a58893d5745106af654d",
-      "timestamp": 1785981410,
-      "txCount": 4280
+      "height": 961268,
+      "id": "0000000000000000000150053c4f6f1f831cce7e126c0e4346cf43c65dbc536b",
+      "timestamp": 1786001213,
+      "txCount": 5907
     }
   ],
   "news": [
+    {
+      "title": "Live updates: Coinbase lets U.K. users trade U.S. equities. BTC trades near $65,000",
+      "link": "https://www.coindesk.com/tech/2026/08/06/live-updates-bitcoin-nears-usd65-000-as-oil-inflation-hopes-keep-macro-bid-alive",
+      "pubDate": "Thu, 06 Aug 2026 07:26:23 +0000"
+    },
+    {
+      "title": "Bitcoin developers flag 85 critical bugs in an \"extremely bad\" situation",
+      "link": "https://www.coindesk.com/tech/2026/08/06/bitcoin-developers-flag-85-critical-bugs-in-an-extremely-bad-situation",
+      "pubDate": "Thu, 06 Aug 2026 07:14:11 +0000"
+    },
+    {
+      "title": "S&P 500 has added crypto's $2 trillion market cap this month. Bitcoin is not impressed. Here's why",
+      "link": "https://www.coindesk.com/markets/2026/08/06/s-and-p-500-has-added-crypto-s-usd2-trillion-market-cap-this-month-bitcoin-is-not-impressed-here-s-why",
+      "pubDate": "Thu, 06 Aug 2026 06:10:43 +0000"
+    },
+    {
+      "title": "Bitcoin steadies above $64,000 as traders watch $100 billion SpaceX unlock",
+      "link": "https://www.coindesk.com/markets/2026/08/06/bitcoin-steadies-above-usd64-000-as-traders-watch-usd100-billion-spacex-unlock",
+      "pubDate": "Thu, 06 Aug 2026 04:59:11 +0000"
+    },
+    {
+      "title": "XRP whales keep buying the dip, but ether shows deeper capitulation",
+      "link": "https://www.coindesk.com/markets/2026/08/06/xrp-whales-keep-buying-the-dip-but-ether-shows-deeper-capitulation",
+      "pubDate": "Thu, 06 Aug 2026 04:46:17 +0000"
+    },
+    {
+      "title": "CASHCAT jumps 120% in a week as Robinhood Chain hits $774 million of value locked",
+      "link": "https://www.coindesk.com/markets/2026/08/05/cashcat-jumps-120-in-a-week-as-robinhood-chain-tvl-hits-usd774-million",
+      "pubDate": "Thu, 06 Aug 2026 04:31:41 +0000"
+    },
+    {
+      "title": "Here are the possible outcomes for Clarity right now",
+      "link": "https://www.coindesk.com/policy/2026/08/05/here-are-the-possible-outcomes-for-clarity-right-now",
+      "pubDate": "Thu, 06 Aug 2026 03:49:04 +0000"
+    },
     {
       "title": "Crypto firm RedotPay says it will defend itself ‘vigorously’ against Binance lawsuit",
       "link": "https://www.coindesk.com/business/2026/08/05/binance-sues-redotpay-for-usd470-million-claiming-it-diverted-users",
@@ -450,41 +485,6 @@
       "title": "Strategy’s STRC rebounds 30% as company builds cash reserve, bitcoin price stabilizes",
       "link": "https://www.coindesk.com/markets/2026/08/05/strategy-s-strc-rebounds-30-as-company-builds-cash-reserve-bitcoin-price-stabilizes",
       "pubDate": "Wed, 05 Aug 2026 14:44:30 +0000"
-    },
-    {
-      "title": "Nomura’s Laser Digital backs ZIGChain for onchain private credit push in UAE",
-      "link": "https://www.coindesk.com/business/2026/08/05/noumura-s-laser-digital-backs-zigchain-for-onchain-private-credit-push-in-uae",
-      "pubDate": "Wed, 05 Aug 2026 13:25:04 +0000"
-    },
-    {
-      "title": "Crypto may have institutionalized, but it still trades like a rumor mill",
-      "link": "https://www.coindesk.com/opinion/2026/08/05/crypto-may-have-institutionalized-but-it-still-trades-like-a-rumor-mill",
-      "pubDate": "Wed, 05 Aug 2026 13:00:00 +0000"
-    },
-    {
-      "title": "Ondo Finance hires former Blockchain.com CFO Adam Schlisman",
-      "link": "https://www.coindesk.com/business/2026/08/05/ondo-finance-hires-former-blockchain-com-cfo-adam-schlisman",
-      "pubDate": "Wed, 05 Aug 2026 13:00:00 +0000"
-    },
-    {
-      "title": "Galaxy Digital shares slip 5% after second-quarter results",
-      "link": "https://www.coindesk.com/business/2026/08/05/galaxy-digital-shares-slip-5-after-second-quarter-results",
-      "pubDate": "Wed, 05 Aug 2026 12:42:19 +0000"
-    },
-    {
-      "title": "AI agent token once worth $2.4 billion ends with founder calling it dead",
-      "link": "https://www.coindesk.com/markets/2026/08/05/ai-agent-token-once-worth-usd2-4-billion-ends-with-founder-calling-it-dead",
-      "pubDate": "Wed, 05 Aug 2026 12:28:39 +0000"
-    },
-    {
-      "title": "SpaceX extends decline to 11% on lockup expiration and capex spending fears",
-      "link": "https://www.coindesk.com/markets/2026/08/05/spacex-stock-drops-11-premarket-as-lockup-spending-fears-hit-first-earnings",
-      "pubDate": "Wed, 05 Aug 2026 12:12:08 +0000"
-    },
-    {
-      "title": "Yellow Card raises $40 million to link banks to stablecoin processing",
-      "link": "https://www.coindesk.com/business/2026/08/05/yellow-card-raises-usd40-million-to-link-banks-to-stablecoin-processing",
-      "pubDate": "Wed, 05 Aug 2026 12:09:05 +0000"
     }
   ]
 }
