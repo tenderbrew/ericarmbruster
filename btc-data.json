@@ -1,13 +1,13 @@
 {
-  "fetchedAt": "2026-08-06T11:30:54.837Z",
+  "fetchedAt": "2026-08-06T14:32:03.032Z",
   "price": {
-    "usd": 64535,
-    "time": 1786015511
+    "usd": 64421,
+    "time": 1786026308
   },
   "moves": {
-    "d1": -0.11407965523279051,
-    "d7": -0.3734991489710682,
-    "d30": 1.8941893907628904
+    "d1": -0.2905264657898976,
+    "d7": -0.5494876993238584,
+    "d30": 1.714195006466812
   },
   "history90d": [
     {
@@ -372,60 +372,70 @@
     },
     {
       "date": "2026-08-06",
-      "close": 64526.45226753332
+      "close": 64372.16102756601
     }
   ],
   "blocks": [
     {
-      "height": 961283,
-      "id": "0000000000000000000009edee9a71545ff8c73fb8fc683f2c19faa82df79f59",
-      "timestamp": 1786015288,
-      "txCount": 3202
+      "height": 961302,
+      "id": "0000000000000000000163482825c456527c7a258ea9e28728cc8b715107cbc6",
+      "timestamp": 1786025963,
+      "txCount": 4368
     },
     {
-      "height": 961282,
-      "id": "0000000000000000000085e74947358517a8e12a75b6fa4991d5f8b4bde7f846",
-      "timestamp": 1786015275,
-      "txCount": 4468
+      "height": 961301,
+      "id": "00000000000000000000f0dbd6befc5e9cdcf8ce36a56f568407fe3f0fef99c4",
+      "timestamp": 1786024748,
+      "txCount": 4779
     },
     {
-      "height": 961281,
-      "id": "00000000000000000001ddabcbe584b16a82b005bbaa096c63630df3feee89a3",
-      "timestamp": 1786013138,
-      "txCount": 4204
+      "height": 961300,
+      "id": "000000000000000000013af932eea3c38c4880669331e66f4e255a2c88369eaf",
+      "timestamp": 1786024335,
+      "txCount": 3928
     },
     {
-      "height": 961280,
-      "id": "00000000000000000001e399ff975eb980ede072318b358abec623b1ded4a2ed",
-      "timestamp": 1786012522,
-      "txCount": 4495
+      "height": 961299,
+      "id": "00000000000000000000bfbab16b2bf3ab84a7b066951ce929dfb2e4ad5a6bb4",
+      "timestamp": 1786024462,
+      "txCount": 3898
     },
     {
-      "height": 961279,
-      "id": "0000000000000000000202b9318d701dfcbaedca858db56d8b6a9995a176b7c9",
-      "timestamp": 1786006917,
-      "txCount": 4419
+      "height": 961298,
+      "id": "000000000000000000015f478fba7be0a0e8e1d7c9dcb09b6d67c0ea4777c7b2",
+      "timestamp": 1786023745,
+      "txCount": 3790
     },
     {
-      "height": 961278,
-      "id": "0000000000000000000028fefe6597a199825c068fa739d8b60a1b5f95ccb0fd",
-      "timestamp": 1786006723,
-      "txCount": 192
+      "height": 961297,
+      "id": "00000000000000000001dc4084eff84a44b5be05eca6f2c0fc231588afc085ae",
+      "timestamp": 1786023233,
+      "txCount": 3816
     },
     {
-      "height": 961277,
-      "id": "00000000000000000001f18eb57a40a24109797d6f3e1e8e749806257cd7c7be",
-      "timestamp": 1786006609,
-      "txCount": 3817
+      "height": 961296,
+      "id": "0000000000000000000059a076348d06abdc31ee33a22f87467ab746da3484dc",
+      "timestamp": 1786023148,
+      "txCount": 3364
     },
     {
-      "height": 961276,
-      "id": "00000000000000000000da55f110c65ff12343e002bbb9b67329c23add3dfb18",
-      "timestamp": 1786006414,
-      "txCount": 3755
+      "height": 961295,
+      "id": "0000000000000000000151410d6e03d3ac4a51942ff62d607826ba7e8f27a53e",
+      "timestamp": 1786021718,
+      "txCount": 3683
     }
   ],
   "news": [
+    {
+      "title": "JPMorgan says Hyperliquid ETF inflows have stalled as competition mounts",
+      "link": "https://www.coindesk.com/markets/2026/08/06/jpmorgan-says-hyperliquid-etf-inflows-have-stalled-as-competition-mounts",
+      "pubDate": "Thu, 06 Aug 2026 12:46:42 +0000"
+    },
+    {
+      "title": "Bitcoin’s low volatility doesn’t necessarily mean low risk",
+      "link": "https://www.coindesk.com/daybook-us/2026/08/06/bitcoin-s-low-volatility-doesn-t-necessarily-mean-low-risk",
+      "pubDate": "Thu, 06 Aug 2026 11:37:03 +0000"
+    },
     {
       "title": "Free Markets and Innovation, Sort Of",
       "link": "https://www.coindesk.com/opinion/2026/08/06/free-markets-and-innovation-sort-of",
@@ -452,7 +462,7 @@
       "pubDate": "Thu, 06 Aug 2026 09:19:03 +0000"
     },
     {
-      "title": "Live updates: Coinbase lets UK users trade U.S. equities. BTC trades near $65,000",
+      "title": "Live updates: BTC holding just above $64,000 ahead of Friday's key jobs data",
       "link": "https://www.coindesk.com/tech/2026/08/06/live-updates-bitcoin-nears-usd65-000-as-oil-inflation-hopes-keep-macro-bid-alive",
       "pubDate": "Thu, 06 Aug 2026 07:26:23 +0000"
     },
@@ -462,7 +472,7 @@
       "pubDate": "Thu, 06 Aug 2026 07:14:11 +0000"
     },
     {
-      "title": "S&P 500 has added crypto's $2 trillion market cap this month. Bitcoin is not impressed. Here's why",
+      "title": "S&P 500 added all of crypto's $2 trillion market cap in a month while bitcoin barely moved. Here's why",
       "link": "https://www.coindesk.com/markets/2026/08/06/s-and-p-500-has-added-crypto-s-usd2-trillion-market-cap-this-month-bitcoin-is-not-impressed-here-s-why",
       "pubDate": "Thu, 06 Aug 2026 06:10:43 +0000"
     },
@@ -475,16 +485,6 @@
       "title": "XRP whales keep buying the dip, but ether shows deeper capitulation",
       "link": "https://www.coindesk.com/markets/2026/08/06/xrp-whales-keep-buying-the-dip-but-ether-shows-deeper-capitulation",
       "pubDate": "Thu, 06 Aug 2026 04:46:17 +0000"
-    },
-    {
-      "title": "CASHCAT jumps 120% in a week as Robinhood Chain hits $774 million of value locked",
-      "link": "https://www.coindesk.com/markets/2026/08/05/cashcat-jumps-120-in-a-week-as-robinhood-chain-tvl-hits-usd774-million",
-      "pubDate": "Thu, 06 Aug 2026 04:31:41 +0000"
-    },
-    {
-      "title": "Here are the possible outcomes for Clarity right now",
-      "link": "https://www.coindesk.com/policy/2026/08/05/here-are-the-possible-outcomes-for-clarity-right-now",
-      "pubDate": "Thu, 06 Aug 2026 03:49:04 +0000"
     }
   ]
 }
