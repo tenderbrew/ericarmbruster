@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-08-06T03:28:37.993Z",
+  "fetchedAt": "2026-08-06T14:30:16.187Z",
   "indicators": {
     "UNRATE": {
       "latest": {
@@ -33,12 +33,12 @@
     },
     "ICSA": {
       "latest": {
-        "date": "2026-07-25",
-        "value": 197000
+        "date": "2026-08-01",
+        "value": 199000
       },
       "previous": {
-        "date": "2026-07-18",
-        "value": 188000
+        "date": "2026-07-25",
+        "value": 198000
       }
     },
     "CPIAUCSL": {
@@ -263,12 +263,12 @@
     },
     "VIXCLS": {
       "latest": {
-        "date": "2026-08-04",
-        "value": 16.5
+        "date": "2026-08-05",
+        "value": 15.81
       },
       "previous": {
-        "date": "2026-08-03",
-        "value": 15.86
+        "date": "2026-08-04",
+        "value": 16.5
       }
     },
     "BOPGSTB": {
@@ -300,6 +300,18 @@
     }
   },
   "news": [
+    {
+      "title": "Why Mises Thought Fractional Reserve Banking Caused the Boom-Bust Cycle",
+      "link": "https://mises.org/podcasts/human-action-podcast/why-mises-thought-fractional-reserve-banking-caused-boom-bust-cycle",
+      "pubDate": "Thu, 06 Aug 2026 09:00:00 CDT",
+      "kind": "Podcast"
+    },
+    {
+      "title": "Trump’s Commerce Department as Venture Capitalist: Political Investment at its Worst",
+      "link": "https://mises.org/mises-wire/trumps-commerce-department-venture-capitalist-political-investment-its-worst",
+      "pubDate": "Thu, 06 Aug 2026 05:00:00 CDT",
+      "kind": "Mises Wire"
+    },
     {
       "title": "The US Supports the Mass Migration of Moroccans into Spanish Territory",
       "link": "https://mises.org/mises-wire/us-supports-mass-migration-moroccans-spanish-territory",
@@ -346,18 +358,6 @@
       "title": "Inflation and Statistics: Economics Explains Them, Not the Other Way Around",
       "link": "https://mises.org/podcasts/audio-mises-wire/inflation-and-statistics-economics-explains-them-not-other-way-around",
       "pubDate": "Wed, 05 Aug 2026 11:37:25 CDT",
-      "kind": "Podcast"
-    },
-    {
-      "title": "The Decline from Weight to Name: Monopolizing the Mint",
-      "link": "https://mises.org/podcasts/case-100-percent-gold-dollar/decline-weight-name-monopolizing-mint",
-      "pubDate": "Wed, 05 Aug 2026 11:34:23 CDT",
-      "kind": "Podcast"
-    },
-    {
-      "title": "The Dollar: Independent Name or Unit of Weight?",
-      "link": "https://mises.org/podcasts/case-100-percent-gold-dollar/dollar-independent-name-or-unit-weight",
-      "pubDate": "Wed, 05 Aug 2026 11:23:16 CDT",
       "kind": "Podcast"
     }
   ]
