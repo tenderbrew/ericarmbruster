@@ -1,13 +1,13 @@
 {
-  "fetchedAt": "2026-08-07T13:34:27.709Z",
+  "fetchedAt": "2026-08-07T16:06:40.749Z",
   "price": {
-    "usd": 65115,
-    "time": 1786109419
+    "usd": 64873,
+    "time": 1786118407
   },
   "moves": {
-    "d1": 1.3261986339268006,
-    "d7": 3.527202471554891,
-    "d30": 4.607231683732738
+    "d1": 0.9496196572023718,
+    "d7": 3.142443460603239,
+    "d30": 4.21845874251392
   },
   "history90d": [
     {
@@ -372,60 +372,80 @@
     },
     {
       "date": "2026-08-07",
-      "close": 65157.85127683596
+      "close": 64921.74807965459
     }
   ],
   "blocks": [
     {
-      "height": 961438,
-      "id": "000000000000000000012c670ac5eddb478ecc58de98d9c28bfbd42e7291e3cb",
-      "timestamp": 1786109220,
-      "txCount": 4452
+      "height": 961459,
+      "id": "000000000000000000015f6f104eba86cb0295a4e580d40d3d12aa23df463372",
+      "timestamp": 1786118295,
+      "txCount": 5065
     },
     {
-      "height": 961437,
-      "id": "000000000000000000008282a7f1d077cfae2a560580c984998acbb870d22eee",
-      "timestamp": 1786107589,
-      "txCount": 4111
+      "height": 961458,
+      "id": "000000000000000000015e93faa47e3d32090f33be19009a462c2c18a37aa1b9",
+      "timestamp": 1786118069,
+      "txCount": 6392
     },
     {
-      "height": 961436,
-      "id": "000000000000000000022f5ce1e2dfbddcdc3316380c2d2b51ba0c029a1ee0ed",
-      "timestamp": 1786106625,
-      "txCount": 5189
+      "height": 961457,
+      "id": "0000000000000000000121e855c1874223a9d1b7637de87e228061dde837f1e4",
+      "timestamp": 1786118044,
+      "txCount": 3732
     },
     {
-      "height": 961435,
-      "id": "0000000000000000000087ad67439885d2956ea0c47c818add16108f95be8ee6",
-      "timestamp": 1786106466,
-      "txCount": 4433
+      "height": 961456,
+      "id": "000000000000000000007711d82a43eb174b4d38396dd167cf94081aa6073b63",
+      "timestamp": 1786117737,
+      "txCount": 4080
     },
     {
-      "height": 961434,
-      "id": "000000000000000000007970f99401d112d8cf819eba34d178940b33c92c8fa8",
-      "timestamp": 1786105962,
-      "txCount": 4162
+      "height": 961455,
+      "id": "000000000000000000020dc9f06f99893e5f896e723cfa45668f6a3f3cd7c541",
+      "timestamp": 1786116818,
+      "txCount": 6724
     },
     {
-      "height": 961433,
-      "id": "000000000000000000021d08927c85d8c3c82582b82c533d34ece6956a4da869",
-      "timestamp": 1786104497,
-      "txCount": 5039
+      "height": 961454,
+      "id": "00000000000000000000e73df59ee9c2b539b2419337e8635df8222ac82255fe",
+      "timestamp": 1786116859,
+      "txCount": 4439
     },
     {
-      "height": 961432,
-      "id": "0000000000000000000136c5764cdf05bfd0a353a43871b3b1dcd65041f1f926",
-      "timestamp": 1786104049,
-      "txCount": 6059
+      "height": 961453,
+      "id": "0000000000000000000121524b3e61542e635989c262ef541e381419c5df5162",
+      "timestamp": 1786116448,
+      "txCount": 4108
     },
     {
-      "height": 961431,
-      "id": "0000000000000000000025d1ae4ee958645a69dc4f0a2f8734e27aaa81015103",
-      "timestamp": 1786103822,
-      "txCount": 4829
+      "height": 961452,
+      "id": "000000000000000000008d5b3a67f0dfcaac9aedd171ce508ded6c1a3d000ac3",
+      "timestamp": 1786116231,
+      "txCount": 4166
     }
   ],
   "news": [
+    {
+      "title": "OKX's Rafique doubts Clarity Act will pass, warns optimism is already priced into bitcoin",
+      "link": "https://www.coindesk.com/policy/2026/08/04/okx-s-rafique-doubts-clarity-act-will-pass-warns-optimism-is-already-priced-into-bitcoin",
+      "pubDate": "Fri, 07 Aug 2026 15:22:44 +0000"
+    },
+    {
+      "title": "How a five-second trick let traders drain millions from Polymarket",
+      "link": "https://www.coindesk.com/business/2026/08/07/how-a-five-second-trick-let-traders-drain-millions-from-polymarket",
+      "pubDate": "Fri, 07 Aug 2026 15:09:07 +0000"
+    },
+    {
+      "title": "A part of FTX survived, and it’s the case for the CLARITY Act",
+      "link": "https://www.coindesk.com/opinion/2026/08/07/a-part-of-ftx-survived-and-it-s-the-case-for-the-clarity-act",
+      "pubDate": "Fri, 07 Aug 2026 14:30:25 +0000"
+    },
+    {
+      "title": "Russia cracks down on unlicensed crypto exchanges it claims are linked to Ukraine",
+      "link": "https://www.coindesk.com/policy/2026/08/07/russia-cracks-down-on-unlicensed-crypto-exchanges-it-claims-are-linked-to-ukraine",
+      "pubDate": "Fri, 07 Aug 2026 14:04:47 +0000"
+    },
     {
       "title": "U.S. unexpectedly shed 23,000 jobs in July, putting Fed rate hikes in question",
       "link": "https://www.coindesk.com/markets/2026/08/07/the-u-s-lost-23-000-jobs-in-july-far-shy-of-forecasts-for-a-gain-of-80-000",
@@ -465,26 +485,6 @@
       "title": "Ethereum staking token weETH splits from restaking as rewards debate heats up",
       "link": "https://www.coindesk.com/tech/2026/08/07/ethereum-staking-token-weeth-splits-from-restaking-as-rewards-debate-heats-up",
       "pubDate": "Fri, 07 Aug 2026 08:01:28 +0000"
-    },
-    {
-      "title": "Live updates: Bitcoin holding near $65,000 as U.S. lost jobs last month",
-      "link": "https://www.coindesk.com/markets/2026/08/07/live-updates-bitcoin-flat-at-usd64-300-before-us-jobs-report-with-oil-back-as-a-headwind",
-      "pubDate": "Fri, 07 Aug 2026 07:44:57 +0000"
-    },
-    {
-      "title": "Bitcoin whales load up on $1.2 billion in BTC as ETFs attract $750 million",
-      "link": "https://www.coindesk.com/markets/2026/08/07/bitcoin-whales-load-up-on-usd1-2-billion-in-btc-as-etfs-attract-usd750-million",
-      "pubDate": "Fri, 07 Aug 2026 05:45:21 +0000"
-    },
-    {
-      "title": "Bitcoin wallet dormant since 2011 moves $3.2 million toward FalconX-linked address",
-      "link": "https://www.coindesk.com/markets/2026/08/07/bitcoin-wallet-dormant-since-2011-moves-usd3-2-million-toward-falconx-linked-address",
-      "pubDate": "Fri, 07 Aug 2026 04:50:44 +0000"
-    },
-    {
-      "title": "A bitcoin pattern taking shape right now could send prices soaring to $76,000",
-      "link": "https://www.coindesk.com/markets/2026/08/07/a-case-for-a-bitcoin-surge-to-usd76-000-may-be-building-beneath-the-boring-price-action-but-there-s-a-caveat",
-      "pubDate": "Fri, 07 Aug 2026 04:28:17 +0000"
     }
   ]
 }
