@@ -1,13 +1,13 @@
 {
-  "fetchedAt": "2026-08-07T10:08:21.194Z",
+  "fetchedAt": "2026-08-07T13:34:27.709Z",
   "price": {
-    "usd": 64807,
-    "time": 1786096808
+    "usd": 65115,
+    "time": 1786109419
   },
   "moves": {
-    "d1": 0.8469162999138913,
-    "d7": 3.0375091848891644,
-    "d30": 4.112429758545155
+    "d1": 1.3261986339268006,
+    "d7": 3.527202471554891,
+    "d30": 4.607231683732738
   },
   "history90d": [
     {
@@ -372,60 +372,85 @@
     },
     {
       "date": "2026-08-07",
-      "close": 64783.29770885765
+      "close": 65157.85127683596
     }
   ],
   "blocks": [
     {
-      "height": 961414,
-      "id": "000000000000000000017ba09acfdf3af8debaaaed306ad0caa68d245e75a00d",
-      "timestamp": 1786096413,
-      "txCount": 6120
+      "height": 961438,
+      "id": "000000000000000000012c670ac5eddb478ecc58de98d9c28bfbd42e7291e3cb",
+      "timestamp": 1786109220,
+      "txCount": 4452
     },
     {
-      "height": 961413,
-      "id": "00000000000000000000cef3035f57ca6b15dbcf1fc39d58c31a0ab8c8dd7d04",
-      "timestamp": 1786096081,
-      "txCount": 6503
+      "height": 961437,
+      "id": "000000000000000000008282a7f1d077cfae2a560580c984998acbb870d22eee",
+      "timestamp": 1786107589,
+      "txCount": 4111
     },
     {
-      "height": 961412,
-      "id": "00000000000000000000b9d3899de374c6a153214a39fd6239f340ec4a0b1a7e",
-      "timestamp": 1786096369,
-      "txCount": 5276
+      "height": 961436,
+      "id": "000000000000000000022f5ce1e2dfbddcdc3316380c2d2b51ba0c029a1ee0ed",
+      "timestamp": 1786106625,
+      "txCount": 5189
     },
     {
-      "height": 961411,
-      "id": "00000000000000000001cc637e625af8b95ad35de81ee2a9c83affdec28f9c5a",
-      "timestamp": 1786095660,
-      "txCount": 6814
+      "height": 961435,
+      "id": "0000000000000000000087ad67439885d2956ea0c47c818add16108f95be8ee6",
+      "timestamp": 1786106466,
+      "txCount": 4433
     },
     {
-      "height": 961410,
-      "id": "00000000000000000001fd148b03427bcb41203782497b3eccd2bbf9f035cc8e",
-      "timestamp": 1786095562,
-      "txCount": 943
+      "height": 961434,
+      "id": "000000000000000000007970f99401d112d8cf819eba34d178940b33c92c8fa8",
+      "timestamp": 1786105962,
+      "txCount": 4162
     },
     {
-      "height": 961409,
-      "id": "000000000000000000016b106974b67252285a3c0c47803cc79bc3a43b8cf2f1",
-      "timestamp": 1786095660,
-      "txCount": 6007
+      "height": 961433,
+      "id": "000000000000000000021d08927c85d8c3c82582b82c533d34ece6956a4da869",
+      "timestamp": 1786104497,
+      "txCount": 5039
     },
     {
-      "height": 961408,
-      "id": "0000000000000000000134a0828ac9f608635cded3fc7b24c57a133c73caffd9",
-      "timestamp": 1786095049,
-      "txCount": 5924
+      "height": 961432,
+      "id": "0000000000000000000136c5764cdf05bfd0a353a43871b3b1dcd65041f1f926",
+      "timestamp": 1786104049,
+      "txCount": 6059
     },
     {
-      "height": 961407,
-      "id": "000000000000000000007da3abfd9769ba72ded93f6abf541f6f838668a11eca",
-      "timestamp": 1786095038,
-      "txCount": 4805
+      "height": 961431,
+      "id": "0000000000000000000025d1ae4ee958645a69dc4f0a2f8734e27aaa81015103",
+      "timestamp": 1786103822,
+      "txCount": 4829
     }
   ],
   "news": [
+    {
+      "title": "U.S. unexpectedly shed 23,000 jobs in July, putting Fed rate hikes in question",
+      "link": "https://www.coindesk.com/markets/2026/08/07/the-u-s-lost-23-000-jobs-in-july-far-shy-of-forecasts-for-a-gain-of-80-000",
+      "pubDate": "Fri, 07 Aug 2026 12:31:51 +0000"
+    },
+    {
+      "title": "After a Clarity Act funeral, the crypto world would keep turning",
+      "link": "https://www.coindesk.com/news-analysis/2026/08/06/after-a-clarity-act-funeral-the-crypto-world-would-keep-turning",
+      "pubDate": "Fri, 07 Aug 2026 12:00:00 +0000"
+    },
+    {
+      "title": "Why Bitcoin's BIP-110 refuses to die despite near-zero miner support",
+      "link": "https://www.coindesk.com/tech/2026/08/06/why-bitcoin-s-bip-110-refuses-to-die-despite-near-zero-miner-support",
+      "pubDate": "Fri, 07 Aug 2026 11:45:49 +0000"
+    },
+    {
+      "title": "Bitcoin’s volatility has nearly disappeared. The risk hasn’t.",
+      "link": "https://www.coindesk.com/daybook-us/2026/08/07/bitcoin-s-volatility-has-nearly-disappeared-the-risk-hasn-t",
+      "pubDate": "Fri, 07 Aug 2026 11:42:20 +0000"
+    },
+    {
+      "title": "Bitcoin hovers below $65,000 as Middle East tensions escalate further",
+      "link": "https://www.coindesk.com/markets/2026/08/07/cmt",
+      "pubDate": "Fri, 07 Aug 2026 10:36:14 +0000"
+    },
     {
       "title": "Coldcard fallout shows up onchain as 210,000 bitcoin leaves old wallets",
       "link": "https://www.coindesk.com/markets/2026/08/07/coldcard-fallout-shows-up-onchain-as-210-000-bitcoin-leaves-old-wallets",
@@ -442,7 +467,7 @@
       "pubDate": "Fri, 07 Aug 2026 08:01:28 +0000"
     },
     {
-      "title": "Live updates: Bitcoin flat at $64,300 before US jobs report, with oil back as a headwind",
+      "title": "Live updates: Bitcoin holding near $65,000 as U.S. lost jobs last month",
       "link": "https://www.coindesk.com/markets/2026/08/07/live-updates-bitcoin-flat-at-usd64-300-before-us-jobs-report-with-oil-back-as-a-headwind",
       "pubDate": "Fri, 07 Aug 2026 07:44:57 +0000"
     },
@@ -460,31 +485,6 @@
       "title": "A bitcoin pattern taking shape right now could send prices soaring to $76,000",
       "link": "https://www.coindesk.com/markets/2026/08/07/a-case-for-a-bitcoin-surge-to-usd76-000-may-be-building-beneath-the-boring-price-action-but-there-s-a-caveat",
       "pubDate": "Fri, 07 Aug 2026 04:28:17 +0000"
-    },
-    {
-      "title": "XRP leads majors losses as Clarity Act vote slips to September",
-      "link": "https://www.coindesk.com/markets/2026/08/07/bitcoin-stuck-near-usd64-000-as-clarity-act-vote-slips-to-september",
-      "pubDate": "Fri, 07 Aug 2026 04:17:01 +0000"
-    },
-    {
-      "title": "Senate won't vote on crypto Clarity Act before its summer break",
-      "link": "https://www.coindesk.com/policy/2026/08/06/senate-won-t-vote-on-crypto-clarity-act-before-its-summer-break",
-      "pubDate": "Fri, 07 Aug 2026 02:14:43 +0000"
-    },
-    {
-      "title": "Power struggle erupts at Ondo Finance after founder’s death",
-      "link": "https://www.coindesk.com/policy/2026/08/06/power-struggle-erupts-at-ondo-finance-after-founder-s-death",
-      "pubDate": "Thu, 06 Aug 2026 21:59:33 +0000"
-    },
-    {
-      "title": "Tether expands tokenization business into Saudi Arabia, starting with real estate",
-      "link": "https://www.coindesk.com/business/2026/08/06/tether-expands-tokenization-business-into-saudi-arabia-starting-with-real-estate",
-      "pubDate": "Thu, 06 Aug 2026 16:10:04 +0000"
-    },
-    {
-      "title": "Crypto for Advisors: Europe's crypto rules, U.S. Preview",
-      "link": "https://www.coindesk.com/coindesk-indices/2026/08/06/crypto-for-advisors-europe-s-crypto-rules-u-s-preview",
-      "pubDate": "Thu, 06 Aug 2026 15:07:00 +0000"
     }
   ]
 }
