@@ -1,13 +1,13 @@
 {
-  "fetchedAt": "2026-08-07T19:11:39.864Z",
+  "fetchedAt": "2026-08-07T21:52:18.514Z",
   "price": {
-    "usd": 64805,
-    "time": 1786129809
+    "usd": 64942,
+    "time": 1786139410
   },
   "moves": {
-    "d1": 0.8438040769657595,
-    "d7": 3.0343293583523723,
-    "d30": 4.109216759030954
+    "d1": 1.0569913489130611,
+    "d7": 3.252147476122502,
+    "d30": 4.329307225753998
   },
   "history90d": [
     {
@@ -372,60 +372,70 @@
     },
     {
       "date": "2026-08-07",
-      "close": 64791.06698826833
+      "close": 64938.78084087638
     }
   ],
   "blocks": [
     {
-      "height": 961481,
-      "id": "00000000000000000001022823fcaa829ad1e1993292507abd21ad30de427fec",
-      "timestamp": 1786129624,
-      "txCount": 6788
+      "height": 961498,
+      "id": "000000000000000000014ab01f42ca8719cfa06e9c1641586b21d915c6f092c1",
+      "timestamp": 1786137766,
+      "txCount": 4361
     },
     {
-      "height": 961480,
-      "id": "00000000000000000001724aab9c6968a969885a7d24d1756ed37dcf74aa8652",
-      "timestamp": 1786129901,
-      "txCount": 6657
+      "height": 961497,
+      "id": "000000000000000000020ea482dc44425efdf992cbc13f0591ca5789d315e379",
+      "timestamp": 1786137380,
+      "txCount": 4156
     },
     {
-      "height": 961479,
-      "id": "0000000000000000000121419f5fac3dcdee5dccdf42f56028bfdaa163559392",
-      "timestamp": 1786129488,
-      "txCount": 4258
+      "height": 961496,
+      "id": "00000000000000000001787c2f181142b29b44554167025946fd90214d2b5fe2",
+      "timestamp": 1786136014,
+      "txCount": 6389
     },
     {
-      "height": 961478,
-      "id": "00000000000000000001f0e49e913fbbf2d147f5099bf4f2135fb64eecf2667f",
-      "timestamp": 1786129288,
-      "txCount": 3649
+      "height": 961495,
+      "id": "000000000000000000018a35e6fab35dc857988a104e76a4ed3687c9a14032c5",
+      "timestamp": 1786135976,
+      "txCount": 6017
     },
     {
-      "height": 961477,
-      "id": "00000000000000000001c52f62a3bb0f02fe6bf15c294b1a1a04dd6e4442e0df",
-      "timestamp": 1786128552,
-      "txCount": 6095
+      "height": 961494,
+      "id": "00000000000000000001919f89d9c17fe30817d48d08adcde1a88176a70812c2",
+      "timestamp": 1786135721,
+      "txCount": 4201
     },
     {
-      "height": 961476,
-      "id": "0000000000000000000207051e97a9627e4b99bd254b28e9698be561d12658c9",
-      "timestamp": 1786128405,
-      "txCount": 3867
+      "height": 961493,
+      "id": "000000000000000000014c4f82601cd210cfb5a3dd0d61d3571288074fe99859",
+      "timestamp": 1786135663,
+      "txCount": 4468
     },
     {
-      "height": 961475,
-      "id": "000000000000000000003762e842fd6aca31bd5201baa25511fab7eacc1aa373",
-      "timestamp": 1786128363,
-      "txCount": 2892
+      "height": 961492,
+      "id": "000000000000000000017cdff5fb84c93708881e2c63c6721f0b073ae80bd607",
+      "timestamp": 1786135467,
+      "txCount": 3905
     },
     {
-      "height": 961474,
-      "id": "00000000000000000000ff89f1aa438d9fb091e08291d60e0c14d5dca739d174",
-      "timestamp": 1786128338,
-      "txCount": 3988
+      "height": 961491,
+      "id": "000000000000000000012d9a00bdca4f4064f1f9b3dc6626b5ca5990660845dc",
+      "timestamp": 1786134651,
+      "txCount": 4375
     }
   ],
   "news": [
+    {
+      "title": "Trump Media pulls back from crypto, scraps Crypto.com's CRO token treasury deal",
+      "link": "https://www.coindesk.com/business/2026/08/07/trump-media-pulls-back-from-crypto-scraps-crypto-com-cro-treasury-deal",
+      "pubDate": "Fri, 07 Aug 2026 21:13:21 +0000"
+    },
+    {
+      "title": "Trump-Backed American Bitcoin director Justin Mateen buys nearly $2 million of ABTC stock",
+      "link": "https://www.coindesk.com/business/2026/08/07/trump-backed-american-bitcoin-director-justin-mateen-buys-nearly-usd2-million-of-abtc-stock",
+      "pubDate": "Fri, 07 Aug 2026 20:20:00 +0000"
+    },
     {
       "title": "U.S. widens Iran crypto crackdown with sanctions on two exchanges",
       "link": "https://www.coindesk.com/policy/2026/08/07/u-s-widens-iran-crypto-crackdown-with-sanctions-on-two-exchanges",
@@ -475,16 +485,6 @@
       "title": "Why Bitcoin's BIP-110 refuses to die despite near-zero miner support",
       "link": "https://www.coindesk.com/tech/2026/08/06/why-bitcoin-s-bip-110-refuses-to-die-despite-near-zero-miner-support",
       "pubDate": "Fri, 07 Aug 2026 11:45:49 +0000"
-    },
-    {
-      "title": "Bitcoin’s volatility has nearly disappeared. The risk hasn’t.",
-      "link": "https://www.coindesk.com/daybook-us/2026/08/07/bitcoin-s-volatility-has-nearly-disappeared-the-risk-hasn-t",
-      "pubDate": "Fri, 07 Aug 2026 11:42:20 +0000"
-    },
-    {
-      "title": "Bitcoin hovers below $65,000 as Middle East tensions escalate further",
-      "link": "https://www.coindesk.com/markets/2026/08/07/cmt",
-      "pubDate": "Fri, 07 Aug 2026 10:36:14 +0000"
     }
   ]
 }
