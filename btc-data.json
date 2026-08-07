@@ -1,13 +1,13 @@
 {
-  "fetchedAt": "2026-08-07T07:38:46.237Z",
+  "fetchedAt": "2026-08-07T10:08:21.194Z",
   "price": {
-    "usd": 64343,
-    "time": 1786088108
+    "usd": 64807,
+    "time": 1786096808
   },
   "moves": {
-    "d1": 0.12488057594641777,
-    "d7": 2.2997894283537823,
-    "d30": 3.367013871249558
+    "d1": 0.8469162999138913,
+    "d7": 3.0375091848891644,
+    "d30": 4.112429758545155
   },
   "history90d": [
     {
@@ -372,60 +372,80 @@
     },
     {
       "date": "2026-08-07",
-      "close": 64354.98396272503
+      "close": 64783.29770885765
     }
   ],
   "blocks": [
     {
-      "height": 961393,
-      "id": "00000000000000000000bab6cbb53190465ddf5d22873fa60074ffdcdfcde8c0",
-      "timestamp": 1786087885,
-      "txCount": 5168
+      "height": 961414,
+      "id": "000000000000000000017ba09acfdf3af8debaaaed306ad0caa68d245e75a00d",
+      "timestamp": 1786096413,
+      "txCount": 6120
     },
     {
-      "height": 961392,
-      "id": "0000000000000000000117e75974d045e5802998a18034f4e995fe7858d70156",
-      "timestamp": 1786086659,
-      "txCount": 6096
+      "height": 961413,
+      "id": "00000000000000000000cef3035f57ca6b15dbcf1fc39d58c31a0ab8c8dd7d04",
+      "timestamp": 1786096081,
+      "txCount": 6503
     },
     {
-      "height": 961391,
-      "id": "000000000000000000008f8a5f44e42c150acf043e268b0905638473299f1f43",
-      "timestamp": 1786086831,
-      "txCount": 6626
+      "height": 961412,
+      "id": "00000000000000000000b9d3899de374c6a153214a39fd6239f340ec4a0b1a7e",
+      "timestamp": 1786096369,
+      "txCount": 5276
     },
     {
-      "height": 961390,
-      "id": "000000000000000000017ba27098d33f9aef5019c0ac800ead308132481b0ac1",
-      "timestamp": 1786086294,
-      "txCount": 6612
+      "height": 961411,
+      "id": "00000000000000000001cc637e625af8b95ad35de81ee2a9c83affdec28f9c5a",
+      "timestamp": 1786095660,
+      "txCount": 6814
     },
     {
-      "height": 961389,
-      "id": "00000000000000000000b112bda09ce6b840fedb667480a3270cb683d420960f",
-      "timestamp": 1786086201,
-      "txCount": 142
+      "height": 961410,
+      "id": "00000000000000000001fd148b03427bcb41203782497b3eccd2bbf9f035cc8e",
+      "timestamp": 1786095562,
+      "txCount": 943
     },
     {
-      "height": 961388,
-      "id": "00000000000000000002369918918b7b1ff7c1aa5af45d62a684cb9fc6d2e2f5",
-      "timestamp": 1786086237,
-      "txCount": 4719
+      "height": 961409,
+      "id": "000000000000000000016b106974b67252285a3c0c47803cc79bc3a43b8cf2f1",
+      "timestamp": 1786095660,
+      "txCount": 6007
     },
     {
-      "height": 961387,
-      "id": "00000000000000000000fef4de0ae4e2d16a0e99d196f7453c2ff61866f9c6c7",
-      "timestamp": 1786085678,
-      "txCount": 3996
+      "height": 961408,
+      "id": "0000000000000000000134a0828ac9f608635cded3fc7b24c57a133c73caffd9",
+      "timestamp": 1786095049,
+      "txCount": 5924
     },
     {
-      "height": 961386,
-      "id": "00000000000000000000199b33e12c707f260d126a36df98264d69b856974982",
-      "timestamp": 1786084991,
-      "txCount": 6922
+      "height": 961407,
+      "id": "000000000000000000007da3abfd9769ba72ded93f6abf541f6f838668a11eca",
+      "timestamp": 1786095038,
+      "txCount": 4805
     }
   ],
   "news": [
+    {
+      "title": "Coldcard fallout shows up onchain as 210,000 bitcoin leaves old wallets",
+      "link": "https://www.coindesk.com/markets/2026/08/07/coldcard-fallout-shows-up-onchain-as-210-000-bitcoin-leaves-old-wallets",
+      "pubDate": "Fri, 07 Aug 2026 09:24:00 +0000"
+    },
+    {
+      "title": "Crypto market maker Wintermute lands SEC approval to trade equities and ETF blocks",
+      "link": "https://www.coindesk.com/business/2026/08/07/wintermute-gains-u-s-broker-dealer-status-in-wall-street-push",
+      "pubDate": "Fri, 07 Aug 2026 08:46:17 +0000"
+    },
+    {
+      "title": "Ethereum staking token weETH splits from restaking as rewards debate heats up",
+      "link": "https://www.coindesk.com/tech/2026/08/07/ethereum-staking-token-weeth-splits-from-restaking-as-rewards-debate-heats-up",
+      "pubDate": "Fri, 07 Aug 2026 08:01:28 +0000"
+    },
+    {
+      "title": "Live updates: Bitcoin flat at $64,300 before US jobs report, with oil back as a headwind",
+      "link": "https://www.coindesk.com/markets/2026/08/07/live-updates-bitcoin-flat-at-usd64-300-before-us-jobs-report-with-oil-back-as-a-headwind",
+      "pubDate": "Fri, 07 Aug 2026 07:44:57 +0000"
+    },
     {
       "title": "Bitcoin whales load up on $1.2 billion in BTC as ETFs attract $750 million",
       "link": "https://www.coindesk.com/markets/2026/08/07/bitcoin-whales-load-up-on-usd1-2-billion-in-btc-as-etfs-attract-usd750-million",
@@ -465,26 +485,6 @@
       "title": "Crypto for Advisors: Europe's crypto rules, U.S. Preview",
       "link": "https://www.coindesk.com/coindesk-indices/2026/08/06/crypto-for-advisors-europe-s-crypto-rules-u-s-preview",
       "pubDate": "Thu, 06 Aug 2026 15:07:00 +0000"
-    },
-    {
-      "title": "JPMorgan says Hyperliquid ETF inflows have stalled as competition mounts",
-      "link": "https://www.coindesk.com/markets/2026/08/06/jpmorgan-says-hyperliquid-etf-inflows-have-stalled-as-competition-mounts",
-      "pubDate": "Thu, 06 Aug 2026 12:46:42 +0000"
-    },
-    {
-      "title": "Bitcoin’s low volatility doesn’t necessarily mean low risk",
-      "link": "https://www.coindesk.com/daybook-us/2026/08/06/bitcoin-s-low-volatility-doesn-t-necessarily-mean-low-risk",
-      "pubDate": "Thu, 06 Aug 2026 11:37:03 +0000"
-    },
-    {
-      "title": "Free Markets and Innovation, Sort Of",
-      "link": "https://www.coindesk.com/opinion/2026/08/06/free-markets-and-innovation-sort-of",
-      "pubDate": "Thu, 06 Aug 2026 11:30:00 +0000"
-    },
-    {
-      "title": "Why Sandisk and Western Digital crashed 10% and what it means for bitcoin",
-      "link": "https://www.coindesk.com/markets/2026/08/06/why-sandisk-and-western-digital-crashed-10-and-what-it-means-for-bitcoin",
-      "pubDate": "Thu, 06 Aug 2026 11:14:47 +0000"
     }
   ]
 }
