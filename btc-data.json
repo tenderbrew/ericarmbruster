@@ -1,13 +1,13 @@
 {
-  "fetchedAt": "2026-08-07T03:13:54.880Z",
+  "fetchedAt": "2026-08-07T05:01:58.345Z",
   "price": {
-    "usd": 64330,
-    "time": 1786072208
+    "usd": 64195,
+    "time": 1786078807
   },
   "moves": {
-    "d1": 0.10465112678355037,
-    "d7": 2.2791205558646332,
-    "d30": 3.3461293744072362
+    "d1": -0.10542392221560837,
+    "d7": 2.0644822646312733,
+    "d30": 3.1292519071983937
   },
   "history90d": [
     {
@@ -372,60 +372,75 @@
     },
     {
       "date": "2026-08-07",
-      "close": 64322.56741192698
+      "close": 64191.843660332335
     }
   ],
   "blocks": [
     {
-      "height": 961366,
-      "id": "00000000000000000001e686beefab4f87b662addc543b5fd72714bb56fcd4a2",
-      "timestamp": 1786069776,
-      "txCount": 3099
+      "height": 961374,
+      "id": "000000000000000000011f81eb3cb1ff6be5c26d2fae39005ba03965877a4bdb",
+      "timestamp": 1786078699,
+      "txCount": 3578
     },
     {
-      "height": 961365,
-      "id": "000000000000000000004d2dbea7f1a304cc6b09ff977bb3a082368f4850a4ab",
-      "timestamp": 1786068534,
-      "txCount": 4706
+      "height": 961373,
+      "id": "000000000000000000000c2831d3bc40da884be330c0c5cd50b1a67df9a69905",
+      "timestamp": 1786078373,
+      "txCount": 3815
     },
     {
-      "height": 961364,
-      "id": "0000000000000000000191b5fb1dcdb28726bbfbacfad9ea37761e850d1dbaea",
-      "timestamp": 1786067699,
-      "txCount": 4556
+      "height": 961372,
+      "id": "00000000000000000000e4ad0ba42b27d2c34485becf2678decb5ffd62f1d4d7",
+      "timestamp": 1786076400,
+      "txCount": 2296
     },
     {
-      "height": 961363,
-      "id": "000000000000000000000a1f262cd6b29a969084c3c8182862d494600122fe7e",
-      "timestamp": 1786067022,
-      "txCount": 4191
+      "height": 961371,
+      "id": "000000000000000000012c14c329fcb374560ce895b01e2e47ec5f9f9a0eb7b4",
+      "timestamp": 1786076388,
+      "txCount": 3786
     },
     {
-      "height": 961362,
-      "id": "00000000000000000001860f9dec41fa4cc8e9f92b42a1898b1fc67ad480c75b",
-      "timestamp": 1786065637,
-      "txCount": 5540
+      "height": 961370,
+      "id": "00000000000000000001c432e59a905f3259427938198ca8151fad86886a3b2d",
+      "timestamp": 1786074244,
+      "txCount": 4868
     },
     {
-      "height": 961361,
-      "id": "000000000000000000021650e294fd39820ff0ad9c3a2dc3398b86d7ce8b92f4",
-      "timestamp": 1786065540,
-      "txCount": 6200
+      "height": 961369,
+      "id": "000000000000000000021c3c4731e3299682ef0f4ec2c2583938068f3d4e28c4",
+      "timestamp": 1786073767,
+      "txCount": 3867
     },
     {
-      "height": 961360,
-      "id": "000000000000000000001bdacc6b04c589b6d58f12bdcc9e60b5138dac1b4d64",
-      "timestamp": 1786065528,
-      "txCount": 6244
+      "height": 961368,
+      "id": "00000000000000000000f06614ba24657f6f4a4f2ab62406f6fa8bd85dbc97b2",
+      "timestamp": 1786073712,
+      "txCount": 4153
     },
     {
-      "height": 961359,
-      "id": "00000000000000000000c32cb4fa67e281daefb6b7124ce6114ce93c3c34d4ef",
-      "timestamp": 1786065450,
-      "txCount": 665
+      "height": 961367,
+      "id": "0000000000000000000059d81bd880d40d4f880cb9c57d8c3d00eeaca9ca9636",
+      "timestamp": 1786073533,
+      "txCount": 3258
     }
   ],
   "news": [
+    {
+      "title": "Bitcoin wallet dormant since 2011 moves $3.2 million toward FalconX-linked address",
+      "link": "https://www.coindesk.com/markets/2026/08/07/bitcoin-wallet-dormant-since-2011-moves-usd3-2-million-toward-falconx-linked-address",
+      "pubDate": "Fri, 07 Aug 2026 04:50:44 +0000"
+    },
+    {
+      "title": "A case for a bitcoin surge to $76,000 may be building beneath the boring price action, but there's a caveat",
+      "link": "https://www.coindesk.com/markets/2026/08/07/a-case-for-a-bitcoin-surge-to-usd76-000-may-be-building-beneath-the-boring-price-action-but-there-s-a-caveat",
+      "pubDate": "Fri, 07 Aug 2026 04:28:17 +0000"
+    },
+    {
+      "title": "XRP leads majors losses as Clarity Act vote slips to September",
+      "link": "https://www.coindesk.com/markets/2026/08/07/bitcoin-stuck-near-usd64-000-as-clarity-act-vote-slips-to-september",
+      "pubDate": "Fri, 07 Aug 2026 04:17:01 +0000"
+    },
     {
       "title": "Senate won't vote on crypto Clarity Act before its summer break",
       "link": "https://www.coindesk.com/policy/2026/08/06/senate-won-t-vote-on-crypto-clarity-act-before-its-summer-break",
@@ -470,21 +485,6 @@
       "title": "JPYC raises $38 million Series B led by major Japanese logistics firm AZ-COM Maruwa",
       "link": "https://www.coindesk.com/business/2026/08/06/jpyc-raises-usd38-million-series-b-led-by-major-japanese-logistics-firm-az-com-maruwa",
       "pubDate": "Thu, 06 Aug 2026 10:53:09 +0000"
-    },
-    {
-      "title": "Bitcoin, ether benefit as traders seek safety of largest tokens",
-      "link": "https://www.coindesk.com/markets/2026/08/06/bitcoin-ether-benefit-as-traders-seek-safety-of-largest-tokens",
-      "pubDate": "Thu, 06 Aug 2026 10:43:07 +0000"
-    },
-    {
-      "title": "NFT startup founder charged with misusing funds from $10 million fundraising",
-      "link": "https://www.coindesk.com/policy/2026/08/06/nft-startup-founder-charged-with-misusing-funds-from-usd10-million-fundraising",
-      "pubDate": "Thu, 06 Aug 2026 09:19:03 +0000"
-    },
-    {
-      "title": "Live updates: Bitcoin flatlines near $64,000 ahead of Friday's jobs report",
-      "link": "https://www.coindesk.com/tech/2026/08/06/live-updates-bitcoin-nears-usd65-000-as-oil-inflation-hopes-keep-macro-bid-alive",
-      "pubDate": "Thu, 06 Aug 2026 07:26:23 +0000"
     }
   ]
 }
