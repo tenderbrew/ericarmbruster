@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-08-06T14:30:16.187Z",
+  "fetchedAt": "2026-08-07T00:10:59.336Z",
   "indicators": {
     "UNRATE": {
       "latest": {
@@ -63,12 +63,12 @@
     },
     "T10YIE": {
       "latest": {
-        "date": "2026-08-05",
-        "value": 2.22
+        "date": "2026-08-06",
+        "value": 2.26
       },
       "previous": {
-        "date": "2026-08-04",
-        "value": 2.23
+        "date": "2026-08-05",
+        "value": 2.22
       }
     },
     "PCE": {
@@ -103,12 +103,12 @@
     },
     "WALCL": {
       "latest": {
-        "date": "2026-07-29",
-        "value": 6738190
+        "date": "2026-08-05",
+        "value": 6748567
       },
       "previous": {
-        "date": "2026-07-22",
-        "value": 6747378
+        "date": "2026-07-29",
+        "value": 6738190
       }
     },
     "FEDFUNDS": {
@@ -123,62 +123,62 @@
     },
     "DGS2": {
       "latest": {
-        "date": "2026-08-04",
-        "value": 4.2
+        "date": "2026-08-05",
+        "value": 4.18
       },
       "previous": {
-        "date": "2026-08-03",
-        "value": 4.25
+        "date": "2026-08-04",
+        "value": 4.2
       }
     },
     "DGS10": {
       "latest": {
-        "date": "2026-08-04",
+        "date": "2026-08-05",
         "value": 4.63
       },
       "previous": {
-        "date": "2026-08-03",
-        "value": 4.7
+        "date": "2026-08-04",
+        "value": 4.63
       }
     },
     "T10Y2Y": {
       "latest": {
-        "date": "2026-08-05",
-        "value": 0.45
+        "date": "2026-08-06",
+        "value": 0.44
       },
       "previous": {
-        "date": "2026-08-04",
-        "value": 0.43
+        "date": "2026-08-05",
+        "value": 0.45
       }
     },
     "DFII10": {
       "latest": {
-        "date": "2026-08-04",
-        "value": 2.4
+        "date": "2026-08-05",
+        "value": 2.41
       },
       "previous": {
-        "date": "2026-08-03",
-        "value": 2.43
+        "date": "2026-08-04",
+        "value": 2.4
       }
     },
     "BAMLH0A0HYM2": {
       "latest": {
-        "date": "2026-08-04",
-        "value": 2.73
+        "date": "2026-08-05",
+        "value": 2.75
       },
       "previous": {
-        "date": "2026-08-03",
-        "value": 2.78
+        "date": "2026-08-04",
+        "value": 2.73
       }
     },
     "MORTGAGE30US": {
       "latest": {
-        "date": "2026-07-30",
-        "value": 6.66
+        "date": "2026-08-06",
+        "value": 6.69
       },
       "previous": {
-        "date": "2026-07-23",
-        "value": 6.58
+        "date": "2026-07-30",
+        "value": 6.66
       }
     },
     "GDPC1": {
@@ -301,10 +301,46 @@
   },
   "news": [
     {
+      "title": "The Burritoflation Debate",
+      "link": "https://mises.org/podcasts/power-and-market/burritoflation-debate",
+      "pubDate": "Thu, 06 Aug 2026 05:00:00 CDT",
+      "kind": "Podcast"
+    },
+    {
+      "title": "When Death Is Cheaper Than Care: Mutual Aid for the Developing World",
+      "link": "https://mises.org/podcasts/audio-mises-wire/when-death-cheaper-care-mutual-aid-developing-world",
+      "pubDate": "Thu, 06 Aug 2026 04:55:38 CDT",
+      "kind": "Podcast"
+    },
+    {
+      "title": "Why Don’t We Keep Buying? (And Buying)",
+      "link": "https://mises.org/mises-wire/why-dont-we-keep-buying-and-buying",
+      "pubDate": "Thu, 06 Aug 2026 02:00:00 CDT",
+      "kind": "Mises Wire"
+    },
+    {
+      "title": "The US Supports the Mass Migration of Moroccans into Spanish Territory",
+      "link": "https://mises.org/podcasts/audio-mises-wire/us-supports-mass-migration-moroccans-spanish-territory",
+      "pubDate": "Thu, 06 Aug 2026 11:38:57 CDT",
+      "kind": "Podcast"
+    },
+    {
+      "title": "When Death Is Cheaper Than Care: Mutual Aid for the Developing World",
+      "link": "https://mises.org/mises-wire/when-death-cheaper-care-mutual-aid-developing-world",
+      "pubDate": "Thu, 06 Aug 2026 11:00:00 CDT",
+      "kind": "Mises Wire"
+    },
+    {
       "title": "Why Mises Thought Fractional Reserve Banking Caused the Boom-Bust Cycle",
       "link": "https://mises.org/podcasts/human-action-podcast/why-mises-thought-fractional-reserve-banking-caused-boom-bust-cycle",
       "pubDate": "Thu, 06 Aug 2026 09:00:00 CDT",
       "kind": "Podcast"
+    },
+    {
+      "title": "The Conservative AEI Now Embraces the Left's \"Decolonization\" Narrative",
+      "link": "https://mises.org/power-market/conservative-aei-now-embraces-lefts-decolonization-narrative",
+      "pubDate": "Thu, 06 Aug 2026 06:00:00 CDT",
+      "kind": "Article"
     },
     {
       "title": "Trump’s Commerce Department as Venture Capitalist: Political Investment at its Worst",
@@ -322,42 +358,6 @@
       "title": "The Road Ahead",
       "link": "https://mises.org/podcasts/case-100-percent-gold-dollar/road-ahead",
       "pubDate": "Wed, 05 Aug 2026 12:29:43 CDT",
-      "kind": "Podcast"
-    },
-    {
-      "title": "The 100 Percent Gold Tradition",
-      "link": "https://mises.org/podcasts/case-100-percent-gold-dollar/100-percent-gold-tradition",
-      "pubDate": "Wed, 05 Aug 2026 12:24:33 CDT",
-      "kind": "Podcast"
-    },
-    {
-      "title": "Professor Yeager and 100 Percent Gold",
-      "link": "https://mises.org/podcasts/case-100-percent-gold-dollar/professor-yeager-and-100-percent-gold",
-      "pubDate": "Wed, 05 Aug 2026 12:15:30 CDT",
-      "kind": "Podcast"
-    },
-    {
-      "title": "Objections to 100 Percent Gold",
-      "link": "https://mises.org/podcasts/case-100-percent-gold-dollar/objections-100-percent-gold",
-      "pubDate": "Wed, 05 Aug 2026 12:02:43 CDT",
-      "kind": "Podcast"
-    },
-    {
-      "title": "100 Percent Gold Banking",
-      "link": "https://mises.org/podcasts/case-100-percent-gold-dollar/100-percent-gold-banking",
-      "pubDate": "Wed, 05 Aug 2026 11:51:39 CDT",
-      "kind": "Podcast"
-    },
-    {
-      "title": "The Decline from Weight to Name: Encouraging Bank Inflation",
-      "link": "https://mises.org/podcasts/case-100-percent-gold-dollar/decline-weight-name-encouraging-bank-inflation",
-      "pubDate": "Wed, 05 Aug 2026 11:45:39 CDT",
-      "kind": "Podcast"
-    },
-    {
-      "title": "Inflation and Statistics: Economics Explains Them, Not the Other Way Around",
-      "link": "https://mises.org/podcasts/audio-mises-wire/inflation-and-statistics-economics-explains-them-not-other-way-around",
-      "pubDate": "Wed, 05 Aug 2026 11:37:25 CDT",
       "kind": "Podcast"
     }
   ]
