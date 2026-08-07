@@ -1,13 +1,13 @@
 {
-  "fetchedAt": "2026-08-07T05:01:58.345Z",
+  "fetchedAt": "2026-08-07T07:38:46.237Z",
   "price": {
-    "usd": 64195,
-    "time": 1786078807
+    "usd": 64343,
+    "time": 1786088108
   },
   "moves": {
-    "d1": -0.10542392221560837,
-    "d7": 2.0644822646312733,
-    "d30": 3.1292519071983937
+    "d1": 0.12488057594641777,
+    "d7": 2.2997894283537823,
+    "d30": 3.367013871249558
   },
   "history90d": [
     {
@@ -372,67 +372,72 @@
     },
     {
       "date": "2026-08-07",
-      "close": 64191.843660332335
+      "close": 64354.98396272503
     }
   ],
   "blocks": [
     {
-      "height": 961374,
-      "id": "000000000000000000011f81eb3cb1ff6be5c26d2fae39005ba03965877a4bdb",
-      "timestamp": 1786078699,
-      "txCount": 3578
+      "height": 961393,
+      "id": "00000000000000000000bab6cbb53190465ddf5d22873fa60074ffdcdfcde8c0",
+      "timestamp": 1786087885,
+      "txCount": 5168
     },
     {
-      "height": 961373,
-      "id": "000000000000000000000c2831d3bc40da884be330c0c5cd50b1a67df9a69905",
-      "timestamp": 1786078373,
-      "txCount": 3815
+      "height": 961392,
+      "id": "0000000000000000000117e75974d045e5802998a18034f4e995fe7858d70156",
+      "timestamp": 1786086659,
+      "txCount": 6096
     },
     {
-      "height": 961372,
-      "id": "00000000000000000000e4ad0ba42b27d2c34485becf2678decb5ffd62f1d4d7",
-      "timestamp": 1786076400,
-      "txCount": 2296
+      "height": 961391,
+      "id": "000000000000000000008f8a5f44e42c150acf043e268b0905638473299f1f43",
+      "timestamp": 1786086831,
+      "txCount": 6626
     },
     {
-      "height": 961371,
-      "id": "000000000000000000012c14c329fcb374560ce895b01e2e47ec5f9f9a0eb7b4",
-      "timestamp": 1786076388,
-      "txCount": 3786
+      "height": 961390,
+      "id": "000000000000000000017ba27098d33f9aef5019c0ac800ead308132481b0ac1",
+      "timestamp": 1786086294,
+      "txCount": 6612
     },
     {
-      "height": 961370,
-      "id": "00000000000000000001c432e59a905f3259427938198ca8151fad86886a3b2d",
-      "timestamp": 1786074244,
-      "txCount": 4868
+      "height": 961389,
+      "id": "00000000000000000000b112bda09ce6b840fedb667480a3270cb683d420960f",
+      "timestamp": 1786086201,
+      "txCount": 142
     },
     {
-      "height": 961369,
-      "id": "000000000000000000021c3c4731e3299682ef0f4ec2c2583938068f3d4e28c4",
-      "timestamp": 1786073767,
-      "txCount": 3867
+      "height": 961388,
+      "id": "00000000000000000002369918918b7b1ff7c1aa5af45d62a684cb9fc6d2e2f5",
+      "timestamp": 1786086237,
+      "txCount": 4719
     },
     {
-      "height": 961368,
-      "id": "00000000000000000000f06614ba24657f6f4a4f2ab62406f6fa8bd85dbc97b2",
-      "timestamp": 1786073712,
-      "txCount": 4153
+      "height": 961387,
+      "id": "00000000000000000000fef4de0ae4e2d16a0e99d196f7453c2ff61866f9c6c7",
+      "timestamp": 1786085678,
+      "txCount": 3996
     },
     {
-      "height": 961367,
-      "id": "0000000000000000000059d81bd880d40d4f880cb9c57d8c3d00eeaca9ca9636",
-      "timestamp": 1786073533,
-      "txCount": 3258
+      "height": 961386,
+      "id": "00000000000000000000199b33e12c707f260d126a36df98264d69b856974982",
+      "timestamp": 1786084991,
+      "txCount": 6922
     }
   ],
   "news": [
+    {
+      "title": "Bitcoin whales load up on $1.2 billion in BTC as ETFs attract $750 million",
+      "link": "https://www.coindesk.com/markets/2026/08/07/bitcoin-whales-load-up-on-usd1-2-billion-in-btc-as-etfs-attract-usd750-million",
+      "pubDate": "Fri, 07 Aug 2026 05:45:21 +0000"
+    },
     {
       "title": "Bitcoin wallet dormant since 2011 moves $3.2 million toward FalconX-linked address",
       "link": "https://www.coindesk.com/markets/2026/08/07/bitcoin-wallet-dormant-since-2011-moves-usd3-2-million-toward-falconx-linked-address",
       "pubDate": "Fri, 07 Aug 2026 04:50:44 +0000"
     },
     {
-      "title": "A case for a bitcoin surge to $76,000 may be building beneath the boring price action, but there's a caveat",
+      "title": "A bitcoin pattern taking shape right now could send prices soaring to $76,000",
       "link": "https://www.coindesk.com/markets/2026/08/07/a-case-for-a-bitcoin-surge-to-usd76-000-may-be-building-beneath-the-boring-price-action-but-there-s-a-caveat",
       "pubDate": "Fri, 07 Aug 2026 04:28:17 +0000"
     },
@@ -480,11 +485,6 @@
       "title": "Why Sandisk and Western Digital crashed 10% and what it means for bitcoin",
       "link": "https://www.coindesk.com/markets/2026/08/06/why-sandisk-and-western-digital-crashed-10-and-what-it-means-for-bitcoin",
       "pubDate": "Thu, 06 Aug 2026 11:14:47 +0000"
-    },
-    {
-      "title": "JPYC raises $38 million Series B led by major Japanese logistics firm AZ-COM Maruwa",
-      "link": "https://www.coindesk.com/business/2026/08/06/jpyc-raises-usd38-million-series-b-led-by-major-japanese-logistics-firm-az-com-maruwa",
-      "pubDate": "Thu, 06 Aug 2026 10:53:09 +0000"
     }
   ]
 }
