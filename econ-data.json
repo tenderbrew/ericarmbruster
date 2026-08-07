@@ -1,24 +1,24 @@
 {
-  "fetchedAt": "2026-08-07T13:23:06.740Z",
+  "fetchedAt": "2026-08-07T19:08:55.951Z",
   "indicators": {
     "UNRATE": {
       "latest": {
-        "date": "2026-06-01",
-        "value": 4.2
+        "date": "2026-07-01",
+        "value": 4.1
       },
       "previous": {
-        "date": "2026-05-01",
-        "value": 4.3
+        "date": "2026-06-01",
+        "value": 4.2
       }
     },
     "PAYEMS": {
       "latest": {
-        "date": "2026-06-01",
-        "value": 158984
+        "date": "2026-07-01",
+        "value": 158858
       },
       "previous": {
-        "date": "2026-05-01",
-        "value": 158927
+        "date": "2026-06-01",
+        "value": 158881
       }
     },
     "JTSJOL": {
@@ -163,12 +163,12 @@
     },
     "BAMLH0A0HYM2": {
       "latest": {
-        "date": "2026-08-05",
-        "value": 2.75
+        "date": "2026-08-06",
+        "value": 2.71
       },
       "previous": {
-        "date": "2026-08-04",
-        "value": 2.73
+        "date": "2026-08-05",
+        "value": 2.75
       }
     },
     "MORTGAGE30US": {
@@ -263,12 +263,12 @@
     },
     "VIXCLS": {
       "latest": {
-        "date": "2026-08-05",
-        "value": 15.81
+        "date": "2026-08-06",
+        "value": 15.15
       },
       "previous": {
-        "date": "2026-08-04",
-        "value": 16.5
+        "date": "2026-08-05",
+        "value": 15.81
       }
     },
     "BOPGSTB": {
@@ -301,10 +301,40 @@
   },
   "news": [
     {
+      "title": "Myths of American Healthcare",
+      "link": "https://mises.org/podcasts/radio-rothbard/myths-american-healthcare",
+      "pubDate": "Fri, 07 Aug 2026 02:00:03 CDT",
+      "kind": "Podcast"
+    },
+    {
+      "title": "When Progress Turns Against Itself: The Rise of Anti-Progress",
+      "link": "https://mises.org/mises-wire/when-progress-turns-against-itself-rise-anti-progress",
+      "pubDate": "Fri, 07 Aug 2026 02:00:00 CDT",
+      "kind": "Mises Wire"
+    },
+    {
+      "title": "What Did You Expect?",
+      "link": "https://mises.org/friday-philosophy/what-did-you-expect",
+      "pubDate": "Fri, 07 Aug 2026 11:00:00 CDT",
+      "kind": "Article"
+    },
+    {
+      "title": "The Declaration and Dinesh D’Souza’s “Revisionist History”",
+      "link": "https://mises.org/podcasts/audio-mises-wire/declaration-and-dinesh-dsouzas-revisionist-history",
+      "pubDate": "Fri, 07 Aug 2026 10:33:38 CDT",
+      "kind": "Podcast"
+    },
+    {
       "title": "The Declaration and Dinesh D’Souza’s “Revisionist History”",
       "link": "https://mises.org/mises-wire/declaration-and-dinesh-dsouzas-revisionist-history",
       "pubDate": "Fri, 07 Aug 2026 05:00:00 CDT",
       "kind": "Mises Wire"
+    },
+    {
+      "title": "Cops shoot and paralyze man who told police he feared being \"swatted.\"",
+      "link": "https://mises.org/notes-margin/cops-shoot-and-paralyze-man-who-told-police-he-feared-being-swatted",
+      "pubDate": "Fri, 07 Aug 2026 03:00:00 CDT",
+      "kind": "Article"
     },
     {
       "title": "The Burritoflation Debate",
@@ -329,36 +359,6 @@
       "link": "https://mises.org/podcasts/audio-mises-wire/us-supports-mass-migration-moroccans-spanish-territory",
       "pubDate": "Thu, 06 Aug 2026 11:38:57 CDT",
       "kind": "Podcast"
-    },
-    {
-      "title": "When Death Is Cheaper Than Care: Mutual Aid for the Developing World",
-      "link": "https://mises.org/mises-wire/when-death-cheaper-care-mutual-aid-developing-world",
-      "pubDate": "Thu, 06 Aug 2026 11:00:00 CDT",
-      "kind": "Mises Wire"
-    },
-    {
-      "title": "Why Mises Thought Fractional Reserve Banking Caused the Boom-Bust Cycle",
-      "link": "https://mises.org/podcasts/human-action-podcast/why-mises-thought-fractional-reserve-banking-caused-boom-bust-cycle",
-      "pubDate": "Thu, 06 Aug 2026 09:00:00 CDT",
-      "kind": "Podcast"
-    },
-    {
-      "title": "The Conservative AEI Now Embraces the Left's \"Decolonization\" Narrative",
-      "link": "https://mises.org/power-market/conservative-aei-now-embraces-lefts-decolonization-narrative",
-      "pubDate": "Thu, 06 Aug 2026 06:00:00 CDT",
-      "kind": "Article"
-    },
-    {
-      "title": "Trump’s Commerce Department as Venture Capitalist: Political Investment at its Worst",
-      "link": "https://mises.org/mises-wire/trumps-commerce-department-venture-capitalist-political-investment-its-worst",
-      "pubDate": "Thu, 06 Aug 2026 05:00:00 CDT",
-      "kind": "Mises Wire"
-    },
-    {
-      "title": "The US Supports the Mass Migration of Moroccans into Spanish Territory",
-      "link": "https://mises.org/mises-wire/us-supports-mass-migration-moroccans-spanish-territory",
-      "pubDate": "Wed, 05 Aug 2026 02:00:00 CDT",
-      "kind": "Mises Wire"
     }
   ]
 }
