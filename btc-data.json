@@ -1,13 +1,13 @@
 {
-  "fetchedAt": "2026-08-07T00:12:29.217Z",
+  "fetchedAt": "2026-08-07T03:13:54.880Z",
   "price": {
-    "usd": 64338,
-    "time": 1786061411
+    "usd": 64330,
+    "time": 1786072208
   },
   "moves": {
-    "d1": 0.11710001857609953,
-    "d7": 2.291839862011802,
-    "d30": 3.358981372464065
+    "d1": 0.10465112678355037,
+    "d7": 2.2791205558646332,
+    "d30": 3.3461293744072362
   },
   "history90d": [
     {
@@ -372,60 +372,65 @@
     },
     {
       "date": "2026-08-07",
-      "close": 64333.68859282918
+      "close": 64322.56741192698
     }
   ],
   "blocks": [
     {
-      "height": 961350,
-      "id": "000000000000000000009a4e99839c5aa6d0e94d4db77299db113a8d52f54799",
-      "timestamp": 1786060628,
-      "txCount": 4357
+      "height": 961366,
+      "id": "00000000000000000001e686beefab4f87b662addc543b5fd72714bb56fcd4a2",
+      "timestamp": 1786069776,
+      "txCount": 3099
     },
     {
-      "height": 961349,
-      "id": "00000000000000000002230f5a5d65c5c6a56b8ef9dd33fb3df1ed24146207c4",
-      "timestamp": 1786059859,
-      "txCount": 5318
+      "height": 961365,
+      "id": "000000000000000000004d2dbea7f1a304cc6b09ff977bb3a082368f4850a4ab",
+      "timestamp": 1786068534,
+      "txCount": 4706
     },
     {
-      "height": 961348,
-      "id": "000000000000000000008c21b277c27e92f12aa429e7697d0792cd2470890f51",
-      "timestamp": 1786059740,
-      "txCount": 3317
+      "height": 961364,
+      "id": "0000000000000000000191b5fb1dcdb28726bbfbacfad9ea37761e850d1dbaea",
+      "timestamp": 1786067699,
+      "txCount": 4556
     },
     {
-      "height": 961347,
-      "id": "00000000000000000001e0fe4b1f8cce11ad77fa47b04e5e563115ab3022bbc7",
-      "timestamp": 1786059211,
-      "txCount": 3516
+      "height": 961363,
+      "id": "000000000000000000000a1f262cd6b29a969084c3c8182862d494600122fe7e",
+      "timestamp": 1786067022,
+      "txCount": 4191
     },
     {
-      "height": 961346,
-      "id": "00000000000000000000bb4504112ed719e1c9d8df23d047778f7a38d7975317",
-      "timestamp": 1786059182,
-      "txCount": 4330
+      "height": 961362,
+      "id": "00000000000000000001860f9dec41fa4cc8e9f92b42a1898b1fc67ad480c75b",
+      "timestamp": 1786065637,
+      "txCount": 5540
     },
     {
-      "height": 961345,
-      "id": "00000000000000000001946f881140bb076f45f6e9cf7675c28bcfdf320dec26",
-      "timestamp": 1786057965,
-      "txCount": 3503
+      "height": 961361,
+      "id": "000000000000000000021650e294fd39820ff0ad9c3a2dc3398b86d7ce8b92f4",
+      "timestamp": 1786065540,
+      "txCount": 6200
     },
     {
-      "height": 961344,
-      "id": "00000000000000000001432fa106b02406115f92c6d3d644300755e600016fbe",
-      "timestamp": 1786057071,
-      "txCount": 4027
+      "height": 961360,
+      "id": "000000000000000000001bdacc6b04c589b6d58f12bdcc9e60b5138dac1b4d64",
+      "timestamp": 1786065528,
+      "txCount": 6244
     },
     {
-      "height": 961343,
-      "id": "000000000000000000016340755a132206f4f499092a5512ca3165f185b474f9",
-      "timestamp": 1786056658,
-      "txCount": 4021
+      "height": 961359,
+      "id": "00000000000000000000c32cb4fa67e281daefb6b7124ce6114ce93c3c34d4ef",
+      "timestamp": 1786065450,
+      "txCount": 665
     }
   ],
   "news": [
+    {
+      "title": "Senate won't vote on crypto Clarity Act before its summer break",
+      "link": "https://www.coindesk.com/policy/2026/08/06/senate-won-t-vote-on-crypto-clarity-act-before-its-summer-break",
+      "pubDate": "Fri, 07 Aug 2026 02:14:43 +0000"
+    },
     {
       "title": "Power struggle erupts at Ondo Finance after founder’s death",
       "link": "https://www.coindesk.com/policy/2026/08/06/power-struggle-erupts-at-ondo-finance-after-founder-s-death",
@@ -480,11 +485,6 @@
       "title": "Live updates: Bitcoin flatlines near $64,000 ahead of Friday's jobs report",
       "link": "https://www.coindesk.com/tech/2026/08/06/live-updates-bitcoin-nears-usd65-000-as-oil-inflation-hopes-keep-macro-bid-alive",
       "pubDate": "Thu, 06 Aug 2026 07:26:23 +0000"
-    },
-    {
-      "title": "Bitcoin developers flag 85 critical bugs in an \"extremely bad\" situation",
-      "link": "https://www.coindesk.com/tech/2026/08/06/bitcoin-developers-flag-85-critical-bugs-in-an-extremely-bad-situation",
-      "pubDate": "Thu, 06 Aug 2026 07:14:11 +0000"
     }
   ]
 }
