@@ -1,8 +1,8 @@
 {
-  "fetchedAt": "2026-08-08T07:11:15.106Z",
+  "fetchedAt": "2026-08-08T09:50:52.534Z",
   "price": {
     "usd": 64979,
-    "time": 1786172709
+    "time": 1786182307
   },
   "moves": {
     "d1": 1.07255111768374,
@@ -368,60 +368,70 @@
     },
     {
       "date": "2026-08-08",
-      "close": 64970.97803061453
+      "close": 64974.830740512625
     }
   ],
   "blocks": [
     {
-      "height": 961543,
-      "id": "000000000000000000010a879d46db6fad54a8a771a064d5d04a4a78db102c4c",
-      "timestamp": 1786172851,
-      "txCount": 5038
+      "height": 961565,
+      "id": "000000000000000000011c3a72df33c354fbef74a689a61d40235496905eed62",
+      "timestamp": 1786182423,
+      "txCount": 6083
     },
     {
-      "height": 961542,
-      "id": "00000000000000000000ca435e56316dffa4adaeb20bd05b6c653db33638ed63",
-      "timestamp": 1786171608,
-      "txCount": 3757
+      "height": 961564,
+      "id": "000000000000000000019def5fae5ab4c187b587fcf8f4e910f1913e27192bfd",
+      "timestamp": 1786182361,
+      "txCount": 7273
     },
     {
-      "height": 961541,
-      "id": "00000000000000000001cde63f2421ef31d4ee53a23ad5a1ce7482fc784fa30f",
-      "timestamp": 1786170744,
-      "txCount": 5344
+      "height": 961563,
+      "id": "00000000000000000001ebb010e2a54650f7eedb323a05f4df7db408bbc6ce16",
+      "timestamp": 1786182299,
+      "txCount": 5688
     },
     {
-      "height": 961540,
-      "id": "0000000000000000000105b365468e7732c17d2e4fac1024332ed5d572bed66c",
-      "timestamp": 1786170551,
-      "txCount": 3995
+      "height": 961562,
+      "id": "00000000000000000001ac622d997f92f1fda62d9f71d6f2e095027eea221f5d",
+      "timestamp": 1786182211,
+      "txCount": 6010
     },
     {
-      "height": 961539,
-      "id": "000000000000000000008c5100862446e2003ab11410d88775322b5eb8d88857",
-      "timestamp": 1786169974,
-      "txCount": 4800
+      "height": 961561,
+      "id": "0000000000000000000022f7909a23d060e5646960510dcf84ce73c6fb93b778",
+      "timestamp": 1786182035,
+      "txCount": 6124
     },
     {
-      "height": 961538,
-      "id": "00000000000000000000aae12a672568451da3e126b9a26f693a2477527f56b2",
-      "timestamp": 1786168448,
-      "txCount": 4587
+      "height": 961560,
+      "id": "00000000000000000000b7a4faf2b485eb830ec463ee4b170af57c2f61f99f40",
+      "timestamp": 1786181664,
+      "txCount": 4334
     },
     {
-      "height": 961537,
-      "id": "000000000000000000016f3e6ebac5940bc5b390e19827451a7093e4ba2d6470",
-      "timestamp": 1786166505,
-      "txCount": 4728
+      "height": 961559,
+      "id": "00000000000000000001e5bc467c02ec93b3df1dcb587686235e94597ee4ebf9",
+      "timestamp": 1786180830,
+      "txCount": 5551
     },
     {
-      "height": 961536,
-      "id": "00000000000000000000ff82b0e9c2638b5a79b7cbe79950c695fbb56aebe9c2",
-      "timestamp": 1786165600,
-      "txCount": 1336
+      "height": 961558,
+      "id": "000000000000000000010884d807870dd281ca9103ec469df2ba997dc1a694a0",
+      "timestamp": 1786180758,
+      "txCount": 5059
     }
   ],
   "news": [
+    {
+      "title": "U.S. Senate opens first stage of crypto Clarity Act voting to give bill a chance next month",
+      "link": "https://www.coindesk.com/policy/2026/08/08/u-s-senate-opens-first-stage-of-crypto-clarity-act-voting-to-give-bill-a-chance-next-month",
+      "pubDate": "Sat, 08 Aug 2026 09:07:24 +0000"
+    },
+    {
+      "title": "Another Bitcoin infrastructure exploit hits, this time draining Lightning payment servers",
+      "link": "https://www.coindesk.com/tech/2026/08/08/another-bitcoin-infrastructure-exploit-hits-this-time-draining-merchant-lightning-nodes",
+      "pubDate": "Sat, 08 Aug 2026 07:46:04 +0000"
+    },
     {
       "title": "New XRP Ledger amendments target $530 million in tokenized Wall Street assets",
       "link": "https://www.coindesk.com/tech/2026/08/07/new-xrp-ledger-amendments-target-usd530-million-in-tokenized-wall-street-assets",
@@ -471,16 +481,6 @@
       "title": "A part of FTX survived, and it’s the case for the CLARITY Act",
       "link": "https://www.coindesk.com/opinion/2026/08/07/a-part-of-ftx-survived-and-it-s-the-case-for-the-clarity-act",
       "pubDate": "Fri, 07 Aug 2026 14:30:25 +0000"
-    },
-    {
-      "title": "Russia cracks down on unlicensed crypto exchanges it claims are linked to Ukraine",
-      "link": "https://www.coindesk.com/policy/2026/08/07/russia-cracks-down-on-unlicensed-crypto-exchanges-it-claims-are-linked-to-ukraine",
-      "pubDate": "Fri, 07 Aug 2026 14:04:47 +0000"
-    },
-    {
-      "title": "U.S. unexpectedly shed 23,000 jobs in July, putting Fed rate hikes in question",
-      "link": "https://www.coindesk.com/markets/2026/08/07/the-u-s-lost-23-000-jobs-in-july-far-shy-of-forecasts-for-a-gain-of-80-000",
-      "pubDate": "Fri, 07 Aug 2026 12:31:51 +0000"
     }
   ]
 }
