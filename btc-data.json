@@ -1,13 +1,13 @@
 {
-  "fetchedAt": "2026-08-08T15:42:35.446Z",
+  "fetchedAt": "2026-08-08T18:55:03.650Z",
   "price": {
-    "usd": 65028,
-    "time": 1786203608
+    "usd": 65015,
+    "time": 1786215008
   },
   "moves": {
-    "d1": 1.1487688958084608,
-    "d7": 3.3888800172044986,
-    "d30": 4.467466204864823
+    "d1": 1.1285478526325,
+    "d7": 3.3682111447153718,
+    "d30": 4.446581708022479
   },
   "history90d": [
     {
@@ -368,60 +368,65 @@
     },
     {
       "date": "2026-08-08",
-      "close": 65021.02179051766
+      "close": 65000.765767791294
     }
   ],
   "blocks": [
     {
-      "height": 961599,
-      "id": "00000000000000000001f5dc70bebb8047670ed3e38c5451694961a85f556f65",
-      "timestamp": 1786202874,
-      "txCount": 4370
+      "height": 961622,
+      "id": "00000000000000000000c8a26f3cc7fd5f5759b13f96c3b224aba1d1aadc3384",
+      "timestamp": 1786215153,
+      "txCount": 2905
     },
     {
-      "height": 961598,
-      "id": "0000000000000000000015dc9cc29425ed2bb7e3b17494e242119c39fbe28e8a",
-      "timestamp": 1786201168,
-      "txCount": 2753
+      "height": 961621,
+      "id": "00000000000000000001c3c9751f6d5bd093c67915a0c10b44ae37525f9b06a5",
+      "timestamp": 1786215123,
+      "txCount": 4533
     },
     {
-      "height": 961597,
-      "id": "00000000000000000001071f40504fc254390179ddd7437754596c187a7fb870",
-      "timestamp": 1786201071,
-      "txCount": 4105
+      "height": 961620,
+      "id": "000000000000000000018e15bf276793994c757a9f74cf2232a623f6bd0dd3ac",
+      "timestamp": 1786213601,
+      "txCount": 5862
     },
     {
-      "height": 961596,
-      "id": "00000000000000000000ea920b446e90002769c17af6540e2128ffaa6bb3e12d",
-      "timestamp": 1786201056,
-      "txCount": 4593
+      "height": 961619,
+      "id": "00000000000000000001180ad29fc17227ab1f6a753e28e217d06c0d6a76fb76",
+      "timestamp": 1786213133,
+      "txCount": 4884
     },
     {
-      "height": 961595,
-      "id": "00000000000000000001e38ae69aac226d63c5b94d0356297a102d0d910e452f",
-      "timestamp": 1786199208,
-      "txCount": 3146
+      "height": 961618,
+      "id": "000000000000000000021ce9c0420163739da5eca87d14a7751b395bfa7ae4f2",
+      "timestamp": 1786212434,
+      "txCount": 4190
     },
     {
-      "height": 961594,
-      "id": "00000000000000000001a75d79a0d041f9bc60a512c281827791834540c70dc3",
-      "timestamp": 1786198955,
-      "txCount": 4436
+      "height": 961617,
+      "id": "0000000000000000000228402e743170fb22c448a79ef14ecbe7af82e08f5d7b",
+      "timestamp": 1786211479,
+      "txCount": 3424
     },
     {
-      "height": 961593,
-      "id": "00000000000000000001491e9b9154145b6ea04ddf5b869f6823819955cc4568",
-      "timestamp": 1786198164,
-      "txCount": 3639
+      "height": 961616,
+      "id": "00000000000000000000f6061d8047166c33e37e24397d40b981b31181553c15",
+      "timestamp": 1786211033,
+      "txCount": 3619
     },
     {
-      "height": 961592,
-      "id": "00000000000000000001afe01307b2ee10a25abee163f88ccf00ad83f7e22dfa",
-      "timestamp": 1786198188,
-      "txCount": 4563
+      "height": 961615,
+      "id": "0000000000000000000159ddf239b58780c3c1f623044fbb781e1986e997295e",
+      "timestamp": 1786210504,
+      "txCount": 4281
     }
   ],
   "news": [
+    {
+      "title": "Hardware wallet sales in Russia more than double as new crypto rules near",
+      "link": "https://www.coindesk.com/business/2026/08/08/hardware-wallet-sales-in-russia-more-than-double-as-new-crypto-rules-near",
+      "pubDate": "Sat, 08 Aug 2026 17:48:02 +0000"
+    },
     {
       "title": "Brazil's central bank orders exchanges to delay large crypto transfers abroad",
       "link": "https://www.coindesk.com/business/2026/08/08/brazil-s-central-bank-orders-exchanges-to-delay-large-crypto-transfers-abroad",
@@ -476,11 +481,6 @@
       "title": "BitMEX sale collapsed as buyers balked at founder ownership and shrinking business",
       "link": "https://www.coindesk.com/business/2026/07/31/bitmex-sale-collapsed-as-buyers-balked-at-founder-ownership-and-shrinking-business",
       "pubDate": "Fri, 07 Aug 2026 16:53:56 +0000"
-    },
-    {
-      "title": "Bybit sues North Korea and Lazarus Group over $1.5 billion hack, secures asset freeze",
-      "link": "https://www.coindesk.com/policy/2026/08/07/bybit-sues-north-korea-and-lazarus-group-over-usd1-5-billion-hack-secures-asset-freeze",
-      "pubDate": "Fri, 07 Aug 2026 16:32:41 +0000"
     }
   ]
 }
