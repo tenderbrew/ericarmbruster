@@ -1,13 +1,13 @@
 {
-  "fetchedAt": "2026-08-08T02:18:25.971Z",
+  "fetchedAt": "2026-08-08T04:18:39.278Z",
   "price": {
-    "usd": 64873,
-    "time": 1786155311
+    "usd": 64945,
+    "time": 1786162510
   },
   "moves": {
-    "d1": 0.9076718425567787,
-    "d7": 3.142443460603239,
-    "d30": 4.21845874251392
+    "d1": 1.019665312454321,
+    "d7": 3.2569172159276905,
+    "d30": 4.334126725025311
   },
   "history90d": [
     {
@@ -368,60 +368,70 @@
     },
     {
       "date": "2026-08-08",
-      "close": 64865.41893886417
+      "close": 64939.85147228043
     }
   ],
   "blocks": [
     {
-      "height": 961517,
-      "id": "0000000000000000000134562e7920db5cb7b9e2a310e2ffc315c20253c350e2",
-      "timestamp": 1786155061,
-      "txCount": 3979
+      "height": 961529,
+      "id": "000000000000000000013d23d56a9fb1adf268cedcb69200bf81cbbd48526946",
+      "timestamp": 1786162676,
+      "txCount": 5506
     },
     {
-      "height": 961516,
-      "id": "000000000000000000010bd8949e3aeef5769d5b1eeb653739ecea057b7341c2",
-      "timestamp": 1786154987,
-      "txCount": 4497
+      "height": 961528,
+      "id": "00000000000000000001cc82cbb658001d8471c29da097e3b558468cc2da2772",
+      "timestamp": 1786162250,
+      "txCount": 5851
     },
     {
-      "height": 961515,
-      "id": "000000000000000000022f140a3b3a3ce86c3db07b42f72588bf5b709747a13a",
-      "timestamp": 1786154903,
-      "txCount": 4172
+      "height": 961527,
+      "id": "00000000000000000001a8ca78042e99753928a95cf971b701eadb1554afe4f5",
+      "timestamp": 1786162336,
+      "txCount": 4069
     },
     {
-      "height": 961514,
-      "id": "00000000000000000001462fcdf62ffa5110c053befd229dc7b017f5c12ffb2c",
-      "timestamp": 1786150939,
-      "txCount": 3907
+      "height": 961526,
+      "id": "00000000000000000000c507897ed45eb76092bb3e8ebe6d8819456d3310592c",
+      "timestamp": 1786160595,
+      "txCount": 5619
     },
     {
-      "height": 961513,
-      "id": "00000000000000000000b05a85c7a386d03f33db5cf9bcd4b33fcd5b00826212",
-      "timestamp": 1786150664,
-      "txCount": 3828
+      "height": 961525,
+      "id": "00000000000000000000d8dffd909114be9b3439dbd6058de78015603c8aa181",
+      "timestamp": 1786160365,
+      "txCount": 5238
     },
     {
-      "height": 961512,
-      "id": "000000000000000000016eaa8e126aa9fe875bf26a36d4e5a0ae70d8256a67fa",
-      "timestamp": 1786149407,
-      "txCount": 3667
+      "height": 961524,
+      "id": "0000000000000000000003a71ed4cd435887f14ef9729079e6b161b9b97ec24f",
+      "timestamp": 1786160230,
+      "txCount": 3732
     },
     {
-      "height": 961511,
-      "id": "00000000000000000000bacf25dea3a05316c1b588e7e049d36ae4929e16f50e",
-      "timestamp": 1786149195,
-      "txCount": 4079
+      "height": 961523,
+      "id": "0000000000000000000047ff05c79ba5f9346b9ffab7eb4fa306d0bdaefd6b99",
+      "timestamp": 1786159514,
+      "txCount": 5269
     },
     {
-      "height": 961510,
-      "id": "000000000000000000017c5332b4def90460792f694ff36c19c238e4ab69f0bb",
-      "timestamp": 1786147422,
-      "txCount": 415
+      "height": 961522,
+      "id": "000000000000000000014ae07a8d0c457a2bfe66e525318f89339e8aa026fe35",
+      "timestamp": 1786159158,
+      "txCount": 3814
     }
   ],
   "news": [
+    {
+      "title": "New XRP Ledger amendments target $530 million in tokenized Wall Street assets",
+      "link": "https://www.coindesk.com/tech/2026/08/07/new-xrp-ledger-amendments-target-usd530-million-in-tokenized-wall-street-assets",
+      "pubDate": "Sat, 08 Aug 2026 03:30:00 +0000"
+    },
+    {
+      "title": "Bitcoin holders risk losing real BTC if they sell coins from BIP-110 fork, says developer",
+      "link": "https://www.coindesk.com/tech/2026/08/08/bitcoin-holders-risk-losing-real-btc-if-they-sell-coins-from-bip-110-fork-says-developer",
+      "pubDate": "Sat, 08 Aug 2026 02:30:00 +0000"
+    },
     {
       "title": "Trump Media pulls back from crypto, scraps Crypto.com's CRO token treasury deal",
       "link": "https://www.coindesk.com/business/2026/08/07/trump-media-pulls-back-from-crypto-scraps-crypto-com-cro-treasury-deal",
@@ -471,16 +481,6 @@
       "title": "U.S. unexpectedly shed 23,000 jobs in July, putting Fed rate hikes in question",
       "link": "https://www.coindesk.com/markets/2026/08/07/the-u-s-lost-23-000-jobs-in-july-far-shy-of-forecasts-for-a-gain-of-80-000",
       "pubDate": "Fri, 07 Aug 2026 12:31:51 +0000"
-    },
-    {
-      "title": "After a Clarity Act funeral, the crypto world would keep turning",
-      "link": "https://www.coindesk.com/news-analysis/2026/08/06/after-a-clarity-act-funeral-the-crypto-world-would-keep-turning",
-      "pubDate": "Fri, 07 Aug 2026 12:00:00 +0000"
-    },
-    {
-      "title": "Why Bitcoin's BIP-110 refuses to die despite near-zero miner support",
-      "link": "https://www.coindesk.com/tech/2026/08/06/why-bitcoin-s-bip-110-refuses-to-die-despite-near-zero-miner-support",
-      "pubDate": "Fri, 07 Aug 2026 11:45:49 +0000"
     }
   ]
 }
