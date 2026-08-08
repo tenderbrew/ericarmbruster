@@ -1,13 +1,13 @@
 {
-  "fetchedAt": "2026-08-08T09:50:52.534Z",
+  "fetchedAt": "2026-08-08T13:09:47.676Z",
   "price": {
-    "usd": 64979,
-    "time": 1786182307
+    "usd": 64974,
+    "time": 1786194310
   },
   "moves": {
-    "d1": 1.07255111768374,
-    "d7": 3.310974267053135,
-    "d30": 4.388747716766783
+    "d1": 1.0647737933852985,
+    "d7": 3.3030247007111546,
+    "d30": 4.380715217981268
   },
   "history90d": [
     {
@@ -368,60 +368,65 @@
     },
     {
       "date": "2026-08-08",
-      "close": 64974.830740512625
+      "close": 64973.01306985497
     }
   ],
   "blocks": [
     {
-      "height": 961565,
-      "id": "000000000000000000011c3a72df33c354fbef74a689a61d40235496905eed62",
-      "timestamp": 1786182423,
-      "txCount": 6083
+      "height": 961587,
+      "id": "0000000000000000000126e6867616a15e2d72fdb1cd63f972bbcee84562b07f",
+      "timestamp": 1786194448,
+      "txCount": 5856
     },
     {
-      "height": 961564,
-      "id": "000000000000000000019def5fae5ab4c187b587fcf8f4e910f1913e27192bfd",
-      "timestamp": 1786182361,
-      "txCount": 7273
+      "height": 961586,
+      "id": "0000000000000000000160e8997db2ff1b4c61def0e5dd76623dbc14cddc9a57",
+      "timestamp": 1786194133,
+      "txCount": 4998
     },
     {
-      "height": 961563,
-      "id": "00000000000000000001ebb010e2a54650f7eedb323a05f4df7db408bbc6ce16",
-      "timestamp": 1786182299,
-      "txCount": 5688
+      "height": 961585,
+      "id": "000000000000000000013791a5f3e4179ff043701ee0b9474b29b7a8bc22da57",
+      "timestamp": 1786193907,
+      "txCount": 5687
     },
     {
-      "height": 961562,
-      "id": "00000000000000000001ac622d997f92f1fda62d9f71d6f2e095027eea221f5d",
-      "timestamp": 1786182211,
-      "txCount": 6010
+      "height": 961584,
+      "id": "00000000000000000001f12c45b0c8bf5a3471535e7da8acf502d43efd809a33",
+      "timestamp": 1786193608,
+      "txCount": 4582
     },
     {
-      "height": 961561,
-      "id": "0000000000000000000022f7909a23d060e5646960510dcf84ce73c6fb93b778",
-      "timestamp": 1786182035,
-      "txCount": 6124
+      "height": 961583,
+      "id": "00000000000000000001da3890e974a155ccf3b7277525d4a244db0860311bc0",
+      "timestamp": 1786193374,
+      "txCount": 4209
     },
     {
-      "height": 961560,
-      "id": "00000000000000000000b7a4faf2b485eb830ec463ee4b170af57c2f61f99f40",
-      "timestamp": 1786181664,
-      "txCount": 4334
+      "height": 961582,
+      "id": "00000000000000000001acaa705cc2d2a3627518422fb730b33eb94f1a09415f",
+      "timestamp": 1786192608,
+      "txCount": 4011
     },
     {
-      "height": 961559,
-      "id": "00000000000000000001e5bc467c02ec93b3df1dcb587686235e94597ee4ebf9",
-      "timestamp": 1786180830,
-      "txCount": 5551
+      "height": 961581,
+      "id": "00000000000000000000a0b0d4ea94cf79383aa7de656dcd886231705e5d18ab",
+      "timestamp": 1786191844,
+      "txCount": 5693
     },
     {
-      "height": 961558,
-      "id": "000000000000000000010884d807870dd281ca9103ec469df2ba997dc1a694a0",
-      "timestamp": 1786180758,
-      "txCount": 5059
+      "height": 961580,
+      "id": "00000000000000000001d0ab9152dedd62540cbad016509449555dfbacd72e8a",
+      "timestamp": 1786191638,
+      "txCount": 3960
     }
   ],
   "news": [
+    {
+      "title": "Why trillion-dollar asset manager T. Rowe Price put memecoins in its crypto ETF",
+      "link": "https://www.coindesk.com/markets/2026/08/06/why-trillion-dollar-asset-manager-t-rowe-price-put-memecoins-in-its-crypto-etf",
+      "pubDate": "Sat, 08 Aug 2026 13:00:00 +0000"
+    },
     {
       "title": "U.S. Senate opens first stage of crypto Clarity Act voting to give bill a chance next month",
       "link": "https://www.coindesk.com/policy/2026/08/08/u-s-senate-opens-first-stage-of-crypto-clarity-act-voting-to-give-bill-a-chance-next-month",
@@ -476,11 +481,6 @@
       "title": "How a five-second trick let traders drain millions from Polymarket",
       "link": "https://www.coindesk.com/business/2026/08/07/how-a-five-second-trick-let-traders-drain-millions-from-polymarket",
       "pubDate": "Fri, 07 Aug 2026 15:09:07 +0000"
-    },
-    {
-      "title": "A part of FTX survived, and it’s the case for the CLARITY Act",
-      "link": "https://www.coindesk.com/opinion/2026/08/07/a-part-of-ftx-survived-and-it-s-the-case-for-the-clarity-act",
-      "pubDate": "Fri, 07 Aug 2026 14:30:25 +0000"
     }
   ]
 }
