@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-08-07T19:08:55.951Z",
+  "fetchedAt": "2026-08-08T02:10:45.078Z",
   "indicators": {
     "UNRATE": {
       "latest": {
@@ -63,12 +63,12 @@
     },
     "T10YIE": {
       "latest": {
-        "date": "2026-08-06",
-        "value": 2.26
+        "date": "2026-08-07",
+        "value": 2.25
       },
       "previous": {
-        "date": "2026-08-05",
-        "value": 2.22
+        "date": "2026-08-06",
+        "value": 2.26
       }
     },
     "PCE": {
@@ -123,42 +123,42 @@
     },
     "DGS2": {
       "latest": {
-        "date": "2026-08-05",
-        "value": 4.18
+        "date": "2026-08-06",
+        "value": 4.25
       },
       "previous": {
-        "date": "2026-08-04",
-        "value": 4.2
+        "date": "2026-08-05",
+        "value": 4.18
       }
     },
     "DGS10": {
       "latest": {
-        "date": "2026-08-05",
-        "value": 4.63
+        "date": "2026-08-06",
+        "value": 4.69
       },
       "previous": {
-        "date": "2026-08-04",
+        "date": "2026-08-05",
         "value": 4.63
       }
     },
     "T10Y2Y": {
       "latest": {
-        "date": "2026-08-06",
-        "value": 0.44
+        "date": "2026-08-07",
+        "value": 0.46
       },
       "previous": {
-        "date": "2026-08-05",
-        "value": 0.45
+        "date": "2026-08-06",
+        "value": 0.44
       }
     },
     "DFII10": {
       "latest": {
-        "date": "2026-08-05",
-        "value": 2.41
+        "date": "2026-08-06",
+        "value": 2.43
       },
       "previous": {
-        "date": "2026-08-04",
-        "value": 2.4
+        "date": "2026-08-05",
+        "value": 2.41
       }
     },
     "BAMLH0A0HYM2": {
@@ -301,9 +301,9 @@
   },
   "news": [
     {
-      "title": "Myths of American Healthcare",
-      "link": "https://mises.org/podcasts/radio-rothbard/myths-american-healthcare",
-      "pubDate": "Fri, 07 Aug 2026 02:00:03 CDT",
+      "title": "5 Things Anthony Fauci Teaches Us About the American Government",
+      "link": "https://mises.org/podcasts/guns-and-butter/5-things-anthony-fauci-teaches-us-about-american-government",
+      "pubDate": "Fri, 07 Aug 2026 03:29:47 CDT",
       "kind": "Podcast"
     },
     {
@@ -311,6 +311,12 @@
       "link": "https://mises.org/mises-wire/when-progress-turns-against-itself-rise-anti-progress",
       "pubDate": "Fri, 07 Aug 2026 02:00:00 CDT",
       "kind": "Mises Wire"
+    },
+    {
+      "title": "Myths of American Healthcare",
+      "link": "https://mises.org/podcasts/radio-rothbard/myths-american-healthcare",
+      "pubDate": "Fri, 07 Aug 2026 02:00:03 CDT",
+      "kind": "Podcast"
     },
     {
       "title": "What Did You Expect?",
@@ -353,12 +359,6 @@
       "link": "https://mises.org/mises-wire/why-dont-we-keep-buying-and-buying",
       "pubDate": "Thu, 06 Aug 2026 02:00:00 CDT",
       "kind": "Mises Wire"
-    },
-    {
-      "title": "The US Supports the Mass Migration of Moroccans into Spanish Territory",
-      "link": "https://mises.org/podcasts/audio-mises-wire/us-supports-mass-migration-moroccans-spanish-territory",
-      "pubDate": "Thu, 06 Aug 2026 11:38:57 CDT",
-      "kind": "Podcast"
     }
   ]
 }
