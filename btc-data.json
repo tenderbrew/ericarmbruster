@@ -1,13 +1,13 @@
 {
-  "fetchedAt": "2026-08-09T04:33:35.433Z",
+  "fetchedAt": "2026-08-09T07:12:39.629Z",
   "price": {
-    "usd": 64767,
-    "time": 1786249510
+    "usd": 64802,
+    "time": 1786259409
   },
   "moves": {
-    "d1": -0.23143204323108346,
-    "d7": 2.0491602938602638,
-    "d30": 1.0232650179684777
+    "d1": -0.17751724281596104,
+    "d7": 2.1043075233179387,
+    "d30": 1.0778578549939466
   },
   "history90d": [
     {
@@ -372,60 +372,65 @@
     },
     {
       "date": "2026-08-09",
-      "close": 64780.196417843086
+      "close": 64812.749786981156
     }
   ],
   "blocks": [
     {
-      "height": 961679,
-      "id": "00000000000000000000e6afc3696c4db2b634aed5b093be65d25079d0012fb7",
-      "timestamp": 1786249764,
-      "txCount": 6147
+      "height": 961697,
+      "id": "000000000000000000017d3c97be14971bbdf3a7df2ec9962648950f802d70f6",
+      "timestamp": 1786259334,
+      "txCount": 4794
     },
     {
-      "height": 961678,
-      "id": "00000000000000000001ebc3e36ac7e77dc7ff97814fc888b1b1de0fc3dff0a0",
-      "timestamp": 1786249099,
-      "txCount": 5912
+      "height": 961696,
+      "id": "00000000000000000000923b50e9fda787ba3bb388ac158b156defe4b361c60b",
+      "timestamp": 1786259266,
+      "txCount": 6712
     },
     {
-      "height": 961677,
-      "id": "000000000000000000022439c524722587da22f9cb7a8fdcf877ebb0a3e17eb7",
-      "timestamp": 1786249015,
-      "txCount": 4215
+      "height": 961695,
+      "id": "0000000000000000000037087c80921e48c69cbf037db7ade57476780480fb4f",
+      "timestamp": 1786259170,
+      "txCount": 6765
     },
     {
-      "height": 961676,
-      "id": "0000000000000000000210df220df729c3a9f8f3dc38ec7b3d3cc33fa675ea16",
-      "timestamp": 1786248220,
-      "txCount": 5858
+      "height": 961694,
+      "id": "00000000000000000001118c9fa4fa3fa1d4d030dd1fe9f9722c8aed2f424843",
+      "timestamp": 1786259214,
+      "txCount": 5723
     },
     {
-      "height": 961675,
-      "id": "00000000000000000001449759135a0d216e57672d8d6762cd8ad979ac8a411a",
-      "timestamp": 1786247826,
-      "txCount": 6389
+      "height": 961693,
+      "id": "00000000000000000000d337551eba544b2caac25f74aed197b81758305aed95",
+      "timestamp": 1786258520,
+      "txCount": 6464
     },
     {
-      "height": 961674,
-      "id": "00000000000000000000c049e4938b77a48e3f989ca3566c51033504407a61f4",
-      "timestamp": 1786247181,
-      "txCount": 5726
+      "height": 961692,
+      "id": "000000000000000000017dbffb713d75b27e621c40835f6f6b3403946ac20fe9",
+      "timestamp": 1786257939,
+      "txCount": 6025
     },
     {
-      "height": 961673,
-      "id": "000000000000000000010447a71add6fee83d6211f4394df721ca830ef58c968",
-      "timestamp": 1786246409,
-      "txCount": 6389
+      "height": 961691,
+      "id": "000000000000000000007bc7edc0e772635a757d41585d9b798fc412429e2c2a",
+      "timestamp": 1786257820,
+      "txCount": 5135
     },
     {
-      "height": 961672,
-      "id": "000000000000000000013390e0568eeaa791036d5d8748a5f4c2c6869f359f1e",
-      "timestamp": 1786246254,
-      "txCount": 5616
+      "height": 961690,
+      "id": "0000000000000000000148cf905de4391054ec37f9d186c16187a1cfbb0ac68b",
+      "timestamp": 1786255985,
+      "txCount": 5669
     }
   ],
   "news": [
+    {
+      "title": "Controversial Bitcoin fork BIP-110 mines two blocks, then stops",
+      "link": "https://www.coindesk.com/tech/2026/08/09/controversial-bitcoin-fork-bip-110-mines-two-blocks-then-stops",
+      "pubDate": "Sun, 09 Aug 2026 05:08:20 +0000"
+    },
     {
       "title": "Bitcoin hits block 961,632 as the controversial BIP-110 soft fork attempt begins",
       "link": "https://www.coindesk.com/tech/2026/08/07/frame-bitcoin-s-bip-110-enters-mandatory-signaling-with-less-than-3-miner-support",
@@ -480,11 +485,6 @@
       "title": "Trump-Backed American Bitcoin director Justin Mateen buys nearly $2 million of ABTC stock",
       "link": "https://www.coindesk.com/business/2026/08/07/trump-backed-american-bitcoin-director-justin-mateen-buys-nearly-usd2-million-of-abtc-stock",
       "pubDate": "Fri, 07 Aug 2026 20:20:00 +0000"
-    },
-    {
-      "title": "U.S. widens Iran crypto crackdown with sanctions on two exchanges",
-      "link": "https://www.coindesk.com/policy/2026/08/07/u-s-widens-iran-crypto-crackdown-with-sanctions-on-two-exchanges",
-      "pubDate": "Fri, 07 Aug 2026 18:42:44 +0000"
     }
   ]
 }
