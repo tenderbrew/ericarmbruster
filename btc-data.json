@@ -1,13 +1,13 @@
 {
-  "fetchedAt": "2026-08-09T13:12:45.352Z",
+  "fetchedAt": "2026-08-09T15:44:21.168Z",
   "price": {
-    "usd": 64973,
-    "time": 1786281009
+    "usd": 65189,
+    "time": 1786290009
   },
   "moves": {
-    "d1": 0.08589506778369227,
-    "d7": 2.3737411300968514,
-    "d30": 1.34458285874699
+    "d1": 0.4186264074885093,
+    "d7": 2.7140783176070604,
+    "d30": 1.681498652961344
   },
   "history90d": [
     {
@@ -372,60 +372,70 @@
     },
     {
       "date": "2026-08-09",
-      "close": 64967.523410667665
+      "close": 65187.07431799303
     }
   ],
   "blocks": [
     {
-      "height": 961729,
-      "id": "0000000000000000000055fbd96192d25981163ea0f18accc6d1e22cafe84b6f",
-      "timestamp": 1786279708,
-      "txCount": 4589
+      "height": 961745,
+      "id": "00000000000000000000b5d330e505892a8251c8db01d2017fb9585869006b45",
+      "timestamp": 1786290143,
+      "txCount": 4139
     },
     {
-      "height": 961728,
-      "id": "000000000000000000005f0ea6bba75dd5480277c27d1351a80b6cb4d157090e",
-      "timestamp": 1786278860,
-      "txCount": 5021
+      "height": 961744,
+      "id": "0000000000000000000044d934741d09ebed91054ab1cfb1c568d48e48a46208",
+      "timestamp": 1786289221,
+      "txCount": 4305
     },
     {
-      "height": 961727,
-      "id": "00000000000000000000b79b7b22483afc3b9c8ba10860a468d7cfe2b12615ba",
-      "timestamp": 1786277155,
-      "txCount": 4473
+      "height": 961743,
+      "id": "00000000000000000001cb251fd1b03958036c3f43653dd9c2cd39aaf0a54246",
+      "timestamp": 1786287958,
+      "txCount": 5767
     },
     {
-      "height": 961726,
-      "id": "0000000000000000000019f856a010ed655cb7e3d9e1d3085a596160b89ec260",
-      "timestamp": 1786277081,
-      "txCount": 4164
+      "height": 961742,
+      "id": "000000000000000000001ddf1869e0115eb885b591766fb6fe8bcdd2619fad5e",
+      "timestamp": 1786287942,
+      "txCount": 4843
     },
     {
-      "height": 961725,
-      "id": "0000000000000000000084d6dffb564a0691328c9e454f2723a68d86ed470e87",
-      "timestamp": 1786275616,
-      "txCount": 4589
+      "height": 961741,
+      "id": "00000000000000000000347ce8e61c7aef3bfb52d0c9f8eaf3ff2fb250c8a165",
+      "timestamp": 1786286621,
+      "txCount": 5678
     },
     {
-      "height": 961724,
-      "id": "000000000000000000002a4eb30bb91dadb7b38213c812a5ce16beff4a2bb4f1",
-      "timestamp": 1786273319,
-      "txCount": 3921
+      "height": 961740,
+      "id": "000000000000000000015ad53226334912fcf5ab0057368a4ffe93eedbf7c6cd",
+      "timestamp": 1786286243,
+      "txCount": 4422
     },
     {
-      "height": 961723,
-      "id": "00000000000000000001dc85974d948416ac8c77c34fa11969d5035aaddc7ad0",
-      "timestamp": 1786272864,
-      "txCount": 4906
+      "height": 961739,
+      "id": "0000000000000000000164232c433702ae694faba603739478d7f1c6ad2dd86b",
+      "timestamp": 1786285309,
+      "txCount": 6696
     },
     {
-      "height": 961722,
-      "id": "000000000000000000002180aa262e755dd9abccdfaef790ecdcf50564a89c8c",
-      "timestamp": 1786271162,
-      "txCount": 5317
+      "height": 961738,
+      "id": "00000000000000000000b8e171780b8bdfb5fcf1fb8d093edb0ddab4e26e856b",
+      "timestamp": 1786285283,
+      "txCount": 4639
     }
   ],
   "news": [
+    {
+      "title": "Hyperliquid’s RWA perps boom is eating into the revenue that backs HYPE",
+      "link": "https://www.coindesk.com/business/2026/08/09/hyperliquid-s-rwa-perps-boom-is-eating-into-the-revenue-that-backs-hype",
+      "pubDate": "Sun, 09 Aug 2026 15:00:00 +0000"
+    },
+    {
+      "title": "Bitcoin investors pour $853 million into spot ETFs. BlackRock’s IBIT claims the bulk",
+      "link": "https://www.coindesk.com/markets/2026/08/09/bitcoin-investors-pour-usd853-million-into-spot-etfs-blackrock-s-ibit-claims-the-bulk",
+      "pubDate": "Sun, 09 Aug 2026 14:19:35 +0000"
+    },
     {
       "title": "Crypto is going through a massive dot-com style shakeout as over 100 projects fold in 2026",
       "link": "https://www.coindesk.com/business/2026/08/09/crypto-is-going-through-a-massive-dot-com-style-shakeout-as-over-100-projects-fold-in-2026",
@@ -475,16 +485,6 @@
       "title": "New XRP Ledger amendments target $530 million in tokenized Wall Street assets",
       "link": "https://www.coindesk.com/tech/2026/08/07/new-xrp-ledger-amendments-target-usd530-million-in-tokenized-wall-street-assets",
       "pubDate": "Sat, 08 Aug 2026 03:30:00 +0000"
-    },
-    {
-      "title": "Bitcoin holders risk losing real BTC if they sell coins from BIP-110 fork, says developer",
-      "link": "https://www.coindesk.com/tech/2026/08/08/bitcoin-holders-risk-losing-real-btc-if-they-sell-coins-from-bip-110-fork-says-developer",
-      "pubDate": "Sat, 08 Aug 2026 02:30:00 +0000"
-    },
-    {
-      "title": "Trump Media pulls back from crypto, scraps Crypto.com's CRO token treasury deal",
-      "link": "https://www.coindesk.com/business/2026/08/07/trump-media-pulls-back-from-crypto-scraps-crypto-com-cro-treasury-deal",
-      "pubDate": "Fri, 07 Aug 2026 21:13:21 +0000"
     }
   ]
 }
