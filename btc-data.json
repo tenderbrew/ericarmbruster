@@ -1,13 +1,13 @@
 {
-  "fetchedAt": "2026-08-10T16:07:38.036Z",
+  "fetchedAt": "2026-08-10T19:12:55.847Z",
   "price": {
-    "usd": 64283,
-    "time": 1786377910
+    "usd": 63857,
+    "time": 1786389008
   },
   "moves": {
-    "d1": -0.8836452463194422,
-    "d7": 1.2764035263621798,
-    "d30": 0.7707109553461766
+    "d1": -1.5404840236799888,
+    "d7": 0.6052502214101585,
+    "d30": 0.10290884799308841
   },
   "history90d": [
     {
@@ -372,57 +372,57 @@
     },
     {
       "date": "2026-08-10",
-      "close": 64286.8122189922
+      "close": 63864.793983423806
     }
   ],
   "blocks": [
     {
-      "height": 961893,
-      "id": "000000000000000000019249ad4d012f6c9a2266e242478f75fa0a4059620be1",
-      "timestamp": 1786376914,
-      "txCount": 4359
+      "height": 961907,
+      "id": "000000000000000000004034a800020d68f87c4aa7c3fa0827fc29ed18749f26",
+      "timestamp": 1786388835,
+      "txCount": 4225
     },
     {
-      "height": 961892,
-      "id": "00000000000000000001b3ba901f7a14a7654bc2832361fc61de96c3c9a2ddbf",
-      "timestamp": 1786375323,
-      "txCount": 6959
+      "height": 961906,
+      "id": "0000000000000000000155e588e6324fe407d5cde76e68925366b77b77108a1a",
+      "timestamp": 1786386857,
+      "txCount": 3392
     },
     {
-      "height": 961891,
-      "id": "00000000000000000001423951792bb04d0cd6e494119eff90e9a2d13f411fee",
-      "timestamp": 1786375282,
-      "txCount": 913
+      "height": 961905,
+      "id": "000000000000000000000d1366b905ed777fd05a40553da77e112386f76057b6",
+      "timestamp": 1786386210,
+      "txCount": 4206
     },
     {
-      "height": 961890,
-      "id": "000000000000000000008e5d2939e1a19b51563a42bc7aaeabc42c1aa22876af",
-      "timestamp": 1786375094,
-      "txCount": 5194
+      "height": 961904,
+      "id": "00000000000000000000b7441e948214abdc7959784b0eea56e518ca7857e675",
+      "timestamp": 1786385978,
+      "txCount": 4127
     },
     {
-      "height": 961889,
-      "id": "00000000000000000001fdd54c8ea3ca3c81434e19f1948f3222e5f382b2d82f",
-      "timestamp": 1786375056,
-      "txCount": 4074
+      "height": 961903,
+      "id": "00000000000000000000a7a4668449b99de691d38d981a420a8635a99043956f",
+      "timestamp": 1786383499,
+      "txCount": 3106
     },
     {
-      "height": 961888,
-      "id": "00000000000000000000089e538f52793f7b6aa12ce7c71048efa1288fb3259b",
-      "timestamp": 1786374813,
-      "txCount": 4048
+      "height": 961902,
+      "id": "000000000000000000005efe2ef58684b695abb69463594b89cb1e72064bc92a",
+      "timestamp": 1786383304,
+      "txCount": 4023
     },
     {
-      "height": 961887,
-      "id": "0000000000000000000166c805b3535b185f3758720f1afbdb3a3fcd247b8a97",
-      "timestamp": 1786374594,
-      "txCount": 4282
+      "height": 961901,
+      "id": "00000000000000000001cbd91ff0c15db1e5727f9091da27075e4968c097619a",
+      "timestamp": 1786382795,
+      "txCount": 3822
     },
     {
-      "height": 961886,
-      "id": "0000000000000000000228499ece4044ccc298eceba39582407eafeda692ae6d",
-      "timestamp": 1786372639,
-      "txCount": 4441
+      "height": 961900,
+      "id": "00000000000000000001ad4d948ef8508cf4eb41735f448d52755cd73a816f5d",
+      "timestamp": 1786382574,
+      "txCount": 3959
     }
   ],
   "news": [
@@ -457,7 +457,7 @@
       "pubDate": "Mon, 10 Aug 2026 11:39:44 +0000"
     },
     {
-      "title": "Why the UK financial watchdog is drafting new rules for tokenized gold",
+      "title": "UK’s FCA to regulate tokenized gold to preserve London’s place as the top hub for bullion",
       "link": "https://www.coindesk.com/business/2026/08/10/why-the-uk-financial-watchdog-is-drafting-new-rules-for-tokenized-gold",
       "pubDate": "Mon, 10 Aug 2026 11:38:33 +0000"
     },
