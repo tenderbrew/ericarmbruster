@@ -1,13 +1,13 @@
 {
-  "fetchedAt": "2026-08-10T02:30:45.347Z",
+  "fetchedAt": "2026-08-10T04:50:18.716Z",
   "price": {
-    "usd": 64888,
-    "time": 1786328710
+    "usd": 64963,
+    "time": 1786337108
   },
   "moves": {
-    "d1": 0.049189167537666556,
-    "d7": 2.2295672575733727,
-    "d30": 1.7191153566339823
+    "d1": 0.16482979735465975,
+    "d7": 2.3477280506987164,
+    "d30": 1.8366861501820653
   },
   "history90d": [
     {
@@ -372,60 +372,70 @@
     },
     {
       "date": "2026-08-10",
-      "close": 64898.14371035345
+      "close": 64992.69140250435
     }
   ],
   "blocks": [
     {
-      "height": 961818,
-      "id": "00000000000000000000c766eea3f25fc850e3643bddcdbfec6b45ec233f7cfa",
-      "timestamp": 1786328754,
-      "txCount": 4180
+      "height": 961836,
+      "id": "0000000000000000000081a39889e19d2c1a9c3a1a3359e9289ac3d1b3f2dcdb",
+      "timestamp": 1786336963,
+      "txCount": 4286
     },
     {
-      "height": 961817,
-      "id": "00000000000000000001d6943d6c6b81de6930a270c92ffd3b1693cfca071f34",
-      "timestamp": 1786327868,
-      "txCount": 5555
+      "height": 961835,
+      "id": "000000000000000000022b918d864db9bf7bdd625da731ba6e1fcf02ddd23747",
+      "timestamp": 1786336549,
+      "txCount": 5739
     },
     {
-      "height": 961816,
-      "id": "00000000000000000001259fee9755c4f823d2d7a4e22eca432015814ed47c66",
-      "timestamp": 1786327492,
-      "txCount": 5664
+      "height": 961834,
+      "id": "00000000000000000000ccaa5b25c4c66aaf36c845ab627d48b6c5f64f5d4046",
+      "timestamp": 1786336068,
+      "txCount": 5302
     },
     {
-      "height": 961815,
-      "id": "00000000000000000000f98065702bcec1077170e781316b8f48b774d424f942",
-      "timestamp": 1786327255,
-      "txCount": 6308
+      "height": 961833,
+      "id": "00000000000000000001a5fb7772a075201890968fd67c3afed5a6c663f48265",
+      "timestamp": 1786335330,
+      "txCount": 5004
     },
     {
-      "height": 961814,
-      "id": "00000000000000000000c42a7155b4f98d5c40fa20235b5d1b5b7d793d41be92",
-      "timestamp": 1786327179,
-      "txCount": 501
+      "height": 961832,
+      "id": "00000000000000000000600aa0e8e7f461ef30c0af7c184a04311f2b72627078",
+      "timestamp": 1786334912,
+      "txCount": 4147
     },
     {
-      "height": 961813,
-      "id": "00000000000000000000357db7fa129b2c11f669db83dbf74dc2719faef93548",
-      "timestamp": 1786326997,
-      "txCount": 6108
+      "height": 961831,
+      "id": "000000000000000000020629823ce9363657d22c35f437ad5ef4e804230a5e83",
+      "timestamp": 1786333463,
+      "txCount": 2714
     },
     {
-      "height": 961812,
-      "id": "00000000000000000001f89fc7357fbee8feba1d83a9bc93d365bfea85325eaa",
-      "timestamp": 1786326840,
-      "txCount": 6598
+      "height": 961830,
+      "id": "00000000000000000001bca70e04271c015e2607c66f214ab1af95416100a375",
+      "timestamp": 1786333081,
+      "txCount": 6831
     },
     {
-      "height": 961811,
-      "id": "000000000000000000018638faa46de74ed0a6ef1be913066a756587d6222998",
-      "timestamp": 1786326636,
-      "txCount": 5032
+      "height": 961829,
+      "id": "000000000000000000022c01062a307d080c5c0bbd9455f558aca59bb9e4decb",
+      "timestamp": 1786332981,
+      "txCount": 5765
     }
   ],
   "news": [
+    {
+      "title": "Bitcoin tops $65,000 with US inflation data due this week",
+      "link": "https://www.coindesk.com/markets/2026/08/10/bitcoin-tops-usd65-000-with-us-inflation-data-due-this-week",
+      "pubDate": "Mon, 10 Aug 2026 04:39:37 +0000"
+    },
+    {
+      "title": "XRP is getting left behind in the crypto bounce even as ETFs keep attracting investor money",
+      "link": "https://www.coindesk.com/markets/2026/08/10/xrp-is-getting-left-behind-in-the-crypto-bounce-even-as-etfs-keep-attracting-investor-money",
+      "pubDate": "Mon, 10 Aug 2026 04:26:01 +0000"
+    },
     {
       "title": "Is Clarity's delay a blessing in disguise?: State of Crypto",
       "link": "https://www.coindesk.com/policy/2026/08/09/is-clarity-s-delay-a-blessing-in-disguise-state-of-crypto",
@@ -475,16 +485,6 @@
       "title": "Why trillion-dollar asset manager T. Rowe Price put memecoins in its crypto ETF",
       "link": "https://www.coindesk.com/markets/2026/08/06/why-trillion-dollar-asset-manager-t-rowe-price-put-memecoins-in-its-crypto-etf",
       "pubDate": "Sat, 08 Aug 2026 13:00:00 +0000"
-    },
-    {
-      "title": "U.S. Senate opens first stage of crypto Clarity Act voting to give bill a chance next month",
-      "link": "https://www.coindesk.com/policy/2026/08/08/u-s-senate-opens-first-stage-of-crypto-clarity-act-voting-to-give-bill-a-chance-next-month",
-      "pubDate": "Sat, 08 Aug 2026 09:07:24 +0000"
-    },
-    {
-      "title": "Another Bitcoin infrastructure exploit hits, this time draining Lightning payment servers",
-      "link": "https://www.coindesk.com/tech/2026/08/08/another-bitcoin-infrastructure-exploit-hits-this-time-draining-merchant-lightning-nodes",
-      "pubDate": "Sat, 08 Aug 2026 07:46:04 +0000"
     }
   ]
 }
