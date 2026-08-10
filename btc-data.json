@@ -1,13 +1,13 @@
 {
-  "fetchedAt": "2026-08-10T04:50:18.716Z",
+  "fetchedAt": "2026-08-10T08:01:04.932Z",
   "price": {
-    "usd": 64963,
-    "time": 1786337108
+    "usd": 65162,
+    "time": 1786348508
   },
   "moves": {
-    "d1": 0.16482979735465975,
-    "d7": 2.3477280506987164,
-    "d30": 1.8366861501820653
+    "d1": 0.47166293513576374,
+    "d7": 2.6612480217913292,
+    "d30": 2.1486406557296167
   },
   "history90d": [
     {
@@ -372,62 +372,82 @@
     },
     {
       "date": "2026-08-10",
-      "close": 64992.69140250435
+      "close": 65151.10154536334
     }
   ],
   "blocks": [
     {
-      "height": 961836,
-      "id": "0000000000000000000081a39889e19d2c1a9c3a1a3359e9289ac3d1b3f2dcdb",
-      "timestamp": 1786336963,
-      "txCount": 4286
+      "height": 961847,
+      "id": "00000000000000000001d22c0e33decaa349a9cd7b750b4fc2d84ef4f39dac6b",
+      "timestamp": 1786345726,
+      "txCount": 1
     },
     {
-      "height": 961835,
-      "id": "000000000000000000022b918d864db9bf7bdd625da731ba6e1fcf02ddd23747",
-      "timestamp": 1786336549,
-      "txCount": 5739
+      "height": 961846,
+      "id": "000000000000000000021cf7d0f8c379ab7348551b7bb3eec742f9d91dd9305d",
+      "timestamp": 1786345660,
+      "txCount": 4387
     },
     {
-      "height": 961834,
-      "id": "00000000000000000000ccaa5b25c4c66aaf36c845ab627d48b6c5f64f5d4046",
-      "timestamp": 1786336068,
-      "txCount": 5302
+      "height": 961845,
+      "id": "0000000000000000000220e290fc403ff0b0a2d264d7041a3dc4b2acd7f529e8",
+      "timestamp": 1786345382,
+      "txCount": 6260
     },
     {
-      "height": 961833,
-      "id": "00000000000000000001a5fb7772a075201890968fd67c3afed5a6c663f48265",
-      "timestamp": 1786335330,
-      "txCount": 5004
+      "height": 961844,
+      "id": "00000000000000000000075d6b0fdb7ae9194c5555207ad83726c06e4798e8ae",
+      "timestamp": 1786344973,
+      "txCount": 5447
     },
     {
-      "height": 961832,
-      "id": "00000000000000000000600aa0e8e7f461ef30c0af7c184a04311f2b72627078",
-      "timestamp": 1786334912,
-      "txCount": 4147
+      "height": 961843,
+      "id": "0000000000000000000104ace8ea01305e3c4040772db866f9cc192a69ed33f1",
+      "timestamp": 1786344968,
+      "txCount": 4557
     },
     {
-      "height": 961831,
-      "id": "000000000000000000020629823ce9363657d22c35f437ad5ef4e804230a5e83",
-      "timestamp": 1786333463,
-      "txCount": 2714
+      "height": 961842,
+      "id": "000000000000000000006ae68fcf7caf19018dc964ed62c62fbefe1de62bca69",
+      "timestamp": 1786344470,
+      "txCount": 3390
     },
     {
-      "height": 961830,
-      "id": "00000000000000000001bca70e04271c015e2607c66f214ab1af95416100a375",
-      "timestamp": 1786333081,
-      "txCount": 6831
+      "height": 961841,
+      "id": "00000000000000000000ce9969f3327753647099b83cd8e45ba317c11ebcbf68",
+      "timestamp": 1786344391,
+      "txCount": 4380
     },
     {
-      "height": 961829,
-      "id": "000000000000000000022c01062a307d080c5c0bbd9455f558aca59bb9e4decb",
-      "timestamp": 1786332981,
-      "txCount": 5765
+      "height": 961840,
+      "id": "00000000000000000001426badb5669b5f2bfcb909c3a7f9e931a0fcb54051af",
+      "timestamp": 1786340614,
+      "txCount": 4758
     }
   ],
   "news": [
     {
-      "title": "Bitcoin tops $65,000 with US inflation data due this week",
+      "title": "Inside stablecoin firm BVNK’s journey to a $1.8B acquisition by Mastercard",
+      "link": "https://www.coindesk.com/business/2026/08/10/inside-stablecoin-firm-bvnk-s-journey-to-a-usd1-8b-acquisition-by-mastercard",
+      "pubDate": "Mon, 10 Aug 2026 07:52:00 +0000"
+    },
+    {
+      "title": "Robinhood brings crypto trading to UK in AI-powered all-in-one app",
+      "link": "https://www.coindesk.com/business/2026/08/07/robinhood-introduces-no-fee-crypto-trading-in-the-uk-with-ai-assistance",
+      "pubDate": "Mon, 10 Aug 2026 07:00:00 +0000"
+    },
+    {
+      "title": "Live updates: BTC above $65,000 even as the Senate punts the CLARITY Act to the fall",
+      "link": "https://www.coindesk.com/markets/2026/08/10/live-updates-btc-above-usd65-000-even-as-the-senate-punts-the-clarity-act-to-the-fall",
+      "pubDate": "Mon, 10 Aug 2026 06:56:50 +0000"
+    },
+    {
+      "title": "This bitcoin miner rejected BIP-110 despite mining through a pool that supported it",
+      "link": "https://www.coindesk.com/markets/2026/08/10/bitcoin-miner-rejects-bip-110-despite-mining-through-a-pool-that-supported-it",
+      "pubDate": "Mon, 10 Aug 2026 06:25:17 +0000"
+    },
+    {
+      "title": "Bitcoin tops $65,000 with U.S. inflation data due this week",
       "link": "https://www.coindesk.com/markets/2026/08/10/bitcoin-tops-usd65-000-with-us-inflation-data-due-this-week",
       "pubDate": "Mon, 10 Aug 2026 04:39:37 +0000"
     },
@@ -465,26 +485,6 @@
       "title": "Bitcoin hits block 961,632 as the controversial BIP-110 soft fork attempt begins",
       "link": "https://www.coindesk.com/tech/2026/08/07/frame-bitcoin-s-bip-110-enters-mandatory-signaling-with-less-than-3-miner-support",
       "pubDate": "Sat, 08 Aug 2026 20:06:47 +0000"
-    },
-    {
-      "title": "Hardware wallet sales in Russia more than double as new crypto rules near",
-      "link": "https://www.coindesk.com/business/2026/08/08/hardware-wallet-sales-in-russia-more-than-double-as-new-crypto-rules-near",
-      "pubDate": "Sat, 08 Aug 2026 17:48:02 +0000"
-    },
-    {
-      "title": "Brazil's central bank orders exchanges to delay large crypto transfers abroad",
-      "link": "https://www.coindesk.com/business/2026/08/08/brazil-s-central-bank-orders-exchanges-to-delay-large-crypto-transfers-abroad",
-      "pubDate": "Sat, 08 Aug 2026 15:25:38 +0000"
-    },
-    {
-      "title": "Trillions in institutional money to flow into bitcoin, says Bitwise's Matt Hougan",
-      "link": "https://www.coindesk.com/business/2026/08/08/trillions-in-institutional-money-to-flow-into-bitcoin-says-bitwise-s-matt-hougan",
-      "pubDate": "Sat, 08 Aug 2026 14:00:00 +0000"
-    },
-    {
-      "title": "Why trillion-dollar asset manager T. Rowe Price put memecoins in its crypto ETF",
-      "link": "https://www.coindesk.com/markets/2026/08/06/why-trillion-dollar-asset-manager-t-rowe-price-put-memecoins-in-its-crypto-etf",
-      "pubDate": "Sat, 08 Aug 2026 13:00:00 +0000"
     }
   ]
 }
