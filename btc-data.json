@@ -1,13 +1,13 @@
 {
-  "fetchedAt": "2026-08-10T13:39:38.201Z",
+  "fetchedAt": "2026-08-10T16:07:38.036Z",
   "price": {
-    "usd": 64702,
-    "time": 1786368911
+    "usd": 64283,
+    "time": 1786377910
   },
   "moves": {
-    "d1": -0.23759959440847744,
-    "d7": 1.936528490622491,
-    "d30": 1.4275397886347463
+    "d1": -0.8836452463194422,
+    "d7": 1.2764035263621798,
+    "d30": 0.7707109553461766
   },
   "history90d": [
     {
@@ -372,60 +372,75 @@
     },
     {
       "date": "2026-08-10",
-      "close": 64746.46976497687
+      "close": 64286.8122189922
     }
   ],
   "blocks": [
     {
-      "height": 961879,
-      "id": "00000000000000000001ade805210beea11c8cdeb7c760462724f24097a252c4",
-      "timestamp": 1786368608,
-      "txCount": 3691
+      "height": 961893,
+      "id": "000000000000000000019249ad4d012f6c9a2266e242478f75fa0a4059620be1",
+      "timestamp": 1786376914,
+      "txCount": 4359
     },
     {
-      "height": 961878,
-      "id": "00000000000000000001372d42aa49e97a5a56b5ff4e9c42dddc33a8d00a1352",
-      "timestamp": 1786368067,
-      "txCount": 3717
+      "height": 961892,
+      "id": "00000000000000000001b3ba901f7a14a7654bc2832361fc61de96c3c9a2ddbf",
+      "timestamp": 1786375323,
+      "txCount": 6959
     },
     {
-      "height": 961877,
-      "id": "0000000000000000000217efab553c55f057eeb0499392c502df29a7534abbdc",
-      "timestamp": 1786367548,
-      "txCount": 3776
+      "height": 961891,
+      "id": "00000000000000000001423951792bb04d0cd6e494119eff90e9a2d13f411fee",
+      "timestamp": 1786375282,
+      "txCount": 913
     },
     {
-      "height": 961876,
-      "id": "00000000000000000000afd3575c348d03506bbb5c7c9c790827667a13bd6d9f",
-      "timestamp": 1786366558,
-      "txCount": 4210
+      "height": 961890,
+      "id": "000000000000000000008e5d2939e1a19b51563a42bc7aaeabc42c1aa22876af",
+      "timestamp": 1786375094,
+      "txCount": 5194
     },
     {
-      "height": 961875,
-      "id": "00000000000000000000ae6284cda754580c431d992263d942a2eb19f04b4124",
-      "timestamp": 1786364689,
-      "txCount": 5845
+      "height": 961889,
+      "id": "00000000000000000001fdd54c8ea3ca3c81434e19f1948f3222e5f382b2d82f",
+      "timestamp": 1786375056,
+      "txCount": 4074
     },
     {
-      "height": 961874,
-      "id": "000000000000000000020a58a47d23317d7dac1ab4fa71cd7c30f62f9ba323d6",
-      "timestamp": 1786364269,
-      "txCount": 2728
+      "height": 961888,
+      "id": "00000000000000000000089e538f52793f7b6aa12ce7c71048efa1288fb3259b",
+      "timestamp": 1786374813,
+      "txCount": 4048
     },
     {
-      "height": 961873,
-      "id": "00000000000000000000c1021250e38a6ac1930294f787eb7f57b50af0318e68",
-      "timestamp": 1786363940,
-      "txCount": 4684
+      "height": 961887,
+      "id": "0000000000000000000166c805b3535b185f3758720f1afbdb3a3fcd247b8a97",
+      "timestamp": 1786374594,
+      "txCount": 4282
     },
     {
-      "height": 961872,
-      "id": "00000000000000000000d00cfad66fa44135f8e79860141afea68af5aaecab8d",
-      "timestamp": 1786362245,
-      "txCount": 5468
+      "height": 961886,
+      "id": "0000000000000000000228499ece4044ccc298eceba39582407eafeda692ae6d",
+      "timestamp": 1786372639,
+      "txCount": 4441
     }
   ],
   "news": [
+    {
+      "title": "Grayscale quietly drops Cardano, Polkadot and Hedera ETF plans",
+      "link": "https://www.coindesk.com/business/2026/08/10/grayscale-quietly-drops-cardano-polkadot-and-hedera-etf-plans",
+      "pubDate": "Mon, 10 Aug 2026 15:02:14 +0000"
+    },
+    {
+      "title": "Solana lending giant Jupiter now lets the same dollar earn twice",
+      "link": "https://www.coindesk.com/markets/2026/08/10/solana-lending-giant-jupiter-now-lets-the-same-dollar-earn-twice",
+      "pubDate": "Mon, 10 Aug 2026 14:30:00 +0000"
+    },
+    {
+      "title": "Bitmine’s ETH buying slows as Tom Lee's firm shifts capital to share buybacks",
+      "link": "https://www.coindesk.com/business/2026/08/10/bitmine-s-eth-buying-slows-as-tom-lee-s-firm-shifts-capital-to-share-buybacks",
+      "pubDate": "Mon, 10 Aug 2026 13:50:51 +0000"
+    },
     {
       "title": "Solana gets its first Strategy STRC product through Solstice Finance",
       "link": "https://www.coindesk.com/business/2026/08/10/solstice-rolls-out-strategy-s-strc-preferred-stock-income-to-solana",
@@ -470,21 +485,6 @@
       "title": "U.S. CPI inflation, Securitize, Gemini among earnings reports: Crypto Week Ahead",
       "link": "https://www.coindesk.com/markets/2026/08/10/u-s-cpi-inflation-securitize-gemini-among-earnings-reports-crypto-week-ahead",
       "pubDate": "Mon, 10 Aug 2026 08:57:04 +0000"
-    },
-    {
-      "title": "Inside stablecoin firm BVNK’s journey to a $1.8B acquisition by Mastercard",
-      "link": "https://www.coindesk.com/business/2026/08/10/inside-stablecoin-firm-bvnk-s-journey-to-a-usd1-8b-acquisition-by-mastercard",
-      "pubDate": "Mon, 10 Aug 2026 07:52:00 +0000"
-    },
-    {
-      "title": "Robinhood brings crypto trading to UK in AI-powered all-in-one app",
-      "link": "https://www.coindesk.com/business/2026/08/07/robinhood-introduces-no-fee-crypto-trading-in-the-uk-with-ai-assistance",
-      "pubDate": "Mon, 10 Aug 2026 07:00:00 +0000"
-    },
-    {
-      "title": "Live updates: Bitcoin steady above $65,100 as Strategy reports 1,690 BTC sale",
-      "link": "https://www.coindesk.com/markets/2026/08/10/live-updates-btc-above-usd65-000-even-as-the-senate-punts-the-clarity-act-to-the-fall",
-      "pubDate": "Mon, 10 Aug 2026 06:56:50 +0000"
     }
   ]
 }
