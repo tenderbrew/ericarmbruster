@@ -1,13 +1,13 @@
 {
-  "fetchedAt": "2026-08-10T19:12:55.847Z",
+  "fetchedAt": "2026-08-10T21:55:09.274Z",
   "price": {
-    "usd": 63857,
-    "time": 1786389008
+    "usd": 63936,
+    "time": 1786398610
   },
   "moves": {
-    "d1": -1.5404840236799888,
-    "d7": 0.6052502214101585,
-    "d30": 0.10290884799308841
+    "d1": -1.4186758936060806,
+    "d7": 0.7297129235022126,
+    "d30": 0.22675008386374707
   },
   "history90d": [
     {
@@ -372,60 +372,75 @@
     },
     {
       "date": "2026-08-10",
-      "close": 63864.793983423806
+      "close": 63941.475826382164
     }
   ],
   "blocks": [
     {
-      "height": 961907,
-      "id": "000000000000000000004034a800020d68f87c4aa7c3fa0827fc29ed18749f26",
-      "timestamp": 1786388835,
-      "txCount": 4225
+      "height": 961923,
+      "id": "00000000000000000000adf0764aed963a068de50d0604d4e72df4ee751a9e92",
+      "timestamp": 1786398256,
+      "txCount": 4893
     },
     {
-      "height": 961906,
-      "id": "0000000000000000000155e588e6324fe407d5cde76e68925366b77b77108a1a",
-      "timestamp": 1786386857,
-      "txCount": 3392
+      "height": 961922,
+      "id": "000000000000000000020e0a4be7a4fa62a56cdcd2f39c32f14a4614790528b7",
+      "timestamp": 1786397158,
+      "txCount": 4349
     },
     {
-      "height": 961905,
-      "id": "000000000000000000000d1366b905ed777fd05a40553da77e112386f76057b6",
-      "timestamp": 1786386210,
-      "txCount": 4206
+      "height": 961921,
+      "id": "0000000000000000000103211c58dff50c96f3f4d9e4924dac8c71f139f51e9e",
+      "timestamp": 1786396671,
+      "txCount": 3990
     },
     {
-      "height": 961904,
-      "id": "00000000000000000000b7441e948214abdc7959784b0eea56e518ca7857e675",
-      "timestamp": 1786385978,
-      "txCount": 4127
+      "height": 961920,
+      "id": "0000000000000000000001ba2a5ba27a160a04f55bb96f177f08265c0eed912a",
+      "timestamp": 1786396301,
+      "txCount": 4302
     },
     {
-      "height": 961903,
-      "id": "00000000000000000000a7a4668449b99de691d38d981a420a8635a99043956f",
-      "timestamp": 1786383499,
-      "txCount": 3106
+      "height": 961919,
+      "id": "0000000000000000000104b83043e3f8aa25f8bbde1efe78324f396f3f47cf6b",
+      "timestamp": 1786394729,
+      "txCount": 4462
     },
     {
-      "height": 961902,
-      "id": "000000000000000000005efe2ef58684b695abb69463594b89cb1e72064bc92a",
-      "timestamp": 1786383304,
-      "txCount": 4023
+      "height": 961918,
+      "id": "00000000000000000000bdb0cd8b6bf8898204d6f9dcfe2cd0cdb9ce75bbd919",
+      "timestamp": 1786394623,
+      "txCount": 3912
     },
     {
-      "height": 961901,
-      "id": "00000000000000000001cbd91ff0c15db1e5727f9091da27075e4968c097619a",
-      "timestamp": 1786382795,
-      "txCount": 3822
+      "height": 961917,
+      "id": "00000000000000000000a8957a41ac9f93c5943327bf8e1a952849e3561af709",
+      "timestamp": 1786393246,
+      "txCount": 5527
     },
     {
-      "height": 961900,
-      "id": "00000000000000000001ad4d948ef8508cf4eb41735f448d52755cd73a816f5d",
-      "timestamp": 1786382574,
-      "txCount": 3959
+      "height": 961916,
+      "id": "000000000000000000012a1c3694a48f6ffbe4ccf5a51ec7b267fbaa112cecec",
+      "timestamp": 1786393116,
+      "txCount": 5463
     }
   ],
   "news": [
+    {
+      "title": "Trump Media’s bitcoin holdings shrink as crypto losses hit $361 million",
+      "link": "https://www.coindesk.com/business/2026/08/10/trump-media-s-bitcoin-holdings-shrink-as-crypto-losses-hit-usd361-million",
+      "pubDate": "Mon, 10 Aug 2026 21:12:07 +0000"
+    },
+    {
+      "title": "Bitwise's Rasmussen: Circle is mispriced as stablecoins head toward trillions",
+      "link": "https://www.coindesk.com/coindesk-news/2026/08/10/bitwise-s-rasmussen-circle-is-mispriced-as-stablecoins-head-toward-trillions",
+      "pubDate": "Mon, 10 Aug 2026 20:20:06 +0000"
+    },
+    {
+      "title": "Strategy builds $4.75 billion cash cushion as only bitcoin isn’t enough for investors",
+      "link": "https://www.coindesk.com/coindesk-news/2026/08/10/strategy-builds-usd4-75-billion-cash-cushion-as-only-bitcoin-isn-t-enough-for-investors",
+      "pubDate": "Mon, 10 Aug 2026 20:03:24 +0000"
+    },
     {
       "title": "Grayscale quietly drops Cardano, Polkadot and Hedera ETF plans",
       "link": "https://www.coindesk.com/business/2026/08/10/grayscale-quietly-drops-cardano-polkadot-and-hedera-etf-plans",
@@ -470,21 +485,6 @@
       "title": "Bitcoin steadies above $65,000 as Iran-Oman deal talk eases Hormuz concerns, lifts risk assets",
       "link": "https://www.coindesk.com/markets/2026/08/10/bitcoin-steadies-above-usd65-000-as-iran-oman-deal-talk-eases-hormuz-concerns-lifts-risk-assets",
       "pubDate": "Mon, 10 Aug 2026 10:45:43 +0000"
-    },
-    {
-      "title": "Bitcoin volatility is in meltdown, but downside protection still commands a premium",
-      "link": "https://www.coindesk.com/markets/2026/08/10/bitcoin-volatility-is-in-meltdown-but-downside-protection-still-commands-a-premium",
-      "pubDate": "Mon, 10 Aug 2026 10:13:58 +0000"
-    },
-    {
-      "title": "A rare CME shift: Hedge funds abandon structural shorts to bet on a bitcoin rally",
-      "link": "https://www.coindesk.com/markets/2026/08/10/a-rare-cme-shift-hedge-funds-abandon-structural-shorts-to-bet-on-a-bitcoin-rally",
-      "pubDate": "Mon, 10 Aug 2026 09:09:32 +0000"
-    },
-    {
-      "title": "U.S. CPI inflation, Securitize, Gemini among earnings reports: Crypto Week Ahead",
-      "link": "https://www.coindesk.com/markets/2026/08/10/u-s-cpi-inflation-securitize-gemini-among-earnings-reports-crypto-week-ahead",
-      "pubDate": "Mon, 10 Aug 2026 08:57:04 +0000"
     }
   ]
 }
