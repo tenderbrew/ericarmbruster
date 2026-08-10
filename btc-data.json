@@ -1,13 +1,13 @@
 {
-  "fetchedAt": "2026-08-10T08:01:04.932Z",
+  "fetchedAt": "2026-08-10T10:34:17.714Z",
   "price": {
-    "usd": 65162,
-    "time": 1786348508
+    "usd": 65006,
+    "time": 1786357509
   },
   "moves": {
-    "d1": 0.47166293513576374,
-    "d7": 2.6612480217913292,
-    "d30": 2.1486406557296167
+    "d1": 0.23113042511642146,
+    "d7": 2.4154735720905984,
+    "d30": 1.9040934051496317
   },
   "history90d": [
     {
@@ -372,60 +372,75 @@
     },
     {
       "date": "2026-08-10",
-      "close": 65151.10154536334
+      "close": 64996.04907719332
     }
   ],
   "blocks": [
     {
-      "height": 961847,
-      "id": "00000000000000000001d22c0e33decaa349a9cd7b750b4fc2d84ef4f39dac6b",
-      "timestamp": 1786345726,
-      "txCount": 1
+      "height": 961865,
+      "id": "0000000000000000000051c3156fde0b33cd4602defef868f9f3e677d8803e2e",
+      "timestamp": 1786356615,
+      "txCount": 6138
     },
     {
-      "height": 961846,
-      "id": "000000000000000000021cf7d0f8c379ab7348551b7bb3eec742f9d91dd9305d",
-      "timestamp": 1786345660,
-      "txCount": 4387
+      "height": 961864,
+      "id": "000000000000000000004d45aa06626422b564bc74fcf8b0457f0c520dd43ba4",
+      "timestamp": 1786356441,
+      "txCount": 4486
     },
     {
-      "height": 961845,
-      "id": "0000000000000000000220e290fc403ff0b0a2d264d7041a3dc4b2acd7f529e8",
-      "timestamp": 1786345382,
-      "txCount": 6260
+      "height": 961863,
+      "id": "00000000000000000001a4ed0409b63a3bfddf32ba76a1fed029c3a99760cac0",
+      "timestamp": 1786355689,
+      "txCount": 5801
     },
     {
-      "height": 961844,
-      "id": "00000000000000000000075d6b0fdb7ae9194c5555207ad83726c06e4798e8ae",
-      "timestamp": 1786344973,
-      "txCount": 5447
+      "height": 961862,
+      "id": "00000000000000000001fe1887488023b90a0d39617ae73590ef77092a1befd0",
+      "timestamp": 1786355552,
+      "txCount": 6229
     },
     {
-      "height": 961843,
-      "id": "0000000000000000000104ace8ea01305e3c4040772db866f9cc192a69ed33f1",
-      "timestamp": 1786344968,
-      "txCount": 4557
+      "height": 961861,
+      "id": "00000000000000000001f68fea3dc4dea573cf3a777e95acb8b7b9712a155152",
+      "timestamp": 1786355573,
+      "txCount": 5246
     },
     {
-      "height": 961842,
-      "id": "000000000000000000006ae68fcf7caf19018dc964ed62c62fbefe1de62bca69",
-      "timestamp": 1786344470,
-      "txCount": 3390
+      "height": 961860,
+      "id": "00000000000000000000904526bae43654a64d203214d5d90dd09478c2ed40aa",
+      "timestamp": 1786354850,
+      "txCount": 4531
     },
     {
-      "height": 961841,
-      "id": "00000000000000000000ce9969f3327753647099b83cd8e45ba317c11ebcbf68",
-      "timestamp": 1786344391,
-      "txCount": 4380
+      "height": 961859,
+      "id": "00000000000000000000b72aa05ce6a76135755a62bc1e05f88bddc7830d1b6c",
+      "timestamp": 1786354447,
+      "txCount": 4930
     },
     {
-      "height": 961840,
-      "id": "00000000000000000001426badb5669b5f2bfcb909c3a7f9e931a0fcb54051af",
-      "timestamp": 1786340614,
-      "txCount": 4758
+      "height": 961858,
+      "id": "00000000000000000000b042371f8cfdcfe0cbbedcacf856193b2f4e114d994b",
+      "timestamp": 1786354224,
+      "txCount": 4590
     }
   ],
   "news": [
+    {
+      "title": "Bitcoin volatility is in meltdown, but downside protection still commands a premium",
+      "link": "https://www.coindesk.com/markets/2026/08/10/bitcoin-volatility-is-in-meltdown-but-downside-protection-still-commands-a-premium",
+      "pubDate": "Mon, 10 Aug 2026 10:13:58 +0000"
+    },
+    {
+      "title": "A rare CME shift: Hedge funds abandon structural shorts to bet on a bitcoin rally",
+      "link": "https://www.coindesk.com/markets/2026/08/10/a-rare-cme-shift-hedge-funds-abandon-structural-shorts-to-bet-on-a-bitcoin-rally",
+      "pubDate": "Mon, 10 Aug 2026 09:09:32 +0000"
+    },
+    {
+      "title": "U.S. CPI inflation, Securitize, Gemini among earnings reports: Crypto Week Ahead",
+      "link": "https://www.coindesk.com/markets/2026/08/10/u-s-cpi-inflation-securitize-gemini-among-earnings-reports-crypto-week-ahead",
+      "pubDate": "Mon, 10 Aug 2026 08:57:04 +0000"
+    },
     {
       "title": "Inside stablecoin firm BVNK’s journey to a $1.8B acquisition by Mastercard",
       "link": "https://www.coindesk.com/business/2026/08/10/inside-stablecoin-firm-bvnk-s-journey-to-a-usd1-8b-acquisition-by-mastercard",
@@ -470,21 +485,6 @@
       "title": "Bitcoin investors pour $853 million into spot ETFs. BlackRock’s IBIT claims the bulk",
       "link": "https://www.coindesk.com/markets/2026/08/09/bitcoin-investors-pour-usd853-million-into-spot-etfs-blackrock-s-ibit-claims-the-bulk",
       "pubDate": "Sun, 09 Aug 2026 14:19:35 +0000"
-    },
-    {
-      "title": "Crypto is going through a massive dot-com style shakeout as over 100 projects fold in 2026",
-      "link": "https://www.coindesk.com/business/2026/08/09/crypto-is-going-through-a-massive-dot-com-style-shakeout-as-over-100-projects-fold-in-2026",
-      "pubDate": "Sun, 09 Aug 2026 13:00:00 +0000"
-    },
-    {
-      "title": "Controversial Bitcoin fork BIP-110 mines two blocks, then stops",
-      "link": "https://www.coindesk.com/tech/2026/08/09/controversial-bitcoin-fork-bip-110-mines-two-blocks-then-stops",
-      "pubDate": "Sun, 09 Aug 2026 05:08:20 +0000"
-    },
-    {
-      "title": "Bitcoin hits block 961,632 as the controversial BIP-110 soft fork attempt begins",
-      "link": "https://www.coindesk.com/tech/2026/08/07/frame-bitcoin-s-bip-110-enters-mandatory-signaling-with-less-than-3-miner-support",
-      "pubDate": "Sat, 08 Aug 2026 20:06:47 +0000"
     }
   ]
 }
