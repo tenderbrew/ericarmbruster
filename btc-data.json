@@ -1,13 +1,13 @@
 {
-  "fetchedAt": "2026-08-11T10:08:26.880Z",
+  "fetchedAt": "2026-08-11T13:37:51.415Z",
   "price": {
-    "usd": 64244,
-    "time": 1786442709
+    "usd": 64147,
+    "time": 1786455007
   },
   "moves": {
-    "d1": 0.5136262328353292,
-    "d7": 0.3194760561495036,
-    "d30": 0.7801884421925198
+    "d1": 0.3618638621145642,
+    "d7": 0.1680068266892043,
+    "d30": 0.6280235975550053
   },
   "history90d": [
     {
@@ -372,119 +372,119 @@
     },
     {
       "date": "2026-08-11",
-      "close": 64245.08437520866
+      "close": 64150.07211017972
     }
   ],
   "blocks": [
     {
-      "height": 961992,
-      "id": "00000000000000000000caf03d17f697d83499b661191fd1c3ea332b7dc1bb57",
-      "timestamp": 1786441365,
-      "txCount": 5548
+      "height": 962011,
+      "id": "00000000000000000000131c35657c741bc07fc14cbe4fe3f35b8d93d6416f4e",
+      "timestamp": 1786455233,
+      "txCount": 4239
     },
     {
-      "height": 961991,
-      "id": "0000000000000000000155dc3da2cf31d64ea970de4ae9fe671188112cab3321",
-      "timestamp": 1786441252,
-      "txCount": 5529
+      "height": 962010,
+      "id": "000000000000000000013a3320697acff6a196cfe3708e304cd5e4c445086b33",
+      "timestamp": 1786454753,
+      "txCount": 3464
     },
     {
-      "height": 961990,
-      "id": "000000000000000000014a9dfb8d7f758289a2eae16666d3b767687e6d561a15",
-      "timestamp": 1786440685,
-      "txCount": 5602
+      "height": 962009,
+      "id": "0000000000000000000124716e183ce5c24b3de2fa8698d4555f02c49d5e3e6a",
+      "timestamp": 1786453917,
+      "txCount": 3808
     },
     {
-      "height": 961989,
-      "id": "00000000000000000001633b1b67467ed98a5fd5e76fae5836ebc8f133a5c352",
-      "timestamp": 1786440614,
-      "txCount": 3680
+      "height": 962008,
+      "id": "00000000000000000001bede52ea7b8c8b9720a0807e0ea7c005031c1cfd20aa",
+      "timestamp": 1786453494,
+      "txCount": 4773
     },
     {
-      "height": 961988,
-      "id": "00000000000000000000e8b61e7e9379ead5f87f7d9dd086e4d6844e2440b898",
-      "timestamp": 1786439931,
-      "txCount": 4488
+      "height": 962007,
+      "id": "00000000000000000001d142c8456e1b961471817978ce8aeebf858768060456",
+      "timestamp": 1786450225,
+      "txCount": 5062
     },
     {
-      "height": 961987,
-      "id": "00000000000000000002200c9547cf3324a8f10e378ea2307416c85c5daa0655",
-      "timestamp": 1786438858,
-      "txCount": 5834
+      "height": 962006,
+      "id": "000000000000000000014c2d5688ea55c896df04b187ecaf5989c802cc04b085",
+      "timestamp": 1786449945,
+      "txCount": 4460
     },
     {
-      "height": 961986,
-      "id": "000000000000000000013efa8b54ce913e67a2717253e9438471313245111590",
-      "timestamp": 1786438704,
-      "txCount": 4791
+      "height": 962005,
+      "id": "000000000000000000015b48c590312355ec2ea1c48f185297a944e48463955c",
+      "timestamp": 1786449561,
+      "txCount": 4677
     },
     {
-      "height": 961985,
-      "id": "000000000000000000017804ac6a66bbcb5f7111cd78c4c1bd7d30218324eef2",
-      "timestamp": 1786438025,
-      "txCount": 5104
+      "height": 962004,
+      "id": "000000000000000000002b4ae10e358862b15f0db64e0eb8c086b725ff575ad8",
+      "timestamp": 1786449317,
+      "txCount": 5289
     }
   ],
   "news": [
     {
-      "title": "Riot Platforms surges 20% in pre-market trading on $9.1 billion Anthropic deal",
-      "link": "https://www.coindesk.com/business/2026/08/11/riot-platforms-surges-20-in-pre-market-trading-on-usd9-1-billion-anthropic-deal",
-      "pubDate": "Tue, 11 Aug 2026 09:37:36 +0000"
+      "title": "Pokémon cards are becoming multibillion dollar market. Crypto wants to fix how they trade",
+      "link": "https://www.coindesk.com/business/2026/08/11/pokemon-cards-are-becoming-multibillion-dollar-market-crypto-wants-to-fix-how-they-trade",
+      "pubDate": "Tue, 11 Aug 2026 13:06:07 +0000"
     },
     {
-      "title": "A $2 trillion asset class is getting a new blockchain rail",
-      "link": "https://www.coindesk.com/markets/2026/08/11/emb-7-00-utc-a-usd2-trillion-asset-class-is-getting-a-new-blockchain-rail",
-      "pubDate": "Tue, 11 Aug 2026 07:19:09 +0000"
+      "title": "MoneyGram expands on Solana with global crypto-to-cash service",
+      "link": "https://www.coindesk.com/business/2026/08/10/moneygram-expands-on-solana-with-global-crypto-to-cash-service",
+      "pubDate": "Tue, 11 Aug 2026 12:02:22 +0000"
     },
     {
-      "title": "BTCPay offers $190,000 bounty after bitcoin payment servers drained in exploit",
-      "link": "https://www.coindesk.com/markets/2026/08/11/btcpay-offers-usd190-000-bounty-after-bitcoin-payment-servers-drained-in-exploit",
-      "pubDate": "Tue, 11 Aug 2026 06:19:07 +0000"
+      "title": "Australian watchdog suspends Cryptolink, forcing 96 ATMs offline",
+      "link": "https://www.coindesk.com/policy/2026/08/11/australian-watchdog-suspends-cryptolink-forcing-96-atms-offline",
+      "pubDate": "Tue, 11 Aug 2026 11:45:47 +0000"
     },
     {
-      "title": "Bitcoin’s BIP-110 fork is 300 blocks behind BTC and six years from fixing itself",
-      "link": "https://www.coindesk.com/tech/2026/08/11/bitcoin-s-bip-110-fork-is-300-blocks-behind-btc-and-six-years-from-fixing-itself",
-      "pubDate": "Tue, 11 Aug 2026 05:26:37 +0000"
+      "title": "Ravencoin could roll back four days of transactions after critical block flaw",
+      "link": "https://www.coindesk.com/tech/2026/08/11/ravencoin-could-roll-back-four-days-of-transactions-after-critical-block-flaw",
+      "pubDate": "Tue, 11 Aug 2026 11:24:56 +0000"
     },
     {
-      "title": "XRP, ether lead crypto losses as traders eye $70,000 bitcoin next",
-      "link": "https://www.coindesk.com/markets/2026/08/11/xrp-ether-lead-crypto-losses-as-traders-eye-usd70-000-bitcoin-next",
-      "pubDate": "Tue, 11 Aug 2026 04:50:23 +0000"
+      "title": "Coinbase picks Abu Dhabi for its global tokenized asset push",
+      "link": "https://www.coindesk.com/business/2026/08/11/coinbase-picks-abu-dhabi-for-its-global-tokenized-asset-push",
+      "pubDate": "Tue, 11 Aug 2026 11:23:25 +0000"
     },
     {
-      "title": "U.S. SEC sets meeting to propose Reg Crypto to support certain digital assets offerings",
-      "link": "https://www.coindesk.com/policy/2026/08/11/u-s-sec-sets-meeting-to-propose-reg-crypto-to-support-certain-digital-assets-offerings",
-      "pubDate": "Tue, 11 Aug 2026 04:07:48 +0000"
+      "title": "When safe assets compete with risk. Lessons from the 1960s–90s for bitcoin and stocks.",
+      "link": "https://www.coindesk.com/daybook-us/2026/08/11/when-safe-assets-compete-with-risk-lessons-from-the-1960s-90s-for-bitcoin-and-stocks",
+      "pubDate": "Tue, 11 Aug 2026 11:13:55 +0000"
     },
     {
-      "title": "Bitcoin's 'strongest hands' are back, on-chain data show",
-      "link": "https://www.coindesk.com/markets/2026/08/11/bitcoin-s-strongest-hands-are-back-on-chain-data-show",
-      "pubDate": "Tue, 11 Aug 2026 03:48:40 +0000"
+      "title": "Bitcoin-backed lending is entering its institutional era: Two Prime",
+      "link": "https://www.coindesk.com/markets/2026/08/11/bitcoin-backed-lending-is-entering-its-institutional-era-two-prime",
+      "pubDate": "Tue, 11 Aug 2026 11:04:28 +0000"
     },
     {
-      "title": "Trump Media’s bitcoin holdings shrink as crypto losses hit $361 million",
-      "link": "https://www.coindesk.com/business/2026/08/10/trump-media-s-bitcoin-holdings-shrink-as-crypto-losses-hit-usd361-million",
-      "pubDate": "Mon, 10 Aug 2026 21:12:07 +0000"
+      "title": "Bitcoin stuck below $65,000 as Hormuz hopes evaporate, XRP close to dropping below $1",
+      "link": "https://www.coindesk.com/markets/2026/08/11/bitcoin-stuck-below-usd65-000-as-the-strait-of-hormuz-stalemate-and-strategy-s-selling-squeeze-the-market",
+      "pubDate": "Tue, 11 Aug 2026 10:48:08 +0000"
     },
     {
-      "title": "Bitwise's Rasmussen: Circle is mispriced as stablecoins head toward trillions",
-      "link": "https://www.coindesk.com/coindesk-news/2026/08/10/bitwise-s-rasmussen-circle-is-mispriced-as-stablecoins-head-toward-trillions",
-      "pubDate": "Mon, 10 Aug 2026 20:20:06 +0000"
+      "title": "Live updates: Bitcoin holds $64,200; Anthropic to watermark Claude's AI content after EU regulations",
+      "link": "https://www.coindesk.com/tech/2026/08/11/live-updates-bitcoin-slips-as-corporate-btc-enthusiasm-moves-to-ai",
+      "pubDate": "Tue, 11 Aug 2026 10:34:52 +0000"
     },
     {
-      "title": "Strategy builds $4.75 billion cash cushion as only bitcoin isn’t enough for investors",
-      "link": "https://www.coindesk.com/coindesk-news/2026/08/10/strategy-builds-usd4-75-billion-cash-cushion-as-only-bitcoin-isn-t-enough-for-investors",
-      "pubDate": "Mon, 10 Aug 2026 20:03:24 +0000"
+      "title": "FlightAware sues Kalshi over bets on flight cancellations",
+      "link": "https://www.coindesk.com/policy/2026/08/11/kalshi-faces-new-lawsuit-flightaware-accuses-it-of-using-its-data-for-flight-cancellation-betting",
+      "pubDate": "Tue, 11 Aug 2026 10:34:17 +0000"
     },
     {
-      "title": "Grayscale quietly drops Cardano, Polkadot and Hedera ETF plans",
-      "link": "https://www.coindesk.com/business/2026/08/10/grayscale-quietly-drops-cardano-polkadot-and-hedera-etf-plans",
-      "pubDate": "Mon, 10 Aug 2026 15:02:14 +0000"
+      "title": "Software stocks break away from bitcoin: What the rare divergence means for crypto",
+      "link": "https://www.coindesk.com/markets/2026/08/11/software-stocks-break-away-from-bitcoin-what-the-rare-divergence-means-for-crypto",
+      "pubDate": "Tue, 11 Aug 2026 10:31:26 +0000"
     },
     {
-      "title": "Solana lending giant Jupiter now lets the same dollar earn twice",
-      "link": "https://www.coindesk.com/markets/2026/08/10/solana-lending-giant-jupiter-now-lets-the-same-dollar-earn-twice",
-      "pubDate": "Mon, 10 Aug 2026 14:30:00 +0000"
+      "title": "Luke Dashjr removed as Bitcoin BIP editor after controversial BIP-110 fork stalls",
+      "link": "https://www.coindesk.com/tech/2026/08/11/luke-dashjr-removed-as-bitcoin-bip-editor-after-controversial-bip-110-fork-stalls",
+      "pubDate": "Tue, 11 Aug 2026 10:28:19 +0000"
     }
   ]
 }
