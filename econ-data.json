@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-08-10T19:09:12.457Z",
+  "fetchedAt": "2026-08-11T02:21:03.050Z",
   "indicators": {
     "UNRATE": {
       "latest": {
@@ -63,12 +63,12 @@
     },
     "T10YIE": {
       "latest": {
-        "date": "2026-08-07",
-        "value": 2.25
+        "date": "2026-08-10",
+        "value": 2.29
       },
       "previous": {
-        "date": "2026-08-06",
-        "value": 2.26
+        "date": "2026-08-07",
+        "value": 2.25
       }
     },
     "PCE": {
@@ -123,42 +123,42 @@
     },
     "DGS2": {
       "latest": {
-        "date": "2026-08-06",
-        "value": 4.25
+        "date": "2026-08-07",
+        "value": 4.19
       },
       "previous": {
-        "date": "2026-08-05",
-        "value": 4.18
+        "date": "2026-08-06",
+        "value": 4.25
       }
     },
     "DGS10": {
       "latest": {
-        "date": "2026-08-06",
-        "value": 4.69
+        "date": "2026-08-07",
+        "value": 4.65
       },
       "previous": {
-        "date": "2026-08-05",
-        "value": 4.63
+        "date": "2026-08-06",
+        "value": 4.69
       }
     },
     "T10Y2Y": {
       "latest": {
-        "date": "2026-08-07",
-        "value": 0.46
+        "date": "2026-08-10",
+        "value": 0.47
       },
       "previous": {
-        "date": "2026-08-06",
-        "value": 0.44
+        "date": "2026-08-07",
+        "value": 0.46
       }
     },
     "DFII10": {
       "latest": {
-        "date": "2026-08-06",
-        "value": 2.43
+        "date": "2026-08-07",
+        "value": 2.4
       },
       "previous": {
-        "date": "2026-08-05",
-        "value": 2.41
+        "date": "2026-08-06",
+        "value": 2.43
       }
     },
     "BAMLH0A0HYM2": {
@@ -233,12 +233,12 @@
     },
     "DTWEXBGS": {
       "latest": {
-        "date": "2026-07-31",
-        "value": 119.7034
+        "date": "2026-08-07",
+        "value": 119.0649
       },
       "previous": {
-        "date": "2026-07-30",
-        "value": 119.6753
+        "date": "2026-08-06",
+        "value": 119.5113
       }
     },
     "PERMIT": {
@@ -331,14 +331,14 @@
       "kind": "Podcast"
     },
     {
-      "title": "Why a BRICS Gold Standard Is a Fiction",
-      "link": "https://mises.org/mises-wire/why-brics-gold-standard-fiction",
+      "title": "The Hamiltonian AI Curse: How American Tech Learned to Make Its Losses Everyone Else’s Problem",
+      "link": "https://mises.org/mises-wire/hamiltonian-ai-curse-how-american-tech-learned-make-its-losses-everyone-elses-problem",
       "pubDate": "Sat, 08 Aug 2026 05:00:00 CDT",
       "kind": "Mises Wire"
     },
     {
-      "title": "The Hamiltonian AI Curse: How American Tech Learned to Make Its Losses Everyone Else’s Problem",
-      "link": "https://mises.org/mises-wire/hamiltonian-ai-curse-how-american-tech-learned-make-its-losses-everyone-elses-problem",
+      "title": "Why a BRICS Gold Standard Is a Fiction",
+      "link": "https://mises.org/mises-wire/why-brics-gold-standard-fiction",
       "pubDate": "Sat, 08 Aug 2026 05:00:00 CDT",
       "kind": "Mises Wire"
     },
@@ -349,16 +349,16 @@
       "kind": "Podcast"
     },
     {
-      "title": "Myths of American Healthcare",
-      "link": "https://mises.org/podcasts/radio-rothbard/myths-american-healthcare",
-      "pubDate": "Fri, 07 Aug 2026 02:00:03 CDT",
-      "kind": "Podcast"
-    },
-    {
       "title": "When Progress Turns Against Itself: The Rise of Anti-Progress",
       "link": "https://mises.org/mises-wire/when-progress-turns-against-itself-rise-anti-progress",
       "pubDate": "Fri, 07 Aug 2026 02:00:00 CDT",
       "kind": "Mises Wire"
+    },
+    {
+      "title": "Myths of American Healthcare",
+      "link": "https://mises.org/podcasts/radio-rothbard/myths-american-healthcare",
+      "pubDate": "Fri, 07 Aug 2026 02:00:03 CDT",
+      "kind": "Podcast"
     }
   ]
 }
