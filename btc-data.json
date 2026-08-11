@@ -1,13 +1,13 @@
 {
-  "fetchedAt": "2026-08-11T07:32:23.539Z",
+  "fetchedAt": "2026-08-11T10:08:26.880Z",
   "price": {
-    "usd": 63859,
-    "time": 1786433406
+    "usd": 64244,
+    "time": 1786442709
   },
   "moves": {
-    "d1": -0.08872956847906233,
-    "d7": -0.2817162463475076,
-    "d30": 0.1762351928580319
+    "d1": 0.5136262328353292,
+    "d7": 0.3194760561495036,
+    "d30": 0.7801884421925198
   },
   "history90d": [
     {
@@ -372,60 +372,65 @@
     },
     {
       "date": "2026-08-11",
-      "close": 63862.06368708657
+      "close": 64245.08437520866
     }
   ],
   "blocks": [
     {
-      "height": 961976,
-      "id": "0000000000000000000027a76f81fcd0cff74f75ff1cab5d8238e78d8b7feb5e",
-      "timestamp": 1786433266,
-      "txCount": 5124
+      "height": 961992,
+      "id": "00000000000000000000caf03d17f697d83499b661191fd1c3ea332b7dc1bb57",
+      "timestamp": 1786441365,
+      "txCount": 5548
     },
     {
-      "height": 961975,
-      "id": "00000000000000000000710fb8de8ff13d971f4f1076f18f3c890b18ff49a59b",
-      "timestamp": 1786432884,
-      "txCount": 5877
+      "height": 961991,
+      "id": "0000000000000000000155dc3da2cf31d64ea970de4ae9fe671188112cab3321",
+      "timestamp": 1786441252,
+      "txCount": 5529
     },
     {
-      "height": 961974,
-      "id": "0000000000000000000009fb949e8bc348d7cadf22636adda9d41cfd7b447b4f",
-      "timestamp": 1786432794,
-      "txCount": 6110
+      "height": 961990,
+      "id": "000000000000000000014a9dfb8d7f758289a2eae16666d3b767687e6d561a15",
+      "timestamp": 1786440685,
+      "txCount": 5602
     },
     {
-      "height": 961973,
-      "id": "00000000000000000001f322af1e22ebed4392de8d3a3decce3be3ad685bd4e5",
-      "timestamp": 1786432583,
-      "txCount": 6208
+      "height": 961989,
+      "id": "00000000000000000001633b1b67467ed98a5fd5e76fae5836ebc8f133a5c352",
+      "timestamp": 1786440614,
+      "txCount": 3680
     },
     {
-      "height": 961972,
-      "id": "000000000000000000018d295aa82873743c10d3eb6e4e705896fdf98fbb5cf7",
-      "timestamp": 1786432227,
-      "txCount": 5341
+      "height": 961988,
+      "id": "00000000000000000000e8b61e7e9379ead5f87f7d9dd086e4d6844e2440b898",
+      "timestamp": 1786439931,
+      "txCount": 4488
     },
     {
-      "height": 961971,
-      "id": "00000000000000000001f0d87ee3500b7fb7dd90c50c99c8b24e3937d1ca6d7d",
-      "timestamp": 1786431835,
-      "txCount": 5326
+      "height": 961987,
+      "id": "00000000000000000002200c9547cf3324a8f10e378ea2307416c85c5daa0655",
+      "timestamp": 1786438858,
+      "txCount": 5834
     },
     {
-      "height": 961970,
-      "id": "000000000000000000008b4aaee3a86b1a43daa6ad476228320a7ac3850412b2",
-      "timestamp": 1786431083,
-      "txCount": 5302
+      "height": 961986,
+      "id": "000000000000000000013efa8b54ce913e67a2717253e9438471313245111590",
+      "timestamp": 1786438704,
+      "txCount": 4791
     },
     {
-      "height": 961969,
-      "id": "00000000000000000000a0c7123cfef9ac1544d0b21b7dab8d9d005ec50e68ee",
-      "timestamp": 1786430320,
-      "txCount": 5723
+      "height": 961985,
+      "id": "000000000000000000017804ac6a66bbcb5f7111cd78c4c1bd7d30218324eef2",
+      "timestamp": 1786438025,
+      "txCount": 5104
     }
   ],
   "news": [
+    {
+      "title": "Riot Platforms surges 20% in pre-market trading on $9.1 billion Anthropic deal",
+      "link": "https://www.coindesk.com/business/2026/08/11/riot-platforms-surges-20-in-pre-market-trading-on-usd9-1-billion-anthropic-deal",
+      "pubDate": "Tue, 11 Aug 2026 09:37:36 +0000"
+    },
     {
       "title": "A $2 trillion asset class is getting a new blockchain rail",
       "link": "https://www.coindesk.com/markets/2026/08/11/emb-7-00-utc-a-usd2-trillion-asset-class-is-getting-a-new-blockchain-rail",
@@ -480,11 +485,6 @@
       "title": "Solana lending giant Jupiter now lets the same dollar earn twice",
       "link": "https://www.coindesk.com/markets/2026/08/10/solana-lending-giant-jupiter-now-lets-the-same-dollar-earn-twice",
       "pubDate": "Mon, 10 Aug 2026 14:30:00 +0000"
-    },
-    {
-      "title": "Bitmine’s ETH buying slows as Tom Lee's firm shifts capital to share buybacks",
-      "link": "https://www.coindesk.com/business/2026/08/10/bitmine-s-eth-buying-slows-as-tom-lee-s-firm-shifts-capital-to-share-buybacks",
-      "pubDate": "Mon, 10 Aug 2026 13:50:51 +0000"
     }
   ]
 }
