@@ -1,13 +1,13 @@
 {
-  "fetchedAt": "2026-08-11T04:36:51.018Z",
+  "fetchedAt": "2026-08-11T07:32:23.539Z",
   "price": {
-    "usd": 64045,
-    "time": 1786422911
+    "usd": 63859,
+    "time": 1786433406
   },
   "moves": {
-    "d1": 0.20227868877931154,
-    "d7": 0.008729904988702408,
-    "d30": 0.46801520422483645
+    "d1": -0.08872956847906233,
+    "d7": -0.2817162463475076,
+    "d30": 0.1762351928580319
   },
   "history90d": [
     {
@@ -372,60 +372,80 @@
     },
     {
       "date": "2026-08-11",
-      "close": 64045.69918231592
+      "close": 63862.06368708657
     }
   ],
   "blocks": [
     {
-      "height": 961958,
-      "id": "00000000000000000001a156978e182d1baaceab5d64a6cbc47e53766fc72f38",
-      "timestamp": 1786422543,
-      "txCount": 6335
+      "height": 961976,
+      "id": "0000000000000000000027a76f81fcd0cff74f75ff1cab5d8238e78d8b7feb5e",
+      "timestamp": 1786433266,
+      "txCount": 5124
     },
     {
-      "height": 961957,
-      "id": "00000000000000000000acaf67d27a3d9d0d67517d11d34d195739cf61d6aba6",
-      "timestamp": 1786422515,
-      "txCount": 5043
+      "height": 961975,
+      "id": "00000000000000000000710fb8de8ff13d971f4f1076f18f3c890b18ff49a59b",
+      "timestamp": 1786432884,
+      "txCount": 5877
     },
     {
-      "height": 961956,
-      "id": "00000000000000000001ee1e80a78c7b2e724d00c5026af4599a7f63826bac9b",
-      "timestamp": 1786421919,
-      "txCount": 5925
+      "height": 961974,
+      "id": "0000000000000000000009fb949e8bc348d7cadf22636adda9d41cfd7b447b4f",
+      "timestamp": 1786432794,
+      "txCount": 6110
     },
     {
-      "height": 961955,
-      "id": "000000000000000000019d6c5910ea2d6e823904bdf18328399876ac051acd2a",
-      "timestamp": 1786421651,
-      "txCount": 4411
+      "height": 961973,
+      "id": "00000000000000000001f322af1e22ebed4392de8d3a3decce3be3ad685bd4e5",
+      "timestamp": 1786432583,
+      "txCount": 6208
     },
     {
-      "height": 961954,
-      "id": "0000000000000000000069eb53bf357994983f65ab2cccc514339002c6bad59a",
-      "timestamp": 1786420056,
-      "txCount": 5418
+      "height": 961972,
+      "id": "000000000000000000018d295aa82873743c10d3eb6e4e705896fdf98fbb5cf7",
+      "timestamp": 1786432227,
+      "txCount": 5341
     },
     {
-      "height": 961953,
-      "id": "00000000000000000000fc1910ebbdf876307cb28d156d87b835bb9d335dd859",
-      "timestamp": 1786420013,
-      "txCount": 4820
+      "height": 961971,
+      "id": "00000000000000000001f0d87ee3500b7fb7dd90c50c99c8b24e3937d1ca6d7d",
+      "timestamp": 1786431835,
+      "txCount": 5326
     },
     {
-      "height": 961952,
-      "id": "000000000000000000001d33f236e79c2c2925ff5e06411cc3b0048f62456632",
-      "timestamp": 1786419022,
-      "txCount": 5347
+      "height": 961970,
+      "id": "000000000000000000008b4aaee3a86b1a43daa6ad476228320a7ac3850412b2",
+      "timestamp": 1786431083,
+      "txCount": 5302
     },
     {
-      "height": 961951,
-      "id": "000000000000000000007f679ea09e4e13b6543b3405f5dd66e73c19615f7d62",
-      "timestamp": 1786418732,
-      "txCount": 6486
+      "height": 961969,
+      "id": "00000000000000000000a0c7123cfef9ac1544d0b21b7dab8d9d005ec50e68ee",
+      "timestamp": 1786430320,
+      "txCount": 5723
     }
   ],
   "news": [
+    {
+      "title": "A $2 trillion asset class is getting a new blockchain rail",
+      "link": "https://www.coindesk.com/markets/2026/08/11/emb-7-00-utc-a-usd2-trillion-asset-class-is-getting-a-new-blockchain-rail",
+      "pubDate": "Tue, 11 Aug 2026 07:19:09 +0000"
+    },
+    {
+      "title": "BTCPay offers $190,000 bounty after bitcoin payment servers drained in exploit",
+      "link": "https://www.coindesk.com/markets/2026/08/11/btcpay-offers-usd190-000-bounty-after-bitcoin-payment-servers-drained-in-exploit",
+      "pubDate": "Tue, 11 Aug 2026 06:19:07 +0000"
+    },
+    {
+      "title": "Bitcoin’s BIP-110 fork is 300 blocks behind BTC and six years from fixing itself",
+      "link": "https://www.coindesk.com/tech/2026/08/11/bitcoin-s-bip-110-fork-is-300-blocks-behind-btc-and-six-years-from-fixing-itself",
+      "pubDate": "Tue, 11 Aug 2026 05:26:37 +0000"
+    },
+    {
+      "title": "XRP, ether lead crypto losses as traders eye $70,000 bitcoin next",
+      "link": "https://www.coindesk.com/markets/2026/08/11/xrp-ether-lead-crypto-losses-as-traders-eye-usd70-000-bitcoin-next",
+      "pubDate": "Tue, 11 Aug 2026 04:50:23 +0000"
+    },
     {
       "title": "U.S. SEC sets meeting to propose Reg Crypto to support certain digital assets offerings",
       "link": "https://www.coindesk.com/policy/2026/08/11/u-s-sec-sets-meeting-to-propose-reg-crypto-to-support-certain-digital-assets-offerings",
@@ -465,26 +485,6 @@
       "title": "Bitmine’s ETH buying slows as Tom Lee's firm shifts capital to share buybacks",
       "link": "https://www.coindesk.com/business/2026/08/10/bitmine-s-eth-buying-slows-as-tom-lee-s-firm-shifts-capital-to-share-buybacks",
       "pubDate": "Mon, 10 Aug 2026 13:50:51 +0000"
-    },
-    {
-      "title": "Solana gets its first Strategy STRC product through Solstice Finance",
-      "link": "https://www.coindesk.com/business/2026/08/10/solstice-rolls-out-strategy-s-strc-preferred-stock-income-to-solana",
-      "pubDate": "Mon, 10 Aug 2026 13:26:36 +0000"
-    },
-    {
-      "title": "Strategy sells 1,690 bitcoin, raises $653 million from MSTR shares",
-      "link": "https://www.coindesk.com/markets/2026/08/10/strategy-sells-1-690-bitcoin-raises-usd653-million-from-mstr-shares",
-      "pubDate": "Mon, 10 Aug 2026 12:09:26 +0000"
-    },
-    {
-      "title": "Crypto exchange Coinsbuy loses $8 million in coordinated two-blockchain attack",
-      "link": "https://www.coindesk.com/business/2026/08/10/crypto-exchange-coinsbuy-loses-usd8-million-in-coordinated-two-blockchain-attack",
-      "pubDate": "Mon, 10 Aug 2026 11:39:44 +0000"
-    },
-    {
-      "title": "UK’s FCA to regulate tokenized gold to preserve London’s place as the top hub for bullion",
-      "link": "https://www.coindesk.com/business/2026/08/10/why-the-uk-financial-watchdog-is-drafting-new-rules-for-tokenized-gold",
-      "pubDate": "Mon, 10 Aug 2026 11:38:33 +0000"
     }
   ]
 }
