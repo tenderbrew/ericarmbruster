@@ -1,13 +1,13 @@
 {
-  "fetchedAt": "2026-08-11T02:23:56.940Z",
+  "fetchedAt": "2026-08-11T04:36:51.018Z",
   "price": {
-    "usd": 64004,
-    "time": 1786414810
+    "usd": 64045,
+    "time": 1786422911
   },
   "moves": {
-    "d1": 0.1381317073406496,
-    "d7": -0.055293171381098905,
-    "d30": 0.40369810494504943
+    "d1": 0.20227868877931154,
+    "d7": 0.008729904988702408,
+    "d30": 0.46801520422483645
   },
   "history90d": [
     {
@@ -372,60 +372,70 @@
     },
     {
       "date": "2026-08-11",
-      "close": 64005.92285742616
+      "close": 64045.69918231592
     }
   ],
   "blocks": [
     {
-      "height": 961944,
-      "id": "000000000000000000009f728ac07fb156e09be79af487a3a17f39ff01a6186a",
-      "timestamp": 1786414677,
-      "txCount": 4150
+      "height": 961958,
+      "id": "00000000000000000001a156978e182d1baaceab5d64a6cbc47e53766fc72f38",
+      "timestamp": 1786422543,
+      "txCount": 6335
     },
     {
-      "height": 961943,
-      "id": "00000000000000000001010fa4088d847725c09a30b4aa36a575b16b3d382bd6",
-      "timestamp": 1786412787,
-      "txCount": 4574
+      "height": 961957,
+      "id": "00000000000000000000acaf67d27a3d9d0d67517d11d34d195739cf61d6aba6",
+      "timestamp": 1786422515,
+      "txCount": 5043
     },
     {
-      "height": 961942,
-      "id": "000000000000000000019fdf691bd3d5fca881d4279fd5ef747b5df5ecd6cbe1",
-      "timestamp": 1786411890,
-      "txCount": 6193
+      "height": 961956,
+      "id": "00000000000000000001ee1e80a78c7b2e724d00c5026af4599a7f63826bac9b",
+      "timestamp": 1786421919,
+      "txCount": 5925
     },
     {
-      "height": 961941,
-      "id": "0000000000000000000157b3f16edc2d7239f37ee76f399895ace9f1b7cac2c7",
-      "timestamp": 1786411689,
-      "txCount": 7161
+      "height": 961955,
+      "id": "000000000000000000019d6c5910ea2d6e823904bdf18328399876ac051acd2a",
+      "timestamp": 1786421651,
+      "txCount": 4411
     },
     {
-      "height": 961940,
-      "id": "000000000000000000021020a8673bd2888ef709e57ce0627a95e59d85fb8c40",
-      "timestamp": 1786411589,
-      "txCount": 5609
+      "height": 961954,
+      "id": "0000000000000000000069eb53bf357994983f65ab2cccc514339002c6bad59a",
+      "timestamp": 1786420056,
+      "txCount": 5418
     },
     {
-      "height": 961939,
-      "id": "0000000000000000000196e3cb60f51474e2391cc98dad214381ab50d9dd0d4b",
-      "timestamp": 1786411517,
-      "txCount": 5492
+      "height": 961953,
+      "id": "00000000000000000000fc1910ebbdf876307cb28d156d87b835bb9d335dd859",
+      "timestamp": 1786420013,
+      "txCount": 4820
     },
     {
-      "height": 961938,
-      "id": "000000000000000000019301fd89c068607c52aac795c6aa8fdef1c25a5f0971",
-      "timestamp": 1786411102,
-      "txCount": 3414
+      "height": 961952,
+      "id": "000000000000000000001d33f236e79c2c2925ff5e06411cc3b0048f62456632",
+      "timestamp": 1786419022,
+      "txCount": 5347
     },
     {
-      "height": 961937,
-      "id": "00000000000000000000eeaa154089823cec42dff8092f4944372eb77bfe4e6a",
-      "timestamp": 1786410235,
-      "txCount": 4206
+      "height": 961951,
+      "id": "000000000000000000007f679ea09e4e13b6543b3405f5dd66e73c19615f7d62",
+      "timestamp": 1786418732,
+      "txCount": 6486
     }
   ],
   "news": [
+    {
+      "title": "U.S. SEC sets meeting to propose Reg Crypto to support certain digital assets offerings",
+      "link": "https://www.coindesk.com/policy/2026/08/11/u-s-sec-sets-meeting-to-propose-reg-crypto-to-support-certain-digital-assets-offerings",
+      "pubDate": "Tue, 11 Aug 2026 04:07:48 +0000"
+    },
+    {
+      "title": "Bitcoin's 'strongest hands' are back, on-chain data show",
+      "link": "https://www.coindesk.com/markets/2026/08/11/bitcoin-s-strongest-hands-are-back-on-chain-data-show",
+      "pubDate": "Tue, 11 Aug 2026 03:48:40 +0000"
+    },
     {
       "title": "Trump Media’s bitcoin holdings shrink as crypto losses hit $361 million",
       "link": "https://www.coindesk.com/business/2026/08/10/trump-media-s-bitcoin-holdings-shrink-as-crypto-losses-hit-usd361-million",
@@ -475,16 +485,6 @@
       "title": "UK’s FCA to regulate tokenized gold to preserve London’s place as the top hub for bullion",
       "link": "https://www.coindesk.com/business/2026/08/10/why-the-uk-financial-watchdog-is-drafting-new-rules-for-tokenized-gold",
       "pubDate": "Mon, 10 Aug 2026 11:38:33 +0000"
-    },
-    {
-      "title": "Bitcoin's BIP-110 episode is free-market capitalism in purest form",
-      "link": "https://www.coindesk.com/daybook-us/2026/08/10/bitcoin-s-bip-110-episode-is-free-market-capitalism-in-purest-form",
-      "pubDate": "Mon, 10 Aug 2026 11:31:29 +0000"
-    },
-    {
-      "title": "Bitcoin steadies above $65,000 as Iran-Oman deal talk eases Hormuz concerns, lifts risk assets",
-      "link": "https://www.coindesk.com/markets/2026/08/10/bitcoin-steadies-above-usd65-000-as-iran-oman-deal-talk-eases-hormuz-concerns-lifts-risk-assets",
-      "pubDate": "Mon, 10 Aug 2026 10:45:43 +0000"
     }
   ]
 }
