@@ -1,13 +1,13 @@
 {
-  "fetchedAt": "2026-08-12T13:41:25.253Z",
+  "fetchedAt": "2026-08-12T16:07:11.630Z",
   "price": {
-    "usd": 63898,
-    "time": 1786542008
+    "usd": 63418,
+    "time": 1786550710
   },
   "moves": {
-    "d1": 0.5672866741788019,
-    "d7": -1.0473400725945603,
-    "d30": 2.5996530862777867
+    "d1": -0.188171988120589,
+    "d7": -1.7906697036495944,
+    "d30": 1.8289273439789255
   },
   "history90d": [
     {
@@ -372,60 +372,70 @@
     },
     {
       "date": "2026-08-12",
-      "close": 63898.70719954917
+      "close": 63388.74629953788
     }
   ],
   "blocks": [
     {
-      "height": 962150,
-      "id": "00000000000000000000910a6331f68520ec9d569ddaae2ddd8f05f5171fafb4",
-      "timestamp": 1786540058,
-      "txCount": 3837
+      "height": 962166,
+      "id": "00000000000000000000d066507f240498309fe627a483d575ecf2c518a0b2ac",
+      "timestamp": 1786550198,
+      "txCount": 6110
     },
     {
-      "height": 962149,
-      "id": "000000000000000000021cb6dac9cd4814742a58df2716e134810805bf78bdfe",
-      "timestamp": 1786539499,
-      "txCount": 5265
+      "height": 962165,
+      "id": "0000000000000000000169d489a352175d58612e1baa383aad626f0f20e15cd0",
+      "timestamp": 1786549933,
+      "txCount": 5091
     },
     {
-      "height": 962148,
-      "id": "0000000000000000000149f2b3f7f14b3cb570d1affbee975fb47400a49f092b",
-      "timestamp": 1786539243,
-      "txCount": 4940
+      "height": 962164,
+      "id": "000000000000000000008d64936439fec9c438cf23328758534ac9db5fc7bc17",
+      "timestamp": 1786549634,
+      "txCount": 4746
     },
     {
-      "height": 962147,
-      "id": "00000000000000000001c3a94dbf338d466e36d33d651656c300a2097e7cb4ad",
-      "timestamp": 1786539098,
-      "txCount": 3217
+      "height": 962163,
+      "id": "000000000000000000007960ecdb7ffb7f39781d8fec650b1fe29a02845c4f67",
+      "timestamp": 1786549338,
+      "txCount": 4028
     },
     {
-      "height": 962146,
-      "id": "0000000000000000000091c38e5f54415d54ab19465aee7cd59dab44492a875f",
-      "timestamp": 1786538485,
-      "txCount": 6146
+      "height": 962162,
+      "id": "000000000000000000022d225491ba7e4d51338be67ca58b0f9c5a5a0107bb6a",
+      "timestamp": 1786549090,
+      "txCount": 3420
     },
     {
-      "height": 962145,
-      "id": "00000000000000000001e6f849287107485ba2cb927ef2cb447cbb433daa0b4c",
-      "timestamp": 1786538412,
-      "txCount": 4668
+      "height": 962161,
+      "id": "00000000000000000000e055ca1d3a000cd71836134ac52019020e096fb28587",
+      "timestamp": 1786548688,
+      "txCount": 3961
     },
     {
-      "height": 962144,
-      "id": "00000000000000000000f721269f1470d6cc536d5eff969a288df068ea24ffd2",
-      "timestamp": 1786538405,
-      "txCount": 4625
+      "height": 962160,
+      "id": "00000000000000000001108d46ab0de47d948c71efe51f60645eede4850f5c07",
+      "timestamp": 1786547981,
+      "txCount": 4854
     },
     {
-      "height": 962143,
-      "id": "000000000000000000022942f1d7b80d691245505fc675ca9699990bb4acf188",
-      "timestamp": 1786538308,
-      "txCount": 3918
+      "height": 962159,
+      "id": "00000000000000000000aec63e3522b9675625af85bdb8a75a83dae1f18971e2",
+      "timestamp": 1786547329,
+      "txCount": 3788
     }
   ],
   "news": [
+    {
+      "title": "Miden bets on privacy stablecoins with introduction of USDCx",
+      "link": "https://www.coindesk.com/tech/2026/08/12/miden-bets-on-privacy-stablecoins-with-introduction-of-usdcx",
+      "pubDate": "Wed, 12 Aug 2026 15:00:00 +0000"
+    },
+    {
+      "title": "Crypto Long & Short:",
+      "link": "https://www.coindesk.com/coindesk-indices/2026/08/12/crypto-long-and-short",
+      "pubDate": "Wed, 12 Aug 2026 14:51:12 +0000"
+    },
     {
       "title": "Smart contract blockchain Solana nearly froze Wednesday, Marinade Finance says",
       "link": "https://www.coindesk.com/tech/2026/08/12/smart-contract-blockchain-solana-nearly-froze-wednesday-marinade-finance-says",
@@ -475,16 +485,6 @@
       "title": "CoreWeave surges 16% on $2.58 billion revenue quarter as AI infrastructure demand eclipses crypto",
       "link": "https://www.coindesk.com/markets/2026/08/12/coreweave-surges-16-on-usd2-58-billion-revenue-quarter-as-ai-infrastructure-demand-eclipses-crypto",
       "pubDate": "Wed, 12 Aug 2026 09:41:52 +0000"
-    },
-    {
-      "title": "Fidelity moves to add staking, quarterly payouts to near $900 million ether ETF",
-      "link": "https://www.coindesk.com/business/2026/08/12/fidelity-moves-to-add-staking-quarterly-payouts-to-near-usd900-million-ether-etf",
-      "pubDate": "Wed, 12 Aug 2026 09:30:20 +0000"
-    },
-    {
-      "title": "One overlooked group has added $1.78 billion of selling pressure to bitcoin market",
-      "link": "https://www.coindesk.com/markets/2026/08/12/one-overlooked-group-has-added-usd1-78-billion-of-selling-pressure-to-bitcoin-market",
-      "pubDate": "Wed, 12 Aug 2026 08:53:23 +0000"
     }
   ]
 }
