@@ -1,13 +1,13 @@
 {
-  "fetchedAt": "2026-08-12T16:07:11.630Z",
+  "fetchedAt": "2026-08-12T19:16:18.204Z",
   "price": {
-    "usd": 63418,
-    "time": 1786550710
+    "usd": 63362,
+    "time": 1786561812
   },
   "moves": {
-    "d1": -0.188171988120589,
-    "d7": -1.7906697036495944,
-    "d30": 1.8289273439789255
+    "d1": -0.27630883205551626,
+    "d7": -1.877391493939351,
+    "d30": 1.7390093407107177
   },
   "history90d": [
     {
@@ -372,67 +372,82 @@
     },
     {
       "date": "2026-08-12",
-      "close": 63388.74629953788
+      "close": 63339.08880798811
     }
   ],
   "blocks": [
     {
-      "height": 962166,
-      "id": "00000000000000000000d066507f240498309fe627a483d575ecf2c518a0b2ac",
-      "timestamp": 1786550198,
-      "txCount": 6110
+      "height": 962181,
+      "id": "00000000000000000001e0774e9bb51b5092ec867265c55e5ffea959330ed0be",
+      "timestamp": 1786561330,
+      "txCount": 5504
     },
     {
-      "height": 962165,
-      "id": "0000000000000000000169d489a352175d58612e1baa383aad626f0f20e15cd0",
-      "timestamp": 1786549933,
-      "txCount": 5091
+      "height": 962180,
+      "id": "000000000000000000023483388add5a4226a1f835e3023e7d353279e9726739",
+      "timestamp": 1786561321,
+      "txCount": 3919
     },
     {
-      "height": 962164,
-      "id": "000000000000000000008d64936439fec9c438cf23328758534ac9db5fc7bc17",
-      "timestamp": 1786549634,
-      "txCount": 4746
+      "height": 962179,
+      "id": "000000000000000000022dfd54e0ff9528e9eca2b81492c3ab18998645b0944f",
+      "timestamp": 1786560690,
+      "txCount": 4997
     },
     {
-      "height": 962163,
-      "id": "000000000000000000007960ecdb7ffb7f39781d8fec650b1fe29a02845c4f67",
-      "timestamp": 1786549338,
-      "txCount": 4028
+      "height": 962178,
+      "id": "00000000000000000000e6dd910132903da85a03aca4e9fc8c49bc389d8000a8",
+      "timestamp": 1786560506,
+      "txCount": 4706
     },
     {
-      "height": 962162,
-      "id": "000000000000000000022d225491ba7e4d51338be67ca58b0f9c5a5a0107bb6a",
-      "timestamp": 1786549090,
-      "txCount": 3420
+      "height": 962177,
+      "id": "00000000000000000001b9e6d18f56f8fb2e9e1450677262e0e41fc5e6911012",
+      "timestamp": 1786560387,
+      "txCount": 3176
     },
     {
-      "height": 962161,
-      "id": "00000000000000000000e055ca1d3a000cd71836134ac52019020e096fb28587",
-      "timestamp": 1786548688,
-      "txCount": 3961
+      "height": 962176,
+      "id": "000000000000000000006066d2d1cd3d90a5ccacd660f9981ea148ba4c9f1a88",
+      "timestamp": 1786560331,
+      "txCount": 4018
     },
     {
-      "height": 962160,
-      "id": "00000000000000000001108d46ab0de47d948c71efe51f60645eede4850f5c07",
-      "timestamp": 1786547981,
-      "txCount": 4854
+      "height": 962175,
+      "id": "000000000000000000002f0245d18f731b0472e85dbe0974d7d12e7669633020",
+      "timestamp": 1786558044,
+      "txCount": 2507
     },
     {
-      "height": 962159,
-      "id": "00000000000000000000aec63e3522b9675625af85bdb8a75a83dae1f18971e2",
-      "timestamp": 1786547329,
-      "txCount": 3788
+      "height": 962174,
+      "id": "00000000000000000000b008b300b45bdf9a0776fbd11a6ef9c3b4e670908343",
+      "timestamp": 1786557696,
+      "txCount": 3966
     }
   ],
   "news": [
+    {
+      "title": "Goldman Sachs leaps into bitcoin income ETFs with $2.25 billion NEOS buyout",
+      "link": "https://www.coindesk.com/business/2026/08/12/goldman-sachs-leaps-into-bitcoin-income-etfs-with-usd2-25-billion-neos-buyout",
+      "pubDate": "Wed, 12 Aug 2026 17:21:03 +0000"
+    },
+    {
+      "title": "Wintermute plans $1 billion AI push beyond crypto: Bloomberg",
+      "link": "https://www.coindesk.com/business/2026/08/12/wintermute-plans-usd1-billion-ai-push-beyond-crypto-bloomberg",
+      "pubDate": "Wed, 12 Aug 2026 16:34:24 +0000"
+    },
+    {
+      "title": "Kalshi taps DoubleZero for Wall Street-style high-speed data feed",
+      "link": "https://www.coindesk.com/business/2026/08/12/solana-platform-taps-prediction-market-kalshi-for-wall-street-style-high-speed-data-feed",
+      "pubDate": "Wed, 12 Aug 2026 16:14:49 +0000"
+    },
     {
       "title": "Miden bets on privacy stablecoins with introduction of USDCx",
       "link": "https://www.coindesk.com/tech/2026/08/12/miden-bets-on-privacy-stablecoins-with-introduction-of-usdcx",
       "pubDate": "Wed, 12 Aug 2026 15:00:00 +0000"
     },
     {
-      "title": "Crypto Long & Short:",
+      "title": "Crypto Long & Short: When capital can't move fast enough, markets pay the price",
       "link": "https://www.coindesk.com/coindesk-indices/2026/08/12/crypto-long-and-short",
       "pubDate": "Wed, 12 Aug 2026 14:51:12 +0000"
     },
@@ -470,21 +485,6 @@
       "title": "XRP trading could get spicy after CPI report as futures bets hit highest since October",
       "link": "https://www.coindesk.com/daybook-us/2026/08/12/xrp-trading-could-get-spicy-after-cpi-report-as-futures-bets-hit-highest-since-october",
       "pubDate": "Wed, 12 Aug 2026 11:15:00 +0000"
-    },
-    {
-      "title": "Bitcoin holds near $64,000 as U.S. inflation data looms, Harmony exploit rattles altcoins",
-      "link": "https://www.coindesk.com/markets/2026/08/12/bitcoin-holds-near-usd64-000-as-u-s-inflation-data-looms-harmony-exploit-rattles-altcoins",
-      "pubDate": "Wed, 12 Aug 2026 10:30:10 +0000"
-    },
-    {
-      "title": "Bank of England to test stablecoin, digital currency use in cross-border finance",
-      "link": "https://www.coindesk.com/business/2026/08/12/bank-of-england-to-test-stablecoin-digital-currency-use-in-cross-border-finance",
-      "pubDate": "Wed, 12 Aug 2026 10:17:05 +0000"
-    },
-    {
-      "title": "CoreWeave surges 16% on $2.58 billion revenue quarter as AI infrastructure demand eclipses crypto",
-      "link": "https://www.coindesk.com/markets/2026/08/12/coreweave-surges-16-on-usd2-58-billion-revenue-quarter-as-ai-infrastructure-demand-eclipses-crypto",
-      "pubDate": "Wed, 12 Aug 2026 09:41:52 +0000"
     }
   ]
 }
