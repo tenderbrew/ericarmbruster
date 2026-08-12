@@ -1,13 +1,13 @@
 {
-  "fetchedAt": "2026-08-12T07:48:17.696Z",
+  "fetchedAt": "2026-08-12T10:17:45.019Z",
   "price": {
-    "usd": 63646,
-    "time": 1786520412
+    "usd": 64062,
+    "time": 1786529409
   },
   "moves": {
-    "d1": 0.1706708764716236,
-    "d7": -1.4375881288984482,
-    "d30": 2.1950220715708735
+    "d1": 0.8254017171310801,
+    "d7": -0.7933691153174216,
+    "d30": 2.8629843815632494
   },
   "history90d": [
     {
@@ -372,60 +372,80 @@
     },
     {
       "date": "2026-08-12",
-      "close": 63599.239121131635
+      "close": 64068.95843334485
     }
   ],
   "blocks": [
     {
-      "height": 962107,
-      "id": "000000000000000000017670c833aee9f26f47e14ef0d010531626edf04e4b70",
-      "timestamp": 1786518490,
-      "txCount": 4013
+      "height": 962129,
+      "id": "000000000000000000015be7cd9f82b361cd171a7b11e37c17638d2485a2b0fb",
+      "timestamp": 1786529234,
+      "txCount": 5698
     },
     {
-      "height": 962106,
-      "id": "000000000000000000019ab00df7bfc46487420b8de1e91d65477dbee409e609",
-      "timestamp": 1786517026,
-      "txCount": 5115
+      "height": 962128,
+      "id": "00000000000000000000b6810d222d0546cbdc959e96231510746a175d38c75a",
+      "timestamp": 1786529094,
+      "txCount": 5518
     },
     {
-      "height": 962105,
-      "id": "00000000000000000000262f143e2aec204c1086ce63592d71f7e25db297bfd3",
-      "timestamp": 1786517020,
-      "txCount": 5232
+      "height": 962127,
+      "id": "00000000000000000000100e9e4eb7c75ae6138d965e904bb4a42e7c3466cef5",
+      "timestamp": 1786529036,
+      "txCount": 708
     },
     {
-      "height": 962104,
-      "id": "000000000000000000006589e2b946b1ab0f6e36ee69f337601fbf0397111c34",
-      "timestamp": 1786516676,
-      "txCount": 5918
+      "height": 962126,
+      "id": "000000000000000000002ae78bd5e151c32fdb3b978799d13bdccc996810d790",
+      "timestamp": 1786529074,
+      "txCount": 5356
     },
     {
-      "height": 962103,
-      "id": "0000000000000000000108093c8de85a4856306203304a23b00f74e4b5b698c8",
-      "timestamp": 1786516563,
-      "txCount": 3705
+      "height": 962125,
+      "id": "00000000000000000001d716b2479db76248a26f1fd6174d3fce9d1c3fe53ec2",
+      "timestamp": 1786528842,
+      "txCount": 1350
     },
     {
-      "height": 962102,
-      "id": "000000000000000000010d6316a76f24f0841396a1f541da0132f7012db4c021",
-      "timestamp": 1786515547,
-      "txCount": 5221
+      "height": 962124,
+      "id": "0000000000000000000129d6328662ca689d09fa12da70719739e359e5fa3d27",
+      "timestamp": 1786528430,
+      "txCount": 5711
     },
     {
-      "height": 962101,
-      "id": "00000000000000000000a321f819ee493e105090c8854869de502013a4ebcc07",
-      "timestamp": 1786515031,
-      "txCount": 2589
+      "height": 962123,
+      "id": "00000000000000000001300b487196ca37bb9ee33c1c8327413c0a0228923a7b",
+      "timestamp": 1786527790,
+      "txCount": 5858
     },
     {
-      "height": 962100,
-      "id": "000000000000000000019deb5ce7ed3427d682e1cec2d4df7d99d97873513468",
-      "timestamp": 1786513744,
-      "txCount": 5740
+      "height": 962122,
+      "id": "000000000000000000013de3a65fffbfd999b5e4cf4b9057864022c30324e5e1",
+      "timestamp": 1786527878,
+      "txCount": 5410
     }
   ],
   "news": [
+    {
+      "title": "Bank of England to test stablecoin, digital currency use in cross-border finance",
+      "link": "https://www.coindesk.com/business/2026/08/12/bank-of-england-to-test-stablecoin-digital-currency-use-in-cross-border-finance",
+      "pubDate": "Wed, 12 Aug 2026 10:17:05 +0000"
+    },
+    {
+      "title": "CoreWeave surges 16% on $2.58 billion revenue quarter as AI infrastructure demand eclipses crypto",
+      "link": "https://www.coindesk.com/markets/2026/08/12/coreweave-surges-16-on-usd2-58-billion-revenue-quarter-as-ai-infrastructure-demand-eclipses-crypto",
+      "pubDate": "Wed, 12 Aug 2026 09:41:52 +0000"
+    },
+    {
+      "title": "Fidelity moves to add staking, quarterly payouts to near $900 million ether ETF",
+      "link": "https://www.coindesk.com/business/2026/08/12/fidelity-moves-to-add-staking-quarterly-payouts-to-near-usd900-million-ether-etf",
+      "pubDate": "Wed, 12 Aug 2026 09:30:20 +0000"
+    },
+    {
+      "title": "One overlooked group has added $1.78 billion of selling pressure to bitcoin market",
+      "link": "https://www.coindesk.com/markets/2026/08/12/one-overlooked-group-has-added-usd1-78-billion-of-selling-pressure-to-bitcoin-market",
+      "pubDate": "Wed, 12 Aug 2026 08:53:23 +0000"
+    },
     {
       "title": "Live updates: Bitcoin at $63,600 as Japan's Metaplanet moves 3,881 BTC between wallets",
       "link": "https://www.coindesk.com/tech/2026/08/12/live-updates-bitcoin-at-usd63-600-as-japan-s-metaplanet-moves-3-881-btc-between-wallets",
@@ -465,26 +485,6 @@
       "title": "CFTC orders Kalshi to continue offering prediction markets in New York after state lawsuit",
       "link": "https://www.coindesk.com/policy/2026/08/11/cftc-orders-kalshi-to-continue-offering-prediction-markets-in-new-york-after-state-lawsuit",
       "pubDate": "Tue, 11 Aug 2026 21:28:59 +0000"
-    },
-    {
-      "title": "Brazil's largest lender Itaú is stepping deeper into the tokenization",
-      "link": "https://www.coindesk.com/business/2026/08/11/brazil-s-largest-lender-itau-is-stepping-deeper-into-the-tokenization",
-      "pubDate": "Tue, 11 Aug 2026 19:06:23 +0000"
-    },
-    {
-      "title": "EToro reports second quarter crypto loss even as total profit beats estimates",
-      "link": "https://www.coindesk.com/business/2026/08/11/digital-broker-etoro-reports-q2-crypto-revenue-dropped-120-compared-to-2025",
-      "pubDate": "Tue, 11 Aug 2026 17:12:11 +0000"
-    },
-    {
-      "title": "If crypto goes back to the congressional drawing board, 3 Democrat women loom large",
-      "link": "https://www.coindesk.com/news-analysis/2026/08/11/if-crypto-goes-back-to-the-congressional-drawing-board-3-democrat-women-loom-large",
-      "pubDate": "Tue, 11 Aug 2026 14:40:15 +0000"
-    },
-    {
-      "title": "Crypto-friendly bank Erebor in talks to raise $1.5 billion at $9.5 billion valuation: FT",
-      "link": "https://www.coindesk.com/business/2026/08/11/crypto-friendly-bank-erebor-in-talks-to-raise-usd1-5-billion-at-usd9-5-billion-valuation-ft",
-      "pubDate": "Tue, 11 Aug 2026 14:39:12 +0000"
     }
   ]
 }
