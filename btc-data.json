@@ -1,13 +1,13 @@
 {
-  "fetchedAt": "2026-08-12T02:40:18.572Z",
+  "fetchedAt": "2026-08-12T04:57:42.494Z",
   "price": {
-    "usd": 63771,
-    "time": 1786502110
+    "usd": 63762,
+    "time": 1786510209
   },
   "moves": {
-    "d1": 0.3674049031120896,
-    "d7": -1.244012704144537,
-    "d30": 2.39573190029454
+    "d1": 0.35324005319397056,
+    "d7": -1.2579501347268152,
+    "d30": 2.38128079262645
   },
   "history90d": [
     {
@@ -372,60 +372,70 @@
     },
     {
       "date": "2026-08-12",
-      "close": 63736.074214040156
+      "close": 63763.13596056475
     }
   ],
   "blocks": [
     {
-      "height": 962076,
-      "id": "000000000000000000003b22641853e9ebf9ec16e213d2c7c8b325167ace9fb2",
-      "timestamp": 1786502230,
-      "txCount": 4164
+      "height": 962093,
+      "id": "00000000000000000001fa95612b9f6c3e0af40ada08906603bcf3ff9efd214f",
+      "timestamp": 1786510612,
+      "txCount": 7004
     },
     {
-      "height": 962075,
-      "id": "0000000000000000000097e2ae1c89c1efb1c3a920755f88444857c9a4ffaa9a",
-      "timestamp": 1786501795,
-      "txCount": 3545
+      "height": 962092,
+      "id": "00000000000000000001286323a21bd357166165efa7f8e3461cd87408d7a921",
+      "timestamp": 1786510473,
+      "txCount": 6341
     },
     {
-      "height": 962074,
-      "id": "000000000000000000016e8da7fe8df28f0ab8eb8df8d6c16e42c8f3b18af0c2",
-      "timestamp": 1786500372,
-      "txCount": 3992
+      "height": 962091,
+      "id": "00000000000000000000128b8f7eed0c5e7ef94f9e1e6e84b902901940d83d91",
+      "timestamp": 1786510284,
+      "txCount": 6837
     },
     {
-      "height": 962073,
-      "id": "000000000000000000012500fbb5e0da972f245826722e6b5c59fada6b3f906f",
-      "timestamp": 1786498000,
-      "txCount": 6828
+      "height": 962090,
+      "id": "0000000000000000000007cec260b6280ac703314ef28a42424f04f580228bfe",
+      "timestamp": 1786510216,
+      "txCount": 4861
     },
     {
-      "height": 962072,
-      "id": "000000000000000000006faf2c39502d9bb01dfc95550f020d52a2c561ccfd16",
-      "timestamp": 1786497992,
-      "txCount": 5675
+      "height": 962089,
+      "id": "000000000000000000015bc19d2096afabdd95b18f3358da12be9ea2f6193bd0",
+      "timestamp": 1786509822,
+      "txCount": 4559
     },
     {
-      "height": 962071,
-      "id": "000000000000000000014c88dae78e2df6e24c6fd9872e598c0e050bfd16ddeb",
-      "timestamp": 1786497755,
-      "txCount": 6022
+      "height": 962088,
+      "id": "000000000000000000005953b63c6ee6558a8d18bc466d144846a874e03bddac",
+      "timestamp": 1786509342,
+      "txCount": 4060
     },
     {
-      "height": 962070,
-      "id": "000000000000000000019226bcfa188cd610519d5e5791615642377607ba87f4",
-      "timestamp": 1786497331,
-      "txCount": 5172
+      "height": 962087,
+      "id": "00000000000000000000e95a138511e03c2822a288d039ad3d3c7831ad0a194a",
+      "timestamp": 1786508837,
+      "txCount": 4819
     },
     {
-      "height": 962069,
-      "id": "000000000000000000015b7a3f6eb8bc30e5be2eb00f0f3a80bd64616ea79553",
-      "timestamp": 1786497160,
-      "txCount": 4806
+      "height": 962086,
+      "id": "00000000000000000000fe085cf1e30779209ea4241992e6ef1e8fd02f80c869",
+      "timestamp": 1786507920,
+      "txCount": 5381
     }
   ],
   "news": [
+    {
+      "title": "Dogecoin and BNB lead majors higher as bitcoin slips near $63,700",
+      "link": "https://www.coindesk.com/markets/2026/08/12/dogecoin-and-bnb-lead-majors-higher-as-bitcoin-slips-near-usd63-700",
+      "pubDate": "Wed, 12 Aug 2026 04:53:46 +0000"
+    },
+    {
+      "title": "XRP bridge drained for $200,000 after software mistook fake deposits for real ones",
+      "link": "https://www.coindesk.com/tech/2026/08/12/xrp-bridge-drained-for-usd200-000-after-software-mistook-fake-deposits-for-real-ones",
+      "pubDate": "Wed, 12 Aug 2026 04:33:25 +0000"
+    },
     {
       "title": "Bitcoin stuck as ETF inflows offset selling, but inflation data could spark a move",
       "link": "https://www.coindesk.com/markets/2026/08/11/bitcoin-stuck-as-etf-inflows-offset-selling-but-inflation-data-could-spark-a-move",
@@ -475,16 +485,6 @@
       "title": "Ravencoin, a blockchain built from Bitcoin’s code, could roll back four days of transactions",
       "link": "https://www.coindesk.com/tech/2026/08/11/ravencoin-could-roll-back-four-days-of-transactions-after-critical-block-flaw",
       "pubDate": "Tue, 11 Aug 2026 11:24:56 +0000"
-    },
-    {
-      "title": "Coinbase picks Abu Dhabi for its global tokenized asset push",
-      "link": "https://www.coindesk.com/business/2026/08/11/coinbase-picks-abu-dhabi-for-its-global-tokenized-asset-push",
-      "pubDate": "Tue, 11 Aug 2026 11:23:25 +0000"
-    },
-    {
-      "title": "When safe assets compete with risk. Lessons from the 1960s–90s for bitcoin and stocks.",
-      "link": "https://www.coindesk.com/daybook-us/2026/08/11/when-safe-assets-compete-with-risk-lessons-from-the-1960s-90s-for-bitcoin-and-stocks",
-      "pubDate": "Tue, 11 Aug 2026 11:13:55 +0000"
     }
   ]
 }
