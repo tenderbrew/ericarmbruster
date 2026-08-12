@@ -1,13 +1,13 @@
 {
-  "fetchedAt": "2026-08-12T04:57:42.494Z",
+  "fetchedAt": "2026-08-12T07:48:17.696Z",
   "price": {
-    "usd": 63762,
-    "time": 1786510209
+    "usd": 63646,
+    "time": 1786520412
   },
   "moves": {
-    "d1": 0.35324005319397056,
-    "d7": -1.2579501347268152,
-    "d30": 2.38128079262645
+    "d1": 0.1706708764716236,
+    "d7": -1.4375881288984482,
+    "d30": 2.1950220715708735
   },
   "history90d": [
     {
@@ -372,60 +372,80 @@
     },
     {
       "date": "2026-08-12",
-      "close": 63763.13596056475
+      "close": 63599.239121131635
     }
   ],
   "blocks": [
     {
-      "height": 962093,
-      "id": "00000000000000000001fa95612b9f6c3e0af40ada08906603bcf3ff9efd214f",
-      "timestamp": 1786510612,
-      "txCount": 7004
+      "height": 962107,
+      "id": "000000000000000000017670c833aee9f26f47e14ef0d010531626edf04e4b70",
+      "timestamp": 1786518490,
+      "txCount": 4013
     },
     {
-      "height": 962092,
-      "id": "00000000000000000001286323a21bd357166165efa7f8e3461cd87408d7a921",
-      "timestamp": 1786510473,
-      "txCount": 6341
+      "height": 962106,
+      "id": "000000000000000000019ab00df7bfc46487420b8de1e91d65477dbee409e609",
+      "timestamp": 1786517026,
+      "txCount": 5115
     },
     {
-      "height": 962091,
-      "id": "00000000000000000000128b8f7eed0c5e7ef94f9e1e6e84b902901940d83d91",
-      "timestamp": 1786510284,
-      "txCount": 6837
+      "height": 962105,
+      "id": "00000000000000000000262f143e2aec204c1086ce63592d71f7e25db297bfd3",
+      "timestamp": 1786517020,
+      "txCount": 5232
     },
     {
-      "height": 962090,
-      "id": "0000000000000000000007cec260b6280ac703314ef28a42424f04f580228bfe",
-      "timestamp": 1786510216,
-      "txCount": 4861
+      "height": 962104,
+      "id": "000000000000000000006589e2b946b1ab0f6e36ee69f337601fbf0397111c34",
+      "timestamp": 1786516676,
+      "txCount": 5918
     },
     {
-      "height": 962089,
-      "id": "000000000000000000015bc19d2096afabdd95b18f3358da12be9ea2f6193bd0",
-      "timestamp": 1786509822,
-      "txCount": 4559
+      "height": 962103,
+      "id": "0000000000000000000108093c8de85a4856306203304a23b00f74e4b5b698c8",
+      "timestamp": 1786516563,
+      "txCount": 3705
     },
     {
-      "height": 962088,
-      "id": "000000000000000000005953b63c6ee6558a8d18bc466d144846a874e03bddac",
-      "timestamp": 1786509342,
-      "txCount": 4060
+      "height": 962102,
+      "id": "000000000000000000010d6316a76f24f0841396a1f541da0132f7012db4c021",
+      "timestamp": 1786515547,
+      "txCount": 5221
     },
     {
-      "height": 962087,
-      "id": "00000000000000000000e95a138511e03c2822a288d039ad3d3c7831ad0a194a",
-      "timestamp": 1786508837,
-      "txCount": 4819
+      "height": 962101,
+      "id": "00000000000000000000a321f819ee493e105090c8854869de502013a4ebcc07",
+      "timestamp": 1786515031,
+      "txCount": 2589
     },
     {
-      "height": 962086,
-      "id": "00000000000000000000fe085cf1e30779209ea4241992e6ef1e8fd02f80c869",
-      "timestamp": 1786507920,
-      "txCount": 5381
+      "height": 962100,
+      "id": "000000000000000000019deb5ce7ed3427d682e1cec2d4df7d99d97873513468",
+      "timestamp": 1786513744,
+      "txCount": 5740
     }
   ],
   "news": [
+    {
+      "title": "Live updates: Bitcoin at $63,600 as Japan's Metaplanet moves 3,881 BTC between wallets",
+      "link": "https://www.coindesk.com/tech/2026/08/12/live-updates-bitcoin-at-usd63-600-as-japan-s-metaplanet-moves-3-881-btc-between-wallets",
+      "pubDate": "Wed, 12 Aug 2026 07:04:53 +0000"
+    },
+    {
+      "title": "Crypto.com rolls out tokenized stock derivatives as crypto exchanges push into equities",
+      "link": "https://www.coindesk.com/business/2026/08/12/crypto-com-rolls-out-tokenized-stock-derivatives-as-crypto-exchanges-push-into-equities",
+      "pubDate": "Wed, 12 Aug 2026 06:00:00 +0000"
+    },
+    {
+      "title": "Here's what bitcoin and ether traders are doing ahead of the binary U.S. CPI print",
+      "link": "https://www.coindesk.com/business/2026/08/12/here-s-what-bitcoin-and-ether-traders-are-doing-ahead-of-the-binary-u-s-cpi-print",
+      "pubDate": "Wed, 12 Aug 2026 05:26:55 +0000"
+    },
+    {
+      "title": "Harmony’s ONE dives 40% after an attack appears to mint tokens equal to quarter of supply",
+      "link": "https://www.coindesk.com/markets/2026/08/12/harmony-s-one-falls-26-after-attacker-allegedly-mints-4-billion-tokens",
+      "pubDate": "Wed, 12 Aug 2026 05:18:40 +0000"
+    },
     {
       "title": "Dogecoin and BNB lead majors higher as bitcoin slips near $63,700",
       "link": "https://www.coindesk.com/markets/2026/08/12/dogecoin-and-bnb-lead-majors-higher-as-bitcoin-slips-near-usd63-700",
@@ -465,26 +485,6 @@
       "title": "Crypto-friendly bank Erebor in talks to raise $1.5 billion at $9.5 billion valuation: FT",
       "link": "https://www.coindesk.com/business/2026/08/11/crypto-friendly-bank-erebor-in-talks-to-raise-usd1-5-billion-at-usd9-5-billion-valuation-ft",
       "pubDate": "Tue, 11 Aug 2026 14:39:12 +0000"
-    },
-    {
-      "title": "Pokémon cards are becoming multibillion dollar market. Crypto wants to fix how they trade",
-      "link": "https://www.coindesk.com/business/2026/08/11/pokemon-cards-are-becoming-multibillion-dollar-market-crypto-wants-to-fix-how-they-trade",
-      "pubDate": "Tue, 11 Aug 2026 13:06:07 +0000"
-    },
-    {
-      "title": "MoneyGram expands on Solana with global crypto-to-cash service",
-      "link": "https://www.coindesk.com/business/2026/08/10/moneygram-expands-on-solana-with-global-crypto-to-cash-service",
-      "pubDate": "Tue, 11 Aug 2026 12:02:22 +0000"
-    },
-    {
-      "title": "Australian watchdog suspends Cryptolink, forcing 96 ATMs offline",
-      "link": "https://www.coindesk.com/policy/2026/08/11/australian-watchdog-suspends-cryptolink-forcing-96-atms-offline",
-      "pubDate": "Tue, 11 Aug 2026 11:45:47 +0000"
-    },
-    {
-      "title": "Ravencoin, a blockchain built from Bitcoin’s code, could roll back four days of transactions",
-      "link": "https://www.coindesk.com/tech/2026/08/11/ravencoin-could-roll-back-four-days-of-transactions-after-critical-block-flaw",
-      "pubDate": "Tue, 11 Aug 2026 11:24:56 +0000"
     }
   ]
 }
