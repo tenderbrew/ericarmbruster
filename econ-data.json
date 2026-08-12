@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-08-11T19:14:45.833Z",
+  "fetchedAt": "2026-08-12T02:36:17.735Z",
   "indicators": {
     "UNRATE": {
       "latest": {
@@ -63,12 +63,12 @@
     },
     "T10YIE": {
       "latest": {
-        "date": "2026-08-10",
-        "value": 2.29
+        "date": "2026-08-11",
+        "value": 2.27
       },
       "previous": {
-        "date": "2026-08-07",
-        "value": 2.25
+        "date": "2026-08-10",
+        "value": 2.29
       }
     },
     "PCE": {
@@ -123,42 +123,42 @@
     },
     "DGS2": {
       "latest": {
-        "date": "2026-08-07",
-        "value": 4.19
+        "date": "2026-08-10",
+        "value": 4.25
       },
       "previous": {
-        "date": "2026-08-06",
-        "value": 4.25
+        "date": "2026-08-07",
+        "value": 4.19
       }
     },
     "DGS10": {
       "latest": {
-        "date": "2026-08-07",
-        "value": 4.65
+        "date": "2026-08-10",
+        "value": 4.72
       },
       "previous": {
-        "date": "2026-08-06",
-        "value": 4.69
+        "date": "2026-08-07",
+        "value": 4.65
       }
     },
     "T10Y2Y": {
       "latest": {
-        "date": "2026-08-10",
-        "value": 0.47
+        "date": "2026-08-11",
+        "value": 0.48
       },
       "previous": {
-        "date": "2026-08-07",
-        "value": 0.46
+        "date": "2026-08-10",
+        "value": 0.47
       }
     },
     "DFII10": {
       "latest": {
-        "date": "2026-08-07",
-        "value": 2.4
+        "date": "2026-08-10",
+        "value": 2.43
       },
       "previous": {
-        "date": "2026-08-06",
-        "value": 2.43
+        "date": "2026-08-07",
+        "value": 2.4
       }
     },
     "BAMLH0A0HYM2": {
@@ -301,16 +301,34 @@
   },
   "news": [
     {
+      "title": "Mark Thornton Joins Capitalcosm to Discusses Gold, Inflation, and Interest Rates",
+      "link": "https://mises.org/podcasts/individual-interview/mark-thornton-joins-capitalcosm-discusses-gold-inflation-and-interest-rates",
+      "pubDate": "Tue, 11 Aug 2026 11:00:00 CDT",
+      "kind": "Podcast"
+    },
+    {
       "title": "Freedom of Speech Dying a Slow Death in Europe",
       "link": "https://mises.org/mises-wire/freedom-speech-dying-slow-death-europe",
       "pubDate": "Tue, 11 Aug 2026 11:00:00 CDT",
       "kind": "Mises Wire"
     },
     {
+      "title": "Unhappy Anniversary",
+      "link": "https://mises.org/power-market/unhappy-anniversary",
+      "pubDate": "Tue, 11 Aug 2026 08:00:00 CDT",
+      "kind": "Article"
+    },
+    {
       "title": "Substance Beats Labels in Fighting Marxism",
       "link": "https://mises.org/mises-wire/substance-beats-labels-fighting-marxism",
       "pubDate": "Tue, 11 Aug 2026 05:00:00 CDT",
       "kind": "Mises Wire"
+    },
+    {
+      "title": "Hegseth is still lobbying for a $1.5 Trillion military budget",
+      "link": "https://mises.org/notes-margin/hegseth-still-lobbying-15-trillion-military-budget",
+      "pubDate": "Tue, 11 Aug 2026 03:00:00 CDT",
+      "kind": "Article"
     },
     {
       "title": "The Alchemy of Wealth Taxation",
@@ -340,24 +358,6 @@
       "title": "Republican Party Displacement",
       "link": "https://mises.org/podcasts/minor-issues/republican-party-displacement",
       "pubDate": "Sat, 08 Aug 2026 06:00:00 CDT",
-      "kind": "Podcast"
-    },
-    {
-      "title": "The Hamiltonian AI Curse: How American Tech Learned to Make Its Losses Everyone Else’s Problem",
-      "link": "https://mises.org/mises-wire/hamiltonian-ai-curse-how-american-tech-learned-make-its-losses-everyone-elses-problem",
-      "pubDate": "Sat, 08 Aug 2026 05:00:00 CDT",
-      "kind": "Mises Wire"
-    },
-    {
-      "title": "Why a BRICS Gold Standard Is a Fiction",
-      "link": "https://mises.org/mises-wire/why-brics-gold-standard-fiction",
-      "pubDate": "Sat, 08 Aug 2026 05:00:00 CDT",
-      "kind": "Mises Wire"
-    },
-    {
-      "title": "5 Things Anthony Fauci Teaches Us About the American Government",
-      "link": "https://mises.org/podcasts/guns-and-butter/5-things-anthony-fauci-teaches-us-about-american-government",
-      "pubDate": "Fri, 07 Aug 2026 03:29:47 CDT",
       "kind": "Podcast"
     }
   ]
