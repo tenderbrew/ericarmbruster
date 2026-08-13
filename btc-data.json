@@ -1,13 +1,13 @@
 {
-  "fetchedAt": "2026-08-13T02:43:37.075Z",
+  "fetchedAt": "2026-08-13T05:01:19.098Z",
   "price": {
-    "usd": 63351,
-    "time": 1786588509
+    "usd": 63668,
+    "time": 1786596908
   },
   "moves": {
-    "d1": -0.09087990234780685,
-    "d7": -1.4597456738887682,
-    "d30": -2.5122047828944005
+    "d1": 0.40905208090353806,
+    "d7": -0.9666633133675884,
+    "d30": -2.024388788137854
   },
   "history90d": [
     {
@@ -372,60 +372,70 @@
     },
     {
       "date": "2026-08-13",
-      "close": 63369.98407977293
+      "close": 63635.165186258906
     }
   ],
   "blocks": [
     {
-      "height": 962220,
-      "id": "0000000000000000000143fd19e2e0c9b437d46399a3a60681af37b08d72c723",
-      "timestamp": 1786588768,
-      "txCount": 5234
+      "height": 962237,
+      "id": "0000000000000000000068ac46b89731e3eccd71396064078303e604afa25b72",
+      "timestamp": 1786596030,
+      "txCount": 4490
     },
     {
-      "height": 962219,
-      "id": "000000000000000000005e8432a280280199ecd4483c69fd121fbb54ae6b722c",
-      "timestamp": 1786588760,
-      "txCount": 4433
+      "height": 962236,
+      "id": "000000000000000000018273a9ad55c742c1fc6a41da3cbaead50ad73d9dc7eb",
+      "timestamp": 1786595765,
+      "txCount": 4544
     },
     {
-      "height": 962218,
-      "id": "00000000000000000000894c103f2aa7377bbf2e2b2f2b26d9de253d268f1661",
-      "timestamp": 1786587251,
-      "txCount": 5897
+      "height": 962235,
+      "id": "00000000000000000000d58834713928a885d508585f19097209772bfcc7fb23",
+      "timestamp": 1786593506,
+      "txCount": 6279
     },
     {
-      "height": 962217,
-      "id": "00000000000000000001f9e42bdfaa0ba34582934c58a164eb61e0de7856d41d",
-      "timestamp": 1786587124,
-      "txCount": 5102
+      "height": 962234,
+      "id": "00000000000000000000622694d6c0b6475d82f7590bef1086c4adbc72a7c130",
+      "timestamp": 1786593394,
+      "txCount": 7046
     },
     {
-      "height": 962216,
-      "id": "000000000000000000001cbb26fb03a93bf37aa23665afb60eec8ac79a8b1cd7",
-      "timestamp": 1786586554,
-      "txCount": 4968
+      "height": 962233,
+      "id": "000000000000000000023262bb48097b4d3e19aa549a77b04c9633a7c5c4533c",
+      "timestamp": 1786593349,
+      "txCount": 5919
     },
     {
-      "height": 962215,
-      "id": "0000000000000000000030054261aa3d4b6e6e57e3116d2dcc2e54fbff2bc8b5",
-      "timestamp": 1786586232,
-      "txCount": 5937
+      "height": 962232,
+      "id": "00000000000000000001ea6117a63d7b8c657eeb1002f3f261dded0bf33d37ef",
+      "timestamp": 1786592837,
+      "txCount": 4139
     },
     {
-      "height": 962214,
-      "id": "00000000000000000001adc9824b1f3a3aec0f88432d89a72afd62d95df2b7e0",
-      "timestamp": 1786585485,
-      "txCount": 4335
+      "height": 962231,
+      "id": "00000000000000000001fbff133c5c8de894a2a3a534b6444e6242bc22053cb1",
+      "timestamp": 1786591705,
+      "txCount": 6465
     },
     {
-      "height": 962213,
-      "id": "000000000000000000011e149510a3f8a332800c71487eaf6a74b4d10546d9f1",
-      "timestamp": 1786584475,
-      "txCount": 6485
+      "height": 962230,
+      "id": "00000000000000000001bd01683ad40233d89c626fad261fde181101dba4aa7e",
+      "timestamp": 1786591644,
+      "txCount": 4624
     }
   ],
   "news": [
+    {
+      "title": "Speculation on dogecoin is back to October 2025 levels. The price is down 70%",
+      "link": "https://www.coindesk.com/markets/2026/08/13/speculation-on-dogecoin-is-back-to-october-2025-levels-the-price-is-down-70",
+      "pubDate": "Thu, 13 Aug 2026 04:06:16 +0000"
+    },
+    {
+      "title": "Bitcoin slips near $63,500 as traders look past CPI to Fed’s next tests",
+      "link": "https://www.coindesk.com/markets/2026/08/13/bitcoin-slips-near-usd63-500-as-traders-look-past-cpi-to-fed-s-next-tests",
+      "pubDate": "Thu, 13 Aug 2026 03:39:06 +0000"
+    },
     {
       "title": "Prediction markets should dial back faulty filings for incentives to boost trading: CFTC",
       "link": "https://www.coindesk.com/policy/2026/08/12/prediction-markets-should-dial-back-faulty-filings-for-incentives-to-boost-trading-cftc",
@@ -467,7 +477,7 @@
       "pubDate": "Wed, 12 Aug 2026 14:51:12 +0000"
     },
     {
-      "title": "Smart contract blockchain Solana nearly froze Wednesday, Marinade Finance says",
+      "title": "Solana neared a freeze threshold Wednesday, Marinade Finance says. The Foundation says it held up under stress.",
       "link": "https://www.coindesk.com/tech/2026/08/12/smart-contract-blockchain-solana-nearly-froze-wednesday-marinade-finance-says",
       "pubDate": "Wed, 12 Aug 2026 13:39:31 +0000"
     },
@@ -475,16 +485,6 @@
       "title": "Standard Chartered-led Anchorpoint launches Hong Kong dollar stablecoin",
       "link": "https://www.coindesk.com/business/2026/08/12/standard-chartered-led-anchorpoint-launches-hong-kong-dollar-stablecoin",
       "pubDate": "Wed, 12 Aug 2026 13:13:49 +0000"
-    },
-    {
-      "title": "America doesn’t need a second-class payments system",
-      "link": "https://www.coindesk.com/opinion/2026/08/12/america-doesn-t-need-a-second-class-payments-system",
-      "pubDate": "Wed, 12 Aug 2026 13:00:00 +0000"
-    },
-    {
-      "title": "U.S. CPI inflation slows to 3.4% as expected, bitcoin holds near $64,000",
-      "link": "https://www.coindesk.com/markets/2026/08/12/u-s-cpi-inflation-edges-lower-to-3-4-as-expected",
-      "pubDate": "Wed, 12 Aug 2026 12:44:39 +0000"
     }
   ]
 }
