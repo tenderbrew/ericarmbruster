@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-08-12T19:14:35.206Z",
+  "fetchedAt": "2026-08-13T02:38:47.349Z",
   "indicators": {
     "UNRATE": {
       "latest": {
@@ -63,12 +63,12 @@
     },
     "T10YIE": {
       "latest": {
-        "date": "2026-08-11",
-        "value": 2.27
+        "date": "2026-08-12",
+        "value": 2.26
       },
       "previous": {
-        "date": "2026-08-10",
-        "value": 2.29
+        "date": "2026-08-11",
+        "value": 2.27
       }
     },
     "PCE": {
@@ -123,42 +123,42 @@
     },
     "DGS2": {
       "latest": {
-        "date": "2026-08-10",
-        "value": 4.25
+        "date": "2026-08-11",
+        "value": 4.22
       },
       "previous": {
-        "date": "2026-08-07",
-        "value": 4.19
+        "date": "2026-08-10",
+        "value": 4.25
       }
     },
     "DGS10": {
       "latest": {
-        "date": "2026-08-10",
-        "value": 4.72
+        "date": "2026-08-11",
+        "value": 4.7
       },
       "previous": {
-        "date": "2026-08-07",
-        "value": 4.65
+        "date": "2026-08-10",
+        "value": 4.72
       }
     },
     "T10Y2Y": {
       "latest": {
-        "date": "2026-08-11",
+        "date": "2026-08-12",
         "value": 0.48
       },
       "previous": {
-        "date": "2026-08-10",
-        "value": 0.47
+        "date": "2026-08-11",
+        "value": 0.48
       }
     },
     "DFII10": {
       "latest": {
-        "date": "2026-08-10",
+        "date": "2026-08-11",
         "value": 2.43
       },
       "previous": {
-        "date": "2026-08-07",
-        "value": 2.4
+        "date": "2026-08-10",
+        "value": 2.43
       }
     },
     "BAMLH0A0HYM2": {
@@ -301,6 +301,12 @@
   },
   "news": [
     {
+      "title": "How the First World War Destroyed the Gold Standard",
+      "link": "https://mises.org/mises-wire/how-first-world-war-destroyed-gold-standard",
+      "pubDate": "Wed, 12 Aug 2026 02:00:00 CDT",
+      "kind": "Mises Wire"
+    },
+    {
       "title": "The Six Nooses: How Interventionism Is Strangling the Family’s Will to Reproduce",
       "link": "https://mises.org/mises-wire/six-nooses-how-interventionism-strangling-familys-will-reproduce",
       "pubDate": "Wed, 12 Aug 2026 11:00:00 CDT",
@@ -319,16 +325,22 @@
       "kind": "Mises Wire"
     },
     {
-      "title": "Freedom of Speech Dying a Slow Death in Europe",
-      "link": "https://mises.org/mises-wire/freedom-speech-dying-slow-death-europe",
-      "pubDate": "Tue, 11 Aug 2026 11:00:00 CDT",
-      "kind": "Mises Wire"
+      "title": "\"The ingredients are coming together for a US financial crisis\"",
+      "link": "https://mises.org/notes-margin/ingredients-are-coming-together-us-financial-crisis",
+      "pubDate": "Wed, 12 Aug 2026 03:00:00 CDT",
+      "kind": "Article"
     },
     {
       "title": "Mark Thornton Joins Capitalcosm to Discusses Gold, Inflation, and Interest Rates",
       "link": "https://mises.org/podcasts/individual-interview/mark-thornton-joins-capitalcosm-discusses-gold-inflation-and-interest-rates",
       "pubDate": "Tue, 11 Aug 2026 11:00:00 CDT",
       "kind": "Podcast"
+    },
+    {
+      "title": "Freedom of Speech Dying a Slow Death in Europe",
+      "link": "https://mises.org/mises-wire/freedom-speech-dying-slow-death-europe",
+      "pubDate": "Tue, 11 Aug 2026 11:00:00 CDT",
+      "kind": "Mises Wire"
     },
     {
       "title": "Unhappy Anniversary",
@@ -347,18 +359,6 @@
       "link": "https://mises.org/notes-margin/hegseth-still-lobbying-15-trillion-military-budget",
       "pubDate": "Tue, 11 Aug 2026 03:00:00 CDT",
       "kind": "Article"
-    },
-    {
-      "title": "The Alchemy of Wealth Taxation",
-      "link": "https://mises.org/mises-wire/alchemy-wealth-taxation",
-      "pubDate": "Mon, 10 Aug 2026 02:00:00 CDT",
-      "kind": "Mises Wire"
-    },
-    {
-      "title": "Inflationary Expectations and Increases in Prices – Any Relationship?",
-      "link": "https://mises.org/mises-wire/inflationary-expectations-and-increases-prices-any-relationship",
-      "pubDate": "Mon, 10 Aug 2026 11:00:00 CDT",
-      "kind": "Mises Wire"
     }
   ]
 }
