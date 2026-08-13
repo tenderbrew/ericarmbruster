@@ -1,13 +1,13 @@
 {
-  "fetchedAt": "2026-08-13T13:41:24.809Z",
+  "fetchedAt": "2026-08-13T16:07:14.944Z",
   "price": {
-    "usd": 63648,
-    "time": 1786628111
+    "usd": 63369,
+    "time": 1786636810
   },
   "moves": {
-    "d1": 0.3775106308561371,
-    "d7": -0.9977726105613538,
-    "d30": -2.0551658225073433
+    "d1": -0.06249259730514156,
+    "d7": -1.431747306414377,
+    "d30": -2.4845054519618603
   },
   "history90d": [
     {
@@ -372,60 +372,80 @@
     },
     {
       "date": "2026-08-13",
-      "close": 63692.98341413209
+      "close": 63401.33189082207
     }
   ],
   "blocks": [
     {
-      "height": 962292,
-      "id": "00000000000000000000898e431337a198a7cdb84aa3f172f0acd8e9f4c85c14",
-      "timestamp": 1786625996,
-      "txCount": 5941
+      "height": 962303,
+      "id": "00000000000000000002339fc8073174b938d55a0eeaeeeae130edfe75b61640",
+      "timestamp": 1786636857,
+      "txCount": 3882
     },
     {
-      "height": 962291,
-      "id": "00000000000000000000032900b7fecdbd92fd2488d81c6a176edea13c0b6c50",
-      "timestamp": 1786625248,
-      "txCount": 1505
+      "height": 962302,
+      "id": "00000000000000000000ff5e0eab1ff63c0a7359cad37f8cb71eb23f1562c78f",
+      "timestamp": 1786636310,
+      "txCount": 4002
     },
     {
-      "height": 962290,
-      "id": "0000000000000000000171be3d7dd2d283b593f22568493c493fc93c33dd6ace",
-      "timestamp": 1786624853,
-      "txCount": 5189
+      "height": 962301,
+      "id": "000000000000000000013534e020b0623feeb6d589c2594ce1a0b90639428139",
+      "timestamp": 1786636052,
+      "txCount": 4162
     },
     {
-      "height": 962289,
-      "id": "0000000000000000000056728982893cb26527f4eaae290d7758e3559e448ae4",
-      "timestamp": 1786624778,
-      "txCount": 4475
+      "height": 962300,
+      "id": "00000000000000000000603c3dfba41b47a4f0f6cfb6016359ca08f1b467f1ba",
+      "timestamp": 1786634620,
+      "txCount": 3867
     },
     {
-      "height": 962288,
-      "id": "00000000000000000000c90bd1d3b6225a4531a5985fe3f7c1713f677c815d9e",
-      "timestamp": 1786624612,
-      "txCount": 3378
+      "height": 962299,
+      "id": "00000000000000000000569aa873c453eeb0ef9790456f96bb1bc00f32d56f27",
+      "timestamp": 1786634576,
+      "txCount": 3617
     },
     {
-      "height": 962287,
-      "id": "000000000000000000005354be44485b3f242e96bf9d02bec5d280f52088c5d0",
-      "timestamp": 1786624230,
-      "txCount": 4343
+      "height": 962298,
+      "id": "000000000000000000003438f3d890e99666823d152b22f03cd5c19f9304b543",
+      "timestamp": 1786634458,
+      "txCount": 4194
     },
     {
-      "height": 962286,
-      "id": "0000000000000000000078c8a1617ad76f83086a5c417ffb76fd5195d712a260",
-      "timestamp": 1786621734,
-      "txCount": 6034
+      "height": 962297,
+      "id": "00000000000000000001ee5300a61a304af61b3cbb2a7871145655bdc61f8dc4",
+      "timestamp": 1786631770,
+      "txCount": 3595
     },
     {
-      "height": 962285,
-      "id": "00000000000000000001592b11476e608d8ed85c16cab90b9447a649742cbb3d",
-      "timestamp": 1786621360,
-      "txCount": 5988
+      "height": 962296,
+      "id": "00000000000000000001a29cf49f4361a18dbabc28da32cbfc3fa477640b032a",
+      "timestamp": 1786630279,
+      "txCount": 3798
     }
   ],
   "news": [
+    {
+      "title": "Crypto for Advisors: The crypto advice gap",
+      "link": "https://www.coindesk.com/coindesk-indices/2026/08/12/crypto-for-advisors-the-crypto-advice-gap",
+      "pubDate": "Thu, 13 Aug 2026 15:00:00 +0000"
+    },
+    {
+      "title": "B2C2 taps Schroders veteran to chase Asia’s growing crypto wealth",
+      "link": "https://www.coindesk.com/business/2026/08/13/b2c2-taps-schroders-veteran-to-chase-asia-s-growing-crypto-wealth",
+      "pubDate": "Thu, 13 Aug 2026 14:43:38 +0000"
+    },
+    {
+      "title": "Kalshi in talks with Sequoia, Wellington for $750 million fund raise at $40 billion valuation",
+      "link": "https://www.coindesk.com/business/2026/08/13/kalshi-in-talks-with-sequoia-wellington-for-usd750-million-fund-raise-at-usd40-billion-valuation",
+      "pubDate": "Thu, 13 Aug 2026 14:16:06 +0000"
+    },
+    {
+      "title": "Swissquote cuts full-year guidance as 1H crypto income plunges, shares slide",
+      "link": "https://www.coindesk.com/business/2026/08/13/swissquote-cuts-full-year-guidance-as-1h-crypto-income-plunges-shares-slide",
+      "pubDate": "Thu, 13 Aug 2026 13:41:32 +0000"
+    },
     {
       "title": "Crypto platform operator gets 15-year prison sentence in South Korea due to $50 million scam",
       "link": "https://www.coindesk.com/business/2026/08/13/crypto-platform-operator-gets-15-year-prison-sentence-in-south-korea-due-to-usd50-million-scam",
@@ -437,7 +457,7 @@
       "pubDate": "Thu, 13 Aug 2026 13:29:28 +0000"
     },
     {
-      "title": "Bullish Q2 adjusted earnings in line as rise in subscription revenue offsets digital asset slowdown",
+      "title": "Bullish shares surge 14% as subscription revenue offsets digital asset slowdown",
       "link": "https://www.coindesk.com/business/2026/08/13/bullish-reports-usd280-million-q2-net-loss-as-crypto-trading-slows",
       "pubDate": "Thu, 13 Aug 2026 12:09:58 +0000"
     },
@@ -462,29 +482,9 @@
       "pubDate": "Thu, 13 Aug 2026 09:39:52 +0000"
     },
     {
-      "title": "Live updates: Bitcoin continues flat near $63,500 as U.S. PPI softer than forecast in July",
+      "title": "Live updates: Bitcoin stuck near $63,500 even as Fed rate hike expectations dwindle",
       "link": "https://www.coindesk.com/tech/2026/08/13/live-markets-u-s-inflation-is-stickier-than-july-s-mild-cpi-suggests",
       "pubDate": "Thu, 13 Aug 2026 09:18:19 +0000"
-    },
-    {
-      "title": "Bitcoin treasury company Metaplanet unveils BitBonds with $1.3 million private debt sale",
-      "link": "https://www.coindesk.com/markets/2026/08/13/bitcoin-treasury-company-metaplanet-unveils-bitbonds-with-usd1-3-million-private-debt-sale",
-      "pubDate": "Thu, 13 Aug 2026 09:14:15 +0000"
-    },
-    {
-      "title": "Metaplanet denies selling bitcoin worth $320 million",
-      "link": "https://www.coindesk.com/markets/2026/08/13/metaplanet-denies-selling-bitcoin-worth-usd320-million",
-      "pubDate": "Thu, 13 Aug 2026 05:34:48 +0000"
-    },
-    {
-      "title": "Bitcoin firms ask AI labs for same tools attackers already have",
-      "link": "https://www.coindesk.com/tech/2026/08/13/bitcoin-firms-ask-ai-labs-for-same-tools-attackers-already-have",
-      "pubDate": "Thu, 13 Aug 2026 05:21:21 +0000"
-    },
-    {
-      "title": "Speculation on dogecoin is back to October 2025 levels. The price is down 70%",
-      "link": "https://www.coindesk.com/markets/2026/08/13/speculation-on-dogecoin-is-back-to-october-2025-levels-the-price-is-down-70",
-      "pubDate": "Thu, 13 Aug 2026 04:06:16 +0000"
     }
   ]
 }
