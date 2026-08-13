@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-08-13T02:38:47.349Z",
+  "fetchedAt": "2026-08-13T13:37:15.138Z",
   "indicators": {
     "UNRATE": {
       "latest": {
@@ -33,12 +33,12 @@
     },
     "ICSA": {
       "latest": {
-        "date": "2026-08-01",
-        "value": 199000
+        "date": "2026-08-08",
+        "value": 209000
       },
       "previous": {
-        "date": "2026-07-25",
-        "value": 198000
+        "date": "2026-08-01",
+        "value": 200000
       }
     },
     "CPIAUCSL": {
@@ -301,6 +301,12 @@
   },
   "news": [
     {
+      "title": "The Alice-in-Wonderland World of the WNBA",
+      "link": "https://mises.org/mises-wire/alice-wonderland-world-wnba",
+      "pubDate": "Thu, 13 Aug 2026 05:00:00 CDT",
+      "kind": "Mises Wire"
+    },
+    {
       "title": "How the First World War Destroyed the Gold Standard",
       "link": "https://mises.org/mises-wire/how-first-world-war-destroyed-gold-standard",
       "pubDate": "Wed, 12 Aug 2026 02:00:00 CDT",
@@ -331,16 +337,16 @@
       "kind": "Article"
     },
     {
-      "title": "Mark Thornton Joins Capitalcosm to Discusses Gold, Inflation, and Interest Rates",
-      "link": "https://mises.org/podcasts/individual-interview/mark-thornton-joins-capitalcosm-discusses-gold-inflation-and-interest-rates",
-      "pubDate": "Tue, 11 Aug 2026 11:00:00 CDT",
-      "kind": "Podcast"
-    },
-    {
       "title": "Freedom of Speech Dying a Slow Death in Europe",
       "link": "https://mises.org/mises-wire/freedom-speech-dying-slow-death-europe",
       "pubDate": "Tue, 11 Aug 2026 11:00:00 CDT",
       "kind": "Mises Wire"
+    },
+    {
+      "title": "Mark Thornton Joins Capitalcosm to Discusses Gold, Inflation, and Interest Rates",
+      "link": "https://mises.org/podcasts/individual-interview/mark-thornton-joins-capitalcosm-discusses-gold-inflation-and-interest-rates",
+      "pubDate": "Tue, 11 Aug 2026 11:00:00 CDT",
+      "kind": "Podcast"
     },
     {
       "title": "Unhappy Anniversary",
@@ -353,12 +359,6 @@
       "link": "https://mises.org/mises-wire/substance-beats-labels-fighting-marxism",
       "pubDate": "Tue, 11 Aug 2026 05:00:00 CDT",
       "kind": "Mises Wire"
-    },
-    {
-      "title": "Hegseth is still lobbying for a $1.5 Trillion military budget",
-      "link": "https://mises.org/notes-margin/hegseth-still-lobbying-15-trillion-military-budget",
-      "pubDate": "Tue, 11 Aug 2026 03:00:00 CDT",
-      "kind": "Article"
     }
   ]
 }
