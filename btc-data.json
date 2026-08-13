@@ -1,19 +1,15 @@
 {
-  "fetchedAt": "2026-08-12T21:59:43.879Z",
+  "fetchedAt": "2026-08-13T02:43:37.075Z",
   "price": {
-    "usd": 63513,
-    "time": 1786571709
+    "usd": 63351,
+    "time": 1786588509
   },
   "moves": {
-    "d1": -0.03865412787383837,
-    "d7": -1.6435523808366215,
-    "d30": 1.9814668138089075
+    "d1": -0.09087990234780685,
+    "d7": -1.4597456738887682,
+    "d30": -2.5122047828944005
   },
   "history90d": [
-    {
-      "date": "2026-05-15",
-      "close": 81059.11595417073
-    },
     {
       "date": "2026-05-16",
       "close": 79068.6684041429
@@ -368,64 +364,83 @@
     },
     {
       "date": "2026-08-12",
-      "close": 63537.55988964766
+      "close": 63527.054189503135
     },
     {
-      "date": "2026-08-12",
-      "close": 63471.49036528033
+      "date": "2026-08-13",
+      "close": 63408.625697113624
+    },
+    {
+      "date": "2026-08-13",
+      "close": 63369.98407977293
     }
   ],
   "blocks": [
     {
-      "height": 962198,
-      "id": "00000000000000000001f04f59af1ed9706b213cb9ef2ed0ba0f1a2c9390b77d",
-      "timestamp": 1786571433,
-      "txCount": 4790
+      "height": 962220,
+      "id": "0000000000000000000143fd19e2e0c9b437d46399a3a60681af37b08d72c723",
+      "timestamp": 1786588768,
+      "txCount": 5234
     },
     {
-      "height": 962197,
-      "id": "00000000000000000001d44dd7da467866107163855799bc8d84710aa245b95f",
-      "timestamp": 1786571064,
-      "txCount": 4432
+      "height": 962219,
+      "id": "000000000000000000005e8432a280280199ecd4483c69fd121fbb54ae6b722c",
+      "timestamp": 1786588760,
+      "txCount": 4433
     },
     {
-      "height": 962196,
-      "id": "0000000000000000000027934216bd42ed5964c87ba1c0a149cc6ead7ba3cd5e",
-      "timestamp": 1786570146,
-      "txCount": 4644
+      "height": 962218,
+      "id": "00000000000000000000894c103f2aa7377bbf2e2b2f2b26d9de253d268f1661",
+      "timestamp": 1786587251,
+      "txCount": 5897
     },
     {
-      "height": 962195,
-      "id": "000000000000000000002ce70351277ba40fc00d917bb4f3bf9606568896e1b5",
-      "timestamp": 1786568864,
-      "txCount": 3555
+      "height": 962217,
+      "id": "00000000000000000001f9e42bdfaa0ba34582934c58a164eb61e0de7856d41d",
+      "timestamp": 1786587124,
+      "txCount": 5102
     },
     {
-      "height": 962194,
-      "id": "000000000000000000004f2f9dfa943f30286be4560f95a38adbad7449cc96e7",
-      "timestamp": 1786568691,
-      "txCount": 4469
+      "height": 962216,
+      "id": "000000000000000000001cbb26fb03a93bf37aa23665afb60eec8ac79a8b1cd7",
+      "timestamp": 1786586554,
+      "txCount": 4968
     },
     {
-      "height": 962193,
-      "id": "0000000000000000000202840eb54d441119bd9c15a144c90732c181954d088c",
-      "timestamp": 1786568535,
-      "txCount": 4279
+      "height": 962215,
+      "id": "0000000000000000000030054261aa3d4b6e6e57e3116d2dcc2e54fbff2bc8b5",
+      "timestamp": 1786586232,
+      "txCount": 5937
     },
     {
-      "height": 962192,
-      "id": "0000000000000000000053261f60f94c63d30e8e80c52b10a0bd1ac407b4db38",
-      "timestamp": 1786566161,
-      "txCount": 6058
+      "height": 962214,
+      "id": "00000000000000000001adc9824b1f3a3aec0f88432d89a72afd62d95df2b7e0",
+      "timestamp": 1786585485,
+      "txCount": 4335
     },
     {
-      "height": 962191,
-      "id": "000000000000000000010fe453cd9d22baa8dcc953035c80846e29ca048103ea",
-      "timestamp": 1786566131,
-      "txCount": 4993
+      "height": 962213,
+      "id": "000000000000000000011e149510a3f8a332800c71487eaf6a74b4d10546d9f1",
+      "timestamp": 1786584475,
+      "txCount": 6485
     }
   ],
   "news": [
+    {
+      "title": "Prediction markets should dial back faulty filings for incentives to boost trading: CFTC",
+      "link": "https://www.coindesk.com/policy/2026/08/12/prediction-markets-should-dial-back-faulty-filings-for-incentives-to-boost-trading-cftc",
+      "pubDate": "Wed, 12 Aug 2026 23:16:53 +0000"
+    },
+    {
+      "title": "Securitize falls 20% after earnings miss as tokenization revenue falls short",
+      "link": "https://www.coindesk.com/markets/2026/08/12/securitize-falls-20-after-earnings-miss-as-tokenization-revenue-falls-short",
+      "pubDate": "Wed, 12 Aug 2026 22:26:24 +0000"
+    },
+    {
+      "title": "Morgan Stanley's infrastructure partner Zerohash rebuffed in pitch to be U.S. trust bank",
+      "link": "https://www.coindesk.com/policy/2026/08/12/morgan-stanley-s-infrastructure-partner-zerohash-rebuffed-in-pitch-to-be-u-s-trust-bank",
+      "pubDate": "Wed, 12 Aug 2026 22:11:09 +0000"
+    },
     {
       "title": "Goldman Sachs leaps into bitcoin income ETFs with $2.25 billion NEOS buyout",
       "link": "https://www.coindesk.com/business/2026/08/12/goldman-sachs-leaps-into-bitcoin-income-etfs-with-usd2-25-billion-neos-buyout",
@@ -470,21 +485,6 @@
       "title": "U.S. CPI inflation slows to 3.4% as expected, bitcoin holds near $64,000",
       "link": "https://www.coindesk.com/markets/2026/08/12/u-s-cpi-inflation-edges-lower-to-3-4-as-expected",
       "pubDate": "Wed, 12 Aug 2026 12:44:39 +0000"
-    },
-    {
-      "title": "FlightAware drops Kalshi lawsuit over a market niche that data shows it never took off",
-      "link": "https://www.coindesk.com/policy/2026/08/12/flightaware-drops-kalshi-lawsuit-over-a-market-niche-that-data-shows-it-never-took-off",
-      "pubDate": "Wed, 12 Aug 2026 11:44:10 +0000"
-    },
-    {
-      "title": "Russia moves to restrict retail crypto trading to bitcoin, ether and USDT",
-      "link": "https://www.coindesk.com/policy/2026/08/12/russia-moves-to-restrict-retail-crypto-trading-to-bitcoin-ether-and-usdt",
-      "pubDate": "Wed, 12 Aug 2026 11:19:32 +0000"
-    },
-    {
-      "title": "XRP trading could get spicy after CPI report as futures bets hit highest since October",
-      "link": "https://www.coindesk.com/daybook-us/2026/08/12/xrp-trading-could-get-spicy-after-cpi-report-as-futures-bets-hit-highest-since-october",
-      "pubDate": "Wed, 12 Aug 2026 11:15:00 +0000"
     }
   ]
 }
