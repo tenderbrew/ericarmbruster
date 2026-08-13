@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-08-13T13:37:15.138Z",
+  "fetchedAt": "2026-08-13T19:15:15.341Z",
   "indicators": {
     "UNRATE": {
       "latest": {
@@ -163,22 +163,22 @@
     },
     "BAMLH0A0HYM2": {
       "latest": {
-        "date": "2026-08-11",
-        "value": 2.72
+        "date": "2026-08-12",
+        "value": 2.71
       },
       "previous": {
-        "date": "2026-08-10",
-        "value": 2.7
+        "date": "2026-08-11",
+        "value": 2.72
       }
     },
     "MORTGAGE30US": {
       "latest": {
-        "date": "2026-08-06",
-        "value": 6.69
+        "date": "2026-08-13",
+        "value": 6.67
       },
       "previous": {
-        "date": "2026-07-30",
-        "value": 6.66
+        "date": "2026-08-06",
+        "value": 6.69
       }
     },
     "GDPC1": {
@@ -263,12 +263,12 @@
     },
     "VIXCLS": {
       "latest": {
-        "date": "2026-08-11",
-        "value": 15.28
+        "date": "2026-08-12",
+        "value": 14.55
       },
       "previous": {
-        "date": "2026-08-10",
-        "value": 15.46
+        "date": "2026-08-11",
+        "value": 15.28
       }
     },
     "BOPGSTB": {
@@ -300,6 +300,12 @@
     }
   },
   "news": [
+    {
+      "title": "The Prussians Who Built Prussia",
+      "link": "https://mises.org/mises-wire/prussians-who-built-prussia",
+      "pubDate": "Thu, 13 Aug 2026 11:00:00 CDT",
+      "kind": "Mises Wire"
+    },
     {
       "title": "The Alice-in-Wonderland World of the WNBA",
       "link": "https://mises.org/mises-wire/alice-wonderland-world-wnba",
@@ -337,28 +343,22 @@
       "kind": "Article"
     },
     {
-      "title": "Freedom of Speech Dying a Slow Death in Europe",
-      "link": "https://mises.org/mises-wire/freedom-speech-dying-slow-death-europe",
-      "pubDate": "Tue, 11 Aug 2026 11:00:00 CDT",
-      "kind": "Mises Wire"
-    },
-    {
       "title": "Mark Thornton Joins Capitalcosm to Discusses Gold, Inflation, and Interest Rates",
       "link": "https://mises.org/podcasts/individual-interview/mark-thornton-joins-capitalcosm-discusses-gold-inflation-and-interest-rates",
       "pubDate": "Tue, 11 Aug 2026 11:00:00 CDT",
       "kind": "Podcast"
     },
     {
+      "title": "Freedom of Speech Dying a Slow Death in Europe",
+      "link": "https://mises.org/mises-wire/freedom-speech-dying-slow-death-europe",
+      "pubDate": "Tue, 11 Aug 2026 11:00:00 CDT",
+      "kind": "Mises Wire"
+    },
+    {
       "title": "Unhappy Anniversary",
       "link": "https://mises.org/power-market/unhappy-anniversary",
       "pubDate": "Tue, 11 Aug 2026 08:00:00 CDT",
       "kind": "Article"
-    },
-    {
-      "title": "Substance Beats Labels in Fighting Marxism",
-      "link": "https://mises.org/mises-wire/substance-beats-labels-fighting-marxism",
-      "pubDate": "Tue, 11 Aug 2026 05:00:00 CDT",
-      "kind": "Mises Wire"
     }
   ]
 }
