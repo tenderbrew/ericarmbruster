@@ -1,13 +1,13 @@
 {
-  "fetchedAt": "2026-08-13T10:19:40.610Z",
+  "fetchedAt": "2026-08-13T13:41:24.809Z",
   "price": {
-    "usd": 63561,
-    "time": 1786616110
+    "usd": 63648,
+    "time": 1786628111
   },
   "moves": {
-    "d1": 0.24030532314993636,
-    "d7": -1.1330980533542312,
-    "d30": -2.189045922014665
+    "d1": 0.3775106308561371,
+    "d7": -0.9977726105613538,
+    "d30": -2.0551658225073433
   },
   "history90d": [
     {
@@ -372,67 +372,97 @@
     },
     {
       "date": "2026-08-13",
-      "close": 63583.51742797789
+      "close": 63692.98341413209
     }
   ],
   "blocks": [
     {
-      "height": 962271,
-      "id": "00000000000000000001453728dc0c45c95f0bde934af74643475ab17268b7a7",
-      "timestamp": 1786614249,
-      "txCount": 4790
+      "height": 962292,
+      "id": "00000000000000000000898e431337a198a7cdb84aa3f172f0acd8e9f4c85c14",
+      "timestamp": 1786625996,
+      "txCount": 5941
     },
     {
-      "height": 962270,
-      "id": "000000000000000000009d6ee72ef22fa16c771e889be9a6ec7d5dccb645956e",
-      "timestamp": 1786613481,
-      "txCount": 5433
+      "height": 962291,
+      "id": "00000000000000000000032900b7fecdbd92fd2488d81c6a176edea13c0b6c50",
+      "timestamp": 1786625248,
+      "txCount": 1505
     },
     {
-      "height": 962269,
-      "id": "00000000000000000000228bb1c7e6327c2ea5fed80d0f63d518b5732cf8e48f",
-      "timestamp": 1786613416,
-      "txCount": 4078
+      "height": 962290,
+      "id": "0000000000000000000171be3d7dd2d283b593f22568493c493fc93c33dd6ace",
+      "timestamp": 1786624853,
+      "txCount": 5189
     },
     {
-      "height": 962268,
-      "id": "00000000000000000000b814262fe36988851c285a688507bd5d40c8741aa240",
-      "timestamp": 1786612916,
-      "txCount": 4749
+      "height": 962289,
+      "id": "0000000000000000000056728982893cb26527f4eaae290d7758e3559e448ae4",
+      "timestamp": 1786624778,
+      "txCount": 4475
     },
     {
-      "height": 962267,
-      "id": "00000000000000000000fdd1d814afa91ab348dd2015c2334d3df6d3a0ba8a55",
-      "timestamp": 1786612368,
-      "txCount": 3823
+      "height": 962288,
+      "id": "00000000000000000000c90bd1d3b6225a4531a5985fe3f7c1713f677c815d9e",
+      "timestamp": 1786624612,
+      "txCount": 3378
     },
     {
-      "height": 962266,
-      "id": "00000000000000000000582d6fda05f27df318b44e931eb948af2dcd8155ed6b",
-      "timestamp": 1786611289,
-      "txCount": 6746
+      "height": 962287,
+      "id": "000000000000000000005354be44485b3f242e96bf9d02bec5d280f52088c5d0",
+      "timestamp": 1786624230,
+      "txCount": 4343
     },
     {
-      "height": 962265,
-      "id": "000000000000000000012f8a6257a50c7f19151ffa20844e6dda4b596c30cdb1",
-      "timestamp": 1786610947,
-      "txCount": 4856
+      "height": 962286,
+      "id": "0000000000000000000078c8a1617ad76f83086a5c417ffb76fd5195d712a260",
+      "timestamp": 1786621734,
+      "txCount": 6034
     },
     {
-      "height": 962264,
-      "id": "000000000000000000016b47aa8383af066d0c7df8396dfb08ff8a7cf73d42da",
-      "timestamp": 1786610509,
-      "txCount": 6103
+      "height": 962285,
+      "id": "00000000000000000001592b11476e608d8ed85c16cab90b9447a649742cbb3d",
+      "timestamp": 1786621360,
+      "txCount": 5988
     }
   ],
   "news": [
+    {
+      "title": "Crypto platform operator gets 15-year prison sentence in South Korea due to $50 million scam",
+      "link": "https://www.coindesk.com/business/2026/08/13/crypto-platform-operator-gets-15-year-prison-sentence-in-south-korea-due-to-usd50-million-scam",
+      "pubDate": "Thu, 13 Aug 2026 13:37:56 +0000"
+    },
+    {
+      "title": "Figure revenue doubles as blockchain loan marketplace volumes surge",
+      "link": "https://www.coindesk.com/business/2026/08/13/figure-revenue-doubles-as-blockchain-loan-marketplace-volumes-surge",
+      "pubDate": "Thu, 13 Aug 2026 13:29:28 +0000"
+    },
+    {
+      "title": "Bullish Q2 adjusted earnings in line as rise in subscription revenue offsets digital asset slowdown",
+      "link": "https://www.coindesk.com/business/2026/08/13/bullish-reports-usd280-million-q2-net-loss-as-crypto-trading-slows",
+      "pubDate": "Thu, 13 Aug 2026 12:09:58 +0000"
+    },
+    {
+      "title": "Strategy, Metaplanet unrealized bitcoin losses highlight risk of concentrating on just one token",
+      "link": "https://www.coindesk.com/daybook-us/2026/08/13/strategy-metaplanet-unrealized-bitcoin-losses-highlight-risk-of-concentrating-on-just-one-token",
+      "pubDate": "Thu, 13 Aug 2026 11:35:53 +0000"
+    },
+    {
+      "title": "Bitcoin holds steady near $64,000 as monero, hyperliquid outperform",
+      "link": "https://www.coindesk.com/markets/2026/08/13/bitcoin-holds-steady-near-usd64-000-as-monero-hyperliquid-outperform",
+      "pubDate": "Thu, 13 Aug 2026 11:02:43 +0000"
+    },
+    {
+      "title": "MUFG to test real-time blockchain settlement for Japanese government bond trades",
+      "link": "https://www.coindesk.com/business/2026/08/13/mufg-to-test-real-time-blockchain-settlement-for-japanese-government-bond-trades",
+      "pubDate": "Thu, 13 Aug 2026 10:15:32 +0000"
+    },
     {
       "title": "Brazil’s largest bitcoin treasury firm plans ETF with 95% allocation to Strategy's STRC",
       "link": "https://www.coindesk.com/business/2026/08/13/brazil-s-largest-bitcoin-treasury-firm-plans-etf-with-95-allocation-to-strategy-s-strc",
       "pubDate": "Thu, 13 Aug 2026 09:39:52 +0000"
     },
     {
-      "title": "Live Markets: U.S. inflation is stickier than July’s mild CPI reading suggests",
+      "title": "Live updates: Bitcoin continues flat near $63,500 as U.S. PPI softer than forecast in July",
       "link": "https://www.coindesk.com/tech/2026/08/13/live-markets-u-s-inflation-is-stickier-than-july-s-mild-cpi-suggests",
       "pubDate": "Thu, 13 Aug 2026 09:18:19 +0000"
     },
@@ -455,36 +485,6 @@
       "title": "Speculation on dogecoin is back to October 2025 levels. The price is down 70%",
       "link": "https://www.coindesk.com/markets/2026/08/13/speculation-on-dogecoin-is-back-to-october-2025-levels-the-price-is-down-70",
       "pubDate": "Thu, 13 Aug 2026 04:06:16 +0000"
-    },
-    {
-      "title": "Bitcoin slips near $63,500 as traders look past CPI to Fed’s next tests",
-      "link": "https://www.coindesk.com/markets/2026/08/13/bitcoin-slips-near-usd63-500-as-traders-look-past-cpi-to-fed-s-next-tests",
-      "pubDate": "Thu, 13 Aug 2026 03:39:06 +0000"
-    },
-    {
-      "title": "Prediction markets should dial back faulty filings for incentives to boost trading: CFTC",
-      "link": "https://www.coindesk.com/policy/2026/08/12/prediction-markets-should-dial-back-faulty-filings-for-incentives-to-boost-trading-cftc",
-      "pubDate": "Wed, 12 Aug 2026 23:16:53 +0000"
-    },
-    {
-      "title": "Securitize falls 20% after earnings miss as tokenization revenue falls short",
-      "link": "https://www.coindesk.com/markets/2026/08/12/securitize-falls-20-after-earnings-miss-as-tokenization-revenue-falls-short",
-      "pubDate": "Wed, 12 Aug 2026 22:26:24 +0000"
-    },
-    {
-      "title": "Morgan Stanley's infrastructure partner Zerohash rebuffed in pitch to be U.S. trust bank",
-      "link": "https://www.coindesk.com/policy/2026/08/12/morgan-stanley-s-infrastructure-partner-zerohash-rebuffed-in-pitch-to-be-u-s-trust-bank",
-      "pubDate": "Wed, 12 Aug 2026 22:11:09 +0000"
-    },
-    {
-      "title": "Goldman Sachs leaps into bitcoin income ETFs with $2.25 billion NEOS buyout",
-      "link": "https://www.coindesk.com/business/2026/08/12/goldman-sachs-leaps-into-bitcoin-income-etfs-with-usd2-25-billion-neos-buyout",
-      "pubDate": "Wed, 12 Aug 2026 17:21:03 +0000"
-    },
-    {
-      "title": "Wintermute plans $1 billion AI push beyond crypto: Bloomberg",
-      "link": "https://www.coindesk.com/business/2026/08/12/wintermute-plans-usd1-billion-ai-push-beyond-crypto-bloomberg",
-      "pubDate": "Wed, 12 Aug 2026 16:34:24 +0000"
     }
   ]
 }
