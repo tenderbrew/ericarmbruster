@@ -1,13 +1,13 @@
 {
-  "fetchedAt": "2026-08-13T07:49:30.774Z",
+  "fetchedAt": "2026-08-13T10:19:40.610Z",
   "price": {
-    "usd": 63823,
-    "time": 1786606810
+    "usd": 63561,
+    "time": 1786616110
   },
   "moves": {
-    "d1": 0.6534983187709065,
-    "d7": -0.7255662601159063,
-    "d30": -1.785866771774236
+    "d1": 0.24030532314993636,
+    "d7": -1.1330980533542312,
+    "d30": -2.189045922014665
   },
   "history90d": [
     {
@@ -372,60 +372,75 @@
     },
     {
       "date": "2026-08-13",
-      "close": 63800.35217675101
+      "close": 63583.51742797789
     }
   ],
   "blocks": [
     {
-      "height": 962254,
-      "id": "00000000000000000000ffddc9b56f1ef570d58e02cfdcda9a0d86ea41873a20",
-      "timestamp": 1786606245,
-      "txCount": 5172
+      "height": 962271,
+      "id": "00000000000000000001453728dc0c45c95f0bde934af74643475ab17268b7a7",
+      "timestamp": 1786614249,
+      "txCount": 4790
     },
     {
-      "height": 962253,
-      "id": "00000000000000000001aacc40cd3bfee757273dcca500f55e158d0dabfb26ce",
-      "timestamp": 1786605894,
-      "txCount": 6308
+      "height": 962270,
+      "id": "000000000000000000009d6ee72ef22fa16c771e889be9a6ec7d5dccb645956e",
+      "timestamp": 1786613481,
+      "txCount": 5433
     },
     {
-      "height": 962252,
-      "id": "000000000000000000014523dc896992ceb04553402c892b9d12cbdd9403d607",
-      "timestamp": 1786605655,
-      "txCount": 4738
+      "height": 962269,
+      "id": "00000000000000000000228bb1c7e6327c2ea5fed80d0f63d518b5732cf8e48f",
+      "timestamp": 1786613416,
+      "txCount": 4078
     },
     {
-      "height": 962251,
-      "id": "00000000000000000000ab06f0c14bb047b287c91c5d0c6cc48aa084cb859a47",
-      "timestamp": 1786604896,
-      "txCount": 4860
+      "height": 962268,
+      "id": "00000000000000000000b814262fe36988851c285a688507bd5d40c8741aa240",
+      "timestamp": 1786612916,
+      "txCount": 4749
     },
     {
-      "height": 962250,
-      "id": "000000000000000000010eef0944b0faa07ee0b78be91e1927d873f9fe34e5be",
-      "timestamp": 1786604627,
-      "txCount": 5486
+      "height": 962267,
+      "id": "00000000000000000000fdd1d814afa91ab348dd2015c2334d3df6d3a0ba8a55",
+      "timestamp": 1786612368,
+      "txCount": 3823
     },
     {
-      "height": 962249,
-      "id": "00000000000000000001c974c0e07241771027c7767ccc9fe305b46f6c793c46",
-      "timestamp": 1786604169,
-      "txCount": 6919
+      "height": 962266,
+      "id": "00000000000000000000582d6fda05f27df318b44e931eb948af2dcd8155ed6b",
+      "timestamp": 1786611289,
+      "txCount": 6746
     },
     {
-      "height": 962248,
-      "id": "0000000000000000000141ac4e200be4195f50d21519ef3f8b6fa2e645b69eb4",
-      "timestamp": 1786604137,
-      "txCount": 5805
+      "height": 962265,
+      "id": "000000000000000000012f8a6257a50c7f19151ffa20844e6dda4b596c30cdb1",
+      "timestamp": 1786610947,
+      "txCount": 4856
     },
     {
-      "height": 962247,
-      "id": "000000000000000000003933c34c470643e48b041b796d9711a6f783aab93eaf",
-      "timestamp": 1786604109,
-      "txCount": 3177
+      "height": 962264,
+      "id": "000000000000000000016b47aa8383af066d0c7df8396dfb08ff8a7cf73d42da",
+      "timestamp": 1786610509,
+      "txCount": 6103
     }
   ],
   "news": [
+    {
+      "title": "Brazil’s largest bitcoin treasury firm plans ETF with 95% allocation to Strategy's STRC",
+      "link": "https://www.coindesk.com/business/2026/08/13/brazil-s-largest-bitcoin-treasury-firm-plans-etf-with-95-allocation-to-strategy-s-strc",
+      "pubDate": "Thu, 13 Aug 2026 09:39:52 +0000"
+    },
+    {
+      "title": "Live Markets: U.S. inflation is stickier than July’s mild CPI reading suggests",
+      "link": "https://www.coindesk.com/tech/2026/08/13/live-markets-u-s-inflation-is-stickier-than-july-s-mild-cpi-suggests",
+      "pubDate": "Thu, 13 Aug 2026 09:18:19 +0000"
+    },
+    {
+      "title": "Bitcoin treasury company Metaplanet unveils BitBonds with $1.3 million private debt sale",
+      "link": "https://www.coindesk.com/markets/2026/08/13/bitcoin-treasury-company-metaplanet-unveils-bitbonds-with-usd1-3-million-private-debt-sale",
+      "pubDate": "Thu, 13 Aug 2026 09:14:15 +0000"
+    },
     {
       "title": "Metaplanet denies selling bitcoin worth $320 million",
       "link": "https://www.coindesk.com/markets/2026/08/13/metaplanet-denies-selling-bitcoin-worth-usd320-million",
@@ -470,21 +485,6 @@
       "title": "Wintermute plans $1 billion AI push beyond crypto: Bloomberg",
       "link": "https://www.coindesk.com/business/2026/08/12/wintermute-plans-usd1-billion-ai-push-beyond-crypto-bloomberg",
       "pubDate": "Wed, 12 Aug 2026 16:34:24 +0000"
-    },
-    {
-      "title": "Kalshi taps DoubleZero for Wall Street-style high-speed data feed",
-      "link": "https://www.coindesk.com/business/2026/08/12/solana-platform-taps-prediction-market-kalshi-for-wall-street-style-high-speed-data-feed",
-      "pubDate": "Wed, 12 Aug 2026 16:14:49 +0000"
-    },
-    {
-      "title": "Miden bets on privacy stablecoins with introduction of USDCx",
-      "link": "https://www.coindesk.com/tech/2026/08/12/miden-bets-on-privacy-stablecoins-with-introduction-of-usdcx",
-      "pubDate": "Wed, 12 Aug 2026 15:00:00 +0000"
-    },
-    {
-      "title": "Crypto Long & Short: When capital can't move fast enough, markets pay the price",
-      "link": "https://www.coindesk.com/coindesk-indices/2026/08/12/crypto-long-and-short",
-      "pubDate": "Wed, 12 Aug 2026 14:51:12 +0000"
     }
   ]
 }
