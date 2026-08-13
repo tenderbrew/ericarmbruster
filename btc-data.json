@@ -1,13 +1,13 @@
 {
-  "fetchedAt": "2026-08-13T16:07:14.944Z",
+  "fetchedAt": "2026-08-13T19:16:45.991Z",
   "price": {
-    "usd": 63369,
-    "time": 1786636810
+    "usd": 63403,
+    "time": 1786648214
   },
   "moves": {
-    "d1": -0.06249259730514156,
-    "d7": -1.431747306414377,
-    "d30": -2.4845054519618603
+    "d1": -0.008872132224557738,
+    "d7": -1.3788615011849692,
+    "d30": -2.4321844935337067
   },
   "history90d": [
     {
@@ -372,60 +372,75 @@
     },
     {
       "date": "2026-08-13",
-      "close": 63401.33189082207
+      "close": 63347.33664510686
     }
   ],
   "blocks": [
     {
-      "height": 962303,
-      "id": "00000000000000000002339fc8073174b938d55a0eeaeeeae130edfe75b61640",
-      "timestamp": 1786636857,
-      "txCount": 3882
+      "height": 962323,
+      "id": "000000000000000000021e92840a14ac4c8de74051cac1ba5cbe6eff69ab392b",
+      "timestamp": 1786648306,
+      "txCount": 4215
     },
     {
-      "height": 962302,
-      "id": "00000000000000000000ff5e0eab1ff63c0a7359cad37f8cb71eb23f1562c78f",
-      "timestamp": 1786636310,
-      "txCount": 4002
+      "height": 962322,
+      "id": "0000000000000000000228e7f54822b8be06b6bb9e21638668164b363d3136ee",
+      "timestamp": 1786648213,
+      "txCount": 4306
     },
     {
-      "height": 962301,
-      "id": "000000000000000000013534e020b0623feeb6d589c2594ce1a0b90639428139",
-      "timestamp": 1786636052,
-      "txCount": 4162
+      "height": 962321,
+      "id": "00000000000000000000d28f5f6ce5969674dbc0e6b7c6211b1e42f780f2aab9",
+      "timestamp": 1786647072,
+      "txCount": 4281
     },
     {
-      "height": 962300,
-      "id": "00000000000000000000603c3dfba41b47a4f0f6cfb6016359ca08f1b467f1ba",
-      "timestamp": 1786634620,
-      "txCount": 3867
+      "height": 962320,
+      "id": "000000000000000000010a0fe4f5e399f7f45d233d512c55ab08187e3623dee5",
+      "timestamp": 1786646215,
+      "txCount": 3281
     },
     {
-      "height": 962299,
-      "id": "00000000000000000000569aa873c453eeb0ef9790456f96bb1bc00f32d56f27",
-      "timestamp": 1786634576,
-      "txCount": 3617
+      "height": 962319,
+      "id": "0000000000000000000054b29669057a2b5564c17727ff5534d36cec13b03807",
+      "timestamp": 1786645483,
+      "txCount": 4716
     },
     {
-      "height": 962298,
-      "id": "000000000000000000003438f3d890e99666823d152b22f03cd5c19f9304b543",
-      "timestamp": 1786634458,
-      "txCount": 4194
+      "height": 962318,
+      "id": "00000000000000000000a5b015f4a59928668de7b352ea1670fb18abaab27e27",
+      "timestamp": 1786644304,
+      "txCount": 1
     },
     {
-      "height": 962297,
-      "id": "00000000000000000001ee5300a61a304af61b3cbb2a7871145655bdc61f8dc4",
-      "timestamp": 1786631770,
-      "txCount": 3595
+      "height": 962317,
+      "id": "0000000000000000000096a2b798be8c741f88f66512303d01a974f53cef39e9",
+      "timestamp": 1786644289,
+      "txCount": 4083
     },
     {
-      "height": 962296,
-      "id": "00000000000000000001a29cf49f4361a18dbabc28da32cbfc3fa477640b032a",
-      "timestamp": 1786630279,
-      "txCount": 3798
+      "height": 962316,
+      "id": "000000000000000000016de337c9ef720574bf4d8190b8710f068dbf58dfa903",
+      "timestamp": 1786643339,
+      "txCount": 5101
     }
   ],
   "news": [
+    {
+      "title": "Tether says it completed long-promised 'Big Four' audit of finances behind $180 billion USDT stablecoin",
+      "link": "https://www.coindesk.com/business/2026/08/13/tether-says-it-completed-long-promised-big-four-audit-of-finances-behind-usd180-billion-usdt-stablecoin",
+      "pubDate": "Thu, 13 Aug 2026 18:26:21 +0000"
+    },
+    {
+      "title": "Forecasts for $1 million bitcoin price likely look too ambitious, key ratio suggests",
+      "link": "https://www.coindesk.com/markets/2026/08/13/forecasts-for-usd1-million-bitcoin-price-likely-look-too-ambitious-key-ratio-suggests",
+      "pubDate": "Thu, 13 Aug 2026 17:43:25 +0000"
+    },
+    {
+      "title": "Trezor warns 14,000 customers after fulfilment partner suffers data breach",
+      "link": "https://www.coindesk.com/tech/2026/08/13/trezor-warns-14-000-users-after-fulfilment-partner-suffers-data-breach",
+      "pubDate": "Thu, 13 Aug 2026 17:10:57 +0000"
+    },
     {
       "title": "Crypto for Advisors: The crypto advice gap",
       "link": "https://www.coindesk.com/coindesk-indices/2026/08/12/crypto-for-advisors-the-crypto-advice-gap",
@@ -470,21 +485,6 @@
       "title": "Bitcoin holds steady near $64,000 as monero, hyperliquid outperform",
       "link": "https://www.coindesk.com/markets/2026/08/13/bitcoin-holds-steady-near-usd64-000-as-monero-hyperliquid-outperform",
       "pubDate": "Thu, 13 Aug 2026 11:02:43 +0000"
-    },
-    {
-      "title": "MUFG to test real-time blockchain settlement for Japanese government bond trades",
-      "link": "https://www.coindesk.com/business/2026/08/13/mufg-to-test-real-time-blockchain-settlement-for-japanese-government-bond-trades",
-      "pubDate": "Thu, 13 Aug 2026 10:15:32 +0000"
-    },
-    {
-      "title": "Brazil’s largest bitcoin treasury firm plans ETF with 95% allocation to Strategy's STRC",
-      "link": "https://www.coindesk.com/business/2026/08/13/brazil-s-largest-bitcoin-treasury-firm-plans-etf-with-95-allocation-to-strategy-s-strc",
-      "pubDate": "Thu, 13 Aug 2026 09:39:52 +0000"
-    },
-    {
-      "title": "Live updates: Bitcoin stuck near $63,500 even as Fed rate hike expectations dwindle",
-      "link": "https://www.coindesk.com/tech/2026/08/13/live-markets-u-s-inflation-is-stickier-than-july-s-mild-cpi-suggests",
-      "pubDate": "Thu, 13 Aug 2026 09:18:19 +0000"
     }
   ]
 }
