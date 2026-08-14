@@ -1,13 +1,13 @@
 {
-  "fetchedAt": "2026-08-14T04:58:07.766Z",
+  "fetchedAt": "2026-08-14T07:47:03.922Z",
   "price": {
-    "usd": 63327,
-    "time": 1786683307
+    "usd": 62916,
+    "time": 1786693209
   },
   "moves": {
-    "d1": -0.16109157390660211,
-    "d7": -2.3825169875777097,
-    "d30": -2.148068147833637
+    "d1": -0.8090583394745998,
+    "d7": -3.0160664296498996,
+    "d30": -2.7831391916418147
   },
   "history90d": [
     {
@@ -372,60 +372,75 @@
     },
     {
       "date": "2026-08-14",
-      "close": 63329.374323687945
+      "close": 62960.63134609267
     }
   ],
   "blocks": [
     {
-      "height": 962372,
-      "id": "000000000000000000017d8247749524349624e7514292a20da5086510ec3b47",
-      "timestamp": 1786681485,
-      "txCount": 6073
+      "height": 962391,
+      "id": "0000000000000000000158ec9cdbc47a4440662a42b084adf01ee325fa0244ba",
+      "timestamp": 1786693659,
+      "txCount": 4536
     },
     {
-      "height": 962371,
-      "id": "000000000000000000020cd000d97f77c0f6005e31719f6b841b185b9e73052a",
-      "timestamp": 1786680866,
-      "txCount": 6126
+      "height": 962390,
+      "id": "00000000000000000002094f1850a8926c61aca04594b7d750b4aaa0387f2e71",
+      "timestamp": 1786692945,
+      "txCount": 5052
     },
     {
-      "height": 962370,
-      "id": "000000000000000000022d9d6366386773dd602939d3b88adaaf3e011642e583",
-      "timestamp": 1786680743,
-      "txCount": 5173
+      "height": 962389,
+      "id": "00000000000000000000baedb2b1ee5cd2e9331911cf61ea178249c02629e53e",
+      "timestamp": 1786692506,
+      "txCount": 5934
     },
     {
-      "height": 962369,
-      "id": "00000000000000000000767a72ddcba248aa0cf7f3044857a0d7c4b2a846ac6b",
-      "timestamp": 1786680044,
-      "txCount": 4858
+      "height": 962388,
+      "id": "00000000000000000000f0915c1764407f8807275601a3961b0a2db80d5a07cb",
+      "timestamp": 1786692232,
+      "txCount": 6209
     },
     {
-      "height": 962368,
-      "id": "00000000000000000001115213888c4066ae6d499318808d281e9c2e628d154f",
-      "timestamp": 1786679504,
-      "txCount": 5092
+      "height": 962387,
+      "id": "00000000000000000000a9d099468d482954e7d6cea0f791cf203273ee4a5cb6",
+      "timestamp": 1786691967,
+      "txCount": 5867
     },
     {
-      "height": 962367,
-      "id": "0000000000000000000038da3e404b27fb7d0f9fbc77c82e2cea9bfc32221754",
-      "timestamp": 1786679138,
-      "txCount": 6278
+      "height": 962386,
+      "id": "000000000000000000001b37f82d449935d47c78148e3d1839e7fa2a665206c2",
+      "timestamp": 1786692075,
+      "txCount": 4165
     },
     {
-      "height": 962366,
-      "id": "000000000000000000008e380e4f049815a05bba9a17626f9d6d5cd2d9f6bcd3",
-      "timestamp": 1786679020,
-      "txCount": 4763
+      "height": 962385,
+      "id": "00000000000000000001bda988a9ee188e607e5ade0cf13f3cbc15e990a3f154",
+      "timestamp": 1786690865,
+      "txCount": 6640
     },
     {
-      "height": 962365,
-      "id": "0000000000000000000168273e811e3fbdf3f383e43743670c83ea69d988d5c8",
-      "timestamp": 1786678386,
-      "txCount": 3870
+      "height": 962384,
+      "id": "00000000000000000000e67c367490bb1bc79fb757ee6b99c4db54fb39e2503c",
+      "timestamp": 1786690947,
+      "txCount": 4430
     }
   ],
   "news": [
+    {
+      "title": "Cluster of headwinds weigh on bitcoin. XRP teeters near $1",
+      "link": "https://www.coindesk.com/markets/2026/08/14/cluster-of-headwinds-weigh-on-bitcoin-xrp-teeters-near-usd1",
+      "pubDate": "Fri, 14 Aug 2026 07:14:37 +0000"
+    },
+    {
+      "title": "Bitcoin holders Strategy and Metaplanet face stock-index exclusion under MSCI’s new proposal",
+      "link": "https://www.coindesk.com/markets/2026/08/14/bitcoin-holders-strategy-and-metaplanet-face-stock-index-exclusion-under-msci-s-new-proposal",
+      "pubDate": "Fri, 14 Aug 2026 06:20:54 +0000"
+    },
+    {
+      "title": "JPMorgan shuttered its banking relationship with predictions platform Polymarket: FT",
+      "link": "https://www.coindesk.com/markets/2026/08/14/jpmorgan-shuttered-its-banking-relationship-with-predictions-platform-polymarket-ft",
+      "pubDate": "Fri, 14 Aug 2026 05:04:52 +0000"
+    },
     {
       "title": "U.S. SEC to again delay 'innovation exemption' for tokenization amid Wall Street, White House concerns",
       "link": "https://www.coindesk.com/policy/2026/08/13/u-s-sec-to-again-delay-innovation-exemption-for-tokenization-amid-wall-street-white-house-concerns",
@@ -470,21 +485,6 @@
       "title": "Swissquote cuts full-year guidance as 1H crypto income plunges, shares slide",
       "link": "https://www.coindesk.com/business/2026/08/13/swissquote-cuts-full-year-guidance-as-1h-crypto-income-plunges-shares-slide",
       "pubDate": "Thu, 13 Aug 2026 13:41:32 +0000"
-    },
-    {
-      "title": "Crypto platform operator gets 15-year prison sentence in South Korea due to $50 million scam",
-      "link": "https://www.coindesk.com/business/2026/08/13/crypto-platform-operator-gets-15-year-prison-sentence-in-south-korea-due-to-usd50-million-scam",
-      "pubDate": "Thu, 13 Aug 2026 13:37:56 +0000"
-    },
-    {
-      "title": "Figure revenue doubles as blockchain loan marketplace volumes surge",
-      "link": "https://www.coindesk.com/business/2026/08/13/figure-revenue-doubles-as-blockchain-loan-marketplace-volumes-surge",
-      "pubDate": "Thu, 13 Aug 2026 13:29:28 +0000"
-    },
-    {
-      "title": "Bullish shares surge 14% as subscription revenue offsets digital asset slowdown",
-      "link": "https://www.coindesk.com/business/2026/08/13/bullish-reports-usd280-million-q2-net-loss-as-crypto-trading-slows",
-      "pubDate": "Thu, 13 Aug 2026 12:09:58 +0000"
     }
   ]
 }
