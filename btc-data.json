@@ -1,13 +1,13 @@
 {
-  "fetchedAt": "2026-08-14T07:47:03.922Z",
+  "fetchedAt": "2026-08-14T10:14:18.023Z",
   "price": {
-    "usd": 62916,
-    "time": 1786693209
+    "usd": 62753,
+    "time": 1786702209
   },
   "moves": {
-    "d1": -0.8090583394745998,
-    "d7": -3.0160664296498996,
-    "d30": -2.7831391916418147
+    "d1": -1.0660378596390352,
+    "d7": -3.267328130520386,
+    "d30": -3.0350043501350843
   },
   "history90d": [
     {
@@ -372,60 +372,65 @@
     },
     {
       "date": "2026-08-14",
-      "close": 62960.63134609267
+      "close": 62775.19701875066
     }
   ],
   "blocks": [
     {
-      "height": 962391,
-      "id": "0000000000000000000158ec9cdbc47a4440662a42b084adf01ee325fa0244ba",
-      "timestamp": 1786693659,
-      "txCount": 4536
+      "height": 962412,
+      "id": "000000000000000000002c8e962e019d3d6a944491a697d8926fe773ed60e8cd",
+      "timestamp": 1786701927,
+      "txCount": 6477
     },
     {
-      "height": 962390,
-      "id": "00000000000000000002094f1850a8926c61aca04594b7d750b4aaa0387f2e71",
-      "timestamp": 1786692945,
-      "txCount": 5052
+      "height": 962411,
+      "id": "0000000000000000000187a61ec3633ef1c97f0100927dde7dd80c06cb2a44b3",
+      "timestamp": 1786701913,
+      "txCount": 4985
     },
     {
-      "height": 962389,
-      "id": "00000000000000000000baedb2b1ee5cd2e9331911cf61ea178249c02629e53e",
-      "timestamp": 1786692506,
-      "txCount": 5934
+      "height": 962410,
+      "id": "00000000000000000001981f8a9c8b6c07fe9bddbf3965b34be68763cbf57e39",
+      "timestamp": 1786701444,
+      "txCount": 6583
     },
     {
-      "height": 962388,
-      "id": "00000000000000000000f0915c1764407f8807275601a3961b0a2db80d5a07cb",
-      "timestamp": 1786692232,
-      "txCount": 6209
+      "height": 962409,
+      "id": "0000000000000000000175f6c908956360693fff90c662ec7f1f90da8710b803",
+      "timestamp": 1786701386,
+      "txCount": 4993
     },
     {
-      "height": 962387,
-      "id": "00000000000000000000a9d099468d482954e7d6cea0f791cf203273ee4a5cb6",
-      "timestamp": 1786691967,
-      "txCount": 5867
+      "height": 962408,
+      "id": "00000000000000000000954ab057aa583c2cb69e20c3ff1f6ff4788b6dec642b",
+      "timestamp": 1786700525,
+      "txCount": 5818
     },
     {
-      "height": 962386,
-      "id": "000000000000000000001b37f82d449935d47c78148e3d1839e7fa2a665206c2",
-      "timestamp": 1786692075,
-      "txCount": 4165
+      "height": 962407,
+      "id": "000000000000000000011e7080a6ce52c8410ae39b714c52858bde9fa7c63517",
+      "timestamp": 1786700734,
+      "txCount": 5873
     },
     {
-      "height": 962385,
-      "id": "00000000000000000001bda988a9ee188e607e5ade0cf13f3cbc15e990a3f154",
-      "timestamp": 1786690865,
-      "txCount": 6640
+      "height": 962406,
+      "id": "00000000000000000001d39fe8f0c5fd67de716d2762f81cc2a73910f3541e33",
+      "timestamp": 1786700101,
+      "txCount": 5044
     },
     {
-      "height": 962384,
-      "id": "00000000000000000000e67c367490bb1bc79fb757ee6b99c4db54fb39e2503c",
-      "timestamp": 1786690947,
-      "txCount": 4430
+      "height": 962405,
+      "id": "000000000000000000009444ffafada8d879b360d65e09e35a77e2a1e23108cb",
+      "timestamp": 1786699762,
+      "txCount": 6001
     }
   ],
   "news": [
+    {
+      "title": "Live updates: Bitcoin slips below $63,000 as oil, yields climb",
+      "link": "https://www.coindesk.com/tech/2026/08/14/live-updates-bitcoin-slips-below-usd63-000-as-oil-yields-climb",
+      "pubDate": "Fri, 14 Aug 2026 08:51:48 +0000"
+    },
     {
       "title": "Cluster of headwinds weigh on bitcoin. XRP teeters near $1",
       "link": "https://www.coindesk.com/markets/2026/08/14/cluster-of-headwinds-weigh-on-bitcoin-xrp-teeters-near-usd1",
@@ -480,11 +485,6 @@
       "title": "Kalshi in talks with Sequoia, Wellington for $750 million fund raise at $40 billion valuation",
       "link": "https://www.coindesk.com/business/2026/08/13/kalshi-in-talks-with-sequoia-wellington-for-usd750-million-fund-raise-at-usd40-billion-valuation",
       "pubDate": "Thu, 13 Aug 2026 14:16:06 +0000"
-    },
-    {
-      "title": "Swissquote cuts full-year guidance as 1H crypto income plunges, shares slide",
-      "link": "https://www.coindesk.com/business/2026/08/13/swissquote-cuts-full-year-guidance-as-1h-crypto-income-plunges-shares-slide",
-      "pubDate": "Thu, 13 Aug 2026 13:41:32 +0000"
     }
   ]
 }
