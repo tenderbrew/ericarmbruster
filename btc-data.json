@@ -1,13 +1,13 @@
 {
-  "fetchedAt": "2026-08-14T10:14:18.023Z",
+  "fetchedAt": "2026-08-14T13:36:50.997Z",
   "price": {
-    "usd": 62753,
-    "time": 1786702209
+    "usd": 62718,
+    "time": 1786714211
   },
   "moves": {
-    "d1": -1.0660378596390352,
-    "d7": -3.267328130520386,
-    "d30": -3.0350043501350843
+    "d1": -1.1212175112080836,
+    "d7": -3.3212800294803,
+    "d30": -3.089085825885174
   },
   "history90d": [
     {
@@ -372,60 +372,80 @@
     },
     {
       "date": "2026-08-14",
-      "close": 62775.19701875066
+      "close": 62643.60179554111
     }
   ],
   "blocks": [
     {
-      "height": 962412,
-      "id": "000000000000000000002c8e962e019d3d6a944491a697d8926fe773ed60e8cd",
-      "timestamp": 1786701927,
-      "txCount": 6477
+      "height": 962437,
+      "id": "00000000000000000001386ca212275866c354fc85b58939abb13b61abde6e02",
+      "timestamp": 1786714500,
+      "txCount": 4596
     },
     {
-      "height": 962411,
-      "id": "0000000000000000000187a61ec3633ef1c97f0100927dde7dd80c06cb2a44b3",
-      "timestamp": 1786701913,
-      "txCount": 4985
+      "height": 962436,
+      "id": "000000000000000000007d5e611349775c581a9d821c1fb0df2e8eae8f165425",
+      "timestamp": 1786714438,
+      "txCount": 5119
     },
     {
-      "height": 962410,
-      "id": "00000000000000000001981f8a9c8b6c07fe9bddbf3965b34be68763cbf57e39",
-      "timestamp": 1786701444,
-      "txCount": 6583
+      "height": 962435,
+      "id": "00000000000000000000e4bba95e9241359f9cea239a6bbe11f4d0a19c975db5",
+      "timestamp": 1786713535,
+      "txCount": 4729
     },
     {
-      "height": 962409,
-      "id": "0000000000000000000175f6c908956360693fff90c662ec7f1f90da8710b803",
-      "timestamp": 1786701386,
-      "txCount": 4993
+      "height": 962434,
+      "id": "00000000000000000000ca51260db6e60481d21151d4eebc56bfb2b6b09a1584",
+      "timestamp": 1786712921,
+      "txCount": 6579
     },
     {
-      "height": 962408,
-      "id": "00000000000000000000954ab057aa583c2cb69e20c3ff1f6ff4788b6dec642b",
-      "timestamp": 1786700525,
-      "txCount": 5818
+      "height": 962433,
+      "id": "0000000000000000000198fb00f51a1e602b5bffa922a776ff1ca2dc06fbd980",
+      "timestamp": 1786712751,
+      "txCount": 4710
     },
     {
-      "height": 962407,
-      "id": "000000000000000000011e7080a6ce52c8410ae39b714c52858bde9fa7c63517",
-      "timestamp": 1786700734,
-      "txCount": 5873
+      "height": 962432,
+      "id": "00000000000000000000ab567a2c915b93243743720fbcf686ba6648b5eb79a2",
+      "timestamp": 1786712410,
+      "txCount": 7321
     },
     {
-      "height": 962406,
-      "id": "00000000000000000001d39fe8f0c5fd67de716d2762f81cc2a73910f3541e33",
-      "timestamp": 1786700101,
-      "txCount": 5044
+      "height": 962431,
+      "id": "00000000000000000000cd51272734aaac3f9a29badde0ea9a5e43321b090ed7",
+      "timestamp": 1786712401,
+      "txCount": 5237
     },
     {
-      "height": 962405,
-      "id": "000000000000000000009444ffafada8d879b360d65e09e35a77e2a1e23108cb",
-      "timestamp": 1786699762,
-      "txCount": 6001
+      "height": 962430,
+      "id": "00000000000000000001c36774a0d5b65da27ca9650c63a497626d60898530dc",
+      "timestamp": 1786712107,
+      "txCount": 6135
     }
   ],
   "news": [
+    {
+      "title": "Fear is fading across markets, be it bitcoin, stocks, gold or bonds",
+      "link": "https://www.coindesk.com/daybook-us/2026/08/14/volatility-exits-crypto-tradfi-markets-even-as-u-s-iran-risks-linger-sovereign-debt-rises",
+      "pubDate": "Fri, 14 Aug 2026 11:33:50 +0000"
+    },
+    {
+      "title": "Trump family's World Liberty Financial delay plans to sell Maldives resort token",
+      "link": "https://www.coindesk.com/business/2026/08/14/trump-family-s-world-liberty-financial-delay-plans-to-sell-maldives-resort-token",
+      "pubDate": "Fri, 14 Aug 2026 11:07:49 +0000"
+    },
+    {
+      "title": "Bitcoin slips as U.S. inflation fails to spark gains, ETFs see August's first two-day drawdown",
+      "link": "https://www.coindesk.com/markets/2026/08/14/bitcoin-slips-as-u-s-inflation-fails-to-spark-gains-etfs-see-august-s-first-two-day-drawdown",
+      "pubDate": "Fri, 14 Aug 2026 11:06:12 +0000"
+    },
+    {
+      "title": "RedotPay said to put $1 billion U.S. IPO plan on hold: Bloomberg",
+      "link": "https://www.coindesk.com/business/2026/08/14/redotpay-said-to-put-usd1-billion-u-s-ipo-plan-on-hold-bloomberg",
+      "pubDate": "Fri, 14 Aug 2026 10:35:40 +0000"
+    },
     {
       "title": "Live updates: Bitcoin slips below $63,000 as oil, yields climb",
       "link": "https://www.coindesk.com/tech/2026/08/14/live-updates-bitcoin-slips-below-usd63-000-as-oil-yields-climb",
@@ -465,26 +485,6 @@
       "title": "Forecasts for $1 million bitcoin price likely look too ambitious, key ratio suggests",
       "link": "https://www.coindesk.com/markets/2026/08/13/forecasts-for-usd1-million-bitcoin-price-likely-look-too-ambitious-key-ratio-suggests",
       "pubDate": "Thu, 13 Aug 2026 17:43:25 +0000"
-    },
-    {
-      "title": "Trezor warns 14,000 customers after fulfilment partner suffers data breach",
-      "link": "https://www.coindesk.com/tech/2026/08/13/trezor-warns-14-000-users-after-fulfilment-partner-suffers-data-breach",
-      "pubDate": "Thu, 13 Aug 2026 17:10:57 +0000"
-    },
-    {
-      "title": "Crypto for Advisors: The crypto advice gap",
-      "link": "https://www.coindesk.com/coindesk-indices/2026/08/12/crypto-for-advisors-the-crypto-advice-gap",
-      "pubDate": "Thu, 13 Aug 2026 15:00:00 +0000"
-    },
-    {
-      "title": "B2C2 taps Schroders veteran to chase Asia’s growing crypto wealth",
-      "link": "https://www.coindesk.com/business/2026/08/13/b2c2-taps-schroders-veteran-to-chase-asia-s-growing-crypto-wealth",
-      "pubDate": "Thu, 13 Aug 2026 14:43:38 +0000"
-    },
-    {
-      "title": "Kalshi in talks with Sequoia, Wellington for $750 million fund raise at $40 billion valuation",
-      "link": "https://www.coindesk.com/business/2026/08/13/kalshi-in-talks-with-sequoia-wellington-for-usd750-million-fund-raise-at-usd40-billion-valuation",
-      "pubDate": "Thu, 13 Aug 2026 14:16:06 +0000"
     }
   ]
 }
