@@ -1,13 +1,13 @@
 {
-  "fetchedAt": "2026-08-14T16:02:39.270Z",
+  "fetchedAt": "2026-08-14T19:10:14.993Z",
   "price": {
-    "usd": 62921,
-    "time": 1786723214
+    "usd": 62806,
+    "time": 1786734312
   },
   "moves": {
-    "d1": -0.8011755321075897,
-    "d7": -3.0083590155127737,
-    "d30": -2.7754132665346654
+    "d1": -0.982480101548755,
+    "d7": -3.18562954066679,
+    "d30": -2.9531095439992328
   },
   "history90d": [
     {
@@ -372,60 +372,65 @@
     },
     {
       "date": "2026-08-14",
-      "close": 62934.34558639417
+      "close": 62797.95646642632
     }
   ],
   "blocks": [
     {
-      "height": 962450,
-      "id": "00000000000000000000e52441c6b79fc7facc13cd29db523925291b01e05ce3",
-      "timestamp": 1786722487,
-      "txCount": 4106
+      "height": 962465,
+      "id": "000000000000000000014439df02c2a01d52f68f2a4300a93b07ecd7043ed75a",
+      "timestamp": 1786731282,
+      "txCount": 4547
     },
     {
-      "height": 962449,
-      "id": "000000000000000000021b6cc8b95d3898379806d5e1e748c08b73afe0b0defc",
-      "timestamp": 1786721592,
-      "txCount": 3576
+      "height": 962464,
+      "id": "00000000000000000000a610ec357c2a6d5ede1b77e6c0d0149a592da32013a9",
+      "timestamp": 1786731384,
+      "txCount": 4727
     },
     {
-      "height": 962448,
-      "id": "000000000000000000012eb86b4590609c3366cd8dd3d196e32d35ac3d9db4b0",
-      "timestamp": 1786721133,
-      "txCount": 4625
+      "height": 962463,
+      "id": "00000000000000000000dde17776a388da46ad63deaff48ff63fe1e3104f62d3",
+      "timestamp": 1786729871,
+      "txCount": 4151
     },
     {
-      "height": 962447,
-      "id": "00000000000000000001f97f484282378f1989978bcc16b05650439ba18e7fdf",
-      "timestamp": 1786721089,
-      "txCount": 4227
+      "height": 962462,
+      "id": "0000000000000000000183beebf37922cdaec3ab1c49b7c4a8b2a29298eed0a4",
+      "timestamp": 1786729360,
+      "txCount": 4258
     },
     {
-      "height": 962446,
-      "id": "000000000000000000002f81bef9218e9efb67a1ee89dd0e1617931fb70ad8bc",
-      "timestamp": 1786718833,
-      "txCount": 3868
+      "height": 962461,
+      "id": "00000000000000000001ef61939b62ef88d4da67f69b9edc67b44495af670cfb",
+      "timestamp": 1786729201,
+      "txCount": 3751
     },
     {
-      "height": 962445,
-      "id": "000000000000000000001d55f48a626d904e3bc1e29085a30780cfff5c5f4930",
-      "timestamp": 1786717667,
-      "txCount": 4178
+      "height": 962460,
+      "id": "000000000000000000006a7176181a134f6ba39f249ec718fafc2426f15d5d69",
+      "timestamp": 1786728721,
+      "txCount": 4543
     },
     {
-      "height": 962444,
-      "id": "00000000000000000000d36d3aed9d1207453357c0f76dd8ad8bdb69969bddda",
-      "timestamp": 1786716862,
-      "txCount": 5514
+      "height": 962459,
+      "id": "000000000000000000011815122d998a60a93e924db25e72c83ec1e0b32a323b",
+      "timestamp": 1786727830,
+      "txCount": 4693
     },
     {
-      "height": 962443,
-      "id": "00000000000000000001b8ee96019701c9e9b0ee63ff3af05094af083dc6ffd5",
-      "timestamp": 1786716672,
-      "txCount": 6504
+      "height": 962458,
+      "id": "00000000000000000000c018db2a598591d19a48a21b3d52a235b2e5fe21c8ab",
+      "timestamp": 1786726462,
+      "txCount": 4696
     }
   ],
   "news": [
+    {
+      "title": "Tokenization stocks slip as SEC delay puts 'speed bump' in crypto’s Wall Street push",
+      "link": "https://www.coindesk.com/markets/2026/08/14/tokenization-stocks-slip-as-sec-delay-puts-speed-bump-in-crypto-s-wall-street-push",
+      "pubDate": "Fri, 14 Aug 2026 17:48:04 +0000"
+    },
     {
       "title": "Strategy says MSCI should measure markets, not dictate corporate assets",
       "link": "https://www.coindesk.com/markets/2026/08/14/strategy-says-msci-should-measure-markets-not-dictate-corporate-assets",
@@ -457,7 +462,7 @@
       "pubDate": "Fri, 14 Aug 2026 10:35:40 +0000"
     },
     {
-      "title": "Live updates: Bitcoin slips below $63,000; MSCI threatens to exclude Strategy from indices",
+      "title": "Live updates: Bitcoin slips back to $63,000; MSCI threatens to exclude Strategy from indices",
       "link": "https://www.coindesk.com/tech/2026/08/14/live-updates-bitcoin-slips-below-usd63-000-as-oil-yields-climb",
       "pubDate": "Fri, 14 Aug 2026 08:51:48 +0000"
     },
@@ -480,11 +485,6 @@
       "title": "U.S. SEC to again delay 'innovation exemption' for tokenization amid Wall Street, White House concerns",
       "link": "https://www.coindesk.com/policy/2026/08/13/u-s-sec-to-again-delay-innovation-exemption-for-tokenization-amid-wall-street-white-house-concerns",
       "pubDate": "Thu, 13 Aug 2026 23:09:14 +0000"
-    },
-    {
-      "title": "SEC cancels long-awaited proposal of Reg Crypto, postponing meeting without new date",
-      "link": "https://www.coindesk.com/policy/2026/08/13/sec-cancels-long-awaited-proposal-of-reg-crypto-postponing-meeting-without-new-date",
-      "pubDate": "Thu, 13 Aug 2026 22:18:07 +0000"
     }
   ]
 }
