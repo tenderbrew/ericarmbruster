@@ -1,13 +1,13 @@
 {
-  "fetchedAt": "2026-08-14T19:10:14.993Z",
+  "fetchedAt": "2026-08-14T21:36:47.196Z",
   "price": {
-    "usd": 62806,
-    "time": 1786734312
+    "usd": 62823,
+    "time": 1786743024
   },
   "moves": {
-    "d1": -0.982480101548755,
-    "d7": -3.18562954066679,
-    "d30": -2.9531095439992328
+    "d1": -0.9556785565009274,
+    "d7": -3.1594243326005467,
+    "d30": -2.926841398634905
   },
   "history90d": [
     {
@@ -372,60 +372,65 @@
     },
     {
       "date": "2026-08-14",
-      "close": 62797.95646642632
+      "close": 62823.035077220586
     }
   ],
   "blocks": [
     {
-      "height": 962465,
-      "id": "000000000000000000014439df02c2a01d52f68f2a4300a93b07ecd7043ed75a",
-      "timestamp": 1786731282,
-      "txCount": 4547
+      "height": 962478,
+      "id": "000000000000000000009efb6733e02dd35a110bf6dc2de29abc9e605470204e",
+      "timestamp": 1786743230,
+      "txCount": 3569
     },
     {
-      "height": 962464,
-      "id": "00000000000000000000a610ec357c2a6d5ede1b77e6c0d0149a592da32013a9",
-      "timestamp": 1786731384,
-      "txCount": 4727
+      "height": 962477,
+      "id": "000000000000000000008a265f09b38faf081a0ee6db15c352423b77d8c0228a",
+      "timestamp": 1786742823,
+      "txCount": 3038
     },
     {
-      "height": 962463,
-      "id": "00000000000000000000dde17776a388da46ad63deaff48ff63fe1e3104f62d3",
-      "timestamp": 1786729871,
-      "txCount": 4151
+      "height": 962476,
+      "id": "00000000000000000001f8fc5431688f0e0614fe744d45a76048f438b2d828e0",
+      "timestamp": 1786742367,
+      "txCount": 3056
     },
     {
-      "height": 962462,
-      "id": "0000000000000000000183beebf37922cdaec3ab1c49b7c4a8b2a29298eed0a4",
-      "timestamp": 1786729360,
-      "txCount": 4258
+      "height": 962475,
+      "id": "00000000000000000001838bb3120508e3b67d24ccf5ebb02a2f5a638e9562b6",
+      "timestamp": 1786742312,
+      "txCount": 3950
     },
     {
-      "height": 962461,
-      "id": "00000000000000000001ef61939b62ef88d4da67f69b9edc67b44495af670cfb",
-      "timestamp": 1786729201,
-      "txCount": 3751
+      "height": 962474,
+      "id": "000000000000000000022421b41f167f606b40915aef883a8e8671495db806a3",
+      "timestamp": 1786740663,
+      "txCount": 3858
     },
     {
-      "height": 962460,
-      "id": "000000000000000000006a7176181a134f6ba39f249ec718fafc2426f15d5d69",
-      "timestamp": 1786728721,
-      "txCount": 4543
+      "height": 962473,
+      "id": "000000000000000000010c21766494db612d35f207778b8b4c8d34cfa0ac2b03",
+      "timestamp": 1786739505,
+      "txCount": 4143
     },
     {
-      "height": 962459,
-      "id": "000000000000000000011815122d998a60a93e924db25e72c83ec1e0b32a323b",
-      "timestamp": 1786727830,
-      "txCount": 4693
+      "height": 962472,
+      "id": "00000000000000000001b878da6973ac1b834b46f094628619f9c3ed88f33e15",
+      "timestamp": 1786738500,
+      "txCount": 2310
     },
     {
-      "height": 962458,
-      "id": "00000000000000000000c018db2a598591d19a48a21b3d52a235b2e5fe21c8ab",
-      "timestamp": 1786726462,
-      "txCount": 4696
+      "height": 962471,
+      "id": "0000000000000000000113737a33d8c7278275e7c897e454a5102a61fd1180ba",
+      "timestamp": 1786738377,
+      "txCount": 4308
     }
   ],
   "news": [
+    {
+      "title": "Trump-backed World Liberty wins conditional bank charter from federal regulator",
+      "link": "https://www.coindesk.com/policy/2026/08/14/trump-backed-world-liberty-wins-conditional-bank-charter-from-federal-regulator",
+      "pubDate": "Fri, 14 Aug 2026 21:05:23 +0000"
+    },
     {
       "title": "Tokenization stocks slip as SEC delay puts 'speed bump' in crypto’s Wall Street push",
       "link": "https://www.coindesk.com/markets/2026/08/14/tokenization-stocks-slip-as-sec-delay-puts-speed-bump-in-crypto-s-wall-street-push",
@@ -480,11 +485,6 @@
       "title": "JPMorgan shuttered its banking relationship with predictions platform Polymarket: FT",
       "link": "https://www.coindesk.com/markets/2026/08/14/jpmorgan-shuttered-its-banking-relationship-with-predictions-platform-polymarket-ft",
       "pubDate": "Fri, 14 Aug 2026 05:04:52 +0000"
-    },
-    {
-      "title": "U.S. SEC to again delay 'innovation exemption' for tokenization amid Wall Street, White House concerns",
-      "link": "https://www.coindesk.com/policy/2026/08/13/u-s-sec-to-again-delay-innovation-exemption-for-tokenization-amid-wall-street-white-house-concerns",
-      "pubDate": "Thu, 13 Aug 2026 23:09:14 +0000"
     }
   ]
 }
