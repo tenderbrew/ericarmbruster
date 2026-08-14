@@ -1,13 +1,13 @@
 {
-  "fetchedAt": "2026-08-14T13:36:50.997Z",
+  "fetchedAt": "2026-08-14T16:02:39.270Z",
   "price": {
-    "usd": 62718,
-    "time": 1786714211
+    "usd": 62921,
+    "time": 1786723214
   },
   "moves": {
-    "d1": -1.1212175112080836,
-    "d7": -3.3212800294803,
-    "d30": -3.089085825885174
+    "d1": -0.8011755321075897,
+    "d7": -3.0083590155127737,
+    "d30": -2.7754132665346654
   },
   "history90d": [
     {
@@ -372,60 +372,70 @@
     },
     {
       "date": "2026-08-14",
-      "close": 62643.60179554111
+      "close": 62934.34558639417
     }
   ],
   "blocks": [
     {
-      "height": 962437,
-      "id": "00000000000000000001386ca212275866c354fc85b58939abb13b61abde6e02",
-      "timestamp": 1786714500,
-      "txCount": 4596
+      "height": 962450,
+      "id": "00000000000000000000e52441c6b79fc7facc13cd29db523925291b01e05ce3",
+      "timestamp": 1786722487,
+      "txCount": 4106
     },
     {
-      "height": 962436,
-      "id": "000000000000000000007d5e611349775c581a9d821c1fb0df2e8eae8f165425",
-      "timestamp": 1786714438,
-      "txCount": 5119
+      "height": 962449,
+      "id": "000000000000000000021b6cc8b95d3898379806d5e1e748c08b73afe0b0defc",
+      "timestamp": 1786721592,
+      "txCount": 3576
     },
     {
-      "height": 962435,
-      "id": "00000000000000000000e4bba95e9241359f9cea239a6bbe11f4d0a19c975db5",
-      "timestamp": 1786713535,
-      "txCount": 4729
+      "height": 962448,
+      "id": "000000000000000000012eb86b4590609c3366cd8dd3d196e32d35ac3d9db4b0",
+      "timestamp": 1786721133,
+      "txCount": 4625
     },
     {
-      "height": 962434,
-      "id": "00000000000000000000ca51260db6e60481d21151d4eebc56bfb2b6b09a1584",
-      "timestamp": 1786712921,
-      "txCount": 6579
+      "height": 962447,
+      "id": "00000000000000000001f97f484282378f1989978bcc16b05650439ba18e7fdf",
+      "timestamp": 1786721089,
+      "txCount": 4227
     },
     {
-      "height": 962433,
-      "id": "0000000000000000000198fb00f51a1e602b5bffa922a776ff1ca2dc06fbd980",
-      "timestamp": 1786712751,
-      "txCount": 4710
+      "height": 962446,
+      "id": "000000000000000000002f81bef9218e9efb67a1ee89dd0e1617931fb70ad8bc",
+      "timestamp": 1786718833,
+      "txCount": 3868
     },
     {
-      "height": 962432,
-      "id": "00000000000000000000ab567a2c915b93243743720fbcf686ba6648b5eb79a2",
-      "timestamp": 1786712410,
-      "txCount": 7321
+      "height": 962445,
+      "id": "000000000000000000001d55f48a626d904e3bc1e29085a30780cfff5c5f4930",
+      "timestamp": 1786717667,
+      "txCount": 4178
     },
     {
-      "height": 962431,
-      "id": "00000000000000000000cd51272734aaac3f9a29badde0ea9a5e43321b090ed7",
-      "timestamp": 1786712401,
-      "txCount": 5237
+      "height": 962444,
+      "id": "00000000000000000000d36d3aed9d1207453357c0f76dd8ad8bdb69969bddda",
+      "timestamp": 1786716862,
+      "txCount": 5514
     },
     {
-      "height": 962430,
-      "id": "00000000000000000001c36774a0d5b65da27ca9650c63a497626d60898530dc",
-      "timestamp": 1786712107,
-      "txCount": 6135
+      "height": 962443,
+      "id": "00000000000000000001b8ee96019701c9e9b0ee63ff3af05094af083dc6ffd5",
+      "timestamp": 1786716672,
+      "txCount": 6504
     }
   ],
   "news": [
+    {
+      "title": "Strategy says MSCI should measure markets, not dictate corporate assets",
+      "link": "https://www.coindesk.com/markets/2026/08/14/strategy-says-msci-should-measure-markets-not-dictate-corporate-assets",
+      "pubDate": "Fri, 14 Aug 2026 14:12:34 +0000"
+    },
+    {
+      "title": "Israel’s largest bank to offer crypto trading with Galaxy",
+      "link": "https://www.coindesk.com/markets/2026/08/14/israel-s-largest-bank-partners-with-galaxy-for-crypto-trading",
+      "pubDate": "Fri, 14 Aug 2026 13:51:37 +0000"
+    },
     {
       "title": "Fear is fading across markets, be it bitcoin, stocks, gold or bonds",
       "link": "https://www.coindesk.com/daybook-us/2026/08/14/volatility-exits-crypto-tradfi-markets-even-as-u-s-iran-risks-linger-sovereign-debt-rises",
@@ -447,7 +457,7 @@
       "pubDate": "Fri, 14 Aug 2026 10:35:40 +0000"
     },
     {
-      "title": "Live updates: Bitcoin slips below $63,000 as oil, yields climb",
+      "title": "Live updates: Bitcoin slips below $63,000; MSCI threatens to exclude Strategy from indices",
       "link": "https://www.coindesk.com/tech/2026/08/14/live-updates-bitcoin-slips-below-usd63-000-as-oil-yields-climb",
       "pubDate": "Fri, 14 Aug 2026 08:51:48 +0000"
     },
@@ -475,16 +485,6 @@
       "title": "SEC cancels long-awaited proposal of Reg Crypto, postponing meeting without new date",
       "link": "https://www.coindesk.com/policy/2026/08/13/sec-cancels-long-awaited-proposal-of-reg-crypto-postponing-meeting-without-new-date",
       "pubDate": "Thu, 13 Aug 2026 22:18:07 +0000"
-    },
-    {
-      "title": "Tether says it completed long-promised 'Big Four' audit of finances behind $180 billion USDT stablecoin",
-      "link": "https://www.coindesk.com/business/2026/08/13/tether-says-it-completed-long-promised-big-four-audit-of-finances-behind-usd180-billion-usdt-stablecoin",
-      "pubDate": "Thu, 13 Aug 2026 18:26:21 +0000"
-    },
-    {
-      "title": "Forecasts for $1 million bitcoin price likely look too ambitious, key ratio suggests",
-      "link": "https://www.coindesk.com/markets/2026/08/13/forecasts-for-usd1-million-bitcoin-price-likely-look-too-ambitious-key-ratio-suggests",
-      "pubDate": "Thu, 13 Aug 2026 17:43:25 +0000"
     }
   ]
 }
