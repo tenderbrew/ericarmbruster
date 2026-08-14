@@ -1,19 +1,15 @@
 {
-  "fetchedAt": "2026-08-13T21:59:16.127Z",
+  "fetchedAt": "2026-08-14T02:41:38.014Z",
   "price": {
-    "usd": 63382,
-    "time": 1786657808
+    "usd": 63466,
+    "time": 1786675213
   },
   "moves": {
-    "d1": -0.04199065477433761,
-    "d7": -1.4115262632384273,
-    "d30": -2.4645003796216813
+    "d1": 0.05805047089619819,
+    "d7": -2.1682508745654694,
+    "d30": -1.9332874298547242
   },
   "history90d": [
-    {
-      "date": "2026-05-16",
-      "close": 79068.6684041429
-    },
     {
       "date": "2026-05-17",
       "close": 78132.7535126921
@@ -360,72 +356,86 @@
     },
     {
       "date": "2026-08-11",
-      "close": 63878.87956325003
+      "close": 63915.71213556821
     },
     {
       "date": "2026-08-12",
-      "close": 63527.054189503135
+      "close": 63537.55988964766
     },
     {
       "date": "2026-08-13",
       "close": 63408.625697113624
     },
     {
-      "date": "2026-08-13",
-      "close": 63411.234150116405
+      "date": "2026-08-14",
+      "close": 63429.17906286841
+    },
+    {
+      "date": "2026-08-14",
+      "close": 63473.54659677655
     }
   ],
   "blocks": [
     {
-      "height": 962340,
-      "id": "000000000000000000005d00273788c7963bc317b595f14a9c639a59cb6df9d7",
-      "timestamp": 1786658007,
-      "txCount": 4870
+      "height": 962362,
+      "id": "000000000000000000000568facb66183a387f2d0733dbd8c925f214df62fb0b",
+      "timestamp": 1786674565,
+      "txCount": 6157
     },
     {
-      "height": 962339,
-      "id": "00000000000000000000502e3251ecf898e1edd1e6d65a7517d53f5adb4ba7e1",
-      "timestamp": 1786657648,
-      "txCount": 5617
+      "height": 962361,
+      "id": "00000000000000000001d8f22f7c2b3bd97d87fcc159c45d8c0d61cf104cda5f",
+      "timestamp": 1786673943,
+      "txCount": 5854
     },
     {
-      "height": 962338,
-      "id": "00000000000000000001e13f8409a6feec936138bc720491bec3f76bcb5c54c0",
-      "timestamp": 1786657425,
-      "txCount": 4503
+      "height": 962360,
+      "id": "00000000000000000000044e9107c0b8f76e6e0d93d8ce13436a3d9fe7585b7b",
+      "timestamp": 1786673536,
+      "txCount": 5714
     },
     {
-      "height": 962337,
-      "id": "0000000000000000000173744659b8a68d80e5af43689ab172da0255b687eef6",
-      "timestamp": 1786657386,
-      "txCount": 4336
+      "height": 962359,
+      "id": "000000000000000000014a7946eab94f0972e6ab912827acfba16843ed929c3c",
+      "timestamp": 1786673518,
+      "txCount": 5339
     },
     {
-      "height": 962336,
-      "id": "000000000000000000022ac0de129c755742b5fa2a452d05df6c0737b09f60f5",
-      "timestamp": 1786655295,
-      "txCount": 531
+      "height": 962358,
+      "id": "00000000000000000002134abac93c937fd98a288414acb3fc7360079bc59c92",
+      "timestamp": 1786672927,
+      "txCount": 4673
     },
     {
-      "height": 962335,
-      "id": "00000000000000000001a0ec89e45b6f3f97bcce3e3a9375707af1745a3717ae",
-      "timestamp": 1786654924,
-      "txCount": 4749
+      "height": 962357,
+      "id": "000000000000000000022a8a8f507884c5843f04c52331e342f57cf70d31bda4",
+      "timestamp": 1786672030,
+      "txCount": 3693
     },
     {
-      "height": 962334,
-      "id": "000000000000000000015d1dfafa82cf97c2c511a4d5ffd0f7a638bed7f85001",
-      "timestamp": 1786654800,
-      "txCount": 7006
+      "height": 962356,
+      "id": "000000000000000000006bf083318cbc59f0d7ba9d98d2e0e63a270dde536a36",
+      "timestamp": 1786670790,
+      "txCount": 5562
     },
     {
-      "height": 962333,
-      "id": "00000000000000000000dbdfa5eab367381dc956918a1195ffa22fac4ff5ac50",
-      "timestamp": 1786654755,
-      "txCount": 3887
+      "height": 962355,
+      "id": "00000000000000000001bdbf89b1a83e51b673a17dec149bc7285734217f860b",
+      "timestamp": 1786670474,
+      "txCount": 4081
     }
   ],
   "news": [
+    {
+      "title": "U.S. SEC to again delay 'innovation exemption' for tokenization amid Wall Street, White House concerns",
+      "link": "https://www.coindesk.com/policy/2026/08/13/u-s-sec-to-again-delay-innovation-exemption-for-tokenization-amid-wall-street-white-house-concerns",
+      "pubDate": "Thu, 13 Aug 2026 23:09:14 +0000"
+    },
+    {
+      "title": "SEC cancels long-awaited proposal of Reg Crypto, postponing meeting without new date",
+      "link": "https://www.coindesk.com/policy/2026/08/13/sec-cancels-long-awaited-proposal-of-reg-crypto-postponing-meeting-without-new-date",
+      "pubDate": "Thu, 13 Aug 2026 22:18:07 +0000"
+    },
     {
       "title": "Tether says it completed long-promised 'Big Four' audit of finances behind $180 billion USDT stablecoin",
       "link": "https://www.coindesk.com/business/2026/08/13/tether-says-it-completed-long-promised-big-four-audit-of-finances-behind-usd180-billion-usdt-stablecoin",
@@ -475,16 +485,6 @@
       "title": "Bullish shares surge 14% as subscription revenue offsets digital asset slowdown",
       "link": "https://www.coindesk.com/business/2026/08/13/bullish-reports-usd280-million-q2-net-loss-as-crypto-trading-slows",
       "pubDate": "Thu, 13 Aug 2026 12:09:58 +0000"
-    },
-    {
-      "title": "Strategy, Metaplanet unrealized bitcoin losses highlight risk of concentrating on just one token",
-      "link": "https://www.coindesk.com/daybook-us/2026/08/13/strategy-metaplanet-unrealized-bitcoin-losses-highlight-risk-of-concentrating-on-just-one-token",
-      "pubDate": "Thu, 13 Aug 2026 11:35:53 +0000"
-    },
-    {
-      "title": "Bitcoin holds steady near $64,000 as monero, hyperliquid outperform",
-      "link": "https://www.coindesk.com/markets/2026/08/13/bitcoin-holds-steady-near-usd64-000-as-monero-hyperliquid-outperform",
-      "pubDate": "Thu, 13 Aug 2026 11:02:43 +0000"
     }
   ]
 }
