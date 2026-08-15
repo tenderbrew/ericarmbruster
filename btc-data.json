@@ -1,19 +1,15 @@
 {
-  "fetchedAt": "2026-08-14T21:36:47.196Z",
+  "fetchedAt": "2026-08-15T01:47:02.146Z",
   "price": {
-    "usd": 62823,
-    "time": 1786743024
+    "usd": 62966,
+    "time": 1786758010
   },
   "moves": {
-    "d1": -0.9556785565009274,
-    "d7": -3.1594243326005467,
-    "d30": -2.926841398634905
+    "d1": -0.029038345825949108,
+    "d7": -3.0038901274485497,
+    "d30": -1.2952779415135396
   },
   "history90d": [
-    {
-      "date": "2026-05-17",
-      "close": 78132.7535126921
-    },
     {
       "date": "2026-05-18",
       "close": 77428.51866052429
@@ -368,64 +364,73 @@
     },
     {
       "date": "2026-08-14",
-      "close": 63429.17906286841
+      "close": 63417.394499802336
     },
     {
-      "date": "2026-08-14",
-      "close": 62823.035077220586
+      "date": "2026-08-15",
+      "close": 62984.28959582886
+    },
+    {
+      "date": "2026-08-15",
+      "close": 62971.80060670978
     }
   ],
   "blocks": [
     {
-      "height": 962478,
-      "id": "000000000000000000009efb6733e02dd35a110bf6dc2de29abc9e605470204e",
-      "timestamp": 1786743230,
-      "txCount": 3569
+      "height": 962505,
+      "id": "00000000000000000000c6c2c394075bfa4e20260de71d289d0f273b0155abc0",
+      "timestamp": 1786757762,
+      "txCount": 6578
     },
     {
-      "height": 962477,
-      "id": "000000000000000000008a265f09b38faf081a0ee6db15c352423b77d8c0228a",
-      "timestamp": 1786742823,
-      "txCount": 3038
+      "height": 962504,
+      "id": "00000000000000000000dfc48d759bd762668f1fde77c90e91fd613ee924dbea",
+      "timestamp": 1786757734,
+      "txCount": 3583
     },
     {
-      "height": 962476,
-      "id": "00000000000000000001f8fc5431688f0e0614fe744d45a76048f438b2d828e0",
-      "timestamp": 1786742367,
-      "txCount": 3056
+      "height": 962503,
+      "id": "000000000000000000004430d82d433d2989df2f2f52eb5c67ba6bb4d3c7dfe2",
+      "timestamp": 1786757055,
+      "txCount": 3877
     },
     {
-      "height": 962475,
-      "id": "00000000000000000001838bb3120508e3b67d24ccf5ebb02a2f5a638e9562b6",
-      "timestamp": 1786742312,
-      "txCount": 3950
+      "height": 962502,
+      "id": "000000000000000000011ecc1d199a376156ff56dd044343a5b82746e04523b4",
+      "timestamp": 1786755210,
+      "txCount": 5612
     },
     {
-      "height": 962474,
-      "id": "000000000000000000022421b41f167f606b40915aef883a8e8671495db806a3",
-      "timestamp": 1786740663,
-      "txCount": 3858
+      "height": 962501,
+      "id": "00000000000000000002106d67edb0b82ae66012a0e76f7b5fb8ac2b608dbbaa",
+      "timestamp": 1786755202,
+      "txCount": 4502
     },
     {
-      "height": 962473,
-      "id": "000000000000000000010c21766494db612d35f207778b8b4c8d34cfa0ac2b03",
-      "timestamp": 1786739505,
-      "txCount": 4143
+      "height": 962500,
+      "id": "0000000000000000000130492b096a3aa9d9b285c214d1119c818ccadb107054",
+      "timestamp": 1786754936,
+      "txCount": 4355
     },
     {
-      "height": 962472,
-      "id": "00000000000000000001b878da6973ac1b834b46f094628619f9c3ed88f33e15",
-      "timestamp": 1786738500,
-      "txCount": 2310
+      "height": 962499,
+      "id": "00000000000000000001fcf872f4c94e85b239a98dab9321b3a52b6c3965fc52",
+      "timestamp": 1786752848,
+      "txCount": 4058
     },
     {
-      "height": 962471,
-      "id": "0000000000000000000113737a33d8c7278275e7c897e454a5102a61fd1180ba",
-      "timestamp": 1786738377,
-      "txCount": 4308
+      "height": 962498,
+      "id": "00000000000000000000c1187bde3911ea51920ca5cfc743e9a1d814d1a4acbc",
+      "timestamp": 1786751825,
+      "txCount": 5238
     }
   ],
   "news": [
+    {
+      "title": "Trump expected to attend White House meeting with crypto CEOs, sources say",
+      "link": "https://www.coindesk.com/policy/2026/08/14/trump-expected-to-attend-white-house-meeting-with-crypto-ceos-sources-say",
+      "pubDate": "Fri, 14 Aug 2026 23:41:49 +0000"
+    },
     {
       "title": "Trump-backed World Liberty wins conditional bank charter from federal regulator",
       "link": "https://www.coindesk.com/policy/2026/08/14/trump-backed-world-liberty-wins-conditional-bank-charter-from-federal-regulator",
@@ -480,11 +485,6 @@
       "title": "Bitcoin holders Strategy and Metaplanet face stock-index exclusion under MSCI’s new proposal",
       "link": "https://www.coindesk.com/markets/2026/08/14/bitcoin-holders-strategy-and-metaplanet-face-stock-index-exclusion-under-msci-s-new-proposal",
       "pubDate": "Fri, 14 Aug 2026 06:20:54 +0000"
-    },
-    {
-      "title": "JPMorgan shuttered its banking relationship with predictions platform Polymarket: FT",
-      "link": "https://www.coindesk.com/markets/2026/08/14/jpmorgan-shuttered-its-banking-relationship-with-predictions-platform-polymarket-ft",
-      "pubDate": "Fri, 14 Aug 2026 05:04:52 +0000"
     }
   ]
 }
