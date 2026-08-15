@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-08-14T19:06:21.666Z",
+  "fetchedAt": "2026-08-15T01:44:50.990Z",
   "indicators": {
     "UNRATE": {
       "latest": {
@@ -63,12 +63,12 @@
     },
     "T10YIE": {
       "latest": {
-        "date": "2026-08-13",
-        "value": 2.24
+        "date": "2026-08-14",
+        "value": 2.27
       },
       "previous": {
-        "date": "2026-08-12",
-        "value": 2.26
+        "date": "2026-08-13",
+        "value": 2.24
       }
     },
     "PCE": {
@@ -123,42 +123,42 @@
     },
     "DGS2": {
       "latest": {
-        "date": "2026-08-12",
-        "value": 4.2
+        "date": "2026-08-13",
+        "value": 4.15
       },
       "previous": {
-        "date": "2026-08-11",
-        "value": 4.22
+        "date": "2026-08-12",
+        "value": 4.2
       }
     },
     "DGS10": {
       "latest": {
-        "date": "2026-08-12",
-        "value": 4.68
+        "date": "2026-08-13",
+        "value": 4.63
       },
       "previous": {
-        "date": "2026-08-11",
-        "value": 4.7
+        "date": "2026-08-12",
+        "value": 4.68
       }
     },
     "T10Y2Y": {
       "latest": {
-        "date": "2026-08-13",
-        "value": 0.48
+        "date": "2026-08-14",
+        "value": 0.51
       },
       "previous": {
-        "date": "2026-08-12",
+        "date": "2026-08-13",
         "value": 0.48
       }
     },
     "DFII10": {
       "latest": {
-        "date": "2026-08-12",
-        "value": 2.42
+        "date": "2026-08-13",
+        "value": 2.39
       },
       "previous": {
-        "date": "2026-08-11",
-        "value": 2.43
+        "date": "2026-08-12",
+        "value": 2.42
       }
     },
     "BAMLH0A0HYM2": {
@@ -301,6 +301,12 @@
   },
   "news": [
     {
+      "title": "The Return of Economic Gaslighting",
+      "link": "https://mises.org/podcasts/audio-mises-wire/return-economic-gaslighting",
+      "pubDate": "Fri, 14 Aug 2026 04:01:46 CDT",
+      "kind": "Podcast"
+    },
+    {
       "title": "The Liberalization of Holidays and the Ownership of Time",
       "link": "https://mises.org/mises-wire/liberalization-holidays-and-ownership-time",
       "pubDate": "Fri, 14 Aug 2026 02:00:00 CDT",
@@ -352,12 +358,6 @@
       "title": "How the First World War Destroyed the Gold Standard",
       "link": "https://mises.org/mises-wire/how-first-world-war-destroyed-gold-standard",
       "pubDate": "Wed, 12 Aug 2026 02:00:00 CDT",
-      "kind": "Mises Wire"
-    },
-    {
-      "title": "The Six Nooses: How Interventionism Is Strangling the Family’s Will to Reproduce",
-      "link": "https://mises.org/mises-wire/six-nooses-how-interventionism-strangling-familys-will-reproduce",
-      "pubDate": "Wed, 12 Aug 2026 11:00:00 CDT",
       "kind": "Mises Wire"
     }
   ]
