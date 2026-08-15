@@ -1,13 +1,13 @@
 {
-  "fetchedAt": "2026-08-15T12:56:14.888Z",
+  "fetchedAt": "2026-08-15T15:32:47.490Z",
   "price": {
-    "usd": 62894,
-    "time": 1786798210
+    "usd": 63009,
+    "time": 1786807810
   },
   "moves": {
-    "d1": -0.1433525668198321,
-    "d7": -3.1148026820148833,
-    "d30": -1.4081442501278851
+    "d1": 0.03923264726761744,
+    "d7": -2.9376506851380935,
+    "d30": -1.2278716738688522
   },
   "history90d": [
     {
@@ -372,60 +372,80 @@
     },
     {
       "date": "2026-08-15",
-      "close": 62891.48604263798
+      "close": 63013.924570236886
     }
   ],
   "blocks": [
     {
-      "height": 962577,
-      "id": "000000000000000000011c2eac41af5599a37ced02749ccda094a6096194512f",
-      "timestamp": 1786798339,
-      "txCount": 5762
+      "height": 962588,
+      "id": "00000000000000000000a6f4c6f34d7005578dd102dab756c24faf927bb37f07",
+      "timestamp": 1786807904,
+      "txCount": 4104
     },
     {
-      "height": 962576,
-      "id": "0000000000000000000208e5e39681c39efa3c3ca84cbbf84f33ba9a68c79e6f",
-      "timestamp": 1786798087,
-      "txCount": 6151
+      "height": 962587,
+      "id": "000000000000000000018fc3c06985f5e219319b8be202e6c57195c764c1c879",
+      "timestamp": 1786807187,
+      "txCount": 4155
     },
     {
-      "height": 962575,
-      "id": "00000000000000000000c16801af72b72acef27b9506136e6def59cac8621c38",
-      "timestamp": 1786798014,
-      "txCount": 4754
+      "height": 962586,
+      "id": "0000000000000000000063a83f557451d8c294917257918bc2aa2f31b0eca0d9",
+      "timestamp": 1786806599,
+      "txCount": 4873
     },
     {
-      "height": 962574,
-      "id": "000000000000000000002ac1e92f30fec0705284d0e82672c591067a471ca999",
-      "timestamp": 1786797380,
-      "txCount": 4025
+      "height": 962585,
+      "id": "00000000000000000000c61c8484edb101df55724fd735b0b65704ba4120f4a0",
+      "timestamp": 1786806251,
+      "txCount": 3638
     },
     {
-      "height": 962573,
-      "id": "00000000000000000000c219bcfad4e88b22dec9c31da5e0ad457685808c7ca5",
-      "timestamp": 1786796284,
-      "txCount": 6786
+      "height": 962584,
+      "id": "000000000000000000001d094b4ce0ae94fed874d743655d46ce9dcb4c644a3b",
+      "timestamp": 1786805977,
+      "txCount": 4123
     },
     {
-      "height": 962572,
-      "id": "000000000000000000004b1e6cd4a8d25f59c4029c4cd75f10bdb29f33c4d7e0",
-      "timestamp": 1786796246,
-      "txCount": 6566
+      "height": 962583,
+      "id": "0000000000000000000223ebf550f7fc84b623ad85e468091787b2c9f31fbfa2",
+      "timestamp": 1786805622,
+      "txCount": 4674
     },
     {
-      "height": 962571,
-      "id": "00000000000000000000f5bf574ea5b6c34a5a4da2e692fd5ea9ac0ad3d17938",
-      "timestamp": 1786795982,
-      "txCount": 4904
+      "height": 962582,
+      "id": "00000000000000000001265ab2ee23f07865c794cb97d0c61a410399f3c2cbff",
+      "timestamp": 1786804844,
+      "txCount": 4558
     },
     {
-      "height": 962570,
-      "id": "000000000000000000000ca18dd7dbd43167a897d4f7674c7b43f0bc667d9926",
-      "timestamp": 1786795038,
-      "txCount": 4690
+      "height": 962581,
+      "id": "0000000000000000000050726f3515d6494e64885fb86a2e491ba580a1085694",
+      "timestamp": 1786803100,
+      "txCount": 3552
     }
   ],
   "news": [
+    {
+      "title": "Why the world’s second-largest Bitcoin mining power is shutting down rigs in its capital city",
+      "link": "https://www.coindesk.com/policy/2026/08/15/why-the-world-s-second-largest-bitcoin-mining-power-is-shutting-down-rigs-in-its-capital-city",
+      "pubDate": "Sat, 15 Aug 2026 15:21:15 +0000"
+    },
+    {
+      "title": "Paul Tudor Jones’ investment firm increases stake in BlackRock's bitcoin ETF after year of selling",
+      "link": "https://www.coindesk.com/business/2026/08/15/paul-tudor-jones-investment-firm-increases-blackrock-s-bitcoin-etf-stake-after-year-of-selling",
+      "pubDate": "Sat, 15 Aug 2026 15:12:29 +0000"
+    },
+    {
+      "title": "The $11.2 billion in 2026 funding that killed crypto’s permissionless era",
+      "link": "https://www.coindesk.com/business/2026/08/15/the-usd11-2-billion-in-2026-funding-that-killed-crypto-s-permissionless-era",
+      "pubDate": "Sat, 15 Aug 2026 14:00:00 +0000"
+    },
+    {
+      "title": "Clarity survives (barely), Strategy sells and the untold story of Mastercard's $1.8 billion deal: Crypto's week in 5 stories",
+      "link": "https://www.coindesk.com/business/2026/08/15/clarity-survives-barely-strategy-sells-and-the-untold-story-of-mastercard-s-usd1-8-billion-deal-crypto-s-week-in-5-stories",
+      "pubDate": "Sat, 15 Aug 2026 13:00:00 +0000"
+    },
     {
       "title": "Wall Street's private blockchain obsession is a 'race to the bottom,' Ethereum advocate Raman warns",
       "link": "https://www.coindesk.com/business/2026/08/15/wall-street-s-private-blockchain-obsession-is-a-race-to-the-bottom-ethereum-advocate-raman-warns",
@@ -465,26 +485,6 @@
       "title": "Trump family's World Liberty Financial delay plans to sell Maldives resort token",
       "link": "https://www.coindesk.com/business/2026/08/14/trump-family-s-world-liberty-financial-delay-plans-to-sell-maldives-resort-token",
       "pubDate": "Fri, 14 Aug 2026 11:07:49 +0000"
-    },
-    {
-      "title": "Bitcoin slips as U.S. inflation fails to spark gains, ETFs see August's first two-day drawdown",
-      "link": "https://www.coindesk.com/markets/2026/08/14/bitcoin-slips-as-u-s-inflation-fails-to-spark-gains-etfs-see-august-s-first-two-day-drawdown",
-      "pubDate": "Fri, 14 Aug 2026 11:06:12 +0000"
-    },
-    {
-      "title": "RedotPay said to put $1 billion U.S. IPO plan on hold: Bloomberg",
-      "link": "https://www.coindesk.com/business/2026/08/14/redotpay-said-to-put-usd1-billion-u-s-ipo-plan-on-hold-bloomberg",
-      "pubDate": "Fri, 14 Aug 2026 10:35:40 +0000"
-    },
-    {
-      "title": "Live updates: Bitcoin slips back to $63,000; MSCI threatens to exclude Strategy from indices",
-      "link": "https://www.coindesk.com/tech/2026/08/14/live-updates-bitcoin-slips-below-usd63-000-as-oil-yields-climb",
-      "pubDate": "Fri, 14 Aug 2026 08:51:48 +0000"
-    },
-    {
-      "title": "Cluster of headwinds weigh on bitcoin. XRP teeters near $1",
-      "link": "https://www.coindesk.com/markets/2026/08/14/cluster-of-headwinds-weigh-on-bitcoin-xrp-teeters-near-usd1",
-      "pubDate": "Fri, 14 Aug 2026 07:14:37 +0000"
     }
   ]
 }
