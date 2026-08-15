@@ -1,13 +1,13 @@
 {
-  "fetchedAt": "2026-08-15T09:36:06.039Z",
+  "fetchedAt": "2026-08-15T12:56:14.888Z",
   "price": {
-    "usd": 62915,
-    "time": 1786786211
+    "usd": 62894,
+    "time": 1786798210
   },
   "moves": {
-    "d1": -0.11001091902994586,
-    "d7": -3.082453186933032,
-    "d30": -1.375224910115369
+    "d1": -0.1433525668198321,
+    "d7": -3.1148026820148833,
+    "d30": -1.4081442501278851
   },
   "history90d": [
     {
@@ -372,60 +372,65 @@
     },
     {
       "date": "2026-08-15",
-      "close": 62931.26205586947
+      "close": 62891.48604263798
     }
   ],
   "blocks": [
     {
-      "height": 962552,
-      "id": "0000000000000000000002466c73b4984d0c8ce2ccb96ae06bca78f4ee58790d",
-      "timestamp": 1786786273,
-      "txCount": 5930
+      "height": 962577,
+      "id": "000000000000000000011c2eac41af5599a37ced02749ccda094a6096194512f",
+      "timestamp": 1786798339,
+      "txCount": 5762
     },
     {
-      "height": 962551,
-      "id": "00000000000000000001671e1ff575773837131a34dfac7303615f812e1e1da2",
-      "timestamp": 1786786244,
-      "txCount": 6288
+      "height": 962576,
+      "id": "0000000000000000000208e5e39681c39efa3c3ca84cbbf84f33ba9a68c79e6f",
+      "timestamp": 1786798087,
+      "txCount": 6151
     },
     {
-      "height": 962550,
-      "id": "00000000000000000000ca4727d75b60957a4d59821830f1ccb2abe69f6f9a87",
-      "timestamp": 1786785980,
-      "txCount": 4841
+      "height": 962575,
+      "id": "00000000000000000000c16801af72b72acef27b9506136e6def59cac8621c38",
+      "timestamp": 1786798014,
+      "txCount": 4754
     },
     {
-      "height": 962549,
-      "id": "0000000000000000000129793cfe2a0687776cae6cd382be6423ff3b9c2eee9c",
-      "timestamp": 1786785038,
-      "txCount": 4455
+      "height": 962574,
+      "id": "000000000000000000002ac1e92f30fec0705284d0e82672c591067a471ca999",
+      "timestamp": 1786797380,
+      "txCount": 4025
     },
     {
-      "height": 962548,
-      "id": "0000000000000000000094d518c770964f9ad59c6d4d7fe81e97848b6f59bfe5",
-      "timestamp": 1786784297,
-      "txCount": 5658
+      "height": 962573,
+      "id": "00000000000000000000c219bcfad4e88b22dec9c31da5e0ad457685808c7ca5",
+      "timestamp": 1786796284,
+      "txCount": 6786
     },
     {
-      "height": 962547,
-      "id": "000000000000000000021b1d45d411554e9e7d9078e982f2835a7a42fcc440eb",
-      "timestamp": 1786783588,
-      "txCount": 6054
+      "height": 962572,
+      "id": "000000000000000000004b1e6cd4a8d25f59c4029c4cd75f10bdb29f33c4d7e0",
+      "timestamp": 1786796246,
+      "txCount": 6566
     },
     {
-      "height": 962546,
-      "id": "00000000000000000000aabfd0799a4f7258f76a7856b2bff49f62c93b290662",
-      "timestamp": 1786783479,
-      "txCount": 4714
+      "height": 962571,
+      "id": "00000000000000000000f5bf574ea5b6c34a5a4da2e692fd5ea9ac0ad3d17938",
+      "timestamp": 1786795982,
+      "txCount": 4904
     },
     {
-      "height": 962545,
-      "id": "000000000000000000010065af0f4f100532a50c2549c0d0fc3cd046885e2e9d",
-      "timestamp": 1786781976,
-      "txCount": 5177
+      "height": 962570,
+      "id": "000000000000000000000ca18dd7dbd43167a897d4f7674c7b43f0bc667d9926",
+      "timestamp": 1786795038,
+      "txCount": 4690
     }
   ],
   "news": [
+    {
+      "title": "Wall Street's private blockchain obsession is a 'race to the bottom,' Ethereum advocate Raman warns",
+      "link": "https://www.coindesk.com/business/2026/08/15/wall-street-s-private-blockchain-obsession-is-a-race-to-the-bottom-ethereum-advocate-raman-warns",
+      "pubDate": "Sat, 15 Aug 2026 12:00:00 +0000"
+    },
     {
       "title": "Trump expected to attend White House meeting with crypto CEOs, sources say",
       "link": "https://www.coindesk.com/policy/2026/08/14/trump-expected-to-attend-white-house-meeting-with-crypto-ceos-sources-say",
@@ -480,11 +485,6 @@
       "title": "Cluster of headwinds weigh on bitcoin. XRP teeters near $1",
       "link": "https://www.coindesk.com/markets/2026/08/14/cluster-of-headwinds-weigh-on-bitcoin-xrp-teeters-near-usd1",
       "pubDate": "Fri, 14 Aug 2026 07:14:37 +0000"
-    },
-    {
-      "title": "Bitcoin holders Strategy and Metaplanet face stock-index exclusion under MSCI’s new proposal",
-      "link": "https://www.coindesk.com/markets/2026/08/14/bitcoin-holders-strategy-and-metaplanet-face-stock-index-exclusion-under-msci-s-new-proposal",
-      "pubDate": "Fri, 14 Aug 2026 06:20:54 +0000"
     }
   ]
 }
