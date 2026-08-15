@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-08-05T18:10:01.825Z",
+  "fetchedAt": "2026-08-15T00:10:01.202Z",
   "note": "main services only; databases/caches/workers are filtered as implementation detail",
   "services": [
     {
@@ -99,10 +99,6 @@
       "project": "infra"
     },
     {
-      "name": "dockhand",
-      "project": "infra"
-    },
-    {
       "name": "glance",
       "project": "infra"
     },
@@ -113,6 +109,18 @@
     {
       "name": "uptime-kuma",
       "project": "infra"
+    },
+    {
+      "name": "komodo-core-1",
+      "project": "komodo"
+    },
+    {
+      "name": "komodo-mongo-1",
+      "project": "komodo"
+    },
+    {
+      "name": "komodo-periphery-1",
+      "project": "komodo"
     },
     {
       "name": "notifiarr",
