@@ -1,13 +1,13 @@
 {
-  "fetchedAt": "2026-08-16T15:33:23.553Z",
+  "fetchedAt": "2026-08-16T18:44:47.754Z",
   "price": {
-    "usd": 63047,
-    "time": 1786894213
+    "usd": 63103,
+    "time": 1786905608
   },
   "moves": {
-    "d1": 0.02530775020159748,
-    "d7": -2.796032542773119,
-    "d30": -1.342546956128643
+    "d1": 0.11415285360081295,
+    "d7": -2.709693427865123,
+    "d30": -1.2549168171774316
   },
   "history90d": [
     {
@@ -372,60 +372,70 @@
     },
     {
       "date": "2026-08-16",
-      "close": 63055.600527910676
+      "close": 63092.80769857578
     }
   ],
   "blocks": [
     {
-      "height": 962749,
-      "id": "0000000000000000000081d70ffabf0215553453b65342caef4b811321fabdf1",
-      "timestamp": 1786893251,
-      "txCount": 6523
+      "height": 962770,
+      "id": "00000000000000000001f37fcb1f6581ef835e14614a01d696cfddab681a53e5",
+      "timestamp": 1786905720,
+      "txCount": 4507
     },
     {
-      "height": 962748,
-      "id": "00000000000000000000e9be70bf79b80050fe8661764f4f24f8482e6b18d9a9",
-      "timestamp": 1786892953,
-      "txCount": 5221
+      "height": 962769,
+      "id": "00000000000000000001aa1b03ec01ee08293489f1824f463a1821b1df330d55",
+      "timestamp": 1786905000,
+      "txCount": 4581
     },
     {
-      "height": 962747,
-      "id": "00000000000000000001f58a133e224b388989d8bed949048992d67fb1811247",
-      "timestamp": 1786892416,
-      "txCount": 6387
+      "height": 962768,
+      "id": "000000000000000000019c08440ef2fe905895a1a3475d20bf8a3fd6c757ff03",
+      "timestamp": 1786903212,
+      "txCount": 4701
     },
     {
-      "height": 962746,
-      "id": "00000000000000000001a35b8f303db081fa5b33cca0836f94d3de9895254297",
-      "timestamp": 1786892194,
-      "txCount": 5619
+      "height": 962767,
+      "id": "00000000000000000001fe0b4091ce82d8ed3c0cc034c6ca07d86c7e8eab8ff8",
+      "timestamp": 1786901849,
+      "txCount": 6202
     },
     {
-      "height": 962745,
-      "id": "000000000000000000012a974a1b22cb6b1144fca1aa5a8186d132af01de7067",
-      "timestamp": 1786891922,
-      "txCount": 4251
+      "height": 962766,
+      "id": "00000000000000000001939dd3ee67b01293979088f9be87d7eac9f5b5ee1e53",
+      "timestamp": 1786901573,
+      "txCount": 6532
     },
     {
-      "height": 962744,
-      "id": "000000000000000000013a2d0f2e1f7cbc131d2216ad2550eb93567b2e1b52a4",
-      "timestamp": 1786891341,
-      "txCount": 3248
+      "height": 962765,
+      "id": "00000000000000000001533e0a800bd545a7c47666c860f9dc689a9e706be3c7",
+      "timestamp": 1786901499,
+      "txCount": 4460
     },
     {
-      "height": 962743,
-      "id": "000000000000000000006db4571c18a86c56d39a0de980cb5fe738d99d319918",
-      "timestamp": 1786890798,
-      "txCount": 3727
+      "height": 962764,
+      "id": "000000000000000000001250402f4660c7c65ab9e7dfb23fccd9bdc59181b3e7",
+      "timestamp": 1786900714,
+      "txCount": 5549
     },
     {
-      "height": 962742,
-      "id": "00000000000000000000a1ac60a6becd71186d96d359e7d7ff6e74276f9e0ef9",
-      "timestamp": 1786889842,
-      "txCount": 4309
+      "height": 962763,
+      "id": "000000000000000000010806c0848f7114fe7144cdd526b492485ef8606b21ce",
+      "timestamp": 1786900684,
+      "txCount": 5242
     }
   ],
   "news": [
+    {
+      "title": "The SEC meeting that wasn't: State of Crypto",
+      "link": "https://www.coindesk.com/policy/2026/08/16/the-sec-meeting-that-wasn-t-state-of-crypto",
+      "pubDate": "Sun, 16 Aug 2026 18:30:00 +0000"
+    },
+    {
+      "title": "Crypto investors are looking past market-cap rankings and back to fundamentals",
+      "link": "https://www.coindesk.com/business/2026/08/16/crypto-investors-are-looking-past-market-cap-rankings-and-back-to-fundamentals",
+      "pubDate": "Sun, 16 Aug 2026 16:00:00 +0000"
+    },
     {
       "title": "Crypto wallet SafePal reveals a data breach exposing nearly 40,000 customers' order info",
       "link": "https://www.coindesk.com/tech/2026/08/16/crypto-wallet-safepal-reveals-a-data-breach-exposing-nearly-40-000-customers-order-info",
@@ -475,16 +485,6 @@
       "title": "Clarity survives (barely), Strategy sells and the untold story of Mastercard's $1.8 billion deal: Crypto's week in 5 stories",
       "link": "https://www.coindesk.com/business/2026/08/15/clarity-survives-barely-strategy-sells-and-the-untold-story-of-mastercard-s-usd1-8-billion-deal-crypto-s-week-in-5-stories",
       "pubDate": "Sat, 15 Aug 2026 13:00:00 +0000"
-    },
-    {
-      "title": "Wall Street's private blockchain obsession is a 'race to the bottom,' Ethereum advocate Raman warns",
-      "link": "https://www.coindesk.com/business/2026/08/15/wall-street-s-private-blockchain-obsession-is-a-race-to-the-bottom-ethereum-advocate-raman-warns",
-      "pubDate": "Sat, 15 Aug 2026 12:00:00 +0000"
-    },
-    {
-      "title": "Trump expected to attend White House meeting with crypto CEOs, sources say",
-      "link": "https://www.coindesk.com/policy/2026/08/14/trump-expected-to-attend-white-house-meeting-with-crypto-ceos-sources-say",
-      "pubDate": "Fri, 14 Aug 2026 23:41:49 +0000"
     }
   ]
 }
