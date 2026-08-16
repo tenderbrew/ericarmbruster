@@ -1,13 +1,13 @@
 {
-  "fetchedAt": "2026-08-16T09:37:19.630Z",
+  "fetchedAt": "2026-08-16T12:57:39.116Z",
   "price": {
-    "usd": 63006,
-    "time": 1786872611
+    "usd": 62943,
+    "time": 1786884607
   },
   "moves": {
-    "d1": -0.0397395576442805,
-    "d7": -2.85924510904505,
-    "d30": -1.4067047364322072
+    "d1": -0.139690298968409,
+    "d7": -2.956376613316547,
+    "d30": -1.5052886427523116
   },
   "history90d": [
     {
@@ -372,60 +372,65 @@
     },
     {
       "date": "2026-08-16",
-      "close": 62998.84567181814
+      "close": 62957.617382720855
     }
   ],
   "blocks": [
     {
-      "height": 962709,
-      "id": "000000000000000000000c14373fd65f74a3c0b2472f783dbce1cdb43eda7564",
-      "timestamp": 1786872514,
-      "txCount": 7025
+      "height": 962737,
+      "id": "0000000000000000000129d9fc91cb219bc4b0e80ee5c7f98856add8e8345bec",
+      "timestamp": 1786884353,
+      "txCount": 4465
     },
     {
-      "height": 962708,
-      "id": "00000000000000000001183e4502076f8437e64dd52df9ca24ac74f9a78edf0c",
-      "timestamp": 1786872462,
-      "txCount": 5828
+      "height": 962736,
+      "id": "0000000000000000000057d27dbd212472f53b3e69b9386b8f960b0e5b3c3ea5",
+      "timestamp": 1786882955,
+      "txCount": 4939
     },
     {
-      "height": 962707,
-      "id": "00000000000000000001b54fb87f1b0870b0cd6e1042a90046cadcee6ab9e422",
-      "timestamp": 1786871721,
-      "txCount": 5404
+      "height": 962735,
+      "id": "00000000000000000000785e80946cc30e48240e8cd64e04dbcc884d9d29dbe7",
+      "timestamp": 1786882103,
+      "txCount": 7382
     },
     {
-      "height": 962706,
-      "id": "000000000000000000004cb400ef0899ff216cbecec96df6d36e48abb684e39d",
-      "timestamp": 1786871651,
-      "txCount": 6166
+      "height": 962734,
+      "id": "00000000000000000000b87d0be8d5e95d4dcad032fd651896c9f6c4c3d208ac",
+      "timestamp": 1786882079,
+      "txCount": 4535
     },
     {
-      "height": 962705,
-      "id": "00000000000000000001e54de5d77c71224dedf078b0e8cbb14ee363993df9e9",
-      "timestamp": 1786871141,
-      "txCount": 235
+      "height": 962733,
+      "id": "0000000000000000000038b4822edba50ff8ee5de00a1706787083a7f39cd63c",
+      "timestamp": 1786880901,
+      "txCount": 6695
     },
     {
-      "height": 962704,
-      "id": "000000000000000000006b22d326a9af37b1c36e790a952188796fdb3a148c6a",
-      "timestamp": 1786871048,
-      "txCount": 5193
+      "height": 962732,
+      "id": "00000000000000000001bce1d05f01d66deb841c488ac6f819a9e8c84828d039",
+      "timestamp": 1786880716,
+      "txCount": 5371
     },
     {
-      "height": 962703,
-      "id": "000000000000000000003e1973ed1b5386dafc16c092ae3d2dc89bdff6b0f80c",
-      "timestamp": 1786870631,
-      "txCount": 4619
+      "height": 962731,
+      "id": "00000000000000000000f82ca8080f49ba5bf76229899d0037debfc9a7c3473a",
+      "timestamp": 1786880140,
+      "txCount": 5985
     },
     {
-      "height": 962702,
-      "id": "0000000000000000000056934814b9e0ea5d30f78044b3f587a4c60c44c1a3ff",
-      "timestamp": 1786869473,
-      "txCount": 6056
+      "height": 962730,
+      "id": "00000000000000000002280f16c126b7460378af0c482447254a2f0b87d1543b",
+      "timestamp": 1786879700,
+      "txCount": 4535
     }
   ],
   "news": [
+    {
+      "title": "The 'long bitcoin, short the bankers' era is officially over as TradFi giants embrace digital assets",
+      "link": "https://www.coindesk.com/business/2026/08/13/the-long-bitcoin-short-the-bankers-era-is-officially-over-as-tradfi-giants-embrace-digital-assets",
+      "pubDate": "Sun, 16 Aug 2026 12:00:00 +0000"
+    },
     {
       "title": "Robot maker Unitree is going public. Hyperliquid traders see 4x upside from IPO price",
       "link": "https://www.coindesk.com/markets/2026/08/15/robot-maker-unitree-is-going-public-hyperliquid-traders-see-4x-upside-from-ipo-price",
@@ -480,11 +485,6 @@
       "title": "Strategy says MSCI should measure markets, not dictate corporate assets",
       "link": "https://www.coindesk.com/markets/2026/08/14/strategy-says-msci-should-measure-markets-not-dictate-corporate-assets",
       "pubDate": "Fri, 14 Aug 2026 14:12:34 +0000"
-    },
-    {
-      "title": "Israel’s largest bank to offer crypto trading with Galaxy",
-      "link": "https://www.coindesk.com/markets/2026/08/14/israel-s-largest-bank-partners-with-galaxy-for-crypto-trading",
-      "pubDate": "Fri, 14 Aug 2026 13:51:37 +0000"
     }
   ]
 }
