@@ -1,13 +1,13 @@
 {
-  "fetchedAt": "2026-08-16T12:57:39.116Z",
+  "fetchedAt": "2026-08-16T15:33:23.553Z",
   "price": {
-    "usd": 62943,
-    "time": 1786884607
+    "usd": 63047,
+    "time": 1786894213
   },
   "moves": {
-    "d1": -0.139690298968409,
-    "d7": -2.956376613316547,
-    "d30": -1.5052886427523116
+    "d1": 0.02530775020159748,
+    "d7": -2.796032542773119,
+    "d30": -1.342546956128643
   },
   "history90d": [
     {
@@ -372,60 +372,75 @@
     },
     {
       "date": "2026-08-16",
-      "close": 62957.617382720855
+      "close": 63055.600527910676
     }
   ],
   "blocks": [
     {
-      "height": 962737,
-      "id": "0000000000000000000129d9fc91cb219bc4b0e80ee5c7f98856add8e8345bec",
-      "timestamp": 1786884353,
-      "txCount": 4465
+      "height": 962749,
+      "id": "0000000000000000000081d70ffabf0215553453b65342caef4b811321fabdf1",
+      "timestamp": 1786893251,
+      "txCount": 6523
     },
     {
-      "height": 962736,
-      "id": "0000000000000000000057d27dbd212472f53b3e69b9386b8f960b0e5b3c3ea5",
-      "timestamp": 1786882955,
-      "txCount": 4939
+      "height": 962748,
+      "id": "00000000000000000000e9be70bf79b80050fe8661764f4f24f8482e6b18d9a9",
+      "timestamp": 1786892953,
+      "txCount": 5221
     },
     {
-      "height": 962735,
-      "id": "00000000000000000000785e80946cc30e48240e8cd64e04dbcc884d9d29dbe7",
-      "timestamp": 1786882103,
-      "txCount": 7382
+      "height": 962747,
+      "id": "00000000000000000001f58a133e224b388989d8bed949048992d67fb1811247",
+      "timestamp": 1786892416,
+      "txCount": 6387
     },
     {
-      "height": 962734,
-      "id": "00000000000000000000b87d0be8d5e95d4dcad032fd651896c9f6c4c3d208ac",
-      "timestamp": 1786882079,
-      "txCount": 4535
+      "height": 962746,
+      "id": "00000000000000000001a35b8f303db081fa5b33cca0836f94d3de9895254297",
+      "timestamp": 1786892194,
+      "txCount": 5619
     },
     {
-      "height": 962733,
-      "id": "0000000000000000000038b4822edba50ff8ee5de00a1706787083a7f39cd63c",
-      "timestamp": 1786880901,
-      "txCount": 6695
+      "height": 962745,
+      "id": "000000000000000000012a974a1b22cb6b1144fca1aa5a8186d132af01de7067",
+      "timestamp": 1786891922,
+      "txCount": 4251
     },
     {
-      "height": 962732,
-      "id": "00000000000000000001bce1d05f01d66deb841c488ac6f819a9e8c84828d039",
-      "timestamp": 1786880716,
-      "txCount": 5371
+      "height": 962744,
+      "id": "000000000000000000013a2d0f2e1f7cbc131d2216ad2550eb93567b2e1b52a4",
+      "timestamp": 1786891341,
+      "txCount": 3248
     },
     {
-      "height": 962731,
-      "id": "00000000000000000000f82ca8080f49ba5bf76229899d0037debfc9a7c3473a",
-      "timestamp": 1786880140,
-      "txCount": 5985
+      "height": 962743,
+      "id": "000000000000000000006db4571c18a86c56d39a0de980cb5fe738d99d319918",
+      "timestamp": 1786890798,
+      "txCount": 3727
     },
     {
-      "height": 962730,
-      "id": "00000000000000000002280f16c126b7460378af0c482447254a2f0b87d1543b",
-      "timestamp": 1786879700,
-      "txCount": 4535
+      "height": 962742,
+      "id": "00000000000000000000a1ac60a6becd71186d96d359e7d7ff6e74276f9e0ef9",
+      "timestamp": 1786889842,
+      "txCount": 4309
     }
   ],
   "news": [
+    {
+      "title": "Crypto wallet SafePal reveals a data breach exposing nearly 40,000 customers' order info",
+      "link": "https://www.coindesk.com/tech/2026/08/16/crypto-wallet-safepal-reveals-a-data-breach-exposing-nearly-40-000-customers-order-info",
+      "pubDate": "Sun, 16 Aug 2026 14:02:32 +0000"
+    },
+    {
+      "title": "MiCA's cleanup is creating a new scam wave across the European Union",
+      "link": "https://www.coindesk.com/business/2026/08/14/mica-s-cleanup-is-creating-a-new-scam-wave-across-the-european-union",
+      "pubDate": "Sun, 16 Aug 2026 14:00:00 +0000"
+    },
+    {
+      "title": "The stablecoin yield clash that won't go away has banks, crypto battling over tradition",
+      "link": "https://www.coindesk.com/news-analysis/2026/08/14/the-stablecoin-yield-clash-that-won-t-go-away-has-banks-crypto-battling-over-tradition",
+      "pubDate": "Sun, 16 Aug 2026 13:00:00 +0000"
+    },
     {
       "title": "The 'long bitcoin, short the bankers' era is officially over as TradFi giants embrace digital assets",
       "link": "https://www.coindesk.com/business/2026/08/13/the-long-bitcoin-short-the-bankers-era-is-officially-over-as-tradfi-giants-embrace-digital-assets",
@@ -470,21 +485,6 @@
       "title": "Trump expected to attend White House meeting with crypto CEOs, sources say",
       "link": "https://www.coindesk.com/policy/2026/08/14/trump-expected-to-attend-white-house-meeting-with-crypto-ceos-sources-say",
       "pubDate": "Fri, 14 Aug 2026 23:41:49 +0000"
-    },
-    {
-      "title": "Trump-backed World Liberty wins conditional bank charter from federal regulator",
-      "link": "https://www.coindesk.com/policy/2026/08/14/trump-backed-world-liberty-wins-conditional-bank-charter-from-federal-regulator",
-      "pubDate": "Fri, 14 Aug 2026 21:05:23 +0000"
-    },
-    {
-      "title": "Tokenization stocks slip as SEC delay puts 'speed bump' in crypto’s Wall Street push",
-      "link": "https://www.coindesk.com/markets/2026/08/14/tokenization-stocks-slip-as-sec-delay-puts-speed-bump-in-crypto-s-wall-street-push",
-      "pubDate": "Fri, 14 Aug 2026 17:48:04 +0000"
-    },
-    {
-      "title": "Strategy says MSCI should measure markets, not dictate corporate assets",
-      "link": "https://www.coindesk.com/markets/2026/08/14/strategy-says-msci-should-measure-markets-not-dictate-corporate-assets",
-      "pubDate": "Fri, 14 Aug 2026 14:12:34 +0000"
     }
   ]
 }
