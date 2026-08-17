@@ -1,13 +1,13 @@
 {
-  "fetchedAt": "2026-08-17T07:13:05.535Z",
+  "fetchedAt": "2026-08-17T09:54:10.368Z",
   "price": {
-    "usd": 63510,
-    "time": 1786950309
+    "usd": 63225,
+    "time": 1786960211
   },
   "moves": {
-    "d1": 1.060243550698492,
-    "d7": -0.6347611909692463,
-    "d30": -1.984242391361657
+    "d1": 0.6067374979201956,
+    "d7": -1.0806609399941824,
+    "d30": -2.424086367404199
   },
   "history90d": [
     {
@@ -372,60 +372,80 @@
     },
     {
       "date": "2026-08-17",
-      "close": 63538.57824743056
+      "close": 63300.80018651999
     }
   ],
   "blocks": [
     {
-      "height": 962851,
-      "id": "00000000000000000001bdf6a1bcade58bcc7a957563ec58a013e8894f807a21",
-      "timestamp": 1786950513,
-      "txCount": 6357
+      "height": 962870,
+      "id": "00000000000000000001fa2cd219bfe32721f09598d77b6651c644f15688154f",
+      "timestamp": 1786960192,
+      "txCount": 5103
     },
     {
-      "height": 962850,
-      "id": "0000000000000000000151e646e09b52375e95cecab96592cc0674c1fca2d774",
-      "timestamp": 1786950522,
-      "txCount": 6236
+      "height": 962869,
+      "id": "000000000000000000012ede6e1029ac5349ce61417bee7a6f9f588f37d6ff3e",
+      "timestamp": 1786959732,
+      "txCount": 5278
     },
     {
-      "height": 962849,
-      "id": "00000000000000000001551f4834a11b198ea32b256b9a6cd179abad78cc0d75",
-      "timestamp": 1786950302,
-      "txCount": 6406
+      "height": 962868,
+      "id": "00000000000000000000b39fa9617d417ca6af1348ece0af6dad178cdd623636",
+      "timestamp": 1786959265,
+      "txCount": 5897
     },
     {
-      "height": 962848,
-      "id": "000000000000000000002afc5b71e65efa60a368d4c6628825ad5b1e67983f29",
-      "timestamp": 1786950203,
-      "txCount": 5304
+      "height": 962867,
+      "id": "00000000000000000001fce6b315d0c651c635fe0b0e5a7f95d583016dc83a14",
+      "timestamp": 1786959083,
+      "txCount": 3694
     },
     {
-      "height": 962847,
-      "id": "0000000000000000000113df97f016132959392e0cb42ea3342ed91bf82243db",
-      "timestamp": 1786949714,
-      "txCount": 4627
+      "height": 962866,
+      "id": "0000000000000000000078c5913bb77e9304e6e998989e7f6522789f40111b76",
+      "timestamp": 1786957615,
+      "txCount": 4555
     },
     {
-      "height": 962846,
-      "id": "00000000000000000000f586cf0da39a38314f0e7646f2cb47c51d422c2befaa",
-      "timestamp": 1786949284,
-      "txCount": 4528
+      "height": 962865,
+      "id": "0000000000000000000075099fa11413891c639337958be00e71c953001cc226",
+      "timestamp": 1786957238,
+      "txCount": 4584
     },
     {
-      "height": 962845,
-      "id": "00000000000000000000e18c0e63cf20dc0da5d2c3923ffd98eb7a1ef7aa4a82",
-      "timestamp": 1786948515,
-      "txCount": 4093
+      "height": 962864,
+      "id": "000000000000000000014c8342acb8ad1a7ef467f33d1d4f75b2926f6933e96a",
+      "timestamp": 1786956245,
+      "txCount": 5543
     },
     {
-      "height": 962844,
-      "id": "000000000000000000001f58412d5378c590f8cc6bae0f31fb733b3e615cdb1d",
-      "timestamp": 1786947465,
-      "txCount": 4248
+      "height": 962863,
+      "id": "000000000000000000021825d889318c1a2536ee20848c1654d629c9229cc3d8",
+      "timestamp": 1786956160,
+      "txCount": 4749
     }
   ],
   "news": [
+    {
+      "title": "Binance handed user data to Russia that led to a Ukrainian donor's arrest",
+      "link": "https://www.coindesk.com/policy/2026/08/17/binance-handed-user-data-to-russia-that-led-to-a-ukrainian-donor-s-arrest",
+      "pubDate": "Mon, 17 Aug 2026 09:16:14 +0000"
+    },
+    {
+      "title": "Coinbase-Circle USDC collaboration, FOMC minutes, oil price: Crypto Week Ahead",
+      "link": "https://www.coindesk.com/markets/2026/08/17/coinbase-circle-usdc-collaboration-fomc-minutes-oil-price-crypto-week-ahead",
+      "pubDate": "Mon, 17 Aug 2026 09:13:02 +0000"
+    },
+    {
+      "title": "Live updates: Bitcoin flat near $63,500; lapsing US-Iran ceasefire revives the oil threat",
+      "link": "https://www.coindesk.com/markets/2026/08/17/live-updates-bitcoin-flat-near-usd63-500-but-the-flows-have-quietly-turned",
+      "pubDate": "Mon, 17 Aug 2026 08:38:26 +0000"
+    },
+    {
+      "title": "September Fed interest-rate increase is 'very unlikely,' Goldman Sachs says",
+      "link": "https://www.coindesk.com/markets/2026/08/17/september-fed-interest-rate-increase-is-very-unlikely-goldman-sachs-says",
+      "pubDate": "Mon, 17 Aug 2026 08:16:11 +0000"
+    },
     {
       "title": "The bitcoin futures market looks like a crowded club with a tiny exit – and it could cause pain",
       "link": "https://www.coindesk.com/markets/2026/08/17/the-bitcoin-futures-market-has-a-crowded-club-tiny-exit-problem-and-it-could-cause-pain",
@@ -437,7 +457,7 @@
       "pubDate": "Mon, 17 Aug 2026 04:43:03 +0000"
     },
     {
-      "title": "Bitcoin tops $64,000 in Asia morning hours as HYPE jumps 8% on the week",
+      "title": "Bitcoin nears $64,000 in Asia morning hours as HYPE jumps 8% on the week",
       "link": "https://www.coindesk.com/markets/2026/08/17/bitcoin-tops-usd64-000-in-asia-morning-hours-as-hype-jumps-8-on-the-week",
       "pubDate": "Mon, 17 Aug 2026 04:14:00 +0000"
     },
@@ -465,26 +485,6 @@
       "title": "The stablecoin yield clash that won't go away has banks, crypto battling over tradition",
       "link": "https://www.coindesk.com/news-analysis/2026/08/14/the-stablecoin-yield-clash-that-won-t-go-away-has-banks-crypto-battling-over-tradition",
       "pubDate": "Sun, 16 Aug 2026 13:00:00 +0000"
-    },
-    {
-      "title": "The 'long bitcoin, short the bankers' era is officially over as TradFi giants embrace digital assets",
-      "link": "https://www.coindesk.com/business/2026/08/13/the-long-bitcoin-short-the-bankers-era-is-officially-over-as-tradfi-giants-embrace-digital-assets",
-      "pubDate": "Sun, 16 Aug 2026 12:00:00 +0000"
-    },
-    {
-      "title": "Robot maker Unitree is going public. Hyperliquid traders see 4x upside from IPO price",
-      "link": "https://www.coindesk.com/markets/2026/08/15/robot-maker-unitree-is-going-public-hyperliquid-traders-see-4x-upside-from-ipo-price",
-      "pubDate": "Sat, 15 Aug 2026 16:00:00 +0000"
-    },
-    {
-      "title": "Swiss mega-bank UBS ramps up its Bitcoin exposure with a massive 24-fold surge in ETF call options",
-      "link": "https://www.coindesk.com/business/2026/08/15/swiss-mega-bank-ubs-ramps-up-its-bitcoin-exposure-with-a-massive-24-fold-surge-in-etf-call-options",
-      "pubDate": "Sat, 15 Aug 2026 15:56:05 +0000"
-    },
-    {
-      "title": "Why the world’s second-largest Bitcoin mining power is shutting down rigs in its capital city",
-      "link": "https://www.coindesk.com/policy/2026/08/15/why-the-world-s-second-largest-bitcoin-mining-power-is-shutting-down-rigs-in-its-capital-city",
-      "pubDate": "Sat, 15 Aug 2026 15:21:15 +0000"
     }
   ]
 }
