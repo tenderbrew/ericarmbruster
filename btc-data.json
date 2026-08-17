@@ -1,13 +1,13 @@
 {
-  "fetchedAt": "2026-08-17T15:36:17.414Z",
+  "fetchedAt": "2026-08-17T18:55:12.199Z",
   "price": {
-    "usd": 63989,
-    "time": 1786980607
+    "usd": 64397,
+    "time": 1786992609
   },
   "moves": {
-    "d1": 1.822451969227612,
-    "d7": 0.11466329949723075,
-    "d30": -1.244995849170849
+    "d1": 2.47168168688916,
+    "d7": 0.7530039928381971,
+    "d30": -0.6153244729415253
   },
   "history90d": [
     {
@@ -372,60 +372,70 @@
     },
     {
       "date": "2026-08-17",
-      "close": 63947.80036581901
+      "close": 64384.29535087573
     }
   ],
   "blocks": [
     {
-      "height": 962907,
-      "id": "00000000000000000001cb00ef1a32ec897a536db14e34f18d522beed2002060",
-      "timestamp": 1786980298,
-      "txCount": 6156
+      "height": 962931,
+      "id": "00000000000000000001e94663172ff0e89f73d6f3c7e9add92830dbe5e02eb7",
+      "timestamp": 1786992658,
+      "txCount": 4023
     },
     {
-      "height": 962906,
-      "id": "0000000000000000000114177eb586e3e760913c9b7e7a34cb569a595c83c6e9",
-      "timestamp": 1786979985,
-      "txCount": 4192
+      "height": 962930,
+      "id": "00000000000000000001a24bf5f99e4ea9f137a7e6eb86a81ffdb0115ed753ad",
+      "timestamp": 1786991808,
+      "txCount": 5949
     },
     {
-      "height": 962905,
-      "id": "000000000000000000007fb5bce32a68ef70dc02eaa8f6066d1885c9edc23e65",
-      "timestamp": 1786979394,
-      "txCount": 3810
+      "height": 962929,
+      "id": "00000000000000000000fa8db51d06aa43bf1bebb2d2e40e1f07401f3dbe413f",
+      "timestamp": 1786991618,
+      "txCount": 4975
     },
     {
-      "height": 962904,
-      "id": "00000000000000000000b0a3340a237c2ac8198a47848a71dac92c33582942b1",
-      "timestamp": 1786979361,
-      "txCount": 4126
+      "height": 962928,
+      "id": "00000000000000000001bbaf80ba5bbca4719279f2ba36cdc77a27f08dec4bd0",
+      "timestamp": 1786991360,
+      "txCount": 3915
     },
     {
-      "height": 962903,
-      "id": "000000000000000000000eadaec4256d1616118d5c53864bddcd15d2f7abf663",
-      "timestamp": 1786978502,
-      "txCount": 4467
+      "height": 962927,
+      "id": "000000000000000000003dfb4f622af445791cc4635656f15cafa9106eabeb73",
+      "timestamp": 1786990807,
+      "txCount": 4138
     },
     {
-      "height": 962902,
-      "id": "000000000000000000001c7ade27e8692cd50427b1caa1a3ebdfb46392ac002a",
-      "timestamp": 1786977237,
-      "txCount": 3884
+      "height": 962926,
+      "id": "00000000000000000000ebe19f2c5d27a59d8d60fc71a30b4043b3cd88c7bc49",
+      "timestamp": 1786990089,
+      "txCount": 4907
     },
     {
-      "height": 962901,
-      "id": "0000000000000000000211d728e93197da0a61fe9890e1d28d10627d60c8779f",
-      "timestamp": 1786976767,
-      "txCount": 4158
+      "height": 962925,
+      "id": "0000000000000000000223cb875cd5ea9b9919056dd62a6858d4294d83ac2a58",
+      "timestamp": 1786989780,
+      "txCount": 4154
     },
     {
-      "height": 962900,
-      "id": "000000000000000000010924053030b9671f097efa5fa0f01cd884c8630aaf41",
-      "timestamp": 1786976379,
-      "txCount": 4500
+      "height": 962924,
+      "id": "0000000000000000000070b6acfa6c8a8e122989b52ead48d68a872bb57b488c",
+      "timestamp": 1786989009,
+      "txCount": 5790
     }
   ],
   "news": [
+    {
+      "title": "Saylor says share buyback isn’t priority as Strategy builds $4.8 billion cash reserve",
+      "link": "https://www.coindesk.com/markets/2026/08/17/saylor-says-share-buyback-isn-t-a-priority-as-it-builds-its-usd4-8-billion-cash-reserve-though-a-possibility",
+      "pubDate": "Mon, 17 Aug 2026 18:53:47 +0000"
+    },
+    {
+      "title": "BitMart founder dismisses calls for audit as users report blocked funds, unpaid employees",
+      "link": "https://www.coindesk.com/business/2026/08/17/bitmart-founder-dismisses-calls-for-audit-as-users-report-blocked-funds-unpaid-employees",
+      "pubDate": "Mon, 17 Aug 2026 16:40:08 +0000"
+    },
     {
       "title": "Compound bets $52 million, new leadership team in switch to institutional focus",
       "link": "https://www.coindesk.com/business/2026/08/17/compound-bets-usd52-million-new-leadership-team-in-switch-to-institutional-focus",
@@ -475,16 +485,6 @@
       "title": "Bitcoin's biggest holders, Strategy and Metaplanet, are betting on math, not price",
       "link": "https://www.coindesk.com/daybook-us/2026/08/17/bitcoin-s-biggest-holders-strategy-and-metaplanet-are-betting-on-math-not-price",
       "pubDate": "Mon, 17 Aug 2026 11:28:41 +0000"
-    },
-    {
-      "title": "Bitpanda fined 70,000 euros in Austria’s first published MiCA enforcement case",
-      "link": "https://www.coindesk.com/business/2026/08/17/bitpanda-fined-eur70-000-in-austria-s-first-published-mica-enforcement-case",
-      "pubDate": "Mon, 17 Aug 2026 10:52:31 +0000"
-    },
-    {
-      "title": "Bitcoin tracks equity bounce, but $390 million ETF outflow week keeps bulls on back foot",
-      "link": "https://www.coindesk.com/markets/2026/08/17/bitcoin-tracks-equity-bounce-but-usd390-million-etf-outflow-week-keeps-bulls-on-back-foot",
-      "pubDate": "Mon, 17 Aug 2026 09:59:55 +0000"
     }
   ]
 }
