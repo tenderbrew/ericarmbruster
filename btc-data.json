@@ -1,13 +1,13 @@
 {
-  "fetchedAt": "2026-08-17T09:54:10.368Z",
+  "fetchedAt": "2026-08-17T13:03:13.193Z",
   "price": {
-    "usd": 63225,
-    "time": 1786960211
+    "usd": 63484,
+    "time": 1786971606
   },
   "moves": {
-    "d1": 0.6067374979201956,
-    "d7": -1.0806609399941824,
-    "d30": -2.424086367404199
+    "d1": 1.0188710686906521,
+    "d7": -0.6754397645645116,
+    "d30": -2.0243685084743057
   },
   "history90d": [
     {
@@ -372,60 +372,95 @@
     },
     {
       "date": "2026-08-17",
-      "close": 63300.80018651999
+      "close": 63486.13904857778
     }
   ],
   "blocks": [
     {
-      "height": 962870,
-      "id": "00000000000000000001fa2cd219bfe32721f09598d77b6651c644f15688154f",
-      "timestamp": 1786960192,
-      "txCount": 5103
+      "height": 962892,
+      "id": "00000000000000000001bafb5b32f7df666d0d8a14babe80776908fde8c29b7d",
+      "timestamp": 1786971382,
+      "txCount": 3529
     },
     {
-      "height": 962869,
-      "id": "000000000000000000012ede6e1029ac5349ce61417bee7a6f9f588f37d6ff3e",
-      "timestamp": 1786959732,
-      "txCount": 5278
+      "height": 962891,
+      "id": "000000000000000000006cf3ce2ffad585cecc81ee7c888973abb1c2a59740cb",
+      "timestamp": 1786970841,
+      "txCount": 4160
     },
     {
-      "height": 962868,
-      "id": "00000000000000000000b39fa9617d417ca6af1348ece0af6dad178cdd623636",
-      "timestamp": 1786959265,
-      "txCount": 5897
+      "height": 962890,
+      "id": "000000000000000000010b365e96fbf586f369f7dc1724b397350ebf503f18f6",
+      "timestamp": 1786969423,
+      "txCount": 870
     },
     {
-      "height": 962867,
-      "id": "00000000000000000001fce6b315d0c651c635fe0b0e5a7f95d583016dc83a14",
-      "timestamp": 1786959083,
-      "txCount": 3694
+      "height": 962889,
+      "id": "000000000000000000006a6ae3d7956a84edbd7bacb0c7d29213e7a09bad4ddf",
+      "timestamp": 1786969226,
+      "txCount": 2885
     },
     {
-      "height": 962866,
-      "id": "0000000000000000000078c5913bb77e9304e6e998989e7f6522789f40111b76",
-      "timestamp": 1786957615,
-      "txCount": 4555
+      "height": 962888,
+      "id": "0000000000000000000126cd2caf0b069c89d81325da13df9908c917a4d4ee4b",
+      "timestamp": 1786969182,
+      "txCount": 6990
     },
     {
-      "height": 962865,
-      "id": "0000000000000000000075099fa11413891c639337958be00e71c953001cc226",
-      "timestamp": 1786957238,
-      "txCount": 4584
+      "height": 962887,
+      "id": "00000000000000000001531d979119984139905536d743c6f21b9b65028d5ba3",
+      "timestamp": 1786969123,
+      "txCount": 5055
     },
     {
-      "height": 962864,
-      "id": "000000000000000000014c8342acb8ad1a7ef467f33d1d4f75b2926f6933e96a",
-      "timestamp": 1786956245,
-      "txCount": 5543
+      "height": 962886,
+      "id": "00000000000000000001542a857cf9f1bc6f5127dd71ba48dae62b7cb8ff22e5",
+      "timestamp": 1786969004,
+      "txCount": 4643
     },
     {
-      "height": 962863,
-      "id": "000000000000000000021825d889318c1a2536ee20848c1654d629c9229cc3d8",
-      "timestamp": 1786956160,
-      "txCount": 4749
+      "height": 962885,
+      "id": "00000000000000000001b0139dba3f37b1bba0ec5e1d86fcf607bfd8b4fb322f",
+      "timestamp": 1786967854,
+      "txCount": 7137
     }
   ],
   "news": [
+    {
+      "title": "No change in bitcoin holdings as Strategy boosted dollar reserve, bought back more STRC last week",
+      "link": "https://www.coindesk.com/markets/2026/08/17/no-change-in-bitcoin-holdings-as-strategy-lifted-dollar-reserve-and-bought-back-more-strc-last-week",
+      "pubDate": "Mon, 17 Aug 2026 12:19:45 +0000"
+    },
+    {
+      "title": "Ethereum’s next big upgrade has 66 proposals, including a major privacy fix",
+      "link": "https://www.coindesk.com/tech/2026/08/17/ethereum-s-next-big-upgrade-has-66-proposals-including-a-major-privacy-fix",
+      "pubDate": "Mon, 17 Aug 2026 12:02:10 +0000"
+    },
+    {
+      "title": "Israel’s largest crypto broker Bits of Gold hit by data breach affecting 200,000 customers",
+      "link": "https://www.coindesk.com/tech/2026/08/17/israel-s-largest-crypto-broker-bits-of-gold-hit-by-data-breach-affecting-200-000-customers",
+      "pubDate": "Mon, 17 Aug 2026 11:59:23 +0000"
+    },
+    {
+      "title": "Bitcoin options remain expensive despite summer calm. Here's why it matters",
+      "link": "https://www.coindesk.com/markets/2026/08/17/bitcoin-options-remain-expensive-despite-summer-calm-here-s-why-it-matters",
+      "pubDate": "Mon, 17 Aug 2026 11:43:02 +0000"
+    },
+    {
+      "title": "Bitcoin's biggest holders, Strategy and Metaplanet, are betting on math, not price",
+      "link": "https://www.coindesk.com/daybook-us/2026/08/17/bitcoin-s-biggest-holders-strategy-and-metaplanet-are-betting-on-math-not-price",
+      "pubDate": "Mon, 17 Aug 2026 11:28:41 +0000"
+    },
+    {
+      "title": "Bitpanda fined 70,000 euros in Austria’s first published MiCA enforcement case",
+      "link": "https://www.coindesk.com/business/2026/08/17/bitpanda-fined-eur70-000-in-austria-s-first-published-mica-enforcement-case",
+      "pubDate": "Mon, 17 Aug 2026 10:52:31 +0000"
+    },
+    {
+      "title": "Bitcoin tracks equity bounce, but $390 million ETF outflow week keeps bulls on back foot",
+      "link": "https://www.coindesk.com/markets/2026/08/17/bitcoin-tracks-equity-bounce-but-usd390-million-etf-outflow-week-keeps-bulls-on-back-foot",
+      "pubDate": "Mon, 17 Aug 2026 09:59:55 +0000"
+    },
     {
       "title": "Binance handed user data to Russia that led to a Ukrainian donor's arrest",
       "link": "https://www.coindesk.com/policy/2026/08/17/binance-handed-user-data-to-russia-that-led-to-a-ukrainian-donor-s-arrest",
@@ -450,41 +485,6 @@
       "title": "The bitcoin futures market looks like a crowded club with a tiny exit – and it could cause pain",
       "link": "https://www.coindesk.com/markets/2026/08/17/the-bitcoin-futures-market-has-a-crowded-club-tiny-exit-problem-and-it-could-cause-pain",
       "pubDate": "Mon, 17 Aug 2026 05:51:18 +0000"
-    },
-    {
-      "title": "XRP traders bet on a rebound as price slips to $1 and bearish chatter surges",
-      "link": "https://www.coindesk.com/markets/2026/08/17/xrp-traders-bet-on-a-rebound-as-price-slips-to-usd1-and-bearish-chatter-surges",
-      "pubDate": "Mon, 17 Aug 2026 04:43:03 +0000"
-    },
-    {
-      "title": "Bitcoin nears $64,000 in Asia morning hours as HYPE jumps 8% on the week",
-      "link": "https://www.coindesk.com/markets/2026/08/17/bitcoin-tops-usd64-000-in-asia-morning-hours-as-hype-jumps-8-on-the-week",
-      "pubDate": "Mon, 17 Aug 2026 04:14:00 +0000"
-    },
-    {
-      "title": "The SEC meeting that wasn't: State of Crypto",
-      "link": "https://www.coindesk.com/policy/2026/08/16/the-sec-meeting-that-wasn-t-state-of-crypto",
-      "pubDate": "Sun, 16 Aug 2026 18:30:00 +0000"
-    },
-    {
-      "title": "Crypto investors are looking past market-cap rankings and back to fundamentals",
-      "link": "https://www.coindesk.com/business/2026/08/16/crypto-investors-are-looking-past-market-cap-rankings-and-back-to-fundamentals",
-      "pubDate": "Sun, 16 Aug 2026 16:00:00 +0000"
-    },
-    {
-      "title": "Crypto wallet SafePal reveals a data breach exposing nearly 40,000 customers' order info",
-      "link": "https://www.coindesk.com/tech/2026/08/16/crypto-wallet-safepal-reveals-a-data-breach-exposing-nearly-40-000-customers-order-info",
-      "pubDate": "Sun, 16 Aug 2026 14:02:32 +0000"
-    },
-    {
-      "title": "MiCA's cleanup is creating a new scam wave across the European Union",
-      "link": "https://www.coindesk.com/business/2026/08/14/mica-s-cleanup-is-creating-a-new-scam-wave-across-the-european-union",
-      "pubDate": "Sun, 16 Aug 2026 14:00:00 +0000"
-    },
-    {
-      "title": "The stablecoin yield clash that won't go away has banks, crypto battling over tradition",
-      "link": "https://www.coindesk.com/news-analysis/2026/08/14/the-stablecoin-yield-clash-that-won-t-go-away-has-banks-crypto-battling-over-tradition",
-      "pubDate": "Sun, 16 Aug 2026 13:00:00 +0000"
     }
   ]
 }
