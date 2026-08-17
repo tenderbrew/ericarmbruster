@@ -1,13 +1,13 @@
 {
-  "fetchedAt": "2026-08-17T13:03:13.193Z",
+  "fetchedAt": "2026-08-17T15:36:17.414Z",
   "price": {
-    "usd": 63484,
-    "time": 1786971606
+    "usd": 63989,
+    "time": 1786980607
   },
   "moves": {
-    "d1": 1.0188710686906521,
-    "d7": -0.6754397645645116,
-    "d30": -2.0243685084743057
+    "d1": 1.822451969227612,
+    "d7": 0.11466329949723075,
+    "d30": -1.244995849170849
   },
   "history90d": [
     {
@@ -372,60 +372,85 @@
     },
     {
       "date": "2026-08-17",
-      "close": 63486.13904857778
+      "close": 63947.80036581901
     }
   ],
   "blocks": [
     {
-      "height": 962892,
-      "id": "00000000000000000001bafb5b32f7df666d0d8a14babe80776908fde8c29b7d",
-      "timestamp": 1786971382,
-      "txCount": 3529
+      "height": 962907,
+      "id": "00000000000000000001cb00ef1a32ec897a536db14e34f18d522beed2002060",
+      "timestamp": 1786980298,
+      "txCount": 6156
     },
     {
-      "height": 962891,
-      "id": "000000000000000000006cf3ce2ffad585cecc81ee7c888973abb1c2a59740cb",
-      "timestamp": 1786970841,
-      "txCount": 4160
+      "height": 962906,
+      "id": "0000000000000000000114177eb586e3e760913c9b7e7a34cb569a595c83c6e9",
+      "timestamp": 1786979985,
+      "txCount": 4192
     },
     {
-      "height": 962890,
-      "id": "000000000000000000010b365e96fbf586f369f7dc1724b397350ebf503f18f6",
-      "timestamp": 1786969423,
-      "txCount": 870
+      "height": 962905,
+      "id": "000000000000000000007fb5bce32a68ef70dc02eaa8f6066d1885c9edc23e65",
+      "timestamp": 1786979394,
+      "txCount": 3810
     },
     {
-      "height": 962889,
-      "id": "000000000000000000006a6ae3d7956a84edbd7bacb0c7d29213e7a09bad4ddf",
-      "timestamp": 1786969226,
-      "txCount": 2885
+      "height": 962904,
+      "id": "00000000000000000000b0a3340a237c2ac8198a47848a71dac92c33582942b1",
+      "timestamp": 1786979361,
+      "txCount": 4126
     },
     {
-      "height": 962888,
-      "id": "0000000000000000000126cd2caf0b069c89d81325da13df9908c917a4d4ee4b",
-      "timestamp": 1786969182,
-      "txCount": 6990
+      "height": 962903,
+      "id": "000000000000000000000eadaec4256d1616118d5c53864bddcd15d2f7abf663",
+      "timestamp": 1786978502,
+      "txCount": 4467
     },
     {
-      "height": 962887,
-      "id": "00000000000000000001531d979119984139905536d743c6f21b9b65028d5ba3",
-      "timestamp": 1786969123,
-      "txCount": 5055
+      "height": 962902,
+      "id": "000000000000000000001c7ade27e8692cd50427b1caa1a3ebdfb46392ac002a",
+      "timestamp": 1786977237,
+      "txCount": 3884
     },
     {
-      "height": 962886,
-      "id": "00000000000000000001542a857cf9f1bc6f5127dd71ba48dae62b7cb8ff22e5",
-      "timestamp": 1786969004,
-      "txCount": 4643
+      "height": 962901,
+      "id": "0000000000000000000211d728e93197da0a61fe9890e1d28d10627d60c8779f",
+      "timestamp": 1786976767,
+      "txCount": 4158
     },
     {
-      "height": 962885,
-      "id": "00000000000000000001b0139dba3f37b1bba0ec5e1d86fcf607bfd8b4fb322f",
-      "timestamp": 1786967854,
-      "txCount": 7137
+      "height": 962900,
+      "id": "000000000000000000010924053030b9671f097efa5fa0f01cd884c8630aaf41",
+      "timestamp": 1786976379,
+      "txCount": 4500
     }
   ],
   "news": [
+    {
+      "title": "Compound bets $52 million, new leadership team in switch to institutional focus",
+      "link": "https://www.coindesk.com/business/2026/08/17/compound-bets-usd52-million-new-leadership-team-in-switch-to-institutional-focus",
+      "pubDate": "Mon, 17 Aug 2026 15:32:30 +0000"
+    },
+    {
+      "title": "U.S. Treasury Department proposes GENIUS Act stablecoin rule",
+      "link": "https://www.coindesk.com/policy/2026/08/17/u-s-treasury-department-proposes-genius-act-stablecoin-rule",
+      "pubDate": "Mon, 17 Aug 2026 14:44:29 +0000"
+    },
+    {
+      "title": "The Coldcard hack proves reputation is not a security model",
+      "link": "https://www.coindesk.com/opinion/2026/08/17/the-coldcard-hack-proves-reputation-is-not-a-security-model",
+      "pubDate": "Mon, 17 Aug 2026 14:09:46 +0000"
+    },
+    {
+      "title": "Tom Lee's Bitmine now owns 4.8% of Ethereum supply after latest ETH purchase",
+      "link": "https://www.coindesk.com/markets/2026/08/17/tom-lee-s-bitmine-now-owns-4-8-of-ethereum-supply-after-latest-eth-purchase",
+      "pubDate": "Mon, 17 Aug 2026 14:04:21 +0000"
+    },
+    {
+      "title": "How a bug in Coldcard’s code went unnoticed for years, leading to $100 million in hacked funds",
+      "link": "https://www.coindesk.com/tech/2026/08/17/how-a-bug-in-coldcard-s-code-went-unnoticed-for-years-leading-to-usd100-million-in-hacked-funds",
+      "pubDate": "Mon, 17 Aug 2026 13:57:11 +0000"
+    },
     {
       "title": "No change in bitcoin holdings as Strategy boosted dollar reserve, bought back more STRC last week",
       "link": "https://www.coindesk.com/markets/2026/08/17/no-change-in-bitcoin-holdings-as-strategy-lifted-dollar-reserve-and-bought-back-more-strc-last-week",
@@ -460,31 +485,6 @@
       "title": "Bitcoin tracks equity bounce, but $390 million ETF outflow week keeps bulls on back foot",
       "link": "https://www.coindesk.com/markets/2026/08/17/bitcoin-tracks-equity-bounce-but-usd390-million-etf-outflow-week-keeps-bulls-on-back-foot",
       "pubDate": "Mon, 17 Aug 2026 09:59:55 +0000"
-    },
-    {
-      "title": "Binance handed user data to Russia that led to a Ukrainian donor's arrest",
-      "link": "https://www.coindesk.com/policy/2026/08/17/binance-handed-user-data-to-russia-that-led-to-a-ukrainian-donor-s-arrest",
-      "pubDate": "Mon, 17 Aug 2026 09:16:14 +0000"
-    },
-    {
-      "title": "Coinbase-Circle USDC collaboration, FOMC minutes, oil price: Crypto Week Ahead",
-      "link": "https://www.coindesk.com/markets/2026/08/17/coinbase-circle-usdc-collaboration-fomc-minutes-oil-price-crypto-week-ahead",
-      "pubDate": "Mon, 17 Aug 2026 09:13:02 +0000"
-    },
-    {
-      "title": "Live updates: Bitcoin flat near $63,500; lapsing US-Iran ceasefire revives the oil threat",
-      "link": "https://www.coindesk.com/markets/2026/08/17/live-updates-bitcoin-flat-near-usd63-500-but-the-flows-have-quietly-turned",
-      "pubDate": "Mon, 17 Aug 2026 08:38:26 +0000"
-    },
-    {
-      "title": "September Fed interest-rate increase is 'very unlikely,' Goldman Sachs says",
-      "link": "https://www.coindesk.com/markets/2026/08/17/september-fed-interest-rate-increase-is-very-unlikely-goldman-sachs-says",
-      "pubDate": "Mon, 17 Aug 2026 08:16:11 +0000"
-    },
-    {
-      "title": "The bitcoin futures market looks like a crowded club with a tiny exit – and it could cause pain",
-      "link": "https://www.coindesk.com/markets/2026/08/17/the-bitcoin-futures-market-has-a-crowded-club-tiny-exit-problem-and-it-could-cause-pain",
-      "pubDate": "Mon, 17 Aug 2026 05:51:18 +0000"
     }
   ]
 }
