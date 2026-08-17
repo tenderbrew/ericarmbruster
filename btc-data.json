@@ -1,13 +1,13 @@
 {
-  "fetchedAt": "2026-08-17T03:58:45.572Z",
+  "fetchedAt": "2026-08-17T07:13:05.535Z",
   "price": {
-    "usd": 63421,
-    "time": 1786938911
+    "usd": 63510,
+    "time": 1786950309
   },
   "moves": {
-    "d1": 0.9186223622870138,
-    "d7": -0.7740070775068664,
-    "d30": -2.121597176862655
+    "d1": 1.060243550698492,
+    "d7": -0.6347611909692463,
+    "d30": -1.984242391361657
   },
   "history90d": [
     {
@@ -372,60 +372,75 @@
     },
     {
       "date": "2026-08-17",
-      "close": 63452.3640966954
+      "close": 63538.57824743056
     }
   ],
   "blocks": [
     {
-      "height": 962830,
-      "id": "0000000000000000000080e800c3c6e3ea99e54d84de6a1d3ce152cbc8deb977",
-      "timestamp": 1786938877,
-      "txCount": 6462
+      "height": 962851,
+      "id": "00000000000000000001bdf6a1bcade58bcc7a957563ec58a013e8894f807a21",
+      "timestamp": 1786950513,
+      "txCount": 6357
     },
     {
-      "height": 962829,
-      "id": "0000000000000000000082a42e4310f1ede93a2ace7b8ae4eafd735ec7943acc",
-      "timestamp": 1786938260,
-      "txCount": 7173
+      "height": 962850,
+      "id": "0000000000000000000151e646e09b52375e95cecab96592cc0674c1fca2d774",
+      "timestamp": 1786950522,
+      "txCount": 6236
     },
     {
-      "height": 962828,
-      "id": "000000000000000000012946dab17322ceb3969594e2d816dd8b4e11983cd3d6",
-      "timestamp": 1786938196,
-      "txCount": 6781
+      "height": 962849,
+      "id": "00000000000000000001551f4834a11b198ea32b256b9a6cd179abad78cc0d75",
+      "timestamp": 1786950302,
+      "txCount": 6406
     },
     {
-      "height": 962827,
-      "id": "000000000000000000000aa7ba530b7d92d75cdd1e9fd4cb2022a255265ec49e",
-      "timestamp": 1786937922,
-      "txCount": 5335
+      "height": 962848,
+      "id": "000000000000000000002afc5b71e65efa60a368d4c6628825ad5b1e67983f29",
+      "timestamp": 1786950203,
+      "txCount": 5304
     },
     {
-      "height": 962826,
-      "id": "000000000000000000018448b16a08258410305669f5cdb38caffd63a05d0388",
-      "timestamp": 1786937752,
-      "txCount": 5386
+      "height": 962847,
+      "id": "0000000000000000000113df97f016132959392e0cb42ea3342ed91bf82243db",
+      "timestamp": 1786949714,
+      "txCount": 4627
     },
     {
-      "height": 962825,
-      "id": "00000000000000000000837a2f164eaa0832e3dd56b8d1088784676e7447398f",
-      "timestamp": 1786936957,
-      "txCount": 5348
+      "height": 962846,
+      "id": "00000000000000000000f586cf0da39a38314f0e7646f2cb47c51d422c2befaa",
+      "timestamp": 1786949284,
+      "txCount": 4528
     },
     {
-      "height": 962824,
-      "id": "00000000000000000000b9dfe670d0be3dfa7929b822f259d0f09c5152204192",
-      "timestamp": 1786936408,
-      "txCount": 5795
+      "height": 962845,
+      "id": "00000000000000000000e18c0e63cf20dc0da5d2c3923ffd98eb7a1ef7aa4a82",
+      "timestamp": 1786948515,
+      "txCount": 4093
     },
     {
-      "height": 962823,
-      "id": "00000000000000000001bd4056b8b759ebf02bf0ba1724e7ae0bc5a2d3678cd2",
-      "timestamp": 1786936003,
-      "txCount": 4171
+      "height": 962844,
+      "id": "000000000000000000001f58412d5378c590f8cc6bae0f31fb733b3e615cdb1d",
+      "timestamp": 1786947465,
+      "txCount": 4248
     }
   ],
   "news": [
+    {
+      "title": "The bitcoin futures market looks like a crowded club with a tiny exit – and it could cause pain",
+      "link": "https://www.coindesk.com/markets/2026/08/17/the-bitcoin-futures-market-has-a-crowded-club-tiny-exit-problem-and-it-could-cause-pain",
+      "pubDate": "Mon, 17 Aug 2026 05:51:18 +0000"
+    },
+    {
+      "title": "XRP traders bet on a rebound as price slips to $1 and bearish chatter surges",
+      "link": "https://www.coindesk.com/markets/2026/08/17/xrp-traders-bet-on-a-rebound-as-price-slips-to-usd1-and-bearish-chatter-surges",
+      "pubDate": "Mon, 17 Aug 2026 04:43:03 +0000"
+    },
+    {
+      "title": "Bitcoin tops $64,000 in Asia morning hours as HYPE jumps 8% on the week",
+      "link": "https://www.coindesk.com/markets/2026/08/17/bitcoin-tops-usd64-000-in-asia-morning-hours-as-hype-jumps-8-on-the-week",
+      "pubDate": "Mon, 17 Aug 2026 04:14:00 +0000"
+    },
     {
       "title": "The SEC meeting that wasn't: State of Crypto",
       "link": "https://www.coindesk.com/policy/2026/08/16/the-sec-meeting-that-wasn-t-state-of-crypto",
@@ -470,21 +485,6 @@
       "title": "Why the world’s second-largest Bitcoin mining power is shutting down rigs in its capital city",
       "link": "https://www.coindesk.com/policy/2026/08/15/why-the-world-s-second-largest-bitcoin-mining-power-is-shutting-down-rigs-in-its-capital-city",
       "pubDate": "Sat, 15 Aug 2026 15:21:15 +0000"
-    },
-    {
-      "title": "Paul Tudor Jones’ investment firm increases stake in BlackRock's bitcoin ETF after year of selling",
-      "link": "https://www.coindesk.com/business/2026/08/15/paul-tudor-jones-investment-firm-increases-blackrock-s-bitcoin-etf-stake-after-year-of-selling",
-      "pubDate": "Sat, 15 Aug 2026 15:12:29 +0000"
-    },
-    {
-      "title": "The $11.2 billion in 2026 funding that killed crypto’s permissionless era",
-      "link": "https://www.coindesk.com/business/2026/08/15/the-usd11-2-billion-in-2026-funding-that-killed-crypto-s-permissionless-era",
-      "pubDate": "Sat, 15 Aug 2026 14:00:00 +0000"
-    },
-    {
-      "title": "Clarity survives (barely), Strategy sells and the untold story of Mastercard's $1.8 billion deal: Crypto's week in 5 stories",
-      "link": "https://www.coindesk.com/business/2026/08/15/clarity-survives-barely-strategy-sells-and-the-untold-story-of-mastercard-s-usd1-8-billion-deal-crypto-s-week-in-5-stories",
-      "pubDate": "Sat, 15 Aug 2026 13:00:00 +0000"
     }
   ]
 }
