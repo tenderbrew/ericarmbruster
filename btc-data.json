@@ -1,19 +1,15 @@
 {
-  "fetchedAt": "2026-08-17T21:36:47.626Z",
+  "fetchedAt": "2026-08-18T01:47:58.887Z",
   "price": {
-    "usd": 64276,
-    "time": 1787002211
+    "usd": 64225,
+    "time": 1787017510
   },
   "moves": {
-    "d1": 2.2791405206218807,
-    "d7": 0.5636921695679531,
-    "d30": -0.8020652487350288
+    "d1": -0.41299383937132284,
+    "d7": 1.0819428878702464,
+    "d30": -0.6887249292047981
   },
   "history90d": [
-    {
-      "date": "2026-05-20",
-      "close": 76758.73155866472
-    },
     {
       "date": "2026-05-21",
       "close": 77470.39614899461
@@ -368,64 +364,73 @@
     },
     {
       "date": "2026-08-17",
-      "close": 62843.70368466329
+      "close": 62852.86351172356
     },
     {
-      "date": "2026-08-17",
-      "close": 64289.38408402534
+      "date": "2026-08-18",
+      "close": 64491.345282946255
+    },
+    {
+      "date": "2026-08-18",
+      "close": 64223.343902907975
     }
   ],
   "blocks": [
     {
-      "height": 962949,
-      "id": "0000000000000000000154afb13efe9b3958f76ed301f55ce4e9a2ac1bc1f218",
-      "timestamp": 1787001094,
-      "txCount": 3966
+      "height": 962970,
+      "id": "000000000000000000016662ecd10cba53ec3994cf08cb39285444586ba34d0c",
+      "timestamp": 1787017238,
+      "txCount": 4049
     },
     {
-      "height": 962948,
-      "id": "0000000000000000000022fb3f9033a42afe66c0e926d83967b4fb187a76c88e",
-      "timestamp": 1787001092,
-      "txCount": 4369
+      "height": 962969,
+      "id": "000000000000000000015d4f92d1db9c1b85d87183d2e851d85c75d5e2f9f4a8",
+      "timestamp": 1787015203,
+      "txCount": 388
     },
     {
-      "height": 962947,
-      "id": "00000000000000000001de36db271da602f6c3a571c9520b1eceafa80b25c290",
-      "timestamp": 1786999064,
-      "txCount": 4653
+      "height": 962968,
+      "id": "00000000000000000001fa04a9ad64fd4d22a8109ccf413fafd1c83600bf57ce",
+      "timestamp": 1787015079,
+      "txCount": 4550
     },
     {
-      "height": 962946,
-      "id": "00000000000000000000236b6140effb693768fe39cad4c3c04fada5a8836265",
-      "timestamp": 1786998734,
-      "txCount": 5415
+      "height": 962967,
+      "id": "000000000000000000020ae8eeb584301202584e94d8e5af076c5b0de1d4fd21",
+      "timestamp": 1787014301,
+      "txCount": 4896
     },
     {
-      "height": 962945,
-      "id": "000000000000000000002c1456726bdcb8812de3a0b2779f504a165384b45306",
-      "timestamp": 1786998680,
-      "txCount": 6062
+      "height": 962966,
+      "id": "00000000000000000000579b17bf6dc976e3231f1aa7e94cb41005647a7bbc08",
+      "timestamp": 1787013939,
+      "txCount": 3161
     },
     {
-      "height": 962944,
-      "id": "0000000000000000000050630bb6fd6c231b94f29852fdf665606edfb10178c8",
-      "timestamp": 1786998343,
-      "txCount": 4871
+      "height": 962965,
+      "id": "000000000000000000022e1bed59eb7b4127cce89ab48326faea8ce34f0421b6",
+      "timestamp": 1787012661,
+      "txCount": 5515
     },
     {
-      "height": 962943,
-      "id": "0000000000000000000187f32048185251b30d37eba1b1c3fa1f4794865ce425",
-      "timestamp": 1786998307,
-      "txCount": 4248
+      "height": 962964,
+      "id": "00000000000000000000ea4e3ed94fc038f09c9682e1d69c780f70b02604dc9c",
+      "timestamp": 1787012080,
+      "txCount": 4986
     },
     {
-      "height": 962942,
-      "id": "0000000000000000000017808356ffa0d1695bef1eaffaf4a778f6578b41bfc3",
-      "timestamp": 1786997983,
-      "txCount": 4031
+      "height": 962963,
+      "id": "00000000000000000001b1ad1fa0e5b20d2f56c05602b587f9f2d0a42272d3c3",
+      "timestamp": 1787011813,
+      "txCount": 2972
     }
   ],
   "news": [
+    {
+      "title": "Kraken parent Payward joins Anthropic’s Project Glasswing for AI security push",
+      "link": "https://www.coindesk.com/tech/2026/08/17/kraken-parent-payward-joins-anthropic-s-project-glasswing-for-ai-security-push",
+      "pubDate": "Mon, 17 Aug 2026 22:12:00 +0000"
+    },
     {
       "title": "Saylor says share buyback isn’t priority as Strategy builds $4.8 billion cash reserve",
       "link": "https://www.coindesk.com/markets/2026/08/17/saylor-says-share-buyback-isn-t-a-priority-as-it-builds-its-usd4-8-billion-cash-reserve-though-a-possibility",
@@ -480,11 +485,6 @@
       "title": "Bitcoin options remain expensive despite summer calm. Here's why it matters",
       "link": "https://www.coindesk.com/markets/2026/08/17/bitcoin-options-remain-expensive-despite-summer-calm-here-s-why-it-matters",
       "pubDate": "Mon, 17 Aug 2026 11:43:02 +0000"
-    },
-    {
-      "title": "Bitcoin's biggest holders, Strategy and Metaplanet, are betting on math, not price",
-      "link": "https://www.coindesk.com/daybook-us/2026/08/17/bitcoin-s-biggest-holders-strategy-and-metaplanet-are-betting-on-math-not-price",
-      "pubDate": "Mon, 17 Aug 2026 11:28:41 +0000"
     }
   ]
 }
