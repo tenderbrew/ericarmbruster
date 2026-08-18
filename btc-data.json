@@ -1,13 +1,13 @@
 {
-  "fetchedAt": "2026-08-18T13:04:59.649Z",
+  "fetchedAt": "2026-08-18T15:43:53.168Z",
   "price": {
-    "usd": 64164,
-    "time": 1787058011
+    "usd": 64820,
+    "time": 1787067311
   },
   "moves": {
-    "d1": -0.5075801745336173,
-    "d7": 0.9859366828697036,
-    "d30": -0.7830493788633208
+    "d1": 0.509610577375641,
+    "d7": 2.018396854678861,
+    "d30": 0.23132503057914366
   },
   "history90d": [
     {
@@ -372,60 +372,95 @@
     },
     {
       "date": "2026-08-18",
-      "close": 64123.76455286287
+      "close": 64799.621775440246
     }
   ],
   "blocks": [
     {
-      "height": 963039,
-      "id": "000000000000000000020cb18dcc9019861bf063c22d73c45cbab127d5b3b449",
-      "timestamp": 1787056899,
-      "txCount": 5756
+      "height": 963063,
+      "id": "000000000000000000003ca0b37d0602dcb6a6a9d01616f61a118f6a6e884591",
+      "timestamp": 1787067698,
+      "txCount": 4223
     },
     {
-      "height": 963038,
-      "id": "00000000000000000000c1b5195f6e3ef19802253bf3e24fa8959f29cf3132b2",
-      "timestamp": 1787056619,
-      "txCount": 5749
+      "height": 963062,
+      "id": "0000000000000000000038b802128a1838d23507204971e65f62322bbfa0dbcb",
+      "timestamp": 1787067313,
+      "txCount": 4402
     },
     {
-      "height": 963037,
-      "id": "00000000000000000000eef0efb63a9c0ce1a050c7b3443a6a961df5d1b306ea",
-      "timestamp": 1787056242,
-      "txCount": 5861
+      "height": 963061,
+      "id": "00000000000000000000f16f7ce9ee51f2db8ba056502274694a9b13c31b80d2",
+      "timestamp": 1787066662,
+      "txCount": 3958
     },
     {
-      "height": 963036,
-      "id": "0000000000000000000190cc2edff78f27c060741ce86feb7bb7858ab8f24624",
-      "timestamp": 1787056203,
-      "txCount": 4755
+      "height": 963060,
+      "id": "0000000000000000000024a18b8c8b76b78e3ace721dc95137a5ef720446a174",
+      "timestamp": 1787064735,
+      "txCount": 7049
     },
     {
-      "height": 963035,
-      "id": "0000000000000000000158ee735c48c73a8f40698c06b2cc8c2fff7518af4f2f",
-      "timestamp": 1787054944,
-      "txCount": 4464
+      "height": 963059,
+      "id": "000000000000000000018693f97f89697142f4e2a894f5cac1a3cc1cb43d1073",
+      "timestamp": 1787064483,
+      "txCount": 6012
     },
     {
-      "height": 963034,
-      "id": "00000000000000000000ca95355a75b1aa529e2590519c9e0f9b8593c52244f8",
-      "timestamp": 1787054548,
-      "txCount": 4388
+      "height": 963058,
+      "id": "000000000000000000018ace0b2474ea7c7bc3fda4d74a6bfb15cd518b7798e6",
+      "timestamp": 1787064325,
+      "txCount": 5601
     },
     {
-      "height": 963033,
-      "id": "000000000000000000013c056de8fa4b8971d9cb98b9e131ae9419a4fd252155",
-      "timestamp": 1787053288,
-      "txCount": 5415
+      "height": 963057,
+      "id": "000000000000000000018294c0a2dd5b5e6302377128cd8e348fc37dc80f42d8",
+      "timestamp": 1787064284,
+      "txCount": 5286
     },
     {
-      "height": 963032,
-      "id": "000000000000000000006c32a7a3486799b588a978891c838626fb6567b7a62d",
-      "timestamp": 1787053199,
-      "txCount": 6275
+      "height": 963056,
+      "id": "000000000000000000010b75c8e465032d9344f2d4a0bf0068d89f2154c8baad",
+      "timestamp": 1787064077,
+      "txCount": 5169
     }
   ],
   "news": [
+    {
+      "title": "Why the Trump-backed crypto venture is distancing itself from Hong Kong AI aggregator WorldClaw",
+      "link": "https://www.coindesk.com/markets/2026/08/18/trump-linked-world-liberty-says-worldclaw-is-independent-after-questions-over-ai-model-access",
+      "pubDate": "Tue, 18 Aug 2026 15:07:52 +0000"
+    },
+    {
+      "title": "Bitcoin miners’ AI pivot pays off, but mining could revive with one twist",
+      "link": "https://www.coindesk.com/business/2026/08/18/bitcoin-miners-ai-pivot-pays-off-but-mining-could-revive-with-one-twist",
+      "pubDate": "Tue, 18 Aug 2026 14:41:31 +0000"
+    },
+    {
+      "title": "Global bond yields surge as debt fears test bitcoin’s hedge narrative",
+      "link": "https://www.coindesk.com/markets/2026/08/18/global-bond-yields-surge-as-debt-fears-test-bitcoin-s-hedge-narrative",
+      "pubDate": "Tue, 18 Aug 2026 14:40:41 +0000"
+    },
+    {
+      "title": "Japan's Metaplanet launching U.S. bitcoin treasury company through $135 million nanocap deal",
+      "link": "https://www.coindesk.com/business/2026/08/18/japan-s-metaplanet-launching-u-s-bitcoin-treasury-company-through-usd135-million-nanocap-deal",
+      "pubDate": "Tue, 18 Aug 2026 14:35:08 +0000"
+    },
+    {
+      "title": "HashKey taps Hong Kong's first regulated stablecoin to settle insurance and trade deals",
+      "link": "https://www.coindesk.com/business/2026/08/18/hashkey-taps-hong-kong-s-first-regulated-stablecoin-to-settle-insurance-and-trade-deals",
+      "pubDate": "Tue, 18 Aug 2026 14:03:27 +0000"
+    },
+    {
+      "title": "Citi plans to launch bitcoin custody for institutional clients later this year",
+      "link": "https://www.coindesk.com/markets/2026/08/18/citi-plans-to-launch-bitcoin-custody-for-institutional-clients-later-this-year",
+      "pubDate": "Tue, 18 Aug 2026 13:25:13 +0000"
+    },
+    {
+      "title": "Crypto’s easy-money era is ending in a wave of failures",
+      "link": "https://www.coindesk.com/business/2026/08/13/crypto-s-easy-money-era-is-ending-in-a-wave-of-failures",
+      "pubDate": "Tue, 18 Aug 2026 13:22:40 +0000"
+    },
     {
       "title": "Cash App's crypto support expands beyond bitcoin and USDC via MoonPay",
       "link": "https://www.coindesk.com/business/2026/08/18/cash-app-s-crypto-support-expands-beyond-bitcoin-and-usdc-via-moonpay",
@@ -450,41 +485,6 @@
       "title": "South Korea joins more than 30 jurisdictions restricting Polymarket access",
       "link": "https://www.coindesk.com/business/2026/08/18/south-korea-joins-more-than-30-jurisdictions-restricting-polymarket-access",
       "pubDate": "Tue, 18 Aug 2026 11:05:56 +0000"
-    },
-    {
-      "title": "Bitcoin pauses at $64,000 as rising yields, oil drag equities lower",
-      "link": "https://www.coindesk.com/markets/2026/08/18/bitcoin-pauses-at-usd64-000-as-rising-yields-oil-drag-equities-lower",
-      "pubDate": "Tue, 18 Aug 2026 10:38:56 +0000"
-    },
-    {
-      "title": "Bitcoin scores a rare win over S&P 500 with 2.6% rise versus 0.5% fall",
-      "link": "https://www.coindesk.com/markets/2026/08/18/bitcoin-scored-a-rare-win-over-s-and-p-500-on-monday",
-      "pubDate": "Tue, 18 Aug 2026 10:01:23 +0000"
-    },
-    {
-      "title": "Live updates: Bitcoin holds $64,000 as surging yields and rising oil drain risk appetite",
-      "link": "https://www.coindesk.com/tech/2026/08/18/live-updates-bitcoin-holds-usd64-000-as-surging-yields-and-oil-drain-risk-appetite",
-      "pubDate": "Tue, 18 Aug 2026 08:16:11 +0000"
-    },
-    {
-      "title": "The bitcoin price level where leveraged bulls could get whacked",
-      "link": "https://www.coindesk.com/markets/2026/08/18/the-bitcoin-price-level-where-leveraged-bulls-could-get-whacked",
-      "pubDate": "Tue, 18 Aug 2026 05:55:43 +0000"
-    },
-    {
-      "title": "XRP sinks below $1 for first time since 2024 even as Korean bank adopts Ripple Payments",
-      "link": "https://www.coindesk.com/markets/2026/08/18/xrp-slips-below-usd1-even-as-korean-regional-bank-adopts-ripple-payments",
-      "pubDate": "Tue, 18 Aug 2026 05:34:32 +0000"
-    },
-    {
-      "title": "Monad, an Ethereum rival, offered early investors up to $60 million to cash out. Almost all said no",
-      "link": "https://www.coindesk.com/markets/2026/08/18/monad-an-ethereum-rival-offered-early-investors-up-to-usd60-million-to-cash-out-almost-all-said-no",
-      "pubDate": "Tue, 18 Aug 2026 05:18:18 +0000"
-    },
-    {
-      "title": "Bitcoin climbs above $64,000 while most majors slip",
-      "link": "https://www.coindesk.com/markets/2026/08/18/bitcoin-climbs-above-usd64-000-while-most-majors-slip",
-      "pubDate": "Tue, 18 Aug 2026 04:32:38 +0000"
     }
   ]
 }
