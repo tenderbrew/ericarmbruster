@@ -1,13 +1,13 @@
 {
-  "fetchedAt": "2026-08-18T07:00:39.519Z",
+  "fetchedAt": "2026-08-18T09:45:46.520Z",
   "price": {
-    "usd": 64234,
-    "time": 1787036110
+    "usd": 64107,
+    "time": 1787046011
   },
   "moves": {
-    "d1": -0.3990384784457346,
-    "d7": 1.0961077377883655,
-    "d30": -0.6748082071240336
+    "d1": -0.5959641270623206,
+    "d7": 0.8962259667216532,
+    "d30": -0.871188618708163
   },
   "history90d": [
     {
@@ -372,67 +372,72 @@
     },
     {
       "date": "2026-08-18",
-      "close": 64233.244163146985
+      "close": 64084.622877918606
     }
   ],
   "blocks": [
     {
-      "height": 963000,
-      "id": "00000000000000000001d9cca0e8c19c72dfd9c73ead9c4db8ed9e1c9c3cf63d",
-      "timestamp": 1787035078,
-      "txCount": 4321
+      "height": 963018,
+      "id": "00000000000000000000303f99fd72ade233aef980ed909eb9e9196fb4054775",
+      "timestamp": 1787046066,
+      "txCount": 4103
     },
     {
-      "height": 962999,
-      "id": "000000000000000000010a059d6aabc21f97795f8e17fb73b0a639d0fce4fac5",
-      "timestamp": 1787034122,
-      "txCount": 6150
+      "height": 963017,
+      "id": "000000000000000000014380a0cd3507a536e99ca18dad2480adf5869f1da50f",
+      "timestamp": 1787045819,
+      "txCount": 3797
     },
     {
-      "height": 962998,
-      "id": "00000000000000000001aeb483a5e67e90c04e9bb15d8c024a8d1ddfa7cbfe78",
-      "timestamp": 1787034001,
-      "txCount": 3885
+      "height": 963016,
+      "id": "0000000000000000000057c9742c3f1d26e6caeb0d041846a28f326e25834fcb",
+      "timestamp": 1787045164,
+      "txCount": 3781
     },
     {
-      "height": 962997,
-      "id": "0000000000000000000231b4ff131a0b28c9e951f650a79f852ae127c5c4ca90",
-      "timestamp": 1787032699,
-      "txCount": 6415
+      "height": 963015,
+      "id": "0000000000000000000110f93cf54283f0e7bd1764ca84ea2d529ea1fcdac1b6",
+      "timestamp": 1787045003,
+      "txCount": 4574
     },
     {
-      "height": 962996,
-      "id": "0000000000000000000125f48d906525178e5b5a6988dd75ad90b93a60420ecb",
-      "timestamp": 1787032126,
-      "txCount": 4750
+      "height": 963014,
+      "id": "00000000000000000001d603d0d0f438e9a490b544e877c86363ca3b3614459c",
+      "timestamp": 1787042813,
+      "txCount": 5681
     },
     {
-      "height": 962995,
-      "id": "00000000000000000000b6d22b9b93caa87576fa50206756cee35d26c9fbed76",
-      "timestamp": 1787030970,
-      "txCount": 6167
+      "height": 963013,
+      "id": "00000000000000000000f582177840064875bbff79c3573389e2bf8a0350efe7",
+      "timestamp": 1787042777,
+      "txCount": 1779
     },
     {
-      "height": 962994,
-      "id": "0000000000000000000033a3ac8d471a27b12b96813fd24c69d780d3101f18e8",
-      "timestamp": 1787030524,
-      "txCount": 6064
+      "height": 963012,
+      "id": "00000000000000000000bf16740530ac6365be5da6092731e4ed22ba8bb65cb1",
+      "timestamp": 1787042305,
+      "txCount": 4140
     },
     {
-      "height": 962993,
-      "id": "000000000000000000011faeacc919044c6d8da57ee7e99ae85459be401bc229",
-      "timestamp": 1787030223,
-      "txCount": 6619
+      "height": 963011,
+      "id": "0000000000000000000058ace2bf75279c23ef4da30928a300aa74b43cc886e9",
+      "timestamp": 1787042277,
+      "txCount": 4155
     }
   ],
   "news": [
+    {
+      "title": "Live updates: Bitcoin holds $64,000 as surging yields and oil drain risk appetite",
+      "link": "https://www.coindesk.com/tech/2026/08/18/live-updates-bitcoin-holds-usd64-000-as-surging-yields-and-oil-drain-risk-appetite",
+      "pubDate": "Tue, 18 Aug 2026 08:16:11 +0000"
+    },
     {
       "title": "The bitcoin price level where leveraged bulls could get whacked",
       "link": "https://www.coindesk.com/markets/2026/08/18/the-bitcoin-price-level-where-leveraged-bulls-could-get-whacked",
       "pubDate": "Tue, 18 Aug 2026 05:55:43 +0000"
     },
     {
-      "title": "XRP sinks below $1 for first time since 2024 as Korean bank adopts Ripple Payments",
+      "title": "XRP sinks below $1 for first time since 2024 even as Korean bank adopts Ripple Payments",
       "link": "https://www.coindesk.com/markets/2026/08/18/xrp-slips-below-usd1-even-as-korean-regional-bank-adopts-ripple-payments",
       "pubDate": "Tue, 18 Aug 2026 05:34:32 +0000"
     },
@@ -480,11 +485,6 @@
       "title": "Tom Lee's Bitmine now owns 4.8% of Ethereum supply after latest ETH purchase",
       "link": "https://www.coindesk.com/markets/2026/08/17/tom-lee-s-bitmine-now-owns-4-8-of-ethereum-supply-after-latest-eth-purchase",
       "pubDate": "Mon, 17 Aug 2026 14:04:21 +0000"
-    },
-    {
-      "title": "How a bug in Coldcard’s code went unnoticed for years, leading to $100 million in hacked funds",
-      "link": "https://www.coindesk.com/tech/2026/08/17/how-a-bug-in-coldcard-s-code-went-unnoticed-for-years-leading-to-usd100-million-in-hacked-funds",
-      "pubDate": "Mon, 17 Aug 2026 13:57:11 +0000"
     }
   ]
 }
