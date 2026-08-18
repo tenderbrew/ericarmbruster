@@ -1,13 +1,13 @@
 {
-  "fetchedAt": "2026-08-18T18:53:47.230Z",
+  "fetchedAt": "2026-08-18T21:35:20.148Z",
   "price": {
-    "usd": 64760,
-    "time": 1787079009
+    "usd": 64581,
+    "time": 1787088609
   },
   "moves": {
-    "d1": 0.41657483787174154,
-    "d7": 1.9239645218914303,
-    "d30": 0.13854688337402443
+    "d1": 0.13901821501847156,
+    "d7": 1.6422413957422943,
+    "d30": -0.13824125578785207
   },
   "history90d": [
     {
@@ -372,10 +372,46 @@
     },
     {
       "date": "2026-08-18",
-      "close": 64758.7230979063
+      "close": 64574.18073816789
     }
   ],
   "blocks": [
+    {
+      "height": 963096,
+      "id": "000000000000000000005ca21336ac34e9c466cbb4ba9437eae99e52cef6be35",
+      "timestamp": 1787088080,
+      "txCount": 3838
+    },
+    {
+      "height": 963095,
+      "id": "0000000000000000000131a1be99de1a8dfe00eabe228b97363441d2e6eb986e",
+      "timestamp": 1787086735,
+      "txCount": 3793
+    },
+    {
+      "height": 963094,
+      "id": "00000000000000000001948df55d30651e4201e27df7cd41d8f1d1e81f2679b1",
+      "timestamp": 1787085542,
+      "txCount": 4203
+    },
+    {
+      "height": 963093,
+      "id": "00000000000000000002152e23678c4c67c80da2c8be997f3c42ed51f29ab527",
+      "timestamp": 1787085019,
+      "txCount": 4571
+    },
+    {
+      "height": 963092,
+      "id": "000000000000000000021e960713046d1fe3ea6c3c466679a4f388435a5d86db",
+      "timestamp": 1787083458,
+      "txCount": 4205
+    },
+    {
+      "height": 963091,
+      "id": "000000000000000000009e0ee100436387fd6d7b02df9459092c0fbbd6f6de47",
+      "timestamp": 1787081499,
+      "txCount": 4356
+    },
     {
       "height": 963090,
       "id": "0000000000000000000232317d293880bd89613e729530c979456be56cab6f6b",
@@ -387,45 +423,24 @@
       "id": "000000000000000000018b1f3d3f3aca79b4967a745e16a0c8a230d8915e3591",
       "timestamp": 1787077816,
       "txCount": 2110
-    },
-    {
-      "height": 963088,
-      "id": "000000000000000000009d56491b231c270d721618261a1dea3f7cd89e606b91",
-      "timestamp": 1787077253,
-      "txCount": 3730
-    },
-    {
-      "height": 963087,
-      "id": "0000000000000000000209578e7cbb2ca1d8894ce2de902659b707025f80fc8b",
-      "timestamp": 1787076819,
-      "txCount": 6916
-    },
-    {
-      "height": 963086,
-      "id": "00000000000000000001ba985c29caa8db8f066ba7e0be21e52a0768914a427c",
-      "timestamp": 1787076676,
-      "txCount": 5333
-    },
-    {
-      "height": 963085,
-      "id": "000000000000000000017febca953594ac67f8eeb3ef7d9e25d451f0a3305d54",
-      "timestamp": 1787076426,
-      "txCount": 4195
-    },
-    {
-      "height": 963084,
-      "id": "0000000000000000000166e20d483b5cab5f8cc4fbfd855885448f310de52db2",
-      "timestamp": 1787075600,
-      "txCount": 192
-    },
-    {
-      "height": 963083,
-      "id": "0000000000000000000149c813356cda06b62272d3184c85f6f5119965e06f4a",
-      "timestamp": 1787075576,
-      "txCount": 6298
     }
   ],
   "news": [
+    {
+      "title": "U.S. accounting-standards group proposes way to see stablecoins as 'cash equivalent'",
+      "link": "https://www.coindesk.com/policy/2026/08/18/u-s-accounting-standards-group-proposes-way-to-see-stablecoins-as-cash-equivalent",
+      "pubDate": "Tue, 18 Aug 2026 21:25:42 +0000"
+    },
+    {
+      "title": "U.S. SEC proposes first major crypto rule in surprise announcement",
+      "link": "https://www.coindesk.com/policy/2026/08/18/r",
+      "pubDate": "Tue, 18 Aug 2026 19:09:33 +0000"
+    },
+    {
+      "title": "Wyoming joins $15 billion LayerZero exodus with state stablecoin move",
+      "link": "https://www.coindesk.com/business/2026/08/18/wyoming-joins-usd15-billion-layerzero-exodus-with-state-stablecoin-move",
+      "pubDate": "Tue, 18 Aug 2026 18:57:00 +0000"
+    },
     {
       "title": "Bitcoin has gone quiet as traders chase ‘5x or 10x’ payoffs elsewhere",
       "link": "https://www.coindesk.com/markets/2026/08/18/bitcoin-has-gone-quiet-as-traders-chase-5x-or-10x-payoffs-elsewhere",
@@ -470,21 +485,6 @@
       "title": "Crypto’s easy-money era is ending in a wave of failures",
       "link": "https://www.coindesk.com/business/2026/08/13/crypto-s-easy-money-era-is-ending-in-a-wave-of-failures",
       "pubDate": "Tue, 18 Aug 2026 13:22:40 +0000"
-    },
-    {
-      "title": "Cash App's crypto support expands beyond bitcoin and USDC via MoonPay",
-      "link": "https://www.coindesk.com/business/2026/08/18/cash-app-s-crypto-support-expands-beyond-bitcoin-and-usdc-via-moonpay",
-      "pubDate": "Tue, 18 Aug 2026 13:00:00 +0000"
-    },
-    {
-      "title": "Visa looking for new stablecoin settlement partner after BVNK sale to Mastercard",
-      "link": "https://www.coindesk.com/business/2026/08/18/visa-is-looking-for-a-new-stablecoin-settlement-partner-now-that-bvnk-is-owned-by-mastercard",
-      "pubDate": "Tue, 18 Aug 2026 12:20:48 +0000"
-    },
-    {
-      "title": "Ethereum’s next upgrade breaks the '21,000 gas' rule wallets rely on",
-      "link": "https://www.coindesk.com/tech/2026/08/18/ethereum-s-next-upgrade-breaks-the-21-000-gas-rule-wallets-rely-on",
-      "pubDate": "Tue, 18 Aug 2026 12:17:05 +0000"
     }
   ]
 }
