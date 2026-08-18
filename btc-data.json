@@ -1,13 +1,13 @@
 {
-  "fetchedAt": "2026-08-18T09:45:46.520Z",
+  "fetchedAt": "2026-08-18T13:04:59.649Z",
   "price": {
-    "usd": 64107,
-    "time": 1787046011
+    "usd": 64164,
+    "time": 1787058011
   },
   "moves": {
-    "d1": -0.5959641270623206,
-    "d7": 0.8962259667216532,
-    "d30": -0.871188618708163
+    "d1": -0.5075801745336173,
+    "d7": 0.9859366828697036,
+    "d30": -0.7830493788633208
   },
   "history90d": [
     {
@@ -372,62 +372,97 @@
     },
     {
       "date": "2026-08-18",
-      "close": 64084.622877918606
+      "close": 64123.76455286287
     }
   ],
   "blocks": [
     {
-      "height": 963018,
-      "id": "00000000000000000000303f99fd72ade233aef980ed909eb9e9196fb4054775",
-      "timestamp": 1787046066,
-      "txCount": 4103
+      "height": 963039,
+      "id": "000000000000000000020cb18dcc9019861bf063c22d73c45cbab127d5b3b449",
+      "timestamp": 1787056899,
+      "txCount": 5756
     },
     {
-      "height": 963017,
-      "id": "000000000000000000014380a0cd3507a536e99ca18dad2480adf5869f1da50f",
-      "timestamp": 1787045819,
-      "txCount": 3797
+      "height": 963038,
+      "id": "00000000000000000000c1b5195f6e3ef19802253bf3e24fa8959f29cf3132b2",
+      "timestamp": 1787056619,
+      "txCount": 5749
     },
     {
-      "height": 963016,
-      "id": "0000000000000000000057c9742c3f1d26e6caeb0d041846a28f326e25834fcb",
-      "timestamp": 1787045164,
-      "txCount": 3781
+      "height": 963037,
+      "id": "00000000000000000000eef0efb63a9c0ce1a050c7b3443a6a961df5d1b306ea",
+      "timestamp": 1787056242,
+      "txCount": 5861
     },
     {
-      "height": 963015,
-      "id": "0000000000000000000110f93cf54283f0e7bd1764ca84ea2d529ea1fcdac1b6",
-      "timestamp": 1787045003,
-      "txCount": 4574
+      "height": 963036,
+      "id": "0000000000000000000190cc2edff78f27c060741ce86feb7bb7858ab8f24624",
+      "timestamp": 1787056203,
+      "txCount": 4755
     },
     {
-      "height": 963014,
-      "id": "00000000000000000001d603d0d0f438e9a490b544e877c86363ca3b3614459c",
-      "timestamp": 1787042813,
-      "txCount": 5681
+      "height": 963035,
+      "id": "0000000000000000000158ee735c48c73a8f40698c06b2cc8c2fff7518af4f2f",
+      "timestamp": 1787054944,
+      "txCount": 4464
     },
     {
-      "height": 963013,
-      "id": "00000000000000000000f582177840064875bbff79c3573389e2bf8a0350efe7",
-      "timestamp": 1787042777,
-      "txCount": 1779
+      "height": 963034,
+      "id": "00000000000000000000ca95355a75b1aa529e2590519c9e0f9b8593c52244f8",
+      "timestamp": 1787054548,
+      "txCount": 4388
     },
     {
-      "height": 963012,
-      "id": "00000000000000000000bf16740530ac6365be5da6092731e4ed22ba8bb65cb1",
-      "timestamp": 1787042305,
-      "txCount": 4140
+      "height": 963033,
+      "id": "000000000000000000013c056de8fa4b8971d9cb98b9e131ae9419a4fd252155",
+      "timestamp": 1787053288,
+      "txCount": 5415
     },
     {
-      "height": 963011,
-      "id": "0000000000000000000058ace2bf75279c23ef4da30928a300aa74b43cc886e9",
-      "timestamp": 1787042277,
-      "txCount": 4155
+      "height": 963032,
+      "id": "000000000000000000006c32a7a3486799b588a978891c838626fb6567b7a62d",
+      "timestamp": 1787053199,
+      "txCount": 6275
     }
   ],
   "news": [
     {
-      "title": "Live updates: Bitcoin holds $64,000 as surging yields and oil drain risk appetite",
+      "title": "Cash App's crypto support expands beyond bitcoin and USDC via MoonPay",
+      "link": "https://www.coindesk.com/business/2026/08/18/cash-app-s-crypto-support-expands-beyond-bitcoin-and-usdc-via-moonpay",
+      "pubDate": "Tue, 18 Aug 2026 13:00:00 +0000"
+    },
+    {
+      "title": "Visa looking for new stablecoin settlement partner after BVNK sale to Mastercard",
+      "link": "https://www.coindesk.com/business/2026/08/18/visa-is-looking-for-a-new-stablecoin-settlement-partner-now-that-bvnk-is-owned-by-mastercard",
+      "pubDate": "Tue, 18 Aug 2026 12:20:48 +0000"
+    },
+    {
+      "title": "Ethereum’s next upgrade breaks the '21,000 gas' rule wallets rely on",
+      "link": "https://www.coindesk.com/tech/2026/08/18/ethereum-s-next-upgrade-breaks-the-21-000-gas-rule-wallets-rely-on",
+      "pubDate": "Tue, 18 Aug 2026 12:17:05 +0000"
+    },
+    {
+      "title": "The 'crack' in the energy market is wider than ever. Bitcoin might feel it.",
+      "link": "https://www.coindesk.com/daybook-us/2026/08/18/the-crack-in-the-energy-market-is-wider-than-ever-bitcoin-might-feel-it",
+      "pubDate": "Tue, 18 Aug 2026 11:21:51 +0000"
+    },
+    {
+      "title": "South Korea joins more than 30 jurisdictions restricting Polymarket access",
+      "link": "https://www.coindesk.com/business/2026/08/18/south-korea-joins-more-than-30-jurisdictions-restricting-polymarket-access",
+      "pubDate": "Tue, 18 Aug 2026 11:05:56 +0000"
+    },
+    {
+      "title": "Bitcoin pauses at $64,000 as rising yields, oil drag equities lower",
+      "link": "https://www.coindesk.com/markets/2026/08/18/bitcoin-pauses-at-usd64-000-as-rising-yields-oil-drag-equities-lower",
+      "pubDate": "Tue, 18 Aug 2026 10:38:56 +0000"
+    },
+    {
+      "title": "Bitcoin scores a rare win over S&P 500 with 2.6% rise versus 0.5% fall",
+      "link": "https://www.coindesk.com/markets/2026/08/18/bitcoin-scored-a-rare-win-over-s-and-p-500-on-monday",
+      "pubDate": "Tue, 18 Aug 2026 10:01:23 +0000"
+    },
+    {
+      "title": "Live updates: Bitcoin holds $64,000 as surging yields and rising oil drain risk appetite",
       "link": "https://www.coindesk.com/tech/2026/08/18/live-updates-bitcoin-holds-usd64-000-as-surging-yields-and-oil-drain-risk-appetite",
       "pubDate": "Tue, 18 Aug 2026 08:16:11 +0000"
     },
@@ -450,41 +485,6 @@
       "title": "Bitcoin climbs above $64,000 while most majors slip",
       "link": "https://www.coindesk.com/markets/2026/08/18/bitcoin-climbs-above-usd64-000-while-most-majors-slip",
       "pubDate": "Tue, 18 Aug 2026 04:32:38 +0000"
-    },
-    {
-      "title": "Kraken parent Payward joins Anthropic’s Project Glasswing for AI security push",
-      "link": "https://www.coindesk.com/tech/2026/08/17/kraken-parent-payward-joins-anthropic-s-project-glasswing-for-ai-security-push",
-      "pubDate": "Mon, 17 Aug 2026 22:12:00 +0000"
-    },
-    {
-      "title": "Saylor says share buyback isn’t priority as Strategy builds $4.8 billion cash reserve",
-      "link": "https://www.coindesk.com/markets/2026/08/17/saylor-says-share-buyback-isn-t-a-priority-as-it-builds-its-usd4-8-billion-cash-reserve-though-a-possibility",
-      "pubDate": "Mon, 17 Aug 2026 18:53:47 +0000"
-    },
-    {
-      "title": "BitMart founder dismisses calls for audit as users report blocked funds, unpaid employees",
-      "link": "https://www.coindesk.com/business/2026/08/17/bitmart-founder-dismisses-calls-for-audit-as-users-report-blocked-funds-unpaid-employees",
-      "pubDate": "Mon, 17 Aug 2026 16:40:08 +0000"
-    },
-    {
-      "title": "Compound bets $52 million, new leadership team in switch to institutional focus",
-      "link": "https://www.coindesk.com/business/2026/08/17/compound-bets-usd52-million-new-leadership-team-in-switch-to-institutional-focus",
-      "pubDate": "Mon, 17 Aug 2026 15:32:30 +0000"
-    },
-    {
-      "title": "U.S. Treasury Department proposes GENIUS Act stablecoin rule",
-      "link": "https://www.coindesk.com/policy/2026/08/17/u-s-treasury-department-proposes-genius-act-stablecoin-rule",
-      "pubDate": "Mon, 17 Aug 2026 14:44:29 +0000"
-    },
-    {
-      "title": "The Coldcard hack proves reputation is not a security model",
-      "link": "https://www.coindesk.com/opinion/2026/08/17/the-coldcard-hack-proves-reputation-is-not-a-security-model",
-      "pubDate": "Mon, 17 Aug 2026 14:09:46 +0000"
-    },
-    {
-      "title": "Tom Lee's Bitmine now owns 4.8% of Ethereum supply after latest ETH purchase",
-      "link": "https://www.coindesk.com/markets/2026/08/17/tom-lee-s-bitmine-now-owns-4-8-of-ethereum-supply-after-latest-eth-purchase",
-      "pubDate": "Mon, 17 Aug 2026 14:04:21 +0000"
     }
   ]
 }
