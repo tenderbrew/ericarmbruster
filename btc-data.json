@@ -1,13 +1,13 @@
 {
-  "fetchedAt": "2026-08-18T03:54:48.461Z",
+  "fetchedAt": "2026-08-18T07:00:39.519Z",
   "price": {
-    "usd": 64092,
-    "time": 1787025011
+    "usd": 64234,
+    "time": 1787036110
   },
   "moves": {
-    "d1": -0.6192230619382899,
-    "d7": 0.8726178835247955,
-    "d30": -0.8943831555094373
+    "d1": -0.3990384784457346,
+    "d7": 1.0961077377883655,
+    "d30": -0.6748082071240336
   },
   "history90d": [
     {
@@ -372,60 +372,80 @@
     },
     {
       "date": "2026-08-18",
-      "close": 64109.44896745683
+      "close": 64233.244163146985
     }
   ],
   "blocks": [
     {
-      "height": 962983,
-      "id": "00000000000000000001528373fb72e26a77f97b5935fbfc62f180fd05ff784a",
-      "timestamp": 1787025002,
-      "txCount": 4472
+      "height": 963000,
+      "id": "00000000000000000001d9cca0e8c19c72dfd9c73ead9c4db8ed9e1c9c3cf63d",
+      "timestamp": 1787035078,
+      "txCount": 4321
     },
     {
-      "height": 962982,
-      "id": "00000000000000000001044ea56fe0d05facae3de1c591040b09edf31f2092f0",
-      "timestamp": 1787023832,
-      "txCount": 5837
+      "height": 962999,
+      "id": "000000000000000000010a059d6aabc21f97795f8e17fb73b0a639d0fce4fac5",
+      "timestamp": 1787034122,
+      "txCount": 6150
     },
     {
-      "height": 962981,
-      "id": "0000000000000000000101312c89c5964fccf6a1ecc075bf23f97a6d80e771c9",
-      "timestamp": 1787023519,
-      "txCount": 6429
+      "height": 962998,
+      "id": "00000000000000000001aeb483a5e67e90c04e9bb15d8c024a8d1ddfa7cbfe78",
+      "timestamp": 1787034001,
+      "txCount": 3885
     },
     {
-      "height": 962980,
-      "id": "0000000000000000000143915f5209f8b30cca8e23fcb11e563f9b61036db1cb",
-      "timestamp": 1787023227,
-      "txCount": 6123
+      "height": 962997,
+      "id": "0000000000000000000231b4ff131a0b28c9e951f650a79f852ae127c5c4ca90",
+      "timestamp": 1787032699,
+      "txCount": 6415
     },
     {
-      "height": 962979,
-      "id": "00000000000000000001edaa186a4558586a52cd2a0bba0fbb6220cabb24e300",
-      "timestamp": 1787023008,
-      "txCount": 5343
+      "height": 962996,
+      "id": "0000000000000000000125f48d906525178e5b5a6988dd75ad90b93a60420ecb",
+      "timestamp": 1787032126,
+      "txCount": 4750
     },
     {
-      "height": 962978,
-      "id": "00000000000000000001144bf4b8564e5989fcb39edaaef234c14a8c1b02f98a",
-      "timestamp": 1787022973,
-      "txCount": 5251
+      "height": 962995,
+      "id": "00000000000000000000b6d22b9b93caa87576fa50206756cee35d26c9fbed76",
+      "timestamp": 1787030970,
+      "txCount": 6167
     },
     {
-      "height": 962977,
-      "id": "000000000000000000003af97dd40eef2d07fdef2123e6c1e19ba6d251ae2b24",
-      "timestamp": 1787022569,
-      "txCount": 5783
+      "height": 962994,
+      "id": "0000000000000000000033a3ac8d471a27b12b96813fd24c69d780d3101f18e8",
+      "timestamp": 1787030524,
+      "txCount": 6064
     },
     {
-      "height": 962976,
-      "id": "00000000000000000001f34648df1450882b5cae2c7b90686624e2f11468efaf",
-      "timestamp": 1787022214,
-      "txCount": 3974
+      "height": 962993,
+      "id": "000000000000000000011faeacc919044c6d8da57ee7e99ae85459be401bc229",
+      "timestamp": 1787030223,
+      "txCount": 6619
     }
   ],
   "news": [
+    {
+      "title": "The bitcoin price level where leveraged bulls could get whacked",
+      "link": "https://www.coindesk.com/markets/2026/08/18/the-bitcoin-price-level-where-leveraged-bulls-could-get-whacked",
+      "pubDate": "Tue, 18 Aug 2026 05:55:43 +0000"
+    },
+    {
+      "title": "XRP sinks below $1 for first time since 2024 as Korean bank adopts Ripple Payments",
+      "link": "https://www.coindesk.com/markets/2026/08/18/xrp-slips-below-usd1-even-as-korean-regional-bank-adopts-ripple-payments",
+      "pubDate": "Tue, 18 Aug 2026 05:34:32 +0000"
+    },
+    {
+      "title": "Monad, an Ethereum rival, offered early investors up to $60 million to cash out. Almost all said no",
+      "link": "https://www.coindesk.com/markets/2026/08/18/monad-an-ethereum-rival-offered-early-investors-up-to-usd60-million-to-cash-out-almost-all-said-no",
+      "pubDate": "Tue, 18 Aug 2026 05:18:18 +0000"
+    },
+    {
+      "title": "Bitcoin climbs above $64,000 while most majors slip",
+      "link": "https://www.coindesk.com/markets/2026/08/18/bitcoin-climbs-above-usd64-000-while-most-majors-slip",
+      "pubDate": "Tue, 18 Aug 2026 04:32:38 +0000"
+    },
     {
       "title": "Kraken parent Payward joins Anthropic’s Project Glasswing for AI security push",
       "link": "https://www.coindesk.com/tech/2026/08/17/kraken-parent-payward-joins-anthropic-s-project-glasswing-for-ai-security-push",
@@ -465,26 +485,6 @@
       "title": "How a bug in Coldcard’s code went unnoticed for years, leading to $100 million in hacked funds",
       "link": "https://www.coindesk.com/tech/2026/08/17/how-a-bug-in-coldcard-s-code-went-unnoticed-for-years-leading-to-usd100-million-in-hacked-funds",
       "pubDate": "Mon, 17 Aug 2026 13:57:11 +0000"
-    },
-    {
-      "title": "No change in bitcoin holdings as Strategy boosted dollar reserve, bought back more STRC last week",
-      "link": "https://www.coindesk.com/markets/2026/08/17/no-change-in-bitcoin-holdings-as-strategy-lifted-dollar-reserve-and-bought-back-more-strc-last-week",
-      "pubDate": "Mon, 17 Aug 2026 12:19:45 +0000"
-    },
-    {
-      "title": "Ethereum’s next big upgrade has 66 proposals, including a major privacy fix",
-      "link": "https://www.coindesk.com/tech/2026/08/17/ethereum-s-next-big-upgrade-has-66-proposals-including-a-major-privacy-fix",
-      "pubDate": "Mon, 17 Aug 2026 12:02:10 +0000"
-    },
-    {
-      "title": "Israel’s largest crypto broker Bits of Gold hit by data breach affecting 200,000 customers",
-      "link": "https://www.coindesk.com/tech/2026/08/17/israel-s-largest-crypto-broker-bits-of-gold-hit-by-data-breach-affecting-200-000-customers",
-      "pubDate": "Mon, 17 Aug 2026 11:59:23 +0000"
-    },
-    {
-      "title": "Bitcoin options remain expensive despite summer calm. Here's why it matters",
-      "link": "https://www.coindesk.com/markets/2026/08/17/bitcoin-options-remain-expensive-despite-summer-calm-here-s-why-it-matters",
-      "pubDate": "Mon, 17 Aug 2026 11:43:02 +0000"
     }
   ]
 }
