@@ -1,13 +1,13 @@
 {
-  "fetchedAt": "2026-08-18T15:43:53.168Z",
+  "fetchedAt": "2026-08-18T18:53:47.230Z",
   "price": {
-    "usd": 64820,
-    "time": 1787067311
+    "usd": 64760,
+    "time": 1787079009
   },
   "moves": {
-    "d1": 0.509610577375641,
-    "d7": 2.018396854678861,
-    "d30": 0.23132503057914366
+    "d1": 0.41657483787174154,
+    "d7": 1.9239645218914303,
+    "d30": 0.13854688337402443
   },
   "history90d": [
     {
@@ -372,60 +372,70 @@
     },
     {
       "date": "2026-08-18",
-      "close": 64799.621775440246
+      "close": 64758.7230979063
     }
   ],
   "blocks": [
     {
-      "height": 963063,
-      "id": "000000000000000000003ca0b37d0602dcb6a6a9d01616f61a118f6a6e884591",
-      "timestamp": 1787067698,
-      "txCount": 4223
+      "height": 963090,
+      "id": "0000000000000000000232317d293880bd89613e729530c979456be56cab6f6b",
+      "timestamp": 1787078250,
+      "txCount": 6247
     },
     {
-      "height": 963062,
-      "id": "0000000000000000000038b802128a1838d23507204971e65f62322bbfa0dbcb",
-      "timestamp": 1787067313,
-      "txCount": 4402
+      "height": 963089,
+      "id": "000000000000000000018b1f3d3f3aca79b4967a745e16a0c8a230d8915e3591",
+      "timestamp": 1787077816,
+      "txCount": 2110
     },
     {
-      "height": 963061,
-      "id": "00000000000000000000f16f7ce9ee51f2db8ba056502274694a9b13c31b80d2",
-      "timestamp": 1787066662,
-      "txCount": 3958
+      "height": 963088,
+      "id": "000000000000000000009d56491b231c270d721618261a1dea3f7cd89e606b91",
+      "timestamp": 1787077253,
+      "txCount": 3730
     },
     {
-      "height": 963060,
-      "id": "0000000000000000000024a18b8c8b76b78e3ace721dc95137a5ef720446a174",
-      "timestamp": 1787064735,
-      "txCount": 7049
+      "height": 963087,
+      "id": "0000000000000000000209578e7cbb2ca1d8894ce2de902659b707025f80fc8b",
+      "timestamp": 1787076819,
+      "txCount": 6916
     },
     {
-      "height": 963059,
-      "id": "000000000000000000018693f97f89697142f4e2a894f5cac1a3cc1cb43d1073",
-      "timestamp": 1787064483,
-      "txCount": 6012
+      "height": 963086,
+      "id": "00000000000000000001ba985c29caa8db8f066ba7e0be21e52a0768914a427c",
+      "timestamp": 1787076676,
+      "txCount": 5333
     },
     {
-      "height": 963058,
-      "id": "000000000000000000018ace0b2474ea7c7bc3fda4d74a6bfb15cd518b7798e6",
-      "timestamp": 1787064325,
-      "txCount": 5601
+      "height": 963085,
+      "id": "000000000000000000017febca953594ac67f8eeb3ef7d9e25d451f0a3305d54",
+      "timestamp": 1787076426,
+      "txCount": 4195
     },
     {
-      "height": 963057,
-      "id": "000000000000000000018294c0a2dd5b5e6302377128cd8e348fc37dc80f42d8",
-      "timestamp": 1787064284,
-      "txCount": 5286
+      "height": 963084,
+      "id": "0000000000000000000166e20d483b5cab5f8cc4fbfd855885448f310de52db2",
+      "timestamp": 1787075600,
+      "txCount": 192
     },
     {
-      "height": 963056,
-      "id": "000000000000000000010b75c8e465032d9344f2d4a0bf0068d89f2154c8baad",
-      "timestamp": 1787064077,
-      "txCount": 5169
+      "height": 963083,
+      "id": "0000000000000000000149c813356cda06b62272d3184c85f6f5119965e06f4a",
+      "timestamp": 1787075576,
+      "txCount": 6298
     }
   ],
   "news": [
+    {
+      "title": "Bitcoin has gone quiet as traders chase ‘5x or 10x’ payoffs elsewhere",
+      "link": "https://www.coindesk.com/markets/2026/08/18/bitcoin-has-gone-quiet-as-traders-chase-5x-or-10x-payoffs-elsewhere",
+      "pubDate": "Tue, 18 Aug 2026 17:00:00 +0000"
+    },
+    {
+      "title": "Kraken adds U.S. stocks in Europe as TradFi-crypto divide blurs",
+      "link": "https://www.coindesk.com/markets/2026/08/18/kraken-adds-u-s-stocks-in-europe-as-tradfi-crypto-divide-blurs",
+      "pubDate": "Tue, 18 Aug 2026 16:08:46 +0000"
+    },
     {
       "title": "Why the Trump-backed crypto venture is distancing itself from Hong Kong AI aggregator WorldClaw",
       "link": "https://www.coindesk.com/markets/2026/08/18/trump-linked-world-liberty-says-worldclaw-is-independent-after-questions-over-ai-model-access",
@@ -475,16 +485,6 @@
       "title": "Ethereum’s next upgrade breaks the '21,000 gas' rule wallets rely on",
       "link": "https://www.coindesk.com/tech/2026/08/18/ethereum-s-next-upgrade-breaks-the-21-000-gas-rule-wallets-rely-on",
       "pubDate": "Tue, 18 Aug 2026 12:17:05 +0000"
-    },
-    {
-      "title": "The 'crack' in the energy market is wider than ever. Bitcoin might feel it.",
-      "link": "https://www.coindesk.com/daybook-us/2026/08/18/the-crack-in-the-energy-market-is-wider-than-ever-bitcoin-might-feel-it",
-      "pubDate": "Tue, 18 Aug 2026 11:21:51 +0000"
-    },
-    {
-      "title": "South Korea joins more than 30 jurisdictions restricting Polymarket access",
-      "link": "https://www.coindesk.com/business/2026/08/18/south-korea-joins-more-than-30-jurisdictions-restricting-polymarket-access",
-      "pubDate": "Tue, 18 Aug 2026 11:05:56 +0000"
     }
   ]
 }
