@@ -1,13 +1,13 @@
 {
-  "fetchedAt": "2026-08-19T03:55:42.237Z",
+  "fetchedAt": "2026-08-19T07:01:42.428Z",
   "price": {
-    "usd": 64312,
-    "time": 1787111407
+    "usd": 64279,
+    "time": 1787122511
   },
   "moves": {
-    "d1": -0.578573932388371,
-    "d7": 1.4246867724299284,
-    "d30": -1.33914626785272
+    "d1": -0.6295894047765871,
+    "d7": 1.3726433798517013,
+    "d30": -1.3897714726848087
   },
   "history90d": [
     {
@@ -372,60 +372,75 @@
     },
     {
       "date": "2026-08-19",
-      "close": 64308.424302341766
+      "close": 64291.09895968353
     }
   ],
   "blocks": [
     {
-      "height": 963124,
-      "id": "00000000000000000002309252ae811d89c1ce2a14bfda1779e98c417010d2f6",
-      "timestamp": 1787109668,
-      "txCount": 5668
+      "height": 963144,
+      "id": "0000000000000000000069382cf7f0c892d9ef6535856bfbcf29a80453f09f2c",
+      "timestamp": 1787122405,
+      "txCount": 4845
     },
     {
-      "height": 963123,
-      "id": "000000000000000000011176e6e3403061cf6209a606de8e06890707213756ff",
-      "timestamp": 1787109394,
-      "txCount": 5122
+      "height": 963143,
+      "id": "0000000000000000000069caadeba40871732e5b6143e5b016a4b1e8297ba9e4",
+      "timestamp": 1787121849,
+      "txCount": 4793
     },
     {
-      "height": 963122,
-      "id": "00000000000000000000169668a29ee45ff90b67aec608c801aeba7d8850f850",
-      "timestamp": 1787109301,
-      "txCount": 3806
+      "height": 963142,
+      "id": "0000000000000000000088da54d872c6af7fdeed4ab9f8c315637261ce3a3fa0",
+      "timestamp": 1787121622,
+      "txCount": 3825
     },
     {
-      "height": 963121,
-      "id": "00000000000000000001b265464128a978f0d1d87d9fac6886fef0c574af9f9b",
-      "timestamp": 1787108050,
-      "txCount": 3490
+      "height": 963141,
+      "id": "000000000000000000002bd1d8ddf0a3fbe140c216daeba8b4b8fb033d5b9c95",
+      "timestamp": 1787120425,
+      "txCount": 4097
     },
     {
-      "height": 963120,
-      "id": "0000000000000000000044f7527949bd4b3c75267961f2a9eeb5fca72ab2b988",
-      "timestamp": 1787106950,
-      "txCount": 6283
+      "height": 963140,
+      "id": "00000000000000000000d9d554cf18f014c9833ed7a83278cf9349d43649ce8d",
+      "timestamp": 1787118898,
+      "txCount": 7194
     },
     {
-      "height": 963119,
-      "id": "000000000000000000007cb176fe5447664982195aa18217d9e057037e4cac7b",
-      "timestamp": 1787106944,
-      "txCount": 4922
+      "height": 963139,
+      "id": "000000000000000000003abe49624d8f5ebe0231f1dc5b50ba83b16df64e88bb",
+      "timestamp": 1787118914,
+      "txCount": 4973
     },
     {
-      "height": 963118,
-      "id": "000000000000000000011c2006b9a177b230f84f0e2368e3e15e67301a8112fc",
-      "timestamp": 1787106902,
-      "txCount": 3588
+      "height": 963138,
+      "id": "00000000000000000000de669ff33014244fae09aaf5bc7a005a1f4a508c8c00",
+      "timestamp": 1787118234,
+      "txCount": 3579
     },
     {
-      "height": 963117,
-      "id": "0000000000000000000066cea3bdf284ed12ef3eb6330ba83b0586386cf729d9",
-      "timestamp": 1787106153,
-      "txCount": 3530
+      "height": 963137,
+      "id": "00000000000000000000ba4ef9e6d10e9a69010b73dcb7a65b66a029097d405f",
+      "timestamp": 1787117923,
+      "txCount": 4199
     }
   ],
   "news": [
+    {
+      "title": "Maya Protocol exploit drains bitcoin and other assets as pool value drops $11 million",
+      "link": "https://www.coindesk.com/markets/2026/08/19/maya-protocol-exploit-drains-bitcoin-and-other-assets-as-pool-value-drops-usd11-million",
+      "pubDate": "Wed, 19 Aug 2026 06:36:11 +0000"
+    },
+    {
+      "title": "Robot maker Unitree’s IPO surges 600%, outpacing crypto traders’ premarket bets",
+      "link": "https://www.coindesk.com/markets/2026/08/19/robot-maker-unitree-s-ipo-surges-600-outpacing-crypto-traders-premarket-bets",
+      "pubDate": "Wed, 19 Aug 2026 05:45:27 +0000"
+    },
+    {
+      "title": "Solana leads bitcoin and ether higher while Korean chip stocks slide 7%",
+      "link": "https://www.coindesk.com/markets/2026/08/19/solana-leads-bitcoin-and-ether-higher-while-korean-chip-stocks-slide-7",
+      "pubDate": "Wed, 19 Aug 2026 04:25:42 +0000"
+    },
     {
       "title": "‘It has to pass’: Andrew Cuomo warns U.S. is falling behind on crypto rules",
       "link": "https://www.coindesk.com/policy/2026/08/18/it-has-to-pass-andrew-cuomo-warns-u-s-is-falling-behind-on-crypto-rules",
@@ -470,21 +485,6 @@
       "title": "Bitcoin miners’ AI pivot pays off, but mining could revive with one twist",
       "link": "https://www.coindesk.com/business/2026/08/18/bitcoin-miners-ai-pivot-pays-off-but-mining-could-revive-with-one-twist",
       "pubDate": "Tue, 18 Aug 2026 14:41:31 +0000"
-    },
-    {
-      "title": "Global bond yields surge as debt fears test bitcoin’s hedge narrative",
-      "link": "https://www.coindesk.com/markets/2026/08/18/global-bond-yields-surge-as-debt-fears-test-bitcoin-s-hedge-narrative",
-      "pubDate": "Tue, 18 Aug 2026 14:40:41 +0000"
-    },
-    {
-      "title": "Japan's Metaplanet launching U.S. bitcoin treasury company through $135 million nanocap deal",
-      "link": "https://www.coindesk.com/business/2026/08/18/japan-s-metaplanet-launching-u-s-bitcoin-treasury-company-through-usd135-million-nanocap-deal",
-      "pubDate": "Tue, 18 Aug 2026 14:35:08 +0000"
-    },
-    {
-      "title": "HashKey taps Hong Kong's first regulated stablecoin to settle insurance and trade deals",
-      "link": "https://www.coindesk.com/business/2026/08/18/hashkey-taps-hong-kong-s-first-regulated-stablecoin-to-settle-insurance-and-trade-deals",
-      "pubDate": "Tue, 18 Aug 2026 14:03:27 +0000"
     }
   ]
 }
