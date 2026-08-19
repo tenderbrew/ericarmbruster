@@ -1,13 +1,13 @@
 {
-  "fetchedAt": "2026-08-19T18:50:54.168Z",
+  "fetchedAt": "2026-08-19T21:36:42.623Z",
   "price": {
-    "usd": 68414,
-    "time": 1787165108
+    "usd": 69616,
+    "time": 1787175012
   },
   "moves": {
-    "d1": 5.762803877807898,
-    "d7": 7.893838177152324,
-    "d30": 4.953720102486692
+    "d1": 7.621003811463667,
+    "d7": 9.78947932500127,
+    "d30": 6.797704836067364
   },
   "history90d": [
     {
@@ -372,60 +372,70 @@
     },
     {
       "date": "2026-08-19",
-      "close": 68390.82037643685
+      "close": 69721.33230367114
     }
   ],
   "blocks": [
     {
-      "height": 963209,
-      "id": "00000000000000000000bc48115e58124959b1814b2ae9bc9cfeda3cf9d920c7",
-      "timestamp": 1787164980,
-      "txCount": 5041
+      "height": 963224,
+      "id": "0000000000000000000002089866572c1e22f32924e857f73ca6312e1505bb2b",
+      "timestamp": 1787173926,
+      "txCount": 4501
     },
     {
-      "height": 963208,
-      "id": "0000000000000000000098e18c93d212bec0cf0ee7f0a6e9870760f2be7ac235",
-      "timestamp": 1787164735,
-      "txCount": 4959
+      "height": 963223,
+      "id": "00000000000000000001466a523571dd5b6119fbbb7623a60acf61d290b312d8",
+      "timestamp": 1787173893,
+      "txCount": 3169
     },
     {
-      "height": 963207,
-      "id": "00000000000000000001c38b7dc2f450099ccf646d84013d6e136d7a26f9207b",
-      "timestamp": 1787164607,
-      "txCount": 4443
+      "height": 963222,
+      "id": "000000000000000000001a37a4e1e9534181f6863f91203e0cfec72f8cc20824",
+      "timestamp": 1787172822,
+      "txCount": 3716
     },
     {
-      "height": 963206,
-      "id": "000000000000000000004bae4b8b7ba547a09da59022aaa1abe07b203d217770",
-      "timestamp": 1787164536,
-      "txCount": 4019
+      "height": 963221,
+      "id": "00000000000000000000c2dbdc52658a6ce3e1d3a1f54c264fa329eb3019e771",
+      "timestamp": 1787172332,
+      "txCount": 3952
     },
     {
-      "height": 963205,
-      "id": "00000000000000000000e73a97ef65a4da83cbac34b1f912788664ee8f9a9f8a",
-      "timestamp": 1787162551,
-      "txCount": 4173
+      "height": 963220,
+      "id": "0000000000000000000018c7f32984704146c33318173276cd380f75b3dd3301",
+      "timestamp": 1787172335,
+      "txCount": 4101
     },
     {
-      "height": 963204,
-      "id": "00000000000000000001f5d495fcd7d37a5234f448481254fcd20d36e706c8b3",
-      "timestamp": 1787162336,
-      "txCount": 4350
+      "height": 963219,
+      "id": "000000000000000000018952e6699e292578a591a42317bd16f0b4dbd8cc2cb1",
+      "timestamp": 1787172118,
+      "txCount": 3981
     },
     {
-      "height": 963203,
-      "id": "0000000000000000000080e01961ae76f43821e3982f6b0b1388575f38f4e2ef",
-      "timestamp": 1787161199,
-      "txCount": 4388
+      "height": 963218,
+      "id": "000000000000000000007a2e4d7c4ae9b0d183dd9fd61cce08b56f6dc70c75e1",
+      "timestamp": 1787170557,
+      "txCount": 4329
     },
     {
-      "height": 963202,
-      "id": "000000000000000000004ca7baf1fbb02ef4242906e6d7a5fc723d538a87f467",
-      "timestamp": 1787160669,
-      "txCount": 5355
+      "height": 963217,
+      "id": "00000000000000000001f88e269a5a18909ec8dabca7e408d6aaa1f88f5ca97a",
+      "timestamp": 1787169444,
+      "txCount": 4100
     }
   ],
   "news": [
+    {
+      "title": "HYPE jumps 11% as Trump says CFTC is working to bring Hyperliquid to U.S.",
+      "link": "https://www.coindesk.com/markets/2026/08/19/hype-jumps-11-as-trump-says-cftc-is-working-to-bring-hyperliquid-to-u-s",
+      "pubDate": "Wed, 19 Aug 2026 19:49:51 +0000"
+    },
+    {
+      "title": "Trump pushes Congress to move on Clarity Act during White House crypto event",
+      "link": "https://www.coindesk.com/policy/2026/08/19/trump-pushes-congress-to-move-on-clarity-act-during-white-house-crypto-event",
+      "pubDate": "Wed, 19 Aug 2026 19:48:33 +0000"
+    },
     {
       "title": "Crypto campaign fund Fairshake faces $2 million setback in Florida primaries",
       "link": "https://www.coindesk.com/policy/2026/08/19/crypto-campaign-fund-fairshake-faces-usd2-million-setback-in-florida-primaries",
@@ -475,16 +485,6 @@
       "title": "Strengthen the Clarity Act",
       "link": "https://www.coindesk.com/opinion/2026/08/19/strengthen-the-clarity-act",
       "pubDate": "Wed, 19 Aug 2026 13:00:00 +0000"
-    },
-    {
-      "title": "Bitcoin is flashing 8 of 12 capitulation signals, but bottom's not yet in, says VanEck",
-      "link": "https://www.coindesk.com/markets/2026/08/19/bitcoin-is-flashing-8-of-12-capitulation-signals-but-its-not-a-bottom-yet",
-      "pubDate": "Wed, 19 Aug 2026 12:45:35 +0000"
-    },
-    {
-      "title": "A year after losing $1.46 billion, Bybit says AI helped it save $700 million",
-      "link": "https://www.coindesk.com/tech/2026/08/19/a-year-after-losing-usd1-46-billion-bybit-says-ai-helped-it-save-usd700-million",
-      "pubDate": "Wed, 19 Aug 2026 12:01:09 +0000"
     }
   ]
 }
