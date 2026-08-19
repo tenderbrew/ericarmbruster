@@ -1,13 +1,13 @@
 {
-  "fetchedAt": "2026-08-19T13:05:45.196Z",
+  "fetchedAt": "2026-08-19T15:43:56.061Z",
   "price": {
-    "usd": 64844,
-    "time": 1787144409
+    "usd": 68653,
+    "time": 1787154012
   },
   "moves": {
-    "d1": 0.24385731944596145,
-    "d7": 2.2636893436908334,
-    "d30": -0.5230066020749158
+    "d1": 6.132279571771071,
+    "d7": 8.27075850521879,
+    "d30": 5.320369313240247
   },
   "history90d": [
     {
@@ -372,60 +372,90 @@
     },
     {
       "date": "2026-08-19",
-      "close": 64755.68212754243
+      "close": 68625.36629511444
     }
   ],
   "blocks": [
     {
-      "height": 963171,
-      "id": "00000000000000000002010cfa63b8c6d09e1996cd8ed041a37154cc01b20c30",
-      "timestamp": 1787144686,
-      "txCount": 4175
+      "height": 963189,
+      "id": "000000000000000000008b46c6ec942664acee34bd8cda87c5f633b15e4d574c",
+      "timestamp": 1787154036,
+      "txCount": 4502
     },
     {
-      "height": 963170,
-      "id": "00000000000000000001506c2fa3ec1fdd51a3a00da2d20b903b30afe5784f11",
-      "timestamp": 1787143693,
-      "txCount": 3454
+      "height": 963188,
+      "id": "000000000000000000013d49697875d6d3b6180240af393bbafe29f56a190114",
+      "timestamp": 1787153893,
+      "txCount": 3879
     },
     {
-      "height": 963169,
-      "id": "000000000000000000000f6f3dc030dcf2ecd722ea884a3b0753f5a61426c934",
-      "timestamp": 1787143375,
-      "txCount": 3985
+      "height": 963187,
+      "id": "000000000000000000015a8dabca895f6108040f4cbb1191ce9d6d2ce1e796fa",
+      "timestamp": 1787153871,
+      "txCount": 3765
     },
     {
-      "height": 963168,
-      "id": "0000000000000000000076da136ca6df79a20c8ad5ad0048362bc3532262aa1d",
-      "timestamp": 1787142604,
-      "txCount": 4350
+      "height": 963186,
+      "id": "00000000000000000001233408a4b57c2aa7bf2da1c732ffdd1d252a3966b8b7",
+      "timestamp": 1787152614,
+      "txCount": 4251
     },
     {
-      "height": 963167,
-      "id": "00000000000000000001c3f9c2cc827683ac9261e0a8d7ce5d2c9c19b6dda831",
-      "timestamp": 1787140067,
-      "txCount": 4333
+      "height": 963185,
+      "id": "00000000000000000001318e5bb1a5b8aa0f14a10dfde7c08e8366f7e56abc21",
+      "timestamp": 1787152413,
+      "txCount": 4283
     },
     {
-      "height": 963166,
-      "id": "000000000000000000009a000331fc142a96e1d0f68433f23883793a521ca010",
-      "timestamp": 1787139097,
-      "txCount": 6714
+      "height": 963184,
+      "id": "000000000000000000011d034227e34d8cac652a3cf7027c98001825a69a937b",
+      "timestamp": 1787151258,
+      "txCount": 4652
     },
     {
-      "height": 963165,
-      "id": "00000000000000000000e15d81765dd82a3203e1d5295b3b40b4281a1c303d08",
-      "timestamp": 1787138886,
-      "txCount": 4043
+      "height": 963183,
+      "id": "00000000000000000000e295549c6d3c950f7f1175e0238f210f832e9d2317f6",
+      "timestamp": 1787150743,
+      "txCount": 6003
     },
     {
-      "height": 963164,
-      "id": "000000000000000000001426fb361fde21549375a4342ee54de856d479260235",
-      "timestamp": 1787138226,
-      "txCount": 6739
+      "height": 963182,
+      "id": "0000000000000000000124be11ca74a6731fd1a2dc2a211733cee2a5ea1a4ac3",
+      "timestamp": 1787150555,
+      "txCount": 5880
     }
   ],
   "news": [
+    {
+      "title": "Bitcoin nears key technical breakout that could propel prices to $76,000",
+      "link": "https://www.coindesk.com/markets/2026/08/19/bitcoin-nears-key-technical-breakout-that-could-propel-prices-to-usd76-000",
+      "pubDate": "Wed, 19 Aug 2026 15:22:47 +0000"
+    },
+    {
+      "title": "Coinbase, Circle and Bullish jump as Clarity Act proponents express optimism about bill",
+      "link": "https://www.coindesk.com/markets/2026/08/19/coinbase-circle-and-bullish-jump-as-clarity-act-proponents-express-optimism-about-bill",
+      "pubDate": "Wed, 19 Aug 2026 15:22:29 +0000"
+    },
+    {
+      "title": "AI could supercharge crypto but there’s a catch, Fidelity Digital Assets says",
+      "link": "https://www.coindesk.com/tech/2026/08/19/ai-could-supercharge-crypto-but-there-s-a-catch-fidelity-digital-assets-says",
+      "pubDate": "Wed, 19 Aug 2026 14:59:07 +0000"
+    },
+    {
+      "title": "Crypto Long & Short: Where DeFi yield really comes from (and why it broke this spring)",
+      "link": "https://www.coindesk.com/coindesk-indices/2026/08/18/crypto-long-and-short-where-defi-yield-really-comes-from-and-why-it-broke-this-spring",
+      "pubDate": "Wed, 19 Aug 2026 14:57:35 +0000"
+    },
+    {
+      "title": "HSBC, Standard Chartered execute first live banking transaction on Swift’s 24/7 ledger",
+      "link": "https://www.coindesk.com/business/2026/08/19/hsbc-standard-chartered-execute-first-live-banking-transaction-on-swift-s-24-7-ledger",
+      "pubDate": "Wed, 19 Aug 2026 14:50:33 +0000"
+    },
+    {
+      "title": "Cantor opens Kalshi prediction markets to thousands of institutional clients",
+      "link": "https://www.coindesk.com/markets/2026/08/19/cantor-opens-kalshi-prediction-markets-to-thousands-of-institutional-clients",
+      "pubDate": "Wed, 19 Aug 2026 14:41:55 +0000"
+    },
     {
       "title": "Beyond crypto funding rates: Ethena diversifies USDe backing with $1 billion FalconX facility",
       "link": "https://www.coindesk.com/business/2026/08/19/beyond-crypto-funding-rates-ethena-diversifies-usde-backing-with-usd1-billion-falconx-facility",
@@ -455,36 +485,6 @@
       "title": "Fed decision making comes into focus as bitcoin holds steady, bond yields surge",
       "link": "https://www.coindesk.com/daybook-us/2026/08/19/fed-decision-making-comes-into-focus-as-bitcoin-holds-steady-bond-yields-surge",
       "pubDate": "Wed, 19 Aug 2026 11:14:50 +0000"
-    },
-    {
-      "title": "Bitcoin stuck in a six-week range as global bond yields hit highest levels for decades",
-      "link": "https://www.coindesk.com/markets/2026/08/19/bitcoin-stuck-in-a-six-week-range-as-global-bond-yields-hit-highest-levels-for-decades",
-      "pubDate": "Wed, 19 Aug 2026 10:29:57 +0000"
-    },
-    {
-      "title": "TikTok code includes peer-to-peer payments over messaging: Bloomberg",
-      "link": "https://www.coindesk.com/business/2026/08/19/tiktok-code-includes-peer-to-peer-payments-over-messaging-bloomberg",
-      "pubDate": "Wed, 19 Aug 2026 10:04:30 +0000"
-    },
-    {
-      "title": "Ripple raises $275 million in senior notes for prime brokerage push",
-      "link": "https://www.coindesk.com/business/2026/08/19/ripple-raises-usd275-million-in-debut-debt-offering-for-its-prime-brokerage-arm",
-      "pubDate": "Wed, 19 Aug 2026 09:55:50 +0000"
-    },
-    {
-      "title": "OpenAI trails Anthropic as losses deepen and Altman pauses frontier AI training",
-      "link": "https://www.coindesk.com/markets/2026/08/19/openai-trails-anthropic-as-losses-deepen-and-altman-pauses-frontier-ai-training",
-      "pubDate": "Wed, 19 Aug 2026 09:10:22 +0000"
-    },
-    {
-      "title": "Live updates: Bitcoin takes aim at $65,000 as Treasury move sends yields lower",
-      "link": "https://www.coindesk.com/markets/2026/08/19/live-updates-bitcoin-holds-firm-above-usd64-000-as-south-korea-s-kospi-sinks-5-8",
-      "pubDate": "Wed, 19 Aug 2026 09:05:45 +0000"
-    },
-    {
-      "title": "Maya Protocol exploit drains bitcoin and other assets as pool value drops $11 million",
-      "link": "https://www.coindesk.com/markets/2026/08/19/maya-protocol-exploit-drains-bitcoin-and-other-assets-as-pool-value-drops-usd11-million",
-      "pubDate": "Wed, 19 Aug 2026 06:36:11 +0000"
     }
   ]
 }
