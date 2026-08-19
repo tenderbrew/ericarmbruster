@@ -1,13 +1,13 @@
 {
-  "fetchedAt": "2026-08-19T15:43:56.061Z",
+  "fetchedAt": "2026-08-19T18:50:54.168Z",
   "price": {
-    "usd": 68653,
-    "time": 1787154012
+    "usd": 68414,
+    "time": 1787165108
   },
   "moves": {
-    "d1": 6.132279571771071,
-    "d7": 8.27075850521879,
-    "d30": 5.320369313240247
+    "d1": 5.762803877807898,
+    "d7": 7.893838177152324,
+    "d30": 4.953720102486692
   },
   "history90d": [
     {
@@ -372,60 +372,70 @@
     },
     {
       "date": "2026-08-19",
-      "close": 68625.36629511444
+      "close": 68390.82037643685
     }
   ],
   "blocks": [
     {
-      "height": 963189,
-      "id": "000000000000000000008b46c6ec942664acee34bd8cda87c5f633b15e4d574c",
-      "timestamp": 1787154036,
-      "txCount": 4502
+      "height": 963209,
+      "id": "00000000000000000000bc48115e58124959b1814b2ae9bc9cfeda3cf9d920c7",
+      "timestamp": 1787164980,
+      "txCount": 5041
     },
     {
-      "height": 963188,
-      "id": "000000000000000000013d49697875d6d3b6180240af393bbafe29f56a190114",
-      "timestamp": 1787153893,
-      "txCount": 3879
+      "height": 963208,
+      "id": "0000000000000000000098e18c93d212bec0cf0ee7f0a6e9870760f2be7ac235",
+      "timestamp": 1787164735,
+      "txCount": 4959
     },
     {
-      "height": 963187,
-      "id": "000000000000000000015a8dabca895f6108040f4cbb1191ce9d6d2ce1e796fa",
-      "timestamp": 1787153871,
-      "txCount": 3765
+      "height": 963207,
+      "id": "00000000000000000001c38b7dc2f450099ccf646d84013d6e136d7a26f9207b",
+      "timestamp": 1787164607,
+      "txCount": 4443
     },
     {
-      "height": 963186,
-      "id": "00000000000000000001233408a4b57c2aa7bf2da1c732ffdd1d252a3966b8b7",
-      "timestamp": 1787152614,
-      "txCount": 4251
+      "height": 963206,
+      "id": "000000000000000000004bae4b8b7ba547a09da59022aaa1abe07b203d217770",
+      "timestamp": 1787164536,
+      "txCount": 4019
     },
     {
-      "height": 963185,
-      "id": "00000000000000000001318e5bb1a5b8aa0f14a10dfde7c08e8366f7e56abc21",
-      "timestamp": 1787152413,
-      "txCount": 4283
+      "height": 963205,
+      "id": "00000000000000000000e73a97ef65a4da83cbac34b1f912788664ee8f9a9f8a",
+      "timestamp": 1787162551,
+      "txCount": 4173
     },
     {
-      "height": 963184,
-      "id": "000000000000000000011d034227e34d8cac652a3cf7027c98001825a69a937b",
-      "timestamp": 1787151258,
-      "txCount": 4652
+      "height": 963204,
+      "id": "00000000000000000001f5d495fcd7d37a5234f448481254fcd20d36e706c8b3",
+      "timestamp": 1787162336,
+      "txCount": 4350
     },
     {
-      "height": 963183,
-      "id": "00000000000000000000e295549c6d3c950f7f1175e0238f210f832e9d2317f6",
-      "timestamp": 1787150743,
-      "txCount": 6003
+      "height": 963203,
+      "id": "0000000000000000000080e01961ae76f43821e3982f6b0b1388575f38f4e2ef",
+      "timestamp": 1787161199,
+      "txCount": 4388
     },
     {
-      "height": 963182,
-      "id": "0000000000000000000124be11ca74a6731fd1a2dc2a211733cee2a5ea1a4ac3",
-      "timestamp": 1787150555,
-      "txCount": 5880
+      "height": 963202,
+      "id": "000000000000000000004ca7baf1fbb02ef4242906e6d7a5fc723d538a87f467",
+      "timestamp": 1787160669,
+      "txCount": 5355
     }
   ],
   "news": [
+    {
+      "title": "Crypto campaign fund Fairshake faces $2 million setback in Florida primaries",
+      "link": "https://www.coindesk.com/policy/2026/08/19/crypto-campaign-fund-fairshake-faces-usd2-million-setback-in-florida-primaries",
+      "pubDate": "Wed, 19 Aug 2026 18:10:10 +0000"
+    },
+    {
+      "title": "Bitcoin surges above $68,000, liquidating $1.4 billion shorts as Treasury buybacks boost risk appetite",
+      "link": "https://www.coindesk.com/markets/2026/08/19/bitcoin-surges-above-usd68-000-liquidating-usd1-4-billion-shorts-as-treasury-buybacks-boost-risk-appetite",
+      "pubDate": "Wed, 19 Aug 2026 16:18:04 +0000"
+    },
     {
       "title": "Bitcoin nears key technical breakout that could propel prices to $76,000",
       "link": "https://www.coindesk.com/markets/2026/08/19/bitcoin-nears-key-technical-breakout-that-could-propel-prices-to-usd76-000",
@@ -475,16 +485,6 @@
       "title": "A year after losing $1.46 billion, Bybit says AI helped it save $700 million",
       "link": "https://www.coindesk.com/tech/2026/08/19/a-year-after-losing-usd1-46-billion-bybit-says-ai-helped-it-save-usd700-million",
       "pubDate": "Wed, 19 Aug 2026 12:01:09 +0000"
-    },
-    {
-      "title": "China triples its e-CNY network in 2026 as 8 more banks join the CBDC push this week",
-      "link": "https://www.coindesk.com/business/2026/08/19/china-triples-digital-yuan-bank-roster-year-to-date-as-eight-more-banks-join-network",
-      "pubDate": "Wed, 19 Aug 2026 11:55:45 +0000"
-    },
-    {
-      "title": "Fed decision making comes into focus as bitcoin holds steady, bond yields surge",
-      "link": "https://www.coindesk.com/daybook-us/2026/08/19/fed-decision-making-comes-into-focus-as-bitcoin-holds-steady-bond-yields-surge",
-      "pubDate": "Wed, 19 Aug 2026 11:14:50 +0000"
     }
   ]
 }
