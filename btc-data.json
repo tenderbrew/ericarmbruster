@@ -1,19 +1,15 @@
 {
-  "fetchedAt": "2026-08-18T21:35:20.148Z",
+  "fetchedAt": "2026-08-19T01:50:20.549Z",
   "price": {
-    "usd": 64581,
-    "time": 1787088609
+    "usd": 64373,
+    "time": 1787103911
   },
   "moves": {
-    "d1": 0.13901821501847156,
-    "d7": 1.6422413957422943,
-    "d30": -0.13824125578785207
+    "d1": -0.4842726046404455,
+    "d7": 1.520888195074499,
+    "d30": -1.2455663437691777
   },
   "history90d": [
-    {
-      "date": "2026-05-21",
-      "close": 77470.39614899461
-    },
     {
       "date": "2026-05-22",
       "close": 77550.38308320483
@@ -368,64 +364,78 @@
     },
     {
       "date": "2026-08-18",
-      "close": 64491.345282946255
+      "close": 64455.380294477756
     },
     {
-      "date": "2026-08-18",
-      "close": 64574.18073816789
+      "date": "2026-08-19",
+      "close": 64686.25782561655
+    },
+    {
+      "date": "2026-08-19",
+      "close": 64361.36265390424
     }
   ],
   "blocks": [
     {
-      "height": 963096,
-      "id": "000000000000000000005ca21336ac34e9c466cbb4ba9437eae99e52cef6be35",
-      "timestamp": 1787088080,
-      "txCount": 3838
+      "height": 963115,
+      "id": "000000000000000000018685fecd8188ec2f8e67442ac45b89726b010eb6c01c",
+      "timestamp": 1787103277,
+      "txCount": 3780
     },
     {
-      "height": 963095,
-      "id": "0000000000000000000131a1be99de1a8dfe00eabe228b97363441d2e6eb986e",
-      "timestamp": 1787086735,
-      "txCount": 3793
+      "height": 963114,
+      "id": "00000000000000000001d6b189ef583170ae0a7b4a1d6e526fa442b4b78b7445",
+      "timestamp": 1787102883,
+      "txCount": 3945
     },
     {
-      "height": 963094,
-      "id": "00000000000000000001948df55d30651e4201e27df7cd41d8f1d1e81f2679b1",
-      "timestamp": 1787085542,
-      "txCount": 4203
+      "height": 963113,
+      "id": "0000000000000000000080ca463416f4a01050149012b9f4b839dd84fd660710",
+      "timestamp": 1787099904,
+      "txCount": 4048
     },
     {
-      "height": 963093,
-      "id": "00000000000000000002152e23678c4c67c80da2c8be997f3c42ed51f29ab527",
-      "timestamp": 1787085019,
-      "txCount": 4571
+      "height": 963112,
+      "id": "00000000000000000000500eae11c144213f16232b69caa0cfdcff0489d57c73",
+      "timestamp": 1787098601,
+      "txCount": 3654
     },
     {
-      "height": 963092,
-      "id": "000000000000000000021e960713046d1fe3ea6c3c466679a4f388435a5d86db",
-      "timestamp": 1787083458,
-      "txCount": 4205
+      "height": 963111,
+      "id": "00000000000000000001e707ecff196d2f1c327d3a6f6a3ee4746ed9082095ca",
+      "timestamp": 1787097432,
+      "txCount": 5674
     },
     {
-      "height": 963091,
-      "id": "000000000000000000009e0ee100436387fd6d7b02df9459092c0fbbd6f6de47",
-      "timestamp": 1787081499,
-      "txCount": 4356
+      "height": 963110,
+      "id": "00000000000000000001cd5d3fc662ff565fd223a67d43de5f4be81ca7061e61",
+      "timestamp": 1787097274,
+      "txCount": 731
     },
     {
-      "height": 963090,
-      "id": "0000000000000000000232317d293880bd89613e729530c979456be56cab6f6b",
-      "timestamp": 1787078250,
-      "txCount": 6247
+      "height": 963109,
+      "id": "00000000000000000001634aef3db3ea9a9aa41b310a157328513681f3cd7e90",
+      "timestamp": 1787097129,
+      "txCount": 4404
     },
     {
-      "height": 963089,
-      "id": "000000000000000000018b1f3d3f3aca79b4967a745e16a0c8a230d8915e3591",
-      "timestamp": 1787077816,
-      "txCount": 2110
+      "height": 963108,
+      "id": "00000000000000000001883e92ef2a39f21c795013346f2ce8e8ac2cdaea2dbd",
+      "timestamp": 1787096197,
+      "txCount": 3705
     }
   ],
   "news": [
+    {
+      "title": "‘It has to pass’: Andrew Cuomo warns U.S. is falling behind on crypto rules",
+      "link": "https://www.coindesk.com/policy/2026/08/18/it-has-to-pass-andrew-cuomo-warns-u-s-is-falling-behind-on-crypto-rules",
+      "pubDate": "Wed, 19 Aug 2026 01:35:36 +0000"
+    },
+    {
+      "title": "Robinhood CEO urges U.S. to clear path for tokenized stocks as overseas markets advance",
+      "link": "https://www.coindesk.com/markets/2026/08/18/robinhood-ceo-urges-u-s-to-clear-path-for-tokenized-stocks-as-overseas-markets-advance",
+      "pubDate": "Tue, 18 Aug 2026 23:11:12 +0000"
+    },
     {
       "title": "U.S. accounting-standards group proposes way to see stablecoins as 'cash equivalent'",
       "link": "https://www.coindesk.com/policy/2026/08/18/u-s-accounting-standards-group-proposes-way-to-see-stablecoins-as-cash-equivalent",
@@ -475,16 +485,6 @@
       "title": "HashKey taps Hong Kong's first regulated stablecoin to settle insurance and trade deals",
       "link": "https://www.coindesk.com/business/2026/08/18/hashkey-taps-hong-kong-s-first-regulated-stablecoin-to-settle-insurance-and-trade-deals",
       "pubDate": "Tue, 18 Aug 2026 14:03:27 +0000"
-    },
-    {
-      "title": "Citi plans to launch bitcoin custody for institutional clients later this year",
-      "link": "https://www.coindesk.com/markets/2026/08/18/citi-plans-to-launch-bitcoin-custody-for-institutional-clients-later-this-year",
-      "pubDate": "Tue, 18 Aug 2026 13:25:13 +0000"
-    },
-    {
-      "title": "Crypto’s easy-money era is ending in a wave of failures",
-      "link": "https://www.coindesk.com/business/2026/08/13/crypto-s-easy-money-era-is-ending-in-a-wave-of-failures",
-      "pubDate": "Tue, 18 Aug 2026 13:22:40 +0000"
     }
   ]
 }
