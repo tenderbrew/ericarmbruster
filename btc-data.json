@@ -1,13 +1,13 @@
 {
-  "fetchedAt": "2026-08-19T07:01:42.428Z",
+  "fetchedAt": "2026-08-19T09:46:26.117Z",
   "price": {
-    "usd": 64279,
-    "time": 1787122511
+    "usd": 64338,
+    "time": 1787132408
   },
   "moves": {
-    "d1": -0.6295894047765871,
-    "d7": 1.3726433798517013,
-    "d30": -1.3897714726848087
+    "d1": -0.5383799238400822,
+    "d7": 1.4656906574915363,
+    "d30": -1.2992597428335029
   },
   "history90d": [
     {
@@ -372,72 +372,82 @@
     },
     {
       "date": "2026-08-19",
-      "close": 64291.09895968353
+      "close": 64314.166627179584
     }
   ],
   "blocks": [
     {
-      "height": 963144,
-      "id": "0000000000000000000069382cf7f0c892d9ef6535856bfbcf29a80453f09f2c",
-      "timestamp": 1787122405,
-      "txCount": 4845
+      "height": 963157,
+      "id": "00000000000000000000a582e4e821b1ed23eee0f3c5b223f3c2008caba59298",
+      "timestamp": 1787132523,
+      "txCount": 4667
     },
     {
-      "height": 963143,
-      "id": "0000000000000000000069caadeba40871732e5b6143e5b016a4b1e8297ba9e4",
-      "timestamp": 1787121849,
-      "txCount": 4793
+      "height": 963156,
+      "id": "0000000000000000000154bc272567d6bfba980b249202785fd0b37f50c95738",
+      "timestamp": 1787131351,
+      "txCount": 3729
     },
     {
-      "height": 963142,
-      "id": "0000000000000000000088da54d872c6af7fdeed4ab9f8c315637261ce3a3fa0",
-      "timestamp": 1787121622,
-      "txCount": 3825
+      "height": 963155,
+      "id": "00000000000000000000294873b962dbe90da96760f65cb86bde219c233c3f5f",
+      "timestamp": 1787129936,
+      "txCount": 6095
     },
     {
-      "height": 963141,
-      "id": "000000000000000000002bd1d8ddf0a3fbe140c216daeba8b4b8fb033d5b9c95",
-      "timestamp": 1787120425,
-      "txCount": 4097
+      "height": 963154,
+      "id": "0000000000000000000011d105890ad83712485595865d313efb7421d5962827",
+      "timestamp": 1787129601,
+      "txCount": 5653
     },
     {
-      "height": 963140,
-      "id": "00000000000000000000d9d554cf18f014c9833ed7a83278cf9349d43649ce8d",
-      "timestamp": 1787118898,
-      "txCount": 7194
+      "height": 963153,
+      "id": "000000000000000000016e00291ca5fedd6f68e84094140d928f7bb07c41fd92",
+      "timestamp": 1787129533,
+      "txCount": 3750
     },
     {
-      "height": 963139,
-      "id": "000000000000000000003abe49624d8f5ebe0231f1dc5b50ba83b16df64e88bb",
-      "timestamp": 1787118914,
-      "txCount": 4973
+      "height": 963152,
+      "id": "00000000000000000000c5d439b1f41efbd03af67509212414fa8eccde782a17",
+      "timestamp": 1787128402,
+      "txCount": 1
     },
     {
-      "height": 963138,
-      "id": "00000000000000000000de669ff33014244fae09aaf5bc7a005a1f4a508c8c00",
-      "timestamp": 1787118234,
-      "txCount": 3579
+      "height": 963151,
+      "id": "0000000000000000000063dfd99b7ea1aaec86f6844a124a6c44564562dbe4bd",
+      "timestamp": 1787128373,
+      "txCount": 5508
     },
     {
-      "height": 963137,
-      "id": "00000000000000000000ba4ef9e6d10e9a69010b73dcb7a65b66a029097d405f",
-      "timestamp": 1787117923,
-      "txCount": 4199
+      "height": 963150,
+      "id": "00000000000000000000f86fc8f64219112e270d5084be50a3b88355ca7af07f",
+      "timestamp": 1787128311,
+      "txCount": 4294
     }
   ],
   "news": [
+    {
+      "title": "OpenAI trails Anthropic as losses deepen and Altman pauses frontier AI training",
+      "link": "https://www.coindesk.com/markets/2026/08/19/openai-trails-anthropic-as-losses-deepen-and-altman-pauses-frontier-ai-training",
+      "pubDate": "Wed, 19 Aug 2026 09:10:22 +0000"
+    },
+    {
+      "title": "Live updates: Bitcoin remains above $64,000 as oil rises and the Kospi tumbles 6%",
+      "link": "https://www.coindesk.com/markets/2026/08/19/live-updates-bitcoin-holds-firm-above-usd64-000-as-south-korea-s-kospi-sinks-5-8",
+      "pubDate": "Wed, 19 Aug 2026 09:05:45 +0000"
+    },
     {
       "title": "Maya Protocol exploit drains bitcoin and other assets as pool value drops $11 million",
       "link": "https://www.coindesk.com/markets/2026/08/19/maya-protocol-exploit-drains-bitcoin-and-other-assets-as-pool-value-drops-usd11-million",
       "pubDate": "Wed, 19 Aug 2026 06:36:11 +0000"
     },
     {
-      "title": "Robot maker Unitree’s IPO surges 600%, outpacing crypto traders’ premarket bets",
+      "title": "Robot maker Unitree’s IPO surges 600% , outpacing crypto traders’ premarket bets",
       "link": "https://www.coindesk.com/markets/2026/08/19/robot-maker-unitree-s-ipo-surges-600-outpacing-crypto-traders-premarket-bets",
       "pubDate": "Wed, 19 Aug 2026 05:45:27 +0000"
     },
     {
-      "title": "Solana leads bitcoin and ether higher while Korean chip stocks slide 7%",
+      "title": "Bitcoin holds $64,000 and solana leads gains amid 7% Korean chip stock slide",
       "link": "https://www.coindesk.com/markets/2026/08/19/solana-leads-bitcoin-and-ether-higher-while-korean-chip-stocks-slide-7",
       "pubDate": "Wed, 19 Aug 2026 04:25:42 +0000"
     },
@@ -475,16 +485,6 @@
       "title": "Kraken adds U.S. stocks in Europe as TradFi-crypto divide blurs",
       "link": "https://www.coindesk.com/markets/2026/08/18/kraken-adds-u-s-stocks-in-europe-as-tradfi-crypto-divide-blurs",
       "pubDate": "Tue, 18 Aug 2026 16:08:46 +0000"
-    },
-    {
-      "title": "Why the Trump-backed crypto venture is distancing itself from Hong Kong AI aggregator WorldClaw",
-      "link": "https://www.coindesk.com/markets/2026/08/18/trump-linked-world-liberty-says-worldclaw-is-independent-after-questions-over-ai-model-access",
-      "pubDate": "Tue, 18 Aug 2026 15:07:52 +0000"
-    },
-    {
-      "title": "Bitcoin miners’ AI pivot pays off, but mining could revive with one twist",
-      "link": "https://www.coindesk.com/business/2026/08/18/bitcoin-miners-ai-pivot-pays-off-but-mining-could-revive-with-one-twist",
-      "pubDate": "Tue, 18 Aug 2026 14:41:31 +0000"
     }
   ]
 }
