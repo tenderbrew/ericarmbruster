@@ -1,19 +1,15 @@
 {
-  "fetchedAt": "2026-08-19T21:36:42.623Z",
+  "fetchedAt": "2026-08-20T01:48:43.948Z",
   "price": {
-    "usd": 69616,
-    "time": 1787175012
+    "usd": 69590,
+    "time": 1787190321
   },
   "moves": {
-    "d1": 7.621003811463667,
-    "d7": 9.78947932500127,
-    "d30": 6.797704836067364
+    "d1": 0.431498355073634,
+    "d7": 9.733300380571297,
+    "d30": 4.6136095383920495
   },
   "history90d": [
-    {
-      "date": "2026-05-22",
-      "close": 77550.38308320483
-    },
     {
       "date": "2026-05-23",
       "close": 75478.38285862996
@@ -368,64 +364,73 @@
     },
     {
       "date": "2026-08-19",
-      "close": 64686.25782561655
+      "close": 64664.42993991489
     },
     {
-      "date": "2026-08-19",
-      "close": 69721.33230367114
+      "date": "2026-08-20",
+      "close": 69291.0104297816
+    },
+    {
+      "date": "2026-08-20",
+      "close": 69654.85307806295
     }
   ],
   "blocks": [
     {
-      "height": 963224,
-      "id": "0000000000000000000002089866572c1e22f32924e857f73ca6312e1505bb2b",
-      "timestamp": 1787173926,
-      "txCount": 4501
+      "height": 963238,
+      "id": "00000000000000000001608f168db0955f711094794e99bf7a14a7167028ee2a",
+      "timestamp": 1787188178,
+      "txCount": 2795
     },
     {
-      "height": 963223,
-      "id": "00000000000000000001466a523571dd5b6119fbbb7623a60acf61d290b312d8",
-      "timestamp": 1787173893,
-      "txCount": 3169
+      "height": 963237,
+      "id": "000000000000000000020f519e6365e589593c83157d7e0764eecef9deba6a1e",
+      "timestamp": 1787187746,
+      "txCount": 3938
     },
     {
-      "height": 963222,
-      "id": "000000000000000000001a37a4e1e9534181f6863f91203e0cfec72f8cc20824",
-      "timestamp": 1787172822,
-      "txCount": 3716
+      "height": 963236,
+      "id": "0000000000000000000130a934508252c7a134621e67cd094a177ce3a66de929",
+      "timestamp": 1787185545,
+      "txCount": 3843
     },
     {
-      "height": 963221,
-      "id": "00000000000000000000c2dbdc52658a6ce3e1d3a1f54c264fa329eb3019e771",
-      "timestamp": 1787172332,
-      "txCount": 3952
+      "height": 963235,
+      "id": "00000000000000000000583f50131d5ad478ec3f7f849a46a39e63690a9f8b51",
+      "timestamp": 1787185731,
+      "txCount": 3895
     },
     {
-      "height": 963220,
-      "id": "0000000000000000000018c7f32984704146c33318173276cd380f75b3dd3301",
-      "timestamp": 1787172335,
-      "txCount": 4101
+      "height": 963234,
+      "id": "000000000000000000014fe7c64fe1d6770103e5af94576af22fe6cae3206688",
+      "timestamp": 1787183540,
+      "txCount": 4209
     },
     {
-      "height": 963219,
-      "id": "000000000000000000018952e6699e292578a591a42317bd16f0b4dbd8cc2cb1",
-      "timestamp": 1787172118,
-      "txCount": 3981
+      "height": 963233,
+      "id": "0000000000000000000055f4ad18b678f9479be709d105842d50029d8827c595",
+      "timestamp": 1787182343,
+      "txCount": 3917
     },
     {
-      "height": 963218,
-      "id": "000000000000000000007a2e4d7c4ae9b0d183dd9fd61cce08b56f6dc70c75e1",
-      "timestamp": 1787170557,
-      "txCount": 4329
+      "height": 963232,
+      "id": "000000000000000000016813353d83651497417cc705d1e2caf46a541e81deef",
+      "timestamp": 1787180366,
+      "txCount": 4051
     },
     {
-      "height": 963217,
-      "id": "00000000000000000001f88e269a5a18909ec8dabca7e408d6aaa1f88f5ca97a",
-      "timestamp": 1787169444,
-      "txCount": 4100
+      "height": 963231,
+      "id": "0000000000000000000085d111cccbe34897462e9b62e2a213ff8f4f4f65b7d7",
+      "timestamp": 1787178514,
+      "txCount": 3613
     }
   ],
   "news": [
+    {
+      "title": "Bitcoin briefly hits $70,000 for the first time since June. Here is why",
+      "link": "https://www.coindesk.com/markets/2026/08/19/bitcoin-briefly-hits-usd70-000-for-the-first-time-since-june-here-is-why",
+      "pubDate": "Wed, 19 Aug 2026 22:26:01 +0000"
+    },
     {
       "title": "HYPE jumps 11% as Trump says CFTC is working to bring Hyperliquid to U.S.",
       "link": "https://www.coindesk.com/markets/2026/08/19/hype-jumps-11-as-trump-says-cftc-is-working-to-bring-hyperliquid-to-u-s",
@@ -479,11 +484,6 @@
     {
       "title": "Beyond crypto funding rates: Ethena diversifies USDe backing with $1 billion FalconX facility",
       "link": "https://www.coindesk.com/business/2026/08/19/beyond-crypto-funding-rates-ethena-diversifies-usde-backing-with-usd1-billion-falconx-facility",
-      "pubDate": "Wed, 19 Aug 2026 13:00:00 +0000"
-    },
-    {
-      "title": "Strengthen the Clarity Act",
-      "link": "https://www.coindesk.com/opinion/2026/08/19/strengthen-the-clarity-act",
       "pubDate": "Wed, 19 Aug 2026 13:00:00 +0000"
     }
   ]
