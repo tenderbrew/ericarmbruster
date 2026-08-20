@@ -1,13 +1,13 @@
 {
-  "fetchedAt": "2026-08-20T13:08:34.362Z",
+  "fetchedAt": "2026-08-20T15:46:13.067Z",
   "price": {
-    "usd": 71888,
-    "time": 1787230809
+    "usd": 72199,
+    "time": 1787240414
   },
   "moves": {
-    "d1": 3.7479458794299925,
-    "d7": 13.356911880421185,
-    "d30": 8.068158679349446
+    "d1": 4.196777550480824,
+    "d7": 13.847313610818613,
+    "d30": 8.535680342899376
   },
   "history90d": [
     {
@@ -372,60 +372,70 @@
     },
     {
       "date": "2026-08-20",
-      "close": 71972.58725649171
+      "close": 72245.29686019468
     }
   ],
   "blocks": [
     {
-      "height": 963312,
-      "id": "0000000000000000000212b24bcf5359aa5168e0b9d99d7ee87baadeee79e128",
-      "timestamp": 1787230854,
-      "txCount": 5029
+      "height": 963326,
+      "id": "00000000000000000000cb181d3340ebcc9bb3def8fd21e71a8fc5e6e500c2b6",
+      "timestamp": 1787240367,
+      "txCount": 3457
     },
     {
-      "height": 963311,
-      "id": "0000000000000000000067103eded105e3ce3a06fcff1303647bb71346ef8772",
-      "timestamp": 1787230656,
-      "txCount": 5319
+      "height": 963325,
+      "id": "00000000000000000001cf93d5567acdbcf00d32bc9e160dffc625949774b9b2",
+      "timestamp": 1787240341,
+      "txCount": 3592
     },
     {
-      "height": 963310,
-      "id": "0000000000000000000111bef7b2861ee1534829eb69e0e6c16860e09c27ff56",
-      "timestamp": 1787230577,
-      "txCount": 3088
+      "height": 963324,
+      "id": "000000000000000000022f062782ab666902fda1b880ec7ce12b76193b622ccc",
+      "timestamp": 1787240064,
+      "txCount": 4532
     },
     {
-      "height": 963309,
-      "id": "000000000000000000014442eaa9e2daf085173cefa2b235676a5b6605603568",
-      "timestamp": 1787230499,
-      "txCount": 3061
+      "height": 963323,
+      "id": "00000000000000000001bb8da6308e5994a943ca1dfb30bfbc7575a487d736c0",
+      "timestamp": 1787239225,
+      "txCount": 2793
     },
     {
-      "height": 963308,
-      "id": "0000000000000000000141fc5e8c401c5b3e5afdce40f5dcfc63eced73699250",
-      "timestamp": 1787230472,
-      "txCount": 3441
+      "height": 963322,
+      "id": "00000000000000000001b526d9c88a240b124f0b2e406b413627ac76cbe4973a",
+      "timestamp": 1787239084,
+      "txCount": 3013
     },
     {
-      "height": 963307,
-      "id": "00000000000000000002339f6648bf3cc1c34ef9b802485db8f3e9734718b324",
-      "timestamp": 1787229056,
-      "txCount": 3783
+      "height": 963321,
+      "id": "0000000000000000000103371d34a095df34bf3e79acbc0bff71f372444008cc",
+      "timestamp": 1787238880,
+      "txCount": 4049
     },
     {
-      "height": 963306,
-      "id": "00000000000000000000c9754ad6553428a9e3c4954fd4ba84e718f97193fb1d",
-      "timestamp": 1787228926,
-      "txCount": 3888
+      "height": 963320,
+      "id": "000000000000000000010890837b3904e0e81f65de298f11e33ac56ecd347ece",
+      "timestamp": 1787238429,
+      "txCount": 3722
     },
     {
-      "height": 963305,
-      "id": "000000000000000000007356dc4fbae35d9e5aabf08a925483ddd2380d638082",
-      "timestamp": 1787228447,
-      "txCount": 3829
+      "height": 963319,
+      "id": "00000000000000000000d4d225070c76cce2148e82173fafd12a0436b6102393",
+      "timestamp": 1787235905,
+      "txCount": 4545
     }
   ],
   "news": [
+    {
+      "title": "Bitcoin's jump above $71,000 sets up bullish golden cross pattern",
+      "link": "https://www.coindesk.com/markets/2026/08/20/bitcoin-s-jump-above-usd71-000-sets-up-bullish-golden-cross-pattern",
+      "pubDate": "Thu, 20 Aug 2026 15:16:12 +0000"
+    },
+    {
+      "title": "Crypto for Advisors: What are tokenized deposits?",
+      "link": "https://www.coindesk.com/coindesk-indices/2026/08/20/crypto-for-advisors-what-are-tokenized-deposits",
+      "pubDate": "Thu, 20 Aug 2026 15:01:40 +0000"
+    },
     {
       "title": "Optimism-funded team's deciding vote shifts $49 million in OP tokens away from users",
       "link": "https://www.coindesk.com/web3/2026/08/20/optimism-funded-team-s-deciding-vote-shifts-usd49-million-in-op-tokens-away-from-users",
@@ -467,7 +477,7 @@
       "pubDate": "Thu, 20 Aug 2026 09:25:03 +0000"
     },
     {
-      "title": "Live updates: Bitcoin hits $72,000, but bond yields are back on the rise",
+      "title": "Live updates: Bitcoin and gold extend gains as yields climb",
       "link": "https://www.coindesk.com/tech/2026/08/20/live-updates-bitcoin-etfs-draw-usd517-million-ether-pulls-usd189-million-in-biggest-inflows-in-months",
       "pubDate": "Thu, 20 Aug 2026 06:21:17 +0000"
     },
@@ -475,16 +485,6 @@
       "title": "Trader who made $49 million shorting crypto lost $24 million on ether in 12 seconds",
       "link": "https://www.coindesk.com/markets/2026/08/20/trader-who-made-usd49-million-shorting-crypto-lost-usd24-million-on-ether-in-12-seconds",
       "pubDate": "Thu, 20 Aug 2026 05:40:54 +0000"
-    },
-    {
-      "title": "Bearish crypto bets lose record $3 billion as bitcoin tops $71,000",
-      "link": "https://www.coindesk.com/markets/2026/08/20/bearish-crypto-bets-lose-record-usd2-7-billion-as-bitcoin-surges-toward-usd70-000",
-      "pubDate": "Thu, 20 Aug 2026 04:29:56 +0000"
-    },
-    {
-      "title": "Ether jumps 18% to $2,250 as bitcoin tops $69,000 in broad crypto rally",
-      "link": "https://www.coindesk.com/markets/2026/08/20/ether-jumps-18-to-usd2-250-as-bitcoin-tops-usd69-000-in-broad-crypto-rally",
-      "pubDate": "Thu, 20 Aug 2026 04:10:40 +0000"
     }
   ]
 }
