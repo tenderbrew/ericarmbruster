@@ -1,13 +1,13 @@
 {
-  "fetchedAt": "2026-08-20T07:02:59.499Z",
+  "fetchedAt": "2026-08-20T09:47:37.327Z",
   "price": {
-    "usd": 69810,
-    "time": 1787209207
+    "usd": 71938,
+    "time": 1787219111
   },
   "moves": {
-    "d1": 0.7489998587108637,
-    "d7": 10.080208357058229,
-    "d30": 4.944332258588147
+    "d1": 3.8201053120748174,
+    "d7": 13.435754602350025,
+    "d30": 8.143322933939467
   },
   "history90d": [
     {
@@ -372,62 +372,77 @@
     },
     {
       "date": "2026-08-20",
-      "close": 69788.38972598403
+      "close": 71924.70987777246
     }
   ],
   "blocks": [
     {
-      "height": 963267,
-      "id": "00000000000000000001dc63dcbae52b3be38ed106d36195b2498f951daace50",
-      "timestamp": 1787207260,
-      "txCount": 4637
+      "height": 963286,
+      "id": "000000000000000000002d0b8a76144e142a589b1f958c8958d191782f78687d",
+      "timestamp": 1787218809,
+      "txCount": 6807
     },
     {
-      "height": 963266,
-      "id": "0000000000000000000207cca47fea71c49d0e3fef3ca4d98d421e7ffb0377ca",
-      "timestamp": 1787206814,
-      "txCount": 5462
+      "height": 963285,
+      "id": "0000000000000000000160cf7ac93f4a215c675c2a9334e0d8c64cb8320c5950",
+      "timestamp": 1787218739,
+      "txCount": 6392
     },
     {
-      "height": 963265,
-      "id": "00000000000000000001fc93f8bf37fb80350440183bfa6e913f81f601cef791",
-      "timestamp": 1787206554,
-      "txCount": 3960
+      "height": 963284,
+      "id": "00000000000000000001042284916d4ad3c1bcaa5e8aaefc0c7a09e6e6480451",
+      "timestamp": 1787218681,
+      "txCount": 5068
     },
     {
-      "height": 963264,
-      "id": "00000000000000000001307bf9b8270d3a7596a3ef285fede2a62423ee9082f0",
-      "timestamp": 1787206442,
-      "txCount": 4316
+      "height": 963283,
+      "id": "00000000000000000001ee7c4af289f132ec758d271ec2914a9c36303aba0337",
+      "timestamp": 1787218087,
+      "txCount": 5726
     },
     {
-      "height": 963263,
-      "id": "0000000000000000000129b8f95e8b7f25e96b5da443479fe4bb365fd6c87f1d",
-      "timestamp": 1787205821,
-      "txCount": 4632
+      "height": 963282,
+      "id": "000000000000000000017865b6044090f7d3d52efbd0e5612b9b93bc1d676cd9",
+      "timestamp": 1787217781,
+      "txCount": 4826
     },
     {
-      "height": 963262,
-      "id": "00000000000000000001ded949e230429f95fbe03cf7b56d626a89dcf9f7c739",
-      "timestamp": 1787205188,
-      "txCount": 4570
+      "height": 963281,
+      "id": "000000000000000000015b64ef4a7183771ac94e84a2205302c8104f3eb9cf0d",
+      "timestamp": 1787217612,
+      "txCount": 6543
     },
     {
-      "height": 963261,
-      "id": "00000000000000000000c04c6a4a89e711897c38806e656261866b46e1cc205d",
-      "timestamp": 1787204538,
-      "txCount": 4789
+      "height": 963280,
+      "id": "00000000000000000001457180887354d0883bbc160371967837da89c251d379",
+      "timestamp": 1787217110,
+      "txCount": 4288
     },
     {
-      "height": 963260,
-      "id": "00000000000000000001230d4e75af70ca9b04a0488c82bfd9a3ebfd5274a5b1",
-      "timestamp": 1787203897,
-      "txCount": 4997
+      "height": 963279,
+      "id": "00000000000000000000f1754696c82926559c1a1f89c4b2fdfdac718c0e653b",
+      "timestamp": 1787216824,
+      "txCount": 4546
     }
   ],
   "news": [
     {
-      "title": "Live updates: Bitcoin ETFs draw $517 million, ether pulls $189 million in biggest inflows in months",
+      "title": "Elon Musk's X is exploring stablecoins to pay influencers and content providers",
+      "link": "https://www.coindesk.com/business/2026/08/20/elon-musk-s-x-is-exploring-stablecoins-to-pay-influencers-and-content-providers",
+      "pubDate": "Thu, 20 Aug 2026 09:40:25 +0000"
+    },
+    {
+      "title": "BitGo secures South Korea virtual asset license, says it's the first global crypto company to do so",
+      "link": "https://www.coindesk.com/business/2026/08/20/bitgo-secures-south-korea-virtual-asset-license-says-it-s-the-first-global-crypto-company-to-do-so",
+      "pubDate": "Thu, 20 Aug 2026 09:25:25 +0000"
+    },
+    {
+      "title": "Bitcoin approaches $72,000 as Strategy and Coinbase continue rally",
+      "link": "https://www.coindesk.com/markets/2026/08/20/bitcoin-approaches-usd72-000-as-strategy-and-coinbase-continue-rally",
+      "pubDate": "Thu, 20 Aug 2026 09:25:03 +0000"
+    },
+    {
+      "title": "Live updates: Bitcoin hits $71,000, ETFs draw $700 million in biggest inflows in months",
       "link": "https://www.coindesk.com/tech/2026/08/20/live-updates-bitcoin-etfs-draw-usd517-million-ether-pulls-usd189-million-in-biggest-inflows-in-months",
       "pubDate": "Thu, 20 Aug 2026 06:21:17 +0000"
     },
@@ -437,7 +452,7 @@
       "pubDate": "Thu, 20 Aug 2026 05:40:54 +0000"
     },
     {
-      "title": "Bearish crypto bets lose record $2.7 billion as bitcoin surges toward $70,000",
+      "title": "Bearish crypto bets lose record $3 billion as bitcoin tops $71,000",
       "link": "https://www.coindesk.com/markets/2026/08/20/bearish-crypto-bets-lose-record-usd2-7-billion-as-bitcoin-surges-toward-usd70-000",
       "pubDate": "Thu, 20 Aug 2026 04:29:56 +0000"
     },
@@ -470,21 +485,6 @@
       "title": "Bitcoin surges above $68,000, liquidating $1.4 billion shorts as Treasury buybacks boost risk appetite",
       "link": "https://www.coindesk.com/markets/2026/08/19/bitcoin-surges-above-usd68-000-liquidating-usd1-4-billion-shorts-as-treasury-buybacks-boost-risk-appetite",
       "pubDate": "Wed, 19 Aug 2026 16:18:04 +0000"
-    },
-    {
-      "title": "Bitcoin nears key technical breakout that could propel prices to $76,000",
-      "link": "https://www.coindesk.com/markets/2026/08/19/bitcoin-nears-key-technical-breakout-that-could-propel-prices-to-usd76-000",
-      "pubDate": "Wed, 19 Aug 2026 15:22:47 +0000"
-    },
-    {
-      "title": "Coinbase, Circle and Bullish jump as Clarity Act proponents express optimism about bill",
-      "link": "https://www.coindesk.com/markets/2026/08/19/coinbase-circle-and-bullish-jump-as-clarity-act-proponents-express-optimism-about-bill",
-      "pubDate": "Wed, 19 Aug 2026 15:22:29 +0000"
-    },
-    {
-      "title": "AI could supercharge crypto but there’s a catch, Fidelity Digital Assets says",
-      "link": "https://www.coindesk.com/tech/2026/08/19/ai-could-supercharge-crypto-but-there-s-a-catch-fidelity-digital-assets-says",
-      "pubDate": "Wed, 19 Aug 2026 14:59:07 +0000"
     }
   ]
 }
