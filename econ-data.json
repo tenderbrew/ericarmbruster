@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-08-19T18:48:05.887Z",
+  "fetchedAt": "2026-08-20T01:45:48.363Z",
   "indicators": {
     "UNRATE": {
       "latest": {
@@ -63,12 +63,12 @@
     },
     "T10YIE": {
       "latest": {
-        "date": "2026-08-18",
+        "date": "2026-08-19",
         "value": 2.3
       },
       "previous": {
-        "date": "2026-08-17",
-        "value": 2.28
+        "date": "2026-08-18",
+        "value": 2.3
       }
     },
     "PCE": {
@@ -123,42 +123,42 @@
     },
     "DGS2": {
       "latest": {
-        "date": "2026-08-17",
+        "date": "2026-08-18",
         "value": 4.19
       },
       "previous": {
-        "date": "2026-08-14",
-        "value": 4.17
+        "date": "2026-08-17",
+        "value": 4.19
       }
     },
     "DGS10": {
       "latest": {
-        "date": "2026-08-17",
-        "value": 4.72
+        "date": "2026-08-18",
+        "value": 4.71
       },
       "previous": {
-        "date": "2026-08-14",
-        "value": 4.68
+        "date": "2026-08-17",
+        "value": 4.72
       }
     },
     "T10Y2Y": {
       "latest": {
-        "date": "2026-08-18",
-        "value": 0.52
+        "date": "2026-08-19",
+        "value": 0.46
       },
       "previous": {
-        "date": "2026-08-17",
-        "value": 0.53
+        "date": "2026-08-18",
+        "value": 0.52
       }
     },
     "DFII10": {
       "latest": {
-        "date": "2026-08-17",
-        "value": 2.44
+        "date": "2026-08-18",
+        "value": 2.41
       },
       "previous": {
-        "date": "2026-08-14",
-        "value": 2.41
+        "date": "2026-08-17",
+        "value": 2.44
       }
     },
     "BAMLH0A0HYM2": {
@@ -301,6 +301,18 @@
   },
   "news": [
     {
+      "title": "The Flock Camera Backlash Is a Very Good Sign",
+      "link": "https://mises.org/podcasts/guns-and-butter/flock-camera-backlash-very-good-sign",
+      "pubDate": "Wed, 19 Aug 2026 02:58:45 CDT",
+      "kind": "Podcast"
+    },
+    {
+      "title": "Silver Squeeze? Mark Thornton on Wall Street Bullion",
+      "link": "https://mises.org/podcasts/individual-interview/silver-squeeze-mark-thornton-wall-street-bullion",
+      "pubDate": "Wed, 19 Aug 2026 11:00:00 CDT",
+      "kind": "Podcast"
+    },
+    {
       "title": "MMT: A Political Movement without Serious Defenders",
       "link": "https://mises.org/mises-wire/mmt-political-movement-without-serious-defenders",
       "pubDate": "Wed, 19 Aug 2026 11:00:00 CDT",
@@ -346,18 +358,6 @@
       "title": "Three Things We can Do Now as the US Empire Ends",
       "link": "https://mises.org/notes-margin/three-things-we-can-do-now-us-empire-ends",
       "pubDate": "Tue, 18 Aug 2026 05:00:00 CDT",
-      "kind": "Article"
-    },
-    {
-      "title": "Equality Before the Law, Not Privilege by Group Membership",
-      "link": "https://mises.org/mises-wire/equality-law-not-privilege-group-membership",
-      "pubDate": "Tue, 18 Aug 2026 05:00:00 CDT",
-      "kind": "Mises Wire"
-    },
-    {
-      "title": "Foreign holdings of US Treasuries fall in June, led by Japan, UK, China, data shows",
-      "link": "https://mises.org/notes-margin/foreign-holdings-us-treasuries-fall-june-led-japan-uk-china-data-shows",
-      "pubDate": "Tue, 18 Aug 2026 04:00:00 CDT",
       "kind": "Article"
     }
   ]
