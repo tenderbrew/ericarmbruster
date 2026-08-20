@@ -1,13 +1,13 @@
 {
-  "fetchedAt": "2026-08-20T15:46:13.067Z",
+  "fetchedAt": "2026-08-20T18:55:48.313Z",
   "price": {
-    "usd": 72199,
-    "time": 1787240414
+    "usd": 72507,
+    "time": 1787251812
   },
   "moves": {
-    "d1": 4.196777550480824,
-    "d7": 13.847313610818613,
-    "d30": 8.535680342899376
+    "d1": 4.641279655572972,
+    "d7": 14.332984777900325,
+    "d30": 8.998692151173927
   },
   "history90d": [
     {
@@ -372,60 +372,70 @@
     },
     {
       "date": "2026-08-20",
-      "close": 72245.29686019468
+      "close": 72479.19585375085
     }
   ],
   "blocks": [
     {
-      "height": 963326,
-      "id": "00000000000000000000cb181d3340ebcc9bb3def8fd21e71a8fc5e6e500c2b6",
-      "timestamp": 1787240367,
-      "txCount": 3457
+      "height": 963337,
+      "id": "0000000000000000000206ba7db1718b0522bb74ca21d18ee124a1d5dc2e0e15",
+      "timestamp": 1787251661,
+      "txCount": 4005
     },
     {
-      "height": 963325,
-      "id": "00000000000000000001cf93d5567acdbcf00d32bc9e160dffc625949774b9b2",
-      "timestamp": 1787240341,
-      "txCount": 3592
+      "height": 963336,
+      "id": "000000000000000000003bcf9a9bdc80cdd84c7b5e7ba5e4b1b5384e7d5bc670",
+      "timestamp": 1787251056,
+      "txCount": 4171
     },
     {
-      "height": 963324,
-      "id": "000000000000000000022f062782ab666902fda1b880ec7ce12b76193b622ccc",
-      "timestamp": 1787240064,
-      "txCount": 4532
+      "height": 963335,
+      "id": "00000000000000000000eceb434c3e6f0d575d2ea37a89fa68ff549550805233",
+      "timestamp": 1787250909,
+      "txCount": 4058
     },
     {
-      "height": 963323,
-      "id": "00000000000000000001bb8da6308e5994a943ca1dfb30bfbc7575a487d736c0",
-      "timestamp": 1787239225,
-      "txCount": 2793
+      "height": 963334,
+      "id": "00000000000000000001f79b9ed51ebec030e9882c504aade6eea3b621d3dd57",
+      "timestamp": 1787247796,
+      "txCount": 4336
     },
     {
-      "height": 963322,
-      "id": "00000000000000000001b526d9c88a240b124f0b2e406b413627ac76cbe4973a",
-      "timestamp": 1787239084,
-      "txCount": 3013
+      "height": 963333,
+      "id": "000000000000000000015bd7b5e44e0d0c6fa9c0a5105fa60bd6d6bdd63ff1ec",
+      "timestamp": 1787246933,
+      "txCount": 4070
     },
     {
-      "height": 963321,
-      "id": "0000000000000000000103371d34a095df34bf3e79acbc0bff71f372444008cc",
-      "timestamp": 1787238880,
-      "txCount": 4049
+      "height": 963332,
+      "id": "00000000000000000001c89dcc14112690d15842fac88f05eda0dcfc4cb88662",
+      "timestamp": 1787245416,
+      "txCount": 4245
     },
     {
-      "height": 963320,
-      "id": "000000000000000000010890837b3904e0e81f65de298f11e33ac56ecd347ece",
-      "timestamp": 1787238429,
-      "txCount": 3722
+      "height": 963331,
+      "id": "00000000000000000001e785e64d0226d305d7202a6ca6c7caa90c05b1e0160b",
+      "timestamp": 1787243739,
+      "txCount": 4076
     },
     {
-      "height": 963319,
-      "id": "00000000000000000000d4d225070c76cce2148e82173fafd12a0436b6102393",
-      "timestamp": 1787235905,
-      "txCount": 4545
+      "height": 963330,
+      "id": "000000000000000000012494c7465e63c75e19b5ea6fac791a9e17deb9b9821b",
+      "timestamp": 1787242435,
+      "txCount": 3932
     }
   ],
   "news": [
+    {
+      "title": "U.S. CFTC chief puts staff on notice to create crypto regulations if Clarity Act fails",
+      "link": "https://www.coindesk.com/policy/2026/08/20/u-s-cftc-chief-puts-staff-on-notice-to-create-crypto-regulations-if-clarity-act-fails",
+      "pubDate": "Thu, 20 Aug 2026 18:54:18 +0000"
+    },
+    {
+      "title": "Treasury buybacks could set up Bitcoin’s next move toward $180,000, says strategist",
+      "link": "https://www.coindesk.com/markets/2026/08/20/treasury-buybacks-could-set-up-bitcoin-s-next-move-toward-usd180-000",
+      "pubDate": "Thu, 20 Aug 2026 16:17:32 +0000"
+    },
     {
       "title": "Bitcoin's jump above $71,000 sets up bullish golden cross pattern",
       "link": "https://www.coindesk.com/markets/2026/08/20/bitcoin-s-jump-above-usd71-000-sets-up-bullish-golden-cross-pattern",
@@ -475,16 +485,6 @@
       "title": "Bitcoin hits $72,000 as Strategy and Coinbase continue rally",
       "link": "https://www.coindesk.com/markets/2026/08/20/bitcoin-approaches-usd72-000-as-strategy-and-coinbase-continue-rally",
       "pubDate": "Thu, 20 Aug 2026 09:25:03 +0000"
-    },
-    {
-      "title": "Live updates: Bitcoin and gold extend gains as yields climb",
-      "link": "https://www.coindesk.com/tech/2026/08/20/live-updates-bitcoin-etfs-draw-usd517-million-ether-pulls-usd189-million-in-biggest-inflows-in-months",
-      "pubDate": "Thu, 20 Aug 2026 06:21:17 +0000"
-    },
-    {
-      "title": "Trader who made $49 million shorting crypto lost $24 million on ether in 12 seconds",
-      "link": "https://www.coindesk.com/markets/2026/08/20/trader-who-made-usd49-million-shorting-crypto-lost-usd24-million-on-ether-in-12-seconds",
-      "pubDate": "Thu, 20 Aug 2026 05:40:54 +0000"
     }
   ]
 }
