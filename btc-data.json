@@ -1,13 +1,13 @@
 {
-  "fetchedAt": "2026-08-21T09:50:03.372Z",
+  "fetchedAt": "2026-08-21T13:07:42.685Z",
   "price": {
-    "usd": 78186,
-    "time": 1787305509
+    "usd": 77243,
+    "time": 1787317508
   },
   "moves": {
-    "d1": 7.073387396885744,
-    "d7": 24.11185867411698,
-    "d30": 18.32548872882349
+    "d1": 5.78197711479862,
+    "d7": 22.614947683278565,
+    "d30": 16.898367046280825
   },
   "history90d": [
     {
@@ -372,60 +372,90 @@
     },
     {
       "date": "2026-08-21",
-      "close": 78258.76351861104
+      "close": 77240.66573733771
     }
   ],
   "blocks": [
     {
-      "height": 963419,
-      "id": "00000000000000000000416a10e680ac72d719b55242503e2f834f4db7c2ad5a",
-      "timestamp": 1787305772,
-      "txCount": 4071
+      "height": 963443,
+      "id": "00000000000000000000483bbdfbd91f8b2e8dc0ae50cc9e2f40641f8901a4ed",
+      "timestamp": 1787317645,
+      "txCount": 4066
     },
     {
-      "height": 963418,
-      "id": "00000000000000000001de69c2a1228739d65a9008543adb8fcc92d72546b526",
-      "timestamp": 1787305667,
-      "txCount": 4408
+      "height": 963442,
+      "id": "000000000000000000010a79a806b431ff89284b29cc27fd01779c23779dc7b8",
+      "timestamp": 1787316302,
+      "txCount": 6054
     },
     {
-      "height": 963417,
-      "id": "00000000000000000001eeb228be75cf171be2f8d3efa6795c5a000daef2b368",
-      "timestamp": 1787305166,
-      "txCount": 4261
+      "height": 963441,
+      "id": "00000000000000000001e48f2cc9b893afd6909ee9be08ec46be1b6d72796447",
+      "timestamp": 1787316104,
+      "txCount": 3884
     },
     {
-      "height": 963416,
-      "id": "00000000000000000001c5280764bd615fe9af20f62c78098db423c7a26df0b2",
-      "timestamp": 1787304074,
-      "txCount": 3974
+      "height": 963440,
+      "id": "00000000000000000001af91fc6902fec3ea7b2f906a7ad5920509bda6badc4a",
+      "timestamp": 1787315620,
+      "txCount": 4608
     },
     {
-      "height": 963415,
-      "id": "00000000000000000001e6c6a333a3258d3fbec4f976e42d12026335c55e6641",
-      "timestamp": 1787303832,
-      "txCount": 3198
+      "height": 963439,
+      "id": "0000000000000000000000492e82d840cac5d5eb32caede616685bf4d8d34915",
+      "timestamp": 1787315345,
+      "txCount": 6052
     },
     {
-      "height": 963414,
-      "id": "00000000000000000000f55295c6cbc314a72baa40549f1dfd4a6a2bec4b656f",
-      "timestamp": 1787303673,
-      "txCount": 3516
+      "height": 963438,
+      "id": "000000000000000000012c9a6bf3f4fb0ca54b02cd3263fb2820dd01d0787cb3",
+      "timestamp": 1787315674,
+      "txCount": 4327
     },
     {
-      "height": 963413,
-      "id": "00000000000000000000c69dc1b138890651f8e1a09edfc81ea07f7320dd586d",
-      "timestamp": 1787303459,
-      "txCount": 2473
+      "height": 963437,
+      "id": "0000000000000000000054f9b6f13fd4d98a077062d734d006a81df4b9acb5a7",
+      "timestamp": 1787314508,
+      "txCount": 5090
     },
     {
-      "height": 963412,
-      "id": "00000000000000000000cefd57650a55d914085d7d426fdff73858047e2147fb",
-      "timestamp": 1787303291,
-      "txCount": 3471
+      "height": 963436,
+      "id": "000000000000000000022ecf100eced00479b433dfd9d5e7aa4516f1d1a8a5b2",
+      "timestamp": 1787314165,
+      "txCount": 4155
     }
   ],
   "news": [
+    {
+      "title": "Coldcard ships firmware after $114 million bitcoin theft; says AI helped catch more bugs",
+      "link": "https://www.coindesk.com/tech/2026/08/21/coldcard-ships-firmware-after-usd114-million-bitcoin-theft-says-ai-helped-catch-more-bugs",
+      "pubDate": "Fri, 21 Aug 2026 12:10:55 +0000"
+    },
+    {
+      "title": "Analysts split on whether Bitcoin's surge past key levels signals a new bull run",
+      "link": "https://www.coindesk.com/markets/2026/08/21/analysts-split-on-whether-bitcoin-s-surge-past-key-levels-signals-a-new-bull-run",
+      "pubDate": "Fri, 21 Aug 2026 11:31:30 +0000"
+    },
+    {
+      "title": "The hard truth is that the Clarity Act is an anti-crypto bill",
+      "link": "https://www.coindesk.com/opinion/2026/08/21/the-hard-truth-is-that-the-clarity-act-is-an-anti-crypto-bill",
+      "pubDate": "Fri, 21 Aug 2026 11:30:00 +0000"
+    },
+    {
+      "title": "Bitcoin faces $80,000 test as thinner weekend liquidity looms",
+      "link": "https://www.coindesk.com/daybook-us/2026/08/21/bitcoin-faces-usd80-000-test-as-thinner-weekend-liquidity-looms",
+      "pubDate": "Fri, 21 Aug 2026 11:26:27 +0000"
+    },
+    {
+      "title": "Nomura-backed Laser Digital wins Japan's first crypto approval in four years",
+      "link": "https://www.coindesk.com/policy/2026/08/21/nomura-backed-laser-digital-wins-japan-s-first-crypto-approval-in-four-years",
+      "pubDate": "Fri, 21 Aug 2026 10:38:47 +0000"
+    },
+    {
+      "title": "Bitcoin tops $77,000 as best week since 2023 pulls altcoins along for the ride",
+      "link": "https://www.coindesk.com/markets/2026/08/21/bitcoin-tops-usd77-000-as-best-week-since-2023-pulls-altcoins-along-for-the-ride",
+      "pubDate": "Fri, 21 Aug 2026 10:15:36 +0000"
+    },
     {
       "title": "Treasury's latest measure isn't QE or YCC. Still, bitcoin is skyrocketing. Here's why.",
       "link": "https://www.coindesk.com/markets/2026/08/21/treasury-s-latest-measure-isn-t-qe-or-ycc-still-bitcoin-is-skyrocketing-here-s-why",
@@ -437,7 +467,7 @@
       "pubDate": "Fri, 21 Aug 2026 08:24:52 +0000"
     },
     {
-      "title": "Live updates: Bitcoin tops $79,500; BTC, ETH record $800 million inflows",
+      "title": "Live updates: Bitcoin slips back to $77,000 after challenging $80,000 overnight",
       "link": "https://www.coindesk.com/tech/2026/08/21/live-updates-bitcoin-ether-etfs-pull-in-usd800-million-as-inflows-surge-for-a-second-day",
       "pubDate": "Fri, 21 Aug 2026 06:43:24 +0000"
     },
@@ -455,36 +485,6 @@
       "title": "Bitcoin, ether and solana climb as another $1 billion shorts get wiped out",
       "link": "https://www.coindesk.com/markets/2026/08/21/bitcoin-ether-and-solana-climb-as-another-usd1-billion-shorts-get-wiped-out",
       "pubDate": "Fri, 21 Aug 2026 04:56:30 +0000"
-    },
-    {
-      "title": "Bitcoin pushes past $75,000 as rally continues.",
-      "link": "https://www.coindesk.com/markets/2026/08/20/bitcoin-pushes-past-usd75-000-as-rally-continues",
-      "pubDate": "Fri, 21 Aug 2026 01:55:50 +0000"
-    },
-    {
-      "title": "A $2 million bet on XRP volatility crosses the tape as prices surge",
-      "link": "https://www.coindesk.com/markets/2026/08/21/a-usd2-million-bet-on-xrp-volatility-crosses-the-tape-as-prices-surge",
-      "pubDate": "Fri, 21 Aug 2026 01:51:56 +0000"
-    },
-    {
-      "title": "U.S. CFTC chief puts staff on notice to create crypto regulations if Clarity Act fails",
-      "link": "https://www.coindesk.com/policy/2026/08/20/u-s-cftc-chief-puts-staff-on-notice-to-create-crypto-regulations-if-clarity-act-fails",
-      "pubDate": "Thu, 20 Aug 2026 18:54:18 +0000"
-    },
-    {
-      "title": "Treasury buybacks could set up bitcoin’s next move toward $180,000, says strategist",
-      "link": "https://www.coindesk.com/markets/2026/08/20/treasury-buybacks-could-set-up-bitcoin-s-next-move-toward-usd180-000",
-      "pubDate": "Thu, 20 Aug 2026 16:17:32 +0000"
-    },
-    {
-      "title": "Bitcoin's jump above $71,000 sets up bullish golden cross pattern",
-      "link": "https://www.coindesk.com/markets/2026/08/20/bitcoin-s-jump-above-usd71-000-sets-up-bullish-golden-cross-pattern",
-      "pubDate": "Thu, 20 Aug 2026 15:16:12 +0000"
-    },
-    {
-      "title": "Crypto for Advisors: What are tokenized deposits?",
-      "link": "https://www.coindesk.com/coindesk-indices/2026/08/20/crypto-for-advisors-what-are-tokenized-deposits",
-      "pubDate": "Thu, 20 Aug 2026 15:01:40 +0000"
     }
   ]
 }
