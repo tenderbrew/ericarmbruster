@@ -1,13 +1,13 @@
 {
-  "fetchedAt": "2026-08-21T01:54:54.535Z",
+  "fetchedAt": "2026-08-21T03:57:28.027Z",
   "price": {
-    "usd": 75552,
-    "time": 1787277012
+    "usd": 74730,
+    "time": 1787284215
   },
   "moves": {
-    "d1": 3.4662032155310607,
-    "d7": 19.93066721084191,
-    "d30": 14.339233679176221
+    "d1": 2.3404988126937365,
+    "d7": 18.625830694967927,
+    "d30": 13.09523153384211
   },
   "history90d": [
     {
@@ -372,60 +372,65 @@
     },
     {
       "date": "2026-08-21",
-      "close": 75445.14052348344
+      "close": 74632.29043286026
     }
   ],
   "blocks": [
     {
-      "height": 963371,
-      "id": "000000000000000000018ca56e9c6bc1760049e7812788a2042834603129dafc",
-      "timestamp": 1787276656,
-      "txCount": 2002
+      "height": 963389,
+      "id": "00000000000000000001f72bff128f98dc299c452dae58b21baee303b3f2b7bf",
+      "timestamp": 1787284394,
+      "txCount": 6621
     },
     {
-      "height": 963370,
-      "id": "0000000000000000000103428b9c241032491afea55e5def4e15e18cda28590e",
-      "timestamp": 1787276104,
-      "txCount": 3853
+      "height": 963388,
+      "id": "000000000000000000002927457bd6e2de002b2918e2bd2597038dcf71ddd257",
+      "timestamp": 1787284622,
+      "txCount": 4295
     },
     {
-      "height": 963369,
-      "id": "00000000000000000001416ad48d51af989fce529958361bf8ff9d3a93907e95",
-      "timestamp": 1787275766,
-      "txCount": 3561
+      "height": 963387,
+      "id": "0000000000000000000027732ce2b0a6bc21fb6ad4c12d83289370de2e2d4e52",
+      "timestamp": 1787283313,
+      "txCount": 5065
     },
     {
-      "height": 963368,
-      "id": "000000000000000000017a8411d67332fea9862fc0975f7a69c17921b5fe0c1e",
-      "timestamp": 1787274015,
-      "txCount": 4156
+      "height": 963386,
+      "id": "00000000000000000001e198bb64a8ab644e99d6da176fc931c849da366100e3",
+      "timestamp": 1787283248,
+      "txCount": 5400
     },
     {
-      "height": 963367,
-      "id": "00000000000000000001ccdc7006e44773a777209e5708c7007df6912f69a5df",
-      "timestamp": 1787273179,
-      "txCount": 3820
+      "height": 963385,
+      "id": "00000000000000000000ebe3eb116daa31e9b70f7e978f9b48aba04eae1788a2",
+      "timestamp": 1787283261,
+      "txCount": 4753
     },
     {
-      "height": 963366,
-      "id": "00000000000000000000d05194cec003617a7c36e6561b4adcb0f2f2c95f5c89",
-      "timestamp": 1787272481,
-      "txCount": 4338
+      "height": 963384,
+      "id": "000000000000000000020af6e6d2264899e2c88c17a9349dc4663a3cbbf62e98",
+      "timestamp": 1787282448,
+      "txCount": 5319
     },
     {
-      "height": 963365,
-      "id": "000000000000000000021fc0f8304684c7fb93fb949d10ae35ef025f0d17d0dc",
-      "timestamp": 1787272246,
-      "txCount": 2989
+      "height": 963383,
+      "id": "00000000000000000001aa57720d2c16250bf9ad6268407b149e35da23456838",
+      "timestamp": 1787282314,
+      "txCount": 589
     },
     {
-      "height": 963364,
-      "id": "000000000000000000003a5f8c552c74842e034c925d1012f01c4d3af3602047",
-      "timestamp": 1787272097,
-      "txCount": 3012
+      "height": 963382,
+      "id": "0000000000000000000089be47ad5d3619f11cbf842d979cf959b87d0e890521",
+      "timestamp": 1787282136,
+      "txCount": 5231
     }
   ],
   "news": [
+    {
+      "title": "Bitcoin pushes past $75,000 as rally continues.",
+      "link": "https://www.coindesk.com/markets/2026/08/20/bitcoin-pushes-past-usd75-000-as-rally-continues",
+      "pubDate": "Fri, 21 Aug 2026 01:55:50 +0000"
+    },
     {
       "title": "A $2 million bet on XRP volatility crosses the tape as prices surge",
       "link": "https://www.coindesk.com/markets/2026/08/21/a-usd2-million-bet-on-xrp-volatility-crosses-the-tape-as-prices-surge",
@@ -480,11 +485,6 @@
       "title": "Elon Musk's X is exploring stablecoins to pay influencers and content providers",
       "link": "https://www.coindesk.com/business/2026/08/20/elon-musk-s-x-is-exploring-stablecoins-to-pay-influencers-and-content-providers",
       "pubDate": "Thu, 20 Aug 2026 09:40:25 +0000"
-    },
-    {
-      "title": "BitGo secures South Korea virtual asset license, says it's the first global crypto company to do so",
-      "link": "https://www.coindesk.com/business/2026/08/20/bitgo-secures-south-korea-virtual-asset-license-says-it-s-the-first-global-crypto-company-to-do-so",
-      "pubDate": "Thu, 20 Aug 2026 09:25:25 +0000"
     }
   ]
 }
