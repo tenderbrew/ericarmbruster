@@ -1,13 +1,13 @@
 {
-  "fetchedAt": "2026-08-21T18:52:39.716Z",
+  "fetchedAt": "2026-08-21T21:35:42.851Z",
   "price": {
-    "usd": 76914,
-    "time": 1787337909
+    "usd": 78055,
+    "time": 1787347810
   },
   "moves": {
-    "d1": 5.3314214596484,
-    "d7": 22.09269559845797,
-    "d30": 16.40046351122617
+    "d1": 6.893986816871522,
+    "d7": 23.903910275601792,
+    "d30": 18.127235345564642
   },
   "history90d": [
     {
@@ -372,60 +372,65 @@
     },
     {
       "date": "2026-08-21",
-      "close": 76712.22911143383
+      "close": 78411.13805012827
     }
   ],
   "blocks": [
     {
-      "height": 963476,
-      "id": "00000000000000000000def0237b964bca014d6fe3846fa1277ecde72a394f70",
-      "timestamp": 1787336857,
-      "txCount": 4563
+      "height": 963487,
+      "id": "000000000000000000021868ae1bcc1dfd6dfe2bdf25bb76bf73bfad0c0de528",
+      "timestamp": 1787346997,
+      "txCount": 4108
     },
     {
-      "height": 963475,
-      "id": "0000000000000000000045bc6fff63e9e44e77207d80b2d7c0549e554820ffd2",
-      "timestamp": 1787336109,
-      "txCount": 4049
+      "height": 963486,
+      "id": "00000000000000000001cb553c1915746cc075065daf2a3894b69179d38f8d44",
+      "timestamp": 1787345479,
+      "txCount": 3672
     },
     {
-      "height": 963474,
-      "id": "00000000000000000000af036c965263cf90efb23bebd8d0bbf66e845f1fbbe9",
-      "timestamp": 1787334772,
-      "txCount": 3567
+      "height": 963485,
+      "id": "0000000000000000000123a3c72922342125b884c53ae8863c9e979c63df7dee",
+      "timestamp": 1787343924,
+      "txCount": 2963
     },
     {
-      "height": 963473,
-      "id": "00000000000000000000445391e50664455bfb1c3dd37b928c4b61a28712c4c3",
-      "timestamp": 1787334001,
-      "txCount": 4704
+      "height": 963484,
+      "id": "000000000000000000002d4fbc252386c130504b8f83fe06100888c50bf09a19",
+      "timestamp": 1787344139,
+      "txCount": 3739
     },
     {
-      "height": 963472,
-      "id": "0000000000000000000166c2861df8f230c82fa089da22b02ff913379cd610df",
-      "timestamp": 1787333327,
-      "txCount": 4641
+      "height": 963483,
+      "id": "000000000000000000015a31db25edcb93ebb8b5c2c40b667c06363cda17b5b4",
+      "timestamp": 1787343638,
+      "txCount": 2904
     },
     {
-      "height": 963471,
-      "id": "00000000000000000001c3022d269314344a962012e97417f859987c515ee720",
-      "timestamp": 1787332920,
-      "txCount": 3512
+      "height": 963482,
+      "id": "000000000000000000016437081a64716a6d9315460774c7f1e539e96c8eeaf1",
+      "timestamp": 1787343039,
+      "txCount": 3138
     },
     {
-      "height": 963470,
-      "id": "00000000000000000000dffb8c1a09ce35aa6ea5698f0cb83178ef851921993a",
-      "timestamp": 1787332001,
-      "txCount": 3959
+      "height": 963481,
+      "id": "00000000000000000001bc077c3daeadfdcf74bae68d3c279d0bd956cd11d484",
+      "timestamp": 1787342425,
+      "txCount": 3406
     },
     {
-      "height": 963469,
-      "id": "00000000000000000001dd69ff5c90226b6ebbb317c0e1bbc5e00697022516b5",
-      "timestamp": 1787331595,
-      "txCount": 3140
+      "height": 963480,
+      "id": "00000000000000000001ed09ff61951325652849fe17c01a1b504c1fd8e86f32",
+      "timestamp": 1787341747,
+      "txCount": 2872
     }
   ],
   "news": [
+    {
+      "title": "Pass the Clarity Act",
+      "link": "https://www.coindesk.com/opinion/2026/08/21/pass-the-clarity-act",
+      "pubDate": "Fri, 21 Aug 2026 19:00:00 +0000"
+    },
     {
       "title": "Ethena's ENA token surges 48%, but altcoin season will have to wait",
       "link": "https://www.coindesk.com/markets/2026/08/21/ethena-surges-48-as-altcoins-pull-away-from-bitcoin",
@@ -480,11 +485,6 @@
       "title": "MANTRA token plunges 18% to record low as blockchain halts after exploit",
       "link": "https://www.coindesk.com/tech/2026/08/21/mantra-token-plunges-18-to-record-low-as-blockchain-halts-after-exploit",
       "pubDate": "Fri, 21 Aug 2026 05:52:27 +0000"
-    },
-    {
-      "title": "Ripple backs an RLUSD credit fund amid XRP's best week in months",
-      "link": "https://www.coindesk.com/markets/2026/08/21/ripple-backs-an-rlusd-credit-fund-amid-xrp-s-best-week-in-months",
-      "pubDate": "Fri, 21 Aug 2026 05:29:48 +0000"
     }
   ]
 }
