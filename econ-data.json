@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-08-20T18:53:10.994Z",
+  "fetchedAt": "2026-08-21T01:51:01.781Z",
   "indicators": {
     "UNRATE": {
       "latest": {
@@ -63,11 +63,11 @@
     },
     "T10YIE": {
       "latest": {
-        "date": "2026-08-19",
-        "value": 2.3
+        "date": "2026-08-20",
+        "value": 2.34
       },
       "previous": {
-        "date": "2026-08-18",
+        "date": "2026-08-19",
         "value": 2.3
       }
     },
@@ -103,12 +103,12 @@
     },
     "WALCL": {
       "latest": {
-        "date": "2026-08-12",
-        "value": 6759955
+        "date": "2026-08-19",
+        "value": 6745699
       },
       "previous": {
-        "date": "2026-08-05",
-        "value": 6748567
+        "date": "2026-08-12",
+        "value": 6759955
       }
     },
     "FEDFUNDS": {
@@ -123,42 +123,42 @@
     },
     "DGS2": {
       "latest": {
-        "date": "2026-08-18",
+        "date": "2026-08-19",
         "value": 4.19
       },
       "previous": {
-        "date": "2026-08-17",
+        "date": "2026-08-18",
         "value": 4.19
       }
     },
     "DGS10": {
       "latest": {
-        "date": "2026-08-18",
-        "value": 4.71
+        "date": "2026-08-19",
+        "value": 4.65
       },
       "previous": {
-        "date": "2026-08-17",
-        "value": 4.72
+        "date": "2026-08-18",
+        "value": 4.71
       }
     },
     "T10Y2Y": {
       "latest": {
-        "date": "2026-08-19",
-        "value": 0.46
+        "date": "2026-08-20",
+        "value": 0.5
       },
       "previous": {
-        "date": "2026-08-18",
-        "value": 0.52
+        "date": "2026-08-19",
+        "value": 0.46
       }
     },
     "DFII10": {
       "latest": {
-        "date": "2026-08-18",
-        "value": 2.41
+        "date": "2026-08-19",
+        "value": 2.35
       },
       "previous": {
-        "date": "2026-08-17",
-        "value": 2.44
+        "date": "2026-08-18",
+        "value": 2.41
       }
     },
     "BAMLH0A0HYM2": {
@@ -301,6 +301,12 @@
   },
   "news": [
     {
+      "title": "The Anti-Flock Revolution",
+      "link": "https://mises.org/podcasts/power-and-market/anti-flock-revolution",
+      "pubDate": "Thu, 20 Aug 2026 04:50:00 CDT",
+      "kind": "Podcast"
+    },
+    {
       "title": "Jason Arday and the DEI System that Just Won't Die",
       "link": "https://mises.org/podcasts/audio-mises-wire/jason-arday-and-dei-system-just-wont-die",
       "pubDate": "Thu, 20 Aug 2026 11:05:01 CDT",
@@ -319,6 +325,12 @@
       "kind": "Mises Wire"
     },
     {
+      "title": "The Effects of the American Revolution in France in the 1780s",
+      "link": "https://mises.org/power-market/effects-american-revolution-france-1780s",
+      "pubDate": "Thu, 20 Aug 2026 09:00:00 CDT",
+      "kind": "Article"
+    },
+    {
       "title": "David Betz: Mass Migration to Civil War",
       "link": "https://mises.org/power-market/david-betz-mass-migration-civil-war",
       "pubDate": "Thu, 20 Aug 2026 07:00:00 CDT",
@@ -331,34 +343,22 @@
       "kind": "Mises Wire"
     },
     {
-      "title": "The Flock Camera Backlash Is a Very Good Sign",
-      "link": "https://mises.org/podcasts/guns-and-butter/flock-camera-backlash-very-good-sign",
-      "pubDate": "Wed, 19 Aug 2026 02:58:45 CDT",
-      "kind": "Podcast"
+      "title": "At least 5,000 migrants are still living in Ceuta at taxpayer expense",
+      "link": "https://mises.org/notes-margin/least-5000-migrants-are-still-living-ceuta-taxpayer-expense",
+      "pubDate": "Thu, 20 Aug 2026 05:00:00 CDT",
+      "kind": "Article"
     },
     {
-      "title": "MMT: A Political Movement without Serious Defenders",
-      "link": "https://mises.org/mises-wire/mmt-political-movement-without-serious-defenders",
-      "pubDate": "Wed, 19 Aug 2026 11:00:00 CDT",
-      "kind": "Mises Wire"
+      "title": "Some Shattering Illusions of Our Declining Empire",
+      "link": "https://mises.org/notes-margin/some-shattering-illusions-our-declining-empire",
+      "pubDate": "Thu, 20 Aug 2026 04:10:00 CDT",
+      "kind": "Article"
     },
     {
-      "title": "Silver Squeeze? Mark Thornton on Wall Street Bullion",
-      "link": "https://mises.org/podcasts/individual-interview/silver-squeeze-mark-thornton-wall-street-bullion",
-      "pubDate": "Wed, 19 Aug 2026 11:00:00 CDT",
-      "kind": "Podcast"
-    },
-    {
-      "title": "The Flock Camera Backlash Is a Very Good Sign",
-      "link": "https://mises.org/mises-wire/flock-camera-backlash-very-good-sign",
-      "pubDate": "Wed, 19 Aug 2026 05:00:00 CDT",
-      "kind": "Mises Wire"
-    },
-    {
-      "title": "The Seen and the Unseen Cost of a Government Grocery Discount",
-      "link": "https://mises.org/podcasts/audio-mises-wire/seen-and-unseen-cost-government-grocery-discount",
-      "pubDate": "Tue, 18 Aug 2026 12:49:01 CDT",
-      "kind": "Podcast"
+      "title": "Condo Market Plummets in Denver",
+      "link": "https://mises.org/notes-margin/condo-market-plummets-denver",
+      "pubDate": "Thu, 20 Aug 2026 02:00:00 CDT",
+      "kind": "Article"
     }
   ]
 }
