@@ -1,13 +1,13 @@
 {
-  "fetchedAt": "2026-08-21T03:57:28.027Z",
+  "fetchedAt": "2026-08-21T07:04:01.112Z",
   "price": {
-    "usd": 74730,
-    "time": 1787284215
+    "usd": 75511,
+    "time": 1787295312
   },
   "moves": {
-    "d1": 2.3404988126937365,
-    "d7": 18.625830694967927,
-    "d30": 13.09523153384211
+    "d1": 3.410054942396834,
+    "d7": 19.865584124283743,
+    "d30": 14.277184910370021
   },
   "history90d": [
     {
@@ -372,60 +372,80 @@
     },
     {
       "date": "2026-08-21",
-      "close": 74632.29043286026
+      "close": 75626.36054595083
     }
   ],
   "blocks": [
     {
-      "height": 963389,
-      "id": "00000000000000000001f72bff128f98dc299c452dae58b21baee303b3f2b7bf",
-      "timestamp": 1787284394,
-      "txCount": 6621
+      "height": 963404,
+      "id": "00000000000000000001d6a8e822e960bb4af4c6c2cbae7000245f80affebb94",
+      "timestamp": 1787295222,
+      "txCount": 3969
     },
     {
-      "height": 963388,
-      "id": "000000000000000000002927457bd6e2de002b2918e2bd2597038dcf71ddd257",
-      "timestamp": 1787284622,
-      "txCount": 4295
+      "height": 963403,
+      "id": "00000000000000000001151f5bd580666304fb4e416cf96ec679d0a5987095ff",
+      "timestamp": 1787294547,
+      "txCount": 3810
     },
     {
-      "height": 963387,
-      "id": "0000000000000000000027732ce2b0a6bc21fb6ad4c12d83289370de2e2d4e52",
-      "timestamp": 1787283313,
-      "txCount": 5065
+      "height": 963402,
+      "id": "000000000000000000010ed51e91019503b8bb596da544ae5f70372dd495b21c",
+      "timestamp": 1787293967,
+      "txCount": 4402
     },
     {
-      "height": 963386,
-      "id": "00000000000000000001e198bb64a8ab644e99d6da176fc931c849da366100e3",
-      "timestamp": 1787283248,
-      "txCount": 5400
+      "height": 963401,
+      "id": "0000000000000000000104da5b449ffb982f99d155e498ec500531a0dd02cd85",
+      "timestamp": 1787291205,
+      "txCount": 6750
     },
     {
-      "height": 963385,
-      "id": "00000000000000000000ebe3eb116daa31e9b70f7e978f9b48aba04eae1788a2",
-      "timestamp": 1787283261,
-      "txCount": 4753
+      "height": 963400,
+      "id": "000000000000000000012a6627c13a27d026ccdbb27bedef8d415a89ce64b54f",
+      "timestamp": 1787291141,
+      "txCount": 4550
     },
     {
-      "height": 963384,
-      "id": "000000000000000000020af6e6d2264899e2c88c17a9349dc4663a3cbbf62e98",
-      "timestamp": 1787282448,
-      "txCount": 5319
+      "height": 963399,
+      "id": "0000000000000000000005c0e1daeca2bb816013c0997dc266e9c85768a03a7f",
+      "timestamp": 1787290424,
+      "txCount": 3971
     },
     {
-      "height": 963383,
-      "id": "00000000000000000001aa57720d2c16250bf9ad6268407b149e35da23456838",
-      "timestamp": 1787282314,
-      "txCount": 589
+      "height": 963398,
+      "id": "00000000000000000000fd9c4271a366607a378eac53430e81bb586d4f4b693a",
+      "timestamp": 1787289634,
+      "txCount": 6875
     },
     {
-      "height": 963382,
-      "id": "0000000000000000000089be47ad5d3619f11cbf842d979cf959b87d0e890521",
-      "timestamp": 1787282136,
-      "txCount": 5231
+      "height": 963397,
+      "id": "00000000000000000000ecb2c0feb89d7d6b1f20a5b140c6113f5c2451975630",
+      "timestamp": 1787289618,
+      "txCount": 3514
     }
   ],
   "news": [
+    {
+      "title": "Live updates: Bitcoin, ether ETFs pull in $800 million as inflows surge for a second day",
+      "link": "https://www.coindesk.com/tech/2026/08/21/live-updates-bitcoin-ether-etfs-pull-in-usd800-million-as-inflows-surge-for-a-second-day",
+      "pubDate": "Fri, 21 Aug 2026 06:43:24 +0000"
+    },
+    {
+      "title": "MANTRA token plunges 18% to record low as blockchain halts after exploit",
+      "link": "https://www.coindesk.com/tech/2026/08/21/mantra-token-plunges-18-to-record-low-as-blockchain-halts-after-exploit",
+      "pubDate": "Fri, 21 Aug 2026 05:52:27 +0000"
+    },
+    {
+      "title": "Ripple backs an RLUSD credit fund amid XRP's best week in months",
+      "link": "https://www.coindesk.com/markets/2026/08/21/ripple-backs-an-rlusd-credit-fund-amid-xrp-s-best-week-in-months",
+      "pubDate": "Fri, 21 Aug 2026 05:29:48 +0000"
+    },
+    {
+      "title": "Bitcoin, ether and solana climb as another $1 billion shorts get wiped out",
+      "link": "https://www.coindesk.com/markets/2026/08/21/bitcoin-ether-and-solana-climb-as-another-usd1-billion-shorts-get-wiped-out",
+      "pubDate": "Fri, 21 Aug 2026 04:56:30 +0000"
+    },
     {
       "title": "Bitcoin pushes past $75,000 as rally continues.",
       "link": "https://www.coindesk.com/markets/2026/08/20/bitcoin-pushes-past-usd75-000-as-rally-continues",
@@ -465,26 +485,6 @@
       "title": "Ripple-linked XRP jumps 15% as data shows 'banker hours' onchain pattern",
       "link": "https://www.coindesk.com/markets/2026/08/20/ripple-linked-xrp-jumps-15-as-data-shows-banker-hours-onchain-pattern",
       "pubDate": "Thu, 20 Aug 2026 11:35:47 +0000"
-    },
-    {
-      "title": "Fed liquidity promises, dollar weakness could determine bitcoin's next move",
-      "link": "https://www.coindesk.com/daybook-us/2026/08/20/fed-liquidity-promises-dollar-weakness-could-determine-bitcoin-s-next-move",
-      "pubDate": "Thu, 20 Aug 2026 11:31:10 +0000"
-    },
-    {
-      "title": "Bitcoin rally sparks debate whether Clarity Act is already priced in",
-      "link": "https://www.coindesk.com/markets/2026/08/20/crypto-s-bottom-is-near-as-ai-hype-fades-okx-europe-ceo-says",
-      "pubDate": "Thu, 20 Aug 2026 10:47:35 +0000"
-    },
-    {
-      "title": "Bitcoin breaks out of six-week range, tops $71,000 as $3 billion in shorts get wiped out",
-      "link": "https://www.coindesk.com/markets/2026/08/20/bitcoin-breaks-out-of-six-week-range-tops-usd71-000-as-usd3-billion-in-shorts-get-wiped-out",
-      "pubDate": "Thu, 20 Aug 2026 10:46:21 +0000"
-    },
-    {
-      "title": "Elon Musk's X is exploring stablecoins to pay influencers and content providers",
-      "link": "https://www.coindesk.com/business/2026/08/20/elon-musk-s-x-is-exploring-stablecoins-to-pay-influencers-and-content-providers",
-      "pubDate": "Thu, 20 Aug 2026 09:40:25 +0000"
     }
   ]
 }
