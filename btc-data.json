@@ -1,13 +1,13 @@
 {
-  "fetchedAt": "2026-08-21T15:45:30.221Z",
+  "fetchedAt": "2026-08-21T18:52:39.716Z",
   "price": {
-    "usd": 77600,
-    "time": 1787326808
+    "usd": 76914,
+    "time": 1787337909
   },
   "moves": {
-    "d1": 6.270877932089292,
-    "d7": 23.181646754041374,
-    "d30": 17.438645350276303
+    "d1": 5.3314214596484,
+    "d7": 22.09269559845797,
+    "d30": 16.40046351122617
   },
   "history90d": [
     {
@@ -372,60 +372,65 @@
     },
     {
       "date": "2026-08-21",
-      "close": 77546.94371782213
+      "close": 76712.22911143383
     }
   ],
   "blocks": [
     {
-      "height": 963459,
-      "id": "00000000000000000000be16dfaee49ed97925df2c1842a7fdf781b3cb2e5de5",
-      "timestamp": 1787326537,
-      "txCount": 4374
+      "height": 963476,
+      "id": "00000000000000000000def0237b964bca014d6fe3846fa1277ecde72a394f70",
+      "timestamp": 1787336857,
+      "txCount": 4563
     },
     {
-      "height": 963458,
-      "id": "000000000000000000006dd839214d0c0e676abe574ab7cec0876121464c91e2",
-      "timestamp": 1787325736,
-      "txCount": 3821
+      "height": 963475,
+      "id": "0000000000000000000045bc6fff63e9e44e77207d80b2d7c0549e554820ffd2",
+      "timestamp": 1787336109,
+      "txCount": 4049
     },
     {
-      "height": 963457,
-      "id": "0000000000000000000020d2612c0fb4045fa0bfb3eaedbeedc365a3287cb6ae",
-      "timestamp": 1787325358,
-      "txCount": 3252
+      "height": 963474,
+      "id": "00000000000000000000af036c965263cf90efb23bebd8d0bbf66e845f1fbbe9",
+      "timestamp": 1787334772,
+      "txCount": 3567
     },
     {
-      "height": 963456,
-      "id": "000000000000000000019b74aeea64cda4e2c33096764c86b18c96dba031d779",
-      "timestamp": 1787325095,
-      "txCount": 4065
+      "height": 963473,
+      "id": "00000000000000000000445391e50664455bfb1c3dd37b928c4b61a28712c4c3",
+      "timestamp": 1787334001,
+      "txCount": 4704
     },
     {
-      "height": 963455,
-      "id": "00000000000000000001d702446fdcdb1d45c9759ca5b527f293bd21f7554624",
-      "timestamp": 1787323156,
-      "txCount": 5766
+      "height": 963472,
+      "id": "0000000000000000000166c2861df8f230c82fa089da22b02ff913379cd610df",
+      "timestamp": 1787333327,
+      "txCount": 4641
     },
     {
-      "height": 963454,
-      "id": "0000000000000000000177e3cf6364607aa44bd6ae442d99bde7c4741c582118",
-      "timestamp": 1787323026,
-      "txCount": 3742
+      "height": 963471,
+      "id": "00000000000000000001c3022d269314344a962012e97417f859987c515ee720",
+      "timestamp": 1787332920,
+      "txCount": 3512
     },
     {
-      "height": 963453,
-      "id": "000000000000000000004984328145c6a551591d361d93e36f42afc50455c7d8",
-      "timestamp": 1787322432,
-      "txCount": 3706
+      "height": 963470,
+      "id": "00000000000000000000dffb8c1a09ce35aa6ea5698f0cb83178ef851921993a",
+      "timestamp": 1787332001,
+      "txCount": 3959
     },
     {
-      "height": 963452,
-      "id": "00000000000000000000ea1b0a458df35223038a5ec36ee13501a8413092af73",
-      "timestamp": 1787321879,
-      "txCount": 3934
+      "height": 963469,
+      "id": "00000000000000000001dd69ff5c90226b6ebbb317c0e1bbc5e00697022516b5",
+      "timestamp": 1787331595,
+      "txCount": 3140
     }
   ],
   "news": [
+    {
+      "title": "Ethena's ENA token surges 48%, but altcoin season will have to wait",
+      "link": "https://www.coindesk.com/markets/2026/08/21/ethena-surges-48-as-altcoins-pull-away-from-bitcoin",
+      "pubDate": "Fri, 21 Aug 2026 16:10:37 +0000"
+    },
     {
       "title": "Coldcard ships firmware after $114 million bitcoin theft; says AI helped catch more bugs",
       "link": "https://www.coindesk.com/tech/2026/08/21/coldcard-ships-firmware-after-usd114-million-bitcoin-theft-says-ai-helped-catch-more-bugs",
@@ -480,11 +485,6 @@
       "title": "Ripple backs an RLUSD credit fund amid XRP's best week in months",
       "link": "https://www.coindesk.com/markets/2026/08/21/ripple-backs-an-rlusd-credit-fund-amid-xrp-s-best-week-in-months",
       "pubDate": "Fri, 21 Aug 2026 05:29:48 +0000"
-    },
-    {
-      "title": "Bitcoin, ether and solana climb as another $1 billion shorts get wiped out",
-      "link": "https://www.coindesk.com/markets/2026/08/21/bitcoin-ether-and-solana-climb-as-another-usd1-billion-shorts-get-wiped-out",
-      "pubDate": "Fri, 21 Aug 2026 04:56:30 +0000"
     }
   ]
 }
