@@ -1,19 +1,15 @@
 {
-  "fetchedAt": "2026-08-20T21:39:13.233Z",
+  "fetchedAt": "2026-08-21T01:54:54.535Z",
   "price": {
-    "usd": 72790,
-    "time": 1787261709
+    "usd": 75552,
+    "time": 1787277012
   },
   "moves": {
-    "d1": 5.049702044342719,
-    "d7": 14.779234584017598,
-    "d30": 9.424121832153443
+    "d1": 3.4662032155310607,
+    "d7": 19.93066721084191,
+    "d30": 14.339233679176221
   },
   "history90d": [
-    {
-      "date": "2026-05-23",
-      "close": 75478.38285862996
-    },
     {
       "date": "2026-05-24",
       "close": 76684.37097078416
@@ -368,64 +364,73 @@
     },
     {
       "date": "2026-08-20",
-      "close": 69291.0104297816
+      "close": 69418.43799253453
     },
     {
-      "date": "2026-08-20",
-      "close": 72800.0210377941
+      "date": "2026-08-21",
+      "close": 73020.94563440893
+    },
+    {
+      "date": "2026-08-21",
+      "close": 75445.14052348344
     }
   ],
   "blocks": [
     {
-      "height": 963351,
-      "id": "000000000000000000009c680232a81a8ffc94e6908856182f71cc5ac69ecbe1",
-      "timestamp": 1787260837,
-      "txCount": 3393
+      "height": 963371,
+      "id": "000000000000000000018ca56e9c6bc1760049e7812788a2042834603129dafc",
+      "timestamp": 1787276656,
+      "txCount": 2002
     },
     {
-      "height": 963350,
-      "id": "0000000000000000000077140b44f3dc7c0c3730ae69a782d66ec69a8f5e611a",
-      "timestamp": 1787259938,
-      "txCount": 3101
+      "height": 963370,
+      "id": "0000000000000000000103428b9c241032491afea55e5def4e15e18cda28590e",
+      "timestamp": 1787276104,
+      "txCount": 3853
     },
     {
-      "height": 963349,
-      "id": "000000000000000000003c15870cbed21ac5e6a23f7d94b15476809d31d477f5",
-      "timestamp": 1787259350,
-      "txCount": 3351
+      "height": 963369,
+      "id": "00000000000000000001416ad48d51af989fce529958361bf8ff9d3a93907e95",
+      "timestamp": 1787275766,
+      "txCount": 3561
     },
     {
-      "height": 963348,
-      "id": "000000000000000000007ac844856cd3d707db010448ded48679575d6fa031fe",
-      "timestamp": 1787258943,
-      "txCount": 1990
+      "height": 963368,
+      "id": "000000000000000000017a8411d67332fea9862fc0975f7a69c17921b5fe0c1e",
+      "timestamp": 1787274015,
+      "txCount": 4156
     },
     {
-      "height": 963347,
-      "id": "000000000000000000004f9c7d08d1ba4bddaa531260f2a7f60f49fa8f53f524",
-      "timestamp": 1787258787,
-      "txCount": 3472
+      "height": 963367,
+      "id": "00000000000000000001ccdc7006e44773a777209e5708c7007df6912f69a5df",
+      "timestamp": 1787273179,
+      "txCount": 3820
     },
     {
-      "height": 963346,
-      "id": "00000000000000000000d32b5327cb28f8ef46d692885bd27b01284656c17cf1",
-      "timestamp": 1787257926,
-      "txCount": 3106
+      "height": 963366,
+      "id": "00000000000000000000d05194cec003617a7c36e6561b4adcb0f2f2c95f5c89",
+      "timestamp": 1787272481,
+      "txCount": 4338
     },
     {
-      "height": 963345,
-      "id": "000000000000000000017bd2aa1e70f3236036f074c612b73781dccd145e8e04",
-      "timestamp": 1787257791,
-      "txCount": 3875
+      "height": 963365,
+      "id": "000000000000000000021fc0f8304684c7fb93fb949d10ae35ef025f0d17d0dc",
+      "timestamp": 1787272246,
+      "txCount": 2989
     },
     {
-      "height": 963344,
-      "id": "000000000000000000000f1881458841180f7ed52b05a83564de602c94d209b0",
-      "timestamp": 1787257004,
-      "txCount": 3507
+      "height": 963364,
+      "id": "000000000000000000003a5f8c552c74842e034c925d1012f01c4d3af3602047",
+      "timestamp": 1787272097,
+      "txCount": 3012
     }
   ],
   "news": [
+    {
+      "title": "A $2 million bet on XRP volatility crosses the tape as prices surge",
+      "link": "https://www.coindesk.com/markets/2026/08/21/a-usd2-million-bet-on-xrp-volatility-crosses-the-tape-as-prices-surge",
+      "pubDate": "Fri, 21 Aug 2026 01:51:56 +0000"
+    },
     {
       "title": "U.S. CFTC chief puts staff on notice to create crypto regulations if Clarity Act fails",
       "link": "https://www.coindesk.com/policy/2026/08/20/u-s-cftc-chief-puts-staff-on-notice-to-create-crypto-regulations-if-clarity-act-fails",
@@ -480,11 +485,6 @@
       "title": "BitGo secures South Korea virtual asset license, says it's the first global crypto company to do so",
       "link": "https://www.coindesk.com/business/2026/08/20/bitgo-secures-south-korea-virtual-asset-license-says-it-s-the-first-global-crypto-company-to-do-so",
       "pubDate": "Thu, 20 Aug 2026 09:25:25 +0000"
-    },
-    {
-      "title": "Bitcoin hits $72,000 as Strategy and Coinbase continue rally",
-      "link": "https://www.coindesk.com/markets/2026/08/20/bitcoin-approaches-usd72-000-as-strategy-and-coinbase-continue-rally",
-      "pubDate": "Thu, 20 Aug 2026 09:25:03 +0000"
     }
   ]
 }
