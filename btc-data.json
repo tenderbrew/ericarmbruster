@@ -1,13 +1,13 @@
 {
-  "fetchedAt": "2026-08-21T07:04:01.112Z",
+  "fetchedAt": "2026-08-21T09:50:03.372Z",
   "price": {
-    "usd": 75511,
-    "time": 1787295312
+    "usd": 78186,
+    "time": 1787305509
   },
   "moves": {
-    "d1": 3.410054942396834,
-    "d7": 19.865584124283743,
-    "d30": 14.277184910370021
+    "d1": 7.073387396885744,
+    "d7": 24.11185867411698,
+    "d30": 18.32548872882349
   },
   "history90d": [
     {
@@ -372,62 +372,72 @@
     },
     {
       "date": "2026-08-21",
-      "close": 75626.36054595083
+      "close": 78258.76351861104
     }
   ],
   "blocks": [
     {
-      "height": 963404,
-      "id": "00000000000000000001d6a8e822e960bb4af4c6c2cbae7000245f80affebb94",
-      "timestamp": 1787295222,
-      "txCount": 3969
+      "height": 963419,
+      "id": "00000000000000000000416a10e680ac72d719b55242503e2f834f4db7c2ad5a",
+      "timestamp": 1787305772,
+      "txCount": 4071
     },
     {
-      "height": 963403,
-      "id": "00000000000000000001151f5bd580666304fb4e416cf96ec679d0a5987095ff",
-      "timestamp": 1787294547,
-      "txCount": 3810
+      "height": 963418,
+      "id": "00000000000000000001de69c2a1228739d65a9008543adb8fcc92d72546b526",
+      "timestamp": 1787305667,
+      "txCount": 4408
     },
     {
-      "height": 963402,
-      "id": "000000000000000000010ed51e91019503b8bb596da544ae5f70372dd495b21c",
-      "timestamp": 1787293967,
-      "txCount": 4402
+      "height": 963417,
+      "id": "00000000000000000001eeb228be75cf171be2f8d3efa6795c5a000daef2b368",
+      "timestamp": 1787305166,
+      "txCount": 4261
     },
     {
-      "height": 963401,
-      "id": "0000000000000000000104da5b449ffb982f99d155e498ec500531a0dd02cd85",
-      "timestamp": 1787291205,
-      "txCount": 6750
+      "height": 963416,
+      "id": "00000000000000000001c5280764bd615fe9af20f62c78098db423c7a26df0b2",
+      "timestamp": 1787304074,
+      "txCount": 3974
     },
     {
-      "height": 963400,
-      "id": "000000000000000000012a6627c13a27d026ccdbb27bedef8d415a89ce64b54f",
-      "timestamp": 1787291141,
-      "txCount": 4550
+      "height": 963415,
+      "id": "00000000000000000001e6c6a333a3258d3fbec4f976e42d12026335c55e6641",
+      "timestamp": 1787303832,
+      "txCount": 3198
     },
     {
-      "height": 963399,
-      "id": "0000000000000000000005c0e1daeca2bb816013c0997dc266e9c85768a03a7f",
-      "timestamp": 1787290424,
-      "txCount": 3971
+      "height": 963414,
+      "id": "00000000000000000000f55295c6cbc314a72baa40549f1dfd4a6a2bec4b656f",
+      "timestamp": 1787303673,
+      "txCount": 3516
     },
     {
-      "height": 963398,
-      "id": "00000000000000000000fd9c4271a366607a378eac53430e81bb586d4f4b693a",
-      "timestamp": 1787289634,
-      "txCount": 6875
+      "height": 963413,
+      "id": "00000000000000000000c69dc1b138890651f8e1a09edfc81ea07f7320dd586d",
+      "timestamp": 1787303459,
+      "txCount": 2473
     },
     {
-      "height": 963397,
-      "id": "00000000000000000000ecb2c0feb89d7d6b1f20a5b140c6113f5c2451975630",
-      "timestamp": 1787289618,
-      "txCount": 3514
+      "height": 963412,
+      "id": "00000000000000000000cefd57650a55d914085d7d426fdff73858047e2147fb",
+      "timestamp": 1787303291,
+      "txCount": 3471
     }
   ],
   "news": [
     {
-      "title": "Live updates: Bitcoin, ether ETFs pull in $800 million as inflows surge for a second day",
+      "title": "Treasury's latest measure isn't QE or YCC. Still, bitcoin is skyrocketing. Here's why.",
+      "link": "https://www.coindesk.com/markets/2026/08/21/treasury-s-latest-measure-isn-t-qe-or-ycc-still-bitcoin-is-skyrocketing-here-s-why",
+      "pubDate": "Fri, 21 Aug 2026 09:17:15 +0000"
+    },
+    {
+      "title": "Strategy sits on $1.4 billion profit on bitcoin holdings as price surges",
+      "link": "https://www.coindesk.com/markets/2026/08/21/strategy-sits-on-usd1-4-billion-profit-on-bitcoin-holdings-as-price-surges",
+      "pubDate": "Fri, 21 Aug 2026 08:24:52 +0000"
+    },
+    {
+      "title": "Live updates: Bitcoin tops $79,500; BTC, ETH record $800 million inflows",
       "link": "https://www.coindesk.com/tech/2026/08/21/live-updates-bitcoin-ether-etfs-pull-in-usd800-million-as-inflows-surge-for-a-second-day",
       "pubDate": "Fri, 21 Aug 2026 06:43:24 +0000"
     },
@@ -462,7 +472,7 @@
       "pubDate": "Thu, 20 Aug 2026 18:54:18 +0000"
     },
     {
-      "title": "Treasury buybacks could set up Bitcoin’s next move toward $180,000, says strategist",
+      "title": "Treasury buybacks could set up bitcoin’s next move toward $180,000, says strategist",
       "link": "https://www.coindesk.com/markets/2026/08/20/treasury-buybacks-could-set-up-bitcoin-s-next-move-toward-usd180-000",
       "pubDate": "Thu, 20 Aug 2026 16:17:32 +0000"
     },
@@ -475,16 +485,6 @@
       "title": "Crypto for Advisors: What are tokenized deposits?",
       "link": "https://www.coindesk.com/coindesk-indices/2026/08/20/crypto-for-advisors-what-are-tokenized-deposits",
       "pubDate": "Thu, 20 Aug 2026 15:01:40 +0000"
-    },
-    {
-      "title": "Optimism-funded team's deciding vote shifts $49 million in OP tokens away from users",
-      "link": "https://www.coindesk.com/web3/2026/08/20/optimism-funded-team-s-deciding-vote-shifts-usd49-million-in-op-tokens-away-from-users",
-      "pubDate": "Thu, 20 Aug 2026 12:00:25 +0000"
-    },
-    {
-      "title": "Ripple-linked XRP jumps 15% as data shows 'banker hours' onchain pattern",
-      "link": "https://www.coindesk.com/markets/2026/08/20/ripple-linked-xrp-jumps-15-as-data-shows-banker-hours-onchain-pattern",
-      "pubDate": "Thu, 20 Aug 2026 11:35:47 +0000"
     }
   ]
 }
