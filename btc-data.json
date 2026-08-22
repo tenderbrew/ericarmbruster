@@ -1,13 +1,13 @@
 {
-  "fetchedAt": "2026-08-22T09:37:34.915Z",
+  "fetchedAt": "2026-08-22T12:57:41.738Z",
   "price": {
-    "usd": 77183,
-    "time": 1787391310
+    "usd": 77343,
+    "time": 1787403008
   },
   "moves": {
-    "d1": -1.448939442050845,
-    "d7": 22.47950568205155,
-    "d30": 18.682782304400945
+    "d1": -1.244643551903113,
+    "d7": 22.733405127643568,
+    "d30": 18.92881116009071
   },
   "history90d": [
     {
@@ -372,60 +372,65 @@
     },
     {
       "date": "2026-08-22",
-      "close": 77192.26077182766
+      "close": 77292.86360963155
     }
   ],
   "blocks": [
     {
-      "height": 963568,
-      "id": "00000000000000000000ce775abaa9df1be120ecb422208e5087cc8cff179a5b",
-      "timestamp": 1787389673,
-      "txCount": 6509
+      "height": 963587,
+      "id": "00000000000000000001a0bca9f7393742b0485921b412fa07d5e31ae68b78e0",
+      "timestamp": 1787402047,
+      "txCount": 6077
     },
     {
-      "height": 963567,
-      "id": "00000000000000000001fb5a031bf629c9b849e097da3682f65e2df0426c2539",
-      "timestamp": 1787389574,
-      "txCount": 5129
+      "height": 963586,
+      "id": "000000000000000000001da8b617e26a45edf885a56c33dcaeef32e5b86db6ac",
+      "timestamp": 1787401693,
+      "txCount": 6429
     },
     {
-      "height": 963566,
-      "id": "000000000000000000012d61f0dd7d90dd1aa05b188825c7aa22b83bc4f3fe0a",
-      "timestamp": 1787388856,
-      "txCount": 4759
+      "height": 963585,
+      "id": "00000000000000000001445cf2d968a741bd696ba1fff5d770c90939648de6c0",
+      "timestamp": 1787401256,
+      "txCount": 5895
     },
     {
-      "height": 963565,
-      "id": "0000000000000000000144b7f1b63cf07b6b947caa2ceaf3ae863bb92dde4c61",
-      "timestamp": 1787388239,
-      "txCount": 6308
+      "height": 963584,
+      "id": "0000000000000000000127525dc9d05fa34d6610afe7460d954beb8140d40a95",
+      "timestamp": 1787400784,
+      "txCount": 4042
     },
     {
-      "height": 963564,
-      "id": "000000000000000000007fc9057749c8d038a3e37e572cd1f8feb02e32128b8f",
-      "timestamp": 1787388010,
-      "txCount": 6010
+      "height": 963583,
+      "id": "00000000000000000001c377df63fbff1fd4d5fa2341423431a60f4f5afae7c6",
+      "timestamp": 1787399788,
+      "txCount": 6818
     },
     {
-      "height": 963563,
-      "id": "00000000000000000001ec340a0fe9f8dd13142084f406c16bf8d0661a219693",
-      "timestamp": 1787387945,
-      "txCount": 4124
+      "height": 963582,
+      "id": "000000000000000000000f65eb82e7313e88d6552a242df416daf15dd18f8976",
+      "timestamp": 1787399619,
+      "txCount": 6630
     },
     {
-      "height": 963562,
-      "id": "0000000000000000000134da4ad9aaa080c059ef7479ea9ba903fe814f6464d7",
-      "timestamp": 1787386951,
-      "txCount": 3715
+      "height": 963581,
+      "id": "0000000000000000000025ab8115bfb758b6cdb759a30ec5326ae21d24f8b3d1",
+      "timestamp": 1787399496,
+      "txCount": 5091
     },
     {
-      "height": 963561,
-      "id": "000000000000000000002761bb703c28b10ad863cb908fc83e5525f4f4d4a6da",
-      "timestamp": 1787386283,
-      "txCount": 6447
+      "height": 963580,
+      "id": "00000000000000000000cd19ef3bc495bfc2e07c90947c8658b5558475c5f651",
+      "timestamp": 1787398530,
+      "txCount": 4861
     }
   ],
   "news": [
+    {
+      "title": "Bitcoin and Ether bears get decimated amid 'squeeze-led' rally and Musk's X wants to pay creators in stablecoins: Crypto week in 5 stories",
+      "link": "https://www.coindesk.com/business/2026/08/22/bitcoin-and-ether-bears-get-decimated-amid-squeeze-led-rally-and-musk-s-x-wants-to-pay-creators-in-stablecoins-crypto-week-in-5-stories",
+      "pubDate": "Sat, 22 Aug 2026 12:00:00 +0000"
+    },
     {
       "title": "Zcash jumps 48% to over $800 as Grayscale spot ETF push adds to ‘next bitcoin’ buzz",
       "link": "https://www.coindesk.com/markets/2026/08/22/zcash-tops-usd800-for-first-time-since-2016",
@@ -480,11 +485,6 @@
       "title": "Bitcoin tops $77,000 as best week since 2023 pulls altcoins along for the ride",
       "link": "https://www.coindesk.com/markets/2026/08/21/bitcoin-tops-usd77-000-as-best-week-since-2023-pulls-altcoins-along-for-the-ride",
       "pubDate": "Fri, 21 Aug 2026 10:15:36 +0000"
-    },
-    {
-      "title": "Treasury's latest measure isn't QE or YCC. Still, bitcoin is skyrocketing. Here's why.",
-      "link": "https://www.coindesk.com/markets/2026/08/21/treasury-s-latest-measure-isn-t-qe-or-ycc-still-bitcoin-is-skyrocketing-here-s-why",
-      "pubDate": "Fri, 21 Aug 2026 09:17:15 +0000"
     }
   ]
 }
