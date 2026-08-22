@@ -1,19 +1,15 @@
 {
-  "fetchedAt": "2026-08-21T21:35:42.851Z",
+  "fetchedAt": "2026-08-22T01:47:19.487Z",
   "price": {
-    "usd": 78055,
-    "time": 1787347810
+    "usd": 77999,
+    "time": 1787362812
   },
   "moves": {
-    "d1": 6.893986816871522,
-    "d7": 23.903910275601792,
-    "d30": 18.127235345564642
+    "d1": -0.407030402297448,
+    "d7": 23.774392854570813,
+    "d30": 19.937529468418802
   },
   "history90d": [
-    {
-      "date": "2026-05-24",
-      "close": 76684.37097078416
-    },
     {
       "date": "2026-05-25",
       "close": 77016.06581859986
@@ -368,64 +364,73 @@
     },
     {
       "date": "2026-08-21",
-      "close": 73020.94563440893
+      "close": 73097.54507565373
     },
     {
-      "date": "2026-08-21",
-      "close": 78411.13805012827
+      "date": "2026-08-22",
+      "close": 78317.77716345884
+    },
+    {
+      "date": "2026-08-22",
+      "close": 77922.3681351788
     }
   ],
   "blocks": [
     {
-      "height": 963487,
-      "id": "000000000000000000021868ae1bcc1dfd6dfe2bdf25bb76bf73bfad0c0de528",
-      "timestamp": 1787346997,
-      "txCount": 4108
+      "height": 963510,
+      "id": "000000000000000000008301f26ee50f1e5710578a07ab73686f43cd3585167d",
+      "timestamp": 1787361306,
+      "txCount": 5541
     },
     {
-      "height": 963486,
-      "id": "00000000000000000001cb553c1915746cc075065daf2a3894b69179d38f8d44",
-      "timestamp": 1787345479,
-      "txCount": 3672
+      "height": 963509,
+      "id": "000000000000000000019104921c2541b1485072e1c8cc2e2836b0e8c664d98e",
+      "timestamp": 1787361101,
+      "txCount": 4842
     },
     {
-      "height": 963485,
-      "id": "0000000000000000000123a3c72922342125b884c53ae8863c9e979c63df7dee",
-      "timestamp": 1787343924,
-      "txCount": 2963
+      "height": 963508,
+      "id": "00000000000000000000f89d2dd9269cd2a42dac95146e057318f2547006fd93",
+      "timestamp": 1787360583,
+      "txCount": 4437
     },
     {
-      "height": 963484,
-      "id": "000000000000000000002d4fbc252386c130504b8f83fe06100888c50bf09a19",
-      "timestamp": 1787344139,
-      "txCount": 3739
+      "height": 963507,
+      "id": "00000000000000000000b3185c4f17a9c9c23f83aa16b57eb0d04e262a16d9aa",
+      "timestamp": 1787360332,
+      "txCount": 3464
     },
     {
-      "height": 963483,
-      "id": "000000000000000000015a31db25edcb93ebb8b5c2c40b667c06363cda17b5b4",
-      "timestamp": 1787343638,
-      "txCount": 2904
+      "height": 963506,
+      "id": "000000000000000000000659e09e1fce5846a3f82f83e804195c3f7160147ae8",
+      "timestamp": 1787359295,
+      "txCount": 3267
     },
     {
-      "height": 963482,
-      "id": "000000000000000000016437081a64716a6d9315460774c7f1e539e96c8eeaf1",
-      "timestamp": 1787343039,
-      "txCount": 3138
+      "height": 963505,
+      "id": "00000000000000000002064fa906cf6e73512f3ea284e3ac284289c11bd31ed8",
+      "timestamp": 1787359197,
+      "txCount": 1985
     },
     {
-      "height": 963481,
-      "id": "00000000000000000001bc077c3daeadfdcf74bae68d3c279d0bd956cd11d484",
-      "timestamp": 1787342425,
-      "txCount": 3406
+      "height": 963504,
+      "id": "000000000000000000022b35a4d6c02747f8a58fb378c839c001e058ef0e9116",
+      "timestamp": 1787359109,
+      "txCount": 2942
     },
     {
-      "height": 963480,
-      "id": "00000000000000000001ed09ff61951325652849fe17c01a1b504c1fd8e86f32",
-      "timestamp": 1787341747,
-      "txCount": 2872
+      "height": 963503,
+      "id": "00000000000000000000bb39b157255beb938829ce0408ec22f1fdca29e7726e",
+      "timestamp": 1787358955,
+      "txCount": 4175
     }
   ],
   "news": [
+    {
+      "title": "Crypto advocates join in suing Illinois over digital asset tax",
+      "link": "https://www.coindesk.com/policy/2026/08/21/crypto-advocates-join-in-suing-illinois-over-digital-asset-tax",
+      "pubDate": "Fri, 21 Aug 2026 22:10:28 +0000"
+    },
     {
       "title": "Pass the Clarity Act",
       "link": "https://www.coindesk.com/opinion/2026/08/21/pass-the-clarity-act",
@@ -480,11 +485,6 @@
       "title": "Live updates: Bitcoin slips back to $77,000 after challenging $80,000 overnight",
       "link": "https://www.coindesk.com/tech/2026/08/21/live-updates-bitcoin-ether-etfs-pull-in-usd800-million-as-inflows-surge-for-a-second-day",
       "pubDate": "Fri, 21 Aug 2026 06:43:24 +0000"
-    },
-    {
-      "title": "MANTRA token plunges 18% to record low as blockchain halts after exploit",
-      "link": "https://www.coindesk.com/tech/2026/08/21/mantra-token-plunges-18-to-record-low-as-blockchain-halts-after-exploit",
-      "pubDate": "Fri, 21 Aug 2026 05:52:27 +0000"
     }
   ]
 }
