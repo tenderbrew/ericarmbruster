@@ -1,13 +1,13 @@
 {
-  "fetchedAt": "2026-08-22T12:57:41.738Z",
+  "fetchedAt": "2026-08-22T15:33:14.306Z",
   "price": {
-    "usd": 77343,
-    "time": 1787403008
+    "usd": 76992,
+    "time": 1787412307
   },
   "moves": {
-    "d1": -1.244643551903113,
-    "d7": 22.733405127643568,
-    "d30": 18.92881116009071
+    "d1": -1.6928176609146917,
+    "d7": 22.17641321887609,
+    "d30": 18.389085357921275
   },
   "history90d": [
     {
@@ -372,62 +372,82 @@
     },
     {
       "date": "2026-08-22",
-      "close": 77292.86360963155
+      "close": 76976.7727504676
     }
   ],
   "blocks": [
     {
-      "height": 963587,
-      "id": "00000000000000000001a0bca9f7393742b0485921b412fa07d5e31ae68b78e0",
-      "timestamp": 1787402047,
-      "txCount": 6077
+      "height": 963600,
+      "id": "0000000000000000000153e005dab06d9ba670d13dd232a36948119b17f77852",
+      "timestamp": 1787412331,
+      "txCount": 4364
     },
     {
-      "height": 963586,
-      "id": "000000000000000000001da8b617e26a45edf885a56c33dcaeef32e5b86db6ac",
-      "timestamp": 1787401693,
-      "txCount": 6429
+      "height": 963599,
+      "id": "000000000000000000004857f57294764bab7c17e596489cf5ce7844589ea1f5",
+      "timestamp": 1787409881,
+      "txCount": 4180
     },
     {
-      "height": 963585,
-      "id": "00000000000000000001445cf2d968a741bd696ba1fff5d770c90939648de6c0",
-      "timestamp": 1787401256,
-      "txCount": 5895
+      "height": 963598,
+      "id": "0000000000000000000075f2c051364567263d879a9b688a77483bedbaaf2d7a",
+      "timestamp": 1787409616,
+      "txCount": 4111
     },
     {
-      "height": 963584,
-      "id": "0000000000000000000127525dc9d05fa34d6610afe7460d954beb8140d40a95",
-      "timestamp": 1787400784,
-      "txCount": 4042
+      "height": 963597,
+      "id": "00000000000000000000ebc5e82e48c20cf51dc139f99e1bf5ade217772d8a47",
+      "timestamp": 1787408442,
+      "txCount": 4385
     },
     {
-      "height": 963583,
-      "id": "00000000000000000001c377df63fbff1fd4d5fa2341423431a60f4f5afae7c6",
-      "timestamp": 1787399788,
-      "txCount": 6818
+      "height": 963596,
+      "id": "00000000000000000001233ad6bd1c2dfcc20d1dafff053cb8d43c86bb7d93bf",
+      "timestamp": 1787406974,
+      "txCount": 6384
     },
     {
-      "height": 963582,
-      "id": "000000000000000000000f65eb82e7313e88d6552a242df416daf15dd18f8976",
-      "timestamp": 1787399619,
-      "txCount": 6630
+      "height": 963595,
+      "id": "00000000000000000000c9e106992916debd09794f95c13f8729605e43d052d7",
+      "timestamp": 1787406701,
+      "txCount": 5986
     },
     {
-      "height": 963581,
-      "id": "0000000000000000000025ab8115bfb758b6cdb759a30ec5326ae21d24f8b3d1",
-      "timestamp": 1787399496,
-      "txCount": 5091
+      "height": 963594,
+      "id": "0000000000000000000175815799882f98a2f42d784c517a4f019988e2831944",
+      "timestamp": 1787406404,
+      "txCount": 7401
     },
     {
-      "height": 963580,
-      "id": "00000000000000000000cd19ef3bc495bfc2e07c90947c8658b5558475c5f651",
-      "timestamp": 1787398530,
-      "txCount": 4861
+      "height": 963593,
+      "id": "00000000000000000000e457a5d3fae6a6412e995a492a897745a99bb59951e5",
+      "timestamp": 1787406362,
+      "txCount": 4425
     }
   ],
   "news": [
     {
-      "title": "Bitcoin and Ether bears get decimated amid 'squeeze-led' rally and Musk's X wants to pay creators in stablecoins: Crypto week in 5 stories",
+      "title": "Crypto exchange BitMart weighs partial restart and creditor payouts weeks after announcing shutdown",
+      "link": "https://www.coindesk.com/business/2026/08/22/crypto-exchange-bitmart-weighs-partial-restart-and-creditor-payouts-weeks-after-announcing-shutdown",
+      "pubDate": "Sat, 22 Aug 2026 15:16:41 +0000"
+    },
+    {
+      "title": "Web3 gaming network Sandbox stops Base and BNB chain bridging after exploit",
+      "link": "https://www.coindesk.com/web3/2026/08/22/web3-gaming-network-sandbox-stops-base-and-bnb-chain-bridging-after-exploit",
+      "pubDate": "Sat, 22 Aug 2026 14:10:17 +0000"
+    },
+    {
+      "title": "Tokenized stocks risk repeating Wall Street’s 1960s ‘paper crisis,’ Fairmint CEO says",
+      "link": "https://www.coindesk.com/tech/2026/08/22/tokenized-stocks-risk-repeating-wall-street-s-1960s-paper-crisis-fairmint-ceo-says",
+      "pubDate": "Sat, 22 Aug 2026 14:00:00 +0000"
+    },
+    {
+      "title": "Kalshi off-limits in multiple states as prediction markets, CFTC team up for battle",
+      "link": "https://www.coindesk.com/news-analysis/2026/08/21/kalshi-off-limits-in-multiple-states-as-prediction-markets-cftc-team-up-for-battle",
+      "pubDate": "Sat, 22 Aug 2026 13:30:00 +0000"
+    },
+    {
+      "title": "Bitcoin and Ether bears get decimated amid 'squeeze-led' rally and Musk's X wants to pay creators in stablecoins: Crypto's week in 5 stories",
       "link": "https://www.coindesk.com/business/2026/08/22/bitcoin-and-ether-bears-get-decimated-amid-squeeze-led-rally-and-musk-s-x-wants-to-pay-creators-in-stablecoins-crypto-week-in-5-stories",
       "pubDate": "Sat, 22 Aug 2026 12:00:00 +0000"
     },
@@ -465,26 +485,6 @@
       "title": "Analysts split on whether Bitcoin's surge past key levels signals a new bull run",
       "link": "https://www.coindesk.com/markets/2026/08/21/analysts-split-on-whether-bitcoin-s-surge-past-key-levels-signals-a-new-bull-run",
       "pubDate": "Fri, 21 Aug 2026 11:31:30 +0000"
-    },
-    {
-      "title": "The hard truth is that the Clarity Act is an anti-crypto bill",
-      "link": "https://www.coindesk.com/opinion/2026/08/21/the-hard-truth-is-that-the-clarity-act-is-an-anti-crypto-bill",
-      "pubDate": "Fri, 21 Aug 2026 11:30:00 +0000"
-    },
-    {
-      "title": "Bitcoin faces $80,000 test as thinner weekend liquidity looms",
-      "link": "https://www.coindesk.com/daybook-us/2026/08/21/bitcoin-faces-usd80-000-test-as-thinner-weekend-liquidity-looms",
-      "pubDate": "Fri, 21 Aug 2026 11:26:27 +0000"
-    },
-    {
-      "title": "Nomura-backed Laser Digital wins Japan's first crypto approval in four years",
-      "link": "https://www.coindesk.com/policy/2026/08/21/nomura-backed-laser-digital-wins-japan-s-first-crypto-approval-in-four-years",
-      "pubDate": "Fri, 21 Aug 2026 10:38:47 +0000"
-    },
-    {
-      "title": "Bitcoin tops $77,000 as best week since 2023 pulls altcoins along for the ride",
-      "link": "https://www.coindesk.com/markets/2026/08/21/bitcoin-tops-usd77-000-as-best-week-since-2023-pulls-altcoins-along-for-the-ride",
-      "pubDate": "Fri, 21 Aug 2026 10:15:36 +0000"
     }
   ]
 }
