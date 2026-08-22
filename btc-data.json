@@ -1,13 +1,13 @@
 {
-  "fetchedAt": "2026-08-22T03:52:39.512Z",
+  "fetchedAt": "2026-08-22T06:56:30.175Z",
   "price": {
-    "usd": 78538,
-    "time": 1787370609
+    "usd": 77452,
+    "time": 1787381707
   },
   "moves": {
-    "d1": 0.28119137763771285,
-    "d7": 24.629716611908915,
-    "d30": 20.766339176023752
+    "d1": -1.1054669767399772,
+    "d7": 22.906374124953132,
+    "d30": 19.09641831802937
   },
   "history90d": [
     {
@@ -372,60 +372,70 @@
     },
     {
       "date": "2026-08-22",
-      "close": 78608.59850619452
+      "close": 77455.35455899524
     }
   ],
   "blocks": [
     {
-      "height": 963524,
-      "id": "0000000000000000000199638ea38a922d46f988279ca9adef7a7a10daff37e3",
-      "timestamp": 1787369872,
-      "txCount": 4679
+      "height": 963549,
+      "id": "000000000000000000014a7a8cbe1d7bc7cbc4753e5cf7233fd8d2921e0aba79",
+      "timestamp": 1787381507,
+      "txCount": 5838
     },
     {
-      "height": 963523,
-      "id": "0000000000000000000183d6746e490c94c8c8ccdad23d099e5773a57195d854",
-      "timestamp": 1787369864,
-      "txCount": 7276
+      "height": 963548,
+      "id": "000000000000000000006ef7f1e1a746e591604db31d0359b226b32f939298f1",
+      "timestamp": 1787381280,
+      "txCount": 5605
     },
     {
-      "height": 963522,
-      "id": "000000000000000000003490336e8a84ac1ec743d1a299361ac573ce08e9f1a1",
-      "timestamp": 1787369700,
-      "txCount": 4685
+      "height": 963547,
+      "id": "00000000000000000000d1cd25164ab5a64dec30ed944907453d0f530a38be7f",
+      "timestamp": 1787381115,
+      "txCount": 3970
     },
     {
-      "height": 963521,
-      "id": "0000000000000000000030c95520ee71563c7610d3090b3fd4db24da6ee429e2",
-      "timestamp": 1787369517,
-      "txCount": 4577
+      "height": 963546,
+      "id": "0000000000000000000142a148df8d5d217cc3e854ba9df32a74b2619472fc63",
+      "timestamp": 1787380042,
+      "txCount": 7079
     },
     {
-      "height": 963520,
-      "id": "0000000000000000000178dcf17e39df6c5a9a4a49806e6fd64594e6b0c6f6d6",
-      "timestamp": 1787368560,
-      "txCount": 5583
+      "height": 963545,
+      "id": "000000000000000000019103b24179266a841adb8f1d24096aca4828fd41e914",
+      "timestamp": 1787379938,
+      "txCount": 6650
     },
     {
-      "height": 963519,
-      "id": "00000000000000000001d2d33cefd712f481351f020b2002f6881c821c4e85cd",
-      "timestamp": 1787368143,
-      "txCount": 4293
+      "height": 963544,
+      "id": "000000000000000000005d0d0999e03dc103d2b4dd545d19d6a67aca66e1df7f",
+      "timestamp": 1787379715,
+      "txCount": 6026
     },
     {
-      "height": 963518,
-      "id": "00000000000000000001b84f6dc4278aac3087a5d35895e557aeb4094fe3e0a2",
-      "timestamp": 1787367251,
-      "txCount": 3853
+      "height": 963543,
+      "id": "00000000000000000002021e8230661b53c3416d07ca56d912de751e790c650b",
+      "timestamp": 1787379284,
+      "txCount": 935
     },
     {
-      "height": 963517,
-      "id": "00000000000000000000be1ecdf7ce6401f92de5eb7a8e310798821b43f1ed1a",
-      "timestamp": 1787366722,
-      "txCount": 6095
+      "height": 963542,
+      "id": "00000000000000000001a0034329c10d64e3b80ae75f752ddf95ab35ffc0ee1b",
+      "timestamp": 1787379201,
+      "txCount": 3771
     }
   ],
   "news": [
+    {
+      "title": "Zcash jumps 48% to over $800 as Grayscale spot ETF push adds to ‘next bitcoin’ buzz",
+      "link": "https://www.coindesk.com/markets/2026/08/22/zcash-tops-usd800-for-first-time-since-2016",
+      "pubDate": "Sat, 22 Aug 2026 05:37:43 +0000"
+    },
+    {
+      "title": "How a Treasury buyback tweak helped bitcoin surge 25% to nearly $80,000 in days",
+      "link": "https://www.coindesk.com/markets/2026/08/22/how-a-treasury-buyback-tweak-helped-bitcoin-surge-nearly-25-in-days",
+      "pubDate": "Sat, 22 Aug 2026 05:05:13 +0000"
+    },
     {
       "title": "Crypto advocates join in suing Illinois over digital asset tax",
       "link": "https://www.coindesk.com/policy/2026/08/21/crypto-advocates-join-in-suing-illinois-over-digital-asset-tax",
@@ -475,16 +485,6 @@
       "title": "Treasury's latest measure isn't QE or YCC. Still, bitcoin is skyrocketing. Here's why.",
       "link": "https://www.coindesk.com/markets/2026/08/21/treasury-s-latest-measure-isn-t-qe-or-ycc-still-bitcoin-is-skyrocketing-here-s-why",
       "pubDate": "Fri, 21 Aug 2026 09:17:15 +0000"
-    },
-    {
-      "title": "Strategy sits on $1.4 billion profit on bitcoin holdings as price surges",
-      "link": "https://www.coindesk.com/markets/2026/08/21/strategy-sits-on-usd1-4-billion-profit-on-bitcoin-holdings-as-price-surges",
-      "pubDate": "Fri, 21 Aug 2026 08:24:52 +0000"
-    },
-    {
-      "title": "Live updates: Bitcoin slips back to $77,000 after challenging $80,000 overnight",
-      "link": "https://www.coindesk.com/tech/2026/08/21/live-updates-bitcoin-ether-etfs-pull-in-usd800-million-as-inflows-surge-for-a-second-day",
-      "pubDate": "Fri, 21 Aug 2026 06:43:24 +0000"
     }
   ]
 }
