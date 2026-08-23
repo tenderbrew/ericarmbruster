@@ -1,13 +1,13 @@
 {
-  "fetchedAt": "2026-08-23T15:34:09.390Z",
+  "fetchedAt": "2026-08-23T18:45:59.711Z",
   "price": {
-    "usd": 77211,
-    "time": 1787498708
+    "usd": 77333,
+    "time": 1787510710
   },
   "moves": {
-    "d1": 0.16862387777030197,
-    "d7": 22.84404510161786,
-    "d30": 20.455849534851865
+    "d1": 0.3268988918627036,
+    "d7": 23.03814922541365,
+    "d30": 20.646180104890476
   },
   "history90d": [
     {
@@ -372,60 +372,70 @@
     },
     {
       "date": "2026-08-23",
-      "close": 77221.42103163943
+      "close": 77327.0684277456
     }
   ],
   "blocks": [
     {
-      "height": 963741,
-      "id": "00000000000000000001efd3fb37540316c458e914566c983fca9bc5e9e15d8b",
-      "timestamp": 1787496484,
-      "txCount": 5924
+      "height": 963759,
+      "id": "00000000000000000000b7060d74b6540e3b2accc9cb50f2a0d428b55911a455",
+      "timestamp": 1787509876,
+      "txCount": 2106
     },
     {
-      "height": 963740,
-      "id": "000000000000000000022c69b024a48a9e9f1e0445e881d6c31efeb199e774db",
-      "timestamp": 1787496186,
-      "txCount": 6940
+      "height": 963758,
+      "id": "00000000000000000001ed0dd60f851c94458bfa5b6dea18271ca3c7c0700a64",
+      "timestamp": 1787509166,
+      "txCount": 6431
     },
     {
-      "height": 963739,
-      "id": "000000000000000000001f29e56f7d1340e28c1b2cde79fa8abad4abb633d067",
-      "timestamp": 1787496098,
-      "txCount": 5714
+      "height": 963757,
+      "id": "000000000000000000014dc90e53b2ad432e0e8ed425fbd9314f82773caa00df",
+      "timestamp": 1787509258,
+      "txCount": 4556
     },
     {
-      "height": 963738,
-      "id": "00000000000000000001003c5d479262d26eedd0307776ddb75439a69ee4c1e1",
-      "timestamp": 1787495696,
-      "txCount": 5363
+      "height": 963756,
+      "id": "00000000000000000000a981d6b9c2a95ecd3bc95780365796ba4e0371db97c1",
+      "timestamp": 1787508238,
+      "txCount": 4279
     },
     {
-      "height": 963737,
-      "id": "00000000000000000000bc1e464b0458542ec06b50b6de3b7cf63cfb0b0222bd",
-      "timestamp": 1787495264,
-      "txCount": 6254
+      "height": 963755,
+      "id": "000000000000000000003d559cd69b82a2c79256e27e38dbf74b0f92949cfd25",
+      "timestamp": 1787508129,
+      "txCount": 3932
     },
     {
-      "height": 963736,
-      "id": "0000000000000000000039687065e1f20aad2b63408ffc85be88b167ad43c5c4",
-      "timestamp": 1787494983,
-      "txCount": 7047
+      "height": 963754,
+      "id": "00000000000000000000c0ab2ac0e04d67173df334b83706acf9b85f2beb4516",
+      "timestamp": 1787507701,
+      "txCount": 4716
     },
     {
-      "height": 963735,
-      "id": "000000000000000000019f0cb48b51008a89dcc615834d91a769ed3a4f7b97a2",
-      "timestamp": 1787494835,
-      "txCount": 6408
+      "height": 963753,
+      "id": "0000000000000000000238520890011ee63181d60b1543c0fa47d84eacbc9da9",
+      "timestamp": 1787505636,
+      "txCount": 4831
     },
     {
-      "height": 963734,
-      "id": "0000000000000000000181292c28c51c987f5f1fc070cc5b15dd89a5981d24be",
-      "timestamp": 1787494638,
-      "txCount": 6313
+      "height": 963752,
+      "id": "0000000000000000000207f302938ecd4cdba577ef07af88f50cfd504e53c695",
+      "timestamp": 1787505162,
+      "txCount": 5815
     }
   ],
   "news": [
+    {
+      "title": "Regulation Crypto is here: State of Crypto",
+      "link": "https://www.coindesk.com/policy/2026/08/23/regulation-crypto-is-here-state-of-crypto",
+      "pubDate": "Sun, 23 Aug 2026 18:30:00 +0000"
+    },
+    {
+      "title": "XRP on track for biggest weekly gain in 21 months as Treasury buyback spurs 'curve control' hopes",
+      "link": "https://www.coindesk.com/markets/2026/08/23/xrp-on-track-for-biggest-weekly-gain-in-21-months-as-treasury-buyback-spurs-curve-control-hopes",
+      "pubDate": "Sun, 23 Aug 2026 15:52:21 +0000"
+    },
     {
       "title": "Crypto card spending tops $1 billion as stablecoins move into everyday purchases",
       "link": "https://www.coindesk.com/business/2026/08/23/crypto-card-spending-tops-usd1-billion-as-stablecoins-move-into-everyday-purchases",
@@ -475,16 +485,6 @@
       "title": "Crypto advocates join in suing Illinois over digital asset tax",
       "link": "https://www.coindesk.com/policy/2026/08/21/crypto-advocates-join-in-suing-illinois-over-digital-asset-tax",
       "pubDate": "Fri, 21 Aug 2026 22:10:28 +0000"
-    },
-    {
-      "title": "Pass the Clarity Act",
-      "link": "https://www.coindesk.com/opinion/2026/08/21/pass-the-clarity-act",
-      "pubDate": "Fri, 21 Aug 2026 19:00:00 +0000"
-    },
-    {
-      "title": "Ethena's ENA token surges 48%, but altcoin season will have to wait",
-      "link": "https://www.coindesk.com/markets/2026/08/21/ethena-surges-48-as-altcoins-pull-away-from-bitcoin",
-      "pubDate": "Fri, 21 Aug 2026 16:10:37 +0000"
     }
   ]
 }
