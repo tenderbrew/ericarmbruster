@@ -1,13 +1,13 @@
 {
-  "fetchedAt": "2026-08-23T12:58:54.940Z",
+  "fetchedAt": "2026-08-23T15:34:09.390Z",
   "price": {
-    "usd": 77199,
-    "time": 1787489410
+    "usd": 77211,
+    "time": 1787498708
   },
   "moves": {
-    "d1": 0.15305584359728286,
-    "d7": 22.824952892719907,
-    "d30": 20.437128495175937
+    "d1": 0.16862387777030197,
+    "d7": 22.84404510161786,
+    "d30": 20.455849534851865
   },
   "history90d": [
     {
@@ -372,60 +372,70 @@
     },
     {
       "date": "2026-08-23",
-      "close": 77198.0999290629
+      "close": 77221.42103163943
     }
   ],
   "blocks": [
     {
-      "height": 963724,
-      "id": "000000000000000000022fa266ca412945ea21dc3d6892d286f002cd723e2a13",
-      "timestamp": 1787489926,
-      "txCount": 4839
+      "height": 963741,
+      "id": "00000000000000000001efd3fb37540316c458e914566c983fca9bc5e9e15d8b",
+      "timestamp": 1787496484,
+      "txCount": 5924
     },
     {
-      "height": 963723,
-      "id": "00000000000000000000d6b087b378ea3f97786cee33f9a26bd665e79ee42c88",
-      "timestamp": 1787488180,
-      "txCount": 4748
+      "height": 963740,
+      "id": "000000000000000000022c69b024a48a9e9f1e0445e881d6c31efeb199e774db",
+      "timestamp": 1787496186,
+      "txCount": 6940
     },
     {
-      "height": 963722,
-      "id": "00000000000000000001391b0601688e32b17f28b2c8b5cc94f2062add31ac09",
-      "timestamp": 1787487833,
-      "txCount": 5742
+      "height": 963739,
+      "id": "000000000000000000001f29e56f7d1340e28c1b2cde79fa8abad4abb633d067",
+      "timestamp": 1787496098,
+      "txCount": 5714
     },
     {
-      "height": 963721,
-      "id": "00000000000000000001dbfaec0d37850c9ac054f4960d1b0a38dbdb4ee1b387",
-      "timestamp": 1787487450,
-      "txCount": 5064
+      "height": 963738,
+      "id": "00000000000000000001003c5d479262d26eedd0307776ddb75439a69ee4c1e1",
+      "timestamp": 1787495696,
+      "txCount": 5363
     },
     {
-      "height": 963720,
-      "id": "00000000000000000001b46b3d959cc53c47e4d8189fe5b5fc469943f71ac2ed",
-      "timestamp": 1787487151,
-      "txCount": 4254
+      "height": 963737,
+      "id": "00000000000000000000bc1e464b0458542ec06b50b6de3b7cf63cfb0b0222bd",
+      "timestamp": 1787495264,
+      "txCount": 6254
     },
     {
-      "height": 963719,
-      "id": "00000000000000000000ee006d17408f6bfd2cdb715175898700ba022918c814",
-      "timestamp": 1787486097,
-      "txCount": 4957
+      "height": 963736,
+      "id": "0000000000000000000039687065e1f20aad2b63408ffc85be88b167ad43c5c4",
+      "timestamp": 1787494983,
+      "txCount": 7047
     },
     {
-      "height": 963718,
-      "id": "00000000000000000000056c747afe093daf68e22649f5e005a5b9910b382d37",
-      "timestamp": 1787485022,
-      "txCount": 6481
+      "height": 963735,
+      "id": "000000000000000000019f0cb48b51008a89dcc615834d91a769ed3a4f7b97a2",
+      "timestamp": 1787494835,
+      "txCount": 6408
     },
     {
-      "height": 963717,
-      "id": "000000000000000000019ad4aa9047f88c9e00efaba228ce13197ba61946d981",
-      "timestamp": 1787484474,
-      "txCount": 6480
+      "height": 963734,
+      "id": "0000000000000000000181292c28c51c987f5f1fc070cc5b15dd89a5981d24be",
+      "timestamp": 1787494638,
+      "txCount": 6313
     }
   ],
   "news": [
+    {
+      "title": "Crypto card spending tops $1 billion as stablecoins move into everyday purchases",
+      "link": "https://www.coindesk.com/business/2026/08/23/crypto-card-spending-tops-usd1-billion-as-stablecoins-move-into-everyday-purchases",
+      "pubDate": "Sun, 23 Aug 2026 15:00:00 +0000"
+    },
+    {
+      "title": "Crypto’s next billion users might be AI agents, and they’re paying with stablecoins",
+      "link": "https://www.coindesk.com/business/2026/08/23/crypto-s-next-billion-users-might-be-ai-agents-and-they-re-paying-with-stablecoins",
+      "pubDate": "Sun, 23 Aug 2026 13:00:00 +0000"
+    },
     {
       "title": "Crypto exchange BitMart weighs partial restart and creditor payouts weeks after announcing shutdown",
       "link": "https://www.coindesk.com/business/2026/08/22/crypto-exchange-bitmart-weighs-partial-restart-and-creditor-payouts-weeks-after-announcing-shutdown",
@@ -475,16 +485,6 @@
       "title": "Ethena's ENA token surges 48%, but altcoin season will have to wait",
       "link": "https://www.coindesk.com/markets/2026/08/21/ethena-surges-48-as-altcoins-pull-away-from-bitcoin",
       "pubDate": "Fri, 21 Aug 2026 16:10:37 +0000"
-    },
-    {
-      "title": "Coldcard ships firmware after $114 million bitcoin theft; says AI helped catch more bugs",
-      "link": "https://www.coindesk.com/tech/2026/08/21/coldcard-ships-firmware-after-usd114-million-bitcoin-theft-says-ai-helped-catch-more-bugs",
-      "pubDate": "Fri, 21 Aug 2026 12:10:55 +0000"
-    },
-    {
-      "title": "Analysts split on whether Bitcoin's surge past key levels signals a new bull run",
-      "link": "https://www.coindesk.com/markets/2026/08/21/analysts-split-on-whether-bitcoin-s-surge-past-key-levels-signals-a-new-bull-run",
-      "pubDate": "Fri, 21 Aug 2026 11:31:30 +0000"
     }
   ]
 }
