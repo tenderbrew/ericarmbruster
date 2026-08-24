@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-08-24T13:06:41.996Z",
+  "fetchedAt": "2026-08-24T18:52:57.492Z",
   "indicators": {
     "UNRATE": {
       "latest": {
@@ -163,12 +163,12 @@
     },
     "BAMLH0A0HYM2": {
       "latest": {
-        "date": "2026-08-20",
-        "value": 2.75
+        "date": "2026-08-21",
+        "value": 2.7
       },
       "previous": {
-        "date": "2026-08-19",
-        "value": 2.73
+        "date": "2026-08-20",
+        "value": 2.75
       }
     },
     "MORTGAGE30US": {
@@ -263,12 +263,12 @@
     },
     "VIXCLS": {
       "latest": {
-        "date": "2026-08-20",
-        "value": 16.01
+        "date": "2026-08-21",
+        "value": 15.13
       },
       "previous": {
-        "date": "2026-08-19",
-        "value": 14.89
+        "date": "2026-08-20",
+        "value": 16.01
       }
     },
     "BOPGSTB": {
@@ -301,6 +301,12 @@
   },
   "news": [
     {
+      "title": "Macroeconomic Data Is Really a Tool for Government Intervention",
+      "link": "https://mises.org/mises-wire/macroeconomic-data-really-tool-government-intervention",
+      "pubDate": "Mon, 24 Aug 2026 11:00:00 CDT",
+      "kind": "Mises Wire"
+    },
+    {
       "title": "The Greatest Cover-Up in Economic History: How Washington Hid Its Role in the 2008 Crash",
       "link": "https://mises.org/power-market/greatest-cover-economic-history-how-washington-hid-its-role-2008-crash",
       "pubDate": "Mon, 24 Aug 2026 07:00:00 CDT",
@@ -319,14 +325,14 @@
       "kind": "Podcast"
     },
     {
-      "title": "The Penal Leviathan: What Wacquant and Rothbard Reveal About Modern Punishment",
-      "link": "https://mises.org/mises-wire/penal-leviathan-what-wacquant-and-rothbard-reveal-about-modern-punishment",
+      "title": "Regulation: Protecting Incumbents and Suppressing Competition",
+      "link": "https://mises.org/mises-wire/regulation-protecting-incumbents-and-suppressing-competition",
       "pubDate": "Sat, 22 Aug 2026 05:00:00 CDT",
       "kind": "Mises Wire"
     },
     {
-      "title": "Regulation: Protecting Incumbents and Suppressing Competition",
-      "link": "https://mises.org/mises-wire/regulation-protecting-incumbents-and-suppressing-competition",
+      "title": "The Penal Leviathan: What Wacquant and Rothbard Reveal About Modern Punishment",
+      "link": "https://mises.org/mises-wire/penal-leviathan-what-wacquant-and-rothbard-reveal-about-modern-punishment",
       "pubDate": "Sat, 22 Aug 2026 05:00:00 CDT",
       "kind": "Mises Wire"
     },
@@ -353,12 +359,6 @@
       "link": "https://mises.org/mises-wire/statist-peril-techno-asset-inflation",
       "pubDate": "Fri, 21 Aug 2026 11:00:00 CDT",
       "kind": "Mises Wire"
-    },
-    {
-      "title": "What Happened to Objective Ethics?",
-      "link": "https://mises.org/friday-philosophy/what-happened-objective-ethics",
-      "pubDate": "Fri, 21 Aug 2026 11:00:00 CDT",
-      "kind": "Article"
     }
   ]
 }
