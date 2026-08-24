@@ -1,13 +1,13 @@
 {
-  "fetchedAt": "2026-08-24T15:53:00.223Z",
+  "fetchedAt": "2026-08-24T18:56:23.601Z",
   "price": {
-    "usd": 79271,
-    "time": 1787586609
+    "usd": 79041,
+    "time": 1787597408
   },
   "moves": {
-    "d1": 2.0057050229296047,
-    "d7": 22.98585414876775,
-    "d30": 23.25168093419201
+    "d1": 1.7097416547965594,
+    "d7": 22.62901815005174,
+    "d30": 22.89407365517617
   },
   "history90d": [
     {
@@ -372,60 +372,70 @@
     },
     {
       "date": "2026-08-24",
-      "close": 79262.74977984592
+      "close": 78908.24420224044
     }
   ],
   "blocks": [
     {
-      "height": 963873,
-      "id": "0000000000000000000000ee16e4fc3988b76ad2495c27b9296ea18221bdbaab",
-      "timestamp": 1787586151,
-      "txCount": 3399
+      "height": 963894,
+      "id": "000000000000000000005de23a40c2bcc4a1369da4186d2223bdec721188db1b",
+      "timestamp": 1787596842,
+      "txCount": 4048
     },
     {
-      "height": 963872,
-      "id": "00000000000000000001e3ebd077ef32967bdd5ac8a3f66fc4c775f8b732b2b7",
-      "timestamp": 1787585954,
-      "txCount": 3405
+      "height": 963893,
+      "id": "00000000000000000001a4f68af42652d1aeabe57ef389d88481c73c111c4691",
+      "timestamp": 1787596198,
+      "txCount": 6005
     },
     {
-      "height": 963871,
-      "id": "00000000000000000001438b6b8ef66f20fa979adfdc98ac90eed8b12612d71a",
-      "timestamp": 1787585911,
-      "txCount": 4202
+      "height": 963892,
+      "id": "00000000000000000000a3c3f3cd9bb4801e660a84c2e79d2d62e913e3db3563",
+      "timestamp": 1787596003,
+      "txCount": 5228
     },
     {
-      "height": 963870,
-      "id": "000000000000000000017d155718e4d2c04b792d9e0d6c0c7f5a65bceabdce09",
-      "timestamp": 1787583550,
-      "txCount": 4153
+      "height": 963891,
+      "id": "00000000000000000001aee76cde4b5572f0b955e99b39dc229404655d691128",
+      "timestamp": 1787595983,
+      "txCount": 4914
     },
     {
-      "height": 963869,
-      "id": "00000000000000000000f69a5a58f8c824a419de4c926e8471d7dcac3023f96a",
-      "timestamp": 1787583225,
-      "txCount": 4583
+      "height": 963890,
+      "id": "00000000000000000001ac2b34ac937a2e80bcaace4c13ac3c03f6a0f7346237",
+      "timestamp": 1787595221,
+      "txCount": 3316
     },
     {
-      "height": 963868,
-      "id": "000000000000000000016c4bb9d92c6056e808b6c03bdf603c06a2d7cd7b9da3",
-      "timestamp": 1787581967,
-      "txCount": 5165
+      "height": 963889,
+      "id": "0000000000000000000007d4ed1259a4e2bdd80ea861efe15568be7252010f62",
+      "timestamp": 1787595061,
+      "txCount": 4235
     },
     {
-      "height": 963867,
-      "id": "0000000000000000000145639bbafb0e83205162935b3453366063290fbf5f2d",
-      "timestamp": 1787581816,
-      "txCount": 3789
+      "height": 963888,
+      "id": "00000000000000000001ef0005af7fc39d295bab38687de2ae67451f1e1b942c",
+      "timestamp": 1787594501,
+      "txCount": 4474
     },
     {
-      "height": 963866,
-      "id": "000000000000000000005677894df952c5bd3743814c545f4c580440e71b67c4",
-      "timestamp": 1787581560,
-      "txCount": 3173
+      "height": 963887,
+      "id": "00000000000000000001a6c7e0a2b47c690d5820edfaf1cb91dd0936138c9f64",
+      "timestamp": 1787593221,
+      "txCount": 5369
     }
   ],
   "news": [
+    {
+      "title": "Crypto political group details list of U.S. congressional allies its backing this year",
+      "link": "https://www.coindesk.com/policy/2026/08/24/crypto-political-group-details-list-of-u-s-congressional-allies-its-backing-this-year",
+      "pubDate": "Mon, 24 Aug 2026 17:30:10 +0000"
+    },
+    {
+      "title": "Coinbase debuts tokenized stocks on Base network, joining race to bring equities on blockchain",
+      "link": "https://www.coindesk.com/business/2026/08/24/coinbase-debuts-tokenized-stocks-on-base-network-joining-race-to-bring-equities-on-blockchain",
+      "pubDate": "Mon, 24 Aug 2026 17:12:35 +0000"
+    },
     {
       "title": "Tom Lee's Bitmine buys $81 million of ETH in largest weekly haul since early July",
       "link": "https://www.coindesk.com/business/2026/08/24/tom-lee-s-bitmine-buys-usd81-million-of-eth-in-largest-weekly-haul-since-early-july",
@@ -475,16 +485,6 @@
       "title": "Crypto roars back as bitcoin posts its second-best week since early 2021",
       "link": "https://www.coindesk.com/markets/2026/08/24/crypto-roars-back-as-bitcoin-posts-its-second-best-week-since-early-2021",
       "pubDate": "Mon, 24 Aug 2026 08:28:14 +0000"
-    },
-    {
-      "title": "Jackson  Hole Symposium, U.S. PCE prices, IREN earnings: Crypto Week Ahead",
-      "link": "https://www.coindesk.com/markets/2026/08/24/jackson-hole-symposium-u-s-pce-prices-iren-earnings-crypto-week-ahead",
-      "pubDate": "Mon, 24 Aug 2026 08:16:29 +0000"
-    },
-    {
-      "title": "Live updates: Bitcoin moves closer to $80,000, but rally could need a breather",
-      "link": "https://www.coindesk.com/business/2026/08/24/live-updates-bitcoin-holds-usd77-000-as-xrp-zcash-pull-back-after-a-big-weekly-rally",
-      "pubDate": "Mon, 24 Aug 2026 08:05:57 +0000"
     }
   ]
 }
