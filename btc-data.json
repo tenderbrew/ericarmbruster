@@ -1,13 +1,13 @@
 {
-  "fetchedAt": "2026-08-24T13:10:01.532Z",
+  "fetchedAt": "2026-08-24T15:53:00.223Z",
   "price": {
-    "usd": 78976,
-    "time": 1787576708
+    "usd": 79271,
+    "time": 1787586609
   },
   "moves": {
-    "d1": 1.6260998333676557,
-    "d7": 22.528173193892865,
-    "d30": 22.793010728497798
+    "d1": 2.0057050229296047,
+    "d7": 22.98585414876775,
+    "d30": 23.25168093419201
   },
   "history90d": [
     {
@@ -372,57 +372,57 @@
     },
     {
       "date": "2026-08-24",
-      "close": 79054.77044667104
+      "close": 79262.74977984592
     }
   ],
   "blocks": [
     {
-      "height": 963857,
-      "id": "000000000000000000020253f5acf4cdfe7e4e78b9b8e3dede28abcf71677b84",
-      "timestamp": 1787574795,
-      "txCount": 4049
+      "height": 963873,
+      "id": "0000000000000000000000ee16e4fc3988b76ad2495c27b9296ea18221bdbaab",
+      "timestamp": 1787586151,
+      "txCount": 3399
     },
     {
-      "height": 963856,
-      "id": "0000000000000000000181173ea832277f1ac97689fbfa1676b3e7fdb3c0fc9f",
-      "timestamp": 1787574125,
-      "txCount": 4284
+      "height": 963872,
+      "id": "00000000000000000001e3ebd077ef32967bdd5ac8a3f66fc4c775f8b732b2b7",
+      "timestamp": 1787585954,
+      "txCount": 3405
     },
     {
-      "height": 963855,
-      "id": "00000000000000000001e2e3811d884778f32f125a4d196866f05d3793174f6d",
-      "timestamp": 1787574020,
-      "txCount": 4629
+      "height": 963871,
+      "id": "00000000000000000001438b6b8ef66f20fa979adfdc98ac90eed8b12612d71a",
+      "timestamp": 1787585911,
+      "txCount": 4202
     },
     {
-      "height": 963854,
-      "id": "000000000000000000015ebbbabbf092fe73ba050d2997f20e6ebac2d17f0a52",
-      "timestamp": 1787572544,
-      "txCount": 4749
+      "height": 963870,
+      "id": "000000000000000000017d155718e4d2c04b792d9e0d6c0c7f5a65bceabdce09",
+      "timestamp": 1787583550,
+      "txCount": 4153
     },
     {
-      "height": 963853,
-      "id": "000000000000000000000258f8107849bdd8b1866769633d29825e1aaffe542c",
-      "timestamp": 1787570907,
-      "txCount": 6508
+      "height": 963869,
+      "id": "00000000000000000000f69a5a58f8c824a419de4c926e8471d7dcac3023f96a",
+      "timestamp": 1787583225,
+      "txCount": 4583
     },
     {
-      "height": 963852,
-      "id": "00000000000000000000785a9bf2e3715e0bdd47f6754d0f79770eae6fcf1815",
-      "timestamp": 1787570680,
-      "txCount": 4720
+      "height": 963868,
+      "id": "000000000000000000016c4bb9d92c6056e808b6c03bdf603c06a2d7cd7b9da3",
+      "timestamp": 1787581967,
+      "txCount": 5165
     },
     {
-      "height": 963851,
-      "id": "00000000000000000001f76a53c6fcd68ca1fa2d2f6b0bc0e026c0892336fd4f",
-      "timestamp": 1787570629,
-      "txCount": 4435
+      "height": 963867,
+      "id": "0000000000000000000145639bbafb0e83205162935b3453366063290fbf5f2d",
+      "timestamp": 1787581816,
+      "txCount": 3789
     },
     {
-      "height": 963850,
-      "id": "0000000000000000000172aa441889d10042a37305512816c04dac32ba1d278b",
-      "timestamp": 1787570029,
-      "txCount": 3933
+      "height": 963866,
+      "id": "000000000000000000005677894df952c5bd3743814c545f4c580440e71b67c4",
+      "timestamp": 1787581560,
+      "txCount": 3173
     }
   ],
   "news": [
@@ -482,7 +482,7 @@
       "pubDate": "Mon, 24 Aug 2026 08:16:29 +0000"
     },
     {
-      "title": "Live updates: Bitcoin climbs past $79,000 early Monday, with gold topping $4,700",
+      "title": "Live updates: Bitcoin moves closer to $80,000, but rally could need a breather",
       "link": "https://www.coindesk.com/business/2026/08/24/live-updates-bitcoin-holds-usd77-000-as-xrp-zcash-pull-back-after-a-big-weekly-rally",
       "pubDate": "Mon, 24 Aug 2026 08:05:57 +0000"
     }
