@@ -1,13 +1,13 @@
 {
-  "fetchedAt": "2026-08-24T10:00:01.920Z",
+  "fetchedAt": "2026-08-24T13:10:01.532Z",
   "price": {
-    "usd": 77569,
-    "time": 1787565311
+    "usd": 78976,
+    "time": 1787576708
   },
   "moves": {
-    "d1": -0.18442390125485986,
-    "d7": 20.3452677582693,
-    "d30": 20.605387069474833
+    "d1": 1.6260998333676557,
+    "d7": 22.528173193892865,
+    "d30": 22.793010728497798
   },
   "history90d": [
     {
@@ -372,60 +372,100 @@
     },
     {
       "date": "2026-08-24",
-      "close": 77539.72408825053
+      "close": 79054.77044667104
     }
   ],
   "blocks": [
     {
-      "height": 963845,
-      "id": "0000000000000000000045b12b6d671de5dad733425286a1cf2c975013494b3d",
-      "timestamp": 1787565425,
-      "txCount": 4412
+      "height": 963857,
+      "id": "000000000000000000020253f5acf4cdfe7e4e78b9b8e3dede28abcf71677b84",
+      "timestamp": 1787574795,
+      "txCount": 4049
     },
     {
-      "height": 963844,
-      "id": "000000000000000000015447fc6fbb2c752c8f1aba60bcffcaac62e4a404d493",
-      "timestamp": 1787565408,
-      "txCount": 6278
+      "height": 963856,
+      "id": "0000000000000000000181173ea832277f1ac97689fbfa1676b3e7fdb3c0fc9f",
+      "timestamp": 1787574125,
+      "txCount": 4284
     },
     {
-      "height": 963843,
-      "id": "00000000000000000001b7548bb0675d773ff5e6ca3af3f47912af4cd328ddcc",
-      "timestamp": 1787565048,
-      "txCount": 6207
+      "height": 963855,
+      "id": "00000000000000000001e2e3811d884778f32f125a4d196866f05d3793174f6d",
+      "timestamp": 1787574020,
+      "txCount": 4629
     },
     {
-      "height": 963842,
-      "id": "0000000000000000000115705a48b452ed598ace68e6e265a1b20e0ceb575281",
-      "timestamp": 1787564703,
-      "txCount": 5677
+      "height": 963854,
+      "id": "000000000000000000015ebbbabbf092fe73ba050d2997f20e6ebac2d17f0a52",
+      "timestamp": 1787572544,
+      "txCount": 4749
     },
     {
-      "height": 963841,
-      "id": "0000000000000000000004e61f0f1c28f6fa776681222c1cae57cb1406f1769d",
-      "timestamp": 1787564027,
-      "txCount": 6423
+      "height": 963853,
+      "id": "000000000000000000000258f8107849bdd8b1866769633d29825e1aaffe542c",
+      "timestamp": 1787570907,
+      "txCount": 6508
     },
     {
-      "height": 963840,
-      "id": "00000000000000000001b6a731a4391052e17427a3a06d97e40cfd525389c1e2",
-      "timestamp": 1787563909,
-      "txCount": 4436
+      "height": 963852,
+      "id": "00000000000000000000785a9bf2e3715e0bdd47f6754d0f79770eae6fcf1815",
+      "timestamp": 1787570680,
+      "txCount": 4720
     },
     {
-      "height": 963839,
-      "id": "00000000000000000000a59da399949b589b943c9733ae490172a9ee235cc384",
-      "timestamp": 1787562994,
-      "txCount": 6490
+      "height": 963851,
+      "id": "00000000000000000001f76a53c6fcd68ca1fa2d2f6b0bc0e026c0892336fd4f",
+      "timestamp": 1787570629,
+      "txCount": 4435
     },
     {
-      "height": 963838,
-      "id": "00000000000000000000f561f1be22678c3ce34e8ef2b4ac4f3acd0d9bc6cbb7",
-      "timestamp": 1787562845,
-      "txCount": 4166
+      "height": 963850,
+      "id": "0000000000000000000172aa441889d10042a37305512816c04dac32ba1d278b",
+      "timestamp": 1787570029,
+      "txCount": 3933
     }
   ],
   "news": [
+    {
+      "title": "Tom Lee's Bitmine buys $81 million of ETH in largest weekly haul since early July",
+      "link": "https://www.coindesk.com/business/2026/08/24/tom-lee-s-bitmine-buys-usd81-million-of-eth-in-largest-weekly-haul-since-early-july",
+      "pubDate": "Mon, 24 Aug 2026 12:59:55 +0000"
+    },
+    {
+      "title": "New Solana vote could ramp daily SOL burns to $800,000 and slow new token creation",
+      "link": "https://www.coindesk.com/tech/2026/08/24/new-solana-vote-could-ramp-daily-sol-burns-to-usd800-000-and-slow-new-token-creation",
+      "pubDate": "Mon, 24 Aug 2026 12:52:30 +0000"
+    },
+    {
+      "title": "Strategy raises $2 billion through MSTR sales and creates new USD Cash pool",
+      "link": "https://www.coindesk.com/markets/2026/08/24/strategy-raises-usd2-billion-through-mstr-sales-and-creates-new-usd-cash-pool",
+      "pubDate": "Mon, 24 Aug 2026 12:24:58 +0000"
+    },
+    {
+      "title": "Standard Chartered becomes first bank to distribute Hong Kong dollar stablecoin",
+      "link": "https://www.coindesk.com/business/2026/08/24/standard-chartered-first-bank-to-distribute-anchorpoint-s-hong-kong-dollar-stablecoin",
+      "pubDate": "Mon, 24 Aug 2026 11:36:55 +0000"
+    },
+    {
+      "title": "Pakistan kicks off crypto licensing regime with Sept. 5 registration deadline",
+      "link": "https://www.coindesk.com/policy/2026/08/24/pakistan-kicks-off-crypto-licensing-regime-with-sept-5-registration-deadline",
+      "pubDate": "Mon, 24 Aug 2026 11:19:16 +0000"
+    },
+    {
+      "title": "Financial repression: The new buzzword for bitcoin bulls",
+      "link": "https://www.coindesk.com/daybook-us/2026/08/24/financial-repression-the-new-buzzword-for-bitcoin-bulls",
+      "pubDate": "Mon, 24 Aug 2026 11:15:00 +0000"
+    },
+    {
+      "title": "Gemini strikes Apex deal to widen prediction markets reach",
+      "link": "https://www.coindesk.com/business/2026/08/24/gemini-strikes-apex-deal-to-widen-prediction-markets-reach",
+      "pubDate": "Mon, 24 Aug 2026 10:55:00 +0000"
+    },
+    {
+      "title": "Bitcoin steadies near $78,000 as gold rallies, altcoins consolidate after best week in 3 years",
+      "link": "https://www.coindesk.com/markets/2026/08/24/bitcoin-steadies-near-usd78-000-as-gold-rallies-altcoins-consolidate-after-best-week-in-3-years",
+      "pubDate": "Mon, 24 Aug 2026 10:41:46 +0000"
+    },
     {
       "title": "Fed experiment shows how bitcoin rallies attract new crypto buyers",
       "link": "https://www.coindesk.com/markets/2026/08/24/fed-experiment-shows-how-bitcoin-rallies-attract-new-crypto-buyers",
@@ -442,49 +482,9 @@
       "pubDate": "Mon, 24 Aug 2026 08:16:29 +0000"
     },
     {
-      "title": "Live updates: Bitcoin holds $77,000 as XRP, Zcash pull back after a big weekly rally",
+      "title": "Live updates: Bitcoin climbs past $79,000 early Monday, with gold topping $4,700",
       "link": "https://www.coindesk.com/business/2026/08/24/live-updates-bitcoin-holds-usd77-000-as-xrp-zcash-pull-back-after-a-big-weekly-rally",
       "pubDate": "Mon, 24 Aug 2026 08:05:57 +0000"
-    },
-    {
-      "title": "Ether is crushing bitcoin and the 'golden cross' says it may not be done yet",
-      "link": "https://www.coindesk.com/markets/2026/08/24/ether-is-crushing-bitcoin-and-the-golden-cross-says-it-may-not-be-done-yet",
-      "pubDate": "Mon, 24 Aug 2026 06:50:58 +0000"
-    },
-    {
-      "title": "Ethereum lending app Term Finance loses $8.5 million after attacker buys voting power",
-      "link": "https://www.coindesk.com/markets/2026/08/24/ethereum-lending-app-term-finance-loses-usd8-5-million-after-attacker-buys-voting-power",
-      "pubDate": "Mon, 24 Aug 2026 06:27:33 +0000"
-    },
-    {
-      "title": "Ray Dalio says investors should own ‘a bit of Bitcoin’ as U.S. debt risks rise",
-      "link": "https://www.coindesk.com/markets/2026/08/24/ray-dalio-says-investors-should-own-a-bit-of-bitcoin-as-u-s-debt-risks-rise",
-      "pubDate": "Mon, 24 Aug 2026 05:13:19 +0000"
-    },
-    {
-      "title": "Bessent's $4 billion bond buyback wanted lower yields. It got a bitcoin surge instead.",
-      "link": "https://www.coindesk.com/markets/2026/08/24/bessent-s-usd4-billion-bond-buyback-wanted-lower-yields-it-got-a-bitcoin-surge-instead",
-      "pubDate": "Mon, 24 Aug 2026 05:12:56 +0000"
-    },
-    {
-      "title": "Stablecoin neobank Fasset lands $1 billion valuation as SBI backs its payments push",
-      "link": "https://www.coindesk.com/business/2026/08/22/stablecoin-neobank-fasset-lands-usd1-billion-valuation-as-sbi-backs-its-payments-push",
-      "pubDate": "Mon, 24 Aug 2026 04:45:00 +0000"
-    },
-    {
-      "title": "Crypto holds big weekly rally as Warsh’s Jackson Hole debut comes into focus",
-      "link": "https://www.coindesk.com/markets/2026/08/24/crypto-holds-big-weekly-rally-as-warsh-s-jackson-hole-debut-comes-into-focus",
-      "pubDate": "Mon, 24 Aug 2026 04:41:28 +0000"
-    },
-    {
-      "title": "Regulation Crypto is here: State of Crypto",
-      "link": "https://www.coindesk.com/policy/2026/08/23/regulation-crypto-is-here-state-of-crypto",
-      "pubDate": "Sun, 23 Aug 2026 18:30:00 +0000"
-    },
-    {
-      "title": "XRP on track for biggest weekly gain in 21 months as Treasury buyback spurs 'curve control' hopes",
-      "link": "https://www.coindesk.com/markets/2026/08/23/xrp-on-track-for-biggest-weekly-gain-in-21-months-as-treasury-buyback-spurs-curve-control-hopes",
-      "pubDate": "Sun, 23 Aug 2026 15:52:21 +0000"
     }
   ]
 }
