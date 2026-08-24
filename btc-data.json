@@ -1,13 +1,13 @@
 {
-  "fetchedAt": "2026-08-24T07:17:17.252Z",
+  "fetchedAt": "2026-08-24T10:00:01.920Z",
   "price": {
-    "usd": 77557,
-    "time": 1787555406
+    "usd": 77569,
+    "time": 1787565311
   },
   "moves": {
-    "d1": -0.19986546828788532,
-    "d7": 20.3266502279015,
-    "d30": 20.586729298395756
+    "d1": -0.18442390125485986,
+    "d7": 20.3452677582693,
+    "d30": 20.605387069474833
   },
   "history90d": [
     {
@@ -372,60 +372,80 @@
     },
     {
       "date": "2026-08-24",
-      "close": 77735.90793880037
+      "close": 77539.72408825053
     }
   ],
   "blocks": [
     {
-      "height": 963829,
-      "id": "000000000000000000016b2f88b5bead0df8cfb46a8fa962cc8826468bb482fd",
-      "timestamp": 1787555598,
-      "txCount": 6108
+      "height": 963845,
+      "id": "0000000000000000000045b12b6d671de5dad733425286a1cf2c975013494b3d",
+      "timestamp": 1787565425,
+      "txCount": 4412
     },
     {
-      "height": 963828,
-      "id": "00000000000000000001ac14b610ada8d80d6e8177349bc8ff5fe5a6242d3f7f",
-      "timestamp": 1787555131,
-      "txCount": 4190
+      "height": 963844,
+      "id": "000000000000000000015447fc6fbb2c752c8f1aba60bcffcaac62e4a404d493",
+      "timestamp": 1787565408,
+      "txCount": 6278
     },
     {
-      "height": 963827,
-      "id": "0000000000000000000215ee85a8390054b6248bcc6166ef822186b9f2834e2c",
-      "timestamp": 1787554122,
-      "txCount": 6472
+      "height": 963843,
+      "id": "00000000000000000001b7548bb0675d773ff5e6ca3af3f47912af4cd328ddcc",
+      "timestamp": 1787565048,
+      "txCount": 6207
     },
     {
-      "height": 963826,
-      "id": "00000000000000000000b81034a85508112e2f9ab985bd36281e9be774ad32b2",
-      "timestamp": 1787553906,
-      "txCount": 6447
+      "height": 963842,
+      "id": "0000000000000000000115705a48b452ed598ace68e6e265a1b20e0ceb575281",
+      "timestamp": 1787564703,
+      "txCount": 5677
     },
     {
-      "height": 963825,
-      "id": "00000000000000000000b237348333a38bc2d3fb8cc8f51f7e1ca0f2b6d49055",
-      "timestamp": 1787553773,
-      "txCount": 7003
+      "height": 963841,
+      "id": "0000000000000000000004e61f0f1c28f6fa776681222c1cae57cb1406f1769d",
+      "timestamp": 1787564027,
+      "txCount": 6423
     },
     {
-      "height": 963824,
-      "id": "00000000000000000000aba79d3660a03f57275b0cafb89432187535abc9b8e3",
-      "timestamp": 1787553669,
-      "txCount": 5715
+      "height": 963840,
+      "id": "00000000000000000001b6a731a4391052e17427a3a06d97e40cfd525389c1e2",
+      "timestamp": 1787563909,
+      "txCount": 4436
     },
     {
-      "height": 963823,
-      "id": "00000000000000000000356afb2eb4142604d47068bb0229649ad7eaa62da162",
-      "timestamp": 1787553609,
-      "txCount": 6616
+      "height": 963839,
+      "id": "00000000000000000000a59da399949b589b943c9733ae490172a9ee235cc384",
+      "timestamp": 1787562994,
+      "txCount": 6490
     },
     {
-      "height": 963822,
-      "id": "00000000000000000001d55e487a0582e9032c0d7af32798a9e20d3f9c8a6377",
-      "timestamp": 1787553397,
-      "txCount": 3976
+      "height": 963838,
+      "id": "00000000000000000000f561f1be22678c3ce34e8ef2b4ac4f3acd0d9bc6cbb7",
+      "timestamp": 1787562845,
+      "txCount": 4166
     }
   ],
   "news": [
+    {
+      "title": "Fed experiment shows how bitcoin rallies attract new crypto buyers",
+      "link": "https://www.coindesk.com/markets/2026/08/24/fed-experiment-shows-how-bitcoin-rallies-attract-new-crypto-buyers",
+      "pubDate": "Mon, 24 Aug 2026 09:56:17 +0000"
+    },
+    {
+      "title": "Crypto roars back as bitcoin posts its second-best week since early 2021",
+      "link": "https://www.coindesk.com/markets/2026/08/24/crypto-roars-back-as-bitcoin-posts-its-second-best-week-since-early-2021",
+      "pubDate": "Mon, 24 Aug 2026 08:28:14 +0000"
+    },
+    {
+      "title": "Jackson  Hole Symposium, U.S. PCE prices, IREN earnings: Crypto Week Ahead",
+      "link": "https://www.coindesk.com/markets/2026/08/24/jackson-hole-symposium-u-s-pce-prices-iren-earnings-crypto-week-ahead",
+      "pubDate": "Mon, 24 Aug 2026 08:16:29 +0000"
+    },
+    {
+      "title": "Live updates: Bitcoin holds $77,000 as XRP, Zcash pull back after a big weekly rally",
+      "link": "https://www.coindesk.com/business/2026/08/24/live-updates-bitcoin-holds-usd77-000-as-xrp-zcash-pull-back-after-a-big-weekly-rally",
+      "pubDate": "Mon, 24 Aug 2026 08:05:57 +0000"
+    },
     {
       "title": "Ether is crushing bitcoin and the 'golden cross' says it may not be done yet",
       "link": "https://www.coindesk.com/markets/2026/08/24/ether-is-crushing-bitcoin-and-the-golden-cross-says-it-may-not-be-done-yet",
@@ -465,26 +485,6 @@
       "title": "XRP on track for biggest weekly gain in 21 months as Treasury buyback spurs 'curve control' hopes",
       "link": "https://www.coindesk.com/markets/2026/08/23/xrp-on-track-for-biggest-weekly-gain-in-21-months-as-treasury-buyback-spurs-curve-control-hopes",
       "pubDate": "Sun, 23 Aug 2026 15:52:21 +0000"
-    },
-    {
-      "title": "Crypto card spending tops $1 billion as stablecoins move into everyday purchases",
-      "link": "https://www.coindesk.com/business/2026/08/23/crypto-card-spending-tops-usd1-billion-as-stablecoins-move-into-everyday-purchases",
-      "pubDate": "Sun, 23 Aug 2026 15:00:00 +0000"
-    },
-    {
-      "title": "Crypto’s next billion users might be AI agents, and they’re paying with stablecoins",
-      "link": "https://www.coindesk.com/business/2026/08/23/crypto-s-next-billion-users-might-be-ai-agents-and-they-re-paying-with-stablecoins",
-      "pubDate": "Sun, 23 Aug 2026 13:00:00 +0000"
-    },
-    {
-      "title": "Crypto exchange BitMart weighs partial restart and creditor payouts weeks after announcing shutdown",
-      "link": "https://www.coindesk.com/business/2026/08/22/crypto-exchange-bitmart-weighs-partial-restart-and-creditor-payouts-weeks-after-announcing-shutdown",
-      "pubDate": "Sat, 22 Aug 2026 15:16:41 +0000"
-    },
-    {
-      "title": "Web3 gaming network Sandbox stops Base and BNB chain bridging after exploit",
-      "link": "https://www.coindesk.com/web3/2026/08/22/web3-gaming-network-sandbox-stops-base-and-bnb-chain-bridging-after-exploit",
-      "pubDate": "Sat, 22 Aug 2026 14:10:17 +0000"
     }
   ]
 }
