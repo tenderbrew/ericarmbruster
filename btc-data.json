@@ -1,13 +1,13 @@
 {
-  "fetchedAt": "2026-08-24T04:02:06.981Z",
+  "fetchedAt": "2026-08-24T07:17:17.252Z",
   "price": {
-    "usd": 76984,
-    "time": 1787543710
+    "usd": 77557,
+    "time": 1787555406
   },
   "moves": {
-    "d1": -0.9372002941149704,
-    "d7": 19.437663152839455,
-    "d30": 19.695820729369352
+    "d1": -0.19986546828788532,
+    "d7": 20.3266502279015,
+    "d30": 20.586729298395756
   },
   "history90d": [
     {
@@ -372,60 +372,90 @@
     },
     {
       "date": "2026-08-24",
-      "close": 76947.53018623627
+      "close": 77735.90793880037
     }
   ],
   "blocks": [
     {
-      "height": 963804,
-      "id": "00000000000000000000567d978aacdc4733ead3a99150af1e3003cfa37611a6",
-      "timestamp": 1787543855,
-      "txCount": 4545
+      "height": 963829,
+      "id": "000000000000000000016b2f88b5bead0df8cfb46a8fa962cc8826468bb482fd",
+      "timestamp": 1787555598,
+      "txCount": 6108
     },
     {
-      "height": 963803,
-      "id": "00000000000000000000f9c1b314117fa25f6eeff9d12396b44c0170cf9af969",
-      "timestamp": 1787542634,
-      "txCount": 6998
+      "height": 963828,
+      "id": "00000000000000000001ac14b610ada8d80d6e8177349bc8ff5fe5a6242d3f7f",
+      "timestamp": 1787555131,
+      "txCount": 4190
     },
     {
-      "height": 963802,
-      "id": "00000000000000000001ff82bc33ec9ccc84477f00ce409fddf3f839b0d710ce",
-      "timestamp": 1787542554,
-      "txCount": 4151
+      "height": 963827,
+      "id": "0000000000000000000215ee85a8390054b6248bcc6166ef822186b9f2834e2c",
+      "timestamp": 1787554122,
+      "txCount": 6472
     },
     {
-      "height": 963801,
-      "id": "000000000000000000019713f627c87d27068c5ce0a2b62fad1db8bc0675dcf2",
-      "timestamp": 1787541452,
-      "txCount": 4083
+      "height": 963826,
+      "id": "00000000000000000000b81034a85508112e2f9ab985bd36281e9be774ad32b2",
+      "timestamp": 1787553906,
+      "txCount": 6447
     },
     {
-      "height": 963800,
-      "id": "000000000000000000012c999b5f6d2043b1d3d76dcf06ee007b5f86290c0551",
-      "timestamp": 1787540803,
-      "txCount": 5326
+      "height": 963825,
+      "id": "00000000000000000000b237348333a38bc2d3fb8cc8f51f7e1ca0f2b6d49055",
+      "timestamp": 1787553773,
+      "txCount": 7003
     },
     {
-      "height": 963799,
-      "id": "000000000000000000012887bcc3df8fdd17279581439b74959df86d3d249594",
-      "timestamp": 1787540360,
-      "txCount": 6573
+      "height": 963824,
+      "id": "00000000000000000000aba79d3660a03f57275b0cafb89432187535abc9b8e3",
+      "timestamp": 1787553669,
+      "txCount": 5715
     },
     {
-      "height": 963798,
-      "id": "000000000000000000009994991596caec561b960239feb39af2d23f0e20a6cf",
-      "timestamp": 1787540321,
-      "txCount": 3071
+      "height": 963823,
+      "id": "00000000000000000000356afb2eb4142604d47068bb0229649ad7eaa62da162",
+      "timestamp": 1787553609,
+      "txCount": 6616
     },
     {
-      "height": 963797,
-      "id": "0000000000000000000063bdad2861ef9ee2b969e06243ae85c82e27a9753896",
-      "timestamp": 1787539953,
-      "txCount": 2833
+      "height": 963822,
+      "id": "00000000000000000001d55e487a0582e9032c0d7af32798a9e20d3f9c8a6377",
+      "timestamp": 1787553397,
+      "txCount": 3976
     }
   ],
   "news": [
+    {
+      "title": "Ether is crushing bitcoin and the 'golden cross' says it may not be done yet",
+      "link": "https://www.coindesk.com/markets/2026/08/24/ether-is-crushing-bitcoin-and-the-golden-cross-says-it-may-not-be-done-yet",
+      "pubDate": "Mon, 24 Aug 2026 06:50:58 +0000"
+    },
+    {
+      "title": "Ethereum lending app Term Finance loses $8.5 million after attacker buys voting power",
+      "link": "https://www.coindesk.com/markets/2026/08/24/ethereum-lending-app-term-finance-loses-usd8-5-million-after-attacker-buys-voting-power",
+      "pubDate": "Mon, 24 Aug 2026 06:27:33 +0000"
+    },
+    {
+      "title": "Ray Dalio says investors should own ‘a bit of Bitcoin’ as U.S. debt risks rise",
+      "link": "https://www.coindesk.com/markets/2026/08/24/ray-dalio-says-investors-should-own-a-bit-of-bitcoin-as-u-s-debt-risks-rise",
+      "pubDate": "Mon, 24 Aug 2026 05:13:19 +0000"
+    },
+    {
+      "title": "Bessent's $4 billion bond buyback wanted lower yields. It got a bitcoin surge instead.",
+      "link": "https://www.coindesk.com/markets/2026/08/24/bessent-s-usd4-billion-bond-buyback-wanted-lower-yields-it-got-a-bitcoin-surge-instead",
+      "pubDate": "Mon, 24 Aug 2026 05:12:56 +0000"
+    },
+    {
+      "title": "Stablecoin neobank Fasset lands $1 billion valuation as SBI backs its payments push",
+      "link": "https://www.coindesk.com/business/2026/08/22/stablecoin-neobank-fasset-lands-usd1-billion-valuation-as-sbi-backs-its-payments-push",
+      "pubDate": "Mon, 24 Aug 2026 04:45:00 +0000"
+    },
+    {
+      "title": "Crypto holds big weekly rally as Warsh’s Jackson Hole debut comes into focus",
+      "link": "https://www.coindesk.com/markets/2026/08/24/crypto-holds-big-weekly-rally-as-warsh-s-jackson-hole-debut-comes-into-focus",
+      "pubDate": "Mon, 24 Aug 2026 04:41:28 +0000"
+    },
     {
       "title": "Regulation Crypto is here: State of Crypto",
       "link": "https://www.coindesk.com/policy/2026/08/23/regulation-crypto-is-here-state-of-crypto",
@@ -455,36 +485,6 @@
       "title": "Web3 gaming network Sandbox stops Base and BNB chain bridging after exploit",
       "link": "https://www.coindesk.com/web3/2026/08/22/web3-gaming-network-sandbox-stops-base-and-bnb-chain-bridging-after-exploit",
       "pubDate": "Sat, 22 Aug 2026 14:10:17 +0000"
-    },
-    {
-      "title": "Tokenized stocks risk repeating Wall Street’s 1960s ‘paper crisis,’ Fairmint CEO says",
-      "link": "https://www.coindesk.com/tech/2026/08/22/tokenized-stocks-risk-repeating-wall-street-s-1960s-paper-crisis-fairmint-ceo-says",
-      "pubDate": "Sat, 22 Aug 2026 14:00:00 +0000"
-    },
-    {
-      "title": "Kalshi off-limits in multiple states as prediction markets, CFTC team up for battle",
-      "link": "https://www.coindesk.com/news-analysis/2026/08/21/kalshi-off-limits-in-multiple-states-as-prediction-markets-cftc-team-up-for-battle",
-      "pubDate": "Sat, 22 Aug 2026 13:30:00 +0000"
-    },
-    {
-      "title": "Bitcoin and Ether bears get decimated amid 'squeeze-led' rally and Musk's X wants to pay creators in stablecoins: Crypto's week in 5 stories",
-      "link": "https://www.coindesk.com/business/2026/08/22/bitcoin-and-ether-bears-get-decimated-amid-squeeze-led-rally-and-musk-s-x-wants-to-pay-creators-in-stablecoins-crypto-week-in-5-stories",
-      "pubDate": "Sat, 22 Aug 2026 12:00:00 +0000"
-    },
-    {
-      "title": "Zcash jumps 48% to over $800 as Grayscale spot ETF push adds to ‘next bitcoin’ buzz",
-      "link": "https://www.coindesk.com/markets/2026/08/22/zcash-tops-usd800-for-first-time-since-2016",
-      "pubDate": "Sat, 22 Aug 2026 05:37:43 +0000"
-    },
-    {
-      "title": "How a Treasury buyback tweak helped bitcoin surge 25% to nearly $80,000 in days",
-      "link": "https://www.coindesk.com/markets/2026/08/22/how-a-treasury-buyback-tweak-helped-bitcoin-surge-nearly-25-in-days",
-      "pubDate": "Sat, 22 Aug 2026 05:05:13 +0000"
-    },
-    {
-      "title": "Crypto advocates join in suing Illinois over digital asset tax",
-      "link": "https://www.coindesk.com/policy/2026/08/21/crypto-advocates-join-in-suing-illinois-over-digital-asset-tax",
-      "pubDate": "Fri, 21 Aug 2026 22:10:28 +0000"
     }
   ]
 }
