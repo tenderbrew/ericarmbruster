@@ -1,13 +1,13 @@
 {
-  "fetchedAt": "2026-08-25T03:56:09.931Z",
+  "fetchedAt": "2026-08-25T07:05:25.565Z",
   "price": {
-    "usd": 80524,
-    "time": 1787630105
+    "usd": 80533,
+    "time": 1787641210
   },
   "moves": {
-    "d1": 1.9628172350594664,
-    "d7": 24.525956657812586,
-    "d30": 23.294311628472776
+    "d1": 1.9742134070717343,
+    "d7": 24.53987466498959,
+    "d30": 23.308091977246505
   },
   "history90d": [
     {
@@ -372,60 +372,80 @@
     },
     {
       "date": "2026-08-25",
-      "close": 80599.48120507879
+      "close": 80630.80057051378
     }
   ],
   "blocks": [
     {
-      "height": 963940,
-      "id": "00000000000000000000a2bf467b0375d786479103976400f5ec2191b0a2e10e",
-      "timestamp": 1787629659,
-      "txCount": 3492
+      "height": 963965,
+      "id": "00000000000000000000edcca4f92320525ec14da2a7dfe5f01e32938e5e3350",
+      "timestamp": 1787640573,
+      "txCount": 771
     },
     {
-      "height": 963939,
-      "id": "00000000000000000001d7b3582f5399460e8ee795f77314e705ad9c7db33f38",
-      "timestamp": 1787628026,
-      "txCount": 2952
+      "height": 963964,
+      "id": "000000000000000000022821c7d5fbcafb4d2e44d48d1a623d86a735689a9ae5",
+      "timestamp": 1787640402,
+      "txCount": 596
     },
     {
-      "height": 963938,
-      "id": "00000000000000000001e84a57ed700e07d498558d6e95fc981dd14b5bc0c4f7",
-      "timestamp": 1787622989,
-      "txCount": 5323
+      "height": 963963,
+      "id": "00000000000000000001ce11e8545b9b92436a13b7d68d5003962009e9dc4c71",
+      "timestamp": 1787640166,
+      "txCount": 5100
     },
     {
-      "height": 963937,
-      "id": "000000000000000000006334d96b5d4f59c06c8fe4ea7604ebcf6f9c33b352c0",
-      "timestamp": 1787622454,
-      "txCount": 6649
+      "height": 963962,
+      "id": "000000000000000000000c8ccbd970a6432aef76e6a63fb139fda1b821f97291",
+      "timestamp": 1787639708,
+      "txCount": 4076
     },
     {
-      "height": 963936,
-      "id": "0000000000000000000057d173de3c1108fa7c3562cb7d32d211872ac002172e",
-      "timestamp": 1787622414,
-      "txCount": 5339
+      "height": 963961,
+      "id": "00000000000000000000291e485a80a3381dcf686e00293259cc74658466b6d6",
+      "timestamp": 1787639304,
+      "txCount": 3989
     },
     {
-      "height": 963935,
-      "id": "000000000000000000014bedf829de8ecd9a4635add498dc444fa8e5e628a261",
-      "timestamp": 1787622104,
-      "txCount": 4137
+      "height": 963960,
+      "id": "00000000000000000001fe780c8bc3e824859a805b916315a4c7bc90118587ef",
+      "timestamp": 1787638007,
+      "txCount": 5887
     },
     {
-      "height": 963934,
-      "id": "00000000000000000001066e6930333753c9a00d754232ab8a77ff7456436115",
-      "timestamp": 1787621227,
-      "txCount": 4130
+      "height": 963959,
+      "id": "000000000000000000005d83572278ea7a63578b15bc00818ed80e1ef65326fd",
+      "timestamp": 1787637620,
+      "txCount": 1183
     },
     {
-      "height": 963933,
-      "id": "00000000000000000001211e6e94753faf15f14b3efe042e8e15c5e1785527a4",
-      "timestamp": 1787619397,
-      "txCount": 7130
+      "height": 963958,
+      "id": "00000000000000000001106b2af23ad27f6e1c17b5bd429cb287581a04445851",
+      "timestamp": 1787637133,
+      "txCount": 5248
     }
   ],
   "news": [
+    {
+      "title": "Monad proposes wallet upgrade that could survive lost keys and quantum attacks",
+      "link": "https://www.coindesk.com/tech/2026/08/25/monad-proposes-wallet-upgrade-that-could-survive-lost-keys-and-quantum-attacks",
+      "pubDate": "Tue, 25 Aug 2026 07:01:49 +0000"
+    },
+    {
+      "title": "Crypto rally spills into dog and cat memecoins as smaller tokens double in a week",
+      "link": "https://www.coindesk.com/markets/2026/08/25/crypto-rally-spills-into-dog-and-cat-memecoins-as-smaller-tokens-double-in-a-week",
+      "pubDate": "Tue, 25 Aug 2026 06:26:29 +0000"
+    },
+    {
+      "title": "Bitcoin traders place $2.9 million bet on a rapid price jump above $82,000",
+      "link": "https://www.coindesk.com/markets/2026/08/25/bitcoin-traders-place-usd2-9-million-bet-on-a-rapid-price-jump-above-usd82-000",
+      "pubDate": "Tue, 25 Aug 2026 05:51:52 +0000"
+    },
+    {
+      "title": "Bitcoin tops $80,000, solana jumps 8% but rally now runs into overbought warning",
+      "link": "https://www.coindesk.com/markets/2026/08/25/bitcoin-tops-usd80-000-solana-jumps-8-but-rally-now-runs-into-overbought-warning",
+      "pubDate": "Tue, 25 Aug 2026 05:25:11 +0000"
+    },
     {
       "title": "Bitcoin hits $80,000 for the first time since May as crypto recovery accelerates",
       "link": "https://www.coindesk.com/markets/2026/08/24/bitcoin-hits-usd80-000-for-the-first-time-since-may-as-crypto-recovery-accelerates",
@@ -465,26 +485,6 @@
       "title": "Standard Chartered becomes first bank to distribute Hong Kong dollar stablecoin",
       "link": "https://www.coindesk.com/business/2026/08/24/standard-chartered-first-bank-to-distribute-anchorpoint-s-hong-kong-dollar-stablecoin",
       "pubDate": "Mon, 24 Aug 2026 11:36:55 +0000"
-    },
-    {
-      "title": "Pakistan kicks off crypto licensing regime with Sept. 5 registration deadline",
-      "link": "https://www.coindesk.com/policy/2026/08/24/pakistan-kicks-off-crypto-licensing-regime-with-sept-5-registration-deadline",
-      "pubDate": "Mon, 24 Aug 2026 11:19:16 +0000"
-    },
-    {
-      "title": "Financial repression: The new buzzword for bitcoin bulls",
-      "link": "https://www.coindesk.com/daybook-us/2026/08/24/financial-repression-the-new-buzzword-for-bitcoin-bulls",
-      "pubDate": "Mon, 24 Aug 2026 11:15:00 +0000"
-    },
-    {
-      "title": "Gemini strikes Apex deal to widen prediction markets reach",
-      "link": "https://www.coindesk.com/business/2026/08/24/gemini-strikes-apex-deal-to-widen-prediction-markets-reach",
-      "pubDate": "Mon, 24 Aug 2026 10:55:00 +0000"
-    },
-    {
-      "title": "Bitcoin steadies near $78,000 as gold rallies, altcoins consolidate after best week in 3 years",
-      "link": "https://www.coindesk.com/markets/2026/08/24/bitcoin-steadies-near-usd78-000-as-gold-rallies-altcoins-consolidate-after-best-week-in-3-years",
-      "pubDate": "Mon, 24 Aug 2026 10:41:46 +0000"
     }
   ]
 }
