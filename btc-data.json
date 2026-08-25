@@ -1,13 +1,13 @@
 {
-  "fetchedAt": "2026-08-25T07:05:25.565Z",
+  "fetchedAt": "2026-08-25T09:49:01.289Z",
   "price": {
-    "usd": 80533,
-    "time": 1787641210
+    "usd": 79778,
+    "time": 1787651107
   },
   "moves": {
-    "d1": 1.9742134070717343,
-    "d7": 24.53987466498959,
-    "d30": 23.308091977246505
+    "d1": 1.0182011993762785,
+    "d7": 23.372308507363915,
+    "d30": 22.152073830116503
   },
   "history90d": [
     {
@@ -372,60 +372,80 @@
     },
     {
       "date": "2026-08-25",
-      "close": 80630.80057051378
+      "close": 79663.70712014202
     }
   ],
   "blocks": [
     {
-      "height": 963965,
-      "id": "00000000000000000000edcca4f92320525ec14da2a7dfe5f01e32938e5e3350",
-      "timestamp": 1787640573,
-      "txCount": 771
+      "height": 963983,
+      "id": "00000000000000000000d91f6139f7139cce2c211192e5f2ac1c5eaa2b152226",
+      "timestamp": 1787651214,
+      "txCount": 6057
     },
     {
-      "height": 963964,
-      "id": "000000000000000000022821c7d5fbcafb4d2e44d48d1a623d86a735689a9ae5",
-      "timestamp": 1787640402,
-      "txCount": 596
+      "height": 963982,
+      "id": "0000000000000000000026c1cdd8f51bc3e5e7efb025e6cd3241432cc1b2e0e8",
+      "timestamp": 1787650959,
+      "txCount": 3863
     },
     {
-      "height": 963963,
-      "id": "00000000000000000001ce11e8545b9b92436a13b7d68d5003962009e9dc4c71",
-      "timestamp": 1787640166,
-      "txCount": 5100
+      "height": 963981,
+      "id": "0000000000000000000114a2d681f4a9c666852e45f929ec7ad67876249f39c8",
+      "timestamp": 1787650941,
+      "txCount": 4045
     },
     {
-      "height": 963962,
-      "id": "000000000000000000000c8ccbd970a6432aef76e6a63fb139fda1b821f97291",
-      "timestamp": 1787639708,
-      "txCount": 4076
+      "height": 963980,
+      "id": "00000000000000000001ad8dc8aee04ac31c060e0b7516a4af70398bdea8ccb6",
+      "timestamp": 1787649067,
+      "txCount": 5924
     },
     {
-      "height": 963961,
-      "id": "00000000000000000000291e485a80a3381dcf686e00293259cc74658466b6d6",
-      "timestamp": 1787639304,
-      "txCount": 3989
+      "height": 963979,
+      "id": "000000000000000000002e93b98cc3481468d2773e001d1d13b98709093d991e",
+      "timestamp": 1787648910,
+      "txCount": 4854
     },
     {
-      "height": 963960,
-      "id": "00000000000000000001fe780c8bc3e824859a805b916315a4c7bc90118587ef",
-      "timestamp": 1787638007,
-      "txCount": 5887
+      "height": 963978,
+      "id": "00000000000000000002302859d15069a49b800eede64fe92331be06befe378a",
+      "timestamp": 1787648741,
+      "txCount": 3065
     },
     {
-      "height": 963959,
-      "id": "000000000000000000005d83572278ea7a63578b15bc00818ed80e1ef65326fd",
-      "timestamp": 1787637620,
-      "txCount": 1183
+      "height": 963977,
+      "id": "00000000000000000000d7aaaa1ddf5b6a7989e072ce0a524fc7f407c8634ff6",
+      "timestamp": 1787648708,
+      "txCount": 2847
     },
     {
-      "height": 963958,
-      "id": "00000000000000000001106b2af23ad27f6e1c17b5bd429cb287581a04445851",
-      "timestamp": 1787637133,
-      "txCount": 5248
+      "height": 963976,
+      "id": "000000000000000000021d820b9c8a3308a129dea7b00df1b462906bf154e4ca",
+      "timestamp": 1787648363,
+      "txCount": 3616
     }
   ],
   "news": [
+    {
+      "title": "U.S. widens Iran crackdown to encompass crypto, gold, shipping and technology",
+      "link": "https://www.coindesk.com/policy/2026/08/25/u-s-widens-iran-crackdown-to-encompass-crypto-gold-shipping-and-technology",
+      "pubDate": "Tue, 25 Aug 2026 08:47:18 +0000"
+    },
+    {
+      "title": "Franklin Templeton and Hashkey roll out U.S. tokenized money fund in Asia",
+      "link": "https://www.coindesk.com/business/2026/08/25/franklin-templeton-and-hashkey-roll-out-u-s-tokenized-money-fund-in-asia",
+      "pubDate": "Tue, 25 Aug 2026 07:55:18 +0000"
+    },
+    {
+      "title": "Live updates: Bitcoin ETFs draw a sixth straight day of inflows as the rally holds above $80,000",
+      "link": "https://www.coindesk.com/business/2026/08/25/live-updates-bitcoin-etfs-draw-a-seventh-straight-day-of-inflows-as-the-rally-holds-above-usd80-000",
+      "pubDate": "Tue, 25 Aug 2026 07:40:11 +0000"
+    },
+    {
+      "title": "Treasury’s bond buyback plan fights the market and heightens the danger, billionaire Druckenmiller says",
+      "link": "https://www.coindesk.com/markets/2026/08/25/governments-defending-prices-against-fundamentals-always-lose-billionaire-investor-druckenmiller-says",
+      "pubDate": "Tue, 25 Aug 2026 07:32:32 +0000"
+    },
     {
       "title": "Monad proposes wallet upgrade that could survive lost keys and quantum attacks",
       "link": "https://www.coindesk.com/tech/2026/08/25/monad-proposes-wallet-upgrade-that-could-survive-lost-keys-and-quantum-attacks",
@@ -465,26 +485,6 @@
       "title": "Coinbase debuts tokenized stocks on Base network, joining race to bring equities on blockchain",
       "link": "https://www.coindesk.com/business/2026/08/24/coinbase-debuts-tokenized-stocks-on-base-network-joining-race-to-bring-equities-on-blockchain",
       "pubDate": "Mon, 24 Aug 2026 17:12:35 +0000"
-    },
-    {
-      "title": "Tom Lee's Bitmine buys $81 million of ETH in largest weekly haul since early July",
-      "link": "https://www.coindesk.com/business/2026/08/24/tom-lee-s-bitmine-buys-usd81-million-of-eth-in-largest-weekly-haul-since-early-july",
-      "pubDate": "Mon, 24 Aug 2026 12:59:55 +0000"
-    },
-    {
-      "title": "New Solana vote could ramp daily SOL burns to $800,000 and slow new token creation",
-      "link": "https://www.coindesk.com/tech/2026/08/24/new-solana-vote-could-ramp-daily-sol-burns-to-usd800-000-and-slow-new-token-creation",
-      "pubDate": "Mon, 24 Aug 2026 12:52:30 +0000"
-    },
-    {
-      "title": "Strategy raises $2 billion through MSTR sales and creates new USD Cash pool",
-      "link": "https://www.coindesk.com/markets/2026/08/24/strategy-raises-usd2-billion-through-mstr-sales-and-creates-new-usd-cash-pool",
-      "pubDate": "Mon, 24 Aug 2026 12:24:58 +0000"
-    },
-    {
-      "title": "Standard Chartered becomes first bank to distribute Hong Kong dollar stablecoin",
-      "link": "https://www.coindesk.com/business/2026/08/24/standard-chartered-first-bank-to-distribute-anchorpoint-s-hong-kong-dollar-stablecoin",
-      "pubDate": "Mon, 24 Aug 2026 11:36:55 +0000"
     }
   ]
 }
