@@ -40,6 +40,7 @@ One system for every page. Tokens live at the top of `css/pixel-base.css` — al
 - `hector.html` — hand-edited photo page (template figure in a comment); uses the shared `.px-gallery`.
 - `seymour.html` — memorial, pixel chrome with untouched photos (see above).
 - `404.html` — GitHub Pages not-found page, pixel system, `noindex`, **absolute** asset paths (`/css/...`) because it serves at any path.
+- `hermes-oauth.html`, `hermes-oauth-privacy.html`, `hermes-oauth-terms.html` — public but unlisted Google OAuth support/compliance pages for the private, single-user Hermes Gmail + Calendar integration. They deliberately carry **no Google Analytics**. Keep their homepage/privacy/terms URLs aligned with Google Auth Platform Branding, and update all three whenever scopes, data handling, processing providers, delivery targets, or retention materially change.
 - Retro Game Club is deliberately NOT a page here — its dock-style tile under the "Completed projects" label links out to nintendopipeline.club (its own repo/site).
 - `guestbook.html` — live-backend page (see Data pipelines); `birds.html` (has the same photo-button + lightbox pattern as hector/seymour, `bd-` prefixed) + `colophon.html` — secret pages, noindex, not in sitemap.
 
