@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Hermes Personal Assistant &mdash; Eric Armbruster</title>
+
+  <meta name="description" content="Support information for the private, self-hosted Hermes Personal Assistant Google OAuth integration.">
+  <meta name="theme-color" content="#F3EEDF">
+  <link rel="canonical" href="https://www.ericarmbruster.com/hermes-oauth.html">
+  <meta property="og:title" content="Hermes Personal Assistant - Eric Armbruster">
+  <meta property="og:description" content="Support information for a private, self-hosted Hermes Agent Google OAuth integration.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://www.ericarmbruster.com/hermes-oauth.html">
+
+  <link rel="icon" href="images/hector-favicon.png" type="image/png">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DotGothic16&family=IBM+Plex+Mono:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/pixel-base.css?v=12">
+  <script>try{if(window.self!==window.top)document.documentElement.classList.add("framed");var m=sessionStorage.roost_mode;if(!m&&!navigator.webdriver){var h=+new Intl.DateTimeFormat("en-US",{timeZone:"America/New_York",hour:"numeric",hour12:false}).format(new Date());m=(h>=21||h<6)?"night":(h<8||h>=19)?"dusk":"day"}if(m==="night"||m==="dusk")document.documentElement.classList.add(m)}catch(e){}</script>
+
+  <style>
+    .site-nav {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: baseline;
+      gap: 8px 14px;
+      margin-bottom: 32px;
+    }
+    .site-nav a,
+    .site-nav .current {
+      font-family: var(--font-display);
+      font-size: 16px;
+      text-decoration: none;
+    }
+    .site-nav .current { color: var(--ink); }
+    .oauth-updated {
+      font-family: var(--font-display);
+      font-size: 16px;
+      color: var(--sunset-text);
+      margin: 4px 0 0;
+    }
+    .support-section { margin-top: 40px; }
+    .permission-table td:first-child {
+      color: var(--pool);
+      font-family: var(--font-display);
+      font-size: 16px;
+    }
+    .permission-table .access { color: var(--sunset-text); }
+    .related-documents { margin-top: 40px; }
+    .related-documents .px-links { margin-bottom: 0; }
+    .related-documents .px-links .px-label { min-width: 132px; }
+    @media (max-width: 480px) {
+      .permission-table { font-size: 12px; }
+      .permission-table th,
+      .permission-table td { padding: 8px; }
+      .related-documents .px-links li { display: block; }
+      .related-documents .px-links .px-label { display: block; margin-bottom: 2px; }
+    }
+  </style>
+
+</head>
+<body>
+
+  <nav class="site-nav" aria-label="Hermes support navigation">
+    <a href="index.html">&larr; Eric Armbruster</a>
+    <span aria-hidden="true">/</span>
+    <span class="current" aria-current="page">Hermes support</span>
+    <a href="hermes-oauth-privacy.html">Privacy policy</a>
+    <a href="hermes-oauth-terms.html">Terms of use</a>
+  </nav>
+
+  <header class="masthead">
+    <svg class="px-art" width="256" height="144" viewBox="0 0 32 18" shape-rendering="crispEdges" aria-hidden="true">
+      <!-- calendar -->
+      <rect x="3" y="3" width="12" height="1" fill="#1A1A18"/>
+      <rect x="3" y="4" width="1" height="10" fill="#1A1A18"/>
+      <rect x="14" y="4" width="1" height="10" fill="#1A1A18"/>
+      <rect x="3" y="13" width="12" height="1" fill="#1A1A18"/>
+      <rect x="4" y="5" width="10" height="2" fill="#2E6FBF"/>
+      <rect x="5" y="1" width="2" height="4" fill="#E8743B"/>
+      <rect x="11" y="1" width="2" height="4" fill="#E8743B"/>
+      <rect x="5" y="8" width="2" height="2" fill="#E8743B"/>
+      <rect x="9" y="8" width="2" height="2" fill="#2E6FBF"/>
+      <rect x="5" y="11" width="2" height="1" fill="#2E6FBF"/>
+      <rect x="9" y="11" width="3" height="1" fill="#E8743B"/>
+      <!-- envelope -->
+      <rect x="18" y="6" width="11" height="1" fill="#1A1A18"/>
+      <rect x="18" y="7" width="1" height="7" fill="#1A1A18"/>
+      <rect x="28" y="7" width="1" height="7" fill="#1A1A18"/>
+      <rect x="18" y="13" width="11" height="1" fill="#1A1A18"/>
+      <rect x="19" y="7" width="9" height="1" fill="#E8743B"/>
+      <rect x="20" y="8" width="7" height="1" fill="#E8743B"/>
+      <rect x="21" y="9" width="5" height="1" fill="#E8743B"/>
+      <rect x="22" y="10" width="3" height="1" fill="#E8743B"/>
+      <rect x="20" y="12" width="2" height="1" fill="#2E6FBF"/>
+      <rect x="25" y="12" width="2" height="1" fill="#2E6FBF"/>
+      <rect x="2" y="16" width="28" height="1" fill="#2E6FBF"/>
+    </svg>
+    <h1>Hermes Personal Assistant</h1>
+    <p class="oauth-updated">Support information &mdash; August 25, 2026</p>
+  </header>
+
+  <hr class="px-wave">
+
+  <main id="main">
+    <p>
+      Hermes Personal Assistant is a private, single-user, self-hosted Hermes
+      Agent integration. It currently uses read-only Gmail and read-only Google
+      Calendar access to prepare a daily agenda-and-mail brief.
+    </p>
+
+    <section class="px-panel" aria-labelledby="current-access">
+      <h2 id="current-access">Current Google access</h2>
+      <table class="px-table permission-table">
+        <thead>
+          <tr>
+            <th scope="col">Service</th>
+            <th scope="col">Access</th>
+            <th scope="col">Purpose</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Gmail</td>
+            <td class="access">Read only</td>
+            <td>Review selected mail needed for the daily brief.</td>
+          </tr>
+          <tr>
+            <td>Google Calendar</td>
+            <td class="access">Read only</td>
+            <td>Review calendar events needed for the daily brief.</td>
+          </tr>
+        </tbody>
+      </table>
+      <p>
+        The integration does not currently send, edit, or delete Gmail or
+        Google Calendar data. The completed brief is delivered to a Discord
+        channel chosen by the user.
+      </p>
+    </section>
+
+    <section class="support-section" aria-labelledby="support">
+      <h2 id="support">Support</h2>
+      <p>
+        This is a personal integration rather than a public service. For help
+        with its configuration or access, contact
+        <a href="mailto:eric.m.armbruster@gmail.com">eric.m.armbruster@gmail.com</a>.
+      </p>
+    </section>
+
+    <section class="related-documents" aria-labelledby="related-documents">
+      <h2 id="related-documents">Related documents</h2>
+      <ul class="px-links">
+        <li><span class="px-label">Privacy</span><a href="hermes-oauth-privacy.html">Read the Hermes Personal Assistant privacy policy</a></li>
+        <li><span class="px-label">Terms</span><a href="hermes-oauth-terms.html">Read the Hermes Personal Assistant terms of use</a></li>
+      </ul>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 Eric Armbruster</p>
+  </footer>
+
+</body>
+</html>

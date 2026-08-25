@@ -49,7 +49,7 @@ const CHECKS = {
   music: { must: ['data-hydrated="music"'], mustNot: ['Data feed unavailable'] },
 };
 
-const ALL_PAGES = ['index', 'now', 'video-games', 'film', 'reading', 'music', 'self-hosting', 'economics', 'bitcoin', 'family-tree', 'hector', 'guestbook', 'birds', 'colophon', 'seymour', '404'];
+const ALL_PAGES = ['index', 'now', 'hermes-oauth', 'hermes-oauth-privacy', 'hermes-oauth-terms', 'video-games', 'film', 'reading', 'music', 'self-hosting', 'economics', 'bitcoin', 'family-tree', 'hector', 'guestbook', 'birds', 'colophon', 'seymour', '404'];
 
 function findBrowser() {
   const candidates = [

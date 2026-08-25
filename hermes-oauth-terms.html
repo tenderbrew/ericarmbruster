@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Terms of use &mdash; Hermes Personal Assistant</title>
+
+  <meta name="description" content="Personal-use terms for the private, self-hosted Hermes Personal Assistant Google OAuth integration.">
+  <meta name="theme-color" content="#F3EEDF">
+  <link rel="canonical" href="https://www.ericarmbruster.com/hermes-oauth-terms.html">
+  <meta property="og:title" content="Terms of use - Hermes Personal Assistant">
+  <meta property="og:description" content="Personal-use terms for the Hermes Personal Assistant Google OAuth integration.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://www.ericarmbruster.com/hermes-oauth-terms.html">
+
+  <link rel="icon" href="images/hector-favicon.png" type="image/png">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DotGothic16&family=IBM+Plex+Mono:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/pixel-base.css?v=12">
+  <script>try{if(window.self!==window.top)document.documentElement.classList.add("framed");var m=sessionStorage.roost_mode;if(!m&&!navigator.webdriver){var h=+new Intl.DateTimeFormat("en-US",{timeZone:"America/New_York",hour:"numeric",hour12:false}).format(new Date());m=(h>=21||h<6)?"night":(h<8||h>=19)?"dusk":"day"}if(m==="night"||m==="dusk")document.documentElement.classList.add(m)}catch(e){}</script>
+
+  <style>
+    .site-nav {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: baseline;
+      gap: 8px 14px;
+      margin-bottom: 32px;
+    }
+    .site-nav a,
+    .site-nav .current {
+      font-family: var(--font-display);
+      font-size: 16px;
+      text-decoration: none;
+    }
+    .site-nav .current { color: var(--ink); }
+    .oauth-updated {
+      font-family: var(--font-display);
+      font-size: 16px;
+      color: var(--sunset-text);
+      margin: 4px 0 0;
+    }
+    .document-section { margin-top: 40px; }
+    .document-section h2 { margin-bottom: 12px; }
+    .document-section .px-bullets { margin: 12px 0; }
+  </style>
+
+</head>
+<body>
+
+  <nav class="site-nav" aria-label="Hermes support navigation">
+    <a href="index.html">&larr; Eric Armbruster</a>
+    <a href="hermes-oauth.html">Hermes support</a>
+    <a href="hermes-oauth-privacy.html">Privacy policy</a>
+    <span aria-hidden="true">/</span>
+    <span class="current" aria-current="page">Terms of use</span>
+  </nav>
+
+  <header class="masthead">
+    <svg class="px-art" width="256" height="144" viewBox="0 0 32 18" shape-rendering="crispEdges" aria-hidden="true">
+      <!-- document -->
+      <rect x="10" y="2" width="10" height="1" fill="#1A1A18"/>
+      <rect x="10" y="3" width="1" height="12" fill="#1A1A18"/>
+      <rect x="19" y="3" width="1" height="12" fill="#1A1A18"/>
+      <rect x="10" y="14" width="10" height="1" fill="#1A1A18"/>
+      <rect x="12" y="5" width="5" height="1" fill="#2E6FBF"/>
+      <rect x="12" y="7" width="5" height="1" fill="#2E6FBF"/>
+      <rect x="12" y="9" width="3" height="1" fill="#2E6FBF"/>
+      <!-- check mark -->
+      <rect x="21" y="10" width="2" height="1" fill="#E8743B"/>
+      <rect x="22" y="11" width="2" height="1" fill="#E8743B"/>
+      <rect x="23" y="12" width="2" height="1" fill="#E8743B"/>
+      <rect x="24" y="11" width="2" height="1" fill="#E8743B"/>
+      <rect x="25" y="10" width="2" height="1" fill="#E8743B"/>
+      <rect x="4" y="16" width="24" height="1" fill="#2E6FBF"/>
+    </svg>
+    <h1>Terms of use</h1>
+    <p class="oauth-updated">Hermes Personal Assistant &mdash; August 25, 2026</p>
+  </header>
+
+  <hr class="px-wave">
+
+  <main id="main">
+    <p>
+      These terms govern personal use of Hermes Personal Assistant, a private,
+      single-user, self-hosted Hermes Agent integration.
+    </p>
+
+    <section class="px-panel" aria-labelledby="purpose">
+      <h2 id="purpose">Purpose</h2>
+      <p>
+        The integration currently uses read-only Gmail and read-only Google
+        Calendar access to prepare a daily agenda-and-mail brief. The brief is
+        delivered to a Discord channel selected by the user.
+      </p>
+    </section>
+
+    <section class="document-section" aria-labelledby="authorization">
+      <h2 id="authorization">Authorization and control</h2>
+      <p>
+        Google authorization is optional and remains under the user's control.
+        The user may limit or revoke the integration's access at any time using
+        Google Account settings, and may remove the local OAuth token and local
+        configuration from CT101.
+      </p>
+    </section>
+
+    <section class="document-section" aria-labelledby="responsibility">
+      <h2 id="responsibility">Personal use and responsibility</h2>
+      <p>
+        This is not a public service or a shared product. The user is
+        responsible for the Google Account, Discord channel, AI model provider,
+        local configuration, and scheduling used with the integration.
+      </p>
+    </section>
+
+    <section class="document-section" aria-labelledby="no-warranty">
+      <h2 id="no-warranty">No warranty</h2>
+      <p>
+        Hermes Personal Assistant is provided as is and as available, without
+        warranties of any kind. The daily brief may be incomplete, delayed, or
+        inaccurate, and should not be treated as an authoritative record of
+        Gmail or Google Calendar data.
+      </p>
+    </section>
+
+    <section class="document-section" aria-labelledby="changes">
+      <h2 id="changes">Changes</h2>
+      <p>
+        These terms may be updated as the personal integration changes. The
+        date at the top of this page identifies the current version.
+      </p>
+    </section>
+
+    <section class="document-section" aria-labelledby="privacy-link">
+      <h2 id="privacy-link">Privacy</h2>
+      <p>
+        Review the <a href="hermes-oauth-privacy.html">Hermes Personal Assistant privacy policy</a>
+        for information about Google data, local retention, revocation, and
+        deletion.
+      </p>
+    </section>
+
+    <section class="document-section" aria-labelledby="contact">
+      <h2 id="contact">Contact</h2>
+      <p>
+        Questions about these terms can be sent to
+        <a href="mailto:eric.m.armbruster@gmail.com">eric.m.armbruster@gmail.com</a>.
+      </p>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 Eric Armbruster</p>
+  </footer>
+
+</body>
+</html>

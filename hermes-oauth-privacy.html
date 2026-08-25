@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Privacy policy &mdash; Hermes Personal Assistant</title>
+
+  <meta name="description" content="Privacy policy for the private, self-hosted Hermes Personal Assistant Google OAuth integration.">
+  <meta name="theme-color" content="#F3EEDF">
+  <link rel="canonical" href="https://www.ericarmbruster.com/hermes-oauth-privacy.html">
+  <meta property="og:title" content="Privacy policy - Hermes Personal Assistant">
+  <meta property="og:description" content="How the Hermes Personal Assistant handles Google API data.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://www.ericarmbruster.com/hermes-oauth-privacy.html">
+
+  <link rel="icon" href="images/hector-favicon.png" type="image/png">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DotGothic16&family=IBM+Plex+Mono:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/pixel-base.css?v=12">
+  <script>try{if(window.self!==window.top)document.documentElement.classList.add("framed");var m=sessionStorage.roost_mode;if(!m&&!navigator.webdriver){var h=+new Intl.DateTimeFormat("en-US",{timeZone:"America/New_York",hour:"numeric",hour12:false}).format(new Date());m=(h>=21||h<6)?"night":(h<8||h>=19)?"dusk":"day"}if(m==="night"||m==="dusk")document.documentElement.classList.add(m)}catch(e){}</script>
+
+  <style>
+    .site-nav {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: baseline;
+      gap: 8px 14px;
+      margin-bottom: 32px;
+    }
+    .site-nav a,
+    .site-nav .current {
+      font-family: var(--font-display);
+      font-size: 16px;
+      text-decoration: none;
+    }
+    .site-nav .current { color: var(--ink); }
+    .oauth-updated {
+      font-family: var(--font-display);
+      font-size: 16px;
+      color: var(--sunset-text);
+      margin: 4px 0 0;
+    }
+    .document-section { margin-top: 40px; }
+    .document-section h2 { margin-bottom: 12px; }
+    .document-section .px-bullets { margin: 12px 0; }
+  </style>
+
+</head>
+<body>
+
+  <nav class="site-nav" aria-label="Hermes support navigation">
+    <a href="index.html">&larr; Eric Armbruster</a>
+    <a href="hermes-oauth.html">Hermes support</a>
+    <span aria-hidden="true">/</span>
+    <span class="current" aria-current="page">Privacy policy</span>
+    <a href="hermes-oauth-terms.html">Terms of use</a>
+  </nav>
+
+  <header class="masthead">
+    <svg class="px-art" width="256" height="144" viewBox="0 0 32 18" shape-rendering="crispEdges" aria-hidden="true">
+      <!-- lock shackle -->
+      <rect x="13" y="2" width="6" height="1" fill="#1A1A18"/>
+      <rect x="12" y="3" width="8" height="1" fill="#1A1A18"/>
+      <rect x="11" y="4" width="2" height="3" fill="#1A1A18"/>
+      <rect x="19" y="4" width="2" height="3" fill="#1A1A18"/>
+      <rect x="13" y="3" width="6" height="3" fill="#2E6FBF"/>
+      <!-- lock body -->
+      <rect x="9" y="7" width="14" height="1" fill="#1A1A18"/>
+      <rect x="9" y="8" width="1" height="7" fill="#1A1A18"/>
+      <rect x="22" y="8" width="1" height="7" fill="#1A1A18"/>
+      <rect x="9" y="14" width="14" height="1" fill="#1A1A18"/>
+      <rect x="10" y="8" width="12" height="6" fill="#E8743B"/>
+      <rect x="15" y="9" width="2" height="2" fill="#1A1A18"/>
+      <rect x="15" y="11" width="2" height="2" fill="#1A1A18"/>
+      <rect x="4" y="16" width="24" height="1" fill="#2E6FBF"/>
+    </svg>
+    <h1>Privacy policy</h1>
+    <p class="oauth-updated">Hermes Personal Assistant &mdash; August 25, 2026</p>
+  </header>
+
+  <hr class="px-wave">
+
+  <main id="main">
+    <p>
+      This policy describes how the private, single-user, self-hosted Hermes
+      Personal Assistant integration handles information received through
+      Google APIs.
+    </p>
+
+    <section class="px-panel" aria-labelledby="summary">
+      <h2 id="summary">At a glance</h2>
+      <ul class="px-bullets">
+        <li>Gmail and Google Calendar data are accessed read-only.</li>
+        <li>The OAuth token is stored locally on CT101 with restricted permissions.</li>
+        <li>Only selected data needed for a daily brief is processed by the configured AI model provider.</li>
+        <li>The resulting output is delivered to a Discord channel chosen by the user.</li>
+      </ul>
+    </section>
+
+    <section class="document-section" aria-labelledby="data-use">
+      <h2 id="data-use">Google data and purpose</h2>
+      <p>
+        Hermes Personal Assistant currently reads selected Gmail messages and
+        Google Calendar events only to prepare a daily agenda-and-mail brief.
+        It does not send, edit, or delete Gmail messages or Calendar events.
+      </p>
+      <p>
+        The OAuth token is kept locally on CT101 and is limited to the
+        authorized read-only Gmail and Google Calendar permissions.
+      </p>
+    </section>
+
+    <section class="document-section" aria-labelledby="processing-sharing">
+      <h2 id="processing-sharing">Processing and delivery</h2>
+      <p>
+        Selected information needed to prepare the brief may be processed by
+        the AI model provider configured for this self-hosted installation.
+        The completed brief is then delivered to the Discord channel chosen by
+        the user.
+      </p>
+      <p>
+        The integration does not sell, rent, or use Google data for
+        advertising.
+      </p>
+    </section>
+
+    <section class="document-section" aria-labelledby="retention-controls">
+      <h2 id="retention-controls">Retention, revocation, and deletion</h2>
+      <p>
+        Local cron output and session output may be retained on CT101 according
+        to local system retention settings. The user can delete that local
+        output and the locally stored OAuth token at any time.
+      </p>
+      <p>
+        To revoke Google access, remove this integration from the Google
+        Account's third-party access settings. After revocation, delete the
+        local OAuth token, cron output, and session output from CT101 if those
+        records are no longer wanted. For help, contact
+        <a href="mailto:eric.m.armbruster@gmail.com">eric.m.armbruster@gmail.com</a>.
+      </p>
+    </section>
+
+    <section class="document-section" aria-labelledby="limited-use">
+      <h2 id="limited-use">Google API Limited Use</h2>
+      <p>
+        Hermes Personal Assistant's use and transfer of information received
+        from Google APIs will adhere to the
+        <a href="https://developers.google.com/terms/api-services-user-data-policy" target="_blank" rel="noopener">Google API Services User Data Policy</a>,
+        including the Limited Use requirements.
+      </p>
+    </section>
+
+
+    <section class="document-section" aria-labelledby="terms-link">
+      <h2 id="terms-link">Related terms</h2>
+      <p>
+        Review the <a href="hermes-oauth-terms.html">Hermes Personal Assistant terms of use</a>.
+      </p>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 Eric Armbruster</p>
+  </footer>
+
+</body>
+</html>
