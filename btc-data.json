@@ -1,13 +1,13 @@
 {
-  "fetchedAt": "2026-08-25T15:56:36.469Z",
+  "fetchedAt": "2026-08-25T18:54:40.904Z",
   "price": {
-    "usd": 79353,
-    "time": 1787673309
+    "usd": 79199,
+    "time": 1787683809
   },
   "moves": {
-    "d1": 0.4800486321304698,
-    "d7": 22.715069279561394,
-    "d30": 21.501335138023435
+    "d1": 0.28504746658728486,
+    "d7": 22.4769167123106,
+    "d30": 21.265538059006197
   },
   "history90d": [
     {
@@ -372,60 +372,65 @@
     },
     {
       "date": "2026-08-25",
-      "close": 79331.51511351312
+      "close": 79167.96731510577
     }
   ],
   "blocks": [
     {
-      "height": 964021,
-      "id": "000000000000000000014d13c5389e6ff35ac47c0eed5d68e72a17ef016fe2dc",
-      "timestamp": 1787672989,
-      "txCount": 4135
+      "height": 964040,
+      "id": "000000000000000000016148934eb72f7e576653902f400beaf44e8c0934b77c",
+      "timestamp": 1787683479,
+      "txCount": 4018
     },
     {
-      "height": 964020,
-      "id": "00000000000000000001e4788abb370dcac889e30f7d28a1fd64141222b03263",
-      "timestamp": 1787672704,
-      "txCount": 3695
+      "height": 964039,
+      "id": "000000000000000000007c335d110297146a68ecda8a8b134866b37b530376df",
+      "timestamp": 1787682340,
+      "txCount": 4566
     },
     {
-      "height": 964019,
-      "id": "00000000000000000000e2d8a69486a34db04c06f0ba306f493cd3bde635a02b",
-      "timestamp": 1787671701,
-      "txCount": 4712
+      "height": 964038,
+      "id": "00000000000000000000311382fad73c696b35b15a708f3bd3d1275179d8dfea",
+      "timestamp": 1787681374,
+      "txCount": 5702
     },
     {
-      "height": 964018,
-      "id": "00000000000000000000e096c3e5acf41b663485999ef365584f97c99f6818a3",
-      "timestamp": 1787671299,
-      "txCount": 3428
+      "height": 964037,
+      "id": "000000000000000000017a6264e9629a3c1db7c4bae63843cf805baed1df1858",
+      "timestamp": 1787681339,
+      "txCount": 2934
     },
     {
-      "height": 964017,
-      "id": "00000000000000000000dc312d5eaf4f29b97afea40ce35901b1564e68776b17",
-      "timestamp": 1787670141,
-      "txCount": 4577
+      "height": 964036,
+      "id": "00000000000000000000fef3e58cfe4b81276fcd4d144926808ab0242ead9066",
+      "timestamp": 1787681174,
+      "txCount": 3950
     },
     {
-      "height": 964016,
-      "id": "00000000000000000000eb4946841c09276d55e3c04693d70ef2680bf71b959c",
-      "timestamp": 1787669472,
-      "txCount": 4108
+      "height": 964035,
+      "id": "000000000000000000006352a0e391bc12f6c32573b64580392cb2379910e112",
+      "timestamp": 1787680284,
+      "txCount": 4462
     },
     {
-      "height": 964015,
-      "id": "000000000000000000009a724cfff67be91deaae3a331a6b6beec168f0dee250",
-      "timestamp": 1787669096,
-      "txCount": 4167
+      "height": 964034,
+      "id": "00000000000000000001a1697cac55491cc84a024a60e176fd7d782a60ffc913",
+      "timestamp": 1787679929,
+      "txCount": 4015
     },
     {
-      "height": 964014,
-      "id": "00000000000000000000ebcbc451491625dee9e4189fd2da54e84ab8a92c9a94",
-      "timestamp": 1787668779,
-      "txCount": 4172
+      "height": 964033,
+      "id": "000000000000000000021477de8af72e4deb4ad164ef617c771f403f96843202",
+      "timestamp": 1787678193,
+      "txCount": 4413
     }
   ],
   "news": [
+    {
+      "title": "LayerZero unveils trading infrastructure for crypto and tokenized markets, ZRO surges",
+      "link": "https://www.coindesk.com/business/2026/08/25/layerzero-unveils-trading-infrastructure-for-crypto-and-tokenized-markets-zro-surges",
+      "pubDate": "Tue, 25 Aug 2026 16:22:47 +0000"
+    },
     {
       "title": "Bitwise turns Coinbase's tokenized stocks into automated AI, robotics and tech portfolios",
       "link": "https://www.coindesk.com/business/2026/08/25/bitwise-turns-coinbase-s-tokenized-stocks-into-automated-ai-robotics-and-tech-portfolios",
@@ -480,11 +485,6 @@
       "title": "U.S. widens Iran crackdown to encompass crypto, gold, shipping and technology",
       "link": "https://www.coindesk.com/policy/2026/08/25/u-s-widens-iran-crackdown-to-encompass-crypto-gold-shipping-and-technology",
       "pubDate": "Tue, 25 Aug 2026 08:47:18 +0000"
-    },
-    {
-      "title": "Franklin Templeton and Hashkey roll out U.S. tokenized money fund in Asia",
-      "link": "https://www.coindesk.com/business/2026/08/25/franklin-templeton-and-hashkey-roll-out-u-s-tokenized-money-fund-in-asia",
-      "pubDate": "Tue, 25 Aug 2026 07:55:18 +0000"
     }
   ]
 }
