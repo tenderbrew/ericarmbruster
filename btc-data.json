@@ -1,13 +1,13 @@
 {
-  "fetchedAt": "2026-08-25T09:49:01.289Z",
+  "fetchedAt": "2026-08-25T13:08:27.498Z",
   "price": {
-    "usd": 79778,
-    "time": 1787651107
+    "usd": 79058,
+    "time": 1787663110
   },
   "moves": {
-    "d1": 1.0182011993762785,
-    "d7": 23.372308507363915,
-    "d30": 22.152073830116503
+    "d1": 0.10650743839515364,
+    "d7": 22.25886793320435,
+    "d30": 21.049645928217675
   },
   "history90d": [
     {
@@ -372,60 +372,100 @@
     },
     {
       "date": "2026-08-25",
-      "close": 79663.70712014202
+      "close": 79038.01041809448
     }
   ],
   "blocks": [
     {
-      "height": 963983,
-      "id": "00000000000000000000d91f6139f7139cce2c211192e5f2ac1c5eaa2b152226",
-      "timestamp": 1787651214,
-      "txCount": 6057
+      "height": 964003,
+      "id": "000000000000000000004f0efd7c3fce92382de0001e02d49f2d423a373721e0",
+      "timestamp": 1787662540,
+      "txCount": 4253
     },
     {
-      "height": 963982,
-      "id": "0000000000000000000026c1cdd8f51bc3e5e7efb025e6cd3241432cc1b2e0e8",
-      "timestamp": 1787650959,
-      "txCount": 3863
+      "height": 964002,
+      "id": "00000000000000000000da145d9edf61b8d9d1d129b2c426a48cced26a1ef4e0",
+      "timestamp": 1787660675,
+      "txCount": 4496
     },
     {
-      "height": 963981,
-      "id": "0000000000000000000114a2d681f4a9c666852e45f929ec7ad67876249f39c8",
-      "timestamp": 1787650941,
-      "txCount": 4045
+      "height": 964001,
+      "id": "00000000000000000001e6a62cfbd46cb47bbdc3d351074e87c1a14f7397a4f1",
+      "timestamp": 1787660250,
+      "txCount": 3009
     },
     {
-      "height": 963980,
-      "id": "00000000000000000001ad8dc8aee04ac31c060e0b7516a4af70398bdea8ccb6",
-      "timestamp": 1787649067,
-      "txCount": 5924
+      "height": 964000,
+      "id": "00000000000000000000bb91ef607a605f2dc12efd4ff98191364ea230ef257b",
+      "timestamp": 1787659504,
+      "txCount": 3913
     },
     {
-      "height": 963979,
-      "id": "000000000000000000002e93b98cc3481468d2773e001d1d13b98709093d991e",
-      "timestamp": 1787648910,
-      "txCount": 4854
+      "height": 963999,
+      "id": "00000000000000000001ad7529d5761b57f9ac02033b797fed6f1ec3acba2b61",
+      "timestamp": 1787658815,
+      "txCount": 4828
     },
     {
-      "height": 963978,
-      "id": "00000000000000000002302859d15069a49b800eede64fe92331be06befe378a",
-      "timestamp": 1787648741,
-      "txCount": 3065
+      "height": 963998,
+      "id": "00000000000000000000c091be743ad91609e71ba622c510f402fc13355af5a3",
+      "timestamp": 1787657730,
+      "txCount": 5401
     },
     {
-      "height": 963977,
-      "id": "00000000000000000000d7aaaa1ddf5b6a7989e072ce0a524fc7f407c8634ff6",
-      "timestamp": 1787648708,
-      "txCount": 2847
+      "height": 963997,
+      "id": "00000000000000000001dc934ec8c251af62e790005eb8afb84a0df166b90a0a",
+      "timestamp": 1787657280,
+      "txCount": 6156
     },
     {
-      "height": 963976,
-      "id": "000000000000000000021d820b9c8a3308a129dea7b00df1b462906bf154e4ca",
-      "timestamp": 1787648363,
-      "txCount": 3616
+      "height": 963996,
+      "id": "00000000000000000001b104fc868f211a96df591668dcfb54d190f50b4a5e55",
+      "timestamp": 1787656952,
+      "txCount": 1
     }
   ],
   "news": [
+    {
+      "title": "MiCA revolutionised European crypto, and left Poland licking its wounds",
+      "link": "https://www.coindesk.com/opinion/2026/08/24/mica-revolutionised-european-crypto-and-left-poland-licking-its-wounds",
+      "pubDate": "Tue, 25 Aug 2026 13:00:00 +0000"
+    },
+    {
+      "title": "Chainalysis-run sting targets child exploitation networks with aid of Binance, Coinbase",
+      "link": "https://www.coindesk.com/policy/2026/08/24/chainalysis-run-sting-targets-child-exploitation-networks-with-aid-of-binance-coinbase",
+      "pubDate": "Tue, 25 Aug 2026 13:00:00 +0000"
+    },
+    {
+      "title": "A 3% token move just triggered $36 million in Ethereum DeFi liquidations",
+      "link": "https://www.coindesk.com/tech/2026/08/25/a-3-token-move-just-triggered-usd36-million-in-ethereum-defi-liquidations",
+      "pubDate": "Tue, 25 Aug 2026 12:03:55 +0000"
+    },
+    {
+      "title": "Las Vegas businessman convicted in $24 million 'AI supercomputer' crypto Ponzi scheme",
+      "link": "https://www.coindesk.com/policy/2026/08/25/crypto-supercomputer-ponzi-schemer-convicted-faces-up-to-280-years-in-prison",
+      "pubDate": "Tue, 25 Aug 2026 11:46:18 +0000"
+    },
+    {
+      "title": "Bitcoin's surging price faces 1 key level that could signal if the bear market is really over",
+      "link": "https://www.coindesk.com/daybook-us/2026/08/25/bitcoin-s-surging-price-faces-1-key-level-that-could-signal-if-the-bear-market-is-really-over",
+      "pubDate": "Tue, 25 Aug 2026 11:15:02 +0000"
+    },
+    {
+      "title": "A bitcoin short squeeze for the ages as futures open interest collapses",
+      "link": "https://www.coindesk.com/markets/2026/08/25/a-bitcoin-short-squeeze-for-the-ages-as-futures-open-interest-collapses",
+      "pubDate": "Tue, 25 Aug 2026 10:57:02 +0000"
+    },
+    {
+      "title": "Bitcoin extends 7-day advance to roughly 25%",
+      "link": "https://www.coindesk.com/markets/2026/08/25/bitcoin-extends-7-day-advance-to-roughly-25",
+      "pubDate": "Tue, 25 Aug 2026 10:52:03 +0000"
+    },
+    {
+      "title": "Solana ETFs extend growth streak to 5 days after year's biggest inflows",
+      "link": "https://www.coindesk.com/markets/2026/08/25/solana-etfs-extend-growth-streak-to-5-days-after-year-s-biggest-inflows",
+      "pubDate": "Tue, 25 Aug 2026 10:25:32 +0000"
+    },
     {
       "title": "U.S. widens Iran crackdown to encompass crypto, gold, shipping and technology",
       "link": "https://www.coindesk.com/policy/2026/08/25/u-s-widens-iran-crackdown-to-encompass-crypto-gold-shipping-and-technology",
@@ -437,7 +477,7 @@
       "pubDate": "Tue, 25 Aug 2026 07:55:18 +0000"
     },
     {
-      "title": "Live updates: Bitcoin ETFs draw a sixth straight day of inflows as the rally holds above $80,000",
+      "title": "Live updates: Bitcoin rejected at $81,000 as 50-week moving average caps rally",
       "link": "https://www.coindesk.com/business/2026/08/25/live-updates-bitcoin-etfs-draw-a-seventh-straight-day-of-inflows-as-the-rally-holds-above-usd80-000",
       "pubDate": "Tue, 25 Aug 2026 07:40:11 +0000"
     },
@@ -445,46 +485,6 @@
       "title": "Treasury’s bond buyback plan fights the market and heightens the danger, billionaire Druckenmiller says",
       "link": "https://www.coindesk.com/markets/2026/08/25/governments-defending-prices-against-fundamentals-always-lose-billionaire-investor-druckenmiller-says",
       "pubDate": "Tue, 25 Aug 2026 07:32:32 +0000"
-    },
-    {
-      "title": "Monad proposes wallet upgrade that could survive lost keys and quantum attacks",
-      "link": "https://www.coindesk.com/tech/2026/08/25/monad-proposes-wallet-upgrade-that-could-survive-lost-keys-and-quantum-attacks",
-      "pubDate": "Tue, 25 Aug 2026 07:01:49 +0000"
-    },
-    {
-      "title": "Crypto rally spills into dog and cat memecoins as smaller tokens double in a week",
-      "link": "https://www.coindesk.com/markets/2026/08/25/crypto-rally-spills-into-dog-and-cat-memecoins-as-smaller-tokens-double-in-a-week",
-      "pubDate": "Tue, 25 Aug 2026 06:26:29 +0000"
-    },
-    {
-      "title": "Bitcoin traders place $2.9 million bet on a rapid price jump above $82,000",
-      "link": "https://www.coindesk.com/markets/2026/08/25/bitcoin-traders-place-usd2-9-million-bet-on-a-rapid-price-jump-above-usd82-000",
-      "pubDate": "Tue, 25 Aug 2026 05:51:52 +0000"
-    },
-    {
-      "title": "Bitcoin tops $80,000, solana jumps 8% but rally now runs into overbought warning",
-      "link": "https://www.coindesk.com/markets/2026/08/25/bitcoin-tops-usd80-000-solana-jumps-8-but-rally-now-runs-into-overbought-warning",
-      "pubDate": "Tue, 25 Aug 2026 05:25:11 +0000"
-    },
-    {
-      "title": "Bitcoin hits $80,000 for the first time since May as crypto recovery accelerates",
-      "link": "https://www.coindesk.com/markets/2026/08/24/bitcoin-hits-usd80-000-for-the-first-time-since-may-as-crypto-recovery-accelerates",
-      "pubDate": "Tue, 25 Aug 2026 00:55:32 +0000"
-    },
-    {
-      "title": "Bitcoin nears $80,000, but analysts say the next pullback will be key",
-      "link": "https://www.coindesk.com/markets/2026/08/24/bitcoin-nears-usd80-000-but-analysts-say-the-next-pullback-will-be-key",
-      "pubDate": "Mon, 24 Aug 2026 19:36:36 +0000"
-    },
-    {
-      "title": "Crypto political group details list of U.S. congressional allies its backing this year",
-      "link": "https://www.coindesk.com/policy/2026/08/24/crypto-political-group-details-list-of-u-s-congressional-allies-its-backing-this-year",
-      "pubDate": "Mon, 24 Aug 2026 17:30:10 +0000"
-    },
-    {
-      "title": "Coinbase debuts tokenized stocks on Base network, joining race to bring equities on blockchain",
-      "link": "https://www.coindesk.com/business/2026/08/24/coinbase-debuts-tokenized-stocks-on-base-network-joining-race-to-bring-equities-on-blockchain",
-      "pubDate": "Mon, 24 Aug 2026 17:12:35 +0000"
     }
   ]
 }
