@@ -1,13 +1,13 @@
 {
-  "fetchedAt": "2026-08-25T13:08:27.498Z",
+  "fetchedAt": "2026-08-25T15:56:36.469Z",
   "price": {
-    "usd": 79058,
-    "time": 1787663110
+    "usd": 79353,
+    "time": 1787673309
   },
   "moves": {
-    "d1": 0.10650743839515364,
-    "d7": 22.25886793320435,
-    "d30": 21.049645928217675
+    "d1": 0.4800486321304698,
+    "d7": 22.715069279561394,
+    "d30": 21.501335138023435
   },
   "history90d": [
     {
@@ -372,60 +372,70 @@
     },
     {
       "date": "2026-08-25",
-      "close": 79038.01041809448
+      "close": 79331.51511351312
     }
   ],
   "blocks": [
     {
-      "height": 964003,
-      "id": "000000000000000000004f0efd7c3fce92382de0001e02d49f2d423a373721e0",
-      "timestamp": 1787662540,
-      "txCount": 4253
+      "height": 964021,
+      "id": "000000000000000000014d13c5389e6ff35ac47c0eed5d68e72a17ef016fe2dc",
+      "timestamp": 1787672989,
+      "txCount": 4135
     },
     {
-      "height": 964002,
-      "id": "00000000000000000000da145d9edf61b8d9d1d129b2c426a48cced26a1ef4e0",
-      "timestamp": 1787660675,
-      "txCount": 4496
+      "height": 964020,
+      "id": "00000000000000000001e4788abb370dcac889e30f7d28a1fd64141222b03263",
+      "timestamp": 1787672704,
+      "txCount": 3695
     },
     {
-      "height": 964001,
-      "id": "00000000000000000001e6a62cfbd46cb47bbdc3d351074e87c1a14f7397a4f1",
-      "timestamp": 1787660250,
-      "txCount": 3009
+      "height": 964019,
+      "id": "00000000000000000000e2d8a69486a34db04c06f0ba306f493cd3bde635a02b",
+      "timestamp": 1787671701,
+      "txCount": 4712
     },
     {
-      "height": 964000,
-      "id": "00000000000000000000bb91ef607a605f2dc12efd4ff98191364ea230ef257b",
-      "timestamp": 1787659504,
-      "txCount": 3913
+      "height": 964018,
+      "id": "00000000000000000000e096c3e5acf41b663485999ef365584f97c99f6818a3",
+      "timestamp": 1787671299,
+      "txCount": 3428
     },
     {
-      "height": 963999,
-      "id": "00000000000000000001ad7529d5761b57f9ac02033b797fed6f1ec3acba2b61",
-      "timestamp": 1787658815,
-      "txCount": 4828
+      "height": 964017,
+      "id": "00000000000000000000dc312d5eaf4f29b97afea40ce35901b1564e68776b17",
+      "timestamp": 1787670141,
+      "txCount": 4577
     },
     {
-      "height": 963998,
-      "id": "00000000000000000000c091be743ad91609e71ba622c510f402fc13355af5a3",
-      "timestamp": 1787657730,
-      "txCount": 5401
+      "height": 964016,
+      "id": "00000000000000000000eb4946841c09276d55e3c04693d70ef2680bf71b959c",
+      "timestamp": 1787669472,
+      "txCount": 4108
     },
     {
-      "height": 963997,
-      "id": "00000000000000000001dc934ec8c251af62e790005eb8afb84a0df166b90a0a",
-      "timestamp": 1787657280,
-      "txCount": 6156
+      "height": 964015,
+      "id": "000000000000000000009a724cfff67be91deaae3a331a6b6beec168f0dee250",
+      "timestamp": 1787669096,
+      "txCount": 4167
     },
     {
-      "height": 963996,
-      "id": "00000000000000000001b104fc868f211a96df591668dcfb54d190f50b4a5e55",
-      "timestamp": 1787656952,
-      "txCount": 1
+      "height": 964014,
+      "id": "00000000000000000000ebcbc451491625dee9e4189fd2da54e84ab8a92c9a94",
+      "timestamp": 1787668779,
+      "txCount": 4172
     }
   ],
   "news": [
+    {
+      "title": "Bitwise turns Coinbase's tokenized stocks into automated AI, robotics and tech portfolios",
+      "link": "https://www.coindesk.com/business/2026/08/25/bitwise-turns-coinbase-s-tokenized-stocks-into-automated-ai-robotics-and-tech-portfolios",
+      "pubDate": "Tue, 25 Aug 2026 14:50:22 +0000"
+    },
+    {
+      "title": "Crypto custody firm Copper has potential buyers. But offers are way below its $500 million asking price",
+      "link": "https://www.coindesk.com/business/2026/08/25/crypto-custody-firm-copper-has-potential-buyers-but-offers-are-way-below-its-usd500-million-asking-price",
+      "pubDate": "Tue, 25 Aug 2026 13:48:50 +0000"
+    },
     {
       "title": "MiCA revolutionised European crypto, and left Poland licking its wounds",
       "link": "https://www.coindesk.com/opinion/2026/08/24/mica-revolutionised-european-crypto-and-left-poland-licking-its-wounds",
@@ -475,16 +485,6 @@
       "title": "Franklin Templeton and Hashkey roll out U.S. tokenized money fund in Asia",
       "link": "https://www.coindesk.com/business/2026/08/25/franklin-templeton-and-hashkey-roll-out-u-s-tokenized-money-fund-in-asia",
       "pubDate": "Tue, 25 Aug 2026 07:55:18 +0000"
-    },
-    {
-      "title": "Live updates: Bitcoin rejected at $81,000 as 50-week moving average caps rally",
-      "link": "https://www.coindesk.com/business/2026/08/25/live-updates-bitcoin-etfs-draw-a-seventh-straight-day-of-inflows-as-the-rally-holds-above-usd80-000",
-      "pubDate": "Tue, 25 Aug 2026 07:40:11 +0000"
-    },
-    {
-      "title": "Treasury’s bond buyback plan fights the market and heightens the danger, billionaire Druckenmiller says",
-      "link": "https://www.coindesk.com/markets/2026/08/25/governments-defending-prices-against-fundamentals-always-lose-billionaire-investor-druckenmiller-says",
-      "pubDate": "Tue, 25 Aug 2026 07:32:32 +0000"
     }
   ]
 }
