@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-08-24T18:52:57.492Z",
+  "fetchedAt": "2026-08-25T01:46:14.632Z",
   "indicators": {
     "UNRATE": {
       "latest": {
@@ -63,11 +63,11 @@
     },
     "T10YIE": {
       "latest": {
-        "date": "2026-08-21",
-        "value": 2.34
+        "date": "2026-08-24",
+        "value": 2.32
       },
       "previous": {
-        "date": "2026-08-20",
+        "date": "2026-08-21",
         "value": 2.34
       }
     },
@@ -123,41 +123,41 @@
     },
     "DGS2": {
       "latest": {
-        "date": "2026-08-20",
-        "value": 4.19
+        "date": "2026-08-21",
+        "value": 4.24
       },
       "previous": {
-        "date": "2026-08-19",
+        "date": "2026-08-20",
         "value": 4.19
       }
     },
     "DGS10": {
       "latest": {
-        "date": "2026-08-20",
-        "value": 4.69
+        "date": "2026-08-21",
+        "value": 4.74
       },
       "previous": {
-        "date": "2026-08-19",
-        "value": 4.65
+        "date": "2026-08-20",
+        "value": 4.69
       }
     },
     "T10Y2Y": {
       "latest": {
-        "date": "2026-08-21",
-        "value": 0.5
+        "date": "2026-08-24",
+        "value": 0.46
       },
       "previous": {
-        "date": "2026-08-20",
+        "date": "2026-08-21",
         "value": 0.5
       }
     },
     "DFII10": {
       "latest": {
-        "date": "2026-08-20",
-        "value": 2.35
+        "date": "2026-08-21",
+        "value": 2.4
       },
       "previous": {
-        "date": "2026-08-19",
+        "date": "2026-08-20",
         "value": 2.35
       }
     },
@@ -233,12 +233,12 @@
     },
     "DTWEXBGS": {
       "latest": {
-        "date": "2026-08-14",
-        "value": 118.9028
+        "date": "2026-08-21",
+        "value": 118.0628
       },
       "previous": {
-        "date": "2026-08-13",
-        "value": 119.1848
+        "date": "2026-08-20",
+        "value": 118.2548
       }
     },
     "PERMIT": {
@@ -319,6 +319,12 @@
       "kind": "Mises Wire"
     },
     {
+      "title": "Rothbard vs. the Conservatives on the American and French Revolutions",
+      "link": "https://mises.org/mises-wire/rothbard-vs-conservatives-american-and-french-revolutions",
+      "pubDate": "Mon, 24 Aug 2026 04:00:00 CDT",
+      "kind": "Mises Wire"
+    },
+    {
       "title": "Austrian Economics, Gold, and the Fed’s Confidence Game",
       "link": "https://mises.org/podcasts/minor-issues/austrian-economics-gold-and-feds-confidence-game",
       "pubDate": "Sat, 22 Aug 2026 06:00:00 CDT",
@@ -353,12 +359,6 @@
       "link": "https://mises.org/podcasts/human-action-podcast/patrick-newman-rise-corporatist-state",
       "pubDate": "Fri, 21 Aug 2026 12:00:00 CDT",
       "kind": "Podcast"
-    },
-    {
-      "title": "The Statist Peril of Techno-Asset Inflation",
-      "link": "https://mises.org/mises-wire/statist-peril-techno-asset-inflation",
-      "pubDate": "Fri, 21 Aug 2026 11:00:00 CDT",
-      "kind": "Mises Wire"
     }
   ]
 }
