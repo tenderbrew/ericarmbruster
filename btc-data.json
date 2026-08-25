@@ -1,13 +1,13 @@
 {
-  "fetchedAt": "2026-08-25T18:54:40.904Z",
+  "fetchedAt": "2026-08-25T21:39:50.289Z",
   "price": {
-    "usd": 79199,
-    "time": 1787683809
+    "usd": 78462,
+    "time": 1787693712
   },
   "moves": {
-    "d1": 0.28504746658728486,
-    "d7": 22.4769167123106,
-    "d30": 21.265538059006197
+    "d1": -0.6481723970836462,
+    "d7": 21.337186569038934,
+    "d30": 20.137080609423652
   },
   "history90d": [
     {
@@ -372,60 +372,65 @@
     },
     {
       "date": "2026-08-25",
-      "close": 79167.96731510577
+      "close": 78533.48178459756
     }
   ],
   "blocks": [
     {
-      "height": 964040,
-      "id": "000000000000000000016148934eb72f7e576653902f400beaf44e8c0934b77c",
-      "timestamp": 1787683479,
-      "txCount": 4018
+      "height": 964055,
+      "id": "0000000000000000000199303360e005541bac3de9d24bb4d6b2867077b40faf",
+      "timestamp": 1787694192,
+      "txCount": 4492
     },
     {
-      "height": 964039,
-      "id": "000000000000000000007c335d110297146a68ecda8a8b134866b37b530376df",
-      "timestamp": 1787682340,
-      "txCount": 4566
+      "height": 964054,
+      "id": "000000000000000000006ee3e088829ca348b041e71754fe3f66bca23f4b7cbc",
+      "timestamp": 1787692551,
+      "txCount": 4123
     },
     {
-      "height": 964038,
-      "id": "00000000000000000000311382fad73c696b35b15a708f3bd3d1275179d8dfea",
-      "timestamp": 1787681374,
-      "txCount": 5702
+      "height": 964053,
+      "id": "0000000000000000000066df7714308317fc236fcdeac0e57c7670a16a32bc96",
+      "timestamp": 1787691987,
+      "txCount": 3124
     },
     {
-      "height": 964037,
-      "id": "000000000000000000017a6264e9629a3c1db7c4bae63843cf805baed1df1858",
-      "timestamp": 1787681339,
-      "txCount": 2934
+      "height": 964052,
+      "id": "000000000000000000000a521de12201ce179cf6e2d3bf785684e8ff84ca5aab",
+      "timestamp": 1787691681,
+      "txCount": 4408
     },
     {
-      "height": 964036,
-      "id": "00000000000000000000fef3e58cfe4b81276fcd4d144926808ab0242ead9066",
-      "timestamp": 1787681174,
-      "txCount": 3950
+      "height": 964051,
+      "id": "00000000000000000000ef39902a3eee508b29422090ae5d6417142c38854fff",
+      "timestamp": 1787691342,
+      "txCount": 3701
     },
     {
-      "height": 964035,
-      "id": "000000000000000000006352a0e391bc12f6c32573b64580392cb2379910e112",
-      "timestamp": 1787680284,
-      "txCount": 4462
+      "height": 964050,
+      "id": "00000000000000000000b3f2b230bddf6582ae46a1a2b1fdb1a4d57691207469",
+      "timestamp": 1787689496,
+      "txCount": 4020
     },
     {
-      "height": 964034,
-      "id": "00000000000000000001a1697cac55491cc84a024a60e176fd7d782a60ffc913",
-      "timestamp": 1787679929,
-      "txCount": 4015
+      "height": 964049,
+      "id": "000000000000000000022988eca7e1d58b06747145859764895053127d9db054",
+      "timestamp": 1787688494,
+      "txCount": 4744
     },
     {
-      "height": 964033,
-      "id": "000000000000000000021477de8af72e4deb4ad164ef617c771f403f96843202",
-      "timestamp": 1787678193,
-      "txCount": 4413
+      "height": 964048,
+      "id": "0000000000000000000177203f1f48ea66dfa19dc673d512ed7fd4fcb7fb08a3",
+      "timestamp": 1787688409,
+      "txCount": 4148
     }
   ],
   "news": [
+    {
+      "title": "South Korea trade giant POSCO brings trade receivables to Avalanche in latest tokenization move",
+      "link": "https://www.coindesk.com/business/2026/08/25/south-korea-trade-giant-posco-brings-trade-receivables-to-avalanche-in-latest-tokenization-move",
+      "pubDate": "Tue, 25 Aug 2026 19:40:00 +0000"
+    },
     {
       "title": "LayerZero unveils trading infrastructure for crypto and tokenized markets, ZRO surges",
       "link": "https://www.coindesk.com/business/2026/08/25/layerzero-unveils-trading-infrastructure-for-crypto-and-tokenized-markets-zro-surges",
@@ -480,11 +485,6 @@
       "title": "Solana ETFs extend growth streak to 5 days after year's biggest inflows",
       "link": "https://www.coindesk.com/markets/2026/08/25/solana-etfs-extend-growth-streak-to-5-days-after-year-s-biggest-inflows",
       "pubDate": "Tue, 25 Aug 2026 10:25:32 +0000"
-    },
-    {
-      "title": "U.S. widens Iran crackdown to encompass crypto, gold, shipping and technology",
-      "link": "https://www.coindesk.com/policy/2026/08/25/u-s-widens-iran-crackdown-to-encompass-crypto-gold-shipping-and-technology",
-      "pubDate": "Tue, 25 Aug 2026 08:47:18 +0000"
     }
   ]
 }
