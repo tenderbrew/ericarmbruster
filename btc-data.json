@@ -1,13 +1,13 @@
 {
-  "fetchedAt": "2026-08-26T16:33:11.836Z",
+  "fetchedAt": "2026-08-26T19:59:01.334Z",
   "price": {
-    "usd": 78057,
-    "time": 1787761810
+    "usd": 78457,
+    "time": 1787774107
   },
   "moves": {
-    "d1": -0.5785581165958731,
-    "d7": 12.444189551476924,
-    "d30": 22.5890639999631
+    "d1": -0.06907688168598103,
+    "d7": 13.02040534020299,
+    "d30": 23.217266795356007
   },
   "history90d": [
     {
@@ -372,62 +372,62 @@
     },
     {
       "date": "2026-08-26",
-      "close": 78024.81091604111
+      "close": 78464.5806311361
     }
   ],
   "blocks": [
     {
-      "height": 964170,
-      "id": "000000000000000000006c676f878ef344dfd2a1070983324b6f978cd84682fa",
-      "timestamp": 1787761592,
-      "txCount": 4724
+      "height": 964189,
+      "id": "00000000000000000001348f3e4b8927da5d0ea6146127eeaf0763cb337436f6",
+      "timestamp": 1787773662,
+      "txCount": 4456
     },
     {
-      "height": 964169,
-      "id": "0000000000000000000160673f811b2b137f9aa294e05b4f2fe65860199a7b9b",
-      "timestamp": 1787761275,
-      "txCount": 5438
+      "height": 964188,
+      "id": "00000000000000000001847d22363f46416bab371377e213c3035d8453c8fb21",
+      "timestamp": 1787771913,
+      "txCount": 5647
     },
     {
-      "height": 964168,
-      "id": "00000000000000000001e95b21a0e13dff4a093b7bd96bf2b7f2e8f2de4ed9e3",
-      "timestamp": 1787761017,
-      "txCount": 4480
+      "height": 964187,
+      "id": "000000000000000000017684e8765be7293ad8e38a3aa15fd8085490e9652ff2",
+      "timestamp": 1787771625,
+      "txCount": 4932
     },
     {
-      "height": 964167,
-      "id": "00000000000000000001b642573e539134c2435ee3b7381ec59b64efcd2ebdd0",
-      "timestamp": 1787760671,
-      "txCount": 4145
+      "height": 964186,
+      "id": "000000000000000000000034a6ad3070a89f758de7849e3a00b1eb15e0eed1aa",
+      "timestamp": 1787771377,
+      "txCount": 6002
     },
     {
-      "height": 964166,
-      "id": "00000000000000000001bdecb170006f7aa94f616f0e3d9b54415a9eda53bf5e",
-      "timestamp": 1787759404,
-      "txCount": 1008
+      "height": 964185,
+      "id": "0000000000000000000131919206decda50cc26cbeedf725befecebe42d901f1",
+      "timestamp": 1787771157,
+      "txCount": 4767
     },
     {
-      "height": 964165,
-      "id": "00000000000000000001368f1d334ffa3ddbf3822298a269455d1271adb6359e",
-      "timestamp": 1787759169,
-      "txCount": 4503
+      "height": 964184,
+      "id": "00000000000000000001af6f5a90c17ff517d8466270facc4d92bea9dd1c7f23",
+      "timestamp": 1787771109,
+      "txCount": 3686
     },
     {
-      "height": 964164,
-      "id": "0000000000000000000210afc5c4e6799e600ea2d5df582190b4cf06b12dd884",
-      "timestamp": 1787758536,
-      "txCount": 6649
+      "height": 964183,
+      "id": "00000000000000000001587c098dcf048015acdb5d09c60565861a4bbb3cce92",
+      "timestamp": 1787770954,
+      "txCount": 3106
     },
     {
-      "height": 964163,
-      "id": "00000000000000000000806ee1c85e736576cf9a61d4e375c3085250a9f841bc",
-      "timestamp": 1787758496,
-      "txCount": 5473
+      "height": 964182,
+      "id": "00000000000000000001eb0578907ce85883733a12c340b3a30591695061fe2e",
+      "timestamp": 1787770810,
+      "txCount": 4431
     }
   ],
   "news": [
     {
-      "title": "Shinhan and Visa team up to test stablecoin issuance and B2B settlements in South Korea",
+      "title": "South Korea’s top financial conglomerate team up with Visa to test stablecoin issuance and B2B settlements",
       "link": "https://www.coindesk.com/business/2026/08/26/south-korea-s-shinhan-financial-joins-visa-to-build-stablecoin-infrastructure",
       "pubDate": "Wed, 26 Aug 2026 15:15:13 +0000"
     },
@@ -482,7 +482,7 @@
       "pubDate": "Wed, 26 Aug 2026 09:06:00 +0000"
     },
     {
-      "title": "Live updates: Bitcoin adds to early losses, slipping below $78,000",
+      "title": "Live updates: Bitcoin adds to early losses, slipping to $78,000",
       "link": "https://www.coindesk.com/business/2026/08/26/live-updates-zcash-pulls-back-8-as-its-grayscale-etf-goes-live-capping-a-60-rally",
       "pubDate": "Wed, 26 Aug 2026 08:51:18 +0000"
     }
