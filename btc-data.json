@@ -1,13 +1,13 @@
 {
-  "fetchedAt": "2026-08-26T09:54:16.065Z",
+  "fetchedAt": "2026-08-26T13:12:49.194Z",
   "price": {
-    "usd": 78413,
-    "time": 1787737809
+    "usd": 78091,
+    "time": 1787749811
   },
   "moves": {
-    "d1": -0.12511981752606482,
-    "d7": 12.95702160344312,
-    "d30": 23.148164487862786
+    "d1": -0.5352522116285341,
+    "d7": 12.493167893518642,
+    "d30": 22.6424612375715
   },
   "history90d": [
     {
@@ -372,67 +372,102 @@
     },
     {
       "date": "2026-08-26",
-      "close": 78446.07287957096
+      "close": 78087.60776552279
     }
   ],
   "blocks": [
     {
-      "height": 964120,
-      "id": "000000000000000000022e845cfc34cf0e8ccb368987c4c3b79bc4650e9b4864",
-      "timestamp": 1787736701,
-      "txCount": 5881
+      "height": 964136,
+      "id": "00000000000000000001d00b87646005fbd1b2694c910c6bdc5a66f4f64fc56c",
+      "timestamp": 1787748603,
+      "txCount": 4232
     },
     {
-      "height": 964119,
-      "id": "000000000000000000007608b312df6f2782e6eaf7bcbde12c2daaab0eca3f03",
-      "timestamp": 1787736573,
-      "txCount": 4991
+      "height": 964135,
+      "id": "00000000000000000001966a5efe016ec63be1cac8b78ff14ca0cde05146ba06",
+      "timestamp": 1787748488,
+      "txCount": 4177
     },
     {
-      "height": 964118,
-      "id": "00000000000000000001c9e171210ec7f2ef952942077ad63245d05669226ccb",
-      "timestamp": 1787736525,
-      "txCount": 6161
+      "height": 964134,
+      "id": "000000000000000000004455af98b6f06cb90876e1145c55b4d80f0bb57cfc3f",
+      "timestamp": 1787747153,
+      "txCount": 4733
     },
     {
-      "height": 964117,
-      "id": "000000000000000000017b60c1b8124fcda81b8b5a320190b2e8d6ad1514a03e",
-      "timestamp": 1787736269,
-      "txCount": 3734
+      "height": 964133,
+      "id": "00000000000000000001ea5d5e78d805119a3cb71527dedd29b71db0422049f9",
+      "timestamp": 1787746762,
+      "txCount": 4197
     },
     {
-      "height": 964116,
-      "id": "00000000000000000000ee850d95dde3fc8e328d62f08d519b22137c1a966307",
-      "timestamp": 1787736103,
-      "txCount": 3950
+      "height": 964132,
+      "id": "00000000000000000001b7c031ba8add8b8a6b3ad07fe8a0798647e21b198624",
+      "timestamp": 1787746343,
+      "txCount": 3987
     },
     {
-      "height": 964115,
-      "id": "000000000000000000006aee3875813751685f01c69ee7f5169138ff07bf716c",
-      "timestamp": 1787735405,
-      "txCount": 3349
+      "height": 964131,
+      "id": "000000000000000000004123932cff10b5d33d69e49b4eb10d1d0890ef30ad38",
+      "timestamp": 1787745481,
+      "txCount": 4383
     },
     {
-      "height": 964114,
-      "id": "00000000000000000001fa081cb02efe03c0cbf6672d8ee50f93205192f0fd2b",
-      "timestamp": 1787735233,
-      "txCount": 2980
+      "height": 964130,
+      "id": "00000000000000000001331cb74d993e67e6f4d164ca7136cce113b7f15c31cd",
+      "timestamp": 1787745068,
+      "txCount": 3990
     },
     {
-      "height": 964113,
-      "id": "00000000000000000000a2115fffcff8b18a4dc8d8357eb373fb23c5b6027646",
-      "timestamp": 1787733742,
-      "txCount": 3589
+      "height": 964129,
+      "id": "00000000000000000000bc4b8dbaec1c5a9aee41408ee7dd31580197002d8fc5",
+      "timestamp": 1787744380,
+      "txCount": 4576
     }
   ],
   "news": [
     {
-      "title": "Japan targets early 2030s launch for blockchain-based stock and bond settlement system",
+      "title": "The evidence doesn't support the banks' case against stablecoin rewards",
+      "link": "https://www.coindesk.com/opinion/2026/08/25/the-evidence-doesn-t-support-the-banks-case-against-stablecoin-rewards",
+      "pubDate": "Wed, 26 Aug 2026 13:00:00 +0000"
+    },
+    {
+      "title": "Dallas Fed warns tokenized deposits could strip $700 billion from U.S. banks' lending capacity",
+      "link": "https://www.coindesk.com/business/2026/08/26/dallas-fed-warns-tokenized-deposits-could-strip-usd700-billion-from-u-s-banks-lending-capacity",
+      "pubDate": "Wed, 26 Aug 2026 11:46:19 +0000"
+    },
+    {
+      "title": "ECB claims digital euro will offer 'maximum level of privacy' amid surveillance fears",
+      "link": "https://www.coindesk.com/policy/2026/08/26/the-digital-euro-will-offer-more-privacy-than-regular-bank-transfers-ecb-says",
+      "pubDate": "Wed, 26 Aug 2026 11:14:16 +0000"
+    },
+    {
+      "title": "The 3 catalysts that could define bitcoin's next move",
+      "link": "https://www.coindesk.com/daybook-us/2026/08/26/the-3-catalysts-that-could-define-bitcoin-s-next-move",
+      "pubDate": "Wed, 26 Aug 2026 11:02:33 +0000"
+    },
+    {
+      "title": "Bitcoin takes a breather after adding 23% in 7 days as ETF demand holds steady",
+      "link": "https://www.coindesk.com/markets/2026/08/26/bitcoin-takes-a-breather-after-adding-23-in-7-days-as-etf-demand-holds-steady",
+      "pubDate": "Wed, 26 Aug 2026 10:45:29 +0000"
+    },
+    {
+      "title": "Strategy cuts net leverage to near zero as cash nearly matches convertible debt",
+      "link": "https://www.coindesk.com/markets/2026/08/26/strategy-cuts-net-leverage-to-near-zero-as-cash-nearly-matches-convertible-debt",
+      "pubDate": "Wed, 26 Aug 2026 10:42:52 +0000"
+    },
+    {
+      "title": "Euro stablecoins get a mainstream push as Revolut begins rolling out EURR in Europe",
+      "link": "https://www.coindesk.com/business/2026/08/26/euro-stablecoins-get-a-mainstream-push-as-revolut-begins-rolling-out-eurr-in-europe",
+      "pubDate": "Wed, 26 Aug 2026 10:03:43 +0000"
+    },
+    {
+      "title": "Japan to start stocks and bonds tokenization development plans this year",
       "link": "https://www.coindesk.com/business/2026/08/26/japan-plans-blockchain-settlement-network-for-stocks-and-government-bonds",
       "pubDate": "Wed, 26 Aug 2026 09:06:00 +0000"
     },
     {
-      "title": "Live updates: Zcash pulls back 8% as its Grayscale ETF goes live, capping a 60% rally",
+      "title": "Live updates: Bitcoin flat near $78,500 ahead Nvidia earnings",
       "link": "https://www.coindesk.com/business/2026/08/26/live-updates-zcash-pulls-back-8-as-its-grayscale-etf-goes-live-capping-a-60-rally",
       "pubDate": "Wed, 26 Aug 2026 08:51:18 +0000"
     },
@@ -450,41 +485,6 @@
       "title": "XRP’s 44% rally brings leverage back, raising risk of sharper pullback",
       "link": "https://www.coindesk.com/markets/2026/08/26/xrp-s-44-rally-brings-leverage-back-raising-risk-of-sharper-pullback",
       "pubDate": "Wed, 26 Aug 2026 05:16:32 +0000"
-    },
-    {
-      "title": "Crypto greed gauge hits highest since just before October’s $19 billion wipeout",
-      "link": "https://www.coindesk.com/markets/2026/08/26/crypto-greed-gauge-hits-highest-since-just-before-october-s-usd19-billion-wipeout",
-      "pubDate": "Wed, 26 Aug 2026 04:51:49 +0000"
-    },
-    {
-      "title": "Bitcoin holds $79,000, ether, solana slip as traders bank a week of gains",
-      "link": "https://www.coindesk.com/markets/2026/08/26/bitcoin-holds-usd79-000-ether-solana-slip-4-as-traders-bank-a-week-of-gains",
-      "pubDate": "Wed, 26 Aug 2026 04:13:10 +0000"
-    },
-    {
-      "title": "U.S. state banking associations plan to launch their own nationwide blockchain network",
-      "link": "https://www.coindesk.com/policy/2026/08/25/u-s-state-banking-associations-plan-to-launch-their-own-nationwide-blockchain-network",
-      "pubDate": "Tue, 25 Aug 2026 21:56:57 +0000"
-    },
-    {
-      "title": "Zerohash back for second effort at OCC trust bank charter",
-      "link": "https://www.coindesk.com/policy/2026/08/25/zerohash-back-for-second-effort-at-occ-trust-bank-charter",
-      "pubDate": "Tue, 25 Aug 2026 21:38:28 +0000"
-    },
-    {
-      "title": "South Korea trade giant POSCO brings trade receivables to Avalanche in latest tokenization move",
-      "link": "https://www.coindesk.com/business/2026/08/25/south-korea-trade-giant-posco-brings-trade-receivables-to-avalanche-in-latest-tokenization-move",
-      "pubDate": "Tue, 25 Aug 2026 19:40:00 +0000"
-    },
-    {
-      "title": "LayerZero unveils trading infrastructure for crypto and tokenized markets, ZRO surges",
-      "link": "https://www.coindesk.com/business/2026/08/25/layerzero-unveils-trading-infrastructure-for-crypto-and-tokenized-markets-zro-surges",
-      "pubDate": "Tue, 25 Aug 2026 16:22:47 +0000"
-    },
-    {
-      "title": "Bitwise turns Coinbase's tokenized stocks into automated AI, robotics and tech portfolios",
-      "link": "https://www.coindesk.com/business/2026/08/25/bitwise-turns-coinbase-s-tokenized-stocks-into-automated-ai-robotics-and-tech-portfolios",
-      "pubDate": "Tue, 25 Aug 2026 14:50:22 +0000"
     }
   ]
 }
