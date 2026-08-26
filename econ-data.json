@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-08-25T18:51:50.616Z",
+  "fetchedAt": "2026-08-26T01:52:02.999Z",
   "indicators": {
     "UNRATE": {
       "latest": {
@@ -63,12 +63,12 @@
     },
     "T10YIE": {
       "latest": {
-        "date": "2026-08-24",
+        "date": "2026-08-25",
         "value": 2.32
       },
       "previous": {
-        "date": "2026-08-21",
-        "value": 2.34
+        "date": "2026-08-24",
+        "value": 2.32
       }
     },
     "PCE": {
@@ -123,42 +123,42 @@
     },
     "DGS2": {
       "latest": {
-        "date": "2026-08-21",
+        "date": "2026-08-24",
         "value": 4.24
       },
       "previous": {
-        "date": "2026-08-20",
-        "value": 4.19
+        "date": "2026-08-21",
+        "value": 4.24
       }
     },
     "DGS10": {
       "latest": {
-        "date": "2026-08-21",
-        "value": 4.74
+        "date": "2026-08-24",
+        "value": 4.7
       },
       "previous": {
-        "date": "2026-08-20",
-        "value": 4.69
+        "date": "2026-08-21",
+        "value": 4.74
       }
     },
     "T10Y2Y": {
       "latest": {
-        "date": "2026-08-24",
-        "value": 0.46
+        "date": "2026-08-25",
+        "value": 0.47
       },
       "previous": {
-        "date": "2026-08-21",
-        "value": 0.5
+        "date": "2026-08-24",
+        "value": 0.46
       }
     },
     "DFII10": {
       "latest": {
-        "date": "2026-08-21",
-        "value": 2.4
+        "date": "2026-08-24",
+        "value": 2.38
       },
       "previous": {
-        "date": "2026-08-20",
-        "value": 2.35
+        "date": "2026-08-21",
+        "value": 2.4
       }
     },
     "BAMLH0A0HYM2": {
@@ -313,6 +313,12 @@
       "kind": "Mises Wire"
     },
     {
+      "title": "The Misesian, vol. 3, no. 4, 2026",
+      "link": "https://mises.org/library/periodical/misesian-vol-3-no-4-2026",
+      "pubDate": "Tue, 25 Aug 2026 11:00:00 CDT",
+      "kind": "Article"
+    },
+    {
       "title": "The Importance of Teleology in Understanding Economic Inequality",
       "link": "https://mises.org/podcasts/audio-mises-wire/importance-teleology-understanding-economic-inequality",
       "pubDate": "Tue, 25 Aug 2026 10:18:48 CDT",
@@ -325,14 +331,8 @@
       "kind": "Article"
     },
     {
-      "title": "From the Editor—July 2026",
-      "link": "https://mises.org/misesian/editor-july-2026",
-      "pubDate": "Tue, 25 Aug 2026 10:00:00 CDT",
-      "kind": "Article"
-    },
-    {
-      "title": "None Dare Call It Conspiracy",
-      "link": "https://mises.org/misesian/none-dare-call-it-conspiracy",
+      "title": "A Declaratory Judgment",
+      "link": "https://mises.org/misesian/declaratory-judgment",
       "pubDate": "Tue, 25 Aug 2026 10:00:00 CDT",
       "kind": "Article"
     },
@@ -343,8 +343,14 @@
       "kind": "Article"
     },
     {
-      "title": "The 250th Anniversary of the Declaration of Independence",
-      "link": "https://mises.org/misesian/250th-anniversary-declaration-independence",
+      "title": "From the Editor—July / August 2026",
+      "link": "https://mises.org/misesian/editor-july-august-2026",
+      "pubDate": "Tue, 25 Aug 2026 10:00:00 CDT",
+      "kind": "Article"
+    },
+    {
+      "title": "None Dare Call It Conspiracy",
+      "link": "https://mises.org/misesian/none-dare-call-it-conspiracy",
       "pubDate": "Tue, 25 Aug 2026 10:00:00 CDT",
       "kind": "Article"
     },
@@ -353,12 +359,6 @@
       "link": "https://mises.org/misesian/40th-anniversary-mises-university",
       "pubDate": "Tue, 25 Aug 2026 10:00:00 CDT",
       "kind": "Article"
-    },
-    {
-      "title": "Rothbard vs. the Conservatives on the American and French Revolutions",
-      "link": "https://mises.org/podcasts/audio-mises-wire/rothbard-vs-conservatives-american-and-french-revolutions",
-      "pubDate": "Tue, 25 Aug 2026 08:31:08 CDT",
-      "kind": "Podcast"
     }
   ]
 }
