@@ -1,13 +1,13 @@
 {
-  "fetchedAt": "2026-08-26T13:12:49.194Z",
+  "fetchedAt": "2026-08-26T16:33:11.836Z",
   "price": {
-    "usd": 78091,
-    "time": 1787749811
+    "usd": 78057,
+    "time": 1787761810
   },
   "moves": {
-    "d1": -0.5352522116285341,
-    "d7": 12.493167893518642,
-    "d30": 22.6424612375715
+    "d1": -0.5785581165958731,
+    "d7": 12.444189551476924,
+    "d30": 22.5890639999631
   },
   "history90d": [
     {
@@ -372,60 +372,75 @@
     },
     {
       "date": "2026-08-26",
-      "close": 78087.60776552279
+      "close": 78024.81091604111
     }
   ],
   "blocks": [
     {
-      "height": 964136,
-      "id": "00000000000000000001d00b87646005fbd1b2694c910c6bdc5a66f4f64fc56c",
-      "timestamp": 1787748603,
-      "txCount": 4232
+      "height": 964170,
+      "id": "000000000000000000006c676f878ef344dfd2a1070983324b6f978cd84682fa",
+      "timestamp": 1787761592,
+      "txCount": 4724
     },
     {
-      "height": 964135,
-      "id": "00000000000000000001966a5efe016ec63be1cac8b78ff14ca0cde05146ba06",
-      "timestamp": 1787748488,
-      "txCount": 4177
+      "height": 964169,
+      "id": "0000000000000000000160673f811b2b137f9aa294e05b4f2fe65860199a7b9b",
+      "timestamp": 1787761275,
+      "txCount": 5438
     },
     {
-      "height": 964134,
-      "id": "000000000000000000004455af98b6f06cb90876e1145c55b4d80f0bb57cfc3f",
-      "timestamp": 1787747153,
-      "txCount": 4733
+      "height": 964168,
+      "id": "00000000000000000001e95b21a0e13dff4a093b7bd96bf2b7f2e8f2de4ed9e3",
+      "timestamp": 1787761017,
+      "txCount": 4480
     },
     {
-      "height": 964133,
-      "id": "00000000000000000001ea5d5e78d805119a3cb71527dedd29b71db0422049f9",
-      "timestamp": 1787746762,
-      "txCount": 4197
+      "height": 964167,
+      "id": "00000000000000000001b642573e539134c2435ee3b7381ec59b64efcd2ebdd0",
+      "timestamp": 1787760671,
+      "txCount": 4145
     },
     {
-      "height": 964132,
-      "id": "00000000000000000001b7c031ba8add8b8a6b3ad07fe8a0798647e21b198624",
-      "timestamp": 1787746343,
-      "txCount": 3987
+      "height": 964166,
+      "id": "00000000000000000001bdecb170006f7aa94f616f0e3d9b54415a9eda53bf5e",
+      "timestamp": 1787759404,
+      "txCount": 1008
     },
     {
-      "height": 964131,
-      "id": "000000000000000000004123932cff10b5d33d69e49b4eb10d1d0890ef30ad38",
-      "timestamp": 1787745481,
-      "txCount": 4383
+      "height": 964165,
+      "id": "00000000000000000001368f1d334ffa3ddbf3822298a269455d1271adb6359e",
+      "timestamp": 1787759169,
+      "txCount": 4503
     },
     {
-      "height": 964130,
-      "id": "00000000000000000001331cb74d993e67e6f4d164ca7136cce113b7f15c31cd",
-      "timestamp": 1787745068,
-      "txCount": 3990
+      "height": 964164,
+      "id": "0000000000000000000210afc5c4e6799e600ea2d5df582190b4cf06b12dd884",
+      "timestamp": 1787758536,
+      "txCount": 6649
     },
     {
-      "height": 964129,
-      "id": "00000000000000000000bc4b8dbaec1c5a9aee41408ee7dd31580197002d8fc5",
-      "timestamp": 1787744380,
-      "txCount": 4576
+      "height": 964163,
+      "id": "00000000000000000000806ee1c85e736576cf9a61d4e375c3085250a9f841bc",
+      "timestamp": 1787758496,
+      "txCount": 5473
     }
   ],
   "news": [
+    {
+      "title": "Shinhan and Visa team up to test stablecoin issuance and B2B settlements in South Korea",
+      "link": "https://www.coindesk.com/business/2026/08/26/south-korea-s-shinhan-financial-joins-visa-to-build-stablecoin-infrastructure",
+      "pubDate": "Wed, 26 Aug 2026 15:15:13 +0000"
+    },
+    {
+      "title": "Crypto Long & Short: Tokenized equities: the model underneath the trade",
+      "link": "https://www.coindesk.com/coindesk-indices/2026/08/26/crypto-long-and-short-tokenized-equities-the-model-underneath-the-trade",
+      "pubDate": "Wed, 26 Aug 2026 15:00:09 +0000"
+    },
+    {
+      "title": "Ethereum developers propose first step to protect ETH staking from quantum attacks",
+      "link": "https://www.coindesk.com/tech/2026/08/26/ethereum-developers-propose-first-step-to-protect-eth-staking-from-quantum-attacks",
+      "pubDate": "Wed, 26 Aug 2026 13:30:00 +0000"
+    },
     {
       "title": "The evidence doesn't support the banks' case against stablecoin rewards",
       "link": "https://www.coindesk.com/opinion/2026/08/25/the-evidence-doesn-t-support-the-banks-case-against-stablecoin-rewards",
@@ -467,24 +482,9 @@
       "pubDate": "Wed, 26 Aug 2026 09:06:00 +0000"
     },
     {
-      "title": "Live updates: Bitcoin flat near $78,500 ahead Nvidia earnings",
+      "title": "Live updates: Bitcoin adds to early losses, slipping below $78,000",
       "link": "https://www.coindesk.com/business/2026/08/26/live-updates-zcash-pulls-back-8-as-its-grayscale-etf-goes-live-capping-a-60-rally",
       "pubDate": "Wed, 26 Aug 2026 08:51:18 +0000"
-    },
-    {
-      "title": "A massive $6.4 billion bitcoin options expiry on Friday could amplify volatility",
-      "link": "https://www.coindesk.com/markets/2026/08/25/a-massive-usd6-4-billion-bitcoin-options-expiry-on-friday-could-amplify-volatility",
-      "pubDate": "Wed, 26 Aug 2026 08:01:09 +0000"
-    },
-    {
-      "title": "BlackRock cuts bitcoin ETF swap minimum to $1 million: Report",
-      "link": "https://www.coindesk.com/markets/2026/08/26/E",
-      "pubDate": "Wed, 26 Aug 2026 05:52:53 +0000"
-    },
-    {
-      "title": "XRP’s 44% rally brings leverage back, raising risk of sharper pullback",
-      "link": "https://www.coindesk.com/markets/2026/08/26/xrp-s-44-rally-brings-leverage-back-raising-risk-of-sharper-pullback",
-      "pubDate": "Wed, 26 Aug 2026 05:16:32 +0000"
     }
   ]
 }
