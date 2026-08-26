@@ -1,13 +1,13 @@
 {
-  "fetchedAt": "2026-08-26T07:05:34.173Z",
+  "fetchedAt": "2026-08-26T09:54:16.065Z",
   "price": {
-    "usd": 78934,
-    "time": 1787727606
+    "usd": 78413,
+    "time": 1787737809
   },
   "moves": {
-    "d1": 0.5384794909440771,
-    "d7": 13.707542668258842,
-    "d30": 23.966398628862073
+    "d1": -0.12511981752606482,
+    "d7": 12.95702160344312,
+    "d30": 23.148164487862786
   },
   "history90d": [
     {
@@ -372,60 +372,75 @@
     },
     {
       "date": "2026-08-26",
-      "close": 78923.09230159916
+      "close": 78446.07287957096
     }
   ],
   "blocks": [
     {
-      "height": 964104,
-      "id": "000000000000000000013b191e7375cbdbceb2576954016832f8d02717fe6005",
-      "timestamp": 1787727124,
-      "txCount": 3723
+      "height": 964120,
+      "id": "000000000000000000022e845cfc34cf0e8ccb368987c4c3b79bc4650e9b4864",
+      "timestamp": 1787736701,
+      "txCount": 5881
     },
     {
-      "height": 964103,
-      "id": "00000000000000000000a8dd86ccf7ff2bc91bfea403358beaf52c9805c0dbc2",
-      "timestamp": 1787724752,
-      "txCount": 6870
+      "height": 964119,
+      "id": "000000000000000000007608b312df6f2782e6eaf7bcbde12c2daaab0eca3f03",
+      "timestamp": 1787736573,
+      "txCount": 4991
     },
     {
-      "height": 964102,
-      "id": "00000000000000000001b12996dca058572e15806d69b76f07ae958b028b1565",
-      "timestamp": 1787724554,
-      "txCount": 6536
+      "height": 964118,
+      "id": "00000000000000000001c9e171210ec7f2ef952942077ad63245d05669226ccb",
+      "timestamp": 1787736525,
+      "txCount": 6161
     },
     {
-      "height": 964101,
-      "id": "00000000000000000002194a80ef7f78197c4c6deecaae1898b6482fff2c662b",
-      "timestamp": 1787724369,
-      "txCount": 5744
+      "height": 964117,
+      "id": "000000000000000000017b60c1b8124fcda81b8b5a320190b2e8d6ad1514a03e",
+      "timestamp": 1787736269,
+      "txCount": 3734
     },
     {
-      "height": 964100,
-      "id": "000000000000000000001631f969acabb5332f8534f1c9b94dd1d7c5ce9fab3d",
-      "timestamp": 1787724090,
-      "txCount": 5635
+      "height": 964116,
+      "id": "00000000000000000000ee850d95dde3fc8e328d62f08d519b22137c1a966307",
+      "timestamp": 1787736103,
+      "txCount": 3950
     },
     {
-      "height": 964099,
-      "id": "000000000000000000013b2704154143e5335efd73c373c60dae1564d2c3bd92",
-      "timestamp": 1787724014,
-      "txCount": 5198
+      "height": 964115,
+      "id": "000000000000000000006aee3875813751685f01c69ee7f5169138ff07bf716c",
+      "timestamp": 1787735405,
+      "txCount": 3349
     },
     {
-      "height": 964098,
-      "id": "000000000000000000011814f65318cf1b817fbfbf3e4c25e14d3c90e38b6231",
-      "timestamp": 1787723471,
-      "txCount": 5270
+      "height": 964114,
+      "id": "00000000000000000001fa081cb02efe03c0cbf6672d8ee50f93205192f0fd2b",
+      "timestamp": 1787735233,
+      "txCount": 2980
     },
     {
-      "height": 964097,
-      "id": "000000000000000000019bbeee135d6d13f298c5159ef32cae820f00539116ae",
-      "timestamp": 1787723190,
-      "txCount": 4055
+      "height": 964113,
+      "id": "00000000000000000000a2115fffcff8b18a4dc8d8357eb373fb23c5b6027646",
+      "timestamp": 1787733742,
+      "txCount": 3589
     }
   ],
   "news": [
+    {
+      "title": "Japan targets early 2030s launch for blockchain-based stock and bond settlement system",
+      "link": "https://www.coindesk.com/business/2026/08/26/japan-plans-blockchain-settlement-network-for-stocks-and-government-bonds",
+      "pubDate": "Wed, 26 Aug 2026 09:06:00 +0000"
+    },
+    {
+      "title": "Live updates: Zcash pulls back 8% as its Grayscale ETF goes live, capping a 60% rally",
+      "link": "https://www.coindesk.com/business/2026/08/26/live-updates-zcash-pulls-back-8-as-its-grayscale-etf-goes-live-capping-a-60-rally",
+      "pubDate": "Wed, 26 Aug 2026 08:51:18 +0000"
+    },
+    {
+      "title": "A massive $6.4 billion bitcoin options expiry on Friday could amplify volatility",
+      "link": "https://www.coindesk.com/markets/2026/08/25/a-massive-usd6-4-billion-bitcoin-options-expiry-on-friday-could-amplify-volatility",
+      "pubDate": "Wed, 26 Aug 2026 08:01:09 +0000"
+    },
     {
       "title": "BlackRock cuts bitcoin ETF swap minimum to $1 million: Report",
       "link": "https://www.coindesk.com/markets/2026/08/26/E",
@@ -470,21 +485,6 @@
       "title": "Bitwise turns Coinbase's tokenized stocks into automated AI, robotics and tech portfolios",
       "link": "https://www.coindesk.com/business/2026/08/25/bitwise-turns-coinbase-s-tokenized-stocks-into-automated-ai-robotics-and-tech-portfolios",
       "pubDate": "Tue, 25 Aug 2026 14:50:22 +0000"
-    },
-    {
-      "title": "Crypto custody firm Copper has potential buyers. But offers are way below its $500 million asking price",
-      "link": "https://www.coindesk.com/business/2026/08/25/crypto-custody-firm-copper-has-potential-buyers-but-offers-are-way-below-its-usd500-million-asking-price",
-      "pubDate": "Tue, 25 Aug 2026 13:48:50 +0000"
-    },
-    {
-      "title": "MiCA revolutionised European crypto, and left Poland licking its wounds",
-      "link": "https://www.coindesk.com/opinion/2026/08/24/mica-revolutionised-european-crypto-and-left-poland-licking-its-wounds",
-      "pubDate": "Tue, 25 Aug 2026 13:00:00 +0000"
-    },
-    {
-      "title": "Chainalysis-run sting targets child exploitation networks with aid of Binance, Coinbase",
-      "link": "https://www.coindesk.com/policy/2026/08/24/chainalysis-run-sting-targets-child-exploitation-networks-with-aid-of-binance-coinbase",
-      "pubDate": "Tue, 25 Aug 2026 13:00:00 +0000"
     }
   ]
 }
