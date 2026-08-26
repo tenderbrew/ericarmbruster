@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-08-26T01:52:02.999Z",
+  "fetchedAt": "2026-08-26T13:09:39.917Z",
   "indicators": {
     "UNRATE": {
       "latest": {
@@ -73,12 +73,12 @@
     },
     "PCE": {
       "latest": {
-        "date": "2026-06-01",
-        "value": 22184.1
+        "date": "2026-07-01",
+        "value": 22250.4
       },
       "previous": {
-        "date": "2026-05-01",
-        "value": 22118.9
+        "date": "2026-06-01",
+        "value": 22214.2
       }
     },
     "M2SL": {
@@ -184,7 +184,7 @@
     "GDPC1": {
       "latest": {
         "date": "2026-04-01",
-        "value": 24270.599
+        "value": 24269.613
       },
       "previous": {
         "date": "2026-01-01",
@@ -284,11 +284,11 @@
     "M2V": {
       "latest": {
         "date": "2026-04-01",
-        "value": 1.412
+        "value": 1.415
       },
       "previous": {
         "date": "2026-01-01",
-        "value": 1.412
+        "value": 1.413
       }
     },
     "CPI_YOY": {
@@ -300,6 +300,18 @@
     }
   },
   "news": [
+    {
+      "title": "You’re Paying and Paying",
+      "link": "https://mises.org/power-market/youre-paying-and-paying",
+      "pubDate": "Wed, 26 Aug 2026 07:00:00 CDT",
+      "kind": "Article"
+    },
+    {
+      "title": "Profiting from Government Didn’t Begin with Trump",
+      "link": "https://mises.org/mises-wire/profiting-government-didnt-begin-trump",
+      "pubDate": "Wed, 26 Aug 2026 05:00:00 CDT",
+      "kind": "Mises Wire"
+    },
     {
       "title": "The Penal Leviathan: What Wacquant and Rothbard Reveal About Modern Punishment",
       "link": "https://mises.org/podcasts/audio-mises-wire/penal-leviathan-what-wacquant-and-rothbard-reveal-about-modern-punishment",
@@ -325,24 +337,6 @@
       "kind": "Podcast"
     },
     {
-      "title": "What Made the American Revolution Unique?",
-      "link": "https://mises.org/misesian/what-made-american-revolution-unique",
-      "pubDate": "Tue, 25 Aug 2026 10:00:00 CDT",
-      "kind": "Article"
-    },
-    {
-      "title": "A Declaratory Judgment",
-      "link": "https://mises.org/misesian/declaratory-judgment",
-      "pubDate": "Tue, 25 Aug 2026 10:00:00 CDT",
-      "kind": "Article"
-    },
-    {
-      "title": "Why Is the Healthcare System Broken?: Mises Circle in New Hampshire",
-      "link": "https://mises.org/misesian/why-healthcare-system-broken-mises-circle-new-hampshire",
-      "pubDate": "Tue, 25 Aug 2026 10:00:00 CDT",
-      "kind": "Article"
-    },
-    {
       "title": "From the Editor—July / August 2026",
       "link": "https://mises.org/misesian/editor-july-august-2026",
       "pubDate": "Tue, 25 Aug 2026 10:00:00 CDT",
@@ -357,6 +351,12 @@
     {
       "title": "40th Anniversary of Mises University",
       "link": "https://mises.org/misesian/40th-anniversary-mises-university",
+      "pubDate": "Tue, 25 Aug 2026 10:00:00 CDT",
+      "kind": "Article"
+    },
+    {
+      "title": "The 250th Anniversary of the Declaration of Independence",
+      "link": "https://mises.org/misesian/250th-anniversary-declaration-independence",
       "pubDate": "Tue, 25 Aug 2026 10:00:00 CDT",
       "kind": "Article"
     }
