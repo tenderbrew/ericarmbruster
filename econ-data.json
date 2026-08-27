@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-08-27T09:27:44.175Z",
+  "fetchedAt": "2026-08-27T22:12:08.631Z",
   "indicators": {
     "UNRATE": {
       "latest": {
@@ -33,12 +33,12 @@
     },
     "ICSA": {
       "latest": {
-        "date": "2026-08-15",
-        "value": 206000
+        "date": "2026-08-22",
+        "value": 203000
       },
       "previous": {
-        "date": "2026-08-08",
-        "value": 212000
+        "date": "2026-08-15",
+        "value": 207000
       }
     },
     "CPIAUCSL": {
@@ -63,11 +63,11 @@
     },
     "T10YIE": {
       "latest": {
-        "date": "2026-08-26",
-        "value": 2.32
+        "date": "2026-08-27",
+        "value": 2.33
       },
       "previous": {
-        "date": "2026-08-25",
+        "date": "2026-08-26",
         "value": 2.32
       }
     },
@@ -103,12 +103,12 @@
     },
     "WALCL": {
       "latest": {
-        "date": "2026-08-19",
-        "value": 6745699
+        "date": "2026-08-26",
+        "value": 6730912
       },
       "previous": {
-        "date": "2026-08-12",
-        "value": 6759955
+        "date": "2026-08-19",
+        "value": 6745699
       }
     },
     "FEDFUNDS": {
@@ -123,62 +123,62 @@
     },
     "DGS2": {
       "latest": {
-        "date": "2026-08-25",
-        "value": 4.17
+        "date": "2026-08-26",
+        "value": 4.19
       },
       "previous": {
-        "date": "2026-08-24",
-        "value": 4.24
+        "date": "2026-08-25",
+        "value": 4.17
       }
     },
     "DGS10": {
       "latest": {
-        "date": "2026-08-25",
-        "value": 4.64
+        "date": "2026-08-26",
+        "value": 4.66
       },
       "previous": {
-        "date": "2026-08-24",
-        "value": 4.7
+        "date": "2026-08-25",
+        "value": 4.64
       }
     },
     "T10Y2Y": {
       "latest": {
-        "date": "2026-08-26",
+        "date": "2026-08-27",
         "value": 0.47
       },
       "previous": {
-        "date": "2026-08-25",
+        "date": "2026-08-26",
         "value": 0.47
       }
     },
     "DFII10": {
       "latest": {
-        "date": "2026-08-25",
-        "value": 2.32
+        "date": "2026-08-26",
+        "value": 2.34
       },
       "previous": {
-        "date": "2026-08-24",
-        "value": 2.38
+        "date": "2026-08-25",
+        "value": 2.32
       }
     },
     "BAMLH0A0HYM2": {
       "latest": {
-        "date": "2026-08-25",
-        "value": 2.7
+        "date": "2026-08-26",
+        "value": 2.67
       },
       "previous": {
-        "date": "2026-08-24",
-        "value": 2.69
+        "date": "2026-08-25",
+        "value": 2.7
       }
     },
     "MORTGAGE30US": {
       "latest": {
-        "date": "2026-08-20",
-        "value": 6.65
+        "date": "2026-08-27",
+        "value": 6.66
       },
       "previous": {
-        "date": "2026-08-13",
-        "value": 6.67
+        "date": "2026-08-20",
+        "value": 6.65
       }
     },
     "GDPC1": {
@@ -263,12 +263,12 @@
     },
     "VIXCLS": {
       "latest": {
-        "date": "2026-08-25",
-        "value": 15.45
+        "date": "2026-08-26",
+        "value": 15.21
       },
       "previous": {
-        "date": "2026-08-24",
-        "value": 15.85
+        "date": "2026-08-25",
+        "value": 15.45
       }
     },
     "BOPGSTB": {
@@ -301,6 +301,42 @@
   },
   "news": [
     {
+      "title": "Inflation: How Government Generates It and Then Endeavors to Shift Responsibility",
+      "link": "https://mises.org/articles-interest/inflation-how-government-generates-it-and-then-endeavors-shift-responsibility",
+      "pubDate": "Thu, 27 Aug 2026 06:00:00 CDT",
+      "kind": "Article"
+    },
+    {
+      "title": "The Arday Tragedy: A Story of Institutional Failure, Not a Witch Hunt",
+      "link": "https://mises.org/mises-wire/arday-tragedy-story-institutional-failure-not-witch-hunt",
+      "pubDate": "Thu, 27 Aug 2026 02:00:00 CDT",
+      "kind": "Mises Wire"
+    },
+    {
+      "title": "Nationality: You Belong to the State",
+      "link": "https://mises.org/mises-wire/nationality-you-belong-state",
+      "pubDate": "Thu, 27 Aug 2026 11:00:00 CDT",
+      "kind": "Mises Wire"
+    },
+    {
+      "title": "Three Reasons Why the French Revolution Was So Different from the American Revolution",
+      "link": "https://mises.org/podcasts/audio-mises-wire/three-reasons-why-french-revolution-was-so-different-american-revolution",
+      "pubDate": "Thu, 27 Aug 2026 10:30:49 CDT",
+      "kind": "Podcast"
+    },
+    {
+      "title": "The Information State: Progressives’ Road to Dystopia",
+      "link": "https://mises.org/power-market/information-state-progressives-road-dystopia",
+      "pubDate": "Thu, 27 Aug 2026 07:00:00 CDT",
+      "kind": "Article"
+    },
+    {
+      "title": "The Destabilizing Stabilizers: Why Increasing Government Spending Prolongs a Recession",
+      "link": "https://mises.org/mises-wire/destabilizing-stabilizers-why-increasing-government-spending-prolongs-recession",
+      "pubDate": "Thu, 27 Aug 2026 05:00:00 CDT",
+      "kind": "Mises Wire"
+    },
+    {
       "title": "Profiting from Government Didn’t Begin with Trump",
       "link": "https://mises.org/podcasts/guns-and-butter/profiting-government-didnt-begin-trump",
       "pubDate": "Wed, 26 Aug 2026 05:15:45 CDT",
@@ -323,42 +359,6 @@
       "link": "https://mises.org/power-market/competition-discovery-procedure-when-schumpeter-meets-hayek",
       "pubDate": "Wed, 26 Aug 2026 10:00:00 CDT",
       "kind": "Article"
-    },
-    {
-      "title": "The Wealth Tax Revival Is Repeating a Failed Experiment",
-      "link": "https://mises.org/podcasts/audio-mises-wire/wealth-tax-revival-repeating-failed-experiment",
-      "pubDate": "Wed, 26 Aug 2026 09:29:14 CDT",
-      "kind": "Podcast"
-    },
-    {
-      "title": "Sabrin: Phase out Social Security",
-      "link": "https://mises.org/power-market/sabrin-phase-out-social-security",
-      "pubDate": "Wed, 26 Aug 2026 09:00:00 CDT",
-      "kind": "Article"
-    },
-    {
-      "title": "You’re Paying and Paying",
-      "link": "https://mises.org/power-market/youre-paying-and-paying",
-      "pubDate": "Wed, 26 Aug 2026 07:00:00 CDT",
-      "kind": "Article"
-    },
-    {
-      "title": "Florida police used a fake Flock camera in a sting, then charged a man with three felonies for destroying it",
-      "link": "https://mises.org/notes-margin/florida-police-used-fake-flock-camera-sting-then-charged-man-three-felonies-destroying-it",
-      "pubDate": "Wed, 26 Aug 2026 06:00:00 CDT",
-      "kind": "Article"
-    },
-    {
-      "title": "Profiting from Government Didn’t Begin with Trump",
-      "link": "https://mises.org/mises-wire/profiting-government-didnt-begin-trump",
-      "pubDate": "Wed, 26 Aug 2026 05:00:00 CDT",
-      "kind": "Mises Wire"
-    },
-    {
-      "title": "The Penal Leviathan: What Wacquant and Rothbard Reveal About Modern Punishment",
-      "link": "https://mises.org/podcasts/audio-mises-wire/penal-leviathan-what-wacquant-and-rothbard-reveal-about-modern-punishment",
-      "pubDate": "Tue, 25 Aug 2026 11:47:35 CDT",
-      "kind": "Podcast"
     }
   ]
 }
