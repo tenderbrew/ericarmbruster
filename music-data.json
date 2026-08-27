@@ -1,7 +1,25 @@
 {
-  "fetchedAt": "2026-08-10T18:10:01.808Z",
-  "windowPlays": 393,
+  "fetchedAt": "2026-08-27T06:10:01.617Z",
+  "windowPlays": 396,
   "recentTracks": [
+    {
+      "artist": "Bush",
+      "album": "Sixteen Stone",
+      "track": "Machinehead",
+      "played": 1787785602
+    },
+    {
+      "artist": "Weezer",
+      "album": "Pinkerton",
+      "track": "The Good Life",
+      "played": 1787785343
+    },
+    {
+      "artist": "Lit",
+      "album": "A Place in the Sun",
+      "track": "My Own Worst Enemy",
+      "played": 1787785154
+    },
     {
       "artist": "Green Day",
       "album": "nimrod.",
@@ -133,24 +151,6 @@
       "album": "Feeling Strangely Fine",
       "track": "Closing Time",
       "played": 1786117447
-    },
-    {
-      "artist": "Weezer",
-      "album": "Pinkerton",
-      "track": "The Good Life",
-      "played": 1786117201
-    },
-    {
-      "artist": "blink‐182",
-      "album": "Enema of the State",
-      "track": "All the Small Things",
-      "played": 1786117011
-    },
-    {
-      "artist": "Radiohead",
-      "album": "Pablo Honey",
-      "track": "Creep",
-      "played": 1786054752
     }
   ],
   "topArtists": [
@@ -217,6 +217,11 @@
       "plays": 6
     },
     {
+      "artist": "Lit",
+      "album": "A Place in the Sun",
+      "plays": 4
+    },
+    {
       "artist": "Alanis Morissette",
       "album": "Jagged Little Pill",
       "plays": 4
@@ -239,11 +244,6 @@
     {
       "artist": "The Ataris",
       "album": "Blue Skies, Broken Hearts…Next 12 Exits",
-      "plays": 4
-    },
-    {
-      "artist": "The Postal Service",
-      "album": "Give Up",
       "plays": 4
     }
   ]
