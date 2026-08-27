@@ -1,19 +1,15 @@
 {
-  "fetchedAt": "2026-08-26T19:59:01.334Z",
+  "fetchedAt": "2026-08-27T00:45:44.852Z",
   "price": {
-    "usd": 78457,
-    "time": 1787774107
+    "usd": 78837,
+    "time": 1787791209
   },
   "moves": {
-    "d1": -0.06907688168598103,
-    "d7": 13.02040534020299,
-    "d30": 23.217266795356007
+    "d1": -0.22910473497224082,
+    "d7": 7.964912416651093,
+    "d30": 23.410459909066184
   },
   "history90d": [
-    {
-      "date": "2026-05-29",
-      "close": 73651.64255141478
-    },
     {
       "date": "2026-05-30",
       "close": 73500.91507629369
@@ -236,75 +232,75 @@
     },
     {
       "date": "2026-07-24",
-      "close": 65033.02206215462
+      "close": 65052.47667067735
     },
     {
       "date": "2026-07-25",
-      "close": 64099.00415642356
+      "close": 64092.64739795451
     },
     {
       "date": "2026-07-26",
-      "close": 64316.36420628235
+      "close": 64318.24520120312
     },
     {
       "date": "2026-07-27",
-      "close": 65310.39342889224
+      "close": 65343.824510845894
     },
     {
       "date": "2026-07-28",
-      "close": 63673.70583727069
+      "close": 63701.35288114535
     },
     {
       "date": "2026-07-29",
-      "close": 63957.0445311038
+      "close": 63881.94327943538
     },
     {
       "date": "2026-07-30",
-      "close": 63934.10397135411
+      "close": 63916.59794922001
     },
     {
       "date": "2026-07-31",
-      "close": 64776.94132457678
+      "close": 64743.33714554026
     },
     {
       "date": "2026-08-01",
-      "close": 62896.51265124351
+      "close": 62820.08613814001
     },
     {
       "date": "2026-08-02",
-      "close": 62802.63461583794
+      "close": 62772.57726413174
     },
     {
       "date": "2026-08-03",
-      "close": 63466.47029088457
+      "close": 63504.41559755184
     },
     {
       "date": "2026-08-04",
-      "close": 63472.83055254542
+      "close": 63465.19968911304
     },
     {
       "date": "2026-08-05",
-      "close": 64039.40942040227
+      "close": 64062.173729779366
     },
     {
       "date": "2026-08-06",
-      "close": 64574.31265301755
+      "close": 64608.705388357404
     },
     {
       "date": "2026-08-07",
-      "close": 64289.46264979674
+      "close": 64262.74830979173
     },
     {
       "date": "2026-08-08",
-      "close": 64872.60073274102
+      "close": 64879.7560855934
     },
     {
       "date": "2026-08-09",
-      "close": 64916.00547973986
+      "close": 64917.23929330571
     },
     {
       "date": "2026-08-10",
-      "close": 64860.52128247015
+      "close": 64856.097825382276
     },
     {
       "date": "2026-08-11",
@@ -320,112 +316,126 @@
     },
     {
       "date": "2026-08-14",
-      "close": 63417.394499802336
+      "close": 63429.17906286841
     },
     {
       "date": "2026-08-15",
-      "close": 62996.3976329567
+      "close": 62984.28959582886
     },
     {
       "date": "2026-08-16",
-      "close": 63017.0734035797
+      "close": 63031.04825975698
     },
     {
       "date": "2026-08-17",
-      "close": 62852.86351172356
+      "close": 62843.70368466329
     },
     {
       "date": "2026-08-18",
-      "close": 64455.380294477756
+      "close": 64491.345282946255
     },
     {
       "date": "2026-08-19",
-      "close": 64664.42993991489
+      "close": 64686.25782561655
     },
     {
       "date": "2026-08-20",
-      "close": 69418.43799253453
+      "close": 69291.0104297816
     },
     {
       "date": "2026-08-21",
-      "close": 73097.54507565373
+      "close": 73020.94563440893
     },
     {
       "date": "2026-08-22",
-      "close": 78424.6246326062
+      "close": 78317.77716345884
     },
     {
       "date": "2026-08-23",
-      "close": 77109.15882797632
+      "close": 77081.02299000922
     },
     {
       "date": "2026-08-24",
-      "close": 77677.9934025395
+      "close": 77712.3200924702
     },
     {
       "date": "2026-08-25",
-      "close": 78940.29243672009
+      "close": 78973.88693602335
     },
     {
       "date": "2026-08-26",
       "close": 78511.2331116067
     },
     {
-      "date": "2026-08-26",
-      "close": 78464.5806311361
+      "date": "2026-08-27",
+      "close": 79018.03405750773
+    },
+    {
+      "date": "2026-08-27",
+      "close": 78832.30148397773
     }
   ],
   "blocks": [
     {
-      "height": 964189,
-      "id": "00000000000000000001348f3e4b8927da5d0ea6146127eeaf0763cb337436f6",
-      "timestamp": 1787773662,
-      "txCount": 4456
+      "height": 964221,
+      "id": "0000000000000000000095ff6939fc77113e83f4c5b1e53fb3b749796848ca85",
+      "timestamp": 1787790498,
+      "txCount": 3985
     },
     {
-      "height": 964188,
-      "id": "00000000000000000001847d22363f46416bab371377e213c3035d8453c8fb21",
-      "timestamp": 1787771913,
-      "txCount": 5647
+      "height": 964220,
+      "id": "00000000000000000001012d7bce9f61cad7237c1dea44fcb58823a632fdf8af",
+      "timestamp": 1787790250,
+      "txCount": 3764
     },
     {
-      "height": 964187,
-      "id": "000000000000000000017684e8765be7293ad8e38a3aa15fd8085490e9652ff2",
-      "timestamp": 1787771625,
-      "txCount": 4932
+      "height": 964219,
+      "id": "00000000000000000000094a101297524e1b3b022559031ca76115baf2682722",
+      "timestamp": 1787790094,
+      "txCount": 3942
     },
     {
-      "height": 964186,
-      "id": "000000000000000000000034a6ad3070a89f758de7849e3a00b1eb15e0eed1aa",
-      "timestamp": 1787771377,
-      "txCount": 6002
+      "height": 964218,
+      "id": "000000000000000000002f6b0151587be41ab3ccbe6b79c859f9548fcace1ed2",
+      "timestamp": 1787786939,
+      "txCount": 7004
     },
     {
-      "height": 964185,
-      "id": "0000000000000000000131919206decda50cc26cbeedf725befecebe42d901f1",
-      "timestamp": 1787771157,
-      "txCount": 4767
+      "height": 964217,
+      "id": "0000000000000000000174d0e440d092a71dd8212586441888ad2c0ec2d9b79c",
+      "timestamp": 1787786859,
+      "txCount": 6047
     },
     {
-      "height": 964184,
-      "id": "00000000000000000001af6f5a90c17ff517d8466270facc4d92bea9dd1c7f23",
-      "timestamp": 1787771109,
-      "txCount": 3686
+      "height": 964216,
+      "id": "000000000000000000014d0cea2e980241c12fe868ad9d067d112744fe0571b1",
+      "timestamp": 1787786431,
+      "txCount": 7234
     },
     {
-      "height": 964183,
-      "id": "00000000000000000001587c098dcf048015acdb5d09c60565861a4bbb3cce92",
-      "timestamp": 1787770954,
-      "txCount": 3106
+      "height": 964215,
+      "id": "00000000000000000001b06f59dbea583abab82127c95f2116d1ec276a606c00",
+      "timestamp": 1787786221,
+      "txCount": 4997
     },
     {
-      "height": 964182,
-      "id": "00000000000000000001eb0578907ce85883733a12c340b3a30591695061fe2e",
-      "timestamp": 1787770810,
-      "txCount": 4431
+      "height": 964214,
+      "id": "0000000000000000000221f0a535c0783c941b0191a4113edccbac5bd41a81de",
+      "timestamp": 1787785523,
+      "txCount": 7258
     }
   ],
   "news": [
+    {
+      "title": "SEC resurrecting U.S. crypto custody rule the previous administration failed to land",
+      "link": "https://www.coindesk.com/news-analysis/2026/08/26/sec-resurrecting-u-s-crypto-custody-rule-the-previous-administration-failed-to-land",
+      "pubDate": "Wed, 26 Aug 2026 23:01:44 +0000"
+    },
+    {
+      "title": "Nvidia shares rise after earnings top estimates, guides to $108 billion in revenue next quarter",
+      "link": "https://www.coindesk.com/markets/2026/08/26/nvidia-tops-earnings-estimates-guides-to-usd108-billion-in-revenue-next-quarter",
+      "pubDate": "Wed, 26 Aug 2026 20:24:31 +0000"
+    },
     {
       "title": "South Korea’s top financial conglomerate team up with Visa to test stablecoin issuance and B2B settlements",
       "link": "https://www.coindesk.com/business/2026/08/26/south-korea-s-shinhan-financial-joins-visa-to-build-stablecoin-infrastructure",
@@ -475,16 +485,6 @@
       "title": "Euro stablecoins get a mainstream push as Revolut begins rolling out EURR in Europe",
       "link": "https://www.coindesk.com/business/2026/08/26/euro-stablecoins-get-a-mainstream-push-as-revolut-begins-rolling-out-eurr-in-europe",
       "pubDate": "Wed, 26 Aug 2026 10:03:43 +0000"
-    },
-    {
-      "title": "Japan to start stocks and bonds tokenization development plans this year",
-      "link": "https://www.coindesk.com/business/2026/08/26/japan-plans-blockchain-settlement-network-for-stocks-and-government-bonds",
-      "pubDate": "Wed, 26 Aug 2026 09:06:00 +0000"
-    },
-    {
-      "title": "Live updates: Bitcoin adds to early losses, slipping to $78,000",
-      "link": "https://www.coindesk.com/business/2026/08/26/live-updates-zcash-pulls-back-8-as-its-grayscale-etf-goes-live-capping-a-60-rally",
-      "pubDate": "Wed, 26 Aug 2026 08:51:18 +0000"
     }
   ]
 }
