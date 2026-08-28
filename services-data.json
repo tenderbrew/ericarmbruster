@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-08-28T12:10:01.235Z",
+  "fetchedAt": "2026-08-28T18:10:01.914Z",
   "note": "main services only; databases/caches/workers are filtered as implementation detail",
   "services": [
     {
@@ -32,10 +32,6 @@
     },
     {
       "name": "bookorbit",
-      "project": "books"
-    },
-    {
-      "name": "grimmory",
       "project": "books"
     },
     {
