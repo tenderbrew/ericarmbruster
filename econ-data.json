@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-08-28T11:13:22.125Z",
+  "fetchedAt": "2026-08-28T22:12:44.788Z",
   "indicators": {
     "UNRATE": {
       "latest": {
@@ -63,12 +63,12 @@
     },
     "T10YIE": {
       "latest": {
-        "date": "2026-08-27",
-        "value": 2.33
+        "date": "2026-08-28",
+        "value": 2.31
       },
       "previous": {
-        "date": "2026-08-26",
-        "value": 2.32
+        "date": "2026-08-27",
+        "value": 2.33
       }
     },
     "PCE": {
@@ -123,52 +123,52 @@
     },
     "DGS2": {
       "latest": {
-        "date": "2026-08-26",
-        "value": 4.19
+        "date": "2026-08-27",
+        "value": 4.2
       },
       "previous": {
-        "date": "2026-08-25",
-        "value": 4.17
+        "date": "2026-08-26",
+        "value": 4.19
       }
     },
     "DGS10": {
       "latest": {
-        "date": "2026-08-26",
-        "value": 4.66
+        "date": "2026-08-27",
+        "value": 4.67
       },
       "previous": {
-        "date": "2026-08-25",
-        "value": 4.64
+        "date": "2026-08-26",
+        "value": 4.66
       }
     },
     "T10Y2Y": {
       "latest": {
-        "date": "2026-08-27",
-        "value": 0.47
+        "date": "2026-08-28",
+        "value": 0.39
       },
       "previous": {
-        "date": "2026-08-26",
+        "date": "2026-08-27",
         "value": 0.47
       }
     },
     "DFII10": {
       "latest": {
-        "date": "2026-08-26",
+        "date": "2026-08-27",
         "value": 2.34
       },
       "previous": {
-        "date": "2026-08-25",
-        "value": 2.32
+        "date": "2026-08-26",
+        "value": 2.34
       }
     },
     "BAMLH0A0HYM2": {
       "latest": {
-        "date": "2026-08-26",
-        "value": 2.67
+        "date": "2026-08-27",
+        "value": 2.63
       },
       "previous": {
-        "date": "2026-08-25",
-        "value": 2.7
+        "date": "2026-08-26",
+        "value": 2.67
       }
     },
     "MORTGAGE30US": {
@@ -213,12 +213,12 @@
     },
     "UMCSENT": {
       "latest": {
-        "date": "2026-06-01",
-        "value": 49.5
+        "date": "2026-07-01",
+        "value": 55.2
       },
       "previous": {
-        "date": "2026-05-01",
-        "value": 44.8
+        "date": "2026-06-01",
+        "value": 49.5
       }
     },
     "STLFSI4": {
@@ -263,12 +263,12 @@
     },
     "VIXCLS": {
       "latest": {
-        "date": "2026-08-26",
-        "value": 15.21
+        "date": "2026-08-27",
+        "value": 14.51
       },
       "previous": {
-        "date": "2026-08-25",
-        "value": 15.45
+        "date": "2026-08-26",
+        "value": 15.21
       }
     },
     "BOPGSTB": {
@@ -301,6 +301,42 @@
   },
   "news": [
     {
+      "title": "The Two Lineages of Liberty",
+      "link": "https://mises.org/mises-wire/two-lineages-liberty",
+      "pubDate": "Fri, 28 Aug 2026 02:00:00 CDT",
+      "kind": "Mises Wire"
+    },
+    {
+      "title": "The Life and Times of Murray N. Rothbard",
+      "link": "https://mises.org/friday-philosophy/life-and-times-murray-n-rothbard",
+      "pubDate": "Fri, 28 Aug 2026 11:00:00 CDT",
+      "kind": "Article"
+    },
+    {
+      "title": "Libertarian Scholars Conference 2027",
+      "link": "https://mises.org/events/libertarian-scholars-conference-2027",
+      "pubDate": "Fri, 28 Aug 2026 10:00:00 CDT",
+      "kind": "Article"
+    },
+    {
+      "title": "Austrian Economics Research Conference 2027",
+      "link": "https://mises.org/events/austrian-economics-research-conference-2027",
+      "pubDate": "Fri, 28 Aug 2026 10:00:00 CDT",
+      "kind": "Article"
+    },
+    {
+      "title": "Nationality: You Belong to the State",
+      "link": "https://mises.org/podcasts/audio-mises-wire/nationality-you-belong-state",
+      "pubDate": "Fri, 28 Aug 2026 08:23:02 CDT",
+      "kind": "Podcast"
+    },
+    {
+      "title": "Great News: Your Boots Are Poor Quality",
+      "link": "https://mises.org/power-market/great-news-your-boots-are-poor-quality",
+      "pubDate": "Fri, 28 Aug 2026 07:00:00 CDT",
+      "kind": "Article"
+    },
+    {
       "title": "The Telephone, Political Entrepreneurship, and Theodore M. Vail",
       "link": "https://mises.org/mises-wire/telephone-political-entrepreneurship-and-theodore-m-vail",
       "pubDate": "Fri, 28 Aug 2026 05:00:00 CDT",
@@ -322,42 +358,6 @@
       "title": "Nationality: You Belong to the State",
       "link": "https://mises.org/mises-wire/nationality-you-belong-state",
       "pubDate": "Thu, 27 Aug 2026 11:00:00 CDT",
-      "kind": "Mises Wire"
-    },
-    {
-      "title": "Three Reasons Why the French Revolution Was So Different from the American Revolution",
-      "link": "https://mises.org/podcasts/audio-mises-wire/three-reasons-why-french-revolution-was-so-different-american-revolution",
-      "pubDate": "Thu, 27 Aug 2026 10:30:49 CDT",
-      "kind": "Podcast"
-    },
-    {
-      "title": "The Information State: Progressives’ Road to Dystopia",
-      "link": "https://mises.org/power-market/information-state-progressives-road-dystopia",
-      "pubDate": "Thu, 27 Aug 2026 07:00:00 CDT",
-      "kind": "Article"
-    },
-    {
-      "title": "The Destabilizing Stabilizers: Why Increasing Government Spending Prolongs a Recession",
-      "link": "https://mises.org/mises-wire/destabilizing-stabilizers-why-increasing-government-spending-prolongs-recession",
-      "pubDate": "Thu, 27 Aug 2026 05:00:00 CDT",
-      "kind": "Mises Wire"
-    },
-    {
-      "title": "Profiting from Government Didn’t Begin with Trump",
-      "link": "https://mises.org/podcasts/guns-and-butter/profiting-government-didnt-begin-trump",
-      "pubDate": "Wed, 26 Aug 2026 05:15:45 CDT",
-      "kind": "Podcast"
-    },
-    {
-      "title": "Three Reasons why the French Revolution Was So Different from the American Revolution",
-      "link": "https://mises.org/mises-wire/three-reasons-why-french-revolution-was-so-different-american-revolution",
-      "pubDate": "Wed, 26 Aug 2026 04:00:00 CDT",
-      "kind": "Mises Wire"
-    },
-    {
-      "title": "Ludwig Lachmann and the Role of Uncertainty in Economic Affairs",
-      "link": "https://mises.org/mises-wire/ludwig-lachmann-and-role-uncertainty-economic-affairs",
-      "pubDate": "Wed, 26 Aug 2026 11:00:00 CDT",
       "kind": "Mises Wire"
     }
   ]
