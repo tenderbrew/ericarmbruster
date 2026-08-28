@@ -1,19 +1,15 @@
 {
-  "fetchedAt": "2026-08-27T14:05:52.014Z",
+  "fetchedAt": "2026-08-28T00:23:17.283Z",
   "price": {
-    "usd": 79682,
-    "time": 1787839510
+    "usd": 80257,
+    "time": 1787876110
   },
   "moves": {
-    "d1": 0.8402714018537205,
-    "d7": 9.122114631246635,
-    "d30": 24.73321240628401
+    "d1": -0.014170894968512648,
+    "d7": 2.4760953474123326,
+    "d30": 25.565193666537112
   },
   "history90d": [
-    {
-      "date": "2026-05-30",
-      "close": 73500.91507629369
-    },
     {
       "date": "2026-05-31",
       "close": 73820.30385315015
@@ -371,61 +367,105 @@
       "close": 79018.03405750773
     },
     {
-      "date": "2026-08-27",
-      "close": 79611.26305381385
+      "date": "2026-08-28",
+      "close": 80268.37474707834
+    },
+    {
+      "date": "2026-08-28",
+      "close": 80386.93247408103
     }
   ],
   "blocks": [
     {
-      "height": 964306,
-      "id": "000000000000000000005c99cb77d8cd3129023671f9a0c69b3ac6dd16b665c3",
-      "timestamp": 1787839216,
-      "txCount": 5742
+      "height": 964364,
+      "id": "00000000000000000001113222081d904abeb7fc9f6bfa24fb17443267f443e0",
+      "timestamp": 1787875111,
+      "txCount": 2850
     },
     {
-      "height": 964305,
-      "id": "0000000000000000000229ff4b44427a5a3aef7462469a0d980ff84fb25ace6e",
-      "timestamp": 1787839054,
-      "txCount": 3077
+      "height": 964363,
+      "id": "0000000000000000000180d484b469e0172b74b0337ee5950a427f9d65e9798a",
+      "timestamp": 1787874501,
+      "txCount": 3567
     },
     {
-      "height": 964304,
-      "id": "000000000000000000015f77cfb132825079d6d2e2609e5d4e2330ce726f43a4",
-      "timestamp": 1787838757,
-      "txCount": 4385
+      "height": 964362,
+      "id": "000000000000000000022941400c5554242145f44d41af548ab0207148b8f889",
+      "timestamp": 1787873731,
+      "txCount": 4153
     },
     {
-      "height": 964303,
-      "id": "0000000000000000000222cbeec44b3a80060e8b4544479de83956af54699140",
-      "timestamp": 1787838474,
-      "txCount": 4351
+      "height": 964361,
+      "id": "000000000000000000011302d4def04c13c50fe23830e09e81e50859cae30d73",
+      "timestamp": 1787873511,
+      "txCount": 4510
     },
     {
-      "height": 964302,
-      "id": "000000000000000000021ecf830e0b298e5d05634eae99c520410183c70c0a53",
-      "timestamp": 1787836797,
-      "txCount": 3800
+      "height": 964360,
+      "id": "000000000000000000012de739d5c930d7784b0ce630ce6668ec6c3dad7a1631",
+      "timestamp": 1787871981,
+      "txCount": 3868
     },
     {
-      "height": 964301,
-      "id": "000000000000000000020946facf06a52e4bc77b60b2317b30a4fdcaea2059bd",
-      "timestamp": 1787836772,
-      "txCount": 4229
+      "height": 964359,
+      "id": "00000000000000000000c9d031e38caa940dd57c846b4871bed95005ca95d682",
+      "timestamp": 1787871458,
+      "txCount": 4401
     },
     {
-      "height": 964300,
-      "id": "000000000000000000019ba223f9019695fc97ebcfbb6b0d425e4df251e9535f",
-      "timestamp": 1787835330,
-      "txCount": 3578
+      "height": 964358,
+      "id": "00000000000000000000bc5ea13fc9c5f5f6fdcd2746f234bd641874f55068fc",
+      "timestamp": 1787870997,
+      "txCount": 4227
     },
     {
-      "height": 964299,
-      "id": "00000000000000000001f5d0c37b1710a42045eb91b7dfa84d79a5814f538cce",
-      "timestamp": 1787834800,
-      "txCount": 4604
+      "height": 964357,
+      "id": "0000000000000000000104f2a1ac4c93031ad5923717fb119c3e90e4937e7502",
+      "timestamp": 1787866854,
+      "txCount": 4576
     }
   ],
   "news": [
+    {
+      "title": "Connecticut's new lawsuit against Kalshi piles on to prediction market legal fight",
+      "link": "https://www.coindesk.com/news-analysis/2026/08/27/connecticut-s-new-lawsuit-against-kalshi-piles-on-to-prediction-market-legal-fight",
+      "pubDate": "Thu, 27 Aug 2026 18:28:53 +0000"
+    },
+    {
+      "title": "Ethena surges as buyback vote, VC unlock overhaul boost token outlook",
+      "link": "https://www.coindesk.com/markets/2026/08/27/ethena-surges-as-buyback-vote-vc-unlock-overhaul-boost-token-outlook",
+      "pubDate": "Thu, 27 Aug 2026 17:32:20 +0000"
+    },
+    {
+      "title": "GTA 6 leaker cashes out of his own memecoin hours before Rockstar's gameplay reveal",
+      "link": "https://www.coindesk.com/business/2026/08/27/gta-6-leaker-cashes-out-of-his-own-memecoin-hours-before-rockstar-s-gameplay-reveal",
+      "pubDate": "Thu, 27 Aug 2026 16:32:38 +0000"
+    },
+    {
+      "title": "Polish Olympic chief arrested as prosecutors probe suspected crypto-linked bribe",
+      "link": "https://www.coindesk.com/business/2026/08/27/polish-olympic-chief-arrested-as-prosecutors-probe-suspected-crypto-linked-bribe",
+      "pubDate": "Thu, 27 Aug 2026 16:12:10 +0000"
+    },
+    {
+      "title": "MoonPay’s newest integration lets AI agents handle crypto lending on Solana",
+      "link": "https://www.coindesk.com/business/2026/08/27/moonpay-s-newest-integration-lets-ai-agents-handle-crypto-lending-on-solana",
+      "pubDate": "Thu, 27 Aug 2026 15:52:21 +0000"
+    },
+    {
+      "title": "240 UK taxpayers made more than $1.3 million each from crypto holdings in fiscal 2025",
+      "link": "https://www.coindesk.com/business/2026/08/27/240-uk-taxpayers-made-more-than-usd1-3-million-each-from-crypto-holdings-in-fiscal-2025",
+      "pubDate": "Thu, 27 Aug 2026 15:36:25 +0000"
+    },
+    {
+      "title": "Crypto for Advisors: How staking on Ethereum is changing in 2026",
+      "link": "https://www.coindesk.com/coindesk-indices/2026/08/27/crypto-for-advisors-how-staking-on-ethereum-is-changing-in-2026",
+      "pubDate": "Thu, 27 Aug 2026 15:10:56 +0000"
+    },
+    {
+      "title": "Clearing firm RQD* raises $74 million as Wall Street prepares for tokenized markets",
+      "link": "https://www.coindesk.com/business/2026/08/27/clearing-firm-rqd-raises-usd74-million-as-wall-street-prepares-for-tokenized-markets",
+      "pubDate": "Thu, 27 Aug 2026 14:32:41 +0000"
+    },
     {
       "title": "Crypto traders brace for Fed Chair Kevin Warsh’s Jackson Hole speech",
       "link": "https://www.coindesk.com/markets/2026/08/27/bitcoin-holds-near-usd80-000-as-traders-brace-for-warsh-s-jackson-hole-fed-speech",
@@ -445,46 +485,6 @@
       "title": "Mirae Asset eyes $109 billion crypto empire after acquiring Digital X",
       "link": "https://www.coindesk.com/business/2026/08/27/mirae-asset-eyes-usd109-billion-crypto-empire-after-acquiring-digital-x",
       "pubDate": "Thu, 27 Aug 2026 11:37:10 +0000"
-    },
-    {
-      "title": "Bitcoin experts prefer this defined-risk strategy for the next leg higher in prices",
-      "link": "https://www.coindesk.com/daybook-us/2026/08/27/bitcoin-experts-prefer-this-defined-risk-strategy-for-the-next-leg-higher-in-prices",
-      "pubDate": "Thu, 27 Aug 2026 11:11:08 +0000"
-    },
-    {
-      "title": "Bitcoin tests its largest supply wall at $80,000, near ETF holders’ average price",
-      "link": "https://www.coindesk.com/markets/2026/08/27/bitcoin-tests-its-largest-supply-wall-at-usd80-000-near-etf-holders-average-price",
-      "pubDate": "Thu, 27 Aug 2026 10:54:24 +0000"
-    },
-    {
-      "title": "Unstoppable Domains drops $2 million plan to bring .crypto and .bitcoin to standard internet",
-      "link": "https://www.coindesk.com/web3/2026/08/27/unstoppable-domains-drops-usd2-million-plan-to-bring-crypto-and-bitcoin-to-standard-internet",
-      "pubDate": "Thu, 27 Aug 2026 10:51:02 +0000"
-    },
-    {
-      "title": "Bitcoin steadies above $79,000 as ETF inflows hit longest streak since April",
-      "link": "https://www.coindesk.com/markets/2026/08/27/bitcoin-steadies-above-usd79-000-as-etf-inflows-hit-longest-streak-since-april",
-      "pubDate": "Thu, 27 Aug 2026 10:31:21 +0000"
-    },
-    {
-      "title": "Bitfinex Securities raises $50 million in push to offer tokenized nickel trading",
-      "link": "https://www.coindesk.com/business/2026/08/27/bitfinex-securities-raises-usd50-million-in-push-to-offer-tokenized-nickel-trading",
-      "pubDate": "Thu, 27 Aug 2026 10:00:00 +0000"
-    },
-    {
-      "title": "BlackRock's Mitchnick says macro case for bitcoin is strengthening after record trading in positive week",
-      "link": "https://www.coindesk.com/markets/2026/08/27/blackrock-s-mitchnick-says-macro-case-for-bitcoin-is-strengthening-after-record-trading-in-positive-week",
-      "pubDate": "Thu, 27 Aug 2026 09:19:39 +0000"
-    },
-    {
-      "title": "Nvidia shares surge 8% on earnings beat, lifting technology stocks and bitcoin",
-      "link": "https://www.coindesk.com/markets/2026/08/27/nvidia-shares-surge-8-on-earnings-beat-lifting-technology-stocks-and-bitcoin",
-      "pubDate": "Thu, 27 Aug 2026 09:19:26 +0000"
-    },
-    {
-      "title": "Britain plans new Bank of England objective for stablecoins",
-      "link": "https://www.coindesk.com/policy/2026/08/27/britain-plans-new-bank-of-england-objective-for-stablecoins",
-      "pubDate": "Thu, 27 Aug 2026 09:03:23 +0000"
     }
   ]
 }
