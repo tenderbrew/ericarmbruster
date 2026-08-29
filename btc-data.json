@@ -1,13 +1,13 @@
 {
-  "fetchedAt": "2026-08-29T09:59:05.578Z",
+  "fetchedAt": "2026-08-29T16:40:43.272Z",
   "price": {
-    "usd": 77677,
-    "time": 1787997308
+    "usd": 77979,
+    "time": 1788021310
   },
   "moves": {
-    "d1": -0.18473769630594772,
-    "d7": 0.7731825381560142,
-    "d30": 19.97682452695544
+    "d1": 0.20333353733741344,
+    "d7": 1.1649780648437469,
+    "d30": 20.443281792389744
   },
   "history90d": [
     {
@@ -372,60 +372,80 @@
     },
     {
       "date": "2026-08-29",
-      "close": 77668.23901217575
+      "close": 77967.97944322102
     }
   ],
   "blocks": [
     {
-      "height": 964553,
-      "id": "00000000000000000001b5e055a5068b0b9ff502d442a4f6b8032d5252ce3d7d",
-      "timestamp": 1787997212,
-      "txCount": 7165
+      "height": 964599,
+      "id": "0000000000000000000012015b9c99394e6154b042771f650cbdba55daaa95fc",
+      "timestamp": 1788021596,
+      "txCount": 3944
     },
     {
-      "height": 964552,
-      "id": "0000000000000000000212004bbd30842f5691c2eaf3c8db2bbbbe520951a1fe",
-      "timestamp": 1787996976,
-      "txCount": 4606
+      "height": 964598,
+      "id": "0000000000000000000061ec1d7fb22c5d7f2495ecc077ba021642924ef59e5f",
+      "timestamp": 1788020884,
+      "txCount": 6121
     },
     {
-      "height": 964551,
-      "id": "000000000000000000018e5c0291ffe954f6ecd1491e50a7ad22e00f486a69cc",
-      "timestamp": 1787996023,
-      "txCount": 5489
+      "height": 964597,
+      "id": "000000000000000000016bcb4928d28cb4d5c37d295074da186a1fd1e7b1b52b",
+      "timestamp": 1788020469,
+      "txCount": 5239
     },
     {
-      "height": 964550,
-      "id": "00000000000000000000b0104ffe4702cacba1c9366b4bd3794f26006c4c9a37",
-      "timestamp": 1787995555,
-      "txCount": 6966
+      "height": 964596,
+      "id": "00000000000000000001e7eede3cb392f59dc64d6a41c5bf9b3d15c11a9f3dcf",
+      "timestamp": 1788020066,
+      "txCount": 6336
     },
     {
-      "height": 964549,
-      "id": "000000000000000000021b5a93058a1a36749e5b75d94869ffda22220b58c2c9",
-      "timestamp": 1787995444,
-      "txCount": 4728
+      "height": 964595,
+      "id": "000000000000000000015c6a85c626a23d5e11b10a395e0b8a12c07b9c972ae7",
+      "timestamp": 1788019846,
+      "txCount": 6128
     },
     {
-      "height": 964548,
-      "id": "00000000000000000000d4e0f6954162579481204829e17776ec6709ae54f6eb",
-      "timestamp": 1787994470,
-      "txCount": 4814
+      "height": 964594,
+      "id": "00000000000000000000c9064537c2d3e0dfacc6be7759afa17542ed575f0b8d",
+      "timestamp": 1788019566,
+      "txCount": 5143
     },
     {
-      "height": 964547,
-      "id": "00000000000000000001df0f9a3e2b9d0dd3bca28bae869621e69677dc788654",
-      "timestamp": 1787994380,
-      "txCount": 3650
+      "height": 964593,
+      "id": "00000000000000000001d4f0e0c74441b8a11f1b2bf4f0cbc057ec3966e402e2",
+      "timestamp": 1788019520,
+      "txCount": 4556
     },
     {
-      "height": 964546,
-      "id": "000000000000000000002c05d15c4d3baeab74c39cc7357f875a9b5f3cfc2da2",
-      "timestamp": 1787993934,
-      "txCount": 4175
+      "height": 964592,
+      "id": "000000000000000000013f1a084d25a545374782217efa76e16cb18c5cc99933",
+      "timestamp": 1788017900,
+      "txCount": 5987
     }
   ],
   "news": [
+    {
+      "title": "Ditching 'digital gold': BPI study suggests everyday Americans prefer control and micro-investing",
+      "link": "https://www.coindesk.com/business/2026/08/28/ditch-digital-gold-bpi-study-suggests-everyday-americans-prefer-control-and-micro-investing",
+      "pubDate": "Sat, 29 Aug 2026 15:00:00 +0000"
+    },
+    {
+      "title": "Swift’s $1.5 quadrillion network faces a blockchain test",
+      "link": "https://www.coindesk.com/business/2026/08/29/swift-s-usd1-5-quadrillion-network-faces-a-blockchain-test",
+      "pubDate": "Sat, 29 Aug 2026 15:00:00 +0000"
+    },
+    {
+      "title": "The next trillion-dollar currency may not be a stablecoin — it might not even have a name yet",
+      "link": "https://www.coindesk.com/business/2026/08/29/the-next-trillion-dollar-currency-may-not-be-a-stablecoin-it-might-not-even-have-a-name-yet",
+      "pubDate": "Sat, 29 Aug 2026 15:00:00 +0000"
+    },
+    {
+      "title": "Tokenized assets are busier than the data shows",
+      "link": "https://www.coindesk.com/opinion/2026/08/29/tokenized-assets-are-busier-than-the-data-shows",
+      "pubDate": "Sat, 29 Aug 2026 13:00:00 +0000"
+    },
     {
       "title": "Bitcoin wallets untouched for 10 years moved $40 million. Most avoided exchanges",
       "link": "https://www.coindesk.com/markets/2026/08/28/bitcoin-wallets-untouched-for-10-years-moved-usd40-million-most-avoided-exchanges",
@@ -465,26 +485,6 @@
       "title": "Ethena looks beyond crypto to squeeze yield from booming equity perpetuals",
       "link": "https://www.coindesk.com/business/2026/08/28/ethena-looks-beyond-crypto-to-squeeze-yield-from-booming-equity-perpetuals",
       "pubDate": "Fri, 28 Aug 2026 12:30:57 +0000"
-    },
-    {
-      "title": "SBI buys 20% stake in Indonesia's Ajaib for $270 million to expand yen stablecoin in Southeast Asia",
-      "link": "https://www.coindesk.com/business/2026/08/28/sbi-stakes-usd270-million-in-ajaib-to-expand-yen-stablecoin-in-southeast-asia",
-      "pubDate": "Fri, 28 Aug 2026 12:18:31 +0000"
-    },
-    {
-      "title": "Bitcoin is outperforming stocks and correlating with gold just when it matters most",
-      "link": "https://www.coindesk.com/daybook-us/2026/08/28/bitcoin-is-outperforming-stocks-and-correlating-with-gold-just-when-it-matters-most",
-      "pubDate": "Fri, 28 Aug 2026 11:43:19 +0000"
-    },
-    {
-      "title": "Circle's USDC takes over Chelsea's jersey in Premier League first sponsorship deal",
-      "link": "https://www.coindesk.com/business/2026/08/28/circle-s-usdc-takes-over-chelsea-s-jersey-in-premier-league-first",
-      "pubDate": "Fri, 28 Aug 2026 11:09:27 +0000"
-    },
-    {
-      "title": "Bullish backs USD.AI with $100 million in financing to drive GPU-backed loans",
-      "link": "https://www.coindesk.com/business/2026/08/28/bullish-backs-usd-ai-with-usd100-million-gpu-stablecoin-financing",
-      "pubDate": "Fri, 28 Aug 2026 11:03:18 +0000"
     }
   ]
 }
