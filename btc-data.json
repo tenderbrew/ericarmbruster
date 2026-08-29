@@ -1,19 +1,15 @@
 {
-  "fetchedAt": "2026-08-28T15:16:49.180Z",
+  "fetchedAt": "2026-08-29T01:43:42.876Z",
   "price": {
-    "usd": 79363,
-    "time": 1787929809
+    "usd": 77783,
+    "time": 1787967609
   },
   "moves": {
-    "d1": -1.1279345694130916,
-    "d7": 1.3345920612119144,
-    "d30": 24.166495943748025
+    "d1": -0.048527263305286894,
+    "d7": 0.9107001733510423,
+    "d30": 20.14054793800193
   },
   "history90d": [
-    {
-      "date": "2026-05-31",
-      "close": 73820.30385315015
-    },
     {
       "date": "2026-06-01",
       "close": 73598.6681238158
@@ -371,61 +367,75 @@
       "close": 80268.37474707834
     },
     {
-      "date": "2026-08-28",
-      "close": 79347.88530561824
+      "date": "2026-08-29",
+      "close": 77820.76428719184
+    },
+    {
+      "date": "2026-08-29",
+      "close": 77792.24246435211
     }
   ],
   "blocks": [
     {
-      "height": 964453,
-      "id": "0000000000000000000041c1c703f5ad2132624e67b8000b4d1d0cf0aeaf0182",
-      "timestamp": 1787929933,
-      "txCount": 2023
+      "height": 964508,
+      "id": "000000000000000000000e87b3ce6512da2e3caad4402db055c30013df7f7b63",
+      "timestamp": 1787967093,
+      "txCount": 4168
     },
     {
-      "height": 964452,
-      "id": "000000000000000000021f51fa168c93f6d4d0cb3de529121a5081c20d15da71",
-      "timestamp": 1787929920,
-      "txCount": 4127
+      "height": 964507,
+      "id": "00000000000000000001f19a1245f2a1e90d631781f0acfe0624d4c5fd40942b",
+      "timestamp": 1787966676,
+      "txCount": 2793
     },
     {
-      "height": 964451,
-      "id": "000000000000000000015d28a206368b1ecb2c887a8e547c15b7654a8cb5069c",
-      "timestamp": 1787929121,
-      "txCount": 4713
+      "height": 964506,
+      "id": "0000000000000000000239940c29055a2c0424be729d7dfe92be219bb8612b5a",
+      "timestamp": 1787965444,
+      "txCount": 6582
     },
     {
-      "height": 964450,
-      "id": "00000000000000000001a5b58fae965ad9a03b0a22eab903e076895e59815f49",
-      "timestamp": 1787928339,
-      "txCount": 2913
+      "height": 964505,
+      "id": "000000000000000000019031d6cdc6e21929dae81dfcab2a5bea469d7865b47f",
+      "timestamp": 1787965381,
+      "txCount": 4801
     },
     {
-      "height": 964449,
-      "id": "000000000000000000022e8231bc7ed17b05fcb6a847858b42e489dfe89eae89",
-      "timestamp": 1787928152,
-      "txCount": 2886
+      "height": 964504,
+      "id": "00000000000000000000f40d3681f50ca17c3b792f4af9acb9eadd76c4dfb332",
+      "timestamp": 1787964600,
+      "txCount": 6022
     },
     {
-      "height": 964448,
-      "id": "0000000000000000000098c89e345f2e203d49c9964777a7a18db63cf69e0dab",
-      "timestamp": 1787928107,
-      "txCount": 3793
+      "height": 964503,
+      "id": "00000000000000000000408cb2ba1e77d694c749bc38dc2c14f4c351d4275ed4",
+      "timestamp": 1787964192,
+      "txCount": 6624
     },
     {
-      "height": 964447,
-      "id": "000000000000000000004885676fa82b2b4575742a4c1de6895c2680c09b74e9",
-      "timestamp": 1787927495,
-      "txCount": 4521
+      "height": 964502,
+      "id": "000000000000000000012eb5fe28a7106c81f82065dfdab4e0590d6bf859b42e",
+      "timestamp": 1787964151,
+      "txCount": 5647
     },
     {
-      "height": 964446,
-      "id": "00000000000000000000a6ba42fc7920064540d52ba242b12b9e3ed056a2af48",
-      "timestamp": 1787926329,
-      "txCount": 4268
+      "height": 964501,
+      "id": "00000000000000000000999970ad6ff158ea8a327cc54f4d200c35b53bd48048",
+      "timestamp": 1787964013,
+      "txCount": 3993
     }
   ],
   "news": [
+    {
+      "title": "Kalshi takes legal blow in court ruling confirming state powers over prediction markets",
+      "link": "https://www.coindesk.com/policy/2026/08/28/kalshi-takes-legal-blow-in-court-ruling-confirming-state-powers-over-prediction-markets",
+      "pubDate": "Fri, 28 Aug 2026 21:28:12 +0000"
+    },
+    {
+      "title": "Solana vote to double disinflation passes by a hair in dramatic finish",
+      "link": "https://www.coindesk.com/tech/2026/08/28/solana-vote-to-double-disinflation-passes-by-a-hair-in-dramatic-finish",
+      "pubDate": "Fri, 28 Aug 2026 16:12:45 +0000"
+    },
     {
       "title": "BitGo to buy NYDIG trading arm for $42.5M in cash and stock plus $15M earnout",
       "link": "https://www.coindesk.com/business/2026/08/28/bitgo-to-buy-nydig-trading-arm-for-usd42-5m-in-cash-and-stock-plus-usd15m-earnout",
@@ -475,16 +485,6 @@
       "title": "Visa doubles down on South Korea with Upbit operator Dunamu on stablecoin payments",
       "link": "https://www.coindesk.com/business/2026/08/28/visa-doubles-down-on-south-korea-with-upbit-operator-dunamu-on-stablecoin-payments",
       "pubDate": "Fri, 28 Aug 2026 10:21:47 +0000"
-    },
-    {
-      "title": "Kraken users briefly locked out after a flood of sanctioned crypto transactions",
-      "link": "https://www.coindesk.com/business/2026/08/28/kraken-users-briefly-locked-out-after-a-flood-of-sanctioned-crypto-transactions",
-      "pubDate": "Fri, 28 Aug 2026 09:10:40 +0000"
-    },
-    {
-      "title": "Live updates: Bitcoin trading near $79,000 following Warsh's hawkish Jackson Hole remarks",
-      "link": "https://www.coindesk.com/business/2026/08/28/live-updates-bitcoin-options-worth-usd6-4-billion-just-expired-as-prices-hover-near-usd80-000",
-      "pubDate": "Fri, 28 Aug 2026 09:09:07 +0000"
     }
   ]
 }
