@@ -1,19 +1,15 @@
 {
-  "fetchedAt": "2026-08-29T23:15:38.825Z",
+  "fetchedAt": "2026-08-30T05:19:14.990Z",
   "price": {
-    "usd": 78218,
-    "time": 1788045008
+    "usd": 78150,
+    "time": 1788066908
   },
   "moves": {
-    "d1": 0.5104495136313503,
-    "d7": 1.4750414121231126,
-    "d30": 20.812431747485107
+    "d1": -0.09605544797670618,
+    "d7": 0.5632053025942385,
+    "d30": 24.402885771518747
   },
   "history90d": [
-    {
-      "date": "2026-06-01",
-      "close": 73598.6681238158
-    },
     {
       "date": "2026-06-02",
       "close": 71320.29306465392
@@ -371,68 +367,77 @@
       "close": 77820.76428719184
     },
     {
-      "date": "2026-08-29",
-      "close": 78227.88382486912
+      "date": "2026-08-30",
+      "close": 78225.13950818499
+    },
+    {
+      "date": "2026-08-30",
+      "close": 78139.75998692018
     }
   ],
   "blocks": [
     {
-      "height": 964637,
-      "id": "00000000000000000000879dd9e78d84ab118b42ac8177098fcd96561d310826",
-      "timestamp": 1788044960,
-      "txCount": 5043
+      "height": 964691,
+      "id": "000000000000000000007e332242ea8eb4aec201216f02b925c624f37b87231d",
+      "timestamp": 1788066941,
+      "txCount": 762
     },
     {
-      "height": 964636,
-      "id": "0000000000000000000225f3b7751681ebd0ae6f4f1c0263f1f62e0a001ad456",
-      "timestamp": 1788044072,
-      "txCount": 5266
+      "height": 964690,
+      "id": "0000000000000000000067fa330a0eb415f73e1d67ee531bd8f688be807f2f1d",
+      "timestamp": 1788066600,
+      "txCount": 6063
     },
     {
-      "height": 964635,
-      "id": "00000000000000000000136ae06ee48ef72ec5a8aa06c1b14eb9917c1f48b33d",
-      "timestamp": 1788043224,
-      "txCount": 6457
+      "height": 964689,
+      "id": "0000000000000000000046f35315ae7d05a5b7ba557799f175445058a5cdaf92",
+      "timestamp": 1788066062,
+      "txCount": 6077
     },
     {
-      "height": 964634,
-      "id": "00000000000000000000c9a149670b460852fe13bf20803beb2d0d059de46b1f",
-      "timestamp": 1788043162,
-      "txCount": 4341
+      "height": 964688,
+      "id": "00000000000000000001a8e22d12aac7eb04cd91c101b4ddc0213776c289e663",
+      "timestamp": 1788065305,
+      "txCount": 6228
     },
     {
-      "height": 964633,
-      "id": "000000000000000000006d5b829dbd5fa37813981d2f722c6336ab4e918d048a",
-      "timestamp": 1788042224,
-      "txCount": 4919
+      "height": 964687,
+      "id": "000000000000000000005a341e088715aa5e62a43d04b855cb7c4a5162ccbd5b",
+      "timestamp": 1788065143,
+      "txCount": 6891
     },
     {
-      "height": 964632,
-      "id": "000000000000000000019055b7ff957f906bcac2a50f8964ca14df5640959893",
-      "timestamp": 1788041189,
-      "txCount": 1103
+      "height": 964686,
+      "id": "00000000000000000001f103a16b4c9a90ce72c02f495d34ff11ff3f8f281100",
+      "timestamp": 1788064934,
+      "txCount": 6196
     },
     {
-      "height": 964631,
-      "id": "00000000000000000001af93257b0721156b28e6675bb3ca0348a5d4d0eacfe4",
-      "timestamp": 1788040814,
-      "txCount": 4393
+      "height": 964685,
+      "id": "00000000000000000000f1c5175d61b359a1cb016f40a479c977347742fbc9af",
+      "timestamp": 1788064606,
+      "txCount": 6456
     },
     {
-      "height": 964630,
-      "id": "000000000000000000021312c2c87051be2193862cd5dcb4c4216859adff37b2",
-      "timestamp": 1788040224,
-      "txCount": 4167
+      "height": 964684,
+      "id": "0000000000000000000021b91668ef9258cff127f15507ddc282c7770d150e6f",
+      "timestamp": 1788064330,
+      "txCount": 3805
     }
   ],
   "news": [
+    {
+      "title": "A $1.1 million crypto card hack crashed a neobank's token 49%",
+      "link": "https://www.coindesk.com/web3/2026/08/29/a-usd1-1-million-crypto-card-hack-crashed-a-neobank-s-token-49",
+      "pubDate": "Sat, 29 Aug 2026 23:49:17 +0000"
+    },
     {
       "title": "Ditching 'digital gold': BPI study suggests everyday Americans prefer control and micro-investing",
       "link": "https://www.coindesk.com/business/2026/08/28/ditch-digital-gold-bpi-study-suggests-everyday-americans-prefer-control-and-micro-investing",
       "pubDate": "Sat, 29 Aug 2026 15:00:00 +0000"
     },
     {
-      "title": "Swift’s $1.5 quadrillion network faces a blockchain test",
+      "title": "Inside the high-stakes battle between digital dollars and Swift's massive money engine",
       "link": "https://www.coindesk.com/business/2026/08/29/swift-s-usd1-5-quadrillion-network-faces-a-blockchain-test",
       "pubDate": "Sat, 29 Aug 2026 15:00:00 +0000"
     },
@@ -447,7 +452,7 @@
       "pubDate": "Sat, 29 Aug 2026 13:00:00 +0000"
     },
     {
-      "title": "Bitcoin wallets untouched for 10 years moved $40 million. Most avoided exchanges",
+      "title": "Bitcoin wallets untouched for 10 years moved $40 million worth of coins",
       "link": "https://www.coindesk.com/markets/2026/08/28/bitcoin-wallets-untouched-for-10-years-moved-usd40-million-most-avoided-exchanges",
       "pubDate": "Sat, 29 Aug 2026 04:30:00 +0000"
     },
@@ -480,11 +485,6 @@
       "title": "The Clarity Act slipped to September. Banks are building anyway",
       "link": "https://www.coindesk.com/opinion/2026/08/28/the-clarity-act-slipped-to-september-banks-are-building-anyway",
       "pubDate": "Fri, 28 Aug 2026 13:00:00 +0000"
-    },
-    {
-      "title": "Ethena looks beyond crypto to squeeze yield from booming equity perpetuals",
-      "link": "https://www.coindesk.com/business/2026/08/28/ethena-looks-beyond-crypto-to-squeeze-yield-from-booming-equity-perpetuals",
-      "pubDate": "Fri, 28 Aug 2026 12:30:57 +0000"
     }
   ]
 }
