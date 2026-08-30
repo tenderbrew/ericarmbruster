@@ -1,13 +1,13 @@
 {
-  "fetchedAt": "2026-08-30T11:50:42.362Z",
+  "fetchedAt": "2026-08-30T16:37:40.947Z",
   "price": {
-    "usd": 78180,
-    "time": 1788090308
+    "usd": 79142,
+    "time": 1788107709
   },
   "moves": {
-    "d1": -0.05770460553831125,
-    "d7": 0.6018092201768077,
-    "d30": 24.450641197918554
+    "d1": 1.1720790753195987,
+    "d7": 1.8397081773245505,
+    "d30": 25.981998537805985
   },
   "history90d": [
     {
@@ -372,60 +372,75 @@
     },
     {
       "date": "2026-08-30",
-      "close": 78165.31138576473
+      "close": 79153.1765548772
     }
   ],
   "blocks": [
     {
-      "height": 964723,
-      "id": "00000000000000000001cda5eabf7ef9d6e09dcc44ef39e3e5c7ef6cbd44a25e",
-      "timestamp": 1788090457,
-      "txCount": 4203
+      "height": 964754,
+      "id": "000000000000000000011ac93383a5f328863b25edccd971e30c616186aa56f5",
+      "timestamp": 1788107336,
+      "txCount": 6260
     },
     {
-      "height": 964722,
-      "id": "00000000000000000001424d948155171942bcc8b665b1ea499fa4c92bc23d4c",
-      "timestamp": 1788089824,
-      "txCount": 4824
+      "height": 964753,
+      "id": "000000000000000000000f095e3332fafe013b8156c4294d38d1619a81d34e1d",
+      "timestamp": 1788107265,
+      "txCount": 6097
     },
     {
-      "height": 964721,
-      "id": "000000000000000000001bfa82eb17ce1228d5ceb0b6930707bf88a1ab9111d0",
-      "timestamp": 1788087466,
-      "txCount": 5730
+      "height": 964752,
+      "id": "000000000000000000000d2011fd900eb93f58ad3a421034b00821e2b0471973",
+      "timestamp": 1788106940,
+      "txCount": 4718
     },
     {
-      "height": 964720,
-      "id": "0000000000000000000231cc49c427897afe82e86ccafe1a5211381d9d485030",
-      "timestamp": 1788086950,
-      "txCount": 6452
+      "height": 964751,
+      "id": "00000000000000000000c034881e8550951bebb51b85e08190bb3b6cc4fe3b6a",
+      "timestamp": 1788105741,
+      "txCount": 6306
     },
     {
-      "height": 964719,
-      "id": "0000000000000000000077dc943525aadd66a84632381c3f6ac598571fc547e7",
-      "timestamp": 1788086944,
-      "txCount": 4063
+      "height": 964750,
+      "id": "0000000000000000000036cb36bebd2c7a7ebde6a30936be86c645fb86a8fcc6",
+      "timestamp": 1788105640,
+      "txCount": 6175
     },
     {
-      "height": 964718,
-      "id": "000000000000000000019d5913d92a3167d1cc206f5015c75ad75550d74bd36d",
-      "timestamp": 1788085357,
-      "txCount": 5896
+      "height": 964749,
+      "id": "000000000000000000017c7fe4c2364589df29627a292023259e935c3d811d80",
+      "timestamp": 1788105189,
+      "txCount": 4687
     },
     {
-      "height": 964717,
-      "id": "000000000000000000003f31599aa78c14dee25589d72f57009e5df1fe851f4e",
-      "timestamp": 1788085071,
-      "txCount": 6641
+      "height": 964748,
+      "id": "00000000000000000001a413362f6492394985732c41ee37f6680293fede0f6f",
+      "timestamp": 1788104236,
+      "txCount": 6354
     },
     {
-      "height": 964716,
-      "id": "00000000000000000001a561b4225f27ab91947608c2c1aeaee39bdb2d039052",
-      "timestamp": 1788084755,
-      "txCount": 4636
+      "height": 964747,
+      "id": "0000000000000000000220167f0e83e8cf4955fde282d115c86a7f4915571854",
+      "timestamp": 1788103948,
+      "txCount": 5810
     }
   ],
   "news": [
+    {
+      "title": "Michael Saylor hints at first bitcoin purchase in two months as bitcoin nears $79,000",
+      "link": "https://www.coindesk.com/markets/2026/08/30/bitcoin-nears-usd79-000-as-michael-saylor-hints-at-first-bitcoin-purchase-in-two-months",
+      "pubDate": "Sun, 30 Aug 2026 15:39:55 +0000"
+    },
+    {
+      "title": "From Hawala to Swift: Inside the 1,000-year battle to move money safely",
+      "link": "https://www.coindesk.com/business/2026/08/30/from-hawala-to-swift-inside-the-1-000-year-battle-to-move-money-safely",
+      "pubDate": "Sun, 30 Aug 2026 15:00:00 +0000"
+    },
+    {
+      "title": "Crypto market makers are cashing in on bitcoin's rally - without betting on direction",
+      "link": "https://www.coindesk.com/markets/2026/08/28/crypto-market-makers-are-cashing-in-on-bitcoin-s-rally-without-betting-on-direction",
+      "pubDate": "Sun, 30 Aug 2026 12:00:00 +0000"
+    },
     {
       "title": "A $1.1 million crypto card hack crashed a neobank's token 49%",
       "link": "https://www.coindesk.com/web3/2026/08/29/a-usd1-1-million-crypto-card-hack-crashed-a-neobank-s-token-49",
@@ -470,21 +485,6 @@
       "title": "Solana vote to double disinflation passes by a hair in dramatic finish",
       "link": "https://www.coindesk.com/tech/2026/08/28/solana-vote-to-double-disinflation-passes-by-a-hair-in-dramatic-finish",
       "pubDate": "Fri, 28 Aug 2026 16:12:45 +0000"
-    },
-    {
-      "title": "BitGo to buy NYDIG trading arm for $42.5M in cash and stock plus $15M earnout",
-      "link": "https://www.coindesk.com/business/2026/08/28/bitgo-to-buy-nydig-trading-arm-for-usd42-5m-in-cash-and-stock-plus-usd15m-earnout",
-      "pubDate": "Fri, 28 Aug 2026 14:37:14 +0000"
-    },
-    {
-      "title": "Fed Chair Kevin Warsh at Jackson Hole: 'We have work to do' on inflation",
-      "link": "https://www.coindesk.com/markets/2026/08/28/warsh-at-jackson-hole-we-have-work-to-do-on-inflaiton",
-      "pubDate": "Fri, 28 Aug 2026 14:05:12 +0000"
-    },
-    {
-      "title": "The Clarity Act slipped to September. Banks are building anyway",
-      "link": "https://www.coindesk.com/opinion/2026/08/28/the-clarity-act-slipped-to-september-banks-are-building-anyway",
-      "pubDate": "Fri, 28 Aug 2026 13:00:00 +0000"
     }
   ]
 }
