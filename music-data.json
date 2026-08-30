@@ -1,7 +1,79 @@
 {
-  "fetchedAt": "2026-08-27T18:10:01.303Z",
-  "windowPlays": 396,
+  "fetchedAt": "2026-08-30T18:10:01.705Z",
+  "windowPlays": 408,
   "recentTracks": [
+    {
+      "artist": "Gin Blossoms",
+      "album": "Congratulations I’m Sorry",
+      "track": "Follow You Down",
+      "played": 1788107690
+    },
+    {
+      "artist": "Nirvana",
+      "album": "Nevermind",
+      "track": "Smells Like Teen Spirit",
+      "played": 1788107396
+    },
+    {
+      "artist": "Wilco",
+      "album": "Summerteeth",
+      "track": "Can’t Stand It",
+      "played": 1788107181
+    },
+    {
+      "artist": "Gin Blossoms",
+      "album": "New Miserable Experience",
+      "track": "Allison Road",
+      "played": 1788107108
+    },
+    {
+      "artist": "Weezer",
+      "album": "Pinkerton",
+      "track": "The Good Life",
+      "played": 1788106857
+    },
+    {
+      "artist": "Green Day",
+      "album": "Insomniac",
+      "track": "Brain Stew",
+      "played": 1788106664
+    },
+    {
+      "artist": "The Smashing Pumpkins",
+      "album": "Mellon Collie and the Infinite Sadness",
+      "track": "1979",
+      "played": 1788106589
+    },
+    {
+      "artist": "Jimmy Eat World",
+      "album": "Clarity",
+      "track": "Lucky Denver Mint",
+      "played": 1788103032
+    },
+    {
+      "artist": "Radiohead",
+      "album": "The Bends",
+      "track": "Fake Plastic Trees",
+      "played": 1788102748
+    },
+    {
+      "artist": "The Smashing Pumpkins",
+      "album": "Adore",
+      "track": "Ava Adore",
+      "played": 1788102487
+    },
+    {
+      "artist": "Radiohead",
+      "album": "OK Computer: OKNOTOK 1997 2017",
+      "track": "Paranoid Android",
+      "played": 1788102082
+    },
+    {
+      "artist": "blink‐182",
+      "album": "Enema of the State",
+      "track": "What’s My Age Again?",
+      "played": 1788101941
+    },
     {
       "artist": "Bush",
       "album": "Sixteen Stone",
@@ -79,78 +151,6 @@
       "album": "Sixpence None the Richer",
       "track": "There She Goes",
       "played": 1786289900
-    },
-    {
-      "artist": "The Smashing Pumpkins",
-      "album": "Mellon Collie and the Infinite Sadness",
-      "track": "1979",
-      "played": 1786289644
-    },
-    {
-      "artist": "Goo Goo Dolls",
-      "album": "Dizzy Up the Girl",
-      "track": "Black Balloon",
-      "played": 1786289402
-    },
-    {
-      "artist": "The Smashing Pumpkins",
-      "album": "Siamese Dream",
-      "track": "Today",
-      "played": 1786289192
-    },
-    {
-      "artist": "CAKE",
-      "album": "Fashion Nugget",
-      "track": "The Distance",
-      "played": 1786288963
-    },
-    {
-      "artist": "Nirvana",
-      "album": "Nevermind",
-      "track": "Lithium",
-      "played": 1786288709
-    },
-    {
-      "artist": "Wilco",
-      "album": "Summerteeth",
-      "track": "Can’t Stand It",
-      "played": 1786288494
-    },
-    {
-      "artist": "Pavement",
-      "album": "Slanted and Enchanted: Luxe & Reduxe",
-      "track": "Summer Babe (Winter version)",
-      "played": 1786120438
-    },
-    {
-      "artist": "Wilco",
-      "album": "Being There",
-      "track": "Outtasite (Outta Mind)",
-      "played": 1786120286
-    },
-    {
-      "artist": "The Smashing Pumpkins",
-      "album": "Mellon Collie and the Infinite Sadness",
-      "track": "1979",
-      "played": 1786120030
-    },
-    {
-      "artist": "No Doubt",
-      "album": "Tragic Kingdom",
-      "track": "Don’t Speak",
-      "played": 1786118026
-    },
-    {
-      "artist": "Pavement",
-      "album": "Crooked Rain, Crooked Rain",
-      "track": "Cut Your Hair",
-      "played": 1786117820
-    },
-    {
-      "artist": "Semisonic",
-      "album": "Feeling Strangely Fine",
-      "track": "Closing Time",
-      "played": 1786117447
     }
   ],
   "topArtists": [
@@ -171,6 +171,10 @@
       "plays": 11
     },
     {
+      "artist": "Wilco",
+      "plays": 9
+    },
+    {
       "artist": "Rilo Kiley",
       "plays": 9
     },
@@ -181,10 +185,6 @@
     {
       "artist": "Okkervil River",
       "plays": 9
-    },
-    {
-      "artist": "Wilco",
-      "plays": 8
     },
     {
       "artist": "The Ataris",
@@ -217,6 +217,16 @@
       "plays": 6
     },
     {
+      "artist": "Nirvana",
+      "album": "Nevermind",
+      "plays": 4
+    },
+    {
+      "artist": "Weezer",
+      "album": "Pinkerton",
+      "plays": 4
+    },
+    {
       "artist": "Lit",
       "album": "A Place in the Sun",
       "plays": 4
@@ -234,16 +244,6 @@
     {
       "artist": "Rilo Kiley",
       "album": "Under the Blacklight",
-      "plays": 4
-    },
-    {
-      "artist": "Thursday",
-      "album": "Full Collapse",
-      "plays": 4
-    },
-    {
-      "artist": "The Ataris",
-      "album": "Blue Skies, Broken Hearts…Next 12 Exits",
       "plays": 4
     }
   ]
