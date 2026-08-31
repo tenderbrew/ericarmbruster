@@ -1,13 +1,13 @@
 {
-  "fetchedAt": "2026-08-31T05:26:47.036Z",
+  "fetchedAt": "2026-08-31T13:38:44.917Z",
   "price": {
-    "usd": 78007,
-    "time": 1788153609
+    "usd": 77966,
+    "time": 1788183311
   },
   "moves": {
-    "d1": 0.4491071477714659,
-    "d7": -1.2243122043703147,
-    "d30": 24.269232521337326
+    "d1": 0.3963117141173367,
+    "d7": -1.2762280990928576,
+    "d30": 24.20391737611478
   },
   "history90d": [
     {
@@ -372,119 +372,119 @@
     },
     {
       "date": "2026-08-31",
-      "close": 78065.00761353629
+      "close": 77850.97273572591
     }
   ],
   "blocks": [
     {
-      "height": 964831,
-      "id": "000000000000000000003d984a1017b6ba27a591348864e5f5d92e8e9adb5249",
-      "timestamp": 1788153828,
-      "txCount": 6313
+      "height": 964882,
+      "id": "00000000000000000000e1c0d36b24f9bea281e4aac29904e76ded89e0305df9",
+      "timestamp": 1788183249,
+      "txCount": 2927
     },
     {
-      "height": 964830,
-      "id": "0000000000000000000025180725b5c0e95e146d5b2e233df91af354e162e223",
-      "timestamp": 1788153343,
-      "txCount": 3080
+      "height": 964881,
+      "id": "00000000000000000001810c65e84e86093436237fcc577a6f0f6cf2543a7437",
+      "timestamp": 1788183116,
+      "txCount": 3546
     },
     {
-      "height": 964829,
-      "id": "0000000000000000000200122cf33e0f941f3879294d2b744cf2f666ffcd229a",
-      "timestamp": 1788152554,
-      "txCount": 3351
+      "height": 964880,
+      "id": "000000000000000000003c62f0023892cdcf3f704f85f26993c4efca970b4374",
+      "timestamp": 1788182716,
+      "txCount": 4228
     },
     {
-      "height": 964828,
-      "id": "00000000000000000000bb4457f21af2ee2f36267175b3b9816edfb3cd6a1dd0",
-      "timestamp": 1788151628,
-      "txCount": 4255
+      "height": 964879,
+      "id": "000000000000000000021f87e99af1eb795f8284feb0f4461ed7a36670254097",
+      "timestamp": 1788181899,
+      "txCount": 3260
     },
     {
-      "height": 964827,
-      "id": "000000000000000000010377bd998e8638fc1a5629e34ee5721a9c4874c86212",
-      "timestamp": 1788151397,
-      "txCount": 2748
+      "height": 964878,
+      "id": "0000000000000000000170df33186c16ae5e46c7732c1d0242471c0f9157caee",
+      "timestamp": 1788180792,
+      "txCount": 4290
     },
     {
-      "height": 964826,
-      "id": "0000000000000000000201a79c9beb8ef33cf72ac3dad6f90268cd93d878b788",
-      "timestamp": 1788151197,
-      "txCount": 2468
+      "height": 964877,
+      "id": "00000000000000000000a502c9891341bef6db50a5179e3dddb0b11d376bf6a8",
+      "timestamp": 1788179942,
+      "txCount": 4224
     },
     {
-      "height": 964825,
-      "id": "00000000000000000001c7860b8129a51cd71fadeb39eaa28455b5443241a953",
-      "timestamp": 1788149439,
-      "txCount": 4506
+      "height": 964876,
+      "id": "000000000000000000002ce7cad66edf55a4ab2dea5f9b0c69e523a85103ac7a",
+      "timestamp": 1788178977,
+      "txCount": 4473
     },
     {
-      "height": 964824,
-      "id": "00000000000000000001d0ade1bb7c3793d4c4b54700b34f5458add9dad31559",
-      "timestamp": 1788147954,
-      "txCount": 7271
+      "height": 964875,
+      "id": "00000000000000000001e30d77ac837fd51427aa691d15f09caebc94208af95f",
+      "timestamp": 1788178939,
+      "txCount": 4312
     }
   ],
   "news": [
     {
-      "title": "Cronos halts blockchain after $75 million lending exploit hits lending app Tectonic",
-      "link": "https://www.coindesk.com/tech/2026/08/31/cronos-halts-blockchain-after-usd75-million-lending-exploit-hits-lending-app-tectonic",
-      "pubDate": "Mon, 31 Aug 2026 04:57:13 +0000"
+      "title": "Ireland bars crypto from new tax-advantaged investment accounts",
+      "link": "https://www.coindesk.com/business/2026/08/31/ireland-bars-crypto-from-new-tax-advantaged-investment-accounts",
+      "pubDate": "Mon, 31 Aug 2026 13:29:56 +0000"
     },
     {
-      "title": "Bitcoin barely blinks as U.S. hits Iran, sending oil higher and stocks lower",
-      "link": "https://www.coindesk.com/markets/2026/08/31/bitcoin-barely-blinks-as-u-s-hits-iran-sending-oil-higher-and-stocks-lower",
-      "pubDate": "Mon, 31 Aug 2026 04:29:10 +0000"
+      "title": "Bitmine makes largest ether purchase since June as Tom Lee points to crypto's strong Q3",
+      "link": "https://www.coindesk.com/business/2026/08/31/bitmine-makes-largest-ether-purchase-since-june-as-tom-lee-points-to-crypto-s-strong-q3",
+      "pubDate": "Mon, 31 Aug 2026 12:53:17 +0000"
     },
     {
-      "title": "Michael Saylor hints at first bitcoin purchase in two months",
-      "link": "https://www.coindesk.com/markets/2026/08/30/bitcoin-nears-usd79-000-as-michael-saylor-hints-at-first-bitcoin-purchase-in-two-months",
-      "pubDate": "Sun, 30 Aug 2026 15:39:55 +0000"
+      "title": "Strategy returns to bitcoin buys, adding $370 million of BTC last week",
+      "link": "https://www.coindesk.com/markets/2026/08/31/strategy-returns-to-bitcoin-buys-adding-usd370-million-worth-last-week",
+      "pubDate": "Mon, 31 Aug 2026 12:11:04 +0000"
     },
     {
-      "title": "From Hawala to Swift: Inside the 1,000-year battle to move money safely",
-      "link": "https://www.coindesk.com/business/2026/08/30/from-hawala-to-swift-inside-the-1-000-year-battle-to-move-money-safely",
-      "pubDate": "Sun, 30 Aug 2026 15:00:00 +0000"
+      "title": "Robinhood Chain beats Ethereum in daily revenue as memecoin trading takes over",
+      "link": "https://www.coindesk.com/markets/2026/08/31/robinhood-chain-beats-ethereum-in-daily-revenue-as-memecoin-trading-takes-over",
+      "pubDate": "Mon, 31 Aug 2026 11:53:56 +0000"
     },
     {
-      "title": "Crypto market makers are cashing in on bitcoin's rally - without betting on direction",
-      "link": "https://www.coindesk.com/markets/2026/08/28/crypto-market-makers-are-cashing-in-on-bitcoin-s-rally-without-betting-on-direction",
-      "pubDate": "Sun, 30 Aug 2026 12:00:00 +0000"
+      "title": "Sberbank plans to add ether and USDT as collateral for crypto-backed loans: Report",
+      "link": "https://www.coindesk.com/business/2026/08/31/sberbank-plans-to-add-ether-and-usdt-as-collateral-for-crypto-backed-loans",
+      "pubDate": "Mon, 31 Aug 2026 11:26:26 +0000"
     },
     {
-      "title": "A $1.1 million crypto card hack crashed a neobank's token 49%",
-      "link": "https://www.coindesk.com/web3/2026/08/29/a-usd1-1-million-crypto-card-hack-crashed-a-neobank-s-token-49",
-      "pubDate": "Sat, 29 Aug 2026 23:49:17 +0000"
+      "title": "Here's 1 metric on U.S. debt that makes bitcoin's bull case look stronger than ever",
+      "link": "https://www.coindesk.com/daybook-us/2026/08/31/here-s-1-metric-on-u-s-debt-that-makes-bitcoin-s-bull-case-look-stronger-than-ever",
+      "pubDate": "Mon, 31 Aug 2026 11:25:34 +0000"
     },
     {
-      "title": "Ditching 'digital gold': BPI study suggests everyday Americans prefer control and micro-investing",
-      "link": "https://www.coindesk.com/business/2026/08/28/ditch-digital-gold-bpi-study-suggests-everyday-americans-prefer-control-and-micro-investing",
-      "pubDate": "Sat, 29 Aug 2026 15:00:00 +0000"
+      "title": "U.S. strikes on Iran fail to stir bitcoin, on track for best month since November 2024",
+      "link": "https://www.coindesk.com/markets/2026/08/31/u-s-strikes-on-iran-fail-to-stir-bitcoin-on-track-for-best-month-since-november-2024",
+      "pubDate": "Mon, 31 Aug 2026 10:44:52 +0000"
     },
     {
-      "title": "Inside the high-stakes battle between digital dollars and Swift's massive money engine",
-      "link": "https://www.coindesk.com/business/2026/08/29/swift-s-usd1-5-quadrillion-network-faces-a-blockchain-test",
-      "pubDate": "Sat, 29 Aug 2026 15:00:00 +0000"
+      "title": "U.S. jobs report, Russia’s digital ruble rollout: Crypto Week Ahead",
+      "link": "https://www.coindesk.com/markets/2026/08/31/u-s-jobs-report-russia-s-digital-ruble-rollout-crypto-week-ahead",
+      "pubDate": "Mon, 31 Aug 2026 08:22:28 +0000"
     },
     {
-      "title": "The next trillion-dollar currency may not be a stablecoin — it might not even have a name yet",
-      "link": "https://www.coindesk.com/business/2026/08/29/the-next-trillion-dollar-currency-may-not-be-a-stablecoin-it-might-not-even-have-a-name-yet",
-      "pubDate": "Sat, 29 Aug 2026 15:00:00 +0000"
+      "title": "Live updates: Bitcoin trades near $78,000; Strategy buys BTC for first time since late June",
+      "link": "https://www.coindesk.com/tech/2026/08/31/live-updates-bitcoin-holds-usd78-000-as-yen-breaks-160-and-rate-hike-bets-lift-the-dollar",
+      "pubDate": "Mon, 31 Aug 2026 08:18:03 +0000"
     },
     {
-      "title": "Tokenized assets are busier than the data shows",
-      "link": "https://www.coindesk.com/opinion/2026/08/29/tokenized-assets-are-busier-than-the-data-shows",
-      "pubDate": "Sat, 29 Aug 2026 13:00:00 +0000"
+      "title": "Luke Dashjr exits mining pool Ocean after split over Bitcoin mining’s future",
+      "link": "https://www.coindesk.com/business/2026/08/31/luke-dashjr-exits-mining-pool-ocean-after-split-over-bitcoin-mining-s-future",
+      "pubDate": "Mon, 31 Aug 2026 08:04:54 +0000"
     },
     {
-      "title": "Bitcoin wallets untouched for 10 years moved $40 million worth of coins",
-      "link": "https://www.coindesk.com/markets/2026/08/28/bitcoin-wallets-untouched-for-10-years-moved-usd40-million-most-avoided-exchanges",
-      "pubDate": "Sat, 29 Aug 2026 04:30:00 +0000"
+      "title": "September Fed rate hike fears look overblown as the probability stands at just 58%, not 90%",
+      "link": "https://www.coindesk.com/markets/2026/08/31/september-fed-rate-hike-fears-appear-overblown-as-the-probability-is-just-58-not-90",
+      "pubDate": "Mon, 31 Aug 2026 06:42:45 +0000"
     },
     {
-      "title": "Ripple is preparing XRP Ledger for quantum computers before ‘Q-Day’ arrives",
-      "link": "https://www.coindesk.com/tech/2026/08/28/ripple-is-preparing-xrp-ledger-for-quantum-computers-before-q-day-arrives",
-      "pubDate": "Sat, 29 Aug 2026 02:30:00 +0000"
+      "title": "Zcash private transactions could go from three-second waits to under 200 milliseconds",
+      "link": "https://www.coindesk.com/tech/2026/08/31/zcash-private-transactions-could-go-from-three-second-waits-to-under-200-milliseconds",
+      "pubDate": "Mon, 31 Aug 2026 05:23:57 +0000"
     }
   ]
 }
