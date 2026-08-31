@@ -1,19 +1,15 @@
 {
-  "fetchedAt": "2026-08-30T23:27:04.007Z",
+  "fetchedAt": "2026-08-31T05:26:47.036Z",
   "price": {
-    "usd": 78349,
-    "time": 1788132011
+    "usd": 78007,
+    "time": 1788153609
   },
   "moves": {
-    "d1": 0.15833847353132757,
-    "d7": 0.8192779558919616,
-    "d30": 24.719663433304184
+    "d1": 0.4491071477714659,
+    "d7": -1.2243122043703147,
+    "d30": 24.269232521337326
   },
   "history90d": [
-    {
-      "date": "2026-06-02",
-      "close": 71320.29306465392
-    },
     {
       "date": "2026-06-03",
       "close": 66727.26415497709
@@ -371,63 +367,77 @@
       "close": 78225.13950818499
     },
     {
-      "date": "2026-08-30",
-      "close": 77981.72360621153
+      "date": "2026-08-31",
+      "close": 77658.23133225394
+    },
+    {
+      "date": "2026-08-31",
+      "close": 78065.00761353629
     }
   ],
   "blocks": [
     {
-      "height": 964805,
-      "id": "00000000000000000000fbb6bd16f5bf87b43b0247a7d8c4be67975f6b340bed",
-      "timestamp": 1788131452,
-      "txCount": 5224
+      "height": 964831,
+      "id": "000000000000000000003d984a1017b6ba27a591348864e5f5d92e8e9adb5249",
+      "timestamp": 1788153828,
+      "txCount": 6313
     },
     {
-      "height": 964804,
-      "id": "000000000000000000021bb5a8cd4da3b091c35d5c3cc3caecf82a640daab845",
-      "timestamp": 1788131066,
-      "txCount": 5187
+      "height": 964830,
+      "id": "0000000000000000000025180725b5c0e95e146d5b2e233df91af354e162e223",
+      "timestamp": 1788153343,
+      "txCount": 3080
     },
     {
-      "height": 964803,
-      "id": "00000000000000000001eac5c5ac61d877b1ddc6674eb1b57bd5ece5ade47242",
-      "timestamp": 1788130667,
-      "txCount": 5673
+      "height": 964829,
+      "id": "0000000000000000000200122cf33e0f941f3879294d2b744cf2f666ffcd229a",
+      "timestamp": 1788152554,
+      "txCount": 3351
     },
     {
-      "height": 964802,
-      "id": "000000000000000000021122872a22f083553158dba486740bd112b3ec001e6e",
-      "timestamp": 1788130074,
-      "txCount": 6624
+      "height": 964828,
+      "id": "00000000000000000000bb4457f21af2ee2f36267175b3b9816edfb3cd6a1dd0",
+      "timestamp": 1788151628,
+      "txCount": 4255
     },
     {
-      "height": 964801,
-      "id": "00000000000000000001f4056288d710d57c6c8e38ffdeea2cb14d7f06210587",
-      "timestamp": 1788129943,
-      "txCount": 6770
+      "height": 964827,
+      "id": "000000000000000000010377bd998e8638fc1a5629e34ee5721a9c4874c86212",
+      "timestamp": 1788151397,
+      "txCount": 2748
     },
     {
-      "height": 964800,
-      "id": "0000000000000000000047b48fa3b2bd9daa4b2fa4c3db2747ef8a4166b049d4",
-      "timestamp": 1788130027,
-      "txCount": 5431
+      "height": 964826,
+      "id": "0000000000000000000201a79c9beb8ef33cf72ac3dad6f90268cd93d878b788",
+      "timestamp": 1788151197,
+      "txCount": 2468
     },
     {
-      "height": 964799,
-      "id": "00000000000000000000c26e75b5835b913728a652e046ad3e94bc2badcfb2b1",
-      "timestamp": 1788129218,
-      "txCount": 5645
+      "height": 964825,
+      "id": "00000000000000000001c7860b8129a51cd71fadeb39eaa28455b5443241a953",
+      "timestamp": 1788149439,
+      "txCount": 4506
     },
     {
-      "height": 964798,
-      "id": "00000000000000000000bd6d417ddd24a14d34e7a7c3e5ad43026a0b47924330",
-      "timestamp": 1788128960,
-      "txCount": 6833
+      "height": 964824,
+      "id": "00000000000000000001d0ade1bb7c3793d4c4b54700b34f5458add9dad31559",
+      "timestamp": 1788147954,
+      "txCount": 7271
     }
   ],
   "news": [
     {
-      "title": "Michael Saylor hints at first bitcoin purchase in two months as bitcoin nears $79,000",
+      "title": "Cronos halts blockchain after $75 million lending exploit hits lending app Tectonic",
+      "link": "https://www.coindesk.com/tech/2026/08/31/cronos-halts-blockchain-after-usd75-million-lending-exploit-hits-lending-app-tectonic",
+      "pubDate": "Mon, 31 Aug 2026 04:57:13 +0000"
+    },
+    {
+      "title": "Bitcoin barely blinks as U.S. hits Iran, sending oil higher and stocks lower",
+      "link": "https://www.coindesk.com/markets/2026/08/31/bitcoin-barely-blinks-as-u-s-hits-iran-sending-oil-higher-and-stocks-lower",
+      "pubDate": "Mon, 31 Aug 2026 04:29:10 +0000"
+    },
+    {
+      "title": "Michael Saylor hints at first bitcoin purchase in two months",
       "link": "https://www.coindesk.com/markets/2026/08/30/bitcoin-nears-usd79-000-as-michael-saylor-hints-at-first-bitcoin-purchase-in-two-months",
       "pubDate": "Sun, 30 Aug 2026 15:39:55 +0000"
     },
@@ -475,16 +485,6 @@
       "title": "Ripple is preparing XRP Ledger for quantum computers before ‘Q-Day’ arrives",
       "link": "https://www.coindesk.com/tech/2026/08/28/ripple-is-preparing-xrp-ledger-for-quantum-computers-before-q-day-arrives",
       "pubDate": "Sat, 29 Aug 2026 02:30:00 +0000"
-    },
-    {
-      "title": "Kalshi takes legal blow in court ruling confirming state powers over prediction markets",
-      "link": "https://www.coindesk.com/policy/2026/08/28/kalshi-takes-legal-blow-in-court-ruling-confirming-state-powers-over-prediction-markets",
-      "pubDate": "Fri, 28 Aug 2026 21:28:12 +0000"
-    },
-    {
-      "title": "Solana vote to double disinflation passes by a hair in dramatic finish",
-      "link": "https://www.coindesk.com/tech/2026/08/28/solana-vote-to-double-disinflation-passes-by-a-hair-in-dramatic-finish",
-      "pubDate": "Fri, 28 Aug 2026 16:12:45 +0000"
     }
   ]
 }
