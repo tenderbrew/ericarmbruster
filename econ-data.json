@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-08-31T13:32:09.793Z",
+  "fetchedAt": "2026-08-31T22:44:54.693Z",
   "indicators": {
     "UNRATE": {
       "latest": {
@@ -63,12 +63,12 @@
     },
     "T10YIE": {
       "latest": {
-        "date": "2026-08-28",
+        "date": "2026-08-31",
         "value": 2.31
       },
       "previous": {
-        "date": "2026-08-27",
-        "value": 2.33
+        "date": "2026-08-28",
+        "value": 2.31
       }
     },
     "PCE": {
@@ -123,52 +123,52 @@
     },
     "DGS2": {
       "latest": {
-        "date": "2026-08-27",
-        "value": 4.2
+        "date": "2026-08-28",
+        "value": 4.34
       },
       "previous": {
-        "date": "2026-08-26",
-        "value": 4.19
+        "date": "2026-08-27",
+        "value": 4.2
       }
     },
     "DGS10": {
       "latest": {
-        "date": "2026-08-27",
-        "value": 4.67
+        "date": "2026-08-28",
+        "value": 4.73
       },
       "previous": {
-        "date": "2026-08-26",
-        "value": 4.66
+        "date": "2026-08-27",
+        "value": 4.67
       }
     },
     "T10Y2Y": {
       "latest": {
-        "date": "2026-08-28",
-        "value": 0.39
+        "date": "2026-08-31",
+        "value": 0.41
       },
       "previous": {
-        "date": "2026-08-27",
-        "value": 0.47
+        "date": "2026-08-28",
+        "value": 0.39
       }
     },
     "DFII10": {
       "latest": {
-        "date": "2026-08-27",
-        "value": 2.34
+        "date": "2026-08-28",
+        "value": 2.42
       },
       "previous": {
-        "date": "2026-08-26",
+        "date": "2026-08-27",
         "value": 2.34
       }
     },
     "BAMLH0A0HYM2": {
       "latest": {
-        "date": "2026-08-27",
-        "value": 2.63
+        "date": "2026-08-28",
+        "value": 2.6
       },
       "previous": {
-        "date": "2026-08-26",
-        "value": 2.67
+        "date": "2026-08-27",
+        "value": 2.63
       }
     },
     "MORTGAGE30US": {
@@ -233,12 +233,12 @@
     },
     "DTWEXBGS": {
       "latest": {
-        "date": "2026-08-21",
-        "value": 118.0628
+        "date": "2026-08-28",
+        "value": 118.7479
       },
       "previous": {
-        "date": "2026-08-20",
-        "value": 118.2548
+        "date": "2026-08-27",
+        "value": 118.3583
       }
     },
     "PERMIT": {
@@ -263,12 +263,12 @@
     },
     "VIXCLS": {
       "latest": {
-        "date": "2026-08-27",
-        "value": 14.51
+        "date": "2026-08-28",
+        "value": 14.43
       },
       "previous": {
-        "date": "2026-08-26",
-        "value": 15.21
+        "date": "2026-08-27",
+        "value": 14.51
       }
     },
     "BOPGSTB": {
@@ -301,6 +301,42 @@
   },
   "news": [
     {
+      "title": "Trump Censorship Machine Loses Again in Court",
+      "link": "https://mises.org/podcasts/audio-mises-wire/trump-censorship-machine-loses-again-court",
+      "pubDate": "Mon, 31 Aug 2026 04:31:12 CDT",
+      "kind": "Podcast"
+    },
+    {
+      "title": "The Fallacy of Stable Prices",
+      "link": "https://mises.org/podcasts/audio-mises-wire/fallacy-stable-prices",
+      "pubDate": "Mon, 31 Aug 2026 04:04:23 CDT",
+      "kind": "Podcast"
+    },
+    {
+      "title": "Trump Censorship Machine Loses Again in Court",
+      "link": "https://mises.org/mises-wire/trump-censorship-machine-loses-again-court",
+      "pubDate": "Mon, 31 Aug 2026 02:00:00 CDT",
+      "kind": "Mises Wire"
+    },
+    {
+      "title": "The Two Lineages of Liberty",
+      "link": "https://mises.org/podcasts/audio-mises-wire/two-lineages-liberty",
+      "pubDate": "Mon, 31 Aug 2026 01:50:47 CDT",
+      "kind": "Podcast"
+    },
+    {
+      "title": "The State Is Coming for Your Roomba",
+      "link": "https://mises.org/podcasts/audio-mises-wire/state-coming-your-roomba",
+      "pubDate": "Mon, 31 Aug 2026 01:19:02 CDT",
+      "kind": "Podcast"
+    },
+    {
+      "title": "Credit Out of “Thin Air” Brings Wealth Destruction",
+      "link": "https://mises.org/mises-wire/credit-out-thin-air-brings-wealth-destruction",
+      "pubDate": "Mon, 31 Aug 2026 11:00:00 CDT",
+      "kind": "Mises Wire"
+    },
+    {
       "title": "The Fallacy of Stable Prices",
       "link": "https://mises.org/mises-wire/fallacy-stable-prices",
       "pubDate": "Mon, 31 Aug 2026 05:00:00 CDT",
@@ -323,42 +359,6 @@
       "link": "https://mises.org/mises-wire/state-coming-your-roomba",
       "pubDate": "Sat, 29 Aug 2026 05:00:00 CDT",
       "kind": "Mises Wire"
-    },
-    {
-      "title": "The Two Lineages of Liberty",
-      "link": "https://mises.org/mises-wire/two-lineages-liberty",
-      "pubDate": "Fri, 28 Aug 2026 02:00:00 CDT",
-      "kind": "Mises Wire"
-    },
-    {
-      "title": "The Life and Times of Murray N. Rothbard",
-      "link": "https://mises.org/friday-philosophy/life-and-times-murray-n-rothbard",
-      "pubDate": "Fri, 28 Aug 2026 11:00:00 CDT",
-      "kind": "Article"
-    },
-    {
-      "title": "Austrian Economics Research Conference 2027",
-      "link": "https://mises.org/events/austrian-economics-research-conference-2027",
-      "pubDate": "Fri, 28 Aug 2026 10:00:00 CDT",
-      "kind": "Article"
-    },
-    {
-      "title": "Libertarian Scholars Conference 2027",
-      "link": "https://mises.org/events/libertarian-scholars-conference-2027",
-      "pubDate": "Fri, 28 Aug 2026 10:00:00 CDT",
-      "kind": "Article"
-    },
-    {
-      "title": "Nationality: You Belong to the State",
-      "link": "https://mises.org/podcasts/audio-mises-wire/nationality-you-belong-state",
-      "pubDate": "Fri, 28 Aug 2026 08:23:02 CDT",
-      "kind": "Podcast"
-    },
-    {
-      "title": "Great News: Your Boots Are Poor Quality",
-      "link": "https://mises.org/power-market/great-news-your-boots-are-poor-quality",
-      "pubDate": "Fri, 28 Aug 2026 07:00:00 CDT",
-      "kind": "Article"
     }
   ]
 }
