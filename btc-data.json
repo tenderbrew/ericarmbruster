@@ -1,13 +1,13 @@
 {
-  "fetchedAt": "2026-09-01T14:07:21.192Z",
+  "fetchedAt": "2026-09-01T18:26:51.491Z",
   "price": {
-    "usd": 78055,
-    "time": 1788271213
+    "usd": 77072,
+    "time": 1788286810
   },
   "moves": {
-    "d1": -0.6336877360806681,
-    "d7": -0.5811055227704198,
-    "d30": 22.912712864976115
+    "d1": -1.885075667096392,
+    "d7": -1.8331556575614916,
+    "d30": 21.364789006846973
   },
   "history90d": [
     {
@@ -372,60 +372,75 @@
     },
     {
       "date": "2026-09-01",
-      "close": 78114.04055932291
+      "close": 77104.43671748268
     }
   ],
   "blocks": [
     {
-      "height": 965043,
-      "id": "000000000000000000000eea2c9fe8d025537919bf99e3115d604b6f85e94e87",
-      "timestamp": 1788271525,
-      "txCount": 3621
+      "height": 965067,
+      "id": "00000000000000000000313613b8241543f12501e686eaa2df60efab3b84dbe9",
+      "timestamp": 1788286969,
+      "txCount": 4493
     },
     {
-      "height": 965042,
-      "id": "00000000000000000000db40ee097e0b84fcc81b278383e10b71340789208af8",
-      "timestamp": 1788271384,
-      "txCount": 2838
+      "height": 965066,
+      "id": "0000000000000000000110ddcc794f58002bfdeb73ea108b93752e4149bb956a",
+      "timestamp": 1788286285,
+      "txCount": 4045
     },
     {
-      "height": 965041,
-      "id": "0000000000000000000081f2ba6326190a7bc9e46bb4192118af99c5402f6358",
-      "timestamp": 1788271249,
-      "txCount": 4159
+      "height": 965065,
+      "id": "000000000000000000001685c5d2bf4d52d0645d30e69eea787a895560db27e2",
+      "timestamp": 1788285104,
+      "txCount": 4069
     },
     {
-      "height": 965040,
-      "id": "00000000000000000000c043a324e2af843d68ccfd827e99e24f4d4166746620",
-      "timestamp": 1788269799,
-      "txCount": 3569
+      "height": 965064,
+      "id": "00000000000000000001616b957ca32b4540534a09dfdadf6a64874c7a47a003",
+      "timestamp": 1788283964,
+      "txCount": 3548
     },
     {
-      "height": 965039,
-      "id": "000000000000000000010f33af62274d03d81a08ddf798a19cab02cbe8f516ef",
-      "timestamp": 1788269513,
-      "txCount": 3827
+      "height": 965063,
+      "id": "00000000000000000001ea0a87ab832a83df04f2bf3e9ea7ab5446a877703f06",
+      "timestamp": 1788284006,
+      "txCount": 3453
     },
     {
-      "height": 965038,
-      "id": "000000000000000000011dd20e85f87f3aa782fa7ce762f694f56f1d5578b43d",
-      "timestamp": 1788269241,
-      "txCount": 1
+      "height": 965062,
+      "id": "00000000000000000001d05d15de89b9f469089c9660361b207e7bc220521281",
+      "timestamp": 1788283075,
+      "txCount": 2808
     },
     {
-      "height": 965037,
-      "id": "0000000000000000000042b3bc7562c8f5f2fe5869f45866373dc10880189d51",
-      "timestamp": 1788269217,
-      "txCount": 3388
+      "height": 965061,
+      "id": "00000000000000000001626b2540f17d003d20c8092a5bba2caac8c058c254ae",
+      "timestamp": 1788282353,
+      "txCount": 2748
     },
     {
-      "height": 965036,
-      "id": "00000000000000000001d99759e89382c0541bbf97847d72adf1265e7276abf7",
-      "timestamp": 1788267622,
-      "txCount": 3633
+      "height": 965060,
+      "id": "000000000000000000010bd566401097ebfc313b6db7cd492f0f4c34782474ed",
+      "timestamp": 1788281722,
+      "txCount": 4181
     }
   ],
   "news": [
+    {
+      "title": "Citi, Goldman, other global banks and asset managers team up on stablecoin venture",
+      "link": "https://www.coindesk.com/business/2026/09/01/citi-goldman-other-global-banks-and-asset-managers-team-up-on-stablecoin-venture",
+      "pubDate": "Tue, 01 Sep 2026 15:36:27 +0000"
+    },
+    {
+      "title": "Robinhood's new crypto network is printing cash, and it's sending Arbitrum's token soaring",
+      "link": "https://www.coindesk.com/markets/2026/09/01/robinhood-s-new-crypto-network-is-printing-cash-and-it-s-sending-arbitrum-s-token-soaring",
+      "pubDate": "Tue, 01 Sep 2026 15:28:29 +0000"
+    },
+    {
+      "title": "Musk’s X hit by wave of unsolicited password reset emails",
+      "link": "https://www.coindesk.com/tech/2026/09/01/musk-s-x-hit-by-wave-of-unsolicited-password-reset-emails",
+      "pubDate": "Tue, 01 Sep 2026 14:59:12 +0000"
+    },
     {
       "title": "Firelight raises $8 million, expands beyond XRP as it aims to make DeFi less scary for fintechs",
       "link": "https://www.coindesk.com/business/2026/08/31/firelight-raises-usd8-million-expands-beyond-xrp-as-it-aims-to-make-defi-less-scary-for-fintechs",
@@ -470,21 +485,6 @@
       "title": "Strategy spends $635M buying back STRC as perpetual preferred stock lags $100 par",
       "link": "https://www.coindesk.com/markets/2026/09/01/strategy-spends-usd635m-buying-back-strc-as-perpetual-preferred-stock-lags-usd100-par",
       "pubDate": "Tue, 01 Sep 2026 09:29:33 +0000"
-    },
-    {
-      "title": "Live updates: Bitcoin trades around $78,000 as crude surges, global bond sell-off deepens",
-      "link": "https://www.coindesk.com/business/2026/09/01/live-updates-bitcoin-etfs-resume-buying-as-ether-funds-stretch-streak-to-11-days",
-      "pubDate": "Tue, 01 Sep 2026 08:35:57 +0000"
-    },
-    {
-      "title": "London Stock Exchange to work with Payward to bring biggest UK stocks onchain",
-      "link": "https://www.coindesk.com/markets/2026/09/01/london-stock-exchange-to-work-with-payward-to-bring-biggest-uk-stocks-onchain",
-      "pubDate": "Tue, 01 Sep 2026 07:49:16 +0000"
-    },
-    {
-      "title": "OpenAI’s ‘Trust Us’ TIME cover raises an old warning for AI bulls",
-      "link": "https://www.coindesk.com/markets/2026/09/01/time-is-putting-openai-s-founders-on-its-cover-paul-montgomery-s-contrary-indicator-says-hello",
-      "pubDate": "Tue, 01 Sep 2026 06:52:10 +0000"
     }
   ]
 }
