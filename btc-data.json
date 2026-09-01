@@ -1,13 +1,13 @@
 {
-  "fetchedAt": "2026-09-01T00:35:44.075Z",
+  "fetchedAt": "2026-09-01T08:34:23.544Z",
   "price": {
-    "usd": 78846,
-    "time": 1788222608
+    "usd": 77861,
+    "time": 1788251410
   },
   "moves": {
-    "d1": 0.37327854411612904,
-    "d7": 0.4263936192638873,
-    "d30": 24.15829554227029
+    "d1": -0.8806554457623017,
+    "d7": -0.8282039217017201,
+    "d30": 22.607222296840757
   },
   "history90d": [
     {
@@ -372,60 +372,85 @@
     },
     {
       "date": "2026-09-01",
-      "close": 78747.29354390463
+      "close": 77880.89340211122
     }
   ],
   "blocks": [
     {
-      "height": 964959,
-      "id": "000000000000000000002946b3b917ec2cd683ca0c8c680a841c9488c2902061",
-      "timestamp": 1788222781,
-      "txCount": 4015
+      "height": 965008,
+      "id": "00000000000000000000f9571055cb238303eb69ff89bf9cee530a1e9893769b",
+      "timestamp": 1788251582,
+      "txCount": 2495
     },
     {
-      "height": 964958,
-      "id": "00000000000000000001e9087a81d590d1334c4fa6856d250bb5716b8f035288",
-      "timestamp": 1788221254,
-      "txCount": 6207
+      "height": 965007,
+      "id": "00000000000000000000d478d05848d82c30816d5b7fc6b614848b92b525f84a",
+      "timestamp": 1788251277,
+      "txCount": 2967
     },
     {
-      "height": 964957,
-      "id": "00000000000000000000833bec4323c45a2d24ce5a48357203a292bb7546d086",
-      "timestamp": 1788220587,
-      "txCount": 6514
+      "height": 965006,
+      "id": "00000000000000000000b1fe6acf08c527839ab4794d23cbdbdc3876bc5b2990",
+      "timestamp": 1788251246,
+      "txCount": 4363
     },
     {
-      "height": 964956,
-      "id": "00000000000000000000d5b3f93a2969a6f587784d4da5d2c5eca8374959b88e",
-      "timestamp": 1788220389,
-      "txCount": 6846
+      "height": 965005,
+      "id": "0000000000000000000176c1e042b4f8712d984f559e4db6ddb9b46a538611a0",
+      "timestamp": 1788248915,
+      "txCount": 3243
     },
     {
-      "height": 964955,
-      "id": "00000000000000000000c170946162fa5cf028a90bfb6e8e616d5f3b323e35a4",
-      "timestamp": 1788220322,
-      "txCount": 6723
+      "height": 965004,
+      "id": "000000000000000000020a60d3743cfda56e25dce391e157b8d5041e65baae95",
+      "timestamp": 1788247963,
+      "txCount": 3409
     },
     {
-      "height": 964954,
-      "id": "0000000000000000000179dd82c7f73a51da5141d0b4a7b3ae6a944c74c41d0f",
-      "timestamp": 1788220169,
-      "txCount": 6153
+      "height": 965003,
+      "id": "00000000000000000000c9d043cdb4d79a8253f8d9d82b1eb5bee8a99566389a",
+      "timestamp": 1788247621,
+      "txCount": 4552
     },
     {
-      "height": 964953,
-      "id": "000000000000000000020a618cb1b56e508d0055c8b09db14cac80679aa7a545",
-      "timestamp": 1788219833,
-      "txCount": 4640
+      "height": 965002,
+      "id": "0000000000000000000151fa85cbdb9abc80f033d3ebc3880dae5804c3277fc3",
+      "timestamp": 1788245796,
+      "txCount": 5110
     },
     {
-      "height": 964952,
-      "id": "0000000000000000000099b3a3759c5a58d1a0574fcb869f9ac442f1424f4dff",
-      "timestamp": 1788219558,
-      "txCount": 4174
+      "height": 965001,
+      "id": "000000000000000000015aaf7bd406c54e2f09b97941e8ed7fc41a48a26f52a1",
+      "timestamp": 1788245320,
+      "txCount": 4800
     }
   ],
   "news": [
+    {
+      "title": "London Stock Exchange to work with Payward to bring biggest UK stocks onchain",
+      "link": "https://www.coindesk.com/markets/2026/09/01/london-stock-exchange-to-work-with-payward-to-bring-biggest-uk-stocks-onchain",
+      "pubDate": "Tue, 01 Sep 2026 07:49:16 +0000"
+    },
+    {
+      "title": "OpenAI’s ‘Trust Us’ TIME cover raises an old warning for AI bulls",
+      "link": "https://www.coindesk.com/markets/2026/09/01/time-is-putting-openai-s-founders-on-its-cover-paul-montgomery-s-contrary-indicator-says-hello",
+      "pubDate": "Tue, 01 Sep 2026 06:52:10 +0000"
+    },
+    {
+      "title": "Bitcoin steady above $78,000, HYPE leads as majors slip on hawkish Fed bets",
+      "link": "https://www.coindesk.com/markets/2026/09/01/bitcoin-steady-above-usd78-000-hype-leads-as-majors-slip-on-hawkish-fed-bets",
+      "pubDate": "Tue, 01 Sep 2026 04:30:28 +0000"
+    },
+    {
+      "title": "Trump Jr's firm leads $1 billion Polymarket raise at $21 billion value: Report",
+      "link": "https://www.coindesk.com/business/2026/09/01/trump-jr-s-firm-leads-usd1-billion-polymarket-raise-at-usd21-billion-value-report",
+      "pubDate": "Tue, 01 Sep 2026 04:19:54 +0000"
+    },
+    {
+      "title": "CME’s share of XRP futures jumps as token rallies 40% in a week",
+      "link": "https://www.coindesk.com/markets/2026/09/01/xrp-futures-are-shifting-toward-cme-as-institutional-participation-grows",
+      "pubDate": "Tue, 01 Sep 2026 03:49:39 +0000"
+    },
     {
       "title": "North Korean hackers are moving tens of millions on Hyperliquid as Trump pushes to onshore the crypto platform",
       "link": "https://www.coindesk.com/business/2026/08/31/north-korean-hackers-are-moving-tens-of-millions-on-hyperliquid-as-trump-pushes-to-onshore-the-crypto-platform",
@@ -460,31 +485,6 @@
       "title": "Robinhood Chain beats Ethereum in daily revenue as memecoin trading takes over",
       "link": "https://www.coindesk.com/markets/2026/08/31/robinhood-chain-beats-ethereum-in-daily-revenue-as-memecoin-trading-takes-over",
       "pubDate": "Mon, 31 Aug 2026 11:53:56 +0000"
-    },
-    {
-      "title": "Sberbank plans to add ether and USDT as collateral for crypto-backed loans: Report",
-      "link": "https://www.coindesk.com/business/2026/08/31/sberbank-plans-to-add-ether-and-usdt-as-collateral-for-crypto-backed-loans",
-      "pubDate": "Mon, 31 Aug 2026 11:26:26 +0000"
-    },
-    {
-      "title": "Here's 1 metric on U.S. debt that makes bitcoin's bull case look stronger than ever",
-      "link": "https://www.coindesk.com/daybook-us/2026/08/31/here-s-1-metric-on-u-s-debt-that-makes-bitcoin-s-bull-case-look-stronger-than-ever",
-      "pubDate": "Mon, 31 Aug 2026 11:25:34 +0000"
-    },
-    {
-      "title": "U.S. strikes on Iran fail to stir bitcoin, on track for best month since November 2024",
-      "link": "https://www.coindesk.com/markets/2026/08/31/u-s-strikes-on-iran-fail-to-stir-bitcoin-on-track-for-best-month-since-november-2024",
-      "pubDate": "Mon, 31 Aug 2026 10:44:52 +0000"
-    },
-    {
-      "title": "U.S. jobs report, Russia’s digital ruble rollout: Crypto Week Ahead",
-      "link": "https://www.coindesk.com/markets/2026/08/31/u-s-jobs-report-russia-s-digital-ruble-rollout-crypto-week-ahead",
-      "pubDate": "Mon, 31 Aug 2026 08:22:28 +0000"
-    },
-    {
-      "title": "Live updates: Bitcoin eyes 25% gain in August, best month since November 2024",
-      "link": "https://www.coindesk.com/tech/2026/08/31/live-updates-bitcoin-holds-usd78-000-as-yen-breaks-160-and-rate-hike-bets-lift-the-dollar",
-      "pubDate": "Mon, 31 Aug 2026 08:18:03 +0000"
     }
   ]
 }
