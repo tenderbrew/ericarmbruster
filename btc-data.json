@@ -1,19 +1,15 @@
 {
-  "fetchedAt": "2026-08-31T20:48:11.793Z",
+  "fetchedAt": "2026-09-01T00:35:44.075Z",
   "price": {
-    "usd": 78875,
-    "time": 1788209109
+    "usd": 78846,
+    "time": 1788222608
   },
   "moves": {
-    "d1": 1.566825109034764,
-    "d7": -0.1252147258542058,
-    "d30": 25.65200193726822
+    "d1": 0.37327854411612904,
+    "d7": 0.4263936192638873,
+    "d30": 24.15829554227029
   },
   "history90d": [
-    {
-      "date": "2026-06-03",
-      "close": 66727.26415497709
-    },
     {
       "date": "2026-06-04",
       "close": 64046.61064609333
@@ -371,61 +367,70 @@
       "close": 77658.23133225394
     },
     {
-      "date": "2026-08-31",
-      "close": 78887.04913722975
+      "date": "2026-09-01",
+      "close": 78552.77932895812
+    },
+    {
+      "date": "2026-09-01",
+      "close": 78747.29354390463
     }
   ],
   "blocks": [
     {
-      "height": 964933,
-      "id": "0000000000000000000094e4fde3e3f3b8d55477ddb0a7cff2fa577d29ee85de",
-      "timestamp": 1788208998,
-      "txCount": 3926
+      "height": 964959,
+      "id": "000000000000000000002946b3b917ec2cd683ca0c8c680a841c9488c2902061",
+      "timestamp": 1788222781,
+      "txCount": 4015
     },
     {
-      "height": 964932,
-      "id": "00000000000000000001d1b089bcc1defe2dca6196b694a2f447fd9af5216d22",
-      "timestamp": 1788208507,
-      "txCount": 3973
+      "height": 964958,
+      "id": "00000000000000000001e9087a81d590d1334c4fa6856d250bb5716b8f035288",
+      "timestamp": 1788221254,
+      "txCount": 6207
     },
     {
-      "height": 964931,
-      "id": "0000000000000000000000ed2151ff8c50373b74751e7391571f1916537f2224",
-      "timestamp": 1788208260,
-      "txCount": 3981
+      "height": 964957,
+      "id": "00000000000000000000833bec4323c45a2d24ce5a48357203a292bb7546d086",
+      "timestamp": 1788220587,
+      "txCount": 6514
     },
     {
-      "height": 964930,
-      "id": "00000000000000000000ce1fafd6a02451bb71a24f5486c398bc43d591ca047b",
-      "timestamp": 1788206566,
-      "txCount": 4437
+      "height": 964956,
+      "id": "00000000000000000000d5b3f93a2969a6f587784d4da5d2c5eca8374959b88e",
+      "timestamp": 1788220389,
+      "txCount": 6846
     },
     {
-      "height": 964929,
-      "id": "00000000000000000000f6e20f1a0b5395426d0aae02f6baa64fe264892285ff",
-      "timestamp": 1788206376,
-      "txCount": 3081
+      "height": 964955,
+      "id": "00000000000000000000c170946162fa5cf028a90bfb6e8e616d5f3b323e35a4",
+      "timestamp": 1788220322,
+      "txCount": 6723
     },
     {
-      "height": 964928,
-      "id": "000000000000000000004e0ba7f90c2dcd5f2012d595c1ae14371598ef20ed61",
-      "timestamp": 1788205580,
-      "txCount": 5627
+      "height": 964954,
+      "id": "0000000000000000000179dd82c7f73a51da5141d0b4a7b3ae6a944c74c41d0f",
+      "timestamp": 1788220169,
+      "txCount": 6153
     },
     {
-      "height": 964927,
-      "id": "00000000000000000001ead6f2da0011e3134fc2af3626a3eb69ea32a318bdeb",
-      "timestamp": 1788205410,
-      "txCount": 4544
+      "height": 964953,
+      "id": "000000000000000000020a618cb1b56e508d0055c8b09db14cac80679aa7a545",
+      "timestamp": 1788219833,
+      "txCount": 4640
     },
     {
-      "height": 964926,
-      "id": "00000000000000000000ad34408f014422edcd0771c114ed48ed0d889c7bdef7",
-      "timestamp": 1788205417,
-      "txCount": 3121
+      "height": 964952,
+      "id": "0000000000000000000099b3a3759c5a58d1a0574fcb869f9ac442f1424f4dff",
+      "timestamp": 1788219558,
+      "txCount": 4174
     }
   ],
   "news": [
+    {
+      "title": "North Korean hackers are moving tens of millions on Hyperliquid as Trump pushes to onshore the crypto platform",
+      "link": "https://www.coindesk.com/business/2026/08/31/north-korean-hackers-are-moving-tens-of-millions-on-hyperliquid-as-trump-pushes-to-onshore-the-crypto-platform",
+      "pubDate": "Mon, 31 Aug 2026 20:48:40 +0000"
+    },
     {
       "title": "Kalshi lays down first lifetime ban for ex-member of Congress George Santos",
       "link": "https://www.coindesk.com/policy/2026/08/31/kalshi-lays-down-first-lifetime-ban-for-ex-member-of-congress-george-santos",
@@ -480,11 +485,6 @@
       "title": "Live updates: Bitcoin eyes 25% gain in August, best month since November 2024",
       "link": "https://www.coindesk.com/tech/2026/08/31/live-updates-bitcoin-holds-usd78-000-as-yen-breaks-160-and-rate-hike-bets-lift-the-dollar",
       "pubDate": "Mon, 31 Aug 2026 08:18:03 +0000"
-    },
-    {
-      "title": "Luke Dashjr exits mining pool Ocean after split over Bitcoin mining’s future",
-      "link": "https://www.coindesk.com/business/2026/08/31/luke-dashjr-exits-mining-pool-ocean-after-split-over-bitcoin-mining-s-future",
-      "pubDate": "Mon, 31 Aug 2026 08:04:54 +0000"
     }
   ]
 }
