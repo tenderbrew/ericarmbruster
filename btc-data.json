@@ -1,13 +1,13 @@
 {
-  "fetchedAt": "2026-09-02T16:31:10.700Z",
+  "fetchedAt": "2026-09-02T20:59:13.258Z",
   "price": {
-    "usd": 77536,
-    "time": 1788366375
+    "usd": 77465,
+    "time": 1788382568
   },
   "moves": {
-    "d1": 0.15443604548024403,
-    "d7": -1.8755643255172982,
-    "d30": 22.170891102231405
+    "d1": 0.06272426051288083,
+    "d7": -1.9654172316884821,
+    "d30": 22.05901876849923
   },
   "history90d": [
     {
@@ -372,60 +372,75 @@
     },
     {
       "date": "2026-09-02",
-      "close": 77460.36875390174
+      "close": 77416.71551634854
     }
   ],
   "blocks": [
     {
-      "height": 965188,
-      "id": "00000000000000000001dda4d813cd718f22a54815cdadebcfa752af056cc948",
-      "timestamp": 1788366501,
-      "txCount": 4341
+      "height": 965223,
+      "id": "000000000000000000009b35ed4d7c7a30f2374595d3bb27b9f1aba377833a0d",
+      "timestamp": 1788382410,
+      "txCount": 5114
     },
     {
-      "height": 965187,
-      "id": "00000000000000000001619d142e41124d859fed806e356ad0649111844b950d",
-      "timestamp": 1788366488,
-      "txCount": 4048
+      "height": 965222,
+      "id": "000000000000000000009f053d8cca08537c7ed6ed44508e91dfb7edb4c5e54d",
+      "timestamp": 1788382123,
+      "txCount": 3950
     },
     {
-      "height": 965186,
-      "id": "00000000000000000000d3b0f4905a4d1dc5366526c311004e9468743df764d3",
-      "timestamp": 1788361783,
-      "txCount": 4139
+      "height": 965221,
+      "id": "000000000000000000015306285c4db3f2793c5884765df3e141c3af9afd114d",
+      "timestamp": 1788381787,
+      "txCount": 4031
     },
     {
-      "height": 965185,
-      "id": "00000000000000000001aa37df293121527aaaa654434b33c95857f9f0863fb0",
-      "timestamp": 1788361508,
-      "txCount": 3844
+      "height": 965220,
+      "id": "000000000000000000012df0e0901073a5cb9dbc1ac85204b7a5f8cdb08bd35d",
+      "timestamp": 1788380276,
+      "txCount": 4725
     },
     {
-      "height": 965184,
-      "id": "000000000000000000017afd0e91afe75ccdd7be8817c27aa955d22573950317",
-      "timestamp": 1788361024,
-      "txCount": 3618
+      "height": 965219,
+      "id": "000000000000000000000850aab08262732c11a6618d439dc6a11d338c9ffb84",
+      "timestamp": 1788379824,
+      "txCount": 6241
     },
     {
-      "height": 965183,
-      "id": "0000000000000000000222b25b40e6964ccc29944f14030b95e5ccbe7c47817b",
-      "timestamp": 1788361015,
-      "txCount": 4276
+      "height": 965218,
+      "id": "0000000000000000000210e3c6db563fa837a28940bb20feef485c3de56211db",
+      "timestamp": 1788379809,
+      "txCount": 4704
     },
     {
-      "height": 965182,
-      "id": "0000000000000000000093d79a7e0fef6d1c9d98219a1b9d36bf122f0ed5e739",
-      "timestamp": 1788359969,
-      "txCount": 4318
+      "height": 965217,
+      "id": "0000000000000000000104762b12ed8934552a5a8285e97613b5b397375cef2e",
+      "timestamp": 1788379255,
+      "txCount": 4117
     },
     {
-      "height": 965181,
-      "id": "00000000000000000001d16b2f2aa06d2367fbb6945a4411f023dd31b8677a86",
-      "timestamp": 1788357854,
-      "txCount": 7078
+      "height": 965216,
+      "id": "0000000000000000000054278f7d23c53cbf61acfc1d35fc08d171f716fbb2b0",
+      "timestamp": 1788378863,
+      "txCount": 4198
     }
   ],
   "news": [
+    {
+      "title": "Kraken parent Payward delays IPO to second quarter of 2027 at earliest",
+      "link": "https://www.coindesk.com/business/2026/09/02/kraken-parent-payward-pushes-ipo-back-to-mid-2027-at-earliest",
+      "pubDate": "Wed, 02 Sep 2026 20:08:34 +0000"
+    },
+    {
+      "title": "Crypto made new friends in U.S. primaries, but focus now shifts to general election",
+      "link": "https://www.coindesk.com/news-analysis/2026/09/02/crypto-made-new-friends-in-u-s-primaries-but-focus-now-shifts-to-general-election",
+      "pubDate": "Wed, 02 Sep 2026 17:39:00 +0000"
+    },
+    {
+      "title": "New Jersey becomes first state to ask Supreme Court to weigh in on prediction markets",
+      "link": "https://www.coindesk.com/policy/2026/09/02/new-jersey-becomes-first-state-to-ask-supreme-court-to-weigh-in-on-prediction-markets",
+      "pubDate": "Wed, 02 Sep 2026 17:23:48 +0000"
+    },
     {
       "title": "Crypto Long & Short: Crypto VCs are mistaking consensus for discipline",
       "link": "https://www.coindesk.com/coindesk-indices/2026/09/02/crypto-long-and-short-crypto-vcs-are-mistaking-consensus-for-discipline",
@@ -470,21 +485,6 @@
       "title": "Former UK Prime Minister Liz Truss says bond rout could force emergency spending cuts",
       "link": "https://www.coindesk.com/markets/2026/09/02/former-uk-prime-minister-liz-truss-says-bond-rout-could-force-emergency-spending-cuts",
       "pubDate": "Wed, 02 Sep 2026 10:27:30 +0000"
-    },
-    {
-      "title": "Live updates: Bitcoin trades near $77,000, with central bank policy rate decisions taking center stage",
-      "link": "https://www.coindesk.com/business/2026/09/02/live-updates-blackrock-s-ibit-drives-usd236-million-bitcoin-etf-outflow",
-      "pubDate": "Wed, 02 Sep 2026 08:31:00 +0000"
-    },
-    {
-      "title": "XRP ETFs pull in $170 million over 11 days. Goldman tops institutional holders",
-      "link": "https://www.coindesk.com/markets/2026/09/02/xrp-etfs-pull-in-usd160-million-over-nine-days-as-goldman-tops-institutional-holders",
-      "pubDate": "Wed, 02 Sep 2026 07:20:03 +0000"
-    },
-    {
-      "title": "A China indicator that supports risk-taking in stocks and bitcoin is flashing red",
-      "link": "https://www.coindesk.com/markets/2026/09/02/a-china-indicator-that-greases-risk-taking-in-stocks-and-bitcoin-is-flashing-red",
-      "pubDate": "Wed, 02 Sep 2026 06:53:22 +0000"
     }
   ]
 }
