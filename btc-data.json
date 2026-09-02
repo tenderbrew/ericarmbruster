@@ -1,13 +1,13 @@
 {
-  "fetchedAt": "2026-09-02T11:12:22.890Z",
+  "fetchedAt": "2026-09-02T16:31:10.700Z",
   "price": {
-    "usd": 76659,
-    "time": 1788347411
+    "usd": 77536,
+    "time": 1788366375
   },
   "moves": {
-    "d1": -0.9783982561588189,
-    "d7": -2.9854375468147842,
-    "d30": 20.789031430638126
+    "d1": 0.15443604548024403,
+    "d7": -1.8755643255172982,
+    "d30": 22.170891102231405
   },
   "history90d": [
     {
@@ -372,60 +372,90 @@
     },
     {
       "date": "2026-09-02",
-      "close": 76611.01355059541
+      "close": 77460.36875390174
     }
   ],
   "blocks": [
     {
-      "height": 965162,
-      "id": "00000000000000000000978342ffad71bc37d68352ef77819dcbbc508faeec75",
-      "timestamp": 1788347486,
-      "txCount": 4604
+      "height": 965188,
+      "id": "00000000000000000001dda4d813cd718f22a54815cdadebcfa752af056cc948",
+      "timestamp": 1788366501,
+      "txCount": 4341
     },
     {
-      "height": 965161,
-      "id": "0000000000000000000062e6a780d36f11cc5bdb4944bc0256fc07e9a5bb194d",
-      "timestamp": 1788346780,
-      "txCount": 5888
+      "height": 965187,
+      "id": "00000000000000000001619d142e41124d859fed806e356ad0649111844b950d",
+      "timestamp": 1788366488,
+      "txCount": 4048
     },
     {
-      "height": 965160,
-      "id": "00000000000000000000530a49b79c33e87b075af3a6db83cc5610db8bd69fde",
-      "timestamp": 1788346723,
-      "txCount": 6386
+      "height": 965186,
+      "id": "00000000000000000000d3b0f4905a4d1dc5366526c311004e9468743df764d3",
+      "timestamp": 1788361783,
+      "txCount": 4139
     },
     {
-      "height": 965159,
-      "id": "000000000000000000018a7f4b4503060649ae195c5c6dac7eb331c7bc5c10dd",
-      "timestamp": 1788346267,
-      "txCount": 5412
+      "height": 965185,
+      "id": "00000000000000000001aa37df293121527aaaa654434b33c95857f9f0863fb0",
+      "timestamp": 1788361508,
+      "txCount": 3844
     },
     {
-      "height": 965158,
-      "id": "0000000000000000000138c09510e35337ede4ad4c8fcca6f37076f48244710b",
-      "timestamp": 1788345901,
-      "txCount": 3619
+      "height": 965184,
+      "id": "000000000000000000017afd0e91afe75ccdd7be8817c27aa955d22573950317",
+      "timestamp": 1788361024,
+      "txCount": 3618
     },
     {
-      "height": 965157,
-      "id": "00000000000000000000ed6f440cd6d6668e31407cd5ae6fbdd5b75f367f7947",
-      "timestamp": 1788345319,
-      "txCount": 4942
+      "height": 965183,
+      "id": "0000000000000000000222b25b40e6964ccc29944f14030b95e5ccbe7c47817b",
+      "timestamp": 1788361015,
+      "txCount": 4276
     },
     {
-      "height": 965156,
-      "id": "0000000000000000000193ce3af720832e52281040a7c77b9a91548b1bc7c100",
-      "timestamp": 1788345278,
-      "txCount": 7192
+      "height": 965182,
+      "id": "0000000000000000000093d79a7e0fef6d1c9d98219a1b9d36bf122f0ed5e739",
+      "timestamp": 1788359969,
+      "txCount": 4318
     },
     {
-      "height": 965155,
-      "id": "00000000000000000000992c35f6461b2375ce893a96a435f8d539016b11a7ac",
-      "timestamp": 1788345202,
-      "txCount": 3688
+      "height": 965181,
+      "id": "00000000000000000001d16b2f2aa06d2367fbb6945a4411f023dd31b8677a86",
+      "timestamp": 1788357854,
+      "txCount": 7078
     }
   ],
   "news": [
+    {
+      "title": "Crypto Long & Short: Crypto VCs are mistaking consensus for discipline",
+      "link": "https://www.coindesk.com/coindesk-indices/2026/09/02/crypto-long-and-short-crypto-vcs-are-mistaking-consensus-for-discipline",
+      "pubDate": "Wed, 02 Sep 2026 15:15:02 +0000"
+    },
+    {
+      "title": "CrowdStrike and federal authorities dismantle Russian malware that secretly stole crypto for 8 years",
+      "link": "https://www.coindesk.com/tech/2026/09/02/crowdstrike-and-federal-authorities-dismantle-russian-malware-that-secretly-stole-crypto-for-8-years",
+      "pubDate": "Wed, 02 Sep 2026 13:14:47 +0000"
+    },
+    {
+      "title": "The token supercycle: everything of value is becoming programmable",
+      "link": "https://www.coindesk.com/opinion/2026/09/02/the-token-supercycle-everything-of-value-is-becoming-programmable",
+      "pubDate": "Wed, 02 Sep 2026 13:00:00 +0000"
+    },
+    {
+      "title": "The bearish 'Bart Simpson' pattern is back as bitcoin and XRP prices pull back",
+      "link": "https://www.coindesk.com/markets/2026/09/02/bitcoin-flashes-the-bart-simpsom-pattern-analyst-debate-whether-it-will-actually-form",
+      "pubDate": "Wed, 02 Sep 2026 12:13:26 +0000"
+    },
+    {
+      "title": "Capital B aims to add 376 BTC to bitcoin treasury following $8.8 million Adam Back investment",
+      "link": "https://www.coindesk.com/business/2026/08/29/capital-b-aims-to-add-376-btc-to-bitcoin-treasury-following-usd8-8-million-adam-back-investment",
+      "pubDate": "Wed, 02 Sep 2026 11:45:16 +0000"
+    },
+    {
+      "title": "A Fed rate increase would be a mistake, some observers say as bitcoin, gold, stocks fall",
+      "link": "https://www.coindesk.com/daybook-us/2026/09/02/a-fed-rate-increase-would-be-a-mistake-some-observers-say-as-bitcoin-gold-stocks-fall",
+      "pubDate": "Wed, 02 Sep 2026 11:14:58 +0000"
+    },
     {
       "title": "Lawsuit challenges Tether for allegedly freezing $42.4 million USDT before U.S. warrant",
       "link": "https://www.coindesk.com/business/2026/09/02/tether-sued-over-usd42-4-million-usdt-freeze-allegedly-made-months-before-u-s-warrant",
@@ -442,7 +472,7 @@
       "pubDate": "Wed, 02 Sep 2026 10:27:30 +0000"
     },
     {
-      "title": "Live updates: Global bond yields surge, pressuring debasement-trade assets further",
+      "title": "Live updates: Bitcoin trades near $77,000, with central bank policy rate decisions taking center stage",
       "link": "https://www.coindesk.com/business/2026/09/02/live-updates-blackrock-s-ibit-drives-usd236-million-bitcoin-etf-outflow",
       "pubDate": "Wed, 02 Sep 2026 08:31:00 +0000"
     },
@@ -455,36 +485,6 @@
       "title": "A China indicator that supports risk-taking in stocks and bitcoin is flashing red",
       "link": "https://www.coindesk.com/markets/2026/09/02/a-china-indicator-that-greases-risk-taking-in-stocks-and-bitcoin-is-flashing-red",
       "pubDate": "Wed, 02 Sep 2026 06:53:22 +0000"
-    },
-    {
-      "title": "OpenAI says its new 'Astra' AI can build attacks without human help",
-      "link": "https://www.coindesk.com/tech/2026/09/02/openai-says-its-new-astra-ai-can-build-attacks-without-human-help",
-      "pubDate": "Wed, 02 Sep 2026 05:28:51 +0000"
-    },
-    {
-      "title": "Solana, ether, xrp lead majors slide as Iran strikes drive a broad risk selloff",
-      "link": "https://www.coindesk.com/markets/2026/09/02/solana-ether-xrp-lead-majors-slide-as-iran-strikes-drive-a-broad-risk-selloff",
-      "pubDate": "Wed, 02 Sep 2026 05:01:25 +0000"
-    },
-    {
-      "title": "Bitcoin withstands $90 oil and rising yields while gold slides. A firm dollar is the catch",
-      "link": "https://www.coindesk.com/markets/2026/09/02/bitcoin-withstands-usd90-oil-and-rising-yields-as-gold-slides-a-firm-dollar-is-the-catch",
-      "pubDate": "Wed, 02 Sep 2026 04:40:36 +0000"
-    },
-    {
-      "title": "SEC proposes transfer agent rule, sets event to figure out round-the-clock U.S. trading",
-      "link": "https://www.coindesk.com/policy/2026/09/01/sec-proposes-transfer-agent-rule-sets-event-to-figure-out-round-the-clock-u-s-trading",
-      "pubDate": "Tue, 01 Sep 2026 23:55:46 +0000"
-    },
-    {
-      "title": "Citi, Goldman, other global banks and asset managers team up on stablecoin venture",
-      "link": "https://www.coindesk.com/business/2026/09/01/citi-goldman-other-global-banks-and-asset-managers-team-up-on-stablecoin-venture",
-      "pubDate": "Tue, 01 Sep 2026 15:36:27 +0000"
-    },
-    {
-      "title": "Robinhood's new crypto network is printing cash, and it's sending Arbitrum's token soaring",
-      "link": "https://www.coindesk.com/markets/2026/09/01/robinhood-s-new-crypto-network-is-printing-cash-and-it-s-sending-arbitrum-s-token-soaring",
-      "pubDate": "Tue, 01 Sep 2026 15:28:29 +0000"
     }
   ]
 }
