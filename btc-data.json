@@ -1,19 +1,15 @@
 {
-  "fetchedAt": "2026-09-01T23:16:23.281Z",
+  "fetchedAt": "2026-09-02T04:24:56.167Z",
   "price": {
-    "usd": 77260,
-    "time": 1788304214
+    "usd": 77367,
+    "time": 1788322809
   },
   "moves": {
-    "d1": -1.6457461340028456,
-    "d7": -1.5936994771538426,
-    "d30": 21.66083141308124
+    "d1": -0.06386383704769516,
+    "d7": -2.0894395528824994,
+    "d30": 21.904603434615378
   },
   "history90d": [
-    {
-      "date": "2026-06-04",
-      "close": 64046.61064609333
-    },
     {
       "date": "2026-06-05",
       "close": 63810.65923840883
@@ -371,61 +367,70 @@
       "close": 78552.77932895812
     },
     {
-      "date": "2026-09-01",
-      "close": 77227.15586126797
+      "date": "2026-09-02",
+      "close": 77416.44110979848
+    },
+    {
+      "date": "2026-09-02",
+      "close": 77383.81474448912
     }
   ],
   "blocks": [
     {
-      "height": 965097,
-      "id": "000000000000000000016535c0174b490d9e5a735222a713dfe2a78b8a6b9cad",
-      "timestamp": 1788304511,
-      "txCount": 2544
+      "height": 965119,
+      "id": "0000000000000000000217093920ab4b69e29ecf880d826e15e03a29be86762b",
+      "timestamp": 1788322191,
+      "txCount": 4083
     },
     {
-      "height": 965096,
-      "id": "00000000000000000000f0a41c09aa84eaf31380a63a4eb719ebe9a55371dbdd",
-      "timestamp": 1788304872,
-      "txCount": 3852
+      "height": 965118,
+      "id": "00000000000000000000cabe1831233b7dff62634a8b31600b5a81e8d538883c",
+      "timestamp": 1788319403,
+      "txCount": 2010
     },
     {
-      "height": 965095,
-      "id": "00000000000000000000e018f46aeedf5fc8af96c1dd6042f461d408cde3a344",
-      "timestamp": 1788302868,
-      "txCount": 4832
+      "height": 965117,
+      "id": "00000000000000000001d6a7334dd6624a03397ed241c9a276b13b7c9db27bf4",
+      "timestamp": 1788318635,
+      "txCount": 2894
     },
     {
-      "height": 965094,
-      "id": "00000000000000000001518e2ec216cad2a681a2b8b651f33d3f1d2c056dffa0",
-      "timestamp": 1788302358,
-      "txCount": 5746
+      "height": 965116,
+      "id": "00000000000000000001811eb31b474d6e7a2770544147812cb22c31917915a5",
+      "timestamp": 1788318304,
+      "txCount": 2264
     },
     {
-      "height": 965093,
-      "id": "000000000000000000005e793c0dbeca591b4176f8bc791c8f433faf26e7bbf7",
-      "timestamp": 1788302260,
-      "txCount": 3598
+      "height": 965115,
+      "id": "00000000000000000000af53ee098c51a9beb2a539545ed3f8530512a0588d03",
+      "timestamp": 1788318115,
+      "txCount": 2806
     },
     {
-      "height": 965092,
-      "id": "00000000000000000001096fbf1df8abc4fec296a47f2f622b4b285fcbee5dd8",
-      "timestamp": 1788301493,
-      "txCount": 3506
+      "height": 965114,
+      "id": "000000000000000000012cb9d7752de172ebb4ab466c66b8f99b025c90cf28ff",
+      "timestamp": 1788316634,
+      "txCount": 3656
     },
     {
-      "height": 965091,
-      "id": "000000000000000000000c7da84dc01523a41428f1d19bb85419820f05662c18",
-      "timestamp": 1788300765,
-      "txCount": 4269
+      "height": 965113,
+      "id": "00000000000000000001bd8ff748411bc1de37a1a7ba4c859f56b642be208b76",
+      "timestamp": 1788315562,
+      "txCount": 3841
     },
     {
-      "height": 965090,
-      "id": "000000000000000000002cd2f66ed3d3fb7e9eaceb81aa55120a509807e88361",
-      "timestamp": 1788300073,
-      "txCount": 3937
+      "height": 965112,
+      "id": "000000000000000000001d2652a5fa4a2f2aa31482bdc7a598c56cac0ac29df1",
+      "timestamp": 1788313991,
+      "txCount": 5588
     }
   ],
   "news": [
+    {
+      "title": "SEC proposes transfer agent rule, sets event to figure out round-the-clock U.S. trading",
+      "link": "https://www.coindesk.com/policy/2026/09/01/sec-proposes-transfer-agent-rule-sets-event-to-figure-out-round-the-clock-u-s-trading",
+      "pubDate": "Tue, 01 Sep 2026 23:55:46 +0000"
+    },
     {
       "title": "Citi, Goldman, other global banks and asset managers team up on stablecoin venture",
       "link": "https://www.coindesk.com/business/2026/09/01/citi-goldman-other-global-banks-and-asset-managers-team-up-on-stablecoin-venture",
@@ -480,11 +485,6 @@
       "title": "Bitcoin consolidates near $78,000 as Arbitrum surges 30% on Robinhood Chain revenue",
       "link": "https://www.coindesk.com/markets/2026/09/01/bitcoin-consolidates-near-usd78-000-as-arbitrum-surges-30-on-robinhood-chain-revenue",
       "pubDate": "Tue, 01 Sep 2026 10:29:00 +0000"
-    },
-    {
-      "title": "Strategy spends $635M buying back STRC as perpetual preferred stock lags $100 par",
-      "link": "https://www.coindesk.com/markets/2026/09/01/strategy-spends-usd635m-buying-back-strc-as-perpetual-preferred-stock-lags-usd100-par",
-      "pubDate": "Tue, 01 Sep 2026 09:29:33 +0000"
     }
   ]
 }
