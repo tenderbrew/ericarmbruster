@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-09-02T11:09:26.116Z",
+  "fetchedAt": "2026-09-02T16:28:58.518Z",
   "indicators": {
     "UNRATE": {
       "latest": {
@@ -163,12 +163,12 @@
     },
     "BAMLH0A0HYM2": {
       "latest": {
-        "date": "2026-08-31",
-        "value": 2.63
+        "date": "2026-09-01",
+        "value": 2.65
       },
       "previous": {
-        "date": "2026-08-28",
-        "value": 2.6
+        "date": "2026-08-31",
+        "value": 2.63
       }
     },
     "MORTGAGE30US": {
@@ -263,12 +263,12 @@
     },
     "VIXCLS": {
       "latest": {
-        "date": "2026-08-31",
-        "value": 14.92
+        "date": "2026-09-01",
+        "value": 16.34
       },
       "previous": {
-        "date": "2026-08-28",
-        "value": 14.43
+        "date": "2026-08-31",
+        "value": 14.92
       }
     },
     "BOPGSTB": {
@@ -301,10 +301,28 @@
   },
   "news": [
     {
+      "title": "No, Flock Is Not Really a Private Company",
+      "link": "https://mises.org/mises-wire/no-flock-not-really-private-company",
+      "pubDate": "Wed, 02 Sep 2026 09:00:00 CDT",
+      "kind": "Mises Wire"
+    },
+    {
+      "title": "The Ethical Foundations of the Just War Doctrine",
+      "link": "https://mises.org/podcasts/audio-mises-wire/ethical-foundations-just-war-doctrine",
+      "pubDate": "Wed, 02 Sep 2026 07:54:54 CDT",
+      "kind": "Podcast"
+    },
+    {
       "title": "How Neoliberals Fueled the Rise of Socialism",
       "link": "https://mises.org/mises-wire/how-neoliberals-fueled-rise-socialism",
       "pubDate": "Wed, 02 Sep 2026 05:00:00 CDT",
       "kind": "Mises Wire"
+    },
+    {
+      "title": "The Jerusalem Post Calls for More More Americans to Enlist - to Die for Israel",
+      "link": "https://mises.org/notes-margin/jerusalem-post-calls-more-more-americans-enlist-die-israel",
+      "pubDate": "Wed, 02 Sep 2026 03:00:00 CDT",
+      "kind": "Article"
     },
     {
       "title": "Credit Out of “Thin Air” Brings Wealth Destruction",
@@ -340,24 +358,6 @@
       "title": "Chapter VI. The Movement for a Protective Tariff",
       "link": "https://mises.org/podcasts/panic-1819-reactions-and-policies/chapter-vi-movement-protective-tariff",
       "pubDate": "Tue, 01 Sep 2026 11:29:09 CDT",
-      "kind": "Podcast"
-    },
-    {
-      "title": "Chapter V. Restricting Bank Credit: Proposals and Actions",
-      "link": "https://mises.org/podcasts/panic-1819-reactions-and-policies/chapter-v-restricting-bank-credit-proposals-and-actions",
-      "pubDate": "Tue, 01 Sep 2026 11:18:09 CDT",
-      "kind": "Podcast"
-    },
-    {
-      "title": "Chapter IV. Proposals for National Monetary Expansion",
-      "link": "https://mises.org/podcasts/panic-1819-reactions-and-policies/chapter-iv-proposals-national-monetary-expansion",
-      "pubDate": "Tue, 01 Sep 2026 11:10:05 CDT",
-      "kind": "Podcast"
-    },
-    {
-      "title": "Chapter III. State Proposals and Actions for Monetary Expansion",
-      "link": "https://mises.org/podcasts/panic-1819-reactions-and-policies/chapter-iii-state-proposals-and-actions-monetary-expansion",
-      "pubDate": "Tue, 01 Sep 2026 11:06:56 CDT",
       "kind": "Podcast"
     }
   ]
