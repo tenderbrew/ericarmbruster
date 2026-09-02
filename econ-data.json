@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-09-02T16:28:58.518Z",
+  "fetchedAt": "2026-09-02T20:57:17.437Z",
   "indicators": {
     "UNRATE": {
       "latest": {
@@ -123,22 +123,22 @@
     },
     "DGS2": {
       "latest": {
-        "date": "2026-08-31",
-        "value": 4.34
+        "date": "2026-09-01",
+        "value": 4.39
       },
       "previous": {
-        "date": "2026-08-28",
+        "date": "2026-08-31",
         "value": 4.34
       }
     },
     "DGS10": {
       "latest": {
-        "date": "2026-08-31",
-        "value": 4.75
+        "date": "2026-09-01",
+        "value": 4.79
       },
       "previous": {
-        "date": "2026-08-28",
-        "value": 4.73
+        "date": "2026-08-31",
+        "value": 4.75
       }
     },
     "T10Y2Y": {
@@ -153,12 +153,12 @@
     },
     "DFII10": {
       "latest": {
-        "date": "2026-08-31",
+        "date": "2026-09-01",
         "value": 2.44
       },
       "previous": {
-        "date": "2026-08-28",
-        "value": 2.42
+        "date": "2026-08-31",
+        "value": 2.44
       }
     },
     "BAMLH0A0HYM2": {
@@ -223,12 +223,12 @@
     },
     "STLFSI4": {
       "latest": {
-        "date": "2026-08-21",
-        "value": -0.8107
+        "date": "2026-08-28",
+        "value": -0.8526
       },
       "previous": {
-        "date": "2026-08-14",
-        "value": -0.8282
+        "date": "2026-08-21",
+        "value": -0.8101
       }
     },
     "DTWEXBGS": {
@@ -301,6 +301,18 @@
   },
   "news": [
     {
+      "title": "Libertarians and Political Action",
+      "link": "https://mises.org/mises-wire/libertarians-and-political-action",
+      "pubDate": "Wed, 02 Sep 2026 02:00:00 CDT",
+      "kind": "Mises Wire"
+    },
+    {
+      "title": "The Capture of the Constitution: How Public Sector Unions Exploited Free Speech to Suppress Black Upward Mobility",
+      "link": "https://mises.org/mises-wire/capture-constitution-how-public-sector-unions-exploited-free-speech-suppress-black-upward-mobility",
+      "pubDate": "Wed, 02 Sep 2026 11:00:00 CDT",
+      "kind": "Mises Wire"
+    },
+    {
       "title": "No, Flock Is Not Really a Private Company",
       "link": "https://mises.org/mises-wire/no-flock-not-really-private-company",
       "pubDate": "Wed, 02 Sep 2026 09:00:00 CDT",
@@ -311,6 +323,12 @@
       "link": "https://mises.org/podcasts/audio-mises-wire/ethical-foundations-just-war-doctrine",
       "pubDate": "Wed, 02 Sep 2026 07:54:54 CDT",
       "kind": "Podcast"
+    },
+    {
+      "title": "Curtis Yarvin Comes Out in Support of Flock Cameras",
+      "link": "https://mises.org/power-market/curtis-yarvin-comes-out-support-flock-cameras",
+      "pubDate": "Wed, 02 Sep 2026 06:00:00 CDT",
+      "kind": "Article"
     },
     {
       "title": "How Neoliberals Fueled the Rise of Socialism",
@@ -340,24 +358,6 @@
       "title": "The High Cost of the Automated Flock-Camera Surveillance State",
       "link": "https://mises.org/podcasts/audio-mises-wire/high-cost-automated-flock-camera-surveillance-state",
       "pubDate": "Tue, 01 Sep 2026 01:36:12 CDT",
-      "kind": "Podcast"
-    },
-    {
-      "title": "Appendix A: Minor Remedies Proposed",
-      "link": "https://mises.org/podcasts/panic-1819-reactions-and-policies/appendix-minor-remedies-proposed",
-      "pubDate": "Tue, 01 Sep 2026 11:59:08 CDT",
-      "kind": "Podcast"
-    },
-    {
-      "title": "Chapter VII. Conclusion",
-      "link": "https://mises.org/podcasts/panic-1819-reactions-and-policies/chapter-vii-conclusion",
-      "pubDate": "Tue, 01 Sep 2026 11:43:15 CDT",
-      "kind": "Podcast"
-    },
-    {
-      "title": "Chapter VI. The Movement for a Protective Tariff",
-      "link": "https://mises.org/podcasts/panic-1819-reactions-and-policies/chapter-vi-movement-protective-tariff",
-      "pubDate": "Tue, 01 Sep 2026 11:29:09 CDT",
       "kind": "Podcast"
     }
   ]
