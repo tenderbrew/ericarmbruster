@@ -1,13 +1,13 @@
 {
-  "fetchedAt": "2026-09-02T04:24:56.167Z",
+  "fetchedAt": "2026-09-02T11:12:22.890Z",
   "price": {
-    "usd": 77367,
-    "time": 1788322809
+    "usd": 76659,
+    "time": 1788347411
   },
   "moves": {
-    "d1": -0.06386383704769516,
-    "d7": -2.0894395528824994,
-    "d30": 21.904603434615378
+    "d1": -0.9783982561588189,
+    "d7": -2.9854375468147842,
+    "d30": 20.789031430638126
   },
   "history90d": [
     {
@@ -372,60 +372,105 @@
     },
     {
       "date": "2026-09-02",
-      "close": 77383.81474448912
+      "close": 76611.01355059541
     }
   ],
   "blocks": [
     {
-      "height": 965119,
-      "id": "0000000000000000000217093920ab4b69e29ecf880d826e15e03a29be86762b",
-      "timestamp": 1788322191,
-      "txCount": 4083
+      "height": 965162,
+      "id": "00000000000000000000978342ffad71bc37d68352ef77819dcbbc508faeec75",
+      "timestamp": 1788347486,
+      "txCount": 4604
     },
     {
-      "height": 965118,
-      "id": "00000000000000000000cabe1831233b7dff62634a8b31600b5a81e8d538883c",
-      "timestamp": 1788319403,
-      "txCount": 2010
+      "height": 965161,
+      "id": "0000000000000000000062e6a780d36f11cc5bdb4944bc0256fc07e9a5bb194d",
+      "timestamp": 1788346780,
+      "txCount": 5888
     },
     {
-      "height": 965117,
-      "id": "00000000000000000001d6a7334dd6624a03397ed241c9a276b13b7c9db27bf4",
-      "timestamp": 1788318635,
-      "txCount": 2894
+      "height": 965160,
+      "id": "00000000000000000000530a49b79c33e87b075af3a6db83cc5610db8bd69fde",
+      "timestamp": 1788346723,
+      "txCount": 6386
     },
     {
-      "height": 965116,
-      "id": "00000000000000000001811eb31b474d6e7a2770544147812cb22c31917915a5",
-      "timestamp": 1788318304,
-      "txCount": 2264
+      "height": 965159,
+      "id": "000000000000000000018a7f4b4503060649ae195c5c6dac7eb331c7bc5c10dd",
+      "timestamp": 1788346267,
+      "txCount": 5412
     },
     {
-      "height": 965115,
-      "id": "00000000000000000000af53ee098c51a9beb2a539545ed3f8530512a0588d03",
-      "timestamp": 1788318115,
-      "txCount": 2806
+      "height": 965158,
+      "id": "0000000000000000000138c09510e35337ede4ad4c8fcca6f37076f48244710b",
+      "timestamp": 1788345901,
+      "txCount": 3619
     },
     {
-      "height": 965114,
-      "id": "000000000000000000012cb9d7752de172ebb4ab466c66b8f99b025c90cf28ff",
-      "timestamp": 1788316634,
-      "txCount": 3656
+      "height": 965157,
+      "id": "00000000000000000000ed6f440cd6d6668e31407cd5ae6fbdd5b75f367f7947",
+      "timestamp": 1788345319,
+      "txCount": 4942
     },
     {
-      "height": 965113,
-      "id": "00000000000000000001bd8ff748411bc1de37a1a7ba4c859f56b642be208b76",
-      "timestamp": 1788315562,
-      "txCount": 3841
+      "height": 965156,
+      "id": "0000000000000000000193ce3af720832e52281040a7c77b9a91548b1bc7c100",
+      "timestamp": 1788345278,
+      "txCount": 7192
     },
     {
-      "height": 965112,
-      "id": "000000000000000000001d2652a5fa4a2f2aa31482bdc7a598c56cac0ac29df1",
-      "timestamp": 1788313991,
-      "txCount": 5588
+      "height": 965155,
+      "id": "00000000000000000000992c35f6461b2375ce893a96a435f8d539016b11a7ac",
+      "timestamp": 1788345202,
+      "txCount": 3688
     }
   ],
   "news": [
+    {
+      "title": "Lawsuit challenges Tether for allegedly freezing $42.4 million USDT before U.S. warrant",
+      "link": "https://www.coindesk.com/business/2026/09/02/tether-sued-over-usd42-4-million-usdt-freeze-allegedly-made-months-before-u-s-warrant",
+      "pubDate": "Wed, 02 Sep 2026 11:03:46 +0000"
+    },
+    {
+      "title": "Bitcoin slips below $76,500 as U.S. strikes on Iran send oil above $93",
+      "link": "https://www.coindesk.com/markets/2026/09/02/bitcoin-slips-below-usd77-000-as-u-s-strikes-on-iran-send-oil-above-usd93",
+      "pubDate": "Wed, 02 Sep 2026 10:50:38 +0000"
+    },
+    {
+      "title": "Former UK Prime Minister Liz Truss says bond rout could force emergency spending cuts",
+      "link": "https://www.coindesk.com/markets/2026/09/02/former-uk-prime-minister-liz-truss-says-bond-rout-could-force-emergency-spending-cuts",
+      "pubDate": "Wed, 02 Sep 2026 10:27:30 +0000"
+    },
+    {
+      "title": "Live updates: Global bond yields surge, pressuring debasement-trade assets further",
+      "link": "https://www.coindesk.com/business/2026/09/02/live-updates-blackrock-s-ibit-drives-usd236-million-bitcoin-etf-outflow",
+      "pubDate": "Wed, 02 Sep 2026 08:31:00 +0000"
+    },
+    {
+      "title": "XRP ETFs pull in $170 million over 11 days. Goldman tops institutional holders",
+      "link": "https://www.coindesk.com/markets/2026/09/02/xrp-etfs-pull-in-usd160-million-over-nine-days-as-goldman-tops-institutional-holders",
+      "pubDate": "Wed, 02 Sep 2026 07:20:03 +0000"
+    },
+    {
+      "title": "A China indicator that supports risk-taking in stocks and bitcoin is flashing red",
+      "link": "https://www.coindesk.com/markets/2026/09/02/a-china-indicator-that-greases-risk-taking-in-stocks-and-bitcoin-is-flashing-red",
+      "pubDate": "Wed, 02 Sep 2026 06:53:22 +0000"
+    },
+    {
+      "title": "OpenAI says its new 'Astra' AI can build attacks without human help",
+      "link": "https://www.coindesk.com/tech/2026/09/02/openai-says-its-new-astra-ai-can-build-attacks-without-human-help",
+      "pubDate": "Wed, 02 Sep 2026 05:28:51 +0000"
+    },
+    {
+      "title": "Solana, ether, xrp lead majors slide as Iran strikes drive a broad risk selloff",
+      "link": "https://www.coindesk.com/markets/2026/09/02/solana-ether-xrp-lead-majors-slide-as-iran-strikes-drive-a-broad-risk-selloff",
+      "pubDate": "Wed, 02 Sep 2026 05:01:25 +0000"
+    },
+    {
+      "title": "Bitcoin withstands $90 oil and rising yields while gold slides. A firm dollar is the catch",
+      "link": "https://www.coindesk.com/markets/2026/09/02/bitcoin-withstands-usd90-oil-and-rising-yields-as-gold-slides-a-firm-dollar-is-the-catch",
+      "pubDate": "Wed, 02 Sep 2026 04:40:36 +0000"
+    },
     {
       "title": "SEC proposes transfer agent rule, sets event to figure out round-the-clock U.S. trading",
       "link": "https://www.coindesk.com/policy/2026/09/01/sec-proposes-transfer-agent-rule-sets-event-to-figure-out-round-the-clock-u-s-trading",
@@ -440,51 +485,6 @@
       "title": "Robinhood's new crypto network is printing cash, and it's sending Arbitrum's token soaring",
       "link": "https://www.coindesk.com/markets/2026/09/01/robinhood-s-new-crypto-network-is-printing-cash-and-it-s-sending-arbitrum-s-token-soaring",
       "pubDate": "Tue, 01 Sep 2026 15:28:29 +0000"
-    },
-    {
-      "title": "Musk’s X hit by wave of unsolicited password reset emails",
-      "link": "https://www.coindesk.com/tech/2026/09/01/musk-s-x-hit-by-wave-of-unsolicited-password-reset-emails",
-      "pubDate": "Tue, 01 Sep 2026 14:59:12 +0000"
-    },
-    {
-      "title": "Firelight raises $8 million, expands beyond XRP as it aims to make DeFi less scary for fintechs",
-      "link": "https://www.coindesk.com/business/2026/08/31/firelight-raises-usd8-million-expands-beyond-xrp-as-it-aims-to-make-defi-less-scary-for-fintechs",
-      "pubDate": "Tue, 01 Sep 2026 13:56:44 +0000"
-    },
-    {
-      "title": "Bitcoin enters ‘Rektember’ as rate-hike risk combines with seasonality to threaten rally",
-      "link": "https://www.coindesk.com/markets/2026/09/01/bitcoin-enters-rektember-as-rate-hike-risks-threaten-its-august-rally",
-      "pubDate": "Tue, 01 Sep 2026 13:55:26 +0000"
-    },
-    {
-      "title": "Ethena pushes stablecoins into everyday banking with high-yield savings, cards and payments",
-      "link": "https://www.coindesk.com/business/2026/09/01/ethena-pushes-stablecoins-into-everyday-banking-with-high-yield-savings-cards-and-payments",
-      "pubDate": "Tue, 01 Sep 2026 13:15:35 +0000"
-    },
-    {
-      "title": "UK’s crime agency freezes Premier League $13.5 million account in crypto crime probe",
-      "link": "https://www.coindesk.com/business/2026/09/01/uk-s-crime-agency-freezes-premier-league-usd13-5-million-account-in-crypto-crime-probe",
-      "pubDate": "Tue, 01 Sep 2026 12:37:10 +0000"
-    },
-    {
-      "title": "Hut 8's Texas power site sits inside Anthropic’s $35 billion AI deal",
-      "link": "https://www.coindesk.com/tech/2026/09/01/hut-8-s-texas-power-site-sits-inside-anthropic-s-usd35-billion-ai-deal",
-      "pubDate": "Tue, 01 Sep 2026 12:11:44 +0000"
-    },
-    {
-      "title": "U.S. looks to influence Japan's monetary policy. It couldn't do that with bitcoin",
-      "link": "https://www.coindesk.com/daybook-us/2026/09/01/u-s-looks-to-influence-japan-s-monetary-policy-it-couldn-t-do-that-with-bitcoin",
-      "pubDate": "Tue, 01 Sep 2026 11:15:00 +0000"
-    },
-    {
-      "title": "Singapore proposes 100% reserves and a ban on yields for stablecoin issuers",
-      "link": "https://www.coindesk.com/policy/2026/09/01/singapore-proposes-100-reserves-and-a-ban-on-yields-for-stablecoin-issuers",
-      "pubDate": "Tue, 01 Sep 2026 10:35:21 +0000"
-    },
-    {
-      "title": "Bitcoin consolidates near $78,000 as Arbitrum surges 30% on Robinhood Chain revenue",
-      "link": "https://www.coindesk.com/markets/2026/09/01/bitcoin-consolidates-near-usd78-000-as-arbitrum-surges-30-on-robinhood-chain-revenue",
-      "pubDate": "Tue, 01 Sep 2026 10:29:00 +0000"
     }
   ]
 }
