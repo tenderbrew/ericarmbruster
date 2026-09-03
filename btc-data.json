@@ -1,13 +1,13 @@
 {
-  "fetchedAt": "2026-09-03T04:19:14.110Z",
+  "fetchedAt": "2026-09-03T11:08:18.685Z",
   "price": {
-    "usd": 77602,
-    "time": 1788408923
+    "usd": 77707,
+    "time": 1788433207
   },
   "moves": {
-    "d1": 0.39440858203472207,
-    "d7": -3.3218247603492124,
-    "d30": 21.13544621094652
+    "d1": 0.530248030774616,
+    "d7": -3.1910135905318993,
+    "d30": 21.299349484730044
   },
   "history90d": [
     {
@@ -372,60 +372,100 @@
     },
     {
       "date": "2026-09-03",
-      "close": 77590.45840034948
+      "close": 77739.75705328771
     }
   ],
   "blocks": [
     {
-      "height": 965255,
-      "id": "0000000000000000000065cccd00efd6965720194c4999bd71445f44e072a8ab",
-      "timestamp": 1788409090,
-      "txCount": 3316
+      "height": 965302,
+      "id": "0000000000000000000084c302e1f38c2401818375d016a223c99cb3d93fd5cc",
+      "timestamp": 1788433070,
+      "txCount": 6789
     },
     {
-      "height": 965254,
-      "id": "00000000000000000001afb86de200d66a82368c2ac905724597fdcf0341c51b",
-      "timestamp": 1788408806,
-      "txCount": 2423
+      "height": 965301,
+      "id": "00000000000000000000dc726d7519b4a1c74d3081648c4ed99e29e618c3f078",
+      "timestamp": 1788433035,
+      "txCount": 6460
     },
     {
-      "height": 965253,
-      "id": "00000000000000000001eac8304428ea2fc5fc56e9ffefec848efde3c5a4f279",
-      "timestamp": 1788408556,
-      "txCount": 2880
+      "height": 965300,
+      "id": "00000000000000000001fd4ddfbb8d8b65383015e03307d22ead6cd15062af95",
+      "timestamp": 1788432720,
+      "txCount": 4869
     },
     {
-      "height": 965252,
-      "id": "00000000000000000001ec4d331438490a934ae53acf8b69407f2e58db309719",
-      "timestamp": 1788408180,
-      "txCount": 3750
+      "height": 965299,
+      "id": "0000000000000000000110b638f6618465dc76329a8e77137276a4127fa6b0fd",
+      "timestamp": 1788432713,
+      "txCount": 6151
     },
     {
-      "height": 965251,
-      "id": "0000000000000000000034267a240bc4ad80226da57cd153d6335a3da627ce23",
-      "timestamp": 1788406162,
-      "txCount": 2233
+      "height": 965298,
+      "id": "000000000000000000019d3ac96ca5e77ea4fa4adc25fca4970e42e26e13a905",
+      "timestamp": 1788432188,
+      "txCount": 4113
     },
     {
-      "height": 965250,
-      "id": "0000000000000000000156446e6132cb3a1160d3fe4ed6ff5756b0fd0ce22b71",
-      "timestamp": 1788406146,
-      "txCount": 3733
+      "height": 965297,
+      "id": "000000000000000000001b1d8adb2113a39b3d3d9e0099b32b47bc0b05aef8af",
+      "timestamp": 1788431641,
+      "txCount": 5973
     },
     {
-      "height": 965249,
-      "id": "00000000000000000000406b4d355c7750c841276af268bda6c12c62397cd92e",
-      "timestamp": 1788403933,
-      "txCount": 2639
+      "height": 965296,
+      "id": "000000000000000000008d23e7ac0616842bfdc3c9e73c8f842cc68ee1af6a93",
+      "timestamp": 1788431047,
+      "txCount": 3102
     },
     {
-      "height": 965248,
-      "id": "00000000000000000001d1e995331925ad215b193702fb4bbfed10fa582f673c",
-      "timestamp": 1788403505,
-      "txCount": 2865
+      "height": 965295,
+      "id": "00000000000000000000c1d15068d550bc8121070eca0338fdce2b3a2e57ba46",
+      "timestamp": 1788430824,
+      "txCount": 3307
     }
   ],
   "news": [
+    {
+      "title": "Live updates: Bitcoin shrugs off higher oil prices as Japanese yen rallies",
+      "link": "https://www.coindesk.com/business/2026/09/03/live-updates-crypto-majors-bounce-while-global-funds-run-their-lowest-dollar-hedges-since-2015",
+      "pubDate": "Thu, 03 Sep 2026 10:42:15 +0000"
+    },
+    {
+      "title": "Bitcoin recovers toward $78,000 as pons and arbitrum extend Robinhood Chain rally",
+      "link": "https://www.coindesk.com/markets/2026/09/03/bitcoin-recovers-toward-usd78-000-as-pons-and-arbitrum-extend-robinhood-chain-rally",
+      "pubDate": "Thu, 03 Sep 2026 10:29:52 +0000"
+    },
+    {
+      "title": "Australia is cracking down on crypto businesses as its strict new regulatory deadline nears",
+      "link": "https://www.coindesk.com/business/2026/09/03/australia-is-cracking-down-on-crypto-businesses-as-its-strict-new-regulatory-deadline-nears",
+      "pubDate": "Thu, 03 Sep 2026 10:09:31 +0000"
+    },
+    {
+      "title": "CFTC asks judge to dismiss CME lawsuit over crypto perpetual futures",
+      "link": "https://www.coindesk.com/policy/2026/09/03/cftc-asks-judge-to-dismiss-cme-lawsuit-over-crypto-perpetual-futures",
+      "pubDate": "Thu, 03 Sep 2026 09:13:40 +0000"
+    },
+    {
+      "title": "Catastrophe bonds may join tokenization rush, with plans for test issuance in 2027",
+      "link": "https://www.coindesk.com/business/2026/09/03/catastrophe-bonds-may-join-tokenization-rush-with-plans-for-test-issuance-in-2027",
+      "pubDate": "Thu, 03 Sep 2026 08:30:00 +0000"
+    },
+    {
+      "title": "Bitcoin’s fabled golden cross is coming. And USDT may be the real signal this time",
+      "link": "https://www.coindesk.com/markets/2026/09/03/bitcoin-s-fabled-golden-cross-is-coming-and-usdt-may-be-the-real-signal-this-time",
+      "pubDate": "Thu, 03 Sep 2026 07:01:28 +0000"
+    },
+    {
+      "title": "Dogecoin becomes only losing bet for Japan-listed firm as it sells altcoins for bitcoin",
+      "link": "https://www.coindesk.com/markets/2026/09/03/dogecoin-becomes-losing-bet-for-japan-listed-firm-remixpoint-as-it-sells-altcoins-for-bitcoin",
+      "pubDate": "Thu, 03 Sep 2026 04:58:05 +0000"
+    },
+    {
+      "title": "Bitcoin back above $77,500, XRP leads majors as Fed hike odds slide to 62%",
+      "link": "https://www.coindesk.com/markets/2026/09/03/bitcoin-back-above-usd77-500-xrp-leads-majors-as-fed-hike-odds-near-66",
+      "pubDate": "Thu, 03 Sep 2026 04:22:40 +0000"
+    },
     {
       "title": "DOJ says Hamas crypto seizures reached $560,000 as FBI took over fundraising sites",
       "link": "https://www.coindesk.com/business/2026/09/02/doj-says-hamas-crypto-seizures-reached-usd560-000-as-fbi-took-over-fundraising-sites",
@@ -445,46 +485,6 @@
       "title": "New Jersey becomes first state to ask Supreme Court to weigh in on prediction markets",
       "link": "https://www.coindesk.com/policy/2026/09/02/new-jersey-becomes-first-state-to-ask-supreme-court-to-weigh-in-on-prediction-markets",
       "pubDate": "Wed, 02 Sep 2026 17:23:48 +0000"
-    },
-    {
-      "title": "Crypto Long & Short: Crypto VCs are mistaking consensus for discipline",
-      "link": "https://www.coindesk.com/coindesk-indices/2026/09/02/crypto-long-and-short-crypto-vcs-are-mistaking-consensus-for-discipline",
-      "pubDate": "Wed, 02 Sep 2026 15:15:02 +0000"
-    },
-    {
-      "title": "CrowdStrike and federal authorities dismantle Russian malware that secretly stole crypto for 8 years",
-      "link": "https://www.coindesk.com/tech/2026/09/02/crowdstrike-and-federal-authorities-dismantle-russian-malware-that-secretly-stole-crypto-for-8-years",
-      "pubDate": "Wed, 02 Sep 2026 13:14:47 +0000"
-    },
-    {
-      "title": "The token supercycle: everything of value is becoming programmable",
-      "link": "https://www.coindesk.com/opinion/2026/09/02/the-token-supercycle-everything-of-value-is-becoming-programmable",
-      "pubDate": "Wed, 02 Sep 2026 13:00:00 +0000"
-    },
-    {
-      "title": "The bearish 'Bart Simpson' pattern is back as bitcoin and XRP prices pull back",
-      "link": "https://www.coindesk.com/markets/2026/09/02/bitcoin-flashes-the-bart-simpsom-pattern-analyst-debate-whether-it-will-actually-form",
-      "pubDate": "Wed, 02 Sep 2026 12:13:26 +0000"
-    },
-    {
-      "title": "Capital B aims to add 376 BTC to bitcoin treasury following $8.8 million Adam Back investment",
-      "link": "https://www.coindesk.com/business/2026/08/29/capital-b-aims-to-add-376-btc-to-bitcoin-treasury-following-usd8-8-million-adam-back-investment",
-      "pubDate": "Wed, 02 Sep 2026 11:45:16 +0000"
-    },
-    {
-      "title": "A Fed rate increase would be a mistake, some observers say as bitcoin, gold, stocks fall",
-      "link": "https://www.coindesk.com/daybook-us/2026/09/02/a-fed-rate-increase-would-be-a-mistake-some-observers-say-as-bitcoin-gold-stocks-fall",
-      "pubDate": "Wed, 02 Sep 2026 11:14:58 +0000"
-    },
-    {
-      "title": "Lawsuit challenges Tether for allegedly freezing $42.4 million USDT before U.S. warrant",
-      "link": "https://www.coindesk.com/business/2026/09/02/tether-sued-over-usd42-4-million-usdt-freeze-allegedly-made-months-before-u-s-warrant",
-      "pubDate": "Wed, 02 Sep 2026 11:03:46 +0000"
-    },
-    {
-      "title": "Bitcoin slips below $76,500 as U.S. strikes on Iran send oil above $93",
-      "link": "https://www.coindesk.com/markets/2026/09/02/bitcoin-slips-below-usd77-000-as-u-s-strikes-on-iran-send-oil-above-usd93",
-      "pubDate": "Wed, 02 Sep 2026 10:50:38 +0000"
     }
   ]
 }
