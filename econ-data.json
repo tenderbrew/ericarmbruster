@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-09-03T16:19:26.882Z",
+  "fetchedAt": "2026-09-03T20:55:29.533Z",
   "indicators": {
     "UNRATE": {
       "latest": {
@@ -103,12 +103,12 @@
     },
     "WALCL": {
       "latest": {
-        "date": "2026-08-26",
-        "value": 6730912
+        "date": "2026-09-02",
+        "value": 6737204
       },
       "previous": {
-        "date": "2026-08-19",
-        "value": 6745699
+        "date": "2026-08-26",
+        "value": 6730912
       }
     },
     "FEDFUNDS": {
@@ -123,22 +123,22 @@
     },
     "DGS2": {
       "latest": {
-        "date": "2026-09-01",
+        "date": "2026-09-02",
         "value": 4.39
       },
       "previous": {
-        "date": "2026-08-31",
-        "value": 4.34
+        "date": "2026-09-01",
+        "value": 4.39
       }
     },
     "DGS10": {
       "latest": {
-        "date": "2026-09-01",
+        "date": "2026-09-02",
         "value": 4.79
       },
       "previous": {
-        "date": "2026-08-31",
-        "value": 4.75
+        "date": "2026-09-01",
+        "value": 4.79
       }
     },
     "T10Y2Y": {
@@ -153,11 +153,11 @@
     },
     "DFII10": {
       "latest": {
-        "date": "2026-09-01",
-        "value": 2.44
+        "date": "2026-09-02",
+        "value": 2.45
       },
       "previous": {
-        "date": "2026-08-31",
+        "date": "2026-09-01",
         "value": 2.44
       }
     },
@@ -299,66 +299,5 @@
       "previous": null
     }
   },
-  "news": [
-    {
-      "title": "The Guatemalan Coup",
-      "link": "https://mises.org/podcasts/wall-street-banks-and-american-foreign-policy/guatemalan-coup",
-      "pubDate": "Thu, 03 Sep 2026 11:12:41 CDT",
-      "kind": "Podcast"
-    },
-    {
-      "title": "Rockefeller, Morgan, and War",
-      "link": "https://mises.org/podcasts/wall-street-banks-and-american-foreign-policy/rockefeller-morgan-and-war",
-      "pubDate": "Thu, 03 Sep 2026 11:06:38 CDT",
-      "kind": "Podcast"
-    },
-    {
-      "title": "The CFR",
-      "link": "https://mises.org/podcasts/wall-street-banks-and-american-foreign-policy/cfr",
-      "pubDate": "Thu, 03 Sep 2026 10:59:33 CDT",
-      "kind": "Podcast"
-    },
-    {
-      "title": "The Round Table",
-      "link": "https://mises.org/podcasts/wall-street-banks-and-american-foreign-policy/round-table",
-      "pubDate": "Thu, 03 Sep 2026 10:53:30 CDT",
-      "kind": "Podcast"
-    },
-    {
-      "title": "The Fortuitous Fed",
-      "link": "https://mises.org/podcasts/wall-street-banks-and-american-foreign-policy/fortuitous-fed",
-      "pubDate": "Thu, 03 Sep 2026 10:44:26 CDT",
-      "kind": "Podcast"
-    },
-    {
-      "title": "Morgan, Wilson, and War",
-      "link": "https://mises.org/podcasts/wall-street-banks-and-american-foreign-policy/morgan-wilson-and-war",
-      "pubDate": "Thu, 03 Sep 2026 10:42:44 CDT",
-      "kind": "Podcast"
-    },
-    {
-      "title": "Teddy Roosevelt and the “Lone Nut”",
-      "link": "https://mises.org/podcasts/wall-street-banks-and-american-foreign-policy/teddy-roosevelt-and-lone-nut",
-      "pubDate": "Thu, 03 Sep 2026 10:31:21 CDT",
-      "kind": "Podcast"
-    },
-    {
-      "title": "An Aggressive Asian Policy",
-      "link": "https://mises.org/podcasts/wall-street-banks-and-american-foreign-policy/aggressive-asian-policy",
-      "pubDate": "Thu, 03 Sep 2026 10:19:06 CDT",
-      "kind": "Podcast"
-    },
-    {
-      "title": "J. P. Morgan",
-      "link": "https://mises.org/podcasts/wall-street-banks-and-american-foreign-policy/j-p-morgan",
-      "pubDate": "Thu, 03 Sep 2026 10:15:53 CDT",
-      "kind": "Podcast"
-    },
-    {
-      "title": "Wall Street, Banks, and American Foreign Policy",
-      "link": "https://mises.org/podcasts/wall-street-banks-and-american-foreign-policy/wall-street-banks-and-american-foreign-policy",
-      "pubDate": "Thu, 03 Sep 2026 10:09:47 CDT",
-      "kind": "Podcast"
-    }
-  ]
+  "news": []
 }
