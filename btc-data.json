@@ -1,13 +1,13 @@
 {
-  "fetchedAt": "2026-09-03T11:08:18.685Z",
+  "fetchedAt": "2026-09-03T16:22:10.084Z",
   "price": {
-    "usd": 77707,
-    "time": 1788433207
+    "usd": 80957,
+    "time": 1788452108
   },
   "moves": {
-    "d1": 0.530248030774616,
-    "d7": -3.1910135905318993,
-    "d30": 21.299349484730044
+    "d1": 4.7348023965333885,
+    "d7": 0.8579035704802562,
+    "d30": 26.372546054220237
   },
   "history90d": [
     {
@@ -372,62 +372,97 @@
     },
     {
       "date": "2026-09-03",
-      "close": 77739.75705328771
+      "close": 80719.35739456362
     }
   ],
   "blocks": [
     {
-      "height": 965302,
-      "id": "0000000000000000000084c302e1f38c2401818375d016a223c99cb3d93fd5cc",
-      "timestamp": 1788433070,
-      "txCount": 6789
+      "height": 965341,
+      "id": "0000000000000000000206400cf691bb65e12cc9be2ba0625cc5e3c6fe5764a4",
+      "timestamp": 1788452385,
+      "txCount": 4484
     },
     {
-      "height": 965301,
-      "id": "00000000000000000000dc726d7519b4a1c74d3081648c4ed99e29e618c3f078",
-      "timestamp": 1788433035,
-      "txCount": 6460
+      "height": 965340,
+      "id": "000000000000000000018fc5a898619b4b97c3dde295b675bede94d915f955f0",
+      "timestamp": 1788452055,
+      "txCount": 3898
     },
     {
-      "height": 965300,
-      "id": "00000000000000000001fd4ddfbb8d8b65383015e03307d22ead6cd15062af95",
-      "timestamp": 1788432720,
-      "txCount": 4869
+      "height": 965339,
+      "id": "000000000000000000017243d30fe1375065f64f1501e2036ffd67bde4796b72",
+      "timestamp": 1788451826,
+      "txCount": 3816
     },
     {
-      "height": 965299,
-      "id": "0000000000000000000110b638f6618465dc76329a8e77137276a4127fa6b0fd",
-      "timestamp": 1788432713,
-      "txCount": 6151
+      "height": 965338,
+      "id": "00000000000000000001006700f9b498b6ae84da1706032bfb97072bee9e588e",
+      "timestamp": 1788449039,
+      "txCount": 4454
     },
     {
-      "height": 965298,
-      "id": "000000000000000000019d3ac96ca5e77ea4fa4adc25fca4970e42e26e13a905",
-      "timestamp": 1788432188,
-      "txCount": 4113
+      "height": 965337,
+      "id": "000000000000000000012143b3ad24a9fc7f0907d1c4d4c1fe0d2c4aafa4a8ab",
+      "timestamp": 1788448579,
+      "txCount": 4385
     },
     {
-      "height": 965297,
-      "id": "000000000000000000001b1d8adb2113a39b3d3d9e0099b32b47bc0b05aef8af",
-      "timestamp": 1788431641,
-      "txCount": 5973
+      "height": 965336,
+      "id": "00000000000000000000a6eb26611137b9c1fd20fafba8a585b0d33a46c1511e",
+      "timestamp": 1788447886,
+      "txCount": 2732
     },
     {
-      "height": 965296,
-      "id": "000000000000000000008d23e7ac0616842bfdc3c9e73c8f842cc68ee1af6a93",
-      "timestamp": 1788431047,
-      "txCount": 3102
+      "height": 965335,
+      "id": "000000000000000000010684344616e48765a778c7380066ef0064c23d4edea8",
+      "timestamp": 1788447285,
+      "txCount": 4443
     },
     {
-      "height": 965295,
-      "id": "00000000000000000000c1d15068d550bc8121070eca0338fdce2b3a2e57ba46",
-      "timestamp": 1788430824,
-      "txCount": 3307
+      "height": 965334,
+      "id": "00000000000000000001ab761a30a6dd078a3577d78e529dc2c4fdf71c7183da",
+      "timestamp": 1788446921,
+      "txCount": 6874
     }
   ],
   "news": [
     {
-      "title": "Live updates: Bitcoin shrugs off higher oil prices as Japanese yen rallies",
+      "title": "Standard Chartered brings spot crypto trading to Dubai FX platform",
+      "link": "https://www.coindesk.com/business/2026/09/03/standard-chartered-first-top-global-bank-to-offer-bitcoin-and-ether-trading-in-uae",
+      "pubDate": "Thu, 03 Sep 2026 15:58:02 +0000"
+    },
+    {
+      "title": "Crypto for Advisors: Why crypto earnings reports can be misleading",
+      "link": "https://www.coindesk.com/coindesk-indices/2026/09/03/crypto-for-advisors-why-crypto-earnings-reports-can-be-misleading",
+      "pubDate": "Thu, 03 Sep 2026 15:00:00 +0000"
+    },
+    {
+      "title": "A memecoin making app becomes crypto’s top fee generators as Robinhood Chain activity explodes",
+      "link": "https://www.coindesk.com/tech/2026/09/03/a-memecoin-making-app-becomes-crypto-s-top-fee-generators-as-robinhood-chain-activity-explodes",
+      "pubDate": "Thu, 03 Sep 2026 14:51:39 +0000"
+    },
+    {
+      "title": "Bitget in talks with Wall Street giants including BlackRock to fuel Asian distribution",
+      "link": "https://www.coindesk.com/business/2026/09/03/bitget-in-talks-with-wall-street-giants-including-blackrock-for-asian-distribution",
+      "pubDate": "Thu, 03 Sep 2026 14:41:25 +0000"
+    },
+    {
+      "title": "SoFi, Kraken tie up as crypto and banking push into each other's turf",
+      "link": "https://www.coindesk.com/business/2026/09/03/sofi-kraken-tie-up-as-crypto-and-banking-push-into-each-other-s-turf",
+      "pubDate": "Thu, 03 Sep 2026 12:00:00 +0000"
+    },
+    {
+      "title": "FX has stopped reading bond yields the old way. Bitcoin should too.",
+      "link": "https://www.coindesk.com/daybook-us/2026/09/03/fx-has-stopped-reading-bond-yields-the-old-way-bitcoin-should-too",
+      "pubDate": "Thu, 03 Sep 2026 11:26:00 +0000"
+    },
+    {
+      "title": "The yen is surging and it’s helping bitcoin, for now",
+      "link": "https://www.coindesk.com/markets/2026/09/03/the-yen-is-surging-and-it-s-helping-bitcoin-for-now",
+      "pubDate": "Thu, 03 Sep 2026 11:19:56 +0000"
+    },
+    {
+      "title": "Live updates: Bitcoin jumps above $81,000 as rates fall, dollar weakens",
       "link": "https://www.coindesk.com/business/2026/09/03/live-updates-crypto-majors-bounce-while-global-funds-run-their-lowest-dollar-hedges-since-2015",
       "pubDate": "Thu, 03 Sep 2026 10:42:15 +0000"
     },
@@ -450,41 +485,6 @@
       "title": "Catastrophe bonds may join tokenization rush, with plans for test issuance in 2027",
       "link": "https://www.coindesk.com/business/2026/09/03/catastrophe-bonds-may-join-tokenization-rush-with-plans-for-test-issuance-in-2027",
       "pubDate": "Thu, 03 Sep 2026 08:30:00 +0000"
-    },
-    {
-      "title": "Bitcoin’s fabled golden cross is coming. And USDT may be the real signal this time",
-      "link": "https://www.coindesk.com/markets/2026/09/03/bitcoin-s-fabled-golden-cross-is-coming-and-usdt-may-be-the-real-signal-this-time",
-      "pubDate": "Thu, 03 Sep 2026 07:01:28 +0000"
-    },
-    {
-      "title": "Dogecoin becomes only losing bet for Japan-listed firm as it sells altcoins for bitcoin",
-      "link": "https://www.coindesk.com/markets/2026/09/03/dogecoin-becomes-losing-bet-for-japan-listed-firm-remixpoint-as-it-sells-altcoins-for-bitcoin",
-      "pubDate": "Thu, 03 Sep 2026 04:58:05 +0000"
-    },
-    {
-      "title": "Bitcoin back above $77,500, XRP leads majors as Fed hike odds slide to 62%",
-      "link": "https://www.coindesk.com/markets/2026/09/03/bitcoin-back-above-usd77-500-xrp-leads-majors-as-fed-hike-odds-near-66",
-      "pubDate": "Thu, 03 Sep 2026 04:22:40 +0000"
-    },
-    {
-      "title": "DOJ says Hamas crypto seizures reached $560,000 as FBI took over fundraising sites",
-      "link": "https://www.coindesk.com/business/2026/09/02/doj-says-hamas-crypto-seizures-reached-usd560-000-as-fbi-took-over-fundraising-sites",
-      "pubDate": "Wed, 02 Sep 2026 21:24:26 +0000"
-    },
-    {
-      "title": "Kraken parent Payward delays IPO to second quarter of 2027 at earliest",
-      "link": "https://www.coindesk.com/business/2026/09/02/kraken-parent-payward-pushes-ipo-back-to-mid-2027-at-earliest",
-      "pubDate": "Wed, 02 Sep 2026 20:08:34 +0000"
-    },
-    {
-      "title": "Crypto made new friends in U.S. primaries, but focus now shifts to general election",
-      "link": "https://www.coindesk.com/news-analysis/2026/09/02/crypto-made-new-friends-in-u-s-primaries-but-focus-now-shifts-to-general-election",
-      "pubDate": "Wed, 02 Sep 2026 17:39:00 +0000"
-    },
-    {
-      "title": "New Jersey becomes first state to ask Supreme Court to weigh in on prediction markets",
-      "link": "https://www.coindesk.com/policy/2026/09/02/new-jersey-becomes-first-state-to-ask-supreme-court-to-weigh-in-on-prediction-markets",
-      "pubDate": "Wed, 02 Sep 2026 17:23:48 +0000"
     }
   ]
 }
