@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-09-02T20:57:17.437Z",
+  "fetchedAt": "2026-09-03T04:12:47.500Z",
   "indicators": {
     "UNRATE": {
       "latest": {
@@ -63,12 +63,12 @@
     },
     "T10YIE": {
       "latest": {
-        "date": "2026-09-01",
-        "value": 2.35
+        "date": "2026-09-02",
+        "value": 2.34
       },
       "previous": {
-        "date": "2026-08-31",
-        "value": 2.31
+        "date": "2026-09-01",
+        "value": 2.35
       }
     },
     "PCE": {
@@ -143,12 +143,12 @@
     },
     "T10Y2Y": {
       "latest": {
-        "date": "2026-09-01",
+        "date": "2026-09-02",
         "value": 0.4
       },
       "previous": {
-        "date": "2026-08-31",
-        "value": 0.41
+        "date": "2026-09-01",
+        "value": 0.4
       }
     },
     "DFII10": {
@@ -301,10 +301,28 @@
   },
   "news": [
     {
+      "title": "How Neoliberals Fueled the Rise of Socialism",
+      "link": "https://mises.org/podcasts/guns-and-butter/how-neoliberals-fueled-rise-socialism",
+      "pubDate": "Wed, 02 Sep 2026 04:39:38 CDT",
+      "kind": "Podcast"
+    },
+    {
+      "title": "No, Flock Is Not Really a Private Company",
+      "link": "https://mises.org/podcasts/audio-mises-wire/no-flock-not-really-private-company",
+      "pubDate": "Wed, 02 Sep 2026 04:04:12 CDT",
+      "kind": "Podcast"
+    },
+    {
       "title": "Libertarians and Political Action",
       "link": "https://mises.org/mises-wire/libertarians-and-political-action",
       "pubDate": "Wed, 02 Sep 2026 02:00:00 CDT",
       "kind": "Mises Wire"
+    },
+    {
+      "title": "More Military Murders on the High Seas",
+      "link": "https://mises.org/power-market/more-military-murders-high-seas",
+      "pubDate": "Wed, 02 Sep 2026 11:00:00 CDT",
+      "kind": "Article"
     },
     {
       "title": "The Capture of the Constitution: How Public Sector Unions Exploited Free Speech to Suppress Black Upward Mobility",
@@ -313,10 +331,22 @@
       "kind": "Mises Wire"
     },
     {
+      "title": "The Definition of Insanity",
+      "link": "https://mises.org/power-market/definition-insanity",
+      "pubDate": "Wed, 02 Sep 2026 11:00:00 CDT",
+      "kind": "Article"
+    },
+    {
       "title": "No, Flock Is Not Really a Private Company",
       "link": "https://mises.org/mises-wire/no-flock-not-really-private-company",
       "pubDate": "Wed, 02 Sep 2026 09:00:00 CDT",
       "kind": "Mises Wire"
+    },
+    {
+      "title": "Reminder: Larry Ellison says he wants total data surveillance of all.",
+      "link": "https://mises.org/notes-margin/reminder-larry-ellison-says-he-wants-total-data-surveillance-all",
+      "pubDate": "Wed, 02 Sep 2026 08:00:00 CDT",
+      "kind": "Article"
     },
     {
       "title": "The Ethical Foundations of the Just War Doctrine",
@@ -329,36 +359,6 @@
       "link": "https://mises.org/power-market/curtis-yarvin-comes-out-support-flock-cameras",
       "pubDate": "Wed, 02 Sep 2026 06:00:00 CDT",
       "kind": "Article"
-    },
-    {
-      "title": "How Neoliberals Fueled the Rise of Socialism",
-      "link": "https://mises.org/mises-wire/how-neoliberals-fueled-rise-socialism",
-      "pubDate": "Wed, 02 Sep 2026 05:00:00 CDT",
-      "kind": "Mises Wire"
-    },
-    {
-      "title": "The Jerusalem Post Calls for More More Americans to Enlist - to Die for Israel",
-      "link": "https://mises.org/notes-margin/jerusalem-post-calls-more-more-americans-enlist-die-israel",
-      "pubDate": "Wed, 02 Sep 2026 03:00:00 CDT",
-      "kind": "Article"
-    },
-    {
-      "title": "Credit Out of “Thin Air” Brings Wealth Destruction",
-      "link": "https://mises.org/podcasts/audio-mises-wire/credit-out-thin-air-brings-wealth-destruction",
-      "pubDate": "Tue, 01 Sep 2026 02:10:10 CDT",
-      "kind": "Podcast"
-    },
-    {
-      "title": "Rothbard’s Forgotten Critique of the Inflation Premium",
-      "link": "https://mises.org/mises-wire/rothbards-forgotten-critique-inflation-premium",
-      "pubDate": "Tue, 01 Sep 2026 02:00:00 CDT",
-      "kind": "Mises Wire"
-    },
-    {
-      "title": "The High Cost of the Automated Flock-Camera Surveillance State",
-      "link": "https://mises.org/podcasts/audio-mises-wire/high-cost-automated-flock-camera-surveillance-state",
-      "pubDate": "Tue, 01 Sep 2026 01:36:12 CDT",
-      "kind": "Podcast"
     }
   ]
 }
