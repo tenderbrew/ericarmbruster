@@ -1,24 +1,24 @@
 {
-  "fetchedAt": "2026-09-04T04:19:52.512Z",
+  "fetchedAt": "2026-09-04T16:15:07.487Z",
   "indicators": {
     "UNRATE": {
       "latest": {
-        "date": "2026-07-01",
+        "date": "2026-08-01",
         "value": 4.1
       },
       "previous": {
-        "date": "2026-06-01",
-        "value": 4.2
+        "date": "2026-07-01",
+        "value": 4.1
       }
     },
     "PAYEMS": {
       "latest": {
-        "date": "2026-07-01",
-        "value": 158858
+        "date": "2026-08-01",
+        "value": 159075
       },
       "previous": {
-        "date": "2026-06-01",
-        "value": 158881
+        "date": "2026-07-01",
+        "value": 158913
       }
     },
     "JTSJOL": {
@@ -163,12 +163,12 @@
     },
     "BAMLH0A0HYM2": {
       "latest": {
-        "date": "2026-09-02",
-        "value": 2.66
+        "date": "2026-09-03",
+        "value": 2.65
       },
       "previous": {
-        "date": "2026-09-01",
-        "value": 2.65
+        "date": "2026-09-02",
+        "value": 2.66
       }
     },
     "MORTGAGE30US": {
@@ -263,12 +263,12 @@
     },
     "VIXCLS": {
       "latest": {
-        "date": "2026-09-02",
-        "value": 15.2
+        "date": "2026-09-03",
+        "value": 14.32
       },
       "previous": {
-        "date": "2026-09-01",
-        "value": 16.34
+        "date": "2026-09-02",
+        "value": 15.2
       }
     },
     "BOPGSTB": {
