@@ -1,19 +1,15 @@
 {
-  "fetchedAt": "2026-09-03T23:14:59.572Z",
+  "fetchedAt": "2026-09-04T04:24:31.047Z",
   "price": {
-    "usd": 81182,
-    "time": 1788477008
+    "usd": 81085,
+    "time": 1788495607
   },
   "moves": {
-    "d1": 5.025886929547463,
-    "d7": 1.1382132200888018,
-    "d30": 26.723767355184936
+    "d1": -0.22113110243904277,
+    "d7": 4.194556225073476,
+    "d30": 25.501663456348478
   },
   "history90d": [
-    {
-      "date": "2026-06-06",
-      "close": 60960.10140035313
-    },
     {
       "date": "2026-06-07",
       "close": 60855.25426528331
@@ -371,61 +367,80 @@
       "close": 77297.13347191992
     },
     {
-      "date": "2026-09-03",
-      "close": 81109.0688079841
+      "date": "2026-09-04",
+      "close": 81264.70153038795
+    },
+    {
+      "date": "2026-09-04",
+      "close": 81084.23272638685
     }
   ],
   "blocks": [
     {
-      "height": 965388,
-      "id": "00000000000000000001c39cdc7d4143b721ade69e94d0803206dd2fbc80aad0",
-      "timestamp": 1788476273,
-      "txCount": 4282
+      "height": 965426,
+      "id": "00000000000000000001b2f48da92a3acc8d1b0a8f6af6232578e03de1ad6c1f",
+      "timestamp": 1788495058,
+      "txCount": 4092
     },
     {
-      "height": 965387,
-      "id": "00000000000000000002363aa314d6a29ae40a9e4adb8cc601ac134d2c140960",
-      "timestamp": 1788475897,
-      "txCount": 3777
+      "height": 965425,
+      "id": "00000000000000000000342cfe03551e16b2bda4e7ad27f8c594115246754a11",
+      "timestamp": 1788493672,
+      "txCount": 5712
     },
     {
-      "height": 965386,
-      "id": "0000000000000000000104a024e2d2602e6b6017fc0f7dcf0d353e04803db1a5",
-      "timestamp": 1788474886,
-      "txCount": 6483
+      "height": 965424,
+      "id": "00000000000000000002196188bd813e9d86ab3c15a0f99eb962c5792a419d32",
+      "timestamp": 1788493116,
+      "txCount": 6206
     },
     {
-      "height": 965385,
-      "id": "000000000000000000014da41cd775213d9135a3995a78945a06527e395e206d",
-      "timestamp": 1788474637,
-      "txCount": 6971
+      "height": 965423,
+      "id": "00000000000000000000d56776095a35bff5d24f4f13e5ae45d0f6160a0b7791",
+      "timestamp": 1788492925,
+      "txCount": 2882
     },
     {
-      "height": 965384,
-      "id": "00000000000000000001cb527d03bf8c552e3406459a4cf74118d2bf81b0ca2f",
-      "timestamp": 1788474510,
-      "txCount": 2345
+      "height": 965422,
+      "id": "00000000000000000000390d3a5a7fcd38c9c031648263c912aa9486ae4b82f0",
+      "timestamp": 1788492485,
+      "txCount": 6559
     },
     {
-      "height": 965383,
-      "id": "000000000000000000019193ccbfe508ff1f5bc1696e8933db029f6ed29f7172",
-      "timestamp": 1788473822,
-      "txCount": 6257
+      "height": 965421,
+      "id": "00000000000000000001f23fe0f997943ba7771ece95947d35855d1359c70e2e",
+      "timestamp": 1788492438,
+      "txCount": 4663
     },
     {
-      "height": 965382,
-      "id": "0000000000000000000077dacbf45ff55106d7fa6e9edc7c1dfb8525e5dd5aa7",
-      "timestamp": 1788473587,
-      "txCount": 6908
+      "height": 965420,
+      "id": "00000000000000000001179009b52d5380066cbcfd647797da65ba09ecaccb3c",
+      "timestamp": 1788492015,
+      "txCount": 4402
     },
     {
-      "height": 965381,
-      "id": "00000000000000000001ba84e0c98a0c0ebe581eb81704934b49c7007a11fe4f",
-      "timestamp": 1788473523,
-      "txCount": 5737
+      "height": 965419,
+      "id": "00000000000000000000a01438378f55bd4c30ae1bfe5dd6114cb51797e3619d",
+      "timestamp": 1788491466,
+      "txCount": 2681
     }
   ],
   "news": [
+    {
+      "title": "Bitcoin back above $81,000 as hike odds fade, Zcash leads with 15% jump",
+      "link": "https://www.coindesk.com/markets/2026/09/04/bitcoin-back-above-usd81-000-as-hike-odds-fade-zcash-leads-with-15-jump",
+      "pubDate": "Fri, 04 Sep 2026 04:22:01 +0000"
+    },
+    {
+      "title": "U.S. banking agency gives blockchain bank OpenReserve initial OK to operate",
+      "link": "https://www.coindesk.com/policy/2026/09/03/u-s-banking-agency-gives-blockchain-bank-openreserve-initial-ok-to-operate",
+      "pubDate": "Fri, 04 Sep 2026 03:26:50 +0000"
+    },
+    {
+      "title": "AMC CEO blasts Robinhood for stock token, putting synthetic shares in spotlight",
+      "link": "https://www.coindesk.com/business/2026/09/03/amc-ceo-blasts-robinhood-for-stock-token-putting-synthetic-shares-in-spotlight",
+      "pubDate": "Fri, 04 Sep 2026 03:03:25 +0000"
+    },
     {
       "title": "Standard Chartered brings spot crypto trading to Dubai FX platform",
       "link": "https://www.coindesk.com/business/2026/09/03/standard-chartered-first-top-global-bank-to-offer-bitcoin-and-ether-trading-in-uae",
@@ -470,21 +485,6 @@
       "title": "Bitcoin recovers toward $78,000 as pons and arbitrum extend Robinhood Chain rally",
       "link": "https://www.coindesk.com/markets/2026/09/03/bitcoin-recovers-toward-usd78-000-as-pons-and-arbitrum-extend-robinhood-chain-rally",
       "pubDate": "Thu, 03 Sep 2026 10:29:52 +0000"
-    },
-    {
-      "title": "Australia is cracking down on crypto businesses as its strict new regulatory deadline nears",
-      "link": "https://www.coindesk.com/business/2026/09/03/australia-is-cracking-down-on-crypto-businesses-as-its-strict-new-regulatory-deadline-nears",
-      "pubDate": "Thu, 03 Sep 2026 10:09:31 +0000"
-    },
-    {
-      "title": "CFTC asks judge to dismiss CME lawsuit over crypto perpetual futures",
-      "link": "https://www.coindesk.com/policy/2026/09/03/cftc-asks-judge-to-dismiss-cme-lawsuit-over-crypto-perpetual-futures",
-      "pubDate": "Thu, 03 Sep 2026 09:13:40 +0000"
-    },
-    {
-      "title": "Catastrophe bonds may join tokenization rush, with plans for test issuance in 2027",
-      "link": "https://www.coindesk.com/business/2026/09/03/catastrophe-bonds-may-join-tokenization-rush-with-plans-for-test-issuance-in-2027",
-      "pubDate": "Thu, 03 Sep 2026 08:30:00 +0000"
     }
   ]
 }
