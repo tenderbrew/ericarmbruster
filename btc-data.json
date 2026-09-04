@@ -1,13 +1,13 @@
 {
-  "fetchedAt": "2026-09-04T04:24:31.047Z",
+  "fetchedAt": "2026-09-04T11:12:32.887Z",
   "price": {
-    "usd": 81085,
-    "time": 1788495607
+    "usd": 81169,
+    "time": 1788520206
   },
   "moves": {
-    "d1": -0.22113110243904277,
-    "d7": 4.194556225073476,
-    "d30": 25.501663456348478
+    "d1": -0.11776519028026122,
+    "d7": 4.302496568206071,
+    "d30": 25.631676895706356
   },
   "history90d": [
     {
@@ -372,60 +372,95 @@
     },
     {
       "date": "2026-09-04",
-      "close": 81084.23272638685
+      "close": 81144.05050559514
     }
   ],
   "blocks": [
     {
-      "height": 965426,
-      "id": "00000000000000000001b2f48da92a3acc8d1b0a8f6af6232578e03de1ad6c1f",
-      "timestamp": 1788495058,
-      "txCount": 4092
+      "height": 965468,
+      "id": "00000000000000000001aea6ca843728004dc4ef7b5fe546c9ffefd805c20468",
+      "timestamp": 1788519891,
+      "txCount": 6115
     },
     {
-      "height": 965425,
-      "id": "00000000000000000000342cfe03551e16b2bda4e7ad27f8c594115246754a11",
-      "timestamp": 1788493672,
-      "txCount": 5712
+      "height": 965467,
+      "id": "00000000000000000001caf04ad7c4988b3f66ecdf9c04752ac1e68a38b6201c",
+      "timestamp": 1788519598,
+      "txCount": 4681
     },
     {
-      "height": 965424,
-      "id": "00000000000000000002196188bd813e9d86ab3c15a0f99eb962c5792a419d32",
-      "timestamp": 1788493116,
-      "txCount": 6206
+      "height": 965466,
+      "id": "00000000000000000001e463b34d155e1e1db27a362b345a616516caddd18ba1",
+      "timestamp": 1788519311,
+      "txCount": 3917
     },
     {
-      "height": 965423,
-      "id": "00000000000000000000d56776095a35bff5d24f4f13e5ae45d0f6160a0b7791",
-      "timestamp": 1788492925,
-      "txCount": 2882
+      "height": 965465,
+      "id": "00000000000000000001669b323d153572ce1ec2c2fa7696e0cd50d435c7bddb",
+      "timestamp": 1788518417,
+      "txCount": 6819
     },
     {
-      "height": 965422,
-      "id": "00000000000000000000390d3a5a7fcd38c9c031648263c912aa9486ae4b82f0",
-      "timestamp": 1788492485,
-      "txCount": 6559
+      "height": 965464,
+      "id": "00000000000000000001f85cc25d36f6f53d38845e9d0c33d657cb03f080c323",
+      "timestamp": 1788518313,
+      "txCount": 6687
     },
     {
-      "height": 965421,
-      "id": "00000000000000000001f23fe0f997943ba7771ece95947d35855d1359c70e2e",
-      "timestamp": 1788492438,
-      "txCount": 4663
+      "height": 965463,
+      "id": "00000000000000000000b5c5766f2adf757d5ccd1aba1bb0087ccaa6a5d213cb",
+      "timestamp": 1788518255,
+      "txCount": 6771
     },
     {
-      "height": 965420,
-      "id": "00000000000000000001179009b52d5380066cbcfd647797da65ba09ecaccb3c",
-      "timestamp": 1788492015,
-      "txCount": 4402
+      "height": 965462,
+      "id": "000000000000000000006ed7ae0355814ba1dab7360251753b27147d6b11fe00",
+      "timestamp": 1788518231,
+      "txCount": 6568
     },
     {
-      "height": 965419,
-      "id": "00000000000000000000a01438378f55bd4c30ae1bfe5dd6114cb51797e3619d",
-      "timestamp": 1788491466,
-      "txCount": 2681
+      "height": 965461,
+      "id": "000000000000000000006ecd7690393bdd874bfe4583dba5434f155c8609612d",
+      "timestamp": 1788518162,
+      "txCount": 3890
     }
   ],
   "news": [
+    {
+      "title": "Zcash jumps 20% to landmark $1,000 level as short sellers lose $34 million",
+      "link": "https://www.coindesk.com/markets/2026/09/04/zcash-jumps-20-to-landmark-usd1-000-level-as-short-sellers-lose-usd34-million",
+      "pubDate": "Fri, 04 Sep 2026 10:40:14 +0000"
+    },
+    {
+      "title": "Bitcoin clears $81,000 as privacy coins lead a broad crypto rally",
+      "link": "https://www.coindesk.com/markets/2026/09/04/bitcoin-clears-usd81-000-as-privacy-coins-lead-a-broad-crypto-rally",
+      "pubDate": "Fri, 04 Sep 2026 09:57:01 +0000"
+    },
+    {
+      "title": "IMF confirms El Salvador’s bitcoin growth was funded by private donations, not public money",
+      "link": "https://www.coindesk.com/business/2026/09/04/imf-confirms-el-salvador-s-bitcoin-growth-was-funded-by-private-donations-not-public-money",
+      "pubDate": "Fri, 04 Sep 2026 09:47:15 +0000"
+    },
+    {
+      "title": "South Korea targets February 2027 rollout for full tokenized securities market",
+      "link": "https://www.coindesk.com/business/2026/09/04/south-korea-targets-february-2027-rollout-for-full-tokenized-securities-market",
+      "pubDate": "Fri, 04 Sep 2026 09:41:31 +0000"
+    },
+    {
+      "title": "Live updates: Bitcoin ETFs take $731 million, their biggest day since January",
+      "link": "https://www.coindesk.com/business/2026/09/04/live-updates-bitcoin-etfs-take-usd731-million-their-biggest-day-since-january",
+      "pubDate": "Fri, 04 Sep 2026 07:34:07 +0000"
+    },
+    {
+      "title": "OpenAI puts $1 billion behind cyber defense after unveiling AI that can find zero-days",
+      "link": "https://www.coindesk.com/tech/2026/09/04/openai-puts-usd1-billion-behind-cyber-defense-after-unveiling-ai-that-can-find-zero-days",
+      "pubDate": "Fri, 04 Sep 2026 05:49:43 +0000"
+    },
+    {
+      "title": "One full bitcoin now buys a little more than 18 ounces of gold, the most since January",
+      "link": "https://www.coindesk.com/markets/2026/09/04/one-full-bitcoin-now-buys-a-little-more-than-18-ounces-of-gold-the-most-since-january",
+      "pubDate": "Fri, 04 Sep 2026 05:10:34 +0000"
+    },
     {
       "title": "Bitcoin back above $81,000 as hike odds fade, Zcash leads with 15% jump",
       "link": "https://www.coindesk.com/markets/2026/09/04/bitcoin-back-above-usd81-000-as-hike-odds-fade-zcash-leads-with-15-jump",
@@ -450,41 +485,6 @@
       "title": "Crypto for Advisors: Why crypto earnings reports can be misleading",
       "link": "https://www.coindesk.com/coindesk-indices/2026/09/03/crypto-for-advisors-why-crypto-earnings-reports-can-be-misleading",
       "pubDate": "Thu, 03 Sep 2026 15:00:00 +0000"
-    },
-    {
-      "title": "A memecoin making app becomes crypto’s top fee generators as Robinhood Chain activity explodes",
-      "link": "https://www.coindesk.com/tech/2026/09/03/a-memecoin-making-app-becomes-crypto-s-top-fee-generators-as-robinhood-chain-activity-explodes",
-      "pubDate": "Thu, 03 Sep 2026 14:51:39 +0000"
-    },
-    {
-      "title": "Bitget in talks with Wall Street giants including BlackRock to fuel Asian distribution",
-      "link": "https://www.coindesk.com/business/2026/09/03/bitget-in-talks-with-wall-street-giants-including-blackrock-for-asian-distribution",
-      "pubDate": "Thu, 03 Sep 2026 14:41:25 +0000"
-    },
-    {
-      "title": "SoFi, Kraken tie up as crypto and banking push into each other's turf",
-      "link": "https://www.coindesk.com/business/2026/09/03/sofi-kraken-tie-up-as-crypto-and-banking-push-into-each-other-s-turf",
-      "pubDate": "Thu, 03 Sep 2026 12:00:00 +0000"
-    },
-    {
-      "title": "FX has stopped reading bond yields the old way. Bitcoin should too.",
-      "link": "https://www.coindesk.com/daybook-us/2026/09/03/fx-has-stopped-reading-bond-yields-the-old-way-bitcoin-should-too",
-      "pubDate": "Thu, 03 Sep 2026 11:26:00 +0000"
-    },
-    {
-      "title": "The yen is surging and it’s helping bitcoin, for now",
-      "link": "https://www.coindesk.com/markets/2026/09/03/the-yen-is-surging-and-it-s-helping-bitcoin-for-now",
-      "pubDate": "Thu, 03 Sep 2026 11:19:56 +0000"
-    },
-    {
-      "title": "Live updates: Bitcoin jumps above $81,000 as rates fall, dollar weakens",
-      "link": "https://www.coindesk.com/business/2026/09/03/live-updates-crypto-majors-bounce-while-global-funds-run-their-lowest-dollar-hedges-since-2015",
-      "pubDate": "Thu, 03 Sep 2026 10:42:15 +0000"
-    },
-    {
-      "title": "Bitcoin recovers toward $78,000 as pons and arbitrum extend Robinhood Chain rally",
-      "link": "https://www.coindesk.com/markets/2026/09/03/bitcoin-recovers-toward-usd78-000-as-pons-and-arbitrum-extend-robinhood-chain-rally",
-      "pubDate": "Thu, 03 Sep 2026 10:29:52 +0000"
     }
   ]
 }
