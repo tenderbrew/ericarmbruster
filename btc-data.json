@@ -1,13 +1,13 @@
 {
-  "fetchedAt": "2026-09-04T11:12:32.887Z",
+  "fetchedAt": "2026-09-04T16:17:55.372Z",
   "price": {
-    "usd": 81169,
-    "time": 1788520206
+    "usd": 79469,
+    "time": 1788538209
   },
   "moves": {
-    "d1": -0.11776519028026122,
-    "d7": 4.302496568206071,
-    "d30": 25.631676895706356
+    "d1": -2.2096943649223433,
+    "d7": 2.117989623856009,
+    "d30": 23.00045252774938
   },
   "history90d": [
     {
@@ -372,60 +372,85 @@
     },
     {
       "date": "2026-09-04",
-      "close": 81144.05050559514
+      "close": 79475.52633308832
     }
   ],
   "blocks": [
     {
-      "height": 965468,
-      "id": "00000000000000000001aea6ca843728004dc4ef7b5fe546c9ffefd805c20468",
-      "timestamp": 1788519891,
-      "txCount": 6115
+      "height": 965498,
+      "id": "00000000000000000001d2fe23607bdf4588844651a016783851e5972e6d18ad",
+      "timestamp": 1788538570,
+      "txCount": 3635
     },
     {
-      "height": 965467,
-      "id": "00000000000000000001caf04ad7c4988b3f66ecdf9c04752ac1e68a38b6201c",
-      "timestamp": 1788519598,
-      "txCount": 4681
+      "height": 965497,
+      "id": "00000000000000000001149d013901686f1e52c1ef81e00d5f71c13aa65dadb0",
+      "timestamp": 1788537893,
+      "txCount": 3994
     },
     {
-      "height": 965466,
-      "id": "00000000000000000001e463b34d155e1e1db27a362b345a616516caddd18ba1",
-      "timestamp": 1788519311,
-      "txCount": 3917
+      "height": 965496,
+      "id": "000000000000000000002d40ebedd188a84a4f4218743269477f36df02beb883",
+      "timestamp": 1788537316,
+      "txCount": 4686
     },
     {
-      "height": 965465,
-      "id": "00000000000000000001669b323d153572ce1ec2c2fa7696e0cd50d435c7bddb",
-      "timestamp": 1788518417,
-      "txCount": 6819
+      "height": 965495,
+      "id": "00000000000000000001b6dbcf74b71f777ac53f02228acd2ce75ec9d1f083f5",
+      "timestamp": 1788536495,
+      "txCount": 4195
     },
     {
-      "height": 965464,
-      "id": "00000000000000000001f85cc25d36f6f53d38845e9d0c33d657cb03f080c323",
-      "timestamp": 1788518313,
-      "txCount": 6687
+      "height": 965494,
+      "id": "0000000000000000000154dd9c95e1bd0b057f2aa0795c1680fe16fd6bd27389",
+      "timestamp": 1788534687,
+      "txCount": 4209
     },
     {
-      "height": 965463,
-      "id": "00000000000000000000b5c5766f2adf757d5ccd1aba1bb0087ccaa6a5d213cb",
-      "timestamp": 1788518255,
-      "txCount": 6771
+      "height": 965493,
+      "id": "000000000000000000000fd70ca6753e3a61fe00c8a27793a01751ca32a31da9",
+      "timestamp": 1788533053,
+      "txCount": 5672
     },
     {
-      "height": 965462,
-      "id": "000000000000000000006ed7ae0355814ba1dab7360251753b27147d6b11fe00",
-      "timestamp": 1788518231,
-      "txCount": 6568
+      "height": 965492,
+      "id": "000000000000000000018cbe985c13d03bbe6ea048405995c7b4fb7a0a32c64c",
+      "timestamp": 1788533010,
+      "txCount": 3894
     },
     {
-      "height": 965461,
-      "id": "000000000000000000006ecd7690393bdd874bfe4583dba5434f155c8609612d",
-      "timestamp": 1788518162,
-      "txCount": 3890
+      "height": 965491,
+      "id": "000000000000000000001ef5f7a91d352aada381de10290d173c9f56ed4e83d1",
+      "timestamp": 1788532310,
+      "txCount": 6640
     }
   ],
   "news": [
+    {
+      "title": "AMC CEO tells Robinhood to stop issuing stock token as industry executives weigh in",
+      "link": "https://www.coindesk.com/business/2026/09/04/amc-ceo-tells-robinhood-to-stop-issuing-stock-token-as-industry-executives-weigh-in",
+      "pubDate": "Fri, 04 Sep 2026 14:56:00 +0000"
+    },
+    {
+      "title": "From warning to listing: UK’s largest retail investment platform opens access to crypto ETNs",
+      "link": "https://www.coindesk.com/business/2026/09/04/from-warning-to-listing-uk-s-largest-wealth-platform-opens-access-to-crypto-etns",
+      "pubDate": "Fri, 04 Sep 2026 14:23:11 +0000"
+    },
+    {
+      "title": "U.S. Sheriff’s association shifts opposition stance to Clarity Act to 'neutral'",
+      "link": "https://www.coindesk.com/policy/2026/09/04/u-s-sheriff-s-association-shifts-opposition-stance-to-clarity-act-to-neutral",
+      "pubDate": "Fri, 04 Sep 2026 14:12:34 +0000"
+    },
+    {
+      "title": "U.S. added stronger than expected 162,000 jobs in August as labor market bounced back",
+      "link": "https://www.coindesk.com/markets/2026/09/04/u-s-added-stronger-than-expected-162-000-jobs-in-august-as-labor-market-bounced-back",
+      "pubDate": "Fri, 04 Sep 2026 12:31:47 +0000"
+    },
+    {
+      "title": "We checked 6 years of bitcoin data. The NFP report isn't big price mover",
+      "link": "https://www.coindesk.com/daybook-us/2026/09/04/we-checked-6-years-of-bitcoin-data-the-nfp-report-isn-t-big-price-mover",
+      "pubDate": "Fri, 04 Sep 2026 11:29:05 +0000"
+    },
     {
       "title": "Zcash jumps 20% to landmark $1,000 level as short sellers lose $34 million",
       "link": "https://www.coindesk.com/markets/2026/09/04/zcash-jumps-20-to-landmark-usd1-000-level-as-short-sellers-lose-usd34-million",
@@ -447,7 +472,7 @@
       "pubDate": "Fri, 04 Sep 2026 09:41:31 +0000"
     },
     {
-      "title": "Live updates: Bitcoin ETFs take $731 million, their biggest day since January",
+      "title": "Live updates: Bitcoin tumbles after blowout August jobs print",
       "link": "https://www.coindesk.com/business/2026/09/04/live-updates-bitcoin-etfs-take-usd731-million-their-biggest-day-since-january",
       "pubDate": "Fri, 04 Sep 2026 07:34:07 +0000"
     },
@@ -460,31 +485,6 @@
       "title": "One full bitcoin now buys a little more than 18 ounces of gold, the most since January",
       "link": "https://www.coindesk.com/markets/2026/09/04/one-full-bitcoin-now-buys-a-little-more-than-18-ounces-of-gold-the-most-since-january",
       "pubDate": "Fri, 04 Sep 2026 05:10:34 +0000"
-    },
-    {
-      "title": "Bitcoin back above $81,000 as hike odds fade, Zcash leads with 15% jump",
-      "link": "https://www.coindesk.com/markets/2026/09/04/bitcoin-back-above-usd81-000-as-hike-odds-fade-zcash-leads-with-15-jump",
-      "pubDate": "Fri, 04 Sep 2026 04:22:01 +0000"
-    },
-    {
-      "title": "U.S. banking agency gives blockchain bank OpenReserve initial OK to operate",
-      "link": "https://www.coindesk.com/policy/2026/09/03/u-s-banking-agency-gives-blockchain-bank-openreserve-initial-ok-to-operate",
-      "pubDate": "Fri, 04 Sep 2026 03:26:50 +0000"
-    },
-    {
-      "title": "AMC CEO blasts Robinhood for stock token, putting synthetic shares in spotlight",
-      "link": "https://www.coindesk.com/business/2026/09/03/amc-ceo-blasts-robinhood-for-stock-token-putting-synthetic-shares-in-spotlight",
-      "pubDate": "Fri, 04 Sep 2026 03:03:25 +0000"
-    },
-    {
-      "title": "Standard Chartered brings spot crypto trading to Dubai FX platform",
-      "link": "https://www.coindesk.com/business/2026/09/03/standard-chartered-first-top-global-bank-to-offer-bitcoin-and-ether-trading-in-uae",
-      "pubDate": "Thu, 03 Sep 2026 15:58:02 +0000"
-    },
-    {
-      "title": "Crypto for Advisors: Why crypto earnings reports can be misleading",
-      "link": "https://www.coindesk.com/coindesk-indices/2026/09/03/crypto-for-advisors-why-crypto-earnings-reports-can-be-misleading",
-      "pubDate": "Thu, 03 Sep 2026 15:00:00 +0000"
     }
   ]
 }
