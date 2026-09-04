@@ -1,13 +1,13 @@
 {
-  "fetchedAt": "2026-09-04T16:17:55.372Z",
+  "fetchedAt": "2026-09-04T20:43:10.568Z",
   "price": {
-    "usd": 79469,
-    "time": 1788538209
+    "usd": 79756,
+    "time": 1788554409
   },
   "moves": {
-    "d1": -2.2096943649223433,
-    "d7": 2.117989623856009,
-    "d30": 23.00045252774938
+    "d1": -1.856527498379823,
+    "d7": 2.486785796225699,
+    "d30": 23.44466511222212
   },
   "history90d": [
     {
@@ -372,62 +372,62 @@
     },
     {
       "date": "2026-09-04",
-      "close": 79475.52633308832
+      "close": 79736.68148994635
     }
   ],
   "blocks": [
     {
-      "height": 965498,
-      "id": "00000000000000000001d2fe23607bdf4588844651a016783851e5972e6d18ad",
-      "timestamp": 1788538570,
-      "txCount": 3635
+      "height": 965522,
+      "id": "000000000000000000019c807d0152b493f95e8e5992ecf80501f4aff49d2d37",
+      "timestamp": 1788554384,
+      "txCount": 4086
     },
     {
-      "height": 965497,
-      "id": "00000000000000000001149d013901686f1e52c1ef81e00d5f71c13aa65dadb0",
-      "timestamp": 1788537893,
-      "txCount": 3994
+      "height": 965521,
+      "id": "000000000000000000004a1183c9839ed9edbc321e76a6fd808f78641385a52d",
+      "timestamp": 1788551184,
+      "txCount": 7589
     },
     {
-      "height": 965496,
-      "id": "000000000000000000002d40ebedd188a84a4f4218743269477f36df02beb883",
-      "timestamp": 1788537316,
-      "txCount": 4686
+      "height": 965520,
+      "id": "0000000000000000000092bf884d51973f051d36e8ec0d67b14c68af2fff3844",
+      "timestamp": 1788551171,
+      "txCount": 4527
     },
     {
-      "height": 965495,
-      "id": "00000000000000000001b6dbcf74b71f777ac53f02228acd2ce75ec9d1f083f5",
-      "timestamp": 1788536495,
-      "txCount": 4195
+      "height": 965519,
+      "id": "00000000000000000001df4ad2e8689763403c651f251e9e3698a5505e7312c7",
+      "timestamp": 1788551068,
+      "txCount": 5307
     },
     {
-      "height": 965494,
-      "id": "0000000000000000000154dd9c95e1bd0b057f2aa0795c1680fe16fd6bd27389",
-      "timestamp": 1788534687,
-      "txCount": 4209
+      "height": 965518,
+      "id": "000000000000000000004762947f92104d9cc394428612791ac293448ea89d77",
+      "timestamp": 1788550937,
+      "txCount": 2922
     },
     {
-      "height": 965493,
-      "id": "000000000000000000000fd70ca6753e3a61fe00c8a27793a01751ca32a31da9",
-      "timestamp": 1788533053,
-      "txCount": 5672
+      "height": 965517,
+      "id": "00000000000000000001b550c68ae7a2428ffcabdfad91f0f9010e8c58d6bb45",
+      "timestamp": 1788550607,
+      "txCount": 2280
     },
     {
-      "height": 965492,
-      "id": "000000000000000000018cbe985c13d03bbe6ea048405995c7b4fb7a0a32c64c",
-      "timestamp": 1788533010,
-      "txCount": 3894
+      "height": 965516,
+      "id": "000000000000000000006dbb5e4a247d4bf3cdd617708a12de831beb61a84d0d",
+      "timestamp": 1788550401,
+      "txCount": 2901
     },
     {
-      "height": 965491,
-      "id": "000000000000000000001ef5f7a91d352aada381de10290d173c9f56ed4e83d1",
-      "timestamp": 1788532310,
-      "txCount": 6640
+      "height": 965515,
+      "id": "00000000000000000001e32fd742224080d2a3d9eeec50e5bcb7baad91e789e4",
+      "timestamp": 1788550048,
+      "txCount": 2491
     }
   ],
   "news": [
     {
-      "title": "AMC CEO tells Robinhood to stop issuing stock token as industry executives weigh in",
+      "title": "Robinhood isn't backing down after AMC CEO demands halt to stock tokens",
       "link": "https://www.coindesk.com/business/2026/09/04/amc-ceo-tells-robinhood-to-stop-issuing-stock-token-as-industry-executives-weigh-in",
       "pubDate": "Fri, 04 Sep 2026 14:56:00 +0000"
     },
