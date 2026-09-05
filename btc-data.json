@@ -1,13 +1,13 @@
 {
-  "fetchedAt": "2026-09-05T15:08:54.825Z",
+  "fetchedAt": "2026-09-05T17:18:03.889Z",
   "price": {
-    "usd": 79747,
-    "time": 1788620708
+    "usd": 80140,
+    "time": 1788628513
   },
   "moves": {
-    "d1": 0.09506857053538376,
-    "d7": 1.9454877311606111,
-    "d30": 24.09522172248728
+    "d1": 0.5883455834414741,
+    "d7": 2.447883767103609,
+    "d30": 24.706773531795957
   },
   "history90d": [
     {
@@ -372,60 +372,65 @@
     },
     {
       "date": "2026-09-05",
-      "close": 79759.00583200747
+      "close": 80092.89336913277
     }
   ],
   "blocks": [
     {
-      "height": 965627,
-      "id": "00000000000000000000b490b2373c4c9b2bf61f12b0ec49d7ad0c9937d17f12",
-      "timestamp": 1788620283,
-      "txCount": 2888
+      "height": 965637,
+      "id": "000000000000000000011db1075802102e88083000e278635af14a55cf627e94",
+      "timestamp": 1788628596,
+      "txCount": 4262
     },
     {
-      "height": 965626,
-      "id": "00000000000000000000754fa610fc9308eaa9e20e1000c737c6bba15e631d9a",
-      "timestamp": 1788619998,
-      "txCount": 3911
+      "height": 965636,
+      "id": "0000000000000000000164c4a8041af02d4b8f00a60e397cc6ffbbf734009cc2",
+      "timestamp": 1788627102,
+      "txCount": 4456
     },
     {
-      "height": 965625,
-      "id": "00000000000000000000d17a6247bc68c4077f7f258d45c95fd6cdec4e9a6dab",
-      "timestamp": 1788619290,
-      "txCount": 4056
+      "height": 965635,
+      "id": "00000000000000000001ac3808ac0b5284c3934606bcec8da725a71ef8aa748a",
+      "timestamp": 1788626482,
+      "txCount": 3229
     },
     {
-      "height": 965624,
-      "id": "000000000000000000007a4780be8731f1ea5711897c70a3a1c624917497e8e7",
-      "timestamp": 1788617623,
-      "txCount": 3866
+      "height": 965634,
+      "id": "00000000000000000001aea17e2b1b46ace425a0cbb111e712f76dc414c14a22",
+      "timestamp": 1788626345,
+      "txCount": 3892
     },
     {
-      "height": 965623,
-      "id": "000000000000000000011d86a0abf7fba82336e229502dcad6c5a4fe2226b78a",
-      "timestamp": 1788617277,
-      "txCount": 4105
+      "height": 965633,
+      "id": "000000000000000000021f831b8a9001889dd9d37bf6398442ef682e98562a0b",
+      "timestamp": 1788625098,
+      "txCount": 3809
     },
     {
-      "height": 965622,
-      "id": "0000000000000000000052d8fbfed02e6d391c8ed8d818fe8e5105c583e6e696",
-      "timestamp": 1788616148,
-      "txCount": 3476
+      "height": 965632,
+      "id": "00000000000000000000b02f77d620a0aafefb2d0b75001cd90b872e093cad96",
+      "timestamp": 1788624347,
+      "txCount": 3263
     },
     {
-      "height": 965621,
-      "id": "000000000000000000010ae4d5850bde2787b5445f3a4ed21a23ad0d9f9a4bb6",
-      "timestamp": 1788615489,
-      "txCount": 4527
+      "height": 965631,
+      "id": "00000000000000000000ef7d233312421f8ffb67451e922e0dd41bc5ed439317",
+      "timestamp": 1788623767,
+      "txCount": 3675
     },
     {
-      "height": 965620,
-      "id": "00000000000000000000af4f6f65a925691ba8eb08651c4c91c3b2e71217ac87",
-      "timestamp": 1788615294,
-      "txCount": 3877
+      "height": 965630,
+      "id": "000000000000000000016adf74105a2f10238c90f6641cb32d065c209c835108",
+      "timestamp": 1788622797,
+      "txCount": 3906
     }
   ],
   "news": [
+    {
+      "title": "Dollar-backed stablecoins can push local currencies lower, Bank of Korea study finds",
+      "link": "https://www.coindesk.com/business/2026/09/05/dollar-backed-stablecoins-can-push-local-currencies-lower-bank-of-korea-study-finds",
+      "pubDate": "Sat, 05 Sep 2026 16:43:13 +0000"
+    },
     {
       "title": "British investor thought he lost $2,000 in bitcoin in 2012. He just recovered $4.5 million",
       "link": "https://www.coindesk.com/business/2026/09/02/british-investor-thought-he-lost-usd2-000-in-bitcoin-in-2012-he-just-recovered-usd4-5-million",
@@ -480,11 +485,6 @@
       "title": "IMF confirms El Salvador’s bitcoin growth was funded by private donations, not public money",
       "link": "https://www.coindesk.com/business/2026/09/04/imf-confirms-el-salvador-s-bitcoin-growth-was-funded-by-private-donations-not-public-money",
       "pubDate": "Fri, 04 Sep 2026 09:47:15 +0000"
-    },
-    {
-      "title": "South Korea targets February 2027 rollout for full tokenized securities market",
-      "link": "https://www.coindesk.com/business/2026/09/04/south-korea-targets-february-2027-rollout-for-full-tokenized-securities-market",
-      "pubDate": "Fri, 04 Sep 2026 09:41:31 +0000"
     }
   ]
 }
