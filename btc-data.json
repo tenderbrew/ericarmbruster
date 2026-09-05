@@ -1,13 +1,13 @@
 {
-  "fetchedAt": "2026-09-05T17:18:03.889Z",
+  "fetchedAt": "2026-09-05T20:17:08.963Z",
   "price": {
-    "usd": 80140,
-    "time": 1788628513
+    "usd": 79744,
+    "time": 1788639309
   },
   "moves": {
-    "d1": 0.5883455834414741,
-    "d7": 2.447883767103609,
-    "d30": 24.706773531795957
+    "d1": 0.09130309715443818,
+    "d7": 1.9416526469167694,
+    "d30": 24.090553388065096
   },
   "history90d": [
     {
@@ -372,60 +372,65 @@
     },
     {
       "date": "2026-09-05",
-      "close": 80092.89336913277
+      "close": 79747.91187966468
     }
   ],
   "blocks": [
     {
-      "height": 965637,
-      "id": "000000000000000000011db1075802102e88083000e278635af14a55cf627e94",
-      "timestamp": 1788628596,
-      "txCount": 4262
+      "height": 965661,
+      "id": "00000000000000000001bb2ef3de7d446a2e6a5944584f5e72c047febeaa81ed",
+      "timestamp": 1788639257,
+      "txCount": 5746
     },
     {
-      "height": 965636,
-      "id": "0000000000000000000164c4a8041af02d4b8f00a60e397cc6ffbbf734009cc2",
-      "timestamp": 1788627102,
-      "txCount": 4456
+      "height": 965660,
+      "id": "000000000000000000001ea32d7fac0707e508592f2da336470019d3f7f6314e",
+      "timestamp": 1788638816,
+      "txCount": 3921
     },
     {
-      "height": 965635,
-      "id": "00000000000000000001ac3808ac0b5284c3934606bcec8da725a71ef8aa748a",
-      "timestamp": 1788626482,
-      "txCount": 3229
+      "height": 965659,
+      "id": "000000000000000000006bbcbfdd4fb477a56acfddbd5ad9f91c275694dd163b",
+      "timestamp": 1788637701,
+      "txCount": 6517
     },
     {
-      "height": 965634,
-      "id": "00000000000000000001aea17e2b1b46ace425a0cbb111e712f76dc414c14a22",
-      "timestamp": 1788626345,
-      "txCount": 3892
+      "height": 965658,
+      "id": "00000000000000000000b1bc6b48a1e479dd6e7ed163fe9411014a045688a71c",
+      "timestamp": 1788637528,
+      "txCount": 6165
     },
     {
-      "height": 965633,
-      "id": "000000000000000000021f831b8a9001889dd9d37bf6398442ef682e98562a0b",
-      "timestamp": 1788625098,
-      "txCount": 3809
+      "height": 965657,
+      "id": "0000000000000000000161004146ff36f238e0eb273384bfbe613534be409f32",
+      "timestamp": 1788637479,
+      "txCount": 6853
     },
     {
-      "height": 965632,
-      "id": "00000000000000000000b02f77d620a0aafefb2d0b75001cd90b872e093cad96",
-      "timestamp": 1788624347,
-      "txCount": 3263
+      "height": 965656,
+      "id": "00000000000000000000fd88d18ad15390d13df65b71f1b6c752b121d918944d",
+      "timestamp": 1788637105,
+      "txCount": 4908
     },
     {
-      "height": 965631,
-      "id": "00000000000000000000ef7d233312421f8ffb67451e922e0dd41bc5ed439317",
-      "timestamp": 1788623767,
-      "txCount": 3675
+      "height": 965655,
+      "id": "00000000000000000001ce841c337adbeda46afc4d4a1bfb9f84bb9a344a96d8",
+      "timestamp": 1788636570,
+      "txCount": 5655
     },
     {
-      "height": 965630,
-      "id": "000000000000000000016adf74105a2f10238c90f6641cb32d065c209c835108",
-      "timestamp": 1788622797,
-      "txCount": 3906
+      "height": 965654,
+      "id": "00000000000000000001b60f526efb945e8f78a50605db4d1b30edf1d271c32e",
+      "timestamp": 1788636044,
+      "txCount": 6139
     }
   ],
   "news": [
+    {
+      "title": "Why crypto experts say buying and holding bitcoin easily beats trying to time the market",
+      "link": "https://www.coindesk.com/markets/2026/09/05/why-crypto-experts-say-buying-and-holding-bitcoin-easily-beats-trying-to-time-the-market",
+      "pubDate": "Sat, 05 Sep 2026 18:05:11 +0000"
+    },
     {
       "title": "Dollar-backed stablecoins can push local currencies lower, Bank of Korea study finds",
       "link": "https://www.coindesk.com/business/2026/09/05/dollar-backed-stablecoins-can-push-local-currencies-lower-bank-of-korea-study-finds",
@@ -480,11 +485,6 @@
       "title": "Bitcoin clears $81,000 as privacy coins lead a broad crypto rally",
       "link": "https://www.coindesk.com/markets/2026/09/04/bitcoin-clears-usd81-000-as-privacy-coins-lead-a-broad-crypto-rally",
       "pubDate": "Fri, 04 Sep 2026 09:57:01 +0000"
-    },
-    {
-      "title": "IMF confirms El Salvador’s bitcoin growth was funded by private donations, not public money",
-      "link": "https://www.coindesk.com/business/2026/09/04/imf-confirms-el-salvador-s-bitcoin-growth-was-funded-by-private-donations-not-public-money",
-      "pubDate": "Fri, 04 Sep 2026 09:47:15 +0000"
     }
   ]
 }
