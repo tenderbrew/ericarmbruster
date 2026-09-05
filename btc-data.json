@@ -1,13 +1,13 @@
 {
-  "fetchedAt": "2026-09-05T04:20:29.852Z",
+  "fetchedAt": "2026-09-05T10:30:10.468Z",
   "price": {
-    "usd": 79557,
-    "time": 1788581709
+    "usd": 79647,
+    "time": 1788603908
   },
   "moves": {
-    "d1": -0.14341141025888682,
-    "d7": 1.7025990623841025,
-    "d30": 23.79956054241441
+    "d1": -0.030447208830020056,
+    "d7": 1.8176515896992873,
+    "d30": 23.939610575080515
   },
   "history90d": [
     {
@@ -372,60 +372,70 @@
     },
     {
       "date": "2026-09-05",
-      "close": 79572.78274738713
+      "close": 79607.42954889873
     }
   ],
   "blocks": [
     {
-      "height": 965563,
-      "id": "000000000000000000019d79a87078bdfb47b2ab169025c7c4b378a352ba970a",
-      "timestamp": 1788581056,
-      "txCount": 6416
+      "height": 965596,
+      "id": "000000000000000000004553c952affa29cbe5ee74ad270d817de1da572ca124",
+      "timestamp": 1788603418,
+      "txCount": 3917
     },
     {
-      "height": 965562,
-      "id": "0000000000000000000201217efb58440d94c2f39d78e27ff0cf7428034e35aa",
-      "timestamp": 1788580759,
-      "txCount": 5200
+      "height": 965595,
+      "id": "00000000000000000001040e1e6fbc92a4708182c5136586c8c7d64f854312e2",
+      "timestamp": 1788602372,
+      "txCount": 1745
     },
     {
-      "height": 965561,
-      "id": "00000000000000000000c6301e9631f9b0a57b484b2d606c7cb1b638498a0062",
-      "timestamp": 1788580144,
-      "txCount": 95
+      "height": 965594,
+      "id": "000000000000000000006a6fddca5b439c6afcd93abf4f8eca68270d383d7114",
+      "timestamp": 1788602408,
+      "txCount": 3595
     },
     {
-      "height": 965560,
-      "id": "00000000000000000000f0299d0c7753840ba91c930d5230977824c2e6be7bd9",
-      "timestamp": 1788580131,
-      "txCount": 6837
+      "height": 965593,
+      "id": "00000000000000000000d51c116b8f97303010cead0d8760ce40d77aabbc3da3",
+      "timestamp": 1788601236,
+      "txCount": 4315
     },
     {
-      "height": 965559,
-      "id": "00000000000000000000f7029a52941aa8707c654b41350087404f8e7a7d1aec",
-      "timestamp": 1788580105,
-      "txCount": 3175
+      "height": 965592,
+      "id": "0000000000000000000013924074daaf0d1bf24ae0a24a998eaecc9bd61805f2",
+      "timestamp": 1788599576,
+      "txCount": 4354
     },
     {
-      "height": 965558,
-      "id": "0000000000000000000135896c649a9a4c22c9a3f6a70f52f2d6225eb80ac3fc",
-      "timestamp": 1788580036,
-      "txCount": 2642
+      "height": 965591,
+      "id": "00000000000000000001d4e713066557b3e0d24b94a68bf326dbdb95820c6bec",
+      "timestamp": 1788598189,
+      "txCount": 4235
     },
     {
-      "height": 965557,
-      "id": "000000000000000000002d900a4b613f6c4d1ae460c69fb5bbb894d61c4df078",
-      "timestamp": 1788579080,
-      "txCount": 3606
+      "height": 965590,
+      "id": "000000000000000000019a7181cdae0266e3add8428f05156ec1031dbdcadace",
+      "timestamp": 1788596893,
+      "txCount": 2818
     },
     {
-      "height": 965556,
-      "id": "000000000000000000008ea43f111bd7bccc214ba9d296a0bf1f4dad5c077815",
-      "timestamp": 1788577990,
-      "txCount": 6617
+      "height": 965589,
+      "id": "000000000000000000014102484f489044e2275d092efda2c7f62bec5190c37e",
+      "timestamp": 1788596297,
+      "txCount": 4917
     }
   ],
   "news": [
+    {
+      "title": "XRP Ledger has fewer active accounts than last year, but bigger trades and more value",
+      "link": "https://www.coindesk.com/markets/2026/09/05/xrp-ledger-has-fewer-active-accounts-but-bigger-trades-and-more-value",
+      "pubDate": "Sat, 05 Sep 2026 05:30:45 +0000"
+    },
+    {
+      "title": "Southeast Asia’s crypto funding rebounds to $680 million as investors focus on mature firms",
+      "link": "https://www.coindesk.com/business/2026/09/05/southeast-asia-s-crypto-funding-rebounds-to-usd680-million-as-investors-focus-on-mature-firms",
+      "pubDate": "Sat, 05 Sep 2026 05:00:00 +0000"
+    },
     {
       "title": "Robinhood isn't backing down after AMC CEO demands halt to stock tokens",
       "link": "https://www.coindesk.com/business/2026/09/04/amc-ceo-tells-robinhood-to-stop-issuing-stock-token-as-industry-executives-weigh-in",
@@ -475,16 +485,6 @@
       "title": "Live updates: Bitcoin tumbles after blowout August jobs print",
       "link": "https://www.coindesk.com/business/2026/09/04/live-updates-bitcoin-etfs-take-usd731-million-their-biggest-day-since-january",
       "pubDate": "Fri, 04 Sep 2026 07:34:07 +0000"
-    },
-    {
-      "title": "OpenAI puts $1 billion behind cyber defense after unveiling AI that can find zero-days",
-      "link": "https://www.coindesk.com/tech/2026/09/04/openai-puts-usd1-billion-behind-cyber-defense-after-unveiling-ai-that-can-find-zero-days",
-      "pubDate": "Fri, 04 Sep 2026 05:49:43 +0000"
-    },
-    {
-      "title": "One full bitcoin now buys a little more than 18 ounces of gold, the most since January",
-      "link": "https://www.coindesk.com/markets/2026/09/04/one-full-bitcoin-now-buys-a-little-more-than-18-ounces-of-gold-the-most-since-january",
-      "pubDate": "Fri, 04 Sep 2026 05:10:34 +0000"
     }
   ]
 }
