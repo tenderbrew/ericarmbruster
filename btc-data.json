@@ -1,13 +1,13 @@
 {
-  "fetchedAt": "2026-09-06T04:31:19.139Z",
+  "fetchedAt": "2026-09-06T10:50:34.279Z",
   "price": {
-    "usd": 79944,
-    "time": 1788669008
+    "usd": 80021,
+    "time": 1788691508
   },
   "moves": {
-    "d1": 0.1532180724610699,
-    "d7": 2.9433694645537356,
-    "d30": 23.218712312254873
+    "d1": 0.249683070354334,
+    "d7": 3.0425218643432173,
+    "d30": 23.33739339961656
   },
   "history90d": [
     {
@@ -372,62 +372,62 @@
     },
     {
       "date": "2026-09-06",
-      "close": 79914.3848864214
+      "close": 79985.15623786699
     }
   ],
   "blocks": [
     {
-      "height": 965718,
-      "id": "0000000000000000000164488ed62c1896c537ce3dd24634004b4ce44212549a",
-      "timestamp": 1788668314,
-      "txCount": 7023
+      "height": 965751,
+      "id": "000000000000000000009f3d888faf538aeb5393efeaa7a6af5a12714f3ebb9c",
+      "timestamp": 1788691246,
+      "txCount": 1234
     },
     {
-      "height": 965717,
-      "id": "000000000000000000014d93c45879f78187b0be1571865f68718086759aa0e9",
-      "timestamp": 1788668156,
-      "txCount": 6381
+      "height": 965750,
+      "id": "000000000000000000005ef0a226b3a9f958574f2d32de099f47676829eb1cba",
+      "timestamp": 1788690802,
+      "txCount": 6224
     },
     {
-      "height": 965716,
-      "id": "000000000000000000022657f88fa80fcdc42306036ca1257934bbdc9965ec51",
-      "timestamp": 1788667872,
-      "txCount": 4584
+      "height": 965749,
+      "id": "0000000000000000000164d71b83694722bd887c5ee4379ee940faaeb7c94a9b",
+      "timestamp": 1788690200,
+      "txCount": 5295
     },
     {
-      "height": 965715,
-      "id": "000000000000000000020e0d9cd2cbc6f86e280b4da28702e6d44d7946b657a3",
-      "timestamp": 1788666967,
-      "txCount": 3750
+      "height": 965748,
+      "id": "00000000000000000001c88d052a3ccd20256e15e474eaca529840878b889bba",
+      "timestamp": 1788689281,
+      "txCount": 5737
     },
     {
-      "height": 965714,
-      "id": "0000000000000000000039300d14846bfbfeb742fb1b8fcd5e2d9a8106d73ada",
-      "timestamp": 1788665521,
-      "txCount": 5021
+      "height": 965747,
+      "id": "0000000000000000000164edb5ed13e2bb591c0b7955b0b5143012a8776e33bd",
+      "timestamp": 1788688984,
+      "txCount": 1
     },
     {
-      "height": 965713,
-      "id": "00000000000000000000c10675a1625963bead48a3bb9d32171d222ad6237a49",
-      "timestamp": 1788665152,
-      "txCount": 4582
+      "height": 965746,
+      "id": "00000000000000000000f710875046dead17061cc0cced1f1972efe3a4de6089",
+      "timestamp": 1788688980,
+      "txCount": 4649
     },
     {
-      "height": 965712,
-      "id": "0000000000000000000219459fe169f45e7cdc140bdb735acada71017b8830df",
-      "timestamp": 1788664323,
-      "txCount": 6031
+      "height": 965745,
+      "id": "00000000000000000001ed4e674afed4a141741f57e87bb1458f65c81960d8bc",
+      "timestamp": 1788687326,
+      "txCount": 6735
     },
     {
-      "height": 965711,
-      "id": "0000000000000000000122a2c4df2a4d665be006e20688df74b3e413cf7c50b7",
-      "timestamp": 1788664068,
-      "txCount": 6130
+      "height": 965744,
+      "id": "0000000000000000000204fd9e5e33edd1c1b6cf96813af0d0c01458f5d92290",
+      "timestamp": 1788687227,
+      "txCount": 7442
     }
   ],
   "news": [
     {
-      "title": "Why crypto experts say buying and holding bitcoin easily beats trying to time the market",
+      "title": "Timing the bitcoin market is exciting but nearly impossible. Here's why",
       "link": "https://www.coindesk.com/markets/2026/09/05/why-crypto-experts-say-buying-and-holding-bitcoin-easily-beats-trying-to-time-the-market",
       "pubDate": "Sat, 05 Sep 2026 18:05:11 +0000"
     },
