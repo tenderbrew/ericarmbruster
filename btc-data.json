@@ -1,13 +1,13 @@
 {
-  "fetchedAt": "2026-09-06T15:24:38.226Z",
+  "fetchedAt": "2026-09-06T20:21:31.387Z",
   "price": {
-    "usd": 79611,
-    "time": 1788708010
+    "usd": 79822,
+    "time": 1788725712
   },
   "moves": {
-    "d1": -0.26396172362280756,
-    "d7": 2.514567527801792,
-    "d30": 22.705455142236097
+    "d1": 0.0003774264483613621,
+    "d7": 2.7862708570950634,
+    "d30": 23.030672147863605
   },
   "history90d": [
     {
@@ -372,60 +372,70 @@
     },
     {
       "date": "2026-09-06",
-      "close": 79635.26972262416
+      "close": 79808.95415192643
     }
   ],
   "blocks": [
     {
-      "height": 965796,
-      "id": "0000000000000000000197597818a8f512c1225bc7852de6249c8d461b905f19",
-      "timestamp": 1788707931,
-      "txCount": 6662
+      "height": 965828,
+      "id": "000000000000000000012b53f0f4028478de2559650b544ea11d5a85ab3b028f",
+      "timestamp": 1788724870,
+      "txCount": 4536
     },
     {
-      "height": 965795,
-      "id": "0000000000000000000011c43dd63abcb64b2e8ac5721f0f86afc3d81d33c492",
-      "timestamp": 1788707740,
-      "txCount": 6635
+      "height": 965827,
+      "id": "0000000000000000000169d8c8287587080fb8d5b0b77f688c390554e2f9ac4f",
+      "timestamp": 1788724067,
+      "txCount": 6979
     },
     {
-      "height": 965794,
-      "id": "00000000000000000000609eeaced83f1c6b0505ef26acfec21ebcdaa211d888",
-      "timestamp": 1788707607,
-      "txCount": 6598
+      "height": 965826,
+      "id": "000000000000000000007d887dc995014225463ddfdd6991c3538f6d11e9a5bb",
+      "timestamp": 1788724063,
+      "txCount": 6606
     },
     {
-      "height": 965793,
-      "id": "0000000000000000000032af4acb4aaea6df8ecb938dcd3f0c33a4a0402bd746",
-      "timestamp": 1788707456,
-      "txCount": 6397
+      "height": 965825,
+      "id": "00000000000000000001d3b7c61bb886087bcf5828cb1bd6ae59b06868822ba9",
+      "timestamp": 1788723842,
+      "txCount": 5988
     },
     {
-      "height": 965792,
-      "id": "000000000000000000012f171e4b8a00ab2a1fd1c11150492a9bcfb24beadb89",
-      "timestamp": 1788707433,
-      "txCount": 5999
+      "height": 965824,
+      "id": "000000000000000000003491b821793330e420b31f4903ffe3fb253a07b3cbad",
+      "timestamp": 1788723660,
+      "txCount": 6225
     },
     {
-      "height": 965791,
-      "id": "000000000000000000022dfbf00db04092b0372f02f7ac355569239cacf2396d",
-      "timestamp": 1788707388,
-      "txCount": 7052
+      "height": 965823,
+      "id": "000000000000000000004b86f0abf453ebee52b17ea132671c97d00ff8fc6f04",
+      "timestamp": 1788723455,
+      "txCount": 3626
     },
     {
-      "height": 965790,
-      "id": "000000000000000000021137d111d48122a99d26eaf8b738043adbaca13f7f1c",
-      "timestamp": 1788707037,
-      "txCount": 4431
+      "height": 965822,
+      "id": "000000000000000000001f2e30c61dfede45c3f7bfd9e70538c2cf9e04c85cd0",
+      "timestamp": 1788723107,
+      "txCount": 2953
     },
     {
-      "height": 965789,
-      "id": "00000000000000000000c701f381247fbc5404b8bf04187030c837db6be51bf3",
-      "timestamp": 1788706560,
-      "txCount": 6399
+      "height": 965821,
+      "id": "000000000000000000003b385fc9bfad73d0f11f9bb58b572d4ef17b5a7e5fa5",
+      "timestamp": 1788722839,
+      "txCount": 3901
     }
   ],
   "news": [
+    {
+      "title": "Prediction markets inch closer to the Supreme Court: State of Crypto",
+      "link": "https://www.coindesk.com/news-analysis/2026/09/06/prediction-markets-inch-closer-to-the-supreme-court-state-of-crypto",
+      "pubDate": "Sun, 06 Sep 2026 18:30:00 +0000"
+    },
+    {
+      "title": "Ukrainian police took down a crypto scam that stole up to $1 million a month",
+      "link": "https://www.coindesk.com/business/2026/09/06/ukrainian-police-took-down-a-crypto-scam-that-stole-up-to-usd1-million-a-month",
+      "pubDate": "Sun, 06 Sep 2026 16:00:00 +0000"
+    },
     {
       "title": "Better and Coinbase’s bitcoin-backed mortgages can reuse borrowers’ collateral",
       "link": "https://www.coindesk.com/business/2026/09/06/better-and-coinbase-s-bitcoin-backed-mortgages-can-reuse-borrowers-collateral",
@@ -475,16 +485,6 @@
       "title": "U.S. added stronger than expected 162,000 jobs in August as labor market bounced back",
       "link": "https://www.coindesk.com/markets/2026/09/04/u-s-added-stronger-than-expected-162-000-jobs-in-august-as-labor-market-bounced-back",
       "pubDate": "Fri, 04 Sep 2026 12:31:47 +0000"
-    },
-    {
-      "title": "We checked 6 years of bitcoin data. The NFP report isn't big price mover",
-      "link": "https://www.coindesk.com/daybook-us/2026/09/04/we-checked-6-years-of-bitcoin-data-the-nfp-report-isn-t-big-price-mover",
-      "pubDate": "Fri, 04 Sep 2026 11:29:05 +0000"
-    },
-    {
-      "title": "Zcash jumps 20% to landmark $1,000 level as short sellers lose $34 million",
-      "link": "https://www.coindesk.com/markets/2026/09/04/zcash-jumps-20-to-landmark-usd1-000-level-as-short-sellers-lose-usd34-million",
-      "pubDate": "Fri, 04 Sep 2026 10:40:14 +0000"
     }
   ]
 }
