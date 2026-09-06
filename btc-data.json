@@ -1,13 +1,13 @@
 {
-  "fetchedAt": "2026-09-06T10:50:34.279Z",
+  "fetchedAt": "2026-09-06T15:24:38.226Z",
   "price": {
-    "usd": 80021,
-    "time": 1788691508
+    "usd": 79611,
+    "time": 1788708010
   },
   "moves": {
-    "d1": 0.249683070354334,
-    "d7": 3.0425218643432173,
-    "d30": 23.33739339961656
+    "d1": -0.26396172362280756,
+    "d7": 2.514567527801792,
+    "d30": 22.705455142236097
   },
   "history90d": [
     {
@@ -372,60 +372,65 @@
     },
     {
       "date": "2026-09-06",
-      "close": 79985.15623786699
+      "close": 79635.26972262416
     }
   ],
   "blocks": [
     {
-      "height": 965751,
-      "id": "000000000000000000009f3d888faf538aeb5393efeaa7a6af5a12714f3ebb9c",
-      "timestamp": 1788691246,
-      "txCount": 1234
+      "height": 965796,
+      "id": "0000000000000000000197597818a8f512c1225bc7852de6249c8d461b905f19",
+      "timestamp": 1788707931,
+      "txCount": 6662
     },
     {
-      "height": 965750,
-      "id": "000000000000000000005ef0a226b3a9f958574f2d32de099f47676829eb1cba",
-      "timestamp": 1788690802,
-      "txCount": 6224
+      "height": 965795,
+      "id": "0000000000000000000011c43dd63abcb64b2e8ac5721f0f86afc3d81d33c492",
+      "timestamp": 1788707740,
+      "txCount": 6635
     },
     {
-      "height": 965749,
-      "id": "0000000000000000000164d71b83694722bd887c5ee4379ee940faaeb7c94a9b",
-      "timestamp": 1788690200,
-      "txCount": 5295
+      "height": 965794,
+      "id": "00000000000000000000609eeaced83f1c6b0505ef26acfec21ebcdaa211d888",
+      "timestamp": 1788707607,
+      "txCount": 6598
     },
     {
-      "height": 965748,
-      "id": "00000000000000000001c88d052a3ccd20256e15e474eaca529840878b889bba",
-      "timestamp": 1788689281,
-      "txCount": 5737
+      "height": 965793,
+      "id": "0000000000000000000032af4acb4aaea6df8ecb938dcd3f0c33a4a0402bd746",
+      "timestamp": 1788707456,
+      "txCount": 6397
     },
     {
-      "height": 965747,
-      "id": "0000000000000000000164edb5ed13e2bb591c0b7955b0b5143012a8776e33bd",
-      "timestamp": 1788688984,
-      "txCount": 1
+      "height": 965792,
+      "id": "000000000000000000012f171e4b8a00ab2a1fd1c11150492a9bcfb24beadb89",
+      "timestamp": 1788707433,
+      "txCount": 5999
     },
     {
-      "height": 965746,
-      "id": "00000000000000000000f710875046dead17061cc0cced1f1972efe3a4de6089",
-      "timestamp": 1788688980,
-      "txCount": 4649
+      "height": 965791,
+      "id": "000000000000000000022dfbf00db04092b0372f02f7ac355569239cacf2396d",
+      "timestamp": 1788707388,
+      "txCount": 7052
     },
     {
-      "height": 965745,
-      "id": "00000000000000000001ed4e674afed4a141741f57e87bb1458f65c81960d8bc",
-      "timestamp": 1788687326,
-      "txCount": 6735
+      "height": 965790,
+      "id": "000000000000000000021137d111d48122a99d26eaf8b738043adbaca13f7f1c",
+      "timestamp": 1788707037,
+      "txCount": 4431
     },
     {
-      "height": 965744,
-      "id": "0000000000000000000204fd9e5e33edd1c1b6cf96813af0d0c01458f5d92290",
-      "timestamp": 1788687227,
-      "txCount": 7442
+      "height": 965789,
+      "id": "00000000000000000000c701f381247fbc5404b8bf04187030c837db6be51bf3",
+      "timestamp": 1788706560,
+      "txCount": 6399
     }
   ],
   "news": [
+    {
+      "title": "Better and Coinbase’s bitcoin-backed mortgages can reuse borrowers’ collateral",
+      "link": "https://www.coindesk.com/business/2026/09/06/better-and-coinbase-s-bitcoin-backed-mortgages-can-reuse-borrowers-collateral",
+      "pubDate": "Sun, 06 Sep 2026 14:00:00 +0000"
+    },
     {
       "title": "Timing the bitcoin market is exciting but nearly impossible. Here's why",
       "link": "https://www.coindesk.com/markets/2026/09/05/why-crypto-experts-say-buying-and-holding-bitcoin-easily-beats-trying-to-time-the-market",
@@ -480,11 +485,6 @@
       "title": "Zcash jumps 20% to landmark $1,000 level as short sellers lose $34 million",
       "link": "https://www.coindesk.com/markets/2026/09/04/zcash-jumps-20-to-landmark-usd1-000-level-as-short-sellers-lose-usd34-million",
       "pubDate": "Fri, 04 Sep 2026 10:40:14 +0000"
-    },
-    {
-      "title": "Bitcoin clears $81,000 as privacy coins lead a broad crypto rally",
-      "link": "https://www.coindesk.com/markets/2026/09/04/bitcoin-clears-usd81-000-as-privacy-coins-lead-a-broad-crypto-rally",
-      "pubDate": "Fri, 04 Sep 2026 09:57:01 +0000"
     }
   ]
 }
