@@ -1,13 +1,13 @@
 {
-  "fetchedAt": "2026-09-07T19:07:29.266Z",
+  "fetchedAt": "2026-09-07T23:28:12.478Z",
   "price": {
-    "usd": 79195,
-    "time": 1788807608
+    "usd": 78990,
+    "time": 1788823510
   },
   "moves": {
-    "d1": -1.4121213185725234,
-    "d7": 0.8175658156567955,
-    "d30": 21.993789110755692
+    "d1": -1.6673207014842317,
+    "d7": 0.5565947822303352,
+    "d30": 21.67800242260991
   },
   "history90d": [
     {
@@ -372,60 +372,65 @@
     },
     {
       "date": "2026-09-07",
-      "close": 79175.97964148394
+      "close": 79006.86931728212
     }
   ],
   "blocks": [
     {
-      "height": 965964,
-      "id": "0000000000000000000035d80d906d77ad3a293c70868cc8797ba7757fc42535",
-      "timestamp": 1788806930,
-      "txCount": 7138
+      "height": 965986,
+      "id": "0000000000000000000029cfde38f4e393b1eabe78bf6b1ae1b7f4001b6e3004",
+      "timestamp": 1788823162,
+      "txCount": 6685
     },
     {
-      "height": 965963,
-      "id": "0000000000000000000233ea68843e752b1cfe63ac97fb698bbc47aad41f9f79",
-      "timestamp": 1788806762,
-      "txCount": 3712
+      "height": 965985,
+      "id": "00000000000000000000642605ac57f1d693d9749717671bfb1598236c4cb384",
+      "timestamp": 1788823297,
+      "txCount": 3806
     },
     {
-      "height": 965962,
-      "id": "0000000000000000000197b0f9020d6049b86ca19894e0c5583cf23e12f88c36",
-      "timestamp": 1788806117,
-      "txCount": 6053
+      "height": 965984,
+      "id": "00000000000000000000aa365c07b6c49c4a6fde70212319c6b7a611312769ab",
+      "timestamp": 1788821705,
+      "txCount": 5883
     },
     {
-      "height": 965961,
-      "id": "000000000000000000004b20152514516bc2b1e3759d1746770e008d6ccee478",
-      "timestamp": 1788806060,
-      "txCount": 4457
+      "height": 965983,
+      "id": "00000000000000000000c47d1a6001e0a76a4733c8208eac0579535ab0005891",
+      "timestamp": 1788821231,
+      "txCount": 6886
     },
     {
-      "height": 965960,
-      "id": "00000000000000000000eedef426eb8e45d2502fa755fb1daf7ddc58eecfb6cb",
-      "timestamp": 1788805595,
-      "txCount": 3164
+      "height": 965982,
+      "id": "00000000000000000001453d9163b59c6ab86352e3a1120ef769210cf3a30439",
+      "timestamp": 1788820917,
+      "txCount": 4796
     },
     {
-      "height": 965959,
-      "id": "00000000000000000000f65f2cad3786d947218823a2d0b2c4223ce4c5c575a3",
-      "timestamp": 1788805218,
-      "txCount": 3982
+      "height": 965981,
+      "id": "00000000000000000001096eed4c1078a39b61d3a149f075b511d4fa53288745",
+      "timestamp": 1788820061,
+      "txCount": 6866
     },
     {
-      "height": 965958,
-      "id": "0000000000000000000080b544a39f6faeb727c4b58c4f6177cf3e8f060c9258",
-      "timestamp": 1788804857,
-      "txCount": 3347
+      "height": 965980,
+      "id": "00000000000000000001731fa4d529c7f072e4a420a1cc275ee2d3dfff934825",
+      "timestamp": 1788819909,
+      "txCount": 1299
     },
     {
-      "height": 965957,
-      "id": "0000000000000000000139a6923c772bc10731f0f7c38402a498f220aaf691ca",
-      "timestamp": 1788804645,
-      "txCount": 3990
+      "height": 965979,
+      "id": "0000000000000000000021cf9e6104d9f6e6ba93891de142ae0a94f66b1bc851",
+      "timestamp": 1788819488,
+      "txCount": 5553
     }
   ],
   "news": [
+    {
+      "title": "Metaplanet CEO breaks silence but shareholders say the hard questions remain unanswered",
+      "link": "https://www.coindesk.com/markets/2026/09/08/metaplanet-ceo-breaks-silence-but-shareholders-say-the-hard-questions-remain-unanswered",
+      "pubDate": "Mon, 07 Sep 2026 23:01:00 +0000"
+    },
     {
       "title": "Hunter Biden debuts 'LAPTOP' memecoin targeting TRUMP holders",
       "link": "https://www.coindesk.com/business/2026/09/07/hunter-biden-is-launching-a-memecoin-named-after-his-laptop",
@@ -480,11 +485,6 @@
       "title": "Bitcoin struggles at $83,000 'wall' as whales flip into net selling",
       "link": "https://www.coindesk.com/markets/2026/09/07/bitcoin-investors-turn-to-selling-as-usd83-000-resistance-holds",
       "pubDate": "Mon, 07 Sep 2026 09:48:51 +0000"
-    },
-    {
-      "title": "Coldcard hacker moves $7.7 million in BTC, 45% of bitcoin stolen in third attack wave",
-      "link": "https://www.coindesk.com/business/2026/09/07/coldcard-hacker-moves-45-of-bitcoin-stolen-in-third-attack-wave",
-      "pubDate": "Mon, 07 Sep 2026 09:32:05 +0000"
     }
   ]
 }
