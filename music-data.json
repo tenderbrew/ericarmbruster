@@ -1,7 +1,37 @@
 {
-  "fetchedAt": "2026-09-06T00:10:01.212Z",
-  "windowPlays": 430,
+  "fetchedAt": "2026-09-07T18:10:01.579Z",
+  "windowPlays": 435,
   "recentTracks": [
+    {
+      "artist": "Lucero",
+      "album": "Tennessee",
+      "track": "Nights Like These",
+      "played": 1788792132
+    },
+    {
+      "artist": "Jason Isbell and the 400 Unit",
+      "album": "The Nashville Sound",
+      "track": "Last of My Kind",
+      "played": 1788791884
+    },
+    {
+      "artist": "Turnpike Troubadours",
+      "album": "Goodbye Normal Street",
+      "track": "Good Lord Lorrie",
+      "played": 1788791542
+    },
+    {
+      "artist": "Lucero",
+      "album": "Tennessee",
+      "track": "Sweet Little Thing",
+      "played": 1788791329
+    },
+    {
+      "artist": "The Jayhawks",
+      "album": "Tomorrow the Green Grass",
+      "track": "Miss Williams' Guitar",
+      "played": 1788791145
+    },
     {
       "artist": "The Bottle Rockets",
       "album": "24 Hours a Day",
@@ -121,36 +151,6 @@
       "album": "Acid Tongue",
       "track": "Acid Tongue",
       "played": 1788384489
-    },
-    {
-      "artist": "Justin Townes Earle",
-      "album": "Harlem River Blues",
-      "track": "One More Night in Brooklyn",
-      "played": 1788384315
-    },
-    {
-      "artist": "Freakwater",
-      "album": "Old Paint",
-      "track": "Waitress Song",
-      "played": 1788384184
-    },
-    {
-      "artist": "Gin Blossoms",
-      "album": "Congratulations I’m Sorry",
-      "track": "Follow You Down",
-      "played": 1788196203
-    },
-    {
-      "artist": "Nirvana",
-      "album": "Nevermind",
-      "track": "Smells Like Teen Spirit",
-      "played": 1788107396
-    },
-    {
-      "artist": "Wilco",
-      "album": "Summerteeth",
-      "track": "Can’t Stand It",
-      "played": 1788107181
     }
   ],
   "topArtists": [
@@ -160,7 +160,7 @@
     },
     {
       "artist": "Turnpike Troubadours",
-      "plays": 12
+      "plays": 13
     },
     {
       "artist": "Elliott Smith",
@@ -217,6 +217,11 @@
       "plays": 6
     },
     {
+      "artist": "Jason Isbell and the 400 Unit",
+      "album": "The Nashville Sound",
+      "plays": 4
+    },
+    {
       "artist": "Ryan Adams & The Cardinals",
       "album": "Cold Roses",
       "plays": 4
@@ -239,11 +244,6 @@
     {
       "artist": "Lit",
       "album": "A Place in the Sun",
-      "plays": 4
-    },
-    {
-      "artist": "Alanis Morissette",
-      "album": "Jagged Little Pill",
       "plays": 4
     }
   ]
