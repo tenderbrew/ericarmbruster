@@ -1,13 +1,13 @@
 {
-  "fetchedAt": "2026-09-07T04:30:53.870Z",
+  "fetchedAt": "2026-09-07T12:23:40.758Z",
   "price": {
-    "usd": 79672,
-    "time": 1788755108
+    "usd": 79486,
+    "time": 1788783611
   },
   "moves": {
-    "d1": -0.8183159251633376,
-    "d7": 1.424800854410102,
-    "d30": 22.72857081927051
+    "d1": -1.0498626823417623,
+    "d7": 1.1880173801792626,
+    "d30": 22.442052165635793
   },
   "history90d": [
     {
@@ -372,119 +372,119 @@
     },
     {
       "date": "2026-09-07",
-      "close": 79633.47245868943
+      "close": 79486.38394806975
     }
   ],
   "blocks": [
     {
-      "height": 965883,
-      "id": "000000000000000000006b416275b5ad12314b8ab986386552e748dbeafeb563",
-      "timestamp": 1788755438,
-      "txCount": 4945
+      "height": 965928,
+      "id": "000000000000000000000074ae671b49c7d0c9ed460ce71f4df1e0353c42907c",
+      "timestamp": 1788783856,
+      "txCount": 363
     },
     {
-      "height": 965882,
-      "id": "0000000000000000000072dfc9fc65b06608c25905751f43df116f8ce5dc7e76",
-      "timestamp": 1788754311,
-      "txCount": 6670
+      "height": 965927,
+      "id": "000000000000000000000d283d0abb01af11aa544f833b37149304e0b40af9d2",
+      "timestamp": 1788783389,
+      "txCount": 7016
     },
     {
-      "height": 965881,
-      "id": "00000000000000000001c397939d3d32bb727322a71f3dcca9872e94cb2d9c19",
-      "timestamp": 1788754113,
-      "txCount": 7611
+      "height": 965926,
+      "id": "0000000000000000000091dd2939a1a285357c5f0bc6f71ea5fb78ca3068b3a1",
+      "timestamp": 1788783199,
+      "txCount": 5225
     },
     {
-      "height": 965880,
-      "id": "00000000000000000000406e575ea93bfef7336982976f59b231a7e1c839b5a6",
-      "timestamp": 1788754024,
-      "txCount": 4415
+      "height": 965925,
+      "id": "00000000000000000001d6db5603a386e71721a24543a1b7ff9ac2ac250fed32",
+      "timestamp": 1788782637,
+      "txCount": 4910
     },
     {
-      "height": 965879,
-      "id": "0000000000000000000048d7dc9942b64a2147d8c52ea21f443e3bc7d3cdeb26",
-      "timestamp": 1788753419,
-      "txCount": 6127
+      "height": 965924,
+      "id": "00000000000000000000d07c171eba8dfa298b1d8713efeb5504488671f1538e",
+      "timestamp": 1788782061,
+      "txCount": 6623
     },
     {
-      "height": 965878,
-      "id": "000000000000000000009db081e51032bb6b4b77143330245ee6135435e2fb5e",
-      "timestamp": 1788753039,
-      "txCount": 6765
+      "height": 965923,
+      "id": "0000000000000000000119b721e8009fd26953eaf58cc7bbc0eff540e8be89aa",
+      "timestamp": 1788781745,
+      "txCount": 7211
     },
     {
-      "height": 965877,
-      "id": "00000000000000000000c87deb1501d8adae18ddc7e6b96b5840c1146dc95761",
-      "timestamp": 1788752891,
-      "txCount": 4443
+      "height": 965922,
+      "id": "0000000000000000000098157a5dcc9c87e661c877954295d547428a04f55f0f",
+      "timestamp": 1788781602,
+      "txCount": 5111
     },
     {
-      "height": 965876,
-      "id": "0000000000000000000045439d8a35c4c5e7268c09345de18b47ceaaec8f4315",
-      "timestamp": 1788752006,
-      "txCount": 6590
+      "height": 965921,
+      "id": "000000000000000000018fe987bd9cab1487e044b7490db674a2c1f9f3ae9bcb",
+      "timestamp": 1788781248,
+      "txCount": 3568
     }
   ],
   "news": [
     {
-      "title": "Bitcoin network used by exchanges hit by $320 million exploit. Hackers claim they're the 'good guys'",
-      "link": "https://www.coindesk.com/markets/2026/09/07/bitcoin-network-used-by-exchanges-hit-by-usd320-million-exploit-hackers-claim-they-re-the-good-guys",
-      "pubDate": "Mon, 07 Sep 2026 03:43:12 +0000"
+      "title": "Solana to triple transaction size as apps get room for more complex trades",
+      "link": "https://www.coindesk.com/tech/2026/09/07/solana-to-triple-transaction-size-as-apps-get-room-for-more-complex-trades",
+      "pubDate": "Mon, 07 Sep 2026 12:08:11 +0000"
     },
     {
-      "title": "Prediction markets inch closer to the Supreme Court: State of Crypto",
-      "link": "https://www.coindesk.com/news-analysis/2026/09/06/prediction-markets-inch-closer-to-the-supreme-court-state-of-crypto",
-      "pubDate": "Sun, 06 Sep 2026 18:30:00 +0000"
+      "title": "DBS and Citi complete weekend USD payment via Swift’s Digital Ledger using tokenized deposits",
+      "link": "https://www.coindesk.com/business/2026/09/07/dbs-and-citi-enable-instant-24-7-cross-border-tokenised-deposit-payments-on-the-swift-ledger",
+      "pubDate": "Mon, 07 Sep 2026 12:05:32 +0000"
     },
     {
-      "title": "Ukrainian police took down a crypto scam that stole up to $1 million a month",
-      "link": "https://www.coindesk.com/business/2026/09/06/ukrainian-police-took-down-a-crypto-scam-that-stole-up-to-usd1-million-a-month",
-      "pubDate": "Sun, 06 Sep 2026 16:00:00 +0000"
+      "title": "Bitcoin blinks less than gold when Treasury yields move",
+      "link": "https://www.coindesk.com/daybook-us/2026/09/07/bitcoin-blinks-less-than-gold-when-treasury-yields-move",
+      "pubDate": "Mon, 07 Sep 2026 11:15:00 +0000"
     },
     {
-      "title": "Better and Coinbase’s bitcoin-backed mortgages can reuse borrowers’ collateral",
-      "link": "https://www.coindesk.com/business/2026/09/06/better-and-coinbase-s-bitcoin-backed-mortgages-can-reuse-borrowers-collateral",
-      "pubDate": "Sun, 06 Sep 2026 14:00:00 +0000"
+      "title": "UK regulator weighs easing financial prediction market ban: Times",
+      "link": "https://www.coindesk.com/policy/2026/09/07/uk-regulator-weighs-easing-financial-prediction-market-ban-times",
+      "pubDate": "Mon, 07 Sep 2026 10:42:58 +0000"
     },
     {
-      "title": "Timing the bitcoin market is exciting but nearly impossible. Here's why",
-      "link": "https://www.coindesk.com/markets/2026/09/05/why-crypto-experts-say-buying-and-holding-bitcoin-easily-beats-trying-to-time-the-market",
-      "pubDate": "Sat, 05 Sep 2026 18:05:11 +0000"
+      "title": "A two-key breach could hand control of $91 billion in USDT to hackers, report finds",
+      "link": "https://www.coindesk.com/tech/2026/09/04/tether-receives-bluechip-rating-upgrade-but-hacken-finds-major-key-security-gaps",
+      "pubDate": "Mon, 07 Sep 2026 10:35:23 +0000"
     },
     {
-      "title": "Dollar-backed stablecoins can push local currencies lower, Bank of Korea study finds",
-      "link": "https://www.coindesk.com/business/2026/09/05/dollar-backed-stablecoins-can-push-local-currencies-lower-bank-of-korea-study-finds",
-      "pubDate": "Sat, 05 Sep 2026 16:43:13 +0000"
+      "title": "Weekend altcoin rally runs out of road as bitcoin slips",
+      "link": "https://www.coindesk.com/markets/2026/09/07/weekend-altcoin-rally-runs-out-of-road-as-bitcoin-slips",
+      "pubDate": "Mon, 07 Sep 2026 10:26:33 +0000"
     },
     {
-      "title": "British investor thought he lost $2,000 in bitcoin in 2012. He just recovered $4.5 million",
-      "link": "https://www.coindesk.com/business/2026/09/02/british-investor-thought-he-lost-usd2-000-in-bitcoin-in-2012-he-just-recovered-usd4-5-million",
-      "pubDate": "Sat, 05 Sep 2026 12:00:00 +0000"
+      "title": "Bitcoin struggles at $83,000 sell wall as whales distribution flip into net selling",
+      "link": "https://www.coindesk.com/markets/2026/09/07/bitcoin-investors-turn-to-selling-as-usd83-000-resistance-holds",
+      "pubDate": "Mon, 07 Sep 2026 09:48:51 +0000"
     },
     {
-      "title": "XRP Ledger has fewer active accounts than last year, but bigger trades and more value",
-      "link": "https://www.coindesk.com/markets/2026/09/05/xrp-ledger-has-fewer-active-accounts-but-bigger-trades-and-more-value",
-      "pubDate": "Sat, 05 Sep 2026 05:30:45 +0000"
+      "title": "Coldcard hacker moves $7.7 million in BTC, 45% of bitcoin stolen in third attack wave",
+      "link": "https://www.coindesk.com/business/2026/09/07/coldcard-hacker-moves-45-of-bitcoin-stolen-in-third-attack-wave",
+      "pubDate": "Mon, 07 Sep 2026 09:32:05 +0000"
     },
     {
-      "title": "Southeast Asia’s crypto funding rebounds to $680 million as investors focus on mature firms",
-      "link": "https://www.coindesk.com/business/2026/09/05/southeast-asia-s-crypto-funding-rebounds-to-usd680-million-as-investors-focus-on-mature-firms",
-      "pubDate": "Sat, 05 Sep 2026 05:00:00 +0000"
+      "title": "No, Friday's jobs report hasn't materially boosted Fed rate hike odds",
+      "link": "https://www.coindesk.com/markets/2026/09/07/no-friday-s-jobs-report-hasn-t-materially-boost-fed-rate-hike-odds",
+      "pubDate": "Mon, 07 Sep 2026 08:38:17 +0000"
     },
     {
-      "title": "Robinhood isn't backing down after AMC CEO demands halt to stock tokens",
-      "link": "https://www.coindesk.com/business/2026/09/04/amc-ceo-tells-robinhood-to-stop-issuing-stock-token-as-industry-executives-weigh-in",
-      "pubDate": "Fri, 04 Sep 2026 14:56:00 +0000"
+      "title": "Live updates: Bitcoin holds $79,000 as hike odds climb, zcash runs 45% in a week",
+      "link": "https://www.coindesk.com/business/2026/09/07/live-updates-bitcoin-holds-usd79-000-as-hike-odds-climb-zcash-runs-45-in-a-week",
+      "pubDate": "Mon, 07 Sep 2026 08:17:12 +0000"
     },
     {
-      "title": "From warning to listing: UK’s largest retail investment platform opens access to crypto ETNs",
-      "link": "https://www.coindesk.com/business/2026/09/04/from-warning-to-listing-uk-s-largest-wealth-platform-opens-access-to-crypto-etns",
-      "pubDate": "Fri, 04 Sep 2026 14:23:11 +0000"
+      "title": "U.S. inflation, Coinbase’s Deribit switch: Crypto Week Ahead",
+      "link": "https://www.coindesk.com/markets/2026/09/07/u-s-inflation-coinbase-s-deribit-switch-crypto-week-ahead",
+      "pubDate": "Mon, 07 Sep 2026 08:07:05 +0000"
     },
     {
-      "title": "U.S. Sheriff’s association shifts opposition stance to Clarity Act to 'neutral'",
-      "link": "https://www.coindesk.com/policy/2026/09/04/u-s-sheriff-s-association-shifts-opposition-stance-to-clarity-act-to-neutral",
-      "pubDate": "Fri, 04 Sep 2026 14:12:34 +0000"
+      "title": "Once-hyped Ethereum rival Harmony wants to shut its blockchain over AI threats",
+      "link": "https://www.coindesk.com/markets/2026/09/07/once-hyped-ethereum-rival-harmony-wants-to-shut-its-blockchain-over-ai-threats",
+      "pubDate": "Mon, 07 Sep 2026 08:02:18 +0000"
     }
   ]
 }
