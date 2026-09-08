@@ -1,13 +1,13 @@
 {
-  "fetchedAt": "2026-09-08T11:11:47.521Z",
+  "fetchedAt": "2026-09-08T16:34:47.893Z",
   "price": {
-    "usd": 78424,
-    "time": 1788865809
+    "usd": 78631,
+    "time": 1788885009
   },
   "moves": {
-    "d1": -0.846421631293004,
-    "d7": 1.3014792152128418,
-    "d30": 20.920010036909353
+    "d1": -0.5847059483091943,
+    "d7": 1.5688642784275286,
+    "d30": 21.239178175204266
   },
   "history90d": [
     {
@@ -372,60 +372,110 @@
     },
     {
       "date": "2026-09-08",
-      "close": 78380.16712988961
+      "close": 78664.02931788168
     }
   ],
   "blocks": [
     {
-      "height": 966059,
-      "id": "000000000000000000011c6c602f2bca627fd406c6de144d9c40e49720b1683a",
-      "timestamp": 1788865393,
-      "txCount": 7361
+      "height": 966096,
+      "id": "0000000000000000000037a261656f01586ff4cac1c1ae31aa9596ad1e43eb5a",
+      "timestamp": 1788885080,
+      "txCount": 4893
     },
     {
-      "height": 966058,
-      "id": "00000000000000000000f460c093e747ba50d2ba5a4b78dc8abc878a2135449f",
-      "timestamp": 1788865328,
-      "txCount": 884
+      "height": 966095,
+      "id": "00000000000000000001e13dbe8d42237c3479d2f0b0a2353885bf333d993126",
+      "timestamp": 1788883318,
+      "txCount": 4538
     },
     {
-      "height": 966057,
-      "id": "0000000000000000000002a5d9b064cf84f7ee445faaabe0ae067dedd7d0b42b",
-      "timestamp": 1788865068,
-      "txCount": 4093
+      "height": 966094,
+      "id": "000000000000000000012b6e11ef9ab74ba7722711f482ff80b4097e76909ace",
+      "timestamp": 1788882137,
+      "txCount": 4637
     },
     {
-      "height": 966056,
-      "id": "00000000000000000001976595bddb626c1745db8fb54a2843ae29f573717882",
-      "timestamp": 1788864623,
-      "txCount": 4402
+      "height": 966093,
+      "id": "00000000000000000001140d71eed266964d6ea9e425706ecfd58912782d5d47",
+      "timestamp": 1788881775,
+      "txCount": 3699
     },
     {
-      "height": 966055,
-      "id": "00000000000000000001f79edad2475d137da71f2a6ac587bb762278c28aac5d",
-      "timestamp": 1788863312,
-      "txCount": 4601
+      "height": 966092,
+      "id": "000000000000000000019729b192af90b402c58df4aff0a01106ebc45ba0b6da",
+      "timestamp": 1788881181,
+      "txCount": 2806
     },
     {
-      "height": 966054,
-      "id": "000000000000000000016c592424e531f1df567aa792f3f446d24ae105bea215",
-      "timestamp": 1788862132,
-      "txCount": 3988
+      "height": 966091,
+      "id": "000000000000000000020223844be93ec366f277920373d094658cd21417f1f3",
+      "timestamp": 1788880969,
+      "txCount": 3433
     },
     {
-      "height": 966053,
-      "id": "00000000000000000000fa3acf00955912e18d7bee2bfc0446799a128e9756c2",
-      "timestamp": 1788861493,
-      "txCount": 5387
+      "height": 966090,
+      "id": "000000000000000000002f27e00f7c64126df06a0c751c90db0d8a89da54a8f7",
+      "timestamp": 1788880633,
+      "txCount": 3505
     },
     {
-      "height": 966052,
-      "id": "00000000000000000002209f52c573fc0f00bfd0db5a92f09e486b7a2567455e",
-      "timestamp": 1788860484,
-      "txCount": 5502
+      "height": 966089,
+      "id": "00000000000000000001d4b3579bdbce8379342c4e4cc50e68a72d098ff866c8",
+      "timestamp": 1788880104,
+      "txCount": 3510
     }
   ],
   "news": [
+    {
+      "title": "Copper CEO Amar Kuchinad departs as search for a buyer enters a fourth month",
+      "link": "https://www.coindesk.com/business/2026/09/08/copper-ceo-amar-kuchinad-departs-as-search-for-a-buyer-enters-a-fourth-month",
+      "pubDate": "Tue, 08 Sep 2026 15:23:46 +0000"
+    },
+    {
+      "title": "Circle agrees to buy cross-border payments firm Tazapay for $400 million",
+      "link": "https://www.coindesk.com/business/2026/09/08/circle-agrees-to-buy-cross-border-payments-firm-tazapay-for-usd400-million",
+      "pubDate": "Tue, 08 Sep 2026 14:40:46 +0000"
+    },
+    {
+      "title": "Strive’s SATA nears $1 billion market cap as Strategy’s STRC continues to underperform",
+      "link": "https://www.coindesk.com/markets/2026/09/08/strive-s-sata-nears-usd1-billion-market-cap-as-strategy-s-strc-continues-to-underperform",
+      "pubDate": "Tue, 08 Sep 2026 14:33:32 +0000"
+    },
+    {
+      "title": "Visa combines VisaNet data with onchain lending to power stablecoin card working capital",
+      "link": "https://www.coindesk.com/business/2026/09/08/visa-opens-settlement-data-to-help-blockchain-lenders-finance-crypto-cards-as-volume-surges",
+      "pubDate": "Tue, 08 Sep 2026 14:29:14 +0000"
+    },
+    {
+      "title": "Ethereum makes quantum resistance a top priority with a 2029 deadline",
+      "link": "https://www.coindesk.com/tech/2026/09/08/ethereum-makes-quantum-resistance-a-top-priority-with-a-2029-deadline",
+      "pubDate": "Tue, 08 Sep 2026 13:18:24 +0000"
+    },
+    {
+      "title": "Bitcoin rally has more room as volatility shorts unwind, Two Prime CEO says",
+      "link": "https://www.coindesk.com/markets/2026/09/03/bitcoin-rally-has-more-room-as-volatility-shorts-unwind-two-prime-ceo-says",
+      "pubDate": "Tue, 08 Sep 2026 13:18:21 +0000"
+    },
+    {
+      "title": "Bitmine purchased another $69 million of ETH, with Tom DeMark expecting price uptrend to soon resume",
+      "link": "https://www.coindesk.com/business/2026/09/08/bitmine-purchased-another-usd69-million-of-eth-with-tom-demark-expecting-price-uptrend-to-soon-resume",
+      "pubDate": "Tue, 08 Sep 2026 13:06:34 +0000"
+    },
+    {
+      "title": "Bitcoin’s complexity paradox: How layer-2 scalers became AI's main target",
+      "link": "https://www.coindesk.com/markets/2026/09/08/bitcoin-security-risks-grow-as-ai-uncovers-hidden-vulnerabilities",
+      "pubDate": "Tue, 08 Sep 2026 12:09:26 +0000"
+    },
+    {
+      "title": "Bitcoin ETFs are still $1 billion shy of breaking even in 2026",
+      "link": "https://www.coindesk.com/daybook-us/2026/09/08/bitcoin-etfs-are-still-usd1-billion-shy-of-breaking-even-in-2026",
+      "pubDate": "Tue, 08 Sep 2026 11:26:27 +0000"
+    },
+    {
+      "title": "How Curve's soft liquidation model lets borrowers survive market drawdowns",
+      "link": "https://www.coindesk.com/tech/2026/09/08/hundreds-of-defi-loans-on-curve-stayed-in-liquidation-for-weeks-without-dying",
+      "pubDate": "Tue, 08 Sep 2026 11:06:31 +0000"
+    },
     {
       "title": "Cronos executes controversial blockchain rollback to recover crypto worth $111 million",
       "link": "https://www.coindesk.com/business/2026/09/08/cronos-executes-controversial-blockchain-rollback-to-recover-crypto-worth-usd111-million",
@@ -435,56 +485,6 @@
       "title": "Bitcoin slips to $78,800 as BNB and DeFi tokens buck the selloff",
       "link": "https://www.coindesk.com/markets/2026/09/08/bitcoin-slips-to-usd78-800-as-bnb-and-defi-tokens-buck-the-selloff",
       "pubDate": "Tue, 08 Sep 2026 10:33:17 +0000"
-    },
-    {
-      "title": "Stablecoins could save South Korean merchants up to $3.8 billion a year, budget office says",
-      "link": "https://www.coindesk.com/business/2026/09/08/stablecoins-could-save-south-korean-merchants-up-to-usd3-8-billion-a-year-budget-office-says",
-      "pubDate": "Tue, 08 Sep 2026 09:51:01 +0000"
-    },
-    {
-      "title": "Tracking cocoa may be just the beginning for PwC, Merck, Hashgraph provenance system",
-      "link": "https://www.coindesk.com/tech/2026/09/08/tracking-cocoa-may-be-just-the-beginning-for-pwc-merck-hashgraph-provenance-system",
-      "pubDate": "Tue, 08 Sep 2026 09:39:36 +0000"
-    },
-    {
-      "title": "Live updates: Yen rally and rising bond yields pressure bitcoin and risk assets",
-      "link": "https://www.coindesk.com/tech/2026/09/08/live-updates",
-      "pubDate": "Tue, 08 Sep 2026 08:30:30 +0000"
-    },
-    {
-      "title": "Bit2Me sets up specialized unit to help law enforcement track down crypto assets",
-      "link": "https://www.coindesk.com/business/2026/09/02/bit2me-sets-up-specialized-unit-to-help-law-enforcement-track-down-crypto-assets",
-      "pubDate": "Tue, 08 Sep 2026 07:00:00 +0000"
-    },
-    {
-      "title": "Hunter Biden wants to launch a LAPTOP memecoin. Crypto traders hate it already",
-      "link": "https://www.coindesk.com/markets/2026/09/08/crypto-traders-turn-on-hunter-biden-s-laptop-memecoin-before-it-even-launches",
-      "pubDate": "Tue, 08 Sep 2026 06:23:53 +0000"
-    },
-    {
-      "title": "Bitcoin’s golden cross is here",
-      "link": "https://www.coindesk.com/markets/2026/09/08/bitcoin-s-golden-cross-is-here",
-      "pubDate": "Tue, 08 Sep 2026 05:56:23 +0000"
-    },
-    {
-      "title": "Liquid Network gets back 3,400 bitcoin from whitehat hackers; talks underway for the rest",
-      "link": "https://www.coindesk.com/markets/2026/09/08/white-hat-hackers-return-most-of-usd320m-bitcoin-taken-from-liquid-network",
-      "pubDate": "Tue, 08 Sep 2026 04:41:17 +0000"
-    },
-    {
-      "title": "Bitcoin slips under $79,000, Zcash leads losses as Fed hike odds hold near 60%",
-      "link": "https://www.coindesk.com/markets/2026/09/08/bitcoin-slips-under-usd79-000-zcash-leads-losses-as-fed-hike-odds-hold-near-60",
-      "pubDate": "Tue, 08 Sep 2026 04:40:57 +0000"
-    },
-    {
-      "title": "Metaplanet CEO breaks silence but shareholders say the hard questions remain unanswered",
-      "link": "https://www.coindesk.com/markets/2026/09/08/metaplanet-ceo-breaks-silence-but-shareholders-say-the-hard-questions-remain-unanswered",
-      "pubDate": "Mon, 07 Sep 2026 23:01:00 +0000"
-    },
-    {
-      "title": "Hunter Biden debuts 'LAPTOP' memecoin targeting TRUMP holders",
-      "link": "https://www.coindesk.com/business/2026/09/07/hunter-biden-is-launching-a-memecoin-named-after-his-laptop",
-      "pubDate": "Mon, 07 Sep 2026 15:44:30 +0000"
     }
   ]
 }
