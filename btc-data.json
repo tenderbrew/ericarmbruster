@@ -1,13 +1,13 @@
 {
-  "fetchedAt": "2026-09-09T16:34:34.594Z",
+  "fetchedAt": "2026-09-09T20:53:52.083Z",
   "price": {
-    "usd": 78616,
-    "time": 1788971409
+    "usd": 78106,
+    "time": 1788987011
   },
   "moves": {
-    "d1": 0.21063782678596432,
-    "d7": 1.7062295441514497,
-    "d30": 22.999490067875318
+    "d1": -0.4394515353242978,
+    "d7": 1.046437935986222,
+    "d30": 22.20156420119912
   },
   "history90d": [
     {
@@ -372,62 +372,62 @@
     },
     {
       "date": "2026-09-09",
-      "close": 78705.0696482026
+      "close": 78166.36394504305
     }
   ],
   "blocks": [
     {
-      "height": 966235,
-      "id": "000000000000000000013e6f351faa1666b009626a243d7303258d957a4fda35",
-      "timestamp": 1788971588,
-      "txCount": 3755
+      "height": 966268,
+      "id": "000000000000000000002d5ba73f82d64276bf369f28b85f4e7b5298785d3d25",
+      "timestamp": 1788987040,
+      "txCount": 3665
     },
     {
-      "height": 966234,
-      "id": "00000000000000000001aafc64d364062a9d1e83bef1bf98254a2df821844b4f",
-      "timestamp": 1788971485,
-      "txCount": 3778
+      "height": 966267,
+      "id": "00000000000000000001bbbf3176e045325ae824d0d3944a59206a0d285fbaac",
+      "timestamp": 1788986208,
+      "txCount": 4241
     },
     {
-      "height": 966233,
-      "id": "00000000000000000001638598364ba772e0ebf4ddca9cd643b30169348e8809",
-      "timestamp": 1788971440,
-      "txCount": 4281
+      "height": 966266,
+      "id": "00000000000000000001906972a15324ffe50e350da581efd3f63aa8c466dd3f",
+      "timestamp": 1788985414,
+      "txCount": 5525
     },
     {
-      "height": 966232,
-      "id": "000000000000000000013da727421295bb3eb0df325d1f428d92b228289f0c28",
-      "timestamp": 1788971108,
-      "txCount": 4062
+      "height": 966265,
+      "id": "00000000000000000001eca390f1ea0df21393685ef6a5341b45451182690429",
+      "timestamp": 1788984860,
+      "txCount": 4029
     },
     {
-      "height": 966231,
-      "id": "000000000000000000007e700757960a9ad2153fd7fb0358826cedcfd027d7e3",
-      "timestamp": 1788968191,
-      "txCount": 6166
+      "height": 966264,
+      "id": "000000000000000000007753e3766a8c1e5e26ab88f0fd673195eb494904eb16",
+      "timestamp": 1788983803,
+      "txCount": 4806
     },
     {
-      "height": 966230,
-      "id": "00000000000000000001ce7ced1edd3adddfb0374e1bb94b813094048cf2266d",
-      "timestamp": 1788967952,
-      "txCount": 3661
+      "height": 966263,
+      "id": "00000000000000000000f9a492acbe8348842e871109d7777df912a08e1bd12a",
+      "timestamp": 1788983060,
+      "txCount": 5875
     },
     {
-      "height": 966229,
-      "id": "000000000000000000008a28db9b7bcba43859a904aeaa10fcc783ac4bbc48d4",
-      "timestamp": 1788967389,
-      "txCount": 4033
+      "height": 966262,
+      "id": "00000000000000000000f893624dd0776fc4c70f5b0a72d80b4b0036e252a429",
+      "timestamp": 1788982829,
+      "txCount": 4886
     },
     {
-      "height": 966228,
-      "id": "00000000000000000000c9275cc1b6a3ef88614f285f2f0593bfe047449b50dc",
-      "timestamp": 1788966848,
-      "txCount": 4079
+      "height": 966261,
+      "id": "0000000000000000000193ebbd1d9268bc6109ab2a7b1a2a813ec23e8ea6aab6",
+      "timestamp": 1788982494,
+      "txCount": 4880
     }
   ],
   "news": [
     {
-      "title": "Robinhood’s CEO Vlad Tenev fires back at AMC CEO in escalating fight over stock tokens",
+      "title": "Robinhood CEO Vlad Tenev fires back at AMC's Aron in escalating fight over stock tokens",
       "link": "https://www.coindesk.com/markets/2026/09/09/robinhood-s-ceo-vlad-tenev-defends-stock-tokens-in-escalating-fight-with-amc-ceo",
       "pubDate": "Wed, 09 Sep 2026 16:11:07 +0000"
     },
