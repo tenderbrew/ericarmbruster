@@ -1,13 +1,13 @@
 {
-  "fetchedAt": "2026-09-09T04:35:19.397Z",
+  "fetchedAt": "2026-09-09T11:16:19.237Z",
   "price": {
-    "usd": 78879,
-    "time": 1788928209
+    "usd": 78854,
+    "time": 1788952507
   },
   "moves": {
-    "d1": 0.5458799880310616,
-    "d7": 2.0464750205190008,
-    "d30": 23.41096948539658
+    "d1": 0.5140128624374185,
+    "d7": 2.0141322946285456,
+    "d30": 23.37185547232421
   },
   "history90d": [
     {
@@ -372,60 +372,105 @@
     },
     {
       "date": "2026-09-09",
-      "close": 78884.26496853087
+      "close": 78849.49410614229
     }
   ],
   "blocks": [
     {
-      "height": 966149,
-      "id": "000000000000000000020a08ed0022b84b4ab8b22723420cede72b04854c40d1",
-      "timestamp": 1788928316,
-      "txCount": 6075
+      "height": 966192,
+      "id": "00000000000000000000b99ea2454dc6e1eadd7e36ecff4a1afc24d02e71692e",
+      "timestamp": 1788952020,
+      "txCount": 4228
     },
     {
-      "height": 966148,
-      "id": "0000000000000000000007f98e13ed99902a92a157ee9dd54c9ca2b777fbe562",
-      "timestamp": 1788928280,
-      "txCount": 6380
+      "height": 966191,
+      "id": "00000000000000000000628bf07c4bb1cd6c44c2f95bc3e7209d67e8883838b7",
+      "timestamp": 1788950599,
+      "txCount": 4088
     },
     {
-      "height": 966147,
-      "id": "00000000000000000001829f8f9c8a8e192a4f1b0e752d480ab20bbac4d4dc7f",
-      "timestamp": 1788927984,
-      "txCount": 6279
+      "height": 966190,
+      "id": "0000000000000000000048d05ac399c2c7fd344757d30655a10d28b5a919e304",
+      "timestamp": 1788949736,
+      "txCount": 4048
     },
     {
-      "height": 966146,
-      "id": "000000000000000000007a18e5c305878cfbb7287050018bf6344a8e8a45f937",
-      "timestamp": 1788927913,
-      "txCount": 3305
+      "height": 966189,
+      "id": "000000000000000000008313b52d1edb8e91c874e7e092dfc75041573ab21fe2",
+      "timestamp": 1788948408,
+      "txCount": 3449
     },
     {
-      "height": 966145,
-      "id": "00000000000000000001a0988474bfcd9df05ce742d168db669e57d8bd30d1fc",
-      "timestamp": 1788926794,
-      "txCount": 2702
+      "height": 966188,
+      "id": "00000000000000000001c7aea41e8c114d7378722b729cd394f73e6495c4dfe4",
+      "timestamp": 1788947532,
+      "txCount": 1969
     },
     {
-      "height": 966144,
-      "id": "000000000000000000010a8fffd5112dba2e1910198d003453da3be093e4c2d0",
-      "timestamp": 1788926015,
-      "txCount": 4522
+      "height": 966187,
+      "id": "00000000000000000001205e1160f831bfe271d4cd0b7358054f366495d8a066",
+      "timestamp": 1788947205,
+      "txCount": 2678
     },
     {
-      "height": 966143,
-      "id": "00000000000000000000748969ec33043c0e52a763c6dd5193861f559f2c72e3",
-      "timestamp": 1788925573,
-      "txCount": 5367
+      "height": 966186,
+      "id": "000000000000000000000573eb735494fe396a48f3572d5d6f5c609eb4409516",
+      "timestamp": 1788946838,
+      "txCount": 4215
     },
     {
-      "height": 966142,
-      "id": "000000000000000000011476fd50a9970a2a8dfbb506c290e953b683f4e768fd",
-      "timestamp": 1788925028,
-      "txCount": 4675
+      "height": 966185,
+      "id": "00000000000000000001570d96b5188b3b283cf858d164fdda676d6ac20854b2",
+      "timestamp": 1788945537,
+      "txCount": 2714
     }
   ],
   "news": [
+    {
+      "title": "Bitcoin climbs as oil tops $100, equities drop after Iran strikes",
+      "link": "https://www.coindesk.com/markets/2026/09/09/bitcoin-climbs-as-oil-tops-usd100-equities-drop-after-iran-strikes",
+      "pubDate": "Wed, 09 Sep 2026 10:47:23 +0000"
+    },
+    {
+      "title": "Iran eases currency controls to let traders bring earnings home in crypto: FT",
+      "link": "https://www.coindesk.com/business/2026/09/09/iran-eases-currency-controls-to-let-traders-bring-earnings-home-in-crypto-ft",
+      "pubDate": "Wed, 09 Sep 2026 09:59:39 +0000"
+    },
+    {
+      "title": "Singaporean 22-year old pleads guilty to being the ringleader in $245 million crypto fraud case",
+      "link": "https://www.coindesk.com/business/2026/09/09/singaporean-22-year-old-pleads-guilty-to-being-the-ringleader-in-usd245-million-crypto-fraud-case",
+      "pubDate": "Wed, 09 Sep 2026 09:54:42 +0000"
+    },
+    {
+      "title": "India’s financial intelligence unit flags 15 crypto platforms for AML lapses",
+      "link": "https://www.coindesk.com/policy/2026/09/09/india-s-financial-intelligence-unit-flags-15-crypto-platforms-for-aml-lapses",
+      "pubDate": "Wed, 09 Sep 2026 08:17:54 +0000"
+    },
+    {
+      "title": "Live updates: Brent crude hits $100 for first time since July as bitcoin trades around $79,000",
+      "link": "https://www.coindesk.com/business/2026/09/09/live-updates-xrp-funds-stand-out-among-u-s-etfs-as-bitcoin-ether-solana-funds-see-outflows",
+      "pubDate": "Wed, 09 Sep 2026 07:20:51 +0000"
+    },
+    {
+      "title": "AI could kill us, Anthropic researcher says after resigning",
+      "link": "https://www.coindesk.com/markets/2026/09/09/anthropic-researcher-quits-with-a-warning-on-ai-that-echoes-the-terminator-script",
+      "pubDate": "Wed, 09 Sep 2026 06:20:38 +0000"
+    },
+    {
+      "title": "Hunter Biden defends LAPTOP ahead of Wednesday launch, calls TRUMP a ‘grift’",
+      "link": "https://www.coindesk.com/markets/2026/09/09/hunter-biden-defends-laptop-ahead-of-wednesday-launch-calls-trump-a-grift",
+      "pubDate": "Wed, 09 Sep 2026 05:22:57 +0000"
+    },
+    {
+      "title": "Moonshot’s Kimi rattled markets. U.S. agencies now say it was trained on American models",
+      "link": "https://www.coindesk.com/tech/2026/09/09/moonshot-s-kimi-rattled-markets-u-s-agencies-now-say-it-was-trained-on-american-models",
+      "pubDate": "Wed, 09 Sep 2026 04:40:54 +0000"
+    },
+    {
+      "title": "Bitcoin recovers toward $79,000 as Zcash records a $500 million ETF haul",
+      "link": "https://www.coindesk.com/markets/2026/09/09/bitcoin-recovers-toward-usd79-000-as-zcash-records-a-usd500-million-etf-haul",
+      "pubDate": "Wed, 09 Sep 2026 04:35:55 +0000"
+    },
     {
       "title": "Copper CEO Amar Kuchinad departs as search for a buyer enters a fourth month",
       "link": "https://www.coindesk.com/business/2026/09/08/copper-ceo-amar-kuchinad-departs-as-search-for-a-buyer-enters-a-fourth-month",
@@ -440,51 +485,6 @@
       "title": "Strive’s SATA nears $1 billion market cap as Strategy’s STRC continues to underperform",
       "link": "https://www.coindesk.com/markets/2026/09/08/strive-s-sata-nears-usd1-billion-market-cap-as-strategy-s-strc-continues-to-underperform",
       "pubDate": "Tue, 08 Sep 2026 14:33:32 +0000"
-    },
-    {
-      "title": "Visa combines VisaNet data with onchain lending to power stablecoin card working capital",
-      "link": "https://www.coindesk.com/business/2026/09/08/visa-opens-settlement-data-to-help-blockchain-lenders-finance-crypto-cards-as-volume-surges",
-      "pubDate": "Tue, 08 Sep 2026 14:29:14 +0000"
-    },
-    {
-      "title": "Ethereum makes quantum resistance a top priority with a 2029 deadline",
-      "link": "https://www.coindesk.com/tech/2026/09/08/ethereum-makes-quantum-resistance-a-top-priority-with-a-2029-deadline",
-      "pubDate": "Tue, 08 Sep 2026 13:18:24 +0000"
-    },
-    {
-      "title": "Bitcoin rally has more room as volatility shorts unwind, Two Prime CEO says",
-      "link": "https://www.coindesk.com/markets/2026/09/03/bitcoin-rally-has-more-room-as-volatility-shorts-unwind-two-prime-ceo-says",
-      "pubDate": "Tue, 08 Sep 2026 13:18:21 +0000"
-    },
-    {
-      "title": "Bitmine purchased another $69 million of ETH, with Tom DeMark expecting price uptrend to soon resume",
-      "link": "https://www.coindesk.com/business/2026/09/08/bitmine-purchased-another-usd69-million-of-eth-with-tom-demark-expecting-price-uptrend-to-soon-resume",
-      "pubDate": "Tue, 08 Sep 2026 13:06:34 +0000"
-    },
-    {
-      "title": "Bitcoin’s complexity paradox: How layer-2 scalers became AI's main target",
-      "link": "https://www.coindesk.com/markets/2026/09/08/bitcoin-security-risks-grow-as-ai-uncovers-hidden-vulnerabilities",
-      "pubDate": "Tue, 08 Sep 2026 12:09:26 +0000"
-    },
-    {
-      "title": "Bitcoin ETFs are still $1 billion shy of breaking even in 2026",
-      "link": "https://www.coindesk.com/daybook-us/2026/09/08/bitcoin-etfs-are-still-usd1-billion-shy-of-breaking-even-in-2026",
-      "pubDate": "Tue, 08 Sep 2026 11:26:27 +0000"
-    },
-    {
-      "title": "How Curve's soft liquidation model lets borrowers survive market drawdowns",
-      "link": "https://www.coindesk.com/tech/2026/09/08/hundreds-of-defi-loans-on-curve-stayed-in-liquidation-for-weeks-without-dying",
-      "pubDate": "Tue, 08 Sep 2026 11:06:31 +0000"
-    },
-    {
-      "title": "Cronos executes controversial blockchain rollback to recover crypto worth $111 million",
-      "link": "https://www.coindesk.com/business/2026/09/08/cronos-executes-controversial-blockchain-rollback-to-recover-crypto-worth-usd111-million",
-      "pubDate": "Tue, 08 Sep 2026 10:39:33 +0000"
-    },
-    {
-      "title": "Bitcoin slips to $78,800 as BNB and DeFi tokens buck the selloff",
-      "link": "https://www.coindesk.com/markets/2026/09/08/bitcoin-slips-to-usd78-800-as-bnb-and-defi-tokens-buck-the-selloff",
-      "pubDate": "Tue, 08 Sep 2026 10:33:17 +0000"
     }
   ]
 }
