@@ -1,13 +1,13 @@
 {
-  "fetchedAt": "2026-09-09T11:16:19.237Z",
+  "fetchedAt": "2026-09-09T16:34:34.594Z",
   "price": {
-    "usd": 78854,
-    "time": 1788952507
+    "usd": 78616,
+    "time": 1788971409
   },
   "moves": {
-    "d1": 0.5140128624374185,
-    "d7": 2.0141322946285456,
-    "d30": 23.37185547232421
+    "d1": 0.21063782678596432,
+    "d7": 1.7062295441514497,
+    "d30": 22.999490067875318
   },
   "history90d": [
     {
@@ -372,119 +372,119 @@
     },
     {
       "date": "2026-09-09",
-      "close": 78849.49410614229
+      "close": 78705.0696482026
     }
   ],
   "blocks": [
     {
-      "height": 966192,
-      "id": "00000000000000000000b99ea2454dc6e1eadd7e36ecff4a1afc24d02e71692e",
-      "timestamp": 1788952020,
-      "txCount": 4228
+      "height": 966235,
+      "id": "000000000000000000013e6f351faa1666b009626a243d7303258d957a4fda35",
+      "timestamp": 1788971588,
+      "txCount": 3755
     },
     {
-      "height": 966191,
-      "id": "00000000000000000000628bf07c4bb1cd6c44c2f95bc3e7209d67e8883838b7",
-      "timestamp": 1788950599,
-      "txCount": 4088
+      "height": 966234,
+      "id": "00000000000000000001aafc64d364062a9d1e83bef1bf98254a2df821844b4f",
+      "timestamp": 1788971485,
+      "txCount": 3778
     },
     {
-      "height": 966190,
-      "id": "0000000000000000000048d05ac399c2c7fd344757d30655a10d28b5a919e304",
-      "timestamp": 1788949736,
-      "txCount": 4048
+      "height": 966233,
+      "id": "00000000000000000001638598364ba772e0ebf4ddca9cd643b30169348e8809",
+      "timestamp": 1788971440,
+      "txCount": 4281
     },
     {
-      "height": 966189,
-      "id": "000000000000000000008313b52d1edb8e91c874e7e092dfc75041573ab21fe2",
-      "timestamp": 1788948408,
-      "txCount": 3449
+      "height": 966232,
+      "id": "000000000000000000013da727421295bb3eb0df325d1f428d92b228289f0c28",
+      "timestamp": 1788971108,
+      "txCount": 4062
     },
     {
-      "height": 966188,
-      "id": "00000000000000000001c7aea41e8c114d7378722b729cd394f73e6495c4dfe4",
-      "timestamp": 1788947532,
-      "txCount": 1969
+      "height": 966231,
+      "id": "000000000000000000007e700757960a9ad2153fd7fb0358826cedcfd027d7e3",
+      "timestamp": 1788968191,
+      "txCount": 6166
     },
     {
-      "height": 966187,
-      "id": "00000000000000000001205e1160f831bfe271d4cd0b7358054f366495d8a066",
-      "timestamp": 1788947205,
-      "txCount": 2678
+      "height": 966230,
+      "id": "00000000000000000001ce7ced1edd3adddfb0374e1bb94b813094048cf2266d",
+      "timestamp": 1788967952,
+      "txCount": 3661
     },
     {
-      "height": 966186,
-      "id": "000000000000000000000573eb735494fe396a48f3572d5d6f5c609eb4409516",
-      "timestamp": 1788946838,
-      "txCount": 4215
+      "height": 966229,
+      "id": "000000000000000000008a28db9b7bcba43859a904aeaa10fcc783ac4bbc48d4",
+      "timestamp": 1788967389,
+      "txCount": 4033
     },
     {
-      "height": 966185,
-      "id": "00000000000000000001570d96b5188b3b283cf858d164fdda676d6ac20854b2",
-      "timestamp": 1788945537,
-      "txCount": 2714
+      "height": 966228,
+      "id": "00000000000000000000c9275cc1b6a3ef88614f285f2f0593bfe047449b50dc",
+      "timestamp": 1788966848,
+      "txCount": 4079
     }
   ],
   "news": [
     {
-      "title": "Bitcoin climbs as oil tops $100, equities drop after Iran strikes",
-      "link": "https://www.coindesk.com/markets/2026/09/09/bitcoin-climbs-as-oil-tops-usd100-equities-drop-after-iran-strikes",
-      "pubDate": "Wed, 09 Sep 2026 10:47:23 +0000"
+      "title": "Robinhood’s CEO Vlad Tenev fires back at AMC CEO in escalating fight over stock tokens",
+      "link": "https://www.coindesk.com/markets/2026/09/09/robinhood-s-ceo-vlad-tenev-defends-stock-tokens-in-escalating-fight-with-amc-ceo",
+      "pubDate": "Wed, 09 Sep 2026 16:11:07 +0000"
     },
     {
-      "title": "Iran eases currency controls to let traders bring earnings home in crypto: FT",
-      "link": "https://www.coindesk.com/business/2026/09/09/iran-eases-currency-controls-to-let-traders-bring-earnings-home-in-crypto-ft",
-      "pubDate": "Wed, 09 Sep 2026 09:59:39 +0000"
+      "title": "U.S. Treasury sanctions another widespread cyber-scam hub, Xinbi Guarantee",
+      "link": "https://www.coindesk.com/policy/2026/09/09/u-s-treasury-sanctions-another-widespread-cyber-scam-hub-xinbi-guarantee",
+      "pubDate": "Wed, 09 Sep 2026 16:05:11 +0000"
     },
     {
-      "title": "Singaporean 22-year old pleads guilty to being the ringleader in $245 million crypto fraud case",
-      "link": "https://www.coindesk.com/business/2026/09/09/singaporean-22-year-old-pleads-guilty-to-being-the-ringleader-in-usd245-million-crypto-fraud-case",
-      "pubDate": "Wed, 09 Sep 2026 09:54:42 +0000"
+      "title": "Tether pushes into private credit with $400 million fund with Fasanara",
+      "link": "https://www.coindesk.com/business/2026/09/09/tether-pushes-into-private-credit-with-usd400-million-fund-with-fasanara",
+      "pubDate": "Wed, 09 Sep 2026 15:51:25 +0000"
     },
     {
-      "title": "India’s financial intelligence unit flags 15 crypto platforms for AML lapses",
-      "link": "https://www.coindesk.com/policy/2026/09/09/india-s-financial-intelligence-unit-flags-15-crypto-platforms-for-aml-lapses",
-      "pubDate": "Wed, 09 Sep 2026 08:17:54 +0000"
+      "title": "Bitcoin and Ethereum race quantum clock as U.S. backs $300 million hardware push",
+      "link": "https://www.coindesk.com/tech/2026/09/09/bitcoin-and-ethereum-race-quantum-clock-as-u-s-backs-usd300-million-hardware-push",
+      "pubDate": "Wed, 09 Sep 2026 15:30:00 +0000"
     },
     {
-      "title": "Live updates: Brent crude hits $100 for first time since July as bitcoin trades around $79,000",
-      "link": "https://www.coindesk.com/business/2026/09/09/live-updates-xrp-funds-stand-out-among-u-s-etfs-as-bitcoin-ether-solana-funds-see-outflows",
-      "pubDate": "Wed, 09 Sep 2026 07:20:51 +0000"
+      "title": "Consensys to split MetaMask into its own firm while staying silent on IPO",
+      "link": "https://www.coindesk.com/business/2026/09/09/consensys-to-split-metamask-into-its-own-firm-while-staying-silent-on-ipo",
+      "pubDate": "Wed, 09 Sep 2026 15:24:01 +0000"
     },
     {
-      "title": "AI could kill us, Anthropic researcher says after resigning",
-      "link": "https://www.coindesk.com/markets/2026/09/09/anthropic-researcher-quits-with-a-warning-on-ai-that-echoes-the-terminator-script",
-      "pubDate": "Wed, 09 Sep 2026 06:20:38 +0000"
+      "title": "Crypto Long & Short:  Inside the 300-to-1 onchain gap between the dollar and euro",
+      "link": "https://www.coindesk.com/coindesk-indices/2026/09/08/crypto-long-and-short-inside-the-300-to-1-onchain-gap-between-the-dollar-and-euro",
+      "pubDate": "Wed, 09 Sep 2026 14:58:07 +0000"
     },
     {
-      "title": "Hunter Biden defends LAPTOP ahead of Wednesday launch, calls TRUMP a ‘grift’",
-      "link": "https://www.coindesk.com/markets/2026/09/09/hunter-biden-defends-laptop-ahead-of-wednesday-launch-calls-trump-a-grift",
-      "pubDate": "Wed, 09 Sep 2026 05:22:57 +0000"
+      "title": "Kalshi election data goes live on DoubleZero ahead of U.S. midterms",
+      "link": "https://www.coindesk.com/tech/2026/09/09/kalshi-election-data-goes-live-on-doublezero-ahead-of-u-s-midterms",
+      "pubDate": "Wed, 09 Sep 2026 14:00:00 +0000"
     },
     {
-      "title": "Moonshot’s Kimi rattled markets. U.S. agencies now say it was trained on American models",
-      "link": "https://www.coindesk.com/tech/2026/09/09/moonshot-s-kimi-rattled-markets-u-s-agencies-now-say-it-was-trained-on-american-models",
-      "pubDate": "Wed, 09 Sep 2026 04:40:54 +0000"
+      "title": "PayPal expands stablecoin rails with custom token issuance platform",
+      "link": "https://www.coindesk.com/business/2026/09/09/paypal-expands-stablecoin-rails-with-launch-of-custom-token-issuance-platform",
+      "pubDate": "Wed, 09 Sep 2026 14:00:00 +0000"
     },
     {
-      "title": "Bitcoin recovers toward $79,000 as Zcash records a $500 million ETF haul",
-      "link": "https://www.coindesk.com/markets/2026/09/09/bitcoin-recovers-toward-usd79-000-as-zcash-records-a-usd500-million-etf-haul",
-      "pubDate": "Wed, 09 Sep 2026 04:35:55 +0000"
+      "title": "Hunter Biden's new LAPTOP token lost 98% of its value in under an hour after $1.6 billion debut",
+      "link": "https://www.coindesk.com/business/2026/09/09/hunter-biden-s-laptop-memecoin-debuts-at-usd1-6-billion-market-cap",
+      "pubDate": "Wed, 09 Sep 2026 13:57:57 +0000"
     },
     {
-      "title": "Copper CEO Amar Kuchinad departs as search for a buyer enters a fourth month",
-      "link": "https://www.coindesk.com/business/2026/09/08/copper-ceo-amar-kuchinad-departs-as-search-for-a-buyer-enters-a-fourth-month",
-      "pubDate": "Tue, 08 Sep 2026 15:23:46 +0000"
+      "title": "KYC data is an irresistible honeypot for hackers, and we must change how it is collected",
+      "link": "https://www.coindesk.com/opinion/2026/09/09/kyc-data-is-an-irresistible-honeypot-for-hackers-and-we-must-change-how-it-is-collected",
+      "pubDate": "Wed, 09 Sep 2026 13:02:49 +0000"
     },
     {
-      "title": "Circle agrees to buy cross-border payments firm Tazapay for $400 million",
-      "link": "https://www.coindesk.com/business/2026/09/08/circle-agrees-to-buy-cross-border-payments-firm-tazapay-for-usd400-million",
-      "pubDate": "Tue, 08 Sep 2026 14:40:46 +0000"
+      "title": "Algorand names former Chainlink executive William Herkelrath as CEO",
+      "link": "https://www.coindesk.com/business/2026/09/09/algorand-names-former-chainlink-executive-william-herkelrath-as-ceo",
+      "pubDate": "Wed, 09 Sep 2026 13:00:00 +0000"
     },
     {
-      "title": "Strive’s SATA nears $1 billion market cap as Strategy’s STRC continues to underperform",
-      "link": "https://www.coindesk.com/markets/2026/09/08/strive-s-sata-nears-usd1-billion-market-cap-as-strategy-s-strc-continues-to-underperform",
-      "pubDate": "Tue, 08 Sep 2026 14:33:32 +0000"
+      "title": "Germany moves to tax bitcoin like stocks as new draft bill targets tax-free gains",
+      "link": "https://www.coindesk.com/business/2026/09/09/germany-moves-to-tax-bitcoin-like-stocks-as-new-draft-bill-targets-tax-free-gains",
+      "pubDate": "Wed, 09 Sep 2026 12:13:59 +0000"
     }
   ]
 }
