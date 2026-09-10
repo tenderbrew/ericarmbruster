@@ -1,13 +1,13 @@
 {
-  "fetchedAt": "2026-09-10T04:35:05.935Z",
+  "fetchedAt": "2026-09-10T11:12:47.746Z",
   "price": {
-    "usd": 78375,
-    "time": 1789014607
+    "usd": 77801,
+    "time": 1789038607
   },
   "moves": {
-    "d1": 0.11744498458985397,
-    "d7": -3.555912316133192,
-    "d30": 23.35223470357073
+    "d1": -0.615791550289313,
+    "d7": -4.262246049218232,
+    "d30": 22.448832053237734
   },
   "history90d": [
     {
@@ -372,60 +372,95 @@
     },
     {
       "date": "2026-09-10",
-      "close": 78376.85981336833
+      "close": 77819.86211528146
     }
   ],
   "blocks": [
     {
-      "height": 966301,
-      "id": "000000000000000000010967253ee8bc4c05f261c76c7c9d457fc06a93fc5bfe",
-      "timestamp": 1789012646,
-      "txCount": 3394
+      "height": 966352,
+      "id": "0000000000000000000167fc61694e18e666c131ba05863870d1b65c1fecbd66",
+      "timestamp": 1789038599,
+      "txCount": 7085
     },
     {
-      "height": 966300,
-      "id": "0000000000000000000148ba4b4abbbfa4a11b425c4e2785d7bd0d80e8aa53c9",
-      "timestamp": 1789011954,
-      "txCount": 3729
+      "height": 966351,
+      "id": "000000000000000000014efb268b516c0f0dbbf7d45c1e3edbca9262f816b2ac",
+      "timestamp": 1789038406,
+      "txCount": 2627
     },
     {
-      "height": 966299,
-      "id": "000000000000000000021c1e1fd7f22f7895f94784a932a75233c8f2b12e1d1f",
-      "timestamp": 1789011843,
-      "txCount": 3454
+      "height": 966350,
+      "id": "000000000000000000010f9aa5a4be756cd3aed174636faa6aae2c890a4fee1a",
+      "timestamp": 1789037559,
+      "txCount": 7531
     },
     {
-      "height": 966298,
-      "id": "000000000000000000000e56e8d0813ff325a557d500d37e392a181c7f69a856",
-      "timestamp": 1789008230,
-      "txCount": 4280
+      "height": 966349,
+      "id": "00000000000000000001f14a80b488ad2651ae282d1d52a493126c905c20a825",
+      "timestamp": 1789037516,
+      "txCount": 4347
     },
     {
-      "height": 966297,
-      "id": "00000000000000000001b09403b63147688b7003922b16f4feb702b829544ec2",
-      "timestamp": 1789007081,
-      "txCount": 6586
+      "height": 966348,
+      "id": "00000000000000000000043064b1e2d5222879205daafe5e0914b5c5c117e26f",
+      "timestamp": 1789036733,
+      "txCount": 4710
     },
     {
-      "height": 966296,
-      "id": "00000000000000000000586296d266fe787e94beeef2f204297189c1e9579123",
-      "timestamp": 1789006738,
-      "txCount": 5366
+      "height": 966347,
+      "id": "00000000000000000000ce94a0259e746b3b68ba25ac41feedda9a4037351089",
+      "timestamp": 1789036058,
+      "txCount": 6141
     },
     {
-      "height": 966295,
-      "id": "00000000000000000001aab33a4261fe178cbc9799b23455d9c4f66ffccee50f",
-      "timestamp": 1789006070,
-      "txCount": 4377
+      "height": 966346,
+      "id": "00000000000000000000428df087f0db74382d608bd6f520fe7b02837b6eb5d8",
+      "timestamp": 1789035908,
+      "txCount": 5438
     },
     {
-      "height": 966294,
-      "id": "000000000000000000004806aa631db97fbdccf5bdf0ac2ca9f12986fd76c7c6",
-      "timestamp": 1789005403,
-      "txCount": 4971
+      "height": 966345,
+      "id": "00000000000000000000d27f98daaf9df007c7131359a71bd69e7a0d417752cb",
+      "timestamp": 1789034992,
+      "txCount": 7126
     }
   ],
   "news": [
+    {
+      "title": "Bitcoin trades near $78,000 as memecoins, small caps lead a broad crypto retreat",
+      "link": "https://www.coindesk.com/markets/2026/09/10/bitcoin-trades-near-usd78-000-as-memecoins-small-caps-lead-a-broad-crypto-retreat",
+      "pubDate": "Thu, 10 Sep 2026 10:24:14 +0000"
+    },
+    {
+      "title": "Indian agri warehouse giant is putting $2 billion in grain-backed loans onchain",
+      "link": "https://www.coindesk.com/business/2026/09/10/indian-agri-warehouse-giant-is-putting-usd2-billion-in-grain-backed-loans-onchain",
+      "pubDate": "Thu, 10 Sep 2026 09:42:59 +0000"
+    },
+    {
+      "title": "Live updates: Treasury yields climb further as Brent crude tops $102 and tech futures slip",
+      "link": "https://www.coindesk.com/business/2026/09/10/live-updates-bitcoin-etfs-post-a-second-straight-outflow-while-every-other-fund-turns-green",
+      "pubDate": "Thu, 10 Sep 2026 07:45:46 +0000"
+    },
+    {
+      "title": "SGX's bitcoin and ether perpetual futures are now open to U.S. institutions",
+      "link": "https://www.coindesk.com/markets/2026/09/10/sgx-s-bitcoin-and-ether-perpetual-futures-are-now-open-to-u-s-institutions",
+      "pubDate": "Thu, 10 Sep 2026 07:01:44 +0000"
+    },
+    {
+      "title": "Hunter Biden’s LAPTOP blames bots after 98% crash as traders rack up six-figure losses",
+      "link": "https://www.coindesk.com/markets/2026/09/10/hunter-biden-s-laptop-blames-bots-after-98-crash-as-traders-rack-up-six-figure-losses",
+      "pubDate": "Thu, 10 Sep 2026 06:13:45 +0000"
+    },
+    {
+      "title": "Dogecoin sinks 5% to lead majors' losses, with bitcoin holding $78,000 level",
+      "link": "https://www.coindesk.com/markets/2026/09/10/dogecoin-sinks-5-to-lead-majors-losses-with-bitcoin-holding-usd78-000-level",
+      "pubDate": "Thu, 10 Sep 2026 05:30:15 +0000"
+    },
+    {
+      "title": "Crypto wins regardless of Clarity Act vote, Coinbase's Armstrong says",
+      "link": "https://www.coindesk.com/markets/2026/09/10/crypto-wins-regardless-of-clarity-act-vote-coinbase-s-armstrong-says",
+      "pubDate": "Thu, 10 Sep 2026 05:05:41 +0000"
+    },
     {
       "title": "Robinhood CEO Vlad Tenev fires back at AMC's Aron in escalating fight over stock tokens",
       "link": "https://www.coindesk.com/markets/2026/09/09/robinhood-s-ceo-vlad-tenev-defends-stock-tokens-in-escalating-fight-with-amc-ceo",
@@ -450,41 +485,6 @@
       "title": "Consensys to split MetaMask into its own firm while staying silent on IPO",
       "link": "https://www.coindesk.com/business/2026/09/09/consensys-to-split-metamask-into-its-own-firm-while-staying-silent-on-ipo",
       "pubDate": "Wed, 09 Sep 2026 15:24:01 +0000"
-    },
-    {
-      "title": "Crypto Long & Short:  Inside the 300-to-1 onchain gap between the dollar and euro",
-      "link": "https://www.coindesk.com/coindesk-indices/2026/09/08/crypto-long-and-short-inside-the-300-to-1-onchain-gap-between-the-dollar-and-euro",
-      "pubDate": "Wed, 09 Sep 2026 14:58:07 +0000"
-    },
-    {
-      "title": "Kalshi election data goes live on DoubleZero ahead of U.S. midterms",
-      "link": "https://www.coindesk.com/tech/2026/09/09/kalshi-election-data-goes-live-on-doublezero-ahead-of-u-s-midterms",
-      "pubDate": "Wed, 09 Sep 2026 14:00:00 +0000"
-    },
-    {
-      "title": "PayPal expands stablecoin rails with custom token issuance platform",
-      "link": "https://www.coindesk.com/business/2026/09/09/paypal-expands-stablecoin-rails-with-launch-of-custom-token-issuance-platform",
-      "pubDate": "Wed, 09 Sep 2026 14:00:00 +0000"
-    },
-    {
-      "title": "Hunter Biden's new LAPTOP token lost 98% of its value in under an hour after $1.6 billion debut",
-      "link": "https://www.coindesk.com/business/2026/09/09/hunter-biden-s-laptop-memecoin-debuts-at-usd1-6-billion-market-cap",
-      "pubDate": "Wed, 09 Sep 2026 13:57:57 +0000"
-    },
-    {
-      "title": "KYC data is an irresistible honeypot for hackers, and we must change how it is collected",
-      "link": "https://www.coindesk.com/opinion/2026/09/09/kyc-data-is-an-irresistible-honeypot-for-hackers-and-we-must-change-how-it-is-collected",
-      "pubDate": "Wed, 09 Sep 2026 13:02:49 +0000"
-    },
-    {
-      "title": "Algorand names former Chainlink executive William Herkelrath as CEO",
-      "link": "https://www.coindesk.com/business/2026/09/09/algorand-names-former-chainlink-executive-william-herkelrath-as-ceo",
-      "pubDate": "Wed, 09 Sep 2026 13:00:00 +0000"
-    },
-    {
-      "title": "Germany moves to tax bitcoin like stocks as new draft bill targets tax-free gains",
-      "link": "https://www.coindesk.com/business/2026/09/09/germany-moves-to-tax-bitcoin-like-stocks-as-new-draft-bill-targets-tax-free-gains",
-      "pubDate": "Wed, 09 Sep 2026 12:13:59 +0000"
     }
   ]
 }
