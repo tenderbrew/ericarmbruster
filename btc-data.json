@@ -1,13 +1,13 @@
 {
-  "fetchedAt": "2026-09-10T16:20:39.630Z",
+  "fetchedAt": "2026-09-10T20:48:29.475Z",
   "price": {
-    "usd": 76958,
-    "time": 1789056910
+    "usd": 77275,
+    "time": 1789073109
   },
   "moves": {
-    "d1": -1.6926528724202194,
-    "d7": -5.299596810526042,
-    "d30": 21.122057777574433
+    "d1": -1.287712138000885,
+    "d7": -4.909513546783961,
+    "d30": 21.620975269134647
   },
   "history90d": [
     {
@@ -372,60 +372,80 @@
     },
     {
       "date": "2026-09-10",
-      "close": 76883.53460621618
+      "close": 77259.80152129692
     }
   ],
   "blocks": [
     {
-      "height": 966376,
-      "id": "00000000000000000001284ce8d6ff04a8489e1d0f78b4093595734b7e22b7ad",
-      "timestamp": 1789056098,
-      "txCount": 2772
+      "height": 966402,
+      "id": "00000000000000000001441172aa0bae25068f9637d98c305bf70389cb0078ff",
+      "timestamp": 1789073256,
+      "txCount": 3252
     },
     {
-      "height": 966375,
-      "id": "0000000000000000000142c14351177e7a6a1a942a033ec1d76a2b72cc28a655",
-      "timestamp": 1789056018,
-      "txCount": 4662
+      "height": 966401,
+      "id": "00000000000000000000e46c29c799eba184c8a06a7d90df0096100715fae29d",
+      "timestamp": 1789073120,
+      "txCount": 4298
     },
     {
-      "height": 966374,
-      "id": "00000000000000000001e50e1824f89e2794783a15788d195a8adddecadefe01",
-      "timestamp": 1789055596,
-      "txCount": 4121
-    },
-    {
-      "height": 966373,
-      "id": "00000000000000000000f844de666f87ce03378f3deb898d0fbf01c0e9cf739e",
-      "timestamp": 1789053818,
+      "height": 966400,
+      "id": "00000000000000000001f5b12866c4831c2204afcbc27235cdd0964582812c80",
+      "timestamp": 1789071797,
       "txCount": 4031
     },
     {
-      "height": 966372,
-      "id": "0000000000000000000125fe9ecddf801986c5283a10b1d4024d833159b3de08",
-      "timestamp": 1789052828,
-      "txCount": 4251
+      "height": 966399,
+      "id": "00000000000000000000667e5460d7145fc01abfbd378323daf4b967f606f0d2",
+      "timestamp": 1789069729,
+      "txCount": 3303
     },
     {
-      "height": 966371,
-      "id": "00000000000000000001da1eccc463b44e7b5b2f78624d6d96d29ecf1a1c27b8",
-      "timestamp": 1789052061,
-      "txCount": 4006
+      "height": 966398,
+      "id": "00000000000000000000b08b6efa69e2f23bb5bdca6ba2e4f51f3adca27757f1",
+      "timestamp": 1789069518,
+      "txCount": 4514
     },
     {
-      "height": 966370,
-      "id": "00000000000000000000373dd6b529e850b2870faaec37f168ed723117cc5429",
-      "timestamp": 1789048873,
-      "txCount": 4542
+      "height": 966397,
+      "id": "000000000000000000004661803a4ff33ae91568992ce34b4079cb8d998fd7be",
+      "timestamp": 1789068185,
+      "txCount": 3802
     },
     {
-      "height": 966369,
-      "id": "000000000000000000011f1be5e23d78ae20e66f4a8de81b5ab79d9b03d1dbe1",
-      "timestamp": 1789048610,
-      "txCount": 3818
+      "height": 966396,
+      "id": "000000000000000000021130526ad3200dcf4ed8a9a832c26cf8fe7972dd4c35",
+      "timestamp": 1789067984,
+      "txCount": 4186
+    },
+    {
+      "height": 966395,
+      "id": "0000000000000000000159e4a99159dad21f6689da0cda11353058529876aae5",
+      "timestamp": 1789066247,
+      "txCount": 5862
     }
   ],
   "news": [
+    {
+      "title": "New Clarity Act text tweaks DeFi, credit union provisions, but road ahead for bill remains murky",
+      "link": "https://www.coindesk.com/policy/2026/09/10/new-clarity-act-text-tweaks-defi-credit-union-provisions-but-road-ahead-for-bill-remains-murky",
+      "pubDate": "Thu, 10 Sep 2026 20:21:57 +0000"
+    },
+    {
+      "title": "Why a new SEC plan could ease a legal headache for tokenized securities",
+      "link": "https://www.coindesk.com/business/2026/09/10/why-a-new-sec-plan-could-end-the-legal-headaches-of-holding-tokenized-securities",
+      "pubDate": "Thu, 10 Sep 2026 19:01:30 +0000"
+    },
+    {
+      "title": "OKX brings OpenAI and Anthropic bets to Europe as pre-IPO trading grows",
+      "link": "https://www.coindesk.com/markets/2026/09/10/okx-brings-openai-and-anthropic-bets-to-europe-as-pre-ipo-trading-grows",
+      "pubDate": "Thu, 10 Sep 2026 17:07:59 +0000"
+    },
+    {
+      "title": "Europe’s top regulator questions Polymarket and Kalshi’s EU access, warns of authorization gaps",
+      "link": "https://www.coindesk.com/business/2026/09/10/europe-s-top-regulator-questions-polymarket-and-kalshi-s-eu-access-warns-of-authorization-gaps",
+      "pubDate": "Thu, 10 Sep 2026 17:03:34 +0000"
+    },
     {
       "title": "Polymarket names former Amazon finance chief Warren Jenson as its first CFO",
       "link": "https://www.coindesk.com/markets/2026/09/10/polymarket-names-former-amazon-finance-chief-warren-jenson-as-its-first-cfo",
@@ -465,26 +485,6 @@
       "title": "Crypto researchers cut Bitcoin and Ethereum quantum attack estimate by 50%",
       "link": "https://www.coindesk.com/tech/2026/09/10/crypto-researchers-cut-bitcoin-and-ethereum-quantum-attack-estimate-by-50",
       "pubDate": "Thu, 10 Sep 2026 13:00:00 +0000"
-    },
-    {
-      "title": "BIS chief warns AI capex arms race relies on opaque debt, posing systemic risks",
-      "link": "https://www.coindesk.com/business/2026/09/10/ai-s-rapid-rise-poses-global-financial-stability-risks-says-head-of-the-bis",
-      "pubDate": "Thu, 10 Sep 2026 12:00:36 +0000"
-    },
-    {
-      "title": "Treasury yields continue to rise even as Bessent doubles down on bond buybacks",
-      "link": "https://www.coindesk.com/markets/2026/09/10/scott-bessent-doubles-down-on-bond-buybacks-as-treasury-yields-continue-to-surge",
-      "pubDate": "Thu, 10 Sep 2026 11:47:41 +0000"
-    },
-    {
-      "title": "Crypto exchange giant Bybit to offer European ‘super-app’ with stocks, derivatives",
-      "link": "https://www.coindesk.com/business/2026/09/10/crypto-exchange-giant-bybit-to-offer-european-super-app-with-stocks-derivatives",
-      "pubDate": "Thu, 10 Sep 2026 11:36:01 +0000"
-    },
-    {
-      "title": "Nasdaq invests $100 million in Kraken parent company Payward at $21 billion valuation",
-      "link": "https://www.coindesk.com/business/2026/09/10/nasdaq-invests-usd100-million-in-kraken-parent-company-payward-at-usd21-billion-valuation",
-      "pubDate": "Thu, 10 Sep 2026 11:21:21 +0000"
     }
   ]
 }
