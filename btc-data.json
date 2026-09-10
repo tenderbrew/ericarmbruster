@@ -1,13 +1,13 @@
 {
-  "fetchedAt": "2026-09-10T11:12:47.746Z",
+  "fetchedAt": "2026-09-10T16:20:39.630Z",
   "price": {
-    "usd": 77801,
-    "time": 1789038607
+    "usd": 76958,
+    "time": 1789056910
   },
   "moves": {
-    "d1": -0.615791550289313,
-    "d7": -4.262246049218232,
-    "d30": 22.448832053237734
+    "d1": -1.6926528724202194,
+    "d7": -5.299596810526042,
+    "d30": 21.122057777574433
   },
   "history90d": [
     {
@@ -372,119 +372,119 @@
     },
     {
       "date": "2026-09-10",
-      "close": 77819.86211528146
+      "close": 76883.53460621618
     }
   ],
   "blocks": [
     {
-      "height": 966352,
-      "id": "0000000000000000000167fc61694e18e666c131ba05863870d1b65c1fecbd66",
-      "timestamp": 1789038599,
-      "txCount": 7085
+      "height": 966376,
+      "id": "00000000000000000001284ce8d6ff04a8489e1d0f78b4093595734b7e22b7ad",
+      "timestamp": 1789056098,
+      "txCount": 2772
     },
     {
-      "height": 966351,
-      "id": "000000000000000000014efb268b516c0f0dbbf7d45c1e3edbca9262f816b2ac",
-      "timestamp": 1789038406,
-      "txCount": 2627
+      "height": 966375,
+      "id": "0000000000000000000142c14351177e7a6a1a942a033ec1d76a2b72cc28a655",
+      "timestamp": 1789056018,
+      "txCount": 4662
     },
     {
-      "height": 966350,
-      "id": "000000000000000000010f9aa5a4be756cd3aed174636faa6aae2c890a4fee1a",
-      "timestamp": 1789037559,
-      "txCount": 7531
+      "height": 966374,
+      "id": "00000000000000000001e50e1824f89e2794783a15788d195a8adddecadefe01",
+      "timestamp": 1789055596,
+      "txCount": 4121
     },
     {
-      "height": 966349,
-      "id": "00000000000000000001f14a80b488ad2651ae282d1d52a493126c905c20a825",
-      "timestamp": 1789037516,
-      "txCount": 4347
+      "height": 966373,
+      "id": "00000000000000000000f844de666f87ce03378f3deb898d0fbf01c0e9cf739e",
+      "timestamp": 1789053818,
+      "txCount": 4031
     },
     {
-      "height": 966348,
-      "id": "00000000000000000000043064b1e2d5222879205daafe5e0914b5c5c117e26f",
-      "timestamp": 1789036733,
-      "txCount": 4710
+      "height": 966372,
+      "id": "0000000000000000000125fe9ecddf801986c5283a10b1d4024d833159b3de08",
+      "timestamp": 1789052828,
+      "txCount": 4251
     },
     {
-      "height": 966347,
-      "id": "00000000000000000000ce94a0259e746b3b68ba25ac41feedda9a4037351089",
-      "timestamp": 1789036058,
-      "txCount": 6141
+      "height": 966371,
+      "id": "00000000000000000001da1eccc463b44e7b5b2f78624d6d96d29ecf1a1c27b8",
+      "timestamp": 1789052061,
+      "txCount": 4006
     },
     {
-      "height": 966346,
-      "id": "00000000000000000000428df087f0db74382d608bd6f520fe7b02837b6eb5d8",
-      "timestamp": 1789035908,
-      "txCount": 5438
+      "height": 966370,
+      "id": "00000000000000000000373dd6b529e850b2870faaec37f168ed723117cc5429",
+      "timestamp": 1789048873,
+      "txCount": 4542
     },
     {
-      "height": 966345,
-      "id": "00000000000000000000d27f98daaf9df007c7131359a71bd69e7a0d417752cb",
-      "timestamp": 1789034992,
-      "txCount": 7126
+      "height": 966369,
+      "id": "000000000000000000011f1be5e23d78ae20e66f4a8de81b5ab79d9b03d1dbe1",
+      "timestamp": 1789048610,
+      "txCount": 3818
     }
   ],
   "news": [
     {
-      "title": "Bitcoin trades near $78,000 as memecoins, small caps lead a broad crypto retreat",
-      "link": "https://www.coindesk.com/markets/2026/09/10/bitcoin-trades-near-usd78-000-as-memecoins-small-caps-lead-a-broad-crypto-retreat",
-      "pubDate": "Thu, 10 Sep 2026 10:24:14 +0000"
+      "title": "Polymarket names former Amazon finance chief Warren Jenson as its first CFO",
+      "link": "https://www.coindesk.com/markets/2026/09/10/polymarket-names-former-amazon-finance-chief-warren-jenson-as-its-first-cfo",
+      "pubDate": "Thu, 10 Sep 2026 16:10:03 +0000"
     },
     {
-      "title": "Indian agri warehouse giant is putting $2 billion in grain-backed loans onchain",
-      "link": "https://www.coindesk.com/business/2026/09/10/indian-agri-warehouse-giant-is-putting-usd2-billion-in-grain-backed-loans-onchain",
-      "pubDate": "Thu, 10 Sep 2026 09:42:59 +0000"
+      "title": "Monument Bank delays retail tokenized deposits, cites regulatory issues in the UK",
+      "link": "https://www.coindesk.com/business/2026/09/10/monument-bank-delays-retail-tokenized-deposits-cites-regulatory-issues-in-the-uk",
+      "pubDate": "Thu, 10 Sep 2026 15:53:24 +0000"
     },
     {
-      "title": "Live updates: Treasury yields climb further as Brent crude tops $102 and tech futures slip",
-      "link": "https://www.coindesk.com/business/2026/09/10/live-updates-bitcoin-etfs-post-a-second-straight-outflow-while-every-other-fund-turns-green",
-      "pubDate": "Thu, 10 Sep 2026 07:45:46 +0000"
+      "title": "Bitcoin Bancorp snaps up thousands of defunct Bitcoin Depot ATMs for $620,000",
+      "link": "https://www.coindesk.com/business/2026/09/10/a-quarter-of-bankrupt-bitcoin-depot-s-atms-snapped-up-for-less-than-usd1-million",
+      "pubDate": "Thu, 10 Sep 2026 15:14:49 +0000"
     },
     {
-      "title": "SGX's bitcoin and ether perpetual futures are now open to U.S. institutions",
-      "link": "https://www.coindesk.com/markets/2026/09/10/sgx-s-bitcoin-and-ether-perpetual-futures-are-now-open-to-u-s-institutions",
-      "pubDate": "Thu, 10 Sep 2026 07:01:44 +0000"
+      "title": "Crypto for Advisors: Hyperliquid and the future of finance",
+      "link": "https://www.coindesk.com/coindesk-indices/2026/09/10/crypto-for-advisors",
+      "pubDate": "Thu, 10 Sep 2026 15:00:16 +0000"
     },
     {
-      "title": "Hunter Biden’s LAPTOP blames bots after 98% crash as traders rack up six-figure losses",
-      "link": "https://www.coindesk.com/markets/2026/09/10/hunter-biden-s-laptop-blames-bots-after-98-crash-as-traders-rack-up-six-figure-losses",
-      "pubDate": "Thu, 10 Sep 2026 06:13:45 +0000"
+      "title": "MoneyGram unveils stablecoin-backed card as digital dollars move into everyday spending",
+      "link": "https://www.coindesk.com/business/2026/09/08/moneygram-unveils-stablecoin-backed-card-as-digital-dollars-move-into-everyday-spending",
+      "pubDate": "Thu, 10 Sep 2026 14:30:00 +0000"
     },
     {
-      "title": "Dogecoin sinks 5% to lead majors' losses, with bitcoin holding $78,000 level",
-      "link": "https://www.coindesk.com/markets/2026/09/10/dogecoin-sinks-5-to-lead-majors-losses-with-bitcoin-holding-usd78-000-level",
-      "pubDate": "Thu, 10 Sep 2026 05:30:15 +0000"
+      "title": "Nasdaq, Boerse Stuttgart, others ask EU to remove or increase cap in tokenization trial",
+      "link": "https://www.coindesk.com/business/2026/09/10/nasdaq-boerse-stuttgart-others-ask-eu-to-remove-or-increase-cap-in-tokenization-trial",
+      "pubDate": "Thu, 10 Sep 2026 13:56:54 +0000"
     },
     {
-      "title": "Crypto wins regardless of Clarity Act vote, Coinbase's Armstrong says",
-      "link": "https://www.coindesk.com/markets/2026/09/10/crypto-wins-regardless-of-clarity-act-vote-coinbase-s-armstrong-says",
-      "pubDate": "Thu, 10 Sep 2026 05:05:41 +0000"
+      "title": "Threatened with arrest online? Recognizing a law enforcement impersonation scam",
+      "link": "https://www.coindesk.com/opinion/2026/09/10/threatened-with-arrest-online-recognizing-a-law-enforcement-impersonation-scam",
+      "pubDate": "Thu, 10 Sep 2026 13:00:00 +0000"
     },
     {
-      "title": "Robinhood CEO Vlad Tenev fires back at AMC's Aron in escalating fight over stock tokens",
-      "link": "https://www.coindesk.com/markets/2026/09/09/robinhood-s-ceo-vlad-tenev-defends-stock-tokens-in-escalating-fight-with-amc-ceo",
-      "pubDate": "Wed, 09 Sep 2026 16:11:07 +0000"
+      "title": "Crypto researchers cut Bitcoin and Ethereum quantum attack estimate by 50%",
+      "link": "https://www.coindesk.com/tech/2026/09/10/crypto-researchers-cut-bitcoin-and-ethereum-quantum-attack-estimate-by-50",
+      "pubDate": "Thu, 10 Sep 2026 13:00:00 +0000"
     },
     {
-      "title": "U.S. Treasury sanctions another widespread cyber-scam hub, Xinbi Guarantee",
-      "link": "https://www.coindesk.com/policy/2026/09/09/u-s-treasury-sanctions-another-widespread-cyber-scam-hub-xinbi-guarantee",
-      "pubDate": "Wed, 09 Sep 2026 16:05:11 +0000"
+      "title": "BIS chief warns AI capex arms race relies on opaque debt, posing systemic risks",
+      "link": "https://www.coindesk.com/business/2026/09/10/ai-s-rapid-rise-poses-global-financial-stability-risks-says-head-of-the-bis",
+      "pubDate": "Thu, 10 Sep 2026 12:00:36 +0000"
     },
     {
-      "title": "Tether pushes into private credit with $400 million fund with Fasanara",
-      "link": "https://www.coindesk.com/business/2026/09/09/tether-pushes-into-private-credit-with-usd400-million-fund-with-fasanara",
-      "pubDate": "Wed, 09 Sep 2026 15:51:25 +0000"
+      "title": "Treasury yields continue to rise even as Bessent doubles down on bond buybacks",
+      "link": "https://www.coindesk.com/markets/2026/09/10/scott-bessent-doubles-down-on-bond-buybacks-as-treasury-yields-continue-to-surge",
+      "pubDate": "Thu, 10 Sep 2026 11:47:41 +0000"
     },
     {
-      "title": "Bitcoin and Ethereum race quantum clock as U.S. backs $300 million hardware push",
-      "link": "https://www.coindesk.com/tech/2026/09/09/bitcoin-and-ethereum-race-quantum-clock-as-u-s-backs-usd300-million-hardware-push",
-      "pubDate": "Wed, 09 Sep 2026 15:30:00 +0000"
+      "title": "Crypto exchange giant Bybit to offer European ‘super-app’ with stocks, derivatives",
+      "link": "https://www.coindesk.com/business/2026/09/10/crypto-exchange-giant-bybit-to-offer-european-super-app-with-stocks-derivatives",
+      "pubDate": "Thu, 10 Sep 2026 11:36:01 +0000"
     },
     {
-      "title": "Consensys to split MetaMask into its own firm while staying silent on IPO",
-      "link": "https://www.coindesk.com/business/2026/09/09/consensys-to-split-metamask-into-its-own-firm-while-staying-silent-on-ipo",
-      "pubDate": "Wed, 09 Sep 2026 15:24:01 +0000"
+      "title": "Nasdaq invests $100 million in Kraken parent company Payward at $21 billion valuation",
+      "link": "https://www.coindesk.com/business/2026/09/10/nasdaq-invests-usd100-million-in-kraken-parent-company-payward-at-usd21-billion-valuation",
+      "pubDate": "Thu, 10 Sep 2026 11:21:21 +0000"
     }
   ]
 }
