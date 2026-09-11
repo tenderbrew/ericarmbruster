@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-09-11T04:26:59.412Z",
+  "fetchedAt": "2026-09-11T16:22:06.765Z",
   "indicators": {
     "UNRATE": {
       "latest": {
@@ -43,22 +43,22 @@
     },
     "CPIAUCSL": {
       "latest": {
-        "date": "2026-07-01",
-        "value": 332.813
+        "date": "2026-08-01",
+        "value": 334.131
       },
       "previous": {
-        "date": "2026-06-01",
-        "value": 332.568
+        "date": "2026-07-01",
+        "value": 332.813
       }
     },
     "CPILFESL": {
       "latest": {
-        "date": "2026-07-01",
-        "value": 336.789
+        "date": "2026-08-01",
+        "value": 337.765
       },
       "previous": {
-        "date": "2026-06-01",
-        "value": 336.065
+        "date": "2026-07-01",
+        "value": 336.789
       }
     },
     "T10YIE": {
@@ -163,12 +163,12 @@
     },
     "BAMLH0A0HYM2": {
       "latest": {
-        "date": "2026-09-09",
-        "value": 2.71
+        "date": "2026-09-10",
+        "value": 2.7
       },
       "previous": {
-        "date": "2026-09-08",
-        "value": 2.67
+        "date": "2026-09-09",
+        "value": 2.71
       }
     },
     "MORTGAGE30US": {
@@ -263,12 +263,12 @@
     },
     "VIXCLS": {
       "latest": {
-        "date": "2026-09-09",
-        "value": 16.46
+        "date": "2026-09-10",
+        "value": 17.84
       },
       "previous": {
-        "date": "2026-09-08",
-        "value": 15.72
+        "date": "2026-09-09",
+        "value": 16.46
       }
     },
     "BOPGSTB": {
@@ -293,8 +293,8 @@
     },
     "CPI_YOY": {
       "latest": {
-        "date": "2026-07-01",
-        "value": 3.303856050706311
+        "date": "2026-08-01",
+        "value": 3.353016322755642
       },
       "previous": null
     }
