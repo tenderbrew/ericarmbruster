@@ -1,19 +1,15 @@
 {
-  "fetchedAt": "2026-09-10T23:07:33.264Z",
+  "fetchedAt": "2026-09-11T04:32:08.909Z",
   "price": {
-    "usd": 76812,
-    "time": 1789081207
+    "usd": 77048,
+    "time": 1789100707
   },
   "moves": {
-    "d1": -1.879155545054989,
-    "d7": -5.479256610230598,
-    "d30": 20.89227243445837
+    "d1": 0.6439990023417552,
+    "d7": -3.2926023145370853,
+    "d30": 21.510282162616324
   },
   "history90d": [
-    {
-      "date": "2026-06-13",
-      "close": 63532.27782485316
-    },
     {
       "date": "2026-06-14",
       "close": 64408.80975375945
@@ -371,61 +367,70 @@
       "close": 78283.06047169256
     },
     {
-      "date": "2026-09-10",
-      "close": 76832.07251188668
+      "date": "2026-09-11",
+      "close": 76554.98664973286
+    },
+    {
+      "date": "2026-09-11",
+      "close": 77148.33904269902
     }
   ],
   "blocks": [
     {
-      "height": 966416,
-      "id": "0000000000000000000201d1df330969eb0518194829b238d678b2d8b434072b",
-      "timestamp": 1789079629,
-      "txCount": 4003
+      "height": 966455,
+      "id": "000000000000000000004eb36f08ed52d0f07db097a6d92b35ef0d6e24ffaae0",
+      "timestamp": 1789100953,
+      "txCount": 7344
     },
     {
-      "height": 966415,
-      "id": "000000000000000000018f5a945ea078e337df46a1e072eb6beddd95e7c19760",
-      "timestamp": 1789078848,
-      "txCount": 5619
+      "height": 966454,
+      "id": "00000000000000000000e39ec83c76362cce048fffabc6cfa955ce229f296190",
+      "timestamp": 1789100874,
+      "txCount": 5395
     },
     {
-      "height": 966414,
-      "id": "00000000000000000000ca8f3881eb6e63f92d2e7ec24ae7568e4896f375f650",
-      "timestamp": 1789078205,
-      "txCount": 5983
+      "height": 966453,
+      "id": "00000000000000000001f07d46a39aa7f0ea65d9876e8623656a03bc5b4bf49b",
+      "timestamp": 1789100116,
+      "txCount": 4625
     },
     {
-      "height": 966413,
-      "id": "000000000000000000016eb547216e519148c38064f82a38dc4113bd173c49b1",
-      "timestamp": 1789077765,
-      "txCount": 7390
+      "height": 966452,
+      "id": "000000000000000000008a2345df4224fb7fe29064a05ec34b9eea9613b94fb5",
+      "timestamp": 1789099084,
+      "txCount": 5483
     },
     {
-      "height": 966412,
-      "id": "00000000000000000000f7754e00f73bb459dba0a4f7209cce27febba4531523",
-      "timestamp": 1789077997,
-      "txCount": 1670
+      "height": 966451,
+      "id": "00000000000000000001aeda42328df7b69524df763d6db8ad6d004f768e5402",
+      "timestamp": 1789098476,
+      "txCount": 7098
     },
     {
-      "height": 966411,
-      "id": "0000000000000000000055ab9dda68d61d959ebbbafa6a4e9c6819ade8a392a1",
-      "timestamp": 1789077177,
-      "txCount": 6383
+      "height": 966450,
+      "id": "00000000000000000000e747012e57d01eda2fa303a2a5da6c32eaadbfd493c7",
+      "timestamp": 1789098346,
+      "txCount": 6604
     },
     {
-      "height": 966410,
-      "id": "00000000000000000000c65cf5b01bc5bbc6fd0d339dae5f959a7bb6ed797f6a",
-      "timestamp": 1789076897,
-      "txCount": 4415
+      "height": 966449,
+      "id": "000000000000000000015a680187d6a8ff3211e6db6bcf2c899ecffb90265598",
+      "timestamp": 1789097939,
+      "txCount": 6201
     },
     {
-      "height": 966409,
-      "id": "00000000000000000000012bf4c2b6bffa5a08c8bc358f94f21adbdafe06273a",
-      "timestamp": 1789076026,
-      "txCount": 6678
+      "height": 966448,
+      "id": "00000000000000000001a90e2798de998e9685787b38a0566bbbd8be69218b29",
+      "timestamp": 1789097819,
+      "txCount": 6643
     }
   ],
   "news": [
+    {
+      "title": "Ripple puts AI agents inside its $1 billion corporate treasury bet",
+      "link": "https://www.coindesk.com/markets/2026/09/11/ripple-puts-ai-agents-inside-its-usd1-billion-corporate-treasury-bet",
+      "pubDate": "Fri, 11 Sep 2026 04:25:21 +0000"
+    },
     {
       "title": "New Clarity Act text tweaks DeFi, credit union provisions, but road ahead for bill remains murky",
       "link": "https://www.coindesk.com/policy/2026/09/10/new-clarity-act-text-tweaks-defi-credit-union-provisions-but-road-ahead-for-bill-remains-murky",
@@ -452,7 +457,7 @@
       "pubDate": "Thu, 10 Sep 2026 16:10:03 +0000"
     },
     {
-      "title": "Monument Bank delays retail tokenized deposits, cites regulatory issues in the UK",
+      "title": "Monument Bank delays retail tokenized deposits while onboarding custody partner",
       "link": "https://www.coindesk.com/business/2026/09/10/monument-bank-delays-retail-tokenized-deposits-cites-regulatory-issues-in-the-uk",
       "pubDate": "Thu, 10 Sep 2026 15:53:24 +0000"
     },
@@ -479,11 +484,6 @@
     {
       "title": "Threatened with arrest online? Recognizing a law enforcement impersonation scam",
       "link": "https://www.coindesk.com/opinion/2026/09/10/threatened-with-arrest-online-recognizing-a-law-enforcement-impersonation-scam",
-      "pubDate": "Thu, 10 Sep 2026 13:00:00 +0000"
-    },
-    {
-      "title": "Crypto researchers cut Bitcoin and Ethereum quantum attack estimate by 50%",
-      "link": "https://www.coindesk.com/tech/2026/09/10/crypto-researchers-cut-bitcoin-and-ethereum-quantum-attack-estimate-by-50",
       "pubDate": "Thu, 10 Sep 2026 13:00:00 +0000"
     }
   ]
