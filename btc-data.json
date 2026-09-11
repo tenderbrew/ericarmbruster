@@ -1,13 +1,13 @@
 {
-  "fetchedAt": "2026-09-11T11:14:02.799Z",
+  "fetchedAt": "2026-09-11T16:25:15.879Z",
   "price": {
-    "usd": 76774,
-    "time": 1789125009
+    "usd": 77535,
+    "time": 1789143609
   },
   "moves": {
-    "d1": 0.2860863280784054,
-    "d7": -3.6365155499983204,
-    "d30": 21.078164296966897
+    "d1": 1.2801430620725807,
+    "d7": -2.6813404690275267,
+    "d30": 22.278316471270585
   },
   "history90d": [
     {
@@ -372,62 +372,92 @@
     },
     {
       "date": "2026-09-11",
-      "close": 76763.18592414161
+      "close": 77497.47580213562
     }
   ],
   "blocks": [
     {
-      "height": 966498,
-      "id": "00000000000000000000406579839203307e9fc1b6dccc5dd1346100a9be7a58",
-      "timestamp": 1789124338,
-      "txCount": 3692
+      "height": 966527,
+      "id": "00000000000000000000e20469808e5f7dc35f7c6a531deafa315f2ec8a54c65",
+      "timestamp": 1789143871,
+      "txCount": 2826
     },
     {
-      "height": 966497,
-      "id": "0000000000000000000035780c84cf6b3f6ec95aab193e3c75bb9f9e3a5fdac6",
-      "timestamp": 1789123808,
-      "txCount": 3766
+      "height": 966526,
+      "id": "000000000000000000015d9467d1b4a9bf2745d3d32b107baf336eac1814f88e",
+      "timestamp": 1789143929,
+      "txCount": 4383
     },
     {
-      "height": 966496,
-      "id": "000000000000000000019868a53f5430604f5ba8a06a1055c1ff01f67d5eb760",
-      "timestamp": 1789122935,
-      "txCount": 3710
+      "height": 966525,
+      "id": "000000000000000000002671fd799c7ca7cbb4a5cf35fa0a80bba981bdb37c6c",
+      "timestamp": 1789142836,
+      "txCount": 4266
     },
     {
-      "height": 966495,
-      "id": "0000000000000000000114539130f134d3b44ae43d8371e796679e0f40e8dc30",
-      "timestamp": 1789122468,
-      "txCount": 3651
+      "height": 966524,
+      "id": "0000000000000000000061d579aad2d62702a247782b91e80b12da6b8f5b0194",
+      "timestamp": 1789142580,
+      "txCount": 4270
     },
     {
-      "height": 966494,
-      "id": "00000000000000000001c582f517ebfd2f0ac214b9ce4e958db57fbf8b2acbde",
-      "timestamp": 1789122072,
-      "txCount": 3616
+      "height": 966523,
+      "id": "0000000000000000000103278f9bce55007e6c37108b60d5715b2e2e8a91b4b6",
+      "timestamp": 1789141921,
+      "txCount": 4005
     },
     {
-      "height": 966493,
-      "id": "0000000000000000000017335b1d6070b66c09bdf692376628eb3a3243cb7db2",
-      "timestamp": 1789120887,
-      "txCount": 7627
+      "height": 966522,
+      "id": "00000000000000000000529e65b96cc3c88ee7fc1c1cdac7f80bb3e7d18d07b8",
+      "timestamp": 1789139046,
+      "txCount": 3840
     },
     {
-      "height": 966492,
-      "id": "00000000000000000000c5acbb2a1d08af9fda07cb2e95869e37fed13b24870d",
-      "timestamp": 1789120851,
-      "txCount": 315
+      "height": 966521,
+      "id": "00000000000000000001efe95c9c8aadbd6329157ab6ba69a7f2a6da4b906a4c",
+      "timestamp": 1789138994,
+      "txCount": 2847
     },
     {
-      "height": 966491,
-      "id": "00000000000000000001ce8a06d2a459cd10f9b55f17634ffa685000b46df152",
-      "timestamp": 1789120332,
-      "txCount": 5637
+      "height": 966520,
+      "id": "000000000000000000016d8fde58d8f69e6ba92feaa56769b3a3e2f0ade38c8e",
+      "timestamp": 1789138850,
+      "txCount": 3403
     }
   ],
   "news": [
     {
-      "title": "Live updates: Bitcoin sinks to $77,000 as CPI lands with hike odds near 70%",
+      "title": "With Fed rate hike all but assured, here's how markets might react",
+      "link": "https://www.coindesk.com/markets/2026/09/11/hotter-cpi-complicates-fed-hold-as-warsh-s-preferred-inflation-gauge-tells-different-story",
+      "pubDate": "Fri, 11 Sep 2026 15:45:56 +0000"
+    },
+    {
+      "title": "India's richest state is exploring tokenizing its own assets to fund new infrastructure",
+      "link": "https://www.coindesk.com/markets/2026/09/11/india-s-richest-state-is-exploring-tokenizing-its-own-assets-to-fund-new-infrastructure",
+      "pubDate": "Fri, 11 Sep 2026 15:17:08 +0000"
+    },
+    {
+      "title": "Metaplanet cuts executive reward pool by 41%, extinguishes $220 million in value",
+      "link": "https://www.coindesk.com/business/2026/09/11/metaplanet-cuts-executive-reward-pool-by-41-extinguishes-usd220-million-in-value",
+      "pubDate": "Fri, 11 Sep 2026 13:46:51 +0000"
+    },
+    {
+      "title": "Zodia Custody CEO Julian Sawyer steps down, becomes adviser",
+      "link": "https://www.coindesk.com/business/2026/09/11/zodia-custody-ceo-julian-sawyer-steps-down-becomes-adviser",
+      "pubDate": "Fri, 11 Sep 2026 13:32:52 +0000"
+    },
+    {
+      "title": "Core CPI rose a faster-than-forecast 0.3% in August, setting up possible Fed rate hike",
+      "link": "https://www.coindesk.com/markets/2026/09/11/core-cpi-rose-a-faster-than-forecast-0-3-in-august-setting-up-fed-rate-hike",
+      "pubDate": "Fri, 11 Sep 2026 12:32:25 +0000"
+    },
+    {
+      "title": "Rising yields, oil prices leave bitcoin vulnerable ahead of U.S. inflation report",
+      "link": "https://www.coindesk.com/daybook-us/2026/09/11/rising-yields-oil-prices-leave-bitcoin-vulnerable-ahead-of-u-s-inflation-report",
+      "pubDate": "Fri, 11 Sep 2026 11:20:26 +0000"
+    },
+    {
+      "title": "Live updates: Bitcoin gives up early gains as markets fully price in Fed rate hike",
       "link": "https://www.coindesk.com/business/2026/09/11/live-updates-bitcoin-sinks-to-usd77-000-as-cpi-lands-with-hike-odds-near-70",
       "pubDate": "Fri, 11 Sep 2026 11:04:12 +0000"
     },
@@ -455,36 +485,6 @@
       "title": "Bitcoin below $77,000, Zcash leads losses as traders bet on a Fed rate hike",
       "link": "https://www.coindesk.com/markets/2026/09/11/bitcoin-below-usd77-000-zcash-leads-losses-as-traders-bet-on-a-fed-rate-hike",
       "pubDate": "Fri, 11 Sep 2026 04:46:15 +0000"
-    },
-    {
-      "title": "Ripple puts AI agents inside its $1 billion corporate treasury bet",
-      "link": "https://www.coindesk.com/markets/2026/09/11/ripple-puts-ai-agents-inside-its-usd1-billion-corporate-treasury-bet",
-      "pubDate": "Fri, 11 Sep 2026 04:25:21 +0000"
-    },
-    {
-      "title": "New Clarity Act text tweaks DeFi, credit union provisions, but road ahead for bill remains murky",
-      "link": "https://www.coindesk.com/policy/2026/09/10/new-clarity-act-text-tweaks-defi-credit-union-provisions-but-road-ahead-for-bill-remains-murky",
-      "pubDate": "Thu, 10 Sep 2026 20:21:57 +0000"
-    },
-    {
-      "title": "Why a new SEC plan could ease a legal headache for tokenized securities",
-      "link": "https://www.coindesk.com/business/2026/09/10/why-a-new-sec-plan-could-end-the-legal-headaches-of-holding-tokenized-securities",
-      "pubDate": "Thu, 10 Sep 2026 19:01:30 +0000"
-    },
-    {
-      "title": "OKX brings OpenAI and Anthropic bets to Europe as pre-IPO trading grows",
-      "link": "https://www.coindesk.com/markets/2026/09/10/okx-brings-openai-and-anthropic-bets-to-europe-as-pre-ipo-trading-grows",
-      "pubDate": "Thu, 10 Sep 2026 17:07:59 +0000"
-    },
-    {
-      "title": "Europe’s top regulator questions Polymarket and Kalshi’s EU access, warns of authorization gaps",
-      "link": "https://www.coindesk.com/business/2026/09/10/europe-s-top-regulator-questions-polymarket-and-kalshi-s-eu-access-warns-of-authorization-gaps",
-      "pubDate": "Thu, 10 Sep 2026 17:03:34 +0000"
-    },
-    {
-      "title": "Polymarket names former Amazon finance chief Warren Jenson as its first CFO",
-      "link": "https://www.coindesk.com/markets/2026/09/10/polymarket-names-former-amazon-finance-chief-warren-jenson-as-its-first-cfo",
-      "pubDate": "Thu, 10 Sep 2026 16:10:03 +0000"
     }
   ]
 }
