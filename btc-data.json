@@ -1,13 +1,13 @@
 {
-  "fetchedAt": "2026-09-11T16:25:15.879Z",
+  "fetchedAt": "2026-09-11T20:55:00.233Z",
   "price": {
-    "usd": 77535,
-    "time": 1789143609
+    "usd": 77230,
+    "time": 1789159809
   },
   "moves": {
-    "d1": 1.2801430620725807,
-    "d7": -2.6813404690275267,
-    "d30": 22.278316471270585
+    "d1": 0.8817366180932984,
+    "d7": -3.06416359609204,
+    "d30": 21.79730935804769
   },
   "history90d": [
     {
@@ -372,60 +372,65 @@
     },
     {
       "date": "2026-09-11",
-      "close": 77497.47580213562
+      "close": 77272.67867401094
     }
   ],
   "blocks": [
     {
-      "height": 966527,
-      "id": "00000000000000000000e20469808e5f7dc35f7c6a531deafa315f2ec8a54c65",
-      "timestamp": 1789143871,
-      "txCount": 2826
+      "height": 966561,
+      "id": "000000000000000000013847ff6f5b061335d3c9a75199af743962cdda80fb55",
+      "timestamp": 1789159779,
+      "txCount": 6396
     },
     {
-      "height": 966526,
-      "id": "000000000000000000015d9467d1b4a9bf2745d3d32b107baf336eac1814f88e",
-      "timestamp": 1789143929,
-      "txCount": 4383
+      "height": 966560,
+      "id": "000000000000000000020d8ee7238732423191c5edb2f649fb30e6c530c39e50",
+      "timestamp": 1789159566,
+      "txCount": 5412
     },
     {
-      "height": 966525,
-      "id": "000000000000000000002671fd799c7ca7cbb4a5cf35fa0a80bba981bdb37c6c",
-      "timestamp": 1789142836,
-      "txCount": 4266
+      "height": 966559,
+      "id": "00000000000000000001aecf7abe4040888dcd73a47262cb6f4b1b89b8341e42",
+      "timestamp": 1789159205,
+      "txCount": 7068
     },
     {
-      "height": 966524,
-      "id": "0000000000000000000061d579aad2d62702a247782b91e80b12da6b8f5b0194",
-      "timestamp": 1789142580,
-      "txCount": 4270
+      "height": 966558,
+      "id": "0000000000000000000078585b2272b06154f5087bb636404bb060c36a6c7667",
+      "timestamp": 1789159178,
+      "txCount": 6991
     },
     {
-      "height": 966523,
-      "id": "0000000000000000000103278f9bce55007e6c37108b60d5715b2e2e8a91b4b6",
-      "timestamp": 1789141921,
-      "txCount": 4005
+      "height": 966557,
+      "id": "00000000000000000000c157feccc29e57f4fab7263a0c15e97e643b9ed49f14",
+      "timestamp": 1789159104,
+      "txCount": 4046
     },
     {
-      "height": 966522,
-      "id": "00000000000000000000529e65b96cc3c88ee7fc1c1cdac7f80bb3e7d18d07b8",
-      "timestamp": 1789139046,
-      "txCount": 3840
+      "height": 966556,
+      "id": "00000000000000000001ae6aa1140f595340c91cc1117f66955eef01dce5bbee",
+      "timestamp": 1789158588,
+      "txCount": 6961
     },
     {
-      "height": 966521,
-      "id": "00000000000000000001efe95c9c8aadbd6329157ab6ba69a7f2a6da4b906a4c",
-      "timestamp": 1789138994,
-      "txCount": 2847
+      "height": 966555,
+      "id": "00000000000000000000f8b82bd42b8e9fe9db130c316588197c6c7da1a83e4d",
+      "timestamp": 1789158511,
+      "txCount": 7088
     },
     {
-      "height": 966520,
-      "id": "000000000000000000016d8fde58d8f69e6ba92feaa56769b3a3e2f0ade38c8e",
-      "timestamp": 1789138850,
-      "txCount": 3403
+      "height": 966554,
+      "id": "000000000000000000021fd81e6e386c65a08b3b2f5e6a595ea270885918963e",
+      "timestamp": 1789158501,
+      "txCount": 4102
     }
   ],
   "news": [
+    {
+      "title": "The legal drama of imprisoned Sam Bankman-Fried is waiting on its last act",
+      "link": "https://www.coindesk.com/news-analysis/2026/09/11/the-legal-drama-of-imprisoned-sam-bankman-fried-is-waiting-on-its-last-act",
+      "pubDate": "Fri, 11 Sep 2026 17:12:45 +0000"
+    },
     {
       "title": "With Fed rate hike all but assured, here's how markets might react",
       "link": "https://www.coindesk.com/markets/2026/09/11/hotter-cpi-complicates-fed-hold-as-warsh-s-preferred-inflation-gauge-tells-different-story",
@@ -457,7 +462,7 @@
       "pubDate": "Fri, 11 Sep 2026 11:20:26 +0000"
     },
     {
-      "title": "Live updates: Bitcoin gives up early gains as markets fully price in Fed rate hike",
+      "title": "Live updates: Bitcoin gives up early gains, with markets moving to price in multiple rate hikes",
       "link": "https://www.coindesk.com/business/2026/09/11/live-updates-bitcoin-sinks-to-usd77-000-as-cpi-lands-with-hike-odds-near-70",
       "pubDate": "Fri, 11 Sep 2026 11:04:12 +0000"
     },
@@ -480,11 +485,6 @@
       "title": "India starts tokenizing $620 billion corporate bond market with digital rupee settlement",
       "link": "https://www.coindesk.com/markets/2026/09/11/india-starts-tokenizing-usd620-billion-corporate-bond-market-with-digital-rupee-settlement",
       "pubDate": "Fri, 11 Sep 2026 05:13:15 +0000"
-    },
-    {
-      "title": "Bitcoin below $77,000, Zcash leads losses as traders bet on a Fed rate hike",
-      "link": "https://www.coindesk.com/markets/2026/09/11/bitcoin-below-usd77-000-zcash-leads-losses-as-traders-bet-on-a-fed-rate-hike",
-      "pubDate": "Fri, 11 Sep 2026 04:46:15 +0000"
     }
   ]
 }
