@@ -1,13 +1,13 @@
 {
-  "fetchedAt": "2026-09-11T04:32:08.909Z",
+  "fetchedAt": "2026-09-11T11:14:02.799Z",
   "price": {
-    "usd": 77048,
-    "time": 1789100707
+    "usd": 76774,
+    "time": 1789125009
   },
   "moves": {
-    "d1": 0.6439990023417552,
-    "d7": -3.2926023145370853,
-    "d30": 21.510282162616324
+    "d1": 0.2860863280784054,
+    "d7": -3.6365155499983204,
+    "d30": 21.078164296966897
   },
   "history90d": [
     {
@@ -372,60 +372,90 @@
     },
     {
       "date": "2026-09-11",
-      "close": 77148.33904269902
+      "close": 76763.18592414161
     }
   ],
   "blocks": [
     {
-      "height": 966455,
-      "id": "000000000000000000004eb36f08ed52d0f07db097a6d92b35ef0d6e24ffaae0",
-      "timestamp": 1789100953,
-      "txCount": 7344
+      "height": 966498,
+      "id": "00000000000000000000406579839203307e9fc1b6dccc5dd1346100a9be7a58",
+      "timestamp": 1789124338,
+      "txCount": 3692
     },
     {
-      "height": 966454,
-      "id": "00000000000000000000e39ec83c76362cce048fffabc6cfa955ce229f296190",
-      "timestamp": 1789100874,
-      "txCount": 5395
+      "height": 966497,
+      "id": "0000000000000000000035780c84cf6b3f6ec95aab193e3c75bb9f9e3a5fdac6",
+      "timestamp": 1789123808,
+      "txCount": 3766
     },
     {
-      "height": 966453,
-      "id": "00000000000000000001f07d46a39aa7f0ea65d9876e8623656a03bc5b4bf49b",
-      "timestamp": 1789100116,
-      "txCount": 4625
+      "height": 966496,
+      "id": "000000000000000000019868a53f5430604f5ba8a06a1055c1ff01f67d5eb760",
+      "timestamp": 1789122935,
+      "txCount": 3710
     },
     {
-      "height": 966452,
-      "id": "000000000000000000008a2345df4224fb7fe29064a05ec34b9eea9613b94fb5",
-      "timestamp": 1789099084,
-      "txCount": 5483
+      "height": 966495,
+      "id": "0000000000000000000114539130f134d3b44ae43d8371e796679e0f40e8dc30",
+      "timestamp": 1789122468,
+      "txCount": 3651
     },
     {
-      "height": 966451,
-      "id": "00000000000000000001aeda42328df7b69524df763d6db8ad6d004f768e5402",
-      "timestamp": 1789098476,
-      "txCount": 7098
+      "height": 966494,
+      "id": "00000000000000000001c582f517ebfd2f0ac214b9ce4e958db57fbf8b2acbde",
+      "timestamp": 1789122072,
+      "txCount": 3616
     },
     {
-      "height": 966450,
-      "id": "00000000000000000000e747012e57d01eda2fa303a2a5da6c32eaadbfd493c7",
-      "timestamp": 1789098346,
-      "txCount": 6604
+      "height": 966493,
+      "id": "0000000000000000000017335b1d6070b66c09bdf692376628eb3a3243cb7db2",
+      "timestamp": 1789120887,
+      "txCount": 7627
     },
     {
-      "height": 966449,
-      "id": "000000000000000000015a680187d6a8ff3211e6db6bcf2c899ecffb90265598",
-      "timestamp": 1789097939,
-      "txCount": 6201
+      "height": 966492,
+      "id": "00000000000000000000c5acbb2a1d08af9fda07cb2e95869e37fed13b24870d",
+      "timestamp": 1789120851,
+      "txCount": 315
     },
     {
-      "height": 966448,
-      "id": "00000000000000000001a90e2798de998e9685787b38a0566bbbd8be69218b29",
-      "timestamp": 1789097819,
-      "txCount": 6643
+      "height": 966491,
+      "id": "00000000000000000001ce8a06d2a459cd10f9b55f17634ffa685000b46df152",
+      "timestamp": 1789120332,
+      "txCount": 5637
     }
   ],
   "news": [
+    {
+      "title": "Live updates: Bitcoin sinks to $77,000 as CPI lands with hike odds near 70%",
+      "link": "https://www.coindesk.com/business/2026/09/11/live-updates-bitcoin-sinks-to-usd77-000-as-cpi-lands-with-hike-odds-near-70",
+      "pubDate": "Fri, 11 Sep 2026 11:04:12 +0000"
+    },
+    {
+      "title": "Bitcoin recovers toward $77,300 as zcash leverage unwinds",
+      "link": "https://www.coindesk.com/markets/2026/09/11/bitcoin-recovers-toward-usd77-300-as-zcash-leverage-unwinds",
+      "pubDate": "Fri, 11 Sep 2026 10:50:47 +0000"
+    },
+    {
+      "title": "Bitcoin pulls back as another golden cross fails to deliver",
+      "link": "https://www.coindesk.com/markets/2026/09/11/bitcoin-pulls-back-as-another-golden-cross-fails-to-deliver",
+      "pubDate": "Fri, 11 Sep 2026 10:13:44 +0000"
+    },
+    {
+      "title": "Kalshi wants 24/7 Tesla and Nvidia perps as Wall Street fights over who regulates them",
+      "link": "https://www.coindesk.com/markets/2026/09/11/kalshi-wants-24-7-tesla-and-nvidia-perps-as-wall-street-fights-over-who-regulates-them",
+      "pubDate": "Fri, 11 Sep 2026 06:17:31 +0000"
+    },
+    {
+      "title": "India starts tokenizing $620 billion corporate bond market with digital rupee settlement",
+      "link": "https://www.coindesk.com/markets/2026/09/11/india-starts-tokenizing-usd620-billion-corporate-bond-market-with-digital-rupee-settlement",
+      "pubDate": "Fri, 11 Sep 2026 05:13:15 +0000"
+    },
+    {
+      "title": "Bitcoin below $77,000, Zcash leads losses as traders bet on a Fed rate hike",
+      "link": "https://www.coindesk.com/markets/2026/09/11/bitcoin-below-usd77-000-zcash-leads-losses-as-traders-bet-on-a-fed-rate-hike",
+      "pubDate": "Fri, 11 Sep 2026 04:46:15 +0000"
+    },
     {
       "title": "Ripple puts AI agents inside its $1 billion corporate treasury bet",
       "link": "https://www.coindesk.com/markets/2026/09/11/ripple-puts-ai-agents-inside-its-usd1-billion-corporate-treasury-bet",
@@ -455,36 +485,6 @@
       "title": "Polymarket names former Amazon finance chief Warren Jenson as its first CFO",
       "link": "https://www.coindesk.com/markets/2026/09/10/polymarket-names-former-amazon-finance-chief-warren-jenson-as-its-first-cfo",
       "pubDate": "Thu, 10 Sep 2026 16:10:03 +0000"
-    },
-    {
-      "title": "Monument Bank delays retail tokenized deposits while onboarding custody partner",
-      "link": "https://www.coindesk.com/business/2026/09/10/monument-bank-delays-retail-tokenized-deposits-cites-regulatory-issues-in-the-uk",
-      "pubDate": "Thu, 10 Sep 2026 15:53:24 +0000"
-    },
-    {
-      "title": "Bitcoin Bancorp snaps up thousands of defunct Bitcoin Depot ATMs for $620,000",
-      "link": "https://www.coindesk.com/business/2026/09/10/a-quarter-of-bankrupt-bitcoin-depot-s-atms-snapped-up-for-less-than-usd1-million",
-      "pubDate": "Thu, 10 Sep 2026 15:14:49 +0000"
-    },
-    {
-      "title": "Crypto for Advisors: Hyperliquid and the future of finance",
-      "link": "https://www.coindesk.com/coindesk-indices/2026/09/10/crypto-for-advisors",
-      "pubDate": "Thu, 10 Sep 2026 15:00:16 +0000"
-    },
-    {
-      "title": "MoneyGram unveils stablecoin-backed card as digital dollars move into everyday spending",
-      "link": "https://www.coindesk.com/business/2026/09/08/moneygram-unveils-stablecoin-backed-card-as-digital-dollars-move-into-everyday-spending",
-      "pubDate": "Thu, 10 Sep 2026 14:30:00 +0000"
-    },
-    {
-      "title": "Nasdaq, Boerse Stuttgart, others ask EU to remove or increase cap in tokenization trial",
-      "link": "https://www.coindesk.com/business/2026/09/10/nasdaq-boerse-stuttgart-others-ask-eu-to-remove-or-increase-cap-in-tokenization-trial",
-      "pubDate": "Thu, 10 Sep 2026 13:56:54 +0000"
-    },
-    {
-      "title": "Threatened with arrest online? Recognizing a law enforcement impersonation scam",
-      "link": "https://www.coindesk.com/opinion/2026/09/10/threatened-with-arrest-online-recognizing-a-law-enforcement-impersonation-scam",
-      "pubDate": "Thu, 10 Sep 2026 13:00:00 +0000"
     }
   ]
 }
