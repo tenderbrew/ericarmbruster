@@ -1,13 +1,13 @@
 {
-  "fetchedAt": "2026-09-12T04:28:40.124Z",
+  "fetchedAt": "2026-09-12T10:40:33.057Z",
   "price": {
-    "usd": 77230,
-    "time": 1789187106
+    "usd": 77332,
+    "time": 1789209310
   },
   "moves": {
-    "d1": 0.034280233584094155,
-    "d7": -3.2468599052315583,
-    "d30": 21.757842590793718
+    "d1": 0.1663985371426202,
+    "d7": -3.1190751028274843,
+    "d30": 21.91865186108066
   },
   "history90d": [
     {
@@ -372,60 +372,65 @@
     },
     {
       "date": "2026-09-12",
-      "close": 77225.66435686899
+      "close": 77340.79572205212
     }
   ],
   "blocks": [
     {
-      "height": 966612,
-      "id": "0000000000000000000103b3888ae1ff6f34ed1fd53c1036388c1487457adadc",
-      "timestamp": 1789186909,
-      "txCount": 4522
+      "height": 966661,
+      "id": "000000000000000000002c470d5cb26843a2f5fe85f3e5ac436a774b5a2dc48b",
+      "timestamp": 1789209370,
+      "txCount": 4725
     },
     {
-      "height": 966611,
-      "id": "0000000000000000000057deb1a55afb39e9b6af3de8e9c5c38d5de21575260e",
-      "timestamp": 1789186556,
-      "txCount": 2867
+      "height": 966660,
+      "id": "00000000000000000001aee5de8ceeda58c23421a5be1b0c17f639a7697a9870",
+      "timestamp": 1789209091,
+      "txCount": 4560
     },
     {
-      "height": 966610,
-      "id": "00000000000000000000978299a6ea138da6574993d0584ffd4e7557e4088942",
-      "timestamp": 1789184883,
-      "txCount": 3487
+      "height": 966659,
+      "id": "00000000000000000001cb1bd4f75e08e53125bdd348712de7e980b998eabb54",
+      "timestamp": 1789207139,
+      "txCount": 6813
     },
     {
-      "height": 966609,
-      "id": "00000000000000000000743196e0004387c001664c6a5bae4bb08e5510df9476",
-      "timestamp": 1789184799,
-      "txCount": 5839
+      "height": 966658,
+      "id": "000000000000000000009a25182e4acdfc0d5ac17882ead5e7455df6cf30a9a0",
+      "timestamp": 1789207108,
+      "txCount": 3962
     },
     {
-      "height": 966608,
-      "id": "000000000000000000016adf7c6b01c11df27871a24520ce00896eef7d4fc50e",
-      "timestamp": 1789184672,
-      "txCount": 4654
+      "height": 966657,
+      "id": "000000000000000000022d3064dd51eb343e3b1eb985a23d3cc676dea2567f9c",
+      "timestamp": 1789206300,
+      "txCount": 6622
     },
     {
-      "height": 966607,
-      "id": "000000000000000000022825667bdde8571f9394a1ca1c62e42420d5e2e07bfb",
-      "timestamp": 1789183900,
-      "txCount": 4746
+      "height": 966656,
+      "id": "00000000000000000001c15ec869a6ad0f5a05a499fffed601d283a4925f4754",
+      "timestamp": 1789205581,
+      "txCount": 5360
     },
     {
-      "height": 966606,
-      "id": "00000000000000000001d07d9e309abe18953d50570a36875beff0221b87e517",
-      "timestamp": 1789182337,
-      "txCount": 4221
+      "height": 966655,
+      "id": "00000000000000000000e2de1756e5f76bf7d11e63e3feddab53d24330a9a597",
+      "timestamp": 1789204976,
+      "txCount": 7026
     },
     {
-      "height": 966605,
-      "id": "00000000000000000001cf3b6a184439eb8e43be814ae9efb484ef1f013d05a2",
-      "timestamp": 1789181444,
-      "txCount": 6245
+      "height": 966654,
+      "id": "000000000000000000013c1ff88b1aba8f844151bde35a4f065c6292d472fee7",
+      "timestamp": 1789204720,
+      "txCount": 6904
     }
   ],
   "news": [
+    {
+      "title": "Bitcoin activity, passports exposed after Revolut falls for fake government request",
+      "link": "https://www.coindesk.com/tech/2026/09/12/bitcoin-activity-passports-exposed-after-revolut-falls-for-fake-government-request",
+      "pubDate": "Sat, 12 Sep 2026 10:11:01 +0000"
+    },
     {
       "title": "Robinhood CEO says companies shouldn't get veto over stock tokens in AMC feud",
       "link": "https://www.coindesk.com/markets/2026/09/11/robinhood-ceo-says-companies-shouldn-t-get-veto-over-stock-tokens-in-amc-feud",
@@ -480,11 +485,6 @@
       "title": "Bitcoin pulls back as another golden cross fails to deliver",
       "link": "https://www.coindesk.com/markets/2026/09/11/bitcoin-pulls-back-as-another-golden-cross-fails-to-deliver",
       "pubDate": "Fri, 11 Sep 2026 10:13:44 +0000"
-    },
-    {
-      "title": "Kalshi wants 24/7 Tesla and Nvidia perps as Wall Street fights over who regulates them",
-      "link": "https://www.coindesk.com/markets/2026/09/11/kalshi-wants-24-7-tesla-and-nvidia-perps-as-wall-street-fights-over-who-regulates-them",
-      "pubDate": "Fri, 11 Sep 2026 06:17:31 +0000"
     }
   ]
 }
