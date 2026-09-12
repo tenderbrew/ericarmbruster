@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-08-28T18:10:01.914Z",
+  "fetchedAt": "2026-09-12T18:10:01.328Z",
   "note": "main services only; databases/caches/workers are filtered as implementation detail",
   "services": [
     {
@@ -152,10 +152,6 @@
     },
     {
       "name": "discord-mud",
-      "project": "standalone"
-    },
-    {
-      "name": "homeassistant",
       "project": "standalone"
     }
   ]
