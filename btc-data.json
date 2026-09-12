@@ -1,13 +1,13 @@
 {
-  "fetchedAt": "2026-09-12T20:30:15.429Z",
+  "fetchedAt": "2026-09-12T23:00:57.732Z",
   "price": {
-    "usd": 77163,
-    "time": 1789244710
+    "usd": 77220,
+    "time": 1789254006
   },
   "moves": {
-    "d1": -0.05250335796905814,
-    "d7": -3.330796981320505,
-    "d30": 21.652212972075823
+    "d1": 0.021327458725406423,
+    "d7": -3.2593878270358756,
+    "d30": 21.7420769760597
   },
   "history90d": [
     {
@@ -372,67 +372,77 @@
     },
     {
       "date": "2026-09-12",
-      "close": 77156.65832062032
+      "close": 77219.26444680554
     }
   ],
   "blocks": [
     {
-      "height": 966717,
-      "id": "00000000000000000001149e5a157be8b7c60bfc0f998e1b141a43ac50361cea",
-      "timestamp": 1789244333,
-      "txCount": 5375
+      "height": 966729,
+      "id": "00000000000000000000d148dfa9e33c0ddf01c646d2451194ca5cf7334e403b",
+      "timestamp": 1789253116,
+      "txCount": 5214
     },
     {
-      "height": 966716,
-      "id": "00000000000000000000c0bdd66b388b358d46ea8a010d0fde6e41ef37b86268",
-      "timestamp": 1789244193,
-      "txCount": 750
+      "height": 966728,
+      "id": "000000000000000000019d773c4c9fc76853f14e0f43fd2a78a62628e9fc7dcb",
+      "timestamp": 1789252744,
+      "txCount": 6669
     },
     {
-      "height": 966715,
-      "id": "000000000000000000001e600791ff4532a0c160c9c51a4c7c00dfd4df9fe2dc",
-      "timestamp": 1789244058,
-      "txCount": 3387
+      "height": 966727,
+      "id": "000000000000000000019bdf220b13894fc3bb27874a42fe512b4ebf3d1befe8",
+      "timestamp": 1789252527,
+      "txCount": 7312
     },
     {
-      "height": 966714,
-      "id": "00000000000000000000efda6e2d124210a68b2b3b943727c0afdfe78f526b89",
-      "timestamp": 1789243643,
-      "txCount": 4244
+      "height": 966726,
+      "id": "000000000000000000007ed2de4234c093c91f99b8634ddf71a95b9d1f10b17c",
+      "timestamp": 1789252483,
+      "txCount": 4566
     },
     {
-      "height": 966713,
-      "id": "000000000000000000012c973c9576aea121864a247c3c91d58dd16c9ec17d05",
-      "timestamp": 1789241892,
-      "txCount": 5588
+      "height": 966725,
+      "id": "00000000000000000000b01cf9aa648ddb4354c911d788760047ca5eaceb5d4c",
+      "timestamp": 1789252136,
+      "txCount": 3507
     },
     {
-      "height": 966712,
-      "id": "00000000000000000000016cb3408982b0e136f878b0dc60668b773472c29689",
-      "timestamp": 1789241875,
-      "txCount": 6520
+      "height": 966724,
+      "id": "000000000000000000011017b5ad2d0febdf1ef14fac5a9ff868be23a3ffca61",
+      "timestamp": 1789251516,
+      "txCount": 4343
     },
     {
-      "height": 966711,
-      "id": "00000000000000000001fb190c7239f622c9470c9a1b87cef9bd753f3a463fda",
-      "timestamp": 1789241755,
-      "txCount": 1086
+      "height": 966723,
+      "id": "00000000000000000000aa002f11ac4cb6c6dd258a17237e0a8c652455f5f4ac",
+      "timestamp": 1789249997,
+      "txCount": 4452
     },
     {
-      "height": 966710,
-      "id": "000000000000000000017967ce231954eb600c2c248039f8fea0bbc4471f5213",
-      "timestamp": 1789241877,
-      "txCount": 4736
+      "height": 966722,
+      "id": "000000000000000000015e93f3207126d1c5bbe15eacafd1b0bcee01ffabb0c1",
+      "timestamp": 1789249275,
+      "txCount": 4130
     }
   ],
   "news": [
+    {
+      "title": "OpenAI IPO won't happen this year, says Sam Altman",
+      "link": "https://www.coindesk.com/markets/2026/09/12/openai-ipo-won-t-happen-this-year-says-sam-altman",
+      "pubDate": "Sat, 12 Sep 2026 21:09:31 +0000"
+    },
+    {
+      "title": "Bitcoin Suisse plans to cut up to half its Swiss jobs as it shifts work abroad",
+      "link": "https://www.coindesk.com/business/2026/09/12/bitcoin-suisse-plans-to-cut-up-to-half-its-swiss-jobs-as-it-shifts-work-abroad",
+      "pubDate": "Sat, 12 Sep 2026 21:09:06 +0000"
+    },
     {
       "title": "Nigel Farage’s Reform UK lands $97 million donations from two crypto billionaires in 24 hours",
       "link": "https://www.coindesk.com/business/2026/09/12/nigel-farage-s-reform-uk-lands-usd97-million-donations-from-two-crypto-billionaires-in-24-hours",
       "pubDate": "Sat, 12 Sep 2026 18:51:04 +0000"
     },
     {
-      "title": "Anthropic CEO calls for AI race to slow down. Musk and OpenAI's Altman agrees",
+      "title": "Anthropic CEO calls for AI race to slow down citing safety. Musk and OpenAI's Altman agrees",
       "link": "https://www.coindesk.com/tech/2026/09/12/anthropic-ceo-calls-for-ai-race-to-slow-down-musk-and-openai-s-altman-agrees",
       "pubDate": "Sat, 12 Sep 2026 18:43:33 +0000"
     },
@@ -475,16 +485,6 @@
       "title": "India's richest state is exploring tokenizing its own assets to fund new infrastructure",
       "link": "https://www.coindesk.com/markets/2026/09/11/india-s-richest-state-is-exploring-tokenizing-its-own-assets-to-fund-new-infrastructure",
       "pubDate": "Fri, 11 Sep 2026 15:17:08 +0000"
-    },
-    {
-      "title": "Metaplanet cuts executive reward pool by 41%, extinguishes $220 million in value",
-      "link": "https://www.coindesk.com/business/2026/09/11/metaplanet-cuts-executive-reward-pool-by-41-extinguishes-usd220-million-in-value",
-      "pubDate": "Fri, 11 Sep 2026 13:46:51 +0000"
-    },
-    {
-      "title": "Zodia Custody CEO Julian Sawyer steps down, becomes adviser",
-      "link": "https://www.coindesk.com/business/2026/09/11/zodia-custody-ceo-julian-sawyer-steps-down-becomes-adviser",
-      "pubDate": "Fri, 11 Sep 2026 13:32:52 +0000"
     }
   ]
 }
