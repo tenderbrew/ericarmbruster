@@ -1,19 +1,15 @@
 {
-  "fetchedAt": "2026-09-11T23:13:12.140Z",
+  "fetchedAt": "2026-09-12T04:28:40.124Z",
   "price": {
-    "usd": 77177,
-    "time": 1789167908
+    "usd": 77230,
+    "time": 1789187106
   },
   "moves": {
-    "d1": 0.8125053343854383,
-    "d7": -3.130686959155704,
-    "d30": 21.71372451542206
+    "d1": 0.034280233584094155,
+    "d7": -3.2468599052315583,
+    "d30": 21.757842590793718
   },
   "history90d": [
-    {
-      "date": "2026-06-14",
-      "close": 64408.80975375945
-    },
     {
       "date": "2026-06-15",
       "close": 65709.31094599118
@@ -371,61 +367,70 @@
       "close": 76554.98664973286
     },
     {
-      "date": "2026-09-11",
-      "close": 77188.37157477297
+      "date": "2026-09-12",
+      "close": 77203.53444805603
+    },
+    {
+      "date": "2026-09-12",
+      "close": 77225.66435686899
     }
   ],
   "blocks": [
     {
-      "height": 966573,
-      "id": "00000000000000000000551d7de11d21e02dff20d9e26b2f804bfda2f56bf48a",
-      "timestamp": 1789167531,
-      "txCount": 3668
+      "height": 966612,
+      "id": "0000000000000000000103b3888ae1ff6f34ed1fd53c1036388c1487457adadc",
+      "timestamp": 1789186909,
+      "txCount": 4522
     },
     {
-      "height": 966572,
-      "id": "0000000000000000000080796c52aea792b528783fb2b38ec9bc3f60409dd732",
-      "timestamp": 1789167211,
-      "txCount": 3928
+      "height": 966611,
+      "id": "0000000000000000000057deb1a55afb39e9b6af3de8e9c5c38d5de21575260e",
+      "timestamp": 1789186556,
+      "txCount": 2867
     },
     {
-      "height": 966571,
-      "id": "00000000000000000001897a4a424c8e122614769c8bf789aae7944e56ba0011",
-      "timestamp": 1789165837,
-      "txCount": 6605
+      "height": 966610,
+      "id": "00000000000000000000978299a6ea138da6574993d0584ffd4e7557e4088942",
+      "timestamp": 1789184883,
+      "txCount": 3487
     },
     {
-      "height": 966570,
-      "id": "00000000000000000000bc8615e131424e1090692a7c711698c3d88071e13fdc",
-      "timestamp": 1789165822,
-      "txCount": 4608
+      "height": 966609,
+      "id": "00000000000000000000743196e0004387c001664c6a5bae4bb08e5510df9476",
+      "timestamp": 1789184799,
+      "txCount": 5839
     },
     {
-      "height": 966569,
-      "id": "000000000000000000008e349ee60c6bee394412deb3479938deeed4ebed976e",
-      "timestamp": 1789165469,
-      "txCount": 3669
+      "height": 966608,
+      "id": "000000000000000000016adf7c6b01c11df27871a24520ce00896eef7d4fc50e",
+      "timestamp": 1789184672,
+      "txCount": 4654
     },
     {
-      "height": 966568,
-      "id": "00000000000000000001ef563456b9b2ba9b56dec4d929e8f2e547fdafcc92e8",
-      "timestamp": 1789163976,
-      "txCount": 4624
+      "height": 966607,
+      "id": "000000000000000000022825667bdde8571f9394a1ca1c62e42420d5e2e07bfb",
+      "timestamp": 1789183900,
+      "txCount": 4746
     },
     {
-      "height": 966567,
-      "id": "00000000000000000000193ca25720b0b05b7049afb2da5afe7bd940fec31a94",
-      "timestamp": 1789163542,
-      "txCount": 4254
+      "height": 966606,
+      "id": "00000000000000000001d07d9e309abe18953d50570a36875beff0221b87e517",
+      "timestamp": 1789182337,
+      "txCount": 4221
     },
     {
-      "height": 966566,
-      "id": "000000000000000000001721685c6614a5e93cca27c841d45410e87d0b3ba724",
-      "timestamp": 1789163506,
-      "txCount": 3065
+      "height": 966605,
+      "id": "00000000000000000001cf3b6a184439eb8e43be814ae9efb484ef1f013d05a2",
+      "timestamp": 1789181444,
+      "txCount": 6245
     }
   ],
   "news": [
+    {
+      "title": "Robinhood CEO says companies shouldn't get veto over stock tokens in AMC feud",
+      "link": "https://www.coindesk.com/markets/2026/09/11/robinhood-ceo-says-companies-shouldn-t-get-veto-over-stock-tokens-in-amc-feud",
+      "pubDate": "Fri, 11 Sep 2026 23:47:51 +0000"
+    },
     {
       "title": "The legal drama of imprisoned Sam Bankman-Fried is waiting on its last act",
       "link": "https://www.coindesk.com/news-analysis/2026/09/11/the-legal-drama-of-imprisoned-sam-bankman-fried-is-waiting-on-its-last-act",
@@ -480,11 +485,6 @@
       "title": "Kalshi wants 24/7 Tesla and Nvidia perps as Wall Street fights over who regulates them",
       "link": "https://www.coindesk.com/markets/2026/09/11/kalshi-wants-24-7-tesla-and-nvidia-perps-as-wall-street-fights-over-who-regulates-them",
       "pubDate": "Fri, 11 Sep 2026 06:17:31 +0000"
-    },
-    {
-      "title": "India starts tokenizing $620 billion corporate bond market with digital rupee settlement",
-      "link": "https://www.coindesk.com/markets/2026/09/11/india-starts-tokenizing-usd620-billion-corporate-bond-market-with-digital-rupee-settlement",
-      "pubDate": "Fri, 11 Sep 2026 05:13:15 +0000"
     }
   ]
 }
