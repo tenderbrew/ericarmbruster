@@ -1,13 +1,13 @@
 {
-  "fetchedAt": "2026-09-13T11:44:59.330Z",
+  "fetchedAt": "2026-09-13T16:12:33.215Z",
   "price": {
-    "usd": 76742,
-    "time": 1789299608
+    "usd": 77139,
+    "time": 1789315511
   },
   "moves": {
-    "d1": -0.6725553672530471,
-    "d7": -4.465799788242853,
-    "d30": 21.84308260433607
+    "d1": -0.15871684963295607,
+    "d7": -3.9715843979211574,
+    "d30": 22.473398517316202
   },
   "history90d": [
     {
@@ -372,60 +372,75 @@
     },
     {
       "date": "2026-09-13",
-      "close": 76743.14684268244
+      "close": 77140.40488174795
     }
   ],
   "blocks": [
     {
-      "height": 966816,
-      "id": "0000000000000000000025c2eda116f7717b0fad5bafc477ffebdb0f605930b6",
-      "timestamp": 1789299749,
-      "txCount": 6816
+      "height": 966844,
+      "id": "000000000000000000020cf91fe0d64930dfe0d1fa2a87b7528d1ec65093b154",
+      "timestamp": 1789315875,
+      "txCount": 5888
     },
     {
-      "height": 966815,
-      "id": "00000000000000000000976104984768194dfe9f1cbb18b79e0779b271ac6c9b",
-      "timestamp": 1789299602,
-      "txCount": 5203
+      "height": 966843,
+      "id": "00000000000000000002023a93e0b23e47e3a3178ee86a4180f0b523d6c50633",
+      "timestamp": 1789315869,
+      "txCount": 3846
     },
     {
-      "height": 966814,
-      "id": "0000000000000000000209d994443ecd7969f809dcccf162f2bd57bb3dfe5b0b",
-      "timestamp": 1789298861,
-      "txCount": 7139
+      "height": 966842,
+      "id": "00000000000000000000b4dce6ab97f7f636ba86d35bf21f3403ead53d1328a0",
+      "timestamp": 1789314733,
+      "txCount": 6267
     },
     {
-      "height": 966813,
-      "id": "000000000000000000017ad44aed7e418bb951a6f9bff29012dc792750b1ec97",
-      "timestamp": 1789298755,
-      "txCount": 6936
+      "height": 966841,
+      "id": "00000000000000000001a09a24543195a3e521aa68b48fbffe6f9dcf22a99e12",
+      "timestamp": 1789314825,
+      "txCount": 5940
     },
     {
-      "height": 966812,
-      "id": "000000000000000000008d1a06ec56c62abdb5fc42054925cfe7f8f08c7d5089",
-      "timestamp": 1789298709,
-      "txCount": 7154
+      "height": 966840,
+      "id": "0000000000000000000065a85b63193f9b11c97996d839aff470aa9cb5be5a3b",
+      "timestamp": 1789314177,
+      "txCount": 5444
     },
     {
-      "height": 966811,
-      "id": "00000000000000000001d38705d94ae5497fd8713d12616c9aa1b354b817af42",
-      "timestamp": 1789298684,
-      "txCount": 6299
+      "height": 966839,
+      "id": "000000000000000000009e83e76c1b30ba98569d9966d5ddf01f2b1a29b27a86",
+      "timestamp": 1789313942,
+      "txCount": 1307
     },
     {
-      "height": 966810,
-      "id": "000000000000000000001c1e2be26447cd3bb4907ede52cf30c72672b18f3f63",
-      "timestamp": 1789298466,
-      "txCount": 4162
+      "height": 966838,
+      "id": "000000000000000000011b6d8da7a7b2138eccae891902d273ae43e05f22b7dc",
+      "timestamp": 1789313526,
+      "txCount": 4336
     },
     {
-      "height": 966809,
-      "id": "00000000000000000000b4a858085983575ec9e0cefd52875223de7c1550bcfa",
-      "timestamp": 1789297775,
-      "txCount": 4613
+      "height": 966837,
+      "id": "0000000000000000000177c42d6d761972d8cc821e7e92bac6173cab3bd1badd",
+      "timestamp": 1789312939,
+      "txCount": 5696
     }
   ],
   "news": [
+    {
+      "title": "Fed rate hike is about Wall Street, not inflation, says economist",
+      "link": "https://www.coindesk.com/markets/2026/09/13/fed-rate-hike-is-about-wall-street-not-inflation-says-economist",
+      "pubDate": "Sun, 13 Sep 2026 13:00:00 +0000"
+    },
+    {
+      "title": "Circle's $400M Tazapay deal buys emerging market links that take ‘years to build’",
+      "link": "https://www.coindesk.com/business/2026/09/13/circle-s-usd400m-tazapay-deal-buys-emerging-market-links-that-take-years-to-build",
+      "pubDate": "Sun, 13 Sep 2026 13:00:00 +0000"
+    },
+    {
+      "title": "Crypto's Clarity Act is a Schrödinger's cat in life-death limbo as U.S. Senate returns",
+      "link": "https://www.coindesk.com/news-analysis/2026/09/11/crypto-s-clarity-act-is-a-schroedinger-s-cat-in-life-death-limbo-as-u-s-senate-returns",
+      "pubDate": "Sun, 13 Sep 2026 12:00:00 +0000"
+    },
     {
       "title": "OpenAI IPO won't happen this year, says Sam Altman",
       "link": "https://www.coindesk.com/markets/2026/09/12/openai-ipo-won-t-happen-this-year-says-sam-altman",
@@ -470,21 +485,6 @@
       "title": "Robinhood CEO says companies shouldn't get veto over stock tokens in AMC feud",
       "link": "https://www.coindesk.com/markets/2026/09/11/robinhood-ceo-says-companies-shouldn-t-get-veto-over-stock-tokens-in-amc-feud",
       "pubDate": "Fri, 11 Sep 2026 23:47:51 +0000"
-    },
-    {
-      "title": "The legal drama of imprisoned Sam Bankman-Fried is waiting on its last act",
-      "link": "https://www.coindesk.com/news-analysis/2026/09/11/the-legal-drama-of-imprisoned-sam-bankman-fried-is-waiting-on-its-last-act",
-      "pubDate": "Fri, 11 Sep 2026 17:12:45 +0000"
-    },
-    {
-      "title": "With Fed rate hike all but assured, here's how markets might react",
-      "link": "https://www.coindesk.com/markets/2026/09/11/hotter-cpi-complicates-fed-hold-as-warsh-s-preferred-inflation-gauge-tells-different-story",
-      "pubDate": "Fri, 11 Sep 2026 15:45:56 +0000"
-    },
-    {
-      "title": "India's richest state is exploring tokenizing its own assets to fund new infrastructure",
-      "link": "https://www.coindesk.com/markets/2026/09/11/india-s-richest-state-is-exploring-tokenizing-its-own-assets-to-fund-new-infrastructure",
-      "pubDate": "Fri, 11 Sep 2026 15:17:08 +0000"
     }
   ]
 }
