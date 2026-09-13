@@ -1,13 +1,13 @@
 {
-  "fetchedAt": "2026-09-13T16:12:33.215Z",
+  "fetchedAt": "2026-09-13T20:44:47.732Z",
   "price": {
-    "usd": 77139,
-    "time": 1789315511
+    "usd": 77290,
+    "time": 1789332010
   },
   "moves": {
-    "d1": -0.15871684963295607,
-    "d7": -3.9715843979211574,
-    "d30": 22.473398517316202
+    "d1": 0.03672298956258757,
+    "d7": -3.783608267093508,
+    "d30": 22.713140841900593
   },
   "history90d": [
     {
@@ -372,60 +372,70 @@
     },
     {
       "date": "2026-09-13",
-      "close": 77140.40488174795
+      "close": 77275.35287111311
     }
   ],
   "blocks": [
     {
-      "height": 966844,
-      "id": "000000000000000000020cf91fe0d64930dfe0d1fa2a87b7528d1ec65093b154",
-      "timestamp": 1789315875,
-      "txCount": 5888
+      "height": 966870,
+      "id": "00000000000000000000afcaaed5a7fccb61c02d41eeacc46f425188ee1a4df5",
+      "timestamp": 1789331924,
+      "txCount": 4989
     },
     {
-      "height": 966843,
-      "id": "00000000000000000002023a93e0b23e47e3a3178ee86a4180f0b523d6c50633",
-      "timestamp": 1789315869,
-      "txCount": 3846
+      "height": 966869,
+      "id": "000000000000000000000624e18c904907a3ee5c3f606c0b4a7200857c247ae1",
+      "timestamp": 1789331148,
+      "txCount": 4912
     },
     {
-      "height": 966842,
-      "id": "00000000000000000000b4dce6ab97f7f636ba86d35bf21f3403ead53d1328a0",
-      "timestamp": 1789314733,
-      "txCount": 6267
+      "height": 966868,
+      "id": "00000000000000000000ca2218aa931735cfd63e61ab26656194e6be638d88ce",
+      "timestamp": 1789330501,
+      "txCount": 7270
     },
     {
-      "height": 966841,
-      "id": "00000000000000000001a09a24543195a3e521aa68b48fbffe6f9dcf22a99e12",
-      "timestamp": 1789314825,
-      "txCount": 5940
+      "height": 966867,
+      "id": "0000000000000000000018508acdf5cc208479bf43014462e9ba781759fbef05",
+      "timestamp": 1789330250,
+      "txCount": 4233
     },
     {
-      "height": 966840,
-      "id": "0000000000000000000065a85b63193f9b11c97996d839aff470aa9cb5be5a3b",
-      "timestamp": 1789314177,
-      "txCount": 5444
+      "height": 966866,
+      "id": "0000000000000000000182e28e7fd8a34e130cbe53fb655a01404dab16b355e5",
+      "timestamp": 1789329519,
+      "txCount": 5945
     },
     {
-      "height": 966839,
-      "id": "000000000000000000009e83e76c1b30ba98569d9966d5ddf01f2b1a29b27a86",
-      "timestamp": 1789313942,
-      "txCount": 1307
+      "height": 966865,
+      "id": "0000000000000000000174cb0e47af87b0a434044afa37b2ca0217e83a73f0ad",
+      "timestamp": 1789329090,
+      "txCount": 4130
     },
     {
-      "height": 966838,
-      "id": "000000000000000000011b6d8da7a7b2138eccae891902d273ae43e05f22b7dc",
-      "timestamp": 1789313526,
-      "txCount": 4336
+      "height": 966864,
+      "id": "00000000000000000000606dacf816f8fea5a82b503206dfab56e68d16a20ebb",
+      "timestamp": 1789328195,
+      "txCount": 3911
     },
     {
-      "height": 966837,
-      "id": "0000000000000000000177c42d6d761972d8cc821e7e92bac6173cab3bd1badd",
-      "timestamp": 1789312939,
-      "txCount": 5696
+      "height": 966863,
+      "id": "00000000000000000001b3b84c5338532bd5a41ee7d3a88ebe8972774c82762a",
+      "timestamp": 1789328071,
+      "txCount": 4099
     }
   ],
   "news": [
+    {
+      "title": "Is Clarity dead? A vibes-based analysis: State of Crypto",
+      "link": "https://www.coindesk.com/policy/2026/09/13/is-clarity-dead-a-vibes-based-analysis-state-of-crypto",
+      "pubDate": "Sun, 13 Sep 2026 18:45:08 +0000"
+    },
+    {
+      "title": "Quantum-proof blockchain: why math, not machines, holds the key",
+      "link": "https://www.coindesk.com/opinion/2026/09/13/quantum-proof-blockchain-why-math-not-machines-holds-the-key",
+      "pubDate": "Sun, 13 Sep 2026 17:00:00 +0000"
+    },
     {
       "title": "Fed rate hike is about Wall Street, not inflation, says economist",
       "link": "https://www.coindesk.com/markets/2026/09/13/fed-rate-hike-is-about-wall-street-not-inflation-says-economist",
@@ -475,16 +485,6 @@
       "title": "Staked ether should be seen as the benchmark of the decentralized economy",
       "link": "https://www.coindesk.com/opinion/2026/09/12/staked-ether-should-be-seen-as-the-benchmark-of-the-decentralized-economy",
       "pubDate": "Sat, 12 Sep 2026 14:00:00 +0000"
-    },
-    {
-      "title": "Bitcoin activity, passports exposed after Revolut falls for fake government request",
-      "link": "https://www.coindesk.com/tech/2026/09/12/bitcoin-activity-passports-exposed-after-revolut-falls-for-fake-government-request",
-      "pubDate": "Sat, 12 Sep 2026 10:11:01 +0000"
-    },
-    {
-      "title": "Robinhood CEO says companies shouldn't get veto over stock tokens in AMC feud",
-      "link": "https://www.coindesk.com/markets/2026/09/11/robinhood-ceo-says-companies-shouldn-t-get-veto-over-stock-tokens-in-amc-feud",
-      "pubDate": "Fri, 11 Sep 2026 23:47:51 +0000"
     }
   ]
 }
