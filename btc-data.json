@@ -1,13 +1,13 @@
 {
-  "fetchedAt": "2026-09-14T04:49:15.590Z",
+  "fetchedAt": "2026-09-14T12:37:59.760Z",
   "price": {
-    "usd": 77601,
-    "time": 1789361110
+    "usd": 77956,
+    "time": 1789389009
   },
   "moves": {
-    "d1": 1.017918190555167,
-    "d7": -1.8869627283735646,
-    "d30": 23.115515515780196
+    "d1": 1.4800431755121357,
+    "d7": -1.4381266536911852,
+    "d30": 23.67873001054317
   },
   "history90d": [
     {
@@ -372,60 +372,105 @@
     },
     {
       "date": "2026-09-14",
-      "close": 77630.16628700524
+      "close": 77844.37222023695
     }
   ],
   "blocks": [
     {
-      "height": 966916,
-      "id": "00000000000000000000e7b4c2df21160281d45e16cd73c39e40a2daa7e897b6",
-      "timestamp": 1789361019,
-      "txCount": 7017
+      "height": 966964,
+      "id": "0000000000000000000039a707dc637b17710542b77194b4bfa3e3d5537e1ad6",
+      "timestamp": 1789388488,
+      "txCount": 4252
     },
     {
-      "height": 966915,
-      "id": "000000000000000000003efc64625732aee9e78f94736e36a1694895f900a97e",
-      "timestamp": 1789360967,
-      "txCount": 5110
+      "height": 966963,
+      "id": "000000000000000000007ef193446359587b8a6cdfd2a50bf9d29ecc3b09c64a",
+      "timestamp": 1789387557,
+      "txCount": 5464
     },
     {
-      "height": 966914,
-      "id": "000000000000000000017d8f1356015c4dab6ea65655fa46b9bca2677bedf606",
-      "timestamp": 1789360641,
-      "txCount": 1101
+      "height": 966962,
+      "id": "00000000000000000000ec7c4ecaa60d2a3571a9c22124673ce014cb310e184f",
+      "timestamp": 1789387533,
+      "txCount": 2999
     },
     {
-      "height": 966913,
-      "id": "00000000000000000001f57f921f3f44efadeeb04ec5b7185ba0ac0dd70f912f",
-      "timestamp": 1789359730,
-      "txCount": 5970
+      "height": 966961,
+      "id": "000000000000000000005b463ae81cdffaa29265b4bca5e14f3662632d1abeda",
+      "timestamp": 1789387021,
+      "txCount": 5324
     },
     {
-      "height": 966912,
-      "id": "00000000000000000001fc87d8423972b9993bb413e83af9c2493bee2c138d57",
-      "timestamp": 1789359459,
-      "txCount": 6678
+      "height": 966960,
+      "id": "0000000000000000000074704f80d5675562c6cbb81849715dbae3eca3358560",
+      "timestamp": 1789386505,
+      "txCount": 3383
     },
     {
-      "height": 966911,
-      "id": "00000000000000000000aca2437e09ac5e15322ed1de6a9709d00c4d67ccc90d",
-      "timestamp": 1789359193,
-      "txCount": 6677
+      "height": 966959,
+      "id": "000000000000000000003b5807ddd161ca867345646e5c3e21d06014d845fe3f",
+      "timestamp": 1789386465,
+      "txCount": 5443
     },
     {
-      "height": 966910,
-      "id": "00000000000000000001038b4beb9c1313efa42fd5c3e17a36ee3a057355710c",
-      "timestamp": 1789359038,
-      "txCount": 3112
+      "height": 966958,
+      "id": "0000000000000000000099e7c5009113fc7003a27dbb9cc3615a795b44165b15",
+      "timestamp": 1789386376,
+      "txCount": 3669
     },
     {
-      "height": 966909,
-      "id": "000000000000000000019bfe71c8e803e981ff884af119f8abe80f62589a9d27",
-      "timestamp": 1789357932,
-      "txCount": 6551
+      "height": 966957,
+      "id": "00000000000000000000261da80d741722d3f4062ba0daef420892b75a316de7",
+      "timestamp": 1789385388,
+      "txCount": 2252
     }
   ],
   "news": [
+    {
+      "title": "Dogecoin ETFs struggled for buyers while rival XRP and Solana funds pulled in $3 billion",
+      "link": "https://www.coindesk.com/markets/2026/09/14/dogecoin-etfs-struggled-for-buyers-while-rival-xrp-and-solana-funds-pulled-in-usd3-billion",
+      "pubDate": "Mon, 14 Sep 2026 12:08:35 +0000"
+    },
+    {
+      "title": "Trump agrees to stricter ethics rules to save Clarity Act crypto bill: AP",
+      "link": "https://www.coindesk.com/policy/2026/09/14/trump-agrees-to-stricter-ethics-rules-to-save-clarity-act-crypto-bill-ap",
+      "pubDate": "Mon, 14 Sep 2026 12:07:19 +0000"
+    },
+    {
+      "title": "FCA considers exempting tokenized gold from fund rules to defend London market",
+      "link": "https://www.coindesk.com/business/2026/09/14/fca-considers-exempting-tokenized-gold-from-fund-rules-to-defend-london-market",
+      "pubDate": "Mon, 14 Sep 2026 11:58:28 +0000"
+    },
+    {
+      "title": "Live updates: Bitcoin manages small gains as stocks drop on AI concern, oil surges",
+      "link": "https://www.coindesk.com/tech/2026/09/14/live-updates-bitcoin-manages-small-gains-as-stocks-drop-on-ai-concern-oil-surges",
+      "pubDate": "Mon, 14 Sep 2026 11:44:21 +0000"
+    },
+    {
+      "title": "Crypto market outperforms as call for slower AI development weighs on tech stocks",
+      "link": "https://www.coindesk.com/daybook-us/2026/09/14/crypto-market-outperforms-as-call-for-slower-ai-development-weighs-on-tech-stocks",
+      "pubDate": "Mon, 14 Sep 2026 11:15:00 +0000"
+    },
+    {
+      "title": "Bitcoin climbs to $78,000 as crypto sits out the AI selloff",
+      "link": "https://www.coindesk.com/markets/2026/09/14/bitcoin-climbs-to-usd78-000-as-crypto-sits-out-the-ai-selloff",
+      "pubDate": "Mon, 14 Sep 2026 10:09:41 +0000"
+    },
+    {
+      "title": "TikTok developer ByteDance arranges $29.6 billion loan as it builds AI ambitions",
+      "link": "https://www.coindesk.com/business/2026/09/14/tiktok-developer-bytedance-arranges-usd29-6-billion-loan-as-it-builds-ai-ambitions",
+      "pubDate": "Mon, 14 Sep 2026 09:43:45 +0000"
+    },
+    {
+      "title": "Fed, BOE, BOJ interest-rate decisions: Crypto Week Ahead",
+      "link": "https://www.coindesk.com/markets/2026/09/14/fed-boe-boj-interest-rate-decisions-crypto-week-ahead",
+      "pubDate": "Mon, 14 Sep 2026 09:29:57 +0000"
+    },
+    {
+      "title": "Bitcoin bucks tech selloff as AI safety concerns weigh on stocks",
+      "link": "https://www.coindesk.com/markets/2026/09/14/bitcoin-bucks-tech-selloff-as-ai-safety-concerns-weigh-on-stocks",
+      "pubDate": "Mon, 14 Sep 2026 08:07:16 +0000"
+    },
     {
       "title": "Is Clarity dead? A vibes-based analysis: State of Crypto",
       "link": "https://www.coindesk.com/policy/2026/09/13/is-clarity-dead-a-vibes-based-analysis-state-of-crypto",
@@ -440,51 +485,6 @@
       "title": "Fed rate hike is about Wall Street, not inflation, says economist",
       "link": "https://www.coindesk.com/markets/2026/09/13/fed-rate-hike-is-about-wall-street-not-inflation-says-economist",
       "pubDate": "Sun, 13 Sep 2026 13:00:00 +0000"
-    },
-    {
-      "title": "Circle's $400M Tazapay deal buys emerging market links that take ‘years to build’",
-      "link": "https://www.coindesk.com/business/2026/09/13/circle-s-usd400m-tazapay-deal-buys-emerging-market-links-that-take-years-to-build",
-      "pubDate": "Sun, 13 Sep 2026 13:00:00 +0000"
-    },
-    {
-      "title": "Crypto's Clarity Act is a Schrödinger's cat in life-death limbo as U.S. Senate returns",
-      "link": "https://www.coindesk.com/news-analysis/2026/09/11/crypto-s-clarity-act-is-a-schroedinger-s-cat-in-life-death-limbo-as-u-s-senate-returns",
-      "pubDate": "Sun, 13 Sep 2026 12:00:00 +0000"
-    },
-    {
-      "title": "OpenAI IPO won't happen this year, says Sam Altman",
-      "link": "https://www.coindesk.com/markets/2026/09/12/openai-ipo-won-t-happen-this-year-says-sam-altman",
-      "pubDate": "Sat, 12 Sep 2026 21:09:31 +0000"
-    },
-    {
-      "title": "Bitcoin Suisse plans to cut up to half its Swiss jobs as it shifts work abroad",
-      "link": "https://www.coindesk.com/business/2026/09/12/bitcoin-suisse-plans-to-cut-up-to-half-its-swiss-jobs-as-it-shifts-work-abroad",
-      "pubDate": "Sat, 12 Sep 2026 21:09:06 +0000"
-    },
-    {
-      "title": "Nigel Farage’s Reform UK lands $97 million donations from two crypto billionaires in 24 hours",
-      "link": "https://www.coindesk.com/business/2026/09/12/nigel-farage-s-reform-uk-lands-usd97-million-donations-from-two-crypto-billionaires-in-24-hours",
-      "pubDate": "Sat, 12 Sep 2026 18:51:04 +0000"
-    },
-    {
-      "title": "Anthropic CEO calls for AI race to slow down citing safety. Musk and OpenAI's Altman agrees",
-      "link": "https://www.coindesk.com/tech/2026/09/12/anthropic-ceo-calls-for-ai-race-to-slow-down-musk-and-openai-s-altman-agrees",
-      "pubDate": "Sat, 12 Sep 2026 18:43:33 +0000"
-    },
-    {
-      "title": "Ripple stablecoin chief sees $13 trillion corporate treasury opportunity for RLUSD",
-      "link": "https://www.coindesk.com/business/2026/09/12/ripple-stablecoin-chief-sees-usd13-trillion-corporate-treasury-opportunity-for-rlusd",
-      "pubDate": "Sat, 12 Sep 2026 16:00:00 +0000"
-    },
-    {
-      "title": "Ditching bonds for bitcoin: How crypto can tackle the AI-heavy portfolio dilemma",
-      "link": "https://www.coindesk.com/business/2026/09/12/ditching-bonds-for-bitcoin-how-crypto-can-tackle-the-ai-heavy-portfolio-dilemma",
-      "pubDate": "Sat, 12 Sep 2026 16:00:00 +0000"
-    },
-    {
-      "title": "Staked ether should be seen as the benchmark of the decentralized economy",
-      "link": "https://www.coindesk.com/opinion/2026/09/12/staked-ether-should-be-seen-as-the-benchmark-of-the-decentralized-economy",
-      "pubDate": "Sat, 12 Sep 2026 14:00:00 +0000"
     }
   ]
 }
