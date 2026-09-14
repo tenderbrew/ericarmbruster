@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-09-13T13:01:51.662Z",
+  "fetchedAt": "2026-09-14T14:38:07.908Z",
   "profile": {
     "name": "tenderbrew",
     "profileUrl": "https://steamcommunity.com/id/tenderbrew/",
@@ -7,31 +7,38 @@
   },
   "stats": {
     "totalGames": 511,
-    "totalHours": 3566,
-    "playedCount": 239,
-    "neverPlayed": 272,
+    "totalHours": 3571,
+    "playedCount": 240,
+    "neverPlayed": 271,
     "playtimeBuckets": {
       "100h+": 8,
-      "50-100h": 8,
-      "10-50h": 42,
-      "1-10h": 104,
+      "50-100h": 9,
+      "10-50h": 41,
+      "1-10h": 105,
       "<1h": 77
     }
   },
   "recentlyPlayed": [
     {
-      "appid": 1245620,
-      "name": "ELDEN RING",
-      "hours_2weeks": 5.2,
-      "hours_total": 78,
-      "img_icon_url": "b6e290dd5a92ce98f89089a207733c70c41a1871"
-    },
-    {
       "appid": 529340,
       "name": "Victoria 3",
-      "hours_2weeks": 3.1,
-      "hours_total": 47.4,
+      "hours_2weeks": 6.2,
+      "hours_total": 50.5,
       "img_icon_url": "da7eddaef804905207eaf0ba9580b5026385f041"
+    },
+    {
+      "appid": 1328350,
+      "name": "Turbo Overkill",
+      "hours_2weeks": 2.2,
+      "hours_total": 2.2,
+      "img_icon_url": "44c9f7544a9a6d668b15a0473fe7fb575070bb09"
+    },
+    {
+      "appid": 1245620,
+      "name": "ELDEN RING",
+      "hours_2weeks": 1.2,
+      "hours_total": 78,
+      "img_icon_url": "b6e290dd5a92ce98f89089a207733c70c41a1871"
     }
   ],
   "topByPlaytime": [
