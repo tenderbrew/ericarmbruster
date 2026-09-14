@@ -1,13 +1,13 @@
 {
-  "fetchedAt": "2026-09-14T19:49:41.784Z",
+  "fetchedAt": "2026-09-14T23:50:57.145Z",
   "price": {
-    "usd": 79131,
-    "time": 1789415108
+    "usd": 78303,
+    "time": 1789429510
   },
   "moves": {
-    "d1": 3.0096117876937223,
-    "d7": 0.04745753715895695,
-    "d30": 25.54289066222344
+    "d1": 1.9317540763010843,
+    "d7": -0.9994051947762927,
+    "d30": 24.229252347677676
   },
   "history90d": [
     {
@@ -372,60 +372,80 @@
     },
     {
       "date": "2026-09-14",
-      "close": 79126.1839601853
+      "close": 78272.85098743888
     }
   ],
   "blocks": [
     {
-      "height": 967016,
-      "id": "0000000000000000000188ae61d1083a502b3b30c1b885ad33dbee20265bd51c",
-      "timestamp": 1789412935,
-      "txCount": 4077
+      "height": 967038,
+      "id": "000000000000000000009f1302fc733e4bcf194fa9be215a901b752a89b0ad5d",
+      "timestamp": 1789428753,
+      "txCount": 5006
     },
     {
-      "height": 967015,
-      "id": "000000000000000000010525842df04a2b976323498600daed94c6d1dae04ba4",
-      "timestamp": 1789412735,
-      "txCount": 4370
+      "height": 967037,
+      "id": "0000000000000000000222d370b9012a417203144137ba5013091b935d554e23",
+      "timestamp": 1789428204,
+      "txCount": 6366
     },
     {
-      "height": 967014,
-      "id": "000000000000000000022c5cefdba2a014c9dbcde0b9139d9a49bae3a73a9a2c",
-      "timestamp": 1789410842,
-      "txCount": 7116
+      "height": 967036,
+      "id": "00000000000000000001ccff1eaf963a57abbd2512beca3a89c5cf747be66718",
+      "timestamp": 1789428149,
+      "txCount": 4739
     },
     {
-      "height": 967013,
-      "id": "00000000000000000001d71ed1eea7516e7b15b25ffdde935e85e4130673bbcd",
-      "timestamp": 1789410869,
-      "txCount": 6460
+      "height": 967035,
+      "id": "00000000000000000001d12acfe457ddab205d34efb51b09a122a9451210a027",
+      "timestamp": 1789427962,
+      "txCount": 3220
     },
     {
-      "height": 967012,
-      "id": "00000000000000000001d2800b68642c937c290bc6fb4dcfd863512db15ab8a5",
-      "timestamp": 1789410675,
-      "txCount": 5096
+      "height": 967034,
+      "id": "000000000000000000013ad18afa1ee555812d59d0bae2cabae2cc0d524a9698",
+      "timestamp": 1789426843,
+      "txCount": 3408
     },
     {
-      "height": 967011,
-      "id": "000000000000000000016f7243a46fb80b9e850bf66476657cdee0ae5f5c6fdd",
-      "timestamp": 1789410336,
-      "txCount": 5708
+      "height": 967033,
+      "id": "000000000000000000007cc8af5b9fd1df7c648f4454afe115e090e6ad9ad3e1",
+      "timestamp": 1789425384,
+      "txCount": 4960
     },
     {
-      "height": 967010,
-      "id": "000000000000000000004ed7d1542baa9d7bddb7db28d8fa2ff6edb57311cfe2",
-      "timestamp": 1789410177,
-      "txCount": 5744
+      "height": 967032,
+      "id": "000000000000000000016b46ff3db8327c0853740a406a363d0c7712dbd894dc",
+      "timestamp": 1789424941,
+      "txCount": 5386
     },
     {
-      "height": 967009,
-      "id": "000000000000000000005fbda34cec438da494a8d1433ddf9dedae3177305ac2",
-      "timestamp": 1789410109,
-      "txCount": 7087
+      "height": 967031,
+      "id": "000000000000000000002d72f6c68073a83f508079422103a3cd0564620a7a45",
+      "timestamp": 1789424491,
+      "txCount": 5367
     }
   ],
   "news": [
+    {
+      "title": "Even if Clarity fails, Wall Street’s crypto push is unlikely to stop",
+      "link": "https://www.coindesk.com/policy/2026/09/14/even-if-clarity-fails-wall-street-s-crypto-push-is-unlikely-to-stop",
+      "pubDate": "Mon, 14 Sep 2026 23:43:28 +0000"
+    },
+    {
+      "title": "SEC's Atkins backs Clarity Act but says agency will keep pushing crypto rules without it",
+      "link": "https://www.coindesk.com/policy/2026/09/14/sec-s-atkins-backs-clarity-act-but-says-agency-will-keep-pushing-crypto-rules-without-it",
+      "pubDate": "Mon, 14 Sep 2026 23:30:40 +0000"
+    },
+    {
+      "title": "U.S. Senator Lummis says Democrats won't quit asking for more on crypto Clarity Act",
+      "link": "https://www.coindesk.com/policy/2026/09/14/u-s-senator-lummis-says-democrats-won-t-quit-asking-for-more-on-crypto-clarity-act",
+      "pubDate": "Mon, 14 Sep 2026 22:34:18 +0000"
+    },
+    {
+      "title": "Robinhood plans share redemptions, voting rights for stock tokens, after criticism",
+      "link": "https://www.coindesk.com/business/2026/09/14/robinhood-plans-share-redemptions-voting-rights-for-stock-tokens-after-criticism",
+      "pubDate": "Mon, 14 Sep 2026 21:05:13 +0000"
+    },
     {
       "title": "Trump's $800 million stake into World Liberty Financial's token now has a timeline to becoming sellable",
       "link": "https://www.coindesk.com/business/2026/09/14/trump-s-usd800-million-stake-into-world-liberty-financial-s-token-now-has-a-timeline-to-becoming-sellable",
@@ -465,26 +485,6 @@
       "title": "Here is the revised Clarity Act ethics provision Donald Trump has agreed to",
       "link": "https://www.coindesk.com/policy/2026/09/14/here-is-the-revised-clarity-act-ethics-provision-donald-trump-has-agreed-to",
       "pubDate": "Mon, 14 Sep 2026 14:27:48 +0000"
-    },
-    {
-      "title": "Kaiko extends Series B funding round to $110 million with S&P Global, BNP Paribas",
-      "link": "https://www.coindesk.com/business/2026/09/14/kaiko-extends-series-b-funding-round-to-usd110-million-with-s-and-p-global-bnp-paribas",
-      "pubDate": "Mon, 14 Sep 2026 14:06:28 +0000"
-    },
-    {
-      "title": "Bitmine adds $68 million in ether as Tom Lee sees more upside catalysts ahead",
-      "link": "https://www.coindesk.com/business/2026/09/14/bitmine-adds-usd68-million-in-ether-as-tom-lee-sees-more-upside-catalysts-ahead",
-      "pubDate": "Mon, 14 Sep 2026 12:58:42 +0000"
-    },
-    {
-      "title": "Dogecoin ETFs struggled for buyers while rival XRP and Solana funds pulled in $3 billion",
-      "link": "https://www.coindesk.com/markets/2026/09/14/dogecoin-etfs-struggled-for-buyers-while-rival-xrp-and-solana-funds-pulled-in-usd3-billion",
-      "pubDate": "Mon, 14 Sep 2026 12:08:35 +0000"
-    },
-    {
-      "title": "Trump agrees to stricter ethics rules to save Clarity Act crypto bill: AP",
-      "link": "https://www.coindesk.com/policy/2026/09/14/trump-agrees-to-stricter-ethics-rules-to-save-clarity-act-crypto-bill-ap",
-      "pubDate": "Mon, 14 Sep 2026 12:07:19 +0000"
     }
   ]
 }
