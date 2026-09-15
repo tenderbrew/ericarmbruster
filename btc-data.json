@@ -1,13 +1,13 @@
 {
-  "fetchedAt": "2026-09-15T04:48:49.148Z",
+  "fetchedAt": "2026-09-15T11:38:47.440Z",
   "price": {
-    "usd": 77626,
-    "time": 1789447508
+    "usd": 76901,
+    "time": 1789472110
   },
   "moves": {
-    "d1": -0.7001766872699933,
-    "d7": -1.051300346722206,
-    "d30": 23.522318782341678
+    "d1": -1.6276027030601825,
+    "d7": -1.975446988937779,
+    "d30": 22.368663034046055
   },
   "history90d": [
     {
@@ -372,62 +372,112 @@
     },
     {
       "date": "2026-09-15",
-      "close": 77596.60362894037
+      "close": 76911.61935894447
     }
   ],
   "blocks": [
     {
-      "height": 967079,
-      "id": "000000000000000000005633ad760fb2421abf6f210e09bc84434bfbc3262814",
-      "timestamp": 1789447080,
-      "txCount": 5764
+      "height": 967118,
+      "id": "0000000000000000000077daa3b846a63cf32ddde28261fc8ba5e612b7fa1f9e",
+      "timestamp": 1789470954,
+      "txCount": 7072
     },
     {
-      "height": 967078,
-      "id": "000000000000000000003c94baaf175c2fd364cd783796218ecc73edbf06a52a",
-      "timestamp": 1789446723,
-      "txCount": 7170
+      "height": 967117,
+      "id": "00000000000000000000002b55c74cc53c46984d00a8aee4151725605d9d4446",
+      "timestamp": 1789470955,
+      "txCount": 6672
     },
     {
-      "height": 967077,
-      "id": "00000000000000000001d38c407d75ef015f2f4f24ff6473bc06533d085204ec",
-      "timestamp": 1789446686,
-      "txCount": 5722
+      "height": 967116,
+      "id": "00000000000000000000920c92fc360710f9c1f549acd0bc9ed1732c500bf283",
+      "timestamp": 1789470804,
+      "txCount": 5693
     },
     {
-      "height": 967076,
-      "id": "000000000000000000017dbc36066ca1df5b23cc901dcd6cb9f0aa9f4188204a",
-      "timestamp": 1789446523,
-      "txCount": 3679
+      "height": 967115,
+      "id": "0000000000000000000158337c140c84ff288fbe4c852811969008ee6839c40b",
+      "timestamp": 1789470414,
+      "txCount": 2613
     },
     {
-      "height": 967075,
-      "id": "00000000000000000000dd687324997918f6ac7e24ef2dbfaf4d545b07fa55fc",
-      "timestamp": 1789445380,
-      "txCount": 6657
+      "height": 967114,
+      "id": "00000000000000000001aebffeb920c3b2608c1dc3851de19b295dec2398d93a",
+      "timestamp": 1789470062,
+      "txCount": 4259
     },
     {
-      "height": 967074,
-      "id": "000000000000000000000be3f9ff28a214201ec77dba92b9ae938a8ffa349d35",
-      "timestamp": 1789444930,
-      "txCount": 6346
+      "height": 967113,
+      "id": "000000000000000000020b13951b4c2dd71346e716a2fa6fde1d09bf245be961",
+      "timestamp": 1789469673,
+      "txCount": 4192
     },
     {
-      "height": 967073,
-      "id": "000000000000000000021a5dcf4c8f501f18da10a2f3b56e72c941600bda05a7",
-      "timestamp": 1789444706,
-      "txCount": 5027
+      "height": 967112,
+      "id": "0000000000000000000048774a2a3775212064fcc679acf42f7a26ce5057fef4",
+      "timestamp": 1789468456,
+      "txCount": 4228
     },
     {
-      "height": 967072,
-      "id": "000000000000000000012ddaf2a7f4d206f5902e05203fa2e0ab863012bf3c41",
-      "timestamp": 1789443994,
-      "txCount": 6828
+      "height": 967111,
+      "id": "00000000000000000001932bed4a91816bebac5907fb1feb4bce1e57e9f06482",
+      "timestamp": 1789467429,
+      "txCount": 5958
     }
   ],
   "news": [
     {
-      "title": "Solana transactions just got more than 3 times bigger, giving an edge over Ethereum",
+      "title": "Ether, solana, XRP likely to gain if Clarity Act progresses",
+      "link": "https://www.coindesk.com/daybook-us/2026/09/15/ether-solana-xrp-likely-to-gain-if-clarity-act-progresses",
+      "pubDate": "Tue, 15 Sep 2026 11:15:44 +0000"
+    },
+    {
+      "title": "Why banks should stop worrying and learn to love the Clarity Act",
+      "link": "https://www.coindesk.com/opinion/2026/09/15/why-banks-should-stop-worrying-and-learn-to-love-the-clarity-act",
+      "pubDate": "Tue, 15 Sep 2026 11:00:00 +0000"
+    },
+    {
+      "title": "Velocity extends Series A to $48M at $200M valuation with backing from Visa, Circle, and Ripple",
+      "link": "https://www.coindesk.com/business/2026/09/10/velocity-extends-series-a-to-usd48m-at-usd200m-valuation-with-backing-from-visa-circle-and-ripple",
+      "pubDate": "Tue, 15 Sep 2026 11:00:00 +0000"
+    },
+    {
+      "title": "Bitcoin gives back Monday's gain as Clarity Act odds fade on Polymarket",
+      "link": "https://www.coindesk.com/markets/2026/09/15/bitcoin-gives-back-monday-s-gain-as-clarity-act-odds-fade-on-polymarket",
+      "pubDate": "Tue, 15 Sep 2026 10:41:35 +0000"
+    },
+    {
+      "title": "How a simple coding mistake let a hacker drain $7.8 million from a crypto wallet",
+      "link": "https://www.coindesk.com/business/2026/09/15/how-a-simple-coding-mistake-let-a-hacker-drain-usd7-8-million-from-a-crypto-wallet",
+      "pubDate": "Tue, 15 Sep 2026 10:27:55 +0000"
+    },
+    {
+      "title": "Nigel Farage-backed Stack BTC eyes $16 million gold dealer deal to fund bitcoin buy",
+      "link": "https://www.coindesk.com/business/2026/09/15/nigel-farage-backed-stack-btc-eyes-usd16-million-gold-dealer-deal-to-fund-bitcoin-buy",
+      "pubDate": "Tue, 15 Sep 2026 10:06:40 +0000"
+    },
+    {
+      "title": "Hong Kong crypto exchange CoinEx to cease operations after 9 years in business",
+      "link": "https://www.coindesk.com/business/2026/09/15/hong-kong-crypto-exchange-coinex-to-cease-operations-after-9-years-in-business",
+      "pubDate": "Tue, 15 Sep 2026 09:30:58 +0000"
+    },
+    {
+      "title": "Live updates: Bitcoin slides to $77,000 as Senate votes on Clarity Act",
+      "link": "https://www.coindesk.com/business/2026/09/15/live-updates-bitcoin-slides-from-nearly-usd80-000-as-senate-votes-on-clarity-act",
+      "pubDate": "Tue, 15 Sep 2026 06:37:24 +0000"
+    },
+    {
+      "title": "XRP Ledger is one vote away from starting its next big payments upgrade",
+      "link": "https://www.coindesk.com/tech/2026/09/15/xrp-ledger-is-one-vote-away-from-starting-its-next-big-payments-upgrade",
+      "pubDate": "Tue, 15 Sep 2026 05:58:41 +0000"
+    },
+    {
+      "title": "U.S. DOJ seeks $61 million in what it calls Iran's crypto-laundered black market oil sales",
+      "link": "https://www.coindesk.com/markets/2026/09/15/u-s-doj-seeks-usd61-million-in-what-it-calls-crypto-laundered-iranian-oil-proceeds",
+      "pubDate": "Tue, 15 Sep 2026 05:12:06 +0000"
+    },
+    {
+      "title": "Solana transactions just got more than 3 times bigger, narrowing the gap with Ethereum",
       "link": "https://www.coindesk.com/tech/2026/09/15/solana-transactions-just-got-more-than-3-times-bigger-giving-an-edge-over-ethereum",
       "pubDate": "Tue, 15 Sep 2026 04:34:10 +0000"
     },
@@ -435,56 +485,6 @@
       "title": "Democrats send counteroffer to Republicans over Clarity Act provisions",
       "link": "https://www.coindesk.com/policy/2026/09/15/democrats-send-counteroffer-to-republicans-over-clarity-act-provisions",
       "pubDate": "Tue, 15 Sep 2026 04:09:01 +0000"
-    },
-    {
-      "title": "U.S. House panel shares crypto tax bill ahead of hearing later this week",
-      "link": "https://www.coindesk.com/policy/2026/09/14/u-s-house-panel-shares-crypto-tax-bill-ahead-of-hearing-later-this-week",
-      "pubDate": "Tue, 15 Sep 2026 03:27:38 +0000"
-    },
-    {
-      "title": "Bitcoin slips to $77,800 as Senate Clarity Act vote nears and oil prices climb",
-      "link": "https://www.coindesk.com/markets/2026/09/15/bitcoin-slips-to-usd77-800-as-senate-clarity-act-vote-nears-and-oil-prices-climb",
-      "pubDate": "Tue, 15 Sep 2026 03:23:28 +0000"
-    },
-    {
-      "title": "Even if Clarity fails, Wall Street’s crypto push is unlikely to stop",
-      "link": "https://www.coindesk.com/policy/2026/09/14/even-if-clarity-fails-wall-street-s-crypto-push-is-unlikely-to-stop",
-      "pubDate": "Mon, 14 Sep 2026 23:43:28 +0000"
-    },
-    {
-      "title": "SEC's Atkins backs Clarity Act but says agency will keep pushing crypto rules without it",
-      "link": "https://www.coindesk.com/policy/2026/09/14/sec-s-atkins-backs-clarity-act-but-says-agency-will-keep-pushing-crypto-rules-without-it",
-      "pubDate": "Mon, 14 Sep 2026 23:30:40 +0000"
-    },
-    {
-      "title": "U.S. Senator Lummis says Democrats won't quit asking for more on crypto Clarity Act",
-      "link": "https://www.coindesk.com/policy/2026/09/14/u-s-senator-lummis-says-democrats-won-t-quit-asking-for-more-on-crypto-clarity-act",
-      "pubDate": "Mon, 14 Sep 2026 22:34:18 +0000"
-    },
-    {
-      "title": "Robinhood plans share redemptions, voting rights for stock tokens, after criticism",
-      "link": "https://www.coindesk.com/business/2026/09/14/robinhood-plans-share-redemptions-voting-rights-for-stock-tokens-after-criticism",
-      "pubDate": "Mon, 14 Sep 2026 21:05:13 +0000"
-    },
-    {
-      "title": "Trump's $800 million stake into World Liberty Financial's token now has a timeline to becoming sellable",
-      "link": "https://www.coindesk.com/business/2026/09/14/trump-s-usd800-million-stake-into-world-liberty-financial-s-token-now-has-a-timeline-to-becoming-sellable",
-      "pubDate": "Mon, 14 Sep 2026 19:21:58 +0000"
-    },
-    {
-      "title": "White House crypto adviser says Trump gave up 'historic' ethics powers in compromise",
-      "link": "https://www.coindesk.com/policy/2026/09/14/white-house-crypto-adviser-says-trump-gave-up-historic-ethics-powers-in-compromise",
-      "pubDate": "Mon, 14 Sep 2026 18:34:09 +0000"
-    },
-    {
-      "title": "Banks escalate stablecoin rewards fight as Senate prepares for a Clarity Act vote",
-      "link": "https://www.coindesk.com/policy/2026/09/14/banks-escalate-stablecoin-rewards-fight-as-senate-prepares-for-a-clarity-act-vote",
-      "pubDate": "Mon, 14 Sep 2026 17:51:20 +0000"
-    },
-    {
-      "title": "A bipartisan coalition of 17 state attorneys generals urge Senate to reject Clarity Act",
-      "link": "https://www.coindesk.com/policy/2026/09/14/bipartisan-group-of-state-attorneys-general-oppose-clarity-act-over-federal-preemption-worry",
-      "pubDate": "Mon, 14 Sep 2026 15:57:01 +0000"
     }
   ]
 }
