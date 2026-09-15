@@ -1,19 +1,15 @@
 {
-  "fetchedAt": "2026-09-14T23:50:57.145Z",
+  "fetchedAt": "2026-09-15T04:48:49.148Z",
   "price": {
-    "usd": 78303,
-    "time": 1789429510
+    "usd": 77626,
+    "time": 1789447508
   },
   "moves": {
-    "d1": 1.9317540763010843,
-    "d7": -0.9994051947762927,
-    "d30": 24.229252347677676
+    "d1": -0.7001766872699933,
+    "d7": -1.051300346722206,
+    "d30": 23.522318782341678
   },
   "history90d": [
-    {
-      "date": "2026-06-17",
-      "close": 65619.28080038042
-    },
     {
       "date": "2026-06-18",
       "close": 64444.545329668814
@@ -371,61 +367,85 @@
       "close": 76819.04496746542
     },
     {
-      "date": "2026-09-14",
-      "close": 78272.85098743888
+      "date": "2026-09-15",
+      "close": 78173.35158344489
+    },
+    {
+      "date": "2026-09-15",
+      "close": 77596.60362894037
     }
   ],
   "blocks": [
     {
-      "height": 967038,
-      "id": "000000000000000000009f1302fc733e4bcf194fa9be215a901b752a89b0ad5d",
-      "timestamp": 1789428753,
-      "txCount": 5006
+      "height": 967079,
+      "id": "000000000000000000005633ad760fb2421abf6f210e09bc84434bfbc3262814",
+      "timestamp": 1789447080,
+      "txCount": 5764
     },
     {
-      "height": 967037,
-      "id": "0000000000000000000222d370b9012a417203144137ba5013091b935d554e23",
-      "timestamp": 1789428204,
-      "txCount": 6366
+      "height": 967078,
+      "id": "000000000000000000003c94baaf175c2fd364cd783796218ecc73edbf06a52a",
+      "timestamp": 1789446723,
+      "txCount": 7170
     },
     {
-      "height": 967036,
-      "id": "00000000000000000001ccff1eaf963a57abbd2512beca3a89c5cf747be66718",
-      "timestamp": 1789428149,
-      "txCount": 4739
+      "height": 967077,
+      "id": "00000000000000000001d38c407d75ef015f2f4f24ff6473bc06533d085204ec",
+      "timestamp": 1789446686,
+      "txCount": 5722
     },
     {
-      "height": 967035,
-      "id": "00000000000000000001d12acfe457ddab205d34efb51b09a122a9451210a027",
-      "timestamp": 1789427962,
-      "txCount": 3220
+      "height": 967076,
+      "id": "000000000000000000017dbc36066ca1df5b23cc901dcd6cb9f0aa9f4188204a",
+      "timestamp": 1789446523,
+      "txCount": 3679
     },
     {
-      "height": 967034,
-      "id": "000000000000000000013ad18afa1ee555812d59d0bae2cabae2cc0d524a9698",
-      "timestamp": 1789426843,
-      "txCount": 3408
+      "height": 967075,
+      "id": "00000000000000000000dd687324997918f6ac7e24ef2dbfaf4d545b07fa55fc",
+      "timestamp": 1789445380,
+      "txCount": 6657
     },
     {
-      "height": 967033,
-      "id": "000000000000000000007cc8af5b9fd1df7c648f4454afe115e090e6ad9ad3e1",
-      "timestamp": 1789425384,
-      "txCount": 4960
+      "height": 967074,
+      "id": "000000000000000000000be3f9ff28a214201ec77dba92b9ae938a8ffa349d35",
+      "timestamp": 1789444930,
+      "txCount": 6346
     },
     {
-      "height": 967032,
-      "id": "000000000000000000016b46ff3db8327c0853740a406a363d0c7712dbd894dc",
-      "timestamp": 1789424941,
-      "txCount": 5386
+      "height": 967073,
+      "id": "000000000000000000021a5dcf4c8f501f18da10a2f3b56e72c941600bda05a7",
+      "timestamp": 1789444706,
+      "txCount": 5027
     },
     {
-      "height": 967031,
-      "id": "000000000000000000002d72f6c68073a83f508079422103a3cd0564620a7a45",
-      "timestamp": 1789424491,
-      "txCount": 5367
+      "height": 967072,
+      "id": "000000000000000000012ddaf2a7f4d206f5902e05203fa2e0ab863012bf3c41",
+      "timestamp": 1789443994,
+      "txCount": 6828
     }
   ],
   "news": [
+    {
+      "title": "Solana transactions just got more than 3 times bigger, giving an edge over Ethereum",
+      "link": "https://www.coindesk.com/tech/2026/09/15/solana-transactions-just-got-more-than-3-times-bigger-giving-an-edge-over-ethereum",
+      "pubDate": "Tue, 15 Sep 2026 04:34:10 +0000"
+    },
+    {
+      "title": "Democrats send counteroffer to Republicans over Clarity Act provisions",
+      "link": "https://www.coindesk.com/policy/2026/09/15/democrats-send-counteroffer-to-republicans-over-clarity-act-provisions",
+      "pubDate": "Tue, 15 Sep 2026 04:09:01 +0000"
+    },
+    {
+      "title": "U.S. House panel shares crypto tax bill ahead of hearing later this week",
+      "link": "https://www.coindesk.com/policy/2026/09/14/u-s-house-panel-shares-crypto-tax-bill-ahead-of-hearing-later-this-week",
+      "pubDate": "Tue, 15 Sep 2026 03:27:38 +0000"
+    },
+    {
+      "title": "Bitcoin slips to $77,800 as Senate Clarity Act vote nears and oil prices climb",
+      "link": "https://www.coindesk.com/markets/2026/09/15/bitcoin-slips-to-usd77-800-as-senate-clarity-act-vote-nears-and-oil-prices-climb",
+      "pubDate": "Tue, 15 Sep 2026 03:23:28 +0000"
+    },
     {
       "title": "Even if Clarity fails, Wall Street’s crypto push is unlikely to stop",
       "link": "https://www.coindesk.com/policy/2026/09/14/even-if-clarity-fails-wall-street-s-crypto-push-is-unlikely-to-stop",
@@ -465,26 +485,6 @@
       "title": "A bipartisan coalition of 17 state attorneys generals urge Senate to reject Clarity Act",
       "link": "https://www.coindesk.com/policy/2026/09/14/bipartisan-group-of-state-attorneys-general-oppose-clarity-act-over-federal-preemption-worry",
       "pubDate": "Mon, 14 Sep 2026 15:57:01 +0000"
-    },
-    {
-      "title": "Clarity Act odds surge on prediction markets, but crypto bill still faces long road",
-      "link": "https://www.coindesk.com/policy/2026/09/14/clarity-act-odds-surge-on-prediction-markets-but-crypto-bill-still-faces-long-road",
-      "pubDate": "Mon, 14 Sep 2026 15:10:29 +0000"
-    },
-    {
-      "title": "Consensus heads to Hong Kong for third year with expanded focus on AI",
-      "link": "https://www.coindesk.com/business/2026/09/14/consensus-heads-to-hong-kong-for-third-straight-year-with-expanded-focus-on-ai",
-      "pubDate": "Mon, 14 Sep 2026 14:37:56 +0000"
-    },
-    {
-      "title": "Don’t let perfect be the enemy of Clarity",
-      "link": "https://www.coindesk.com/opinion/2026/09/14/don-t-let-perfect-be-the-enemy-of-clarity",
-      "pubDate": "Mon, 14 Sep 2026 14:34:56 +0000"
-    },
-    {
-      "title": "Here is the revised Clarity Act ethics provision Donald Trump has agreed to",
-      "link": "https://www.coindesk.com/policy/2026/09/14/here-is-the-revised-clarity-act-ethics-provision-donald-trump-has-agreed-to",
-      "pubDate": "Mon, 14 Sep 2026 14:27:48 +0000"
     }
   ]
 }
