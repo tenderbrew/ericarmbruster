@@ -1,13 +1,13 @@
 {
-  "fetchedAt": "2026-09-15T16:53:46.827Z",
+  "fetchedAt": "2026-09-15T21:16:24.865Z",
   "price": {
-    "usd": 76317,
-    "time": 1789490709
+    "usd": 75710,
+    "time": 1789506609
   },
   "moves": {
-    "d1": -2.3746603488829066,
-    "d7": -2.719863042805226,
-    "d30": 21.439373438177544
+    "d1": -3.1511397855513823,
+    "d7": -3.4935968522188166,
+    "d30": 20.473485108225198
   },
   "history90d": [
     {
@@ -372,60 +372,80 @@
     },
     {
       "date": "2026-09-15",
-      "close": 76393.2545063863
+      "close": 75882.12135400795
     }
   ],
   "blocks": [
     {
-      "height": 967158,
-      "id": "000000000000000000014b946c93998b0a8519abee8c2d2c0461bfbe97444a60",
-      "timestamp": 1789491114,
-      "txCount": 4319
+      "height": 967182,
+      "id": "00000000000000000000cac1ae35f14ee329a7d5cdc9efe4f19d39fd23185ea6",
+      "timestamp": 1789505219,
+      "txCount": 4156
     },
     {
-      "height": 967157,
-      "id": "00000000000000000001a468a5ddbe4627e58b3e43757a875daa76e41f85c040",
-      "timestamp": 1789490564,
-      "txCount": 7013
+      "height": 967181,
+      "id": "0000000000000000000040b120aa10121c4670e6a61c9b4a7c975ba40a5c8897",
+      "timestamp": 1789503776,
+      "txCount": 3938
     },
     {
-      "height": 967156,
-      "id": "00000000000000000001c6819d59b5b2a6a5fef1efadc016e304acc719c9d242",
-      "timestamp": 1789490521,
-      "txCount": 5435
+      "height": 967180,
+      "id": "000000000000000000008bf1e347b8ba809556a19abd18576f923485584f31be",
+      "timestamp": 1789503655,
+      "txCount": 4140
     },
     {
-      "height": 967155,
-      "id": "000000000000000000014c751ae2f601c4c00ffa3a9b5ebc8b0105126101a623",
-      "timestamp": 1789490227,
-      "txCount": 6639
+      "height": 967179,
+      "id": "000000000000000000014fdc088c13c150d642ddebe7ac8a5dc935cac1b081b4",
+      "timestamp": 1789502931,
+      "txCount": 3962
     },
     {
-      "height": 967154,
-      "id": "00000000000000000000505483f23d29ebec90846dea522d115a29116128930c",
-      "timestamp": 1789490049,
-      "txCount": 1769
+      "height": 967178,
+      "id": "0000000000000000000026e9514a29a56e738c7f2d393731a46c16e4aaeb5e2a",
+      "timestamp": 1789499424,
+      "txCount": 4455
     },
     {
-      "height": 967153,
-      "id": "00000000000000000002018a4c401dc29f0f597209916729bbae25c38f1e5394",
-      "timestamp": 1789489685,
-      "txCount": 6888
+      "height": 967177,
+      "id": "000000000000000000023369745919300be81d00ae033a0650a6e7f29e8a9d42",
+      "timestamp": 1789499229,
+      "txCount": 4192
     },
     {
-      "height": 967152,
-      "id": "00000000000000000000750cd11e441744de8a7890899a57d3b62f9c06d41583",
-      "timestamp": 1789489594,
-      "txCount": 6350
+      "height": 967176,
+      "id": "000000000000000000017468c51928ccd15dd9e05c11c21b7b0e2b72ffd464b8",
+      "timestamp": 1789497189,
+      "txCount": 4400
     },
     {
-      "height": 967151,
-      "id": "00000000000000000000bd76c238a2943846c8e539e226392bf4351e6b27ad47",
-      "timestamp": 1789489193,
-      "txCount": 5077
+      "height": 967175,
+      "id": "00000000000000000001497ba27e7b0687ce0d66900cd6c79a94edc12eb83f30",
+      "timestamp": 1789496993,
+      "txCount": 4337
     }
   ],
   "news": [
+    {
+      "title": "Crypto stocks sink after Senate rejects Clarity Act",
+      "link": "https://www.coindesk.com/markets/2026/09/15/crypto-stocks-sink-after-senate-rejects-clarity-act",
+      "pubDate": "Tue, 15 Sep 2026 20:03:17 +0000"
+    },
+    {
+      "title": "Crypto industry reacts after Clarity Act fails Senate vote",
+      "link": "https://www.coindesk.com/policy/2026/09/15/clarity-act-fails-in-senate-here-is-how-the-crypto-industry-is-reacting",
+      "pubDate": "Tue, 15 Sep 2026 19:06:31 +0000"
+    },
+    {
+      "title": "Crypto Clarity Act flames out in failed U.S. Senate vote",
+      "link": "https://www.coindesk.com/policy/2026/09/15/crypto-clarity-act-flames-out-in-failed-u-s-senate-vote",
+      "pubDate": "Tue, 15 Sep 2026 18:50:58 +0000"
+    },
+    {
+      "title": "Solana lender Kamino taps fintech veteran Michael Weisz as CEO for massive U.S. expansion",
+      "link": "https://www.coindesk.com/business/2026/09/15/solana-lender-kamino-taps-yieldstreet-co-founder-as-ceo-in-wall-street-expansion",
+      "pubDate": "Tue, 15 Sep 2026 18:02:05 +0000"
+    },
     {
       "title": "Crypto Clarity Act barrels toward disappointment barring last-minute Senate turnaround",
       "link": "https://www.coindesk.com/policy/2026/09/15/crypto-clarity-act-barrels-toward-disappointment-barring-last-minute-senate-turnaround",
@@ -465,26 +485,6 @@
       "title": "Why banks should stop worrying and learn to love the Clarity Act",
       "link": "https://www.coindesk.com/opinion/2026/09/15/why-banks-should-stop-worrying-and-learn-to-love-the-clarity-act",
       "pubDate": "Tue, 15 Sep 2026 11:00:00 +0000"
-    },
-    {
-      "title": "Velocity extends Series A to $48M at $200M valuation with backing from Visa, Circle, and Ripple",
-      "link": "https://www.coindesk.com/business/2026/09/10/velocity-extends-series-a-to-usd48m-at-usd200m-valuation-with-backing-from-visa-circle-and-ripple",
-      "pubDate": "Tue, 15 Sep 2026 11:00:00 +0000"
-    },
-    {
-      "title": "Bitcoin gives back Monday's gain as Clarity Act odds fade on Polymarket",
-      "link": "https://www.coindesk.com/markets/2026/09/15/bitcoin-gives-back-monday-s-gain-as-clarity-act-odds-fade-on-polymarket",
-      "pubDate": "Tue, 15 Sep 2026 10:41:35 +0000"
-    },
-    {
-      "title": "How a simple coding mistake let a hacker drain $7.8 million from a crypto wallet",
-      "link": "https://www.coindesk.com/business/2026/09/15/how-a-simple-coding-mistake-let-a-hacker-drain-usd7-8-million-from-a-crypto-wallet",
-      "pubDate": "Tue, 15 Sep 2026 10:27:55 +0000"
-    },
-    {
-      "title": "Nigel Farage-backed Stack BTC plans to acquire a gold dealer for $16 million to fund bitcoin buy",
-      "link": "https://www.coindesk.com/business/2026/09/15/nigel-farage-backed-stack-btc-eyes-usd16-million-gold-dealer-deal-to-fund-bitcoin-buy",
-      "pubDate": "Tue, 15 Sep 2026 10:06:40 +0000"
     }
   ]
 }
