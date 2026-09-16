@@ -1,13 +1,13 @@
 {
-  "fetchedAt": "2026-09-16T04:44:16.960Z",
+  "fetchedAt": "2026-09-16T11:25:49.844Z",
   "price": {
-    "usd": 75920,
-    "time": 1789533608
+    "usd": 75891,
+    "time": 1789557611
   },
   "moves": {
-    "d1": 0.4362405248050205,
-    "d7": -3.0186102299194717,
-    "d30": 17.721222385596413
+    "d1": 0.3978757859322668,
+    "d7": -3.055655281333225,
+    "d30": 17.676255111502858
   },
   "history90d": [
     {
@@ -372,119 +372,119 @@
     },
     {
       "date": "2026-09-16",
-      "close": 75958.35009103347
+      "close": 75880.91336796741
     }
   ],
   "blocks": [
     {
-      "height": 967228,
-      "id": "0000000000000000000199b24b4c75427978a40f77bc3179436db1a325e2a45a",
-      "timestamp": 1789533572,
-      "txCount": 5020
+      "height": 967273,
+      "id": "00000000000000000001aa2fb5e8de43f21b4194875f2e965907cd904ed76ce5",
+      "timestamp": 1789556844,
+      "txCount": 5408
     },
     {
-      "height": 967227,
-      "id": "00000000000000000001522db7cf84efb87094bd331fa79a0134560dd6daf9bd",
-      "timestamp": 1789532951,
-      "txCount": 6423
+      "height": 967272,
+      "id": "0000000000000000000141ef80a4daba1a8b79be80b1d52ed5ace899c54c056b",
+      "timestamp": 1789556623,
+      "txCount": 4408
     },
     {
-      "height": 967226,
-      "id": "00000000000000000000f0e96630633bfe3411676b3a260cbc113fd0535ce7b4",
-      "timestamp": 1789532657,
-      "txCount": 6791
+      "height": 967271,
+      "id": "00000000000000000000afac30800e6958ba62e1bdaa3a5654cfda907d136918",
+      "timestamp": 1789555959,
+      "txCount": 3976
     },
     {
-      "height": 967225,
-      "id": "0000000000000000000132c357320eefd2a1767181faf1be52e795e5a6d0d965",
-      "timestamp": 1789532475,
-      "txCount": 4135
+      "height": 967270,
+      "id": "00000000000000000000e6436fef108d8f93c95d2c99995e57dfdfa20f7a8ad2",
+      "timestamp": 1789554978,
+      "txCount": 4717
     },
     {
-      "height": 967224,
-      "id": "00000000000000000001d239fb21e5e509f28bf460eaa4be58f68a177fb71850",
-      "timestamp": 1789531889,
-      "txCount": 5833
+      "height": 967269,
+      "id": "00000000000000000000d5b2b1be0fcad0572d44cfd5a8011ea577c91e2ea77d",
+      "timestamp": 1789554613,
+      "txCount": 5670
     },
     {
-      "height": 967223,
-      "id": "00000000000000000000216556e5c78d061f5714d967584a40dc671aff8b5263",
-      "timestamp": 1789531146,
-      "txCount": 4461
+      "height": 967268,
+      "id": "00000000000000000001046146321ca51a37e3a1998301dc8941f851b319ca50",
+      "timestamp": 1789553896,
+      "txCount": 6679
     },
     {
-      "height": 967222,
-      "id": "00000000000000000000de26f2b3e8f746beec52d642274c6a85babf5c8a0b95",
-      "timestamp": 1789530032,
-      "txCount": 6234
+      "height": 967267,
+      "id": "000000000000000000007873ade7a26c97236366002e6c36bd6ee474d7701163",
+      "timestamp": 1789553905,
+      "txCount": 3306
     },
     {
-      "height": 967221,
-      "id": "000000000000000000015f37230f271c091d08ac083dc0aab78eb388f62a91a0",
-      "timestamp": 1789530010,
-      "txCount": 3470
+      "height": 967266,
+      "id": "00000000000000000000bfd969a01a3952693ef731d8125f8be18306ebcbaad0",
+      "timestamp": 1789553422,
+      "txCount": 4347
     }
   ],
   "news": [
     {
-      "title": "Crypto longs worth $570 million wiped out as Clarity Act fails",
-      "link": "https://www.coindesk.com/markets/2026/09/16/crypto-bulls-take-a-usd570-million-liquidation-hit-as-clarity-act-fails",
-      "pubDate": "Wed, 16 Sep 2026 04:07:27 +0000"
+      "title": "Bitcoin loses touch with the Dollar Index, U.S. stocks ahead of the Fed",
+      "link": "https://www.coindesk.com/daybook-us/2026/09/16/bitcoin-loses-touch-with-the-dollar-index-u-s-stocks-ahead-of-the-fed",
+      "pubDate": "Wed, 16 Sep 2026 11:16:51 +0000"
     },
     {
-      "title": "XRP sinks 10% as the Clarity Act fails and bitcoin slides toward $76,000",
-      "link": "https://www.coindesk.com/markets/2026/09/16/xrp-sinks-10-as-the-clarity-act-fails-and-bitcoin-slides-toward-usd76-000",
-      "pubDate": "Wed, 16 Sep 2026 03:37:45 +0000"
+      "title": "Bitcoin traders brace for Fed hike, but a surprise hold could pose bigger risk",
+      "link": "https://www.coindesk.com/markets/2026/09/15/bitcoin-traders-brace-for-fed-hike-but-a-surprise-hold-could-pose-bigger-risk",
+      "pubDate": "Wed, 16 Sep 2026 11:00:00 +0000"
     },
     {
-      "title": "Inside the last-minute political breakdown that doomed the Clarity Act vote",
-      "link": "https://www.coindesk.com/news-analysis/2026/09/15/there-were-many-conductors-in-the-derailment-of-the-crypto-industry-s-clarity-act",
-      "pubDate": "Tue, 15 Sep 2026 21:58:48 +0000"
+      "title": "Two Prime makes onchain finance push with $10 million-backed bitcoin yield vault",
+      "link": "https://www.coindesk.com/markets/2026/09/15/two-prime-makes-onchain-finance-push-with-usd10-million-backed-bitcoin-yield-vault",
+      "pubDate": "Wed, 16 Sep 2026 11:00:00 +0000"
     },
     {
-      "title": "Crypto stocks sink after Senate rejects Clarity Act",
-      "link": "https://www.coindesk.com/markets/2026/09/15/crypto-stocks-sink-after-senate-rejects-clarity-act",
-      "pubDate": "Tue, 15 Sep 2026 20:03:17 +0000"
+      "title": "Bitcoin ETFs shed $450 million as Clarity Act fails",
+      "link": "https://www.coindesk.com/markets/2026/09/16/bitcoin-etfs-shed-usd450-million-as-clarity-act-fails",
+      "pubDate": "Wed, 16 Sep 2026 10:48:44 +0000"
     },
     {
-      "title": "Crypto industry reacts after Clarity Act fails Senate vote",
-      "link": "https://www.coindesk.com/policy/2026/09/15/clarity-act-fails-in-senate-here-is-how-the-crypto-industry-is-reacting",
-      "pubDate": "Tue, 15 Sep 2026 19:06:31 +0000"
+      "title": "Deutsche Bank close to debuting crypto custody for institutions",
+      "link": "https://www.coindesk.com/business/2026/09/16/deutsche-bank-nears-crypto-custody-service-debut-for-institutional-clients",
+      "pubDate": "Wed, 16 Sep 2026 10:46:28 +0000"
     },
     {
-      "title": "Crypto Clarity Act flames out in failed U.S. Senate vote",
-      "link": "https://www.coindesk.com/policy/2026/09/15/crypto-clarity-act-flames-out-in-failed-u-s-senate-vote",
-      "pubDate": "Tue, 15 Sep 2026 18:50:58 +0000"
+      "title": "Live updates: Zcash climbs 6% as majors slide ahead of Fed rate decision",
+      "link": "https://www.coindesk.com/business/2026/09/16/live-updates-zcash-climbs-6-as-majors-slide-ahead-of-fed-rate-decision",
+      "pubDate": "Wed, 16 Sep 2026 10:37:46 +0000"
     },
     {
-      "title": "Solana lender Kamino taps fintech veteran Michael Weisz as CEO for massive U.S. expansion",
-      "link": "https://www.coindesk.com/business/2026/09/15/solana-lender-kamino-taps-yieldstreet-co-founder-as-ceo-in-wall-street-expansion",
-      "pubDate": "Tue, 15 Sep 2026 18:02:05 +0000"
+      "title": "Circle debuts Arc blockchain which Jeremy Allaire calls ‘more consequential’ than USDC",
+      "link": "https://www.coindesk.com/business/2026/09/15/circle-debuts-arc-blockchain-which-jeremy-allaire-calls-more-consequential-than-usdc",
+      "pubDate": "Wed, 16 Sep 2026 10:30:00 +0000"
     },
     {
-      "title": "Crypto Clarity Act barrels toward disappointment barring last-minute Senate turnaround",
-      "link": "https://www.coindesk.com/policy/2026/09/15/crypto-clarity-act-barrels-toward-disappointment-barring-last-minute-senate-turnaround",
-      "pubDate": "Tue, 15 Sep 2026 15:50:23 +0000"
+      "title": "Bitcoin's Coinbase premium sinks to one-month low, here’s why",
+      "link": "https://www.coindesk.com/markets/2026/09/16/bitcoin-s-coinbase-premium-sinks-to-one-month-low-here-s-why",
+      "pubDate": "Wed, 16 Sep 2026 09:57:12 +0000"
     },
     {
-      "title": "European Central Bank calls for merchants to participate in digital euro pilot",
-      "link": "https://www.coindesk.com/policy/2026/09/15/european-central-bank-calls-for-merchants-to-participate-in-digital-euro-pilot",
-      "pubDate": "Tue, 15 Sep 2026 14:15:06 +0000"
+      "title": "Two Robinhood engineers charged with insider trading using Hyperliquid perpetuals",
+      "link": "https://www.coindesk.com/business/2026/09/16/two-robinhood-engineers-charged-with-insider-trading-using-hyperliquid-perpetuals",
+      "pubDate": "Wed, 16 Sep 2026 09:42:37 +0000"
     },
     {
-      "title": "Clarity Act's odds of passing plunge as Republicans reject Democrats' counter-proposal",
-      "link": "https://www.coindesk.com/policy/2026/09/15/clarity-act-s-odds-of-passing-plunge-as-republicans-reject-democrats-counter-proposal",
-      "pubDate": "Tue, 15 Sep 2026 14:13:44 +0000"
+      "title": "Ethereum, Base give up on common wallet standard after months of talks",
+      "link": "https://www.coindesk.com/tech/2026/09/16/ethereum-base-give-up-on-common-wallet-standard-after-months-of-talks",
+      "pubDate": "Wed, 16 Sep 2026 08:07:59 +0000"
     },
     {
-      "title": "A hacker turned 25 cents of bitcoin into 46 billion fake BTC tokens on a DeFi bridge",
-      "link": "https://www.coindesk.com/tech/2026/09/15/a-hacker-turned-25-cents-of-bitcoin-into-46-billion-fake-btc-tokens-on-a-defi-bridge",
-      "pubDate": "Tue, 15 Sep 2026 13:43:50 +0000"
+      "title": "Fed meeting is shaping up to be a nightmare for Warsh. Bitcoin might still shine",
+      "link": "https://www.coindesk.com/markets/2026/09/16/fed-meeting-is-shaping-up-to-be-a-nightmare-for-warsh-bitcoin-might-still-shine",
+      "pubDate": "Wed, 16 Sep 2026 06:42:22 +0000"
     },
     {
-      "title": "Standard Chartered predicts Arbitrum's ARB to rise 70-fold to $10, citing Robinhood Chain revenue",
-      "link": "https://www.coindesk.com/markets/2026/09/15/standard-chartered-expects-arbitrum-s-arb-rising-70-fold-to-usd10-as-robinhood-boosts-its-revenue",
-      "pubDate": "Tue, 15 Sep 2026 13:25:52 +0000"
+      "title": "Zcash holders overwhelmingly back faster transactions and bitcoin-style halvings",
+      "link": "https://www.coindesk.com/tech/2026/09/16/zcash-holders-overwhelmingly-back-faster-transactions-and-bitcoin-style-halvings",
+      "pubDate": "Wed, 16 Sep 2026 05:54:04 +0000"
     }
   ]
 }
