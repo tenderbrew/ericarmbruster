@@ -1,13 +1,13 @@
 {
-  "fetchedAt": "2026-09-16T11:25:49.844Z",
+  "fetchedAt": "2026-09-16T16:48:39.231Z",
   "price": {
-    "usd": 75891,
-    "time": 1789557611
+    "usd": 75693,
+    "time": 1789576810
   },
   "moves": {
-    "d1": 0.3978757859322668,
-    "d7": -3.055655281333225,
-    "d30": 17.676255111502858
+    "d1": 0.1359372239734702,
+    "d7": -3.3085835633995586,
+    "d30": 17.369237171140007
   },
   "history90d": [
     {
@@ -372,60 +372,100 @@
     },
     {
       "date": "2026-09-16",
-      "close": 75880.91336796741
+      "close": 75689.16528226413
     }
   ],
   "blocks": [
     {
-      "height": 967273,
-      "id": "00000000000000000001aa2fb5e8de43f21b4194875f2e965907cd904ed76ce5",
-      "timestamp": 1789556844,
-      "txCount": 5408
+      "height": 967301,
+      "id": "00000000000000000001d2a2077af714074aa149f5ff9da49b3fe7bda5607720",
+      "timestamp": 1789576780,
+      "txCount": 3160
     },
     {
-      "height": 967272,
-      "id": "0000000000000000000141ef80a4daba1a8b79be80b1d52ed5ace899c54c056b",
-      "timestamp": 1789556623,
-      "txCount": 4408
+      "height": 967300,
+      "id": "000000000000000000019e06385b65b59ecd36e52d71385ce2ccdfb7e819b0d5",
+      "timestamp": 1789576569,
+      "txCount": 3836
     },
     {
-      "height": 967271,
-      "id": "00000000000000000000afac30800e6958ba62e1bdaa3a5654cfda907d136918",
-      "timestamp": 1789555959,
-      "txCount": 3976
+      "height": 967299,
+      "id": "0000000000000000000216434580ccc3f98f9642056b532d8bc0dcd27cde63e9",
+      "timestamp": 1789576272,
+      "txCount": 4332
     },
     {
-      "height": 967270,
-      "id": "00000000000000000000e6436fef108d8f93c95d2c99995e57dfdfa20f7a8ad2",
-      "timestamp": 1789554978,
-      "txCount": 4717
+      "height": 967298,
+      "id": "00000000000000000000ba934638aac0d2f5df98dc98c87bae94117c69dd0f56",
+      "timestamp": 1789574634,
+      "txCount": 3980
     },
     {
-      "height": 967269,
-      "id": "00000000000000000000d5b2b1be0fcad0572d44cfd5a8011ea577c91e2ea77d",
-      "timestamp": 1789554613,
-      "txCount": 5670
+      "height": 967297,
+      "id": "000000000000000000017a7811b6a7471d7348808b367912e851912b6194a1e6",
+      "timestamp": 1789574228,
+      "txCount": 4418
     },
     {
-      "height": 967268,
-      "id": "00000000000000000001046146321ca51a37e3a1998301dc8941f851b319ca50",
-      "timestamp": 1789553896,
-      "txCount": 6679
+      "height": 967296,
+      "id": "00000000000000000000e150d6694037e9896710592ffa449775ad18e974eab7",
+      "timestamp": 1789574260,
+      "txCount": 2493
     },
     {
-      "height": 967267,
-      "id": "000000000000000000007873ade7a26c97236366002e6c36bd6ee474d7701163",
-      "timestamp": 1789553905,
-      "txCount": 3306
+      "height": 967295,
+      "id": "0000000000000000000191a3cc3dda7e3d8f40cbdea3181eb7c5a0e2de06853a",
+      "timestamp": 1789571922,
+      "txCount": 4687
     },
     {
-      "height": 967266,
-      "id": "00000000000000000000bfd969a01a3952693ef731d8125f8be18306ebcbaad0",
-      "timestamp": 1789553422,
-      "txCount": 4347
+      "height": 967294,
+      "id": "00000000000000000000ddca966e80d945c7a9bbde01456872858cd922a9fb9f",
+      "timestamp": 1789571665,
+      "txCount": 3162
     }
   ],
   "news": [
+    {
+      "title": "U.S. House's tax committee advances crypto tax bill in wake of Clarity Act loss",
+      "link": "https://www.coindesk.com/policy/2026/09/16/u-s-house-s-tax-committee-advances-crypto-tax-bill-in-wake-of-clarity-act-loss",
+      "pubDate": "Wed, 16 Sep 2026 16:21:44 +0000"
+    },
+    {
+      "title": "Hamas’ military wing told donors to avoid Binance. Use Bybit, OKX and others instead",
+      "link": "https://www.coindesk.com/policy/2026/09/16/hamas-military-wing-told-donors-to-avoid-binance-use-bybit-okx-and-others-instead",
+      "pubDate": "Wed, 16 Sep 2026 15:25:41 +0000"
+    },
+    {
+      "title": "Crypto Long & Short: Six signs a crypto winter is ending",
+      "link": "https://www.coindesk.com/coindesk-indices/2026/09/15/crypto-long-and-short-six-signs-a-crypto-winter-is-ending",
+      "pubDate": "Wed, 16 Sep 2026 14:59:34 +0000"
+    },
+    {
+      "title": "Payward plans to offer U.S. clients onchain perpetual futures on Hyperliquid",
+      "link": "https://www.coindesk.com/markets/2026/09/16/payward-plans-to-offer-u-s-clients-onchain-perpetual-futures-on-hyperliquid",
+      "pubDate": "Wed, 16 Sep 2026 14:35:43 +0000"
+    },
+    {
+      "title": "Blockchain finance platform Theo launches tokenized silver backed by $40 million in active leases",
+      "link": "https://www.coindesk.com/business/2026/09/16/blockchain-finance-platform-theo-launches-tokenized-silver-backed-by-usd40-million-in-active-leases",
+      "pubDate": "Wed, 16 Sep 2026 14:00:00 +0000"
+    },
+    {
+      "title": "A LatAm telecom operator is putting part of its finances on Avalanche",
+      "link": "https://www.coindesk.com/business/2026/09/15/a-latam-telecom-operator-is-putting-part-of-its-finances-on-avalanche",
+      "pubDate": "Wed, 16 Sep 2026 14:00:00 +0000"
+    },
+    {
+      "title": "A stolen coin can be returned. A leaked identity cannot.",
+      "link": "https://www.coindesk.com/opinion/2026/09/16/a-stolen-coin-can-be-returned-a-leaked-identity-cannot",
+      "pubDate": "Wed, 16 Sep 2026 13:00:00 +0000"
+    },
+    {
+      "title": "Bitcoin Core 32 enters final testing with faster validation, fee changes and security fixes",
+      "link": "https://www.coindesk.com/tech/2026/09/16/bitcoin-core-32-enters-final-testing-with-faster-validation-fee-changes-and-security-fixes",
+      "pubDate": "Wed, 16 Sep 2026 12:00:41 +0000"
+    },
     {
       "title": "Bitcoin loses touch with the Dollar Index, U.S. stocks ahead of the Fed",
       "link": "https://www.coindesk.com/daybook-us/2026/09/16/bitcoin-loses-touch-with-the-dollar-index-u-s-stocks-ahead-of-the-fed",
@@ -445,46 +485,6 @@
       "title": "Bitcoin ETFs shed $450 million as Clarity Act fails",
       "link": "https://www.coindesk.com/markets/2026/09/16/bitcoin-etfs-shed-usd450-million-as-clarity-act-fails",
       "pubDate": "Wed, 16 Sep 2026 10:48:44 +0000"
-    },
-    {
-      "title": "Deutsche Bank close to debuting crypto custody for institutions",
-      "link": "https://www.coindesk.com/business/2026/09/16/deutsche-bank-nears-crypto-custody-service-debut-for-institutional-clients",
-      "pubDate": "Wed, 16 Sep 2026 10:46:28 +0000"
-    },
-    {
-      "title": "Live updates: Zcash climbs 6% as majors slide ahead of Fed rate decision",
-      "link": "https://www.coindesk.com/business/2026/09/16/live-updates-zcash-climbs-6-as-majors-slide-ahead-of-fed-rate-decision",
-      "pubDate": "Wed, 16 Sep 2026 10:37:46 +0000"
-    },
-    {
-      "title": "Circle debuts Arc blockchain which Jeremy Allaire calls ‘more consequential’ than USDC",
-      "link": "https://www.coindesk.com/business/2026/09/15/circle-debuts-arc-blockchain-which-jeremy-allaire-calls-more-consequential-than-usdc",
-      "pubDate": "Wed, 16 Sep 2026 10:30:00 +0000"
-    },
-    {
-      "title": "Bitcoin's Coinbase premium sinks to one-month low, here’s why",
-      "link": "https://www.coindesk.com/markets/2026/09/16/bitcoin-s-coinbase-premium-sinks-to-one-month-low-here-s-why",
-      "pubDate": "Wed, 16 Sep 2026 09:57:12 +0000"
-    },
-    {
-      "title": "Two Robinhood engineers charged with insider trading using Hyperliquid perpetuals",
-      "link": "https://www.coindesk.com/business/2026/09/16/two-robinhood-engineers-charged-with-insider-trading-using-hyperliquid-perpetuals",
-      "pubDate": "Wed, 16 Sep 2026 09:42:37 +0000"
-    },
-    {
-      "title": "Ethereum, Base give up on common wallet standard after months of talks",
-      "link": "https://www.coindesk.com/tech/2026/09/16/ethereum-base-give-up-on-common-wallet-standard-after-months-of-talks",
-      "pubDate": "Wed, 16 Sep 2026 08:07:59 +0000"
-    },
-    {
-      "title": "Fed meeting is shaping up to be a nightmare for Warsh. Bitcoin might still shine",
-      "link": "https://www.coindesk.com/markets/2026/09/16/fed-meeting-is-shaping-up-to-be-a-nightmare-for-warsh-bitcoin-might-still-shine",
-      "pubDate": "Wed, 16 Sep 2026 06:42:22 +0000"
-    },
-    {
-      "title": "Zcash holders overwhelmingly back faster transactions and bitcoin-style halvings",
-      "link": "https://www.coindesk.com/tech/2026/09/16/zcash-holders-overwhelmingly-back-faster-transactions-and-bitcoin-style-halvings",
-      "pubDate": "Wed, 16 Sep 2026 05:54:04 +0000"
     }
   ]
 }
