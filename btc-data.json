@@ -1,13 +1,13 @@
 {
-  "fetchedAt": "2026-09-16T16:48:39.231Z",
+  "fetchedAt": "2026-09-16T21:14:30.718Z",
   "price": {
-    "usd": 75693,
-    "time": 1789576810
+    "usd": 76087,
+    "time": 1789593010
   },
   "moves": {
-    "d1": 0.1359372239734702,
-    "d7": -3.3085835633995586,
-    "d30": 17.369237171140007
+    "d1": 0.6571685038308628,
+    "d7": -2.805281830398876,
+    "d30": 17.98017186054892
   },
   "history90d": [
     {
@@ -372,67 +372,82 @@
     },
     {
       "date": "2026-09-16",
-      "close": 75689.16528226413
+      "close": 76061.722982367
     }
   ],
   "blocks": [
     {
-      "height": 967301,
-      "id": "00000000000000000001d2a2077af714074aa149f5ff9da49b3fe7bda5607720",
-      "timestamp": 1789576780,
-      "txCount": 3160
+      "height": 967325,
+      "id": "00000000000000000001f76bd9e051d09ed068d9b997267998f3ddd0f6d9f597",
+      "timestamp": 1789592242,
+      "txCount": 6928
     },
     {
-      "height": 967300,
-      "id": "000000000000000000019e06385b65b59ecd36e52d71385ce2ccdfb7e819b0d5",
-      "timestamp": 1789576569,
-      "txCount": 3836
+      "height": 967324,
+      "id": "00000000000000000000e527502ec06e08f04d09b817d32688f565439c19e178",
+      "timestamp": 1789592213,
+      "txCount": 5486
     },
     {
-      "height": 967299,
-      "id": "0000000000000000000216434580ccc3f98f9642056b532d8bc0dcd27cde63e9",
-      "timestamp": 1789576272,
-      "txCount": 4332
+      "height": 967323,
+      "id": "000000000000000000004738cf4a253a9a77b994cc325cb633994830323006e8",
+      "timestamp": 1789592016,
+      "txCount": 3186
     },
     {
-      "height": 967298,
-      "id": "00000000000000000000ba934638aac0d2f5df98dc98c87bae94117c69dd0f56",
-      "timestamp": 1789574634,
-      "txCount": 3980
+      "height": 967322,
+      "id": "00000000000000000000148618b4821fb17dfb14d221d4ff4010a182a360694c",
+      "timestamp": 1789591933,
+      "txCount": 2757
     },
     {
-      "height": 967297,
-      "id": "000000000000000000017a7811b6a7471d7348808b367912e851912b6194a1e6",
-      "timestamp": 1789574228,
-      "txCount": 4418
+      "height": 967321,
+      "id": "0000000000000000000019cb0c1e107903be86db63c412828f66a1cabd1fe260",
+      "timestamp": 1789592071,
+      "txCount": 3747
     },
     {
-      "height": 967296,
-      "id": "00000000000000000000e150d6694037e9896710592ffa449775ad18e974eab7",
-      "timestamp": 1789574260,
-      "txCount": 2493
+      "height": 967320,
+      "id": "00000000000000000001e1be8e460639848ac785228417bb4bde7ced73778199",
+      "timestamp": 1789590675,
+      "txCount": 4036
     },
     {
-      "height": 967295,
-      "id": "0000000000000000000191a3cc3dda7e3d8f40cbdea3181eb7c5a0e2de06853a",
-      "timestamp": 1789571922,
-      "txCount": 4687
+      "height": 967319,
+      "id": "000000000000000000016c6692fc01d33d24eaaadfe041a4d7f5feeae25bd8db",
+      "timestamp": 1789590214,
+      "txCount": 4292
     },
     {
-      "height": 967294,
-      "id": "00000000000000000000ddca966e80d945c7a9bbde01456872858cd922a9fb9f",
-      "timestamp": 1789571665,
-      "txCount": 3162
+      "height": 967318,
+      "id": "000000000000000000005c6820892e6ff1e81a27671c64d64f53f67221ff1f05",
+      "timestamp": 1789589867,
+      "txCount": 3538
     }
   ],
   "news": [
+    {
+      "title": "Revolut hackers demand $3 million in Monero, threaten to sell customer data",
+      "link": "https://www.coindesk.com/markets/2026/09/16/revolut-hackers-demand-usd3-million-in-monero-threaten-to-sell-customer-data",
+      "pubDate": "Wed, 16 Sep 2026 19:07:34 +0000"
+    },
+    {
+      "title": "Fed raises rates by 25 basis points in first hike since July 2023",
+      "link": "https://www.coindesk.com/markets/2026/09/16/fed-raises-rates-by-25-basis-points-in-first-hike-since-july-2023",
+      "pubDate": "Wed, 16 Sep 2026 17:54:55 +0000"
+    },
+    {
+      "title": "Celsius sues BitMEX for $495 million over 2020 crash liquidations",
+      "link": "https://www.coindesk.com/business/2026/09/16/celsius-sues-bitmex-for-usd495-million-over-2020-crash-liquidations",
+      "pubDate": "Wed, 16 Sep 2026 17:34:04 +0000"
+    },
     {
       "title": "U.S. House's tax committee advances crypto tax bill in wake of Clarity Act loss",
       "link": "https://www.coindesk.com/policy/2026/09/16/u-s-house-s-tax-committee-advances-crypto-tax-bill-in-wake-of-clarity-act-loss",
       "pubDate": "Wed, 16 Sep 2026 16:21:44 +0000"
     },
     {
-      "title": "Hamas’ military wing told donors to avoid Binance. Use Bybit, OKX and others instead",
+      "title": "Hamas military wing told donors to avoid sending crypto directly from Binance, DOJ filing shows",
       "link": "https://www.coindesk.com/policy/2026/09/16/hamas-military-wing-told-donors-to-avoid-binance-use-bybit-okx-and-others-instead",
       "pubDate": "Wed, 16 Sep 2026 15:25:41 +0000"
     },
@@ -470,21 +485,6 @@
       "title": "Bitcoin loses touch with the Dollar Index, U.S. stocks ahead of the Fed",
       "link": "https://www.coindesk.com/daybook-us/2026/09/16/bitcoin-loses-touch-with-the-dollar-index-u-s-stocks-ahead-of-the-fed",
       "pubDate": "Wed, 16 Sep 2026 11:16:51 +0000"
-    },
-    {
-      "title": "Bitcoin traders brace for Fed hike, but a surprise hold could pose bigger risk",
-      "link": "https://www.coindesk.com/markets/2026/09/15/bitcoin-traders-brace-for-fed-hike-but-a-surprise-hold-could-pose-bigger-risk",
-      "pubDate": "Wed, 16 Sep 2026 11:00:00 +0000"
-    },
-    {
-      "title": "Two Prime makes onchain finance push with $10 million-backed bitcoin yield vault",
-      "link": "https://www.coindesk.com/markets/2026/09/15/two-prime-makes-onchain-finance-push-with-usd10-million-backed-bitcoin-yield-vault",
-      "pubDate": "Wed, 16 Sep 2026 11:00:00 +0000"
-    },
-    {
-      "title": "Bitcoin ETFs shed $450 million as Clarity Act fails",
-      "link": "https://www.coindesk.com/markets/2026/09/16/bitcoin-etfs-shed-usd450-million-as-clarity-act-fails",
-      "pubDate": "Wed, 16 Sep 2026 10:48:44 +0000"
     }
   ]
 }
