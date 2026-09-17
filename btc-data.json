@@ -1,13 +1,13 @@
 {
-  "fetchedAt": "2026-09-17T04:47:17.705Z",
+  "fetchedAt": "2026-09-17T11:35:16.963Z",
   "price": {
-    "usd": 76297,
-    "time": 1789620308
+    "usd": 76321,
+    "time": 1789644608
   },
   "moves": {
-    "d1": 0.19723429975724294,
-    "d7": -0.33699522529243575,
-    "d30": 17.9493180849696
+    "d1": 0.22875236237036578,
+    "d7": -0.30564521002849343,
+    "d30": 17.98642024670647
   },
   "history90d": [
     {
@@ -372,62 +372,97 @@
     },
     {
       "date": "2026-09-17",
-      "close": 76306.83072446036
+      "close": 76263.65510851881
     }
   ],
   "blocks": [
     {
-      "height": 967370,
-      "id": "00000000000000000001dae43cdca9297aebf9f987607cf884dbe80d5cf72780",
-      "timestamp": 1789620302,
-      "txCount": 6407
+      "height": 967403,
+      "id": "000000000000000000012b8288e030163ec348c913529588512cfa71e5d79d1c",
+      "timestamp": 1789644680,
+      "txCount": 6034
     },
     {
-      "height": 967369,
-      "id": "00000000000000000001ef00702fefbbc9c995b849c9c9d4d79fbfbf0ece44e2",
-      "timestamp": 1789620287,
-      "txCount": 5868
+      "height": 967402,
+      "id": "0000000000000000000116f462b4352a89c6ad14a7228108fe40dbc0cf8694ca",
+      "timestamp": 1789644239,
+      "txCount": 6344
     },
     {
-      "height": 967368,
-      "id": "000000000000000000018686906034bf0b3a8a0f7f0122794733f307d71911a5",
-      "timestamp": 1789620104,
-      "txCount": 6954
+      "height": 967401,
+      "id": "00000000000000000000d4f571b057ddca53955fd7877d6fb3547f076ebaf3e3",
+      "timestamp": 1789643968,
+      "txCount": 4982
     },
     {
-      "height": 967367,
-      "id": "00000000000000000001c8d42930093b2b23ddfa43fc90d7c9c6232e5b1997a3",
-      "timestamp": 1789620035,
-      "txCount": 5011
+      "height": 967400,
+      "id": "00000000000000000000aaae90eee51b4cda39a8dd1ee5d44911ff363ce8d164",
+      "timestamp": 1789643785,
+      "txCount": 6793
     },
     {
-      "height": 967366,
-      "id": "000000000000000000007b0e0b1accc73464fe3f60ea5a4c6cd7a8ab1109c2a3",
-      "timestamp": 1789619454,
-      "txCount": 3833
+      "height": 967399,
+      "id": "00000000000000000000485c8d4bc0cacd5615dadc92ab295642b982f9b72982",
+      "timestamp": 1789643361,
+      "txCount": 5588
     },
     {
-      "height": 967365,
-      "id": "00000000000000000001c59b2830074bdc720eb258a39c4d77c363631b51e00c",
-      "timestamp": 1789618537,
-      "txCount": 20
+      "height": 967398,
+      "id": "00000000000000000000821c79baf20e90937f1c816b48a86871b66006fc70fa",
+      "timestamp": 1789643296,
+      "txCount": 5094
     },
     {
-      "height": 967364,
-      "id": "000000000000000000007a6e92dfc09beb86d8f54f3d11c1b432c81bc54aa58a",
-      "timestamp": 1789618296,
-      "txCount": 4067
+      "height": 967397,
+      "id": "00000000000000000002260ebdc1d4355c5d5e3db4dec86190494f50485cf941",
+      "timestamp": 1789643130,
+      "txCount": 4553
     },
     {
-      "height": 967363,
-      "id": "000000000000000000015b51eee284c382dbd29b794fa1b88effccd8ae665efd",
-      "timestamp": 1789617497,
-      "txCount": 5301
+      "height": 967396,
+      "id": "0000000000000000000012fa801d92f160a732ba8310507c24b4b75cf8298bf4",
+      "timestamp": 1789641854,
+      "txCount": 3171
     }
   ],
   "news": [
     {
-      "title": "Goldman pivots, now forecasts Fed hike in October",
+      "title": "Optimism creeps back into crypto, with the 2022 test still to come",
+      "link": "https://www.coindesk.com/daybook-us/2026/09/17/optimism-creeps-back-into-crypto-with-the-2022-test-still-to-come",
+      "pubDate": "Thu, 17 Sep 2026 11:19:09 +0000"
+    },
+    {
+      "title": "Live updates: Zcash jumps 17% as $345 million of liquidations hit crypto traders",
+      "link": "https://www.coindesk.com/tech/2026/09/17/live-updates-zcash-jumps-17-as-usd345-million-of-liquidations-hit-crypto-traders",
+      "pubDate": "Thu, 17 Sep 2026 10:41:15 +0000"
+    },
+    {
+      "title": "Crypto rallies through the Fed's first rate increase since 2023",
+      "link": "https://www.coindesk.com/markets/2026/09/17/crypto-rallies-through-the-fed-s-first-rate-increase-since-2023",
+      "pubDate": "Thu, 17 Sep 2026 10:40:01 +0000"
+    },
+    {
+      "title": "Bitcoin faces 2022 parallels as Federal Reserve resumes rate increases",
+      "link": "https://www.coindesk.com/markets/2026/09/17/bitcoin-faces-2022-parallels-as-federal-reserve-resumes-rate-hikes",
+      "pubDate": "Thu, 17 Sep 2026 08:41:48 +0000"
+    },
+    {
+      "title": "Ripple adds XRP payments to Stripe and Tempo’s AI standard in new developer kit",
+      "link": "https://www.coindesk.com/tech/2026/09/17/ripple-adds-xrp-payments-to-stripe-and-tempo-s-ai-standard-in-new-developer-kit",
+      "pubDate": "Thu, 17 Sep 2026 07:54:33 +0000"
+    },
+    {
+      "title": "U.S. diesel prices hit record high as bitcoin and gold struggle",
+      "link": "https://www.coindesk.com/markets/2026/09/17/u-s-diesel-prices-hit-record-high-as-bitcoin-and-gold-struggle",
+      "pubDate": "Thu, 17 Sep 2026 07:27:07 +0000"
+    },
+    {
+      "title": "Zcash jumps 23% as bitcoin and major tokens rise despite Fed’s first hike since 2023",
+      "link": "https://www.coindesk.com/markets/2026/09/17/zcash-jumps-23-as-bitcoin-and-major-tokens-rise-despite-fed-s-first-hike-since-2023",
+      "pubDate": "Thu, 17 Sep 2026 04:47:27 +0000"
+    },
+    {
+      "title": "Goldman pivots, now forecasts Fed rate hike in October",
       "link": "https://www.coindesk.com/markets/2026/09/17/goldman-expects-another-fed-rate-hike-in-october",
       "pubDate": "Thu, 17 Sep 2026 04:17:55 +0000"
     },
@@ -450,41 +485,6 @@
       "title": "U.S. House's tax committee advances crypto tax bill in wake of Clarity Act loss",
       "link": "https://www.coindesk.com/policy/2026/09/16/u-s-house-s-tax-committee-advances-crypto-tax-bill-in-wake-of-clarity-act-loss",
       "pubDate": "Wed, 16 Sep 2026 16:21:44 +0000"
-    },
-    {
-      "title": "Hamas military wing told donors to avoid sending crypto directly from Binance, DOJ filing shows",
-      "link": "https://www.coindesk.com/policy/2026/09/16/hamas-military-wing-told-donors-to-avoid-binance-use-bybit-okx-and-others-instead",
-      "pubDate": "Wed, 16 Sep 2026 15:25:41 +0000"
-    },
-    {
-      "title": "Crypto Long & Short: Six signs a crypto winter is ending",
-      "link": "https://www.coindesk.com/coindesk-indices/2026/09/15/crypto-long-and-short-six-signs-a-crypto-winter-is-ending",
-      "pubDate": "Wed, 16 Sep 2026 14:59:34 +0000"
-    },
-    {
-      "title": "Payward plans to offer U.S. clients onchain perpetual futures on Hyperliquid",
-      "link": "https://www.coindesk.com/markets/2026/09/16/payward-plans-to-offer-u-s-clients-onchain-perpetual-futures-on-hyperliquid",
-      "pubDate": "Wed, 16 Sep 2026 14:35:43 +0000"
-    },
-    {
-      "title": "Blockchain finance platform Theo launches tokenized silver backed by $40 million in active leases",
-      "link": "https://www.coindesk.com/business/2026/09/16/blockchain-finance-platform-theo-launches-tokenized-silver-backed-by-usd40-million-in-active-leases",
-      "pubDate": "Wed, 16 Sep 2026 14:00:00 +0000"
-    },
-    {
-      "title": "A LatAm telecom operator is putting part of its finances on Avalanche",
-      "link": "https://www.coindesk.com/business/2026/09/15/a-latam-telecom-operator-is-putting-part-of-its-finances-on-avalanche",
-      "pubDate": "Wed, 16 Sep 2026 14:00:00 +0000"
-    },
-    {
-      "title": "A stolen coin can be returned. A leaked identity cannot.",
-      "link": "https://www.coindesk.com/opinion/2026/09/16/a-stolen-coin-can-be-returned-a-leaked-identity-cannot",
-      "pubDate": "Wed, 16 Sep 2026 13:00:00 +0000"
-    },
-    {
-      "title": "Bitcoin Core 32 enters final testing with faster validation, fee changes and security fixes",
-      "link": "https://www.coindesk.com/tech/2026/09/16/bitcoin-core-32-enters-final-testing-with-faster-validation-fee-changes-and-security-fixes",
-      "pubDate": "Wed, 16 Sep 2026 12:00:41 +0000"
     }
   ]
 }
