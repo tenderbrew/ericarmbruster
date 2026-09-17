@@ -1,13 +1,13 @@
 {
-  "fetchedAt": "2026-09-17T11:35:16.963Z",
+  "fetchedAt": "2026-09-17T16:55:36.893Z",
   "price": {
-    "usd": 76321,
-    "time": 1789644608
+    "usd": 76603,
+    "time": 1789664108
   },
   "moves": {
-    "d1": 0.22875236237036578,
-    "d7": -0.30564521002849343,
-    "d30": 17.98642024670647
+    "d1": 0.5990895980746869,
+    "d7": 0.06271746932282607,
+    "d30": 18.422370647114896
   },
   "history90d": [
     {
@@ -372,67 +372,112 @@
     },
     {
       "date": "2026-09-17",
-      "close": 76263.65510851881
+      "close": 76626.49854118565
     }
   ],
   "blocks": [
     {
-      "height": 967403,
-      "id": "000000000000000000012b8288e030163ec348c913529588512cfa71e5d79d1c",
-      "timestamp": 1789644680,
-      "txCount": 6034
+      "height": 967440,
+      "id": "000000000000000000006525687406a9da055e50a594ef63b76620f72f3c9969",
+      "timestamp": 1789662940,
+      "txCount": 26
     },
     {
-      "height": 967402,
-      "id": "0000000000000000000116f462b4352a89c6ad14a7228108fe40dbc0cf8694ca",
-      "timestamp": 1789644239,
-      "txCount": 6344
+      "height": 967439,
+      "id": "000000000000000000015540f33c514b90fb40358a20dd5b825ec6e6a4ee610a",
+      "timestamp": 1789662809,
+      "txCount": 7111
     },
     {
-      "height": 967401,
-      "id": "00000000000000000000d4f571b057ddca53955fd7877d6fb3547f076ebaf3e3",
-      "timestamp": 1789643968,
-      "txCount": 4982
+      "height": 967438,
+      "id": "000000000000000000023404feaa752ebcb595418fbab89c4a3e3e02f3329603",
+      "timestamp": 1789662780,
+      "txCount": 6237
     },
     {
-      "height": 967400,
-      "id": "00000000000000000000aaae90eee51b4cda39a8dd1ee5d44911ff363ce8d164",
-      "timestamp": 1789643785,
-      "txCount": 6793
+      "height": 967437,
+      "id": "0000000000000000000224b402c8d0c70bb1f9d917a23af3d65b5cb8bbe34e96",
+      "timestamp": 1789662759,
+      "txCount": 4211
     },
     {
-      "height": 967399,
-      "id": "00000000000000000000485c8d4bc0cacd5615dadc92ab295642b982f9b72982",
-      "timestamp": 1789643361,
-      "txCount": 5588
+      "height": 967436,
+      "id": "00000000000000000000d1d85ec240f2dbcf8f98d44f9d6973cfe7135a3988fc",
+      "timestamp": 1789661876,
+      "txCount": 6896
     },
     {
-      "height": 967398,
-      "id": "00000000000000000000821c79baf20e90937f1c816b48a86871b66006fc70fa",
-      "timestamp": 1789643296,
-      "txCount": 5094
+      "height": 967435,
+      "id": "0000000000000000000138be512ede4ba0bd0eac77a7247952a11d9386dd6531",
+      "timestamp": 1789661833,
+      "txCount": 5772
     },
     {
-      "height": 967397,
-      "id": "00000000000000000002260ebdc1d4355c5d5e3db4dec86190494f50485cf941",
-      "timestamp": 1789643130,
-      "txCount": 4553
+      "height": 967434,
+      "id": "00000000000000000000a8383fc27a9f4fb3a16ecc4a3210d7fece798d2d6d7f",
+      "timestamp": 1789661527,
+      "txCount": 3685
     },
     {
-      "height": 967396,
-      "id": "0000000000000000000012fa801d92f160a732ba8310507c24b4b75cf8298bf4",
-      "timestamp": 1789641854,
-      "txCount": 3171
+      "height": 967433,
+      "id": "00000000000000000001a452167ce01abcdc9a04bf6839dc75111f40c76606a9",
+      "timestamp": 1789661061,
+      "txCount": 4172
     }
   ],
   "news": [
+    {
+      "title": "UK signals end of 'light-touch' era with multi-agency raid on peer-to-peer crypto hubs",
+      "link": "https://www.coindesk.com/policy/2026/09/17/uk-signals-end-of-light-touch-era-with-multi-agency-raid-on-peer-to-peer-crypto-hubs",
+      "pubDate": "Thu, 17 Sep 2026 15:08:24 +0000"
+    },
+    {
+      "title": "U.S. SEC begins prepping for around-the-clock trading that crypto treats as the norm",
+      "link": "https://www.coindesk.com/policy/2026/09/17/u-s-sec-begins-prepping-for-round-the-clock-trading-that-crypto-treats-as-the-norm",
+      "pubDate": "Thu, 17 Sep 2026 15:03:19 +0000"
+    },
+    {
+      "title": "Crypto for Advisors: Beyond bitcoin and ether",
+      "link": "https://www.coindesk.com/coindesk-indices/2026/09/17/crypto-for-advisors-beyond-bitcoin-and-ether",
+      "pubDate": "Thu, 17 Sep 2026 14:57:11 +0000"
+    },
+    {
+      "title": "Clarity Act failure may hamper U.S. crypto as industry seeks legal clarity elsewhere",
+      "link": "https://www.coindesk.com/policy/2026/09/17/crypto-industry-leaders-debate-who-the-winners-and-losers-of-the-clarity-act-vote-failure-are",
+      "pubDate": "Thu, 17 Sep 2026 14:50:58 +0000"
+    },
+    {
+      "title": "Ratings giant S&P Global acquires OpenZeppelin in tokenized finance risk push",
+      "link": "https://www.coindesk.com/business/2026/09/17/ratings-giant-s-and-p-global-acquires-openzeppelin-in-tokenized-finance-risk-push",
+      "pubDate": "Thu, 17 Sep 2026 13:15:21 +0000"
+    },
+    {
+      "title": "SEC rolls out long-awaited 'innovation exemption' for tokenized securities venues",
+      "link": "https://www.coindesk.com/policy/2026/09/17/sec-rolls-out-long-awaited-innovation-exemption-for-tokenized-securities-venues",
+      "pubDate": "Thu, 17 Sep 2026 13:00:00 +0000"
+    },
+    {
+      "title": "Ethereum’s upcoming Glamsterdam upgrade clears rehearsal for a big jump in capacity",
+      "link": "https://www.coindesk.com/tech/2026/09/17/ethereum-s-upcoming-glamsterdam-upgrade-clears-rehearsal-for-a-big-jump-in-capacity",
+      "pubDate": "Thu, 17 Sep 2026 12:37:21 +0000"
+    },
+    {
+      "title": "Zcash miner Fortitude names former Hut 8 chief Jaime Leverton CEO ahead of Nasdaq deal",
+      "link": "https://www.coindesk.com/business/2026/09/17/zcash-miner-fortitude-names-former-hut-8-chief-jaime-leverton-ceo-ahead-of-nasdaq-deal",
+      "pubDate": "Thu, 17 Sep 2026 12:00:00 +0000"
+    },
+    {
+      "title": "How Circle’s institutional Arc blockchain got taken over by memecoins on day one",
+      "link": "https://www.coindesk.com/business/2026/09/17/circle-launched-a-corporate-l2-backed-by-blackrock-but-traders-immediately-turned-it-into-a-memecoin-casino",
+      "pubDate": "Thu, 17 Sep 2026 11:42:22 +0000"
+    },
     {
       "title": "Optimism creeps back into crypto, with the 2022 test still to come",
       "link": "https://www.coindesk.com/daybook-us/2026/09/17/optimism-creeps-back-into-crypto-with-the-2022-test-still-to-come",
       "pubDate": "Thu, 17 Sep 2026 11:19:09 +0000"
     },
     {
-      "title": "Live updates: Zcash jumps 17% as $345 million of liquidations hit crypto traders",
+      "title": "Live updates: Bitcoin continues near $76,000 as stocks surge following Fed rate hike",
       "link": "https://www.coindesk.com/tech/2026/09/17/live-updates-zcash-jumps-17-as-usd345-million-of-liquidations-hit-crypto-traders",
       "pubDate": "Thu, 17 Sep 2026 10:41:15 +0000"
     },
@@ -440,51 +485,6 @@
       "title": "Crypto rallies through the Fed's first rate increase since 2023",
       "link": "https://www.coindesk.com/markets/2026/09/17/crypto-rallies-through-the-fed-s-first-rate-increase-since-2023",
       "pubDate": "Thu, 17 Sep 2026 10:40:01 +0000"
-    },
-    {
-      "title": "Bitcoin faces 2022 parallels as Federal Reserve resumes rate increases",
-      "link": "https://www.coindesk.com/markets/2026/09/17/bitcoin-faces-2022-parallels-as-federal-reserve-resumes-rate-hikes",
-      "pubDate": "Thu, 17 Sep 2026 08:41:48 +0000"
-    },
-    {
-      "title": "Ripple adds XRP payments to Stripe and Tempo’s AI standard in new developer kit",
-      "link": "https://www.coindesk.com/tech/2026/09/17/ripple-adds-xrp-payments-to-stripe-and-tempo-s-ai-standard-in-new-developer-kit",
-      "pubDate": "Thu, 17 Sep 2026 07:54:33 +0000"
-    },
-    {
-      "title": "U.S. diesel prices hit record high as bitcoin and gold struggle",
-      "link": "https://www.coindesk.com/markets/2026/09/17/u-s-diesel-prices-hit-record-high-as-bitcoin-and-gold-struggle",
-      "pubDate": "Thu, 17 Sep 2026 07:27:07 +0000"
-    },
-    {
-      "title": "Zcash jumps 23% as bitcoin and major tokens rise despite Fed’s first hike since 2023",
-      "link": "https://www.coindesk.com/markets/2026/09/17/zcash-jumps-23-as-bitcoin-and-major-tokens-rise-despite-fed-s-first-hike-since-2023",
-      "pubDate": "Thu, 17 Sep 2026 04:47:27 +0000"
-    },
-    {
-      "title": "Goldman pivots, now forecasts Fed rate hike in October",
-      "link": "https://www.coindesk.com/markets/2026/09/17/goldman-expects-another-fed-rate-hike-in-october",
-      "pubDate": "Thu, 17 Sep 2026 04:17:55 +0000"
-    },
-    {
-      "title": "Revolut hackers demand $3 million in Monero, threaten to sell customer data",
-      "link": "https://www.coindesk.com/markets/2026/09/16/revolut-hackers-demand-usd3-million-in-monero-threaten-to-sell-customer-data",
-      "pubDate": "Wed, 16 Sep 2026 19:07:34 +0000"
-    },
-    {
-      "title": "Fed raises rates by 25 basis points in first hike since July 2023",
-      "link": "https://www.coindesk.com/markets/2026/09/16/fed-raises-rates-by-25-basis-points-in-first-hike-since-july-2023",
-      "pubDate": "Wed, 16 Sep 2026 17:54:55 +0000"
-    },
-    {
-      "title": "Celsius sues BitMEX for $495 million over 2020 crash liquidations",
-      "link": "https://www.coindesk.com/business/2026/09/16/celsius-sues-bitmex-for-usd495-million-over-2020-crash-liquidations",
-      "pubDate": "Wed, 16 Sep 2026 17:34:04 +0000"
-    },
-    {
-      "title": "U.S. House's tax committee advances crypto tax bill in wake of Clarity Act loss",
-      "link": "https://www.coindesk.com/policy/2026/09/16/u-s-house-s-tax-committee-advances-crypto-tax-bill-in-wake-of-clarity-act-loss",
-      "pubDate": "Wed, 16 Sep 2026 16:21:44 +0000"
     }
   ]
 }
