@@ -1,13 +1,13 @@
 {
-  "fetchedAt": "2026-09-17T16:55:36.893Z",
+  "fetchedAt": "2026-09-17T21:18:11.029Z",
   "price": {
-    "usd": 76603,
-    "time": 1789664108
+    "usd": 76446,
+    "time": 1789679707
   },
   "moves": {
-    "d1": 0.5990895980746869,
-    "d7": 0.06271746932282607,
-    "d30": 18.422370647114896
+    "d1": 0.3929089384804296,
+    "d7": -0.14236388052879523,
+    "d30": 18.17966067241943
   },
   "history90d": [
     {
@@ -372,60 +372,70 @@
     },
     {
       "date": "2026-09-17",
-      "close": 76626.49854118565
+      "close": 76451.83913441759
     }
   ],
   "blocks": [
     {
-      "height": 967440,
-      "id": "000000000000000000006525687406a9da055e50a594ef63b76620f72f3c9969",
-      "timestamp": 1789662940,
-      "txCount": 26
+      "height": 967468,
+      "id": "00000000000000000001603b2967735d38ba22a672a27138f0ad59b45301349f",
+      "timestamp": 1789678741,
+      "txCount": 6254
     },
     {
-      "height": 967439,
-      "id": "000000000000000000015540f33c514b90fb40358a20dd5b825ec6e6a4ee610a",
-      "timestamp": 1789662809,
-      "txCount": 7111
+      "height": 967467,
+      "id": "000000000000000000003580958154d7b14ef2051919ab793c88943823559fea",
+      "timestamp": 1789678813,
+      "txCount": 3491
     },
     {
-      "height": 967438,
-      "id": "000000000000000000023404feaa752ebcb595418fbab89c4a3e3e02f3329603",
-      "timestamp": 1789662780,
-      "txCount": 6237
+      "height": 967466,
+      "id": "00000000000000000000c4847260451e2e97039921dde7db78cb812490cbd2ab",
+      "timestamp": 1789677748,
+      "txCount": 3980
     },
     {
-      "height": 967437,
-      "id": "0000000000000000000224b402c8d0c70bb1f9d917a23af3d65b5cb8bbe34e96",
-      "timestamp": 1789662759,
-      "txCount": 4211
+      "height": 967465,
+      "id": "0000000000000000000191f5ef0e3aae26f4fba2a48a28a6e085596bd85eefd7",
+      "timestamp": 1789676935,
+      "txCount": 6235
     },
     {
-      "height": 967436,
-      "id": "00000000000000000000d1d85ec240f2dbcf8f98d44f9d6973cfe7135a3988fc",
-      "timestamp": 1789661876,
-      "txCount": 6896
+      "height": 967464,
+      "id": "000000000000000000002df81aca0d942605ff584cd709e47dcdadb5605b05d4",
+      "timestamp": 1789676540,
+      "txCount": 6014
     },
     {
-      "height": 967435,
-      "id": "0000000000000000000138be512ede4ba0bd0eac77a7247952a11d9386dd6531",
-      "timestamp": 1789661833,
-      "txCount": 5772
+      "height": 967463,
+      "id": "0000000000000000000217023a0d680ede8c1b437bcee055ba8bd220179c43b6",
+      "timestamp": 1789676763,
+      "txCount": 5173
     },
     {
-      "height": 967434,
-      "id": "00000000000000000000a8383fc27a9f4fb3a16ecc4a3210d7fece798d2d6d7f",
-      "timestamp": 1789661527,
-      "txCount": 3685
+      "height": 967462,
+      "id": "0000000000000000000176643e3053078e7338d7d381c870f8182dd9c2ae2bdb",
+      "timestamp": 1789675489,
+      "txCount": 5327
     },
     {
-      "height": 967433,
-      "id": "00000000000000000001a452167ce01abcdc9a04bf6839dc75111f40c76606a9",
-      "timestamp": 1789661061,
-      "txCount": 4172
+      "height": 967461,
+      "id": "000000000000000000011b2f3a70979187efd5a174b72d3086c6703c9a0460df",
+      "timestamp": 1789675579,
+      "txCount": 5686
     }
   ],
   "news": [
+    {
+      "title": "Kevin O’Leary says Congress will revisit Clarity early next year as crypto tax bill advances",
+      "link": "https://www.coindesk.com/policy/2026/09/17/kevin-o-leary-says-congress-will-revisit-clarity-by-second-quarter-as-crypto-tax-bill-advances",
+      "pubDate": "Thu, 17 Sep 2026 18:40:38 +0000"
+    },
+    {
+      "title": "SEC opens door to tokenized U.S. stock trading. Here’s who could benefit",
+      "link": "https://www.coindesk.com/business/2026/09/17/sec-opens-door-to-tokenized-u-s-stock-trading-here-s-who-could-benefit",
+      "pubDate": "Thu, 17 Sep 2026 18:38:10 +0000"
+    },
     {
       "title": "UK signals end of 'light-touch' era with multi-agency raid on peer-to-peer crypto hubs",
       "link": "https://www.coindesk.com/policy/2026/09/17/uk-signals-end-of-light-touch-era-with-multi-agency-raid-on-peer-to-peer-crypto-hubs",
@@ -475,16 +485,6 @@
       "title": "Optimism creeps back into crypto, with the 2022 test still to come",
       "link": "https://www.coindesk.com/daybook-us/2026/09/17/optimism-creeps-back-into-crypto-with-the-2022-test-still-to-come",
       "pubDate": "Thu, 17 Sep 2026 11:19:09 +0000"
-    },
-    {
-      "title": "Live updates: Bitcoin continues near $76,000 as stocks surge following Fed rate hike",
-      "link": "https://www.coindesk.com/tech/2026/09/17/live-updates-zcash-jumps-17-as-usd345-million-of-liquidations-hit-crypto-traders",
-      "pubDate": "Thu, 17 Sep 2026 10:41:15 +0000"
-    },
-    {
-      "title": "Crypto rallies through the Fed's first rate increase since 2023",
-      "link": "https://www.coindesk.com/markets/2026/09/17/crypto-rallies-through-the-fed-s-first-rate-increase-since-2023",
-      "pubDate": "Thu, 17 Sep 2026 10:40:01 +0000"
     }
   ]
 }
