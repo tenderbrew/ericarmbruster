@@ -1,13 +1,13 @@
 {
-  "fetchedAt": "2026-09-18T16:20:39.689Z",
+  "fetchedAt": "2026-09-18T20:51:20.158Z",
   "price": {
-    "usd": 80913,
-    "time": 1789748109
+    "usd": 81061,
+    "time": 1789764646
   },
   "moves": {
-    "d1": 5.9467818530182015,
-    "d7": 4.804787214035855,
-    "d30": 16.772723471821706
+    "d1": 6.140571771995962,
+    "d7": 4.996488281944322,
+    "d30": 16.98631539245039
   },
   "history90d": [
     {
@@ -372,57 +372,57 @@
     },
     {
       "date": "2026-09-18",
-      "close": 80949.83889266309
+      "close": 81127.63495700974
     }
   ],
   "blocks": [
     {
-      "height": 967576,
-      "id": "00000000000000000001b641219f30d1452def241c647e43f016b7c6fccf8b45",
-      "timestamp": 1789747572,
-      "txCount": 3968
+      "height": 967610,
+      "id": "00000000000000000002206296fa331b4fba3dac92f222b40a2939550d35254a",
+      "timestamp": 1789764046,
+      "txCount": 5640
     },
     {
-      "height": 967575,
-      "id": "00000000000000000000490acb9a7cf92e1d61a8c0a631fbf703fdd02ea04135",
-      "timestamp": 1789747395,
-      "txCount": 4301
+      "height": 967609,
+      "id": "000000000000000000021ab7a9acf2f0850deab3e4193f286a75f6ec1005b22f",
+      "timestamp": 1789763945,
+      "txCount": 3119
     },
     {
-      "height": 967574,
-      "id": "0000000000000000000042b3d5f03f46e9e23c8bc83b93b3d287aee761412c18",
-      "timestamp": 1789746429,
-      "txCount": 3966
+      "height": 967608,
+      "id": "00000000000000000001884b1fc67f9c2fdfd042880f632729c82dfe6978cd15",
+      "timestamp": 1789763273,
+      "txCount": 6796
     },
     {
-      "height": 967573,
-      "id": "000000000000000000008b273f3f07a82fb508095f2c442adf2e3f8eb0cdf9d9",
-      "timestamp": 1789745639,
-      "txCount": 4547
+      "height": 967607,
+      "id": "000000000000000000012ee2344d67218a156616bd49a02837ad2d6c399f30c0",
+      "timestamp": 1789763120,
+      "txCount": 6727
     },
     {
-      "height": 967572,
-      "id": "0000000000000000000147e0fbba9aebb67cb4e28be8e79049d16869ac1a58e1",
-      "timestamp": 1789745386,
-      "txCount": 4282
+      "height": 967606,
+      "id": "00000000000000000000a609c7995e3ae4c4f3ab8adf30ff262afd5bb35579b0",
+      "timestamp": 1789763117,
+      "txCount": 4408
     },
     {
-      "height": 967571,
-      "id": "00000000000000000000e32d9a295b892cdf1dcbdeb52461fb0f5e32cefa8364",
-      "timestamp": 1789745278,
-      "txCount": 3562
+      "height": 967605,
+      "id": "00000000000000000001070e8f6330dc8591227eb5d8b824ec814b0415c6b1ec",
+      "timestamp": 1789762334,
+      "txCount": 6979
     },
     {
-      "height": 967570,
-      "id": "0000000000000000000041f0d01cae7a233d270b7c8ce681a8035c4b871a1731",
-      "timestamp": 1789745099,
-      "txCount": 3987
+      "height": 967604,
+      "id": "0000000000000000000096aaa979f764ea5a81c20e40930195716f0dc25b4ae8",
+      "timestamp": 1789762253,
+      "txCount": 3596
     },
     {
-      "height": 967569,
-      "id": "000000000000000000011ba4271a8fcd9a6d78fac43572255842898dc39723aa",
-      "timestamp": 1789744390,
-      "txCount": 2997
+      "height": 967603,
+      "id": "000000000000000000015efb1464885788e97381ddac8e425d5a562128834f15",
+      "timestamp": 1789761743,
+      "txCount": 6389
     }
   ],
   "news": [
@@ -467,7 +467,7 @@
       "pubDate": "Fri, 18 Sep 2026 10:07:33 +0000"
     },
     {
-      "title": "Live updates: Bitcoin climbs over $80,000 as rally accelerates at U.S. market open",
+      "title": "Live updates: Bitcoin climbs over $80,000 as crypto shakes off Clarity failure and higher interest rates",
       "link": "https://www.coindesk.com/tech/2026/09/18/live-updates-hype-leads-altcoin-rally-as-bitcoin-recovers-toward-usd78-000",
       "pubDate": "Fri, 18 Sep 2026 09:49:51 +0000"
     },
