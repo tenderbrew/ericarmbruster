@@ -1,19 +1,15 @@
 {
-  "fetchedAt": "2026-09-17T21:18:11.029Z",
+  "fetchedAt": "2026-09-18T04:36:58.429Z",
   "price": {
-    "usd": 76446,
-    "time": 1789679707
+    "usd": 77201,
+    "time": 1789705808
   },
   "moves": {
-    "d1": 0.3929089384804296,
-    "d7": -0.14236388052879523,
-    "d30": 18.17966067241943
+    "d1": 1.086321182441119,
+    "d7": -0.003282813506078064,
+    "d30": 11.415607192269572
   },
   "history90d": [
-    {
-      "date": "2026-06-20",
-      "close": 63489.81094752525
-    },
     {
       "date": "2026-06-21",
       "close": 64253.39869532133
@@ -371,61 +367,80 @@
       "close": 76146.81236783884
     },
     {
-      "date": "2026-09-17",
-      "close": 76451.83913441759
+      "date": "2026-09-18",
+      "close": 76371.3617203135
+    },
+    {
+      "date": "2026-09-18",
+      "close": 77157.09995363864
     }
   ],
   "blocks": [
     {
-      "height": 967468,
-      "id": "00000000000000000001603b2967735d38ba22a672a27138f0ad59b45301349f",
-      "timestamp": 1789678741,
-      "txCount": 6254
+      "height": 967503,
+      "id": "0000000000000000000157b2c37ade166897ca6f712a74a8e7487bd2c818e604",
+      "timestamp": 1789705949,
+      "txCount": 1
     },
     {
-      "height": 967467,
-      "id": "000000000000000000003580958154d7b14ef2051919ab793c88943823559fea",
-      "timestamp": 1789678813,
-      "txCount": 3491
+      "height": 967502,
+      "id": "000000000000000000019123a0f116cb3fbcf9fe7e96c3aa5e5936876450cbdb",
+      "timestamp": 1789705940,
+      "txCount": 6485
     },
     {
-      "height": 967466,
-      "id": "00000000000000000000c4847260451e2e97039921dde7db78cb812490cbd2ab",
-      "timestamp": 1789677748,
-      "txCount": 3980
+      "height": 967501,
+      "id": "000000000000000000002e36ba7b1296402c868c4196645539a113d3d1acd4d4",
+      "timestamp": 1789705917,
+      "txCount": 6890
     },
     {
-      "height": 967465,
-      "id": "0000000000000000000191f5ef0e3aae26f4fba2a48a28a6e085596bd85eefd7",
-      "timestamp": 1789676935,
-      "txCount": 6235
+      "height": 967500,
+      "id": "000000000000000000019f04f7441caa0da455ec510a9c06463d080ca34116d3",
+      "timestamp": 1789705855,
+      "txCount": 5147
     },
     {
-      "height": 967464,
-      "id": "000000000000000000002df81aca0d942605ff584cd709e47dcdadb5605b05d4",
-      "timestamp": 1789676540,
-      "txCount": 6014
+      "height": 967499,
+      "id": "00000000000000000000692eae62febb7668b1eba5d3ff5d185c5de47b649388",
+      "timestamp": 1789705301,
+      "txCount": 5143
     },
     {
-      "height": 967463,
-      "id": "0000000000000000000217023a0d680ede8c1b437bcee055ba8bd220179c43b6",
-      "timestamp": 1789676763,
-      "txCount": 5173
+      "height": 967498,
+      "id": "000000000000000000018ebfadf3810951cf5de9053e46d4c22f9a2ea0b5c0c1",
+      "timestamp": 1789704877,
+      "txCount": 6389
     },
     {
-      "height": 967462,
-      "id": "0000000000000000000176643e3053078e7338d7d381c870f8182dd9c2ae2bdb",
-      "timestamp": 1789675489,
-      "txCount": 5327
+      "height": 967497,
+      "id": "00000000000000000000c8fdb1879ccbf2ef9e82c984d184f9c608443123d3c5",
+      "timestamp": 1789704615,
+      "txCount": 4553
     },
     {
-      "height": 967461,
-      "id": "000000000000000000011b2f3a70979187efd5a174b72d3086c6703c9a0460df",
-      "timestamp": 1789675579,
-      "txCount": 5686
+      "height": 967496,
+      "id": "0000000000000000000106064911f3b9f4b01aaa076dba321a3759fae64e9277",
+      "timestamp": 1789703958,
+      "txCount": 6139
     }
   ],
   "news": [
+    {
+      "title": "Bank of Japan raises interest rates by 25 basis points. Bitcoin tops $77,000",
+      "link": "https://www.coindesk.com/markets/2026/09/17/boj-rate-hike",
+      "pubDate": "Fri, 18 Sep 2026 03:03:38 +0000"
+    },
+    {
+      "title": "Real stocks are finally coming on blockchain. Here’s how the SEC wants it to work",
+      "link": "https://www.coindesk.com/business/2026/09/17/real-stocks-are-finally-coming-on-blockchain-here-s-how-the-sec-wants-it-to-work",
+      "pubDate": "Thu, 17 Sep 2026 21:47:22 +0000"
+    },
+    {
+      "title": "The Ondo Finance succession crisis gets messier as Kathleen Allman’s daughter alleges ‘dementia’, alcoholism and reckless spending",
+      "link": "https://www.coindesk.com/business/2026/09/17/the-ondo-finance-succession-crisis-gets-messier-as-kathleen-allman-s-daughter-alleges-dementia-alcoholism-and-reckless-spending",
+      "pubDate": "Thu, 17 Sep 2026 21:28:35 +0000"
+    },
     {
       "title": "Kevin O’Leary says Congress will revisit Clarity early next year as crypto tax bill advances",
       "link": "https://www.coindesk.com/policy/2026/09/17/kevin-o-leary-says-congress-will-revisit-clarity-by-second-quarter-as-crypto-tax-bill-advances",
@@ -470,21 +485,6 @@
       "title": "Ethereum’s upcoming Glamsterdam upgrade clears rehearsal for a big jump in capacity",
       "link": "https://www.coindesk.com/tech/2026/09/17/ethereum-s-upcoming-glamsterdam-upgrade-clears-rehearsal-for-a-big-jump-in-capacity",
       "pubDate": "Thu, 17 Sep 2026 12:37:21 +0000"
-    },
-    {
-      "title": "Zcash miner Fortitude names former Hut 8 chief Jaime Leverton CEO ahead of Nasdaq deal",
-      "link": "https://www.coindesk.com/business/2026/09/17/zcash-miner-fortitude-names-former-hut-8-chief-jaime-leverton-ceo-ahead-of-nasdaq-deal",
-      "pubDate": "Thu, 17 Sep 2026 12:00:00 +0000"
-    },
-    {
-      "title": "How Circle’s institutional Arc blockchain got taken over by memecoins on day one",
-      "link": "https://www.coindesk.com/business/2026/09/17/circle-launched-a-corporate-l2-backed-by-blackrock-but-traders-immediately-turned-it-into-a-memecoin-casino",
-      "pubDate": "Thu, 17 Sep 2026 11:42:22 +0000"
-    },
-    {
-      "title": "Optimism creeps back into crypto, with the 2022 test still to come",
-      "link": "https://www.coindesk.com/daybook-us/2026/09/17/optimism-creeps-back-into-crypto-with-the-2022-test-still-to-come",
-      "pubDate": "Thu, 17 Sep 2026 11:19:09 +0000"
     }
   ]
 }
