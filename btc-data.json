@@ -1,13 +1,13 @@
 {
-  "fetchedAt": "2026-09-18T11:07:50.165Z",
+  "fetchedAt": "2026-09-18T16:20:39.689Z",
   "price": {
-    "usd": 78222,
-    "time": 1789729206
+    "usd": 80913,
+    "time": 1789748109
   },
   "moves": {
-    "d1": 2.423209745118715,
-    "d7": 1.31919549956514,
-    "d30": 12.889102806876984
+    "d1": 5.9467818530182015,
+    "d7": 4.804787214035855,
+    "d30": 16.772723471821706
   },
   "history90d": [
     {
@@ -372,60 +372,90 @@
     },
     {
       "date": "2026-09-18",
-      "close": 78201.34220216877
+      "close": 80949.83889266309
     }
   ],
   "blocks": [
     {
-      "height": 967544,
-      "id": "000000000000000000011ff313afafdd47bb5a5ff1bb5fcda37221e3397d3e97",
-      "timestamp": 1789729378,
-      "txCount": 4270
+      "height": 967576,
+      "id": "00000000000000000001b641219f30d1452def241c647e43f016b7c6fccf8b45",
+      "timestamp": 1789747572,
+      "txCount": 3968
     },
     {
-      "height": 967543,
-      "id": "000000000000000000015e850b5969717bc4965341e9716f2d57090cc7ec1936",
-      "timestamp": 1789727683,
-      "txCount": 4641
+      "height": 967575,
+      "id": "00000000000000000000490acb9a7cf92e1d61a8c0a631fbf703fdd02ea04135",
+      "timestamp": 1789747395,
+      "txCount": 4301
     },
     {
-      "height": 967542,
-      "id": "0000000000000000000233b287a6cf5dc41859a2caf919c41cb2c0a5646a95d7",
-      "timestamp": 1789727576,
-      "txCount": 4406
+      "height": 967574,
+      "id": "0000000000000000000042b3d5f03f46e9e23c8bc83b93b3d287aee761412c18",
+      "timestamp": 1789746429,
+      "txCount": 3966
     },
     {
-      "height": 967541,
-      "id": "000000000000000000012a4c7a526e8882470c684f4c21dde0c447ceea2754e2",
-      "timestamp": 1789726466,
-      "txCount": 4810
+      "height": 967573,
+      "id": "000000000000000000008b273f3f07a82fb508095f2c442adf2e3f8eb0cdf9d9",
+      "timestamp": 1789745639,
+      "txCount": 4547
     },
     {
-      "height": 967540,
-      "id": "000000000000000000012f98fcaf116a6ca9c225133b98dd4809f2fea30a795b",
-      "timestamp": 1789726667,
-      "txCount": 4501
+      "height": 967572,
+      "id": "0000000000000000000147e0fbba9aebb67cb4e28be8e79049d16869ac1a58e1",
+      "timestamp": 1789745386,
+      "txCount": 4282
     },
     {
-      "height": 967539,
-      "id": "0000000000000000000167fe1c98380d848c330d189b48f0e96eabee1560a963",
-      "timestamp": 1789724876,
-      "txCount": 4429
+      "height": 967571,
+      "id": "00000000000000000000e32d9a295b892cdf1dcbdeb52461fb0f5e32cefa8364",
+      "timestamp": 1789745278,
+      "txCount": 3562
     },
     {
-      "height": 967538,
-      "id": "000000000000000000008a43efbd30575afceed9aaf0f7eed0c7c6dea868d924",
-      "timestamp": 1789724059,
-      "txCount": 6266
+      "height": 967570,
+      "id": "0000000000000000000041f0d01cae7a233d270b7c8ce681a8035c4b871a1731",
+      "timestamp": 1789745099,
+      "txCount": 3987
     },
     {
-      "height": 967537,
-      "id": "000000000000000000011924670e878e4c97ee4028e1762a15b3ba27250cb8f1",
-      "timestamp": 1789723864,
-      "txCount": 4590
+      "height": 967569,
+      "id": "000000000000000000011ba4271a8fcd9a6d78fac43572255842898dc39723aa",
+      "timestamp": 1789744390,
+      "txCount": 2997
     }
   ],
   "news": [
+    {
+      "title": "CFTC sends crypto rules to White House to review as Congress stalls on Clarity Act",
+      "link": "https://www.coindesk.com/policy/2026/09/18/cftc-sends-crypto-rules-to-white-house-to-review-as-congress-stalls-on-clarity-act",
+      "pubDate": "Fri, 18 Sep 2026 15:16:37 +0000"
+    },
+    {
+      "title": "Crypto tech provider Haruko hit by cyberattack affecting 15 clients, some funds lost",
+      "link": "https://www.coindesk.com/business/2026/09/18/crypto-tech-provider-haruko-hit-by-cyberattack-affecting-15-clients-some-funds-lost",
+      "pubDate": "Fri, 18 Sep 2026 15:06:31 +0000"
+    },
+    {
+      "title": "DHS’s predictive policing is unconstitutional, un-American and should be stopped",
+      "link": "https://www.coindesk.com/opinion/2026/09/18/dhs-s-predictive-policing-is-unconstitutional-un-american-and-should-be-stopped",
+      "pubDate": "Fri, 18 Sep 2026 13:00:00 +0000"
+    },
+    {
+      "title": "ECB President Christine Lagarde intervened to block Binance’s EU MiCA license: WSJ",
+      "link": "https://www.coindesk.com/policy/2026/09/18/ecb-president-christine-lagarde-intervened-to-block-binance-s-eu-mica-license-wsj",
+      "pubDate": "Fri, 18 Sep 2026 12:57:06 +0000"
+    },
+    {
+      "title": "Zcash targets November upgrade to make private payments up to three times faster",
+      "link": "https://www.coindesk.com/tech/2026/09/18/zcash-targets-november-upgrade-to-make-private-payments-up-to-three-times-faster",
+      "pubDate": "Fri, 18 Sep 2026 12:50:01 +0000"
+    },
+    {
+      "title": "XRP on the brink of a golden cross as focus switches to altcoins",
+      "link": "https://www.coindesk.com/daybook-us/2026/09/18/xrp-on-the-brink-of-a-golden-cross-as-focus-switches-to-altcoins",
+      "pubDate": "Fri, 18 Sep 2026 11:15:00 +0000"
+    },
     {
       "title": "Layer-2 and DeFi tokens lead broad crypto advance as post-Fed hike nerves fade",
       "link": "https://www.coindesk.com/markets/2026/09/18/layer-2-and-defi-tokens-lead-broad-crypto-advance-as-post-fed-hike-nerves-fade",
@@ -437,7 +467,7 @@
       "pubDate": "Fri, 18 Sep 2026 10:07:33 +0000"
     },
     {
-      "title": "Live updates: HYPE leads altcoin rally as bitcoin recovers toward $78,000",
+      "title": "Live updates: Bitcoin climbs over $80,000 as rally accelerates at U.S. market open",
       "link": "https://www.coindesk.com/tech/2026/09/18/live-updates-hype-leads-altcoin-rally-as-bitcoin-recovers-toward-usd78-000",
       "pubDate": "Fri, 18 Sep 2026 09:49:51 +0000"
     },
@@ -455,36 +485,6 @@
       "title": "Solana speeds up blocks by 17%, but transaction capacity stays the same",
       "link": "https://www.coindesk.com/tech/2026/09/18/solana-speeds-up-blocks-by-17-but-transaction-capacity-stays-the-same",
       "pubDate": "Fri, 18 Sep 2026 06:16:57 +0000"
-    },
-    {
-      "title": "Corporate treasuries bought just 5,900 bitcoin in 3 months. Other demand signals look weak, too.",
-      "link": "https://www.coindesk.com/markets/2026/09/18/corporate-treasuries-bought-just-5-900-bitcoin-in-3-months-other-demand-signals-look-weak-too",
-      "pubDate": "Fri, 18 Sep 2026 05:43:21 +0000"
-    },
-    {
-      "title": "Ethereum confirms Glamsterdam dates, but warns 'fake' builders could stall the chain",
-      "link": "https://www.coindesk.com/tech/2026/09/18/ethereum-confirms-glamsterdam-dates-but-warns-fake-builders-could-stall-the-chain",
-      "pubDate": "Fri, 18 Sep 2026 05:23:29 +0000"
-    },
-    {
-      "title": "Ether and XRP ETFs post outflows as crypto majors move higher",
-      "link": "https://www.coindesk.com/markets/2026/09/18/ether-and-xrp-etfs-post-outflows-as-bitcoin-moves-above-usd77-000",
-      "pubDate": "Fri, 18 Sep 2026 04:49:17 +0000"
-    },
-    {
-      "title": "Bank of Japan raises interest rates by 25 basis points. Bitcoin tops $77,000",
-      "link": "https://www.coindesk.com/markets/2026/09/17/boj-rate-hike",
-      "pubDate": "Fri, 18 Sep 2026 03:03:38 +0000"
-    },
-    {
-      "title": "Real stocks are finally coming on blockchain. Here’s how the SEC wants it to work",
-      "link": "https://www.coindesk.com/business/2026/09/17/real-stocks-are-finally-coming-on-blockchain-here-s-how-the-sec-wants-it-to-work",
-      "pubDate": "Thu, 17 Sep 2026 21:47:22 +0000"
-    },
-    {
-      "title": "The Ondo Finance succession crisis gets messier as Kathleen Allman’s daughter alleges ‘dementia’, alcoholism and reckless spending",
-      "link": "https://www.coindesk.com/business/2026/09/17/the-ondo-finance-succession-crisis-gets-messier-as-kathleen-allman-s-daughter-alleges-dementia-alcoholism-and-reckless-spending",
-      "pubDate": "Thu, 17 Sep 2026 21:28:35 +0000"
     }
   ]
 }
