@@ -1,13 +1,13 @@
 {
-  "fetchedAt": "2026-09-19T10:52:50.009Z",
+  "fetchedAt": "2026-09-19T15:50:25.238Z",
   "price": {
-    "usd": 81231,
-    "time": 1789814708
+    "usd": 81882,
+    "time": 1789832709
   },
   "moves": {
-    "d1": 0.44194545449154354,
-    "d7": 5.1375733622093245,
-    "d30": 11.2434237796591
+    "d1": 1.246905463489023,
+    "d7": 5.980164986820591,
+    "d30": 12.134948799424429
   },
   "history90d": [
     {
@@ -372,60 +372,85 @@
     },
     {
       "date": "2026-09-19",
-      "close": 81260.91676992932
+      "close": 81707.96784108419
     }
   ],
   "blocks": [
     {
-      "height": 967695,
-      "id": "0000000000000000000142b2fe886c7a3c7403950f152088fb961b76903768b3",
-      "timestamp": 1789815114,
-      "txCount": 3873
+      "height": 967720,
+      "id": "000000000000000000008c61612da605a408fe12aa80caec4fa8e485d8e6eab7",
+      "timestamp": 1789832671,
+      "txCount": 3885
     },
     {
-      "height": 967694,
-      "id": "000000000000000000001190fd6a1ac56d7ba4fdcd34c293cca505e7215d38cf",
-      "timestamp": 1789814848,
-      "txCount": 3819
+      "height": 967719,
+      "id": "00000000000000000000f887b47aca6557c7149a7b7a2ac4d3677bb157414941",
+      "timestamp": 1789832086,
+      "txCount": 3331
     },
     {
-      "height": 967693,
-      "id": "000000000000000000015adb9af6d618d6131204d6477fbcbc065be0e513a8c3",
-      "timestamp": 1789813991,
-      "txCount": 2854
+      "height": 967718,
+      "id": "0000000000000000000003af5f7061717353616c9b31385767c392488e24debd",
+      "timestamp": 1789830619,
+      "txCount": 4247
     },
     {
-      "height": 967692,
-      "id": "00000000000000000001711efae6a5538e550a80a5e117f727f83dfb09c08319",
-      "timestamp": 1789813569,
-      "txCount": 4182
+      "height": 967717,
+      "id": "0000000000000000000196123a22f78b2c8f2e40e87bf27bc85215131ce77e1a",
+      "timestamp": 1789829085,
+      "txCount": 4336
     },
     {
-      "height": 967691,
-      "id": "000000000000000000001e14a7e36548a161ac6ecd06dd652875cc6beee22894",
-      "timestamp": 1789812853,
-      "txCount": 4193
+      "height": 967716,
+      "id": "00000000000000000001f85f26bc8104a4fec494fb691fd0a78e8c5f8dbb7873",
+      "timestamp": 1789829031,
+      "txCount": 2233
     },
     {
-      "height": 967690,
-      "id": "00000000000000000000f1ff3e477b78ad8cfd62b90fa2a3acf24e890e53470d",
-      "timestamp": 1789810803,
-      "txCount": 1411
+      "height": 967715,
+      "id": "0000000000000000000085e1f91bc300cd63ed77a5293bc2dff608add7bc0814",
+      "timestamp": 1789828984,
+      "txCount": 4077
     },
     {
-      "height": 967689,
-      "id": "00000000000000000001cacf9097b7bd9467f3c7aebea6b886d198444390c91e",
-      "timestamp": 1789810751,
-      "txCount": 3879
+      "height": 967714,
+      "id": "000000000000000000005a35ccce8a549607e0571f8ed5052134b4692fb0bc8d",
+      "timestamp": 1789828341,
+      "txCount": 3574
     },
     {
-      "height": 967688,
-      "id": "0000000000000000000048c5b08853cc2a5c2a8941830089fa5dcdcb4847fb9e",
-      "timestamp": 1789809934,
-      "txCount": 3060
+      "height": 967713,
+      "id": "000000000000000000017b47e9c21a91247495c5d6528586bff73f5babbb28f2",
+      "timestamp": 1789827146,
+      "txCount": 4446
     }
   ],
   "news": [
+    {
+      "title": "'We have lost control': Crypto pioneer warns AI could trigger systemic banking and infrastructure shocks",
+      "link": "https://www.coindesk.com/markets/2026/09/17/we-have-lost-control-crypto-pioneer-warns-ai-could-trigger-systemic-banking-and-infrastructure-shocks",
+      "pubDate": "Sat, 19 Sep 2026 14:00:00 +0000"
+    },
+    {
+      "title": "Ripple says asset managers are preparing for XRP Ledger’s next payments upgrade",
+      "link": "https://www.coindesk.com/tech/2026/09/19/ripple-says-asset-managers-are-preparing-for-xrp-ledger-s-next-payments-upgrade",
+      "pubDate": "Sat, 19 Sep 2026 13:39:15 +0000"
+    },
+    {
+      "title": "'The orange tie stays': Michael Saylor responds to venture capitalist's bitcoin obituary",
+      "link": "https://www.coindesk.com/markets/2026/09/19/the-orange-tie-stays-michael-saylor-responds-to-venture-capitalist-s-bitcoin-obituary",
+      "pubDate": "Sat, 19 Sep 2026 12:13:57 +0000"
+    },
+    {
+      "title": "Robinhood Chain fees collapse 97% even as transactions stay near record highs",
+      "link": "https://www.coindesk.com/business/2026/09/19/robinhood-chain-fees-collapse-97-even-as-transactions-stay-near-record-highs",
+      "pubDate": "Sat, 19 Sep 2026 12:00:00 +0000"
+    },
+    {
+      "title": "Why Wall Street giants build tokenization money for institutions, not regular consumers",
+      "link": "https://www.coindesk.com/business/2026/09/15/why-wall-street-giants-build-tokenization-money-for-institutions-not-regular-consumers",
+      "pubDate": "Sat, 19 Sep 2026 12:00:00 +0000"
+    },
     {
       "title": "CFTC sends crypto rules to White House to review as Congress stalls on Clarity Act",
       "link": "https://www.coindesk.com/policy/2026/09/18/cftc-sends-crypto-rules-to-white-house-to-review-as-congress-stalls-on-clarity-act",
@@ -460,31 +485,6 @@
       "title": "Layer-2 and DeFi tokens lead broad crypto advance as post-Fed hike nerves fade",
       "link": "https://www.coindesk.com/markets/2026/09/18/layer-2-and-defi-tokens-lead-broad-crypto-advance-as-post-fed-hike-nerves-fade",
       "pubDate": "Fri, 18 Sep 2026 10:33:05 +0000"
-    },
-    {
-      "title": "Bitcoin weathers September storm as rate hikes and Clarity act setback test bulls",
-      "link": "https://www.coindesk.com/markets/2026/09/18/bitcoin-weathers-september-storm-as-rate-hikes-and-clarity-act-setback-test-bulls",
-      "pubDate": "Fri, 18 Sep 2026 10:07:33 +0000"
-    },
-    {
-      "title": "Live updates: Bitcoin climbs over $80,000 as crypto shakes off Clarity failure and higher interest rates",
-      "link": "https://www.coindesk.com/tech/2026/09/18/live-updates-hype-leads-altcoin-rally-as-bitcoin-recovers-toward-usd78-000",
-      "pubDate": "Fri, 18 Sep 2026 09:49:51 +0000"
-    },
-    {
-      "title": "SBI Group backs payments firm dtcpay in $25 million funding round",
-      "link": "https://www.coindesk.com/markets/2026/09/18/sbi-group-backs-payments-firm-dtcpay-in-usd25-million-funding-round",
-      "pubDate": "Fri, 18 Sep 2026 07:37:32 +0000"
-    },
-    {
-      "title": "Iran’s Strait of Hormuz toll booth ran through a bitcoin exchange, U.S. says",
-      "link": "https://www.coindesk.com/policy/2026/09/18/iran-s-strait-of-hormuz-toll-booth-ran-through-a-bitcoin-exchange-u-s-says",
-      "pubDate": "Fri, 18 Sep 2026 06:52:23 +0000"
-    },
-    {
-      "title": "Solana speeds up blocks by 17%, but transaction capacity stays the same",
-      "link": "https://www.coindesk.com/tech/2026/09/18/solana-speeds-up-blocks-by-17-but-transaction-capacity-stays-the-same",
-      "pubDate": "Fri, 18 Sep 2026 06:16:57 +0000"
     }
   ]
 }
