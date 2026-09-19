@@ -1,13 +1,13 @@
 {
-  "fetchedAt": "2026-09-19T15:50:25.238Z",
+  "fetchedAt": "2026-09-19T20:34:47.529Z",
   "price": {
-    "usd": 81882,
-    "time": 1789832709
+    "usd": 81241,
+    "time": 1789849808
   },
   "moves": {
-    "d1": 1.246905463489023,
-    "d7": 5.980164986820591,
-    "d30": 12.134948799424429
+    "d1": 0.45431043158827844,
+    "d7": 5.150516397917637,
+    "d30": 11.257118480423545
   },
   "history90d": [
     {
@@ -372,60 +372,65 @@
     },
     {
       "date": "2026-09-19",
-      "close": 81707.96784108419
+      "close": 81243.227469124
     }
   ],
   "blocks": [
     {
-      "height": 967720,
-      "id": "000000000000000000008c61612da605a408fe12aa80caec4fa8e485d8e6eab7",
-      "timestamp": 1789832671,
-      "txCount": 3885
+      "height": 967743,
+      "id": "00000000000000000000815d68a5eacb750bbd1d1f90b013e052912c0450bfc5",
+      "timestamp": 1789849904,
+      "txCount": 4660
     },
     {
-      "height": 967719,
-      "id": "00000000000000000000f887b47aca6557c7149a7b7a2ac4d3677bb157414941",
-      "timestamp": 1789832086,
-      "txCount": 3331
+      "height": 967742,
+      "id": "00000000000000000000710a3a978e74f6324c11cf327baebce7db51ab544b10",
+      "timestamp": 1789849449,
+      "txCount": 5155
     },
     {
-      "height": 967718,
-      "id": "0000000000000000000003af5f7061717353616c9b31385767c392488e24debd",
-      "timestamp": 1789830619,
-      "txCount": 4247
+      "height": 967741,
+      "id": "0000000000000000000089ee9dfb979c56e21d0ee0e6308c96a6741bcad1dc21",
+      "timestamp": 1789849040,
+      "txCount": 5823
     },
     {
-      "height": 967717,
-      "id": "0000000000000000000196123a22f78b2c8f2e40e87bf27bc85215131ce77e1a",
-      "timestamp": 1789829085,
-      "txCount": 4336
+      "height": 967740,
+      "id": "0000000000000000000088260f289bc7675808a6c6e3bdac430840f428344437",
+      "timestamp": 1789848787,
+      "txCount": 5965
     },
     {
-      "height": 967716,
-      "id": "00000000000000000001f85f26bc8104a4fec494fb691fd0a78e8c5f8dbb7873",
-      "timestamp": 1789829031,
-      "txCount": 2233
+      "height": 967739,
+      "id": "000000000000000000012f504fa657b392bc222baf88600c6d079ae09a1aa532",
+      "timestamp": 1789848723,
+      "txCount": 4637
     },
     {
-      "height": 967715,
-      "id": "0000000000000000000085e1f91bc300cd63ed77a5293bc2dff608add7bc0814",
-      "timestamp": 1789828984,
-      "txCount": 4077
+      "height": 967738,
+      "id": "00000000000000000000eb31e4c475aeaeba8a738201e59609fd8d30b9a3957b",
+      "timestamp": 1789848312,
+      "txCount": 3743
     },
     {
-      "height": 967714,
-      "id": "000000000000000000005a35ccce8a549607e0571f8ed5052134b4692fb0bc8d",
-      "timestamp": 1789828341,
-      "txCount": 3574
+      "height": 967737,
+      "id": "00000000000000000001809fbdbcded1eaf1ad81cbf48473dab0b59db98894fc",
+      "timestamp": 1789848173,
+      "txCount": 4039
     },
     {
-      "height": 967713,
-      "id": "000000000000000000017b47e9c21a91247495c5d6528586bff73f5babbb28f2",
-      "timestamp": 1789827146,
-      "txCount": 4446
+      "height": 967736,
+      "id": "0000000000000000000034a1769f37dc42d794eafd1672bb882f60dd7876ce43",
+      "timestamp": 1789846698,
+      "txCount": 3146
     }
   ],
   "news": [
+    {
+      "title": "Clarity Act, we hardly knew ye: We look at what was in the bill and what's replacing it",
+      "link": "https://www.coindesk.com/news-analysis/2026/09/18/clarity-act-we-hardly-knew-ye-we-look-at-what-was-in-the-bill-and-what-s-replacing-it",
+      "pubDate": "Sat, 19 Sep 2026 16:00:00 +0000"
+    },
     {
       "title": "'We have lost control': Crypto pioneer warns AI could trigger systemic banking and infrastructure shocks",
       "link": "https://www.coindesk.com/markets/2026/09/17/we-have-lost-control-crypto-pioneer-warns-ai-could-trigger-systemic-banking-and-infrastructure-shocks",
@@ -480,11 +485,6 @@
       "title": "XRP on the brink of a golden cross as focus switches to altcoins",
       "link": "https://www.coindesk.com/daybook-us/2026/09/18/xrp-on-the-brink-of-a-golden-cross-as-focus-switches-to-altcoins",
       "pubDate": "Fri, 18 Sep 2026 11:15:00 +0000"
-    },
-    {
-      "title": "Layer-2 and DeFi tokens lead broad crypto advance as post-Fed hike nerves fade",
-      "link": "https://www.coindesk.com/markets/2026/09/18/layer-2-and-defi-tokens-lead-broad-crypto-advance-as-post-fed-hike-nerves-fade",
-      "pubDate": "Fri, 18 Sep 2026 10:33:05 +0000"
     }
   ]
 }
