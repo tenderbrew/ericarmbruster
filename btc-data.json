@@ -1,19 +1,15 @@
 {
-  "fetchedAt": "2026-09-20T23:12:30.505Z",
+  "fetchedAt": "2026-09-21T04:49:54.067Z",
   "price": {
-    "usd": 81123,
-    "time": 1789945509
+    "usd": 81403,
+    "time": 1789965910
   },
   "moves": {
-    "d1": -0.13960960516036236,
-    "d7": 5.602718745536861,
-    "d30": 3.5818468528368896
+    "d1": 0.28824400851295007,
+    "d7": 4.131393052922472,
+    "d30": 5.607057148879524
   },
   "history90d": [
-    {
-      "date": "2026-06-23",
-      "close": 63937.28526422244
-    },
     {
       "date": "2026-06-24",
       "close": 62662.29201921944
@@ -371,61 +367,75 @@
       "close": 81236.41383660372
     },
     {
-      "date": "2026-09-20",
-      "close": 81187.59720855871
+      "date": "2026-09-21",
+      "close": 81169.03511950027
+    },
+    {
+      "date": "2026-09-21",
+      "close": 81412.38936130085
     }
   ],
   "blocks": [
     {
-      "height": 967909,
-      "id": "00000000000000000000371a15a3d462d1ca34471c720bea804261bcf59c1f1e",
-      "timestamp": 1789944556,
-      "txCount": 7103
+      "height": 967942,
+      "id": "000000000000000000017c357f1f3926cc618da2a702a4eff51a1046051187b3",
+      "timestamp": 1789966297,
+      "txCount": 5536
     },
     {
-      "height": 967908,
-      "id": "00000000000000000000622d1385753ace1a80dbb9b15fc5cbda6aaff981fa16",
-      "timestamp": 1789944509,
-      "txCount": 4876
+      "height": 967941,
+      "id": "00000000000000000000d106258152ec9c7de97ddef2c9ce7345a474c0c6eea2",
+      "timestamp": 1789966483,
+      "txCount": 4244
     },
     {
-      "height": 967907,
-      "id": "000000000000000000009feffc432b2449a0831327cd4d11062ab1dd4afadeaa",
-      "timestamp": 1789943879,
-      "txCount": 5378
+      "height": 967940,
+      "id": "000000000000000000020e7c34a87412b558f72066126a524e0887a8cfb14455",
+      "timestamp": 1789964421,
+      "txCount": 6390
     },
     {
-      "height": 967906,
-      "id": "000000000000000000018492a9660c5c4b0f677c49788d89ac33103f66b3acf8",
-      "timestamp": 1789943400,
-      "txCount": 6937
+      "height": 967939,
+      "id": "00000000000000000001cd223539993fbdc99012a5afeaa71a8cb0c84396fbb0",
+      "timestamp": 1789964250,
+      "txCount": 6752
     },
     {
-      "height": 967905,
-      "id": "000000000000000000016151702736e1f04f5a27115c43c4e84b4fd5f8226933",
-      "timestamp": 1789943255,
-      "txCount": 5987
+      "height": 967938,
+      "id": "00000000000000000001670e21f92ea31f667d8ba75d1c8a7c27cd7079622840",
+      "timestamp": 1789964148,
+      "txCount": 452
     },
     {
-      "height": 967904,
-      "id": "000000000000000000013a47b0045aae40c0432e680773f75dd727a8f4c66764",
-      "timestamp": 1789942703,
-      "txCount": 6871
+      "height": 967937,
+      "id": "00000000000000000000395c9b0d700215400eab503a809d7fcb87836e9409f8",
+      "timestamp": 1789963941,
+      "txCount": 6487
     },
     {
-      "height": 967903,
-      "id": "000000000000000000010c15f6af0179940aab653bdfad5a8780a31d9a58b8d7",
-      "timestamp": 1789942597,
-      "txCount": 4324
+      "height": 967936,
+      "id": "0000000000000000000087f08ce525deafb56c9bbdac8a1658f71e1524d7b3fd",
+      "timestamp": 1789963781,
+      "txCount": 5826
     },
     {
-      "height": 967902,
-      "id": "00000000000000000001404e99aa5a2fc8c4e2d58628b96852188165ea742df9",
-      "timestamp": 1789941288,
-      "txCount": 6603
+      "height": 967935,
+      "id": "00000000000000000001359a94158bbedb9e95831649497a2016628e380d1471",
+      "timestamp": 1789963362,
+      "txCount": 4425
     }
   ],
   "news": [
+    {
+      "title": "Bitcoin rises above $81,000, while NEAR jumps 23% on Zcash swap traffic",
+      "link": "https://www.coindesk.com/markets/2026/09/21/bitcoin-rises-above-usd81-000-while-near-jumps-23-on-zcash-swap-traffic",
+      "pubDate": "Mon, 21 Sep 2026 04:03:43 +0000"
+    },
+    {
+      "title": "Bitcoin’s price has cleared a key hurdle that has historically preceded major bull runs",
+      "link": "https://www.coindesk.com/markets/2026/09/21/bitcoin-s-price-has-cleared-a-key-hurdle-that-has-historically-preceded-major-bull-runs",
+      "pubDate": "Mon, 21 Sep 2026 03:56:23 +0000"
+    },
     {
       "title": "Crypto platform Gemini’s stock is down 80% from its IPO. That’s reviving takeover speculation",
       "link": "https://www.coindesk.com/business/2026/09/20/gemini-s-stock-is-down-80-from-its-ipo-that-s-reviving-takeover-speculation",
@@ -475,16 +485,6 @@
       "title": "CFTC sends crypto rules to White House to review as Congress stalls on Clarity Act",
       "link": "https://www.coindesk.com/policy/2026/09/18/cftc-sends-crypto-rules-to-white-house-to-review-as-congress-stalls-on-clarity-act",
       "pubDate": "Fri, 18 Sep 2026 15:16:37 +0000"
-    },
-    {
-      "title": "Crypto tech provider Haruko hit by cyberattack affecting 15 clients, some funds lost",
-      "link": "https://www.coindesk.com/business/2026/09/18/crypto-tech-provider-haruko-hit-by-cyberattack-affecting-15-clients-some-funds-lost",
-      "pubDate": "Fri, 18 Sep 2026 15:06:31 +0000"
-    },
-    {
-      "title": "DHS’s predictive policing is unconstitutional, un-American and should be stopped",
-      "link": "https://www.coindesk.com/opinion/2026/09/18/dhs-s-predictive-policing-is-unconstitutional-un-american-and-should-be-stopped",
-      "pubDate": "Fri, 18 Sep 2026 13:00:00 +0000"
     }
   ]
 }
