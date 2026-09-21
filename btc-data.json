@@ -1,13 +1,13 @@
 {
-  "fetchedAt": "2026-09-21T12:41:30.123Z",
+  "fetchedAt": "2026-09-21T19:57:49.494Z",
   "price": {
-    "usd": 85228,
-    "time": 1789994109
+    "usd": 86519,
+    "time": 1790020210
   },
   "moves": {
-    "d1": 5.000632167826025,
-    "d7": 9.024364791401762,
-    "d30": 10.569368041530458
+    "d1": 6.5911401714007,
+    "d7": 10.675822703657122,
+    "d30": 12.24422905131146
   },
   "history90d": [
     {
@@ -372,60 +372,90 @@
     },
     {
       "date": "2026-09-21",
-      "close": 85285.40683792457
+      "close": 86595.32432231789
     }
   ],
   "blocks": [
     {
-      "height": 967989,
-      "id": "00000000000000000000409ea12902d6d2b452f6bf1ce6f95f79d3c9e5f225d3",
-      "timestamp": 1789994174,
-      "txCount": 2789
+      "height": 968037,
+      "id": "00000000000000000001e7a93b4875cd9fc207be6dc9719892efd47e1fb17109",
+      "timestamp": 1790020193,
+      "txCount": 3609
     },
     {
-      "height": 967988,
-      "id": "0000000000000000000209cb3632557541f8910629b1b613f12d5ddc524c40fd",
-      "timestamp": 1789993893,
-      "txCount": 2319
+      "height": 968036,
+      "id": "00000000000000000000579158f45d0fafb7d4e01e160781760ebe55736ce929",
+      "timestamp": 1790019488,
+      "txCount": 4428
     },
     {
-      "height": 967987,
-      "id": "00000000000000000001f8a32b731ec0dd289ef79bc4697104e88517ea8d4fd6",
-      "timestamp": 1789993643,
-      "txCount": 2038
+      "height": 968035,
+      "id": "00000000000000000000aa2916595850fcd9b31ddcc36517bd002b6bb730c5eb",
+      "timestamp": 1790019206,
+      "txCount": 3743
     },
     {
-      "height": 967986,
-      "id": "000000000000000000015db5774fc74cf5b727399a380869bcbe00f8180d6048",
-      "timestamp": 1789993625,
-      "txCount": 4001
+      "height": 968034,
+      "id": "000000000000000000019d6eb359cd11f23db58fd944816d68c6a386cb295f29",
+      "timestamp": 1790018592,
+      "txCount": 4085
     },
     {
-      "height": 967985,
-      "id": "00000000000000000000505393e8863b3ac51e78068dd473c82d097c90fa95d0",
-      "timestamp": 1789992668,
-      "txCount": 3240
+      "height": 968033,
+      "id": "000000000000000000008da908fdd8cc084e73fa5eb2044b13af2c05e208244f",
+      "timestamp": 1790017965,
+      "txCount": 3111
     },
     {
-      "height": 967984,
-      "id": "00000000000000000001aa320e53570ee6b09408851e12e93daf93e133efcf87",
-      "timestamp": 1789992275,
-      "txCount": 2554
+      "height": 968032,
+      "id": "00000000000000000001f387005c18981389fb0ec3e368959adc21c5e4570957",
+      "timestamp": 1790017686,
+      "txCount": 3352
     },
     {
-      "height": 967983,
-      "id": "0000000000000000000182d99c1a18526b936f0dde3644a19f83eef68fc970f6",
-      "timestamp": 1789992093,
-      "txCount": 3306
+      "height": 968031,
+      "id": "00000000000000000001ef4f81596f11e04610e00b3e88153a173566acdba88c",
+      "timestamp": 1790017351,
+      "txCount": 3181
     },
     {
-      "height": 967982,
-      "id": "000000000000000000003d8b8150f2beddf4bbf0c1c70580d498ee09fdd2ccc8",
-      "timestamp": 1789991460,
-      "txCount": 3832
+      "height": 968030,
+      "id": "00000000000000000000a6e69817c8f95ae96ee33ba32f5ea6f7d6a30c4beeea",
+      "timestamp": 1790016818,
+      "txCount": 3669
     }
   ],
   "news": [
+    {
+      "title": "Why this investment bank expects little demand for tokenized stocks despite SEC’s new trading rules",
+      "link": "https://www.coindesk.com/markets/2026/09/21/why-this-investment-bank-sees-little-demand-for-tokenized-stocks-despite-sec-s-new-trading-rules",
+      "pubDate": "Mon, 21 Sep 2026 19:08:40 +0000"
+    },
+    {
+      "title": "Crypto political group plans to spend $30 million against Sherrod Brown's Senate bid",
+      "link": "https://www.coindesk.com/news-analysis/2026/09/21/crypto-s-fairshake-repeats-history-with-usd30-million-to-oppose-sherrod-brown-senate-bid",
+      "pubDate": "Mon, 21 Sep 2026 16:01:36 +0000"
+    },
+    {
+      "title": "ECB plans to buy tokenized bonds with its own funds",
+      "link": "https://www.coindesk.com/policy/2026/09/21/ecb-announces-it-will-invest-in-tokenized-securities-via-new-pontes-platform",
+      "pubDate": "Mon, 21 Sep 2026 15:00:47 +0000"
+    },
+    {
+      "title": "Why banks and offshore hubs like Dubai are winners of the Senate killing the Clarity Act",
+      "link": "https://www.coindesk.com/policy/2026/09/21/banks-overseas-crypto-hubs-gain-from-clarity-act-s-senate-defeat-critics-say",
+      "pubDate": "Mon, 21 Sep 2026 14:53:52 +0000"
+    },
+    {
+      "title": "Bitmine bought $75 million ether as Tom Lee says institutions are still underweight crypto",
+      "link": "https://www.coindesk.com/business/2026/09/21/bitmine-bought-usd75-million-ether-as-tom-lee-says-institutions-are-still-underweight-crypto",
+      "pubDate": "Mon, 21 Sep 2026 13:11:15 +0000"
+    },
+    {
+      "title": "Treasury Secretary Scott Bessent champions dollar dominance across global markets and stablecoins",
+      "link": "https://www.coindesk.com/markets/2026/09/21/scott-bessent-champions-dollar-dominance-across-global-markets-and-stablecoins",
+      "pubDate": "Mon, 21 Sep 2026 12:44:33 +0000"
+    },
     {
       "title": "Google and Apple seek crypto talent as Big Tech eyes stablecoin and tokenization rails",
       "link": "https://www.coindesk.com/business/2026/09/21/google-and-apple-seek-crypto-talent-as-big-tech-eyes-stablecoin-and-tokenization-rails",
@@ -455,36 +485,6 @@
       "title": "Bitcoin hits $85,000 as short squeeze forces out $648 million of bearish bets",
       "link": "https://www.coindesk.com/markets/2026/09/21/bitcoin-hits-usd85-000-as-short-squeeze-forces-out-usd648-million-of-bearish-bets",
       "pubDate": "Mon, 21 Sep 2026 10:30:00 +0000"
-    },
-    {
-      "title": "X sues its own users for running a fake bitcoin news bot farm",
-      "link": "https://www.coindesk.com/markets/2026/09/21/x-sues-its-won-users-for-running-a-fake-bitcoin-news-bot-farm",
-      "pubDate": "Mon, 21 Sep 2026 10:15:44 +0000"
-    },
-    {
-      "title": "Crypto enjoys bullish bounce post-Fed rate hike: Crypto Week Ahead",
-      "link": "https://www.coindesk.com/markets/2026/09/21/crypto-week-ahead",
-      "pubDate": "Mon, 21 Sep 2026 09:12:42 +0000"
-    },
-    {
-      "title": "Hana Bank issues South Korea’s first digital bond using Euroclear’s blockchain",
-      "link": "https://www.coindesk.com/business/2026/09/21/hana-bank-issues-south-korea-s-first-digital-bond-using-euroclear-s-blockchain",
-      "pubDate": "Mon, 21 Sep 2026 08:49:59 +0000"
-    },
-    {
-      "title": "Live updates: Bitcoin hits $85,000 as short liquidations hit $300 million in an hour",
-      "link": "https://www.coindesk.com/business/2026/09/21/live-updates-bitcoin-rises-above-usd82-000-as-falling-oil-lifts-risk-assets",
-      "pubDate": "Mon, 21 Sep 2026 08:39:26 +0000"
-    },
-    {
-      "title": "Kalshi faces ‘fake crypto volume’ allegations as critic flags identical $5,500 trades",
-      "link": "https://www.coindesk.com/markets/2026/09/21/kalshi-s-crypto-chief-responds-to-fake-crypto-volume-allegations-as-critic-flags-identical-usd5-500-trades",
-      "pubDate": "Mon, 21 Sep 2026 06:20:47 +0000"
-    },
-    {
-      "title": "Bitcoin rises above $81,000, while NEAR jumps 23% on Zcash swap traffic",
-      "link": "https://www.coindesk.com/markets/2026/09/21/bitcoin-rises-above-usd81-000-while-near-jumps-23-on-zcash-swap-traffic",
-      "pubDate": "Mon, 21 Sep 2026 04:03:43 +0000"
     }
   ]
 }
