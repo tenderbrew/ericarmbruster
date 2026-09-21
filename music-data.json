@@ -1,7 +1,55 @@
 {
-  "fetchedAt": "2026-09-20T18:10:02.004Z",
-  "windowPlays": 464,
+  "fetchedAt": "2026-09-21T00:10:02.214Z",
+  "windowPlays": 472,
   "recentTracks": [
+    {
+      "artist": "Bush",
+      "album": "Sixteen Stone",
+      "track": "Glycerine",
+      "played": 1789938713
+    },
+    {
+      "artist": "Nirvana",
+      "album": "Nevermind",
+      "track": "Lithium",
+      "played": 1789938460
+    },
+    {
+      "artist": "Goo Goo Dolls",
+      "album": "Dizzy Up the Girl",
+      "track": "Slide",
+      "played": 1789938252
+    },
+    {
+      "artist": "The Cardigans",
+      "album": "First Band On the Moon",
+      "track": "Lovefool",
+      "played": 1789938059
+    },
+    {
+      "artist": "Counting Crows",
+      "album": "Recovering the Satellites",
+      "track": "A Long December",
+      "played": 1789937929
+    },
+    {
+      "artist": "Hootie & the Blowfish",
+      "album": "Cracked Rear View",
+      "track": "Let Her Cry",
+      "played": 1789932419
+    },
+    {
+      "artist": "Radiohead",
+      "album": "The Bends",
+      "track": "Fake Plastic Trees",
+      "played": 1789932138
+    },
+    {
+      "artist": "The Smashing Pumpkins",
+      "album": "MACHINA/the machines of God",
+      "track": "Stand Inside Your Love",
+      "played": 1789931902
+    },
     {
       "artist": "Barenaked Ladies",
       "album": "Stunt",
@@ -103,54 +151,6 @@
       "album": "Good News for People Who Love Bad News",
       "track": "Satin in a Coffin",
       "played": 1789511351
-    },
-    {
-      "artist": "Modest Mouse",
-      "album": "Good News for People Who Love Bad News",
-      "track": "The View",
-      "played": 1789511100
-    },
-    {
-      "artist": "Modest Mouse",
-      "album": "Good News for People Who Love Bad News",
-      "track": "This Devil’s Workday",
-      "played": 1789510961
-    },
-    {
-      "artist": "Modest Mouse",
-      "album": "Good News for People Who Love Bad News",
-      "track": "Bukowski",
-      "played": 1789510706
-    },
-    {
-      "artist": "Modest Mouse",
-      "album": "Good News for People Who Love Bad News",
-      "track": "Dance Hall",
-      "played": 1789510528
-    },
-    {
-      "artist": "Modest Mouse",
-      "album": "Good News for People Who Love Bad News",
-      "track": "Bury Me With It",
-      "played": 1789510298
-    },
-    {
-      "artist": "Modest Mouse",
-      "album": "Good News for People Who Love Bad News",
-      "track": "Ocean Breathes Salty",
-      "played": 1789510060
-    },
-    {
-      "artist": "Modest Mouse",
-      "album": "Good News for People Who Love Bad News",
-      "track": "Float On",
-      "played": 1789509702
-    },
-    {
-      "artist": "Modest Mouse",
-      "album": "Good News for People Who Love Bad News",
-      "track": "The World at Large",
-      "played": 1789509429
     }
   ],
   "topArtists": [
@@ -175,6 +175,10 @@
       "plays": 11
     },
     {
+      "artist": "Radiohead",
+      "plays": 9
+    },
+    {
       "artist": "Bright Eyes",
       "plays": 9
     },
@@ -188,10 +192,6 @@
     },
     {
       "artist": "Taking Back Sunday",
-      "plays": 9
-    },
-    {
-      "artist": "Okkervil River",
       "plays": 9
     }
   ],
@@ -222,6 +222,16 @@
       "plays": 6
     },
     {
+      "artist": "Nirvana",
+      "album": "Nevermind",
+      "plays": 5
+    },
+    {
+      "artist": "Hootie & the Blowfish",
+      "album": "Cracked Rear View",
+      "plays": 4
+    },
+    {
       "artist": "Jason Isbell and the 400 Unit",
       "album": "The Nashville Sound",
       "plays": 4
@@ -234,16 +244,6 @@
     {
       "artist": "Purple Mountains",
       "album": "Purple Mountains",
-      "plays": 4
-    },
-    {
-      "artist": "Nirvana",
-      "album": "Nevermind",
-      "plays": 4
-    },
-    {
-      "artist": "Weezer",
-      "album": "Pinkerton",
       "plays": 4
     }
   ]
