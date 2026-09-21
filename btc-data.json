@@ -1,13 +1,13 @@
 {
-  "fetchedAt": "2026-09-21T04:49:54.067Z",
+  "fetchedAt": "2026-09-21T12:41:30.123Z",
   "price": {
-    "usd": 81403,
-    "time": 1789965910
+    "usd": 85228,
+    "time": 1789994109
   },
   "moves": {
-    "d1": 0.28824400851295007,
-    "d7": 4.131393052922472,
-    "d30": 5.607057148879524
+    "d1": 5.000632167826025,
+    "d7": 9.024364791401762,
+    "d30": 10.569368041530458
   },
   "history90d": [
     {
@@ -372,119 +372,119 @@
     },
     {
       "date": "2026-09-21",
-      "close": 81412.38936130085
+      "close": 85285.40683792457
     }
   ],
   "blocks": [
     {
-      "height": 967942,
-      "id": "000000000000000000017c357f1f3926cc618da2a702a4eff51a1046051187b3",
-      "timestamp": 1789966297,
-      "txCount": 5536
+      "height": 967989,
+      "id": "00000000000000000000409ea12902d6d2b452f6bf1ce6f95f79d3c9e5f225d3",
+      "timestamp": 1789994174,
+      "txCount": 2789
     },
     {
-      "height": 967941,
-      "id": "00000000000000000000d106258152ec9c7de97ddef2c9ce7345a474c0c6eea2",
-      "timestamp": 1789966483,
-      "txCount": 4244
+      "height": 967988,
+      "id": "0000000000000000000209cb3632557541f8910629b1b613f12d5ddc524c40fd",
+      "timestamp": 1789993893,
+      "txCount": 2319
     },
     {
-      "height": 967940,
-      "id": "000000000000000000020e7c34a87412b558f72066126a524e0887a8cfb14455",
-      "timestamp": 1789964421,
-      "txCount": 6390
+      "height": 967987,
+      "id": "00000000000000000001f8a32b731ec0dd289ef79bc4697104e88517ea8d4fd6",
+      "timestamp": 1789993643,
+      "txCount": 2038
     },
     {
-      "height": 967939,
-      "id": "00000000000000000001cd223539993fbdc99012a5afeaa71a8cb0c84396fbb0",
-      "timestamp": 1789964250,
-      "txCount": 6752
+      "height": 967986,
+      "id": "000000000000000000015db5774fc74cf5b727399a380869bcbe00f8180d6048",
+      "timestamp": 1789993625,
+      "txCount": 4001
     },
     {
-      "height": 967938,
-      "id": "00000000000000000001670e21f92ea31f667d8ba75d1c8a7c27cd7079622840",
-      "timestamp": 1789964148,
-      "txCount": 452
+      "height": 967985,
+      "id": "00000000000000000000505393e8863b3ac51e78068dd473c82d097c90fa95d0",
+      "timestamp": 1789992668,
+      "txCount": 3240
     },
     {
-      "height": 967937,
-      "id": "00000000000000000000395c9b0d700215400eab503a809d7fcb87836e9409f8",
-      "timestamp": 1789963941,
-      "txCount": 6487
+      "height": 967984,
+      "id": "00000000000000000001aa320e53570ee6b09408851e12e93daf93e133efcf87",
+      "timestamp": 1789992275,
+      "txCount": 2554
     },
     {
-      "height": 967936,
-      "id": "0000000000000000000087f08ce525deafb56c9bbdac8a1658f71e1524d7b3fd",
-      "timestamp": 1789963781,
-      "txCount": 5826
+      "height": 967983,
+      "id": "0000000000000000000182d99c1a18526b936f0dde3644a19f83eef68fc970f6",
+      "timestamp": 1789992093,
+      "txCount": 3306
     },
     {
-      "height": 967935,
-      "id": "00000000000000000001359a94158bbedb9e95831649497a2016628e380d1471",
-      "timestamp": 1789963362,
-      "txCount": 4425
+      "height": 967982,
+      "id": "000000000000000000003d8b8150f2beddf4bbf0c1c70580d498ee09fdd2ccc8",
+      "timestamp": 1789991460,
+      "txCount": 3832
     }
   ],
   "news": [
     {
+      "title": "Google and Apple seek crypto talent as Big Tech eyes stablecoin and tokenization rails",
+      "link": "https://www.coindesk.com/business/2026/09/21/google-and-apple-seek-crypto-talent-as-big-tech-eyes-stablecoin-and-tokenization-rails",
+      "pubDate": "Mon, 21 Sep 2026 12:17:48 +0000"
+    },
+    {
+      "title": "Strategy returns to bitcoin buys, adding $75 million of BTC last week",
+      "link": "https://www.coindesk.com/markets/2026/09/21/strategy-returns-to-bitcoin-buys-adding-usd75-million-of-btc-last-week",
+      "pubDate": "Mon, 21 Sep 2026 12:08:02 +0000"
+    },
+    {
+      "title": "Bitcoin's 44% gain in third quarter teases full-blown crypto bull run",
+      "link": "https://www.coindesk.com/daybook-us/2026/09/21/bitcoin-s-44-gain-in-third-quarter-teases-full-blown-crypto-bull-run",
+      "pubDate": "Mon, 21 Sep 2026 11:36:11 +0000"
+    },
+    {
+      "title": "Perp futures linked to 'bitcoin VIX' debut on Hyperliquid",
+      "link": "https://www.coindesk.com/markets/2026/09/21/perp-futures-linked-to-bitcoin-vix-debut-on-hyperliquid",
+      "pubDate": "Mon, 21 Sep 2026 11:30:00 +0000"
+    },
+    {
+      "title": "ECB deploys Pontes platform to settle wholesale tokenized assets in central-bank money",
+      "link": "https://www.coindesk.com/business/2026/09/21/ecb-deploys-pontes-platform-to-settle-wholesale-tokenized-assets-in-central-bank-money",
+      "pubDate": "Mon, 21 Sep 2026 11:18:55 +0000"
+    },
+    {
+      "title": "Bitcoin hits $85,000 as short squeeze forces out $648 million of bearish bets",
+      "link": "https://www.coindesk.com/markets/2026/09/21/bitcoin-hits-usd85-000-as-short-squeeze-forces-out-usd648-million-of-bearish-bets",
+      "pubDate": "Mon, 21 Sep 2026 10:30:00 +0000"
+    },
+    {
+      "title": "X sues its own users for running a fake bitcoin news bot farm",
+      "link": "https://www.coindesk.com/markets/2026/09/21/x-sues-its-won-users-for-running-a-fake-bitcoin-news-bot-farm",
+      "pubDate": "Mon, 21 Sep 2026 10:15:44 +0000"
+    },
+    {
+      "title": "Crypto enjoys bullish bounce post-Fed rate hike: Crypto Week Ahead",
+      "link": "https://www.coindesk.com/markets/2026/09/21/crypto-week-ahead",
+      "pubDate": "Mon, 21 Sep 2026 09:12:42 +0000"
+    },
+    {
+      "title": "Hana Bank issues South Korea’s first digital bond using Euroclear’s blockchain",
+      "link": "https://www.coindesk.com/business/2026/09/21/hana-bank-issues-south-korea-s-first-digital-bond-using-euroclear-s-blockchain",
+      "pubDate": "Mon, 21 Sep 2026 08:49:59 +0000"
+    },
+    {
+      "title": "Live updates: Bitcoin hits $85,000 as short liquidations hit $300 million in an hour",
+      "link": "https://www.coindesk.com/business/2026/09/21/live-updates-bitcoin-rises-above-usd82-000-as-falling-oil-lifts-risk-assets",
+      "pubDate": "Mon, 21 Sep 2026 08:39:26 +0000"
+    },
+    {
+      "title": "Kalshi faces ‘fake crypto volume’ allegations as critic flags identical $5,500 trades",
+      "link": "https://www.coindesk.com/markets/2026/09/21/kalshi-s-crypto-chief-responds-to-fake-crypto-volume-allegations-as-critic-flags-identical-usd5-500-trades",
+      "pubDate": "Mon, 21 Sep 2026 06:20:47 +0000"
+    },
+    {
       "title": "Bitcoin rises above $81,000, while NEAR jumps 23% on Zcash swap traffic",
       "link": "https://www.coindesk.com/markets/2026/09/21/bitcoin-rises-above-usd81-000-while-near-jumps-23-on-zcash-swap-traffic",
       "pubDate": "Mon, 21 Sep 2026 04:03:43 +0000"
-    },
-    {
-      "title": "Bitcoin’s price has cleared a key hurdle that has historically preceded major bull runs",
-      "link": "https://www.coindesk.com/markets/2026/09/21/bitcoin-s-price-has-cleared-a-key-hurdle-that-has-historically-preceded-major-bull-runs",
-      "pubDate": "Mon, 21 Sep 2026 03:56:23 +0000"
-    },
-    {
-      "title": "Crypto platform Gemini’s stock is down 80% from its IPO. That’s reviving takeover speculation",
-      "link": "https://www.coindesk.com/business/2026/09/20/gemini-s-stock-is-down-80-from-its-ipo-that-s-reviving-takeover-speculation",
-      "pubDate": "Sun, 20 Sep 2026 14:54:48 +0000"
-    },
-    {
-      "title": "Coinbase, Robinhood, Circle could be early winners of SEC's tokenized-stock push, analysts say",
-      "link": "https://www.coindesk.com/business/2026/09/20/coinbase-robinhood-circle-could-be-early-winners-of-sec-s-tokenized-stock-push-analysts-say",
-      "pubDate": "Sun, 20 Sep 2026 12:00:00 +0000"
-    },
-    {
-      "title": "Crypto traders braced for a total wipeout this week but Bitcoin had other plans",
-      "link": "https://www.coindesk.com/markets/2026/09/18/crypto-traders-braced-for-a-total-wipeout-this-week-but-bitcoin-had-other-plans",
-      "pubDate": "Sun, 20 Sep 2026 12:00:00 +0000"
-    },
-    {
-      "title": "Clarity Act, we hardly knew ye: We look at what was in the bill and what's replacing it",
-      "link": "https://www.coindesk.com/news-analysis/2026/09/18/clarity-act-we-hardly-knew-ye-we-look-at-what-was-in-the-bill-and-what-s-replacing-it",
-      "pubDate": "Sat, 19 Sep 2026 16:00:00 +0000"
-    },
-    {
-      "title": "'We have lost control': Crypto pioneer warns AI could trigger systemic banking and infrastructure shocks",
-      "link": "https://www.coindesk.com/markets/2026/09/17/we-have-lost-control-crypto-pioneer-warns-ai-could-trigger-systemic-banking-and-infrastructure-shocks",
-      "pubDate": "Sat, 19 Sep 2026 14:00:00 +0000"
-    },
-    {
-      "title": "Ripple says asset managers are preparing for XRP Ledger’s next payments upgrade",
-      "link": "https://www.coindesk.com/tech/2026/09/19/ripple-says-asset-managers-are-preparing-for-xrp-ledger-s-next-payments-upgrade",
-      "pubDate": "Sat, 19 Sep 2026 13:39:15 +0000"
-    },
-    {
-      "title": "'The orange tie stays': Michael Saylor responds to venture capitalist's bitcoin obituary",
-      "link": "https://www.coindesk.com/markets/2026/09/19/the-orange-tie-stays-michael-saylor-responds-to-venture-capitalist-s-bitcoin-obituary",
-      "pubDate": "Sat, 19 Sep 2026 12:13:57 +0000"
-    },
-    {
-      "title": "Robinhood Chain fees collapse 97% even as transactions stay near record highs",
-      "link": "https://www.coindesk.com/business/2026/09/19/robinhood-chain-fees-collapse-97-even-as-transactions-stay-near-record-highs",
-      "pubDate": "Sat, 19 Sep 2026 12:00:00 +0000"
-    },
-    {
-      "title": "Why Wall Street giants build tokenization money for institutions, not regular consumers",
-      "link": "https://www.coindesk.com/business/2026/09/15/why-wall-street-giants-build-tokenization-money-for-institutions-not-regular-consumers",
-      "pubDate": "Sat, 19 Sep 2026 12:00:00 +0000"
-    },
-    {
-      "title": "CFTC sends crypto rules to White House to review as Congress stalls on Clarity Act",
-      "link": "https://www.coindesk.com/policy/2026/09/18/cftc-sends-crypto-rules-to-white-house-to-review-as-congress-stalls-on-clarity-act",
-      "pubDate": "Fri, 18 Sep 2026 15:16:37 +0000"
     }
   ]
 }
