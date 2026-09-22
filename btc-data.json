@@ -1,13 +1,13 @@
 {
-  "fetchedAt": "2026-09-22T04:48:51.822Z",
+  "fetchedAt": "2026-09-22T11:30:41.657Z",
   "price": {
-    "usd": 85507,
-    "time": 1790052310
+    "usd": 86032,
+    "time": 1790076310
   },
   "moves": {
-    "d1": -1.2584076975189817,
-    "d7": 13.119094027324852,
-    "d30": 10.030172691093098
+    "d1": -0.6521493097986553,
+    "d7": 13.813628093124674,
+    "d30": 10.705741248788069
   },
   "history90d": [
     {
@@ -372,60 +372,100 @@
     },
     {
       "date": "2026-09-22",
-      "close": 85472.02371569423
+      "close": 85934.1849569419
     }
   ],
   "blocks": [
     {
-      "height": 968098,
-      "id": "00000000000000000001031bd89bec8902c70d5601192bc07e1c086707614880",
-      "timestamp": 1790052259,
-      "txCount": 7076
+      "height": 968137,
+      "id": "0000000000000000000028042756cb14dd572dd63dd83bc58431d73bf1179ac6",
+      "timestamp": 1790076355,
+      "txCount": 4454
     },
     {
-      "height": 968097,
-      "id": "00000000000000000000d40307a2cfc1a1e92207b004dcc32f3e2a1ab242fb03",
-      "timestamp": 1790052195,
-      "txCount": 7323
+      "height": 968136,
+      "id": "0000000000000000000148c293f2c4cfd9aebbe881e25b7159f5eea095ee27b1",
+      "timestamp": 1790075250,
+      "txCount": 4097
     },
     {
-      "height": 968096,
-      "id": "00000000000000000001c0bc5a530ca2a4acf48c74f042294d4bc4dfa5d7fde6",
-      "timestamp": 1790052605,
-      "txCount": 59
+      "height": 968135,
+      "id": "00000000000000000000e9b32a9c8ca8486da30c86a3c32eda90e60581681ff4",
+      "timestamp": 1790074433,
+      "txCount": 4731
     },
     {
-      "height": 968095,
-      "id": "0000000000000000000193718c8a2c7462c07fd17c61b2298bf8c246d3cb336e",
-      "timestamp": 1790052148,
-      "txCount": 5373
+      "height": 968134,
+      "id": "000000000000000000021161bd9e4aee8e4a16db17a8b17eaee6d40298d28e69",
+      "timestamp": 1790074012,
+      "txCount": 2267
     },
     {
-      "height": 968094,
-      "id": "000000000000000000001e2cec7cfee3d71fb754c57e0497587188e789c3934c",
-      "timestamp": 1790051740,
-      "txCount": 6137
+      "height": 968133,
+      "id": "000000000000000000020776ce79d7212aa3e1b5bfd1d326957a7ff44ad2ca5c",
+      "timestamp": 1790073886,
+      "txCount": 4058
     },
     {
-      "height": 968093,
-      "id": "00000000000000000001018510229429a50edd53243e1d8265f063e1ffa38554",
-      "timestamp": 1790051554,
-      "txCount": 6055
+      "height": 968132,
+      "id": "00000000000000000001a163a4ef5a112108071bd3de134946d2bbc0422c7668",
+      "timestamp": 1790072602,
+      "txCount": 2919
     },
     {
-      "height": 968092,
-      "id": "00000000000000000001fee5853f3cc381313d49861d65b881ff31b95228dbf6",
-      "timestamp": 1790051334,
-      "txCount": 5506
+      "height": 968131,
+      "id": "00000000000000000000714fe3b4f2ebc2c0e3923c182e49f26bc6d812e58233",
+      "timestamp": 1790072352,
+      "txCount": 4129
     },
     {
-      "height": 968091,
-      "id": "00000000000000000001a9690637e05c0a683a1f5fe3452e69b4d8a04a846674",
-      "timestamp": 1790050800,
-      "txCount": 6376
+      "height": 968130,
+      "id": "00000000000000000000170ef253f4d29e92d87ab5b012977b57f71e93e30adc",
+      "timestamp": 1790071500,
+      "txCount": 3987
     }
   ],
   "news": [
+    {
+      "title": "Binance buys $100 million Circle stake in five-year USDC promotion deal",
+      "link": "https://www.coindesk.com/policy/2026/09/22/binance-buys-usd100-million-circle-stake-in-five-year-usdc-promotion-deal",
+      "pubDate": "Tue, 22 Sep 2026 11:07:23 +0000"
+    },
+    {
+      "title": "Bitcoin recovers from Asian-session lows as falling oil price supports risk appetite",
+      "link": "https://www.coindesk.com/markets/2026/09/22/bitcoin-recovers-from-asian-session-lows-as-falling-oil-price-supports-risk-appetite",
+      "pubDate": "Tue, 22 Sep 2026 10:59:03 +0000"
+    },
+    {
+      "title": "Live updates: Oil falls as Iran signals possible Hormuz reopening, bitcoin holds near $86,000",
+      "link": "https://www.coindesk.com/markets/2026/09/22/live-updates-oil-falls-as-iran-signals-possible-hormuz-reopening-bitcoin-holds-near-usd86-000",
+      "pubDate": "Tue, 22 Sep 2026 10:20:12 +0000"
+    },
+    {
+      "title": "Binance probed by U.S. federal prosecutors for sanctions violations: Bloomberg",
+      "link": "https://www.coindesk.com/policy/2026/09/22/binance-probed-by-u-s-federal-prosecutors-for-sanctions-violations-bloomberg",
+      "pubDate": "Tue, 22 Sep 2026 10:07:52 +0000"
+    },
+    {
+      "title": "Animoca Brands delays IPO plans, suspends merger talks with Currenc",
+      "link": "https://www.coindesk.com/business/2026/09/22/animoca-brands-delays-ipo-plans-suspends-merger-talks-with-currenc",
+      "pubDate": "Tue, 22 Sep 2026 09:47:15 +0000"
+    },
+    {
+      "title": "Spot bitcoin ETFs attracted nearly $1 billion on Monday, the 9th largest inflow ever",
+      "link": "https://www.coindesk.com/markets/2026/09/22/spot-bitcoin-etfs-attracted-nearly-usd1-billion-on-monday-the-9th-largest-inflow-ever",
+      "pubDate": "Tue, 22 Sep 2026 07:40:41 +0000"
+    },
+    {
+      "title": "Whitehats move 52 bitcoin from the Coldcard hack to a recovery trust",
+      "link": "https://www.coindesk.com/markets/2026/09/22/whitehats-move-52-bitcoin-from-the-coldcard-hack-to-a-recovery-trust",
+      "pubDate": "Tue, 22 Sep 2026 06:27:28 +0000"
+    },
+    {
+      "title": "Elon Musk's X brings bitcoin and stock trading closer to the timeline",
+      "link": "https://www.coindesk.com/markets/2026/09/22/elon-musk-s-x-brings-bitcoin-and-stock-trading-closer-to-the-timeline",
+      "pubDate": "Tue, 22 Sep 2026 05:26:00 +0000"
+    },
     {
       "title": "Dogecoin leads market rebound with 15% pump, bitcoin steady above $85,000",
       "link": "https://www.coindesk.com/markets/2026/09/22/dogecoin-leads-market-rebound-with-15-pump-bitcoin-steady-above-usd85-000",
@@ -445,46 +485,6 @@
       "title": "Why this investment bank expects little demand for tokenized stocks despite SEC’s new trading rules",
       "link": "https://www.coindesk.com/markets/2026/09/21/why-this-investment-bank-sees-little-demand-for-tokenized-stocks-despite-sec-s-new-trading-rules",
       "pubDate": "Mon, 21 Sep 2026 19:08:40 +0000"
-    },
-    {
-      "title": "Crypto political group plans to spend $30 million against Sherrod Brown's Senate bid",
-      "link": "https://www.coindesk.com/news-analysis/2026/09/21/crypto-s-fairshake-repeats-history-with-usd30-million-to-oppose-sherrod-brown-senate-bid",
-      "pubDate": "Mon, 21 Sep 2026 16:01:36 +0000"
-    },
-    {
-      "title": "ECB plans to buy tokenized bonds with its own funds",
-      "link": "https://www.coindesk.com/policy/2026/09/21/ecb-announces-it-will-invest-in-tokenized-securities-via-new-pontes-platform",
-      "pubDate": "Mon, 21 Sep 2026 15:00:47 +0000"
-    },
-    {
-      "title": "Why banks and offshore hubs like Dubai are winners of the Senate killing the Clarity Act",
-      "link": "https://www.coindesk.com/policy/2026/09/21/banks-overseas-crypto-hubs-gain-from-clarity-act-s-senate-defeat-critics-say",
-      "pubDate": "Mon, 21 Sep 2026 14:53:52 +0000"
-    },
-    {
-      "title": "Bitmine bought $75 million ether as Tom Lee says institutions are still underweight crypto",
-      "link": "https://www.coindesk.com/business/2026/09/21/bitmine-bought-usd75-million-ether-as-tom-lee-says-institutions-are-still-underweight-crypto",
-      "pubDate": "Mon, 21 Sep 2026 13:11:15 +0000"
-    },
-    {
-      "title": "Treasury Secretary Scott Bessent champions dollar dominance across global markets and stablecoins",
-      "link": "https://www.coindesk.com/markets/2026/09/21/scott-bessent-champions-dollar-dominance-across-global-markets-and-stablecoins",
-      "pubDate": "Mon, 21 Sep 2026 12:44:33 +0000"
-    },
-    {
-      "title": "Google and Apple seek crypto talent as Big Tech eyes stablecoin and tokenization rails",
-      "link": "https://www.coindesk.com/business/2026/09/21/google-and-apple-seek-crypto-talent-as-big-tech-eyes-stablecoin-and-tokenization-rails",
-      "pubDate": "Mon, 21 Sep 2026 12:17:48 +0000"
-    },
-    {
-      "title": "Strategy returns to bitcoin buys, adding $75 million of BTC last week",
-      "link": "https://www.coindesk.com/markets/2026/09/21/strategy-returns-to-bitcoin-buys-adding-usd75-million-of-btc-last-week",
-      "pubDate": "Mon, 21 Sep 2026 12:08:02 +0000"
-    },
-    {
-      "title": "Bitcoin's 44% gain in third quarter teases full-blown crypto bull run",
-      "link": "https://www.coindesk.com/daybook-us/2026/09/21/bitcoin-s-44-gain-in-third-quarter-teases-full-blown-crypto-bull-run",
-      "pubDate": "Mon, 21 Sep 2026 11:36:11 +0000"
     }
   ]
 }
