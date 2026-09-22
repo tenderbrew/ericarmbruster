@@ -1,13 +1,13 @@
 {
-  "fetchedAt": "2026-09-22T16:53:17.454Z",
+  "fetchedAt": "2026-09-22T21:14:46.465Z",
   "price": {
-    "usd": 86393,
-    "time": 1790095814
+    "usd": 86245,
+    "time": 1790111415
   },
   "moves": {
-    "d1": -0.23527449462333871,
-    "d7": 14.291202945988935,
-    "d30": 11.170275057031652
+    "d1": -0.40618162106640376,
+    "d7": 14.095410485534888,
+    "d30": 10.979829063624313
   },
   "history90d": [
     {
@@ -372,60 +372,70 @@
     },
     {
       "date": "2026-09-22",
-      "close": 86465.77800804914
+      "close": 86261.61614173367
     }
   ],
   "blocks": [
     {
-      "height": 968165,
-      "id": "0000000000000000000181bb5b2babb51e70abae4203997f16fb4619252e38f4",
-      "timestamp": 1790094583,
-      "txCount": 4419
+      "height": 968185,
+      "id": "00000000000000000000730e6112e988e8ef4e6b4977754e009b998318bc3dd9",
+      "timestamp": 1790111293,
+      "txCount": 951
     },
     {
-      "height": 968164,
-      "id": "00000000000000000001fb1b89e6834f889ef4c1edb97a6adf776445c115a238",
-      "timestamp": 1790093808,
-      "txCount": 5831
+      "height": 968184,
+      "id": "00000000000000000001537a035f352b5387751d9fe83e65b003ce2a838fe840",
+      "timestamp": 1790111228,
+      "txCount": 3435
     },
     {
-      "height": 968163,
-      "id": "00000000000000000000c8aaa764045a73d12f0c29920cc533e42e46a42048bb",
-      "timestamp": 1790093660,
-      "txCount": 3942
+      "height": 968183,
+      "id": "00000000000000000001cae9c5bdb54b508125b72e52ad2de5c37600d60ae2e1",
+      "timestamp": 1790111006,
+      "txCount": 3810
     },
     {
-      "height": 968162,
-      "id": "00000000000000000001d7347cfce6ce590e464d241be8e35b1b5e8f24006c82",
-      "timestamp": 1790093261,
-      "txCount": 4446
+      "height": 968182,
+      "id": "0000000000000000000137613bac42922d9dd2f276f2387ede666a336102c278",
+      "timestamp": 1790110607,
+      "txCount": 2939
     },
     {
-      "height": 968161,
-      "id": "00000000000000000001c5aa27792733092c27e684f399083305e32b15572dac",
-      "timestamp": 1790092016,
-      "txCount": 6127
+      "height": 968181,
+      "id": "000000000000000000011ddb64e0df550aba6348f2d6370d1df3498b16e83fbb",
+      "timestamp": 1790109730,
+      "txCount": 3292
     },
     {
-      "height": 968160,
-      "id": "0000000000000000000065f2ad5baa3f11a0f43202bfde35f27ba79b5ea7e17c",
-      "timestamp": 1790091744,
-      "txCount": 4151
+      "height": 968180,
+      "id": "000000000000000000013a0facdef8f64d207f2ec3b0924f68eeac87908a58dd",
+      "timestamp": 1790109120,
+      "txCount": 3095
     },
     {
-      "height": 968159,
-      "id": "00000000000000000001830e247fd5490b9513be56e76b45edcf1ee5d927bb71",
-      "timestamp": 1790091668,
-      "txCount": 3998
+      "height": 968179,
+      "id": "00000000000000000001ff8d49256a90cd3bbda56917c2719522f0f12aca62f3",
+      "timestamp": 1790108417,
+      "txCount": 3654
     },
     {
-      "height": 968158,
-      "id": "000000000000000000001eca242672b99eea99614732355765bdd45d0946ed1d",
-      "timestamp": 1790091306,
-      "txCount": 4106
+      "height": 968178,
+      "id": "0000000000000000000144c229bb008ee6d419674d35da56849f828c4d1ecebc",
+      "timestamp": 1790108031,
+      "txCount": 3145
     }
   ],
   "news": [
+    {
+      "title": "Crypto market structure can't wait for shot at post-election Clarity Act surge: White House",
+      "link": "https://www.coindesk.com/policy/2026/09/22/crypto-market-structure-can-t-wait-for-shot-at-post-election-clarity-act-surge-white-house",
+      "pubDate": "Tue, 22 Sep 2026 20:31:02 +0000"
+    },
+    {
+      "title": "Canada's 'Big Six' banks to launch interbank tokenized deposit initiative",
+      "link": "https://www.coindesk.com/business/2026/09/22/canada-s-big-six-banks-unite-to-launch-interbank-tokenized-deposit-initiative",
+      "pubDate": "Tue, 22 Sep 2026 17:34:03 +0000"
+    },
     {
       "title": "Next for the U.S. SEC: Agency's chief crypto counsel illuminates path for custody",
       "link": "https://www.coindesk.com/policy/2026/09/22/next-for-the-u-s-sec-agency-s-chief-crypto-counsel-illuminates-path-for-custody",
@@ -475,16 +485,6 @@
       "title": "Animoca Brands delays IPO plans, suspends merger talks with Currenc",
       "link": "https://www.coindesk.com/business/2026/09/22/animoca-brands-delays-ipo-plans-suspends-merger-talks-with-currenc",
       "pubDate": "Tue, 22 Sep 2026 09:47:15 +0000"
-    },
-    {
-      "title": "Spot bitcoin ETFs attracted nearly $1 billion on Monday, the 9th largest inflow ever",
-      "link": "https://www.coindesk.com/markets/2026/09/22/spot-bitcoin-etfs-attracted-nearly-usd1-billion-on-monday-the-9th-largest-inflow-ever",
-      "pubDate": "Tue, 22 Sep 2026 07:40:41 +0000"
-    },
-    {
-      "title": "Whitehats move 52 bitcoin from the Coldcard hack to a recovery trust",
-      "link": "https://www.coindesk.com/markets/2026/09/22/whitehats-move-52-bitcoin-from-the-coldcard-hack-to-a-recovery-trust",
-      "pubDate": "Tue, 22 Sep 2026 06:27:28 +0000"
     }
   ]
 }
