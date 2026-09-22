@@ -1,19 +1,15 @@
 {
-  "fetchedAt": "2026-09-22T00:03:30.370Z",
+  "fetchedAt": "2026-09-22T04:48:51.822Z",
   "price": {
-    "usd": 86561,
-    "time": 1790034909
+    "usd": 85507,
+    "time": 1790052310
   },
   "moves": {
-    "d1": 6.642884041385311,
-    "d7": 10.729549452158071,
-    "d30": 12.29871717091704
+    "d1": -1.2584076975189817,
+    "d7": 13.119094027324852,
+    "d30": 10.030172691093098
   },
   "history90d": [
-    {
-      "date": "2026-06-24",
-      "close": 62662.29201921944
-    },
     {
       "date": "2026-06-25",
       "close": 60989.57352152134
@@ -372,60 +368,74 @@
     },
     {
       "date": "2026-09-22",
-      "close": 86592.11181581092
+      "close": 86596.74004249526
+    },
+    {
+      "date": "2026-09-22",
+      "close": 85472.02371569423
     }
   ],
   "blocks": [
     {
-      "height": 968062,
-      "id": "000000000000000000012037f1c4d051949a76cadfab0657f651685bf919e772",
-      "timestamp": 1790035063,
-      "txCount": 4954
+      "height": 968098,
+      "id": "00000000000000000001031bd89bec8902c70d5601192bc07e1c086707614880",
+      "timestamp": 1790052259,
+      "txCount": 7076
     },
     {
-      "height": 968061,
-      "id": "0000000000000000000067ee4f4bb137e02ab3314b6328deb271aa61188d5caa",
-      "timestamp": 1790034386,
-      "txCount": 5482
+      "height": 968097,
+      "id": "00000000000000000000d40307a2cfc1a1e92207b004dcc32f3e2a1ab242fb03",
+      "timestamp": 1790052195,
+      "txCount": 7323
     },
     {
-      "height": 968060,
-      "id": "000000000000000000007dd5b3e5dc13ba05e74e850dc912f1cd3309c56168d8",
-      "timestamp": 1790034246,
-      "txCount": 6496
+      "height": 968096,
+      "id": "00000000000000000001c0bc5a530ca2a4acf48c74f042294d4bc4dfa5d7fde6",
+      "timestamp": 1790052605,
+      "txCount": 59
     },
     {
-      "height": 968059,
-      "id": "00000000000000000001255492640fbb28c6cdd5c1b01ad05d748fb0ef9a0a27",
-      "timestamp": 1790034228,
-      "txCount": 6586
+      "height": 968095,
+      "id": "0000000000000000000193718c8a2c7462c07fd17c61b2298bf8c246d3cb336e",
+      "timestamp": 1790052148,
+      "txCount": 5373
     },
     {
-      "height": 968058,
-      "id": "000000000000000000009a087961d8e5d3fa79c84f97cfc5263bfe9bb3dd2052",
-      "timestamp": 1790033938,
-      "txCount": 5834
+      "height": 968094,
+      "id": "000000000000000000001e2cec7cfee3d71fb754c57e0497587188e789c3934c",
+      "timestamp": 1790051740,
+      "txCount": 6137
     },
     {
-      "height": 968057,
-      "id": "00000000000000000001e784d3132be720ed256b98b5a4583748db6e398bc8bb",
-      "timestamp": 1790033634,
-      "txCount": 4145
+      "height": 968093,
+      "id": "00000000000000000001018510229429a50edd53243e1d8265f063e1ffa38554",
+      "timestamp": 1790051554,
+      "txCount": 6055
     },
     {
-      "height": 968056,
-      "id": "0000000000000000000034d30a0a8c0420868610e0318a165e1655cd5c75e4eb",
-      "timestamp": 1790033052,
-      "txCount": 3786
+      "height": 968092,
+      "id": "00000000000000000001fee5853f3cc381313d49861d65b881ff31b95228dbf6",
+      "timestamp": 1790051334,
+      "txCount": 5506
     },
     {
-      "height": 968055,
-      "id": "00000000000000000000616784386e9334c0945c3dd672a6ca177425e6c420a7",
-      "timestamp": 1790032277,
-      "txCount": 4659
+      "height": 968091,
+      "id": "00000000000000000001a9690637e05c0a683a1f5fe3452e69b4d8a04a846674",
+      "timestamp": 1790050800,
+      "txCount": 6376
     }
   ],
   "news": [
+    {
+      "title": "Dogecoin leads market rebound with 15% pump, bitcoin steady above $85,000",
+      "link": "https://www.coindesk.com/markets/2026/09/22/dogecoin-leads-market-rebound-with-15-pump-bitcoin-steady-above-usd85-000",
+      "pubDate": "Tue, 22 Sep 2026 04:33:11 +0000"
+    },
+    {
+      "title": "Cardano joins Solana, XRP Ledger in race to power AI agent payments",
+      "link": "https://www.coindesk.com/tech/2026/09/21/cardano-joins-solana-xrp-ledger-in-race-to-power-ai-agent-payments",
+      "pubDate": "Tue, 22 Sep 2026 04:15:45 +0000"
+    },
     {
       "title": "Bitcoin could test $90,000 after shorts get squeezed, but traders warn leverage is building",
       "link": "https://www.coindesk.com/markets/2026/09/21/bitcoin-could-test-usd90-000-after-shorts-get-squeezed-but-traders-warn-leverage-is-building",
@@ -475,16 +485,6 @@
       "title": "Bitcoin's 44% gain in third quarter teases full-blown crypto bull run",
       "link": "https://www.coindesk.com/daybook-us/2026/09/21/bitcoin-s-44-gain-in-third-quarter-teases-full-blown-crypto-bull-run",
       "pubDate": "Mon, 21 Sep 2026 11:36:11 +0000"
-    },
-    {
-      "title": "Perp futures linked to 'bitcoin VIX' debut on Hyperliquid",
-      "link": "https://www.coindesk.com/markets/2026/09/21/perp-futures-linked-to-bitcoin-vix-debut-on-hyperliquid",
-      "pubDate": "Mon, 21 Sep 2026 11:30:00 +0000"
-    },
-    {
-      "title": "ECB deploys Pontes platform to settle wholesale tokenized assets in central-bank money",
-      "link": "https://www.coindesk.com/business/2026/09/21/ecb-deploys-pontes-platform-to-settle-wholesale-tokenized-assets-in-central-bank-money",
-      "pubDate": "Mon, 21 Sep 2026 11:18:55 +0000"
     }
   ]
 }
