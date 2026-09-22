@@ -1,13 +1,13 @@
 {
-  "fetchedAt": "2026-09-21T19:57:49.494Z",
+  "fetchedAt": "2026-09-22T00:03:30.370Z",
   "price": {
-    "usd": 86519,
-    "time": 1790020210
+    "usd": 86561,
+    "time": 1790034909
   },
   "moves": {
-    "d1": 6.5911401714007,
-    "d7": 10.675822703657122,
-    "d30": 12.24422905131146
+    "d1": 6.642884041385311,
+    "d7": 10.729549452158071,
+    "d30": 12.29871717091704
   },
   "history90d": [
     {
@@ -371,61 +371,66 @@
       "close": 81169.03511950027
     },
     {
-      "date": "2026-09-21",
-      "close": 86595.32432231789
+      "date": "2026-09-22",
+      "close": 86592.11181581092
     }
   ],
   "blocks": [
     {
-      "height": 968037,
-      "id": "00000000000000000001e7a93b4875cd9fc207be6dc9719892efd47e1fb17109",
-      "timestamp": 1790020193,
-      "txCount": 3609
+      "height": 968062,
+      "id": "000000000000000000012037f1c4d051949a76cadfab0657f651685bf919e772",
+      "timestamp": 1790035063,
+      "txCount": 4954
     },
     {
-      "height": 968036,
-      "id": "00000000000000000000579158f45d0fafb7d4e01e160781760ebe55736ce929",
-      "timestamp": 1790019488,
-      "txCount": 4428
+      "height": 968061,
+      "id": "0000000000000000000067ee4f4bb137e02ab3314b6328deb271aa61188d5caa",
+      "timestamp": 1790034386,
+      "txCount": 5482
     },
     {
-      "height": 968035,
-      "id": "00000000000000000000aa2916595850fcd9b31ddcc36517bd002b6bb730c5eb",
-      "timestamp": 1790019206,
-      "txCount": 3743
+      "height": 968060,
+      "id": "000000000000000000007dd5b3e5dc13ba05e74e850dc912f1cd3309c56168d8",
+      "timestamp": 1790034246,
+      "txCount": 6496
     },
     {
-      "height": 968034,
-      "id": "000000000000000000019d6eb359cd11f23db58fd944816d68c6a386cb295f29",
-      "timestamp": 1790018592,
-      "txCount": 4085
+      "height": 968059,
+      "id": "00000000000000000001255492640fbb28c6cdd5c1b01ad05d748fb0ef9a0a27",
+      "timestamp": 1790034228,
+      "txCount": 6586
     },
     {
-      "height": 968033,
-      "id": "000000000000000000008da908fdd8cc084e73fa5eb2044b13af2c05e208244f",
-      "timestamp": 1790017965,
-      "txCount": 3111
+      "height": 968058,
+      "id": "000000000000000000009a087961d8e5d3fa79c84f97cfc5263bfe9bb3dd2052",
+      "timestamp": 1790033938,
+      "txCount": 5834
     },
     {
-      "height": 968032,
-      "id": "00000000000000000001f387005c18981389fb0ec3e368959adc21c5e4570957",
-      "timestamp": 1790017686,
-      "txCount": 3352
+      "height": 968057,
+      "id": "00000000000000000001e784d3132be720ed256b98b5a4583748db6e398bc8bb",
+      "timestamp": 1790033634,
+      "txCount": 4145
     },
     {
-      "height": 968031,
-      "id": "00000000000000000001ef4f81596f11e04610e00b3e88153a173566acdba88c",
-      "timestamp": 1790017351,
-      "txCount": 3181
+      "height": 968056,
+      "id": "0000000000000000000034d30a0a8c0420868610e0318a165e1655cd5c75e4eb",
+      "timestamp": 1790033052,
+      "txCount": 3786
     },
     {
-      "height": 968030,
-      "id": "00000000000000000000a6e69817c8f95ae96ee33ba32f5ea6f7d6a30c4beeea",
-      "timestamp": 1790016818,
-      "txCount": 3669
+      "height": 968055,
+      "id": "00000000000000000000616784386e9334c0945c3dd672a6ca177425e6c420a7",
+      "timestamp": 1790032277,
+      "txCount": 4659
     }
   ],
   "news": [
+    {
+      "title": "Bitcoin could test $90,000 after shorts get squeezed, but traders warn leverage is building",
+      "link": "https://www.coindesk.com/markets/2026/09/21/bitcoin-could-test-usd90-000-after-shorts-get-squeezed-but-traders-warn-leverage-is-building",
+      "pubDate": "Mon, 21 Sep 2026 20:39:39 +0000"
+    },
     {
       "title": "Why this investment bank expects little demand for tokenized stocks despite SEC’s new trading rules",
       "link": "https://www.coindesk.com/markets/2026/09/21/why-this-investment-bank-sees-little-demand-for-tokenized-stocks-despite-sec-s-new-trading-rules",
@@ -480,11 +485,6 @@
       "title": "ECB deploys Pontes platform to settle wholesale tokenized assets in central-bank money",
       "link": "https://www.coindesk.com/business/2026/09/21/ecb-deploys-pontes-platform-to-settle-wholesale-tokenized-assets-in-central-bank-money",
       "pubDate": "Mon, 21 Sep 2026 11:18:55 +0000"
-    },
-    {
-      "title": "Bitcoin hits $85,000 as short squeeze forces out $648 million of bearish bets",
-      "link": "https://www.coindesk.com/markets/2026/09/21/bitcoin-hits-usd85-000-as-short-squeeze-forces-out-usd648-million-of-bearish-bets",
-      "pubDate": "Mon, 21 Sep 2026 10:30:00 +0000"
     }
   ]
 }
