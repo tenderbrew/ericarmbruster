@@ -1,13 +1,13 @@
 {
-  "fetchedAt": "2026-09-22T21:14:46.465Z",
+  "fetchedAt": "2026-09-22T23:36:01.292Z",
   "price": {
-    "usd": 86245,
-    "time": 1790111415
+    "usd": 86222,
+    "time": 1790119810
   },
   "moves": {
-    "d1": -0.40618162106640376,
-    "d7": 14.095410485534888,
-    "d30": 10.979829063624313
+    "d1": -0.4327415123379641,
+    "d7": 14.064983278842714,
+    "d30": 10.950232726811016
   },
   "history90d": [
     {
@@ -372,60 +372,65 @@
     },
     {
       "date": "2026-09-22",
-      "close": 86261.61614173367
+      "close": 86125.24644569216
     }
   ],
   "blocks": [
     {
-      "height": 968185,
-      "id": "00000000000000000000730e6112e988e8ef4e6b4977754e009b998318bc3dd9",
-      "timestamp": 1790111293,
-      "txCount": 951
+      "height": 968201,
+      "id": "00000000000000000001d575745157b8688344f264b6f712fbb3d24fe18b018b",
+      "timestamp": 1790119888,
+      "txCount": 3522
     },
     {
-      "height": 968184,
-      "id": "00000000000000000001537a035f352b5387751d9fe83e65b003ce2a838fe840",
-      "timestamp": 1790111228,
-      "txCount": 3435
+      "height": 968200,
+      "id": "00000000000000000000293839a8d15c71ca4c51500351d55e3008b28712965d",
+      "timestamp": 1790119181,
+      "txCount": 3356
     },
     {
-      "height": 968183,
-      "id": "00000000000000000001cae9c5bdb54b508125b72e52ad2de5c37600d60ae2e1",
-      "timestamp": 1790111006,
-      "txCount": 3810
+      "height": 968199,
+      "id": "000000000000000000016c7fe83cccb0a0d1a8543f48f5bc6a9a4accc9b40336",
+      "timestamp": 1790118466,
+      "txCount": 4225
     },
     {
-      "height": 968182,
-      "id": "0000000000000000000137613bac42922d9dd2f276f2387ede666a336102c278",
-      "timestamp": 1790110607,
-      "txCount": 2939
+      "height": 968198,
+      "id": "00000000000000000001930697e6747c7c434fe71470a0b0ffe567fdf6f72c4f",
+      "timestamp": 1790118388,
+      "txCount": 4097
     },
     {
-      "height": 968181,
-      "id": "000000000000000000011ddb64e0df550aba6348f2d6370d1df3498b16e83fbb",
-      "timestamp": 1790109730,
-      "txCount": 3292
+      "height": 968197,
+      "id": "0000000000000000000037d4b9d8505c8d65f85e9bcbe65d834ccb88f3a9f777",
+      "timestamp": 1790116969,
+      "txCount": 3823
     },
     {
-      "height": 968180,
-      "id": "000000000000000000013a0facdef8f64d207f2ec3b0924f68eeac87908a58dd",
-      "timestamp": 1790109120,
-      "txCount": 3095
+      "height": 968196,
+      "id": "0000000000000000000093a2d970d4cacb98d94627ecc27d423cbca39fd59598",
+      "timestamp": 1790116318,
+      "txCount": 4438
     },
     {
-      "height": 968179,
-      "id": "00000000000000000001ff8d49256a90cd3bbda56917c2719522f0f12aca62f3",
-      "timestamp": 1790108417,
-      "txCount": 3654
+      "height": 968195,
+      "id": "00000000000000000000a03b46b6864340a096c85483c397fa295e44b843958a",
+      "timestamp": 1790114908,
+      "txCount": 4359
     },
     {
-      "height": 968178,
-      "id": "0000000000000000000144c229bb008ee6d419674d35da56849f828c4d1ecebc",
-      "timestamp": 1790108031,
-      "txCount": 3145
+      "height": 968194,
+      "id": "000000000000000000010c282c236d5d82cdba345f9f61f4d0db6b052685aee5",
+      "timestamp": 1790114303,
+      "txCount": 811
     }
   ],
   "news": [
+    {
+      "title": "Democrats 'chose visceral hatred for' Donald Trump over crypto Clarity Act, Lummis says",
+      "link": "https://www.coindesk.com/policy/2026/09/22/democrats-chose-visceral-hatred-for-donald-trump-over-crypto-clarity-act-lummis-says",
+      "pubDate": "Tue, 22 Sep 2026 21:29:05 +0000"
+    },
     {
       "title": "Crypto market structure can't wait for shot at post-election Clarity Act surge: White House",
       "link": "https://www.coindesk.com/policy/2026/09/22/crypto-market-structure-can-t-wait-for-shot-at-post-election-clarity-act-surge-white-house",
@@ -480,11 +485,6 @@
       "title": "Binance probed by U.S. federal prosecutors for sanctions violations: Bloomberg",
       "link": "https://www.coindesk.com/policy/2026/09/22/binance-probed-by-u-s-federal-prosecutors-for-sanctions-violations-bloomberg",
       "pubDate": "Tue, 22 Sep 2026 10:07:52 +0000"
-    },
-    {
-      "title": "Animoca Brands delays IPO plans, suspends merger talks with Currenc",
-      "link": "https://www.coindesk.com/business/2026/09/22/animoca-brands-delays-ipo-plans-suspends-merger-talks-with-currenc",
-      "pubDate": "Tue, 22 Sep 2026 09:47:15 +0000"
     }
   ]
 }
