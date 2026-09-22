@@ -1,13 +1,13 @@
 {
-  "fetchedAt": "2026-09-22T11:30:41.657Z",
+  "fetchedAt": "2026-09-22T16:53:17.454Z",
   "price": {
-    "usd": 86032,
-    "time": 1790076310
+    "usd": 86393,
+    "time": 1790095814
   },
   "moves": {
-    "d1": -0.6521493097986553,
-    "d7": 13.813628093124674,
-    "d30": 10.705741248788069
+    "d1": -0.23527449462333871,
+    "d7": 14.291202945988935,
+    "d30": 11.170275057031652
   },
   "history90d": [
     {
@@ -372,60 +372,85 @@
     },
     {
       "date": "2026-09-22",
-      "close": 85934.1849569419
+      "close": 86465.77800804914
     }
   ],
   "blocks": [
     {
-      "height": 968137,
-      "id": "0000000000000000000028042756cb14dd572dd63dd83bc58431d73bf1179ac6",
-      "timestamp": 1790076355,
-      "txCount": 4454
+      "height": 968165,
+      "id": "0000000000000000000181bb5b2babb51e70abae4203997f16fb4619252e38f4",
+      "timestamp": 1790094583,
+      "txCount": 4419
     },
     {
-      "height": 968136,
-      "id": "0000000000000000000148c293f2c4cfd9aebbe881e25b7159f5eea095ee27b1",
-      "timestamp": 1790075250,
-      "txCount": 4097
+      "height": 968164,
+      "id": "00000000000000000001fb1b89e6834f889ef4c1edb97a6adf776445c115a238",
+      "timestamp": 1790093808,
+      "txCount": 5831
     },
     {
-      "height": 968135,
-      "id": "00000000000000000000e9b32a9c8ca8486da30c86a3c32eda90e60581681ff4",
-      "timestamp": 1790074433,
-      "txCount": 4731
+      "height": 968163,
+      "id": "00000000000000000000c8aaa764045a73d12f0c29920cc533e42e46a42048bb",
+      "timestamp": 1790093660,
+      "txCount": 3942
     },
     {
-      "height": 968134,
-      "id": "000000000000000000021161bd9e4aee8e4a16db17a8b17eaee6d40298d28e69",
-      "timestamp": 1790074012,
-      "txCount": 2267
+      "height": 968162,
+      "id": "00000000000000000001d7347cfce6ce590e464d241be8e35b1b5e8f24006c82",
+      "timestamp": 1790093261,
+      "txCount": 4446
     },
     {
-      "height": 968133,
-      "id": "000000000000000000020776ce79d7212aa3e1b5bfd1d326957a7ff44ad2ca5c",
-      "timestamp": 1790073886,
-      "txCount": 4058
+      "height": 968161,
+      "id": "00000000000000000001c5aa27792733092c27e684f399083305e32b15572dac",
+      "timestamp": 1790092016,
+      "txCount": 6127
     },
     {
-      "height": 968132,
-      "id": "00000000000000000001a163a4ef5a112108071bd3de134946d2bbc0422c7668",
-      "timestamp": 1790072602,
-      "txCount": 2919
+      "height": 968160,
+      "id": "0000000000000000000065f2ad5baa3f11a0f43202bfde35f27ba79b5ea7e17c",
+      "timestamp": 1790091744,
+      "txCount": 4151
     },
     {
-      "height": 968131,
-      "id": "00000000000000000000714fe3b4f2ebc2c0e3923c182e49f26bc6d812e58233",
-      "timestamp": 1790072352,
-      "txCount": 4129
+      "height": 968159,
+      "id": "00000000000000000001830e247fd5490b9513be56e76b45edcf1ee5d927bb71",
+      "timestamp": 1790091668,
+      "txCount": 3998
     },
     {
-      "height": 968130,
-      "id": "00000000000000000000170ef253f4d29e92d87ab5b012977b57f71e93e30adc",
-      "timestamp": 1790071500,
-      "txCount": 3987
+      "height": 968158,
+      "id": "000000000000000000001eca242672b99eea99614732355765bdd45d0946ed1d",
+      "timestamp": 1790091306,
+      "txCount": 4106
     }
   ],
   "news": [
+    {
+      "title": "Next for the U.S. SEC: Agency's chief crypto counsel illuminates path for custody",
+      "link": "https://www.coindesk.com/policy/2026/09/22/next-for-the-u-s-sec-agency-s-chief-crypto-counsel-illuminates-path-for-custody",
+      "pubDate": "Tue, 22 Sep 2026 15:21:28 +0000"
+    },
+    {
+      "title": "European central banks push to expand stablecoin yield ban to crypto lending and staking",
+      "link": "https://www.coindesk.com/policy/2026/09/22/european-central-banks-push-to-expand-stablecoin-yield-ban-to-crypto-lending-and-staking",
+      "pubDate": "Tue, 22 Sep 2026 14:32:59 +0000"
+    },
+    {
+      "title": "Bitcoin, ether perpetual volumes on Kalshi are dominated by an unusual, repetitive trade, data shows",
+      "link": "https://www.coindesk.com/markets/2026/09/21/bitcoin-ether-perpetual-volumes-on-kalshi-are-dominated-by-an-unusual-repetitive-trade-data-shows",
+      "pubDate": "Tue, 22 Sep 2026 12:32:15 +0000"
+    },
+    {
+      "title": "Why Payward-backed Reap is betting on non-USD stablecoins for 24/7 cross-border FX settlement",
+      "link": "https://www.coindesk.com/business/2026/09/22/visa-partner-reap-eyes-local-currency-stablecoins-in-several-countries-for-24-7-onchain-fx",
+      "pubDate": "Tue, 22 Sep 2026 12:05:55 +0000"
+    },
+    {
+      "title": "A $3.2 million 'bitcoin butterfly' option trade bets on $95,000 by the end of October",
+      "link": "https://www.coindesk.com/daybook-us/2026/09/22/a-usd3-2-million-bitcoin-butterfly-option-trade-bets-on-usd95-000-by-the-end-of-october",
+      "pubDate": "Tue, 22 Sep 2026 11:35:43 +0000"
+    },
     {
       "title": "Binance buys $100 million Circle stake in five-year USDC promotion deal",
       "link": "https://www.coindesk.com/policy/2026/09/22/binance-buys-usd100-million-circle-stake-in-five-year-usdc-promotion-deal",
@@ -437,7 +462,7 @@
       "pubDate": "Tue, 22 Sep 2026 10:59:03 +0000"
     },
     {
-      "title": "Live updates: Oil falls as Iran signals possible Hormuz reopening, bitcoin holds near $86,000",
+      "title": "Live updates: Bitcoin trades near $86,000 as U.S. stocks post small gains",
       "link": "https://www.coindesk.com/markets/2026/09/22/live-updates-oil-falls-as-iran-signals-possible-hormuz-reopening-bitcoin-holds-near-usd86-000",
       "pubDate": "Tue, 22 Sep 2026 10:20:12 +0000"
     },
@@ -460,31 +485,6 @@
       "title": "Whitehats move 52 bitcoin from the Coldcard hack to a recovery trust",
       "link": "https://www.coindesk.com/markets/2026/09/22/whitehats-move-52-bitcoin-from-the-coldcard-hack-to-a-recovery-trust",
       "pubDate": "Tue, 22 Sep 2026 06:27:28 +0000"
-    },
-    {
-      "title": "Elon Musk's X brings bitcoin and stock trading closer to the timeline",
-      "link": "https://www.coindesk.com/markets/2026/09/22/elon-musk-s-x-brings-bitcoin-and-stock-trading-closer-to-the-timeline",
-      "pubDate": "Tue, 22 Sep 2026 05:26:00 +0000"
-    },
-    {
-      "title": "Dogecoin leads market rebound with 15% pump, bitcoin steady above $85,000",
-      "link": "https://www.coindesk.com/markets/2026/09/22/dogecoin-leads-market-rebound-with-15-pump-bitcoin-steady-above-usd85-000",
-      "pubDate": "Tue, 22 Sep 2026 04:33:11 +0000"
-    },
-    {
-      "title": "Cardano joins Solana, XRP Ledger in race to power AI agent payments",
-      "link": "https://www.coindesk.com/tech/2026/09/21/cardano-joins-solana-xrp-ledger-in-race-to-power-ai-agent-payments",
-      "pubDate": "Tue, 22 Sep 2026 04:15:45 +0000"
-    },
-    {
-      "title": "Bitcoin could test $90,000 after shorts get squeezed, but traders warn leverage is building",
-      "link": "https://www.coindesk.com/markets/2026/09/21/bitcoin-could-test-usd90-000-after-shorts-get-squeezed-but-traders-warn-leverage-is-building",
-      "pubDate": "Mon, 21 Sep 2026 20:39:39 +0000"
-    },
-    {
-      "title": "Why this investment bank expects little demand for tokenized stocks despite SEC’s new trading rules",
-      "link": "https://www.coindesk.com/markets/2026/09/21/why-this-investment-bank-sees-little-demand-for-tokenized-stocks-despite-sec-s-new-trading-rules",
-      "pubDate": "Mon, 21 Sep 2026 19:08:40 +0000"
     }
   ]
 }
