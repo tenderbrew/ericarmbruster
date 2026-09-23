@@ -1,13 +1,13 @@
 {
-  "fetchedAt": "2026-09-23T11:28:29.129Z",
+  "fetchedAt": "2026-09-23T16:51:49.967Z",
   "price": {
-    "usd": 85571,
-    "time": 1790162709
+    "usd": 83889,
+    "time": 1790182211
   },
   "moves": {
-    "d1": -0.7104560482907196,
-    "d7": 12.376338994515201,
-    "d30": 8.353537251270104
+    "d1": -2.6621103812630498,
+    "d7": 10.167448106378174,
+    "d30": 6.223719326311472
   },
   "history90d": [
     {
@@ -372,60 +372,90 @@
     },
     {
       "date": "2026-09-23",
-      "close": 85547.88983954715
+      "close": 83899.91592305829
     }
   ],
   "blocks": [
     {
-      "height": 968265,
-      "id": "000000000000000000019c7741c003b4bc0eb0b077ae71a3502e380856801c41",
-      "timestamp": 1790162120,
-      "txCount": 6064
+      "height": 968294,
+      "id": "00000000000000000001818e836e11c4caec16f0e212acce9e1e3cb64faa955b",
+      "timestamp": 1790181060,
+      "txCount": 4371
     },
     {
-      "height": 968264,
-      "id": "00000000000000000001f8e628637f00dd158530b751135efc7cb93b26771e27",
-      "timestamp": 1790161940,
-      "txCount": 3896
+      "height": 968293,
+      "id": "00000000000000000000d17facd73335a56310383118e91959cb5835ec586554",
+      "timestamp": 1790180659,
+      "txCount": 4349
     },
     {
-      "height": 968263,
-      "id": "0000000000000000000130d3ea4618c0c4322b36ab0e412f2a61e473f7021597",
-      "timestamp": 1790161197,
-      "txCount": 6126
+      "height": 968292,
+      "id": "00000000000000000001aa34b487657e7c03e669f615762f39f9f494138777b5",
+      "timestamp": 1790180300,
+      "txCount": 3889
     },
     {
-      "height": 968262,
-      "id": "00000000000000000001ca048ea35aa544630c20f2bf11bf9fab81c03149ef6c",
-      "timestamp": 1790160941,
-      "txCount": 6676
+      "height": 968291,
+      "id": "00000000000000000000c75731bc3e03b877df9b2104750bb8d256d889959749",
+      "timestamp": 1790179901,
+      "txCount": 4370
     },
     {
-      "height": 968261,
-      "id": "000000000000000000011033d2689c3883d14986ec0740a6245dc11b044a653b",
-      "timestamp": 1790160849,
-      "txCount": 5120
+      "height": 968290,
+      "id": "00000000000000000001457cf7efd96266f726fc984f6f121cfa2c117d4d7796",
+      "timestamp": 1790179347,
+      "txCount": 3299
     },
     {
-      "height": 968260,
-      "id": "00000000000000000001ff8ba1be2b0157cd182661c303d51243765bcf259e98",
-      "timestamp": 1790160376,
-      "txCount": 5942
+      "height": 968289,
+      "id": "00000000000000000001e2a2f4aadc1a6bd59a0202d54ca3df27912e122c7646",
+      "timestamp": 1790179223,
+      "txCount": 4395
     },
     {
-      "height": 968259,
-      "id": "00000000000000000000d597d7e151efa5a5a49b94c7e1e423968dc893666a95",
-      "timestamp": 1790160105,
-      "txCount": 7252
+      "height": 968288,
+      "id": "000000000000000000012a47746764cc73e940795120901c6cfb4ce5ae6756d8",
+      "timestamp": 1790178536,
+      "txCount": 4020
     },
     {
-      "height": 968258,
-      "id": "00000000000000000001b5fe7aa4582d5cddd1df45edec23cb7b124857b49dee",
-      "timestamp": 1790160084,
-      "txCount": 4307
+      "height": 968287,
+      "id": "000000000000000000014efc854ea7175d6511da6a4678eaa5579244a6dcf5f0",
+      "timestamp": 1790177298,
+      "txCount": 3892
     }
   ],
   "news": [
+    {
+      "title": "Inside the FBI’s little-known annual crypto crime gathering",
+      "link": "https://www.coindesk.com/business/2026/09/23/inside-the-fbi-s-little-known-annual-crypto-crime-gathering",
+      "pubDate": "Wed, 23 Sep 2026 15:26:35 +0000"
+    },
+    {
+      "title": "Crypto Long & Short: Inside the chain settling $150 billion of stablecoins a week",
+      "link": "https://www.coindesk.com/coindesk-indices/2026/09/23/crypto-long-and-short-inside-the-chain-settling-usd150-billion-of-stablecoins-a-week",
+      "pubDate": "Wed, 23 Sep 2026 15:07:21 +0000"
+    },
+    {
+      "title": "Bitcoin's $16 billion quarterly options settlement arrives with a 'call-heavy' book",
+      "link": "https://www.coindesk.com/markets/2026/09/23/bitcoin-s-usd16-billion-quarterly-options-settlement-arrives-with-a-call-heavy-book",
+      "pubDate": "Wed, 23 Sep 2026 13:02:43 +0000"
+    },
+    {
+      "title": "MoonPay to acquire SEC-registered North Capital in $60 million all-stock deal",
+      "link": "https://www.coindesk.com/business/2026/09/23/moonpay-to-acquire-sec-registered-north-capital-in-usd60-million-all-stock-deal",
+      "pubDate": "Wed, 23 Sep 2026 13:00:00 +0000"
+    },
+    {
+      "title": "Live updates: Bitcoin slips as higher rates and dollar pressure markets",
+      "link": "https://www.coindesk.com/business/2026/09/23/live-updates-bitcoin-slips-under-usd86-000-as-money-rotates-into-bch-and-zec",
+      "pubDate": "Wed, 23 Sep 2026 11:29:30 +0000"
+    },
+    {
+      "title": "The S&P 500 has a 'breadth' problem. Crypto doesn’t.",
+      "link": "https://www.coindesk.com/daybook-us/2026/09/23/the-s-and-p-500-has-a-breadth-problem-crypto-doesn-t",
+      "pubDate": "Wed, 23 Sep 2026 11:28:50 +0000"
+    },
     {
       "title": "Bitcoin consolidates near $86,000 as rally narrows and Brent slips below $100",
       "link": "https://www.coindesk.com/markets/2026/09/23/bitcoin-consolidates-near-usd86-000-as-rally-narrows-and-brent-slips-below-usd100",
@@ -455,36 +485,6 @@
       "title": "XRP Ledger retries upgrade that lets banks split payment and compliance duties",
       "link": "https://www.coindesk.com/tech/2026/09/23/xrp-ledger-retries-upgrade-that-lets-banks-split-payment-and-compliance-duties",
       "pubDate": "Wed, 23 Sep 2026 07:37:46 +0000"
-    },
-    {
-      "title": "Solana starts testing upgrade that could cut finality from 12.8 seconds to 150 milliseconds",
-      "link": "https://www.coindesk.com/tech/2026/09/23/solana-starts-testing-upgrade-that-could-cut-finality-from-12-8-seconds-to-150-milliseconds",
-      "pubDate": "Wed, 23 Sep 2026 05:16:22 +0000"
-    },
-    {
-      "title": "Bitcoin's on a streak it hasn't hit since 2012",
-      "link": "https://www.coindesk.com/markets/2026/09/23/bitcoin-s-on-a-streak-it-hasn-t-hit-since-2012",
-      "pubDate": "Wed, 23 Sep 2026 05:12:42 +0000"
-    },
-    {
-      "title": "Zcash leads crypto majors with a 10% gain as bitcoin holds near $87,000",
-      "link": "https://www.coindesk.com/markets/2026/09/23/zcash-leads-crypto-majors-with-a-10-gain-as-bitcoin-holds-near-usd87-000",
-      "pubDate": "Wed, 23 Sep 2026 04:10:08 +0000"
-    },
-    {
-      "title": "U.S. regulator warns about cheating risks in 'mention markets' on prediction platforms",
-      "link": "https://www.coindesk.com/policy/2026/09/22/u-s-regulator-warns-about-cheating-risks-in-mention-markets-on-prediction-platforms",
-      "pubDate": "Wed, 23 Sep 2026 00:00:45 +0000"
-    },
-    {
-      "title": "Democrats 'chose visceral hatred for' Donald Trump over crypto Clarity Act, Lummis says",
-      "link": "https://www.coindesk.com/policy/2026/09/22/democrats-chose-visceral-hatred-for-donald-trump-over-crypto-clarity-act-lummis-says",
-      "pubDate": "Tue, 22 Sep 2026 21:29:05 +0000"
-    },
-    {
-      "title": "Crypto market structure can't wait for shot at post-election Clarity Act surge: White House",
-      "link": "https://www.coindesk.com/policy/2026/09/22/crypto-market-structure-can-t-wait-for-shot-at-post-election-clarity-act-surge-white-house",
-      "pubDate": "Tue, 22 Sep 2026 20:31:02 +0000"
     }
   ]
 }
