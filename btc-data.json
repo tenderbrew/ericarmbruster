@@ -1,13 +1,13 @@
 {
-  "fetchedAt": "2026-09-23T04:39:55.571Z",
+  "fetchedAt": "2026-09-23T11:28:29.129Z",
   "price": {
-    "usd": 87233,
-    "time": 1790138116
+    "usd": 85571,
+    "time": 1790162709
   },
   "moves": {
-    "d1": 1.21799193113854,
-    "d7": 14.558964830474629,
-    "d30": 10.45803034953483
+    "d1": -0.7104560482907196,
+    "d7": 12.376338994515201,
+    "d30": 8.353537251270104
   },
   "history90d": [
     {
@@ -372,60 +372,100 @@
     },
     {
       "date": "2026-09-23",
-      "close": 87211.3870593965
+      "close": 85547.88983954715
     }
   ],
   "blocks": [
     {
-      "height": 968222,
-      "id": "0000000000000000000056f80fb184ed57d593de7f166b442449dc847f1ff73a",
-      "timestamp": 1790135298,
-      "txCount": 5433
+      "height": 968265,
+      "id": "000000000000000000019c7741c003b4bc0eb0b077ae71a3502e380856801c41",
+      "timestamp": 1790162120,
+      "txCount": 6064
     },
     {
-      "height": 968221,
-      "id": "0000000000000000000160a92cfeb19c71da392a6c6208e85430b02a1357b581",
-      "timestamp": 1790134982,
-      "txCount": 6005
+      "height": 968264,
+      "id": "00000000000000000001f8e628637f00dd158530b751135efc7cb93b26771e27",
+      "timestamp": 1790161940,
+      "txCount": 3896
     },
     {
-      "height": 968220,
-      "id": "0000000000000000000174712d34696ed3ee0325f3a8df9089a0971c5040930e",
-      "timestamp": 1790134524,
-      "txCount": 3824
+      "height": 968263,
+      "id": "0000000000000000000130d3ea4618c0c4322b36ab0e412f2a61e473f7021597",
+      "timestamp": 1790161197,
+      "txCount": 6126
     },
     {
-      "height": 968219,
-      "id": "0000000000000000000105fcfde1d45b8c983c3e88d6f5921edc30090f62e1bf",
-      "timestamp": 1790134262,
-      "txCount": 4385
+      "height": 968262,
+      "id": "00000000000000000001ca048ea35aa544630c20f2bf11bf9fab81c03149ef6c",
+      "timestamp": 1790160941,
+      "txCount": 6676
     },
     {
-      "height": 968218,
-      "id": "00000000000000000001780eac10efd08684f2f0be9929f83bf84a07dd85398c",
-      "timestamp": 1790132518,
-      "txCount": 3536
+      "height": 968261,
+      "id": "000000000000000000011033d2689c3883d14986ec0740a6245dc11b044a653b",
+      "timestamp": 1790160849,
+      "txCount": 5120
     },
     {
-      "height": 968217,
-      "id": "00000000000000000001330f72a44692edf97f29b4a50ebf82f425cb8ce641d5",
-      "timestamp": 1790131215,
-      "txCount": 5542
+      "height": 968260,
+      "id": "00000000000000000001ff8ba1be2b0157cd182661c303d51243765bcf259e98",
+      "timestamp": 1790160376,
+      "txCount": 5942
     },
     {
-      "height": 968216,
-      "id": "000000000000000000014df86e986ca182365da99657cdfd1c22c3326d6a8cdc",
-      "timestamp": 1790130997,
-      "txCount": 5482
+      "height": 968259,
+      "id": "00000000000000000000d597d7e151efa5a5a49b94c7e1e423968dc893666a95",
+      "timestamp": 1790160105,
+      "txCount": 7252
     },
     {
-      "height": 968215,
-      "id": "000000000000000000010ef4f33d81dbe79fbb516d1142fba06fe060dbb89668",
-      "timestamp": 1790130511,
-      "txCount": 5195
+      "height": 968258,
+      "id": "00000000000000000001b5fe7aa4582d5cddd1df45edec23cb7b124857b49dee",
+      "timestamp": 1790160084,
+      "txCount": 4307
     }
   ],
   "news": [
+    {
+      "title": "Bitcoin consolidates near $86,000 as rally narrows and Brent slips below $100",
+      "link": "https://www.coindesk.com/markets/2026/09/23/bitcoin-consolidates-near-usd86-000-as-rally-narrows-and-brent-slips-below-usd100",
+      "pubDate": "Wed, 23 Sep 2026 10:28:11 +0000"
+    },
+    {
+      "title": "BitMEX shuts down: perpetuals pioneer officially closes it doors after 11 years",
+      "link": "https://www.coindesk.com/business/2026/09/23/bitmex-shuts-down-trading-after-11-years-leaves-withdrawals-open",
+      "pubDate": "Wed, 23 Sep 2026 10:24:44 +0000"
+    },
+    {
+      "title": "FTX, Alameda-linked wallets send $75 million in ether to Wintermute, onchain data shows",
+      "link": "https://www.coindesk.com/business/2026/09/23/ftx-alameda-linked-wallets-send-usd75-million-in-ether-to-wintermute-onchain-data-shows",
+      "pubDate": "Wed, 23 Sep 2026 09:57:24 +0000"
+    },
+    {
+      "title": "AI agents will soon buy their own computing power and data using stablecoins, according to BlackRock",
+      "link": "https://www.coindesk.com/markets/2026/09/23/ai-agents-will-soon-buy-their-own-computing-power-and-data-using-stablecoins-according-to-blackrock",
+      "pubDate": "Wed, 23 Sep 2026 09:17:53 +0000"
+    },
+    {
+      "title": "Coinbase users can now borrow USDC against bitcoin at a fixed rate",
+      "link": "https://www.coindesk.com/markets/2026/09/23/coinbase-users-can-now-borrow-usdc-against-bitcoin-at-a-fixed-rate",
+      "pubDate": "Wed, 23 Sep 2026 07:49:23 +0000"
+    },
+    {
+      "title": "XRP Ledger retries upgrade that lets banks split payment and compliance duties",
+      "link": "https://www.coindesk.com/tech/2026/09/23/xrp-ledger-retries-upgrade-that-lets-banks-split-payment-and-compliance-duties",
+      "pubDate": "Wed, 23 Sep 2026 07:37:46 +0000"
+    },
+    {
+      "title": "Solana starts testing upgrade that could cut finality from 12.8 seconds to 150 milliseconds",
+      "link": "https://www.coindesk.com/tech/2026/09/23/solana-starts-testing-upgrade-that-could-cut-finality-from-12-8-seconds-to-150-milliseconds",
+      "pubDate": "Wed, 23 Sep 2026 05:16:22 +0000"
+    },
+    {
+      "title": "Bitcoin's on a streak it hasn't hit since 2012",
+      "link": "https://www.coindesk.com/markets/2026/09/23/bitcoin-s-on-a-streak-it-hasn-t-hit-since-2012",
+      "pubDate": "Wed, 23 Sep 2026 05:12:42 +0000"
+    },
     {
       "title": "Zcash leads crypto majors with a 10% gain as bitcoin holds near $87,000",
       "link": "https://www.coindesk.com/markets/2026/09/23/zcash-leads-crypto-majors-with-a-10-gain-as-bitcoin-holds-near-usd87-000",
@@ -445,46 +485,6 @@
       "title": "Crypto market structure can't wait for shot at post-election Clarity Act surge: White House",
       "link": "https://www.coindesk.com/policy/2026/09/22/crypto-market-structure-can-t-wait-for-shot-at-post-election-clarity-act-surge-white-house",
       "pubDate": "Tue, 22 Sep 2026 20:31:02 +0000"
-    },
-    {
-      "title": "Canada's 'Big Six' banks to launch interbank tokenized deposit initiative",
-      "link": "https://www.coindesk.com/business/2026/09/22/canada-s-big-six-banks-unite-to-launch-interbank-tokenized-deposit-initiative",
-      "pubDate": "Tue, 22 Sep 2026 17:34:03 +0000"
-    },
-    {
-      "title": "Next for the U.S. SEC: Agency's chief crypto counsel illuminates path for custody",
-      "link": "https://www.coindesk.com/policy/2026/09/22/next-for-the-u-s-sec-agency-s-chief-crypto-counsel-illuminates-path-for-custody",
-      "pubDate": "Tue, 22 Sep 2026 15:21:28 +0000"
-    },
-    {
-      "title": "European central banks push to expand stablecoin yield ban to crypto lending and staking",
-      "link": "https://www.coindesk.com/policy/2026/09/22/european-central-banks-push-to-expand-stablecoin-yield-ban-to-crypto-lending-and-staking",
-      "pubDate": "Tue, 22 Sep 2026 14:32:59 +0000"
-    },
-    {
-      "title": "Bitcoin, ether perpetual volumes on Kalshi are dominated by an unusual, repetitive trade, data shows",
-      "link": "https://www.coindesk.com/markets/2026/09/21/bitcoin-ether-perpetual-volumes-on-kalshi-are-dominated-by-an-unusual-repetitive-trade-data-shows",
-      "pubDate": "Tue, 22 Sep 2026 12:32:15 +0000"
-    },
-    {
-      "title": "Why Payward-backed Reap is betting on non-USD stablecoins for 24/7 cross-border FX settlement",
-      "link": "https://www.coindesk.com/business/2026/09/22/visa-partner-reap-eyes-local-currency-stablecoins-in-several-countries-for-24-7-onchain-fx",
-      "pubDate": "Tue, 22 Sep 2026 12:05:55 +0000"
-    },
-    {
-      "title": "A $3.2 million 'bitcoin butterfly' option trade bets on $95,000 by the end of October",
-      "link": "https://www.coindesk.com/daybook-us/2026/09/22/a-usd3-2-million-bitcoin-butterfly-option-trade-bets-on-usd95-000-by-the-end-of-october",
-      "pubDate": "Tue, 22 Sep 2026 11:35:43 +0000"
-    },
-    {
-      "title": "Binance buys $100 million Circle stake in five-year USDC promotion deal",
-      "link": "https://www.coindesk.com/policy/2026/09/22/binance-buys-usd100-million-circle-stake-in-five-year-usdc-promotion-deal",
-      "pubDate": "Tue, 22 Sep 2026 11:07:23 +0000"
-    },
-    {
-      "title": "Bitcoin recovers from Asian-session lows as falling oil price supports risk appetite",
-      "link": "https://www.coindesk.com/markets/2026/09/22/bitcoin-recovers-from-asian-session-lows-as-falling-oil-price-supports-risk-appetite",
-      "pubDate": "Tue, 22 Sep 2026 10:59:03 +0000"
     }
   ]
 }
