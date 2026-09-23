@@ -1,19 +1,15 @@
 {
-  "fetchedAt": "2026-09-22T23:36:01.292Z",
+  "fetchedAt": "2026-09-23T04:39:55.571Z",
   "price": {
-    "usd": 86222,
-    "time": 1790119810
+    "usd": 87233,
+    "time": 1790138116
   },
   "moves": {
-    "d1": -0.4327415123379641,
-    "d7": 14.064983278842714,
-    "d30": 10.950232726811016
+    "d1": 1.21799193113854,
+    "d7": 14.558964830474629,
+    "d30": 10.45803034953483
   },
   "history90d": [
-    {
-      "date": "2026-06-25",
-      "close": 60989.57352152134
-    },
     {
       "date": "2026-06-26",
       "close": 59726.73653480851
@@ -371,61 +367,75 @@
       "close": 86596.74004249526
     },
     {
-      "date": "2026-09-22",
-      "close": 86125.24644569216
+      "date": "2026-09-23",
+      "close": 86183.29442787907
+    },
+    {
+      "date": "2026-09-23",
+      "close": 87211.3870593965
     }
   ],
   "blocks": [
     {
-      "height": 968201,
-      "id": "00000000000000000001d575745157b8688344f264b6f712fbb3d24fe18b018b",
-      "timestamp": 1790119888,
-      "txCount": 3522
+      "height": 968222,
+      "id": "0000000000000000000056f80fb184ed57d593de7f166b442449dc847f1ff73a",
+      "timestamp": 1790135298,
+      "txCount": 5433
     },
     {
-      "height": 968200,
-      "id": "00000000000000000000293839a8d15c71ca4c51500351d55e3008b28712965d",
-      "timestamp": 1790119181,
-      "txCount": 3356
+      "height": 968221,
+      "id": "0000000000000000000160a92cfeb19c71da392a6c6208e85430b02a1357b581",
+      "timestamp": 1790134982,
+      "txCount": 6005
     },
     {
-      "height": 968199,
-      "id": "000000000000000000016c7fe83cccb0a0d1a8543f48f5bc6a9a4accc9b40336",
-      "timestamp": 1790118466,
-      "txCount": 4225
+      "height": 968220,
+      "id": "0000000000000000000174712d34696ed3ee0325f3a8df9089a0971c5040930e",
+      "timestamp": 1790134524,
+      "txCount": 3824
     },
     {
-      "height": 968198,
-      "id": "00000000000000000001930697e6747c7c434fe71470a0b0ffe567fdf6f72c4f",
-      "timestamp": 1790118388,
-      "txCount": 4097
+      "height": 968219,
+      "id": "0000000000000000000105fcfde1d45b8c983c3e88d6f5921edc30090f62e1bf",
+      "timestamp": 1790134262,
+      "txCount": 4385
     },
     {
-      "height": 968197,
-      "id": "0000000000000000000037d4b9d8505c8d65f85e9bcbe65d834ccb88f3a9f777",
-      "timestamp": 1790116969,
-      "txCount": 3823
+      "height": 968218,
+      "id": "00000000000000000001780eac10efd08684f2f0be9929f83bf84a07dd85398c",
+      "timestamp": 1790132518,
+      "txCount": 3536
     },
     {
-      "height": 968196,
-      "id": "0000000000000000000093a2d970d4cacb98d94627ecc27d423cbca39fd59598",
-      "timestamp": 1790116318,
-      "txCount": 4438
+      "height": 968217,
+      "id": "00000000000000000001330f72a44692edf97f29b4a50ebf82f425cb8ce641d5",
+      "timestamp": 1790131215,
+      "txCount": 5542
     },
     {
-      "height": 968195,
-      "id": "00000000000000000000a03b46b6864340a096c85483c397fa295e44b843958a",
-      "timestamp": 1790114908,
-      "txCount": 4359
+      "height": 968216,
+      "id": "000000000000000000014df86e986ca182365da99657cdfd1c22c3326d6a8cdc",
+      "timestamp": 1790130997,
+      "txCount": 5482
     },
     {
-      "height": 968194,
-      "id": "000000000000000000010c282c236d5d82cdba345f9f61f4d0db6b052685aee5",
-      "timestamp": 1790114303,
-      "txCount": 811
+      "height": 968215,
+      "id": "000000000000000000010ef4f33d81dbe79fbb516d1142fba06fe060dbb89668",
+      "timestamp": 1790130511,
+      "txCount": 5195
     }
   ],
   "news": [
+    {
+      "title": "Zcash leads crypto majors with a 10% gain as bitcoin holds near $87,000",
+      "link": "https://www.coindesk.com/markets/2026/09/23/zcash-leads-crypto-majors-with-a-10-gain-as-bitcoin-holds-near-usd87-000",
+      "pubDate": "Wed, 23 Sep 2026 04:10:08 +0000"
+    },
+    {
+      "title": "U.S. regulator warns about cheating risks in 'mention markets' on prediction platforms",
+      "link": "https://www.coindesk.com/policy/2026/09/22/u-s-regulator-warns-about-cheating-risks-in-mention-markets-on-prediction-platforms",
+      "pubDate": "Wed, 23 Sep 2026 00:00:45 +0000"
+    },
     {
       "title": "Democrats 'chose visceral hatred for' Donald Trump over crypto Clarity Act, Lummis says",
       "link": "https://www.coindesk.com/policy/2026/09/22/democrats-chose-visceral-hatred-for-donald-trump-over-crypto-clarity-act-lummis-says",
@@ -475,16 +485,6 @@
       "title": "Bitcoin recovers from Asian-session lows as falling oil price supports risk appetite",
       "link": "https://www.coindesk.com/markets/2026/09/22/bitcoin-recovers-from-asian-session-lows-as-falling-oil-price-supports-risk-appetite",
       "pubDate": "Tue, 22 Sep 2026 10:59:03 +0000"
-    },
-    {
-      "title": "Live updates: Bitcoin trades near $86,000 as U.S. stocks post small gains",
-      "link": "https://www.coindesk.com/markets/2026/09/22/live-updates-oil-falls-as-iran-signals-possible-hormuz-reopening-bitcoin-holds-near-usd86-000",
-      "pubDate": "Tue, 22 Sep 2026 10:20:12 +0000"
-    },
-    {
-      "title": "Binance probed by U.S. federal prosecutors for sanctions violations: Bloomberg",
-      "link": "https://www.coindesk.com/policy/2026/09/22/binance-probed-by-u-s-federal-prosecutors-for-sanctions-violations-bloomberg",
-      "pubDate": "Tue, 22 Sep 2026 10:07:52 +0000"
     }
   ]
 }
