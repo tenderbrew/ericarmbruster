@@ -1,13 +1,13 @@
 {
-  "fetchedAt": "2026-09-24T04:41:50.513Z",
+  "fetchedAt": "2026-09-24T11:39:05.093Z",
   "price": {
-    "usd": 83871,
-    "time": 1790224807
+    "usd": 83461,
+    "time": 1790249708
   },
   "moves": {
-    "d1": -0.6060504372368269,
-    "d7": 9.819961449884307,
-    "d30": 6.82675163281945
+    "d1": -1.0919337499519788,
+    "d7": 9.28311099866217,
+    "d30": 6.304533367036802
   },
   "history90d": [
     {
@@ -372,60 +372,105 @@
     },
     {
       "date": "2026-09-24",
-      "close": 83870.54575562525
+      "close": 83451.95966379262
     }
   ],
   "blocks": [
     {
-      "height": 968353,
-      "id": "0000000000000000000062f8d861bc920179d51afeb0aec613eb83500a42ae69",
-      "timestamp": 1790224756,
-      "txCount": 5473
+      "height": 968390,
+      "id": "00000000000000000000642f5c57e8576152c14b7a5f14e7bae362ab35007dbe",
+      "timestamp": 1790248805,
+      "txCount": 2973
     },
     {
-      "height": 968352,
-      "id": "000000000000000000000d8a4cf745e5e415d751d53295f67ba8722b9ec4ec0d",
-      "timestamp": 1790224458,
-      "txCount": 18
+      "height": 968389,
+      "id": "00000000000000000001052f3e2b35dc9386679b641733c2d54da5729163a06d",
+      "timestamp": 1790248359,
+      "txCount": 2903
     },
     {
-      "height": 968351,
-      "id": "000000000000000000018323967cffb4cf480f3fc6b4c49621a0effe79788473",
-      "timestamp": 1790224419,
-      "txCount": 4394
+      "height": 968388,
+      "id": "000000000000000000021a42a2e7a4dc47e0d41581b3ae15ecd3fb994e4d818a",
+      "timestamp": 1790247909,
+      "txCount": 3015
     },
     {
-      "height": 968350,
-      "id": "000000000000000000014a53675e4353eff4d878afa1f5abd57677046dceb6c1",
-      "timestamp": 1790223772,
-      "txCount": 3979
+      "height": 968387,
+      "id": "00000000000000000000d06f0422362453240b93bdb36ab2cdd0e71903259aa9",
+      "timestamp": 1790245885,
+      "txCount": 3729
     },
     {
-      "height": 968349,
-      "id": "00000000000000000000547a5750f8d25e015fd02135db054217166f4bc0f137",
-      "timestamp": 1790222494,
-      "txCount": 5827
+      "height": 968386,
+      "id": "000000000000000000005cd8051264ac1bd795dec84d8b4b3e143a6f71567184",
+      "timestamp": 1790244701,
+      "txCount": 6962
     },
     {
-      "height": 968348,
-      "id": "000000000000000000012a960d57d60d45f815d999aa25ca9858e821f82c57ee",
-      "timestamp": 1790222211,
-      "txCount": 5677
+      "height": 968385,
+      "id": "000000000000000000021141709161e2a438c3424fae24d35f22bef43c18811b",
+      "timestamp": 1790244651,
+      "txCount": 7013
     },
     {
-      "height": 968347,
-      "id": "000000000000000000010fa2e2050ab1ce9e7057da281263614c15c4921f7f84",
-      "timestamp": 1790221748,
-      "txCount": 4225
+      "height": 968384,
+      "id": "00000000000000000000f67a14be940c3e68835622a79785d6db1bc6c2ea499a",
+      "timestamp": 1790244609,
+      "txCount": 6297
     },
     {
-      "height": 968346,
-      "id": "00000000000000000001185d8dac662570c5e4720a92ae4f03d4f83c69094cef",
-      "timestamp": 1790221113,
-      "txCount": 3871
+      "height": 968383,
+      "id": "0000000000000000000146875460b84f086e867504ff7ed163974692c2b9e982",
+      "timestamp": 1790244347,
+      "txCount": 4790
     }
   ],
   "news": [
+    {
+      "title": "Brooklyn man sent to prison for 12 years for stealing $16M in a Coinbase phishing scheme",
+      "link": "https://www.coindesk.com/business/2026/09/24/brooklyn-man-sent-to-prison-for-12-years-for-stealing-usd16m-in-a-coinbase-phishing-scheme",
+      "pubDate": "Thu, 24 Sep 2026 11:33:57 +0000"
+    },
+    {
+      "title": "Litecoin token has its moment as network activity booms",
+      "link": "https://www.coindesk.com/daybook-us/2026/09/24/litecoin-token-has-its-moment-as-network-activity-booms",
+      "pubDate": "Thu, 24 Sep 2026 11:26:18 +0000"
+    },
+    {
+      "title": "Live updates: Bitcoin continues lower as bond yields take center stage",
+      "link": "https://www.coindesk.com/tech/2026/09/24/live-updates-bitcoin-edges-lower-as-bond-yields-take-center-stage",
+      "pubDate": "Thu, 24 Sep 2026 11:20:12 +0000"
+    },
+    {
+      "title": "Bitcoin slides to $83,300 as bond yields hit highest level since 2007",
+      "link": "https://www.coindesk.com/markets/2026/09/24/bitcoin-steadies-near-usd84-000-after-bond-yields-hit-a-2007-high",
+      "pubDate": "Thu, 24 Sep 2026 10:30:28 +0000"
+    },
+    {
+      "title": "Traders price in 4 Fed rate hikes by June 2027 as bitcoin slides below $83,000",
+      "link": "https://www.coindesk.com/markets/2026/09/24/traders-are-pricing-in-4-fed-rate-hikes-as-bitcoin-slides-below-usd83-000",
+      "pubDate": "Thu, 24 Sep 2026 10:11:51 +0000"
+    },
+    {
+      "title": "The data proves it: Bitcoin doesn't care about rising bond yields over long-term",
+      "link": "https://www.coindesk.com/markets/2026/09/24/the-data-proves-it-bitcoin-doesn-t-care-about-rising-bond-yields-over-long-term",
+      "pubDate": "Thu, 24 Sep 2026 09:48:09 +0000"
+    },
+    {
+      "title": "EU financial watchdogs warn quantum computing poses imminent threat to blockchain encryption",
+      "link": "https://www.coindesk.com/tech/2026/09/24/eu-financial-watchdogs-warn-quantum-computing-poses-imminent-threat-to-blockchain-encryption",
+      "pubDate": "Thu, 24 Sep 2026 09:32:48 +0000"
+    },
+    {
+      "title": "Trump administration weighs a global stablecoin plan to cement dollar's dominance",
+      "link": "https://www.coindesk.com/markets/2026/09/24/trump-administration-weighs-a-global-stablecoin-plan-to-cement-dollar-s-dominance",
+      "pubDate": "Thu, 24 Sep 2026 06:33:23 +0000"
+    },
+    {
+      "title": "A week of AI coding cut a quantum-safe bitcoin transaction estimate from $320 to $66",
+      "link": "https://www.coindesk.com/tech/2026/09/24/a-week-of-ai-coding-cut-a-quantum-safe-bitcoin-transaction-estimate-from-usd320-to-usd66",
+      "pubDate": "Thu, 24 Sep 2026 05:24:56 +0000"
+    },
     {
       "title": "Dogecoin down 8%, bitcoin under $84,000 as Treasury yields hit highest level since 2007",
       "link": "https://www.coindesk.com/markets/2026/09/24/dogecoin-down-8-bitcoin-under-usd84-000-as-treasury-yields-hit-highest-level-since-2007",
@@ -440,51 +485,6 @@
       "title": "Former Hack VC partner Hsin-Ju Chuang found dead following public dispute with the firm",
       "link": "https://www.coindesk.com/business/2026/09/23/former-hack-vc-partner-hsin-ju-chuang-found-dead-following-public-dispute-with-firm",
       "pubDate": "Wed, 23 Sep 2026 18:59:36 +0000"
-    },
-    {
-      "title": "White House adviser defends President Trump's crypto ties in wake of Clarity Act defeat",
-      "link": "https://www.coindesk.com/policy/2026/09/23/white-house-adviser-defends-president-trump-s-crypto-ties-in-wake-of-clarity-act-defeat",
-      "pubDate": "Wed, 23 Sep 2026 18:04:11 +0000"
-    },
-    {
-      "title": "Inside the FBI’s little-known annual crypto crime gathering",
-      "link": "https://www.coindesk.com/business/2026/09/23/inside-the-fbi-s-little-known-annual-crypto-crime-gathering",
-      "pubDate": "Wed, 23 Sep 2026 15:26:35 +0000"
-    },
-    {
-      "title": "Crypto Long & Short: Inside the chain settling $150 billion of stablecoins a week",
-      "link": "https://www.coindesk.com/coindesk-indices/2026/09/23/crypto-long-and-short-inside-the-chain-settling-usd150-billion-of-stablecoins-a-week",
-      "pubDate": "Wed, 23 Sep 2026 15:07:21 +0000"
-    },
-    {
-      "title": "Bitcoin's $16 billion quarterly options settlement arrives with a 'call-heavy' book",
-      "link": "https://www.coindesk.com/markets/2026/09/23/bitcoin-s-usd16-billion-quarterly-options-settlement-arrives-with-a-call-heavy-book",
-      "pubDate": "Wed, 23 Sep 2026 13:02:43 +0000"
-    },
-    {
-      "title": "MoonPay to acquire SEC-registered North Capital in $60 million all-stock deal",
-      "link": "https://www.coindesk.com/business/2026/09/23/moonpay-to-acquire-sec-registered-north-capital-in-usd60-million-all-stock-deal",
-      "pubDate": "Wed, 23 Sep 2026 13:00:00 +0000"
-    },
-    {
-      "title": "Live updates: Bitcoin pulls back to $84,000 as bond yields fly higher",
-      "link": "https://www.coindesk.com/business/2026/09/23/live-updates-bitcoin-slips-under-usd86-000-as-money-rotates-into-bch-and-zec",
-      "pubDate": "Wed, 23 Sep 2026 11:29:30 +0000"
-    },
-    {
-      "title": "The S&P 500 has a 'breadth' problem. Crypto doesn’t.",
-      "link": "https://www.coindesk.com/daybook-us/2026/09/23/the-s-and-p-500-has-a-breadth-problem-crypto-doesn-t",
-      "pubDate": "Wed, 23 Sep 2026 11:28:50 +0000"
-    },
-    {
-      "title": "Bitcoin consolidates near $86,000 as rally narrows and Brent slips below $100",
-      "link": "https://www.coindesk.com/markets/2026/09/23/bitcoin-consolidates-near-usd86-000-as-rally-narrows-and-brent-slips-below-usd100",
-      "pubDate": "Wed, 23 Sep 2026 10:28:11 +0000"
-    },
-    {
-      "title": "BitMEX shuts down: perpetuals pioneer officially closes it doors after 11 years",
-      "link": "https://www.coindesk.com/business/2026/09/23/bitmex-shuts-down-trading-after-11-years-leaves-withdrawals-open",
-      "pubDate": "Wed, 23 Sep 2026 10:24:44 +0000"
     }
   ]
 }
