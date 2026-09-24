@@ -1,13 +1,13 @@
 {
-  "fetchedAt": "2026-09-24T17:05:48.228Z",
+  "fetchedAt": "2026-09-24T21:27:48.373Z",
   "price": {
-    "usd": 84478,
-    "time": 1790269207
+    "usd": 84395,
+    "time": 1790284808
   },
   "moves": {
-    "d1": 0.11329388183172195,
-    "d7": 10.614761995961985,
-    "d30": 7.599889406795213
+    "d1": 0.014932138038159515,
+    "d7": 10.506082514373105,
+    "d30": 7.4941720505514064
   },
   "history90d": [
     {
@@ -372,60 +372,85 @@
     },
     {
       "date": "2026-09-24",
-      "close": 84468.39466195522
+      "close": 84404.9699578303
     }
   ],
   "blocks": [
     {
-      "height": 968429,
-      "id": "00000000000000000000035c273362e76744806a31a965b873054750bc32976d",
-      "timestamp": 1790269073,
-      "txCount": 1
+      "height": 968455,
+      "id": "00000000000000000000d33f076471242ea75f2cd9c77c4f324b731e94b110e3",
+      "timestamp": 1790284944,
+      "txCount": 5929
     },
     {
-      "height": 968428,
-      "id": "0000000000000000000133c25294df30c34e797fc57b58a77f7cc1a61973983f",
-      "timestamp": 1790269250,
-      "txCount": 5096
+      "height": 968454,
+      "id": "000000000000000000013e0996461594b373f226fd7421f789bf1506c3fad102",
+      "timestamp": 1790284691,
+      "txCount": 6540
     },
     {
-      "height": 968427,
-      "id": "000000000000000000016cebda67db9b191958f6bc6e40aad09cf0affa43251d",
-      "timestamp": 1790268728,
-      "txCount": 4547
+      "height": 968453,
+      "id": "00000000000000000000dc1babf7a871c2da37d1d03fa36bf9bcf8fe8ae80b18",
+      "timestamp": 1790284553,
+      "txCount": 3695
     },
     {
-      "height": 968426,
-      "id": "00000000000000000000a1b78e22266c4ac8c286b41ab5586a621e65dcb79b98",
-      "timestamp": 1790268239,
-      "txCount": 6469
+      "height": 968452,
+      "id": "000000000000000000021409abc8597e7035fdff6408e836a5fc1c0b885038e7",
+      "timestamp": 1790284000,
+      "txCount": 2412
     },
     {
-      "height": 968425,
-      "id": "000000000000000000021d27027b24d476055a1fd74d5b1fdce5743c68473eed",
-      "timestamp": 1790268125,
-      "txCount": 1156
+      "height": 968451,
+      "id": "0000000000000000000153f06c1a68efe310e7b1095c3719d0fc729747296112",
+      "timestamp": 1790283979,
+      "txCount": 2959
     },
     {
-      "height": 968424,
-      "id": "0000000000000000000166fbb6f7113dfba9a364ab6ccfe8867ce355b99c62fd",
-      "timestamp": 1790267870,
-      "txCount": 6204
+      "height": 968450,
+      "id": "0000000000000000000127824d2797a3fb12658b6c1e9fc41661d8c5cf2b8013",
+      "timestamp": 1790283499,
+      "txCount": 4161
     },
     {
-      "height": 968423,
-      "id": "00000000000000000001ea706ab3b0c4b5227912bafefe071586eea5f5fd753e",
-      "timestamp": 1790267533,
-      "txCount": 5422
+      "height": 968449,
+      "id": "000000000000000000000283a0d7b6a930f67f34eb35ac1d407c9c027b38ac3f",
+      "timestamp": 1790281793,
+      "txCount": 4104
     },
     {
-      "height": 968422,
-      "id": "000000000000000000011a5d999bd313c5d8b31417c4846d9a51b95f729850ef",
-      "timestamp": 1790267314,
-      "txCount": 4912
+      "height": 968448,
+      "id": "00000000000000000001eab43d85d3d51466046e1bdcef184bd32d180d890c17",
+      "timestamp": 1790280438,
+      "txCount": 4262
     }
   ],
   "news": [
+    {
+      "title": "Someone was trying to sell Ondo Finance after founder Nathan Allman's death",
+      "link": "https://www.coindesk.com/business/2026/09/23/someone-was-trying-to-sell-ondo-finance-after-founder-nathan-allman-s-death",
+      "pubDate": "Thu, 24 Sep 2026 20:13:25 +0000"
+    },
+    {
+      "title": "Bullish, Alpaca and Apex Fintech form coalition to push issuer-backed tokenized stocks",
+      "link": "https://www.coindesk.com/business/2026/09/24/bullish-alpaca-and-apex-fintech-form-coalition-to-push-issuer-backed-tokenized-stocks",
+      "pubDate": "Thu, 24 Sep 2026 20:05:00 +0000"
+    },
+    {
+      "title": "U.S. commodities firms can invest in tokenized assets, use blockchain records: CFTC",
+      "link": "https://www.coindesk.com/policy/2026/09/24/u-s-commodities-firms-can-invest-in-tokenized-assets-use-blockchain-records-cftc",
+      "pubDate": "Thu, 24 Sep 2026 20:04:46 +0000"
+    },
+    {
+      "title": "The stock token debate, and the gap nobody can close alone",
+      "link": "https://www.coindesk.com/opinion/2026/09/24/the-stock-token-debate-and-the-gap-nobody-can-close-alone",
+      "pubDate": "Thu, 24 Sep 2026 20:03:21 +0000"
+    },
+    {
+      "title": "Bitcoin just topped a key long-term moving average. Here's what it might mean",
+      "link": "https://www.coindesk.com/markets/2026/09/24/bitcoin-just-topped-a-key-long-term-moving-average-here-s-what-it-might-mean",
+      "pubDate": "Thu, 24 Sep 2026 18:46:58 +0000"
+    },
     {
       "title": "Crypto casino Duelbits goes offline after $7 million hot wallet hack",
       "link": "https://www.coindesk.com/business/2026/09/24/crypto-casino-duelbits-goes-offline-after-usd7m-hot-wallet-hack",
@@ -460,31 +485,6 @@
       "title": "Solana Foundation hires Binance, Polygon veterans as it ramps up tokenized finance push",
       "link": "https://www.coindesk.com/business/2026/09/24/solana-foundation-hires-binance-polygon-veterans-as-it-ramps-up-tokenized-finance-push",
       "pubDate": "Thu, 24 Sep 2026 13:00:00 +0000"
-    },
-    {
-      "title": "Crypto investment firm RockawayX is betting $150 million on yield becoming next big use case",
-      "link": "https://www.coindesk.com/business/2026/09/23/rockawayx-is-betting-usd150-million-on-yield-becoming-crypto-s-next-big-use-case",
-      "pubDate": "Thu, 24 Sep 2026 12:31:53 +0000"
-    },
-    {
-      "title": "EU's financial regulator to make AI and tokenization a supervisory priority in 2027",
-      "link": "https://www.coindesk.com/policy/2026/09/24/eu-s-financial-regulator-to-make-ai-and-tokenization-a-supervisory-priority-in-2027",
-      "pubDate": "Thu, 24 Sep 2026 12:26:43 +0000"
-    },
-    {
-      "title": "Brooklyn man sent to prison for 12 years for stealing $16M in a Coinbase phishing scheme",
-      "link": "https://www.coindesk.com/business/2026/09/24/brooklyn-man-sent-to-prison-for-12-years-for-stealing-usd16m-in-a-coinbase-phishing-scheme",
-      "pubDate": "Thu, 24 Sep 2026 11:33:57 +0000"
-    },
-    {
-      "title": "Litecoin token has its moment as network activity booms",
-      "link": "https://www.coindesk.com/daybook-us/2026/09/24/litecoin-token-has-its-moment-as-network-activity-booms",
-      "pubDate": "Thu, 24 Sep 2026 11:26:18 +0000"
-    },
-    {
-      "title": "Live updates: Report on U.S./Iran progress gives small lift to markets",
-      "link": "https://www.coindesk.com/tech/2026/09/24/live-updates-bitcoin-edges-lower-as-bond-yields-take-center-stage",
-      "pubDate": "Thu, 24 Sep 2026 11:20:12 +0000"
     }
   ]
 }
