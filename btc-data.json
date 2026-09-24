@@ -1,19 +1,15 @@
 {
-  "fetchedAt": "2026-09-23T21:27:30.720Z",
+  "fetchedAt": "2026-09-24T04:41:50.513Z",
   "price": {
-    "usd": 84315,
-    "time": 1790198408
+    "usd": 83871,
+    "time": 1790224807
   },
   "moves": {
-    "d1": -2.1678150507956184,
-    "d7": 10.726893717761277,
-    "d30": 6.763138134891955
+    "d1": -0.6060504372368269,
+    "d7": 9.819961449884307,
+    "d30": 6.82675163281945
   },
   "history90d": [
-    {
-      "date": "2026-06-26",
-      "close": 59726.73653480851
-    },
     {
       "date": "2026-06-27",
       "close": 60022.32566638378
@@ -371,61 +367,70 @@
       "close": 86183.29442787907
     },
     {
-      "date": "2026-09-23",
-      "close": 84383.2666361157
+      "date": "2026-09-24",
+      "close": 84382.39990356649
+    },
+    {
+      "date": "2026-09-24",
+      "close": 83870.54575562525
     }
   ],
   "blocks": [
     {
-      "height": 968322,
-      "id": "000000000000000000003fdcc5dd430bb71bdfa74152d914296217f8ddfaf9a2",
-      "timestamp": 1790198781,
-      "txCount": 4687
+      "height": 968353,
+      "id": "0000000000000000000062f8d861bc920179d51afeb0aec613eb83500a42ae69",
+      "timestamp": 1790224756,
+      "txCount": 5473
     },
     {
-      "height": 968321,
-      "id": "00000000000000000000da5d4d53b58a4b52a2a8fc7eb2a7abde59f691ebc7a5",
-      "timestamp": 1790198101,
-      "txCount": 3498
+      "height": 968352,
+      "id": "000000000000000000000d8a4cf745e5e415d751d53295f67ba8722b9ec4ec0d",
+      "timestamp": 1790224458,
+      "txCount": 18
     },
     {
-      "height": 968320,
-      "id": "000000000000000000003a389b08fb19137accdc55b4e7a9b8a70bc7c00829fb",
-      "timestamp": 1790197816,
-      "txCount": 3437
+      "height": 968351,
+      "id": "000000000000000000018323967cffb4cf480f3fc6b4c49621a0effe79788473",
+      "timestamp": 1790224419,
+      "txCount": 4394
     },
     {
-      "height": 968319,
-      "id": "00000000000000000000b29084c73c9e5b3a295205a8334beb338f64235a6906",
-      "timestamp": 1790197460,
-      "txCount": 3964
+      "height": 968350,
+      "id": "000000000000000000014a53675e4353eff4d878afa1f5abd57677046dceb6c1",
+      "timestamp": 1790223772,
+      "txCount": 3979
     },
     {
-      "height": 968318,
-      "id": "0000000000000000000100c462686f1d4661c4ff5fb237386b7cff26694bffed",
-      "timestamp": 1790196294,
-      "txCount": 4175
+      "height": 968349,
+      "id": "00000000000000000000547a5750f8d25e015fd02135db054217166f4bc0f137",
+      "timestamp": 1790222494,
+      "txCount": 5827
     },
     {
-      "height": 968317,
-      "id": "000000000000000000000c49090cab7982a6beac3eb7ded57e78c5566b70580b",
-      "timestamp": 1790195331,
-      "txCount": 4355
+      "height": 968348,
+      "id": "000000000000000000012a960d57d60d45f815d999aa25ca9858e821f82c57ee",
+      "timestamp": 1790222211,
+      "txCount": 5677
     },
     {
-      "height": 968316,
-      "id": "000000000000000000018e98adca14669b4ef820cdc2ed675c8456e4c3fd1641",
-      "timestamp": 1790193485,
-      "txCount": 4389
+      "height": 968347,
+      "id": "000000000000000000010fa2e2050ab1ce9e7057da281263614c15c4921f7f84",
+      "timestamp": 1790221748,
+      "txCount": 4225
     },
     {
-      "height": 968315,
-      "id": "0000000000000000000083bb790854d1bd58ced00e75acc3f20b748221c93667",
-      "timestamp": 1790192089,
-      "txCount": 3974
+      "height": 968346,
+      "id": "00000000000000000001185d8dac662570c5e4720a92ae4f03d4f83c69094cef",
+      "timestamp": 1790221113,
+      "txCount": 3871
     }
   ],
   "news": [
+    {
+      "title": "Dogecoin down 8%, bitcoin under $84,000 as Treasury yields hit highest level since 2007",
+      "link": "https://www.coindesk.com/markets/2026/09/24/dogecoin-down-8-bitcoin-under-usd84-000-as-treasury-yields-hit-highest-level-since-2007",
+      "pubDate": "Thu, 24 Sep 2026 04:13:01 +0000"
+    },
     {
       "title": "Kalshi says it is not being investigated by the CFTC over trading activity",
       "link": "https://www.coindesk.com/markets/2026/09/23/kalshi-says-it-is-not-being-investigated-by-the-cftc-over-trading-activity",
@@ -480,11 +485,6 @@
       "title": "BitMEX shuts down: perpetuals pioneer officially closes it doors after 11 years",
       "link": "https://www.coindesk.com/business/2026/09/23/bitmex-shuts-down-trading-after-11-years-leaves-withdrawals-open",
       "pubDate": "Wed, 23 Sep 2026 10:24:44 +0000"
-    },
-    {
-      "title": "FTX, Alameda-linked wallets send $75 million in ether to Wintermute, onchain data shows",
-      "link": "https://www.coindesk.com/business/2026/09/23/ftx-alameda-linked-wallets-send-usd75-million-in-ether-to-wintermute-onchain-data-shows",
-      "pubDate": "Wed, 23 Sep 2026 09:57:24 +0000"
     }
   ]
 }
