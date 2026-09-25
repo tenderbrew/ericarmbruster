@@ -1,19 +1,15 @@
 {
-  "fetchedAt": "2026-09-24T21:27:48.373Z",
+  "fetchedAt": "2026-09-25T04:51:53.491Z",
   "price": {
-    "usd": 84395,
-    "time": 1790284808
+    "usd": 84187,
+    "time": 1790311807
   },
   "moves": {
-    "d1": 0.014932138038159515,
-    "d7": 10.506082514373105,
-    "d30": 7.4941720505514064
+    "d1": -0.22632103465232145,
+    "d7": 4.097032684286539,
+    "d30": 6.54150157510931
   },
   "history90d": [
-    {
-      "date": "2026-06-27",
-      "close": 60022.32566638378
-    },
     {
       "date": "2026-06-28",
       "close": 59953.443344011124
@@ -371,61 +367,80 @@
       "close": 84382.39990356649
     },
     {
-      "date": "2026-09-24",
-      "close": 84404.9699578303
+      "date": "2026-09-25",
+      "close": 84377.96508359577
+    },
+    {
+      "date": "2026-09-25",
+      "close": 84198.37054989407
     }
   ],
   "blocks": [
     {
-      "height": 968455,
-      "id": "00000000000000000000d33f076471242ea75f2cd9c77c4f324b731e94b110e3",
-      "timestamp": 1790284944,
-      "txCount": 5929
+      "height": 968502,
+      "id": "00000000000000000000816ed3bb39e6e79058cd485d69c78923decbf29c1311",
+      "timestamp": 1790311764,
+      "txCount": 7268
     },
     {
-      "height": 968454,
-      "id": "000000000000000000013e0996461594b373f226fd7421f789bf1506c3fad102",
-      "timestamp": 1790284691,
-      "txCount": 6540
+      "height": 968501,
+      "id": "00000000000000000000fadec3a50ce6ac1996f6e8db6e1f352300e6e35cde8f",
+      "timestamp": 1790311742,
+      "txCount": 5160
     },
     {
-      "height": 968453,
-      "id": "00000000000000000000dc1babf7a871c2da37d1d03fa36bf9bcf8fe8ae80b18",
-      "timestamp": 1790284553,
-      "txCount": 3695
+      "height": 968500,
+      "id": "00000000000000000001b055b57b0e6300bbbe12478bee1e392f71a7f592cd36",
+      "timestamp": 1790311075,
+      "txCount": 6765
     },
     {
-      "height": 968452,
-      "id": "000000000000000000021409abc8597e7035fdff6408e836a5fc1c0b885038e7",
-      "timestamp": 1790284000,
-      "txCount": 2412
+      "height": 968499,
+      "id": "00000000000000000000905554ec0ff8b71966873c9bcb4245685072eb7db806",
+      "timestamp": 1790310855,
+      "txCount": 5904
     },
     {
-      "height": 968451,
-      "id": "0000000000000000000153f06c1a68efe310e7b1095c3719d0fc729747296112",
-      "timestamp": 1790283979,
-      "txCount": 2959
+      "height": 968498,
+      "id": "000000000000000000008ee8b45984b93e1f9c0209850ba4177f417cdb8b9acb",
+      "timestamp": 1790310578,
+      "txCount": 6826
     },
     {
-      "height": 968450,
-      "id": "0000000000000000000127824d2797a3fb12658b6c1e9fc41661d8c5cf2b8013",
-      "timestamp": 1790283499,
-      "txCount": 4161
+      "height": 968497,
+      "id": "00000000000000000002156f1d467d030d769860796c6d34b0872d704cc6954e",
+      "timestamp": 1790310452,
+      "txCount": 6402
     },
     {
-      "height": 968449,
-      "id": "000000000000000000000283a0d7b6a930f67f34eb35ac1d407c9c027b38ac3f",
-      "timestamp": 1790281793,
-      "txCount": 4104
+      "height": 968496,
+      "id": "0000000000000000000063b59ea2880b8452259c988271b9461729def12538a7",
+      "timestamp": 1790309788,
+      "txCount": 6405
     },
     {
-      "height": 968448,
-      "id": "00000000000000000001eab43d85d3d51466046e1bdcef184bd32d180d890c17",
-      "timestamp": 1790280438,
-      "txCount": 4262
+      "height": 968495,
+      "id": "000000000000000000016c25ba109e621ea290af1a65b26cfda05822806942eb",
+      "timestamp": 1790309526,
+      "txCount": 6515
     }
   ],
   "news": [
+    {
+      "title": "New York sues Polymarket, alleging it is running an illegal gambling operation",
+      "link": "https://www.coindesk.com/policy/2026/09/24/new-york-sues-polymarket-alleging-it-is-running-an-illegal-gambling-operation",
+      "pubDate": "Thu, 24 Sep 2026 22:41:44 +0000"
+    },
+    {
+      "title": "U.S. Federal Reserve moves on proposals to implement GENIUS Act for stablecoins",
+      "link": "https://www.coindesk.com/policy/2026/09/24/u-s-federal-reserve-moves-on-proposals-to-implement-genius-act-for-stablecoins",
+      "pubDate": "Thu, 24 Sep 2026 22:28:49 +0000"
+    },
+    {
+      "title": "Crypto exchange Bitget says $352 million affected in a hack, claims user funds are 'safe'",
+      "link": "https://www.coindesk.com/markets/2026/09/24/crypto-exchange-bitget-loses-usd352-million-in-hack-claims-user-funds-are-safe",
+      "pubDate": "Thu, 24 Sep 2026 21:59:32 +0000"
+    },
     {
       "title": "Someone was trying to sell Ondo Finance after founder Nathan Allman's death",
       "link": "https://www.coindesk.com/business/2026/09/23/someone-was-trying-to-sell-ondo-finance-after-founder-nathan-allman-s-death",
@@ -470,21 +485,6 @@
       "title": "Crypto for Advisors:The hidden costs of holding your own bitcoin",
       "link": "https://www.coindesk.com/coindesk-indices/2026/09/24/crypto-for-advisors-the-hidden-costs-of-holding-your-own-bitcoin",
       "pubDate": "Thu, 24 Sep 2026 14:49:28 +0000"
-    },
-    {
-      "title": "European stablecoin issuer Qivalis sees transformation of global trade finance",
-      "link": "https://www.coindesk.com/business/2026/09/24/european-stablecoin-issuer-qivalis-sees-transformation-of-global-trade-finance",
-      "pubDate": "Thu, 24 Sep 2026 14:41:05 +0000"
-    },
-    {
-      "title": "Cathie Wood's ARK teams with Securitize to tokenize venture fund with OpenAI, Anthropic stakes",
-      "link": "https://www.coindesk.com/business/2026/09/24/cathie-wood-s-ark-teams-with-securitize-to-tokenize-venture-fund-with-openai-anthropic-stakes",
-      "pubDate": "Thu, 24 Sep 2026 13:00:00 +0000"
-    },
-    {
-      "title": "Solana Foundation hires Binance, Polygon veterans as it ramps up tokenized finance push",
-      "link": "https://www.coindesk.com/business/2026/09/24/solana-foundation-hires-binance-polygon-veterans-as-it-ramps-up-tokenized-finance-push",
-      "pubDate": "Thu, 24 Sep 2026 13:00:00 +0000"
     }
   ]
 }
