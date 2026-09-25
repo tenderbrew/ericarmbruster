@@ -1,13 +1,13 @@
 {
-  "fetchedAt": "2026-09-25T17:06:07.192Z",
+  "fetchedAt": "2026-09-25T21:31:14.718Z",
   "price": {
-    "usd": 83732,
-    "time": 1790355610
+    "usd": 83718,
+    "time": 1790371515
   },
   "moves": {
-    "d1": -0.7655613440734177,
-    "d7": 3.534426226385068,
-    "d30": 5.965683655279941
+    "d1": -0.7821533535940617,
+    "d7": 3.5171152584496435,
+    "d30": 5.9479661808236495
   },
   "history90d": [
     {
@@ -372,60 +372,70 @@
     },
     {
       "date": "2026-09-25",
-      "close": 83870.32357480403
+      "close": 83751.43597427408
     }
   ],
   "blocks": [
     {
-      "height": 968568,
-      "id": "000000000000000000015432c7dd6ac9b70e53e645907d8e3ec70f931974c9de",
-      "timestamp": 1790355859,
-      "txCount": 4213
+      "height": 968589,
+      "id": "0000000000000000000109f0a049ab71e2c4af5cf8d6ffa4e088cfa97810a2b1",
+      "timestamp": 1790370633,
+      "txCount": 3420
     },
     {
-      "height": 968567,
-      "id": "000000000000000000005e285aebcc25d892f32b4b7d1e63157f4664e8e8645b",
-      "timestamp": 1790355503,
-      "txCount": 3864
+      "height": 968588,
+      "id": "000000000000000000000645853be94e21ff82323d1e4e5deacea3966dc62373",
+      "timestamp": 1790370293,
+      "txCount": 3542
     },
     {
-      "height": 968566,
-      "id": "00000000000000000001274482b7345f902d2a5e022d7bb531a204ba24589c74",
-      "timestamp": 1790353711,
-      "txCount": 3758
+      "height": 968587,
+      "id": "000000000000000000021dc96bb861f560f00aacf894ff8635ae70768f9081c2",
+      "timestamp": 1790370180,
+      "txCount": 2417
     },
     {
-      "height": 968565,
-      "id": "00000000000000000000651d208d1fbce3d82296562e50906a29a20e0f1ffd74",
-      "timestamp": 1790352980,
-      "txCount": 3700
+      "height": 968586,
+      "id": "00000000000000000001173d83809633e74cc7da3b3830595e497cc7f9e374c7",
+      "timestamp": 1790369862,
+      "txCount": 3792
     },
     {
-      "height": 968564,
-      "id": "0000000000000000000161852f644662db3a1af6d89eb26b2f3664771cf60f98",
-      "timestamp": 1790352978,
-      "txCount": 4133
+      "height": 968585,
+      "id": "00000000000000000001e0386209ef040542ee0e275eb387af49d7965a753fbc",
+      "timestamp": 1790368854,
+      "txCount": 3284
     },
     {
-      "height": 968563,
-      "id": "000000000000000000006bb11c4060e6ff16a9f8a12ee9e9919bbfea263a8760",
-      "timestamp": 1790352530,
-      "txCount": 3554
+      "height": 968584,
+      "id": "00000000000000000001bf11d663311894bde794d7afdb1e98648d8aa22dc617",
+      "timestamp": 1790368064,
+      "txCount": 3479
     },
     {
-      "height": 968562,
-      "id": "00000000000000000000faa64065d973859252b0b06e6084aaeae565a8c15f7a",
-      "timestamp": 1790350831,
-      "txCount": 3812
+      "height": 968583,
+      "id": "0000000000000000000044cab3cf92869e0d3f48bd8ea0913b587a88668b04dd",
+      "timestamp": 1790367236,
+      "txCount": 3815
     },
     {
-      "height": 968561,
-      "id": "000000000000000000006603cc594125a641bf77f97da43078f9a8bdd5df5271",
-      "timestamp": 1790349252,
-      "txCount": 3671
+      "height": 968582,
+      "id": "000000000000000000001fd42c1b52b7bb39731ac9ba39dfa32de9a08360bb32",
+      "timestamp": 1790366698,
+      "txCount": 3862
     }
   ],
   "news": [
+    {
+      "title": "Another appeals court rules against prediction market provider Kalshi, says sports contracts are subject to state regulations",
+      "link": "https://www.coindesk.com/policy/2026/09/25/another-appeals-court-rules-against-prediction-market-provider-kalshi-says-sports-contracts-are-subject-to-state-regulations",
+      "pubDate": "Fri, 25 Sep 2026 21:17:30 +0000"
+    },
+    {
+      "title": "Blockchain Association sees leadership shift shortly after crypto Clarity Act fizzles",
+      "link": "https://www.coindesk.com/policy/2026/09/25/blockchain-association-sees-leadership-shift-shortly-after-crypto-clarity-act-fizzles",
+      "pubDate": "Fri, 25 Sep 2026 20:01:05 +0000"
+    },
     {
       "title": "Circle and Tether step in to freeze hacker wallet after massive Bitget crypto heist",
       "link": "https://www.coindesk.com/markets/2026/09/25/circle-and-tether-step-in-to-freeze-hacker-wallet-after-massive-bitget-crypto-heist",
@@ -475,16 +485,6 @@
       "title": "Live updates: Bitcoin moves to $84,000, oil slides on latest report of Middle East progress",
       "link": "https://www.coindesk.com/markets/2026/09/25/live-updates-bitcoin-steadies-near-usd84-000-as-the-bond-selloff-pauses",
       "pubDate": "Fri, 25 Sep 2026 07:09:11 +0000"
-    },
-    {
-      "title": "Bitget's $352 million hack happened via spoofed transfers, not private keys, CEO Gracy Chen says",
-      "link": "https://www.coindesk.com/markets/2026/09/25/bitget-s-usd351-million-hack-happened-via-spoofed-transfers-not-private-keys-ceo-gray-chen-says",
-      "pubDate": "Fri, 25 Sep 2026 04:29:34 +0000"
-    },
-    {
-      "title": "New York sues Polymarket, alleging it is running an illegal gambling operation",
-      "link": "https://www.coindesk.com/policy/2026/09/24/new-york-sues-polymarket-alleging-it-is-running-an-illegal-gambling-operation",
-      "pubDate": "Thu, 24 Sep 2026 22:41:44 +0000"
     }
   ]
 }
