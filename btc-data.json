@@ -1,13 +1,13 @@
 {
-  "fetchedAt": "2026-09-25T11:45:17.518Z",
+  "fetchedAt": "2026-09-25T17:06:07.192Z",
   "price": {
-    "usd": 84813,
-    "time": 1790336407
+    "usd": 83732,
+    "time": 1790355610
   },
   "moves": {
-    "d1": 0.5155788196281152,
-    "d7": 4.87108025054217,
-    "d30": 7.333725790083334
+    "d1": -0.7655613440734177,
+    "d7": 3.534426226385068,
+    "d30": 5.965683655279941
   },
   "history90d": [
     {
@@ -372,60 +372,85 @@
     },
     {
       "date": "2026-09-25",
-      "close": 84723.29221857239
+      "close": 83870.32357480403
     }
   ],
   "blocks": [
     {
-      "height": 968543,
-      "id": "00000000000000000001e2a63a6e8e19b3a0b77f95ee05e22b702c6084adbfd1",
-      "timestamp": 1790335572,
-      "txCount": 4222
+      "height": 968568,
+      "id": "000000000000000000015432c7dd6ac9b70e53e645907d8e3ec70f931974c9de",
+      "timestamp": 1790355859,
+      "txCount": 4213
     },
     {
-      "height": 968542,
-      "id": "00000000000000000000e60c66899c2162db615df65ee678c20c834162194e41",
-      "timestamp": 1790333571,
-      "txCount": 5734
+      "height": 968567,
+      "id": "000000000000000000005e285aebcc25d892f32b4b7d1e63157f4664e8e8645b",
+      "timestamp": 1790355503,
+      "txCount": 3864
     },
     {
-      "height": 968541,
-      "id": "0000000000000000000056e8b7f6f9cebecad2c5abe8c60bfb16dae512948601",
-      "timestamp": 1790333495,
-      "txCount": 3332
+      "height": 968566,
+      "id": "00000000000000000001274482b7345f902d2a5e022d7bb531a204ba24589c74",
+      "timestamp": 1790353711,
+      "txCount": 3758
     },
     {
-      "height": 968540,
-      "id": "0000000000000000000148f238a0dc34ae7b9f30d5bfccea7bee254478fdf17b",
-      "timestamp": 1790333373,
-      "txCount": 4186
+      "height": 968565,
+      "id": "00000000000000000000651d208d1fbce3d82296562e50906a29a20e0f1ffd74",
+      "timestamp": 1790352980,
+      "txCount": 3700
     },
     {
-      "height": 968539,
-      "id": "000000000000000000016a5b67707c7c249b1ce17ea2b2197cbbb50392b4643d",
-      "timestamp": 1790331496,
-      "txCount": 4131
+      "height": 968564,
+      "id": "0000000000000000000161852f644662db3a1af6d89eb26b2f3664771cf60f98",
+      "timestamp": 1790352978,
+      "txCount": 4133
     },
     {
-      "height": 968538,
-      "id": "00000000000000000000783051e4a06ed51b2d11670c75bf6df15d688d583c2c",
-      "timestamp": 1790330673,
-      "txCount": 6099
+      "height": 968563,
+      "id": "000000000000000000006bb11c4060e6ff16a9f8a12ee9e9919bbfea263a8760",
+      "timestamp": 1790352530,
+      "txCount": 3554
     },
     {
-      "height": 968537,
-      "id": "000000000000000000015d5ee0d61374e8612e58052e06ae707c04616305f702",
-      "timestamp": 1790330270,
-      "txCount": 7138
+      "height": 968562,
+      "id": "00000000000000000000faa64065d973859252b0b06e6084aaeae565a8c15f7a",
+      "timestamp": 1790350831,
+      "txCount": 3812
     },
     {
-      "height": 968536,
-      "id": "00000000000000000001388388e2cb3c999ab1f9b349a2ae376d95ec9fc5c461",
-      "timestamp": 1790330194,
-      "txCount": 6724
+      "height": 968561,
+      "id": "000000000000000000006603cc594125a641bf77f97da43078f9a8bdd5df5271",
+      "timestamp": 1790349252,
+      "txCount": 3671
     }
   ],
   "news": [
+    {
+      "title": "Circle and Tether step in to freeze hacker wallet after massive Bitget crypto heist",
+      "link": "https://www.coindesk.com/markets/2026/09/25/circle-and-tether-step-in-to-freeze-hacker-wallet-after-massive-bitget-crypto-heist",
+      "pubDate": "Fri, 25 Sep 2026 14:41:53 +0000"
+    },
+    {
+      "title": "Tokenization is moving faster than Washington",
+      "link": "https://www.coindesk.com/opinion/2026/09/25/tokenization-is-moving-faster-than-washington",
+      "pubDate": "Fri, 25 Sep 2026 14:37:32 +0000"
+    },
+    {
+      "title": "Tether confirms minimal EQIBank exposure following $89M US asset seizure",
+      "link": "https://www.coindesk.com/policy/2026/09/25/tether-confirms-minimal-eqibank-exposure-following-usd89m-us-asset-seizure",
+      "pubDate": "Fri, 25 Sep 2026 14:32:48 +0000"
+    },
+    {
+      "title": "Strategy proposes daily dividends to bring STRC back toward $100",
+      "link": "https://www.coindesk.com/markets/2026/09/25/strategy-proposes-daily-dividends-to-bring-strc-back-toward-usd100",
+      "pubDate": "Fri, 25 Sep 2026 14:22:07 +0000"
+    },
+    {
+      "title": "Bond volatility surges while bitcoin and Wall Street stay calm",
+      "link": "https://www.coindesk.com/markets/2026/09/25/bond-volatility-surges-while-bitcoin-and-wall-street-stay-calm",
+      "pubDate": "Fri, 25 Sep 2026 11:54:28 +0000"
+    },
     {
       "title": "Bitcoin holders are cashing out, just not the way they did at prior market tops",
       "link": "https://www.coindesk.com/daybook-us/2026/09/25/bitcoin-holders-are-cashing-out-just-not-the-way-they-did-at-prior-market-tops",
@@ -437,7 +462,7 @@
       "pubDate": "Fri, 25 Sep 2026 09:59:45 +0000"
     },
     {
-      "title": "Bitcoin ETFs have erased a $5.8 billion hole",
+      "title": "Bitcoin ETF flows turn positive for 2026 after erasing $5.8 billion deficit",
       "link": "https://www.coindesk.com/markets/2026/09/25/bitcoin-etfs-have-erased-a-usd5-8-billion-hole",
       "pubDate": "Fri, 25 Sep 2026 09:13:01 +0000"
     },
@@ -447,7 +472,7 @@
       "pubDate": "Fri, 25 Sep 2026 08:58:03 +0000"
     },
     {
-      "title": "Live updates: Bitcoin steadies near $85,000 as the bond selloff pauses",
+      "title": "Live updates: Bitcoin moves to $84,000, oil slides on latest report of Middle East progress",
       "link": "https://www.coindesk.com/markets/2026/09/25/live-updates-bitcoin-steadies-near-usd84-000-as-the-bond-selloff-pauses",
       "pubDate": "Fri, 25 Sep 2026 07:09:11 +0000"
     },
@@ -460,31 +485,6 @@
       "title": "New York sues Polymarket, alleging it is running an illegal gambling operation",
       "link": "https://www.coindesk.com/policy/2026/09/24/new-york-sues-polymarket-alleging-it-is-running-an-illegal-gambling-operation",
       "pubDate": "Thu, 24 Sep 2026 22:41:44 +0000"
-    },
-    {
-      "title": "U.S. Federal Reserve moves on proposals to implement GENIUS Act for stablecoins",
-      "link": "https://www.coindesk.com/policy/2026/09/24/u-s-federal-reserve-moves-on-proposals-to-implement-genius-act-for-stablecoins",
-      "pubDate": "Thu, 24 Sep 2026 22:28:49 +0000"
-    },
-    {
-      "title": "Crypto exchange Bitget says $352 million affected in a hack, claims user funds are 'safe'",
-      "link": "https://www.coindesk.com/markets/2026/09/24/crypto-exchange-bitget-loses-usd352-million-in-hack-claims-user-funds-are-safe",
-      "pubDate": "Thu, 24 Sep 2026 21:59:32 +0000"
-    },
-    {
-      "title": "Someone was trying to sell Ondo Finance after founder Nathan Allman's death",
-      "link": "https://www.coindesk.com/business/2026/09/23/someone-was-trying-to-sell-ondo-finance-after-founder-nathan-allman-s-death",
-      "pubDate": "Thu, 24 Sep 2026 20:13:25 +0000"
-    },
-    {
-      "title": "Bullish, Alpaca and Apex Fintech form coalition to push issuer-backed tokenized stocks",
-      "link": "https://www.coindesk.com/business/2026/09/24/bullish-alpaca-and-apex-fintech-form-coalition-to-push-issuer-backed-tokenized-stocks",
-      "pubDate": "Thu, 24 Sep 2026 20:05:00 +0000"
-    },
-    {
-      "title": "U.S. commodities firms can invest in tokenized assets, use blockchain records: CFTC",
-      "link": "https://www.coindesk.com/policy/2026/09/24/u-s-commodities-firms-can-invest-in-tokenized-assets-use-blockchain-records-cftc",
-      "pubDate": "Thu, 24 Sep 2026 20:04:46 +0000"
     }
   ]
 }
