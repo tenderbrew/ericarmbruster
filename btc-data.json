@@ -1,13 +1,13 @@
 {
-  "fetchedAt": "2026-09-25T04:51:53.491Z",
+  "fetchedAt": "2026-09-25T11:45:17.518Z",
   "price": {
-    "usd": 84187,
-    "time": 1790311807
+    "usd": 84813,
+    "time": 1790336407
   },
   "moves": {
-    "d1": -0.22632103465232145,
-    "d7": 4.097032684286539,
-    "d30": 6.54150157510931
+    "d1": 0.5155788196281152,
+    "d7": 4.87108025054217,
+    "d30": 7.333725790083334
   },
   "history90d": [
     {
@@ -372,60 +372,90 @@
     },
     {
       "date": "2026-09-25",
-      "close": 84198.37054989407
+      "close": 84723.29221857239
     }
   ],
   "blocks": [
     {
-      "height": 968502,
-      "id": "00000000000000000000816ed3bb39e6e79058cd485d69c78923decbf29c1311",
-      "timestamp": 1790311764,
-      "txCount": 7268
+      "height": 968543,
+      "id": "00000000000000000001e2a63a6e8e19b3a0b77f95ee05e22b702c6084adbfd1",
+      "timestamp": 1790335572,
+      "txCount": 4222
     },
     {
-      "height": 968501,
-      "id": "00000000000000000000fadec3a50ce6ac1996f6e8db6e1f352300e6e35cde8f",
-      "timestamp": 1790311742,
-      "txCount": 5160
+      "height": 968542,
+      "id": "00000000000000000000e60c66899c2162db615df65ee678c20c834162194e41",
+      "timestamp": 1790333571,
+      "txCount": 5734
     },
     {
-      "height": 968500,
-      "id": "00000000000000000001b055b57b0e6300bbbe12478bee1e392f71a7f592cd36",
-      "timestamp": 1790311075,
-      "txCount": 6765
+      "height": 968541,
+      "id": "0000000000000000000056e8b7f6f9cebecad2c5abe8c60bfb16dae512948601",
+      "timestamp": 1790333495,
+      "txCount": 3332
     },
     {
-      "height": 968499,
-      "id": "00000000000000000000905554ec0ff8b71966873c9bcb4245685072eb7db806",
-      "timestamp": 1790310855,
-      "txCount": 5904
+      "height": 968540,
+      "id": "0000000000000000000148f238a0dc34ae7b9f30d5bfccea7bee254478fdf17b",
+      "timestamp": 1790333373,
+      "txCount": 4186
     },
     {
-      "height": 968498,
-      "id": "000000000000000000008ee8b45984b93e1f9c0209850ba4177f417cdb8b9acb",
-      "timestamp": 1790310578,
-      "txCount": 6826
+      "height": 968539,
+      "id": "000000000000000000016a5b67707c7c249b1ce17ea2b2197cbbb50392b4643d",
+      "timestamp": 1790331496,
+      "txCount": 4131
     },
     {
-      "height": 968497,
-      "id": "00000000000000000002156f1d467d030d769860796c6d34b0872d704cc6954e",
-      "timestamp": 1790310452,
-      "txCount": 6402
+      "height": 968538,
+      "id": "00000000000000000000783051e4a06ed51b2d11670c75bf6df15d688d583c2c",
+      "timestamp": 1790330673,
+      "txCount": 6099
     },
     {
-      "height": 968496,
-      "id": "0000000000000000000063b59ea2880b8452259c988271b9461729def12538a7",
-      "timestamp": 1790309788,
-      "txCount": 6405
+      "height": 968537,
+      "id": "000000000000000000015d5ee0d61374e8612e58052e06ae707c04616305f702",
+      "timestamp": 1790330270,
+      "txCount": 7138
     },
     {
-      "height": 968495,
-      "id": "000000000000000000016c25ba109e621ea290af1a65b26cfda05822806942eb",
-      "timestamp": 1790309526,
-      "txCount": 6515
+      "height": 968536,
+      "id": "00000000000000000001388388e2cb3c999ab1f9b349a2ae376d95ec9fc5c461",
+      "timestamp": 1790330194,
+      "txCount": 6724
     }
   ],
   "news": [
+    {
+      "title": "Bitcoin holders are cashing out, just not the way they did at prior market tops",
+      "link": "https://www.coindesk.com/daybook-us/2026/09/25/bitcoin-holders-are-cashing-out-just-not-the-way-they-did-at-prior-market-tops",
+      "pubDate": "Fri, 25 Sep 2026 11:29:04 +0000"
+    },
+    {
+      "title": "Altcoins rally across the board as bitcoin consolidates near $84,000",
+      "link": "https://www.coindesk.com/markets/2026/09/25/altcoins-rally-across-the-board-as-bitcoin-consolidates-near-usd84-000",
+      "pubDate": "Fri, 25 Sep 2026 09:59:45 +0000"
+    },
+    {
+      "title": "Bitcoin ETFs have erased a $5.8 billion hole",
+      "link": "https://www.coindesk.com/markets/2026/09/25/bitcoin-etfs-have-erased-a-usd5-8-billion-hole",
+      "pubDate": "Fri, 25 Sep 2026 09:13:01 +0000"
+    },
+    {
+      "title": "KelpDAO sues LayerZero for the largest exploit 2026 has seen so far",
+      "link": "https://www.coindesk.com/business/2026/09/25/kelpdao-sues-layerzero-for-the-largest-exploit-2026-has-seen-so-far",
+      "pubDate": "Fri, 25 Sep 2026 08:58:03 +0000"
+    },
+    {
+      "title": "Live updates: Bitcoin steadies near $85,000 as the bond selloff pauses",
+      "link": "https://www.coindesk.com/markets/2026/09/25/live-updates-bitcoin-steadies-near-usd84-000-as-the-bond-selloff-pauses",
+      "pubDate": "Fri, 25 Sep 2026 07:09:11 +0000"
+    },
+    {
+      "title": "Bitget's $352 million hack happened via spoofed transfers, not private keys, CEO Gracy Chen says",
+      "link": "https://www.coindesk.com/markets/2026/09/25/bitget-s-usd351-million-hack-happened-via-spoofed-transfers-not-private-keys-ceo-gray-chen-says",
+      "pubDate": "Fri, 25 Sep 2026 04:29:34 +0000"
+    },
     {
       "title": "New York sues Polymarket, alleging it is running an illegal gambling operation",
       "link": "https://www.coindesk.com/policy/2026/09/24/new-york-sues-polymarket-alleging-it-is-running-an-illegal-gambling-operation",
@@ -455,36 +485,6 @@
       "title": "U.S. commodities firms can invest in tokenized assets, use blockchain records: CFTC",
       "link": "https://www.coindesk.com/policy/2026/09/24/u-s-commodities-firms-can-invest-in-tokenized-assets-use-blockchain-records-cftc",
       "pubDate": "Thu, 24 Sep 2026 20:04:46 +0000"
-    },
-    {
-      "title": "The stock token debate, and the gap nobody can close alone",
-      "link": "https://www.coindesk.com/opinion/2026/09/24/the-stock-token-debate-and-the-gap-nobody-can-close-alone",
-      "pubDate": "Thu, 24 Sep 2026 20:03:21 +0000"
-    },
-    {
-      "title": "Bitcoin just topped a key long-term moving average. Here's what it might mean",
-      "link": "https://www.coindesk.com/markets/2026/09/24/bitcoin-just-topped-a-key-long-term-moving-average-here-s-what-it-might-mean",
-      "pubDate": "Thu, 24 Sep 2026 18:46:58 +0000"
-    },
-    {
-      "title": "Crypto casino Duelbits goes offline after $7 million hot wallet hack",
-      "link": "https://www.coindesk.com/business/2026/09/24/crypto-casino-duelbits-goes-offline-after-usd7m-hot-wallet-hack",
-      "pubDate": "Thu, 24 Sep 2026 15:48:20 +0000"
-    },
-    {
-      "title": "Bitcoin’s bear markets are getting milder. Bull markets may be next",
-      "link": "https://www.coindesk.com/markets/2026/09/24/bitcoin-s-bear-markets-are-getting-milder-the-bull-markets-may-be-next",
-      "pubDate": "Thu, 24 Sep 2026 15:26:34 +0000"
-    },
-    {
-      "title": "UK’s largest banks complete world’s first interbank transactions using tokenized deposits",
-      "link": "https://www.coindesk.com/business/2026/09/24/uk-s-largest-banks-complete-world-s-first-interbank-transactions-using-tokenized-deposits",
-      "pubDate": "Thu, 24 Sep 2026 15:07:18 +0000"
-    },
-    {
-      "title": "Crypto for Advisors:The hidden costs of holding your own bitcoin",
-      "link": "https://www.coindesk.com/coindesk-indices/2026/09/24/crypto-for-advisors-the-hidden-costs-of-holding-your-own-bitcoin",
-      "pubDate": "Thu, 24 Sep 2026 14:49:28 +0000"
     }
   ]
 }
