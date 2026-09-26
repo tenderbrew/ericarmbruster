@@ -1,19 +1,15 @@
 {
-  "fetchedAt": "2026-09-25T21:31:14.718Z",
+  "fetchedAt": "2026-09-26T04:50:59.734Z",
   "price": {
-    "usd": 83718,
-    "time": 1790371515
+    "usd": 83971,
+    "time": 1790397908
   },
   "moves": {
-    "d1": -0.7821533535940617,
-    "d7": 3.5171152584496435,
-    "d30": 5.9479661808236495
+    "d1": -0.12455033943947758,
+    "d7": 3.3662073868703013,
+    "d30": 4.612807054569679
   },
   "history90d": [
-    {
-      "date": "2026-06-28",
-      "close": 59953.443344011124
-    },
     {
       "date": "2026-06-29",
       "close": 59494.606386317784
@@ -371,61 +367,80 @@
       "close": 84377.96508359577
     },
     {
-      "date": "2026-09-25",
-      "close": 83751.43597427408
+      "date": "2026-09-26",
+      "close": 84075.71659039952
+    },
+    {
+      "date": "2026-09-26",
+      "close": 83967.35124026428
     }
   ],
   "blocks": [
     {
-      "height": 968589,
-      "id": "0000000000000000000109f0a049ab71e2c4af5cf8d6ffa4e088cfa97810a2b1",
-      "timestamp": 1790370633,
-      "txCount": 3420
+      "height": 968641,
+      "id": "0000000000000000000154a4d28da60da733df876e6957d31dcef5ffc96a3ce7",
+      "timestamp": 1790397959,
+      "txCount": 7037
     },
     {
-      "height": 968588,
-      "id": "000000000000000000000645853be94e21ff82323d1e4e5deacea3966dc62373",
-      "timestamp": 1790370293,
-      "txCount": 3542
+      "height": 968640,
+      "id": "00000000000000000001cd96cda7b5acd12d9c37d376d8f2d8c500e0495d6fc0",
+      "timestamp": 1790397935,
+      "txCount": 5040
     },
     {
-      "height": 968587,
-      "id": "000000000000000000021dc96bb861f560f00aacf894ff8635ae70768f9081c2",
-      "timestamp": 1790370180,
-      "txCount": 2417
+      "height": 968639,
+      "id": "00000000000000000000700f35157e09b4ce3c396930f2b4c8438e3e33523c46",
+      "timestamp": 1790397076,
+      "txCount": 6687
     },
     {
-      "height": 968586,
-      "id": "00000000000000000001173d83809633e74cc7da3b3830595e497cc7f9e374c7",
-      "timestamp": 1790369862,
-      "txCount": 3792
+      "height": 968638,
+      "id": "00000000000000000001cc91ceb814bac4f1e31760dbf39314f6bfbe700be542",
+      "timestamp": 1790396877,
+      "txCount": 6974
     },
     {
-      "height": 968585,
-      "id": "00000000000000000001e0386209ef040542ee0e275eb387af49d7965a753fbc",
-      "timestamp": 1790368854,
-      "txCount": 3284
+      "height": 968637,
+      "id": "0000000000000000000039509c96570c8ba3ba33c174a2d4aeb42d6fd2618d91",
+      "timestamp": 1790396651,
+      "txCount": 5746
     },
     {
-      "height": 968584,
-      "id": "00000000000000000001bf11d663311894bde794d7afdb1e98648d8aa22dc617",
-      "timestamp": 1790368064,
-      "txCount": 3479
+      "height": 968636,
+      "id": "000000000000000000020f7777f5b90a9ef274e4e0f3fee2ba75b31f50ede393",
+      "timestamp": 1790396046,
+      "txCount": 6490
     },
     {
-      "height": 968583,
-      "id": "0000000000000000000044cab3cf92869e0d3f48bd8ea0913b587a88668b04dd",
-      "timestamp": 1790367236,
-      "txCount": 3815
+      "height": 968635,
+      "id": "00000000000000000000836dfab1879244485960e1ee0a506461ad5a93560ed2",
+      "timestamp": 1790395667,
+      "txCount": 6771
     },
     {
-      "height": 968582,
-      "id": "000000000000000000001fd42c1b52b7bb39731ac9ba39dfa32de9a08360bb32",
-      "timestamp": 1790366698,
-      "txCount": 3862
+      "height": 968634,
+      "id": "0000000000000000000034ba0b4bd93555a1fcc24ab2c474007c6e4024e47d71",
+      "timestamp": 1790395536,
+      "txCount": 3579
     }
   ],
   "news": [
+    {
+      "title": "XRP Ledger’s Batch upgrade slips to Oct. 9 after validator support resets",
+      "link": "https://www.coindesk.com/tech/2026/09/26/xrp-ledger-s-batch-upgrade-slips-to-oct-9-after-validator-support-resets",
+      "pubDate": "Sat, 26 Sep 2026 04:30:00 +0000"
+    },
+    {
+      "title": "Bitcoin could soon get Zcash-style 'shielded' privacy without changing its rules",
+      "link": "https://www.coindesk.com/tech/2026/09/25/bitcoin-could-soon-get-zcash-style-shielded-privacy-without-changing-its-rules",
+      "pubDate": "Sat, 26 Sep 2026 04:02:13 +0000"
+    },
+    {
+      "title": "U.S. SEC's steadiest crypto advocate, Hester Peirce, to depart next week",
+      "link": "https://www.coindesk.com/policy/2026/09/25/u-s-sec-s-steadiest-crypto-advocate-hester-peirce-to-depart-next-week",
+      "pubDate": "Fri, 25 Sep 2026 22:17:38 +0000"
+    },
     {
       "title": "Another appeals court rules against prediction market provider Kalshi, says sports contracts are subject to state regulations",
       "link": "https://www.coindesk.com/policy/2026/09/25/another-appeals-court-rules-against-prediction-market-provider-kalshi-says-sports-contracts-are-subject-to-state-regulations",
@@ -470,21 +485,6 @@
       "title": "Altcoins rally across the board as bitcoin consolidates near $84,000",
       "link": "https://www.coindesk.com/markets/2026/09/25/altcoins-rally-across-the-board-as-bitcoin-consolidates-near-usd84-000",
       "pubDate": "Fri, 25 Sep 2026 09:59:45 +0000"
-    },
-    {
-      "title": "Bitcoin ETF flows turn positive for 2026 after erasing $5.8 billion deficit",
-      "link": "https://www.coindesk.com/markets/2026/09/25/bitcoin-etfs-have-erased-a-usd5-8-billion-hole",
-      "pubDate": "Fri, 25 Sep 2026 09:13:01 +0000"
-    },
-    {
-      "title": "KelpDAO sues LayerZero for the largest exploit 2026 has seen so far",
-      "link": "https://www.coindesk.com/business/2026/09/25/kelpdao-sues-layerzero-for-the-largest-exploit-2026-has-seen-so-far",
-      "pubDate": "Fri, 25 Sep 2026 08:58:03 +0000"
-    },
-    {
-      "title": "Live updates: Bitcoin moves to $84,000, oil slides on latest report of Middle East progress",
-      "link": "https://www.coindesk.com/markets/2026/09/25/live-updates-bitcoin-steadies-near-usd84-000-as-the-bond-selloff-pauses",
-      "pubDate": "Fri, 25 Sep 2026 07:09:11 +0000"
     }
   ]
 }
