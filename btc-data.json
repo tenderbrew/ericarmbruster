@@ -1,13 +1,13 @@
 {
-  "fetchedAt": "2026-09-26T11:18:10.117Z",
+  "fetchedAt": "2026-09-26T16:18:30.022Z",
   "price": {
-    "usd": 84156,
-    "time": 1790421308
+    "usd": 84132,
+    "time": 1790439007
   },
   "moves": {
-    "d1": 0.09548941460897353,
-    "d7": 3.5939377743442025,
-    "d30": 4.84328387758115
+    "d1": 0.06694371678648281,
+    "d7": 3.564394372725954,
+    "d30": 4.813384181622893
   },
   "history90d": [
     {
@@ -372,60 +372,80 @@
     },
     {
       "date": "2026-09-26",
-      "close": 84155.95379391508
+      "close": 84114.70840864045
     }
   ],
   "blocks": [
     {
-      "height": 968675,
-      "id": "00000000000000000001bb8a1a003b1ec0e89beb40e145d13991e7bc88d88f10",
-      "timestamp": 1790420677,
-      "txCount": 4100
+      "height": 968709,
+      "id": "00000000000000000001f30493183bd9fd8c41f571338b1044a2aacb7a8e6c3c",
+      "timestamp": 1790438927,
+      "txCount": 3662
     },
     {
-      "height": 968674,
-      "id": "00000000000000000001b50d0ff3c2100738520d0e88571a345ccae06bd46c10",
-      "timestamp": 1790419186,
-      "txCount": 5368
+      "height": 968708,
+      "id": "000000000000000000015c211b9bc6304ebdcb8baf28bf8fb10a10bc21f55a48",
+      "timestamp": 1790437493,
+      "txCount": 109
     },
     {
-      "height": 968673,
-      "id": "000000000000000000005754fbf79d636ce09c71cdef6f6fc066bbb51de2afac",
-      "timestamp": 1790418821,
-      "txCount": 7560
+      "height": 968707,
+      "id": "0000000000000000000024c4de6a5d8a3d22520849ea05981ad9a7ea8af74557",
+      "timestamp": 1790437466,
+      "txCount": 7389
     },
     {
-      "height": 968672,
-      "id": "00000000000000000001d5fc0df8b3bac83c41ce56b9ede598e54327bb8f4147",
-      "timestamp": 1790418766,
-      "txCount": 3263
+      "height": 968706,
+      "id": "000000000000000000013eabe1a4ee7f7571cae27404ef2d4433a3aee50db399",
+      "timestamp": 1790437608,
+      "txCount": 5670
     },
     {
-      "height": 968671,
-      "id": "000000000000000000016e617156f3d01a3e57e88cf496914a682210d2f60db5",
-      "timestamp": 1790417881,
-      "txCount": 6303
+      "height": 968705,
+      "id": "00000000000000000000f4f36301008bdf7d9580269df68c4495afc81211f115",
+      "timestamp": 1790437353,
+      "txCount": 4491
     },
     {
-      "height": 968670,
-      "id": "00000000000000000000de35a85ba757557f04ab919b953741814619a771f966",
-      "timestamp": 1790417677,
-      "txCount": 3791
+      "height": 968704,
+      "id": "00000000000000000001632ec4039055ca2622fecee1d3af6fb5c257ff554b8d",
+      "timestamp": 1790435901,
+      "txCount": 4517
     },
     {
-      "height": 968669,
-      "id": "000000000000000000006907fa20b6d127f6b03c9ba58d25d030cbf6237b3775",
-      "timestamp": 1790416720,
-      "txCount": 3333
+      "height": 968703,
+      "id": "00000000000000000001df448b1c72837906a1a733caf2434abcf8a6f23e97a9",
+      "timestamp": 1790435315,
+      "txCount": 3672
     },
     {
-      "height": 968668,
-      "id": "0000000000000000000188e7a3e1e9a25e7b7786555a2c367092b2274efc6098",
-      "timestamp": 1790416238,
-      "txCount": 2379
+      "height": 968702,
+      "id": "00000000000000000001e3d5d049670bb5aa71e9b4f81dcb58d654bee3546537",
+      "timestamp": 1790434630,
+      "txCount": 5059
     }
   ],
   "news": [
+    {
+      "title": "Kraken’s parent Payward is betting billions on becoming financial infrastructure, not just a crypto exchange",
+      "link": "https://www.coindesk.com/business/2026/09/26/kraken-s-parent-payward-is-betting-billions-on-becoming-financial-infrastructure-not-just-a-crypto-exchange",
+      "pubDate": "Sat, 26 Sep 2026 14:00:00 +0000"
+    },
+    {
+      "title": "Binance deal gives Circle a boost in stablecoin race with Tether, analysts say",
+      "link": "https://www.coindesk.com/business/2026/09/26/binance-deal-gives-circle-a-boost-in-stablecoin-race-with-tether-analysts-say",
+      "pubDate": "Sat, 26 Sep 2026 13:00:00 +0000"
+    },
+    {
+      "title": "Bitget hacker moves $83 million in stolen XRP that Ripple cannot freeze",
+      "link": "https://www.coindesk.com/markets/2026/09/26/bitget-hacker-moves-usd83-million-in-stolen-xrp-that-ripple-cannot-freeze",
+      "pubDate": "Sat, 26 Sep 2026 12:56:41 +0000"
+    },
+    {
+      "title": "Bitcoin could soon get Zcash-style 'shielded' privacy without changing its rules",
+      "link": "https://www.coindesk.com/tech/2026/09/25/bitcoin-could-soon-get-zcash-style-shielded-privacy-without-changing-its-rules",
+      "pubDate": "Sat, 26 Sep 2026 12:00:00 +0000"
+    },
     {
       "title": "Solana’s 150-millisecond settlement upgrade reaches second public test network",
       "link": "https://www.coindesk.com/tech/2026/09/26/solana-s-150-millisecond-settlement-upgrade-reaches-second-public-test-network",
@@ -435,11 +455,6 @@
       "title": "XRP Ledger’s Batch upgrade slips to Oct. 9 after validator support resets",
       "link": "https://www.coindesk.com/tech/2026/09/26/xrp-ledger-s-batch-upgrade-slips-to-oct-9-after-validator-support-resets",
       "pubDate": "Sat, 26 Sep 2026 04:30:00 +0000"
-    },
-    {
-      "title": "Bitcoin could soon get Zcash-style 'shielded' privacy without changing its rules",
-      "link": "https://www.coindesk.com/tech/2026/09/26/bitcoin-could-soon-get-zcash-style-shielded-privacy-without-changing-its-rules",
-      "pubDate": "Sat, 26 Sep 2026 04:02:13 +0000"
     },
     {
       "title": "U.S. SEC's steadiest crypto advocate, Hester Peirce, to depart next week",
@@ -470,21 +485,6 @@
       "title": "Tether confirms minimal EQIBank exposure following $89M US asset seizure",
       "link": "https://www.coindesk.com/policy/2026/09/25/tether-confirms-minimal-eqibank-exposure-following-usd89m-us-asset-seizure",
       "pubDate": "Fri, 25 Sep 2026 14:32:48 +0000"
-    },
-    {
-      "title": "Strategy proposes daily dividends to bring STRC back toward $100",
-      "link": "https://www.coindesk.com/markets/2026/09/25/strategy-proposes-daily-dividends-to-bring-strc-back-toward-usd100",
-      "pubDate": "Fri, 25 Sep 2026 14:22:07 +0000"
-    },
-    {
-      "title": "Bond volatility surges while bitcoin and Wall Street stay calm",
-      "link": "https://www.coindesk.com/markets/2026/09/25/bond-volatility-surges-while-bitcoin-and-wall-street-stay-calm",
-      "pubDate": "Fri, 25 Sep 2026 11:54:28 +0000"
-    },
-    {
-      "title": "Bitcoin holders are cashing out, just not the way they did at prior market tops",
-      "link": "https://www.coindesk.com/daybook-us/2026/09/25/bitcoin-holders-are-cashing-out-just-not-the-way-they-did-at-prior-market-tops",
-      "pubDate": "Fri, 25 Sep 2026 11:29:04 +0000"
     }
   ]
 }
