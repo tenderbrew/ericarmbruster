@@ -1,13 +1,13 @@
 {
-  "fetchedAt": "2026-09-26T04:50:59.734Z",
+  "fetchedAt": "2026-09-26T11:18:10.117Z",
   "price": {
-    "usd": 83971,
-    "time": 1790397908
+    "usd": 84156,
+    "time": 1790421308
   },
   "moves": {
-    "d1": -0.12455033943947758,
-    "d7": 3.3662073868703013,
-    "d30": 4.612807054569679
+    "d1": 0.09548941460897353,
+    "d7": 3.5939377743442025,
+    "d30": 4.84328387758115
   },
   "history90d": [
     {
@@ -372,60 +372,65 @@
     },
     {
       "date": "2026-09-26",
-      "close": 83967.35124026428
+      "close": 84155.95379391508
     }
   ],
   "blocks": [
     {
-      "height": 968641,
-      "id": "0000000000000000000154a4d28da60da733df876e6957d31dcef5ffc96a3ce7",
-      "timestamp": 1790397959,
-      "txCount": 7037
+      "height": 968675,
+      "id": "00000000000000000001bb8a1a003b1ec0e89beb40e145d13991e7bc88d88f10",
+      "timestamp": 1790420677,
+      "txCount": 4100
     },
     {
-      "height": 968640,
-      "id": "00000000000000000001cd96cda7b5acd12d9c37d376d8f2d8c500e0495d6fc0",
-      "timestamp": 1790397935,
-      "txCount": 5040
+      "height": 968674,
+      "id": "00000000000000000001b50d0ff3c2100738520d0e88571a345ccae06bd46c10",
+      "timestamp": 1790419186,
+      "txCount": 5368
     },
     {
-      "height": 968639,
-      "id": "00000000000000000000700f35157e09b4ce3c396930f2b4c8438e3e33523c46",
-      "timestamp": 1790397076,
-      "txCount": 6687
+      "height": 968673,
+      "id": "000000000000000000005754fbf79d636ce09c71cdef6f6fc066bbb51de2afac",
+      "timestamp": 1790418821,
+      "txCount": 7560
     },
     {
-      "height": 968638,
-      "id": "00000000000000000001cc91ceb814bac4f1e31760dbf39314f6bfbe700be542",
-      "timestamp": 1790396877,
-      "txCount": 6974
+      "height": 968672,
+      "id": "00000000000000000001d5fc0df8b3bac83c41ce56b9ede598e54327bb8f4147",
+      "timestamp": 1790418766,
+      "txCount": 3263
     },
     {
-      "height": 968637,
-      "id": "0000000000000000000039509c96570c8ba3ba33c174a2d4aeb42d6fd2618d91",
-      "timestamp": 1790396651,
-      "txCount": 5746
+      "height": 968671,
+      "id": "000000000000000000016e617156f3d01a3e57e88cf496914a682210d2f60db5",
+      "timestamp": 1790417881,
+      "txCount": 6303
     },
     {
-      "height": 968636,
-      "id": "000000000000000000020f7777f5b90a9ef274e4e0f3fee2ba75b31f50ede393",
-      "timestamp": 1790396046,
-      "txCount": 6490
+      "height": 968670,
+      "id": "00000000000000000000de35a85ba757557f04ab919b953741814619a771f966",
+      "timestamp": 1790417677,
+      "txCount": 3791
     },
     {
-      "height": 968635,
-      "id": "00000000000000000000836dfab1879244485960e1ee0a506461ad5a93560ed2",
-      "timestamp": 1790395667,
-      "txCount": 6771
+      "height": 968669,
+      "id": "000000000000000000006907fa20b6d127f6b03c9ba58d25d030cbf6237b3775",
+      "timestamp": 1790416720,
+      "txCount": 3333
     },
     {
-      "height": 968634,
-      "id": "0000000000000000000034ba0b4bd93555a1fcc24ab2c474007c6e4024e47d71",
-      "timestamp": 1790395536,
-      "txCount": 3579
+      "height": 968668,
+      "id": "0000000000000000000188e7a3e1e9a25e7b7786555a2c367092b2274efc6098",
+      "timestamp": 1790416238,
+      "txCount": 2379
     }
   ],
   "news": [
+    {
+      "title": "Solana’s 150-millisecond settlement upgrade reaches second public test network",
+      "link": "https://www.coindesk.com/tech/2026/09/26/solana-s-150-millisecond-settlement-upgrade-reaches-second-public-test-network",
+      "pubDate": "Sat, 26 Sep 2026 05:00:00 +0000"
+    },
     {
       "title": "XRP Ledger’s Batch upgrade slips to Oct. 9 after validator support resets",
       "link": "https://www.coindesk.com/tech/2026/09/26/xrp-ledger-s-batch-upgrade-slips-to-oct-9-after-validator-support-resets",
@@ -433,7 +438,7 @@
     },
     {
       "title": "Bitcoin could soon get Zcash-style 'shielded' privacy without changing its rules",
-      "link": "https://www.coindesk.com/tech/2026/09/25/bitcoin-could-soon-get-zcash-style-shielded-privacy-without-changing-its-rules",
+      "link": "https://www.coindesk.com/tech/2026/09/26/bitcoin-could-soon-get-zcash-style-shielded-privacy-without-changing-its-rules",
       "pubDate": "Sat, 26 Sep 2026 04:02:13 +0000"
     },
     {
@@ -480,11 +485,6 @@
       "title": "Bitcoin holders are cashing out, just not the way they did at prior market tops",
       "link": "https://www.coindesk.com/daybook-us/2026/09/25/bitcoin-holders-are-cashing-out-just-not-the-way-they-did-at-prior-market-tops",
       "pubDate": "Fri, 25 Sep 2026 11:29:04 +0000"
-    },
-    {
-      "title": "Altcoins rally across the board as bitcoin consolidates near $84,000",
-      "link": "https://www.coindesk.com/markets/2026/09/25/altcoins-rally-across-the-board-as-bitcoin-consolidates-near-usd84-000",
-      "pubDate": "Fri, 25 Sep 2026 09:59:45 +0000"
     }
   ]
 }
