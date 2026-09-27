@@ -1,13 +1,13 @@
 {
-  "fetchedAt": "2026-09-27T11:57:13.895Z",
+  "fetchedAt": "2026-09-27T16:55:17.493Z",
   "price": {
-    "usd": 84837,
-    "time": 1790509808
+    "usd": 84398,
+    "time": 1790527809
   },
   "moves": {
-    "d1": 0.49786943076290946,
-    "d7": 4.518921378207352,
-    "d30": 9.015891551662559
+    "d1": -0.022169758271406437,
+    "d7": 3.9780747371776837,
+    "d30": 8.451774758386277
   },
   "history90d": [
     {
@@ -372,60 +372,70 @@
     },
     {
       "date": "2026-09-27",
-      "close": 84880.1095167357
+      "close": 84422.21222974628
     }
   ],
   "blocks": [
     {
-      "height": 968837,
-      "id": "000000000000000000019b563152c5e33035fb46f206db3a9ffc7c9dc6db6ba2",
-      "timestamp": 1790509503,
-      "txCount": 5735
+      "height": 968860,
+      "id": "000000000000000000015116a2e16ce2b15021a9f6f9da9c57e5fa90ae6f0f36",
+      "timestamp": 1790527886,
+      "txCount": 3319
     },
     {
-      "height": 968836,
-      "id": "00000000000000000000a86ee170b3eccf542a24b463d5da613b1a959df6172b",
-      "timestamp": 1790508853,
-      "txCount": 5035
+      "height": 968859,
+      "id": "00000000000000000000b6bf46f676ec3845df710cdcb32ee58b2f9855957d4d",
+      "timestamp": 1790527836,
+      "txCount": 3875
     },
     {
-      "height": 968835,
-      "id": "0000000000000000000195c71ee5bd54b650315701ece8fa8169e775ceb3132c",
-      "timestamp": 1790508010,
-      "txCount": 6983
+      "height": 968858,
+      "id": "0000000000000000000174b99d1cbc0d750dd22392f8b648f53e52ea94ed44e4",
+      "timestamp": 1790527470,
+      "txCount": 4333
     },
     {
-      "height": 968834,
-      "id": "00000000000000000000cae547ec8b5ac12351f314c265a7968c9ece4aa0103a",
-      "timestamp": 1790507874,
-      "txCount": 6847
+      "height": 968857,
+      "id": "0000000000000000000114c44ccddc8ce5289c3469d42ae89380c507d5942642",
+      "timestamp": 1790524936,
+      "txCount": 3834
     },
     {
-      "height": 968833,
-      "id": "00000000000000000000b8eb0f6ceb8e7894c5f4c276ad395edd0141ef72fb5d",
-      "timestamp": 1790507684,
-      "txCount": 5302
+      "height": 968856,
+      "id": "00000000000000000000cb72347de92f9942e0103772cc91809a51eb88ad9c2d",
+      "timestamp": 1790523924,
+      "txCount": 4025
     },
     {
-      "height": 968832,
-      "id": "00000000000000000001baba3811fcbd08981985e9222255f1da19c467f4074d",
-      "timestamp": 1790507456,
-      "txCount": 6183
+      "height": 968855,
+      "id": "00000000000000000000a30373332dc3c0696c27ec929d98cc38310af2aefb43",
+      "timestamp": 1790523623,
+      "txCount": 4394
     },
     {
-      "height": 968831,
-      "id": "000000000000000000012224873802835dea3f106834eb5a7fbd608bdffbe62c",
-      "timestamp": 1790507238,
-      "txCount": 6692
+      "height": 968854,
+      "id": "00000000000000000000247d72df048d3f8c5822ecb97ae049a9c6b2ea181ffb",
+      "timestamp": 1790522947,
+      "txCount": 4235
     },
     {
-      "height": 968830,
-      "id": "00000000000000000000100f5f53ff9e16bd03a2d45d40b3ebb45bf7cf9e04b5",
-      "timestamp": 1790507000,
-      "txCount": 5497
+      "height": 968853,
+      "id": "00000000000000000000b4abe1acffd45fbdd122efc6a9d43af7d5dbdec60bb0",
+      "timestamp": 1790522376,
+      "txCount": 3955
     }
   ],
   "news": [
+    {
+      "title": "Vitalik Buterin maps Ethereum’s shift beyond a blockchain in sweeping 2030 vision",
+      "link": "https://www.coindesk.com/tech/2026/09/27/vitalik-buterin-maps-ethereum-s-shift-beyond-a-blockchain-in-sweeping-2030-vision",
+      "pubDate": "Sun, 27 Sep 2026 14:29:13 +0000"
+    },
+    {
+      "title": "How months of work on the Clarity Act all fell apart",
+      "link": "https://www.coindesk.com/news-analysis/2026/09/27/how-months-of-work-on-the-clarity-act-all-fell-apart",
+      "pubDate": "Sun, 27 Sep 2026 12:00:00 +0000"
+    },
     {
       "title": "Kraken’s parent Payward is betting billions on becoming financial infrastructure, not just a crypto exchange",
       "link": "https://www.coindesk.com/business/2026/09/26/kraken-s-parent-payward-is-betting-billions-on-becoming-financial-infrastructure-not-just-a-crypto-exchange",
@@ -475,16 +485,6 @@
       "title": "Circle and Tether step in to freeze hacker wallet after massive Bitget crypto heist",
       "link": "https://www.coindesk.com/markets/2026/09/25/circle-and-tether-step-in-to-freeze-hacker-wallet-after-massive-bitget-crypto-heist",
       "pubDate": "Fri, 25 Sep 2026 14:41:53 +0000"
-    },
-    {
-      "title": "Tokenization is moving faster than Washington",
-      "link": "https://www.coindesk.com/opinion/2026/09/25/tokenization-is-moving-faster-than-washington",
-      "pubDate": "Fri, 25 Sep 2026 14:37:32 +0000"
-    },
-    {
-      "title": "Tether confirms minimal EQIBank exposure following $89M US asset seizure",
-      "link": "https://www.coindesk.com/policy/2026/09/25/tether-confirms-minimal-eqibank-exposure-following-usd89m-us-asset-seizure",
-      "pubDate": "Fri, 25 Sep 2026 14:32:48 +0000"
     }
   ]
 }
