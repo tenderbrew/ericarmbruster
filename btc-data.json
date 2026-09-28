@@ -1,13 +1,13 @@
 {
-  "fetchedAt": "2026-09-28T13:46:02.990Z",
+  "fetchedAt": "2026-09-28T21:12:41.249Z",
   "price": {
-    "usd": 83725,
-    "time": 1790603110
+    "usd": 83630,
+    "time": 1790629509
   },
   "moves": {
-    "d1": -0.8570288492379508,
-    "d7": -3.316221882124004,
-    "d30": 7.030809438492014
+    "d1": -0.969523113308679,
+    "d7": -3.425925780854344,
+    "d30": 6.90936510410376
   },
   "history90d": [
     {
@@ -372,67 +372,82 @@
     },
     {
       "date": "2026-09-28",
-      "close": 83706.48098085391
+      "close": 83572.27436620521
     }
   ],
   "blocks": [
     {
-      "height": 969002,
-      "id": "00000000000000000001d686023d71759425666dc11c71af0af29d453a04ab07",
-      "timestamp": 1790602250,
-      "txCount": 3144
+      "height": 969051,
+      "id": "00000000000000000002145a3ddf4cdb0c71501f2616134872d75058f37f29e4",
+      "timestamp": 1790629909,
+      "txCount": 3475
     },
     {
-      "height": 969001,
-      "id": "0000000000000000000088f619ad1595d5497bd5137a65cb66cadf1ba2dd0610",
-      "timestamp": 1790602134,
-      "txCount": 4668
+      "height": 969050,
+      "id": "000000000000000000004d497c805af905d06a403c02932cbdad28af19f9412c",
+      "timestamp": 1790628894,
+      "txCount": 3665
     },
     {
-      "height": 969000,
-      "id": "00000000000000000000fb6c31229d2253cd7161c9cb72cf03d2e3d847e9a22a",
-      "timestamp": 1790600877,
-      "txCount": 3573
+      "height": 969049,
+      "id": "00000000000000000001547a427fe76b275896e00f411542baf292b787ffd67b",
+      "timestamp": 1790628024,
+      "txCount": 4023
     },
     {
-      "height": 968999,
-      "id": "000000000000000000000a20227e54154bb16bc17858da76ca8857eb6fee12e5",
-      "timestamp": 1790600115,
-      "txCount": 3508
+      "height": 969048,
+      "id": "00000000000000000001ecb052815447867c79233fd5386708470c5975b4214d",
+      "timestamp": 1790627615,
+      "txCount": 3423
     },
     {
-      "height": 968998,
-      "id": "000000000000000000020532253bcfe86b161a80e0f9395bcc66fa5a53b56ced",
-      "timestamp": 1790599402,
-      "txCount": 6954
+      "height": 969047,
+      "id": "00000000000000000000bcb0609a6ddbcdbf7b1209b2af5ad779eaf4029d373f",
+      "timestamp": 1790626977,
+      "txCount": 4835
     },
     {
-      "height": 968997,
-      "id": "0000000000000000000213e53c2b6385ccaa249a640363d5b380cdcf08ac7b40",
-      "timestamp": 1790599357,
-      "txCount": 4801
+      "height": 969046,
+      "id": "00000000000000000000d7b23232b76bc9fedb01db662af5f20a33c7a50823f2",
+      "timestamp": 1790626455,
+      "txCount": 6381
     },
     {
-      "height": 968996,
-      "id": "0000000000000000000212ca1b914541f19a9415115cdc7bc6a9cbb6068fd73f",
-      "timestamp": 1790599008,
-      "txCount": 6563
+      "height": 969045,
+      "id": "00000000000000000000544c393acb82500b3163f1a5c0647cc6dacddde12d00",
+      "timestamp": 1790626274,
+      "txCount": 5062
     },
     {
-      "height": 968995,
-      "id": "00000000000000000000ae63ac51b71f605ca502649009a2793fd5fce070ce5a",
-      "timestamp": 1790598850,
-      "txCount": 4866
+      "height": 969044,
+      "id": "0000000000000000000072b46d239a25a562440118a6ea21c28f5da846201ac9",
+      "timestamp": 1790626438,
+      "txCount": 3905
     }
   ],
   "news": [
+    {
+      "title": "Goldman Sachs brings $100 billion Treasury fund into crypto’s institutional plumbing",
+      "link": "https://www.coindesk.com/markets/2026/09/28/goldman-sachs-brings-usd100-billion-treasury-fund-into-crypto-s-institutional-plumbing",
+      "pubDate": "Mon, 28 Sep 2026 18:00:00 +0000"
+    },
+    {
+      "title": "The restaking gold rush is over, and top protocols are barely making a profit",
+      "link": "https://www.coindesk.com/business/2026/09/28/the-restaking-gold-rush-is-over-and-top-protocols-are-barely-making-a-profit",
+      "pubDate": "Mon, 28 Sep 2026 16:24:51 +0000"
+    },
+    {
+      "title": "Tether is a ‘lifeline’ for Iranian regime, Senate Dems say in new report",
+      "link": "https://www.coindesk.com/policy/2026/09/28/tether-is-a-lifeline-for-iranian-regime-senate-dems-say-in-new-report",
+      "pubDate": "Mon, 28 Sep 2026 16:16:40 +0000"
+    },
     {
       "title": "AI agents could drain cheap bank deposits, Apollo's Torsten Slok warns",
       "link": "https://www.coindesk.com/markets/2026/09/28/ai-agents-could-drain-cheap-bank-deposits-apollo-s-torsten-slok-warns",
       "pubDate": "Mon, 28 Sep 2026 13:06:11 +0000"
     },
     {
-      "title": "Chainlink updates its crypto bridge tech months after a $292 million hack at a rival exposed risks",
+      "title": "Chainlink launches new version of its crypto bridge tech 'CCIP' to give apps more control over their security",
       "link": "https://www.coindesk.com/business/2026/09/28/chainlink-updates-its-crypto-bridge-tech-months-after-a-usd292-million-hack-shook-the-industry",
       "pubDate": "Mon, 28 Sep 2026 12:30:00 +0000"
     },
@@ -457,7 +472,7 @@
       "pubDate": "Mon, 28 Sep 2026 10:15:04 +0000"
     },
     {
-      "title": "Live updates: Bitcoin trims losses as oil eases on hopes of U.S. and Iran talks",
+      "title": "Live updates: Bitcoin remains under pressure as Iran denies report of peace progress",
       "link": "https://www.coindesk.com/business/2026/09/28/live-updates-bitcoin-sinks-below-usd83-000-as-iran-talks-stall-and-oil-climbs",
       "pubDate": "Mon, 28 Sep 2026 10:02:37 +0000"
     },
@@ -467,24 +482,9 @@
       "pubDate": "Mon, 28 Sep 2026 09:45:55 +0000"
     },
     {
-      "title": "Bitcoin bears pay to bet on further declines as futures positions near yearly lows",
+      "title": "Caution builds in the bitcoin market even as prices stay well above summer lows",
       "link": "https://www.coindesk.com/markets/2026/09/28/bitcoin-bears-pay-to-bet-on-further-declines-as-futures-positions-near-yearly-lows",
       "pubDate": "Mon, 28 Sep 2026 09:29:34 +0000"
-    },
-    {
-      "title": "RedotPay completes financial audit as it presses ahead with U.S. IPO plans",
-      "link": "https://www.coindesk.com/business/2026/09/28/redotpay-completes-financial-audit-as-it-presses-ahead-with-u-s-ipo-plans",
-      "pubDate": "Mon, 28 Sep 2026 07:50:00 +0000"
-    },
-    {
-      "title": "California's Newsom signs memecoin ban and calls it 'The Opposite of Trump'",
-      "link": "https://www.coindesk.com/markets/2026/09/28/california-s-newsom-signs-memecoin-ban-and-calls-it-the-opposite-of-trump",
-      "pubDate": "Mon, 28 Sep 2026 06:21:52 +0000"
-    },
-    {
-      "title": "Solana ETFs draw record $188 million in a week as Bitwise takes two-thirds of inflows",
-      "link": "https://www.coindesk.com/markets/2026/09/28/solana-etfs-draw-record-usd188-million-in-a-week-as-bitwise-takes-two-thirds-of-inflows",
-      "pubDate": "Mon, 28 Sep 2026 06:21:06 +0000"
     }
   ]
 }
