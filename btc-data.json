@@ -1,13 +1,13 @@
 {
-  "fetchedAt": "2026-09-28T05:16:43.119Z",
+  "fetchedAt": "2026-09-28T13:46:02.990Z",
   "price": {
-    "usd": 83369,
-    "time": 1790572206
+    "usd": 83725,
+    "time": 1790603110
   },
   "moves": {
-    "d1": -1.278586301966178,
-    "d7": -3.7273228078924525,
-    "d30": 6.575712774889708
+    "d1": -0.8570288492379508,
+    "d7": -3.316221882124004,
+    "d30": 7.030809438492014
   },
   "history90d": [
     {
@@ -372,119 +372,119 @@
     },
     {
       "date": "2026-09-28",
-      "close": 83292.08666625772
+      "close": 83706.48098085391
     }
   ],
   "blocks": [
     {
-      "height": 968945,
-      "id": "00000000000000000000ddb07c41433b334092dcd69b8cb3085c54e81c74ac59",
-      "timestamp": 1790572286,
-      "txCount": 4548
+      "height": 969002,
+      "id": "00000000000000000001d686023d71759425666dc11c71af0af29d453a04ab07",
+      "timestamp": 1790602250,
+      "txCount": 3144
     },
     {
-      "height": 968944,
-      "id": "0000000000000000000103dcb592da8d2313583f7b91726c5f22426bca00310f",
-      "timestamp": 1790571364,
-      "txCount": 6493
+      "height": 969001,
+      "id": "0000000000000000000088f619ad1595d5497bd5137a65cb66cadf1ba2dd0610",
+      "timestamp": 1790602134,
+      "txCount": 4668
     },
     {
-      "height": 968943,
-      "id": "0000000000000000000200fd2a0478add2c9a6cb452763da58e7590b7636b8b4",
-      "timestamp": 1790571128,
-      "txCount": 5770
+      "height": 969000,
+      "id": "00000000000000000000fb6c31229d2253cd7161c9cb72cf03d2e3d847e9a22a",
+      "timestamp": 1790600877,
+      "txCount": 3573
     },
     {
-      "height": 968942,
-      "id": "00000000000000000001761a46f8a754f6084d531d0b781e2c3bef552bfa27e2",
-      "timestamp": 1790570745,
-      "txCount": 5341
+      "height": 968999,
+      "id": "000000000000000000000a20227e54154bb16bc17858da76ca8857eb6fee12e5",
+      "timestamp": 1790600115,
+      "txCount": 3508
     },
     {
-      "height": 968941,
-      "id": "00000000000000000000411498b80165379443b2dffee3d7c64497352f1c1c53",
-      "timestamp": 1790570235,
-      "txCount": 4455
+      "height": 968998,
+      "id": "000000000000000000020532253bcfe86b161a80e0f9395bcc66fa5a53b56ced",
+      "timestamp": 1790599402,
+      "txCount": 6954
     },
     {
-      "height": 968940,
-      "id": "00000000000000000000bc4c4730722d445d0c8c28166817b3947f30a020af40",
-      "timestamp": 1790570227,
-      "txCount": 6774
+      "height": 968997,
+      "id": "0000000000000000000213e53c2b6385ccaa249a640363d5b380cdcf08ac7b40",
+      "timestamp": 1790599357,
+      "txCount": 4801
     },
     {
-      "height": 968939,
-      "id": "000000000000000000021547d542488fafae5cf88c3526d31919a90129967d0d",
-      "timestamp": 1790570152,
-      "txCount": 6646
+      "height": 968996,
+      "id": "0000000000000000000212ca1b914541f19a9415115cdc7bc6a9cbb6068fd73f",
+      "timestamp": 1790599008,
+      "txCount": 6563
     },
     {
-      "height": 968938,
-      "id": "00000000000000000000213c09f33437181779c43a417902fabdf6944db62588",
-      "timestamp": 1790569964,
-      "txCount": 6554
+      "height": 968995,
+      "id": "00000000000000000000ae63ac51b71f605ca502649009a2793fd5fce070ce5a",
+      "timestamp": 1790598850,
+      "txCount": 4866
     }
   ],
   "news": [
     {
-      "title": "Bitcoin, Nasdaq futures decline as Trump won’t rule out more Iran strikes",
-      "link": "https://www.coindesk.com/markets/2026/09/28/bitcoin-and-nasdaq-futures-decline-as-trump-won-t-rule-out-more-iran-strikes",
-      "pubDate": "Mon, 28 Sep 2026 03:58:52 +0000"
+      "title": "AI agents could drain cheap bank deposits, Apollo's Torsten Slok warns",
+      "link": "https://www.coindesk.com/markets/2026/09/28/ai-agents-could-drain-cheap-bank-deposits-apollo-s-torsten-slok-warns",
+      "pubDate": "Mon, 28 Sep 2026 13:06:11 +0000"
     },
     {
-      "title": "Vitalik Buterin maps Ethereum’s shift beyond a blockchain in sweeping 2030 vision",
-      "link": "https://www.coindesk.com/tech/2026/09/27/vitalik-buterin-maps-ethereum-s-shift-beyond-a-blockchain-in-sweeping-2030-vision",
-      "pubDate": "Sun, 27 Sep 2026 14:29:13 +0000"
+      "title": "Chainlink updates its crypto bridge tech months after a $292 million hack at a rival exposed risks",
+      "link": "https://www.coindesk.com/business/2026/09/28/chainlink-updates-its-crypto-bridge-tech-months-after-a-usd292-million-hack-shook-the-industry",
+      "pubDate": "Mon, 28 Sep 2026 12:30:00 +0000"
     },
     {
-      "title": "How months of work on the Clarity Act all fell apart",
-      "link": "https://www.coindesk.com/news-analysis/2026/09/27/how-months-of-work-on-the-clarity-act-all-fell-apart",
-      "pubDate": "Sun, 27 Sep 2026 12:00:00 +0000"
+      "title": "THORChain rejects Bitget request to block hacker as $6 million moves to bitcoin",
+      "link": "https://www.coindesk.com/tech/2026/09/28/thorchain-rejects-bitget-request-to-block-hacker-as-usd6-million-moves-to-bitcoin",
+      "pubDate": "Mon, 28 Sep 2026 12:13:09 +0000"
     },
     {
-      "title": "Kraken’s parent Payward is betting billions on becoming financial infrastructure, not just a crypto exchange",
-      "link": "https://www.coindesk.com/business/2026/09/26/kraken-s-parent-payward-is-betting-billions-on-becoming-financial-infrastructure-not-just-a-crypto-exchange",
-      "pubDate": "Sat, 26 Sep 2026 14:00:00 +0000"
+      "title": "Traders aren't panicking yet despite cooling crypto sentiment",
+      "link": "https://www.coindesk.com/daybook-us/2026/09/28/bitcoin-traders-aren-t-panicking-yet-despite-cooling-sentiment",
+      "pubDate": "Mon, 28 Sep 2026 11:32:33 +0000"
     },
     {
-      "title": "Binance deal gives Circle a boost in stablecoin race with Tether, analysts say",
-      "link": "https://www.coindesk.com/business/2026/09/26/binance-deal-gives-circle-a-boost-in-stablecoin-race-with-tether-analysts-say",
-      "pubDate": "Sat, 26 Sep 2026 13:00:00 +0000"
+      "title": "Crypto-friendly institution Franklin Templeton brings its tokenized collateral service to Bybit",
+      "link": "https://www.coindesk.com/business/2026/09/28/crypto-friendly-institution-franklin-templeton-brings-its-tokenized-collateral-service-to-bybit",
+      "pubDate": "Mon, 28 Sep 2026 11:00:00 +0000"
     },
     {
-      "title": "Bitget hacker moves $83 million in stolen XRP beyond reach of freeze controls",
-      "link": "https://www.coindesk.com/markets/2026/09/26/bitget-hacker-moves-usd83-million-in-stolen-xrp-that-ripple-cannot-freeze",
-      "pubDate": "Sat, 26 Sep 2026 12:56:41 +0000"
+      "title": "Bitcoin falls to $83,000 while altcoins unwind Friday's rally",
+      "link": "https://www.coindesk.com/markets/2026/09/28/bitcoin-falls-to-usd83-000-while-altcoins-unwind-friday-s-rally",
+      "pubDate": "Mon, 28 Sep 2026 10:15:04 +0000"
     },
     {
-      "title": "Bitcoin could soon get Zcash-style 'shielded' privacy without changing its rules",
-      "link": "https://www.coindesk.com/tech/2026/09/25/bitcoin-could-soon-get-zcash-style-shielded-privacy-without-changing-its-rules",
-      "pubDate": "Sat, 26 Sep 2026 12:00:00 +0000"
+      "title": "Live updates: Bitcoin trims losses as oil eases on hopes of U.S. and Iran talks",
+      "link": "https://www.coindesk.com/business/2026/09/28/live-updates-bitcoin-sinks-below-usd83-000-as-iran-talks-stall-and-oil-climbs",
+      "pubDate": "Mon, 28 Sep 2026 10:02:37 +0000"
     },
     {
-      "title": "Solana’s 150-millisecond settlement upgrade reaches second public test network",
-      "link": "https://www.coindesk.com/tech/2026/09/26/solana-s-150-millisecond-settlement-upgrade-reaches-second-public-test-network",
-      "pubDate": "Sat, 26 Sep 2026 05:00:00 +0000"
+      "title": "Eyes on key U.S. employment data as crypto bulls take a breather: Crypto Week Ahead",
+      "link": "https://www.coindesk.com/markets/2026/09/28/bitcoin-rally-takes-a-breather-ahead-of-key-u-s-employment-data-crypto-week-ahead",
+      "pubDate": "Mon, 28 Sep 2026 09:45:55 +0000"
     },
     {
-      "title": "XRP Ledger’s Batch upgrade slips to Oct. 9 after validator support resets",
-      "link": "https://www.coindesk.com/tech/2026/09/26/xrp-ledger-s-batch-upgrade-slips-to-oct-9-after-validator-support-resets",
-      "pubDate": "Sat, 26 Sep 2026 04:30:00 +0000"
+      "title": "Bitcoin bears pay to bet on further declines as futures positions near yearly lows",
+      "link": "https://www.coindesk.com/markets/2026/09/28/bitcoin-bears-pay-to-bet-on-further-declines-as-futures-positions-near-yearly-lows",
+      "pubDate": "Mon, 28 Sep 2026 09:29:34 +0000"
     },
     {
-      "title": "U.S. SEC's steadiest crypto advocate, Hester Peirce, to depart next week",
-      "link": "https://www.coindesk.com/policy/2026/09/25/u-s-sec-s-steadiest-crypto-advocate-hester-peirce-to-depart-next-week",
-      "pubDate": "Fri, 25 Sep 2026 22:17:38 +0000"
+      "title": "RedotPay completes financial audit as it presses ahead with U.S. IPO plans",
+      "link": "https://www.coindesk.com/business/2026/09/28/redotpay-completes-financial-audit-as-it-presses-ahead-with-u-s-ipo-plans",
+      "pubDate": "Mon, 28 Sep 2026 07:50:00 +0000"
     },
     {
-      "title": "Another appeals court rules against prediction market provider Kalshi, says sports contracts are subject to state regulations",
-      "link": "https://www.coindesk.com/policy/2026/09/25/another-appeals-court-rules-against-prediction-market-provider-kalshi-says-sports-contracts-are-subject-to-state-regulations",
-      "pubDate": "Fri, 25 Sep 2026 21:17:30 +0000"
+      "title": "California's Newsom signs memecoin ban and calls it 'The Opposite of Trump'",
+      "link": "https://www.coindesk.com/markets/2026/09/28/california-s-newsom-signs-memecoin-ban-and-calls-it-the-opposite-of-trump",
+      "pubDate": "Mon, 28 Sep 2026 06:21:52 +0000"
     },
     {
-      "title": "Blockchain Association sees leadership shift shortly after crypto Clarity Act fizzles",
-      "link": "https://www.coindesk.com/policy/2026/09/25/blockchain-association-sees-leadership-shift-shortly-after-crypto-clarity-act-fizzles",
-      "pubDate": "Fri, 25 Sep 2026 20:01:05 +0000"
+      "title": "Solana ETFs draw record $188 million in a week as Bitwise takes two-thirds of inflows",
+      "link": "https://www.coindesk.com/markets/2026/09/28/solana-etfs-draw-record-usd188-million-in-a-week-as-bitwise-takes-two-thirds-of-inflows",
+      "pubDate": "Mon, 28 Sep 2026 06:21:06 +0000"
     }
   ]
 }
