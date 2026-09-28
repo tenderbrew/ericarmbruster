@@ -1,19 +1,15 @@
 {
-  "fetchedAt": "2026-09-27T21:17:36.964Z",
+  "fetchedAt": "2026-09-28T05:16:43.119Z",
   "price": {
-    "usd": 84665,
-    "time": 1790543708
+    "usd": 83369,
+    "time": 1790572206
   },
   "moves": {
-    "d1": 0.29411831341916717,
-    "d7": 4.307017910651312,
-    "d30": 8.794870849057723
+    "d1": -1.278586301966178,
+    "d7": -3.7273228078924525,
+    "d30": 6.575712774889708
   },
   "history90d": [
-    {
-      "date": "2026-06-30",
-      "close": 60152.35872063589
-    },
     {
       "date": "2026-07-01",
       "close": 58566.091991843154
@@ -371,61 +367,70 @@
       "close": 84416.7149816521
     },
     {
-      "date": "2026-09-27",
-      "close": 84680.06391182948
+      "date": "2026-09-28",
+      "close": 84448.75015162026
+    },
+    {
+      "date": "2026-09-28",
+      "close": 83292.08666625772
     }
   ],
   "blocks": [
     {
-      "height": 968894,
-      "id": "00000000000000000000f0c1b9f907b3090dd46a5f0ab453bd341cc13934ad56",
-      "timestamp": 1790543483,
-      "txCount": 4801
+      "height": 968945,
+      "id": "00000000000000000000ddb07c41433b334092dcd69b8cb3085c54e81c74ac59",
+      "timestamp": 1790572286,
+      "txCount": 4548
     },
     {
-      "height": 968893,
-      "id": "00000000000000000000695c46f424cfad23af4d13de05e666861c6509c221ff",
-      "timestamp": 1790542994,
-      "txCount": 4619
+      "height": 968944,
+      "id": "0000000000000000000103dcb592da8d2313583f7b91726c5f22426bca00310f",
+      "timestamp": 1790571364,
+      "txCount": 6493
     },
     {
-      "height": 968892,
-      "id": "000000000000000000006d6e6fc4bf36996169c911586b0b9bacce9a52a221a7",
-      "timestamp": 1790542983,
-      "txCount": 6901
+      "height": 968943,
+      "id": "0000000000000000000200fd2a0478add2c9a6cb452763da58e7590b7636b8b4",
+      "timestamp": 1790571128,
+      "txCount": 5770
     },
     {
-      "height": 968891,
-      "id": "0000000000000000000197c817bb085c4623f199b866031e153e978396952b2c",
-      "timestamp": 1790543029,
-      "txCount": 6146
+      "height": 968942,
+      "id": "00000000000000000001761a46f8a754f6084d531d0b781e2c3bef552bfa27e2",
+      "timestamp": 1790570745,
+      "txCount": 5341
     },
     {
-      "height": 968890,
-      "id": "000000000000000000010b693af2d9e890d5d01c10669a3de446b3dae36ffa27",
-      "timestamp": 1790542726,
-      "txCount": 3867
+      "height": 968941,
+      "id": "00000000000000000000411498b80165379443b2dffee3d7c64497352f1c1c53",
+      "timestamp": 1790570235,
+      "txCount": 4455
     },
     {
-      "height": 968889,
-      "id": "00000000000000000000865849a62cc8e5b14bbe914b52513603ad4b5cbbb0e4",
-      "timestamp": 1790541901,
-      "txCount": 4871
+      "height": 968940,
+      "id": "00000000000000000000bc4c4730722d445d0c8c28166817b3947f30a020af40",
+      "timestamp": 1790570227,
+      "txCount": 6774
     },
     {
-      "height": 968888,
-      "id": "0000000000000000000095a00c17617cbeec96b52f5496a66553e7480af02744",
-      "timestamp": 1790541212,
-      "txCount": 7496
+      "height": 968939,
+      "id": "000000000000000000021547d542488fafae5cf88c3526d31919a90129967d0d",
+      "timestamp": 1790570152,
+      "txCount": 6646
     },
     {
-      "height": 968887,
-      "id": "0000000000000000000003f958ba2e20ced3e4b6708b4984a315e2adeb3e3c31",
-      "timestamp": 1790541144,
-      "txCount": 5670
+      "height": 968938,
+      "id": "00000000000000000000213c09f33437181779c43a417902fabdf6944db62588",
+      "timestamp": 1790569964,
+      "txCount": 6554
     }
   ],
   "news": [
+    {
+      "title": "Bitcoin, Nasdaq futures decline as Trump won’t rule out more Iran strikes",
+      "link": "https://www.coindesk.com/markets/2026/09/28/bitcoin-and-nasdaq-futures-decline-as-trump-won-t-rule-out-more-iran-strikes",
+      "pubDate": "Mon, 28 Sep 2026 03:58:52 +0000"
+    },
     {
       "title": "Vitalik Buterin maps Ethereum’s shift beyond a blockchain in sweeping 2030 vision",
       "link": "https://www.coindesk.com/tech/2026/09/27/vitalik-buterin-maps-ethereum-s-shift-beyond-a-blockchain-in-sweeping-2030-vision",
@@ -447,7 +452,7 @@
       "pubDate": "Sat, 26 Sep 2026 13:00:00 +0000"
     },
     {
-      "title": "Bitget hacker moves $83 million in stolen XRP that Ripple cannot freeze",
+      "title": "Bitget hacker moves $83 million in stolen XRP beyond reach of freeze controls",
       "link": "https://www.coindesk.com/markets/2026/09/26/bitget-hacker-moves-usd83-million-in-stolen-xrp-that-ripple-cannot-freeze",
       "pubDate": "Sat, 26 Sep 2026 12:56:41 +0000"
     },
@@ -480,11 +485,6 @@
       "title": "Blockchain Association sees leadership shift shortly after crypto Clarity Act fizzles",
       "link": "https://www.coindesk.com/policy/2026/09/25/blockchain-association-sees-leadership-shift-shortly-after-crypto-clarity-act-fizzles",
       "pubDate": "Fri, 25 Sep 2026 20:01:05 +0000"
-    },
-    {
-      "title": "Circle and Tether step in to freeze hacker wallet after massive Bitget crypto heist",
-      "link": "https://www.coindesk.com/markets/2026/09/25/circle-and-tether-step-in-to-freeze-hacker-wallet-after-massive-bitget-crypto-heist",
-      "pubDate": "Fri, 25 Sep 2026 14:41:53 +0000"
     }
   ]
 }
