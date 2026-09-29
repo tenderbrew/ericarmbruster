@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-09-12T18:10:01.328Z",
+  "fetchedAt": "2026-09-29T00:10:01.666Z",
   "note": "main services only; databases/caches/workers are filtered as implementation detail",
   "services": [
     {
@@ -133,6 +133,14 @@
     {
       "name": "tautulli",
       "project": "media"
+    },
+    {
+      "name": "obsidian",
+      "project": "obsidian"
+    },
+    {
+      "name": "obsidian-couchdb",
+      "project": "obsidian"
     },
     {
       "name": "immich",
