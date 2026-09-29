@@ -1,13 +1,13 @@
 {
-  "fetchedAt": "2026-09-29T09:44:29.319Z",
+  "fetchedAt": "2026-09-29T18:03:03.803Z",
   "price": {
-    "usd": 83972,
-    "time": 1790674810
+    "usd": 83071,
+    "time": 1790704813
   },
   "moves": {
-    "d1": 0.590261219168009,
-    "d7": -2.565804014059303,
-    "d30": 8.130198897697216
+    "d1": -0.4890488527425241,
+    "d7": -3.6112502411746794,
+    "d30": 6.969987050809845
   },
   "history90d": [
     {
@@ -372,60 +372,100 @@
     },
     {
       "date": "2026-09-29",
-      "close": 83926.93760058854
+      "close": 83208.58737616734
     }
   ],
   "blocks": [
     {
-      "height": 969134,
-      "id": "00000000000000000001e90c462d6c011e2b045d1295128ae6a7239549e54140",
-      "timestamp": 1790674139,
-      "txCount": 409
+      "height": 969186,
+      "id": "000000000000000000009586c85ab5f3a42941cab507aebfd365e3d2e89dce61",
+      "timestamp": 1790704352,
+      "txCount": 3971
     },
     {
-      "height": 969133,
-      "id": "000000000000000000009f15bbefb0912d1fa102363ce5e440f6577c247ff896",
-      "timestamp": 1790673682,
-      "txCount": 3830
+      "height": 969185,
+      "id": "00000000000000000001cbe8646755d8025c6e8c8c9bb9e446c979598b63dc2b",
+      "timestamp": 1790702350,
+      "txCount": 3037
     },
     {
-      "height": 969132,
-      "id": "0000000000000000000081b1514781770d750e0dd83fe9df81c9a7e4b495a3eb",
-      "timestamp": 1790672881,
-      "txCount": 6945
+      "height": 969184,
+      "id": "00000000000000000000304251e5a2340f7fd47824b3c233d8327b2d343333e3",
+      "timestamp": 1790701761,
+      "txCount": 3971
     },
     {
-      "height": 969131,
-      "id": "00000000000000000001772431ae0fb6be36fdf0dad17ace449044fc31a39c56",
-      "timestamp": 1790672868,
-      "txCount": 3566
+      "height": 969183,
+      "id": "00000000000000000001bcd21124228c8e21504b44283794a75b0275bcfbb12e",
+      "timestamp": 1790700875,
+      "txCount": 5283
     },
     {
-      "height": 969130,
-      "id": "000000000000000000019459a01fa234bff3afeae1749f2e9466f9edfb4990e4",
-      "timestamp": 1790672201,
-      "txCount": 3731
+      "height": 969182,
+      "id": "000000000000000000009e27f2e39ab29331136e2c995671931be94fbcace4f6",
+      "timestamp": 1790700501,
+      "txCount": 4092
     },
     {
-      "height": 969129,
-      "id": "0000000000000000000142f820d41bd135af2788cc51bbe3b2e8998f0213fb29",
-      "timestamp": 1790671250,
-      "txCount": 5620
+      "height": 969181,
+      "id": "00000000000000000000b9eafcefb04ed0a98e4686a7c3cc49c86fbea3ec8287",
+      "timestamp": 1790700117,
+      "txCount": 4105
     },
     {
-      "height": 969128,
-      "id": "000000000000000000018c3c319d2539028d0a2727b529678ca16f50af58977a",
-      "timestamp": 1790671028,
-      "txCount": 4820
+      "height": 969180,
+      "id": "00000000000000000001746278b5bcdd729c5715d14cc3df37b0385352927fb1",
+      "timestamp": 1790699022,
+      "txCount": 5619
     },
     {
-      "height": 969127,
-      "id": "00000000000000000000a786c1d5ec636bf1b81655b4b3fe2e949f982053c400",
-      "timestamp": 1790670667,
-      "txCount": 4932
+      "height": 969179,
+      "id": "000000000000000000017c613afc50853f4eff17ad118604ccbcef60c6eaf0ba",
+      "timestamp": 1790698831,
+      "txCount": 3960
     }
   ],
   "news": [
+    {
+      "title": "Ethereum users get another way to pay privately as zk.money returns after three years",
+      "link": "https://www.coindesk.com/tech/2026/09/29/embargo-12-et-ethereum-users-get-another-way-to-pay-privately-as-zk-money-returns-after-three-years",
+      "pubDate": "Tue, 29 Sep 2026 16:00:00 +0000"
+    },
+    {
+      "title": "Democrats killed the Clarity Act",
+      "link": "https://www.coindesk.com/opinion/2026/09/29/democrats-killed-the-clarity-act",
+      "pubDate": "Tue, 29 Sep 2026 14:08:18 +0000"
+    },
+    {
+      "title": "Bitcoin beats gold, surge to $100,000 in play",
+      "link": "https://www.coindesk.com/daybook-us/2026/09/29/bitcoin-outperforms-gold-usd100-000-surge-in-play",
+      "pubDate": "Tue, 29 Sep 2026 11:34:55 +0000"
+    },
+    {
+      "title": "Zcash developers begin moving Tachyon code into faster private-payment software",
+      "link": "https://www.coindesk.com/tech/2026/09/29/zcash-s-faster-private-payment-code-is-being-rebuilt-for-its-bigger-scaling-plan",
+      "pubDate": "Tue, 29 Sep 2026 11:15:30 +0000"
+    },
+    {
+      "title": "Aave leads DeFi higher as crypto shrugs off surging bond market",
+      "link": "https://www.coindesk.com/markets/2026/09/29/aave-leads-defi-higher-as-crypto-shrugs-off-surging-treasury-yields",
+      "pubDate": "Tue, 29 Sep 2026 10:28:51 +0000"
+    },
+    {
+      "title": "Live updates: Bitcoin turns lower as rates rise, consumer confidence plunges",
+      "link": "https://www.coindesk.com/markets/2026/09/29/live-updates-bitcoin-rebounds-above-usd84-000-as-treasury-yields-steady",
+      "pubDate": "Tue, 29 Sep 2026 10:14:41 +0000"
+    },
+    {
+      "title": "Blockchain.com targets $500 million IPO this year at up to $6 billion valuation",
+      "link": "https://www.coindesk.com/business/2026/09/29/blockchain-com-targets-usd500-million-ipo-at-up-to-usd6-billion-valuation",
+      "pubDate": "Tue, 29 Sep 2026 10:13:40 +0000"
+    },
+    {
+      "title": "Bitcoin is on track to shatter a major decade-long streak as September gains surge",
+      "link": "https://www.coindesk.com/markets/2026/09/29/bitcoin-is-on-track-to-shatter-a-major-decade-long-streak-as-september-gains-surge",
+      "pubDate": "Tue, 29 Sep 2026 09:45:31 +0000"
+    },
     {
       "title": "Analysts see 10-year Treasury yield hitting 6%. Bitcoin bulls shouldn't panic",
       "link": "https://www.coindesk.com/markets/2026/09/29/analysts-see-10-year-treasury-yield-hitting-6-bitcoin-bulls-shouldn-t-panic",
@@ -445,46 +485,6 @@
       "title": "Bitcoin holds $83,000 as ZEC drops 12% and oil climbs again",
       "link": "https://www.coindesk.com/markets/2026/09/29/bitcoin-holds-usd83-000-as-zec-drops-12-and-oil-climbs-again",
       "pubDate": "Tue, 29 Sep 2026 04:17:20 +0000"
-    },
-    {
-      "title": "Goldman Sachs brings $100 billion Treasury fund into crypto’s institutional plumbing",
-      "link": "https://www.coindesk.com/markets/2026/09/28/goldman-sachs-brings-usd100-billion-treasury-fund-into-crypto-s-institutional-plumbing",
-      "pubDate": "Mon, 28 Sep 2026 18:00:00 +0000"
-    },
-    {
-      "title": "The restaking gold rush is over, and top protocols are barely making a profit",
-      "link": "https://www.coindesk.com/business/2026/09/28/the-restaking-gold-rush-is-over-and-top-protocols-are-barely-making-a-profit",
-      "pubDate": "Mon, 28 Sep 2026 16:24:51 +0000"
-    },
-    {
-      "title": "Tether is a ‘lifeline’ for Iranian regime, Senate Dems say in new report",
-      "link": "https://www.coindesk.com/policy/2026/09/28/tether-is-a-lifeline-for-iranian-regime-senate-dems-say-in-new-report",
-      "pubDate": "Mon, 28 Sep 2026 16:16:40 +0000"
-    },
-    {
-      "title": "AI agents could drain cheap bank deposits, Apollo's Torsten Slok warns",
-      "link": "https://www.coindesk.com/markets/2026/09/28/ai-agents-could-drain-cheap-bank-deposits-apollo-s-torsten-slok-warns",
-      "pubDate": "Mon, 28 Sep 2026 13:06:11 +0000"
-    },
-    {
-      "title": "Chainlink launches new version of its crypto bridge tech 'CCIP' to give apps more control over their security",
-      "link": "https://www.coindesk.com/business/2026/09/28/chainlink-updates-its-crypto-bridge-tech-months-after-a-usd292-million-hack-shook-the-industry",
-      "pubDate": "Mon, 28 Sep 2026 12:30:00 +0000"
-    },
-    {
-      "title": "THORChain rejects Bitget request to block hacker as $6 million moves to bitcoin",
-      "link": "https://www.coindesk.com/tech/2026/09/28/thorchain-rejects-bitget-request-to-block-hacker-as-usd6-million-moves-to-bitcoin",
-      "pubDate": "Mon, 28 Sep 2026 12:13:09 +0000"
-    },
-    {
-      "title": "Traders aren't panicking yet despite cooling crypto sentiment",
-      "link": "https://www.coindesk.com/daybook-us/2026/09/28/bitcoin-traders-aren-t-panicking-yet-despite-cooling-sentiment",
-      "pubDate": "Mon, 28 Sep 2026 11:32:33 +0000"
-    },
-    {
-      "title": "Crypto-friendly institution Franklin Templeton brings its tokenized collateral service to Bybit",
-      "link": "https://www.coindesk.com/business/2026/09/28/crypto-friendly-institution-franklin-templeton-brings-its-tokenized-collateral-service-to-bybit",
-      "pubDate": "Mon, 28 Sep 2026 11:00:00 +0000"
     }
   ]
 }
