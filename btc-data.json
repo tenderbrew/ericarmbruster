@@ -1,13 +1,13 @@
 {
-  "fetchedAt": "2026-09-29T00:57:55.608Z",
+  "fetchedAt": "2026-09-29T09:44:29.319Z",
   "price": {
-    "usd": 83231,
-    "time": 1790643311
+    "usd": 83972,
+    "time": 1790674810
   },
   "moves": {
-    "d1": -0.29738446705364074,
-    "d7": -3.425599412830105,
-    "d30": 7.176018011411389
+    "d1": 0.590261219168009,
+    "d7": -2.565804014059303,
+    "d30": 8.130198897697216
   },
   "history90d": [
     {
@@ -372,60 +372,80 @@
     },
     {
       "date": "2026-09-29",
-      "close": 83260.71966510169
+      "close": 83926.93760058854
     }
   ],
   "blocks": [
     {
-      "height": 969077,
-      "id": "000000000000000000013bfc990a5a399a57f4f4580c9531125dcf18ad166427",
-      "timestamp": 1790643124,
-      "txCount": 6257
+      "height": 969134,
+      "id": "00000000000000000001e90c462d6c011e2b045d1295128ae6a7239549e54140",
+      "timestamp": 1790674139,
+      "txCount": 409
     },
     {
-      "height": 969076,
-      "id": "00000000000000000001247fc1643115fd1ba0d2f82443cce819e234041c1bc6",
-      "timestamp": 1790642929,
-      "txCount": 6079
+      "height": 969133,
+      "id": "000000000000000000009f15bbefb0912d1fa102363ce5e440f6577c247ff896",
+      "timestamp": 1790673682,
+      "txCount": 3830
     },
     {
-      "height": 969075,
-      "id": "00000000000000000000998517461f5594187933f83732f127e5e17df1b64e76",
-      "timestamp": 1790642771,
-      "txCount": 7377
+      "height": 969132,
+      "id": "0000000000000000000081b1514781770d750e0dd83fe9df81c9a7e4b495a3eb",
+      "timestamp": 1790672881,
+      "txCount": 6945
     },
     {
-      "height": 969074,
-      "id": "000000000000000000007663e672156b4e617c91dd7db0aaf64b58f34c32318f",
-      "timestamp": 1790642712,
-      "txCount": 3724
+      "height": 969131,
+      "id": "00000000000000000001772431ae0fb6be36fdf0dad17ace449044fc31a39c56",
+      "timestamp": 1790672868,
+      "txCount": 3566
     },
     {
-      "height": 969073,
-      "id": "0000000000000000000174c7f856cf6102dfe254a024f35ff2279ca679290def",
-      "timestamp": 1790641911,
-      "txCount": 3687
+      "height": 969130,
+      "id": "000000000000000000019459a01fa234bff3afeae1749f2e9466f9edfb4990e4",
+      "timestamp": 1790672201,
+      "txCount": 3731
     },
     {
-      "height": 969072,
-      "id": "0000000000000000000093f8a49e7bfdea1de28a5abcec362707bbef34c9bb6f",
-      "timestamp": 1790641460,
-      "txCount": 5444
+      "height": 969129,
+      "id": "0000000000000000000142f820d41bd135af2788cc51bbe3b2e8998f0213fb29",
+      "timestamp": 1790671250,
+      "txCount": 5620
     },
     {
-      "height": 969071,
-      "id": "000000000000000000015b4b35aa0027e3d23beab0129e92ccd0edcea552e022",
-      "timestamp": 1790641112,
-      "txCount": 3764
+      "height": 969128,
+      "id": "000000000000000000018c3c319d2539028d0a2727b529678ca16f50af58977a",
+      "timestamp": 1790671028,
+      "txCount": 4820
     },
     {
-      "height": 969070,
-      "id": "00000000000000000002050db768606e5ab7234f726af8ad6ad2145c3a9efde7",
-      "timestamp": 1790640325,
-      "txCount": 4427
+      "height": 969127,
+      "id": "00000000000000000000a786c1d5ec636bf1b81655b4b3fe2e949f982053c400",
+      "timestamp": 1790670667,
+      "txCount": 4932
     }
   ],
   "news": [
+    {
+      "title": "Analysts see 10-year Treasury yield hitting 6%. Bitcoin bulls shouldn't panic",
+      "link": "https://www.coindesk.com/markets/2026/09/29/analysts-see-10-year-treasury-yield-hitting-6-bitcoin-bulls-shouldn-t-panic",
+      "pubDate": "Tue, 29 Sep 2026 09:06:11 +0000"
+    },
+    {
+      "title": "Near Intents blocks $50 million in Bitget hacker swaps, here's what happened",
+      "link": "https://www.coindesk.com/tech/2026/09/29/usd50-million-in-bitget-hacker-swaps-puts-near-intents-permissionless-claim-to-the-test",
+      "pubDate": "Tue, 29 Sep 2026 06:23:47 +0000"
+    },
+    {
+      "title": "Anthropic plans to spend $518 billion on AI infrastructure. Pre-IPO perps barely blink.",
+      "link": "https://www.coindesk.com/markets/2026/09/29/anthropic-plans-to-spend-usd518-billion-on-ai-infrastructure-pre-ipo-perps-barely-blink",
+      "pubDate": "Tue, 29 Sep 2026 05:31:44 +0000"
+    },
+    {
+      "title": "Bitcoin holds $83,000 as ZEC drops 12% and oil climbs again",
+      "link": "https://www.coindesk.com/markets/2026/09/29/bitcoin-holds-usd83-000-as-zec-drops-12-and-oil-climbs-again",
+      "pubDate": "Tue, 29 Sep 2026 04:17:20 +0000"
+    },
     {
       "title": "Goldman Sachs brings $100 billion Treasury fund into crypto’s institutional plumbing",
       "link": "https://www.coindesk.com/markets/2026/09/28/goldman-sachs-brings-usd100-billion-treasury-fund-into-crypto-s-institutional-plumbing",
@@ -465,26 +485,6 @@
       "title": "Crypto-friendly institution Franklin Templeton brings its tokenized collateral service to Bybit",
       "link": "https://www.coindesk.com/business/2026/09/28/crypto-friendly-institution-franklin-templeton-brings-its-tokenized-collateral-service-to-bybit",
       "pubDate": "Mon, 28 Sep 2026 11:00:00 +0000"
-    },
-    {
-      "title": "Bitcoin falls to $83,000 while altcoins unwind Friday's rally",
-      "link": "https://www.coindesk.com/markets/2026/09/28/bitcoin-falls-to-usd83-000-while-altcoins-unwind-friday-s-rally",
-      "pubDate": "Mon, 28 Sep 2026 10:15:04 +0000"
-    },
-    {
-      "title": "Live updates: Bitcoin remains under pressure as Iran denies report of peace progress",
-      "link": "https://www.coindesk.com/business/2026/09/28/live-updates-bitcoin-sinks-below-usd83-000-as-iran-talks-stall-and-oil-climbs",
-      "pubDate": "Mon, 28 Sep 2026 10:02:37 +0000"
-    },
-    {
-      "title": "Eyes on key U.S. employment data as crypto bulls take a breather: Crypto Week Ahead",
-      "link": "https://www.coindesk.com/markets/2026/09/28/bitcoin-rally-takes-a-breather-ahead-of-key-u-s-employment-data-crypto-week-ahead",
-      "pubDate": "Mon, 28 Sep 2026 09:45:55 +0000"
-    },
-    {
-      "title": "Caution builds in the bitcoin market even as prices stay well above summer lows",
-      "link": "https://www.coindesk.com/markets/2026/09/28/bitcoin-bears-pay-to-bet-on-further-declines-as-futures-positions-near-yearly-lows",
-      "pubDate": "Mon, 28 Sep 2026 09:29:34 +0000"
     }
   ]
 }
