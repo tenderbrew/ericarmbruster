@@ -1,13 +1,13 @@
 {
-  "fetchedAt": "2026-09-30T05:26:24.120Z",
+  "fetchedAt": "2026-09-30T12:28:12.257Z",
   "price": {
-    "usd": 83323,
-    "time": 1790745910
+    "usd": 83863,
+    "time": 1790771110
   },
   "moves": {
-    "d1": -0.3791262738900847,
-    "d7": -1.2554749625243944,
-    "d30": 6.072631308264054
+    "d1": 0.26649704514667416,
+    "d7": -0.6155310872410169,
+    "d30": 6.760067201192332
   },
   "history90d": [
     {
@@ -372,119 +372,119 @@
     },
     {
       "date": "2026-09-30",
-      "close": 83285.88147786164
+      "close": 83862.26418790412
     }
   ],
   "blocks": [
     {
-      "height": 969264,
-      "id": "000000000000000000018f2b886dd05a870b86fb96e3902fbe20c2241d4ef216",
-      "timestamp": 1790745509,
-      "txCount": 2408
+      "height": 969302,
+      "id": "000000000000000000010200bcbb8ce9d16fa6fe7d4ee469fe1c443b44a077ec",
+      "timestamp": 1790770899,
+      "txCount": 4368
     },
     {
-      "height": 969263,
-      "id": "00000000000000000000a3365f439ae58e6d907c3193db014bd49eb512e8cc7b",
-      "timestamp": 1790745464,
-      "txCount": 1708
+      "height": 969301,
+      "id": "0000000000000000000159b46df454b9fa3e0581c00dcecea3275bddbd9af19e",
+      "timestamp": 1790768877,
+      "txCount": 4304
     },
     {
-      "height": 969262,
-      "id": "000000000000000000001d69b99e7bc3ad66e139b824893055032b2ecbfa8ed7",
-      "timestamp": 1790744652,
-      "txCount": 1312
+      "height": 969300,
+      "id": "00000000000000000001a369fff41fa52c931f39b77ee2e7476676de2d1c8e2f",
+      "timestamp": 1790767331,
+      "txCount": 6388
     },
     {
-      "height": 969261,
-      "id": "00000000000000000001e2a9fe08b34034ae0ff412954981ce56d1210fa5e8e5",
-      "timestamp": 1790744195,
-      "txCount": 3142
+      "height": 969299,
+      "id": "000000000000000000004afa4d9e9508519750aebc3c9814b11ad7d24f2ff10a",
+      "timestamp": 1790767027,
+      "txCount": 6517
     },
     {
-      "height": 969260,
-      "id": "000000000000000000015e24a76734ed635999aaec28d823889019c4ed7970e4",
-      "timestamp": 1790744119,
-      "txCount": 2096
+      "height": 969298,
+      "id": "00000000000000000001fec6cc7174e1d2353f1ca0ac969bef4c6ed7bd72261c",
+      "timestamp": 1790766891,
+      "txCount": 6032
     },
     {
-      "height": 969259,
-      "id": "00000000000000000000eca2c8dee3366e0e7edf11dcb5ef491362a0b57db6de",
-      "timestamp": 1790743097,
-      "txCount": 6680
+      "height": 969297,
+      "id": "000000000000000000006630da727d0555f118f3da9107a3a4acf0683a3a98b7",
+      "timestamp": 1790766778,
+      "txCount": 4026
     },
     {
-      "height": 969258,
-      "id": "0000000000000000000020ed363c10c6e752740b8ddd0a48acea2a25d8ed823e",
-      "timestamp": 1790742961,
-      "txCount": 4924
+      "height": 969296,
+      "id": "0000000000000000000052161fe92244237c914bb184d2a76e7032d40f3ccddd",
+      "timestamp": 1790765684,
+      "txCount": 3787
     },
     {
-      "height": 969257,
-      "id": "000000000000000000004a52701616fc290ddf690056e031ecb4354ee80c10d5",
-      "timestamp": 1790742707,
-      "txCount": 5861
+      "height": 969295,
+      "id": "00000000000000000000303e6375c39f301c9c18109059439a9afe29572a4e61",
+      "timestamp": 1790765039,
+      "txCount": 3871
     }
   ],
   "news": [
     {
-      "title": "XRP Ledger starts carrying fund records from Brazil operator overseeing $4 trillion",
-      "link": "https://www.coindesk.com/tech/2026/09/30/xrp-ledger-starts-carrying-fund-records-from-brazil-operator-overseeing-usd4-trillion",
-      "pubDate": "Wed, 30 Sep 2026 05:22:51 +0000"
+      "title": "A stronger dollar is a weaker threat to bitcoin than traders think",
+      "link": "https://www.coindesk.com/daybook-us/2026/09/30/a-stronger-dollar-is-a-weaker-threat-to-bitcoin-than-traders-think",
+      "pubDate": "Wed, 30 Sep 2026 11:20:09 +0000"
     },
     {
-      "title": "Bitcoin rally shows signs of cooling even as a 'bull score' gauge nears its perfect score",
-      "link": "https://www.coindesk.com/markets/2026/09/30/bitcoin-rally-shows-signs-of-cooling-even-as-a-bull-score-gauge-nears-its-perfect-score",
-      "pubDate": "Wed, 30 Sep 2026 04:38:18 +0000"
+      "title": "Bitget hackers move $4 million into Zcash’s private pool, making funds harder to trace",
+      "link": "https://www.coindesk.com/markets/2026/09/30/bitget-hackers-move-usd4-million-into-zcash-s-private-pool-making-funds-harder-to-trace",
+      "pubDate": "Wed, 30 Sep 2026 11:04:09 +0000"
     },
     {
-      "title": "Robinhood adds AI agents, perps and weekend trading in push to win active traders",
-      "link": "https://www.coindesk.com/markets/2026/09/29/robinhood-adds-ai-agents-perps-and-weekend-trading-in-push-to-win-active-traders",
-      "pubDate": "Tue, 29 Sep 2026 23:00:00 +0000"
+      "title": "The SEC Is finally modernizing transfer-agent rules. Wall Street must not repeat the ‘paperwork crisis’",
+      "link": "https://www.coindesk.com/opinion/2026/09/30/the-sec-is-finally-modernizing-transfer-agent-rules-wall-street-must-not-repeat-the-paperwork-crisis",
+      "pubDate": "Wed, 30 Sep 2026 11:00:00 +0000"
     },
     {
-      "title": "Cboe, S&P Dow Jones may explore tokenized options contracts under extended licensing deal",
-      "link": "https://www.coindesk.com/business/2026/09/29/cboe-s-and-p-dow-jones-may-explore-tokenized-options-contracts-under-extended-licensing-deal",
-      "pubDate": "Tue, 29 Sep 2026 18:21:07 +0000"
+      "title": "OpenAI, Google and Meta pledge outside AI audits under voluntary White House deal",
+      "link": "https://www.coindesk.com/tech/2026/09/30/openai-google-and-meta-pledge-outside-ai-audits-under-voluntary-white-house-deal",
+      "pubDate": "Wed, 30 Sep 2026 10:43:43 +0000"
     },
     {
-      "title": "Ethereum users get another way to pay privately as zk.money returns after three years",
-      "link": "https://www.coindesk.com/tech/2026/09/29/embargo-12-et-ethereum-users-get-another-way-to-pay-privately-as-zk-money-returns-after-three-years",
-      "pubDate": "Tue, 29 Sep 2026 16:00:00 +0000"
+      "title": "Metaplanet directors push back against shareholder fury over a controversial executive payout plan",
+      "link": "https://www.coindesk.com/markets/2026/09/30/metaplanet-directors-push-back-against-shareholder-fury-over-a-controversial-executive-payout-plan",
+      "pubDate": "Wed, 30 Sep 2026 10:28:24 +0000"
     },
     {
-      "title": "Democrats killed the Clarity Act",
-      "link": "https://www.coindesk.com/opinion/2026/09/29/democrats-killed-the-clarity-act",
-      "pubDate": "Tue, 29 Sep 2026 14:08:18 +0000"
+      "title": "Live updates: Bitcoin tentative ahead of U.S. inflation data",
+      "link": "https://www.coindesk.com/markets/2026/09/30/live-updates-bitcoin-below-usd84-000-ahead-of-pce-inflation-data-micron-earnings",
+      "pubDate": "Wed, 30 Sep 2026 10:18:34 +0000"
     },
     {
-      "title": "Bitcoin surging to $100,000 may be in play, after outperforming gold",
-      "link": "https://www.coindesk.com/daybook-us/2026/09/29/bitcoin-outperforms-gold-usd100-000-surge-in-play",
-      "pubDate": "Tue, 29 Sep 2026 11:34:55 +0000"
+      "title": "Bitcoin stalls near $83,000 while lighter drops 17% on Robinhood perps plan",
+      "link": "https://www.coindesk.com/markets/2026/09/30/bitcoin-stalls-near-usd83-000-while-lighter-drops-17-on-robinhood-perps-plan",
+      "pubDate": "Wed, 30 Sep 2026 10:11:36 +0000"
     },
     {
-      "title": "Zcash developers begin moving Tachyon code into faster private-payment software",
-      "link": "https://www.coindesk.com/tech/2026/09/29/zcash-s-faster-private-payment-code-is-being-rebuilt-for-its-bigger-scaling-plan",
-      "pubDate": "Tue, 29 Sep 2026 11:15:30 +0000"
+      "title": "OpenAI seeks $30 billion in funding at whopping $1.4 trillion valuation after delaying IPO",
+      "link": "https://www.coindesk.com/markets/2026/09/30/openai-targets-usd1-4-trillion-valuation-and-unveils-dots-ai-agent",
+      "pubDate": "Wed, 30 Sep 2026 08:50:22 +0000"
     },
     {
-      "title": "Aave leads DeFi higher as crypto shrugs off surging bond market",
-      "link": "https://www.coindesk.com/markets/2026/09/29/aave-leads-defi-higher-as-crypto-shrugs-off-surging-treasury-yields",
-      "pubDate": "Tue, 29 Sep 2026 10:28:51 +0000"
+      "title": "Winklevoss-owned Gemini switches Zcash software ahead of faster 25-second blocks",
+      "link": "https://www.coindesk.com/tech/2026/09/30/winklevoss-owned-gemini-switches-zcash-software-ahead-of-faster-25-second-blocks",
+      "pubDate": "Wed, 30 Sep 2026 08:27:00 +0000"
     },
     {
-      "title": "Live updates: Bitcoin turns lower as rates rise, consumer confidence plunges",
-      "link": "https://www.coindesk.com/markets/2026/09/29/live-updates-bitcoin-rebounds-above-usd84-000-as-treasury-yields-steady",
-      "pubDate": "Tue, 29 Sep 2026 10:14:41 +0000"
+      "title": "How European investors can now buy bitcoin without taking on U.S. dollar risk",
+      "link": "https://www.coindesk.com/business/2026/09/30/how-european-investors-can-now-buy-bitcoin-without-taking-on-u-s-dollar-risk",
+      "pubDate": "Wed, 30 Sep 2026 08:25:43 +0000"
     },
     {
-      "title": "Blockchain.com targets $500 million IPO this year at up to $6 billion valuation",
-      "link": "https://www.coindesk.com/business/2026/09/29/blockchain-com-targets-usd500-million-ipo-at-up-to-usd6-billion-valuation",
-      "pubDate": "Tue, 29 Sep 2026 10:13:40 +0000"
+      "title": "Bitcoin bulls have one price level to defend",
+      "link": "https://www.coindesk.com/markets/2026/09/30/bitcoin-bulls-have-one-price-level-to-defend",
+      "pubDate": "Wed, 30 Sep 2026 07:04:41 +0000"
     },
     {
-      "title": "Bitcoin is on track to shatter a major decade-long streak as September gains surge",
-      "link": "https://www.coindesk.com/markets/2026/09/29/bitcoin-is-on-track-to-shatter-a-major-decade-long-streak-as-september-gains-surge",
-      "pubDate": "Tue, 29 Sep 2026 09:45:31 +0000"
+      "title": "Robinhood unveils an AI that trades your money 24/7, and you carry all the risk",
+      "link": "https://www.coindesk.com/markets/2026/09/30/robinhood-is-giving-customers-an-ai-agent-that-trades-for-them-plus-10x-crypto-bets",
+      "pubDate": "Wed, 30 Sep 2026 05:59:31 +0000"
     }
   ]
 }
