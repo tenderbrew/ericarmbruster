@@ -1,19 +1,15 @@
 {
-  "fetchedAt": "2026-09-29T22:11:17.493Z",
+  "fetchedAt": "2026-09-30T05:26:24.120Z",
   "price": {
-    "usd": 83556,
-    "time": 1790719509
+    "usd": 83323,
+    "time": 1790745910
   },
   "moves": {
-    "d1": 0.09193381637691012,
-    "d7": -3.048496167755188,
-    "d30": 7.594518400133232
+    "d1": -0.3791262738900847,
+    "d7": -1.2554749625243944,
+    "d30": 6.072631308264054
   },
   "history90d": [
-    {
-      "date": "2026-07-02",
-      "close": 59967.685041718134
-    },
     {
       "date": "2026-07-03",
       "close": 61490.21448471664
@@ -371,61 +367,80 @@
       "close": 83479.2543356063
     },
     {
-      "date": "2026-09-29",
-      "close": 83523.37508423188
+      "date": "2026-09-30",
+      "close": 83640.10160067653
+    },
+    {
+      "date": "2026-09-30",
+      "close": 83285.88147786164
     }
   ],
   "blocks": [
     {
-      "height": 969209,
-      "id": "000000000000000000004a1fa3e79a6f1f2d4c2b60aa1165e398589c27529b4c",
-      "timestamp": 1790719023,
-      "txCount": 4231
+      "height": 969264,
+      "id": "000000000000000000018f2b886dd05a870b86fb96e3902fbe20c2241d4ef216",
+      "timestamp": 1790745509,
+      "txCount": 2408
     },
     {
-      "height": 969208,
-      "id": "00000000000000000000376a40650c22e4c96f562660d3a537d3a4da50ab2673",
-      "timestamp": 1790718176,
-      "txCount": 5033
+      "height": 969263,
+      "id": "00000000000000000000a3365f439ae58e6d907c3193db014bd49eb512e8cc7b",
+      "timestamp": 1790745464,
+      "txCount": 1708
     },
     {
-      "height": 969207,
-      "id": "00000000000000000000bc5d10cc30e31b2476ee6bca6e1de34c1c18842c353d",
-      "timestamp": 1790717949,
-      "txCount": 4177
+      "height": 969262,
+      "id": "000000000000000000001d69b99e7bc3ad66e139b824893055032b2ecbfa8ed7",
+      "timestamp": 1790744652,
+      "txCount": 1312
     },
     {
-      "height": 969206,
-      "id": "000000000000000000020a68c22958e1fe58faf8ea52ffcca5dc48e31955097c",
-      "timestamp": 1790717223,
-      "txCount": 4919
+      "height": 969261,
+      "id": "00000000000000000001e2a9fe08b34034ae0ff412954981ce56d1210fa5e8e5",
+      "timestamp": 1790744195,
+      "txCount": 3142
     },
     {
-      "height": 969205,
-      "id": "000000000000000000021acc15430db4a7d1a038831cd746468680378f12f653",
-      "timestamp": 1790716616,
-      "txCount": 4832
+      "height": 969260,
+      "id": "000000000000000000015e24a76734ed635999aaec28d823889019c4ed7970e4",
+      "timestamp": 1790744119,
+      "txCount": 2096
     },
     {
-      "height": 969204,
-      "id": "000000000000000000020626f16a372297d73351c756e4545eb5842e496d9921",
-      "timestamp": 1790716240,
-      "txCount": 4852
+      "height": 969259,
+      "id": "00000000000000000000eca2c8dee3366e0e7edf11dcb5ef491362a0b57db6de",
+      "timestamp": 1790743097,
+      "txCount": 6680
     },
     {
-      "height": 969203,
-      "id": "000000000000000000008b88dbffebe2b87debd75d7fd3f095488110df356d4c",
-      "timestamp": 1790716120,
-      "txCount": 3655
+      "height": 969258,
+      "id": "0000000000000000000020ed363c10c6e752740b8ddd0a48acea2a25d8ed823e",
+      "timestamp": 1790742961,
+      "txCount": 4924
     },
     {
-      "height": 969202,
-      "id": "0000000000000000000157ccd74681c195b65fb956e29d0b3c9c2519588cd2b8",
-      "timestamp": 1790716087,
-      "txCount": 3040
+      "height": 969257,
+      "id": "000000000000000000004a52701616fc290ddf690056e031ecb4354ee80c10d5",
+      "timestamp": 1790742707,
+      "txCount": 5861
     }
   ],
   "news": [
+    {
+      "title": "XRP Ledger starts carrying fund records from Brazil operator overseeing $4 trillion",
+      "link": "https://www.coindesk.com/tech/2026/09/30/xrp-ledger-starts-carrying-fund-records-from-brazil-operator-overseeing-usd4-trillion",
+      "pubDate": "Wed, 30 Sep 2026 05:22:51 +0000"
+    },
+    {
+      "title": "Bitcoin rally shows signs of cooling even as a 'bull score' gauge nears its perfect score",
+      "link": "https://www.coindesk.com/markets/2026/09/30/bitcoin-rally-shows-signs-of-cooling-even-as-a-bull-score-gauge-nears-its-perfect-score",
+      "pubDate": "Wed, 30 Sep 2026 04:38:18 +0000"
+    },
+    {
+      "title": "Robinhood adds AI agents, perps and weekend trading in push to win active traders",
+      "link": "https://www.coindesk.com/markets/2026/09/29/robinhood-adds-ai-agents-perps-and-weekend-trading-in-push-to-win-active-traders",
+      "pubDate": "Tue, 29 Sep 2026 23:00:00 +0000"
+    },
     {
       "title": "Cboe, S&P Dow Jones may explore tokenized options contracts under extended licensing deal",
       "link": "https://www.coindesk.com/business/2026/09/29/cboe-s-and-p-dow-jones-may-explore-tokenized-options-contracts-under-extended-licensing-deal",
@@ -470,21 +485,6 @@
       "title": "Bitcoin is on track to shatter a major decade-long streak as September gains surge",
       "link": "https://www.coindesk.com/markets/2026/09/29/bitcoin-is-on-track-to-shatter-a-major-decade-long-streak-as-september-gains-surge",
       "pubDate": "Tue, 29 Sep 2026 09:45:31 +0000"
-    },
-    {
-      "title": "Analysts see 10-year Treasury yield hitting 6%. Bitcoin bulls shouldn't panic",
-      "link": "https://www.coindesk.com/markets/2026/09/29/analysts-see-10-year-treasury-yield-hitting-6-bitcoin-bulls-shouldn-t-panic",
-      "pubDate": "Tue, 29 Sep 2026 09:06:11 +0000"
-    },
-    {
-      "title": "Near Intents blocks $50 million in Bitget hacker swaps, here's what happened",
-      "link": "https://www.coindesk.com/tech/2026/09/29/usd50-million-in-bitget-hacker-swaps-puts-near-intents-permissionless-claim-to-the-test",
-      "pubDate": "Tue, 29 Sep 2026 06:23:47 +0000"
-    },
-    {
-      "title": "Anthropic plans to spend $518 billion on AI infrastructure. Pre-IPO perps barely blink.",
-      "link": "https://www.coindesk.com/markets/2026/09/29/anthropic-plans-to-spend-usd518-billion-on-ai-infrastructure-pre-ipo-perps-barely-blink",
-      "pubDate": "Tue, 29 Sep 2026 05:31:44 +0000"
     }
   ]
 }
