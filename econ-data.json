@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-09-29T22:09:56.362Z",
+  "fetchedAt": "2026-09-30T22:09:28.451Z",
   "indicators": {
     "UNRATE": {
       "latest": {
@@ -63,22 +63,22 @@
     },
     "T10YIE": {
       "latest": {
-        "date": "2026-09-29",
-        "value": 2.35
+        "date": "2026-09-30",
+        "value": 2.36
       },
       "previous": {
-        "date": "2026-09-28",
-        "value": 2.34
+        "date": "2026-09-29",
+        "value": 2.35
       }
     },
     "PCE": {
       "latest": {
-        "date": "2026-07-01",
-        "value": 22250.4
+        "date": "2026-08-01",
+        "value": 22308.5
       },
       "previous": {
-        "date": "2026-06-01",
-        "value": 22214.2
+        "date": "2026-07-01",
+        "value": 22117.7
       }
     },
     "M2SL": {
@@ -123,52 +123,52 @@
     },
     "DGS2": {
       "latest": {
-        "date": "2026-09-28",
-        "value": 4.92
+        "date": "2026-09-29",
+        "value": 4.89
       },
       "previous": {
-        "date": "2026-09-25",
-        "value": 4.81
+        "date": "2026-09-28",
+        "value": 4.92
       }
     },
     "DGS10": {
       "latest": {
-        "date": "2026-09-28",
-        "value": 5.24
+        "date": "2026-09-29",
+        "value": 5.26
       },
       "previous": {
-        "date": "2026-09-25",
-        "value": 5.17
+        "date": "2026-09-28",
+        "value": 5.24
       }
     },
     "T10Y2Y": {
       "latest": {
-        "date": "2026-09-29",
-        "value": 0.37
+        "date": "2026-09-30",
+        "value": 0.41
       },
       "previous": {
-        "date": "2026-09-28",
-        "value": 0.32
+        "date": "2026-09-29",
+        "value": 0.37
       }
     },
     "DFII10": {
       "latest": {
-        "date": "2026-09-28",
-        "value": 2.9
+        "date": "2026-09-29",
+        "value": 2.91
       },
       "previous": {
-        "date": "2026-09-25",
-        "value": 2.83
+        "date": "2026-09-28",
+        "value": 2.9
       }
     },
     "BAMLH0A0HYM2": {
       "latest": {
-        "date": "2026-09-28",
-        "value": 3.02
+        "date": "2026-09-29",
+        "value": 3.08
       },
       "previous": {
-        "date": "2026-09-25",
-        "value": 2.93
+        "date": "2026-09-28",
+        "value": 3.02
       }
     },
     "MORTGAGE30US": {
@@ -184,11 +184,11 @@
     "GDPC1": {
       "latest": {
         "date": "2026-04-01",
-        "value": 24269.613
+        "value": 24408.011
       },
       "previous": {
         "date": "2026-01-01",
-        "value": 24180.419
+        "value": 24274.383
       }
     },
     "INDPRO": {
@@ -223,12 +223,12 @@
     },
     "STLFSI4": {
       "latest": {
-        "date": "2026-09-18",
-        "value": -0.9075
+        "date": "2026-09-25",
+        "value": -0.8074
       },
       "previous": {
-        "date": "2026-09-11",
-        "value": -0.8486
+        "date": "2026-09-18",
+        "value": -0.7011
       }
     },
     "DTWEXBGS": {
@@ -263,12 +263,12 @@
     },
     "VIXCLS": {
       "latest": {
-        "date": "2026-09-28",
-        "value": 16.07
+        "date": "2026-09-29",
+        "value": 16.04
       },
       "previous": {
-        "date": "2026-09-25",
-        "value": 14.87
+        "date": "2026-09-28",
+        "value": 16.07
       }
     },
     "BOPGSTB": {
@@ -284,11 +284,11 @@
     "M2V": {
       "latest": {
         "date": "2026-04-01",
-        "value": 1.415
+        "value": 1.418
       },
       "previous": {
         "date": "2026-01-01",
-        "value": 1.413
+        "value": 1.415
       }
     },
     "CPI_YOY": {
