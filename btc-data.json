@@ -1,13 +1,13 @@
 {
-  "fetchedAt": "2026-10-01T00:31:04.641Z",
+  "fetchedAt": "2026-10-01T10:02:20.877Z",
   "price": {
-    "usd": 83437,
-    "time": 1790814307
+    "usd": 83767,
+    "time": 1790848508
   },
   "moves": {
-    "d1": -0.16647647184147019,
-    "d7": -1.115178687544227,
-    "d30": 7.776847920020824
+    "d1": 0.22837308847700744,
+    "d7": -0.7240813202717966,
+    "d30": 8.203113962826869
   },
   "history90d": [
     {
@@ -372,60 +372,80 @@
     },
     {
       "date": "2026-10-01",
-      "close": 83426.9925567179
+      "close": 83705.65764709897
     }
   ],
   "blocks": [
     {
-      "height": 969369,
-      "id": "00000000000000000000b5ecab32f60ac90a9c6eebf327e62dc8ed4d053ebe7e",
-      "timestamp": 1790812778,
-      "txCount": 5818
+      "height": 969437,
+      "id": "00000000000000000000d66c668b0f0c8ddc833b19d291f503f7575e9ac0d93a",
+      "timestamp": 1790848045,
+      "txCount": 4156
     },
     {
-      "height": 969368,
-      "id": "00000000000000000001be5bbf4fd7fc6b181a4191158425a4e59a8fd3e8da74",
-      "timestamp": 1790812226,
-      "txCount": 6489
+      "height": 969436,
+      "id": "0000000000000000000193f4cd7c8b0159b5608878918eaea58ffe2ea8d4f163",
+      "timestamp": 1790847142,
+      "txCount": 3054
     },
     {
-      "height": 969367,
-      "id": "000000000000000000021b4b2a9c3a8fe297efd53e0e0b9c33b61f7f21c573d1",
-      "timestamp": 1790812125,
-      "txCount": 6102
+      "height": 969435,
+      "id": "000000000000000000007d16ff51f47cb71cbaf0bbe65fb4e11181d3b3c6f95c",
+      "timestamp": 1790846728,
+      "txCount": 4620
     },
     {
-      "height": 969366,
-      "id": "00000000000000000001e3b516405ef469e1f835a480cd2b698b570701ec8924",
-      "timestamp": 1790811754,
-      "txCount": 5903
+      "height": 969434,
+      "id": "00000000000000000001aeebe6e23e21759f8d14ad9c2b1090e7c26269253b12",
+      "timestamp": 1790846195,
+      "txCount": 4118
     },
     {
-      "height": 969365,
-      "id": "00000000000000000001b52f1ea2cf461c0bdb1c3232eb545395bfef5a5df08a",
-      "timestamp": 1790811350,
-      "txCount": 4924
+      "height": 969433,
+      "id": "000000000000000000018eecaf7fd5930854074a98d3c8be57de9e1c7e05b456",
+      "timestamp": 1790845860,
+      "txCount": 3518
     },
     {
-      "height": 969364,
-      "id": "00000000000000000001adbf2a2f3fb79c072baa91a75c12d0cb3043ecb9f1f1",
-      "timestamp": 1790810666,
-      "txCount": 6415
+      "height": 969432,
+      "id": "00000000000000000000408245b79549b89d09923cb8f6e3fd2c0e472cf92615",
+      "timestamp": 1790844940,
+      "txCount": 6179
     },
     {
-      "height": 969363,
-      "id": "00000000000000000001e2c06779f25571fa8b282f04ac187d76d3dbbf11a07e",
-      "timestamp": 1790810314,
-      "txCount": 5339
+      "height": 969431,
+      "id": "00000000000000000000dd897f85428d6ef7f9206b17d9db821c2ee1ccf8fe8d",
+      "timestamp": 1790844937,
+      "txCount": 6816
     },
     {
-      "height": 969362,
-      "id": "00000000000000000000f16de9b14d4af7237b808d8a74a3f025d48dc6e6af4e",
-      "timestamp": 1790809999,
-      "txCount": 7171
+      "height": 969430,
+      "id": "000000000000000000013afe1f446584658bba05efab7777da14f272f05cecc1",
+      "timestamp": 1790844719,
+      "txCount": 6138
     }
   ],
   "news": [
+    {
+      "title": "Citigroup raises 12-month bitcoin target to $113,000 as ETF inflows resume",
+      "link": "https://www.coindesk.com/markets/2026/10/01/citigroup-raises-12-month-bitcoin-target-to-usd113-000-as-etf-inflows-resume",
+      "pubDate": "Thu, 01 Oct 2026 09:59:30 +0000"
+    },
+    {
+      "title": "MetaMask security incident forces Ethereum staking exits, no funds at risk",
+      "link": "https://www.coindesk.com/tech/2026/10/01/metamask-security-incident-forces-ethereum-staking-exits-with-lido-warning-of-lost-rewards",
+      "pubDate": "Thu, 01 Oct 2026 07:06:30 +0000"
+    },
+    {
+      "title": "Dogecoin gets DeFi testnet as DogeOS bets miners will eventually secure its apps",
+      "link": "https://www.coindesk.com/tech/2026/10/01/dogecoin-gets-defi-testnet-as-dogeos-bets-miners-will-eventually-secure-its-apps",
+      "pubDate": "Thu, 01 Oct 2026 04:58:52 +0000"
+    },
+    {
+      "title": "Bitcoin's soft-inflation pop to $85,500 fades as bond yields refuse to fall",
+      "link": "https://www.coindesk.com/markets/2026/10/01/bitcoin-s-soft-inflation-pop-to-usd85-500-fades-as-bond-yields-refuse-to-fall",
+      "pubDate": "Thu, 01 Oct 2026 04:15:20 +0000"
+    },
     {
       "title": "Crypto industry gave $8 million to Clarity Act lobbyists who didn't close the deal",
       "link": "https://www.coindesk.com/news-analysis/2026/09/30/crypto-industry-gave-usd8-million-to-clarity-act-lobbyists-who-didn-t-close-the-deal",
@@ -465,26 +485,6 @@
       "title": "Bitget hackers move $4 million into Zcash’s private pool, making funds harder to trace",
       "link": "https://www.coindesk.com/markets/2026/09/30/bitget-hackers-move-usd4-million-into-zcash-s-private-pool-making-funds-harder-to-trace",
       "pubDate": "Wed, 30 Sep 2026 11:04:09 +0000"
-    },
-    {
-      "title": "The SEC Is finally modernizing transfer-agent rules. Wall Street must not repeat the ‘paperwork crisis’",
-      "link": "https://www.coindesk.com/opinion/2026/09/30/the-sec-is-finally-modernizing-transfer-agent-rules-wall-street-must-not-repeat-the-paperwork-crisis",
-      "pubDate": "Wed, 30 Sep 2026 11:00:00 +0000"
-    },
-    {
-      "title": "OpenAI, Google and Meta pledge independent AI safety audits under voluntary White House deal",
-      "link": "https://www.coindesk.com/tech/2026/09/30/openai-google-and-meta-pledge-outside-ai-audits-under-voluntary-white-house-deal",
-      "pubDate": "Wed, 30 Sep 2026 10:43:43 +0000"
-    },
-    {
-      "title": "Metaplanet directors push back against shareholder fury over a controversial executive payout plan",
-      "link": "https://www.coindesk.com/markets/2026/09/30/metaplanet-directors-push-back-against-shareholder-fury-over-a-controversial-executive-payout-plan",
-      "pubDate": "Wed, 30 Sep 2026 10:28:24 +0000"
-    },
-    {
-      "title": "Live updates: Bitcoin closing out best quarter since 2024, ether its best since 2021",
-      "link": "https://www.coindesk.com/markets/2026/09/30/live-updates-bitcoin-below-usd84-000-ahead-of-pce-inflation-data-micron-earnings",
-      "pubDate": "Wed, 30 Sep 2026 10:18:34 +0000"
     }
   ]
 }
