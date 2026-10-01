@@ -1,13 +1,13 @@
 {
-  "fetchedAt": "2026-10-01T10:02:20.877Z",
+  "fetchedAt": "2026-10-01T18:23:40.273Z",
   "price": {
-    "usd": 83767,
-    "time": 1790848508
+    "usd": 84856,
+    "time": 1790878508
   },
   "moves": {
-    "d1": 0.22837308847700744,
-    "d7": -0.7240813202717966,
-    "d30": 8.203113962826869
+    "d1": 1.5313766375279592,
+    "d7": 0.566539991727244,
+    "d30": 9.609791904086773
   },
   "history90d": [
     {
@@ -372,60 +372,95 @@
     },
     {
       "date": "2026-10-01",
-      "close": 83705.65764709897
+      "close": 84806.9253054791
     }
   ],
   "blocks": [
     {
-      "height": 969437,
-      "id": "00000000000000000000d66c668b0f0c8ddc833b19d291f503f7575e9ac0d93a",
-      "timestamp": 1790848045,
-      "txCount": 4156
+      "height": 969474,
+      "id": "000000000000000000008da8747a62964e0054305dc9d2cfea4f0dfd28687dd0",
+      "timestamp": 1790878116,
+      "txCount": 2801
     },
     {
-      "height": 969436,
-      "id": "0000000000000000000193f4cd7c8b0159b5608878918eaea58ffe2ea8d4f163",
-      "timestamp": 1790847142,
-      "txCount": 3054
+      "height": 969473,
+      "id": "000000000000000000005e80b39969b44852e1d2d4fa4e7c04951e5b5261e09b",
+      "timestamp": 1790878051,
+      "txCount": 3766
     },
     {
-      "height": 969435,
-      "id": "000000000000000000007d16ff51f47cb71cbaf0bbe65fb4e11181d3b3c6f95c",
-      "timestamp": 1790846728,
-      "txCount": 4620
+      "height": 969472,
+      "id": "000000000000000000005a403aa3e3b39bb1d9a75db80171f105f4fda3b0e123",
+      "timestamp": 1790877130,
+      "txCount": 3127
     },
     {
-      "height": 969434,
-      "id": "00000000000000000001aeebe6e23e21759f8d14ad9c2b1090e7c26269253b12",
-      "timestamp": 1790846195,
-      "txCount": 4118
+      "height": 969471,
+      "id": "00000000000000000001fafa061ec8eae19be6bea9f93c03910c7cba5ae83045",
+      "timestamp": 1790876516,
+      "txCount": 3862
     },
     {
-      "height": 969433,
-      "id": "000000000000000000018eecaf7fd5930854074a98d3c8be57de9e1c7e05b456",
-      "timestamp": 1790845860,
-      "txCount": 3518
+      "height": 969470,
+      "id": "000000000000000000015f8ae7f77d172dc90a46bac7b69f24db317ce6ee7ab6",
+      "timestamp": 1790876420,
+      "txCount": 3998
     },
     {
-      "height": 969432,
-      "id": "00000000000000000000408245b79549b89d09923cb8f6e3fd2c0e472cf92615",
-      "timestamp": 1790844940,
-      "txCount": 6179
+      "height": 969469,
+      "id": "00000000000000000001be988091b0f3b7de9b3eb28b125921f0c55584cccfeb",
+      "timestamp": 1790876214,
+      "txCount": 3437
     },
     {
-      "height": 969431,
-      "id": "00000000000000000000dd897f85428d6ef7f9206b17d9db821c2ee1ccf8fe8d",
-      "timestamp": 1790844937,
-      "txCount": 6816
+      "height": 969468,
+      "id": "00000000000000000001e0863a7b99251f10716be9dec1e6548d000fbfc8da66",
+      "timestamp": 1790875654,
+      "txCount": 3745
     },
     {
-      "height": 969430,
-      "id": "000000000000000000013afe1f446584658bba05efab7777da14f272f05cecc1",
-      "timestamp": 1790844719,
-      "txCount": 6138
+      "height": 969467,
+      "id": "00000000000000000000bd922bb8adf647e2ebcf605a15db4705d144a45dfdf8",
+      "timestamp": 1790873561,
+      "txCount": 2993
     }
   ],
   "news": [
+    {
+      "title": "Crypto for Advisors: The CLARITY Act failed, but the rules came anyway",
+      "link": "https://www.coindesk.com/coindesk-indices/2026/10/01/crypto-for-advisors-the-clarity-act-failed-but-the-rules-came-anyway",
+      "pubDate": "Thu, 01 Oct 2026 15:00:00 +0000"
+    },
+    {
+      "title": "NEAR Intents hit by $3.8 million exploit as crypto's rough year of hacks continues",
+      "link": "https://www.coindesk.com/tech/2026/10/01/near-intents-hit-by-usd3-8-million-exploit-as-crypto-s-rough-year-of-hacks-continues",
+      "pubDate": "Thu, 01 Oct 2026 14:18:14 +0000"
+    },
+    {
+      "title": "Live updates: Bitcoin posts tentative gains as rates drop ahead of Friday's jobs report",
+      "link": "https://www.coindesk.com/tech/2026/10/01/live-updates-bitcoin-flat-near-usd84-000-after-best-quarter-since-2024",
+      "pubDate": "Thu, 01 Oct 2026 11:59:17 +0000"
+    },
+    {
+      "title": "Illinois agrees to six-month delay of crypto tax as industry continues court battle",
+      "link": "https://www.coindesk.com/policy/2026/09/30/illinois-agrees-to-six-month-delay-of-crypto-tax-as-industry-continues-court-battle",
+      "pubDate": "Thu, 01 Oct 2026 11:58:00 +0000"
+    },
+    {
+      "title": "Crypto lost $1.26 billion in hacks while bitcoin bulls enjoyed a monster quarter",
+      "link": "https://www.coindesk.com/daybook-us/2026/10/01/crypto-lost-usd1-26-billion-in-hacks-while-bitcoin-bulls-enjoyed-a-monster-quarter",
+      "pubDate": "Thu, 01 Oct 2026 11:30:38 +0000"
+    },
+    {
+      "title": "Synthetic tokenized stocks are bad for American investors",
+      "link": "https://www.coindesk.com/opinion/2026/10/01/synthetic-tokenized-stocks-are-bad-for-american-investors",
+      "pubDate": "Thu, 01 Oct 2026 11:00:00 +0000"
+    },
+    {
+      "title": "Bitcoin kicks off new quarter in the old $82,000-$85,000 price range",
+      "link": "https://www.coindesk.com/markets/2026/10/01/bitcoin-kicks-off-new-quarter-in-the-old-usd82-000-usd85-000-price-range",
+      "pubDate": "Thu, 01 Oct 2026 10:38:04 +0000"
+    },
     {
       "title": "Citigroup raises 12-month bitcoin target to $113,000 as ETF inflows resume",
       "link": "https://www.coindesk.com/markets/2026/10/01/citigroup-raises-12-month-bitcoin-target-to-usd113-000-as-etf-inflows-resume",
@@ -450,41 +485,6 @@
       "title": "Crypto industry gave $8 million to Clarity Act lobbyists who didn't close the deal",
       "link": "https://www.coindesk.com/news-analysis/2026/09/30/crypto-industry-gave-usd8-million-to-clarity-act-lobbyists-who-didn-t-close-the-deal",
       "pubDate": "Wed, 30 Sep 2026 17:16:31 +0000"
-    },
-    {
-      "title": "Open USD takes on Tether, Circle with a different stablecoin model that's 'building money'",
-      "link": "https://www.coindesk.com/business/2026/09/24/open-usd-takes-on-tether-circle-with-a-different-stablecoin-model-that-s-building-money",
-      "pubDate": "Wed, 30 Sep 2026 15:34:50 +0000"
-    },
-    {
-      "title": "U.S. CFTC  seeks event contract definitions that may defy states' gambling claims",
-      "link": "https://www.coindesk.com/policy/2026/09/30/u-s-cftc-seeks-event-contract-definitions-that-may-defy-states-gambling-claims",
-      "pubDate": "Wed, 30 Sep 2026 15:19:36 +0000"
-    },
-    {
-      "title": "Crypto Long & Short: What will the AI agents run on?",
-      "link": "https://www.coindesk.com/coindesk-indices/2026/09/30/crypto-long-and-short-what-will-the-ai-agents-run-on",
-      "pubDate": "Wed, 30 Sep 2026 14:56:07 +0000"
-    },
-    {
-      "title": "Clock's ticking: UK's crypto regulatory application window opens with February deadline",
-      "link": "https://www.coindesk.com/policy/2026/09/30/the-clock-s-ticking-uk-s-crypto-regulatory-application-window-opens-with-february-deadline",
-      "pubDate": "Wed, 30 Sep 2026 14:04:19 +0000"
-    },
-    {
-      "title": "Cardano tapped by Brazil’s state oil giant to track cleaner jet fuel and diesel",
-      "link": "https://www.coindesk.com/tech/2026/09/30/embargo-1-pm-utc-cardano-tapped-by-brazil-s-state-oil-giant-to-track-cleaner-jet-fuel-and-diesel",
-      "pubDate": "Wed, 30 Sep 2026 13:00:00 +0000"
-    },
-    {
-      "title": "A stronger dollar is a weaker threat to bitcoin than traders think",
-      "link": "https://www.coindesk.com/daybook-us/2026/09/30/a-stronger-dollar-is-a-weaker-threat-to-bitcoin-than-traders-think",
-      "pubDate": "Wed, 30 Sep 2026 11:20:09 +0000"
-    },
-    {
-      "title": "Bitget hackers move $4 million into Zcash’s private pool, making funds harder to trace",
-      "link": "https://www.coindesk.com/markets/2026/09/30/bitget-hackers-move-usd4-million-into-zcash-s-private-pool-making-funds-harder-to-trace",
-      "pubDate": "Wed, 30 Sep 2026 11:04:09 +0000"
     }
   ]
 }
