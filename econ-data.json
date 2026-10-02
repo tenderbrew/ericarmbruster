@@ -1,24 +1,24 @@
 {
-  "fetchedAt": "2026-10-01T22:36:40.908Z",
+  "fetchedAt": "2026-10-02T22:06:07.927Z",
   "indicators": {
     "UNRATE": {
       "latest": {
-        "date": "2026-08-01",
-        "value": 4.1
+        "date": "2026-09-01",
+        "value": 4.2
       },
       "previous": {
-        "date": "2026-07-01",
+        "date": "2026-08-01",
         "value": 4.1
       }
     },
     "PAYEMS": {
       "latest": {
-        "date": "2026-08-01",
-        "value": 159075
+        "date": "2026-09-01",
+        "value": 159044
       },
       "previous": {
-        "date": "2026-07-01",
-        "value": 158913
+        "date": "2026-08-01",
+        "value": 159015
       }
     },
     "JTSJOL": {
@@ -63,11 +63,11 @@
     },
     "T10YIE": {
       "latest": {
-        "date": "2026-10-01",
+        "date": "2026-10-02",
         "value": 2.36
       },
       "previous": {
-        "date": "2026-09-30",
+        "date": "2026-10-01",
         "value": 2.36
       }
     },
@@ -123,52 +123,52 @@
     },
     "DGS2": {
       "latest": {
-        "date": "2026-09-30",
-        "value": 4.88
+        "date": "2026-10-01",
+        "value": 4.78
       },
       "previous": {
-        "date": "2026-09-29",
-        "value": 4.89
+        "date": "2026-09-30",
+        "value": 4.88
       }
     },
     "DGS10": {
       "latest": {
-        "date": "2026-09-30",
-        "value": 5.29
+        "date": "2026-10-01",
+        "value": 5.24
       },
       "previous": {
-        "date": "2026-09-29",
-        "value": 5.26
+        "date": "2026-09-30",
+        "value": 5.29
       }
     },
     "T10Y2Y": {
       "latest": {
-        "date": "2026-10-01",
-        "value": 0.46
+        "date": "2026-10-02",
+        "value": 0.45
       },
       "previous": {
-        "date": "2026-09-30",
-        "value": 0.41
+        "date": "2026-10-01",
+        "value": 0.46
       }
     },
     "DFII10": {
       "latest": {
-        "date": "2026-09-30",
-        "value": 2.93
+        "date": "2026-10-01",
+        "value": 2.88
       },
       "previous": {
-        "date": "2026-09-29",
-        "value": 2.91
+        "date": "2026-09-30",
+        "value": 2.93
       }
     },
     "BAMLH0A0HYM2": {
       "latest": {
-        "date": "2026-09-30",
-        "value": 3.12
+        "date": "2026-10-01",
+        "value": 3.24
       },
       "previous": {
-        "date": "2026-09-29",
-        "value": 3.08
+        "date": "2026-09-30",
+        "value": 3.12
       }
     },
     "MORTGAGE30US": {
@@ -263,12 +263,12 @@
     },
     "VIXCLS": {
       "latest": {
-        "date": "2026-09-30",
-        "value": 16.34
+        "date": "2026-10-01",
+        "value": 16.39
       },
       "previous": {
-        "date": "2026-09-29",
-        "value": 16.04
+        "date": "2026-09-30",
+        "value": 16.34
       }
     },
     "BOPGSTB": {
