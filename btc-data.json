@@ -1,13 +1,13 @@
 {
-  "fetchedAt": "2026-10-02T00:43:40.138Z",
+  "fetchedAt": "2026-10-02T09:40:19.804Z",
   "price": {
-    "usd": 84736,
-    "time": 1790901607
+    "usd": 86355,
+    "time": 1790933708
   },
   "moves": {
-    "d1": -0.12454534208993229,
-    "d7": 0.785343778652825,
-    "d30": 9.623728842134138
+    "d1": 1.7837151503944382,
+    "d7": 2.710988977595874,
+    "d30": 11.71824377079982
   },
   "history90d": [
     {
@@ -372,60 +372,75 @@
     },
     {
       "date": "2026-10-02",
-      "close": 84829.18929386452
+      "close": 86317.7893673804
     }
   ],
   "blocks": [
     {
-      "height": 969509,
-      "id": "000000000000000000019814e74a08a733acd3395e9599646b6e53db90d2c0ab",
-      "timestamp": 1790901804,
-      "txCount": 3418
+      "height": 969566,
+      "id": "000000000000000000007622306b32aecaad9e95a5760ccfb22c0f6065769112",
+      "timestamp": 1790933068,
+      "txCount": 2448
     },
     {
-      "height": 969508,
-      "id": "00000000000000000001de3315ea982f64a82712921b987d2f9753b529b768e2",
-      "timestamp": 1790901100,
-      "txCount": 2874
+      "height": 969565,
+      "id": "00000000000000000001c0bf9ab626016ca48a45e17444d1b2a80559882ee365",
+      "timestamp": 1790932914,
+      "txCount": 3417
     },
     {
-      "height": 969507,
-      "id": "00000000000000000001aae8dde4f60d252761344e71d74e0fc2248cc965a9b1",
-      "timestamp": 1790900863,
-      "txCount": 3156
+      "height": 969564,
+      "id": "00000000000000000001db588df8b9d8167e941b4954870772689e57a6f82143",
+      "timestamp": 1790932117,
+      "txCount": 3514
     },
     {
-      "height": 969506,
-      "id": "0000000000000000000182e08b9ea2a4347c962d617468d99f1279e91a48691e",
-      "timestamp": 1790900346,
-      "txCount": 3845
+      "height": 969563,
+      "id": "00000000000000000000fb91e436f013380f5549d42f2401170fc81d8ac8aa10",
+      "timestamp": 1790932057,
+      "txCount": 3503
     },
     {
-      "height": 969505,
-      "id": "000000000000000000002490b872fca30690f35bf2f273ad32c08e9cf4e86fa4",
-      "timestamp": 1790897913,
-      "txCount": 3184
+      "height": 969562,
+      "id": "000000000000000000000ff79f6f770790487705b4c834242500428a855692da",
+      "timestamp": 1790930336,
+      "txCount": 2965
     },
     {
-      "height": 969504,
-      "id": "00000000000000000000220c1314b1e6941f8ea1783addb29d88c5a0baab499d",
-      "timestamp": 1790897726,
-      "txCount": 3566
+      "height": 969561,
+      "id": "0000000000000000000143ce75d23c4ae3fef9743a9188a813e2430f43a45010",
+      "timestamp": 1790930000,
+      "txCount": 3615
     },
     {
-      "height": 969503,
-      "id": "000000000000000000021c399abb83b40163367747e321cf1c41fb9c37742ddc",
-      "timestamp": 1790896583,
-      "txCount": 1581
+      "height": 969560,
+      "id": "00000000000000000000d0c5ca07d1ca744a9686ee6af8e60d7d479c29a1d185",
+      "timestamp": 1790928731,
+      "txCount": 2950
     },
     {
-      "height": 969502,
-      "id": "0000000000000000000088278b2173f19ff5c3e8a66ef4c101a68af749eb7a7e",
-      "timestamp": 1790896508,
-      "txCount": 3566
+      "height": 969559,
+      "id": "00000000000000000000a79da4770a46241fc92caeb413daeab011c46388746f",
+      "timestamp": 1790927381,
+      "txCount": 7196
     }
   ],
   "news": [
+    {
+      "title": "Why rising perpetual funding rates signal growing bullish leverage as bitcoin crosses $86,500",
+      "link": "https://www.coindesk.com/markets/2026/10/02/why-rising-perpetual-funding-rates-signal-growing-bullish-leverage-as-bitcoin-crosses-usd86-500",
+      "pubDate": "Fri, 02 Oct 2026 09:14:21 +0000"
+    },
+    {
+      "title": "Tether's USDT is 'coming home' to Bitcoin this month over a decade after debut there",
+      "link": "https://www.coindesk.com/tech/2026/09/29/tether-s-usdt-is-coming-home-to-bitcoin-this-month-after-more-than-a-decade",
+      "pubDate": "Fri, 02 Oct 2026 08:28:19 +0000"
+    },
+    {
+      "title": "Bitcoin tops $86,000 ahead of U.S. jobs report",
+      "link": "https://www.coindesk.com/markets/2026/10/02/bitcoin-tops-usd86-000-ahead-of-u-s-jobs-report",
+      "pubDate": "Fri, 02 Oct 2026 08:11:54 +0000"
+    },
     {
       "title": "SEC proposes new crypto custody rules for investment advisers and funds",
       "link": "https://www.coindesk.com/policy/2026/10/01/u-s-sec-maps-out-crypto-custody-in-new-proposal-that-furthers-its-digital-assets-agenda",
@@ -470,21 +485,6 @@
       "title": "Bitcoin kicks off new quarter in the old $82,000-$85,000 price range",
       "link": "https://www.coindesk.com/markets/2026/10/01/bitcoin-kicks-off-new-quarter-in-the-old-usd82-000-usd85-000-price-range",
       "pubDate": "Thu, 01 Oct 2026 10:38:04 +0000"
-    },
-    {
-      "title": "Citigroup raises 12-month bitcoin target to $113,000 as ETF inflows resume",
-      "link": "https://www.coindesk.com/markets/2026/10/01/citigroup-raises-12-month-bitcoin-target-to-usd113-000-as-etf-inflows-resume",
-      "pubDate": "Thu, 01 Oct 2026 09:59:30 +0000"
-    },
-    {
-      "title": "MetaMask security incident forces Ethereum staking exits, no funds at risk",
-      "link": "https://www.coindesk.com/tech/2026/10/01/metamask-security-incident-forces-ethereum-staking-exits-with-lido-warning-of-lost-rewards",
-      "pubDate": "Thu, 01 Oct 2026 07:06:30 +0000"
-    },
-    {
-      "title": "Dogecoin gets DeFi testnet as DogeOS bets miners will eventually secure its apps",
-      "link": "https://www.coindesk.com/tech/2026/10/01/dogecoin-gets-defi-testnet-as-dogeos-bets-miners-will-eventually-secure-its-apps",
-      "pubDate": "Thu, 01 Oct 2026 04:58:52 +0000"
     }
   ]
 }
