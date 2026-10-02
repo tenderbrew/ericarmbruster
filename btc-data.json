@@ -1,13 +1,13 @@
 {
-  "fetchedAt": "2026-10-02T09:40:19.804Z",
+  "fetchedAt": "2026-10-02T17:50:47.359Z",
   "price": {
-    "usd": 86355,
-    "time": 1790933708
+    "usd": 84731,
+    "time": 1790963407
   },
   "moves": {
-    "d1": 1.7837151503944382,
-    "d7": 2.710988977595874,
-    "d30": 11.71824377079982
+    "d1": -0.1304386728264495,
+    "d7": 0.7793967582731431,
+    "d30": 9.617260296956044
   },
   "history90d": [
     {
@@ -372,67 +372,107 @@
     },
     {
       "date": "2026-10-02",
-      "close": 86317.7893673804
+      "close": 84653.98934982902
     }
   ],
   "blocks": [
     {
-      "height": 969566,
-      "id": "000000000000000000007622306b32aecaad9e95a5760ccfb22c0f6065769112",
-      "timestamp": 1790933068,
-      "txCount": 2448
+      "height": 969618,
+      "id": "00000000000000000001768d0209a4d6c7fe658ff944f61343e7f73f2d72d967",
+      "timestamp": 1790963044,
+      "txCount": 3520
     },
     {
-      "height": 969565,
-      "id": "00000000000000000001c0bf9ab626016ca48a45e17444d1b2a80559882ee365",
-      "timestamp": 1790932914,
-      "txCount": 3417
+      "height": 969617,
+      "id": "000000000000000000015fb6857fe9c4dccff2b7622df8134f95c8b3a29b1262",
+      "timestamp": 1790962475,
+      "txCount": 3749
     },
     {
-      "height": 969564,
-      "id": "00000000000000000001db588df8b9d8167e941b4954870772689e57a6f82143",
-      "timestamp": 1790932117,
-      "txCount": 3514
+      "height": 969616,
+      "id": "000000000000000000018cdaf5980c9deba17115d2f8cefcdeabd46508f9412a",
+      "timestamp": 1790959926,
+      "txCount": 3696
     },
     {
-      "height": 969563,
-      "id": "00000000000000000000fb91e436f013380f5549d42f2401170fc81d8ac8aa10",
-      "timestamp": 1790932057,
-      "txCount": 3503
+      "height": 969615,
+      "id": "00000000000000000000214ac8ad542a2002368210e3433f1d05e22c6ebd03f9",
+      "timestamp": 1790959801,
+      "txCount": 3774
     },
     {
-      "height": 969562,
-      "id": "000000000000000000000ff79f6f770790487705b4c834242500428a855692da",
-      "timestamp": 1790930336,
-      "txCount": 2965
+      "height": 969614,
+      "id": "000000000000000000014b62d2024d3aec5a9747ad8338745258d90b7e2182d9",
+      "timestamp": 1790959820,
+      "txCount": 3581
     },
     {
-      "height": 969561,
-      "id": "0000000000000000000143ce75d23c4ae3fef9743a9188a813e2430f43a45010",
-      "timestamp": 1790930000,
-      "txCount": 3615
+      "height": 969613,
+      "id": "00000000000000000001b3a7c9d2e549b49e9ca5d20e53bdfb177cbda90c8001",
+      "timestamp": 1790957044,
+      "txCount": 3802
     },
     {
-      "height": 969560,
-      "id": "00000000000000000000d0c5ca07d1ca744a9686ee6af8e60d7d479c29a1d185",
-      "timestamp": 1790928731,
-      "txCount": 2950
+      "height": 969612,
+      "id": "00000000000000000000fd52c0aa3823b36c846a208e2dba324f51f6d7cde53c",
+      "timestamp": 1790956589,
+      "txCount": 3388
     },
     {
-      "height": 969559,
-      "id": "00000000000000000000a79da4770a46241fc92caeb413daeab011c46388746f",
-      "timestamp": 1790927381,
-      "txCount": 7196
+      "height": 969611,
+      "id": "000000000000000000006032abe8874d9c278ebaf7c77e88f8f6810fd7b98f73",
+      "timestamp": 1790956573,
+      "txCount": 3943
     }
   ],
   "news": [
     {
-      "title": "Why rising perpetual funding rates signal growing bullish leverage as bitcoin crosses $86,500",
+      "title": "BNY in talks with Kraken parent Payward over infrastructure partnership",
+      "link": "https://www.coindesk.com/business/2026/09/30/bny-in-talks-with-kraken-parent-payward-over-infrastructure-partnership",
+      "pubDate": "Fri, 02 Oct 2026 17:34:40 +0000"
+    },
+    {
+      "title": "Once a $2 billion Ethereum layer-2, Blast is shutting down after assets plunge 98%",
+      "link": "https://www.coindesk.com/tech/2026/10/02/once-a-usd2-billion-ethereum-layer-2-blast-is-shutting-down-after-assets-plunge-98",
+      "pubDate": "Fri, 02 Oct 2026 17:15:35 +0000"
+    },
+    {
+      "title": "Possible next crypto czar, Jay Clayton, began crypto's regulation-by-enforcement at SEC",
+      "link": "https://www.coindesk.com/news-analysis/2026/10/02/possible-next-crypto-czar-jay-clayton-began-crypto-s-regulation-by-enforcement-at-sec",
+      "pubDate": "Fri, 02 Oct 2026 17:12:48 +0000"
+    },
+    {
+      "title": "America at a crossroads: Commissioner Peirce’s parting challenge",
+      "link": "https://www.coindesk.com/opinion/2026/10/01/america-at-a-crossroads-commissioner-peirce-s-parting-challenge",
+      "pubDate": "Fri, 02 Oct 2026 13:22:19 +0000"
+    },
+    {
+      "title": "U.S. added just 29,000 jobs in September, with unemployment rate rising to 4.2%",
+      "link": "https://www.coindesk.com/markets/2026/10/02/u-s-added-just-29-000-jobs-in-september-with-unemployment-rate-rising-to-4-2",
+      "pubDate": "Fri, 02 Oct 2026 12:31:53 +0000"
+    },
+    {
+      "title": "Cboe wants to turn VIX into a never-ending trade",
+      "link": "https://www.coindesk.com/daybook-us/2026/10/02/wall-street-s-fear-gauge-vix-could-get-a-crypto-style-makeover",
+      "pubDate": "Fri, 02 Oct 2026 11:30:00 +0000"
+    },
+    {
+      "title": "Live updates: Bitcoin reverses big early gains following soft U.S. jobs data",
+      "link": "https://www.coindesk.com/tech/2026/10/02/live-updates-bitcoin-gold-and-tech-futures-edge-higher-as-markets-await-u-s-jobs-report",
+      "pubDate": "Fri, 02 Oct 2026 11:22:40 +0000"
+    },
+    {
+      "title": "Crypto traders are in risk-on mode as bitcoin dominance nears return to 60%",
+      "link": "https://www.coindesk.com/markets/2026/10/02/crypto-traders-are-in-risk-on-mode-as-bitcoin-dominance-nears-return-to-60",
+      "pubDate": "Fri, 02 Oct 2026 10:31:16 +0000"
+    },
+    {
+      "title": "Bitcoin open interest jumps $2.3 billion as traders pay more for bullish positions",
       "link": "https://www.coindesk.com/markets/2026/10/02/why-rising-perpetual-funding-rates-signal-growing-bullish-leverage-as-bitcoin-crosses-usd86-500",
       "pubDate": "Fri, 02 Oct 2026 09:14:21 +0000"
     },
     {
-      "title": "Tether's USDT is 'coming home' to Bitcoin this month over a decade after debut there",
+      "title": "Tether's USDT is 'coming home' to Bitcoin after more than a decade",
       "link": "https://www.coindesk.com/tech/2026/09/29/tether-s-usdt-is-coming-home-to-bitcoin-this-month-after-more-than-a-decade",
       "pubDate": "Fri, 02 Oct 2026 08:28:19 +0000"
     },
@@ -445,46 +485,6 @@
       "title": "SEC proposes new crypto custody rules for investment advisers and funds",
       "link": "https://www.coindesk.com/policy/2026/10/01/u-s-sec-maps-out-crypto-custody-in-new-proposal-that-furthers-its-digital-assets-agenda",
       "pubDate": "Thu, 01 Oct 2026 20:20:04 +0000"
-    },
-    {
-      "title": "Another Trump memecoin dinner advertised for token's top investors",
-      "link": "https://www.coindesk.com/policy/2026/10/01/another-trump-memecoin-dinner-advertised-for-token-s-top-investors",
-      "pubDate": "Thu, 01 Oct 2026 18:45:29 +0000"
-    },
-    {
-      "title": "Crypto for Advisors: The CLARITY Act failed, but the rules came anyway",
-      "link": "https://www.coindesk.com/coindesk-indices/2026/10/01/crypto-for-advisors-the-clarity-act-failed-but-the-rules-came-anyway",
-      "pubDate": "Thu, 01 Oct 2026 15:00:00 +0000"
-    },
-    {
-      "title": "NEAR Intents hit by $3.8 million exploit as crypto's rough year of hacks continues",
-      "link": "https://www.coindesk.com/tech/2026/10/01/near-intents-hit-by-usd3-8-million-exploit-as-crypto-s-rough-year-of-hacks-continues",
-      "pubDate": "Thu, 01 Oct 2026 14:18:14 +0000"
-    },
-    {
-      "title": "Live updates: Bitcoin posts tentative gains as rates drop ahead of Friday's jobs report",
-      "link": "https://www.coindesk.com/tech/2026/10/01/live-updates-bitcoin-flat-near-usd84-000-after-best-quarter-since-2024",
-      "pubDate": "Thu, 01 Oct 2026 11:59:17 +0000"
-    },
-    {
-      "title": "Illinois agrees to six-month delay of crypto tax as industry continues court battle",
-      "link": "https://www.coindesk.com/policy/2026/09/30/illinois-agrees-to-six-month-delay-of-crypto-tax-as-industry-continues-court-battle",
-      "pubDate": "Thu, 01 Oct 2026 11:58:00 +0000"
-    },
-    {
-      "title": "Crypto lost $1.26 billion in hacks while bitcoin bulls enjoyed a monster quarter",
-      "link": "https://www.coindesk.com/daybook-us/2026/10/01/crypto-lost-usd1-26-billion-in-hacks-while-bitcoin-bulls-enjoyed-a-monster-quarter",
-      "pubDate": "Thu, 01 Oct 2026 11:30:38 +0000"
-    },
-    {
-      "title": "Synthetic tokenized stocks are bad for American investors",
-      "link": "https://www.coindesk.com/opinion/2026/10/01/synthetic-tokenized-stocks-are-bad-for-american-investors",
-      "pubDate": "Thu, 01 Oct 2026 11:00:00 +0000"
-    },
-    {
-      "title": "Bitcoin kicks off new quarter in the old $82,000-$85,000 price range",
-      "link": "https://www.coindesk.com/markets/2026/10/01/bitcoin-kicks-off-new-quarter-in-the-old-usd82-000-usd85-000-price-range",
-      "pubDate": "Thu, 01 Oct 2026 10:38:04 +0000"
     }
   ]
 }
