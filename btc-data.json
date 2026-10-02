@@ -1,19 +1,15 @@
 {
-  "fetchedAt": "2026-10-01T18:23:40.273Z",
+  "fetchedAt": "2026-10-02T00:43:40.138Z",
   "price": {
-    "usd": 84856,
-    "time": 1790878508
+    "usd": 84736,
+    "time": 1790901607
   },
   "moves": {
-    "d1": 1.5313766375279592,
-    "d7": 0.566539991727244,
-    "d30": 9.609791904086773
+    "d1": -0.12454534208993229,
+    "d7": 0.785343778652825,
+    "d30": 9.623728842134138
   },
   "history90d": [
-    {
-      "date": "2026-07-04",
-      "close": 62553.61289177051
-    },
     {
       "date": "2026-07-05",
       "close": 63088.406753852214
@@ -371,61 +367,75 @@
       "close": 83576.13460018387
     },
     {
-      "date": "2026-10-01",
-      "close": 84806.9253054791
+      "date": "2026-10-02",
+      "close": 84841.66634358242
+    },
+    {
+      "date": "2026-10-02",
+      "close": 84829.18929386452
     }
   ],
   "blocks": [
     {
-      "height": 969474,
-      "id": "000000000000000000008da8747a62964e0054305dc9d2cfea4f0dfd28687dd0",
-      "timestamp": 1790878116,
-      "txCount": 2801
+      "height": 969509,
+      "id": "000000000000000000019814e74a08a733acd3395e9599646b6e53db90d2c0ab",
+      "timestamp": 1790901804,
+      "txCount": 3418
     },
     {
-      "height": 969473,
-      "id": "000000000000000000005e80b39969b44852e1d2d4fa4e7c04951e5b5261e09b",
-      "timestamp": 1790878051,
-      "txCount": 3766
+      "height": 969508,
+      "id": "00000000000000000001de3315ea982f64a82712921b987d2f9753b529b768e2",
+      "timestamp": 1790901100,
+      "txCount": 2874
     },
     {
-      "height": 969472,
-      "id": "000000000000000000005a403aa3e3b39bb1d9a75db80171f105f4fda3b0e123",
-      "timestamp": 1790877130,
-      "txCount": 3127
+      "height": 969507,
+      "id": "00000000000000000001aae8dde4f60d252761344e71d74e0fc2248cc965a9b1",
+      "timestamp": 1790900863,
+      "txCount": 3156
     },
     {
-      "height": 969471,
-      "id": "00000000000000000001fafa061ec8eae19be6bea9f93c03910c7cba5ae83045",
-      "timestamp": 1790876516,
-      "txCount": 3862
+      "height": 969506,
+      "id": "0000000000000000000182e08b9ea2a4347c962d617468d99f1279e91a48691e",
+      "timestamp": 1790900346,
+      "txCount": 3845
     },
     {
-      "height": 969470,
-      "id": "000000000000000000015f8ae7f77d172dc90a46bac7b69f24db317ce6ee7ab6",
-      "timestamp": 1790876420,
-      "txCount": 3998
+      "height": 969505,
+      "id": "000000000000000000002490b872fca30690f35bf2f273ad32c08e9cf4e86fa4",
+      "timestamp": 1790897913,
+      "txCount": 3184
     },
     {
-      "height": 969469,
-      "id": "00000000000000000001be988091b0f3b7de9b3eb28b125921f0c55584cccfeb",
-      "timestamp": 1790876214,
-      "txCount": 3437
+      "height": 969504,
+      "id": "00000000000000000000220c1314b1e6941f8ea1783addb29d88c5a0baab499d",
+      "timestamp": 1790897726,
+      "txCount": 3566
     },
     {
-      "height": 969468,
-      "id": "00000000000000000001e0863a7b99251f10716be9dec1e6548d000fbfc8da66",
-      "timestamp": 1790875654,
-      "txCount": 3745
+      "height": 969503,
+      "id": "000000000000000000021c399abb83b40163367747e321cf1c41fb9c37742ddc",
+      "timestamp": 1790896583,
+      "txCount": 1581
     },
     {
-      "height": 969467,
-      "id": "00000000000000000000bd922bb8adf647e2ebcf605a15db4705d144a45dfdf8",
-      "timestamp": 1790873561,
-      "txCount": 2993
+      "height": 969502,
+      "id": "0000000000000000000088278b2173f19ff5c3e8a66ef4c101a68af749eb7a7e",
+      "timestamp": 1790896508,
+      "txCount": 3566
     }
   ],
   "news": [
+    {
+      "title": "SEC proposes new crypto custody rules for investment advisers and funds",
+      "link": "https://www.coindesk.com/policy/2026/10/01/u-s-sec-maps-out-crypto-custody-in-new-proposal-that-furthers-its-digital-assets-agenda",
+      "pubDate": "Thu, 01 Oct 2026 20:20:04 +0000"
+    },
+    {
+      "title": "Another Trump memecoin dinner advertised for token's top investors",
+      "link": "https://www.coindesk.com/policy/2026/10/01/another-trump-memecoin-dinner-advertised-for-token-s-top-investors",
+      "pubDate": "Thu, 01 Oct 2026 18:45:29 +0000"
+    },
     {
       "title": "Crypto for Advisors: The CLARITY Act failed, but the rules came anyway",
       "link": "https://www.coindesk.com/coindesk-indices/2026/10/01/crypto-for-advisors-the-clarity-act-failed-but-the-rules-came-anyway",
@@ -475,16 +485,6 @@
       "title": "Dogecoin gets DeFi testnet as DogeOS bets miners will eventually secure its apps",
       "link": "https://www.coindesk.com/tech/2026/10/01/dogecoin-gets-defi-testnet-as-dogeos-bets-miners-will-eventually-secure-its-apps",
       "pubDate": "Thu, 01 Oct 2026 04:58:52 +0000"
-    },
-    {
-      "title": "Bitcoin's soft-inflation pop to $85,500 fades as bond yields refuse to fall",
-      "link": "https://www.coindesk.com/markets/2026/10/01/bitcoin-s-soft-inflation-pop-to-usd85-500-fades-as-bond-yields-refuse-to-fall",
-      "pubDate": "Thu, 01 Oct 2026 04:15:20 +0000"
-    },
-    {
-      "title": "Crypto industry gave $8 million to Clarity Act lobbyists who didn't close the deal",
-      "link": "https://www.coindesk.com/news-analysis/2026/09/30/crypto-industry-gave-usd8-million-to-clarity-act-lobbyists-who-didn-t-close-the-deal",
-      "pubDate": "Wed, 30 Sep 2026 17:16:31 +0000"
     }
   ]
 }
