@@ -1,13 +1,13 @@
 {
-  "fetchedAt": "2026-10-02T17:50:47.359Z",
+  "fetchedAt": "2026-10-02T22:09:03.690Z",
   "price": {
-    "usd": 84731,
-    "time": 1790963407
+    "usd": 84470,
+    "time": 1790978709
   },
   "moves": {
-    "d1": -0.1304386728264495,
-    "d7": 0.7793967582731431,
-    "d30": 9.617260296956044
+    "d1": -0.4380705372726723,
+    "d7": 0.4689622944534122,
+    "d30": 9.279602238659734
   },
   "history90d": [
     {
@@ -372,60 +372,65 @@
     },
     {
       "date": "2026-10-02",
-      "close": 84653.98934982902
+      "close": 84475.01933188383
     }
   ],
   "blocks": [
     {
-      "height": 969618,
-      "id": "00000000000000000001768d0209a4d6c7fe658ff944f61343e7f73f2d72d967",
-      "timestamp": 1790963044,
-      "txCount": 3520
+      "height": 969639,
+      "id": "00000000000000000001fabb4d64452931782cc677f4ad2de32e4cc4dee7a267",
+      "timestamp": 1790978906,
+      "txCount": 3927
     },
     {
-      "height": 969617,
-      "id": "000000000000000000015fb6857fe9c4dccff2b7622df8134f95c8b3a29b1262",
-      "timestamp": 1790962475,
-      "txCount": 3749
+      "height": 969638,
+      "id": "00000000000000000000376b260d9d4409fcb2e4cdadd31ab9f54fca47f5bf2d",
+      "timestamp": 1790977992,
+      "txCount": 3779
     },
     {
-      "height": 969616,
-      "id": "000000000000000000018cdaf5980c9deba17115d2f8cefcdeabd46508f9412a",
-      "timestamp": 1790959926,
-      "txCount": 3696
+      "height": 969637,
+      "id": "00000000000000000000cf92e07f4d276042e21bd53a624c01e72de147481949",
+      "timestamp": 1790977219,
+      "txCount": 2672
     },
     {
-      "height": 969615,
-      "id": "00000000000000000000214ac8ad542a2002368210e3433f1d05e22c6ebd03f9",
-      "timestamp": 1790959801,
-      "txCount": 3774
+      "height": 969636,
+      "id": "0000000000000000000069b77b759e654c1bcb9be61f69c26228de706f4a9929",
+      "timestamp": 1790977116,
+      "txCount": 3828
     },
     {
-      "height": 969614,
-      "id": "000000000000000000014b62d2024d3aec5a9747ad8338745258d90b7e2182d9",
-      "timestamp": 1790959820,
-      "txCount": 3581
+      "height": 969635,
+      "id": "00000000000000000000422269c3a4fd97adc3aa12881151a8da73e916c6e6a2",
+      "timestamp": 1790976894,
+      "txCount": 3956
     },
     {
-      "height": 969613,
-      "id": "00000000000000000001b3a7c9d2e549b49e9ca5d20e53bdfb177cbda90c8001",
-      "timestamp": 1790957044,
-      "txCount": 3802
+      "height": 969634,
+      "id": "000000000000000000003a419f4707cb93fb61009a7e62d37881885a333cbafe",
+      "timestamp": 1790976127,
+      "txCount": 3650
     },
     {
-      "height": 969612,
-      "id": "00000000000000000000fd52c0aa3823b36c846a208e2dba324f51f6d7cde53c",
-      "timestamp": 1790956589,
-      "txCount": 3388
+      "height": 969633,
+      "id": "00000000000000000000f5b85fe0f893978ea9ad1a2748000e7492fe29afd279",
+      "timestamp": 1790974024,
+      "txCount": 3920
     },
     {
-      "height": 969611,
-      "id": "000000000000000000006032abe8874d9c278ebaf7c77e88f8f6810fd7b98f73",
-      "timestamp": 1790956573,
-      "txCount": 3943
+      "height": 969632,
+      "id": "000000000000000000006635e0767377b25726bbd8df45d4a02e9e80a64bd505",
+      "timestamp": 1790973844,
+      "txCount": 234
     }
   ],
   "news": [
+    {
+      "title": "Bank group sues U.S. regulator over granting crypto trust charters",
+      "link": "https://www.coindesk.com/policy/2026/10/02/bank-group-sues-u-s-regulator-over-granting-crypto-trust-charters",
+      "pubDate": "Fri, 02 Oct 2026 21:23:20 +0000"
+    },
     {
       "title": "BNY in talks with Kraken parent Payward over infrastructure partnership",
       "link": "https://www.coindesk.com/business/2026/09/30/bny-in-talks-with-kraken-parent-payward-over-infrastructure-partnership",
@@ -437,7 +442,7 @@
       "pubDate": "Fri, 02 Oct 2026 17:15:35 +0000"
     },
     {
-      "title": "Possible next crypto czar, Jay Clayton, began crypto's regulation-by-enforcement at SEC",
+      "title": "Trump’s potential AI czar, Jay Clayton, helped pioneer the SEC’s crypto crackdown",
       "link": "https://www.coindesk.com/news-analysis/2026/10/02/possible-next-crypto-czar-jay-clayton-began-crypto-s-regulation-by-enforcement-at-sec",
       "pubDate": "Fri, 02 Oct 2026 17:12:48 +0000"
     },
@@ -480,11 +485,6 @@
       "title": "Bitcoin tops $86,000 ahead of U.S. jobs report",
       "link": "https://www.coindesk.com/markets/2026/10/02/bitcoin-tops-usd86-000-ahead-of-u-s-jobs-report",
       "pubDate": "Fri, 02 Oct 2026 08:11:54 +0000"
-    },
-    {
-      "title": "SEC proposes new crypto custody rules for investment advisers and funds",
-      "link": "https://www.coindesk.com/policy/2026/10/01/u-s-sec-maps-out-crypto-custody-in-new-proposal-that-furthers-its-digital-assets-agenda",
-      "pubDate": "Thu, 01 Oct 2026 20:20:04 +0000"
     }
   ]
 }
