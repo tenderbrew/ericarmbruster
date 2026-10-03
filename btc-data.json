@@ -1,13 +1,13 @@
 {
-  "fetchedAt": "2026-10-03T11:34:42.982Z",
+  "fetchedAt": "2026-10-03T16:12:47.176Z",
   "price": {
-    "usd": 84639,
-    "time": 1791027009
+    "usd": 84833,
+    "time": 1791043807
   },
   "moves": {
-    "d1": 0.15682946168762424,
-    "d7": 0.2633187259137193,
-    "d30": 4.152231419136232
+    "d1": 0.3863976857399809,
+    "d7": 0.4931310326851568,
+    "d30": 4.390957454360089
   },
   "history90d": [
     {
@@ -372,60 +372,85 @@
     },
     {
       "date": "2026-10-03",
-      "close": 84634.48312112599
+      "close": 84828.5906447471
     }
   ],
   "blocks": [
     {
-      "height": 969726,
-      "id": "00000000000000000001dc9032345e379749a05d4c99d04ab37fbfe6f1b72b9b",
-      "timestamp": 1791027213,
-      "txCount": 3811
+      "height": 969742,
+      "id": "000000000000000000016042a2ba861048ce7f1e46420d8929c2e0270389b64a",
+      "timestamp": 1791043896,
+      "txCount": 4396
     },
     {
-      "height": 969725,
-      "id": "000000000000000000015099ba61fc49af5601df3cc4a43c8e32aeb0ab5351e5",
-      "timestamp": 1791025804,
-      "txCount": 6550
+      "height": 969741,
+      "id": "00000000000000000001c6c648ad16e18245423ce98fb9474412b6cc569e0fc6",
+      "timestamp": 1791042261,
+      "txCount": 4216
     },
     {
-      "height": 969724,
-      "id": "00000000000000000001eb12b0ee2bba9aa8756fda534ee1f7e8c37a2eb863e9",
-      "timestamp": 1791025540,
-      "txCount": 6828
+      "height": 969740,
+      "id": "000000000000000000005af574c5e0f3b44daed49b72c1ad667b0bc78020c562",
+      "timestamp": 1791040909,
+      "txCount": 4071
     },
     {
-      "height": 969723,
-      "id": "000000000000000000008322244bfa00b71bd5c36aa183e4cb5a3f2d67bda1de",
-      "timestamp": 1791025459,
-      "txCount": 5481
+      "height": 969739,
+      "id": "000000000000000000012082c2c43d78f342191e91bef91e18b9036c64c57400",
+      "timestamp": 1791039904,
+      "txCount": 4161
     },
     {
-      "height": 969722,
-      "id": "00000000000000000001caf3c90a14205d985f7d0207280d2eea471f74ac0500",
-      "timestamp": 1791025203,
-      "txCount": 5015
+      "height": 969738,
+      "id": "000000000000000000004b5271d50fbf0b7ddc17ea63bcde68493260485fe871",
+      "timestamp": 1791035782,
+      "txCount": 5806
     },
     {
-      "height": 969721,
-      "id": "00000000000000000001c3069190e05449bb8564562e3c89a860846b33f68046",
-      "timestamp": 1791025191,
-      "txCount": 6509
+      "height": 969737,
+      "id": "00000000000000000001bd818225edc83d200214654792100e4659de490de712",
+      "timestamp": 1791035712,
+      "txCount": 4000
     },
     {
-      "height": 969720,
-      "id": "0000000000000000000040a85a41896107e055f7f423465829bcf94d53ddf411",
-      "timestamp": 1791025089,
-      "txCount": 7808
+      "height": 969736,
+      "id": "000000000000000000004664df069a86895f76b45dc8fab3b3255d585f5c1b78",
+      "timestamp": 1791034674,
+      "txCount": 4883
     },
     {
-      "height": 969719,
-      "id": "000000000000000000019b0c10045a25dc784fae5d380c9fcbb72e20dd7a2960",
-      "timestamp": 1791025063,
-      "txCount": 2862
+      "height": 969735,
+      "id": "000000000000000000001360e00202270806b7627a54e35e8a592b90f308b404",
+      "timestamp": 1791034621,
+      "txCount": 3300
     }
   ],
   "news": [
+    {
+      "title": "Payments firm OpenPayd targets year-end Nasdaq listing to fund U.S. expansion and acquisitions",
+      "link": "https://www.coindesk.com/business/2026/10/03/openpayd-targets-year-end-nasdaq-listing-to-fund-u-s-expansion-and-acquisitions",
+      "pubDate": "Sat, 03 Oct 2026 16:00:00 +0000"
+    },
+    {
+      "title": "Crypto job postings triple to over 1,200 in September, but applications fall",
+      "link": "https://www.coindesk.com/business/2026/10/03/crypto-job-postings-triple-to-over-1-200-in-september-but-applications-fall",
+      "pubDate": "Sat, 03 Oct 2026 16:00:00 +0000"
+    },
+    {
+      "title": "Cathie Wood says smart investors need to start watching where AI agents spend money",
+      "link": "https://www.coindesk.com/markets/2026/10/01/cathie-wood-says-smart-investors-need-to-start-watching-where-ai-agents-spend-money",
+      "pubDate": "Sat, 03 Oct 2026 15:00:00 +0000"
+    },
+    {
+      "title": "Crypto's Sisyphean struggle",
+      "link": "https://www.coindesk.com/opinion/2026/10/03/crypto-s-sisyphean-struggle",
+      "pubDate": "Sat, 03 Oct 2026 13:00:00 +0000"
+    },
+    {
+      "title": "BlackRock offers a glimpse of how tokenization may change your investment portfolio",
+      "link": "https://www.coindesk.com/business/2026/10/03/blackrock-offers-a-glimpse-of-how-tokenization-may-change-your-investment-portfolio",
+      "pubDate": "Sat, 03 Oct 2026 13:00:00 +0000"
+    },
     {
       "title": "Bank group sues U.S. regulator over granting crypto trust charters",
       "link": "https://www.coindesk.com/policy/2026/10/02/bank-group-sues-u-s-regulator-over-granting-crypto-trust-charters",
@@ -460,31 +485,6 @@
       "title": "Cboe wants to turn VIX into a never-ending trade",
       "link": "https://www.coindesk.com/daybook-us/2026/10/02/wall-street-s-fear-gauge-vix-could-get-a-crypto-style-makeover",
       "pubDate": "Fri, 02 Oct 2026 11:30:00 +0000"
-    },
-    {
-      "title": "Live updates: Bitcoin reverses big early gains following soft U.S. jobs data",
-      "link": "https://www.coindesk.com/tech/2026/10/02/live-updates-bitcoin-gold-and-tech-futures-edge-higher-as-markets-await-u-s-jobs-report",
-      "pubDate": "Fri, 02 Oct 2026 11:22:40 +0000"
-    },
-    {
-      "title": "Crypto traders are in risk-on mode as bitcoin dominance nears return to 60%",
-      "link": "https://www.coindesk.com/markets/2026/10/02/crypto-traders-are-in-risk-on-mode-as-bitcoin-dominance-nears-return-to-60",
-      "pubDate": "Fri, 02 Oct 2026 10:31:16 +0000"
-    },
-    {
-      "title": "Bitcoin open interest jumps $2.3 billion as traders pay more for bullish positions",
-      "link": "https://www.coindesk.com/markets/2026/10/02/why-rising-perpetual-funding-rates-signal-growing-bullish-leverage-as-bitcoin-crosses-usd86-500",
-      "pubDate": "Fri, 02 Oct 2026 09:14:21 +0000"
-    },
-    {
-      "title": "Tether's USDT is 'coming home' to Bitcoin after more than a decade",
-      "link": "https://www.coindesk.com/tech/2026/09/29/tether-s-usdt-is-coming-home-to-bitcoin-this-month-after-more-than-a-decade",
-      "pubDate": "Fri, 02 Oct 2026 08:28:19 +0000"
-    },
-    {
-      "title": "Bitcoin tops $86,000 ahead of U.S. jobs report",
-      "link": "https://www.coindesk.com/markets/2026/10/02/bitcoin-tops-usd86-000-ahead-of-u-s-jobs-report",
-      "pubDate": "Fri, 02 Oct 2026 08:11:54 +0000"
     }
   ]
 }
