@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-09-29T00:10:01.666Z",
+  "fetchedAt": "2026-10-03T18:10:01.612Z",
   "note": "main services only; databases/caches/workers are filtered as implementation detail",
   "services": [
     {
@@ -121,6 +121,10 @@
     {
       "name": "komodo-periphery-1",
       "project": "komodo"
+    },
+    {
+      "name": "metube",
+      "project": "media"
     },
     {
       "name": "notifiarr",
