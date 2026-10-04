@@ -1,13 +1,13 @@
 {
-  "fetchedAt": "2026-10-04T12:15:55.152Z",
+  "fetchedAt": "2026-10-04T18:37:31.553Z",
   "price": {
-    "usd": 85244,
-    "time": 1791116108
+    "usd": 85318,
+    "time": 1791138908
   },
   "moves": {
-    "d1": 0.5914528381634865,
-    "d7": 0.9416952257457201,
-    "d30": 6.994670962252103
+    "d1": 0.6787759050071784,
+    "d7": 1.0293223367060733,
+    "d30": 7.087552638982508
   },
   "history90d": [
     {
@@ -372,60 +372,75 @@
     },
     {
       "date": "2026-10-04",
-      "close": 85294.78807332224
+      "close": 85310.58947505627
     }
   ],
   "blocks": [
     {
-      "height": 969839,
-      "id": "000000000000000000013a06b2daa5d0cad2091e970269f88f8ecd3dd13ada41",
-      "timestamp": 1791115196,
-      "txCount": 5196
+      "height": 969885,
+      "id": "00000000000000000000502c98b7049afb63f5935170ecf8ed8d0aa4e55ab70a",
+      "timestamp": 1791137030,
+      "txCount": 4792
     },
     {
-      "height": 969838,
-      "id": "0000000000000000000114f311f1cd4dd0246d653bdb8579c08d072115bf2917",
-      "timestamp": 1791114443,
-      "txCount": 5396
+      "height": 969884,
+      "id": "00000000000000000000960222bb26dae4969e0e1f13cb9dbbf51795e1f859e4",
+      "timestamp": 1791136250,
+      "txCount": 6046
     },
     {
-      "height": 969837,
-      "id": "000000000000000000013c844d47fcc8c8b4f36c46ffb09e8cae585b4be0a74a",
-      "timestamp": 1791113708,
-      "txCount": 7295
+      "height": 969883,
+      "id": "00000000000000000000ddd31530af080984611d6a87272c0469a6eb25be296a",
+      "timestamp": 1791136084,
+      "txCount": 7306
     },
     {
-      "height": 969836,
-      "id": "00000000000000000001c38d5420e89240e7680b3b1ccda369e8208372454ee8",
-      "timestamp": 1791113645,
-      "txCount": 945
+      "height": 969882,
+      "id": "000000000000000000009849e6ac32e8aa16ecb321e1cc03394872583547189a",
+      "timestamp": 1791136070,
+      "txCount": 4573
     },
     {
-      "height": 969835,
-      "id": "00000000000000000000cfda1d478b009ec12465c34a66c8b56153243efe767f",
-      "timestamp": 1791113396,
-      "txCount": 5620
+      "height": 969881,
+      "id": "00000000000000000000be4856290f7da29761dd5621fe63eb6df4403e071f58",
+      "timestamp": 1791135974,
+      "txCount": 4065
     },
     {
-      "height": 969834,
-      "id": "000000000000000000007bc1b60051d36e593f2adf187d016d0c37d087114382",
-      "timestamp": 1791112861,
-      "txCount": 6671
+      "height": 969880,
+      "id": "000000000000000000014dee9cbb4ef465cf7824487685b9048be9afb3ed1e71",
+      "timestamp": 1791134380,
+      "txCount": 6572
     },
     {
-      "height": 969833,
-      "id": "00000000000000000001f23c7f7540ec9b10ec34af251f5fa8a98029da3868cc",
-      "timestamp": 1791112591,
-      "txCount": 6279
+      "height": 969879,
+      "id": "00000000000000000000808a75b378f9cae7bacb301382cd6e9b376b3418d5cb",
+      "timestamp": 1791133872,
+      "txCount": 6904
     },
     {
-      "height": 969832,
-      "id": "00000000000000000001a6a02fde2ac838efa4e1c34bfa85f54571c1d8b8aeec",
-      "timestamp": 1791111904,
-      "txCount": 6150
+      "height": 969878,
+      "id": "000000000000000000019295738ce08d18516d9ea690abbb4948c63ea09424fa",
+      "timestamp": 1791133759,
+      "txCount": 5003
     }
   ],
   "news": [
+    {
+      "title": "There's an election next month: State of Crypto",
+      "link": "https://www.coindesk.com/policy/2026/10/04/there-s-an-election-next-month-state-of-crypto",
+      "pubDate": "Sun, 04 Oct 2026 18:30:00 +0000"
+    },
+    {
+      "title": "Crypto poured years into new products. The next challenge is keeping users",
+      "link": "https://www.coindesk.com/business/2026/10/04/crypto-poured-years-into-new-products-the-next-challenge-is-keeping-users",
+      "pubDate": "Sun, 04 Oct 2026 14:00:00 +0000"
+    },
+    {
+      "title": "The Clarity Act stalled. Bankers aren’t hitting the brakes yet on crypto dealmaking",
+      "link": "https://www.coindesk.com/business/2026/10/04/the-clarity-act-stalled-crypto-dealmakers-aren-t-hitting-the-brakes-yet",
+      "pubDate": "Sun, 04 Oct 2026 13:00:00 +0000"
+    },
     {
       "title": "Payments firm OpenPayd targets year-end Nasdaq listing to fund U.S. expansion and acquisitions",
       "link": "https://www.coindesk.com/business/2026/10/03/openpayd-targets-year-end-nasdaq-listing-to-fund-u-s-expansion-and-acquisitions",
@@ -470,21 +485,6 @@
       "title": "Trump’s potential AI czar, Jay Clayton, helped pioneer the SEC’s crypto crackdown",
       "link": "https://www.coindesk.com/news-analysis/2026/10/02/possible-next-crypto-czar-jay-clayton-began-crypto-s-regulation-by-enforcement-at-sec",
       "pubDate": "Fri, 02 Oct 2026 17:12:48 +0000"
-    },
-    {
-      "title": "America at a crossroads: Commissioner Peirce’s parting challenge",
-      "link": "https://www.coindesk.com/opinion/2026/10/01/america-at-a-crossroads-commissioner-peirce-s-parting-challenge",
-      "pubDate": "Fri, 02 Oct 2026 13:22:19 +0000"
-    },
-    {
-      "title": "U.S. added just 29,000 jobs in September, with unemployment rate rising to 4.2%",
-      "link": "https://www.coindesk.com/markets/2026/10/02/u-s-added-just-29-000-jobs-in-september-with-unemployment-rate-rising-to-4-2",
-      "pubDate": "Fri, 02 Oct 2026 12:31:53 +0000"
-    },
-    {
-      "title": "Cboe wants to turn VIX into a never-ending trade",
-      "link": "https://www.coindesk.com/daybook-us/2026/10/02/wall-street-s-fear-gauge-vix-could-get-a-crypto-style-makeover",
-      "pubDate": "Fri, 02 Oct 2026 11:30:00 +0000"
     }
   ]
 }
