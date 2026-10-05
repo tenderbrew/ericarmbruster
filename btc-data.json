@@ -1,13 +1,13 @@
 {
-  "fetchedAt": "2026-10-05T05:30:37.074Z",
+  "fetchedAt": "2026-10-05T14:28:12.067Z",
   "price": {
-    "usd": 85452,
-    "time": 1791177910
+    "usd": 86394,
+    "time": 1791210011
   },
   "moves": {
-    "d1": -1.1998358290061573,
-    "d7": 2.363156786790155,
-    "d30": 7.053597402280887
+    "d1": -0.11068923619291793,
+    "d7": 3.4915808575334717,
+    "d30": 8.2337276362479
   },
   "history90d": [
     {
@@ -372,119 +372,119 @@
     },
     {
       "date": "2026-10-05",
-      "close": 85503.29126430406
+      "close": 86371.88958980238
     }
   ],
   "blocks": [
     {
-      "height": 969960,
-      "id": "00000000000000000000a3c52dca0bfca500f7ceeb0d33404fb0618e32f9ecb3",
-      "timestamp": 1791177311,
-      "txCount": 7408
+      "height": 970036,
+      "id": "000000000000000000008229ed93f26728756f83e65d11aa92ff3b2ee68b57d0",
+      "timestamp": 1791210316,
+      "txCount": 5481
     },
     {
-      "height": 969959,
-      "id": "0000000000000000000167049e56de4b9a561d2ba8cc2accf709d1c0afcf2668",
-      "timestamp": 1791177058,
-      "txCount": 1821
+      "height": 970035,
+      "id": "000000000000000000001eb165aafd14ee6bfec37b93422a6253e63f762632a0",
+      "timestamp": 1791210163,
+      "txCount": 7685
     },
     {
-      "height": 969958,
-      "id": "000000000000000000001a027b8ceb72659e5c8c87f614ab856eb135844431c6",
-      "timestamp": 1791176375,
-      "txCount": 29
+      "height": 970034,
+      "id": "000000000000000000000d568ee058901bedd0fe3274b9627f0295c96f2f6e03",
+      "timestamp": 1791210144,
+      "txCount": 3434
     },
     {
-      "height": 969957,
-      "id": "00000000000000000001e01ea3c097438d769e88ae7d6c6df1f5454c8aae30ce",
-      "timestamp": 1791176054,
-      "txCount": 7230
+      "height": 970033,
+      "id": "00000000000000000001b2ad11eb9b4ee01e8018e60ade7a16411e83da9eb79f",
+      "timestamp": 1791210151,
+      "txCount": 3935
     },
     {
-      "height": 969956,
-      "id": "00000000000000000001db0ad1a4f24c35c5b1dcc01089ba191f049c56644ac1",
-      "timestamp": 1791175947,
+      "height": 970032,
+      "id": "000000000000000000014fa61031fa404cd45572b136cb793fe1cebb4cf70ecb",
+      "timestamp": 1791208799,
+      "txCount": 7171
+    },
+    {
+      "height": 970031,
+      "id": "00000000000000000000f2700e1834bb52e06589022bf3c17b90fcb3a4072ca3",
+      "timestamp": 1791208813,
       "txCount": 6593
     },
     {
-      "height": 969955,
-      "id": "00000000000000000000ecf221716182657633187514f44c6538cabd890f2d51",
-      "timestamp": 1791175930,
-      "txCount": 3126
+      "height": 970030,
+      "id": "00000000000000000001f33ba442db17c0b6fa4f6bb90b51983270e29f106692",
+      "timestamp": 1791208601,
+      "txCount": 5455
     },
     {
-      "height": 969954,
-      "id": "00000000000000000001768ef0b6e816a58d073d89932a298f09a8dec0d29b8b",
-      "timestamp": 1791174571,
-      "txCount": 6436
-    },
-    {
-      "height": 969953,
-      "id": "00000000000000000001cf0105c3620c77df92fff0d23cb5395d57170e4af932",
-      "timestamp": 1791173569,
-      "txCount": 6111
+      "height": 970029,
+      "id": "0000000000000000000200491e37ff370d8f79bd056051ddc6e9123da05ba446",
+      "timestamp": 1791208051,
+      "txCount": 6165
     }
   ],
   "news": [
     {
-      "title": "Joint venture of OKX and NYSE parent ICE files for 24/7 tokenized U.S. stock trading",
-      "link": "https://www.coindesk.com/markets/2026/10/05/okx-and-nyse-s-owner-file-for-round-the-clock-tokenized-trading-in-u-s-stocks",
-      "pubDate": "Mon, 05 Oct 2026 04:45:03 +0000"
+      "title": "Stripe to expand stablecoin cards to over 100 countries by the end of the year",
+      "link": "https://www.coindesk.com/business/2026/10/01/stripe-to-expand-stablecoin-cards-to-over-100-countries-by-the-end-of-the-year",
+      "pubDate": "Mon, 05 Oct 2026 13:46:31 +0000"
     },
     {
-      "title": "Zcash’s 25-second blocks go live on public testnet ahead of schedule",
-      "link": "https://www.coindesk.com/tech/2026/10/05/zcash-s-25-second-blocks-go-live-on-public-testnet-ahead-of-schedule",
-      "pubDate": "Mon, 05 Oct 2026 04:41:35 +0000"
+      "title": "An XRP treasury SPAC surges nearly 300% ahead of Evernorth merger",
+      "link": "https://www.coindesk.com/markets/2026/10/05/xrp-treasury-spac-surges-nearly-300-ahead-of-evernorth-merger",
+      "pubDate": "Mon, 05 Oct 2026 12:28:35 +0000"
     },
     {
-      "title": "Bitcoin zooms toward $87,000, nearly setting an eight-month high, then reverses",
-      "link": "https://www.coindesk.com/markets/2026/10/05/bitcoin-zooms-toward-usd87-000-nearly-setting-an-eight-month-high-then-reverses",
-      "pubDate": "Mon, 05 Oct 2026 04:23:25 +0000"
+      "title": "SEC approves a 3x fix for bitcoin and ether traders who miss the wild swings",
+      "link": "https://www.coindesk.com/daybook-us/2026/10/05/sec-approves-a-3x-fix-for-bitcoin-and-ether-traders-who-miss-the-wild-swings",
+      "pubDate": "Mon, 05 Oct 2026 11:14:35 +0000"
     },
     {
-      "title": "Ether's bitcoin-beating Q3 rally came with a catch. Liquidity thinned.",
-      "link": "https://www.coindesk.com/markets/2026/10/05/ether-s-bitcoin-beating-q3-rally-came-with-a-catch-liquidity-thinned",
-      "pubDate": "Mon, 05 Oct 2026 03:50:29 +0000"
+      "title": "Treasury crackdown exposes crypto's role in $2 million Hamas fundraising network",
+      "link": "https://www.coindesk.com/policy/2026/10/05/treasury-crackdown-exposes-crypto-s-role-in-usd2-million-hamas-fundraising-network",
+      "pubDate": "Mon, 05 Oct 2026 11:08:03 +0000"
     },
     {
-      "title": "There's an election next month: State of Crypto",
-      "link": "https://www.coindesk.com/policy/2026/10/04/there-s-an-election-next-month-state-of-crypto",
-      "pubDate": "Sun, 04 Oct 2026 18:30:00 +0000"
+      "title": "Metaplanet added 1,000 bitcoin net in the third quarter bringing holdings to 44,000 BTC",
+      "link": "https://www.coindesk.com/business/2026/10/05/metaplanet-adds-1-000-bitcoin-after-sale-and-repurchase-launches-income-strategy",
+      "pubDate": "Mon, 05 Oct 2026 10:58:03 +0000"
     },
     {
-      "title": "Crypto poured years into new products. The next challenge is keeping users",
-      "link": "https://www.coindesk.com/business/2026/10/04/crypto-poured-years-into-new-products-the-next-challenge-is-keeping-users",
-      "pubDate": "Sun, 04 Oct 2026 14:00:00 +0000"
+      "title": "Bitcoin resilience tested as U.S. dollar climbs to 18-month high",
+      "link": "https://www.coindesk.com/markets/2026/10/05/u-s-dollar-climbs-to-18-month-high-as-bitcoin-holds-firm-around-usd86-000",
+      "pubDate": "Mon, 05 Oct 2026 10:44:55 +0000"
     },
     {
-      "title": "The Clarity Act stalled. Bankers aren’t hitting the brakes yet on crypto dealmaking",
-      "link": "https://www.coindesk.com/business/2026/10/04/the-clarity-act-stalled-crypto-dealmakers-aren-t-hitting-the-brakes-yet",
-      "pubDate": "Sun, 04 Oct 2026 13:00:00 +0000"
+      "title": "Live updates: Bitcoin above $86,000 as traders price out an October Fed hike",
+      "link": "https://www.coindesk.com/business/2026/10/05/live-updates-bitcoin-above-usd86-000-as-traders-price-out-an-october-fed-hike",
+      "pubDate": "Mon, 05 Oct 2026 10:39:57 +0000"
     },
     {
-      "title": "Payments firm OpenPayd targets year-end Nasdaq listing to fund U.S. expansion and acquisitions",
-      "link": "https://www.coindesk.com/business/2026/10/03/openpayd-targets-year-end-nasdaq-listing-to-fund-u-s-expansion-and-acquisitions",
-      "pubDate": "Sat, 03 Oct 2026 16:00:00 +0000"
+      "title": "Cardano's ADA leads gains in narrow range-bound market",
+      "link": "https://www.coindesk.com/markets/2026/10/05/cardano-s-ada-leads-gains-in-narrow-range-bound-market",
+      "pubDate": "Mon, 05 Oct 2026 10:37:30 +0000"
     },
     {
-      "title": "Crypto job postings triple to over 1,200 in September, but applications fall",
-      "link": "https://www.coindesk.com/business/2026/10/03/crypto-job-postings-triple-to-over-1-200-in-september-but-applications-fall",
-      "pubDate": "Sat, 03 Oct 2026 16:00:00 +0000"
+      "title": "Technicals signal bitcoin shift, Ethereum gears up for Glamsterdam: Crypto Week Ahead",
+      "link": "https://www.coindesk.com/markets/2026/10/05/technicals-signal-bitcoin-shift-ethereum-gears-up-for-glamsterdam-crypto-week-ahead",
+      "pubDate": "Mon, 05 Oct 2026 09:37:13 +0000"
     },
     {
-      "title": "Cathie Wood says smart investors need to start watching where AI agents spend money",
-      "link": "https://www.coindesk.com/markets/2026/10/01/cathie-wood-says-smart-investors-need-to-start-watching-where-ai-agents-spend-money",
-      "pubDate": "Sat, 03 Oct 2026 15:00:00 +0000"
+      "title": "Kraken operator Payward and Singapore Gulf Bank partner for 24/7 institutional crypto settlement",
+      "link": "https://www.coindesk.com/business/2026/10/05/kraken-operator-payward-and-singapore-gulf-bank-platform-for-24-7-institutional-crypto-settlement",
+      "pubDate": "Mon, 05 Oct 2026 09:26:24 +0000"
     },
     {
-      "title": "Crypto's Sisyphean struggle",
-      "link": "https://www.coindesk.com/opinion/2026/10/03/crypto-s-sisyphean-struggle",
-      "pubDate": "Sat, 03 Oct 2026 13:00:00 +0000"
+      "title": "Bitcoin is about to get a major bullish signal it hasn't had in over a year",
+      "link": "https://www.coindesk.com/markets/2026/10/05/bitcoin-is-about-to-get-a-major-bullish-signal-it-hasn-t-had-in-over-a-year",
+      "pubDate": "Mon, 05 Oct 2026 06:57:40 +0000"
     },
     {
-      "title": "BlackRock offers a glimpse of how tokenization may change your investment portfolio",
-      "link": "https://www.coindesk.com/business/2026/10/03/blackrock-offers-a-glimpse-of-how-tokenization-may-change-your-investment-portfolio",
-      "pubDate": "Sat, 03 Oct 2026 13:00:00 +0000"
+      "title": "Ethereum investors are stuck in a two-week staking exit line. Here's why.",
+      "link": "https://www.coindesk.com/tech/2026/10/05/ethereum-has-a-25-day-wait-to-start-staking-with-nearly-1-5-million-eth-in-line",
+      "pubDate": "Mon, 05 Oct 2026 06:40:29 +0000"
     }
   ]
 }
