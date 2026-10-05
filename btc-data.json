@@ -1,19 +1,15 @@
 {
-  "fetchedAt": "2026-10-04T23:56:05.897Z",
+  "fetchedAt": "2026-10-05T05:30:37.074Z",
   "price": {
-    "usd": 86489,
-    "time": 1791157804
+    "usd": 85452,
+    "time": 1791177910
   },
   "moves": {
-    "d1": 2.0606044357364794,
-    "d7": 2.415962160146412,
-    "d30": 8.557342415351489
+    "d1": -1.1998358290061573,
+    "d7": 2.363156786790155,
+    "d30": 7.053597402280887
   },
   "history90d": [
-    {
-      "date": "2026-07-07",
-      "close": 64001.23542391328
-    },
     {
       "date": "2026-07-08",
       "close": 63335.30929080668
@@ -371,61 +367,85 @@
       "close": 84742.78638478836
     },
     {
-      "date": "2026-10-04",
-      "close": 86435.71598350095
+      "date": "2026-10-05",
+      "close": 86489.73482686514
+    },
+    {
+      "date": "2026-10-05",
+      "close": 85503.29126430406
     }
   ],
   "blocks": [
     {
-      "height": 969923,
-      "id": "0000000000000000000196c95082f33de31b145857c6b607574e06e130f8f074",
-      "timestamp": 1791157903,
-      "txCount": 5641
+      "height": 969960,
+      "id": "00000000000000000000a3c52dca0bfca500f7ceeb0d33404fb0618e32f9ecb3",
+      "timestamp": 1791177311,
+      "txCount": 7408
     },
     {
-      "height": 969922,
-      "id": "00000000000000000000e481f5a41c4bcc6907d44c15f3c8cb30c620da3cab1b",
-      "timestamp": 1791157200,
-      "txCount": 6809
+      "height": 969959,
+      "id": "0000000000000000000167049e56de4b9a561d2ba8cc2accf709d1c0afcf2668",
+      "timestamp": 1791177058,
+      "txCount": 1821
     },
     {
-      "height": 969921,
-      "id": "00000000000000000000afb04c1d8ade9de7bd71ec3acd1c8584dfbabadfa4ad",
-      "timestamp": 1791157450,
-      "txCount": 7272
+      "height": 969958,
+      "id": "000000000000000000001a027b8ceb72659e5c8c87f614ab856eb135844431c6",
+      "timestamp": 1791176375,
+      "txCount": 29
     },
     {
-      "height": 969920,
-      "id": "00000000000000000001925f63f5d8846d9e03a722265f2e9eed9592ac1033e2",
-      "timestamp": 1791156880,
-      "txCount": 5158
+      "height": 969957,
+      "id": "00000000000000000001e01ea3c097438d769e88ae7d6c6df1f5454c8aae30ce",
+      "timestamp": 1791176054,
+      "txCount": 7230
     },
     {
-      "height": 969919,
-      "id": "0000000000000000000164f17ae09969ad67e799fba1d66db5ff1788c5c76c20",
-      "timestamp": 1791156531,
-      "txCount": 24
+      "height": 969956,
+      "id": "00000000000000000001db0ad1a4f24c35c5b1dcc01089ba191f049c56644ac1",
+      "timestamp": 1791175947,
+      "txCount": 6593
     },
     {
-      "height": 969918,
-      "id": "000000000000000000014d4fb085c275b4a941e7219b138fce6d3e485c41074c",
-      "timestamp": 1791156403,
-      "txCount": 6828
+      "height": 969955,
+      "id": "00000000000000000000ecf221716182657633187514f44c6538cabd890f2d51",
+      "timestamp": 1791175930,
+      "txCount": 3126
     },
     {
-      "height": 969917,
-      "id": "00000000000000000000fd8382a066c94f502d10572eb6649f62ed1029804e96",
-      "timestamp": 1791156190,
-      "txCount": 5415
+      "height": 969954,
+      "id": "00000000000000000001768ef0b6e816a58d073d89932a298f09a8dec0d29b8b",
+      "timestamp": 1791174571,
+      "txCount": 6436
     },
     {
-      "height": 969916,
-      "id": "00000000000000000000ff60a80554f2d28f985997bd96daa3c9a0e6f2f8cdea",
-      "timestamp": 1791155208,
-      "txCount": 5337
+      "height": 969953,
+      "id": "00000000000000000001cf0105c3620c77df92fff0d23cb5395d57170e4af932",
+      "timestamp": 1791173569,
+      "txCount": 6111
     }
   ],
   "news": [
+    {
+      "title": "Joint venture of OKX and NYSE parent ICE files for 24/7 tokenized U.S. stock trading",
+      "link": "https://www.coindesk.com/markets/2026/10/05/okx-and-nyse-s-owner-file-for-round-the-clock-tokenized-trading-in-u-s-stocks",
+      "pubDate": "Mon, 05 Oct 2026 04:45:03 +0000"
+    },
+    {
+      "title": "Zcash’s 25-second blocks go live on public testnet ahead of schedule",
+      "link": "https://www.coindesk.com/tech/2026/10/05/zcash-s-25-second-blocks-go-live-on-public-testnet-ahead-of-schedule",
+      "pubDate": "Mon, 05 Oct 2026 04:41:35 +0000"
+    },
+    {
+      "title": "Bitcoin zooms toward $87,000, nearly setting an eight-month high, then reverses",
+      "link": "https://www.coindesk.com/markets/2026/10/05/bitcoin-zooms-toward-usd87-000-nearly-setting-an-eight-month-high-then-reverses",
+      "pubDate": "Mon, 05 Oct 2026 04:23:25 +0000"
+    },
+    {
+      "title": "Ether's bitcoin-beating Q3 rally came with a catch. Liquidity thinned.",
+      "link": "https://www.coindesk.com/markets/2026/10/05/ether-s-bitcoin-beating-q3-rally-came-with-a-catch-liquidity-thinned",
+      "pubDate": "Mon, 05 Oct 2026 03:50:29 +0000"
+    },
     {
       "title": "There's an election next month: State of Crypto",
       "link": "https://www.coindesk.com/policy/2026/10/04/there-s-an-election-next-month-state-of-crypto",
@@ -465,26 +485,6 @@
       "title": "BlackRock offers a glimpse of how tokenization may change your investment portfolio",
       "link": "https://www.coindesk.com/business/2026/10/03/blackrock-offers-a-glimpse-of-how-tokenization-may-change-your-investment-portfolio",
       "pubDate": "Sat, 03 Oct 2026 13:00:00 +0000"
-    },
-    {
-      "title": "Bank group sues U.S. regulator over granting crypto trust charters",
-      "link": "https://www.coindesk.com/policy/2026/10/02/bank-group-sues-u-s-regulator-over-granting-crypto-trust-charters",
-      "pubDate": "Fri, 02 Oct 2026 21:23:20 +0000"
-    },
-    {
-      "title": "BNY in talks with Kraken parent Payward over infrastructure partnership",
-      "link": "https://www.coindesk.com/business/2026/09/30/bny-in-talks-with-kraken-parent-payward-over-infrastructure-partnership",
-      "pubDate": "Fri, 02 Oct 2026 17:34:40 +0000"
-    },
-    {
-      "title": "Once a $2 billion Ethereum layer-2, Blast is shutting down after assets plunge 98%",
-      "link": "https://www.coindesk.com/tech/2026/10/02/once-a-usd2-billion-ethereum-layer-2-blast-is-shutting-down-after-assets-plunge-98",
-      "pubDate": "Fri, 02 Oct 2026 17:15:35 +0000"
-    },
-    {
-      "title": "Trump’s potential AI czar, Jay Clayton, helped pioneer the SEC’s crypto crackdown",
-      "link": "https://www.coindesk.com/news-analysis/2026/10/02/possible-next-crypto-czar-jay-clayton-began-crypto-s-regulation-by-enforcement-at-sec",
-      "pubDate": "Fri, 02 Oct 2026 17:12:48 +0000"
     }
   ]
 }
