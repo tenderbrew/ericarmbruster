@@ -1,13 +1,13 @@
 {
-  "fetchedAt": "2026-10-05T14:28:12.067Z",
+  "fetchedAt": "2026-10-05T21:58:50.508Z",
   "price": {
-    "usd": 86394,
-    "time": 1791210011
+    "usd": 85962,
+    "time": 1791237307
   },
   "moves": {
-    "d1": -0.11068923619291793,
-    "d7": 3.4915808575334717,
-    "d30": 8.2337276362479
+    "d1": -0.610170476209182,
+    "d7": 2.9740870161734767,
+    "d30": 7.692521414301234
   },
   "history90d": [
     {
@@ -372,60 +372,75 @@
     },
     {
       "date": "2026-10-05",
-      "close": 86371.88958980238
+      "close": 85971.11696461853
     }
   ],
   "blocks": [
     {
-      "height": 970036,
-      "id": "000000000000000000008229ed93f26728756f83e65d11aa92ff3b2ee68b57d0",
-      "timestamp": 1791210316,
-      "txCount": 5481
+      "height": 970086,
+      "id": "00000000000000000000634c077d16d3ea811af7b74f6bbb393ef28421fd0296",
+      "timestamp": 1791237403,
+      "txCount": 5301
     },
     {
-      "height": 970035,
-      "id": "000000000000000000001eb165aafd14ee6bfec37b93422a6253e63f762632a0",
-      "timestamp": 1791210163,
-      "txCount": 7685
+      "height": 970085,
+      "id": "00000000000000000001261c1a5a9ea0922fe4a6cccb149c4f47da21cdff83f5",
+      "timestamp": 1791237255,
+      "txCount": 4564
     },
     {
-      "height": 970034,
-      "id": "000000000000000000000d568ee058901bedd0fe3274b9627f0295c96f2f6e03",
-      "timestamp": 1791210144,
-      "txCount": 3434
+      "height": 970084,
+      "id": "0000000000000000000083c29c396248b24dccd7e9d866e0a395fd84793dfa50",
+      "timestamp": 1791235531,
+      "txCount": 6295
     },
     {
-      "height": 970033,
-      "id": "00000000000000000001b2ad11eb9b4ee01e8018e60ade7a16411e83da9eb79f",
-      "timestamp": 1791210151,
-      "txCount": 3935
+      "height": 970083,
+      "id": "00000000000000000000204ae03c0fd6bbfbe8f7e414017da2731e1dd2dadd05",
+      "timestamp": 1791235264,
+      "txCount": 6292
     },
     {
-      "height": 970032,
-      "id": "000000000000000000014fa61031fa404cd45572b136cb793fe1cebb4cf70ecb",
-      "timestamp": 1791208799,
-      "txCount": 7171
+      "height": 970082,
+      "id": "00000000000000000001222bd2eb22d9bd1141aeacd4a53bb2317ba999d7e1d3",
+      "timestamp": 1791235138,
+      "txCount": 6082
     },
     {
-      "height": 970031,
-      "id": "00000000000000000000f2700e1834bb52e06589022bf3c17b90fcb3a4072ca3",
-      "timestamp": 1791208813,
-      "txCount": 6593
+      "height": 970081,
+      "id": "0000000000000000000184d58afa0034fa59cbd166b4db512cfa31dbef776926",
+      "timestamp": 1791234977,
+      "txCount": 5071
     },
     {
-      "height": 970030,
-      "id": "00000000000000000001f33ba442db17c0b6fa4f6bb90b51983270e29f106692",
-      "timestamp": 1791208601,
-      "txCount": 5455
+      "height": 970080,
+      "id": "00000000000000000001631dec2adeb394f0ef9848d8c561674ee6e070eff444",
+      "timestamp": 1791234217,
+      "txCount": 5087
     },
     {
-      "height": 970029,
-      "id": "0000000000000000000200491e37ff370d8f79bd056051ddc6e9123da05ba446",
-      "timestamp": 1791208051,
-      "txCount": 6165
+      "height": 970079,
+      "id": "0000000000000000000039802472c0547b3f25a9f459b96c697f1d323322af8d",
+      "timestamp": 1791234006,
+      "txCount": 1314
     }
   ],
   "news": [
+    {
+      "title": "Crypto's campaign arm, Fairshake, sets lists of U.S. House favorites it'll spend on",
+      "link": "https://www.coindesk.com/policy/2026/10/05/crypto-s-campaign-arm-fairshake-sets-lists-of-u-s-house-favorites-it-ll-spend-on",
+      "pubDate": "Mon, 05 Oct 2026 19:21:06 +0000"
+    },
+    {
+      "title": "More than 60 U.S. stocks including Nvidia and Tesla are headed onchain. Here’s how it works",
+      "link": "https://www.coindesk.com/markets/2026/10/05/more-than-60-u-s-stocks-including-nvidia-and-tesla-are-headed-onchain-here-s-how-it-works",
+      "pubDate": "Mon, 05 Oct 2026 17:18:14 +0000"
+    },
+    {
+      "title": "U.S. CFTC joins SEC in proposing crypto regulations, though spot-market gap lingers",
+      "link": "https://www.coindesk.com/policy/2026/10/05/u-s-cftc-joins-sec-in-proposing-crypto-regulations-though-spot-market-gap-lingers",
+      "pubDate": "Mon, 05 Oct 2026 15:54:23 +0000"
+    },
     {
       "title": "Stripe to expand stablecoin cards to over 100 countries by the end of the year",
       "link": "https://www.coindesk.com/business/2026/10/01/stripe-to-expand-stablecoin-cards-to-over-100-countries-by-the-end-of-the-year",
@@ -457,7 +472,7 @@
       "pubDate": "Mon, 05 Oct 2026 10:44:55 +0000"
     },
     {
-      "title": "Live updates: Bitcoin above $86,000 as traders price out an October Fed hike",
+      "title": "Live updates: Bitcoin under pressure as rates continue to rise",
       "link": "https://www.coindesk.com/business/2026/10/05/live-updates-bitcoin-above-usd86-000-as-traders-price-out-an-october-fed-hike",
       "pubDate": "Mon, 05 Oct 2026 10:39:57 +0000"
     },
@@ -470,21 +485,6 @@
       "title": "Technicals signal bitcoin shift, Ethereum gears up for Glamsterdam: Crypto Week Ahead",
       "link": "https://www.coindesk.com/markets/2026/10/05/technicals-signal-bitcoin-shift-ethereum-gears-up-for-glamsterdam-crypto-week-ahead",
       "pubDate": "Mon, 05 Oct 2026 09:37:13 +0000"
-    },
-    {
-      "title": "Kraken operator Payward and Singapore Gulf Bank partner for 24/7 institutional crypto settlement",
-      "link": "https://www.coindesk.com/business/2026/10/05/kraken-operator-payward-and-singapore-gulf-bank-platform-for-24-7-institutional-crypto-settlement",
-      "pubDate": "Mon, 05 Oct 2026 09:26:24 +0000"
-    },
-    {
-      "title": "Bitcoin is about to get a major bullish signal it hasn't had in over a year",
-      "link": "https://www.coindesk.com/markets/2026/10/05/bitcoin-is-about-to-get-a-major-bullish-signal-it-hasn-t-had-in-over-a-year",
-      "pubDate": "Mon, 05 Oct 2026 06:57:40 +0000"
-    },
-    {
-      "title": "Ethereum investors are stuck in a two-week staking exit line. Here's why.",
-      "link": "https://www.coindesk.com/tech/2026/10/05/ethereum-has-a-25-day-wait-to-start-staking-with-nearly-1-5-million-eth-in-line",
-      "pubDate": "Mon, 05 Oct 2026 06:40:29 +0000"
     }
   ]
 }
