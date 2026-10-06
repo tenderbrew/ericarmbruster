@@ -1,19 +1,15 @@
 {
-  "fetchedAt": "2026-10-05T21:58:50.508Z",
+  "fetchedAt": "2026-10-06T06:13:47.774Z",
   "price": {
-    "usd": 85962,
-    "time": 1791237307
+    "usd": 85326,
+    "time": 1791267010
   },
   "moves": {
-    "d1": -0.610170476209182,
-    "d7": 2.9740870161734767,
-    "d30": 7.692521414301234
+    "d1": -0.5186752030049036,
+    "d7": 2.015658000240683,
+    "d30": 6.220207543045397
   },
   "history90d": [
-    {
-      "date": "2026-07-08",
-      "close": 63335.30929080668
-    },
     {
       "date": "2026-07-09",
       "close": 62247.1304822092
@@ -371,61 +367,85 @@
       "close": 86489.73482686514
     },
     {
-      "date": "2026-10-05",
-      "close": 85971.11696461853
+      "date": "2026-10-06",
+      "close": 85770.87224573967
+    },
+    {
+      "date": "2026-10-06",
+      "close": 85244.0713904864
     }
   ],
   "blocks": [
     {
-      "height": 970086,
-      "id": "00000000000000000000634c077d16d3ea811af7b74f6bbb393ef28421fd0296",
-      "timestamp": 1791237403,
-      "txCount": 5301
+      "height": 970140,
+      "id": "00000000000000000001305c0d6e3a0dd24735c340ca2a8358fe8444700a7d2a",
+      "timestamp": 1791265947,
+      "txCount": 5882
     },
     {
-      "height": 970085,
-      "id": "00000000000000000001261c1a5a9ea0922fe4a6cccb149c4f47da21cdff83f5",
-      "timestamp": 1791237255,
-      "txCount": 4564
+      "height": 970139,
+      "id": "00000000000000000001a04edf388eb2b8eab8b4c71cc14059414030033ba7ef",
+      "timestamp": 1791265918,
+      "txCount": 5535
     },
     {
-      "height": 970084,
-      "id": "0000000000000000000083c29c396248b24dccd7e9d866e0a395fd84793dfa50",
-      "timestamp": 1791235531,
-      "txCount": 6295
+      "height": 970138,
+      "id": "000000000000000000016960a77c44eeb40a72c4b6ffcb3e92bdcc5fda9a99d4",
+      "timestamp": 1791265754,
+      "txCount": 7216
     },
     {
-      "height": 970083,
-      "id": "00000000000000000000204ae03c0fd6bbfbe8f7e414017da2731e1dd2dadd05",
-      "timestamp": 1791235264,
-      "txCount": 6292
+      "height": 970137,
+      "id": "000000000000000000012d49e1b4b6aa786dec9751aab6766476136bd5da5b04",
+      "timestamp": 1791265828,
+      "txCount": 7692
     },
     {
-      "height": 970082,
-      "id": "00000000000000000001222bd2eb22d9bd1141aeacd4a53bb2317ba999d7e1d3",
-      "timestamp": 1791235138,
-      "txCount": 6082
+      "height": 970136,
+      "id": "0000000000000000000135d353034e10189c71d2ea44f338bf3b49d3e87274a5",
+      "timestamp": 1791265682,
+      "txCount": 4208
     },
     {
-      "height": 970081,
-      "id": "0000000000000000000184d58afa0034fa59cbd166b4db512cfa31dbef776926",
-      "timestamp": 1791234977,
-      "txCount": 5071
+      "height": 970135,
+      "id": "000000000000000000013e5512e85748d14d5adb90e9c6acec30f4ef2d38bf31",
+      "timestamp": 1791264520,
+      "txCount": 4063
     },
     {
-      "height": 970080,
-      "id": "00000000000000000001631dec2adeb394f0ef9848d8c561674ee6e070eff444",
-      "timestamp": 1791234217,
-      "txCount": 5087
+      "height": 970134,
+      "id": "000000000000000000008beaabb2cb2095dea383993e19b1bee56fe33da92877",
+      "timestamp": 1791264112,
+      "txCount": 3252
     },
     {
-      "height": 970079,
-      "id": "0000000000000000000039802472c0547b3f25a9f459b96c697f1d323322af8d",
-      "timestamp": 1791234006,
-      "txCount": 1314
+      "height": 970133,
+      "id": "000000000000000000000038a4e9b64bdd62533567b14ceb6f3176bb12fcceee",
+      "timestamp": 1791262450,
+      "txCount": 3351
     }
   ],
   "news": [
+    {
+      "title": "U.S. scraps proposed $10,000 reporting rule for for crypto sent to private wallets",
+      "link": "https://www.coindesk.com/policy/2026/10/06/u-s-scraps-proposed-usd10-000-reporting-rule-for-for-crypto-sent-to-private-wallets",
+      "pubDate": "Tue, 06 Oct 2026 04:55:36 +0000"
+    },
+    {
+      "title": "Ethereum’s Glamsterdam test gets last-minute fix before major capacity jump",
+      "link": "https://www.coindesk.com/tech/2026/10/06/ethereum-s-glamsterdam-test-gets-last-minute-fix-before-major-capacity-jump",
+      "pubDate": "Tue, 06 Oct 2026 04:49:05 +0000"
+    },
+    {
+      "title": "Bitcoin keeps getting rejected at $87,000 as stocks hover near records",
+      "link": "https://www.coindesk.com/markets/2026/10/06/bitcoin-keeps-getting-rejected-at-usd87-000-as-stocks-hover-near-records",
+      "pubDate": "Tue, 06 Oct 2026 04:41:10 +0000"
+    },
+    {
+      "title": "Solana Foundation unveils a program to settle institutional trades in seconds. JPMorgan gave input",
+      "link": "https://www.coindesk.com/markets/2026/10/06/solana-foundation-unveils-a-program-to-settle-institutional-trades-in-seconds-with-jpmorgan-s-inputs",
+      "pubDate": "Tue, 06 Oct 2026 04:23:45 +0000"
+    },
     {
       "title": "Crypto's campaign arm, Fairshake, sets lists of U.S. House favorites it'll spend on",
       "link": "https://www.coindesk.com/policy/2026/10/05/crypto-s-campaign-arm-fairshake-sets-lists-of-u-s-house-favorites-it-ll-spend-on",
@@ -465,26 +485,6 @@
       "title": "Metaplanet added 1,000 bitcoin net in the third quarter bringing holdings to 44,000 BTC",
       "link": "https://www.coindesk.com/business/2026/10/05/metaplanet-adds-1-000-bitcoin-after-sale-and-repurchase-launches-income-strategy",
       "pubDate": "Mon, 05 Oct 2026 10:58:03 +0000"
-    },
-    {
-      "title": "Bitcoin resilience tested as U.S. dollar climbs to 18-month high",
-      "link": "https://www.coindesk.com/markets/2026/10/05/u-s-dollar-climbs-to-18-month-high-as-bitcoin-holds-firm-around-usd86-000",
-      "pubDate": "Mon, 05 Oct 2026 10:44:55 +0000"
-    },
-    {
-      "title": "Live updates: Bitcoin under pressure as rates continue to rise",
-      "link": "https://www.coindesk.com/business/2026/10/05/live-updates-bitcoin-above-usd86-000-as-traders-price-out-an-october-fed-hike",
-      "pubDate": "Mon, 05 Oct 2026 10:39:57 +0000"
-    },
-    {
-      "title": "Cardano's ADA leads gains in narrow range-bound market",
-      "link": "https://www.coindesk.com/markets/2026/10/05/cardano-s-ada-leads-gains-in-narrow-range-bound-market",
-      "pubDate": "Mon, 05 Oct 2026 10:37:30 +0000"
-    },
-    {
-      "title": "Technicals signal bitcoin shift, Ethereum gears up for Glamsterdam: Crypto Week Ahead",
-      "link": "https://www.coindesk.com/markets/2026/10/05/technicals-signal-bitcoin-shift-ethereum-gears-up-for-glamsterdam-crypto-week-ahead",
-      "pubDate": "Mon, 05 Oct 2026 09:37:13 +0000"
     }
   ]
 }
