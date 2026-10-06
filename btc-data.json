@@ -1,13 +1,13 @@
 {
-  "fetchedAt": "2026-10-06T06:13:47.774Z",
+  "fetchedAt": "2026-10-06T13:17:18.262Z",
   "price": {
-    "usd": 85326,
-    "time": 1791267010
+    "usd": 86091,
+    "time": 1791292210
   },
   "moves": {
-    "d1": -0.5186752030049036,
-    "d7": 2.015658000240683,
-    "d30": 6.220207543045397
+    "d1": 0.37323597846030676,
+    "d7": 2.9302910355427425,
+    "d30": 7.1725369475695855
   },
   "history90d": [
     {
@@ -372,60 +372,100 @@
     },
     {
       "date": "2026-10-06",
-      "close": 85244.0713904864
+      "close": 86084.49065582888
     }
   ],
   "blocks": [
     {
-      "height": 970140,
-      "id": "00000000000000000001305c0d6e3a0dd24735c340ca2a8358fe8444700a7d2a",
-      "timestamp": 1791265947,
-      "txCount": 5882
+      "height": 970178,
+      "id": "000000000000000000001dc1c856e0a16fdbaaae78483f3fd44f91f3032b80cd",
+      "timestamp": 1791292409,
+      "txCount": 3533
     },
     {
-      "height": 970139,
-      "id": "00000000000000000001a04edf388eb2b8eab8b4c71cc14059414030033ba7ef",
-      "timestamp": 1791265918,
-      "txCount": 5535
+      "height": 970177,
+      "id": "000000000000000000009dc58db42e2633b3c81699fecf483bf8890a618262eb",
+      "timestamp": 1791292196,
+      "txCount": 4150
     },
     {
-      "height": 970138,
-      "id": "000000000000000000016960a77c44eeb40a72c4b6ffcb3e92bdcc5fda9a99d4",
-      "timestamp": 1791265754,
-      "txCount": 7216
+      "height": 970176,
+      "id": "00000000000000000001cc401fa4795eaee12d5a7355e577fec48b784bfae0ba",
+      "timestamp": 1791291092,
+      "txCount": 4145
     },
     {
-      "height": 970137,
-      "id": "000000000000000000012d49e1b4b6aa786dec9751aab6766476136bd5da5b04",
-      "timestamp": 1791265828,
-      "txCount": 7692
+      "height": 970175,
+      "id": "0000000000000000000019f6c6615990d4fcbe234ab6eaede2ad14e9c8daee4d",
+      "timestamp": 1791291061,
+      "txCount": 5863
     },
     {
-      "height": 970136,
-      "id": "0000000000000000000135d353034e10189c71d2ea44f338bf3b49d3e87274a5",
-      "timestamp": 1791265682,
-      "txCount": 4208
+      "height": 970174,
+      "id": "000000000000000000000b056858a1f27b8b27df4ae9e1ce056c89c64a23127f",
+      "timestamp": 1791290901,
+      "txCount": 6660
     },
     {
-      "height": 970135,
-      "id": "000000000000000000013e5512e85748d14d5adb90e9c6acec30f4ef2d38bf31",
-      "timestamp": 1791264520,
-      "txCount": 4063
+      "height": 970173,
+      "id": "00000000000000000000a9f59f843733ae438c348b63fa6d445fe985ea3655c3",
+      "timestamp": 1791290840,
+      "txCount": 3387
     },
     {
-      "height": 970134,
-      "id": "000000000000000000008beaabb2cb2095dea383993e19b1bee56fe33da92877",
-      "timestamp": 1791264112,
-      "txCount": 3252
+      "height": 970172,
+      "id": "000000000000000000019e43f6b90671f4be40248bd3ffbc881922136aaf67bc",
+      "timestamp": 1791290404,
+      "txCount": 4439
     },
     {
-      "height": 970133,
-      "id": "000000000000000000000038a4e9b64bdd62533567b14ceb6f3176bb12fcceee",
-      "timestamp": 1791262450,
-      "txCount": 3351
+      "height": 970171,
+      "id": "00000000000000000001452272be0c5ec331c4af1e8ad7bab4129d036e5d947e",
+      "timestamp": 1791288804,
+      "txCount": 6482
     }
   ],
   "news": [
+    {
+      "title": "Arbitrum joins Paxos-led stablecoin group Global Dollar to capture digital dollar growth",
+      "link": "https://www.coindesk.com/business/2026/10/05/arbitrum-joins-paxos-led-stablecoin-group-global-dollar-to-capture-digital-dollar-growth",
+      "pubDate": "Tue, 06 Oct 2026 13:02:33 +0000"
+    },
+    {
+      "title": "Self-styled 'Godfather' gets 6 years in prison for $37 million Meta fraud scheme",
+      "link": "https://www.coindesk.com/policy/2026/10/06/self-styled-crypto-godfather-gets-more-than-6-years-in-usd37-million-meta-fraud-case",
+      "pubDate": "Tue, 06 Oct 2026 12:31:51 +0000"
+    },
+    {
+      "title": "The VIX of bonds is rising but bitcoin and stocks aren't hearing it yet",
+      "link": "https://www.coindesk.com/daybook-us/2026/10/06/the-vix-of-bonds-is-rising-but-bitcoin-and-stocks-aren-t-hearing-it-yet",
+      "pubDate": "Tue, 06 Oct 2026 11:30:00 +0000"
+    },
+    {
+      "title": "Live updates: Bitcoin rises above $86,000 as oil prices, bond yields retreat",
+      "link": "https://www.coindesk.com/markets/2026/10/06/live-updates-a-drop-below-usd84-000-could-put-usd80-000-in-play-for-bitcoin",
+      "pubDate": "Tue, 06 Oct 2026 10:35:49 +0000"
+    },
+    {
+      "title": "Smaller altcoins shine as bitcoin stills trades around $85,000",
+      "link": "https://www.coindesk.com/markets/2026/10/06/smaller-altcoins-shine-as-bitcoin-stills-trades-around-usd85-000",
+      "pubDate": "Tue, 06 Oct 2026 10:30:00 +0000"
+    },
+    {
+      "title": "U.S.- China AI race heats up as Chinese rivals secure billions ahead of IPOs",
+      "link": "https://www.coindesk.com/markets/2026/10/06/u-s-china-ai-race-heats-up-as-chinese-rivals-secure-billions-ahead-of-ipos",
+      "pubDate": "Tue, 06 Oct 2026 09:25:36 +0000"
+    },
+    {
+      "title": "OKX Money lets users save, earn 10% yield and spend dollar stablecoins in one app",
+      "link": "https://www.coindesk.com/business/2026/10/06/okx-money-lets-users-save-earn-10-yield-and-spend-dollar-stablecoins-in-one-app",
+      "pubDate": "Tue, 06 Oct 2026 09:02:01 +0000"
+    },
+    {
+      "title": "Why bitcoin is down 'just' 32% a year after its record high of $126,000",
+      "link": "https://www.coindesk.com/markets/2026/10/06/from-retail-leverage-to-etf-flows-a-year-after-its-record-high-bitcoin-is-down-just-32",
+      "pubDate": "Tue, 06 Oct 2026 08:27:43 +0000"
+    },
     {
       "title": "U.S. scraps proposed $10,000 reporting rule for for crypto sent to private wallets",
       "link": "https://www.coindesk.com/policy/2026/10/06/u-s-scraps-proposed-usd10-000-reporting-rule-for-for-crypto-sent-to-private-wallets",
@@ -445,46 +485,6 @@
       "title": "Solana Foundation unveils a program to settle institutional trades in seconds. JPMorgan gave input",
       "link": "https://www.coindesk.com/markets/2026/10/06/solana-foundation-unveils-a-program-to-settle-institutional-trades-in-seconds-with-jpmorgan-s-inputs",
       "pubDate": "Tue, 06 Oct 2026 04:23:45 +0000"
-    },
-    {
-      "title": "Crypto's campaign arm, Fairshake, sets lists of U.S. House favorites it'll spend on",
-      "link": "https://www.coindesk.com/policy/2026/10/05/crypto-s-campaign-arm-fairshake-sets-lists-of-u-s-house-favorites-it-ll-spend-on",
-      "pubDate": "Mon, 05 Oct 2026 19:21:06 +0000"
-    },
-    {
-      "title": "More than 60 U.S. stocks including Nvidia and Tesla are headed onchain. Here’s how it works",
-      "link": "https://www.coindesk.com/markets/2026/10/05/more-than-60-u-s-stocks-including-nvidia-and-tesla-are-headed-onchain-here-s-how-it-works",
-      "pubDate": "Mon, 05 Oct 2026 17:18:14 +0000"
-    },
-    {
-      "title": "U.S. CFTC joins SEC in proposing crypto regulations, though spot-market gap lingers",
-      "link": "https://www.coindesk.com/policy/2026/10/05/u-s-cftc-joins-sec-in-proposing-crypto-regulations-though-spot-market-gap-lingers",
-      "pubDate": "Mon, 05 Oct 2026 15:54:23 +0000"
-    },
-    {
-      "title": "Stripe to expand stablecoin cards to over 100 countries by the end of the year",
-      "link": "https://www.coindesk.com/business/2026/10/01/stripe-to-expand-stablecoin-cards-to-over-100-countries-by-the-end-of-the-year",
-      "pubDate": "Mon, 05 Oct 2026 13:46:31 +0000"
-    },
-    {
-      "title": "An XRP treasury SPAC surges nearly 300% ahead of Evernorth merger",
-      "link": "https://www.coindesk.com/markets/2026/10/05/xrp-treasury-spac-surges-nearly-300-ahead-of-evernorth-merger",
-      "pubDate": "Mon, 05 Oct 2026 12:28:35 +0000"
-    },
-    {
-      "title": "SEC approves a 3x fix for bitcoin and ether traders who miss the wild swings",
-      "link": "https://www.coindesk.com/daybook-us/2026/10/05/sec-approves-a-3x-fix-for-bitcoin-and-ether-traders-who-miss-the-wild-swings",
-      "pubDate": "Mon, 05 Oct 2026 11:14:35 +0000"
-    },
-    {
-      "title": "Treasury crackdown exposes crypto's role in $2 million Hamas fundraising network",
-      "link": "https://www.coindesk.com/policy/2026/10/05/treasury-crackdown-exposes-crypto-s-role-in-usd2-million-hamas-fundraising-network",
-      "pubDate": "Mon, 05 Oct 2026 11:08:03 +0000"
-    },
-    {
-      "title": "Metaplanet added 1,000 bitcoin net in the third quarter bringing holdings to 44,000 BTC",
-      "link": "https://www.coindesk.com/business/2026/10/05/metaplanet-adds-1-000-bitcoin-after-sale-and-repurchase-launches-income-strategy",
-      "pubDate": "Mon, 05 Oct 2026 10:58:03 +0000"
     }
   ]
 }
