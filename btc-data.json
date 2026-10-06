@@ -1,13 +1,13 @@
 {
-  "fetchedAt": "2026-10-06T13:17:18.262Z",
+  "fetchedAt": "2026-10-06T20:13:46.653Z",
   "price": {
-    "usd": 86091,
-    "time": 1791292210
+    "usd": 85602,
+    "time": 1791317409
   },
   "moves": {
-    "d1": 0.37323597846030676,
-    "d7": 2.9302910355427425,
-    "d30": 7.1725369475695855
+    "d1": -0.19688763949587962,
+    "d7": 2.3456432521927972,
+    "d30": 6.563793053697253
   },
   "history90d": [
     {
@@ -372,60 +372,75 @@
     },
     {
       "date": "2026-10-06",
-      "close": 86084.49065582888
+      "close": 85572.77395712114
     }
   ],
   "blocks": [
     {
-      "height": 970178,
-      "id": "000000000000000000001dc1c856e0a16fdbaaae78483f3fd44f91f3032b80cd",
-      "timestamp": 1791292409,
-      "txCount": 3533
+      "height": 970225,
+      "id": "00000000000000000000cd935ff3bc7c847b20966487f37f90d9fb11327384df",
+      "timestamp": 1791317532,
+      "txCount": 6571
     },
     {
-      "height": 970177,
-      "id": "000000000000000000009dc58db42e2633b3c81699fecf483bf8890a618262eb",
-      "timestamp": 1791292196,
-      "txCount": 4150
+      "height": 970224,
+      "id": "000000000000000000016b247760df4075fd31ee6264867ae3eb20c732f87d56",
+      "timestamp": 1791317382,
+      "txCount": 6868
     },
     {
-      "height": 970176,
-      "id": "00000000000000000001cc401fa4795eaee12d5a7355e577fec48b784bfae0ba",
-      "timestamp": 1791291092,
-      "txCount": 4145
+      "height": 970223,
+      "id": "00000000000000000001685c1bf1eb5e76ceefe1fe2c74035cb8cfbbe2493a76",
+      "timestamp": 1791317144,
+      "txCount": 5882
     },
     {
-      "height": 970175,
-      "id": "0000000000000000000019f6c6615990d4fcbe234ab6eaede2ad14e9c8daee4d",
-      "timestamp": 1791291061,
-      "txCount": 5863
+      "height": 970222,
+      "id": "0000000000000000000009c12a5a73837b73e14c6af4706d3ba315a3f8d37013",
+      "timestamp": 1791316727,
+      "txCount": 5321
     },
     {
-      "height": 970174,
-      "id": "000000000000000000000b056858a1f27b8b27df4ae9e1ce056c89c64a23127f",
-      "timestamp": 1791290901,
-      "txCount": 6660
+      "height": 970221,
+      "id": "00000000000000000000f30c5c9b071b708cc6e59b3c53f1af6cf529fbed1014",
+      "timestamp": 1791316187,
+      "txCount": 5515
     },
     {
-      "height": 970173,
-      "id": "00000000000000000000a9f59f843733ae438c348b63fa6d445fe985ea3655c3",
-      "timestamp": 1791290840,
-      "txCount": 3387
+      "height": 970220,
+      "id": "00000000000000000001c67cca2e4c81a66ada1fdb5fab66148753fe3c3fef97",
+      "timestamp": 1791315289,
+      "txCount": 4594
     },
     {
-      "height": 970172,
-      "id": "000000000000000000019e43f6b90671f4be40248bd3ffbc881922136aaf67bc",
-      "timestamp": 1791290404,
-      "txCount": 4439
+      "height": 970219,
+      "id": "00000000000000000001030ebf7c53cf910fbe25c3fc7810a52d1b4b551585ed",
+      "timestamp": 1791314699,
+      "txCount": 5613
     },
     {
-      "height": 970171,
-      "id": "00000000000000000001452272be0c5ec331c4af1e8ad7bab4129d036e5d947e",
-      "timestamp": 1791288804,
-      "txCount": 6482
+      "height": 970218,
+      "id": "00000000000000000001972039834868a3ee5da687cd6a56a4f76c416648560b",
+      "timestamp": 1791314354,
+      "txCount": 6181
     }
   ],
   "news": [
+    {
+      "title": "Peter Thiel-backed Founders Fund leads a $5 million token buy in crypto collateral protocol Anvil",
+      "link": "https://www.coindesk.com/business/2026/10/06/peter-thiel-backed-founders-fund-leads-a-usd5-million-token-buy-in-crypto-collateral-protocol-anvil",
+      "pubDate": "Tue, 06 Oct 2026 17:00:00 +0000"
+    },
+    {
+      "title": "Crypto is expanding the boundaries of what can be priced",
+      "link": "https://www.coindesk.com/opinion/2026/10/06/crypto-is-expanding-the-boundaries-of-what-can-be-priced",
+      "pubDate": "Tue, 06 Oct 2026 16:50:26 +0000"
+    },
+    {
+      "title": "OKX draws investment from StanChart, Circle, Ripple as it pushes beyond crypto exchange roots",
+      "link": "https://www.coindesk.com/business/2026/10/06/okx-draws-investment-from-stanchart-circle-ripple-as-it-pushes-beyond-crypto-exchange-roots",
+      "pubDate": "Tue, 06 Oct 2026 15:20:30 +0000"
+    },
     {
       "title": "Arbitrum joins Paxos-led stablecoin group Global Dollar to capture digital dollar growth",
       "link": "https://www.coindesk.com/business/2026/10/05/arbitrum-joins-paxos-led-stablecoin-group-global-dollar-to-capture-digital-dollar-growth",
@@ -442,7 +457,7 @@
       "pubDate": "Tue, 06 Oct 2026 11:30:00 +0000"
     },
     {
-      "title": "Live updates: Bitcoin rises above $86,000 as oil prices, bond yields retreat",
+      "title": "Live updates: Bitcoin remains locked in range as stocks notch another new record high",
       "link": "https://www.coindesk.com/markets/2026/10/06/live-updates-a-drop-below-usd84-000-could-put-usd80-000-in-play-for-bitcoin",
       "pubDate": "Tue, 06 Oct 2026 10:35:49 +0000"
     },
@@ -457,7 +472,7 @@
       "pubDate": "Tue, 06 Oct 2026 09:25:36 +0000"
     },
     {
-      "title": "OKX Money lets users save, earn 10% yield and spend dollar stablecoins in one app",
+      "title": "OKX looks to abstract blockchain mechanics to bring stablecoin balances to everyday consumers",
       "link": "https://www.coindesk.com/business/2026/10/06/okx-money-lets-users-save-earn-10-yield-and-spend-dollar-stablecoins-in-one-app",
       "pubDate": "Tue, 06 Oct 2026 09:02:01 +0000"
     },
@@ -470,21 +485,6 @@
       "title": "U.S. scraps proposed $10,000 reporting rule for for crypto sent to private wallets",
       "link": "https://www.coindesk.com/policy/2026/10/06/u-s-scraps-proposed-usd10-000-reporting-rule-for-for-crypto-sent-to-private-wallets",
       "pubDate": "Tue, 06 Oct 2026 04:55:36 +0000"
-    },
-    {
-      "title": "Ethereum’s Glamsterdam test gets last-minute fix before major capacity jump",
-      "link": "https://www.coindesk.com/tech/2026/10/06/ethereum-s-glamsterdam-test-gets-last-minute-fix-before-major-capacity-jump",
-      "pubDate": "Tue, 06 Oct 2026 04:49:05 +0000"
-    },
-    {
-      "title": "Bitcoin keeps getting rejected at $87,000 as stocks hover near records",
-      "link": "https://www.coindesk.com/markets/2026/10/06/bitcoin-keeps-getting-rejected-at-usd87-000-as-stocks-hover-near-records",
-      "pubDate": "Tue, 06 Oct 2026 04:41:10 +0000"
-    },
-    {
-      "title": "Solana Foundation unveils a program to settle institutional trades in seconds. JPMorgan gave input",
-      "link": "https://www.coindesk.com/markets/2026/10/06/solana-foundation-unveils-a-program-to-settle-institutional-trades-in-seconds-with-jpmorgan-s-inputs",
-      "pubDate": "Tue, 06 Oct 2026 04:23:45 +0000"
     }
   ]
 }
