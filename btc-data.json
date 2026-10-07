@@ -1,13 +1,13 @@
 {
-  "fetchedAt": "2026-10-07T00:38:39.481Z",
+  "fetchedAt": "2026-10-07T10:10:14.561Z",
   "price": {
-    "usd": 85457,
-    "time": 1791333307
+    "usd": 83748,
+    "time": 1791367507
   },
   "moves": {
-    "d1": -0.09713239741573343,
-    "d7": 2.2504814428352393,
-    "d30": 8.045589955301867
+    "d1": -2.0950260835130297,
+    "d7": 0.20563932591319833,
+    "d30": 5.884855161971769
   },
   "history90d": [
     {
@@ -372,60 +372,95 @@
     },
     {
       "date": "2026-10-07",
-      "close": 85517.7708412387
+      "close": 83636.84556403245
     }
   ],
   "blocks": [
     {
-      "height": 970262,
-      "id": "00000000000000000000eeea5119fb1d1662e471ef4b255ae5ab43263ff0658f",
-      "timestamp": 1791333235,
-      "txCount": 5978
+      "height": 970326,
+      "id": "000000000000000000004ca21c5ad1e9f2e4e09f23c90c5b31255e7a1ee4137c",
+      "timestamp": 1791367514,
+      "txCount": 3444
     },
     {
-      "height": 970261,
-      "id": "000000000000000000014499139045f694e083dcb027a1a4c146e489b5ab1332",
-      "timestamp": 1791332742,
-      "txCount": 6954
+      "height": 970325,
+      "id": "0000000000000000000151adcce3925b7efb61be2ac228e98d8fcb861fd77e75",
+      "timestamp": 1791367292,
+      "txCount": 3399
     },
     {
-      "height": 970260,
-      "id": "0000000000000000000026b53c366ff77ad92ef1e0e6914f1817e5e20da11218",
-      "timestamp": 1791332624,
-      "txCount": 7166
+      "height": 970324,
+      "id": "00000000000000000000bab1afd1d7d07c7b7b177bc836f704f51d3d8b8699ca",
+      "timestamp": 1791366981,
+      "txCount": 4415
     },
     {
-      "height": 970259,
-      "id": "0000000000000000000101735b902f0e16c47b73f121a56ac9774d53e5bf07ec",
-      "timestamp": 1791332481,
-      "txCount": 6763
+      "height": 970323,
+      "id": "00000000000000000000d4401afd7a7795ee06e4d333308e61961cece32dd47c",
+      "timestamp": 1791365060,
+      "txCount": 6692
     },
     {
-      "height": 970258,
-      "id": "0000000000000000000000985cc39f87195a56985a6182b2bccc245c96c99c04",
-      "timestamp": 1791332208,
-      "txCount": 7457
+      "height": 970322,
+      "id": "00000000000000000000d11fb46992fab9924ac0140dc42ff94c724bb892f438",
+      "timestamp": 1791364819,
+      "txCount": 5133
     },
     {
-      "height": 970257,
-      "id": "00000000000000000001d1cef4c1d4be35248e1f856c00c9fa43cc2daaa1fa6d",
-      "timestamp": 1791332223,
-      "txCount": 5901
+      "height": 970321,
+      "id": "00000000000000000000774b2f71f6df5f071c50f4e265904f60e60817b3e220",
+      "timestamp": 1791364688,
+      "txCount": 3991
     },
     {
-      "height": 970256,
-      "id": "000000000000000000010503be2351d1a3a83be08e253aa3c4293d4ae70ee02c",
-      "timestamp": 1791331334,
-      "txCount": 5196
+      "height": 970320,
+      "id": "00000000000000000000b68439f30f8a0972142f898b7ee5204ae099ac5431dd",
+      "timestamp": 1791363378,
+      "txCount": 5922
     },
     {
-      "height": 970255,
-      "id": "000000000000000000010e7215cd9b6924853d927f78cde1d5892b334881e698",
-      "timestamp": 1791331010,
-      "txCount": 6862
+      "height": 970319,
+      "id": "000000000000000000004e7f4158e222f2cfe38cf40bb16ef66b51ee94f43d15",
+      "timestamp": 1791363285,
+      "txCount": 5097
     }
   ],
   "news": [
+    {
+      "title": "Rain is seeking a national trust bank charter to bypass third-party banks",
+      "link": "https://www.coindesk.com/business/2026/10/07/rain-becomes-12th-crypto-firm-seeking-occ-trust-bank-charter-amid-community-bank-pushback",
+      "pubDate": "Wed, 07 Oct 2026 09:09:06 +0000"
+    },
+    {
+      "title": "Robinhood adds bitcoin worth $25 million to its balance sheet",
+      "link": "https://www.coindesk.com/markets/2026/10/07/robinhood-adds-bitcoin-worth-usd25-million-to-its-balance-sheet-report",
+      "pubDate": "Wed, 07 Oct 2026 08:53:27 +0000"
+    },
+    {
+      "title": "Down but not out. Bitcoin's stair-step bullish trajectory is still intact",
+      "link": "https://www.coindesk.com/markets/2026/10/07/down-but-not-out-bitcoin-s-stair-step-bullish-trajectory-is-still-intact",
+      "pubDate": "Wed, 07 Oct 2026 07:52:22 +0000"
+    },
+    {
+      "title": "U.S. government moves over $100 million in BTC and BNB. A sale hasn't been confirmed",
+      "link": "https://www.coindesk.com/markets/2026/10/07/u-s-government-moves-over-usd100-million-in-btc-and-bnb-a-sale-hasn-t-been-confirmed",
+      "pubDate": "Wed, 07 Oct 2026 05:58:25 +0000"
+    },
+    {
+      "title": "Pudgy Penguins’ Abstract becomes second Ethereum layer 2 to shut in a week",
+      "link": "https://www.coindesk.com/tech/2026/10/07/pudgy-penguins-abstract-becomes-second-ethereum-layer-2-to-shut-in-a-week",
+      "pubDate": "Wed, 07 Oct 2026 04:31:14 +0000"
+    },
+    {
+      "title": "Cardano gives token issuers power to freeze, seize and restrict assets",
+      "link": "https://www.coindesk.com/tech/2026/10/07/cardano-gives-token-issuers-power-to-freeze-seize-and-restrict-assets",
+      "pubDate": "Wed, 07 Oct 2026 04:11:33 +0000"
+    },
+    {
+      "title": "Bitcoin dips below $84,000 as oil jumps on Iranian tanker attacks",
+      "link": "https://www.coindesk.com/markets/2026/10/07/bitcoin-dips-below-usd84-000-as-oil-jumps-on-iranian-tanker-attacks",
+      "pubDate": "Wed, 07 Oct 2026 04:00:51 +0000"
+    },
     {
       "title": "Peter Thiel-backed Founders Fund leads a $5 million token buy in crypto collateral protocol Anvil",
       "link": "https://www.coindesk.com/business/2026/10/06/peter-thiel-backed-founders-fund-leads-a-usd5-million-token-buy-in-crypto-collateral-protocol-anvil",
@@ -450,41 +485,6 @@
       "title": "Self-styled 'Godfather' gets 6 years in prison for $37 million Meta fraud scheme",
       "link": "https://www.coindesk.com/policy/2026/10/06/self-styled-crypto-godfather-gets-more-than-6-years-in-usd37-million-meta-fraud-case",
       "pubDate": "Tue, 06 Oct 2026 12:31:51 +0000"
-    },
-    {
-      "title": "The VIX of bonds is rising but bitcoin and stocks aren't hearing it yet",
-      "link": "https://www.coindesk.com/daybook-us/2026/10/06/the-vix-of-bonds-is-rising-but-bitcoin-and-stocks-aren-t-hearing-it-yet",
-      "pubDate": "Tue, 06 Oct 2026 11:30:00 +0000"
-    },
-    {
-      "title": "Live updates: Bitcoin remains locked in range as stocks notch another new record high",
-      "link": "https://www.coindesk.com/markets/2026/10/06/live-updates-a-drop-below-usd84-000-could-put-usd80-000-in-play-for-bitcoin",
-      "pubDate": "Tue, 06 Oct 2026 10:35:49 +0000"
-    },
-    {
-      "title": "Smaller altcoins shine as bitcoin stills trades around $85,000",
-      "link": "https://www.coindesk.com/markets/2026/10/06/smaller-altcoins-shine-as-bitcoin-stills-trades-around-usd85-000",
-      "pubDate": "Tue, 06 Oct 2026 10:30:00 +0000"
-    },
-    {
-      "title": "U.S.- China AI race heats up as Chinese rivals secure billions ahead of IPOs",
-      "link": "https://www.coindesk.com/markets/2026/10/06/u-s-china-ai-race-heats-up-as-chinese-rivals-secure-billions-ahead-of-ipos",
-      "pubDate": "Tue, 06 Oct 2026 09:25:36 +0000"
-    },
-    {
-      "title": "OKX looks to abstract blockchain mechanics to bring stablecoin balances to everyday consumers",
-      "link": "https://www.coindesk.com/business/2026/10/06/okx-money-lets-users-save-earn-10-yield-and-spend-dollar-stablecoins-in-one-app",
-      "pubDate": "Tue, 06 Oct 2026 09:02:01 +0000"
-    },
-    {
-      "title": "Why bitcoin is down 'just' 32% a year after its record high of $126,000",
-      "link": "https://www.coindesk.com/markets/2026/10/06/from-retail-leverage-to-etf-flows-a-year-after-its-record-high-bitcoin-is-down-just-32",
-      "pubDate": "Tue, 06 Oct 2026 08:27:43 +0000"
-    },
-    {
-      "title": "U.S. scraps proposed $10,000 reporting rule for for crypto sent to private wallets",
-      "link": "https://www.coindesk.com/policy/2026/10/06/u-s-scraps-proposed-usd10-000-reporting-rule-for-for-crypto-sent-to-private-wallets",
-      "pubDate": "Tue, 06 Oct 2026 04:55:36 +0000"
     }
   ]
 }
