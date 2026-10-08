@@ -1,19 +1,15 @@
 {
-  "fetchedAt": "2026-10-07T18:54:08.051Z",
+  "fetchedAt": "2026-10-08T00:57:01.360Z",
   "price": {
-    "usd": 83320,
-    "time": 1791399010
+    "usd": 83368,
+    "time": 1791420608
   },
   "moves": {
-    "d1": -2.5953762869358687,
-    "d7": -0.30646858868166316,
-    "d30": 5.343723218411034
+    "d1": -2.539262245430507,
+    "d7": -0.24903592536260621,
+    "d30": 5.404410913015978
   },
   "history90d": [
-    {
-      "date": "2026-07-10",
-      "close": 63192.8789720319
-    },
     {
       "date": "2026-07-11",
       "close": 64110.97482196822
@@ -371,61 +367,71 @@
       "close": 85540.08713738805
     },
     {
-      "date": "2026-10-07",
-      "close": 83437.63347427
+      "date": "2026-10-08",
+      "close": 83386.1485318584
     }
   ],
   "blocks": [
     {
-      "height": 970379,
-      "id": "00000000000000000001da42fd6d34414507c7d55d370b8d63bd36943e213475",
-      "timestamp": 1791399125,
-      "txCount": 2962
+      "height": 970414,
+      "id": "00000000000000000001cce2d38d81baa21431f3d5447e7be44ad6885c7dc73e",
+      "timestamp": 1791420674,
+      "txCount": 4091
     },
     {
-      "height": 970378,
-      "id": "00000000000000000000f116627d42305c8cb3a194e4ba427789f3d10b21d64f",
-      "timestamp": 1791399061,
-      "txCount": 4142
+      "height": 970413,
+      "id": "00000000000000000001f674dc543ee771b7ab473849dc51a8e470830cd6b68a",
+      "timestamp": 1791419782,
+      "txCount": 5062
     },
     {
-      "height": 970377,
-      "id": "00000000000000000000a8b4e23509d56fe6d45df1b796e918343915e2da42b5",
-      "timestamp": 1791397762,
-      "txCount": 4684
+      "height": 970412,
+      "id": "0000000000000000000159956a8f2cc5e2087aa9a5c21aaebb4b6bc92810bb18",
+      "timestamp": 1791419382,
+      "txCount": 5215
     },
     {
-      "height": 970376,
-      "id": "0000000000000000000006ed171093c222b3ba57432f7f7573e593b6b7bcca6b",
-      "timestamp": 1791397624,
-      "txCount": 3997
+      "height": 970411,
+      "id": "000000000000000000021447e8b980f788b4a58120f456a2a4298f5be66d2f15",
+      "timestamp": 1791418849,
+      "txCount": 3612
     },
     {
-      "height": 970375,
-      "id": "00000000000000000001ccb3ff5b0fc502e42ea5f079498e4d06d85606d057bf",
-      "timestamp": 1791397172,
-      "txCount": 4079
+      "height": 970410,
+      "id": "000000000000000000010ec2f1cbed0efbe5139de076ab1464d4377dacfc93c3",
+      "timestamp": 1791418083,
+      "txCount": 3822
     },
     {
-      "height": 970374,
-      "id": "000000000000000000014d72dbc18fabbdf48717fbcaa3c1b822b656d471e071",
-      "timestamp": 1791396334,
-      "txCount": 3972
+      "height": 970409,
+      "id": "0000000000000000000200edb11fe5bfd615b5fce7bbe372f323269d1b97eb97",
+      "timestamp": 1791417162,
+      "txCount": 6537
     },
     {
-      "height": 970373,
-      "id": "00000000000000000001747b13a8b5fc57da62091c56f80d13cf0df72b07e3a3",
-      "timestamp": 1791395855,
-      "txCount": 3272
+      "height": 970408,
+      "id": "00000000000000000000e9e3031f48608108b8bc132cdd94bbcfdb16137b9dd5",
+      "timestamp": 1791416821,
+      "txCount": 7157
     },
     {
-      "height": 970372,
-      "id": "0000000000000000000064a5492d58617eb17ef307384f2a5ce6e98b22b39c40",
-      "timestamp": 1791395400,
-      "txCount": 3823
+      "height": 970407,
+      "id": "000000000000000000012f5d7f239fecdf9e2007d42a6dc97a264a62881d8100",
+      "timestamp": 1791416796,
+      "txCount": 7652
     }
   ],
   "news": [
+    {
+      "title": "Crypto news site Cointelegraph seeks buyer after web traffic plunges",
+      "link": "https://www.coindesk.com/business/2026/10/07/crypto-news-site-cointelegraph-seeks-buyer-after-web-traffic-plunges",
+      "pubDate": "Thu, 08 Oct 2026 00:35:24 +0000"
+    },
+    {
+      "title": "Wells Fargo in talks with Kraken parent Payward for crypto trading liquidity",
+      "link": "https://www.coindesk.com/business/2026/10/05/wells-fargo-in-talks-with-kraken-parent-payward-for-crypto-trading-liquidity",
+      "pubDate": "Wed, 07 Oct 2026 18:59:32 +0000"
+    },
     {
       "title": "Polygon taps TRON’s $94 billion stablecoin supply for seamless cross-border transfers",
       "link": "https://www.coindesk.com/business/2026/10/07/polygon-and-tron-partner-to-bridge-usd94-billion-usdt-ecosystem-with-u-s-banking-rails",
@@ -475,16 +481,6 @@
       "title": "Live updates: Bitcoin edges up from worst levels as yields pull back",
       "link": "https://www.coindesk.com/business/2026/10/07/live-updates-bitcoin-slides-under-usd84-000-as-usd550-million-in-bets-get-liquidated",
       "pubDate": "Wed, 07 Oct 2026 11:09:50 +0000"
-    },
-    {
-      "title": "Bitcoin’s recovery stalls just short of rescuing its last underwater cohort",
-      "link": "https://www.coindesk.com/markets/2026/10/07/bitcoin-s-recovery-stalls-just-short-of-rescuing-its-last-underwater-cohort",
-      "pubDate": "Wed, 07 Oct 2026 10:38:23 +0000"
-    },
-    {
-      "title": "Liquidations jump to $547 million as oil rally hits crypto market",
-      "link": "https://www.coindesk.com/markets/2026/10/07/liquidations-jump-to-usd547-million-as-oil-rally-drags-bitcoin-below-usd84-000",
-      "pubDate": "Wed, 07 Oct 2026 10:35:09 +0000"
     }
   ]
 }
