@@ -1,13 +1,13 @@
 {
-  "fetchedAt": "2026-10-08T00:57:01.360Z",
+  "fetchedAt": "2026-10-08T10:28:11.853Z",
   "price": {
-    "usd": 83368,
-    "time": 1791420608
+    "usd": 82919,
+    "time": 1791455107
   },
   "moves": {
-    "d1": -2.539262245430507,
-    "d7": -0.24903592536260621,
-    "d30": 5.404410913015978
+    "d1": -3.0641623420119446,
+    "d7": -0.7862706301595579,
+    "d30": 4.836728103065591
   },
   "history90d": [
     {
@@ -368,60 +368,100 @@
     },
     {
       "date": "2026-10-08",
-      "close": 83386.1485318584
+      "close": 82822.11377641947
     }
   ],
   "blocks": [
     {
-      "height": 970414,
-      "id": "00000000000000000001cce2d38d81baa21431f3d5447e7be44ad6885c7dc73e",
-      "timestamp": 1791420674,
-      "txCount": 4091
+      "height": 970476,
+      "id": "00000000000000000000e15dedba82419f0447b17cb49dca84f0d04880b3414e",
+      "timestamp": 1791455173,
+      "txCount": 4335
     },
     {
-      "height": 970413,
-      "id": "00000000000000000001f674dc543ee771b7ab473849dc51a8e470830cd6b68a",
-      "timestamp": 1791419782,
-      "txCount": 5062
+      "height": 970475,
+      "id": "00000000000000000000cf4779d6866ebdc94b1addd875ef02e10c01e7279e5e",
+      "timestamp": 1791455154,
+      "txCount": 4270
     },
     {
-      "height": 970412,
-      "id": "0000000000000000000159956a8f2cc5e2087aa9a5c21aaebb4b6bc92810bb18",
-      "timestamp": 1791419382,
-      "txCount": 5215
+      "height": 970474,
+      "id": "00000000000000000001bc72ca6b40438ba51d985bbcd941a75a5d73201bab83",
+      "timestamp": 1791453689,
+      "txCount": 3067
     },
     {
-      "height": 970411,
-      "id": "000000000000000000021447e8b980f788b4a58120f456a2a4298f5be66d2f15",
-      "timestamp": 1791418849,
-      "txCount": 3612
+      "height": 970473,
+      "id": "00000000000000000000b2a2fbc7e70d21be6f242af2e64ff8e64a8bc9246250",
+      "timestamp": 1791453059,
+      "txCount": 3847
     },
     {
-      "height": 970410,
-      "id": "000000000000000000010ec2f1cbed0efbe5139de076ab1464d4377dacfc93c3",
-      "timestamp": 1791418083,
-      "txCount": 3822
+      "height": 970472,
+      "id": "000000000000000000008c131ce6d930b974650214b08a23ac376de2c6824082",
+      "timestamp": 1791452060,
+      "txCount": 3469
     },
     {
-      "height": 970409,
-      "id": "0000000000000000000200edb11fe5bfd615b5fce7bbe372f323269d1b97eb97",
-      "timestamp": 1791417162,
-      "txCount": 6537
+      "height": 970471,
+      "id": "00000000000000000000a8adf5a5eefc68d05a63a6806642d4c92728e985f12b",
+      "timestamp": 1791451613,
+      "txCount": 3348
     },
     {
-      "height": 970408,
-      "id": "00000000000000000000e9e3031f48608108b8bc132cdd94bbcfdb16137b9dd5",
-      "timestamp": 1791416821,
-      "txCount": 7157
+      "height": 970470,
+      "id": "00000000000000000000fdebfe67484ebf102d80837d6f6153f1e5720485c41a",
+      "timestamp": 1791449890,
+      "txCount": 5946
     },
     {
-      "height": 970407,
-      "id": "000000000000000000012f5d7f239fecdf9e2007d42a6dc97a264a62881d8100",
-      "timestamp": 1791416796,
-      "txCount": 7652
+      "height": 970469,
+      "id": "0000000000000000000181489bc6ee61a7c165d767e91b0247b8543482e18928",
+      "timestamp": 1791449483,
+      "txCount": 5591
     }
   ],
   "news": [
+    {
+      "title": "Standard Chartered to expand institutional crypto and RWA custody to Singapore",
+      "link": "https://www.coindesk.com/business/2026/10/08/standard-chartered-singapore-dives-into-crypto-stablecoins-and-tokenized-assets-custody",
+      "pubDate": "Thu, 08 Oct 2026 09:32:13 +0000"
+    },
+    {
+      "title": "Greece prepares to levy 10% capital gains tax on cryptocurrency",
+      "link": "https://www.coindesk.com/policy/2026/10/08/greece-prepares-to-levy-10-capital-gains-tax-on-cryptocurrency",
+      "pubDate": "Thu, 08 Oct 2026 09:17:18 +0000"
+    },
+    {
+      "title": "Samsung integrates USDC to overhaul cross-border remittances for 82 million Galaxy users",
+      "link": "https://www.coindesk.com/tech/2026/10/08/solana-partners-with-samsung-to-integrate-usdc-in-82-million-phones",
+      "pubDate": "Thu, 08 Oct 2026 08:39:23 +0000"
+    },
+    {
+      "title": "Crypto investment firm Deus X Capital shuts down as backers pursue separate strategies",
+      "link": "https://www.coindesk.com/business/2026/10/06/crypto-investment-firm-deus-x-capital-shuts-down-as-backers-pursue-separate-strategies",
+      "pubDate": "Thu, 08 Oct 2026 08:00:00 +0000"
+    },
+    {
+      "title": "Ripple is earning fees financing leveraged stock bets, a business long run by banks",
+      "link": "https://www.coindesk.com/markets/2026/10/08/ripple-is-earning-fees-financing-leveraged-stock-bets-a-business-long-run-by-banks",
+      "pubDate": "Thu, 08 Oct 2026 06:17:13 +0000"
+    },
+    {
+      "title": "Bitcoin loans are paying for tuition and working capital, not just trades, lenders say",
+      "link": "https://www.coindesk.com/markets/2026/10/08/bitcoin-loans-are-paying-for-tuition-and-working-capital-not-just-trades-lenders-say",
+      "pubDate": "Thu, 08 Oct 2026 05:40:41 +0000"
+    },
+    {
+      "title": "Ethereum’s Glamsterdam test runs near 200 million gas per block after upgrade",
+      "link": "https://www.coindesk.com/tech/2026/10/08/ethereum-s-glamsterdam-test-runs-near-200-million-gas-per-block-after-upgrade",
+      "pubDate": "Thu, 08 Oct 2026 04:23:23 +0000"
+    },
+    {
+      "title": "Bitcoin breaks below $83,000 as oil jumps on Iran strike-plan report",
+      "link": "https://www.coindesk.com/markets/2026/10/08/bitcoin-breaks-below-usd83-000-as-oil-jumps-on-iran-strike-plan-report",
+      "pubDate": "Thu, 08 Oct 2026 04:00:07 +0000"
+    },
     {
       "title": "Crypto news site Cointelegraph seeks buyer after web traffic plunges",
       "link": "https://www.coindesk.com/business/2026/10/07/crypto-news-site-cointelegraph-seeks-buyer-after-web-traffic-plunges",
@@ -441,46 +481,6 @@
       "title": "Gate bets all-in-one money app is crypto’s biggest consumer trend this year and next",
       "link": "https://www.coindesk.com/business/2026/10/07/gate-bets-all-in-one-money-app-is-crypto-s-biggest-consumer-trend-this-year-and-next",
       "pubDate": "Wed, 07 Oct 2026 15:13:15 +0000"
-    },
-    {
-      "title": "Crypto Long & Short: Zcash and the case for privacy in the age of AI",
-      "link": "https://www.coindesk.com/coindesk-indices/2026/10/07/crypto-long-and-short-zcash-and-the-case-for-privacy-in-the-age-of-ai",
-      "pubDate": "Wed, 07 Oct 2026 15:03:54 +0000"
-    },
-    {
-      "title": "Tether tapped by Kazakhstan’s central bank to explore stablecoin and tokenization",
-      "link": "https://www.coindesk.com/business/2026/10/07/tether-tapped-by-kazakhstan-s-central-bank-to-explore-stablecoin-and-tokenization",
-      "pubDate": "Wed, 07 Oct 2026 14:27:37 +0000"
-    },
-    {
-      "title": "Quantum computers threaten exposed private keys rather than blockchains, Europol warns",
-      "link": "https://www.coindesk.com/tech/2026/10/07/quantum-computers-threaten-exposed-private-keys-rather-than-blockchains-europol-warns",
-      "pubDate": "Wed, 07 Oct 2026 13:20:54 +0000"
-    },
-    {
-      "title": "Ether is about to lose a steady buyer as Tom Lee says Bitmine will stop token purchases",
-      "link": "https://www.coindesk.com/markets/2026/10/07/ether-is-about-to-lose-a-steady-buyer-as-tom-lee-says-bitmine-will-stop-token-purchases",
-      "pubDate": "Wed, 07 Oct 2026 12:40:31 +0000"
-    },
-    {
-      "title": "Crypto trading giant GSR's new vault business is a $100M bet on onchain credit",
-      "link": "https://www.coindesk.com/business/2026/10/07/crypto-trading-giant-gsr-s-new-vault-business-is-a-usd100m-bet-on-onchain-credit",
-      "pubDate": "Wed, 07 Oct 2026 12:34:13 +0000"
-    },
-    {
-      "title": "Swift blockchain ledger requires key internal layers, Taurus co-founder warns",
-      "link": "https://www.coindesk.com/business/2026/10/07/swift-blockchain-ledger-requires-key-internal-layers-taurus-co-founder-warns",
-      "pubDate": "Wed, 07 Oct 2026 11:59:24 +0000"
-    },
-    {
-      "title": "Here’s what bitcoin needs to break above $87,000",
-      "link": "https://www.coindesk.com/daybook-us/2026/10/07/here-s-what-bitcoin-needs-to-break-above-usd87-000",
-      "pubDate": "Wed, 07 Oct 2026 11:30:00 +0000"
-    },
-    {
-      "title": "Live updates: Bitcoin edges up from worst levels as yields pull back",
-      "link": "https://www.coindesk.com/business/2026/10/07/live-updates-bitcoin-slides-under-usd84-000-as-usd550-million-in-bets-get-liquidated",
-      "pubDate": "Wed, 07 Oct 2026 11:09:50 +0000"
     }
   ]
 }
