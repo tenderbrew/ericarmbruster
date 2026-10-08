@@ -1,13 +1,13 @@
 {
-  "fetchedAt": "2026-10-08T10:28:11.853Z",
+  "fetchedAt": "2026-10-08T18:48:56.414Z",
   "price": {
-    "usd": 82919,
-    "time": 1791455107
+    "usd": 81478,
+    "time": 1791485112
   },
   "moves": {
-    "d1": -3.0641623420119446,
-    "d7": -0.7862706301595579,
-    "d30": 4.836728103065591
+    "d1": -4.748752629704289,
+    "d7": -2.5104470435502235,
+    "d30": 3.014832937946399
   },
   "history90d": [
     {
@@ -368,119 +368,119 @@
     },
     {
       "date": "2026-10-08",
-      "close": 82822.11377641947
+      "close": 81479.35422057209
     }
   ],
   "blocks": [
     {
-      "height": 970476,
-      "id": "00000000000000000000e15dedba82419f0447b17cb49dca84f0d04880b3414e",
-      "timestamp": 1791455173,
-      "txCount": 4335
+      "height": 970517,
+      "id": "00000000000000000001981d015c4c9b1f4344beee08407c826756b6b1edd94e",
+      "timestamp": 1791483228,
+      "txCount": 3987
     },
     {
-      "height": 970475,
-      "id": "00000000000000000000cf4779d6866ebdc94b1addd875ef02e10c01e7279e5e",
-      "timestamp": 1791455154,
-      "txCount": 4270
+      "height": 970516,
+      "id": "0000000000000000000075970693e8c177176205517ef57fe14e8243bc612151",
+      "timestamp": 1791481921,
+      "txCount": 3969
     },
     {
-      "height": 970474,
-      "id": "00000000000000000001bc72ca6b40438ba51d985bbcd941a75a5d73201bab83",
-      "timestamp": 1791453689,
-      "txCount": 3067
+      "height": 970515,
+      "id": "0000000000000000000058c39e36a4c65365ba93fc6504a1208107934f6ac0f8",
+      "timestamp": 1791481249,
+      "txCount": 3984
     },
     {
-      "height": 970473,
-      "id": "00000000000000000000b2a2fbc7e70d21be6f242af2e64ff8e64a8bc9246250",
-      "timestamp": 1791453059,
-      "txCount": 3847
+      "height": 970514,
+      "id": "000000000000000000001b89a4d963a7495cdc712eda85a6214f618b59f22a5a",
+      "timestamp": 1791479935,
+      "txCount": 4024
     },
     {
-      "height": 970472,
-      "id": "000000000000000000008c131ce6d930b974650214b08a23ac376de2c6824082",
-      "timestamp": 1791452060,
-      "txCount": 3469
+      "height": 970513,
+      "id": "00000000000000000001667107de71d761145ee6a8378cc8497ff94085bea4e7",
+      "timestamp": 1791479216,
+      "txCount": 4162
     },
     {
-      "height": 970471,
-      "id": "00000000000000000000a8adf5a5eefc68d05a63a6806642d4c92728e985f12b",
-      "timestamp": 1791451613,
-      "txCount": 3348
+      "height": 970512,
+      "id": "000000000000000000010b018f9af14fedf9c65900b18adc6c418d56aa1a9aee",
+      "timestamp": 1791478192,
+      "txCount": 4278
     },
     {
-      "height": 970470,
-      "id": "00000000000000000000fdebfe67484ebf102d80837d6f6153f1e5720485c41a",
-      "timestamp": 1791449890,
-      "txCount": 5946
+      "height": 970511,
+      "id": "00000000000000000000c3e40772b2db3131705464c93b5b93a1ce24d2a8933b",
+      "timestamp": 1791477174,
+      "txCount": 4050
     },
     {
-      "height": 970469,
-      "id": "0000000000000000000181489bc6ee61a7c165d767e91b0247b8543482e18928",
-      "timestamp": 1791449483,
-      "txCount": 5591
+      "height": 970510,
+      "id": "00000000000000000001d475a45969bf4991e5351185e475b52a5f523be8aa80",
+      "timestamp": 1791475222,
+      "txCount": 4223
     }
   ],
   "news": [
     {
-      "title": "Standard Chartered to expand institutional crypto and RWA custody to Singapore",
-      "link": "https://www.coindesk.com/business/2026/10/08/standard-chartered-singapore-dives-into-crypto-stablecoins-and-tokenized-assets-custody",
-      "pubDate": "Thu, 08 Oct 2026 09:32:13 +0000"
+      "title": "Crypto crumbles as anniversary of flash crash nears",
+      "link": "https://www.coindesk.com/markets/2026/10/08/crypto-crumbles-as-anniversary-of-flash-crash-nears",
+      "pubDate": "Thu, 08 Oct 2026 18:14:39 +0000"
     },
     {
-      "title": "Greece prepares to levy 10% capital gains tax on cryptocurrency",
-      "link": "https://www.coindesk.com/policy/2026/10/08/greece-prepares-to-levy-10-capital-gains-tax-on-cryptocurrency",
-      "pubDate": "Thu, 08 Oct 2026 09:17:18 +0000"
+      "title": "NFL joins pushback against prediction markets as U.S. Supreme Court asked to act",
+      "link": "https://www.coindesk.com/policy/2026/10/08/nfl-joins-pushback-against-prediction-markets-as-u-s-supreme-court-asked-to-act",
+      "pubDate": "Thu, 08 Oct 2026 18:06:41 +0000"
     },
     {
-      "title": "Samsung integrates USDC to overhaul cross-border remittances for 82 million Galaxy users",
-      "link": "https://www.coindesk.com/tech/2026/10/08/solana-partners-with-samsung-to-integrate-usdc-in-82-million-phones",
-      "pubDate": "Thu, 08 Oct 2026 08:39:23 +0000"
+      "title": "U.S. government moves $1 billion in bitcoin from Bitfinex hack wallet, no sale indicated",
+      "link": "https://www.coindesk.com/business/2026/10/08/u-s-government-moves-usd1-billion-in-bitcoin-from-bitfinex-hack-wallet-no-sale-indicated",
+      "pubDate": "Thu, 08 Oct 2026 15:43:04 +0000"
     },
     {
-      "title": "Crypto investment firm Deus X Capital shuts down as backers pursue separate strategies",
-      "link": "https://www.coindesk.com/business/2026/10/06/crypto-investment-firm-deus-x-capital-shuts-down-as-backers-pursue-separate-strategies",
-      "pubDate": "Thu, 08 Oct 2026 08:00:00 +0000"
+      "title": "EU securities regulator gives crypto platforms 3 months to remove unauthorized stablecoins",
+      "link": "https://www.coindesk.com/policy/2026/10/08/eu-securities-regulator-gives-crypto-platforms-3-months-to-remove-unauthorized-stablecoins",
+      "pubDate": "Thu, 08 Oct 2026 15:23:26 +0000"
     },
     {
-      "title": "Ripple is earning fees financing leveraged stock bets, a business long run by banks",
-      "link": "https://www.coindesk.com/markets/2026/10/08/ripple-is-earning-fees-financing-leveraged-stock-bets-a-business-long-run-by-banks",
-      "pubDate": "Thu, 08 Oct 2026 06:17:13 +0000"
+      "title": "Crypto for Advisors: Digital assets outran stocks and gold in Q3",
+      "link": "https://www.coindesk.com/coindesk-indices/2026/10/08/crypto-for-advisors-digital-assets-outran-stocks-and-gold-in-q3",
+      "pubDate": "Thu, 08 Oct 2026 15:11:15 +0000"
     },
     {
-      "title": "Bitcoin loans are paying for tuition and working capital, not just trades, lenders say",
-      "link": "https://www.coindesk.com/markets/2026/10/08/bitcoin-loans-are-paying-for-tuition-and-working-capital-not-just-trades-lenders-say",
-      "pubDate": "Thu, 08 Oct 2026 05:40:41 +0000"
+      "title": "‘Bunker mode’ is a far greater challenge for institutions than individual crypto holders",
+      "link": "https://www.coindesk.com/tech/2026/10/08/bunker-mode-is-a-far-greater-challenge-for-institutions-than-individual-crypto-holders",
+      "pubDate": "Thu, 08 Oct 2026 14:39:48 +0000"
     },
     {
-      "title": "Ethereum’s Glamsterdam test runs near 200 million gas per block after upgrade",
-      "link": "https://www.coindesk.com/tech/2026/10/08/ethereum-s-glamsterdam-test-runs-near-200-million-gas-per-block-after-upgrade",
-      "pubDate": "Thu, 08 Oct 2026 04:23:23 +0000"
+      "title": "Cardano Foundation spins out Veridian, tokenizes its shares on new standard",
+      "link": "https://www.coindesk.com/business/2026/10/08/cardano-foundation-spins-out-veridian-tokenizes-its-shares-on-new-standard",
+      "pubDate": "Thu, 08 Oct 2026 14:24:24 +0000"
     },
     {
-      "title": "Bitcoin breaks below $83,000 as oil jumps on Iran strike-plan report",
-      "link": "https://www.coindesk.com/markets/2026/10/08/bitcoin-breaks-below-usd83-000-as-oil-jumps-on-iran-strike-plan-report",
-      "pubDate": "Thu, 08 Oct 2026 04:00:07 +0000"
+      "title": "Over 6 million bitcoin sit behind exposed public keys as AI warnings mount",
+      "link": "https://www.coindesk.com/markets/2026/10/08/over-6-million-bitcoin-sit-behind-exposed-public-keys-as-ai-warnings-mount",
+      "pubDate": "Thu, 08 Oct 2026 14:03:20 +0000"
     },
     {
-      "title": "Crypto news site Cointelegraph seeks buyer after web traffic plunges",
-      "link": "https://www.coindesk.com/business/2026/10/07/crypto-news-site-cointelegraph-seeks-buyer-after-web-traffic-plunges",
-      "pubDate": "Thu, 08 Oct 2026 00:35:24 +0000"
+      "title": "Securitize brings Apple, Nvidia and Tesla to Solana, with NYSE trading in the works",
+      "link": "https://www.coindesk.com/business/2026/10/08/securitize-brings-apple-nvidia-and-tesla-to-solana-with-nyse-trading-in-the-works",
+      "pubDate": "Thu, 08 Oct 2026 13:06:24 +0000"
     },
     {
-      "title": "Wells Fargo in talks with Kraken parent Payward for crypto trading liquidity",
-      "link": "https://www.coindesk.com/business/2026/10/05/wells-fargo-in-talks-with-kraken-parent-payward-for-crypto-trading-liquidity",
-      "pubDate": "Wed, 07 Oct 2026 18:59:32 +0000"
+      "title": "Bitcoin and ether holders urged to enter ‘bunker mode’ against possible AI attacks",
+      "link": "https://www.coindesk.com/tech/2026/10/08/bitcoin-and-ether-holders-urged-to-prepare-bunker-mode-against-possible-ai-attacks",
+      "pubDate": "Thu, 08 Oct 2026 11:47:16 +0000"
     },
     {
-      "title": "Polygon taps TRON’s $94 billion stablecoin supply for seamless cross-border transfers",
-      "link": "https://www.coindesk.com/business/2026/10/07/polygon-and-tron-partner-to-bridge-usd94-billion-usdt-ecosystem-with-u-s-banking-rails",
-      "pubDate": "Wed, 07 Oct 2026 16:30:00 +0000"
+      "title": "NUVA brings U.S. residential mortgage credit to offshore investors",
+      "link": "https://www.coindesk.com/business/2026/10/08/nuva-brings-u-s-residential-mortgage-credit-to-offshore-investors",
+      "pubDate": "Thu, 08 Oct 2026 11:36:25 +0000"
     },
     {
-      "title": "Gate bets all-in-one money app is crypto’s biggest consumer trend this year and next",
-      "link": "https://www.coindesk.com/business/2026/10/07/gate-bets-all-in-one-money-app-is-crypto-s-biggest-consumer-trend-this-year-and-next",
-      "pubDate": "Wed, 07 Oct 2026 15:13:15 +0000"
+      "title": "Bitcoin mined for pennies in 2010 moves after 16 years, now worth $8.5 million",
+      "link": "https://www.coindesk.com/tech/2026/10/08/bitcoin-mined-for-pennies-in-2010-moves-after-16-years-now-worth-usd8-5-million",
+      "pubDate": "Thu, 08 Oct 2026 11:30:19 +0000"
     }
   ]
 }
