@@ -1,19 +1,15 @@
 {
-  "fetchedAt": "2026-10-08T18:48:56.414Z",
+  "fetchedAt": "2026-10-09T01:11:04.881Z",
   "price": {
-    "usd": 81478,
-    "time": 1791485112
+    "usd": 81766,
+    "time": 1791507908
   },
   "moves": {
-    "d1": -4.748752629704289,
-    "d7": -2.5104470435502235,
-    "d30": 3.014832937946399
+    "d1": 0.09807456413701843,
+    "d7": -3.24291026873722,
+    "d30": 4.449161168867288
   },
   "history90d": [
-    {
-      "date": "2026-07-11",
-      "close": 64110.97482196822
-    },
     {
       "date": "2026-07-12",
       "close": 63791.35305345348
@@ -368,60 +364,78 @@
     },
     {
       "date": "2026-10-08",
-      "close": 81479.35422057209
+      "close": 83282.04538340426
+    },
+    {
+      "date": "2026-10-09",
+      "close": 81685.88692243936
+    },
+    {
+      "date": "2026-10-09",
+      "close": 81676.19021739515
     }
   ],
   "blocks": [
     {
-      "height": 970517,
-      "id": "00000000000000000001981d015c4c9b1f4344beee08407c826756b6b1edd94e",
-      "timestamp": 1791483228,
-      "txCount": 3987
+      "height": 970561,
+      "id": "000000000000000000007c134e3f52d73e76d26ee14a002f65a3cac1dda91a45",
+      "timestamp": 1791508175,
+      "txCount": 6865
     },
     {
-      "height": 970516,
-      "id": "0000000000000000000075970693e8c177176205517ef57fe14e8243bc612151",
-      "timestamp": 1791481921,
-      "txCount": 3969
+      "height": 970560,
+      "id": "000000000000000000016b54a005b36acd1bf309d9c6d2190f0577582bb635eb",
+      "timestamp": 1791508146,
+      "txCount": 5257
     },
     {
-      "height": 970515,
-      "id": "0000000000000000000058c39e36a4c65365ba93fc6504a1208107934f6ac0f8",
-      "timestamp": 1791481249,
-      "txCount": 3984
+      "height": 970559,
+      "id": "0000000000000000000060c00f9178382324daace7ca33c2b1aaecb5d7b14127",
+      "timestamp": 1791507435,
+      "txCount": 6097
     },
     {
-      "height": 970514,
-      "id": "000000000000000000001b89a4d963a7495cdc712eda85a6214f618b59f22a5a",
-      "timestamp": 1791479935,
-      "txCount": 4024
+      "height": 970558,
+      "id": "00000000000000000000a71b4f38897bc5a415aec4e7c050d71a072ca2d9acd4",
+      "timestamp": 1791507322,
+      "txCount": 3709
     },
     {
-      "height": 970513,
-      "id": "00000000000000000001667107de71d761145ee6a8378cc8497ff94085bea4e7",
-      "timestamp": 1791479216,
-      "txCount": 4162
+      "height": 970557,
+      "id": "000000000000000000019444fe89f6b049f9768bd16c462d808079195c4448c5",
+      "timestamp": 1791505914,
+      "txCount": 6637
     },
     {
-      "height": 970512,
-      "id": "000000000000000000010b018f9af14fedf9c65900b18adc6c418d56aa1a9aee",
-      "timestamp": 1791478192,
-      "txCount": 4278
+      "height": 970556,
+      "id": "00000000000000000001d8726bfaf9ac6e944e7a169ae9d8ab7cd6d9b060d219",
+      "timestamp": 1791505828,
+      "txCount": 6068
     },
     {
-      "height": 970511,
-      "id": "00000000000000000000c3e40772b2db3131705464c93b5b93a1ce24d2a8933b",
-      "timestamp": 1791477174,
-      "txCount": 4050
+      "height": 970555,
+      "id": "000000000000000000013d4af2d81d46c6462939b1a319ba1ef020b0c1945ef6",
+      "timestamp": 1791505575,
+      "txCount": 6031
     },
     {
-      "height": 970510,
-      "id": "00000000000000000001d475a45969bf4991e5351185e475b52a5f523be8aa80",
-      "timestamp": 1791475222,
-      "txCount": 4223
+      "height": 970554,
+      "id": "000000000000000000003ad2e8441f8ee840f32dace1200177dc958123796df2",
+      "timestamp": 1791505545,
+      "txCount": 6296
     }
   ],
   "news": [
+    {
+      "title": "Top Democrat among Senate investigators probes ties between Cantor Fitzgerald, Tether",
+      "link": "https://www.coindesk.com/policy/2026/10/08/top-democrat-among-senate-investigators-probes-ties-between-cantor-fitzgerald-tether",
+      "pubDate": "Thu, 08 Oct 2026 21:22:58 +0000"
+    },
+    {
+      "title": "Wall Street's tokenization boom could have bigger winners than bitcoin and ether, Citrini says",
+      "link": "https://www.coindesk.com/markets/2026/10/08/wall-street-s-tokenization-boom-could-have-bigger-winners-than-bitcoin-and-ether-citrini-says",
+      "pubDate": "Thu, 08 Oct 2026 19:46:15 +0000"
+    },
     {
       "title": "Crypto crumbles as anniversary of flash crash nears",
       "link": "https://www.coindesk.com/markets/2026/10/08/crypto-crumbles-as-anniversary-of-flash-crash-nears",
@@ -433,7 +447,7 @@
       "pubDate": "Thu, 08 Oct 2026 18:06:41 +0000"
     },
     {
-      "title": "U.S. government moves $1 billion in bitcoin from Bitfinex hack wallet, no sale indicated",
+      "title": "U.S. government moves $1 billion in bitcoin tied to Bitfinex hack, with no sign of sale",
       "link": "https://www.coindesk.com/business/2026/10/08/u-s-government-moves-usd1-billion-in-bitcoin-from-bitfinex-hack-wallet-no-sale-indicated",
       "pubDate": "Thu, 08 Oct 2026 15:43:04 +0000"
     },
@@ -471,16 +485,6 @@
       "title": "Bitcoin and ether holders urged to enter ‘bunker mode’ against possible AI attacks",
       "link": "https://www.coindesk.com/tech/2026/10/08/bitcoin-and-ether-holders-urged-to-prepare-bunker-mode-against-possible-ai-attacks",
       "pubDate": "Thu, 08 Oct 2026 11:47:16 +0000"
-    },
-    {
-      "title": "NUVA brings U.S. residential mortgage credit to offshore investors",
-      "link": "https://www.coindesk.com/business/2026/10/08/nuva-brings-u-s-residential-mortgage-credit-to-offshore-investors",
-      "pubDate": "Thu, 08 Oct 2026 11:36:25 +0000"
-    },
-    {
-      "title": "Bitcoin mined for pennies in 2010 moves after 16 years, now worth $8.5 million",
-      "link": "https://www.coindesk.com/tech/2026/10/08/bitcoin-mined-for-pennies-in-2010-moves-after-16-years-now-worth-usd8-5-million",
-      "pubDate": "Thu, 08 Oct 2026 11:30:19 +0000"
     }
   ]
 }
