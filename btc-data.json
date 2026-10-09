@@ -1,13 +1,13 @@
 {
-  "fetchedAt": "2026-10-09T10:26:52.876Z",
+  "fetchedAt": "2026-10-09T18:19:21.914Z",
   "price": {
-    "usd": 82583,
-    "time": 1791541208
+    "usd": 82589,
+    "time": 1791569708
   },
   "moves": {
-    "d1": 1.098247336669611,
-    "d7": -2.276120376722912,
-    "d30": 5.492809686282407
+    "d1": 1.1055925467494232,
+    "d7": -2.269020328556337,
+    "d30": 5.500474179678361
   },
   "history90d": [
     {
@@ -372,60 +372,95 @@
     },
     {
       "date": "2026-10-09",
-      "close": 82581.34931023174
+      "close": 82578.84631771565
     }
   ],
   "blocks": [
     {
-      "height": 970617,
-      "id": "00000000000000000001e97297123d0e1039a6c0d6b6b36e105da3cc2bb6a6b1",
-      "timestamp": 1791541390,
-      "txCount": 6088
+      "height": 970667,
+      "id": "00000000000000000000c5598b29689982d69f54371d928513a856a49e4a5b01",
+      "timestamp": 1791569446,
+      "txCount": 4138
     },
     {
-      "height": 970616,
-      "id": "00000000000000000001a5d8d103088e9c9d59e9c6d59ed651a713b576bd8e9d",
-      "timestamp": 1791541071,
-      "txCount": 6140
+      "height": 970666,
+      "id": "00000000000000000001cd9435ca41d3ce352b9c341c10d57d3ed08b1e370c35",
+      "timestamp": 1791568401,
+      "txCount": 4488
     },
     {
-      "height": 970615,
-      "id": "00000000000000000000eea7fb3277bd0b3a1f2639d21039e0e5052a8ff22a3b",
-      "timestamp": 1791541137,
-      "txCount": 5573
+      "height": 970665,
+      "id": "00000000000000000001de3ed3fa4e266a717f6f1406822a00c2a87006662c1c",
+      "timestamp": 1791568048,
+      "txCount": 4219
     },
     {
-      "height": 970614,
-      "id": "00000000000000000000028726cff750bbea231df05df48a4985b64ba01e0dd8",
-      "timestamp": 1791540270,
-      "txCount": 5925
+      "height": 970664,
+      "id": "00000000000000000001e4ab5fb59b7119f142c0b34110a0d4a19f5d7109e134",
+      "timestamp": 1791567968,
+      "txCount": 3544
     },
     {
-      "height": 970613,
-      "id": "000000000000000000009edf62fa7c027b2727e6883bfadf8cea3466240cf9b9",
-      "timestamp": 1791539921,
-      "txCount": 5261
+      "height": 970663,
+      "id": "0000000000000000000212af022c0f1b9de504e2452fb02559d351064e5f1997",
+      "timestamp": 1791567825,
+      "txCount": 4333
     },
     {
-      "height": 970612,
-      "id": "0000000000000000000126452760fce096aa23a2c5926e3445a6df4c6385811f",
-      "timestamp": 1791538924,
-      "txCount": 5946
+      "height": 970662,
+      "id": "00000000000000000000c72c92380d2515a30e497839faf41bc340071d949d36",
+      "timestamp": 1791566480,
+      "txCount": 3516
     },
     {
-      "height": 970611,
-      "id": "0000000000000000000099a27b317c13786f7a9c316e60f094dff9b870ce4bc5",
-      "timestamp": 1791538819,
-      "txCount": 4909
+      "height": 970661,
+      "id": "00000000000000000001d2e7523d90ac7aca4d8b82ac5afffa223511cbe14ca8",
+      "timestamp": 1791566141,
+      "txCount": 3417
     },
     {
-      "height": 970610,
-      "id": "000000000000000000008baad40ecb5106ee72a7f021257bb776997e1dedc2a3",
-      "timestamp": 1791538130,
-      "txCount": 6986
+      "height": 970660,
+      "id": "000000000000000000014d8fc2e3075bf53e73e5a7f4055d6fe8640fa30abef9",
+      "timestamp": 1791566084,
+      "txCount": 4028
     }
   ],
   "news": [
+    {
+      "title": "Robinhood Chain considers technology that gives paying traders priority",
+      "link": "https://www.coindesk.com/business/2026/10/09/robinhood-chain-considers-technology-that-gives-paying-traders-priority",
+      "pubDate": "Fri, 09 Oct 2026 18:11:00 +0000"
+    },
+    {
+      "title": "New York AG secures up to $35 million and lifetime crypto ban from Celsius’ Alex Mashinsky",
+      "link": "https://www.coindesk.com/policy/2026/10/09/new-york-ag-secures-up-to-usd35-million-and-lifetime-crypto-ban-from-celsius-alex-mashinsky",
+      "pubDate": "Fri, 09 Oct 2026 14:55:23 +0000"
+    },
+    {
+      "title": "Ledger investigates potential wallet tampering after reports of $86 million in crypto stolen",
+      "link": "https://www.coindesk.com/business/2026/10/09/ledger-investigates-potential-wallet-tampering-after-reports-of-usd86-million-in-crypto-stolen",
+      "pubDate": "Fri, 09 Oct 2026 14:47:27 +0000"
+    },
+    {
+      "title": "DWF Labs subsidiaries sue BitGo for $141 million over alleged token lock-up breach",
+      "link": "https://www.coindesk.com/policy/2026/10/09/dwf-labs-subsidiaries-sue-bitgo-for-usd141-million-over-alleged-token-lock-up-breach",
+      "pubDate": "Fri, 09 Oct 2026 12:23:54 +0000"
+    },
+    {
+      "title": "Zcash developers set January target for quantum-resistant payments after ‘bunker mode’ scare",
+      "link": "https://www.coindesk.com/tech/2026/10/09/zcash-developers-set-january-target-for-quantum-resistant-payments-after-bunker-mode-scare",
+      "pubDate": "Fri, 09 Oct 2026 11:39:05 +0000"
+    },
+    {
+      "title": "Trump's Iran pledge underpins crypto gains as bitcoin bears face liquidation pressure",
+      "link": "https://www.coindesk.com/daybook-us/2026/10/09/trump-s-iran-pledge-underpins-crypto-gains-as-bitcoin-bears-face-liquidation-pressure",
+      "pubDate": "Fri, 09 Oct 2026 11:09:04 +0000"
+    },
+    {
+      "title": "Bitcoin steadies near $82,500 after Trump rules out Iran strike before midterms",
+      "link": "https://www.coindesk.com/markets/2026/10/09/bitcoin-steadies-near-usd82-500-after-trump-rules-out-iran-strike-before-midterms",
+      "pubDate": "Fri, 09 Oct 2026 10:44:22 +0000"
+    },
     {
       "title": "Thailand opens door to locally listed bitcoin and ether ETFs",
       "link": "https://www.coindesk.com/policy/2026/10/09/thailand-opens-door-to-locally-listed-bitcoin-and-ether-etfs",
@@ -450,41 +485,6 @@
       "title": "Sam Altman-backed bitcoin insurer Meanwhile secures $37.5 million in Bain Capital Crypto-led round",
       "link": "https://www.coindesk.com/business/2026/10/09/sam-altman-backed-bitcoin-insurer-meanwhile-secures-usd37-5-million-in-bain-capital-crypto-led-round",
       "pubDate": "Fri, 09 Oct 2026 09:06:00 +0000"
-    },
-    {
-      "title": "Live updates: XRP ETFs the only ones in green as BTC, ETH, ZEC funds post outflows",
-      "link": "https://www.coindesk.com/business/2026/10/09/live-updates-xrp-etfs-the-only-ones-in-green-as-btc-eth-zec-funds-post-outflows",
-      "pubDate": "Fri, 09 Oct 2026 06:51:32 +0000"
-    },
-    {
-      "title": "New tech to power bitcoin lending is set to debut with $500 million in commitments",
-      "link": "https://www.coindesk.com/markets/2026/10/09/new-tech-to-power-bitcoin-lending-is-set-to-debut-with-usd500-million-in-commitments",
-      "pubDate": "Fri, 09 Oct 2026 06:40:54 +0000"
-    },
-    {
-      "title": "Solana is about to halve its block times as final 200-millisecond upgrade nears",
-      "link": "https://www.coindesk.com/tech/2026/10/09/solana-is-about-to-halve-its-block-times-as-final-200-millisecond-upgrade-nears",
-      "pubDate": "Fri, 09 Oct 2026 05:00:52 +0000"
-    },
-    {
-      "title": "XRP Ledger adds new controls for banks, stablecoins and tokenized funds",
-      "link": "https://www.coindesk.com/tech/2026/10/09/xrp-ledger-adds-new-controls-for-banks-stablecoins-and-tokenized-funds",
-      "pubDate": "Fri, 09 Oct 2026 04:21:36 +0000"
-    },
-    {
-      "title": "Ether bets were wiped out at six times bitcoin’s rate in crypto’s $1 billion flush",
-      "link": "https://www.coindesk.com/markets/2026/10/09/ether-bets-were-wiped-out-at-six-times-bitcoin-s-rate-in-crypto-s-usd1-billion-flush",
-      "pubDate": "Fri, 09 Oct 2026 04:04:36 +0000"
-    },
-    {
-      "title": "Bitcoin rebounds to $82,000 as Trump rules out Iran strikes, oil drops",
-      "link": "https://www.coindesk.com/markets/2026/10/09/bitcoin-rebounds-to-usd82-000-as-trump-rules-out-iran-strikes",
-      "pubDate": "Fri, 09 Oct 2026 03:27:38 +0000"
-    },
-    {
-      "title": "Top Democrat among Senate investigators probes ties between Cantor Fitzgerald, Tether",
-      "link": "https://www.coindesk.com/policy/2026/10/08/top-democrat-among-senate-investigators-probes-ties-between-cantor-fitzgerald-tether",
-      "pubDate": "Thu, 08 Oct 2026 21:22:58 +0000"
     }
   ]
 }
