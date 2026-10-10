@@ -1,19 +1,15 @@
 {
-  "fetchedAt": "2026-10-09T18:19:21.914Z",
+  "fetchedAt": "2026-10-10T00:45:30.212Z",
   "price": {
-    "usd": 82589,
-    "time": 1791569708
+    "usd": 82492,
+    "time": 1791592807
   },
   "moves": {
-    "d1": 1.1055925467494232,
-    "d7": -2.269020328556337,
-    "d30": 5.500474179678361
+    "d1": -0.08756096790756285,
+    "d7": -2.6560212152669793,
+    "d30": 7.755227464712577
   },
   "history90d": [
-    {
-      "date": "2026-07-12",
-      "close": 63791.35305345348
-    },
     {
       "date": "2026-07-13",
       "close": 63746.65595793199
@@ -371,61 +367,70 @@
       "close": 81685.88692243936
     },
     {
-      "date": "2026-10-09",
-      "close": 82578.84631771565
+      "date": "2026-10-10",
+      "close": 82564.29409505568
+    },
+    {
+      "date": "2026-10-10",
+      "close": 82507.91172068586
     }
   ],
   "blocks": [
     {
-      "height": 970667,
-      "id": "00000000000000000000c5598b29689982d69f54371d928513a856a49e4a5b01",
-      "timestamp": 1791569446,
-      "txCount": 4138
+      "height": 970698,
+      "id": "00000000000000000000bc9048d42387e67fc3843fa4425e89fdab9afa1bd718",
+      "timestamp": 1791593095,
+      "txCount": 4624
     },
     {
-      "height": 970666,
-      "id": "00000000000000000001cd9435ca41d3ce352b9c341c10d57d3ed08b1e370c35",
-      "timestamp": 1791568401,
-      "txCount": 4488
+      "height": 970697,
+      "id": "00000000000000000000e7493735a2c0aa70df633b15c350af7bbc4872a669ca",
+      "timestamp": 1791592910,
+      "txCount": 3317
     },
     {
-      "height": 970665,
-      "id": "00000000000000000001de3ed3fa4e266a717f6f1406822a00c2a87006662c1c",
-      "timestamp": 1791568048,
-      "txCount": 4219
+      "height": 970696,
+      "id": "00000000000000000000bff27b21c9fc72ce0da166121eed03782288514e1d60",
+      "timestamp": 1791591453,
+      "txCount": 5346
     },
     {
-      "height": 970664,
-      "id": "00000000000000000001e4ab5fb59b7119f142c0b34110a0d4a19f5d7109e134",
-      "timestamp": 1791567968,
-      "txCount": 3544
+      "height": 970695,
+      "id": "000000000000000000000fc62ec816aeebc9f42fadd4584088711d0cd95f62ad",
+      "timestamp": 1791590573,
+      "txCount": 5602
     },
     {
-      "height": 970663,
-      "id": "0000000000000000000212af022c0f1b9de504e2452fb02559d351064e5f1997",
-      "timestamp": 1791567825,
-      "txCount": 4333
+      "height": 970694,
+      "id": "000000000000000000016e6e2b87fae2ee9d15d03646c3332d8ba8f56e7fab8d",
+      "timestamp": 1791590275,
+      "txCount": 4740
     },
     {
-      "height": 970662,
-      "id": "00000000000000000000c72c92380d2515a30e497839faf41bc340071d949d36",
-      "timestamp": 1791566480,
-      "txCount": 3516
+      "height": 970693,
+      "id": "00000000000000000001e41d15031f673611fe149c42703c9db946e22a949ef5",
+      "timestamp": 1791589365,
+      "txCount": 5274
     },
     {
-      "height": 970661,
-      "id": "00000000000000000001d2e7523d90ac7aca4d8b82ac5afffa223511cbe14ca8",
-      "timestamp": 1791566141,
-      "txCount": 3417
+      "height": 970692,
+      "id": "00000000000000000001ac65a8bc999eface611b11d497b44c0041ef859a7b99",
+      "timestamp": 1791589292,
+      "txCount": 3302
     },
     {
-      "height": 970660,
-      "id": "000000000000000000014d8fc2e3075bf53e73e5a7f4055d6fe8640fa30abef9",
-      "timestamp": 1791566084,
-      "txCount": 4028
+      "height": 970691,
+      "id": "0000000000000000000063af89c9cd085198e55a487af91c28ed89ac11247d6f",
+      "timestamp": 1791588193,
+      "txCount": 4658
     }
   ],
   "news": [
+    {
+      "title": "U.S. CFTC moves to fold event contracts into swaps regulations as legal fight rages",
+      "link": "https://www.coindesk.com/policy/2026/10/09/u-s-cftc-moves-to-fold-event-contracts-into-swaps-regulations-as-legal-fight-rages",
+      "pubDate": "Fri, 09 Oct 2026 21:21:54 +0000"
+    },
     {
       "title": "Robinhood Chain considers technology that gives paying traders priority",
       "link": "https://www.coindesk.com/business/2026/10/09/robinhood-chain-considers-technology-that-gives-paying-traders-priority",
@@ -480,11 +485,6 @@
       "title": "MARA transfers $81.1 million in bitcoin to Galaxy Digital as strategy pivots to AI",
       "link": "https://www.coindesk.com/markets/2026/10/09/mara-transfers-usd81-1-million-in-bitcoin-to-galaxy-digital-as-strategy-pivots-to-ai",
       "pubDate": "Fri, 09 Oct 2026 09:08:09 +0000"
-    },
-    {
-      "title": "Sam Altman-backed bitcoin insurer Meanwhile secures $37.5 million in Bain Capital Crypto-led round",
-      "link": "https://www.coindesk.com/business/2026/10/09/sam-altman-backed-bitcoin-insurer-meanwhile-secures-usd37-5-million-in-bain-capital-crypto-led-round",
-      "pubDate": "Fri, 09 Oct 2026 09:06:00 +0000"
     }
   ]
 }
