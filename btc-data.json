@@ -1,13 +1,13 @@
 {
-  "fetchedAt": "2026-10-10T09:44:34.837Z",
+  "fetchedAt": "2026-10-10T17:18:44.649Z",
   "price": {
-    "usd": 82837,
-    "time": 1791624910
+    "usd": 82984,
+    "time": 1791652508
   },
   "moves": {
-    "d1": 0.3302952056131625,
-    "d7": -2.2489069171443443,
-    "d30": 8.205883934131752
+    "d1": 0.5083382708524375,
+    "d7": -2.075440824900776,
+    "d30": 8.3979027776234
   },
   "history90d": [
     {
@@ -372,60 +372,75 @@
     },
     {
       "date": "2026-10-10",
-      "close": 82826.30231152137
+      "close": 82994.42685608407
     }
   ],
   "blocks": [
     {
-      "height": 970748,
-      "id": "00000000000000000001708c330c35bf5c57cc39f549eafe5a73496771d56b45",
-      "timestamp": 1791623751,
-      "txCount": 5589
+      "height": 970797,
+      "id": "000000000000000000002d965f7f37ef7451182459e3227d58d5c49451920037",
+      "timestamp": 1791652579,
+      "txCount": 3509
     },
     {
-      "height": 970747,
-      "id": "0000000000000000000169dd59634e9e3504bc2212d8f45e5d8e085542b40c8c",
-      "timestamp": 1791623636,
-      "txCount": 3653
+      "height": 970796,
+      "id": "0000000000000000000200ad11ab3c27116f104ae185f8b225a8f186a3cffb45",
+      "timestamp": 1791651676,
+      "txCount": 3959
     },
     {
-      "height": 970746,
-      "id": "00000000000000000001d17900ca9e078e6a7c2a9d86fcb12d71ddc03d7f0114",
-      "timestamp": 1791622281,
-      "txCount": 5909
+      "height": 970795,
+      "id": "0000000000000000000076084d9b09d53ea5d25226cf041863f90c601e92d6e7",
+      "timestamp": 1791651286,
+      "txCount": 7184
     },
     {
-      "height": 970745,
-      "id": "000000000000000000007a7191157ed4f4e61d5e9584d7661148bd6bfbcb4aa8",
-      "timestamp": 1791622278,
-      "txCount": 3668
+      "height": 970794,
+      "id": "00000000000000000000847d778bf52870000b8a55c065fc9920045288c8109d",
+      "timestamp": 1791651256,
+      "txCount": 3169
     },
     {
-      "height": 970744,
-      "id": "000000000000000000000cc7724b59be86fd2a49ee8598924c39f8467ebb7cde",
-      "timestamp": 1791621384,
-      "txCount": 4131
+      "height": 970793,
+      "id": "000000000000000000020d8cb3ac6bceeb4bc39d1f9c4a689c715f52145fb6b7",
+      "timestamp": 1791651059,
+      "txCount": 4179
     },
     {
-      "height": 970743,
-      "id": "00000000000000000000904c282a3767c831ea33b3124c99e2f2925af531fec3",
-      "timestamp": 1791621169,
-      "txCount": 3095
+      "height": 970792,
+      "id": "00000000000000000000eb0a100f16d837ca7f0d081b781c2708fbce3c9a51f8",
+      "timestamp": 1791649661,
+      "txCount": 3175
     },
     {
-      "height": 970742,
-      "id": "000000000000000000005b9d6685a0893573c87e203cb601e021ab16f03082f5",
-      "timestamp": 1791620276,
-      "txCount": 4431
+      "height": 970791,
+      "id": "00000000000000000001af95020c3e7bb2edc134bab358491f7dbf476b2645fc",
+      "timestamp": 1791648785,
+      "txCount": 4787
     },
     {
-      "height": 970741,
-      "id": "00000000000000000001d84708227e8b97d755f91297292cf52d3e6428b63396",
-      "timestamp": 1791618146,
-      "txCount": 5222
+      "height": 970790,
+      "id": "000000000000000000009539a0a323c3b932de60b4cd9f5b922ba687731cf95b",
+      "timestamp": 1791648227,
+      "txCount": 4311
     }
   ],
   "news": [
+    {
+      "title": "One year after 10/10 flash crash, bitcoin and ether liquidity have rebuilt, but altcoins still face risks",
+      "link": "https://www.coindesk.com/markets/2026/10/10/one-year-after-10-10-bitcoin-and-ether-liquidity-have-rebuilt-but-other-altcoins-still-face-risks",
+      "pubDate": "Sat, 10 Oct 2026 12:00:00 +0000"
+    },
+    {
+      "title": "Tokenized commodities look beyond gold as lending and oil open new markets",
+      "link": "https://www.coindesk.com/business/2026/10/05/tokenized-commodities-look-beyond-gold-as-lending-and-oil-open-new-markets",
+      "pubDate": "Sat, 10 Oct 2026 12:00:00 +0000"
+    },
+    {
+      "title": "Bitcoin's $19 billion wake-up call: One-year after flash crash, has crypto learned anything?",
+      "link": "https://www.coindesk.com/markets/2026/10/10/bitcoin-s-usd19-billion-wake-up-call-one-year-later-has-crypto-learned-anything",
+      "pubDate": "Sat, 10 Oct 2026 11:00:00 +0000"
+    },
     {
       "title": "Bitcoin's volatility has plunged, but extreme price swings are more frequent than in 2018",
       "link": "https://www.coindesk.com/markets/2026/10/09/bitcoin-s-volatility-has-plunged-but-extreme-price-swings-are-more-frequent-than-in-2018",
@@ -470,21 +485,6 @@
       "title": "DWF Labs subsidiaries sue BitGo for $141 million over alleged token lock-up breach",
       "link": "https://www.coindesk.com/policy/2026/10/09/dwf-labs-subsidiaries-sue-bitgo-for-usd141-million-over-alleged-token-lock-up-breach",
       "pubDate": "Fri, 09 Oct 2026 12:23:54 +0000"
-    },
-    {
-      "title": "Zcash developers set January target for quantum-resistant payments after ‘bunker mode’ scare",
-      "link": "https://www.coindesk.com/tech/2026/10/09/zcash-developers-set-january-target-for-quantum-resistant-payments-after-bunker-mode-scare",
-      "pubDate": "Fri, 09 Oct 2026 11:39:05 +0000"
-    },
-    {
-      "title": "Trump's Iran pledge underpins crypto gains as bitcoin bears face liquidation pressure",
-      "link": "https://www.coindesk.com/daybook-us/2026/10/09/trump-s-iran-pledge-underpins-crypto-gains-as-bitcoin-bears-face-liquidation-pressure",
-      "pubDate": "Fri, 09 Oct 2026 11:09:04 +0000"
-    },
-    {
-      "title": "Bitcoin steadies near $82,500 after Trump rules out Iran strike before midterms",
-      "link": "https://www.coindesk.com/markets/2026/10/09/bitcoin-steadies-near-usd82-500-after-trump-rules-out-iran-strike-before-midterms",
-      "pubDate": "Fri, 09 Oct 2026 10:44:22 +0000"
     }
   ]
 }
