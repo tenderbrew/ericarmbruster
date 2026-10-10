@@ -1,13 +1,13 @@
 {
-  "fetchedAt": "2026-10-10T00:45:30.212Z",
+  "fetchedAt": "2026-10-10T09:44:34.837Z",
   "price": {
-    "usd": 82492,
-    "time": 1791592807
+    "usd": 82837,
+    "time": 1791624910
   },
   "moves": {
-    "d1": -0.08756096790756285,
-    "d7": -2.6560212152669793,
-    "d30": 7.755227464712577
+    "d1": 0.3302952056131625,
+    "d7": -2.2489069171443443,
+    "d30": 8.205883934131752
   },
   "history90d": [
     {
@@ -372,60 +372,80 @@
     },
     {
       "date": "2026-10-10",
-      "close": 82507.91172068586
+      "close": 82826.30231152137
     }
   ],
   "blocks": [
     {
-      "height": 970698,
-      "id": "00000000000000000000bc9048d42387e67fc3843fa4425e89fdab9afa1bd718",
-      "timestamp": 1791593095,
-      "txCount": 4624
+      "height": 970748,
+      "id": "00000000000000000001708c330c35bf5c57cc39f549eafe5a73496771d56b45",
+      "timestamp": 1791623751,
+      "txCount": 5589
     },
     {
-      "height": 970697,
-      "id": "00000000000000000000e7493735a2c0aa70df633b15c350af7bbc4872a669ca",
-      "timestamp": 1791592910,
-      "txCount": 3317
+      "height": 970747,
+      "id": "0000000000000000000169dd59634e9e3504bc2212d8f45e5d8e085542b40c8c",
+      "timestamp": 1791623636,
+      "txCount": 3653
     },
     {
-      "height": 970696,
-      "id": "00000000000000000000bff27b21c9fc72ce0da166121eed03782288514e1d60",
-      "timestamp": 1791591453,
-      "txCount": 5346
+      "height": 970746,
+      "id": "00000000000000000001d17900ca9e078e6a7c2a9d86fcb12d71ddc03d7f0114",
+      "timestamp": 1791622281,
+      "txCount": 5909
     },
     {
-      "height": 970695,
-      "id": "000000000000000000000fc62ec816aeebc9f42fadd4584088711d0cd95f62ad",
-      "timestamp": 1791590573,
-      "txCount": 5602
+      "height": 970745,
+      "id": "000000000000000000007a7191157ed4f4e61d5e9584d7661148bd6bfbcb4aa8",
+      "timestamp": 1791622278,
+      "txCount": 3668
     },
     {
-      "height": 970694,
-      "id": "000000000000000000016e6e2b87fae2ee9d15d03646c3332d8ba8f56e7fab8d",
-      "timestamp": 1791590275,
-      "txCount": 4740
+      "height": 970744,
+      "id": "000000000000000000000cc7724b59be86fd2a49ee8598924c39f8467ebb7cde",
+      "timestamp": 1791621384,
+      "txCount": 4131
     },
     {
-      "height": 970693,
-      "id": "00000000000000000001e41d15031f673611fe149c42703c9db946e22a949ef5",
-      "timestamp": 1791589365,
-      "txCount": 5274
+      "height": 970743,
+      "id": "00000000000000000000904c282a3767c831ea33b3124c99e2f2925af531fec3",
+      "timestamp": 1791621169,
+      "txCount": 3095
     },
     {
-      "height": 970692,
-      "id": "00000000000000000001ac65a8bc999eface611b11d497b44c0041ef859a7b99",
-      "timestamp": 1791589292,
-      "txCount": 3302
+      "height": 970742,
+      "id": "000000000000000000005b9d6685a0893573c87e203cb601e021ab16f03082f5",
+      "timestamp": 1791620276,
+      "txCount": 4431
     },
     {
-      "height": 970691,
-      "id": "0000000000000000000063af89c9cd085198e55a487af91c28ed89ac11247d6f",
-      "timestamp": 1791588193,
-      "txCount": 4658
+      "height": 970741,
+      "id": "00000000000000000001d84708227e8b97d755f91297292cf52d3e6428b63396",
+      "timestamp": 1791618146,
+      "txCount": 5222
     }
   ],
   "news": [
+    {
+      "title": "Bitcoin's volatility has plunged, but extreme price swings are more frequent than in 2018",
+      "link": "https://www.coindesk.com/markets/2026/10/09/bitcoin-s-volatility-has-plunged-but-extreme-price-swings-are-more-frequent-than-in-2018",
+      "pubDate": "Sat, 10 Oct 2026 05:43:00 +0000"
+    },
+    {
+      "title": "Robinhood Chain slowdown spreads from fees to trading as transactions fall more than 40%",
+      "link": "https://www.coindesk.com/markets/2026/10/10/robinhood-chain-slowdown-spreads-from-fees-to-trading-as-transactions-fall-more-than-40",
+      "pubDate": "Sat, 10 Oct 2026 04:44:35 +0000"
+    },
+    {
+      "title": "XRP Ledger patched decade-old bug that could create billions of dollars in XRP from nothing",
+      "link": "https://www.coindesk.com/tech/2026/10/10/xrp-ledger-patched-decade-old-bug-that-could-create-billions-of-dollars-in-xrp-from-nothing",
+      "pubDate": "Sat, 10 Oct 2026 04:20:07 +0000"
+    },
+    {
+      "title": "Visa survey says nearly half of APAC consumers open to using stablecoins by 2031",
+      "link": "https://www.coindesk.com/business/2026/10/05/1-2-billion-apac-consumers-could-adopt-stablecoins-by-2031-according-to-visa",
+      "pubDate": "Sat, 10 Oct 2026 03:00:00 +0000"
+    },
     {
       "title": "U.S. CFTC moves to fold event contracts into swaps regulations as legal fight rages",
       "link": "https://www.coindesk.com/policy/2026/10/09/u-s-cftc-moves-to-fold-event-contracts-into-swaps-regulations-as-legal-fight-rages",
@@ -465,26 +485,6 @@
       "title": "Bitcoin steadies near $82,500 after Trump rules out Iran strike before midterms",
       "link": "https://www.coindesk.com/markets/2026/10/09/bitcoin-steadies-near-usd82-500-after-trump-rules-out-iran-strike-before-midterms",
       "pubDate": "Fri, 09 Oct 2026 10:44:22 +0000"
-    },
-    {
-      "title": "Thailand opens door to locally listed bitcoin and ether ETFs",
-      "link": "https://www.coindesk.com/policy/2026/10/09/thailand-opens-door-to-locally-listed-bitcoin-and-ether-etfs",
-      "pubDate": "Fri, 09 Oct 2026 10:16:55 +0000"
-    },
-    {
-      "title": "UK slaps sanctions on three crypto exchanges over alleged Russia links",
-      "link": "https://www.coindesk.com/policy/2026/10/09/uk-slaps-sanctions-on-three-crypto-exchanges-over-alleged-russia-links",
-      "pubDate": "Fri, 09 Oct 2026 10:14:59 +0000"
-    },
-    {
-      "title": "Dark web drug market operator sentenced to 40 years, forfeits $101 million in bitcoin",
-      "link": "https://www.coindesk.com/policy/2026/10/09/dark-web-drug-market-operator-forfeits-1-230-bitcoin-and-faces-40-years-in-prison",
-      "pubDate": "Fri, 09 Oct 2026 09:20:16 +0000"
-    },
-    {
-      "title": "MARA transfers $81.1 million in bitcoin to Galaxy Digital as strategy pivots to AI",
-      "link": "https://www.coindesk.com/markets/2026/10/09/mara-transfers-usd81-1-million-in-bitcoin-to-galaxy-digital-as-strategy-pivots-to-ai",
-      "pubDate": "Fri, 09 Oct 2026 09:08:09 +0000"
     }
   ]
 }
