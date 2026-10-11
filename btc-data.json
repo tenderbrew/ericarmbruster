@@ -1,13 +1,13 @@
 {
-  "fetchedAt": "2026-10-11T12:42:14.267Z",
+  "fetchedAt": "2026-10-11T19:31:03.922Z",
   "price": {
-    "usd": 83100,
-    "time": 1791722407
+    "usd": 83636,
+    "time": 1791746712
   },
   "moves": {
-    "d1": 0.219610700231887,
-    "d7": -3.9192336913168924,
-    "d30": 7.63755907562913
+    "d1": 0.8660332193091813,
+    "d7": -3.2995069675930133,
+    "d30": 8.33182780805437
   },
   "history90d": [
     {
@@ -372,60 +372,80 @@
     },
     {
       "date": "2026-10-11",
-      "close": 83065.13633811174
+      "close": 83607.2068216611
     }
   ],
   "blocks": [
     {
-      "height": 970932,
-      "id": "0000000000000000000123aebc9bf518b6af268d0baa373b0392bd5b7a86c2aa",
-      "timestamp": 1791722407,
-      "txCount": 6964
+      "height": 970972,
+      "id": "00000000000000000000ff6face2251ea28e362e130bfecc072dda4ad7361bc5",
+      "timestamp": 1791746587,
+      "txCount": 4121
     },
     {
-      "height": 970931,
-      "id": "00000000000000000000b1f27375f79150f5bf0330829c12a89cfd48e7564e42",
-      "timestamp": 1791722292,
-      "txCount": 4332
+      "height": 970971,
+      "id": "00000000000000000000228b012a916bc4b627109b95ab2c60cbf0a29ab57dec",
+      "timestamp": 1791744946,
+      "txCount": 3706
     },
     {
-      "height": 970930,
-      "id": "000000000000000000021a2da819fdaafda0d68ee6df62c9140c333299ed830a",
-      "timestamp": 1791721181,
-      "txCount": 7123
+      "height": 970970,
+      "id": "0000000000000000000145fc93be2b5acbebb07f8f16b31e86ed9173bab04b39",
+      "timestamp": 1791743411,
+      "txCount": 3811
     },
     {
-      "height": 970929,
-      "id": "000000000000000000020203bbe5eacbc8740a70dd4b5097f890fe2b5ebc8b6a",
-      "timestamp": 1791720977,
-      "txCount": 6918
+      "height": 970969,
+      "id": "0000000000000000000024f94fb2d34e2dc165261c7c1bbd234e517f307caaa0",
+      "timestamp": 1791743016,
+      "txCount": 4416
     },
     {
-      "height": 970928,
-      "id": "00000000000000000000ae33c69dda0a227fd6730ab8e015e8feaa492a607617",
-      "timestamp": 1791720836,
-      "txCount": 6111
+      "height": 970968,
+      "id": "00000000000000000000e526747f77d1297a9bbbfb2d16d0d9a7c0dc4fc437b6",
+      "timestamp": 1791741066,
+      "txCount": 6517
     },
     {
-      "height": 970927,
-      "id": "00000000000000000000d4b4999e6a77fb853276d68ba4368f3af9ae087f5bf8",
-      "timestamp": 1791720529,
-      "txCount": 5815
+      "height": 970967,
+      "id": "000000000000000000013e0af55baa6de26e0b3e22900984b3a97a89f9fa90e8",
+      "timestamp": 1791741305,
+      "txCount": 6862
     },
     {
-      "height": 970926,
-      "id": "00000000000000000001a0c7786aa9bad8ee9ffcdecc5951f1df60237cefc531",
-      "timestamp": 1791720003,
-      "txCount": 6896
+      "height": 970966,
+      "id": "0000000000000000000116bf4debfa77da7e35c8eb840cd5d79e988727efc10b",
+      "timestamp": 1791740897,
+      "txCount": 6798
     },
     {
-      "height": 970925,
-      "id": "00000000000000000000efb04ca3d3dae09e672781a042587fab924b3d48d5f8",
-      "timestamp": 1791719727,
-      "txCount": 6745
+      "height": 970965,
+      "id": "00000000000000000000b93ac25e13311ff483c36803d073c2487639a6b71c5c",
+      "timestamp": 1791740689,
+      "txCount": 5249
     }
   ],
   "news": [
+    {
+      "title": "Everyone wants SCOTUS to take up prediction markets: State of Crypto",
+      "link": "https://www.coindesk.com/policy/2026/10/11/everyone-wants-scotus-to-take-up-prediction-markets-state-of-crypto",
+      "pubDate": "Sun, 11 Oct 2026 18:30:00 +0000"
+    },
+    {
+      "title": "Clarity's failure could speed crypto innovation while shielding incumbents",
+      "link": "https://www.coindesk.com/policy/2026/10/11/clarity-s-failure-could-speed-crypto-innovation-while-shielding-incumbents",
+      "pubDate": "Sun, 11 Oct 2026 16:00:00 +0000"
+    },
+    {
+      "title": "President Trump declares 'energy ceasefire' between Russia and Ukraine",
+      "link": "https://www.coindesk.com/markets/2026/10/11/president-trump-declares-energy-ceasefire-between-russia-and-ukraine",
+      "pubDate": "Sun, 11 Oct 2026 15:40:47 +0000"
+    },
+    {
+      "title": "IMF finds demand for tokenized stocks, says the market is still volatile, illiquid",
+      "link": "https://www.coindesk.com/business/2026/10/11/imf-finds-demand-for-tokenized-stocks-says-the-market-is-still-volatile-illiquid",
+      "pubDate": "Sun, 11 Oct 2026 13:00:00 +0000"
+    },
     {
       "title": "One year after 10/10 flash crash, bitcoin and ether liquidity have rebuilt, but altcoins still face risks",
       "link": "https://www.coindesk.com/markets/2026/10/10/one-year-after-10-10-bitcoin-and-ether-liquidity-have-rebuilt-but-other-altcoins-still-face-risks",
@@ -465,26 +485,6 @@
       "title": "U.S. CFTC moves to fold event contracts into swaps regulations as legal fight rages",
       "link": "https://www.coindesk.com/policy/2026/10/09/u-s-cftc-moves-to-fold-event-contracts-into-swaps-regulations-as-legal-fight-rages",
       "pubDate": "Fri, 09 Oct 2026 21:21:54 +0000"
-    },
-    {
-      "title": "Robinhood Chain considers technology that gives paying traders priority",
-      "link": "https://www.coindesk.com/business/2026/10/09/robinhood-chain-considers-technology-that-gives-paying-traders-priority",
-      "pubDate": "Fri, 09 Oct 2026 18:11:00 +0000"
-    },
-    {
-      "title": "New York AG secures up to $35 million and lifetime crypto ban from Celsius’ Alex Mashinsky",
-      "link": "https://www.coindesk.com/policy/2026/10/09/new-york-ag-secures-up-to-usd35-million-and-lifetime-crypto-ban-from-celsius-alex-mashinsky",
-      "pubDate": "Fri, 09 Oct 2026 14:55:23 +0000"
-    },
-    {
-      "title": "Ledger investigates potential wallet tampering after reports of $86 million in crypto stolen",
-      "link": "https://www.coindesk.com/business/2026/10/09/ledger-investigates-potential-wallet-tampering-after-reports-of-usd86-million-in-crypto-stolen",
-      "pubDate": "Fri, 09 Oct 2026 14:47:27 +0000"
-    },
-    {
-      "title": "DWF Labs subsidiaries sue BitGo for $141 million over alleged token lock-up breach",
-      "link": "https://www.coindesk.com/policy/2026/10/09/dwf-labs-subsidiaries-sue-bitgo-for-usd141-million-over-alleged-token-lock-up-breach",
-      "pubDate": "Fri, 09 Oct 2026 12:23:54 +0000"
     }
   ]
 }
