@@ -1,13 +1,13 @@
 {
-  "fetchedAt": "2026-10-12T10:39:55.318Z",
+  "fetchedAt": "2026-10-12T21:14:43.187Z",
   "price": {
-    "usd": 83422,
-    "time": 1791801307
+    "usd": 82827,
+    "time": 1791839409
   },
   "moves": {
-    "d1": -0.3212647140754532,
-    "d7": -2.7385430324294413,
-    "d30": 7.973392485901032
+    "d1": -1.032214433515466,
+    "d7": -3.4322517291246135,
+    "d30": 7.2032818612563165
   },
   "history90d": [
     {
@@ -372,60 +372,100 @@
     },
     {
       "date": "2026-10-12",
-      "close": 83427.63777048749
+      "close": 82828.88619111563
     }
   ],
   "blocks": [
     {
-      "height": 971082,
-      "id": "00000000000000000001866099083f25fb5d30324416fb11eaa504895f86d24e",
-      "timestamp": 1791801351,
-      "txCount": 4344
+      "height": 971140,
+      "id": "000000000000000000014e15f417b33d11f536aec0aa2b83f743ba40d4eaba9e",
+      "timestamp": 1791839060,
+      "txCount": 3890
     },
     {
-      "height": 971081,
-      "id": "00000000000000000000cf7649d6598c1762ce510f133997bd0adca70628ab65",
-      "timestamp": 1791801229,
-      "txCount": 4371
+      "height": 971139,
+      "id": "0000000000000000000110d170b6742c0109e83d0337e0ea149abbbfdd485b54",
+      "timestamp": 1791838436,
+      "txCount": 3347
     },
     {
-      "height": 971080,
-      "id": "00000000000000000001d5d74a49575259fe843c620a902860324cf6df11d225",
-      "timestamp": 1791799375,
-      "txCount": 5407
+      "height": 971138,
+      "id": "00000000000000000000ad668e31268f3ffd795d6e23a3fb4f98437dfeb4e6f2",
+      "timestamp": 1791837412,
+      "txCount": 4250
     },
     {
-      "height": 971079,
-      "id": "00000000000000000001fb499dd39eab8b35800445f7ff3a427c556dbc1e11d0",
-      "timestamp": 1791798983,
-      "txCount": 6767
+      "height": 971137,
+      "id": "000000000000000000005a67290f12c3d3b4faf9035001309e8aaa8a4b2a63ed",
+      "timestamp": 1791837034,
+      "txCount": 3306
     },
     {
-      "height": 971078,
-      "id": "000000000000000000003e2fef1ada739ba9619aed5842507a4d6cf49aee02d7",
-      "timestamp": 1791798732,
-      "txCount": 6634
+      "height": 971136,
+      "id": "0000000000000000000017de10350c1070988724ea7978b0cc8f9449ff42c4b1",
+      "timestamp": 1791836246,
+      "txCount": 4331
     },
     {
-      "height": 971077,
-      "id": "00000000000000000001e2268e9c623376d2b61acbd11edd681212f68f01546b",
-      "timestamp": 1791798648,
-      "txCount": 4494
+      "height": 971135,
+      "id": "0000000000000000000192df4ef16d411de42a81e39fca090cb06448c5d62dde",
+      "timestamp": 1791835340,
+      "txCount": 3213
     },
     {
-      "height": 971076,
-      "id": "000000000000000000002ef8e878fcd1eb85a302576bba89724476c88d1c75d8",
-      "timestamp": 1791797832,
-      "txCount": 4483
+      "height": 971134,
+      "id": "000000000000000000016514a5bc1b368b3920c25fb8a6a6bb4fb7587182a0dd",
+      "timestamp": 1791835085,
+      "txCount": 2731
     },
     {
-      "height": 971075,
-      "id": "00000000000000000000dedbfb41c1adf2e563fbeafa57ccb48527259d5d2c02",
-      "timestamp": 1791797294,
-      "txCount": 6099
+      "height": 971133,
+      "id": "00000000000000000000b46b1ab3e7cc9ddbd54b812c63778fa32131d12bff33",
+      "timestamp": 1791834933,
+      "txCount": 3015
     }
   ],
   "news": [
+    {
+      "title": "Palantir's Europe head warns the region is 'missing the boat' on AI just as it did with the internet",
+      "link": "https://www.coindesk.com/policy/2026/10/12/palantir-executive-warns-europe-is-missing-the-boat-on-ai-just-like-it-did-with-the-internet",
+      "pubDate": "Mon, 12 Oct 2026 16:18:03 +0000"
+    },
+    {
+      "title": "Tom Lee sees $2 trillion wealth transfer fueling crypto demand as Bitmine buys more ether",
+      "link": "https://www.coindesk.com/business/2026/10/12/tom-lee-sees-usd2-trillion-wealth-transfer-fueling-crypto-demand-as-bitmine-buys-more-ether",
+      "pubDate": "Mon, 12 Oct 2026 15:27:09 +0000"
+    },
+    {
+      "title": "Tokenized catastrophe bonds target the disaster-insurance gap",
+      "link": "https://www.coindesk.com/business/2026/10/12/tokenized-catastrophe-bonds-target-the-disaster-insurance-gap",
+      "pubDate": "Mon, 12 Oct 2026 15:00:00 +0000"
+    },
+    {
+      "title": "Standard Chartered offers RLUSD custody in Dubai and plans LMAX collateral link",
+      "link": "https://www.coindesk.com/business/2026/10/12/standard-chartered-offers-rlusd-custody-in-dubai-and-plans-lmax-collateral-link",
+      "pubDate": "Mon, 12 Oct 2026 12:09:09 +0000"
+    },
+    {
+      "title": "Ledger claims CryptoBilis cases are limited as up to $93 million is traced, $10 million frozen",
+      "link": "https://www.coindesk.com/tech/2026/10/12/ledger-claims-cryptobilis-cases-are-limited-as-up-to-usd93m-is-traced-usd10m-frozen",
+      "pubDate": "Mon, 12 Oct 2026 12:01:53 +0000"
+    },
+    {
+      "title": "Bitcoin falls below $83,000 as dollar strength keeps markets on edge",
+      "link": "https://www.coindesk.com/markets/2026/10/12/bitcoin-holds-usd83-000-as-dollar-strength-keeps-markets-on-edge",
+      "pubDate": "Mon, 12 Oct 2026 11:21:11 +0000"
+    },
+    {
+      "title": "Global financial watchdog calls for cross-border information sharing, planning for stablecoin crisis",
+      "link": "https://www.coindesk.com/policy/2026/10/12/global-financial-watchdog-calls-for-cross-border-information-sharing-planning-for-stablecoin-crisis",
+      "pubDate": "Mon, 12 Oct 2026 11:02:38 +0000"
+    },
+    {
+      "title": "South Korea just got its first traditional bank loans backed by bitcoin",
+      "link": "https://www.coindesk.com/business/2026/10/12/south-korea-just-got-its-first-traditional-bank-loans-backed-by-bitcoin",
+      "pubDate": "Mon, 12 Oct 2026 10:57:37 +0000"
+    },
     {
       "title": "SWI raises $894 million to repurpose former FTX bitcoin miner Genesis Digital to AI",
       "link": "https://www.coindesk.com/business/2026/10/12/swi-raises-usd894-million-to-repurpose-former-ftx-bitcoin-miner-genesis-digital-to-ai",
@@ -445,46 +485,6 @@
       "title": "Why a bug that could have threatened XRP's 100 billion supply cap stayed hidden for years",
       "link": "https://www.coindesk.com/tech/2026/10/12/why-a-bug-that-could-have-threatened-xrp-s-100-billion-supply-cap-stayed-hidden-for-years",
       "pubDate": "Mon, 12 Oct 2026 08:32:17 +0000"
-    },
-    {
-      "title": "Ledger says unauthorized implant found in at least one device sold by CryptoBilis",
-      "link": "https://www.coindesk.com/tech/2026/10/12/ledger-says-unauthorized-implant-found-in-at-least-one-device-sold-by-cryptobilis",
-      "pubDate": "Mon, 12 Oct 2026 07:49:40 +0000"
-    },
-    {
-      "title": "Bitcoin shrugs off ETF outflows to trade above $84,000 as oil falls",
-      "link": "https://www.coindesk.com/markets/2026/10/12/bitcoin-shrugs-off-etf-outflows-to-trade-above-usd84-000-as-oil-falls",
-      "pubDate": "Mon, 12 Oct 2026 04:49:30 +0000"
-    },
-    {
-      "title": "Everyone wants SCOTUS to take up prediction markets: State of Crypto",
-      "link": "https://www.coindesk.com/policy/2026/10/11/everyone-wants-scotus-to-take-up-prediction-markets-state-of-crypto",
-      "pubDate": "Sun, 11 Oct 2026 18:30:00 +0000"
-    },
-    {
-      "title": "Clarity's failure could speed crypto innovation while shielding incumbents",
-      "link": "https://www.coindesk.com/policy/2026/10/11/clarity-s-failure-could-speed-crypto-innovation-while-shielding-incumbents",
-      "pubDate": "Sun, 11 Oct 2026 16:00:00 +0000"
-    },
-    {
-      "title": "President Trump declares 'energy ceasefire' between Russia and Ukraine",
-      "link": "https://www.coindesk.com/markets/2026/10/11/president-trump-declares-energy-ceasefire-between-russia-and-ukraine",
-      "pubDate": "Sun, 11 Oct 2026 15:40:47 +0000"
-    },
-    {
-      "title": "IMF finds demand for tokenized stocks, says the market is still volatile, illiquid",
-      "link": "https://www.coindesk.com/business/2026/10/11/imf-finds-demand-for-tokenized-stocks-says-the-market-is-still-volatile-illiquid",
-      "pubDate": "Sun, 11 Oct 2026 13:00:00 +0000"
-    },
-    {
-      "title": "One year after 10/10 flash crash, bitcoin and ether liquidity have rebuilt, but altcoins still face risks",
-      "link": "https://www.coindesk.com/markets/2026/10/10/one-year-after-10-10-bitcoin-and-ether-liquidity-have-rebuilt-but-other-altcoins-still-face-risks",
-      "pubDate": "Sat, 10 Oct 2026 12:00:00 +0000"
-    },
-    {
-      "title": "Tokenized commodities look beyond gold as lending and oil open new markets",
-      "link": "https://www.coindesk.com/business/2026/10/05/tokenized-commodities-look-beyond-gold-as-lending-and-oil-open-new-markets",
-      "pubDate": "Sat, 10 Oct 2026 12:00:00 +0000"
     }
   ]
 }
