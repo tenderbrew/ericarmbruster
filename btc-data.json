@@ -1,13 +1,13 @@
 {
-  "fetchedAt": "2026-10-12T00:29:42.252Z",
+  "fetchedAt": "2026-10-12T10:39:55.318Z",
   "price": {
-    "usd": 83697,
-    "time": 1791764707
+    "usd": 83422,
+    "time": 1791801307
   },
   "moves": {
-    "d1": 0.007325492388421395,
-    "d7": -2.4179213658896637,
-    "d30": 8.329325967879676
+    "d1": -0.3212647140754532,
+    "d7": -2.7385430324294413,
+    "d30": 7.973392485901032
   },
   "history90d": [
     {
@@ -372,60 +372,90 @@
     },
     {
       "date": "2026-10-12",
-      "close": 83753.159469988
+      "close": 83427.63777048749
     }
   ],
   "blocks": [
     {
-      "height": 971011,
-      "id": "0000000000000000000195c078f05b5fe008d4750e22aa683b1a7c8c93894773",
-      "timestamp": 1791764751,
-      "txCount": 6352
+      "height": 971082,
+      "id": "00000000000000000001866099083f25fb5d30324416fb11eaa504895f86d24e",
+      "timestamp": 1791801351,
+      "txCount": 4344
     },
     {
-      "height": 971010,
-      "id": "000000000000000000018dd13274c1a60d382ad2a10e4b6aa175c5cb3f1035d1",
-      "timestamp": 1791764426,
-      "txCount": 6530
+      "height": 971081,
+      "id": "00000000000000000000cf7649d6598c1762ce510f133997bd0adca70628ab65",
+      "timestamp": 1791801229,
+      "txCount": 4371
     },
     {
-      "height": 971009,
-      "id": "000000000000000000013097d9f3186c236ec5b86b1cc41e381a03fd62e883fe",
-      "timestamp": 1791764177,
-      "txCount": 6509
+      "height": 971080,
+      "id": "00000000000000000001d5d74a49575259fe843c620a902860324cf6df11d225",
+      "timestamp": 1791799375,
+      "txCount": 5407
     },
     {
-      "height": 971008,
-      "id": "00000000000000000001db3a5a180a6481d4a921a9ddca9fa703705f9d7c932b",
-      "timestamp": 1791763843,
-      "txCount": 6837
+      "height": 971079,
+      "id": "00000000000000000001fb499dd39eab8b35800445f7ff3a427c556dbc1e11d0",
+      "timestamp": 1791798983,
+      "txCount": 6767
     },
     {
-      "height": 971007,
-      "id": "000000000000000000008905a93425474171aaef3bf0f194a8ebf2d86ec0832d",
-      "timestamp": 1791763629,
-      "txCount": 6478
+      "height": 971078,
+      "id": "000000000000000000003e2fef1ada739ba9619aed5842507a4d6cf49aee02d7",
+      "timestamp": 1791798732,
+      "txCount": 6634
     },
     {
-      "height": 971006,
-      "id": "0000000000000000000135c23dde17bdc0804490c3a750790b4441ac5f44db4e",
-      "timestamp": 1791763499,
-      "txCount": 4387
+      "height": 971077,
+      "id": "00000000000000000001e2268e9c623376d2b61acbd11edd681212f68f01546b",
+      "timestamp": 1791798648,
+      "txCount": 4494
     },
     {
-      "height": 971005,
-      "id": "0000000000000000000042601b4858534f518c3fc526a6f1544a728d92f8ead4",
-      "timestamp": 1791762792,
-      "txCount": 6318
+      "height": 971076,
+      "id": "000000000000000000002ef8e878fcd1eb85a302576bba89724476c88d1c75d8",
+      "timestamp": 1791797832,
+      "txCount": 4483
     },
     {
-      "height": 971004,
-      "id": "000000000000000000012ae85ff3cdc65ea795ae3facbcad20da8f6b462956a1",
-      "timestamp": 1791762944,
-      "txCount": 4846
+      "height": 971075,
+      "id": "00000000000000000000dedbfb41c1adf2e563fbeafa57ccb48527259d5d2c02",
+      "timestamp": 1791797294,
+      "txCount": 6099
     }
   ],
   "news": [
+    {
+      "title": "SWI raises $894 million to repurpose former FTX bitcoin miner Genesis Digital to AI",
+      "link": "https://www.coindesk.com/business/2026/10/12/swi-raises-usd894-million-to-repurpose-former-ftx-bitcoin-miner-genesis-digital-to-ai",
+      "pubDate": "Mon, 12 Oct 2026 10:27:00 +0000"
+    },
+    {
+      "title": "Altcoins rally on thin trading as bitcoin holds below $83,500",
+      "link": "https://www.coindesk.com/markets/2026/10/12/altcoins-rally-on-thin-trading-as-bitcoin-holds-near-usd84-000",
+      "pubDate": "Mon, 12 Oct 2026 10:20:54 +0000"
+    },
+    {
+      "title": "U.S. inflation, Ethereum upgrade talks: Crypto Week Ahead",
+      "link": "https://www.coindesk.com/markets/2026/10/12/u-s-inflation-ethereum-upgrade-talks-crypto-week-ahead",
+      "pubDate": "Mon, 12 Oct 2026 08:58:24 +0000"
+    },
+    {
+      "title": "Why a bug that could have threatened XRP's 100 billion supply cap stayed hidden for years",
+      "link": "https://www.coindesk.com/tech/2026/10/12/why-a-bug-that-could-have-threatened-xrp-s-100-billion-supply-cap-stayed-hidden-for-years",
+      "pubDate": "Mon, 12 Oct 2026 08:32:17 +0000"
+    },
+    {
+      "title": "Ledger says unauthorized implant found in at least one device sold by CryptoBilis",
+      "link": "https://www.coindesk.com/tech/2026/10/12/ledger-says-unauthorized-implant-found-in-at-least-one-device-sold-by-cryptobilis",
+      "pubDate": "Mon, 12 Oct 2026 07:49:40 +0000"
+    },
+    {
+      "title": "Bitcoin shrugs off ETF outflows to trade above $84,000 as oil falls",
+      "link": "https://www.coindesk.com/markets/2026/10/12/bitcoin-shrugs-off-etf-outflows-to-trade-above-usd84-000-as-oil-falls",
+      "pubDate": "Mon, 12 Oct 2026 04:49:30 +0000"
+    },
     {
       "title": "Everyone wants SCOTUS to take up prediction markets: State of Crypto",
       "link": "https://www.coindesk.com/policy/2026/10/11/everyone-wants-scotus-to-take-up-prediction-markets-state-of-crypto",
@@ -455,36 +485,6 @@
       "title": "Tokenized commodities look beyond gold as lending and oil open new markets",
       "link": "https://www.coindesk.com/business/2026/10/05/tokenized-commodities-look-beyond-gold-as-lending-and-oil-open-new-markets",
       "pubDate": "Sat, 10 Oct 2026 12:00:00 +0000"
-    },
-    {
-      "title": "Bitcoin's $19 billion wake-up call: One-year after flash crash, has crypto learned anything?",
-      "link": "https://www.coindesk.com/markets/2026/10/10/bitcoin-s-usd19-billion-wake-up-call-one-year-later-has-crypto-learned-anything",
-      "pubDate": "Sat, 10 Oct 2026 11:00:00 +0000"
-    },
-    {
-      "title": "Bitcoin's volatility has plunged, but extreme price swings are more frequent than in 2018",
-      "link": "https://www.coindesk.com/markets/2026/10/09/bitcoin-s-volatility-has-plunged-but-extreme-price-swings-are-more-frequent-than-in-2018",
-      "pubDate": "Sat, 10 Oct 2026 05:43:00 +0000"
-    },
-    {
-      "title": "Robinhood Chain slowdown spreads from fees to trading as transactions fall more than 40%",
-      "link": "https://www.coindesk.com/markets/2026/10/10/robinhood-chain-slowdown-spreads-from-fees-to-trading-as-transactions-fall-more-than-40",
-      "pubDate": "Sat, 10 Oct 2026 04:44:35 +0000"
-    },
-    {
-      "title": "XRP Ledger patched decade-old bug that could create billions of dollars in XRP from nothing",
-      "link": "https://www.coindesk.com/tech/2026/10/10/xrp-ledger-patched-decade-old-bug-that-could-create-billions-of-dollars-in-xrp-from-nothing",
-      "pubDate": "Sat, 10 Oct 2026 04:20:07 +0000"
-    },
-    {
-      "title": "Visa survey says nearly half of APAC consumers open to using stablecoins by 2031",
-      "link": "https://www.coindesk.com/business/2026/10/05/1-2-billion-apac-consumers-could-adopt-stablecoins-by-2031-according-to-visa",
-      "pubDate": "Sat, 10 Oct 2026 03:00:00 +0000"
-    },
-    {
-      "title": "U.S. CFTC moves to fold event contracts into swaps regulations as legal fight rages",
-      "link": "https://www.coindesk.com/policy/2026/10/09/u-s-cftc-moves-to-fold-event-contracts-into-swaps-regulations-as-legal-fight-rages",
-      "pubDate": "Fri, 09 Oct 2026 21:21:54 +0000"
     }
   ]
 }
