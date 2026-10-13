@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-10-13T14:03:21.628Z",
+  "fetchedAt": "2026-10-13T22:36:51.243Z",
   "indicators": {
     "UNRATE": {
       "latest": {
@@ -63,12 +63,12 @@
     },
     "T10YIE": {
       "latest": {
-        "date": "2026-10-09",
+        "date": "2026-10-13",
         "value": 2.33
       },
       "previous": {
-        "date": "2026-10-08",
-        "value": 2.35
+        "date": "2026-10-12",
+        "value": 0
       }
     },
     "PCE": {
@@ -123,52 +123,52 @@
     },
     "DGS2": {
       "latest": {
-        "date": "2026-10-08",
-        "value": 4.75
+        "date": "2026-10-09",
+        "value": 4.8
       },
       "previous": {
-        "date": "2026-10-07",
-        "value": 4.77
+        "date": "2026-10-08",
+        "value": 4.75
       }
     },
     "DGS10": {
       "latest": {
-        "date": "2026-10-08",
-        "value": 5.22
+        "date": "2026-10-09",
+        "value": 5.24
       },
       "previous": {
-        "date": "2026-10-07",
-        "value": 5.28
+        "date": "2026-10-08",
+        "value": 5.22
       }
     },
     "T10Y2Y": {
       "latest": {
-        "date": "2026-10-09",
-        "value": 0.44
+        "date": "2026-10-13",
+        "value": 0.42
       },
       "previous": {
-        "date": "2026-10-08",
-        "value": 0.47
+        "date": "2026-10-12",
+        "value": 0
       }
     },
     "DFII10": {
       "latest": {
-        "date": "2026-10-08",
-        "value": 2.87
+        "date": "2026-10-09",
+        "value": 2.91
       },
       "previous": {
-        "date": "2026-10-07",
-        "value": 2.92
+        "date": "2026-10-08",
+        "value": 2.87
       }
     },
     "BAMLH0A0HYM2": {
       "latest": {
-        "date": "2026-10-08",
-        "value": 3.15
+        "date": "2026-10-12",
+        "value": 3.11
       },
       "previous": {
-        "date": "2026-10-07",
-        "value": 3.09
+        "date": "2026-10-09",
+        "value": 3.11
       }
     },
     "MORTGAGE30US": {
@@ -233,12 +233,12 @@
     },
     "DTWEXBGS": {
       "latest": {
-        "date": "2026-10-02",
-        "value": 121.3848
+        "date": "2026-10-09",
+        "value": 121.6023
       },
       "previous": {
-        "date": "2026-10-01",
-        "value": 121.7882
+        "date": "2026-10-08",
+        "value": 121.4469
       }
     },
     "PERMIT": {
