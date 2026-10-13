@@ -1,13 +1,13 @@
 {
-  "fetchedAt": "2026-10-13T02:34:16.296Z",
+  "fetchedAt": "2026-10-13T10:27:45.868Z",
   "price": {
-    "usd": 82654,
-    "time": 1791858610
+    "usd": 83437,
+    "time": 1791887110
   },
   "moves": {
-    "d1": 1.0503732145816569,
-    "d7": -3.373958612822825,
-    "d30": 7.595714103196438
+    "d1": 2.007646210770808,
+    "d7": -2.4585983107665466,
+    "d30": 8.6149925911438
   },
   "history90d": [
     {
@@ -372,60 +372,90 @@
     },
     {
       "date": "2026-10-13",
-      "close": 82647.54151373512
+      "close": 83434.63465845145
     }
   ],
   "blocks": [
     {
-      "height": 971173,
-      "id": "000000000000000000013eca6bb570d1a9eb424cd2753c8a56fd3e7087d21a42",
-      "timestamp": 1791858233,
-      "txCount": 6027
+      "height": 971229,
+      "id": "00000000000000000000a4e4fee63ce6c0987e23b6518408957f1c7dc9974187",
+      "timestamp": 1791886893,
+      "txCount": 3371
     },
     {
-      "height": 971172,
-      "id": "00000000000000000001bac717c0eb02ab45a2cd0fbc7369af9a1ce66408aea8",
-      "timestamp": 1791858095,
-      "txCount": 5685
+      "height": 971228,
+      "id": "00000000000000000001af5f29682bce685a04ac21aa7b4bbdd3cdfc9beccd2a",
+      "timestamp": 1791885822,
+      "txCount": 3799
     },
     {
-      "height": 971171,
-      "id": "00000000000000000002010defb848531e4ad3b00b446f4046230906b3b18606",
-      "timestamp": 1791857887,
-      "txCount": 3143
+      "height": 971227,
+      "id": "00000000000000000001b73e1b27ba9daa40f472f84e7b0963f0b913030b3938",
+      "timestamp": 1791884693,
+      "txCount": 6421
     },
     {
-      "height": 971170,
-      "id": "00000000000000000000421ea895f4ef7a007832498b1e9c9c50230518620f05",
-      "timestamp": 1791857044,
-      "txCount": 7130
+      "height": 971226,
+      "id": "000000000000000000010e03a458ac361a3491d3b968414e0209ea65460bb508",
+      "timestamp": 1791884622,
+      "txCount": 6855
     },
     {
-      "height": 971169,
-      "id": "000000000000000000010d5837c2020afc242149ae7b15cb0ca958c730602842",
-      "timestamp": 1791856528,
-      "txCount": 3023
+      "height": 971225,
+      "id": "00000000000000000000476fb4744b2d85aa2ec444199af378eafc3b99c2e952",
+      "timestamp": 1791884661,
+      "txCount": 3707
     },
     {
-      "height": 971168,
-      "id": "000000000000000000003ce11e860b7e7ee708f66e0e2b9d31fa43f428b0850a",
-      "timestamp": 1791856175,
-      "txCount": 3747
+      "height": 971224,
+      "id": "0000000000000000000110846badb40c82998e441eb69064e766e0b641036ae7",
+      "timestamp": 1791883501,
+      "txCount": 7197
     },
     {
-      "height": 971167,
-      "id": "00000000000000000001edb6cc06840c83a763ae7737f0008ea7145a7d534050",
-      "timestamp": 1791854260,
-      "txCount": 3794
+      "height": 971223,
+      "id": "00000000000000000001fd98f68092e049afde4aa717d897c5df2597260ffa7a",
+      "timestamp": 1791883460,
+      "txCount": 4298
     },
     {
-      "height": 971166,
-      "id": "00000000000000000000824025d9a9dfff104e2b24a426321f082ebef785f17e",
-      "timestamp": 1791852785,
-      "txCount": 3942
+      "height": 971222,
+      "id": "0000000000000000000093e4b3916b05cfbfff6595c54e62ae98866a16543bbf",
+      "timestamp": 1791882715,
+      "txCount": 5974
     }
   ],
   "news": [
+    {
+      "title": "Ledger says 'spy' chip inside CryptoBilis Ledger devices transmitted wallet keys over mobile network",
+      "link": "https://www.coindesk.com/tech/2026/10/13/ledger-says-spy-chip-inside-cryptobilis-ledger-devices-transmitted-wallet-keys-over-mobile-network",
+      "pubDate": "Tue, 13 Oct 2026 09:27:47 +0000"
+    },
+    {
+      "title": "UK court ruling boosts government’s chances of keeping $5 billion in seized bitcoin",
+      "link": "https://www.coindesk.com/policy/2026/10/13/u-k-court-ruling-boosts-government-s-chances-of-keeping-gbp3-8-billion-seized-bitcoin",
+      "pubDate": "Tue, 13 Oct 2026 09:25:03 +0000"
+    },
+    {
+      "title": "Bitcoin whale that sat through the March 2020 crash moves $378 million",
+      "link": "https://www.coindesk.com/markets/2026/10/13/bitcoin-whale-that-sat-through-the-march-2020-crash-moves-usd378-million",
+      "pubDate": "Tue, 13 Oct 2026 05:45:10 +0000"
+    },
+    {
+      "title": "Tokenized SanDisk bets saw more liquidations than XRP as Asia’s chip rout wipes out $800 million",
+      "link": "https://www.coindesk.com/markets/2026/10/13/tokenized-sandisk-bets-saw-more-liquidations-than-xrp-as-asia-s-chip-rout-wipes-out-usd800-million",
+      "pubDate": "Tue, 13 Oct 2026 05:27:17 +0000"
+    },
+    {
+      "title": "Once-largest Ethereum NFT marketplace Blur is shutting down after volumes collapse 99%",
+      "link": "https://www.coindesk.com/tech/2026/10/13/once-largest-ethereum-nft-marketplace-blur-is-shutting-down-after-volumes-collapse-99",
+      "pubDate": "Tue, 13 Oct 2026 04:43:18 +0000"
+    },
+    {
+      "title": "Bitcoin rebounds above $83,000 as it decouples from tumbling Korean stocks and Nasdaq futures",
+      "link": "https://www.coindesk.com/markets/2026/10/13/bitcoin-rebounds-above-usd83-000-as-it-decouples-from-tumbling-korean-stocks-and-nasdaq-futures",
+      "pubDate": "Tue, 13 Oct 2026 04:18:20 +0000"
+    },
     {
       "title": "Palantir's Europe head warns the region is 'missing the boat' on AI just as it did with the internet",
       "link": "https://www.coindesk.com/policy/2026/10/12/palantir-executive-warns-europe-is-missing-the-boat-on-ai-just-like-it-did-with-the-internet",
@@ -455,36 +485,6 @@
       "title": "Bitcoin falls below $83,000 as dollar strength keeps markets on edge",
       "link": "https://www.coindesk.com/markets/2026/10/12/bitcoin-holds-usd83-000-as-dollar-strength-keeps-markets-on-edge",
       "pubDate": "Mon, 12 Oct 2026 11:21:11 +0000"
-    },
-    {
-      "title": "Global financial watchdog calls for cross-border information sharing, planning for stablecoin crisis",
-      "link": "https://www.coindesk.com/policy/2026/10/12/global-financial-watchdog-calls-for-cross-border-information-sharing-planning-for-stablecoin-crisis",
-      "pubDate": "Mon, 12 Oct 2026 11:02:38 +0000"
-    },
-    {
-      "title": "South Korea just got its first traditional bank loans backed by bitcoin",
-      "link": "https://www.coindesk.com/business/2026/10/12/south-korea-just-got-its-first-traditional-bank-loans-backed-by-bitcoin",
-      "pubDate": "Mon, 12 Oct 2026 10:57:37 +0000"
-    },
-    {
-      "title": "SWI raises $894 million to repurpose former FTX bitcoin miner Genesis Digital to AI",
-      "link": "https://www.coindesk.com/business/2026/10/12/swi-raises-usd894-million-to-repurpose-former-ftx-bitcoin-miner-genesis-digital-to-ai",
-      "pubDate": "Mon, 12 Oct 2026 10:27:00 +0000"
-    },
-    {
-      "title": "Altcoins rally on thin trading as bitcoin holds below $83,500",
-      "link": "https://www.coindesk.com/markets/2026/10/12/altcoins-rally-on-thin-trading-as-bitcoin-holds-near-usd84-000",
-      "pubDate": "Mon, 12 Oct 2026 10:20:54 +0000"
-    },
-    {
-      "title": "U.S. inflation, Ethereum upgrade talks: Crypto Week Ahead",
-      "link": "https://www.coindesk.com/markets/2026/10/12/u-s-inflation-ethereum-upgrade-talks-crypto-week-ahead",
-      "pubDate": "Mon, 12 Oct 2026 08:58:24 +0000"
-    },
-    {
-      "title": "Why a bug that could have threatened XRP's 100 billion supply cap stayed hidden for years",
-      "link": "https://www.coindesk.com/tech/2026/10/12/why-a-bug-that-could-have-threatened-xrp-s-100-billion-supply-cap-stayed-hidden-for-years",
-      "pubDate": "Mon, 12 Oct 2026 08:32:17 +0000"
     }
   ]
 }
