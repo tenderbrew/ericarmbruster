@@ -1,13 +1,13 @@
 {
-  "fetchedAt": "2026-10-13T10:27:45.868Z",
+  "fetchedAt": "2026-10-13T19:13:07.519Z",
   "price": {
-    "usd": 83437,
-    "time": 1791887110
+    "usd": 83153,
+    "time": 1791918610
   },
   "moves": {
-    "d1": 2.007646210770808,
-    "d7": -2.4585983107665466,
-    "d30": 8.6149925911438
+    "d1": 1.6604360818848196,
+    "d7": -2.790606389673289,
+    "d30": 8.24529260317821
   },
   "history90d": [
     {
@@ -372,60 +372,105 @@
     },
     {
       "date": "2026-10-13",
-      "close": 83434.63465845145
+      "close": 83173.75627024598
     }
   ],
   "blocks": [
     {
-      "height": 971229,
-      "id": "00000000000000000000a4e4fee63ce6c0987e23b6518408957f1c7dc9974187",
-      "timestamp": 1791886893,
-      "txCount": 3371
+      "height": 971288,
+      "id": "00000000000000000000abd431816df428040a00d697aaf9423e9b50174a7bfd",
+      "timestamp": 1791918637,
+      "txCount": 6141
     },
     {
-      "height": 971228,
-      "id": "00000000000000000001af5f29682bce685a04ac21aa7b4bbdd3cdfc9beccd2a",
-      "timestamp": 1791885822,
-      "txCount": 3799
+      "height": 971287,
+      "id": "000000000000000000016515919db45010974777919d3e2f4955805596bfc7d0",
+      "timestamp": 1791918302,
+      "txCount": 6314
     },
     {
-      "height": 971227,
-      "id": "00000000000000000001b73e1b27ba9daa40f472f84e7b0963f0b913030b3938",
-      "timestamp": 1791884693,
-      "txCount": 6421
+      "height": 971286,
+      "id": "00000000000000000000d7a0913d6c4b9783f8feb643c52612c39502325b926d",
+      "timestamp": 1791918197,
+      "txCount": 3814
     },
     {
-      "height": 971226,
-      "id": "000000000000000000010e03a458ac361a3491d3b968414e0209ea65460bb508",
-      "timestamp": 1791884622,
-      "txCount": 6855
+      "height": 971285,
+      "id": "00000000000000000001f9a0b7dec5108ce6ff73ec79b5f2a26258ab7b741834",
+      "timestamp": 1791917510,
+      "txCount": 3515
     },
     {
-      "height": 971225,
-      "id": "00000000000000000000476fb4744b2d85aa2ec444199af378eafc3b99c2e952",
-      "timestamp": 1791884661,
-      "txCount": 3707
+      "height": 971284,
+      "id": "000000000000000000010eda42ad4f05cb8c795d1ce96d3fb4b9ed813b848a41",
+      "timestamp": 1791917616,
+      "txCount": 4131
     },
     {
-      "height": 971224,
-      "id": "0000000000000000000110846badb40c82998e441eb69064e766e0b641036ae7",
-      "timestamp": 1791883501,
-      "txCount": 7197
+      "height": 971283,
+      "id": "000000000000000000013be135004a433ac1a7328eb279155a674328a353680c",
+      "timestamp": 1791916403,
+      "txCount": 2954
     },
     {
-      "height": 971223,
-      "id": "00000000000000000001fd98f68092e049afde4aa717d897c5df2597260ffa7a",
-      "timestamp": 1791883460,
-      "txCount": 4298
+      "height": 971282,
+      "id": "00000000000000000001dfb701cac6061ca28a9fa14b17ee00969a21f50f44d9",
+      "timestamp": 1791916221,
+      "txCount": 3532
     },
     {
-      "height": 971222,
-      "id": "0000000000000000000093e4b3916b05cfbfff6595c54e62ae98866a16543bbf",
-      "timestamp": 1791882715,
-      "txCount": 5974
+      "height": 971281,
+      "id": "000000000000000000017111869ffdc38661a5aa683fd2a0802447da64195c12",
+      "timestamp": 1791916064,
+      "txCount": 3275
     }
   ],
   "news": [
+    {
+      "title": "Crypto exchange MNX takes on OKX, Bitget offering pre-IPO futures for AI giants",
+      "link": "https://www.coindesk.com/business/2026/10/13/new-crypto-exchange-takes-on-okx-bitget-with-unique-way-to-trade-ai-giants",
+      "pubDate": "Tue, 13 Oct 2026 15:52:09 +0000"
+    },
+    {
+      "title": "UK crypto trader says almost $800,000 lost in knife assault as wrench attacks proliferate",
+      "link": "https://www.coindesk.com/policy/2026/10/13/why-self-custody-and-hardware-wallets-cannot-prevent-physical-crypto-extortion",
+      "pubDate": "Tue, 13 Oct 2026 15:24:52 +0000"
+    },
+    {
+      "title": "South Korea blocks 27 crypto exchanges, including Bitmart and Kucoin",
+      "link": "https://www.coindesk.com/policy/2026/10/13/south-korea-blocks-27-crypto-exchanges-including-bitmart-and-kucoin",
+      "pubDate": "Tue, 13 Oct 2026 11:58:04 +0000"
+    },
+    {
+      "title": "Federated Hermes joins Wall Street's tokenization push with plans for first onchain fund shares",
+      "link": "https://www.coindesk.com/business/2026/10/13/federated-hermes-joins-wall-street-s-tokenization-push-with-plans-for-first-onchain-fund-shares",
+      "pubDate": "Tue, 13 Oct 2026 11:56:04 +0000"
+    },
+    {
+      "title": "Stacks' STX, a Bitcoin layer-2 token, has surged by 50% in four weeks",
+      "link": "https://www.coindesk.com/daybook-us/2026/10/13/stacks-stx-a-bitcoin-layer-2-token-has-surged-by-50-in-four-weeks",
+      "pubDate": "Tue, 13 Oct 2026 11:26:45 +0000"
+    },
+    {
+      "title": "Bitcoin, ether slip and rebound as South Korean stocks slide on AI-related concerns",
+      "link": "https://www.coindesk.com/markets/2026/10/13/bitcoin-ether-slip-and-rebound-as-south-korean-stocks-slide-on-ai-related-concerns",
+      "pubDate": "Tue, 13 Oct 2026 11:06:39 +0000"
+    },
+    {
+      "title": "Russia’s largest bank Sberbank secures approval to trade crypto",
+      "link": "https://www.coindesk.com/business/2026/10/13/russia-s-largest-bank-sberbank-secures-approval-to-trade-crypto",
+      "pubDate": "Tue, 13 Oct 2026 11:02:47 +0000"
+    },
+    {
+      "title": "Live updates: Bitcoin trading in tight range near $83,000 ahead of key U.S. inflation data",
+      "link": "https://www.coindesk.com/markets/2026/10/13/live-updates-bitcoin-whipsaws-between-usd81-000-and-usd84-000-as-altcoins-slide",
+      "pubDate": "Tue, 13 Oct 2026 10:46:57 +0000"
+    },
+    {
+      "title": "Bitcoin diverges from South Korean stocks as AI concerns deepen the Kospi selloff",
+      "link": "https://www.coindesk.com/markets/2026/10/13/bitcoin-diverges-from-south-korean-stocks-as-ai-concerns-deepen-the-kospi-selloff",
+      "pubDate": "Tue, 13 Oct 2026 10:38:51 +0000"
+    },
     {
       "title": "Ledger says 'spy' chip inside CryptoBilis Ledger devices transmitted wallet keys over mobile network",
       "link": "https://www.coindesk.com/tech/2026/10/13/ledger-says-spy-chip-inside-cryptobilis-ledger-devices-transmitted-wallet-keys-over-mobile-network",
@@ -440,51 +485,6 @@
       "title": "Bitcoin whale that sat through the March 2020 crash moves $378 million",
       "link": "https://www.coindesk.com/markets/2026/10/13/bitcoin-whale-that-sat-through-the-march-2020-crash-moves-usd378-million",
       "pubDate": "Tue, 13 Oct 2026 05:45:10 +0000"
-    },
-    {
-      "title": "Tokenized SanDisk bets saw more liquidations than XRP as Asia’s chip rout wipes out $800 million",
-      "link": "https://www.coindesk.com/markets/2026/10/13/tokenized-sandisk-bets-saw-more-liquidations-than-xrp-as-asia-s-chip-rout-wipes-out-usd800-million",
-      "pubDate": "Tue, 13 Oct 2026 05:27:17 +0000"
-    },
-    {
-      "title": "Once-largest Ethereum NFT marketplace Blur is shutting down after volumes collapse 99%",
-      "link": "https://www.coindesk.com/tech/2026/10/13/once-largest-ethereum-nft-marketplace-blur-is-shutting-down-after-volumes-collapse-99",
-      "pubDate": "Tue, 13 Oct 2026 04:43:18 +0000"
-    },
-    {
-      "title": "Bitcoin rebounds above $83,000 as it decouples from tumbling Korean stocks and Nasdaq futures",
-      "link": "https://www.coindesk.com/markets/2026/10/13/bitcoin-rebounds-above-usd83-000-as-it-decouples-from-tumbling-korean-stocks-and-nasdaq-futures",
-      "pubDate": "Tue, 13 Oct 2026 04:18:20 +0000"
-    },
-    {
-      "title": "Palantir's Europe head warns the region is 'missing the boat' on AI just as it did with the internet",
-      "link": "https://www.coindesk.com/policy/2026/10/12/palantir-executive-warns-europe-is-missing-the-boat-on-ai-just-like-it-did-with-the-internet",
-      "pubDate": "Mon, 12 Oct 2026 16:18:03 +0000"
-    },
-    {
-      "title": "Tom Lee sees $2 trillion wealth transfer fueling crypto demand as Bitmine buys more ether",
-      "link": "https://www.coindesk.com/business/2026/10/12/tom-lee-sees-usd2-trillion-wealth-transfer-fueling-crypto-demand-as-bitmine-buys-more-ether",
-      "pubDate": "Mon, 12 Oct 2026 15:27:09 +0000"
-    },
-    {
-      "title": "Tokenized catastrophe bonds target the disaster-insurance gap",
-      "link": "https://www.coindesk.com/business/2026/10/12/tokenized-catastrophe-bonds-target-the-disaster-insurance-gap",
-      "pubDate": "Mon, 12 Oct 2026 15:00:00 +0000"
-    },
-    {
-      "title": "Standard Chartered offers RLUSD custody in Dubai and plans LMAX collateral link",
-      "link": "https://www.coindesk.com/business/2026/10/12/standard-chartered-offers-rlusd-custody-in-dubai-and-plans-lmax-collateral-link",
-      "pubDate": "Mon, 12 Oct 2026 12:09:09 +0000"
-    },
-    {
-      "title": "Ledger claims CryptoBilis cases are limited as up to $93 million is traced, $10 million frozen",
-      "link": "https://www.coindesk.com/tech/2026/10/12/ledger-claims-cryptobilis-cases-are-limited-as-up-to-usd93m-is-traced-usd10m-frozen",
-      "pubDate": "Mon, 12 Oct 2026 12:01:53 +0000"
-    },
-    {
-      "title": "Bitcoin falls below $83,000 as dollar strength keeps markets on edge",
-      "link": "https://www.coindesk.com/markets/2026/10/12/bitcoin-holds-usd83-000-as-dollar-strength-keeps-markets-on-edge",
-      "pubDate": "Mon, 12 Oct 2026 11:21:11 +0000"
     }
   ]
 }
