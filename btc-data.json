@@ -1,13 +1,13 @@
 {
-  "fetchedAt": "2026-10-14T00:15:53.623Z",
+  "fetchedAt": "2026-10-14T08:37:03.600Z",
   "price": {
-    "usd": 83244,
-    "time": 1791936609
+    "usd": 83760,
+    "time": 1791966909
   },
   "moves": {
-    "d1": 0.1550842163300814,
-    "d7": -0.045682575672956194,
-    "d30": 6.48641552888074
+    "d1": 0.7759100230624094,
+    "d7": 0.5738987489985359,
+    "d30": 7.146487010463831
   },
   "history90d": [
     {
@@ -372,60 +372,90 @@
     },
     {
       "date": "2026-10-14",
-      "close": 83328.13068141586
+      "close": 83772.67921792749
     }
   ],
   "blocks": [
     {
-      "height": 971323,
-      "id": "00000000000000000000541291faedffa1770911d4976f26a5e2e6af00ac0d1f",
-      "timestamp": 1791936980,
-      "txCount": 7129
+      "height": 971378,
+      "id": "000000000000000000004cdd4716c5f1bf7415cde6867b66373ef2036ce85c51",
+      "timestamp": 1791966935,
+      "txCount": 3200
     },
     {
-      "height": 971322,
-      "id": "0000000000000000000183085be4f2a20411488a4927b99222f36764f25eaff1",
-      "timestamp": 1791936483,
-      "txCount": 6985
+      "height": 971377,
+      "id": "0000000000000000000024d23b8925a049813341d9cd04a2d670ca610ad3ffb1",
+      "timestamp": 1791966859,
+      "txCount": 3776
     },
     {
-      "height": 971321,
-      "id": "00000000000000000000950e7809a2deb690d4fd7f2fc24c061b0fe5358314b9",
-      "timestamp": 1791936399,
-      "txCount": 4934
+      "height": 971376,
+      "id": "000000000000000000014f15166997afc46717586751b21923c3154f0fddc608",
+      "timestamp": 1791965234,
+      "txCount": 3010
     },
     {
-      "height": 971320,
-      "id": "0000000000000000000070509ded08b767e49e2bfa8851c88a01e1b1a620b655",
-      "timestamp": 1791935750,
-      "txCount": 6664
+      "height": 971375,
+      "id": "000000000000000000021da440ad620cd3234c45b693f90061b607ef119314c4",
+      "timestamp": 1791963893,
+      "txCount": 5627
     },
     {
-      "height": 971319,
-      "id": "00000000000000000000975d7b6484f31c8ab12c43d81e88ade999f203dc7608",
-      "timestamp": 1791935675,
-      "txCount": 3851
+      "height": 971374,
+      "id": "00000000000000000001c890fade9fd6500a622f3db37e4fa05f7eaaeeafcbe7",
+      "timestamp": 1791963732,
+      "txCount": 4691
     },
     {
-      "height": 971318,
-      "id": "000000000000000000011af51c6f18b3f622d18a3a5f0d48495e2a2c956edbf5",
-      "timestamp": 1791935335,
-      "txCount": 4228
+      "height": 971373,
+      "id": "0000000000000000000103428fa6bd1763174cdea741e050ed48d99c2d2f9e56",
+      "timestamp": 1791963264,
+      "txCount": 4402
     },
     {
-      "height": 971317,
-      "id": "00000000000000000000414484a2bef1ebba0d0b5975d15b5cbe0d04f488f2dd",
-      "timestamp": 1791934250,
-      "txCount": 4370
+      "height": 971372,
+      "id": "0000000000000000000090d0a9ae88955458c9e23cb1f4920d9c958ec3345bc7",
+      "timestamp": 1791963088,
+      "txCount": 1215
     },
     {
-      "height": 971316,
-      "id": "000000000000000000007cf149ed0525e306e9588cc4c9f68470602e80c70feb",
-      "timestamp": 1791932578,
-      "txCount": 3327
+      "height": 971371,
+      "id": "000000000000000000003df552e2b2b77605be702bf921bb506ef963cd1a82a4",
+      "timestamp": 1791962377,
+      "txCount": 5341
     }
   ],
   "news": [
+    {
+      "title": "Standard Chartered unlocks direct bitcoin and ether trading for affluent UAE clients",
+      "link": "https://www.coindesk.com/business/2026/10/14/standard-chartered-unlocks-direct-bitcoin-and-ether-trading-for-affluent-uae-clients",
+      "pubDate": "Wed, 14 Oct 2026 08:10:07 +0000"
+    },
+    {
+      "title": "Coinbase, which holds 5% of all bitcoin, wants the quantum fix started now",
+      "link": "https://www.coindesk.com/tech/2026/10/14/coinbase-which-holds-5-of-all-bitcoin-wants-the-quantum-fix-started-now",
+      "pubDate": "Wed, 14 Oct 2026 05:44:51 +0000"
+    },
+    {
+      "title": "Ripple adds Stripe-owned wallets to XRP Ledger as AI payments pass 14 million",
+      "link": "https://www.coindesk.com/tech/2026/10/14/ripple-adds-stripe-owned-wallets-to-xrp-ledger-as-ai-payments-pass-14-million",
+      "pubDate": "Wed, 14 Oct 2026 05:24:12 +0000"
+    },
+    {
+      "title": "Solana sets Oct. 21 for Alpenglow upgrade targeting 150-millisecond finality",
+      "link": "https://www.coindesk.com/tech/2026/10/14/solana-sets-oct-21-for-alpenglow-upgrade-targeting-150-millisecond-finality",
+      "pubDate": "Wed, 14 Oct 2026 04:11:16 +0000"
+    },
+    {
+      "title": "Bitcoin climbs toward $84,000 after Fed’s Williams sees no rate hikes in 2027",
+      "link": "https://www.coindesk.com/markets/2026/10/14/bitcoin-climbs-toward-usd84-000-after-fed-s-williams-sees-no-rate-hikes-in-2027",
+      "pubDate": "Wed, 14 Oct 2026 03:50:54 +0000"
+    },
+    {
+      "title": "Largest Philippines crypto exchange, Coins.ph, said to face central bank regulatory action",
+      "link": "https://www.coindesk.com/policy/2026/10/13/largest-philippines-crypto-exchange-coins-ph-said-to-face-central-bank-regulatory-action",
+      "pubDate": "Wed, 14 Oct 2026 01:00:00 +0000"
+    },
     {
       "title": "Strive raising $500 million to buy additional bitcoin with new preferred share class",
       "link": "https://www.coindesk.com/markets/2026/10/13/strive-to-ipo-second-preferred-share-class-as-it-looks-to-further-build-bitcoin-treasury",
@@ -455,36 +485,6 @@
       "title": "Federated Hermes joins Wall Street's tokenization push with plans for first onchain fund shares",
       "link": "https://www.coindesk.com/business/2026/10/13/federated-hermes-joins-wall-street-s-tokenization-push-with-plans-for-first-onchain-fund-shares",
       "pubDate": "Tue, 13 Oct 2026 11:56:04 +0000"
-    },
-    {
-      "title": "Stacks' STX, a Bitcoin layer-2 token, has surged by 50% in four weeks",
-      "link": "https://www.coindesk.com/daybook-us/2026/10/13/stacks-stx-a-bitcoin-layer-2-token-has-surged-by-50-in-four-weeks",
-      "pubDate": "Tue, 13 Oct 2026 11:26:45 +0000"
-    },
-    {
-      "title": "Bitcoin, ether slip and rebound as South Korean stocks slide on AI-related concerns",
-      "link": "https://www.coindesk.com/markets/2026/10/13/bitcoin-ether-slip-and-rebound-as-south-korean-stocks-slide-on-ai-related-concerns",
-      "pubDate": "Tue, 13 Oct 2026 11:06:39 +0000"
-    },
-    {
-      "title": "Russia’s largest bank Sberbank secures approval to trade crypto",
-      "link": "https://www.coindesk.com/business/2026/10/13/russia-s-largest-bank-sberbank-secures-approval-to-trade-crypto",
-      "pubDate": "Tue, 13 Oct 2026 11:02:47 +0000"
-    },
-    {
-      "title": "Live updates: Bitcoin trading in tight range near $83,000 ahead of key U.S. inflation data",
-      "link": "https://www.coindesk.com/markets/2026/10/13/live-updates-bitcoin-whipsaws-between-usd81-000-and-usd84-000-as-altcoins-slide",
-      "pubDate": "Tue, 13 Oct 2026 10:46:57 +0000"
-    },
-    {
-      "title": "Bitcoin diverges from South Korean stocks as AI concerns deepen the Kospi selloff",
-      "link": "https://www.coindesk.com/markets/2026/10/13/bitcoin-diverges-from-south-korean-stocks-as-ai-concerns-deepen-the-kospi-selloff",
-      "pubDate": "Tue, 13 Oct 2026 10:38:51 +0000"
-    },
-    {
-      "title": "Ledger says 'spy' chip inside CryptoBilis Ledger devices transmitted wallet keys over mobile network",
-      "link": "https://www.coindesk.com/tech/2026/10/13/ledger-says-spy-chip-inside-cryptobilis-ledger-devices-transmitted-wallet-keys-over-mobile-network",
-      "pubDate": "Tue, 13 Oct 2026 09:27:47 +0000"
     }
   ]
 }
