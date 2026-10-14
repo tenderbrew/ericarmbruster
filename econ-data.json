@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-10-13T22:36:51.243Z",
+  "fetchedAt": "2026-10-14T17:01:55.560Z",
   "indicators": {
     "UNRATE": {
       "latest": {
@@ -43,22 +43,22 @@
     },
     "CPIAUCSL": {
       "latest": {
-        "date": "2026-08-01",
-        "value": 334.131
+        "date": "2026-09-01",
+        "value": 336.298
       },
       "previous": {
-        "date": "2026-07-01",
-        "value": 332.813
+        "date": "2026-08-01",
+        "value": 334.131
       }
     },
     "CPILFESL": {
       "latest": {
-        "date": "2026-08-01",
-        "value": 337.765
+        "date": "2026-09-01",
+        "value": 338.896
       },
       "previous": {
-        "date": "2026-07-01",
-        "value": 336.789
+        "date": "2026-08-01",
+        "value": 337.765
       }
     },
     "T10YIE": {
@@ -163,11 +163,11 @@
     },
     "BAMLH0A0HYM2": {
       "latest": {
-        "date": "2026-10-12",
-        "value": 3.11
+        "date": "2026-10-13",
+        "value": 3.16
       },
       "previous": {
-        "date": "2026-10-09",
+        "date": "2026-10-12",
         "value": 3.11
       }
     },
@@ -263,12 +263,12 @@
     },
     "VIXCLS": {
       "latest": {
-        "date": "2026-10-12",
-        "value": 15.21
+        "date": "2026-10-13",
+        "value": 15.27
       },
       "previous": {
-        "date": "2026-10-09",
-        "value": 14.84
+        "date": "2026-10-12",
+        "value": 15.21
       }
     },
     "BOPGSTB": {
@@ -293,8 +293,8 @@
     },
     "CPI_YOY": {
       "latest": {
-        "date": "2026-08-01",
-        "value": 3.353016322755642
+        "date": "2026-09-01",
+        "value": 3.7172508442689933
       },
       "previous": null
     }
