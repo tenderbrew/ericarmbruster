@@ -1,19 +1,15 @@
 {
-  "fetchedAt": "2026-10-13T19:13:07.519Z",
+  "fetchedAt": "2026-10-14T00:15:53.623Z",
   "price": {
-    "usd": 83153,
-    "time": 1791918610
+    "usd": 83244,
+    "time": 1791936609
   },
   "moves": {
-    "d1": 1.6604360818848196,
-    "d7": -2.790606389673289,
-    "d30": 8.24529260317821
+    "d1": 0.1550842163300814,
+    "d7": -0.045682575672956194,
+    "d30": 6.48641552888074
   },
   "history90d": [
-    {
-      "date": "2026-07-16",
-      "close": 64717.168891130066
-    },
     {
       "date": "2026-07-17",
       "close": 63792.28742743447
@@ -371,61 +367,75 @@
       "close": 81794.84881711744
     },
     {
-      "date": "2026-10-13",
-      "close": 83173.75627024598
+      "date": "2026-10-14",
+      "close": 83115.10159603784
+    },
+    {
+      "date": "2026-10-14",
+      "close": 83328.13068141586
     }
   ],
   "blocks": [
     {
-      "height": 971288,
-      "id": "00000000000000000000abd431816df428040a00d697aaf9423e9b50174a7bfd",
-      "timestamp": 1791918637,
-      "txCount": 6141
+      "height": 971323,
+      "id": "00000000000000000000541291faedffa1770911d4976f26a5e2e6af00ac0d1f",
+      "timestamp": 1791936980,
+      "txCount": 7129
     },
     {
-      "height": 971287,
-      "id": "000000000000000000016515919db45010974777919d3e2f4955805596bfc7d0",
-      "timestamp": 1791918302,
-      "txCount": 6314
+      "height": 971322,
+      "id": "0000000000000000000183085be4f2a20411488a4927b99222f36764f25eaff1",
+      "timestamp": 1791936483,
+      "txCount": 6985
     },
     {
-      "height": 971286,
-      "id": "00000000000000000000d7a0913d6c4b9783f8feb643c52612c39502325b926d",
-      "timestamp": 1791918197,
-      "txCount": 3814
+      "height": 971321,
+      "id": "00000000000000000000950e7809a2deb690d4fd7f2fc24c061b0fe5358314b9",
+      "timestamp": 1791936399,
+      "txCount": 4934
     },
     {
-      "height": 971285,
-      "id": "00000000000000000001f9a0b7dec5108ce6ff73ec79b5f2a26258ab7b741834",
-      "timestamp": 1791917510,
-      "txCount": 3515
+      "height": 971320,
+      "id": "0000000000000000000070509ded08b767e49e2bfa8851c88a01e1b1a620b655",
+      "timestamp": 1791935750,
+      "txCount": 6664
     },
     {
-      "height": 971284,
-      "id": "000000000000000000010eda42ad4f05cb8c795d1ce96d3fb4b9ed813b848a41",
-      "timestamp": 1791917616,
-      "txCount": 4131
+      "height": 971319,
+      "id": "00000000000000000000975d7b6484f31c8ab12c43d81e88ade999f203dc7608",
+      "timestamp": 1791935675,
+      "txCount": 3851
     },
     {
-      "height": 971283,
-      "id": "000000000000000000013be135004a433ac1a7328eb279155a674328a353680c",
-      "timestamp": 1791916403,
-      "txCount": 2954
+      "height": 971318,
+      "id": "000000000000000000011af51c6f18b3f622d18a3a5f0d48495e2a2c956edbf5",
+      "timestamp": 1791935335,
+      "txCount": 4228
     },
     {
-      "height": 971282,
-      "id": "00000000000000000001dfb701cac6061ca28a9fa14b17ee00969a21f50f44d9",
-      "timestamp": 1791916221,
-      "txCount": 3532
+      "height": 971317,
+      "id": "00000000000000000000414484a2bef1ebba0d0b5975d15b5cbe0d04f488f2dd",
+      "timestamp": 1791934250,
+      "txCount": 4370
     },
     {
-      "height": 971281,
-      "id": "000000000000000000017111869ffdc38661a5aa683fd2a0802447da64195c12",
-      "timestamp": 1791916064,
-      "txCount": 3275
+      "height": 971316,
+      "id": "000000000000000000007cf149ed0525e306e9588cc4c9f68470602e80c70feb",
+      "timestamp": 1791932578,
+      "txCount": 3327
     }
   ],
   "news": [
+    {
+      "title": "Strive raising $500 million to buy additional bitcoin with new preferred share class",
+      "link": "https://www.coindesk.com/markets/2026/10/13/strive-to-ipo-second-preferred-share-class-as-it-looks-to-further-build-bitcoin-treasury",
+      "pubDate": "Tue, 13 Oct 2026 23:23:05 +0000"
+    },
+    {
+      "title": "BNY, Citadel Securities test tokenized U.S. Treasuries to speed up Wall Street financing",
+      "link": "https://www.coindesk.com/business/2026/10/13/bny-citadel-securities-test-tokenized-u-s-treasuries-to-speed-up-wall-street-financing",
+      "pubDate": "Tue, 13 Oct 2026 21:52:00 +0000"
+    },
     {
       "title": "Crypto exchange MNX takes on OKX, Bitget offering pre-IPO futures for AI giants",
       "link": "https://www.coindesk.com/business/2026/10/13/new-crypto-exchange-takes-on-okx-bitget-with-unique-way-to-trade-ai-giants",
@@ -475,16 +485,6 @@
       "title": "Ledger says 'spy' chip inside CryptoBilis Ledger devices transmitted wallet keys over mobile network",
       "link": "https://www.coindesk.com/tech/2026/10/13/ledger-says-spy-chip-inside-cryptobilis-ledger-devices-transmitted-wallet-keys-over-mobile-network",
       "pubDate": "Tue, 13 Oct 2026 09:27:47 +0000"
-    },
-    {
-      "title": "UK court ruling boosts government’s chances of keeping $5 billion in seized bitcoin",
-      "link": "https://www.coindesk.com/policy/2026/10/13/u-k-court-ruling-boosts-government-s-chances-of-keeping-gbp3-8-billion-seized-bitcoin",
-      "pubDate": "Tue, 13 Oct 2026 09:25:03 +0000"
-    },
-    {
-      "title": "Bitcoin whale that sat through the March 2020 crash moves $378 million",
-      "link": "https://www.coindesk.com/markets/2026/10/13/bitcoin-whale-that-sat-through-the-march-2020-crash-moves-usd378-million",
-      "pubDate": "Tue, 13 Oct 2026 05:45:10 +0000"
     }
   ]
 }
