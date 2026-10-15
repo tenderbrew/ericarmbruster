@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-10-14T21:34:23.344Z",
+  "fetchedAt": "2026-10-15T16:50:25.358Z",
   "indicators": {
     "UNRATE": {
       "latest": {
@@ -33,12 +33,12 @@
     },
     "ICSA": {
       "latest": {
-        "date": "2026-10-03",
-        "value": 197000
+        "date": "2026-10-10",
+        "value": 199000
       },
       "previous": {
-        "date": "2026-09-26",
-        "value": 199000
+        "date": "2026-10-03",
+        "value": 198000
       }
     },
     "CPIAUCSL": {
@@ -163,22 +163,22 @@
     },
     "BAMLH0A0HYM2": {
       "latest": {
-        "date": "2026-10-13",
-        "value": 3.16
+        "date": "2026-10-14",
+        "value": 3.25
       },
       "previous": {
-        "date": "2026-10-12",
-        "value": 3.11
+        "date": "2026-10-13",
+        "value": 3.16
       }
     },
     "MORTGAGE30US": {
       "latest": {
-        "date": "2026-10-08",
+        "date": "2026-10-15",
         "value": 7.4
       },
       "previous": {
-        "date": "2026-10-01",
-        "value": 7.28
+        "date": "2026-10-08",
+        "value": 7.4
       }
     },
     "GDPC1": {
@@ -203,12 +203,12 @@
     },
     "RSAFS": {
       "latest": {
-        "date": "2026-08-01",
-        "value": 737763
+        "date": "2026-09-01",
+        "value": 745021
       },
       "previous": {
-        "date": "2026-07-01",
-        "value": 729538
+        "date": "2026-08-01",
+        "value": 739322
       }
     },
     "UMCSENT": {
@@ -263,12 +263,12 @@
     },
     "VIXCLS": {
       "latest": {
-        "date": "2026-10-13",
-        "value": 15.27
+        "date": "2026-10-14",
+        "value": 16.87
       },
       "previous": {
-        "date": "2026-10-12",
-        "value": 15.21
+        "date": "2026-10-13",
+        "value": 15.27
       }
     },
     "BOPGSTB": {
