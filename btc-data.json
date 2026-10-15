@@ -1,13 +1,13 @@
 {
-  "fetchedAt": "2026-10-15T04:30:07.060Z",
+  "fetchedAt": "2026-10-15T11:20:37.725Z",
   "price": {
-    "usd": 81183,
-    "time": 1792038310
+    "usd": 80930,
+    "time": 1792063209
   },
   "moves": {
-    "d1": -0.5154850574298098,
-    "d7": -0.6156350152834222,
-    "d30": 7.3987791691944915
+    "d1": -0.8255201913922261,
+    "d7": -0.9253580403149275,
+    "d30": 7.064079895580488
   },
   "history90d": [
     {
@@ -372,60 +372,95 @@
     },
     {
       "date": "2026-10-15",
-      "close": 81219.72042639655
+      "close": 80978.0570819892
     }
   ],
   "blocks": [
     {
-      "height": 971509,
-      "id": "0000000000000000000199dbf96477397c1fda105efdd1d6168d1875374e3d20",
-      "timestamp": 1792038095,
-      "txCount": 6744
+      "height": 971559,
+      "id": "0000000000000000000141f135fd308ffc52e3d664b11dc7011eef31ef45cff6",
+      "timestamp": 1792063434,
+      "txCount": 6615
     },
     {
-      "height": 971508,
-      "id": "000000000000000000004a24142a778e9813435ffddbf2b67b8820f11cf05d19",
-      "timestamp": 1792037998,
-      "txCount": 4046
+      "height": 971558,
+      "id": "00000000000000000000c5a8ff1fa316bf5582cdb4287f942d8b1b83bfafd8b3",
+      "timestamp": 1792062948,
+      "txCount": 3820
     },
     {
-      "height": 971507,
-      "id": "000000000000000000018108b77e2018ec62cd94b4e737190952a7485603ec85",
-      "timestamp": 1792037241,
-      "txCount": 6776
+      "height": 971557,
+      "id": "0000000000000000000080b388fbc2c4fdf88297cc75741c6b0b3da53717162a",
+      "timestamp": 1792061866,
+      "txCount": 5405
     },
     {
-      "height": 971506,
-      "id": "00000000000000000001eae50cb039defe3499981760a7a14cc7c3040bf18484",
-      "timestamp": 1792037142,
-      "txCount": 3606
+      "height": 971556,
+      "id": "0000000000000000000087a266e5df5577fa4c93190258a4ba73cb2eeda92a4b",
+      "timestamp": 1792061363,
+      "txCount": 6211
     },
     {
-      "height": 971505,
-      "id": "0000000000000000000142398956b54cb5e155ed95ae051b31f1e120d8e29408",
-      "timestamp": 1792036788,
-      "txCount": 2727
+      "height": 971555,
+      "id": "00000000000000000000a1e320df5295c70d26a2174a451b45a49668dd70a1b4",
+      "timestamp": 1792061235,
+      "txCount": 2415
     },
     {
-      "height": 971504,
-      "id": "00000000000000000001c6cefaac3b75fd3034a42d9abc31db2258944ce761e2",
-      "timestamp": 1792035743,
-      "txCount": 4375
+      "height": 971554,
+      "id": "000000000000000000009710f874b235be98689e8c67e7bab7da035714c004da",
+      "timestamp": 1792060561,
+      "txCount": 4005
     },
     {
-      "height": 971503,
-      "id": "0000000000000000000075f8136e42d72d45f4d7afc381e0acdf7dc0d05c75fb",
-      "timestamp": 1792035240,
-      "txCount": 6512
+      "height": 971553,
+      "id": "000000000000000000015959251680e12005b5690aee2ce6683e936ac3e14dc1",
+      "timestamp": 1792059503,
+      "txCount": 6988
     },
     {
-      "height": 971502,
-      "id": "000000000000000000021674fd7822d37e6670069f2b594cb69019573fe6572a",
-      "timestamp": 1792035082,
-      "txCount": 7105
+      "height": 971552,
+      "id": "00000000000000000001692f29ffab4d081c1438fcf35a548ee7c5d007c55dfe",
+      "timestamp": 1792059389,
+      "txCount": 6140
     }
   ],
   "news": [
+    {
+      "title": "Bitcoin, copper, stocks, yields all fall; gold rises",
+      "link": "https://www.coindesk.com/daybook-us/2026/10/15/bitcoin-copper-stocks-yields-all-fall-gold-rises",
+      "pubDate": "Thu, 15 Oct 2026 11:15:00 +0000"
+    },
+    {
+      "title": "Bitcoin holds above $80,000 as Asian stock rout drags altcoins lower",
+      "link": "https://www.coindesk.com/markets/2026/10/15/bitcoin-holds-above-usd80-000-as-an-asian-stock-rout-drags-altcoins-lower",
+      "pubDate": "Thu, 15 Oct 2026 10:52:11 +0000"
+    },
+    {
+      "title": "Live updates: Bitcoin back under $81,000 as AI selloff worsens",
+      "link": "https://www.coindesk.com/business/2026/10/15/live-updates-bitcoin-back-under-usd81-000-as-ai-selloff-worsens",
+      "pubDate": "Thu, 15 Oct 2026 10:16:15 +0000"
+    },
+    {
+      "title": "Hyperliquid founder wants U.S. oversight of trading platforms, not his blockchain",
+      "link": "https://www.coindesk.com/policy/2026/10/15/hyperliquid-founder-wants-u-s-oversight-of-trading-platforms-not-his-blockchain",
+      "pubDate": "Thu, 15 Oct 2026 10:00:56 +0000"
+    },
+    {
+      "title": "Australia’s financial watchdog seeks stiffer rules for crypto exchanges ahead of licensing deadline",
+      "link": "https://www.coindesk.com/policy/2026/10/15/australia-s-financial-watchdog-seeks-stiffer-rules-for-crypto-exchanges-ahead-of-licensing-deadline",
+      "pubDate": "Thu, 15 Oct 2026 09:53:37 +0000"
+    },
+    {
+      "title": "Hex founder Richard Heart arrested in Istanbul, Turkish media report",
+      "link": "https://www.coindesk.com/policy/2026/10/15/hex-founder-richard-heart-arrested-in-istanbul-turkish-media-report",
+      "pubDate": "Thu, 15 Oct 2026 09:20:57 +0000"
+    },
+    {
+      "title": "BlackRock's Fink names a U.S. recession trigger, sounds alarm over $40 trillion national debt",
+      "link": "https://www.coindesk.com/markets/2026/10/15/blackrock-s-larry-fink-names-a-u-s-recession-trigger-and-its-tied-to-ai",
+      "pubDate": "Thu, 15 Oct 2026 06:17:58 +0000"
+    },
     {
       "title": "Nearly $1 billion in crypto bets liquidated as bitcoin, ether and XRP slide",
       "link": "https://www.coindesk.com/markets/2026/10/15/nearly-usd1-billion-in-crypto-bets-liquidated-as-bitcoin-ether-and-xrp-slide",
@@ -450,41 +485,6 @@
       "title": "AI agents make 138 million crypto payments as U.S. dominates spending on AI models",
       "link": "https://www.coindesk.com/business/2026/10/14/ai-agents-make-138-million-crypto-payments-as-u-s-dominates-spending-on-ai-models",
       "pubDate": "Wed, 14 Oct 2026 15:35:36 +0000"
-    },
-    {
-      "title": "Crypto Long & Short: Why gold and bitcoin belong in the same portfolio",
-      "link": "https://www.coindesk.com/coindesk-indices/2026/10/14/crypto-long-and-short-why-gold-and-bitcoin-belong-in-the-same-portfolio",
-      "pubDate": "Wed, 14 Oct 2026 15:05:15 +0000"
-    },
-    {
-      "title": "EasyA hits $1.1 billion valuation, targets 2027 public listing and tokenized shares",
-      "link": "https://www.coindesk.com/business/2026/10/14/easya-hits-usd1-1-billion-valuation-targets-2027-public-listing-and-tokenized-shares",
-      "pubDate": "Wed, 14 Oct 2026 14:49:32 +0000"
-    },
-    {
-      "title": "BlackRock's crypto ETF assets surge 63% but remain far below 2025 peak",
-      "link": "https://www.coindesk.com/markets/2026/10/14/blackrock-s-crypto-etf-assets-surge-63-but-remain-far-below-2025-peak",
-      "pubDate": "Wed, 14 Oct 2026 14:31:14 +0000"
-    },
-    {
-      "title": "Former FTX Europe chief targets U.S. tokenized stock trading with new SEC exemption",
-      "link": "https://www.coindesk.com/business/2026/10/14/former-ftx-europe-chief-targets-u-s-stock-tokenization-with-new-sec-exemption",
-      "pubDate": "Wed, 14 Oct 2026 14:08:43 +0000"
-    },
-    {
-      "title": "America's growing digital economy requires power grid updates. Who will foot the bill?",
-      "link": "https://www.coindesk.com/opinion/2026/10/14/the-battle-over-the-ratepayer-protection-act-is-just-getting-started",
-      "pubDate": "Wed, 14 Oct 2026 13:51:12 +0000"
-    },
-    {
-      "title": "Kraken parent Payward to become first crypto firm to buy a EU bank as it expands into deposits, lending",
-      "link": "https://www.coindesk.com/business/2026/10/14/kraken-parent-payward-to-become-first-crypto-firm-to-buy-a-eu-bank-as-it-expands-into-deposits-lending",
-      "pubDate": "Wed, 14 Oct 2026 13:07:45 +0000"
-    },
-    {
-      "title": "U.S. September CPI comes in hot, sending bitcoin sharply lower",
-      "link": "https://www.coindesk.com/markets/2026/10/14/u-s-september-cpi-comes-in-hot-sending-bitcoin-sharply-lower",
-      "pubDate": "Wed, 14 Oct 2026 12:33:56 +0000"
     }
   ]
 }
