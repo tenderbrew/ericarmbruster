@@ -1,13 +1,13 @@
 {
-  "fetchedAt": "2026-10-15T16:54:18.039Z",
+  "fetchedAt": "2026-10-15T21:18:28.630Z",
   "price": {
-    "usd": 82126,
-    "time": 1792083010
+    "usd": 82055,
+    "time": 1792098611
   },
   "moves": {
-    "d1": 0.6401004418846279,
-    "d7": 0.5387871689249479,
-    "d30": 8.646294643573981
+    "d1": 0.553094534725207,
+    "d7": 0.4518688496473189,
+    "d30": 8.552367179437258
   },
   "history90d": [
     {
@@ -372,60 +372,65 @@
     },
     {
       "date": "2026-10-15",
-      "close": 82033.43078592158
+      "close": 82080.30672270193
     }
   ],
   "blocks": [
     {
-      "height": 971598,
-      "id": "0000000000000000000210727716ba6c242bfbb4dcdec992f6d07ef40cd78dcd",
-      "timestamp": 1792082478,
-      "txCount": 3609
+      "height": 971623,
+      "id": "00000000000000000001798447960bf81220f33b7408a356ae6a5b5e3ec26495",
+      "timestamp": 1792098838,
+      "txCount": 4281
     },
     {
-      "height": 971597,
-      "id": "00000000000000000000ba59b26aa7b63ecde28ab9b36505dfd9c9af128daf6d",
-      "timestamp": 1792082349,
-      "txCount": 3351
+      "height": 971622,
+      "id": "00000000000000000000904370c49aa80376a8bcbeca93e1f5ed1b093ce5b1f1",
+      "timestamp": 1792098740,
+      "txCount": 3623
     },
     {
-      "height": 971596,
-      "id": "000000000000000000012f326d21517e0ff6e3f3ccd43ff283731ccb8ec51e2b",
-      "timestamp": 1792080022,
-      "txCount": 4083
+      "height": 971621,
+      "id": "00000000000000000000fabd14a43ca0816398dfec71b01fd6e94cdf0c794e13",
+      "timestamp": 1792097189,
+      "txCount": 3752
     },
     {
-      "height": 971595,
-      "id": "00000000000000000001d16058c439c9124a0cdf3011aac761b4744e6f2f7939",
-      "timestamp": 1792079646,
-      "txCount": 3870
+      "height": 971620,
+      "id": "00000000000000000001aeaefb88046bab5e36f20ace05b01a0c038cbb849090",
+      "timestamp": 1792095039,
+      "txCount": 2646
     },
     {
-      "height": 971594,
-      "id": "000000000000000000013073e407a1dcc0441a31207f90c240381d5f00df3fc9",
-      "timestamp": 1792078874,
-      "txCount": 5282
+      "height": 971619,
+      "id": "00000000000000000001b27b976331c114fba6235d4f514069b705fba6846eb5",
+      "timestamp": 1792094790,
+      "txCount": 4318
     },
     {
-      "height": 971593,
-      "id": "000000000000000000007a83e8dbea5ecafb8fb4f64de48e7c1b8073183b7237",
-      "timestamp": 1792078488,
-      "txCount": 4554
+      "height": 971618,
+      "id": "00000000000000000000abb1d06dd424ca0e7e7ff5dfbf44d6cba4d015cd5b50",
+      "timestamp": 1792092892,
+      "txCount": 5294
     },
     {
-      "height": 971592,
-      "id": "000000000000000000001d4e090bde0448f63f92ee91f2bc5edcaa40817abf29",
-      "timestamp": 1792078439,
-      "txCount": 3664
+      "height": 971617,
+      "id": "0000000000000000000115357e0353756d54b98453fb1cadbf315da0546ce68c",
+      "timestamp": 1792092386,
+      "txCount": 5670
     },
     {
-      "height": 971591,
-      "id": "000000000000000000004162f3a4afbe081ec5be769327a68407eabd5893c87f",
-      "timestamp": 1792077666,
-      "txCount": 3228
+      "height": 971616,
+      "id": "00000000000000000001cc6d64ac709fdbd2103f92a735a162292375a0340676",
+      "timestamp": 1792091858,
+      "txCount": 5606
     }
   ],
   "news": [
+    {
+      "title": "At the White House, crypto policy vacancy looms large",
+      "link": "https://www.coindesk.com/news-analysis/2026/10/15/at-the-white-house-crypto-policy-vacancy-looms-large",
+      "pubDate": "Thu, 15 Oct 2026 18:48:02 +0000"
+    },
     {
       "title": "Crypto for Advisors: Wall Street is done waiting on Congress for crypto rules",
       "link": "https://www.coindesk.com/coindesk-indices/2026/10/15/crypto-for-advisors-wall-street-is-done-waiting-on-congress-for-crypto-rules",
@@ -452,7 +457,7 @@
       "pubDate": "Thu, 15 Oct 2026 10:52:11 +0000"
     },
     {
-      "title": "Live updates: Bitcoin bounces after first fall below $80,000 in one month",
+      "title": "Live updates: Bitcoin bounces back to $82,000 after first fall below $80,000 in one month",
       "link": "https://www.coindesk.com/business/2026/10/15/live-updates-bitcoin-back-under-usd81-000-as-ai-selloff-worsens",
       "pubDate": "Thu, 15 Oct 2026 10:16:15 +0000"
     },
@@ -480,11 +485,6 @@
       "title": "Nearly $1 billion in crypto bets liquidated as bitcoin, ether and XRP slide",
       "link": "https://www.coindesk.com/markets/2026/10/15/nearly-usd1-billion-in-crypto-bets-liquidated-as-bitcoin-ether-and-xrp-slide",
       "pubDate": "Thu, 15 Oct 2026 04:25:15 +0000"
-    },
-    {
-      "title": "Bitcoin mining pool once handling 2.3% of network shuts after hashrate falls 65%",
-      "link": "https://www.coindesk.com/markets/2026/10/15/bitcoin-mining-pool-once-handling-2-3-of-network-shuts-after-hashrate-falls-65",
-      "pubDate": "Thu, 15 Oct 2026 04:13:56 +0000"
     }
   ]
 }
