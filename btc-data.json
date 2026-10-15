@@ -1,13 +1,13 @@
 {
-  "fetchedAt": "2026-10-15T11:20:37.725Z",
+  "fetchedAt": "2026-10-15T16:54:18.039Z",
   "price": {
-    "usd": 80930,
-    "time": 1792063209
+    "usd": 82126,
+    "time": 1792083010
   },
   "moves": {
-    "d1": -0.8255201913922261,
-    "d7": -0.9253580403149275,
-    "d30": 7.064079895580488
+    "d1": 0.6401004418846279,
+    "d7": 0.5387871689249479,
+    "d30": 8.646294643573981
   },
   "history90d": [
     {
@@ -372,72 +372,87 @@
     },
     {
       "date": "2026-10-15",
-      "close": 80978.0570819892
+      "close": 82033.43078592158
     }
   ],
   "blocks": [
     {
-      "height": 971559,
-      "id": "0000000000000000000141f135fd308ffc52e3d664b11dc7011eef31ef45cff6",
-      "timestamp": 1792063434,
-      "txCount": 6615
+      "height": 971598,
+      "id": "0000000000000000000210727716ba6c242bfbb4dcdec992f6d07ef40cd78dcd",
+      "timestamp": 1792082478,
+      "txCount": 3609
     },
     {
-      "height": 971558,
-      "id": "00000000000000000000c5a8ff1fa316bf5582cdb4287f942d8b1b83bfafd8b3",
-      "timestamp": 1792062948,
-      "txCount": 3820
+      "height": 971597,
+      "id": "00000000000000000000ba59b26aa7b63ecde28ab9b36505dfd9c9af128daf6d",
+      "timestamp": 1792082349,
+      "txCount": 3351
     },
     {
-      "height": 971557,
-      "id": "0000000000000000000080b388fbc2c4fdf88297cc75741c6b0b3da53717162a",
-      "timestamp": 1792061866,
-      "txCount": 5405
+      "height": 971596,
+      "id": "000000000000000000012f326d21517e0ff6e3f3ccd43ff283731ccb8ec51e2b",
+      "timestamp": 1792080022,
+      "txCount": 4083
     },
     {
-      "height": 971556,
-      "id": "0000000000000000000087a266e5df5577fa4c93190258a4ba73cb2eeda92a4b",
-      "timestamp": 1792061363,
-      "txCount": 6211
+      "height": 971595,
+      "id": "00000000000000000001d16058c439c9124a0cdf3011aac761b4744e6f2f7939",
+      "timestamp": 1792079646,
+      "txCount": 3870
     },
     {
-      "height": 971555,
-      "id": "00000000000000000000a1e320df5295c70d26a2174a451b45a49668dd70a1b4",
-      "timestamp": 1792061235,
-      "txCount": 2415
+      "height": 971594,
+      "id": "000000000000000000013073e407a1dcc0441a31207f90c240381d5f00df3fc9",
+      "timestamp": 1792078874,
+      "txCount": 5282
     },
     {
-      "height": 971554,
-      "id": "000000000000000000009710f874b235be98689e8c67e7bab7da035714c004da",
-      "timestamp": 1792060561,
-      "txCount": 4005
+      "height": 971593,
+      "id": "000000000000000000007a83e8dbea5ecafb8fb4f64de48e7c1b8073183b7237",
+      "timestamp": 1792078488,
+      "txCount": 4554
     },
     {
-      "height": 971553,
-      "id": "000000000000000000015959251680e12005b5690aee2ce6683e936ac3e14dc1",
-      "timestamp": 1792059503,
-      "txCount": 6988
+      "height": 971592,
+      "id": "000000000000000000001d4e090bde0448f63f92ee91f2bc5edcaa40817abf29",
+      "timestamp": 1792078439,
+      "txCount": 3664
     },
     {
-      "height": 971552,
-      "id": "00000000000000000001692f29ffab4d081c1438fcf35a548ee7c5d007c55dfe",
-      "timestamp": 1792059389,
-      "txCount": 6140
+      "height": 971591,
+      "id": "000000000000000000004162f3a4afbe081ec5be769327a68407eabd5893c87f",
+      "timestamp": 1792077666,
+      "txCount": 3228
     }
   ],
   "news": [
+    {
+      "title": "Crypto for Advisors: Wall Street is done waiting on Congress for crypto rules",
+      "link": "https://www.coindesk.com/coindesk-indices/2026/10/15/crypto-for-advisors-wall-street-is-done-waiting-on-congress-for-crypto-rules",
+      "pubDate": "Thu, 15 Oct 2026 15:00:00 +0000"
+    },
+    {
+      "title": "How Brooklyn prosecutors and the FBI took down a massive crypto fraud network targeting Russian speakers",
+      "link": "https://www.coindesk.com/business/2026/10/15/how-brooklyn-prosecutors-and-the-fbi-took-down-a-massive-crypto-fraud-network-targeting-russian-speakers",
+      "pubDate": "Thu, 15 Oct 2026 12:35:24 +0000"
+    },
+    {
+      "title": "Under pressure, Ledger unveils plan to turn its crypto hardware wallet into a smartphone",
+      "link": "https://www.coindesk.com/tech/2026/10/15/under-pressure-ledger-unveils-plan-to-turn-its-crypto-hardware-wallet-into-a-smartphone",
+      "pubDate": "Thu, 15 Oct 2026 12:00:00 +0000"
+    },
     {
       "title": "Bitcoin, copper, stocks, yields all fall; gold rises",
       "link": "https://www.coindesk.com/daybook-us/2026/10/15/bitcoin-copper-stocks-yields-all-fall-gold-rises",
       "pubDate": "Thu, 15 Oct 2026 11:15:00 +0000"
     },
     {
-      "title": "Bitcoin holds above $80,000 as Asian stock rout drags altcoins lower",
+      "title": "Altcoins lead crypto declines as Asian stocks drop; bitcoin little changed since midnight",
       "link": "https://www.coindesk.com/markets/2026/10/15/bitcoin-holds-above-usd80-000-as-an-asian-stock-rout-drags-altcoins-lower",
       "pubDate": "Thu, 15 Oct 2026 10:52:11 +0000"
     },
     {
-      "title": "Live updates: Bitcoin back under $81,000 as AI selloff worsens",
+      "title": "Live updates: Bitcoin bounces after first fall below $80,000 in one month",
       "link": "https://www.coindesk.com/business/2026/10/15/live-updates-bitcoin-back-under-usd81-000-as-ai-selloff-worsens",
       "pubDate": "Thu, 15 Oct 2026 10:16:15 +0000"
     },
@@ -470,21 +485,6 @@
       "title": "Bitcoin mining pool once handling 2.3% of network shuts after hashrate falls 65%",
       "link": "https://www.coindesk.com/markets/2026/10/15/bitcoin-mining-pool-once-handling-2-3-of-network-shuts-after-hashrate-falls-65",
       "pubDate": "Thu, 15 Oct 2026 04:13:56 +0000"
-    },
-    {
-      "title": "Bitcoin wilts as Fed rate uncertainty weighs. Kospi plunges 8%",
-      "link": "https://www.coindesk.com/markets/2026/10/15/bitcoin-is-back-below-usd81-000-as-fed-rate-uncertainty-weighs",
-      "pubDate": "Thu, 15 Oct 2026 03:57:45 +0000"
-    },
-    {
-      "title": "Kalshi CEO says state-led oversight of U.S. prediction markets would push them out",
-      "link": "https://www.coindesk.com/policy/2026/10/14/kalshi-ceo-says-state-led-oversight-of-u-s-prediction-markets-would-push-them-out",
-      "pubDate": "Wed, 14 Oct 2026 16:34:53 +0000"
-    },
-    {
-      "title": "AI agents make 138 million crypto payments as U.S. dominates spending on AI models",
-      "link": "https://www.coindesk.com/business/2026/10/14/ai-agents-make-138-million-crypto-payments-as-u-s-dominates-spending-on-ai-models",
-      "pubDate": "Wed, 14 Oct 2026 15:35:36 +0000"
     }
   ]
 }
