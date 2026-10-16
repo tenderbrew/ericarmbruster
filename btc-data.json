@@ -1,19 +1,15 @@
 {
-  "fetchedAt": "2026-10-15T21:18:28.630Z",
+  "fetchedAt": "2026-10-16T04:24:16.580Z",
   "price": {
-    "usd": 82055,
-    "time": 1792098611
+    "usd": 81947,
+    "time": 1792124108
   },
   "moves": {
-    "d1": 0.553094534725207,
-    "d7": 0.4518688496473189,
-    "d30": 8.552367179437258
+    "d1": -0.2538353437195995,
+    "d7": -0.7476526043388665,
+    "d30": 7.6171115399321865
   },
   "history90d": [
-    {
-      "date": "2026-07-18",
-      "close": 63904.954014943025
-    },
     {
       "date": "2026-07-19",
       "close": 64795.70382303786
@@ -371,61 +367,70 @@
       "close": 81603.65464601685
     },
     {
-      "date": "2026-10-15",
-      "close": 82080.30672270193
+      "date": "2026-10-16",
+      "close": 82155.53979682797
+    },
+    {
+      "date": "2026-10-16",
+      "close": 82019.46329213223
     }
   ],
   "blocks": [
     {
-      "height": 971623,
-      "id": "00000000000000000001798447960bf81220f33b7408a356ae6a5b5e3ec26495",
-      "timestamp": 1792098838,
-      "txCount": 4281
+      "height": 971664,
+      "id": "00000000000000000000dcdbdba314cfef7ea6ae7d7ccda5c30b42a04924b081",
+      "timestamp": 1792124410,
+      "txCount": 6661
     },
     {
-      "height": 971622,
-      "id": "00000000000000000000904370c49aa80376a8bcbeca93e1f5ed1b093ce5b1f1",
-      "timestamp": 1792098740,
-      "txCount": 3623
+      "height": 971663,
+      "id": "0000000000000000000164aaccdb43e57d2e6fe054f6d437e9ce5e71f7243079",
+      "timestamp": 1792124300,
+      "txCount": 6723
     },
     {
-      "height": 971621,
-      "id": "00000000000000000000fabd14a43ca0816398dfec71b01fd6e94cdf0c794e13",
-      "timestamp": 1792097189,
-      "txCount": 3752
+      "height": 971662,
+      "id": "00000000000000000000c6034f41b0762f6505b465ae74238873674cb3471308",
+      "timestamp": 1792124292,
+      "txCount": 5392
     },
     {
-      "height": 971620,
-      "id": "00000000000000000001aeaefb88046bab5e36f20ace05b01a0c038cbb849090",
-      "timestamp": 1792095039,
-      "txCount": 2646
+      "height": 971661,
+      "id": "000000000000000000014d0d4695a7fb5106d2ab9526847bf4c707c40226a749",
+      "timestamp": 1792123289,
+      "txCount": 5550
     },
     {
-      "height": 971619,
-      "id": "00000000000000000001b27b976331c114fba6235d4f514069b705fba6846eb5",
-      "timestamp": 1792094790,
-      "txCount": 4318
+      "height": 971660,
+      "id": "00000000000000000001e4be781652b48a8ccb5a33eab4b0fb48f8c5cd915433",
+      "timestamp": 1792122940,
+      "txCount": 4751
     },
     {
-      "height": 971618,
-      "id": "00000000000000000000abb1d06dd424ca0e7e7ff5dfbf44d6cba4d015cd5b50",
-      "timestamp": 1792092892,
-      "txCount": 5294
+      "height": 971659,
+      "id": "00000000000000000001795e64eb12c2abed2666d5d9769b62f3c3fd1e7acb74",
+      "timestamp": 1792122362,
+      "txCount": 6128
     },
     {
-      "height": 971617,
-      "id": "0000000000000000000115357e0353756d54b98453fb1cadbf315da0546ce68c",
-      "timestamp": 1792092386,
-      "txCount": 5670
+      "height": 971658,
+      "id": "000000000000000000003c4c0ed9a0f046fefe2d46b963bd3740fb8519c6b837",
+      "timestamp": 1792122187,
+      "txCount": 6306
     },
     {
-      "height": 971616,
-      "id": "00000000000000000001cc6d64ac709fdbd2103f92a735a162292375a0340676",
-      "timestamp": 1792091858,
-      "txCount": 5606
+      "height": 971657,
+      "id": "0000000000000000000151b45b8dbe9de7c4d55a5dba0aa568841df430139c70",
+      "timestamp": 1792122172,
+      "txCount": 3986
     }
   ],
   "news": [
+    {
+      "title": "Bitcoin buyers snap up a brief drop below $80,000 as Asian stocks rebound",
+      "link": "https://www.coindesk.com/markets/2026/10/16/bitcoin-buyers-snap-up-a-brief-drop-below-usd80-000-as-asian-stocks-rebound",
+      "pubDate": "Fri, 16 Oct 2026 04:14:22 +0000"
+    },
     {
       "title": "At the White House, crypto policy vacancy looms large",
       "link": "https://www.coindesk.com/news-analysis/2026/10/15/at-the-white-house-crypto-policy-vacancy-looms-large",
@@ -480,11 +485,6 @@
       "title": "BlackRock's Fink names a U.S. recession trigger, sounds alarm over $40 trillion national debt",
       "link": "https://www.coindesk.com/markets/2026/10/15/blackrock-s-larry-fink-names-a-u-s-recession-trigger-and-its-tied-to-ai",
       "pubDate": "Thu, 15 Oct 2026 06:17:58 +0000"
-    },
-    {
-      "title": "Nearly $1 billion in crypto bets liquidated as bitcoin, ether and XRP slide",
-      "link": "https://www.coindesk.com/markets/2026/10/15/nearly-usd1-billion-in-crypto-bets-liquidated-as-bitcoin-ether-and-xrp-slide",
-      "pubDate": "Thu, 15 Oct 2026 04:25:15 +0000"
     }
   ]
 }
