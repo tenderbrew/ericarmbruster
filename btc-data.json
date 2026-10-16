@@ -1,13 +1,13 @@
 {
-  "fetchedAt": "2026-10-16T11:15:37.514Z",
+  "fetchedAt": "2026-10-16T16:33:41.884Z",
   "price": {
-    "usd": 82206,
-    "time": 1792149011
+    "usd": 81566,
+    "time": 1792168208
   },
   "moves": {
-    "d1": 0.061420329410299956,
-    "d7": -0.4339576798696787,
-    "d30": 7.957243965632244
+    "d1": -0.7175898281307824,
+    "d7": -1.209111161183496,
+    "d30": 7.116762295948709
   },
   "history90d": [
     {
@@ -372,60 +372,65 @@
     },
     {
       "date": "2026-10-16",
-      "close": 82457.12262105856
+      "close": 81547.61429099139
     }
   ],
   "blocks": [
     {
-      "height": 971701,
-      "id": "00000000000000000000b40766979423e24209816d253e470c7369905fcc8660",
-      "timestamp": 1792149169,
-      "txCount": 4427
+      "height": 971734,
+      "id": "000000000000000000005315a2cba3b080bac9a5561931d7e260a784d458b05f",
+      "timestamp": 1792167800,
+      "txCount": 3979
     },
     {
-      "height": 971700,
-      "id": "00000000000000000000ed9cab8c6b680cfd67a5a9383a81a970b14a37c3fc31",
-      "timestamp": 1792148769,
-      "txCount": 3961
+      "height": 971733,
+      "id": "000000000000000000009f575ae56f30b5fb6753a3eae44f5a13d3c836d4c86f",
+      "timestamp": 1792167730,
+      "txCount": 4221
     },
     {
-      "height": 971699,
-      "id": "000000000000000000002b62e09347b2c27c54244e4400c5f7111477f48f840c",
-      "timestamp": 1792147561,
-      "txCount": 3906
+      "height": 971732,
+      "id": "00000000000000000000f8f587f609281f684e7ab1efdb017c4fa434df3a89d3",
+      "timestamp": 1792166630,
+      "txCount": 4058
     },
     {
-      "height": 971698,
-      "id": "00000000000000000000ec6c3500d66b7e0cded765aa59a795df6a87f7162aa2",
-      "timestamp": 1792146762,
-      "txCount": 4713
+      "height": 971731,
+      "id": "0000000000000000000177fd5fd59272fd0f118dc68372f4b902b9015816b89f",
+      "timestamp": 1792164844,
+      "txCount": 5172
     },
     {
-      "height": 971697,
-      "id": "000000000000000000012fca97e66562fa22514f48e0e00fd5c3e432cbc76a23",
-      "timestamp": 1792146076,
-      "txCount": 4424
+      "height": 971730,
+      "id": "00000000000000000001eb0b45b80a810ced34ba6f4173cbf152f6cfaa92b5d2",
+      "timestamp": 1792164473,
+      "txCount": 5312
     },
     {
-      "height": 971696,
-      "id": "00000000000000000000752931c0eb2eb43c07730c4659b4b29d369fb7b22e99",
-      "timestamp": 1792145944,
-      "txCount": 4561
+      "height": 971729,
+      "id": "00000000000000000000d102e23b9ead98a3737a49c8d690067590864c8f099e",
+      "timestamp": 1792164015,
+      "txCount": 6336
     },
     {
-      "height": 971695,
-      "id": "00000000000000000000204db62cba5dfa3d30d6f90f05f34aabd0abc36a5e43",
-      "timestamp": 1792144580,
-      "txCount": 5944
+      "height": 971728,
+      "id": "00000000000000000001bedd1392ae808c8ded1351a7d1cd39f55244216a8a75",
+      "timestamp": 1792163803,
+      "txCount": 5307
     },
     {
-      "height": 971694,
-      "id": "00000000000000000001cc9ff84b245b1794af4a1aa6559f6c02fb1baa777436",
-      "timestamp": 1792144497,
-      "txCount": 4231
+      "height": 971727,
+      "id": "00000000000000000001c3cf2d4c91f64c82b677d1c1081b4fcd4c7b9d397d05",
+      "timestamp": 1792163239,
+      "txCount": 5096
     }
   ],
   "news": [
+    {
+      "title": "Big Tech's AI auditors will only see what they're shown",
+      "link": "https://www.coindesk.com/opinion/2026/10/16/big-tech-s-ai-auditors-will-only-see-what-they-re-shown",
+      "pubDate": "Fri, 16 Oct 2026 14:58:22 +0000"
+    },
     {
       "title": "Traders will soon be able to bet on whether Coinbase, Robinhood and Marathon will hit their targets",
       "link": "https://www.coindesk.com/daybook-us/2026/10/16/traders-will-soon-be-able-to-bet-on-whether-coinbase-robinhood-and-marathon-will-hit-their-targets",
@@ -457,7 +462,7 @@
       "pubDate": "Fri, 16 Oct 2026 10:24:30 +0000"
     },
     {
-      "title": "Live updates: Bitcoin back above $82,000, ZEC jumps 11% as ETF outflows continue",
+      "title": "Live updates: Crypto gives up some ground as AI selloff picks up steam",
       "link": "https://www.coindesk.com/markets/2026/10/16/live-updates-bitcoin-back-above-usd82-000-zec-jumps-11-as-etf-outflows-continue",
       "pubDate": "Fri, 16 Oct 2026 09:48:14 +0000"
     },
@@ -480,11 +485,6 @@
       "title": "An OpenAI agent ran out of Ethereum funds, and took from a wallet it did not own",
       "link": "https://www.coindesk.com/tech/2026/10/16/an-openai-agent-ran-out-of-ethereum-funds-and-took-from-a-wallet-it-did-not-own",
       "pubDate": "Fri, 16 Oct 2026 04:29:19 +0000"
-    },
-    {
-      "title": "Bitcoin buyers snap up a brief drop below $80,000 as Asian stocks rebound",
-      "link": "https://www.coindesk.com/markets/2026/10/16/bitcoin-buyers-snap-up-a-brief-drop-below-usd80-000-as-asian-stocks-rebound",
-      "pubDate": "Fri, 16 Oct 2026 04:14:22 +0000"
     }
   ]
 }
