@@ -1,13 +1,13 @@
 {
-  "fetchedAt": "2026-10-16T04:24:16.580Z",
+  "fetchedAt": "2026-10-16T11:15:37.514Z",
   "price": {
-    "usd": 81947,
-    "time": 1792124108
+    "usd": 82206,
+    "time": 1792149011
   },
   "moves": {
-    "d1": -0.2538353437195995,
-    "d7": -0.7476526043388665,
-    "d30": 7.6171115399321865
+    "d1": 0.061420329410299956,
+    "d7": -0.4339576798696787,
+    "d30": 7.957243965632244
   },
   "history90d": [
     {
@@ -372,119 +372,119 @@
     },
     {
       "date": "2026-10-16",
-      "close": 82019.46329213223
+      "close": 82457.12262105856
     }
   ],
   "blocks": [
     {
-      "height": 971664,
-      "id": "00000000000000000000dcdbdba314cfef7ea6ae7d7ccda5c30b42a04924b081",
-      "timestamp": 1792124410,
-      "txCount": 6661
+      "height": 971701,
+      "id": "00000000000000000000b40766979423e24209816d253e470c7369905fcc8660",
+      "timestamp": 1792149169,
+      "txCount": 4427
     },
     {
-      "height": 971663,
-      "id": "0000000000000000000164aaccdb43e57d2e6fe054f6d437e9ce5e71f7243079",
-      "timestamp": 1792124300,
-      "txCount": 6723
+      "height": 971700,
+      "id": "00000000000000000000ed9cab8c6b680cfd67a5a9383a81a970b14a37c3fc31",
+      "timestamp": 1792148769,
+      "txCount": 3961
     },
     {
-      "height": 971662,
-      "id": "00000000000000000000c6034f41b0762f6505b465ae74238873674cb3471308",
-      "timestamp": 1792124292,
-      "txCount": 5392
+      "height": 971699,
+      "id": "000000000000000000002b62e09347b2c27c54244e4400c5f7111477f48f840c",
+      "timestamp": 1792147561,
+      "txCount": 3906
     },
     {
-      "height": 971661,
-      "id": "000000000000000000014d0d4695a7fb5106d2ab9526847bf4c707c40226a749",
-      "timestamp": 1792123289,
-      "txCount": 5550
+      "height": 971698,
+      "id": "00000000000000000000ec6c3500d66b7e0cded765aa59a795df6a87f7162aa2",
+      "timestamp": 1792146762,
+      "txCount": 4713
     },
     {
-      "height": 971660,
-      "id": "00000000000000000001e4be781652b48a8ccb5a33eab4b0fb48f8c5cd915433",
-      "timestamp": 1792122940,
-      "txCount": 4751
+      "height": 971697,
+      "id": "000000000000000000012fca97e66562fa22514f48e0e00fd5c3e432cbc76a23",
+      "timestamp": 1792146076,
+      "txCount": 4424
     },
     {
-      "height": 971659,
-      "id": "00000000000000000001795e64eb12c2abed2666d5d9769b62f3c3fd1e7acb74",
-      "timestamp": 1792122362,
-      "txCount": 6128
+      "height": 971696,
+      "id": "00000000000000000000752931c0eb2eb43c07730c4659b4b29d369fb7b22e99",
+      "timestamp": 1792145944,
+      "txCount": 4561
     },
     {
-      "height": 971658,
-      "id": "000000000000000000003c4c0ed9a0f046fefe2d46b963bd3740fb8519c6b837",
-      "timestamp": 1792122187,
-      "txCount": 6306
+      "height": 971695,
+      "id": "00000000000000000000204db62cba5dfa3d30d6f90f05f34aabd0abc36a5e43",
+      "timestamp": 1792144580,
+      "txCount": 5944
     },
     {
-      "height": 971657,
-      "id": "0000000000000000000151b45b8dbe9de7c4d55a5dba0aa568841df430139c70",
-      "timestamp": 1792122172,
-      "txCount": 3986
+      "height": 971694,
+      "id": "00000000000000000001cc9ff84b245b1794af4a1aa6559f6c02fb1baa777436",
+      "timestamp": 1792144497,
+      "txCount": 4231
     }
   ],
   "news": [
     {
+      "title": "Traders will soon be able to bet on whether Coinbase, Robinhood and Marathon will hit their targets",
+      "link": "https://www.coindesk.com/daybook-us/2026/10/16/traders-will-soon-be-able-to-bet-on-whether-coinbase-robinhood-and-marathon-will-hit-their-targets",
+      "pubDate": "Fri, 16 Oct 2026 11:15:00 +0000"
+    },
+    {
+      "title": "Circle targets 40 new markets as stablecoin demand grows globally",
+      "link": "https://www.coindesk.com/business/2026/10/16/circle-targets-40-new-markets-as-stablecoin-demand-grows-globally",
+      "pubDate": "Fri, 16 Oct 2026 10:54:35 +0000"
+    },
+    {
+      "title": "Quantum Alliance forms amid warnings 6.4 million bitcoin face future quantum threat",
+      "link": "https://www.coindesk.com/tech/2026/10/16/experts-agree-quantum-computers-could-put-satoshi-s-bitcoin-at-risk-but-not-on-what-s-next",
+      "pubDate": "Fri, 16 Oct 2026 10:52:26 +0000"
+    },
+    {
+      "title": "Tokenized Tesla surges as Elon Musk unveils SpaceX-powered flying Roadster prototype",
+      "link": "https://www.coindesk.com/business/2026/10/16/elon-musk-s-flying-roadster-reveal-sent-tesla-crypto-trading-into-overdrive-while-stock-markets-were-closed",
+      "pubDate": "Fri, 16 Oct 2026 10:48:49 +0000"
+    },
+    {
+      "title": "Altcoins outpace bitcoin as celestia jumps 16%, Warsh silent on interest-rate plans",
+      "link": "https://www.coindesk.com/markets/2026/10/16/altcoins-outpace-bitcoin-as-celestia-jumps-16-warsh-silent-on-interest-rate-plans",
+      "pubDate": "Fri, 16 Oct 2026 10:41:03 +0000"
+    },
+    {
+      "title": "Scammer gets scammed in Ledger spy-chip exploit, loses almost $5 million in bitcoin",
+      "link": "https://www.coindesk.com/business/2026/10/16/scammer-gets-scammed-in-ledger-spy-chip-exploit-loses-almost-usd5-million-in-bitcoin",
+      "pubDate": "Fri, 16 Oct 2026 10:24:30 +0000"
+    },
+    {
+      "title": "Live updates: Bitcoin back above $82,000, ZEC jumps 11% as ETF outflows continue",
+      "link": "https://www.coindesk.com/markets/2026/10/16/live-updates-bitcoin-back-above-usd82-000-zec-jumps-11-as-etf-outflows-continue",
+      "pubDate": "Fri, 16 Oct 2026 09:48:14 +0000"
+    },
+    {
+      "title": "U.S. judge rejects Gemini’s appeal to void $5 million settlement despite CFTC backing",
+      "link": "https://www.coindesk.com/policy/2026/10/16/u-s-judge-rejects-gemini-s-appeal-to-void-usd5-million-settlement-despite-cftc-backing",
+      "pubDate": "Fri, 16 Oct 2026 09:36:21 +0000"
+    },
+    {
+      "title": "MSCI approves rules that could eject Strategy, Metaplanet from equity indexes",
+      "link": "https://www.coindesk.com/markets/2026/10/16/msci-approves-rules-that-could-eject-strategy-metaplanet-from-equity-indexes",
+      "pubDate": "Fri, 16 Oct 2026 08:34:48 +0000"
+    },
+    {
+      "title": "XRP has failed to make holders rich like bitcoin and ether. Here’s why",
+      "link": "https://www.coindesk.com/markets/2026/10/16/xrp-has-failed-to-make-holders-rich-like-bitcoin-and-ether-here-s-why",
+      "pubDate": "Fri, 16 Oct 2026 05:53:58 +0000"
+    },
+    {
+      "title": "An OpenAI agent ran out of Ethereum funds, and took from a wallet it did not own",
+      "link": "https://www.coindesk.com/tech/2026/10/16/an-openai-agent-ran-out-of-ethereum-funds-and-took-from-a-wallet-it-did-not-own",
+      "pubDate": "Fri, 16 Oct 2026 04:29:19 +0000"
+    },
+    {
       "title": "Bitcoin buyers snap up a brief drop below $80,000 as Asian stocks rebound",
       "link": "https://www.coindesk.com/markets/2026/10/16/bitcoin-buyers-snap-up-a-brief-drop-below-usd80-000-as-asian-stocks-rebound",
       "pubDate": "Fri, 16 Oct 2026 04:14:22 +0000"
-    },
-    {
-      "title": "At the White House, crypto policy vacancy looms large",
-      "link": "https://www.coindesk.com/news-analysis/2026/10/15/at-the-white-house-crypto-policy-vacancy-looms-large",
-      "pubDate": "Thu, 15 Oct 2026 18:48:02 +0000"
-    },
-    {
-      "title": "Crypto for Advisors: Wall Street is done waiting on Congress for crypto rules",
-      "link": "https://www.coindesk.com/coindesk-indices/2026/10/15/crypto-for-advisors-wall-street-is-done-waiting-on-congress-for-crypto-rules",
-      "pubDate": "Thu, 15 Oct 2026 15:00:00 +0000"
-    },
-    {
-      "title": "How Brooklyn prosecutors and the FBI took down a massive crypto fraud network targeting Russian speakers",
-      "link": "https://www.coindesk.com/business/2026/10/15/how-brooklyn-prosecutors-and-the-fbi-took-down-a-massive-crypto-fraud-network-targeting-russian-speakers",
-      "pubDate": "Thu, 15 Oct 2026 12:35:24 +0000"
-    },
-    {
-      "title": "Under pressure, Ledger unveils plan to turn its crypto hardware wallet into a smartphone",
-      "link": "https://www.coindesk.com/tech/2026/10/15/under-pressure-ledger-unveils-plan-to-turn-its-crypto-hardware-wallet-into-a-smartphone",
-      "pubDate": "Thu, 15 Oct 2026 12:00:00 +0000"
-    },
-    {
-      "title": "Bitcoin, copper, stocks, yields all fall; gold rises",
-      "link": "https://www.coindesk.com/daybook-us/2026/10/15/bitcoin-copper-stocks-yields-all-fall-gold-rises",
-      "pubDate": "Thu, 15 Oct 2026 11:15:00 +0000"
-    },
-    {
-      "title": "Altcoins lead crypto declines as Asian stocks drop; bitcoin little changed since midnight",
-      "link": "https://www.coindesk.com/markets/2026/10/15/bitcoin-holds-above-usd80-000-as-an-asian-stock-rout-drags-altcoins-lower",
-      "pubDate": "Thu, 15 Oct 2026 10:52:11 +0000"
-    },
-    {
-      "title": "Live updates: Bitcoin bounces back to $82,000 after first fall below $80,000 in one month",
-      "link": "https://www.coindesk.com/business/2026/10/15/live-updates-bitcoin-back-under-usd81-000-as-ai-selloff-worsens",
-      "pubDate": "Thu, 15 Oct 2026 10:16:15 +0000"
-    },
-    {
-      "title": "Hyperliquid founder wants U.S. oversight of trading platforms, not his blockchain",
-      "link": "https://www.coindesk.com/policy/2026/10/15/hyperliquid-founder-wants-u-s-oversight-of-trading-platforms-not-his-blockchain",
-      "pubDate": "Thu, 15 Oct 2026 10:00:56 +0000"
-    },
-    {
-      "title": "Australia’s financial watchdog seeks stiffer rules for crypto exchanges ahead of licensing deadline",
-      "link": "https://www.coindesk.com/policy/2026/10/15/australia-s-financial-watchdog-seeks-stiffer-rules-for-crypto-exchanges-ahead-of-licensing-deadline",
-      "pubDate": "Thu, 15 Oct 2026 09:53:37 +0000"
-    },
-    {
-      "title": "Hex founder Richard Heart arrested in Istanbul, Turkish media report",
-      "link": "https://www.coindesk.com/policy/2026/10/15/hex-founder-richard-heart-arrested-in-istanbul-turkish-media-report",
-      "pubDate": "Thu, 15 Oct 2026 09:20:57 +0000"
-    },
-    {
-      "title": "BlackRock's Fink names a U.S. recession trigger, sounds alarm over $40 trillion national debt",
-      "link": "https://www.coindesk.com/markets/2026/10/15/blackrock-s-larry-fink-names-a-u-s-recession-trigger-and-its-tied-to-ai",
-      "pubDate": "Thu, 15 Oct 2026 06:17:58 +0000"
     }
   ]
 }
