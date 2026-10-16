@@ -1,13 +1,13 @@
 {
-  "fetchedAt": "2026-10-16T16:33:41.884Z",
+  "fetchedAt": "2026-10-16T21:01:59.904Z",
   "price": {
-    "usd": 81566,
-    "time": 1792168208
+    "usd": 81624,
+    "time": 1792184109
   },
   "moves": {
-    "d1": -0.7175898281307824,
-    "d7": -1.209111161183496,
-    "d30": 7.116762295948709
+    "d1": -0.6469920326036216,
+    "d7": -1.1388628769394282,
+    "d30": 7.192930947263787
   },
   "history90d": [
     {
@@ -372,57 +372,57 @@
     },
     {
       "date": "2026-10-16",
-      "close": 81547.61429099139
+      "close": 81639.13615495211
     }
   ],
   "blocks": [
     {
-      "height": 971734,
-      "id": "000000000000000000005315a2cba3b080bac9a5561931d7e260a784d458b05f",
-      "timestamp": 1792167800,
-      "txCount": 3979
+      "height": 971765,
+      "id": "00000000000000000001386a3bd92e21f4fd9b051625c6a0f5bd2eff02ae40a6",
+      "timestamp": 1792183724,
+      "txCount": 5499
     },
     {
-      "height": 971733,
-      "id": "000000000000000000009f575ae56f30b5fb6753a3eae44f5a13d3c836d4c86f",
-      "timestamp": 1792167730,
-      "txCount": 4221
+      "height": 971764,
+      "id": "00000000000000000001977d526aa628f7b66da14b4c844d918344b8790493ac",
+      "timestamp": 1792183318,
+      "txCount": 4245
     },
     {
-      "height": 971732,
-      "id": "00000000000000000000f8f587f609281f684e7ab1efdb017c4fa434df3a89d3",
-      "timestamp": 1792166630,
-      "txCount": 4058
+      "height": 971763,
+      "id": "00000000000000000000f11dc771e2f784d4d5fbff9e2eb42c0cc5bdd8aea28f",
+      "timestamp": 1792182593,
+      "txCount": 3794
     },
     {
-      "height": 971731,
-      "id": "0000000000000000000177fd5fd59272fd0f118dc68372f4b902b9015816b89f",
-      "timestamp": 1792164844,
-      "txCount": 5172
+      "height": 971762,
+      "id": "000000000000000000017f6f09b92f33160bd82fa58260d55230ff3a3cd3f628",
+      "timestamp": 1792181682,
+      "txCount": 3892
     },
     {
-      "height": 971730,
-      "id": "00000000000000000001eb0b45b80a810ced34ba6f4173cbf152f6cfaa92b5d2",
-      "timestamp": 1792164473,
-      "txCount": 5312
+      "height": 971761,
+      "id": "00000000000000000000a4c02c85a8c67cdedbc6b9b5ff22a89c3b24599c540d",
+      "timestamp": 1792180527,
+      "txCount": 2975
     },
     {
-      "height": 971729,
-      "id": "00000000000000000000d102e23b9ead98a3737a49c8d690067590864c8f099e",
-      "timestamp": 1792164015,
-      "txCount": 6336
+      "height": 971760,
+      "id": "00000000000000000001a43df74aee8b4a62cca5ab97c12513b87986e39530ac",
+      "timestamp": 1792179802,
+      "txCount": 6553
     },
     {
-      "height": 971728,
-      "id": "00000000000000000001bedd1392ae808c8ded1351a7d1cd39f55244216a8a75",
-      "timestamp": 1792163803,
-      "txCount": 5307
+      "height": 971759,
+      "id": "00000000000000000001a63e57878ef92c75ab4c3bcb34d719c30def94b9da97",
+      "timestamp": 1792179563,
+      "txCount": 4823
     },
     {
-      "height": 971727,
-      "id": "00000000000000000001c3cf2d4c91f64c82b677d1c1081b4fcd4c7b9d397d05",
-      "timestamp": 1792163239,
-      "txCount": 5096
+      "height": 971758,
+      "id": "00000000000000000000b8846e22411c08c8ea357eb1e679b9f459c6705bd364",
+      "timestamp": 1792179459,
+      "txCount": 3817
     }
   ],
   "news": [
@@ -462,7 +462,7 @@
       "pubDate": "Fri, 16 Oct 2026 10:24:30 +0000"
     },
     {
-      "title": "Live updates: Crypto gives up some ground as AI selloff picks up steam",
+      "title": "Live updates: Bitcoin dips to $81,000 as stocks slide, VIX soars ahead of Black Monday anniversary",
       "link": "https://www.coindesk.com/markets/2026/10/16/live-updates-bitcoin-back-above-usd82-000-zec-jumps-11-as-etf-outflows-continue",
       "pubDate": "Fri, 16 Oct 2026 09:48:14 +0000"
     },
