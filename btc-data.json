@@ -1,13 +1,13 @@
 {
-  "fetchedAt": "2026-10-17T10:34:59.697Z",
+  "fetchedAt": "2026-10-17T15:28:13.867Z",
   "price": {
-    "usd": 81536,
-    "time": 1792233009
+    "usd": 81422,
+    "time": 1792250412
   },
   "moves": {
-    "d1": 0.015139134710850932,
-    "d7": -1.6665923218519008,
-    "d30": 6.762532660606979
+    "d1": -0.12469757375359602,
+    "d7": -1.804077708372076,
+    "d30": 6.613262047340318
   },
   "history90d": [
     {
@@ -372,60 +372,75 @@
     },
     {
       "date": "2026-10-17",
-      "close": 81537.73141857177
+      "close": 81420.67936283798
     }
   ],
   "blocks": [
     {
-      "height": 971840,
-      "id": "00000000000000000000ec6e50a077c79b293675f52698de93a15ffbd43e4e89",
-      "timestamp": 1792232944,
-      "txCount": 4165
+      "height": 971880,
+      "id": "000000000000000000008a79c47ce1fa49971ab301161e659033a38a38d15638",
+      "timestamp": 1792250790,
+      "txCount": 1149
     },
     {
-      "height": 971839,
-      "id": "000000000000000000007c54b654265db27c45d6882fe591a54ba32439489b89",
-      "timestamp": 1792231743,
-      "txCount": 4371
+      "height": 971879,
+      "id": "0000000000000000000014506ed3f4c37d0c76fe9de8643232970af392f76af8",
+      "timestamp": 1792250239,
+      "txCount": 5434
     },
     {
-      "height": 971838,
-      "id": "00000000000000000001af214f0c903da0591510135e40391fca6fac8f971a17",
-      "timestamp": 1792231138,
-      "txCount": 4998
+      "height": 971878,
+      "id": "0000000000000000000116eb81c1a20985dad549c2e9e3c5f4d26fa7b665b89b",
+      "timestamp": 1792250039,
+      "txCount": 6552
     },
     {
-      "height": 971837,
-      "id": "00000000000000000000f70f8d3367969fb1ac52d89c40398872d97caadd6e0a",
-      "timestamp": 1792231213,
-      "txCount": 3839
+      "height": 971877,
+      "id": "00000000000000000001425e007ab7be8b2d9b33425bf23fe1b268e360eb516a",
+      "timestamp": 1792249928,
+      "txCount": 4606
     },
     {
-      "height": 971836,
-      "id": "00000000000000000001f4369c0dde716b0be824a1637a0e5efb01ecb7cab5b6",
-      "timestamp": 1792229700,
-      "txCount": 3491
+      "height": 971876,
+      "id": "00000000000000000001d3b48e032eea643a997e5fd549de3b3487d5762fd716",
+      "timestamp": 1792248739,
+      "txCount": 6533
     },
     {
-      "height": 971835,
-      "id": "00000000000000000000b75d3a5546c5ac0b968a88e694478d4726e4f5a66d11",
-      "timestamp": 1792229346,
-      "txCount": 3999
+      "height": 971875,
+      "id": "00000000000000000001dbcdbc3cd00710f842a0685a3c07aee7d8c76d86e3b8",
+      "timestamp": 1792248665,
+      "txCount": 3849
     },
     {
-      "height": 971834,
-      "id": "000000000000000000005943adce9e66ef2d306a351f20f52fc30db4e55b1796",
-      "timestamp": 1792229069,
-      "txCount": 4399
+      "height": 971874,
+      "id": "000000000000000000018573e59b632a3bff2d9bf395c83ffe216a0c71557035",
+      "timestamp": 1792247784,
+      "txCount": 5077
     },
     {
-      "height": 971833,
-      "id": "0000000000000000000152b3dae0100888f52c521f564b6b1f7cb128869e6fb9",
-      "timestamp": 1792225948,
-      "txCount": 5671
+      "height": 971873,
+      "id": "000000000000000000011c18f94ff86d54c659be53726752b4b3bd8a91510f91",
+      "timestamp": 1792247149,
+      "txCount": 6374
     }
   ],
   "news": [
+    {
+      "title": "Citrini sees a tokenization boom. The harder question is who profits",
+      "link": "https://www.coindesk.com/business/2026/10/17/citrini-sees-a-tokenization-boom-the-harder-question-is-who-profits",
+      "pubDate": "Sat, 17 Oct 2026 15:00:00 +0000"
+    },
+    {
+      "title": "Polygon sees Coinme acquisition as entry to payments sector dominated by Visa, Stripe",
+      "link": "https://www.coindesk.com/business/2026/10/17/polygon-sees-coinme-acquisition-as-entry-to-payments-sector-dominated-by-visa-stripe",
+      "pubDate": "Sat, 17 Oct 2026 14:00:00 +0000"
+    },
+    {
+      "title": "Banks could slow stablecoin growth by paying savers more, BIS paper finds",
+      "link": "https://www.coindesk.com/business/2026/10/14/banks-could-slow-stablecoin-growth-by-paying-savers-more-bis-paper-finds",
+      "pubDate": "Sat, 17 Oct 2026 12:00:00 +0000"
+    },
     {
       "title": "‘Wow, it’s a real discovery’: Claude cracks a 25-year NSA number mystery",
       "link": "https://www.coindesk.com/tech/2026/10/17/wow-it-s-a-real-discovery-claude-cracks-a-25-year-nsa-number-mystery",
@@ -470,21 +485,6 @@
       "title": "Scammer gets scammed in Ledger spy-chip exploit, loses almost $5 million in bitcoin",
       "link": "https://www.coindesk.com/business/2026/10/16/scammer-gets-scammed-in-ledger-spy-chip-exploit-loses-almost-usd5-million-in-bitcoin",
       "pubDate": "Fri, 16 Oct 2026 10:24:30 +0000"
-    },
-    {
-      "title": "Live updates: Bitcoin dips to $81,000 as stocks slide, VIX soars ahead of Black Monday anniversary",
-      "link": "https://www.coindesk.com/markets/2026/10/16/live-updates-bitcoin-back-above-usd82-000-zec-jumps-11-as-etf-outflows-continue",
-      "pubDate": "Fri, 16 Oct 2026 09:48:14 +0000"
-    },
-    {
-      "title": "U.S. judge rejects Gemini’s appeal to void $5 million settlement despite CFTC backing",
-      "link": "https://www.coindesk.com/policy/2026/10/16/u-s-judge-rejects-gemini-s-appeal-to-void-usd5-million-settlement-despite-cftc-backing",
-      "pubDate": "Fri, 16 Oct 2026 09:36:21 +0000"
-    },
-    {
-      "title": "MSCI approves rules that could eject Strategy, Metaplanet from equity indexes",
-      "link": "https://www.coindesk.com/markets/2026/10/16/msci-approves-rules-that-could-eject-strategy-metaplanet-from-equity-indexes",
-      "pubDate": "Fri, 16 Oct 2026 08:34:48 +0000"
     }
   ]
 }
