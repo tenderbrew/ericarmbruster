@@ -1,13 +1,13 @@
 {
-  "fetchedAt": "2026-10-17T04:18:01.083Z",
+  "fetchedAt": "2026-10-17T10:34:59.697Z",
   "price": {
-    "usd": 81440,
-    "time": 1792210509
+    "usd": 81536,
+    "time": 1792233009
   },
   "moves": {
-    "d1": -0.10261809346974182,
-    "d7": -1.7823694894478326,
-    "d30": 6.636831091540318
+    "d1": 0.015139134710850932,
+    "d7": -1.6665923218519008,
+    "d30": 6.762532660606979
   },
   "history90d": [
     {
@@ -372,60 +372,65 @@
     },
     {
       "date": "2026-10-17",
-      "close": 81458.90550027128
+      "close": 81537.73141857177
     }
   ],
   "blocks": [
     {
-      "height": 971805,
-      "id": "00000000000000000000f116c87861fa6cb22f1cbda9bab42b5e3488c3bdfec3",
-      "timestamp": 1792209726,
-      "txCount": 4750
+      "height": 971840,
+      "id": "00000000000000000000ec6e50a077c79b293675f52698de93a15ffbd43e4e89",
+      "timestamp": 1792232944,
+      "txCount": 4165
     },
     {
-      "height": 971804,
-      "id": "000000000000000000004319fbb3bd2532f81399182c317c83f86b13c249c90b",
-      "timestamp": 1792209380,
-      "txCount": 5124
+      "height": 971839,
+      "id": "000000000000000000007c54b654265db27c45d6882fe591a54ba32439489b89",
+      "timestamp": 1792231743,
+      "txCount": 4371
     },
     {
-      "height": 971803,
-      "id": "00000000000000000001284e87d8c9e046c51eeb217261783a6b066785119ceb",
-      "timestamp": 1792208420,
-      "txCount": 6223
+      "height": 971838,
+      "id": "00000000000000000001af214f0c903da0591510135e40391fca6fac8f971a17",
+      "timestamp": 1792231138,
+      "txCount": 4998
     },
     {
-      "height": 971802,
-      "id": "0000000000000000000189daf99b3e3ca014cc873802ae59ed7c0d65462d4860",
-      "timestamp": 1792207955,
-      "txCount": 6071
+      "height": 971837,
+      "id": "00000000000000000000f70f8d3367969fb1ac52d89c40398872d97caadd6e0a",
+      "timestamp": 1792231213,
+      "txCount": 3839
     },
     {
-      "height": 971801,
-      "id": "000000000000000000006082ae791d6b685a9da95ef0e420997c263d68d32d91",
-      "timestamp": 1792207856,
-      "txCount": 5942
+      "height": 971836,
+      "id": "00000000000000000001f4369c0dde716b0be824a1637a0e5efb01ecb7cab5b6",
+      "timestamp": 1792229700,
+      "txCount": 3491
     },
     {
-      "height": 971800,
-      "id": "000000000000000000018f8688983b23328129fe1758560bf5e838fe215381cf",
-      "timestamp": 1792207805,
-      "txCount": 6190
+      "height": 971835,
+      "id": "00000000000000000000b75d3a5546c5ac0b968a88e694478d4726e4f5a66d11",
+      "timestamp": 1792229346,
+      "txCount": 3999
     },
     {
-      "height": 971799,
-      "id": "0000000000000000000077375e86a293906fc114a457664235c4422a9676c78f",
-      "timestamp": 1792207407,
-      "txCount": 5560
+      "height": 971834,
+      "id": "000000000000000000005943adce9e66ef2d306a351f20f52fc30db4e55b1796",
+      "timestamp": 1792229069,
+      "txCount": 4399
     },
     {
-      "height": 971798,
-      "id": "0000000000000000000198d36677c826d5cb796bfad23d3397e9bcc4c2da0cd2",
-      "timestamp": 1792206836,
-      "txCount": 5638
+      "height": 971833,
+      "id": "0000000000000000000152b3dae0100888f52c521f564b6b1f7cb128869e6fb9",
+      "timestamp": 1792225948,
+      "txCount": 5671
     }
   ],
   "news": [
+    {
+      "title": "‘Wow, it’s a real discovery’: Claude cracks a 25-year NSA number mystery",
+      "link": "https://www.coindesk.com/tech/2026/10/17/wow-it-s-a-real-discovery-claude-cracks-a-25-year-nsa-number-mystery",
+      "pubDate": "Sat, 17 Oct 2026 06:39:48 +0000"
+    },
     {
       "title": "Satoshi-era bitcoin faces a bigger quantum threat after Google’s new Willow breakthrough",
       "link": "https://www.coindesk.com/tech/2026/10/16/satoshi-era-bitcoin-faces-a-bigger-quantum-threat-after-google-s-new-willow-breakthrough",
@@ -480,11 +485,6 @@
       "title": "MSCI approves rules that could eject Strategy, Metaplanet from equity indexes",
       "link": "https://www.coindesk.com/markets/2026/10/16/msci-approves-rules-that-could-eject-strategy-metaplanet-from-equity-indexes",
       "pubDate": "Fri, 16 Oct 2026 08:34:48 +0000"
-    },
-    {
-      "title": "XRP has failed to make holders rich like bitcoin and ether. Here’s why",
-      "link": "https://www.coindesk.com/markets/2026/10/16/xrp-has-failed-to-make-holders-rich-like-bitcoin-and-ether-here-s-why",
-      "pubDate": "Fri, 16 Oct 2026 05:53:58 +0000"
     }
   ]
 }
