@@ -1,13 +1,13 @@
 {
-  "fetchedAt": "2026-10-17T15:28:13.867Z",
+  "fetchedAt": "2026-10-17T20:30:55.747Z",
   "price": {
-    "usd": 81422,
-    "time": 1792250412
+    "usd": 81501,
+    "time": 1792268707
   },
   "moves": {
-    "d1": -0.12469757375359602,
-    "d7": -1.804077708372076,
-    "d30": 6.613262047340318
+    "d1": -0.027793188063329755,
+    "d7": -1.7088027475379186,
+    "d30": 6.716703963551418
   },
   "history90d": [
     {
@@ -372,60 +372,65 @@
     },
     {
       "date": "2026-10-17",
-      "close": 81420.67936283798
+      "close": 81550.88026283012
     }
   ],
   "blocks": [
     {
-      "height": 971880,
-      "id": "000000000000000000008a79c47ce1fa49971ab301161e659033a38a38d15638",
-      "timestamp": 1792250790,
-      "txCount": 1149
+      "height": 971903,
+      "id": "00000000000000000000b420d3a9c4100f7f484a8d010d31c6f39296d42e9860",
+      "timestamp": 1792268206,
+      "txCount": 3781
     },
     {
-      "height": 971879,
-      "id": "0000000000000000000014506ed3f4c37d0c76fe9de8643232970af392f76af8",
-      "timestamp": 1792250239,
-      "txCount": 5434
+      "height": 971902,
+      "id": "00000000000000000000833e88a4efe7b3971a37948290b8a51c940be160dacd",
+      "timestamp": 1792267375,
+      "txCount": 3327
     },
     {
-      "height": 971878,
-      "id": "0000000000000000000116eb81c1a20985dad549c2e9e3c5f4d26fa7b665b89b",
-      "timestamp": 1792250039,
-      "txCount": 6552
+      "height": 971901,
+      "id": "000000000000000000006614a392a9b920a3b604e01496aeec809341051ef248",
+      "timestamp": 1792266921,
+      "txCount": 4192
     },
     {
-      "height": 971877,
-      "id": "00000000000000000001425e007ab7be8b2d9b33425bf23fe1b268e360eb516a",
-      "timestamp": 1792249928,
-      "txCount": 4606
+      "height": 971900,
+      "id": "00000000000000000001ee88868d4fab432613abe3369ea14499455d613dd1c6",
+      "timestamp": 1792266268,
+      "txCount": 3828
     },
     {
-      "height": 971876,
-      "id": "00000000000000000001d3b48e032eea643a997e5fd549de3b3487d5762fd716",
-      "timestamp": 1792248739,
-      "txCount": 6533
+      "height": 971899,
+      "id": "00000000000000000001e6974fddef800fb7b0e9d350a51a829b01a53e3c1a6b",
+      "timestamp": 1792264801,
+      "txCount": 4358
     },
     {
-      "height": 971875,
-      "id": "00000000000000000001dbcdbc3cd00710f842a0685a3c07aee7d8c76d86e3b8",
-      "timestamp": 1792248665,
-      "txCount": 3849
+      "height": 971898,
+      "id": "000000000000000000010f836b0e5fdcdd8e7b15ac84ce873965ad41fbe1bd91",
+      "timestamp": 1792262915,
+      "txCount": 3550
     },
     {
-      "height": 971874,
-      "id": "000000000000000000018573e59b632a3bff2d9bf395c83ffe216a0c71557035",
-      "timestamp": 1792247784,
-      "txCount": 5077
+      "height": 971897,
+      "id": "0000000000000000000066d5ad3a2cd0ad33d00c68f3e550796b4101c475e750",
+      "timestamp": 1792262510,
+      "txCount": 4302
     },
     {
-      "height": 971873,
-      "id": "000000000000000000011c18f94ff86d54c659be53726752b4b3bd8a91510f91",
-      "timestamp": 1792247149,
-      "txCount": 6374
+      "height": 971896,
+      "id": "0000000000000000000142a5ac84bd7c3f866ac84b97d56b1ec23a2267258cf5",
+      "timestamp": 1792260192,
+      "txCount": 7074
     }
   ],
   "news": [
+    {
+      "title": "Goldman, Wells Fargo, Morgan Stanley see tokenization as a growth play, not a threat",
+      "link": "https://www.coindesk.com/business/2026/10/17/goldman-wells-fargo-morgan-stanley-see-tokenization-as-a-growth-play-not-a-threat",
+      "pubDate": "Sat, 17 Oct 2026 17:00:00 +0000"
+    },
     {
       "title": "Citrini sees a tokenization boom. The harder question is who profits",
       "link": "https://www.coindesk.com/business/2026/10/17/citrini-sees-a-tokenization-boom-the-harder-question-is-who-profits",
@@ -480,11 +485,6 @@
       "title": "Altcoins outpace bitcoin as celestia jumps 16%, Warsh silent on interest-rate plans",
       "link": "https://www.coindesk.com/markets/2026/10/16/altcoins-outpace-bitcoin-as-celestia-jumps-16-warsh-silent-on-interest-rate-plans",
       "pubDate": "Fri, 16 Oct 2026 10:41:03 +0000"
-    },
-    {
-      "title": "Scammer gets scammed in Ledger spy-chip exploit, loses almost $5 million in bitcoin",
-      "link": "https://www.coindesk.com/business/2026/10/16/scammer-gets-scammed-in-ledger-spy-chip-exploit-loses-almost-usd5-million-in-bitcoin",
-      "pubDate": "Fri, 16 Oct 2026 10:24:30 +0000"
     }
   ]
 }
