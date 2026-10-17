@@ -1,19 +1,15 @@
 {
-  "fetchedAt": "2026-10-16T23:32:21.277Z",
+  "fetchedAt": "2026-10-17T04:18:01.083Z",
   "price": {
-    "usd": 81623,
-    "time": 1792193108
+    "usd": 81440,
+    "time": 1792210509
   },
   "moves": {
-    "d1": -0.6482092359747726,
-    "d7": -1.1400740542539811,
-    "d30": 7.191617694654906
+    "d1": -0.10261809346974182,
+    "d7": -1.7823694894478326,
+    "d30": 6.636831091540318
   },
   "history90d": [
-    {
-      "date": "2026-07-19",
-      "close": 64795.70382303786
-    },
     {
       "date": "2026-07-20",
       "close": 64670.40117470696
@@ -371,61 +367,70 @@
       "close": 82155.53979682797
     },
     {
-      "date": "2026-10-16",
-      "close": 81541.2967684256
+      "date": "2026-10-17",
+      "close": 81523.6580235906
+    },
+    {
+      "date": "2026-10-17",
+      "close": 81458.90550027128
     }
   ],
   "blocks": [
     {
-      "height": 971781,
-      "id": "000000000000000000001b59fbaafd41a3dc225d645434e89d3e3a30d0eb30d4",
-      "timestamp": 1792193278,
-      "txCount": 5078
+      "height": 971805,
+      "id": "00000000000000000000f116c87861fa6cb22f1cbda9bab42b5e3488c3bdfec3",
+      "timestamp": 1792209726,
+      "txCount": 4750
     },
     {
-      "height": 971780,
-      "id": "000000000000000000018504d5474eb1f66cc1f9e4339cda612627a5338340bd",
-      "timestamp": 1792192632,
-      "txCount": 5708
+      "height": 971804,
+      "id": "000000000000000000004319fbb3bd2532f81399182c317c83f86b13c249c90b",
+      "timestamp": 1792209380,
+      "txCount": 5124
     },
     {
-      "height": 971779,
-      "id": "00000000000000000001c5e97417458297b7b5d4eac710ad163407c5724f4201",
-      "timestamp": 1792192220,
-      "txCount": 897
+      "height": 971803,
+      "id": "00000000000000000001284e87d8c9e046c51eeb217261783a6b066785119ceb",
+      "timestamp": 1792208420,
+      "txCount": 6223
     },
     {
-      "height": 971778,
-      "id": "00000000000000000001f24165081c05db02ac1663326a06f941e84080b6f3b8",
-      "timestamp": 1792191954,
-      "txCount": 3529
+      "height": 971802,
+      "id": "0000000000000000000189daf99b3e3ca014cc873802ae59ed7c0d65462d4860",
+      "timestamp": 1792207955,
+      "txCount": 6071
     },
     {
-      "height": 971777,
-      "id": "0000000000000000000152859efeebdcd33687eecadf150a37b5a46eb7df9f0d",
-      "timestamp": 1792191762,
-      "txCount": 3259
+      "height": 971801,
+      "id": "000000000000000000006082ae791d6b685a9da95ef0e420997c263d68d32d91",
+      "timestamp": 1792207856,
+      "txCount": 5942
     },
     {
-      "height": 971776,
-      "id": "00000000000000000000d15cdc407c2d785d9c616007f2e7e585590f2dda1969",
-      "timestamp": 1792190575,
-      "txCount": 7074
+      "height": 971800,
+      "id": "000000000000000000018f8688983b23328129fe1758560bf5e838fe215381cf",
+      "timestamp": 1792207805,
+      "txCount": 6190
     },
     {
-      "height": 971775,
-      "id": "00000000000000000000275c942b327c27bab423da7c3396e3168240c8c9055d",
-      "timestamp": 1792190616,
-      "txCount": 6388
+      "height": 971799,
+      "id": "0000000000000000000077375e86a293906fc114a457664235c4422a9676c78f",
+      "timestamp": 1792207407,
+      "txCount": 5560
     },
     {
-      "height": 971774,
-      "id": "00000000000000000000574bed6f3fbf9ef00e76bdc08b3e11263ba239575a53",
-      "timestamp": 1792190210,
-      "txCount": 5008
+      "height": 971798,
+      "id": "0000000000000000000198d36677c826d5cb796bfad23d3397e9bcc4c2da0cd2",
+      "timestamp": 1792206836,
+      "txCount": 5638
     }
   ],
   "news": [
+    {
+      "title": "Satoshi-era bitcoin faces a bigger quantum threat after Google’s new Willow breakthrough",
+      "link": "https://www.coindesk.com/tech/2026/10/16/satoshi-era-bitcoin-faces-a-bigger-quantum-threat-after-google-s-new-willow-breakthrough",
+      "pubDate": "Sat, 17 Oct 2026 02:30:00 +0000"
+    },
     {
       "title": "Big Tech's AI auditors will only see what they're shown",
       "link": "https://www.coindesk.com/opinion/2026/10/16/big-tech-s-ai-auditors-will-only-see-what-they-re-shown",
@@ -480,11 +485,6 @@
       "title": "XRP has failed to make holders rich like bitcoin and ether. Here’s why",
       "link": "https://www.coindesk.com/markets/2026/10/16/xrp-has-failed-to-make-holders-rich-like-bitcoin-and-ether-here-s-why",
       "pubDate": "Fri, 16 Oct 2026 05:53:58 +0000"
-    },
-    {
-      "title": "An OpenAI agent ran out of Ethereum funds, and took from a wallet it did not own",
-      "link": "https://www.coindesk.com/tech/2026/10/16/an-openai-agent-ran-out-of-ethereum-funds-and-took-from-a-wallet-it-did-not-own",
-      "pubDate": "Fri, 16 Oct 2026 04:29:19 +0000"
     }
   ]
 }
