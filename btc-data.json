@@ -1,13 +1,13 @@
 {
-  "fetchedAt": "2026-10-18T04:23:56.600Z",
+  "fetchedAt": "2026-10-18T10:57:39.070Z",
   "price": {
-    "usd": 81802,
-    "time": 1792297209
+    "usd": 82019,
+    "time": 1792320608
   },
   "moves": {
-    "d1": 0.48355581453025653,
-    "d7": -2.2569597485171844,
-    "d30": 1.1479856467151217
+    "d1": 0.7501132533673571,
+    "d7": -1.997672203780232,
+    "d30": 1.416305649714289
   },
   "history90d": [
     {
@@ -372,60 +372,65 @@
     },
     {
       "date": "2026-10-18",
-      "close": 81841.09161536998
+      "close": 82038.34791547495
     }
   ],
   "blocks": [
     {
-      "height": 971944,
-      "id": "00000000000000000001ff8564ce7fd9f74dab93169e04c7807eebc92505a7b5",
-      "timestamp": 1792297214,
-      "txCount": 3499
+      "height": 971983,
+      "id": "00000000000000000001dea10f6a4e17c18ef2f45441a4c24ab47d08e8afc55c",
+      "timestamp": 1792320426,
+      "txCount": 4566
     },
     {
-      "height": 971943,
-      "id": "00000000000000000001b138611ebab6150f380964338a1cb14a17cf4fdd48d6",
-      "timestamp": 1792295698,
-      "txCount": 6487
+      "height": 971982,
+      "id": "0000000000000000000041305db586b9b2104e8585d5d8fff655c15869ea9ec9",
+      "timestamp": 1792319569,
+      "txCount": 3615
     },
     {
-      "height": 971942,
-      "id": "00000000000000000000ab88174decbfe7704653ff98b07777664de81203fd75",
-      "timestamp": 1792295461,
-      "txCount": 6954
+      "height": 971981,
+      "id": "000000000000000000011722c2e6f99a4b15645e2160d9bb9de503a435e40bf8",
+      "timestamp": 1792319358,
+      "txCount": 7172
     },
     {
-      "height": 971941,
-      "id": "00000000000000000001cefecc7317ddaf64dbddaab943d7800e3773e7a55b2f",
-      "timestamp": 1792295101,
-      "txCount": 4864
+      "height": 971980,
+      "id": "000000000000000000000a91fb2e94c0a2b1c0c6dce494f2b1c371e8d77fef21",
+      "timestamp": 1792319340,
+      "txCount": 3179
     },
     {
-      "height": 971940,
-      "id": "000000000000000000018484a8274f63b8a1b57db61c2e40f203c34b0422ba3f",
-      "timestamp": 1792294341,
-      "txCount": 1271
+      "height": 971979,
+      "id": "00000000000000000000dc52a396d8aa4d170f4174bdc39017c66c0b87e3c625",
+      "timestamp": 1792319333,
+      "txCount": 4049
     },
     {
-      "height": 971939,
-      "id": "00000000000000000000bb1601de5fe550ee0734102e48cbb5673167fc4efcdd",
-      "timestamp": 1792294305,
-      "txCount": 3912
+      "height": 971978,
+      "id": "00000000000000000000eea78d4745a6ad460897c4fc1f2596e865577fd1be48",
+      "timestamp": 1792318987,
+      "txCount": 3705
     },
     {
-      "height": 971938,
-      "id": "00000000000000000000887d7e37029ba04475e3166fbab39d03d5e236484d86",
-      "timestamp": 1792292946,
-      "txCount": 2904
+      "height": 971977,
+      "id": "00000000000000000001a479d24271d42a4e94f59934b3c4d97188a5b0f0accc",
+      "timestamp": 1792318696,
+      "txCount": 3988
     },
     {
-      "height": 971937,
-      "id": "00000000000000000000d4473e907e4c6d5dc870920f9d0a9153b8b8759eba90",
-      "timestamp": 1792291805,
-      "txCount": 6278
+      "height": 971976,
+      "id": "00000000000000000000a6abcb4eea3753afee3ba3c3035e2b4f60cc57360943",
+      "timestamp": 1792318266,
+      "txCount": 4596
     }
   ],
   "news": [
+    {
+      "title": "Chip-stock bets lost $52 million in 10 minutes with Wall Street shut",
+      "link": "https://www.coindesk.com/markets/2026/10/18/chip-stock-bets-lost-usd52-million-in-10-minutes-with-wall-street-shut",
+      "pubDate": "Sun, 18 Oct 2026 07:13:32 +0000"
+    },
     {
       "title": "Circle defends USDC economics as stablecoin rivals court its partners with bigger cut",
       "link": "https://www.coindesk.com/business/2026/10/17/circle-defends-usdc-economics-as-stablecoin-rivals-court-its-partners-with-bigger-cut",
@@ -480,11 +485,6 @@
       "title": "Quantum Alliance forms amid warnings 6.4 million bitcoin face future quantum threat",
       "link": "https://www.coindesk.com/tech/2026/10/16/experts-agree-quantum-computers-could-put-satoshi-s-bitcoin-at-risk-but-not-on-what-s-next",
       "pubDate": "Fri, 16 Oct 2026 10:52:26 +0000"
-    },
-    {
-      "title": "Tokenized Tesla surges as Elon Musk unveils SpaceX-powered flying Roadster prototype",
-      "link": "https://www.coindesk.com/business/2026/10/16/elon-musk-s-flying-roadster-reveal-sent-tesla-crypto-trading-into-overdrive-while-stock-markets-were-closed",
-      "pubDate": "Fri, 16 Oct 2026 10:48:49 +0000"
     }
   ]
 }
