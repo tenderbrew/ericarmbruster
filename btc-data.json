@@ -1,19 +1,15 @@
 {
-  "fetchedAt": "2026-10-17T23:05:13.675Z",
+  "fetchedAt": "2026-10-18T04:23:56.600Z",
   "price": {
-    "usd": 81260,
-    "time": 1792278005
+    "usd": 81802,
+    "time": 1792297209
   },
   "moves": {
-    "d1": -0.32341289630833936,
-    "d7": -1.9994516786902228,
-    "d30": 6.40114064954036
+    "d1": 0.48355581453025653,
+    "d7": -2.2569597485171844,
+    "d30": 1.1479856467151217
   },
   "history90d": [
-    {
-      "date": "2026-07-20",
-      "close": 64670.40117470696
-    },
     {
       "date": "2026-07-21",
       "close": 65184.92144270268
@@ -371,61 +367,70 @@
       "close": 81523.6580235906
     },
     {
-      "date": "2026-10-17",
-      "close": 81306.09106656286
+      "date": "2026-10-18",
+      "close": 81408.34521320867
+    },
+    {
+      "date": "2026-10-18",
+      "close": 81841.09161536998
     }
   ],
   "blocks": [
     {
-      "height": 971912,
-      "id": "00000000000000000001d4976ce65a806336f88fc8b77c0a2af16ba52ea65b53",
-      "timestamp": 1792277980,
-      "txCount": 3890
+      "height": 971944,
+      "id": "00000000000000000001ff8564ce7fd9f74dab93169e04c7807eebc92505a7b5",
+      "timestamp": 1792297214,
+      "txCount": 3499
     },
     {
-      "height": 971911,
-      "id": "000000000000000000006be04c9e24b0f131e0129212062c844b4f459b7fae71",
-      "timestamp": 1792275781,
-      "txCount": 3974
+      "height": 971943,
+      "id": "00000000000000000001b138611ebab6150f380964338a1cb14a17cf4fdd48d6",
+      "timestamp": 1792295698,
+      "txCount": 6487
     },
     {
-      "height": 971910,
-      "id": "00000000000000000001bb658d29aba5f881209d04079821a9f1dfc1081b88f9",
-      "timestamp": 1792275578,
-      "txCount": 3929
+      "height": 971942,
+      "id": "00000000000000000000ab88174decbfe7704653ff98b07777664de81203fd75",
+      "timestamp": 1792295461,
+      "txCount": 6954
     },
     {
-      "height": 971909,
-      "id": "0000000000000000000085f349a255906dc661414a55e8ee51c91767a7964544",
-      "timestamp": 1792274447,
-      "txCount": 4082
+      "height": 971941,
+      "id": "00000000000000000001cefecc7317ddaf64dbddaab943d7800e3773e7a55b2f",
+      "timestamp": 1792295101,
+      "txCount": 4864
     },
     {
-      "height": 971908,
-      "id": "00000000000000000000cba26b3725d5a340cdce4d527bda9dce7a6bc7b1a43b",
-      "timestamp": 1792272861,
-      "txCount": 3644
+      "height": 971940,
+      "id": "000000000000000000018484a8274f63b8a1b57db61c2e40f203c34b0422ba3f",
+      "timestamp": 1792294341,
+      "txCount": 1271
     },
     {
-      "height": 971907,
-      "id": "000000000000000000017b5ba0ae4015eb91638dc90b8bdebaa6176032130f5c",
-      "timestamp": 1792270828,
-      "txCount": 4105
+      "height": 971939,
+      "id": "00000000000000000000bb1601de5fe550ee0734102e48cbb5673167fc4efcdd",
+      "timestamp": 1792294305,
+      "txCount": 3912
     },
     {
-      "height": 971906,
-      "id": "00000000000000000000815765314ea275621058cf1885debd0b11ca7c7764b8",
-      "timestamp": 1792269901,
-      "txCount": 4282
+      "height": 971938,
+      "id": "00000000000000000000887d7e37029ba04475e3166fbab39d03d5e236484d86",
+      "timestamp": 1792292946,
+      "txCount": 2904
     },
     {
-      "height": 971905,
-      "id": "00000000000000000000f5ad15ddd6f731bcf533a4539fab930e71f670f521e2",
-      "timestamp": 1792269536,
-      "txCount": 4498
+      "height": 971937,
+      "id": "00000000000000000000d4473e907e4c6d5dc870920f9d0a9153b8b8759eba90",
+      "timestamp": 1792291805,
+      "txCount": 6278
     }
   ],
   "news": [
+    {
+      "title": "Circle defends USDC economics as stablecoin rivals court its partners with bigger cut",
+      "link": "https://www.coindesk.com/business/2026/10/17/circle-defends-usdc-economics-as-stablecoin-rivals-court-its-partners-with-bigger-cut",
+      "pubDate": "Sun, 18 Oct 2026 01:06:35 +0000"
+    },
     {
       "title": "Goldman, Wells Fargo, Morgan Stanley see tokenization as a growth play, not a threat",
       "link": "https://www.coindesk.com/business/2026/10/17/goldman-wells-fargo-morgan-stanley-see-tokenization-as-a-growth-play-not-a-threat",
@@ -480,11 +485,6 @@
       "title": "Tokenized Tesla surges as Elon Musk unveils SpaceX-powered flying Roadster prototype",
       "link": "https://www.coindesk.com/business/2026/10/16/elon-musk-s-flying-roadster-reveal-sent-tesla-crypto-trading-into-overdrive-while-stock-markets-were-closed",
       "pubDate": "Fri, 16 Oct 2026 10:48:49 +0000"
-    },
-    {
-      "title": "Altcoins outpace bitcoin as celestia jumps 16%, Warsh silent on interest-rate plans",
-      "link": "https://www.coindesk.com/markets/2026/10/16/altcoins-outpace-bitcoin-as-celestia-jumps-16-warsh-silent-on-interest-rate-plans",
-      "pubDate": "Fri, 16 Oct 2026 10:41:03 +0000"
     }
   ]
 }
