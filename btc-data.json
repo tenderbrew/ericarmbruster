@@ -1,13 +1,13 @@
 {
-  "fetchedAt": "2026-10-19T13:01:33.533Z",
+  "fetchedAt": "2026-10-19T20:33:28.623Z",
   "price": {
-    "usd": 82486,
-    "time": 1792414507
+    "usd": 81934,
+    "time": 1792441806
   },
   "moves": {
-    "d1": 0.5686655193410495,
-    "d7": 0.8449813073533319,
-    "d30": 1.538209411741942
+    "d1": -0.10434448680152197,
+    "d7": 0.17012218360312747,
+    "d30": 0.8587111745225195
   },
   "history90d": [
     {
@@ -372,72 +372,87 @@
     },
     {
       "date": "2026-10-19",
-      "close": 82517.63411924543
+      "close": 81943.22039844719
     }
   ],
   "blocks": [
     {
-      "height": 972146,
-      "id": "00000000000000000000549651b6b3435f0d3720c183b49317e9a701598603c7",
-      "timestamp": 1792414481,
-      "txCount": 5811
+      "height": 972203,
+      "id": "000000000000000000018c34b79bb2769b9402d1cd146be62d86887872938d66",
+      "timestamp": 1792441776,
+      "txCount": 940
     },
     {
-      "height": 972145,
-      "id": "00000000000000000000478293766c84bb1ca3e691bcb96b6e430ebd15d4922e",
-      "timestamp": 1792414168,
-      "txCount": 3709
+      "height": 972202,
+      "id": "00000000000000000000fb2f9dab3da9a2fe571815b3bc602bc2b3e36454dc5e",
+      "timestamp": 1792441745,
+      "txCount": 3947
     },
     {
-      "height": 972144,
-      "id": "0000000000000000000165b9db61d8684079115feaf764e476f0f0dd802cca23",
-      "timestamp": 1792413716,
-      "txCount": 2364
+      "height": 972201,
+      "id": "00000000000000000001012191d18b637ef54d53a90d09be638b5c6f13378231",
+      "timestamp": 1792440223,
+      "txCount": 3291
     },
     {
-      "height": 972143,
-      "id": "000000000000000000016b805a67b9f16e8e17fd3ae1f113b87e856e7d06bd45",
-      "timestamp": 1792412799,
-      "txCount": 7095
+      "height": 972200,
+      "id": "000000000000000000003b54d53f010e9d33948d7111a29bcc745d5bb7ccc3c6",
+      "timestamp": 1792439287,
+      "txCount": 6764
     },
     {
-      "height": 972142,
-      "id": "0000000000000000000100189396627d33af2fcf0747c3f25cae25960bfdd979",
-      "timestamp": 1792412728,
-      "txCount": 4655
+      "height": 972199,
+      "id": "00000000000000000000504973eff1a1d63a14d49de150c018d8627e0cd347cd",
+      "timestamp": 1792439135,
+      "txCount": 3485
     },
     {
-      "height": 972141,
-      "id": "000000000000000000019aa7ba5616cabb7a7c088c6c11d54d6b96be30c2b6b5",
-      "timestamp": 1792412476,
-      "txCount": 2898
+      "height": 972198,
+      "id": "0000000000000000000047b5468d59f6eaf22571caa90f528e0645b5856e484a",
+      "timestamp": 1792439102,
+      "txCount": 2823
     },
     {
-      "height": 972140,
-      "id": "000000000000000000017e867806246de7de157bdade8bd70554f1851e86eeb7",
-      "timestamp": 1792411982,
-      "txCount": 3720
+      "height": 972197,
+      "id": "00000000000000000000e7b6a195d8331f1c8b0f4231964d1b439a07c336989c",
+      "timestamp": 1792438771,
+      "txCount": 3776
     },
     {
-      "height": 972139,
-      "id": "000000000000000000016d2d8ad770e7dbc44366a236ea329d35769c454137aa",
-      "timestamp": 1792411164,
-      "txCount": 3034
+      "height": 972196,
+      "id": "0000000000000000000105f0dd3b3cba7af88cfc78f0daec1ed3d59a5dc5708f",
+      "timestamp": 1792437216,
+      "txCount": 3163
     }
   ],
   "news": [
+    {
+      "title": "Tether: Senator's investigation misses positive work that's led to lower Iran volumes",
+      "link": "https://www.coindesk.com/policy/2026/10/19/tether-senator-s-investigation-misses-positive-work-that-s-led-to-lower-iran-volumes",
+      "pubDate": "Mon, 19 Oct 2026 20:21:13 +0000"
+    },
+    {
+      "title": "U.S. CFTC rebuffs CME legal stance in consequential fight over perpetual futures",
+      "link": "https://www.coindesk.com/policy/2026/10/19/u-s-cftc-rebuffs-cme-legal-stance-in-consequential-fight-over-perpetual-futures",
+      "pubDate": "Mon, 19 Oct 2026 16:47:00 +0000"
+    },
+    {
+      "title": "Zerohash rolls out a new tool to move crypto without copying wallet addresses",
+      "link": "https://www.coindesk.com/business/2026/10/19/zerohash-rolls-out-a-new-tool-to-move-crypto-without-copying-wallet-addresses",
+      "pubDate": "Mon, 19 Oct 2026 14:58:40 +0000"
+    },
     {
       "title": "Cardano founder Charles Hoskinson is building a new programming language for the network",
       "link": "https://www.coindesk.com/tech/2026/10/19/cardano-founder-charles-hoskinson-is-building-a-new-programming-language-for-the-network",
       "pubDate": "Mon, 19 Oct 2026 12:16:58 +0000"
     },
     {
-      "title": "Strategy on verge of golden cross, just weeks after bitcoin flashed same bullish signal",
+      "title": "Strategy's price chart is about to flash a major bullish signal weeks after bitcoin did",
       "link": "https://www.coindesk.com/daybook-us/2026/10/19/strategy-on-verge-of-golden-cross-just-weeks-after-bitcoin-flashed-same-bullish-signal",
       "pubDate": "Mon, 19 Oct 2026 11:15:00 +0000"
     },
     {
-      "title": "Live updates: Bitcoin edges higher as U.S. stocks rebound early Monday",
+      "title": "Live updates: Bitcoin holds near $82,000 as Nasdaq rebounds more than 1%",
       "link": "https://www.coindesk.com/markets/2026/10/19/live-updates-bitcoin-tags-usd83-000-and-slips-back-as-chip-stocks-lead-a-rebound",
       "pubDate": "Mon, 19 Oct 2026 11:05:54 +0000"
     },
@@ -447,7 +462,7 @@
       "pubDate": "Mon, 19 Oct 2026 10:26:33 +0000"
     },
     {
-      "title": "JPMorgan's JPM Coin, representing dollar deposits, is coming to Ethereum: Bloomberg",
+      "title": "JPMorgan brings JPM Coin, representing dollar deposits, to Ethereum",
       "link": "https://www.coindesk.com/markets/2026/10/19/jpmorgan-s-jpm-coin-representing-dollar-deposits-is-coming-to-ethereum-bloomberg",
       "pubDate": "Mon, 19 Oct 2026 10:03:47 +0000"
     },
@@ -470,21 +485,6 @@
       "title": "Bitcoin whale moves $34 million in BTC it got in 2013 when coins traded at $131",
       "link": "https://www.coindesk.com/markets/2026/10/19/bitcoin-whale-moves-usd34-million-in-btc-it-got-in-2013-when-coins-traded-at-usd131",
       "pubDate": "Mon, 19 Oct 2026 06:23:16 +0000"
-    },
-    {
-      "title": "Zcash developers plan a fix to keep ZEC swaps private from future quantum computers",
-      "link": "https://www.coindesk.com/tech/2026/10/19/zcash-developers-plan-a-fix-to-keep-zec-swaps-private-from-future-quantum-computers",
-      "pubDate": "Mon, 19 Oct 2026 05:23:02 +0000"
-    },
-    {
-      "title": "XRP Ledger is set to fix its lending code before anyone can use it",
-      "link": "https://www.coindesk.com/tech/2026/10/19/xrp-ledger-is-set-to-fix-its-lending-code-before-anyone-can-use-it",
-      "pubDate": "Mon, 19 Oct 2026 04:54:31 +0000"
-    },
-    {
-      "title": "Bitcoin, Korea’s Kospi and Nasdaq futures rally as China GDP beats estimates",
-      "link": "https://www.coindesk.com/markets/2026/10/19/bitcoin-korea-s-kospi-and-nasdaq-futures-rally-as-china-gdp-beats-estimates",
-      "pubDate": "Mon, 19 Oct 2026 03:36:58 +0000"
     }
   ]
 }
