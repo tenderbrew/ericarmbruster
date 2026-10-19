@@ -1,19 +1,15 @@
 {
-  "fetchedAt": "2026-10-18T23:05:59.985Z",
+  "fetchedAt": "2026-10-19T04:32:48.277Z",
   "price": {
-    "usd": 81669,
-    "time": 1792364708
+    "usd": 82395,
+    "time": 1792384207
   },
   "moves": {
-    "d1": 0.3201819004042816,
-    "d7": -2.4158779210978865,
-    "d30": 0.9835314513285454
+    "d1": 0.4577164060095784,
+    "d7": 0.7337273576046632,
+    "d30": 1.426190680606143
   },
   "history90d": [
-    {
-      "date": "2026-07-21",
-      "close": 65184.92144270268
-    },
     {
       "date": "2026-07-22",
       "close": 66520.98164575922
@@ -371,68 +367,87 @@
       "close": 81408.34521320867
     },
     {
-      "date": "2026-10-18",
-      "close": 81721.51770377555
+      "date": "2026-10-19",
+      "close": 82019.58291286718
+    },
+    {
+      "date": "2026-10-19",
+      "close": 82472.0511091338
     }
   ],
   "blocks": [
     {
-      "height": 972071,
-      "id": "00000000000000000000d5a396125c1770a7a1efe528a6f2a89908b78ea44c7d",
-      "timestamp": 1792364764,
-      "txCount": 3951
+      "height": 972106,
+      "id": "00000000000000000001d813c9a80ca65648be1e0591a0ec681bfe9c1d705c44",
+      "timestamp": 1792382976,
+      "txCount": 1228
     },
     {
-      "height": 972070,
-      "id": "00000000000000000000946403ed9f1a0e4faef3b3ba5bf243c40f5e23327d0b",
-      "timestamp": 1792364279,
-      "txCount": 4499
+      "height": 972105,
+      "id": "000000000000000000004e1bdf0b8ad760d9d82d35badf7c2f631b0846901fd4",
+      "timestamp": 1792382863,
+      "txCount": 2754
     },
     {
-      "height": 972069,
-      "id": "00000000000000000001adca256305ba00b4ad3d84105fc597fd29e07b8a12f0",
-      "timestamp": 1792363592,
-      "txCount": 4173
+      "height": 972104,
+      "id": "00000000000000000000f1b12e9d421ac293437281811706f28552095dce186a",
+      "timestamp": 1792381270,
+      "txCount": 4581
     },
     {
-      "height": 972068,
-      "id": "000000000000000000014bd436eedff636aff561703d0d39412176a14167304b",
-      "timestamp": 1792363117,
-      "txCount": 3697
+      "height": 972103,
+      "id": "000000000000000000018769dda168fed8f5f66aa251eb89f1c5cd9958cd2fb2",
+      "timestamp": 1792380758,
+      "txCount": 3276
     },
     {
-      "height": 972067,
-      "id": "000000000000000000016d202f0dd01a08e1d036ae107e47803bf8fad6916de0",
-      "timestamp": 1792362792,
-      "txCount": 3559
+      "height": 972102,
+      "id": "00000000000000000001b4a20cc0082cf321197c2ffd046a0bf6790957b6b80c",
+      "timestamp": 1792379008,
+      "txCount": 5053
     },
     {
-      "height": 972066,
-      "id": "0000000000000000000089f77a35a8c445f471705f5613f0bfdeab7b57ddb37a",
-      "timestamp": 1792361809,
-      "txCount": 4454
+      "height": 972101,
+      "id": "000000000000000000019d58c697127cc28f7381260de1a245ef8a3cfe4e86ed",
+      "timestamp": 1792378421,
+      "txCount": 6940
     },
     {
-      "height": 972065,
-      "id": "00000000000000000000c591412621a69d671b150b7e04a2cf901a7f9bcf1dc8",
-      "timestamp": 1792361219,
-      "txCount": 4279
+      "height": 972100,
+      "id": "00000000000000000001876e372a7288244ee3972321289ae8db5f426f2fe9cf",
+      "timestamp": 1792378244,
+      "txCount": 6851
     },
     {
-      "height": 972064,
-      "id": "00000000000000000001558fd88820d191d9e8a0e399591a1eafd454727a1367",
-      "timestamp": 1792360463,
-      "txCount": 4158
+      "height": 972099,
+      "id": "0000000000000000000107326111e78a0fe146136c386f72e2e8538fd8ad54f7",
+      "timestamp": 1792378160,
+      "txCount": 2974
     }
   ],
   "news": [
+    {
+      "title": "Bitcoin, Korea’s Kospi and Nasdaq futures rally as China GDP beats estimates",
+      "link": "https://www.coindesk.com/markets/2026/10/19/bitcoin-korea-s-kospi-and-nasdaq-futures-rally-as-china-gdp-beats-estimates",
+      "pubDate": "Mon, 19 Oct 2026 03:36:58 +0000"
+    },
+    {
+      "title": "Deutsche Bank targets Asia crypto custody expansion in 2027 as German launch nears",
+      "link": "https://www.coindesk.com/business/2026/10/18/deutsche-bank-targets-asia-crypto-custody-expansion-in-2027-as-german-launch-nears",
+      "pubDate": "Mon, 19 Oct 2026 02:00:00 +0000"
+    },
+    {
+      "title": "SEC tokenized stock framework faces issuer pushback as Broadcom, Verizon object to OKX-ICE listing",
+      "link": "https://www.coindesk.com/business/2026/10/18/sec-tokenized-stock-framework-faces-issuer-pushback-as-broadcom-verizon-object-to-okx-ice-listing",
+      "pubDate": "Sun, 18 Oct 2026 23:28:06 +0000"
+    },
     {
       "title": "The White House's crypto chief departs: State of Crypto",
       "link": "https://www.coindesk.com/policy/2026/10/18/the-white-house-s-crypto-chief-departs-state-of-crypto",
       "pubDate": "Sun, 18 Oct 2026 18:30:00 +0000"
     },
     {
-      "title": "Wall Street freaked out Friday. VIX and bitcoin say the fear may fade Monday.",
+      "title": "Wall Street freaked out Friday, but VIX and bitcoin trades say the fear may fade Monday.",
       "link": "https://www.coindesk.com/markets/2026/10/18/wall-street-freaked-out-friday-vix-and-bitcoin-say-it-may-not-last",
       "pubDate": "Sun, 18 Oct 2026 16:33:00 +0000"
     },
@@ -470,21 +485,6 @@
       "title": "Circle defends USDC economics as stablecoin rivals court its partners with bigger cut",
       "link": "https://www.coindesk.com/business/2026/10/17/circle-defends-usdc-economics-as-stablecoin-rivals-court-its-partners-with-bigger-cut",
       "pubDate": "Sun, 18 Oct 2026 01:06:35 +0000"
-    },
-    {
-      "title": "Goldman, Wells Fargo, Morgan Stanley see tokenization as a growth play, not a threat",
-      "link": "https://www.coindesk.com/business/2026/10/17/goldman-wells-fargo-morgan-stanley-see-tokenization-as-a-growth-play-not-a-threat",
-      "pubDate": "Sat, 17 Oct 2026 17:00:00 +0000"
-    },
-    {
-      "title": "Citrini sees a tokenization boom. The harder question is who profits",
-      "link": "https://www.coindesk.com/business/2026/10/17/citrini-sees-a-tokenization-boom-the-harder-question-is-who-profits",
-      "pubDate": "Sat, 17 Oct 2026 15:00:00 +0000"
-    },
-    {
-      "title": "Polygon sees Coinme acquisition as entry to payments sector dominated by Visa, Stripe",
-      "link": "https://www.coindesk.com/business/2026/10/17/polygon-sees-coinme-acquisition-as-entry-to-payments-sector-dominated-by-visa-stripe",
-      "pubDate": "Sat, 17 Oct 2026 14:00:00 +0000"
     }
   ]
 }
