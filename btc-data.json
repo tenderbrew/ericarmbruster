@@ -1,13 +1,13 @@
 {
-  "fetchedAt": "2026-10-19T04:32:48.277Z",
+  "fetchedAt": "2026-10-19T13:01:33.533Z",
   "price": {
-    "usd": 82395,
-    "time": 1792384207
+    "usd": 82486,
+    "time": 1792414507
   },
   "moves": {
-    "d1": 0.4577164060095784,
-    "d7": 0.7337273576046632,
-    "d30": 1.426190680606143
+    "d1": 0.5686655193410495,
+    "d7": 0.8449813073533319,
+    "d30": 1.538209411741942
   },
   "history90d": [
     {
@@ -372,119 +372,119 @@
     },
     {
       "date": "2026-10-19",
-      "close": 82472.0511091338
+      "close": 82517.63411924543
     }
   ],
   "blocks": [
     {
-      "height": 972106,
-      "id": "00000000000000000001d813c9a80ca65648be1e0591a0ec681bfe9c1d705c44",
-      "timestamp": 1792382976,
-      "txCount": 1228
+      "height": 972146,
+      "id": "00000000000000000000549651b6b3435f0d3720c183b49317e9a701598603c7",
+      "timestamp": 1792414481,
+      "txCount": 5811
     },
     {
-      "height": 972105,
-      "id": "000000000000000000004e1bdf0b8ad760d9d82d35badf7c2f631b0846901fd4",
-      "timestamp": 1792382863,
-      "txCount": 2754
+      "height": 972145,
+      "id": "00000000000000000000478293766c84bb1ca3e691bcb96b6e430ebd15d4922e",
+      "timestamp": 1792414168,
+      "txCount": 3709
     },
     {
-      "height": 972104,
-      "id": "00000000000000000000f1b12e9d421ac293437281811706f28552095dce186a",
-      "timestamp": 1792381270,
-      "txCount": 4581
+      "height": 972144,
+      "id": "0000000000000000000165b9db61d8684079115feaf764e476f0f0dd802cca23",
+      "timestamp": 1792413716,
+      "txCount": 2364
     },
     {
-      "height": 972103,
-      "id": "000000000000000000018769dda168fed8f5f66aa251eb89f1c5cd9958cd2fb2",
-      "timestamp": 1792380758,
-      "txCount": 3276
+      "height": 972143,
+      "id": "000000000000000000016b805a67b9f16e8e17fd3ae1f113b87e856e7d06bd45",
+      "timestamp": 1792412799,
+      "txCount": 7095
     },
     {
-      "height": 972102,
-      "id": "00000000000000000001b4a20cc0082cf321197c2ffd046a0bf6790957b6b80c",
-      "timestamp": 1792379008,
-      "txCount": 5053
+      "height": 972142,
+      "id": "0000000000000000000100189396627d33af2fcf0747c3f25cae25960bfdd979",
+      "timestamp": 1792412728,
+      "txCount": 4655
     },
     {
-      "height": 972101,
-      "id": "000000000000000000019d58c697127cc28f7381260de1a245ef8a3cfe4e86ed",
-      "timestamp": 1792378421,
-      "txCount": 6940
+      "height": 972141,
+      "id": "000000000000000000019aa7ba5616cabb7a7c088c6c11d54d6b96be30c2b6b5",
+      "timestamp": 1792412476,
+      "txCount": 2898
     },
     {
-      "height": 972100,
-      "id": "00000000000000000001876e372a7288244ee3972321289ae8db5f426f2fe9cf",
-      "timestamp": 1792378244,
-      "txCount": 6851
+      "height": 972140,
+      "id": "000000000000000000017e867806246de7de157bdade8bd70554f1851e86eeb7",
+      "timestamp": 1792411982,
+      "txCount": 3720
     },
     {
-      "height": 972099,
-      "id": "0000000000000000000107326111e78a0fe146136c386f72e2e8538fd8ad54f7",
-      "timestamp": 1792378160,
-      "txCount": 2974
+      "height": 972139,
+      "id": "000000000000000000016d2d8ad770e7dbc44366a236ea329d35769c454137aa",
+      "timestamp": 1792411164,
+      "txCount": 3034
     }
   ],
   "news": [
     {
+      "title": "Cardano founder Charles Hoskinson is building a new programming language for the network",
+      "link": "https://www.coindesk.com/tech/2026/10/19/cardano-founder-charles-hoskinson-is-building-a-new-programming-language-for-the-network",
+      "pubDate": "Mon, 19 Oct 2026 12:16:58 +0000"
+    },
+    {
+      "title": "Strategy on verge of golden cross, just weeks after bitcoin flashed same bullish signal",
+      "link": "https://www.coindesk.com/daybook-us/2026/10/19/strategy-on-verge-of-golden-cross-just-weeks-after-bitcoin-flashed-same-bullish-signal",
+      "pubDate": "Mon, 19 Oct 2026 11:15:00 +0000"
+    },
+    {
+      "title": "Live updates: Bitcoin edges higher as U.S. stocks rebound early Monday",
+      "link": "https://www.coindesk.com/markets/2026/10/19/live-updates-bitcoin-tags-usd83-000-and-slips-back-as-chip-stocks-lead-a-rebound",
+      "pubDate": "Mon, 19 Oct 2026 11:05:54 +0000"
+    },
+    {
+      "title": "Bitcoin extends bounce above $82,000 as stocks rebound, DeFi tokens lead altcoin gains",
+      "link": "https://www.coindesk.com/markets/2026/10/19/bitcoin-extends-bounce-above-usd82-000-as-stocks-rebound-defi-tokens-lead-altcoin-gains",
+      "pubDate": "Mon, 19 Oct 2026 10:26:33 +0000"
+    },
+    {
+      "title": "JPMorgan's JPM Coin, representing dollar deposits, is coming to Ethereum: Bloomberg",
+      "link": "https://www.coindesk.com/markets/2026/10/19/jpmorgan-s-jpm-coin-representing-dollar-deposits-is-coming-to-ethereum-bloomberg",
+      "pubDate": "Mon, 19 Oct 2026 10:03:47 +0000"
+    },
+    {
+      "title": "Crypto vault deposits top $10 billion as lending risks draw regulatory scrutiny",
+      "link": "https://www.coindesk.com/markets/2026/10/19/crypto-vault-deposits-top-usd10-billion-as-lending-risks-draw-regulatory-scrutiny",
+      "pubDate": "Mon, 19 Oct 2026 09:32:38 +0000"
+    },
+    {
+      "title": "Bitcoin mining offshoot Nscale loses Microsoft AI deal as power delay stretches into 2030s",
+      "link": "https://www.coindesk.com/tech/2026/10/19/bitcoin-mining-offshoot-nscale-loses-microsoft-ai-deal-as-power-delay-stretches-into-2030s",
+      "pubDate": "Mon, 19 Oct 2026 09:15:00 +0000"
+    },
+    {
+      "title": "CME’s bitcoin cash, uniswap futures, global PMIs: Crypto Week Ahead",
+      "link": "https://www.coindesk.com/markets/2026/10/19/cme-s-bitcoin-cash-uniswap-futures-global-pmis-crypto-week-ahead",
+      "pubDate": "Mon, 19 Oct 2026 09:12:39 +0000"
+    },
+    {
+      "title": "Bitcoin whale moves $34 million in BTC it got in 2013 when coins traded at $131",
+      "link": "https://www.coindesk.com/markets/2026/10/19/bitcoin-whale-moves-usd34-million-in-btc-it-got-in-2013-when-coins-traded-at-usd131",
+      "pubDate": "Mon, 19 Oct 2026 06:23:16 +0000"
+    },
+    {
+      "title": "Zcash developers plan a fix to keep ZEC swaps private from future quantum computers",
+      "link": "https://www.coindesk.com/tech/2026/10/19/zcash-developers-plan-a-fix-to-keep-zec-swaps-private-from-future-quantum-computers",
+      "pubDate": "Mon, 19 Oct 2026 05:23:02 +0000"
+    },
+    {
+      "title": "XRP Ledger is set to fix its lending code before anyone can use it",
+      "link": "https://www.coindesk.com/tech/2026/10/19/xrp-ledger-is-set-to-fix-its-lending-code-before-anyone-can-use-it",
+      "pubDate": "Mon, 19 Oct 2026 04:54:31 +0000"
+    },
+    {
       "title": "Bitcoin, Korea’s Kospi and Nasdaq futures rally as China GDP beats estimates",
       "link": "https://www.coindesk.com/markets/2026/10/19/bitcoin-korea-s-kospi-and-nasdaq-futures-rally-as-china-gdp-beats-estimates",
       "pubDate": "Mon, 19 Oct 2026 03:36:58 +0000"
-    },
-    {
-      "title": "Deutsche Bank targets Asia crypto custody expansion in 2027 as German launch nears",
-      "link": "https://www.coindesk.com/business/2026/10/18/deutsche-bank-targets-asia-crypto-custody-expansion-in-2027-as-german-launch-nears",
-      "pubDate": "Mon, 19 Oct 2026 02:00:00 +0000"
-    },
-    {
-      "title": "SEC tokenized stock framework faces issuer pushback as Broadcom, Verizon object to OKX-ICE listing",
-      "link": "https://www.coindesk.com/business/2026/10/18/sec-tokenized-stock-framework-faces-issuer-pushback-as-broadcom-verizon-object-to-okx-ice-listing",
-      "pubDate": "Sun, 18 Oct 2026 23:28:06 +0000"
-    },
-    {
-      "title": "The White House's crypto chief departs: State of Crypto",
-      "link": "https://www.coindesk.com/policy/2026/10/18/the-white-house-s-crypto-chief-departs-state-of-crypto",
-      "pubDate": "Sun, 18 Oct 2026 18:30:00 +0000"
-    },
-    {
-      "title": "Wall Street freaked out Friday, but VIX and bitcoin trades say the fear may fade Monday.",
-      "link": "https://www.coindesk.com/markets/2026/10/18/wall-street-freaked-out-friday-vix-and-bitcoin-say-it-may-not-last",
-      "pubDate": "Sun, 18 Oct 2026 16:33:00 +0000"
-    },
-    {
-      "title": "Latvia eyes crypto tax payments in 2027 as parliament overhauls crypto taxation",
-      "link": "https://www.coindesk.com/policy/2026/10/18/latvia-eyes-crypto-tax-payments-in-2027-as-parliament-overhauls-crypto-taxation",
-      "pubDate": "Sun, 18 Oct 2026 16:00:00 +0000"
-    },
-    {
-      "title": "Stablecoin supply stalls, but payments jump 45% as Visa, Mastercard and Stripe connect crypto to cash",
-      "link": "https://www.coindesk.com/business/2026/10/18/stablecoin-supply-stalls-but-payments-jump-45-as-visa-mastercard-and-stripe-connect-crypto-to-cash",
-      "pubDate": "Sun, 18 Oct 2026 14:00:00 +0000"
-    },
-    {
-      "title": "Bitcoin’s $100,000 year-end hope divides analysts as inflation clouds outlook",
-      "link": "https://www.coindesk.com/markets/2026/10/18/bitcoin-s-usd100-000-year-end-hope-divides-analysts-as-inflation-clouds-outlook",
-      "pubDate": "Sun, 18 Oct 2026 13:00:00 +0000"
-    },
-    {
-      "title": "Crypto audits give investors false sense of security as Q3 hacks cost $1.18 billion, Hacken says",
-      "link": "https://www.coindesk.com/tech/2026/10/18/crypto-audits-give-investors-false-sense-of-security-as-q3-hacks-cost-usd1-18-billion-hacken-says",
-      "pubDate": "Sun, 18 Oct 2026 13:00:00 +0000"
-    },
-    {
-      "title": "Crypto exchanges Binance, Coinbase join West Africa scam sweep that flagged $11 million",
-      "link": "https://www.coindesk.com/business/2026/10/14/crypto-exchanges-binance-coinbase-join-west-africa-scam-sweep-that-flagged-usd11-million",
-      "pubDate": "Sun, 18 Oct 2026 12:00:00 +0000"
-    },
-    {
-      "title": "Chip-stock bets lost $52 million in 10 minutes with Wall Street shut",
-      "link": "https://www.coindesk.com/markets/2026/10/18/chip-stock-bets-lost-usd52-million-in-10-minutes-with-wall-street-shut",
-      "pubDate": "Sun, 18 Oct 2026 07:13:32 +0000"
-    },
-    {
-      "title": "Circle defends USDC economics as stablecoin rivals court its partners with bigger cut",
-      "link": "https://www.coindesk.com/business/2026/10/17/circle-defends-usdc-economics-as-stablecoin-rivals-court-its-partners-with-bigger-cut",
-      "pubDate": "Sun, 18 Oct 2026 01:06:35 +0000"
     }
   ]
 }
