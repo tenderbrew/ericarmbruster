@@ -1,13 +1,13 @@
 {
-  "fetchedAt": "2026-10-20T14:16:07.659Z",
+  "fetchedAt": "2026-10-20T19:10:43.868Z",
   "price": {
-    "usd": 82878,
-    "time": 1792505407
+    "usd": 82432,
+    "time": 1792523110
   },
   "moves": {
-    "d1": 1.224711880365681,
-    "d7": -0.28526897216611946,
-    "d30": 2.105439442496415
+    "d1": 0.6799808118234552,
+    "d7": -0.8218742237215859,
+    "d30": 1.5559688231360003
   },
   "history90d": [
     {
@@ -372,60 +372,75 @@
     },
     {
       "date": "2026-10-20",
-      "close": 83045.7509667602
+      "close": 82460.72543798825
     }
   ],
   "blocks": [
     {
-      "height": 972340,
-      "id": "000000000000000000001633ba79c7c26cda007a8ade3cd1d432ca20e7896b90",
-      "timestamp": 1792504963,
-      "txCount": 3175
+      "height": 972366,
+      "id": "000000000000000000015c59b038d71458c626b4d3e5de251a20f7fcba08f77d",
+      "timestamp": 1792521629,
+      "txCount": 2864
     },
     {
-      "height": 972339,
-      "id": "0000000000000000000187a16af5f61531105458e4249fc39497d70afa1eb94f",
-      "timestamp": 1792504939,
-      "txCount": 4074
+      "height": 972365,
+      "id": "00000000000000000000b833b4ae7630009b35eebcf5e824d854a55be3efce45",
+      "timestamp": 1792521398,
+      "txCount": 4052
     },
     {
-      "height": 972338,
-      "id": "00000000000000000000039c0d759b89ef1cc8af7eb412c33ac29eadfccbbddb",
-      "timestamp": 1792504950,
-      "txCount": 7254
+      "height": 972364,
+      "id": "00000000000000000000a65acc12aeca4097989c11838ed2d1796dbe1a754e11",
+      "timestamp": 1792519840,
+      "txCount": 3811
     },
     {
-      "height": 972337,
-      "id": "00000000000000000001a0caa316eb8b6e6d33e107b8e514da37a86a0ac5042e",
-      "timestamp": 1792504868,
-      "txCount": 5842
+      "height": 972363,
+      "id": "000000000000000000000c970a07e308012e8266d3db1423cd0ca3221ac7a4ce",
+      "timestamp": 1792519430,
+      "txCount": 2984
     },
     {
-      "height": 972336,
-      "id": "00000000000000000001b686ab872f253306713c113a47c630ec0a6ad3d04d8d",
-      "timestamp": 1792504674,
-      "txCount": 7902
+      "height": 972362,
+      "id": "00000000000000000001b58b6149784484aacb3ce2b10cd12cfca050c129acbd",
+      "timestamp": 1792518791,
+      "txCount": 3580
     },
     {
-      "height": 972335,
-      "id": "00000000000000000000d56892bf8448fa218cb59d776f58811b7969e3594a58",
-      "timestamp": 1792504663,
-      "txCount": 6688
+      "height": 972361,
+      "id": "00000000000000000000d145a40525196e3c61e07cc7b6aca9877bd58e138704",
+      "timestamp": 1792517393,
+      "txCount": 6384
     },
     {
-      "height": 972334,
-      "id": "00000000000000000001ad1d41e71f2960ef80679ae029652926206e470f8493",
-      "timestamp": 1792504520,
-      "txCount": 4320
+      "height": 972360,
+      "id": "00000000000000000001cef2dd67bdd54fe7b636866edf4d07c4b432c81d6b4e",
+      "timestamp": 1792517232,
+      "txCount": 615
     },
     {
-      "height": 972333,
-      "id": "000000000000000000009f2ec5d1abe91d4249fe35b709b12d79da5fa5bf3242",
-      "timestamp": 1792504268,
-      "txCount": 3475
+      "height": 972359,
+      "id": "00000000000000000001872df2ec04c94a3a7c16620eeeb80d72abd765ae3dbf",
+      "timestamp": 1792517178,
+      "txCount": 3426
     }
   ],
   "news": [
+    {
+      "title": "OKX-ICE’s Andrew Cuomo calls issuer objections a ‘natural response’ to tokenized stock plans",
+      "link": "https://www.coindesk.com/business/2026/10/20/okx-ice-s-andrew-cuomo-calls-issuer-objections-a-natural-response-to-tokenized-stock-plans",
+      "pubDate": "Tue, 20 Oct 2026 18:26:29 +0000"
+    },
+    {
+      "title": "The Coinbase allegations expose Bitcoin's corporate governance gap",
+      "link": "https://www.coindesk.com/opinion/2026/10/20/the-coinbase-allegations-expose-bitcoin-s-corporate-governance-gap",
+      "pubDate": "Tue, 20 Oct 2026 17:02:31 +0000"
+    },
+    {
+      "title": "BlackRock seeks to shield bitcoin investors from losses after rival fund weathers 50% crash",
+      "link": "https://www.coindesk.com/markets/2026/10/20/blackrock-seeks-to-shield-bitcoin-investors-from-losses-after-rival-fund-weathers-50-crash",
+      "pubDate": "Tue, 20 Oct 2026 14:28:39 +0000"
+    },
     {
       "title": "Kazakhstan court bars Coinbase, five others from unlicensed crypto services in Astana International Financial Centre",
       "link": "https://www.coindesk.com/business/2026/10/20/kazakhstan-court-bars-coinbase-five-others-from-unlicensed-crypto-services-in-astana-international-financial-centre",
@@ -457,7 +472,7 @@
       "pubDate": "Tue, 20 Oct 2026 10:22:55 +0000"
     },
     {
-      "title": "Live updates: Bitcoin reclaims $83,000 as stocks turn higher",
+      "title": "Live updates: Bitcoin cuts losses as stocks edge higher",
       "link": "https://www.coindesk.com/markets/2026/10/20/live-updates-market-jitters-persist-as-the-ai-selloff-deepens",
       "pubDate": "Tue, 20 Oct 2026 10:14:19 +0000"
     },
@@ -470,21 +485,6 @@
       "title": "Bitcoin ETFs just saw their biggest day in a month thanks entirely to BlackRock",
       "link": "https://www.coindesk.com/business/2026/10/20/bitcoin-etfs-just-saw-their-biggest-day-in-a-month-thanks-entirely-to-blackrock",
       "pubDate": "Tue, 20 Oct 2026 08:24:01 +0000"
-    },
-    {
-      "title": "Tether: Senator's investigation misses positive work that's led to lower Iran volumes",
-      "link": "https://www.coindesk.com/policy/2026/10/19/tether-senator-s-investigation-misses-positive-work-that-s-led-to-lower-iran-volumes",
-      "pubDate": "Mon, 19 Oct 2026 20:21:13 +0000"
-    },
-    {
-      "title": "U.S. CFTC rebuffs CME legal stance in consequential fight over perpetual futures",
-      "link": "https://www.coindesk.com/policy/2026/10/19/u-s-cftc-rebuffs-cme-legal-stance-in-consequential-fight-over-perpetual-futures",
-      "pubDate": "Mon, 19 Oct 2026 16:47:00 +0000"
-    },
-    {
-      "title": "Zerohash rolls out a new tool to move crypto without copying wallet addresses",
-      "link": "https://www.coindesk.com/business/2026/10/19/zerohash-rolls-out-a-new-tool-to-move-crypto-without-copying-wallet-addresses",
-      "pubDate": "Mon, 19 Oct 2026 14:58:40 +0000"
     }
   ]
 }
