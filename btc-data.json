@@ -1,13 +1,13 @@
 {
-  "fetchedAt": "2026-10-20T00:17:27.383Z",
+  "fetchedAt": "2026-10-20T08:26:25.368Z",
   "price": {
-    "usd": 81695,
-    "time": 1792455307
+    "usd": 81356,
+    "time": 1792484406
   },
   "moves": {
-    "d1": -0.22016895839095385,
-    "d7": -1.7085963546551675,
-    "d30": 0.6479871045964591
+    "d1": -0.634213425287411,
+    "d7": -2.116464471868851,
+    "d30": 0.23034015400635877
   },
   "history90d": [
     {
@@ -372,60 +372,65 @@
     },
     {
       "date": "2026-10-20",
-      "close": 81712.48984896143
+      "close": 81388.7481500415
     }
   ],
   "blocks": [
     {
-      "height": 972232,
-      "id": "000000000000000000017c00e75007ef3b980fdfde01155ae57cd8ea1a1e95bb",
-      "timestamp": 1792454753,
-      "txCount": 4902
+      "height": 972292,
+      "id": "0000000000000000000178bed4aefc7ac6ad8726afbb55ffb215804ccf9c1016",
+      "timestamp": 1792484021,
+      "txCount": 673
     },
     {
-      "height": 972231,
-      "id": "00000000000000000001051481af692a7a4be8604f0c36e8da874a4207d0c0ba",
-      "timestamp": 1792454544,
-      "txCount": 7327
+      "height": 972291,
+      "id": "000000000000000000006d841da2c670686fa8b2c79d16c4c5438bceccec640c",
+      "timestamp": 1792484200,
+      "txCount": 4649
     },
     {
-      "height": 972230,
-      "id": "000000000000000000008afa806bbdbd80f41cdfbd29fa2870fc0f84f0003f55",
-      "timestamp": 1792454128,
-      "txCount": 7615
+      "height": 972290,
+      "id": "00000000000000000001e55dfe513bbe66a432237fb168ed70d1d8f791ea18d1",
+      "timestamp": 1792483159,
+      "txCount": 7090
     },
     {
-      "height": 972229,
-      "id": "00000000000000000000ff2e16e361704644777c3bbbae75cf10dbe5608c4da3",
-      "timestamp": 1792453920,
-      "txCount": 6166
+      "height": 972289,
+      "id": "0000000000000000000177971cad696408cb11dfe1a2cb4833d6f0f177a5c6ac",
+      "timestamp": 1792482919,
+      "txCount": 7572
     },
     {
-      "height": 972228,
-      "id": "0000000000000000000199ca52d18423b6a3f200816c9abda93a07b2dd8e6736",
-      "timestamp": 1792453428,
-      "txCount": 6701
+      "height": 972288,
+      "id": "000000000000000000013fe4badfb2d3608a18533182429f8c63a5b5de2882cb",
+      "timestamp": 1792482804,
+      "txCount": 6383
     },
     {
-      "height": 972227,
-      "id": "00000000000000000000a3dae542258aa53f15780ae4d5b9f32f809d8253a8ea",
-      "timestamp": 1792453321,
-      "txCount": 7656
+      "height": 972287,
+      "id": "00000000000000000000f904edc0127912055c0940acb0fa7accf69262cda36c",
+      "timestamp": 1792482532,
+      "txCount": 5928
     },
     {
-      "height": 972226,
-      "id": "000000000000000000008e66bba28f78d73e3ba10aeebe3be279f0c48df1229d",
-      "timestamp": 1792453291,
-      "txCount": 6700
+      "height": 972286,
+      "id": "00000000000000000001526983eee3c8bb483bef458f22fb2bb3948b3e739ad0",
+      "timestamp": 1792482155,
+      "txCount": 4546
     },
     {
-      "height": 972225,
-      "id": "00000000000000000000e746538afdd78e7c98231084629df7c86a2bf39c335b",
-      "timestamp": 1792453098,
-      "txCount": 3409
+      "height": 972285,
+      "id": "00000000000000000001eb9dc3d53c485b2a0167a77c7bf499e8f7fb6abba6ca",
+      "timestamp": 1792481245,
+      "txCount": 7353
     }
   ],
   "news": [
+    {
+      "title": "Bitcoin ETFs just saw their biggest day in a month thanks entirely to BlackRock",
+      "link": "https://www.coindesk.com/business/2026/10/20/bitcoin-etfs-just-saw-their-biggest-day-in-a-month-thanks-entirely-to-blackrock",
+      "pubDate": "Tue, 20 Oct 2026 08:24:01 +0000"
+    },
     {
       "title": "Tether: Senator's investigation misses positive work that's led to lower Iran volumes",
       "link": "https://www.coindesk.com/policy/2026/10/19/tether-senator-s-investigation-misses-positive-work-that-s-led-to-lower-iran-volumes",
@@ -480,11 +485,6 @@
       "title": "CME’s bitcoin cash, uniswap futures, global PMIs: Crypto Week Ahead",
       "link": "https://www.coindesk.com/markets/2026/10/19/cme-s-bitcoin-cash-uniswap-futures-global-pmis-crypto-week-ahead",
       "pubDate": "Mon, 19 Oct 2026 09:12:39 +0000"
-    },
-    {
-      "title": "Bitcoin whale moves $34 million in BTC it got in 2013 when coins traded at $131",
-      "link": "https://www.coindesk.com/markets/2026/10/19/bitcoin-whale-moves-usd34-million-in-btc-it-got-in-2013-when-coins-traded-at-usd131",
-      "pubDate": "Mon, 19 Oct 2026 06:23:16 +0000"
     }
   ]
 }
