@@ -1,13 +1,13 @@
 {
-  "fetchedAt": "2026-10-20T19:10:43.868Z",
+  "fetchedAt": "2026-10-20T23:50:14.968Z",
   "price": {
-    "usd": 82432,
-    "time": 1792523110
+    "usd": 82919,
+    "time": 1792539906
   },
   "moves": {
-    "d1": 0.6799808118234552,
-    "d7": -0.8218742237215859,
-    "d30": 1.5559688231360003
+    "d1": 1.2747880548280799,
+    "d7": -0.2359397898482385,
+    "d30": 2.155951315576643
   },
   "history90d": [
     {
@@ -372,62 +372,67 @@
     },
     {
       "date": "2026-10-20",
-      "close": 82460.72543798825
+      "close": 82956.64760245939
     }
   ],
   "blocks": [
     {
-      "height": 972366,
-      "id": "000000000000000000015c59b038d71458c626b4d3e5de251a20f7fcba08f77d",
-      "timestamp": 1792521629,
-      "txCount": 2864
+      "height": 972393,
+      "id": "000000000000000000004ac4776bc9c176e4408f60682b3b4df7c14b31b633a6",
+      "timestamp": 1792539488,
+      "txCount": 7278
     },
     {
-      "height": 972365,
-      "id": "00000000000000000000b833b4ae7630009b35eebcf5e824d854a55be3efce45",
-      "timestamp": 1792521398,
-      "txCount": 4052
+      "height": 972392,
+      "id": "0000000000000000000185ad04d9257f5c45bfe577751c8b20ca3e64953484a9",
+      "timestamp": 1792539402,
+      "txCount": 6727
     },
     {
-      "height": 972364,
-      "id": "00000000000000000000a65acc12aeca4097989c11838ed2d1796dbe1a754e11",
-      "timestamp": 1792519840,
-      "txCount": 3811
+      "height": 972391,
+      "id": "00000000000000000001a537b2b8b6a4f5d01af7d51402d09d4a91fd4a70dbbf",
+      "timestamp": 1792539152,
+      "txCount": 4175
     },
     {
-      "height": 972363,
-      "id": "000000000000000000000c970a07e308012e8266d3db1423cd0ca3221ac7a4ce",
-      "timestamp": 1792519430,
-      "txCount": 2984
+      "height": 972390,
+      "id": "00000000000000000000297e4f1ee07053de3a3b1bad1dd7e02621a2a8ba21a9",
+      "timestamp": 1792538660,
+      "txCount": 3400
     },
     {
-      "height": 972362,
-      "id": "00000000000000000001b58b6149784484aacb3ce2b10cd12cfca050c129acbd",
-      "timestamp": 1792518791,
-      "txCount": 3580
+      "height": 972389,
+      "id": "00000000000000000000bda2b5b6b03ec7d771278e5331b77df71eda7d0a88c8",
+      "timestamp": 1792537125,
+      "txCount": 4260
     },
     {
-      "height": 972361,
-      "id": "00000000000000000000d145a40525196e3c61e07cc7b6aca9877bd58e138704",
-      "timestamp": 1792517393,
-      "txCount": 6384
+      "height": 972388,
+      "id": "00000000000000000000ac02855019abd027e735da075f0d656828f4644dbcc3",
+      "timestamp": 1792536451,
+      "txCount": 5204
     },
     {
-      "height": 972360,
-      "id": "00000000000000000001cef2dd67bdd54fe7b636866edf4d07c4b432c81d6b4e",
-      "timestamp": 1792517232,
-      "txCount": 615
+      "height": 972387,
+      "id": "00000000000000000001eb5fc04f9b529d6ec32984625c2358b6a3d232163d8c",
+      "timestamp": 1792535960,
+      "txCount": 4729
     },
     {
-      "height": 972359,
-      "id": "00000000000000000001872df2ec04c94a3a7c16620eeeb80d72abd765ae3dbf",
-      "timestamp": 1792517178,
-      "txCount": 3426
+      "height": 972386,
+      "id": "0000000000000000000041c326cef9085a275ab05516e9d72b2cf8ffb79ca102",
+      "timestamp": 1792535756,
+      "txCount": 3204
     }
   ],
   "news": [
     {
-      "title": "OKX-ICE’s Andrew Cuomo calls issuer objections a ‘natural response’ to tokenized stock plans",
+      "title": "U.S. CFTC sets agenda for AI forum, exploring trading and agentic finance",
+      "link": "https://www.coindesk.com/policy/2026/10/20/u-s-cftc-sets-agenda-for-ai-forum-exploring-trading-and-agentic-finance",
+      "pubDate": "Tue, 20 Oct 2026 21:12:21 +0000"
+    },
+    {
+      "title": "OKX-ICE co-chair Andrew Cuomo calls corporate objections a ‘natural response’ to tokenized stock plans",
       "link": "https://www.coindesk.com/business/2026/10/20/okx-ice-s-andrew-cuomo-calls-issuer-objections-a-natural-response-to-tokenized-stock-plans",
       "pubDate": "Tue, 20 Oct 2026 18:26:29 +0000"
     },
@@ -480,11 +485,6 @@
       "title": "South Korean IPO slump adds to AI market jitters as Brent crude tops $111",
       "link": "https://www.coindesk.com/markets/2026/10/20/south-korean-ipo-plunge-deepens-ai-market-jitters-as-brent-tops-usd111",
       "pubDate": "Tue, 20 Oct 2026 09:32:24 +0000"
-    },
-    {
-      "title": "Bitcoin ETFs just saw their biggest day in a month thanks entirely to BlackRock",
-      "link": "https://www.coindesk.com/business/2026/10/20/bitcoin-etfs-just-saw-their-biggest-day-in-a-month-thanks-entirely-to-blackrock",
-      "pubDate": "Tue, 20 Oct 2026 08:24:01 +0000"
     }
   ]
 }
