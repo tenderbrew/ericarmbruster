@@ -1,13 +1,13 @@
 {
-  "fetchedAt": "2026-10-21T04:38:11.114Z",
+  "fetchedAt": "2026-10-21T11:41:03.688Z",
   "price": {
-    "usd": 82727,
-    "time": 1792557307
+    "usd": 83355,
+    "time": 1792582512
   },
   "moves": {
-    "d1": -0.26141968101923707,
-    "d7": 1.3765870644593559,
-    "d30": -4.468690207733317
+    "d1": 0.4957192027831514,
+    "d7": 2.146160440460898,
+    "d30": -3.7434896982316612
   },
   "history90d": [
     {
@@ -372,60 +372,105 @@
     },
     {
       "date": "2026-10-21",
-      "close": 82754.33465869621
+      "close": 83337.5236785995
     }
   ],
   "blocks": [
     {
-      "height": 972420,
-      "id": "00000000000000000000eb8c54337dccfb0a6683ec548be7205bd0ca4d8b049d",
-      "timestamp": 1792557069,
-      "txCount": 7576
+      "height": 972469,
+      "id": "000000000000000000019e4e70abbb5c4cf4c3cd208857f7811ed1a1e56a51a1",
+      "timestamp": 1792582568,
+      "txCount": 7265
     },
     {
-      "height": 972419,
-      "id": "000000000000000000005637c5cc852729ff1020e660b214aabb436ae8807f58",
-      "timestamp": 1792557248,
-      "txCount": 6356
+      "height": 972468,
+      "id": "0000000000000000000013d3151a8ebef9a07b1cf5411cd9662ebb0382a0b35a",
+      "timestamp": 1792582345,
+      "txCount": 6740
     },
     {
-      "height": 972418,
-      "id": "00000000000000000001c318fd82e51c80fbe3930776756314445cff1e2f726d",
-      "timestamp": 1792556708,
-      "txCount": 5113
+      "height": 972467,
+      "id": "000000000000000000005c1a423c915eba4bf1d23fc24c78ed1eb065c1d6ebf1",
+      "timestamp": 1792582140,
+      "txCount": 338
     },
     {
-      "height": 972417,
-      "id": "00000000000000000001fbabb1cf5122e2a2bee5a019b4ab65cb64f8c3719932",
-      "timestamp": 1792556049,
-      "txCount": 5214
+      "height": 972466,
+      "id": "0000000000000000000150e60b992cd2cd7983b31d45362e10d9e92c493baf85",
+      "timestamp": 1792582044,
+      "txCount": 6709
     },
     {
-      "height": 972416,
-      "id": "00000000000000000001e646e9605c6af863e751ae800a5b494df8304f100fac",
-      "timestamp": 1792555681,
-      "txCount": 5864
+      "height": 972465,
+      "id": "00000000000000000000dc8d832728c9b44904a1e596ffb91dad72982fdedb67",
+      "timestamp": 1792581792,
+      "txCount": 6721
     },
     {
-      "height": 972415,
-      "id": "00000000000000000000f519db50a92872e84ce68125d13889d9b2a16f24b198",
-      "timestamp": 1792555401,
-      "txCount": 3123
+      "height": 972464,
+      "id": "000000000000000000005d388fe66f5d3bf51eb24b2d16ea37bc76128e027023",
+      "timestamp": 1792581651,
+      "txCount": 6022
     },
     {
-      "height": 972414,
-      "id": "00000000000000000001d463f58ca89e2d2a3bb39aa942d84eedf348d5307fbe",
-      "timestamp": 1792554611,
-      "txCount": 5647
+      "height": 972463,
+      "id": "0000000000000000000139534509c25d09de123b5ed2f405e450cbfabf85a6e0",
+      "timestamp": 1792581385,
+      "txCount": 7144
     },
     {
-      "height": 972413,
-      "id": "0000000000000000000062bf0800393c69de04e864d0c4c6f5aaf98792d806cf",
-      "timestamp": 1792554184,
-      "txCount": 7367
+      "height": 972462,
+      "id": "000000000000000000006f77a7fafdf3b939bac2db9f4bc52a21a8f8393f10f1",
+      "timestamp": 1792581293,
+      "txCount": 6489
     }
   ],
   "news": [
+    {
+      "title": "Bitcoin risk management grows more popular as the 'just bet on price' era fades",
+      "link": "https://www.coindesk.com/daybook-us/2026/10/21/bitcoin-risk-management-grows-more-popular-as-the-just-bet-on-price-era-fades",
+      "pubDate": "Wed, 21 Oct 2026 11:15:00 +0000"
+    },
+    {
+      "title": "OCC's final rule to start fresh in weighing stablecoin rewards against GENIUS Act ban",
+      "link": "https://www.coindesk.com/policy/2026/10/21/occ-s-final-rule-to-start-fresh-in-weighing-stablecoin-rewards-against-genius-act-ban",
+      "pubDate": "Wed, 21 Oct 2026 11:00:00 +0000"
+    },
+    {
+      "title": "Crypto rises with Asian tech stocks, zcash extends gain after setting upgrade date",
+      "link": "https://www.coindesk.com/markets/2026/10/21/crypto-rises-with-asian-tech-stocks-zcash-extends-gain-after-setting-upgrade-date",
+      "pubDate": "Wed, 21 Oct 2026 10:34:37 +0000"
+    },
+    {
+      "title": "Live updates: Bitcoin clings to $82,500 as SpaceX results lift stock futures",
+      "link": "https://www.coindesk.com/markets/2026/10/21/live-updates-bitcoin-clings-to-usd82-500-as-spacex-results-lift-stock-futures",
+      "pubDate": "Wed, 21 Oct 2026 10:30:40 +0000"
+    },
+    {
+      "title": "SpaceX and Tesla explore merger that would unite more than 30,000 bitcoin",
+      "link": "https://www.coindesk.com/markets/2026/10/21/spacex-and-tesla-explore-merger-that-would-unite-more-than-30-000-bitcoin",
+      "pubDate": "Wed, 21 Oct 2026 09:23:00 +0000"
+    },
+    {
+      "title": "Monero futures are again heating with leverage, raising volatility risks",
+      "link": "https://www.coindesk.com/markets/2026/10/21/monero-futures-are-again-heating-with-leverage-raising-volatility-risks",
+      "pubDate": "Wed, 21 Oct 2026 08:57:29 +0000"
+    },
+    {
+      "title": "Tether leads $15 million funding round for AI-focused payment startup Mural",
+      "link": "https://www.coindesk.com/business/2026/10/21/tether-leads-usd15-million-series-a-for-ai-focused-payment-startup-mural",
+      "pubDate": "Wed, 21 Oct 2026 08:47:11 +0000"
+    },
+    {
+      "title": "Zcash developers confirm November date for upgrade that triples payment speed",
+      "link": "https://www.coindesk.com/markets/2026/10/21/zcash-developers-confirm-november-date-for-upgrade-that-triples-payment-speed",
+      "pubDate": "Wed, 21 Oct 2026 08:10:12 +0000"
+    },
+    {
+      "title": "Ripple brings Wall Street into 24/7 stock bets, but HSBC warns markets are still thin",
+      "link": "https://www.coindesk.com/markets/2026/10/21/ripple-brings-wall-street-into-24-7-stock-bets-but-hsbc-warns-markets-are-still-thin",
+      "pubDate": "Wed, 21 Oct 2026 05:25:57 +0000"
+    },
     {
       "title": "Solana’s Alpenglow, its biggest network overhaul since 2020, goes live Wednesday",
       "link": "https://www.coindesk.com/tech/2026/10/21/solana-s-alpenglow-its-biggest-network-overhaul-since-2020-goes-live-wednesday",
@@ -440,51 +485,6 @@
       "title": "Bitcoin hovers around $83,000 as AI earnings revive tech, ZEC jumps 11%",
       "link": "https://www.coindesk.com/markets/2026/10/21/bitcoin-hovers-around-usd83-000-as-ai-earnings-revive-tech-zec-jumps-11",
       "pubDate": "Wed, 21 Oct 2026 04:07:07 +0000"
-    },
-    {
-      "title": "U.S. CFTC sets agenda for AI forum, exploring trading and agentic finance",
-      "link": "https://www.coindesk.com/policy/2026/10/20/u-s-cftc-sets-agenda-for-ai-forum-exploring-trading-and-agentic-finance",
-      "pubDate": "Tue, 20 Oct 2026 21:12:21 +0000"
-    },
-    {
-      "title": "OKX-ICE co-chair Andrew Cuomo calls corporate objections a ‘natural response’ to tokenized stock plans",
-      "link": "https://www.coindesk.com/business/2026/10/20/okx-ice-s-andrew-cuomo-calls-issuer-objections-a-natural-response-to-tokenized-stock-plans",
-      "pubDate": "Tue, 20 Oct 2026 18:26:29 +0000"
-    },
-    {
-      "title": "The Coinbase allegations expose Bitcoin's corporate governance gap",
-      "link": "https://www.coindesk.com/opinion/2026/10/20/the-coinbase-allegations-expose-bitcoin-s-corporate-governance-gap",
-      "pubDate": "Tue, 20 Oct 2026 17:02:31 +0000"
-    },
-    {
-      "title": "BlackRock seeks to shield bitcoin investors from losses after rival fund weathers 50% crash",
-      "link": "https://www.coindesk.com/markets/2026/10/20/blackrock-seeks-to-shield-bitcoin-investors-from-losses-after-rival-fund-weathers-50-crash",
-      "pubDate": "Tue, 20 Oct 2026 14:28:39 +0000"
-    },
-    {
-      "title": "Kazakhstan court bars Coinbase, five others from unlicensed crypto services in Astana International Financial Centre",
-      "link": "https://www.coindesk.com/business/2026/10/20/kazakhstan-court-bars-coinbase-five-others-from-unlicensed-crypto-services-in-astana-international-financial-centre",
-      "pubDate": "Tue, 20 Oct 2026 13:35:08 +0000"
-    },
-    {
-      "title": "Microsoft, Alphabet and Goldman Sachs join objections to OKX-ICE tokenized stock trading",
-      "link": "https://www.coindesk.com/business/2026/10/19/microsoft-alphabet-and-goldman-sachs-join-objections-to-okx-ice-tokenized-stock-trading",
-      "pubDate": "Tue, 20 Oct 2026 12:40:17 +0000"
-    },
-    {
-      "title": "France's parliament approves vote to hit stablecoin trades with 31% capital gains tax",
-      "link": "https://www.coindesk.com/policy/2026/10/20/france-s-parliament-approves-vote-to-hit-crypto-to-stablecoin-trades-with-31-levy",
-      "pubDate": "Tue, 20 Oct 2026 11:25:00 +0000"
-    },
-    {
-      "title": "Equity weakness could damp demand for bitcoin after biggest ETF inflows in a month",
-      "link": "https://www.coindesk.com/daybook-us/2026/10/20/equity-weakness-could-damp-demand-for-bitcoin-after-biggest-etf-inflows-in-a-month",
-      "pubDate": "Tue, 20 Oct 2026 11:14:21 +0000"
-    },
-    {
-      "title": "JPMorgan sees 10% annual bitcoin returns, topping stocks, bonds and gold over next decade",
-      "link": "https://www.coindesk.com/markets/2026/10/20/jpmorgan-sees-10-annual-bitcoin-returns-topping-stocks-bonds-and-gold-over-next-decade",
-      "pubDate": "Tue, 20 Oct 2026 11:10:40 +0000"
     }
   ]
 }
