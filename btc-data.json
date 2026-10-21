@@ -1,13 +1,13 @@
 {
-  "fetchedAt": "2026-10-21T17:06:31.784Z",
+  "fetchedAt": "2026-10-21T21:36:05.861Z",
   "price": {
-    "usd": 84498,
-    "time": 1792602006
+    "usd": 84722,
+    "time": 1792618207
   },
   "moves": {
-    "d1": 1.8737601967101059,
-    "d7": 3.5468330021962258,
-    "d30": -2.4235785798233933
+    "d1": 2.1438224737351463,
+    "d7": 3.8213305121076013,
+    "d30": -2.164908334396054
   },
   "history90d": [
     {
@@ -372,57 +372,57 @@
     },
     {
       "date": "2026-10-21",
-      "close": 84410.34564791678
+      "close": 84759.26403947505
     }
   ],
   "blocks": [
     {
-      "height": 972510,
-      "id": "00000000000000000001157552f66a7a0cc51a4339924e67b4c5dc0fcb99f878",
-      "timestamp": 1792602665,
-      "txCount": 3711
+      "height": 972536,
+      "id": "00000000000000000001cea9f87438d5b9209481c97b6773ad6ac1d8b68ecfb7",
+      "timestamp": 1792618324,
+      "txCount": 1986
     },
     {
-      "height": 972509,
-      "id": "000000000000000000015f8d37f251c2df1c69800c5342035db4c8b8948ef5da",
-      "timestamp": 1792601842,
-      "txCount": 5645
+      "height": 972535,
+      "id": "00000000000000000001c0f66f560ac57382894668d4d9641f07893e0e931c52",
+      "timestamp": 1792617712,
+      "txCount": 5761
     },
     {
-      "height": 972508,
-      "id": "000000000000000000003b1f94d6bd950339dd3eab71f6f8e93479bf558316bd",
-      "timestamp": 1792601978,
-      "txCount": 6323
+      "height": 972534,
+      "id": "000000000000000000008495f0d94a40e906f78a7b568204ba3e5716ab260f6b",
+      "timestamp": 1792617577,
+      "txCount": 6729
     },
     {
-      "height": 972507,
-      "id": "00000000000000000000102b2632845cefe897e679a5793424c8e4c0d0745e52",
-      "timestamp": 1792601254,
-      "txCount": 4713
+      "height": 972533,
+      "id": "00000000000000000000496a63d7b671601464b9372414a90c70f1c9aec6de61",
+      "timestamp": 1792617017,
+      "txCount": 5927
     },
     {
-      "height": 972506,
-      "id": "0000000000000000000086a0ca5190a10b8d8fdf54b0aef530c94c0d12c41026",
-      "timestamp": 1792600857,
-      "txCount": 6598
+      "height": 972532,
+      "id": "00000000000000000001f192737f9a6e3e754efb6db651251469d4cb5f0c6622",
+      "timestamp": 1792616555,
+      "txCount": 6210
     },
     {
-      "height": 972505,
-      "id": "000000000000000000013d9003f6bb1427d3c92df383d86aaef5cc87e2288c5e",
-      "timestamp": 1792600854,
-      "txCount": 3516
+      "height": 972531,
+      "id": "00000000000000000001984fde531e8160476876924af923ac83f5211f8a1ed8",
+      "timestamp": 1792616417,
+      "txCount": 5526
     },
     {
-      "height": 972504,
-      "id": "000000000000000000006b5751b4827c3c2909b083d4cad26474abddf3c9710d",
-      "timestamp": 1792600770,
-      "txCount": 3537
+      "height": 972530,
+      "id": "00000000000000000001433b0703243c10a115cd124905975bb5ac90b78fc466",
+      "timestamp": 1792616015,
+      "txCount": 5825
     },
     {
-      "height": 972503,
-      "id": "00000000000000000000ad3ed16d0721bcf505f09c3ee9730cd2eb0ea32ddb73",
-      "timestamp": 1792599100,
-      "txCount": 3476
+      "height": 972529,
+      "id": "00000000000000000000a267bf7eaba4e669af2f716d0ebc2d57fa1c7212b1bb",
+      "timestamp": 1792615757,
+      "txCount": 6842
     }
   ],
   "news": [
@@ -477,7 +477,7 @@
       "pubDate": "Wed, 21 Oct 2026 10:34:37 +0000"
     },
     {
-      "title": "Live updates: Bitcoin rises to $84,000 as SpaceX leads markets higher",
+      "title": "Live updates: Bitcoin holds above $84,000 as Middle East worries resurface",
       "link": "https://www.coindesk.com/markets/2026/10/21/live-updates-bitcoin-clings-to-usd82-500-as-spacex-results-lift-stock-futures",
       "pubDate": "Wed, 21 Oct 2026 10:30:40 +0000"
     },
