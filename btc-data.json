@@ -1,19 +1,15 @@
 {
-  "fetchedAt": "2026-10-20T23:50:14.968Z",
+  "fetchedAt": "2026-10-21T04:38:11.114Z",
   "price": {
-    "usd": 82919,
-    "time": 1792539906
+    "usd": 82727,
+    "time": 1792557307
   },
   "moves": {
-    "d1": 1.2747880548280799,
-    "d7": -0.2359397898482385,
-    "d30": 2.155951315576643
+    "d1": -0.26141968101923707,
+    "d7": 1.3765870644593559,
+    "d30": -4.468690207733317
   },
   "history90d": [
-    {
-      "date": "2026-07-23",
-      "close": 66077.05646514206
-    },
     {
       "date": "2026-07-24",
       "close": 65052.47667067735
@@ -371,61 +367,80 @@
       "close": 81875.26391574314
     },
     {
-      "date": "2026-10-20",
-      "close": 82956.64760245939
+      "date": "2026-10-21",
+      "close": 82943.83149973174
+    },
+    {
+      "date": "2026-10-21",
+      "close": 82754.33465869621
     }
   ],
   "blocks": [
     {
-      "height": 972393,
-      "id": "000000000000000000004ac4776bc9c176e4408f60682b3b4df7c14b31b633a6",
-      "timestamp": 1792539488,
-      "txCount": 7278
+      "height": 972420,
+      "id": "00000000000000000000eb8c54337dccfb0a6683ec548be7205bd0ca4d8b049d",
+      "timestamp": 1792557069,
+      "txCount": 7576
     },
     {
-      "height": 972392,
-      "id": "0000000000000000000185ad04d9257f5c45bfe577751c8b20ca3e64953484a9",
-      "timestamp": 1792539402,
-      "txCount": 6727
+      "height": 972419,
+      "id": "000000000000000000005637c5cc852729ff1020e660b214aabb436ae8807f58",
+      "timestamp": 1792557248,
+      "txCount": 6356
     },
     {
-      "height": 972391,
-      "id": "00000000000000000001a537b2b8b6a4f5d01af7d51402d09d4a91fd4a70dbbf",
-      "timestamp": 1792539152,
-      "txCount": 4175
+      "height": 972418,
+      "id": "00000000000000000001c318fd82e51c80fbe3930776756314445cff1e2f726d",
+      "timestamp": 1792556708,
+      "txCount": 5113
     },
     {
-      "height": 972390,
-      "id": "00000000000000000000297e4f1ee07053de3a3b1bad1dd7e02621a2a8ba21a9",
-      "timestamp": 1792538660,
-      "txCount": 3400
+      "height": 972417,
+      "id": "00000000000000000001fbabb1cf5122e2a2bee5a019b4ab65cb64f8c3719932",
+      "timestamp": 1792556049,
+      "txCount": 5214
     },
     {
-      "height": 972389,
-      "id": "00000000000000000000bda2b5b6b03ec7d771278e5331b77df71eda7d0a88c8",
-      "timestamp": 1792537125,
-      "txCount": 4260
+      "height": 972416,
+      "id": "00000000000000000001e646e9605c6af863e751ae800a5b494df8304f100fac",
+      "timestamp": 1792555681,
+      "txCount": 5864
     },
     {
-      "height": 972388,
-      "id": "00000000000000000000ac02855019abd027e735da075f0d656828f4644dbcc3",
-      "timestamp": 1792536451,
-      "txCount": 5204
+      "height": 972415,
+      "id": "00000000000000000000f519db50a92872e84ce68125d13889d9b2a16f24b198",
+      "timestamp": 1792555401,
+      "txCount": 3123
     },
     {
-      "height": 972387,
-      "id": "00000000000000000001eb5fc04f9b529d6ec32984625c2358b6a3d232163d8c",
-      "timestamp": 1792535960,
-      "txCount": 4729
+      "height": 972414,
+      "id": "00000000000000000001d463f58ca89e2d2a3bb39aa942d84eedf348d5307fbe",
+      "timestamp": 1792554611,
+      "txCount": 5647
     },
     {
-      "height": 972386,
-      "id": "0000000000000000000041c326cef9085a275ab05516e9d72b2cf8ffb79ca102",
-      "timestamp": 1792535756,
-      "txCount": 3204
+      "height": 972413,
+      "id": "0000000000000000000062bf0800393c69de04e864d0c4c6f5aaf98792d806cf",
+      "timestamp": 1792554184,
+      "txCount": 7367
     }
   ],
   "news": [
+    {
+      "title": "Solana’s Alpenglow, its biggest network overhaul since 2020, goes live Wednesday",
+      "link": "https://www.coindesk.com/tech/2026/10/21/solana-s-alpenglow-its-biggest-network-overhaul-since-2020-goes-live-wednesday",
+      "pubDate": "Wed, 21 Oct 2026 04:35:52 +0000"
+    },
+    {
+      "title": "A company that vouches for websites had secret keys so weak that 8 of them were cracked",
+      "link": "https://www.coindesk.com/tech/2026/10/21/a-company-that-vouches-for-websites-had-secret-keys-so-weak-that-8-of-them-were-cracked",
+      "pubDate": "Wed, 21 Oct 2026 04:11:58 +0000"
+    },
+    {
+      "title": "Bitcoin hovers around $83,000 as AI earnings revive tech, ZEC jumps 11%",
+      "link": "https://www.coindesk.com/markets/2026/10/21/bitcoin-hovers-around-usd83-000-as-ai-earnings-revive-tech-zec-jumps-11",
+      "pubDate": "Wed, 21 Oct 2026 04:07:07 +0000"
+    },
     {
       "title": "U.S. CFTC sets agenda for AI forum, exploring trading and agentic finance",
       "link": "https://www.coindesk.com/policy/2026/10/20/u-s-cftc-sets-agenda-for-ai-forum-exploring-trading-and-agentic-finance",
@@ -470,21 +485,6 @@
       "title": "JPMorgan sees 10% annual bitcoin returns, topping stocks, bonds and gold over next decade",
       "link": "https://www.coindesk.com/markets/2026/10/20/jpmorgan-sees-10-annual-bitcoin-returns-topping-stocks-bonds-and-gold-over-next-decade",
       "pubDate": "Tue, 20 Oct 2026 11:10:40 +0000"
-    },
-    {
-      "title": "Bitcoin drops to $81,400 as Asian chip stocks tumble, options traders seek downside protection",
-      "link": "https://www.coindesk.com/markets/2026/10/20/bitcoin-drops-to-usd81-400-as-asian-chip-stocks-tumble-options-traders-seek-downside-protection",
-      "pubDate": "Tue, 20 Oct 2026 10:22:55 +0000"
-    },
-    {
-      "title": "Live updates: Bitcoin cuts losses as stocks edge higher",
-      "link": "https://www.coindesk.com/markets/2026/10/20/live-updates-market-jitters-persist-as-the-ai-selloff-deepens",
-      "pubDate": "Tue, 20 Oct 2026 10:14:19 +0000"
-    },
-    {
-      "title": "South Korean IPO slump adds to AI market jitters as Brent crude tops $111",
-      "link": "https://www.coindesk.com/markets/2026/10/20/south-korean-ipo-plunge-deepens-ai-market-jitters-as-brent-tops-usd111",
-      "pubDate": "Tue, 20 Oct 2026 09:32:24 +0000"
     }
   ]
 }
