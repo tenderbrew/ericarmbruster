@@ -1,210 +1,303 @@
 {
-  "fetchedAt": "2026-10-21T17:04:34.638Z",
+  "fetchedAt": "2026-10-22T11:39:18.056Z",
   "indicators": {
     "UNRATE": {
       "latest": {
-        "date": "    <link href=\"https://fonts.googleapis.com/css?family=Open+Sans:300",
-        "value": 400
+        "date": "2026-09-01",
+        "value": 4.2
       },
-      "previous": null
+      "previous": {
+        "date": "2026-08-01",
+        "value": 4.1
+      }
     },
     "PAYEMS": {
       "latest": {
-        "date": "    <link href=\"https://fonts.googleapis.com/css?family=Open+Sans:300",
-        "value": 400
+        "date": "2026-09-01",
+        "value": 159044
       },
-      "previous": null
+      "previous": {
+        "date": "2026-08-01",
+        "value": 159015
+      }
     },
     "JTSJOL": {
       "latest": {
-        "date": "    <link href=\"https://fonts.googleapis.com/css?family=Open+Sans:300",
-        "value": 400
+        "date": "2026-08-01",
+        "value": 7079
       },
-      "previous": null
+      "previous": {
+        "date": "2026-07-01",
+        "value": 7335
+      }
     },
     "ICSA": {
       "latest": {
-        "date": "    <link href=\"https://fonts.googleapis.com/css?family=Open+Sans:300",
-        "value": 400
+        "date": "2026-10-10",
+        "value": 199000
       },
-      "previous": null
+      "previous": {
+        "date": "2026-10-03",
+        "value": 198000
+      }
     },
     "CPIAUCSL": {
       "latest": {
-        "date": "    <link href=\"https://fonts.googleapis.com/css?family=Open+Sans:300",
-        "value": 400
+        "date": "2026-09-01",
+        "value": 336.298
       },
-      "previous": null
+      "previous": {
+        "date": "2026-08-01",
+        "value": 334.131
+      }
     },
     "CPILFESL": {
       "latest": {
-        "date": "    <link href=\"https://fonts.googleapis.com/css?family=Open+Sans:300",
-        "value": 400
+        "date": "2026-09-01",
+        "value": 338.896
       },
-      "previous": null
+      "previous": {
+        "date": "2026-08-01",
+        "value": 337.765
+      }
     },
     "T10YIE": {
       "latest": {
-        "date": "    <link href=\"https://fonts.googleapis.com/css?family=Open+Sans:300",
-        "value": 400
+        "date": "2026-10-21",
+        "value": 2.37
       },
-      "previous": null
+      "previous": {
+        "date": "2026-10-20",
+        "value": 2.35
+      }
     },
     "PCE": {
       "latest": {
-        "date": "    <link href=\"https://fonts.googleapis.com/css?family=Open+Sans:300",
-        "value": 400
+        "date": "2026-08-01",
+        "value": 22308.5
       },
-      "previous": null
+      "previous": {
+        "date": "2026-07-01",
+        "value": 22117.7
+      }
     },
     "M2SL": {
       "latest": {
-        "date": "    <link href=\"https://fonts.googleapis.com/css?family=Open+Sans:300",
-        "value": 400
+        "date": "2026-08-01",
+        "value": 23342.8
       },
-      "previous": null
+      "previous": {
+        "date": "2026-07-01",
+        "value": 23217.9
+      }
     },
     "BOGMBASE": {
       "latest": {
-        "date": "    <link href=\"https://fonts.googleapis.com/css?family=Open+Sans:300",
-        "value": 400
+        "date": "2026-08-01",
+        "value": 5411.6
       },
-      "previous": null
+      "previous": {
+        "date": "2026-07-01",
+        "value": 5523.9
+      }
     },
     "WALCL": {
       "latest": {
-        "date": "    <link href=\"https://fonts.googleapis.com/css?family=Open+Sans:300",
-        "value": 400
+        "date": "2026-10-14",
+        "value": 6755639
       },
-      "previous": null
+      "previous": {
+        "date": "2026-10-07",
+        "value": 6747560
+      }
     },
     "FEDFUNDS": {
       "latest": {
-        "date": "    <link href=\"https://fonts.googleapis.com/css?family=Open+Sans:300",
-        "value": 400
+        "date": "2026-09-01",
+        "value": 3.75
       },
-      "previous": null
+      "previous": {
+        "date": "2026-08-01",
+        "value": 3.63
+      }
     },
     "DGS2": {
       "latest": {
-        "date": "    <link href=\"https://fonts.googleapis.com/css?family=Open+Sans:300",
-        "value": 400
+        "date": "2026-10-20",
+        "value": 4.79
       },
-      "previous": null
+      "previous": {
+        "date": "2026-10-19",
+        "value": 4.77
+      }
     },
     "DGS10": {
       "latest": {
-        "date": "    <link href=\"https://fonts.googleapis.com/css?family=Open+Sans:300",
-        "value": 400
+        "date": "2026-10-20",
+        "value": 5.12
       },
-      "previous": null
+      "previous": {
+        "date": "2026-10-19",
+        "value": 5.15
+      }
     },
     "T10Y2Y": {
       "latest": {
-        "date": "    <link href=\"https://fonts.googleapis.com/css?family=Open+Sans:300",
-        "value": 400
+        "date": "2026-10-21",
+        "value": 0.32
       },
-      "previous": null
+      "previous": {
+        "date": "2026-10-20",
+        "value": 0.33
+      }
     },
     "DFII10": {
       "latest": {
-        "date": "    <link href=\"https://fonts.googleapis.com/css?family=Open+Sans:300",
-        "value": 400
+        "date": "2026-10-20",
+        "value": 2.77
       },
-      "previous": null
+      "previous": {
+        "date": "2026-10-19",
+        "value": 2.8
+      }
     },
     "BAMLH0A0HYM2": {
       "latest": {
-        "date": "    <link href=\"https://fonts.googleapis.com/css?family=Open+Sans:300",
-        "value": 400
+        "date": "2026-10-20",
+        "value": 3.33
       },
-      "previous": null
+      "previous": {
+        "date": "2026-10-19",
+        "value": 3.29
+      }
     },
     "MORTGAGE30US": {
       "latest": {
-        "date": "    <link href=\"https://fonts.googleapis.com/css?family=Open+Sans:300",
-        "value": 400
+        "date": "2026-10-15",
+        "value": 7.4
       },
-      "previous": null
+      "previous": {
+        "date": "2026-10-08",
+        "value": 7.4
+      }
     },
     "GDPC1": {
       "latest": {
-        "date": "    <link href=\"https://fonts.googleapis.com/css?family=Open+Sans:300",
-        "value": 400
+        "date": "2026-04-01",
+        "value": 24408.011
       },
-      "previous": null
+      "previous": {
+        "date": "2026-01-01",
+        "value": 24274.383
+      }
     },
     "INDPRO": {
       "latest": {
-        "date": "    <link href=\"https://fonts.googleapis.com/css?family=Open+Sans:300",
-        "value": 400
+        "date": "2026-09-01",
+        "value": 103.9506
       },
-      "previous": null
+      "previous": {
+        "date": "2026-08-01",
+        "value": 103.2664
+      }
     },
     "RSAFS": {
       "latest": {
-        "date": "    <link href=\"https://fonts.googleapis.com/css?family=Open+Sans:300",
-        "value": 400
+        "date": "2026-09-01",
+        "value": 745021
       },
-      "previous": null
+      "previous": {
+        "date": "2026-08-01",
+        "value": 739322
+      }
     },
     "UMCSENT": {
       "latest": {
-        "date": "    <link href=\"https://fonts.googleapis.com/css?family=Open+Sans:300",
-        "value": 400
+        "date": "2026-08-01",
+        "value": 51.7
       },
-      "previous": null
+      "previous": {
+        "date": "2026-07-01",
+        "value": 55.2
+      }
     },
     "STLFSI4": {
       "latest": {
-        "date": "    <link href=\"https://fonts.googleapis.com/css?family=Open+Sans:300",
-        "value": 400
+        "date": "2026-10-09",
+        "value": -0.7206
       },
-      "previous": null
+      "previous": {
+        "date": "2026-10-02",
+        "value": -0.4675
+      }
     },
     "DTWEXBGS": {
       "latest": {
-        "date": "    <link href=\"https://fonts.googleapis.com/css?family=Open+Sans:300",
-        "value": 400
+        "date": "2026-10-16",
+        "value": 121.4048
       },
-      "previous": null
+      "previous": {
+        "date": "2026-10-15",
+        "value": 121.5693
+      }
     },
     "PERMIT": {
       "latest": {
-        "date": "    <link href=\"https://fonts.googleapis.com/css?family=Open+Sans:300",
-        "value": 400
+        "date": "2026-09-01",
+        "value": 1400
       },
-      "previous": null
+      "previous": {
+        "date": "2026-08-01",
+        "value": 1403
+      }
     },
     "GFDEGDQ188S": {
       "latest": {
-        "date": "    <link href=\"https://fonts.googleapis.com/css?family=Open+Sans:300",
-        "value": 400
+        "date": "2026-01-01",
+        "value": 122.59387
       },
-      "previous": null
+      "previous": {
+        "date": "2025-10-01",
+        "value": 122.56815
+      }
     },
     "VIXCLS": {
       "latest": {
-        "date": "    <link href=\"https://fonts.googleapis.com/css?family=Open+Sans:300",
-        "value": 400
+        "date": "2026-10-20",
+        "value": 17.31
       },
-      "previous": null
+      "previous": {
+        "date": "2026-10-19",
+        "value": 18.44
+      }
     },
     "BOPGSTB": {
       "latest": {
-        "date": "    <link href=\"https://fonts.googleapis.com/css?family=Open+Sans:300",
-        "value": 400
+        "date": "2026-08-01",
+        "value": -105572
       },
-      "previous": null
+      "previous": {
+        "date": "2026-07-01",
+        "value": -92826
+      }
     },
     "M2V": {
       "latest": {
-        "date": "    <link href=\"https://fonts.googleapis.com/css?family=Open+Sans:300",
-        "value": 400
+        "date": "2026-04-01",
+        "value": 1.418
+      },
+      "previous": {
+        "date": "2026-01-01",
+        "value": 1.415
+      }
+    },
+    "CPI_YOY": {
+      "latest": {
+        "date": "2026-09-01",
+        "value": 3.7172508442689933
       },
       "previous": null
-    },
-    "CPI_YOY": null
+    }
   },
   "news": []
 }
