@@ -1,19 +1,15 @@
 {
-  "fetchedAt": "2026-10-21T21:36:05.861Z",
+  "fetchedAt": "2026-10-22T04:35:41.704Z",
   "price": {
-    "usd": 84722,
-    "time": 1792618207
+    "usd": 82826,
+    "time": 1792643407
   },
   "moves": {
-    "d1": 2.1438224737351463,
-    "d7": 3.8213305121076013,
-    "d30": -2.164908334396054
+    "d1": -1.494092055364482,
+    "d7": 0.8160864195282391,
+    "d30": -3.8955280720773033
   },
   "history90d": [
-    {
-      "date": "2026-07-24",
-      "close": 65052.47667067735
-    },
     {
       "date": "2026-07-25",
       "close": 64092.64739795451
@@ -371,61 +367,70 @@
       "close": 82943.83149973174
     },
     {
-      "date": "2026-10-21",
-      "close": 84759.26403947505
+      "date": "2026-10-22",
+      "close": 84082.26646319703
+    },
+    {
+      "date": "2026-10-22",
+      "close": 82828.7040814687
     }
   ],
   "blocks": [
     {
-      "height": 972536,
-      "id": "00000000000000000001cea9f87438d5b9209481c97b6773ad6ac1d8b68ecfb7",
-      "timestamp": 1792618324,
-      "txCount": 1986
+      "height": 972567,
+      "id": "00000000000000000000ce8a3000c080ea486274f6446ae402376915a3ef17a6",
+      "timestamp": 1792643238,
+      "txCount": 6102
     },
     {
-      "height": 972535,
-      "id": "00000000000000000001c0f66f560ac57382894668d4d9641f07893e0e931c52",
-      "timestamp": 1792617712,
-      "txCount": 5761
+      "height": 972566,
+      "id": "000000000000000000001ab39e557e0469b68a16acf747fc736951f116a32005",
+      "timestamp": 1792642916,
+      "txCount": 2537
     },
     {
-      "height": 972534,
-      "id": "000000000000000000008495f0d94a40e906f78a7b568204ba3e5716ab260f6b",
-      "timestamp": 1792617577,
-      "txCount": 6729
+      "height": 972565,
+      "id": "00000000000000000001188c6bc6030df59fdae9c0b7a8d2021bdb74cd42e9e9",
+      "timestamp": 1792642398,
+      "txCount": 2400
     },
     {
-      "height": 972533,
-      "id": "00000000000000000000496a63d7b671601464b9372414a90c70f1c9aec6de61",
-      "timestamp": 1792617017,
-      "txCount": 5927
+      "height": 972564,
+      "id": "00000000000000000001fe3a2623a3ed5d4d2ad5851f328ccc322407fe6148c9",
+      "timestamp": 1792640992,
+      "txCount": 6196
     },
     {
-      "height": 972532,
-      "id": "00000000000000000001f192737f9a6e3e754efb6db651251469d4cb5f0c6622",
-      "timestamp": 1792616555,
-      "txCount": 6210
+      "height": 972563,
+      "id": "00000000000000000000d00214b89cd7502ee25317051611d7caea465bab6484",
+      "timestamp": 1792640576,
+      "txCount": 7278
     },
     {
-      "height": 972531,
-      "id": "00000000000000000001984fde531e8160476876924af923ac83f5211f8a1ed8",
-      "timestamp": 1792616417,
-      "txCount": 5526
+      "height": 972562,
+      "id": "0000000000000000000064f23baeb3893925db13a1c9d1e03919de487e75df1d",
+      "timestamp": 1792640452,
+      "txCount": 1327
     },
     {
-      "height": 972530,
-      "id": "00000000000000000001433b0703243c10a115cd124905975bb5ac90b78fc466",
-      "timestamp": 1792616015,
-      "txCount": 5825
+      "height": 972561,
+      "id": "00000000000000000001be826330591e24d59ce98352f8455e06fd809694bf09",
+      "timestamp": 1792639866,
+      "txCount": 5277
     },
     {
-      "height": 972529,
-      "id": "00000000000000000000a267bf7eaba4e669af2f716d0ebc2d57fa1c7212b1bb",
-      "timestamp": 1792615757,
-      "txCount": 6842
+      "height": 972560,
+      "id": "0000000000000000000016adeaf6112e0416afe8413e2caba65e07e0527a3b14",
+      "timestamp": 1792639592,
+      "txCount": 2995
     }
   ],
   "news": [
+    {
+      "title": "Bitcoin gives back its run at $85,000 as Tesla and Meta fail to calm AI nerves",
+      "link": "https://www.coindesk.com/markets/2026/10/22/bitcoin-gives-back-its-run-at-usd85-000-as-tesla-and-meta-fail-to-calm-ai-nerves",
+      "pubDate": "Thu, 22 Oct 2026 03:51:34 +0000"
+    },
     {
       "title": "Trump to throw spotlight on overseas crypto abuses at White House event",
       "link": "https://www.coindesk.com/policy/2026/10/21/trump-to-throw-spotlight-on-overseas-crypto-abuses-in-white-house-event",
@@ -480,11 +485,6 @@
       "title": "Live updates: Bitcoin holds above $84,000 as Middle East worries resurface",
       "link": "https://www.coindesk.com/markets/2026/10/21/live-updates-bitcoin-clings-to-usd82-500-as-spacex-results-lift-stock-futures",
       "pubDate": "Wed, 21 Oct 2026 10:30:40 +0000"
-    },
-    {
-      "title": "SpaceX and Tesla explore merger that would unite more than 30,000 bitcoin",
-      "link": "https://www.coindesk.com/markets/2026/10/21/spacex-and-tesla-explore-merger-that-would-unite-more-than-30-000-bitcoin",
-      "pubDate": "Wed, 21 Oct 2026 09:23:00 +0000"
     }
   ]
 }
