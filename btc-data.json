@@ -1,13 +1,13 @@
 {
-  "fetchedAt": "2026-10-22T11:43:44.128Z",
+  "fetchedAt": "2026-10-22T17:05:51.692Z",
   "price": {
-    "usd": 81853,
-    "time": 1792668907
+    "usd": 81077,
+    "time": 1792688707
   },
   "moves": {
-    "d1": -2.651292070216471,
-    "d7": -0.3682524606084536,
-    "d30": -5.02451717194774
+    "d1": -3.574197734682183,
+    "d7": -1.312802276627012,
+    "d30": -5.924923689418926
   },
   "history90d": [
     {
@@ -372,60 +372,85 @@
     },
     {
       "date": "2026-10-22",
-      "close": 81834.72206089528
+      "close": 81170.80578405978
     }
   ],
   "blocks": [
     {
-      "height": 972614,
-      "id": "000000000000000000011f91569fa238f6776b198a6c6bb2295a28318d2f878c",
-      "timestamp": 1792668864,
-      "txCount": 7386
+      "height": 972634,
+      "id": "0000000000000000000072e6c55d7357fe8a21ea25ce377a8c9f464dd7c73824",
+      "timestamp": 1792687563,
+      "txCount": 3831
     },
     {
-      "height": 972613,
-      "id": "00000000000000000000f69f8db839591a4532b963235c755e7c618860a26c50",
-      "timestamp": 1792668784,
-      "txCount": 4718
+      "height": 972633,
+      "id": "00000000000000000001b71a36fe0fcb94787d5cc385c09281335aa7c1b8b446",
+      "timestamp": 1792687246,
+      "txCount": 1287
     },
     {
-      "height": 972612,
-      "id": "000000000000000000003f6c9d1b81fed7b85aff5a1f5801685b0b45b2957d2d",
-      "timestamp": 1792667853,
-      "txCount": 6887
+      "height": 972632,
+      "id": "00000000000000000001ccf3e6f7177e019cb8bbefa1bb8be605cc0032ec17c7",
+      "timestamp": 1792687169,
+      "txCount": 2679
     },
     {
-      "height": 972611,
-      "id": "00000000000000000001738cde1bca489856f370b14af0078c63143428f5c069",
-      "timestamp": 1792667548,
-      "txCount": 7305
+      "height": 972631,
+      "id": "000000000000000000012eb590c5977495fe2bbfe9c9ad59b5908c39d8d5d330",
+      "timestamp": 1792687113,
+      "txCount": 2185
     },
     {
-      "height": 972610,
-      "id": "00000000000000000000d021868c55381bee89f41c4c885122ef6fede174a992",
-      "timestamp": 1792667364,
-      "txCount": 7209
+      "height": 972630,
+      "id": "0000000000000000000038a62f15b4aaa87f7c38ac1189630f6259c2e50605a5",
+      "timestamp": 1792686983,
+      "txCount": 3948
     },
     {
-      "height": 972609,
-      "id": "00000000000000000001a4b1e376cb4869d2bc5a86b9ec9fbf844c7f2bd8dcd7",
-      "timestamp": 1792667140,
-      "txCount": 6167
+      "height": 972629,
+      "id": "00000000000000000001191814d375d32ccb0a9002e26e8be56f7ef911f2b709",
+      "timestamp": 1792686622,
+      "txCount": 4092
     },
     {
-      "height": 972608,
-      "id": "00000000000000000000a5e7636f6b388433af18a22ae71f03f4fb759069ce3f",
-      "timestamp": 1792667034,
-      "txCount": 1155
+      "height": 972628,
+      "id": "00000000000000000000a6681f8add88e056cce527135709927965db64d5e5e7",
+      "timestamp": 1792685020,
+      "txCount": 3974
     },
     {
-      "height": 972607,
-      "id": "0000000000000000000138dc1ff7190471fa4b99d2307cd8e31c459a6e9c6243",
-      "timestamp": 1792666899,
-      "txCount": 1718
+      "height": 972627,
+      "id": "000000000000000000013f6f97fb708419aaf20e2e696da62fe2a97b817bef05",
+      "timestamp": 1792684739,
+      "txCount": 3849
     }
   ],
   "news": [
+    {
+      "title": "Irish central bank fines Coinbase Ireland $3.6 million over fund safeguarding failures",
+      "link": "https://www.coindesk.com/policy/2026/10/22/irish-central-bank-fines-coinbase-ireland-usd3-6-million-over-fund-safeguarding-failures",
+      "pubDate": "Thu, 22 Oct 2026 15:40:25 +0000"
+    },
+    {
+      "title": "Crypto for Advisors: Stablecoins are ready for prime time",
+      "link": "https://www.coindesk.com/coindesk-indices/2026/10/22/crypto-for-advisors-stablecoins-are-ready-for-prime-time",
+      "pubDate": "Thu, 22 Oct 2026 14:58:31 +0000"
+    },
+    {
+      "title": "Crypto custody specialist Fireblocks denies it's in talks to be acquired by Visa",
+      "link": "https://www.coindesk.com/business/2026/10/22/crypto-custody-specialist-fireblocks-denies-its-in-talks-to-be-acquired-by-visa",
+      "pubDate": "Thu, 22 Oct 2026 14:37:12 +0000"
+    },
+    {
+      "title": "Crypto is making a splash in U.S. elections — but chiefly in jabs about industry influence",
+      "link": "https://www.coindesk.com/news-analysis/2026/10/21/crypto-is-making-a-splash-in-u-s-elections-but-chiefly-in-jabs-about-industry-influence",
+      "pubDate": "Thu, 22 Oct 2026 13:00:00 +0000"
+    },
+    {
+      "title": "Ethereum’s four-minute settlement plan could lower the cost of moving crypto",
+      "link": "https://www.coindesk.com/tech/2026/10/22/ethereum-s-four-minute-settlement-plan-could-lower-the-cost-of-moving-crypto",
+      "pubDate": "Thu, 22 Oct 2026 12:14:29 +0000"
+    },
     {
       "title": "Crypto traders seek shelter in bitcoin as altcoins slide and ETF flows wobble",
       "link": "https://www.coindesk.com/daybook-us/2026/10/22/crypto-traders-seek-shelter-in-bitcoin-as-altcoins-slide-and-etf-flows-wobble",
@@ -442,7 +467,7 @@
       "pubDate": "Thu, 22 Oct 2026 10:18:28 +0000"
     },
     {
-      "title": "Live updates: Bitcoin’s round trip to $85,000 burns traders on both sides",
+      "title": "Live updates: Bitcoin slumps below $82,000 as risk off mood returns",
       "link": "https://www.coindesk.com/business/2026/10/22/live-updates-bitcoin-s-round-trip-to-usd85-000-burns-traders-on-both-sides",
       "pubDate": "Thu, 22 Oct 2026 09:54:26 +0000"
     },
@@ -460,31 +485,6 @@
       "title": "Solana’s biggest network change since 2020 is live. Here’s how users benefit",
       "link": "https://www.coindesk.com/tech/2026/10/22/solana-completes-alpenglow-upgrade-here-s-what-it-means-for-users",
       "pubDate": "Thu, 22 Oct 2026 05:24:58 +0000"
-    },
-    {
-      "title": "Bitcoin ETFs attract $1.08 billion in 3 days but it may not be enough for a steep rally",
-      "link": "https://www.coindesk.com/markets/2026/10/22/bitcoin-etfs-attract-usd1-08-billion-in-3-days-but-it-may-not-be-enough-for-a-steep-rally",
-      "pubDate": "Thu, 22 Oct 2026 04:41:59 +0000"
-    },
-    {
-      "title": "XRP Ledger bug fix moved to November after validator support dipped for two hours",
-      "link": "https://www.coindesk.com/tech/2026/10/22/xrp-ledger-bug-fix-moved-to-november-after-validator-support-dipped-for-two-hours",
-      "pubDate": "Thu, 22 Oct 2026 04:36:20 +0000"
-    },
-    {
-      "title": "Bitcoin gives back its run at $85,000 as Tesla and Meta fail to calm AI nerves",
-      "link": "https://www.coindesk.com/markets/2026/10/22/bitcoin-gives-back-its-run-at-usd85-000-as-tesla-and-meta-fail-to-calm-ai-nerves",
-      "pubDate": "Thu, 22 Oct 2026 03:51:34 +0000"
-    },
-    {
-      "title": "Trump to throw spotlight on overseas crypto abuses at White House event",
-      "link": "https://www.coindesk.com/policy/2026/10/21/trump-to-throw-spotlight-on-overseas-crypto-abuses-in-white-house-event",
-      "pubDate": "Wed, 21 Oct 2026 16:23:44 +0000"
-    },
-    {
-      "title": "How a16z-backed DATA is rethinking its blockchain strategy after $30 million Sui deal",
-      "link": "https://www.coindesk.com/business/2026/10/21/how-a16z-backed-data-is-rethinking-its-blockchain-strategy-after-usd30-million-sui-deal",
-      "pubDate": "Wed, 21 Oct 2026 15:22:46 +0000"
     }
   ]
 }
