@@ -1,13 +1,13 @@
 {
-  "fetchedAt": "2026-10-22T17:05:51.692Z",
+  "fetchedAt": "2026-10-22T21:30:05.229Z",
   "price": {
-    "usd": 81077,
-    "time": 1792688707
+    "usd": 81472,
+    "time": 1792704306
   },
   "moves": {
-    "d1": -3.574197734682183,
-    "d7": -1.312802276627012,
-    "d30": -5.924923689418926
+    "d1": -3.1044197224863623,
+    "d7": -0.8320069450196255,
+    "d30": -5.466598206943263
   },
   "history90d": [
     {
@@ -372,60 +372,65 @@
     },
     {
       "date": "2026-10-22",
-      "close": 81170.80578405978
+      "close": 81425.02484955166
     }
   ],
   "blocks": [
     {
-      "height": 972634,
-      "id": "0000000000000000000072e6c55d7357fe8a21ea25ce377a8c9f464dd7c73824",
-      "timestamp": 1792687563,
-      "txCount": 3831
+      "height": 972660,
+      "id": "0000000000000000000173c7a45e8e70e10510b4813ec587be270406de5efdd7",
+      "timestamp": 1792703946,
+      "txCount": 4083
     },
     {
-      "height": 972633,
-      "id": "00000000000000000001b71a36fe0fcb94787d5cc385c09281335aa7c1b8b446",
-      "timestamp": 1792687246,
-      "txCount": 1287
+      "height": 972659,
+      "id": "00000000000000000001a7e849f5bf0a0ebea8a5e2b6721fc4d7f5a6b47d9d8f",
+      "timestamp": 1792703193,
+      "txCount": 2340
     },
     {
-      "height": 972632,
-      "id": "00000000000000000001ccf3e6f7177e019cb8bbefa1bb8be605cc0032ec17c7",
-      "timestamp": 1792687169,
-      "txCount": 2679
+      "height": 972658,
+      "id": "0000000000000000000010b0c165d22a3865f219b57f07f7d5b7b358addbfc9a",
+      "timestamp": 1792703075,
+      "txCount": 3797
     },
     {
-      "height": 972631,
-      "id": "000000000000000000012eb590c5977495fe2bbfe9c9ad59b5908c39d8d5d330",
-      "timestamp": 1792687113,
-      "txCount": 2185
+      "height": 972657,
+      "id": "000000000000000000004381ef1e816328e7582aff7493b696dd7374a67a08ac",
+      "timestamp": 1792701322,
+      "txCount": 4131
     },
     {
-      "height": 972630,
-      "id": "0000000000000000000038a62f15b4aaa87f7c38ac1189630f6259c2e50605a5",
-      "timestamp": 1792686983,
-      "txCount": 3948
+      "height": 972656,
+      "id": "000000000000000000008497d09e6226b7a0471781f1365ab124c29fc25ad468",
+      "timestamp": 1792699420,
+      "txCount": 7514
     },
     {
-      "height": 972629,
-      "id": "00000000000000000001191814d375d32ccb0a9002e26e8be56f7ef911f2b709",
-      "timestamp": 1792686622,
-      "txCount": 4092
+      "height": 972655,
+      "id": "0000000000000000000083f4bdc36fd2e57f16d36e94cd4c8ac8277960e4580d",
+      "timestamp": 1792699323,
+      "txCount": 6197
     },
     {
-      "height": 972628,
-      "id": "00000000000000000000a6681f8add88e056cce527135709927965db64d5e5e7",
-      "timestamp": 1792685020,
-      "txCount": 3974
+      "height": 972654,
+      "id": "0000000000000000000195927bd5653dca0479a2c4a32465d58941eb61748bfe",
+      "timestamp": 1792699152,
+      "txCount": 5085
     },
     {
-      "height": 972627,
-      "id": "000000000000000000013f6f97fb708419aaf20e2e696da62fe2a97b817bef05",
-      "timestamp": 1792684739,
-      "txCount": 3849
+      "height": 972653,
+      "id": "0000000000000000000043dff9c55286da61f466f2be837aec58c043478d5902",
+      "timestamp": 1792698302,
+      "txCount": 7441
     }
   ],
   "news": [
+    {
+      "title": "A16z is the latest VC giant to widen bets beyond crypto and into AI and emerging tech",
+      "link": "https://www.coindesk.com/business/2026/10/22/a16z-is-the-latest-vc-giant-to-widen-bets-beyond-crypto-and-into-ai-and-emerging-tech",
+      "pubDate": "Thu, 22 Oct 2026 18:30:57 +0000"
+    },
     {
       "title": "Irish central bank fines Coinbase Ireland $3.6 million over fund safeguarding failures",
       "link": "https://www.coindesk.com/policy/2026/10/22/irish-central-bank-fines-coinbase-ireland-usd3-6-million-over-fund-safeguarding-failures",
@@ -467,7 +472,7 @@
       "pubDate": "Thu, 22 Oct 2026 10:18:28 +0000"
     },
     {
-      "title": "Live updates: Bitcoin slumps below $82,000 as risk off mood returns",
+      "title": "Live updates: Bitcoin falls back to $81,000, with interest rates tumbling as stocks crack",
       "link": "https://www.coindesk.com/business/2026/10/22/live-updates-bitcoin-s-round-trip-to-usd85-000-burns-traders-on-both-sides",
       "pubDate": "Thu, 22 Oct 2026 09:54:26 +0000"
     },
@@ -480,11 +485,6 @@
       "title": "China seeks to seize 61,800 BTC tied to $5.7 billion fraud scheme",
       "link": "https://www.coindesk.com/markets/2026/10/22/china-seeks-to-seize-61-800-btc-tied-to-usd5-7-billion-fraud-scheme",
       "pubDate": "Thu, 22 Oct 2026 06:24:10 +0000"
-    },
-    {
-      "title": "Solana’s biggest network change since 2020 is live. Here’s how users benefit",
-      "link": "https://www.coindesk.com/tech/2026/10/22/solana-completes-alpenglow-upgrade-here-s-what-it-means-for-users",
-      "pubDate": "Thu, 22 Oct 2026 05:24:58 +0000"
     }
   ]
 }
