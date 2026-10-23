@@ -1,13 +1,13 @@
 {
-  "fetchedAt": "2026-10-23T11:31:30.472Z",
+  "fetchedAt": "2026-10-23T17:00:54.159Z",
   "price": {
-    "usd": 81559,
-    "time": 1792755006
+    "usd": 81607,
+    "time": 1792774506
   },
   "moves": {
-    "d1": 0.28378147982159874,
-    "d7": 0.04335180396244365,
-    "d30": -3.3459582884501016
+    "d1": 0.3428015942299467,
+    "d7": 0.10223041805272892,
+    "d30": -3.2890743884249063
   },
   "history90d": [
     {
@@ -372,67 +372,77 @@
     },
     {
       "date": "2026-10-23",
-      "close": 81580.64180197887
+      "close": 81614.51258388566
     }
   ],
   "blocks": [
     {
-      "height": 972762,
-      "id": "00000000000000000001ae2a0794eac34020510984b7acfa0a6f5725c211dc63",
-      "timestamp": 1792753429,
-      "txCount": 4205
+      "height": 972802,
+      "id": "000000000000000000008a0308f4c6ee587d1f87453d743ca8b3f2bd86c97205",
+      "timestamp": 1792774502,
+      "txCount": 6672
     },
     {
-      "height": 972761,
-      "id": "00000000000000000000bbafddf895ee0c9f97cb3e7362809ff07fc247dae7e4",
-      "timestamp": 1792752957,
-      "txCount": 5332
+      "height": 972801,
+      "id": "00000000000000000000d0b6f8d03eedadde692763ec380f2d5edfddadc333ee",
+      "timestamp": 1792774365,
+      "txCount": 3669
     },
     {
-      "height": 972760,
-      "id": "00000000000000000001b08986370db57c9af8bba30c510db7226385f3b8e907",
-      "timestamp": 1792752812,
-      "txCount": 7810
+      "height": 972800,
+      "id": "00000000000000000001300f04152e318b70e9cbc881b3b42bc293733de4bc55",
+      "timestamp": 1792773659,
+      "txCount": 6909
     },
     {
-      "height": 972759,
-      "id": "0000000000000000000086ef70db52fb9cde4901cdd955881150fdd0ce14a1a1",
-      "timestamp": 1792752459,
-      "txCount": 6848
+      "height": 972799,
+      "id": "00000000000000000000c8d9eedeaa74cf31056695e1de6dce267420fe2c04ce",
+      "timestamp": 1792773572,
+      "txCount": 6208
     },
     {
-      "height": 972758,
-      "id": "000000000000000000008f489274c1a1eef29bcd6c3baf76815fbe82b287eda7",
-      "timestamp": 1792752239,
-      "txCount": 6634
+      "height": 972798,
+      "id": "000000000000000000004d50b0301e88ec212075efc9c38666f8fa6b1b6a221b",
+      "timestamp": 1792773326,
+      "txCount": 4694
     },
     {
-      "height": 972757,
-      "id": "00000000000000000001bba340fff205e07efa467d6bdf335b1bbdbbabccd3f4",
-      "timestamp": 1792752048,
-      "txCount": 6469
+      "height": 972797,
+      "id": "00000000000000000001d011d0db58b30951be0d07c5a508f4ad9534b4e0e26e",
+      "timestamp": 1792772910,
+      "txCount": 5727
     },
     {
-      "height": 972756,
-      "id": "00000000000000000001a9f7ba085760877fd5da5817e72a44c706728e5d3943",
-      "timestamp": 1792751850,
-      "txCount": 3901
+      "height": 972796,
+      "id": "000000000000000000015a0c3e9dbebad8f51169b3d2329522776290d6a5bcd5",
+      "timestamp": 1792772904,
+      "txCount": 3687
     },
     {
-      "height": 972755,
-      "id": "00000000000000000000b2cd5ee8cf8996a64c5059011938d51bcb126bf9f7ea",
-      "timestamp": 1792750922,
-      "txCount": 1605
+      "height": 972795,
+      "id": "00000000000000000000ca1c64d871925878adc91b9555b687c060b592075f4d",
+      "timestamp": 1792771974,
+      "txCount": 3568
     }
   ],
   "news": [
     {
-      "title": "Bitcoin's volatility is well above euro-dollar gyrations, though it has calmed to rival Nvidia's",
+      "title": "Robinhood sees surge in bitcoin, gold prediction markets as traders move beyond sports",
+      "link": "https://www.coindesk.com/markets/2026/10/23/robinhood-sees-surge-in-bitcoin-gold-prediction-markets-as-traders-move-beyond-sports",
+      "pubDate": "Fri, 23 Oct 2026 13:58:56 +0000"
+    },
+    {
+      "title": "Bitcoin Core changes security rules as AI makes finding code bugs dangerously easy",
+      "link": "https://www.coindesk.com/tech/2026/10/23/bitcoin-will-now-stop-hiding-bugs-an-ai-can-find-in-one-prompt",
+      "pubDate": "Fri, 23 Oct 2026 12:03:53 +0000"
+    },
+    {
+      "title": "Bitcoin's price is as jumpy as Nvidia's and eight times more turbulent than the euro",
       "link": "https://www.coindesk.com/daybook-us/2026/10/23/bitcoin-s-volatility-is-well-above-euro-dollar-gyrations-though-it-has-calmed-to-rival-nvidia-s",
       "pubDate": "Fri, 23 Oct 2026 11:22:33 +0000"
     },
     {
-      "title": "Live updates: Bitcoin holds above $81,000 as the AI rout fades and oil climbs",
+      "title": "Live updates: Bitcoin holds above $81,000 as oil prices hit six-month high",
       "link": "https://www.coindesk.com/markets/2026/10/23/live-updates-bitcoin-holds-above-usd81-000-as-the-ai-rout-fades-and-oil-climbs",
       "pubDate": "Fri, 23 Oct 2026 11:13:01 +0000"
     },
@@ -475,16 +485,6 @@
       "title": "Cardano holders are being asked to bet $5 million on copper hitting a new record",
       "link": "https://www.coindesk.com/markets/2026/10/23/cardano-holders-are-being-asked-to-bet-usd5-million-on-copper-hitting-a-new-record",
       "pubDate": "Fri, 23 Oct 2026 04:36:51 +0000"
-    },
-    {
-      "title": "Bitcoin, gold trim early losses as yen gives up gains. Oil stays near $100",
-      "link": "https://www.coindesk.com/markets/2026/10/23/bitcoin-gold-trim-early-losses-as-yen-gives-up-gains-oil-stays-near-usd100",
-      "pubDate": "Fri, 23 Oct 2026 03:13:01 +0000"
-    },
-    {
-      "title": "Senate's top Democratic investigator looking into Tether payments to Bo Hines' firm",
-      "link": "https://www.coindesk.com/policy/2026/10/22/senate-s-top-democratic-investigator-looking-into-tether-payments-to-bo-hines-firm",
-      "pubDate": "Thu, 22 Oct 2026 22:43:36 +0000"
     }
   ]
 }
