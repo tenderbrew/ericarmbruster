@@ -1,13 +1,13 @@
 {
-  "fetchedAt": "2026-10-23T04:41:13.956Z",
+  "fetchedAt": "2026-10-23T11:31:30.472Z",
   "price": {
-    "usd": 81544,
-    "time": 1792730107
+    "usd": 81559,
+    "time": 1792755006
   },
   "moves": {
-    "d1": 0.2653376940689789,
-    "d7": 0.02495223705922811,
-    "d30": -3.3637345072079716
+    "d1": 0.28378147982159874,
+    "d7": 0.04335180396244365,
+    "d30": -3.3459582884501016
   },
   "history90d": [
     {
@@ -372,60 +372,105 @@
     },
     {
       "date": "2026-10-23",
-      "close": 81637.88686843889
+      "close": 81580.64180197887
     }
   ],
   "blocks": [
     {
-      "height": 972711,
-      "id": "00000000000000000001d43850f897a432420b824cd7b4f15e3a51e5aaab2220",
-      "timestamp": 1792728331,
-      "txCount": 4340
+      "height": 972762,
+      "id": "00000000000000000001ae2a0794eac34020510984b7acfa0a6f5725c211dc63",
+      "timestamp": 1792753429,
+      "txCount": 4205
     },
     {
-      "height": 972710,
-      "id": "0000000000000000000185a7e1791a070a55ae5904a20181015b1a5a595c1236",
-      "timestamp": 1792727865,
-      "txCount": 447
+      "height": 972761,
+      "id": "00000000000000000000bbafddf895ee0c9f97cb3e7362809ff07fc247dae7e4",
+      "timestamp": 1792752957,
+      "txCount": 5332
     },
     {
-      "height": 972709,
-      "id": "000000000000000000010fabcc40a4e87959c0e66ebc42ad5a62a4ba2a15bb91",
-      "timestamp": 1792727689,
-      "txCount": 3780
+      "height": 972760,
+      "id": "00000000000000000001b08986370db57c9af8bba30c510db7226385f3b8e907",
+      "timestamp": 1792752812,
+      "txCount": 7810
     },
     {
-      "height": 972708,
-      "id": "00000000000000000000132a0e37e03f052a85017207087fd766740fcde95a9d",
-      "timestamp": 1792726645,
-      "txCount": 7517
+      "height": 972759,
+      "id": "0000000000000000000086ef70db52fb9cde4901cdd955881150fdd0ce14a1a1",
+      "timestamp": 1792752459,
+      "txCount": 6848
     },
     {
-      "height": 972707,
-      "id": "0000000000000000000006b9bf707f1b5febfbfe92fd8722fabc360d141acfd9",
-      "timestamp": 1792726610,
-      "txCount": 5707
+      "height": 972758,
+      "id": "000000000000000000008f489274c1a1eef29bcd6c3baf76815fbe82b287eda7",
+      "timestamp": 1792752239,
+      "txCount": 6634
     },
     {
-      "height": 972706,
-      "id": "00000000000000000000e441ca89f34f598bcecf32a6e0a6efb7b6d111e2bce4",
-      "timestamp": 1792726268,
-      "txCount": 7320
+      "height": 972757,
+      "id": "00000000000000000001bba340fff205e07efa467d6bdf335b1bbdbbabccd3f4",
+      "timestamp": 1792752048,
+      "txCount": 6469
     },
     {
-      "height": 972705,
-      "id": "0000000000000000000153fa6133346875bcea1d5e5960c3073024d02c31ba0a",
-      "timestamp": 1792726249,
-      "txCount": 6268
+      "height": 972756,
+      "id": "00000000000000000001a9f7ba085760877fd5da5817e72a44c706728e5d3943",
+      "timestamp": 1792751850,
+      "txCount": 3901
     },
     {
-      "height": 972704,
-      "id": "00000000000000000000fd58864cd9d611eed1ce1c5027daaef961f3783c9831",
-      "timestamp": 1792726222,
-      "txCount": 6343
+      "height": 972755,
+      "id": "00000000000000000000b2cd5ee8cf8996a64c5059011938d51bcb126bf9f7ea",
+      "timestamp": 1792750922,
+      "txCount": 1605
     }
   ],
   "news": [
+    {
+      "title": "Bitcoin's volatility is well above euro-dollar gyrations, though it has calmed to rival Nvidia's",
+      "link": "https://www.coindesk.com/daybook-us/2026/10/23/bitcoin-s-volatility-is-well-above-euro-dollar-gyrations-though-it-has-calmed-to-rival-nvidia-s",
+      "pubDate": "Fri, 23 Oct 2026 11:22:33 +0000"
+    },
+    {
+      "title": "Live updates: Bitcoin holds above $81,000 as the AI rout fades and oil climbs",
+      "link": "https://www.coindesk.com/markets/2026/10/23/live-updates-bitcoin-holds-above-usd81-000-as-the-ai-rout-fades-and-oil-climbs",
+      "pubDate": "Fri, 23 Oct 2026 11:13:01 +0000"
+    },
+    {
+      "title": "Bitcoin steadies near $81,700 as altcoins rebound, pepe climbs 13%",
+      "link": "https://www.coindesk.com/markets/2026/10/23/bitcoin-steadies-near-usd81-700-as-altcoins-rebound-pepe-climbs-13",
+      "pubDate": "Fri, 23 Oct 2026 10:54:41 +0000"
+    },
+    {
+      "title": "Bitcoin appears to have decoupled from midterm cycle bottom history",
+      "link": "https://www.coindesk.com/markets/2026/10/23/bitcoin-approaches-midterms-as-july-low-challenges-historical-cycle-pattern",
+      "pubDate": "Fri, 23 Oct 2026 10:53:09 +0000"
+    },
+    {
+      "title": "HSBC rolls out its first stablecoin to over 3 million everyday app users",
+      "link": "https://www.coindesk.com/business/2026/10/23/hsbc-rolls-out-its-first-stablecoin-to-over-3-million-everyday-app-users",
+      "pubDate": "Fri, 23 Oct 2026 10:22:56 +0000"
+    },
+    {
+      "title": "Sweden’s central bank revives e-krona debate as stablecoins and digital euro loom",
+      "link": "https://www.coindesk.com/business/2026/10/23/sweden-s-central-bank-revives-e-krona-debate-as-stablecoins-and-digital-euro-loom",
+      "pubDate": "Fri, 23 Oct 2026 08:57:34 +0000"
+    },
+    {
+      "title": "India's largest exchange denies hack after sleuths pointed to $16 million in suspicious outflows",
+      "link": "https://www.coindesk.com/markets/2026/10/23/india-s-largest-exchange-denies-hack-after-blockchain-sleuths-pointed-to-usd16-million-in-suspicious-outflows",
+      "pubDate": "Fri, 23 Oct 2026 08:02:35 +0000"
+    },
+    {
+      "title": "Polymarket has reportedly fired its marketing chief, also a close friend of the CEO",
+      "link": "https://www.coindesk.com/markets/2026/10/23/polymarket-has-reportedly-fired-its-marketing-chief-also-a-close-friend-of-the-ceo",
+      "pubDate": "Fri, 23 Oct 2026 05:01:19 +0000"
+    },
+    {
+      "title": "Ethereum delays Glamsterdam test after security devs flag risk to existing contracts",
+      "link": "https://www.coindesk.com/tech/2026/10/23/ethereum-delays-glamsterdam-test-after-security-devs-flag-risk-to-existing-contracts",
+      "pubDate": "Fri, 23 Oct 2026 04:59:34 +0000"
+    },
     {
       "title": "Cardano holders are being asked to bet $5 million on copper hitting a new record",
       "link": "https://www.coindesk.com/markets/2026/10/23/cardano-holders-are-being-asked-to-bet-usd5-million-on-copper-hitting-a-new-record",
@@ -440,51 +485,6 @@
       "title": "Senate's top Democratic investigator looking into Tether payments to Bo Hines' firm",
       "link": "https://www.coindesk.com/policy/2026/10/22/senate-s-top-democratic-investigator-looking-into-tether-payments-to-bo-hines-firm",
       "pubDate": "Thu, 22 Oct 2026 22:43:36 +0000"
-    },
-    {
-      "title": "A16z is the latest VC giant to widen bets beyond crypto and into AI and emerging tech",
-      "link": "https://www.coindesk.com/business/2026/10/22/a16z-is-the-latest-vc-giant-to-widen-bets-beyond-crypto-and-into-ai-and-emerging-tech",
-      "pubDate": "Thu, 22 Oct 2026 18:30:57 +0000"
-    },
-    {
-      "title": "Irish central bank fines Coinbase Ireland $3.6 million over fund safeguarding failures",
-      "link": "https://www.coindesk.com/policy/2026/10/22/irish-central-bank-fines-coinbase-ireland-usd3-6-million-over-fund-safeguarding-failures",
-      "pubDate": "Thu, 22 Oct 2026 15:40:25 +0000"
-    },
-    {
-      "title": "Crypto for Advisors: Stablecoins are ready for prime time",
-      "link": "https://www.coindesk.com/coindesk-indices/2026/10/22/crypto-for-advisors-stablecoins-are-ready-for-prime-time",
-      "pubDate": "Thu, 22 Oct 2026 14:58:31 +0000"
-    },
-    {
-      "title": "Crypto custody specialist Fireblocks denies it's in talks to be acquired by Visa",
-      "link": "https://www.coindesk.com/business/2026/10/22/crypto-custody-specialist-fireblocks-denies-its-in-talks-to-be-acquired-by-visa",
-      "pubDate": "Thu, 22 Oct 2026 14:37:12 +0000"
-    },
-    {
-      "title": "Crypto is making a splash in U.S. elections — but chiefly in jabs about industry influence",
-      "link": "https://www.coindesk.com/news-analysis/2026/10/21/crypto-is-making-a-splash-in-u-s-elections-but-chiefly-in-jabs-about-industry-influence",
-      "pubDate": "Thu, 22 Oct 2026 13:00:00 +0000"
-    },
-    {
-      "title": "Ethereum’s four-minute settlement plan could lower the cost of moving crypto",
-      "link": "https://www.coindesk.com/tech/2026/10/22/ethereum-s-four-minute-settlement-plan-could-lower-the-cost-of-moving-crypto",
-      "pubDate": "Thu, 22 Oct 2026 12:14:29 +0000"
-    },
-    {
-      "title": "Crypto traders seek shelter in bitcoin as altcoins slide and ETF flows wobble",
-      "link": "https://www.coindesk.com/daybook-us/2026/10/22/crypto-traders-seek-shelter-in-bitcoin-as-altcoins-slide-and-etf-flows-wobble",
-      "pubDate": "Thu, 22 Oct 2026 11:20:04 +0000"
-    },
-    {
-      "title": "Bitcoin slides below $82,000 as AI doubts return, with DeFi tokens leading declines",
-      "link": "https://www.coindesk.com/markets/2026/10/22/bitcoin-slides-below-usd82-000-as-ai-doubts-return-with-defi-tokens-leading-declines",
-      "pubDate": "Thu, 22 Oct 2026 10:50:04 +0000"
-    },
-    {
-      "title": "Crypto traders price India telecoms company Reliance Jio's IPO at about $110 billion",
-      "link": "https://www.coindesk.com/markets/2026/10/22/crypto-traders-price-india-telecoms-company-reliance-jio-s-ipo-at-about-usd110-billion",
-      "pubDate": "Thu, 22 Oct 2026 10:18:28 +0000"
     }
   ]
 }
