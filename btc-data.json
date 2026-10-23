@@ -1,19 +1,15 @@
 {
-  "fetchedAt": "2026-10-22T21:30:05.229Z",
+  "fetchedAt": "2026-10-23T04:41:13.956Z",
   "price": {
-    "usd": 81472,
-    "time": 1792704306
+    "usd": 81544,
+    "time": 1792730107
   },
   "moves": {
-    "d1": -3.1044197224863623,
-    "d7": -0.8320069450196255,
-    "d30": -5.466598206943263
+    "d1": 0.2653376940689789,
+    "d7": 0.02495223705922811,
+    "d30": -3.3637345072079716
   },
   "history90d": [
-    {
-      "date": "2026-07-25",
-      "close": 64092.64739795451
-    },
     {
       "date": "2026-07-26",
       "close": 64318.24520120312
@@ -371,61 +367,80 @@
       "close": 84082.26646319703
     },
     {
-      "date": "2026-10-22",
-      "close": 81425.02484955166
+      "date": "2026-10-23",
+      "close": 81328.20561459455
+    },
+    {
+      "date": "2026-10-23",
+      "close": 81637.88686843889
     }
   ],
   "blocks": [
     {
-      "height": 972660,
-      "id": "0000000000000000000173c7a45e8e70e10510b4813ec587be270406de5efdd7",
-      "timestamp": 1792703946,
-      "txCount": 4083
+      "height": 972711,
+      "id": "00000000000000000001d43850f897a432420b824cd7b4f15e3a51e5aaab2220",
+      "timestamp": 1792728331,
+      "txCount": 4340
     },
     {
-      "height": 972659,
-      "id": "00000000000000000001a7e849f5bf0a0ebea8a5e2b6721fc4d7f5a6b47d9d8f",
-      "timestamp": 1792703193,
-      "txCount": 2340
+      "height": 972710,
+      "id": "0000000000000000000185a7e1791a070a55ae5904a20181015b1a5a595c1236",
+      "timestamp": 1792727865,
+      "txCount": 447
     },
     {
-      "height": 972658,
-      "id": "0000000000000000000010b0c165d22a3865f219b57f07f7d5b7b358addbfc9a",
-      "timestamp": 1792703075,
-      "txCount": 3797
+      "height": 972709,
+      "id": "000000000000000000010fabcc40a4e87959c0e66ebc42ad5a62a4ba2a15bb91",
+      "timestamp": 1792727689,
+      "txCount": 3780
     },
     {
-      "height": 972657,
-      "id": "000000000000000000004381ef1e816328e7582aff7493b696dd7374a67a08ac",
-      "timestamp": 1792701322,
-      "txCount": 4131
+      "height": 972708,
+      "id": "00000000000000000000132a0e37e03f052a85017207087fd766740fcde95a9d",
+      "timestamp": 1792726645,
+      "txCount": 7517
     },
     {
-      "height": 972656,
-      "id": "000000000000000000008497d09e6226b7a0471781f1365ab124c29fc25ad468",
-      "timestamp": 1792699420,
-      "txCount": 7514
+      "height": 972707,
+      "id": "0000000000000000000006b9bf707f1b5febfbfe92fd8722fabc360d141acfd9",
+      "timestamp": 1792726610,
+      "txCount": 5707
     },
     {
-      "height": 972655,
-      "id": "0000000000000000000083f4bdc36fd2e57f16d36e94cd4c8ac8277960e4580d",
-      "timestamp": 1792699323,
-      "txCount": 6197
+      "height": 972706,
+      "id": "00000000000000000000e441ca89f34f598bcecf32a6e0a6efb7b6d111e2bce4",
+      "timestamp": 1792726268,
+      "txCount": 7320
     },
     {
-      "height": 972654,
-      "id": "0000000000000000000195927bd5653dca0479a2c4a32465d58941eb61748bfe",
-      "timestamp": 1792699152,
-      "txCount": 5085
+      "height": 972705,
+      "id": "0000000000000000000153fa6133346875bcea1d5e5960c3073024d02c31ba0a",
+      "timestamp": 1792726249,
+      "txCount": 6268
     },
     {
-      "height": 972653,
-      "id": "0000000000000000000043dff9c55286da61f466f2be837aec58c043478d5902",
-      "timestamp": 1792698302,
-      "txCount": 7441
+      "height": 972704,
+      "id": "00000000000000000000fd58864cd9d611eed1ce1c5027daaef961f3783c9831",
+      "timestamp": 1792726222,
+      "txCount": 6343
     }
   ],
   "news": [
+    {
+      "title": "Cardano holders are being asked to bet $5 million on copper hitting a new record",
+      "link": "https://www.coindesk.com/markets/2026/10/23/cardano-holders-are-being-asked-to-bet-usd5-million-on-copper-hitting-a-new-record",
+      "pubDate": "Fri, 23 Oct 2026 04:36:51 +0000"
+    },
+    {
+      "title": "Bitcoin, gold trim early losses as yen gives up gains. Oil stays near $100",
+      "link": "https://www.coindesk.com/markets/2026/10/23/bitcoin-gold-trim-early-losses-as-yen-gives-up-gains-oil-stays-near-usd100",
+      "pubDate": "Fri, 23 Oct 2026 03:13:01 +0000"
+    },
+    {
+      "title": "Senate's top Democratic investigator looking into Tether payments to Bo Hines' firm",
+      "link": "https://www.coindesk.com/policy/2026/10/22/senate-s-top-democratic-investigator-looking-into-tether-payments-to-bo-hines-firm",
+      "pubDate": "Thu, 22 Oct 2026 22:43:36 +0000"
+    },
     {
       "title": "A16z is the latest VC giant to widen bets beyond crypto and into AI and emerging tech",
       "link": "https://www.coindesk.com/business/2026/10/22/a16z-is-the-latest-vc-giant-to-widen-bets-beyond-crypto-and-into-ai-and-emerging-tech",
@@ -470,21 +485,6 @@
       "title": "Crypto traders price India telecoms company Reliance Jio's IPO at about $110 billion",
       "link": "https://www.coindesk.com/markets/2026/10/22/crypto-traders-price-india-telecoms-company-reliance-jio-s-ipo-at-about-usd110-billion",
       "pubDate": "Thu, 22 Oct 2026 10:18:28 +0000"
-    },
-    {
-      "title": "Live updates: Bitcoin falls back to $81,000, with interest rates tumbling as stocks crack",
-      "link": "https://www.coindesk.com/business/2026/10/22/live-updates-bitcoin-s-round-trip-to-usd85-000-burns-traders-on-both-sides",
-      "pubDate": "Thu, 22 Oct 2026 09:54:26 +0000"
-    },
-    {
-      "title": "Asian stocks tumble, bitcoin retreats as China enters bear market",
-      "link": "https://www.coindesk.com/markets/2026/10/22/asian-stocks-tumble-bitcoin-retreats-as-china-enters-bear-market",
-      "pubDate": "Thu, 22 Oct 2026 08:49:08 +0000"
-    },
-    {
-      "title": "China seeks to seize 61,800 BTC tied to $5.7 billion fraud scheme",
-      "link": "https://www.coindesk.com/markets/2026/10/22/china-seeks-to-seize-61-800-btc-tied-to-usd5-7-billion-fraud-scheme",
-      "pubDate": "Thu, 22 Oct 2026 06:24:10 +0000"
     }
   ]
 }
