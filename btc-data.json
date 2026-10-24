@@ -1,13 +1,13 @@
 {
-  "fetchedAt": "2026-10-24T15:52:00.791Z",
+  "fetchedAt": "2026-10-24T20:42:51.297Z",
   "price": {
-    "usd": 79457,
-    "time": 1792857007
+    "usd": 80468,
+    "time": 1792874106
   },
   "moves": {
-    "d1": -2.028688334033968,
-    "d7": -2.3969842503223537,
-    "d30": -5.832049965557273
+    "d1": -0.7821147647538385,
+    "d7": -1.1550968279061546,
+    "d30": -4.633869849458982
   },
   "history90d": [
     {
@@ -372,60 +372,65 @@
     },
     {
       "date": "2026-10-24",
-      "close": 79482.46461312186
+      "close": 80501.60829540026
     }
   ],
   "blocks": [
     {
-      "height": 972943,
-      "id": "00000000000000000001694d4e20dc5c7a46eab6f213b2b0715a5a2fd0735676",
-      "timestamp": 1792856809,
-      "txCount": 1279
+      "height": 972972,
+      "id": "0000000000000000000167e8b9fc0d31af3a3cc6107ebe49f8e4139a7a1b5280",
+      "timestamp": 1792874125,
+      "txCount": 7697
     },
     {
-      "height": 972942,
-      "id": "000000000000000000018c7c44c2c83e93a4afc2b4b43f8afc1c54174beb795b",
-      "timestamp": 1792856425,
-      "txCount": 4234
+      "height": 972971,
+      "id": "0000000000000000000100bc25db7316219350718360ff13eb855e49e6b3ace8",
+      "timestamp": 1792874075,
+      "txCount": 4896
     },
     {
-      "height": 972941,
-      "id": "000000000000000000006cc6a30f8e89d932d3d10480defecceb4342df41017d",
-      "timestamp": 1792856118,
-      "txCount": 3467
+      "height": 972970,
+      "id": "00000000000000000000f641a993b3f589150f30bc15f155d33d86c7448979b3",
+      "timestamp": 1792873604,
+      "txCount": 3544
     },
     {
-      "height": 972940,
-      "id": "00000000000000000000a1b61ecc31c0fb0b0814aa3b1174c4b398f741deb2e0",
-      "timestamp": 1792855141,
-      "txCount": 5588
+      "height": 972969,
+      "id": "00000000000000000000db5c523e86891bfe8f54c5380e55ae904412a7563a2c",
+      "timestamp": 1792873262,
+      "txCount": 2557
     },
     {
-      "height": 972939,
-      "id": "000000000000000000012913bbd4da2207efaab66b13f04f2cdeb6e5b1a8f503",
-      "timestamp": 1792854474,
-      "txCount": 7899
+      "height": 972968,
+      "id": "000000000000000000012fd37e53a13d8b8cb4584a4e0455bc737e54bc57ea62",
+      "timestamp": 1792872381,
+      "txCount": 2327
     },
     {
-      "height": 972938,
-      "id": "000000000000000000009d5b97aa22da8cee60f817e1771f3541259d3f010220",
-      "timestamp": 1792854454,
-      "txCount": 6516
+      "height": 972967,
+      "id": "00000000000000000000771fcd460a08b02ff3640763d05a61ec0d2ac89e25f9",
+      "timestamp": 1792871557,
+      "txCount": 2660
     },
     {
-      "height": 972937,
-      "id": "00000000000000000000c1f42da48617b501dc9aad0535d309b778f3c50f2b1f",
-      "timestamp": 1792854240,
-      "txCount": 5436
+      "height": 972966,
+      "id": "0000000000000000000102a3e1ffc2033cb8c68fcb9f932cf78dae715155eedf",
+      "timestamp": 1792870955,
+      "txCount": 4088
     },
     {
-      "height": 972936,
-      "id": "0000000000000000000116d3562fad40b02f946838bd9ec56593b2db726d1475",
-      "timestamp": 1792853776,
-      "txCount": 6620
+      "height": 972965,
+      "id": "000000000000000000017df12a9f8c536a2fb1d8ec6d543b2edef7e142da6451",
+      "timestamp": 1792869070,
+      "txCount": 3366
     }
   ],
   "news": [
+    {
+      "title": "Strategy, Strive face balancing act between bitcoin buying and preferred stock dividends",
+      "link": "https://www.coindesk.com/business/2026/10/24/strategy-strive-face-balancing-act-between-bitcoin-buying-and-preferred-stock-dividends",
+      "pubDate": "Sat, 24 Oct 2026 16:00:00 +0000"
+    },
     {
       "title": "Block's new voice AI sounds eerily human, sparking awe and scam fears",
       "link": "https://www.coindesk.com/tech/2026/10/24/block-s-new-voice-ai-sounds-eerily-human-sparking-awe-and-scam-fears",
@@ -453,7 +458,7 @@
     },
     {
       "title": "Bitcoin’s wealthy holders turning to loans and yield as investment habits mature: Xapo CEO",
-      "link": "https://www.coindesk.com/",
+      "link": "https://www.coindesk.com/business/2026/10/24/bitcoin-s-wealthy-holders-turning-to-loans-and-yield-as-investment-habits-mature-xapo-ceo",
       "pubDate": "Sat, 24 Oct 2026 14:00:00 +0000"
     },
     {
@@ -480,11 +485,6 @@
       "title": "Bitcoin's price is as jumpy as Nvidia's and eight times more turbulent than the euro",
       "link": "https://www.coindesk.com/daybook-us/2026/10/23/bitcoin-s-volatility-is-well-above-euro-dollar-gyrations-though-it-has-calmed-to-rival-nvidia-s",
       "pubDate": "Fri, 23 Oct 2026 11:22:33 +0000"
-    },
-    {
-      "title": "Live updates: Bitcoin holds above $81,000 as oil prices hit six-month high",
-      "link": "https://www.coindesk.com/markets/2026/10/23/live-updates-bitcoin-holds-above-usd81-000-as-the-ai-rout-fades-and-oil-climbs",
-      "pubDate": "Fri, 23 Oct 2026 11:13:01 +0000"
     }
   ]
 }
