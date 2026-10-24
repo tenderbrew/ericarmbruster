@@ -1,13 +1,13 @@
 {
-  "fetchedAt": "2026-10-24T10:51:14.322Z",
+  "fetchedAt": "2026-10-24T15:52:00.791Z",
   "price": {
-    "usd": 80569,
-    "time": 1792838706
+    "usd": 79457,
+    "time": 1792857007
   },
   "moves": {
-    "d1": -0.6575807088712526,
-    "d7": -1.031030923193954,
-    "d30": -4.514170352202873
+    "d1": -2.028688334033968,
+    "d7": -2.3969842503223537,
+    "d30": -5.832049965557273
   },
   "history90d": [
     {
@@ -372,60 +372,95 @@
     },
     {
       "date": "2026-10-24",
-      "close": 80592.12970611548
+      "close": 79482.46461312186
     }
   ],
   "blocks": [
     {
-      "height": 972912,
-      "id": "000000000000000000011db981989b95aa47a43506b529004212664b6b1eccb0",
-      "timestamp": 1792838982,
-      "txCount": 2590
+      "height": 972943,
+      "id": "00000000000000000001694d4e20dc5c7a46eab6f213b2b0715a5a2fd0735676",
+      "timestamp": 1792856809,
+      "txCount": 1279
     },
     {
-      "height": 972911,
-      "id": "000000000000000000004a721bc0cdaf0a6fe724449dc1317b228188ccbd1d20",
-      "timestamp": 1792838175,
-      "txCount": 5259
+      "height": 972942,
+      "id": "000000000000000000018c7c44c2c83e93a4afc2b4b43f8afc1c54174beb795b",
+      "timestamp": 1792856425,
+      "txCount": 4234
     },
     {
-      "height": 972910,
-      "id": "0000000000000000000190b0182b7433b82271d1a36c30b0102b235d2912565e",
-      "timestamp": 1792838059,
-      "txCount": 3598
+      "height": 972941,
+      "id": "000000000000000000006cc6a30f8e89d932d3d10480defecceb4342df41017d",
+      "timestamp": 1792856118,
+      "txCount": 3467
     },
     {
-      "height": 972909,
-      "id": "000000000000000000019294e4f66dfc549f7dc9b84f18e3f680dfd0a5477dea",
-      "timestamp": 1792836290,
-      "txCount": 3968
+      "height": 972940,
+      "id": "00000000000000000000a1b61ecc31c0fb0b0814aa3b1174c4b398f741deb2e0",
+      "timestamp": 1792855141,
+      "txCount": 5588
     },
     {
-      "height": 972908,
-      "id": "0000000000000000000114a097e96e84a819449932aa1f67c43548327f742287",
-      "timestamp": 1792836137,
-      "txCount": 2270
+      "height": 972939,
+      "id": "000000000000000000012913bbd4da2207efaab66b13f04f2cdeb6e5b1a8f503",
+      "timestamp": 1792854474,
+      "txCount": 7899
     },
     {
-      "height": 972907,
-      "id": "00000000000000000001790d89631ce212a257cef4dd1f2417e2e9a8e9de4c8f",
-      "timestamp": 1792835134,
-      "txCount": 3658
+      "height": 972938,
+      "id": "000000000000000000009d5b97aa22da8cee60f817e1771f3541259d3f010220",
+      "timestamp": 1792854454,
+      "txCount": 6516
     },
     {
-      "height": 972906,
-      "id": "000000000000000000005b679371db33185b7d001be8e0ffbfe6ab657342faf2",
-      "timestamp": 1792833459,
-      "txCount": 3157
+      "height": 972937,
+      "id": "00000000000000000000c1f42da48617b501dc9aad0535d309b778f3c50f2b1f",
+      "timestamp": 1792854240,
+      "txCount": 5436
     },
     {
-      "height": 972905,
-      "id": "00000000000000000000aa1950a454344ad98d2627af4a8ed6df2fd4a9f78c6f",
-      "timestamp": 1792832141,
-      "txCount": 2623
+      "height": 972936,
+      "id": "0000000000000000000116d3562fad40b02f946838bd9ec56593b2db726d1475",
+      "timestamp": 1792853776,
+      "txCount": 6620
     }
   ],
   "news": [
+    {
+      "title": "Block's new voice AI sounds eerily human, sparking awe and scam fears",
+      "link": "https://www.coindesk.com/tech/2026/10/24/block-s-new-voice-ai-sounds-eerily-human-sparking-awe-and-scam-fears",
+      "pubDate": "Sat, 24 Oct 2026 15:21:06 +0000"
+    },
+    {
+      "title": "Crypto under weekend pressure, bitcoin slides below $80,000 on U.S. Middle East evacuations",
+      "link": "https://www.coindesk.com/markets/2026/10/24/crypto-under-weekend-pressure-bitcoin-slides-below-usd80-000-on-u-s-middle-east-evacuations",
+      "pubDate": "Sat, 24 Oct 2026 15:11:24 +0000"
+    },
+    {
+      "title": "Why McDonalds, Microsoft and Google saying no to tokenized stocks isn't a dealbreaker",
+      "link": "https://www.coindesk.com/business/2026/10/23/why-mcdonalds-microsoft-and-google-saying-no-to-tokenized-stocks-isn-t-a-dealbreaker",
+      "pubDate": "Sat, 24 Oct 2026 15:00:00 +0000"
+    },
+    {
+      "title": "Argentina drops criminal probe into President Milei over crashed memecoin LIBRA",
+      "link": "https://www.coindesk.com/business/2026/10/24/argentina-drops-criminal-probe-into-president-milei-over-crashed-memecoin-libra",
+      "pubDate": "Sat, 24 Oct 2026 14:38:47 +0000"
+    },
+    {
+      "title": "Wells Fargo, Cisco, Marvell among latest firms objecting to OKXICE's tokenized stock plan",
+      "link": "https://www.coindesk.com/business/2026/10/24/wells-fargo-cisco-marvell-among-latest-firms-objecting-to-okxice-s-tokenized-stock-plan",
+      "pubDate": "Sat, 24 Oct 2026 14:06:24 +0000"
+    },
+    {
+      "title": "Bitcoin’s wealthy holders turning to loans and yield as investment habits mature: Xapo CEO",
+      "link": "https://www.coindesk.com/",
+      "pubDate": "Sat, 24 Oct 2026 14:00:00 +0000"
+    },
+    {
+      "title": "U.S. Clarity Act failure gives Asia and Middle East a competitive edge, says Apex Group CEO",
+      "link": "https://www.coindesk.com/policy/2026/10/24/u-s-clarity-act-failure-gives-asia-and-middle-east-a-competitive-edge-says-apex-group-ceo",
+      "pubDate": "Sat, 24 Oct 2026 12:00:00 +0000"
+    },
     {
       "title": "Franklin Templeton adds $150 million in fund shares to XRP Ledger, all in one wallet",
       "link": "https://www.coindesk.com/markets/2026/10/24/franklin-templeton-adds-usd150-million-in-fund-shares-to-xrp-ledger-all-in-one-wallet",
@@ -450,41 +485,6 @@
       "title": "Live updates: Bitcoin holds above $81,000 as oil prices hit six-month high",
       "link": "https://www.coindesk.com/markets/2026/10/23/live-updates-bitcoin-holds-above-usd81-000-as-the-ai-rout-fades-and-oil-climbs",
       "pubDate": "Fri, 23 Oct 2026 11:13:01 +0000"
-    },
-    {
-      "title": "Bitcoin steadies near $81,700 as altcoins rebound, pepe climbs 13%",
-      "link": "https://www.coindesk.com/markets/2026/10/23/bitcoin-steadies-near-usd81-700-as-altcoins-rebound-pepe-climbs-13",
-      "pubDate": "Fri, 23 Oct 2026 10:54:41 +0000"
-    },
-    {
-      "title": "Bitcoin appears to have decoupled from midterm cycle bottom history",
-      "link": "https://www.coindesk.com/markets/2026/10/23/bitcoin-approaches-midterms-as-july-low-challenges-historical-cycle-pattern",
-      "pubDate": "Fri, 23 Oct 2026 10:53:09 +0000"
-    },
-    {
-      "title": "HSBC rolls out its first stablecoin to over 3 million everyday app users",
-      "link": "https://www.coindesk.com/business/2026/10/23/hsbc-rolls-out-its-first-stablecoin-to-over-3-million-everyday-app-users",
-      "pubDate": "Fri, 23 Oct 2026 10:22:56 +0000"
-    },
-    {
-      "title": "Sweden’s central bank revives e-krona debate as stablecoins and digital euro loom",
-      "link": "https://www.coindesk.com/business/2026/10/23/sweden-s-central-bank-revives-e-krona-debate-as-stablecoins-and-digital-euro-loom",
-      "pubDate": "Fri, 23 Oct 2026 08:57:34 +0000"
-    },
-    {
-      "title": "India's largest exchange denies hack after sleuths pointed to $16 million in suspicious outflows",
-      "link": "https://www.coindesk.com/markets/2026/10/23/india-s-largest-exchange-denies-hack-after-blockchain-sleuths-pointed-to-usd16-million-in-suspicious-outflows",
-      "pubDate": "Fri, 23 Oct 2026 08:02:35 +0000"
-    },
-    {
-      "title": "Polymarket has reportedly fired its marketing chief, also a close friend of the CEO",
-      "link": "https://www.coindesk.com/markets/2026/10/23/polymarket-has-reportedly-fired-its-marketing-chief-also-a-close-friend-of-the-ceo",
-      "pubDate": "Fri, 23 Oct 2026 05:01:19 +0000"
-    },
-    {
-      "title": "Ethereum delays Glamsterdam test after security devs flag risk to existing contracts",
-      "link": "https://www.coindesk.com/tech/2026/10/23/ethereum-delays-glamsterdam-test-after-security-devs-flag-risk-to-existing-contracts",
-      "pubDate": "Fri, 23 Oct 2026 04:59:34 +0000"
     }
   ]
 }
