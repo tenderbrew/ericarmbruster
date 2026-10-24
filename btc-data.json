@@ -1,13 +1,13 @@
 {
-  "fetchedAt": "2026-10-24T04:29:25.463Z",
+  "fetchedAt": "2026-10-24T10:51:14.322Z",
   "price": {
-    "usd": 80802,
-    "time": 1792815906
+    "usd": 80569,
+    "time": 1792838706
   },
   "moves": {
-    "d1": -0.3702892730233054,
-    "d7": -0.7448194796499608,
-    "d30": -4.238031908037787
+    "d1": -0.6575807088712526,
+    "d7": -1.031030923193954,
+    "d30": -4.514170352202873
   },
   "history90d": [
     {
@@ -372,60 +372,65 @@
     },
     {
       "date": "2026-10-24",
-      "close": 80785.004566158
+      "close": 80592.12970611548
     }
   ],
   "blocks": [
     {
-      "height": 972875,
-      "id": "000000000000000000008daa0444b4f28694bc3a83d0b700358ddbe97191f951",
-      "timestamp": 1792815574,
-      "txCount": 5191
+      "height": 972912,
+      "id": "000000000000000000011db981989b95aa47a43506b529004212664b6b1eccb0",
+      "timestamp": 1792838982,
+      "txCount": 2590
     },
     {
-      "height": 972874,
-      "id": "000000000000000000013e726e79dc74efc0e8e191cf29e9208a37999b3693f0",
-      "timestamp": 1792815126,
-      "txCount": 4957
+      "height": 972911,
+      "id": "000000000000000000004a721bc0cdaf0a6fe724449dc1317b228188ccbd1d20",
+      "timestamp": 1792838175,
+      "txCount": 5259
     },
     {
-      "height": 972873,
-      "id": "000000000000000000008d9f24cbed238fd58ddefbd74aea78d480ea3491000f",
-      "timestamp": 1792814748,
-      "txCount": 2177
+      "height": 972910,
+      "id": "0000000000000000000190b0182b7433b82271d1a36c30b0102b235d2912565e",
+      "timestamp": 1792838059,
+      "txCount": 3598
     },
     {
-      "height": 972872,
-      "id": "000000000000000000016fdd3a569d0379698c8d37e98a8e2056e5c3a59acc01",
-      "timestamp": 1792814010,
-      "txCount": 3973
+      "height": 972909,
+      "id": "000000000000000000019294e4f66dfc549f7dc9b84f18e3f680dfd0a5477dea",
+      "timestamp": 1792836290,
+      "txCount": 3968
     },
     {
-      "height": 972871,
-      "id": "000000000000000000013e242a552369aa37050378c9b9af050c58bddc2f59c2",
-      "timestamp": 1792813323,
-      "txCount": 6749
+      "height": 972908,
+      "id": "0000000000000000000114a097e96e84a819449932aa1f67c43548327f742287",
+      "timestamp": 1792836137,
+      "txCount": 2270
     },
     {
-      "height": 972870,
-      "id": "0000000000000000000117bb6fa3f796c02b2476333e82cba5df1dc604ad1077",
-      "timestamp": 1792813126,
-      "txCount": 1725
+      "height": 972907,
+      "id": "00000000000000000001790d89631ce212a257cef4dd1f2417e2e9a8e9de4c8f",
+      "timestamp": 1792835134,
+      "txCount": 3658
     },
     {
-      "height": 972869,
-      "id": "00000000000000000000b5c487d89cbb1529b2dee4f1033d17cc9c703f77d6f7",
-      "timestamp": 1792812119,
-      "txCount": 4041
+      "height": 972906,
+      "id": "000000000000000000005b679371db33185b7d001be8e0ffbfe6ab657342faf2",
+      "timestamp": 1792833459,
+      "txCount": 3157
     },
     {
-      "height": 972868,
-      "id": "000000000000000000017e3c5443bcc2cdc19a258e8ae8d3d9b590266a28dbb4",
-      "timestamp": 1792811414,
-      "txCount": 7886
+      "height": 972905,
+      "id": "00000000000000000000aa1950a454344ad98d2627af4a8ed6df2fd4a9f78c6f",
+      "timestamp": 1792832141,
+      "txCount": 2623
     }
   ],
   "news": [
+    {
+      "title": "Franklin Templeton adds $150 million in fund shares to XRP Ledger, all in one wallet",
+      "link": "https://www.coindesk.com/markets/2026/10/24/franklin-templeton-adds-usd150-million-in-fund-shares-to-xrp-ledger-all-in-one-wallet",
+      "pubDate": "Sat, 24 Oct 2026 04:45:43 +0000"
+    },
     {
       "title": "Robinhood sees surge in bitcoin, gold prediction markets as traders move beyond sports",
       "link": "https://www.coindesk.com/markets/2026/10/23/robinhood-sees-surge-in-bitcoin-gold-prediction-markets-as-traders-move-beyond-sports",
@@ -480,11 +485,6 @@
       "title": "Ethereum delays Glamsterdam test after security devs flag risk to existing contracts",
       "link": "https://www.coindesk.com/tech/2026/10/23/ethereum-delays-glamsterdam-test-after-security-devs-flag-risk-to-existing-contracts",
       "pubDate": "Fri, 23 Oct 2026 04:59:34 +0000"
-    },
-    {
-      "title": "Cardano holders are being asked to bet $5 million on copper hitting a new record",
-      "link": "https://www.coindesk.com/markets/2026/10/23/cardano-holders-are-being-asked-to-bet-usd5-million-on-copper-hitting-a-new-record",
-      "pubDate": "Fri, 23 Oct 2026 04:36:51 +0000"
     }
   ]
 }
