@@ -1,13 +1,13 @@
 {
-  "fetchedAt": "2026-10-25T11:17:40.488Z",
+  "fetchedAt": "2026-10-25T16:08:13.080Z",
   "price": {
-    "usd": 80218,
-    "time": 1792926606
+    "usd": 80480,
+    "time": 1792944306
   },
   "moves": {
-    "d1": -0.7332838530779928,
-    "d7": -2.196527766766476,
-    "d30": -4.588383836433485
+    "d1": -0.4090688435976597,
+    "d7": -1.8770918580538698,
+    "d30": -4.276759968537824
   },
   "history90d": [
     {
@@ -372,60 +372,70 @@
     },
     {
       "date": "2026-10-25",
-      "close": 80305.5959053599
+      "close": 80494.65582811584
     }
   ],
   "blocks": [
     {
-      "height": 973066,
-      "id": "000000000000000000016e583b8ac13c26ce573a85971cca5f6a2898fe234c71",
-      "timestamp": 1792926872,
-      "txCount": 7700
+      "height": 973093,
+      "id": "00000000000000000000acbff95169793ae0d425bad71c25b02fdbca8d400ac7",
+      "timestamp": 1792944107,
+      "txCount": 4747
     },
     {
-      "height": 973065,
-      "id": "000000000000000000005cb67111e7a0d9756b7087428655b042f80a6f170d73",
-      "timestamp": 1792926762,
-      "txCount": 7705
+      "height": 973092,
+      "id": "00000000000000000000c3f5bed2e38f800f9739fddb2e1f52ebf9d5b63b6572",
+      "timestamp": 1792944241,
+      "txCount": 3554
     },
     {
-      "height": 973064,
-      "id": "000000000000000000015bf000e7b50323c7dc9b33609cc2568e70156bc995de",
-      "timestamp": 1792926655,
-      "txCount": 5908
+      "height": 973091,
+      "id": "00000000000000000001a169197dafe2f7cb75542ce18a9bf0ca3485113344c6",
+      "timestamp": 1792942884,
+      "txCount": 4305
     },
     {
-      "height": 973063,
-      "id": "0000000000000000000147b8e7b55d7253c2d20c62a7d05731c8e2cbb360204a",
-      "timestamp": 1792926567,
-      "txCount": 7038
+      "height": 973090,
+      "id": "00000000000000000001f3f884c544a15d9c1a21d3e8b96473ba168e1d62bb4d",
+      "timestamp": 1792942934,
+      "txCount": 3388
     },
     {
-      "height": 973062,
-      "id": "000000000000000000011351b30925044402e066102c36759de0896aa26f79e5",
-      "timestamp": 1792926293,
-      "txCount": 6973
+      "height": 973089,
+      "id": "000000000000000000007a983688df50530bafd91f6dbd43d20133f8eee528f3",
+      "timestamp": 1792941932,
+      "txCount": 4585
     },
     {
-      "height": 973061,
-      "id": "0000000000000000000157f669c759b20dc97fea7c4aac4fe2727157dce5a766",
-      "timestamp": 1792926228,
-      "txCount": 2938
+      "height": 973088,
+      "id": "0000000000000000000177a81acdf6a0d48d9782ec2e155522bb25683fabc75e",
+      "timestamp": 1792941696,
+      "txCount": 5064
     },
     {
-      "height": 973060,
-      "id": "00000000000000000001dabd02398981fe9811467de4ece37cdc523369750c76",
-      "timestamp": 1792925082,
-      "txCount": 5752
+      "height": 973087,
+      "id": "00000000000000000001622768050cb3c44c3b376fee0cb2240b9ee9ab0c8454",
+      "timestamp": 1792941113,
+      "txCount": 3476
     },
     {
-      "height": 973059,
-      "id": "00000000000000000000029ff5ae295f08b15c48ecf64329275e4de97bdadf6d",
-      "timestamp": 1792925046,
-      "txCount": 3054
+      "height": 973086,
+      "id": "00000000000000000001720b90ae686ad8d9a4e9068dc01fbbd6231462c942df",
+      "timestamp": 1792940851,
+      "txCount": 3158
     }
   ],
   "news": [
+    {
+      "title": "Latvia targets tokenization rules in 2027 with commercial property in focus",
+      "link": "https://www.coindesk.com/business/2026/10/25/latvia-targets-tokenization-rules-in-2027-with-commercial-property-in-focus",
+      "pubDate": "Sun, 25 Oct 2026 15:00:00 +0000"
+    },
+    {
+      "title": "UK banks face 10,000 complaints in 3 months over crypto restrictions",
+      "link": "https://www.coindesk.com/policy/2026/10/22/uk-banks-face-10-000-complaints-in-3-months-over-crypto-restrictions",
+      "pubDate": "Sun, 25 Oct 2026 13:00:00 +0000"
+    },
     {
       "title": "Strategy, Strive face balancing act between bitcoin buying and preferred stock dividends",
       "link": "https://www.coindesk.com/business/2026/10/24/strategy-strive-face-balancing-act-between-bitcoin-buying-and-preferred-stock-dividends",
@@ -475,16 +485,6 @@
       "title": "Robinhood sees surge in bitcoin, gold prediction markets as traders move beyond sports",
       "link": "https://www.coindesk.com/markets/2026/10/23/robinhood-sees-surge-in-bitcoin-gold-prediction-markets-as-traders-move-beyond-sports",
       "pubDate": "Fri, 23 Oct 2026 13:58:56 +0000"
-    },
-    {
-      "title": "Bitcoin Core changes security rules as AI makes finding code bugs dangerously easy",
-      "link": "https://www.coindesk.com/tech/2026/10/23/bitcoin-will-now-stop-hiding-bugs-an-ai-can-find-in-one-prompt",
-      "pubDate": "Fri, 23 Oct 2026 12:03:53 +0000"
-    },
-    {
-      "title": "Bitcoin's price is as jumpy as Nvidia's and eight times more turbulent than the euro",
-      "link": "https://www.coindesk.com/daybook-us/2026/10/23/bitcoin-s-volatility-is-well-above-euro-dollar-gyrations-though-it-has-calmed-to-rival-nvidia-s",
-      "pubDate": "Fri, 23 Oct 2026 11:22:33 +0000"
     }
   ]
 }
