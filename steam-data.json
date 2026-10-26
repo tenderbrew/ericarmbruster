@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-10-25T12:53:28.846Z",
+  "fetchedAt": "2026-10-26T14:44:36.300Z",
   "profile": {
     "name": "tenderbrew",
     "profileUrl": "https://steamcommunity.com/id/tenderbrew/",
@@ -7,7 +7,7 @@
   },
   "stats": {
     "totalGames": 513,
-    "totalHours": 3592,
+    "totalHours": 3597,
     "playedCount": 241,
     "neverPlayed": 272,
     "playtimeBuckets": {
@@ -20,6 +20,13 @@
   },
   "recentlyPlayed": [
     {
+      "appid": 1091500,
+      "name": "Cyberpunk 2077",
+      "hours_2weeks": 5.2,
+      "hours_total": 207.8,
+      "img_icon_url": "6897c3848f3e0350d512f59d5bae174a1e3739f9"
+    },
+    {
       "appid": 529340,
       "name": "Victoria 3",
       "hours_2weeks": 3.4,
@@ -27,25 +34,11 @@
       "img_icon_url": "da7eddaef804905207eaf0ba9580b5026385f041"
     },
     {
-      "appid": 499170,
-      "name": "Order of the Sinking Star",
-      "hours_2weeks": 3,
-      "hours_total": 8.6,
-      "img_icon_url": "a440ee5f9039749226536670915eac6eecbf8121"
-    },
-    {
       "appid": 2933130,
       "name": "The Lord of the Rings: Return to Moria™",
       "hours_2weeks": 1,
       "hours_total": 10.3,
       "img_icon_url": "29286f2af71b4c1752abf62428e2b60761f7e69a"
-    },
-    {
-      "appid": 1091500,
-      "name": "Cyberpunk 2077",
-      "hours_2weeks": 0.8,
-      "hours_total": 203.4,
-      "img_icon_url": "6897c3848f3e0350d512f59d5bae174a1e3739f9"
     }
   ],
   "topByPlaytime": [
@@ -68,16 +61,16 @@
       "img_icon_url": "f9e8431600ea2ac6b15d81bd6c38e63c13ba2bbd"
     },
     {
+      "appid": 1091500,
+      "name": "Cyberpunk 2077",
+      "hours": 207.8,
+      "img_icon_url": "6897c3848f3e0350d512f59d5bae174a1e3739f9"
+    },
+    {
       "appid": 1997040,
       "name": "MARVEL SNAP",
       "hours": 207.5,
       "img_icon_url": "ac70da51184b62607a88b9bd33cef0fab6aa2ebc"
-    },
-    {
-      "appid": 1091500,
-      "name": "Cyberpunk 2077",
-      "hours": 203.4,
-      "img_icon_url": "6897c3848f3e0350d512f59d5bae174a1e3739f9"
     },
     {
       "appid": 8930,
