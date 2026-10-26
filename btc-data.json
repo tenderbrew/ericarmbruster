@@ -1,13 +1,13 @@
 {
-  "fetchedAt": "2026-10-26T12:51:23.399Z",
+  "fetchedAt": "2026-10-26T20:26:41.250Z",
   "price": {
-    "usd": 80231,
-    "time": 1793018706
+    "usd": 79801,
+    "time": 1793046013
   },
   "moves": {
-    "d1": 0.22755113188113185,
-    "d7": -2.008254797731379,
-    "d30": -4.958395955779449
+    "d1": -0.30962087129355886,
+    "d7": -2.5334439445321877,
+    "d30": -5.4677737491388045
   },
   "history90d": [
     {
@@ -372,60 +372,90 @@
     },
     {
       "date": "2026-10-26",
-      "close": 80281.40785524396
+      "close": 79822.15214840595
     }
   ],
   "blocks": [
     {
-      "height": 973237,
-      "id": "000000000000000000006d568c45d9983ba040185828b5a629892b9fa0a38c92",
-      "timestamp": 1793018493,
-      "txCount": 4612
+      "height": 973285,
+      "id": "000000000000000000005e6774a9be5770478c465bab274503ff71151f18b089",
+      "timestamp": 1793046125,
+      "txCount": 4417
     },
     {
-      "height": 973236,
-      "id": "00000000000000000001d4c8265ebc9b1345ab42de59c815758ba26d0d965337",
-      "timestamp": 1793018321,
-      "txCount": 3797
+      "height": 973284,
+      "id": "00000000000000000001132961d0617f0d12c754c93cbf065f4b8ab7ddb95e32",
+      "timestamp": 1793045259,
+      "txCount": 5940
     },
     {
-      "height": 973235,
-      "id": "0000000000000000000027e007e6576319666fa9e116b5953bea64c6561ada55",
-      "timestamp": 1793017183,
-      "txCount": 7030
+      "height": 973283,
+      "id": "000000000000000000017b6bf355669a669f9f0341f98a0a57cc4f8e440077e8",
+      "timestamp": 1793044867,
+      "txCount": 3926
     },
     {
-      "height": 973234,
-      "id": "00000000000000000000488d1439958a95bd06f326225af33f63d7e86ec304fe",
-      "timestamp": 1793017053,
-      "txCount": 7284
+      "height": 973282,
+      "id": "00000000000000000000c2d5c8923cf3d37ae6e6b19bc891bd477883724e6222",
+      "timestamp": 1793044351,
+      "txCount": 4048
     },
     {
-      "height": 973233,
-      "id": "0000000000000000000017464eef85b9ba9b0bd504490f69b35640c2d8fe26a5",
-      "timestamp": 1793017010,
-      "txCount": 3051
+      "height": 973281,
+      "id": "0000000000000000000171891c58b490073a77db0ed90a302369a7b8c805a102",
+      "timestamp": 1793043094,
+      "txCount": 5403
     },
     {
-      "height": 973232,
-      "id": "00000000000000000001ce659309f4a376d6fc3ae0e723b96560afd38540902d",
-      "timestamp": 1793016011,
-      "txCount": 3143
+      "height": 973280,
+      "id": "00000000000000000000ce546d8d46c2e825a4af84a1157e694363778c3d7820",
+      "timestamp": 1793042686,
+      "txCount": 3773
     },
     {
-      "height": 973231,
-      "id": "00000000000000000001ed8eddcbd225b39ed0a843835578c7972862cab16574",
-      "timestamp": 1793014970,
-      "txCount": 2979
+      "height": 973279,
+      "id": "000000000000000000004ae7fd6f24fe6e4e5ebc7926612bf00f7f25f741ebe9",
+      "timestamp": 1793042581,
+      "txCount": 7384
     },
     {
-      "height": 973230,
-      "id": "000000000000000000014875b9a354826bebe7926e37a1e1f6136812873b30af",
-      "timestamp": 1793014018,
-      "txCount": 6182
+      "height": 973278,
+      "id": "000000000000000000009a144e2cbc82637892995d37021da53684642428c67f",
+      "timestamp": 1793042473,
+      "txCount": 7509
     }
   ],
   "news": [
+    {
+      "title": "Tom Lee's Bitmine favors share buybacks to ether purchases as crypto declines",
+      "link": "https://www.coindesk.com/business/2026/10/26/tom-lee-s-bitmine-favors-share-buybacks-to-ether-purchases-as-crypto-declines",
+      "pubDate": "Mon, 26 Oct 2026 16:05:12 +0000"
+    },
+    {
+      "title": "NBA joins pro sports leagues on CFTC prediction markets bandwagon while NFL balks",
+      "link": "https://www.coindesk.com/policy/2026/10/26/nba-joins-pro-sports-leagues-on-cftc-prediction-markets-bandwagon-while-nfl-balks",
+      "pubDate": "Mon, 26 Oct 2026 15:59:55 +0000"
+    },
+    {
+      "title": "OCC calls on community banks to enter the stablecoin payments market",
+      "link": "https://www.coindesk.com/policy/2026/10/26/occ-calls-on-community-banks-to-enter-the-stablecoin-payments-market",
+      "pubDate": "Mon, 26 Oct 2026 15:45:51 +0000"
+    },
+    {
+      "title": "South Korea weighs fourth delay on its crypto gains tax, pushing it to 2029",
+      "link": "https://www.coindesk.com/policy/2026/10/26/south-korea-weighs-fourth-delay-on-its-crypto-gains-tax-pushing-it-to-2029",
+      "pubDate": "Mon, 26 Oct 2026 14:51:07 +0000"
+    },
+    {
+      "title": "Canada opens consultation on draft stablecoin rules, maintains ban on yields",
+      "link": "https://www.coindesk.com/policy/2026/10/26/canada-opens-consultation-on-draft-stablecoin-rules-maintains-ban-on-yields",
+      "pubDate": "Mon, 26 Oct 2026 14:23:41 +0000"
+    },
+    {
+      "title": "AI giant Anthropic files for blockbuster IPO",
+      "link": "https://www.coindesk.com/business/2026/10/26/ai-giant-anthropic-files-for-blockbuster-ipo",
+      "pubDate": "Mon, 26 Oct 2026 13:22:09 +0000"
+    },
     {
       "title": "A $68 million bitcoin bet is targeting a post-midterm election breakout to $90,000",
       "link": "https://www.coindesk.com/daybook-us/2026/10/26/a-usd68-million-bitcoin-bet-is-targeting-a-post-midterm-election-breakout-to-usd90-000",
@@ -437,7 +467,7 @@
       "pubDate": "Mon, 26 Oct 2026 11:24:33 +0000"
     },
     {
-      "title": "Live news: Bitcoin barely holding $80,000 ahead of Fed on Wednesday, tech earnings this week",
+      "title": "Live news: Bitcoin dips below $80,000 as stocks rally following Anthropic IPO filing",
       "link": "https://www.coindesk.com/tech/2026/10/26/live-news-brent-crude-slides-below-usd110-as-iran-deal-hopes-grow-and-brazil-stocks-sink",
       "pubDate": "Mon, 26 Oct 2026 11:05:31 +0000"
     },
@@ -455,36 +485,6 @@
       "title": "Over 11 million bitcoin has no known owner. Here's what it means",
       "link": "https://www.coindesk.com/markets/2026/10/26/over-11-million-btc-can-t-be-linked-to-any-known-owner-even-after-wall-street-buying",
       "pubDate": "Mon, 26 Oct 2026 07:18:24 +0000"
-    },
-    {
-      "title": "India's largest crypto exchange absorbs $16 million loss from internal process failure tied to retired wallet",
-      "link": "https://www.coindesk.com/markets/2026/10/26/coindcx-absorbs-usd16-million-loss-from-internal-process-failure-tied-to-retired-wallet",
-      "pubDate": "Mon, 26 Oct 2026 05:39:17 +0000"
-    },
-    {
-      "title": "Bitcoin wallet bug let rogue servers steal funds when users tried to speed up payments",
-      "link": "https://www.coindesk.com/tech/2026/10/26/bitcoin-wallet-bug-let-rogue-servers-steal-funds-when-users-tried-to-speed-up-payments",
-      "pubDate": "Mon, 26 Oct 2026 05:15:20 +0000"
-    },
-    {
-      "title": "Bitcoin slips under $80,000 as traders de-risk ahead of Fed meeting",
-      "link": "https://www.coindesk.com/markets/2026/10/26/bitcoin-slips-under-usd80-000-as-traders-de-risk-ahead-of-fed-meeting",
-      "pubDate": "Mon, 26 Oct 2026 04:37:02 +0000"
-    },
-    {
-      "title": "Elon Musk issues a warning for 'AI neoclouds' as SpaceX borrows $40 billion for chips",
-      "link": "https://www.coindesk.com/markets/2026/10/26/elon-musk-confirms-usd40-billion-spacex-debt-deal-for-ai-chips-warns-of-neocloud-shakeout",
-      "pubDate": "Mon, 26 Oct 2026 03:11:39 +0000"
-    },
-    {
-      "title": "Latvia targets tokenization rules in 2027 with commercial property in focus",
-      "link": "https://www.coindesk.com/business/2026/10/25/latvia-targets-tokenization-rules-in-2027-with-commercial-property-in-focus",
-      "pubDate": "Sun, 25 Oct 2026 15:00:00 +0000"
-    },
-    {
-      "title": "UK banks face 10,000 complaints in 3 months over crypto restrictions",
-      "link": "https://www.coindesk.com/policy/2026/10/22/uk-banks-face-10-000-complaints-in-3-months-over-crypto-restrictions",
-      "pubDate": "Sun, 25 Oct 2026 13:00:00 +0000"
     }
   ]
 }
