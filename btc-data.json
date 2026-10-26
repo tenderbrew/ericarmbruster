@@ -1,19 +1,15 @@
 {
-  "fetchedAt": "2026-10-25T23:12:01.361Z",
+  "fetchedAt": "2026-10-26T04:38:53.209Z",
   "price": {
-    "usd": 80333,
-    "time": 1792969806
+    "usd": 79975,
+    "time": 1792989308
   },
   "moves": {
-    "d1": -0.5909757382297487,
-    "d7": -2.0563173488201025,
-    "d30": -4.451602367700658
+    "d1": -0.0922535955903192,
+    "d7": -2.320925545594188,
+    "d30": -5.261653432756175
   },
   "history90d": [
-    {
-      "date": "2026-07-28",
-      "close": 63701.35288114535
-    },
     {
       "date": "2026-07-29",
       "close": 63881.94327943538
@@ -371,61 +367,75 @@
       "close": 80810.57086775338
     },
     {
-      "date": "2026-10-25",
-      "close": 80319.5848204396
+      "date": "2026-10-26",
+      "close": 80048.84794045369
+    },
+    {
+      "date": "2026-10-26",
+      "close": 79980.5663025541
     }
   ],
   "blocks": [
     {
-      "height": 973144,
-      "id": "00000000000000000000306e6a3382dda204e93fded3a8c039b30b4e1a156e45",
-      "timestamp": 1792969657,
-      "txCount": 7129
+      "height": 973186,
+      "id": "0000000000000000000118294d001b956216abf43d94d8dbb7097d6e966a2bff",
+      "timestamp": 1792989198,
+      "txCount": 7411
     },
     {
-      "height": 973143,
-      "id": "0000000000000000000016531893d1da556dbd4e3993e4766c462bb8ce918bf4",
-      "timestamp": 1792969482,
-      "txCount": 6252
+      "height": 973185,
+      "id": "00000000000000000000ae408dd4224beb498efb33c5eac63b21ed44f3b9878b",
+      "timestamp": 1792989324,
+      "txCount": 1727
     },
     {
-      "height": 973142,
-      "id": "0000000000000000000176e99cc305784496bd14fa5bbdc205c39f0473a8b2af",
-      "timestamp": 1792969236,
-      "txCount": 7518
+      "height": 973184,
+      "id": "00000000000000000000a4a88d0c6966c5b9f0922783091ba638b10d3b2fa48c",
+      "timestamp": 1792988243,
+      "txCount": 4505
     },
     {
-      "height": 973141,
-      "id": "00000000000000000000278b0d29d9261aca84d3c96a13187c717494f3b65839",
-      "timestamp": 1792969173,
-      "txCount": 2979
+      "height": 973183,
+      "id": "00000000000000000001562230e750edf1113f6c06f3af308edd9aca4ab6261e",
+      "timestamp": 1792988284,
+      "txCount": 2237
     },
     {
-      "height": 973140,
-      "id": "00000000000000000001b80d5716500092c32a17cefc87d0c357920c90a8a518",
-      "timestamp": 1792967964,
-      "txCount": 6124
+      "height": 973182,
+      "id": "00000000000000000000c37cfb4da567d47c3fb0d6b712a7204c8bc78a9fa819",
+      "timestamp": 1792986455,
+      "txCount": 7783
     },
     {
-      "height": 973139,
-      "id": "00000000000000000001cce5f81d2e6a55c9ebe728a8a16ede4fe4dadb9e5426",
-      "timestamp": 1792968006,
-      "txCount": 7883
+      "height": 973181,
+      "id": "00000000000000000001c9326885089690f466ef8ca1e14345eb3a34d6be2dac",
+      "timestamp": 1792986436,
+      "txCount": 5771
     },
     {
-      "height": 973138,
-      "id": "000000000000000000000cb8244e9a33b754bb01fcdd63c0f11eec66dff44817",
-      "timestamp": 1792967590,
-      "txCount": 5302
+      "height": 973180,
+      "id": "00000000000000000001b8440f31ae684e002257358d28634232929be3f9b6a0",
+      "timestamp": 1792985989,
+      "txCount": 7669
     },
     {
-      "height": 973137,
-      "id": "00000000000000000000cf5142da7f9e105036bdb040f3a1f5826ddef88a63db",
-      "timestamp": 1792967276,
-      "txCount": 6061
+      "height": 973179,
+      "id": "00000000000000000000efe8fd543f06f42bd195d396d46c494dcae173e9ba38",
+      "timestamp": 1792985928,
+      "txCount": 4336
     }
   ],
   "news": [
+    {
+      "title": "Bitcoin slips under $80,000 as traders de-risk ahead of Fed meeting",
+      "link": "https://www.coindesk.com/markets/2026/10/26/bitcoin-slips-under-usd80-000-as-traders-de-risk-ahead-of-fed-meeting",
+      "pubDate": "Mon, 26 Oct 2026 04:37:02 +0000"
+    },
+    {
+      "title": "Elon Musk issues a warning for 'AI neoclouds' as SpaceX borrows $40 billion for chips",
+      "link": "https://www.coindesk.com/markets/2026/10/26/elon-musk-confirms-usd40-billion-spacex-debt-deal-for-ai-chips-warns-of-neocloud-shakeout",
+      "pubDate": "Mon, 26 Oct 2026 03:11:39 +0000"
+    },
     {
       "title": "Latvia targets tokenization rules in 2027 with commercial property in focus",
       "link": "https://www.coindesk.com/business/2026/10/25/latvia-targets-tokenization-rules-in-2027-with-commercial-property-in-focus",
@@ -475,16 +485,6 @@
       "title": "U.S. Clarity Act failure gives Asia and Middle East a competitive edge, says Apex Group CEO",
       "link": "https://www.coindesk.com/policy/2026/10/24/u-s-clarity-act-failure-gives-asia-and-middle-east-a-competitive-edge-says-apex-group-ceo",
       "pubDate": "Sat, 24 Oct 2026 12:00:00 +0000"
-    },
-    {
-      "title": "Franklin Templeton adds $150 million in fund shares to XRP Ledger, all in one wallet",
-      "link": "https://www.coindesk.com/markets/2026/10/24/franklin-templeton-adds-usd150-million-in-fund-shares-to-xrp-ledger-all-in-one-wallet",
-      "pubDate": "Sat, 24 Oct 2026 04:45:43 +0000"
-    },
-    {
-      "title": "Robinhood sees surge in bitcoin, gold prediction markets as traders move beyond sports",
-      "link": "https://www.coindesk.com/markets/2026/10/23/robinhood-sees-surge-in-bitcoin-gold-prediction-markets-as-traders-move-beyond-sports",
-      "pubDate": "Fri, 23 Oct 2026 13:58:56 +0000"
     }
   ]
 }
