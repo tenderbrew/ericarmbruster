@@ -1,13 +1,13 @@
 {
-  "fetchedAt": "2026-10-27T08:53:23.761Z",
+  "fetchedAt": "2026-10-27T15:18:22.721Z",
   "price": {
-    "usd": 79723,
-    "time": 1793091006
+    "usd": 80176,
+    "time": 1793114107
   },
   "moves": {
-    "d1": -0.38290142049962617,
-    "d7": -3.8831477175516715,
-    "d30": -5.595997741986225
+    "d1": 0.18314031973234446,
+    "d7": -3.3369949876751126,
+    "d30": -5.059577724891029
   },
   "history90d": [
     {
@@ -372,60 +372,110 @@
     },
     {
       "date": "2026-10-27",
-      "close": 79715.5833537194
+      "close": 80213.9403132851
     }
   ],
   "blocks": [
     {
-      "height": 973374,
-      "id": "00000000000000000001a72d3724b7aa7219549a6e8820e785a40d7b47cb708f",
-      "timestamp": 1793090657,
-      "txCount": 6650
+      "height": 973415,
+      "id": "00000000000000000001d181b7a761cdd39b8b82bfe309050850f6034a5a90bb",
+      "timestamp": 1793114241,
+      "txCount": 4668
     },
     {
-      "height": 973373,
-      "id": "000000000000000000017e220021290159f71479d9ce457e0e50e2e11e915ed5",
-      "timestamp": 1793090841,
-      "txCount": 2400
+      "height": 973414,
+      "id": "0000000000000000000016af3ec01142486cfa237730bdc636e020dbc58f9191",
+      "timestamp": 1793114052,
+      "txCount": 6039
     },
     {
-      "height": 973372,
-      "id": "00000000000000000000cc4f4bc04efe7b589cc1a89ce51e26b2186472c318df",
-      "timestamp": 1793089606,
-      "txCount": 5915
+      "height": 973413,
+      "id": "00000000000000000001b6d3ff91f983eef84b14ad428c60fbf0722b5215f360",
+      "timestamp": 1793113916,
+      "txCount": 1465
     },
     {
-      "height": 973371,
-      "id": "00000000000000000000347d48a032c67175dd51979feec16d45b87e39167afd",
-      "timestamp": 1793089551,
-      "txCount": 4592
+      "height": 973412,
+      "id": "000000000000000000000fd43bc2a70cdc1a6f8975ea56cbedb46f7c51b8b0ca",
+      "timestamp": 1793113636,
+      "txCount": 3512
     },
     {
-      "height": 973370,
-      "id": "000000000000000000012a87e2ecbb303224a0de1e0b294b52246e166ee4675a",
-      "timestamp": 1793088436,
-      "txCount": 3993
+      "height": 973411,
+      "id": "000000000000000000003f2d65a80e7be64e9c20b7231933a159279466845ca4",
+      "timestamp": 1793113572,
+      "txCount": 3562
     },
     {
-      "height": 973369,
-      "id": "0000000000000000000117b1671359db81dbf516ac658907b9318fa4865b82a0",
-      "timestamp": 1793087910,
-      "txCount": 6115
+      "height": 973410,
+      "id": "00000000000000000001d7a617f04860eaf35ad71199150bc57865505d5f268f",
+      "timestamp": 1793111571,
+      "txCount": 6185
     },
     {
-      "height": 973368,
-      "id": "00000000000000000000a197c6c301e66ca42a9d7ef77e038aa26f6caf52fdce",
-      "timestamp": 1793087416,
-      "txCount": 5662
+      "height": 973409,
+      "id": "00000000000000000001782c245d189f1b84e9cb6305aa5c6e57c36b68c7e881",
+      "timestamp": 1793111417,
+      "txCount": 3050
     },
     {
-      "height": 973367,
-      "id": "0000000000000000000184a8b886dbc806e556c328eb6aef813ab4dae4736a4d",
-      "timestamp": 1793087015,
-      "txCount": 4447
+      "height": 973408,
+      "id": "00000000000000000001510cf8a6daccc4167ca5580ec07835b74699d8c22bac",
+      "timestamp": 1793111118,
+      "txCount": 3200
     }
   ],
   "news": [
+    {
+      "title": "Nasdaq-100 comes onchain as Janus Henderson and Centrifuge launch first licensed fund",
+      "link": "https://www.coindesk.com/business/2026/10/27/nasdaq-100-comes-onchain-as-janus-henderson-and-centrifuge-launch-first-licensed-fund",
+      "pubDate": "Tue, 27 Oct 2026 14:21:10 +0000"
+    },
+    {
+      "title": "CF Benchmarks brings Wall Street pricing infrastructure onchain, including data used by BlackRock",
+      "link": "https://www.coindesk.com/markets/2026/10/27/cf-benchmarks-brings-wall-street-pricing-infrastructure-onchain-including-data-used-by-blackrock",
+      "pubDate": "Tue, 27 Oct 2026 14:00:00 +0000"
+    },
+    {
+      "title": "Bitcoin miners' move into AI is creating a new market for trading computing power",
+      "link": "https://www.coindesk.com/business/2026/10/27/bitcoin-miners-move-into-ai-is-creating-a-new-market-for-trading-computing-power",
+      "pubDate": "Tue, 27 Oct 2026 13:13:50 +0000"
+    },
+    {
+      "title": "Bitcoin shows signs of weakness while Ripple's bank win fails to bolster XRP",
+      "link": "https://www.coindesk.com/daybook-us/2026/10/27/bitcoin-shows-signs-of-weakness-while-ripple-s-bank-win-fails-to-bolster-xrp",
+      "pubDate": "Tue, 27 Oct 2026 12:00:39 +0000"
+    },
+    {
+      "title": "Live updates: Bitcoin holds near $80,000 as AI buildout draws investor attention and capital",
+      "link": "https://www.coindesk.com/tech/2026/10/27/live-updates-bitcoin-holds-below-usd80-000-as-ai-buildout-draws-more-capital",
+      "pubDate": "Tue, 27 Oct 2026 11:40:50 +0000"
+    },
+    {
+      "title": "Japan's top yen stablecoin falls short of its target in a disappointing first year",
+      "link": "https://www.coindesk.com/business/2026/10/27/japan-s-top-yen-stablecoin-falls-short-of-its-target-in-a-disappointing-first-year",
+      "pubDate": "Tue, 27 Oct 2026 11:37:52 +0000"
+    },
+    {
+      "title": "Bitcoin drops below $80,000 as crypto ignores Asian tech rally, Fed meeting begins",
+      "link": "https://www.coindesk.com/markets/2026/10/27/bitcoin-drops-below-usd80-000-as-crypto-ignores-asian-tech-rally-fed-meeting-begins",
+      "pubDate": "Tue, 27 Oct 2026 11:32:45 +0000"
+    },
+    {
+      "title": "Crypto wallet maker Keystone to destroy almost 19,000 devices after security breach",
+      "link": "https://www.coindesk.com/business/2026/10/27/crypto-wallet-maker-keystone-to-destroy-almost-19-000-devices-after-security-breach",
+      "pubDate": "Tue, 27 Oct 2026 11:13:54 +0000"
+    },
+    {
+      "title": "Investor who called for AI pivot in 2023 says bitcoin is going to $57,000",
+      "link": "https://www.coindesk.com/markets/2026/10/27/investor-who-called-for-ai-pivot-in-2023-says-bitcoin-is-going-to-usd57-000",
+      "pubDate": "Tue, 27 Oct 2026 10:57:51 +0000"
+    },
+    {
+      "title": "Now is the time to accumulate bitcoin, Galaxy says",
+      "link": "https://www.coindesk.com/markets/2026/10/27/now-is-the-time-to-accumulate-bitcoin-galaxy-says",
+      "pubDate": "Tue, 27 Oct 2026 09:42:46 +0000"
+    },
     {
       "title": "An AI label alone no longer wins lenders, JPMorgan says",
       "link": "https://www.coindesk.com/markets/2026/10/27/an-ai-label-alone-no-longer-wins-lenders-jpmorgan-says",
@@ -435,56 +485,6 @@
       "title": "Solana bug reports now cost 1 SOL as AI floods security teams with spam",
       "link": "https://www.coindesk.com/tech/2026/10/27/solana-bug-reports-now-cost-1-sol-as-ai-floods-security-teams-with-spam",
       "pubDate": "Tue, 27 Oct 2026 07:44:04 +0000"
-    },
-    {
-      "title": "Ethereum fixes Glamsterdam bug that could have sent staking deposits to builders",
-      "link": "https://www.coindesk.com/tech/2026/10/27/ethereum-fixes-glamsterdam-bug-that-could-have-sent-staking-deposits-to-builders",
-      "pubDate": "Tue, 27 Oct 2026 07:09:56 +0000"
-    },
-    {
-      "title": "Zcash co-founder proposes ending grants funding, citing $125 million treasury",
-      "link": "https://www.coindesk.com/markets/2026/10/27/zcash-co-founder-proposes-ending-grants-funding-citing-usd125-million-treasury",
-      "pubDate": "Tue, 27 Oct 2026 06:14:41 +0000"
-    },
-    {
-      "title": "Ripple gets a final go-ahead to launch its own U.S. national trust bank",
-      "link": "https://www.coindesk.com/markets/2026/10/27/ripple-gets-a-final-go-ahead-to-launch-its-own-u-s-national-trust-bank",
-      "pubDate": "Tue, 27 Oct 2026 04:28:49 +0000"
-    },
-    {
-      "title": "Tom Lee's Bitmine favors share buybacks to ether purchases as crypto declines",
-      "link": "https://www.coindesk.com/business/2026/10/26/tom-lee-s-bitmine-favors-share-buybacks-to-ether-purchases-as-crypto-declines",
-      "pubDate": "Mon, 26 Oct 2026 16:05:12 +0000"
-    },
-    {
-      "title": "NBA joins pro sports leagues on CFTC prediction markets bandwagon while NFL balks",
-      "link": "https://www.coindesk.com/policy/2026/10/26/nba-joins-pro-sports-leagues-on-cftc-prediction-markets-bandwagon-while-nfl-balks",
-      "pubDate": "Mon, 26 Oct 2026 15:59:55 +0000"
-    },
-    {
-      "title": "OCC calls on community banks to enter the stablecoin payments market",
-      "link": "https://www.coindesk.com/policy/2026/10/26/occ-calls-on-community-banks-to-enter-the-stablecoin-payments-market",
-      "pubDate": "Mon, 26 Oct 2026 15:45:51 +0000"
-    },
-    {
-      "title": "South Korea weighs fourth delay on its crypto gains tax, pushing it to 2029",
-      "link": "https://www.coindesk.com/policy/2026/10/26/south-korea-weighs-fourth-delay-on-its-crypto-gains-tax-pushing-it-to-2029",
-      "pubDate": "Mon, 26 Oct 2026 14:51:07 +0000"
-    },
-    {
-      "title": "Canada opens consultation on draft stablecoin rules, maintains ban on yields",
-      "link": "https://www.coindesk.com/policy/2026/10/26/canada-opens-consultation-on-draft-stablecoin-rules-maintains-ban-on-yields",
-      "pubDate": "Mon, 26 Oct 2026 14:23:41 +0000"
-    },
-    {
-      "title": "AI giant Anthropic files for blockbuster IPO",
-      "link": "https://www.coindesk.com/business/2026/10/26/ai-giant-anthropic-files-for-blockbuster-ipo",
-      "pubDate": "Mon, 26 Oct 2026 13:22:09 +0000"
-    },
-    {
-      "title": "A $68 million bitcoin bet is targeting a post-midterm election breakout to $90,000",
-      "link": "https://www.coindesk.com/daybook-us/2026/10/26/a-usd68-million-bitcoin-bet-is-targeting-a-post-midterm-election-breakout-to-usd90-000",
-      "pubDate": "Mon, 26 Oct 2026 11:53:07 +0000"
     }
   ]
 }
