@@ -1,13 +1,13 @@
 {
-  "fetchedAt": "2026-10-27T00:23:06.881Z",
+  "fetchedAt": "2026-10-27T08:53:23.761Z",
   "price": {
-    "usd": 80094,
-    "time": 1793060408
+    "usd": 79723,
+    "time": 1793091006
   },
   "moves": {
-    "d1": 0.08067801796851626,
-    "d7": -3.4358570712289205,
-    "d30": -5.1566780370363
+    "d1": -0.38290142049962617,
+    "d7": -3.8831477175516715,
+    "d30": -5.595997741986225
   },
   "history90d": [
     {
@@ -372,60 +372,85 @@
     },
     {
       "date": "2026-10-27",
-      "close": 80121.6698252555
+      "close": 79715.5833537194
     }
   ],
   "blocks": [
     {
-      "height": 973316,
-      "id": "00000000000000000001fa11e0b88757e7af41ee887334f7fd7dd28c0bd96852",
-      "timestamp": 1793060106,
-      "txCount": 5845
+      "height": 973374,
+      "id": "00000000000000000001a72d3724b7aa7219549a6e8820e785a40d7b47cb708f",
+      "timestamp": 1793090657,
+      "txCount": 6650
     },
     {
-      "height": 973315,
-      "id": "00000000000000000000c65ea1608dec62d4c6747e5f196b9b8d9a6b2ef0d864",
-      "timestamp": 1793059903,
-      "txCount": 6328
+      "height": 973373,
+      "id": "000000000000000000017e220021290159f71479d9ce457e0e50e2e11e915ed5",
+      "timestamp": 1793090841,
+      "txCount": 2400
     },
     {
-      "height": 973314,
-      "id": "000000000000000000010d33d3762b2401f17cb0f643f08e1a1d98575581af27",
-      "timestamp": 1793059756,
-      "txCount": 6180
+      "height": 973372,
+      "id": "00000000000000000000cc4f4bc04efe7b589cc1a89ce51e26b2186472c318df",
+      "timestamp": 1793089606,
+      "txCount": 5915
     },
     {
-      "height": 973313,
-      "id": "0000000000000000000169baaad3f67d1e12503eecc53d2cc7f4c8ccd3f12ed0",
-      "timestamp": 1793059221,
-      "txCount": 6894
+      "height": 973371,
+      "id": "00000000000000000000347d48a032c67175dd51979feec16d45b87e39167afd",
+      "timestamp": 1793089551,
+      "txCount": 4592
     },
     {
-      "height": 973312,
-      "id": "000000000000000000010c4f43a9db09c43706fb490a0c34ef3d9c4ca96050f5",
-      "timestamp": 1793059192,
-      "txCount": 5294
+      "height": 973370,
+      "id": "000000000000000000012a87e2ecbb303224a0de1e0b294b52246e166ee4675a",
+      "timestamp": 1793088436,
+      "txCount": 3993
     },
     {
-      "height": 973311,
-      "id": "000000000000000000010388f02f8e91de135261852d4bc6c1cb9f8b09ef5893",
-      "timestamp": 1793058838,
-      "txCount": 6124
+      "height": 973369,
+      "id": "0000000000000000000117b1671359db81dbf516ac658907b9318fa4865b82a0",
+      "timestamp": 1793087910,
+      "txCount": 6115
     },
     {
-      "height": 973310,
-      "id": "0000000000000000000069dbea25fae071fe4d96a5d4341aea3af1d41225e93b",
-      "timestamp": 1793058199,
-      "txCount": 6229
+      "height": 973368,
+      "id": "00000000000000000000a197c6c301e66ca42a9d7ef77e038aa26f6caf52fdce",
+      "timestamp": 1793087416,
+      "txCount": 5662
     },
     {
-      "height": 973309,
-      "id": "00000000000000000001444c6b0e5cc81aba217fd08774ecd7293d9dc2d1c204",
-      "timestamp": 1793057564,
-      "txCount": 5037
+      "height": 973367,
+      "id": "0000000000000000000184a8b886dbc806e556c328eb6aef813ab4dae4736a4d",
+      "timestamp": 1793087015,
+      "txCount": 4447
     }
   ],
   "news": [
+    {
+      "title": "An AI label alone no longer wins lenders, JPMorgan says",
+      "link": "https://www.coindesk.com/markets/2026/10/27/an-ai-label-alone-no-longer-wins-lenders-jpmorgan-says",
+      "pubDate": "Tue, 27 Oct 2026 08:24:39 +0000"
+    },
+    {
+      "title": "Solana bug reports now cost 1 SOL as AI floods security teams with spam",
+      "link": "https://www.coindesk.com/tech/2026/10/27/solana-bug-reports-now-cost-1-sol-as-ai-floods-security-teams-with-spam",
+      "pubDate": "Tue, 27 Oct 2026 07:44:04 +0000"
+    },
+    {
+      "title": "Ethereum fixes Glamsterdam bug that could have sent staking deposits to builders",
+      "link": "https://www.coindesk.com/tech/2026/10/27/ethereum-fixes-glamsterdam-bug-that-could-have-sent-staking-deposits-to-builders",
+      "pubDate": "Tue, 27 Oct 2026 07:09:56 +0000"
+    },
+    {
+      "title": "Zcash co-founder proposes ending grants funding, citing $125 million treasury",
+      "link": "https://www.coindesk.com/markets/2026/10/27/zcash-co-founder-proposes-ending-grants-funding-citing-usd125-million-treasury",
+      "pubDate": "Tue, 27 Oct 2026 06:14:41 +0000"
+    },
+    {
+      "title": "Ripple gets a final go-ahead to launch its own U.S. national trust bank",
+      "link": "https://www.coindesk.com/markets/2026/10/27/ripple-gets-a-final-go-ahead-to-launch-its-own-u-s-national-trust-bank",
+      "pubDate": "Tue, 27 Oct 2026 04:28:49 +0000"
+    },
     {
       "title": "Tom Lee's Bitmine favors share buybacks to ether purchases as crypto declines",
       "link": "https://www.coindesk.com/business/2026/10/26/tom-lee-s-bitmine-favors-share-buybacks-to-ether-purchases-as-crypto-declines",
@@ -460,31 +485,6 @@
       "title": "A $68 million bitcoin bet is targeting a post-midterm election breakout to $90,000",
       "link": "https://www.coindesk.com/daybook-us/2026/10/26/a-usd68-million-bitcoin-bet-is-targeting-a-post-midterm-election-breakout-to-usd90-000",
       "pubDate": "Mon, 26 Oct 2026 11:53:07 +0000"
-    },
-    {
-      "title": "Bitcoin holds near $80,000 as oil retreats and the Fed decision looms",
-      "link": "https://www.coindesk.com/markets/2026/10/26/bitcoin-holds-near-usd80-000-as-oil-retreats-and-the-fed-decision-looms",
-      "pubDate": "Mon, 26 Oct 2026 11:24:33 +0000"
-    },
-    {
-      "title": "Live news: Bitcoin dips below $80,000 as stocks rally following Anthropic IPO filing",
-      "link": "https://www.coindesk.com/tech/2026/10/26/live-news-brent-crude-slides-below-usd110-as-iran-deal-hopes-grow-and-brazil-stocks-sink",
-      "pubDate": "Mon, 26 Oct 2026 11:05:31 +0000"
-    },
-    {
-      "title": "Calpers pulls back from big tech as AI jitters deepen neocloud sell-off",
-      "link": "https://www.coindesk.com/markets/2026/10/26/calpers-pulls-back-from-big-tech-as-ai-jitters-deepen-neocloud-sell-off",
-      "pubDate": "Mon, 26 Oct 2026 10:33:00 +0000"
-    },
-    {
-      "title": "Fed, ECB and BOJ interest-rate decisions, Coinbase earnings: Crypto Week Ahead",
-      "link": "https://www.coindesk.com/markets/2026/10/26/fed-ecb-and-boj-interest-rate-decisions-coinbase-earnings-crypto-week-ahead",
-      "pubDate": "Mon, 26 Oct 2026 09:14:47 +0000"
-    },
-    {
-      "title": "Over 11 million bitcoin has no known owner. Here's what it means",
-      "link": "https://www.coindesk.com/markets/2026/10/26/over-11-million-btc-can-t-be-linked-to-any-known-owner-even-after-wall-street-buying",
-      "pubDate": "Mon, 26 Oct 2026 07:18:24 +0000"
     }
   ]
 }
