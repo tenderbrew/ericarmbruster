@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-10-28T12:10:01.392Z",
+  "fetchedAt": "2026-10-28T18:10:01.879Z",
   "note": "main services only; databases/caches/workers are filtered as implementation detail",
   "services": [
     {
@@ -48,6 +48,10 @@
     },
     {
       "name": "prowlarr",
+      "project": "downloads"
+    },
+    {
+      "name": "qbit-manage",
       "project": "downloads"
     },
     {
