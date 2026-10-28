@@ -1,19 +1,15 @@
 {
-  "fetchedAt": "2026-10-27T22:08:21.075Z",
+  "fetchedAt": "2026-10-28T05:32:01.658Z",
   "price": {
-    "usd": 80874,
-    "time": 1793138706
+    "usd": 80868,
+    "time": 1793165107
   },
   "moves": {
-    "d1": 1.0553194249904418,
-    "d7": -2.495461642302399,
-    "d30": -4.233040921508147
+    "d1": 0.08312775745802359,
+    "d7": -3.8227638221478233,
+    "d30": -3.1280278631963254
   },
   "history90d": [
-    {
-      "date": "2026-07-30",
-      "close": 63916.59794922001
-    },
     {
       "date": "2026-07-31",
       "close": 64743.33714554026
@@ -371,61 +367,85 @@
       "close": 80029.43383898729
     },
     {
-      "date": "2026-10-27",
-      "close": 80863.41460218604
+      "date": "2026-10-28",
+      "close": 80800.83208028424
+    },
+    {
+      "date": "2026-10-28",
+      "close": 80843.61860216803
     }
   ],
   "blocks": [
     {
-      "height": 973463,
-      "id": "0000000000000000000192ae7516828d86a5bac23243a5c7b7ce7808e4d1bc1b",
-      "timestamp": 1793137826,
-      "txCount": 6278
+      "height": 973506,
+      "id": "000000000000000000005671a9a7851821d042ddf2981f1ff32f9ff06c3be441",
+      "timestamp": 1793165415,
+      "txCount": 5633
     },
     {
-      "height": 973462,
-      "id": "000000000000000000012352bc7411db0b843801099884d14947bf72c7048d74",
-      "timestamp": 1793137454,
-      "txCount": 3548
+      "height": 973505,
+      "id": "00000000000000000000bc87c1c2885cdbbdf7ce915e2d7717b4c85d747eaa03",
+      "timestamp": 1793164480,
+      "txCount": 7644
     },
     {
-      "height": 973461,
-      "id": "000000000000000000004b07b96a1b8ed400d66339580f1eeb332b9cd910f0e8",
-      "timestamp": 1793136426,
-      "txCount": 6784
+      "height": 973504,
+      "id": "00000000000000000001a6f44060c080b470156bfcdb38439e6380b540316fc4",
+      "timestamp": 1793164406,
+      "txCount": 5495
     },
     {
-      "height": 973460,
-      "id": "000000000000000000018962d00c08edf096c11b3dc6b898ce6b56ea0f69caf8",
-      "timestamp": 1793136079,
-      "txCount": 7314
+      "height": 973503,
+      "id": "000000000000000000008daac1158b6a4d05eb17cb9f20a29aea39959a76a3e0",
+      "timestamp": 1793163482,
+      "txCount": 7852
     },
     {
-      "height": 973459,
-      "id": "000000000000000000019c755c6aa9b36e159d63dd2975bf43edb2325bc252c3",
-      "timestamp": 1793135964,
-      "txCount": 6373
+      "height": 973502,
+      "id": "0000000000000000000197f5a1e0514980be1dfdc800caedb3336d6461f1721b",
+      "timestamp": 1793163438,
+      "txCount": 7071
     },
     {
-      "height": 973458,
-      "id": "00000000000000000000e378aef9071951b30feb7c773f4332bf6080e7190067",
-      "timestamp": 1793135646,
-      "txCount": 7470
+      "height": 973501,
+      "id": "00000000000000000001bfb08c9bf76bc086f8bb612a42f97d6b3c05f726f364",
+      "timestamp": 1793163099,
+      "txCount": 7072
     },
     {
-      "height": 973457,
-      "id": "00000000000000000001ac6aec82b4e0e835a1137b00c2e05e4c2bed8ed61cf5",
-      "timestamp": 1793135486,
-      "txCount": 6581
+      "height": 973500,
+      "id": "0000000000000000000030ce82b26b3f34b555037ae5029c9d50d0eb295de37d",
+      "timestamp": 1793163214,
+      "txCount": 582
     },
     {
-      "height": 973456,
-      "id": "00000000000000000000bb60f11596f9b8d4fe9b64a92f431232b9d3ba006308",
-      "timestamp": 1793135143,
-      "txCount": 7037
+      "height": 973499,
+      "id": "0000000000000000000139ed2c9798ca721e9490600bf90448f7841c47dd747d",
+      "timestamp": 1793162610,
+      "txCount": 3451
     }
   ],
   "news": [
+    {
+      "title": "Bitcoin treasury Datavault AI plunges 50% after firm says it can’t access its BTC",
+      "link": "https://www.coindesk.com/markets/2026/10/28/bitcoin-treasury-datavault-ai-plunges-50-after-firm-says-it-can-t-access-its-btc",
+      "pubDate": "Wed, 28 Oct 2026 05:28:13 +0000"
+    },
+    {
+      "title": "Bithumb hacked through employee system as South Korean financial firms face cyberattacks",
+      "link": "https://www.coindesk.com/tech/2026/10/28/bithumb-hacked-through-employee-system-as-south-korean-financial-firms-face-cyberattacks",
+      "pubDate": "Wed, 28 Oct 2026 05:10:36 +0000"
+    },
+    {
+      "title": "Bitcoin nears $81,000 ahead of Fed decision as ZEC jumps 8%",
+      "link": "https://www.coindesk.com/markets/2026/10/28/bitcoin-nears-usd81-000-ahead-of-fed-decision-as-zec-jumps-8",
+      "pubDate": "Wed, 28 Oct 2026 04:15:20 +0000"
+    },
+    {
+      "title": "Coinbase says user funds are safe after third-party vendor exposes customer contact info",
+      "link": "https://www.coindesk.com/tech/2026/10/28/coinbase-says-customer-funds-are-safe-after-third-party-vendor-exposes-customer-contact-info",
+      "pubDate": "Wed, 28 Oct 2026 03:11:14 +0000"
+    },
     {
       "title": "Treasury's Bessent sees crypto as America's next tool for keeping the U.S. dollar on top",
       "link": "https://www.coindesk.com/policy/2026/10/27/treasury-s-bessent-sees-crypto-as-america-s-next-tool-for-keeping-the-u-s-dollar-on-top",
@@ -465,26 +485,6 @@
       "title": "CF Benchmarks brings Wall Street pricing infrastructure onchain, including data used by BlackRock",
       "link": "https://www.coindesk.com/markets/2026/10/27/cf-benchmarks-brings-wall-street-pricing-infrastructure-onchain-including-data-used-by-blackrock",
       "pubDate": "Tue, 27 Oct 2026 14:00:00 +0000"
-    },
-    {
-      "title": "Bitcoin miners' move into AI is creating a new market for trading computing power",
-      "link": "https://www.coindesk.com/business/2026/10/27/bitcoin-miners-move-into-ai-is-creating-a-new-market-for-trading-computing-power",
-      "pubDate": "Tue, 27 Oct 2026 13:13:50 +0000"
-    },
-    {
-      "title": "Bitcoin shows signs of weakness while Ripple's bank win fails to bolster XRP",
-      "link": "https://www.coindesk.com/daybook-us/2026/10/27/bitcoin-shows-signs-of-weakness-while-ripple-s-bank-win-fails-to-bolster-xrp",
-      "pubDate": "Tue, 27 Oct 2026 12:00:39 +0000"
-    },
-    {
-      "title": "Live updates: Bitcoin edges higher as Nasdaq surges 1.2%",
-      "link": "https://www.coindesk.com/tech/2026/10/27/live-updates-bitcoin-holds-below-usd80-000-as-ai-buildout-draws-more-capital",
-      "pubDate": "Tue, 27 Oct 2026 11:40:50 +0000"
-    },
-    {
-      "title": "Japan's top yen stablecoin falls short of its target in a disappointing first year",
-      "link": "https://www.coindesk.com/business/2026/10/27/japan-s-top-yen-stablecoin-falls-short-of-its-target-in-a-disappointing-first-year",
-      "pubDate": "Tue, 27 Oct 2026 11:37:52 +0000"
     }
   ]
 }
