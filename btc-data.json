@@ -1,13 +1,13 @@
 {
-  "fetchedAt": "2026-10-28T12:43:27.682Z",
+  "fetchedAt": "2026-10-28T20:14:01.371Z",
   "price": {
-    "usd": 80732,
-    "time": 1793190907
+    "usd": 81427,
+    "time": 1793218207
   },
   "moves": {
-    "d1": -0.08518734091234048,
-    "d7": -3.9845101757139734,
-    "d30": -3.290942591031887
+    "d1": 0.7749523162009053,
+    "d7": -3.157938736533994,
+    "d30": -2.458400415695794
   },
   "history90d": [
     {
@@ -372,60 +372,95 @@
     },
     {
       "date": "2026-10-28",
-      "close": 80696.8257909574
+      "close": 81383.08496072135
     }
   ],
   "blocks": [
     {
-      "height": 973553,
-      "id": "00000000000000000000b5b198755c01bcf30d538561c836e9e0a48b5f67defe",
-      "timestamp": 1793191332,
-      "txCount": 7627
+      "height": 973594,
+      "id": "00000000000000000001ce1f5187ab32d628c3a6212757498b662da429ecd33b",
+      "timestamp": 1793217840,
+      "txCount": 3757
     },
     {
-      "height": 973552,
-      "id": "0000000000000000000116e793b781c9eea21a913c8ee538d7b5c03ba9150e4b",
-      "timestamp": 1793191246,
-      "txCount": 7025
+      "height": 973593,
+      "id": "00000000000000000001ec933956f6ccf2281f8d6850b2f4011906421710f86e",
+      "timestamp": 1793216667,
+      "txCount": 1890
     },
     {
-      "height": 973551,
-      "id": "000000000000000000013eb27700f9189271cf78dbb3f162642cf546471bb9b3",
-      "timestamp": 1793191331,
-      "txCount": 3271
+      "height": 973592,
+      "id": "00000000000000000001ec7053f7e1e58b07d89ab6bf80211bdb7111441809eb",
+      "timestamp": 1793216210,
+      "txCount": 548
     },
     {
-      "height": 973550,
-      "id": "00000000000000000000f9e23101046340b87560c94f59829d068b2f9e568140",
-      "timestamp": 1793190192,
-      "txCount": 3100
+      "height": 973591,
+      "id": "00000000000000000001d9c119fbbaeccf74ddfe72182af1769d4989e7d752c3",
+      "timestamp": 1793216142,
+      "txCount": 2195
     },
     {
-      "height": 973549,
-      "id": "00000000000000000001686234d9d5a3711c0cd548a206d138d254accc550777",
-      "timestamp": 1793189716,
-      "txCount": 5511
+      "height": 973590,
+      "id": "00000000000000000001bb4d151169c3c056cc3aabd00b8d6d84300e59562eb8",
+      "timestamp": 1793215793,
+      "txCount": 2445
     },
     {
-      "height": 973548,
-      "id": "000000000000000000019a244990e772462d9bb2c085c0932e3e1f1aa386ff75",
-      "timestamp": 1793189492,
-      "txCount": 3748
+      "height": 973589,
+      "id": "00000000000000000001789fd3616d4beaab9abe32b064351d258d6f262a7d65",
+      "timestamp": 1793215233,
+      "txCount": 2656
     },
     {
-      "height": 973547,
-      "id": "0000000000000000000128ee0ebfbe0cd9767686ed6a373302e8523d14a41840",
-      "timestamp": 1793187671,
-      "txCount": 7795
+      "height": 973588,
+      "id": "000000000000000000014d3226ccaec01c91b082326b8549473e9b225a69da68",
+      "timestamp": 1793214671,
+      "txCount": 3275
     },
     {
-      "height": 973546,
-      "id": "000000000000000000011522ce45002ddb4ccf3063e8e2de7437261653a138fa",
-      "timestamp": 1793187726,
-      "txCount": 6783
+      "height": 973587,
+      "id": "000000000000000000006014eca5144c64320851a5c6c9fca4690fdd18a7b517",
+      "timestamp": 1793214047,
+      "txCount": 1035
     }
   ],
   "news": [
+    {
+      "title": "CFTC chief poses questions about policing AI but calls it a road to 'autonomous trading'",
+      "link": "https://www.coindesk.com/policy/2026/10/28/cftc-chief-poses-questions-about-policing-ai-but-calls-it-a-road-to-autonomous-trading",
+      "pubDate": "Wed, 28 Oct 2026 19:01:53 +0000"
+    },
+    {
+      "title": "Crypto isn’t a partisan fight, proven by data",
+      "link": "https://www.coindesk.com/opinion/2026/10/28/crypto-isn-t-a-partisan-fight-proven-by-data",
+      "pubDate": "Wed, 28 Oct 2026 18:11:31 +0000"
+    },
+    {
+      "title": "Fed leaves interest rates unchanged, as expected",
+      "link": "https://www.coindesk.com/markets/2026/10/28/fed-leaves-interest-rates-unchanged-as-expected",
+      "pubDate": "Wed, 28 Oct 2026 18:00:42 +0000"
+    },
+    {
+      "title": "Coinbase earnings: Wall Street divided on trading rebound after Robinhood crypto revenue sinks 55%",
+      "link": "https://www.coindesk.com/markets/2026/10/28/coinbase-earnings-wall-street-divided-on-trading-rebound-as-robinhood-crypto-revenue-sinks-55",
+      "pubDate": "Wed, 28 Oct 2026 17:02:57 +0000"
+    },
+    {
+      "title": "Crypto Long & Short: What happens when an AI agent pays for the wrong thing",
+      "link": "https://www.coindesk.com/coindesk-indices/2026/10/28/crypto-long-and-short-what-happens-when-an-ai-agent-pays-for-the-wrong-thing",
+      "pubDate": "Wed, 28 Oct 2026 16:01:36 +0000"
+    },
+    {
+      "title": "Wall Street backbone DTCC brings $30 trillion securities closer to blockchain with major banks",
+      "link": "https://www.coindesk.com/business/2026/10/28/wall-street-backbone-dtcc-brings-usd30-trillion-securities-closer-to-blockchain-with-major-banks",
+      "pubDate": "Wed, 28 Oct 2026 13:14:37 +0000"
+    },
+    {
+      "title": "JPMorgan, Coca-Cola, Dell also say 'no' to OKX-ICE tokenized stock trading plan",
+      "link": "https://www.coindesk.com/business/2026/10/28/jpmorgan-coca-cola-dell-also-say-no-to-okx-ice-tokenized-tock-trading-plan",
+      "pubDate": "Wed, 28 Oct 2026 12:59:36 +0000"
+    },
     {
       "title": "Dissent and more: 3 things to watch for at the Fed meeting",
       "link": "https://www.coindesk.com/daybook-us/2026/10/28/dissent-and-more-3-things-to-watch-for-at-the-fed-meeting",
@@ -442,7 +477,7 @@
       "pubDate": "Wed, 28 Oct 2026 11:32:31 +0000"
     },
     {
-      "title": "Live updates: Bitcoin edges higher ahead of Fed decision Wednesday afternoon.",
+      "title": "Live updates: Bitcoin trading just above $81,000 as Fed delivers hold on rates",
       "link": "https://www.coindesk.com/business/2026/10/28/live-updates-bitcoin-climbs-above-usd81-000-as-majors-rally-ahead-of-fed-decision",
       "pubDate": "Wed, 28 Oct 2026 11:23:34 +0000"
     },
@@ -450,41 +485,6 @@
       "title": "Google to preview crypto custody security system as AI threats grow",
       "link": "https://www.coindesk.com/tech/2026/10/28/google-to-preview-crypto-custody-security-system-as-ai-threats-grow",
       "pubDate": "Wed, 28 Oct 2026 11:00:00 +0000"
-    },
-    {
-      "title": "Nearly 90% of large businesses are embracing tokenized cash to speed up payments: DBS",
-      "link": "https://www.coindesk.com/business/2026/10/28/nearly-90-of-large-businesses-are-embracing-tokenized-cash-to-speed-up-payments-dbs",
-      "pubDate": "Wed, 28 Oct 2026 10:41:51 +0000"
-    },
-    {
-      "title": "Brazil’s largest lender becomes first bank to formalize crypto brokerage under new rules",
-      "link": "https://www.coindesk.com/policy/2026/10/28/brazil-s-largest-lender-becomes-first-bank-to-formalize-crypto-brokerage-under-new-rules",
-      "pubDate": "Wed, 28 Oct 2026 10:07:54 +0000"
-    },
-    {
-      "title": "Kospi surges 7% as SK Hynix earnings fuel AI stock rebound",
-      "link": "https://www.coindesk.com/markets/2026/10/28/kospi-surges-7-as-sk-hynix-earnings-fuel-ai-stock-rebound",
-      "pubDate": "Wed, 28 Oct 2026 09:59:25 +0000"
-    },
-    {
-      "title": "Here's how much bitcoin and the S&P 500 could rally after midterms",
-      "link": "https://www.coindesk.com/markets/2026/10/28/bitcoin-averages-over-50-in-the-12-months-after-midterms-s-and-p-500-gains-15",
-      "pubDate": "Wed, 28 Oct 2026 09:15:22 +0000"
-    },
-    {
-      "title": "Securitize adds Stellar blockchain as institutional tokenization gathers steam",
-      "link": "https://www.coindesk.com/business/2026/10/28/securitize-adds-stellar-blockchain-as-institutional-tokenization-gathers-steam",
-      "pubDate": "Wed, 28 Oct 2026 09:00:00 +0000"
-    },
-    {
-      "title": "Bitcoin treasury Datavault AI plunges 50% after firm says it can’t access its BTC",
-      "link": "https://www.coindesk.com/markets/2026/10/28/bitcoin-treasury-datavault-ai-plunges-50-after-firm-says-it-can-t-access-its-btc",
-      "pubDate": "Wed, 28 Oct 2026 05:28:13 +0000"
-    },
-    {
-      "title": "Bithumb hacked through employee system as South Korean financial firms face cyberattacks",
-      "link": "https://www.coindesk.com/tech/2026/10/28/bithumb-hacked-through-employee-system-as-south-korean-financial-firms-face-cyberattacks",
-      "pubDate": "Wed, 28 Oct 2026 05:10:36 +0000"
     }
   ]
 }
