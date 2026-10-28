@@ -1,13 +1,13 @@
 {
-  "fetchedAt": "2026-10-28T05:32:01.658Z",
+  "fetchedAt": "2026-10-28T12:43:27.682Z",
   "price": {
-    "usd": 80868,
-    "time": 1793165107
+    "usd": 80732,
+    "time": 1793190907
   },
   "moves": {
-    "d1": 0.08312775745802359,
-    "d7": -3.8227638221478233,
-    "d30": -3.1280278631963254
+    "d1": -0.08518734091234048,
+    "d7": -3.9845101757139734,
+    "d30": -3.290942591031887
   },
   "history90d": [
     {
@@ -372,60 +372,110 @@
     },
     {
       "date": "2026-10-28",
-      "close": 80843.61860216803
+      "close": 80696.8257909574
     }
   ],
   "blocks": [
     {
-      "height": 973506,
-      "id": "000000000000000000005671a9a7851821d042ddf2981f1ff32f9ff06c3be441",
-      "timestamp": 1793165415,
-      "txCount": 5633
+      "height": 973553,
+      "id": "00000000000000000000b5b198755c01bcf30d538561c836e9e0a48b5f67defe",
+      "timestamp": 1793191332,
+      "txCount": 7627
     },
     {
-      "height": 973505,
-      "id": "00000000000000000000bc87c1c2885cdbbdf7ce915e2d7717b4c85d747eaa03",
-      "timestamp": 1793164480,
-      "txCount": 7644
+      "height": 973552,
+      "id": "0000000000000000000116e793b781c9eea21a913c8ee538d7b5c03ba9150e4b",
+      "timestamp": 1793191246,
+      "txCount": 7025
     },
     {
-      "height": 973504,
-      "id": "00000000000000000001a6f44060c080b470156bfcdb38439e6380b540316fc4",
-      "timestamp": 1793164406,
-      "txCount": 5495
+      "height": 973551,
+      "id": "000000000000000000013eb27700f9189271cf78dbb3f162642cf546471bb9b3",
+      "timestamp": 1793191331,
+      "txCount": 3271
     },
     {
-      "height": 973503,
-      "id": "000000000000000000008daac1158b6a4d05eb17cb9f20a29aea39959a76a3e0",
-      "timestamp": 1793163482,
-      "txCount": 7852
+      "height": 973550,
+      "id": "00000000000000000000f9e23101046340b87560c94f59829d068b2f9e568140",
+      "timestamp": 1793190192,
+      "txCount": 3100
     },
     {
-      "height": 973502,
-      "id": "0000000000000000000197f5a1e0514980be1dfdc800caedb3336d6461f1721b",
-      "timestamp": 1793163438,
-      "txCount": 7071
+      "height": 973549,
+      "id": "00000000000000000001686234d9d5a3711c0cd548a206d138d254accc550777",
+      "timestamp": 1793189716,
+      "txCount": 5511
     },
     {
-      "height": 973501,
-      "id": "00000000000000000001bfb08c9bf76bc086f8bb612a42f97d6b3c05f726f364",
-      "timestamp": 1793163099,
-      "txCount": 7072
+      "height": 973548,
+      "id": "000000000000000000019a244990e772462d9bb2c085c0932e3e1f1aa386ff75",
+      "timestamp": 1793189492,
+      "txCount": 3748
     },
     {
-      "height": 973500,
-      "id": "0000000000000000000030ce82b26b3f34b555037ae5029c9d50d0eb295de37d",
-      "timestamp": 1793163214,
-      "txCount": 582
+      "height": 973547,
+      "id": "0000000000000000000128ee0ebfbe0cd9767686ed6a373302e8523d14a41840",
+      "timestamp": 1793187671,
+      "txCount": 7795
     },
     {
-      "height": 973499,
-      "id": "0000000000000000000139ed2c9798ca721e9490600bf90448f7841c47dd747d",
-      "timestamp": 1793162610,
-      "txCount": 3451
+      "height": 973546,
+      "id": "000000000000000000011522ce45002ddb4ccf3063e8e2de7437261653a138fa",
+      "timestamp": 1793187726,
+      "txCount": 6783
     }
   ],
   "news": [
+    {
+      "title": "Dissent and more: 3 things to watch for at the Fed meeting",
+      "link": "https://www.coindesk.com/daybook-us/2026/10/28/dissent-and-more-3-things-to-watch-for-at-the-fed-meeting",
+      "pubDate": "Wed, 28 Oct 2026 11:57:26 +0000"
+    },
+    {
+      "title": "XRP Ledger developers propose creating wallets with zero XRP for stablecoin payments",
+      "link": "https://www.coindesk.com/tech/2026/10/28/xrp-ledger-developers-propose-creating-wallets-with-zero-xrp-for-stablecoin-payments",
+      "pubDate": "Wed, 28 Oct 2026 11:52:14 +0000"
+    },
+    {
+      "title": "Bitcoin rebounds above $81,000 as Asian chip rally spills into crypto, pepe jumps 9%",
+      "link": "https://www.coindesk.com/markets/2026/10/28/bitcoin-rebounds-above-usd81-000-as-asian-chip-rally-spills-into-crypto-pepe-jumps-9",
+      "pubDate": "Wed, 28 Oct 2026 11:32:31 +0000"
+    },
+    {
+      "title": "Live updates: Bitcoin edges higher ahead of Fed decision Wednesday afternoon.",
+      "link": "https://www.coindesk.com/business/2026/10/28/live-updates-bitcoin-climbs-above-usd81-000-as-majors-rally-ahead-of-fed-decision",
+      "pubDate": "Wed, 28 Oct 2026 11:23:34 +0000"
+    },
+    {
+      "title": "Google to preview crypto custody security system as AI threats grow",
+      "link": "https://www.coindesk.com/tech/2026/10/28/google-to-preview-crypto-custody-security-system-as-ai-threats-grow",
+      "pubDate": "Wed, 28 Oct 2026 11:00:00 +0000"
+    },
+    {
+      "title": "Nearly 90% of large businesses are embracing tokenized cash to speed up payments: DBS",
+      "link": "https://www.coindesk.com/business/2026/10/28/nearly-90-of-large-businesses-are-embracing-tokenized-cash-to-speed-up-payments-dbs",
+      "pubDate": "Wed, 28 Oct 2026 10:41:51 +0000"
+    },
+    {
+      "title": "Brazil’s largest lender becomes first bank to formalize crypto brokerage under new rules",
+      "link": "https://www.coindesk.com/policy/2026/10/28/brazil-s-largest-lender-becomes-first-bank-to-formalize-crypto-brokerage-under-new-rules",
+      "pubDate": "Wed, 28 Oct 2026 10:07:54 +0000"
+    },
+    {
+      "title": "Kospi surges 7% as SK Hynix earnings fuel AI stock rebound",
+      "link": "https://www.coindesk.com/markets/2026/10/28/kospi-surges-7-as-sk-hynix-earnings-fuel-ai-stock-rebound",
+      "pubDate": "Wed, 28 Oct 2026 09:59:25 +0000"
+    },
+    {
+      "title": "Here's how much bitcoin and the S&P 500 could rally after midterms",
+      "link": "https://www.coindesk.com/markets/2026/10/28/bitcoin-averages-over-50-in-the-12-months-after-midterms-s-and-p-500-gains-15",
+      "pubDate": "Wed, 28 Oct 2026 09:15:22 +0000"
+    },
+    {
+      "title": "Securitize adds Stellar blockchain as institutional tokenization gathers steam",
+      "link": "https://www.coindesk.com/business/2026/10/28/securitize-adds-stellar-blockchain-as-institutional-tokenization-gathers-steam",
+      "pubDate": "Wed, 28 Oct 2026 09:00:00 +0000"
+    },
     {
       "title": "Bitcoin treasury Datavault AI plunges 50% after firm says it can’t access its BTC",
       "link": "https://www.coindesk.com/markets/2026/10/28/bitcoin-treasury-datavault-ai-plunges-50-after-firm-says-it-can-t-access-its-btc",
@@ -435,56 +485,6 @@
       "title": "Bithumb hacked through employee system as South Korean financial firms face cyberattacks",
       "link": "https://www.coindesk.com/tech/2026/10/28/bithumb-hacked-through-employee-system-as-south-korean-financial-firms-face-cyberattacks",
       "pubDate": "Wed, 28 Oct 2026 05:10:36 +0000"
-    },
-    {
-      "title": "Bitcoin nears $81,000 ahead of Fed decision as ZEC jumps 8%",
-      "link": "https://www.coindesk.com/markets/2026/10/28/bitcoin-nears-usd81-000-ahead-of-fed-decision-as-zec-jumps-8",
-      "pubDate": "Wed, 28 Oct 2026 04:15:20 +0000"
-    },
-    {
-      "title": "Coinbase says user funds are safe after third-party vendor exposes customer contact info",
-      "link": "https://www.coindesk.com/tech/2026/10/28/coinbase-says-customer-funds-are-safe-after-third-party-vendor-exposes-customer-contact-info",
-      "pubDate": "Wed, 28 Oct 2026 03:11:14 +0000"
-    },
-    {
-      "title": "Treasury's Bessent sees crypto as America's next tool for keeping the U.S. dollar on top",
-      "link": "https://www.coindesk.com/policy/2026/10/27/treasury-s-bessent-sees-crypto-as-america-s-next-tool-for-keeping-the-u-s-dollar-on-top",
-      "pubDate": "Tue, 27 Oct 2026 20:41:33 +0000"
-    },
-    {
-      "title": "Robinhood's crypto revenue fell 55% from last year, but topped Street forecasts",
-      "link": "https://www.coindesk.com/markets/2026/10/27/robinhood-s-crypto-revenue-plunges-55-even-as-trading-platform-posts-record-sales",
-      "pubDate": "Tue, 27 Oct 2026 20:32:21 +0000"
-    },
-    {
-      "title": "U.S. agency hits Utah with lawsuit to shield Kalshi's ability to offer betting there",
-      "link": "https://www.coindesk.com/policy/2026/10/27/u-s-agency-hits-utah-with-lawsuit-to-shield-kalshi-s-ability-to-offer-betting-there",
-      "pubDate": "Tue, 27 Oct 2026 19:07:59 +0000"
-    },
-    {
-      "title": "Intel, Oracle, IBM join growing list of firms objecting to OKX–ICE tokenized stock plans",
-      "link": "https://www.coindesk.com/business/2026/10/27/intel-oracle-ibm-join-growing-list-of-firms-objecting-to-okx-ice-tokenized-stock-plans",
-      "pubDate": "Tue, 27 Oct 2026 18:13:02 +0000"
-    },
-    {
-      "title": "Brazilian companies turned to stablecoins on election day to dodge a currency crash",
-      "link": "https://www.coindesk.com/business/2026/10/27/brazilian-companies-turned-to-stablecoins-on-election-day-to-dodge-a-currency-crash",
-      "pubDate": "Tue, 27 Oct 2026 16:59:07 +0000"
-    },
-    {
-      "title": "Robinhood taps Ripple’s $2.5 billion RLUSD stablecoin despite backing rival USDG",
-      "link": "https://www.coindesk.com/business/2026/10/27/ripple-s-rlusd-stablecoin-is-coming-to-robinhood-s-28-6-million-customer-platform",
-      "pubDate": "Tue, 27 Oct 2026 16:35:29 +0000"
-    },
-    {
-      "title": "Nasdaq-100 comes onchain as Janus Henderson and Centrifuge launch first licensed fund",
-      "link": "https://www.coindesk.com/business/2026/10/27/nasdaq-100-comes-onchain-as-janus-henderson-and-centrifuge-launch-first-licensed-fund",
-      "pubDate": "Tue, 27 Oct 2026 14:21:10 +0000"
-    },
-    {
-      "title": "CF Benchmarks brings Wall Street pricing infrastructure onchain, including data used by BlackRock",
-      "link": "https://www.coindesk.com/markets/2026/10/27/cf-benchmarks-brings-wall-street-pricing-infrastructure-onchain-including-data-used-by-blackrock",
-      "pubDate": "Tue, 27 Oct 2026 14:00:00 +0000"
     }
   ]
 }
