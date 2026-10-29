@@ -1,13 +1,13 @@
 {
-  "fetchedAt": "2026-10-29T00:51:43.981Z",
+  "fetchedAt": "2026-10-29T09:51:16.318Z",
   "price": {
-    "usd": 81081,
-    "time": 1793235007
+    "usd": 80111,
+    "time": 1793267107
   },
   "moves": {
-    "d1": -0.2379275701946737,
-    "d7": -0.3039604928283257,
-    "d30": -3.059658646631569
+    "d1": -1.4314156901847008,
+    "d7": -1.496658638163928,
+    "d30": -4.2193894234198055
   },
   "history90d": [
     {
@@ -372,60 +372,95 @@
     },
     {
       "date": "2026-10-29",
-      "close": 81082.413307985
+      "close": 80104.02696594653
     }
   ],
   "blocks": [
     {
-      "height": 973618,
-      "id": "000000000000000000009a0ea8ac9c99f36fdbd751899805cf944b96f6c26b84",
-      "timestamp": 1793234950,
-      "txCount": 3321
+      "height": 973673,
+      "id": "000000000000000000005222c32d599ae3d2d552d8e7826b8182cfb28a681705",
+      "timestamp": 1793266982,
+      "txCount": 675
     },
     {
-      "height": 973617,
-      "id": "00000000000000000000c825458f1b71fe4fcf76bd8cf32903ab42f1f141b262",
-      "timestamp": 1793233975,
-      "txCount": 3035
+      "height": 973672,
+      "id": "00000000000000000000c24f403bb78eef191909211bca253b02e9d89f852161",
+      "timestamp": 1793266663,
+      "txCount": 1467
     },
     {
-      "height": 973616,
-      "id": "00000000000000000001210b0e076ec139a2b9f4711ce3c00468f7a6492f1f02",
-      "timestamp": 1793233759,
-      "txCount": 1450
+      "height": 973671,
+      "id": "0000000000000000000081e7e39d0aa0655d8d15b45a82dbfd6dbb2a8c99d8d7",
+      "timestamp": 1793266150,
+      "txCount": 7626
     },
     {
-      "height": 973615,
-      "id": "00000000000000000001abe489d210b2e2f3df6ec033218a07acec781bf93dfb",
-      "timestamp": 1793232442,
-      "txCount": 2053
+      "height": 973670,
+      "id": "00000000000000000001af5efa0dc9ef69ebe670ed61193f7a08b0a9e153ae3f",
+      "timestamp": 1793266045,
+      "txCount": 2914
     },
     {
-      "height": 973614,
-      "id": "0000000000000000000007a92b5b1864c741edf2e6aa04513869917459291b4a",
-      "timestamp": 1793231494,
-      "txCount": 3667
+      "height": 973669,
+      "id": "000000000000000000014f46a324ce16225f2799e64ce2715f664abfbb50dc88",
+      "timestamp": 1793265375,
+      "txCount": 3849
     },
     {
-      "height": 973613,
-      "id": "00000000000000000000c4e7028fc84127dca0a869eaad13cf39a2648bbec63a",
-      "timestamp": 1793231508,
-      "txCount": 6460
+      "height": 973668,
+      "id": "000000000000000000015daa673e066f3331e4424ffdbf6f020d4767169e2a7f",
+      "timestamp": 1793264756,
+      "txCount": 2906
     },
     {
-      "height": 973612,
-      "id": "000000000000000000004665f231f91eb187a8d67d5eeda8ae7586d37338f959",
-      "timestamp": 1793231123,
-      "txCount": 6946
+      "height": 973667,
+      "id": "0000000000000000000073c312a397371ed3bae8bfa61a303e21206ec1a5c189",
+      "timestamp": 1793264417,
+      "txCount": 3255
     },
     {
-      "height": 973611,
-      "id": "000000000000000000005e3a6105e4db9bcb5b76b199296089538ec622e7cd51",
-      "timestamp": 1793231024,
-      "txCount": 7689
+      "height": 973666,
+      "id": "000000000000000000003f1c535de1152535d5d57e9b2ea187cdee4f77ee362e",
+      "timestamp": 1793262896,
+      "txCount": 1165
     }
   ],
   "news": [
+    {
+      "title": "Former Swift CEO joins stablecoin firm OpenTrade as chairman",
+      "link": "https://www.coindesk.com/business/2026/10/29/former-swift-ceo-joins-stablecoin-firm-opentrade-as-chairman-after-a-usd17-million-raise",
+      "pubDate": "Thu, 29 Oct 2026 09:00:00 +0000"
+    },
+    {
+      "title": "The chart bitcoin traders should be paying attention to",
+      "link": "https://www.coindesk.com/markets/2026/10/29/the-chart-bitcoin-traders-should-be-paying-attention-to",
+      "pubDate": "Thu, 29 Oct 2026 07:44:44 +0000"
+    },
+    {
+      "title": "AI found a way to crash bitcoin nodes on Windows and Macs. It's now public",
+      "link": "https://www.coindesk.com/tech/2026/10/29/ai-found-a-way-to-crash-bitcoin-nodes-on-windows-and-macs-it-s-now-public",
+      "pubDate": "Thu, 29 Oct 2026 05:54:39 +0000"
+    },
+    {
+      "title": "Security failure at Indian certificate firm bites Ethereum as developers rush out fixes",
+      "link": "https://www.coindesk.com/tech/2026/10/29/ethereum-clients-patch-flaw-that-could-let-attackers-redirect-eth-rewards",
+      "pubDate": "Thu, 29 Oct 2026 05:30:34 +0000"
+    },
+    {
+      "title": "Utah charges predictions platform Kalshi with illegal gambling",
+      "link": "https://www.coindesk.com/policy/2026/10/29/utah-charges-predictions-platform-kalshi-with-illegal-gambling",
+      "pubDate": "Thu, 29 Oct 2026 05:02:37 +0000"
+    },
+    {
+      "title": "Bitcoin dips below $80,000 as Samsung-led tech jitters and a hawkish Fed weigh on crypto",
+      "link": "https://www.coindesk.com/markets/2026/10/29/bitcoin-dips-below-usd80-000-as-samsung-led-risk-aversion-in-tech-and-a-hawkish-fed-weigh-on-crypto",
+      "pubDate": "Thu, 29 Oct 2026 03:32:43 +0000"
+    },
+    {
+      "title": "Mystery Wall Street Journal ad sparks new fight over tokenized stocks",
+      "link": "https://www.coindesk.com/policy/2026/10/28/mystery-wall-street-journal-ad-sparks-new-fight-over-tokenized-stocks",
+      "pubDate": "Thu, 29 Oct 2026 03:21:24 +0000"
+    },
     {
       "title": "Bitcoin-backed mortgages are coming to Canada, but borrowers are still unaware of the cost",
       "link": "https://www.coindesk.com/markets/2026/10/28/bitcoin-backed-mortgages-are-coming-to-canada-but-borrowers-are-still-unaware-of-the-cost",
@@ -450,41 +485,6 @@
       "title": "Coinbase earnings: Wall Street divided on trading rebound after Robinhood crypto revenue sinks 55%",
       "link": "https://www.coindesk.com/markets/2026/10/28/coinbase-earnings-wall-street-divided-on-trading-rebound-as-robinhood-crypto-revenue-sinks-55",
       "pubDate": "Wed, 28 Oct 2026 17:02:57 +0000"
-    },
-    {
-      "title": "Crypto Long & Short: What happens when an AI agent pays for the wrong thing",
-      "link": "https://www.coindesk.com/coindesk-indices/2026/10/28/crypto-long-and-short-what-happens-when-an-ai-agent-pays-for-the-wrong-thing",
-      "pubDate": "Wed, 28 Oct 2026 16:01:36 +0000"
-    },
-    {
-      "title": "Wall Street backbone DTCC brings $30 trillion securities closer to blockchain with major banks",
-      "link": "https://www.coindesk.com/business/2026/10/28/wall-street-backbone-dtcc-brings-usd30-trillion-securities-closer-to-blockchain-with-major-banks",
-      "pubDate": "Wed, 28 Oct 2026 13:14:37 +0000"
-    },
-    {
-      "title": "JPMorgan, Coca-Cola, Dell also say 'no' to OKX-ICE tokenized stock trading plan",
-      "link": "https://www.coindesk.com/business/2026/10/28/jpmorgan-coca-cola-dell-also-say-no-to-okx-ice-tokenized-tock-trading-plan",
-      "pubDate": "Wed, 28 Oct 2026 12:59:36 +0000"
-    },
-    {
-      "title": "Dissent and more: 3 things to watch for at the Fed meeting",
-      "link": "https://www.coindesk.com/daybook-us/2026/10/28/dissent-and-more-3-things-to-watch-for-at-the-fed-meeting",
-      "pubDate": "Wed, 28 Oct 2026 11:57:26 +0000"
-    },
-    {
-      "title": "XRP Ledger developers propose creating wallets with zero XRP for stablecoin payments",
-      "link": "https://www.coindesk.com/tech/2026/10/28/xrp-ledger-developers-propose-creating-wallets-with-zero-xrp-for-stablecoin-payments",
-      "pubDate": "Wed, 28 Oct 2026 11:52:14 +0000"
-    },
-    {
-      "title": "Bitcoin rebounds above $81,000 as Asian chip rally spills into crypto, pepe jumps 9%",
-      "link": "https://www.coindesk.com/markets/2026/10/28/bitcoin-rebounds-above-usd81-000-as-asian-chip-rally-spills-into-crypto-pepe-jumps-9",
-      "pubDate": "Wed, 28 Oct 2026 11:32:31 +0000"
-    },
-    {
-      "title": "Live updates: Bitcoin trading just above $81,000 as Fed delivers hold on rates",
-      "link": "https://www.coindesk.com/business/2026/10/28/live-updates-bitcoin-climbs-above-usd81-000-as-majors-rally-ahead-of-fed-decision",
-      "pubDate": "Wed, 28 Oct 2026 11:23:34 +0000"
     }
   ]
 }
