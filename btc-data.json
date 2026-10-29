@@ -1,19 +1,15 @@
 {
-  "fetchedAt": "2026-10-28T20:14:01.371Z",
+  "fetchedAt": "2026-10-29T00:51:43.981Z",
   "price": {
-    "usd": 81427,
-    "time": 1793218207
+    "usd": 81081,
+    "time": 1793235007
   },
   "moves": {
-    "d1": 0.7749523162009053,
-    "d7": -3.157938736533994,
-    "d30": -2.458400415695794
+    "d1": -0.2379275701946737,
+    "d7": -0.3039604928283257,
+    "d30": -3.059658646631569
   },
   "history90d": [
-    {
-      "date": "2026-07-31",
-      "close": 64743.33714554026
-    },
     {
       "date": "2026-08-01",
       "close": 62820.08613814001
@@ -371,61 +367,70 @@
       "close": 80800.83208028424
     },
     {
-      "date": "2026-10-28",
-      "close": 81383.08496072135
+      "date": "2026-10-29",
+      "close": 81274.37414359077
+    },
+    {
+      "date": "2026-10-29",
+      "close": 81082.413307985
     }
   ],
   "blocks": [
     {
-      "height": 973594,
-      "id": "00000000000000000001ce1f5187ab32d628c3a6212757498b662da429ecd33b",
-      "timestamp": 1793217840,
-      "txCount": 3757
+      "height": 973618,
+      "id": "000000000000000000009a0ea8ac9c99f36fdbd751899805cf944b96f6c26b84",
+      "timestamp": 1793234950,
+      "txCount": 3321
     },
     {
-      "height": 973593,
-      "id": "00000000000000000001ec933956f6ccf2281f8d6850b2f4011906421710f86e",
-      "timestamp": 1793216667,
-      "txCount": 1890
+      "height": 973617,
+      "id": "00000000000000000000c825458f1b71fe4fcf76bd8cf32903ab42f1f141b262",
+      "timestamp": 1793233975,
+      "txCount": 3035
     },
     {
-      "height": 973592,
-      "id": "00000000000000000001ec7053f7e1e58b07d89ab6bf80211bdb7111441809eb",
-      "timestamp": 1793216210,
-      "txCount": 548
+      "height": 973616,
+      "id": "00000000000000000001210b0e076ec139a2b9f4711ce3c00468f7a6492f1f02",
+      "timestamp": 1793233759,
+      "txCount": 1450
     },
     {
-      "height": 973591,
-      "id": "00000000000000000001d9c119fbbaeccf74ddfe72182af1769d4989e7d752c3",
-      "timestamp": 1793216142,
-      "txCount": 2195
+      "height": 973615,
+      "id": "00000000000000000001abe489d210b2e2f3df6ec033218a07acec781bf93dfb",
+      "timestamp": 1793232442,
+      "txCount": 2053
     },
     {
-      "height": 973590,
-      "id": "00000000000000000001bb4d151169c3c056cc3aabd00b8d6d84300e59562eb8",
-      "timestamp": 1793215793,
-      "txCount": 2445
+      "height": 973614,
+      "id": "0000000000000000000007a92b5b1864c741edf2e6aa04513869917459291b4a",
+      "timestamp": 1793231494,
+      "txCount": 3667
     },
     {
-      "height": 973589,
-      "id": "00000000000000000001789fd3616d4beaab9abe32b064351d258d6f262a7d65",
-      "timestamp": 1793215233,
-      "txCount": 2656
+      "height": 973613,
+      "id": "00000000000000000000c4e7028fc84127dca0a869eaad13cf39a2648bbec63a",
+      "timestamp": 1793231508,
+      "txCount": 6460
     },
     {
-      "height": 973588,
-      "id": "000000000000000000014d3226ccaec01c91b082326b8549473e9b225a69da68",
-      "timestamp": 1793214671,
-      "txCount": 3275
+      "height": 973612,
+      "id": "000000000000000000004665f231f91eb187a8d67d5eeda8ae7586d37338f959",
+      "timestamp": 1793231123,
+      "txCount": 6946
     },
     {
-      "height": 973587,
-      "id": "000000000000000000006014eca5144c64320851a5c6c9fca4690fdd18a7b517",
-      "timestamp": 1793214047,
-      "txCount": 1035
+      "height": 973611,
+      "id": "000000000000000000005e3a6105e4db9bcb5b76b199296089538ec622e7cd51",
+      "timestamp": 1793231024,
+      "txCount": 7689
     }
   ],
   "news": [
+    {
+      "title": "Bitcoin-backed mortgages are coming to Canada, but borrowers are still unaware of the cost",
+      "link": "https://www.coindesk.com/markets/2026/10/28/bitcoin-backed-mortgages-are-coming-to-canada-but-borrowers-are-still-unaware-of-the-cost",
+      "pubDate": "Wed, 28 Oct 2026 21:13:44 +0000"
+    },
     {
       "title": "CFTC chief poses questions about policing AI but calls it a road to 'autonomous trading'",
       "link": "https://www.coindesk.com/policy/2026/10/28/cftc-chief-poses-questions-about-policing-ai-but-calls-it-a-road-to-autonomous-trading",
@@ -480,11 +485,6 @@
       "title": "Live updates: Bitcoin trading just above $81,000 as Fed delivers hold on rates",
       "link": "https://www.coindesk.com/business/2026/10/28/live-updates-bitcoin-climbs-above-usd81-000-as-majors-rally-ahead-of-fed-decision",
       "pubDate": "Wed, 28 Oct 2026 11:23:34 +0000"
-    },
-    {
-      "title": "Google to preview crypto custody security system as AI threats grow",
-      "link": "https://www.coindesk.com/tech/2026/10/28/google-to-preview-crypto-custody-security-system-as-ai-threats-grow",
-      "pubDate": "Wed, 28 Oct 2026 11:00:00 +0000"
     }
   ]
 }
