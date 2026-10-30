@@ -1,13 +1,13 @@
 {
-  "fetchedAt": "2026-10-30T09:55:15.682Z",
+  "fetchedAt": "2026-10-30T17:58:28.942Z",
   "price": {
-    "usd": 77567,
-    "time": 1793353806
+    "usd": 77028,
+    "time": 1793382906
   },
   "moves": {
-    "d1": -0.34920183123662296,
-    "d7": -4.359078092628876,
-    "d30": -7.190012590233685
+    "d1": -1.0416584199014367,
+    "d7": -5.023670727487428,
+    "d30": -7.834933538753852
   },
   "history90d": [
     {
@@ -372,67 +372,97 @@
     },
     {
       "date": "2026-10-30",
-      "close": 77572.45229519012
+      "close": 77060.9679321733
     }
   ],
   "blocks": [
     {
-      "height": 973803,
-      "id": "00000000000000000000fcfcfb2e5151a3d0fa9e4579407953df3115083a569a",
-      "timestamp": 1793354184,
-      "txCount": 5155
+      "height": 973855,
+      "id": "000000000000000000011ba3308326024406e20980f35d133fcd26beb62f2020",
+      "timestamp": 1793383517,
+      "txCount": 1020
     },
     {
-      "height": 973802,
-      "id": "00000000000000000000cdb890e54b2755d9401387cd255057d453e64ec1e9da",
-      "timestamp": 1793353978,
-      "txCount": 3423
+      "height": 973854,
+      "id": "00000000000000000000d91249c36a18287f68480ed0205cc720aa8aa14accc9",
+      "timestamp": 1793383091,
+      "txCount": 3569
     },
     {
-      "height": 973801,
-      "id": "000000000000000000001f1baa031cc268eb0a7f1f15b499419e593f5a3a7660",
-      "timestamp": 1793352770,
-      "txCount": 6003
+      "height": 973853,
+      "id": "0000000000000000000157a2b07e6e7e20595cc4230481a4f850dbb8e775b18a",
+      "timestamp": 1793381920,
+      "txCount": 2718
     },
     {
-      "height": 973800,
-      "id": "00000000000000000000c23b6ed38e67f93611fa4809c3302d3dac0c13e98a55",
-      "timestamp": 1793352647,
-      "txCount": 5066
+      "height": 973852,
+      "id": "00000000000000000001427355c75ef783631269a9dd0c657f4fbb40e83c2981",
+      "timestamp": 1793381431,
+      "txCount": 2894
     },
     {
-      "height": 973799,
-      "id": "00000000000000000001112e9bc11c232f27103cee3e88d1e1c2ca1b4065a26d",
-      "timestamp": 1793352462,
-      "txCount": 2685
+      "height": 973851,
+      "id": "000000000000000000008be320760929071ba980cfcec644e5502289b57bc658",
+      "timestamp": 1793380786,
+      "txCount": 3883
     },
     {
-      "height": 973798,
-      "id": "0000000000000000000075fb336902fbdb44a53fbf7170662c14a959d59b51b4",
-      "timestamp": 1793351600,
-      "txCount": 2298
+      "height": 973850,
+      "id": "000000000000000000006b874f57e0d9639500abeed5af0cb39dd42b81a2a635",
+      "timestamp": 1793380308,
+      "txCount": 3694
     },
     {
-      "height": 973797,
-      "id": "00000000000000000001a0fa7dc9b64c44789267780e80d298106274410aea49",
-      "timestamp": 1793351278,
-      "txCount": 2690
+      "height": 973849,
+      "id": "0000000000000000000183b62751c30c05e5142d3c92ef96df5a74a6de15fd60",
+      "timestamp": 1793378366,
+      "txCount": 1196
     },
     {
-      "height": 973796,
-      "id": "00000000000000000001dc0c7cec5b2d5d8e6bd9d0220f177a092d63f0eafcfc",
-      "timestamp": 1793350344,
-      "txCount": 2490
+      "height": 973848,
+      "id": "000000000000000000003472792a494359bc23056780d7acef119120c4fac341",
+      "timestamp": 1793378116,
+      "txCount": 2126
     }
   ],
   "news": [
     {
-      "title": "Strategy CFO resigns as company posts record quarterly profit. MSTR stock falls 6%",
+      "title": "Binance uncovers wider breach in $6.3 billion exploit, targets Sunday withdrawal restart",
+      "link": "https://www.coindesk.com/tech/2026/10/30/binance-uncovers-wider-breach-in-usd6-3-billion-exploit-targets-sunday-withdrawal-restart",
+      "pubDate": "Fri, 30 Oct 2026 16:31:17 +0000"
+    },
+    {
+      "title": "Wall Street analysts urge investors to buy crypto stocks after $6.3 billion Binance hack",
+      "link": "https://www.coindesk.com/markets/2026/10/30/wall-street-analysts-urge-investors-to-buy-crypto-stocks-on-weakness-after-usd6-3-billion-binance-hack",
+      "pubDate": "Fri, 30 Oct 2026 14:13:34 +0000"
+    },
+    {
+      "title": "Binance arranges $6.34 billion to cover losses from record crypto hack",
+      "link": "https://www.coindesk.com/business/2026/10/30/binance-arranges-usd6-34-billion-to-cover-losses-from-record-crypto-hack",
+      "pubDate": "Fri, 30 Oct 2026 12:13:02 +0000"
+    },
+    {
+      "title": "Here's how big bitcoin traders responded after the Binance hack hit",
+      "link": "https://www.coindesk.com/daybook-us/2026/10/30/here-s-how-big-bitcoin-traders-responded-after-the-binance-hack-hit",
+      "pubDate": "Fri, 30 Oct 2026 11:51:26 +0000"
+    },
+    {
+      "title": "Here’s how an Ethereum upgrade helped drain part of Binance’s $6 billion loss",
+      "link": "https://www.coindesk.com/tech/2026/10/30/here-s-how-one-ethereum-permission-let-an-attacker-drain-usd2-5-billion-from-binance",
+      "pubDate": "Fri, 30 Oct 2026 11:35:16 +0000"
+    },
+    {
+      "title": "Crypto liquidations jump to $1.57 billion as Binance hack sends bitcoin, ether lower",
+      "link": "https://www.coindesk.com/markets/2026/10/30/crypto-liquidations-jump-to-usd1-57-billion-as-binance-hack-sends-bitcoin-ether-lower",
+      "pubDate": "Fri, 30 Oct 2026 11:09:24 +0000"
+    },
+    {
+      "title": "Strategy CFO Andrew Kang resigns as company posts record operating profit",
       "link": "https://www.coindesk.com/markets/2026/10/30/strategy-cfo-resigns-as-company-posts-record-quarterly-profit-mstr-stock-falls-6",
       "pubDate": "Fri, 30 Oct 2026 09:41:07 +0000"
     },
     {
-      "title": "Live updates: Binance finds more breaches in $6.3 billion hack; AI spending fears hit tech",
+      "title": "Live updates: Bitcoin falls to $77,000 as Binance exploit combines with tech woes",
       "link": "https://www.coindesk.com/markets/2026/10/30/live-news-binance-hack-rattles-crypto-as-intel-plunges-and-ai-spending-fears-hit-tech",
       "pubDate": "Fri, 30 Oct 2026 08:36:52 +0000"
     },
@@ -455,36 +485,6 @@
       "title": "Binance hack bites India's largest crypto exchange as it curbs futures trading",
       "link": "https://www.coindesk.com/markets/2026/10/30/coindcx-halts-new-crypto-futures-bets-as-binance-incident-disrupts-liquidity",
       "pubDate": "Fri, 30 Oct 2026 05:43:07 +0000"
-    },
-    {
-      "title": "Binance hacker splits $1.4 billion of bitcoin into 19 wallets that no one can freeze",
-      "link": "https://www.coindesk.com/markets/2026/10/30/binance-hacker-splits-usd1-4-billion-of-bitcoin-into-19-wallets-that-no-one-can-freeze",
-      "pubDate": "Fri, 30 Oct 2026 04:50:42 +0000"
-    },
-    {
-      "title": "Standard Chartered sees more pain after $6 billion Binance hack sends bitcoin lower",
-      "link": "https://www.coindesk.com/markets/2026/10/30/usd6-billion-binance-hack-sends-bitcoin-ether-tumbling-standard-chartered-sees-more-losses-ahead",
-      "pubDate": "Fri, 30 Oct 2026 04:00:43 +0000"
-    },
-    {
-      "title": "Institutional crypto investors rush to pull funds from exchanges after Binance hack",
-      "link": "https://www.coindesk.com/markets/2026/10/30/institutional-crypto-investors-rush-to-pull-funds-from-exchanges-after-binance-hack",
-      "pubDate": "Fri, 30 Oct 2026 03:56:40 +0000"
-    },
-    {
-      "title": "Crypto's longtime foe, North Korea's Lazarus Group, likely behind Binance hack: blockchain sleuths",
-      "link": "https://www.coindesk.com/policy/2026/10/29/crypto-s-longtime-foe-north-korea-s-lazarus-group-likely-behind-binance-hack-blockchain-sleuths",
-      "pubDate": "Fri, 30 Oct 2026 03:36:11 +0000"
-    },
-    {
-      "title": "Binance hack drained wallets backing customer assets, reserve data shows",
-      "link": "https://www.coindesk.com/business/2026/10/30/binance-hack-drained-wallets-backing-customer-assets-reserve-data-shows",
-      "pubDate": "Fri, 30 Oct 2026 00:17:10 +0000"
-    },
-    {
-      "title": "Binance loses over $6 billion in 'biggest crypto hack in history'",
-      "link": "https://www.coindesk.com/business/2026/10/29/potential-multi-billion-binance-hack-hitting-crypto-markets",
-      "pubDate": "Thu, 29 Oct 2026 21:12:45 +0000"
     }
   ]
 }
