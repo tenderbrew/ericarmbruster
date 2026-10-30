@@ -1,13 +1,13 @@
 {
-  "fetchedAt": "2026-10-30T00:53:40.138Z",
+  "fetchedAt": "2026-10-30T09:55:15.682Z",
   "price": {
-    "usd": 76867,
-    "time": 1793321406
+    "usd": 77567,
+    "time": 1793353806
   },
   "moves": {
-    "d1": -1.248496102229879,
-    "d7": -5.22218541062699,
-    "d30": -8.027572263636495
+    "d1": -0.34920183123662296,
+    "d7": -4.359078092628876,
+    "d30": -7.190012590233685
   },
   "history90d": [
     {
@@ -372,119 +372,119 @@
     },
     {
       "date": "2026-10-30",
-      "close": 76990.45497621878
+      "close": 77572.45229519012
     }
   ],
   "blocks": [
     {
-      "height": 973755,
-      "id": "00000000000000000000893d18d09349e933188a52b3a96cf5e7d8208123655e",
-      "timestamp": 1793320242,
-      "txCount": 2659
+      "height": 973803,
+      "id": "00000000000000000000fcfcfb2e5151a3d0fa9e4579407953df3115083a569a",
+      "timestamp": 1793354184,
+      "txCount": 5155
     },
     {
-      "height": 973754,
-      "id": "00000000000000000001a5fdddf54034adeb3779f9b2ec282779cfd4c776b137",
-      "timestamp": 1793319721,
-      "txCount": 3384
+      "height": 973802,
+      "id": "00000000000000000000cdb890e54b2755d9401387cd255057d453e64ec1e9da",
+      "timestamp": 1793353978,
+      "txCount": 3423
     },
     {
-      "height": 973753,
-      "id": "0000000000000000000139e0541899d8fbe85afa516453e950672170d650c78b",
-      "timestamp": 1793318884,
-      "txCount": 2840
+      "height": 973801,
+      "id": "000000000000000000001f1baa031cc268eb0a7f1f15b499419e593f5a3a7660",
+      "timestamp": 1793352770,
+      "txCount": 6003
     },
     {
-      "height": 973752,
-      "id": "0000000000000000000025ee5cafa41a98a882dc0d66189b5e4c6585f01ac71e",
-      "timestamp": 1793318789,
-      "txCount": 3530
+      "height": 973800,
+      "id": "00000000000000000000c23b6ed38e67f93611fa4809c3302d3dac0c13e98a55",
+      "timestamp": 1793352647,
+      "txCount": 5066
     },
     {
-      "height": 973751,
-      "id": "000000000000000000017603d4cfdfb3469e913c7c2e02bf0a3fbfad235bda9b",
-      "timestamp": 1793318111,
-      "txCount": 3522
+      "height": 973799,
+      "id": "00000000000000000001112e9bc11c232f27103cee3e88d1e1c2ca1b4065a26d",
+      "timestamp": 1793352462,
+      "txCount": 2685
     },
     {
-      "height": 973750,
-      "id": "00000000000000000000f999e7cef00c986f4b8fe22ddd7b41db971a314c9443",
-      "timestamp": 1793315810,
-      "txCount": 3568
+      "height": 973798,
+      "id": "0000000000000000000075fb336902fbdb44a53fbf7170662c14a959d59b51b4",
+      "timestamp": 1793351600,
+      "txCount": 2298
     },
     {
-      "height": 973749,
-      "id": "000000000000000000016bc2565d8b263bc580cc0cb1a00cc22b9c4c745bba7d",
-      "timestamp": 1793314207,
-      "txCount": 3812
+      "height": 973797,
+      "id": "00000000000000000001a0fa7dc9b64c44789267780e80d298106274410aea49",
+      "timestamp": 1793351278,
+      "txCount": 2690
     },
     {
-      "height": 973748,
-      "id": "00000000000000000000932ba69480989ca33bbbeae4fdb166f96e0851bcdb24",
-      "timestamp": 1793312612,
-      "txCount": 3915
+      "height": 973796,
+      "id": "00000000000000000001dc0c7cec5b2d5d8e6bd9d0220f177a092d63f0eafcfc",
+      "timestamp": 1793350344,
+      "txCount": 2490
     }
   ],
   "news": [
+    {
+      "title": "Strategy CFO resigns as company posts record quarterly profit. MSTR stock falls 6%",
+      "link": "https://www.coindesk.com/markets/2026/10/30/strategy-cfo-resigns-as-company-posts-record-quarterly-profit-mstr-stock-falls-6",
+      "pubDate": "Fri, 30 Oct 2026 09:41:07 +0000"
+    },
+    {
+      "title": "Live updates: Binance finds more breaches in $6.3 billion hack; AI spending fears hit tech",
+      "link": "https://www.coindesk.com/markets/2026/10/30/live-news-binance-hack-rattles-crypto-as-intel-plunges-and-ai-spending-fears-hit-tech",
+      "pubDate": "Fri, 30 Oct 2026 08:36:52 +0000"
+    },
+    {
+      "title": "Binance hacker dumps a little-known 2017 token and it crashes 90%",
+      "link": "https://www.coindesk.com/markets/2026/10/30/binance-hacker-dumps-a-little-known-2017-token-and-it-crashes-90",
+      "pubDate": "Fri, 30 Oct 2026 07:54:07 +0000"
+    },
+    {
+      "title": "Bitcoin, ether and XRP selloff wipes out $1.5 billion in leveraged crypto bets",
+      "link": "https://www.coindesk.com/markets/2026/10/30/bitcoin-ether-and-xrp-selloff-wipes-out-usd1-5-billion-in-leveraged-crypto-bets",
+      "pubDate": "Fri, 30 Oct 2026 06:22:00 +0000"
+    },
+    {
+      "title": "XRP Ledger developers tighten the rules for who can hold 'restricted' tokens",
+      "link": "https://www.coindesk.com/tech/2026/10/30/xrp-ledger-developers-tighten-the-rules-for-who-can-hold-restricted-tokens",
+      "pubDate": "Fri, 30 Oct 2026 05:45:27 +0000"
+    },
+    {
+      "title": "Binance hack bites India's largest crypto exchange as it curbs futures trading",
+      "link": "https://www.coindesk.com/markets/2026/10/30/coindcx-halts-new-crypto-futures-bets-as-binance-incident-disrupts-liquidity",
+      "pubDate": "Fri, 30 Oct 2026 05:43:07 +0000"
+    },
+    {
+      "title": "Binance hacker splits $1.4 billion of bitcoin into 19 wallets that no one can freeze",
+      "link": "https://www.coindesk.com/markets/2026/10/30/binance-hacker-splits-usd1-4-billion-of-bitcoin-into-19-wallets-that-no-one-can-freeze",
+      "pubDate": "Fri, 30 Oct 2026 04:50:42 +0000"
+    },
+    {
+      "title": "Standard Chartered sees more pain after $6 billion Binance hack sends bitcoin lower",
+      "link": "https://www.coindesk.com/markets/2026/10/30/usd6-billion-binance-hack-sends-bitcoin-ether-tumbling-standard-chartered-sees-more-losses-ahead",
+      "pubDate": "Fri, 30 Oct 2026 04:00:43 +0000"
+    },
+    {
+      "title": "Institutional crypto investors rush to pull funds from exchanges after Binance hack",
+      "link": "https://www.coindesk.com/markets/2026/10/30/institutional-crypto-investors-rush-to-pull-funds-from-exchanges-after-binance-hack",
+      "pubDate": "Fri, 30 Oct 2026 03:56:40 +0000"
+    },
+    {
+      "title": "Crypto's longtime foe, North Korea's Lazarus Group, likely behind Binance hack: blockchain sleuths",
+      "link": "https://www.coindesk.com/policy/2026/10/29/crypto-s-longtime-foe-north-korea-s-lazarus-group-likely-behind-binance-hack-blockchain-sleuths",
+      "pubDate": "Fri, 30 Oct 2026 03:36:11 +0000"
+    },
     {
       "title": "Binance hack drained wallets backing customer assets, reserve data shows",
       "link": "https://www.coindesk.com/business/2026/10/30/binance-hack-drained-wallets-backing-customer-assets-reserve-data-shows",
       "pubDate": "Fri, 30 Oct 2026 00:17:10 +0000"
     },
     {
-      "title": "Binance loses $5.7 billion in 'biggest crypto hack in history'",
+      "title": "Binance loses over $6 billion in 'biggest crypto hack in history'",
       "link": "https://www.coindesk.com/business/2026/10/29/potential-multi-billion-binance-hack-hitting-crypto-markets",
       "pubDate": "Thu, 29 Oct 2026 21:12:45 +0000"
-    },
-    {
-      "title": "Polymarket suspends trading after third-party breach leads to user losses",
-      "link": "https://www.coindesk.com/markets/2026/10/29/polymarket-suspends-trading-after-third-party-breach-leads-to-user-losses",
-      "pubDate": "Thu, 29 Oct 2026 18:55:35 +0000"
-    },
-    {
-      "title": "Stanley Druckenmiller's first X post backs Hyperliquid venture after $23 million indirect investment",
-      "link": "https://www.coindesk.com/business/2026/10/29/stanley-druckenmiller-s-first-x-post-backs-hyperliquid-venture-after-usd23-million-indirect-investment",
-      "pubDate": "Thu, 29 Oct 2026 17:04:19 +0000"
-    },
-    {
-      "title": "KuCoin exits Russia and Belarus as crypto exchanges withdraw from Western-sanctioned markets",
-      "link": "https://www.coindesk.com/policy/2026/10/29/kucoin-exits-russia-and-belarus-as-crypto-exchanges-withdraw-from-western-sanctioned-markets",
-      "pubDate": "Thu, 29 Oct 2026 16:51:18 +0000"
-    },
-    {
-      "title": "From rivals to partners: Polygon and Solana team to bring stablecoin payments to banks",
-      "link": "https://www.coindesk.com/business/2026/10/29/from-rivals-to-partners-polygon-and-solana-team-to-bring-stablecoin-payments-to-banks",
-      "pubDate": "Thu, 29 Oct 2026 16:35:43 +0000"
-    },
-    {
-      "title": "Crypto exchange HTX exits the UK after settling with the FCA",
-      "link": "https://www.coindesk.com/policy/2026/10/29/crypto-exchange-htx-exits-the-uk-after-settling-with-the-fca",
-      "pubDate": "Thu, 29 Oct 2026 16:11:18 +0000"
-    },
-    {
-      "title": "Polymarket brings ultra-short crypto prediction markets to U.S. platform",
-      "link": "https://www.coindesk.com/markets/2026/10/29/polymarket-brings-ultra-short-crypto-prediction-markets-to-u-s-platform",
-      "pubDate": "Thu, 29 Oct 2026 14:55:47 +0000"
-    },
-    {
-      "title": "Crypto for Advisors: Only 1 in 5 Americans say the financial system is secure",
-      "link": "https://www.coindesk.com/coindesk-indices/2026/10/29/crypto-for-advisors-only-1-in-5-americans-say-the-financial-system-is-secure",
-      "pubDate": "Thu, 29 Oct 2026 14:39:01 +0000"
-    },
-    {
-      "title": "Why Switzerland’s first genuine spot bitcoin ETF could soon attract overseas banks and brokers",
-      "link": "https://www.coindesk.com/business/2026/10/29/switzerland-s-first-bitcoin-etf-gets-rare-exemption-will-open-to-overseas-brokers",
-      "pubDate": "Thu, 29 Oct 2026 14:15:46 +0000"
-    },
-    {
-      "title": "Chainlink adds weekend pricing for tokenized assets, with Aave as launch partner",
-      "link": "https://www.coindesk.com/tech/2026/10/28/chainlink-adds-weekend-pricing-for-tokenized-assets-with-aave-as-launch-partner",
-      "pubDate": "Thu, 29 Oct 2026 14:15:00 +0000"
-    },
-    {
-      "title": "New quantum model slashes hardware needed to break bitcoin keys by 17 times",
-      "link": "https://www.coindesk.com/tech/2026/10/29/new-quantum-model-slashes-hardware-needed-to-break-bitcoin-keys-by-17-times",
-      "pubDate": "Thu, 29 Oct 2026 13:55:42 +0000"
     }
   ]
 }
