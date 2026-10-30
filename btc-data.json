@@ -1,13 +1,13 @@
 {
-  "fetchedAt": "2026-10-30T17:58:28.942Z",
+  "fetchedAt": "2026-10-30T22:14:28.475Z",
   "price": {
-    "usd": 77028,
-    "time": 1793382906
+    "usd": 76774,
+    "time": 1793398206
   },
   "moves": {
-    "d1": -1.0416584199014367,
-    "d7": -5.023670727487428,
-    "d30": -7.834933538753852
+    "d1": -1.3679737696618455,
+    "d7": -5.336855382875316,
+    "d30": -8.13884804881716
   },
   "history90d": [
     {
@@ -372,60 +372,65 @@
     },
     {
       "date": "2026-10-30",
-      "close": 77060.9679321733
+      "close": 76779.49334639784
     }
   ],
   "blocks": [
     {
-      "height": 973855,
-      "id": "000000000000000000011ba3308326024406e20980f35d133fcd26beb62f2020",
-      "timestamp": 1793383517,
-      "txCount": 1020
+      "height": 973885,
+      "id": "000000000000000000004837a00c7749af692bb6e9dd207508252fdeb8bcecce",
+      "timestamp": 1793397079,
+      "txCount": 7910
     },
     {
-      "height": 973854,
-      "id": "00000000000000000000d91249c36a18287f68480ed0205cc720aa8aa14accc9",
-      "timestamp": 1793383091,
-      "txCount": 3569
+      "height": 973884,
+      "id": "0000000000000000000036b86ca1fe9929755e0365f4ed3799349cb2fe6e6012",
+      "timestamp": 1793397063,
+      "txCount": 4604
     },
     {
-      "height": 973853,
-      "id": "0000000000000000000157a2b07e6e7e20595cc4230481a4f850dbb8e775b18a",
-      "timestamp": 1793381920,
-      "txCount": 2718
+      "height": 973883,
+      "id": "00000000000000000001a33d59ccf031af335a402942b0106da14f928c469469",
+      "timestamp": 1793396247,
+      "txCount": 6060
     },
     {
-      "height": 973852,
-      "id": "00000000000000000001427355c75ef783631269a9dd0c657f4fbb40e83c2981",
-      "timestamp": 1793381431,
-      "txCount": 2894
+      "height": 973882,
+      "id": "00000000000000000001713e4b020b67cde42432823e30dc890efc40f65b9eca",
+      "timestamp": 1793395884,
+      "txCount": 7680
     },
     {
-      "height": 973851,
-      "id": "000000000000000000008be320760929071ba980cfcec644e5502289b57bc658",
-      "timestamp": 1793380786,
-      "txCount": 3883
+      "height": 973881,
+      "id": "00000000000000000000c21bd875fc791d605de2a96673be5a6f8c03856f18cb",
+      "timestamp": 1793395842,
+      "txCount": 5426
     },
     {
-      "height": 973850,
-      "id": "000000000000000000006b874f57e0d9639500abeed5af0cb39dd42b81a2a635",
-      "timestamp": 1793380308,
-      "txCount": 3694
+      "height": 973880,
+      "id": "000000000000000000010979d4be69f64a587d5b1b34688a636b66e80e171549",
+      "timestamp": 1793395503,
+      "txCount": 5299
     },
     {
-      "height": 973849,
-      "id": "0000000000000000000183b62751c30c05e5142d3c92ef96df5a74a6de15fd60",
-      "timestamp": 1793378366,
-      "txCount": 1196
+      "height": 973879,
+      "id": "000000000000000000002832455ba693cf0e8e4a7508194873026723816900fa",
+      "timestamp": 1793394942,
+      "txCount": 5899
     },
     {
-      "height": 973848,
-      "id": "000000000000000000003472792a494359bc23056780d7acef119120c4fac341",
-      "timestamp": 1793378116,
-      "txCount": 2126
+      "height": 973878,
+      "id": "000000000000000000002aeedf5daf7bb0682d3ebc2baf3a38a0d42eb6140557",
+      "timestamp": 1793395031,
+      "txCount": 4275
     }
   ],
   "news": [
+    {
+      "title": "Experts divided over Binance hack asset freezes, warn recovery is another matter",
+      "link": "https://www.coindesk.com/business/2026/10/30/experts-divided-over-binance-hack-asset-freezes-warn-recovery-is-another-matter",
+      "pubDate": "Fri, 30 Oct 2026 19:55:00 +0000"
+    },
     {
       "title": "Binance uncovers wider breach in $6.3 billion exploit, targets Sunday withdrawal restart",
       "link": "https://www.coindesk.com/tech/2026/10/30/binance-uncovers-wider-breach-in-usd6-3-billion-exploit-targets-sunday-withdrawal-restart",
@@ -462,7 +467,7 @@
       "pubDate": "Fri, 30 Oct 2026 09:41:07 +0000"
     },
     {
-      "title": "Live updates: Bitcoin falls to $77,000 as Binance exploit combines with tech woes",
+      "title": "Live updates: Bitcoin falls below $77,000 as Binance exploit combines with tech woes",
       "link": "https://www.coindesk.com/markets/2026/10/30/live-news-binance-hack-rattles-crypto-as-intel-plunges-and-ai-spending-fears-hit-tech",
       "pubDate": "Fri, 30 Oct 2026 08:36:52 +0000"
     },
@@ -480,11 +485,6 @@
       "title": "XRP Ledger developers tighten the rules for who can hold 'restricted' tokens",
       "link": "https://www.coindesk.com/tech/2026/10/30/xrp-ledger-developers-tighten-the-rules-for-who-can-hold-restricted-tokens",
       "pubDate": "Fri, 30 Oct 2026 05:45:27 +0000"
-    },
-    {
-      "title": "Binance hack bites India's largest crypto exchange as it curbs futures trading",
-      "link": "https://www.coindesk.com/markets/2026/10/30/coindcx-halts-new-crypto-futures-bets-as-binance-incident-disrupts-liquidity",
-      "pubDate": "Fri, 30 Oct 2026 05:43:07 +0000"
     }
   ]
 }
