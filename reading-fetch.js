@@ -48,6 +48,9 @@ function parseFeed(xml) {
   let m;
   while ((m = itemRe.exec(xml)) !== null) {
     const block = m[0];
+    const title = decodeEntities(tag(block, 'title'));
+    // This series is excluded from the public reading list.
+    if (/\bForever\s+Fairies\b/i.test(title)) continue;
     // user_shelves is empty for plain "read" entries.
     const shelvesRaw = tag(block, 'user_shelves');
     const shelf = shelvesRaw === '' ? 'read' : shelvesRaw.split(',')[0].trim();
