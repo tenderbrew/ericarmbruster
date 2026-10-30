@@ -1,19 +1,15 @@
 {
-  "fetchedAt": "2026-10-29T18:25:07.215Z",
+  "fetchedAt": "2026-10-30T00:53:40.138Z",
   "price": {
-    "usd": 80794,
-    "time": 1793298006
+    "usd": 76867,
+    "time": 1793321406
   },
   "moves": {
-    "d1": -0.5910524056968791,
-    "d7": -0.656851593561647,
-    "d30": -3.4027954847122177
+    "d1": -1.248496102229879,
+    "d7": -5.22218541062699,
+    "d30": -8.027572263636495
   },
   "history90d": [
-    {
-      "date": "2026-08-01",
-      "close": 62820.08613814001
-    },
     {
       "date": "2026-08-02",
       "close": 62772.57726413174
@@ -371,61 +367,80 @@
       "close": 81274.37414359077
     },
     {
-      "date": "2026-10-29",
-      "close": 80801.58522500606
+      "date": "2026-10-30",
+      "close": 77838.81456587692
+    },
+    {
+      "date": "2026-10-30",
+      "close": 76990.45497621878
     }
   ],
   "blocks": [
     {
-      "height": 973726,
-      "id": "00000000000000000001ff87403e4c8128c4a31251cd8a5d1fb92baa1aaaf9f3",
-      "timestamp": 1793297271,
-      "txCount": 5833
+      "height": 973755,
+      "id": "00000000000000000000893d18d09349e933188a52b3a96cf5e7d8208123655e",
+      "timestamp": 1793320242,
+      "txCount": 2659
     },
     {
-      "height": 973725,
-      "id": "00000000000000000001e58d1792553996abdb5f72f25cfa6caef5a11120fcd1",
-      "timestamp": 1793296899,
-      "txCount": 4155
+      "height": 973754,
+      "id": "00000000000000000001a5fdddf54034adeb3779f9b2ec282779cfd4c776b137",
+      "timestamp": 1793319721,
+      "txCount": 3384
     },
     {
-      "height": 973724,
-      "id": "00000000000000000000ca9930aee5721654fb86f76c4eefce57ad3af9d07909",
-      "timestamp": 1793296448,
-      "txCount": 4863
+      "height": 973753,
+      "id": "0000000000000000000139e0541899d8fbe85afa516453e950672170d650c78b",
+      "timestamp": 1793318884,
+      "txCount": 2840
     },
     {
-      "height": 973723,
-      "id": "00000000000000000000870a056634b7a80342812dcb5de7126ef42d79d23836",
-      "timestamp": 1793295747,
-      "txCount": 1741
+      "height": 973752,
+      "id": "0000000000000000000025ee5cafa41a98a882dc0d66189b5e4c6585f01ac71e",
+      "timestamp": 1793318789,
+      "txCount": 3530
     },
     {
-      "height": 973722,
-      "id": "000000000000000000006806cef33ce79ebb1dab1d639fb17c195a9c40fa08de",
-      "timestamp": 1793295403,
-      "txCount": 4422
+      "height": 973751,
+      "id": "000000000000000000017603d4cfdfb3469e913c7c2e02bf0a3fbfad235bda9b",
+      "timestamp": 1793318111,
+      "txCount": 3522
     },
     {
-      "height": 973721,
-      "id": "0000000000000000000063e9360d95ebb75feed2c08940929aa4dac4af2107de",
-      "timestamp": 1793295289,
-      "txCount": 3111
+      "height": 973750,
+      "id": "00000000000000000000f999e7cef00c986f4b8fe22ddd7b41db971a314c9443",
+      "timestamp": 1793315810,
+      "txCount": 3568
     },
     {
-      "height": 973720,
-      "id": "00000000000000000000065af0b13cfccacaa4bb60737682021301887697856a",
-      "timestamp": 1793294772,
-      "txCount": 3481
+      "height": 973749,
+      "id": "000000000000000000016bc2565d8b263bc580cc0cb1a00cc22b9c4c745bba7d",
+      "timestamp": 1793314207,
+      "txCount": 3812
     },
     {
-      "height": 973719,
-      "id": "00000000000000000000ae55a567a889b3031162e8fa8e964e1e342a7ba63e74",
-      "timestamp": 1793293826,
-      "txCount": 5839
+      "height": 973748,
+      "id": "00000000000000000000932ba69480989ca33bbbeae4fdb166f96e0851bcdb24",
+      "timestamp": 1793312612,
+      "txCount": 3915
     }
   ],
   "news": [
+    {
+      "title": "Binance hack drained wallets backing customer assets, reserve data shows",
+      "link": "https://www.coindesk.com/business/2026/10/30/binance-hack-drained-wallets-backing-customer-assets-reserve-data-shows",
+      "pubDate": "Fri, 30 Oct 2026 00:17:10 +0000"
+    },
+    {
+      "title": "Binance loses $5.7 billion in 'biggest crypto hack in history'",
+      "link": "https://www.coindesk.com/business/2026/10/29/potential-multi-billion-binance-hack-hitting-crypto-markets",
+      "pubDate": "Thu, 29 Oct 2026 21:12:45 +0000"
+    },
+    {
+      "title": "Polymarket suspends trading after third-party breach leads to user losses",
+      "link": "https://www.coindesk.com/markets/2026/10/29/polymarket-suspends-trading-after-third-party-breach-leads-to-user-losses",
+      "pubDate": "Thu, 29 Oct 2026 18:55:35 +0000"
+    },
     {
       "title": "Stanley Druckenmiller's first X post backs Hyperliquid venture after $23 million indirect investment",
       "link": "https://www.coindesk.com/business/2026/10/29/stanley-druckenmiller-s-first-x-post-backs-hyperliquid-venture-after-usd23-million-indirect-investment",
@@ -470,21 +485,6 @@
       "title": "New quantum model slashes hardware needed to break bitcoin keys by 17 times",
       "link": "https://www.coindesk.com/tech/2026/10/29/new-quantum-model-slashes-hardware-needed-to-break-bitcoin-keys-by-17-times",
       "pubDate": "Thu, 29 Oct 2026 13:55:42 +0000"
-    },
-    {
-      "title": "Walmart, Eli Lilly join growing pushback against OKX–ICE tokenized stock plans",
-      "link": "https://www.coindesk.com/business/2026/10/29/walmart-eli-lilly-join-growing-pushback-against-okx-ice-tokenized-stock-plans",
-      "pubDate": "Thu, 29 Oct 2026 13:39:18 +0000"
-    },
-    {
-      "title": "A new framework for tokenized asset tracking",
-      "link": "https://www.coindesk.com/opinion/2026/10/28/a-new-framework-for-tokenized-asset-tracking",
-      "pubDate": "Thu, 29 Oct 2026 12:57:51 +0000"
-    },
-    {
-      "title": "Tokenized stock venue on Canton could beat OKX–ICE to first trade under SEC framework",
-      "link": "https://www.coindesk.com/business/2026/10/29/tokenized-stock-venue-on-canton-could-beat-okx-ice-to-first-trade-under-sec-framework",
-      "pubDate": "Thu, 29 Oct 2026 12:51:48 +0000"
     }
   ]
 }
