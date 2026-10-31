@@ -1,19 +1,15 @@
 {
-  "fetchedAt": "2026-10-30T22:14:28.475Z",
+  "fetchedAt": "2026-10-31T05:30:24.299Z",
   "price": {
-    "usd": 76774,
-    "time": 1793398206
+    "usd": 77146,
+    "time": 1793424307
   },
   "moves": {
-    "d1": -1.3679737696618455,
-    "d7": -5.336855382875316,
-    "d30": -8.13884804881716
+    "d1": -0.09993247521774551,
+    "d7": -4.5347667123283415,
+    "d30": -9.070621400123557
   },
   "history90d": [
-    {
-      "date": "2026-08-02",
-      "close": 62772.57726413174
-    },
     {
       "date": "2026-08-03",
       "close": 63504.41559755184
@@ -371,61 +367,75 @@
       "close": 77838.81456587692
     },
     {
-      "date": "2026-10-30",
-      "close": 76779.49334639784
+      "date": "2026-10-31",
+      "close": 77223.17102624816
+    },
+    {
+      "date": "2026-10-31",
+      "close": 77181.44216333094
     }
   ],
   "blocks": [
     {
-      "height": 973885,
-      "id": "000000000000000000004837a00c7749af692bb6e9dd207508252fdeb8bcecce",
-      "timestamp": 1793397079,
-      "txCount": 7910
+      "height": 973932,
+      "id": "00000000000000000000919cb1f5f82fca4ec5a9541751ffe21fda28dcff46af",
+      "timestamp": 1793423305,
+      "txCount": 7019
     },
     {
-      "height": 973884,
-      "id": "0000000000000000000036b86ca1fe9929755e0365f4ed3799349cb2fe6e6012",
-      "timestamp": 1793397063,
-      "txCount": 4604
+      "height": 973931,
+      "id": "000000000000000000008e9c5856bcc4c086d5a71808d12110299dd2828f9644",
+      "timestamp": 1793423180,
+      "txCount": 6638
     },
     {
-      "height": 973883,
-      "id": "00000000000000000001a33d59ccf031af335a402942b0106da14f928c469469",
-      "timestamp": 1793396247,
-      "txCount": 6060
+      "height": 973930,
+      "id": "000000000000000000011ff2a5375f1d0ebf121b78a9a101d5fbc266093ef05f",
+      "timestamp": 1793422857,
+      "txCount": 5091
     },
     {
-      "height": 973882,
-      "id": "00000000000000000001713e4b020b67cde42432823e30dc890efc40f65b9eca",
-      "timestamp": 1793395884,
-      "txCount": 7680
+      "height": 973929,
+      "id": "000000000000000000010294e974c3e70fc50ac295ab362a794ba249e8f94c35",
+      "timestamp": 1793422512,
+      "txCount": 2527
     },
     {
-      "height": 973881,
-      "id": "00000000000000000000c21bd875fc791d605de2a96673be5a6f8c03856f18cb",
-      "timestamp": 1793395842,
-      "txCount": 5426
+      "height": 973928,
+      "id": "00000000000000000001872655c0bd57b7a123079458159a91ceb04a95e481f8",
+      "timestamp": 1793421680,
+      "txCount": 2633
     },
     {
-      "height": 973880,
-      "id": "000000000000000000010979d4be69f64a587d5b1b34688a636b66e80e171549",
-      "timestamp": 1793395503,
-      "txCount": 5299
+      "height": 973927,
+      "id": "0000000000000000000096252f52dd0de83ff24ac59ac501e906d298c4d2cf7b",
+      "timestamp": 1793419709,
+      "txCount": 3409
     },
     {
-      "height": 973879,
-      "id": "000000000000000000002832455ba693cf0e8e4a7508194873026723816900fa",
-      "timestamp": 1793394942,
-      "txCount": 5899
+      "height": 973926,
+      "id": "00000000000000000001abe5bb923ff5f8a03586035bf86d8cc99bc1afb0863d",
+      "timestamp": 1793418528,
+      "txCount": 6840
     },
     {
-      "height": 973878,
-      "id": "000000000000000000002aeedf5daf7bb0682d3ebc2baf3a38a0d42eb6140557",
-      "timestamp": 1793395031,
-      "txCount": 4275
+      "height": 973925,
+      "id": "000000000000000000004d18f6652957fd32e7ca4ca0b02e781547627aae0b2f",
+      "timestamp": 1793418219,
+      "txCount": 7108
     }
   ],
   "news": [
+    {
+      "title": "Bitcoin stolen from Binance tops Tesla’s holdings and is over twice El Salvador’s reserve",
+      "link": "https://www.coindesk.com/markets/2026/10/31/bitcoin-stolen-from-binance-tops-tesla-s-holdings-and-is-over-twice-el-salvador-s-reserve",
+      "pubDate": "Sat, 31 Oct 2026 05:01:32 +0000"
+    },
+    {
+      "title": "OpenAI reportedly cuts fundraising and valuation targets amid AI jitters",
+      "link": "https://www.coindesk.com/business/2026/10/30/openai-reportedly-cuts-fundraising-target-amid-ai-jitters",
+      "pubDate": "Sat, 31 Oct 2026 00:48:56 +0000"
+    },
     {
       "title": "Experts divided over Binance hack asset freezes, warn recovery is another matter",
       "link": "https://www.coindesk.com/business/2026/10/30/experts-divided-over-binance-hack-asset-freezes-warn-recovery-is-another-matter",
@@ -475,16 +485,6 @@
       "title": "Binance hacker dumps a little-known 2017 token and it crashes 90%",
       "link": "https://www.coindesk.com/markets/2026/10/30/binance-hacker-dumps-a-little-known-2017-token-and-it-crashes-90",
       "pubDate": "Fri, 30 Oct 2026 07:54:07 +0000"
-    },
-    {
-      "title": "Bitcoin, ether and XRP selloff wipes out $1.5 billion in leveraged crypto bets",
-      "link": "https://www.coindesk.com/markets/2026/10/30/bitcoin-ether-and-xrp-selloff-wipes-out-usd1-5-billion-in-leveraged-crypto-bets",
-      "pubDate": "Fri, 30 Oct 2026 06:22:00 +0000"
-    },
-    {
-      "title": "XRP Ledger developers tighten the rules for who can hold 'restricted' tokens",
-      "link": "https://www.coindesk.com/tech/2026/10/30/xrp-ledger-developers-tighten-the-rules-for-who-can-hold-restricted-tokens",
-      "pubDate": "Fri, 30 Oct 2026 05:45:27 +0000"
     }
   ]
 }
