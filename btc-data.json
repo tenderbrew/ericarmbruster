@@ -1,13 +1,13 @@
 {
-  "fetchedAt": "2026-10-31T05:30:24.299Z",
+  "fetchedAt": "2026-10-31T12:17:09.092Z",
   "price": {
-    "usd": 77146,
-    "time": 1793424307
+    "usd": 77490,
+    "time": 1793448906
   },
   "moves": {
-    "d1": -0.09993247521774551,
-    "d7": -4.5347667123283415,
-    "d30": -9.070621400123557
+    "d1": 0.3455296774346861,
+    "d7": -4.109079829651874,
+    "d30": -8.665160245451153
   },
   "history90d": [
     {
@@ -372,60 +372,65 @@
     },
     {
       "date": "2026-10-31",
-      "close": 77181.44216333094
+      "close": 77513.84589814556
     }
   ],
   "blocks": [
     {
-      "height": 973932,
-      "id": "00000000000000000000919cb1f5f82fca4ec5a9541751ffe21fda28dcff46af",
-      "timestamp": 1793423305,
-      "txCount": 7019
+      "height": 973975,
+      "id": "000000000000000000007b1190327d96cc5da22265d3417b6253d0abeef01456",
+      "timestamp": 1793448703,
+      "txCount": 967
     },
     {
-      "height": 973931,
-      "id": "000000000000000000008e9c5856bcc4c086d5a71808d12110299dd2828f9644",
-      "timestamp": 1793423180,
-      "txCount": 6638
+      "height": 973974,
+      "id": "0000000000000000000197a8d7eeab4e20eae8693e7bb933edd89a75031933e3",
+      "timestamp": 1793448635,
+      "txCount": 5204
     },
     {
-      "height": 973930,
-      "id": "000000000000000000011ff2a5375f1d0ebf121b78a9a101d5fbc266093ef05f",
-      "timestamp": 1793422857,
-      "txCount": 5091
+      "height": 973973,
+      "id": "00000000000000000001c183ee1d5b23db72983ac86f8f0d3f17fa094563985f",
+      "timestamp": 1793448402,
+      "txCount": 3893
     },
     {
-      "height": 973929,
-      "id": "000000000000000000010294e974c3e70fc50ac295ab362a794ba249e8f94c35",
-      "timestamp": 1793422512,
-      "txCount": 2527
+      "height": 973972,
+      "id": "00000000000000000001c80cc76aba30ba1f1dd6830e75bbbf41f2af2d36be9e",
+      "timestamp": 1793447456,
+      "txCount": 2538
     },
     {
-      "height": 973928,
-      "id": "00000000000000000001872655c0bd57b7a123079458159a91ceb04a95e481f8",
-      "timestamp": 1793421680,
-      "txCount": 2633
+      "height": 973971,
+      "id": "00000000000000000000bf7dbbd4d52043109d7e25cde09a1d8246e1e2f87efa",
+      "timestamp": 1793447152,
+      "txCount": 332
     },
     {
-      "height": 973927,
-      "id": "0000000000000000000096252f52dd0de83ff24ac59ac501e906d298c4d2cf7b",
-      "timestamp": 1793419709,
-      "txCount": 3409
+      "height": 973970,
+      "id": "000000000000000000001d265418926e85af8572886f20bfa7c96034bf77c7ff",
+      "timestamp": 1793447075,
+      "txCount": 2556
     },
     {
-      "height": 973926,
-      "id": "00000000000000000001abe5bb923ff5f8a03586035bf86d8cc99bc1afb0863d",
-      "timestamp": 1793418528,
-      "txCount": 6840
+      "height": 973969,
+      "id": "000000000000000000019d642c4b76257d8b18b3398e0f5f0ab3c16917cd91eb",
+      "timestamp": 1793445187,
+      "txCount": 4112
     },
     {
-      "height": 973925,
-      "id": "000000000000000000004d18f6652957fd32e7ca4ca0b02e781547627aae0b2f",
-      "timestamp": 1793418219,
-      "txCount": 7108
+      "height": 973968,
+      "id": "0000000000000000000163597693c55f61f586f48a19382f51c0b3edd2631156",
+      "timestamp": 1793444262,
+      "txCount": 3421
     }
   ],
   "news": [
+    {
+      "title": "The $6.3 billion Binance hack paradox: Centralization made the hack possible, but also saved $3 billion",
+      "link": "https://www.coindesk.com/business/2026/10/31/the-usd6-3-billion-binance-hack-paradox-centralization-made-the-hack-possible-but-also-saved-usd3-billion",
+      "pubDate": "Sat, 31 Oct 2026 12:00:00 +0000"
+    },
     {
       "title": "Bitcoin stolen from Binance tops Tesla’s holdings and is over twice El Salvador’s reserve",
       "link": "https://www.coindesk.com/markets/2026/10/31/bitcoin-stolen-from-binance-tops-tesla-s-holdings-and-is-over-twice-el-salvador-s-reserve",
@@ -480,11 +485,6 @@
       "title": "Live updates: Bitcoin falls below $77,000 as Binance exploit combines with tech woes",
       "link": "https://www.coindesk.com/markets/2026/10/30/live-news-binance-hack-rattles-crypto-as-intel-plunges-and-ai-spending-fears-hit-tech",
       "pubDate": "Fri, 30 Oct 2026 08:36:52 +0000"
-    },
-    {
-      "title": "Binance hacker dumps a little-known 2017 token and it crashes 90%",
-      "link": "https://www.coindesk.com/markets/2026/10/30/binance-hacker-dumps-a-little-known-2017-token-and-it-crashes-90",
-      "pubDate": "Fri, 30 Oct 2026 07:54:07 +0000"
     }
   ]
 }
