@@ -1,13 +1,13 @@
 {
-  "fetchedAt": "2026-10-31T12:17:09.092Z",
+  "fetchedAt": "2026-10-31T19:15:08.356Z",
   "price": {
-    "usd": 77490,
-    "time": 1793448906
+    "usd": 77537,
+    "time": 1793473807
   },
   "moves": {
-    "d1": 0.3455296774346861,
-    "d7": -4.109079829651874,
-    "d30": -8.665160245451153
+    "d1": 0.4063922389889507,
+    "d7": -4.050919121844332,
+    "d30": -8.609762936527886
   },
   "history90d": [
     {
@@ -372,60 +372,105 @@
     },
     {
       "date": "2026-10-31",
-      "close": 77513.84589814556
+      "close": 77565.57186934447
     }
   ],
   "blocks": [
     {
-      "height": 973975,
-      "id": "000000000000000000007b1190327d96cc5da22265d3417b6253d0abeef01456",
-      "timestamp": 1793448703,
-      "txCount": 967
+      "height": 974008,
+      "id": "0000000000000000000186ca38a6be7b38c76e559d0adfd342ccf2433845d4b4",
+      "timestamp": 1793471798,
+      "txCount": 2285
     },
     {
-      "height": 973974,
-      "id": "0000000000000000000197a8d7eeab4e20eae8693e7bb933edd89a75031933e3",
-      "timestamp": 1793448635,
-      "txCount": 5204
+      "height": 974007,
+      "id": "00000000000000000000b92e5b47bad1ae0a74cb5d6ff39ff6d6f18c0bd754ed",
+      "timestamp": 1793471722,
+      "txCount": 1737
     },
     {
-      "height": 973973,
-      "id": "00000000000000000001c183ee1d5b23db72983ac86f8f0d3f17fa094563985f",
-      "timestamp": 1793448402,
-      "txCount": 3893
+      "height": 974006,
+      "id": "0000000000000000000129918d924d95302e095d435fe1970f702a63b26587e8",
+      "timestamp": 1793471380,
+      "txCount": 2366
     },
     {
-      "height": 973972,
-      "id": "00000000000000000001c80cc76aba30ba1f1dd6830e75bbbf41f2af2d36be9e",
-      "timestamp": 1793447456,
-      "txCount": 2538
+      "height": 974005,
+      "id": "00000000000000000000b9d2c58e484c9d7ff109e501b6d934abddf1859447d6",
+      "timestamp": 1793471258,
+      "txCount": 3374
     },
     {
-      "height": 973971,
-      "id": "00000000000000000000bf7dbbd4d52043109d7e25cde09a1d8246e1e2f87efa",
-      "timestamp": 1793447152,
-      "txCount": 332
+      "height": 974004,
+      "id": "000000000000000000006543e455d34322d8f6c0414c9a8218c8082100b8e644",
+      "timestamp": 1793471038,
+      "txCount": 4187
     },
     {
-      "height": 973970,
-      "id": "000000000000000000001d265418926e85af8572886f20bfa7c96034bf77c7ff",
-      "timestamp": 1793447075,
-      "txCount": 2556
+      "height": 974003,
+      "id": "00000000000000000000516820dd14a9ed12376eae375fbdfcca00f0c90355ba",
+      "timestamp": 1793468141,
+      "txCount": 945
     },
     {
-      "height": 973969,
-      "id": "000000000000000000019d642c4b76257d8b18b3398e0f5f0ab3c16917cd91eb",
-      "timestamp": 1793445187,
-      "txCount": 4112
+      "height": 974002,
+      "id": "0000000000000000000182b476565844c05c0979c1ff3fe6d3a1df6459c10ade",
+      "timestamp": 1793467920,
+      "txCount": 3336
     },
     {
-      "height": 973968,
-      "id": "0000000000000000000163597693c55f61f586f48a19382f51c0b3edd2631156",
-      "timestamp": 1793444262,
-      "txCount": 3421
+      "height": 974001,
+      "id": "00000000000000000000ad021486a7888ab593e06b9b17e7658ae442237722d3",
+      "timestamp": 1793467033,
+      "txCount": 5176
     }
   ],
   "news": [
+    {
+      "title": "Bitcoin's white paper turns 18, and small businesses are still paying for the bailouts it answered",
+      "link": "https://www.coindesk.com/opinion/2026/10/31/bitcoin-s-white-paper-turns-18-and-small-businesses-are-still-paying-for-the-bailouts-it-answered",
+      "pubDate": "Sat, 31 Oct 2026 18:00:00 +0000"
+    },
+    {
+      "title": "A stolen iPhone, $14,000 in losses and London's crypto theft problem",
+      "link": "https://www.coindesk.com/business/2026/11/01/a-stolen-iphone-usd14-000-in-losses-and-london-s-crypto-theft-problem",
+      "pubDate": "Sat, 31 Oct 2026 16:09:30 +0000"
+    },
+    {
+      "title": "Traders are already placing leveraged bets on Anthropic’s IPO using crypto contracts",
+      "link": "https://www.coindesk.com/business/2026/10/31/traders-are-already-placing-leveraged-bets-on-anthropic-s-ipo-using-crypto-contracts",
+      "pubDate": "Sat, 31 Oct 2026 16:00:00 +0000"
+    },
+    {
+      "title": "Binance says it has replaced 90% of stolen crypto after massive $6.3 billion breach",
+      "link": "https://www.coindesk.com/business/2026/10/31/binance-says-it-has-replaced-90-of-stolen-crypto-after-massive-usd6-3-billion-breach",
+      "pubDate": "Sat, 31 Oct 2026 15:24:10 +0000"
+    },
+    {
+      "title": "Institutions embrace crypto staking despite shrinking yields",
+      "link": "https://www.coindesk.com/business/2026/10/26/institutions-embrace-crypto-staking-despite-shrinking-yields",
+      "pubDate": "Sat, 31 Oct 2026 15:00:00 +0000"
+    },
+    {
+      "title": "Uber tests how tokenization can put idle cash to work with HSBC, Franklin Templeton",
+      "link": "https://www.coindesk.com/business/2026/10/31/uber-tests-how-tokenization-can-put-idle-cash-to-work-with-hsbc-franklin-templeton",
+      "pubDate": "Sat, 31 Oct 2026 14:40:29 +0000"
+    },
+    {
+      "title": "As big bitcoin miners chase AI profits, individuals get another shot at the rewards",
+      "link": "https://www.coindesk.com/tech/2026/10/31/as-big-bitcoin-miners-chase-ai-profits-individuals-get-another-shot-at-the-rewards",
+      "pubDate": "Sat, 31 Oct 2026 14:00:00 +0000"
+    },
+    {
+      "title": "18 years in, what has Bitcoin truly done?",
+      "link": "https://www.coindesk.com/opinion/2026/10/31/18-years-in-what-has-bitcoin-truly-done",
+      "pubDate": "Sat, 31 Oct 2026 13:00:00 +0000"
+    },
+    {
+      "title": "A Nasdaq-listed company may sell $450 million bitcoin, citing Binance hack and quantum fears",
+      "link": "https://www.coindesk.com/markets/2026/10/31/a-nasdaq-listed-company-may-sell-usd450-million-bitcoin-citing-binance-hack-and-quantum-fears",
+      "pubDate": "Sat, 31 Oct 2026 12:49:47 +0000"
+    },
     {
       "title": "The $6.3 billion Binance hack paradox: Centralization made the hack possible, but also saved $3 billion",
       "link": "https://www.coindesk.com/business/2026/10/31/the-usd6-3-billion-binance-hack-paradox-centralization-made-the-hack-possible-but-also-saved-usd3-billion",
@@ -440,51 +485,6 @@
       "title": "OpenAI reportedly cuts fundraising and valuation targets amid AI jitters",
       "link": "https://www.coindesk.com/business/2026/10/30/openai-reportedly-cuts-fundraising-target-amid-ai-jitters",
       "pubDate": "Sat, 31 Oct 2026 00:48:56 +0000"
-    },
-    {
-      "title": "Experts divided over Binance hack asset freezes, warn recovery is another matter",
-      "link": "https://www.coindesk.com/business/2026/10/30/experts-divided-over-binance-hack-asset-freezes-warn-recovery-is-another-matter",
-      "pubDate": "Fri, 30 Oct 2026 19:55:00 +0000"
-    },
-    {
-      "title": "Binance uncovers wider breach in $6.3 billion exploit, targets Sunday withdrawal restart",
-      "link": "https://www.coindesk.com/tech/2026/10/30/binance-uncovers-wider-breach-in-usd6-3-billion-exploit-targets-sunday-withdrawal-restart",
-      "pubDate": "Fri, 30 Oct 2026 16:31:17 +0000"
-    },
-    {
-      "title": "Wall Street analysts urge investors to buy crypto stocks after $6.3 billion Binance hack",
-      "link": "https://www.coindesk.com/markets/2026/10/30/wall-street-analysts-urge-investors-to-buy-crypto-stocks-on-weakness-after-usd6-3-billion-binance-hack",
-      "pubDate": "Fri, 30 Oct 2026 14:13:34 +0000"
-    },
-    {
-      "title": "Binance arranges $6.34 billion to cover losses from record crypto hack",
-      "link": "https://www.coindesk.com/business/2026/10/30/binance-arranges-usd6-34-billion-to-cover-losses-from-record-crypto-hack",
-      "pubDate": "Fri, 30 Oct 2026 12:13:02 +0000"
-    },
-    {
-      "title": "Here's how big bitcoin traders responded after the Binance hack hit",
-      "link": "https://www.coindesk.com/daybook-us/2026/10/30/here-s-how-big-bitcoin-traders-responded-after-the-binance-hack-hit",
-      "pubDate": "Fri, 30 Oct 2026 11:51:26 +0000"
-    },
-    {
-      "title": "Here’s how an Ethereum upgrade helped drain part of Binance’s $6 billion loss",
-      "link": "https://www.coindesk.com/tech/2026/10/30/here-s-how-one-ethereum-permission-let-an-attacker-drain-usd2-5-billion-from-binance",
-      "pubDate": "Fri, 30 Oct 2026 11:35:16 +0000"
-    },
-    {
-      "title": "Crypto liquidations jump to $1.57 billion as Binance hack sends bitcoin, ether lower",
-      "link": "https://www.coindesk.com/markets/2026/10/30/crypto-liquidations-jump-to-usd1-57-billion-as-binance-hack-sends-bitcoin-ether-lower",
-      "pubDate": "Fri, 30 Oct 2026 11:09:24 +0000"
-    },
-    {
-      "title": "Strategy CFO Andrew Kang resigns as company posts record operating profit",
-      "link": "https://www.coindesk.com/markets/2026/10/30/strategy-cfo-resigns-as-company-posts-record-quarterly-profit-mstr-stock-falls-6",
-      "pubDate": "Fri, 30 Oct 2026 09:41:07 +0000"
-    },
-    {
-      "title": "Live updates: Bitcoin falls below $77,000 as Binance exploit combines with tech woes",
-      "link": "https://www.coindesk.com/markets/2026/10/30/live-news-binance-hack-rattles-crypto-as-intel-plunges-and-ai-spending-fears-hit-tech",
-      "pubDate": "Fri, 30 Oct 2026 08:36:52 +0000"
     }
   ]
 }
