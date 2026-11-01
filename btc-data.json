@@ -1,19 +1,15 @@
 {
-  "fetchedAt": "2026-11-01T00:03:56.840Z",
+  "fetchedAt": "2026-11-01T05:55:20.530Z",
   "price": {
-    "usd": 77453,
-    "time": 1793491206
+    "usd": 77740,
+    "time": 1793512206
   },
   "moves": {
-    "d1": 0.2976165970622002,
-    "d7": -4.1548659187769506,
-    "d30": -8.708770892901384
+    "d1": 0.34324241579322123,
+    "d7": -2.8842987748820437,
+    "d30": -8.007042588504165
   },
   "history90d": [
-    {
-      "date": "2026-08-03",
-      "close": 63504.41559755184
-    },
     {
       "date": "2026-08-04",
       "close": 63465.19968911304
@@ -372,60 +368,69 @@
     },
     {
       "date": "2026-11-01",
-      "close": 77479.23655995361
+      "close": 77474.07610954811
+    },
+    {
+      "date": "2026-11-01",
+      "close": 77766.84613998319
     }
   ],
   "blocks": [
     {
-      "height": 974043,
-      "id": "00000000000000000000ba4aa68dc39d31ac6f2a67f4667621d0a96cea193151",
-      "timestamp": 1793491167,
-      "txCount": 7051
+      "height": 974086,
+      "id": "0000000000000000000151bae3d22e883545671ed16a660f649264ec3a0b3158",
+      "timestamp": 1793511848,
+      "txCount": 3859
     },
     {
-      "height": 974042,
-      "id": "0000000000000000000098645d42030ba7e809077bb8390d0ac4855ac387cf08",
-      "timestamp": 1793491201,
-      "txCount": 4499
+      "height": 974085,
+      "id": "000000000000000000015c5597b0749e5567aa7158d69d088b23fe1b71a2544d",
+      "timestamp": 1793510790,
+      "txCount": 7503
     },
     {
-      "height": 974041,
-      "id": "000000000000000000001c441dea456d5434dddddfca72f4d4948e3792a08ff5",
-      "timestamp": 1793489728,
-      "txCount": 7344
+      "height": 974084,
+      "id": "000000000000000000002ceea715190332e399299b696643e9a2144e5c2be494",
+      "timestamp": 1793510689,
+      "txCount": 7617
     },
     {
-      "height": 974040,
-      "id": "00000000000000000001711f52932793595cb1dafd8be7f649d1dd1a4bf375d9",
-      "timestamp": 1793489537,
-      "txCount": 6836
+      "height": 974083,
+      "id": "00000000000000000000297ba5c2d3b7a432c37910f7bc422cd840ba3cefab5a",
+      "timestamp": 1793510575,
+      "txCount": 5062
     },
     {
-      "height": 974039,
-      "id": "000000000000000000019f343a62bf68c65d9ef2081ace5d4639f03d3b6b351d",
-      "timestamp": 1793489328,
-      "txCount": 7514
+      "height": 974082,
+      "id": "00000000000000000000769af87683cbf6956f77fd246063d571b3e0531d55bd",
+      "timestamp": 1793510156,
+      "txCount": 7861
     },
     {
-      "height": 974038,
-      "id": "00000000000000000001b750bb545945d61dbd5144d1593ab478634c7be52e55",
-      "timestamp": 1793489161,
-      "txCount": 5446
+      "height": 974081,
+      "id": "00000000000000000000a4356fc562e762bdfc579dd49b2fafdc41bdbe2d80b1",
+      "timestamp": 1793510095,
+      "txCount": 6098
     },
     {
-      "height": 974037,
-      "id": "00000000000000000001170df3e75ea3c87d286883ec72ddcdd5ff05206a6bef",
-      "timestamp": 1793488539,
-      "txCount": 3366
+      "height": 974080,
+      "id": "000000000000000000008802abeed7643bafee72b6c24d93b963c8c25c0f63cd",
+      "timestamp": 1793509828,
+      "txCount": 2573
     },
     {
-      "height": 974036,
-      "id": "00000000000000000000bb21aac41248ca08027a32fc6868a67a2b0d89bb514c",
-      "timestamp": 1793486897,
-      "txCount": 5385
+      "height": 974079,
+      "id": "0000000000000000000118385a6d78784e09be091f1e38bb5978d4a0f93a15e9",
+      "timestamp": 1793509299,
+      "txCount": 2487
     }
   ],
   "news": [
+    {
+      "title": "FBI confirms North Korea's role in $6 billion Binance hack, asks DeFi community to block BTC, ETH, SOL addresses",
+      "link": "https://www.coindesk.com/policy/2026/10/31/fbi-confirms-north-korea-s-role-in-usd6-billion-binance-hack-asks-defi-community-to-block-btc-eth-sol-addresses",
+      "pubDate": "Sun, 01 Nov 2026 01:10:05 +0000"
+    },
     {
       "title": "Bitcoin's white paper turns 18, and small businesses are still paying for the bailouts it answered",
       "link": "https://www.coindesk.com/opinion/2026/10/31/bitcoin-s-white-paper-turns-18-and-small-businesses-are-still-paying-for-the-bailouts-it-answered",
@@ -480,11 +485,6 @@
       "title": "Bitcoin stolen from Binance tops Tesla’s holdings and is over twice El Salvador’s reserve",
       "link": "https://www.coindesk.com/markets/2026/10/31/bitcoin-stolen-from-binance-tops-tesla-s-holdings-and-is-over-twice-el-salvador-s-reserve",
       "pubDate": "Sat, 31 Oct 2026 05:01:32 +0000"
-    },
-    {
-      "title": "OpenAI reportedly cuts fundraising and valuation targets amid AI jitters",
-      "link": "https://www.coindesk.com/business/2026/10/30/openai-reportedly-cuts-fundraising-target-amid-ai-jitters",
-      "pubDate": "Sat, 31 Oct 2026 00:48:56 +0000"
     }
   ]
 }
