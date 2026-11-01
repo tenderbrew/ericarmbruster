@@ -1,13 +1,13 @@
 {
-  "fetchedAt": "2026-11-01T13:13:59.297Z",
+  "fetchedAt": "2026-11-01T19:36:57.321Z",
   "price": {
-    "usd": 77883,
-    "time": 1793538606
+    "usd": 77729,
+    "time": 1793561407
   },
   "moves": {
-    "d1": 0.5278202864577253,
-    "d7": -2.7056578528960373,
-    "d30": -7.83782477386763
+    "d1": 0.3290441180497927,
+    "d7": -2.8980403842655766,
+    "d30": -8.020059343476206
   },
   "history90d": [
     {
@@ -372,60 +372,85 @@
     },
     {
       "date": "2026-11-01",
-      "close": 77919.6314902416
+      "close": 77728.66131365027
     }
   ],
   "blocks": [
     {
-      "height": 974129,
-      "id": "00000000000000000000bd890814afe21e20fc30fd063ec8d27c8466b22fd90a",
-      "timestamp": 1793537608,
-      "txCount": 6020
+      "height": 974167,
+      "id": "0000000000000000000093c34da4b27b6b3b802574bed4469ddae10daf4854e8",
+      "timestamp": 1793561634,
+      "txCount": 4490
     },
     {
-      "height": 974128,
-      "id": "00000000000000000001abef551dda8760e9fea183ef14fbc449342413159024",
-      "timestamp": 1793537462,
-      "txCount": 3954
+      "height": 974166,
+      "id": "00000000000000000000931a497e52c47996c00c141cc71bd5bc98d40dea6bb4",
+      "timestamp": 1793561360,
+      "txCount": 3664
     },
     {
-      "height": 974127,
-      "id": "0000000000000000000111295015a097997b88c60c12bf278350ce09eb07f356",
-      "timestamp": 1793537286,
-      "txCount": 2586
+      "height": 974165,
+      "id": "000000000000000000006c8da3782137e1976d1310e98dea04742848dcf395b8",
+      "timestamp": 1793559783,
+      "txCount": 6165
     },
     {
-      "height": 974126,
-      "id": "0000000000000000000194ff314dfcd0d6411c82f27a6f7b677cdbdf5ce6645e",
-      "timestamp": 1793536480,
-      "txCount": 2586
+      "height": 974164,
+      "id": "0000000000000000000171fdda2e4c723942293b81dd5b57e46ee068398db630",
+      "timestamp": 1793559554,
+      "txCount": 4952
     },
     {
-      "height": 974125,
-      "id": "0000000000000000000026ccb86655669c77d08fa5bf74fe0e83043deafdb773",
-      "timestamp": 1793535757,
-      "txCount": 3080
+      "height": 974163,
+      "id": "00000000000000000000888b82a93d377cbafc8697f20852eda4c5e1d10548ed",
+      "timestamp": 1793559356,
+      "txCount": 3429
     },
     {
-      "height": 974124,
-      "id": "00000000000000000000f588af58f9181600f5c2d1a4c2e26e024f5d98e58a95",
-      "timestamp": 1793535102,
-      "txCount": 3201
+      "height": 974162,
+      "id": "000000000000000000007097c7b9bfafcd15c4e926a92743f6b8c58ce4f749ca",
+      "timestamp": 1793557838,
+      "txCount": 7157
     },
     {
-      "height": 974123,
-      "id": "00000000000000000001c7cea6182b322f7ed88cf63ed2f6bf2ccbf65c623666",
-      "timestamp": 1793533540,
-      "txCount": 369
+      "height": 974161,
+      "id": "0000000000000000000066b931d5b96de84225eabfeec9e25811c256791dba03",
+      "timestamp": 1793557768,
+      "txCount": 4475
     },
     {
-      "height": 974122,
-      "id": "00000000000000000000056f138a3865fd821a857f7c32fd6c41c271ae578812",
-      "timestamp": 1793533509,
-      "txCount": 2366
+      "height": 974160,
+      "id": "0000000000000000000106faf2e1cb0c6f3930d21f4e4d0d42cab10368555e35",
+      "timestamp": 1793557037,
+      "txCount": 5860
     }
   ],
   "news": [
+    {
+      "title": "The crypto reader's guide to the 2026 midterm election: State of Crypto",
+      "link": "https://www.coindesk.com/policy/2026/11/01/the-crypto-reader-s-guide-to-the-2026-midterm-election-state-of-crypto",
+      "pubDate": "Sun, 01 Nov 2026 19:30:00 +0000"
+    },
+    {
+      "title": "AI agents bypassed crypto spending limits without human approval, researchers find in a new test",
+      "link": "https://www.coindesk.com/tech/2026/11/01/ai-agents-bypassed-crypto-spending-limits-without-human-approval-researchers-find-in-a-new-test",
+      "pubDate": "Sun, 01 Nov 2026 17:00:00 +0000"
+    },
+    {
+      "title": "The key races to watch for the 2026 election",
+      "link": "https://www.coindesk.com/policy/2026/11/01/the-key-races-to-watch-for-the-2026-election",
+      "pubDate": "Sun, 01 Nov 2026 15:00:00 +0000"
+    },
+    {
+      "title": "Crypto card startups are racking up losses just to buy your loyalty with big rewards",
+      "link": "https://www.coindesk.com/business/2026/11/01/crypto-card-startups-are-racking-up-losses-just-to-buy-your-loyalty-with-big-rewards",
+      "pubDate": "Sun, 01 Nov 2026 15:00:00 +0000"
+    },
+    {
+      "title": "Crypto PACs made big Republican push in final weeks before November 3 election",
+      "link": "https://www.coindesk.com/policy/2026/11/01/crypto-pacs-made-big-republican-push-in-final-weeks-before-november-3-election",
+      "pubDate": "Sun, 01 Nov 2026 14:00:00 +0000"
+    },
     {
       "title": "Sherrod Brown's Ohio edge threatens a rough go for crypto next year",
       "link": "https://www.coindesk.com/news-analysis/2026/11/01/sherrod-brown-s-ohio-edge-threatens-a-rough-go-for-crypto-next-year",
@@ -460,31 +485,6 @@
       "title": "Binance says it has replaced 90% of stolen crypto after massive $6.3 billion breach",
       "link": "https://www.coindesk.com/business/2026/10/31/binance-says-it-has-replaced-90-of-stolen-crypto-after-massive-usd6-3-billion-breach",
       "pubDate": "Sat, 31 Oct 2026 15:24:10 +0000"
-    },
-    {
-      "title": "Institutions embrace crypto staking despite shrinking yields",
-      "link": "https://www.coindesk.com/business/2026/10/26/institutions-embrace-crypto-staking-despite-shrinking-yields",
-      "pubDate": "Sat, 31 Oct 2026 15:00:00 +0000"
-    },
-    {
-      "title": "Uber tests how tokenization can put idle cash to work with HSBC, Franklin Templeton",
-      "link": "https://www.coindesk.com/business/2026/10/31/uber-tests-how-tokenization-can-put-idle-cash-to-work-with-hsbc-franklin-templeton",
-      "pubDate": "Sat, 31 Oct 2026 14:40:29 +0000"
-    },
-    {
-      "title": "As big bitcoin miners chase AI profits, individuals get another shot at the rewards",
-      "link": "https://www.coindesk.com/tech/2026/10/31/as-big-bitcoin-miners-chase-ai-profits-individuals-get-another-shot-at-the-rewards",
-      "pubDate": "Sat, 31 Oct 2026 14:00:00 +0000"
-    },
-    {
-      "title": "18 years in, what has Bitcoin truly done?",
-      "link": "https://www.coindesk.com/opinion/2026/10/31/18-years-in-what-has-bitcoin-truly-done",
-      "pubDate": "Sat, 31 Oct 2026 13:00:00 +0000"
-    },
-    {
-      "title": "A Nasdaq-listed company may sell $450 million bitcoin, citing Binance hack and quantum fears",
-      "link": "https://www.coindesk.com/markets/2026/10/31/a-nasdaq-listed-company-may-sell-usd450-million-bitcoin-citing-binance-hack-and-quantum-fears",
-      "pubDate": "Sat, 31 Oct 2026 12:49:47 +0000"
     }
   ]
 }
