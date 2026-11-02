@@ -1,13 +1,13 @@
 {
-  "fetchedAt": "2026-11-02T10:54:59.066Z",
+  "fetchedAt": "2026-11-02T21:41:02.467Z",
   "price": {
-    "usd": 77949,
-    "time": 1793616606
+    "usd": 76739,
+    "time": 1793655308
   },
   "moves": {
-    "d1": -0.4404421873283493,
-    "d7": -2.5995858513418346,
-    "d30": -8.016949494603665
+    "d1": -1.9859022311176533,
+    "d7": -4.111529572491257,
+    "d30": -9.444799641642499
   },
   "history90d": [
     {
@@ -372,119 +372,119 @@
     },
     {
       "date": "2026-11-02",
-      "close": 77930.52728575456
+      "close": 76818.76065400724
     }
   ],
   "blocks": [
     {
-      "height": 974247,
-      "id": "000000000000000000001ed975f67e5cf6240953a86030abbd107f0de17faf8c",
-      "timestamp": 1793616500,
-      "txCount": 1633
+      "height": 974305,
+      "id": "000000000000000000004f8107100798b9442fc008a47a53b5982dc77ee8ae01",
+      "timestamp": 1793655143,
+      "txCount": 4877
     },
     {
-      "height": 974246,
-      "id": "000000000000000000011a4aff4874b2271f716aaa78f6f0b5d8610e5f6fc7b2",
-      "timestamp": 1793616357,
-      "txCount": 1535
+      "height": 974304,
+      "id": "00000000000000000000290cca2354d3e79e0e38407e5419745e71b6765b2827",
+      "timestamp": 1793654555,
+      "txCount": 7956
     },
     {
-      "height": 974245,
-      "id": "00000000000000000000d6ca93c32805774847dccf88537500f9365534cdfe98",
-      "timestamp": 1793616178,
-      "txCount": 1767
+      "height": 974303,
+      "id": "0000000000000000000026cecd9233bae578520f05c17174c8138c72e5cf3ccc",
+      "timestamp": 1793654541,
+      "txCount": 4321
     },
     {
-      "height": 974244,
-      "id": "00000000000000000001b99d98559224bcb8da0757bfd1f1ba8591389a7905c4",
-      "timestamp": 1793616052,
-      "txCount": 3221
+      "height": 974302,
+      "id": "0000000000000000000081d60b60b557af2d2efe8a307e2c5218b96eac13c71b",
+      "timestamp": 1793653698,
+      "txCount": 6701
     },
     {
-      "height": 974243,
-      "id": "00000000000000000000b2fb561dc4e588cba76d80c2b809eedf6190757ffc65",
-      "timestamp": 1793615227,
-      "txCount": 3052
+      "height": 974301,
+      "id": "00000000000000000000198157222492a1f6ec6c342f7184941e818dd45b5b83",
+      "timestamp": 1793653474,
+      "txCount": 7031
     },
     {
-      "height": 974242,
-      "id": "0000000000000000000078a99967374680cde990f74b1ce6a42f9cc68f3b85ac",
-      "timestamp": 1793613693,
-      "txCount": 1877
+      "height": 974300,
+      "id": "00000000000000000000f53d3b379dd6c345ce3fe1f28859825d5b254140fc0b",
+      "timestamp": 1793653405,
+      "txCount": 3137
     },
     {
-      "height": 974241,
-      "id": "00000000000000000001340b9411c2fc22054a5268e02522f9a258508c528019",
-      "timestamp": 1793613159,
-      "txCount": 3204
+      "height": 974299,
+      "id": "000000000000000000009102d90ff215ef063b012e38c6c5cf99f54aa7bc8266",
+      "timestamp": 1793652446,
+      "txCount": 3421
     },
     {
-      "height": 974240,
-      "id": "0000000000000000000115a55d3df42b8efaaa673ad2385e00d2b451ad887f63",
-      "timestamp": 1793612285,
-      "txCount": 166
+      "height": 974298,
+      "id": "0000000000000000000101a0ab164a6e86da72860ef47d33d9d0aacaad69ac61",
+      "timestamp": 1793652088,
+      "txCount": 4781
     }
   ],
   "news": [
     {
-      "title": "Metals.io issues tokens backed by 25 tonnes of physical copper stored in Germany",
-      "link": "https://www.coindesk.com/markets/2026/11/02/metals-io-issues-tokens-backed-by-25-tonnes-of-physical-copper-stored-in-germany",
-      "pubDate": "Mon, 02 Nov 2026 09:33:20 +0000"
+      "title": "Big crypto wants the one thing it can’t buy: your vote",
+      "link": "https://www.coindesk.com/opinion/2026/11/02/big-crypto-wants-the-one-thing-it-can-t-buy-your-vote",
+      "pubDate": "Mon, 02 Nov 2026 21:38:53 +0000"
     },
     {
-      "title": "Binance hack fallout, U.S. midterms and jobs report: Crypto Week Ahead",
-      "link": "https://www.coindesk.com/markets/2026/11/02/binance-hack-fallout-u-s-midterms-and-jobs-report-crypto-week-ahead",
-      "pubDate": "Mon, 02 Nov 2026 09:04:49 +0000"
+      "title": "Bitcoin traders eye post-election rally as exchange outflows point to supply squeeze",
+      "link": "https://www.coindesk.com/markets/2026/11/02/bitcoin-traders-eye-post-election-rally-as-exchange-outflows-point-to-supply-squeeze",
+      "pubDate": "Mon, 02 Nov 2026 18:13:57 +0000"
     },
     {
-      "title": "Live updates: Binance records $6 billion outflows after starting withdrawals, less then 4% of total holdings",
-      "link": "https://www.coindesk.com/markets/2026/11/02/live-updates-binance-records-usd6-billion-outflows-after-starting-withdrawals-less-then-4-of-total-holdings",
-      "pubDate": "Mon, 02 Nov 2026 08:49:30 +0000"
+      "title": "EU entity suspected of losing $106 million from crypto exchange accounts, ZachXBT says",
+      "link": "https://www.coindesk.com/tech/2026/11/02/eu-entity-suspected-of-losing-usd106-million-from-crypto-exchange-accounts-zachxbt-says",
+      "pubDate": "Mon, 02 Nov 2026 17:21:04 +0000"
     },
     {
-      "title": "China’s Communist Party calls for a crackdown on corruption that uses crypto and blockchain",
-      "link": "https://www.coindesk.com/markets/2026/11/02/china-s-communist-party-calls-for-a-crackdown-on-corruption-that-uses-crypto-and-blockchain",
-      "pubDate": "Mon, 02 Nov 2026 08:41:28 +0000"
+      "title": "NYSE tokenized stock plans take shape as four more transfer agents join",
+      "link": "https://www.coindesk.com/business/2026/11/02/nyse-taps-wall-street-giant-broadridge-to-bring-shareholder-voting-onto-blockchain-rails",
+      "pubDate": "Mon, 02 Nov 2026 16:41:46 +0000"
     },
     {
-      "title": "Why stealing billions from a crypto exchange can be harder to stop than a bank theft",
-      "link": "https://www.coindesk.com/business/2026/11/02/why-crypto-exchange-hacks-can-be-harder-to-contain-versus-global-banks",
-      "pubDate": "Mon, 02 Nov 2026 08:32:01 +0000"
+      "title": "Brazil’s Mercado Bitcoin halts withdrawals after $40 million drained across 10 chains",
+      "link": "https://www.coindesk.com/business/2026/11/02/brazil-s-mercado-bitcoin-halts-withdrawals-after-usd40-million-drained-across-10-chains",
+      "pubDate": "Mon, 02 Nov 2026 15:53:29 +0000"
     },
     {
-      "title": "Bitcoin ETFs lost $643 million in outflows Friday, and 2026 is barely green now",
-      "link": "https://www.coindesk.com/markets/2026/11/02/bitcoin-etfs-lost-usd643-million-in-outflows-friday-and-2026-is-barely-green-now",
-      "pubDate": "Mon, 02 Nov 2026 06:46:41 +0000"
+      "title": "Nvidia, Costco and Nike join pushback against OKX–ICE tokenized stock plans",
+      "link": "https://www.coindesk.com/business/2026/11/02/nvidia-costco-and-nike-join-pushback-against-okx-ice-tokenized-stock-plans",
+      "pubDate": "Mon, 02 Nov 2026 15:26:43 +0000"
     },
     {
-      "title": "Strangers are begging the Binance hacker for bitcoin, one ‘help me bro’ at a time",
-      "link": "https://www.coindesk.com/tech/2026/11/02/strangers-are-begging-the-binance-hacker-for-bitcoin-one-help-me-bro-at-a-time",
-      "pubDate": "Mon, 02 Nov 2026 05:18:12 +0000"
+      "title": "Anthropic swings to third quarter operating loss as compute costs surge ahead of IPO",
+      "link": "https://www.coindesk.com/markets/2026/11/02/anthropic-swings-to-third-quarter-operating-loss-as-compute-costs-surge-ahead-of-ipo",
+      "pubDate": "Mon, 02 Nov 2026 15:18:55 +0000"
     },
     {
-      "title": "Bitcoin claws back toward $79,000 as markets shake off crypto's biggest hack",
-      "link": "https://www.coindesk.com/markets/2026/11/02/bitcoin-claws-back-toward-usd79-000-as-markets-shake-off-crypto-s-biggest-hack",
-      "pubDate": "Mon, 02 Nov 2026 04:42:22 +0000"
+      "title": "Standard Chartered debuts tokenized deposits in Hong Kong for corporate clients",
+      "link": "https://www.coindesk.com/business/2026/11/02/standard-chartered-debuts-tokenized-deposits-in-hong-kong-for-corporate-clients",
+      "pubDate": "Mon, 02 Nov 2026 15:05:24 +0000"
     },
     {
-      "title": "BTCPay, a bitcoin payment tool, tells users to switch off their servers after reports of drained wallets",
-      "link": "https://www.coindesk.com/tech/2026/11/02/btcpay-a-bitcoin-payment-tool-tells-users-to-switch-off-their-servers-after-reports-of-drained-wallets",
-      "pubDate": "Mon, 02 Nov 2026 04:41:16 +0000"
+      "title": "Crypto's Washington playbook is working. Don't abandon it now.",
+      "link": "https://www.coindesk.com/opinion/2026/11/02/crypto-s-washington-playbook-is-working-don-t-abandon-it-now",
+      "pubDate": "Mon, 02 Nov 2026 15:00:09 +0000"
     },
     {
-      "title": "The crypto reader's guide to the 2026 midterm election: State of Crypto",
-      "link": "https://www.coindesk.com/policy/2026/11/01/the-crypto-reader-s-guide-to-the-2026-midterm-election-state-of-crypto",
-      "pubDate": "Sun, 01 Nov 2026 19:30:00 +0000"
+      "title": "Coinbase downgraded at Morgan Stanley; price target slashed 53% on weak earnings outlook",
+      "link": "https://www.coindesk.com/markets/2026/11/02/morgan-stanley-downgrades-coinbase-slashes-price-target-53-on-weak-earnings-outlook",
+      "pubDate": "Mon, 02 Nov 2026 14:29:33 +0000"
     },
     {
-      "title": "AI agents bypassed crypto spending limits without human approval, researchers find in a new test",
-      "link": "https://www.coindesk.com/tech/2026/11/01/ai-agents-bypassed-crypto-spending-limits-without-human-approval-researchers-find-in-a-new-test",
-      "pubDate": "Sun, 01 Nov 2026 17:00:00 +0000"
+      "title": "Tokenization firm tZERO plans to go public in $350 million SPAC deal",
+      "link": "https://www.coindesk.com/business/2026/11/01/tokenization-firm-tzero-plans-to-go-public-in-usd350-million-spac-deal",
+      "pubDate": "Mon, 02 Nov 2026 14:00:00 +0000"
     },
     {
-      "title": "The key races to watch for the 2026 election",
-      "link": "https://www.coindesk.com/policy/2026/11/01/the-key-races-to-watch-for-the-2026-election",
-      "pubDate": "Sun, 01 Nov 2026 15:00:00 +0000"
+      "title": "XRP Ledger set to fix flaw that could have let stablecoin partners print new tokens",
+      "link": "https://www.coindesk.com/tech/2026/11/02/xrp-ledger-set-to-fix-flaw-that-could-let-stablecoin-partners-print-new-tokens",
+      "pubDate": "Mon, 02 Nov 2026 12:37:24 +0000"
     }
   ]
 }
