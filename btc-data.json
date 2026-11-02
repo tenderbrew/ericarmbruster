@@ -1,13 +1,13 @@
 {
-  "fetchedAt": "2026-11-02T00:37:48.300Z",
+  "fetchedAt": "2026-11-02T10:54:59.066Z",
   "price": {
-    "usd": 78100,
-    "time": 1793579406
+    "usd": 77949,
+    "time": 1793616606
   },
   "moves": {
-    "d1": -0.26945736166720247,
-    "d7": -2.4109052712645074,
-    "d30": -7.838763236584779
+    "d1": -0.4404421873283493,
+    "d7": -2.5995858513418346,
+    "d30": -8.016949494603665
   },
   "history90d": [
     {
@@ -360,72 +360,117 @@
     },
     {
       "date": "2026-10-31",
-      "close": 77223.17102624816
+      "close": 77275.05222635057
     },
     {
       "date": "2026-11-01",
-      "close": 77474.07610954811
+      "close": 77520.88632950958
     },
     {
       "date": "2026-11-02",
-      "close": 78311.0147943597
+      "close": 78293.83909746421
     },
     {
       "date": "2026-11-02",
-      "close": 78046.69790226308
+      "close": 77930.52728575456
     }
   ],
   "blocks": [
     {
-      "height": 974193,
-      "id": "000000000000000000002178e9bf37d4f1defcb9aff9e0c35f2c83aa7871ff5a",
-      "timestamp": 1793579092,
-      "txCount": 2783
+      "height": 974247,
+      "id": "000000000000000000001ed975f67e5cf6240953a86030abbd107f0de17faf8c",
+      "timestamp": 1793616500,
+      "txCount": 1633
     },
     {
-      "height": 974192,
-      "id": "000000000000000000004fa9766895fbbb563015e86fc8b5f1d44fb5f8c65eb7",
-      "timestamp": 1793578613,
-      "txCount": 3494
+      "height": 974246,
+      "id": "000000000000000000011a4aff4874b2271f716aaa78f6f0b5d8610e5f6fc7b2",
+      "timestamp": 1793616357,
+      "txCount": 1535
     },
     {
-      "height": 974191,
-      "id": "0000000000000000000176faa4d8ebd13f91d3610e1957359f176d5d5f5b6cb5",
-      "timestamp": 1793578016,
-      "txCount": 3272
+      "height": 974245,
+      "id": "00000000000000000000d6ca93c32805774847dccf88537500f9365534cdfe98",
+      "timestamp": 1793616178,
+      "txCount": 1767
     },
     {
-      "height": 974190,
-      "id": "000000000000000000001b5f5d73ab6b8ba6ba5b4413a506f24b1daff7846692",
-      "timestamp": 1793574781,
-      "txCount": 7239
+      "height": 974244,
+      "id": "00000000000000000001b99d98559224bcb8da0757bfd1f1ba8591389a7905c4",
+      "timestamp": 1793616052,
+      "txCount": 3221
     },
     {
-      "height": 974189,
-      "id": "0000000000000000000161944dad71482f883973bac2d0826d4ba7abd1b4e564",
-      "timestamp": 1793574701,
-      "txCount": 3087
+      "height": 974243,
+      "id": "00000000000000000000b2fb561dc4e588cba76d80c2b809eedf6190757ffc65",
+      "timestamp": 1793615227,
+      "txCount": 3052
     },
     {
-      "height": 974188,
-      "id": "00000000000000000001203a28483de1f96e7a55c83c9a695e8a183d0e97e620",
-      "timestamp": 1793573169,
-      "txCount": 7070
+      "height": 974242,
+      "id": "0000000000000000000078a99967374680cde990f74b1ce6a42f9cc68f3b85ac",
+      "timestamp": 1793613693,
+      "txCount": 1877
     },
     {
-      "height": 974187,
-      "id": "00000000000000000001e4b76358830cd68da6dda7d95fb9ebf1b621a189cf01",
-      "timestamp": 1793572996,
-      "txCount": 6247
+      "height": 974241,
+      "id": "00000000000000000001340b9411c2fc22054a5268e02522f9a258508c528019",
+      "timestamp": 1793613159,
+      "txCount": 3204
     },
     {
-      "height": 974186,
-      "id": "00000000000000000000aae5b5261cfefc3aed6c8258f639990ca26dacd2e9d0",
-      "timestamp": 1793572484,
-      "txCount": 5480
+      "height": 974240,
+      "id": "0000000000000000000115a55d3df42b8efaaa673ad2385e00d2b451ad887f63",
+      "timestamp": 1793612285,
+      "txCount": 166
     }
   ],
   "news": [
+    {
+      "title": "Metals.io issues tokens backed by 25 tonnes of physical copper stored in Germany",
+      "link": "https://www.coindesk.com/markets/2026/11/02/metals-io-issues-tokens-backed-by-25-tonnes-of-physical-copper-stored-in-germany",
+      "pubDate": "Mon, 02 Nov 2026 09:33:20 +0000"
+    },
+    {
+      "title": "Binance hack fallout, U.S. midterms and jobs report: Crypto Week Ahead",
+      "link": "https://www.coindesk.com/markets/2026/11/02/binance-hack-fallout-u-s-midterms-and-jobs-report-crypto-week-ahead",
+      "pubDate": "Mon, 02 Nov 2026 09:04:49 +0000"
+    },
+    {
+      "title": "Live updates: Binance records $6 billion outflows after starting withdrawals, less then 4% of total holdings",
+      "link": "https://www.coindesk.com/markets/2026/11/02/live-updates-binance-records-usd6-billion-outflows-after-starting-withdrawals-less-then-4-of-total-holdings",
+      "pubDate": "Mon, 02 Nov 2026 08:49:30 +0000"
+    },
+    {
+      "title": "China’s Communist Party calls for a crackdown on corruption that uses crypto and blockchain",
+      "link": "https://www.coindesk.com/markets/2026/11/02/china-s-communist-party-calls-for-a-crackdown-on-corruption-that-uses-crypto-and-blockchain",
+      "pubDate": "Mon, 02 Nov 2026 08:41:28 +0000"
+    },
+    {
+      "title": "Why stealing billions from a crypto exchange can be harder to stop than a bank theft",
+      "link": "https://www.coindesk.com/business/2026/11/02/why-crypto-exchange-hacks-can-be-harder-to-contain-versus-global-banks",
+      "pubDate": "Mon, 02 Nov 2026 08:32:01 +0000"
+    },
+    {
+      "title": "Bitcoin ETFs lost $643 million in outflows Friday, and 2026 is barely green now",
+      "link": "https://www.coindesk.com/markets/2026/11/02/bitcoin-etfs-lost-usd643-million-in-outflows-friday-and-2026-is-barely-green-now",
+      "pubDate": "Mon, 02 Nov 2026 06:46:41 +0000"
+    },
+    {
+      "title": "Strangers are begging the Binance hacker for bitcoin, one ‘help me bro’ at a time",
+      "link": "https://www.coindesk.com/tech/2026/11/02/strangers-are-begging-the-binance-hacker-for-bitcoin-one-help-me-bro-at-a-time",
+      "pubDate": "Mon, 02 Nov 2026 05:18:12 +0000"
+    },
+    {
+      "title": "Bitcoin claws back toward $79,000 as markets shake off crypto's biggest hack",
+      "link": "https://www.coindesk.com/markets/2026/11/02/bitcoin-claws-back-toward-usd79-000-as-markets-shake-off-crypto-s-biggest-hack",
+      "pubDate": "Mon, 02 Nov 2026 04:42:22 +0000"
+    },
+    {
+      "title": "BTCPay, a bitcoin payment tool, tells users to switch off their servers after reports of drained wallets",
+      "link": "https://www.coindesk.com/tech/2026/11/02/btcpay-a-bitcoin-payment-tool-tells-users-to-switch-off-their-servers-after-reports-of-drained-wallets",
+      "pubDate": "Mon, 02 Nov 2026 04:41:16 +0000"
+    },
     {
       "title": "The crypto reader's guide to the 2026 midterm election: State of Crypto",
       "link": "https://www.coindesk.com/policy/2026/11/01/the-crypto-reader-s-guide-to-the-2026-midterm-election-state-of-crypto",
@@ -440,51 +485,6 @@
       "title": "The key races to watch for the 2026 election",
       "link": "https://www.coindesk.com/policy/2026/11/01/the-key-races-to-watch-for-the-2026-election",
       "pubDate": "Sun, 01 Nov 2026 15:00:00 +0000"
-    },
-    {
-      "title": "Crypto card startups are racking up losses just to buy your loyalty with big rewards",
-      "link": "https://www.coindesk.com/business/2026/11/01/crypto-card-startups-are-racking-up-losses-just-to-buy-your-loyalty-with-big-rewards",
-      "pubDate": "Sun, 01 Nov 2026 15:00:00 +0000"
-    },
-    {
-      "title": "Crypto PACs made big Republican push in final weeks before November 3 election",
-      "link": "https://www.coindesk.com/policy/2026/11/01/crypto-pacs-made-big-republican-push-in-final-weeks-before-november-3-election",
-      "pubDate": "Sun, 01 Nov 2026 14:00:00 +0000"
-    },
-    {
-      "title": "Sherrod Brown's Ohio edge threatens a rough go for crypto next year",
-      "link": "https://www.coindesk.com/news-analysis/2026/11/01/sherrod-brown-s-ohio-edge-threatens-a-rough-go-for-crypto-next-year",
-      "pubDate": "Sun, 01 Nov 2026 13:00:00 +0000"
-    },
-    {
-      "title": "Binance opens crypto withdrawals in phases starting with bitcoin following $6.3 billion hack",
-      "link": "https://www.coindesk.com/markets/2026/11/01/binance-opens-crypto-withdrawals-in-phases-starting-with-bitcoin-following-usd6-3-billion-hack",
-      "pubDate": "Sun, 01 Nov 2026 10:35:42 +0000"
-    },
-    {
-      "title": "FBI confirms North Korea's role in $6 billion Binance hack, asks DeFi community to block BTC, ETH, SOL addresses",
-      "link": "https://www.coindesk.com/policy/2026/10/31/fbi-confirms-north-korea-s-role-in-usd6-billion-binance-hack-asks-defi-community-to-block-btc-eth-sol-addresses",
-      "pubDate": "Sun, 01 Nov 2026 01:10:05 +0000"
-    },
-    {
-      "title": "Bitcoin's white paper turns 18, and small businesses are still paying for the bailouts it answered",
-      "link": "https://www.coindesk.com/opinion/2026/10/31/bitcoin-s-white-paper-turns-18-and-small-businesses-are-still-paying-for-the-bailouts-it-answered",
-      "pubDate": "Sat, 31 Oct 2026 18:00:00 +0000"
-    },
-    {
-      "title": "A stolen iPhone, $14,000 in losses and London's crypto theft problem",
-      "link": "https://www.coindesk.com/business/2026/11/01/a-stolen-iphone-usd14-000-in-losses-and-london-s-crypto-theft-problem",
-      "pubDate": "Sat, 31 Oct 2026 16:09:30 +0000"
-    },
-    {
-      "title": "Traders are already placing leveraged bets on Anthropic’s IPO using crypto contracts",
-      "link": "https://www.coindesk.com/business/2026/10/31/traders-are-already-placing-leveraged-bets-on-anthropic-s-ipo-using-crypto-contracts",
-      "pubDate": "Sat, 31 Oct 2026 16:00:00 +0000"
-    },
-    {
-      "title": "Binance says it has replaced 90% of stolen crypto after massive $6.3 billion breach",
-      "link": "https://www.coindesk.com/business/2026/10/31/binance-says-it-has-replaced-90-of-stolen-crypto-after-massive-usd6-3-billion-breach",
-      "pubDate": "Sat, 31 Oct 2026 15:24:10 +0000"
     }
   ]
 }
