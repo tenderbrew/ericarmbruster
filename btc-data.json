@@ -1,19 +1,15 @@
 {
-  "fetchedAt": "2026-11-02T21:41:02.467Z",
+  "fetchedAt": "2026-11-03T06:40:12.770Z",
   "price": {
-    "usd": 76739,
-    "time": 1793655308
+    "usd": 76664,
+    "time": 1793687706
   },
   "moves": {
-    "d1": -1.9859022311176533,
-    "d7": -4.111529572491257,
-    "d30": -9.444799641642499
+    "d1": -0.0591913636142527,
+    "d7": -5.119788959813998,
+    "d30": -11.360579202299858
   },
   "history90d": [
-    {
-      "date": "2026-08-05",
-      "close": 64062.173729779366
-    },
     {
       "date": "2026-08-06",
       "close": 64608.705388357404
@@ -371,61 +367,80 @@
       "close": 78293.83909746421
     },
     {
-      "date": "2026-11-02",
-      "close": 76818.76065400724
+      "date": "2026-11-03",
+      "close": 76709.40534304293
+    },
+    {
+      "date": "2026-11-03",
+      "close": 76694.79515654159
     }
   ],
   "blocks": [
     {
-      "height": 974305,
-      "id": "000000000000000000004f8107100798b9442fc008a47a53b5982dc77ee8ae01",
-      "timestamp": 1793655143,
-      "txCount": 4877
+      "height": 974360,
+      "id": "00000000000000000000cbf8110d9a023e512e4b61e003432031cfa476c1c8f4",
+      "timestamp": 1793686339,
+      "txCount": 6749
     },
     {
-      "height": 974304,
-      "id": "00000000000000000000290cca2354d3e79e0e38407e5419745e71b6765b2827",
-      "timestamp": 1793654555,
-      "txCount": 7956
+      "height": 974359,
+      "id": "00000000000000000001963943b2b0e95df9392cc7edc87347a4b726ccf1dd93",
+      "timestamp": 1793686163,
+      "txCount": 5736
     },
     {
-      "height": 974303,
-      "id": "0000000000000000000026cecd9233bae578520f05c17174c8138c72e5cf3ccc",
-      "timestamp": 1793654541,
-      "txCount": 4321
+      "height": 974358,
+      "id": "000000000000000000005a8950236c672b48f4afd0ffffb517d1fb909141831f",
+      "timestamp": 1793685922,
+      "txCount": 6870
     },
     {
-      "height": 974302,
-      "id": "0000000000000000000081d60b60b557af2d2efe8a307e2c5218b96eac13c71b",
-      "timestamp": 1793653698,
-      "txCount": 6701
+      "height": 974357,
+      "id": "0000000000000000000147a1beea8adee366655ec36caac827b5ea266cd89f02",
+      "timestamp": 1793685849,
+      "txCount": 6683
     },
     {
-      "height": 974301,
-      "id": "00000000000000000000198157222492a1f6ec6c342f7184941e818dd45b5b83",
-      "timestamp": 1793653474,
-      "txCount": 7031
+      "height": 974356,
+      "id": "000000000000000000010b1a2662b14f568d92188e16489b0fe419450653998c",
+      "timestamp": 1793685626,
+      "txCount": 7497
     },
     {
-      "height": 974300,
-      "id": "00000000000000000000f53d3b379dd6c345ce3fe1f28859825d5b254140fc0b",
-      "timestamp": 1793653405,
-      "txCount": 3137
+      "height": 974355,
+      "id": "00000000000000000001cbbe7ea10138468dcbead72bc57c85d4d1fe0f744649",
+      "timestamp": 1793685564,
+      "txCount": 6317
     },
     {
-      "height": 974299,
-      "id": "000000000000000000009102d90ff215ef063b012e38c6c5cf99f54aa7bc8266",
-      "timestamp": 1793652446,
-      "txCount": 3421
+      "height": 974354,
+      "id": "00000000000000000000cfe65000ce845af59b6d24c83a3022ecc2df6095cb62",
+      "timestamp": 1793685366,
+      "txCount": 4346
     },
     {
-      "height": 974298,
-      "id": "0000000000000000000101a0ab164a6e86da72860ef47d33d9d0aacaad69ac61",
-      "timestamp": 1793652088,
-      "txCount": 4781
+      "height": 974353,
+      "id": "000000000000000000017ed49b37532f214aabd359f22f93813b06ca9824434e",
+      "timestamp": 1793684720,
+      "txCount": 6434
     }
   ],
   "news": [
+    {
+      "title": "Binance has spent half its SAFU bitcoin, about $580 million worth, data shows",
+      "link": "https://www.coindesk.com/markets/2026/11/03/binance-has-spent-half-its-safu-bitcoin-about-usd580-million-worth-data-shows",
+      "pubDate": "Tue, 03 Nov 2026 05:36:56 +0000"
+    },
+    {
+      "title": "Arbitrum’s council moved $30 million of Binance hack funds without the hacker’s key",
+      "link": "https://www.coindesk.com/tech/2026/11/03/arbitrum-s-council-moved-usd30-million-of-binance-hack-funds-without-the-hacker-s-key",
+      "pubDate": "Tue, 03 Nov 2026 05:25:12 +0000"
+    },
+    {
+      "title": "Bitcoin drops below $77,000 as chip rout deepens ahead of U.S. midterm vote",
+      "link": "https://www.coindesk.com/markets/2026/11/03/bitcoin-drops-below-usd77-000-as-chip-rout-deepens-ahead-of-u-s-midterm-vote",
+      "pubDate": "Tue, 03 Nov 2026 04:48:17 +0000"
+    },
     {
       "title": "Big crypto wants the one thing it can’t buy: your vote",
       "link": "https://www.coindesk.com/opinion/2026/11/02/big-crypto-wants-the-one-thing-it-can-t-buy-your-vote",
@@ -470,21 +485,6 @@
       "title": "Crypto's Washington playbook is working. Don't abandon it now.",
       "link": "https://www.coindesk.com/opinion/2026/11/02/crypto-s-washington-playbook-is-working-don-t-abandon-it-now",
       "pubDate": "Mon, 02 Nov 2026 15:00:09 +0000"
-    },
-    {
-      "title": "Coinbase downgraded at Morgan Stanley; price target slashed 53% on weak earnings outlook",
-      "link": "https://www.coindesk.com/markets/2026/11/02/morgan-stanley-downgrades-coinbase-slashes-price-target-53-on-weak-earnings-outlook",
-      "pubDate": "Mon, 02 Nov 2026 14:29:33 +0000"
-    },
-    {
-      "title": "Tokenization firm tZERO plans to go public in $350 million SPAC deal",
-      "link": "https://www.coindesk.com/business/2026/11/01/tokenization-firm-tzero-plans-to-go-public-in-usd350-million-spac-deal",
-      "pubDate": "Mon, 02 Nov 2026 14:00:00 +0000"
-    },
-    {
-      "title": "XRP Ledger set to fix flaw that could have let stablecoin partners print new tokens",
-      "link": "https://www.coindesk.com/tech/2026/11/02/xrp-ledger-set-to-fix-flaw-that-could-let-stablecoin-partners-print-new-tokens",
-      "pubDate": "Mon, 02 Nov 2026 12:37:24 +0000"
     }
   ]
 }
