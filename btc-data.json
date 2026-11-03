@@ -1,13 +1,13 @@
 {
-  "fetchedAt": "2026-11-03T16:59:22.159Z",
+  "fetchedAt": "2026-11-03T23:15:47.027Z",
   "price": {
-    "usd": 77617,
-    "time": 1793724906
+    "usd": 77733,
+    "time": 1793747406
   },
   "moves": {
-    "d1": 1.1831595524672833,
-    "d7": -3.9403456602040476,
-    "d30": -10.258714337171405
+    "d1": 1.334379601014457,
+    "d7": -3.796782782182262,
+    "d30": -10.124594374574446
   },
   "history90d": [
     {
@@ -372,60 +372,75 @@
     },
     {
       "date": "2026-11-03",
-      "close": 77619.66744133919
+      "close": 77801.52284041955
     }
   ],
   "blocks": [
     {
-      "height": 974411,
-      "id": "000000000000000000013f18704a2b76b319377e884879acb162515668a70edb",
-      "timestamp": 1793725040,
-      "txCount": 3027
+      "height": 974452,
+      "id": "00000000000000000000b8523c49375d2c6dce08532edf66ffc5d7d71c2d1173",
+      "timestamp": 1793746414,
+      "txCount": 6533
     },
     {
-      "height": 974410,
-      "id": "00000000000000000000977b0334d4d25f9595f143115c0a799ae4cc7f269a75",
-      "timestamp": 1793724151,
-      "txCount": 3431
+      "height": 974451,
+      "id": "00000000000000000000942ae8d55e64fab0faacd2c292687bb278af461d9d58",
+      "timestamp": 1793746143,
+      "txCount": 6459
     },
     {
-      "height": 974409,
-      "id": "00000000000000000000c64b1aad7c56ed880645b2be73fb8380bb7919ede29f",
-      "timestamp": 1793723117,
-      "txCount": 3473
+      "height": 974450,
+      "id": "0000000000000000000189bc8b7ac805b3339020bbdf8ac21966a81fe3cc6e09",
+      "timestamp": 1793745886,
+      "txCount": 6739
     },
     {
-      "height": 974408,
-      "id": "00000000000000000001698f1847e675d8fe3d6e35ff57577d2fa9889f1ef269",
-      "timestamp": 1793722073,
-      "txCount": 6917
+      "height": 974449,
+      "id": "00000000000000000000dd62cddd1a98d0768ba8b5d5244eb013aeb3c253b01d",
+      "timestamp": 1793745832,
+      "txCount": 5072
     },
     {
-      "height": 974407,
-      "id": "000000000000000000014c4de34ac3433d6f5e6c799b7218956b260cc8cced7a",
-      "timestamp": 1793722022,
-      "txCount": 2063
+      "height": 974448,
+      "id": "00000000000000000000be64d1a56c0d0b5f53041b86ce729d72febe7f376b2f",
+      "timestamp": 1793745396,
+      "txCount": 4376
     },
     {
-      "height": 974406,
-      "id": "0000000000000000000009004b3e5655cb211e84ead3b3e5b95ecce097249d3f",
-      "timestamp": 1793721631,
-      "txCount": 3731
+      "height": 974447,
+      "id": "000000000000000000013a6be71c4cd1965da243ceebec19dd2a5cced9b74076",
+      "timestamp": 1793744869,
+      "txCount": 5963
     },
     {
-      "height": 974405,
-      "id": "00000000000000000000118c67f28a03d7bbea4b79a4ab76c31f085295a28eab",
-      "timestamp": 1793721603,
-      "txCount": 2729
+      "height": 974446,
+      "id": "00000000000000000000c6c41b3d8826f508831f1952fb0a400c1770f50310c5",
+      "timestamp": 1793744403,
+      "txCount": 3338
     },
     {
-      "height": 974404,
-      "id": "000000000000000000016c3b674a447e0bb177ec67c37fbef0f613d8d12d0015",
-      "timestamp": 1793721081,
-      "txCount": 1057
+      "height": 974445,
+      "id": "00000000000000000000bde0370fd6b1e37ea46e6d7084214414d2a88da1757a",
+      "timestamp": 1793743255,
+      "txCount": 5239
     }
   ],
   "news": [
+    {
+      "title": "What happens if North Korea steals Wall Street's tokenized assets next",
+      "link": "https://www.coindesk.com/business/2026/11/03/what-happens-if-north-korea-steals-wall-street-s-tokenized-assets-next",
+      "pubDate": "Tue, 03 Nov 2026 23:00:07 +0000"
+    },
+    {
+      "title": "CFTC gets into legal clash over stock perps after having cleared path for crypto version",
+      "link": "https://www.coindesk.com/policy/2026/11/03/cftc-gets-into-legal-clash-over-stock-perps-after-having-cleared-path-for-crypto-version",
+      "pubDate": "Tue, 03 Nov 2026 22:14:44 +0000"
+    },
+    {
+      "title": "Justin Sun seeks sanctions against Trump-linked World Liberty Financial over UAE ties",
+      "link": "https://www.coindesk.com/policy/2026/11/03/justin-sun-seeks-sanctions-against-trump-linked-world-liberty-financial-over-uae-ties",
+      "pubDate": "Tue, 03 Nov 2026 16:55:10 +0000"
+    },
     {
       "title": "South Korea's president says country needs a ‘cybersecurity czar’ following $6.3 billion Binance hack",
       "link": "https://www.coindesk.com/tech/2026/11/03/south-korea-s-president-says-country-needs-a-cybersecurity-czar-following-usd6-3-billion-binance-hack",
@@ -470,21 +485,6 @@
       "title": "Binance net outflows reach $5.3 billion after record hack. CEO says recovery underway",
       "link": "https://www.coindesk.com/business/2026/11/03/binance-net-outflows-reach-usd5-3b-after-record-hack-though-ceo-cites-recovery",
       "pubDate": "Tue, 03 Nov 2026 12:57:28 +0000"
-    },
-    {
-      "title": "Bitcoin is breaking a midterm election pattern going back to 2014",
-      "link": "https://www.coindesk.com/daybook-us/2026/11/03/bitcoin-is-breaking-a-midterm-election-pattern-going-back-to-2014",
-      "pubDate": "Tue, 03 Nov 2026 12:30:09 +0000"
-    },
-    {
-      "title": "ETHGas wants to bring Wall Street to public Ethereum by selling advance block reservations",
-      "link": "https://www.coindesk.com/business/2026/11/03/ethgas-courts-wall-street-with-ethereum-blockspace-but-compensation-for-missed-trades-is-zero",
-      "pubDate": "Tue, 03 Nov 2026 12:01:05 +0000"
-    },
-    {
-      "title": "Bitcoin steadies after dip to $76,300 as ETF outflows and midterm elections weigh on crypto",
-      "link": "https://www.coindesk.com/markets/2026/11/03/bitcoin-steadies-after-dip-to-usd76-300-as-etf-outflows-and-midterm-elections-weigh-on-crypto",
-      "pubDate": "Tue, 03 Nov 2026 11:28:00 +0000"
     }
   ]
 }
