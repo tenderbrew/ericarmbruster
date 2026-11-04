@@ -1,13 +1,13 @@
 {
-  "fetchedAt": "2026-11-04T06:07:35.622Z",
+  "fetchedAt": "2026-11-04T14:24:04.313Z",
   "price": {
-    "usd": 77814,
-    "time": 1793772306
+    "usd": 78285,
+    "time": 1793802007
   },
   "moves": {
-    "d1": 0.5549044080776833,
-    "d7": -4.257644774326019,
-    "d30": -9.276893235902584
+    "d1": 1.1635527229850728,
+    "d7": -3.678126316062824,
+    "d30": -8.727755763392619
   },
   "history90d": [
     {
@@ -372,119 +372,119 @@
     },
     {
       "date": "2026-11-04",
-      "close": 77774.95326832392
+      "close": 78322.85265959815
     }
   ],
   "blocks": [
     {
-      "height": 974490,
-      "id": "000000000000000000004a1670be404db3a7bc3b08ce48a8fd848a7b0ff94480",
-      "timestamp": 1793772209,
-      "txCount": 2975
+      "height": 974536,
+      "id": "000000000000000000000413f4a91afac2b96304bddccdad158fabbfee71423a",
+      "timestamp": 1793801922,
+      "txCount": 7529
     },
     {
-      "height": 974489,
-      "id": "0000000000000000000075aecf30ad054cb6ebe90f82adea9afe635468bd0475",
-      "timestamp": 1793770882,
-      "txCount": 1975
+      "height": 974535,
+      "id": "000000000000000000007890320f4dcd3b76725ac272e81fc987e506e440a695",
+      "timestamp": 1793801860,
+      "txCount": 3215
     },
     {
-      "height": 974488,
-      "id": "00000000000000000000a071d5c5878177a86f060b87b3597b8ad8e46243bacc",
-      "timestamp": 1793770791,
-      "txCount": 5507
+      "height": 974534,
+      "id": "0000000000000000000146b09679b02b288b46aaae48bdd38149041af7201fb5",
+      "timestamp": 1793801138,
+      "txCount": 5483
     },
     {
-      "height": 974487,
-      "id": "00000000000000000000603d3ffc80237bee68c42725e9eec30f6ee2c64a0e49",
-      "timestamp": 1793770297,
-      "txCount": 4628
+      "height": 974533,
+      "id": "00000000000000000000edc5e1ed1ff95db154803c98356e3856e8eb8c74fd2d",
+      "timestamp": 1793801093,
+      "txCount": 2027
     },
     {
-      "height": 974486,
-      "id": "00000000000000000000f56f58f95a2f5dd430883afa3910329305e03430b97c",
-      "timestamp": 1793769915,
-      "txCount": 5580
+      "height": 974532,
+      "id": "000000000000000000003208a8542600c7c2cb1898759366f2a8b634876acaf6",
+      "timestamp": 1793800738,
+      "txCount": 3500
     },
     {
-      "height": 974485,
-      "id": "00000000000000000001c7a63851b68e1d322e39f950c38dfaa59c953377563a",
-      "timestamp": 1793769284,
-      "txCount": 4518
+      "height": 974531,
+      "id": "000000000000000000019661ced1600aa04f001865ea805462549c06aef6c3be",
+      "timestamp": 1793800692,
+      "txCount": 4047
     },
     {
-      "height": 974484,
-      "id": "00000000000000000001db3692f60243aaa2b07feb7a376b6263ab3598410c92",
-      "timestamp": 1793768634,
-      "txCount": 3808
+      "height": 974530,
+      "id": "000000000000000000009fba11c5f69c7c695c12e9034ff6cbd40ef81d7029f2",
+      "timestamp": 1793798695,
+      "txCount": 3972
     },
     {
-      "height": 974483,
-      "id": "00000000000000000000a20e23b7711815ffa7532d5f97037b3dfcfd503e1f53",
-      "timestamp": 1793768355,
-      "txCount": 3867
+      "height": 974529,
+      "id": "00000000000000000001d5e719a2618b73f61278ed31a380681ab0e712d590a9",
+      "timestamp": 1793798581,
+      "txCount": 3769
     }
   ],
   "news": [
     {
+      "title": "Live updates: Bitcoin and stocks reverse overnight plunge following Blue Wave landslide",
+      "link": "https://www.coindesk.com/tech/2026/11/04/live-updates-bitcoin-and-stocks-reverse-overnight-plunge-following-blue-wave-landslide",
+      "pubDate": "Wed, 04 Nov 2026 14:00:53 +0000"
+    },
+    {
+      "title": "Global asset manager Schroders brings emerging market bond fund to Solana",
+      "link": "https://www.coindesk.com/business/2026/11/04/global-asset-manager-schroders-brings-emerging-market-bond-fund-to-solana",
+      "pubDate": "Wed, 04 Nov 2026 13:00:00 +0000"
+    },
+    {
+      "title": "THORChain's RUNE jumps 10% as North Korean hackers resume laundering Binance loot",
+      "link": "https://www.coindesk.com/markets/2026/11/04/thorchain-s-rune-jumps-10-as-north-korean-hackers-resume-laundering-binance-loot",
+      "pubDate": "Wed, 04 Nov 2026 12:49:56 +0000"
+    },
+    {
+      "title": "Circle beats earnings expectations on strong revenue, but cuts 5% of its workforce",
+      "link": "https://www.coindesk.com/business/2026/11/04/circle-beats-earnings-and-revenue-estimates-on-soaring-usdc-transaction-volume",
+      "pubDate": "Wed, 04 Nov 2026 12:33:54 +0000"
+    },
+    {
+      "title": "Here's how analysts are reacting to the new blue Congress",
+      "link": "https://www.coindesk.com/daybook-us/2026/11/04/here-s-how-analysts-are-reacting-to-the-new-blue-congress",
+      "pubDate": "Wed, 04 Nov 2026 12:14:11 +0000"
+    },
+    {
+      "title": "Bitcoin rebounds from midterm dip as DeFi leads gains",
+      "link": "https://www.coindesk.com/markets/2026/11/04/bitcoin-rebounds-from-midterm-dip-as-defi-leads-gains",
+      "pubDate": "Wed, 04 Nov 2026 10:38:58 +0000"
+    },
+    {
+      "title": "ZachXBT names French bank Crédit Mutuel Arkéa as suspected victim of $133 million crypto theft",
+      "link": "https://www.coindesk.com/business/2026/11/04/zachxbt-names-french-bank-credit-mutuel-arkea-as-suspected-victim-of-usd133-million-crypto-theft",
+      "pubDate": "Wed, 04 Nov 2026 10:18:50 +0000"
+    },
+    {
+      "title": "Elon Musk floats space data centers as Democratic sweep puts pressure on AI trade",
+      "link": "https://www.coindesk.com/markets/2026/11/04/elon-musk-floats-space-data-centers-as-democratic-sweep-puts-pressure-on-ai-trade",
+      "pubDate": "Wed, 04 Nov 2026 10:03:33 +0000"
+    },
+    {
+      "title": "Morgan Stanley says it is among the first banks to tokenize real world assets",
+      "link": "https://www.coindesk.com/markets/2026/11/04/morgan-stanley-says-it-is-among-the-first-banks-to-put-u-s-stocks-and-treasuries-on-a-blockchain",
+      "pubDate": "Wed, 04 Nov 2026 09:22:58 +0000"
+    },
+    {
+      "title": "Zcash grants committee drops plan to redirect 98,000 ZEC to future mining rewards",
+      "link": "https://www.coindesk.com/markets/2026/11/04/zcash-grants-committee-drops-plan-to-redirect-98-000-zec-to-future-mining-rewards",
+      "pubDate": "Wed, 04 Nov 2026 08:04:04 +0000"
+    },
+    {
+      "title": "Bitcoin rises to $78,300 in V-shaped comeback as midterm election uncertainty fades",
+      "link": "https://www.coindesk.com/markets/2026/11/04/bitcoin-knocks-on-usd78-000-in-v-shaped-comeback-as-midterm-uncertainty-fades",
+      "pubDate": "Wed, 04 Nov 2026 06:16:40 +0000"
+    },
+    {
       "title": "Jack Dorsey's Block faces $764 million DOJ settlement as bitcoin profit plunges 50%",
       "link": "https://www.coindesk.com/markets/2026/11/04/jack-dorsey-s-block-faces-usd764-million-doj-settlement-as-bitcoin-profit-plunges-50",
       "pubDate": "Wed, 04 Nov 2026 06:06:04 +0000"
-    },
-    {
-      "title": "U.S.-sanctioned Moscow Exchange to list bitcoin and Tether’s USDT in December",
-      "link": "https://www.coindesk.com/markets/2026/11/04/u-s-sanctioned-moscow-exchange-to-list-bitcoin-and-tether-s-usdt-in-december",
-      "pubDate": "Wed, 04 Nov 2026 05:14:12 +0000"
-    },
-    {
-      "title": "South Korea's ruling party wants to delay its crypto tax again",
-      "link": "https://www.coindesk.com/policy/2026/11/04/south-korea-s-ruling-party-wants-to-put-off-its-crypto-tax-again",
-      "pubDate": "Wed, 04 Nov 2026 05:09:40 +0000"
-    },
-    {
-      "title": "Democrats surge toward Senate, House majorities, with crypto braced for new direction",
-      "link": "https://www.coindesk.com/policy/2026/11/03/democrats-surge-toward-senate-house-majorities-with-crypto-braced-for-new-direction",
-      "pubDate": "Wed, 04 Nov 2026 04:55:11 +0000"
-    },
-    {
-      "title": "Bitcoin briefly sinks to $75,700 as bets on a Democratic sweep rattle markets",
-      "link": "https://www.coindesk.com/markets/2026/11/04/bitcoin-briefly-sinks-to-usd75-700-as-bets-on-a-democratic-sweep-rattle-markets",
-      "pubDate": "Wed, 04 Nov 2026 04:48:16 +0000"
-    },
-    {
-      "title": "Live updates: Crypto's election gamble falters as Democratic victories usher in a 'blue wave'",
-      "link": "https://www.coindesk.com/tech/2026/11/03/election-2026-coindesk-live-blog",
-      "pubDate": "Wed, 04 Nov 2026 00:00:00 +0000"
-    },
-    {
-      "title": "What voters said about their views on crypto",
-      "link": "https://www.coindesk.com/policy/2026/11/03/what-voters-said-about-their-views-on-crypto",
-      "pubDate": "Tue, 03 Nov 2026 23:19:44 +0000"
-    },
-    {
-      "title": "What happens if North Korea steals Wall Street's tokenized assets next",
-      "link": "https://www.coindesk.com/business/2026/11/03/what-happens-if-north-korea-steals-wall-street-s-tokenized-assets-next",
-      "pubDate": "Tue, 03 Nov 2026 23:00:07 +0000"
-    },
-    {
-      "title": "CFTC gets into legal clash over stock perps after having cleared path for crypto version",
-      "link": "https://www.coindesk.com/policy/2026/11/03/cftc-gets-into-legal-clash-over-stock-perps-after-having-cleared-path-for-crypto-version",
-      "pubDate": "Tue, 03 Nov 2026 22:14:44 +0000"
-    },
-    {
-      "title": "Justin Sun seeks sanctions against Trump-linked World Liberty Financial over UAE ties",
-      "link": "https://www.coindesk.com/policy/2026/11/03/justin-sun-seeks-sanctions-against-trump-linked-world-liberty-financial-over-uae-ties",
-      "pubDate": "Tue, 03 Nov 2026 16:55:10 +0000"
-    },
-    {
-      "title": "South Korea's president says country needs a ‘cybersecurity czar’ following $6.3 billion Binance hack",
-      "link": "https://www.coindesk.com/tech/2026/11/03/south-korea-s-president-says-country-needs-a-cybersecurity-czar-following-usd6-3-billion-binance-hack",
-      "pubDate": "Tue, 03 Nov 2026 16:49:56 +0000"
-    },
-    {
-      "title": "Amazon, Tesla and SpaceX join OKX–ICE tokenized stock objections as deadline looms",
-      "link": "https://www.coindesk.com/business/2026/11/03/amazon-tesla-and-spacex-join-okx-ice-tokenized-stock-objections-as-deadline-looms",
-      "pubDate": "Tue, 03 Nov 2026 16:17:51 +0000"
     }
   ]
 }
