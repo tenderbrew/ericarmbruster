@@ -1,13 +1,13 @@
 {
-  "fetchedAt": "2026-11-04T14:24:04.313Z",
+  "fetchedAt": "2026-11-04T21:16:02.781Z",
   "price": {
-    "usd": 78285,
-    "time": 1793802007
+    "usd": 80201,
+    "time": 1793826625
   },
   "moves": {
-    "d1": 1.1635527229850728,
-    "d7": -3.678126316062824,
-    "d30": -8.727755763392619
+    "d1": 3.639497885113707,
+    "d7": -1.3206796790516062,
+    "d30": -6.493897170337249
   },
   "history90d": [
     {
@@ -372,62 +372,87 @@
     },
     {
       "date": "2026-11-04",
-      "close": 78322.85265959815
+      "close": 80217.28496417865
     }
   ],
   "blocks": [
     {
-      "height": 974536,
-      "id": "000000000000000000000413f4a91afac2b96304bddccdad158fabbfee71423a",
-      "timestamp": 1793801922,
-      "txCount": 7529
+      "height": 974585,
+      "id": "000000000000000000006c533778708e1a422d93913856e97cb5971acf209ba4",
+      "timestamp": 1793826869,
+      "txCount": 5018
     },
     {
-      "height": 974535,
-      "id": "000000000000000000007890320f4dcd3b76725ac272e81fc987e506e440a695",
-      "timestamp": 1793801860,
-      "txCount": 3215
+      "height": 974584,
+      "id": "00000000000000000000902673bcd00c9bf9fc14b17e130a1045172f7f64113f",
+      "timestamp": 1793826590,
+      "txCount": 4030
     },
     {
-      "height": 974534,
-      "id": "0000000000000000000146b09679b02b288b46aaae48bdd38149041af7201fb5",
-      "timestamp": 1793801138,
-      "txCount": 5483
+      "height": 974583,
+      "id": "000000000000000000009f332ce3f8dca4305c7add33670bffd43dabb30eb7c6",
+      "timestamp": 1793825832,
+      "txCount": 6569
     },
     {
-      "height": 974533,
-      "id": "00000000000000000000edc5e1ed1ff95db154803c98356e3856e8eb8c74fd2d",
-      "timestamp": 1793801093,
-      "txCount": 2027
+      "height": 974582,
+      "id": "000000000000000000017453e8b746a0b49a0c78cdb6b0fd6bddcd19134423a9",
+      "timestamp": 1793825623,
+      "txCount": 6858
     },
     {
-      "height": 974532,
-      "id": "000000000000000000003208a8542600c7c2cb1898759366f2a8b634876acaf6",
-      "timestamp": 1793800738,
-      "txCount": 3500
+      "height": 974581,
+      "id": "0000000000000000000092ac97f7eba5d6c2227e61548af406ee9a201b9a7539",
+      "timestamp": 1793825466,
+      "txCount": 6895
     },
     {
-      "height": 974531,
-      "id": "000000000000000000019661ced1600aa04f001865ea805462549c06aef6c3be",
-      "timestamp": 1793800692,
-      "txCount": 4047
+      "height": 974580,
+      "id": "00000000000000000000d27c66fedb5d16450aed3527f34f5951e7ac988ec59c",
+      "timestamp": 1793825253,
+      "txCount": 3628
     },
     {
-      "height": 974530,
-      "id": "000000000000000000009fba11c5f69c7c695c12e9034ff6cbd40ef81d7029f2",
-      "timestamp": 1793798695,
-      "txCount": 3972
+      "height": 974579,
+      "id": "0000000000000000000158811ab1c0cd6cc90dc8e3eb54b34dbf35fb6602d100",
+      "timestamp": 1793824546,
+      "txCount": 6989
     },
     {
-      "height": 974529,
-      "id": "00000000000000000001d5e719a2618b73f61278ed31a380681ab0e712d590a9",
-      "timestamp": 1793798581,
-      "txCount": 3769
+      "height": 974578,
+      "id": "000000000000000000017c2bfc08ca6fe8bcbb5b151629b5a2f72d5a3a5d2fe1",
+      "timestamp": 1793824509,
+      "txCount": 3915
     }
   ],
   "news": [
     {
-      "title": "Live updates: Bitcoin and stocks reverse overnight plunge following Blue Wave landslide",
+      "title": "Crypto's powerhouse super PAC, Fairshake, found its kryptonite",
+      "link": "https://www.coindesk.com/news-analysis/2026/11/04/crypto-s-powerhouse-super-pac-fairshake-found-its-kryptonite",
+      "pubDate": "Wed, 04 Nov 2026 20:29:12 +0000"
+    },
+    {
+      "title": "U.S. Democratic sweep could be the final nail in the ‘Clarity Act’s coffin’",
+      "link": "https://www.coindesk.com/policy/2026/11/04/u-s-democratic-sweep-could-be-the-final-nail-in-the-clarity-act-s-coffin",
+      "pubDate": "Wed, 04 Nov 2026 16:11:29 +0000"
+    },
+    {
+      "title": "Wall Street rethinks AI data center boom as Texas election raises new risks",
+      "link": "https://www.coindesk.com/markets/2026/11/04/wall-street-cuts-bitcoin-miner-price-targets-after-democrats-texas-win-threatens-ai-data-center-boom",
+      "pubDate": "Wed, 04 Nov 2026 16:08:14 +0000"
+    },
+    {
+      "title": "Crypto Long & Short: ICE is betting on retail’s appetite for quick outcomes",
+      "link": "https://www.coindesk.com/coindesk-indices/2026/11/04/crypto-long-and-short-ice-is-betting-on-retail-s-appetite-for-quick-outcomes",
+      "pubDate": "Wed, 04 Nov 2026 15:27:20 +0000"
+    },
+    {
+      "title": "The election changes Washington. The work on crypto continues",
+      "link": "https://www.coindesk.com/opinion/2026/11/04/the-election-changes-washington-the-work-on-crypto-continues",
+      "pubDate": "Wed, 04 Nov 2026 14:25:12 +0000"
+    },
+    {
+      "title": "Live updates: Bitcoin and stocks post big gains, reversing overnight plunge following Blue Wave landslide",
       "link": "https://www.coindesk.com/tech/2026/11/04/live-updates-bitcoin-and-stocks-reverse-overnight-plunge-following-blue-wave-landslide",
       "pubDate": "Wed, 04 Nov 2026 14:00:53 +0000"
     },
@@ -460,31 +485,6 @@
       "title": "ZachXBT names French bank Crédit Mutuel Arkéa as suspected victim of $133 million crypto theft",
       "link": "https://www.coindesk.com/business/2026/11/04/zachxbt-names-french-bank-credit-mutuel-arkea-as-suspected-victim-of-usd133-million-crypto-theft",
       "pubDate": "Wed, 04 Nov 2026 10:18:50 +0000"
-    },
-    {
-      "title": "Elon Musk floats space data centers as Democratic sweep puts pressure on AI trade",
-      "link": "https://www.coindesk.com/markets/2026/11/04/elon-musk-floats-space-data-centers-as-democratic-sweep-puts-pressure-on-ai-trade",
-      "pubDate": "Wed, 04 Nov 2026 10:03:33 +0000"
-    },
-    {
-      "title": "Morgan Stanley says it is among the first banks to tokenize real world assets",
-      "link": "https://www.coindesk.com/markets/2026/11/04/morgan-stanley-says-it-is-among-the-first-banks-to-put-u-s-stocks-and-treasuries-on-a-blockchain",
-      "pubDate": "Wed, 04 Nov 2026 09:22:58 +0000"
-    },
-    {
-      "title": "Zcash grants committee drops plan to redirect 98,000 ZEC to future mining rewards",
-      "link": "https://www.coindesk.com/markets/2026/11/04/zcash-grants-committee-drops-plan-to-redirect-98-000-zec-to-future-mining-rewards",
-      "pubDate": "Wed, 04 Nov 2026 08:04:04 +0000"
-    },
-    {
-      "title": "Bitcoin rises to $78,300 in V-shaped comeback as midterm election uncertainty fades",
-      "link": "https://www.coindesk.com/markets/2026/11/04/bitcoin-knocks-on-usd78-000-in-v-shaped-comeback-as-midterm-uncertainty-fades",
-      "pubDate": "Wed, 04 Nov 2026 06:16:40 +0000"
-    },
-    {
-      "title": "Jack Dorsey's Block faces $764 million DOJ settlement as bitcoin profit plunges 50%",
-      "link": "https://www.coindesk.com/markets/2026/11/04/jack-dorsey-s-block-faces-usd764-million-doj-settlement-as-bitcoin-profit-plunges-50",
-      "pubDate": "Wed, 04 Nov 2026 06:06:04 +0000"
     }
   ]
 }
