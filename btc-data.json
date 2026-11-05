@@ -1,19 +1,15 @@
 {
-  "fetchedAt": "2026-11-04T21:16:02.781Z",
+  "fetchedAt": "2026-11-05T06:36:15.379Z",
   "price": {
-    "usd": 80201,
-    "time": 1793826625
+    "usd": 80415,
+    "time": 1793860506
   },
   "moves": {
-    "d1": 3.639497885113707,
-    "d7": -1.3206796790516062,
-    "d30": -6.493897170337249
+    "d1": -0.03444954354102636,
+    "d7": 3.309641145604525,
+    "d30": -5.99144484054186
   },
   "history90d": [
-    {
-      "date": "2026-08-07",
-      "close": 64262.74830979173
-    },
     {
       "date": "2026-08-08",
       "close": 64879.7560855934
@@ -371,63 +367,102 @@
       "close": 77384.58950168235
     },
     {
-      "date": "2026-11-04",
-      "close": 80217.28496417865
+      "date": "2026-11-05",
+      "close": 80442.71214714671
+    },
+    {
+      "date": "2026-11-05",
+      "close": 80427.55189741252
     }
   ],
   "blocks": [
     {
-      "height": 974585,
-      "id": "000000000000000000006c533778708e1a422d93913856e97cb5971acf209ba4",
-      "timestamp": 1793826869,
-      "txCount": 5018
+      "height": 974631,
+      "id": "000000000000000000001bf920ba7cf9583c289b85059a7e6f10090535ad0088",
+      "timestamp": 1793859357,
+      "txCount": 2766
     },
     {
-      "height": 974584,
-      "id": "00000000000000000000902673bcd00c9bf9fc14b17e130a1045172f7f64113f",
-      "timestamp": 1793826590,
-      "txCount": 4030
+      "height": 974630,
+      "id": "000000000000000000010b513015734a19832b2564c76fdbd7704ca0a15ed439",
+      "timestamp": 1793858989,
+      "txCount": 3985
     },
     {
-      "height": 974583,
-      "id": "000000000000000000009f332ce3f8dca4305c7add33670bffd43dabb30eb7c6",
-      "timestamp": 1793825832,
-      "txCount": 6569
+      "height": 974629,
+      "id": "00000000000000000000dfde0f08467bbffff01cc71985bf351ea345e9c08037",
+      "timestamp": 1793855714,
+      "txCount": 6493
     },
     {
-      "height": 974582,
-      "id": "000000000000000000017453e8b746a0b49a0c78cdb6b0fd6bddcd19134423a9",
-      "timestamp": 1793825623,
-      "txCount": 6858
+      "height": 974628,
+      "id": "00000000000000000000e64c1891bde6a2b94276695f596d340c1c9dc98703c9",
+      "timestamp": 1793855292,
+      "txCount": 3701
     },
     {
-      "height": 974581,
-      "id": "0000000000000000000092ac97f7eba5d6c2227e61548af406ee9a201b9a7539",
-      "timestamp": 1793825466,
-      "txCount": 6895
+      "height": 974627,
+      "id": "00000000000000000000cde2ce99469d24c5be4b6670d4476efbdf831a5dd09b",
+      "timestamp": 1793854582,
+      "txCount": 10484
     },
     {
-      "height": 974580,
-      "id": "00000000000000000000d27c66fedb5d16450aed3527f34f5951e7ac988ec59c",
-      "timestamp": 1793825253,
-      "txCount": 3628
+      "height": 974626,
+      "id": "000000000000000000016bbf1d1f963a555966123f8a0376716b697968a68e6b",
+      "timestamp": 1793854399,
+      "txCount": 5901
     },
     {
-      "height": 974579,
-      "id": "0000000000000000000158811ab1c0cd6cc90dc8e3eb54b34dbf35fb6602d100",
-      "timestamp": 1793824546,
-      "txCount": 6989
+      "height": 974625,
+      "id": "000000000000000000002603e7ba4b08779e76210b270292bebf1968a21e510f",
+      "timestamp": 1793854359,
+      "txCount": 1981
     },
     {
-      "height": 974578,
-      "id": "000000000000000000017c2bfc08ca6fe8bcbb5b151629b5a2f72d5a3a5d2fe1",
-      "timestamp": 1793824509,
-      "txCount": 3915
+      "height": 974624,
+      "id": "00000000000000000001af2aa6c0d7560b69dffa17d12c588df29dafec753f26",
+      "timestamp": 1793853033,
+      "txCount": 5362
     }
   ],
   "news": [
     {
-      "title": "Crypto's powerhouse super PAC, Fairshake, found its kryptonite",
+      "title": "Zcash is about to freeze $16 million in its oldest privacy pool",
+      "link": "https://www.coindesk.com/tech/2026/11/05/zcash-is-about-to-freeze-usd16-million-in-its-oldest-privacy-pool",
+      "pubDate": "Thu, 05 Nov 2026 05:47:01 +0000"
+    },
+    {
+      "title": "The pile of lawsuits against Kalshi just grew by one",
+      "link": "https://www.coindesk.com/policy/2026/11/05/the-pile-of-lawsuits-against-kalshi-just-grew-by-one",
+      "pubDate": "Thu, 05 Nov 2026 05:28:52 +0000"
+    },
+    {
+      "title": "XRP Ledger fixes a disclosed bug that could have led to the creation of new tokens",
+      "link": "https://www.coindesk.com/markets/2026/11/05/xrp-ledger-closes-bug-that-let-approved-token-burners-create-new-tokens",
+      "pubDate": "Thu, 05 Nov 2026 05:25:06 +0000"
+    },
+    {
+      "title": "Bitcoin holds above $80,000 as Zcash jumps 12% in post-election crypto rebound",
+      "link": "https://www.coindesk.com/markets/2026/11/05/bitcoin-holds-above-usd80-000-as-zcash-jumps-12-in-post-election-crypto-rebound",
+      "pubDate": "Thu, 05 Nov 2026 05:13:45 +0000"
+    },
+    {
+      "title": "Trump Media moves $342 million in bitcoin to Crypto.com, blockchain data show",
+      "link": "https://www.coindesk.com/markets/2026/11/05/trump-media-moves-usd434-million-in-bitcoin-to-crypto-com-blockchain-data-show",
+      "pubDate": "Thu, 05 Nov 2026 04:11:33 +0000"
+    },
+    {
+      "title": "Tokenization and stablecoins may weather Democrats' sweep as broader crypto rules face uncertainty",
+      "link": "https://www.coindesk.com/policy/2026/11/04/tokenization-and-stablecoins-may-weather-democrats-sweep-as-broader-crypto-rules-face-uncertainty",
+      "pubDate": "Wed, 04 Nov 2026 22:55:00 +0000"
+    },
+    {
+      "title": "Crypto's Washington hopes fade, but Grayscale and BlackRock see growth ahead",
+      "link": "https://www.coindesk.com/business/2026/11/04/crypto-s-washington-hopes-fade-but-grayscale-and-blackrock-see-growth-ahead",
+      "pubDate": "Wed, 04 Nov 2026 22:51:42 +0000"
+    },
+    {
+      "title": "Crypto's powerhouse super PAC suffers costly setback as Democrats sweep Congress",
       "link": "https://www.coindesk.com/news-analysis/2026/11/04/crypto-s-powerhouse-super-pac-fairshake-found-its-kryptonite",
       "pubDate": "Wed, 04 Nov 2026 20:29:12 +0000"
     },
@@ -450,41 +485,6 @@
       "title": "The election changes Washington. The work on crypto continues",
       "link": "https://www.coindesk.com/opinion/2026/11/04/the-election-changes-washington-the-work-on-crypto-continues",
       "pubDate": "Wed, 04 Nov 2026 14:25:12 +0000"
-    },
-    {
-      "title": "Live updates: Bitcoin and stocks post big gains, reversing overnight plunge following Blue Wave landslide",
-      "link": "https://www.coindesk.com/tech/2026/11/04/live-updates-bitcoin-and-stocks-reverse-overnight-plunge-following-blue-wave-landslide",
-      "pubDate": "Wed, 04 Nov 2026 14:00:53 +0000"
-    },
-    {
-      "title": "Global asset manager Schroders brings emerging market bond fund to Solana",
-      "link": "https://www.coindesk.com/business/2026/11/04/global-asset-manager-schroders-brings-emerging-market-bond-fund-to-solana",
-      "pubDate": "Wed, 04 Nov 2026 13:00:00 +0000"
-    },
-    {
-      "title": "THORChain's RUNE jumps 10% as North Korean hackers resume laundering Binance loot",
-      "link": "https://www.coindesk.com/markets/2026/11/04/thorchain-s-rune-jumps-10-as-north-korean-hackers-resume-laundering-binance-loot",
-      "pubDate": "Wed, 04 Nov 2026 12:49:56 +0000"
-    },
-    {
-      "title": "Circle beats earnings expectations on strong revenue, but cuts 5% of its workforce",
-      "link": "https://www.coindesk.com/business/2026/11/04/circle-beats-earnings-and-revenue-estimates-on-soaring-usdc-transaction-volume",
-      "pubDate": "Wed, 04 Nov 2026 12:33:54 +0000"
-    },
-    {
-      "title": "Here's how analysts are reacting to the new blue Congress",
-      "link": "https://www.coindesk.com/daybook-us/2026/11/04/here-s-how-analysts-are-reacting-to-the-new-blue-congress",
-      "pubDate": "Wed, 04 Nov 2026 12:14:11 +0000"
-    },
-    {
-      "title": "Bitcoin rebounds from midterm dip as DeFi leads gains",
-      "link": "https://www.coindesk.com/markets/2026/11/04/bitcoin-rebounds-from-midterm-dip-as-defi-leads-gains",
-      "pubDate": "Wed, 04 Nov 2026 10:38:58 +0000"
-    },
-    {
-      "title": "ZachXBT names French bank Crédit Mutuel Arkéa as suspected victim of $133 million crypto theft",
-      "link": "https://www.coindesk.com/business/2026/11/04/zachxbt-names-french-bank-credit-mutuel-arkea-as-suspected-victim-of-usd133-million-crypto-theft",
-      "pubDate": "Wed, 04 Nov 2026 10:18:50 +0000"
     }
   ]
 }
