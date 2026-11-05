@@ -1,13 +1,13 @@
 {
-  "fetchedAt": "2026-11-05T06:36:15.379Z",
+  "fetchedAt": "2026-11-05T17:20:11.465Z",
   "price": {
-    "usd": 80415,
-    "time": 1793860506
+    "usd": 76111,
+    "time": 1793898908
   },
   "moves": {
-    "d1": -0.03444954354102636,
-    "d7": 3.309641145604525,
-    "d30": -5.99144484054186
+    "d1": -5.38484100240566,
+    "d7": -2.2197339149026107,
+    "d30": -11.023003895522997
   },
   "history90d": [
     {
@@ -372,119 +372,119 @@
     },
     {
       "date": "2026-11-05",
-      "close": 80427.55189741252
+      "close": 76042.18443318132
     }
   ],
   "blocks": [
     {
-      "height": 974631,
-      "id": "000000000000000000001bf920ba7cf9583c289b85059a7e6f10090535ad0088",
-      "timestamp": 1793859357,
-      "txCount": 2766
+      "height": 974687,
+      "id": "000000000000000000015d3445492500edec13172eb498d1105e8f5cfeb543da",
+      "timestamp": 1793898514,
+      "txCount": 3775
     },
     {
-      "height": 974630,
-      "id": "000000000000000000010b513015734a19832b2564c76fdbd7704ca0a15ed439",
-      "timestamp": 1793858989,
-      "txCount": 3985
+      "height": 974686,
+      "id": "00000000000000000001ca73158f466d858e955ee0c8a9a30522ec0e5777eabb",
+      "timestamp": 1793896870,
+      "txCount": 1685
     },
     {
-      "height": 974629,
-      "id": "00000000000000000000dfde0f08467bbffff01cc71985bf351ea345e9c08037",
-      "timestamp": 1793855714,
-      "txCount": 6493
+      "height": 974685,
+      "id": "00000000000000000000b5361acee4d6c4777016e7c455ea63ef1fed613e1ac0",
+      "timestamp": 1793896469,
+      "txCount": 3369
     },
     {
-      "height": 974628,
-      "id": "00000000000000000000e64c1891bde6a2b94276695f596d340c1c9dc98703c9",
-      "timestamp": 1793855292,
-      "txCount": 3701
+      "height": 974684,
+      "id": "000000000000000000009f79d35ef650b5cfb84bcc9738df640b48b2a4e4c112",
+      "timestamp": 1793895970,
+      "txCount": 3660
     },
     {
-      "height": 974627,
-      "id": "00000000000000000000cde2ce99469d24c5be4b6670d4476efbdf831a5dd09b",
-      "timestamp": 1793854582,
-      "txCount": 10484
+      "height": 974683,
+      "id": "00000000000000000000f567b7aba2c6087b7a21d674a42a082a8fb36ccf6f75",
+      "timestamp": 1793895088,
+      "txCount": 3697
     },
     {
-      "height": 974626,
-      "id": "000000000000000000016bbf1d1f963a555966123f8a0376716b697968a68e6b",
-      "timestamp": 1793854399,
-      "txCount": 5901
+      "height": 974682,
+      "id": "00000000000000000000ea98d2835e98563e778df290679a602daf72788ea292",
+      "timestamp": 1793894349,
+      "txCount": 3727
     },
     {
-      "height": 974625,
-      "id": "000000000000000000002603e7ba4b08779e76210b270292bebf1968a21e510f",
-      "timestamp": 1793854359,
-      "txCount": 1981
+      "height": 974681,
+      "id": "00000000000000000001450cba3d9ee008b0ce7c9133b20bfefc93360b415b87",
+      "timestamp": 1793892869,
+      "txCount": 3341
     },
     {
-      "height": 974624,
-      "id": "00000000000000000001af2aa6c0d7560b69dffa17d12c588df29dafec753f26",
-      "timestamp": 1793853033,
-      "txCount": 5362
+      "height": 974680,
+      "id": "000000000000000000014ceb1cb71aa673e6865c5338d25419d8ac0831e3ebf2",
+      "timestamp": 1793892467,
+      "txCount": 3676
     }
   ],
   "news": [
     {
-      "title": "Zcash is about to freeze $16 million in its oldest privacy pool",
-      "link": "https://www.coindesk.com/tech/2026/11/05/zcash-is-about-to-freeze-usd16-million-in-its-oldest-privacy-pool",
-      "pubDate": "Thu, 05 Nov 2026 05:47:01 +0000"
+      "title": "What is TraderTraitor, the hacking squad behind the $6.3 billion Binance heist",
+      "link": "https://www.coindesk.com/business/2026/11/05/what-is-tradertraitor-the-hacking-squad-behind-the-usd6-3-billion-binance-heist",
+      "pubDate": "Thu, 05 Nov 2026 16:58:21 +0000"
     },
     {
-      "title": "The pile of lawsuits against Kalshi just grew by one",
-      "link": "https://www.coindesk.com/policy/2026/11/05/the-pile-of-lawsuits-against-kalshi-just-grew-by-one",
-      "pubDate": "Thu, 05 Nov 2026 05:28:52 +0000"
+      "title": "Standard Chartered and SBI back crypto insurer Soter as funding reaches $23.5 million",
+      "link": "https://www.coindesk.com/business/2026/11/05/soter-raises-usd23-5m-plus-btc-and-eth-as-banks-demand-theft-protection",
+      "pubDate": "Thu, 05 Nov 2026 16:49:08 +0000"
     },
     {
-      "title": "XRP Ledger fixes a disclosed bug that could have led to the creation of new tokens",
-      "link": "https://www.coindesk.com/markets/2026/11/05/xrp-ledger-closes-bug-that-let-approved-token-burners-create-new-tokens",
-      "pubDate": "Thu, 05 Nov 2026 05:25:06 +0000"
+      "title": "Crypto for Advisors: Where investors stake crypto shapes how much of the reward they keep",
+      "link": "https://www.coindesk.com/coindesk-indices/2026/11/05/crypto-for-advisors-where-investors-stake-crypto-shapes-how-much-of-the-reward-they-keep",
+      "pubDate": "Thu, 05 Nov 2026 16:13:32 +0000"
     },
     {
-      "title": "Bitcoin holds above $80,000 as Zcash jumps 12% in post-election crypto rebound",
-      "link": "https://www.coindesk.com/markets/2026/11/05/bitcoin-holds-above-usd80-000-as-zcash-jumps-12-in-post-election-crypto-rebound",
-      "pubDate": "Thu, 05 Nov 2026 05:13:45 +0000"
+      "title": "Gate CEO says crypto exchanges must prove they can survive a hack like Binance’s",
+      "link": "https://www.coindesk.com/business/2026/11/05/gate-ceo-says-crypto-exchanges-must-prove-they-can-survive-a-hack-like-binance-s",
+      "pubDate": "Thu, 05 Nov 2026 14:21:50 +0000"
     },
     {
-      "title": "Trump Media moves $342 million in bitcoin to Crypto.com, blockchain data show",
-      "link": "https://www.coindesk.com/markets/2026/11/05/trump-media-moves-usd434-million-in-bitcoin-to-crypto-com-blockchain-data-show",
-      "pubDate": "Thu, 05 Nov 2026 04:11:33 +0000"
+      "title": "Kraken parent Payward and its clients buy AAVE tokens in DeFi investment push",
+      "link": "https://www.coindesk.com/business/2026/11/05/kraken-parent-payward-and-its-clients-buy-aave-tokens-in-defi-investment-push",
+      "pubDate": "Thu, 05 Nov 2026 14:00:00 +0000"
     },
     {
-      "title": "Tokenization and stablecoins may weather Democrats' sweep as broader crypto rules face uncertainty",
-      "link": "https://www.coindesk.com/policy/2026/11/04/tokenization-and-stablecoins-may-weather-democrats-sweep-as-broader-crypto-rules-face-uncertainty",
-      "pubDate": "Wed, 04 Nov 2026 22:55:00 +0000"
+      "title": "Google could take stake in bitcoin miner TeraWulf’s $19 billion AI project if Anthropic defaults",
+      "link": "https://www.coindesk.com/tech/2026/11/05/google-could-take-ownership-stake-in-bitcoin-miner-terawulf-s-ai-project-if-anthropic-defaults",
+      "pubDate": "Thu, 05 Nov 2026 13:29:40 +0000"
     },
     {
-      "title": "Crypto's Washington hopes fade, but Grayscale and BlackRock see growth ahead",
-      "link": "https://www.coindesk.com/business/2026/11/04/crypto-s-washington-hopes-fade-but-grayscale-and-blackrock-see-growth-ahead",
-      "pubDate": "Wed, 04 Nov 2026 22:51:42 +0000"
+      "title": "Binance cuts SignalPlus access after security warning, urges users to check accounts",
+      "link": "https://www.coindesk.com/tech/2026/11/05/binance-cuts-signalplus-access-after-security-warning-urges-users-to-check-accounts",
+      "pubDate": "Thu, 05 Nov 2026 12:55:03 +0000"
     },
     {
-      "title": "Crypto's powerhouse super PAC suffers costly setback as Democrats sweep Congress",
-      "link": "https://www.coindesk.com/news-analysis/2026/11/04/crypto-s-powerhouse-super-pac-fairshake-found-its-kryptonite",
-      "pubDate": "Wed, 04 Nov 2026 20:29:12 +0000"
+      "title": "Ukraine’s central bank opposes crypto bill, citing monetary sovereignty concerns",
+      "link": "https://www.coindesk.com/business/2026/11/05/ukraine-s-central-bank-opposes-crypto-bill-citing-monetary-sovereignty-concerns",
+      "pubDate": "Thu, 05 Nov 2026 12:50:57 +0000"
     },
     {
-      "title": "U.S. Democratic sweep could be the final nail in the ‘Clarity Act’s coffin’",
-      "link": "https://www.coindesk.com/policy/2026/11/04/u-s-democratic-sweep-could-be-the-final-nail-in-the-clarity-act-s-coffin",
-      "pubDate": "Wed, 04 Nov 2026 16:11:29 +0000"
+      "title": "Bitcoin is resilient, but leverage is missing and demand still tepid",
+      "link": "https://www.coindesk.com/daybook-us/2026/11/05/bitcoin-is-resilient-but-leverage-is-missing-and-demand-still-tepid",
+      "pubDate": "Thu, 05 Nov 2026 12:27:04 +0000"
     },
     {
-      "title": "Wall Street rethinks AI data center boom as Texas election raises new risks",
-      "link": "https://www.coindesk.com/markets/2026/11/04/wall-street-cuts-bitcoin-miner-price-targets-after-democrats-texas-win-threatens-ai-data-center-boom",
-      "pubDate": "Wed, 04 Nov 2026 16:08:14 +0000"
+      "title": "Bitcoin miners are oversold following 35% October rout, VanEck says",
+      "link": "https://www.coindesk.com/markets/2026/11/05/bitcoin-miners-are-oversold-following-35-october-rout-says-vaneck",
+      "pubDate": "Thu, 05 Nov 2026 11:49:23 +0000"
     },
     {
-      "title": "Crypto Long & Short: ICE is betting on retail’s appetite for quick outcomes",
-      "link": "https://www.coindesk.com/coindesk-indices/2026/11/04/crypto-long-and-short-ice-is-betting-on-retail-s-appetite-for-quick-outcomes",
-      "pubDate": "Wed, 04 Nov 2026 15:27:20 +0000"
+      "title": "Trump-linked American Bitcoin swings to $126 million profit but misses revenue estimates",
+      "link": "https://www.coindesk.com/business/2026/11/05/trump-linked-american-bitcoin-swings-to-usd126-million-profit-in-q3-2026",
+      "pubDate": "Thu, 05 Nov 2026 11:45:54 +0000"
     },
     {
-      "title": "The election changes Washington. The work on crypto continues",
-      "link": "https://www.coindesk.com/opinion/2026/11/04/the-election-changes-washington-the-work-on-crypto-continues",
-      "pubDate": "Wed, 04 Nov 2026 14:25:12 +0000"
+      "title": "Bitcoin holds above $80,000 after Wednesday’s jump as injective rallies on staked ETF listing",
+      "link": "https://www.coindesk.com/markets/2026/11/05/bitcoin-holds-above-usd80-000-after-wednesday-s-jump-as-injective-rallies-on-staked-etf-listing",
+      "pubDate": "Thu, 05 Nov 2026 11:30:00 +0000"
     }
   ]
 }
