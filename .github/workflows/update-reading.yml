@@ -1,44 +1,31 @@
-# Runs reading-fetch.js daily, commits updated JSON back to the repo.
-# The Goodreads shelf RSS feed is public, so no secrets are required.
-name: Update Reading Data
+# Validation only: private exports never enter Actions, and nothing is refreshed/committed here.
+name: Validate Reading Snapshot
 
 on:
-  schedule:
-    - cron: '17 9 * * *' # Daily 09:17 UTC (offset from btc's :15 to avoid a push race)
-  workflow_dispatch: # Manual trigger from Actions tab
+  workflow_dispatch:
 
 permissions:
-  contents: write # the bot commits data back to main
+  contents: read
 
 concurrency:
-  group: update-reading
+  group: validate-reading
   cancel-in-progress: false
 
 jobs:
-  fetch:
+  validate:
     runs-on: ubuntu-latest
-    timeout-minutes: 10
-
+    timeout-minutes: 5
     steps:
       - uses: actions/checkout@v6
-
       - uses: actions/setup-node@v6
         with:
           node-version: '22'
-
-      - name: Fetch reading data
-        run: node reading-fetch.js
-
-      # Skip commit if nothing changed.
-      - name: Commit and push if changed
-        run: |
-          git diff --quiet reading-data.json && exit 0
-          git config user.name "github-actions[bot]"
-          git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add reading-data.json
-          git commit -m "chore: update reading data"
-          for i in 1 2 3; do
-            git push && exit 0
-            git pull --rebase origin main
-          done
-          git push
+      - uses: actions/setup-python@v6
+        with:
+          python-version: '3.12'
+      - name: Test offline importer (synthetic data only)
+        run: python3 -m unittest discover -s tests -p 'test_*.py' -v
+      - name: Test reading hydration (synthetic data only)
+        run: node --test tests/reading-page.test.js
+      - name: Validate committed snapshot (no refresh)
+        run: python3 tools/import_goodreads.py --validate

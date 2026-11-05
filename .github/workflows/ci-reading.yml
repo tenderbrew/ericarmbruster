@@ -1,0 +1,49 @@
+name: CI Reading Importer
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'tools/import_goodreads.py'
+      - 'tests/**'
+      - 'reading-data.json'
+      - 'reading.html'
+      - '.github/workflows/ci-reading.yml'
+      - '.github/workflows/update-reading.yml'
+      - '.gitignore'
+  pull_request:
+    paths:
+      - 'tools/import_goodreads.py'
+      - 'tests/**'
+      - 'reading-data.json'
+      - 'reading.html'
+      - '.github/workflows/ci-reading.yml'
+      - '.github/workflows/update-reading.yml'
+      - '.gitignore'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: ci-reading-${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v6
+      - uses: actions/setup-node@v6
+        with:
+          node-version: '22'
+      - uses: actions/setup-python@v6
+        with:
+          python-version: '3.12'
+      - name: Test offline importer (synthetic data only)
+        run: python3 -m unittest discover -s tests -p 'test_*.py' -v
+      - name: Test reading hydration (synthetic data only)
+        run: node --test tests/reading-page.test.js
+      - name: Validate committed snapshot (no refresh)
+        run: python3 tools/import_goodreads.py --validate

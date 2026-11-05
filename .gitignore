@@ -17,3 +17,10 @@ desktop.ini
 # Logs and temp
 *.log
 *.tmp
+
+# Private Goodreads exports (never commit or upload to Actions)
+*.[cC][sS][vV]
+
+# Python test/importer cache
+__pycache__/
+*.py[cod]
