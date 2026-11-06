@@ -1,13 +1,13 @@
 {
-  "fetchedAt": "2026-11-06T16:42:59.271Z",
+  "fetchedAt": "2026-11-06T23:03:26.631Z",
   "price": {
-    "usd": 75651,
-    "time": 1793983206
+    "usd": 75880,
+    "time": 1794005708
   },
   "moves": {
-    "d1": -0.4664256078799389,
-    "d7": -2.1016514121445895,
-    "d30": -9.162893812553873
+    "d1": -0.16513165887998005,
+    "d7": -1.8053073872590142,
+    "d30": -8.887924581255868
   },
   "history90d": [
     {
@@ -372,60 +372,70 @@
     },
     {
       "date": "2026-11-06",
-      "close": 75584.29932395033
+      "close": 75828.8021802163
     }
   ],
   "blocks": [
     {
-      "height": 974825,
-      "id": "000000000000000000007df6a841e4115f926510966dbf7864cb9cabcfd9c060",
-      "timestamp": 1793982852,
-      "txCount": 3288
+      "height": 974866,
+      "id": "00000000000000000000cebad0d2d551037f43d23b2238daed435e6fa7cebb59",
+      "timestamp": 1794004756,
+      "txCount": 3286
     },
     {
-      "height": 974824,
-      "id": "00000000000000000000a892bba2e205cd11743ffa9b97148e1df98d1cd96750",
-      "timestamp": 1793980287,
-      "txCount": 3147
+      "height": 974865,
+      "id": "0000000000000000000029e807982b5f2cdd664cd249d7604aa0a666de8e6683",
+      "timestamp": 1794003917,
+      "txCount": 3367
     },
     {
-      "height": 974823,
-      "id": "0000000000000000000061a96dd88cd861eea5bc3af84850d5fd4a27b60fff47",
-      "timestamp": 1793979212,
-      "txCount": 2371
+      "height": 974864,
+      "id": "00000000000000000001712e2e64f01e7c6e3ec4da08a9b70ce0bbc3bc9d7947",
+      "timestamp": 1794002978,
+      "txCount": 2959
     },
     {
-      "height": 974822,
-      "id": "00000000000000000000978a0ccbba3382106865f7617597ac5a4640b46f9180",
-      "timestamp": 1793978631,
-      "txCount": 2650
+      "height": 974863,
+      "id": "00000000000000000001b304be6b20d58966168e723bedc75c1b9a8d5d94e3c1",
+      "timestamp": 1794002773,
+      "txCount": 2825
     },
     {
-      "height": 974821,
-      "id": "000000000000000000005a7eb541eabe4c63e6d6a5e7fb1f9baf724fce8e325c",
-      "timestamp": 1793978565,
-      "txCount": 2130
+      "height": 974862,
+      "id": "00000000000000000000d327e01b1988f4572a34e630d9844b5031dc94af143c",
+      "timestamp": 1794001716,
+      "txCount": 5539
     },
     {
-      "height": 974820,
-      "id": "000000000000000000015f9a0917e9ad1c505bc71f8cd361760c15c433fed7c5",
-      "timestamp": 1793978251,
-      "txCount": 366
+      "height": 974861,
+      "id": "00000000000000000000e76bd46517d7c3ce553c0d9bd6968dfb7efd72516d48",
+      "timestamp": 1794000901,
+      "txCount": 3806
     },
     {
-      "height": 974819,
-      "id": "00000000000000000000802a81f42c5f4203b9cd13ab8c89ad7efcd0862decf7",
-      "timestamp": 1793978245,
-      "txCount": 2306
+      "height": 974860,
+      "id": "00000000000000000000ea1989e11a5a2640f84ca84546581ef21c5142655b0a",
+      "timestamp": 1794000227,
+      "txCount": 1675
     },
     {
-      "height": 974818,
-      "id": "00000000000000000001cae82cf8a52feba66f9d138b85ccf3d5fe80bce66368",
-      "timestamp": 1793978079,
-      "txCount": 3848
+      "height": 974859,
+      "id": "00000000000000000000ba9e86c2b431734eb1c3d1f97135e4acd55931671dd5",
+      "timestamp": 1794000294,
+      "txCount": 2799
     }
   ],
   "news": [
+    {
+      "title": "Apple, Meta reject OKX–ICE tokenized stock plans, leaving crypto firms as the ones to watch",
+      "link": "https://www.coindesk.com/policy/2026/11/06/apple-meta-reject-okx-ice-tokenized-stock-plans-leaving-crypto-firms-as-the-ones-to-watch",
+      "pubDate": "Fri, 06 Nov 2026 20:09:18 +0000"
+    },
+    {
+      "title": "U.S. prediction markets regulator issues demand that clashes directly with courts",
+      "link": "https://www.coindesk.com/policy/2026/11/06/u-s-prediction-markets-regulator-issues-demand-that-clashes-directly-with-courts",
+      "pubDate": "Fri, 06 Nov 2026 17:42:28 +0000"
+    },
     {
       "title": "The crypto industry has found new ways to grow. Making money from them is another story",
       "link": "https://www.coindesk.com/markets/2026/11/05/the-crypto-industry-has-found-new-ways-to-grow-making-money-from-them-is-another-story",
@@ -447,7 +457,7 @@
       "pubDate": "Fri, 06 Nov 2026 12:30:00 +0000"
     },
     {
-      "title": "Live updates: Bitcoin holds in narrow range, stocks bounce after strong October jobs report",
+      "title": "Live updates: Bitcoin flatlines under $76,000 as stock bounce loses steam into the close",
       "link": "https://www.coindesk.com/tech/2026/11/06/live-updates-nasdaq-100-futures-rally-points-to-stock-market-respite",
       "pubDate": "Fri, 06 Nov 2026 11:58:40 +0000"
     },
@@ -475,16 +485,6 @@
       "title": "Zcash’s landmark NU7 upgrade goes live, speeding up private payments",
       "link": "https://www.coindesk.com/tech/2026/11/06/zcash-s-landmark-nu7-upgrade-goes-live-speeding-up-private-payments",
       "pubDate": "Fri, 06 Nov 2026 05:14:48 +0000"
-    },
-    {
-      "title": "Hyperliquid treasury firm seeking U.S. regulatory nod as a domestic futures platform",
-      "link": "https://www.coindesk.com/policy/2026/11/05/hyperliquid-treasury-firm-seeking-u-s-regulatory-nod-as-a-domestic-futures-platform",
-      "pubDate": "Fri, 06 Nov 2026 02:24:23 +0000"
-    },
-    {
-      "title": "Bitcoin developer proposes ‘landmines’ to make quantum thieves lose their own BTC",
-      "link": "https://www.coindesk.com/tech/2026/11/05/bitcoin-developer-proposes-landmines-to-make-quantum-thieves-lose-their-own-btc",
-      "pubDate": "Fri, 06 Nov 2026 01:30:00 +0000"
     }
   ]
 }
