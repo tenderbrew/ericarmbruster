@@ -1,13 +1,13 @@
 {
-  "fetchedAt": "2026-11-06T06:31:55.190Z",
+  "fetchedAt": "2026-11-06T16:42:59.271Z",
   "price": {
-    "usd": 75586,
-    "time": 1793946608
+    "usd": 75651,
+    "time": 1793983206
   },
   "moves": {
-    "d1": -0.5519457244083092,
-    "d7": -2.1857665283784966,
-    "d30": -9.240941847638462
+    "d1": -0.4664256078799389,
+    "d7": -2.1016514121445895,
+    "d30": -9.162893812553873
   },
   "history90d": [
     {
@@ -372,60 +372,105 @@
     },
     {
       "date": "2026-11-06",
-      "close": 75588.31629652981
+      "close": 75584.29932395033
     }
   ],
   "blocks": [
     {
-      "height": 974769,
-      "id": "000000000000000000013965d58e0f9e4ec9f76a4ecf05d29d451221e8aa16ae",
-      "timestamp": 1793945763,
-      "txCount": 1902
+      "height": 974825,
+      "id": "000000000000000000007df6a841e4115f926510966dbf7864cb9cabcfd9c060",
+      "timestamp": 1793982852,
+      "txCount": 3288
     },
     {
-      "height": 974768,
-      "id": "00000000000000000001437f91ce8284fb4e0d44f845753a28fa66b155626c64",
-      "timestamp": 1793945540,
-      "txCount": 2717
+      "height": 974824,
+      "id": "00000000000000000000a892bba2e205cd11743ffa9b97148e1df98d1cd96750",
+      "timestamp": 1793980287,
+      "txCount": 3147
     },
     {
-      "height": 974767,
-      "id": "000000000000000000005ad286a2f9bdba74490c54d3033b6acaa88815666f95",
-      "timestamp": 1793945494,
-      "txCount": 3545
+      "height": 974823,
+      "id": "0000000000000000000061a96dd88cd861eea5bc3af84850d5fd4a27b60fff47",
+      "timestamp": 1793979212,
+      "txCount": 2371
     },
     {
-      "height": 974766,
-      "id": "00000000000000000000339c196cb0e45c37396b28f02173d699b800bb450514",
-      "timestamp": 1793943267,
-      "txCount": 1541
+      "height": 974822,
+      "id": "00000000000000000000978a0ccbba3382106865f7617597ac5a4640b46f9180",
+      "timestamp": 1793978631,
+      "txCount": 2650
     },
     {
-      "height": 974765,
-      "id": "00000000000000000001462841653a9b395ab82d2a2beec75325ec7c3a37808b",
-      "timestamp": 1793943221,
-      "txCount": 2771
+      "height": 974821,
+      "id": "000000000000000000005a7eb541eabe4c63e6d6a5e7fb1f9baf724fce8e325c",
+      "timestamp": 1793978565,
+      "txCount": 2130
     },
     {
-      "height": 974764,
-      "id": "00000000000000000000c050acfad1494d9dc3b6b5ed2af32feae90175fef895",
-      "timestamp": 1793941999,
-      "txCount": 2338
+      "height": 974820,
+      "id": "000000000000000000015f9a0917e9ad1c505bc71f8cd361760c15c433fed7c5",
+      "timestamp": 1793978251,
+      "txCount": 366
     },
     {
-      "height": 974763,
-      "id": "000000000000000000019a051061344774796e3257c1aacb6801ee70b3f69d4a",
-      "timestamp": 1793941802,
-      "txCount": 2076
+      "height": 974819,
+      "id": "00000000000000000000802a81f42c5f4203b9cd13ab8c89ad7efcd0862decf7",
+      "timestamp": 1793978245,
+      "txCount": 2306
     },
     {
-      "height": 974762,
-      "id": "000000000000000000018c9441a61c9c2b0724683c2c2e7aedf14ff75cbb0cf3",
-      "timestamp": 1793940754,
-      "txCount": 2000
+      "height": 974818,
+      "id": "00000000000000000001cae82cf8a52feba66f9d138b85ccf3d5fe80bce66368",
+      "timestamp": 1793978079,
+      "txCount": 3848
     }
   ],
   "news": [
+    {
+      "title": "The crypto industry has found new ways to grow. Making money from them is another story",
+      "link": "https://www.coindesk.com/markets/2026/11/05/the-crypto-industry-has-found-new-ways-to-grow-making-money-from-them-is-another-story",
+      "pubDate": "Fri, 06 Nov 2026 15:26:38 +0000"
+    },
+    {
+      "title": "Thailand moves to block Bitget as crypto exchange's local acquisition faces uncertainty",
+      "link": "https://www.coindesk.com/business/2026/11/05/thailand-moves-to-block-bitget-as-crypto-exchange-s-local-acquisition-faces-uncertainty",
+      "pubDate": "Fri, 06 Nov 2026 14:33:49 +0000"
+    },
+    {
+      "title": "U.S. added 165,000 jobs in October, blowing past 65,000 estimate",
+      "link": "https://www.coindesk.com/markets/2026/11/06/u-s-added-165-000-jobs-in-october-blowing-past-65-000-estimate",
+      "pubDate": "Fri, 06 Nov 2026 13:31:54 +0000"
+    },
+    {
+      "title": "Over $1 billion in bullish bets liquidated while ETF flows suggest no help in spot market",
+      "link": "https://www.coindesk.com/daybook-us/2026/11/06/over-usd1-billion-in-bullish-bets-liquidated-while-etf-flows-suggest-no-help-in-spot-market",
+      "pubDate": "Fri, 06 Nov 2026 12:30:00 +0000"
+    },
+    {
+      "title": "Live updates: Bitcoin holds in narrow range, stocks bounce after strong October jobs report",
+      "link": "https://www.coindesk.com/tech/2026/11/06/live-updates-nasdaq-100-futures-rally-points-to-stock-market-respite",
+      "pubDate": "Fri, 06 Nov 2026 11:58:40 +0000"
+    },
+    {
+      "title": "Bitcoin steadies after AI-led selloff as eyes turn to latest U.S. jobs figures",
+      "link": "https://www.coindesk.com/markets/2026/11/06/bitcoin-steadies-near-usd76-000-after-ai-led-selloff",
+      "pubDate": "Fri, 06 Nov 2026 11:49:35 +0000"
+    },
+    {
+      "title": "Bitcoin recovers $76,000 level as ETFs shed $430 million after tech rout",
+      "link": "https://www.coindesk.com/markets/2026/11/06/bitcoin-recovers-usd76-000-level-as-etfs-shed-usd430-million-after-tech-rout",
+      "pubDate": "Fri, 06 Nov 2026 09:53:27 +0000"
+    },
+    {
+      "title": "Greece approves 10% tax on crypto gains and 15% levy on DeFi income",
+      "link": "https://www.coindesk.com/policy/2026/11/06/greece-approves-10-tax-on-crypto-gains-and-15-levy-on-defi-income",
+      "pubDate": "Fri, 06 Nov 2026 08:47:42 +0000"
+    },
+    {
+      "title": "Trump-backed World Liberty Financial plans token buyback after 66% year-to-date slide",
+      "link": "https://www.coindesk.com/business/2026/11/06/trump-backed-world-liberty-financial-plans-token-buyback-after-66-year-to-date-slide",
+      "pubDate": "Fri, 06 Nov 2026 08:04:52 +0000"
+    },
     {
       "title": "Zcash’s landmark NU7 upgrade goes live, speeding up private payments",
       "link": "https://www.coindesk.com/tech/2026/11/06/zcash-s-landmark-nu7-upgrade-goes-live-speeding-up-private-payments",
@@ -440,51 +485,6 @@
       "title": "Bitcoin developer proposes ‘landmines’ to make quantum thieves lose their own BTC",
       "link": "https://www.coindesk.com/tech/2026/11/05/bitcoin-developer-proposes-landmines-to-make-quantum-thieves-lose-their-own-btc",
       "pubDate": "Fri, 06 Nov 2026 01:30:00 +0000"
-    },
-    {
-      "title": "U.S. Justice Department assembles force to shield against foreign AI threats",
-      "link": "https://www.coindesk.com/policy/2026/11/05/u-s-justice-department-assembles-force-to-shield-against-foreign-ai-threats",
-      "pubDate": "Thu, 05 Nov 2026 18:59:45 +0000"
-    },
-    {
-      "title": "Bitcoin tumbles to $76,000 as collapsing AI trade drags stocks sharply lower",
-      "link": "https://www.coindesk.com/markets/2026/11/05/bitcoin-crypto-stocks-caught-in-ai-trade-meltdown-but-wintermute-trader-sees-glass-half-full",
-      "pubDate": "Thu, 05 Nov 2026 18:48:40 +0000"
-    },
-    {
-      "title": "What is TraderTraitor, the hacking squad behind the $6.3 billion Binance heist?",
-      "link": "https://www.coindesk.com/business/2026/11/05/what-is-tradertraitor-the-hacking-squad-behind-the-usd6-3-billion-binance-heist",
-      "pubDate": "Thu, 05 Nov 2026 16:58:21 +0000"
-    },
-    {
-      "title": "Standard Chartered and SBI back crypto insurer Soter as funding reaches $23.5 million",
-      "link": "https://www.coindesk.com/business/2026/11/05/soter-raises-usd23-5m-plus-btc-and-eth-as-banks-demand-theft-protection",
-      "pubDate": "Thu, 05 Nov 2026 16:49:08 +0000"
-    },
-    {
-      "title": "Crypto for Advisors: Where investors stake crypto shapes how much of the reward they keep",
-      "link": "https://www.coindesk.com/coindesk-indices/2026/11/05/crypto-for-advisors-where-investors-stake-crypto-shapes-how-much-of-the-reward-they-keep",
-      "pubDate": "Thu, 05 Nov 2026 16:13:32 +0000"
-    },
-    {
-      "title": "Gate CEO says crypto exchanges must prove they can survive a hack like Binance’s",
-      "link": "https://www.coindesk.com/business/2026/11/05/gate-ceo-says-crypto-exchanges-must-prove-they-can-survive-a-hack-like-binance-s",
-      "pubDate": "Thu, 05 Nov 2026 14:21:50 +0000"
-    },
-    {
-      "title": "Kraken parent Payward and its clients buy AAVE tokens in DeFi investment push",
-      "link": "https://www.coindesk.com/business/2026/11/05/kraken-parent-payward-and-its-clients-buy-aave-tokens-in-defi-investment-push",
-      "pubDate": "Thu, 05 Nov 2026 14:00:00 +0000"
-    },
-    {
-      "title": "Google could take stake in bitcoin miner TeraWulf’s $19 billion AI project if Anthropic defaults",
-      "link": "https://www.coindesk.com/tech/2026/11/05/google-could-take-ownership-stake-in-bitcoin-miner-terawulf-s-ai-project-if-anthropic-defaults",
-      "pubDate": "Thu, 05 Nov 2026 13:29:40 +0000"
-    },
-    {
-      "title": "Binance cuts SignalPlus access after security warning, urges users to check accounts",
-      "link": "https://www.coindesk.com/tech/2026/11/05/binance-cuts-signalplus-access-after-security-warning-urges-users-to-check-accounts",
-      "pubDate": "Thu, 05 Nov 2026 12:55:03 +0000"
     }
   ]
 }
