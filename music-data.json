@@ -1,7 +1,13 @@
 {
-  "fetchedAt": "2026-11-03T18:10:01.792Z",
+  "fetchedAt": "2026-11-07T18:10:01.698Z",
   "windowPlays": 500,
   "recentTracks": [
+    {
+      "artist": "Arcade Fire",
+      "album": "The Suburbs",
+      "track": "The Suburbs",
+      "played": 1794053988
+    },
     {
       "artist": "Arcade Fire",
       "album": "The Suburbs",
@@ -145,12 +151,6 @@
       "album": "Diamonds & Gasoline",
       "track": "Every Girl",
       "played": 1792265011
-    },
-    {
-      "artist": "The Smashing Pumpkins",
-      "album": "Siamese Dream",
-      "track": "Cherub Rock",
-      "played": 1792264913
     }
   ],
   "topArtists": [
@@ -179,19 +179,19 @@
       "plays": 12
     },
     {
-      "artist": "Elliott Smith",
-      "plays": 12
-    },
-    {
       "artist": "Thursday",
       "plays": 11
     },
     {
-      "artist": "The Smashing Pumpkins",
+      "artist": "Elliott Smith",
+      "plays": 11
+    },
+    {
+      "artist": "Arcade Fire",
       "plays": 9
     },
     {
-      "artist": "Wilco",
+      "artist": "The Smashing Pumpkins",
       "plays": 9
     }
   ],
@@ -242,8 +242,8 @@
       "plays": 5
     },
     {
-      "artist": "Hootie & the Blowfish",
-      "album": "Cracked Rear View",
+      "artist": "Arcade Fire",
+      "album": "The Suburbs",
       "plays": 4
     }
   ]
