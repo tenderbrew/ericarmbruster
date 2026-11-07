@@ -1,13 +1,13 @@
 {
-  "fetchedAt": "2026-11-07T12:53:15.100Z",
+  "fetchedAt": "2026-11-07T19:23:09.959Z",
   "price": {
-    "usd": 75800,
-    "time": 1794055807
+    "usd": 75694,
+    "time": 1794078908
   },
   "moves": {
-    "d1": 0.032620812626893425,
-    "d7": -2.219900224301874,
-    "d30": -7.205512658542834
+    "d1": -0.10726649352268414,
+    "d7": -2.3566375669961115,
+    "d30": -7.335278036619286
   },
   "history90d": [
     {
@@ -372,60 +372,75 @@
     },
     {
       "date": "2026-11-07",
-      "close": 75818.72491149294
+      "close": 75738.050688365
     }
   ],
   "blocks": [
     {
-      "height": 974935,
-      "id": "0000000000000000000090cadce92e448e19d424cc961892135345c4ee833ad0",
-      "timestamp": 1794055331,
-      "txCount": 6170
+      "height": 974969,
+      "id": "00000000000000000001de4256187ab703791314164a7a5846e2436ff98ce94c",
+      "timestamp": 1794079316,
+      "txCount": 2882
     },
     {
-      "height": 974934,
-      "id": "00000000000000000001708a008b387855f7ad746d36bf0dde7254937d9949e1",
-      "timestamp": 1794055118,
-      "txCount": 5819
+      "height": 974968,
+      "id": "0000000000000000000054b9614d993f77694d1997624966710729ead957ae46",
+      "timestamp": 1794078182,
+      "txCount": 7598
     },
     {
-      "height": 974933,
-      "id": "00000000000000000001b777449a6dbded49a0db8e7a72665ff0c4d2d181b3b2",
-      "timestamp": 1794054629,
-      "txCount": 3397
+      "height": 974967,
+      "id": "000000000000000000005f0dd4576657fadd8c3eb66a555a2a54623a8900c2d6",
+      "timestamp": 1794078125,
+      "txCount": 5505
     },
     {
-      "height": 974932,
-      "id": "0000000000000000000038b33494e04766c7bfa394e5eeb04a26b2b1d16508dd",
-      "timestamp": 1794053737,
-      "txCount": 2659
+      "height": 974966,
+      "id": "00000000000000000001d8f25960129f5666a410c13ece808289dd7707c431d5",
+      "timestamp": 1794077713,
+      "txCount": 11093
     },
     {
-      "height": 974931,
-      "id": "000000000000000000003ae9a65bb42224199d4f9f1c7aa15833b4af6b65468c",
-      "timestamp": 1794053712,
-      "txCount": 2990
+      "height": 974965,
+      "id": "0000000000000000000012a41c25399eb796e4e2ec0f4f2379baa1beb8b339fe",
+      "timestamp": 1794077722,
+      "txCount": 6146
     },
     {
-      "height": 974930,
-      "id": "00000000000000000000642ee55c6672864ce72cb64e30c7e4361845c7d453e4",
-      "timestamp": 1794051704,
-      "txCount": 1964
+      "height": 974964,
+      "id": "000000000000000000013c58434058fbf716433266c52aaebf70b3efd0b417b9",
+      "timestamp": 1794077413,
+      "txCount": 3409
     },
     {
-      "height": 974929,
-      "id": "000000000000000000005440bda20f7c1146a37b706061866349fdcba3a1c2a1",
-      "timestamp": 1794050997,
-      "txCount": 5838
+      "height": 974963,
+      "id": "00000000000000000001e4897c8760ef2bee0b6c62b2d07e36108739a9022316",
+      "timestamp": 1794076460,
+      "txCount": 5050
     },
     {
-      "height": 974928,
-      "id": "0000000000000000000196f456fba0e353a9a96da5c599bb7cb33132eab64bf7",
-      "timestamp": 1794050623,
-      "txCount": 3226
+      "height": 974962,
+      "id": "000000000000000000003860ca08e84db3a9db5bf47e402b5754f7f4ed7c752b",
+      "timestamp": 1794076105,
+      "txCount": 3658
     }
   ],
   "news": [
+    {
+      "title": "Binance users in some European countries told to pull crypto before fees kick in, with accounts closing by year end",
+      "link": "https://www.coindesk.com/business/2026/11/07/binance-users-in-some-european-countries-told-to-pull-crypto-before-fees-kick-in-with-accounts-closing-by-year-end",
+      "pubDate": "Sat, 07 Nov 2026 19:13:16 +0000"
+    },
+    {
+      "title": "U.S. Treasury moves to cut off crypto exchange MEXC over $16 billion in alleged illicit flows",
+      "link": "https://www.coindesk.com/business/2026/11/07/u-s-treasury-moves-to-cut-off-crypto-exchange-mexc-over-usd16-billion-in-alleged-illicit-flows",
+      "pubDate": "Sat, 07 Nov 2026 17:36:46 +0000"
+    },
+    {
+      "title": "Gnosis Pay breach exposes card numbers, home addresses and linked crypto wallets",
+      "link": "https://www.coindesk.com/business/2026/11/07/gnosis-pay-breach-exposes-card-numbers-home-addresses-and-linked-crypto-wallets",
+      "pubDate": "Sat, 07 Nov 2026 16:51:00 +0000"
+    },
     {
       "title": "Apple, Meta reject OKX–ICE tokenized stock plans, leaving crypto firms as the ones to watch",
       "link": "https://www.coindesk.com/policy/2026/11/06/apple-meta-reject-okx-ice-tokenized-stock-plans-leaving-crypto-firms-as-the-ones-to-watch",
@@ -470,21 +485,6 @@
       "title": "Bitcoin recovers $76,000 level as ETFs shed $430 million after tech rout",
       "link": "https://www.coindesk.com/markets/2026/11/06/bitcoin-recovers-usd76-000-level-as-etfs-shed-usd430-million-after-tech-rout",
       "pubDate": "Fri, 06 Nov 2026 09:53:27 +0000"
-    },
-    {
-      "title": "Greece approves 10% tax on crypto gains and 15% levy on DeFi income",
-      "link": "https://www.coindesk.com/policy/2026/11/06/greece-approves-10-tax-on-crypto-gains-and-15-levy-on-defi-income",
-      "pubDate": "Fri, 06 Nov 2026 08:47:42 +0000"
-    },
-    {
-      "title": "Trump-backed World Liberty Financial plans token buyback after 66% year-to-date slide",
-      "link": "https://www.coindesk.com/business/2026/11/06/trump-backed-world-liberty-financial-plans-token-buyback-after-66-year-to-date-slide",
-      "pubDate": "Fri, 06 Nov 2026 08:04:52 +0000"
-    },
-    {
-      "title": "Zcash’s landmark NU7 upgrade goes live, speeding up private payments",
-      "link": "https://www.coindesk.com/tech/2026/11/06/zcash-s-landmark-nu7-upgrade-goes-live-speeding-up-private-payments",
-      "pubDate": "Fri, 06 Nov 2026 05:14:48 +0000"
     }
   ]
 }
