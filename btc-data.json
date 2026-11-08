@@ -1,13 +1,13 @@
 {
-  "fetchedAt": "2026-11-08T10:11:29.368Z",
+  "fetchedAt": "2026-11-08T17:53:45.666Z",
   "price": {
-    "usd": 75802,
-    "time": 1794132307
+    "usd": 75695,
+    "time": 1794160205
   },
   "moves": {
-    "d1": 0.033813704027041425,
-    "d7": -3.1826758352751616,
-    "d30": -8.19033720226603
+    "d1": -0.10739125186238763,
+    "d7": -3.3193404837755347,
+    "d30": -8.31993317492319
   },
   "history90d": [
     {
@@ -372,60 +372,65 @@
     },
     {
       "date": "2026-11-08",
-      "close": 75813.74928053758
+      "close": 75704.89896145705
     }
   ],
   "blocks": [
     {
-      "height": 975048,
-      "id": "000000000000000000014c3957795a7ff5c0fdad20002a5fd07f5ce4d5e3a146",
-      "timestamp": 1794132203,
-      "txCount": 1362
+      "height": 975084,
+      "id": "000000000000000000013924bc9d48653c514fbf42be5a36d88af8596c411847",
+      "timestamp": 1794159620,
+      "txCount": 2522
     },
     {
-      "height": 975047,
-      "id": "0000000000000000000171f6bc9344e662f8dd706d56a9cab17da5da1a79fc5c",
-      "timestamp": 1794131650,
-      "txCount": 1847
+      "height": 975083,
+      "id": "000000000000000000004e33d17f6b5b73ea387ec876dc29a9e3435d26471368",
+      "timestamp": 1794159167,
+      "txCount": 2654
     },
     {
-      "height": 975046,
-      "id": "00000000000000000000375992b7eac21808406132b7978327eee7c4c5163070",
-      "timestamp": 1794131108,
-      "txCount": 2507
+      "height": 975082,
+      "id": "00000000000000000000ba9527060832849efa5cce38f5d8eb7e0516190cd6fb",
+      "timestamp": 1794158660,
+      "txCount": 3739
     },
     {
-      "height": 975045,
-      "id": "0000000000000000000099ebaf313330e649a648c7ae1a4124a0ec4471bf98b7",
-      "timestamp": 1794129985,
-      "txCount": 3920
+      "height": 975081,
+      "id": "00000000000000000001233e4d7d0f63e56dbfb62b7c0b423309e15ea5c734ec",
+      "timestamp": 1794157887,
+      "txCount": 3004
     },
     {
-      "height": 975044,
-      "id": "000000000000000000003c8b045f85c93973237979c94dacdd89dde16eb44836",
-      "timestamp": 1794127873,
-      "txCount": 2717
+      "height": 975080,
+      "id": "000000000000000000013d54751957f769913be032d6ea49d1740ab48eafcd9e",
+      "timestamp": 1794156956,
+      "txCount": 2805
     },
     {
-      "height": 975043,
-      "id": "000000000000000000008ed44aa5f27d8e576dd05e180c851427dab1641a59a8",
-      "timestamp": 1794127677,
-      "txCount": 3950
+      "height": 975079,
+      "id": "0000000000000000000013ac63467014cb37b8a013aaf8e9a863db765f28a9bf",
+      "timestamp": 1794156357,
+      "txCount": 3571
     },
     {
-      "height": 975042,
-      "id": "0000000000000000000160c6c1787c9201ea4c7b3d95378a744d5dc68293ba0e",
-      "timestamp": 1794123740,
-      "txCount": 2951
+      "height": 975078,
+      "id": "000000000000000000017d0786285dbd23c08c28561a656e38308be2d53b718a",
+      "timestamp": 1794156201,
+      "txCount": 3688
     },
     {
-      "height": 975041,
-      "id": "00000000000000000000648d9df32c1d1222fc8606d68a465be7a36c5141b7b7",
-      "timestamp": 1794122863,
-      "txCount": 4687
+      "height": 975077,
+      "id": "000000000000000000017d05e4aa579657fe1db9f461d8b529e189b56c39d7a5",
+      "timestamp": 1794153941,
+      "txCount": 1268
     }
   ],
   "news": [
+    {
+      "title": "These Finland homes get free heat from bitcoin miners (as long as BTC stays above $70,000)",
+      "link": "https://www.coindesk.com/markets/2026/11/08/these-finland-homes-get-free-heat-from-bitcoin-miners-as-long-as-btc-stays-above-usd70-000",
+      "pubDate": "Sun, 08 Nov 2026 12:55:59 +0000"
+    },
     {
       "title": "Binance users in some European countries told to pull crypto before fees kick in, with accounts closing by year end",
       "link": "https://www.coindesk.com/business/2026/11/07/binance-users-in-some-european-countries-told-to-pull-crypto-before-fees-kick-in-with-accounts-closing-by-year-end",
@@ -480,11 +485,6 @@
       "title": "Bitcoin steadies after AI-led selloff as eyes turn to latest U.S. jobs figures",
       "link": "https://www.coindesk.com/markets/2026/11/06/bitcoin-steadies-near-usd76-000-after-ai-led-selloff",
       "pubDate": "Fri, 06 Nov 2026 11:49:35 +0000"
-    },
-    {
-      "title": "Bitcoin recovers $76,000 level as ETFs shed $430 million after tech rout",
-      "link": "https://www.coindesk.com/markets/2026/11/06/bitcoin-recovers-usd76-000-level-as-etfs-shed-usd430-million-after-tech-rout",
-      "pubDate": "Fri, 06 Nov 2026 09:53:27 +0000"
     }
   ]
 }
