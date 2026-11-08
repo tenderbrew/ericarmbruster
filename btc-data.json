@@ -1,13 +1,13 @@
 {
-  "fetchedAt": "2026-11-08T17:53:45.666Z",
+  "fetchedAt": "2026-11-08T21:58:28.380Z",
   "price": {
-    "usd": 75695,
-    "time": 1794160205
+    "usd": 74861,
+    "time": 1794174906
   },
   "moves": {
-    "d1": -0.10739125186238763,
-    "d7": -3.3193404837755347,
-    "d30": -8.31993317492319
+    "d1": -1.207998104309005,
+    "d7": -4.384558398255112,
+    "d30": -9.330055055260244
   },
   "history90d": [
     {
@@ -372,60 +372,70 @@
     },
     {
       "date": "2026-11-08",
-      "close": 75704.89896145705
+      "close": 74061.61605981909
     }
   ],
   "blocks": [
     {
-      "height": 975084,
-      "id": "000000000000000000013924bc9d48653c514fbf42be5a36d88af8596c411847",
-      "timestamp": 1794159620,
-      "txCount": 2522
+      "height": 975102,
+      "id": "00000000000000000000029589e01e567324b8088850f788aaf06b7b448af0c1",
+      "timestamp": 1794175060,
+      "txCount": 3972
     },
     {
-      "height": 975083,
-      "id": "000000000000000000004e33d17f6b5b73ea387ec876dc29a9e3435d26471368",
-      "timestamp": 1794159167,
-      "txCount": 2654
+      "height": 975101,
+      "id": "00000000000000000001bd1981691695cde11a5c8793a1e44572e2817a438e15",
+      "timestamp": 1794174086,
+      "txCount": 3978
     },
     {
-      "height": 975082,
-      "id": "00000000000000000000ba9527060832849efa5cce38f5d8eb7e0516190cd6fb",
-      "timestamp": 1794158660,
-      "txCount": 3739
+      "height": 975100,
+      "id": "000000000000000000013bf44837468ee40b05c7bbd6051e8c0d6cf14fe1e7ad",
+      "timestamp": 1794173238,
+      "txCount": 3555
     },
     {
-      "height": 975081,
-      "id": "00000000000000000001233e4d7d0f63e56dbfb62b7c0b423309e15ea5c734ec",
-      "timestamp": 1794157887,
-      "txCount": 3004
+      "height": 975099,
+      "id": "000000000000000000006ef3586862eb45ad5c7c53d814fadca597ad76c320cd",
+      "timestamp": 1794172112,
+      "txCount": 4472
     },
     {
-      "height": 975080,
-      "id": "000000000000000000013d54751957f769913be032d6ea49d1740ab48eafcd9e",
-      "timestamp": 1794156956,
-      "txCount": 2805
+      "height": 975098,
+      "id": "00000000000000000001c134b0b8cd19570a5dc0611e97999b717e183c4f0d4e",
+      "timestamp": 1794171441,
+      "txCount": 5680
     },
     {
-      "height": 975079,
-      "id": "0000000000000000000013ac63467014cb37b8a013aaf8e9a863db765f28a9bf",
-      "timestamp": 1794156357,
-      "txCount": 3571
+      "height": 975097,
+      "id": "000000000000000000018c3ca66fa23ed23da563a1b7e8e886b219d0afcd0e50",
+      "timestamp": 1794171154,
+      "txCount": 650
     },
     {
-      "height": 975078,
-      "id": "000000000000000000017d0786285dbd23c08c28561a656e38308be2d53b718a",
-      "timestamp": 1794156201,
-      "txCount": 3688
+      "height": 975096,
+      "id": "000000000000000000015066b7d894ee0a03a05415c014c2b95c871e51235e45",
+      "timestamp": 1794170770,
+      "txCount": 3777
     },
     {
-      "height": 975077,
-      "id": "000000000000000000017d05e4aa579657fe1db9f461d8b529e189b56c39d7a5",
-      "timestamp": 1794153941,
-      "txCount": 1268
+      "height": 975095,
+      "id": "000000000000000000014084ac193b91f2e8f40988333e43edb4b1d2c91d09aa",
+      "timestamp": 1794170348,
+      "txCount": 3394
     }
   ],
   "news": [
+    {
+      "title": "What the election results mean for crypto: State of Crypto",
+      "link": "https://www.coindesk.com/policy/2026/11/08/what-the-election-results-mean-for-crypto-state-of-crypto",
+      "pubDate": "Sun, 08 Nov 2026 19:30:00 +0000"
+    },
+    {
+      "title": "Stablecoin growth has stalled. The payments boom hasn't",
+      "link": "https://www.coindesk.com/business/2026/11/08/stablecoin-growth-has-stalled-the-payments-boom-hasn-t",
+      "pubDate": "Sun, 08 Nov 2026 19:16:42 +0000"
+    },
     {
       "title": "These Finland homes get free heat from bitcoin miners (as long as BTC stays above $70,000)",
       "link": "https://www.coindesk.com/markets/2026/11/08/these-finland-homes-get-free-heat-from-bitcoin-miners-as-long-as-btc-stays-above-usd70-000",
@@ -475,16 +485,6 @@
       "title": "Over $1 billion in bullish bets liquidated while ETF flows suggest no help in spot market",
       "link": "https://www.coindesk.com/daybook-us/2026/11/06/over-usd1-billion-in-bullish-bets-liquidated-while-etf-flows-suggest-no-help-in-spot-market",
       "pubDate": "Fri, 06 Nov 2026 12:30:00 +0000"
-    },
-    {
-      "title": "Live updates: Bitcoin flatlines under $76,000 as stock bounce loses steam into the close",
-      "link": "https://www.coindesk.com/tech/2026/11/06/live-updates-nasdaq-100-futures-rally-points-to-stock-market-respite",
-      "pubDate": "Fri, 06 Nov 2026 11:58:40 +0000"
-    },
-    {
-      "title": "Bitcoin steadies after AI-led selloff as eyes turn to latest U.S. jobs figures",
-      "link": "https://www.coindesk.com/markets/2026/11/06/bitcoin-steadies-near-usd76-000-after-ai-led-selloff",
-      "pubDate": "Fri, 06 Nov 2026 11:49:35 +0000"
     }
   ]
 }
