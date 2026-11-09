@@ -1,19 +1,15 @@
 {
-  "fetchedAt": "2026-11-08T21:58:28.380Z",
+  "fetchedAt": "2026-11-09T06:14:09.092Z",
   "price": {
-    "usd": 74861,
-    "time": 1794174906
+    "usd": 74459,
+    "time": 1794204607
   },
   "moves": {
-    "d1": -1.207998104309005,
-    "d7": -4.384558398255112,
-    "d30": -9.330055055260244
+    "d1": -0.3765269302574148,
+    "d7": -2.9336759071187712,
+    "d30": -10.20154039556479
   },
   "history90d": [
-    {
-      "date": "2026-08-11",
-      "close": 63915.71213556821
-    },
     {
       "date": "2026-08-12",
       "close": 63537.55988964766
@@ -371,61 +367,80 @@
       "close": 75776.37720009114
     },
     {
-      "date": "2026-11-08",
-      "close": 74061.61605981909
+      "date": "2026-11-09",
+      "close": 74740.41780080694
+    },
+    {
+      "date": "2026-11-09",
+      "close": 74546.2492612609
     }
   ],
   "blocks": [
     {
-      "height": 975102,
-      "id": "00000000000000000000029589e01e567324b8088850f788aaf06b7b448af0c1",
-      "timestamp": 1794175060,
-      "txCount": 3972
+      "height": 975139,
+      "id": "0000000000000000000034bd2b905d10097fb0077d15aa2ef93c13826744f149",
+      "timestamp": 1794203308,
+      "txCount": 2348
     },
     {
-      "height": 975101,
-      "id": "00000000000000000001bd1981691695cde11a5c8793a1e44572e2817a438e15",
-      "timestamp": 1794174086,
-      "txCount": 3978
+      "height": 975138,
+      "id": "00000000000000000001d63cf32816af0cf2fbfe7a82cb35166ff70a28dce15f",
+      "timestamp": 1794202271,
+      "txCount": 1120
     },
     {
-      "height": 975100,
-      "id": "000000000000000000013bf44837468ee40b05c7bbd6051e8c0d6cf14fe1e7ad",
-      "timestamp": 1794173238,
-      "txCount": 3555
+      "height": 975137,
+      "id": "00000000000000000001d6217e4415cf9d2ab209b1c670d07277a234093e3ea0",
+      "timestamp": 1794202178,
+      "txCount": 1528
     },
     {
-      "height": 975099,
-      "id": "000000000000000000006ef3586862eb45ad5c7c53d814fadca597ad76c320cd",
-      "timestamp": 1794172112,
-      "txCount": 4472
+      "height": 975136,
+      "id": "000000000000000000002b4acc3027886c9cb458902eb4ce3e25617cf245c04e",
+      "timestamp": 1794201867,
+      "txCount": 2314
     },
     {
-      "height": 975098,
-      "id": "00000000000000000001c134b0b8cd19570a5dc0611e97999b717e183c4f0d4e",
-      "timestamp": 1794171441,
-      "txCount": 5680
+      "height": 975135,
+      "id": "000000000000000000011038089e152d463df01b79d78050fa0cb3fa34009946",
+      "timestamp": 1794200882,
+      "txCount": 1109
     },
     {
-      "height": 975097,
-      "id": "000000000000000000018c3ca66fa23ed23da563a1b7e8e886b219d0afcd0e50",
-      "timestamp": 1794171154,
-      "txCount": 650
+      "height": 975134,
+      "id": "000000000000000000013ac62396f8076e6f7eade951d8bd1592783d4db2210e",
+      "timestamp": 1794200844,
+      "txCount": 2161
     },
     {
-      "height": 975096,
-      "id": "000000000000000000015066b7d894ee0a03a05415c014c2b95c871e51235e45",
-      "timestamp": 1794170770,
-      "txCount": 3777
+      "height": 975133,
+      "id": "00000000000000000000c820781d7dd7db4497cd88f205ea420bde25ad4b6976",
+      "timestamp": 1794200331,
+      "txCount": 2102
     },
     {
-      "height": 975095,
-      "id": "000000000000000000014084ac193b91f2e8f40988333e43edb4b1d2c91d09aa",
-      "timestamp": 1794170348,
-      "txCount": 3394
+      "height": 975132,
+      "id": "00000000000000000000d50927e773416b727bdb5706f62a8ec4a7006011a1a1",
+      "timestamp": 1794198805,
+      "txCount": 5560
     }
   ],
   "news": [
+    {
+      "title": "Two rival Ethereum proposals aim to stop Glamsterdam breaking old contracts",
+      "link": "https://www.coindesk.com/tech/2026/11/09/two-rival-ethereum-proposals-aim-to-stop-glamsterdam-breaking-old-contracts",
+      "pubDate": "Mon, 09 Nov 2026 05:16:54 +0000"
+    },
+    {
+      "title": "Binance's bitcoin mining pool finds just one block in a week as shutdown nears",
+      "link": "https://www.coindesk.com/tech/2026/11/09/binance-s-bitcoin-mining-pool-finds-just-one-block-in-a-week-as-shutdown-nears",
+      "pubDate": "Mon, 09 Nov 2026 04:54:39 +0000"
+    },
+    {
+      "title": "Bitcoin drops, then pops as Nvidia cheating scandal and failed Iran talks trigger volatility",
+      "link": "https://www.coindesk.com/markets/2026/11/09/bitcoin-drops-then-pops-as-nvidia-cheating-scandal-and-failed-iran-talks-trigger-volatility",
+      "pubDate": "Mon, 09 Nov 2026 03:21:49 +0000"
+    },
     {
       "title": "What the election results mean for crypto: State of Crypto",
       "link": "https://www.coindesk.com/policy/2026/11/08/what-the-election-results-mean-for-crypto-state-of-crypto",
@@ -470,21 +485,6 @@
       "title": "The crypto industry has found new ways to grow. Making money from them is another story",
       "link": "https://www.coindesk.com/markets/2026/11/05/the-crypto-industry-has-found-new-ways-to-grow-making-money-from-them-is-another-story",
       "pubDate": "Fri, 06 Nov 2026 15:26:38 +0000"
-    },
-    {
-      "title": "Thailand moves to block Bitget as crypto exchange's local acquisition faces uncertainty",
-      "link": "https://www.coindesk.com/business/2026/11/05/thailand-moves-to-block-bitget-as-crypto-exchange-s-local-acquisition-faces-uncertainty",
-      "pubDate": "Fri, 06 Nov 2026 14:33:49 +0000"
-    },
-    {
-      "title": "U.S. added 165,000 jobs in October, blowing past 65,000 estimate",
-      "link": "https://www.coindesk.com/markets/2026/11/06/u-s-added-165-000-jobs-in-october-blowing-past-65-000-estimate",
-      "pubDate": "Fri, 06 Nov 2026 13:31:54 +0000"
-    },
-    {
-      "title": "Over $1 billion in bullish bets liquidated while ETF flows suggest no help in spot market",
-      "link": "https://www.coindesk.com/daybook-us/2026/11/06/over-usd1-billion-in-bullish-bets-liquidated-while-etf-flows-suggest-no-help-in-spot-market",
-      "pubDate": "Fri, 06 Nov 2026 12:30:00 +0000"
     }
   ]
 }
