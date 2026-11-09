@@ -1,13 +1,13 @@
 {
-  "fetchedAt": "2026-11-09T06:14:09.092Z",
+  "fetchedAt": "2026-11-09T16:17:16.471Z",
   "price": {
-    "usd": 74459,
-    "time": 1794204607
+    "usd": 75104,
+    "time": 1794240608
   },
   "moves": {
-    "d1": -0.3765269302574148,
-    "d7": -2.9336759071187712,
-    "d30": -10.20154039556479
+    "d1": 0.48645995017322363,
+    "d7": -2.0928402923521494,
+    "d30": -9.4236625507796
   },
   "history90d": [
     {
@@ -372,119 +372,119 @@
     },
     {
       "date": "2026-11-09",
-      "close": 74546.2492612609
+      "close": 75077.10901313931
     }
   ],
   "blocks": [
     {
-      "height": 975139,
-      "id": "0000000000000000000034bd2b905d10097fb0077d15aa2ef93c13826744f149",
-      "timestamp": 1794203308,
-      "txCount": 2348
+      "height": 975192,
+      "id": "000000000000000000016a27cf94a55f041889a82e8ce5576a44f2f0071d7219",
+      "timestamp": 1794240556,
+      "txCount": 3322
     },
     {
-      "height": 975138,
-      "id": "00000000000000000001d63cf32816af0cf2fbfe7a82cb35166ff70a28dce15f",
-      "timestamp": 1794202271,
-      "txCount": 1120
+      "height": 975191,
+      "id": "00000000000000000000fe08c1c11dcd40d6a9bfc3eb3ab6322c32ec99c22dc0",
+      "timestamp": 1794239777,
+      "txCount": 3535
     },
     {
-      "height": 975137,
-      "id": "00000000000000000001d6217e4415cf9d2ab209b1c670d07277a234093e3ea0",
-      "timestamp": 1794202178,
-      "txCount": 1528
+      "height": 975190,
+      "id": "0000000000000000000153b627e5d18a5b7f2e1b4d601c7abaf5889c1af136ca",
+      "timestamp": 1794239448,
+      "txCount": 3969
     },
     {
-      "height": 975136,
-      "id": "000000000000000000002b4acc3027886c9cb458902eb4ce3e25617cf245c04e",
-      "timestamp": 1794201867,
-      "txCount": 2314
+      "height": 975189,
+      "id": "00000000000000000000ca817ee906d517ba640606cd3e37e979e9cb72aa30f3",
+      "timestamp": 1794237362,
+      "txCount": 3365
     },
     {
-      "height": 975135,
-      "id": "000000000000000000011038089e152d463df01b79d78050fa0cb3fa34009946",
-      "timestamp": 1794200882,
-      "txCount": 1109
+      "height": 975188,
+      "id": "0000000000000000000148c8c5bdf671be7f52827aea784c498a9f28334baa42",
+      "timestamp": 1794236715,
+      "txCount": 2572
     },
     {
-      "height": 975134,
-      "id": "000000000000000000013ac62396f8076e6f7eade951d8bd1592783d4db2210e",
-      "timestamp": 1794200844,
-      "txCount": 2161
+      "height": 975187,
+      "id": "00000000000000000000758142dec4108bff7b676f319393dd1d85fe131c318a",
+      "timestamp": 1794235815,
+      "txCount": 4667
     },
     {
-      "height": 975133,
-      "id": "00000000000000000000c820781d7dd7db4497cd88f205ea420bde25ad4b6976",
-      "timestamp": 1794200331,
-      "txCount": 2102
+      "height": 975186,
+      "id": "000000000000000000016eb354cac15f6693f272e31685179ceaca82b28fe44f",
+      "timestamp": 1794235637,
+      "txCount": 3091
     },
     {
-      "height": 975132,
-      "id": "00000000000000000000d50927e773416b727bdb5706f62a8ec4a7006011a1a1",
-      "timestamp": 1794198805,
-      "txCount": 5560
+      "height": 975185,
+      "id": "00000000000000000001822c0ff1251259d25a846766243dbd25af42f916a37d",
+      "timestamp": 1794234931,
+      "txCount": 2604
     }
   ],
   "news": [
     {
-      "title": "Two rival Ethereum proposals aim to stop Glamsterdam breaking old contracts",
-      "link": "https://www.coindesk.com/tech/2026/11/09/two-rival-ethereum-proposals-aim-to-stop-glamsterdam-breaking-old-contracts",
-      "pubDate": "Mon, 09 Nov 2026 05:16:54 +0000"
+      "title": "Google’s AI chip push adds more pressure on Nvidia",
+      "link": "https://www.coindesk.com/markets/2026/11/09/google-s-ai-chip-push-adds-more-pressure-on-nvidia",
+      "pubDate": "Mon, 09 Nov 2026 15:20:05 +0000"
     },
     {
-      "title": "Binance's bitcoin mining pool finds just one block in a week as shutdown nears",
-      "link": "https://www.coindesk.com/tech/2026/11/09/binance-s-bitcoin-mining-pool-finds-just-one-block-in-a-week-as-shutdown-nears",
-      "pubDate": "Mon, 09 Nov 2026 04:54:39 +0000"
+      "title": "North Korean hackers are creating memecoins to wash loot from $6.3 billion Binance hack",
+      "link": "https://www.coindesk.com/business/2026/11/09/north-korean-hackers-are-creating-memecoins-to-wash-loot-from-usd6-3-billion-binance-hack",
+      "pubDate": "Mon, 09 Nov 2026 15:00:44 +0000"
     },
     {
-      "title": "Bitcoin drops, then pops as Nvidia cheating scandal and failed Iran talks trigger volatility",
-      "link": "https://www.coindesk.com/markets/2026/11/09/bitcoin-drops-then-pops-as-nvidia-cheating-scandal-and-failed-iran-talks-trigger-volatility",
-      "pubDate": "Mon, 09 Nov 2026 03:21:49 +0000"
+      "title": "NYSE picks Avalanche to settle tokenized stocks amid Wall Street's blockchain race",
+      "link": "https://www.coindesk.com/business/2026/11/09/nyse-picks-avalanche-to-settle-tokenized-stocks-amid-wall-street-s-blockchain-race",
+      "pubDate": "Mon, 09 Nov 2026 13:40:06 +0000"
     },
     {
-      "title": "What the election results mean for crypto: State of Crypto",
-      "link": "https://www.coindesk.com/policy/2026/11/08/what-the-election-results-mean-for-crypto-state-of-crypto",
-      "pubDate": "Sun, 08 Nov 2026 19:30:00 +0000"
+      "title": "Solana set for its first tokenized stock venue under SEC framework, listing Galaxy",
+      "link": "https://www.coindesk.com/business/2026/11/06/solana-lset-for-its-first-tokenized-stock-venue-under-sec-framework-listing-galaxy",
+      "pubDate": "Mon, 09 Nov 2026 12:41:35 +0000"
     },
     {
-      "title": "Stablecoin growth has stalled. The payments boom hasn't",
-      "link": "https://www.coindesk.com/business/2026/11/08/stablecoin-growth-has-stalled-the-payments-boom-hasn-t",
-      "pubDate": "Sun, 08 Nov 2026 19:16:42 +0000"
+      "title": "Trump says he knows ‘nothing’ about World Liberty’s UAE ties as Justin Sun challenges filings",
+      "link": "https://www.coindesk.com/business/2026/11/09/trump-says-he-knows-nothing-about-world-liberty-s-uae-ties-as-justin-sun-challenges-filings",
+      "pubDate": "Mon, 09 Nov 2026 12:37:13 +0000"
     },
     {
-      "title": "These Finland homes get free heat from bitcoin miners (as long as BTC stays above $70,000)",
-      "link": "https://www.coindesk.com/markets/2026/11/08/these-finland-homes-get-free-heat-from-bitcoin-miners-as-long-as-btc-stays-above-usd70-000",
-      "pubDate": "Sun, 08 Nov 2026 12:55:59 +0000"
+      "title": "Bitcoin bulls can't rely on ETF flows",
+      "link": "https://www.coindesk.com/daybook-us/2026/11/09/bitcoin-bulls-can-t-rely-on-etf-flows",
+      "pubDate": "Mon, 09 Nov 2026 12:30:00 +0000"
     },
     {
-      "title": "Binance users in some European countries told to pull crypto before fees kick in, with accounts closing by year end",
-      "link": "https://www.coindesk.com/business/2026/11/07/binance-users-in-some-european-countries-told-to-pull-crypto-before-fees-kick-in-with-accounts-closing-by-year-end",
-      "pubDate": "Sat, 07 Nov 2026 19:13:16 +0000"
+      "title": "Nvidia-led tech selloff weighs on crypto majors",
+      "link": "https://www.coindesk.com/markets/2026/11/09/tech-selloff-weighs-on-crypto-majors",
+      "pubDate": "Mon, 09 Nov 2026 11:42:04 +0000"
     },
     {
-      "title": "U.S. Treasury moves to cut off crypto exchange MEXC over $16 billion in alleged illicit flows",
-      "link": "https://www.coindesk.com/business/2026/11/07/u-s-treasury-moves-to-cut-off-crypto-exchange-mexc-over-usd16-billion-in-alleged-illicit-flows",
-      "pubDate": "Sat, 07 Nov 2026 17:36:46 +0000"
+      "title": "Zcash developers want 20-second blocks just days after major speed upgrade",
+      "link": "https://www.coindesk.com/tech/2026/11/09/zcash-developers-want-20-second-blocks-just-days-after-major-speed-upgrade",
+      "pubDate": "Mon, 09 Nov 2026 10:52:49 +0000"
     },
     {
-      "title": "Gnosis Pay breach exposes card numbers, home addresses and linked crypto wallets",
-      "link": "https://www.coindesk.com/business/2026/11/07/gnosis-pay-breach-exposes-card-numbers-home-addresses-and-linked-crypto-wallets",
-      "pubDate": "Sat, 07 Nov 2026 16:51:00 +0000"
+      "title": "Live news: Bitcoin narrows loss as Nasdaq surges more than 2%",
+      "link": "https://www.coindesk.com/tech/2026/11/09/live-news-nvidia-slides-on-ceo-allegations-as-bitcoin-hovers-just-above-its-200-day-average",
+      "pubDate": "Mon, 09 Nov 2026 10:51:48 +0000"
     },
     {
-      "title": "Apple, Meta reject OKX–ICE tokenized stock plans, leaving crypto firms as the ones to watch",
-      "link": "https://www.coindesk.com/policy/2026/11/06/apple-meta-reject-okx-ice-tokenized-stock-plans-leaving-crypto-firms-as-the-ones-to-watch",
-      "pubDate": "Fri, 06 Nov 2026 20:09:18 +0000"
+      "title": "Coinbase gets full U.S. trust charter from federal banking regulator",
+      "link": "https://www.coindesk.com/policy/2026/11/09/coinbase-gets-full-u-s-trust-charter-from-federal-banking-regulator",
+      "pubDate": "Mon, 09 Nov 2026 10:00:00 +0000"
     },
     {
-      "title": "U.S. prediction markets regulator issues demand that clashes directly with courts",
-      "link": "https://www.coindesk.com/policy/2026/11/06/u-s-prediction-markets-regulator-issues-demand-that-clashes-directly-with-courts",
-      "pubDate": "Fri, 06 Nov 2026 17:42:28 +0000"
+      "title": "U.S. inflation, corporate earnings: Crypto Week Ahead",
+      "link": "https://www.coindesk.com/markets/2026/11/09/u-s-inflation-corporate-earnings-crypto-week-ahead",
+      "pubDate": "Mon, 09 Nov 2026 09:33:27 +0000"
     },
     {
-      "title": "The crypto industry has found new ways to grow. Making money from them is another story",
-      "link": "https://www.coindesk.com/markets/2026/11/05/the-crypto-industry-has-found-new-ways-to-grow-making-money-from-them-is-another-story",
-      "pubDate": "Fri, 06 Nov 2026 15:26:38 +0000"
+      "title": "SpaceX proposes a $24 billion Texas supercomputer and a gas plant",
+      "link": "https://www.coindesk.com/markets/2026/11/09/spacex-proposes-a-usd24-billion-texas-supercomputer-worth-17-times-its-bitcoin-pile",
+      "pubDate": "Mon, 09 Nov 2026 06:54:41 +0000"
     }
   ]
 }
