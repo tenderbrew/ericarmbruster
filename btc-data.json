@@ -1,19 +1,15 @@
 {
-  "fetchedAt": "2026-11-09T16:17:16.471Z",
+  "fetchedAt": "2026-11-10T01:28:34.819Z",
   "price": {
-    "usd": 75104,
-    "time": 1794240608
+    "usd": 75041,
+    "time": 1794273606
   },
   "moves": {
-    "d1": 0.48645995017322363,
-    "d7": -2.0928402923521494,
-    "d30": -9.4236625507796
+    "d1": -0.29995616862240615,
+    "d7": -3.028496392852742,
+    "d30": -10.33549933361626
   },
   "history90d": [
-    {
-      "date": "2026-08-12",
-      "close": 63537.55988964766
-    },
     {
       "date": "2026-08-13",
       "close": 63408.625697113624
@@ -371,61 +367,80 @@
       "close": 74740.41780080694
     },
     {
-      "date": "2026-11-09",
-      "close": 75077.10901313931
+      "date": "2026-11-10",
+      "close": 75266.76731147344
+    },
+    {
+      "date": "2026-11-10",
+      "close": 75073.13657676407
     }
   ],
   "blocks": [
     {
-      "height": 975192,
-      "id": "000000000000000000016a27cf94a55f041889a82e8ce5576a44f2f0071d7219",
-      "timestamp": 1794240556,
-      "txCount": 3322
+      "height": 975234,
+      "id": "00000000000000000000fecf80fdc3e6ca13d342a3bda6665dfb28e22d252f75",
+      "timestamp": 1794273921,
+      "txCount": 1139
     },
     {
-      "height": 975191,
-      "id": "00000000000000000000fe08c1c11dcd40d6a9bfc3eb3ab6322c32ec99c22dc0",
-      "timestamp": 1794239777,
-      "txCount": 3535
+      "height": 975233,
+      "id": "00000000000000000001bef93f25bb952526a1e32a6b1f0310178d85bf70e058",
+      "timestamp": 1794273758,
+      "txCount": 1664
     },
     {
-      "height": 975190,
-      "id": "0000000000000000000153b627e5d18a5b7f2e1b4d601c7abaf5889c1af136ca",
-      "timestamp": 1794239448,
-      "txCount": 3969
+      "height": 975232,
+      "id": "000000000000000000013f59c59c812c0960e32213d97ab6407af307bdf54726",
+      "timestamp": 1794273369,
+      "txCount": 2099
     },
     {
-      "height": 975189,
-      "id": "00000000000000000000ca817ee906d517ba640606cd3e37e979e9cb72aa30f3",
-      "timestamp": 1794237362,
-      "txCount": 3365
+      "height": 975231,
+      "id": "000000000000000000001907a9497666e7ea15e7cb007a12a185ccb5e90de991",
+      "timestamp": 1794273303,
+      "txCount": 2733
     },
     {
-      "height": 975188,
-      "id": "0000000000000000000148c8c5bdf671be7f52827aea784c498a9f28334baa42",
-      "timestamp": 1794236715,
-      "txCount": 2572
+      "height": 975230,
+      "id": "0000000000000000000194f9d869aacbcc933214cf1e5eacadaf42aabe509da0",
+      "timestamp": 1794272151,
+      "txCount": 3496
     },
     {
-      "height": 975187,
-      "id": "00000000000000000000758142dec4108bff7b676f319393dd1d85fe131c318a",
-      "timestamp": 1794235815,
-      "txCount": 4667
+      "height": 975229,
+      "id": "0000000000000000000098efadd0dbc572c2fec0b4526ffe88e2d1ac99689711",
+      "timestamp": 1794270550,
+      "txCount": 1075
     },
     {
-      "height": 975186,
-      "id": "000000000000000000016eb354cac15f6693f272e31685179ceaca82b28fe44f",
-      "timestamp": 1794235637,
-      "txCount": 3091
+      "height": 975228,
+      "id": "00000000000000000000c3094fa2d97df24c4a7d0f3f2a81a5069ea9946327fd",
+      "timestamp": 1794270158,
+      "txCount": 3206
     },
     {
-      "height": 975185,
-      "id": "00000000000000000001822c0ff1251259d25a846766243dbd25af42f916a37d",
-      "timestamp": 1794234931,
-      "txCount": 2604
+      "height": 975227,
+      "id": "00000000000000000001ae01b289eb9e88984d87fc8f61ed868d6ec46672cea6",
+      "timestamp": 1794269631,
+      "txCount": 1893
     }
   ],
   "news": [
+    {
+      "title": "Securitize pushes into $6 trillion asset-backed finance market with River One acquisition",
+      "link": "https://www.coindesk.com/business/2026/11/09/securitize-pushes-into-usd6-trillion-asset-backed-finance-market-with-river-one-acquisition",
+      "pubDate": "Mon, 09 Nov 2026 22:56:27 +0000"
+    },
+    {
+      "title": "Robinhood backs tokenization of its stock on OKX–ICE platform even as most companies opt out",
+      "link": "https://www.coindesk.com/business/2026/11/09/robinhood-backs-tokenization-of-its-stock-on-okx-ice-platform-even-as-most-companies-opt-out",
+      "pubDate": "Mon, 09 Nov 2026 19:36:15 +0000"
+    },
+    {
+      "title": "A Bitcoin block just neared a 2015 transaction record, but paid only $180 in fees",
+      "link": "https://www.coindesk.com/tech/2026/11/09/a-bitcoin-block-just-neared-a-2015-transaction-record-but-paid-only-usd180-in-fees",
+      "pubDate": "Mon, 09 Nov 2026 16:19:45 +0000"
+    },
     {
       "title": "Google’s AI chip push adds more pressure on Nvidia",
       "link": "https://www.coindesk.com/markets/2026/11/09/google-s-ai-chip-push-adds-more-pressure-on-nvidia",
@@ -467,24 +482,9 @@
       "pubDate": "Mon, 09 Nov 2026 10:52:49 +0000"
     },
     {
-      "title": "Live news: Bitcoin narrows loss as Nasdaq surges more than 2%",
+      "title": "Live news: Crypto prices give ground even as stocks and gold surge, oil plunges",
       "link": "https://www.coindesk.com/tech/2026/11/09/live-news-nvidia-slides-on-ceo-allegations-as-bitcoin-hovers-just-above-its-200-day-average",
       "pubDate": "Mon, 09 Nov 2026 10:51:48 +0000"
-    },
-    {
-      "title": "Coinbase gets full U.S. trust charter from federal banking regulator",
-      "link": "https://www.coindesk.com/policy/2026/11/09/coinbase-gets-full-u-s-trust-charter-from-federal-banking-regulator",
-      "pubDate": "Mon, 09 Nov 2026 10:00:00 +0000"
-    },
-    {
-      "title": "U.S. inflation, corporate earnings: Crypto Week Ahead",
-      "link": "https://www.coindesk.com/markets/2026/11/09/u-s-inflation-corporate-earnings-crypto-week-ahead",
-      "pubDate": "Mon, 09 Nov 2026 09:33:27 +0000"
-    },
-    {
-      "title": "SpaceX proposes a $24 billion Texas supercomputer and a gas plant",
-      "link": "https://www.coindesk.com/markets/2026/11/09/spacex-proposes-a-usd24-billion-texas-supercomputer-worth-17-times-its-bitcoin-pile",
-      "pubDate": "Mon, 09 Nov 2026 06:54:41 +0000"
     }
   ]
 }
