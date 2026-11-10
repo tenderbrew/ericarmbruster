@@ -1,13 +1,13 @@
 {
-  "fetchedAt": "2026-11-10T11:02:52.436Z",
+  "fetchedAt": "2026-11-10T19:40:08.057Z",
   "price": {
-    "usd": 74164,
-    "time": 1794308407
+    "usd": 73381,
+    "time": 1794339308
   },
   "moves": {
-    "d1": -1.4651450445717917,
-    "d7": -4.161796970716414,
-    "d30": -11.383403373866507
+    "d1": -2.505444804969026,
+    "d7": -5.173626334989234,
+    "d30": -12.318989307180006
   },
   "history90d": [
     {
@@ -372,67 +372,107 @@
     },
     {
       "date": "2026-11-10",
-      "close": 74105.21291505244
+      "close": 73281.65073163697
     }
   ],
   "blocks": [
     {
-      "height": 975292,
-      "id": "000000000000000000014a0bdbbf714a9c866bdd606a00f6872b0c6882795a2a",
-      "timestamp": 1794308319,
-      "txCount": 1733
+      "height": 975337,
+      "id": "000000000000000000003fa0afd1ccca5bd22c4f1b641de5245d36bf7140b602",
+      "timestamp": 1794338525,
+      "txCount": 3493
     },
     {
-      "height": 975291,
-      "id": "000000000000000000009d74c23c61ae79ae966750ab5fb4466eebae6a6e65f9",
-      "timestamp": 1794308034,
-      "txCount": 1156
+      "height": 975336,
+      "id": "00000000000000000000a16b19ffc7ce2b7851fc1a723531e149492a34155527",
+      "timestamp": 1794337997,
+      "txCount": 5337
     },
     {
-      "height": 975290,
-      "id": "00000000000000000000f785400515861a50ba86d9bf186a6609c7e3fb8a4e1e",
-      "timestamp": 1794307996,
-      "txCount": 2135
+      "height": 975335,
+      "id": "00000000000000000001a57ce3857af21f171c2d65fb87cfee74d057cb76bad3",
+      "timestamp": 1794337911,
+      "txCount": 3035
     },
     {
-      "height": 975289,
-      "id": "00000000000000000001daf429ca82661d20348434bc3a55e24343228730d954",
-      "timestamp": 1794307485,
-      "txCount": 1243
+      "height": 975334,
+      "id": "00000000000000000001bb536609a8bc11b5e24b077e1e8752137b0c2fb01d4d",
+      "timestamp": 1794337728,
+      "txCount": 3953
     },
     {
-      "height": 975288,
-      "id": "00000000000000000000caea3f6b314f2a390c9326e66184c36a653e342f3eb8",
-      "timestamp": 1794307391,
-      "txCount": 1457
+      "height": 975333,
+      "id": "00000000000000000000b76fc3c22759318b704bbe602dbeb186644b2dafef3f",
+      "timestamp": 1794335641,
+      "txCount": 5253
     },
     {
-      "height": 975287,
-      "id": "0000000000000000000165497ed79e260f52e8d0851603c63c90dc1b9782614c",
-      "timestamp": 1794307261,
-      "txCount": 1274
+      "height": 975332,
+      "id": "000000000000000000005eb6889dd6ba623573b77b722f328c53b8c5fa9505f6",
+      "timestamp": 1794335172,
+      "txCount": 4444
     },
     {
-      "height": 975286,
-      "id": "0000000000000000000010511f901d5c739e5c14d5eb6a9e41f293463fc960bb",
-      "timestamp": 1794307060,
-      "txCount": 3108
+      "height": 975331,
+      "id": "00000000000000000000fd96557b00b849f533e5adfc27961ce43b1ec4f52b68",
+      "timestamp": 1794334644,
+      "txCount": 3348
     },
     {
-      "height": 975285,
-      "id": "000000000000000000005e8de9ebbae1365da22e1345e737697907c21187ffab",
-      "timestamp": 1794306515,
-      "txCount": 2383
+      "height": 975330,
+      "id": "0000000000000000000156a6cae5606b6c39f73ba8cba54e152524862e40657c",
+      "timestamp": 1794334398,
+      "txCount": 3161
     }
   ],
   "news": [
+    {
+      "title": "Goldman Sachs, Citi among banks said to commit $270 million to stablecoin venture",
+      "link": "https://www.coindesk.com/business/2026/11/10/goldman-sachs-citi-among-banks-said-to-commit-usd270-million-to-stablecoin-venture",
+      "pubDate": "Tue, 10 Nov 2026 17:32:22 +0000"
+    },
+    {
+      "title": "Crypto is now teamed up with U.S. government in two legal battles over perps",
+      "link": "https://www.coindesk.com/news-analysis/2026/11/10/crypto-teams-up-with-u-s-government-to-defend-stock-perps-in-legal-fight",
+      "pubDate": "Tue, 10 Nov 2026 17:07:22 +0000"
+    },
+    {
+      "title": "Plume affiliate lands broker-dealer license to bring real U.S. assets onchain",
+      "link": "https://www.coindesk.com/markets/2026/11/10/emb-10-am-et-plume-affiliate-gets-the-legal-green-light-to-trade-regulated-security-entitlements-onchain",
+      "pubDate": "Tue, 10 Nov 2026 15:51:56 +0000"
+    },
+    {
+      "title": "Will stablecoins survive once the banks catch up?",
+      "link": "https://www.coindesk.com/opinion/2026/11/10/will-stablecoins-survive-once-the-banks-catch-up",
+      "pubDate": "Tue, 10 Nov 2026 14:00:00 +0000"
+    },
+    {
+      "title": "U.S. CPI rose stronger than expected 0.4% in October; core rate rose 0.3%",
+      "link": "https://www.coindesk.com/markets/2026/11/10/u-s-cpi-rose-stronger-than-expected-0-4-in-october-core-rate-rose-0-3",
+      "pubDate": "Tue, 10 Nov 2026 13:32:09 +0000"
+    },
+    {
+      "title": "Ripple Prime head Marc Asch to step down, Noel Kimmel named successor",
+      "link": "https://www.coindesk.com/business/2026/11/09/ripple-prime-head-marc-asch-to-step-down-noel-kimmel-named-successor",
+      "pubDate": "Tue, 10 Nov 2026 12:38:20 +0000"
+    },
+    {
+      "title": "Bitcoin breaks with stocks, declines as ETF outflows mount, MARA reduces holdings",
+      "link": "https://www.coindesk.com/daybook-us/2026/11/10/bitcoin-breaks-with-stocks-declines-as-etf-outflows-mount-mara-sells-holdings",
+      "pubDate": "Tue, 10 Nov 2026 12:15:00 +0000"
+    },
+    {
+      "title": "Bitcoin lags stock rebound in advance of U.S. inflation report",
+      "link": "https://www.coindesk.com/markets/2026/11/10/bitcoin-lags-stock-rebound-in-advance-of-u-s-inflation-report",
+      "pubDate": "Tue, 10 Nov 2026 11:24:10 +0000"
+    },
     {
       "title": "Bitcoin slips before U.S. inflation report as traders price in Fed rate increase",
       "link": "https://www.coindesk.com/markets/2026/11/10/bitcoin-slips-before-u-s-inflation-report-as-traders-price-in-fed-rate-increase",
       "pubDate": "Tue, 10 Nov 2026 10:48:37 +0000"
     },
     {
-      "title": "Live news: Traders price in fed rate hike for December as bitcoin and gold retreat",
+      "title": "Live news: Bitcoin falls to nearly three-month low after disappointing inflation data",
       "link": "https://www.coindesk.com/markets/2026/11/10/live-news-traders-price-in-fed-rate-hike-for-december-as-bitcoin-and-gold-retreat",
       "pubDate": "Tue, 10 Nov 2026 10:41:45 +0000"
     },
@@ -445,46 +485,6 @@
       "title": "Coinbase, Kalshi, Kraken parent back CFTC in legal fight over stock perpetual futures",
       "link": "https://www.coindesk.com/policy/2026/11/10/coinbase-kalshi-kraken-parent-back-cftc-in-legal-fight-over-stock-perpetual-futures",
       "pubDate": "Tue, 10 Nov 2026 09:14:30 +0000"
-    },
-    {
-      "title": "An 11-year-old Ethereum wallet moved $4.6 million and dodged a scam set up in minutes",
-      "link": "https://www.coindesk.com/tech/2026/11/10/an-11-year-old-ethereum-wallet-moved-usd4-6-million-and-dodged-a-scam-set-up-in-minutes",
-      "pubDate": "Tue, 10 Nov 2026 07:01:06 +0000"
-    },
-    {
-      "title": "Bitcoin miner MARA sold 13,597 BTC for $1.1 billion in six weeks, plans to sell more",
-      "link": "https://www.coindesk.com/markets/2026/11/10/bitcoin-miner-mara-sold-13-597-btc-for-usd1-1-billion-in-six-weeks-plans-to-sell-more",
-      "pubDate": "Tue, 10 Nov 2026 05:18:31 +0000"
-    },
-    {
-      "title": "XRP Ledger maps out quantum-proof accounts, with no extra fees for users",
-      "link": "https://www.coindesk.com/tech/2026/11/10/xrp-ledger-maps-out-quantum-proof-accounts-with-no-extra-fees-for-users",
-      "pubDate": "Tue, 10 Nov 2026 04:51:20 +0000"
-    },
-    {
-      "title": "Bitcoin faces U.S. CPI test as analysts warn inflation relief may not be enough",
-      "link": "https://www.coindesk.com/markets/2026/11/10/bitcoin-faces-u-s-cpi-test-as-analysts-warn-inflation-relief-may-not-be-enough",
-      "pubDate": "Tue, 10 Nov 2026 03:22:26 +0000"
-    },
-    {
-      "title": "Securitize pushes into $6 trillion asset-backed finance market with River One acquisition",
-      "link": "https://www.coindesk.com/business/2026/11/09/securitize-pushes-into-usd6-trillion-asset-backed-finance-market-with-river-one-acquisition",
-      "pubDate": "Mon, 09 Nov 2026 22:56:27 +0000"
-    },
-    {
-      "title": "Robinhood backs tokenization of its stock on OKX–ICE platform even as most companies opt out",
-      "link": "https://www.coindesk.com/business/2026/11/09/robinhood-backs-tokenization-of-its-stock-on-okx-ice-platform-even-as-most-companies-opt-out",
-      "pubDate": "Mon, 09 Nov 2026 19:36:15 +0000"
-    },
-    {
-      "title": "A Bitcoin block just neared a 2015 transaction record, but paid only $180 in fees",
-      "link": "https://www.coindesk.com/tech/2026/11/09/a-bitcoin-block-just-neared-a-2015-transaction-record-but-paid-only-usd180-in-fees",
-      "pubDate": "Mon, 09 Nov 2026 16:19:45 +0000"
-    },
-    {
-      "title": "Google’s AI chip push adds more pressure on Nvidia",
-      "link": "https://www.coindesk.com/markets/2026/11/09/google-s-ai-chip-push-adds-more-pressure-on-nvidia",
-      "pubDate": "Mon, 09 Nov 2026 15:20:05 +0000"
     }
   ]
 }
