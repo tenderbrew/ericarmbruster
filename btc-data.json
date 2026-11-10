@@ -1,13 +1,13 @@
 {
-  "fetchedAt": "2026-11-10T01:28:34.819Z",
+  "fetchedAt": "2026-11-10T11:02:52.436Z",
   "price": {
-    "usd": 75041,
-    "time": 1794273606
+    "usd": 74164,
+    "time": 1794308407
   },
   "moves": {
-    "d1": -0.29995616862240615,
-    "d7": -3.028496392852742,
-    "d30": -10.33549933361626
+    "d1": -1.4651450445717917,
+    "d7": -4.161796970716414,
+    "d30": -11.383403373866507
   },
   "history90d": [
     {
@@ -372,60 +372,100 @@
     },
     {
       "date": "2026-11-10",
-      "close": 75073.13657676407
+      "close": 74105.21291505244
     }
   ],
   "blocks": [
     {
-      "height": 975234,
-      "id": "00000000000000000000fecf80fdc3e6ca13d342a3bda6665dfb28e22d252f75",
-      "timestamp": 1794273921,
-      "txCount": 1139
+      "height": 975292,
+      "id": "000000000000000000014a0bdbbf714a9c866bdd606a00f6872b0c6882795a2a",
+      "timestamp": 1794308319,
+      "txCount": 1733
     },
     {
-      "height": 975233,
-      "id": "00000000000000000001bef93f25bb952526a1e32a6b1f0310178d85bf70e058",
-      "timestamp": 1794273758,
-      "txCount": 1664
+      "height": 975291,
+      "id": "000000000000000000009d74c23c61ae79ae966750ab5fb4466eebae6a6e65f9",
+      "timestamp": 1794308034,
+      "txCount": 1156
     },
     {
-      "height": 975232,
-      "id": "000000000000000000013f59c59c812c0960e32213d97ab6407af307bdf54726",
-      "timestamp": 1794273369,
-      "txCount": 2099
+      "height": 975290,
+      "id": "00000000000000000000f785400515861a50ba86d9bf186a6609c7e3fb8a4e1e",
+      "timestamp": 1794307996,
+      "txCount": 2135
     },
     {
-      "height": 975231,
-      "id": "000000000000000000001907a9497666e7ea15e7cb007a12a185ccb5e90de991",
-      "timestamp": 1794273303,
-      "txCount": 2733
+      "height": 975289,
+      "id": "00000000000000000001daf429ca82661d20348434bc3a55e24343228730d954",
+      "timestamp": 1794307485,
+      "txCount": 1243
     },
     {
-      "height": 975230,
-      "id": "0000000000000000000194f9d869aacbcc933214cf1e5eacadaf42aabe509da0",
-      "timestamp": 1794272151,
-      "txCount": 3496
+      "height": 975288,
+      "id": "00000000000000000000caea3f6b314f2a390c9326e66184c36a653e342f3eb8",
+      "timestamp": 1794307391,
+      "txCount": 1457
     },
     {
-      "height": 975229,
-      "id": "0000000000000000000098efadd0dbc572c2fec0b4526ffe88e2d1ac99689711",
-      "timestamp": 1794270550,
-      "txCount": 1075
+      "height": 975287,
+      "id": "0000000000000000000165497ed79e260f52e8d0851603c63c90dc1b9782614c",
+      "timestamp": 1794307261,
+      "txCount": 1274
     },
     {
-      "height": 975228,
-      "id": "00000000000000000000c3094fa2d97df24c4a7d0f3f2a81a5069ea9946327fd",
-      "timestamp": 1794270158,
-      "txCount": 3206
+      "height": 975286,
+      "id": "0000000000000000000010511f901d5c739e5c14d5eb6a9e41f293463fc960bb",
+      "timestamp": 1794307060,
+      "txCount": 3108
     },
     {
-      "height": 975227,
-      "id": "00000000000000000001ae01b289eb9e88984d87fc8f61ed868d6ec46672cea6",
-      "timestamp": 1794269631,
-      "txCount": 1893
+      "height": 975285,
+      "id": "000000000000000000005e8de9ebbae1365da22e1345e737697907c21187ffab",
+      "timestamp": 1794306515,
+      "txCount": 2383
     }
   ],
   "news": [
+    {
+      "title": "Bitcoin slips before U.S. inflation report as traders price in Fed rate increase",
+      "link": "https://www.coindesk.com/markets/2026/11/10/bitcoin-slips-before-u-s-inflation-report-as-traders-price-in-fed-rate-increase",
+      "pubDate": "Tue, 10 Nov 2026 10:48:37 +0000"
+    },
+    {
+      "title": "Live news: Traders price in fed rate hike for December as bitcoin and gold retreat",
+      "link": "https://www.coindesk.com/markets/2026/11/10/live-news-traders-price-in-fed-rate-hike-for-december-as-bitcoin-and-gold-retreat",
+      "pubDate": "Tue, 10 Nov 2026 10:41:45 +0000"
+    },
+    {
+      "title": "The crypto wallet that grew up inside Telegram is striking out on its own",
+      "link": "https://www.coindesk.com/business/2026/11/10/the-crypto-wallet-that-grew-up-inside-telegram-is-striking-out-on-its-own",
+      "pubDate": "Tue, 10 Nov 2026 09:59:17 +0000"
+    },
+    {
+      "title": "Coinbase, Kalshi, Kraken parent back CFTC in legal fight over stock perpetual futures",
+      "link": "https://www.coindesk.com/policy/2026/11/10/coinbase-kalshi-kraken-parent-back-cftc-in-legal-fight-over-stock-perpetual-futures",
+      "pubDate": "Tue, 10 Nov 2026 09:14:30 +0000"
+    },
+    {
+      "title": "An 11-year-old Ethereum wallet moved $4.6 million and dodged a scam set up in minutes",
+      "link": "https://www.coindesk.com/tech/2026/11/10/an-11-year-old-ethereum-wallet-moved-usd4-6-million-and-dodged-a-scam-set-up-in-minutes",
+      "pubDate": "Tue, 10 Nov 2026 07:01:06 +0000"
+    },
+    {
+      "title": "Bitcoin miner MARA sold 13,597 BTC for $1.1 billion in six weeks, plans to sell more",
+      "link": "https://www.coindesk.com/markets/2026/11/10/bitcoin-miner-mara-sold-13-597-btc-for-usd1-1-billion-in-six-weeks-plans-to-sell-more",
+      "pubDate": "Tue, 10 Nov 2026 05:18:31 +0000"
+    },
+    {
+      "title": "XRP Ledger maps out quantum-proof accounts, with no extra fees for users",
+      "link": "https://www.coindesk.com/tech/2026/11/10/xrp-ledger-maps-out-quantum-proof-accounts-with-no-extra-fees-for-users",
+      "pubDate": "Tue, 10 Nov 2026 04:51:20 +0000"
+    },
+    {
+      "title": "Bitcoin faces U.S. CPI test as analysts warn inflation relief may not be enough",
+      "link": "https://www.coindesk.com/markets/2026/11/10/bitcoin-faces-u-s-cpi-test-as-analysts-warn-inflation-relief-may-not-be-enough",
+      "pubDate": "Tue, 10 Nov 2026 03:22:26 +0000"
+    },
     {
       "title": "Securitize pushes into $6 trillion asset-backed finance market with River One acquisition",
       "link": "https://www.coindesk.com/business/2026/11/09/securitize-pushes-into-usd6-trillion-asset-backed-finance-market-with-river-one-acquisition",
@@ -445,46 +485,6 @@
       "title": "Google’s AI chip push adds more pressure on Nvidia",
       "link": "https://www.coindesk.com/markets/2026/11/09/google-s-ai-chip-push-adds-more-pressure-on-nvidia",
       "pubDate": "Mon, 09 Nov 2026 15:20:05 +0000"
-    },
-    {
-      "title": "North Korean hackers are creating memecoins to wash loot from $6.3 billion Binance hack",
-      "link": "https://www.coindesk.com/business/2026/11/09/north-korean-hackers-are-creating-memecoins-to-wash-loot-from-usd6-3-billion-binance-hack",
-      "pubDate": "Mon, 09 Nov 2026 15:00:44 +0000"
-    },
-    {
-      "title": "NYSE picks Avalanche to settle tokenized stocks amid Wall Street's blockchain race",
-      "link": "https://www.coindesk.com/business/2026/11/09/nyse-picks-avalanche-to-settle-tokenized-stocks-amid-wall-street-s-blockchain-race",
-      "pubDate": "Mon, 09 Nov 2026 13:40:06 +0000"
-    },
-    {
-      "title": "Solana set for its first tokenized stock venue under SEC framework, listing Galaxy",
-      "link": "https://www.coindesk.com/business/2026/11/06/solana-lset-for-its-first-tokenized-stock-venue-under-sec-framework-listing-galaxy",
-      "pubDate": "Mon, 09 Nov 2026 12:41:35 +0000"
-    },
-    {
-      "title": "Trump says he knows ‘nothing’ about World Liberty’s UAE ties as Justin Sun challenges filings",
-      "link": "https://www.coindesk.com/business/2026/11/09/trump-says-he-knows-nothing-about-world-liberty-s-uae-ties-as-justin-sun-challenges-filings",
-      "pubDate": "Mon, 09 Nov 2026 12:37:13 +0000"
-    },
-    {
-      "title": "Bitcoin bulls can't rely on ETF flows",
-      "link": "https://www.coindesk.com/daybook-us/2026/11/09/bitcoin-bulls-can-t-rely-on-etf-flows",
-      "pubDate": "Mon, 09 Nov 2026 12:30:00 +0000"
-    },
-    {
-      "title": "Nvidia-led tech selloff weighs on crypto majors",
-      "link": "https://www.coindesk.com/markets/2026/11/09/tech-selloff-weighs-on-crypto-majors",
-      "pubDate": "Mon, 09 Nov 2026 11:42:04 +0000"
-    },
-    {
-      "title": "Zcash developers want 20-second blocks just days after major speed upgrade",
-      "link": "https://www.coindesk.com/tech/2026/11/09/zcash-developers-want-20-second-blocks-just-days-after-major-speed-upgrade",
-      "pubDate": "Mon, 09 Nov 2026 10:52:49 +0000"
-    },
-    {
-      "title": "Live news: Crypto prices give ground even as stocks and gold surge, oil plunges",
-      "link": "https://www.coindesk.com/tech/2026/11/09/live-news-nvidia-slides-on-ceo-allegations-as-bitcoin-hovers-just-above-its-200-day-average",
-      "pubDate": "Mon, 09 Nov 2026 10:51:48 +0000"
     }
   ]
 }
