@@ -1,13 +1,13 @@
 {
-  "fetchedAt": "2026-11-11T01:12:32.555Z",
+  "fetchedAt": "2026-11-11T10:47:38.048Z",
   "price": {
-    "usd": 73287,
-    "time": 1794359106
+    "usd": 74040,
+    "time": 1794393607
   },
   "moves": {
-    "d1": -0.588953913900836,
-    "d7": -8.895413836939515,
-    "d30": -10.401448184273654
+    "d1": 0.4324621312754351,
+    "d7": -7.959343955776621,
+    "d30": -9.480852314375277
   },
   "history90d": [
     {
@@ -372,60 +372,65 @@
     },
     {
       "date": "2026-11-11",
-      "close": 73342.39218087115
+      "close": 73952.49634406068
     }
   ],
   "blocks": [
     {
-      "height": 975364,
-      "id": "00000000000000000000afd7c4d9036ff0e047a46e61b190f6f6af75b7eb049b",
-      "timestamp": 1794357447,
-      "txCount": 7031
+      "height": 975425,
+      "id": "0000000000000000000050abde416c0273cd88766df539ae2c95b376b426763c",
+      "timestamp": 1794391339,
+      "txCount": 2929
     },
     {
-      "height": 975363,
-      "id": "000000000000000000005180dd5a8a071637a1959c5cc7304e6f57b6be00fe92",
-      "timestamp": 1794357349,
-      "txCount": 9710
+      "height": 975424,
+      "id": "000000000000000000013f1989d54e3ffa4609a13428f8b11bf1f58fe57e90fc",
+      "timestamp": 1794390061,
+      "txCount": 7419
     },
     {
-      "height": 975362,
-      "id": "000000000000000000013d0f92720ef58c190dc287c7be34b6ee0d336affb272",
-      "timestamp": 1794357342,
-      "txCount": 2682
+      "height": 975423,
+      "id": "000000000000000000008399d5b2c288ed053ef2b1f591422c997e924a9445b9",
+      "timestamp": 1794390205,
+      "txCount": 7221
     },
     {
-      "height": 975361,
-      "id": "0000000000000000000174399b81760fbb4dedb4ae8bce15e5e3b768db967700",
-      "timestamp": 1794356915,
-      "txCount": 3080
+      "height": 975422,
+      "id": "00000000000000000001c74018cf34874f90982a4119326f3189dfe9dd45ec50",
+      "timestamp": 1794389824,
+      "txCount": 7600
     },
     {
-      "height": 975360,
-      "id": "00000000000000000001e10901ef7b99169293019afe4b5acf3dea43ff6d2880",
-      "timestamp": 1794356387,
-      "txCount": 3529
+      "height": 975421,
+      "id": "00000000000000000000f6eb09a42d492dc1e7349c3ef60b096a2bbf8f0d13f7",
+      "timestamp": 1794389618,
+      "txCount": 6336
     },
     {
-      "height": 975359,
-      "id": "000000000000000000002d5f0954554c1e044823b146d0d4c346bf2e626af19a",
-      "timestamp": 1794354289,
-      "txCount": 3922
+      "height": 975420,
+      "id": "00000000000000000001c0f35c43d9304c777a61afe62b923daea954e8e78594",
+      "timestamp": 1794389334,
+      "txCount": 7020
     },
     {
-      "height": 975358,
-      "id": "000000000000000000004be6388c1de038390e84305c0bdaa238f8001414cac2",
-      "timestamp": 1794354030,
-      "txCount": 2828
+      "height": 975419,
+      "id": "0000000000000000000148d9b029484dacd19e393753285c198affa0bbb00f99",
+      "timestamp": 1794389200,
+      "txCount": 4984
     },
     {
-      "height": 975357,
-      "id": "00000000000000000000f8ce721e2108071a6e749378efb093b7222e6fb0b93f",
-      "timestamp": 1794352962,
-      "txCount": 3781
+      "height": 975418,
+      "id": "00000000000000000001749433618ba2fc5410539c14a81d62e27704f0d51623",
+      "timestamp": 1794388786,
+      "txCount": 7029
     }
   ],
   "news": [
+    {
+      "title": "Bitcoin holds steady as CoreWeave earnings revive AI outlook, Anthropic said to raise IPO valuation",
+      "link": "https://www.coindesk.com/markets/2026/11/11/coreweave-earnings-revive-ai-outlook-as-anthropic-weighs-higher-ipo-valuation",
+      "pubDate": "Wed, 11 Nov 2026 10:45:49 +0000"
+    },
     {
       "title": "Warren: What is White House doing to prevent a repeat of teleprompter's Trump bets?",
       "link": "https://www.coindesk.com/policy/2026/11/10/warren-what-is-white-house-doing-to-prevent-a-repeat-of-teleprompter-s-trump-bets",
@@ -480,11 +485,6 @@
       "title": "Bitcoin slips before U.S. inflation report as traders price in Fed rate increase",
       "link": "https://www.coindesk.com/markets/2026/11/10/bitcoin-slips-before-u-s-inflation-report-as-traders-price-in-fed-rate-increase",
       "pubDate": "Tue, 10 Nov 2026 10:48:37 +0000"
-    },
-    {
-      "title": "Live news: Bitcoin falls to nearly three-month low after disappointing inflation data",
-      "link": "https://www.coindesk.com/markets/2026/11/10/live-news-traders-price-in-fed-rate-hike-for-december-as-bitcoin-and-gold-retreat",
-      "pubDate": "Tue, 10 Nov 2026 10:41:45 +0000"
     }
   ]
 }
