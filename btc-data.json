@@ -1,19 +1,15 @@
 {
-  "fetchedAt": "2026-11-10T19:40:08.057Z",
+  "fetchedAt": "2026-11-11T01:12:32.555Z",
   "price": {
-    "usd": 73381,
-    "time": 1794339308
+    "usd": 73287,
+    "time": 1794359106
   },
   "moves": {
-    "d1": -2.505444804969026,
-    "d7": -5.173626334989234,
-    "d30": -12.318989307180006
+    "d1": -0.588953913900836,
+    "d7": -8.895413836939515,
+    "d30": -10.401448184273654
   },
   "history90d": [
-    {
-      "date": "2026-08-13",
-      "close": 63408.625697113624
-    },
     {
       "date": "2026-08-14",
       "close": 63429.17906286841
@@ -371,61 +367,75 @@
       "close": 75266.76731147344
     },
     {
-      "date": "2026-11-10",
-      "close": 73281.65073163697
+      "date": "2026-11-11",
+      "close": 73721.18379734851
+    },
+    {
+      "date": "2026-11-11",
+      "close": 73342.39218087115
     }
   ],
   "blocks": [
     {
-      "height": 975337,
-      "id": "000000000000000000003fa0afd1ccca5bd22c4f1b641de5245d36bf7140b602",
-      "timestamp": 1794338525,
-      "txCount": 3493
+      "height": 975364,
+      "id": "00000000000000000000afd7c4d9036ff0e047a46e61b190f6f6af75b7eb049b",
+      "timestamp": 1794357447,
+      "txCount": 7031
     },
     {
-      "height": 975336,
-      "id": "00000000000000000000a16b19ffc7ce2b7851fc1a723531e149492a34155527",
-      "timestamp": 1794337997,
-      "txCount": 5337
+      "height": 975363,
+      "id": "000000000000000000005180dd5a8a071637a1959c5cc7304e6f57b6be00fe92",
+      "timestamp": 1794357349,
+      "txCount": 9710
     },
     {
-      "height": 975335,
-      "id": "00000000000000000001a57ce3857af21f171c2d65fb87cfee74d057cb76bad3",
-      "timestamp": 1794337911,
-      "txCount": 3035
+      "height": 975362,
+      "id": "000000000000000000013d0f92720ef58c190dc287c7be34b6ee0d336affb272",
+      "timestamp": 1794357342,
+      "txCount": 2682
     },
     {
-      "height": 975334,
-      "id": "00000000000000000001bb536609a8bc11b5e24b077e1e8752137b0c2fb01d4d",
-      "timestamp": 1794337728,
-      "txCount": 3953
+      "height": 975361,
+      "id": "0000000000000000000174399b81760fbb4dedb4ae8bce15e5e3b768db967700",
+      "timestamp": 1794356915,
+      "txCount": 3080
     },
     {
-      "height": 975333,
-      "id": "00000000000000000000b76fc3c22759318b704bbe602dbeb186644b2dafef3f",
-      "timestamp": 1794335641,
-      "txCount": 5253
+      "height": 975360,
+      "id": "00000000000000000001e10901ef7b99169293019afe4b5acf3dea43ff6d2880",
+      "timestamp": 1794356387,
+      "txCount": 3529
     },
     {
-      "height": 975332,
-      "id": "000000000000000000005eb6889dd6ba623573b77b722f328c53b8c5fa9505f6",
-      "timestamp": 1794335172,
-      "txCount": 4444
+      "height": 975359,
+      "id": "000000000000000000002d5f0954554c1e044823b146d0d4c346bf2e626af19a",
+      "timestamp": 1794354289,
+      "txCount": 3922
     },
     {
-      "height": 975331,
-      "id": "00000000000000000000fd96557b00b849f533e5adfc27961ce43b1ec4f52b68",
-      "timestamp": 1794334644,
-      "txCount": 3348
+      "height": 975358,
+      "id": "000000000000000000004be6388c1de038390e84305c0bdaa238f8001414cac2",
+      "timestamp": 1794354030,
+      "txCount": 2828
     },
     {
-      "height": 975330,
-      "id": "0000000000000000000156a6cae5606b6c39f73ba8cba54e152524862e40657c",
-      "timestamp": 1794334398,
-      "txCount": 3161
+      "height": 975357,
+      "id": "00000000000000000000f8ce721e2108071a6e749378efb093b7222e6fb0b93f",
+      "timestamp": 1794352962,
+      "txCount": 3781
     }
   ],
   "news": [
+    {
+      "title": "Warren: What is White House doing to prevent a repeat of teleprompter's Trump bets?",
+      "link": "https://www.coindesk.com/policy/2026/11/10/warren-what-is-white-house-doing-to-prevent-a-repeat-of-teleprompter-s-trump-bets",
+      "pubDate": "Tue, 10 Nov 2026 20:36:33 +0000"
+    },
+    {
+      "title": "Former NYSE president says stock issuers hold the key to tokenization as Bullish builds its platform",
+      "link": "https://www.coindesk.com/business/2026/11/10/former-nyse-president-says-stock-issuers-hold-the-key-to-tokenization-as-bullish-builds-its-platform",
+      "pubDate": "Tue, 10 Nov 2026 20:15:08 +0000"
+    },
     {
       "title": "Goldman Sachs, Citi among banks said to commit $270 million to stablecoin venture",
       "link": "https://www.coindesk.com/business/2026/11/10/goldman-sachs-citi-among-banks-said-to-commit-usd270-million-to-stablecoin-venture",
@@ -475,16 +485,6 @@
       "title": "Live news: Bitcoin falls to nearly three-month low after disappointing inflation data",
       "link": "https://www.coindesk.com/markets/2026/11/10/live-news-traders-price-in-fed-rate-hike-for-december-as-bitcoin-and-gold-retreat",
       "pubDate": "Tue, 10 Nov 2026 10:41:45 +0000"
-    },
-    {
-      "title": "The crypto wallet that grew up inside Telegram is striking out on its own",
-      "link": "https://www.coindesk.com/business/2026/11/10/the-crypto-wallet-that-grew-up-inside-telegram-is-striking-out-on-its-own",
-      "pubDate": "Tue, 10 Nov 2026 09:59:17 +0000"
-    },
-    {
-      "title": "Coinbase, Kalshi, Kraken parent back CFTC in legal fight over stock perpetual futures",
-      "link": "https://www.coindesk.com/policy/2026/11/10/coinbase-kalshi-kraken-parent-back-cftc-in-legal-fight-over-stock-perpetual-futures",
-      "pubDate": "Tue, 10 Nov 2026 09:14:30 +0000"
     }
   ]
 }
