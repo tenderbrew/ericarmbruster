@@ -1,13 +1,13 @@
 {
-  "fetchedAt": "2026-11-12T02:13:45.179Z",
+  "fetchedAt": "2026-11-12T10:57:51.314Z",
   "price": {
-    "usd": 73707,
-    "time": 1794449409
+    "usd": 73404,
+    "time": 1794480907
   },
   "moves": {
-    "d1": -0.3614661370535899,
-    "d7": -3.0241349391284533,
-    "d30": -11.319364851123915
+    "d1": -0.7710673385741051,
+    "d7": -3.4227902515607034,
+    "d30": -11.683919539960929
   },
   "history90d": [
     {
@@ -372,119 +372,119 @@
     },
     {
       "date": "2026-11-12",
-      "close": 73775.12331203534
+      "close": 73382.31295734934
     }
   ],
   "blocks": [
     {
-      "height": 975509,
-      "id": "00000000000000000000ec095818efb89e40f794c13326dbbdec38e1de395193",
-      "timestamp": 1794449391,
-      "txCount": 5435
+      "height": 975538,
+      "id": "00000000000000000000b22c1eee5eb88a8764eec4f97c02e650b6b22b780db9",
+      "timestamp": 1794479644,
+      "txCount": 3439
     },
     {
-      "height": 975508,
-      "id": "00000000000000000000499828ac5d47471fca58fd8caa17e20ec04658682352",
-      "timestamp": 1794449314,
-      "txCount": 2200
+      "height": 975537,
+      "id": "00000000000000000000c6fa8008682202989686f27cf43c4c899c80253d1fe2",
+      "timestamp": 1794479243,
+      "txCount": 4168
     },
     {
-      "height": 975507,
-      "id": "00000000000000000001975d13ff1a26f4d3fd19c3d839caf00211b0d8f92aca",
-      "timestamp": 1794447498,
-      "txCount": 6697
+      "height": 975536,
+      "id": "00000000000000000000f5f3769fc3ffec0f676a9823c2455414cb585f3e04fe",
+      "timestamp": 1794476312,
+      "txCount": 3435
     },
     {
-      "height": 975506,
-      "id": "000000000000000000014dbf3c72cee92dd8d68c09b57897a9ccaee0cd91d5ca",
-      "timestamp": 1794447347,
-      "txCount": 6517
+      "height": 975535,
+      "id": "000000000000000000011a019487f29bbabc71b761e49c91b2c9df88904a6a99",
+      "timestamp": 1794474924,
+      "txCount": 2931
     },
     {
-      "height": 975505,
-      "id": "000000000000000000017a26404d5c94e0c697d25df97004c0682583de344ad6",
-      "timestamp": 1794447045,
-      "txCount": 3492
+      "height": 975534,
+      "id": "0000000000000000000050ed3fcd01a3aac3d41529c5420bcc1b0687ac46bf1c",
+      "timestamp": 1794473805,
+      "txCount": 2949
     },
     {
-      "height": 975504,
-      "id": "0000000000000000000063382c9415e3bf8c0b531868e1ba45a9fabe7cac8856",
-      "timestamp": 1794446434,
-      "txCount": 4704
+      "height": 975533,
+      "id": "0000000000000000000040645635b8a06e97b6dd5f8659f74e8cfe0273061f28",
+      "timestamp": 1794472166,
+      "txCount": 2191
     },
     {
-      "height": 975503,
-      "id": "000000000000000000003669c01e60866f8694091f996bbd1587a77bc909c79f",
-      "timestamp": 1794445796,
-      "txCount": 7672
+      "height": 975532,
+      "id": "00000000000000000000711295d305a336164cbcebd0eebea335ca6e517e8e73",
+      "timestamp": 1794471987,
+      "txCount": 1796
     },
     {
-      "height": 975502,
-      "id": "00000000000000000000b4ee68ed85da01558f797411f8937b115323cf3249ee",
-      "timestamp": 1794445770,
-      "txCount": 4479
+      "height": 975531,
+      "id": "000000000000000000005a1965eb9c113927188d04515edd0b7043e22132807a",
+      "timestamp": 1794471896,
+      "txCount": 3806
     }
   ],
   "news": [
     {
+      "title": "Polymarket trims workforce under investor pressure as Kalshi surges ahead",
+      "link": "https://www.coindesk.com/business/2026/11/12/polymarket-trims-workforce-under-investor-pressure-as-kalshi-surges-ahead",
+      "pubDate": "Thu, 12 Nov 2026 10:42:06 +0000"
+    },
+    {
+      "title": "Nomura weighs Laser Digital sale as European losses hit four straight quarters",
+      "link": "https://www.coindesk.com/business/2026/11/12/nomura-weighs-laser-digital-sale-as-european-losses-hit-four-straight-quarters-bloomberg",
+      "pubDate": "Thu, 12 Nov 2026 10:32:35 +0000"
+    },
+    {
+      "title": "India’s financial crimes watchdog raids crypto exchanges CoinDCX and Delta over alleged illegal cross-border trades",
+      "link": "https://www.coindesk.com/policy/2026/11/12/india-s-financial-crimes-watchdog-raids-crypto-exchanges-coindcx-and-delta-over-alleged-illegal-cross-border-trades",
+      "pubDate": "Thu, 12 Nov 2026 10:10:48 +0000"
+    },
+    {
+      "title": "Live updates: Bitcoin ETFs bleed $300 million as AI stocks slide again",
+      "link": "https://www.coindesk.com/tech/2026/11/12/live-news-strategy-kicked-out-of-msci-indexes-as-nvidia-slump-rattles-markets",
+      "pubDate": "Thu, 12 Nov 2026 09:15:04 +0000"
+    },
+    {
+      "title": "Gemini sells UK and European operations to stablecoin payments firm KAST for under $10 million",
+      "link": "https://www.coindesk.com/business/2026/11/12/gemini-sells-uk-and-european-operations-to-stablecoin-payments-firm-kast-for-under-usd10-million",
+      "pubDate": "Thu, 12 Nov 2026 09:07:00 +0000"
+    },
+    {
+      "title": "Canaan may sell more bitcoin for stock buybacks as mining-rig revenue falls 96%",
+      "link": "https://www.coindesk.com/markets/2026/11/12/canaan-may-sell-more-bitcoin-for-stock-buybacks-as-mining-rig-revenue-falls-96",
+      "pubDate": "Thu, 12 Nov 2026 07:41:18 +0000"
+    },
+    {
+      "title": "MSCI is dropping Strategy from its index, and the exclusion could hit its bitcoin-buying machine",
+      "link": "https://www.coindesk.com/markets/2026/11/12/msci-is-dropping-strategy-from-its-index-and-the-exclusion-could-hit-its-bitcoin-buying-machine",
+      "pubDate": "Thu, 12 Nov 2026 07:00:37 +0000"
+    },
+    {
+      "title": "Zcash holders to vote on pulling 50,000 ZEC, worth $50 million, from grants treasury",
+      "link": "https://www.coindesk.com/tech/2026/11/12/zcash-holders-to-vote-on-pulling-50-000-zec-from-grants-treasury",
+      "pubDate": "Thu, 12 Nov 2026 05:49:44 +0000"
+    },
+    {
+      "title": "Bitcoin Core reveals bug that made thousands of nodes trust any stranger on Tor",
+      "link": "https://www.coindesk.com/tech/2026/11/12/bitcoin-core-reveals-bug-that-made-thousands-of-nodes-trust-any-stranger-on-tor",
+      "pubDate": "Thu, 12 Nov 2026 05:22:31 +0000"
+    },
+    {
+      "title": "Ripple’s bank-lending system moves closer to launch on the XRP Ledger",
+      "link": "https://www.coindesk.com/tech/2026/11/12/ripple-s-bank-lending-system-moves-closer-to-launch-on-the-xrp-ledger",
+      "pubDate": "Thu, 12 Nov 2026 05:18:43 +0000"
+    },
+    {
+      "title": "Nvidia perps crash 7% as CEO Jensen Huang reportedly faces the axe",
+      "link": "https://www.coindesk.com/markets/2026/11/12/bitcoin-listless-nvidia-perps-crash-7-as-ceo-jensen-huang-reportedly-faces-the-axe",
+      "pubDate": "Thu, 12 Nov 2026 04:03:47 +0000"
+    },
+    {
       "title": "Crypto Long & Short: The GENIUS Act’s guarantees don’t cover DeFi lending",
       "link": "https://www.coindesk.com/coindesk-indices/2026/11/11/crypto-long-and-short-the-genius-act-s-guarantees-don-t-cover-defi-lending",
       "pubDate": "Wed, 11 Nov 2026 16:00:45 +0000"
-    },
-    {
-      "title": "OKXICE to debut tokenized stock trading with Strategy, Coinbase, Circle this month",
-      "link": "https://www.coindesk.com/business/2026/11/10/okxice-to-debut-tokenized-stock-trading-with-strategy-coinbase-circle-this-month",
-      "pubDate": "Wed, 11 Nov 2026 13:00:00 +0000"
-    },
-    {
-      "title": "Meet Spiko, the largest tokenized fund in the world you’ve probably never heard about",
-      "link": "https://www.coindesk.com/business/2026/11/11/meet-spiko-the-largest-tokenized-fund-in-the-world-you-ve-probably-never-heard-about",
-      "pubDate": "Wed, 11 Nov 2026 12:57:36 +0000"
-    },
-    {
-      "title": "Live news: Bitcoin remains under pressure as CoreWeave, Nvidia lead AI rebound",
-      "link": "https://www.coindesk.com/tech/2026/11/11/live-news-coreweave-jumps-14-as-earnings-fuel-rebound-across-battered-ai-stocks",
-      "pubDate": "Wed, 11 Nov 2026 12:21:24 +0000"
-    },
-    {
-      "title": "Bitcoin barely flinches at hot CPI as ETF selling slows",
-      "link": "https://www.coindesk.com/daybook-us/2026/11/11/bitcoin-barely-flinches-at-hot-cpi-as-etf-selling-slows",
-      "pubDate": "Wed, 11 Nov 2026 12:19:30 +0000"
-    },
-    {
-      "title": "Bitcoin sits out stock rebound as ETF outflows extend to fourth day",
-      "link": "https://www.coindesk.com/markets/2026/11/11/bitcoin-sits-out-stock-rebound-as-etf-outflows-extend-to-fourth-day",
-      "pubDate": "Wed, 11 Nov 2026 11:37:04 +0000"
-    },
-    {
-      "title": "Kraken's xStocks adds 200 UK and EU shares as its assets top $1.1 billion",
-      "link": "https://www.coindesk.com/business/2026/11/11/kraken-s-xstocks-adds-200-uk-and-eu-shares-as-its-assets-top-usd1-1-billion",
-      "pubDate": "Wed, 11 Nov 2026 10:51:34 +0000"
-    },
-    {
-      "title": "Bitcoin stuck under $74,000 as CoreWeave earnings revive AI outlook, Anthropic said to raise IPO valuation",
-      "link": "https://www.coindesk.com/markets/2026/11/11/coreweave-earnings-revive-ai-outlook-as-anthropic-weighs-higher-ipo-valuation",
-      "pubDate": "Wed, 11 Nov 2026 10:45:49 +0000"
-    },
-    {
-      "title": "Warren: What is White House doing to prevent a repeat of teleprompter's Trump bets?",
-      "link": "https://www.coindesk.com/policy/2026/11/10/warren-what-is-white-house-doing-to-prevent-a-repeat-of-teleprompter-s-trump-bets",
-      "pubDate": "Tue, 10 Nov 2026 20:36:33 +0000"
-    },
-    {
-      "title": "Former NYSE president says stock issuers hold the key to tokenization as Bullish builds its platform",
-      "link": "https://www.coindesk.com/business/2026/11/10/former-nyse-president-says-stock-issuers-hold-the-key-to-tokenization-as-bullish-builds-its-platform",
-      "pubDate": "Tue, 10 Nov 2026 20:15:08 +0000"
-    },
-    {
-      "title": "Goldman Sachs, Citi among banks said to commit $270 million to stablecoin venture",
-      "link": "https://www.coindesk.com/business/2026/11/10/goldman-sachs-citi-among-banks-said-to-commit-usd270-million-to-stablecoin-venture",
-      "pubDate": "Tue, 10 Nov 2026 17:32:22 +0000"
-    },
-    {
-      "title": "Crypto is now teamed up with U.S. government in two legal battles over perps",
-      "link": "https://www.coindesk.com/news-analysis/2026/11/10/crypto-teams-up-with-u-s-government-to-defend-stock-perps-in-legal-fight",
-      "pubDate": "Tue, 10 Nov 2026 17:07:22 +0000"
     }
   ]
 }
