@@ -1,13 +1,13 @@
 {
-  "fetchedAt": "2026-11-12T10:57:51.314Z",
+  "fetchedAt": "2026-11-12T19:51:19.412Z",
   "price": {
-    "usd": 73404,
-    "time": 1794480907
+    "usd": 71484,
+    "time": 1794512706
   },
   "moves": {
-    "d1": -0.7710673385741051,
-    "d7": -3.4227902515607034,
-    "d30": -11.683919539960929
+    "d1": -3.3665601006843238,
+    "d7": -5.948922924398737,
+    "d30": -13.993969053383559
   },
   "history90d": [
     {
@@ -372,60 +372,110 @@
     },
     {
       "date": "2026-11-12",
-      "close": 73382.31295734934
+      "close": 71525.83524953725
     }
   ],
   "blocks": [
     {
-      "height": 975538,
-      "id": "00000000000000000000b22c1eee5eb88a8764eec4f97c02e650b6b22b780db9",
-      "timestamp": 1794479644,
-      "txCount": 3439
+      "height": 975588,
+      "id": "0000000000000000000129d26e574eaba51b4a24517bf90461d11138b6bdafca",
+      "timestamp": 1794512369,
+      "txCount": 3117
     },
     {
-      "height": 975537,
-      "id": "00000000000000000000c6fa8008682202989686f27cf43c4c899c80253d1fe2",
-      "timestamp": 1794479243,
-      "txCount": 4168
+      "height": 975587,
+      "id": "00000000000000000000134f0c07d8f024cdab9efd31a0dcc325a840de6eb55a",
+      "timestamp": 1794512360,
+      "txCount": 2797
     },
     {
-      "height": 975536,
-      "id": "00000000000000000000f5f3769fc3ffec0f676a9823c2455414cb585f3e04fe",
-      "timestamp": 1794476312,
-      "txCount": 3435
+      "height": 975586,
+      "id": "000000000000000000015277845e95bc4cdf1e8cf127203f203e710f7f67146b",
+      "timestamp": 1794512059,
+      "txCount": 2653
     },
     {
-      "height": 975535,
-      "id": "000000000000000000011a019487f29bbabc71b761e49c91b2c9df88904a6a99",
-      "timestamp": 1794474924,
-      "txCount": 2931
+      "height": 975585,
+      "id": "000000000000000000009b34801736378314aff29b48e13abc64fea66ccf2f1a",
+      "timestamp": 1794511880,
+      "txCount": 3507
     },
     {
-      "height": 975534,
-      "id": "0000000000000000000050ed3fcd01a3aac3d41529c5420bcc1b0687ac46bf1c",
-      "timestamp": 1794473805,
-      "txCount": 2949
+      "height": 975584,
+      "id": "000000000000000000016641ddffd204018c9351cb2678c88e769af064a5a20b",
+      "timestamp": 1794511094,
+      "txCount": 2280
     },
     {
-      "height": 975533,
-      "id": "0000000000000000000040645635b8a06e97b6dd5f8659f74e8cfe0273061f28",
-      "timestamp": 1794472166,
-      "txCount": 2191
+      "height": 975583,
+      "id": "00000000000000000001a548f5832bd52351c18a4fcc913716705491b229ce70",
+      "timestamp": 1794510425,
+      "txCount": 2797
     },
     {
-      "height": 975532,
-      "id": "00000000000000000000711295d305a336164cbcebd0eebea335ca6e517e8e73",
-      "timestamp": 1794471987,
-      "txCount": 1796
+      "height": 975582,
+      "id": "00000000000000000001969268105a204560010d6f648dfa6c9e61b83908f541",
+      "timestamp": 1794510147,
+      "txCount": 3536
     },
     {
-      "height": 975531,
-      "id": "000000000000000000005a1965eb9c113927188d04515edd0b7043e22132807a",
-      "timestamp": 1794471896,
-      "txCount": 3806
+      "height": 975581,
+      "id": "00000000000000000001b80142b6f600c75fae2302726eb27c100a3f8e31fe7c",
+      "timestamp": 1794510094,
+      "txCount": 3741
     }
   ],
   "news": [
+    {
+      "title": "Illinois crypto tax is impossible to enforce as written, crypto industry tells court",
+      "link": "https://www.coindesk.com/policy/2026/11/12/illinois-crypto-tax-is-impossible-to-enforce-as-written-crypto-industry-tells-court",
+      "pubDate": "Thu, 12 Nov 2026 16:45:52 +0000"
+    },
+    {
+      "title": "DTCC adds Solana to Wall Street tokenization plans, targeting 2027 rollout",
+      "link": "https://www.coindesk.com/business/2026/11/12/dtcc-adds-solana-to-wall-street-tokenization-plans-targeting-2027-rollout",
+      "pubDate": "Thu, 12 Nov 2026 15:45:48 +0000"
+    },
+    {
+      "title": "Crypto for Advisors: The blockchain built to run financial markets",
+      "link": "https://www.coindesk.com/coindesk-indices/2026/11/12/crypto-for-advisors-the-blockchain-built-to-run-financial-markets",
+      "pubDate": "Thu, 12 Nov 2026 15:34:29 +0000"
+    },
+    {
+      "title": "Jupiter adds Anchorage-backed USDGO to its $1 billion Solana lending platform",
+      "link": "https://www.coindesk.com/business/2026/11/12/jupiter-adds-anchorage-backed-usdgo-to-its-usd1-billion-solana-lending-platform",
+      "pubDate": "Thu, 12 Nov 2026 14:45:00 +0000"
+    },
+    {
+      "title": "The next Congress will write rules for AI and emerging tech. They should use the stuff first.",
+      "link": "https://www.coindesk.com/opinion/2026/11/12/the-next-congress-will-write-rules-for-ai-and-emerging-tech-they-should-use-the-stuff-first",
+      "pubDate": "Thu, 12 Nov 2026 14:24:51 +0000"
+    },
+    {
+      "title": "Nvidia CEO Huang quits company he co-founded, led for 3 decades. Shares slump",
+      "link": "https://www.coindesk.com/markets/2026/11/12/nvidia-shares-plunge-10-as-jensen-huang-resigns",
+      "pubDate": "Thu, 12 Nov 2026 13:57:53 +0000"
+    },
+    {
+      "title": "Bitcoin weakness erases September's bullish signal",
+      "link": "https://www.coindesk.com/daybook-us/2026/11/12/bitcoin-weakness-erases-september-s-bullish-signal",
+      "pubDate": "Thu, 12 Nov 2026 12:15:00 +0000"
+    },
+    {
+      "title": "UK bank Griffin raises $20 million to expand into stablecoin payments",
+      "link": "https://www.coindesk.com/business/2026/11/12/uk-bank-griffin-raises-usd20-million-to-expand-into-stablecoin-payments",
+      "pubDate": "Thu, 12 Nov 2026 12:04:42 +0000"
+    },
+    {
+      "title": "Ethereum researchers drop faster blocks to race toward quantum defenses in 2027",
+      "link": "https://www.coindesk.com/tech/2026/11/12/ethereum-researchers-drop-faster-blocks-to-race-toward-quantum-defenses-in-2027",
+      "pubDate": "Thu, 12 Nov 2026 11:43:41 +0000"
+    },
+    {
+      "title": "Bitcoin dips with Nvidia as ETF outflows reach day five",
+      "link": "https://www.coindesk.com/markets/2026/11/12/bitcoin-dips-with-nvidia-as-etf-outflows-reach-day-five",
+      "pubDate": "Thu, 12 Nov 2026 11:30:00 +0000"
+    },
     {
       "title": "Polymarket trims workforce under investor pressure as Kalshi surges ahead",
       "link": "https://www.coindesk.com/business/2026/11/12/polymarket-trims-workforce-under-investor-pressure-as-kalshi-surges-ahead",
@@ -435,56 +485,6 @@
       "title": "Nomura weighs Laser Digital sale as European losses hit four straight quarters",
       "link": "https://www.coindesk.com/business/2026/11/12/nomura-weighs-laser-digital-sale-as-european-losses-hit-four-straight-quarters-bloomberg",
       "pubDate": "Thu, 12 Nov 2026 10:32:35 +0000"
-    },
-    {
-      "title": "India’s financial crimes watchdog raids crypto exchanges CoinDCX and Delta over alleged illegal cross-border trades",
-      "link": "https://www.coindesk.com/policy/2026/11/12/india-s-financial-crimes-watchdog-raids-crypto-exchanges-coindcx-and-delta-over-alleged-illegal-cross-border-trades",
-      "pubDate": "Thu, 12 Nov 2026 10:10:48 +0000"
-    },
-    {
-      "title": "Live updates: Bitcoin ETFs bleed $300 million as AI stocks slide again",
-      "link": "https://www.coindesk.com/tech/2026/11/12/live-news-strategy-kicked-out-of-msci-indexes-as-nvidia-slump-rattles-markets",
-      "pubDate": "Thu, 12 Nov 2026 09:15:04 +0000"
-    },
-    {
-      "title": "Gemini sells UK and European operations to stablecoin payments firm KAST for under $10 million",
-      "link": "https://www.coindesk.com/business/2026/11/12/gemini-sells-uk-and-european-operations-to-stablecoin-payments-firm-kast-for-under-usd10-million",
-      "pubDate": "Thu, 12 Nov 2026 09:07:00 +0000"
-    },
-    {
-      "title": "Canaan may sell more bitcoin for stock buybacks as mining-rig revenue falls 96%",
-      "link": "https://www.coindesk.com/markets/2026/11/12/canaan-may-sell-more-bitcoin-for-stock-buybacks-as-mining-rig-revenue-falls-96",
-      "pubDate": "Thu, 12 Nov 2026 07:41:18 +0000"
-    },
-    {
-      "title": "MSCI is dropping Strategy from its index, and the exclusion could hit its bitcoin-buying machine",
-      "link": "https://www.coindesk.com/markets/2026/11/12/msci-is-dropping-strategy-from-its-index-and-the-exclusion-could-hit-its-bitcoin-buying-machine",
-      "pubDate": "Thu, 12 Nov 2026 07:00:37 +0000"
-    },
-    {
-      "title": "Zcash holders to vote on pulling 50,000 ZEC, worth $50 million, from grants treasury",
-      "link": "https://www.coindesk.com/tech/2026/11/12/zcash-holders-to-vote-on-pulling-50-000-zec-from-grants-treasury",
-      "pubDate": "Thu, 12 Nov 2026 05:49:44 +0000"
-    },
-    {
-      "title": "Bitcoin Core reveals bug that made thousands of nodes trust any stranger on Tor",
-      "link": "https://www.coindesk.com/tech/2026/11/12/bitcoin-core-reveals-bug-that-made-thousands-of-nodes-trust-any-stranger-on-tor",
-      "pubDate": "Thu, 12 Nov 2026 05:22:31 +0000"
-    },
-    {
-      "title": "Ripple’s bank-lending system moves closer to launch on the XRP Ledger",
-      "link": "https://www.coindesk.com/tech/2026/11/12/ripple-s-bank-lending-system-moves-closer-to-launch-on-the-xrp-ledger",
-      "pubDate": "Thu, 12 Nov 2026 05:18:43 +0000"
-    },
-    {
-      "title": "Nvidia perps crash 7% as CEO Jensen Huang reportedly faces the axe",
-      "link": "https://www.coindesk.com/markets/2026/11/12/bitcoin-listless-nvidia-perps-crash-7-as-ceo-jensen-huang-reportedly-faces-the-axe",
-      "pubDate": "Thu, 12 Nov 2026 04:03:47 +0000"
-    },
-    {
-      "title": "Crypto Long & Short: The GENIUS Act’s guarantees don’t cover DeFi lending",
-      "link": "https://www.coindesk.com/coindesk-indices/2026/11/11/crypto-long-and-short-the-genius-act-s-guarantees-don-t-cover-defi-lending",
-      "pubDate": "Wed, 11 Nov 2026 16:00:45 +0000"
     }
   ]
 }
