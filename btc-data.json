@@ -1,19 +1,15 @@
 {
-  "fetchedAt": "2026-11-12T19:51:19.412Z",
+  "fetchedAt": "2026-11-13T01:47:20.529Z",
   "price": {
-    "usd": 71484,
-    "time": 1794512706
+    "usd": 70983,
+    "time": 1794534009
   },
   "moves": {
-    "d1": -3.3665601006843238,
-    "d7": -5.948922924398737,
-    "d30": -13.993969053383559
+    "d1": -0.5450063024290519,
+    "d7": -6.324333467774467,
+    "d30": -13.014925240894526
   },
   "history90d": [
-    {
-      "date": "2026-08-15",
-      "close": 62984.28959582886
-    },
     {
       "date": "2026-08-16",
       "close": 63031.04825975698
@@ -371,61 +367,80 @@
       "close": 73974.39237853957
     },
     {
-      "date": "2026-11-12",
-      "close": 71525.83524953725
+      "date": "2026-11-13",
+      "close": 71371.98179897292
+    },
+    {
+      "date": "2026-11-13",
+      "close": 70908.85931641328
     }
   ],
   "blocks": [
     {
-      "height": 975588,
-      "id": "0000000000000000000129d26e574eaba51b4a24517bf90461d11138b6bdafca",
-      "timestamp": 1794512369,
-      "txCount": 3117
+      "height": 975617,
+      "id": "00000000000000000000cb57beca5abd159609c250bda886d58b1e8b51381ea0",
+      "timestamp": 1794533992,
+      "txCount": 3535
     },
     {
-      "height": 975587,
-      "id": "00000000000000000000134f0c07d8f024cdab9efd31a0dcc325a840de6eb55a",
-      "timestamp": 1794512360,
-      "txCount": 2797
+      "height": 975616,
+      "id": "0000000000000000000185ee3bf5d16bc696180832400204892ddb27cf621a1c",
+      "timestamp": 1794530656,
+      "txCount": 3592
     },
     {
-      "height": 975586,
-      "id": "000000000000000000015277845e95bc4cdf1e8cf127203f203e710f7f67146b",
-      "timestamp": 1794512059,
-      "txCount": 2653
+      "height": 975615,
+      "id": "000000000000000000016f18d2e458e16620bfc2cdbd47e991608fb1a8862659",
+      "timestamp": 1794529892,
+      "txCount": 3451
     },
     {
-      "height": 975585,
-      "id": "000000000000000000009b34801736378314aff29b48e13abc64fea66ccf2f1a",
-      "timestamp": 1794511880,
-      "txCount": 3507
+      "height": 975614,
+      "id": "00000000000000000000b4a435c6af8883fba4faecae685ed7be59bd4eaad4c4",
+      "timestamp": 1794528384,
+      "txCount": 3213
     },
     {
-      "height": 975584,
-      "id": "000000000000000000016641ddffd204018c9351cb2678c88e769af064a5a20b",
-      "timestamp": 1794511094,
-      "txCount": 2280
+      "height": 975613,
+      "id": "00000000000000000001675c78834eec42f497e520dedea89e5809d36513213c",
+      "timestamp": 1794528240,
+      "txCount": 3529
     },
     {
-      "height": 975583,
-      "id": "00000000000000000001a548f5832bd52351c18a4fcc913716705491b229ce70",
-      "timestamp": 1794510425,
-      "txCount": 2797
+      "height": 975612,
+      "id": "000000000000000000013710bfbfc3e948f255069a4a1ff86dc5a7b0b96eb628",
+      "timestamp": 1794525374,
+      "txCount": 5145
     },
     {
-      "height": 975582,
-      "id": "00000000000000000001969268105a204560010d6f648dfa6c9e61b83908f541",
-      "timestamp": 1794510147,
-      "txCount": 3536
+      "height": 975611,
+      "id": "00000000000000000001406c39449238d428dcdbee86d2ba8e75baf5a2d13fab",
+      "timestamp": 1794524735,
+      "txCount": 2000
     },
     {
-      "height": 975581,
-      "id": "00000000000000000001b80142b6f600c75fae2302726eb27c100a3f8e31fe7c",
-      "timestamp": 1794510094,
-      "txCount": 3741
+      "height": 975610,
+      "id": "000000000000000000005d847ad8326fdc5658c99fee962f1440b61c04cf4999",
+      "timestamp": 1794524725,
+      "txCount": 4172
     }
   ],
   "news": [
+    {
+      "title": "North Korea's Binance hack faces U.S. crackdown as DOJ targets $1.2 billion in stolen crypto",
+      "link": "https://www.coindesk.com/policy/2026/11/12/north-korea-s-binance-hack-faces-u-s-crackdown-as-doj-targets-usd1-2-billion-in-stolen-crypto",
+      "pubDate": "Thu, 12 Nov 2026 22:55:52 +0000"
+    },
+    {
+      "title": "U.S. President Trump names CFTC, SEC nominees for first time in a year",
+      "link": "https://www.coindesk.com/policy/2026/11/12/u-s-president-names-cftc-sec-nominees-for-first-time-in-a-year",
+      "pubDate": "Thu, 12 Nov 2026 22:47:41 +0000"
+    },
+    {
+      "title": "Kalshi ends Donald Trump Jr.’s advisory contract over 1789 Capital’s Polymarket investment",
+      "link": "https://www.coindesk.com/policy/2026/11/12/kalshi-ends-donald-trump-jr-s-advisory-contract-over-1789-capital-s-polymarket-investment",
+      "pubDate": "Thu, 12 Nov 2026 21:07:49 +0000"
+    },
     {
       "title": "Illinois crypto tax is impossible to enforce as written, crypto industry tells court",
       "link": "https://www.coindesk.com/policy/2026/11/12/illinois-crypto-tax-is-impossible-to-enforce-as-written-crypto-industry-tells-court",
@@ -470,21 +485,6 @@
       "title": "Ethereum researchers drop faster blocks to race toward quantum defenses in 2027",
       "link": "https://www.coindesk.com/tech/2026/11/12/ethereum-researchers-drop-faster-blocks-to-race-toward-quantum-defenses-in-2027",
       "pubDate": "Thu, 12 Nov 2026 11:43:41 +0000"
-    },
-    {
-      "title": "Bitcoin dips with Nvidia as ETF outflows reach day five",
-      "link": "https://www.coindesk.com/markets/2026/11/12/bitcoin-dips-with-nvidia-as-etf-outflows-reach-day-five",
-      "pubDate": "Thu, 12 Nov 2026 11:30:00 +0000"
-    },
-    {
-      "title": "Polymarket trims workforce under investor pressure as Kalshi surges ahead",
-      "link": "https://www.coindesk.com/business/2026/11/12/polymarket-trims-workforce-under-investor-pressure-as-kalshi-surges-ahead",
-      "pubDate": "Thu, 12 Nov 2026 10:42:06 +0000"
-    },
-    {
-      "title": "Nomura weighs Laser Digital sale as European losses hit four straight quarters",
-      "link": "https://www.coindesk.com/business/2026/11/12/nomura-weighs-laser-digital-sale-as-european-losses-hit-four-straight-quarters-bloomberg",
-      "pubDate": "Thu, 12 Nov 2026 10:32:35 +0000"
     }
   ]
 }
