@@ -1,13 +1,13 @@
 {
-  "fetchedAt": "2026-11-13T10:52:06.205Z",
+  "fetchedAt": "2026-11-13T19:36:01.684Z",
   "price": {
-    "usd": 69274,
-    "time": 1794567007
+    "usd": 68994,
+    "time": 1794598210
   },
   "moves": {
-    "d1": -2.9395033542463755,
-    "d7": -8.579686356544647,
-    "d30": -15.109194189280917
+    "d1": -3.331814164374425,
+    "d7": -8.949199995430334,
+    "d30": -15.452316076670147
   },
   "history90d": [
     {
@@ -372,62 +372,92 @@
     },
     {
       "date": "2026-11-13",
-      "close": 69281.90164615154
+      "close": 68994.32765455551
     }
   ],
   "blocks": [
     {
-      "height": 975663,
-      "id": "000000000000000000000a557c48decc2e08faae24b053e2866011194fa1ced9",
-      "timestamp": 1794566112,
-      "txCount": 5319
+      "height": 975703,
+      "id": "00000000000000000000cbab70bae2ddc53ee176abeb88da46efddebdb89fcf5",
+      "timestamp": 1794595819,
+      "txCount": 3737
     },
     {
-      "height": 975662,
-      "id": "000000000000000000016c5bfec9b51fd29ce8be603903509cedb7546a908d41",
-      "timestamp": 1794565817,
-      "txCount": 3039
+      "height": 975702,
+      "id": "00000000000000000001668919780a2e38ac418ea9dbeb7a101444d0a3a4ea24",
+      "timestamp": 1794594786,
+      "txCount": 3114
     },
     {
-      "height": 975661,
-      "id": "00000000000000000000f0275c7f125da4ed942b47629124ce8341e1b911239c",
-      "timestamp": 1794564864,
-      "txCount": 4368
+      "height": 975701,
+      "id": "0000000000000000000027add100aabaacd8882985320491e313b460da17f00f",
+      "timestamp": 1794594656,
+      "txCount": 3750
     },
     {
-      "height": 975660,
-      "id": "000000000000000000017e3c0cc1e04f1bd3ca098ccf392a3b6e3e159fcf4175",
-      "timestamp": 1794564260,
-      "txCount": 4516
+      "height": 975700,
+      "id": "0000000000000000000020142f0e0797850e6b8f4de74b1a79c66fb4d831bb93",
+      "timestamp": 1794593593,
+      "txCount": 3506
     },
     {
-      "height": 975659,
-      "id": "00000000000000000000432eb2d7d5f2412a57098ef10ec59ec3ea61ab672349",
-      "timestamp": 1794563145,
-      "txCount": 6553
+      "height": 975699,
+      "id": "00000000000000000001a8cd465e737ff741434f096e241d1bf104665db1e5de",
+      "timestamp": 1794593525,
+      "txCount": 3347
     },
     {
-      "height": 975658,
-      "id": "00000000000000000001e4e4a8255d13e781af49333a0b86e7c36ad560f27706",
-      "timestamp": 1794563069,
-      "txCount": 6819
+      "height": 975698,
+      "id": "00000000000000000000b4ee8b07d2496ae8c0444e3a702192997c87583d1fa4",
+      "timestamp": 1794593495,
+      "txCount": 3567
     },
     {
-      "height": 975657,
-      "id": "000000000000000000003bea2849ffea961c0288a69db6fff08501494da9a638",
-      "timestamp": 1794562705,
-      "txCount": 3351
+      "height": 975697,
+      "id": "00000000000000000001c33f086ba1e886c500583137053f8ce211691671624a",
+      "timestamp": 1794591728,
+      "txCount": 3660
     },
     {
-      "height": 975656,
-      "id": "0000000000000000000107b86fdf501375cb1d2316e84d16e5f9eebcca54aca4",
-      "timestamp": 1794561724,
-      "txCount": 7809
+      "height": 975696,
+      "id": "000000000000000000018a012b9564658423cd0a19a0294af40b4f234e3828b0",
+      "timestamp": 1794589633,
+      "txCount": 3780
     }
   ],
   "news": [
     {
-      "title": "Live news: Bitcoin drops below 200-week moving average as dollar strength pressures risk assets",
+      "title": "Bitcoin plunges to $68,000 as Anthropic IPO frenzy adds to market jitters",
+      "link": "https://www.coindesk.com/markets/2026/11/13/bitcoin-slides-to-usd68k-as-nvidia-turmoil-anthropic-ipo-fuel-broader-market-sell-off",
+      "pubDate": "Fri, 13 Nov 2026 18:39:58 +0000"
+    },
+    {
+      "title": "U.S. Senate Banking Committee races toward hearing on new SEC nominations",
+      "link": "https://www.coindesk.com/policy/2026/11/13/u-s-senate-banking-committee-races-toward-hearing-on-new-sec-nominations",
+      "pubDate": "Fri, 13 Nov 2026 17:05:43 +0000"
+    },
+    {
+      "title": "Bitcoin heads for sixth weekly loss as Anthropic’s blockbuster IPO looms",
+      "link": "https://www.coindesk.com/markets/2026/11/13/bitcoin-heads-for-sixth-weekly-loss-as-anthropic-s-blockbuster-ipo-looms",
+      "pubDate": "Fri, 13 Nov 2026 16:01:27 +0000"
+    },
+    {
+      "title": "Kraken parent Payward says expansion outside crypto trading helps cushion revenue decline",
+      "link": "https://www.coindesk.com/business/2026/11/13/kraken-parent-payward-says-expansion-outside-crypto-trading-helps-cushion-revenue-decline",
+      "pubDate": "Fri, 13 Nov 2026 14:02:00 +0000"
+    },
+    {
+      "title": "Bitcoin's momentum gauge is turning red, could send prices back below $60,000",
+      "link": "https://www.coindesk.com/daybook-us/2026/11/13/bitcoin-s-momentum-gauge-is-turning-red-could-send-prices-back-below-usd60-000",
+      "pubDate": "Fri, 13 Nov 2026 12:14:22 +0000"
+    },
+    {
+      "title": "Bitcoin hits 12-week low as dollar rallies on interest-rate outlook, liquidations top $1.6 billion",
+      "link": "https://www.coindesk.com/markets/2026/11/13/bitcoin-hits-12-week-low-as-dollar-rallies-on-interest-rate-outlook-liquidations-top-usd1-6-billion",
+      "pubDate": "Fri, 13 Nov 2026 11:52:25 +0000"
+    },
+    {
+      "title": "Live updates: Bitcoin eyes bear market lows as late summer rally mostly wiped out",
       "link": "https://www.coindesk.com/tech/2026/11/13/live-news-bitcoin-drops-below-200-week-moving-average-as-dollar-strength-pressures-risk-assets",
       "pubDate": "Fri, 13 Nov 2026 09:16:58 +0000"
     },
@@ -455,36 +485,6 @@
       "title": "Bitcoin dips below $70,000 as Dollar Index hits 19-month high",
       "link": "https://www.coindesk.com/markets/2026/11/13/bitcoin-dips-below-usd70-000-as-selloff-gathers-pace",
       "pubDate": "Fri, 13 Nov 2026 03:37:00 +0000"
-    },
-    {
-      "title": "North Korea's Binance hack faces U.S. crackdown as DOJ targets $1.2 billion in stolen crypto",
-      "link": "https://www.coindesk.com/policy/2026/11/12/north-korea-s-binance-hack-faces-u-s-crackdown-as-doj-targets-usd1-2-billion-in-stolen-crypto",
-      "pubDate": "Thu, 12 Nov 2026 22:55:52 +0000"
-    },
-    {
-      "title": "U.S. President Trump names CFTC, SEC nominees for first time in a year",
-      "link": "https://www.coindesk.com/policy/2026/11/12/u-s-president-names-cftc-sec-nominees-for-first-time-in-a-year",
-      "pubDate": "Thu, 12 Nov 2026 22:47:41 +0000"
-    },
-    {
-      "title": "Kalshi ends Donald Trump Jr.’s advisory contract over 1789 Capital’s Polymarket investment",
-      "link": "https://www.coindesk.com/policy/2026/11/12/kalshi-ends-donald-trump-jr-s-advisory-contract-over-1789-capital-s-polymarket-investment",
-      "pubDate": "Thu, 12 Nov 2026 21:07:49 +0000"
-    },
-    {
-      "title": "Illinois crypto tax is impossible to enforce as written, crypto industry tells court",
-      "link": "https://www.coindesk.com/policy/2026/11/12/illinois-crypto-tax-is-impossible-to-enforce-as-written-crypto-industry-tells-court",
-      "pubDate": "Thu, 12 Nov 2026 16:45:52 +0000"
-    },
-    {
-      "title": "DTCC adds Solana to Wall Street tokenization plans, targeting 2027 rollout",
-      "link": "https://www.coindesk.com/business/2026/11/12/dtcc-adds-solana-to-wall-street-tokenization-plans-targeting-2027-rollout",
-      "pubDate": "Thu, 12 Nov 2026 15:45:48 +0000"
-    },
-    {
-      "title": "Crypto for Advisors: The blockchain built to run financial markets",
-      "link": "https://www.coindesk.com/coindesk-indices/2026/11/12/crypto-for-advisors-the-blockchain-built-to-run-financial-markets",
-      "pubDate": "Thu, 12 Nov 2026 15:34:29 +0000"
     }
   ]
 }
