@@ -1,13 +1,13 @@
 {
-  "fetchedAt": "2026-11-13T01:47:20.529Z",
+  "fetchedAt": "2026-11-13T10:52:06.205Z",
   "price": {
-    "usd": 70983,
-    "time": 1794534009
+    "usd": 69274,
+    "time": 1794567007
   },
   "moves": {
-    "d1": -0.5450063024290519,
-    "d7": -6.324333467774467,
-    "d30": -13.014925240894526
+    "d1": -2.9395033542463755,
+    "d7": -8.579686356544647,
+    "d30": -15.109194189280917
   },
   "history90d": [
     {
@@ -372,60 +372,90 @@
     },
     {
       "date": "2026-11-13",
-      "close": 70908.85931641328
+      "close": 69281.90164615154
     }
   ],
   "blocks": [
     {
-      "height": 975617,
-      "id": "00000000000000000000cb57beca5abd159609c250bda886d58b1e8b51381ea0",
-      "timestamp": 1794533992,
-      "txCount": 3535
+      "height": 975663,
+      "id": "000000000000000000000a557c48decc2e08faae24b053e2866011194fa1ced9",
+      "timestamp": 1794566112,
+      "txCount": 5319
     },
     {
-      "height": 975616,
-      "id": "0000000000000000000185ee3bf5d16bc696180832400204892ddb27cf621a1c",
-      "timestamp": 1794530656,
-      "txCount": 3592
+      "height": 975662,
+      "id": "000000000000000000016c5bfec9b51fd29ce8be603903509cedb7546a908d41",
+      "timestamp": 1794565817,
+      "txCount": 3039
     },
     {
-      "height": 975615,
-      "id": "000000000000000000016f18d2e458e16620bfc2cdbd47e991608fb1a8862659",
-      "timestamp": 1794529892,
-      "txCount": 3451
+      "height": 975661,
+      "id": "00000000000000000000f0275c7f125da4ed942b47629124ce8341e1b911239c",
+      "timestamp": 1794564864,
+      "txCount": 4368
     },
     {
-      "height": 975614,
-      "id": "00000000000000000000b4a435c6af8883fba4faecae685ed7be59bd4eaad4c4",
-      "timestamp": 1794528384,
-      "txCount": 3213
+      "height": 975660,
+      "id": "000000000000000000017e3c0cc1e04f1bd3ca098ccf392a3b6e3e159fcf4175",
+      "timestamp": 1794564260,
+      "txCount": 4516
     },
     {
-      "height": 975613,
-      "id": "00000000000000000001675c78834eec42f497e520dedea89e5809d36513213c",
-      "timestamp": 1794528240,
-      "txCount": 3529
+      "height": 975659,
+      "id": "00000000000000000000432eb2d7d5f2412a57098ef10ec59ec3ea61ab672349",
+      "timestamp": 1794563145,
+      "txCount": 6553
     },
     {
-      "height": 975612,
-      "id": "000000000000000000013710bfbfc3e948f255069a4a1ff86dc5a7b0b96eb628",
-      "timestamp": 1794525374,
-      "txCount": 5145
+      "height": 975658,
+      "id": "00000000000000000001e4e4a8255d13e781af49333a0b86e7c36ad560f27706",
+      "timestamp": 1794563069,
+      "txCount": 6819
     },
     {
-      "height": 975611,
-      "id": "00000000000000000001406c39449238d428dcdbee86d2ba8e75baf5a2d13fab",
-      "timestamp": 1794524735,
-      "txCount": 2000
+      "height": 975657,
+      "id": "000000000000000000003bea2849ffea961c0288a69db6fff08501494da9a638",
+      "timestamp": 1794562705,
+      "txCount": 3351
     },
     {
-      "height": 975610,
-      "id": "000000000000000000005d847ad8326fdc5658c99fee962f1440b61c04cf4999",
-      "timestamp": 1794524725,
-      "txCount": 4172
+      "height": 975656,
+      "id": "0000000000000000000107b86fdf501375cb1d2316e84d16e5f9eebcca54aca4",
+      "timestamp": 1794561724,
+      "txCount": 7809
     }
   ],
   "news": [
+    {
+      "title": "Live news: Bitcoin drops below 200-week moving average as dollar strength pressures risk assets",
+      "link": "https://www.coindesk.com/tech/2026/11/13/live-news-bitcoin-drops-below-200-week-moving-average-as-dollar-strength-pressures-risk-assets",
+      "pubDate": "Fri, 13 Nov 2026 09:16:58 +0000"
+    },
+    {
+      "title": "Ethereum treasury firm BTCS sold ether at a loss to keep $64 million Aave loan healthy",
+      "link": "https://www.coindesk.com/markets/2026/11/13/ethereum-treasury-firm-btcs-sold-ether-at-a-loss-to-keep-usd64-million-aave-loan-healthy",
+      "pubDate": "Fri, 13 Nov 2026 07:05:29 +0000"
+    },
+    {
+      "title": "Bitcoin firm Nakamoto owes Kraken $165 million, more than its entire market value",
+      "link": "https://www.coindesk.com/markets/2026/11/13/bitcoin-firm-nakamoto-owes-kraken-usd165-million-more-than-its-entire-market-value",
+      "pubDate": "Fri, 13 Nov 2026 06:03:41 +0000"
+    },
+    {
+      "title": "Bitcoin ETFs are now down over $1.5 billion in net outflows for the year",
+      "link": "https://www.coindesk.com/markets/2026/11/13/bitcoin-etfs-are-now-down-over-usd1-5-billion-in-net-outflows-for-the-year",
+      "pubDate": "Fri, 13 Nov 2026 05:45:26 +0000"
+    },
+    {
+      "title": "SpaceX-Tesla merger talks put 30,000 bitcoin back in focus",
+      "link": "https://www.coindesk.com/markets/2026/11/13/spacex-tesla-merger-talks-put-30-000-bitcoin-back-in-focus",
+      "pubDate": "Fri, 13 Nov 2026 05:08:59 +0000"
+    },
+    {
+      "title": "Bitcoin dips below $70,000 as Dollar Index hits 19-month high",
+      "link": "https://www.coindesk.com/markets/2026/11/13/bitcoin-dips-below-usd70-000-as-selloff-gathers-pace",
+      "pubDate": "Fri, 13 Nov 2026 03:37:00 +0000"
+    },
     {
       "title": "North Korea's Binance hack faces U.S. crackdown as DOJ targets $1.2 billion in stolen crypto",
       "link": "https://www.coindesk.com/policy/2026/11/12/north-korea-s-binance-hack-faces-u-s-crackdown-as-doj-targets-usd1-2-billion-in-stolen-crypto",
@@ -455,36 +485,6 @@
       "title": "Crypto for Advisors: The blockchain built to run financial markets",
       "link": "https://www.coindesk.com/coindesk-indices/2026/11/12/crypto-for-advisors-the-blockchain-built-to-run-financial-markets",
       "pubDate": "Thu, 12 Nov 2026 15:34:29 +0000"
-    },
-    {
-      "title": "Jupiter adds Anchorage-backed USDGO to its $1 billion Solana lending platform",
-      "link": "https://www.coindesk.com/business/2026/11/12/jupiter-adds-anchorage-backed-usdgo-to-its-usd1-billion-solana-lending-platform",
-      "pubDate": "Thu, 12 Nov 2026 14:45:00 +0000"
-    },
-    {
-      "title": "The next Congress will write rules for AI and emerging tech. They should use the stuff first.",
-      "link": "https://www.coindesk.com/opinion/2026/11/12/the-next-congress-will-write-rules-for-ai-and-emerging-tech-they-should-use-the-stuff-first",
-      "pubDate": "Thu, 12 Nov 2026 14:24:51 +0000"
-    },
-    {
-      "title": "Nvidia CEO Huang quits company he co-founded, led for 3 decades. Shares slump",
-      "link": "https://www.coindesk.com/markets/2026/11/12/nvidia-shares-plunge-10-as-jensen-huang-resigns",
-      "pubDate": "Thu, 12 Nov 2026 13:57:53 +0000"
-    },
-    {
-      "title": "Bitcoin weakness erases September's bullish signal",
-      "link": "https://www.coindesk.com/daybook-us/2026/11/12/bitcoin-weakness-erases-september-s-bullish-signal",
-      "pubDate": "Thu, 12 Nov 2026 12:15:00 +0000"
-    },
-    {
-      "title": "UK bank Griffin raises $20 million to expand into stablecoin payments",
-      "link": "https://www.coindesk.com/business/2026/11/12/uk-bank-griffin-raises-usd20-million-to-expand-into-stablecoin-payments",
-      "pubDate": "Thu, 12 Nov 2026 12:04:42 +0000"
-    },
-    {
-      "title": "Ethereum researchers drop faster blocks to race toward quantum defenses in 2027",
-      "link": "https://www.coindesk.com/tech/2026/11/12/ethereum-researchers-drop-faster-blocks-to-race-toward-quantum-defenses-in-2027",
-      "pubDate": "Thu, 12 Nov 2026 11:43:41 +0000"
     }
   ]
 }
