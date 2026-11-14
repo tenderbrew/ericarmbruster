@@ -1,13 +1,13 @@
 {
-  "fetchedAt": "2026-11-14T01:25:19.461Z",
+  "fetchedAt": "2026-11-14T10:14:35.673Z",
   "price": {
-    "usd": 68218,
-    "time": 1794619207
+    "usd": 67255,
+    "time": 1794651006
   },
   "moves": {
-    "d1": -0.14010222469238442,
-    "d7": -9.974582421818457,
-    "d30": -16.96482042634707
+    "d1": -1.5497753543300297,
+    "d7": -11.245427024823362,
+    "d30": -18.136987272772174
   },
   "history90d": [
     {
@@ -372,60 +372,65 @@
     },
     {
       "date": "2026-11-14",
-      "close": 68227.77315863852
+      "close": 67214.49869746783
     }
   ],
   "blocks": [
     {
-      "height": 975729,
-      "id": "00000000000000000000dfa8ddafe955fb131fcde8abe8c520d65ff966fbc055",
-      "timestamp": 1794617662,
-      "txCount": 2873
+      "height": 975781,
+      "id": "00000000000000000000fd87d88f9934995296883c9f414a04d2e1866036f243",
+      "timestamp": 1794651093,
+      "txCount": 3692
     },
     {
-      "height": 975728,
-      "id": "00000000000000000000076043d278e4d0d9e5e7218799cdc7ff1f0654c16567",
-      "timestamp": 1794617437,
-      "txCount": 2183
+      "height": 975780,
+      "id": "000000000000000000020d30841b9082b795b98a2468adfde39f2257226de2cd",
+      "timestamp": 1794649465,
+      "txCount": 5542
     },
     {
-      "height": 975727,
-      "id": "0000000000000000000123e4f715927fe8e53270d5fe5af040c8e853322f81f5",
-      "timestamp": 1794617335,
-      "txCount": 3826
+      "height": 975779,
+      "id": "00000000000000000001ed350b48f30de2f87cf788ab9a220a35e09062f6b19b",
+      "timestamp": 1794648810,
+      "txCount": 7325
     },
     {
-      "height": 975726,
-      "id": "00000000000000000000ebc258fc96c1b184b00086e39df01463e3cce175e85e",
-      "timestamp": 1794617127,
-      "txCount": 3511
+      "height": 975778,
+      "id": "00000000000000000000e2af10f5eb58b799bb6cdd7d8304c29e778534a58aad",
+      "timestamp": 1794648741,
+      "txCount": 3491
     },
     {
-      "height": 975725,
-      "id": "00000000000000000001d903c0bb3b2b835d5c52f3bf303f22a1f8d08fc72b19",
-      "timestamp": 1794614176,
-      "txCount": 3375
+      "height": 975777,
+      "id": "000000000000000000008b7d194e8f67dd1617f6cd2180afe7a0b5128b2a1c78",
+      "timestamp": 1794647949,
+      "txCount": 7015
     },
     {
-      "height": 975724,
-      "id": "00000000000000000000a57faeafda8adcc70b85b8bb0a54aaac33677236ac33",
-      "timestamp": 1794613352,
-      "txCount": 3589
+      "height": 975776,
+      "id": "00000000000000000001899390d0178011c0716279b107a12e589cb01c6bd96c",
+      "timestamp": 1794647762,
+      "txCount": 4129
     },
     {
-      "height": 975723,
-      "id": "0000000000000000000046e06cc704720d0ff371eb92d744ec805b012090fabd",
-      "timestamp": 1794611103,
-      "txCount": 1909
+      "height": 975775,
+      "id": "000000000000000000008f56a6bbd31c9c8ac66d6bed6d2a31a06a13f5666cef",
+      "timestamp": 1794647697,
+      "txCount": 2889
     },
     {
-      "height": 975722,
-      "id": "00000000000000000001a0af942dbc74632ed789557f3531e8e4e8ad29740c0c",
-      "timestamp": 1794610873,
-      "txCount": 2740
+      "height": 975774,
+      "id": "0000000000000000000055c76c9bd21c79ccf227197901bf6f2237a822684f5e",
+      "timestamp": 1794646972,
+      "txCount": 960
     }
   ],
   "news": [
+    {
+      "title": "Satoshi-era wallet served in a $260 billion lawsuit moves 75 BTC it held since 2011",
+      "link": "https://www.coindesk.com/markets/2026/11/13/satoshi-era-wallet-served-in-a-usd260-billion-lawsuit-moves-75-btc-it-held-since-2011",
+      "pubDate": "Sat, 14 Nov 2026 04:30:00 +0000"
+    },
     {
       "title": "Bitcoin miners pay Paraguay $350 million a year, but AI is pushing them out",
       "link": "https://www.coindesk.com/tech/2026/11/13/bitcoin-miners-pay-paraguay-usd350-million-a-year-but-ai-is-pushing-them-out",
@@ -480,11 +485,6 @@
       "title": "Bitcoin ETFs are now down over $1.5 billion in net outflows for the year",
       "link": "https://www.coindesk.com/markets/2026/11/13/bitcoin-etfs-are-now-down-over-usd1-5-billion-in-net-outflows-for-the-year",
       "pubDate": "Fri, 13 Nov 2026 05:45:26 +0000"
-    },
-    {
-      "title": "SpaceX-Tesla merger talks put 30,000 bitcoin back in focus",
-      "link": "https://www.coindesk.com/markets/2026/11/13/spacex-tesla-merger-talks-put-30-000-bitcoin-back-in-focus",
-      "pubDate": "Fri, 13 Nov 2026 05:08:59 +0000"
     }
   ]
 }
