@@ -1,19 +1,15 @@
 {
-  "fetchedAt": "2026-11-13T19:36:01.684Z",
+  "fetchedAt": "2026-11-14T01:25:19.461Z",
   "price": {
-    "usd": 68994,
-    "time": 1794598210
+    "usd": 68218,
+    "time": 1794619207
   },
   "moves": {
-    "d1": -3.331814164374425,
-    "d7": -8.949199995430334,
-    "d30": -15.452316076670147
+    "d1": -0.14010222469238442,
+    "d7": -9.974582421818457,
+    "d30": -16.96482042634707
   },
   "history90d": [
-    {
-      "date": "2026-08-16",
-      "close": 63031.04825975698
-    },
     {
       "date": "2026-08-17",
       "close": 62843.70368466329
@@ -371,61 +367,70 @@
       "close": 71371.98179897292
     },
     {
-      "date": "2026-11-13",
-      "close": 68994.32765455551
+      "date": "2026-11-14",
+      "close": 68313.70902611547
+    },
+    {
+      "date": "2026-11-14",
+      "close": 68227.77315863852
     }
   ],
   "blocks": [
     {
-      "height": 975703,
-      "id": "00000000000000000000cbab70bae2ddc53ee176abeb88da46efddebdb89fcf5",
-      "timestamp": 1794595819,
-      "txCount": 3737
+      "height": 975729,
+      "id": "00000000000000000000dfa8ddafe955fb131fcde8abe8c520d65ff966fbc055",
+      "timestamp": 1794617662,
+      "txCount": 2873
     },
     {
-      "height": 975702,
-      "id": "00000000000000000001668919780a2e38ac418ea9dbeb7a101444d0a3a4ea24",
-      "timestamp": 1794594786,
-      "txCount": 3114
+      "height": 975728,
+      "id": "00000000000000000000076043d278e4d0d9e5e7218799cdc7ff1f0654c16567",
+      "timestamp": 1794617437,
+      "txCount": 2183
     },
     {
-      "height": 975701,
-      "id": "0000000000000000000027add100aabaacd8882985320491e313b460da17f00f",
-      "timestamp": 1794594656,
-      "txCount": 3750
+      "height": 975727,
+      "id": "0000000000000000000123e4f715927fe8e53270d5fe5af040c8e853322f81f5",
+      "timestamp": 1794617335,
+      "txCount": 3826
     },
     {
-      "height": 975700,
-      "id": "0000000000000000000020142f0e0797850e6b8f4de74b1a79c66fb4d831bb93",
-      "timestamp": 1794593593,
-      "txCount": 3506
+      "height": 975726,
+      "id": "00000000000000000000ebc258fc96c1b184b00086e39df01463e3cce175e85e",
+      "timestamp": 1794617127,
+      "txCount": 3511
     },
     {
-      "height": 975699,
-      "id": "00000000000000000001a8cd465e737ff741434f096e241d1bf104665db1e5de",
-      "timestamp": 1794593525,
-      "txCount": 3347
+      "height": 975725,
+      "id": "00000000000000000001d903c0bb3b2b835d5c52f3bf303f22a1f8d08fc72b19",
+      "timestamp": 1794614176,
+      "txCount": 3375
     },
     {
-      "height": 975698,
-      "id": "00000000000000000000b4ee8b07d2496ae8c0444e3a702192997c87583d1fa4",
-      "timestamp": 1794593495,
-      "txCount": 3567
+      "height": 975724,
+      "id": "00000000000000000000a57faeafda8adcc70b85b8bb0a54aaac33677236ac33",
+      "timestamp": 1794613352,
+      "txCount": 3589
     },
     {
-      "height": 975697,
-      "id": "00000000000000000001c33f086ba1e886c500583137053f8ce211691671624a",
-      "timestamp": 1794591728,
-      "txCount": 3660
+      "height": 975723,
+      "id": "0000000000000000000046e06cc704720d0ff371eb92d744ec805b012090fabd",
+      "timestamp": 1794611103,
+      "txCount": 1909
     },
     {
-      "height": 975696,
-      "id": "000000000000000000018a012b9564658423cd0a19a0294af40b4f234e3828b0",
-      "timestamp": 1794589633,
-      "txCount": 3780
+      "height": 975722,
+      "id": "00000000000000000001a0af942dbc74632ed789557f3531e8e4e8ad29740c0c",
+      "timestamp": 1794610873,
+      "txCount": 2740
     }
   ],
   "news": [
+    {
+      "title": "Bitcoin miners pay Paraguay $350 million a year, but AI is pushing them out",
+      "link": "https://www.coindesk.com/tech/2026/11/13/bitcoin-miners-pay-paraguay-usd350-million-a-year-but-ai-is-pushing-them-out",
+      "pubDate": "Fri, 13 Nov 2026 23:30:00 +0000"
+    },
     {
       "title": "Bitcoin plunges to $68,000 as Anthropic IPO frenzy adds to market jitters",
       "link": "https://www.coindesk.com/markets/2026/11/13/bitcoin-slides-to-usd68k-as-nvidia-turmoil-anthropic-ipo-fuel-broader-market-sell-off",
@@ -480,11 +485,6 @@
       "title": "SpaceX-Tesla merger talks put 30,000 bitcoin back in focus",
       "link": "https://www.coindesk.com/markets/2026/11/13/spacex-tesla-merger-talks-put-30-000-bitcoin-back-in-focus",
       "pubDate": "Fri, 13 Nov 2026 05:08:59 +0000"
-    },
-    {
-      "title": "Bitcoin dips below $70,000 as Dollar Index hits 19-month high",
-      "link": "https://www.coindesk.com/markets/2026/11/13/bitcoin-dips-below-usd70-000-as-selloff-gathers-pace",
-      "pubDate": "Fri, 13 Nov 2026 03:37:00 +0000"
     }
   ]
 }
