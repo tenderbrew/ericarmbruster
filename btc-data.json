@@ -1,13 +1,13 @@
 {
-  "fetchedAt": "2026-11-15T06:19:10.195Z",
+  "fetchedAt": "2026-11-15T16:17:53.467Z",
   "price": {
-    "usd": 64189,
-    "time": 1794723007
+    "usd": 64618,
+    "time": 1794759309
   },
   "moves": {
-    "d1": 0.10724163057291847,
-    "d7": -14.117418809362103,
-    "d30": -21.263346669962292
+    "d1": 0.7762971799585738,
+    "d7": -13.543432186564065,
+    "d30": -20.737119056530307
   },
   "history90d": [
     {
@@ -372,60 +372,65 @@
     },
     {
       "date": "2026-11-15",
-      "close": 64432.507822192856
+      "close": 64587.421821966615
     }
   ],
   "blocks": [
     {
-      "height": 975911,
-      "id": "00000000000000000001573b3d4bb4332787192e78ac6beb16cb78c4f79423b5",
-      "timestamp": 1794723404,
-      "txCount": 6890
+      "height": 975983,
+      "id": "0000000000000000000115331c98bf3d845298d1ce220e5f3df53db0b4170973",
+      "timestamp": 1794758596,
+      "txCount": 4122
     },
     {
-      "height": 975910,
-      "id": "00000000000000000000f26eb33ae7115a9d6e0ceac7589928f9a9aed0f360bc",
-      "timestamp": 1794722678,
-      "txCount": 6095
+      "height": 975982,
+      "id": "00000000000000000001568a3d597859c43c8cbc971989c286b2af8f3b449bcf",
+      "timestamp": 1794757741,
+      "txCount": 3463
     },
     {
-      "height": 975909,
-      "id": "0000000000000000000102b9a18f808d6d47afcec86d3d5a1521c9bd96a2a106",
-      "timestamp": 1794722404,
-      "txCount": 7826
+      "height": 975981,
+      "id": "00000000000000000000e25d37bfd6126c06e6df83af68d2426ef8833a2bacd9",
+      "timestamp": 1794757191,
+      "txCount": 3762
     },
     {
-      "height": 975908,
-      "id": "00000000000000000001a11cc72ebcf3c8200f779922566fd9d3e9bfb98b34b4",
-      "timestamp": 1794722548,
-      "txCount": 6536
+      "height": 975980,
+      "id": "000000000000000000003742816b549bde4af0f9dddce300501b6336d4919245",
+      "timestamp": 1794755443,
+      "txCount": 7662
     },
     {
-      "height": 975907,
-      "id": "00000000000000000001aaff91de1c5ff32dcdee2f427f7d92d82d07b46622e3",
-      "timestamp": 1794722360,
-      "txCount": 2748
+      "height": 975979,
+      "id": "00000000000000000000059e3904796056d35796b86be9efb5614e87397cf8f9",
+      "timestamp": 1794755376,
+      "txCount": 7523
     },
     {
-      "height": 975906,
-      "id": "0000000000000000000214582b90fa94e82b30ef46c70f64aba798747bbfcad8",
-      "timestamp": 1794720425,
-      "txCount": 7308
+      "height": 975978,
+      "id": "000000000000000000003a0483597006a8d58d997acde470d016adc2740bfd18",
+      "timestamp": 1794755264,
+      "txCount": 4736
     },
     {
-      "height": 975905,
-      "id": "0000000000000000000148cddd64c9858dec8c1f4b6f25ca0ac459af77066dea",
-      "timestamp": 1794720350,
-      "txCount": 7296
+      "height": 975977,
+      "id": "00000000000000000000d05d75188cac2c58455309a6a53c6ae0f43427524393",
+      "timestamp": 1794754812,
+      "txCount": 7382
     },
     {
-      "height": 975904,
-      "id": "00000000000000000001329f942eed835fb78543ebba8221c48073840d70eeb2",
-      "timestamp": 1794720319,
-      "txCount": 5059
+      "height": 975976,
+      "id": "000000000000000000013934b66e3d48c090fce178eb7b5b91beefd45b7299cf",
+      "timestamp": 1794754705,
+      "txCount": 7365
     }
   ],
   "news": [
+    {
+      "title": "Crypto insiders aren't counting on silver linings in Congress' 'lame duck' session",
+      "link": "https://www.coindesk.com/news-analysis/2026/11/13/crypto-insiders-aren-t-counting-on-silver-linings-in-congress-lame-duck-session",
+      "pubDate": "Sun, 15 Nov 2026 14:00:00 +0000"
+    },
     {
       "title": "XRP crashes to its lowest since November 2024 as money leaves crypto",
       "link": "https://www.coindesk.com/markets/2026/11/15/xrp-crashes-to-its-lowest-since-november-2024-as-money-leaves-crypto",
@@ -480,11 +485,6 @@
       "title": "U.S. Senate Banking Committee races toward hearing on new SEC nominations",
       "link": "https://www.coindesk.com/policy/2026/11/13/u-s-senate-banking-committee-races-toward-hearing-on-new-sec-nominations",
       "pubDate": "Fri, 13 Nov 2026 17:05:43 +0000"
-    },
-    {
-      "title": "Bitcoin heads for sixth weekly loss as Anthropic’s blockbuster IPO looms",
-      "link": "https://www.coindesk.com/markets/2026/11/13/bitcoin-heads-for-sixth-weekly-loss-as-anthropic-s-blockbuster-ipo-looms",
-      "pubDate": "Fri, 13 Nov 2026 16:01:27 +0000"
     }
   ]
 }
