@@ -1,13 +1,13 @@
 {
-  "fetchedAt": "2026-11-15T16:17:53.467Z",
+  "fetchedAt": "2026-11-15T22:45:19.569Z",
   "price": {
-    "usd": 64618,
-    "time": 1794759309
+    "usd": 65154,
+    "time": 1794782408
   },
   "moves": {
-    "d1": 0.7762971799585738,
-    "d7": -13.543432186564065,
-    "d30": -20.737119056530307
+    "d1": 1.612226724179333,
+    "d7": -12.826283399105431,
+    "d30": -20.079641199188703
   },
   "history90d": [
     {
@@ -372,60 +372,65 @@
     },
     {
       "date": "2026-11-15",
-      "close": 64587.421821966615
+      "close": 65131.3372886079
     }
   ],
   "blocks": [
     {
-      "height": 975983,
-      "id": "0000000000000000000115331c98bf3d845298d1ce220e5f3df53db0b4170973",
-      "timestamp": 1794758596,
-      "txCount": 4122
+      "height": 976027,
+      "id": "00000000000000000001ac1001429f7ccd6aeb282cfd3596023cb43ed4bd439c",
+      "timestamp": 1794782487,
+      "txCount": 6374
     },
     {
-      "height": 975982,
-      "id": "00000000000000000001568a3d597859c43c8cbc971989c286b2af8f3b449bcf",
-      "timestamp": 1794757741,
-      "txCount": 3463
+      "height": 976026,
+      "id": "000000000000000000019a374b061d35ccc839f6c453a3ec390f74e1e6b494ab",
+      "timestamp": 1794782258,
+      "txCount": 6213
     },
     {
-      "height": 975981,
-      "id": "00000000000000000000e25d37bfd6126c06e6df83af68d2426ef8833a2bacd9",
-      "timestamp": 1794757191,
-      "txCount": 3762
+      "height": 976025,
+      "id": "00000000000000000001f4ebb8a8f0fcf1c48048ada1d420537486e4e5e6631c",
+      "timestamp": 1794781982,
+      "txCount": 5266
     },
     {
-      "height": 975980,
-      "id": "000000000000000000003742816b549bde4af0f9dddce300501b6336d4919245",
-      "timestamp": 1794755443,
-      "txCount": 7662
+      "height": 976024,
+      "id": "0000000000000000000031fd92573e2321c60d32a4f6803a394e46b040f8aa0d",
+      "timestamp": 1794781539,
+      "txCount": 6580
     },
     {
-      "height": 975979,
-      "id": "00000000000000000000059e3904796056d35796b86be9efb5614e87397cf8f9",
-      "timestamp": 1794755376,
-      "txCount": 7523
+      "height": 976023,
+      "id": "000000000000000000012d08007c98babf6c20e32e3d7156ceea3e1702eccdc3",
+      "timestamp": 1794781062,
+      "txCount": 6763
     },
     {
-      "height": 975978,
-      "id": "000000000000000000003a0483597006a8d58d997acde470d016adc2740bfd18",
-      "timestamp": 1794755264,
-      "txCount": 4736
+      "height": 976022,
+      "id": "000000000000000000018bd5708f4792e7b472a1e3ba98fa2f11133492163980",
+      "timestamp": 1794780999,
+      "txCount": 2763
     },
     {
-      "height": 975977,
-      "id": "00000000000000000000d05d75188cac2c58455309a6a53c6ae0f43427524393",
-      "timestamp": 1794754812,
-      "txCount": 7382
+      "height": 976021,
+      "id": "00000000000000000001f14a118285dca34167af0c81815add772ff215eece37",
+      "timestamp": 1794779914,
+      "txCount": 6510
     },
     {
-      "height": 975976,
-      "id": "000000000000000000013934b66e3d48c090fce178eb7b5b91beefd45b7299cf",
-      "timestamp": 1794754705,
-      "txCount": 7365
+      "height": 976020,
+      "id": "000000000000000000014a99a9caded2d6d8845eb46b3d7b1f0368224ec9816b",
+      "timestamp": 1794779741,
+      "txCount": 7817
     }
   ],
   "news": [
+    {
+      "title": "Did prediction markets call the U.S. midterm election?: State of Crypto",
+      "link": "https://www.coindesk.com/policy/2026/11/15/did-prediction-markets-call-the-u-s-midterm-election-state-of-crypto",
+      "pubDate": "Sun, 15 Nov 2026 19:30:00 +0000"
+    },
     {
       "title": "Crypto insiders aren't counting on silver linings in Congress' 'lame duck' session",
       "link": "https://www.coindesk.com/news-analysis/2026/11/13/crypto-insiders-aren-t-counting-on-silver-linings-in-congress-lame-duck-session",
@@ -480,11 +485,6 @@
       "title": "Bitcoin plunges to $68,000 as Anthropic IPO frenzy adds to market jitters",
       "link": "https://www.coindesk.com/markets/2026/11/13/bitcoin-slides-to-usd68k-as-nvidia-turmoil-anthropic-ipo-fuel-broader-market-sell-off",
       "pubDate": "Fri, 13 Nov 2026 18:39:58 +0000"
-    },
-    {
-      "title": "U.S. Senate Banking Committee races toward hearing on new SEC nominations",
-      "link": "https://www.coindesk.com/policy/2026/11/13/u-s-senate-banking-committee-races-toward-hearing-on-new-sec-nominations",
-      "pubDate": "Fri, 13 Nov 2026 17:05:43 +0000"
     }
   ]
 }
