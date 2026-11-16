@@ -1,19 +1,15 @@
 {
-  "fetchedAt": "2026-11-15T22:45:19.569Z",
+  "fetchedAt": "2026-11-16T06:18:05.020Z",
   "price": {
-    "usd": 65154,
-    "time": 1794782408
+    "usd": 64337,
+    "time": 1794809407
   },
   "moves": {
-    "d1": 1.612226724179333,
-    "d7": -12.826283399105431,
-    "d30": -20.079641199188703
+    "d1": -1.4826993966497226,
+    "d7": -14.521372050221338,
+    "d30": -20.970018698327266
   },
   "history90d": [
-    {
-      "date": "2026-08-18",
-      "close": 64491.345282946255
-    },
     {
       "date": "2026-08-19",
       "close": 64686.25782561655
@@ -371,61 +367,75 @@
       "close": 64120.23641294355
     },
     {
-      "date": "2026-11-15",
-      "close": 65131.3372886079
+      "date": "2026-11-16",
+      "close": 65305.28100747828
+    },
+    {
+      "date": "2026-11-16",
+      "close": 64294.69772126463
     }
   ],
   "blocks": [
     {
-      "height": 976027,
-      "id": "00000000000000000001ac1001429f7ccd6aeb282cfd3596023cb43ed4bd439c",
-      "timestamp": 1794782487,
-      "txCount": 6374
+      "height": 976082,
+      "id": "0000000000000000000019093e2cff3699ad1b317e2c99d95f7ae66ca2e28356",
+      "timestamp": 1794808381,
+      "txCount": 7058
     },
     {
-      "height": 976026,
-      "id": "000000000000000000019a374b061d35ccc839f6c453a3ec390f74e1e6b494ab",
-      "timestamp": 1794782258,
-      "txCount": 6213
+      "height": 976081,
+      "id": "0000000000000000000207667ae87de5cfcc67f6b285fdf92a727e17c44b7e30",
+      "timestamp": 1794808220,
+      "txCount": 7378
     },
     {
-      "height": 976025,
-      "id": "00000000000000000001f4ebb8a8f0fcf1c48048ada1d420537486e4e5e6631c",
-      "timestamp": 1794781982,
-      "txCount": 5266
+      "height": 976080,
+      "id": "00000000000000000001f5d21eb2b91d6d53fe51a700ff175202da9e98142ad6",
+      "timestamp": 1794808156,
+      "txCount": 7637
     },
     {
-      "height": 976024,
-      "id": "0000000000000000000031fd92573e2321c60d32a4f6803a394e46b040f8aa0d",
-      "timestamp": 1794781539,
-      "txCount": 6580
+      "height": 976079,
+      "id": "0000000000000000000203171aa5da4af665c3c488d786eb448ec44e4673ded3",
+      "timestamp": 1794808044,
+      "txCount": 4775
     },
     {
-      "height": 976023,
-      "id": "000000000000000000012d08007c98babf6c20e32e3d7156ceea3e1702eccdc3",
-      "timestamp": 1794781062,
-      "txCount": 6763
+      "height": 976078,
+      "id": "000000000000000000000d3a5a835e62ed9f0c943a1b97b2bd328587c9a73755",
+      "timestamp": 1794807606,
+      "txCount": 9704
     },
     {
-      "height": 976022,
-      "id": "000000000000000000018bd5708f4792e7b472a1e3ba98fa2f11133492163980",
-      "timestamp": 1794780999,
-      "txCount": 2763
+      "height": 976077,
+      "id": "000000000000000000014ed8a594cfec0aa032ff30a4ba31d67e05cffd06ab53",
+      "timestamp": 1794807376,
+      "txCount": 2455
     },
     {
-      "height": 976021,
-      "id": "00000000000000000001f14a118285dca34167af0c81815add772ff215eece37",
-      "timestamp": 1794779914,
-      "txCount": 6510
+      "height": 976076,
+      "id": "000000000000000000018bdfac0152ea0f1beb6ae278eeff62c22a3861b72d9b",
+      "timestamp": 1794807084,
+      "txCount": 2264
     },
     {
-      "height": 976020,
-      "id": "000000000000000000014a99a9caded2d6d8845eb46b3d7b1f0368224ec9816b",
-      "timestamp": 1794779741,
-      "txCount": 7817
+      "height": 976075,
+      "id": "00000000000000000000cf965949f057730926b9c3aa3f330473081d067b538a",
+      "timestamp": 1794805143,
+      "txCount": 5119
     }
   ],
   "news": [
+    {
+      "title": "Trump administration to name Nvidia, OpenAI and several others as AI national champions",
+      "link": "https://www.coindesk.com/markets/2026/11/16/trump-administration-to-name-nvidia-openai-and-several-others-as-u-s-ai-national-champions",
+      "pubDate": "Mon, 16 Nov 2026 06:01:41 +0000"
+    },
+    {
+      "title": "Bitcoin’s biggest bet is now a drop below $60,000, not a rally above $100,000",
+      "link": "https://www.coindesk.com/markets/2026/11/16/bitcoin-s-biggest-bet-is-now-a-drop-below-usd60-000-not-a-rally-above-usd100-000",
+      "pubDate": "Mon, 16 Nov 2026 05:01:17 +0000"
+    },
     {
       "title": "Did prediction markets call the U.S. midterm election?: State of Crypto",
       "link": "https://www.coindesk.com/policy/2026/11/15/did-prediction-markets-call-the-u-s-midterm-election-state-of-crypto",
@@ -475,16 +485,6 @@
       "title": "Satoshi-era wallet served in a $260 billion lawsuit moves 75 BTC it held since 2011",
       "link": "https://www.coindesk.com/markets/2026/11/13/satoshi-era-wallet-served-in-a-usd260-billion-lawsuit-moves-75-btc-it-held-since-2011",
       "pubDate": "Sat, 14 Nov 2026 04:30:00 +0000"
-    },
-    {
-      "title": "Bitcoin miners pay Paraguay $350 million a year, but AI is pushing them out",
-      "link": "https://www.coindesk.com/tech/2026/11/13/bitcoin-miners-pay-paraguay-usd350-million-a-year-but-ai-is-pushing-them-out",
-      "pubDate": "Fri, 13 Nov 2026 23:30:00 +0000"
-    },
-    {
-      "title": "Bitcoin plunges to $68,000 as Anthropic IPO frenzy adds to market jitters",
-      "link": "https://www.coindesk.com/markets/2026/11/13/bitcoin-slides-to-usd68k-as-nvidia-turmoil-anthropic-ipo-fuel-broader-market-sell-off",
-      "pubDate": "Fri, 13 Nov 2026 18:39:58 +0000"
     }
   ]
 }
