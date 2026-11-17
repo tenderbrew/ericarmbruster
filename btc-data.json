@@ -1,13 +1,13 @@
 {
-  "fetchedAt": "2026-11-17T03:46:15.536Z",
+  "fetchedAt": "2026-11-17T15:54:21.566Z",
   "price": {
-    "usd": 64972,
-    "time": 1794886807
+    "usd": 63625,
+    "time": 1794930609
   },
   "moves": {
-    "d1": 0.20223024651553345,
-    "d7": -11.867937201604173,
-    "d30": -20.784771523378186
+    "d1": -1.8751631559048354,
+    "d7": -13.695091800345772,
+    "d30": -22.42706224488914
   },
   "history90d": [
     {
@@ -372,119 +372,119 @@
     },
     {
       "date": "2026-11-17",
-      "close": 65013.112685182605
+      "close": 63434.17884612337
     }
   ],
   "blocks": [
     {
-      "height": 976215,
-      "id": "000000000000000000003fd50aeb3fb0ed4f6ea934e46219680709c92139ac0d",
-      "timestamp": 1794886961,
-      "txCount": 5324
+      "height": 976296,
+      "id": "0000000000000000000142eec6d704103f894a19f060f414647546037b95d718",
+      "timestamp": 1794929857,
+      "txCount": 6968
     },
     {
-      "height": 976214,
-      "id": "00000000000000000000dcf38d74cb93ab67d53ea6d3cea60a39f39a36e9bbb6",
-      "timestamp": 1794887029,
-      "txCount": 3107
+      "height": 976295,
+      "id": "0000000000000000000205878934a53cc46578fceeeb112d7891d7d2923bcbc9",
+      "timestamp": 1794929508,
+      "txCount": 5232
     },
     {
-      "height": 976213,
-      "id": "00000000000000000001a1d1152cb01e93fd98156d00b5b8eb6d62c91aea21d6",
-      "timestamp": 1794884921,
-      "txCount": 2799
+      "height": 976294,
+      "id": "00000000000000000000202a236ab9e7fac791960c83686054eb5d5baa63688b",
+      "timestamp": 1794929057,
+      "txCount": 5728
     },
     {
-      "height": 976212,
-      "id": "000000000000000000004d9a82486e54971fcc765a6d639ff70acbd2a461c910",
-      "timestamp": 1794884284,
-      "txCount": 10959
+      "height": 976293,
+      "id": "000000000000000000013519768592e430a736bd03d8c04fa4e912f0862df3f1",
+      "timestamp": 1794928738,
+      "txCount": 1294
     },
     {
-      "height": 976211,
-      "id": "000000000000000000006c7c44cf3c580f37811e2cb6983d4d41fe779c49f4b0",
-      "timestamp": 1794884388,
-      "txCount": 7269
+      "height": 976292,
+      "id": "000000000000000000004479287b9f561d3bad27229070b9809799839f961cea",
+      "timestamp": 1794928691,
+      "txCount": 5578
     },
     {
-      "height": 976210,
-      "id": "00000000000000000001dfdf9e1842a995f8dfc0cfbd04fbfc18c4a2318318ac",
-      "timestamp": 1794884240,
-      "txCount": 3753
+      "height": 976291,
+      "id": "00000000000000000001aeda6639be3be701add666774dd7649dfa0616ca3949",
+      "timestamp": 1794928135,
+      "txCount": 4245
     },
     {
-      "height": 976209,
-      "id": "000000000000000000018b3ee1f4ef8f701ea878a1cfbffcb125653d31e526b4",
-      "timestamp": 1794883946,
-      "txCount": 2729
+      "height": 976290,
+      "id": "000000000000000000006c706a800bd543093e4787b2b3cfb5db0dce164fc0c4",
+      "timestamp": 1794927802,
+      "txCount": 5507
     },
     {
-      "height": 976208,
-      "id": "00000000000000000001cffd2cb83f0d4c2dad5a26c9ab29a6ae67809e34bf74",
-      "timestamp": 1794883874,
-      "txCount": 2926
+      "height": 976289,
+      "id": "00000000000000000000f81d7323ae4c7a8bdd5b5d93270730987c0dc9fc73ae",
+      "timestamp": 1794927669,
+      "txCount": 7740
     }
   ],
   "news": [
     {
-      "title": "Former Robinhood engineer pleads guilty to insider trading scheme on Hyperliquid",
-      "link": "https://www.coindesk.com/markets/2026/11/16/former-robinhood-engineer-pleads-guilty-to-insider-trading-scheme-on-hyperliquid",
-      "pubDate": "Mon, 16 Nov 2026 21:51:04 +0000"
+      "title": "Hong Kong, Swift test tokenized deposits as banks chase stablecoin-style speed",
+      "link": "https://www.coindesk.com/business/2026/11/17/hong-kong-swift-test-tokenized-deposits-as-banks-chase-stablecoin-style-speed",
+      "pubDate": "Tue, 17 Nov 2026 15:11:00 +0000"
     },
     {
-      "title": "Bitcoin risks falling below $60,000 as Nvidia earnings threaten to deepen crypto sell-off",
-      "link": "https://www.coindesk.com/markets/2026/11/16/bitcoin-risks-falling-below-usd60-000-as-nvidia-earnings-threaten-to-deepen-crypto-sell-off",
-      "pubDate": "Mon, 16 Nov 2026 20:35:21 +0000"
+      "title": "Ethereum's Glamsterdam upgrade risks breaking up to 15,000 automated apps",
+      "link": "https://www.coindesk.com/tech/2026/11/17/ethereum-s-glamsterdam-upgrade-risks-breaking-up-to-15-000-contracts",
+      "pubDate": "Tue, 17 Nov 2026 13:02:56 +0000"
     },
     {
-      "title": "U.S. Senate Democrats tell CFTC to back off its demand prediction markets defy bans",
-      "link": "https://www.coindesk.com/policy/2026/11/16/u-s-senate-democrats-tell-cftc-to-back-off-its-demand-prediction-markets-defy-bans",
-      "pubDate": "Mon, 16 Nov 2026 18:54:19 +0000"
+      "title": "Decentralized exchange Grvt looks to makes commodity trading more predictable with stable funding perps",
+      "link": "https://www.coindesk.com/markets/2026/11/17/decentralized-exchange-grvt-makes-commodity-trading-more-predictable-with-stable-funding-perps",
+      "pubDate": "Tue, 17 Nov 2026 13:00:00 +0000"
     },
     {
-      "title": "Lighter suspends all withdrawals after $10.4 million crypto exploit",
-      "link": "https://www.coindesk.com/tech/2026/11/16/lighter-suspends-all-withdrawals-after-usd10-4-million-crypto-exploit",
-      "pubDate": "Mon, 16 Nov 2026 16:41:42 +0000"
+      "title": "Crypto's 'casino-chips' are disappearing, adding to pain from spot ETF outflows",
+      "link": "https://www.coindesk.com/daybook-us/2026/11/17/crypto-s-casino-chips-are-disappearing-adding-to-pain-from-spot-etf-outflows",
+      "pubDate": "Tue, 17 Nov 2026 12:16:53 +0000"
     },
     {
-      "title": "Brazil's central bank faces backlash over stablecoin money laundering remarks",
-      "link": "https://www.coindesk.com/business/2026/11/16/brazil-s-central-bank-faces-backlash-over-stablecoin-money-laundering-remarks",
-      "pubDate": "Mon, 16 Nov 2026 15:54:11 +0000"
+      "title": "Ex-OpenAI researcher fund dumps bitcoin miners, cuts IREN 94% after portfolio slump",
+      "link": "https://www.coindesk.com/business/2026/11/17/ex-openai-researcher-fund-dumps-bitcoin-miners-cuts-iren-94-after-portfolio-slump",
+      "pubDate": "Tue, 17 Nov 2026 12:00:55 +0000"
     },
     {
-      "title": "German parliament proposes crypto seizures without criminal charges",
-      "link": "https://www.coindesk.com/policy/2026/11/16/german-parliament-proposes-crypto-seizures-without-criminal-charges",
-      "pubDate": "Mon, 16 Nov 2026 15:44:59 +0000"
+      "title": "Bitcoin remains penned in near $64,000 even as ETF outflow streak ends",
+      "link": "https://www.coindesk.com/markets/2026/11/17/bitcoin-remains-penned-in-near-usd64-000-even-as-etf-outflow-streak-ends",
+      "pubDate": "Tue, 17 Nov 2026 11:36:07 +0000"
     },
     {
-      "title": "Solana drops ‘beta’ label after more than six years",
-      "link": "https://www.coindesk.com/tech/2026/11/16/solana-drops-beta-label-after-more-than-six-years",
-      "pubDate": "Mon, 16 Nov 2026 13:03:16 +0000"
+      "title": "Solana Foundation takes majority stake in crypto data provider CoinGecko",
+      "link": "https://www.coindesk.com/business/2026/11/17/solana-foundation-takes-majority-stake-in-crypto-data-provider-coingecko",
+      "pubDate": "Tue, 17 Nov 2026 11:29:51 +0000"
     },
     {
-      "title": "Old crypto feud reignites: Why OKX's Star Xu blames Binance for two years of October crashes",
-      "link": "https://www.coindesk.com/markets/2026/11/16/bitcoin-s-slide-reopens-an-old-feud-between-crypto-s-most-powerful-founders",
-      "pubDate": "Mon, 16 Nov 2026 12:55:46 +0000"
+      "title": "New DeFi-yield generation targets ‘scam-like’ bank accounts that keep all the interest",
+      "link": "https://www.coindesk.com/business/2026/11/16/new-defi-yield-generation-targets-scam-like-bank-accounts-that-keep-all-the-interest",
+      "pubDate": "Tue, 17 Nov 2026 11:25:58 +0000"
     },
     {
-      "title": "Bitcoin was supposed to gain as AI faltered, but it crashed. Here's why.",
-      "link": "https://www.coindesk.com/daybook-us/2026/11/16/bitcoin-was-supposed-to-gain-as-ai-faltered-but-it-crashed-here-s-why",
-      "pubDate": "Mon, 16 Nov 2026 12:09:00 +0000"
+      "title": "Fed Governor Michael Barr warns AI agents could trigger bank runs in minutes",
+      "link": "https://www.coindesk.com/business/2026/11/17/fed-governor-michael-barr-warns-ai-agents-could-trigger-bank-runs-in-minutes",
+      "pubDate": "Tue, 17 Nov 2026 10:48:12 +0000"
     },
     {
-      "title": "Singapore, Germany test cross-border payments to reduce settlement risk",
-      "link": "https://www.coindesk.com/business/2026/11/16/singapore-germany-test-cross-border-payments-to-reduce-settlement-risk",
-      "pubDate": "Mon, 16 Nov 2026 11:47:12 +0000"
+      "title": "Live updates: Bitcoin gives up small gains as stocks again head lower",
+      "link": "https://www.coindesk.com/business/2026/11/17/live-updates-bitcoin-holds-near-usd64-000-as-tech-slides-ahead-of-nvidia-earnings",
+      "pubDate": "Tue, 17 Nov 2026 10:33:26 +0000"
     },
     {
-      "title": "Bitcoin slips after rebounding from July 14 low that triggered $2 billion of liquidations",
-      "link": "https://www.coindesk.com/markets/2026/11/16/bitcoin-slips-to-usd64-000-after-usd2-billion-weekend-flush",
-      "pubDate": "Mon, 16 Nov 2026 11:03:14 +0000"
+      "title": "Hackers plant crypto-stealing code on 178 major websites, including HSBC and Ledger",
+      "link": "https://www.coindesk.com/tech/2026/11/17/hackers-planted-crypto-stealing-code-on-178-organizations-sites-including-hsbc-bbc-and-ledger",
+      "pubDate": "Tue, 17 Nov 2026 10:22:18 +0000"
     },
     {
-      "title": "Live updates: Bitcoin trades near $65,000 as Nasdaq closes with 2.5% loss",
-      "link": "https://www.coindesk.com/tech/2026/11/16/live-news-bitcoin-posts-sixth-weekly-loss-as-tech-stocks-and-metals-slide",
-      "pubDate": "Mon, 16 Nov 2026 09:34:18 +0000"
+      "title": "Nvidia faces first earnings test without Jensen Huang as AI stocks slide",
+      "link": "https://www.coindesk.com/markets/2026/11/17/nvidia-faces-first-earnings-test-without-jensen-huang-as-ai-stocks-slide",
+      "pubDate": "Tue, 17 Nov 2026 10:17:01 +0000"
     }
   ]
 }
