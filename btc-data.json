@@ -1,19 +1,15 @@
 {
-  "fetchedAt": "2026-11-17T15:54:21.566Z",
+  "fetchedAt": "2026-11-18T00:54:33.241Z",
   "price": {
-    "usd": 63625,
-    "time": 1794930609
+    "usd": 64709,
+    "time": 1794963007
   },
   "moves": {
-    "d1": -1.8751631559048354,
-    "d7": -13.695091800345772,
-    "d30": -22.42706224488914
+    "d1": -0.27803129593065856,
+    "d7": -12.52513482115133,
+    "d30": -20.966361627131658
   },
   "history90d": [
-    {
-      "date": "2026-08-20",
-      "close": 69291.0104297816
-    },
     {
       "date": "2026-08-21",
       "close": 73020.94563440893
@@ -371,61 +367,95 @@
       "close": 64840.87214441952
     },
     {
-      "date": "2026-11-17",
-      "close": 63434.17884612337
+      "date": "2026-11-18",
+      "close": 64889.41287553966
+    },
+    {
+      "date": "2026-11-18",
+      "close": 64680.96401604865
     }
   ],
   "blocks": [
     {
-      "height": 976296,
-      "id": "0000000000000000000142eec6d704103f894a19f060f414647546037b95d718",
-      "timestamp": 1794929857,
-      "txCount": 6968
+      "height": 976353,
+      "id": "0000000000000000000009d99bbb3113a1f912b7f9756fc078277545aef58e27",
+      "timestamp": 1794962067,
+      "txCount": 383
     },
     {
-      "height": 976295,
-      "id": "0000000000000000000205878934a53cc46578fceeeb112d7891d7d2923bcbc9",
-      "timestamp": 1794929508,
-      "txCount": 5232
+      "height": 976352,
+      "id": "000000000000000000012a5e7a7988bfcbf9c61fe391da78a598ff20e1f55384",
+      "timestamp": 1794961826,
+      "txCount": 7213
     },
     {
-      "height": 976294,
-      "id": "00000000000000000000202a236ab9e7fac791960c83686054eb5d5baa63688b",
-      "timestamp": 1794929057,
-      "txCount": 5728
+      "height": 976351,
+      "id": "000000000000000000002cb20c099d30bda23fd341962277bb5117e40196c4dc",
+      "timestamp": 1794961794,
+      "txCount": 7959
     },
     {
-      "height": 976293,
-      "id": "000000000000000000013519768592e430a736bd03d8c04fa4e912f0862df3f1",
-      "timestamp": 1794928738,
-      "txCount": 1294
+      "height": 976350,
+      "id": "00000000000000000000bf2a865ae702961511b5cdc4bc850868397f4f7862b6",
+      "timestamp": 1794961750,
+      "txCount": 7617
     },
     {
-      "height": 976292,
-      "id": "000000000000000000004479287b9f561d3bad27229070b9809799839f961cea",
-      "timestamp": 1794928691,
-      "txCount": 5578
+      "height": 976349,
+      "id": "00000000000000000000d49b9f62559e93bbe853326c1315dfac1875bba4dcf9",
+      "timestamp": 1794961739,
+      "txCount": 2744
     },
     {
-      "height": 976291,
-      "id": "00000000000000000001aeda6639be3be701add666774dd7649dfa0616ca3949",
-      "timestamp": 1794928135,
-      "txCount": 4245
+      "height": 976348,
+      "id": "0000000000000000000129fbf7d2bbb65e117622e610ff847e1b65705b8c0d71",
+      "timestamp": 1794961385,
+      "txCount": 3117
     },
     {
-      "height": 976290,
-      "id": "000000000000000000006c706a800bd543093e4787b2b3cfb5db0dce164fc0c4",
-      "timestamp": 1794927802,
-      "txCount": 5507
+      "height": 976347,
+      "id": "000000000000000000016478fe9a40042f81974dd95de7ff1a0713dedcef7041",
+      "timestamp": 1794960717,
+      "txCount": 3687
     },
     {
-      "height": 976289,
-      "id": "00000000000000000000f81d7323ae4c7a8bdd5b5d93270730987c0dc9fc73ae",
-      "timestamp": 1794927669,
-      "txCount": 7740
+      "height": 976346,
+      "id": "00000000000000000001b4710e81d155995887438516eda787f0c2526af91aff",
+      "timestamp": 1794958771,
+      "txCount": 3713
     }
   ],
   "news": [
+    {
+      "title": "CFTC nominee questions public benefit of prediction markets as legal fight grows",
+      "link": "https://www.coindesk.com/policy/2026/11/17/nominee-says-u-s-cftc-must-think-hard-about-public-benefit-of-prediction-markets",
+      "pubDate": "Wed, 18 Nov 2026 00:46:25 +0000"
+    },
+    {
+      "title": "Nvidia tops estimates, issues strong guidance; shares rise",
+      "link": "https://www.coindesk.com/markets/2026/11/17/nvidia-tops-estimates-issues-strong-guidance-adds-usd150-billion-to-buyback-authorization",
+      "pubDate": "Tue, 17 Nov 2026 21:25:50 +0000"
+    },
+    {
+      "title": "Coinbase CEO says AI agents will account for '99.9%' of transactions within a decade",
+      "link": "https://www.coindesk.com/markets/2026/11/17/coinbase-ceo-says-ai-agents-will-account-for-99-9-of-transactions-within-a-decade",
+      "pubDate": "Tue, 17 Nov 2026 19:45:57 +0000"
+    },
+    {
+      "title": "Predictions platform Kalshi complies with order to halt Trump mention contracts",
+      "link": "https://www.coindesk.com/policy/2026/11/17/predictions-platform-kalshi-complies-with-order-to-halt-trump-mention-contracts",
+      "pubDate": "Tue, 17 Nov 2026 19:16:00 +0000"
+    },
+    {
+      "title": "Druckenmiller says he is short copper, warns of economic weakness in 2027",
+      "link": "https://www.coindesk.com/business/2026/11/17/druckenmiller-says-he-is-short-copper-warns-of-economic-weakness-in-2027",
+      "pubDate": "Tue, 17 Nov 2026 17:42:40 +0000"
+    },
+    {
+      "title": "U.S. Fed Governor Waller pitches keeping central bank at the center of tokenization",
+      "link": "https://www.coindesk.com/policy/2026/11/17/u-s-fed-governor-waller-pitches-keeping-central-bank-at-the-center-of-tokenization",
+      "pubDate": "Tue, 17 Nov 2026 17:00:05 +0000"
+    },
     {
       "title": "Hong Kong, Swift test tokenized deposits as banks chase stablecoin-style speed",
       "link": "https://www.coindesk.com/business/2026/11/17/hong-kong-swift-test-tokenized-deposits-as-banks-chase-stablecoin-style-speed",
@@ -455,36 +485,6 @@
       "title": "Bitcoin remains penned in near $64,000 even as ETF outflow streak ends",
       "link": "https://www.coindesk.com/markets/2026/11/17/bitcoin-remains-penned-in-near-usd64-000-even-as-etf-outflow-streak-ends",
       "pubDate": "Tue, 17 Nov 2026 11:36:07 +0000"
-    },
-    {
-      "title": "Solana Foundation takes majority stake in crypto data provider CoinGecko",
-      "link": "https://www.coindesk.com/business/2026/11/17/solana-foundation-takes-majority-stake-in-crypto-data-provider-coingecko",
-      "pubDate": "Tue, 17 Nov 2026 11:29:51 +0000"
-    },
-    {
-      "title": "New DeFi-yield generation targets ‘scam-like’ bank accounts that keep all the interest",
-      "link": "https://www.coindesk.com/business/2026/11/16/new-defi-yield-generation-targets-scam-like-bank-accounts-that-keep-all-the-interest",
-      "pubDate": "Tue, 17 Nov 2026 11:25:58 +0000"
-    },
-    {
-      "title": "Fed Governor Michael Barr warns AI agents could trigger bank runs in minutes",
-      "link": "https://www.coindesk.com/business/2026/11/17/fed-governor-michael-barr-warns-ai-agents-could-trigger-bank-runs-in-minutes",
-      "pubDate": "Tue, 17 Nov 2026 10:48:12 +0000"
-    },
-    {
-      "title": "Live updates: Bitcoin gives up small gains as stocks again head lower",
-      "link": "https://www.coindesk.com/business/2026/11/17/live-updates-bitcoin-holds-near-usd64-000-as-tech-slides-ahead-of-nvidia-earnings",
-      "pubDate": "Tue, 17 Nov 2026 10:33:26 +0000"
-    },
-    {
-      "title": "Hackers plant crypto-stealing code on 178 major websites, including HSBC and Ledger",
-      "link": "https://www.coindesk.com/tech/2026/11/17/hackers-planted-crypto-stealing-code-on-178-organizations-sites-including-hsbc-bbc-and-ledger",
-      "pubDate": "Tue, 17 Nov 2026 10:22:18 +0000"
-    },
-    {
-      "title": "Nvidia faces first earnings test without Jensen Huang as AI stocks slide",
-      "link": "https://www.coindesk.com/markets/2026/11/17/nvidia-faces-first-earnings-test-without-jensen-huang-as-ai-stocks-slide",
-      "pubDate": "Tue, 17 Nov 2026 10:17:01 +0000"
     }
   ]
 }
