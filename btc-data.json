@@ -1,13 +1,13 @@
 {
-  "fetchedAt": "2026-11-18T11:30:59.890Z",
+  "fetchedAt": "2026-11-18T20:25:29.633Z",
   "price": {
-    "usd": 64175,
-    "time": 1795001106
+    "usd": 62667,
+    "time": 1795033207
   },
   "moves": {
-    "d1": -1.100969856068712,
-    "d7": -13.247006245613235,
-    "d30": -21.61857326525173
+    "d1": -3.4249236925634197,
+    "d7": -15.285549519187292,
+    "d30": -23.46039938938107
   },
   "history90d": [
     {
@@ -372,60 +372,105 @@
     },
     {
       "date": "2026-11-18",
-      "close": 64164.015288042654
+      "close": 62521.31133440337
     }
   ],
   "blocks": [
     {
-      "height": 976424,
-      "id": "0000000000000000000007c854d44fa77184d26838b57cdcec9273f6b8491b6b",
-      "timestamp": 1795001372,
-      "txCount": 8217
+      "height": 976477,
+      "id": "00000000000000000001b4dd5c0614901b4f97bebaaaa04302d115366e847a14",
+      "timestamp": 1795032249,
+      "txCount": 7682
     },
     {
-      "height": 976423,
-      "id": "000000000000000000013203bc670942a15e08c6ed7c2b46852f04a083850308",
-      "timestamp": 1795001157,
-      "txCount": 12
+      "height": 976476,
+      "id": "00000000000000000000ff42dc87df31d79bcb6b140ed75466532cc24edb2a9c",
+      "timestamp": 1795032384,
+      "txCount": 6634
     },
     {
-      "height": 976422,
-      "id": "00000000000000000001ce3813afaadf33a8413d0e6e8af9ce445ba0c145d129",
-      "timestamp": 1795001149,
-      "txCount": 4233
+      "height": 976475,
+      "id": "000000000000000000005d8ead419c032ea248e6373a774714d0636a2ab77612",
+      "timestamp": 1795032056,
+      "txCount": 7369
     },
     {
-      "height": 976421,
-      "id": "000000000000000000008ac8a1737825972b36841f162aa6ca058f38cb3ef92e",
-      "timestamp": 1795001012,
-      "txCount": 2770
+      "height": 976474,
+      "id": "00000000000000000001c0403b1d9da1ad8fc4ecd1c33c6540b051fcac54e779",
+      "timestamp": 1795031991,
+      "txCount": 2885
     },
     {
-      "height": 976420,
-      "id": "00000000000000000001aa3233a6ab46a968e7be411246f49f6d11cfa125a8c4",
-      "timestamp": 1794999698,
-      "txCount": 68
+      "height": 976473,
+      "id": "00000000000000000001fab10e31c967d3efb3abb4f6b26b2ffc77ff9ce45b08",
+      "timestamp": 1795031771,
+      "txCount": 1978
     },
     {
-      "height": 976419,
-      "id": "00000000000000000001f06d2cd4506e50a309270dda242114a29cd363672ace",
-      "timestamp": 1794999671,
-      "txCount": 4404
+      "height": 976472,
+      "id": "000000000000000000004a8fd1e1139e2fa2713d8eae0facf9ef3767c31568ec",
+      "timestamp": 1795031712,
+      "txCount": 3400
     },
     {
-      "height": 976418,
-      "id": "000000000000000000002185b4607b32ffbf4cc70873fc0decbd0fb44d73a4ad",
-      "timestamp": 1794999045,
-      "txCount": 7117
+      "height": 976471,
+      "id": "0000000000000000000189f1d46dae47bb0b70a39941f1a874c25d3507cdc540",
+      "timestamp": 1795031018,
+      "txCount": 3348
     },
     {
-      "height": 976417,
-      "id": "0000000000000000000147722be75704e996e9617efc4fc1a874f8330f4a3122",
-      "timestamp": 1794998896,
-      "txCount": 5519
+      "height": 976470,
+      "id": "000000000000000000013eabcea1a3acdd92b3d2806b9144f3eeab9efcd598eb",
+      "timestamp": 1795029885,
+      "txCount": 2476
     }
   ],
   "news": [
+    {
+      "title": "A $1.5 billion crypto startup is taking on Hyperliquid with a Wall Street playbook",
+      "link": "https://www.coindesk.com/business/2026/11/18/a-usd1-5-billion-crypto-startup-is-taking-on-hyperliquid-with-a-wall-street-playbook",
+      "pubDate": "Wed, 18 Nov 2026 17:22:03 +0000"
+    },
+    {
+      "title": "Crypto Long & Short: Crypto exchanges shouldn’t double as the vault",
+      "link": "https://www.coindesk.com/coindesk-indices/2026/11/18/crypto-long-and-short-crypto-exchanges-shouldn-t-double-as-the-vault",
+      "pubDate": "Wed, 18 Nov 2026 16:02:54 +0000"
+    },
+    {
+      "title": "German judge proposes dropping Movie2k case if operator hands over $2.56 billion in bitcoin",
+      "link": "https://www.coindesk.com/business/2026/11/18/german-judge-proposes-dropping-movie2k-case-if-operator-hands-over-usd2-56-billion-in-bitcoin",
+      "pubDate": "Wed, 18 Nov 2026 15:38:38 +0000"
+    },
+    {
+      "title": "Hong Kong wants banks to use AI to catch crypto crime before money disappears",
+      "link": "https://www.coindesk.com/business/2026/11/18/hong-kong-wants-banks-to-use-ai-to-catch-crypto-crime-before-money-disappears",
+      "pubDate": "Wed, 18 Nov 2026 15:23:18 +0000"
+    },
+    {
+      "title": "Bitcoin miner MARA raises $185 million in debt after selling $1 billion BTC to repay loans",
+      "link": "https://www.coindesk.com/markets/2026/11/18/bitcoin-miner-mara-raises-usd185-million-in-debt-after-selling-usd1-billion-btc-to-repay-loans",
+      "pubDate": "Wed, 18 Nov 2026 12:53:34 +0000"
+    },
+    {
+      "title": "Bullish beats revenue estimates as institutional services offset sluggish spot crypto volumes",
+      "link": "https://www.coindesk.com/markets/2026/11/18/bullish-beats-revenue-estimates-as-institutional-services-offset-sluggish-spot-crypto-volumes",
+      "pubDate": "Wed, 18 Nov 2026 12:41:09 +0000"
+    },
+    {
+      "title": "Circle turns to DBS as banks build rival digital payment systems across Asia",
+      "link": "https://www.coindesk.com/business/2026/11/18/circle-turns-to-dbs-as-banks-build-rival-digital-payment-systems-across-asia",
+      "pubDate": "Wed, 18 Nov 2026 12:25:14 +0000"
+    },
+    {
+      "title": "Blaming Anthropic’s IPO for bitcoin’s slide is 'easy to believe,' but flawed, analysts say",
+      "link": "https://www.coindesk.com/daybook-us/2026/11/18/blaming-anthropic-s-ipo-for-bitcoin-s-slide-is-easy-to-believe-but-flawed-analysts-say",
+      "pubDate": "Wed, 18 Nov 2026 12:15:00 +0000"
+    },
+    {
+      "title": "Bitcoin drops as Nvidia earnings report drives stock index futures higher",
+      "link": "https://www.coindesk.com/markets/2026/11/18/bitcoin-drops-as-nvidia-earnings-report-drives-stock-index-futures-higher",
+      "pubDate": "Wed, 18 Nov 2026 11:42:52 +0000"
+    },
     {
       "title": "Bitcoin outpaces gold even as both assets tumble ahead of a likely Fed rate hike",
       "link": "https://www.coindesk.com/markets/2026/11/18/bitcoin-outpaces-gold-even-as-both-assets-tumble-ahead-of-a-likely-fed-rate-hike",
@@ -440,51 +485,6 @@
       "title": "Hyundai tests AI agent commerce on JPMorgan’s Kinexys blockchain",
       "link": "https://www.coindesk.com/business/2026/11/18/hyundai-tests-ai-agent-commerce-on-jpmorgan-s-kinexys-blockchain",
       "pubDate": "Wed, 18 Nov 2026 09:14:15 +0000"
-    },
-    {
-      "title": "Google finds self-running AI hacking tool with Russian comments in its files",
-      "link": "https://www.coindesk.com/tech/2026/11/18/google-finds-self-running-ai-hacking-tool-with-russian-comments-in-its-files",
-      "pubDate": "Wed, 18 Nov 2026 07:37:59 +0000"
-    },
-    {
-      "title": "Live updates: Bitcoin stuck near $65,000 as popular 'basis trade' returns dry up",
-      "link": "https://www.coindesk.com/business/2026/11/18/live-updates-bitcoin-stuck-near-usd65-000-as-popular-basis-trade-returns-dry-up",
-      "pubDate": "Wed, 18 Nov 2026 07:27:48 +0000"
-    },
-    {
-      "title": "U.S. judge says Ethereum has ‘no terms of use,’ clears MIT brothers of $25 million fraud",
-      "link": "https://www.coindesk.com/policy/2026/11/18/u-s-judge-says-ethereum-has-no-terms-of-use-clears-mit-brothers-of-usd25-million-fraud",
-      "pubDate": "Wed, 18 Nov 2026 05:30:10 +0000"
-    },
-    {
-      "title": "Bitcoin's 12% slide through key support looks scary, but history says give it 3 months.",
-      "link": "https://www.coindesk.com/markets/2026/11/18/bitcoin-s-rare-12-crash-through-its-200-week-average-has-a-bullish-track-record",
-      "pubDate": "Wed, 18 Nov 2026 04:34:21 +0000"
-    },
-    {
-      "title": "XRP whales moved $270 million during the selloff. The coins didn’t go to exchanges",
-      "link": "https://www.coindesk.com/markets/2026/11/18/xrp-whales-moved-usd270-million-during-the-selloff-the-coins-didn-t-go-to-exchanges",
-      "pubDate": "Wed, 18 Nov 2026 04:28:37 +0000"
-    },
-    {
-      "title": "CFTC nominee questions public benefit of prediction markets as legal fight grows",
-      "link": "https://www.coindesk.com/policy/2026/11/17/nominee-says-u-s-cftc-must-think-hard-about-public-benefit-of-prediction-markets",
-      "pubDate": "Wed, 18 Nov 2026 00:46:25 +0000"
-    },
-    {
-      "title": "Nvidia shares rise on earnings beat, raised outlook despite leadership uncertainty",
-      "link": "https://www.coindesk.com/markets/2026/11/17/nvidia-tops-estimates-issues-strong-guidance-adds-usd150-billion-to-buyback-authorization",
-      "pubDate": "Tue, 17 Nov 2026 21:25:50 +0000"
-    },
-    {
-      "title": "Coinbase CEO says AI agents will account for '99.9%' of transactions within a decade",
-      "link": "https://www.coindesk.com/markets/2026/11/17/coinbase-ceo-says-ai-agents-will-account-for-99-9-of-transactions-within-a-decade",
-      "pubDate": "Tue, 17 Nov 2026 19:45:57 +0000"
-    },
-    {
-      "title": "Predictions platform Kalshi complies with order to halt Trump mention contracts",
-      "link": "https://www.coindesk.com/policy/2026/11/17/predictions-platform-kalshi-complies-with-order-to-halt-trump-mention-contracts",
-      "pubDate": "Tue, 17 Nov 2026 19:16:00 +0000"
     }
   ]
 }
