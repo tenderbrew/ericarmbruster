@@ -1,19 +1,15 @@
 {
-  "fetchedAt": "2026-11-18T20:25:29.633Z",
+  "fetchedAt": "2026-11-19T02:30:40.872Z",
   "price": {
-    "usd": 62667,
-    "time": 1795033207
+    "usd": 62719,
+    "time": 1795055107
   },
   "moves": {
-    "d1": -3.4249236925634197,
-    "d7": -15.285549519187292,
-    "d30": -23.46039938938107
+    "d1": -0.44078542092494954,
+    "d7": -12.123779641351417,
+    "d30": -24.38376806815001
   },
   "history90d": [
-    {
-      "date": "2026-08-21",
-      "close": 73020.94563440893
-    },
     {
       "date": "2026-08-22",
       "close": 78317.77716345884
@@ -371,61 +367,75 @@
       "close": 64889.41287553966
     },
     {
-      "date": "2026-11-18",
-      "close": 62521.31133440337
+      "date": "2026-11-19",
+      "close": 62996.68018190857
+    },
+    {
+      "date": "2026-11-19",
+      "close": 62759.72123621217
     }
   ],
   "blocks": [
     {
-      "height": 976477,
-      "id": "00000000000000000001b4dd5c0614901b4f97bebaaaa04302d115366e847a14",
-      "timestamp": 1795032249,
-      "txCount": 7682
+      "height": 976516,
+      "id": "0000000000000000000086fcd23a3539f479870bb5780e534fef68fdaad8cd04",
+      "timestamp": 1795053394,
+      "txCount": 6518
     },
     {
-      "height": 976476,
-      "id": "00000000000000000000ff42dc87df31d79bcb6b140ed75466532cc24edb2a9c",
-      "timestamp": 1795032384,
-      "txCount": 6634
+      "height": 976515,
+      "id": "0000000000000000000158550737eb060e0d9e3366bd1f27a1525f0dbb2ea37c",
+      "timestamp": 1795053058,
+      "txCount": 5217
     },
     {
-      "height": 976475,
-      "id": "000000000000000000005d8ead419c032ea248e6373a774714d0636a2ab77612",
-      "timestamp": 1795032056,
-      "txCount": 7369
+      "height": 976514,
+      "id": "00000000000000000000613a72eae4b7b8936c70dbbfbff6b736589fff2966d6",
+      "timestamp": 1795052645,
+      "txCount": 6871
     },
     {
-      "height": 976474,
-      "id": "00000000000000000001c0403b1d9da1ad8fc4ecd1c33c6540b051fcac54e779",
-      "timestamp": 1795031991,
-      "txCount": 2885
+      "height": 976513,
+      "id": "00000000000000000002112ca09c15e72b965108f0ab033c49c6bf9144f481f5",
+      "timestamp": 1795052453,
+      "txCount": 5314
     },
     {
-      "height": 976473,
-      "id": "00000000000000000001fab10e31c967d3efb3abb4f6b26b2ffc77ff9ce45b08",
-      "timestamp": 1795031771,
-      "txCount": 1978
+      "height": 976512,
+      "id": "00000000000000000000caebc0ad7159c7212bf2ae1d12eb2494c9a47770afd9",
+      "timestamp": 1795052144,
+      "txCount": 6640
     },
     {
-      "height": 976472,
-      "id": "000000000000000000004a8fd1e1139e2fa2713d8eae0facf9ef3767c31568ec",
-      "timestamp": 1795031712,
-      "txCount": 3400
+      "height": 976511,
+      "id": "0000000000000000000032809e4657f01b967329994f216190734c3d13ffe4f8",
+      "timestamp": 1795052017,
+      "txCount": 4765
     },
     {
-      "height": 976471,
-      "id": "0000000000000000000189f1d46dae47bb0b70a39941f1a874c25d3507cdc540",
-      "timestamp": 1795031018,
-      "txCount": 3348
+      "height": 976510,
+      "id": "0000000000000000000150273e58516f8133035c8eb8042251f1d23394a1d8f1",
+      "timestamp": 1795051781,
+      "txCount": 2754
     },
     {
-      "height": 976470,
-      "id": "000000000000000000013eabcea1a3acdd92b3d2806b9144f3eeab9efcd598eb",
-      "timestamp": 1795029885,
-      "txCount": 2476
+      "height": 976509,
+      "id": "000000000000000000012dd0da669d631c949621728a2feec24a039be0ebfc3b",
+      "timestamp": 1795051492,
+      "txCount": 3576
     }
   ],
   "news": [
+    {
+      "title": "Another U.S. appellate court goes against Kalshi, building the industry's legal headwinds",
+      "link": "https://www.coindesk.com/policy/2026/11/18/another-u-s-appellate-court-goes-against-kalshi-building-the-industry-s-legal-headwinds",
+      "pubDate": "Thu, 19 Nov 2026 00:33:46 +0000"
+    },
+    {
+      "title": "Payward, the owner of crypto exchange Kraken, is buying its CEO’s venture capital business, Tribe",
+      "link": "https://www.coindesk.com/business/2026/11/18/payward-the-owner-of-crypto-exchange-kraken-is-buying-its-ceo-s-venture-capital-business-tribe",
+      "pubDate": "Wed, 18 Nov 2026 22:30:00 +0000"
+    },
     {
       "title": "A $1.5 billion crypto startup is taking on Hyperliquid with a Wall Street playbook",
       "link": "https://www.coindesk.com/business/2026/11/18/a-usd1-5-billion-crypto-startup-is-taking-on-hyperliquid-with-a-wall-street-playbook",
@@ -475,16 +485,6 @@
       "title": "Bitcoin outpaces gold even as both assets tumble ahead of a likely Fed rate hike",
       "link": "https://www.coindesk.com/markets/2026/11/18/bitcoin-outpaces-gold-even-as-both-assets-tumble-ahead-of-a-likely-fed-rate-hike",
       "pubDate": "Wed, 18 Nov 2026 10:58:36 +0000"
-    },
-    {
-      "title": "Strategy stock could plunge 76% to $23, chart analyst warns",
-      "link": "https://www.coindesk.com/markets/2026/11/18/strategy-stock-could-crash-76-to-usd23-chart-analyst-warns",
-      "pubDate": "Wed, 18 Nov 2026 09:31:41 +0000"
-    },
-    {
-      "title": "Hyundai tests AI agent commerce on JPMorgan’s Kinexys blockchain",
-      "link": "https://www.coindesk.com/business/2026/11/18/hyundai-tests-ai-agent-commerce-on-jpmorgan-s-kinexys-blockchain",
-      "pubDate": "Wed, 18 Nov 2026 09:14:15 +0000"
     }
   ]
 }
