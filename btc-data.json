@@ -1,13 +1,13 @@
 {
-  "fetchedAt": "2026-11-19T02:30:40.872Z",
+  "fetchedAt": "2026-11-19T11:30:05.686Z",
   "price": {
-    "usd": 62719,
-    "time": 1795055107
+    "usd": 63730,
+    "time": 1795087508
   },
   "moves": {
-    "d1": -0.44078542092494954,
-    "d7": -12.123779641351417,
-    "d30": -24.38376806815001
+    "d1": 1.1640610520648131,
+    "d7": -10.7072573947819,
+    "d30": -23.16487091604139
   },
   "history90d": [
     {
@@ -372,60 +372,105 @@
     },
     {
       "date": "2026-11-19",
-      "close": 62759.72123621217
+      "close": 63802.71638963609
     }
   ],
   "blocks": [
     {
-      "height": 976516,
-      "id": "0000000000000000000086fcd23a3539f479870bb5780e534fef68fdaad8cd04",
-      "timestamp": 1795053394,
-      "txCount": 6518
+      "height": 976577,
+      "id": "000000000000000000015dd0f9eb501e6992f61b87874590f7626cd0fe5a725a",
+      "timestamp": 1795087839,
+      "txCount": 2638
     },
     {
-      "height": 976515,
-      "id": "0000000000000000000158550737eb060e0d9e3366bd1f27a1525f0dbb2ea37c",
-      "timestamp": 1795053058,
-      "txCount": 5217
+      "height": 976576,
+      "id": "000000000000000000012e56d10c32013efd7f1bd4caa4db3197f446af837e2a",
+      "timestamp": 1795087535,
+      "txCount": 3192
     },
     {
-      "height": 976514,
-      "id": "00000000000000000000613a72eae4b7b8936c70dbbfbff6b736589fff2966d6",
-      "timestamp": 1795052645,
-      "txCount": 6871
+      "height": 976575,
+      "id": "00000000000000000000c79b9e8b19d02a68807b9eddf8dee7ca2c6dbaeafebf",
+      "timestamp": 1795086433,
+      "txCount": 7397
     },
     {
-      "height": 976513,
-      "id": "00000000000000000002112ca09c15e72b965108f0ab033c49c6bf9144f481f5",
-      "timestamp": 1795052453,
-      "txCount": 5314
+      "height": 976574,
+      "id": "00000000000000000001d66bcc4de374b45d8c73ace68ae2ef2001f89f5178a8",
+      "timestamp": 1795086283,
+      "txCount": 6496
     },
     {
-      "height": 976512,
-      "id": "00000000000000000000caebc0ad7159c7212bf2ae1d12eb2494c9a47770afd9",
-      "timestamp": 1795052144,
-      "txCount": 6640
+      "height": 976573,
+      "id": "00000000000000000001d4d302456cec2f5474e1d488192bb3681510eefaade2",
+      "timestamp": 1795086270,
+      "txCount": 5917
     },
     {
-      "height": 976511,
-      "id": "0000000000000000000032809e4657f01b967329994f216190734c3d13ffe4f8",
-      "timestamp": 1795052017,
-      "txCount": 4765
+      "height": 976572,
+      "id": "00000000000000000000a77d5263a7d2aa3090de182f61e8fc32068ef8a50266",
+      "timestamp": 1795086132,
+      "txCount": 5076
     },
     {
-      "height": 976510,
-      "id": "0000000000000000000150273e58516f8133035c8eb8042251f1d23394a1d8f1",
-      "timestamp": 1795051781,
-      "txCount": 2754
+      "height": 976571,
+      "id": "00000000000000000001f6e6ed4c90a9754511f2df43e9c9d1dba7b55c6b83c5",
+      "timestamp": 1795085632,
+      "txCount": 4338
     },
     {
-      "height": 976509,
-      "id": "000000000000000000012dd0da669d631c949621728a2feec24a039be0ebfc3b",
-      "timestamp": 1795051492,
-      "txCount": 3576
+      "height": 976570,
+      "id": "0000000000000000000168d602306d7fcfcc4dd99cb17c43c33f8b4dad1857f2",
+      "timestamp": 1795085348,
+      "txCount": 5877
     }
   ],
   "news": [
+    {
+      "title": "Anthropic’s $107 billion raise set to top SpaceX’s IPO as tokenized stocks gain traction",
+      "link": "https://www.coindesk.com/markets/2026/11/19/anthropic-s-usd107-billion-raise-set-to-surpass-spacex-s-ipo-haul",
+      "pubDate": "Thu, 19 Nov 2026 11:06:13 +0000"
+    },
+    {
+      "title": "‘Highly advanced’ quantum computers could crack financial encryption in five years",
+      "link": "https://www.coindesk.com/tech/2026/11/19/banks-and-blockchains-lag-on-quantum-defense-as-encryption-risks-loom-watchdog-warns",
+      "pubDate": "Thu, 19 Nov 2026 10:55:29 +0000"
+    },
+    {
+      "title": "Live updates: Bitcoin nears $64,000 as Anthropic’s record IPO lifts tech",
+      "link": "https://www.coindesk.com/markets/2026/11/19/live-updates-bitcoin-nears-usd64-000-as-anthropic-s-record-ipo-lifts-tech",
+      "pubDate": "Thu, 19 Nov 2026 10:48:26 +0000"
+    },
+    {
+      "title": "Singapore settles $77.5 million tokenized bill sale in local CBDC",
+      "link": "https://www.coindesk.com/business/2026/11/19/singapore-settles-usd77-5-million-tokenized-bill-sale-in-local-cbdc",
+      "pubDate": "Thu, 19 Nov 2026 10:39:36 +0000"
+    },
+    {
+      "title": "Roundhill scraps Solana and XRP income ETFs as rival funds indicate low demand",
+      "link": "https://www.coindesk.com/markets/2026/11/19/roundhill-scraps-solana-and-xrp-income-etfs-as-rival-funds-attract-just-usd12-million",
+      "pubDate": "Thu, 19 Nov 2026 10:22:12 +0000"
+    },
+    {
+      "title": "Fed's rate hike push may be a mistake. Here's why",
+      "link": "https://www.coindesk.com/markets/2026/11/19/fed-s-push-for-more-rate-hikes-leans-on-backward-looking-data-as-gas-prices-slide-analysts-argue",
+      "pubDate": "Thu, 19 Nov 2026 06:23:19 +0000"
+    },
+    {
+      "title": "Ethereum block builders received the most in a $3.4 million vault hack, data shows",
+      "link": "https://www.coindesk.com/tech/2026/11/19/ethereum-block-builders-received-the-most-in-a-usd3-4-million-vault-hack-data-shows",
+      "pubDate": "Thu, 19 Nov 2026 05:39:06 +0000"
+    },
+    {
+      "title": "Bitcoin miner that sold its last BTC warns it may run short of cash for $1.2 billion AI deal",
+      "link": "https://www.coindesk.com/markets/2026/11/19/bitcoin-miner-that-sold-its-last-btc-warns-it-may-run-short-of-cash-for-usd1-2-billion-ai-deal",
+      "pubDate": "Thu, 19 Nov 2026 04:46:10 +0000"
+    },
+    {
+      "title": "CZ says tokenized Anthropic is coming to BNB Chain on IPO day",
+      "link": "https://www.coindesk.com/markets/2026/11/19/cz-says-tokenized-anthropic-is-coming-to-bnb-chain-on-ipo-day",
+      "pubDate": "Thu, 19 Nov 2026 03:40:48 +0000"
+    },
     {
       "title": "Another U.S. appellate court goes against Kalshi, building the industry's legal headwinds",
       "link": "https://www.coindesk.com/policy/2026/11/18/another-u-s-appellate-court-goes-against-kalshi-building-the-industry-s-legal-headwinds",
@@ -440,51 +485,6 @@
       "title": "A $1.5 billion crypto startup is taking on Hyperliquid with a Wall Street playbook",
       "link": "https://www.coindesk.com/business/2026/11/18/a-usd1-5-billion-crypto-startup-is-taking-on-hyperliquid-with-a-wall-street-playbook",
       "pubDate": "Wed, 18 Nov 2026 17:22:03 +0000"
-    },
-    {
-      "title": "Crypto Long & Short: Crypto exchanges shouldn’t double as the vault",
-      "link": "https://www.coindesk.com/coindesk-indices/2026/11/18/crypto-long-and-short-crypto-exchanges-shouldn-t-double-as-the-vault",
-      "pubDate": "Wed, 18 Nov 2026 16:02:54 +0000"
-    },
-    {
-      "title": "German judge proposes dropping Movie2k case if operator hands over $2.56 billion in bitcoin",
-      "link": "https://www.coindesk.com/business/2026/11/18/german-judge-proposes-dropping-movie2k-case-if-operator-hands-over-usd2-56-billion-in-bitcoin",
-      "pubDate": "Wed, 18 Nov 2026 15:38:38 +0000"
-    },
-    {
-      "title": "Hong Kong wants banks to use AI to catch crypto crime before money disappears",
-      "link": "https://www.coindesk.com/business/2026/11/18/hong-kong-wants-banks-to-use-ai-to-catch-crypto-crime-before-money-disappears",
-      "pubDate": "Wed, 18 Nov 2026 15:23:18 +0000"
-    },
-    {
-      "title": "Bitcoin miner MARA raises $185 million in debt after selling $1 billion BTC to repay loans",
-      "link": "https://www.coindesk.com/markets/2026/11/18/bitcoin-miner-mara-raises-usd185-million-in-debt-after-selling-usd1-billion-btc-to-repay-loans",
-      "pubDate": "Wed, 18 Nov 2026 12:53:34 +0000"
-    },
-    {
-      "title": "Bullish beats revenue estimates as institutional services offset sluggish spot crypto volumes",
-      "link": "https://www.coindesk.com/markets/2026/11/18/bullish-beats-revenue-estimates-as-institutional-services-offset-sluggish-spot-crypto-volumes",
-      "pubDate": "Wed, 18 Nov 2026 12:41:09 +0000"
-    },
-    {
-      "title": "Circle turns to DBS as banks build rival digital payment systems across Asia",
-      "link": "https://www.coindesk.com/business/2026/11/18/circle-turns-to-dbs-as-banks-build-rival-digital-payment-systems-across-asia",
-      "pubDate": "Wed, 18 Nov 2026 12:25:14 +0000"
-    },
-    {
-      "title": "Blaming Anthropic’s IPO for bitcoin’s slide is 'easy to believe,' but flawed, analysts say",
-      "link": "https://www.coindesk.com/daybook-us/2026/11/18/blaming-anthropic-s-ipo-for-bitcoin-s-slide-is-easy-to-believe-but-flawed-analysts-say",
-      "pubDate": "Wed, 18 Nov 2026 12:15:00 +0000"
-    },
-    {
-      "title": "Bitcoin drops as Nvidia earnings report drives stock index futures higher",
-      "link": "https://www.coindesk.com/markets/2026/11/18/bitcoin-drops-as-nvidia-earnings-report-drives-stock-index-futures-higher",
-      "pubDate": "Wed, 18 Nov 2026 11:42:52 +0000"
-    },
-    {
-      "title": "Bitcoin outpaces gold even as both assets tumble ahead of a likely Fed rate hike",
-      "link": "https://www.coindesk.com/markets/2026/11/18/bitcoin-outpaces-gold-even-as-both-assets-tumble-ahead-of-a-likely-fed-rate-hike",
-      "pubDate": "Wed, 18 Nov 2026 10:58:36 +0000"
     }
   ]
 }
