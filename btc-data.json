@@ -1,13 +1,13 @@
 {
-  "fetchedAt": "2026-11-19T11:30:05.686Z",
+  "fetchedAt": "2026-11-19T20:28:47.708Z",
   "price": {
-    "usd": 63730,
-    "time": 1795087508
+    "usd": 62232,
+    "time": 1795119908
   },
   "moves": {
-    "d1": 1.1640610520648131,
-    "d7": -10.7072573947819,
-    "d30": -23.16487091604139
+    "d1": -1.2138420305649156,
+    "d7": -12.806120228967,
+    "d30": -24.97091239364645
   },
   "history90d": [
     {
@@ -372,119 +372,119 @@
     },
     {
       "date": "2026-11-19",
-      "close": 63802.71638963609
+      "close": 62165.78688875817
     }
   ],
   "blocks": [
     {
-      "height": 976577,
-      "id": "000000000000000000015dd0f9eb501e6992f61b87874590f7626cd0fe5a725a",
-      "timestamp": 1795087839,
-      "txCount": 2638
+      "height": 976631,
+      "id": "000000000000000000020452b1fe8aff825d4f44f1208e7ebdccc30ab4938721",
+      "timestamp": 1795119841,
+      "txCount": 2269
     },
     {
-      "height": 976576,
-      "id": "000000000000000000012e56d10c32013efd7f1bd4caa4db3197f446af837e2a",
-      "timestamp": 1795087535,
-      "txCount": 3192
+      "height": 976630,
+      "id": "000000000000000000014932add11bf45d1b82f048c903b425fe912dc2ac9fee",
+      "timestamp": 1795119301,
+      "txCount": 3150
     },
     {
-      "height": 976575,
-      "id": "00000000000000000000c79b9e8b19d02a68807b9eddf8dee7ca2c6dbaeafebf",
-      "timestamp": 1795086433,
-      "txCount": 7397
+      "height": 976629,
+      "id": "00000000000000000000441e7212a4f7594037cf37c4bbe5d5c6c024c9262b21",
+      "timestamp": 1795118681,
+      "txCount": 2383
     },
     {
-      "height": 976574,
-      "id": "00000000000000000001d66bcc4de374b45d8c73ace68ae2ef2001f89f5178a8",
-      "timestamp": 1795086283,
-      "txCount": 6496
+      "height": 976628,
+      "id": "000000000000000000010a9298425ff193254ab0d801ba7e19e5462043fed752",
+      "timestamp": 1795118480,
+      "txCount": 3128
     },
     {
-      "height": 976573,
-      "id": "00000000000000000001d4d302456cec2f5474e1d488192bb3681510eefaade2",
-      "timestamp": 1795086270,
-      "txCount": 5917
+      "height": 976627,
+      "id": "000000000000000000021573ea7790e430a745f7fbc4c80ef1921426bc8090dd",
+      "timestamp": 1795117140,
+      "txCount": 2953
     },
     {
-      "height": 976572,
-      "id": "00000000000000000000a77d5263a7d2aa3090de182f61e8fc32068ef8a50266",
-      "timestamp": 1795086132,
-      "txCount": 5076
+      "height": 976626,
+      "id": "000000000000000000020ee1fe669d153b90f0259a6532d23e2a5c7dfa910764",
+      "timestamp": 1795116739,
+      "txCount": 3087
     },
     {
-      "height": 976571,
-      "id": "00000000000000000001f6e6ed4c90a9754511f2df43e9c9d1dba7b55c6b83c5",
-      "timestamp": 1795085632,
-      "txCount": 4338
+      "height": 976625,
+      "id": "000000000000000000006204a7845f4f47c7bb2bd2410cd037b37bc0b5cb1fcf",
+      "timestamp": 1795115975,
+      "txCount": 3124
     },
     {
-      "height": 976570,
-      "id": "0000000000000000000168d602306d7fcfcc4dd99cb17c43c33f8b4dad1857f2",
-      "timestamp": 1795085348,
-      "txCount": 5877
+      "height": 976624,
+      "id": "0000000000000000000095e7f3218107ef04155badec51068ddeeb7e296af679",
+      "timestamp": 1795114199,
+      "txCount": 3261
     }
   ],
   "news": [
     {
-      "title": "Anthropic’s $107 billion raise set to top SpaceX’s IPO as tokenized stocks gain traction",
+      "title": "Sky's USDS stablecoin shrinks 35% as $1.5 billion exits reserves after illicit-finance report",
+      "link": "https://www.coindesk.com/business/2026/11/19/sky-s-usds-stablecoin-shrinks-35-as-usd1-5-billion-exits-reserves-after-illicit-finance-report",
+      "pubDate": "Thu, 19 Nov 2026 19:53:42 +0000"
+    },
+    {
+      "title": "Trump's Democratic SEC pick suggests tokenization policy deserves full rule process",
+      "link": "https://www.coindesk.com/policy/2026/11/19/trump-s-democratic-sec-pick-suggests-tokenization-policy-deserves-full-rule-process",
+      "pubDate": "Thu, 19 Nov 2026 18:15:56 +0000"
+    },
+    {
+      "title": "Anthropic gains after IPO, but pulls off highest levels",
+      "link": "https://www.coindesk.com/markets/2026/11/19/anthropic-opens-for-trade-at-usd11-50-up-34-from-ipo-price",
+      "pubDate": "Thu, 19 Nov 2026 17:01:47 +0000"
+    },
+    {
+      "title": "Crypto for Advisors: Falling prices drove October’s 10% drop in institutional crypto exposure",
+      "link": "https://www.coindesk.com/coindesk-indices/2026/11/19/crypto-for-advisors-falling-prices-drove-october-s-10-drop-in-institutional-crypto-exposure",
+      "pubDate": "Thu, 19 Nov 2026 16:09:28 +0000"
+    },
+    {
+      "title": "Binance wins $6.5 billion feezing order against hackers behind crypto's largest theft",
+      "link": "https://www.coindesk.com/business/2026/11/19/binance-wins-usd6-5-billion-feezing-order-against-hackers-behind-crypto-s-largest-theft",
+      "pubDate": "Thu, 19 Nov 2026 15:20:38 +0000"
+    },
+    {
+      "title": "Crypto traders vs. Wall Street: OKX’s Anthropic markets put IPO pricing to the test",
+      "link": "https://www.coindesk.com/markets/2026/11/19/crypto-traders-vs-wall-street-okx-s-anthropic-markets-put-ipo-pricing-to-the-test",
+      "pubDate": "Thu, 19 Nov 2026 13:11:31 +0000"
+    },
+    {
+      "title": "Trump Media wants to clear $884 million of debt without selling its bitcoin",
+      "link": "https://www.coindesk.com/markets/2026/11/19/trump-media-wants-to-clear-usd884-million-of-debt-without-selling-its-bitcoin",
+      "pubDate": "Thu, 19 Nov 2026 12:40:12 +0000"
+    },
+    {
+      "title": "Bitcoin ETF outflows show waning crypto appetite ahead of Anthropic's Nasdaq debut",
+      "link": "https://www.coindesk.com/daybook-us/2026/11/19/bitcoin-etf-outflows-show-waning-crypto-appetite-ahead-of-anthropic-s-nasdaq-debut",
+      "pubDate": "Thu, 19 Nov 2026 12:20:39 +0000"
+    },
+    {
+      "title": "Bitcoin holds above $63,750 but Fed rate-hike threats loom large",
+      "link": "https://www.coindesk.com/markets/2026/11/19/bitcoin-holds-above-usd63-750-but-fed-rate-hike-threats-loom-large",
+      "pubDate": "Thu, 19 Nov 2026 12:08:06 +0000"
+    },
+    {
+      "title": "North Korean hackers used Sky's stablecoin system, putting billions at freeze risk",
+      "link": "https://www.coindesk.com/business/2026/11/19/north-korean-hackers-used-sky-s-stablecoin-system-putting-billions-at-freeze-risk",
+      "pubDate": "Thu, 19 Nov 2026 11:30:00 +0000"
+    },
+    {
+      "title": "Anthropic’s $107 billion sale set to top SpaceX’s IPO as tokenized stocks gain traction",
       "link": "https://www.coindesk.com/markets/2026/11/19/anthropic-s-usd107-billion-raise-set-to-surpass-spacex-s-ipo-haul",
       "pubDate": "Thu, 19 Nov 2026 11:06:13 +0000"
     },
     {
-      "title": "‘Highly advanced’ quantum computers could crack financial encryption in five years",
+      "title": "Financial firms must act now as quantum computers grow ‘highly advanced,’ IOSCO warns",
       "link": "https://www.coindesk.com/tech/2026/11/19/banks-and-blockchains-lag-on-quantum-defense-as-encryption-risks-loom-watchdog-warns",
       "pubDate": "Thu, 19 Nov 2026 10:55:29 +0000"
-    },
-    {
-      "title": "Live updates: Bitcoin nears $64,000 as Anthropic’s record IPO lifts tech",
-      "link": "https://www.coindesk.com/markets/2026/11/19/live-updates-bitcoin-nears-usd64-000-as-anthropic-s-record-ipo-lifts-tech",
-      "pubDate": "Thu, 19 Nov 2026 10:48:26 +0000"
-    },
-    {
-      "title": "Singapore settles $77.5 million tokenized bill sale in local CBDC",
-      "link": "https://www.coindesk.com/business/2026/11/19/singapore-settles-usd77-5-million-tokenized-bill-sale-in-local-cbdc",
-      "pubDate": "Thu, 19 Nov 2026 10:39:36 +0000"
-    },
-    {
-      "title": "Roundhill scraps Solana and XRP income ETFs as rival funds indicate low demand",
-      "link": "https://www.coindesk.com/markets/2026/11/19/roundhill-scraps-solana-and-xrp-income-etfs-as-rival-funds-attract-just-usd12-million",
-      "pubDate": "Thu, 19 Nov 2026 10:22:12 +0000"
-    },
-    {
-      "title": "Fed's rate hike push may be a mistake. Here's why",
-      "link": "https://www.coindesk.com/markets/2026/11/19/fed-s-push-for-more-rate-hikes-leans-on-backward-looking-data-as-gas-prices-slide-analysts-argue",
-      "pubDate": "Thu, 19 Nov 2026 06:23:19 +0000"
-    },
-    {
-      "title": "Ethereum block builders received the most in a $3.4 million vault hack, data shows",
-      "link": "https://www.coindesk.com/tech/2026/11/19/ethereum-block-builders-received-the-most-in-a-usd3-4-million-vault-hack-data-shows",
-      "pubDate": "Thu, 19 Nov 2026 05:39:06 +0000"
-    },
-    {
-      "title": "Bitcoin miner that sold its last BTC warns it may run short of cash for $1.2 billion AI deal",
-      "link": "https://www.coindesk.com/markets/2026/11/19/bitcoin-miner-that-sold-its-last-btc-warns-it-may-run-short-of-cash-for-usd1-2-billion-ai-deal",
-      "pubDate": "Thu, 19 Nov 2026 04:46:10 +0000"
-    },
-    {
-      "title": "CZ says tokenized Anthropic is coming to BNB Chain on IPO day",
-      "link": "https://www.coindesk.com/markets/2026/11/19/cz-says-tokenized-anthropic-is-coming-to-bnb-chain-on-ipo-day",
-      "pubDate": "Thu, 19 Nov 2026 03:40:48 +0000"
-    },
-    {
-      "title": "Another U.S. appellate court goes against Kalshi, building the industry's legal headwinds",
-      "link": "https://www.coindesk.com/policy/2026/11/18/another-u-s-appellate-court-goes-against-kalshi-building-the-industry-s-legal-headwinds",
-      "pubDate": "Thu, 19 Nov 2026 00:33:46 +0000"
-    },
-    {
-      "title": "Payward, the owner of crypto exchange Kraken, is buying its CEO’s venture capital business, Tribe",
-      "link": "https://www.coindesk.com/business/2026/11/18/payward-the-owner-of-crypto-exchange-kraken-is-buying-its-ceo-s-venture-capital-business-tribe",
-      "pubDate": "Wed, 18 Nov 2026 22:30:00 +0000"
-    },
-    {
-      "title": "A $1.5 billion crypto startup is taking on Hyperliquid with a Wall Street playbook",
-      "link": "https://www.coindesk.com/business/2026/11/18/a-usd1-5-billion-crypto-startup-is-taking-on-hyperliquid-with-a-wall-street-playbook",
-      "pubDate": "Wed, 18 Nov 2026 17:22:03 +0000"
     }
   ]
 }
