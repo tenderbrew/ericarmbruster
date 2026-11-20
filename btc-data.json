@@ -1,13 +1,13 @@
 {
-  "fetchedAt": "2026-11-20T02:15:44.278Z",
+  "fetchedAt": "2026-11-20T11:26:32.919Z",
   "price": {
-    "usd": 61410,
-    "time": 1795140609
+    "usd": 61724,
+    "time": 1795173909
   },
   "moves": {
-    "d1": -0.8258245702238876,
-    "d7": -10.105891078870076,
-    "d30": -26.964385496340924
+    "d1": -0.3187297797182742,
+    "d7": -9.646246880836618,
+    "d30": -26.590941709430826
   },
   "history90d": [
     {
@@ -372,119 +372,119 @@
     },
     {
       "date": "2026-11-20",
-      "close": 61368.264304769684
+      "close": 61720.750348173475
     }
   ],
   "blocks": [
     {
-      "height": 976664,
-      "id": "00000000000000000001980ae80dd383bba892c0feae1801e8909584d0dbb4cc",
-      "timestamp": 1795139650,
-      "txCount": 3119
+      "height": 976724,
+      "id": "000000000000000000006a7528c34b9550fe6afd2c1e5638802f6f59cdfc0d3e",
+      "timestamp": 1795171620,
+      "txCount": 5056
     },
     {
-      "height": 976663,
-      "id": "00000000000000000001db1448b4fc6181ccf27cd2905599f81f840ce529b83d",
-      "timestamp": 1795138296,
-      "txCount": 2586
+      "height": 976723,
+      "id": "00000000000000000001de84f829424e0ad27a35fd4927c8c0a1e25afa10f480",
+      "timestamp": 1795171188,
+      "txCount": 4070
     },
     {
-      "height": 976662,
-      "id": "00000000000000000001feba564f167d29b78982059d8b8d564722d06a81bafc",
-      "timestamp": 1795137004,
-      "txCount": 1918
+      "height": 976722,
+      "id": "00000000000000000001ffdec4af62dc10ea89cbe0260415f4f2a96371a87a15",
+      "timestamp": 1795171076,
+      "txCount": 3672
     },
     {
-      "height": 976661,
-      "id": "00000000000000000000243e21644f413873ea548765113f4a1b61f0b335e133",
-      "timestamp": 1795136673,
-      "txCount": 3273
+      "height": 976721,
+      "id": "000000000000000000011b434d15983826873c8cfe2fae2c32dad4155ab90973",
+      "timestamp": 1795169583,
+      "txCount": 2693
     },
     {
-      "height": 976660,
-      "id": "00000000000000000001b61bdb98aad034b1cee75c52414a0cc81f4be4b7557b",
-      "timestamp": 1795134909,
-      "txCount": 4876
+      "height": 976720,
+      "id": "0000000000000000000187274c04654714bcb0e9fc1dddda5afcb79fb1e9d705",
+      "timestamp": 1795169406,
+      "txCount": 3961
     },
     {
-      "height": 976659,
-      "id": "0000000000000000000150808740c6938ab1429066397cba155736fb0287c21c",
-      "timestamp": 1795134615,
-      "txCount": 5560
+      "height": 976719,
+      "id": "0000000000000000000188c07f11187572c0f9668d3a9a1b16927af0496b761b",
+      "timestamp": 1795167075,
+      "txCount": 5770
     },
     {
-      "height": 976658,
-      "id": "00000000000000000001148b91e7c067db8eef3acc9ac51309055b09495a401d",
-      "timestamp": 1795134333,
-      "txCount": 5537
+      "height": 976718,
+      "id": "000000000000000000000f6a9c085f17a3b4463aebcc7c917dc1a6ceb0ed81a4",
+      "timestamp": 1795166746,
+      "txCount": 5440
     },
     {
-      "height": 976657,
-      "id": "000000000000000000005ba4697c9076e1041bcc52bbda10fdd3a2c0ff72ff7b",
-      "timestamp": 1795134253,
-      "txCount": 3751
+      "height": 976717,
+      "id": "00000000000000000000f16399bbae19a16426d77ec394669a5132ba11fd6fb7",
+      "timestamp": 1795166268,
+      "txCount": 7206
     }
   ],
   "news": [
     {
+      "title": "Coinbase targets first-half 2027 for its own prediction market contracts",
+      "link": "https://www.coindesk.com/business/2026/11/20/coinbase-targets-first-half-2027-for-its-own-prediction-market-contracts",
+      "pubDate": "Fri, 20 Nov 2026 10:48:04 +0000"
+    },
+    {
+      "title": "No special rules for Hyperliquid or other onchain trading platforms, CFTC says",
+      "link": "https://www.coindesk.com/markets/2026/11/20/cftc-tells-hyperliquid-and-crypto-rivals-no-special-rules-for-onchain-trading",
+      "pubDate": "Fri, 20 Nov 2026 10:02:03 +0000"
+    },
+    {
+      "title": "Cathie Wood's Ark Invest piled into Anthropic IPO, buying $90 million worth of shares",
+      "link": "https://www.coindesk.com/markets/2026/11/20/cathie-wood-s-ark-invest-piled-into-anthropic-ipo-buying-usd90-million-worth-of-shares",
+      "pubDate": "Fri, 20 Nov 2026 09:48:52 +0000"
+    },
+    {
+      "title": "Wrapped Monero token plunges 99% as issuer-linked wallet sells $13.5 million",
+      "link": "https://www.coindesk.com/markets/2026/11/20/wrapped-monero-token-plunges-99-as-issuer-linked-wallet-sells-usd13-5-million",
+      "pubDate": "Fri, 20 Nov 2026 08:04:40 +0000"
+    },
+    {
+      "title": "Here's what's crashing gold and likely weighing on bitcoin too",
+      "link": "https://www.coindesk.com/markets/2026/11/20/here-s-what-s-crashing-gold-and-likely-weighing-on-bitcoin-too",
+      "pubDate": "Fri, 20 Nov 2026 06:12:15 +0000"
+    },
+    {
+      "title": "Anthropic shares may fall 5% at Friday’s open, crypto futures suggest",
+      "link": "https://www.coindesk.com/markets/2026/11/20/crypto-traders-have-anthropic-trading-below-its-first-nasdaq-close-on-hyperliquid",
+      "pubDate": "Fri, 20 Nov 2026 06:08:28 +0000"
+    },
+    {
+      "title": "This Bitcoin miner sold 267 BTC to clear $22 million debt. It still may not survive",
+      "link": "https://www.coindesk.com/markets/2026/11/20/this-bitcoin-miner-sold-267-btc-to-clear-usd22-million-debt-it-still-may-not-survive",
+      "pubDate": "Fri, 20 Nov 2026 05:32:25 +0000"
+    },
+    {
+      "title": "Big money bought a net $4 billion of bitcoin funds in Q3, ending 9 months of selling",
+      "link": "https://www.coindesk.com/markets/2026/11/20/big-money-bought-a-net-usd4-billion-of-bitcoin-funds-in-q3-ending-9-months-of-selling",
+      "pubDate": "Fri, 20 Nov 2026 05:20:51 +0000"
+    },
+    {
+      "title": "Ethereum’s next big upgrade is pushed into 2027 by apps it would break",
+      "link": "https://www.coindesk.com/tech/2026/11/20/ethereum-s-next-big-upgrade-is-pushed-into-2027-by-apps-it-would-break",
+      "pubDate": "Fri, 20 Nov 2026 04:58:08 +0000"
+    },
+    {
+      "title": "VanEck drops Gemini as custodian of its bitcoin, ether and SOL ETFs",
+      "link": "https://www.coindesk.com/markets/2026/11/20/vaneck-drops-gemini-as-custodian-of-its-bitcoin-ether-and-sol-etfs",
+      "pubDate": "Fri, 20 Nov 2026 04:28:52 +0000"
+    },
+    {
+      "title": "Bitcoin hits four-month low after Anthropic's IPO as tech stocks wilt",
+      "link": "https://www.coindesk.com/markets/2026/11/20/bitcoin-hits-four-month-low-after-anthropic-s-ipo-as-tech-stocks-wilt",
+      "pubDate": "Fri, 20 Nov 2026 03:32:30 +0000"
+    },
+    {
       "title": "Sky's USDS stablecoin shrinks 35% as $1.5 billion exits reserves after illicit-finance report",
       "link": "https://www.coindesk.com/business/2026/11/19/sky-s-usds-stablecoin-shrinks-35-as-usd1-5-billion-exits-reserves-after-illicit-finance-report",
       "pubDate": "Thu, 19 Nov 2026 19:53:42 +0000"
-    },
-    {
-      "title": "Trump's Democratic SEC pick suggests tokenization policy deserves full rule process",
-      "link": "https://www.coindesk.com/policy/2026/11/19/trump-s-democratic-sec-pick-suggests-tokenization-policy-deserves-full-rule-process",
-      "pubDate": "Thu, 19 Nov 2026 18:15:56 +0000"
-    },
-    {
-      "title": "Anthropic gains after IPO, but pulls off highest levels",
-      "link": "https://www.coindesk.com/markets/2026/11/19/anthropic-opens-for-trade-at-usd11-50-up-34-from-ipo-price",
-      "pubDate": "Thu, 19 Nov 2026 17:01:47 +0000"
-    },
-    {
-      "title": "Crypto for Advisors: Falling prices drove October’s 10% drop in institutional crypto exposure",
-      "link": "https://www.coindesk.com/coindesk-indices/2026/11/19/crypto-for-advisors-falling-prices-drove-october-s-10-drop-in-institutional-crypto-exposure",
-      "pubDate": "Thu, 19 Nov 2026 16:09:28 +0000"
-    },
-    {
-      "title": "Binance wins $6.5 billion feezing order against hackers behind crypto's largest theft",
-      "link": "https://www.coindesk.com/business/2026/11/19/binance-wins-usd6-5-billion-feezing-order-against-hackers-behind-crypto-s-largest-theft",
-      "pubDate": "Thu, 19 Nov 2026 15:20:38 +0000"
-    },
-    {
-      "title": "Crypto traders vs. Wall Street: OKX’s Anthropic markets put IPO pricing to the test",
-      "link": "https://www.coindesk.com/markets/2026/11/19/crypto-traders-vs-wall-street-okx-s-anthropic-markets-put-ipo-pricing-to-the-test",
-      "pubDate": "Thu, 19 Nov 2026 13:11:31 +0000"
-    },
-    {
-      "title": "Trump Media wants to clear $884 million of debt without selling its bitcoin",
-      "link": "https://www.coindesk.com/markets/2026/11/19/trump-media-wants-to-clear-usd884-million-of-debt-without-selling-its-bitcoin",
-      "pubDate": "Thu, 19 Nov 2026 12:40:12 +0000"
-    },
-    {
-      "title": "Bitcoin ETF outflows show waning crypto appetite ahead of Anthropic's Nasdaq debut",
-      "link": "https://www.coindesk.com/daybook-us/2026/11/19/bitcoin-etf-outflows-show-waning-crypto-appetite-ahead-of-anthropic-s-nasdaq-debut",
-      "pubDate": "Thu, 19 Nov 2026 12:20:39 +0000"
-    },
-    {
-      "title": "Bitcoin holds above $63,750 but Fed rate-hike threats loom large",
-      "link": "https://www.coindesk.com/markets/2026/11/19/bitcoin-holds-above-usd63-750-but-fed-rate-hike-threats-loom-large",
-      "pubDate": "Thu, 19 Nov 2026 12:08:06 +0000"
-    },
-    {
-      "title": "North Korean hackers used Sky's stablecoin system, putting billions at freeze risk",
-      "link": "https://www.coindesk.com/business/2026/11/19/north-korean-hackers-used-sky-s-stablecoin-system-putting-billions-at-freeze-risk",
-      "pubDate": "Thu, 19 Nov 2026 11:30:00 +0000"
-    },
-    {
-      "title": "Anthropic’s $107 billion sale set to top SpaceX’s IPO as tokenized stocks gain traction",
-      "link": "https://www.coindesk.com/markets/2026/11/19/anthropic-s-usd107-billion-raise-set-to-surpass-spacex-s-ipo-haul",
-      "pubDate": "Thu, 19 Nov 2026 11:06:13 +0000"
-    },
-    {
-      "title": "Financial firms must act now as quantum computers grow ‘highly advanced,’ IOSCO warns",
-      "link": "https://www.coindesk.com/tech/2026/11/19/banks-and-blockchains-lag-on-quantum-defense-as-encryption-risks-loom-watchdog-warns",
-      "pubDate": "Thu, 19 Nov 2026 10:55:29 +0000"
     }
   ]
 }
