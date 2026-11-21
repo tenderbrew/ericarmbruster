@@ -1,13 +1,13 @@
 {
-  "fetchedAt": "2026-11-21T10:54:21.423Z",
+  "fetchedAt": "2026-11-21T19:08:03.365Z",
   "price": {
-    "usd": 57888,
-    "time": 1795258207
+    "usd": 60040,
+    "time": 1795287607
   },
   "moves": {
-    "d1": -1.581024131896669,
-    "d7": -9.719609224156711,
-    "d30": -28.821742023517793
+    "d1": 2.07772441820282,
+    "d7": -6.363414486912122,
+    "d30": -26.175673560876312
   },
   "history90d": [
     {
@@ -372,60 +372,75 @@
     },
     {
       "date": "2026-11-21",
-      "close": 57922.2163798634
+      "close": 60272.8918099254
     }
   ],
   "blocks": [
     {
-      "height": 976888,
-      "id": "000000000000000000001a207eb27512eaf944d94741d2ae94a6f3ba9af92083",
-      "timestamp": 1795258375,
-      "txCount": 5501
+      "height": 976940,
+      "id": "00000000000000000000d218d71c89d18d598ea66b55372d2f18555ba3799306",
+      "timestamp": 1795287111,
+      "txCount": 5731
     },
     {
-      "height": 976887,
-      "id": "000000000000000000014d8debeb9069ac3e1f9351a89730b0dba7ccb0a8d870",
-      "timestamp": 1795257972,
-      "txCount": 3586
+      "height": 976939,
+      "id": "00000000000000000000929780ed8cdfd723cf35687103d620f5508af7752d7c",
+      "timestamp": 1795286916,
+      "txCount": 3113
     },
     {
-      "height": 976886,
-      "id": "00000000000000000000e5057a0532d66840d6474b739205c3201b8d33339577",
-      "timestamp": 1795257515,
-      "txCount": 3071
+      "height": 976938,
+      "id": "00000000000000000001f0aefa933e0b1b38670636f0e10d457b531f28923574",
+      "timestamp": 1795286841,
+      "txCount": 3320
     },
     {
-      "height": 976885,
-      "id": "000000000000000000013264f39a4898a01328d21db6b4ae40eb480dd3b21ea2",
-      "timestamp": 1795256699,
-      "txCount": 3553
+      "height": 976937,
+      "id": "00000000000000000000055efef1e75cf34165393af4ff35ddbd9c11ea4ed743",
+      "timestamp": 1795286303,
+      "txCount": 3119
     },
     {
-      "height": 976884,
-      "id": "000000000000000000006c103c6dd597276c1330016eeb035f9c58dbaba94a18",
-      "timestamp": 1795255478,
-      "txCount": 2737
+      "height": 976936,
+      "id": "00000000000000000001ffd31283dbff3768a18d6fbacdee8fa7d1e9cdd221dd",
+      "timestamp": 1795285826,
+      "txCount": 1876
     },
     {
-      "height": 976883,
-      "id": "000000000000000000018829511854b24bc6cee79a266c41abe390659697dbed",
-      "timestamp": 1795254496,
-      "txCount": 7975
+      "height": 976935,
+      "id": "00000000000000000001dfa1d9329b8831350870a6467fc9c602ff17b5f78496",
+      "timestamp": 1795285821,
+      "txCount": 2821
     },
     {
-      "height": 976882,
-      "id": "00000000000000000001c126cf5f9e1309baecf8ca6374efc334a68b5660f88d",
-      "timestamp": 1795254512,
-      "txCount": 4743
+      "height": 976934,
+      "id": "00000000000000000002095cc6fda153776aa52ecec4adfec7017657f06aec5b",
+      "timestamp": 1795285666,
+      "txCount": 4285
     },
     {
-      "height": 976881,
-      "id": "00000000000000000001deb9b7b5a293f934dc57ce73fed86c46bf0fd55c8d75",
-      "timestamp": 1795254715,
-      "txCount": 3890
+      "height": 976933,
+      "id": "00000000000000000000f0b394e8ea059ec353d755e22d242ffcab4581209215",
+      "timestamp": 1795285185,
+      "txCount": 3793
     }
   ],
   "news": [
+    {
+      "title": "Bitcoin bounces 9% from two-year low to retake $60,000 as traders eye Monday’s stock open",
+      "link": "https://www.coindesk.com/markets/2026/11/21/bitcoin-bounces-9-from-two-year-low-to-retake-usd60-000-as-traders-eye-monday-s-stock-open",
+      "pubDate": "Sat, 21 Nov 2026 17:50:00 +0000"
+    },
+    {
+      "title": "Cross-chain protocol Chainflip's FLIP tanks 30% after suspected $4.86 million vault drain",
+      "link": "https://www.coindesk.com/business/2026/11/21/cross-chain-protocol-chainflip-s-flip-tanks-30-after-suspected-usd4-86-million-vault-drain",
+      "pubDate": "Sat, 21 Nov 2026 16:41:00 +0000"
+    },
+    {
+      "title": "Ether treasury firm BTCS warns SEC its $54 million Aave loan could be liquidated",
+      "link": "https://www.coindesk.com/markets/2026/11/21/ether-treasury-firm-btcs-warns-sec-its-usd54-million-aave-loan-could-be-liquidated",
+      "pubDate": "Sat, 21 Nov 2026 12:30:00 +0000"
+    },
     {
       "title": "Bitcoin nodes could be stalled by repeating one ID 50,000 times. AI found the bug",
       "link": "https://www.coindesk.com/markets/2026/11/21/bitcoin-nodes-could-be-stalled-by-repeating-one-id-50-000-times-ai-found-the-bug",
@@ -470,21 +485,6 @@
       "title": "U.S. Senate passes bill to ban prediction market bets on war and death",
       "link": "https://www.coindesk.com/policy/2026/11/20/u-s-senated-passes-bill-to-ban-prediction-market-best-on-war-and-death",
       "pubDate": "Fri, 20 Nov 2026 14:25:57 +0000"
-    },
-    {
-      "title": "Live news: Bitcoin slips to fresh lows below $59,000 as Anthropic slides after Nasdaq debut",
-      "link": "https://www.coindesk.com/tech/2026/11/20/live-news-bitcoin-hovers-just-above-usd61-000-as-anthropic-slides-13-after-nasdaq-debut",
-      "pubDate": "Fri, 20 Nov 2026 13:35:33 +0000"
-    },
-    {
-      "title": "Bitcoin bots pounced within seconds when researchers exposed their wallet keys",
-      "link": "https://www.coindesk.com/tech/2026/11/20/bitcoin-bots-pounced-within-seconds-when-researchers-exposed-their-keys",
-      "pubDate": "Fri, 20 Nov 2026 13:30:22 +0000"
-    },
-    {
-      "title": "ECB’s Lagarde warns Europe could lose control of growing tokenized asset market",
-      "link": "https://www.coindesk.com/policy/2026/11/20/ecb-s-largarde-warns-europe-could-lose-control-of-growing-tokenized-asset-market",
-      "pubDate": "Fri, 20 Nov 2026 13:11:49 +0000"
     }
   ]
 }
