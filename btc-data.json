@@ -1,19 +1,15 @@
 {
-  "fetchedAt": "2026-11-20T20:05:04.067Z",
+  "fetchedAt": "2026-11-21T02:09:36.246Z",
   "price": {
-    "usd": 58459,
-    "time": 1795204805
+    "usd": 59018,
+    "time": 1795226406
   },
   "moves": {
-    "d1": -5.591546630039379,
-    "d7": -14.42566823936925,
-    "d30": -30.474043506441852
+    "d1": 0.34015888929868066,
+    "d7": -7.9572950730942615,
+    "d30": -27.43231016348765
   },
   "history90d": [
-    {
-      "date": "2026-08-23",
-      "close": 77081.02299000922
-    },
     {
       "date": "2026-08-24",
       "close": 77712.3200924702
@@ -371,61 +367,75 @@
       "close": 61921.36182012785
     },
     {
-      "date": "2026-11-20",
-      "close": 58510.38114538585
+      "date": "2026-11-21",
+      "close": 58817.925597578746
+    },
+    {
+      "date": "2026-11-21",
+      "close": 58981.81017095304
     }
   ],
   "blocks": [
     {
-      "height": 976778,
-      "id": "0000000000000000000103d9bfd7b705027fc6825ef7c27d14a71f283b026038",
-      "timestamp": 1795204611,
-      "txCount": 1944
+      "height": 976825,
+      "id": "000000000000000000018276e061384adecfd72fd284ea25741868dbf8d909f3",
+      "timestamp": 1795226783,
+      "txCount": 6299
     },
     {
-      "height": 976777,
-      "id": "0000000000000000000136eefd932851bb3a697b643d43ab89adb78791169f2c",
-      "timestamp": 1795204517,
-      "txCount": 2745
+      "height": 976824,
+      "id": "000000000000000000011c072e52fae04028ef8040f5736417b18306168939fa",
+      "timestamp": 1795226559,
+      "txCount": 7615
     },
     {
-      "height": 976776,
-      "id": "000000000000000000006f4b0ed2b841b557c3b9b7de16fc5197ba2138e61fe4",
-      "timestamp": 1795204277,
-      "txCount": 3000
+      "height": 976823,
+      "id": "0000000000000000000141a6af467538634f526dbc3f17ef67fca721dbaf77a1",
+      "timestamp": 1795226507,
+      "txCount": 6413
     },
     {
-      "height": 976775,
-      "id": "00000000000000000001e8e1add81871671186e90f2d39e38777ca5cbb1774a7",
-      "timestamp": 1795203335,
-      "txCount": 2968
+      "height": 976822,
+      "id": "00000000000000000001341e9cc9a1e276f2a00504748285a7e109226190f773",
+      "timestamp": 1795226309,
+      "txCount": 6211
     },
     {
-      "height": 976774,
-      "id": "0000000000000000000105a2cd22a8e9bfcd48a29519c25a831281bcd34ae17f",
-      "timestamp": 1795203148,
-      "txCount": 3200
+      "height": 976821,
+      "id": "00000000000000000001c492bbd985557eede34e215a56e5741dcf4963a9fc50",
+      "timestamp": 1795226047,
+      "txCount": 6786
     },
     {
-      "height": 976773,
-      "id": "000000000000000000010f0a7ef710f13bca5f65c2856d3915dc9ecc34c7cd50",
-      "timestamp": 1795202725,
-      "txCount": 3714
+      "height": 976820,
+      "id": "00000000000000000000102da5f979447fc2498a87fe6dd0bd79fd9ea04117ce",
+      "timestamp": 1795226101,
+      "txCount": 1389
     },
     {
-      "height": 976772,
-      "id": "0000000000000000000148667e59b0b4f7754d4fcc831233ae55436716404dad",
-      "timestamp": 1795201011,
-      "txCount": 3175
+      "height": 976819,
+      "id": "00000000000000000001314719732a77370e95010789873610e5e8e041126c0d",
+      "timestamp": 1795225685,
+      "txCount": 2003
     },
     {
-      "height": 976771,
-      "id": "00000000000000000001cceddcc0c866612fa3a8d9be1db088450c1f560935f3",
-      "timestamp": 1795200332,
-      "txCount": 3553
+      "height": 976818,
+      "id": "0000000000000000000080abc68cd3c4dc1a33aa794008080cef09226de912f8",
+      "timestamp": 1795225292,
+      "txCount": 3423
     }
   ],
   "news": [
+    {
+      "title": "Kalshi races to get ahead of New York order that could shut down exchange",
+      "link": "https://www.coindesk.com/policy/2026/11/20/kalshi-races-to-get-ahead-of-new-york-order-that-could-shut-down-exchange",
+      "pubDate": "Fri, 20 Nov 2026 22:51:14 +0000"
+    },
+    {
+      "title": "Fairmint plans tokenized stock venue on Canton, Ethereum under SEC experiment",
+      "link": "https://www.coindesk.com/business/2026/11/20/fairmint-plans-tokenized-stock-venue-on-canton-ethereum-under-sec-experiment",
+      "pubDate": "Fri, 20 Nov 2026 22:05:31 +0000"
+    },
     {
       "title": "Bitcoin plunges below $59,000 as rush to cash puts new bear market lows back in play",
       "link": "https://www.coindesk.com/markets/2026/11/20/bitcoin-plunges-below-usd59-000-as-rush-to-cash-puts-new-bear-market-lows-back-in-play",
@@ -447,7 +457,7 @@
       "pubDate": "Fri, 20 Nov 2026 14:25:57 +0000"
     },
     {
-      "title": "Live news: Bitcoin slips to fresh lows below $60,000 as Anthropic slides after Nasdaq debut",
+      "title": "Live news: Bitcoin slips to fresh lows below $59,000 as Anthropic slides after Nasdaq debut",
       "link": "https://www.coindesk.com/tech/2026/11/20/live-news-bitcoin-hovers-just-above-usd61-000-as-anthropic-slides-13-after-nasdaq-debut",
       "pubDate": "Fri, 20 Nov 2026 13:35:33 +0000"
     },
@@ -475,16 +485,6 @@
       "title": "Coinbase targets first-half 2027 for its own prediction market contracts",
       "link": "https://www.coindesk.com/business/2026/11/20/coinbase-targets-first-half-2027-for-its-own-prediction-market-contracts",
       "pubDate": "Fri, 20 Nov 2026 10:48:04 +0000"
-    },
-    {
-      "title": "No special rules for Hyperliquid or other onchain trading platforms, CFTC says",
-      "link": "https://www.coindesk.com/markets/2026/11/20/cftc-tells-hyperliquid-and-crypto-rivals-no-special-rules-for-onchain-trading",
-      "pubDate": "Fri, 20 Nov 2026 10:02:03 +0000"
-    },
-    {
-      "title": "Cathie Wood's Ark Invest piled into Anthropic IPO, buying $90 million worth of shares",
-      "link": "https://www.coindesk.com/markets/2026/11/20/cathie-wood-s-ark-invest-piled-into-anthropic-ipo-buying-usd90-million-worth-of-shares",
-      "pubDate": "Fri, 20 Nov 2026 09:48:52 +0000"
     }
   ]
 }
