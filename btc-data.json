@@ -1,13 +1,13 @@
 {
-  "fetchedAt": "2026-11-22T11:11:05.321Z",
+  "fetchedAt": "2026-11-22T19:30:29.301Z",
   "price": {
-    "usd": 60811,
-    "time": 1795345507
+    "usd": 60622,
+    "time": 1795375507
   },
   "moves": {
-    "d1": 1.1471779403438909,
-    "d7": -6.881956463771488,
-    "d30": -25.01940126459519
+    "d1": 0.8328134893280437,
+    "d7": -7.171366442695481,
+    "d30": -25.252440240454675
   },
   "history90d": [
     {
@@ -372,60 +372,65 @@
     },
     {
       "date": "2026-11-22",
-      "close": 60850.69811504168
+      "close": 60687.01985948896
     }
   ],
   "blocks": [
     {
-      "height": 977046,
-      "id": "00000000000000000001a7741c2385030b830db6ce65b1424193b5ba3b36eaa1",
-      "timestamp": 1795345635,
-      "txCount": 5714
+      "height": 977090,
+      "id": "00000000000000000000c11ba77090e027149ce4b78a099c12eed05d7470f3f6",
+      "timestamp": 1795375497,
+      "txCount": 3680
     },
     {
-      "height": 977045,
-      "id": "00000000000000000001bf502ccad744d2c7c4c82138acae63b8fe854edc7a4e",
-      "timestamp": 1795344865,
-      "txCount": 6814
+      "height": 977089,
+      "id": "000000000000000000019b0526fa8c3f633d0482a001f9e2dd59faf6c382dd7c",
+      "timestamp": 1795374213,
+      "txCount": 3301
     },
     {
-      "height": 977044,
-      "id": "000000000000000000000862e34c40860e8b498e696ae42a431be93af44e6af2",
-      "timestamp": 1795344771,
-      "txCount": 5719
+      "height": 977088,
+      "id": "000000000000000000002e3f320493a6ced5c12e3bee6aaddbcf9126c04b0c79",
+      "timestamp": 1795373445,
+      "txCount": 5077
     },
     {
-      "height": 977043,
-      "id": "000000000000000000018949328890aeb5171a51874abdde7c6131039813ea78",
-      "timestamp": 1795344101,
-      "txCount": 7146
+      "height": 977087,
+      "id": "000000000000000000008376c867c22034bfc4fa5bdf33a28b37d53e419752a1",
+      "timestamp": 1795372934,
+      "txCount": 2761
     },
     {
-      "height": 977042,
-      "id": "0000000000000000000105fa737007e2d5ae5475016c7fa99886ecc060a8801f",
-      "timestamp": 1795343979,
-      "txCount": 6858
+      "height": 977086,
+      "id": "00000000000000000000000adc29a240c73ab3f353729c78b44fda3f9331bebf",
+      "timestamp": 1795372061,
+      "txCount": 3776
     },
     {
-      "height": 977041,
-      "id": "00000000000000000001438acc88a7f4b25dc032ec8fc015ac9a237b3a7f6d6f",
-      "timestamp": 1795343746,
-      "txCount": 6331
+      "height": 977085,
+      "id": "000000000000000000012aeedffa3e05b802a16dd2b4832defda7c6b8550422a",
+      "timestamp": 1795371447,
+      "txCount": 6102
     },
     {
-      "height": 977040,
-      "id": "000000000000000000002dfbb0b95945434ed854b0d0b782dc22af14e7c19140",
-      "timestamp": 1795343505,
-      "txCount": 5655
+      "height": 977084,
+      "id": "00000000000000000001b52f17194d63dda35de1134313b790a6b4c3f741f52a",
+      "timestamp": 1795371004,
+      "txCount": 3257
     },
     {
-      "height": 977039,
-      "id": "00000000000000000000b4fc361e11608bb7458ece1e3557387d636f4c596841",
-      "timestamp": 1795343192,
-      "txCount": 6386
+      "height": 977083,
+      "id": "0000000000000000000116e327c82014e06c26602ad313876e5bc16a22b6e5b1",
+      "timestamp": 1795370844,
+      "txCount": 3541
     }
   ],
   "news": [
+    {
+      "title": "Bitcoin's quantum security challenge extends to bridges, custodians and millions of coins",
+      "link": "https://www.coindesk.com/tech/2026/11/22/bitcoin-s-quantum-security-challenge-extends-to-bridges-custodians-and-millions-of-coins",
+      "pubDate": "Sun, 22 Nov 2026 14:00:00 +0000"
+    },
     {
       "title": "Bitcoin rebounds above $60,000 after $1.8 billion crypto liquidation wave",
       "link": "https://www.coindesk.com/markets/2026/11/21/bitcoin-bounces-9-from-two-year-low-to-retake-usd60-000-as-traders-eye-monday-s-stock-open",
@@ -435,6 +440,11 @@
       "title": "Cross-chain protocol Chainflip's FLIP tanks 30% after suspected $4.86 million vault drain",
       "link": "https://www.coindesk.com/business/2026/11/21/cross-chain-protocol-chainflip-s-flip-tanks-30-after-suspected-usd4-86-million-vault-drain",
       "pubDate": "Sat, 21 Nov 2026 16:41:00 +0000"
+    },
+    {
+      "title": "OpenAI, Anthropic and rivals seek AI agent rules to prevent commerce chaos",
+      "link": "https://www.coindesk.com/tech/2026/11/21/openai-anthropic-and-rivals-seek-ai-agent-rules-to-prevent-commerce-chaos",
+      "pubDate": "Sat, 21 Nov 2026 14:00:00 +0000"
     },
     {
       "title": "Ether treasury firm BTCS warns SEC its $54 million Aave loan could be liquidated",
@@ -475,16 +485,6 @@
       "title": "Former Point72 head of proprietary research says AI could turn data into a new asset class for Wall Street",
       "link": "https://www.coindesk.com/markets/2026/11/20/former-point72-head-of-proprietary-research-says-ai-could-turn-data-into-a-new-asset-class-for-wall-street",
       "pubDate": "Fri, 20 Nov 2026 14:54:30 +0000"
-    },
-    {
-      "title": "Hong Kong moves to extend crypto licensing rules to brokers, advisers and custodians",
-      "link": "https://www.coindesk.com/policy/2026/11/20/hong-kong-moves-to-extend-crypto-licensing-rules-to-brokers-advisers-and-custodians",
-      "pubDate": "Fri, 20 Nov 2026 14:38:30 +0000"
-    },
-    {
-      "title": "U.S. Senate passes bill to ban prediction market bets on war and death",
-      "link": "https://www.coindesk.com/policy/2026/11/20/u-s-senated-passes-bill-to-ban-prediction-market-best-on-war-and-death",
-      "pubDate": "Fri, 20 Nov 2026 14:25:57 +0000"
     }
   ]
 }
