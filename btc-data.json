@@ -1,19 +1,15 @@
 {
-  "fetchedAt": "2026-11-21T19:08:03.365Z",
+  "fetchedAt": "2026-11-22T01:12:41.658Z",
   "price": {
-    "usd": 60040,
-    "time": 1795287607
+    "usd": 60082,
+    "time": 1795309807
   },
   "moves": {
-    "d1": 2.07772441820282,
-    "d7": -6.363414486912122,
-    "d30": -26.175673560876312
+    "d1": -0.06537065643154039,
+    "d7": -7.9982520967640465,
+    "d30": -25.91826588576751
   },
   "history90d": [
-    {
-      "date": "2026-08-24",
-      "close": 77712.3200924702
-    },
     {
       "date": "2026-08-25",
       "close": 78973.88693602335
@@ -371,63 +367,67 @@
       "close": 58817.925597578746
     },
     {
-      "date": "2026-11-21",
-      "close": 60272.8918099254
+      "date": "2026-11-22",
+      "close": 60121.30168956966
+    },
+    {
+      "date": "2026-11-22",
+      "close": 60110.775615774255
     }
   ],
   "blocks": [
     {
-      "height": 976940,
-      "id": "00000000000000000000d218d71c89d18d598ea66b55372d2f18555ba3799306",
-      "timestamp": 1795287111,
-      "txCount": 5731
+      "height": 976970,
+      "id": "000000000000000000013d0d62fb5540e3eac3b0ee6172406b9d6a935d02f0ff",
+      "timestamp": 1795309468,
+      "txCount": 3902
     },
     {
-      "height": 976939,
-      "id": "00000000000000000000929780ed8cdfd723cf35687103d620f5508af7752d7c",
-      "timestamp": 1795286916,
-      "txCount": 3113
+      "height": 976969,
+      "id": "000000000000000000001092fbe7c632d12297bd6d541bfe59ca0425b0ce1d84",
+      "timestamp": 1795308697,
+      "txCount": 1946
     },
     {
-      "height": 976938,
-      "id": "00000000000000000001f0aefa933e0b1b38670636f0e10d457b531f28923574",
-      "timestamp": 1795286841,
-      "txCount": 3320
+      "height": 976968,
+      "id": "00000000000000000000d9c5100965df75b9dc9d37699956d9eb8c1b6a871842",
+      "timestamp": 1795308127,
+      "txCount": 3109
     },
     {
-      "height": 976937,
-      "id": "00000000000000000000055efef1e75cf34165393af4ff35ddbd9c11ea4ed743",
-      "timestamp": 1795286303,
-      "txCount": 3119
+      "height": 976967,
+      "id": "00000000000000000000923653a9c38d101c6f3cf99ec3932652954caa34a7ed",
+      "timestamp": 1795306205,
+      "txCount": 3197
     },
     {
-      "height": 976936,
-      "id": "00000000000000000001ffd31283dbff3768a18d6fbacdee8fa7d1e9cdd221dd",
-      "timestamp": 1795285826,
-      "txCount": 1876
+      "height": 976966,
+      "id": "00000000000000000001915e09c2792067f035e81d23a4bc2b33d8c7e1bd8776",
+      "timestamp": 1795305326,
+      "txCount": 5924
     },
     {
-      "height": 976935,
-      "id": "00000000000000000001dfa1d9329b8831350870a6467fc9c602ff17b5f78496",
-      "timestamp": 1795285821,
-      "txCount": 2821
+      "height": 976965,
+      "id": "00000000000000000000eab4bca2bac56a781ed668fe44db1b651ce5feb6e24d",
+      "timestamp": 1795304738,
+      "txCount": 3869
     },
     {
-      "height": 976934,
-      "id": "00000000000000000002095cc6fda153776aa52ecec4adfec7017657f06aec5b",
-      "timestamp": 1795285666,
-      "txCount": 4285
+      "height": 976964,
+      "id": "000000000000000000005e67aa5277175d8969d74d06890dc9c39758de15d060",
+      "timestamp": 1795303832,
+      "txCount": 8161
     },
     {
-      "height": 976933,
-      "id": "00000000000000000000f0b394e8ea059ec353d755e22d242ffcab4581209215",
-      "timestamp": 1795285185,
-      "txCount": 3793
+      "height": 976963,
+      "id": "00000000000000000001e60729da5d404d69ffaa878e01ab96f036272796a787",
+      "timestamp": 1795303822,
+      "txCount": 927
     }
   ],
   "news": [
     {
-      "title": "Bitcoin bounces 9% from two-year low to retake $60,000 as traders eye Monday’s stock open",
+      "title": "Bitcoin rebounds above $60,000 after $1.8 billion crypto liquidation wave",
       "link": "https://www.coindesk.com/markets/2026/11/21/bitcoin-bounces-9-from-two-year-low-to-retake-usd60-000-as-traders-eye-monday-s-stock-open",
       "pubDate": "Sat, 21 Nov 2026 17:50:00 +0000"
     },
