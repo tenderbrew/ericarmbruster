@@ -1,19 +1,15 @@
 {
-  "fetchedAt": "2026-11-23T01:37:03.020Z",
+  "fetchedAt": "2026-11-23T12:21:40.669Z",
   "price": {
-    "usd": 60973,
-    "time": 1795397409
+    "usd": 61268,
+    "time": 1795436107
   },
   "moves": {
-    "d1": 1.4166331840717694,
-    "d7": -6.633890767550909,
-    "d30": -24.819653571001332
+    "d1": 0.15690866533284442,
+    "d7": -5.510216050860162,
+    "d30": -24.18318625633128
   },
   "history90d": [
-    {
-      "date": "2026-08-25",
-      "close": 78973.88693602335
-    },
     {
       "date": "2026-08-26",
       "close": 78511.2331116067
@@ -371,120 +367,124 @@
       "close": 60121.30168956966
     },
     {
-      "date": "2026-11-22",
-      "close": 60687.01985948896
+      "date": "2026-11-23",
+      "close": 61172.01580644091
+    },
+    {
+      "date": "2026-11-23",
+      "close": 61208.096288001114
     }
   ],
   "blocks": [
     {
-      "height": 977129,
-      "id": "0000000000000000000073d800359328d830870852cbea1d37e2cc2c54a2965a",
-      "timestamp": 1795396373,
-      "txCount": 2915
+      "height": 977200,
+      "id": "000000000000000000016b62f76491f2263475ccb36871294632ace78c53a947",
+      "timestamp": 1795435910,
+      "txCount": 2605
     },
     {
-      "height": 977128,
-      "id": "00000000000000000000cc9fe851cfc987cfcae7381f96451160b0f6ec36c4d4",
-      "timestamp": 1795395998,
-      "txCount": 2931
+      "height": 977199,
+      "id": "00000000000000000000f2d72ed813c008526e320753cf30b5ab1bcc8f33b3f9",
+      "timestamp": 1795435277,
+      "txCount": 3920
     },
     {
-      "height": 977127,
-      "id": "00000000000000000000201a915c332a09318405e8e0fdad0887ed9d4b6aafec",
-      "timestamp": 1795394645,
-      "txCount": 2344
+      "height": 977198,
+      "id": "00000000000000000000af37a2ade943285ac34bfe272e6acb578ecb9b316f07",
+      "timestamp": 1795433874,
+      "txCount": 4950
     },
     {
-      "height": 977126,
-      "id": "000000000000000000001036f7121cd97a29b7d030b418b83ad33536c19ac37c",
-      "timestamp": 1795393404,
-      "txCount": 3078
+      "height": 977197,
+      "id": "00000000000000000001fc27ad7a2aaf75c8d3e67b1b8d0f28bfddef2fd5f4d1",
+      "timestamp": 1795433480,
+      "txCount": 6204
     },
     {
-      "height": 977125,
-      "id": "000000000000000000015a1229b9d724ef6dcf3a0f1cb573da455bf3aa9cbe4f",
-      "timestamp": 1795391724,
-      "txCount": 900
+      "height": 977196,
+      "id": "000000000000000000018b41559e0955ab42df32d9d6f583e5eda54345cbe0af",
+      "timestamp": 1795433149,
+      "txCount": 6340
     },
     {
-      "height": 977124,
-      "id": "00000000000000000000663048004362a4cf48f3610e365efd19f07d5dc69ff9",
-      "timestamp": 1795391668,
-      "txCount": 1139
+      "height": 977195,
+      "id": "0000000000000000000158bb468ebf4708de336ae9bb0058186fc693f19b65be",
+      "timestamp": 1795433072,
+      "txCount": 3507
     },
     {
-      "height": 977123,
-      "id": "00000000000000000001c4befe75ac8354b53942cc40476110e9f7eec86d6b9d",
-      "timestamp": 1795391516,
-      "txCount": 1722
+      "height": 977194,
+      "id": "00000000000000000000a4c4bf9c706a6e4e69ff90fe5c3b0a8cfcea8a6878c3",
+      "timestamp": 1795431871,
+      "txCount": 4753
     },
     {
-      "height": 977122,
-      "id": "00000000000000000001c3b3973b673e7052e48680ef5f3f12598090eae0f709",
-      "timestamp": 1795390849,
-      "txCount": 582
+      "height": 977193,
+      "id": "00000000000000000000731eebe4a8a2ad0116f7783bc4578f89ff9fbba0b3c0",
+      "timestamp": 1795431158,
+      "txCount": 7546
     }
   ],
   "news": [
     {
+      "title": "Bitcoin rebounds from 2-year low as Wall Street futures recover",
+      "link": "https://www.coindesk.com/markets/2026/11/23/bitcoin-rebounds-from-2-year-low-as-wall-street-futures-recover",
+      "pubDate": "Mon, 23 Nov 2026 11:51:09 +0000"
+    },
+    {
+      "title": "Japan to ramp up crypto tax audits after uncovering $24.5 million in hidden income",
+      "link": "https://www.coindesk.com/business/2026/11/23/japan-to-ramp-up-crypto-tax-audits-after-uncovering-usd24-5-million-in-hidden-income",
+      "pubDate": "Mon, 23 Nov 2026 11:33:00 +0000"
+    },
+    {
+      "title": "Live updates: Bitcoin climbs back above $61,000 as stocks rebound from AI rout",
+      "link": "https://www.coindesk.com/markets/2026/11/23/live-updates-bitcoin-climbs-back-above-usd61-000-as-stocks-rebound-from-ai-rout",
+      "pubDate": "Mon, 23 Nov 2026 11:29:09 +0000"
+    },
+    {
+      "title": "South Korea to expand cryptocurrency account freezes and curb illicit transfers abroad",
+      "link": "https://www.coindesk.com/policy/2026/11/23/south-korea-to-expand-cryptocurrency-account-freezes-and-curb-illicit-transfers-abroad",
+      "pubDate": "Mon, 23 Nov 2026 10:53:19 +0000"
+    },
+    {
+      "title": "Bitcoin breaks a record streak of 'lower highs.' Here's what it means",
+      "link": "https://www.coindesk.com/markets/2026/11/23/bitcoin-breaks-a-record-streak-of-lower-highs-here-s-what-it-means",
+      "pubDate": "Mon, 23 Nov 2026 10:31:02 +0000"
+    },
+    {
+      "title": "U.S. inflation, Thanksgiving trading: Crypto Week Ahead",
+      "link": "https://www.coindesk.com/markets/2026/11/23/u-s-inflation-thanksgiving-trading-crypto-week-ahead",
+      "pubDate": "Mon, 23 Nov 2026 09:40:25 +0000"
+    },
+    {
+      "title": "Crypto thieves are using online ads to infect iPhones with a single tap, research finds",
+      "link": "https://www.coindesk.com/tech/2026/11/23/moldyroost-malvertizing-campaign-uses-one-tap-iphone-hacks-to-hunt-crypto-wallet-keys-research-shows",
+      "pubDate": "Mon, 23 Nov 2026 07:45:30 +0000"
+    },
+    {
+      "title": "This Swedish bitcoin treasury firm lost 30 BTC trading part of its own stack",
+      "link": "https://www.coindesk.com/markets/2026/11/23/this-swedish-bitcoin-treasury-firm-lost-30-btc-trading-part-of-its-own-stack",
+      "pubDate": "Mon, 23 Nov 2026 07:18:45 +0000"
+    },
+    {
+      "title": "Cardano holders are turning down a $4 million request for running its flagship event",
+      "link": "https://www.coindesk.com/markets/2026/11/23/cardano-holders-are-turning-down-a-usd4-million-request-for-running-its-flagship-event",
+      "pubDate": "Mon, 23 Nov 2026 06:15:45 +0000"
+    },
+    {
+      "title": "Bitcoin sold for $17,000 on Kraken's Canadian dollar market, and the trades stand",
+      "link": "https://www.coindesk.com/markets/2026/11/23/bitcoin-sold-for-usd17-000-on-kraken-s-canadian-dollar-market-and-the-trades-stand",
+      "pubDate": "Mon, 23 Nov 2026 05:42:22 +0000"
+    },
+    {
+      "title": "Market rout kills 50 basis points December Fed rate hike bets",
+      "link": "https://www.coindesk.com/markets/2026/11/23/market-rout-kills-50-basis-points-december-fed-rate-hike-bets",
+      "pubDate": "Mon, 23 Nov 2026 04:45:47 +0000"
+    },
+    {
       "title": "More on the pending oversight hearings: State of Crypto",
       "link": "https://www.coindesk.com/",
       "pubDate": "Sun, 22 Nov 2026 19:30:00 +0000"
-    },
-    {
-      "title": "Bitcoin's quantum security challenge extends to bridges, custodians and millions of coins",
-      "link": "https://www.coindesk.com/tech/2026/11/22/bitcoin-s-quantum-security-challenge-extends-to-bridges-custodians-and-millions-of-coins",
-      "pubDate": "Sun, 22 Nov 2026 14:00:00 +0000"
-    },
-    {
-      "title": "Bitcoin rebounds above $60,000 after $1.8 billion crypto liquidation wave",
-      "link": "https://www.coindesk.com/markets/2026/11/21/bitcoin-bounces-9-from-two-year-low-to-retake-usd60-000-as-traders-eye-monday-s-stock-open",
-      "pubDate": "Sat, 21 Nov 2026 17:50:00 +0000"
-    },
-    {
-      "title": "Cross-chain protocol Chainflip's FLIP tanks 30% after suspected $4.86 million vault drain",
-      "link": "https://www.coindesk.com/business/2026/11/21/cross-chain-protocol-chainflip-s-flip-tanks-30-after-suspected-usd4-86-million-vault-drain",
-      "pubDate": "Sat, 21 Nov 2026 16:41:00 +0000"
-    },
-    {
-      "title": "OpenAI, Anthropic and rivals seek AI agent rules to prevent commerce chaos",
-      "link": "https://www.coindesk.com/tech/2026/11/21/openai-anthropic-and-rivals-seek-ai-agent-rules-to-prevent-commerce-chaos",
-      "pubDate": "Sat, 21 Nov 2026 14:00:00 +0000"
-    },
-    {
-      "title": "Ether treasury firm BTCS warns SEC its $54 million Aave loan could be liquidated",
-      "link": "https://www.coindesk.com/markets/2026/11/21/ether-treasury-firm-btcs-warns-sec-its-usd54-million-aave-loan-could-be-liquidated",
-      "pubDate": "Sat, 21 Nov 2026 12:30:00 +0000"
-    },
-    {
-      "title": "Bitcoin nodes could be stalled by repeating one ID 50,000 times. AI found the bug",
-      "link": "https://www.coindesk.com/markets/2026/11/21/bitcoin-nodes-could-be-stalled-by-repeating-one-id-50-000-times-ai-found-the-bug",
-      "pubDate": "Sat, 21 Nov 2026 06:16:42 +0000"
-    },
-    {
-      "title": "XRP falls 10% as long bets unwind and ETF assets slip below $1 billion",
-      "link": "https://www.coindesk.com/markets/2026/11/21/xrp-falls-10-as-long-bets-unwind-and-etf-assets-slip-below-usd1-billion",
-      "pubDate": "Sat, 21 Nov 2026 05:59:19 +0000"
-    },
-    {
-      "title": "Bitcoin tanks below $57,000 for the first time in two years, and its not alone",
-      "link": "https://www.coindesk.com/markets/2026/11/21/bitcoin-tanks-below-usd57-000-for-the-first-time-in-two-years-and-its-not-alone",
-      "pubDate": "Sat, 21 Nov 2026 04:10:07 +0000"
-    },
-    {
-      "title": "Kalshi races to get ahead of New York order that could shut down exchange",
-      "link": "https://www.coindesk.com/policy/2026/11/20/kalshi-races-to-get-ahead-of-new-york-order-that-could-shut-down-exchange",
-      "pubDate": "Fri, 20 Nov 2026 22:51:14 +0000"
-    },
-    {
-      "title": "Fairmint plans tokenized stock venue on Canton, Ethereum under SEC experiment",
-      "link": "https://www.coindesk.com/business/2026/11/20/fairmint-plans-tokenized-stock-venue-on-canton-ethereum-under-sec-experiment",
-      "pubDate": "Fri, 20 Nov 2026 22:05:31 +0000"
-    },
-    {
-      "title": "Bitcoin plunges below $59,000 as rush to cash puts new bear market lows back in play",
-      "link": "https://www.coindesk.com/markets/2026/11/20/bitcoin-plunges-below-usd59-000-as-rush-to-cash-puts-new-bear-market-lows-back-in-play",
-      "pubDate": "Fri, 20 Nov 2026 18:13:52 +0000"
     }
   ]
 }
