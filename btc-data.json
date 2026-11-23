@@ -1,13 +1,13 @@
 {
-  "fetchedAt": "2026-11-22T19:30:29.301Z",
+  "fetchedAt": "2026-11-23T01:37:03.020Z",
   "price": {
-    "usd": 60622,
-    "time": 1795375507
+    "usd": 60973,
+    "time": 1795397409
   },
   "moves": {
-    "d1": 0.8328134893280437,
-    "d7": -7.171366442695481,
-    "d30": -25.252440240454675
+    "d1": 1.4166331840717694,
+    "d7": -6.633890767550909,
+    "d30": -24.819653571001332
   },
   "history90d": [
     {
@@ -377,55 +377,60 @@
   ],
   "blocks": [
     {
-      "height": 977090,
-      "id": "00000000000000000000c11ba77090e027149ce4b78a099c12eed05d7470f3f6",
-      "timestamp": 1795375497,
-      "txCount": 3680
+      "height": 977129,
+      "id": "0000000000000000000073d800359328d830870852cbea1d37e2cc2c54a2965a",
+      "timestamp": 1795396373,
+      "txCount": 2915
     },
     {
-      "height": 977089,
-      "id": "000000000000000000019b0526fa8c3f633d0482a001f9e2dd59faf6c382dd7c",
-      "timestamp": 1795374213,
-      "txCount": 3301
+      "height": 977128,
+      "id": "00000000000000000000cc9fe851cfc987cfcae7381f96451160b0f6ec36c4d4",
+      "timestamp": 1795395998,
+      "txCount": 2931
     },
     {
-      "height": 977088,
-      "id": "000000000000000000002e3f320493a6ced5c12e3bee6aaddbcf9126c04b0c79",
-      "timestamp": 1795373445,
-      "txCount": 5077
+      "height": 977127,
+      "id": "00000000000000000000201a915c332a09318405e8e0fdad0887ed9d4b6aafec",
+      "timestamp": 1795394645,
+      "txCount": 2344
     },
     {
-      "height": 977087,
-      "id": "000000000000000000008376c867c22034bfc4fa5bdf33a28b37d53e419752a1",
-      "timestamp": 1795372934,
-      "txCount": 2761
+      "height": 977126,
+      "id": "000000000000000000001036f7121cd97a29b7d030b418b83ad33536c19ac37c",
+      "timestamp": 1795393404,
+      "txCount": 3078
     },
     {
-      "height": 977086,
-      "id": "00000000000000000000000adc29a240c73ab3f353729c78b44fda3f9331bebf",
-      "timestamp": 1795372061,
-      "txCount": 3776
+      "height": 977125,
+      "id": "000000000000000000015a1229b9d724ef6dcf3a0f1cb573da455bf3aa9cbe4f",
+      "timestamp": 1795391724,
+      "txCount": 900
     },
     {
-      "height": 977085,
-      "id": "000000000000000000012aeedffa3e05b802a16dd2b4832defda7c6b8550422a",
-      "timestamp": 1795371447,
-      "txCount": 6102
+      "height": 977124,
+      "id": "00000000000000000000663048004362a4cf48f3610e365efd19f07d5dc69ff9",
+      "timestamp": 1795391668,
+      "txCount": 1139
     },
     {
-      "height": 977084,
-      "id": "00000000000000000001b52f17194d63dda35de1134313b790a6b4c3f741f52a",
-      "timestamp": 1795371004,
-      "txCount": 3257
+      "height": 977123,
+      "id": "00000000000000000001c4befe75ac8354b53942cc40476110e9f7eec86d6b9d",
+      "timestamp": 1795391516,
+      "txCount": 1722
     },
     {
-      "height": 977083,
-      "id": "0000000000000000000116e327c82014e06c26602ad313876e5bc16a22b6e5b1",
-      "timestamp": 1795370844,
-      "txCount": 3541
+      "height": 977122,
+      "id": "00000000000000000001c3b3973b673e7052e48680ef5f3f12598090eae0f709",
+      "timestamp": 1795390849,
+      "txCount": 582
     }
   ],
   "news": [
+    {
+      "title": "More on the pending oversight hearings: State of Crypto",
+      "link": "https://www.coindesk.com/",
+      "pubDate": "Sun, 22 Nov 2026 19:30:00 +0000"
+    },
     {
       "title": "Bitcoin's quantum security challenge extends to bridges, custodians and millions of coins",
       "link": "https://www.coindesk.com/tech/2026/11/22/bitcoin-s-quantum-security-challenge-extends-to-bridges-custodians-and-millions-of-coins",
@@ -480,11 +485,6 @@
       "title": "Bitcoin plunges below $59,000 as rush to cash puts new bear market lows back in play",
       "link": "https://www.coindesk.com/markets/2026/11/20/bitcoin-plunges-below-usd59-000-as-rush-to-cash-puts-new-bear-market-lows-back-in-play",
       "pubDate": "Fri, 20 Nov 2026 18:13:52 +0000"
-    },
-    {
-      "title": "Former Point72 head of proprietary research says AI could turn data into a new asset class for Wall Street",
-      "link": "https://www.coindesk.com/markets/2026/11/20/former-point72-head-of-proprietary-research-says-ai-could-turn-data-into-a-new-asset-class-for-wall-street",
-      "pubDate": "Fri, 20 Nov 2026 14:54:30 +0000"
     }
   ]
 }
