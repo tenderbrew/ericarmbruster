@@ -1,19 +1,15 @@
 {
-  "fetchedAt": "2026-11-23T12:21:40.669Z",
+  "fetchedAt": "2026-11-24T02:09:30.093Z",
   "price": {
-    "usd": 61268,
-    "time": 1795436107
+    "usd": 60732,
+    "time": 1795485908
   },
   "moves": {
-    "d1": 0.15690866533284442,
-    "d7": -5.510216050860162,
-    "d30": -24.18318625633128
+    "d1": -0.8093536322957728,
+    "d7": -6.40692016047939,
+    "d30": -24.13132535626622
   },
   "history90d": [
-    {
-      "date": "2026-08-26",
-      "close": 78511.2331116067
-    },
     {
       "date": "2026-08-27",
       "close": 79018.03405750773
@@ -371,120 +367,124 @@
       "close": 61172.01580644091
     },
     {
-      "date": "2026-11-23",
-      "close": 61208.096288001114
+      "date": "2026-11-24",
+      "close": 61227.54737867492
+    },
+    {
+      "date": "2026-11-24",
+      "close": 60912.4367854996
     }
   ],
   "blocks": [
     {
-      "height": 977200,
-      "id": "000000000000000000016b62f76491f2263475ccb36871294632ace78c53a947",
-      "timestamp": 1795435910,
-      "txCount": 2605
+      "height": 977309,
+      "id": "00000000000000000000961c8fce9506832cc7b1c4b1728788a1d4f9ca39a36e",
+      "timestamp": 1795485944,
+      "txCount": 1370
     },
     {
-      "height": 977199,
-      "id": "00000000000000000000f2d72ed813c008526e320753cf30b5ab1bcc8f33b3f9",
-      "timestamp": 1795435277,
-      "txCount": 3920
+      "height": 977308,
+      "id": "0000000000000000000021703ba5bf18eaa73b80b6e06030e9a603201c6256bc",
+      "timestamp": 1795485757,
+      "txCount": 2160
     },
     {
-      "height": 977198,
-      "id": "00000000000000000000af37a2ade943285ac34bfe272e6acb578ecb9b316f07",
-      "timestamp": 1795433874,
-      "txCount": 4950
+      "height": 977307,
+      "id": "0000000000000000000204d5c8c19abd044ad920ef334d4a9b3baf52d6737e3f",
+      "timestamp": 1795485051,
+      "txCount": 1364
     },
     {
-      "height": 977197,
-      "id": "00000000000000000001fc27ad7a2aaf75c8d3e67b1b8d0f28bfddef2fd5f4d1",
-      "timestamp": 1795433480,
-      "txCount": 6204
+      "height": 977306,
+      "id": "00000000000000000000a0e20cbcc0663184bf227887a550163c517450f8bd7f",
+      "timestamp": 1795484840,
+      "txCount": 1075
     },
     {
-      "height": 977196,
-      "id": "000000000000000000018b41559e0955ab42df32d9d6f583e5eda54345cbe0af",
-      "timestamp": 1795433149,
-      "txCount": 6340
+      "height": 977305,
+      "id": "00000000000000000000d438e9856fc038ff68c17efd322c82084a7ae66eeaff",
+      "timestamp": 1795484620,
+      "txCount": 1601
     },
     {
-      "height": 977195,
-      "id": "0000000000000000000158bb468ebf4708de336ae9bb0058186fc693f19b65be",
-      "timestamp": 1795433072,
-      "txCount": 3507
+      "height": 977304,
+      "id": "000000000000000000004a12c4d7ead828182c766affb06cb0aa71f5fbaebede",
+      "timestamp": 1795483977,
+      "txCount": 477
     },
     {
-      "height": 977194,
-      "id": "00000000000000000000a4c4bf9c706a6e4e69ff90fe5c3b0a8cfcea8a6878c3",
-      "timestamp": 1795431871,
-      "txCount": 4753
+      "height": 977303,
+      "id": "0000000000000000000210f9a6aa80b3f2c95a5611228c98125bb272edf45a9d",
+      "timestamp": 1795483902,
+      "txCount": 2461
     },
     {
-      "height": 977193,
-      "id": "00000000000000000000731eebe4a8a2ad0116f7783bc4578f89ff9fbba0b3c0",
-      "timestamp": 1795431158,
-      "txCount": 7546
+      "height": 977302,
+      "id": "000000000000000000002c40025c0612260b42aea593daee0f1cc34bd3ce5d59",
+      "timestamp": 1795483193,
+      "txCount": 2024
     }
   ],
   "news": [
     {
-      "title": "Bitcoin rebounds from 2-year low as Wall Street futures recover",
-      "link": "https://www.coindesk.com/markets/2026/11/23/bitcoin-rebounds-from-2-year-low-as-wall-street-futures-recover",
-      "pubDate": "Mon, 23 Nov 2026 11:51:09 +0000"
+      "title": "U.S. CFTC sets policies on event contract data, using crypto to check financial boxes",
+      "link": "https://www.coindesk.com/policy/2026/11/23/u-s-cftc-sets-policies-on-event-contract-data-using-crypto-to-check-financial-boxes",
+      "pubDate": "Tue, 24 Nov 2026 00:25:04 +0000"
     },
     {
-      "title": "Japan to ramp up crypto tax audits after uncovering $24.5 million in hidden income",
-      "link": "https://www.coindesk.com/business/2026/11/23/japan-to-ramp-up-crypto-tax-audits-after-uncovering-usd24-5-million-in-hidden-income",
-      "pubDate": "Mon, 23 Nov 2026 11:33:00 +0000"
+      "title": "New York judge declines to block Kalshi from operating in the state for now",
+      "link": "https://www.coindesk.com/policy/2026/11/23/new-york-judge-declines-to-block-kalshi-from-operating-in-the-state-for-now",
+      "pubDate": "Mon, 23 Nov 2026 18:22:03 +0000"
     },
     {
-      "title": "Live updates: Bitcoin climbs back above $61,000 as stocks rebound from AI rout",
-      "link": "https://www.coindesk.com/markets/2026/11/23/live-updates-bitcoin-climbs-back-above-usd61-000-as-stocks-rebound-from-ai-rout",
-      "pubDate": "Mon, 23 Nov 2026 11:29:09 +0000"
+      "title": "Nvidia's Jensen Huang faces Senate scrutiny despite Trump-backed return as CEO",
+      "link": "https://www.coindesk.com/business/2026/11/23/nvidia-s-jensen-huang-faces-senate-scrutiny-despite-trump-backed-return-as-ceo",
+      "pubDate": "Mon, 23 Nov 2026 18:12:05 +0000"
     },
     {
-      "title": "South Korea to expand cryptocurrency account freezes and curb illicit transfers abroad",
-      "link": "https://www.coindesk.com/policy/2026/11/23/south-korea-to-expand-cryptocurrency-account-freezes-and-curb-illicit-transfers-abroad",
-      "pubDate": "Mon, 23 Nov 2026 10:53:19 +0000"
+      "title": "Bitcoin rebound already losing steam as AI trade returns with a bang",
+      "link": "https://www.coindesk.com/markets/2026/11/23/bitcoin-rebound-already-losing-steam-as-ai-trade-returns-with-a-bank",
+      "pubDate": "Mon, 23 Nov 2026 17:31:27 +0000"
     },
     {
-      "title": "Bitcoin breaks a record streak of 'lower highs.' Here's what it means",
-      "link": "https://www.coindesk.com/markets/2026/11/23/bitcoin-breaks-a-record-streak-of-lower-highs-here-s-what-it-means",
-      "pubDate": "Mon, 23 Nov 2026 10:31:02 +0000"
+      "title": "Cathie Wood's ARK Invest pulls the plug on two planned crypto ETFs",
+      "link": "https://www.coindesk.com/business/2026/11/23/cathie-wood-s-ark-invest-pulls-the-plug-on-two-planned-crypto-etfs",
+      "pubDate": "Mon, 23 Nov 2026 16:39:03 +0000"
     },
     {
-      "title": "U.S. inflation, Thanksgiving trading: Crypto Week Ahead",
-      "link": "https://www.coindesk.com/markets/2026/11/23/u-s-inflation-thanksgiving-trading-crypto-week-ahead",
-      "pubDate": "Mon, 23 Nov 2026 09:40:25 +0000"
+      "title": "Binance hackers push $247 million through transactions designed to cloud the source",
+      "link": "https://www.coindesk.com/business/2026/11/23/binance-hackers-push-usd247-million-through-transactions-designed-to-cloud-the-source",
+      "pubDate": "Mon, 23 Nov 2026 15:29:01 +0000"
     },
     {
-      "title": "Crypto thieves are using online ads to infect iPhones with a single tap, research finds",
-      "link": "https://www.coindesk.com/tech/2026/11/23/moldyroost-malvertizing-campaign-uses-one-tap-iphone-hacks-to-hunt-crypto-wallet-keys-research-shows",
-      "pubDate": "Mon, 23 Nov 2026 07:45:30 +0000"
+      "title": "Eric Trump-backed American Bitcoin secures $150 million loan against its bitcoin",
+      "link": "https://www.coindesk.com/business/2026/11/23/eric-trump-backed-american-bitcoin-secures-usd150-million-loan-against-its-bitcoin",
+      "pubDate": "Mon, 23 Nov 2026 15:02:32 +0000"
     },
     {
-      "title": "This Swedish bitcoin treasury firm lost 30 BTC trading part of its own stack",
-      "link": "https://www.coindesk.com/markets/2026/11/23/this-swedish-bitcoin-treasury-firm-lost-30-btc-trading-part-of-its-own-stack",
-      "pubDate": "Mon, 23 Nov 2026 07:18:45 +0000"
+      "title": "Bitcoin's 5-year return is nearly zero, great narratives are fading and what's left is the Fed",
+      "link": "https://www.coindesk.com/opinion/2026/11/23/bitcoin-s-5-year-return-is-nearly-zero-great-narratives-are-fading-and-what-s-left-is-the-fed",
+      "pubDate": "Mon, 23 Nov 2026 14:43:18 +0000"
     },
     {
-      "title": "Cardano holders are turning down a $4 million request for running its flagship event",
-      "link": "https://www.coindesk.com/markets/2026/11/23/cardano-holders-are-turning-down-a-usd4-million-request-for-running-its-flagship-event",
-      "pubDate": "Mon, 23 Nov 2026 06:15:45 +0000"
+      "title": "Nvidia soars as Jensen Huang returns to lead company",
+      "link": "https://www.coindesk.com/markets/2026/11/23/jensen-huang-returns-as-nvidia-ceo-as-shares-jump-27",
+      "pubDate": "Mon, 23 Nov 2026 14:13:44 +0000"
     },
     {
-      "title": "Bitcoin sold for $17,000 on Kraken's Canadian dollar market, and the trades stand",
-      "link": "https://www.coindesk.com/markets/2026/11/23/bitcoin-sold-for-usd17-000-on-kraken-s-canadian-dollar-market-and-the-trades-stand",
-      "pubDate": "Mon, 23 Nov 2026 05:42:22 +0000"
+      "title": "Fidelity Investments, Strive, Etoro join OKX-ICE tokenized securities venue",
+      "link": "https://www.coindesk.com/business/2026/11/23/fidelity-investments-strive-etoro-join-okx-ice-tokenized-securities-venue",
+      "pubDate": "Mon, 23 Nov 2026 13:49:44 +0000"
     },
     {
-      "title": "Market rout kills 50 basis points December Fed rate hike bets",
-      "link": "https://www.coindesk.com/markets/2026/11/23/market-rout-kills-50-basis-points-december-fed-rate-hike-bets",
-      "pubDate": "Mon, 23 Nov 2026 04:45:47 +0000"
+      "title": "Live updates: Bitcoin climbs only modestly as Nasdaq soars 6% on Huang return",
+      "link": "https://www.coindesk.com/tech/2026/11/23/live-news-wall-street-rebounds-as-dollar-index-hits-highest-since-march-2025",
+      "pubDate": "Mon, 23 Nov 2026 13:01:20 +0000"
     },
     {
-      "title": "More on the pending oversight hearings: State of Crypto",
-      "link": "https://www.coindesk.com/",
-      "pubDate": "Sun, 22 Nov 2026 19:30:00 +0000"
+      "title": "Bitcoin's losing streak is second-longest ever, and some observers see more downside",
+      "link": "https://www.coindesk.com/daybook-us/2026/11/23/bitcoin-s-losing-streak-is-second-longest-ever-and-some-observers-see-more-downside",
+      "pubDate": "Mon, 23 Nov 2026 12:30:25 +0000"
     }
   ]
 }
