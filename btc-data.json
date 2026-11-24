@@ -1,13 +1,13 @@
 {
-  "fetchedAt": "2026-11-24T02:09:30.093Z",
+  "fetchedAt": "2026-11-24T13:33:59.066Z",
   "price": {
-    "usd": 60732,
-    "time": 1795485908
+    "usd": 60058,
+    "time": 1795526707
   },
   "moves": {
-    "d1": -0.8093536322957728,
-    "d7": -6.40692016047939,
-    "d30": -24.13132535626622
+    "d1": -1.9101653238559502,
+    "d7": -7.44561040305064,
+    "d30": -24.973311240312135
   },
   "history90d": [
     {
@@ -372,60 +372,105 @@
     },
     {
       "date": "2026-11-24",
-      "close": 60912.4367854996
+      "close": 60035.62487149792
     }
   ],
   "blocks": [
     {
-      "height": 977309,
-      "id": "00000000000000000000961c8fce9506832cc7b1c4b1728788a1d4f9ca39a36e",
-      "timestamp": 1795485944,
-      "txCount": 1370
+      "height": 977370,
+      "id": "000000000000000000010cced745f374c7cc865af0753f0d844cf5a46af9939b",
+      "timestamp": 1795526260,
+      "txCount": 5767
     },
     {
-      "height": 977308,
-      "id": "0000000000000000000021703ba5bf18eaa73b80b6e06030e9a603201c6256bc",
-      "timestamp": 1795485757,
-      "txCount": 2160
+      "height": 977369,
+      "id": "00000000000000000000c6358195016e77fc115264e8cd7737e7349d986e6ef7",
+      "timestamp": 1795525948,
+      "txCount": 5904
     },
     {
-      "height": 977307,
-      "id": "0000000000000000000204d5c8c19abd044ad920ef334d4a9b3baf52d6737e3f",
-      "timestamp": 1795485051,
-      "txCount": 1364
+      "height": 977368,
+      "id": "00000000000000000001b8abcc7417f4fa3f7a516f11072e61a60e61ea28b5e7",
+      "timestamp": 1795525573,
+      "txCount": 3432
     },
     {
-      "height": 977306,
-      "id": "00000000000000000000a0e20cbcc0663184bf227887a550163c517450f8bd7f",
-      "timestamp": 1795484840,
-      "txCount": 1075
+      "height": 977367,
+      "id": "0000000000000000000149815f74ebe24750314def0b78ba173ac3614539fb30",
+      "timestamp": 1795525714,
+      "txCount": 3518
     },
     {
-      "height": 977305,
-      "id": "00000000000000000000d438e9856fc038ff68c17efd322c82084a7ae66eeaff",
-      "timestamp": 1795484620,
-      "txCount": 1601
+      "height": 977366,
+      "id": "00000000000000000001f07ecd76d78bcb4fdb96344fc7ab11a8184b944304aa",
+      "timestamp": 1795524584,
+      "txCount": 5557
     },
     {
-      "height": 977304,
-      "id": "000000000000000000004a12c4d7ead828182c766affb06cb0aa71f5fbaebede",
-      "timestamp": 1795483977,
-      "txCount": 477
+      "height": 977365,
+      "id": "0000000000000000000044933838a013e41216abb47ee59e776a938ea913d05a",
+      "timestamp": 1795524225,
+      "txCount": 2351
     },
     {
-      "height": 977303,
-      "id": "0000000000000000000210f9a6aa80b3f2c95a5611228c98125bb272edf45a9d",
-      "timestamp": 1795483902,
-      "txCount": 2461
+      "height": 977364,
+      "id": "00000000000000000001dc2b27e0ef756e4462e8a7100133d392186938957799",
+      "timestamp": 1795523634,
+      "txCount": 1851
     },
     {
-      "height": 977302,
-      "id": "000000000000000000002c40025c0612260b42aea593daee0f1cc34bd3ce5d59",
-      "timestamp": 1795483193,
-      "txCount": 2024
+      "height": 977363,
+      "id": "00000000000000000000985023033ec246f0a1cadfdeb7213272d298e8d7c426",
+      "timestamp": 1795523381,
+      "txCount": 2341
     }
   ],
   "news": [
+    {
+      "title": "Live updates: Bitcoin pulls back to $60,000, stock rally fades, as tariffs re-enter the picture",
+      "link": "https://www.coindesk.com/tech/2026/11/24/live-updates-bitcoin-pulls-back-to-usd60-000-as-stock-rally-fails-to-budge-crypto",
+      "pubDate": "Tue, 24 Nov 2026 12:47:40 +0000"
+    },
+    {
+      "title": "Bitcoin drops as November spot ETF outflows increase to record $4.71 billion",
+      "link": "https://www.coindesk.com/daybook-us/2026/11/24/bitcoin-drops-as-november-spot-etf-outflows-increase-to-record-usd4-71-billion",
+      "pubDate": "Tue, 24 Nov 2026 12:36:28 +0000"
+    },
+    {
+      "title": "JPMorgan, HSBC and StoneX complete first digital gold trades in London",
+      "link": "https://www.coindesk.com/business/2026/11/24/jpmorgan-hsbc-and-stonex-complete-first-digital-gold-trades-in-london",
+      "pubDate": "Tue, 24 Nov 2026 12:04:39 +0000"
+    },
+    {
+      "title": "Bitcoin hands back Monday's Nvidia-driven gains, liquidations triple",
+      "link": "https://www.coindesk.com/markets/2026/11/24/bitcoin-hands-back-monday-s-nvidia-driven-gains-liquidations-triple",
+      "pubDate": "Tue, 24 Nov 2026 11:31:56 +0000"
+    },
+    {
+      "title": "Bitcoin’s drop to $55,000 left a record 11.6 million BTC underwater",
+      "link": "https://www.coindesk.com/markets/2026/11/24/bitcoin-s-drop-to-usd55-000-left-a-record-11-6-million-btc-underwater",
+      "pubDate": "Tue, 24 Nov 2026 11:11:38 +0000"
+    },
+    {
+      "title": "U.S. seeks $1.1 billion seized in Binance hack as North Korean funds keep moving",
+      "link": "https://www.coindesk.com/policy/2026/11/24/u-s-seeks-usd1-1-billion-seized-in-binance-hack-as-north-korean-funds-keep-moving",
+      "pubDate": "Tue, 24 Nov 2026 10:58:51 +0000"
+    },
+    {
+      "title": "BTCS sells more than half its ether to repay $43.8 million in Aave debt",
+      "link": "https://www.coindesk.com/business/2026/11/24/btcs-sells-more-than-half-its-ether-to-repay-usd43-8-million-in-aave-debt",
+      "pubDate": "Tue, 24 Nov 2026 10:55:30 +0000"
+    },
+    {
+      "title": "South Korea regulator backs bank-controlled stablecoins after months of dispute",
+      "link": "https://www.coindesk.com/policy/2026/11/24/south-korea-regulator-backs-bank-controlled-stablecoins-after-months-of-dispute",
+      "pubDate": "Tue, 24 Nov 2026 10:29:14 +0000"
+    },
+    {
+      "title": "Bitcoin falls below $60,000 as rally on Jensen Huang’s Nvidia return fades",
+      "link": "https://www.coindesk.com/markets/2026/11/24/bitcoin-falls-below-usd60-000-as-rally-on-jensen-huang-s-nvidia-return-fades",
+      "pubDate": "Tue, 24 Nov 2026 10:08:38 +0000"
+    },
     {
       "title": "U.S. CFTC sets policies on event contract data, using crypto to check financial boxes",
       "link": "https://www.coindesk.com/policy/2026/11/23/u-s-cftc-sets-policies-on-event-contract-data-using-crypto-to-check-financial-boxes",
@@ -440,51 +485,6 @@
       "title": "Nvidia's Jensen Huang faces Senate scrutiny despite Trump-backed return as CEO",
       "link": "https://www.coindesk.com/business/2026/11/23/nvidia-s-jensen-huang-faces-senate-scrutiny-despite-trump-backed-return-as-ceo",
       "pubDate": "Mon, 23 Nov 2026 18:12:05 +0000"
-    },
-    {
-      "title": "Bitcoin rebound already losing steam as AI trade returns with a bang",
-      "link": "https://www.coindesk.com/markets/2026/11/23/bitcoin-rebound-already-losing-steam-as-ai-trade-returns-with-a-bank",
-      "pubDate": "Mon, 23 Nov 2026 17:31:27 +0000"
-    },
-    {
-      "title": "Cathie Wood's ARK Invest pulls the plug on two planned crypto ETFs",
-      "link": "https://www.coindesk.com/business/2026/11/23/cathie-wood-s-ark-invest-pulls-the-plug-on-two-planned-crypto-etfs",
-      "pubDate": "Mon, 23 Nov 2026 16:39:03 +0000"
-    },
-    {
-      "title": "Binance hackers push $247 million through transactions designed to cloud the source",
-      "link": "https://www.coindesk.com/business/2026/11/23/binance-hackers-push-usd247-million-through-transactions-designed-to-cloud-the-source",
-      "pubDate": "Mon, 23 Nov 2026 15:29:01 +0000"
-    },
-    {
-      "title": "Eric Trump-backed American Bitcoin secures $150 million loan against its bitcoin",
-      "link": "https://www.coindesk.com/business/2026/11/23/eric-trump-backed-american-bitcoin-secures-usd150-million-loan-against-its-bitcoin",
-      "pubDate": "Mon, 23 Nov 2026 15:02:32 +0000"
-    },
-    {
-      "title": "Bitcoin's 5-year return is nearly zero, great narratives are fading and what's left is the Fed",
-      "link": "https://www.coindesk.com/opinion/2026/11/23/bitcoin-s-5-year-return-is-nearly-zero-great-narratives-are-fading-and-what-s-left-is-the-fed",
-      "pubDate": "Mon, 23 Nov 2026 14:43:18 +0000"
-    },
-    {
-      "title": "Nvidia soars as Jensen Huang returns to lead company",
-      "link": "https://www.coindesk.com/markets/2026/11/23/jensen-huang-returns-as-nvidia-ceo-as-shares-jump-27",
-      "pubDate": "Mon, 23 Nov 2026 14:13:44 +0000"
-    },
-    {
-      "title": "Fidelity Investments, Strive, Etoro join OKX-ICE tokenized securities venue",
-      "link": "https://www.coindesk.com/business/2026/11/23/fidelity-investments-strive-etoro-join-okx-ice-tokenized-securities-venue",
-      "pubDate": "Mon, 23 Nov 2026 13:49:44 +0000"
-    },
-    {
-      "title": "Live updates: Bitcoin climbs only modestly as Nasdaq soars 6% on Huang return",
-      "link": "https://www.coindesk.com/tech/2026/11/23/live-news-wall-street-rebounds-as-dollar-index-hits-highest-since-march-2025",
-      "pubDate": "Mon, 23 Nov 2026 13:01:20 +0000"
-    },
-    {
-      "title": "Bitcoin's losing streak is second-longest ever, and some observers see more downside",
-      "link": "https://www.coindesk.com/daybook-us/2026/11/23/bitcoin-s-losing-streak-is-second-longest-ever-and-some-observers-see-more-downside",
-      "pubDate": "Mon, 23 Nov 2026 12:30:25 +0000"
     }
   ]
 }
