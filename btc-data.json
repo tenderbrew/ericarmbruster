@@ -1,13 +1,13 @@
 {
-  "fetchedAt": "2026-11-24T13:33:59.066Z",
+  "fetchedAt": "2026-11-24T23:51:36.631Z",
   "price": {
-    "usd": 60058,
-    "time": 1795526707
+    "usd": 59752,
+    "time": 1795564206
   },
   "moves": {
-    "d1": -1.9101653238559502,
-    "d7": -7.44561040305064,
-    "d30": -24.973311240312135
+    "d1": -2.409940364831342,
+    "d7": -7.917181937511764,
+    "d30": -25.355577828617847
   },
   "history90d": [
     {
@@ -372,62 +372,87 @@
     },
     {
       "date": "2026-11-24",
-      "close": 60035.62487149792
+      "close": 59729.788968861474
     }
   ],
   "blocks": [
     {
-      "height": 977370,
-      "id": "000000000000000000010cced745f374c7cc865af0753f0d844cf5a46af9939b",
-      "timestamp": 1795526260,
-      "txCount": 5767
+      "height": 977431,
+      "id": "000000000000000000012384d656c47d19a6eabb2cf507960f0c2d33757fe7d0",
+      "timestamp": 1795563658,
+      "txCount": 7384
     },
     {
-      "height": 977369,
-      "id": "00000000000000000000c6358195016e77fc115264e8cd7737e7349d986e6ef7",
-      "timestamp": 1795525948,
-      "txCount": 5904
+      "height": 977430,
+      "id": "00000000000000000001bc1e46c91bcd6aba1777bfd91473eab7e084139b4262",
+      "timestamp": 1795563602,
+      "txCount": 3014
     },
     {
-      "height": 977368,
-      "id": "00000000000000000001b8abcc7417f4fa3f7a516f11072e61a60e61ea28b5e7",
-      "timestamp": 1795525573,
-      "txCount": 3432
+      "height": 977429,
+      "id": "00000000000000000001b14cdbd9b104fdb444f8b4fbe681c7eb8587dd2d0741",
+      "timestamp": 1795562504,
+      "txCount": 2495
     },
     {
-      "height": 977367,
-      "id": "0000000000000000000149815f74ebe24750314def0b78ba173ac3614539fb30",
-      "timestamp": 1795525714,
-      "txCount": 3518
+      "height": 977428,
+      "id": "000000000000000000018aa09a11daf8f7bdd91995c2b0586c55e72e6420e67a",
+      "timestamp": 1795561584,
+      "txCount": 5417
     },
     {
-      "height": 977366,
-      "id": "00000000000000000001f07ecd76d78bcb4fdb96344fc7ab11a8184b944304aa",
-      "timestamp": 1795524584,
-      "txCount": 5557
+      "height": 977427,
+      "id": "00000000000000000001394c28af93075a20a1e327a72cdf4b09316aae8a9f6d",
+      "timestamp": 1795561308,
+      "txCount": 4057
     },
     {
-      "height": 977365,
-      "id": "0000000000000000000044933838a013e41216abb47ee59e776a938ea913d05a",
-      "timestamp": 1795524225,
-      "txCount": 2351
+      "height": 977426,
+      "id": "000000000000000000004f3a3818a84777bd26da86139b77a1be2280a20e3e14",
+      "timestamp": 1795560478,
+      "txCount": 4314
     },
     {
-      "height": 977364,
-      "id": "00000000000000000001dc2b27e0ef756e4462e8a7100133d392186938957799",
-      "timestamp": 1795523634,
-      "txCount": 1851
+      "height": 977425,
+      "id": "00000000000000000000f14298ca1869a15b42451ee38d7f538d7b5761215c24",
+      "timestamp": 1795560086,
+      "txCount": 5310
     },
     {
-      "height": 977363,
-      "id": "00000000000000000000985023033ec246f0a1cadfdeb7213272d298e8d7c426",
-      "timestamp": 1795523381,
-      "txCount": 2341
+      "height": 977424,
+      "id": "000000000000000000016ae3b5cf19e3abd6b2b8c833f04c87a34d51d5220c95",
+      "timestamp": 1795559389,
+      "txCount": 1441
     }
   ],
   "news": [
     {
-      "title": "Live updates: Bitcoin pulls back to $60,000, stock rally fades, as tariffs re-enter the picture",
+      "title": "Utah moves to drop criminal pursuit of Kalshi after the firm halted services there",
+      "link": "https://www.coindesk.com/policy/2026/11/24/utah-moves-to-drop-criminal-pursuit-of-kalshi-after-the-firm-halted-services-there",
+      "pubDate": "Tue, 24 Nov 2026 17:50:08 +0000"
+    },
+    {
+      "title": "'AI trade never died': Traders see room for market recovery, but bitcoin's participation is another story",
+      "link": "https://www.coindesk.com/markets/2026/11/24/ai-trade-never-died-traders-see-room-for-market-recovery-despite-bitcoin-s-weakness",
+      "pubDate": "Tue, 24 Nov 2026 16:00:25 +0000"
+    },
+    {
+      "title": "Anchorage Digital to unveil new asset-management subsidiary",
+      "link": "https://www.coindesk.com/business/2026/11/24/anchorage-digital-to-unveil-new-asset-management-subsidiary",
+      "pubDate": "Tue, 24 Nov 2026 15:06:32 +0000"
+    },
+    {
+      "title": "South Korea proposes ending 2017 ICO ban to boost jobs and onshore crypto investment",
+      "link": "https://www.coindesk.com/policy/2026/11/24/south-korea-proposes-ending-2017-ico-ban-to-boost-jobs-and-onshore-crypto-investment",
+      "pubDate": "Tue, 24 Nov 2026 14:40:53 +0000"
+    },
+    {
+      "title": "Crypto trader Ansem says his wallet was hacked as $2 million in memecoins were sold",
+      "link": "https://www.coindesk.com/markets/2026/11/24/a-wallet-linked-to-popular-crypto-trader-ansem-sold-usd2-million-in-memecoins-as-his-namesake-token-cratered",
+      "pubDate": "Tue, 24 Nov 2026 12:47:49 +0000"
+    },
+    {
+      "title": "Live updates: Bitcoin pulls back below $60,000, stock rally fades, as tariffs re-enter the picture",
       "link": "https://www.coindesk.com/tech/2026/11/24/live-updates-bitcoin-pulls-back-to-usd60-000-as-stock-rally-fails-to-budge-crypto",
       "pubDate": "Tue, 24 Nov 2026 12:47:40 +0000"
     },
@@ -460,31 +485,6 @@
       "title": "BTCS sells more than half its ether to repay $43.8 million in Aave debt",
       "link": "https://www.coindesk.com/business/2026/11/24/btcs-sells-more-than-half-its-ether-to-repay-usd43-8-million-in-aave-debt",
       "pubDate": "Tue, 24 Nov 2026 10:55:30 +0000"
-    },
-    {
-      "title": "South Korea regulator backs bank-controlled stablecoins after months of dispute",
-      "link": "https://www.coindesk.com/policy/2026/11/24/south-korea-regulator-backs-bank-controlled-stablecoins-after-months-of-dispute",
-      "pubDate": "Tue, 24 Nov 2026 10:29:14 +0000"
-    },
-    {
-      "title": "Bitcoin falls below $60,000 as rally on Jensen Huang’s Nvidia return fades",
-      "link": "https://www.coindesk.com/markets/2026/11/24/bitcoin-falls-below-usd60-000-as-rally-on-jensen-huang-s-nvidia-return-fades",
-      "pubDate": "Tue, 24 Nov 2026 10:08:38 +0000"
-    },
-    {
-      "title": "U.S. CFTC sets policies on event contract data, using crypto to check financial boxes",
-      "link": "https://www.coindesk.com/policy/2026/11/23/u-s-cftc-sets-policies-on-event-contract-data-using-crypto-to-check-financial-boxes",
-      "pubDate": "Tue, 24 Nov 2026 00:25:04 +0000"
-    },
-    {
-      "title": "New York judge declines to block Kalshi from operating in the state for now",
-      "link": "https://www.coindesk.com/policy/2026/11/23/new-york-judge-declines-to-block-kalshi-from-operating-in-the-state-for-now",
-      "pubDate": "Mon, 23 Nov 2026 18:22:03 +0000"
-    },
-    {
-      "title": "Nvidia's Jensen Huang faces Senate scrutiny despite Trump-backed return as CEO",
-      "link": "https://www.coindesk.com/business/2026/11/23/nvidia-s-jensen-huang-faces-senate-scrutiny-despite-trump-backed-return-as-ceo",
-      "pubDate": "Mon, 23 Nov 2026 18:12:05 +0000"
     }
   ]
 }
