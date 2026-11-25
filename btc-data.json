@@ -1,13 +1,13 @@
 {
-  "fetchedAt": "2026-11-25T08:21:51.248Z",
+  "fetchedAt": "2026-11-25T19:11:13.406Z",
   "price": {
-    "usd": 58852,
-    "time": 1795594508
+    "usd": 59864,
+    "time": 1795633507
   },
   "moves": {
-    "d1": -1.5176320612753424,
-    "d7": -6.57920412621813,
-    "d30": -26.46205629992905
+    "d1": 0.17583895676973604,
+    "d7": -4.972770267992965,
+    "d30": -25.19752155133135
   },
   "history90d": [
     {
@@ -372,119 +372,119 @@
     },
     {
       "date": "2026-11-25",
-      "close": 58871.50540636068
+      "close": 59871.02332693967
     }
   ],
   "blocks": [
     {
-      "height": 977485,
-      "id": "00000000000000000001e2f33ab7e60c020cc6c001815a55695238a8339bd618",
-      "timestamp": 1795593876,
-      "txCount": 1687
+      "height": 977555,
+      "id": "00000000000000000001fd8915fe1ee64486272dfff297b7f3ed45f1829ed68d",
+      "timestamp": 1795633337,
+      "txCount": 7919
     },
     {
-      "height": 977484,
-      "id": "00000000000000000001897eaa4def0332d49835ded5d8120219f7bd90371f9b",
-      "timestamp": 1795593629,
-      "txCount": 3497
+      "height": 977554,
+      "id": "0000000000000000000139cf45a9b78a295201843bb207ac8691b838812df154",
+      "timestamp": 1795633316,
+      "txCount": 2407
     },
     {
-      "height": 977483,
-      "id": "000000000000000000001ee683877e39ec8ba50d451aa9afaf440de61cf893c9",
-      "timestamp": 1795593553,
-      "txCount": 3484
+      "height": 977553,
+      "id": "0000000000000000000192880cd52410548e847a0716dbc50ca4668ea7857012",
+      "timestamp": 1795633160,
+      "txCount": 3422
     },
     {
-      "height": 977482,
-      "id": "00000000000000000001e13b3a534282f9889e4df4c1514b067f222ef314937e",
-      "timestamp": 1795592692,
-      "txCount": 3813
+      "height": 977552,
+      "id": "00000000000000000000cd26508054a820b280cde2fd3af0f32b1c047246f22b",
+      "timestamp": 1795632048,
+      "txCount": 5827
     },
     {
-      "height": 977481,
-      "id": "0000000000000000000043c88db7e281010d7773214cb6b5fbfe626cce3b654a",
-      "timestamp": 1795588576,
-      "txCount": 7570
+      "height": 977551,
+      "id": "00000000000000000001f7e225a9e3674e06dd7ad3a269c0efdf2b107414c106",
+      "timestamp": 1795631826,
+      "txCount": 4694
     },
     {
-      "height": 977480,
-      "id": "000000000000000000010ba58e27d359a09e7bdaf43718171eb619306df13681",
-      "timestamp": 1795588560,
-      "txCount": 58
+      "height": 977550,
+      "id": "000000000000000000016c6b577af1971a3e0fbdf3797e44b0e2e4ab8edb3020",
+      "timestamp": 1795631993,
+      "txCount": 7001
     },
     {
-      "height": 977479,
-      "id": "00000000000000000001bed29e8a4d13f313b55bac4e29f13b6c6a2fbf707e34",
-      "timestamp": 1795588538,
-      "txCount": 5365
+      "height": 977549,
+      "id": "000000000000000000009461522061aad6c5035e764f792709031ff0157cf5fe",
+      "timestamp": 1795631598,
+      "txCount": 3294
     },
     {
-      "height": 977478,
-      "id": "0000000000000000000103a57c7e01b5fb4e56860232987585f894b5d69553ff",
-      "timestamp": 1795588141,
-      "txCount": 7298
+      "height": 977548,
+      "id": "0000000000000000000035acb594297ee84e8fabba12372c3b03eabe153e7d10",
+      "timestamp": 1795631396,
+      "txCount": 2905
     }
   ],
   "news": [
     {
-      "title": "Solana developers move to stop validators finishing work on blocks that already lost",
-      "link": "https://www.coindesk.com/tech/2026/11/25/solana-developers-move-to-stop-validators-finishing-work-on-blocks-that-already-lost",
-      "pubDate": "Wed, 25 Nov 2026 06:33:10 +0000"
+      "title": "French Senate blocks new crypto tax and wallet list critics called a kidnapping risk",
+      "link": "https://www.coindesk.com/business/2026/11/25/french-senate-blocks-new-crypto-tax-and-wallet-list-critics-called-a-kidnapping-risk",
+      "pubDate": "Wed, 25 Nov 2026 18:24:47 +0000"
     },
     {
-      "title": "Just 10 accounts drove all of the XRP Ledger's trading growth last quarter",
-      "link": "https://www.coindesk.com/markets/2026/11/25/ten-accounts-drove-all-of-the-xrp-ledger-s-trading-growth-last-quarter",
-      "pubDate": "Wed, 25 Nov 2026 06:15:08 +0000"
+      "title": "'This time actually seems different': Crypto veterans brace for more pain as bitcoin tumbles",
+      "link": "https://www.coindesk.com/markets/2026/11/25/this-time-actually-seems-different-crypto-veterans-brace-for-more-pain-as-bitcoin-tumbles",
+      "pubDate": "Wed, 25 Nov 2026 17:38:33 +0000"
     },
     {
-      "title": "Crypto traders can now hedge Nvidia, Anthropic and oil bets on Derive",
-      "link": "https://www.coindesk.com/markets/2026/11/25/crypto-traders-can-now-hedge-nvidia-and-oil-bets-on-derive",
-      "pubDate": "Wed, 25 Nov 2026 04:57:22 +0000"
+      "title": "EU bank watchdog seeks European Commission rules for crypto firms offering DeFi lending",
+      "link": "https://www.coindesk.com/policy/2026/11/25/eu-bank-watchdog-seeks-european-commission-rules-for-crypto-firms-offering-defi-lending",
+      "pubDate": "Wed, 25 Nov 2026 16:02:31 +0000"
     },
     {
-      "title": "A year after buying bitcoin, Czech central bank won't say what it's worth",
-      "link": "https://www.coindesk.com/markets/2026/11/23/a-year-after-buying-bitcoin-czech-central-bank-won-t-say-what-it-s-worth",
-      "pubDate": "Wed, 25 Nov 2026 04:50:08 +0000"
+      "title": "Ukrainian lawmakers pass crypto tax and regulation bill expected to bring in $330 million",
+      "link": "https://www.coindesk.com/business/2026/11/25/ukrainian-lawmakers-pass-crypto-tax-and-regulation-bill-expected-to-bring-in-usd330-million",
+      "pubDate": "Wed, 25 Nov 2026 16:02:07 +0000"
     },
     {
-      "title": "Trump says he's willing to give Nvidia's Huang a pardon, doesn't think he needs one",
-      "link": "https://www.coindesk.com/policy/2026/11/24/trump-says-he-s-willing-to-give-nvidia-s-huang-a-pardon-doesn-t-think-he-needs-one",
-      "pubDate": "Wed, 25 Nov 2026 03:35:20 +0000"
+      "title": "Crypto Long & Short: Bitcoin investors can’t keep ignoring Japan",
+      "link": "https://www.coindesk.com/coindesk-indices/2026/11/25/crypto-long-and-short-bitcoin-investors-can-t-keep-ignoring-japan",
+      "pubDate": "Wed, 25 Nov 2026 15:59:44 +0000"
     },
     {
-      "title": "Utah moves to drop criminal pursuit of Kalshi after the firm halted services there",
-      "link": "https://www.coindesk.com/policy/2026/11/24/utah-moves-to-drop-criminal-pursuit-of-kalshi-after-the-firm-halted-services-there",
-      "pubDate": "Tue, 24 Nov 2026 17:50:08 +0000"
+      "title": "South Korean crypto exchange Bithumb warns of phishing after deeper October breach probe",
+      "link": "https://www.coindesk.com/tech/2026/11/25/south-korean-crypto-exchange-bithumb-warns-of-phishing-after-deeper-october-breach-probe",
+      "pubDate": "Wed, 25 Nov 2026 14:47:17 +0000"
     },
     {
-      "title": "'AI trade never died': Traders see room for market recovery, but bitcoin's participation is another story",
-      "link": "https://www.coindesk.com/markets/2026/11/24/ai-trade-never-died-traders-see-room-for-market-recovery-despite-bitcoin-s-weakness",
-      "pubDate": "Tue, 24 Nov 2026 16:00:25 +0000"
+      "title": "Fed’s preferred inflation gauge lands with a December rate increase already priced in",
+      "link": "https://www.coindesk.com/daybook-us/2026/11/25/fed-s-preferred-inflation-gauge-lands-with-a-december-rate-increase-already-priced-in",
+      "pubDate": "Wed, 25 Nov 2026 12:18:46 +0000"
     },
     {
-      "title": "Anchorage Digital to unveil new asset-management subsidiary",
-      "link": "https://www.coindesk.com/business/2026/11/24/anchorage-digital-to-unveil-new-asset-management-subsidiary",
-      "pubDate": "Tue, 24 Nov 2026 15:06:32 +0000"
+      "title": "Ether, DeFi fall twice as hard as bitcoin as equities selloff resumes",
+      "link": "https://www.coindesk.com/markets/2026/11/25/ether-defi-fall-twice-as-hard-as-bitcoin-as-equities-selloff-resumes",
+      "pubDate": "Wed, 25 Nov 2026 11:57:50 +0000"
     },
     {
-      "title": "South Korea proposes ending 2017 ICO ban to boost jobs and onshore crypto investment",
-      "link": "https://www.coindesk.com/policy/2026/11/24/south-korea-proposes-ending-2017-ico-ban-to-boost-jobs-and-onshore-crypto-investment",
-      "pubDate": "Tue, 24 Nov 2026 14:40:53 +0000"
+      "title": "Italy’s UniCredit launches six-year bitcoin certificate with gains capped at 65%",
+      "link": "https://www.coindesk.com/business/2026/11/25/italy-s-unicredit-debuts-six-year-bitcoin-certificate-with-100-capital-protection-and-65-cap",
+      "pubDate": "Wed, 25 Nov 2026 11:51:54 +0000"
     },
     {
-      "title": "Crypto trader Ansem says his wallet was hacked as $2 million in memecoins were sold",
-      "link": "https://www.coindesk.com/markets/2026/11/24/a-wallet-linked-to-popular-crypto-trader-ansem-sold-usd2-million-in-memecoins-as-his-namesake-token-cratered",
-      "pubDate": "Tue, 24 Nov 2026 12:47:49 +0000"
+      "title": "Gold's haven status has lost its edge over bitcoin, and the Fed's to blame",
+      "link": "https://www.coindesk.com/markets/2026/11/25/bitcoin-hasn-t-paid-its-holders-for-the-risk-it-carries-and-now-gold-is-doing-the-same",
+      "pubDate": "Wed, 25 Nov 2026 11:30:32 +0000"
     },
     {
-      "title": "Live updates: Bitcoin pulls back below $60,000, stock rally fades, as tariffs re-enter the picture",
-      "link": "https://www.coindesk.com/tech/2026/11/24/live-updates-bitcoin-pulls-back-to-usd60-000-as-stock-rally-fails-to-budge-crypto",
-      "pubDate": "Tue, 24 Nov 2026 12:47:40 +0000"
+      "title": "EU proposes $54.7 billion fund for AI, quantum startups alongside post-quantum security push",
+      "link": "https://www.coindesk.com/business/2026/11/25/eu-proposes-usd54-7-billion-fund-for-ai-quantum-startups-alongside-post-quantum-security-push",
+      "pubDate": "Wed, 25 Nov 2026 11:00:27 +0000"
     },
     {
-      "title": "Bitcoin drops as November spot ETF outflows increase to record $4.71 billion",
-      "link": "https://www.coindesk.com/daybook-us/2026/11/24/bitcoin-drops-as-november-spot-etf-outflows-increase-to-record-usd4-71-billion",
-      "pubDate": "Tue, 24 Nov 2026 12:36:28 +0000"
+      "title": "Live updates: Bitcoin climbs from lows as markets attempt midday bounce",
+      "link": "https://www.coindesk.com/business/2026/11/25/live-updates-bitcoin-slips-back-under-usd60-000-as-hype-leads-altcoins-lower",
+      "pubDate": "Wed, 25 Nov 2026 08:35:47 +0000"
     }
   ]
 }
