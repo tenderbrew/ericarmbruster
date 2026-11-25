@@ -1,19 +1,15 @@
 {
-  "fetchedAt": "2026-11-24T23:51:36.631Z",
+  "fetchedAt": "2026-11-25T08:21:51.248Z",
   "price": {
-    "usd": 59752,
-    "time": 1795564206
+    "usd": 58852,
+    "time": 1795594508
   },
   "moves": {
-    "d1": -2.409940364831342,
-    "d7": -7.917181937511764,
-    "d30": -25.355577828617847
+    "d1": -1.5176320612753424,
+    "d7": -6.57920412621813,
+    "d30": -26.46205629992905
   },
   "history90d": [
-    {
-      "date": "2026-08-27",
-      "close": 79018.03405750773
-    },
     {
       "date": "2026-08-28",
       "close": 80268.37474707834
@@ -371,61 +367,90 @@
       "close": 61227.54737867492
     },
     {
-      "date": "2026-11-24",
-      "close": 59729.788968861474
+      "date": "2026-11-25",
+      "close": 59758.920537549915
+    },
+    {
+      "date": "2026-11-25",
+      "close": 58871.50540636068
     }
   ],
   "blocks": [
     {
-      "height": 977431,
-      "id": "000000000000000000012384d656c47d19a6eabb2cf507960f0c2d33757fe7d0",
-      "timestamp": 1795563658,
-      "txCount": 7384
+      "height": 977485,
+      "id": "00000000000000000001e2f33ab7e60c020cc6c001815a55695238a8339bd618",
+      "timestamp": 1795593876,
+      "txCount": 1687
     },
     {
-      "height": 977430,
-      "id": "00000000000000000001bc1e46c91bcd6aba1777bfd91473eab7e084139b4262",
-      "timestamp": 1795563602,
-      "txCount": 3014
+      "height": 977484,
+      "id": "00000000000000000001897eaa4def0332d49835ded5d8120219f7bd90371f9b",
+      "timestamp": 1795593629,
+      "txCount": 3497
     },
     {
-      "height": 977429,
-      "id": "00000000000000000001b14cdbd9b104fdb444f8b4fbe681c7eb8587dd2d0741",
-      "timestamp": 1795562504,
-      "txCount": 2495
+      "height": 977483,
+      "id": "000000000000000000001ee683877e39ec8ba50d451aa9afaf440de61cf893c9",
+      "timestamp": 1795593553,
+      "txCount": 3484
     },
     {
-      "height": 977428,
-      "id": "000000000000000000018aa09a11daf8f7bdd91995c2b0586c55e72e6420e67a",
-      "timestamp": 1795561584,
-      "txCount": 5417
+      "height": 977482,
+      "id": "00000000000000000001e13b3a534282f9889e4df4c1514b067f222ef314937e",
+      "timestamp": 1795592692,
+      "txCount": 3813
     },
     {
-      "height": 977427,
-      "id": "00000000000000000001394c28af93075a20a1e327a72cdf4b09316aae8a9f6d",
-      "timestamp": 1795561308,
-      "txCount": 4057
+      "height": 977481,
+      "id": "0000000000000000000043c88db7e281010d7773214cb6b5fbfe626cce3b654a",
+      "timestamp": 1795588576,
+      "txCount": 7570
     },
     {
-      "height": 977426,
-      "id": "000000000000000000004f3a3818a84777bd26da86139b77a1be2280a20e3e14",
-      "timestamp": 1795560478,
-      "txCount": 4314
+      "height": 977480,
+      "id": "000000000000000000010ba58e27d359a09e7bdaf43718171eb619306df13681",
+      "timestamp": 1795588560,
+      "txCount": 58
     },
     {
-      "height": 977425,
-      "id": "00000000000000000000f14298ca1869a15b42451ee38d7f538d7b5761215c24",
-      "timestamp": 1795560086,
-      "txCount": 5310
+      "height": 977479,
+      "id": "00000000000000000001bed29e8a4d13f313b55bac4e29f13b6c6a2fbf707e34",
+      "timestamp": 1795588538,
+      "txCount": 5365
     },
     {
-      "height": 977424,
-      "id": "000000000000000000016ae3b5cf19e3abd6b2b8c833f04c87a34d51d5220c95",
-      "timestamp": 1795559389,
-      "txCount": 1441
+      "height": 977478,
+      "id": "0000000000000000000103a57c7e01b5fb4e56860232987585f894b5d69553ff",
+      "timestamp": 1795588141,
+      "txCount": 7298
     }
   ],
   "news": [
+    {
+      "title": "Solana developers move to stop validators finishing work on blocks that already lost",
+      "link": "https://www.coindesk.com/tech/2026/11/25/solana-developers-move-to-stop-validators-finishing-work-on-blocks-that-already-lost",
+      "pubDate": "Wed, 25 Nov 2026 06:33:10 +0000"
+    },
+    {
+      "title": "Just 10 accounts drove all of the XRP Ledger's trading growth last quarter",
+      "link": "https://www.coindesk.com/markets/2026/11/25/ten-accounts-drove-all-of-the-xrp-ledger-s-trading-growth-last-quarter",
+      "pubDate": "Wed, 25 Nov 2026 06:15:08 +0000"
+    },
+    {
+      "title": "Crypto traders can now hedge Nvidia, Anthropic and oil bets on Derive",
+      "link": "https://www.coindesk.com/markets/2026/11/25/crypto-traders-can-now-hedge-nvidia-and-oil-bets-on-derive",
+      "pubDate": "Wed, 25 Nov 2026 04:57:22 +0000"
+    },
+    {
+      "title": "A year after buying bitcoin, Czech central bank won't say what it's worth",
+      "link": "https://www.coindesk.com/markets/2026/11/23/a-year-after-buying-bitcoin-czech-central-bank-won-t-say-what-it-s-worth",
+      "pubDate": "Wed, 25 Nov 2026 04:50:08 +0000"
+    },
+    {
+      "title": "Trump says he's willing to give Nvidia's Huang a pardon, doesn't think he needs one",
+      "link": "https://www.coindesk.com/policy/2026/11/24/trump-says-he-s-willing-to-give-nvidia-s-huang-a-pardon-doesn-t-think-he-needs-one",
+      "pubDate": "Wed, 25 Nov 2026 03:35:20 +0000"
+    },
     {
       "title": "Utah moves to drop criminal pursuit of Kalshi after the firm halted services there",
       "link": "https://www.coindesk.com/policy/2026/11/24/utah-moves-to-drop-criminal-pursuit-of-kalshi-after-the-firm-halted-services-there",
@@ -460,31 +485,6 @@
       "title": "Bitcoin drops as November spot ETF outflows increase to record $4.71 billion",
       "link": "https://www.coindesk.com/daybook-us/2026/11/24/bitcoin-drops-as-november-spot-etf-outflows-increase-to-record-usd4-71-billion",
       "pubDate": "Tue, 24 Nov 2026 12:36:28 +0000"
-    },
-    {
-      "title": "JPMorgan, HSBC and StoneX complete first digital gold trades in London",
-      "link": "https://www.coindesk.com/business/2026/11/24/jpmorgan-hsbc-and-stonex-complete-first-digital-gold-trades-in-london",
-      "pubDate": "Tue, 24 Nov 2026 12:04:39 +0000"
-    },
-    {
-      "title": "Bitcoin hands back Monday's Nvidia-driven gains, liquidations triple",
-      "link": "https://www.coindesk.com/markets/2026/11/24/bitcoin-hands-back-monday-s-nvidia-driven-gains-liquidations-triple",
-      "pubDate": "Tue, 24 Nov 2026 11:31:56 +0000"
-    },
-    {
-      "title": "Bitcoin’s drop to $55,000 left a record 11.6 million BTC underwater",
-      "link": "https://www.coindesk.com/markets/2026/11/24/bitcoin-s-drop-to-usd55-000-left-a-record-11-6-million-btc-underwater",
-      "pubDate": "Tue, 24 Nov 2026 11:11:38 +0000"
-    },
-    {
-      "title": "U.S. seeks $1.1 billion seized in Binance hack as North Korean funds keep moving",
-      "link": "https://www.coindesk.com/policy/2026/11/24/u-s-seeks-usd1-1-billion-seized-in-binance-hack-as-north-korean-funds-keep-moving",
-      "pubDate": "Tue, 24 Nov 2026 10:58:51 +0000"
-    },
-    {
-      "title": "BTCS sells more than half its ether to repay $43.8 million in Aave debt",
-      "link": "https://www.coindesk.com/business/2026/11/24/btcs-sells-more-than-half-its-ether-to-repay-usd43-8-million-in-aave-debt",
-      "pubDate": "Tue, 24 Nov 2026 10:55:30 +0000"
     }
   ]
 }
