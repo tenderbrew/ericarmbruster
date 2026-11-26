@@ -1,19 +1,15 @@
 {
-  "fetchedAt": "2026-11-25T19:11:13.406Z",
+  "fetchedAt": "2026-11-26T03:30:27.751Z",
   "price": {
-    "usd": 59864,
-    "time": 1795633507
+    "usd": 60681,
+    "time": 1795663507
   },
   "moves": {
-    "d1": 0.17583895676973604,
-    "d7": -4.972770267992965,
-    "d30": -25.19752155133135
+    "d1": 0.5082510125395734,
+    "d7": -2.0031242590092146,
+    "d30": -24.900525851383605
   },
   "history90d": [
-    {
-      "date": "2026-08-28",
-      "close": 80268.37474707834
-    },
     {
       "date": "2026-08-29",
       "close": 77820.76428719184
@@ -371,58 +367,62 @@
       "close": 59758.920537549915
     },
     {
-      "date": "2026-11-25",
-      "close": 59871.02332693967
+      "date": "2026-11-26",
+      "close": 60374.147782582884
+    },
+    {
+      "date": "2026-11-26",
+      "close": 60714.16339197509
     }
   ],
   "blocks": [
     {
-      "height": 977555,
-      "id": "00000000000000000001fd8915fe1ee64486272dfff297b7f3ed45f1829ed68d",
-      "timestamp": 1795633337,
-      "txCount": 7919
+      "height": 977617,
+      "id": "00000000000000000000a8dd4c74ced8c5562c5ac99b164d9ca5c1cc731e2909",
+      "timestamp": 1795663477,
+      "txCount": 5392
     },
     {
-      "height": 977554,
-      "id": "0000000000000000000139cf45a9b78a295201843bb207ac8691b838812df154",
-      "timestamp": 1795633316,
-      "txCount": 2407
+      "height": 977616,
+      "id": "0000000000000000000213891aa907b47d5554bd09b15f6f89fabb7991a601fa",
+      "timestamp": 1795663283,
+      "txCount": 3663
     },
     {
-      "height": 977553,
-      "id": "0000000000000000000192880cd52410548e847a0716dbc50ca4668ea7857012",
-      "timestamp": 1795633160,
-      "txCount": 3422
+      "height": 977615,
+      "id": "000000000000000000008bb62ab71d0d2480ec8489c359ffe801b5896b739aeb",
+      "timestamp": 1795662867,
+      "txCount": 4331
     },
     {
-      "height": 977552,
-      "id": "00000000000000000000cd26508054a820b280cde2fd3af0f32b1c047246f22b",
-      "timestamp": 1795632048,
-      "txCount": 5827
+      "height": 977614,
+      "id": "0000000000000000000095d522a83f03890085c8cff36aa2c44f5f77bc7e754e",
+      "timestamp": 1795662430,
+      "txCount": 2770
     },
     {
-      "height": 977551,
-      "id": "00000000000000000001f7e225a9e3674e06dd7ad3a269c0efdf2b107414c106",
-      "timestamp": 1795631826,
-      "txCount": 4694
+      "height": 977613,
+      "id": "0000000000000000000145b528cd45460968c18ee931284180aaa4bd48332eeb",
+      "timestamp": 1795662386,
+      "txCount": 2544
     },
     {
-      "height": 977550,
-      "id": "000000000000000000016c6b577af1971a3e0fbdf3797e44b0e2e4ab8edb3020",
-      "timestamp": 1795631993,
-      "txCount": 7001
+      "height": 977612,
+      "id": "00000000000000000001f1bb196d775306bd4f51cdb7a80e42f2c4a7ba0f0789",
+      "timestamp": 1795660834,
+      "txCount": 462
     },
     {
-      "height": 977549,
-      "id": "000000000000000000009461522061aad6c5035e764f792709031ff0157cf5fe",
-      "timestamp": 1795631598,
-      "txCount": 3294
+      "height": 977611,
+      "id": "00000000000000000000b064fed6ba5a402a024085587fc1bf561cc63c379306",
+      "timestamp": 1795660700,
+      "txCount": 3375
     },
     {
-      "height": 977548,
-      "id": "0000000000000000000035acb594297ee84e8fabba12372c3b03eabe153e7d10",
-      "timestamp": 1795631396,
-      "txCount": 2905
+      "height": 977610,
+      "id": "00000000000000000000bdeae3432925bbe031804f9edf3cff99ee9e88668097",
+      "timestamp": 1795660624,
+      "txCount": 2162
     }
   ],
   "news": [
@@ -482,7 +482,7 @@
       "pubDate": "Wed, 25 Nov 2026 11:00:27 +0000"
     },
     {
-      "title": "Live updates: Bitcoin climbs from lows as markets attempt midday bounce",
+      "title": "Live updates: Bitcoin climbs from lows as markets bounce from big early declines",
       "link": "https://www.coindesk.com/business/2026/11/25/live-updates-bitcoin-slips-back-under-usd60-000-as-hype-leads-altcoins-lower",
       "pubDate": "Wed, 25 Nov 2026 08:35:47 +0000"
     }
