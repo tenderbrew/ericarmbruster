@@ -1,13 +1,13 @@
 {
-  "fetchedAt": "2026-11-27T01:41:13.320Z",
+  "fetchedAt": "2026-11-27T12:05:44.340Z",
   "price": {
-    "usd": 60632,
-    "time": 1795743306
+    "usd": 61573,
+    "time": 1795780806
   },
   "moves": {
-    "d1": 0.20096059826086865,
-    "d7": 3.084220301873297,
-    "d30": -25.398379699757566
+    "d1": 1.756065228208148,
+    "d7": 4.684072711558995,
+    "d30": -24.240573183354876
   },
   "history90d": [
     {
@@ -372,119 +372,119 @@
     },
     {
       "date": "2026-11-27",
-      "close": 60641.25769717938
+      "close": 61620.48352170801
     }
   ],
   "blocks": [
     {
-      "height": 977740,
-      "id": "00000000000000000001e6b75467211a922d250553fd9a6f17ddc68c97fdf6aa",
-      "timestamp": 1795742880,
-      "txCount": 4676
+      "height": 977803,
+      "id": "0000000000000000000179dc0eaea98685ac22cad38de69d7e2df9897b7581dd",
+      "timestamp": 1795780660,
+      "txCount": 6952
     },
     {
-      "height": 977739,
-      "id": "000000000000000000020dc042a6c7287032417d063c9a315dbb9c0bd7ecc5b9",
-      "timestamp": 1795742590,
-      "txCount": 7921
+      "height": 977802,
+      "id": "000000000000000000014800429ac38a6a3f076bd6eb51a19481dc9978be11b8",
+      "timestamp": 1795780212,
+      "txCount": 6912
     },
     {
-      "height": 977738,
-      "id": "0000000000000000000163900064a4cc4807dbd8bcaf35e322e694e6c387a780",
-      "timestamp": 1795742540,
-      "txCount": 3569
+      "height": 977801,
+      "id": "00000000000000000000462d7ced1c9ac7222fb7229ab9b6c0b9a976d3c19570",
+      "timestamp": 1795780023,
+      "txCount": 6127
     },
     {
-      "height": 977737,
-      "id": "00000000000000000000abc46a1f787622eb4551a840c083457ee881ac3018ae",
-      "timestamp": 1795741641,
-      "txCount": 5673
+      "height": 977800,
+      "id": "000000000000000000001bba1c304729fe69f383d9e8a8dba3fb5631530b1e7c",
+      "timestamp": 1795779862,
+      "txCount": 200
     },
     {
-      "height": 977736,
-      "id": "00000000000000000001c9c2d4ca067b00411ee7c72ab5803b7ad53102e941c9",
-      "timestamp": 1795741424,
-      "txCount": 7557
+      "height": 977799,
+      "id": "00000000000000000000026967755a797e27be072d8e81567c1c70b39ee6d53e",
+      "timestamp": 1795780090,
+      "txCount": 1532
     },
     {
-      "height": 977735,
-      "id": "000000000000000000015c35b1789b9ed9985dc816c97bdb27de47d1b564f3b8",
-      "timestamp": 1795741174,
-      "txCount": 5533
+      "height": 977798,
+      "id": "00000000000000000000dd9f25312c8412f6e53bc5ddfa3a3db899073e906a5c",
+      "timestamp": 1795779377,
+      "txCount": 3649
     },
     {
-      "height": 977734,
-      "id": "000000000000000000007a6498d5dd86937356df4f5f5f045ea81b8e2d217e8b",
-      "timestamp": 1795740751,
-      "txCount": 4446
+      "height": 977797,
+      "id": "000000000000000000011e5fa29f10f10e34d403d978610e351993f08d093d5f",
+      "timestamp": 1795778645,
+      "txCount": 3615
     },
     {
-      "height": 977733,
-      "id": "000000000000000000017e7895c216c3fb674693d4b519d49a39d23f279f622f",
-      "timestamp": 1795739620,
-      "txCount": 4373
+      "height": 977796,
+      "id": "000000000000000000016feb9b677bba9258d69f6c8cb213b8e64244e6d76ab4",
+      "timestamp": 1795778146,
+      "txCount": 4256
     }
   ],
   "news": [
     {
+      "title": "Bitcoin on course to end seven-week losing streak while trailing stock rebound",
+      "link": "https://www.coindesk.com/markets/2026/11/27/bitcoin-on-course-to-end-seven-week-losing-streak-while-trailing-stock-rebound",
+      "pubDate": "Fri, 27 Nov 2026 11:45:47 +0000"
+    },
+    {
+      "title": "Live news: Bitcoin rebounds above $61,000 as AI stocks lead premarket gains",
+      "link": "https://www.coindesk.com/tech/2026/11/27/live-news-bitcoin-rebounds-above-usd61-000-as-ai-stocks-lead-premarket-gains",
+      "pubDate": "Fri, 27 Nov 2026 11:34:37 +0000"
+    },
+    {
+      "title": "Next ECB chief favors tokenized bank deposits over stablecoins and bitcoin",
+      "link": "https://www.coindesk.com/policy/2026/11/27/next-ecb-chief-favors-tokenized-bank-deposits-over-stablecoins-and-bitcoin",
+      "pubDate": "Fri, 27 Nov 2026 11:22:42 +0000"
+    },
+    {
+      "title": "Injective asks SEC to allow order books for tokenized stock trading",
+      "link": "https://www.coindesk.com/markets/2026/11/27/injective-asks-sec-to-allow-order-books-for-tokenized-stock-trading",
+      "pubDate": "Fri, 27 Nov 2026 11:07:17 +0000"
+    },
+    {
+      "title": "Brazil’s stock exchange teams up with major banks to launch real-pegged stablecoin",
+      "link": "https://www.coindesk.com/business/2026/11/27/brazil-s-stock-exchange-teams-up-with-major-banks-to-launch-real-pegged-stablecoin",
+      "pubDate": "Fri, 27 Nov 2026 10:51:27 +0000"
+    },
+    {
+      "title": "Tether can freeze stolen crypto in minutes. Getting it back can take years.",
+      "link": "https://www.coindesk.com/business/2026/11/27/tether-can-freeze-stolen-crypto-in-minutes-getting-it-back-can-take-years",
+      "pubDate": "Fri, 27 Nov 2026 10:00:00 +0000"
+    },
+    {
+      "title": "Bitcoin tops $61,000 as Nasdaq futures extend Wednesday’s rebound",
+      "link": "https://www.coindesk.com/markets/2026/11/27/bitcoin-tops-usd61-000-as-nasdaq-futures-extend-wednesday-s-rebound",
+      "pubDate": "Fri, 27 Nov 2026 09:49:55 +0000"
+    },
+    {
+      "title": "Monero suffers biggest single-day slide in over 5 months. Here’s why",
+      "link": "https://www.coindesk.com/markets/2026/11/27/monero-suffers-biggest-single-day-slide-in-over-5-months-here-s-why",
+      "pubDate": "Fri, 27 Nov 2026 07:33:01 +0000"
+    },
+    {
+      "title": "Ripple's lending plan moves closer to tapping XRP Ledger's $800 million in stablecoins",
+      "link": "https://www.coindesk.com/markets/2026/11/27/ripple-s-lending-plan-moves-closer-to-tapping-xrp-ledger-s-usd950-million-in-stablecoins",
+      "pubDate": "Fri, 27 Nov 2026 05:06:32 +0000"
+    },
+    {
+      "title": "Binance says customer withdrawals are fully restored, four weeks after the $6.3 billion hack",
+      "link": "https://www.coindesk.com/markets/2026/11/27/binance-says-its-withdrawal-suspension-is-over-four-weeks-after-a-usd6-3-billion-hack",
+      "pubDate": "Fri, 27 Nov 2026 04:45:47 +0000"
+    },
+    {
+      "title": "Ethereum's much-awaited Glamsterdam upgrade cleared for December test. Here's what to know",
+      "link": "https://www.coindesk.com/tech/2026/11/27/ethereum-s-much-awaited-glamsterdam-upgrade-cleared-for-december-test-here-s-what-to-know",
+      "pubDate": "Fri, 27 Nov 2026 04:29:47 +0000"
+    },
+    {
       "title": "A tiny payment can expose the IP address behind a bitcoin wallet, developer finds",
       "link": "https://www.coindesk.com/tech/2026/11/26/a-tiny-payment-can-expose-the-ip-address-behind-a-bitcoin-wallet-developer-finds",
       "pubDate": "Thu, 26 Nov 2026 17:30:00 +0000"
-    },
-    {
-      "title": "Bitcoin’s dormant supply rises, a behavior seen during previous bear-market bottoming phases",
-      "link": "https://www.coindesk.com/markets/2026/11/26/bitcoin-s-dormant-supply-rises-a-behavior-seen-during-previous-bear-market-bottoming-phases",
-      "pubDate": "Thu, 26 Nov 2026 16:50:23 +0000"
-    },
-    {
-      "title": "Crypto for Advisors: Four questions to ask before trusting a crypto exchange",
-      "link": "https://www.coindesk.com/coindesk-indices/2026/11/26/crypto-for-advisors-four-questions-to-ask-before-trusting-a-crypto-exchange",
-      "pubDate": "Thu, 26 Nov 2026 15:42:43 +0000"
-    },
-    {
-      "title": "Spain gives anti-laundering unit power to freeze crypto accounts without a judge",
-      "link": "https://www.coindesk.com/business/2026/11/26/spain-gives-anti-laundering-unit-power-to-freeze-crypto-accounts-without-a-judge",
-      "pubDate": "Thu, 26 Nov 2026 14:05:58 +0000"
-    },
-    {
-      "title": "Standard Chartered's Zodia Custody suffers data breach, exposing client information",
-      "link": "https://www.coindesk.com/tech/2026/11/26/standard-chartered-s-zodia-custody-suffers-data-breach-exposing-client-information",
-      "pubDate": "Thu, 26 Nov 2026 12:38:51 +0000"
-    },
-    {
-      "title": "Bitcoin ETFs are bleeding cash and the Fed is unlikely to help",
-      "link": "https://www.coindesk.com/daybook-us/2026/11/26/bitcoin-etfs-are-bleeding-cash-and-the-fed-is-unlikely-to-help",
-      "pubDate": "Thu, 26 Nov 2026 12:14:46 +0000"
-    },
-    {
-      "title": "Hong Kong-based crypto trading firm Auros is winding down operations",
-      "link": "https://www.coindesk.com/markets/2026/11/26/major-crypto-trading-firm-auros-is-winding-down-operations-sources",
-      "pubDate": "Thu, 26 Nov 2026 11:27:50 +0000"
-    },
-    {
-      "title": "Bitcoin little changed, DeFi tokens lead the bounce as U.S. marks Thanksgiving",
-      "link": "https://www.coindesk.com/markets/2026/11/26/bitcoin-little-changed-defi-tokens-lead-the-bounce-as-u-s-marks-thanksgiving",
-      "pubDate": "Thu, 26 Nov 2026 11:17:22 +0000"
-    },
-    {
-      "title": "Nvidia shipment freeze and U.S. chip curbs put AI stocks under pressure",
-      "link": "https://www.coindesk.com/markets/2026/11/26/nvidia-shipment-freeze-and-u-s-chip-curbs-put-ai-stocks-under-pressure",
-      "pubDate": "Thu, 26 Nov 2026 10:56:08 +0000"
-    },
-    {
-      "title": "New York Attorney General wins $1.4 billion ruling against founders of crypto trading firm NovaTech",
-      "link": "https://www.coindesk.com/policy/2026/11/26/new-york-attorney-general-wins-usd1-4-billion-ruling-against-founders-of-crypto-trading-firm-novatech",
-      "pubDate": "Thu, 26 Nov 2026 10:40:33 +0000"
-    },
-    {
-      "title": "$7 billion of bitcoin options expire Friday, and the biggest bets look starkly different from October",
-      "link": "https://www.coindesk.com/markets/2026/11/26/usd7-billion-of-bitcoin-options-expire-friday-and-the-biggest-bets-look-starkly-different-from-october",
-      "pubDate": "Thu, 26 Nov 2026 08:01:33 +0000"
-    },
-    {
-      "title": "Zcash developers want to phase out older privacy system as a precaution against future attacks",
-      "link": "https://www.coindesk.com/tech/2026/11/26/zcash-developers-want-users-to-move-usd300-million-out-of-an-older-privacy-system",
-      "pubDate": "Thu, 26 Nov 2026 07:09:25 +0000"
     }
   ]
 }
