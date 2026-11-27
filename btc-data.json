@@ -1,19 +1,15 @@
 {
-  "fetchedAt": "2026-11-26T16:47:17.841Z",
+  "fetchedAt": "2026-11-27T01:41:13.320Z",
   "price": {
-    "usd": 60404,
-    "time": 1795711209
+    "usd": 60632,
+    "time": 1795743306
   },
   "moves": {
-    "d1": 0.04944536447060166,
-    "d7": -2.4504658417163983,
-    "d30": -25.243344103211474
+    "d1": 0.20096059826086865,
+    "d7": 3.084220301873297,
+    "d30": -25.398379699757566
   },
   "history90d": [
-    {
-      "date": "2026-08-29",
-      "close": 77820.76428719184
-    },
     {
       "date": "2026-08-30",
       "close": 78225.13950818499
@@ -371,61 +367,75 @@
       "close": 60374.147782582884
     },
     {
-      "date": "2026-11-26",
-      "close": 60485.89839996228
+      "date": "2026-11-27",
+      "close": 60510.39794228515
+    },
+    {
+      "date": "2026-11-27",
+      "close": 60641.25769717938
     }
   ],
   "blocks": [
     {
-      "height": 977696,
-      "id": "00000000000000000000c2e37f0ea0adeda7ec9af474ec50bb67ac07d9a96ae7",
-      "timestamp": 1795710752,
-      "txCount": 3549
+      "height": 977740,
+      "id": "00000000000000000001e6b75467211a922d250553fd9a6f17ddc68c97fdf6aa",
+      "timestamp": 1795742880,
+      "txCount": 4676
     },
     {
-      "height": 977695,
-      "id": "0000000000000000000005b96cd86c45054053b4e05bab7505f12bcc7c7edd8a",
-      "timestamp": 1795706630,
-      "txCount": 8155
+      "height": 977739,
+      "id": "000000000000000000020dc042a6c7287032417d063c9a315dbb9c0bd7ecc5b9",
+      "timestamp": 1795742590,
+      "txCount": 7921
     },
     {
-      "height": 977694,
-      "id": "00000000000000000001f03f00fd017f8344edf0f3f846ceade30c966e42b55f",
-      "timestamp": 1795706379,
-      "txCount": 5718
+      "height": 977738,
+      "id": "0000000000000000000163900064a4cc4807dbd8bcaf35e322e694e6c387a780",
+      "timestamp": 1795742540,
+      "txCount": 3569
     },
     {
-      "height": 977693,
-      "id": "00000000000000000001458ae69ac07eace71709eea5f5a3ba85b62c9b60fda4",
-      "timestamp": 1795705886,
-      "txCount": 4244
+      "height": 977737,
+      "id": "00000000000000000000abc46a1f787622eb4551a840c083457ee881ac3018ae",
+      "timestamp": 1795741641,
+      "txCount": 5673
     },
     {
-      "height": 977692,
-      "id": "00000000000000000001652c8eac2e406c2b8bcf462f6acce9a15e90676de1e9",
-      "timestamp": 1795705237,
-      "txCount": 5973
+      "height": 977736,
+      "id": "00000000000000000001c9c2d4ca067b00411ee7c72ab5803b7ad53102e941c9",
+      "timestamp": 1795741424,
+      "txCount": 7557
     },
     {
-      "height": 977691,
-      "id": "00000000000000000000488ea8906b683e3f46e149488c422c9ec691b369b7d3",
-      "timestamp": 1795704925,
-      "txCount": 6425
+      "height": 977735,
+      "id": "000000000000000000015c35b1789b9ed9985dc816c97bdb27de47d1b564f3b8",
+      "timestamp": 1795741174,
+      "txCount": 5533
     },
     {
-      "height": 977690,
-      "id": "00000000000000000001431bfa096b5a0cef5365b124af0bda278c421a60f083",
-      "timestamp": 1795704647,
-      "txCount": 2844
+      "height": 977734,
+      "id": "000000000000000000007a6498d5dd86937356df4f5f5f045ea81b8e2d217e8b",
+      "timestamp": 1795740751,
+      "txCount": 4446
     },
     {
-      "height": 977689,
-      "id": "000000000000000000004e8dc0c79d7e3a2e9b7753c8aee138249494e618330f",
-      "timestamp": 1795704057,
-      "txCount": 3930
+      "height": 977733,
+      "id": "000000000000000000017e7895c216c3fb674693d4b519d49a39d23f279f622f",
+      "timestamp": 1795739620,
+      "txCount": 4373
     }
   ],
   "news": [
+    {
+      "title": "A tiny payment can expose the IP address behind a bitcoin wallet, developer finds",
+      "link": "https://www.coindesk.com/tech/2026/11/26/a-tiny-payment-can-expose-the-ip-address-behind-a-bitcoin-wallet-developer-finds",
+      "pubDate": "Thu, 26 Nov 2026 17:30:00 +0000"
+    },
+    {
+      "title": "Bitcoin’s dormant supply rises, a behavior seen during previous bear-market bottoming phases",
+      "link": "https://www.coindesk.com/markets/2026/11/26/bitcoin-s-dormant-supply-rises-a-behavior-seen-during-previous-bear-market-bottoming-phases",
+      "pubDate": "Thu, 26 Nov 2026 16:50:23 +0000"
+    },
     {
       "title": "Crypto for Advisors: Four questions to ask before trusting a crypto exchange",
       "link": "https://www.coindesk.com/coindesk-indices/2026/11/26/crypto-for-advisors-four-questions-to-ask-before-trusting-a-crypto-exchange",
@@ -475,16 +485,6 @@
       "title": "Zcash developers want to phase out older privacy system as a precaution against future attacks",
       "link": "https://www.coindesk.com/tech/2026/11/26/zcash-developers-want-users-to-move-usd300-million-out-of-an-older-privacy-system",
       "pubDate": "Thu, 26 Nov 2026 07:09:25 +0000"
-    },
-    {
-      "title": "Over 1,000 Bitcoin miners were tricked into working for a thief by a fake internet route",
-      "link": "https://www.coindesk.com/markets/2026/11/26/hackers-hijacked-1-000-plus-bitcoin-mines-in-one-second-by-faking-internet-routes",
-      "pubDate": "Thu, 26 Nov 2026 06:19:09 +0000"
-    },
-    {
-      "title": "Ripple is worth $90 a share to one fund and $300 to another, SEC filings show",
-      "link": "https://www.coindesk.com/markets/2026/11/26/ripple-is-worth-usd90-a-share-to-one-fund-and-usd300-to-another-sec-filings-show",
-      "pubDate": "Thu, 26 Nov 2026 05:30:38 +0000"
     }
   ]
 }
