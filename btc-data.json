@@ -1,13 +1,13 @@
 {
-  "fetchedAt": "2026-11-27T12:05:44.340Z",
+  "fetchedAt": "2026-11-27T21:08:55.100Z",
   "price": {
-    "usd": 61573,
-    "time": 1795780806
+    "usd": 59742,
+    "time": 1795813508
   },
   "moves": {
-    "d1": 1.756065228208148,
-    "d7": 4.684072711558995,
-    "d30": -24.240573183354876
+    "d1": -1.2698609964820418,
+    "d7": 1.571076152436257,
+    "d30": -26.493435809851505
   },
   "history90d": [
     {
@@ -372,67 +372,77 @@
     },
     {
       "date": "2026-11-27",
-      "close": 61620.48352170801
+      "close": 59761.86396084255
     }
   ],
   "blocks": [
     {
-      "height": 977803,
-      "id": "0000000000000000000179dc0eaea98685ac22cad38de69d7e2df9897b7581dd",
-      "timestamp": 1795780660,
-      "txCount": 6952
+      "height": 977852,
+      "id": "00000000000000000001b87c74aec6ca22b6a0718a19509c26b2b91ad90da6e0",
+      "timestamp": 1795813421,
+      "txCount": 4782
     },
     {
-      "height": 977802,
-      "id": "000000000000000000014800429ac38a6a3f076bd6eb51a19481dc9978be11b8",
-      "timestamp": 1795780212,
-      "txCount": 6912
+      "height": 977851,
+      "id": "00000000000000000000b76d07d59f26fd08763441acd57edb4a95acb8e9724c",
+      "timestamp": 1795812945,
+      "txCount": 5470
     },
     {
-      "height": 977801,
-      "id": "00000000000000000000462d7ced1c9ac7222fb7229ab9b6c0b9a976d3c19570",
-      "timestamp": 1795780023,
-      "txCount": 6127
+      "height": 977850,
+      "id": "00000000000000000000b8d45072cb0fddf5f9528c211c8ff9af2369069c83c2",
+      "timestamp": 1795812377,
+      "txCount": 5628
     },
     {
-      "height": 977800,
-      "id": "000000000000000000001bba1c304729fe69f383d9e8a8dba3fb5631530b1e7c",
-      "timestamp": 1795779862,
-      "txCount": 200
+      "height": 977849,
+      "id": "00000000000000000001c59f21603cef95bc8d61ce3dbe3b0f267b7ba93c0581",
+      "timestamp": 1795812086,
+      "txCount": 3911
     },
     {
-      "height": 977799,
-      "id": "00000000000000000000026967755a797e27be072d8e81567c1c70b39ee6d53e",
-      "timestamp": 1795780090,
-      "txCount": 1532
+      "height": 977848,
+      "id": "000000000000000000018d172fb0d466ef14982427af73c652e6d9e144d74feb",
+      "timestamp": 1795811507,
+      "txCount": 1544
     },
     {
-      "height": 977798,
-      "id": "00000000000000000000dd9f25312c8412f6e53bc5ddfa3a3db899073e906a5c",
-      "timestamp": 1795779377,
-      "txCount": 3649
+      "height": 977847,
+      "id": "00000000000000000001b65402d980ed2e6098f5013362ea941984d3b88da5ca",
+      "timestamp": 1795811221,
+      "txCount": 380
     },
     {
-      "height": 977797,
-      "id": "000000000000000000011e5fa29f10f10e34d403d978610e351993f08d093d5f",
-      "timestamp": 1795778645,
-      "txCount": 3615
+      "height": 977846,
+      "id": "00000000000000000001311e1fc865e66f1b71afccb861ac16b8babdd08cc1d9",
+      "timestamp": 1795811153,
+      "txCount": 201
     },
     {
-      "height": 977796,
-      "id": "000000000000000000016feb9b677bba9258d69f6c8cb213b8e64244e6d76ab4",
-      "timestamp": 1795778146,
-      "txCount": 4256
+      "height": 977845,
+      "id": "00000000000000000001eec1a0ceffc77991fe5946a57bdc742dd94f7ab8f7f9",
+      "timestamp": 1795811134,
+      "txCount": 1254
     }
   ],
   "news": [
+    {
+      "title": "Kalshi turns to small businesses as legal battles threaten forecasts on sports",
+      "link": "https://www.coindesk.com/business/2026/11/27/kalshi-turns-to-small-businesses-as-legal-battles-threaten-forecasts-on-sports",
+      "pubDate": "Fri, 27 Nov 2026 13:19:10 +0000"
+    },
+    {
+      "title": "Bitcoin 'death cross' is coming. Here's what happened after previous 13.",
+      "link": "https://www.coindesk.com/daybook-us/2026/11/27/bitcoin-death-cross-is-coming-here-s-what-happened-after-previous-13",
+      "pubDate": "Fri, 27 Nov 2026 12:16:07 +0000"
+    },
     {
       "title": "Bitcoin on course to end seven-week losing streak while trailing stock rebound",
       "link": "https://www.coindesk.com/markets/2026/11/27/bitcoin-on-course-to-end-seven-week-losing-streak-while-trailing-stock-rebound",
       "pubDate": "Fri, 27 Nov 2026 11:45:47 +0000"
     },
     {
-      "title": "Live news: Bitcoin rebounds above $61,000 as AI stocks lead premarket gains",
+      "title": "Live updates: Bitcoin's Thanksgiving gains prove fleeting",
       "link": "https://www.coindesk.com/tech/2026/11/27/live-news-bitcoin-rebounds-above-usd61-000-as-ai-stocks-lead-premarket-gains",
       "pubDate": "Fri, 27 Nov 2026 11:34:37 +0000"
     },
@@ -475,16 +485,6 @@
       "title": "Binance says customer withdrawals are fully restored, four weeks after the $6.3 billion hack",
       "link": "https://www.coindesk.com/markets/2026/11/27/binance-says-its-withdrawal-suspension-is-over-four-weeks-after-a-usd6-3-billion-hack",
       "pubDate": "Fri, 27 Nov 2026 04:45:47 +0000"
-    },
-    {
-      "title": "Ethereum's much-awaited Glamsterdam upgrade cleared for December test. Here's what to know",
-      "link": "https://www.coindesk.com/tech/2026/11/27/ethereum-s-much-awaited-glamsterdam-upgrade-cleared-for-december-test-here-s-what-to-know",
-      "pubDate": "Fri, 27 Nov 2026 04:29:47 +0000"
-    },
-    {
-      "title": "A tiny payment can expose the IP address behind a bitcoin wallet, developer finds",
-      "link": "https://www.coindesk.com/tech/2026/11/26/a-tiny-payment-can-expose-the-ip-address-behind-a-bitcoin-wallet-developer-finds",
-      "pubDate": "Thu, 26 Nov 2026 17:30:00 +0000"
     }
   ]
 }
