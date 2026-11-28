@@ -1,13 +1,13 @@
 {
-  "fetchedAt": "2026-11-28T03:15:11.204Z",
+  "fetchedAt": "2026-11-28T15:25:27.782Z",
   "price": {
-    "usd": 59910,
-    "time": 1795835407
+    "usd": 59341,
+    "time": 1795879208
   },
   "moves": {
-    "d1": 0.06402175007558242,
-    "d7": -0.3514589398956991,
-    "d30": -23.033257463990953
+    "d1": -0.8863442718872516,
+    "d7": -1.2978789008905145,
+    "d30": -23.76425523569833
   },
   "history90d": [
     {
@@ -372,60 +372,75 @@
     },
     {
       "date": "2026-11-28",
-      "close": 59936.13134653677
+      "close": 59327.43617702637
     }
   ],
   "blocks": [
     {
-      "height": 977885,
-      "id": "00000000000000000000bf55469ac67e9c257e2e5ddc2b7ce124b822968d49f2",
-      "timestamp": 1795834379,
-      "txCount": 2215
+      "height": 977951,
+      "id": "00000000000000000001c9ab5e89feedf966cbdfbb3f89502993749a34fc25ac",
+      "timestamp": 1795879409,
+      "txCount": 2849
     },
     {
-      "height": 977884,
-      "id": "00000000000000000001ab0d8a7cca16cf18be870ec1c909d5ac2bc08eae7952",
-      "timestamp": 1795832966,
-      "txCount": 1581
+      "height": 977950,
+      "id": "00000000000000000000d8f46bc10a429544b5d6ac4ef3e20103081b52c2b7c8",
+      "timestamp": 1795879370,
+      "txCount": 3843
     },
     {
-      "height": 977883,
-      "id": "00000000000000000001782cee0f1b1a47e26e4b5ad2318bfc1940d2b68ec32b",
-      "timestamp": 1795832356,
-      "txCount": 6618
+      "height": 977949,
+      "id": "00000000000000000000496d24e7f55da8b67a81c4a648be983c3fb3fcdedc19",
+      "timestamp": 1795877614,
+      "txCount": 4157
     },
     {
-      "height": 977882,
-      "id": "0000000000000000000198256b3564544cb3b7818af3ee7cdcc7c2a98009af75",
-      "timestamp": 1795832161,
-      "txCount": 3452
+      "height": 977948,
+      "id": "000000000000000000001b2c1a2819d6047a112eb0a22d134c6457f728807b3c",
+      "timestamp": 1795877560,
+      "txCount": 4105
     },
     {
-      "height": 977881,
-      "id": "000000000000000000005cf4920df998fb03679d4e4fdc738500b6a8284b4da8",
-      "timestamp": 1795830187,
-      "txCount": 6244
+      "height": 977947,
+      "id": "00000000000000000001bfccd360d8ac66d5ea0092406f464da5afba498e2b29",
+      "timestamp": 1795871781,
+      "txCount": 7191
     },
     {
-      "height": 977880,
-      "id": "00000000000000000000ea702fae6c311b25d632789685cda22218d88b8aab29",
-      "timestamp": 1795829751,
-      "txCount": 8047
+      "height": 977946,
+      "id": "00000000000000000001a20d1356bf8130f1b99d14fd59fbdd48c9a5d5c4dceb",
+      "timestamp": 1795871750,
+      "txCount": 2674
     },
     {
-      "height": 977879,
-      "id": "000000000000000000011a71c995dcbddf80e36b4e238572311e21d952fec22a",
-      "timestamp": 1795829966,
-      "txCount": 1607
+      "height": 977945,
+      "id": "000000000000000000004aa79c2cec6da27b69ef73a812bccb825eb52877c599",
+      "timestamp": 1795871533,
+      "txCount": 3463
     },
     {
-      "height": 977878,
-      "id": "000000000000000000009786c167472e81c21e8c8a663072b9efb2d39f782e88",
-      "timestamp": 1795828868,
-      "txCount": 6578
+      "height": 977944,
+      "id": "00000000000000000000b9e4c388917a8db6dba4052b8369c3fdd050ecb0792a",
+      "timestamp": 1795870593,
+      "txCount": 7629
     }
   ],
   "news": [
+    {
+      "title": "Bybit’s $1.4 billion hack postmortem is ready. You won’t get to see it.",
+      "link": "https://www.coindesk.com/business/2026/11/28/bybit-s-usd1-4-billion-hack-postmortem-is-ready-you-won-t-get-to-see-it",
+      "pubDate": "Sat, 28 Nov 2026 14:00:00 +0000"
+    },
+    {
+      "title": "Bitcoin not delivering: The bear market has digital asset veteran questioning BTC's value",
+      "link": "https://www.coindesk.com/markets/2026/11/28/bitcoin-not-delivering-the-bear-market-has-digital-asset-veteran-questioning-btc-s-value",
+      "pubDate": "Sat, 28 Nov 2026 13:02:18 +0000"
+    },
+    {
+      "title": "Trump-linked crypto token WLFI plunges 50% to record lows",
+      "link": "https://www.coindesk.com/markets/2026/11/28/trump-linked-crypto-token-wlfi-plunges-over-50",
+      "pubDate": "Sat, 28 Nov 2026 09:32:51 +0000"
+    },
     {
       "title": "Kalshi turns to small businesses as legal battles threaten forecasts on sports",
       "link": "https://www.coindesk.com/business/2026/11/27/kalshi-turns-to-small-businesses-as-legal-battles-threaten-forecasts-on-sports",
@@ -470,21 +485,6 @@
       "title": "Bitcoin tops $61,000 as Nasdaq futures extend Wednesday’s rebound",
       "link": "https://www.coindesk.com/markets/2026/11/27/bitcoin-tops-usd61-000-as-nasdaq-futures-extend-wednesday-s-rebound",
       "pubDate": "Fri, 27 Nov 2026 09:49:55 +0000"
-    },
-    {
-      "title": "Monero suffers biggest single-day slide in over 5 months. Here’s why",
-      "link": "https://www.coindesk.com/markets/2026/11/27/monero-suffers-biggest-single-day-slide-in-over-5-months-here-s-why",
-      "pubDate": "Fri, 27 Nov 2026 07:33:01 +0000"
-    },
-    {
-      "title": "Ripple's lending plan moves closer to tapping XRP Ledger's $800 million in stablecoins",
-      "link": "https://www.coindesk.com/markets/2026/11/27/ripple-s-lending-plan-moves-closer-to-tapping-xrp-ledger-s-usd950-million-in-stablecoins",
-      "pubDate": "Fri, 27 Nov 2026 05:06:32 +0000"
-    },
-    {
-      "title": "Binance says customer withdrawals are fully restored, four weeks after the $6.3 billion hack",
-      "link": "https://www.coindesk.com/markets/2026/11/27/binance-says-its-withdrawal-suspension-is-over-four-weeks-after-a-usd6-3-billion-hack",
-      "pubDate": "Fri, 27 Nov 2026 04:45:47 +0000"
     }
   ]
 }
